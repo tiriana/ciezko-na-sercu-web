@@ -83,7 +83,9 @@ if (audio) {
 
   // Stan liczymy zawsze z currentTime, a nie z własnego zegara: po powrocie do karty,
   // po przewinięciu i po zmianie prędkości odtwarzania wyróżnienie zgadza się samo.
-  const activeSpan = (time) => spans.find((span) => time >= span.start && time < span.end) ?? null;
+  // Pozycje mogą się nakładać w danych sprzed uzgadniania osi, a grupa wejść obejmuje
+  // swoje wątki — dlatego podświetlamy wszystkie pasujące, nie pierwsze z listy.
+  const activeSpans = (time) => spans.filter((span) => time >= span.start && time < span.end);
 
   const setPlayingIcon = (button, playing) => {
     if (!button) return;
@@ -93,9 +95,9 @@ if (audio) {
   };
 
   const sync = () => {
-    const active = audio.paused ? null : activeSpan(audio.currentTime);
+    const active = audio.paused ? [] : activeSpans(audio.currentTime);
     for (const span of spans) {
-      const isActive = active === span;
+      const isActive = active.includes(span);
       span.element.classList.toggle('is-active', isActive);
       if (isActive) span.element.setAttribute('aria-current', 'true');
       else span.element.removeAttribute('aria-current');

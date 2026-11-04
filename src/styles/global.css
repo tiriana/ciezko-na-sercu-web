@@ -23,8 +23,8 @@
   --radius: 12px;
   --page: 1260px;
   --gap: 24px;
-  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-display: "Anton", "Arial Narrow", Impact, sans-serif;
+  --font-ui: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Anton", "Anton Fallback", "Arial Narrow", Impact, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1392,4 +1392,33 @@ a {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+/* Grupa wejść: nagłówek z jednym playem i wcięte wątki */
+
+.tracks__row--group .tracks__kind {
+  color: var(--accent);
+}
+
+.tracks__row--group td {
+  padding-top: 16px;
+}
+
+.tracks__row--child .tracks__idx {
+  padding-left: 26px;
+}
+
+.tracks__row--child .tracks__thread {
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+.tracks__row--child .tracks__time {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.tracks__row--group.is-active,
+.tracks__row--child.is-active {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
 }

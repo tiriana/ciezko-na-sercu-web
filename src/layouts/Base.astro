@@ -23,6 +23,10 @@ const buildDate = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
     <meta name="build-id" content={buildId} />
     <meta name="build-date" content={buildDate} />
     <link rel="canonical" href={canonical} />
+    <!-- Preload kroju latin: bez tego plik fontu jest odkrywany dopiero po CSS i tekst
+         przez moment rysuje się fallbackiem. -->
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <script is:inline>
       const stored = localStorage.getItem('cns-theme');

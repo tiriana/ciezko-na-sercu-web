@@ -37,3 +37,26 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
+/* Fallback o metrykach dopasowanych do właściwego kroju: gdy font jeszcze się ładuje,
+   tekst zajmuje tyle samo miejsca, więc nie ma przeskoku układu (CLS).
+   Wartości zmierzone w Chromium dla 100 px: Anton 1987/118/33, Inter 2440/97/24,
+   Arial 2295,9/91/21 — size-adjust to stosunek szerokości, reszta to metryki / size-adjust. */
+
+@font-face {
+  font-family: "Anton Fallback";
+  src: local("Arial"), local("Liberation Sans");
+  size-adjust: 86.55%;
+  ascent-override: 136.3%;
+  descent-override: 38.1%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("Liberation Sans");
+  size-adjust: 106.28%;
+  ascent-override: 91.27%;
+  descent-override: 22.58%;
+  line-gap-override: 0%;
+}

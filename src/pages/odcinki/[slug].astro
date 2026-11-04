@@ -4,7 +4,16 @@ import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import PersonName from '../../components/PersonName.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
-import { formatClock, formatDate, formatEpisodeTitle, formatRole, formatWeekday, pluralEntries, pluralTracks } from '../../lib/format';
+import {
+  formatClock,
+  formatDate,
+  formatEpisodeTitle,
+  formatRole,
+  formatWeekday,
+  pluralEntries,
+  pluralThreads,
+  pluralTracks,
+} from '../../lib/format';
 
 export async function getStaticPaths() {
   const entries = await getEntries();
@@ -35,11 +44,11 @@ const SPAN_TAIL_SEC = 30;
 // Pełne wyjaśnienie w atrybucie title: na stronie wystarczy jedno zdanie, ale treść
 // musi być dostępna bez rozwijania czegokolwiek.
 const AUDIO_NOTE =
-  'Nie hostuję ani nie udostępniam tego nagrania. Odtwarzacz odsyła bezpośrednio do pliku ' +
-  'udostępnionego publicznie przez Polskie Radio (static.prsa.pl) — tego samego, który gra ' +
-  'w playerze na stronie audycji. Nie roszczę sobie żadnych praw do nagrania ani do muzyki. ' +
-  'Strona powstała dla fanów muzyki i dla popularyzacji audycji Ciężko na sercu. ' +
-  'Jeśli jesteś uprawnionym i nie życzysz sobie tego odsyłacza, napisz — usunę go.';
+  'Odtwarzacz odsyła bezpośrednio do pliku udostępnionego publicznie przez Polskie Radio — ' +
+  'tego samego, który gra w playerze na stronie audycji. Nagranie nie jest kopiowane, ' +
+  'hostowane ani transmitowane przez tę stronę. Nie roszczę sobie praw do nagrania ani do ' +
+  'muzyki. Strona jest nieoficjalnym indeksem, tworzonym dla słuchaczy audycji. ' +
+  'Jeśli jesteś uprawnionym i nie życzysz sobie odsyłacza, napisz na adres redakcji — usunę go.';
 
 const spanEnd = (items: { start: number }[], index: number, durationSec: number | null) => {
   const next = items[index + 1];
@@ -59,7 +68,25 @@ const quoteSpans = (episode?.quotes ?? []).map((quote, index) => ({
 }));
 
 // Program to jedna os czasu: wejścia i utwory przeplatają się tak, jak leciały w audycji.
-const programme = [
+type TopicSpan = (typeof topicSpans)[number];
+type TrackItem = NonNullable<typeof episode>['tracks'][number];
+
+interface TrackBlock {
+  kind: 'track';
+  index: number;
+  start: number;
+  end: number;
+  track: TrackItem;
+}
+
+interface GroupBlock {
+  kind: 'group';
+  start: number;
+  end: number;
+  topics: TopicSpan[];
+}
+
+const items: (TrackBlock | (TopicSpan & { kind: 'topic' }))[] = [
   ...(episode?.tracks ?? []).map((track, index) => ({
     kind: 'track' as const,
     index: index + 1,
@@ -67,14 +94,37 @@ const programme = [
     end: track.end ?? track.start + track.durationSec,
     track,
   })),
-  ...topicSpans.map((topic) => ({
-    kind: 'topic' as const,
-    index: null,
-    start: topic.start,
-    end: topic.end,
-    topic,
-  })),
-].sort((left, right) => left.start - right.start);
+  ...topicSpans.map((topic) => ({ kind: 'topic' as const, ...topic })),
+].sort((left, right) => left.start - right.start || (left.kind === 'track' ? -1 : 1));
+
+// Kolejne wejścia bez utworu pomiędzy nimi to dla słuchacza jeden fragment programu:
+// dostają jeden play, a wątki zostają klikalne osobno.
+const GROUP_MAX_GAP_SEC = 60;
+
+const blocks: (TrackBlock | GroupBlock | (TopicSpan & { kind: 'topic' }))[] = [];
+for (const item of items) {
+  const previous = blocks[blocks.length - 1];
+  const isTopicRun = item.kind === 'topic' && (previous?.kind === 'topic' || previous?.kind === 'group');
+  const gap = isTopicRun ? item.start - (previous as TopicSpan & { kind: 'topic' }).end : Infinity;
+
+  if (item.kind === 'topic' && previous?.kind === 'group' && gap <= GROUP_MAX_GAP_SEC) {
+    previous.topics.push(item);
+    previous.end = Math.max(previous.end, item.end);
+    continue;
+  }
+
+  if (item.kind === 'topic' && previous?.kind === 'topic' && gap <= GROUP_MAX_GAP_SEC) {
+    blocks.pop();
+    blocks.push({ kind: 'group', start: previous.start, end: Math.max(previous.end, item.end), topics: [previous, item] });
+    continue;
+  }
+
+  blocks.push(item);
+}
+
+// Sekcje o zerowej długości (te same znaczniki czasu z modelu) nie mają sensu jako
+// osobne wiersze — w grupie zostają treścią, a czas pokazujemy jako „—".
+const formatSpan = (start: number, end: number) => (end - start < 1 ? '—' : formatClock(end - start));
 
 // Cytaty z zapowiedzi są policzone i zostają w danych, ale nie pokazujemy ich na stronie.
 const SHOW_QUOTES = false;
@@ -181,13 +231,14 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                   <button class="skip" type="button" data-skip="15" aria-label="Przewiń 15 sekund">+15</button>
                 </div>
                 <p class="audio-bar__note" title={AUDIO_NOTE}>
-                  <span aria-hidden="true">*</span> Nagranie pochodzi z serwisu Polskiego Radia i jest tam
-                  publicznie dostępne — ta strona tylko do niego odsyła.
+                  <span aria-hidden="true">*</span> Nagranie pochodzi z publicznie dostępnych zasobów
+                  Polskiego Radia. Strona nie kopiuje go ani nie rozpowszechnia — tylko odsyła do
+                  oryginalnego pliku.
                 </p>
               </div>
             )}
 
-            {programme.length > 0 ? (
+            {blocks.length > 0 ? (
               <table class="tracks">
                 <thead>
                   <tr>
@@ -199,56 +250,145 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                   </tr>
                 </thead>
                 <tbody>
-                  {programme.map((item) => (
-                    <tr
-                      data-span-start={item.start}
-                      data-span-end={item.end}
-                      data-kind={item.kind}
-                      class:list={{ 'tracks__row--entry': item.kind === 'topic' }}
-                    >
-                      <td class="tracks__idx">
-                        {entry.audioUrl ? (
-                          <button
-                            class="track-play"
-                            type="button"
-                            data-track-start={item.start}
-                            aria-label={`Odtwórz od ${formatClock(item.start)}`}
-                          >
-                            <svg class="track-play__icon track-play__icon--play" viewBox="0 0 10 12" aria-hidden="true">
-                              <path d="M0 0 10 6 0 12Z" fill="currentColor" />
-                            </svg>
-                            <svg class="track-play__icon track-play__icon--pause" viewBox="0 0 10 12" aria-hidden="true">
-                              <rect x="0" y="0" width="3.5" height="12" fill="currentColor" />
-                              <rect x="6.5" y="0" width="3.5" height="12" fill="currentColor" />
-                            </svg>
-                          </button>
-                        ) : (
-                          (item.index ?? '')
-                        )}
-                      </td>
-                      {item.kind === 'track' ? (
-                        <>
-                          <td>
-                            <div class="tracks__artist">
-                              {item.track.artist ?? <span class="tracks__album">wykonawca nierozpoznany</span>}
-                            </div>
-                            <div>{item.track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}</div>
+                  {blocks.map((block) =>
+                    block.kind === 'track' ? (
+                      <tr
+                        data-span-start={block.start}
+                        data-span-end={block.end}
+                        data-kind="track"
+                      >
+                        <td class="tracks__idx">
+                          {entry.audioUrl ? (
+                            <button
+                              class="track-play"
+                              type="button"
+                              data-track-start={block.start}
+                              aria-label={`Odtwórz od ${formatClock(block.start)}`}
+                            >
+                              <svg class="track-play__icon track-play__icon--play" viewBox="0 0 10 12" aria-hidden="true">
+                                <path d="M0 0 10 6 0 12Z" fill="currentColor" />
+                              </svg>
+                              <svg class="track-play__icon track-play__icon--pause" viewBox="0 0 10 12" aria-hidden="true">
+                                <rect x="0" y="0" width="3.5" height="12" fill="currentColor" />
+                                <rect x="6.5" y="0" width="3.5" height="12" fill="currentColor" />
+                              </svg>
+                            </button>
+                          ) : (
+                            block.index
+                          )}
+                        </td>
+                        <td>
+                          <div class="tracks__artist">
+                            {block.track.artist ?? <span class="tracks__album">wykonawca nierozpoznany</span>}
+                          </div>
+                          <div>{block.track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}</div>
+                        </td>
+                        <td class="tracks__album">{block.track.album ?? '—'}</td>
+                        <td class="tracks__time">{formatClock(block.start)}</td>
+                        <td class="tracks__time">{formatClock(block.track.durationSec)}</td>
+                      </tr>
+                    ) : block.kind === 'group' ? (
+                      <>
+                        <tr
+                          class="tracks__row--entry tracks__row--group"
+                          data-span-start={block.start}
+                          data-span-end={block.end}
+                          data-kind="topic-group"
+                        >
+                          <td class="tracks__idx">
+                            {entry.audioUrl ? (
+                              <button
+                                class="track-play"
+                                type="button"
+                                data-track-start={block.start}
+                                aria-label={`Odtwórz od ${formatClock(block.start)}`}
+                              >
+                                <svg class="track-play__icon track-play__icon--play" viewBox="0 0 10 12" aria-hidden="true">
+                                  <path d="M0 0 10 6 0 12Z" fill="currentColor" />
+                                </svg>
+                                <svg class="track-play__icon track-play__icon--pause" viewBox="0 0 10 12" aria-hidden="true">
+                                  <rect x="0" y="0" width="3.5" height="12" fill="currentColor" />
+                                  <rect x="6.5" y="0" width="3.5" height="12" fill="currentColor" />
+                                </svg>
+                              </button>
+                            ) : null}
                           </td>
-                          <td class="tracks__album">{item.track.album ?? '—'}</td>
-                        </>
-                      ) : (
-                        <>
                           <td>
-                            <div class="tracks__kind">Wejście</div>
-                            <div>{item.topic.label}</div>
+                            <div class="tracks__kind">Wejście · {pluralThreads(block.topics.length)}</div>
                           </td>
                           <td class="tracks__album">—</td>
-                        </>
-                      )}
-                      <td class="tracks__time">{formatClock(item.start)}</td>
-                      <td class="tracks__time">{formatClock(item.end - item.start)}</td>
-                    </tr>
-                  ))}
+                          <td class="tracks__time">{formatClock(block.start)}</td>
+                          <td class="tracks__time">{formatSpan(block.start, block.end)}</td>
+                        </tr>
+                        {block.topics.map((topic) => (
+                          <tr
+                            class="tracks__row--entry tracks__row--child"
+                            data-span-start={topic.start}
+                            data-span-end={topic.end}
+                            data-kind="topic"
+                          >
+                            <td class="tracks__idx">
+                              {entry.audioUrl ? (
+                                <button
+                                  class="track-play"
+                                  type="button"
+                                  data-track-start={topic.start}
+                                  aria-label={`Odtwórz od ${formatClock(topic.start)}`}
+                                >
+                                  <svg class="track-play__icon track-play__icon--play" viewBox="0 0 10 12" aria-hidden="true">
+                                    <path d="M0 0 10 6 0 12Z" fill="currentColor" />
+                                  </svg>
+                                  <svg class="track-play__icon track-play__icon--pause" viewBox="0 0 10 12" aria-hidden="true">
+                                    <rect x="0" y="0" width="3.5" height="12" fill="currentColor" />
+                                    <rect x="6.5" y="0" width="3.5" height="12" fill="currentColor" />
+                                  </svg>
+                                </button>
+                              ) : null}
+                            </td>
+                            <td>
+                              <div class="tracks__thread">{topic.label}</div>
+                            </td>
+                            <td class="tracks__album">—</td>
+                            <td class="tracks__time">{formatClock(topic.start)}</td>
+                            <td class="tracks__time">{formatSpan(topic.start, topic.end)}</td>
+                          </tr>
+                        ))}
+                      </>
+                    ) : (
+                      <tr
+                        class="tracks__row--entry"
+                        data-span-start={block.start}
+                        data-span-end={block.end}
+                        data-kind="topic"
+                      >
+                        <td class="tracks__idx">
+                          {entry.audioUrl ? (
+                            <button
+                              class="track-play"
+                              type="button"
+                              data-track-start={block.start}
+                              aria-label={`Odtwórz od ${formatClock(block.start)}`}
+                            >
+                              <svg class="track-play__icon track-play__icon--play" viewBox="0 0 10 12" aria-hidden="true">
+                                <path d="M0 0 10 6 0 12Z" fill="currentColor" />
+                              </svg>
+                              <svg class="track-play__icon track-play__icon--pause" viewBox="0 0 10 12" aria-hidden="true">
+                                <rect x="0" y="0" width="3.5" height="12" fill="currentColor" />
+                                <rect x="6.5" y="0" width="3.5" height="12" fill="currentColor" />
+                              </svg>
+                            </button>
+                          ) : null}
+                        </td>
+                        <td>
+                          <div class="tracks__kind">Wejście</div>
+                          <div>{block.label}</div>
+                        </td>
+                        <td class="tracks__album">—</td>
+                        <td class="tracks__time">{formatClock(block.start)}</td>
+                        <td class="tracks__time">{formatSpan(block.start, block.end)}</td>
+                      </tr>
+                    )
+                  )}
                 </tbody>
               </table>
             ) : (
