@@ -1,0 +1,145 @@
+---
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import Base from '../layouts/Base.astro';
+import { getCatalog, getEntries, getEpisodeFiles } from '../lib/data';
+import { formatDay, monthKey, monthLabel, pluralTracks } from '../lib/format';
+
+const [catalog, entries, files] = await Promise.all([getCatalog(), getEntries(), getEpisodeFiles()]);
+const enriched = entries.filter((entry) => entry.enriched);
+const years = [...new Set(entries.map((entry) => entry.date.slice(0, 4)))];
+
+const months = new Map<string, typeof entries>();
+for (const entry of entries) {
+  const key = monthKey(entry.date);
+  if (!months.has(key)) months.set(key, []);
+  months.get(key)!.push(entry);
+}
+---
+
+<Base
+  title={`${catalog.program.name} — katalog odcinków`}
+  description={`Katalog odcinków audycji „${catalog.program.name}” z ${catalog.program.station}: lista, opracowania, rozpoznane utwory.`}
+>
+  <SiteHeader current="episodes" />
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div>
+          <p class="eyebrow">{catalog.program.station} · środa 00:05</p>
+          <h1 class="wordmark"><span>Ciężko</span><span>na sercu</span></h1>
+          <p class="hero__lead">
+            Indeks odcinków audycji o ciężkim graniu. Każdy odcinek dostaje własną stronę:
+            tracklistę, streszczenie i tematy — uzupełniane stopniowo, odcinek po odcinku.
+          </p>
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__value">{entries.length}</div>
+              <div class="stat__label">odcinków w indeksie</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">{enriched.length}</div>
+              <div class="stat__label">opracowanych</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">2 / tydz.</div>
+              <div class="stat__label">tempo kolejki</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <h2 class="panel__title">O audycji</h2>
+          <p>
+            Cotygodniowy przegląd ciężkiego grania: premiery, klasyka gatunku, sceny lokalne
+            i rozmowy z ludźmi, którzy tę muzykę tworzą. Bez gatunkowych klapek — od doomu
+            po eksperyment.
+          </p>
+          <dl class="facts">
+            <div><dt>Prowadzący</dt><dd>Jarek Szubrycht</dd></div>
+            <div><dt>Stacja</dt><dd>{catalog.program.station}</dd></div>
+            <div><dt>Emisja</dt><dd>środa, 00:05</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <div class="wrap" style="padding-top: 40px">
+      <div class="toolbar">
+        <label class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m16.5 16.5 4 4" />
+          </svg>
+          <span class="visually-hidden">Szukaj odcinka</span>
+          <input type="search" placeholder="Szukaj po tytule…" data-filter-title />
+        </label>
+        <div class="chips" role="group" aria-label="Rok">
+          <button class="chip-filter" type="button" data-year="all" aria-pressed="true">Wszystkie</button>
+          {years.map((year) => (
+            <button class="chip-filter" type="button" data-year={year} aria-pressed="false">{year}</button>
+          ))}
+        </div>
+        <p class="toolbar__progress">
+          <strong data-result-count>{entries.length}</strong> z {entries.length} odcinków · {enriched.length} opracowanych
+        </p>
+      </div>
+
+      <div class="section-head">
+        <h2>Odcinki</h2>
+        <p>najnowsze pierwsze</p>
+      </div>
+
+      <div class="list">
+        {[...months.entries()].map(([key, group]) => (
+          <>
+            <div class="list__month" data-month={key}>{monthLabel(group[0].date)}</div>
+            {group.map((entry) => (
+              <article class="episode-row" data-episode={entry.title} data-date={entry.date} data-month={key}>
+                <div class="episode-row__date">{formatDay(entry.date)}</div>
+                <div>
+                  <h3 class="episode-row__title">
+                    <a href={`/odcinki/${entry.id}/`}>{entry.title}</a>
+                  </h3>
+                  <div class="episode-row__meta">
+                    {entry.enriched ? (
+                      <>
+                        <span>{pluralTracks(files.get(entry.id)?.tracks.length ?? 0)}</span>
+                        <span>{catalog.program.station}</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>00:05</span>
+                        <span>{catalog.program.station}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+                <div class="episode-row__actions">
+                  {entry.enriched ? (
+                    <>
+                      <span class="badge badge--done">opracowany</span>
+                      <a class="btn btn--solid" href={`/odcinki/${entry.id}/`}>Zobacz stronę odcinka</a>
+                    </>
+                  ) : (
+                    <>
+                      <span class="badge badge--plain">skatalogowany</span>
+                      {entry.sourceUrl && (
+                        <a class="btn" href={entry.sourceUrl}>Polskie Radio ↗</a>
+                      )}
+                    </>
+                  )}
+                </div>
+              </article>
+            ))}
+          </>
+        ))}
+      </div>
+
+      <p class="list__empty" data-empty hidden>Brak odcinków pasujących do wyszukiwania.</p>
+    </div>
+  </main>
+
+  <SiteFooter />
+</Base>

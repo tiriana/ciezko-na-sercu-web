@@ -1,0 +1,190 @@
+---
+import SiteFooter from '../../components/SiteFooter.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import Base from '../../layouts/Base.astro';
+import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
+import { formatClock, formatDate, formatWeekday, pluralTracks } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const entries = await getEntries();
+  return entries.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const [catalog, files] = await Promise.all([getCatalog(), getEpisodeFiles()]);
+const episode = files.get(entry.id);
+
+const sourceLabel = (sources: string[]) => {
+  const shazam = sources.includes('shazam');
+  const announcement = sources.some((source) => source.startsWith('zapowied'));
+  if (shazam && announcement) return 'zapowiedź + dźwięk';
+  if (shazam) return 'tylko dźwięk';
+  if (announcement) return 'tylko zapowiedź';
+  return sources.join(' + ') || 'nieznane źródło';
+};
+
+const confidenceClass = (confidence: string | null) => {
+  if (confidence === 'wysoka') return 'conf--high';
+  if (confidence === 'średnia') return 'conf--mid';
+  if (confidence === 'niska') return 'conf--low';
+  return 'conf--low';
+};
+
+const fromBoth = episode?.tracks.filter((track) => track.sources.length > 1).length ?? 0;
+const fromSoundOnly = episode?.tracks.filter((track) => track.sources.length === 1 && track.sources[0] === 'shazam').length ?? 0;
+const speechSec = episode?.durationSec
+  ? episode.durationSec - (episode.tracks.reduce((sum, track) => sum + track.durationSec, 0) || 0)
+  : null;
+
+const title = episode
+  ? `${entry.title} — ${catalog.program.name}`
+  : `${entry.title} — opracowanie zaplanowane`;
+const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${formatDate(entry.date)} w indeksie audycji.`;
+---
+
+<Base title={title} description={description}>
+  <SiteHeader current="episodes" />
+
+  <main class="wrap">
+    <nav class="crumbs" aria-label="Ścieżka">
+      <a href="/">Odcinki</a>
+      <span aria-hidden="true">/</span>
+      <span>{entry.date.slice(0, 4)}</span>
+    </nav>
+
+    <header class="ep-head">
+      <p class="ep-head__date">{formatDate(entry.date)} · {formatWeekday(entry.date)} 00:05</p>
+      <h1>{entry.title}</h1>
+      <div class="ep-head__meta">
+        {episode ? (
+          <>
+            <span class="badge badge--done">opracowany</span>
+            {episode.durationSec && <span>{formatClock(episode.durationSec)}</span>}
+            <span>{pluralTracks(episode.tracks.length)}</span>
+            {episode.quotes.length > 0 && <span>{episode.quotes.length} zapowiedzi</span>}
+          </>
+        ) : (
+          <span class="badge badge--plain">skatalogowany</span>
+        )}
+        {entry.sourceUrl && (
+          <a class="btn" href={entry.sourceUrl}>Odcinek w Polskim Radiu ↗</a>
+        )}
+      </div>
+    </header>
+
+    {episode ? (
+      <div class="ep-body">
+        <div class="stack">
+          <section class="card" aria-labelledby="tracklist-title">
+            <h2 id="tracklist-title">Tracklista</h2>
+            <p class="card__sub">
+              {pluralTracks(episode.tracks.length)} · czasy dotyczą początku utworu w audycji
+            </p>
+
+            {episode.tracks.length > 0 ? (
+              <table class="tracks">
+                <thead>
+                  <tr>
+                    <th scope="col" class="tracks__idx">#</th>
+                    <th scope="col">Wykonawca / tytuł</th>
+                    <th scope="col">Album</th>
+                    <th scope="col" class="tracks__time">Czas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {episode.tracks.map((track, index) => (
+                    <tr>
+                      <td class="tracks__idx">{index + 1}</td>
+                      <td>
+                        <div class="tracks__artist">{track.artist}</div>
+                        <div>{track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}</div>
+                        <span class={`conf ${confidenceClass(track.confidence)}`}>{sourceLabel(track.sources)}</span>
+                      </td>
+                      <td class="tracks__album">{track.album ?? '—'}</td>
+                      <td class="tracks__time">{formatClock(track.durationSec)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : (
+              <p class="card__sub">Brak rozpoznanych utworów w tym odcinku.</p>
+            )}
+          </section>
+
+          {episode.topics.length > 0 && (
+            <section class="card" aria-labelledby="topics-title">
+              <h2 id="topics-title">Tematy</h2>
+              <p class="card__sub">{episode.topics.length} wątków, z czasem wejścia</p>
+              <ol class="timeline">
+                {episode.topics.map((topic) => (
+                  <li>
+                    <time>{formatClock(topic.start)}</time>
+                    <p>{topic.label}</p>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )}
+
+          {episode.quotes.length > 0 && (
+            <section class="card" aria-labelledby="quotes-title">
+              <h2 id="quotes-title">Cytaty z zapowiedzi</h2>
+              <p class="card__sub">Krótkie fragmenty wypowiedzi prowadzącego, z czasem wejścia</p>
+              <ol class="timeline">
+                {episode.quotes.map((quote) => (
+                  <li>
+                    <time>{formatClock(quote.start)}</time>
+                    <p>{quote.text}</p>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )}
+        </div>
+
+        <aside class="side">
+          {episode.summary && (
+            <section class="card" aria-labelledby="summary-title">
+              <h2 id="summary-title">Streszczenie</h2>
+              <p>{episode.summary}</p>
+              <div class="note">
+                Streszczenie jest szkicem z modelu i wymaga redakcji przed publikacją.
+              </div>
+            </section>
+          )}
+
+          <section class="card" aria-labelledby="provenance-title">
+            <h2 id="provenance-title">Jak to powstało</h2>
+            <dl class="kv">
+              <div><dt>Opracowano</dt><dd>{formatDate(episode.analyzedAt)}</dd></div>
+              {speechSec && <div><dt>Mowa</dt><dd>{formatClock(speechSec)}</dd></div>}
+              <div><dt>Utwory</dt><dd>{episode.tracks.length}</dd></div>
+              <div><dt>Z dźwięku i zapowiedzi</dt><dd>{fromBoth}</dd></div>
+              <div><dt>Tylko z dźwięku</dt><dd>{fromSoundOnly}</dd></div>
+              <div><dt>Zapowiedzi w audycji</dt><dd>{episode.quotes.length}</dd></div>
+            </dl>
+          </section>
+
+          <section class="card">
+            <h2>Odtwarzanie</h2>
+            <p class="card__sub">Odcinek jest dostępny w serwisie Polskiego Radia.</p>
+            <a class="btn btn--solid" href={catalog.program.pageUrl}>Otwórz audycję ↗</a>
+          </section>
+        </aside>
+      </div>
+    ) : (
+      <section class="card" aria-labelledby="planned-title">
+        <h2 id="planned-title">Opracowanie jeszcze nie powstało</h2>
+        <p class="card__sub">
+          Ten odcinek jest w indeksie, ale nie ma jeszcze tracklisty ani streszczenia. Opracowania
+          powstają po kolei — tempo i kolejność opisuje plan projektu.
+        </p>
+        {entry.sourceUrl && (
+          <a class="btn btn--solid" href={entry.sourceUrl}>Posłuchaj w Polskim Radiu ↗</a>
+        )}
+      </section>
+    )}
+  </main>
+
+  <SiteFooter />
+</Base>

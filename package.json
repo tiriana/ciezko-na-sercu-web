@@ -1,0 +1,17 @@
+{
+  "name": "ciezko-na-sercu-web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "catalog": "node scripts/build-catalog.mjs",
+    "import:tagger": "node scripts/import-tagger.mjs"
+  },
+  "dependencies": {
+    "astro": "^6.4.8",
+    "zod": "^4.6.7"
+  }
+}

@@ -3,6 +3,8 @@ name: deploy
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '17 3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -13,10 +15,9 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # becomes `dist` once the Astro build (M0/M1) replaces the mockup
-  SITE_DIR: mockup
   SURGE_DOMAIN: ciezko-na-sercu.surge.sh
   SURGE_VERSION: 0.56.0
+  PROGRAM_DIR: 'Ciężko na Sercu'
 
 jobs:
   deploy:
@@ -27,8 +28,32 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
-      - name: Publish to Surge
+      - name: Zainstaluj rclone
+        run: curl -fsSL https://rclone.org/install.sh | sudo bash
+
+      - name: Odśwież katalog odcinków
+        # Bramka danych: build czyta wyłącznie data/. Gdy Egnyte jest nieosiągalny, zostaje
+        # katalog z repozytorium, a deploy nadal się odbywa.
+        env:
+          RCLONE_REMOTE: ${{ secrets.RCLONE_REMOTE }}
+          RADIO_DIR: ${{ vars.RADIO_DIR || '/Shared/Radio' }}
+        run: |
+          mkdir -p .cache
+          if rclone copy "$RCLONE_REMOTE:$RADIO_DIR/$PROGRAM_DIR/episodes.json" .cache; then
+            node scripts/build-catalog.mjs .cache/episodes.json data/catalog.json
+          else
+            echo "::warning::Nie udało się pobrać episodes.json z Egnyte — deploy z katalogiem z repozytorium"
+          fi
+
+      - name: Zainstaluj zależności
+        run: npm ci
+
+      - name: Zbuduj stronę
+        run: npm run build
+
+      - name: Opublikuj na Surge
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        run: npx --yes surge@$SURGE_VERSION "$SITE_DIR" "$SURGE_DOMAIN"
+        run: npx --yes surge@$SURGE_VERSION dist "$SURGE_DOMAIN"

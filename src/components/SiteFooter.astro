@@ -1,0 +1,31 @@
+---
+import { getCatalog } from '../lib/data';
+
+const catalog = await getCatalog();
+---
+
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div>
+      <p class="footer-mark">{catalog.program.name}</p>
+      <p>
+        Nieoficjalny indeks audycji. Nie publikujemy nagrań ani treści audycji — linki prowadzą do
+        serwisu Polskiego Radia, gdzie odcinki są dostępne legalnie.
+      </p>
+    </div>
+    <div>
+      <h3>Nawigacja</h3>
+      <ul>
+        <li><a href="/">Lista odcinków</a></li>
+        <li><a href={catalog.program.pageUrl}>Audycja w Trójce</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Projekt</h3>
+      <ul>
+        <li><a href="https://github.com/tiriana/ciezko-na-sercu-web">Repozytorium</a></li>
+        <li>Dane: katalog odcinków i opracowania</li>
+      </ul>
+    </div>
+  </div>
+</footer>
