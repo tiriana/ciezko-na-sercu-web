@@ -2,10 +2,10 @@
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import Base from '../layouts/Base.astro';
-import { getCatalog, getEntries, getEpisodeFiles } from '../lib/data';
-import { formatDay, formatEpisodeTitle, monthKey, monthLabel, pluralTracks } from '../lib/format';
+import { getCatalog, getEntries } from '../lib/data';
+import { formatDay, formatEpisodeTitle, monthKey, monthLabel } from '../lib/format';
 
-const [catalog, entries, files] = await Promise.all([getCatalog(), getEntries(), getEpisodeFiles()]);
+const [catalog, entries] = await Promise.all([getCatalog(), getEntries()]);
 const enriched = entries.filter((entry) => entry.enriched);
 const years = [...new Set(entries.map((entry) => entry.date.slice(0, 4)))];
 
@@ -107,19 +107,6 @@ for (const entry of entries) {
                       </span>
                     )}
                   </h3>
-                  <div class="episode-row__meta">
-                    {entry.enriched ? (
-                      <>
-                        <span>{pluralTracks(files.get(entry.id)?.tracks.length ?? 0)}</span>
-                        <span>{catalog.program.station}</span>
-                      </>
-                    ) : (
-                      <>
-                        <span>00:05</span>
-                        <span>{catalog.program.station}</span>
-                      </>
-                    )}
-                  </div>
                 </div>
                 <div class="episode-row__actions">
                   {entry.enriched ? (

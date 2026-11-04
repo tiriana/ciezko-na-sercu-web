@@ -38,7 +38,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
     </nav>
 
     <header class="ep-head">
-      <p class="ep-head__date">{formatDate(entry.date)} · {formatWeekday(entry.date)} 00:05</p>
+      <p class="ep-head__date">{formatDate(entry.date)} · {formatWeekday(entry.date)} 00:05 · {catalog.program.station}</p>
       <h1>{episodeTitle}</h1>
       {entry.titleKind !== 'official' && (
         <p class="title-note">
