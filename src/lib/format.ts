@@ -54,8 +54,7 @@ export const monthLabel = (iso: string) => {
   return `${MONTHS_NOMINATIVE[month - 1]} ${year}`;
 };
 
-export const formatClock = (seconds: number) => {
-  const total = Math.max(0, Math.round(seconds));
+export const formatClock = (seconds: number) => {  const total = Math.max(0, Math.round(seconds));
   const hours = Math.floor(total / 3600);
   const minutes = Math.floor((total % 3600) / 60);
   const rest = total % 60;
@@ -71,3 +70,6 @@ export const pluralTracks = (count: number) => {
   }
   return `${count} utworów`;
 };
+
+export const formatEpisodeTitle = (title: string) =>
+  title.replace(/godz\.\s*(\d{2})(\d{2})\b/, 'godz. $1:$2');

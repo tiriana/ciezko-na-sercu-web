@@ -3,7 +3,7 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
-import { formatClock, formatDate, formatWeekday, pluralTracks } from '../../lib/format';
+import { formatClock, formatDate, formatEpisodeTitle, formatWeekday, pluralTracks } from '../../lib/format';
 
 export async function getStaticPaths() {
   const entries = await getEntries();
@@ -14,31 +14,16 @@ const { entry } = Astro.props;
 const [catalog, files] = await Promise.all([getCatalog(), getEpisodeFiles()]);
 const episode = files.get(entry.id);
 
-const sourceLabel = (sources: string[]) => {
-  const shazam = sources.includes('shazam');
-  const announcement = sources.some((source) => source.startsWith('zapowied'));
-  if (shazam && announcement) return 'zapowiedź + dźwięk';
-  if (shazam) return 'tylko dźwięk';
-  if (announcement) return 'tylko zapowiedź';
-  return sources.join(' + ') || 'nieznane źródło';
-};
-
-const confidenceClass = (confidence: string | null) => {
-  if (confidence === 'wysoka') return 'conf--high';
-  if (confidence === 'średnia') return 'conf--mid';
-  if (confidence === 'niska') return 'conf--low';
-  return 'conf--low';
-};
-
 const fromBoth = episode?.tracks.filter((track) => track.sources.length > 1).length ?? 0;
 const fromSoundOnly = episode?.tracks.filter((track) => track.sources.length === 1 && track.sources[0] === 'shazam').length ?? 0;
 const speechSec = episode?.durationSec
   ? episode.durationSec - (episode.tracks.reduce((sum, track) => sum + track.durationSec, 0) || 0)
   : null;
 
+const episodeTitle = formatEpisodeTitle(entry.title);
 const title = episode
-  ? `${entry.title} — ${catalog.program.name}`
-  : `${entry.title} — opracowanie zaplanowane`;
+  ? `${episodeTitle} — ${catalog.program.name}`
+  : `${episodeTitle} — opracowanie zaplanowane`;
 const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${formatDate(entry.date)} w indeksie audycji.`;
 ---
 
@@ -54,7 +39,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
 
     <header class="ep-head">
       <p class="ep-head__date">{formatDate(entry.date)} · {formatWeekday(entry.date)} 00:05</p>
-      <h1>{entry.title}</h1>
+      <h1>{episodeTitle}</h1>
       <div class="ep-head__meta">
         {episode ? (
           <>
@@ -88,6 +73,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                     <th scope="col" class="tracks__idx">#</th>
                     <th scope="col">Wykonawca / tytuł</th>
                     <th scope="col">Album</th>
+                    <th scope="col" class="tracks__time">Start</th>
                     <th scope="col" class="tracks__time">Czas</th>
                   </tr>
                 </thead>
@@ -98,9 +84,9 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                       <td>
                         <div class="tracks__artist">{track.artist}</div>
                         <div>{track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}</div>
-                        <span class={`conf ${confidenceClass(track.confidence)}`}>{sourceLabel(track.sources)}</span>
                       </td>
                       <td class="tracks__album">{track.album ?? '—'}</td>
+                      <td class="tracks__time">{formatClock(track.start)}</td>
                       <td class="tracks__time">{formatClock(track.durationSec)}</td>
                     </tr>
                   ))}
@@ -168,7 +154,9 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
           <section class="card">
             <h2>Odtwarzanie</h2>
             <p class="card__sub">Odcinek jest dostępny w serwisie Polskiego Radia.</p>
-            <a class="btn btn--solid" href={catalog.program.pageUrl}>Otwórz audycję ↗</a>
+            <a class="btn btn--solid" href={entry.sourceUrl ?? catalog.program.pageUrl}>
+              {entry.sourceUrl ? 'Otwórz odcinek ↗' : 'Otwórz audycję ↗'}
+            </a>
           </section>
         </aside>
       </div>
