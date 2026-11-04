@@ -1362,3 +1362,12 @@ a {
   height: 11px;
   opacity: 0.7;
 }
+
+.person-link {
+  text-decoration: none;
+}
+
+.person-link:hover,
+.person-link:focus-visible {
+  text-decoration: underline;
+}

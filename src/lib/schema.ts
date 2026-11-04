@@ -65,6 +65,16 @@ export const overrideSchema = z.object({
       })
     )
     .default([]),
+  // Poprawki creditsów: rename zastępuje nazwę we wszystkich rolach, credits podmienia
+  // całą listę (np. gdy tagger pominął osobę).
+  credits: z
+    .object({
+      rename: z.record(z.string(), z.string()).default({}),
+      replace: z
+        .array(z.object({ role: z.string(), name: z.string(), time: z.number().default(0), quote: z.string().default('') }))
+        .optional(),
+    })
+    .default({ rename: {} }),
 });
 
 export type TrackOverride = z.infer<typeof overrideSchema>['tracks'][number];
@@ -88,3 +98,18 @@ export const titlesSchema = z.object({
 });
 
 export type TitleOverride = z.infer<typeof titlesSchema>['titles'][string];
+
+// Osoby z creditsów. Adresu profilu nie da się wyprowadzić z nazwiska (identyfikatory
+// w URL-ach Polskiego Radia), więc mapowanie trzymamy ręcznie.
+export const peopleSchema = z.object({
+  version: z.literal(1),
+  people: z.record(
+    z.string(),
+    z.object({
+      url: z.string().url().optional(),
+      note: z.string().optional(),
+    })
+  ),
+});
+
+export type Person = z.infer<typeof peopleSchema>['people'][string];

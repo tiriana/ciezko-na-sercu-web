@@ -48,8 +48,9 @@ w `src/lib/schedule.ts`.
 
 Wszystkie dane audycji leżą w tym repozytorium, w `data/`: `catalog.json` (z downloadera),
 `episodes/<uuid>.json` (opracowania), `transcripts/<uuid>.json|.txt` (pełne transkrypty),
-`titles.json` (tytuły redakcyjne) i `overrides/<uuid>.json` (ręczne poprawki, odporne na
-ponowny import). `npm run check` waliduje całość przed buildem; import z taggera robi
+`titles.json` (tytuły redakcyjne), `people.json` (nazwisko → profil w serwisie Polskiego
+Radia) i `overrides/<uuid>.json` (ręczne poprawki utworów i creditsów, odporne na ponowny
+import). `npm run check` waliduje całość przed buildem; import z taggera robi
 `scripts/import-tagger.mjs`.
 
 ## Deploy

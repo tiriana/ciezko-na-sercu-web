@@ -6,10 +6,12 @@ import {
   catalogSchema,
   episodeSchema,
   overrideSchema,
+  peopleSchema,
   titlesSchema,
   type Catalog,
   type CatalogEpisode,
   type Episode,
+  type Person,
   type TitleOverride,
 } from './schema';
 
@@ -58,6 +60,13 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
       if (fix.start !== undefined) track.start = fix.start;
       if (fix.durationSec !== undefined) track.durationSec = fix.durationSec;
     }
+
+    const rename = override.credits.rename;
+    if (override.credits.replace) {
+      episode.credits = override.credits.replace.map((credit) => ({ ...credit }));
+    } else if (Object.keys(rename).length > 0) {
+      episode.credits = episode.credits.map((credit) => ({ ...credit, name: rename[credit.name] ?? credit.name }));
+    }
   }
   return new Map(episodes.map((episode) => [episode.id, episode]));
 }
@@ -73,6 +82,20 @@ async function getOverrides(): Promise<Map<string, z.infer<typeof overrideSchema
     names.map(async (name) => [name.replace(/\.json$/, ''), await load(join(OVERRIDES_DIR, name), overrideSchema)] as const)
   );
   return new Map(loaded);
+}
+
+let peopleCache: Record<string, Person> | undefined;
+
+export async function getPeople(): Promise<Record<string, Person>> {
+  if (peopleCache) return peopleCache;
+  try {
+    const data = await load(join(DATA_DIR, 'people.json'), peopleSchema);
+    peopleCache = data.people;
+  } catch {
+    // Brak pliku to nie błąd: bez niego creditsy renderują się jak dotąd, bez linków.
+    peopleCache = {};
+  }
+  return peopleCache;
 }
 
 export async function getTitles(): Promise<Record<string, TitleOverride>> {

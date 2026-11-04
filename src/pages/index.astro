@@ -2,6 +2,7 @@
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import Base from '../layouts/Base.astro';
+import PersonName from '../components/PersonName.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../lib/data';
 import { formatDay, formatEpisodeTitle, monthKey, monthLabel } from '../lib/format';
 
@@ -56,9 +57,19 @@ for (const entry of entries) {
             po eksperyment.
           </p>
           <dl class="facts">
-            <div><dt>Prowadzący</dt><dd>Jarek Szubrycht</dd></div>
-            {producers.length > 0 && <div><dt>Produkcja</dt><dd>{producers.join(', ')}</dd></div>}
-            {publishers.length > 0 && <div><dt>Wydawca</dt><dd>{publishers.join(', ')}</dd></div>}
+            <div><dt>Prowadzący</dt><dd><PersonName name="Jarek Szubrycht" /></dd></div>
+            {producers.length > 0 && (
+              <div>
+                <dt>Produkcja</dt>
+                <dd>{producers.map((name, index) => <><PersonName name={name} />{index < producers.length - 1 ? ', ' : ''}</>)}</dd>
+              </div>
+            )}
+            {publishers.length > 0 && (
+              <div>
+                <dt>Wydawca</dt>
+                <dd>{publishers.map((name, index) => <><PersonName name={name} />{index < publishers.length - 1 ? ', ' : ''}</>)}</dd>
+              </div>
+            )}
             <div><dt>Stacja</dt><dd>{catalog.program.station}</dd></div>
             <div><dt>Emisja</dt><dd>środa, 00:05</dd></div>
             <div><dt>Kontakt</dt><dd><a href="mailto:ciezko@polskieradio.pl">ciezko@polskieradio.pl</a></dd></div>

@@ -1,0 +1,23 @@
+---
+import { getPeople } from '../lib/data';
+
+interface Props {
+  name: string;
+}
+
+// Link tylko wtedy, gdy znamy profil: identyfikatory w adresach Polskiego Radia
+// nie wynikają z nazwiska, więc mapa jest ręczna (data/people.json).
+const { name } = Astro.props;
+const people = await getPeople();
+const person = people[name];
+---
+
+{
+  person?.url ? (
+    <a class="person-link" href={person.url} target="_blank" rel="noopener noreferrer">
+      {name} ↗
+    </a>
+  ) : (
+    name
+  )
+}

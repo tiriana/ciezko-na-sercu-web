@@ -1,12 +1,42 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { catalogSchema, episodeSchema, titlesSchema } from '../src/lib/schema.ts';
+import { catalogSchema, episodeSchema, peopleSchema, titlesSchema } from '../src/lib/schema.ts';
 
 const DATA = 'data';
 const EPISODES = join(DATA, 'episodes');
 
 const problems = [];
+
+const foldName = (value) =>
+  value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
+
+// Ta sama logika co w taggerze: dopuszczamy dwa znaki różnicy, ale tylko przy nazwach
+// o podobnej długości, żeby krótkie słowa nie łapały się przypadkiem.
+const similarNames = (left, right) => {
+  const a = foldName(left);
+  const b = foldName(right);
+  if (Math.abs(a.length - b.length) > 2) return false;
+  return distance(a, b) <= 2;
+};
+
+const distance = (left, right) => {
+  const previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+  for (let i = 1; i <= left.length; i++) {
+    let diagonal = previous[0];
+    previous[0] = i;
+    for (let j = 1; j <= right.length; j++) {
+      const saved = previous[j];
+      previous[j] = Math.min(previous[j] + 1, previous[j - 1] + 1, diagonal + (left[i - 1] === right[j - 1] ? 0 : 1));
+      diagonal = saved;
+    }
+  }
+  return previous[right.length];
+};
 
 const catalog = catalogSchema.parse(JSON.parse(await readFile(join(DATA, 'catalog.json'), 'utf8')));
 const titles = titlesSchema.parse(JSON.parse(await readFile(join(DATA, 'titles.json'), 'utf8')));
@@ -31,6 +61,20 @@ for (const name of await readdir(EPISODES)) {
   const episode = episodeSchema.parse(JSON.parse(await readFile(join(EPISODES, name), 'utf8')));
   if (episode.id !== id) problems.push(`${name}: pole id to ${episode.id}`);
   if (!ids.has(id)) problems.push(`${name}: opracowanie bez odcinka w katalogu`);
+
+  // Dwie formy tego samego nazwiska w jednej roli to zwykle błąd transkrypcji;
+  // tagger scala je sam, więc tutaj tylko ostrzegamy o danych sprzed poprawki.
+  const seenPairs = new Set();
+  for (const credit of episode.credits) {
+    for (const other of episode.credits) {
+      if (credit === other || credit.role !== other.role || credit.name === other.name) continue;
+      if (!similarNames(credit.name, other.name)) continue;
+      const pair = [credit.name, other.name].sort().join('|');
+      if (seenPairs.has(pair)) continue;
+      seenPairs.add(pair);
+      problems.push(`${name}: prawdopodobnie ta sama osoba w roli ${credit.role}: „${credit.name}" i „${other.name}"`);
+    }
+  }
 }
 
 const TRANSCRIPTS = join(DATA, 'transcripts');
@@ -52,6 +96,21 @@ for (const name of transcriptFiles) {
   if (!name.endsWith('.txt')) continue;
   const id = name.slice(0, -4);
   if (!transcriptIds.has(id)) problems.push(`transcripts/${name}: .txt bez odpowiadającego .json`);
+}
+
+const people = await readFile(join(DATA, 'people.json'), 'utf8')
+  .then((raw) => peopleSchema.parse(JSON.parse(raw)).people)
+  .catch(() => ({}));
+
+const usedNames = new Set();
+for (const name of await readdir(EPISODES)) {
+  if (!name.endsWith('.json')) continue;
+  const episode = JSON.parse(await readFile(join(EPISODES, name), 'utf8'));
+  for (const credit of episode.credits ?? []) usedNames.add(credit.name);
+}
+
+for (const name of Object.keys(people)) {
+  if (!usedNames.has(name)) problems.push(`people.json: wpis dla osoby bez creditsów: ${name}`);
 }
 
 for (const id of Object.keys(titles.titles)) {

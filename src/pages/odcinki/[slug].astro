@@ -2,6 +2,7 @@
 import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
+import PersonName from '../../components/PersonName.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
 import { formatClock, formatDate, formatEpisodeTitle, formatRole, formatWeekday, pluralEntries, pluralTracks } from '../../lib/format';
 
@@ -262,7 +263,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                 {episode.credits.map((credit) => (
                   <div>
                     <dt>{formatRole(credit.role)}</dt>
-                    <dd>{credit.name}</dd>
+                    <dd><PersonName name={credit.name} /></dd>
                   </div>
                 ))}
               </dl>
