@@ -169,16 +169,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
             <section class="card" aria-labelledby="summary-title">
               <h2 id="summary-title">Streszczenie</h2>
               <p>{episode.summary}</p>
-              <div class="note">
-                Streszczenie jest szkicem z modelu i wymaga redakcji przed publikacją.
-              </div>
+              <div class="note">Streszczenie wygenerowane przez AI.</div>
             </section>
           )}
 
           {episode.credits.length > 0 && (
             <section class="card" aria-labelledby="credits-title">
               <h2 id="credits-title">Credits</h2>
-              <p class="card__sub">Osoby wymienione w audycji, z czasem wejścia wypowiedzi</p>
               <dl class="kv">
                 {episode.credits.map((credit) => (
                   <div>

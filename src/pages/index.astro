@@ -4,10 +4,12 @@ import SiteHeader from '../components/SiteHeader.astro';
 import Base from '../layouts/Base.astro';
 import { getCatalog, getEntries } from '../lib/data';
 import { formatDay, formatEpisodeTitle, monthKey, monthLabel } from '../lib/format';
+import { estimateSchedule, MINUTES_PER_EPISODE } from '../lib/schedule';
 
 const [catalog, entries] = await Promise.all([getCatalog(), getEntries()]);
 const enriched = entries.filter((entry) => entry.enriched);
 const years = [...new Set(entries.map((entry) => entry.date.slice(0, 4)))];
+const queue = estimateSchedule(enriched.length, entries.length);
 
 const months = new Map<string, typeof entries>();
 for (const entry of entries) {
@@ -56,7 +58,17 @@ for (const entry of entries) {
             <div><dt>Prowadzący</dt><dd>Jarek Szubrycht</dd></div>
             <div><dt>Stacja</dt><dd>{catalog.program.station}</dd></div>
             <div><dt>Emisja</dt><dd>środa, 00:05</dd></div>
+            <div><dt>Opracowane</dt><dd>{enriched.length} z {entries.length}</dd></div>
+            {queue.finishDate && (
+              <div><dt>Koniec kolejki</dt><dd>≈ {formatDay(queue.finishDate)}</dd></div>
+            )}
           </dl>
+          {queue.finishDate && (
+            <p class="note">
+              Szacunek: zostało {queue.remaining} odcinków, ok. {Math.round(MINUTES_PER_EPISODE)} min każdy,
+              do {queue.perNight} na noc. Data orientacyjna — zmieni się, jeśli zmieni się tempo.
+            </p>
+          )}
         </aside>
       </div>
     </section>

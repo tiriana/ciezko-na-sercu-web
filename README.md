@@ -37,6 +37,13 @@ Dane:
    („Ciężko na sercu 1 maja godz. 0005”). Każdy wpis trzyma `originalTitle`, a strona pokazuje
    oba i oznacza nasz tytuł jako nieoficjalny.
 
+## Kolejka opracowań
+
+Na stronie głównej jest szacowana data końca kolejki: liczba odcinków bez opracowania,
+~18,5 min na odcinek (pomiar z 2026-11-04) i okno nocne 21:00–09:00, czyli ~38 odcinków
+na noc. Wartości siedzą w `src/lib/schedule.ts`; data jest orientacyjna i przelicza się
+przy każdym buildzie.
+
 ## Deploy
 
 1. `.github/workflows/deploy.yml` — build i publikacja; wymaga sekretu `CLOUDFLARE_PAGES_TOKEN`
