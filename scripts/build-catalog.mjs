@@ -44,6 +44,7 @@ const episodes = downloaded
     articleId: episode.articleId ?? null,
     durationSec: null,
     sourceUrl: sourceUrlFor(episode),
+    audioUrl: episode.mp3Url ? episode.mp3Url.replace(/^http:\/\//, 'https://') : null,
   }))
   .sort((a, b) => b.date.localeCompare(a.date));
 

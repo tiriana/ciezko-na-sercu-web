@@ -188,8 +188,11 @@ z `tracks[].artist`, więc nie wymaga osobnego pliku wejściowego.
 
 To nie jest opinia prawna, tylko lista decyzji do potwierdzenia przed publikacją tracklisty.
 
-1. **Audio**: nie publikujemy i nie linkujemy do plików `static.prsa.pl` — to surowe MP3, nie
-   strona odcinka.
+1. **Audio — zdecydowane (2026-11-04)**: nie hostujemy i nie proxujemy dźwięku, ale hotlinkujemy
+   plik z `static.prsa.pl` we własnym `<audio>` i startujemy od znacznika czasu utworu
+   (`currentTime = track.start`). Plik pobiera przeglądarka użytkownika wprost z serwera Polskiego
+   Radia, więc nie powstaje nowa emisja ani kopia. Odrzucone: re-streaming przez nasz serwer
+   (wymaga licencji) i iframe z MP3 (nieostylowalny, nie działa na iOS).
 2. **Opis odcinka ze strony radia**: nie kopiujemy. Streszczenie piszemy własnymi słowami.
    Wynik modelu jest szkicem do redakcji, nie gotowym tekstem.
 3. **Transkrypt**: pełna transkrypcja audycji to opracowanie cudzego utworu. Nie publikujemy

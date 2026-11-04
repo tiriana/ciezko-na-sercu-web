@@ -1087,3 +1087,47 @@ a {
 .title-note span {
   color: var(--text);
 }
+
+.audio-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-raised);
+}
+
+.audio-bar audio {
+  width: min(100%, 420px);
+}
+
+.audio-bar__hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.track-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.track-play:hover,
+.track-play:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}

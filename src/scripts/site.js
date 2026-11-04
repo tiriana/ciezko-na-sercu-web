@@ -50,3 +50,31 @@ if (search) {
     });
   }
 }
+
+const audio = document.querySelector('[data-episode-audio]');
+if (audio) {
+  const players = [...document.querySelectorAll('[data-track-start]')];
+
+  let pendingSeek = null;
+
+  const playFrom = (start) => {
+    const seek = () => {
+      audio.currentTime = start;
+      audio.play();
+    };
+
+    if (audio.readyState >= 1) {
+      seek();
+      return;
+    }
+
+    if (pendingSeek) audio.removeEventListener('loadedmetadata', pendingSeek);
+    pendingSeek = seek;
+    audio.addEventListener('loadedmetadata', pendingSeek, { once: true });
+    audio.load();
+  };
+
+  for (const button of players) {
+    button.addEventListener('click', () => playFrom(Number(button.dataset.trackStart)));
+  }
+}

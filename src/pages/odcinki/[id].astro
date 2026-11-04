@@ -74,6 +74,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               {pluralTracks(episode.tracks.length)} · czasy dotyczą początku utworu w audycji
             </p>
 
+            {entry.audioUrl && (
+              <div class="audio-bar">
+                <audio controls preload="none" src={entry.audioUrl} data-episode-audio></audio>
+                <p class="audio-bar__hint">Kliknij ▶ przy utworze, żeby zacząć od jego początku.</p>
+              </div>
+            )}
+
             {episode.tracks.length > 0 ? (
               <table class="tracks">
                 <thead>
@@ -88,7 +95,18 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                 <tbody>
                   {episode.tracks.map((track, index) => (
                     <tr>
-                      <td class="tracks__idx">{index + 1}</td>
+                      <td class="tracks__idx">
+                        {entry.audioUrl ? (
+                          <button
+                            class="track-play"
+                            type="button"
+                            data-track-start={track.start}
+                            aria-label={`Odtwórz od ${formatClock(track.start)}`}
+                          >▶</button>
+                        ) : (
+                          index + 1
+                        )}
+                      </td>
                       <td>
                         <div class="tracks__artist">{track.artist}</div>
                         <div>{track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}</div>

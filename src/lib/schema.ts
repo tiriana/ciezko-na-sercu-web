@@ -17,6 +17,7 @@ export const catalogSchema = z.object({
       articleId: z.number().nullable(),
       durationSec: z.number().nullable(),
       sourceUrl: z.url().nullable(),
+      audioUrl: z.url().nullable(),
     }),
   ),
 });
