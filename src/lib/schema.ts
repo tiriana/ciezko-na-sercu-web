@@ -30,10 +30,14 @@ export const episodeSchema = z.object({
   analyzedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   durationSec: z.number().nullable(),
   summary: z.string().nullable(),
-  topics: z.array(z.object({ start: z.number(), label: z.string() })),
+  topics: z.array(z.object({ start: z.number(), end: z.number().optional(), label: z.string() })),
+  // Tagi wyprowadzone ze znaczników profilu (np. Kanonada); służą też przyszłemu wyszukiwaniu.
+  tags: z.array(z.object({ id: z.string(), label: z.string(), start: z.number().optional() })).default([]),
   tracks: z.array(
     z.object({
       start: z.number(),
+      /** Koniec pozycji na osi programu, po uzgodnieniu z wejściami. */
+      end: z.number().optional(),
       durationSec: z.number(),
       // Utwór rozpoznany tylko z zapowiedzi może nie mieć wykonawcy w trackliście taggera.
       artist: z.string().nullable(),

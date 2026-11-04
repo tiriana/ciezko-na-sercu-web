@@ -47,9 +47,11 @@ const spanEnd = (items: { start: number }[], index: number, durationSec: number 
   return durationSec ? Math.min(end, durationSec) : end;
 };
 
+// Koniec policzony w taggerze ma pierwszeństwo: on wie, gdzie naprawdę kończy się
+// wejście po przycięciu do utworu. Wyprowadzanie z następnej pozycji to fallback.
 const topicSpans = (episode?.topics ?? []).map((topic, index) => ({
   ...topic,
-  end: spanEnd(episode?.topics ?? [], index, episode?.durationSec ?? null),
+  end: topic.end ?? spanEnd(episode?.topics ?? [], index, episode?.durationSec ?? null),
 }));
 const quoteSpans = (episode?.quotes ?? []).map((quote, index) => ({
   ...quote,
@@ -62,7 +64,7 @@ const programme = [
     kind: 'track' as const,
     index: index + 1,
     start: track.start,
-    end: track.start + track.durationSec,
+    end: track.end ?? track.start + track.durationSec,
     track,
   })),
   ...topicSpans.map((topic) => ({
@@ -109,6 +111,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
       ) : entry.titleKind === 'technical' ? (
         <p class="title-note">Tytuł techniczny z katalogu — audycja nie ma własnego tytułu.</p>
       ) : null}
+      {episode && episode.tags.length > 0 && (
+        <ul class="tags" aria-label="Tagi audycji">
+          {episode.tags.map((tag) => (
+            <li class="tag">{tag.label}</li>
+          ))}
+        </ul>
+      )}
       <div class="ep-head__meta">
         {episode && (
           <>

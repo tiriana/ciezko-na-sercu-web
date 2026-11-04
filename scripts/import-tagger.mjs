@@ -48,10 +48,18 @@ const toContract = (episode, analyzedAt, id) => {
     summary: episode.summary ?? null,
     topics: (episode.topics ?? []).map((topic) => ({
       start: Math.round(topic.time),
+      // Koniec policzony w taggerze; brak = strona wyprowadzi go z następnej pozycji.
+      end: topic.end == null ? undefined : Math.round(topic.end),
       label: topic.topic,
+    })),
+    tags: (episode.tags ?? []).map((tag) => ({
+      id: tag.id,
+      label: tag.label,
+      start: tag.start == null ? undefined : Math.round(tag.start),
     })),
     tracks: (episode.tracks ?? []).map((track) => ({
       start: Math.round(track.start),
+      end: track.end == null ? undefined : Math.round(track.end),
       durationSec: Math.round(track.durationSec),
       artist: track.artist,
       title: track.title,

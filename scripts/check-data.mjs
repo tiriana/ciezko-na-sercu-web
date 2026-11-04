@@ -7,6 +7,7 @@ const DATA = 'data';
 const EPISODES = join(DATA, 'episodes');
 
 const problems = [];
+const staleTimeline = [];
 
 const foldName = (value) =>
   value
@@ -75,6 +76,36 @@ for (const name of await readdir(EPISODES)) {
       problems.push(`${name}: prawdopodobnie ta sama osoba w roli ${credit.role}: „${credit.name}" i „${other.name}"`);
     }
   }
+
+  const tagIds = new Set();
+  for (const tag of episode.tags) {
+    if (!/^[a-z0-9-]+$/.test(tag.id)) problems.push(`${name}: tag o nieprawidłowym id: ${tag.id}`);
+    if (tagIds.has(tag.id)) problems.push(`${name}: duplikat tagu ${tag.id}`);
+    tagIds.add(tag.id);
+  }
+
+  // Pozycje programu muszą być rozłączne — ale tylko w danych po uzgadnianiu osi
+  // (issue #10). Starsze opracowania nie mają pól `end`, więc ich nakładanie jest
+  // znanym skutkiem i liczymy je zbiorczo, zamiast blokować build.
+  const reconciled = episode.topics.length === 0 || episode.topics.every((topic) => topic.end !== undefined);
+  if (!reconciled) staleTimeline.push(name);
+
+  const positions = reconciled
+    ? [
+        ...episode.tracks.map((track) => ({ start: track.start, end: track.end ?? track.start + track.durationSec })),
+        ...episode.topics.map((topic) => ({ start: topic.start, end: topic.end ?? topic.start })),
+      ].sort((left, right) => left.start - right.start)
+    : [];
+
+  for (let index = 1; index < positions.length; index++) {
+    const previous = positions[index - 1];
+    const current = positions[index];
+    if (current.start < previous.end - 1) {
+      problems.push(
+        `${name}: pozycje programu nachodzą na siebie (${previous.start}-${previous.end} vs ${current.start}-${current.end})`
+      );
+    }
+  }
 }
 
 const TRANSCRIPTS = join(DATA, 'transcripts');
@@ -121,6 +152,13 @@ if (problems.length > 0) {
   console.error(`Dane niespójne (${problems.length}):`);
   for (const problem of problems) console.error(`  - ${problem}`);
   process.exit(1);
+}
+
+if (staleTimeline.length > 0) {
+  console.log(
+    `${staleTimeline.length} opracowań ma dane sprzed uzgadniania osi programu — przelicz \`rat tag\`, ` +
+      'żeby czasy wejść i utworów przestały się nakładać.'
+  );
 }
 
 console.log(
