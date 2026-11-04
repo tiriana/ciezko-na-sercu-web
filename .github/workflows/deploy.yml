@@ -52,9 +52,14 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            CLOUDFLARE_ACCOUNT_ID=$(curl -fsS \
+            response=$(curl -fsS \
               -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-              https://api.cloudflare.com/client/v4/accounts | jq -r '.result[0].id')
+              https://api.cloudflare.com/client/v4/accounts)
+            CLOUDFLARE_ACCOUNT_ID=$(echo "$response" | jq -r '.result[0].id // empty')
+            if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+              echo "::error::Nie udało się ustalić numeru konta Cloudflare. Ustaw zmienną repozytorium CLOUDFLARE_ACCOUNT_ID (dash.cloudflare.com → numer w adresie). Odpowiedź API: $response"
+              exit 1
+            fi
             export CLOUDFLARE_ACCOUNT_ID
             echo "Numer konta wykryty z API: $CLOUDFLARE_ACCOUNT_ID"
           fi
