@@ -1242,11 +1242,6 @@ a {
   color: var(--muted);
 }
 
-.episode-row__plan {
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
 /* Pozycja aktualnie odtwarzana */
 
 .track-play__icon--pause {
@@ -1285,4 +1280,55 @@ a {
   color: var(--muted);
   font-size: 12px;
   line-height: 1.5;
+}
+
+.ep-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  padding: 8px 0 56px;
+}
+
+.ep-nav__link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-decoration: none;
+}
+
+.ep-nav__link:hover,
+.ep-nav__link:focus-visible {
+  border-color: var(--accent);
+}
+
+.ep-nav__link--next {
+  text-align: right;
+  grid-column: 2;
+}
+
+.ep-nav__label {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ep-nav__title {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .ep-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-nav__link--next {
+    grid-column: 1;
+    text-align: left;
+  }
 }

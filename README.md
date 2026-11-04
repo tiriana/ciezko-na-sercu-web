@@ -39,10 +39,10 @@ Dane:
 
 ## Kolejka opracowań
 
-Na stronie głównej jest szacowana data końca kolejki: liczba odcinków bez opracowania,
-~18,5 min na odcinek (pomiar z 2026-11-04) i okno nocne 21:00–09:00, czyli ~38 odcinków
-na noc. Wartości siedzą w `src/lib/schedule.ts`; data jest orientacyjna i przelicza się
-przy każdym buildzie.
+Szacunki tempa są dla redakcji, nie dla widzów — na stronie ich nie ma. `npm run queue`
+zapisuje `data/queue.json`: liczbę opracowanych odcinków, pozostałe, tempo (~18,5 min na
+odcinek, okno nocne 21:00–09:00) i planowaną datę każdego odcinka. Wartości stałe siedzą
+w `src/lib/schedule.ts`.
 
 ## Dane
 

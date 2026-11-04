@@ -3,19 +3,27 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
-import { formatClock, formatDate, formatDay, formatEpisodeTitle, formatRole, formatWeekday, pluralTracks } from '../../lib/format';
-import { planQueue } from '../../lib/schedule';
+import { formatClock, formatDate, formatEpisodeTitle, formatRole, formatWeekday, pluralTracks } from '../../lib/format';
 
 export async function getStaticPaths() {
   const entries = await getEntries();
-  const planned = planQueue(entries);
-  return entries.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry, plannedDate: planned.get(entry.slug) ?? null },
-  }));
+  // Katalog jest posortowany od najnowszych, więc „poprzednia" to starsza audycja,
+  // a „następna" — nowsza; na krańcach zakresu odpowiedniego linku po prostu nie ma.
+  return entries.map((entry, index) => {
+    const older = entries[index + 1];
+    const newer = entries[index - 1];
+    return {
+      params: { slug: entry.slug },
+      props: {
+        entry,
+        older: older ? { slug: older.slug, title: formatEpisodeTitle(older.displayTitle) } : null,
+        newer: newer ? { slug: newer.slug, title: formatEpisodeTitle(newer.displayTitle) } : null,
+      },
+    };
+  });
 }
 
-const { entry, plannedDate } = Astro.props;
+const { entry, older, newer } = Astro.props;
 const [catalog, files] = await Promise.all([getCatalog(), getEpisodeFiles()]);
 const episode = files.get(entry.id);
 
@@ -90,7 +98,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         ) : (
           <>
             <span class="badge badge--plain">skatalogowany</span>
-            {plannedDate && <span>opracowanie planowane ≈ {formatDay(plannedDate)}</span>}
           </>
         )}
         {entry.sourceUrl && (
@@ -283,6 +290,24 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         )}
       </section>
     )}
+    <nav class="ep-nav" aria-label="Sąsiednie audycje">
+      {older ? (
+        <a class="ep-nav__link" href={`/odcinki/${older.slug}/`}>
+          <span class="ep-nav__label">← Poprzednia audycja</span>
+          <span class="ep-nav__title">{older.title}</span>
+        </a>
+      ) : (
+        <span />
+      )}
+      {newer ? (
+        <a class="ep-nav__link ep-nav__link--next" href={`/odcinki/${newer.slug}/`}>
+          <span class="ep-nav__label">Następna audycja →</span>
+          <span class="ep-nav__title">{newer.title}</span>
+        </a>
+      ) : (
+        <span />
+      )}
+    </nav>
   </main>
 
   <SiteFooter />

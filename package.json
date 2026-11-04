@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "catalog": "node scripts/build-catalog.mjs",
     "import:tagger": "node scripts/import-tagger.mjs",
-    "check": "node scripts/check-data.mjs"
+    "check": "node scripts/check-data.mjs",
+    "queue": "node scripts/queue.mjs"
   },
   "dependencies": {
     "astro": "^6.4.8",
