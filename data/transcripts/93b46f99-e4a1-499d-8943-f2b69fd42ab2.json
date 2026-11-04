@@ -1,0 +1,945 @@
+{
+  "version": 1,
+  "episodeId": "93b46f99-e4a1-499d-8943-f2b69fd42ab2",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109232640,
+  "fileMtimeMs": 1789150251631.438,
+  "windows": [
+    {
+      "index": 0,
+      "start": 2.44,
+      "end": 8.41
+    },
+    {
+      "index": 1,
+      "start": 289.99,
+      "end": 463.8
+    },
+    {
+      "index": 2,
+      "start": 756.29,
+      "end": 857.76
+    },
+    {
+      "index": 3,
+      "start": 1122.82,
+      "end": 1272.25
+    },
+    {
+      "index": 4,
+      "start": 1292.36,
+      "end": 1298.62
+    },
+    {
+      "index": 5,
+      "start": 1515.52,
+      "end": 1648.35
+    },
+    {
+      "index": 6,
+      "start": 1885.73,
+      "end": 2068.35
+    },
+    {
+      "index": 7,
+      "start": 2259.65,
+      "end": 2353.12
+    },
+    {
+      "index": 8,
+      "start": 2643.3,
+      "end": 2717.98
+    },
+    {
+      "index": 9,
+      "start": 2978.76,
+      "end": 3019.42
+    },
+    {
+      "index": 10,
+      "start": 3326.4,
+      "end": 3402.78
+    },
+    {
+      "index": 11,
+      "start": 3678.37,
+      "end": 3762.52
+    },
+    {
+      "index": 12,
+      "start": 4111.75,
+      "end": 4177.34
+    },
+    {
+      "index": 13,
+      "start": 4444.74,
+      "end": 4520.03
+    },
+    {
+      "index": 14,
+      "start": 4824.26,
+      "end": 4863.36
+    },
+    {
+      "index": 15,
+      "start": 5061.22,
+      "end": 5151.52
+    },
+    {
+      "index": 16,
+      "start": 5476.39,
+      "end": 5647.42
+    },
+    {
+      "index": 17,
+      "start": 5985.06,
+      "end": 6071.93
+    },
+    {
+      "index": 18,
+      "start": 6467.78,
+      "end": 6575.39
+    }
+  ],
+  "segments": [
+    {
+      "start": 2.44,
+      "end": 8.42,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 290.73,
+      "end": 301.93,
+      "text": "Dobry wieczór Państwu, kłania się Jarek Szubrycht, autor audycji Ciężko na sercu, która umili Wam kolejne dwie godziny ciężkiego żywota."
+    },
+    {
+      "start": 302.47,
+      "end": 308.07,
+      "text": "Jej wydawcą jest Mariusz Owczarek, zatem witam Was również w jego imieniu."
+    },
+    {
+      "start": 308.57,
+      "end": 313.89,
+      "text": "Słuchacze Ciężko na sercu wiedzą doskonale, że lubię audycje tematyczne."
+    },
+    {
+      "start": 313.89,
+      "end": 320.91,
+      "text": "Nie mam w zwyczaju puszczać Wam tu piosenek, których nie łączy jakaś choćby mętna myśl."
+    },
+    {
+      "start": 321.39,
+      "end": 333.03,
+      "text": "Kiedy zastanawiałem się, w jaką drogę zabiorę Was tym razem, przyszedł mi do głowy pomysł oczywisty, choć przyznaję, może trochę spóźniony."
+    },
+    {
+      "start": 333.47,
+      "end": 336.73,
+      "text": "Dzisiaj zabiorę Was w podróż do Itaki."
+    },
+    {
+      "start": 337.11,
+      "end": 351.83,
+      "text": "Odyseja, film Christophera Nolana to przecież nie tylko największy hit filmowy sezonu, ale też powód do długich, czasem mądrych, a czasem głupich dyskusji, sporów i karczemnych awantur."
+    },
+    {
+      "start": 352.05,
+      "end": 360.21,
+      "text": "Oto jak powinno się przedstawiać i interpretować dzieło Homera, czy szerzej kulturę starożytnej Grecji."
+    },
+    {
+      "start": 360.21,
+      "end": 372.71,
+      "text": "A przecież współczesny grecki metal też garściami czerpie z tego dziedzictwa, nie tylko grecki zresztą i nim również, choć w mniejszym stopniu dziś się zajmiemy."
+    },
+    {
+      "start": 372.95,
+      "end": 380.43,
+      "text": "Powitała nas grupa Jos Iria, piosenką zatytułowaną Koniec znanej cywilizacji."
+    },
+    {
+      "start": 380.93,
+      "end": 386.25,
+      "text": "A więc taką, która mogłaby śmiało lecieć na napisach końcowych Odysei."
+    },
+    {
+      "start": 386.25,
+      "end": 402.89,
+      "text": "Jos Iria to zespół stosunkowo młody, bo pierwszą dużą płytę nagrał raptem pięć lat temu, ale kapitanem tego okrętu jest przecież niejaki Jim Mutilator, a więc weteran greckiej sceny."
+    },
+    {
+      "start": 403.31,
+      "end": 407.39,
+      "text": "Człowiek z pierwszych składów Rotting Christ i Varatron."
+    },
+    {
+      "start": 407.39,
+      "end": 430.21,
+      "text": "Zatem nic dziwnego, że i dzisiaj na tegorocznym albumie Gone with the Devil Dimitris Patsuris, bo tak naprawdę się nazywa, potrafił połączyć to, co najlepsze w helleńskim black metalu od jego zarania z tym, co nowe, bo w końcu mamy 2026 rok."
+    },
+    {
+      "start": 430.21,
+      "end": 445.43,
+      "text": "Oczywiście nie wyobrażam sobie, żeby teraz nie zaprezentować tej wyklętej trójcy greckiego black metalu, która stworzyła tę scenę, czyli grupy Varatron, Rotting Christ i Necromantia."
+    },
+    {
+      "start": 445.43,
+      "end": 456.19,
+      "text": "Na początek niech będzie nekromantia, która wielkiej międzynarodowej kariery nie zrobiła, choć była zespołem i znakomitym i oryginalnym."
+    },
+    {
+      "start": 456.71,
+      "end": 461.23,
+      "text": "Posłuchajmy piosenki o wilku spuszczonym z łańcucha."
+    },
+    {
+      "start": 756.29,
+      "end": 774.29,
+      "text": "To była nekromantia ze swojej pierwszej dużej płyty Crossing the Fiery Path z 1993 roku. Rzecz kultowa, ale w tamtym czasie uwagę świata ściągała już łuna na niebie północy."
+    },
+    {
+      "start": 774.29,
+      "end": 795.29,
+      "text": "I chociaż Grecy wymyślili swój zupełnie osobny black metal wcześniej, a już na pewno niezależnie od Norwegów i choć było to dobre, nie byli w stanie konkurować z tamtejszą sceną, choćby ze względu na to, że nie działy się u nich te wszystkie pozamuzyczne ekscesy,"
+    },
+    {
+      "start": 795.29,
+      "end": 816.35,
+      "text": "które co prawda kilku Norwegom skróciły życiorys o parę lat odsiadki, kilku zresztą skróciły na zawsze, ale za to zrobiły tej scenie taki PR, taką obrosły legendą, że już drugie pokolenie fanów ciągnie do tego jak niedźwiedzia do pasieki."
+    },
+    {
+      "start": 816.35,
+      "end": 832.01,
+      "text": "A co Grekom pozostało? Cóż, po prostu robić swoje, jak Varatron. Zespół świetny, konsekwentnie grający własną muzykę na małą skalę, ale za to z wielkim zapałem."
+    },
+    {
+      "start": 832.35,
+      "end": 854.63,
+      "text": "Nazwa zespołu oznacza podobno po grecku bardzo głęboki wąwóz, no więc Varatron człapie tym wąwózem metalowego undergroundu już od 1988 roku, rzadko wystawiając głowy na powierzchnię, ale do nich tam warto czasem zajrzeć."
+    },
+    {
+      "start": 1123.52,
+      "end": 1134.16,
+      "text": "To był Varatron z mini-albumu The Lament of Gods, wydanego przez naszą polską firmę Pagan Records w 1999 roku."
+    },
+    {
+      "start": 1134.68,
+      "end": 1142.22,
+      "text": "Nie zawsze Varatron brzmi aż tak romantycznie, chociaż to jest w sumie jedna z ważnych cech greckiego black metalu,"
+    },
+    {
+      "start": 1142.42,
+      "end": 1151.56,
+      "text": "że nie jest, nigdy nie był on aż tak radykalnie wściekły, szybki i brutalny jak wiele rzeczy ze Skandynawii."
+    },
+    {
+      "start": 1151.56,
+      "end": 1160.76,
+      "text": "To pewnie kwestia innego temperamentu, innych też tradycji muzycznych i innej kultury w szerokim tego słowa znaczeniu."
+    },
+    {
+      "start": 1161.32,
+      "end": 1170.12,
+      "text": "Weźmy taki Rotten Christ, najbardziej chyba popularny na świecie grecki zespół metalowy, wielbiony również w Polsce."
+    },
+    {
+      "start": 1171.12,
+      "end": 1179.4,
+      "text": "Założył go w odległym 1984 roku, wspomniany już dziś Jim Mutilator."
+    },
+    {
+      "start": 1179.4,
+      "end": 1188.04,
+      "text": "A chwilę później dołączyli bracia Tollis, którzy od tamtej pory do dziś w Rotten Christ rządzą i dzielą."
+    },
+    {
+      "start": 1188.28,
+      "end": 1191.44,
+      "text": "Bo Jim odszedł jakieś 30 lat temu."
+    },
+    {
+      "start": 1192,
+      "end": 1205.2,
+      "text": "Początkowo Rotten Christ grali grind, nie black metal, ale już na demówce z 1989 roku Satana Stedeum obrali kierunek na piekło."
+    },
+    {
+      "start": 1205.78,
+      "end": 1209.46,
+      "text": "Nazwy nie zmienili, na dobre i złe."
+    },
+    {
+      "start": 1209.62,
+      "end": 1217.82,
+      "text": "Z jednej strony trudno jej od razu nie zapamiętać, a z drugiej, gdyby mieli inną, pewnie zrobiliby jeszcze większą karierę,"
+    },
+    {
+      "start": 1217.98,
+      "end": 1223.32,
+      "text": "bo Szyld Rotten Christ niezmiennie budzi kontrowersje i zamyka pewne drzwi."
+    },
+    {
+      "start": 1223.52,
+      "end": 1229.86,
+      "text": "Skutkował wieloma protestami w różnych zakątkach globu, odwoływaniem koncertów ITP i TD."
+    },
+    {
+      "start": 1230.74,
+      "end": 1236.42,
+      "text": "A przecież Rotten Christ od dawna nie jest groźnym, bluźnierczym zespołem."
+    },
+    {
+      "start": 1236.52,
+      "end": 1243.16,
+      "text": "Jeżeli to w ogóle jeszcze jest black metal, to przystępny, familijny i bezpieczny."
+    },
+    {
+      "start": 1243.72,
+      "end": 1244.58,
+      "text": "Nie żeby zły."
+    },
+    {
+      "start": 1244.58,
+      "end": 1255.46,
+      "text": "Jest w tym jakość, jest oryginalna myśl, ale cóż, wolę nekromantię i Varatron, jeśli ktoś pyta."
+    },
+    {
+      "start": 1269.38,
+      "end": 1272.26,
+      "text": "Początkowo Rotten Christ"
+    },
+    {
+      "start": 1292.36,
+      "end": 1298.62,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 1516.32,
+      "end": 1524.04,
+      "text": "Za nami Rotting Christ z albumu Sleep of the Angels, ostatniego wydanego w ubiegłym stuleciu."
+    },
+    {
+      "start": 1524.18,
+      "end": 1530.14,
+      "text": "Piosenka o tyle ciekawa, że zwykle w tekstach ten zespół używa angielskiego albo greckiego,"
+    },
+    {
+      "start": 1530.28,
+      "end": 1536.46,
+      "text": "a tu proszę było trochę po niemiecku i muszę powiedzieć, że fajnie to brzmiało."
+    },
+    {
+      "start": 1536.82,
+      "end": 1543.3,
+      "text": "Powiedziałem wcześniej, że na greckiej scenie black metalowej nie dochodziło do poza muzycznych ekscesów,"
+    },
+    {
+      "start": 1543.3,
+      "end": 1547.04,
+      "text": "jak chociażby w Norwegii. Cóż, do czasu."
+    },
+    {
+      "start": 1547.48,
+      "end": 1556.92,
+      "text": "W 1997 roku pojawił się tam zespół Nair Mataron, który grał black metal bardziej agresywny,"
+    },
+    {
+      "start": 1557.06,
+      "end": 1562.24,
+      "text": "szybszy od tego, co zwykle proponowali ojcowie założyciele heleńskiej sceny,"
+    },
+    {
+      "start": 1562.52,
+      "end": 1568.84,
+      "text": "ale z elementami nawiązującymi do lokalnego dziedzictwa i dźwiękiem i słowem."
+    },
+    {
+      "start": 1568.84,
+      "end": 1575.92,
+      "text": "Szło im całkiem nieźle. Coraz lepiej mieli nawet kontrakt z francuską wytwórnią Season of Mist,"
+    },
+    {
+      "start": 1576.3,
+      "end": 1579.12,
+      "text": "ale lider zespołu wybrał inną karierę."
+    },
+    {
+      "start": 1579.42,
+      "end": 1587.52,
+      "text": "Polityczną. Nie tylko polityczną zresztą, bo wraz z innymi prominentnymi członkami skrajnie prawicowej,"
+    },
+    {
+      "start": 1587.62,
+      "end": 1593.68,
+      "text": "zdelegalizowanej już zresztą partii Złoty Świt, trafił najpierw do parlamentu,"
+    },
+    {
+      "start": 1594.16,
+      "end": 1599.54,
+      "text": "a potem do więzienia za kierowanie organizacją przestępczą."
+    },
+    {
+      "start": 1600.1,
+      "end": 1604.58,
+      "text": "Wyszedł dwa lata temu i nie jest już aktywny publicznie,"
+    },
+    {
+      "start": 1605,
+      "end": 1610.86,
+      "text": "no a jego działalność raczej zaszkodziła zespołowi, niż jak w przypadku Norwegów pomogła."
+    },
+    {
+      "start": 1611.36,
+      "end": 1620.88,
+      "text": "Być może, a nawet na pewno, dlatego, że smarkaci Norwedzy siali chaos bez politycznej agendy,"
+    },
+    {
+      "start": 1621.46,
+      "end": 1624.22,
+      "text": "po prostu dlatego, że bolał ich świat."
+    },
+    {
+      "start": 1625.08,
+      "end": 1630.6,
+      "text": "Natomiast Złoty Świt przemocą walczył o Białą Grecję,"
+    },
+    {
+      "start": 1630.74,
+      "end": 1636.3,
+      "text": "organizując pogromy i nawet dopuszczając się politycznego zabójstwa."
+    },
+    {
+      "start": 1636.3,
+      "end": 1642.8,
+      "text": "Ale to wszystko pewnie Państwo, przynajmniej ci, którzy interesują się sprawami międzynarodowymi,"
+    },
+    {
+      "start": 1643.14,
+      "end": 1646.26,
+      "text": "doskonale pamiętacie z wiadomości."
+    },
+    {
+      "start": 1886.33,
+      "end": 1899.43,
+      "text": "Swoją drogą, cień złotego świtu pada nie tylko na Naer Mataron, nie tylko na tych, co należeli do partii czy do organizowanych przez te partie bojówek."
+    },
+    {
+      "start": 1899.75,
+      "end": 1907.57,
+      "text": "Ciekawy jest przypadek ojca Dionizosa Tabakisa, nie mojego ojca, ani nawet nie wujka."
+    },
+    {
+      "start": 1907.95,
+      "end": 1914.45,
+      "text": "Tak się każe tytułować, bo jest duchownym, kapłanem greckiego kościoła prawosławnego."
+    },
+    {
+      "start": 1914.45,
+      "end": 1925.51,
+      "text": "Kiedy nie odprawia nabożeństw i nie pochłaniają go obowiązki rodzinne, bo w tym obrządku kapłani mogą zakładać rodziny i Tabakis jest mężem i ojcem."
+    },
+    {
+      "start": 1926.35,
+      "end": 1939.09,
+      "text": "Otóż w wolnym czasie ten bogobojny człowiek bierze do ręki ośmiostrunową, bezprogową gitarę i gra na niej swoją własną, ale naprawdę własną muzykę."
+    },
+    {
+      "start": 1939.81,
+      "end": 1957.37,
+      "text": "Debiutancki album Tabakisa, wydany wiosną tego roku, nosi tytuł Paradise Metal, a więc rajski metal i rzeczywiście są w tym metalowe wibracje, choć za grosz brutalności nie ma mroku i ciężaru."
+    },
+    {
+      "start": 1958.27,
+      "end": 1965.49,
+      "text": "Wydawać by się mogło, że Dionysos Tabakis to postać skrajnie odległa od black metalowych radykałów."
+    },
+    {
+      "start": 1965.49,
+      "end": 1979.97,
+      "text": "A jednak niedawno, kiedy zaczął robić międzynarodową karierę, ktoś wyciągnął Tabakisowi, że w 2013 roku poświęcił lokalne biuro właśnie złotego świtu."
+    },
+    {
+      "start": 1980.63,
+      "end": 1992.53,
+      "text": "Tabakis tłumaczył się, że jest przeciwnikiem nacjonalizmu, tym bardziej, że jego dziadkowie należeli do walczącej z nazistami greckiej partyzantki."
+    },
+    {
+      "start": 1993.43,
+      "end": 2011.31,
+      "text": "A w tym biurze spełniał po prostu swój obowiązek, wysłał go tam biskup czy inny przełożony, więc poświęcił tak jak to robi i robił w przypadku innych budynków publicznych czy firm, które proszą o taką przysługę."
+    },
+    {
+      "start": 2011.31,
+      "end": 2030.39,
+      "text": "Nie wszyscy chyba jednak chcą mu wierzyć, a życzliwi znaleźli też wpisy z bloga Tabakisa sprzed kilku lat, w których duchowny wścieka się, że w Grecji zalegalizowano małżeństwa jednopłciowe."
+    },
+    {
+      "start": 2030.39,
+      "end": 2040.19,
+      "text": "Tu z kolei wyjaśniał, że przecież to oficjalne stanowisko jego kościoła niezmienne od dwóch tysięcy lat i on nie może mieć innego."
+    },
+    {
+      "start": 2041.31,
+      "end": 2057.05,
+      "text": "Tak czy owak Tabakis, który jeszcze przed chwilą był pupilem progresywnych mediów i festiwali, zaczął znikać z programów tychże, został strącony z raju przynajmniej do czyśćca,"
+    },
+    {
+      "start": 2057.05,
+      "end": 2065.73,
+      "text": "no i nie wiadomo jak dalej potoczy się jego kariera, co nie zmienia faktu, że Paradise Metal poznać warto."
+    },
+    {
+      "start": 2067.53,
+      "end": 2068.35,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2259.65,
+      "end": 2281.03,
+      "text": "No ale dość tej polityki, choć warto pamiętać, że jeżeli wydaje nam się, że Polska jest krajem politycznie podzielonym, właściwie nie wydaje się, ona oczywiście taka jest, to w Grecji te podziały są o wiele bardziej dramatyczne i ich przełożenie na codzienność brutalniejsze."
+    },
+    {
+      "start": 2281.03,
+      "end": 2290.19,
+      "text": "Zatem nic dziwnego, że znajduje to też odbicie w muzyce oraz w postawach i losach samych muzyków."
+    },
+    {
+      "start": 2290.19,
+      "end": 2311.67,
+      "text": "Idźmy dalej. Na pola elizejskie. Świetnie zapowiadał się zespół The Elysian Fields. I nie, nie chodzi tu o te pola elizejskie w Paryżu, ale o oryginalne, jedynie słuszne, czyli tę część Hadesu, którą zamieszkują po śmierci dusze dobrych ludzi."
+    },
+    {
+      "start": 2311.67,
+      "end": 2335.17,
+      "text": "Niby mało. Black metalowa nazwa, ale The Elysian Fields, właśnie black metal, trochę wymieszany z death metalem, grali od swoich chlubnych początków w połowie lat dziewięćdziesiątych i ponoć do dziś grają, choć w ostatnich latach niewiele o nich słychać, a przynajmniej do mnie niewiele dociera."
+    },
+    {
+      "start": 2335.17,
+      "end": 2343.65,
+      "text": "Tymczasem proponuje powrót do drugiej płyty grupy, czyli My, Oświeceni z dziewięćdziesiątego ósmego roku."
+    },
+    {
+      "start": 2644.04,
+      "end": 2659.18,
+      "text": "Nightfall to bez wątpienia jeden z najciekawszych i najbardziej oryginalnych greckich zespołów i jak to z wiecznie poszukującymi oryginałami bywa, niekoniecznie służy to ich karierze."
+    },
+    {
+      "start": 2659.18,
+      "end": 2680.58,
+      "text": "Zespół prowadzony przez niestrudzonego Eftimisa Karadimasa. Meandrował już od black metalu po death metal z gotykiem po drodze, ale nigdy nie wykonywał muzyki czystej gatunkowo. Zawsze była to ich własna wizja i zawsze była w tym jakość."
+    },
+    {
+      "start": 2680.58,
+      "end": 2704.98,
+      "text": "Od płyty Parade into Centuries z 92 roku po najnowszą sprzed roku, czyli Children of Eve. A przed nami utwór ciekawostka. Nie tylko dlatego, że jest hołdem dla Diamandy Gala z wspaniałej wokalistki greckiego pochodzenia, ale dlatego, że jest hołdem o bardzo erotycznym charakterze."
+    },
+    {
+      "start": 2704.98,
+      "end": 2713.9,
+      "text": "No ale ta cielesność, ta zmysłowość to też przecież część heleńskiego, antycznego dziedzictwa."
+    },
+    {
+      "start": 2713.9,
+      "end": 2717.98,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2979.08,
+      "end": 2988.68,
+      "text": "On Torns I Lay, to również zespół, którego karierę liczymy już w dekadach, zasłużony i godny szacunku."
+    },
+    {
+      "start": 2989.66,
+      "end": 2996.44,
+      "text": "Do mnie nie trafia już tak jak choćby Nightfall, bo jednak zbyt miękko i łagodnie."
+    },
+    {
+      "start": 2997.22,
+      "end": 3005.9,
+      "text": "Ale jeśli ktoś lubi smak tego gęstego, cierpkiego wywaru z death i doom metalu oraz rocka gotyckiego,"
+    },
+    {
+      "start": 3005.9,
+      "end": 3017.3,
+      "text": "to znajdzie tu coś dla siebie. Zdjąłem z półki płytę EgoCentric sprzed ponad dwóch dekad, żeby ją dzisiaj puścić i tak to brzmi."
+    },
+    {
+      "start": 3017.3,
+      "end": 3019.42,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3327.06,
+      "end": 3333.64,
+      "text": "Jeżeli chodzi o klimaty z Grecji, znacznie bardziej przekonuje mnie sceptic flash."
+    },
+    {
+      "start": 3334.4,
+      "end": 3340.52,
+      "text": "Choćby dlatego, że bardzo trudno tę muzykę jednoznacznie sklasyfikować."
+    },
+    {
+      "start": 3340.68,
+      "end": 3355.32,
+      "text": "Powiedziałbym, że to grecki odpowiednik Therion, który zresztą również ma skłonności do patosu, do rozmachu, do angażowania wielkich orkiestr i wieloosobowych chórów,"
+    },
+    {
+      "start": 3355.32,
+      "end": 3365.74,
+      "text": "ale septic flash nigdy nie wkroczył na tę ścieżkę przaśności czy biesiadności, którą niestety Therion przez jakiś czas podróżował."
+    },
+    {
+      "start": 3366.52,
+      "end": 3376.68,
+      "text": "Poza tym septic flash czasem oddalał się od swojej death metalowej bazy, to znów się do niej zbliżał, ale nigdy nie stracił z nią łączności."
+    },
+    {
+      "start": 3377.24,
+      "end": 3390.6,
+      "text": "Fani zespołu to wiedzą, ale kto nie wie temu, powiem, że od ponad dekady w septic flash bębni jedyny w tym zespole nie grek, tylko austriak, niejaki Krym."
+    },
+    {
+      "start": 3391,
+      "end": 3401.24,
+      "text": "Ten sam, który grał w naszym Decapitated na płycie Carnival is Forever, a przez chwilę nawet zastępował Inferno w Behemucie."
+    },
+    {
+      "start": 3401.24,
+      "end": 3402.78,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3679.37,
+      "end": 3698.95,
+      "text": "Septic Flesh to zespół ambitny, tworzący metal symfoniczny bez popadania w śmieszność, pewnie dlatego, że w odróżnieniu od wielu innych metalowców próbujących tej drogi, może nawet od wszystkich innych, Septic Flesh wiedzą co robią."
+    },
+    {
+      "start": 3698.95,
+      "end": 3717.29,
+      "text": "A to za sprawą Christosa Antonio, który w Septic Flesh gra na gitarze i zajmuje się orkiestracjami, a nauczył się tego i jeszcze wielu innych rzeczy w London College of Music, gdzie studiował kompozycję."
+    },
+    {
+      "start": 3717.29,
+      "end": 3726.61,
+      "text": "No ale jak już wspomniałem, Septic Flesh pozostaje konsekwentnie metalowy, a Christos ma większe ambicje."
+    },
+    {
+      "start": 3727.17,
+      "end": 3736.09,
+      "text": "Powołał zatem do życia zespół Chaos Star, który jest metalowy z ducha, ale nie z brzmienia."
+    },
+    {
+      "start": 3736.09,
+      "end": 3750.03,
+      "text": "I muzykę gra trudno właściwie powiedzieć jaką, bo spotykają się tu wątki neoklasyczne i operowe, z mrocznym ambientem i elektroniką, nawet trip-hopem."
+    },
+    {
+      "start": 3750.69,
+      "end": 3760.85,
+      "text": "Jakby Chaos Star nie byli z Grecji i gdyby nie urodzili się trochę za późno, to by pewnie byli gwiazdami wytwórni 4AD."
+    },
+    {
+      "start": 4112.33,
+      "end": 4117.61,
+      "text": "Był już black metal, były klimaty, czas na grecki gruz."
+    },
+    {
+      "start": 4118.15,
+      "end": 4123.21,
+      "text": "Death metal nie jest może muzyką najbardziej w heladzie rozpowszechnioną,"
+    },
+    {
+      "start": 4123.83,
+      "end": 4128.27,
+      "text": "ale bywa tak, że ilość przechodzi w jakość."
+    },
+    {
+      "start": 4129.03,
+      "end": 4132.95,
+      "text": "Kto ma wiedzieć, ten już wie, że w ten sposób przymierzam się"
+    },
+    {
+      "start": 4132.95,
+      "end": 4136.85,
+      "text": "do przedstawienia zespołu Dead Congregations z Aten,"
+    },
+    {
+      "start": 4136.85,
+      "end": 4141.75,
+      "text": "który dwiema dużymi płytami, kilkoma pomniejszymi wydawnictwami"
+    },
+    {
+      "start": 4141.75,
+      "end": 4148.87,
+      "text": "zasłużył na miano jednego z najlepszych europejskich zespołów death metalowych"
+    },
+    {
+      "start": 4148.87,
+      "end": 4152.47,
+      "text": "zrodzonych w XXI wieku."
+    },
+    {
+      "start": 4152.99,
+      "end": 4159.51,
+      "text": "Ostatnio znowu intensywnie koncertują, więc może i zapisanie nowych piosenek"
+    },
+    {
+      "start": 4159.51,
+      "end": 4166.55,
+      "text": "się w końcu wezmą, bo od wydania epki Somber Doom minęła długa dekada."
+    },
+    {
+      "start": 4166.85,
+      "end": 4171.19,
+      "text": "Ale wiecie, to Grecy. Tradycja zobowiązuje."
+    },
+    {
+      "start": 4171.67,
+      "end": 4174.39,
+      "text": "Odyseusz wracał do Itaki 40 lat."
+    },
+    {
+      "start": 4445.56,
+      "end": 4455.52,
+      "text": "Żeby nie było, że dzisiaj znowu same starocie, czas na garść nowej muzyki ze starożytnej Grecji, z nowożytnej właściwie."
+    },
+    {
+      "start": 4455.98,
+      "end": 4465.8,
+      "text": "Chociaż akurat Hexbane, czyli zespół, który 15 września zadebiutuje epką From Hell, tworzą starzy wyjadacze."
+    },
+    {
+      "start": 4465.8,
+      "end": 4475.72,
+      "text": "Nie tacy aż starzy, żeby chodzić po ziemi w czasach Homera, ale tacy, którzy pamiętają początki tej sceny."
+    },
+    {
+      "start": 4476.06,
+      "end": 4479.66,
+      "text": "Odgłosy paszczą, wydaje Magus z Necromantii."
+    },
+    {
+      "start": 4480.22,
+      "end": 4492.34,
+      "text": "Na gitarze gra George Emanuel, kiedyś w składzie Rotten Christ, a na basie Tass Danas Glow, też weteran greckiej sceny,"
+    },
+    {
+      "start": 4492.34,
+      "end": 4495.88,
+      "text": "który przez jakiś czas grał w Electric Wizard."
+    },
+    {
+      "start": 4496.68,
+      "end": 4506.08,
+      "text": "Na perkusji natomiast Hexbane gra, uwaga, Faust, czyli Norweg, z pierwszego składu Emperora, obecnie Dievel."
+    },
+    {
+      "start": 4506.58,
+      "end": 4514.38,
+      "text": "Dlatego, kiedy Hexbane mówią, że powstali z nostalgii i spodziwu dla pierwszych dni Black Metalu, to ja im wierzę."
+    },
+    {
+      "start": 4514.92,
+      "end": 4518.4,
+      "text": "Kiedy słucham tego, co nagrali, wierzę im jeszcze bardziej."
+    },
+    {
+      "start": 4824.26,
+      "end": 4836.32,
+      "text": "Abyssus i ich album The Rain, zapowiadany na koniec października, to też będzie propozycja dla fanów starej szkoły, choć nie black, ale death metalowej."
+    },
+    {
+      "start": 4836.32,
+      "end": 4843.04,
+      "text": "Gdyby na przykład pojechali w trasę z Vaderem, na pewno czuliby się jak u siebie w domu."
+    },
+    {
+      "start": 4843.24,
+      "end": 4850.54,
+      "text": "Jest bowiem szybko, brutalnie, ale i melodia czy trashowa motoryka przewiną się tam, gdzie trzeba."
+    },
+    {
+      "start": 4851.44,
+      "end": 4861.22,
+      "text": "The Rain będzie trzecią płytą zespołu i może jeszcze do niej wrócimy, a póki co Abyssus opowie nam o znaczeniu bólu."
+    },
+    {
+      "start": 5061.22,
+      "end": 5081.54,
+      "text": "Unverkalt rezyduje w Niemczech. W skład zespołu wchodzi dwóch Niemców i jeden Rosjanin, ale ton grupie nadaje para Greków. Gitarzysta i autor muzyki Temis Joanno oraz wokalistka Dimitra Kalawrezo."
+    },
+    {
+      "start": 5081.54,
+      "end": 5099.6,
+      "text": "Oni zresztą Unverkalt zakładali dekadę temu w Atenach. Na początku tego roku ukazała się trzecia płyta grupy zatytułowana Herediter, z której wybrałem dla Państwa piosenkę Eneliti."
+    },
+    {
+      "start": 5099.6,
+      "end": 5114.8,
+      "text": "To lament za Grekami z Pontu, Joni i Tracji, ofiarami wydarzeń, które w greckiej historiografii nazywa się katastrofą w Azji Mniejszej lub katastrofą Smyrny,"
+    },
+    {
+      "start": 5114.8,
+      "end": 5128.14,
+      "text": "a więc przegranej wojny grecko-tureckiej toczącej się w latach 1919-1922 i zakończonej spaleniem właśnie Smyrny."
+    },
+    {
+      "start": 5128.14,
+      "end": 5142.58,
+      "text": "To nie jest wbrew pozorom odległa historia. To coś, co rzutuje na dzisiejsze relacje obu państw i nastroje, a co za tym idzie również decyzje polityczne Greków."
+    },
+    {
+      "start": 5143.14,
+      "end": 5147.5,
+      "text": "Krótko mówiąc, znowu nas ta polityka dopadła."
+    },
+    {
+      "start": 5477.39,
+      "end": 5497.63,
+      "text": "Słuchacie ciężko na sercu z muzyką płynącą z Grecji i muzyką opowiadającą o Grecji, bo obiecywałem na początku audycji, pamiętam, że nie skupię się dziś wyłącznie na tym, co grają Grecy, ale też na tym, co jest grane o nich."
+    },
+    {
+      "start": 5497.63,
+      "end": 5521.45,
+      "text": "A więc o metalu, co powstał zasilany wspaniałą grecką mitologią, literaturą i historią. Dałoby się z tego zrobić całą audycję, albo i trzy, więc dzisiaj tylko liźniemy temat, odpuszczając sobie agonię Achillesa z płyty Triumph of Steel, amerykańskiej grupy Manwar,"
+    },
+    {
+      "start": 5521.45,
+      "end": 5530.23,
+      "text": "Bo choć to czasy, kiedy Manwar był w swojej najlepszej formie, rzecz trwa ponad 28 minut."
+    },
+    {
+      "start": 5530.85,
+      "end": 5544.07,
+      "text": "Nie zagram też dziś niczego z Odysei, innego amerykańskiego zespołu Symphony X, bo choć większość tej płyty oparta jest na eposie Homera,"
+    },
+    {
+      "start": 5544.07,
+      "end": 5552.85,
+      "text": "To znowu utwór tytułowy składa się z siedmiu części i trwa 24 minuty."
+    },
+    {
+      "start": 5552.97,
+      "end": 5555.27,
+      "text": "Nie mogę wam tego zrobić."
+    },
+    {
+      "start": 5555.79,
+      "end": 5564.85,
+      "text": "Sięgnę za to po płytę innej amerykańskiej grupy heavy metalowej, która upodobała sobie antyk, czyli Virgin Steel."
+    },
+    {
+      "start": 5566.43,
+      "end": 5577.27,
+      "text": "Muszę powiedzieć, że choć rzadko słucham takich odmian metalu, Virgin Steel jest zespołem, który niezmiennie cenię za muzykę,"
+    },
+    {
+      "start": 5577.27,
+      "end": 5593.95,
+      "text": "Ale też za erudycję i fantastycznie nerdowskie opracowywanie tematów, za które się biorą, czerpiąc garściami z literatury, Biblii i mitologii, przede wszystkim greckiej."
+    },
+    {
+      "start": 5593.95,
+      "end": 5608.85,
+      "text": "Pod koniec ubiegłego stulecia Virgin Steel stworzyli na przykład blisko trzygodzinną, rozłożoną na dwa albumy, interpretacje Orestei, Ice Hillosa,"
+    },
+    {
+      "start": 5609.95,
+      "end": 5618.51,
+      "text": "A więc pięknej, strasznej i pouczającej opowieści o klątwie ciążącej nad rodem atrydów."
+    },
+    {
+      "start": 5618.77,
+      "end": 5630.51,
+      "text": "Też przecież opowieści ocierającej się o Iliadę i Odyseję, bo pierwsza część Orestei opowiada o marnym końcu króla Agamemnona,"
+    },
+    {
+      "start": 5630.71,
+      "end": 5645.87,
+      "text": "Który co prawda zwyciężył pod troją, ale po powrocie do domu został zabity przez swoją żonę Klitajmestrę za to, że złożył bogom w ofierze ich córkę."
+    },
+    {
+      "start": 5985.76,
+      "end": 5997.2,
+      "text": "Czas na projekt absolutnie wyjątkowy, przedziwny produkt globalizacji, która przecież odcisnęła swoje piętno też na świecie kultury."
+    },
+    {
+      "start": 5998.3,
+      "end": 6007.18,
+      "text": "Otóż zespół w studiu jednoosobowy na scenie Trio pochodzi z Chin, obecnie rezyduje we Francji."
+    },
+    {
+      "start": 6007.18,
+      "end": 6018.48,
+      "text": "Gra black metal o skandynawskiej proweniencji z naleciałościami amerykańskiego death metalu i jeszcze progresywnym zacięciem."
+    },
+    {
+      "start": 6019.04,
+      "end": 6028.94,
+      "text": "Ale nazwę ma grecką teksty po grecku i oprawę wszystkich płyt nawiązującą do chleńskiego antyku."
+    },
+    {
+      "start": 6028.94,
+      "end": 6045.24,
+      "text": "W dodatku stosuje konsekwentnie i wyłącznie alfabet grecki, a więc znalezienie ich w sieci wymaga pewnego wysiłku dla osobników nawykłych, jak ja, do liternictwa łacińskiego."
+    },
+    {
+      "start": 6045.8,
+      "end": 6068.6,
+      "text": "Warto jednak się postarać, bo hoplitz, tak, hoplici, czyli żołnierze w tej dawnej Grecji, to nie tylko egzotyczne dziwadło, to naprawdę świetna muzyka, czego za chwilę dowiodę prezentując fragment albumu Paramainomeni."
+    },
+    {
+      "start": 6468.28,
+      "end": 6485.82,
+      "text": "Za nami greccy hoplici z Chin, ale z Berlina, a pożegnają nas dzisiaj Niemcy z Bawarii, którzy myślą, że żeglują po Morzu Egejskim, dzielnie walcząc z żywiołem i kaprysami bogów."
+    },
+    {
+      "start": 6485.82,
+      "end": 6498.18,
+      "text": "Zresztą chyba na jedno wychodzi. Dekadę temu Imperius nagrał aż dwie płyty zatytułowane Opowieści o nieszczęściu. Podróż Odyseusza."
+    },
+    {
+      "start": 6498.18,
+      "end": 6516.24,
+      "text": "Pierwsza z tych płyt opowiada o odcinku spod Troj do Hadesu, druga podąża za Odyseuszem od Hadesu do Itaki. Hades zatem pojawia się na obu. No cóż, obowiązki black metalowe trzeba wypełniać."
+    },
+    {
+      "start": 6516.24,
+      "end": 6533.94,
+      "text": "Obie płyty zawierają bowiem epicki black metal, ambitny, pomysłowy, czasem trochę nadęty. No ale Nolanowi też się to zarzuca, że taki pompatyczny. Nie wiem, czy da się opowiedzieć tę historię bez uniesienia i powagi."
+    },
+    {
+      "start": 6533.94,
+      "end": 6542.98,
+      "text": "I w końcu to epos, w którym Homer zawarł albo skompilował opis większości tego wszystkiego, co w życiu ważne."
+    },
+    {
+      "start": 6543.72,
+      "end": 6557.14,
+      "text": "Imperius pożegna was utworem Skorn, który jest o upokorzeniu, które musiał przełknąć Odyseusz wyrzucony z własnego domu, do którego wrócił jako nędzarz."
+    },
+    {
+      "start": 6557.4,
+      "end": 6561.8,
+      "text": "Ale jak pewnie wiecie, to go nie zniechęciło."
+    },
+    {
+      "start": 6562.62,
+      "end": 6571.38,
+      "text": "I wam też wszystkim życzę, żeby zawsze udawało wam się wracać do swojej Itaki, gdziekolwiek was rzuci los."
+    },
+    {
+      "start": 6572.14,
+      "end": 6572.84,
+      "text": "Dobranoc."
+    }
+  ],
+  "stats": {
+    "windowCount": 19,
+    "transcribedAudioSec": 1757.52,
+    "segmentCount": 166,
+    "characterCount": 18667
+  },
+  "sourceId": "2026-09-09-od-hadesu-do-itaki-metal-grecki-i-o-grecji"
+}
