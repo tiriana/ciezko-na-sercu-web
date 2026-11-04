@@ -23,6 +23,15 @@ const episode = files.get(entry.id);
 // w tej samej sekcji, a dla ostatniej — 30 s, żeby nie świeciła do końca audycji.
 const SPAN_TAIL_SEC = 30;
 
+// Pełne wyjaśnienie w atrybucie title: na stronie wystarczy jedno zdanie, ale treść
+// musi być dostępna bez rozwijania czegokolwiek.
+const AUDIO_NOTE =
+  'Nie hostuję ani nie udostępniam tego nagrania. Odtwarzacz odsyła bezpośrednio do pliku ' +
+  'udostępnionego publicznie przez Polskie Radio (static.prsa.pl) — tego samego, który gra ' +
+  'w playerze na stronie audycji. Nie roszczę sobie żadnych praw do nagrania ani do muzyki. ' +
+  'Strona powstała dla fanów muzyki i dla popularyzacji audycji Ciężko na sercu. ' +
+  'Jeśli jesteś uprawnionym i nie życzysz sobie tego odsyłacza, napisz — usunę go.';
+
 const spanEnd = (items: { start: number }[], index: number, durationSec: number | null) => {
   const next = items[index + 1];
   const end = next ? next.start : (items[index] as { start: number }).start + SPAN_TAIL_SEC;
@@ -101,13 +110,25 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
 
             {entry.audioUrl && (
               <div class="audio-bar">
-                <audio controls preload="none" src={entry.audioUrl} data-episode-audio></audio>
+                <audio
+                  controls
+                  preload="none"
+                  controlslist="nodownload noplaybackrate"
+                  disablepictureinpicture
+                  disableRemotePlayback
+                  src={entry.audioUrl}
+                  data-episode-audio
+                ></audio>
                 <div class="audio-bar__skips" role="group" aria-label="Przewijanie">
                   <button class="skip" type="button" data-skip="-15" aria-label="Cofnij 15 sekund">−15</button>
                   <button class="skip" type="button" data-skip="-5" aria-label="Cofnij 5 sekund">−5</button>
                   <button class="skip" type="button" data-skip="5" aria-label="Przewiń 5 sekund">+5</button>
                   <button class="skip" type="button" data-skip="15" aria-label="Przewiń 15 sekund">+15</button>
                 </div>
+                <p class="audio-bar__note" title={AUDIO_NOTE}>
+                  <span aria-hidden="true">*</span> Nagranie pochodzi z serwisu Polskiego Radia i jest tam
+                  publicznie dostępne — ta strona tylko do niego odsyła.
+                </p>
               </div>
             )}
 

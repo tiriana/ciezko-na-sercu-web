@@ -3,10 +3,10 @@ name: Screenshots
 on:
   workflow_dispatch:
     inputs:
-      pages:
-        description: 'Ścieżki rozdzielone przecinkami; HOME oznacza stronę główną'
+      page:
+        description: 'Ścieżka strony odcinka (kadr z playerem)'
         type: string
-        default: 'HOME,/odcinki/2026-11-04-sluchamy-umarlych/'
+        default: '/odcinki/2026-11-04-sluchamy-umarlych/'
 
 permissions:
   contents: read
@@ -47,14 +47,15 @@ jobs:
         if: runner.os != 'Linux'
         run: npx playwright install ${{ matrix.browser }}
 
-      - name: Zrzuty ekranu
+      - name: Zrzut ekranu
         shell: bash
         env:
           BROWSER: ${{ matrix.browser }}
-          PAGES: ${{ github.event.inputs.pages }}
+          PAGE: ${{ github.event.inputs.page }}
+          OS_LABEL: ${{ matrix.os }}
           # Git Bash na Windows zamienia wartości zaczynające się od "/" na ścieżki
           # systemowe ("/odcinki" → "C:/Program Files/Git/odcinki") i psuło adres URL.
-          MSYS2_ENV_CONV_EXCL: PAGES
+          MSYS2_ENV_CONV_EXCL: PAGE
           MSYS_NO_PATHCONV: '1'
         run: |
           npx --yes http-server dist -p 4321 --silent &
@@ -65,8 +66,32 @@ jobs:
           node scripts/screenshots.mjs
 
       - uses: actions/upload-artifact@v4
-        if: always()
         with:
-          name: screenshots-${{ matrix.os }}-${{ matrix.browser }}
+          name: shots-${{ matrix.os }}-${{ matrix.browser }}
           path: screenshots/
-          if-no-files-found: warn
+          if-no-files-found: error
+
+  # v4 nie potrafi dopisywać do tego samego artefaktu z wielu zadań, więc zrzuty
+  # zbieramy do jednej paczki dopiero tutaj.
+  bundle:
+    name: jedna paczka
+    needs: shots
+    if: always()
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: shots-*
+          path: shots
+
+      - name: Złóż paczkę
+        run: |
+          mkdir -p bundle
+          find shots -name '*.png' -exec cp {} bundle/ \;
+          ls -la bundle
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: bundle/
+          if-no-files-found: error

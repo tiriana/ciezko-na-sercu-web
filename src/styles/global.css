@@ -1278,3 +1278,11 @@ a {
 .timeline li.is-active::before {
   box-shadow: 0 0 0 4px rgba(227, 25, 54, 0.18);
 }
+
+.audio-bar__note {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
