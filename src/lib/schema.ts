@@ -35,7 +35,8 @@ export const episodeSchema = z.object({
     z.object({
       start: z.number(),
       durationSec: z.number(),
-      artist: z.string(),
+      // Utwór rozpoznany tylko z zapowiedzi może nie mieć wykonawcy w trackliście taggera.
+      artist: z.string().nullable(),
       title: z.string().nullable(),
       album: z.string().nullable(),
       confidence: z.string().nullable(),

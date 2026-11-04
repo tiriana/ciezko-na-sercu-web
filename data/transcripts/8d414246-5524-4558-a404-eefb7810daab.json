@@ -1,0 +1,950 @@
+{
+  "version": 1,
+  "episodeId": "8d414246-5524-4558-a404-eefb7810daab",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 108791438,
+  "fileMtimeMs": 1792357681734.7598,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 13.53
+    },
+    {
+      "index": 1,
+      "start": 365.73,
+      "end": 431.23
+    },
+    {
+      "index": 2,
+      "start": 713.44,
+      "end": 894.75
+    },
+    {
+      "index": 3,
+      "start": 1150.02,
+      "end": 1199.29
+    },
+    {
+      "index": 4,
+      "start": 1385.64,
+      "end": 1437.76
+    },
+    {
+      "index": 5,
+      "start": 1636.45,
+      "end": 1751.07
+    },
+    {
+      "index": 6,
+      "start": 2242.18,
+      "end": 2281.02
+    },
+    {
+      "index": 7,
+      "start": 2497.06,
+      "end": 2596.03
+    },
+    {
+      "index": 8,
+      "start": 2797.09,
+      "end": 2815.55
+    },
+    {
+      "index": 9,
+      "start": 3005.22,
+      "end": 3082.81
+    },
+    {
+      "index": 10,
+      "start": 3199.91,
+      "end": 3261.95
+    },
+    {
+      "index": 11,
+      "start": 3705.54,
+      "end": 3788.32
+    },
+    {
+      "index": 12,
+      "start": 3852.9,
+      "end": 3857.5
+    },
+    {
+      "index": 13,
+      "start": 3914.95,
+      "end": 3923.64
+    },
+    {
+      "index": 14,
+      "start": 3953.09,
+      "end": 4054.2
+    },
+    {
+      "index": 15,
+      "start": 4093.83,
+      "end": 4103.32
+    },
+    {
+      "index": 16,
+      "start": 4210.72,
+      "end": 4257.02
+    },
+    {
+      "index": 17,
+      "start": 4505.86,
+      "end": 4564.86
+    },
+    {
+      "index": 18,
+      "start": 4745.03,
+      "end": 4840.09
+    },
+    {
+      "index": 19,
+      "start": 5219.78,
+      "end": 5267.77
+    },
+    {
+      "index": 20,
+      "start": 5962.08,
+      "end": 6012.19
+    },
+    {
+      "index": 21,
+      "start": 6431.17,
+      "end": 6495.68
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 2,
+      "text": "TRÓJKA"
+    },
+    {
+      "start": 2,
+      "end": 5,
+      "text": "PROGRAM TRZECI POLSKIEGO RADIA"
+    },
+    {
+      "start": 5,
+      "end": 7,
+      "text": "MUZYKA"
+    },
+    {
+      "start": 7,
+      "end": 11.2,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 11.2,
+      "end": 13.52,
+      "text": "MUZYKA"
+    },
+    {
+      "start": 365.73,
+      "end": 380.77,
+      "text": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht, co oznacza, że przed Wami dwie godziny z metalem i jego okolicami w audycji Ciężko na sercu, której wydawcą jest Mariusz Owczarek."
+    },
+    {
+      "start": 380.77,
+      "end": 398.39,
+      "text": "Słuchacie trójki, a przywitał Was estoński zespół Tarapita. Tytułowym utworem ze swojej nowej, tegorocznej płyty Oise Te Vaga Uhex. Proszę wybaczyć, jeżeli ktoś zna estoński za to kaleczenie tego pięknego języka."
+    },
+    {
+      "start": 398.39,
+      "end": 410.29,
+      "text": "Tytuł oznacza jedność z nocnym niebem. I rzeczywiście, black metal Tarapity jest muzyką doskonale nadającą się do nocnej konsumpcji."
+    },
+    {
+      "start": 410.77,
+      "end": 419.17,
+      "text": "Dzisiaj zapraszam Was na wycieczkę do Estonii i Litwy. Posłuchamy co nowego w ciężarach z tamtego regionu."
+    },
+    {
+      "start": 419.17,
+      "end": 428.97,
+      "text": "Zanim jednak przejdę do opowieści, skąd znowu tamte kraje w Ciężko na sercu, proponuję jeszcze jedno spotkanie z Tarapitą."
+    },
+    {
+      "start": 713.44,
+      "end": 722.66,
+      "text": "Zdaję sobie sprawę z tego, że wciężko na sercu mamy do czynienia ostatnio z nadreprezentacją sceny estońskiej,"
+    },
+    {
+      "start": 722.66,
+      "end": 730.5,
+      "text": "ale dzieje się tak dlatego, że od dwóch lat mam w nią wgląd nie gorszy niż w polską."
+    },
+    {
+      "start": 731.3,
+      "end": 738.2,
+      "text": "Jeżdżę do Talina regularnie na przeglądy, na których występują tamtejsze zespoły"
+    },
+    {
+      "start": 738.2,
+      "end": 745.1,
+      "text": "i dzielę się z wami tym, co tam odkrywam, bo często są to znakomite zespoły,"
+    },
+    {
+      "start": 745.38,
+      "end": 749.74,
+      "text": "a te, które nie są znakomite są przynajmniej ciekawe."
+    },
+    {
+      "start": 749.74,
+      "end": 758.7,
+      "text": "W Talinie działa organizacja, która po angielsku zwie się Heavy Music Estonia"
+    },
+    {
+      "start": 758.7,
+      "end": 768.16,
+      "text": "i jest oddolnym, nieformalnym stowarzyszeniem grup, które grają w Estonii wszystkie odmiany,"
+    },
+    {
+      "start": 768.2,
+      "end": 774.56,
+      "text": "ciężarów, od hard rocka, który próbuje swoich sił w konkursie Eurowizji,"
+    },
+    {
+      "start": 775.28,
+      "end": 781.58,
+      "text": "po black metal, grind, a nawet ponurą, amorficzną elektronikę."
+    },
+    {
+      "start": 782.42,
+      "end": 789.54,
+      "text": "Członkowie tego stowarzyszenia płacą coroczne składki, 24 euro od łebka"
+    },
+    {
+      "start": 789.54,
+      "end": 797.48,
+      "text": "i za te pieniądze organizują wspomniane koncerty, ale też promocje tego, co się dzieje w Estonii,"
+    },
+    {
+      "start": 798.22,
+      "end": 800.3,
+      "text": "poza granicami ich kraju."
+    },
+    {
+      "start": 800.62,
+      "end": 808,
+      "text": "To fantastyczna inicjatywa, która dzięki kolektywnym działaniom offline omija algorytmy,"
+    },
+    {
+      "start": 808.56,
+      "end": 813.46,
+      "text": "bo te pewnie nigdy by mi nowej muzyki z Estonii nie pokazały."
+    },
+    {
+      "start": 814.14,
+      "end": 815.02,
+      "text": "W kupie siła."
+    },
+    {
+      "start": 815.42,
+      "end": 817.22,
+      "text": "Wiemy to nie od dziś."
+    },
+    {
+      "start": 817.92,
+      "end": 822.62,
+      "text": "Za sukcesem sceny norweskiej, za grungeową rewolucją,"
+    },
+    {
+      "start": 822.84,
+      "end": 828.22,
+      "text": "death metalem z Florydy i nawet polskimi przewagami metalowymi na świecie"
+    },
+    {
+      "start": 828.22,
+      "end": 837.96,
+      "text": "stoi przecież nie tylko sama jakość muzyki, ale też to, że to były sceny w pełnym tego słowa znaczeniu."
+    },
+    {
+      "start": 838.62,
+      "end": 844.66,
+      "text": "Że zespoły się znały, wspierały, promowały nawzajem, że słuchały się nawzajem,"
+    },
+    {
+      "start": 845.12,
+      "end": 849.48,
+      "text": "komentowały, podglądały i wyciągały wnioski."
+    },
+    {
+      "start": 850.44,
+      "end": 854.36,
+      "text": "Jasne, że potem jednym idzie lepiej, innym gorzej,"
+    },
+    {
+      "start": 854.36,
+      "end": 861.68,
+      "text": "ale taka wspólna praca jest wartością nie do zastąpienia przez internetowe platformy,"
+    },
+    {
+      "start": 862.32,
+      "end": 868.34,
+      "text": "gdzie wszyscy grają wyłącznie na siebie i gdzie mamy tylko iluzję,"
+    },
+    {
+      "start": 868.46,
+      "end": 870.3,
+      "text": "kontroli nad tym, co się dzieje."
+    },
+    {
+      "start": 870.42,
+      "end": 875.3,
+      "text": "Tak naprawdę rządzą przecież algorytmy, które coś podkręcą w sposób,"
+    },
+    {
+      "start": 875.4,
+      "end": 880.5,
+      "text": "jakiego nie możemy przewidzieć albo coś ukryją i nie możemy nad tym panować."
+    },
+    {
+      "start": 880.5,
+      "end": 884.6,
+      "text": "A zatem, moi mili, bądźmy jak estończycy."
+    },
+    {
+      "start": 885.16,
+      "end": 891.02,
+      "text": "Spotykajmy się też poza siecią, organizujmy się, wspierajmy się nawzajem."
+    },
+    {
+      "start": 1150.02,
+      "end": 1169.88,
+      "text": "To był zespół Sun Killer z tytułowym utworem z mini albumu Totality wydanym 1 października. Rzecz jest więc bardzo świeża, kapela też młoda. Ich koncert rozpoczął wieczór, który w pierwszą sobotę października spędziłem w Talinie."
+    },
+    {
+      "start": 1169.88,
+      "end": 1194.68,
+      "text": "Na scenie Sun Killer nie jest jeszcze aż tak przekonujący jak w wersji studyjnej, bo to zespół młody i niedoświadczony. Do tego stopnia, że to był po prostu ich pierwszy koncert. Ale wystarczy, że trochę pograją i okrzepną i powinno być dobrze, bo jak sami słyszeliście, mają pomysły i potrafią wcielić je w życie."
+    },
+    {
+      "start": 1195.68,
+      "end": 1197.72,
+      "text": "To może jeszcze na drugą nóżkę."
+    },
+    {
+      "start": 1386.1,
+      "end": 1395.24,
+      "text": "Po Sun Killer scenę przejęła grupa Diversion Ends, wykonująca trochę bardziej konwencjonalny metalcore."
+    },
+    {
+      "start": 1395.78,
+      "end": 1405.84,
+      "text": "Ten nurt jest w Estonii bardzo popularny, mam wrażenie, że bardziej niż w Polsce i ma sporo ciekawych reprezentantów."
+    },
+    {
+      "start": 1405.84,
+      "end": 1424.3,
+      "text": "Diversion Ends jest jednym z nich i to też jest młody skład. Mają na koncie tylko epkę Divided, tegoroczną, ale wiedzą co robią według prawideł gatunku, równoważąc ciężar z melodiami również w warstwie wokalnej."
+    },
+    {
+      "start": 1424.3,
+      "end": 1435.56,
+      "text": "Słychać też w ich muzyce wpływy new metalu i nie narzekam, bo całkiem zgrabnie to łączą. Sami zresztą posłuchajcie."
+    },
+    {
+      "start": 1435.84,
+      "end": 1437.76,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 1636.45,
+      "end": 1647.31,
+      "text": "Heavy Music Estonia zaprasza na te swoje przeglądy nie tylko lokalną publiczność, ale też delegatów z krajów bliższych i dalszych."
+    },
+    {
+      "start": 1647.31,
+      "end": 1671.47,
+      "text": "Ja mam zaszczyt być tam stałym gościem. Przyjeżdżają też sąsiedzi z Litwy i Łotwy, ale również Finowie, Niemcy, Anglicy, ITP i TD. Dziennikarze, agenci, organizatorzy festiwali, ludzie, którzy na różne sposoby zaangażowani są w tworzenie współczesnej sceny metalowej."
+    },
+    {
+      "start": 1671.47,
+      "end": 1691.99,
+      "text": "3 października w Talinie w klubie Taper wystąpiło 10 estońskich zespołów, ale chyba wszyscy goście byli zgodni co do tego, który był najlepszy, a może najbardziej oryginalny, może najbardziej gotowy do tego, żeby wyjść w świat."
+    },
+    {
+      "start": 1691.99,
+      "end": 1711.15,
+      "text": "Otóż największe wrażenie zrobił na nas kwartet Mobisa Mobisa, który od dobrych paru lat szuka własnej drogi na rozległym terytorium postrockowym, space rockowym, a nawet psychodeliczno-rockowym."
+    },
+    {
+      "start": 1711.15,
+      "end": 1740.01,
+      "text": "Fajnie to brzmi na płycie, co za chwilę usłyszycie, bo puszczę fragment ich tegorocznego albumu Secretly Dangerous z piękną krową na okładce, ale na żywo zyskuje ten zespół i jego muzyka dodatkowy walor niecierpliwości i dodatkowy ciężar, co przesuwa te dźwięki bliżej z toner metalu."
+    },
+    {
+      "start": 1740.15,
+      "end": 1748.93,
+      "text": "Tak czy owak jest dobrze i nazwę Mobisa Mobisa powinniście zapamiętać, zapamiętać."
+    },
+    {
+      "start": 2242.18,
+      "end": 2255.34,
+      "text": "Kuri Waim to zupełnie nowy zespół. Wypuścił dopiero jeden singiel zawierający dość konwencjonalne podejście do tradycyjnego heavy metalu i hard rocka."
+    },
+    {
+      "start": 2255.34,
+      "end": 2270.42,
+      "text": "Takie rzeczy tam też się gra, zresztą gdzie się ich nie gra. Zobaczymy jak to się będzie rozwijać, ale póki co odnotowuję obecność Kuri Waim na scenie raczej z kronikarskiego obowiązku,"
+    },
+    {
+      "start": 2270.42,
+      "end": 2276.04,
+      "text": "bo sporo tamtego wieczoru słyszałem i widziałem ciekawszych rzeczy."
+    },
+    {
+      "start": 2497.06,
+      "end": 2513.56,
+      "text": "Chcecie powrócić do współczesności, a może nawet zajrzeć nieco w przyszłość? Proszę uprzejmie. Futurystyczny, industrialny elektrometal. To propozycja zespołu o uroczej nazwie Freak Angel."
+    },
+    {
+      "start": 2513.8,
+      "end": 2530.74,
+      "text": "Rzecz dla bywalców Castle Party, na którym zresztą gościli, dla fanów Marilyn Manson, Combi Christ i tych wszystkich projektów, które sprawdzają się i na metalowym festiwalu, i na rave w klubie dla fetyszystów."
+    },
+    {
+      "start": 2530.74,
+      "end": 2550.82,
+      "text": "Zresztą wizerunek zespołu nie pozostawia wątpliwości z wokalistą na czele, którego rynsztunek składał się m.in. z kapelutka pastora, muskulatury kulturysty i gustownych damskich pończoszek."
+    },
+    {
+      "start": 2551.62,
+      "end": 2566.86,
+      "text": "Freak Angel to zespół doświadczony, co widać było i słychać na koncercie. Nie tylko świetnie zabrzmieli, ale też potrafili się zachować na scenie i wciągnąć do swojej gry publiczność."
+    },
+    {
+      "start": 2567.4,
+      "end": 2579.66,
+      "text": "Może nawet trochę za bardzo to było wyreżyserowane, za dobrze zaplanowane, jak na mój gust, ale chyba nie jestem w stu procentach grupą docelową Freak Angel."
+    },
+    {
+      "start": 2580.3,
+      "end": 2585.84,
+      "text": "Fani tej stylistyki nie narzekali i entuzjastycznie ich przyjęli."
+    },
+    {
+      "start": 2586.28,
+      "end": 2592.7,
+      "text": "A my posłuchamy, co dzieje się na ich tegorocznej epce zatytułowanej Control."
+    },
+    {
+      "start": 2797.09,
+      "end": 2799.77,
+      "text": "bardzo spodobał mi się"
+    },
+    {
+      "start": 2799.77,
+      "end": 2801.99,
+      "text": "w Estonii The Primer"
+    },
+    {
+      "start": 2801.99,
+      "end": 2804.27,
+      "text": "ze swoim zaawansowanym"
+    },
+    {
+      "start": 2804.27,
+      "end": 2806.51,
+      "text": "technicznie piekielnie ciężkim"
+    },
+    {
+      "start": 2806.51,
+      "end": 2807.65,
+      "text": "i brutalnym"
+    },
+    {
+      "start": 2807.65,
+      "end": 2808.85,
+      "text": "defcore'em"
+    },
+    {
+      "start": 2808.85,
+      "end": 2811.63,
+      "text": "zresztą sami posłuchajcie co tu ma się"
+    },
+    {
+      "start": 2811.63,
+      "end": 2812.93,
+      "text": "nie podobać"
+    },
+    {
+      "start": 2812.93,
+      "end": 2815.55,
+      "text": "muzyka"
+    },
+    {
+      "start": 3005.22,
+      "end": 3015.46,
+      "text": "The Primer powstał w 2011 roku i przez ten czas szukał swojej ścieżki przez defkorową krainę,"
+    },
+    {
+      "start": 3015.84,
+      "end": 3021.04,
+      "text": "nagrywając i wydając własnym sumptem kilka materiałów."
+    },
+    {
+      "start": 3021.68,
+      "end": 3028.86,
+      "text": "Najnowszy z nich to album Perpetual Cycles of Violence z marca tego roku,"
+    },
+    {
+      "start": 3028.86,
+      "end": 3035.48,
+      "text": "którego fragment przed chwilą wybrzmiał i z którego utwór tytułowy jeszcze przed nami."
+    },
+    {
+      "start": 3036.02,
+      "end": 3043.68,
+      "text": "Po koncercie panowie z The Primer napisali do mnie wiadomość z pytaniem, jak mi się podobało."
+    },
+    {
+      "start": 3044.38,
+      "end": 3049.94,
+      "text": "Odpowiedziałem zgodnie z prawdą, że bardzo, ale podobałoby mi się jeszcze bardziej,"
+    },
+    {
+      "start": 3050.12,
+      "end": 3056.38,
+      "text": "gdyby zamiast automatu perkusyjnego napędzał to żywy, dobry bębniarz."
+    },
+    {
+      "start": 3056.38,
+      "end": 3061.96,
+      "text": "A oni na to mi piszą, że dzisiaj właśnie mają przesłuchania,"
+    },
+    {
+      "start": 3062.1,
+      "end": 3067.08,
+      "text": "że zgłosiło się kilku chętnych i utalentowanych muzyków."
+    },
+    {
+      "start": 3067.3,
+      "end": 3073.38,
+      "text": "Mam zatem nadzieję, że dzisiaj, kiedy spotykamy się z The Primer w ciężko na sercu,"
+    },
+    {
+      "start": 3073.9,
+      "end": 3079.54,
+      "text": "już mają perkusistę, a jeśli tak, to pewnie jeszcze o nich usłyszymy."
+    },
+    {
+      "start": 3199.91,
+      "end": 3212.57,
+      "text": "Jak już wspomniałem, Stowarzyszenie Heavy Music Estonia skupia artystów zajmujących się ciężką muzyką w szerokim tego słowa znaczeniu."
+    },
+    {
+      "start": 3212.57,
+      "end": 3237.63,
+      "text": "Na przykład taki projekt Fumantum to w ogóle nie jest metal, tylko dark ambient, drony i noise i nie sprawdził się najlepiej na scenie wciśnięty pomiędzy galopujące metalowe i rockowe składy, ale kiedy posłuchałem tego w domu to przyznaję, że zrobił na mnie wrażenie."
+    },
+    {
+      "start": 3237.63,
+      "end": 3248.99,
+      "text": "Fumantum to autorskie dzieło niejakiego Martina Seppa i jestem pewien, że na tej scenie człowiek ten wyrobi sobie nazwisko."
+    },
+    {
+      "start": 3249.77,
+      "end": 3261.95,
+      "text": "Wybrałem dla was utwór Unrest, co oznacza niepokój i już za chwilę przekonacie się na własnej skórze, czemu nosi taki tytuł."
+    },
+    {
+      "start": 3705.54,
+      "end": 3723.12,
+      "text": "Za nami długie minuty antymuzyki. Za to teraz będzie przebojowo, bo zagra dla nas artystka, a właściwie zaśpiewa, która parę razy już próbowała reprezentować Estonię w konkursie Eurowizji."
+    },
+    {
+      "start": 3723.12,
+      "end": 3738.82,
+      "text": "Kiedy już w końcu dostanie nominację, a w to nie wątpię, może liczyć na mojego SMS-a. Takie kontrasty, proszę Państwa, tylko w audycji ciężko na sercu, a ciężko na sercu tylko w trójce."
+    },
+    {
+      "start": 3738.82,
+      "end": 3764.7,
+      "text": "Pani nazywa się Laura Pritz i ma kawał głosu, świetną chrypę oraz charyzmę, jak stąd do Talina. Piosenki konwencjonalne, typowy rock, hard rock do radia, ale z wielką przyjemnością obejrzałem ten koncert, bo Laura świetnie śpiewa, wygląda i zachowuje się na scenie, a także poza nią,"
+    },
+    {
+      "start": 3764.7,
+      "end": 3774.7,
+      "text": "bo była też sztuczka z wejściem w publiczność, stowarzyszeniem baletu i czymś w rodzaju mieczy świetlnych."
+    },
+    {
+      "start": 3775.3,
+      "end": 3786.44,
+      "text": "Trzymam kciuki, żeby na tej Eurowizji się jednak udało, bo wciężko na sercu pewnie już więcej się z Panią Pritz nie usłyszymy."
+    },
+    {
+      "start": 3786.44,
+      "end": 3788.32,
+      "text": "muzyka"
+    },
+    {
+      "start": 3852.9,
+      "end": 3857.5,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 3914.95,
+      "end": 3918.31,
+      "text": "I'm gonna take myself, get on my feet"
+    },
+    {
+      "start": 3918.31,
+      "end": 3921.27,
+      "text": "Cause I got dignity"
+    },
+    {
+      "start": 3953.09,
+      "end": 3967.13,
+      "text": "Wspominałem już o tym, że Estonia jest metalcore'em silna i Artifer jest jednym z przykładów."
+    },
+    {
+      "start": 3967.89,
+      "end": 3973.21,
+      "text": "Widziałem ich już na scenie wiosną w ramach estońskiego finału Road to Mystic."
+    },
+    {
+      "start": 3973.21,
+      "end": 3977.09,
+      "text": "Nie wygrali wtedy konkursu, choć byli blisko."
+    },
+    {
+      "start": 3977.45,
+      "end": 3983.51,
+      "text": "Ale gdyby zagrali tak jak teraz, to kto wie jaki byłby werdykt jurorów."
+    },
+    {
+      "start": 3984.13,
+      "end": 3991.09,
+      "text": "Muzyka zespołu się nie zmieniła, ale ich sceniczne otrzaskanie raptem w pół roku jak najbardziej."
+    },
+    {
+      "start": 3991.09,
+      "end": 4001.41,
+      "text": "To świetna, gotowa kapela z wątkami romantycznymi i emo, które do mnie nie do końca trafiają,"
+    },
+    {
+      "start": 4001.77,
+      "end": 4007.39,
+      "text": "ale takich, do których na pewno trafią jest wystarczająco dużo."
+    },
+    {
+      "start": 4007.45,
+      "end": 4015.13,
+      "text": "No i fakt, że potrafią napisać przebojowy refren raczej Artifer w karierze nie zaszkodzi."
+    },
+    {
+      "start": 4015.13,
+      "end": 4017.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4017.13,
+      "end": 4019.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4019.13,
+      "end": 4021.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4021.13,
+      "end": 4023.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4023.13,
+      "end": 4025.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4025.13,
+      "end": 4027.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4027.13,
+      "end": 4029.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4029.13,
+      "end": 4031.13,
+      "text": "zaskoczymy."
+    },
+    {
+      "start": 4031.13,
+      "end": 4033.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4033.13,
+      "end": 4035.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4035.13,
+      "end": 4035.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4035.13,
+      "end": 4037.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4037.13,
+      "end": 4039.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4039.13,
+      "end": 4041.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4041.13,
+      "end": 4043.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4043.13,
+      "end": 4045.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4045.13,
+      "end": 4047.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4047.13,
+      "end": 4049.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4049.13,
+      "end": 4051.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4051.13,
+      "end": 4053.13,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4053.13,
+      "end": 4054.21,
+      "text": "Zdjęcia i zaskoczymy."
+    },
+    {
+      "start": 4093.83,
+      "end": 4103.33,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 4210.72,
+      "end": 4227.66,
+      "text": "Ostatnim zespołem, który zaprezentował się na żywo 3 października w Talinie był Surogoat, którego propozycją jest surowy, brutalny death metal, jak Cannibal Corpse przykazał."
+    },
+    {
+      "start": 4227.66,
+      "end": 4244.26,
+      "text": "Świetny pomysł z tym zostawieniem maszynki do mielenia mięsa na finał, który miał miejsce mniej więcej o północy, bo jeśli ktoś jeszcze nie miał dość dokazywania pod sceną, Surogoat skutecznie go dobił."
+    },
+    {
+      "start": 4245.02,
+      "end": 4254.58,
+      "text": "W maju zespół wydał płytę zatytułowaną Consumed by the Wrath of Time, a na niej takie piosenki jak Nekrolewiatan."
+    },
+    {
+      "start": 4254.58,
+      "end": 4257.02,
+      "text": "Nekro Leviathan"
+    },
+    {
+      "start": 4505.86,
+      "end": 4510.96,
+      "text": "a to jak porcja brutalnego death metalu wieczorową porą."
+    },
+    {
+      "start": 4511.8,
+      "end": 4517.64,
+      "text": "Omówiłem już wszystkie koncerty, które obejrzałem w pierwszy weekend października"
+    },
+    {
+      "start": 4517.64,
+      "end": 4524.86,
+      "text": "dzięki uprzejmości Heavy Music Estonia, ale nie wszystkie atrakcje wieczoru."
+    },
+    {
+      "start": 4525.62,
+      "end": 4531,
+      "text": "Pomiędzy występami muzycznymi znalazł się na przykład czas na wywiady"
+    },
+    {
+      "start": 4531,
+      "end": 4535.24,
+      "text": "z dwoma zespołami, które akurat tego dnia nie występowały,"
+    },
+    {
+      "start": 4535.48,
+      "end": 4540.42,
+      "text": "ale też ostatnio zrobiły coś, czym warto było się pochwalić."
+    },
+    {
+      "start": 4541.04,
+      "end": 4545.74,
+      "text": "Pierwszą z tych grup była Tarapita, od której dzisiaj zacząłem,"
+    },
+    {
+      "start": 4546.54,
+      "end": 4551.44,
+      "text": "a drugą bardzo ambitny, progresywno-metalowy Pantokrator,"
+    },
+    {
+      "start": 4552.3,
+      "end": 4559.12,
+      "text": "który we wrześniu wydał płytę z własnymi interpretacjami sonetów Szekspira."
+    },
+    {
+      "start": 4559.8,
+      "end": 4562.2,
+      "text": "Jak to może brzmieć? O tak na przykład."
+    },
+    {
+      "start": 4564.2,
+      "end": 4564.86,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4745.03,
+      "end": 4751.41,
+      "text": "Słuchacie ciężko na sercu w trójce i to jeszcze nie koniec audycji."
+    },
+    {
+      "start": 4751.87,
+      "end": 4761.33,
+      "text": "Jeszcze trochę czasu nam zostało, a ja już się wystrzelałem z wszystkich nowości, które przywiozłem tym razem z Estonii."
+    },
+    {
+      "start": 4761.33,
+      "end": 4774.77,
+      "text": "Na szczęście z odsieczą przychodzą koledzy z Litwy, którzy tego dnia też byli w Talinie i którzy przywieźli prezenty w postaci płyt z litewskim hałasem."
+    },
+    {
+      "start": 4775.55,
+      "end": 4780.63,
+      "text": "Wręczyli mi je z nadzieją, że zrobię z nimi jakiś pożytek."
+    },
+    {
+      "start": 4781.35,
+      "end": 4783.71,
+      "text": "Pewnie, że zrobię, zaraz wam je puszczę."
+    },
+    {
+      "start": 4783.71,
+      "end": 4798.83,
+      "text": "A żeby nie było zbyt dużego szoku po pantokratorze recytującym Szekspira, zacznę od najłagodniejszej propozycji w litewskim zestawie od folkmetalowej grupy Ukanose."
+    },
+    {
+      "start": 4799.29,
+      "end": 4807.77,
+      "text": "To nie jest nowość, rzecz z 2023 roku, ale dla mnie wszystkie te tytuły to nowe odkrycia."
+    },
+    {
+      "start": 4807.77,
+      "end": 4812.45,
+      "text": "I album Siaurum Vejum również."
+    },
+    {
+      "start": 4813.09,
+      "end": 4817.93,
+      "text": "Druga i jak dotąd ostatnia płyta tej wileńskiej formacji."
+    },
+    {
+      "start": 4818.45,
+      "end": 4830.03,
+      "text": "Pięknie wydany album ze szczegółowymi opisami, do jakich przedchrześcijańskich wierzeń, do jakich podań i legend nawiązują poszczególne utwory."
+    },
+    {
+      "start": 4830.29,
+      "end": 4837.29,
+      "text": "Muzycznie też zresztą przerzuca to pomost pomiędzy starymi a nowymi czasy."
+    },
+    {
+      "start": 5219.78,
+      "end": 5238,
+      "text": "Następny będzie Scyzy Fian. Tych to akurat już znałem. Mamy do czynienia z wiodącą siłą w litewskim black metalu, choć słychać w ich muzyce też czasami trochę death metalowej precyzji i brutalności."
+    },
+    {
+      "start": 5238,
+      "end": 5265.68,
+      "text": "Grupa sieje zniszczenie już ponad dekadę i wiosną tego roku wypuściła swój trzeci album zatytułowany Divergence. Bardzo fajny materiał, z którego wybrałem dla Was piosenkę o czarnym ptaszku, który nie niesie radości. Serio, black bird that brings no joy. A potem jeszcze jedną, która zwiesie stupor mundi."
+    },
+    {
+      "start": 5962.08,
+      "end": 5969.78,
+      "text": "To był litewski Sajsy Fion, którego basista gra też w zespole Ju od Warnis."
+    },
+    {
+      "start": 5969.78,
+      "end": 5977.78,
+      "text": "W zespole również mniej więcej black metalowym, ale już nie tak esencjonalnie black metalowym jak Sajsy Fion,"
+    },
+    {
+      "start": 5978.22,
+      "end": 5985.66,
+      "text": "raczej wykonującym bardziej współczesne i progresywne obrzeża tej muzyki,"
+    },
+    {
+      "start": 5986.38,
+      "end": 5993.44,
+      "text": "czasami zupełnie się zresztą odczerni, odrywając i penetrując różne odcienie szarości."
+    },
+    {
+      "start": 5993.46,
+      "end": 6001.44,
+      "text": "Ju od Warnis ma już w dorobku cztery duże płyty i to doświadczenie doskonale słychać."
+    },
+    {
+      "start": 6002.32,
+      "end": 6010.38,
+      "text": "Najnowsza z nich, czyli Tekmes, wyszła na początku tego roku i proponuje Wam utwór tytułowy."
+    },
+    {
+      "start": 6431.79,
+      "end": 6445.89,
+      "text": "Naszą nocną wyprawę do Estonii i Litwy zakończymy w towarzystwie grupy o interesującej, acz niespecjalnie wdzięcznej nazwie protokol F40.1."
+    },
+    {
+      "start": 6446.43,
+      "end": 6453.89,
+      "text": "Podobno w klasyfikacji medycznej ICD pod tym numerem znaleźć można fobie społeczne."
+    },
+    {
+      "start": 6453.89,
+      "end": 6479.19,
+      "text": "No więc fobie społeczne doprowadziły czterech miłych Litwinów do grania niemiłej muzyki, która jest wariacją na temat death metalu, ale z oryginalnymi dodatkami, które sprawiają, że album Fatal Ritual, rzecz z ubiegłego roku, pewnie jeszcze parę razy zakręci się w moim odtwarzaczu."
+    },
+    {
+      "start": 6479.19,
+      "end": 6492.43,
+      "text": "Protokol F40.1 zaśpiewa Wam na dobranoc. Miło było znowu się z Państwem spotkać. Do usłyszenia za tydzień."
+    }
+  ],
+  "stats": {
+    "windowCount": 22,
+    "transcribedAudioSec": 1341.89,
+    "segmentCount": 164,
+    "characterCount": 13999
+  },
+  "sourceId": "2026-10-14-nocne-niebo-nad-estonia-i-litwa"
+}

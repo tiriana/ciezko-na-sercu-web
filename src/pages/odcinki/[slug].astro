@@ -55,6 +55,27 @@ const quoteSpans = (episode?.quotes ?? []).map((quote, index) => ({
   end: spanEnd(episode?.quotes ?? [], index, episode?.durationSec ?? null),
 }));
 
+// Program to jedna os czasu: wejścia i utwory przeplatają się tak, jak leciały w audycji.
+const programme = [
+  ...(episode?.tracks ?? []).map((track, index) => ({
+    kind: 'track' as const,
+    index: index + 1,
+    start: track.start,
+    end: track.start + track.durationSec,
+    track,
+  })),
+  ...topicSpans.map((topic) => ({
+    kind: 'topic' as const,
+    index: null,
+    start: topic.start,
+    end: topic.end,
+    topic,
+  })),
+].sort((left, right) => left.start - right.start);
+
+// Cytaty z zapowiedzi są policzone i zostają w danych, ale nie pokazujemy ich na stronie.
+const SHOW_QUOTES = false;
+
 const speechSec = episode?.durationSec
   ? episode.durationSec - (episode.tracks.reduce((sum, track) => sum + track.durationSec, 0) || 0)
   : null;
@@ -109,10 +130,10 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
     {episode ? (
       <div class="ep-body">
         <div class="stack">
-          <section class="card" aria-labelledby="tracklist-title">
-            <h2 id="tracklist-title">Tracklista</h2>
+          <section class="card" aria-labelledby="programme-title">
+            <h2 id="programme-title">Program audycji</h2>
             <p class="card__sub">
-              {pluralTracks(episode.tracks.length)} · czasy dotyczą początku utworu w audycji
+              {pluralTracks(episode.tracks.length)} i {episode.topics.length} wejść w kolejności emisji
             </p>
 
             {entry.audioUrl && (
@@ -139,7 +160,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               </div>
             )}
 
-            {episode.tracks.length > 0 ? (
+            {programme.length > 0 ? (
               <table class="tracks">
                 <thead>
                   <tr>
@@ -151,19 +172,20 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                   </tr>
                 </thead>
                 <tbody>
-                  {episode.tracks.map((track, index) => (
+                  {programme.map((item) => (
                     <tr
-                      data-span-start={track.start}
-                      data-span-end={track.start + track.durationSec}
-                      data-kind="track"
+                      data-span-start={item.start}
+                      data-span-end={item.end}
+                      data-kind={item.kind}
+                      class:list={{ 'tracks__row--entry': item.kind === 'topic' }}
                     >
                       <td class="tracks__idx">
                         {entry.audioUrl ? (
                           <button
                             class="track-play"
                             type="button"
-                            data-track-start={track.start}
-                            aria-label={`Odtwórz od ${formatClock(track.start)}`}
+                            data-track-start={item.start}
+                            aria-label={`Odtwórz od ${formatClock(item.start)}`}
                           >
                             <svg class="track-play__icon track-play__icon--play" viewBox="0 0 10 12" aria-hidden="true">
                               <path d="M0 0 10 6 0 12Z" fill="currentColor" />
@@ -174,47 +196,40 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                             </svg>
                           </button>
                         ) : (
-                          index + 1
+                          (item.index ?? '')
                         )}
                       </td>
-                      <td>
-                        <div class="tracks__artist">{track.artist}</div>
-                        <div>{track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}</div>
-                      </td>
-                      <td class="tracks__album">{track.album ?? '—'}</td>
-                      <td class="tracks__time">{formatClock(track.start)}</td>
-                      <td class="tracks__time">{formatClock(track.durationSec)}</td>
+                      {item.kind === 'track' ? (
+                        <>
+                          <td>
+                            <div class="tracks__artist">
+                              {item.track.artist ?? <span class="tracks__album">wykonawca nierozpoznany</span>}
+                            </div>
+                            <div>{item.track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}</div>
+                          </td>
+                          <td class="tracks__album">{item.track.album ?? '—'}</td>
+                        </>
+                      ) : (
+                        <>
+                          <td>
+                            <div class="tracks__kind">Wejście</div>
+                            <div>{item.topic.label}</div>
+                          </td>
+                          <td class="tracks__album">—</td>
+                        </>
+                      )}
+                      <td class="tracks__time">{formatClock(item.start)}</td>
+                      <td class="tracks__time">{formatClock(item.end - item.start)}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             ) : (
-              <p class="card__sub">Brak rozpoznanych utworów w tym odcinku.</p>
+              <p class="card__sub">Brak rozpoznanych utworów i wejść w tym odcinku.</p>
             )}
           </section>
 
-          {episode.topics.length > 0 && (
-            <section class="card" aria-labelledby="topics-title">
-              <h2 id="topics-title">Tematy</h2>
-              <p class="card__sub">{episode.topics.length} wątków, z czasem wejścia</p>
-              <ol class="timeline">
-                {topicSpans.map((topic) => (
-                  <li data-span-start={topic.start} data-span-end={topic.end} data-kind="topic">
-                    {entry.audioUrl ? (
-                      <button class="time-link" type="button" data-track-start={topic.start}>
-                        {formatClock(topic.start)}
-                      </button>
-                    ) : (
-                      <time>{formatClock(topic.start)}</time>
-                    )}
-                    <p>{topic.label}</p>
-                  </li>
-                ))}
-              </ol>
-            </section>
-          )}
-
-          {episode.quotes.length > 0 && (
+          {SHOW_QUOTES && episode.quotes.length > 0 && (
             <section class="card" aria-labelledby="quotes-title">
               <h2 id="quotes-title">Cytaty z zapowiedzi</h2>
               <p class="card__sub">Krótkie fragmenty wypowiedzi prowadzącego, z czasem wejścia</p>
