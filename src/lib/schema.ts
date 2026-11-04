@@ -47,3 +47,18 @@ export type Catalog = z.infer<typeof catalogSchema>;
 export type CatalogEpisode = Catalog['episodes'][number];
 export type Episode = z.infer<typeof episodeSchema>;
 export type Track = Episode['tracks'][number];
+
+export const titlesSchema = z.object({
+  version: z.literal(1),
+  titles: z.record(
+    z.string(),
+    z.object({
+      title: z.string().min(1),
+      kind: z.literal('unofficial'),
+      originalTitle: z.string().min(1),
+      note: z.string().optional(),
+    }),
+  ),
+});
+
+export type TitleOverride = z.infer<typeof titlesSchema>['titles'][string];

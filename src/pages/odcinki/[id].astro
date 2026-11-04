@@ -20,7 +20,7 @@ const speechSec = episode?.durationSec
   ? episode.durationSec - (episode.tracks.reduce((sum, track) => sum + track.durationSec, 0) || 0)
   : null;
 
-const episodeTitle = formatEpisodeTitle(entry.title);
+const episodeTitle = formatEpisodeTitle(entry.displayTitle);
 const title = episode
   ? `${episodeTitle} — ${catalog.program.name}`
   : `${episodeTitle} — opracowanie zaplanowane`;
@@ -40,6 +40,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
     <header class="ep-head">
       <p class="ep-head__date">{formatDate(entry.date)} · {formatWeekday(entry.date)} 00:05</p>
       <h1>{episodeTitle}</h1>
+      {entry.titleKind !== 'official' && (
+        <p class="title-note">
+          {entry.titleKind === 'unofficial' ? 'Tytuł nieoficjalny' : 'Tytuł techniczny z katalogu'}
+          {' · '}w katalogu: <span>{formatEpisodeTitle(entry.title)}</span>
+          {entry.titleNote && <> · {entry.titleNote}</>}
+        </p>
+      )}
       <div class="ep-head__meta">
         {episode ? (
           <>

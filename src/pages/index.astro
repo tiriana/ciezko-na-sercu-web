@@ -96,11 +96,16 @@ for (const entry of entries) {
           <>
             <div class="list__month" data-month={key}>{monthLabel(group[0].date)}</div>
             {group.map((entry) => (
-              <article class="episode-row" data-episode={formatEpisodeTitle(entry.title)} data-date={entry.date} data-month={key}>
+              <article class="episode-row" data-episode={formatEpisodeTitle(entry.displayTitle)} data-date={entry.date} data-month={key}>
                 <div class="episode-row__date">{formatDay(entry.date)}</div>
                 <div>
                   <h3 class="episode-row__title">
-                    <a href={`/odcinki/${entry.id}/`}>{formatEpisodeTitle(entry.title)}</a>
+                    <a href={`/odcinki/${entry.id}/`}>{formatEpisodeTitle(entry.displayTitle)}</a>
+                    {entry.titleKind !== 'official' && (
+                      <span class="title-flag" title={`W katalogu: ${formatEpisodeTitle(entry.title)}`}>
+                        {entry.titleKind === 'unofficial' ? 'tytuł nieoficjalny' : 'tytuł techniczny'}
+                      </span>
+                    )}
                   </h3>
                   <div class="episode-row__meta">
                     {entry.enriched ? (

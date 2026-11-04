@@ -29,6 +29,9 @@ Dane:
 
 1. `data/catalog.json` — katalog odcinków, generowany z downloadera: `npm run catalog -- <episodes.json>`.
 2. `data/episodes/<id>.json` — opracowania. Import z taggera: `npm run import:tagger -- ../radio-auditions-tagger/work/episodes`.
+3. `data/titles.json` — tytuły nieoficjalne dla odcinków, które w katalogu mają tytuł techniczny
+   („Ciężko na sercu 1 maja godz. 0005”). Każdy wpis trzyma `originalTitle`, a strona pokazuje
+   oba i oznacza nasz tytuł jako nieoficjalny.
 
 ## Deploy
 

@@ -1062,3 +1062,28 @@ a {
     text-align: left;
   }
 }
+
+/* Marker for titles we did not get from the catalog verbatim. */
+.title-flag {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 8px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.title-note {
+  margin: -8px 0 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.title-note span {
+  color: var(--text);
+}
