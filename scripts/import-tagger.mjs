@@ -7,16 +7,22 @@ if (!workDir) {
   process.exit(1);
 }
 
-// the catalog owns the id: the tagger truncates long slugs, so we match on the date instead
+// Kluczem jest uuid odcinka z katalogu; katalog zna też historyczne slugi, więc dopasowanie
+// łapie opracowania zrobione przed zmianą tytułu. Data zostaje jako ostatnia deska ratunku.
 const catalog = JSON.parse(await readFile(new URL('../data/catalog.json', import.meta.url), 'utf8'));
-const idsByDate = new Map();
+const bySlug = new Map();
+const byDate = new Map();
 for (const episode of catalog.episodes) {
-  idsByDate.set(episode.date, [...(idsByDate.get(episode.date) ?? []), episode.id]);
+  for (const slug of episode.slugs ?? []) bySlug.set(slug, episode.id);
+  byDate.set(episode.date, [...(byDate.get(episode.date) ?? []), episode.id]);
 }
-const catalogIdFor = (episode) => {
-  const candidates = idsByDate.get(episode.date) ?? [];
-  return candidates.length === 1 ? candidates[0] : episode.episodeId;
-};
+
+function catalogIdFor(episode) {
+  const byExactSlug = bySlug.get(episode.episodeId);
+  if (byExactSlug) return byExactSlug;
+  const candidates = byDate.get(episode.date) ?? [];
+  return candidates.length === 1 ? candidates[0] : null;
+}
 
 const parseSources = (source) =>
   source
@@ -75,6 +81,10 @@ for (const entry of entries) {
   const episode = JSON.parse(raw);
   const analyzedAt = isoDate((await stat(file)).mtime);
   const id = catalogIdFor(episode);
+  if (!id) {
+    console.warn(`pominięto ${entry.name}: brak odcinka w katalogu`);
+    continue;
+  }
   const target = join(outputDir, `${id}.json`);
   await writeFile(resolve(target), `${JSON.stringify(toContract(episode, analyzedAt, id), null, 2)}\n`);
   imported += 1;

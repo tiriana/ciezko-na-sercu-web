@@ -100,7 +100,7 @@ for (const entry of entries) {
                 <div class="episode-row__date">{formatDay(entry.date)}</div>
                 <div>
                   <h3 class="episode-row__title">
-                    <a href={`/odcinki/${entry.id}/`}>{formatEpisodeTitle(entry.displayTitle)}</a>
+                    <a href={`/odcinki/${entry.slug}/`}>{formatEpisodeTitle(entry.displayTitle)}</a>
                     {entry.titleKind !== 'official' && (
                       <span class="title-flag" title={`W katalogu: ${formatEpisodeTitle(entry.title)}`}>
                         {entry.titleKind === 'unofficial' ? 'tytuł nieoficjalny' : 'tytuł techniczny'}
@@ -112,7 +112,7 @@ for (const entry of entries) {
                   {entry.enriched ? (
                     <>
                       <span class="badge badge--done">opracowany</span>
-                      <a class="btn btn--solid" href={`/odcinki/${entry.id}/`}>Zobacz stronę odcinka</a>
+                      <a class="btn btn--solid" href={`/odcinki/${entry.slug}/`}>Zobacz stronę odcinka</a>
                     </>
                   ) : (
                     <>

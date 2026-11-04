@@ -53,15 +53,18 @@ a tagger przestaje utrzymywać własny format eksportu, którego nikt poza nim n
 
 ## 4. Identyfikacja odcinka
 
-Jeden identyfikator, stabilny i czytelny w URL-u:
+Dwa identyfikatory o różnych rolach (decyzja 2026-11-04):
 
 ```
-<data>-<slug-tytułu>           2026-10-14-nocne-niebo-nad-estonia-i-litwa
+id     uuid pliku       9f159c89-fc90-44f8-a05f-cc012b75d6ed
+slug   adres w URL      2026-10-14-nocne-niebo-nad-estonia-i-litwa
 ```
 
-1. Data jest niezmienna i sortowalna; slug rozwiązuje kolizje tytułów.
-2. Identyfikator jest wspólny dla wszystkich trzech repo.
-3. `articleId` zostaje jako pole pomocnicze, nie jako klucz.
+1. Kluczem jest uuid z `mp3Url` — niezmienny, niezależny od tytułu, nigdzie nie pokazywany.
+2. Slug jest kosmetyczny: data + slug tytułu; zmiana tytułu zmienia adres, więc historia
+   poprzednich slugów siedzi w `slugs[]` i generuje strony-zaślepki z przekierowaniem.
+3. Identyfikator jest wspólny dla wszystkich trzech repo.
+4. `articleId` zostaje jako pole pomocnicze, nie jako klucz.
 
 ## 5. Model danych
 
@@ -148,7 +151,7 @@ Commitowanie wyliczonych dat oznaczałoby, że plik kłamie po pierwszej zmianie
    istnienie strony przed pierwszym opracowaniem.
 4. Filtr po roku i wyszukiwanie po tytule po stronie klienta (jeden mały JSON indeksu).
 
-### Szczegóły (`/odcinki/<id>`)
+### Szczegóły (`/odcinki/<slug>`)
 
 Kolejność sekcji odpowiada temu, po co kto tu wchodzi:
 
@@ -168,7 +171,7 @@ z `tracks[].artist`, więc nie wymaga osobnego pliku wejściowego.
 
 ## 7. Architektura
 
-1. **Generator: Astro, output statyczny.** Routing plikowy daje `/odcinki/<id>` bez własnego
+1. **Generator: Astro, output statyczny.** Routing plikowy daje `/odcinki/<slug>` bez własnego
    routera, strona domyślnie nie wysyła JS-u, a wyspy dołożymy tylko tam, gdzie trzeba
    (wyszukiwanie, filtry). Alternatywy odrzucone: SPA na Vite (traci osobne URL-e i SEO),
    Next z eksportem statycznym (cięższy runtime za nic), Eleventy (słabsze typowanie danych).

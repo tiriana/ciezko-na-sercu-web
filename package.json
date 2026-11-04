@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/check-data.mjs && astro build",
     "preview": "astro preview",
     "catalog": "node scripts/build-catalog.mjs",
-    "import:tagger": "node scripts/import-tagger.mjs"
+    "import:tagger": "node scripts/import-tagger.mjs",
+    "check": "node scripts/check-data.mjs"
   },
   "dependencies": {
     "astro": "^6.4.8",

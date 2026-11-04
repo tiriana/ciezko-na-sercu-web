@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-04T16:32:23Z",
+  "generatedAt": "2026-11-04T18:19:37Z",
   "program": {
     "slug": "ciezko-na-sercu",
     "name": "Ciężko na sercu",
@@ -9,16 +9,25 @@
   },
   "episodes": [
     {
-      "id": "2026-11-04-ciezko-na-sercu-4-listopada-godz-0005",
+      "id": "9dde4bc8-00d6-48f1-98d5-8c62f5ee0dcc",
+      "slug": "2026-11-04-sluchamy-umarlych",
+      "slugs": [
+        "2026-11-04-sluchamy-umarlych",
+        "2026-11-04-ciezko-na-sercu-4-listopada-godz-0005"
+      ],
       "date": "2026-11-04",
-      "title": "Ciężko na sercu 4 listopada godz. 0005",
+      "title": "Słuchamy umarłych",
       "articleId": 3749088,
       "durationSec": null,
-      "sourceUrl": "https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/ciezko-na-sercu-4-listopada-godz-0005,9dde4bc8-00d6-48f1-98d5-8c62f5ee0dcc",
+      "sourceUrl": "https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/sluchamy-umarlych,9dde4bc8-00d6-48f1-98d5-8c62f5ee0dcc",
       "audioUrl": "https://static.prsa.pl/9dde4bc8-00d6-48f1-98d5-8c62f5ee0dcc.mp3"
     },
     {
-      "id": "2026-10-28-przy-czym-pomachamy-lbem-w-listopadzie",
+      "id": "82d57411-285b-4714-b434-8cac32f42954",
+      "slug": "2026-10-28-przy-czym-pomachamy-lbem-w-listopadzie",
+      "slugs": [
+        "2026-10-28-przy-czym-pomachamy-lbem-w-listopadzie"
+      ],
       "date": "2026-10-28",
       "title": "Przy czym pomachamy łbem w listopadzie",
       "articleId": 3746648,
@@ -27,7 +36,11 @@
       "audioUrl": "https://static.prsa.pl/82d57411-285b-4714-b434-8cac32f42954.mp3"
     },
     {
-      "id": "2026-10-21-rzadzimy-tymi-falami-najciekawsze-premiery-pazdziernika",
+      "id": "993657ef-48f8-43cc-b079-e954ac576347",
+      "slug": "2026-10-21-rzadzimy-tymi-falami-najciekawsze-premiery-pazdziernika",
+      "slugs": [
+        "2026-10-21-rzadzimy-tymi-falami-najciekawsze-premiery-pazdziernika"
+      ],
       "date": "2026-10-21",
       "title": "Rządzimy tymi falami - najciekawsze premiery października",
       "articleId": 3744302,
@@ -36,7 +49,11 @@
       "audioUrl": "https://static.prsa.pl/993657ef-48f8-43cc-b079-e954ac576347.mp3"
     },
     {
-      "id": "2026-10-14-nocne-niebo-nad-estonia-i-litwa",
+      "id": "8d414246-5524-4558-a404-eefb7810daab",
+      "slug": "2026-10-14-nocne-niebo-nad-estonia-i-litwa",
+      "slugs": [
+        "2026-10-14-nocne-niebo-nad-estonia-i-litwa"
+      ],
       "date": "2026-10-14",
       "title": "Nocne niebo nad Estonią i Litwą",
       "articleId": 3741893,
@@ -45,7 +62,11 @@
       "audioUrl": "https://static.prsa.pl/8d414246-5524-4558-a404-eefb7810daab.mp3"
     },
     {
-      "id": "2026-10-07-witamy-w-piekle-i-zegnamy-cronosa",
+      "id": "489e26f5-4196-4436-8c9f-555694f82983",
+      "slug": "2026-10-07-witamy-w-piekle-i-zegnamy-cronosa",
+      "slugs": [
+        "2026-10-07-witamy-w-piekle-i-zegnamy-cronosa"
+      ],
       "date": "2026-10-07",
       "title": "Witamy w piekle i żegnamy Cronosa",
       "articleId": 3739483,
@@ -54,7 +75,11 @@
       "audioUrl": "https://static.prsa.pl/489e26f5-4196-4436-8c9f-555694f82983.mp3"
     },
     {
-      "id": "2026-09-30-jezdzcy-czyngis-chana-czy-wikingowie-koncertowy-pazdziernik",
+      "id": "c1f69944-7eda-4555-b407-26473451deac",
+      "slug": "2026-09-30-jezdzcy-czyngis-chana-czy-wikingowie-koncertowy-pazdziernik",
+      "slugs": [
+        "2026-09-30-jezdzcy-czyngis-chana-czy-wikingowie-koncertowy-pazdziernik"
+      ],
       "date": "2026-09-30",
       "title": "Jeźdźcy Czyngis-chana czy wikingowie Koncertowy październik",
       "articleId": 3737031,
@@ -63,7 +88,11 @@
       "audioUrl": "https://static.prsa.pl/c1f69944-7eda-4555-b407-26473451deac.mp3"
     },
     {
-      "id": "2026-09-23-od-kosmosu-do-oceanu-najciekawsze-premiery-wrzesnia",
+      "id": "abd6c6c3-8b70-4b29-b0f6-39a289733834",
+      "slug": "2026-09-23-od-kosmosu-do-oceanu-najciekawsze-premiery-wrzesnia",
+      "slugs": [
+        "2026-09-23-od-kosmosu-do-oceanu-najciekawsze-premiery-wrzesnia"
+      ],
       "date": "2026-09-23",
       "title": "Od kosmosu do oceanu - najciekawsze premiery września",
       "articleId": 3734439,
@@ -72,7 +101,11 @@
       "audioUrl": "https://static.prsa.pl/abd6c6c3-8b70-4b29-b0f6-39a289733834.mp3"
     },
     {
-      "id": "2026-09-16-niepotrzebne-rozstania-wielkie-powroty",
+      "id": "9cc0c1fd-f5e2-476b-bef6-03aff5865243",
+      "slug": "2026-09-16-niepotrzebne-rozstania-wielkie-powroty",
+      "slugs": [
+        "2026-09-16-niepotrzebne-rozstania-wielkie-powroty"
+      ],
       "date": "2026-09-16",
       "title": "Niepotrzebne rozstania, wielkie powroty",
       "articleId": 3732117,
@@ -81,7 +114,11 @@
       "audioUrl": "https://static.prsa.pl/9cc0c1fd-f5e2-476b-bef6-03aff5865243.mp3"
     },
     {
-      "id": "2026-09-09-od-hadesu-do-itaki-metal-grecki-i-o-grecji",
+      "id": "93b46f99-e4a1-499d-8943-f2b69fd42ab2",
+      "slug": "2026-09-09-od-hadesu-do-itaki-metal-grecki-i-o-grecji",
+      "slugs": [
+        "2026-09-09-od-hadesu-do-itaki-metal-grecki-i-o-grecji"
+      ],
       "date": "2026-09-09",
       "title": "Od Hadesu do Itaki. Metal grecki i o Grecji",
       "articleId": 3729365,
@@ -90,7 +127,11 @@
       "audioUrl": "https://static.prsa.pl/93b46f99-e4a1-499d-8943-f2b69fd42ab2.mp3"
     },
     {
-      "id": "2026-09-02-lato-minelo-metal-zostaje",
+      "id": "05154d98-5f72-4cbd-9c9f-1a6b6bf2a7bb",
+      "slug": "2026-09-02-lato-minelo-metal-zostaje",
+      "slugs": [
+        "2026-09-02-lato-minelo-metal-zostaje"
+      ],
       "date": "2026-09-02",
       "title": "Lato minęło, metal zostaje",
       "articleId": 3726520,
@@ -99,7 +140,11 @@
       "audioUrl": "https://static.prsa.pl/05154d98-5f72-4cbd-9c9f-1a6b6bf2a7bb.mp3"
     },
     {
-      "id": "2026-08-26-smierc-weze-i-powracajace-sny-najlepsze-ciezary-sierpnia",
+      "id": "d3174957-8735-4867-8db6-77288aaaf8d5",
+      "slug": "2026-08-26-smierc-weze-i-powracajace-sny-najlepsze-ciezary-sierpnia",
+      "slugs": [
+        "2026-08-26-smierc-weze-i-powracajace-sny-najlepsze-ciezary-sierpnia"
+      ],
       "date": "2026-08-26",
       "title": "Śmierć, węże i powracające sny - najlepsze ciężary sierpnia",
       "articleId": 3724002,
@@ -108,7 +153,11 @@
       "audioUrl": "https://static.prsa.pl/d3174957-8735-4867-8db6-77288aaaf8d5.mp3"
     },
     {
-      "id": "2026-08-19-wielkie-oczekiwania-gorzkie-rozczarowania",
+      "id": "3a47fc8a-4270-4aae-b65c-bc3a607e5462",
+      "slug": "2026-08-19-wielkie-oczekiwania-gorzkie-rozczarowania",
+      "slugs": [
+        "2026-08-19-wielkie-oczekiwania-gorzkie-rozczarowania"
+      ],
       "date": "2026-08-19",
       "title": "Wielkie oczekiwania, gorzkie rozczarowania",
       "articleId": 3721434,
@@ -117,7 +166,11 @@
       "audioUrl": "https://static.prsa.pl/3a47fc8a-4270-4aae-b65c-bc3a607e5462.mp3"
     },
     {
-      "id": "2026-08-12-wielcy-nieobecni-powroty-mozliwe-i-niemozliwe",
+      "id": "4ff7b8da-d2ef-413f-ae65-fdc37f092192",
+      "slug": "2026-08-12-wielcy-nieobecni-powroty-mozliwe-i-niemozliwe",
+      "slugs": [
+        "2026-08-12-wielcy-nieobecni-powroty-mozliwe-i-niemozliwe"
+      ],
       "date": "2026-08-12",
       "title": "Wielcy nieobecni - powroty możliwe i niemożliwe",
       "articleId": 3719152,
@@ -126,7 +179,11 @@
       "audioUrl": "https://static.prsa.pl/4ff7b8da-d2ef-413f-ae65-fdc37f092192.mp3"
     },
     {
-      "id": "2026-08-05-najgoretsze-sierpniowe-festiwale-ktore-rozgrzeja-serca-fanow-metalu",
+      "id": "306f9236-f409-44ab-944f-3137436eed08",
+      "slug": "2026-08-05-najgoretsze-sierpniowe-festiwale-ktore-rozgrzeja-serca-fanow-metalu",
+      "slugs": [
+        "2026-08-05-najgoretsze-sierpniowe-festiwale-ktore-rozgrzeja-serca-fanow-metalu"
+      ],
       "date": "2026-08-05",
       "title": "Najgorętsze sierpniowe festiwale, które rozgrzeją serca fanów metalu",
       "articleId": 3716209,
@@ -135,7 +192,11 @@
       "audioUrl": "https://static.prsa.pl/306f9236-f409-44ab-944f-3137436eed08.mp3"
     },
     {
-      "id": "2026-07-29-podsumowanie-wydawnicze-lipca-2026",
+      "id": "e0d5f01f-798d-4b94-9893-2423ee15272c",
+      "slug": "2026-07-29-podsumowanie-wydawnicze-lipca-2026",
+      "slugs": [
+        "2026-07-29-podsumowanie-wydawnicze-lipca-2026"
+      ],
       "date": "2026-07-29",
       "title": "Podsumowanie wydawnicze lipca 2026",
       "articleId": 3713713,
@@ -144,7 +205,11 @@
       "audioUrl": "https://static.prsa.pl/e0d5f01f-798d-4b94-9893-2423ee15272c.mp3"
     },
     {
-      "id": "2026-07-22-odkrywamy-ameryke-gdzie-black-metal-niejedno-ma-imie",
+      "id": "66636938-8f22-4cb5-8516-f54159c975a7",
+      "slug": "2026-07-22-odkrywamy-ameryke-gdzie-black-metal-niejedno-ma-imie",
+      "slugs": [
+        "2026-07-22-odkrywamy-ameryke-gdzie-black-metal-niejedno-ma-imie"
+      ],
       "date": "2026-07-22",
       "title": "Odkrywamy Amerykę, gdzie black metal niejedno ma imię",
       "articleId": 3711278,
@@ -153,7 +218,11 @@
       "audioUrl": "https://static.prsa.pl/66636938-8f22-4cb5-8516-f54159c975a7.mp3"
     },
     {
-      "id": "2026-07-15-metalowy-krakow",
+      "id": "1494df45-d4ad-437e-81a9-3fd956d25071",
+      "slug": "2026-07-15-metalowy-krakow",
+      "slugs": [
+        "2026-07-15-metalowy-krakow"
+      ],
       "date": "2026-07-15",
       "title": "Metalowy Kraków",
       "articleId": 3709018,
@@ -162,7 +231,11 @@
       "audioUrl": "https://static.prsa.pl/1494df45-d4ad-437e-81a9-3fd956d25071.mp3"
     },
     {
-      "id": "2026-07-08-tego-na-pewno-nie-puszcza-w-radiu",
+      "id": "3453211a-4286-4476-a4df-73285a9c08d5",
+      "slug": "2026-07-08-tego-na-pewno-nie-puszcza-w-radiu",
+      "slugs": [
+        "2026-07-08-tego-na-pewno-nie-puszcza-w-radiu"
+      ],
       "date": "2026-07-08",
       "title": "Tego na pewno nie puszczą w radiu",
       "articleId": 3706220,
@@ -171,7 +244,11 @@
       "audioUrl": "https://static.prsa.pl/3453211a-4286-4476-a4df-73285a9c08d5.mp3"
     },
     {
-      "id": "2026-07-01-szczury-skorpiony-i-inne-makabry-polecamy-koncerty-i-festiwale-lipca",
+      "id": "b82c4f07-165a-491d-80ec-7ea69a7e17f2",
+      "slug": "2026-07-01-szczury-skorpiony-i-inne-makabry-polecamy-koncerty-i-festiwale-lipca",
+      "slugs": [
+        "2026-07-01-szczury-skorpiony-i-inne-makabry-polecamy-koncerty-i-festiwale-lipca"
+      ],
       "date": "2026-07-01",
       "title": "Szczury, skorpiony i inne makabry - polecamy koncerty i festiwale lipca",
       "articleId": 3703821,
@@ -180,7 +257,11 @@
       "audioUrl": "https://static.prsa.pl/b82c4f07-165a-491d-80ec-7ea69a7e17f2.mp3"
     },
     {
-      "id": "2026-06-24-goracy-czerwiec-indianski-punk-cyganskie-lzy-i-duchy-europy",
+      "id": "9856e0b6-5223-4f1e-8172-96ddcfc3d199",
+      "slug": "2026-06-24-goracy-czerwiec-indianski-punk-cyganskie-lzy-i-duchy-europy",
+      "slugs": [
+        "2026-06-24-goracy-czerwiec-indianski-punk-cyganskie-lzy-i-duchy-europy"
+      ],
       "date": "2026-06-24",
       "title": "Gorący czerwiec indiański punk, cygańskie łzy i duchy Europy",
       "articleId": 3701475,
@@ -189,7 +270,11 @@
       "audioUrl": "https://static.prsa.pl/9856e0b6-5223-4f1e-8172-96ddcfc3d199.mp3"
     },
     {
-      "id": "2026-06-17-dobre-nowe-polskie-przeglad-ciezkich-krajowych-premier-z-przewaga-ekstremalnych-debiutow",
+      "id": "cb083283-015c-48a5-a169-5a29240f3784",
+      "slug": "2026-06-17-dobre-nowe-polskie-przeglad-ciezkich-krajowych-premier-z-przewaga-ekstremalnych-debiutow",
+      "slugs": [
+        "2026-06-17-dobre-nowe-polskie-przeglad-ciezkich-krajowych-premier-z-przewaga-ekstremalnych-debiutow"
+      ],
       "date": "2026-06-17",
       "title": "Dobre, nowe, polskie. Przegląd ciężkich krajowych premier, z przewagą ekstremalnych debiutów",
       "articleId": 3699074,
@@ -198,7 +283,11 @@
       "audioUrl": "https://static.prsa.pl/cb083283-015c-48a5-a169-5a29240f3784.mp3"
     },
     {
-      "id": "2026-06-10-dimmu-borgir-i-muzyka-ktorej-nie-dalo-sie-zignorowac",
+      "id": "def366bd-91ce-4567-8c6e-8177e4e8160b",
+      "slug": "2026-06-10-dimmu-borgir-i-muzyka-ktorej-nie-dalo-sie-zignorowac",
+      "slugs": [
+        "2026-06-10-dimmu-borgir-i-muzyka-ktorej-nie-dalo-sie-zignorowac"
+      ],
       "date": "2026-06-10",
       "title": "Dimmu Borgir i muzyka, której nie dało się zignorować",
       "articleId": 3696612,
@@ -207,7 +296,11 @@
       "audioUrl": "https://static.prsa.pl/def366bd-91ce-4567-8c6e-8177e4e8160b.mp3"
     },
     {
-      "id": "2026-06-03-czerwcowe-festiwale-ktore-warto-odwiedzic",
+      "id": "6ad7c4bd-535e-447f-a5b6-fc0b07ee2c83",
+      "slug": "2026-06-03-czerwcowe-festiwale-ktore-warto-odwiedzic",
+      "slugs": [
+        "2026-06-03-czerwcowe-festiwale-ktore-warto-odwiedzic"
+      ],
       "date": "2026-06-03",
       "title": "Czerwcowe festiwale, które warto odwiedzić",
       "articleId": 3694417,
@@ -216,7 +309,11 @@
       "audioUrl": "https://static.prsa.pl/6ad7c4bd-535e-447f-a5b6-fc0b07ee2c83.mp3"
     },
     {
-      "id": "2026-05-27-ciezki-maj-od-weteranow-z-norwegii-do-wizjonerow-z-anglii",
+      "id": "e3cdffb9-d7f4-4bff-aeff-a0ee9b57f492",
+      "slug": "2026-05-27-ciezki-maj-od-weteranow-z-norwegii-do-wizjonerow-z-anglii",
+      "slugs": [
+        "2026-05-27-ciezki-maj-od-weteranow-z-norwegii-do-wizjonerow-z-anglii"
+      ],
       "date": "2026-05-27",
       "title": "Ciężki maj od weteranów z Norwegii do wizjonerów z Anglii",
       "articleId": 3691775,
@@ -225,7 +322,11 @@
       "audioUrl": "https://static.prsa.pl/e3cdffb9-d7f4-4bff-aeff-a0ee9b57f492.mp3"
     },
     {
-      "id": "2026-05-20-koncertowki-wszech-czasow",
+      "id": "946395de-48b4-4f7e-abc5-8e0c31abfe00",
+      "slug": "2026-05-20-koncertowki-wszech-czasow",
+      "slugs": [
+        "2026-05-20-koncertowki-wszech-czasow"
+      ],
       "date": "2026-05-20",
       "title": "Koncertówki wszech czasów",
       "articleId": 3688830,
@@ -234,7 +335,11 @@
       "audioUrl": "https://static.prsa.pl/946395de-48b4-4f7e-abc5-8e0c31abfe00.mp3"
     },
     {
-      "id": "2026-05-13-czarne-perly-spoza-kanonu",
+      "id": "05a52888-5746-47f0-a7dc-790c1cdea203",
+      "slug": "2026-05-13-czarne-perly-spoza-kanonu",
+      "slugs": [
+        "2026-05-13-czarne-perly-spoza-kanonu"
+      ],
       "date": "2026-05-13",
       "title": "Czarne perły spoza kanonu",
       "articleId": 3686074,
@@ -243,7 +348,11 @@
       "audioUrl": "https://static.prsa.pl/05a52888-5746-47f0-a7dc-790c1cdea203.mp3"
     },
     {
-      "id": "2026-05-06-ciezkie-majowe-koncerty",
+      "id": "fb087c45-dee7-4698-a1fa-d980bdf8922d",
+      "slug": "2026-05-06-ciezkie-majowe-koncerty",
+      "slugs": [
+        "2026-05-06-ciezkie-majowe-koncerty"
+      ],
       "date": "2026-05-06",
       "title": "Ciężkie majowe koncerty",
       "articleId": 3682954,
@@ -252,7 +361,11 @@
       "audioUrl": "https://static.prsa.pl/fb087c45-dee7-4698-a1fa-d980bdf8922d.mp3"
     },
     {
-      "id": "2026-04-29-roadburn-festival-w-tilburgu-2026",
+      "id": "90e858f2-2c34-45f7-8193-4cbb2e3bccfb",
+      "slug": "2026-04-29-roadburn-festival-w-tilburgu-2026",
+      "slugs": [
+        "2026-04-29-roadburn-festival-w-tilburgu-2026"
+      ],
       "date": "2026-04-29",
       "title": "Roadburn Festival w Tilburgu 2026",
       "articleId": 3680043,
@@ -261,7 +374,11 @@
       "audioUrl": "https://static.prsa.pl/90e858f2-2c34-45f7-8193-4cbb2e3bccfb.mp3"
     },
     {
-      "id": "2026-04-22-przeglad-kwietniowych-nowosci",
+      "id": "acfe74c9-df8f-45fe-b04e-d21be9c3cb6a",
+      "slug": "2026-04-22-przeglad-kwietniowych-nowosci",
+      "slugs": [
+        "2026-04-22-przeglad-kwietniowych-nowosci"
+      ],
       "date": "2026-04-22",
       "title": "Przegląd kwietniowych nowości",
       "articleId": 3676994,
@@ -270,7 +387,11 @@
       "audioUrl": "https://static.prsa.pl/acfe74c9-df8f-45fe-b04e-d21be9c3cb6a.mp3"
     },
     {
-      "id": "2026-04-15-heavy-music-estonia",
+      "id": "99cdb570-4bc8-4c5a-a82e-b75ec0e0f7d0",
+      "slug": "2026-04-15-heavy-music-estonia",
+      "slugs": [
+        "2026-04-15-heavy-music-estonia"
+      ],
       "date": "2026-04-15",
       "title": "Heavy Music Estonia",
       "articleId": 3673959,
@@ -279,7 +400,11 @@
       "audioUrl": "https://static.prsa.pl/99cdb570-4bc8-4c5a-a82e-b75ec0e0f7d0.mp3"
     },
     {
-      "id": "2026-04-08-polfinalowe-wybory-mystic-festivalu",
+      "id": "f23dc576-f68c-43b6-b522-ae15ed03e3e1",
+      "slug": "2026-04-08-polfinalowe-wybory-mystic-festivalu",
+      "slugs": [
+        "2026-04-08-polfinalowe-wybory-mystic-festivalu"
+      ],
       "date": "2026-04-08",
       "title": "Półfinałowe wybory Mystic Festivalu",
       "articleId": 3670832,
@@ -288,7 +413,11 @@
       "audioUrl": "https://static.prsa.pl/f23dc576-f68c-43b6-b522-ae15ed03e3e1.mp3"
     },
     {
-      "id": "2026-04-01-ciezkie-koncerty-kwietniowe",
+      "id": "23b37fe0-3219-48b1-b79d-2d0bde9cd9fa",
+      "slug": "2026-04-01-ciezkie-koncerty-kwietniowe",
+      "slugs": [
+        "2026-04-01-ciezkie-koncerty-kwietniowe"
+      ],
       "date": "2026-04-01",
       "title": "Ciężkie koncerty kwietniowe",
       "articleId": 3668219,
@@ -297,7 +426,11 @@
       "audioUrl": "https://static.prsa.pl/23b37fe0-3219-48b1-b79d-2d0bde9cd9fa.mp3"
     },
     {
-      "id": "2026-03-25-marzec-2026-glosne-premiery-wielkie-powroty",
+      "id": "ed60a96f-419a-42b1-b153-110683462d8b",
+      "slug": "2026-03-25-marzec-2026-glosne-premiery-wielkie-powroty",
+      "slugs": [
+        "2026-03-25-marzec-2026-glosne-premiery-wielkie-powroty"
+      ],
       "date": "2026-03-25",
       "title": "Marzec 2026 Głośne premiery, wielkie powroty",
       "articleId": 3664817,
@@ -306,7 +439,11 @@
       "audioUrl": "https://static.prsa.pl/ed60a96f-419a-42b1-b153-110683462d8b.mp3"
     },
     {
-      "id": "2026-03-18-rozmowa-z-frontside-o-nowej-plycie-i-z-suicidal-tendencies-o-starych-problemach-w-nowej-odslonie",
+      "id": "34ebe1c0-0c0d-4713-8e1f-d2c14e3d673c",
+      "slug": "2026-03-18-rozmowa-z-frontside-o-nowej-plycie-i-z-suicidal-tendencies-o-starych-problemach-w-nowej-odslonie",
+      "slugs": [
+        "2026-03-18-rozmowa-z-frontside-o-nowej-plycie-i-z-suicidal-tendencies-o-starych-problemach-w-nowej-odslonie"
+      ],
       "date": "2026-03-18",
       "title": "Rozmowa z Frontside o nowej płycie i z Suicidal Tendencies o starych problemach w nowej odsłonie",
       "articleId": 3661679,
@@ -315,7 +452,11 @@
       "audioUrl": "https://static.prsa.pl/34ebe1c0-0c0d-4713-8e1f-d2c14e3d673c.mp3"
     },
     {
-      "id": "2026-03-11-zapowiedzi-festiwali-w-polsce-i-na-swiecie",
+      "id": "8fe73396-bfe9-4342-a9ab-5566196ac131",
+      "slug": "2026-03-11-zapowiedzi-festiwali-w-polsce-i-na-swiecie",
+      "slugs": [
+        "2026-03-11-zapowiedzi-festiwali-w-polsce-i-na-swiecie"
+      ],
       "date": "2026-03-11",
       "title": "Zapowiedzi festiwali w Polsce i na świecie",
       "articleId": 3658521,
@@ -324,7 +465,11 @@
       "audioUrl": "https://static.prsa.pl/8fe73396-bfe9-4342-a9ab-5566196ac131.mp3"
     },
     {
-      "id": "2026-03-04-zapowiedz-marcowych-koncertow-z-ciezkim-brzmieniem",
+      "id": "3b974001-08e3-4611-a73a-e5369bd7025c",
+      "slug": "2026-03-04-zapowiedz-marcowych-koncertow-z-ciezkim-brzmieniem",
+      "slugs": [
+        "2026-03-04-zapowiedz-marcowych-koncertow-z-ciezkim-brzmieniem"
+      ],
       "date": "2026-03-04",
       "title": "Zapowiedź marcowych koncertów z ciężkim brzmieniem",
       "articleId": 3655474,
@@ -333,7 +478,11 @@
       "audioUrl": "https://static.prsa.pl/3b974001-08e3-4611-a73a-e5369bd7025c.mp3"
     },
     {
-      "id": "2026-02-25-przeglad-najciekawszych-nowych-plyt-z-ciezkim-brzmieniem",
+      "id": "26acd5a7-6dbe-4ebf-b9f6-c3b0eb063d6f",
+      "slug": "2026-02-25-przeglad-najciekawszych-nowych-plyt-z-ciezkim-brzmieniem",
+      "slugs": [
+        "2026-02-25-przeglad-najciekawszych-nowych-plyt-z-ciezkim-brzmieniem"
+      ],
       "date": "2026-02-25",
       "title": "Przegląd najciekawszych nowych płyt z ciężkim brzmieniem",
       "articleId": 3652370,
@@ -342,7 +491,11 @@
       "audioUrl": "https://static.prsa.pl/26acd5a7-6dbe-4ebf-b9f6-c3b0eb063d6f.mp3"
     },
     {
-      "id": "2026-02-18-czterdziesci-lat-minelo-jak-jeden-dzien-jak-bardzo-metalowy-byl-rok-1986",
+      "id": "a2e6fbff-f591-4e3a-819a-a9cf0a8ad8f3",
+      "slug": "2026-02-18-czterdziesci-lat-minelo-jak-jeden-dzien-jak-bardzo-metalowy-byl-rok-1986",
+      "slugs": [
+        "2026-02-18-czterdziesci-lat-minelo-jak-jeden-dzien-jak-bardzo-metalowy-byl-rok-1986"
+      ],
       "date": "2026-02-18",
       "title": "Czterdzieści lat minęło jak jeden dzień… Jak bardzo metalowy był rok 1986",
       "articleId": 3649294,
@@ -351,7 +504,11 @@
       "audioUrl": "https://static.prsa.pl/a2e6fbff-f591-4e3a-819a-a9cf0a8ad8f3.mp3"
     },
     {
-      "id": "2026-02-11-nowosci-z-polski-od-psychodelii-po-ekstreme",
+      "id": "b8e5be1b-6b99-4530-bd5d-83da623345d3",
+      "slug": "2026-02-11-nowosci-z-polski-od-psychodelii-po-ekstreme",
+      "slugs": [
+        "2026-02-11-nowosci-z-polski-od-psychodelii-po-ekstreme"
+      ],
       "date": "2026-02-11",
       "title": "Nowości z Polski od psychodelii po ekstremę",
       "articleId": 3646259,
@@ -360,7 +517,11 @@
       "audioUrl": "https://static.prsa.pl/b8e5be1b-6b99-4530-bd5d-83da623345d3.mp3"
     },
     {
-      "id": "2026-02-04-ciezary-na-zywo-najciekawsze-koncerty-lutego",
+      "id": "c4501cbc-825c-441c-9fee-4ce4767ebd7a",
+      "slug": "2026-02-04-ciezary-na-zywo-najciekawsze-koncerty-lutego",
+      "slugs": [
+        "2026-02-04-ciezary-na-zywo-najciekawsze-koncerty-lutego"
+      ],
       "date": "2026-02-04",
       "title": "Ciężary na żywo. Najciekawsze koncerty lutego",
       "articleId": 3643090,
@@ -369,7 +530,11 @@
       "audioUrl": "https://static.prsa.pl/c4501cbc-825c-441c-9fee-4ce4767ebd7a.mp3"
     },
     {
-      "id": "2026-01-28-najlepsze-nowosci-stycznia-od-siarki-z-las-vegas-po-deathjazz-z-grilla",
+      "id": "21cfd15d-e6bb-49d8-a00e-c0f854d0fdc2",
+      "slug": "2026-01-28-najlepsze-nowosci-stycznia-od-siarki-z-las-vegas-po-deathjazz-z-grilla",
+      "slugs": [
+        "2026-01-28-najlepsze-nowosci-stycznia-od-siarki-z-las-vegas-po-deathjazz-z-grilla"
+      ],
       "date": "2026-01-28",
       "title": "Najlepsze nowości stycznia od siarki z Las Vegas po deathjazz z grilla!",
       "articleId": 3639871,
@@ -378,7 +543,11 @@
       "audioUrl": "https://static.prsa.pl/21cfd15d-e6bb-49d8-a00e-c0f854d0fdc2.mp3"
     },
     {
-      "id": "2026-01-21-30-lat-decapitated-spotkanie-drugie-w-pozostalych-rolach-slayer-pantera-kat-vader-slipknot-i-inni",
+      "id": "6654e58c-3e67-4e65-bf3d-3c0269bda620",
+      "slug": "2026-01-21-30-lat-decapitated-spotkanie-drugie-w-pozostalych-rolach-slayer-pantera-kat-vader-slipknot-i-inni",
+      "slugs": [
+        "2026-01-21-30-lat-decapitated-spotkanie-drugie-w-pozostalych-rolach-slayer-pantera-kat-vader-slipknot-i-inni"
+      ],
       "date": "2026-01-21",
       "title": "30 lat Decapitated - spotkanie drugie. W pozostałych rolach Slayer, Pantera, Kat, Vader, Slipknot i inni",
       "articleId": 3636682,
@@ -387,7 +556,11 @@
       "audioUrl": "https://static.prsa.pl/6654e58c-3e67-4e65-bf3d-3c0269bda620.mp3"
     },
     {
-      "id": "2026-01-14-30-lat-decapitated-spotkanie-pierwsze-vogg-opowiada-jak-to-wszystko-sie-zaczelo",
+      "id": "549725b2-fa86-4ec9-91f3-99dd1e8be7eb",
+      "slug": "2026-01-14-30-lat-decapitated-spotkanie-pierwsze-vogg-opowiada-jak-to-wszystko-sie-zaczelo",
+      "slugs": [
+        "2026-01-14-30-lat-decapitated-spotkanie-pierwsze-vogg-opowiada-jak-to-wszystko-sie-zaczelo"
+      ],
       "date": "2026-01-14",
       "title": "30 lat Decapitated - spotkanie pierwsze. Vogg opowiada jak to wszystko się zaczęło",
       "articleId": 3633558,
@@ -396,7 +569,11 @@
       "audioUrl": "https://static.prsa.pl/549725b2-fa86-4ec9-91f3-99dd1e8be7eb.mp3"
     },
     {
-      "id": "2026-01-07-najlepsze-plyty-xxi-wieku",
+      "id": "6b15af60-cace-4372-8f98-cc419719611d",
+      "slug": "2026-01-07-najlepsze-plyty-xxi-wieku",
+      "slugs": [
+        "2026-01-07-najlepsze-plyty-xxi-wieku"
+      ],
       "date": "2026-01-07",
       "title": "Najlepsze płyty XXI wieku",
       "articleId": 3630319,
@@ -405,7 +582,11 @@
       "audioUrl": "https://static.prsa.pl/6b15af60-cace-4372-8f98-cc419719611d.mp3"
     },
     {
-      "id": "2025-12-31-najciekawsze-koncerty-i-festiwale-stycznia-2026",
+      "id": "bb15e994-e32d-462c-b08e-abd2d5d2f0c7",
+      "slug": "2025-12-31-najciekawsze-koncerty-i-festiwale-stycznia-2026",
+      "slugs": [
+        "2025-12-31-najciekawsze-koncerty-i-festiwale-stycznia-2026"
+      ],
       "date": "2025-12-31",
       "title": "Najciekawsze koncerty i festiwale stycznia 2026",
       "articleId": 3627800,
@@ -414,7 +595,11 @@
       "audioUrl": "https://static.prsa.pl/bb15e994-e32d-462c-b08e-abd2d5d2f0c7.mp3"
     },
     {
-      "id": "2025-12-24-artur-ruminski-o-roznych-ciezkich-projektach-muzycznych",
+      "id": "d96175ee-6a14-417d-9e2e-ac7cdc4ef6e8",
+      "slug": "2025-12-24-artur-ruminski-o-roznych-ciezkich-projektach-muzycznych",
+      "slugs": [
+        "2025-12-24-artur-ruminski-o-roznych-ciezkich-projektach-muzycznych"
+      ],
       "date": "2025-12-24",
       "title": "Artur Rumiński o rożnych ciężkich projektach muzycznych",
       "articleId": 3625398,
@@ -423,7 +608,11 @@
       "audioUrl": "https://static.prsa.pl/d96175ee-6a14-417d-9e2e-ac7cdc4ef6e8.mp3"
     },
     {
-      "id": "2025-12-17-rozne-stopy-metali",
+      "id": "ea2fda3a-43df-41d5-9006-5bca93fce00e",
+      "slug": "2025-12-17-rozne-stopy-metali",
+      "slugs": [
+        "2025-12-17-rozne-stopy-metali"
+      ],
       "date": "2025-12-17",
       "title": "Różne stopy metali",
       "articleId": 3622144,
@@ -432,7 +621,11 @@
       "audioUrl": "https://static.prsa.pl/ea2fda3a-43df-41d5-9006-5bca93fce00e.mp3"
     },
     {
-      "id": "2025-12-10-ciezary-z-malego-i-duzego-ekranu",
+      "id": "8c25a2d1-b492-40f4-8cb7-20c77cd09647",
+      "slug": "2025-12-10-ciezary-z-malego-i-duzego-ekranu",
+      "slugs": [
+        "2025-12-10-ciezary-z-malego-i-duzego-ekranu"
+      ],
       "date": "2025-12-10",
       "title": "Ciężary z małego i dużego ekranu",
       "articleId": 3618922,
@@ -441,7 +634,11 @@
       "audioUrl": "https://static.prsa.pl/8c25a2d1-b492-40f4-8cb7-20c77cd09647.mp3"
     },
     {
-      "id": "2025-12-03-jakie-koncerty-czekaja-nas-w-najblizszych-tygodniach",
+      "id": "947bf413-cda4-4a1a-8c15-9206b9309660",
+      "slug": "2025-12-03-jakie-koncerty-czekaja-nas-w-najblizszych-tygodniach",
+      "slugs": [
+        "2025-12-03-jakie-koncerty-czekaja-nas-w-najblizszych-tygodniach"
+      ],
       "date": "2025-12-03",
       "title": "Jakie koncerty czekają nas w najbliższych tygodniach",
       "articleId": 3615716,
@@ -450,7 +647,11 @@
       "audioUrl": "https://static.prsa.pl/947bf413-cda4-4a1a-8c15-9206b9309660.mp3"
     },
     {
-      "id": "2025-11-26-metalowe-podsumowanie-listopada",
+      "id": "519d7c2b-9d68-40cf-98d3-69c9796c3ea4",
+      "slug": "2025-11-26-metalowe-podsumowanie-listopada",
+      "slugs": [
+        "2025-11-26-metalowe-podsumowanie-listopada"
+      ],
       "date": "2025-11-26",
       "title": "Metalowe podsumowanie listopada",
       "articleId": 3612538,
@@ -459,7 +660,11 @@
       "audioUrl": "https://static.prsa.pl/519d7c2b-9d68-40cf-98d3-69c9796c3ea4.mp3"
     },
     {
-      "id": "2025-11-19-dunski-mono-goes-metal-festiwal-2025",
+      "id": "df5e28d0-103e-4f36-a6f8-459220d2a529",
+      "slug": "2025-11-19-dunski-mono-goes-metal-festiwal-2025",
+      "slugs": [
+        "2025-11-19-dunski-mono-goes-metal-festiwal-2025"
+      ],
       "date": "2025-11-19",
       "title": "Duński Mono Goes Metal Festiwal 2025",
       "articleId": 3609345,
@@ -468,7 +673,11 @@
       "audioUrl": "https://static.prsa.pl/df5e28d0-103e-4f36-a6f8-459220d2a529.mp3"
     },
     {
-      "id": "2025-11-12-celebrujac-polska-kulture",
+      "id": "14461177-6e2d-435d-b8da-c940df82eaa4",
+      "slug": "2025-11-12-celebrujac-polska-kulture",
+      "slugs": [
+        "2025-11-12-celebrujac-polska-kulture"
+      ],
       "date": "2025-11-12",
       "title": "Celebrując polską kulturę",
       "articleId": 3606172,
@@ -477,7 +686,11 @@
       "audioUrl": "https://static.prsa.pl/14461177-6e2d-435d-b8da-c940df82eaa4.mp3"
     },
     {
-      "id": "2025-10-29-podsumowanie-pazdziernika-w-swicie-ciezarow",
+      "id": "1b99c4d9-d154-4557-8c70-5a28c29b6334",
+      "slug": "2025-10-29-podsumowanie-pazdziernika-w-swicie-ciezarow",
+      "slugs": [
+        "2025-10-29-podsumowanie-pazdziernika-w-swicie-ciezarow"
+      ],
       "date": "2025-10-29",
       "title": "Podsumowanie października w świcie ciężarów",
       "articleId": 3600026,
@@ -486,7 +699,11 @@
       "audioUrl": "https://static.prsa.pl/1b99c4d9-d154-4557-8c70-5a28c29b6334.mp3"
     },
     {
-      "id": "2025-10-22-metalowi-wokalisci-nie-do-zastapienia",
+      "id": "ea141138-f73e-46e5-8ee7-b9c58ad3c7df",
+      "slug": "2025-10-22-metalowi-wokalisci-nie-do-zastapienia",
+      "slugs": [
+        "2025-10-22-metalowi-wokalisci-nie-do-zastapienia"
+      ],
       "date": "2025-10-22",
       "title": "Metalowi wokaliści nie do zastąpienia",
       "articleId": 3596700,
@@ -495,7 +712,11 @@
       "audioUrl": "https://static.prsa.pl/ea141138-f73e-46e5-8ee7-b9c58ad3c7df.mp3"
     },
     {
-      "id": "2025-10-15-subiektywne-zestawieni-niedocenianych-polskich-kapel",
+      "id": "a8dcad3c-9586-46e7-90f3-b1dbbb3bfe0b",
+      "slug": "2025-10-15-subiektywne-zestawieni-niedocenianych-polskich-kapel",
+      "slugs": [
+        "2025-10-15-subiektywne-zestawieni-niedocenianych-polskich-kapel"
+      ],
       "date": "2025-10-15",
       "title": "Subiektywne zestawieni niedocenianych polskich kapel",
       "articleId": 3593369,
@@ -504,7 +725,11 @@
       "audioUrl": "https://static.prsa.pl/a8dcad3c-9586-46e7-90f3-b1dbbb3bfe0b.mp3"
     },
     {
-      "id": "2025-10-08-wymagajaca-i-pokrecona-ciezka-muza",
+      "id": "045c81c6-38e7-432e-85eb-a2c7afb64133",
+      "slug": "2025-10-08-wymagajaca-i-pokrecona-ciezka-muza",
+      "slugs": [
+        "2025-10-08-wymagajaca-i-pokrecona-ciezka-muza"
+      ],
       "date": "2025-10-08",
       "title": "Wymagająca i pokręcona ciężka muza",
       "articleId": 3590191,
@@ -513,7 +738,11 @@
       "audioUrl": "https://static.prsa.pl/045c81c6-38e7-432e-85eb-a2c7afb64133.mp3"
     },
     {
-      "id": "2025-10-01-pazdziernikowa-scena-koncertowa",
+      "id": "5aeb0e24-aece-4c32-9e35-b79e34daac65",
+      "slug": "2025-10-01-pazdziernikowa-scena-koncertowa",
+      "slugs": [
+        "2025-10-01-pazdziernikowa-scena-koncertowa"
+      ],
       "date": "2025-10-01",
       "title": "Październikowa scena koncertowa",
       "articleId": 3586863,
@@ -522,7 +751,11 @@
       "audioUrl": "https://static.prsa.pl/5aeb0e24-aece-4c32-9e35-b79e34daac65.mp3"
     },
     {
-      "id": "2025-09-24-przeglad-wrzesniowych-nowosci-ciezarowych",
+      "id": "2ad042a6-1bdb-4e5f-b5ac-dae1e401276f",
+      "slug": "2025-09-24-przeglad-wrzesniowych-nowosci-ciezarowych",
+      "slugs": [
+        "2025-09-24-przeglad-wrzesniowych-nowosci-ciezarowych"
+      ],
       "date": "2025-09-24",
       "title": "Przegląd wrześniowych nowości ciężarowych",
       "articleId": 3583688,
@@ -531,7 +764,11 @@
       "audioUrl": "https://static.prsa.pl/2ad042a6-1bdb-4e5f-b5ac-dae1e401276f.mp3"
     },
     {
-      "id": "2025-09-17-ciezary-inne-i-dziwne-ciag-dalszy",
+      "id": "2b122f0a-8d64-4be5-8810-c648bd2744b0",
+      "slug": "2025-09-17-ciezary-inne-i-dziwne-ciag-dalszy",
+      "slugs": [
+        "2025-09-17-ciezary-inne-i-dziwne-ciag-dalszy"
+      ],
       "date": "2025-09-17",
       "title": "Ciężary inne i dziwne - ciąg dalszy",
       "articleId": 3580487,
@@ -540,7 +777,11 @@
       "audioUrl": "https://static.prsa.pl/2b122f0a-8d64-4be5-8810-c648bd2744b0.mp3"
     },
     {
-      "id": "2025-09-10-ciezary-inne-i-dziwne",
+      "id": "9b8fb645-2639-4b75-bcfe-d903f3e6f872",
+      "slug": "2025-09-10-ciezary-inne-i-dziwne",
+      "slugs": [
+        "2025-09-10-ciezary-inne-i-dziwne"
+      ],
       "date": "2025-09-10",
       "title": "Ciężary inne i dziwne",
       "articleId": 3577244,
@@ -549,7 +790,11 @@
       "audioUrl": "https://static.prsa.pl/9b8fb645-2639-4b75-bcfe-d903f3e6f872.mp3"
     },
     {
-      "id": "2025-09-03-wspominamy-brenta-hindsa-z-grupy-mastodon",
+      "id": "4fa907fc-23a8-4bce-8011-fce60c435445",
+      "slug": "2025-09-03-wspominamy-brenta-hindsa-z-grupy-mastodon",
+      "slugs": [
+        "2025-09-03-wspominamy-brenta-hindsa-z-grupy-mastodon"
+      ],
       "date": "2025-09-03",
       "title": "Wspominamy Brenta Hindsa z grupy Mastodon",
       "articleId": 3574013,
@@ -558,7 +803,11 @@
       "audioUrl": "https://static.prsa.pl/4fa907fc-23a8-4bce-8011-fce60c435445.mp3"
     },
     {
-      "id": "2025-08-27-nieco-lzejsze-brzmienie-ciezkiej-muzy",
+      "id": "1bbe0d8e-a4fc-42a3-8c92-b71f98d6b76c",
+      "slug": "2025-08-27-nieco-lzejsze-brzmienie-ciezkiej-muzy",
+      "slugs": [
+        "2025-08-27-nieco-lzejsze-brzmienie-ciezkiej-muzy"
+      ],
       "date": "2025-08-27",
       "title": "Nieco lżejsze brzmienie ciężkiej muzy",
       "articleId": 3570664,
@@ -567,7 +816,11 @@
       "audioUrl": "https://static.prsa.pl/1bbe0d8e-a4fc-42a3-8c92-b71f98d6b76c.mp3"
     },
     {
-      "id": "2025-08-20-metalowe-inspiracje-z-ostroleki",
+      "id": "98fdf291-a637-4c35-ad7c-cd8b38dc92ec",
+      "slug": "2025-08-20-metalowe-inspiracje-z-ostroleki",
+      "slugs": [
+        "2025-08-20-metalowe-inspiracje-z-ostroleki"
+      ],
       "date": "2025-08-20",
       "title": "Metalowe inspiracje z... Ostrołęki",
       "articleId": 3567638,
@@ -576,7 +829,11 @@
       "audioUrl": "https://static.prsa.pl/98fdf291-a637-4c35-ad7c-cd8b38dc92ec.mp3"
     },
     {
-      "id": "2025-08-13-ciezkie-brzmienie-z-roznych-stron-swiata",
+      "id": "0e85679d-b341-4aab-b026-4625b2747b74",
+      "slug": "2025-08-13-ciezkie-brzmienie-z-roznych-stron-swiata",
+      "slugs": [
+        "2025-08-13-ciezkie-brzmienie-z-roznych-stron-swiata"
+      ],
       "date": "2025-08-13",
       "title": "Ciężkie brzmienie z różnych stron świata",
       "articleId": 3564438,
@@ -585,7 +842,11 @@
       "audioUrl": "https://static.prsa.pl/0e85679d-b341-4aab-b026-4625b2747b74.mp3"
     },
     {
-      "id": "2025-08-06-godspeed-you-black-emperor-no-title-as-of-13-february-2024-28-340-dead",
+      "id": "2b9b3177-c9fd-488e-b2ad-6e736fc52b27",
+      "slug": "2025-08-06-godspeed-you-black-emperor-no-title-as-of-13-february-2024-28-340-dead",
+      "slugs": [
+        "2025-08-06-godspeed-you-black-emperor-no-title-as-of-13-february-2024-28-340-dead"
+      ],
       "date": "2025-08-06",
       "title": "Godspeed You! Black Emperor - No Title as of 13 February 2024 28,340 Dead",
       "articleId": 3561416,
@@ -594,7 +855,11 @@
       "audioUrl": "https://static.prsa.pl/2b9b3177-c9fd-488e-b2ad-6e736fc52b27.mp3"
     },
     {
-      "id": "2025-07-30-mental-funeral",
+      "id": "12d3f6f2-47fa-4d9c-af68-60fe93a531ec",
+      "slug": "2025-07-30-mental-funeral",
+      "slugs": [
+        "2025-07-30-mental-funeral"
+      ],
       "date": "2025-07-30",
       "title": "Mental Funeral",
       "articleId": 3558089,
@@ -603,7 +868,11 @@
       "audioUrl": "https://static.prsa.pl/12d3f6f2-47fa-4d9c-af68-60fe93a531ec.mp3"
     },
     {
-      "id": "2025-07-23-ozzy-osbourne-nie-zyje-specjalne-wydanie-audycji-ciezko-na-sercu",
+      "id": "5961aa85-06f1-4b46-9920-4b727ceda947",
+      "slug": "2025-07-23-ozzy-osbourne-nie-zyje-specjalne-wydanie-audycji-ciezko-na-sercu",
+      "slugs": [
+        "2025-07-23-ozzy-osbourne-nie-zyje-specjalne-wydanie-audycji-ciezko-na-sercu"
+      ],
       "date": "2025-07-23",
       "title": "Ozzy Osbourne nie żyje. Specjalne wydanie audycji Ciężko na Sercu",
       "articleId": 3555063,
@@ -612,7 +881,11 @@
       "audioUrl": "https://static.prsa.pl/5961aa85-06f1-4b46-9920-4b727ceda947.mp3"
     },
     {
-      "id": "2025-07-23-ciezko-na-sercu-23-lipca-godz-0008",
+      "id": "b27a7c0f-4ac8-4e09-a557-9c9fa5a9f988",
+      "slug": "2025-07-23-ciezko-na-sercu-23-lipca-godz-0008",
+      "slugs": [
+        "2025-07-23-ciezko-na-sercu-23-lipca-godz-0008"
+      ],
       "date": "2025-07-23",
       "title": "Ciężko na sercu 23 lipca godz. 0008",
       "articleId": 3561921,
@@ -621,7 +894,11 @@
       "audioUrl": "https://static.prsa.pl/b27a7c0f-4ac8-4e09-a557-9c9fa5a9f988.mp3"
     },
     {
-      "id": "2025-07-16-po-czeskim-festiwalu-obscene-extreme",
+      "id": "22997189-a7c5-4550-ba27-5f1ec2d28f77",
+      "slug": "2025-07-16-po-czeskim-festiwalu-obscene-extreme",
+      "slugs": [
+        "2025-07-16-po-czeskim-festiwalu-obscene-extreme"
+      ],
       "date": "2025-07-16",
       "title": "Po czeskim festiwalu Obscene Extreme",
       "articleId": 3551777,
@@ -630,7 +907,11 @@
       "audioUrl": "https://static.prsa.pl/22997189-a7c5-4550-ba27-5f1ec2d28f77.mp3"
     },
     {
-      "id": "2025-07-09-back-to-the-beginning-czyli-birmingham-pod-znakiem-black-sabbath-pozegnanie-ozzy-ego-osbourne-a-ze-scena",
+      "id": "63f7e925-f481-45d9-a997-91f612793108",
+      "slug": "2025-07-09-back-to-the-beginning-czyli-birmingham-pod-znakiem-black-sabbath-pozegnanie-ozzy-ego-osbourne-a-ze-scena",
+      "slugs": [
+        "2025-07-09-back-to-the-beginning-czyli-birmingham-pod-znakiem-black-sabbath-pozegnanie-ozzy-ego-osbourne-a-ze-scena"
+      ],
       "date": "2025-07-09",
       "title": "Back to the Beginning, czyli Birmingham pod znakiem Black Sabbath - pożegnanie Ozzy'ego Osbourne'a ze sceną",
       "articleId": 3548597,
@@ -639,7 +920,11 @@
       "audioUrl": "https://static.prsa.pl/63f7e925-f481-45d9-a997-91f612793108.mp3"
     },
     {
-      "id": "2025-07-02-lipcowy-kalendarz-koncertowy",
+      "id": "112c188d-1818-4215-bba3-9348f032ccba",
+      "slug": "2025-07-02-lipcowy-kalendarz-koncertowy",
+      "slugs": [
+        "2025-07-02-lipcowy-kalendarz-koncertowy"
+      ],
       "date": "2025-07-02",
       "title": "Lipcowy kalendarz koncertowy",
       "articleId": 3545391,
@@ -648,7 +933,11 @@
       "audioUrl": "https://static.prsa.pl/112c188d-1818-4215-bba3-9348f032ccba.mp3"
     },
     {
-      "id": "2025-06-25-podsumowanie-metalowych-nowosci-czerwca",
+      "id": "7476ad6a-e05e-496b-adcb-9481b8bc080b",
+      "slug": "2025-06-25-podsumowanie-metalowych-nowosci-czerwca",
+      "slugs": [
+        "2025-06-25-podsumowanie-metalowych-nowosci-czerwca"
+      ],
       "date": "2025-06-25",
       "title": "Podsumowanie metalowych nowości czerwca",
       "articleId": 3542224,
@@ -657,7 +946,11 @@
       "audioUrl": "https://static.prsa.pl/7476ad6a-e05e-496b-adcb-9481b8bc080b.mp3"
     },
     {
-      "id": "2025-06-18-imiona-w-muzyce-metalowej",
+      "id": "3343d4bb-2174-4be0-8b9e-809442010bbb",
+      "slug": "2025-06-18-imiona-w-muzyce-metalowej",
+      "slugs": [
+        "2025-06-18-imiona-w-muzyce-metalowej"
+      ],
       "date": "2025-06-18",
       "title": "Imiona w muzyce metalowej",
       "articleId": 3539266,
@@ -666,7 +959,11 @@
       "audioUrl": "https://static.prsa.pl/3343d4bb-2174-4be0-8b9e-809442010bbb.mp3"
     },
     {
-      "id": "2025-06-11-metalowe-rozmowy-z-lukaszem-dunajem",
+      "id": "78541c12-e18c-4efb-b1d8-b65e61d239a4",
+      "slug": "2025-06-11-metalowe-rozmowy-z-lukaszem-dunajem",
+      "slugs": [
+        "2025-06-11-metalowe-rozmowy-z-lukaszem-dunajem"
+      ],
       "date": "2025-06-11",
       "title": "Metalowe rozmowy z Łukaszem Dunajem",
       "articleId": 3536059,
@@ -675,7 +972,11 @@
       "audioUrl": "https://static.prsa.pl/78541c12-e18c-4efb-b1d8-b65e61d239a4.mp3"
     },
     {
-      "id": "2025-06-04-przed-mystic-festival-2025-i-innymi-czerwcowymi-koncertami",
+      "id": "dadb129b-2310-4348-87b1-869eaf9bfdb6",
+      "slug": "2025-06-04-przed-mystic-festival-2025-i-innymi-czerwcowymi-koncertami",
+      "slugs": [
+        "2025-06-04-przed-mystic-festival-2025-i-innymi-czerwcowymi-koncertami"
+      ],
       "date": "2025-06-04",
       "title": "Przed Mystic Festival 2025 i innymi czerwcowymi koncertami",
       "articleId": 3532902,
@@ -684,7 +985,11 @@
       "audioUrl": "https://static.prsa.pl/dadb129b-2310-4348-87b1-869eaf9bfdb6.mp3"
     },
     {
-      "id": "2025-05-28-metal-znad-wisly",
+      "id": "b2cafc7b-95ff-458a-a660-508f01644315",
+      "slug": "2025-05-28-metal-znad-wisly",
+      "slugs": [
+        "2025-05-28-metal-znad-wisly"
+      ],
       "date": "2025-05-28",
       "title": "Metal znad Wisły",
       "articleId": 3529620,
@@ -693,7 +998,11 @@
       "audioUrl": "https://static.prsa.pl/b2cafc7b-95ff-458a-a660-508f01644315.mp3"
     },
     {
-      "id": "2025-05-21-ciezka-muza-w-polskim-wydaniu",
+      "id": "33c554db-419e-4641-b0bb-1c0eb5372f41",
+      "slug": "2025-05-21-ciezka-muza-w-polskim-wydaniu",
+      "slugs": [
+        "2025-05-21-ciezka-muza-w-polskim-wydaniu"
+      ],
       "date": "2025-05-21",
       "title": "Ciężka muza w polskim wydaniu",
       "articleId": 3526407,
@@ -702,7 +1011,11 @@
       "audioUrl": "https://static.prsa.pl/33c554db-419e-4641-b0bb-1c0eb5372f41.mp3"
     },
     {
-      "id": "2025-05-14-metalowe-covery-niemetalowych-kawalkow",
+      "id": "57355569-d702-4446-ba75-69526f5cdc70",
+      "slug": "2025-05-14-metalowe-covery-niemetalowych-kawalkow",
+      "slugs": [
+        "2025-05-14-metalowe-covery-niemetalowych-kawalkow"
+      ],
       "date": "2025-05-14",
       "title": "Metalowe covery niemetalowych kawałków",
       "articleId": 3523423,
@@ -711,7 +1024,11 @@
       "audioUrl": "https://static.prsa.pl/57355569-d702-4446-ba75-69526f5cdc70.mp3"
     },
     {
-      "id": "2025-05-07-festiwal-roadburn-2025-w-tilburgu",
+      "id": "7a326a5e-2fbd-4fd3-be6c-5ed4a45abe54",
+      "slug": "2025-05-07-festiwal-roadburn-2025-w-tilburgu",
+      "slugs": [
+        "2025-05-07-festiwal-roadburn-2025-w-tilburgu"
+      ],
       "date": "2025-05-07",
       "title": "Festiwal Roadburn 2025 w Tilburgu",
       "articleId": 3520786,
@@ -720,7 +1037,11 @@
       "audioUrl": "https://static.prsa.pl/7a326a5e-2fbd-4fd3-be6c-5ed4a45abe54.mp3"
     },
     {
-      "id": "2025-04-30-zapowiedzi-mocnych-koncertow-w-maju-pierwsze-urodziny-ciezko-na-sercu",
+      "id": "9ec1becd-9191-4cdf-a219-270a512bd49d",
+      "slug": "2025-04-30-zapowiedzi-mocnych-koncertow-w-maju-pierwsze-urodziny-ciezko-na-sercu",
+      "slugs": [
+        "2025-04-30-zapowiedzi-mocnych-koncertow-w-maju-pierwsze-urodziny-ciezko-na-sercu"
+      ],
       "date": "2025-04-30",
       "title": "Zapowiedzi mocnych koncertów w maju - pierwsze urodziny Ciężko Na Sercu",
       "articleId": 3517178,
@@ -729,7 +1050,11 @@
       "audioUrl": "https://static.prsa.pl/9ec1becd-9191-4cdf-a219-270a512bd49d.mp3"
     },
     {
-      "id": "2025-04-23-kwietniowe-nowosci-ciezkiego-brzmienie",
+      "id": "31fa2fa3-05f3-41c3-99bf-18a101132e82",
+      "slug": "2025-04-23-kwietniowe-nowosci-ciezkiego-brzmienie",
+      "slugs": [
+        "2025-04-23-kwietniowe-nowosci-ciezkiego-brzmienie"
+      ],
       "date": "2025-04-23",
       "title": "Kwietniowe nowości ciężkiego brzmienie",
       "articleId": 3514000,
@@ -738,7 +1063,11 @@
       "audioUrl": "https://static.prsa.pl/31fa2fa3-05f3-41c3-99bf-18a101132e82.mp3"
     },
     {
-      "id": "2025-04-16-ciezka-artyleria-mocna-muzyka-z-wojna-w-tle",
+      "id": "f24b1301-db8b-45f1-b80d-c8d3683344f4",
+      "slug": "2025-04-16-ciezka-artyleria-mocna-muzyka-z-wojna-w-tle",
+      "slugs": [
+        "2025-04-16-ciezka-artyleria-mocna-muzyka-z-wojna-w-tle"
+      ],
       "date": "2025-04-16",
       "title": "Ciężka artyleria - mocna muzyka z wojną w tle",
       "articleId": 3511132,
@@ -747,7 +1076,11 @@
       "audioUrl": "https://static.prsa.pl/f24b1301-db8b-45f1-b80d-c8d3683344f4.mp3"
     },
     {
-      "id": "2025-04-09-ciezary-z-estonii",
+      "id": "1374e840-1c2c-40d0-b869-f6e929c4d1e7",
+      "slug": "2025-04-09-ciezary-z-estonii",
+      "slugs": [
+        "2025-04-09-ciezary-z-estonii"
+      ],
       "date": "2025-04-09",
       "title": "Ciężary z Estonii",
       "articleId": 3508004,
@@ -756,7 +1089,11 @@
       "audioUrl": "https://static.prsa.pl/1374e840-1c2c-40d0-b869-f6e929c4d1e7.mp3"
     },
     {
-      "id": "2025-04-02-kwietniowe-ciezkie-koncerty",
+      "id": "b37b1198-2355-43f9-a3e6-bc34d31fbd13",
+      "slug": "2025-04-02-kwietniowe-ciezkie-koncerty",
+      "slugs": [
+        "2025-04-02-kwietniowe-ciezkie-koncerty"
+      ],
       "date": "2025-04-02",
       "title": "Kwietniowe ciężkie koncerty",
       "articleId": 3504346,
@@ -765,7 +1102,11 @@
       "audioUrl": "https://static.prsa.pl/b37b1198-2355-43f9-a3e6-bc34d31fbd13.mp3"
     },
     {
-      "id": "2025-03-26-marcowe-nowosci-metalowe",
+      "id": "86f2c956-0067-42db-8663-0adfed0059e3",
+      "slug": "2025-03-26-marcowe-nowosci-metalowe",
+      "slugs": [
+        "2025-03-26-marcowe-nowosci-metalowe"
+      ],
       "date": "2025-03-26",
       "title": "Marcowe nowości metalowe",
       "articleId": 3501279,
@@ -774,7 +1115,11 @@
       "audioUrl": "https://static.prsa.pl/86f2c956-0067-42db-8663-0adfed0059e3.mp3"
     },
     {
-      "id": "2025-03-19-wiosenne-ciezkie-brzmienie",
+      "id": "b722cf9b-2908-4fea-82d8-1f82f3b74e96",
+      "slug": "2025-03-19-wiosenne-ciezkie-brzmienie",
+      "slugs": [
+        "2025-03-19-wiosenne-ciezkie-brzmienie"
+      ],
       "date": "2025-03-19",
       "title": "Wiosenne ciężkie brzmienie",
       "articleId": 3498377,
@@ -783,7 +1128,11 @@
       "audioUrl": "https://static.prsa.pl/b722cf9b-2908-4fea-82d8-1f82f3b74e96.mp3"
     },
     {
-      "id": "2025-03-12-polskie-kapele-metalowe-w-drodze-na-mystic-festival-2025",
+      "id": "669a19b6-7598-4a3c-bf06-255596c73549",
+      "slug": "2025-03-12-polskie-kapele-metalowe-w-drodze-na-mystic-festival-2025",
+      "slugs": [
+        "2025-03-12-polskie-kapele-metalowe-w-drodze-na-mystic-festival-2025"
+      ],
       "date": "2025-03-12",
       "title": "Polskie kapele metalowe w drodze na Mystic Festival 2025",
       "articleId": 3495460,
@@ -792,7 +1141,11 @@
       "audioUrl": "https://static.prsa.pl/669a19b6-7598-4a3c-bf06-255596c73549.mp3"
     },
     {
-      "id": "2025-03-05-lutowy-remanent-metalowy-cz-2",
+      "id": "03b82724-53fd-46a0-b717-a6aec3542d9d",
+      "slug": "2025-03-05-lutowy-remanent-metalowy-cz-2",
+      "slugs": [
+        "2025-03-05-lutowy-remanent-metalowy-cz-2"
+      ],
       "date": "2025-03-05",
       "title": "Lutowy remanent metalowy cz.2",
       "articleId": 3492512,
@@ -801,7 +1154,11 @@
       "audioUrl": "https://static.prsa.pl/03b82724-53fd-46a0-b717-a6aec3542d9d.mp3"
     },
     {
-      "id": "2025-02-26-lutowy-remanent-metalowy-cz-1",
+      "id": "bd1b784e-1ec9-4f17-b172-a29092f01023",
+      "slug": "2025-02-26-lutowy-remanent-metalowy-cz-1",
+      "slugs": [
+        "2025-02-26-lutowy-remanent-metalowy-cz-1"
+      ],
       "date": "2025-02-26",
       "title": "Lutowy remanent metalowy cz.1",
       "articleId": 3489520,
@@ -810,7 +1167,11 @@
       "audioUrl": "https://static.prsa.pl/bd1b784e-1ec9-4f17-b172-a29092f01023.mp3"
     },
     {
-      "id": "2025-02-19-przed-pozegnalnym-koncertem-black-sabbath-ozzy-osbourne-zegna-sie-ze-scena",
+      "id": "61683e30-b030-4c32-b0d7-3bffbf96b7dc",
+      "slug": "2025-02-19-przed-pozegnalnym-koncertem-black-sabbath-ozzy-osbourne-zegna-sie-ze-scena",
+      "slugs": [
+        "2025-02-19-przed-pozegnalnym-koncertem-black-sabbath-ozzy-osbourne-zegna-sie-ze-scena"
+      ],
       "date": "2025-02-19",
       "title": "Przed pożegnalnym koncertem Black Sabbath - Ozzy Osbourne żegna się ze sceną",
       "articleId": 3487244,
@@ -819,7 +1180,11 @@
       "audioUrl": "https://static.prsa.pl/61683e30-b030-4c32-b0d7-3bffbf96b7dc.mp3"
     },
     {
-      "id": "2025-02-12-ciezka-muza-z-miloscia-w-tle",
+      "id": "799726ce-dd56-49eb-bda3-752bdef669cd",
+      "slug": "2025-02-12-ciezka-muza-z-miloscia-w-tle",
+      "slugs": [
+        "2025-02-12-ciezka-muza-z-miloscia-w-tle"
+      ],
       "date": "2025-02-12",
       "title": "Ciężka muza z miłością w tle",
       "articleId": 3483430,
@@ -828,7 +1193,11 @@
       "audioUrl": "https://static.prsa.pl/799726ce-dd56-49eb-bda3-752bdef669cd.mp3"
     },
     {
-      "id": "2025-02-05-ciezko-na-sercu-5-lutego-godz-0004",
+      "id": "93e8a5c7-d0e7-4d84-af8f-37fa5c24bcf0",
+      "slug": "2025-02-05-ciezko-na-sercu-5-lutego-godz-0004",
+      "slugs": [
+        "2025-02-05-ciezko-na-sercu-5-lutego-godz-0004"
+      ],
       "date": "2025-02-05",
       "title": "Ciężko na sercu 5 lutego godz. 0004",
       "articleId": 3479906,
@@ -837,7 +1206,11 @@
       "audioUrl": "https://static.prsa.pl/93e8a5c7-d0e7-4d84-af8f-37fa5c24bcf0.mp3"
     },
     {
-      "id": "2025-01-29-ciezko-na-sercu-29-stycznia-godz-0005",
+      "id": "d9603fe6-4326-4c17-b482-f04c79441fa3",
+      "slug": "2025-01-29-ciezko-na-sercu-29-stycznia-godz-0005",
+      "slugs": [
+        "2025-01-29-ciezko-na-sercu-29-stycznia-godz-0005"
+      ],
       "date": "2025-01-29",
       "title": "Ciężko na sercu 29 stycznia godz. 0005",
       "articleId": 3476548,
@@ -846,7 +1219,11 @@
       "audioUrl": "https://static.prsa.pl/d9603fe6-4326-4c17-b482-f04c79441fa3.mp3"
     },
     {
-      "id": "2025-01-22-ciezko-na-sercu-22-stycznia-godz-0005",
+      "id": "a4672fcc-020a-433e-8d92-8d9da183de31",
+      "slug": "2025-01-22-ciezko-na-sercu-22-stycznia-godz-0005",
+      "slugs": [
+        "2025-01-22-ciezko-na-sercu-22-stycznia-godz-0005"
+      ],
       "date": "2025-01-22",
       "title": "Ciężko na sercu 22 stycznia godz. 0005",
       "articleId": 3473803,
@@ -855,7 +1232,11 @@
       "audioUrl": "https://static.prsa.pl/a4672fcc-020a-433e-8d92-8d9da183de31.mp3"
     },
     {
-      "id": "2025-01-15-ciezko-na-sercu-15-stycznia-godz-0005",
+      "id": "fc01f0ef-9926-4057-8fbe-1d15f9351beb",
+      "slug": "2025-01-15-ciezko-na-sercu-15-stycznia-godz-0005",
+      "slugs": [
+        "2025-01-15-ciezko-na-sercu-15-stycznia-godz-0005"
+      ],
       "date": "2025-01-15",
       "title": "Ciężko na sercu 15 stycznia godz. 0005",
       "articleId": 3470993,
@@ -864,7 +1245,11 @@
       "audioUrl": "https://static.prsa.pl/fc01f0ef-9926-4057-8fbe-1d15f9351beb.mp3"
     },
     {
-      "id": "2024-12-08-ciezko-na-sercu-8-stycznia-godz-0005",
+      "id": "3a309423-9d2b-429e-829b-92b7d784735d",
+      "slug": "2024-12-08-ciezko-na-sercu-8-stycznia-godz-0005",
+      "slugs": [
+        "2024-12-08-ciezko-na-sercu-8-stycznia-godz-0005"
+      ],
       "date": "2024-12-08",
       "title": "Ciężko na sercu 8 stycznia godz. 0005",
       "articleId": 3469925,
@@ -873,7 +1258,11 @@
       "audioUrl": "https://static.prsa.pl/3a309423-9d2b-429e-829b-92b7d784735d.mp3"
     },
     {
-      "id": "2024-12-04-ciezko-na-sercu-4-grudnia-godz-0005",
+      "id": "3ec3d08a-58c3-49a9-bae4-e49c5559bab8",
+      "slug": "2024-12-04-ciezko-na-sercu-4-grudnia-godz-0005",
+      "slugs": [
+        "2024-12-04-ciezko-na-sercu-4-grudnia-godz-0005"
+      ],
       "date": "2024-12-04",
       "title": "Ciężko na sercu 4 grudnia godz. 0005",
       "articleId": 3453949,
@@ -882,7 +1271,11 @@
       "audioUrl": "https://static.prsa.pl/3ec3d08a-58c3-49a9-bae4-e49c5559bab8.mp3"
     },
     {
-      "id": "2024-11-27-ciezko-na-sercu-27-listopada-godz-0005",
+      "id": "c212de95-87c3-4d9b-8894-fcc043e33c57",
+      "slug": "2024-11-27-ciezko-na-sercu-27-listopada-godz-0005",
+      "slugs": [
+        "2024-11-27-ciezko-na-sercu-27-listopada-godz-0005"
+      ],
       "date": "2024-11-27",
       "title": "Ciężko na sercu 27 listopada godz. 0005",
       "articleId": 3451580,
@@ -891,7 +1284,11 @@
       "audioUrl": "https://static.prsa.pl/c212de95-87c3-4d9b-8894-fcc043e33c57.mp3"
     },
     {
-      "id": "2024-11-20-ciezko-na-sercu-20-listopada-godz-0005",
+      "id": "bac7fc57-7b66-40f3-b398-cd1e3ed20bda",
+      "slug": "2024-11-20-ciezko-na-sercu-20-listopada-godz-0005",
+      "slugs": [
+        "2024-11-20-ciezko-na-sercu-20-listopada-godz-0005"
+      ],
       "date": "2024-11-20",
       "title": "Ciężko na sercu 20 listopada godz. 0005",
       "articleId": 3448469,
@@ -900,7 +1297,11 @@
       "audioUrl": "https://static.prsa.pl/bac7fc57-7b66-40f3-b398-cd1e3ed20bda.mp3"
     },
     {
-      "id": "2024-11-13-ciezko-na-sercu-13-listopada-godz-0005",
+      "id": "cbc6c91f-fe30-47b4-82ec-e440e0a449aa",
+      "slug": "2024-11-13-ciezko-na-sercu-13-listopada-godz-0005",
+      "slugs": [
+        "2024-11-13-ciezko-na-sercu-13-listopada-godz-0005"
+      ],
       "date": "2024-11-13",
       "title": "Ciężko na sercu 13 listopada godz. 0005",
       "articleId": 3451597,
@@ -909,7 +1310,11 @@
       "audioUrl": "https://static.prsa.pl/cbc6c91f-fe30-47b4-82ec-e440e0a449aa.mp3"
     },
     {
-      "id": "2024-10-30-ciezko-na-sercu-30-pazdziernika-godz-0005",
+      "id": "6a6b3644-a24c-41f1-bac3-cee04d120028",
+      "slug": "2024-10-30-ciezko-na-sercu-30-pazdziernika-godz-0005",
+      "slugs": [
+        "2024-10-30-ciezko-na-sercu-30-pazdziernika-godz-0005"
+      ],
       "date": "2024-10-30",
       "title": "Ciężko na sercu 30 października godz. 0005",
       "articleId": 3441000,
@@ -918,7 +1323,11 @@
       "audioUrl": "https://static.prsa.pl/6a6b3644-a24c-41f1-bac3-cee04d120028.mp3"
     },
     {
-      "id": "2024-10-16-ciezko-na-sercu-16-pazdziernika-godz-0006",
+      "id": "23962e70-9a64-4ca9-b498-7d856f1a8007",
+      "slug": "2024-10-16-ciezko-na-sercu-16-pazdziernika-godz-0006",
+      "slugs": [
+        "2024-10-16-ciezko-na-sercu-16-pazdziernika-godz-0006"
+      ],
       "date": "2024-10-16",
       "title": "Ciężko na sercu 16 października godz. 0006",
       "articleId": 3435939,
@@ -927,7 +1336,11 @@
       "audioUrl": "https://static.prsa.pl/23962e70-9a64-4ca9-b498-7d856f1a8007.mp3"
     },
     {
-      "id": "2024-10-02-ciezko-na-sercu-2-pazdziernika-godz-0006",
+      "id": "10869b4f-0f0e-4937-9050-595aa1464b0d",
+      "slug": "2024-10-02-ciezko-na-sercu-2-pazdziernika-godz-0006",
+      "slugs": [
+        "2024-10-02-ciezko-na-sercu-2-pazdziernika-godz-0006"
+      ],
       "date": "2024-10-02",
       "title": "Ciężko na sercu 2 października godz. 0006",
       "articleId": 3433316,
@@ -936,7 +1349,11 @@
       "audioUrl": "https://static.prsa.pl/10869b4f-0f0e-4937-9050-595aa1464b0d.mp3"
     },
     {
-      "id": "2024-09-25-ciezko-na-sercu-25-wrzesnia-godz-0005",
+      "id": "9f159c89-fc90-44f8-a05f-cc012b75d6ed",
+      "slug": "2024-09-25-ciezko-na-sercu-25-wrzesnia-godz-0005",
+      "slugs": [
+        "2024-09-25-ciezko-na-sercu-25-wrzesnia-godz-0005"
+      ],
       "date": "2024-09-25",
       "title": "Ciężko na sercu 25 września godz. 0005",
       "articleId": 3433313,
@@ -945,7 +1362,11 @@
       "audioUrl": "https://static.prsa.pl/9f159c89-fc90-44f8-a05f-cc012b75d6ed.mp3"
     },
     {
-      "id": "2024-09-18-ciezko-na-sercu-18-wrzesnia-godz-0006",
+      "id": "a6ea5c6a-e759-4cc8-8733-a697b0b1bbc5",
+      "slug": "2024-09-18-ciezko-na-sercu-18-wrzesnia-godz-0006",
+      "slugs": [
+        "2024-09-18-ciezko-na-sercu-18-wrzesnia-godz-0006"
+      ],
       "date": "2024-09-18",
       "title": "Ciężko na sercu 18 września godz. 0006",
       "articleId": 3433309,
@@ -954,7 +1375,11 @@
       "audioUrl": "https://static.prsa.pl/a6ea5c6a-e759-4cc8-8733-a697b0b1bbc5.mp3"
     },
     {
-      "id": "2024-09-11-ciezko-na-sercu-11-wrzesnia-godz-0006",
+      "id": "671ed5ff-0bfb-4935-9724-19e0b09a72c5",
+      "slug": "2024-09-11-ciezko-na-sercu-11-wrzesnia-godz-0006",
+      "slugs": [
+        "2024-09-11-ciezko-na-sercu-11-wrzesnia-godz-0006"
+      ],
       "date": "2024-09-11",
       "title": "Ciężko na sercu 11 września godz. 0006",
       "articleId": 3433305,
@@ -963,7 +1388,11 @@
       "audioUrl": "https://static.prsa.pl/671ed5ff-0bfb-4935-9724-19e0b09a72c5.mp3"
     },
     {
-      "id": "2024-07-10-ciezko-na-sercu-10-lipca-godz-0005",
+      "id": "4979c412-1662-4421-b637-6d2af2c65688",
+      "slug": "2024-07-10-ciezko-na-sercu-10-lipca-godz-0005",
+      "slugs": [
+        "2024-07-10-ciezko-na-sercu-10-lipca-godz-0005"
+      ],
       "date": "2024-07-10",
       "title": "Ciężko na sercu 10 lipca godz. 0005",
       "articleId": 3483495,
@@ -972,7 +1401,11 @@
       "audioUrl": "https://static.prsa.pl/4979c412-1662-4421-b637-6d2af2c65688.mp3"
     },
     {
-      "id": "2024-05-01-ciezko-na-sercu-1-maja-godz-0005",
+      "id": "4d8fa861-ceb5-4144-a023-5cf69a9cb951",
+      "slug": "2024-05-01-ciezko-na-sercu-1-maja-godz-0005",
+      "slugs": [
+        "2024-05-01-ciezko-na-sercu-1-maja-godz-0005"
+      ],
       "date": "2024-05-01",
       "title": "Ciężko na sercu 1 maja godz. 0005",
       "articleId": 3475823,

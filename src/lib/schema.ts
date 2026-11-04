@@ -11,7 +11,9 @@ export const catalogSchema = z.object({
   }),
   episodes: z.array(
     z.object({
-      id: z.string().min(1),
+      id: z.string().uuid(),
+      slug: z.string().min(1),
+      slugs: z.array(z.string().min(1)).min(1),
       date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
       title: z.string().min(1),
       articleId: z.number().nullable(),
