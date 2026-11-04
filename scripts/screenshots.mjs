@@ -6,10 +6,13 @@ import { chromium, firefox, webkit } from 'playwright';
 const BASE = process.env.BASE_URL ?? 'http://127.0.0.1:4321';
 const OUT = process.env.OUT_DIR ?? 'screenshots';
 const BROWSER = process.env.BROWSER ?? 'chromium';
-const PAGES = (process.env.PAGES ?? '/,/odcinki/2024-05-01-ciezko-na-sercu-1-maja-godz-0005/')
+// HOME zamiast "/" w danych wejściowych: Git Bash na Windows zamienia wartość
+// zaczynającą się od ukośnika na ścieżkę systemową, co psuło adres URL.
+const PAGES = (process.env.PAGES ?? 'HOME,/odcinki/2026-11-04-sluchamy-umarlych/')
   .split(',')
   .map((path) => path.trim())
-  .filter(Boolean);
+  .filter(Boolean)
+  .map((path) => (path === 'HOME' ? '/' : path));
 const VIEWPORTS = [
   { name: 'desktop', width: 1440, height: 900 },
   { name: 'mobile', width: 390, height: 844 },

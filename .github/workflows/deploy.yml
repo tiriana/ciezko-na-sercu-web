@@ -4,15 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-    inputs:
-      screenshots:
-        description: 'Zrzuty ekranu (3 systemy × 3 przeglądarki)'
-        type: boolean
-        default: false
-      screenshots_pages:
-        description: 'Ścieżki do zrzutów, rozdzielone przecinkami'
-        type: string
-        default: '/,/odcinki/2024-05-01-ciezko-na-sercu-1-maja-godz-0005/'
 
 permissions:
   contents: read
@@ -75,53 +66,3 @@ jobs:
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: npx --yes surge@$SURGE_VERSION dist "$SURGE_DOMAIN"
-
-  screenshots:
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.screenshots == 'true'
-    name: ${{ matrix.os }} / ${{ matrix.browser }}
-    runs-on: ${{ matrix.os }}
-    timeout-minutes: 20
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-24.04, macos-latest, windows-latest]
-        browser: [chromium, firefox, webkit]
-    steps:
-      - uses: actions/checkout@v5
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-
-      - run: npm ci
-
-      - run: npm run build
-
-      - name: Zainstaluj przeglądarkę (Linux)
-        if: runner.os == 'Linux'
-        run: npx playwright install --with-deps ${{ matrix.browser }}
-
-      - name: Zainstaluj przeglądarkę (macOS/Windows)
-        if: runner.os != 'Linux'
-        run: npx playwright install ${{ matrix.browser }}
-
-      - name: Zrzuty ekranu
-        shell: bash
-        env:
-          BROWSER: ${{ matrix.browser }}
-          PAGES: ${{ github.event.inputs.screenshots_pages }}
-        run: |
-          npx --yes http-server dist -p 4321 --silent &
-          for i in $(seq 1 30); do
-            curl -sf http://127.0.0.1:4321/ >/dev/null && break
-            sleep 1
-          done
-          node scripts/screenshots.mjs
-
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: screenshots-${{ matrix.os }}-${{ matrix.browser }}
-          path: screenshots/
-          if-no-files-found: warn
