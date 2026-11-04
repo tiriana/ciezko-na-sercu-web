@@ -40,13 +40,14 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
     <header class="ep-head">
       <p class="ep-head__date">{formatDate(entry.date)} · {formatWeekday(entry.date)} 00:05 · {catalog.program.station}</p>
       <h1>{episodeTitle}</h1>
-      {entry.titleKind !== 'official' && (
+      {entry.titleKind === 'unofficial' ? (
         <p class="title-note">
-          {entry.titleKind === 'unofficial' ? 'Tytuł nieoficjalny' : 'Tytuł techniczny z katalogu'}
-          {' · '}w katalogu: <span>{formatEpisodeTitle(entry.title)}</span>
-          {entry.titleNote && <> · {entry.titleNote}</>}
+          {entry.titleNote ?? 'Tytuł redakcyjny.'} · Tytuł oryginalny:{' '}
+          <span>{formatEpisodeTitle(entry.title)}</span>
         </p>
-      )}
+      ) : entry.titleKind === 'technical' ? (
+        <p class="title-note">Tytuł techniczny z katalogu — audycja nie ma własnego tytułu.</p>
+      ) : null}
       <div class="ep-head__meta">
         {episode ? (
           <>
