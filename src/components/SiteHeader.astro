@@ -1,6 +1,6 @@
 ---
 interface Props {
-  current?: 'episodes';
+  current?: 'episodes' | 'about';
 }
 
 const { current } = Astro.props;
@@ -15,7 +15,7 @@ const { current } = Astro.props;
     <nav class="site-nav" aria-label="Główna">
       <a href="/" aria-current={current === 'episodes' ? 'page' : undefined}>Odcinki</a>
       <a href="https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644">Audycja</a>
-      <a href="https://github.com/tiriana/ciezko-na-sercu-web">O projekcie</a>
+      <a href="/o-projekcie/" aria-current={current === 'about' ? 'page' : undefined}>O projekcie</a>
     </nav>
     <button
       class="icon-btn"

@@ -1,0 +1,77 @@
+---
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import Base from '../layouts/Base.astro';
+
+const title = 'O projekcie — Ciężko na sercu';
+const description = 'Skąd wziął się katalog audycji „Ciężko na sercu" i jak traktujemy nagrania oraz muzykę.';
+---
+
+<Base {title} {description}>
+  <SiteHeader />
+
+  <main class="wrap about">
+    <h1>O projekcie</h1>
+
+    <p>
+      Strona powstała dzięki mojej córce, która zniszczyła gniazdo ładowania w moim telefonie, próbując
+      podłączyć USB&nbsp;C. Telefon poszedł do naprawy, a ja kupiłem sobie padło-fon zastępczy za 54 zł.
+      Z braku kolorowego ekranu rozpraszającego mnie przed snem sprawdziłem wszystkie funkcje rozrywkowe
+      mojego nowego padło-fonu i znalazłem RADIO! Radio, pomyślałem — to w ogóle jeszcze istnieje?!?!
+      No dobra, włączmy i pośmiejemy się.
+    </p>
+
+    <p>
+      Jakież było moje zaskoczenie, gdy uszy moje nawiedziły bardzo miłe memu sercu dźwięki wyziewów
+      piekielnych. Przez chwilę pomyślałem, że to jakiś błąd i telefon łapie szum fal AM, ale nie — to był
+      black metal. Była to akurat środa około 1:00 w nocy, a audycją, którą tak bardzo przypadkowo
+      odkryłem, było „Ciężko na sercu”. Nie powiem, że się od razu zakochałem, ale zafascynowało mnie to,
+      że aż tak wesołe dźwięki wyziewów piekielnych można posłuchać w radiu i to w Polskim Radiu, i to
+      w Trójce.
+    </p>
+
+    <p>
+      Ku mojej radości na stronie radia znalazłem na tamten czas 100 odcinków programu. Mam wrażenie, że
+      nie są to wszystkie, ponieważ w którejś z audycji prowadzący mówi coś o prowadzeniu jej już od pół
+      roku, a to była audycja dopiero z pierwszych tygodni — według katalogu ze strony. Zacząłem słuchać
+      starych audycji na stronie, ale to było dość niewygodne, szczególnie na telefonie. Dlatego napisałem
+      sobie skrypt, który pobrał wszystkie audycje jako pliki mp3, i odtąd słuchałem ich na telefonie,
+      majsterkując w piwnicy.
+    </p>
+
+    <p>
+      Z czasem przyszła mi do głowy myśl, żeby uhonorować pracę redaktora i producenta i stworzyć katalog
+      wszystkich audycji (dobra, z tym uhonorowaniem to trochę ściema, bo tak naprawdę chciałem móc
+      wyszukiwać audycje po zespołach, których utwory były w nich puszczane, ale niech będzie, że chodzi
+      o to uhonorowanie — niech mają chłopaki). I tak oto jesteśmy tutaj.
+    </p>
+
+    <p>
+      Program jest według mnie bardzo dobry, na pewno ciekawy i wyjątkowy, dlatego mam nadzieję, że mój
+      skromny wkład przyczyni się do jego spopularyzowania, bo naprawdę warto posłuchać — jeśli nie na
+      żywo, bo pora barbarzyńska, to później na stronie Polskiego Radia albo na katalogu Ciężko na sercu.
+    </p>
+
+    <h2>Nagrania i muzyka</h2>
+
+    <p>
+      Uwaga: kopie audycji robię tylko na użytek prywatny oraz żeby tagować je przy pomocy agentów AI.
+      Muzyka, której możecie słuchać na stronach ze szczegółami audycji, pochodzi bezpośrednio z zasobów
+      Polskiego Radia — to zwyczajny hiperlink audio. Według mojej znikomej, w porywach do ograniczonej,
+      wiedzy prawnej takie użycie jest ok, ale jeśli jesteś prawnikiem Polskiego Radia, to zanim puścisz
+      mnie z torbami, napisz proszę do mnie z informacją, żeby nie odtwarzać waszej muzyki przez moją
+      stronę. Tak w ogóle, jeśli wasz player na stronie pozwalałby na linkowanie do konkretnego momentu
+      w utworze, to w ogóle nie kombinowałbym z puszczaniem audio na mojej stronie, ale wasz player
+      trochę ssie pałę i nie pozwala na takie coś. Pokój.
+    </p>
+
+    <h2>Kod</h2>
+
+    <p>
+      Strona, downloader i tagger są w prywatnych repozytoriach, bo leżą tam też dane o odcinkach:
+      <a href="https://github.com/tiriana/ciezko-na-sercu-web">tiriana/ciezko-na-sercu-web</a>.
+    </p>
+  </main>
+
+  <SiteFooter />
+</Base>

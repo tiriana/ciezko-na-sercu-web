@@ -1150,3 +1150,25 @@ a {
   color: var(--accent);
   text-decoration-color: currentColor;
 }
+
+/* O projekcie */
+
+.about {
+  max-width: 720px;
+  padding-top: 48px;
+  padding-bottom: 72px;
+  line-height: 1.7;
+}
+
+.about h1 {
+  margin: 0 0 28px;
+}
+
+.about h2 {
+  margin: 40px 0 12px;
+  font-size: 1.15rem;
+}
+
+.about p {
+  margin: 0 0 18px;
+}
