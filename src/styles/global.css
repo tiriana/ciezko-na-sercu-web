@@ -1332,3 +1332,9 @@ a {
     text-align: left;
   }
 }
+
+/* Karta bez opracowania stoi bezpośrednio pod nagłówkiem, a nagłówek ma border-bottom;
+   bez odstępu zaokrąglony róg karty stykał się z tą linią i wyglądał na urwany. */
+.card--planned {
+  margin-top: 34px;
+}
