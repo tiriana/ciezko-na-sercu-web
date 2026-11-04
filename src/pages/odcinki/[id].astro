@@ -14,8 +14,6 @@ const { entry } = Astro.props;
 const [catalog, files] = await Promise.all([getCatalog(), getEpisodeFiles()]);
 const episode = files.get(entry.id);
 
-const fromBoth = episode?.tracks.filter((track) => track.sources.length > 1).length ?? 0;
-const fromSoundOnly = episode?.tracks.filter((track) => track.sources.length === 1 && track.sources[0] === 'shazam').length ?? 0;
 const speechSec = episode?.durationSec
   ? episode.durationSec - (episode.tracks.reduce((sum, track) => sum + track.durationSec, 0) || 0)
   : null;
@@ -183,8 +181,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <div><dt>Opracowano</dt><dd>{formatDate(episode.analyzedAt)}</dd></div>
               {speechSec && <div><dt>Mowa</dt><dd>{formatClock(speechSec)}</dd></div>}
               <div><dt>Utwory</dt><dd>{episode.tracks.length}</dd></div>
-              <div><dt>Z dźwięku i zapowiedzi</dt><dd>{fromBoth}</dd></div>
-              <div><dt>Tylko z dźwięku</dt><dd>{fromSoundOnly}</dd></div>
               <div><dt>Zapowiedzi w audycji</dt><dd>{episode.quotes.length}</dd></div>
             </dl>
           </section>
