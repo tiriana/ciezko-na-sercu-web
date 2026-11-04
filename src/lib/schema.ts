@@ -49,6 +49,25 @@ export const episodeSchema = z.object({
     .default([]),
 });
 
+// Ręczne poprawki do opracowań. Trzymamy je osobno od data/episodes, bo import z taggera
+// nadpisuje tamte pliki bezwarunkowo, a korekta redakcyjna nie może zniknąć.
+export const overrideSchema = z.object({
+  version: z.number().default(1),
+  tracks: z
+    .array(
+      z.object({
+        artist: z.string().optional(),
+        title: z.string().optional(),
+        album: z.string().optional(),
+        start: z.number().optional(),
+        durationSec: z.number().optional(),
+      })
+    )
+    .default([]),
+});
+
+export type TrackOverride = z.infer<typeof overrideSchema>['tracks'][number];
+
 export type Catalog = z.infer<typeof catalogSchema>;
 export type CatalogEpisode = Catalog['episodes'][number];
 export type Episode = z.infer<typeof episodeSchema>;

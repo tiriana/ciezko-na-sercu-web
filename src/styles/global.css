@@ -1048,18 +1048,52 @@ a {
     width: auto;
   }
 
+  /* Na wąskim ekranie wiersz to siatka: przycisk | wykonawca i tytuł | czasy.
+     Album zostaje ukryty, bo powtarza tytuł, a czasy stoją obok siebie w prawej kolumnie. */
   .tracks tr {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    align-items: start;
+    gap: 0 12px;
     padding: 12px 0;
     border-bottom: 1px solid var(--line);
   }
 
   .tracks td {
-    padding: 2px 0;
+    padding: 0;
     border: 0;
   }
 
-  .tracks__time {
-    text-align: left;
+  .tracks td:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .tracks td:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .tracks td.tracks__album {
+    display: none;
+  }
+
+  .tracks td:nth-child(4) {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: right;
+  }
+
+  .tracks td:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: right;
+    color: var(--muted);
+  }
+
+  .tracks__artist {
+    font-size: 15px;
   }
 }
 
@@ -1104,10 +1138,30 @@ a {
   width: min(100%, 420px);
 }
 
-.audio-bar__hint {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
+.audio-bar__skips {
+  display: flex;
+  gap: 6px;
+}
+
+.skip {
+  min-width: 38px;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.skip:hover,
+.skip:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .track-play {
@@ -1125,12 +1179,15 @@ a {
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 
-/* Trójkąt ma środek ciężkości w lewej połowie, więc sam flex-box centruje go optycznie
-   w prawo; margines wyrównuje to względem okręgu. */
 .track-play__icon {
   display: block;
   width: 9px;
   height: 11px;
+}
+
+/* Trójkąt ma środek ciężkości w lewej połowie, więc flex-box centruje go optycznie
+   w prawo; margines wyrównuje tylko jego. Dwie belki pauzy są symetryczne i nie ruszamy. */
+.track-play__icon--play {
   margin-left: 2px;
 }
 

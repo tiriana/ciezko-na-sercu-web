@@ -102,7 +102,12 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
             {entry.audioUrl && (
               <div class="audio-bar">
                 <audio controls preload="none" src={entry.audioUrl} data-episode-audio></audio>
-                <p class="audio-bar__hint">Kliknij ikonę odtwarzania przy utworze, żeby zacząć od jego początku.</p>
+                <div class="audio-bar__skips" role="group" aria-label="Przewijanie">
+                  <button class="skip" type="button" data-skip="-15" aria-label="Cofnij 15 sekund">−15</button>
+                  <button class="skip" type="button" data-skip="-5" aria-label="Cofnij 5 sekund">−5</button>
+                  <button class="skip" type="button" data-skip="5" aria-label="Przewiń 5 sekund">+5</button>
+                  <button class="skip" type="button" data-skip="15" aria-label="Przewiń 15 sekund">+15</button>
+                </div>
               </div>
             )}
 
@@ -219,10 +224,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                 {episode.credits.map((credit) => (
                   <div>
                     <dt>{formatRole(credit.role)}</dt>
-                    <dd>
-                      {credit.name}
-                      {credit.quote && <span class="credit__quote"> — „{credit.quote}"</span>}
-                    </dd>
+                    <dd>{credit.name}</dd>
                   </div>
                 ))}
               </dl>

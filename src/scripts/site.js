@@ -114,6 +114,15 @@ if (audio) {
   // W tle przeglądarka ogranicza timeupdate — po powrocie do karty stan dosynchronizowuje się tutaj.
   document.addEventListener('visibilitychange', sync);
 
+  for (const button of document.querySelectorAll('[data-skip]')) {
+    const delta = Number(button.dataset.skip);
+    button.addEventListener('click', () => {
+      const limit = Number.isFinite(audio.duration) ? audio.duration : audio.currentTime + delta;
+      audio.currentTime = Math.min(Math.max(0, audio.currentTime + delta), limit);
+      sync();
+    });
+  }
+
   for (const button of players) {
     const start = Number(button.dataset.trackStart);
     button.addEventListener('click', () => {
