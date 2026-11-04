@@ -3,3 +3,7 @@ dist/
 .astro/
 .surge/
 *.local.json
+
+# Artefakty narzędzi lokalnych
+.playwright-mcp/
+.cortexkit/
