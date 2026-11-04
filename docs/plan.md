@@ -126,6 +126,7 @@ Zasady modelu:
 4. `confidence` i `sources` są widoczne w UI — rozpoznanie z zapowiedzi bywa błędne, a strona
    nie może tego ukrywać.
 5. Transkrypt **nie wchodzi** do modelu strony (patrz §8). Zostaje artefaktem narzędzia.
+6. `sourceUrl` jest wyliczany z `mp3Url` (UUID pliku) i nie jest przechowywany — patrz §9.5.
 
 `data/schedule.json` — konfiguracja, nie lista dat:
 
@@ -215,10 +216,11 @@ To nie jest opinia prawna, tylko lista decyzji do potwierdzenia przed publikacj�
    między buildami; usuwanie opracowania razem z odcinkiem nie może być automatyczne.
 4. **Jakość rozpoznawania.** Shazam zawodzi na koncertach i niszowych nagraniach; strona pokazuje
    pewność i źródło, ale i tak potrzebna będzie ręczna korekta wpisów (M4).
-5. **Link do odcinka w Polskim Radiu — odłożony przez właściciela.** `articleId` nie trafia do
-   URL-i serwisu, a strona odcinka renderuje się po stronie klienta, więc nie da się jej
-   rozwiązać z `curl`. Do czasu rozwiązania `sourceUrl` zostaje `null`, a UI linkuje do strony
-   audycji.
+5. **Link do odcinka w Polskim Radiu — rozwiązany.** Adres ma postać
+   `https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/<slug>,<uuid>`.
+   Ostatni segment to UUID pliku MP3, więc daje się wyprowadzić z `mp3Url` w `episodes.json`.
+   Slug jest kosmetyczny: sprawdzone, że dowolny slug przy poprawnym UUID zwraca właściwy
+   odcinek. `sourceUrl` liczymy w buildzie, nie przechowujemy.
 
 ## 10. Kamienie milowe
 
@@ -243,7 +245,7 @@ bo nie ma czego planować bez schematu opracowania.
 1. Tagger jest POC — wolno go przepisać, a schemat tej strony jest kontraktem (§3).
 2. Downloader jest kompletny — nie zmieniamy go; katalog generujemy przez uruchomienie go
    w trybie bez pobierania audio.
-3. Linki do odcinków w Polskim Radiu: odłożone, nie blokują prac.
+3. Linki do odcinków w Polskim Radiu: rozwiązane, adres wyprowadzamy z UUID pliku MP3 (§9.5).
 
 ### Do podjęcia
 

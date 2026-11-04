@@ -1,0 +1,250 @@
+- generic [active] [ref=f23e1]:
+  - banner [ref=f23e2]:
+    - generic [ref=f23e3]:
+      - link "Ciężko na sercu indeks audycji" [ref=f23e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=f23e5]: Ciężko na sercu
+        - generic [ref=f23e6]: indeks audycji
+      - navigation "Główna" [ref=f23e7]:
+        - link "Odcinki" [ref=f23e8] [cursor=pointer]:
+          - /url: index.html
+        - link "Wykonawcy" [ref=f23e9] [cursor=pointer]:
+          - /url: "#"
+        - link "O projekcie" [ref=f23e10] [cursor=pointer]:
+          - /url: "#"
+      - button "Przełącz motyw" [ref=f23e11] [cursor=pointer]
+  - main [ref=f23e15]:
+    - navigation "Ścieżka" [ref=f23e16]:
+      - link "Odcinki" [ref=f23e17] [cursor=pointer]:
+        - /url: index.html
+      - generic [aria-hidden] [ref=f23e18]: /
+      - generic [ref=f23e19]: "2024"
+      - generic [aria-hidden] [ref=f23e20]: /
+      - generic [ref=f23e21]: maj
+    - generic [ref=f23e22]:
+      - paragraph [ref=f23e23]: 1 maja 2024 · środa 00:05
+      - heading "Ciężko na sercu 1 maja godz. 0005" [level=1] [ref=f23e24]
+      - generic [ref=f23e25]:
+        - generic [ref=f23e26]: opracowany
+        - generic [ref=f23e27]: 1:53:38
+        - generic [ref=f23e28]: 15 utworów
+        - generic [ref=f23e29]: 22 zapowiedzi
+        - link "Odcinek w Polskim Radiu ↗" [ref=f23e30] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/ciezko-na-sercu-1-maja-godz-0005,4d8fa861-ceb5-4144-a023-5cf69a9cb951
+    - generic [ref=f23e31]:
+      - generic [ref=f23e32]:
+        - region [ref=f23e33]:
+          - heading "Tracklista" [level=2] [ref=f23e34]
+          - paragraph [ref=f23e35]: 15 utworów · czasy dotyczą początku utworu w audycji
+          - table [ref=f23e36]:
+            - rowgroup [ref=f23e37]:
+              - row [ref=f23e38]:
+                - columnheader "#" [ref=f23e39]
+                - columnheader "Wykonawca / tytuł" [ref=f23e40]
+                - columnheader "Album" [ref=f23e41]
+                - columnheader "Czas" [ref=f23e42]
+            - rowgroup [ref=f23e43]:
+              - row [ref=f23e44]:
+                - cell "1" [ref=f23e45]
+                - cell "White Ward Cronus zapowiedź + dźwięk" [ref=f23e46]:
+                  - generic [ref=f23e47]: White Ward
+                  - generic [ref=f23e48]: Cronus
+                  - generic [ref=f23e49]: zapowiedź + dźwięk
+                - cell "False Light" [ref=f23e50]
+                - cell "6:12" [ref=f23e51]
+              - row [ref=f23e52]:
+                - cell "2" [ref=f23e53]
+                - cell "Knoll Fettered Oath tylko dźwięk" [ref=f23e54]:
+                  - generic [ref=f23e55]: Knoll
+                  - generic [ref=f23e56]: Fettered Oath
+                  - generic [ref=f23e57]: tylko dźwięk
+                - cell "As Spoken" [ref=f23e58]
+                - cell "1:31" [ref=f23e59]
+              - row [ref=f23e60]:
+                - cell "3" [ref=f23e61]
+                - cell "Chelsea Wolfe Dusk zapowiedź + dźwięk" [ref=f23e62]:
+                  - generic [ref=f23e63]: Chelsea Wolfe
+                  - generic [ref=f23e64]: Dusk
+                  - generic [ref=f23e65]: zapowiedź + dźwięk
+                - cell "She Reaches Out To She Reaches Out To She" [ref=f23e66]
+                - cell "4:19" [ref=f23e67]
+              - row [ref=f23e68]:
+                - cell "4" [ref=f23e69]
+                - cell "Hexvessel The Tundra Is Awake zapowiedź + dźwięk" [ref=f23e70]:
+                  - generic [ref=f23e71]: Hexvessel
+                  - generic [ref=f23e72]: The Tundra Is Awake
+                  - generic [ref=f23e73]: zapowiedź + dźwięk
+                - cell "Polar Veil" [ref=f23e74]
+                - cell "4:37" [ref=f23e75]
+              - row [ref=f23e76]:
+                - cell "5" [ref=f23e77]
+                - cell "Lord Spikeheart 33rd Degree Access (feat. Backxwash, SAIONJI BBBBBBB) zapowiedź + dźwięk" [ref=f23e78]:
+                  - generic [ref=f23e79]: Lord Spikeheart
+                  - generic [ref=f23e80]: 33rd Degree Access (feat. Backxwash, SAIONJI BBBBBBB)
+                  - generic [ref=f23e81]: zapowiedź + dźwięk
+                - cell "The Adept" [ref=f23e82]
+                - cell "1:07" [ref=f23e83]
+              - row [ref=f23e84]:
+                - cell "6" [ref=f23e85]
+                - cell "Lord Spikeheart Acts of God (feat. Vulture Thrust, Bidimensional Gangsta) zapowiedź + dźwięk" [ref=f23e86]:
+                  - generic [ref=f23e87]: Lord Spikeheart
+                  - generic [ref=f23e88]: Acts of God (feat. Vulture Thrust, Bidimensional Gangsta)
+                  - generic [ref=f23e89]: zapowiedź + dźwięk
+                - cell "The Adept" [ref=f23e90]
+                - cell "2:28" [ref=f23e91]
+              - row [ref=f23e92]:
+                - cell "7" [ref=f23e93]
+                - cell "Couch Slut Downhill Racer zapowiedź + dźwięk" [ref=f23e94]:
+                  - generic [ref=f23e95]: Couch Slut
+                  - generic [ref=f23e96]: Downhill Racer
+                  - generic [ref=f23e97]: zapowiedź + dźwięk
+                - cell "You Could Do It Tonight" [ref=f23e98]
+                - cell "3:28" [ref=f23e99]
+              - row [ref=f23e100]:
+                - cell "8" [ref=f23e101]
+                - cell "Body Void Flesh Market zapowiedź + dźwięk" [ref=f23e102]:
+                  - generic [ref=f23e103]: Body Void
+                  - generic [ref=f23e104]: Flesh Market
+                  - generic [ref=f23e105]: zapowiedź + dźwięk
+                - cell "Atrocity Machine" [ref=f23e106]
+                - cell "6:31" [ref=f23e107]
+              - row [ref=f23e108]:
+                - cell "9" [ref=f23e109]
+                - cell "Body Void Burn zapowiedź + dźwięk" [ref=f23e110]:
+                  - generic [ref=f23e111]: Body Void
+                  - generic [ref=f23e112]: Burn
+                  - generic [ref=f23e113]: zapowiedź + dźwięk
+                - cell "Burn the Homes of Those Who Seek To Control Our Bodies" [ref=f23e114]
+                - cell "8:05" [ref=f23e115]
+              - row [ref=f23e116]:
+                - cell "10" [ref=f23e117]
+                - cell "Neptunian Maximalism Magická Džungľa tylko dźwięk" [ref=f23e118]:
+                  - generic [ref=f23e119]: Neptunian Maximalism
+                  - generic [ref=f23e120]: Magická Džungľa
+                  - generic [ref=f23e121]: tylko dźwięk
+                - cell "Éons" [ref=f23e122]
+                - cell "5:22" [ref=f23e123]
+              - row [ref=f23e124]:
+                - cell "11" [ref=f23e125]
+                - cell "Inter Arma Desolation's Harp tylko dźwięk" [ref=f23e126]:
+                  - generic [ref=f23e127]: Inter Arma
+                  - generic [ref=f23e128]: Desolation's Harp
+                  - generic [ref=f23e129]: tylko dźwięk
+                - cell "New Heaven" [ref=f23e130]
+                - cell "4:27" [ref=f23e131]
+              - row [ref=f23e132]:
+                - cell "12" [ref=f23e133]
+                - cell "Blood Incantation Slave Species of the Gods zapowiedź + dźwięk" [ref=f23e134]:
+                  - generic [ref=f23e135]: Blood Incantation
+                  - generic [ref=f23e136]: Slave Species of the Gods
+                  - generic [ref=f23e137]: zapowiedź + dźwięk
+                - cell "Hidden History of the Human Race" [ref=f23e138]
+                - cell "5:26" [ref=f23e139]
+              - row [ref=f23e140]:
+                - cell "13" [ref=f23e141]
+                - cell "Doom Police Bastard zapowiedź + dźwięk" [ref=f23e142]:
+                  - generic [ref=f23e143]: Doom
+                  - generic [ref=f23e144]: Police Bastard
+                  - generic [ref=f23e145]: zapowiedź + dźwięk
+                - cell "Total Doom" [ref=f23e146]
+                - cell "1:24" [ref=f23e147]
+              - row [ref=f23e148]:
+                - cell "14" [ref=f23e149]
+                - cell "Doom Agree To Differ zapowiedź mówi o innym utworze" [ref=f23e150]:
+                  - generic [ref=f23e151]: Doom
+                  - generic [ref=f23e152]: Agree To Differ
+                  - generic [ref=f23e153]: zapowiedź mówi o innym utworze
+                - cell "25 Years of Crust" [ref=f23e154]
+                - cell "5:13" [ref=f23e155]
+              - row [ref=f23e156]:
+                - cell "15" [ref=f23e157]
+                - cell "Khanate It Wants to Fly tylko dźwięk" [ref=f23e158]:
+                  - generic [ref=f23e159]: Khanate
+                  - generic [ref=f23e160]: It Wants to Fly
+                  - generic [ref=f23e161]: tylko dźwięk
+                - cell "To Be Cruel" [ref=f23e162]
+                - cell "19:18" [ref=f23e163]
+          - generic [ref=f23e164]:
+            - strong [ref=f23e165]: "Bloki muzyczne: 16."
+            - generic [ref=f23e166]: Wszystkie rozpoznane. Wpis 14 ma niską pewność — zapowiedź wskazywała inny utwór, więc tytuł pochodzi wyłącznie z rozpoznania dźwięku.
+        - region [ref=f23e167]:
+          - heading "Tematy" [level=2] [ref=f23e168]
+          - paragraph [ref=f23e169]: 6 z 18 wątków, z czasem wejścia
+          - list [ref=f23e170]:
+            - listitem [ref=f23e171]:
+              - time [ref=f23e172]: 6:30
+              - paragraph [ref=f23e173]: Wprowadzenie i zapowiedź, że audycja będzie poświęcona festiwalowi Roadburn.
+            - listitem [ref=f23e174]:
+              - time [ref=f23e175]: 9:00
+              - paragraph [ref=f23e176]: Opis koncertów i artystów występujących na Roadburn 2024, m.in. White World, Noru, Chelsea Wolfe.
+            - listitem [ref=f23e177]:
+              - time [ref=f23e178]: 15:10
+              - paragraph [ref=f23e179]: Szczegółowa dyskusja o Hexvessel, ich albumie „Polar Veil” i tradycji festiwalu.
+            - listitem [ref=f23e180]:
+              - time [ref=f23e181]: 20:28
+              - paragraph [ref=f23e182]: Prezentacja solowej płyty Lorda Spikearta „The Adept” oraz gości i współpracowników.
+            - listitem [ref=f23e183]:
+              - time [ref=f23e184]: 26:20
+              - paragraph [ref=f23e185]: Osobista historia prababci prowadzącej walkę o niepodległość Kenii i jej wpływ na twórczość.
+            - listitem [ref=f23e186]:
+              - time [ref=f23e187]: 27:57
+              - paragraph [ref=f23e188]: Martin i powstanie wytwórni Hekalu Records oraz jej znaczenie.
+      - complementary [ref=f23e189]:
+        - region [ref=f23e190]:
+          - heading "Streszczenie" [level=2] [ref=f23e191]
+          - paragraph [ref=f23e192]: "Cały odcinek poświęcony jest festiwalowi Roadburn: jego historii, atmosferze i koncertom, które prowadzący uznał za najciekawsze. W relacjach pojawiają się White Ward, Knoll, Chelsea Wolfe i Hexvessel."
+          - paragraph [ref=f23e193]: Osobny wątek to solowa płyta Lorda Spikearta „The Adept” oraz historia rodzinna prowadzącego, która stała się punktem wyjścia do rozmowy o afrykańskiej scenie muzycznej i wydawnictwie Hekalu Records.
+          - generic [ref=f23e194]: Streszczenie jest szkicem z modelu i wymaga redakcji przed publikacją. Wersja surowa powtarza wątki — skraca się ją ręcznie.
+        - region [ref=f23e195]:
+          - heading "Jak to powstało" [level=2] [ref=f23e196]
+          - generic [ref=f23e197]:
+            - generic [ref=f23e198]:
+              - term [ref=f23e199]: Opracowano
+              - definition [ref=f23e200]: 5.11.2026
+            - generic [ref=f23e201]:
+              - term [ref=f23e202]: Mowa
+              - definition [ref=f23e203]: 34:50
+            - generic [ref=f23e204]:
+              - term [ref=f23e205]: Utwory
+              - definition [ref=f23e206]: "15"
+            - generic [ref=f23e207]:
+              - term [ref=f23e208]: Z dźwięku i zapowiedzi
+              - definition [ref=f23e209]: "10"
+            - generic [ref=f23e210]:
+              - term [ref=f23e211]: Tylko z dźwięku
+              - definition [ref=f23e212]: "5"
+            - generic [ref=f23e213]:
+              - term [ref=f23e214]: Zapowiedzi w audycji
+              - definition [ref=f23e215]: "22"
+        - generic [ref=f23e216]:
+          - heading "Odtwarzanie" [level=2] [ref=f23e217]
+          - paragraph [ref=f23e218]: Odcinek jest dostępny w serwisie Polskiego Radia.
+          - link "Otwórz audycję ↗" [ref=f23e219] [cursor=pointer]:
+            - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644
+  - contentinfo [ref=f23e220]:
+    - generic [ref=f23e221]:
+      - generic [ref=f23e222]:
+        - paragraph [ref=f23e223]: Ciężko na sercu
+        - paragraph [ref=f23e224]: Nieoficjalny indeks audycji. Nie publikujemy nagrań ani treści audycji — linki prowadzą do serwisu Polskiego Radia, gdzie odcinki są dostępne legalnie.
+      - generic [ref=f23e225]:
+        - heading "Nawigacja" [level=3] [ref=f23e226]
+        - list [ref=f23e227]:
+          - listitem [ref=f23e228]:
+            - link "Lista odcinków" [ref=f23e229] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f23e230]:
+            - link "Przykładowe opracowanie" [ref=f23e231] [cursor=pointer]:
+              - /url: episode.html
+          - listitem [ref=f23e232]:
+            - link "Odcinek bez opracowania" [ref=f23e233] [cursor=pointer]:
+              - /url: episode-planned.html
+      - generic [ref=f23e234]:
+        - heading "Projekt" [level=3] [ref=f23e235]
+        - list [ref=f23e236]:
+          - listitem [ref=f23e237]:
+            - link "Repozytorium" [ref=f23e238] [cursor=pointer]:
+              - /url: https://github.com/tiriana/ciezko-na-sercu-web
+          - listitem [ref=f23e239]:
+            - link "Audycja w Trójce" [ref=f23e240] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644
+          - listitem [ref=f23e241]: "Mockup: dane demonstracyjne"

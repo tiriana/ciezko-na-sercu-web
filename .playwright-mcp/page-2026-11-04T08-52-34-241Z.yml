@@ -1,0 +1,272 @@
+- generic [active] [ref=f18e1]:
+  - link [ref=f18e489] [cursor=pointer]:
+    - /url: "#"
+  - generic [ref=f18e2]:
+    - generic [ref=f18e4]:
+      - generic [ref=f18e5]:
+        - link "Jedynka" [ref=f18e6] [cursor=pointer]:
+          - /url: https://jedynka.polskieradio.pl/
+        - link "Dwójka" [ref=f18e7] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/8,Dwojka
+        - link "Trójka" [ref=f18e8] [cursor=pointer]:
+          - /url: https://trojka.polskieradio.pl/
+        - link "Czwórka" [ref=f18e9] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/10,Czworka
+        - link "Polskie Radio 24" [ref=f18e10] [cursor=pointer]:
+          - /url: https://polskieradio24.pl/
+      - button "Pokaż więcej stacji" [ref=f18e11] [cursor=pointer]
+    - banner [ref=f18e15]:
+      - link "Strona główna Polskiego Radia" [ref=f18e17] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f18e21]:
+        - generic [ref=f18e22]:
+          - link "Słuchowiska" [ref=f18e23] [cursor=pointer]:
+            - /url: /podcasty/sluchowiska
+          - link "Dla dzieci" [ref=f18e24] [cursor=pointer]:
+            - /url: /podcasty/dla-dzieci
+          - link "Publicystyka" [ref=f18e25] [cursor=pointer]:
+            - /url: /podcasty/publicystyka
+          - link "Historia" [ref=f18e26] [cursor=pointer]:
+            - /url: /podcasty/historia
+          - link "Reportaże" [ref=f18e27] [cursor=pointer]:
+            - /url: /podcasty/reportaze
+          - link "Audiobooki" [ref=f18e28] [cursor=pointer]:
+            - /url: /podcasty/audiobooki
+          - link "Obcojęzyczne" [ref=f18e29] [cursor=pointer]:
+            - /url: /podcasty/obcojezyczne
+        - button [ref=f18e31] [cursor=pointer]
+  - main [ref=f18e35]:
+    - generic [ref=f18e37]:
+      - generic [ref=f18e38]:
+        - img "Ciężko na Sercu" [ref=f18e39]
+        - generic [ref=f18e41]:
+          - generic [ref=f18e42]:
+            - link "Polskie Radio" [ref=f18e43] [cursor=pointer]:
+              - /url: /
+            - link "Trójka" [ref=f18e46] [cursor=pointer]:
+              - /url: /trojka
+            - link "Audycje" [ref=f18e49] [cursor=pointer]:
+              - /url: /trojka/audycje
+            - generic [ref=f18e52]: Ciężko na Sercu
+          - generic [ref=f18e53]:
+            - generic [ref=f18e54]:
+              - img "Ciężko na Sercu" [ref=f18e56]
+              - generic [ref=f18e58]:
+                - generic [ref=f18e59]:
+                  - paragraph [ref=f18e60]: Najbliższy odcinek
+                  - generic [ref=f18e61]: 11.11.2026
+                - generic [ref=f18e66]:
+                  - paragraph [ref=f18e67]: Godzina emisji
+                  - generic [ref=f18e68]: 00:05
+            - generic [ref=f18e74]:
+              - heading "Ciężko na Sercu" [level=2] [ref=f18e75]
+              - button [ref=f18e77] [cursor=pointer]
+              - generic [ref=f18e81]: Opis audycji
+              - paragraph [ref=f18e84]:
+                - text: Audycja dla wszystkich, którym serce bije szybciej przy szeroko pojmowanej muzyce ekstremalnej, ciężkiej, brutalnej. Tu gra metal w pełnym swoim spektrum, od liczącego pół wieku z okładem kanonu po tych, co dziś poszerzają granice gatunku łącząc go z elektroniką, jazzem czy muzyką źródeł. W środę od 0:05 do 2:00, znajdujemy też miejsce na dźwięki metalowe raczej z duc...
+                - generic [ref=f18e85] [cursor=pointer]
+              - generic [ref=f18e88]:
+                - text: "Prowadzi:"
+                - paragraph [ref=f18e89]: Jarek Szubrycht
+      - generic [ref=f18e90]:
+        - generic [ref=f18e91]: Odcinki
+        - generic [ref=f18e95]:
+          - generic [ref=f18e97]:
+            - link [ref=f18e98] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/sluchamy-umarlych,9dde4bc8-00d6-48f1-98d5-8c62f5ee0dcc
+              - heading "Słuchamy umarłych" [level=4] [ref=f18e99]
+            - generic [ref=f18e100]:
+              - generic [ref=f18e101]: 04.11.2026
+              - generic [ref=f18e106]: 00:05
+            - generic [ref=f18e112]:
+              - generic "Share" [ref=f18e113]:
+                - button [ref=f18e115] [cursor=pointer]
+              - button "Add" [ref=f18e120] [cursor=pointer]
+              - button "Play" [ref=f18e125] [cursor=pointer]
+          - generic [ref=f18e129]:
+            - link [ref=f18e130] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/przy-czym-pomachamy-lbem-w-listopadzie,82d57411-285b-4714-b434-8cac32f42954
+              - heading "Przy czym pomachamy łbem w listopadzie?" [level=4] [ref=f18e131]
+            - generic [ref=f18e132]:
+              - generic [ref=f18e133]: 28.10.2026
+              - generic [ref=f18e138]: 00:05
+            - generic [ref=f18e144]:
+              - generic "Share" [ref=f18e145]:
+                - button [ref=f18e147] [cursor=pointer]
+              - button "Add" [ref=f18e152] [cursor=pointer]
+              - button "Play" [ref=f18e157] [cursor=pointer]
+          - generic [ref=f18e161]:
+            - link [ref=f18e162] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/-rzadzimy-tymi-falami-najciekawsze-premiery-pazdziernika,993657ef-48f8-43cc-b079-e954ac576347
+              - heading "Rządzimy tymi falami - najciekawsze premiery października" [level=4] [ref=f18e163]
+            - generic [ref=f18e164]:
+              - generic [ref=f18e165]: 21.10.2026
+              - generic [ref=f18e170]: 00:05
+            - generic [ref=f18e176]:
+              - generic "Share" [ref=f18e177]:
+                - button [ref=f18e179] [cursor=pointer]
+              - button "Add" [ref=f18e184] [cursor=pointer]
+              - button "Play" [ref=f18e189] [cursor=pointer]
+          - generic [ref=f18e193]:
+            - link [ref=f18e194] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/nocne-niebo-nad-estonia-i-litwa,8d414246-5524-4558-a404-eefb7810daab
+              - heading "Nocne niebo nad Estonią i Litwą" [level=4] [ref=f18e195]
+            - generic [ref=f18e196]:
+              - generic [ref=f18e197]: 14.10.2026
+              - generic [ref=f18e202]: 00:05
+            - generic [ref=f18e208]:
+              - generic "Share" [ref=f18e209]:
+                - button [ref=f18e211] [cursor=pointer]
+              - button "Add" [ref=f18e216] [cursor=pointer]
+              - button "Play" [ref=f18e221] [cursor=pointer]
+          - generic [ref=f18e225]:
+            - link [ref=f18e226] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/witamy-w-piekle-i-zegnamy-cronosa,489e26f5-4196-4436-8c9f-555694f82983
+              - heading "Witamy w piekle i żegnamy Cronosa" [level=4] [ref=f18e227]
+            - generic [ref=f18e228]:
+              - generic [ref=f18e229]: 07.10.2026
+              - generic [ref=f18e234]: 00:05
+            - generic [ref=f18e240]:
+              - generic "Share" [ref=f18e241]:
+                - button [ref=f18e243] [cursor=pointer]
+              - button "Add" [ref=f18e248] [cursor=pointer]
+              - button "Play" [ref=f18e253] [cursor=pointer]
+          - generic [ref=f18e257]:
+            - link [ref=f18e258] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/jezdzcy-czyngis-chana-czy-wikingowie-koncertowy-pazdziernik,c1f69944-7eda-4555-b407-26473451deac
+              - heading "Jeźdźcy Czyngis-chana czy wikingowie? Koncertowy październik" [level=4] [ref=f18e259]
+            - generic [ref=f18e260]:
+              - generic [ref=f18e261]: 30.09.2026
+              - generic [ref=f18e266]: 00:06
+            - generic [ref=f18e272]:
+              - generic "Share" [ref=f18e273]:
+                - button [ref=f18e275] [cursor=pointer]
+              - button "Add" [ref=f18e280] [cursor=pointer]
+              - button "Play" [ref=f18e285] [cursor=pointer]
+          - generic [ref=f18e289]:
+            - link [ref=f18e290] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/od-kosmosu-do-oceanu-najciekawsze-premiery-wrzesnia,abd6c6c3-8b70-4b29-b0f6-39a289733834
+              - heading "Od kosmosu do oceanu - najciekawsze premiery września" [level=4] [ref=f18e291]
+            - generic [ref=f18e292]:
+              - generic [ref=f18e293]: 23.09.2026
+              - generic [ref=f18e298]: 00:06
+            - generic [ref=f18e304]:
+              - generic "Share" [ref=f18e305]:
+                - button [ref=f18e307] [cursor=pointer]
+              - button "Add" [ref=f18e312] [cursor=pointer]
+              - button "Play" [ref=f18e317] [cursor=pointer]
+          - generic [ref=f18e321]:
+            - link [ref=f18e322] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/niepotrzebne-rozstania-wielkie-powroty,9cc0c1fd-f5e2-476b-bef6-03aff5865243
+              - heading "Niepotrzebne rozstania, wielkie powroty" [level=4] [ref=f18e323]
+            - generic [ref=f18e324]:
+              - generic [ref=f18e325]: 16.09.2026
+              - generic [ref=f18e330]: 00:04
+            - generic [ref=f18e336]:
+              - generic "Share" [ref=f18e337]:
+                - button [ref=f18e339] [cursor=pointer]
+              - button "Add" [ref=f18e344] [cursor=pointer]
+              - button "Play" [ref=f18e349] [cursor=pointer]
+          - generic [ref=f18e353]:
+            - link [ref=f18e354] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/od-hadesu-do-itaki-metal-grecki-i-o-grecji,93b46f99-e4a1-499d-8943-f2b69fd42ab2
+              - heading "Od Hadesu do Itaki. Metal grecki i o Grecji" [level=4] [ref=f18e355]
+            - generic [ref=f18e356]:
+              - generic [ref=f18e357]: 09.09.2026
+              - generic [ref=f18e362]: 00:00
+            - generic [ref=f18e368]:
+              - generic "Share" [ref=f18e369]:
+                - button [ref=f18e371] [cursor=pointer]
+              - button "Add" [ref=f18e376] [cursor=pointer]
+              - button "Play" [ref=f18e381] [cursor=pointer]
+          - generic [ref=f18e385]:
+            - link [ref=f18e386] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/lato-minelo-metal-zostaje,05154d98-5f72-4cbd-9c9f-1a6b6bf2a7bb
+              - heading "Lato minęło, metal zostaje" [level=4] [ref=f18e387]
+            - generic [ref=f18e388]:
+              - generic [ref=f18e389]: 02.09.2026
+              - generic [ref=f18e394]: 01:00
+            - generic [ref=f18e400]:
+              - generic "Share" [ref=f18e401]:
+                - button [ref=f18e403] [cursor=pointer]
+              - button "Add" [ref=f18e408] [cursor=pointer]
+              - button "Play" [ref=f18e413] [cursor=pointer]
+        - generic [ref=f18e417]:
+          - button [disabled] [ref=f18e418]
+          - textbox [ref=f18e422]: "1"
+          - button [ref=f18e423] [cursor=pointer]
+          - paragraph [ref=f18e427]: z 11
+  - generic:
+    - generic:
+      - region "Notifications Alt+T"
+  - generic [ref=f18e431]:
+    - generic [ref=f18e432]:
+      - generic [ref=f18e433]:
+        - link [ref=f18e434] [cursor=pointer]:
+          - /url: https://jedynka.polskieradio.pl/
+          - img "Jedynka" [ref=f18e435]
+        - link [ref=f18e436] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/8,Dwojka
+          - img "Dwójka" [ref=f18e437]
+        - link [ref=f18e438] [cursor=pointer]:
+          - /url: https://trojka.polskieradio.pl/
+          - img "Trójka" [ref=f18e439]
+        - link [ref=f18e440] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/10,Czworka
+          - img "Czwórka" [ref=f18e441]
+        - link [ref=f18e442] [cursor=pointer]:
+          - /url: https://polskieradio24.pl/
+          - img "Polskie Radio 24" [ref=f18e443]
+        - link [ref=f18e444] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/18,Dzieci
+          - img "Polskie Radio Dzieciom" [ref=f18e445]
+        - link [ref=f18e446] [cursor=pointer]:
+          - /url: https://www.chopin.polskieradio.pl/
+          - img "Chopin" [ref=f18e447]
+        - link [ref=f18e448] [cursor=pointer]:
+          - /url: https://radiokierowcow.pl/
+          - img "Polskie Radio Kierowców" [ref=f18e449]
+        - link [ref=f18e450] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/398
+          - img "Polskie Radio dla Ukrainy" [ref=f18e451]
+        - link [ref=f18e452] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/399
+          - img "Polskie Radio dla Zagranicy" [ref=f18e453]
+        - link [ref=f18e454] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/399
+          - img "Polskie Radio dla Zagranicy (EN, DE)" [ref=f18e455]
+      - generic [ref=f18e456]:
+        - link "Radiowe Centrum Kultury Ludowej" [ref=f18e457] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/377
+        - link "Teatr Polskiego Radia" [ref=f18e458] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/357
+        - link "Orkiestra Polskiego Radia w Warszawie" [ref=f18e459] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/79,Orkiestra-Polskiego-Radia-w-Warszawie
+    - generic [ref=f18e460]:
+      - generic [ref=f18e461]:
+        - link "Polskie Radio S.A." [ref=f18e462] [cursor=pointer]:
+          - /url: http://www.prsa.pl
+        - link "Agencja Reklamy Polskiego Radia" [ref=f18e463] [cursor=pointer]:
+          - /url: https://reklama.polskieradio.pl/
+        - link "Centrum Edukacji Medialnej" [ref=f18e464] [cursor=pointer]:
+          - /url: https://cem.polskieradio.pl/
+        - link "Sklep" [ref=f18e465] [cursor=pointer]:
+          - /url: https://sklep.polskieradio.pl/
+        - link "Polityka Prywatności" [ref=f18e466] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/13/53/Artykul/254368
+        - link "Dane osobowe" [ref=f18e467] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/13/6788
+        - link "Kontakt" [ref=f18e468] [cursor=pointer]:
+          - /url: https://www.prsa.pl/kontakt
+      - generic [ref=f18e469]:
+        - heading "Znajdziesz nas na:" [level=5] [ref=f18e470]
+        - generic [ref=f18e471]:
+          - link [ref=f18e472] [cursor=pointer]:
+            - /url: https://www.instagram.com/polskieradio/
+          - link [ref=f18e477] [cursor=pointer]:
+            - /url: https://x.com/polskieradiopl
+          - link [ref=f18e481] [cursor=pointer]:
+            - /url: https://www.facebook.com/polskieradioplofficial
+          - link [ref=f18e484] [cursor=pointer]:
+            - /url: https://www.youtube.com/@PolskieradioPlofficial
+  - alert [ref=f18e488]

@@ -1,0 +1,288 @@
+- generic [active] [ref=f31e1]:
+  - link [ref=f31e373] [cursor=pointer]:
+    - /url: "#"
+  - generic [ref=f31e2]:
+    - generic [ref=f31e4]:
+      - generic [ref=f31e5]:
+        - link "Jedynka" [ref=f31e6] [cursor=pointer]:
+          - /url: https://jedynka.polskieradio.pl/
+        - link "Dwójka" [ref=f31e7] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/8,Dwojka
+        - link "Trójka" [ref=f31e8] [cursor=pointer]:
+          - /url: https://trojka.polskieradio.pl/
+        - link "Czwórka" [ref=f31e9] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/10,Czworka
+        - link "Polskie Radio 24" [ref=f31e10] [cursor=pointer]:
+          - /url: https://polskieradio24.pl/
+      - button "Pokaż więcej stacji" [ref=f31e11] [cursor=pointer]
+    - banner [ref=f31e15]:
+      - link "Strona główna Polskiego Radia" [ref=f31e17] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f31e21]:
+        - generic [ref=f31e22]:
+          - link "Słuchowiska" [ref=f31e23] [cursor=pointer]:
+            - /url: /podcasty/sluchowiska
+          - link "Dla dzieci" [ref=f31e24] [cursor=pointer]:
+            - /url: /podcasty/dla-dzieci
+          - link "Publicystyka" [ref=f31e25] [cursor=pointer]:
+            - /url: /podcasty/publicystyka
+          - link "Historia" [ref=f31e26] [cursor=pointer]:
+            - /url: /podcasty/historia
+          - link "Reportaże" [ref=f31e27] [cursor=pointer]:
+            - /url: /podcasty/reportaze
+          - link "Audiobooki" [ref=f31e28] [cursor=pointer]:
+            - /url: /podcasty/audiobooki
+          - link "Obcojęzyczne" [ref=f31e29] [cursor=pointer]:
+            - /url: /podcasty/obcojezyczne
+        - button [ref=f31e31] [cursor=pointer]
+  - main [ref=f31e35]:
+    - generic [ref=f31e37]:
+      - img "Ciężko na Sercu" [ref=f31e39]
+      - generic [ref=f31e41]:
+        - generic [ref=f31e42]:
+          - generic [ref=f31e43]:
+            - link "Polskie Radio" [ref=f31e44] [cursor=pointer]:
+              - /url: /
+            - link "Trójka" [ref=f31e47] [cursor=pointer]:
+              - /url: /trojka
+            - link "Audycje" [ref=f31e50] [cursor=pointer]:
+              - /url: /trojka/audycje
+            - link "Ciężko na Sercu" [ref=f31e53] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644
+            - link "Rządzimy tymi falami - najciekawsze premiery października" [ref=f31e56] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644/odcinek/-rzadzimy-tymi-falami-najciekawsze-premiery-pazdziernika,993657ef-48f8-43cc-b079-e954ac576347
+          - generic [ref=f31e57]:
+            - img "Ciężko na Sercu" [ref=f31e59]
+            - generic [ref=f31e60]:
+              - heading "Ciężko na Sercu" [level=5] [ref=f31e61]
+              - heading "Rządzimy tymi falami - najciekawsze premiery października" [level=5] [ref=f31e62]
+              - generic [ref=f31e63]:
+                - paragraph [ref=f31e67]: 21.10.2026
+                - paragraph [ref=f31e71]: 1:55:39
+        - generic [ref=f31e74]:
+          - generic [ref=f31e75]:
+            - button "Odtwórz" [ref=f31e76] [cursor=pointer]
+            - generic [ref=f31e79]:
+              - button "Add" [ref=f31e81] [cursor=pointer]
+              - button [ref=f31e87] [cursor=pointer]
+          - generic [ref=f31e91]:
+            - generic [ref=f31e92]: Opis audycji
+            - paragraph [ref=f31e94]: Audycja dla wszystkich, którym serce bije szybciej przy szeroko pojmowanej muzyce ekstremalnej, ciężkiej, brutalnej. Tu gra metal w pełnym swoim spektrum, od liczącego pół wieku z okładem kanonu po tych, co dziś poszerzają granice gatunku łącząc go z elektroniką, jazzem czy muzyką źródeł. W środę od 0:05 do 2:00, znajdujemy też miejsce na dźwięki metalowe raczej z ducha niż z brzmienia, wynalazki muzycznych szarlatanów z kraju i ze świata.
+            - link [ref=f31e95] [cursor=pointer]:
+              - /url: /trojka/audycje/ciezko-na-sercu,10644
+              - button "ZOBACZ WSZYSTKIE ODCINKI" [ref=f31e96]
+      - generic [ref=f31e100]:
+        - heading "Wybrane dla Ciebie" [level=4] [ref=f31e101]
+        - generic [ref=f31e103]:
+          - button [ref=f31e104] [cursor=pointer]
+          - generic [ref=f31e108]:
+            - link [ref=f31e113] [cursor=pointer]:
+              - /url: /podcast/laboratorium-zbrodni-podcast-crazy-nauka,653
+              - generic [ref=f31e114]:
+                - button
+              - paragraph [ref=f31e116]: Laboratorium zbrodni. Podcast Crazy Nauka
+            - link [ref=f31e121] [cursor=pointer]:
+              - /url: /podcast/czarna-ospa-wroclaw-1963,730
+              - generic [ref=f31e122]:
+                - button
+              - paragraph [ref=f31e124]: Czarna ospa. Wrocław 1963
+            - link [ref=f31e129] [cursor=pointer]:
+              - /url: /podcast/mroczna-historia-watykanu,725
+              - generic [ref=f31e130]:
+                - button
+              - paragraph [ref=f31e132]: Mroczna historia Watykanu
+            - link [ref=f31e137] [cursor=pointer]:
+              - /url: /podcast/mapa-zbrodni-przestepstwa-analogowego-swiata,654
+              - generic [ref=f31e138]:
+                - button
+              - paragraph [ref=f31e140]: Mapa zbrodni. Przestępstwa analogowego świata
+            - link [ref=f31e145] [cursor=pointer]:
+              - /url: /trojka/podcasty/ludzie,389
+              - generic [ref=f31e146]:
+                - button
+              - paragraph [ref=f31e148]: Ludzie
+            - link [ref=f31e153] [cursor=pointer]:
+              - /url: /podcast/czy-szpiedzy-rzadza-swiatem-podcast-severskiego-i-niemczyka-,745
+              - generic [ref=f31e154]:
+                - img "Czy szpiedzy rządzą światem? Podcast Severskiego i Niemczyka" [ref=f31e155]
+                - button "Odtwórz"
+              - paragraph [ref=f31e156]: Czy szpiedzy rządzą światem? Podcast Severskiego i Niemczyka
+              - paragraph
+            - link [ref=f31e161] [cursor=pointer]:
+              - /url: /podcast/heweliusz-prawdziwa-historia-,726
+              - generic [ref=f31e162]:
+                - img "Heweliusz. Prawdziwa historia" [ref=f31e163]
+                - button "Odtwórz"
+              - paragraph [ref=f31e164]: Heweliusz. Prawdziwa historia
+              - paragraph
+            - link [ref=f31e169] [cursor=pointer]:
+              - /url: /trojka/podcasty/12000-dni-katastrofa-promu-jan-heweliusz,727
+              - generic [ref=f31e170]:
+                - 'img "12000 dni: katastrofa promu Jan Heweliusz" [ref=f31e171]'
+                - button "Odtwórz"
+              - paragraph [ref=f31e172]: "12000 dni: katastrofa promu Jan Heweliusz"
+              - paragraph
+            - link [ref=f31e177] [cursor=pointer]:
+              - /url: /podcast/prawda-czasu-i-prawda-ekranu,375
+              - generic [ref=f31e178]:
+                - img "Prawda czasu i prawda ekranu" [ref=f31e179]
+                - button "Odtwórz"
+              - paragraph [ref=f31e180]: Prawda czasu i prawda ekranu
+              - paragraph
+            - link [ref=f31e185] [cursor=pointer]:
+              - /url: /podcast/sekcja-teorii-spiskowych-podcast-crazy-nauka,718
+              - generic [ref=f31e186]:
+                - img "Sekcja teorii spiskowych. Podcast Crazy Nauka" [ref=f31e187]
+                - button "Odtwórz"
+              - paragraph [ref=f31e188]: Sekcja teorii spiskowych. Podcast Crazy Nauka
+              - paragraph
+            - link [ref=f31e193] [cursor=pointer]:
+              - /url: /podcast/laboratorium-zbrodni-podcast-crazy-nauka,653
+              - generic [ref=f31e194]:
+                - button
+              - paragraph [ref=f31e196]: Laboratorium zbrodni. Podcast Crazy Nauka
+            - link [ref=f31e201] [cursor=pointer]:
+              - /url: /podcast/czarna-ospa-wroclaw-1963,730
+              - generic [ref=f31e202]:
+                - button
+              - paragraph [ref=f31e204]: Czarna ospa. Wrocław 1963
+            - link [ref=f31e209] [cursor=pointer]:
+              - /url: /podcast/mroczna-historia-watykanu,725
+              - generic [ref=f31e210]:
+                - button
+              - paragraph [ref=f31e212]: Mroczna historia Watykanu
+            - link [ref=f31e217] [cursor=pointer]:
+              - /url: /podcast/mapa-zbrodni-przestepstwa-analogowego-swiata,654
+              - generic [ref=f31e218]:
+                - button
+              - paragraph [ref=f31e220]: Mapa zbrodni. Przestępstwa analogowego świata
+            - link [ref=f31e225] [cursor=pointer]:
+              - /url: /trojka/podcasty/ludzie,389
+              - generic [ref=f31e226]:
+                - button
+              - paragraph [ref=f31e228]: Ludzie
+            - link [ref=f31e233] [cursor=pointer]:
+              - /url: /podcast/czy-szpiedzy-rzadza-swiatem-podcast-severskiego-i-niemczyka-,745
+              - generic [ref=f31e234]:
+                - button
+              - paragraph [ref=f31e236]: Czy szpiedzy rządzą światem? Podcast Severskiego i Niemczyka
+            - link [ref=f31e241] [cursor=pointer]:
+              - /url: /podcast/heweliusz-prawdziwa-historia-,726
+              - generic [ref=f31e242]:
+                - button
+              - paragraph [ref=f31e244]: Heweliusz. Prawdziwa historia
+            - link [ref=f31e249] [cursor=pointer]:
+              - /url: /trojka/podcasty/12000-dni-katastrofa-promu-jan-heweliusz,727
+              - generic [ref=f31e250]:
+                - button
+              - paragraph [ref=f31e252]: "12000 dni: katastrofa promu Jan Heweliusz"
+            - link [ref=f31e257] [cursor=pointer]:
+              - /url: /podcast/prawda-czasu-i-prawda-ekranu,375
+              - generic [ref=f31e258]:
+                - button
+              - paragraph [ref=f31e260]: Prawda czasu i prawda ekranu
+            - link [ref=f31e265] [cursor=pointer]:
+              - /url: /podcast/sekcja-teorii-spiskowych-podcast-crazy-nauka,718
+              - generic [ref=f31e266]:
+                - button
+              - paragraph [ref=f31e268]: Sekcja teorii spiskowych. Podcast Crazy Nauka
+            - link [ref=f31e273] [cursor=pointer]:
+              - /url: /podcast/laboratorium-zbrodni-podcast-crazy-nauka,653
+              - generic [ref=f31e274]:
+                - button
+              - paragraph [ref=f31e276]: Laboratorium zbrodni. Podcast Crazy Nauka
+            - link [ref=f31e281] [cursor=pointer]:
+              - /url: /podcast/czarna-ospa-wroclaw-1963,730
+              - generic [ref=f31e282]:
+                - button
+              - paragraph [ref=f31e284]: Czarna ospa. Wrocław 1963
+            - link [ref=f31e289] [cursor=pointer]:
+              - /url: /podcast/mroczna-historia-watykanu,725
+              - generic [ref=f31e290]:
+                - button
+              - paragraph [ref=f31e292]: Mroczna historia Watykanu
+            - link [ref=f31e297] [cursor=pointer]:
+              - /url: /podcast/mapa-zbrodni-przestepstwa-analogowego-swiata,654
+              - generic [ref=f31e298]:
+                - button
+              - paragraph [ref=f31e300]: Mapa zbrodni. Przestępstwa analogowego świata
+            - link [ref=f31e305] [cursor=pointer]:
+              - /url: /trojka/podcasty/ludzie,389
+              - generic [ref=f31e306]:
+                - button
+              - paragraph [ref=f31e308]: Ludzie
+          - button [ref=f31e309] [cursor=pointer]
+  - generic:
+    - generic:
+      - region "Notifications Alt+T"
+  - generic [ref=f31e315]:
+    - generic [ref=f31e316]:
+      - generic [ref=f31e317]:
+        - link [ref=f31e318] [cursor=pointer]:
+          - /url: https://jedynka.polskieradio.pl/
+          - img "Jedynka" [ref=f31e319]
+        - link [ref=f31e320] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/8,Dwojka
+          - img "Dwójka" [ref=f31e321]
+        - link [ref=f31e322] [cursor=pointer]:
+          - /url: https://trojka.polskieradio.pl/
+          - img "Trójka" [ref=f31e323]
+        - link [ref=f31e324] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/10,Czworka
+          - img "Czwórka" [ref=f31e325]
+        - link [ref=f31e326] [cursor=pointer]:
+          - /url: https://polskieradio24.pl/
+          - img "Polskie Radio 24" [ref=f31e327]
+        - link [ref=f31e328] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/18,Dzieci
+          - img "Polskie Radio Dzieciom" [ref=f31e329]
+        - link [ref=f31e330] [cursor=pointer]:
+          - /url: https://www.chopin.polskieradio.pl/
+          - img "Chopin" [ref=f31e331]
+        - link [ref=f31e332] [cursor=pointer]:
+          - /url: https://radiokierowcow.pl/
+          - img "Polskie Radio Kierowców" [ref=f31e333]
+        - link [ref=f31e334] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/398
+          - img "Polskie Radio dla Ukrainy" [ref=f31e335]
+        - link [ref=f31e336] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/399
+          - img "Polskie Radio dla Zagranicy" [ref=f31e337]
+        - link [ref=f31e338] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/399
+          - img "Polskie Radio dla Zagranicy (EN, DE)" [ref=f31e339]
+      - generic [ref=f31e340]:
+        - link "Radiowe Centrum Kultury Ludowej" [ref=f31e341] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/377
+        - link "Teatr Polskiego Radia" [ref=f31e342] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/357
+        - link "Orkiestra Polskiego Radia w Warszawie" [ref=f31e343] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/79,Orkiestra-Polskiego-Radia-w-Warszawie
+    - generic [ref=f31e344]:
+      - generic [ref=f31e345]:
+        - link "Polskie Radio S.A." [ref=f31e346] [cursor=pointer]:
+          - /url: http://www.prsa.pl
+        - link "Agencja Reklamy Polskiego Radia" [ref=f31e347] [cursor=pointer]:
+          - /url: https://reklama.polskieradio.pl/
+        - link "Centrum Edukacji Medialnej" [ref=f31e348] [cursor=pointer]:
+          - /url: https://cem.polskieradio.pl/
+        - link "Sklep" [ref=f31e349] [cursor=pointer]:
+          - /url: https://sklep.polskieradio.pl/
+        - link "Polityka Prywatności" [ref=f31e350] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/13/53/Artykul/254368
+        - link "Dane osobowe" [ref=f31e351] [cursor=pointer]:
+          - /url: https://www.polskieradio.pl/13/6788
+        - link "Kontakt" [ref=f31e352] [cursor=pointer]:
+          - /url: https://www.prsa.pl/kontakt
+      - generic [ref=f31e353]:
+        - heading "Znajdziesz nas na:" [level=5] [ref=f31e354]
+        - generic [ref=f31e355]:
+          - link [ref=f31e356] [cursor=pointer]:
+            - /url: https://www.instagram.com/polskieradio/
+          - link [ref=f31e361] [cursor=pointer]:
+            - /url: https://x.com/polskieradiopl
+          - link [ref=f31e365] [cursor=pointer]:
+            - /url: https://www.facebook.com/polskieradioplofficial
+          - link [ref=f31e368] [cursor=pointer]:
+            - /url: https://www.youtube.com/@PolskieradioPlofficial
+  - alert [ref=f31e372]

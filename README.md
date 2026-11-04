@@ -8,7 +8,13 @@ Strona nie publikuje dźwięku ani treści audycji. Indeksuje odcinki i linkuje 
 
 ## Status
 
-Repozytorium zawiera plan i decyzje. Kodu jeszcze nie ma — [docs/plan.md](docs/plan.md).
+Repozytorium zawiera plan, decyzje i klikalny mockup wyglądu. Kodu produkcyjnego jeszcze nie ma.
+
+1. [docs/plan.md](docs/plan.md) — zakres, model danych, harmonogram, ryzyka.
+2. [docs/design.md](docs/design.md) — co przenosimy z wyglądu Trójki, a czego nie.
+3. [docs/stack.md](docs/stack.md) — wybór generatora i odrzucone alternatywy.
+4. `mockup/` — statyczny mockup (lista, odcinek opracowany, odcinek w kolejce, jasny i ciemny
+   motyw). Otwórz `mockup/index.html` albo `python3 -m http.server 4173 -d mockup`.
 
 ## Powiązane repozytoria
 

@@ -1,0 +1,252 @@
+- generic [active] [ref=f22e1]:
+  - banner [ref=f22e2]:
+    - generic [ref=f22e3]:
+      - link "Ciężko na sercu indeks audycji" [ref=f22e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=f22e5]: Ciężko na sercu
+        - generic [ref=f22e6]: indeks audycji
+      - navigation "Główna" [ref=f22e7]:
+        - link "Odcinki" [ref=f22e8] [cursor=pointer]:
+          - /url: index.html
+        - link "Wykonawcy" [ref=f22e9] [cursor=pointer]:
+          - /url: "#"
+        - link "O projekcie" [ref=f22e10] [cursor=pointer]:
+          - /url: "#"
+      - button "Przełącz motyw" [ref=f22e11] [cursor=pointer]
+  - main [ref=f22e15]:
+    - generic [ref=f22e17]:
+      - generic [ref=f22e18]:
+        - paragraph [ref=f22e19]: Trójka · środa 00:05
+        - heading "Ciężko na sercu" [level=1] [ref=f22e20]:
+          - generic [ref=f22e21]: Ciężko
+          - generic [ref=f22e22]: na sercu
+        - paragraph [ref=f22e23]: "Indeks odcinków audycji o ciężkim graniu. Każdy odcinek dostaje własną stronę: tracklistę, streszczenie i tematy — uzupełniane stopniowo, odcinek po odcinku."
+        - generic [ref=f22e24]:
+          - generic [ref=f22e25]:
+            - generic [ref=f22e26]: "105"
+            - generic [ref=f22e27]: odcinków w indeksie
+          - generic [ref=f22e28]:
+            - generic [ref=f22e29]: "1"
+            - generic [ref=f22e30]: opracowany
+          - generic [ref=f22e31]:
+            - generic [ref=f22e32]: 2 / tydz.
+            - generic [ref=f22e33]: tempo kolejki
+      - complementary [ref=f22e34]:
+        - heading "O audycji" [level=2] [ref=f22e35]
+        - paragraph [ref=f22e36]: "Cotygodniowy przegląd ciężkiego grania: premiery, klasyka gatunku, sceny lokalne i rozmowy z ludźmi, którzy tę muzykę tworzą. Bez gatunkowych klapek — od doomu po eksperyment."
+        - generic [ref=f22e37]:
+          - generic [ref=f22e38]:
+            - term [ref=f22e39]: Prowadzący
+            - definition [ref=f22e40]: Jarek Szubrycht
+          - generic [ref=f22e41]:
+            - term [ref=f22e42]: Stacja
+            - definition [ref=f22e43]: Trójka
+          - generic [ref=f22e44]:
+            - term [ref=f22e45]: Emisja
+            - definition [ref=f22e46]: środa, 00:05
+    - generic [ref=f22e47]:
+      - generic [ref=f22e48]:
+        - generic [ref=f22e49]:
+          - generic [ref=f22e53]: Szukaj odcinka
+          - searchbox "Szukaj odcinka" [ref=f22e54]
+        - group "Rok" [ref=f22e55]:
+          - button "Wszystkie" [pressed] [ref=f22e56] [cursor=pointer]
+          - button "2026" [ref=f22e57] [cursor=pointer]
+          - button "2025" [ref=f22e58] [cursor=pointer]
+          - button "2024" [ref=f22e59] [cursor=pointer]
+        - paragraph [ref=f22e60]:
+          - strong [ref=f22e61]: "13"
+          - text: z 105 odcinków · 1 opracowany
+      - generic [ref=f22e62]:
+        - heading "Odcinki" [level=2] [ref=f22e63]
+        - paragraph [ref=f22e64]: najnowsze pierwsze
+      - generic [ref=f22e65]:
+        - generic [ref=f22e66]: Listopad 2026
+        - article [ref=f22e67]:
+          - generic [ref=f22e68]: 04.11.2026
+          - generic [ref=f22e69]:
+            - heading "Słuchamy umarłych" [level=3] [ref=f22e70]
+            - generic [ref=f22e71]:
+              - generic [ref=f22e72]: 00:05
+              - generic [ref=f22e73]: Trójka
+          - generic [ref=f22e74]:
+            - generic [ref=f22e75]: zaplanowane 12.11.2026
+            - link "Polskie Radio ↗" [ref=f22e76] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/sluchamy-umarlych,9dde4bc8-00d6-48f1-98d5-8c62f5ee0dcc
+        - generic [ref=f22e77]: Październik 2026
+        - article [ref=f22e78]:
+          - generic [ref=f22e79]: 28.10.2026
+          - generic [ref=f22e80]:
+            - heading "Przy czym pomachamy łbem w listopadzie?" [level=3] [ref=f22e81]
+            - generic [ref=f22e82]:
+              - generic [ref=f22e83]: 00:05
+              - generic [ref=f22e84]: Trójka
+          - generic [ref=f22e85]:
+            - generic [ref=f22e86]: zaplanowane 19.11.2026
+            - link "Polskie Radio ↗" [ref=f22e87] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/przy-czym-pomachamy-lbem-w-listopadzie,82d57411-285b-4714-b434-8cac32f42954
+        - article [ref=f22e88]:
+          - generic [ref=f22e89]: 21.10.2026
+          - generic [ref=f22e90]:
+            - heading "Rządzimy tymi falami — najciekawsze premiery października" [level=3] [ref=f22e91]
+            - generic [ref=f22e92]:
+              - generic [ref=f22e93]: 00:05
+              - generic [ref=f22e94]: Trójka
+          - generic [ref=f22e95]:
+            - generic [ref=f22e96]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e97] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/rzadzimy-tymi-falami-najciekawsze-premiery-pazdziernika,993657ef-48f8-43cc-b079-e954ac576347
+        - article [ref=f22e98]:
+          - generic [ref=f22e99]: 14.10.2026
+          - generic [ref=f22e100]:
+            - heading "Nocne niebo nad Estonią i Litwą" [level=3] [ref=f22e101]
+            - generic [ref=f22e102]:
+              - generic [ref=f22e103]: 00:05
+              - generic [ref=f22e104]: Trójka
+          - generic [ref=f22e105]:
+            - generic [ref=f22e106]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e107] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/nocne-niebo-nad-estonia-i-litwa,8d414246-5524-4558-a404-eefb7810daab
+        - article [ref=f22e108]:
+          - generic [ref=f22e109]: 07.10.2026
+          - generic [ref=f22e110]:
+            - heading "Witamy w piekle i żegnamy Cronosa" [level=3] [ref=f22e111]
+            - generic [ref=f22e112]:
+              - generic [ref=f22e113]: 00:05
+              - generic [ref=f22e114]: Trójka
+          - generic [ref=f22e115]:
+            - generic [ref=f22e116]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e117] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/witamy-w-piekle-i-zegnamy-cronosa,489e26f5-4196-4436-8c9f-555694f82983
+        - generic [ref=f22e118]: Wrzesień 2026
+        - article [ref=f22e119]:
+          - generic [ref=f22e120]: 30.09.2026
+          - generic [ref=f22e121]:
+            - heading "Jeźdźcy Czyngis-chana czy wikingowie? Koncertowy październik" [level=3] [ref=f22e122]
+            - generic [ref=f22e123]:
+              - generic [ref=f22e124]: 00:05
+              - generic [ref=f22e125]: Trójka
+          - generic [ref=f22e126]:
+            - generic [ref=f22e127]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e128] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/jezdzcy-czyngis-chana-czy-wikingowie-koncertowy-pazdziernik,c1f69944-7eda-4555-b407-26473451deac
+        - article [ref=f22e129]:
+          - generic [ref=f22e130]: 23.09.2026
+          - generic [ref=f22e131]:
+            - heading "Od kosmosu do oceanu — najciekawsze premiery września" [level=3] [ref=f22e132]
+            - generic [ref=f22e133]:
+              - generic [ref=f22e134]: 00:05
+              - generic [ref=f22e135]: Trójka
+          - generic [ref=f22e136]:
+            - generic [ref=f22e137]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e138] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/od-kosmosu-do-oceanu-najciekawsze-premiery-wrzesnia,abd6c6c3-8b70-4b29-b0f6-39a289733834
+        - article [ref=f22e139]:
+          - generic [ref=f22e140]: 16.09.2026
+          - generic [ref=f22e141]:
+            - heading "Niepotrzebne rozstania, wielkie powroty" [level=3] [ref=f22e142]
+            - generic [ref=f22e143]:
+              - generic [ref=f22e144]: 00:05
+              - generic [ref=f22e145]: Trójka
+          - generic [ref=f22e146]:
+            - generic [ref=f22e147]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e148] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/niepotrzebne-rozstania-wielkie-powroty,9cc0c1fd-f5e2-476b-bef6-03aff5865243
+        - article [ref=f22e149]:
+          - generic [ref=f22e150]: 09.09.2026
+          - generic [ref=f22e151]:
+            - heading "Od Hadesu do Itaki. Metal grecki i o Grecji" [level=3] [ref=f22e152]
+            - generic [ref=f22e153]:
+              - generic [ref=f22e154]: 00:05
+              - generic [ref=f22e155]: Trójka
+          - generic [ref=f22e156]:
+            - generic [ref=f22e157]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e158] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/od-hadesu-do-itaki-metal-grecki-i-o-grecji,93b46f99-e4a1-499d-8943-f2b69fd42ab2
+        - article [ref=f22e159]:
+          - generic [ref=f22e160]: 02.09.2026
+          - generic [ref=f22e161]:
+            - heading "Lato minęło, metal zostaje" [level=3] [ref=f22e162]
+            - generic [ref=f22e163]:
+              - generic [ref=f22e164]: 00:05
+              - generic [ref=f22e165]: Trójka
+          - generic [ref=f22e166]:
+            - generic [ref=f22e167]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e168] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/lato-minelo-metal-zostaje,05154d98-5f72-4cbd-9c9f-1a6b6bf2a7bb
+        - generic [ref=f22e169]: Sierpień 2026
+        - article [ref=f22e170]:
+          - generic [ref=f22e171]: 26.08.2026
+          - generic [ref=f22e172]:
+            - heading "Śmierć, węże i powracające sny — najlepsze ciężary sierpnia" [level=3] [ref=f22e173]
+            - generic [ref=f22e174]:
+              - generic [ref=f22e175]: 00:05
+              - generic [ref=f22e176]: Trójka
+          - generic [ref=f22e177]:
+            - generic [ref=f22e178]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e179] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/smierc-weze-i-powracajace-sny-najlepsze-ciezary-sierpnia,d3174957-8735-4867-8db6-77288aaaf8d5
+        - article [ref=f22e180]:
+          - generic [ref=f22e181]: 19.08.2026
+          - generic [ref=f22e182]:
+            - heading "Wielkie oczekiwania, gorzkie rozczarowania" [level=3] [ref=f22e183]
+            - generic [ref=f22e184]:
+              - generic [ref=f22e185]: 00:05
+              - generic [ref=f22e186]: Trójka
+          - generic [ref=f22e187]:
+            - generic [ref=f22e188]: skatalogowany
+            - link "Polskie Radio ↗" [ref=f22e189] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644/odcinek/wielkie-oczekiwania-gorzkie-rozczarowania,3a47fc8a-4270-4aae-b65c-bc3a607e5462
+        - generic [ref=f22e190]: Maj 2024
+        - article [ref=f22e191]:
+          - generic [ref=f22e192]: 01.05.2024
+          - generic [ref=f22e193]:
+            - heading [level=3] [ref=f22e194]:
+              - link "Ciężko na sercu 1 maja godz. 0005" [ref=f22e195] [cursor=pointer]:
+                - /url: episode.html
+            - generic [ref=f22e196]:
+              - generic [ref=f22e197]: 1:53:38
+              - generic [ref=f22e198]: 15 utworów
+              - generic [ref=f22e199]: 34:50 mowy
+          - generic [ref=f22e200]:
+            - generic [ref=f22e201]: opracowany
+            - link "Zobacz stronę odcinka" [ref=f22e202] [cursor=pointer]:
+              - /url: episode.html
+      - navigation "Paginacja" [ref=f22e203]:
+        - link "1" [ref=f22e204] [cursor=pointer]:
+          - /url: "#"
+        - link "2" [ref=f22e205] [cursor=pointer]:
+          - /url: "#"
+        - link "3" [ref=f22e206] [cursor=pointer]:
+          - /url: "#"
+        - link "…" [ref=f22e207] [cursor=pointer]:
+          - /url: "#"
+        - link "11" [ref=f22e208] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=f22e209]:
+    - generic [ref=f22e210]:
+      - generic [ref=f22e211]:
+        - paragraph [ref=f22e212]: Ciężko na sercu
+        - paragraph [ref=f22e213]: Nieoficjalny indeks audycji. Nie publikujemy nagrań ani treści audycji — linki prowadzą do serwisu Polskiego Radia, gdzie odcinki są dostępne legalnie.
+      - generic [ref=f22e214]:
+        - heading "Nawigacja" [level=3] [ref=f22e215]
+        - list [ref=f22e216]:
+          - listitem [ref=f22e217]:
+            - link "Lista odcinków" [ref=f22e218] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f22e219]:
+            - link "Przykładowe opracowanie" [ref=f22e220] [cursor=pointer]:
+              - /url: episode.html
+          - listitem [ref=f22e221]:
+            - link "Odcinek bez opracowania" [ref=f22e222] [cursor=pointer]:
+              - /url: episode-planned.html
+      - generic [ref=f22e223]:
+        - heading "Projekt" [level=3] [ref=f22e224]
+        - list [ref=f22e225]:
+          - listitem [ref=f22e226]:
+            - link "Repozytorium" [ref=f22e227] [cursor=pointer]:
+              - /url: https://github.com/tiriana/ciezko-na-sercu-web
+          - listitem [ref=f22e228]:
+            - link "Audycja w Trójce" [ref=f22e229] [cursor=pointer]:
+              - /url: https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644
+          - listitem [ref=f22e230]: "Mockup: dane demonstracyjne"
