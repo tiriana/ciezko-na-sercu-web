@@ -113,7 +113,7 @@ for (const entry of entries) {
                 <div class="episode-row__actions">
                   <a class="btn btn--solid" href={`/odcinki/${entry.slug}/`}>Strona odcinka</a>
                   {!entry.enriched && entry.sourceUrl && (
-                    <a class="btn" href={entry.sourceUrl}>Polskie Radio ↗</a>
+                    <a class="btn" href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">Polskie Radio ↗</a>
                   )}
                 </div>
               </article>

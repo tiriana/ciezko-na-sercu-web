@@ -117,7 +117,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
           </>
         )}
         {entry.sourceUrl && (
-          <a class="btn" href={entry.sourceUrl}>Odcinek w Polskim Radiu ↗</a>
+          <a class="btn" href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">Odcinek w Polskim Radiu ↗</a>
         )}
       </div>
     </header>
@@ -282,7 +282,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
           <section class="card">
             <h2>Odtwarzanie</h2>
             <p class="card__sub">Odcinek jest dostępny w serwisie Polskiego Radia.</p>
-            <a class="btn btn--solid" href={entry.sourceUrl ?? catalog.program.pageUrl}>
+            <a class="btn btn--solid" href={entry.sourceUrl ?? catalog.program.pageUrl} target="_blank" rel="noopener noreferrer">
               {entry.sourceUrl ? 'Otwórz odcinek ↗' : 'Otwórz audycję ↗'}
             </a>
           </section>
@@ -296,7 +296,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
           audycja zostanie opracowana.
         </p>
         {entry.sourceUrl && (
-          <a class="btn btn--solid" href={entry.sourceUrl}>Posłuchaj w Polskim Radiu ↗</a>
+          <a class="btn btn--solid" href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">Posłuchaj w Polskim Radiu ↗</a>
         )}
       </section>
     )}
