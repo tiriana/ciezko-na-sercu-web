@@ -1,5 +1,7 @@
 # ciezko-na-sercu-web
 
+Opublikowana wersja: **https://ciezko-na-sercu.surge.sh**
+
 Strona z katalogiem odcinków audycji „Ciężko na sercu" (Trójka): lista odcinków, strona
 każdego odcinka i — uzupełniane z czasem — opracowanie: rozpoznane utwory, wykonawcy,
 streszczenie i tematy.
@@ -8,9 +10,10 @@ Strona nie publikuje dźwięku ani treści audycji. Indeksuje odcinki i linkuje 
 
 ## Status
 
-Strona działa na Astro (output statyczny) i publikuje się na Surge przy każdym pushu do `main`
-oraz raz na dobę z harmonogramu. Build czyta wyłącznie `data/`; katalog odcinków odświeża
-workflow, pobierając `episodes.json` z Egnyte.
+Strona działa na Astro (output statyczny) i publikuje się na Surge przy każdym pushu do `main`.
+Build czyta wyłącznie `data/`; katalog odcinków odświeża osobny workflow (środa 04:00 UTC,
+`repository_dispatch` z downloadera albo ręcznie), pobierając `episodes.json` z Egnyte
+i commitując przeliczony `data/catalog.json`.
 
 1. [docs/plan.md](docs/plan.md) — zakres, model danych, harmonogram, ryzyka.
 2. [docs/design.md](docs/design.md) — co przenosimy z wyglądu Trójki, a czego nie.
@@ -35,8 +38,9 @@ Dane:
 
 ## Deploy
 
-Workflow `.github/workflows/deploy.yml` wymaga sekretu `SURGE_TOKEN` (deploy) i `RCLONE_REMOTE`
-(pobranie katalogu z Egnyte); opcjonalna zmienna `RADIO_DIR` (domyślnie `/Shared/Radio`).
+1. `.github/workflows/deploy.yml` — build i publikacja; wymaga sekretu `SURGE_TOKEN`.
+2. `.github/workflows/refresh-catalog.yml` — katalog z Egnyte; wymaga `RCLONE_REMOTE`,
+   opcjonalna zmienna `RADIO_DIR` (domyślnie `/Shared/Radio`).
 
 ## Powiązane repozytoria
 
@@ -44,6 +48,5 @@ Workflow `.github/workflows/deploy.yml` wymaga sekretu `SURGE_TOKEN` (deploy) i 
    odcinki i utrzymuje `episodes.json`. Kompletny, traktowany jako źródło prawdy o katalogu.
 2. [radio-auditions-tagger](https://github.com/tiriana/radio-auditions-tagger) — analiza audio:
    segmentacja mowa/muzyka, transkrypcja, rozpoznawanie utworów, ekstrakcja tematów.
-   Na razie POC (jeden opracowany odcinek, brak zdalnego repozytorium); do przepisania pod
-   schemat tej strony.
+   Wyciąga też metadane opracowań (`episode.json`); import do tej strony: `npm run import:tagger`.
 3. To repozytorium — konsument obu powyższych.
