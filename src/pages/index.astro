@@ -30,17 +30,13 @@ for (const entry of entries) {
           <p class="eyebrow">{catalog.program.station} · środa 00:05</p>
           <h1 class="wordmark"><span>Ciężko</span><span>na sercu</span></h1>
           <p class="hero__lead">
-            Indeks odcinków audycji o ciężkim graniu. Każdy odcinek dostaje własną stronę:
-            tracklistę, streszczenie i tematy — uzupełniane stopniowo, odcinek po odcinku.
+            Indeks odcinków audycji o ciężkim graniu. Każdy odcinek ma własną stronę: program
+            z wejściami i utworami, streszczenie i wykonawców.
           </p>
           <div class="hero__stats">
             <div class="stat">
               <div class="stat__value">{entries.length}</div>
               <div class="stat__label">odcinków w indeksie</div>
-            </div>
-            <div class="stat">
-              <div class="stat__value">{enriched.length}</div>
-              <div class="stat__label">opracowanych</div>
             </div>
           </div>
         </div>
@@ -57,7 +53,6 @@ for (const entry of entries) {
             <div><dt>Stacja</dt><dd>{catalog.program.station}</dd></div>
             <div><dt>Emisja</dt><dd>środa, 00:05</dd></div>
             <div><dt>Kontakt</dt><dd><a href="mailto:ciezko@polskieradio.pl">ciezko@polskieradio.pl</a></dd></div>
-            <div><dt>Opracowane</dt><dd>{enriched.length} z {entries.length}</dd></div>
           </dl>
         </aside>
       </div>
@@ -80,7 +75,7 @@ for (const entry of entries) {
           ))}
         </div>
         <p class="toolbar__progress">
-          <strong data-result-count>{entries.length}</strong> z {entries.length} odcinków · {enriched.length} opracowanych
+          <strong data-result-count>{entries.length}</strong> odcinków
         </p>
       </div>
 
@@ -107,18 +102,9 @@ for (const entry of entries) {
                   </h3>
                 </div>
                 <div class="episode-row__actions">
-                  {entry.enriched ? (
-                    <>
-                      <span class="badge badge--done">opracowany</span>
-                      <a class="btn btn--solid" href={`/odcinki/${entry.slug}/`}>Zobacz stronę odcinka</a>
-                    </>
-                  ) : (
-                    <>
-                      <span class="badge badge--plain">skatalogowany</span>
-                      {entry.sourceUrl && (
-                        <a class="btn" href={entry.sourceUrl}>Polskie Radio ↗</a>
-                      )}
-                    </>
+                  <a class="btn btn--solid" href={`/odcinki/${entry.slug}/`}>Strona odcinka</a>
+                  {!entry.enriched && entry.sourceUrl && (
+                    <a class="btn" href={entry.sourceUrl}>Polskie Radio ↗</a>
                   )}
                 </div>
               </article>

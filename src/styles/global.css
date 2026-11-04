@@ -1350,3 +1350,15 @@ a {
 .tracks__row--entry .tracks__time {
   color: var(--muted);
 }
+
+.site-nav__external {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.site-nav__external svg {
+  width: 11px;
+  height: 11px;
+  opacity: 0.7;
+}

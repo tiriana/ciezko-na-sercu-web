@@ -3,7 +3,7 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
-import { formatClock, formatDate, formatEpisodeTitle, formatRole, formatWeekday, pluralTracks } from '../../lib/format';
+import { formatClock, formatDate, formatEpisodeTitle, formatRole, formatWeekday, pluralEntries, pluralTracks } from '../../lib/format';
 
 export async function getStaticPaths() {
   const entries = await getEntries();
@@ -109,16 +109,11 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         <p class="title-note">Tytuł techniczny z katalogu — audycja nie ma własnego tytułu.</p>
       ) : null}
       <div class="ep-head__meta">
-        {episode ? (
+        {episode && (
           <>
-            <span class="badge badge--done">opracowany</span>
             {episode.durationSec && <span>{formatClock(episode.durationSec)}</span>}
             <span>{pluralTracks(episode.tracks.length)}</span>
-            {episode.quotes.length > 0 && <span>{episode.quotes.length} zapowiedzi</span>}
-          </>
-        ) : (
-          <>
-            <span class="badge badge--plain">skatalogowany</span>
+            {episode.topics.length > 0 && <span>{pluralEntries(episode.topics.length)}</span>}
           </>
         )}
         {entry.sourceUrl && (
@@ -133,7 +128,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
           <section class="card" aria-labelledby="programme-title">
             <h2 id="programme-title">Program audycji</h2>
             <p class="card__sub">
-              {pluralTracks(episode.tracks.length)} i {episode.topics.length} wejść w kolejności emisji
+              {pluralTracks(episode.tracks.length)} i {pluralEntries(episode.topics.length)} w kolejności emisji
             </p>
 
             {entry.audioUrl && (
@@ -297,8 +292,8 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
       <section class="card card--planned" aria-labelledby="planned-title">
         <h2 id="planned-title">Opracowanie jeszcze nie powstało</h2>
         <p class="card__sub">
-          Ten odcinek jest w indeksie, ale nie ma jeszcze tracklisty ani streszczenia. Opracowania
-          powstają po kolei — tempo i kolejność opisuje plan projektu.
+          Ten odcinek jest już w indeksie. Tracklista, wejścia i streszczenie pojawią się, gdy
+          audycja zostanie opracowana.
         </p>
         {entry.sourceUrl && (
           <a class="btn btn--solid" href={entry.sourceUrl}>Posłuchaj w Polskim Radiu ↗</a>

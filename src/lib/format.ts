@@ -71,6 +71,14 @@ export const pluralTracks = (count: number) => {
   return `${count} utworów`;
 };
 
+export const pluralEntries = (count: number) => {
+  if (count === 1) return '1 wejście';
+  if (count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 10 || count % 100 >= 20)) {
+    return `${count} wejścia`;
+  }
+  return `${count} wejść`;
+};
+
 const ROLE_LABELS: Record<string, string> = {
   'prowadzący': 'Prowadzenie',
   producent: 'Produkcja',
