@@ -19,6 +19,25 @@ const { entry, plannedDate } = Astro.props;
 const [catalog, files] = await Promise.all([getCatalog(), getEpisodeFiles()]);
 const episode = files.get(entry.id);
 
+// Tematy i cytaty mają tylko start, więc koniec wyprowadzamy: początek następnej pozycji
+// w tej samej sekcji, a dla ostatniej — 30 s, żeby nie świeciła do końca audycji.
+const SPAN_TAIL_SEC = 30;
+
+const spanEnd = (items: { start: number }[], index: number, durationSec: number | null) => {
+  const next = items[index + 1];
+  const end = next ? next.start : (items[index] as { start: number }).start + SPAN_TAIL_SEC;
+  return durationSec ? Math.min(end, durationSec) : end;
+};
+
+const topicSpans = (episode?.topics ?? []).map((topic, index) => ({
+  ...topic,
+  end: spanEnd(episode?.topics ?? [], index, episode?.durationSec ?? null),
+}));
+const quoteSpans = (episode?.quotes ?? []).map((quote, index) => ({
+  ...quote,
+  end: spanEnd(episode?.quotes ?? [], index, episode?.durationSec ?? null),
+}));
+
 const speechSec = episode?.durationSec
   ? episode.durationSec - (episode.tracks.reduce((sum, track) => sum + track.durationSec, 0) || 0)
   : null;
@@ -100,7 +119,11 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                 </thead>
                 <tbody>
                   {episode.tracks.map((track, index) => (
-                    <tr>
+                    <tr
+                      data-span-start={track.start}
+                      data-span-end={track.start + track.durationSec}
+                      data-kind="track"
+                    >
                       <td class="tracks__idx">
                         {entry.audioUrl ? (
                           <button
@@ -109,8 +132,12 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                             data-track-start={track.start}
                             aria-label={`Odtwórz od ${formatClock(track.start)}`}
                           >
-                            <svg class="track-play__icon" viewBox="0 0 10 12" aria-hidden="true">
+                            <svg class="track-play__icon track-play__icon--play" viewBox="0 0 10 12" aria-hidden="true">
                               <path d="M0 0 10 6 0 12Z" fill="currentColor" />
+                            </svg>
+                            <svg class="track-play__icon track-play__icon--pause" viewBox="0 0 10 12" aria-hidden="true">
+                              <rect x="0" y="0" width="3.5" height="12" fill="currentColor" />
+                              <rect x="6.5" y="0" width="3.5" height="12" fill="currentColor" />
                             </svg>
                           </button>
                         ) : (
@@ -138,8 +165,8 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <h2 id="topics-title">Tematy</h2>
               <p class="card__sub">{episode.topics.length} wątków, z czasem wejścia</p>
               <ol class="timeline">
-                {episode.topics.map((topic) => (
-                  <li>
+                {topicSpans.map((topic) => (
+                  <li data-span-start={topic.start} data-span-end={topic.end} data-kind="topic">
                     {entry.audioUrl ? (
                       <button class="time-link" type="button" data-track-start={topic.start}>
                         {formatClock(topic.start)}
@@ -159,8 +186,8 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <h2 id="quotes-title">Cytaty z zapowiedzi</h2>
               <p class="card__sub">Krótkie fragmenty wypowiedzi prowadzącego, z czasem wejścia</p>
               <ol class="timeline">
-                {episode.quotes.map((quote) => (
-                  <li>
+                {quoteSpans.map((quote) => (
+                  <li data-span-start={quote.start} data-span-end={quote.end} data-kind="quote">
                     {entry.audioUrl ? (
                       <button class="time-link" type="button" data-track-start={quote.start}>
                         {formatClock(quote.start)}

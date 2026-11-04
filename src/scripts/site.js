@@ -54,6 +54,13 @@ if (search) {
 const audio = document.querySelector('[data-episode-audio]');
 if (audio) {
   const players = [...document.querySelectorAll('[data-track-start]')];
+  // Pozycje, które mają świecić w trakcie odtwarzania: utwory, tematy i cytaty.
+  const spans = [...document.querySelectorAll('[data-span-start]')].map((element) => ({
+    element,
+    start: Number(element.dataset.spanStart),
+    end: Number(element.dataset.spanEnd),
+    kind: element.dataset.kind,
+  }));
 
   let pendingSeek = null;
 
@@ -74,8 +81,52 @@ if (audio) {
     audio.load();
   };
 
+  // Stan liczymy zawsze z currentTime, a nie z własnego zegara: po powrocie do karty,
+  // po przewinięciu i po zmianie prędkości odtwarzania wyróżnienie zgadza się samo.
+  const activeSpan = (time) => spans.find((span) => time >= span.start && time < span.end) ?? null;
+
+  const setPlayingIcon = (button, playing) => {
+    if (!button) return;
+    button.dataset.state = playing ? 'playing' : 'paused';
+    button.dataset.label ??= button.getAttribute('aria-label') ?? '';
+    button.setAttribute('aria-label', playing ? 'Wstrzymaj odtwarzanie' : button.dataset.label);
+  };
+
+  const sync = () => {
+    const active = audio.paused ? null : activeSpan(audio.currentTime);
+    for (const span of spans) {
+      const isActive = active === span;
+      span.element.classList.toggle('is-active', isActive);
+      if (isActive) span.element.setAttribute('aria-current', 'true');
+      else span.element.removeAttribute('aria-current');
+
+      if (span.kind === 'track') {
+        setPlayingIcon(span.element.querySelector('.track-play'), isActive);
+      }
+    }
+  };
+
+  audio.addEventListener('timeupdate', sync);
+  audio.addEventListener('play', sync);
+  audio.addEventListener('pause', sync);
+  audio.addEventListener('ended', sync);
+  audio.addEventListener('seeked', sync);
+  // W tle przeglądarka ogranicza timeupdate — po powrocie do karty stan dosynchronizowuje się tutaj.
+  document.addEventListener('visibilitychange', sync);
+
   for (const button of players) {
     const start = Number(button.dataset.trackStart);
-    button.addEventListener('click', () => playFrom(start));
+    button.addEventListener('click', () => {
+      const row = button.closest('[data-span-start]');
+      const isCurrent = row
+        ? audio.currentTime >= Number(row.dataset.spanStart) && audio.currentTime < Number(row.dataset.spanEnd)
+        : false;
+      if (isCurrent && !audio.paused) {
+        audio.pause();
+        sync();
+        return;
+      }
+      playFrom(start);
+    });
   }
 }

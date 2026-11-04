@@ -1189,3 +1189,35 @@ a {
   color: var(--muted);
   font-size: 0.85rem;
 }
+
+/* Pozycja aktualnie odtwarzana */
+
+.track-play__icon--pause {
+  display: none;
+}
+
+.track-play[data-state="playing"] .track-play__icon--play {
+  display: none;
+}
+
+.track-play[data-state="playing"] .track-play__icon--pause {
+  display: block;
+}
+
+.tracks tr.is-active {
+  background: rgba(227, 25, 54, 0.06);
+}
+
+.tracks tr.is-active .tracks__artist,
+.tracks tr.is-active .tracks__time {
+  color: var(--accent);
+}
+
+.timeline li.is-active > p,
+.timeline li.is-active .time-link {
+  color: var(--accent);
+}
+
+.timeline li.is-active::before {
+  box-shadow: 0 0 0 4px rgba(227, 25, 54, 0.18);
+}
