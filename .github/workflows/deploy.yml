@@ -1,0 +1,34 @@
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+env:
+  # becomes `dist` once the Astro build (M0/M1) replaces the mockup
+  SITE_DIR: mockup
+  SURGE_DOMAIN: ciezko-na-sercu.surge.sh
+  SURGE_VERSION: 0.56.0
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Publish to Surge
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        run: npx --yes surge@$SURGE_VERSION "$SITE_DIR" "$SURGE_DOMAIN"

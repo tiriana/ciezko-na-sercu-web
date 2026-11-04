@@ -178,7 +178,8 @@ z `tracks[].artist`, więc nie wymaga osobnego pliku wejściowego.
    harmonogramu, walidowane w buildzie. Błąd w danych wywala build z nazwą pliku, zamiast
    renderować puste pola.
 4. **Deploy: surge.sh.** Produkcja `ciezko-na-sercu.surge.sh`, podglądy `pr-<n>.ciezko-na-sercu.surge.sh`.
-   Sekrety `SURGE_LOGIN` i `SURGE_TOKEN` w GitHub Actions. Surge jest darmowy dla tego użycia.
+   Sekret `SURGE_TOKEN` wystarcza — CLI z tokenem w env wysyła `email: "token"` i pobiera konto
+   po samym tokenie, więc `SURGE_LOGIN` nie jest potrzebny. Surge jest darmowy dla tego użycia.
 5. **Workflow**: `build` (walidacja + build na każdym pushu i PR), `preview` (deploy podglądu
    z PR-a), `deploy` (produkcja z `main`).
 6. Język strony: polski, `<html lang="pl">`; treści bez tłumaczeń.
