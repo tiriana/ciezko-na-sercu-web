@@ -1172,3 +1172,7 @@ a {
 .about p {
   margin: 0 0 18px;
 }
+
+.credit__quote {
+  color: var(--muted);
+}

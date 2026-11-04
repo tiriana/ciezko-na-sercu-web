@@ -71,5 +71,16 @@ export const pluralTracks = (count: number) => {
   return `${count} utworów`;
 };
 
+const ROLE_LABELS: Record<string, string> = {
+  'prowadzący': 'Prowadzenie',
+  producent: 'Produkcja',
+  wydawca: 'Wydawca',
+  realizacja: 'Realizacja',
+  'gość': 'Gość',
+  inne: 'Współpraca',
+};
+
+export const formatRole = (role: string) => ROLE_LABELS[role] ?? role;
+
 export const formatEpisodeTitle = (title: string) =>
   title.replace(/godz\.\s*(\d{2})(\d{2})\b/, 'godz. $1:$2');

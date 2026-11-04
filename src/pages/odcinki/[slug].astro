@@ -3,7 +3,7 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
-import { formatClock, formatDate, formatEpisodeTitle, formatWeekday, pluralTracks } from '../../lib/format';
+import { formatClock, formatDate, formatEpisodeTitle, formatRole, formatWeekday, pluralTracks } from '../../lib/format';
 
 export async function getStaticPaths() {
   const entries = await getEntries();
@@ -172,6 +172,24 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <div class="note">
                 Streszczenie jest szkicem z modelu i wymaga redakcji przed publikacją.
               </div>
+            </section>
+          )}
+
+          {episode.credits.length > 0 && (
+            <section class="card" aria-labelledby="credits-title">
+              <h2 id="credits-title">Credits</h2>
+              <p class="card__sub">Osoby wymienione w audycji, z czasem wejścia wypowiedzi</p>
+              <dl class="kv">
+                {episode.credits.map((credit) => (
+                  <div>
+                    <dt>{formatRole(credit.role)}</dt>
+                    <dd>
+                      {credit.name}
+                      {credit.quote && <span class="credit__quote"> — „{credit.quote}"</span>}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
             </section>
           )}
 

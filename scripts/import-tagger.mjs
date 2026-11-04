@@ -61,6 +61,12 @@ const toContract = (episode, analyzedAt, id) => {
       links: [],
     })),
     quotes: [...quotes.values()].sort((a, b) => a.start - b.start),
+    credits: (episode.credits ?? []).map((credit) => ({
+      role: credit.role,
+      name: credit.name,
+      time: Math.round(credit.time ?? 0),
+      quote: credit.quote ?? '',
+    })),
   };
 };
 

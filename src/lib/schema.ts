@@ -44,6 +44,9 @@ export const episodeSchema = z.object({
     }),
   ),
   quotes: z.array(z.object({ start: z.number(), text: z.string() })),
+  credits: z
+    .array(z.object({ role: z.string(), name: z.string(), time: z.number(), quote: z.string() }))
+    .default([]),
 });
 
 export type Catalog = z.infer<typeof catalogSchema>;
