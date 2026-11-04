@@ -13,5 +13,8 @@
   "dependencies": {
     "astro": "^6.4.8",
     "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
   }
 }
