@@ -1,0 +1,865 @@
+{
+  "version": 1,
+  "episodeId": "82d57411-285b-4714-b434-8cac32f42954",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 111074096,
+  "fileMtimeMs": 1793610279628.4207,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 13.18
+    },
+    {
+      "index": 1,
+      "start": 522.79,
+      "end": 742.75
+    },
+    {
+      "index": 2,
+      "start": 978.88,
+      "end": 1142.62
+    },
+    {
+      "index": 3,
+      "start": 1524.23,
+      "end": 1603.64
+    },
+    {
+      "index": 4,
+      "start": 1783.52,
+      "end": 1888.96
+    },
+    {
+      "index": 5,
+      "start": 2323.17,
+      "end": 2430.59
+    },
+    {
+      "index": 6,
+      "start": 2747.24,
+      "end": 2832.03
+    },
+    {
+      "index": 7,
+      "start": 3088.93,
+      "end": 3146.3
+    },
+    {
+      "index": 8,
+      "start": 3263.62,
+      "end": 3396.35
+    },
+    {
+      "index": 9,
+      "start": 3725.28,
+      "end": 3807.77
+    },
+    {
+      "index": 10,
+      "start": 4031.46,
+      "end": 4127.84
+    },
+    {
+      "index": 11,
+      "start": 4594.24,
+      "end": 4659.23
+    },
+    {
+      "index": 12,
+      "start": 5332.77,
+      "end": 5489.63
+    },
+    {
+      "index": 13,
+      "start": 5951.43,
+      "end": 6022.88
+    },
+    {
+      "index": 14,
+      "start": 6445.89,
+      "end": 6589.44
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 0.8,
+      "text": "Trójka"
+    },
+    {
+      "start": 0.8,
+      "end": 4.64,
+      "text": "Program Trzeci Polskiego Radia"
+    },
+    {
+      "start": 4.64,
+      "end": 10.76,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 523.67,
+      "end": 529.95,
+      "text": "Tydzień temu Wolves in the Throne Room nas pożegnali, dzisiaj nas powitali."
+    },
+    {
+      "start": 530.29,
+      "end": 538.17,
+      "text": "Piosenka inna, ale zespół ten sam i ten sam najnowszy album amerykańskiej grupy zatytułowany Estuary."
+    },
+    {
+      "start": 538.89,
+      "end": 549.15,
+      "text": "Jak zwykle w przypadku nagrań wilków z sali tronowej, mamy do czynienia z kruchą równowagą pomiędzy agresją a budowaniem nastroju."
+    },
+    {
+      "start": 549.15,
+      "end": 561.17,
+      "text": "A jak to się sprawdza na koncertach? Przekonamy się już lada moment, bo Wolves in the Throne Room zagrają 3 listopada w krakowskim Hype Parku,"
+    },
+    {
+      "start": 561.67,
+      "end": 571.33,
+      "text": "a przed nimi Worm, czyli symulator symfonicznego Blacku z lat 90. oraz Blackpunkowy Final Dose."
+    },
+    {
+      "start": 571.85,
+      "end": 584.17,
+      "text": "Mówię Wam o tym wszystkim, bo słuchacie ciężko na sercu w trójce audycji o metalu i okolicach wydania zapowiadającego ciekawe koncerty listopadowe."
+    },
+    {
+      "start": 584.73,
+      "end": 591.59,
+      "text": "Kłania się Wam Jarek Szubrych, który audycję prowadzi i Mariusz Owczarek, który ją wydaje."
+    },
+    {
+      "start": 591.67,
+      "end": 603.63,
+      "text": "Nie jest żadną niespodzianką, że jesień obfituje w koncerty klubowe, więc szykujcie się na sporą porcję informacji i oczywiście muzyki."
+    },
+    {
+      "start": 604.49,
+      "end": 618.57,
+      "text": "Na początek, bo akurat taką mamy kumulację na początku miesiąca, garść atrakcji dla bardziej klasycznych, dla fanów bardziej klasycznych odmian ciężarów."
+    },
+    {
+      "start": 618.57,
+      "end": 629.35,
+      "text": "Fiński zespół Beast in Black, wykonujący heavy metal gładki i urodziwy zaprasza 3 listopada do Prezero Areny w Gliwicach."
+    },
+    {
+      "start": 630.13,
+      "end": 634.77,
+      "text": "Zagrają swoje hymny w towarzystwie grup Sonata Arktika."
+    },
+    {
+      "start": 635.31,
+      "end": 643.83,
+      "text": "To power metal też z Finlandii z lekko progresywnym zacięciem, klasyczny już zespół oraz włoskiego Frozen Crown."
+    },
+    {
+      "start": 644.17,
+      "end": 649.39,
+      "text": "Szwedzka grupa Elaine wraca do Polski na aż trzy koncerty."
+    },
+    {
+      "start": 649.89,
+      "end": 659.87,
+      "text": "Trzeci listopada w Warszawie, w Hydrozagadce, dzień później w krakowskim Zaścianku oraz piątego listopada w poznańskich dwóch progach."
+    },
+    {
+      "start": 660.59,
+      "end": 670.63,
+      "text": "Wraz z nimi Rexoria i Serapis Project będzie zatem epicko, melodyjnie, patetycznie i symfonicznie."
+    },
+    {
+      "start": 670.63,
+      "end": 677.39,
+      "text": "Na power metalowy wieczór zaprasza też warszawska Proxima, już 4 listopada."
+    },
+    {
+      "start": 677.89,
+      "end": 684.45,
+      "text": "Zagrają Brytyjczycy z Glory Hammer, Szwedzi z Majestiki oraz fiński Arion."
+    },
+    {
+      "start": 685.01,
+      "end": 686.99,
+      "text": "Glory Hammer to ciekawy stwór."
+    },
+    {
+      "start": 687.85,
+      "end": 706.49,
+      "text": "Christopher Bowes, który odniósł wielki sukces z Ale Storm, czyli heavy metalem marynistyczno-pirackim, zakumał, że muzyka muzyką, ale metalowcy po prostu kochają tematyczne parki rozrywki, więc zbudował im nowy."
+    },
+    {
+      "start": 706.49,
+      "end": 720.25,
+      "text": "Glory Hammer to heroiczne fantazy w kosmosie, a więc rycerze w zbrojach walą się po zakutych łbach młotami, ale latają po galaktyce statkami kosmicznymi."
+    },
+    {
+      "start": 721.13,
+      "end": 725.47,
+      "text": "Straszne bzdury, no ale nikt nie powiedział, że muzyka musi być mądra."
+    },
+    {
+      "start": 725.67,
+      "end": 728.49,
+      "text": "Może też służyć po prostu na rozrywce."
+    },
+    {
+      "start": 728.49,
+      "end": 736.19,
+      "text": "Nie przypuszczałem, że kiedykolwiek puszczę wam ciężko na sercu Glory Hammer, ale co tam, spróbujmy."
+    },
+    {
+      "start": 736.57,
+      "end": 741.19,
+      "text": "W najgorszym wypadku dowiecie się, czemu takie brzmienia zwykle omijam."
+    },
+    {
+      "start": 741.19,
+      "end": 742.75,
+      "text": "Muzyka"
+    },
+    {
+      "start": 978.88,
+      "end": 990.18,
+      "text": "Od 5 listopada we wspólnej trasie będzie V z grupą Fertile Hump i jest to taki zestaw, że bardzo będę chciał go zobaczyć."
+    },
+    {
+      "start": 990.18,
+      "end": 1002.04,
+      "text": "A jeszcze w każdym mieście dochodzi do tego trzeci zespół i też każdy dobry, bo będą to albo Love Worms, albo Wolfpack Heading Nowhere, albo Sorrow Head."
+    },
+    {
+      "start": 1002.58,
+      "end": 1012.8,
+      "text": "Zaczynają od Gdańska, potem mamy Olsztyn, Łódź, Lublin, Warszawę, Kraków, Wrocław, Katowice, Szczecin, Poznań i Toruń."
+    },
+    {
+      "start": 1012.8,
+      "end": 1015.88,
+      "text": "W, Fertile Hump i Goście."
+    },
+    {
+      "start": 1016.66,
+      "end": 1025.3,
+      "text": "Kraj Stagony kontynuują objeżdżanie ojczyzny z jubileuszem Moonlight, której to płycie stuknęły trzy dekady."
+    },
+    {
+      "start": 1026.34,
+      "end": 1036.56,
+      "text": "6 listopada w Chełmży, potem wystąpią w Żaganiu i pod koniec miesiąca w Gorzowie Wielkopolskim, Szczecinie oraz Gdańsku."
+    },
+    {
+      "start": 1036.56,
+      "end": 1047.62,
+      "text": "I oczywiście wszędzie też będą z nimi grały różne zaprzyjaźnione zespoły, m.in. Balzagot i Witur, albo Wajtur."
+    },
+    {
+      "start": 1048.66,
+      "end": 1056.98,
+      "text": "Również od 6 listopada rozpoczyna się jesienna trasa dwóch krakowskich składów nazwana Pathetic We Fall."
+    },
+    {
+      "start": 1056.98,
+      "end": 1073.64,
+      "text": "To wspólne przedsięwzięcie Skeptic i Die Disease, które odwiedzi Przemyśl, Zamość, Kielce, Sosnowiec, Kraków, Legnice, Świdnice, Bielsko-Białą, Rybnik, Bydgoszcz oraz Skarżysko-Kamienną."
+    },
+    {
+      "start": 1074.34,
+      "end": 1080.66,
+      "text": "W niektórych miastach towarzyszyć im będą albo Zmarłym, albo Drown My Day."
+    },
+    {
+      "start": 1080.66,
+      "end": 1094.72,
+      "text": "I jeszcze jedna trasa rusza 6 listopada, jakby się umówili, a właściwie kontynuacja trasy, bo pierwsza część już się odbywała w październiku."
+    },
+    {
+      "start": 1095.26,
+      "end": 1100.3,
+      "text": "To Illusion, który zabiera ze sobą Hostie i Ironhead."
+    },
+    {
+      "start": 1100.86,
+      "end": 1109.26,
+      "text": "Illusion są świeżo po premierze swojej nowej płyty, numer 9, więc będzie im zależeć na tym, żeby przekonać do niej fanów."
+    },
+    {
+      "start": 1109.26,
+      "end": 1120.36,
+      "text": "W listopadzie ten skład zagra w Warszawie, Białymstoku, Wrocławiu, Łodzi i Lublinie, a na początku grudnia jeszcze w Poznaniu i Krakowie."
+    },
+    {
+      "start": 1120.94,
+      "end": 1134.82,
+      "text": "Dat i miejsc, nazw klubów, w których te wszystkie koncerty z tych wszystkich tras się odbywają, nie wymieniam, bo audycja ma tylko dwie godziny, a jak już mówiłem, listopad mamy urodzajny."
+    },
+    {
+      "start": 1134.82,
+      "end": 1140.82,
+      "text": "No a poza tym nie mogę cały czas gadać, trzeba też popuszczać piosenki."
+    },
+    {
+      "start": 1140.82,
+      "end": 1142.62,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1524.23,
+      "end": 1535.47,
+      "text": "Wciąż jeszcze nie możemy się uwolnić, nie możemy się wydostać z tego 6 listopada. Tego dnia nie lada atrakcja czeka mieszkańców stolicy."
+    },
+    {
+      "start": 1535.47,
+      "end": 1554.59,
+      "text": "W klubie Progresja odbędzie się wspólny koncert Hatebreed i Life of Agony, dwóch znakomitych amerykańskich zespołów. Life of Agony to dla mnie bardzo ważna grupa. Przede wszystkim dwie pierwsze płyty, River Runs Red i Ugly, trafiły prosto w serduszko."
+    },
+    {
+      "start": 1554.59,
+      "end": 1571.91,
+      "text": "Ale szkoda, że obecnie zespół żyje wyłącznie. Przeszłością przydałby się jakiś nowy materiał, bo Hatebreed przyjeżdżają z całkiem nową płytą zatytułowaną Fatal Paradox i żre to pięknie, o czym za chwilę się przekonacie."
+    },
+    {
+      "start": 1571.91,
+      "end": 1583.99,
+      "text": "Nie wymyślają koła na nowo, jak zawsze jadą na granicy thraszu i brutalnego hardcora i jak zawsze w przypadku Hatebreed ma to siłę i jakość."
+    },
+    {
+      "start": 1583.99,
+      "end": 1601.05,
+      "text": "A przed amerykańskimi legendami wystąpi na tymże samym koncercie 6 listopada Progresja, legenda nasza rodzima, bydgoska. Zespół schizma, który też specjalizuje się w zmetalizowanym hardkorze."
+    },
+    {
+      "start": 1601.91,
+      "end": 1603.61,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 1783.52,
+      "end": 1800.56,
+      "text": "Monolord to zespół szwedzki, czy właściwie szwedzko-fiński, który doskonale potrafi wymyślać i grać ciężkie, ponure, postsabatowskie rify na pograniczu Stonera i Doomu."
+    },
+    {
+      "start": 1800.56,
+      "end": 1815.64,
+      "text": "Dobra rzecz. Przed nimi zobaczycie równie smutną i ciężką francuską formację Mars Red Sky, a będzie to miało miejsce w Warszawie 7 listopada i dzień później w Krakowie."
+    },
+    {
+      "start": 1816.02,
+      "end": 1830.5,
+      "text": "Pozostając w klimacie, niczym walec przetoczy się przez Polskę trasa zespołu Dopplord, czyli jednej z czołowych rodzimych grup parających się z toner Doom Metalem z piekła rodem."
+    },
+    {
+      "start": 1830.96,
+      "end": 1845.12,
+      "text": "Zespołu, który ostatnio gra chyba częściej w świecie niż w ojczyźnie, a kontrakt z francuską wytwórnią Season of Mist zapewne pozwoli im wypłynąć na jeszcze szersze wody."
+    },
+    {
+      "start": 1845.6,
+      "end": 1851.86,
+      "text": "I bardzo dobrze i to jest zasłużony kolejny krok naprzód Dopplord."
+    },
+    {
+      "start": 1851.86,
+      "end": 1863.16,
+      "text": "Na niektórych koncertach pojawią się również grupy Species i Clairvoyance i jeszcze jak w różnych konfiguracjach i to też jest bardzo dobra."
+    },
+    {
+      "start": 1863.58,
+      "end": 1876.96,
+      "text": "Wiadomość, a Dopplord z kolegami zagra 10 listopada w Lublinie, dzień później w Katowicach, następnie w Opolu, Krakowie, Rzeszowie i Warszawie."
+    },
+    {
+      "start": 1876.96,
+      "end": 1886.54,
+      "text": "Posłuchajmy zatem, jak riffami kruszy czaszki Dopplord na ich ostatniej, jak na razie, płycie Songs for Satan."
+    },
+    {
+      "start": 1886.54,
+      "end": 1888.96,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2323.17,
+      "end": 2333.85,
+      "text": "Floryda kojarzy się przede wszystkim z death metalem i prawidłowo, ale to nie znaczy, że tylko death metal można tam grać."
+    },
+    {
+      "start": 2333.85,
+      "end": 2347.35,
+      "text": "Okazuje się, że nikt tego nie sprawdza. Taki na przykład Camelot od trzech dekad z okładem gra symfoniczny power metal i jest jednym z największych współczesnych asów gatunku."
+    },
+    {
+      "start": 2348.43,
+      "end": 2359.47,
+      "text": "Camelot przybywa do nas w listopadzie na dwa koncerty. Dziesiątego zagra w krakowskim klubie Studio, a dzień później w warszawskiej Progresji."
+    },
+    {
+      "start": 2359.47,
+      "end": 2373.29,
+      "text": "Natomiast w Poznaniu 11 listopada dodatkowy powód do świętowania będą mieli fani brutalnego hardcora, deathcora, beatdownu i pokrewnych brzmień."
+    },
+    {
+      "start": 2373.85,
+      "end": 2384.59,
+      "text": "Belgijska grupa Nasty będzie stosować przemoc wobec publiczności, wspierana przez Get the Shot, Crawl Space oraz Pint Glass."
+    },
+    {
+      "start": 2385.89,
+      "end": 2393.61,
+      "text": "I również 11 listopada zaczyna się trasa, która powinna zainteresować fanów black metalu."
+    },
+    {
+      "start": 2393.61,
+      "end": 2406.43,
+      "text": "Krakowskie Medico Peste bierze ze sobą kolegów z litewskiego Sajzy Fijan, niedawno tutaj zresztą granego oraz naszych rodaków z Nihilum."
+    },
+    {
+      "start": 2406.43,
+      "end": 2428.57,
+      "text": "11 listopada grają w Olsztynie, później na chwilę wybierają się na północ na Litwę i Łotwę, by powrócić 19 listopada, kiedy to zagrają razem we Wrocławiu, dzień później w Poznaniu i 21 kończą w Warszawie."
+    },
+    {
+      "start": 2429.57,
+      "end": 2430.59,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2747.24,
+      "end": 2769.56,
+      "text": "Amerykańska grupa Holy Phone, czyli bardziej rockowo chyba niż metalowo, chociaż też potrafią docisnąć, przyjeżdża do nas na dwa koncerty, na których pokażą się również Brytyjczycy z Outlander oraz nasze rodzime składy Give Up To Failure oraz Pure Bedlam."
+    },
+    {
+      "start": 2769.92,
+      "end": 2777.5,
+      "text": "Rzecz będzie się działa 11 listopada we Wrocławiu i dzień później w Warszawie."
+    },
+    {
+      "start": 2778.26,
+      "end": 2792.3,
+      "text": "Atrophy to zespół z Arizony, z pierwszej fali thrashmetalu, który dobrze się zapowiadał, ale zginął potem gdzieś w mroku dziejów i prawdę mówiąc nie wiedziałem, że wciąż istnieje,"
+    },
+    {
+      "start": 2792.3,
+      "end": 2804.86,
+      "text": "czy raczej nie wiedziałem, że znowu istnieje, bo reaktywowali się kilka lat temu i 12 listopada zagrają w Lublinie, a dzień później w Łodzi."
+    },
+    {
+      "start": 2804.86,
+      "end": 2819.38,
+      "text": "Co jeszcze ciekawsze, w tej podróży Atrophy towarzyszy irańska grupa Confess, obecnie właściwie irańsko-norweska, bo ze swojej ojczyzny musieli uciekać."
+    },
+    {
+      "start": 2819.38,
+      "end": 2827.18,
+      "text": "Wcześniej byli ofiarami prześladowań, tak po prostu za to, że chcieli po swojemu grać swoją ukochaną muzykę."
+    },
+    {
+      "start": 2827.38,
+      "end": 2829.34,
+      "text": "Posłuchajmy zatem Confess."
+    },
+    {
+      "start": 3089.93,
+      "end": 3102.15,
+      "text": "Słuchacie ciężko na sercu w trójce, a ja mam dla was trzy słowa o trzech koncertach, do których nie muszę przekonywać żadnego fana ekstremy."
+    },
+    {
+      "start": 3102.59,
+      "end": 3112.65,
+      "text": "Grecki death metalowy potwór Dead Congregation, który swoją drogą mógłby wreszcie coś nowego wydać, ale jakoś się do tego nie kwapi,"
+    },
+    {
+      "start": 3112.65,
+      "end": 3123.25,
+      "text": "przybywa do Katowic, Warszawy i Gdańska odpowiednio 12, 13 i 14 listopada."
+    },
+    {
+      "start": 3123.85,
+      "end": 3133.09,
+      "text": "Dzielić scenę z Dead Congregation będzie nasz rodzimy Witchmaster, który świętuje trzy dekady swojej występnej działalności."
+    },
+    {
+      "start": 3133.09,
+      "end": 3142.31,
+      "text": "Nie będzie lepszej okazji, by puścić państwu piosenkę Witchmaster, a zespołowi oczywiście życzę wszystkiego najlepszego z okazji urodzin."
+    },
+    {
+      "start": 3142.65,
+      "end": 3146.31,
+      "text": "Dzień dobry!"
+    },
+    {
+      "start": 3263.62,
+      "end": 3273.42,
+      "text": "Niemiecka grupa Erdling, trochę gotycka, trochę industrialna, trochę metalowa, przybywa 13 listopada."
+    },
+    {
+      "start": 3273.42,
+      "end": 3288.92,
+      "text": "Również 13 listopada rozpoczyna trasę zespół Godslat, czyli techniczny, brutalny death metal, rodzimego Chowu, który niedawno wypuścił bardzo dobrą płytę The Art of Deconstruction."
+    },
+    {
+      "start": 3289.76,
+      "end": 3300.06,
+      "text": "13 zagrają we Wrocławiu, 14 w Katowicach, a 20 i 21 listopada to Godslat w Warszawie i Toruniu."
+    },
+    {
+      "start": 3300.06,
+      "end": 3313.36,
+      "text": "I oczywiście zawsze w towarzystwie innych zespołów młodych i zdolnych, zatem warto sprawdzić jak brzmi przyszłość tego naszego rodzimego metalu."
+    },
+    {
+      "start": 3314.38,
+      "end": 3322.74,
+      "text": "A listopad to, jak już wspominałem, dla polskich fanów power metalu nie lada wyzwanie, czy raczej dla ich portfeli,"
+    },
+    {
+      "start": 3322.74,
+      "end": 3329.46,
+      "text": "bo do wymienionych już wcześniej składów dodać należy labirynt."
+    },
+    {
+      "start": 3329.6,
+      "end": 3336.66,
+      "text": "Włoska grupa zagra w Krakowie, a jest to zespół bardzo ceniony przez fanów takiego grania."
+    },
+    {
+      "start": 3337.02,
+      "end": 3345.26,
+      "text": "Wzlatywać się będzie ku niebiosom na skrzydłach smoków już 14 listopada."
+    },
+    {
+      "start": 3345.76,
+      "end": 3353.36,
+      "text": "Zupełnie innych wrażeń spodziewać się za to mogą uczestnicy koncertu, który tego samego dnia odbędzie się w Warszawie,"
+    },
+    {
+      "start": 3353.78,
+      "end": 3359.36,
+      "text": "w Hydrozagadce, bo tam głównym daniem jest amerykański The Browning,"
+    },
+    {
+      "start": 3359.36,
+      "end": 3371.34,
+      "text": "który łączy def-core'ową brutalność z elektroniczną chłostą, a przystawkami będą słoweński Within Destruction i czeski Abbey Falls."
+    },
+    {
+      "start": 3372.28,
+      "end": 3382.7,
+      "text": "Siła gniewu to nazwa imprezy, która odbędzie się 14 listopada w Poznaniu, a na niej Hellborn, Kingdom i Damage Case."
+    },
+    {
+      "start": 3382.7,
+      "end": 3390.28,
+      "text": "Hellborn niedawno wydali długo zapowiadaną płytę, która nosi tytuł po prostu Siedem."
+    },
+    {
+      "start": 3390.7,
+      "end": 3394.84,
+      "text": "Zatem posłuchajmy na Hellborn i siły ich gniewu."
+    },
+    {
+      "start": 3725.28,
+      "end": 3732.76,
+      "text": "New Metal i Metalcore w jednym stali domu, czy może raczej w jednym będą grali spotku."
+    },
+    {
+      "start": 3733.38,
+      "end": 3740.34,
+      "text": "Papa Roach, Landmarks i Sleep Theory wystąpią w Katowicach 16 listopada."
+    },
+    {
+      "start": 3740.78,
+      "end": 3748.28,
+      "text": "Dla tych, co lubią sobie potańczyć przy ciężarach, nie lada gratka szykuje się we Wrocławiu."
+    },
+    {
+      "start": 3748.36,
+      "end": 3756.18,
+      "text": "Dzień później w klubie A2, gdzie wystąpią Health, Carpenter Brut i jeszcze australijski Bose."
+    },
+    {
+      "start": 3756.78,
+      "end": 3761.22,
+      "text": "A konkurencję dla tego składu, i to nie lichą, szykuje Kraków."
+    },
+    {
+      "start": 3761.66,
+      "end": 3771.58,
+      "text": "Również 17 listopada na koncercie w Tauron Arenie gwiazdą będzie Korn, a przed nimi wystąpią Architects i Pixel Grip."
+    },
+    {
+      "start": 3771.58,
+      "end": 3779.96,
+      "text": "Z tym Kornem to jest tak, przyznać to muszę, że długo nie mogłem się do niego przekonać."
+    },
+    {
+      "start": 3780.46,
+      "end": 3787.74,
+      "text": "Kiedy byli w szczycie popularności, nie tylko nie słuchałem, ale wręcz nie lubiłem i polubiłem na starość."
+    },
+    {
+      "start": 3788.16,
+      "end": 3793.68,
+      "text": "Nie, żebym od razu został szalikowcem, ale już rozumiem, czemu to dobre."
+    },
+    {
+      "start": 3793.68,
+      "end": 3803.12,
+      "text": "I co ciekawe, może zresztą wcale to nie jest ciekawe, ale i tak wam powiem, bardzo lubię te późne, współczesne płyty KORNA."
+    },
+    {
+      "start": 3803.46,
+      "end": 3806.18,
+      "text": "Zagram więc coś stosunkowo świeżego."
+    },
+    {
+      "start": 4031.46,
+      "end": 4043.56,
+      "text": "Power Metal, New Metal, taneczny metal. Wszystko fajnie, ale na szczęście fani brutalności też coś dla siebie w listopadzie znajdą."
+    },
+    {
+      "start": 4043.94,
+      "end": 4054.02,
+      "text": "Niestety dwa najciekawsze koncerty z tej działki odbędą się w tym miesiącu, tego samego dnia, oczywiście w dwóch różnych miastach."
+    },
+    {
+      "start": 4054.02,
+      "end": 4070.26,
+      "text": "W krakowskim zaścianku 17 listopada death metalową masakrę zgotują przybyłym Fleshcrawl, Avused i Tortured Corpse i jeszcze solidną dawką jadowitego traszu doprawi Violentor."
+    },
+    {
+      "start": 4070.48,
+      "end": 4080.96,
+      "text": "Natomiast w Warszawie, w klubie Proxima usłyszymy i zobaczymy tego dnia trzech gigantów zza oceanu."
+    },
+    {
+      "start": 4081.74,
+      "end": 4088.24,
+      "text": "Amerykański Carnifex, który za chwilę wyda nowy album Modern Misery."
+    },
+    {
+      "start": 4088.76,
+      "end": 4102.96,
+      "text": "Nadejczyków z Despiced Icon, których Shadow Work też jest jeszcze świeży i jest przepyszny, jeśli ktoś gustuje w takim nowoczesnym, deathcore'owym, ale też bardzo oryginalnym graniu."
+    },
+    {
+      "start": 4103.74,
+      "end": 4117.08,
+      "text": "Natomiast Suffocation chyba przedstawiać nie muszę, bo to mistrzowie technicznego death metalu, a na koncertach nie grają muzyki, tylko żywcem pożerają publiczność."
+    },
+    {
+      "start": 4117.08,
+      "end": 4123.54,
+      "text": "A na rozgrzewkę jeszcze poturbują Was Niemcy ze slamowej grupy Got Rektomi."
+    },
+    {
+      "start": 4124.18,
+      "end": 4126.1,
+      "text": "Szykuje się czarowny wieczór."
+    },
+    {
+      "start": 4126.1,
+      "end": 4127.84,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4594.24,
+      "end": 4613.1,
+      "text": "Imperial Triumphant też dla regularnych słuchaczy ciężko na sercu nowością nie jest, bo ich awangardowy stop black metalu z Free Jazzem prezentuje tu ciężko, ciężko? Często, ale ciężko też i ochoczo."
+    },
+    {
+      "start": 4613.1,
+      "end": 4632.66,
+      "text": "I oczywiście zaprezentuję z przyjemnością znowu za chwilę, bo przybywają do nas z dwoma koncertami. 17 listopada zobaczycie Imperial Triumphant w Krakowie w Hype Parku, a dzień później w stolicy w niebie i zapewniam was, będziecie w niebie."
+    },
+    {
+      "start": 4632.66,
+      "end": 4644.48,
+      "text": "Ale uwaga, choć wspaniały Imperial Triumphant jest gwiazdą w wieczoru, koniecznie proszę zwrócić uwagę również na zespół, który będzie występował przed nimi."
+    },
+    {
+      "start": 4644.48,
+      "end": 4657.34,
+      "text": "Bo Knoll to miazga i w wersji studyjnej i jeszcze bardziej scenicznej. Niewiarygodnie intensywny black grind. Będziecie Państwo zadowoleni."
+    },
+    {
+      "start": 5333.51,
+      "end": 5342.55,
+      "text": "Sznur, czyli mistrzowie metalowej plugawości, grają drugą część swojej jesiennej trasy właśnie w listopadzie."
+    },
+    {
+      "start": 5342.67,
+      "end": 5355.49,
+      "text": "Od 19 do 22 wystąpią kolejno w Tarnowie, Lublinie, Olsztynie i Warszawie, a potem jeszcze na dokładkę 27 listopada w Poznaniu."
+    },
+    {
+      "start": 5355.95,
+      "end": 5371.63,
+      "text": "Napalm Death wracają do nas z trasą Campaign for Musical Destruction i tym razem przywożą ze sobą death metalowych pionierów z Master, którzy właśnie przyszykowali nowy album, że też jeszcze im się chce."
+    },
+    {
+      "start": 5371.63,
+      "end": 5382.69,
+      "text": "Będzie też australijski grindowo-deathowy brat oraz fiński Gold Burner, który łączy sludge i death metal."
+    },
+    {
+      "start": 5383.51,
+      "end": 5385.49,
+      "text": "Same ładne piosenki."
+    },
+    {
+      "start": 5386.07,
+      "end": 5391.37,
+      "text": "Koncert odbędzie się 20 listopada w krakowskim Hype Parku."
+    },
+    {
+      "start": 5391.37,
+      "end": 5399.37,
+      "text": "A że każda okazja jest dobra, żeby puścić Naplom Death w radiu, zatem życzę Państwu przyjemnych wrażeń."
+    },
+    {
+      "start": 5400.63,
+      "end": 5419.39,
+      "text": "Aneke van Giersbergen, kiedyś i teraz znowu wokalistka holenderskich mistrzów klimatycznego metalu, czyli grupy The Gathering, ma też bardzo udaną karierę solową i ma u nas spore grono oddanych fanów."
+    },
+    {
+      "start": 5419.39,
+      "end": 5430.03,
+      "text": "Będą wzdychać do Aneke spod barierek 21 listopada w Krakowie, a dzień później w Warszawie."
+    },
+    {
+      "start": 5430.75,
+      "end": 5447.19,
+      "text": "Old oraz Avralize i Bite Down to propozycja dla fanów Metal Cora w wersji europejskiej i poszukującej, a znajdziecie te trzy zespoły 22 listopada w Poznaniu."
+    },
+    {
+      "start": 5447.19,
+      "end": 5460.53,
+      "text": "Z kolei w Gdańsku szykuje się gratka dla tych, co lubią metal mroczny, ciężki, ale poszukujący, wybiegający poza granice gatunku."
+    },
+    {
+      "start": 5460.89,
+      "end": 5478.51,
+      "text": "Belgijski zespół Wyatt E, czyli Dumy, Drony i inne dziwadła, wystąpi z londyńskim Five The Hero Fund, dumowo-jazzowym, choć to nalepka, która nie oddaje w pełni możliwości tego składu."
+    },
+    {
+      "start": 5478.59,
+      "end": 5487.41,
+      "text": "Polecam z całego serca, a na potwierdzenie mych słów, Five The Hero Fund zabierze Was w podróż w głąb odchłani."
+    },
+    {
+      "start": 5487.41,
+      "end": 5489.63,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5952.37,
+      "end": 5967.17,
+      "text": "23 listopada w Warszawie i 24 w Krakowie odbędą się koncerty, które bardzo, ale to bardzo polecam, bo wszystkie trzy zespoły z tej paki świetne."
+    },
+    {
+      "start": 5967.49,
+      "end": 5980.53,
+      "text": "Oba wieczory otworzy występ turecko-niemieckiej black metalowej grupy Imha Tarikat i to już będzie dobre, ale potem absolutny knockout, czyli brytyjski ezoteryk."
+    },
+    {
+      "start": 5980.53,
+      "end": 5996.13,
+      "text": "Z ich absolutnie oryginalną, własną wizją dumu, trochę postmetalu. Jak zwał, tak zwał. Jest ciężko, czasem abstrakcyjnie, transowo i naprawdę fantastycznie."
+    },
+    {
+      "start": 5996.61,
+      "end": 6004.25,
+      "text": "Uwielbiam ten zespół, a kontakt z ich muzyką na żywo to niesamowite doświadczenie."
+    },
+    {
+      "start": 6004.57,
+      "end": 6020.73,
+      "text": "Gwiazdą wieczoru natomiast będzie, czy wieczorów właściwie obu, świetny The Ruins of Beverast, łączący black metal z dume'em, również w sobie tylko właściwy, oryginalny sposób."
+    },
+    {
+      "start": 6445.89,
+      "end": 6459.41,
+      "text": "To był Ezoterik, a teraz będzie ostatnia. Dziś porcja informacji na temat koncertów, które warto sprawdzić, nad którymi przynajmniej warto się zastanowić."
+    },
+    {
+      "start": 6459.41,
+      "end": 6467.75,
+      "text": "W listopadzie bardzo dużo tego, ale wiadomo, jesień to dla zespołów, które grają w klubach czas żniw."
+    },
+    {
+      "start": 6468.33,
+      "end": 6484.59,
+      "text": "Gwiazda folkmetalu, czyli Elevate, jedzie w trasę z dość egzotyczną, jak na nich kompanią, bo z industrialno-metalowym Pain oraz z Wolfhard, wykonującym melodyjny death metal."
+    },
+    {
+      "start": 6484.59,
+      "end": 6490.71,
+      "text": "24 listopada ta trójca wystąpi w Warszawie w progresji."
+    },
+    {
+      "start": 6491.25,
+      "end": 6503.67,
+      "text": "26. Natomiast fani nowego New Metalu pewnie wybiorą się do Hydrozagadki w Warszawie, żeby obejrzeć koncerty Black Gold i Samo Psycho."
+    },
+    {
+      "start": 6504.51,
+      "end": 6507.91,
+      "text": "A dzień później ten sam skład zobaczy Bielsko-Biała."
+    },
+    {
+      "start": 6507.91,
+      "end": 6519.79,
+      "text": "Acid Drinkers i Diving Stove, czyli trasz po polsku w wykonaniu weteranów oraz ich uczniów, zdolnej młodzieży z kolejnego pokolenia."
+    },
+    {
+      "start": 6519.93,
+      "end": 6526.73,
+      "text": "27. w Katowicach i 29. listopada w Gdyni."
+    },
+    {
+      "start": 6527.73,
+      "end": 6544.15,
+      "text": "Flotsam and Jetsam to weterani traszu dla odmiany amerykańskiego, którzy przyjeżdżają na jedyny koncert do naszego kraju, do Goleniowa i będzie to miało miejsce 27. listopada."
+    },
+    {
+      "start": 6544.15,
+      "end": 6557.33,
+      "text": "A jeśli myślicie, że w listopadzie nie ma festiwali, to się mylicie, bo honor festiwalowego rodu rzutem na taśmę broni Black Roses Fest,"
+    },
+    {
+      "start": 6557.33,
+      "end": 6566.13,
+      "text": "który odbędzie się 28. w Kutnie, w Centrum Teatru Muzyki i Tańca."
+    },
+    {
+      "start": 6567.23,
+      "end": 6579.55,
+      "text": "Przedstawienia dawać, grać muzykę oraz tańczyć będą m.in. Corpsest, Betrayer, Szwedzkie Impurity, In Twilight's Embrace i Repulsive."
+    },
+    {
+      "start": 6579.55,
+      "end": 6583.85,
+      "text": "A na dobranoc zagra nam In Twilight's Embrace."
+    },
+    {
+      "start": 6584.55,
+      "end": 6587.95,
+      "text": "Żegnam Państwa i do usłyszenia za tydzień."
+    }
+  ],
+  "stats": {
+    "windowCount": 15,
+    "transcribedAudioSec": 1579.76,
+    "segmentCount": 154,
+    "characterCount": 17093
+  },
+  "sourceId": "2026-10-28-przy-czym-pomachamy-lbem-w-listopadzie"
+}
