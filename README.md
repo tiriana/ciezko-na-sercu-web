@@ -44,6 +44,14 @@ Na stronie głównej jest szacowana data końca kolejki: liczba odcinków bez op
 na noc. Wartości siedzą w `src/lib/schedule.ts`; data jest orientacyjna i przelicza się
 przy każdym buildzie.
 
+## Dane
+
+Wszystkie dane audycji leżą w tym repozytorium, w `data/`: `catalog.json` (z downloadera),
+`episodes/<uuid>.json` (opracowania), `transcripts/<uuid>.json|.txt` (pełne transkrypty),
+`titles.json` (tytuły redakcyjne) i `overrides/<uuid>.json` (ręczne poprawki, odporne na
+ponowny import). `npm run check` waliduje całość przed buildem; import z taggera robi
+`scripts/import-tagger.mjs`.
+
 ## Deploy
 
 1. `.github/workflows/deploy.yml` — build i publikacja; wymaga sekretu `CLOUDFLARE_PAGES_TOKEN`

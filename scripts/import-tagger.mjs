@@ -1,7 +1,7 @@
-import { mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 
-const [workDir, outputDir = 'data/episodes'] = process.argv.slice(2);
+const [workDir, outputDir = 'data/episodes', transcriptsDir = 'data/transcripts'] = process.argv.slice(2);
 if (!workDir) {
   console.error('usage: node scripts/import-tagger.mjs <tagger work/episodes> [out]');
   process.exit(1);
@@ -71,9 +71,11 @@ const toContract = (episode, analyzedAt, id) => {
 };
 
 await mkdir(resolve(outputDir), { recursive: true });
+await mkdir(resolve(transcriptsDir), { recursive: true });
 
 const entries = await readdir(workDir, { withFileTypes: true });
 let imported = 0;
+let transcripts = 0;
 
 for (const entry of entries) {
   if (!entry.isDirectory()) continue;
@@ -94,6 +96,31 @@ for (const entry of entries) {
   const target = join(outputDir, `${id}.json`);
   await writeFile(resolve(target), `${JSON.stringify(toContract(episode, analyzedAt, id), null, 2)}\n`);
   imported += 1;
+
+  // Transkrypty są danymi audycji, więc leżą w repo strony razem z opracowaniem,
+  // a nie w repozytorium narzędzia, które je policzyło. Tagger nazywa odcinek swoim
+  // identyfikatorem, więc przepisujemy go na uuid z katalogu (oryginał zostaje w sourceId).
+  const transcriptJson = join(workDir, entry.name, 'transcript.json');
+  try {
+    const transcript = JSON.parse(await readFile(transcriptJson, 'utf8'));
+    await writeFile(
+      resolve(join(transcriptsDir, `${id}.json`)),
+      `${JSON.stringify({ ...transcript, sourceId: transcript.episodeId, episodeId: id }, null, 2)}\n`
+    );
+    transcripts += 1;
+  } catch {
+    // brak transkryptu to nie błąd: etap mógł nie zostać uruchomiony
+  }
+
+  const transcriptText = join(workDir, entry.name, 'transcript.txt');
+  try {
+    await stat(transcriptText);
+    await copyFile(resolve(transcriptText), resolve(join(transcriptsDir, `${id}.txt`)));
+    transcripts += 1;
+  } catch {
+    // jak wyżej
+  }
 }
 
 console.log(`${imported} opracowań -> ${outputDir}`);
+console.log(`${transcripts} plików transkryptów -> ${transcriptsDir}`);

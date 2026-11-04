@@ -1,0 +1,1410 @@
+{
+  "version": 1,
+  "episodeId": "671ed5ff-0bfb-4935-9724-19e0b09a72c5",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 108823130,
+  "fileMtimeMs": 1789151454196.4604,
+  "windows": [
+    {
+      "index": 0,
+      "start": 3.1399999999999997,
+      "end": 43.42
+    },
+    {
+      "index": 1,
+      "start": 315.94,
+      "end": 512.0899999999999
+    },
+    {
+      "index": 2,
+      "start": 761.32,
+      "end": 812.73
+    },
+    {
+      "index": 3,
+      "start": 976.39,
+      "end": 1029.92
+    },
+    {
+      "index": 4,
+      "start": 1458.82,
+      "end": 1659.13
+    },
+    {
+      "index": 5,
+      "start": 1957.54,
+      "end": 2012.12
+    },
+    {
+      "index": 6,
+      "start": 2446.5,
+      "end": 2557.4
+    },
+    {
+      "index": 7,
+      "start": 2581.03,
+      "end": 2598.4
+    },
+    {
+      "index": 8,
+      "start": 2667.56,
+      "end": 2671.36
+    },
+    {
+      "index": 9,
+      "start": 2847.04,
+      "end": 2856.06
+    },
+    {
+      "index": 10,
+      "start": 2927.88,
+      "end": 2953.4
+    },
+    {
+      "index": 11,
+      "start": 3090.44,
+      "end": 3180.16
+    },
+    {
+      "index": 12,
+      "start": 3491.27,
+      "end": 3569.5
+    },
+    {
+      "index": 13,
+      "start": 3933.73,
+      "end": 4001.85
+    },
+    {
+      "index": 14,
+      "start": 4029.44,
+      "end": 4108.8
+    },
+    {
+      "index": 15,
+      "start": 4327.24,
+      "end": 4406.88
+    },
+    {
+      "index": 16,
+      "start": 4780.16,
+      "end": 4889.88
+    },
+    {
+      "index": 17,
+      "start": 5317.06,
+      "end": 5597.28
+    },
+    {
+      "index": 18,
+      "start": 5838.02,
+      "end": 5856
+    },
+    {
+      "index": 19,
+      "start": 5856,
+      "end": 5950.17
+    },
+    {
+      "index": 20,
+      "start": 5950.17,
+      "end": 6421.21
+    },
+    {
+      "index": 21,
+      "start": 6421.21,
+      "end": 6456.09
+    }
+  ],
+  "segments": [
+    {
+      "start": 3.14,
+      "end": 6.58,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 6.58,
+      "end": 17.68,
+      "text": "Przed tygodniem obiecałem, że kolejny odcinek Ciężko na sercu poświęcony będzie festiwalowi Summer Dying Loud, więc jak powiedziałem, tak zrobię."
+    },
+    {
+      "start": 18.28,
+      "end": 30.42,
+      "text": "Nazywam się Jarek Szubrycht i jeszcze nie odespałem tych trzech intensywnych dni w Aleksandrowie Łódzkim, ale to dobrze, bo będę się dzielił z wami wrażeniami na gorąco."
+    },
+    {
+      "start": 30.42,
+      "end": 41.72,
+      "text": "Audycję wydaje Mariusz Owczarek, słuchacie Trójki i bardzo dobrze tak trzymać, bo jak słyszycie metal powrócił do domu, do polskiego radia."
+    },
+    {
+      "start": 41.72,
+      "end": 43.42,
+      "text": "Muzyka"
+    },
+    {
+      "start": 315.94,
+      "end": 325.84,
+      "text": "Od razu przyznam się wam, że nie mogłem być na całym pierwszym dniu festiwalu Summer Dying Loud, ale byłem nieobecny, usprawiedliwiony."
+    },
+    {
+      "start": 326.52,
+      "end": 334.8,
+      "text": "W tym czasie byłem w Niemczech na spotkaniu z zespołem Opeth, by posłuchać ich najnowszej płyty i o niej z nimi porozmawiać."
+    },
+    {
+      "start": 334.8,
+      "end": 342.1,
+      "text": "Jak się możecie spodziewać efekty tego spotkania, usłyszycie w jednej z kolejnych audycji."
+    },
+    {
+      "start": 342.7,
+      "end": 349.5,
+      "text": "Do Krakowa wróciłem w czwartek po południu. Szybki prysznic, jeszcze szybszy obiad i za kierownicę."
+    },
+    {
+      "start": 350.14,
+      "end": 357.9,
+      "text": "Spod mojego domu na festiwal jedzie się równe trzy godziny, co uznaję za odległość przyjazną użytkownikowi."
+    },
+    {
+      "start": 357.9,
+      "end": 372.62,
+      "text": "Kiedy wchodziłem na teren Mossiru w Aleksandrowie Łódzkim, na dużej scenie grał właśnie zespół Anal Nakrad, a właściwie toczył nierówną walkę z nagłośnieniem oraz własnymi słabościami."
+    },
+    {
+      "start": 372.7,
+      "end": 386.22,
+      "text": "Nie był to niestety udany koncert, więc poświęciłem go głównie na próbę orientacji w terenie, bo wstyd się przyznać, byłem na Summer Dine Loud w tym roku po raz pierwszy,"
+    },
+    {
+      "start": 386.22,
+      "end": 391.74,
+      "text": "chociaż to już piętnasta edycja tego zacnego festiwalu."
+    },
+    {
+      "start": 392.7,
+      "end": 408.7,
+      "text": "Teren Summer Dine Loud to na co dzień obszar zwany Miejskim Ośrodkiem Sportu i Rekreacji, a więc z myślą o takich aktywnościach był przygotowywany kilka hektarów ścieżek dla biegaczy,"
+    },
+    {
+      "start": 409.7,
+      "end": 412.86,
+      "text": "drzewek dających przyjemny cień w upalne dni."
+    },
+    {
+      "start": 413.06,
+      "end": 419.7,
+      "text": "Tam stadion, obok inne boisko, jest siłka na świeżym powietrzu, dalej budynki administracyjne."
+    },
+    {
+      "start": 420.88,
+      "end": 425.7,
+      "text": "Swoją drogą trochę szkoda, że ten stadion nie jest wykorzystywany do celów festiwalowych,"
+    },
+    {
+      "start": 425.7,
+      "end": 437,
+      "text": "ale zgaduję, że to w trosce o murawę, którą ciężkie kopyta metaluchów zryłyby dogłębnie podczas ich tańców godowych."
+    },
+    {
+      "start": 438.04,
+      "end": 445.7,
+      "text": "Duża scena Summer Dine Loud stoi na wolnym powietrzu, obok niej stoiska z różnymi dobrami doczesnymi,"
+    },
+    {
+      "start": 447.1,
+      "end": 454.64,
+      "text": "naprzeciwko strefa gastronomiczna w budynku pod dachem tak zwana krypta, czyli scena klubowa."
+    },
+    {
+      "start": 454.92,
+      "end": 461.84,
+      "text": "Słyszałem o niej wcześniej sporo, w tym pogłoski, że na najbardziej atrakcyjnych koncertach,"
+    },
+    {
+      "start": 461.96,
+      "end": 468.78,
+      "text": "kiedy krypta wypełnia się po nisko zawieszony sufit, nie ma czym oddychać."
+    },
+    {
+      "start": 468.9,
+      "end": 476.38,
+      "text": "Tym razem jednak zadbano o wentylację, tak intensywną zresztą, że wróciłem do Krakowa z lekkim katarem,"
+    },
+    {
+      "start": 476.86,
+      "end": 482.32,
+      "text": "bo właśnie w krypcie odbywało się sporo interesujących mnie koncertów."
+    },
+    {
+      "start": 482.32,
+      "end": 486.66,
+      "text": "Na przykład występ zespołu Tau, który właśnie wraca z nowym materiałem,"
+    },
+    {
+      "start": 486.86,
+      "end": 493.6,
+      "text": "ale na nich jednak nie zdążyłem, kiedy wychodzili na scenę, ledwie docierałem do Katowic."
+    },
+    {
+      "start": 494.28,
+      "end": 497.76,
+      "text": "Dużo jednak dobrego o tym występie słyszałem."
+    },
+    {
+      "start": 498.66,
+      "end": 502.56,
+      "text": "Podobno było tak głośno, że prezes lokalnego klubu sportowego,"
+    },
+    {
+      "start": 503.04,
+      "end": 506.58,
+      "text": "którego gabinet mieści się dokładnie nad kryptą,"
+    },
+    {
+      "start": 507.2,
+      "end": 510.42,
+      "text": "Musiał łapać puchary spadające z gablot."
+    },
+    {
+      "start": 762.24,
+      "end": 770.24,
+      "text": "Również w krypcie pierwszego dnia odbyły się dwa koncerty, które zachwycały swoją intensywnością i bezkompromisowością."
+    },
+    {
+      "start": 770.92,
+      "end": 779.58,
+      "text": "Pierwszy z nich dał amerykański duet Antichristian Siege Machine i spodziewałem się, że będzie dobrze, bo niedawno ich widziałem."
+    },
+    {
+      "start": 780.3,
+      "end": 787.66,
+      "text": "Pierwsze dziesięć minut koncertu poświęcili na znalezienie odpowiedniego brzmienia, ale potem już było bez litości."
+    },
+    {
+      "start": 787.66,
+      "end": 811.12,
+      "text": "Z tym swoim Black Death Grindem do niedawna funkcjonowali jeszcze jako ciekawostka na obrzeżach sceny ekstremalnej, ale zdaje się, że po wydaniu najnowszego albumu, czyli Vengeance of Eternal Fire, pięknie nam rosną i rozkwitają i dobrze, bo scena potrzebuje takich kwiatuszków, czy tam ciernistych krzewów."
+    },
+    {
+      "start": 977.39,
+      "end": 984.57,
+      "text": "Antichrist Siege Machine są obecnie na europejskiej trasie u boku kalifornijskiego kwartetu Ascended Dead."
+    },
+    {
+      "start": 985.33,
+      "end": 993.25,
+      "text": "Wspaniałe zestawienie, muszę przyznać, bo ci też nie biorą jeńców, choć ich muzyka jest nieco inna, trochę bardziej staroświecka."
+    },
+    {
+      "start": 993.25,
+      "end": 1001.29,
+      "text": "To brutalny, piwniczny death metal. Zero niuansów, eksperymentów i miziania się po noskach."
+    },
+    {
+      "start": 1001.89,
+      "end": 1011.73,
+      "text": "Niestety z jakichś powodów Ascended Dead skończyli swój koncert znacznie wcześniej niż przewidywał to program festiwalu i załapałem się tylko na półtorej piosenki."
+    },
+    {
+      "start": 1011.73,
+      "end": 1027.73,
+      "text": "Na szczęście mój niedosyt częściowo ugasił kontakt z zakupioną po koncercie najnowszą płytą zespołu zatytułowaną Evenfall of the Apocalypse, której fragmentami ochoczo się teraz z wami podzielę."
+    },
+    {
+      "start": 1458.82,
+      "end": 1469.92,
+      "text": "Główną gwiazdą pierwszego dnia Summer Day Loud była legenda norweskiego black metalu, grupa Mayhem, celebrująca właśnie cztery dekady istnienia."
+    },
+    {
+      "start": 1470.46,
+      "end": 1484.78,
+      "text": "Niestety nie zachwycił mnie ten koncert. Program występu zakładał prezentację co ciekawszych piosenek z repertuaru Mayhem, od najnowszych do najstarszych, od grobu po kołyskę."
+    },
+    {
+      "start": 1485.32,
+      "end": 1502.42,
+      "text": "Przerwy między utworami były długie, ale za to szczelnie wypełnione multimedialnymi prezentacjami, doskonale przygotowanymi, przedstawiającymi archiwalne materiały wideo i zdjęciowe w nowoczesnej, dynamicznej oprawie."
+    },
+    {
+      "start": 1502.52,
+      "end": 1507.04,
+      "text": "Wszystko to w zgodzie z najnowszymi trendami w muzealnictwie."
+    },
+    {
+      "start": 1507.58,
+      "end": 1515.26,
+      "text": "Bo na tym właśnie polega cały problem. Mayhem powstał jako zespół, którego nie rozumiano, którego się bano."
+    },
+    {
+      "start": 1515.32,
+      "end": 1520.66,
+      "text": "I za to właśnie został pokochany przez wyrzutków z całego świata."
+    },
+    {
+      "start": 1521.44,
+      "end": 1538.44,
+      "text": "Obwożenie go teraz w srebrnej gablocie i organizowanie akademii ku własnej czci wypacza ideę Mayhem, o której może w zespole już nikt nie pamięta, bo w końcu jej twórca i pierwszy lider grupy, czyli Euronemus, zginął ponad trzydzieści lat temu."
+    },
+    {
+      "start": 1539.08,
+      "end": 1546.52,
+      "text": "Kłopot w tym, że i muzyka, którą słyszałem w Aleksandrowie Łódzkim nie miała tej mocy co kiedyś."
+    },
+    {
+      "start": 1547.1,
+      "end": 1549.58,
+      "text": "Niby ta sama, ale nie taka sama."
+    },
+    {
+      "start": 1549.74,
+      "end": 1557.42,
+      "text": "Gitarzyści, którzy grają obecnie w Mayhem nie mają w sercach i głowach szaleństwa Euronemusa, a w łapach sprawności Blasphemera."
+    },
+    {
+      "start": 1557.42,
+      "end": 1560.76,
+      "text": "I to niestety słychać."
+    },
+    {
+      "start": 1561.66,
+      "end": 1570.66,
+      "text": "I owszem, lepsze jest takie Mayhem niż żadne, a usłyszeć ze sceny głos Deda albo zobaczyć na niej wokalistę o pseudonimie Mesajach."
+    },
+    {
+      "start": 1570.76,
+      "end": 1587.98,
+      "text": "To był jakiś rarytas, ale nie oszukujmy się ten, że Mesajach to przecież typ, który zagrał z oryginalnym Mayhem jeden koncert, którego w dodatku nikt nie widział, więc to dla historii tego zespołu epizod właściwie bez znaczenia."
+    },
+    {
+      "start": 1587.98,
+      "end": 1600.26,
+      "text": "Zamiast więc takich eksponatów wolałbym zobaczyć koncert wciąż żywej grupy, która myśli o swojej teraźniejszości i przyszłości, a nie tylko babrze się w przeszłości."
+    },
+    {
+      "start": 1601.36,
+      "end": 1605.94,
+      "text": "Tu pewnie spodziewaliście się piosenki Mayhem, no więc nie, nie trzeba."
+    },
+    {
+      "start": 1606.4,
+      "end": 1615.5,
+      "text": "Puszczę wam za to Coldbran, też norweski zespół, ale zrodzony już w tym stuleciu, no a więc prawie dwie dekady później."
+    },
+    {
+      "start": 1616.34,
+      "end": 1623.74,
+      "text": "Wyraźnie inspirowany m.in. starym Mayhem właśnie i brzmiący dokładnie tak, jak black metal powinien brzmieć."
+    },
+    {
+      "start": 1624.28,
+      "end": 1634.74,
+      "text": "Wystąpili w krypcie dzień później i szkoda, że starsi koledzy nie mogli tego zobaczyć, bo może przypomnieliby sobie, jak to powinno działać."
+    },
+    {
+      "start": 1635.1,
+      "end": 1654.76,
+      "text": "Coldbran grali tak, jakby chcieli zrobić publiczności krzywdę i nie tylko publiczności zresztą, bo kiedy wokalista uwieszał się na szyi basisty, istniało wielkie prawdopodobieństwo, że w końcu długim gwoździem ze swojej pieszczochy przebije mu tętnicę szyjną."
+    },
+    {
+      "start": 1655.24,
+      "end": 1656.98,
+      "text": "Jak się bawić, to się bawić."
+    },
+    {
+      "start": 1957.54,
+      "end": 1978.24,
+      "text": "Wróćmy jeszcze do pierwszej nocy festiwalu, którą zakończył występ Wolvenest. W porównaniu z tłumami, które podziwiały mayhem, Belgowie zagrali dla niedobitków publiczności, więc tym wszystkim, którym nie chciało się zostać, niniejszym mówię gromko i wyraźnie żałujcie."
+    },
+    {
+      "start": 1978.84,
+      "end": 1989.6,
+      "text": "Żałujcie, bo to był koncert magiczny, wciągający, ulepiony z postmetalowego transu, black metalowej, nienawiści i gotyckiej ponurości."
+    },
+    {
+      "start": 1990.34,
+      "end": 2005.64,
+      "text": "Shazula jest świetną wokalistką, nawet jeżeli pseudonim w Polsce nie najbardziej fortunnie się kojarzy. Jest charyzmatyczną frontwoman, a aurę niesamowitości uzupełniały jeszcze partie jej tereminu."
+    },
+    {
+      "start": 2006,
+      "end": 2010.1,
+      "text": "Czy już mówiłem, że ci, co nie zostali, powinni żałować?"
+    },
+    {
+      "start": 2010.1,
+      "end": 2012.12,
+      "text": "Czy już mówiłem, że ci, co nie zostali, powinni żałować?"
+    },
+    {
+      "start": 2446.5,
+      "end": 2455.06,
+      "text": "Dzień drugi rozpoczął się dla mnie dopiero od koncertu kolumbijskiego Masakrę."
+    },
+    {
+      "start": 2455.88,
+      "end": 2461.22,
+      "text": "Żałuję, bo wcześniej też grały ciekawe zespoły, ale nie można mieć wszystkiego."
+    },
+    {
+      "start": 2461.76,
+      "end": 2468.18,
+      "text": "Masakrę zgodnie z myślą wyrażoną w wykonanej na finał piosence Death Metal Forever"
+    },
+    {
+      "start": 2469.18,
+      "end": 2476.14,
+      "text": "zaproponowali solidną porcję prostego jak prawy prosty i równie nokautującego Death Metalu."
+    },
+    {
+      "start": 2476.5,
+      "end": 2486.8,
+      "text": "To jest zespół, który od dekad gra właściwie to samo, ale właśnie za te konsekwencje i za wiarę w tę muzykę nie sposób ich nie doceniać."
+    },
+    {
+      "start": 2487.4,
+      "end": 2494.96,
+      "text": "Tam na scenie była sama prawda, nawet jeżeli trudno się było nie uśmiechnąć choćby przez to, że wokalista Masakrę,"
+    },
+    {
+      "start": 2494.96,
+      "end": 2500.74,
+      "text": "czyli Alex Okendo nadużywał jedynego polskiego słowa, które zna."
+    },
+    {
+      "start": 2501.36,
+      "end": 2511,
+      "text": "I jak się państwo domyślacie, chodzi o słowo na literę K i nie jest to kalarepa, krzesiwo, ani nawet klubokawiarnia."
+    },
+    {
+      "start": 2511.76,
+      "end": 2518.86,
+      "text": "Po koncercie kupiłem sobie płytę Masakrę nagraną przed rokiem w Polsce, może tam się tego słowa nauczył,"
+    },
+    {
+      "start": 2519.1,
+      "end": 2526.36,
+      "text": "w warszawskim klubie voodoo podczas ich pierwszej wizyty na naszej świętej piastowskiej ziemi."
+    },
+    {
+      "start": 2527.02,
+      "end": 2533.88,
+      "text": "Nie, żeby to było jakieś arcydzieło gatunku, ale uwielbiam zbierać takie polonika,"
+    },
+    {
+      "start": 2533.88,
+      "end": 2541.2,
+      "text": "a zatem wspomniana już piosenka Death Metal Forever z albumu Live in Poland."
+    },
+    {
+      "start": 2541.38,
+      "end": 2542.62,
+      "text": "Death Metal Forever"
+    },
+    {
+      "start": 2542.62,
+      "end": 2544.9,
+      "text": "Sing with me"
+    },
+    {
+      "start": 2544.9,
+      "end": 2548.74,
+      "text": "Let's go for the Death Metal Forever"
+    },
+    {
+      "start": 2548.74,
+      "end": 2553.1,
+      "text": "Come on, Death Metal Forever"
+    },
+    {
+      "start": 2553.1,
+      "end": 2557.4,
+      "text": "Sing with me, Death Metal Forever"
+    },
+    {
+      "start": 2581.03,
+      "end": 2583.03,
+      "text": "Thank you Poland"
+    },
+    {
+      "start": 2583.03,
+      "end": 2585.03,
+      "text": "This is the last song tonight"
+    },
+    {
+      "start": 2585.03,
+      "end": 2587.03,
+      "text": "I hope see you again"
+    },
+    {
+      "start": 2587.03,
+      "end": 2589.03,
+      "text": "The next geek of year"
+    },
+    {
+      "start": 2589.03,
+      "end": 2591.03,
+      "text": "See you"
+    },
+    {
+      "start": 2591.03,
+      "end": 2593.03,
+      "text": "Thank you"
+    },
+    {
+      "start": 2593.03,
+      "end": 2595.03,
+      "text": "Thank you Poland"
+    },
+    {
+      "start": 2595.03,
+      "end": 2597.03,
+      "text": "See you in Drek of the Domi Death Metal forever"
+    },
+    {
+      "start": 2667.56,
+      "end": 2671.36,
+      "text": "C'mon Varsovia!"
+    },
+    {
+      "start": 2847.04,
+      "end": 2850.4,
+      "text": "KONODYJUŻE PAN DU-TAN!"
+    },
+    {
+      "start": 2852.9,
+      "end": 2854.4,
+      "text": "KOMON MARSOVIA!"
+    },
+    {
+      "start": 2854.4,
+      "end": 2856.06,
+      "text": "KONODYJUŻE PAN DU-TAN!"
+    },
+    {
+      "start": 2928.66,
+      "end": 2932.34,
+      "text": "King Dude doskonale to sobie wymyślił."
+    },
+    {
+      "start": 2932.86,
+      "end": 2934.78,
+      "text": "W świecie country byłby średniakiem,"
+    },
+    {
+      "start": 2935.26,
+      "end": 2939.66,
+      "text": "ale wystarczyło dodać do muzyki szczyptę metalowej aury,"
+    },
+    {
+      "start": 2940.22,
+      "end": 2944.26,
+      "text": "do tekstów wpuścić diabła i już jest się królem."
+    },
+    {
+      "start": 2944.92,
+      "end": 2947.14,
+      "text": "Ale nie narzekam, podobał mi się ten koncert."
+    },
+    {
+      "start": 2947.84,
+      "end": 2951.4,
+      "text": "Niezły z niego pieśniarz i jeszcze lepszy gawędziarz."
+    },
+    {
+      "start": 2951.4,
+      "end": 2953.4,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3090.44,
+      "end": 3113.22,
+      "text": "Może teraz parę słów o tym, dlaczego o niektórych koncertach nic dzisiaj nie powiem. Po pierwsze dlatego, że nie wszystkie widziałem, bo nie chciało mi się zwlec z łóżka odpowiednio wcześnie, bo zagadałem się z kimś w strefie gastronomicznej, albo musiałem po prostu coś zjeść, bo robiłem wywiad, albo ze mną robiono wywiad."
+    },
+    {
+      "start": 3113.22,
+      "end": 3125.66,
+      "text": "Przyczyny mogły być różne, ale na festiwalu jest tak, że ta oferta zawsze jest bogatsza od możliwości percepcyjnych widza i ja nie jestem wyjątkiem."
+    },
+    {
+      "start": 3126.58,
+      "end": 3139.7,
+      "text": "Były też koncerty, które widziałem, ale o których i tak nie opowiem, bo albo mi się nie podobały i szkoda czasu, albo podobały, ale nie mam na ich temat niczego szczególnie odkrywczego do powiedzenia."
+    },
+    {
+      "start": 3140.02,
+      "end": 3147.1,
+      "text": "Powiem za to trzy słowa o Immemorial, których nie widziałem, ale o których koncercie sporo się mówiło."
+    },
+    {
+      "start": 3147.78,
+      "end": 3158.78,
+      "text": "Miał być wielki powrót do gry po latach przerwy, niestety nie wyszło, problemy techniczne położyły koncert do tego stopnia, że zespół przepraszał potem za to w social mediach."
+    },
+    {
+      "start": 3158.78,
+      "end": 3164.72,
+      "text": "I prawdę mówiąc nie wiem, czy kapeli death metalowej wypada tak publicznie się bić w pierś."
+    },
+    {
+      "start": 3165.24,
+      "end": 3169.24,
+      "text": "Chyba bardziej metalowe byłoby iść w zaparte."
+    },
+    {
+      "start": 3169.96,
+      "end": 3177.08,
+      "text": "Tak czy owak puszczę wam piosenkę z wydanej właśnie niedawno płyty Rebirth."
+    },
+    {
+      "start": 3177.74,
+      "end": 3178.46,
+      "text": "Tu wszystko działa."
+    },
+    {
+      "start": 3178.46,
+      "end": 3180.16,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3492.01,
+      "end": 3510.11,
+      "text": "Ciężkie działa przeciw nowoczesnemu światu nas wytoczył irlandzki Primordial i miecze chwycił w dłonie i jeszcze wokalista pętlę sobie zarzucił na szyję, jakby uznał, że bój to jego będzie ostatni i w dodatku skazany na przegraną."
+    },
+    {
+      "start": 3510.61,
+      "end": 3522.21,
+      "text": "Nie jestem pewien, czy postrzegam rzeczywistość podobnie do Primordial, ale jestem pewien, że to jeden z tych zespołów, którym się wierzy, kiedy stoją na scenie, kiedy grają."
+    },
+    {
+      "start": 3522.77,
+      "end": 3528.45,
+      "text": "Natomiast Alan jako wokalista i frontman ma nad tłumem władzę absolutną."
+    },
+    {
+      "start": 3528.95,
+      "end": 3535.99,
+      "text": "Śpiewa też coraz lepiej, choć akurat nieposłowicze trele się przychodzi na te ich koncerty."
+    },
+    {
+      "start": 3535.99,
+      "end": 3549.37,
+      "text": "Nie przeszkadzały mi nawet tony patosu, porwał mnie ten Primordial i poszedłbym za nimi na bagnety, gdyby nie to, że koncert w pewnym momencie się skończył i czar prysłu."
+    },
+    {
+      "start": 3550.01,
+      "end": 3560.89,
+      "text": "Ale na finał wybrzmiała ta piosenka, opowieść o tym, że, tu cytuję tytuł, zwycięstwo ma tysiąc ojców, a porażka jest sierotą."
+    },
+    {
+      "start": 3560.89,
+      "end": 3567.43,
+      "text": "Kto był wtedy pod sceną, ten śpiewał refren i pompował pięścią powietrze aż do wyczerpania."
+    },
+    {
+      "start": 3934.51,
+      "end": 3948.75,
+      "text": "Wiele wody w Styksie upłynęło od czasu, kiedy identyfikowałem się jako fan Overkill, ale trzeba przyznać, że energia z jaką Blitz i jego kompani zaatakowali scenę w Aleksandrowie Łódzkim zrobiła na mnie wrażenie."
+    },
+    {
+      "start": 3949.39,
+      "end": 3965.15,
+      "text": "Przyjechali niestety bez Didi Verniego, czyli basisty, który jest drugim filarem tego zespołu, ale ponoć za oceanem zatrzymały go problemy zdrowotne. Mam nadzieję, że przejściowe i oczywiście życzę rychłego powrotu do zdrowia."
+    },
+    {
+      "start": 3965.45,
+      "end": 3988.37,
+      "text": "Overkill to jest ten zespół, którego dwudziesta płyta, czyli Scorched, ukazała się w ubiegłym roku, dokładnie tego samego dnia, kiedy wyszedł nowy album Metalliki i prawdziwi metalowcy odcinali się od sezonowców głośnym manifestowaniem uwielbienia dla Overkill i zarazem pogardy dla Metalliki właśnie."
+    },
+    {
+      "start": 3988.67,
+      "end": 3999.43,
+      "text": "Trochę to zabawne, a trochę, no cóż, trochę to ma pokrycie w faktach, bo płyta Overkill jest po prostu lepsza od 72 seasons."
+    },
+    {
+      "start": 4029.44,
+      "end": 4059.42,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 4059.44,
+      "end": 4089.42,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 4089.46,
+      "end": 4108.78,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 4328.2,
+      "end": 4333.72,
+      "text": "Francuzi z Aluc Todolo długo milczeli i wreszcie milczeć się przestali."
+    },
+    {
+      "start": 4334.4,
+      "end": 4339.38,
+      "text": "Ich najnowsza płyta nosi świetny tytuł Lux, czyli Światło."
+    },
+    {
+      "start": 4340.62,
+      "end": 4344.04,
+      "text": "Niezupełnie spełniają zawartą w nim obietnicę na koncertach,"
+    },
+    {
+      "start": 4344.12,
+      "end": 4349.02,
+      "text": "bo grają tylko przy jednej żarówce, która to jaśnieje, to przygasa"
+    },
+    {
+      "start": 4349.02,
+      "end": 4352.52,
+      "text": "mniej więcej w harmonii z muzyką."
+    },
+    {
+      "start": 4353.22,
+      "end": 4354.58,
+      "text": "Poza tym, co my tu mamy."
+    },
+    {
+      "start": 4354.58,
+      "end": 4361,
+      "text": "Matmetalową galopadę w nieznane, kwadrat ułek koła, kraut metal"
+    },
+    {
+      "start": 4361,
+      "end": 4365.66,
+      "text": "i inne kombinacje na granicach gatunków."
+    },
+    {
+      "start": 4366.04,
+      "end": 4371.1,
+      "text": "Perkusista znakomity, napędzający ten trans w chorej malignie,"
+    },
+    {
+      "start": 4371.9,
+      "end": 4378,
+      "text": "basista z brzmieniem jak maszyna budowlana i gitarzysta, co lubi hałas."
+    },
+    {
+      "start": 4378.48,
+      "end": 4380.66,
+      "text": "No i jak tu ich nie kochać."
+    },
+    {
+      "start": 4380.66,
+      "end": 4384.66,
+      "text": "Aluc Todolo dali jeden z najlepszych dla mnie koncertów w festiwalu,"
+    },
+    {
+      "start": 4384.8,
+      "end": 4387.82,
+      "text": "oczywiście we wspomnianej już wcześniej krypcie."
+    },
+    {
+      "start": 4388.4,
+      "end": 4392.1,
+      "text": "Początkowo wypełnionej, ale szybko się przerzedziło,"
+    },
+    {
+      "start": 4392.56,
+      "end": 4394.7,
+      "text": "bo to nie jest propozycja dla każdego."
+    },
+    {
+      "start": 4394.84,
+      "end": 4400.72,
+      "text": "Pomiędzy Overkillem a Monspelem Aluc Todolo rzeczywiście brzmieli egzotycznie,"
+    },
+    {
+      "start": 4401.42,
+      "end": 4405.08,
+      "text": "ale proszę to traktować jako komplement niemarudzenia."
+    },
+    {
+      "start": 4405.08,
+      "end": 4406.88,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4780.16,
+      "end": 4800.34,
+      "text": "Wspomniałem o Moonspell, który kiedyś był dla mnie bardzo ważnym zespołem, ale tym razem nie uważałem. W dodatku zraziły mnie partie wokalne Fernando, jakieś takie przedziwne bulgotanie w niskich rejestrach, bo akurat te wysokie black metalowe bardzo fajnie mu wychodziły."
+    },
+    {
+      "start": 4800.34,
+      "end": 4822.46,
+      "text": "Tak czy owak Portugalczycy przyjęcie w Aleksandrowie Łódzkim mieli królewskie i kiedy już zakończyli swoje szaleństwo o północy wydawać się mogło, że to koniec festiwalu, ale nie jeszcze Obscure Sphinx z drugim dopiero występem po reaktywacji i znakomity to był koncert."
+    },
+    {
+      "start": 4822.46,
+      "end": 4844.72,
+      "text": "Jest pełen emocji, ale zarazem jakiś taki zimny. Być może trochę przez to jak był świecony, może trochę za sprawą sterylnego brzmienia, ale zimny absolutnie proszę tego nie traktować jako przytyk, bo raczej jest to pewna cecha aury, którą emanuje ten zespół."
+    },
+    {
+      "start": 4845.92,
+      "end": 4859.5,
+      "text": "Wielebna jest nie tylko znakomitą wokalistką, ale też wybitną frontwoman i znowu nie wiem czy bardziej podziwiać jej struny głosowe, czy elastyczność kręgosłupa, kiedy zastygała w najdziwniejszych pozach."
+    },
+    {
+      "start": 4860.18,
+      "end": 4869.24,
+      "text": "Obscure Sphinx przypomnieli więc o sobie wejściem smoka i teraz oczekiwania wobec nowego materiału będą wyśrubowane."
+    },
+    {
+      "start": 4869.94,
+      "end": 4875.94,
+      "text": "Trzymam kciuki i jestem przekonany, że akurat ten zespół jest w stanie je spełnić."
+    },
+    {
+      "start": 4876.98,
+      "end": 4888.06,
+      "text": "No i mam nadzieję, że wyjdą z tym gdzieś w świat, bo na tle zachodnich grup występujących na Summer Dine Loud nawet tych dużych nazw nie muszą mieć żadnych kompleksów."
+    },
+    {
+      "start": 5317.06,
+      "end": 5323.52,
+      "text": "Ja już się nagadałem o Summer Dying Loud, więc teraz pora przekazać mikrofon komuś innemu."
+    },
+    {
+      "start": 5323.52,
+      "end": 5340.5,
+      "text": "Kiedy na scenie instalował się Obscure Sphinx, a więc przed ostatnim koncertem festiwalu, zaciągnąłem do jednej z pustych już garderób organizatora imprezy, by poprosić go o krótkie podsumowanie tych trzech upalnych dni i długich nocy."
+    },
+    {
+      "start": 5340.5,
+      "end": 5360.96,
+      "text": "Tomasz Barszcz, festiwal Summer Dying Loud. Dowieźliśmy do końca 51 kapel z całego świata przez te trzy dni. Na dwóch scenach zadziały się rzeczy nieprawdopodobne, bo to co sobie założyliśmy w line-upie to jedno,"
+    },
+    {
+      "start": 5360.96,
+      "end": 5376.04,
+      "text": "ale to, co te zespoły ze sobą przywiozły, mówię o chęciach, o potrzebie, o ekspresji, o wielkiej dozie energii, którą przekazali wszystkim tym zgromadzonym pod scenami,"
+    },
+    {
+      "start": 5377.14,
+      "end": 5384.04,
+      "text": "no to było nie do przewidzenia, jaka to będzie potężna dawka energii. Chyba każdy tą energię teraz sobie już kumuluje."
+    },
+    {
+      "start": 5384.04,
+      "end": 5395.54,
+      "text": "Wiem doskonale, że pytanie ludzi pracujących przy organizacji festiwalu, jaki koncert najbardziej im się podobał, może być odebrane jako kpina w żywe oczy."
+    },
+    {
+      "start": 5396.2,
+      "end": 5403.96,
+      "text": "Za dużo pracy, zbyt gęsto od bodźców i niespodziewanych zdarzeń, by móc pozwolić sobie na zanurzenie się w muzyce."
+    },
+    {
+      "start": 5404.5,
+      "end": 5412.88,
+      "text": "Z drugiej strony bardzo silna jest pokusa, żeby choć na chwilę podejść pod scenę, rzucić okiem, czy wszystko działa, jak wygląda,"
+    },
+    {
+      "start": 5413.5,
+      "end": 5418.92,
+      "text": "jakie wrażenie na ludziach robi coś, co się przygotowywało w pocie czoła miesiącami."
+    },
+    {
+      "start": 5419.82,
+      "end": 5425.22,
+      "text": "Może więc i Tomek miał okazję na swoim festiwalu coś zobaczyć, czegoś posłuchać."
+    },
+    {
+      "start": 5425.46,
+      "end": 5429.22,
+      "text": "Aha, jest jeszcze jedna niezręczność w tym pytaniu."
+    },
+    {
+      "start": 5430.12,
+      "end": 5433.14,
+      "text": "To jak zapytać rodzica, które dziecko kocha najbardziej."
+    },
+    {
+      "start": 5434.12,
+      "end": 5438.7,
+      "text": "Ale i tak je zadałem, a szef Summer Dine Loud odpowiedział."
+    },
+    {
+      "start": 5439,
+      "end": 5450.38,
+      "text": "Oczywiście nie byłem w stanie zobaczyć nawet części tego, co chciałem, bo zawsze to było tylko podziwianie dosłownie w biegu między tymi dwoma scenami."
+    },
+    {
+      "start": 5450.38,
+      "end": 5461,
+      "text": "Bardzo żałuję, że właśnie ta mała scena Krypta, która jest takim fajnym, eksperymentalnym odcinkiem w line-upie całości festiwalu,"
+    },
+    {
+      "start": 5461.14,
+      "end": 5463.04,
+      "text": "pozostała dla mnie zupełnie nieodkryta."
+    },
+    {
+      "start": 5463.12,
+      "end": 5472.76,
+      "text": "Nie zobaczyłem praktycznie nic, co chciałem, ale musiałem skupić się też już w takiej stricte produkcyjnej funkcji na dużej scenie."
+    },
+    {
+      "start": 5472.76,
+      "end": 5484.64,
+      "text": "I tam rzeczywiście to, co zrobili headlinerzy przede wszystkim, czyli Mayhem ze swoim setem na 40-lecie, niesamowitym setem."
+    },
+    {
+      "start": 5485.04,
+      "end": 5491.86,
+      "text": "Godflesh, który według mnie zabrzmiał najlepiej od już niepamiętych czasów."
+    },
+    {
+      "start": 5491.98,
+      "end": 5495.82,
+      "text": "Po prostu dźwięki wgniatały ludzi pod sceną w ziemię."
+    },
+    {
+      "start": 5496.3,
+      "end": 5502.28,
+      "text": "Justin potwierdził to, że widział w oczach ludzi przerażenie, że ta ściana dźwięku coś im robi."
+    },
+    {
+      "start": 5502.66,
+      "end": 5507,
+      "text": "I się zastanawiał, czy to dobrze, czy on powinien dalej kontynuować ten koncert."
+    },
+    {
+      "start": 5507.12,
+      "end": 5507.8,
+      "text": "To było świetne."
+    },
+    {
+      "start": 5507.8,
+      "end": 5515.56,
+      "text": "Później ta rozmowa też mi bardzo dużo uświadomiła na temat tego, jak sam Justin postrzega muzykę,"
+    },
+    {
+      "start": 5516.1,
+      "end": 5519.48,
+      "text": "taką trochę misję funkcjonowania w zespole Godflesh."
+    },
+    {
+      "start": 5520.82,
+      "end": 5527.32,
+      "text": "Bardzo się cieszę, że udało się pierwszy raz zorganizować koncert The Crown z Szwecji."
+    },
+    {
+      "start": 5528.36,
+      "end": 5537.6,
+      "text": "Chociaż może trochę niefortunny slot, ale to był last minute call o ten zespół i zagrali na zakończenie drugiego dnia."
+    },
+    {
+      "start": 5537.6,
+      "end": 5540.12,
+      "text": "Ale to była po prostu totalna miazga."
+    },
+    {
+      "start": 5540.58,
+      "end": 5545.88,
+      "text": "Jeśli ktoś szukał definicji metalu, to znalazł ją w pełni właśnie w koncercie Crown."
+    },
+    {
+      "start": 5546.54,
+      "end": 5553.84,
+      "text": "No i to, co się stało w finalnym dniu, czyli Overkill, który pokazał wszystkim, niedowiarkom,"
+    },
+    {
+      "start": 5554.16,
+      "end": 5564.42,
+      "text": "jak można po 45 latach non-stop w koncertowania po świecie nadal trzymać tak wysoki poziom i taką formę."
+    },
+    {
+      "start": 5564.96,
+      "end": 5573.08,
+      "text": "Nie wiem, strasznie się tutaj może tak podniecam tymi koncertami, ale rzeczywiście w połączeniu z doskonałym brzmieniem tych koncertów"
+    },
+    {
+      "start": 5573.08,
+      "end": 5579.28,
+      "text": "mamy naprawdę ciekawe miejsce, w którym te koncerty trzeba przyznać, że brzmią wspaniale."
+    },
+    {
+      "start": 5579.82,
+      "end": 5586.66,
+      "text": "Nie jest to za duży teren, gdzie dochodzi jakiś dziwny pogłos i w sumie się jest na festiwalu tylko po to, żeby być"
+    },
+    {
+      "start": 5586.66,
+      "end": 5588.82,
+      "text": "i żeby odhaczać kolejne, zobaczone zespoły."
+    },
+    {
+      "start": 5589.22,
+      "end": 5595.72,
+      "text": "Tu rzeczywiście można doświadczać muzyki i można poczuć tą taką energię, którą ci artyści chcą nam przekazać."
+    },
+    {
+      "start": 5838.02,
+      "end": 5855.9,
+      "text": "Ci, co byli w Aleksandrowie Łódzkim doskonale wiedzą, co się udało, ale na pewno chętnie posłuchają, jakim kosztem. Co wisiało na włosku? Przed jakimi niespodziewanymi wyzwaniami stanęli tym razem organizatorzy? Jakie pożary?"
+    },
+    {
+      "start": 5856,
+      "end": 5858.38,
+      "text": "Trzeba było ugasić? Słuchamy."
+    },
+    {
+      "start": 5858.76,
+      "end": 5866,
+      "text": "No to może od tych standardowych, czyli spóźnienia, czy wręcz ominięcia swoich lotów"
+    },
+    {
+      "start": 5866,
+      "end": 5871.44,
+      "text": "przez niektórych mniej rozgarniętych muzyków, zespołów, które u nas występowały,"
+    },
+    {
+      "start": 5872.16,
+      "end": 5878.6,
+      "text": "po również bardzo sztampowe zagubienia instrumentów i szukania na prędce instrumentów tu na miejscu."
+    },
+    {
+      "start": 5878.6,
+      "end": 5886.18,
+      "text": "I tutaj prym wiezie kolumbijska masakra, która po prostu przyjechała do Polski w ogóle bez instrumentów"
+    },
+    {
+      "start": 5886.18,
+      "end": 5892.5,
+      "text": "i na prędce te instrumenty były ułatwione u miejscowych, że tak powiem,"
+    },
+    {
+      "start": 5892.74,
+      "end": 5902.04,
+      "text": "ale że scena łódzka prężnie zawsze działała, no to tutaj z pomocą przyszli koledzy z imperatora"
+    },
+    {
+      "start": 5902.04,
+      "end": 5911.8,
+      "text": "i kult, wsparł kult, tak, Polska-Kolumbia 1-1 w tym pojedynku."
+    },
+    {
+      "start": 5912.46,
+      "end": 5918.88,
+      "text": "No a z takich już mniej oczywistych i przejrzystych, rzeczywiście jeżeli się bierze na warsztat"
+    },
+    {
+      "start": 5918.88,
+      "end": 5926.98,
+      "text": "tak dużą produkcję jak element trasy koncertowej Overkill, trzeba być gotowym na to,"
+    },
+    {
+      "start": 5926.98,
+      "end": 5935.24,
+      "text": "że trzeba naprawdę przyłożyć się do tego i postawić wszystkie służby i wszystkich podwykonawców"
+    },
+    {
+      "start": 5935.24,
+      "end": 5941.62,
+      "text": "na baczność, żeby rzeczywiście udało się taki koncert dowieźć i nam się udało."
+    },
+    {
+      "start": 5941.62,
+      "end": 5950.18,
+      "text": "Koncerty są bardzo ważne na festiwalach. Znam nawet takich, co twierdzą, że najważniejsze, ale nie daj"
+    },
+    {
+      "start": 5950.17,
+      "end": 5958.55,
+      "text": "Musimy się zwariować, bo ludzie przyjeżdżają na festiwale, a już na pewno na nie wracają również z innych powodów."
+    },
+    {
+      "start": 5959.21,
+      "end": 5968.11,
+      "text": "Robią to, bo podoba im się miejsce, bo czują się dobrze, bo spotykają tam starych, dobrych znajomych albo bo poznają nowych ludzi."
+    },
+    {
+      "start": 5969.11,
+      "end": 5973.61,
+      "text": "I Summer Dine Loud wychował już sobie tego rodzaju powracającą publiczność."
+    },
+    {
+      "start": 5973.61,
+      "end": 5982.35,
+      "text": "Pytam więc Tomasza Barszcza, co ludzie lubią w tym festiwalu, bo że go lubią, nie mam wątpliwości."
+    },
+    {
+      "start": 5982.75,
+      "end": 5987.83,
+      "text": "Tak, wydaje mi się właśnie, że dlatego, że nie przesadzamy w żadną stronę."
+    },
+    {
+      "start": 5987.83,
+      "end": 5999.97,
+      "text": "Mamy te dwie sceny, mamy już 50 wykonawców przez trzy dni i wydaje mi się, żeby utrzymać takie status quo średnio małego festiwalu, który funkcjonuje na mapie Polski,"
+    },
+    {
+      "start": 6000.55,
+      "end": 6013.65,
+      "text": "i to jedynie trzeba doprecyzowywać line-up do jakiejś swojej wizji, która tam w głowie gdzieś się jawi z roku na rok."
+    },
+    {
+      "start": 6014.93,
+      "end": 6025.35,
+      "text": "A w pozostałej części pozostawiamy ludziom trochę więcej przestrzeni na swobodną wymianę zdań, na komunikację,"
+    },
+    {
+      "start": 6025.35,
+      "end": 6036.73,
+      "text": "na to, żeby po prostu nie przeganiać ich ze sceny na scenę tylko po to, żeby się zmęczyli i żeby jeszcze wypili dużo piwa na strefie gastro."
+    },
+    {
+      "start": 6037.45,
+      "end": 6046.43,
+      "text": "Tutaj raczej też może z uwagi na to, że te odległości są niewielkie, wszystko sprzyja temu, żeby spotkać się ze znajomymi i żeby trochę z nimi porozmawiać."
+    },
+    {
+      "start": 6046.43,
+      "end": 6053.75,
+      "text": "I nawet kosztem niektórych koncertów, bo nie ma takiego festiwalu, który da się obejrzeć w stu procentach, to raz."
+    },
+    {
+      "start": 6054.17,
+      "end": 6060.51,
+      "text": "Dwa, nie wyobrażam sobie festiwalu, który w stu procentach trafiałby w nasze gusta."
+    },
+    {
+      "start": 6061.07,
+      "end": 6068.25,
+      "text": "Zawsze się znajdzie coś, co nas super ciekawi, a inne rzeczy są nam obojętne albo wręcz irytują nas."
+    },
+    {
+      "start": 6068.25,
+      "end": 6082.83,
+      "text": "I to jest wtedy ten czas, kiedy można tych swoich znajomych wyłowić z tłumu, a ta Polska wcale nie jest taka wielka i się okazuje, że rzeczywiście tu mamy znajomego z Krakowa, tu z Warszawy, a tu z Łodzi kogoś, kogo nie widzieliśmy już kupę czasu."
+    },
+    {
+      "start": 6082.83,
+      "end": 6092.91,
+      "text": "I wtedy to się napędza i rzeczywiście ci ludzie, jakaś ta integracja taka w tej podstawowej formule face to face zachodzi."
+    },
+    {
+      "start": 6093.21,
+      "end": 6100.29,
+      "text": "Tu warto podkreślić szczególną rolę Aleksandrowa Łódzkiego, czyli miasta, które jest gospodarzem festiwalu."
+    },
+    {
+      "start": 6100.83,
+      "end": 6107.59,
+      "text": "Z metalowymi imprezami w Polsce jest tak, że cieszyć się mogą te, które przez dłuższy czas są choćby tolerowane."
+    },
+    {
+      "start": 6107.79,
+      "end": 6119.05,
+      "text": "Tutaj sprawy mają się zupełnie inaczej, miasto jest bowiem aktywnie zaangażowane w organizacje imprezy, a jego mieszkańcy są dumni z Summer Dine Loud."
+    },
+    {
+      "start": 6119.15,
+      "end": 6129.63,
+      "text": "Tak i tak chcę wierzyć w to, natomiast nie da się ukryć, że są pewnie jednostki, którym pewne rzeczy, które tu się na tym festiwalu pojawiają przeszkadzają."
+    },
+    {
+      "start": 6129.63,
+      "end": 6141.39,
+      "text": "Czy chociażby przeszkadza to, że była piękna pogoda, a teren Miejskiego Ośrodka Sportu i Rekreacji był zamknięty z użycia, a mamy tutaj różne atrakcje, które mieszkańców cieszą."
+    },
+    {
+      "start": 6142.17,
+      "end": 6144.91,
+      "text": "No trzeba jakiś kompromis znaleźć."
+    },
+    {
+      "start": 6145.01,
+      "end": 6150.81,
+      "text": "Ten festiwal się odbywa raz do roku, jest wiadomo w jaki weekend od samego początku."
+    },
+    {
+      "start": 6152.67,
+      "end": 6161.93,
+      "text": "Akurat teraz trafiliśmy na pogodę, to mogliśmy jeszcze dodatkowo z tego korzystać, ale zauważam bardzo pozytywną zmianę wśród ludzi z roku na rok."
+    },
+    {
+      "start": 6162.55,
+      "end": 6171.09,
+      "text": "Więcej osób widzi tą pozytywną część festiwalu, którą może wykorzystać dla własnych celów i to mówię naprawdę takich wręcz materialnych."
+    },
+    {
+      "start": 6171.09,
+      "end": 6185.97,
+      "text": "Kochają nas lokalni hotelarze, restauratorzy, właściciele sklepów tutaj w okolicy, czy chociażby ostatnio nowa grupa społeczna, która nas bardzo lubi, taksówkaże."
+    },
+    {
+      "start": 6185.97,
+      "end": 6191.85,
+      "text": "Na pożegnanie pytam Tomasza o plany, zarówno te najbliższe, jak i dalekosiężne."
+    },
+    {
+      "start": 6192.45,
+      "end": 6201.59,
+      "text": "Kiedy dokładnie odbędzie się Summer Day in Loud w 2025 roku i jak organizator wyobraża sobie rozwój festiwalu."
+    },
+    {
+      "start": 6201.85,
+      "end": 6209.75,
+      "text": "Od paru lat taką tradycją jest, że na biletach kolekcjonerskich, które wręczamy dopiero na bramkach, one nie są dostępne w sprzedaży wcześniej."
+    },
+    {
+      "start": 6209.75,
+      "end": 6220.21,
+      "text": "I na odwrocie jest podana data przyszłorocznej edycji i już teraz każdy wie, że 4, 5, 6 września przyszłego roku należy sobie już zarezerwować."
+    },
+    {
+      "start": 6220.31,
+      "end": 6227.69,
+      "text": "To jest bardzo cenna informacja dla wszystkich tych, którzy już na tyle ufają nam, że w ciemno bukują sobie właśnie hotele w okolicy."
+    },
+    {
+      "start": 6227.69,
+      "end": 6237.91,
+      "text": "I słyszałem, że już mamy kolejne rekordy wyprzedanych miejsc noclegowych w najbliższym rejonie."
+    },
+    {
+      "start": 6238.51,
+      "end": 6252.53,
+      "text": "Tego się akurat ukryć nie da. Jeśli chodzi o plany takie typowo bookingowe, to oczywiście nie jest to tak, że dopiero teraz, kiedy posprzątamy tu po sobie i uszy nam odpoczną, to zaczniemy się zastanawiać, co zrobić w przyszłym roku."
+    },
+    {
+      "start": 6252.53,
+      "end": 6270.51,
+      "text": "Ten proces raz, że trwa non-stop, to trwa wielowątkowo i już oczywiście są pierwsze rozmowy dość takie zaawansowane z wykonawcami, których oczywiście w chwili obecnej nie zdradzę, żeby nie psuć niespodzianki albo żeby się nie ośmieszyć tutaj,"
+    },
+    {
+      "start": 6270.55,
+      "end": 6285.19,
+      "text": "jeśli nie wyjdą nam te rozmowy. Bo te rozmowy czasami są bardzo długie, ciągną się kilkoma latami. Tak było z Godflesh. To mogę akurat powiedzieć, że Godflesh był tutaj takim punktem, który był takim swoistym spełnieniem marzeń."
+    },
+    {
+      "start": 6285.19,
+      "end": 6309.59,
+      "text": "To nie jest wcale oczywista oczywistość, żeby taki zespół zagrał na Waszej imprezie, jeśli sobie to jesteście w stanie wyobrazić. Natomiast jeśli chodzi o taki dalszy rozwój, no to tu już po części odpowiedziałem wcześniej, że nie mamy ambicji, żeby ten festiwal rozrastał się frekwencyjnie do kilkunastu czy dziesięciu tysięcy uczestników i pięciu, sześciu scen na kilkudziesięciu hektarach."
+    },
+    {
+      "start": 6309.59,
+      "end": 6335.21,
+      "text": "Nie, absolutnie. Chodzi o to, żeby zachować tę kameralność, którą udało nam się wypracować, ale jeszcze coś dołożyć. Kwestia kolejnej sceny cały czas jest gdzieś z tyłu głowy, bo krypta kryptą, ja ją ubóstwiam absolutnie i nawet to, że ona jest mała, już nie jest duszna, bo udało się udrożnić kanały wentylacyjne i założyć w tym roku klimatyzację,"
+    },
+    {
+      "start": 6335.21,
+      "end": 6347.61,
+      "text": "że nawet dostawałem wiadomości od znajomych, co tu jest tak, k, zimno. Tak więc nawet trzeba było interweniować w drugą stronę, żeby ludzie nie wrócili do domu z zapaleniem oskrzeli."
+    },
+    {
+      "start": 6348.15,
+      "end": 6359.59,
+      "text": "Natomiast tak, kwestia kolejnej sceny, możliwe sceny nie tylko muzycznej, ale również rozwijającej nieco inne aspekty związane z sztuką, z kulturą,"
+    },
+    {
+      "start": 6359.59,
+      "end": 6385.67,
+      "text": "z dyskusjami, z panelami, może z jakimiś warsztatami. Ten teren, na którym teraz się nawet znajdujemy, daje ku temu możliwości. Mamy świetne możliwości terenowe, które można wykorzystać właśnie zagospodarowując kolejne elementy tego naszego ośrodka sportu i rekreacji na potrzeby nie tylko muzyczne, ale ogólnie kulturalne."
+    },
+    {
+      "start": 6385.67,
+      "end": 6394.67,
+      "text": "Dziękuję Tomaszowi za rozmowę i bardzo udany festiwal. Serdecznie pozdrawiam wszystkich, których spotkałem na Summer Dine Loud."
+    },
+    {
+      "start": 6395.27,
+      "end": 6403.67,
+      "text": "Super było porozmawiać, czy choćby przybić piątkę i mam nadzieję, że zobaczymy się, jeśli nie w Aleksandrowie, to na innych festiwalach niebawem."
+    },
+    {
+      "start": 6404.67,
+      "end": 6419.59,
+      "text": "Trzymam kciuki za następną edycję Summer Dine Loud i żywię nadzieję, że jednak powrócę do Aleksandrowa Łódzkiego, a Państwu już dziś mówię dobranoc. Do usłyszenia za tydzień."
+    },
+    {
+      "start": 6421.21,
+      "end": 6422.77,
+      "text": "I didn't hear voices."
+    },
+    {
+      "start": 6423.87,
+      "end": 6426.63,
+      "text": "It was a conscious decision on my part."
+    },
+    {
+      "start": 6427.25,
+      "end": 6428.63,
+      "text": "I didn't hear voices."
+    },
+    {
+      "start": 6428.99,
+      "end": 6430.79,
+      "text": "It was a power."
+    },
+    {
+      "start": 6430.99,
+      "end": 6433.27,
+      "text": "With me, it was more of a power thing."
+    },
+    {
+      "start": 6433.59,
+      "end": 6435.81,
+      "text": "Because of my fantasies."
+    },
+    {
+      "start": 6435.85,
+      "end": 6437.19,
+      "text": "I acted out of my fantasies."
+    },
+    {
+      "start": 6437.59,
+      "end": 6438.71,
+      "text": "You know, conscious."
+    },
+    {
+      "start": 6439.81,
+      "end": 6442.57,
+      "text": "It was a conscious decision on my part."
+    },
+    {
+      "start": 6442.73,
+      "end": 6443.41,
+      "text": "Power thing."
+    },
+    {
+      "start": 6444.11,
+      "end": 6444.85,
+      "text": "Power thing."
+    },
+    {
+      "start": 6444.91,
+      "end": 6445.89,
+      "text": "I didn't hear voices."
+    },
+    {
+      "start": 6446.91,
+      "end": 6447.89,
+      "text": "I didn't hear voices."
+    },
+    {
+      "start": 6448.73,
+      "end": 6450.05,
+      "text": "I didn't hear voices."
+    },
+    {
+      "start": 6451.21,
+      "end": 6456.09,
+      "text": "Nie ma nic nie wierzymy."
+    }
+  ],
+  "stats": {
+    "windowCount": 22,
+    "transcribedAudioSec": 2165.95,
+    "segmentCount": 256,
+    "characterCount": 26197
+  },
+  "sourceId": "2024-09-11-ciezko-na-sercu-11-wrzesnia-godz-0006"
+}

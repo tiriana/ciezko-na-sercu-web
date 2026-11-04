@@ -33,6 +33,27 @@ for (const name of await readdir(EPISODES)) {
   if (!ids.has(id)) problems.push(`${name}: opracowanie bez odcinka w katalogu`);
 }
 
+const TRANSCRIPTS = join(DATA, 'transcripts');
+const transcriptFiles = await readdir(TRANSCRIPTS).catch(() => []);
+const transcriptIds = new Set();
+for (const name of transcriptFiles) {
+  if (!name.endsWith('.json')) continue;
+  const id = name.slice(0, -5);
+  transcriptIds.add(id);
+  if (!ids.has(id)) problems.push(`transcripts/${name}: transkrypt bez odcinka w katalogu`);
+  const transcript = JSON.parse(await readFile(join(TRANSCRIPTS, name), 'utf8'));
+  if (transcript.episodeId !== id) problems.push(`transcripts/${name}: pole episodeId to ${transcript.episodeId}`);
+  if (!Array.isArray(transcript.segments) || transcript.segments.length === 0) {
+    problems.push(`transcripts/${name}: brak segmentów`);
+  }
+}
+
+for (const name of transcriptFiles) {
+  if (!name.endsWith('.txt')) continue;
+  const id = name.slice(0, -4);
+  if (!transcriptIds.has(id)) problems.push(`transcripts/${name}: .txt bez odpowiadającego .json`);
+}
+
 for (const id of Object.keys(titles.titles)) {
   if (!ids.has(id)) problems.push(`titles.json: tytuł dla nieznanego odcinka ${id}`);
 }
@@ -43,4 +64,7 @@ if (problems.length > 0) {
   process.exit(1);
 }
 
-console.log(`Dane spójne: ${catalog.episodes.length} odcinków, ${slugs.size} slugów, ${Object.keys(titles.titles).length} tytułów redakcyjnych`);
+console.log(
+  `Dane spójne: ${catalog.episodes.length} odcinków, ${slugs.size} slugów, ` +
+    `${Object.keys(titles.titles).length} tytułów redakcyjnych, ${transcriptIds.size} transkryptów`
+);

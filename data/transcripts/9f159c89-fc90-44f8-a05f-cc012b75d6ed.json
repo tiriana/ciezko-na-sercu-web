@@ -1,0 +1,950 @@
+{
+  "version": 1,
+  "episodeId": "9f159c89-fc90-44f8-a05f-cc012b75d6ed",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 110355605,
+  "fileMtimeMs": 1789151422491.4707,
+  "windows": [
+    {
+      "index": 0,
+      "start": 3.75,
+      "end": 9.05
+    },
+    {
+      "index": 1,
+      "start": 141.25,
+      "end": 308.16
+    },
+    {
+      "index": 2,
+      "start": 953.76,
+      "end": 1032.12
+    },
+    {
+      "index": 3,
+      "start": 1350.53,
+      "end": 1452.35
+    },
+    {
+      "index": 4,
+      "start": 1721.67,
+      "end": 1781.05
+    },
+    {
+      "index": 5,
+      "start": 1834.95,
+      "end": 1844.92
+    },
+    {
+      "index": 6,
+      "start": 1974.98,
+      "end": 1987.52
+    },
+    {
+      "index": 7,
+      "start": 2177.7,
+      "end": 2236.96
+    },
+    {
+      "index": 8,
+      "start": 2419.65,
+      "end": 2577.4
+    },
+    {
+      "index": 9,
+      "start": 2901.41,
+      "end": 3001.34
+    },
+    {
+      "index": 10,
+      "start": 3199.72,
+      "end": 3276.92
+    },
+    {
+      "index": 11,
+      "start": 3624.96,
+      "end": 3726.97
+    },
+    {
+      "index": 12,
+      "start": 4043.33,
+      "end": 4084.64
+    },
+    {
+      "index": 13,
+      "start": 4395.65,
+      "end": 4465.6
+    },
+    {
+      "index": 14,
+      "start": 4656.87,
+      "end": 4717.79
+    },
+    {
+      "index": 15,
+      "start": 4925.16,
+      "end": 5009.88
+    },
+    {
+      "index": 16,
+      "start": 5438.92,
+      "end": 5459.8
+    },
+    {
+      "index": 17,
+      "start": 5843.24,
+      "end": 5862.97
+    },
+    {
+      "index": 18,
+      "start": 6139.24,
+      "end": 6220.22
+    },
+    {
+      "index": 19,
+      "start": 6499.43,
+      "end": 6581.18
+    }
+  ],
+  "segments": [
+    {
+      "start": 3.75,
+      "end": 7.07,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 7.07,
+      "end": 9.05,
+      "text": "muzyka"
+    },
+    {
+      "start": 141.87,
+      "end": 150.45,
+      "text": "Dobry wieczór Państwu. Przywitała Was Grimelda, post-hardkorowy duet z Kanady, konkretnie z Saskatchewan."
+    },
+    {
+      "start": 150.99,
+      "end": 158.45,
+      "text": "A gdzie w Saskatchewan rezyduje Grimelda, tego już nie wiem. Pewnie trudno ich znaleźć, bo tam głównie lasy."
+    },
+    {
+      "start": 158.91,
+      "end": 164.25,
+      "text": "Zobaczyłem Grimeldę w miniony weekend na festiwalu Rapperband w Hamburgu."
+    },
+    {
+      "start": 164.85,
+      "end": 176.55,
+      "text": "Dwóch panów w gustownych sukienkach dało tak fantastyczny i zarazem absurdalny koncert, że udało im się przyćmić całą bardzo poważną konkurencję."
+    },
+    {
+      "start": 177.27,
+      "end": 184.45,
+      "text": "Obaj byli bardzo biegłymi instrumentalistami i kiedy chcieli, grali bardzo skomplikowaną muzykę na dużych obrotach."
+    },
+    {
+      "start": 184.89,
+      "end": 193.65,
+      "text": "Gitarzysta świetnie brzmiał, ale to ich chyba nudziło, bo bardzo często skręcali w żarty, improwizacje i wygłupy."
+    },
+    {
+      "start": 194.07,
+      "end": 204.61,
+      "text": "Dogadaliby się z Maciem i resztą ekipy Lado ABC, bo to podobne podejście do muzyki, zarazem totalne i zupełnie bez napinki."
+    },
+    {
+      "start": 205.15,
+      "end": 218.83,
+      "text": "Po koncercie kupiłem płytę, która nie robi aż tak wielkiego wrażenia, muszę to przyznać, ale i tak nie mogłem się oprzeć pokusie, żeby wam jej skromny wycinek zaprezentować."
+    },
+    {
+      "start": 219.55,
+      "end": 224.55,
+      "text": "Kolejna piosenka to też pokłosie mojej wizyty w Hamburgu."
+    },
+    {
+      "start": 225.55,
+      "end": 231.61,
+      "text": "Islandzkiej grupy Mur nie widziałem na Mystiku, bo niewiele tam widziałem."
+    },
+    {
+      "start": 232.25,
+      "end": 237.55,
+      "text": "Ale na reperbun nadarzyła się okazja, z której skwapliwie skorzystałem."
+    },
+    {
+      "start": 238.25,
+      "end": 250.65,
+      "text": "Mur to bardzo utalentowani młodzi ludzie, którzy tego wieczoru akurat mieli sporo pecha, bo obsługa techniczna sceny długo nie mogła sobie poradzić z pewnymi problemami."
+    },
+    {
+      "start": 251.25,
+      "end": 263.27,
+      "text": "Islandczycy zaczęli zatem z opóźnieniem, wyraźnie zestresowani, ale muzyka szybko poniosła i zespół i publiczność."
+    },
+    {
+      "start": 264.13,
+      "end": 276.31,
+      "text": "Mur grają mieszankę postmetalu, progmetalu i blackmetalu, a na to wszystko nakłada się aura charakterystyczna wyłącznie dla islandzkiej muzyki."
+    },
+    {
+      "start": 277.25,
+      "end": 284.39,
+      "text": "Tego samego dnia zresztą ukazał się pierwszy oficjalny singiel Mur, czyli Heimslit."
+    },
+    {
+      "start": 285.31,
+      "end": 299.43,
+      "text": "Napisałem więc maila do zespołu, pogratulowałem udanego mimo wszystko występu i poprosiłem o podesłanie piosenki w jakości umożliwiającej prezentację jej w radiu."
+    },
+    {
+      "start": 299.43,
+      "end": 306.57,
+      "text": "Odpisali natychmiast przesyłając i ten piękny utwór i pozdrowienie dla Państwa."
+    },
+    {
+      "start": 307.25,
+      "end": 308.13,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 954.56,
+      "end": 963.76,
+      "text": "Gdzie moje maniery? Słuchacie Państwo audycji Ciężko na sercu, którą prowadzi dla Was Jarek Szubrycht, a wydaje Mariusz Owczarek."
+    },
+    {
+      "start": 964.36,
+      "end": 975.46,
+      "text": "Dobry wieczór. Wprowadzeni w odpowiedni nastrój przez zespół M.U.R. posłuchamy teraz utworu, który znajdzie się na mini albumie grupy Blinded."
+    },
+    {
+      "start": 975.46,
+      "end": 996.54,
+      "text": "czy właściwie Blinded 23, nie wiem tego, tak na pewno. Po rebrandingu, tak się ten zespół nazywa, grupa została wskrzeszona po pięciu latach przerwy w nieco odmienionym składzie i pod zmodyfikowanym szyldem, ale muzycznie jest to dalszy etap tej samej drogi."
+    },
+    {
+      "start": 997,
+      "end": 1005.96,
+      "text": "Materiał zatytułowany Vanishing to, cytuję, opowieść o tym najgorszym okresie w moim życiorysie."
+    },
+    {
+      "start": 1006.66,
+      "end": 1012.86,
+      "text": "Nawiedzonym pełnym walki z demonami, które zaciągnęły mnie na sam dół, otchłani."
+    },
+    {
+      "start": 1013.42,
+      "end": 1016.88,
+      "text": "Mówi Havok, kierownik muzyczny zespołu."
+    },
+    {
+      "start": 1016.88,
+      "end": 1027.18,
+      "text": "Ale nawet gdyby tego nie mówił, doskonale słychać, że w tej muzyce emocje są prawdziwe i niekoniecznie pozytywne."
+    },
+    {
+      "start": 1027.74,
+      "end": 1030.14,
+      "text": "Utwór nazywa się Let Them Speak."
+    },
+    {
+      "start": 1030.14,
+      "end": 1032.12,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1350.53,
+      "end": 1364.41,
+      "text": "Audycja nazywa się Ciężko na sercu, a że mamy ostatnie wydanie w tym miesiącu, to podsumowujemy wydawniczy miesiąc w ciężkich brzmieniach."
+    },
+    {
+      "start": 1364.41,
+      "end": 1380.09,
+      "text": "Dużą płytę Ante Void zatytułowaną Parasite już chyba kiedyś zapowiadałem, wreszcie się ukazała nakładem Pagan Records. Ante Void to polskie trio założone przez prawdziwych wyjadaczy."
+    },
+    {
+      "start": 1380.55,
+      "end": 1398.03,
+      "text": "Liderem jest Destroyer, który w swoim nowym zespole śpiewa, gra na basie, gitarze, klawiszach, saksofonie, a wcześniej mieliście okazję poznać człowieka, m.in. za sprawą jego obecności w Hate i Crick's Machine."
+    },
+    {
+      "start": 1398.71,
+      "end": 1417.43,
+      "text": "Bębni Adam Sierżęga, znany m.in. z Lost Soul i Armageddon i koncertowego składu Azarat, a na basie szyje Haldor Grunberg, ceniony producent, a zarazem muzyk Tao, Mentora i kiedyś Searching for Calm."
+    },
+    {
+      "start": 1417.43,
+      "end": 1435.21,
+      "text": "Wybrałem utwór zatytułowany Abyss Gaze is Back. Przyznaję ze względu na tytuł. Tytuł wypożyczony od Fryderyka Nietzschego o odchłani, która się w nas gapi, jeśli my w nią zajrzymy."
+    },
+    {
+      "start": 1435.21,
+      "end": 1450.11,
+      "text": "I nie jest to być może numer reprezentatywny dla muzycznej zawartości tej płyty, ale jest świetny, a całości możecie sobie przecież posłuchać już sami i nawet powinniście."
+    },
+    {
+      "start": 1450.11,
+      "end": 1452.35,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1721.67,
+      "end": 1741.15,
+      "text": "Las Trumien łaskaw był wydać we wrześniu płytę Budowniczowie Grozy i jeśli ktoś od metalu nie oczekuje głębokich intelektualnych rozważań, choćby nawiązań do filozofów, jak z czym mieliśmy do czynienia przed chwilą,"
+    },
+    {
+      "start": 1741.15,
+      "end": 1761.07,
+      "text": "tylko chce, żeby ten metal go sponiewierał i zrelaksował zarazem, to album Lasu Trumien może być doskonałym wyborem. Sound Lasu Trumien jest dziki, muzyka plugawa, a zatem wszystko jest na swoim miejscu."
+    },
+    {
+      "start": 1761.43,
+      "end": 1779.05,
+      "text": "Tylko ten tytuł piosenki, którą za chwilę usłyszycie był dla mnie pewnym zaskoczeniem, bo przez całe życie myślałem, że listonosz zawsze dzwoni dwa razy, a tymczasem, jak twierdzi Las Trumien, listonosz puka."
+    },
+    {
+      "start": 1779.05,
+      "end": 1781.05,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1834.95,
+      "end": 1838.95,
+      "text": "Lecz nie odbieraj świ"
+    },
+    {
+      "start": 1838.95,
+      "end": 1841.95,
+      "text": "Gdy wejdzie do Śląska"
+    },
+    {
+      "start": 1841.95,
+      "end": 1844.93,
+      "text": "Policzone będą znowu"
+    },
+    {
+      "start": 1974.98,
+      "end": 1981.18,
+      "text": "A jak ktoś puka, na przykład listonosz i do tego woła zza drzwi"
+    },
+    {
+      "start": 1981.18,
+      "end": 1983.68,
+      "text": "Jest tam kto? To co, odpowiemy?"
+    },
+    {
+      "start": 1984.4,
+      "end": 1985.88,
+      "text": "Oczywiście, jestem."
+    },
+    {
+      "start": 1985.88,
+      "end": 1987.52,
+      "text": "Jestem."
+    },
+    {
+      "start": 2178.14,
+      "end": 2187.56,
+      "text": "Utwór Jestem pochodzi z nowej płyty warszawskiego zespołu Czerń, która ukazała się na początku września i nosi tytuł Klątwa."
+    },
+    {
+      "start": 2188.24,
+      "end": 2198.68,
+      "text": "To pół godziny konkretu brutalnego stopu defmetalowej brutalności, hardkorowej bezpośredniości i blackmetalowego zawzięcia."
+    },
+    {
+      "start": 2199.5,
+      "end": 2206.32,
+      "text": "Mocarny materiał, na koncertach pewnie kotłuje się pod sceną przy tych numerach."
+    },
+    {
+      "start": 2206.32,
+      "end": 2210.16,
+      "text": "A teraz krótko przypominam jaką mamy sytuację."
+    },
+    {
+      "start": 2210.62,
+      "end": 2224.96,
+      "text": "Listonosz puka, my odkrzykujemy, że owszem, jesteśmy w domu, odbieramy tę przesyłkę, być może z urzędu skarbowego i z wrażenia zapominamy zamknąć za pracownikiem poczty drzwi."
+    },
+    {
+      "start": 2225.56,
+      "end": 2235.34,
+      "text": "Niedobrze, bo jak przekonują unto others w tytule piosenki, której wysłuchacie za chwilą, mamuśka lubi, kiedy drzwi są zamknięte."
+    },
+    {
+      "start": 2236.32,
+      "end": 2236.94,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 2420.41,
+      "end": 2431.59,
+      "text": "Mama Likes, The Door Closed. To utwór, który wybrałem dla Państwa z płyty Never Neverland, trzeciej w dorobku Unto Others."
+    },
+    {
+      "start": 2432.49,
+      "end": 2445.43,
+      "text": "Brzmi pięknie, co jest zasługą zarówno samego zespołu, jak i producenta, czyli Toma Dalgetiego, znanego m.in. ze współpracy z Ghost i The Cult."
+    },
+    {
+      "start": 2445.43,
+      "end": 2455.29,
+      "text": "I to jest właściwy człowiek na właściwym miejscu, zważywszy na to, w jakiej stylistyce się Unto Others obracają."
+    },
+    {
+      "start": 2455.85,
+      "end": 2461.55,
+      "text": "Fani tej grupy, a przybywa ich w zawrotnym tempie, pewnie będą zachwyceni."
+    },
+    {
+      "start": 2462.27,
+      "end": 2465.63,
+      "text": "Ja jednak wciąż pozostaję ostrożny."
+    },
+    {
+      "start": 2465.85,
+      "end": 2478.89,
+      "text": "Może dlatego, że ciągle słyszę, że Unto Others to spadkobiercy typu Negative czy Sisters of Mercy, a wydaje mi się, że to zupełnie nie ten poziom, jeszcze nie."
+    },
+    {
+      "start": 2479.07,
+      "end": 2484.69,
+      "text": "I przede wszystkim głos nie tego formatu, co Stila czy Eldritcha."
+    },
+    {
+      "start": 2485.35,
+      "end": 2498.47,
+      "text": "Niemal równie gorąco, jak Unto Others fetowany jest brytyjski zespół Crimson Vale, czyli nowe wcielenie grupy Bird It's Baby."
+    },
+    {
+      "start": 2499.21,
+      "end": 2501.01,
+      "text": "Dobrze, że zmienili nazwę."
+    },
+    {
+      "start": 2501.63,
+      "end": 2505.97,
+      "text": "Gitarzysta i basista kończyli studia muzyczne w Brighton."
+    },
+    {
+      "start": 2506.53,
+      "end": 2509.43,
+      "text": "Pani obsługująca skrzypce, wiolonczele i harfę."
+    },
+    {
+      "start": 2509.49,
+      "end": 2519.15,
+      "text": "Nie mam pojęcia gdzie, ale gdzieś przecież musiała, bo to nie są umiejętności, które zdobywa się naśladując idoli popisujących się na YouTubie."
+    },
+    {
+      "start": 2520.15,
+      "end": 2526.89,
+      "text": "Wokalista z kolei, niejaki Miszkin Fitzgerald, śpiewał w kościele."
+    },
+    {
+      "start": 2527.63,
+      "end": 2535.29,
+      "text": "Ciekawe, czy u mnie zaśpiewać anielski orszak, niech twą duszę przyjmie, bo jak nie, to się nie liczy."
+    },
+    {
+      "start": 2535.29,
+      "end": 2550.95,
+      "text": "Na scenie Crimson Vale występują przebrani za bóstwa mroku i światła, cokolwiek to znaczy, otoczone kwiatami, kolcami i zwierzęcymi czaszkami."
+    },
+    {
+      "start": 2551.07,
+      "end": 2552.53,
+      "text": "Mam nadzieję, że sztucznymi."
+    },
+    {
+      "start": 2552.95,
+      "end": 2568.93,
+      "text": "Tak czy owak Crimson Vale są nie tylko ambitni, ale też dobrze przygotowani i wszyscy wokół nich, od wytwórni po media, bardzo wierzą w to, że będzie z tego duża kariera, więc prawdopodobnie będzie."
+    },
+    {
+      "start": 2569.83,
+      "end": 2574.95,
+      "text": "Debiutancki album grupy nosi tytuł Hex i słuchamy utworu tytułowego."
+    },
+    {
+      "start": 2902.41,
+      "end": 2908.37,
+      "text": "Radykalnie zmieniamy nastrój, na kilka chwil zostawiając królestwo heavy metalu."
+    },
+    {
+      "start": 2909.05,
+      "end": 2920.09,
+      "text": "Okazja nadarza się ku temu nie byle jaka, bo 13 września premierę miała siódma płyta w dyskografii amerykańskiej grupy The Jesus Lizard,"
+    },
+    {
+      "start": 2920.65,
+      "end": 2925.53,
+      "text": "nagrana po przerwie, która trwała bagatela 26 lat."
+    },
+    {
+      "start": 2926.09,
+      "end": 2936.09,
+      "text": "Kiedyś The Jesus Lizard płynęli na czele noise rockowej fali, inspirowali tysiące kochających hałas młodych ludzi,"
+    },
+    {
+      "start": 2936.65,
+      "end": 2941.17,
+      "text": "ale to już historia i dzisiaj o ich zasługach mało kto pamięta,"
+    },
+    {
+      "start": 2941.29,
+      "end": 2949.81,
+      "text": "chociaż we współczesnej muzyce gitarowej jak najbardziej to myślenie, które między innymi im zawdzięczamy słychać."
+    },
+    {
+      "start": 2949.81,
+      "end": 2954.49,
+      "text": "Po co wraca zespół, który milczał od lat dziewięćdziesiątych?"
+    },
+    {
+      "start": 2954.93,
+      "end": 2959.51,
+      "text": "Dlaczego akurat teraz to robi? Kto za tym wszystkim stoi?"
+    },
+    {
+      "start": 2960.19,
+      "end": 2966.73,
+      "text": "Tak wiele pytań, na które pewnie są gdzieś odpowiedzi, ale przyznaję, że niespecjalnie."
+    },
+    {
+      "start": 2966.83,
+      "end": 2968.43,
+      "text": "Chciało mi się szukać."
+    },
+    {
+      "start": 2968.79,
+      "end": 2975.63,
+      "text": "Znalazłem natomiast w notce prasowej, na towarzyszącej płycie Rack, takie ładne zdanie."
+    },
+    {
+      "start": 2975.81,
+      "end": 2982.53,
+      "text": "The Jesus Lizard może nie są młodzi, ale nigdy, przenigdy się nie zestarzeją."
+    },
+    {
+      "start": 2983.11,
+      "end": 2986.11,
+      "text": "Sprawdzimy to za chwilę organoleptycznie."
+    },
+    {
+      "start": 2987.19,
+      "end": 2993.43,
+      "text": "Dodam tylko, że w anglojęzycznym oryginale tego pięknego hasła był jeszcze wulgaryzm,"
+    },
+    {
+      "start": 2993.87,
+      "end": 2999.75,
+      "text": "ale go nie przytaczam, bo oczywiście wulgaryzm nie przeszedłby mi nigdy przez gardło."
+    },
+    {
+      "start": 3199.72,
+      "end": 3212.76,
+      "text": "A Dorior to ciekawy przypadek. Muzycy, którzy chcą w trzeciej dekadzie grać ekstremalny metal, mają sporo odmian tej muzyki do wyboru."
+    },
+    {
+      "start": 3212.76,
+      "end": 3230.92,
+      "text": "Od blacku przez def po skrajne rubieże metal kora. A jak ktoś chce grać metal tradycyjny, staroszkolny, to owszem można czemu nie, tylko wtedy zwykle wyklucza cię to na starcie z wyścigu ze wspomnianymi już brutalami."
+    },
+    {
+      "start": 3230.92,
+      "end": 3247.74,
+      "text": "I A Dorior jest wyjątkiem od tej reguły, bo ich metal, heavy metal nawet właściwie, czy speed metal, z jednej strony jest zdecydowanie tradycyjny, wierny, wykutym jeszcze w latach siedemdziesiątych prawidłom gatunku."
+    },
+    {
+      "start": 3247.74,
+      "end": 3260.12,
+      "text": "A z drugiej strony muzycy podkuwają te swoje numery litą stalą, rozpędzają się daleko poza miejskie limity prędkości."
+    },
+    {
+      "start": 3260.12,
+      "end": 3266.2,
+      "text": "I ten heavy metal naprawdę jest bezkompromisowy, okrutny i jadowity."
+    },
+    {
+      "start": 3266.76,
+      "end": 3275.04,
+      "text": "Lada moment, jeszcze we wrześniu ukaże się płyta Bleed on My Thief, która cała jest taka jak ta piosenka."
+    },
+    {
+      "start": 3275.04,
+      "end": 3276.92,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3625.76,
+      "end": 3633.36,
+      "text": "Kanonen Fieber to tajemniczy projekt prowadzony przez osobnika ukrywającego się pod pseudonimem Nois."
+    },
+    {
+      "start": 3634.04,
+      "end": 3643.96,
+      "text": "Cała twórczość tego tworu, bo trudno powiedzieć zespołu, poświęcona jest wspomnieniom okropieństw I wojny światowej,"
+    },
+    {
+      "start": 3645,
+      "end": 3650.08,
+      "text": "która zniszczyła Europę i pochłonęła 17 milionów ofiar."
+    },
+    {
+      "start": 3650.08,
+      "end": 3655.64,
+      "text": "Jak słusznie zauważa Nois, chociaż od tamtych wydarzeń minęło ponad 100 lat,"
+    },
+    {
+      "start": 3656.16,
+      "end": 3663.76,
+      "text": "ich wpływ na losy świata, a już szczególnie naszej części świata, wciąż jest odczuwalny."
+    },
+    {
+      "start": 3664.36,
+      "end": 3670.38,
+      "text": "I zarazem historie te mogą służyć za ostrzeżenie dla przyszłych pokoleń."
+    },
+    {
+      "start": 3670.46,
+      "end": 3675.86,
+      "text": "Tak uważa Nois, bo jeżeli chodzi o wyciąganie przez ludzkość wniosków z historii,"
+    },
+    {
+      "start": 3675.86,
+      "end": 3678.94,
+      "text": "to ja na wiele bym nie liczył."
+    },
+    {
+      "start": 3679.52,
+      "end": 3686.44,
+      "text": "Die Urkatastrophe, czyli pierwotna katastrofa, to tytuł nowego albumu Kanonen Fieber,"
+    },
+    {
+      "start": 3686.96,
+      "end": 3691.54,
+      "text": "a ja wybrałem z niego utwór, który opowiada o tym rozdziale historii,"
+    },
+    {
+      "start": 3692,
+      "end": 3696.26,
+      "text": "w którym Lwów raz był zajmowany przez armię rosyjską,"
+    },
+    {
+      "start": 3696.34,
+      "end": 3701.12,
+      "text": "a potem po bitwie pod Gorlicami i skutecznej kontrofensywie"
+    },
+    {
+      "start": 3701.12,
+      "end": 3704.82,
+      "text": "znów trafił w ręce Austriaków."
+    },
+    {
+      "start": 3705.42,
+      "end": 3706.44,
+      "text": "Słuchamy piosenki"
+    },
+    {
+      "start": 3706.44,
+      "end": 3708.96,
+      "text": "Lwów zu Lemberg."
+    },
+    {
+      "start": 3708.96,
+      "end": 3710.56,
+      "text": "Muzika"
+    },
+    {
+      "start": 3710.56,
+      "end": 3722.56,
+      "text": "Muzika"
+    },
+    {
+      "start": 3722.56,
+      "end": 3723.56,
+      "text": "Muzika"
+    },
+    {
+      "start": 3723.56,
+      "end": 3724.84,
+      "text": "Muzika"
+    },
+    {
+      "start": 3724.84,
+      "end": 3726.98,
+      "text": "Muzika"
+    },
+    {
+      "start": 4043.33,
+      "end": 4048.05,
+      "text": "APEP czy APEP, sam nie wiem jak to czytać."
+    },
+    {
+      "start": 4048.85,
+      "end": 4055.47,
+      "text": "Wokalista na scenie pewnie i tak przedstawia zespół Graulem, więc może im być wszystko jedno."
+    },
+    {
+      "start": 4056.27,
+      "end": 4064.59,
+      "text": "Zadebiutowali w 2020 roku i okrzyknięci zostali nową nadzieją niemieckiego death metalu."
+    },
+    {
+      "start": 4064.59,
+      "end": 4074.29,
+      "text": "Czy tych nadziei nie zawiedli możemy się przekonać słuchając drugiej płyty APEP zatytułowanej Before Whom Evil Trumbles."
+    },
+    {
+      "start": 4074.93,
+      "end": 4082.47,
+      "text": "Powiem tak, ja ani razu nie zadrżałem ze strachu słuchając tego materiału, ale wstydu też nie ma."
+    },
+    {
+      "start": 4395.65,
+      "end": 4409.55,
+      "text": "Ripped to Shreds jest zespołem z Kalifornii, za którym stoi niejaki Andrew Lee, multi-instrumentalista udzielający się w kilku, jeżeli nie kilkunastu projektach równocześnie."
+    },
+    {
+      "start": 4410.31,
+      "end": 4430.11,
+      "text": "Jako Arch Aganini na przykład próbuje połączyć muzykę klasyczną z grindcorem i serio, kiedyś Wam to puszczę, a jako How Kako Grind Time po prostu sieje grindowe zniszczenie, natomiast w gulu, chyba już nieistniejącym, grał black metal."
+    },
+    {
+      "start": 4430.11,
+      "end": 4447.41,
+      "text": "Projektów death metalowych i około death metalowych ma pewnie z dziesięć. Zajmiemy się dzisiaj jednak rzeczonym Ripped to Shreds, który nazwę zaczerpnął z tytułu kultowego utworu Terrorizera, a to zobowiązuje."
+    },
+    {
+      "start": 4447.41,
+      "end": 4463.99,
+      "text": "Tu gra się brutalny death metal z grindowym ornamentem bez kombinowania. Tylko rify, tylko solówki. Utwór Horrendous Corpse Resurrection pochodzi z wydanej właśnie nowej płyty Ripped to Shreds zatytułowanej Sanshi."
+    },
+    {
+      "start": 4656.87,
+      "end": 4672.95,
+      "text": "Kiedy God the Throne pojawili się na niderlandzkiej scenie w 1991 roku, byli już drugą falą holenderskiego death metalu, przybrudzoną nieco black metalowym paskudstwem."
+    },
+    {
+      "start": 4673.43,
+      "end": 4695.07,
+      "text": "Nikomu to jednak wtedy nie przeszkadzało, wręcz przeciwnie, demo i pierwsze dwa, może trzy albumy God the Throne były dobrze przyjęte, bo na to zasługiwały, chociaż można było odnieść wrażenie, że na jakimś etapie to kroczenie środkiem jest dla zespołu problemem, obciążeniem,"
+    },
+    {
+      "start": 4695.07,
+      "end": 4705.01,
+      "text": "bo dla fanów klasycznego death metalu za dużo w tym było blacku, a dla black metalowców niedostatecznie to było piekielne."
+    },
+    {
+      "start": 4705.67,
+      "end": 4715.53,
+      "text": "Mimo to zespół przetrwał, robi swoje i robi to dobrze, czego dowiadujemy się z tegorocznej płyty The Judas Paradox."
+    },
+    {
+      "start": 4715.53,
+      "end": 4717.79,
+      "text": "KONIEC"
+    },
+    {
+      "start": 4925.16,
+      "end": 4939.84,
+      "text": "Niewiele brytyjskich zespołów black metalowych darzyłem w swoim życiu płomiennym uczuciem, poza przyznaję etapem fascynacji Cradle of Field, kiedy i ja i oni byliśmy młodzi."
+    },
+    {
+      "start": 4939.84,
+      "end": 4956.72,
+      "text": "Co oczywiście nie znaczy, że na wyspach nie potrafią skutecznie służyć ciemności. Doskonałym przykładem jest zespół Winterfelleth, który właśnie świętuje wydanie swojego ósmego albumu nazwanego The Imperious Horizon."
+    },
+    {
+      "start": 4956.72,
+      "end": 4969.92,
+      "text": "A co takiego kryje się za tytułowym horyzontem? Świat zmienił się na gorsze, a co więcej wszyscy czujemy, że żyjemy w coraz bardziej podzielonym i zniszczonym świecie."
+    },
+    {
+      "start": 4970.44,
+      "end": 4979.14,
+      "text": "Odkrywają Amerykę panowie z Winterfelleth. Uważają, że za horyzontem czai się jakaś nowa władza lub idea."
+    },
+    {
+      "start": 4979.14,
+      "end": 4988.78,
+      "text": "I znowu cytat. Nie wiemy do końca jak się zamanifestuje, ale wiemy, że skrada się ku nam i jest nieunikniona."
+    },
+    {
+      "start": 4989.12,
+      "end": 5007.98,
+      "text": "Skrada się ku nam i jest nieunikniona prezentacja jednego z utworów nowej płyty Winterfelleth, do której pewnie nie będę często wracał, może nawet nigdy, bo Ars Longa wita brevis, ale przyjemnie się tego słucha."
+    },
+    {
+      "start": 5009.14,
+      "end": 5009.88,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5439.62,
+      "end": 5444.06,
+      "text": "Ice Alert są z Grecji i też grają na black metal."
+    },
+    {
+      "start": 5444.66,
+      "end": 5447.92,
+      "text": "Nad brzmieniem albumu Wounds of Desolation"
+    },
+    {
+      "start": 5447.92,
+      "end": 5452.18,
+      "text": "czuwał m.in. Achilleas z Varatrona,"
+    },
+    {
+      "start": 5452.56,
+      "end": 5454.84,
+      "text": "a więc wszystko zostaje w rodzinie."
+    },
+    {
+      "start": 5455.38,
+      "end": 5458.14,
+      "text": "Słuchamy utworu Herald of Demise."
+    },
+    {
+      "start": 5458.14,
+      "end": 5459.8,
+      "text": "Yes!"
+    },
+    {
+      "start": 5843.24,
+      "end": 5855,
+      "text": "Z tym black metalem to jest tak, że wszyscy go grają, a potem przychodzi gal, tym razem na czele Treldom i wygania wszystkich z lasu."
+    },
+    {
+      "start": 5855.72,
+      "end": 5861.12,
+      "text": "Nowa płyta Treldom nosi nazwę By the Shadows i tu się głowy ścina."
+    },
+    {
+      "start": 6140.24,
+      "end": 6163,
+      "text": "Kolejny zespół nazywa się Dreamless Vale i właśnie zadebiutował albumem Every Limp of the Flood, ale muzycy znani są z innych składów, konkretnie Inter Arma, Cycroptic i Artificial Brain, a więc nie jest to taki pełną gębą debiut, tylko nowa konfiguracja sprawdzonych graczy."
+    },
+    {
+      "start": 6163.4,
+      "end": 6172.28,
+      "text": "Płyta jest koncepcyjna i chodzi w niej o to, żebyśmy sobie wyobrazili, co by to było, gdybyśmy kompletnie zniknęli."
+    },
+    {
+      "start": 6173.3,
+      "end": 6185.74,
+      "text": "Radiohead też się kiedyś nad tym zastanawiali w swojej kultowej piosence, ale być może nie wszyscy potencjalni odbiorcy Dreamless Vale mogą sobie zdawać z tego sprawę."
+    },
+    {
+      "start": 6185.98,
+      "end": 6197,
+      "text": "Tak czy owak projekt jest interesujący i mam nadzieję, że będzie się rozwijał, a ja wybrałem dla Państwa z tej płyty utwór zatytułowany"
+    },
+    {
+      "start": 6197,
+      "end": 6198.32,
+      "text": "Saturnizm."
+    },
+    {
+      "start": 6199,
+      "end": 6207.9,
+      "text": "Nie wiem, czy wyraźnie to wymówiłem, więc specjalnie dla tych słuchaczy audycji, którzy skrzętnie notują wszystkie moje antenowe grzechy,"
+    },
+    {
+      "start": 6207.9,
+      "end": 6208.86,
+      "text": "muszę powtórzyć."
+    },
+    {
+      "start": 6209.24,
+      "end": 6211.64,
+      "text": "Saturnizm, nie satanizm."
+    },
+    {
+      "start": 6212,
+      "end": 6214.18,
+      "text": "Od Saturna, nie od szatana."
+    },
+    {
+      "start": 6214.5,
+      "end": 6218.04,
+      "text": "Bardzo mi przykro, jeżeli kogoś rozczarowałem."
+    },
+    {
+      "start": 6218.04,
+      "end": 6220.22,
+      "text": "Muzyka"
+    },
+    {
+      "start": 6500.21,
+      "end": 6509.49,
+      "text": "Pożegnam się z państwem polskim Black Metalem, a ten, jak wiadomo, ma wszystkie międzynarodowe certyfikaty jakości."
+    },
+    {
+      "start": 6510.31,
+      "end": 6518.81,
+      "text": "Zespół Odium Humani Generis pochodzi z Łodzi i próbuje zgasić słońce od 2015 roku."
+    },
+    {
+      "start": 6519.05,
+      "end": 6527.11,
+      "text": "Ich wizja Black Metalu bliska jest tej norweskiej surowości, którą znamy z początków drugiej fali,"
+    },
+    {
+      "start": 6527.65,
+      "end": 6535.47,
+      "text": "choć nie można odmówić polskiej grupie i otwartości na współczesne wpływy i indywidualnego sznytu"
+    },
+    {
+      "start": 6535.47,
+      "end": 6543.11,
+      "text": "i nawet po smaku słowiańskości, którego nie umiem precyzyjnie opisać, ale który wyczuwam"
+    },
+    {
+      "start": 6543.11,
+      "end": 6546.53,
+      "text": "i nikt mi nie wmówi, że nie wyczuwam."
+    },
+    {
+      "start": 6547.15,
+      "end": 6555.13,
+      "text": "Debiut Odium Humani Generis nosił tytuł Przeddzień, nowy album to Międzyczasa, więc muzycy wyraźnie"
+    },
+    {
+      "start": 6555.13,
+      "end": 6559.15,
+      "text": "zainteresowani są koncepcją czasu."
+    },
+    {
+      "start": 6559.75,
+      "end": 6564.75,
+      "text": "Nic dziwnego, bo powszechnie wiadomo, że szczęśliwi czasu nie mierzą,"
+    },
+    {
+      "start": 6565.21,
+      "end": 6569.07,
+      "text": "a muzycy Black Metalowi szczęśliwi być nie powinni."
+    },
+    {
+      "start": 6569.77,
+      "end": 6574.67,
+      "text": "Utwór nazywa się Popłoch, a ja już teraz bez wpadania w popłoch,"
+    },
+    {
+      "start": 6574.67,
+      "end": 6579.25,
+      "text": "na totalnym spokoju mówię Państwu dobranoc."
+    }
+  ],
+  "stats": {
+    "windowCount": 20,
+    "transcribedAudioSec": 1390.67,
+    "segmentCount": 166,
+    "characterCount": 15355
+  },
+  "sourceId": "2024-09-25-ciezko-na-sercu-25-wrzesnia-godz-0005"
+}

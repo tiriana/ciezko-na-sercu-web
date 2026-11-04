@@ -1,0 +1,1630 @@
+{
+  "version": 1,
+  "episodeId": "4979c412-1662-4421-b637-6d2af2c65688",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 276528960,
+  "fileMtimeMs": 1789151499247.108,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 64.28
+    },
+    {
+      "index": 1,
+      "start": 108.36,
+      "end": 191.04
+    },
+    {
+      "index": 2,
+      "start": 253.28,
+      "end": 360.73
+    },
+    {
+      "index": 3,
+      "start": 1027.43,
+      "end": 1189.21
+    },
+    {
+      "index": 4,
+      "start": 1840.74,
+      "end": 1921.4
+    },
+    {
+      "index": 5,
+      "start": 2126.76,
+      "end": 2234.3
+    },
+    {
+      "index": 6,
+      "start": 2375.78,
+      "end": 2457.47
+    },
+    {
+      "index": 7,
+      "start": 2512.74,
+      "end": 2585.47
+    },
+    {
+      "index": 8,
+      "start": 2992.48,
+      "end": 3162.75
+    },
+    {
+      "index": 9,
+      "start": 3718.4,
+      "end": 3723.58
+    },
+    {
+      "index": 10,
+      "start": 3808.1,
+      "end": 3970.43
+    },
+    {
+      "index": 11,
+      "start": 4005.32,
+      "end": 4082.46
+    },
+    {
+      "index": 12,
+      "start": 4286.44,
+      "end": 4420.67
+    },
+    {
+      "index": 13,
+      "start": 4532.36,
+      "end": 4605.76
+    },
+    {
+      "index": 14,
+      "start": 4816.23,
+      "end": 4909.12
+    },
+    {
+      "index": 15,
+      "start": 5094.72,
+      "end": 5186.36
+    },
+    {
+      "index": 16,
+      "start": 5337.92,
+      "end": 5426.14
+    },
+    {
+      "index": 17,
+      "start": 5680.52,
+      "end": 5701.63
+    },
+    {
+      "index": 18,
+      "start": 5896.1,
+      "end": 5970.33
+    },
+    {
+      "index": 19,
+      "start": 6905.57,
+      "end": 6912.35
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.9,
+      "text": "Trójka"
+    },
+    {
+      "start": 1.9,
+      "end": 5.74,
+      "text": "Program Trzeci Polskiego Radia"
+    },
+    {
+      "start": 5.74,
+      "end": 13.74,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 13.74,
+      "end": 16.28,
+      "text": "Dobry wieczór Państwu"
+    },
+    {
+      "start": 16.28,
+      "end": 17.56,
+      "text": "Mówi do Was Jarek Szubrycht"
+    },
+    {
+      "start": 17.56,
+      "end": 19.7,
+      "text": "Audycję wydaje Mariusz Owczarek"
+    },
+    {
+      "start": 19.7,
+      "end": 21.98,
+      "text": "Słuchacie Ciężko na sercu"
+    },
+    {
+      "start": 21.98,
+      "end": 22.54,
+      "text": "W Trójce"
+    },
+    {
+      "start": 22.54,
+      "end": 25.54,
+      "text": "Życzenia i zażalenia możecie kierować na adres"
+    },
+    {
+      "start": 25.54,
+      "end": 28.08,
+      "text": "ciężkomałpapolskieradio.pl"
+    },
+    {
+      "start": 28.08,
+      "end": 29.72,
+      "text": "Oczywiście ciężko bez polskich"
+    },
+    {
+      "start": 29.72,
+      "end": 30.92,
+      "text": "znaków"
+    },
+    {
+      "start": 30.92,
+      "end": 33.7,
+      "text": "W niedzielę wróciłem z Obscenic Stream"
+    },
+    {
+      "start": 33.7,
+      "end": 36.06,
+      "text": "festiwalu organizowanego w czeskim"
+    },
+    {
+      "start": 36.06,
+      "end": 37.72,
+      "text": "miasteczku Trutnow, nieopodal"
+    },
+    {
+      "start": 37.72,
+      "end": 39.36,
+      "text": "polskiej granicy"
+    },
+    {
+      "start": 39.36,
+      "end": 41.94,
+      "text": "Jak ktoś mieszka w Wałbrzychu to nie musi"
+    },
+    {
+      "start": 41.94,
+      "end": 44.04,
+      "text": "rozbijać namiotu, może nocować"
+    },
+    {
+      "start": 44.04,
+      "end": 45.14,
+      "text": "w domu"
+    },
+    {
+      "start": 45.14,
+      "end": 47.88,
+      "text": "Wróciłem z Obscenic Stream ciałem, ale duchem"
+    },
+    {
+      "start": 47.88,
+      "end": 49.5,
+      "text": "jeszcze nie do końca"
+    },
+    {
+      "start": 49.5,
+      "end": 51.72,
+      "text": "Dlatego dzisiejsza audycja będzie"
+    },
+    {
+      "start": 51.72,
+      "end": 53.38,
+      "text": "w całości poświęcona tej"
+    },
+    {
+      "start": 53.38,
+      "end": 55.84,
+      "text": "imprezie z różnych względów"
+    },
+    {
+      "start": 55.84,
+      "end": 56.88,
+      "text": "wyjątkowej"
+    },
+    {
+      "start": 56.88,
+      "end": 59.44,
+      "text": "Nie wtajemniczonych pozwolę sobie"
+    },
+    {
+      "start": 59.44,
+      "end": 62.64,
+      "text": "wprowadzić w nastrój taką oto piosenką."
+    },
+    {
+      "start": 108.36,
+      "end": 124.82,
+      "text": "Obstynik stream. Obstyniczność i ekstrema w nazwie nie są absolutnie na wyrost. To jest bowiem festiwal, na którym usłyszycie wszystkie gatunki muzyczne pod warunkiem, że to muzyka ekstremalna i gitarowa."
+    },
+    {
+      "start": 124.82,
+      "end": 139.64,
+      "text": "Przede wszystkim będzie to grind i death metal. Rzadko black metal, chyba że powiązany z deathem lub thrashem, siekący okrutnie, nie udający symfonii, nie budujący nastroju."
+    },
+    {
+      "start": 139.64,
+      "end": 152.82,
+      "text": "Thrash w czystej, staromodnej postaci, jak najbardziej. Hardcore, oczywiście. Punk, mile widziany, ale niech to będzie krast, a nie jakieś tam melodie dla mięczaków."
+    },
+    {
+      "start": 153.74,
+      "end": 167.18,
+      "text": "Eksperymenty niekoniecznie, chyba że będzie to jednoosobowa grupa noise-core'owa typu Beaver Fever, Japonka z Kanady, ukrywająca się pod wiele mówiącym pseudonimem Tsunami Nagasaki,"
+    },
+    {
+      "start": 167.92,
+      "end": 179.84,
+      "text": "która wali wściekle w struny gitary, krzyczy dziko, a towarzyszy jej tylko automat perkusyjny zapętlony w jednostajnym rytmie i tak gęstym, że przypomina serię z karabinu."
+    },
+    {
+      "start": 179.84,
+      "end": 188.96,
+      "text": "Nie zmyśliłem tego, Beaver Fever istnieje, Tsunami Nagasaki dla nas wszystkich gra i bardzo to jest urocze, o czym przekonacie się już teraz."
+    },
+    {
+      "start": 254.2,
+      "end": 260.96,
+      "text": "Obstynik Stream to festiwal czterodniowy, albo i pięciodniowy, jeżeli liczyć niedzielne poprawiny."
+    },
+    {
+      "start": 261.6,
+      "end": 263.38,
+      "text": "Ja już nie zostałem, nie ten wiek."
+    },
+    {
+      "start": 264.16,
+      "end": 271.16,
+      "text": "Za to ma tylko jedną scenę, a więc nie trzeba biegać, nie będziecie mieć wrażenia, że źle wybraliście."
+    },
+    {
+      "start": 271.84,
+      "end": 275.6,
+      "text": "Albo i dobrze, ale i tak coś was ominęło."
+    },
+    {
+      "start": 276.2,
+      "end": 278.44,
+      "text": "Każdy, kto jeździ na festiwale, zna tę scenkę."
+    },
+    {
+      "start": 279.08,
+      "end": 282.56,
+      "text": "Spotykam znajomego, który pyta, czy byłem na zespole X."
+    },
+    {
+      "start": 282.56,
+      "end": 287.44,
+      "text": "No nie byłem, bo wtedy byłem przecież na Y, który jest super i który grał w innym miejscu."
+    },
+    {
+      "start": 287.92,
+      "end": 292.2,
+      "text": "Żałuj stary, tu jęczy z niekłamanym współczuciem kolega."
+    },
+    {
+      "start": 292.28,
+      "end": 294.22,
+      "text": "To był najlepszy koncert festiwalu."
+    },
+    {
+      "start": 295.02,
+      "end": 297.48,
+      "text": "No więc na Obstynik Stream takiego problemu nie ma."
+    },
+    {
+      "start": 298.38,
+      "end": 299.2,
+      "text": "Jest za to inny."
+    },
+    {
+      "start": 300.3,
+      "end": 304.58,
+      "text": "Koncerty zaczynają się o 10 rano, a kończą około 3 w nocy."
+    },
+    {
+      "start": 305.36,
+      "end": 311.56,
+      "text": "Gruz sypie się ze sceny niemal bez przerwy, a właściwie z krótkimi przerwami, około 15 minutowymi."
+    },
+    {
+      "start": 311.84,
+      "end": 314.44,
+      "text": "Coś więc trzeba odpuścić."
+    },
+    {
+      "start": 314.52,
+      "end": 315.92,
+      "text": "Wszystkiego nie da się obejrzeć."
+    },
+    {
+      "start": 316.56,
+      "end": 319.78,
+      "text": "Trzeba czasem zjeść, skorzystać z toalety."
+    },
+    {
+      "start": 320.48,
+      "end": 327.7,
+      "text": "Może nawet zdrzemnąć się gdzieś na jakimś zespole mniej dla nas interesującym wczesnym popołudniem."
+    },
+    {
+      "start": 327.76,
+      "end": 328.72,
+      "text": "To jest świetna strategia."
+    },
+    {
+      "start": 329.52,
+      "end": 339.8,
+      "text": "A szkoda, szkoda oczywiście tracić każdego, bo w godzinach porannych na przykład występują wynalazki, których nigdzie indziej zobaczyć się nie da."
+    },
+    {
+      "start": 340.34,
+      "end": 347.34,
+      "text": "A z kolei wieczorami, również późnymi wieczorami, nocą gwiazdy najczęściej w świetnej formie."
+    },
+    {
+      "start": 347.34,
+      "end": 358.28,
+      "text": "Na przykład takie immolation, które jak zwykle posiekało publiczność na plasterki, a następnie pożarło nawet nie soląc."
+    },
+    {
+      "start": 1028.25,
+      "end": 1038.21,
+      "text": "Były też inne gwiazdy. W tym roku wyjątkowo dużo, bo organizatorzy postarali się o mocne nazwy, by uczcić ćwierćwiecze Obsynic Stream."
+    },
+    {
+      "start": 1038.85,
+      "end": 1051.21,
+      "text": "Zagrali m.in. Napalm Death, Dainfitus, Ratos Deporao, Wolf Brigade, Sabat, ten japoński, Protektor, w Polsce kochany od głębokich lat 80."
+    },
+    {
+      "start": 1051.21,
+      "end": 1066.59,
+      "text": "I wciąż w formie Drop Dead, Convulse, te sprawy. Oczywiście nie są to takie gwiazdy, które wykręcają miliony odsłon teledysków i ściągają na siebie uwagę serwisów plotkarskich."
+    },
+    {
+      "start": 1067.29,
+      "end": 1075.87,
+      "text": "To nie są zespoły, które sprzedają sterty płyt. Prawdziwa gwiazda w tym samym czasie grała w Polsce, w Warszawie na stadionie."
+    },
+    {
+      "start": 1075.87,
+      "end": 1083.55,
+      "text": "I wszystkie te zespoły z Obsynic razem wzięte nie byłyby w stanie wypełnić pewnie jednej trzeciej takiego obiektu."
+    },
+    {
+      "start": 1083.85,
+      "end": 1095.75,
+      "text": "Ale zupełnie nie o to chodzi, bo Obsynic Stream to muzyka, która nigdy nie miała być i nie będzie miała szans komercyjnego powodzenia."
+    },
+    {
+      "start": 1095.75,
+      "end": 1111.37,
+      "text": "Bo właśnie jest zbyt radykalna, zbyt odpychająca. O czym mam nadzieję dzisiaj was przekonać i zresztą pewnie niektórzy z państwa, co konstatuję z żalem, już mogli odpaść po tych pierwszych prezentacjach muzycznych."
+    },
+    {
+      "start": 1111.37,
+      "end": 1126.51,
+      "text": "A będzie gorzej. Gwiazdy. Była też i przede wszystkim główna z nich, a więc autopsy, które widziałem po raz pierwszy w życiu, na które czekałem długie lata, dekady właściwie."
+    },
+    {
+      "start": 1128.19,
+      "end": 1144.11,
+      "text": "I znajomi, którym udało się zetknąć z autopsy na żywo na przykład w Niemczech, bo w Europie Wschodniej pojawili się w miniony weekend po raz pierwszy, opowiadali, że jest cudownie, że jest na co czekać, że na żywo ten zespół brzmi jeszcze bardziej plugawie niż w studiu."
+    },
+    {
+      "start": 1144.11,
+      "end": 1160.83,
+      "text": "Mieli rację. Mieli rację. Wszystkie oczekiwania moje wyśrubowane autopsy spełniło z nawiązką. Zespół długo się dostrajał jak na standardy tego festiwalu, bo jak już wspomniałem to są przepinki 10-15 minutowe, tu pewnie zajęło im to całe 22 minuty."
+    },
+    {
+      "start": 1160.83,
+      "end": 1177.67,
+      "text": "Kiedy już ta machina ruszyła, nie było co zbierać. Zaprezentowali w przeważającej części materiał z debiutanckiego albumu, czyli Severed Survival, co było spełnieniem marzeń wszystkich fanów death metalu, fanów autopsy i większości zgromadzonych."
+    },
+    {
+      "start": 1178.37,
+      "end": 1187.47,
+      "text": "Nie dam sobie tylko ręki uciąć, czy pomiędzy utworami słychać było brawa, czy był to trzask pękających czaszek."
+    },
+    {
+      "start": 1188.47,
+      "end": 1189.21,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1840.74,
+      "end": 1869.06,
+      "text": "Autopsy było niezrównane i mimo deszczu, który rozpadał się już w pierwszych minutach koncertu, tłum pozostał pod sceną, takie to było fantastyczne, no ale że koncert festiwalowy, szczególnie na Obscene, gdzie te główne gwiazdy właściwie nie dostają bardzo dużo więcej czasu na prezentację swojego materiału niż zespoły, które grają wcześniej, bo raptem godzinę, więc koncert pozostawił niedosyt."
+    },
+    {
+      "start": 1869.06,
+      "end": 1875.72,
+      "text": "Mam nadzieję, że Autopsy uda się zobaczyć ponownie, wkrótce i również niedaleko."
+    },
+    {
+      "start": 1876.44,
+      "end": 1886.28,
+      "text": "Wyjątkowym koncertem był też występ grupy Walking Corpses, grupy powołanej specjalnie z okazji urodzin festiwalu i jego organizatora."
+    },
+    {
+      "start": 1886.7,
+      "end": 1896.8,
+      "text": "Walking Corpses, czyli chodzące trupy, okazały się cover bandem legendarnej amerykańskiej formacji Brutal Through, na co zresztą już wskazywała nazwa,"
+    },
+    {
+      "start": 1896.8,
+      "end": 1901.24,
+      "text": "bo Walking Corpses to jeden z utworów z kultowego debiutu Brutal Through."
+    },
+    {
+      "start": 1901.8,
+      "end": 1909.44,
+      "text": "W składzie zespołu, który wyszedł na scenę Obscene Extreme, znalazł się niezastąpiony Dan Lilker na basie,"
+    },
+    {
+      "start": 1909.78,
+      "end": 1918.84,
+      "text": "poza tym krewni i znajomi królika na wokalu, na przykład Bilosz Malignant Tumor, w kapeluszu na głowie, żebyśmy wszyscy ulegli iluzji, że to Kevin Sharp."
+    },
+    {
+      "start": 1920.84,
+      "end": 1921.4,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 2126.76,
+      "end": 2137.64,
+      "text": "Swoją drogą ciekawostka. Dan Lilker rozwiązał Brutal Thru dokładnie 10 lat temu, twierdząc, że jest za stary na granie tras i festiwali."
+    },
+    {
+      "start": 2137.64,
+      "end": 2152,
+      "text": "Miał wówczas równe 50 lat, co wtedy może i wydawało się poważnym wiekiem, mi na przykład się wydawało, ale dekadę później większość gwiazd metalu przekroczyła już tę symboliczną barierę."
+    },
+    {
+      "start": 2153.2,
+      "end": 2164.62,
+      "text": "I co prawda mądrość ludowa mówi, jeśli czujesz, że jesteś za stary na rock'n'roll'a, to prawdopodobnie jesteś, no ale za to inna mądrość ludowa mówi, ciągnie wilka do lasu."
+    },
+    {
+      "start": 2164.62,
+      "end": 2178.62,
+      "text": "I Dan Lilker niby na emeryturze, no ale jednak nie gra w golfa i nie popija drinków z palemką gdzieś na ośrodku, gdzieś w pensjonacie na Florydzie, tylko ciągle wraca na scenę."
+    },
+    {
+      "start": 2179.54,
+      "end": 2187.12,
+      "text": "Fetowany jest jak Zenek na Sylwestrze w Zakopanem i oczywiście nie bez powodu, bo to gigant tej muzyki."
+    },
+    {
+      "start": 2187.12,
+      "end": 2195.5,
+      "text": "W ubiegłym roku na festiwalu Brutal Assault, też w Czechach, zagrał kilka gościnek, między innymi Snape on Death, I Hate God."
+    },
+    {
+      "start": 2196.8,
+      "end": 2207.72,
+      "text": "W tym roku koncertował już z Santaksem, co było niemałą sensacją, bo to człowiek, który był współzałożycielem tego zespołu i od dekad w składzie się już nie pojawiał."
+    },
+    {
+      "start": 2208.28,
+      "end": 2210.28,
+      "text": "No a teraz to Walking Corpses."
+    },
+    {
+      "start": 2211.2,
+      "end": 2220.38,
+      "text": "Nie był to koncert wybitny, raczej rzecz w stylu mamy Brutal Thru w domu, no ale pewnie bliżej Brutal Thru na koncercie chyba już nigdy nie będziemy."
+    },
+    {
+      "start": 2220.38,
+      "end": 2231.38,
+      "text": "A że zaprezentowali całą debiutancką płytę Extreme Conditions Demand, Extreme Responses, przyznaję, że parę razy serduszko zabiło mi szybciej."
+    },
+    {
+      "start": 2232.18,
+      "end": 2232.74,
+      "text": "Tak szybko."
+    },
+    {
+      "start": 2375.78,
+      "end": 2395.32,
+      "text": "Lilker wspominał ze sceny o tych swoich urodzinach, na których pożegnał się z Brutal Through, za to niemal wszystkie zespoły wspominały o obchodzonych w tym roku 25. urodzinach Obscenic Stream, a także o półwieczu Czurbiego, czyli Miroslava Urbańca, organizatora tegoż festiwalu."
+    },
+    {
+      "start": 2395.46,
+      "end": 2419.6,
+      "text": "Wszędzie Czurbiego było pełno, w książeczce festiwalowej, na okolicznościowych koszulkach, filmikach, na telebimach, na scenie i pod sceną. To ciekawe, że Obscin jest tak bardzo o Czurbim, w Polsce tak bardzo eksponowany jako organizator własnej imprezy jest chyba tylko Jurek Owsiak na Poland Roku, no i też z wiadomych historycznych już powodów."
+    },
+    {
+      "start": 2420.14,
+      "end": 2439,
+      "text": "Ale to w sumie słodkie i pewnie jest też nagrodą skupionej wokół Obscenic Stream społeczności za to, że chłop bez wsparcia sponsorów, czy jakiejś większej organizacji od ćwierćwiecza dźwiga na swoich barkach ten pokaźnych rozmiarów festiwal."
+    },
+    {
+      "start": 2439.52,
+      "end": 2442.16,
+      "text": "Zatem i ja dołączam do życzeń."
+    },
+    {
+      "start": 2443.06,
+      "end": 2454.96,
+      "text": "Sympatycznemu panu Urbańcowi, przesyłając serdeczne życzenia z okazji urodzin, ode mnie, szwagra Jerzego i cioci Helenki, tym miłym upominkiem niech będzie piosenka."
+    },
+    {
+      "start": 2513.44,
+      "end": 2522.42,
+      "text": "Całe to nieustające gadanie o jubileuszach i urodzinach zwracało uwagę, oczywiście, na upływ czasu."
+    },
+    {
+      "start": 2523.22,
+      "end": 2529.52,
+      "text": "Herosi sceny grindowej, death metalowej, hardkorowej mają już staż liczony w dekadach."
+    },
+    {
+      "start": 2530.2,
+      "end": 2542.1,
+      "text": "Brazylijski Ratos de Porao w metalowych kręgach rozsławione przez sepulturę właśnie na tegorocznym Obstin żegnało się z europejską publicznością."
+    },
+    {
+      "start": 2542.98,
+      "end": 2551.5,
+      "text": "Amerykańska grupa Siege, pionierzy grindu, na wpływ których powoływał się chociażby zespół Napon Death, to samo."
+    },
+    {
+      "start": 2551.8,
+      "end": 2552.5,
+      "text": "Mówili do widzenia."
+    },
+    {
+      "start": 2553.74,
+      "end": 2564.9,
+      "text": "A Sao Direta, też z Brazylii, zespół, który widzieliśmy w Europie po raz pierwszy, wystąpił na Obstin 37 lat po powstaniu grupy."
+    },
+    {
+      "start": 2565.7,
+      "end": 2571,
+      "text": "No i kto wie, czy nie po raz pierwszy i ostatni, no chociaż chciałbym wierzyć, że jeszcze wrócą,"
+    },
+    {
+      "start": 2571.46,
+      "end": 2578.18,
+      "text": "bo akurat energii w tych muzycznych rebeliantach, i mam tu na myśli wszystkie trzy wspomniane grupy,"
+    },
+    {
+      "start": 2578.74,
+      "end": 2583.86,
+      "text": "było więcej niż w większości zespołów złożonych z dwudziestolatków."
+    },
+    {
+      "start": 2583.86,
+      "end": 2585.48,
+      "text": "DZIĘKI ZA OBSERWACIE"
+    },
+    {
+      "start": 2992.48,
+      "end": 3006.4,
+      "text": "Ale proszę przypadkiem nie pomyśleć, że Obstyn jest festiwalem robionym przez pana w średnim wieku, dla publiczności w wieku przedemerytalnym z emerytami na scenie."
+    },
+    {
+      "start": 3006.4,
+      "end": 3031.24,
+      "text": "Oczywiście tacy muzycy, również tam występują muzycy w sile wieku, ale jest też młodzież. Jest też młodzież na scenie, jest młodzież pod sceną. Są ludzie bardzo różni, reprezentujący na oko oczywiście, nie robiłem badań. Różne grupy społeczne, właściwie wszyscy czują się tam jak u siebie w domu."
+    },
+    {
+      "start": 3031.24,
+      "end": 3044.66,
+      "text": "Obstyn zresztą promuje się jako festiwal przyjazny dziwakom i proszę mi uwierzyć, że to nie są puste słowa. To jest takie miejsce na planecie, że naprawdę wszystko uchodzi."
+    },
+    {
+      "start": 3044.66,
+      "end": 3056.5,
+      "text": "Każdy festiwal można pytać wszystkich organizatorów festiwali w Polsce i na świecie, jak zapyta się o jakieś wartości najważniejsze dla imprezy, to ta wolność gdzieś tam się wysoko pojawi."
+    },
+    {
+      "start": 3056.5,
+      "end": 3065.74,
+      "text": "No ale tak, tej wolności konsekwentnie egzekwować do spodu Jakobstyn, to chyba nikt się inny nie ośmiela."
+    },
+    {
+      "start": 3066.48,
+      "end": 3083.78,
+      "text": "Oprócz pokojowej koegzystencji metalowców, punków, hardkorowców i przypadkowo zaplątanej reprezentacji kilku innych subkultur, można tu spotkać ludzi, którzy w nietypowy sposób manifestują swoją osobowość, tożsamość i potrzeby."
+    },
+    {
+      "start": 3084.4,
+      "end": 3089.78,
+      "text": "Panowie paradują w seksownej, damskiej bieliźnie albo przebierają się za zwierzęta."
+    },
+    {
+      "start": 3090.64,
+      "end": 3101.92,
+      "text": "Panie równie odważne kostiumy wkładają, kostiumy, które w innych okolicznościach przynależą raczej do tajemni calkowy, a tutaj wdrapują się w nich na scenę."
+    },
+    {
+      "start": 3102.78,
+      "end": 3108.8,
+      "text": "Przedziwne nakrycia głowy konkurują o uwagę z fantastycznymi makijażami i maskami."
+    },
+    {
+      "start": 3108.8,
+      "end": 3115.18,
+      "text": "O proszę, tu jest pan przebrany za banana w masce przeciwgazowej, a obok mieczem wymachuje rycerz."
+    },
+    {
+      "start": 3116.1,
+      "end": 3121.18,
+      "text": "Tuż obok niego pląsa zielony ufoludek, tam dalej trzy teletubisie."
+    },
+    {
+      "start": 3122.54,
+      "end": 3130.14,
+      "text": "Jest też, zawsze jest, co roku, pewien pan, który paraduje po festiwalu w stroju Adama."
+    },
+    {
+      "start": 3130.92,
+      "end": 3135.12,
+      "text": "Golusieńki też wskakuje na scenę i taki z niej zeskakuje."
+    },
+    {
+      "start": 3136.26,
+      "end": 3145.42,
+      "text": "Chyba czasem zdziwiony, że nie jest równie ochoczo łapany przez współfestivalowiczów jak inni skoczkowie."
+    },
+    {
+      "start": 3146.06,
+      "end": 3154.8,
+      "text": "Ale żeby ktoś nie pomyślał, że to przypadkowy naturysta zaplątał się na ten festiwal i korzysta z panującej na nim wolności."
+    },
+    {
+      "start": 3154.8,
+      "end": 3160.2,
+      "text": "Ów pan ma na jednym z pośladków wytatuowane logo Obscene Extreme."
+    },
+    {
+      "start": 3718.4,
+      "end": 3723.58,
+      "text": "\"Jad to fuck a guy. I mean, had to. My life depended on him.\""
+    },
+    {
+      "start": 3808.1,
+      "end": 3810.52,
+      "text": "Mamy na Obstynic Stream"
+    },
+    {
+      "start": 3810.52,
+      "end": 3812.42,
+      "text": "przedstawicieli wszystkich ras."
+    },
+    {
+      "start": 3812.96,
+      "end": 3814.66,
+      "text": "Na żadnym innym festiwalu w Europie"
+    },
+    {
+      "start": 3814.66,
+      "end": 3816.3,
+      "text": "nie widuje się wśród publiczności"
+    },
+    {
+      "start": 3816.3,
+      "end": 3818.18,
+      "text": "tylu gości z Azji"
+    },
+    {
+      "start": 3818.18,
+      "end": 3819.72,
+      "text": "i Ameryki Łacińskiej."
+    },
+    {
+      "start": 3820.42,
+      "end": 3821.42,
+      "text": "I puci."
+    },
+    {
+      "start": 3822.08,
+      "end": 3824.6,
+      "text": "Fernanda Lira z brazylijskiego"
+    },
+    {
+      "start": 3824.6,
+      "end": 3826.18,
+      "text": "zespołu Krypta twierdzi nawet, że"
+    },
+    {
+      "start": 3826.18,
+      "end": 3828.4,
+      "text": "Obstyn to festiwal, na którym"
+    },
+    {
+      "start": 3828.4,
+      "end": 3830.72,
+      "text": "jako kobieta czuję się najbezpieczniej."
+    },
+    {
+      "start": 3831.52,
+      "end": 3832.42,
+      "text": "Tę kolorową"
+    },
+    {
+      "start": 3832.42,
+      "end": 3834.32,
+      "text": "publiczność obowiązują jednak pewne"
+    },
+    {
+      "start": 3834.32,
+      "end": 3836.42,
+      "text": "zasady. Właściwie"
+    },
+    {
+      "start": 3836.42,
+      "end": 3838.32,
+      "text": "tylko jedna zasada. Możesz robić co"
+    },
+    {
+      "start": 3838.32,
+      "end": 3840.3,
+      "text": "chcesz, dopóki nikogo nie"
+    },
+    {
+      "start": 3840.3,
+      "end": 3842.42,
+      "text": "krzywdzisz. Na Obstyn"
+    },
+    {
+      "start": 3842.42,
+      "end": 3844.58,
+      "text": "więc nie ma w ogóle agresji."
+    },
+    {
+      "start": 3844.94,
+      "end": 3846.5,
+      "text": "Ani werbalnej, ani fizycznej."
+    },
+    {
+      "start": 3846.64,
+      "end": 3847.76,
+      "text": "A jak Cię roznosi energia,"
+    },
+    {
+      "start": 3848.34,
+      "end": 3850.32,
+      "text": "chcesz się wyżyć, zapraszamy pod"
+    },
+    {
+      "start": 3850.32,
+      "end": 3851.76,
+      "text": "scenę. Albo na scenę,"
+    },
+    {
+      "start": 3852.32,
+      "end": 3854.14,
+      "text": "bo to jest jedyny festiwal, na którym"
+    },
+    {
+      "start": 3854.14,
+      "end": 3856.38,
+      "text": "nie tylko nie ma bariery"
+    },
+    {
+      "start": 3856.38,
+      "end": 3858.5,
+      "text": "i fosy oddzielającej publiczność od sceny,"
+    },
+    {
+      "start": 3858.94,
+      "end": 3860.48,
+      "text": "ale wręcz fani"
+    },
+    {
+      "start": 3860.48,
+      "end": 3862.6,
+      "text": "zachęcani są do wdzierania się na scenę."
+    },
+    {
+      "start": 3863,
+      "end": 3864.26,
+      "text": "Ochrona im pomaga,"
+    },
+    {
+      "start": 3864.26,
+      "end": 3865.68,
+      "text": "wciąga ich tam na górę i"
+    },
+    {
+      "start": 3865.68,
+      "end": 3867.06,
+      "text": "pozostawia"
+    },
+    {
+      "start": 3867.06,
+      "end": 3869.88,
+      "text": "pole manewru do dzikich tańców"
+    },
+    {
+      "start": 3869.88,
+      "end": 3871.78,
+      "text": "i skoków ze sceny."
+    },
+    {
+      "start": 3872.26,
+      "end": 3873.54,
+      "text": "Nie wolno tylko przekraczać"
+    },
+    {
+      "start": 3873.54,
+      "end": 3874.68,
+      "text": "linii od słuchów."
+    },
+    {
+      "start": 3875.42,
+      "end": 3876.92,
+      "text": "Ta linia jest wyraźnie"
+    },
+    {
+      "start": 3876.92,
+      "end": 3879.02,
+      "text": "zaznaczona, a więc nie wolno"
+    },
+    {
+      "start": 3879.02,
+      "end": 3880,
+      "text": "wpadać na zespół"
+    },
+    {
+      "start": 3880,
+      "end": 3881.9,
+      "text": "i nie wolno też zbyt długo"
+    },
+    {
+      "start": 3881.9,
+      "end": 3883.4,
+      "text": "stać nieruchomo."
+    },
+    {
+      "start": 3883.74,
+      "end": 3885.32,
+      "text": "Poza tym hulaj dusza."
+    },
+    {
+      "start": 3886.06,
+      "end": 3887.3,
+      "text": "Jeden miły człowiek"
+    },
+    {
+      "start": 3887.3,
+      "end": 3888.38,
+      "text": "w tym roku"
+    },
+    {
+      "start": 3888.38,
+      "end": 3889.68,
+      "text": "próbował nawet surfować"
+    },
+    {
+      "start": 3889.68,
+      "end": 3891.14,
+      "text": "nad głowami ludzi"
+    },
+    {
+      "start": 3891.14,
+      "end": 3892.36,
+      "text": "na desce do prasowania"
+    },
+    {
+      "start": 3892.36,
+      "end": 3894.42,
+      "text": "takiej oryginalnej,"
+    },
+    {
+      "start": 3895.02,
+      "end": 3895.24,
+      "text": "którą"
+    },
+    {
+      "start": 3895.24,
+      "end": 3897.04,
+      "text": "oczywiście wniósł"
+    },
+    {
+      "start": 3897.04,
+      "end": 3898.22,
+      "text": "po prostu na festiwal,"
+    },
+    {
+      "start": 3898.34,
+      "end": 3899.16,
+      "text": "bo jak już wspomniałem,"
+    },
+    {
+      "start": 3899.24,
+      "end": 3900.02,
+      "text": "tu wszystko można,"
+    },
+    {
+      "start": 3900.18,
+      "end": 3901.56,
+      "text": "póki nie zrobisz"
+    },
+    {
+      "start": 3901.56,
+      "end": 3903.78,
+      "text": "komuś krzywdy."
+    },
+    {
+      "start": 3904.38,
+      "end": 3905.66,
+      "text": "Inne w wanience"
+    },
+    {
+      "start": 3905.66,
+      "end": 3906.3,
+      "text": "dziecięcej,"
+    },
+    {
+      "start": 3906.38,
+      "end": 3907.38,
+      "text": "ale był za duży."
+    },
+    {
+      "start": 3908.16,
+      "end": 3909.6,
+      "text": "Dzikie harce na scenie"
+    },
+    {
+      "start": 3909.6,
+      "end": 3910.88,
+      "text": "uprawiają zarówno osoby"
+    },
+    {
+      "start": 3910.88,
+      "end": 3911.56,
+      "text": "siwowłose,"
+    },
+    {
+      "start": 3911.96,
+      "end": 3913.14,
+      "text": "jak i kilkuletnie,"
+    },
+    {
+      "start": 3913.52,
+      "end": 3914,
+      "text": "i naprawdę,"
+    },
+    {
+      "start": 3914.14,
+      "end": 3914.56,
+      "text": "mam na myśli"
+    },
+    {
+      "start": 3914.56,
+      "end": 3916.22,
+      "text": "kilkuletnie dzieciaki."
+    },
+    {
+      "start": 3916.72,
+      "end": 3917.56,
+      "text": "Niektóre puszczone"
+    },
+    {
+      "start": 3917.56,
+      "end": 3918.14,
+      "text": "samopas,"
+    },
+    {
+      "start": 3918.3,
+      "end": 3919.18,
+      "text": "tu podziwiam"
+    },
+    {
+      "start": 3919.18,
+      "end": 3919.88,
+      "text": "mimo wszystko"
+    },
+    {
+      "start": 3919.88,
+      "end": 3922.24,
+      "text": "wiarę w ludzkość rodziców,"
+    },
+    {
+      "start": 3922.94,
+      "end": 3924.02,
+      "text": "inne w ramach"
+    },
+    {
+      "start": 3924.02,
+      "end": 3925.72,
+      "text": "festiwalowego przedszkola,"
+    },
+    {
+      "start": 3925.84,
+      "end": 3927.16,
+      "text": "które nosi nazwę"
+    },
+    {
+      "start": 3927.16,
+      "end": 3929.06,
+      "text": "Kinder Grinder."
+    },
+    {
+      "start": 3929.98,
+      "end": 3930.78,
+      "text": "Co roku"
+    },
+    {
+      "start": 3930.78,
+      "end": 3932.42,
+      "text": "ustawiają się"
+    },
+    {
+      "start": 3932.42,
+      "end": 3933.04,
+      "text": "te szkraby"
+    },
+    {
+      "start": 3933.04,
+      "end": 3933.88,
+      "text": "na scenie,"
+    },
+    {
+      "start": 3934.24,
+      "end": 3935.04,
+      "text": "na której właśnie"
+    },
+    {
+      "start": 3935.04,
+      "end": 3935.7,
+      "text": "jakiś zespół"
+    },
+    {
+      "start": 3935.7,
+      "end": 3936.86,
+      "text": "ciśnie ten swój grind,"
+    },
+    {
+      "start": 3937.1,
+      "end": 3937.46,
+      "text": "czy tam"
+    },
+    {
+      "start": 3937.46,
+      "end": 3938.26,
+      "text": "death metal,"
+    },
+    {
+      "start": 3938.88,
+      "end": 3939.66,
+      "text": "iskry się sypią"
+    },
+    {
+      "start": 3939.66,
+      "end": 3940.62,
+      "text": "spod palców,"
+    },
+    {
+      "start": 3941.84,
+      "end": 3942.48,
+      "text": "włosy"
+    },
+    {
+      "start": 3942.48,
+      "end": 3944.16,
+      "text": "w amoku"
+    },
+    {
+      "start": 3944.16,
+      "end": 3945.6,
+      "text": "wymachują"
+    },
+    {
+      "start": 3945.6,
+      "end": 3947.38,
+      "text": "na wszystkie strony."
+    },
+    {
+      "start": 3947.56,
+      "end": 3949.48,
+      "text": "A ci malutcy"
+    },
+    {
+      "start": 3949.48,
+      "end": 3951.12,
+      "text": "uczestnicy festiwalu"
+    },
+    {
+      "start": 3951.12,
+      "end": 3952.66,
+      "text": "kolejno skaczą"
+    },
+    {
+      "start": 3952.66,
+      "end": 3953.58,
+      "text": "ze sceny"
+    },
+    {
+      "start": 3953.58,
+      "end": 3954.64,
+      "text": "prosto w bezpieczne"
+    },
+    {
+      "start": 3954.64,
+      "end": 3955.4,
+      "text": "ramiona"
+    },
+    {
+      "start": 3955.4,
+      "end": 3956.64,
+      "text": "ochroniarzy."
+    },
+    {
+      "start": 3957.46,
+      "end": 3958.1,
+      "text": "Czym skorupka"
+    },
+    {
+      "start": 3958.1,
+      "end": 3958.58,
+      "text": "za młodu"
+    },
+    {
+      "start": 3958.58,
+      "end": 3959.76,
+      "text": "kolejna"
+    },
+    {
+      "start": 3959.76,
+      "end": 3961.56,
+      "text": "mądrość ludowa,"
+    },
+    {
+      "start": 3961.7,
+      "end": 3962.62,
+      "text": "którą warto"
+    },
+    {
+      "start": 3962.62,
+      "end": 3963.24,
+      "text": "zapamiętać"
+    },
+    {
+      "start": 3963.24,
+      "end": 3963.82,
+      "text": "i na obstin"
+    },
+    {
+      "start": 3963.82,
+      "end": 3964.54,
+      "text": "wcielana jest"
+    },
+    {
+      "start": 3964.54,
+      "end": 3965.16,
+      "text": "w życie."
+    },
+    {
+      "start": 4005.32,
+      "end": 4026.92,
+      "text": "Na osobne wejście zasługuje fenomen zespołu Gutalax, ale także takich grup jak Rompeprop czy Hemorage, które na Obscene robią za gwiazdy największego formatu, wypełniają ten trotnowski amfiteatr po brzegi, a gdzie indziej właściwie są raczej uważane za grupy trzecioligowe."
+    },
+    {
+      "start": 4028.08,
+      "end": 4039.36,
+      "text": "Rompeprop to skoczny, rubaszny gorgrind z Holandii, o tematyce trochę gor, a więc krew i flaki, a trochę porno, a więc wiadomo co."
+    },
+    {
+      "start": 4039.92,
+      "end": 4052.38,
+      "text": "Hemorage to Hiszpanie, którzy zaczęli chyba jako hołd dla karkas, później odpłynęli nieco w bardziej oryginalnym kierunku, ale klimat pozostaje podobny do pierwszych płyt Brytyjczyków."
+    },
+    {
+      "start": 4052.38,
+      "end": 4072.18,
+      "text": "Na scenie konsekwentnie wszyscy, łącznie z ochroną, poprzebierani są w chirurgiczne fartuchy i maseczki i tylko wokalista jest w cywilu, za to od stóp do głów skąpany we krwi, jakby właśnie przed chwilą całej tej reszcie uciekł spod skalpeli, ale gdzieś w drugiej godzinie operacji."
+    },
+    {
+      "start": 4072.58,
+      "end": 4080.88,
+      "text": "Lepiej mi się to w sumie ogląda niż słucha, ale jeśli ktoś lubi medyczny grind, to znajdzie w tym sporo kalorii."
+    },
+    {
+      "start": 4287.22,
+      "end": 4311.6,
+      "text": "To było Hemorrhage, a miało być o Gutalax. Najmocniej przepraszam, że tak poszedłem za tą dygresją, no ale tyle wrażeń, cztery dni, dziesiątki koncertów, wszystkie przynajmniej ciekawe, a większość nich bardzo dobra, więc mimo, że mamy do dyspozycji dwie godziny audycji czasu na to, żeby wszystkie fajne rzeczy przedstawić, nie starczy."
+    },
+    {
+      "start": 4311.6,
+      "end": 4328.32,
+      "text": "No ale Gutalax, wracajmy do tego Gutalaxa, pochodzą z miasteczka Kremrze na południu Czech i grają od jakichś piętnastu lat. Grają grind z elementami death metalu, a ich zainteresowania to, par now my French, fecalia."
+    },
+    {
+      "start": 4328.96,
+      "end": 4343.92,
+      "text": "Muzycy wychodzą na scenę przebrani za szambonurków, publiczność przerzuca się papierem toaletowym udającym karnawałowe serpentyny, albo wymachuje szczotkami do czyszczenia toalet i przytykaczami do toalet właśnie."
+    },
+    {
+      "start": 4344.1,
+      "end": 4346.72,
+      "text": "Można je wnosić na festiwal, oczywiście, na Obstyn jak najbardziej."
+    },
+    {
+      "start": 4347.68,
+      "end": 4360.24,
+      "text": "Kilka lat temu na innym festiwalu widziałem na koncercie Gutalax Toy Toy Toya, na szczęście czystego, w którym jakiś śmiałek płynął jak w szalupie ratunkowej nad głowami tłumu."
+    },
+    {
+      "start": 4361.12,
+      "end": 4371.06,
+      "text": "Na Obstyn tego nie było, były za to wielkie, dmuchane kupy, ale i dziesiątki innych dmuchańców, bo to też kolejna z tradycji tego festiwalu,"
+    },
+    {
+      "start": 4371.06,
+      "end": 4382.54,
+      "text": "więc koła ratunkowe, aligatory, lalki z sex shopu, młoty, a nawet dmuchany balkonik, taki dla staruszków, dmuchany, świetny koncept."
+    },
+    {
+      "start": 4383.44,
+      "end": 4385.48,
+      "text": "Zabawa przednia."
+    },
+    {
+      "start": 4386.04,
+      "end": 4397.7,
+      "text": "Powiedziałbym nawet, że Amok, czegoś co poza Extreme Obscene jest nie do zobaczenia, nie do uchwycenia, więc rzeczywiście też trudno mi to opisać, do czegokolwiek porównać."
+    },
+    {
+      "start": 4397.7,
+      "end": 4417.9,
+      "text": "A sama muzyka zespołu, no a skoczne rytmy, nisko jadące gruzem gitary i pan pochrząkujący, no w kontekście tekstów i zainteresowań grupy to chrząkanie może się jednoznacznie kojarzyć."
+    },
+    {
+      "start": 4533.24,
+      "end": 4537.28,
+      "text": "Chciałbym też wspomnieć o formacji Final Exit z Japonii."
+    },
+    {
+      "start": 4538.02,
+      "end": 4543.38,
+      "text": "To weterani Noizu i zarazem stali bywalcy Obscin hałasują wściekle od 30 lat."
+    },
+    {
+      "start": 4544.48,
+      "end": 4546.36,
+      "text": "Ich koncert to było cudowne doświadczenie."
+    },
+    {
+      "start": 4546.6,
+      "end": 4553.56,
+      "text": "Zobaczyć jak cieszą się z tego, że mogą być na scenie, że mogą wchodzić w interakcje z publicznością."
+    },
+    {
+      "start": 4553.56,
+      "end": 4560.4,
+      "text": "Kiedy Hisao, czyli gitarzysta i wokalista usłyszał, że ludzie skandują nazwę grupy,"
+    },
+    {
+      "start": 4560.44,
+      "end": 4567.2,
+      "text": "był tak przejęty i uradowany, że było to i zabawne i wzruszające zarazem."
+    },
+    {
+      "start": 4567.56,
+      "end": 4569.82,
+      "text": "Final Exit? Podchwycił."
+    },
+    {
+      "start": 4570.14,
+      "end": 4573.44,
+      "text": "It's me! Me! Me! Me! zaczął skandować."
+    },
+    {
+      "start": 4574.12,
+      "end": 4577.88,
+      "text": "Wielką wartością Obscin jest sprowadzanie artystów z dalekich krain,"
+    },
+    {
+      "start": 4578.4,
+      "end": 4580.78,
+      "text": "właśnie z Japonii czy Ameryki Łacińskiej,"
+    },
+    {
+      "start": 4581.42,
+      "end": 4585.24,
+      "text": "takich nazw, które albo nigdy nie pojawiają się w Europie,"
+    },
+    {
+      "start": 4585.44,
+      "end": 4588.02,
+      "text": "albo które grywają dla garstki zapaleńców,"
+    },
+    {
+      "start": 4588.52,
+      "end": 4591.12,
+      "text": "bo jeżeli nawet pojawiają się w klubach,"
+    },
+    {
+      "start": 4591.26,
+      "end": 4595.88,
+      "text": "to przyciągają tylko grono, ścisłe grono wtajemniczonych."
+    },
+    {
+      "start": 4596.48,
+      "end": 4601.3,
+      "text": "A tu właśnie w Trutnowie mogą te swoje szaleństwa prezentować z dużej sceny."
+    },
+    {
+      "start": 4602.04,
+      "end": 4604.14,
+      "text": "Posłuchamy oczywiście Final Exit."
+    },
+    {
+      "start": 4604.14,
+      "end": 4605.76,
+      "text": "Final Exit."
+    },
+    {
+      "start": 4816.23,
+      "end": 4842.79,
+      "text": "Może jeszcze słowo o polskich przedstawicielach na Obscin, bo ci oczywiście bywają regularnie, oprócz licznie zgromadzonej publiczności, bo jesteśmy tam pewnie największą mniejszością, sądząc po języku, który łowiłem przechodząc pomiędzy ludźmi na festiwalu i zresztą sądząc po gronie spotkanych bliższych i dalszych znajomych, których tutaj serdecznie pozdrawiam."
+    },
+    {
+      "start": 4843.33,
+      "end": 4861.69,
+      "text": "Ale polscy przedstawiciele na Obscin, których chciałem wspomnieć to oczywiście zespoły. W tym roku Hostia i Meat Spreader. Hostia z bluźnierczym i chwilami zabawnym spektaklem. Ten gustowny dres pacha szanuję, szanuję, wspaniałe wdzianko."
+    },
+    {
+      "start": 4862.43,
+      "end": 4877.43,
+      "text": "Natomiast Meat Spreader to oczywiście już bardziej klasyczny grind. Świetna forma. Zespół złożony z weteranów gatunku jako super grupa właściwie przedstawiany."
+    },
+    {
+      "start": 4877.43,
+      "end": 4882.43,
+      "text": "No i adekwatnie dobrą muzykę prezentujący."
+    },
+    {
+      "start": 4883.67,
+      "end": 4889.11,
+      "text": "W ubiegłym roku widziałem na przykład Vader, który zabrzmiał fantastycznie i też był świetnie przyjęty."
+    },
+    {
+      "start": 4889.69,
+      "end": 4893.71,
+      "text": "I Antigamę, która również zawsze znakomita."
+    },
+    {
+      "start": 4895.07,
+      "end": 4902.77,
+      "text": "Wciąż jednak wspominane jako część historii tego festiwalu jest nieodżałowane Dead Infection."
+    },
+    {
+      "start": 4903.43,
+      "end": 4907.49,
+      "text": "Więc może i Hostię i Dead Infection zmieścimy."
+    },
+    {
+      "start": 5094.72,
+      "end": 5102.8,
+      "text": "Skoro odcinek Obscene i Kanonada, to oczywiście nie może być inaczej. Musiało się tak skończyć."
+    },
+    {
+      "start": 5104.38,
+      "end": 5109.1,
+      "text": "Napalm Death to pionierzy grindu i jego niedoścignieni mistrzowie."
+    },
+    {
+      "start": 5109.68,
+      "end": 5117.76,
+      "text": "A przy tym zespół, który mimo upływu lat wciąż potrafi się zmieniać, potrafi zaskakiwać, budzić emocje."
+    },
+    {
+      "start": 5118.4,
+      "end": 5125.82,
+      "text": "Powstali pod Birmingham w 1981 roku. Swoją drogą, co to musi być za miejsce na ziemi?"
+    },
+    {
+      "start": 5126.32,
+      "end": 5128.8,
+      "text": "To Birmingham, przecież Black Sabbath i Judas Priest."
+    },
+    {
+      "start": 5130.8,
+      "end": 5141.08,
+      "text": "No ale Napalm Death, nimi się dzisiaj zajmujemy, powstali parę lat później, by grać muzykę dużo bardziej ekstremalną niż ich starsi koledzy."
+    },
+    {
+      "start": 5141.58,
+      "end": 5143.78,
+      "text": "Tak ekstremalną właściwie jak tylko się da."
+    },
+    {
+      "start": 5144.68,
+      "end": 5149.46,
+      "text": "Brali więc co chcieli z panka i hardcora, co się da z metalu."
+    },
+    {
+      "start": 5150.02,
+      "end": 5156.56,
+      "text": "Doprawiali to własną wyobraźnią, a te mieli bujną."
+    },
+    {
+      "start": 5157.38,
+      "end": 5162.64,
+      "text": "Do tego oczywiście trzeba dodać radykalne, polityczne i społeczne przesłanie."
+    },
+    {
+      "start": 5163.38,
+      "end": 5169.48,
+      "text": "Powstał twór, który można właściwie uznać za muzyczny ekwiwalent ulicznych protestów,"
+    },
+    {
+      "start": 5169.48,
+      "end": 5173.92,
+      "text": "które wymykają się spod kontroli i przeradzają w zamieszki."
+    },
+    {
+      "start": 5174.66,
+      "end": 5183.44,
+      "text": "Wydany w 1987 roku album Scam to wciąż żywy klasyk i dla wielu najlepsza płyta Napalm Death."
+    },
+    {
+      "start": 5338.72,
+      "end": 5342,
+      "text": "Utwór tytułowy ze Scam usłyszeliśmy na Obscene Extreme,"
+    },
+    {
+      "start": 5342.68,
+      "end": 5345.9,
+      "text": "chociaż nikogo ze składu nagrywającego Scam,"
+    },
+    {
+      "start": 5346.1,
+      "end": 5350.28,
+      "text": "czy właściwie ze składów, bo już w trakcie pracy nad płytą"
+    },
+    {
+      "start": 5350.28,
+      "end": 5353.72,
+      "text": "to się zmieniało, w obecnym Napalm Death nie ma."
+    },
+    {
+      "start": 5354.36,
+      "end": 5357.94,
+      "text": "A więc idea okazała się silniejsza od jednostek,"
+    },
+    {
+      "start": 5358.1,
+      "end": 5361.78,
+      "text": "które ją realizują, co w muzyce popularnej"
+    },
+    {
+      "start": 5361.78,
+      "end": 5366.1,
+      "text": "jest rzadką sprawą, no ale przecież Napalm Death to coś więcej"
+    },
+    {
+      "start": 5366.1,
+      "end": 5368.86,
+      "text": "niż muzyka popularna."
+    },
+    {
+      "start": 5369.38,
+      "end": 5372.94,
+      "text": "Skoro już o składzie mowa, nie trudno sobie wyobrazić"
+    },
+    {
+      "start": 5372.94,
+      "end": 5377.14,
+      "text": "kolejne wcielenia Napalm Death z różnymi muzykami,"
+    },
+    {
+      "start": 5377.78,
+      "end": 5382.2,
+      "text": "ale bez wokalisty, który zdziera sobie gardło w tym zespole"
+    },
+    {
+      "start": 5382.2,
+      "end": 5387.54,
+      "text": "już od 1989 roku, a na koncertach czasami też wygłasza"
+    },
+    {
+      "start": 5387.54,
+      "end": 5391.56,
+      "text": "krótkie kazania, bez Marka, Barneya, Greenwaya"
+    },
+    {
+      "start": 5391.56,
+      "end": 5395.72,
+      "text": "nie sposób sobie ich już teraz wyobrazić."
+    },
+    {
+      "start": 5395.72,
+      "end": 5400.16,
+      "text": "To właśnie z nim zespół miał swoje drugie narodziny"
+    },
+    {
+      "start": 5400.16,
+      "end": 5404.94,
+      "text": "w 1990 roku za sprawą albumu Harmony Corruption."
+    },
+    {
+      "start": 5405.66,
+      "end": 5408.64,
+      "text": "Brzmienie było bardziej metalowe, nawet death metalowe,"
+    },
+    {
+      "start": 5408.74,
+      "end": 5412.42,
+      "text": "nasycone, potężne, ciężkie, numery dłuższe,"
+    },
+    {
+      "start": 5413,
+      "end": 5416.5,
+      "text": "ale muzyka i przekaz wciąż bez kompromisów."
+    },
+    {
+      "start": 5416.5,
+      "end": 5419.22,
+      "text": "Z tamtego czasu pochodzi na przykład utwór"
+    },
+    {
+      "start": 5419.22,
+      "end": 5423.26,
+      "text": "Suffer the Children, opowieść o grzechach kościoła."
+    },
+    {
+      "start": 5423.26,
+      "end": 5426.14,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5680.52,
+      "end": 5700,
+      "text": "Mniej więcej rówieśnikiem Suffer the Children jest numer The world keeps turning, który był dla nas, fanów z Polski, szczególnie ważny, bo emitowany przez stacje MTV globalnie, teledysk zawierał ujęcia z naszego kraju choćby z powitania zespołu na okęciu."
+    },
+    {
+      "start": 5896.1,
+      "end": 5924.02,
+      "text": "Już za sam dorobek z lat 80. i 90. należałby się Naplom Death dozgonny szacunek, ale oni nie dość, że od zgonu dalecy, to nawet uparcie nie chcą się zestarzeć, ciągle coś dodają do swojej muzyki, ciągle coś kombinują z produkcją, szukają nowych terytoriów, nie tylko poza grindem, w ogóle poza metalem."
+    },
+    {
+      "start": 5924.02,
+      "end": 5949.4,
+      "text": "Ostatnie płyty Naplom Death, przede wszystkim Apex Predator Easy Meat, to jest rok 2015, oraz Throws of Joy in the Jaws of Defeatism, to jest 2020, to rzeczy znakomite, chociaż właściwie zespół od jakichś dwóch dekad trafia w dziesiątkę każdym kolejnym wydawnictwem."
+    },
+    {
+      "start": 5949.4,
+      "end": 5960.5,
+      "text": "I na koncertach też niezmiennie, na plasterki w Trutnowie podobnie, dali koncert, który mnie poturbował i wzruszył zarazem."
+    },
+    {
+      "start": 5960.9,
+      "end": 5968.28,
+      "text": "Do końca audycji puszczał, więc będę Naplom Death, życząc Państwu zupełnie serio dobrej nocy."
+    },
+    {
+      "start": 6905.57,
+      "end": 6912.35,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    }
+  ],
+  "stats": {
+    "windowCount": 20,
+    "transcribedAudioSec": 1756.23,
+    "segmentCount": 302,
+    "characterCount": 21415
+  },
+  "sourceId": "2024-07-10-ciezko-na-sercu-10-lipca-godz-0005"
+}
