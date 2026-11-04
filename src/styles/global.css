@@ -28,7 +28,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
+  :root {
     --bg: #1a1a1a;
     --surface: #202020;
     --surface-raised: #262626;
@@ -43,19 +43,6 @@
   }
 }
 
-:root[data-theme="dark"] {
-  --bg: #1a1a1a;
-  --surface: #202020;
-  --surface-raised: #262626;
-  --ink: #fdfcfc;
-  --text: #d5d5d5;
-  --muted: #8e8e8e;
-  --line: #373737;
-  --line-strong: #4a4a4a;
-  --hero-from: #171717;
-  --hero-to: #0c0c0c;
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.35);
-}
 
 *,
 *::before,
@@ -160,46 +147,6 @@ a {
   color: var(--ink);
 }
 
-.icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: transparent;
-  color: var(--text);
-  cursor: pointer;
-}
-
-.icon-btn:hover {
-  border-color: var(--line-strong);
-  color: var(--ink);
-}
-
-.icon-btn svg {
-  width: 18px;
-  height: 18px;
-}
-
-:root[data-theme="dark"] .icon-btn .icon-sun,
-:root:not([data-theme="light"]) .icon-btn .icon-sun {
-  display: block;
-}
-
-/* Hero */
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  color: var(--hero-text);
-  background:
-    radial-gradient(120% 140% at 15% 0%, #2a2a2a 0%, transparent 55%),
-    linear-gradient(180deg, var(--hero-from), var(--hero-to));
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), 0 100%);
-  padding: 56px 0 84px;
-}
 
 .hero::before {
   content: "";

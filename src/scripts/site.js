@@ -1,18 +1,3 @@
-const root = document.documentElement;
-
-document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
-  const systemDark = matchMedia('(prefers-color-scheme: dark)').matches;
-  button.setAttribute('aria-pressed', String((root.dataset.theme ?? (systemDark ? 'dark' : 'light')) === 'dark'));
-
-  button.addEventListener('click', () => {
-    const current = root.dataset.theme ?? (systemDark ? 'dark' : 'light');
-    const next = current === 'dark' ? 'light' : 'dark';
-    root.dataset.theme = next;
-    localStorage.setItem('cns-theme', next);
-    button.setAttribute('aria-pressed', String(next === 'dark'));
-  });
-});
-
 const search = document.querySelector('[data-filter-title]');
 if (search) {
   const rows = [...document.querySelectorAll('[data-episode]')];
