@@ -54,6 +54,7 @@ if (search) {
 const audio = document.querySelector('[data-episode-audio]');
 if (audio) {
   const players = [...document.querySelectorAll('[data-track-start]')];
+  const LEAD_IN_SEC = 1;
 
   let pendingSeek = null;
 
@@ -75,6 +76,7 @@ if (audio) {
   };
 
   for (const button of players) {
-    button.addEventListener('click', () => playFrom(Number(button.dataset.trackStart)));
+    const start = Number(button.dataset.trackStart);
+    button.addEventListener('click', () => playFrom(Math.max(0, start - LEAD_IN_SEC)));
   }
 }

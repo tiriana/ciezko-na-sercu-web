@@ -130,7 +130,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <ol class="timeline">
                 {episode.topics.map((topic) => (
                   <li>
-                    <time>{formatClock(topic.start)}</time>
+                    {entry.audioUrl ? (
+                      <button class="time-link" type="button" data-track-start={topic.start}>
+                        {formatClock(topic.start)}
+                      </button>
+                    ) : (
+                      <time>{formatClock(topic.start)}</time>
+                    )}
                     <p>{topic.label}</p>
                   </li>
                 ))}
@@ -145,7 +151,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <ol class="timeline">
                 {episode.quotes.map((quote) => (
                   <li>
-                    <time>{formatClock(quote.start)}</time>
+                    {entry.audioUrl ? (
+                      <button class="time-link" type="button" data-track-start={quote.start}>
+                        {formatClock(quote.start)}
+                      </button>
+                    ) : (
+                      <time>{formatClock(quote.start)}</time>
+                    )}
                     <p>{quote.text}</p>
                   </li>
                 ))}

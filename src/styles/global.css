@@ -1131,3 +1131,22 @@ a {
   border-color: var(--accent);
   color: var(--accent);
 }
+
+.time-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 3px;
+}
+
+.time-link:hover,
+.time-link:focus-visible {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
