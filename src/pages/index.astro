@@ -2,10 +2,17 @@
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import Base from '../layouts/Base.astro';
-import { getCatalog, getEntries } from '../lib/data';
+import { getCatalog, getEntries, getEpisodeFiles } from '../lib/data';
 import { formatDay, formatEpisodeTitle, monthKey, monthLabel } from '../lib/format';
 
-const [catalog, entries] = await Promise.all([getCatalog(), getEntries()]);
+const [catalog, entries, files] = await Promise.all([getCatalog(), getEntries(), getEpisodeFiles()]);
+
+// Producent i wydawca bywają wymieniani różnie w różnych odcinkach, więc pokazujemy
+// wszystkich, których tagger znalazł w creditsach — bez powtórzeń.
+const creditNames = (role: string) =>
+  [...new Set([...files.values()].flatMap((episode) => episode.credits.filter((credit) => credit.role === role).map((credit) => credit.name)))];
+const producers = creditNames('producent');
+const publishers = creditNames('wydawca');
 const enriched = entries.filter((entry) => entry.enriched);
 const years = [...new Set(entries.map((entry) => entry.date.slice(0, 4)))];
 
@@ -50,6 +57,8 @@ for (const entry of entries) {
           </p>
           <dl class="facts">
             <div><dt>Prowadzący</dt><dd>Jarek Szubrycht</dd></div>
+            {producers.length > 0 && <div><dt>Produkcja</dt><dd>{producers.join(', ')}</dd></div>}
+            {publishers.length > 0 && <div><dt>Wydawca</dt><dd>{publishers.join(', ')}</dd></div>}
             <div><dt>Stacja</dt><dd>{catalog.program.station}</dd></div>
             <div><dt>Emisja</dt><dd>środa, 00:05</dd></div>
             <div><dt>Kontakt</dt><dd><a href="mailto:ciezko@polskieradio.pl">ciezko@polskieradio.pl</a></dd></div>
