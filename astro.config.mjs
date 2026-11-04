@@ -22,7 +22,7 @@ function legacyRedirects() {
 }
 
 export default defineConfig({
-  site: 'https://ciezko-na-sercu.surge.sh',
+  site: 'https://ciezko-na-sercu.pages.dev',
   build: { format: 'directory' },
   redirects: legacyRedirects(),
 });
