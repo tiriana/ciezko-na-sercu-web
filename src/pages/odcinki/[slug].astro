@@ -3,14 +3,19 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
-import { formatClock, formatDate, formatEpisodeTitle, formatRole, formatWeekday, pluralTracks } from '../../lib/format';
+import { formatClock, formatDate, formatDay, formatEpisodeTitle, formatRole, formatWeekday, pluralTracks } from '../../lib/format';
+import { planQueue } from '../../lib/schedule';
 
 export async function getStaticPaths() {
   const entries = await getEntries();
-  return entries.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+  const planned = planQueue(entries);
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry, plannedDate: planned.get(entry.slug) ?? null },
+  }));
 }
 
-const { entry } = Astro.props;
+const { entry, plannedDate } = Astro.props;
 const [catalog, files] = await Promise.all([getCatalog(), getEpisodeFiles()]);
 const episode = files.get(entry.id);
 
@@ -55,7 +60,10 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
             {episode.quotes.length > 0 && <span>{episode.quotes.length} zapowiedzi</span>}
           </>
         ) : (
-          <span class="badge badge--plain">skatalogowany</span>
+          <>
+            <span class="badge badge--plain">skatalogowany</span>
+            {plannedDate && <span>opracowanie planowane ≈ {formatDay(plannedDate)}</span>}
+          </>
         )}
         {entry.sourceUrl && (
           <a class="btn" href={entry.sourceUrl}>Odcinek w Polskim Radiu ↗</a>
@@ -75,7 +83,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
             {entry.audioUrl && (
               <div class="audio-bar">
                 <audio controls preload="none" src={entry.audioUrl} data-episode-audio></audio>
-                <p class="audio-bar__hint">Kliknij ▶ przy utworze, żeby zacząć od jego początku.</p>
+                <p class="audio-bar__hint">Kliknij ikonę odtwarzania przy utworze, żeby zacząć od jego początku.</p>
               </div>
             )}
 
@@ -100,7 +108,11 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                             type="button"
                             data-track-start={track.start}
                             aria-label={`Odtwórz od ${formatClock(track.start)}`}
-                          >▶</button>
+                          >
+                            <svg class="track-play__icon" viewBox="0 0 10 12" aria-hidden="true">
+                              <path d="M0 0 10 6 0 12Z" fill="currentColor" />
+                            </svg>
+                          </button>
                         ) : (
                           index + 1
                         )}

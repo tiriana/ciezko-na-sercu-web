@@ -1121,9 +1121,17 @@ a {
   border-radius: 999px;
   background: transparent;
   color: var(--ink);
-  font-size: 10px;
   cursor: pointer;
   transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+/* Trójkąt ma środek ciężkości w lewej połowie, więc sam flex-box centruje go optycznie
+   w prawo; margines wyrównuje to względem okręgu. */
+.track-play__icon {
+  display: block;
+  width: 9px;
+  height: 11px;
+  margin-left: 2px;
 }
 
 .track-play:hover,
@@ -1175,4 +1183,9 @@ a {
 
 .credit__quote {
   color: var(--muted);
+}
+
+.episode-row__plan {
+  color: var(--muted);
+  font-size: 0.85rem;
 }

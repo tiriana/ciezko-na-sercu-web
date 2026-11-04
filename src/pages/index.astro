@@ -4,12 +4,13 @@ import SiteHeader from '../components/SiteHeader.astro';
 import Base from '../layouts/Base.astro';
 import { getCatalog, getEntries } from '../lib/data';
 import { formatDay, formatEpisodeTitle, monthKey, monthLabel } from '../lib/format';
-import { estimateSchedule, MINUTES_PER_EPISODE } from '../lib/schedule';
+import { estimateSchedule, MINUTES_PER_EPISODE, planQueue } from '../lib/schedule';
 
 const [catalog, entries] = await Promise.all([getCatalog(), getEntries()]);
 const enriched = entries.filter((entry) => entry.enriched);
 const years = [...new Set(entries.map((entry) => entry.date.slice(0, 4)))];
 const queue = estimateSchedule(enriched.length, entries.length);
+const planned = planQueue(entries);
 
 const months = new Map<string, typeof entries>();
 for (const entry of entries) {
@@ -126,6 +127,9 @@ for (const entry of entries) {
                   ) : (
                     <>
                       <span class="badge badge--plain">skatalogowany</span>
+                      {planned.get(entry.slug) && (
+                        <span class="episode-row__plan">plan: ≈ {formatDay(planned.get(entry.slug))}</span>
+                      )}
                       {entry.sourceUrl && (
                         <a class="btn" href={entry.sourceUrl}>Polskie Radio ↗</a>
                       )}
