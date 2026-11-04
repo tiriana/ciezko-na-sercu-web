@@ -12,7 +12,6 @@ const [catalog, entries, files] = await Promise.all([getCatalog(), getEntries(),
 // wszystkich, których tagger znalazł w creditsach — bez powtórzeń.
 const creditNames = (role: string) =>
   [...new Set([...files.values()].flatMap((episode) => episode.credits.filter((credit) => credit.role === role).map((credit) => credit.name)))];
-const producers = creditNames('producent');
 const publishers = creditNames('wydawca');
 const enriched = entries.filter((entry) => entry.enriched);
 const years = [...new Set(entries.map((entry) => entry.date.slice(0, 4)))];
@@ -58,12 +57,6 @@ for (const entry of entries) {
           </p>
           <dl class="facts">
             <div><dt>Prowadzący</dt><dd><PersonName name="Jarek Szubrycht" /></dd></div>
-            {producers.length > 0 && (
-              <div>
-                <dt>Produkcja</dt>
-                <dd>{producers.map((name, index) => <><PersonName name={name} />{index < producers.length - 1 ? ', ' : ''}</>)}</dd>
-              </div>
-            )}
             {publishers.length > 0 && (
               <div>
                 <dt>Wydawca</dt>

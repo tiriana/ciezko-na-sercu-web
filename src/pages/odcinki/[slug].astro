@@ -83,6 +83,28 @@ const speechSec = episode?.durationSec
   ? episode.durationSec - (episode.tracks.reduce((sum, track) => sum + track.durationSec, 0) || 0)
   : null;
 
+// Produkcja i wydawca to zwykle ta sama osoba, a wydawca mówi więcej — rolę
+// „producent" pomijamy, gdy występuje razem z „wydawca" przy tym samym nazwisku.
+const creditRows = (() => {
+  const publisherNames = new Set(
+    (episode?.credits ?? []).filter((credit) => credit.role === 'wydawca').map((credit) => credit.name)
+  );
+  const visible = (episode?.credits ?? []).filter(
+    (credit) => !(credit.role === 'producent' && publisherNames.has(credit.name))
+  );
+
+  const byName = new Map<string, { name: string; roles: string[]; time: number }>();
+  for (const credit of visible) {
+    const row = byName.get(credit.name);
+    if (!row) {
+      byName.set(credit.name, { name: credit.name, roles: [credit.role], time: credit.time });
+      continue;
+    }
+    if (!row.roles.includes(credit.role)) row.roles.push(credit.role);
+  }
+  return [...byName.values()].sort((left, right) => left.time - right.time);
+})();
+
 const episodeTitle = formatEpisodeTitle(entry.displayTitle);
 const title = episode
   ? `${episodeTitle} — ${catalog.program.name}`
@@ -269,10 +291,10 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
             <section class="card" aria-labelledby="credits-title">
               <h2 id="credits-title">Credits</h2>
               <dl class="kv">
-                {episode.credits.map((credit) => (
+                {creditRows.map((row) => (
                   <div>
-                    <dt>{formatRole(credit.role)}</dt>
-                    <dd><PersonName name={credit.name} /></dd>
+                    <dt>{row.roles.map(formatRole).join(' / ')}</dt>
+                    <dd><PersonName name={row.name} /></dd>
                   </div>
                 ))}
               </dl>
