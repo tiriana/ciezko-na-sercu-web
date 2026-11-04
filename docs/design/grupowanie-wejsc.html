@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grupowanie wejść — propozycje (issue #9)</title>
+    <style>
+      :root {
+        --bg: #f4f4f5;
+        --surface: #fff;
+        --ink: #141414;
+        --muted: #6b6b6b;
+        --line: #e5e7eb;
+        --accent: #d81f2a;
+        --gap: 16px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #121212;
+          --surface: #1b1b1b;
+          --ink: #f2f2f2;
+          --muted: #9a9a9a;
+          --line: #2c2c2c;
+          --accent: #ff5a63;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 40px 24px 80px;
+        background: var(--bg);
+        color: var(--ink);
+        font: 15px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      }
+      .wrap { max-width: 880px; margin: 0 auto; }
+      h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: -0.02em; }
+      .lead { margin: 0 0 36px; color: var(--muted); }
+      h2 { margin: 44px 0 6px; font-size: 19px; letter-spacing: -0.01em; }
+      .why { margin: 0 0 14px; color: var(--muted); font-size: 14px; }
+      .card {
+        padding: 20px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+      }
+      .mono { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+      .label {
+        color: var(--accent);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .row { display: flex; gap: 12px; align-items: baseline; padding: 10px 0; border-top: 1px solid var(--line); }
+      .row:first-child { border-top: 0; }
+      .time { width: 52px; flex: none; font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+      .play {
+        width: 22px; height: 22px; flex: none; border-radius: 50%;
+        border: 1px solid var(--line); background: transparent; color: var(--ink);
+        font-size: 9px; cursor: pointer;
+      }
+      .grow { flex: 1; min-width: 0; }
+
+      /* A — pasek czasu */
+      .bar { display: flex; height: 44px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+      .bar span { display: grid; place-items: center; font-size: 10px; overflow: hidden; white-space: nowrap; }
+      .bar .music { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--ink); }
+      .bar .talk { background: color-mix(in srgb, var(--ink) 10%, transparent); color: var(--muted); }
+      .legend { display: flex; gap: 16px; margin-top: 10px; font-size: 12px; color: var(--muted); }
+      .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+
+      /* B — zagnieżdżenie */
+      .child { padding-left: 34px; }
+      .child .row { border-top: 0; padding: 6px 0; }
+      .child .time { color: var(--muted); }
+
+      /* C — karta grupowa */
+      .group {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 14px 16px;
+        background: color-mix(in srgb, var(--ink) 3%, transparent);
+      }
+      .group__head { display: flex; gap: 10px; align-items: center; }
+      .group__title { font-weight: 600; }
+      .group ul { margin: 10px 0 0; padding: 0 0 0 34px; list-style: none; }
+      .group li { display: flex; gap: 10px; padding: 4px 0; font-size: 14px; }
+
+      /* D — pionowa chronologia */
+      .tl { position: relative; margin: 0; padding: 0 0 0 22px; list-style: none; }
+      .tl::before { content: ""; position: absolute; left: 5px; top: 6px; bottom: 6px; width: 1px; background: var(--line); }
+      .tl li { position: relative; padding: 6px 0; }
+      .tl li::before {
+        content: ""; position: absolute; left: -21px; top: 12px;
+        width: 9px; height: 9px; border-radius: 50%; background: var(--muted); border: 2px solid var(--surface);
+      }
+      .tl li.music::before { background: var(--accent); }
+
+      /* E — akordeon */
+      details { border-top: 1px solid var(--line); }
+      details:first-of-type { border-top: 0; }
+      summary {
+        display: flex; gap: 12px; align-items: baseline; padding: 12px 0;
+        cursor: pointer; list-style: none;
+      }
+      summary::-webkit-details-marker { display: none; }
+      summary::after { content: "+"; margin-left: auto; color: var(--muted); }
+      details[open] summary::after { content: "−"; }
+      details ul { margin: 0 0 10px; padding: 0 0 0 64px; list-style: none; }
+      details li { display: flex; gap: 10px; padding: 3px 0; font-size: 14px; }
+      .hint { margin: 26px 0 0; color: var(--muted); font-size: 13px; }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Grupowanie wejść — pięć propozycji</h1>
+      <p class="lead">
+        Issue #9. Dane: trzy kolejne wejścia po utworze (8:44, 10:10, 11:16). W każdym wariancie
+        play przy nagłówku grupy startuje od pierwszego wejścia, a klik w wątek — od jego czasu.
+      </p>
+
+      <h2>A. Pasek czasu nad listą</h2>
+      <p class="why">Grupy widać od razu jako proporcje audycji; szczegóły zostają w liście pod spodem.</p>
+      <div class="card">
+        <div class="bar">
+          <span class="music" style="flex: 7">7:13 Type O Negative</span>
+          <span class="talk" style="flex: 5">3 wejścia</span>
+          <span class="music" style="flex: 4">Gloryhammer</span>
+          <span class="talk" style="flex: 3">wejście</span>
+          <span class="music" style="flex: 6">Kat</span>
+        </div>
+        <div class="legend">
+          <span><span class="swatch" style="background: color-mix(in srgb, var(--accent) 22%, transparent)"></span>utwór</span>
+          <span><span class="swatch" style="background: color-mix(in srgb, var(--ink) 10%, transparent)"></span>wejście</span>
+        </div>
+      </div>
+
+      <h2>B. Lista z zagnieżdżeniem</h2>
+      <p class="why">Najbliżej obecnego wyglądu: grupa to wiersz-rodzic, wątki schodzą niżej.</p>
+      <div class="card">
+        <div class="row">
+          <button class="play" type="button">▶</button>
+          <span class="time">7:13</span>
+          <span class="grow">Type O Negative — Everyone I Love Is Dead</span>
+          <span class="mono">6:05</span>
+        </div>
+        <div class="row">
+          <button class="play" type="button">▶</button>
+          <span class="time">8:44</span>
+          <span class="grow"><span class="label">Wejście, 3 wątki</span><br />Wolves in the Throne Room, kalendarz koncertów, Glory Hammer</span>
+          <span class="mono">4:55</span>
+        </div>
+        <div class="child">
+          <div class="row"><span class="time">8:44</span><span class="grow">Wolves in the Throne Room – nowy album Estuary</span><span class="mono">1:26</span></div>
+          <div class="row"><span class="time">10:10</span><span class="grow">Kalendarz koncertów power-metalowych w Polsce</span><span class="mono">1:06</span></div>
+          <div class="row"><span class="time">11:16</span><span class="grow">Glory Hammer – opis projektu i zapowiedź utworu</span><span class="mono">4:55</span></div>
+        </div>
+      </div>
+
+      <h2>C. Karta grupowa</h2>
+      <p class="why">Grupa odcina się tłem; pojedyncze wejście wygląda jak dziś, bez ramki.</p>
+      <div class="card">
+        <div class="group">
+          <div class="group__head">
+            <button class="play" type="button">▶</button>
+            <span class="group__title">Wejście: trzy wątki o nowościach</span>
+            <span class="mono" style="margin-left: auto">8:44 · 4:55</span>
+          </div>
+          <ul>
+            <li><span class="time">8:44</span><span class="grow">Wolves in the Throne Room – nowy album Estuary</span></li>
+            <li><span class="time">10:10</span><span class="grow">Kalendarz koncertów power-metalowych w Polsce</span></li>
+            <li><span class="time">11:16</span><span class="grow">Glory Hammer – opis projektu i zapowiedź utworu</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>D. Pionowa chronologia</h2>
+      <p class="why">Najbardziej „programowy” charakter; dobre na telefon, słabsze przy gęstych audycjach.</p>
+      <div class="card">
+        <ul class="tl">
+          <li class="music"><span class="time">7:13</span> Type O Negative — Everyone I Love Is Dead</li>
+          <li><span class="time">8:44</span> Wolves in the Throne Room – nowy album Estuary</li>
+          <li><span class="time">10:10</span> Kalendarz koncertów power-metalowych w Polsce</li>
+          <li><span class="time">11:16</span> Glory Hammer – opis projektu i zapowiedź utworu</li>
+          <li class="music"><span class="time">12:21</span> Gloryhammer — Die with a Sword in My Hand</li>
+        </ul>
+      </div>
+
+      <h2>E. Akordeon</h2>
+      <p class="why">Kolejne wejścia domyślnie zwinięte do jednej linii; rozwinięcie pokazuje wątki.</p>
+      <div class="card">
+        <details open>
+          <summary>
+            <button class="play" type="button">▶</button>
+            <span><span class="label">Wejście, 3 wątki</span><br />Nowości i koncerty</span>
+            <span class="mono">8:44 · 4:55</span>
+          </summary>
+          <ul>
+            <li><span class="time">8:44</span> Wolves in the Throne Room – nowy album Estuary</li>
+            <li><span class="time">10:10</span> Kalendarz koncertów power-metalowych w Polsce</li>
+            <li><span class="time">11:16</span> Glory Hammer – opis projektu i zapowiedź utworu</li>
+          </ul>
+        </details>
+        <details>
+          <summary>
+            <button class="play" type="button">▶</button>
+            <span><span class="label">Wejście</span><br />Trasa V z Fertile Hump i gośćmi</span>
+            <span class="mono">16:20 · 9:04</span>
+          </summary>
+          <ul>
+            <li><span class="time">16:20</span> Trasa V z Fertile Hump i gośćmi oraz inne trasy jesienne</li>
+          </ul>
+        </details>
+      </div>
+
+      <p class="hint">
+        Warianty różnią się tylko warstwą widoku — dane (<code>topics[]</code> z <code>start</code>
+        i <code>end</code>) są te same. Grupowanie: kolejne wejścia bez utworu pomiędzy nimi,
+        przerwa ≤ 60 s. Propozycja wyboru: <strong>B</strong> jako domyślna (najmniejsza zmiana),
+        <strong>E</strong> przy długich audycjach z wieloma wejściami.
+      </p>
+    </div>
+  </body>
+</html>
