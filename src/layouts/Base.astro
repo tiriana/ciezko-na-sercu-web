@@ -1,4 +1,5 @@
 ---
+import '../styles/fonts.css';
 import '../styles/global.css';
 
 interface Props {
@@ -23,12 +24,6 @@ const buildDate = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
     <meta name="build-date" content={buildDate} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <script is:inline>
       const stored = localStorage.getItem('cns-theme');
       if (stored === 'light' || stored === 'dark') document.documentElement.dataset.theme = stored;
