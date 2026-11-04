@@ -3,8 +3,6 @@ name: deploy
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '17 3 * * *'
   workflow_dispatch:
     inputs:
       screenshots:
@@ -26,7 +24,6 @@ concurrency:
 env:
   SURGE_DOMAIN: ciezko-na-sercu.surge.sh
   SURGE_VERSION: 0.56.0
-  PROGRAM_DIR: 'Ciężko na Sercu'
 
 jobs:
   deploy:
@@ -38,23 +35,6 @@ jobs:
         with:
           node-version: 22
           cache: npm
-
-      - name: Zainstaluj rclone
-        run: curl -fsSL https://rclone.org/install.sh | sudo bash
-
-      - name: Odśwież katalog odcinków
-        # Bramka danych: build czyta wyłącznie data/. Gdy Egnyte jest nieosiągalny, zostaje
-        # katalog z repozytorium, a deploy nadal się odbywa.
-        env:
-          RCLONE_REMOTE: ${{ secrets.RCLONE_REMOTE }}
-          RADIO_DIR: ${{ vars.RADIO_DIR || '/Shared/Radio' }}
-        run: |
-          mkdir -p .cache
-          if rclone copy "$RCLONE_REMOTE:$RADIO_DIR/$PROGRAM_DIR/episodes.json" .cache; then
-            node scripts/build-catalog.mjs .cache/episodes.json data/catalog.json
-          else
-            echo "::warning::Nie udało się pobrać episodes.json z Egnyte — deploy z katalogiem z repozytorium"
-          fi
 
       - name: Zainstaluj zależności
         run: npm ci
