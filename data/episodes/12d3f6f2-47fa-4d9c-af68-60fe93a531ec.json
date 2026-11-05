@@ -1,0 +1,375 @@
+{
+  "version": 1,
+  "id": "12d3f6f2-47fa-4d9c-af68-60fe93a531ec",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T22:11:04.133Z",
+  "durationSec": 6889,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "abigail-williams",
+      "label": "Abigail Williams",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5248
+    },
+    {
+      "id": "accvsed-the-narrator",
+      "label": "ACCVSED & The Narrator",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3707
+    },
+    {
+      "id": "arcadea",
+      "label": "Arcadea",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3179
+    },
+    {
+      "id": "beheaded",
+      "label": "Beheaded",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5545
+    },
+    {
+      "id": "blessings",
+      "label": "Blessings",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4004
+    },
+    {
+      "id": "car-bomb",
+      "label": "Car Bomb",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3488
+    },
+    {
+      "id": "diving-stove",
+      "label": "Diving Stove",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2022
+    },
+    {
+      "id": "entrails",
+      "label": "Entrails",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5861
+    },
+    {
+      "id": "frayle",
+      "label": "Frayle",
+      "type": "artist",
+      "source": "tracks",
+      "at": 914
+    },
+    {
+      "id": "gojira",
+      "label": "GOJIRA",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2262
+    },
+    {
+      "id": "malthusian",
+      "label": "Malthusian",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6194
+    },
+    {
+      "id": "mammoth-grinder",
+      "label": "Mammoth Grinder",
+      "type": "artist",
+      "source": "tracks",
+      "at": 547
+    },
+    {
+      "id": "mawiza",
+      "label": "Mawiza",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2872
+    },
+    {
+      "id": "ministry",
+      "label": "Ministry",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1477
+    },
+    {
+      "id": "ossuary",
+      "label": "Ossuary",
+      "type": "artist",
+      "source": "tracks",
+      "at": 7
+    },
+    {
+      "id": "suffocation",
+      "label": "Suffocation",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1769
+    },
+    {
+      "id": "unleashed",
+      "label": "Unleashed",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6648
+    },
+    {
+      "id": "zatokrev",
+      "label": "Zatokrev",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4652
+    }
+  ],
+  "tracks": [
+    {
+      "start": 7,
+      "end": 547,
+      "durationSec": 339,
+      "artist": "Ossuary",
+      "title": "Instinctual Prostration",
+      "album": "Abhorrent Worship",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 547,
+      "end": 914,
+      "durationSec": 136,
+      "artist": "Mammoth Grinder",
+      "title": "Corpse of Divinant",
+      "album": "Undying Spectral Resonance - EP",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 914,
+      "end": 1477,
+      "durationSec": 562,
+      "artist": "Frayle",
+      "title": "Walking Wounded",
+      "album": "Heretics & Lullabies",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1477,
+      "end": 1769,
+      "durationSec": 182,
+      "artist": "Ministry",
+      "title": "Goddamn White Trash",
+      "album": "HOPIUMFORTHEMASSES",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1769,
+      "end": 2022,
+      "durationSec": 181,
+      "artist": "Suffocation",
+      "title": "As Grace Descends",
+      "album": "Pinnacle of Bedlam",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2022,
+      "end": 2262,
+      "durationSec": 186,
+      "artist": "Diving Stove",
+      "title": "Oh Tonight",
+      "album": "Atavism",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2262,
+      "end": 2872,
+      "durationSec": 460,
+      "artist": "GOJIRA",
+      "title": "Flying Whales",
+      "album": "From Mars to Sirius",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2872,
+      "end": 3179,
+      "durationSec": 264,
+      "artist": "Mawiza",
+      "title": "Ti Inan Paw-Pawkan (feat. Joe Duplantier)",
+      "album": "Ül",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3179,
+      "end": 3488,
+      "durationSec": 258,
+      "artist": "Arcadea",
+      "title": "Fuzzy Planet",
+      "album": "The Exodus of Gravity",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3488,
+      "end": 3707,
+      "durationSec": 169,
+      "artist": "Car Bomb",
+      "title": "Paroxysm",
+      "album": "Paroxysm - Single",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3707,
+      "end": 4004,
+      "durationSec": 223,
+      "artist": "ACCVSED & The Narrator",
+      "title": "Don't Let Me Fall Apart",
+      "album": "Dealers of Doom",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4004,
+      "end": 4652,
+      "durationSec": 558,
+      "artist": "Blessings",
+      "title": "No Good Things",
+      "album": "Blodsträngen",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4652,
+      "end": 5248,
+      "durationSec": 564,
+      "artist": "Zatokrev",
+      "title": "Unwinding Spirits (feat. Manuel Gagneux)",
+      "album": "Bring Mirrors to the Surface",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5248,
+      "end": 5545,
+      "durationSec": 265,
+      "artist": "Abigail Williams",
+      "title": "Nonexistence",
+      "album": "A Void Within Existence",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5545,
+      "end": 5861,
+      "durationSec": 273,
+      "artist": "Beheaded",
+      "title": "Għadam",
+      "album": "Għadam",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5861,
+      "end": 6194,
+      "durationSec": 259,
+      "artist": "Entrails",
+      "title": "Wings of Death",
+      "album": "Grip of Ancient Evil",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6194,
+      "end": 6648,
+      "durationSec": 386,
+      "artist": "Malthusian",
+      "title": "The Summoning Bell",
+      "album": "The Summoning Bell",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6648,
+      "end": 6889,
+      "durationSec": 241,
+      "artist": "Unleashed",
+      "title": "Hold Your Hammers High",
+      "album": "Fire Upon Your Lands",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
