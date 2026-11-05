@@ -1,0 +1,630 @@
+{
+  "version": 1,
+  "episodeId": "3453211a-4286-4476-a4df-73285a9c08d5",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 114410513,
+  "fileMtimeMs": 1789150360146.1677,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 276.06
+    },
+    {
+      "index": 1,
+      "start": 1689.12,
+      "end": 1779.16
+    },
+    {
+      "index": 2,
+      "start": 3017.54,
+      "end": 3100.83
+    },
+    {
+      "index": 3,
+      "start": 4363.75,
+      "end": 4531.61
+    },
+    {
+      "index": 4,
+      "start": 5785.92,
+      "end": 5912.54
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.48,
+      "end": 5,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 10.16,
+      "end": 12.32,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 13.6,
+      "end": 22.04,
+      "text": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht w imieniu własnym i Mariusza Owczarka, wydawcy audycji."
+    },
+    {
+      "start": 22.64,
+      "end": 30.56,
+      "text": "Witamy w Ciężko na sercu. Audycji, która jak sama nazwa wskazuje, ciężarami stoi."
+    },
+    {
+      "start": 31.4,
+      "end": 46.38,
+      "text": "Napisał do mnie jakiś czas temu pewien artysta, parający się muzyką ciężką oczywiście, ale raczej eksperymentalną, że ma nowy projekt, z którym wydał płytę."
+    },
+    {
+      "start": 47.06,
+      "end": 63.2,
+      "text": "Posłuchałem, fajne, chciałbym puścić w audycji, ale kłopot w tym, że płyta owa zawiera dwa utwory, a właściwie jeden w dwóch wersjach i każda z nich ma po pół godziny."
+    },
+    {
+      "start": 63.98,
+      "end": 71.28,
+      "text": "Jak to zmieścić? Przecież to radio, nie powinno się puszczać tak długich numerów."
+    },
+    {
+      "start": 71.88,
+      "end": 81.44,
+      "text": "Artysta przygotował mi zatem wersję radiową tej piosenki, która ma już tylko 24 minuty."
+    },
+    {
+      "start": 82.44,
+      "end": 87.1,
+      "text": "I najpierw pomyślałem, że nic z tego nie będzie."
+    },
+    {
+      "start": 87.1,
+      "end": 92.6,
+      "text": "Nie zmieściłem tego utworu w podsumowaniu miesiąca."
+    },
+    {
+      "start": 92.74,
+      "end": 99.16,
+      "text": "Musiałbym poświęcić kilka innych kawałków, które bardzo chciałem zaprezentować,"
+    },
+    {
+      "start": 99.94,
+      "end": 102.2,
+      "text": "ale zmieniłem zdanie."
+    },
+    {
+      "start": 102.62,
+      "end": 106.26,
+      "text": "Bo czemu właściwie miałbym tego nie puścić?"
+    },
+    {
+      "start": 106.96,
+      "end": 118.7,
+      "text": "W końcu to audycja o ciężarach, które przecież mają różne wymiary i jest to muzyka wymagająca od słuchacza,"
+    },
+    {
+      "start": 119.08,
+      "end": 123.84,
+      "text": "poświęcenia, cierpliwości, a więc i czasu."
+    },
+    {
+      "start": 124.84,
+      "end": 129.2,
+      "text": "To też jakiś ciężar, który trzeba dźwignąć."
+    },
+    {
+      "start": 129.92,
+      "end": 135.2,
+      "text": "I taka muzyka też powinna mieć w tej audycji miejsce, bo jeśli nie tutaj, to gdzie?"
+    },
+    {
+      "start": 136.18,
+      "end": 141.68,
+      "text": "Dzisiaj zatem wciężko na sercu usłyszycie tylko pięć piosenek,"
+    },
+    {
+      "start": 141.76,
+      "end": 146.86,
+      "text": "a i tak nie mam pewności, czy ostatnia z nich nie zostanie przycięta."
+    },
+    {
+      "start": 147.86,
+      "end": 157.1,
+      "text": "Będzie zatem naprawdę bezkompromisowo, będzie Mroczny Ambient, Doom, Dron Metal i Okolice,"
+    },
+    {
+      "start": 157.3,
+      "end": 161.64,
+      "text": "ale nie tylko, będzie też jeden utwór bardzo żwawy."
+    },
+    {
+      "start": 162.48,
+      "end": 167.5,
+      "text": "Zacznę od projektu, który to wszystko zainicjował, który był iskrą"
+    },
+    {
+      "start": 167.5,
+      "end": 171.52,
+      "text": "i z niej powstała właśnie dzisiejsza audycja."
+    },
+    {
+      "start": 172.18,
+      "end": 179.42,
+      "text": "Nazywają się Pop Art Secessionists, a ich debiutancki album to Tryton."
+    },
+    {
+      "start": 180.1,
+      "end": 185.88,
+      "text": "Jak sami twierdzą, materiał powstał jako odpowiedź na przyspieszone tempo"
+    },
+    {
+      "start": 185.88,
+      "end": 192.18,
+      "text": "współczesnego świata i jest wyrazem świadomej decyzji o zwolnieniu"
+    },
+    {
+      "start": 192.18,
+      "end": 199.12,
+      "text": "oraz skupieniu się na uważności, byciu tu i teraz, zarówno w samotności,"
+    },
+    {
+      "start": 199.32,
+      "end": 201.58,
+      "text": "jak i w relacji z innymi."
+    },
+    {
+      "start": 202.64,
+      "end": 205.58,
+      "text": "O właśnie, właśnie o to mi chodziło."
+    },
+    {
+      "start": 205.68,
+      "end": 211.54,
+      "text": "Dzisiaj, proszę Państwa, wciężko na sercu ćwiczenia w zwalnianiu tempa i w uważności."
+    },
+    {
+      "start": 212.3,
+      "end": 217.92,
+      "text": "Pop Art Secessionists to trio łączące artystów doświadczonych,"
+    },
+    {
+      "start": 218.32,
+      "end": 221.32,
+      "text": "ale są to doświadczenia bardzo różne."
+    },
+    {
+      "start": 221.94,
+      "end": 226,
+      "text": "Najbardziej znaną postacią jest tutaj Tomasz Lipa Lipnicki,"
+    },
+    {
+      "start": 226,
+      "end": 233.8,
+      "text": "a więc wokalista, gitarzysta, autor muzyki i tekstów znany z grup Illusion i Lipa Lee."
+    },
+    {
+      "start": 234.48,
+      "end": 237.52,
+      "text": "W takim wcieleniu na pewno się go nie spodziewaliście."
+    },
+    {
+      "start": 238.26,
+      "end": 241.2,
+      "text": "Towarzyszą mu Mauro Sambo, multiinstrumentalista,"
+    },
+    {
+      "start": 241.66,
+      "end": 246.74,
+      "text": "artysta multimedialny, działający na pograniczu rzeźby i performansu,"
+    },
+    {
+      "start": 246.82,
+      "end": 253.94,
+      "text": "wideo i malarstwa, fotografii oraz dźwięku i tu jego dźwiękowe zainteresowania usłyszymy."
+    },
+    {
+      "start": 253.94,
+      "end": 257.64,
+      "text": "I jeszcze Tomasz Mądry, kompozytor i eksperymentator,"
+    },
+    {
+      "start": 257.76,
+      "end": 263.32,
+      "text": "którego ludzie nurkujący w undergroundzie mogą kojarzyć z takimi projektami jak"
+    },
+    {
+      "start": 263.32,
+      "end": 267.8,
+      "text": "The Stars, Plains and Circles czy A Sea of Smoke."
+    },
+    {
+      "start": 268.56,
+      "end": 274.5,
+      "text": "Posłuchajmy zatem Trytona w wersji radiowej, żeby nie powiedzieć singlowej."
+    },
+    {
+      "start": 274.5,
+      "end": 276.06,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 1689.12,
+      "end": 1700.5,
+      "text": "Wynurzamy się z trytonowych odmętów, by przejść do kolejnej kompozycji, tym razem już zdecydowanie metalowej."
+    },
+    {
+      "start": 1701.12,
+      "end": 1708.3,
+      "text": "Kolos, którego za chwilę wysłuchacie nosi tytuł Circle i otwiera The Manical Veil."
+    },
+    {
+      "start": 1708.86,
+      "end": 1714.72,
+      "text": "Swoją drogą to dobry sprawdzian dla potencjalnych odbiorców takiej muzyki."
+    },
+    {
+      "start": 1714.86,
+      "end": 1720.34,
+      "text": "Jeśli wytrzymasz taki początek płyty, to już wszystko wytrzymasz."
+    },
+    {
+      "start": 1720.96,
+      "end": 1729.96,
+      "text": "The Manical Veil to zespół esoteric, esoteric dojrzały i można nawet powiedzieć, że nieco ucywilizowany."
+    },
+    {
+      "start": 1729.96,
+      "end": 1739.32,
+      "text": "Ich piąta płyta z 2008 roku, prezentująca oblicze mniej surowe niż wcześniejsze materiały,"
+    },
+    {
+      "start": 1740.06,
+      "end": 1745.2,
+      "text": "ale to wciąż oczywiście nie jest muzyka dla każdego."
+    },
+    {
+      "start": 1745.74,
+      "end": 1752.1,
+      "text": "Przekonaliśmy się o tym niedawno, w ubiegłym roku na festiwalu Summer Dying Loud,"
+    },
+    {
+      "start": 1752.32,
+      "end": 1759.9,
+      "text": "gdzie esoteric wystąpili i skłamałbym, gdybym powiedział, że pod sceną był tłum."
+    },
+    {
+      "start": 1759.9,
+      "end": 1769.24,
+      "text": "Za to ci, co zostali byli zachwyceni, bo to muzyka, która jest brutalna, wręcz barbarzyńska,"
+    },
+    {
+      "start": 1769.78,
+      "end": 1775.24,
+      "text": "ale zarazem hipnotyzująca i na swój sposób ulotna."
+    },
+    {
+      "start": 1775.84,
+      "end": 1776.56,
+      "text": "Ezoteric."
+    },
+    {
+      "start": 1776.56,
+      "end": 1779.16,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3018.54,
+      "end": 3023.42,
+      "text": "Rewerent Bizarre to mistrzowie dumu z Finlandii."
+    },
+    {
+      "start": 3023.94,
+      "end": 3030.76,
+      "text": "Trzymali się prawideł gatunku, choć interpretowali je i kształtowali po swojemu."
+    },
+    {
+      "start": 3031.44,
+      "end": 3041.98,
+      "text": "Bo jeśli ktoś gdzieś wymyślił jakąś ponurą muzykę, a dum to dzieło Brytyjczyków, tu raczej nie ma sporu,"
+    },
+    {
+      "start": 3041.98,
+      "end": 3049.52,
+      "text": "to śmiało można założyć, że jeśli Finowie wezmą taki materiał w swoje łapy,"
+    },
+    {
+      "start": 3049.96,
+      "end": 3059.44,
+      "text": "najpewniej coś zepsują, coś dodadzą, przyciemnią i wzbogacą o ten element leśnej psychodelii."
+    },
+    {
+      "start": 3060.08,
+      "end": 3065.38,
+      "text": "Niestety Rewerent Bizarre już nie istnieje od prawie dwóch dekad,"
+    },
+    {
+      "start": 3065.38,
+      "end": 3072.4,
+      "text": "a członkowie grupy rozeszli się po innych projektach, niektórych bardzo ciekawych,"
+    },
+    {
+      "start": 3072.56,
+      "end": 3074.9,
+      "text": "ale nie aż tak przekonujących."
+    },
+    {
+      "start": 3075.48,
+      "end": 3080.8,
+      "text": "Wysłuchamy utworu, który zamyka debiutancką płytę Rewerent Bizarre,"
+    },
+    {
+      "start": 3080.88,
+      "end": 3085.52,
+      "text": "czyli Indirectory of the Bizarre Reverent."
+    },
+    {
+      "start": 3085.52,
+      "end": 3089.34,
+      "text": "A tytuł utworu brzmi Sirith Angle."
+    },
+    {
+      "start": 3089.5,
+      "end": 3094.5,
+      "text": "Tak jest, mamy do czynienia ze światem post-tolkienowskim,"
+    },
+    {
+      "start": 3094.66,
+      "end": 3097.46,
+      "text": "pełnym magii i tajemnic."
+    },
+    {
+      "start": 4363.75,
+      "end": 4366.05,
+      "text": "Autopromocja"
+    },
+    {
+      "start": 4366.05,
+      "end": 4370.97,
+      "text": "20 lat temu ukazała się ostatnia wielka płyta muzyki popularnej."
+    },
+    {
+      "start": 4371.25,
+      "end": 4375.43,
+      "text": "Album złamanego serca, który zdobył serca milionów słuchaczy."
+    },
+    {
+      "start": 4375.67,
+      "end": 4382.15,
+      "text": "Z ciemności przeklętego uczucia wprost na szczyty list przebojów i do popkulturowej nieśmiertelności."
+    },
+    {
+      "start": 4386.73,
+      "end": 4392.11,
+      "text": "To jest dorobek Back to Black, niezapomnianej płyty Amy Winehouse."
+    },
+    {
+      "start": 4392.11,
+      "end": 4395.37,
+      "text": "W najbliższą środę o 19 posłuchamy jej wspólnie."
+    },
+    {
+      "start": 4397.25,
+      "end": 4401.55,
+      "text": "Zapraszam na pół niezaprzeczalnie perfekcyjnej płyty."
+    },
+    {
+      "start": 4403.29,
+      "end": 4405.89,
+      "text": "Do usłyszenia. Anna Gacek."
+    },
+    {
+      "start": 4406.45,
+      "end": 4407.29,
+      "text": "Autopromocja."
+    },
+    {
+      "start": 4407.51,
+      "end": 4409.39,
+      "text": "Słuchacie ciężko na sercu."
+    },
+    {
+      "start": 4409.57,
+      "end": 4415.87,
+      "text": "Odcinka, w którym prezentuję utwory, których wcześniej nie miałem śmiałości puścić,"
+    },
+    {
+      "start": 4416.41,
+      "end": 4421.11,
+      "text": "bo za długie, bo nie nadają się do prezentacji radiowej,"
+    },
+    {
+      "start": 4421.11,
+      "end": 4423.47,
+      "text": "ale proszę Państwa, jak w Matrixie."
+    },
+    {
+      "start": 4423.53,
+      "end": 4427.75,
+      "text": "Te ograniczenia są tylko w naszych głowach, a zatem przemogłem się."
+    },
+    {
+      "start": 4428.75,
+      "end": 4434.43,
+      "text": "Obiecałem na początku audycji, że będzie miejsce na piosenkę żwawą."
+    },
+    {
+      "start": 4435.09,
+      "end": 4435.77,
+      "text": "To może teraz."
+    },
+    {
+      "start": 4436.55,
+      "end": 4441.15,
+      "text": "Nie chciałem przy tym prezentować materiałów, które są długie,"
+    },
+    {
+      "start": 4441.31,
+      "end": 4446.03,
+      "text": "dlatego, że pochodzą z płyt bez podziału na utwory."
+    },
+    {
+      "start": 4446.15,
+      "end": 4447.45,
+      "text": "Jest takich trochę oczywiście."
+    },
+    {
+      "start": 4448.17,
+      "end": 4453.49,
+      "text": "Moja ulubiona, tak na marginesie, to Jerusalem amerykańskiej grupy Sleep."
+    },
+    {
+      "start": 4454.01,
+      "end": 4455.61,
+      "text": "Absolutne mistrzostwo świata."
+    },
+    {
+      "start": 4455.61,
+      "end": 4460.05,
+      "text": "Ponad 50 minut stoner dumowej lawy."
+    },
+    {
+      "start": 4460.65,
+      "end": 4467.65,
+      "text": "Dziś Jerusalem nie zagram, ale kto wie, może kiedyś i na to się odważę."
+    },
+    {
+      "start": 4468.21,
+      "end": 4474.95,
+      "text": "Zagram za to w całości mini album szwedzkiej grupy Meshuga, zatytułowany I."
+    },
+    {
+      "start": 4475.57,
+      "end": 4479.11,
+      "text": "Trwający tylko 21 minut."
+    },
+    {
+      "start": 4479.11,
+      "end": 4484.19,
+      "text": "Ale ile tu się w tych 20 minutach z okładem dzieje."
+    },
+    {
+      "start": 4484.73,
+      "end": 4495.81,
+      "text": "Meshuga nagrali ten materiał w 2004 roku, a więc pomiędzy wybitnymi płytami Nothing i Catch 33."
+    },
+    {
+      "start": 4496.53,
+      "end": 4502.43,
+      "text": "Zatem nic dziwnego, że i w tym przypadku mamy do czynienia z arcydziełem."
+    },
+    {
+      "start": 4503.05,
+      "end": 4510.25,
+      "text": "Thomas Hecke, perkusista z zespołu, opowiadał potem, że kompozycja powstała właściwie przypadkiem,"
+    },
+    {
+      "start": 4510.35,
+      "end": 4517.21,
+      "text": "wyłoniła się z pitolenia na próbie, które uskuteczniał sobie z Fredrikiem Tordendallem,"
+    },
+    {
+      "start": 4517.31,
+      "end": 4519.49,
+      "text": "czyli gitarzystą Meshuga."
+    },
+    {
+      "start": 4519.97,
+      "end": 4526.85,
+      "text": "Co to są za ludzie, którzy takie rzeczy robią przypadkiem, którym to samo wychodzi?"
+    },
+    {
+      "start": 4527.81,
+      "end": 4529.29,
+      "text": "A może to nie ludzie?"
+    },
+    {
+      "start": 5785.92,
+      "end": 5799.7,
+      "text": "Nie myśleliście chyba, że to dziwne, wyjątkowe wydanie Ciężko na sercu z pokręconymi, arcymrocznymi, długasami obejdzie się bez san."
+    },
+    {
+      "start": 5799.7,
+      "end": 5815.14,
+      "text": "Przy okazji proszę pamiętać, że to nie żadne san oł, bo to kółko i trzy nawiasy to nie literki, tylko obrazek przedstawiający rozedrganą membranę głośnika."
+    },
+    {
+      "start": 5815.14,
+      "end": 5821.62,
+      "text": "Nazwy i logo zespół zresztą zapożyczył sobie od producenta takowych."
+    },
+    {
+      "start": 5821.62,
+      "end": 5833.96,
+      "text": "Nikt ich za to nie ścigał, bo Amerykanie san potrafią wprawiać głośniki w groźnie brzmiące drgania."
+    },
+    {
+      "start": 5834.06,
+      "end": 5843.76,
+      "text": "Potrafią to jak mało kto. Oni wręcz je palą tym swoim dron metalem, zjadają te głośniki na śniadanie,"
+    },
+    {
+      "start": 5844.36,
+      "end": 5855.84,
+      "text": "a na koncertach potrafią rozedrgać publiczności wszystkie organy wewnętrzne, co potwierdzam, testowałem na własnym organizmie."
+    },
+    {
+      "start": 5856.84,
+      "end": 5866.6,
+      "text": "San to zasadniczo duet stworzony przez Grega Andersona i Stephena O'Malleya, choć czasem się rozrasta."
+    },
+    {
+      "start": 5867.24,
+      "end": 5873.38,
+      "text": "Bywa, że śpiewał nich Attila Cichar, ten szalony Węgier z Tormentora i Mayhem."
+    },
+    {
+      "start": 5874.32,
+      "end": 5877.96,
+      "text": "Zagrali też płytę niesamowitą ze Scottem Walkerem."
+    },
+    {
+      "start": 5878.6,
+      "end": 5886.56,
+      "text": "A utwór, którym się pożegnamy nosi tytuł Nowe i zamyka płytę Life Metal,"
+    },
+    {
+      "start": 5887.18,
+      "end": 5892.42,
+      "text": "ósmą w dorobku zespołu wydaną w 2019 roku."
+    },
+    {
+      "start": 5893.42,
+      "end": 5901.1,
+      "text": "Produkował ją nieodżałowany Steve Albini, który kochał głośne i rzężące gitary."
+    },
+    {
+      "start": 5902.04,
+      "end": 5907.84,
+      "text": "My też kochamy, zatem niech przemówią i niech utulą was do snu."
+    },
+    {
+      "start": 5908.38,
+      "end": 5910.12,
+      "text": "Dobranoc. Do usłyszenia."
+    },
+    {
+      "start": 5911.42,
+      "end": 5912.54,
+      "text": "Dziękuje za oglądanie."
+    }
+  ],
+  "stats": {
+    "windowCount": 5,
+    "transcribedAudioSec": 743.87,
+    "segmentCount": 117,
+    "characterCount": 7516
+  },
+  "sourceId": "2026-07-08-tego-na-pewno-nie-puszcza-w-radiu"
+}
