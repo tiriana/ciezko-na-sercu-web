@@ -1,0 +1,1040 @@
+{
+  "version": 1,
+  "episodeId": "2ad042a6-1bdb-4e5f-b5ac-dae1e401276f",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 108934886,
+  "fileMtimeMs": 1789150873424.1072,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 126.17
+    },
+    {
+      "index": 1,
+      "start": 312.26,
+      "end": 352.64
+    },
+    {
+      "index": 2,
+      "start": 399.17,
+      "end": 435.96
+    },
+    {
+      "index": 3,
+      "start": 482.05,
+      "end": 514.01
+    },
+    {
+      "index": 4,
+      "start": 573.16,
+      "end": 657.4
+    },
+    {
+      "index": 5,
+      "start": 687.49,
+      "end": 690.84
+    },
+    {
+      "index": 6,
+      "start": 965.28,
+      "end": 1021.63
+    },
+    {
+      "index": 7,
+      "start": 1308.23,
+      "end": 1443.58
+    },
+    {
+      "index": 8,
+      "start": 1902.85,
+      "end": 1977.44
+    },
+    {
+      "index": 9,
+      "start": 2222.88,
+      "end": 2289.37
+    },
+    {
+      "index": 10,
+      "start": 2559.91,
+      "end": 2632.54
+    },
+    {
+      "index": 11,
+      "start": 3157.12,
+      "end": 3209.28
+    },
+    {
+      "index": 12,
+      "start": 3527.84,
+      "end": 3610.72
+    },
+    {
+      "index": 13,
+      "start": 3946.95,
+      "end": 4071.32
+    },
+    {
+      "index": 14,
+      "start": 4270.92,
+      "end": 4344.22
+    },
+    {
+      "index": 15,
+      "start": 4513.83,
+      "end": 4613.6
+    },
+    {
+      "index": 16,
+      "start": 4843.62,
+      "end": 4905.92
+    },
+    {
+      "index": 17,
+      "start": 5134.76,
+      "end": 5154.88
+    },
+    {
+      "index": 18,
+      "start": 5267.68,
+      "end": 5313.69
+    },
+    {
+      "index": 19,
+      "start": 5737.51,
+      "end": 5803.93
+    },
+    {
+      "index": 20,
+      "start": 6008,
+      "end": 6076.19
+    },
+    {
+      "index": 21,
+      "start": 6394.79,
+      "end": 6476.03
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.24,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 8.68,
+      "end": 10.9,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 21.46,
+      "end": 25.42,
+      "text": "Dobry wieczór Państwu. Powitał Was Igor."
+    },
+    {
+      "start": 25.84,
+      "end": 29.38,
+      "text": "Szkoda, że wszystkich piosenek nie ma takich, prawda?"
+    },
+    {
+      "start": 30,
+      "end": 37.42,
+      "text": "Ta nazywa się 2020 i pochodzi z Amen, nowej płyty francuskiego projektu."
+    },
+    {
+      "start": 38.1,
+      "end": 42.98,
+      "text": "Nie przepadam za Igorem, szczególnie w wersji koncertowej."
+    },
+    {
+      "start": 43.12,
+      "end": 49.34,
+      "text": "Wydaje mi się to pretensjonalne i niestrawne, ale z płyt w małych dawkach czemu nie."
+    },
+    {
+      "start": 50.04,
+      "end": 53.32,
+      "text": "Nazywam się Jarek Szubrycht, słuchacie ciężko na sercu."
+    },
+    {
+      "start": 53.78,
+      "end": 55.68,
+      "text": "Audycję wydaje Mariusz Owczarek."
+    },
+    {
+      "start": 55.68,
+      "end": 69.8,
+      "text": "Dziś robimy sobie przegląd września i zachęcam do trwania u mego boku oraz u radioodbiorników, bo dużo fajnych rzeczy się ukazało w tym miesiącu lub ukaże się za chwilę."
+    },
+    {
+      "start": 70.36,
+      "end": 77.66,
+      "text": "Wszystkiego niestety nie zmieszczę, ale postaram się upchać jak najwięcej muzyki w tych dwóch godzinach."
+    },
+    {
+      "start": 78.32,
+      "end": 82.16,
+      "text": "No więc francuski Igor i jego piąta płyta."
+    },
+    {
+      "start": 82.88,
+      "end": 86.08,
+      "text": "Czas na coś bardziej dla niej reprezentatywnego."
+    },
+    {
+      "start": 86.58,
+      "end": 90.34,
+      "text": "Wybrałem dla Państwa utwór Blast Beat Falafel."
+    },
+    {
+      "start": 90.86,
+      "end": 97.46,
+      "text": "Nie dlatego, że taki pocieszny tytuł i nie dlatego, że Igor, ale z powodu gościa."
+    },
+    {
+      "start": 97.56,
+      "end": 109.1,
+      "text": "Otóż na gitarze w tym utworze gra Trey Spruance, znany w tajemniczonym z grupy Mr. Bungo i co ważne również z płyty King for a Day, Fool for a Lifetime."
+    },
+    {
+      "start": 109.7,
+      "end": 120.18,
+      "text": "Moim zdaniem najlepszej w dorobku Fate No More i pewnie dlatego najlepszej, że właśnie Trey tam robi na swoim instrumencie strunowym rzeczy wspaniałe."
+    },
+    {
+      "start": 121.08,
+      "end": 124.24,
+      "text": "U Igora zresztą też pięknie się popisał."
+    },
+    {
+      "start": 312.26,
+      "end": 324.6,
+      "text": "Fajne to było, ale jak już musi być oryginalnie i intensywnie, to od Katarynki Igora wolę szaleństwo takiego na przykład Intercourse."
+    },
+    {
+      "start": 325.18,
+      "end": 335.24,
+      "text": "Zespół z Connecticut dowodzony przez Tareka Achmeda przypomina właśnie o sobie albumem How I Fell In Love With The Void."
+    },
+    {
+      "start": 335.96,
+      "end": 349.22,
+      "text": "Trochę jest tu udziwnień, na pewno mniej śmieszkowania niż u Francuzów, raczej jest to gorzka ironia i neurotyczne spazmy, no i cóż, bardziej mi to pasuje."
+    },
+    {
+      "start": 399.17,
+      "end": 429.15,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 429.17,
+      "end": 435.97,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 482.05,
+      "end": 500.91,
+      "text": "Intercourse uważają się za głos dziwaków i freaków, a lider grupy opowiada, że tę nową płytę tworzył w najczarniejszym okresie swojego życia i absolutnie nie kpie sobie z tego, współczuje."
+    },
+    {
+      "start": 500.91,
+      "end": 512.47,
+      "text": "Jednak jeżeli efekt cierpienia jest tak znakomity, to potem niech się artyści nie dziwią, że ludzie im dobrze nie życzą."
+    },
+    {
+      "start": 512.47,
+      "end": 514.01,
+      "text": "muzyka"
+    },
+    {
+      "start": 573.16,
+      "end": 578.52,
+      "text": "Talach też jest z Ameryki, dokładnie z Pensylwanii."
+    },
+    {
+      "start": 578.52,
+      "end": 586.2,
+      "text": "W tekstach zespół zajmuje się science fiction, a w muzyce też właściwie science fiction."
+    },
+    {
+      "start": 586.92,
+      "end": 595.12,
+      "text": "Kombinowaniem jak tu skomplikować to wszystko, co wydaje się proste, oczywiste i naturalne."
+    },
+    {
+      "start": 596.08,
+      "end": 602.66,
+      "text": "Płyta Talach, nowa płyta zatytułowana Promeval Obsession Detachment,"
+    },
+    {
+      "start": 603.82,
+      "end": 611.52,
+      "text": "została wydana na początku września przez zasłużoną, choć w ostatnim czasie raczej podupadłą wytwórnię E-Rake."
+    },
+    {
+      "start": 612.18,
+      "end": 620.1,
+      "text": "Albumowi towarzyszy gra, w której można pójść, udać się w podróż z Annie i Schillach"
+    },
+    {
+      "start": 620.1,
+      "end": 625.6,
+      "text": "przez wrogi świat obcych istot, co nawiązuje do tekstów piosenek."
+    },
+    {
+      "start": 625.6,
+      "end": 632.12,
+      "text": "Z ciekawostek mogę jeszcze dodać, że założycielem i siłą napędową grupy Talach"
+    },
+    {
+      "start": 632.12,
+      "end": 637.86,
+      "text": "jest Max Portnoy, syn Majka Portnoy'a z Dream Theater."
+    },
+    {
+      "start": 638.52,
+      "end": 644.74,
+      "text": "Może Max nie gra na bębnach tak dobrze jak stary i pewnie nigdy nie będzie,"
+    },
+    {
+      "start": 644.9,
+      "end": 650.86,
+      "text": "tym bardziej, że właśnie porzucił perkusję w Talach na rzecz gitary basowej,"
+    },
+    {
+      "start": 650.86,
+      "end": 654.7,
+      "text": "ale za tą muzykę już dziś gra fajniejszą."
+    },
+    {
+      "start": 656.7,
+      "end": 657.4,
+      "text": "Muzyka"
+    },
+    {
+      "start": 687.49,
+      "end": 690.85,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 965.28,
+      "end": 969.82,
+      "text": "Lorna Shore zaśpiewają Wam o wojnie."
+    },
+    {
+      "start": 970.5,
+      "end": 974.6,
+      "text": "Ten amerykański zespół to obecnie prawdziwe gwiazdy Def Cora"
+    },
+    {
+      "start": 974.6,
+      "end": 978.5,
+      "text": "i wszystko wskazuje na to, że ich nowy album zatytułowany"
+    },
+    {
+      "start": 978.5,
+      "end": 983.08,
+      "text": "I Feel The Ever Black Festering Within Me"
+    },
+    {
+      "start": 983.08,
+      "end": 987.28,
+      "text": "tylko umocni pozycję kwintetu z New Jersey"
+    },
+    {
+      "start": 987.28,
+      "end": 992.28,
+      "text": "na nie tylko amerykańskiej, światowej właściwie scenie."
+    },
+    {
+      "start": 993.22,
+      "end": 1000.7,
+      "text": "Nie jest to może moja muzyka, nie jest to coś po co sięgałbym w pierwszej kolejności"
+    },
+    {
+      "start": 1000.7,
+      "end": 1008.1,
+      "text": "ale słyszę aż za dobrze, że Lorna Shore wiedzą, którą stroną kaczka wodę pije"
+    },
+    {
+      "start": 1008.1,
+      "end": 1017.38,
+      "text": "że znają się na swoim fachu i coraz skuteczniej realizują swój plan globalnej dominacji"
+    },
+    {
+      "start": 1017.38,
+      "end": 1020.02,
+      "text": "i bardzo mi to wszystko imponuje."
+    },
+    {
+      "start": 1308.23,
+      "end": 1314.99,
+      "text": "Ciśnienie to bardzo dobra nazwa dla takiego zespołu jak Ciśnienie."
+    },
+    {
+      "start": 1315.37,
+      "end": 1335.09,
+      "text": "Właściwie dla każdego dobra, bo przecież muzyka opiera się na zmianach ciśnienia, na subtelnych lub mniej subtelnych, jak w przypadku bohaterów audycji ciężko na sercu, przepływach powietrza, na drganiu cząsteczek tegoż i przemieszczaniu się ich ku naszej radości."
+    },
+    {
+      "start": 1335.59,
+      "end": 1355.29,
+      "text": "Płyty Ciśnienie nagrywa zawsze na żywo, nie inaczej sprawy się miały z ich nowym albumem zatytułowanym Angry Noises, opatrzonym sugestywną okładką przedstawiającą psa, który chyba rzeczywiście jest wkurzony i najprawdopodobniej wydaje z tego powodu nieprzyjemne dźwięki."
+    },
+    {
+      "start": 1356.15,
+      "end": 1372.59,
+      "text": "Ciśnienie natomiast wydaje z siebie dźwięki przyjemne, choć bardzo intensywne, łącząc postmetalowy trans z jazzem, którego główną ambasadorką jest tu dmąca w blaszaną rurę pani Monika."
+    },
+    {
+      "start": 1372.71,
+      "end": 1390.71,
+      "text": "Na nowej płycie Ciśnienie w dodatku cytuję Holsta i Strawińskiego, co jest dodatkowym smaczkiem, ale tego akurat nie usłyszycie w utworze gilotyna, którym postaram się ściąć wam głowy za chwil kilka."
+    },
+    {
+      "start": 1390.71,
+      "end": 1404.71,
+      "text": "Jeszcze tylko ważna uwaga od zespołu. Ten album został stworzony do głośnego odsłuchu. Słuchajcie tak głośno jak możecie lub tak głośno jak wam pozwolą."
+    },
+    {
+      "start": 1406.05,
+      "end": 1415.29,
+      "text": "A zatem proszę się nie wykręcać tym, że jest późna noc i że domownicy i sąsiedzi śpią."
+    },
+    {
+      "start": 1415.85,
+      "end": 1428.19,
+      "text": "To uwaga, którą kieruję między innymi do pani Kasi, która doniosła mi ostatnio, że musiała wyłączyć ciężko na sercu przed końcem w obawie przed reakcją sąsiadów."
+    },
+    {
+      "start": 1428.41,
+      "end": 1439.83,
+      "text": "Otóż pani Kasiu, sąsiedzi na pewno będą pani dozgonnie wdzięczni, jeśli obudzi ich pani dzisiaj ciśnieniem. Daję słowo."
+    },
+    {
+      "start": 1902.85,
+      "end": 1923.35,
+      "text": "Nad Paradise Lost długo rozwodził się nie będę, bo wszyscy zainteresowani znają, a wszyscy fani wiedzą, że czasem ten brytyjski zespół brzmi groźniej, grobowo, def-dumowo, a czasem bardziej melancholijnie, gotycko, rockowo."
+    },
+    {
+      "start": 1924.73,
+      "end": 1941.31,
+      "text": "Nowa płyta Ascension należy raczej do tego drugiego nurtu ich twórczości i żeby nie było nic w tym złego wcale nie uważam, że im ciężej tym lepiej, przynajmniej niekiedy mowa o dorobku Paradise Lost."
+    },
+    {
+      "start": 1941.95,
+      "end": 1951.73,
+      "text": "Poprzedni album zespół wydał pięć lat temu, nigdy nie mieli aż tak długiej przerwy, ale na dobre im wyszła."
+    },
+    {
+      "start": 1952.71,
+      "end": 1962.51,
+      "text": "Ascension podoba się już przy pierwszym przesłuchaniu, ale za każdym razem odkrywa przynajmniej przede mną nowe warstwy."
+    },
+    {
+      "start": 1962.51,
+      "end": 1975.93,
+      "text": "I życzę wszystkim zespołom, żeby na swoich siedemnastych, siedemnastych płytach brzmiały równie przekonująco jak Paradise Lost na swojej."
+    },
+    {
+      "start": 2222.88,
+      "end": 2234.76,
+      "text": "Ukraiński zespół Stunt Jesus, dobrze znany w naszym kraju, jakiś czas temu wypłynął na szersze wody i ma już publiczność na całym świecie."
+    },
+    {
+      "start": 2234.76,
+      "end": 2245.36,
+      "text": "I ma dla tej publiczności nową płytę zatytułowaną Songs to the Sun, pieśni dla słońca, czy pieśni śpiewane słońcu."
+    },
+    {
+      "start": 2246.02,
+      "end": 2252.5,
+      "text": "Na okładce płyty co prawda słońca nie ma, nie ma go też teraz za oknem co robić."
+    },
+    {
+      "start": 2252.88,
+      "end": 2260.26,
+      "text": "Jest za to reinterpretacja mitu o Ikarze, która bardzo mi się podoba."
+    },
+    {
+      "start": 2261.34,
+      "end": 2270.02,
+      "text": "Wygląda to tak, że nad zasnutym mgłą, gęstym lasem lewituje płonący pan."
+    },
+    {
+      "start": 2271.34,
+      "end": 2278.74,
+      "text": "Muzyka Stunt Jesus to połączenie stonera, dumu i klasycznego heavy metalu, czy hard rocka nawet,"
+    },
+    {
+      "start": 2278.74,
+      "end": 2287.42,
+      "text": "w proporcjach dokładnie takich, do jakich zespół nas przyzwyczaił, tylko że po prostu robią swoje coraz lepiej."
+    },
+    {
+      "start": 2287.42,
+      "end": 2289.38,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2559.91,
+      "end": 2571.65,
+      "text": "Nazwa zespołu Abraham to nie jest dobra nazwa. Świadczy moim zdaniem o jakiegoś rodzaju lenistwie czy nawet desperacji."
+    },
+    {
+      "start": 2572.39,
+      "end": 2579.07,
+      "text": "Nie będę jednak narzekał na szyld, skoro pod nim kryje się tak interesująca zawartość."
+    },
+    {
+      "start": 2579.47,
+      "end": 2587.01,
+      "text": "Otóż ten Abraham pochodzi ze Szwajcarii. Abraham ze Szwajcarii. No sami powiedzcie, czy to można traktować poważnie."
+    },
+    {
+      "start": 2587.61,
+      "end": 2594.11,
+      "text": "I za kilka dni wyda swoją piątą płytę zatytułowaną Id Sung Wyssa."
+    },
+    {
+      "start": 2595.29,
+      "end": 2607.65,
+      "text": "Podoba mi się i muzyka, która w ramach dość jednostajnego nurtu postmetalowego potrafiła jednak znaleźć sporo znamion oryginalności."
+    },
+    {
+      "start": 2607.65,
+      "end": 2616.61,
+      "text": "I podoba mi się ta rozdarta paszcza wokalisty, który na pewno nie udaje tych emocji."
+    },
+    {
+      "start": 2617.31,
+      "end": 2624.81,
+      "text": "Utwór nosi tytuł Naked in a Naked City, czyli nagi w nagim mieście."
+    },
+    {
+      "start": 2625.73,
+      "end": 2630.87,
+      "text": "I za jego sprawą przeniesiemy się teraz na łono Abrahama."
+    },
+    {
+      "start": 3157.12,
+      "end": 3184.64,
+      "text": "Szwedzka grupa Barrens gra postroka o dość posępnym charakterze, nie żeby często można było trafić na radosnego postroka, co sprawia, że patrzę na nich przychylnym okiem i strzygę przyjaźnie uchem, mimo tego, że niczego odkrywczego w tych dźwiękach nie ma i pewnie jak posłucham parę razy nowej płyty Barrens zatytułowanej Corpse Lights, czyli trupie światła,"
+    },
+    {
+      "start": 3184.64,
+      "end": 3207.66,
+      "text": "to pewnie o nich zapomnę. Kiedy to jeszcze trwa, czerpię z tego sporo przyjemności. A może zresztą nie zapomnę, bo album nie tylko ma ładny tytuł, ale dźwięki ładne, nie porywające po jednej nutce, za to jak już chwycą za gardło, to puścić nie chcą."
+    },
+    {
+      "start": 3207.66,
+      "end": 3209.28,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3528.46,
+      "end": 3533.42,
+      "text": "Grupa November's Doom to już weterani amerykańskiej sceny."
+    },
+    {
+      "start": 3534.3,
+      "end": 3542.56,
+      "text": "Są tacy, co twierdzą, że wręcz legenda, choć nigdy nie mieli pięciu minut autentycznej sławy."
+    },
+    {
+      "start": 3543.38,
+      "end": 3552.02,
+      "text": "Powstali w 1989 roku w Chicago, a więc w składzie bywali też potomkowie dumnych lechitów."
+    },
+    {
+      "start": 3552.02,
+      "end": 3557.3,
+      "text": "Za to muzyka November's Doom jest bardzo amerykańska."
+    },
+    {
+      "start": 3558.04,
+      "end": 3568,
+      "text": "To połączenie deaf i doom metalu wymyślone jednak zupełnie inaczej niż robią to na przykład w Wielkiej Brytanii."
+    },
+    {
+      "start": 3568.64,
+      "end": 3579.64,
+      "text": "Sami muzycy November's Doom utrzymują, że grają po prostu dark metal, a więc mroczny metal i niech im będzie przecież nie kłamią."
+    },
+    {
+      "start": 3579.64,
+      "end": 3582.38,
+      "text": "To jest metal i to jest mroczne."
+    },
+    {
+      "start": 3583.42,
+      "end": 3591.46,
+      "text": "Dwunasty album November's Doom nosi tytuł Major Arcana, czy raczej Major Arcana chyba z amerykańska."
+    },
+    {
+      "start": 3592.54,
+      "end": 3598.26,
+      "text": "Inspirowany jest tarotem i słychać, że to profesorska robota."
+    },
+    {
+      "start": 3598.42,
+      "end": 3608.2,
+      "text": "Słychać to również dlatego, że w produkcji macza o palce Dan Swano, a więc legenda sceny dla odmiany skandynawskiej."
+    },
+    {
+      "start": 3608.2,
+      "end": 3610.72,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 3947.73,
+      "end": 3957.17,
+      "text": "Przewagi polskich metalowców za górami, za lasami są dziś tak powszechne, że przeszliśmy nad nimi do porządku dziennego."
+    },
+    {
+      "start": 3957.83,
+      "end": 3966.63,
+      "text": "Gdyby jakiś artysta alternatywny, raper albo pieśniarz popowy podpisał kontrakt z amerykańską wytwórnią płytową,"
+    },
+    {
+      "start": 3966.63,
+      "end": 3974.59,
+      "text": "w dodatku z jedną najciekawczych współcześnie na rynku, o niczym innym nie gadaliby w telewizji śniadaniowej."
+    },
+    {
+      "start": 3975.75,
+      "end": 3983.53,
+      "text": "No może poza przepisem na omlet, a prezydent już wyciągałby rękę z wysokim odznaczeniem państwowym."
+    },
+    {
+      "start": 3984.33,
+      "end": 3997.23,
+      "text": "Tymczasem mówi się mało, moim zdaniem za mało o tym, że warszawska grupa Species podpisała kontrakt z amerykańską wytwórnią 20 bucks spin,"
+    },
+    {
+      "start": 3997.85,
+      "end": 4009.07,
+      "text": "która może nie jest rynkowym potentatem, ale ma w katalogu wiele prawdziwych perełek, by wymienić chociażby grupy Tom Pantley, Fulci czy Tom Mould."
+    },
+    {
+      "start": 4009.63,
+      "end": 4021.07,
+      "text": "Species grają niby trash, czasem zagęszczając go do death metalu, ale częściej rozmywając w progresywnych, technicznych zawiasach."
+    },
+    {
+      "start": 4021.81,
+      "end": 4034.23,
+      "text": "Wytwórnia ładnie napisała w materiałach prasowych, że brzmi to tak, jakby John Carpenter wyprodukował Rest in Peace Megadeth za żelazną kurtyną."
+    },
+    {
+      "start": 4035.03,
+      "end": 4046.69,
+      "text": "I chociaż właściwie trudno powiedzieć, co poeta miał tu na myśli, brzmi to na tyle intrygująco, że cytuję zamiast wymyślać własne metafory."
+    },
+    {
+      "start": 4047.35,
+      "end": 4057.69,
+      "text": "Nowy album Species nazywa się Changelings i oby był dla zespołu nowym otwarciem, przepustką na światowe sceny."
+    },
+    {
+      "start": 4058.35,
+      "end": 4069.31,
+      "text": "Posłuchamy utworu The Essence, który jeśli was nie przekona, to ja już nie wiem, co was przekona, ale nieładnie tak tkwić w błędzie."
+    },
+    {
+      "start": 4271.76,
+      "end": 4279.92,
+      "text": "Czas na najmniej ciężką piosenkę dzisiaj, w dodatku wykonywaną przez zespół o nazwie, która bardzo mnie bawi."
+    },
+    {
+      "start": 4280.64,
+      "end": 4287.52,
+      "text": "Nie przyszłoby mi do głowy, żeby szyldu dla kapeli szukać w kolorowym świecie pana Kleksa, nawet ironicznie,"
+    },
+    {
+      "start": 4288.18,
+      "end": 4295.02,
+      "text": "ale też absolutnie nie sugeruję, że to coś złego, po prostu budzi to moje zdumienie."
+    },
+    {
+      "start": 4295.78,
+      "end": 4299.52,
+      "text": "Przyznaję za to, że od razu zapamiętałem."
+    },
+    {
+      "start": 4300.02,
+      "end": 4307.28,
+      "text": "Nazywają się Meluzyna, są z Warszawy i trochę z cmentarza, a jeszcze bardziej z dalekiej przeszłości,"
+    },
+    {
+      "start": 4307.82,
+      "end": 4314.4,
+      "text": "bo odwołują się do takich gotycko-punkowych zjawisk jak Suxy and the Banshees czy Misfits."
+    },
+    {
+      "start": 4315.58,
+      "end": 4323.88,
+      "text": "I bardzo dobrze, że się odwołują, tym bardziej, że świetnie to robią i cieszy mnie, że młodzież znajduje sobie takie wzorce."
+    },
+    {
+      "start": 4323.88,
+      "end": 4327.6,
+      "text": "No więc najlżejsza piosenka w dzisiejszym worku nowości."
+    },
+    {
+      "start": 4329.12,
+      "end": 4335.78,
+      "text": "No, ale przecież nie mogły mnie puścić czegoś, co nazywa się To Hell, a więc Do Piekła."
+    },
+    {
+      "start": 4336.94,
+      "end": 4341.38,
+      "text": "Cała debiutancka epka Meluzyny tak się zresztą nazywa."
+    },
+    {
+      "start": 4341.38,
+      "end": 4344.22,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4514.83,
+      "end": 4522.59,
+      "text": "Meluzyna poleciła nam się udać do piekła, a wiemy kto mieszka w piekle, prawda? Diabeł."
+    },
+    {
+      "start": 4523.15,
+      "end": 4531.99,
+      "text": "A zatem teraz będzie o Diable. O postaci, w której lubelska grupa Optical Sun znajduje niewyczerpane źródło inspiracji."
+    },
+    {
+      "start": 4532.09,
+      "end": 4541.75,
+      "text": "Zresztą nie o samego czarta im chyba chodzi, tylko o teksty kultury, na których rogaty odciska ślady swoich kopyt."
+    },
+    {
+      "start": 4541.75,
+      "end": 4559.73,
+      "text": "A zatem Optical Sun sampluje albo pokazuje na koncertach fragmenty Przyjaciela Wesołego Diabła, czy przedwojennej ekranizacji Pana Twardowskiego, ale też cytuje poetów, którzy prawdopodobnie podpisali cyrograf."
+    },
+    {
+      "start": 4560.39,
+      "end": 4565.53,
+      "text": "Na tym na szczęście kreatywność grupy się nie kończy. Ciekawie to wszystko brzmi."
+    },
+    {
+      "start": 4566.87,
+      "end": 4574.23,
+      "text": "Slash, Doom, Metal, połączenie tych dwóch żywiołów to w Polsce zjawisko wciąż stosunkowo rzadkie."
+    },
+    {
+      "start": 4575.15,
+      "end": 4582.31,
+      "text": "A tu mamy w dodatku do czynienia z taką ciekawostką, że gra dwóch basistów."
+    },
+    {
+      "start": 4583.11,
+      "end": 4596.17,
+      "text": "Może się to wydawać konceptem dziwnym, na pewno nie służy selektywności brzmienia, choć z drugiej strony, jak ktoś dąży do selektywności, to się nie zabiera za granie Slash Metalu."
+    },
+    {
+      "start": 4596.91,
+      "end": 4611.65,
+      "text": "Puszczę Wam utwór tytułowy z płyty Diabeł, bo jest fajny, a w dodatku zawiera sample z Diabła, kontrowersyjnego filmu Andrzeja Żuławskiego, przez co jest jeszcze fajniejszy."
+    },
+    {
+      "start": 4843.62,
+      "end": 4846.62,
+      "text": "pomimo, że nie widzi żadnego kutemu powodu."
+    },
+    {
+      "start": 4847.46,
+      "end": 4850.2,
+      "text": "Po prostu dlatego, że w tym zmieszaniu"
+    },
+    {
+      "start": 4850.2,
+      "end": 4854.6,
+      "text": "piękna brzydoty, cnoty i podłości,"
+    },
+    {
+      "start": 4854.74,
+      "end": 4857.28,
+      "text": "w którym ma znaleźć samego siebie,"
+    },
+    {
+      "start": 4858.28,
+      "end": 4861.42,
+      "text": "musi chcieć pozostać po stronie szlachetności"
+    },
+    {
+      "start": 4861.42,
+      "end": 4863.02,
+      "text": "i dobra."
+    },
+    {
+      "start": 4863.8,
+      "end": 4866.06,
+      "text": "Piątą płytę wydał zespół Narenwind,"
+    },
+    {
+      "start": 4866.8,
+      "end": 4870.72,
+      "text": "polski duet w połowie zakorzeniony w Norwegii."
+    },
+    {
+      "start": 4871.14,
+      "end": 4875.78,
+      "text": "Bardzo ciekawy to zespół z zupełnie osobnym lotem,"
+    },
+    {
+      "start": 4876.32,
+      "end": 4878.14,
+      "text": "niby wywodzący się z black metalu,"
+    },
+    {
+      "start": 4878.22,
+      "end": 4882.64,
+      "text": "ale poszukujący często w bardzo odległych muzycznych krainach."
+    },
+    {
+      "start": 4883.2,
+      "end": 4885.04,
+      "text": "Nie tylko muzycznych zresztą,"
+    },
+    {
+      "start": 4885.12,
+      "end": 4888.9,
+      "text": "bo na gorzkich plonach, tak się nazywa album,"
+    },
+    {
+      "start": 4889.42,
+      "end": 4892.52,
+      "text": "usłyszycie ciekawe interpretacje polskiej poezji,"
+    },
+    {
+      "start": 4892.6,
+      "end": 4897.32,
+      "text": "w tym takiej, której z black metalem raczej nie kojarzycie."
+    },
+    {
+      "start": 4897.52,
+      "end": 4900.48,
+      "text": "Weźmy na przykład Halinę Poświatowską"
+    },
+    {
+      "start": 4900.48,
+      "end": 4903.84,
+      "text": "i jej tak bardzo celną koniugację."
+    },
+    {
+      "start": 4903.84,
+      "end": 4905.92,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5135.64,
+      "end": 5136.7,
+      "text": "Dobre, prawda?"
+    },
+    {
+      "start": 5137.38,
+      "end": 5140.44,
+      "text": "To może jeszcze jedna piosenka z nowej płyty Naren Wind."
+    },
+    {
+      "start": 5141.12,
+      "end": 5145.06,
+      "text": "Doskonale słuchaczom trójki znana, choć nie z tej wersji."
+    },
+    {
+      "start": 5146.12,
+      "end": 5148.22,
+      "text": "Dużo puszczam w tej audycji black metalu,"
+    },
+    {
+      "start": 5148.64,
+      "end": 5152.8,
+      "text": "ale takiego bluźnierstwa chyba jeszcze nie było."
+    },
+    {
+      "start": 5152.8,
+      "end": 5154.88,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5267.68,
+      "end": 5287.5,
+      "text": "To już zostańmy przy różnych odcieniach czerni do końca. Der Wegeiner Freiheit to po naszemu droga wolności. Tak nazywa się zespół z Bawarii, którego szósty album Inern ukazał się w połowie września."
+    },
+    {
+      "start": 5287.5,
+      "end": 5306.16,
+      "text": "Der Wegeiner Freiheit niby potrafią grać naprawdę w ściekły black metal i to za chwilę usłyszycie, ale też często rozpuszczają go w długich, melancholijnych, postmetalowych pasażach, czasem wręcz zbliżając się do ambientowej jednostajności."
+    },
+    {
+      "start": 5307.46,
+      "end": 5311.7,
+      "text": "Utwór nazywa się Ion i to wszystko w sobie ma."
+    },
+    {
+      "start": 5738.45,
+      "end": 5743.79,
+      "text": "Zupełnie inne podejście do black metalu ma norweski Jörgsiuk."
+    },
+    {
+      "start": 5744.47,
+      "end": 5750.01,
+      "text": "Tu nie chodzi o budowanie nastroju, ale o to, by słuchacza posiekać na plasterki."
+    },
+    {
+      "start": 5750.63,
+      "end": 5754.45,
+      "text": "Nie chodzi o finezję, lecz o skuteczność."
+    },
+    {
+      "start": 5755.05,
+      "end": 5760.05,
+      "text": "Chociaż Jörgsiuk dopiero wydał swoją debiutancką płytę zatytułowaną"
+    },
+    {
+      "start": 5760.05,
+      "end": 5766.41,
+      "text": "Nagled Till Leavet, tworzą go doświadczeni, muzycy znani,"
+    },
+    {
+      "start": 5766.41,
+      "end": 5770.89,
+      "text": "m.in. z Koldbrand, Diewel czy Urek Hall."
+    },
+    {
+      "start": 5772.05,
+      "end": 5776.01,
+      "text": "A więc może nie ze składów z norweskiego pierwszego szeregu,"
+    },
+    {
+      "start": 5776.65,
+      "end": 5780.69,
+      "text": "ale to przecież wszystko znakomite, doświadczone orkiestry."
+    },
+    {
+      "start": 5781.43,
+      "end": 5787.27,
+      "text": "Na płycie Jörgsiuk zatem brzmi bardzo dobrze, bardzo sprawnie,"
+    },
+    {
+      "start": 5787.83,
+      "end": 5791.37,
+      "text": "ale pochwalę się, że widziałem niedawno ich na żywo"
+    },
+    {
+      "start": 5791.37,
+      "end": 5795.63,
+      "text": "i muszę powiedzieć, że jest jeszcze lepiej, bardziej brutalnie"
+    },
+    {
+      "start": 5795.63,
+      "end": 5799.91,
+      "text": "niż w wersji studyjnej, bardziej bezkompromisowo."
+    },
+    {
+      "start": 5800.63,
+      "end": 5802.05,
+      "text": "Będą z nich ludzie."
+    },
+    {
+      "start": 5802.05,
+      "end": 5803.93,
+      "text": "Muzyka"
+    },
+    {
+      "start": 6008,
+      "end": 6027.24,
+      "text": "Była jesień 2020 roku, kiedy pewien Jorgen przez przyjaciół zwany Jurgiem spacerował po lesie i nagle wpadł na pomysł, że powinien założyć nowy zespół opowiadający o pięknie skandynawskiej natury."
+    },
+    {
+      "start": 6027.96,
+      "end": 6037.96,
+      "text": "Jorgnął się Jurg, że fajnie byłoby pograć coś, co jest mroczne i zarazem melodyjne, chwilami może nawet ckliwe."
+    },
+    {
+      "start": 6038.94,
+      "end": 6051.14,
+      "text": "No dobrze, tu trochę nadinterpretuję. Do tej ckliwości pewnie by się Jurg nawet sam przed sobą nie przyznał, ale ona tu jest wyraźnie."
+    },
+    {
+      "start": 6051.14,
+      "end": 6062.74,
+      "text": "Ją słyszę i wy usłyszycie za chwilę. Zespół nazywa się Jord i właśnie wydał czwartą płytę zatytułowaną Emelan Traden."
+    },
+    {
+      "start": 6063.5,
+      "end": 6068.54,
+      "text": "Czwartą płytę. Po pięciu latach istnienia gratuluję płodności."
+    },
+    {
+      "start": 6069.54,
+      "end": 6074.34,
+      "text": "A czy ilość nie szkodzi tutaj jakości? Przekonajmy się."
+    },
+    {
+      "start": 6074.44,
+      "end": 6076.18,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 6395.79,
+      "end": 6409.97,
+      "text": "Wytwórnia poleca zespół Yord, m.in. fanom Wintersorg, a tak się akurat miło składa, że Wintersorg też wydaje we wrześniu nową płytę, już za chwileczkę, już za momencik."
+    },
+    {
+      "start": 6410.29,
+      "end": 6421.21,
+      "text": "Będziecie mogli więc sobie Państwo porównać i we własnym serduszku rozstrzygnąć, czy to grupy pokrewne, czy może znają się tylko z widzenia."
+    },
+    {
+      "start": 6422.09,
+      "end": 6434.33,
+      "text": "Wintersorg to weterani, a właściwie weteran, bo rządzi tu i dzieli jak despota, jakiś Andreas Pedlung, Szwed, a więc potomek wikingów."
+    },
+    {
+      "start": 6434.33,
+      "end": 6442.75,
+      "text": "Zatem i zapożyczenia od Bathory i nawiązania do nordyckiego folku są tu jak najbardziej uzasadnione."
+    },
+    {
+      "start": 6443.61,
+      "end": 6452.55,
+      "text": "Płyta nazywa się Wattenkrafterna Spell, a więc podobno coś o siłach ukrytych w wodzie."
+    },
+    {
+      "start": 6453.45,
+      "end": 6462.75,
+      "text": "Na okładce mamy rzekę płynącą przez pokryty śniegiem las, więc wszystko jasne i wszystko bardzo spójne z muzyką."
+    },
+    {
+      "start": 6463.75,
+      "end": 6472.89,
+      "text": "A zatem Wintersorg przypomni Wam za chwilę, że zima idzie, a ja przypominam, że słyszymy się już za tydzień."
+    },
+    {
+      "start": 6473.35,
+      "end": 6473.97,
+      "text": "Dobranoc."
+    },
+    {
+      "start": 6473.97,
+      "end": 6476.03,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 22,
+    "transcribedAudioSec": 1505.06,
+    "segmentCount": 182,
+    "characterCount": 15752
+  },
+  "sourceId": "2025-09-24-przeglad-wrzesniowych-nowosci-ciezarowych"
+}
