@@ -71,6 +71,14 @@ const context = await browser.newContext({
 });
 const page = await context.newPage();
 
+// WebKit na Windowsie nie kończy oczekiwania na fonty (document.fonts nigdy nie
+// przechodzi w "loaded"), a Playwright czeka na to przed każdym zrzutem. Blokujemy
+// pliki fontów tylko w tej konfiguracji — zrzut powstaje na fontach systemowych.
+if (BROWSER === 'webkit' && process.platform === 'win32') {
+  await page.route('**/*.woff2', (route) => route.abort());
+  console.warn('⚠️  webkit na Windowsie: fonty zablokowane, zrzut na fontach systemowych');
+}
+
 await page.goto(`${BASE}${PAGE}`, { waitUntil: 'load', timeout: 60_000 });
 
 // Fonty są lokalne, ale WebKit potrafi czekać na nie dłużej niż na samo malowanie;
