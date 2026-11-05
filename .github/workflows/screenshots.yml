@@ -57,13 +57,9 @@ jobs:
           # systemowe ("/odcinki" → "C:/Program Files/Git/odcinki") i psuło adres URL.
           MSYS2_ENV_CONV_EXCL: PAGE
           MSYS_NO_PATHCONV: '1'
-        run: |
-          npx --yes http-server dist -p 4321 --silent &
-          for i in $(seq 1 30); do
-            curl -sf http://127.0.0.1:4321/ >/dev/null && break
-            sleep 1
-          done
-          node scripts/screenshots.mjs
+        # Serwer statyczny startuje w scripts/screenshots.mjs; wcześniejsze tło powłoki
+        # na Windowsie kończyło się "Could not connect to server".
+        run: node scripts/screenshots.mjs
 
       - uses: actions/upload-artifact@v4
         with:

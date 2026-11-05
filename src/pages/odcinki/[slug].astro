@@ -183,13 +183,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
       ) : entry.titleKind === 'technical' ? (
         <p class="title-note">Tytuł techniczny z katalogu — audycja nie ma własnego tytułu.</p>
       ) : null}
-      {episode && episode.tags.length > 0 && (
-        <ul class="tags" aria-label="Tagi audycji">
-          {episode.tags.map((tag) => (
-            <li class="tag">{tag.label}</li>
-          ))}
-        </ul>
-      )}
       <div class="ep-head__meta">
         {episode && (
           <>
@@ -462,6 +455,14 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               {entry.sourceUrl ? 'Otwórz odcinek ↗' : 'Otwórz audycję ↗'}
             </a>
           </section>
+
+          {episode.tags.length > 0 && (
+            <p class="side__tags" aria-label="Tagi audycji">
+              {episode.tags.map((tag, index) => (
+                <>{index > 0 ? ' · ' : ''}{tag.label}</>
+              ))}
+            </p>
+          )}
         </aside>
       </div>
     ) : (
