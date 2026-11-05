@@ -1,0 +1,1100 @@
+{
+  "version": 1,
+  "episodeId": "26acd5a7-6dbe-4ebf-b9f6-c3b0eb063d6f",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 110004491,
+  "fileMtimeMs": 1789150667461.4136,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 13.56
+    },
+    {
+      "index": 1,
+      "start": 168.39,
+      "end": 309.34
+    },
+    {
+      "index": 2,
+      "start": 565,
+      "end": 663.45
+    },
+    {
+      "index": 3,
+      "start": 930.37,
+      "end": 1021.63
+    },
+    {
+      "index": 4,
+      "start": 1260.96,
+      "end": 1301.4
+    },
+    {
+      "index": 5,
+      "start": 1486.82,
+      "end": 1570.72
+    },
+    {
+      "index": 6,
+      "start": 1611.78,
+      "end": 1616.35
+    },
+    {
+      "index": 7,
+      "start": 1636.45,
+      "end": 1639.84
+    },
+    {
+      "index": 8,
+      "start": 1657.25,
+      "end": 1669.05
+    },
+    {
+      "index": 9,
+      "start": 1767.49,
+      "end": 1828.73
+    },
+    {
+      "index": 10,
+      "start": 1967.04,
+      "end": 2076.19
+    },
+    {
+      "index": 11,
+      "start": 2263.14,
+      "end": 2312.89
+    },
+    {
+      "index": 12,
+      "start": 2583.62,
+      "end": 2707.71
+    },
+    {
+      "index": 13,
+      "start": 2940.45,
+      "end": 3049.63
+    },
+    {
+      "index": 14,
+      "start": 3308.42,
+      "end": 3456.64
+    },
+    {
+      "index": 15,
+      "start": 3887.59,
+      "end": 3958.78
+    },
+    {
+      "index": 16,
+      "start": 4078.44,
+      "end": 4163.58
+    },
+    {
+      "index": 17,
+      "start": 4576.9,
+      "end": 4711.42
+    },
+    {
+      "index": 18,
+      "start": 5188.13,
+      "end": 5319.45
+    },
+    {
+      "index": 19,
+      "start": 5618.88,
+      "end": 5705.44
+    },
+    {
+      "index": 20,
+      "start": 5945.25,
+      "end": 5978.36
+    },
+    {
+      "index": 21,
+      "start": 6322.15,
+      "end": 6379.29
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.46,
+      "text": "Trójka"
+    },
+    {
+      "start": 1.46,
+      "end": 5.12,
+      "text": "Program Trzeci Polskiego Radia"
+    },
+    {
+      "start": 5.12,
+      "end": 11.26,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 11.26,
+      "end": 13.56,
+      "text": "Muzyka"
+    },
+    {
+      "start": 169.15,
+      "end": 173.65,
+      "text": "Dobry wieczór Państwu. Ciężko na sercu. Czas zacząć."
+    },
+    {
+      "start": 174.33,
+      "end": 176.85,
+      "text": "Kłania się Jarek Szubrycht, prowadzący audycję."
+    },
+    {
+      "start": 177.57,
+      "end": 181.67,
+      "text": "Pozdrawia Was też Mariusz Owczarek, który jest jej wydawcą."
+    },
+    {
+      "start": 182.75,
+      "end": 188.35,
+      "text": "Powitał nas Rob Zombie, który w lutym powrócił do gry płytą The Great Satan."
+    },
+    {
+      "start": 189.31,
+      "end": 194.07,
+      "text": "Niby nic nowego, zombie jak zombie, ale właśnie dlatego to fajne."
+    },
+    {
+      "start": 194.47,
+      "end": 201.45,
+      "text": "Facet ma od zawsze swój niepodrabialny styl, wykształcony jeszcze w czasach grupy White Zombie."
+    },
+    {
+      "start": 202.29,
+      "end": 210.67,
+      "text": "Rob Zombie, jak wiadomo, nie jest tylko muzykiem, a ostatnio chyba nawet jest mniej muzykiem niż reżyserem."
+    },
+    {
+      "start": 211.31,
+      "end": 216.07,
+      "text": "I trzeba mu przyznać, że ma rękę do horrorów dla zwyrodnialców."
+    },
+    {
+      "start": 216.63,
+      "end": 222.01,
+      "text": "Kto nie odwracał głowy od domu tysiąca trupów, ten nie zna życia."
+    },
+    {
+      "start": 222.31,
+      "end": 228.95,
+      "text": "Dzisiaj w audycji mamy przegląd najciekawszych nowych płyt lutego, więc proszę zapiąć pasy."
+    },
+    {
+      "start": 229.13,
+      "end": 236.65,
+      "text": "Szykuje się wyboista jazda pomiędzy gatunkami, bo sporo fajnych rzeczy się ukazało."
+    },
+    {
+      "start": 236.99,
+      "end": 243.63,
+      "text": "A skoro mowa o lawirowaniu pomiędzy gatunkami, uwielbiam amerykańską wytwórnię Rileps"
+    },
+    {
+      "start": 243.63,
+      "end": 250.13,
+      "text": "za wspaniałe i często przedziwne odkrycia w obszarze szeroko pojmowanej ekstremy"
+    },
+    {
+      "start": 250.13,
+      "end": 255.79,
+      "text": "na zderzeniu death metalu, grindu, hardcora i noizu."
+    },
+    {
+      "start": 256.45,
+      "end": 263.17,
+      "text": "Uwielbiam ich też za elektroniczne dziwactwa, bo zawsze wynajdowali rzeczy smakowite."
+    },
+    {
+      "start": 263.95,
+      "end": 269.05,
+      "text": "Ale jeśli chodzi o mniej radykalne brzmienia, to już różnie z tym bywało."
+    },
+    {
+      "start": 269.59,
+      "end": 276.33,
+      "text": "Co powiedziawszy, muszę ich pochwalić za podpisanie kontraktu z grupą Final Gasp z Bostonu,"
+    },
+    {
+      "start": 276.33,
+      "end": 278.25,
+      "text": "bo to jest dobre."
+    },
+    {
+      "start": 278.89,
+      "end": 286.59,
+      "text": "Zespół gra post-panka z gotyckim sznytem, horror rocka, czy jak tam sobie to chcecie nazwać."
+    },
+    {
+      "start": 286.71,
+      "end": 295.13,
+      "text": "W każdym razie piosenki całkiem chwytliwe, ale zarazem ciągnące za sobą długą smugę cienia"
+    },
+    {
+      "start": 295.13,
+      "end": 298.09,
+      "text": "i sporo ciężaru w brzmieniu."
+    },
+    {
+      "start": 298.09,
+      "end": 307.69,
+      "text": "New Day Symptoms, drugi album Final Gasp, ukaże się za kilka dni i znajdziecie na nim takie oto rzeczy."
+    },
+    {
+      "start": 308.89,
+      "end": 309.31,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 565,
+      "end": 579.46,
+      "text": "Zwraca uwagę nazwa kolejnej grupy, Ponte del Diavolo i bardzo podoba mi się tytuł piosenki, której za chwilę wysłuchacie, czyli Duch, Krew, Trucizna, Ferment."
+    },
+    {
+      "start": 580.08,
+      "end": 591.38,
+      "text": "Jeszcze z wykrzyknikiem na końcu. Cała ta muzyka grana jest z wykrzyknikiem. Słychać, że zespołowi bardzo zależy, że się z całych sił starają."
+    },
+    {
+      "start": 592.2,
+      "end": 600.92,
+      "text": "Na dłuższą metę może nawet być to trochę męczące, ale w mniejszych dawkach Ponte del Diavolo jak najbardziej działa."
+    },
+    {
+      "start": 601.7,
+      "end": 607.86,
+      "text": "Pochodzą z Włoch i w połowie miesiąca wydali swój drugi album zatytułowany The Venom Natura."
+    },
+    {
+      "start": 608.6,
+      "end": 618.98,
+      "text": "Mówią, że grają pociągniętego, blekowym lakierem postpanka. Niech im będzie. Rzeczywiście nie jest to metal w najczystszej postaci,"
+    },
+    {
+      "start": 619.12,
+      "end": 627.84,
+      "text": "ale zarazem jestem przekonany, że właśnie w świecie metalu grupa znajdzie sobie już, właściwie znajduje publiczność,"
+    },
+    {
+      "start": 628.62,
+      "end": 634.42,
+      "text": "choćby tę, która hołubi mesę, dulczy, arabrot."
+    },
+    {
+      "start": 635.02,
+      "end": 641.76,
+      "text": "Również dlatego, że cała otoczka, wizerunek i teksty Ponte del Diavolo są po metalowemu,"
+    },
+    {
+      "start": 641.84,
+      "end": 647.4,
+      "text": "diaboliczne i pikantne zarazem i to może się podobać."
+    },
+    {
+      "start": 648.04,
+      "end": 652.62,
+      "text": "Mnie tu, w tym utworze chociażby biorą przede wszystkim dęciaki,"
+    },
+    {
+      "start": 652.76,
+      "end": 657.96,
+      "text": "skontrastowane z niemal black metalowym jazgotem gitary."
+    },
+    {
+      "start": 658.28,
+      "end": 660.48,
+      "text": "Takie lubię i chciałbym tego więcej."
+    },
+    {
+      "start": 930.37,
+      "end": 957.67,
+      "text": "Najmniej metalowa rzecz w dzisiejszym zestawie i zarazem jedna z najciekawszych to próbka debiutanckiego albumu duetu Jagong. Płyta zatytułowana Gomi Kuzu Khan zostanie wypuszczona w świat już w piątek przez Plagic Records i nazwa tej kultowej już w pewnych kręgach wytwórni to tylko jeden z wielu powodów by się tym wydawnictwem zainteresować."
+    },
+    {
+      "start": 957.67,
+      "end": 984.97,
+      "text": "Jagong jest super grupą czy super duetem dla wtajemniczonych i tychże na pewno ucieszy, że spotkali się pod jednym szyldem Dach Majuri Cipola z Mono i Reto Mader z Sam of R. Ten pierwszy odpowiedzialny jest za warstwę"
+    },
+    {
+      "start": 984.97,
+      "end": 994.11,
+      "text": "rytmiczną materiału. Ten drugi robi wszystko inne przy pomocy elektroniki głównie, ale też gra na basie czy gitarze."
+    },
+    {
+      "start": 994.75,
+      "end": 1008.05,
+      "text": "Spotkali się, by wprowadzić siebie, a następnie słuchaczy w trans wywiedziony z krautroka, a jednak odmienny, pociągnięty w przyszłość na nieznane terytoria."
+    },
+    {
+      "start": 1008.87,
+      "end": 1017.17,
+      "text": "Trudno się tę muzykę opisuje, za to wspaniale się jej słucha, co już za kilka sekund pozwolę sobie udowodnić."
+    },
+    {
+      "start": 1017.27,
+      "end": 1019.15,
+      "text": "Przed państwem Jagong."
+    },
+    {
+      "start": 1020.75,
+      "end": 1021.63,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1261.96,
+      "end": 1279.52,
+      "text": "Wracamy do ciężarów. W nowoczesnym wydaniu The Veer Union przybywają z dalekiej Kanady, by płytą Reinvention przypomnieć nam, że w obszarze nowoczesnego metalcore'a mają nie tylko aspiracje, ale i spore możliwości."
+    },
+    {
+      "start": 1279.52,
+      "end": 1299.54,
+      "text": "Ich nowy album wydała wytwórnia Horizon Empire. Odpowiednie miejsce dla takich dźwięków i jestem pewien, że fani na przykład Bring Me The Horizon, szczególnie ci, co uważają, że Brytyjczycy za bardzo zbliżyli się ostatnio do mainstreamu, znajdą w muzyce The Veer Union ukojenie."
+    },
+    {
+      "start": 1487.66,
+      "end": 1491.76,
+      "text": "Ciekawą propozycję ma dla nas ukraińska grupa Space of Variations."
+    },
+    {
+      "start": 1492.46,
+      "end": 1500.48,
+      "text": "Jak kiedyś Vader i chwilę później Behemoth torowali drogę polskim ekstremalnym zespołom do kontraktów płytowych poza granicami kraju,"
+    },
+    {
+      "start": 1501.34,
+      "end": 1509.98,
+      "text": "tak sukces Ginger musiał pociągnąć za sobą zainteresowanie różnych ważniaków z dalekiego świata sceną ukraińską."
+    },
+    {
+      "start": 1510.4,
+      "end": 1516.46,
+      "text": "Space of Variations jest zespołem wykonującym współczesną metalkorową muzykę."
+    },
+    {
+      "start": 1516.82,
+      "end": 1522.22,
+      "text": "Czasem zaawansowaną technicznie i brutalną. Wtedy bardzo mi się podobają."
+    },
+    {
+      "start": 1522.86,
+      "end": 1530.42,
+      "text": "To znów trochę mazgajowatą, mistrzącą się do mainstreamu i wtedy to już niespecjalnie mnie bierze."
+    },
+    {
+      "start": 1531.26,
+      "end": 1538.84,
+      "text": "Myślę jednak, że choć na tej scenie teraz jest bardzo ciasno, Ukraińcy mogą wygrać po pierwsze jakością,"
+    },
+    {
+      "start": 1538.84,
+      "end": 1546.14,
+      "text": "ale przede wszystkim nawiązaniami do swojej kultury ludowej i tekstami częściowo śpiewanymi."
+    },
+    {
+      "start": 1546.82,
+      "end": 1556.4,
+      "text": "W ojczystym ukraińskim języku. Brzmi to egzotycznie, ale zarazem naprawdę dobrze, więc chyba warto iść w tę stronę."
+    },
+    {
+      "start": 1557.1,
+      "end": 1565.24,
+      "text": "Nowa płyta Space of Variations nosi tytuł Poisoned Art, a ja proponuję, by ci, co jeszcze materiału nie znają,"
+    },
+    {
+      "start": 1565.76,
+      "end": 1569.08,
+      "text": "zaczęli swoją z nim przygodę od utworu Tribe."
+    },
+    {
+      "start": 1569.08,
+      "end": 1570.72,
+      "text": "Zdjęcia i montaż"
+    },
+    {
+      "start": 1611.78,
+      "end": 1613.78,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 1636.45,
+      "end": 1639.85,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 1657.25,
+      "end": 1669.05,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 1767.49,
+      "end": 1777.47,
+      "text": "Gdyby ktoś mnie zapytał, czy ja w ogóle tego metalcora lubię, to odpowiedziałbym, że owszem, jeszcze jak, tylko trochę innego."
+    },
+    {
+      "start": 1777.47,
+      "end": 1790.25,
+      "text": "Ten mój metalcore nie rozmienia się na drobne w eurowizyjnych refrenach, nie upycha pomiędzy groźne, potężne riffy synterezatorowych partii wypożyczonych z Linkin Park,"
+    },
+    {
+      "start": 1790.97,
+      "end": 1799.97,
+      "text": "tylko ma ciężar metalu i wściekłość prawdziwego hardcora i zasuwa na pełnych obrotach, zmiatając wszystko, co napotka."
+    },
+    {
+      "start": 1800.23,
+      "end": 1809.71,
+      "text": "Ten mój metalcore nazywa się na przykład Converge i właśnie wydał nowy album zatytułowany Love Is Not Enough."
+    },
+    {
+      "start": 1810.51,
+      "end": 1816.77,
+      "text": "Niby mamy do czynienia z weteranami ze sporym przebiegiem, bo Converge są już na scenie od ponad 30 lat"
+    },
+    {
+      "start": 1816.77,
+      "end": 1826.63,
+      "text": "i Love Is Enough jest ich jedenastą płytą, ale to wciąż poziom dla konkurencji, czyli przede wszystkim dla ich uczniów niedościgniony."
+    },
+    {
+      "start": 1826.63,
+      "end": 1828.73,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1967.04,
+      "end": 1995.46,
+      "text": "X-Hyunt to też legenda ekstremalnego grania i klasa sama w sobie. Przyznaję, że trochę się obawiałem, że Matt Harvey, czyli kreatywna siła tego zespołu, skupił się tak bardzo na udawaniu def w zespole Grusome, za co zresztą jest powszechnie chwalony, że X-Hyunt będzie rdzewiał na bocznicy, ale nie, na szczęście nie, ten pociąg wciąż pędzi."
+    },
+    {
+      "start": 1996.54,
+      "end": 2014.42,
+      "text": "Choć w przypadku tej płyty metafora kolejowa jest niekoniecznie trafiona, bo mamy raczej do czynienia z samochodem, potężnym krążownikiem szos, którym X-Hyunt jadą przez Amerykę, nie zatrzymując się na czerwonym."
+    },
+    {
+      "start": 2014.48,
+      "end": 2030.28,
+      "text": "Nowy album grupy zatytułowany jest Red Asphalt. Tak jest. Chodzi o czerwony asfalt, czerwony od krwi i osoby o słabych nerwach lepiej nie przyglądają się okładce."
+    },
+    {
+      "start": 2030.28,
+      "end": 2046.28,
+      "text": "Mamy do czynienia z płytą koncepcyjną, poświęconą tym wszystkim okropnościom, które mogą nas napotkać za kółkiem, od mrożących krew w żyłach wypadków, po gangi motocyklistów z zombie."
+    },
+    {
+      "start": 2046.28,
+      "end": 2059.9,
+      "text": "X-Hyunt wyszli z założenia, że niebezpieczeństwa związane z motoryzacją idealnie pasują do ich defgrindowego świata i choć to pomysł oryginalny wydaje się zarazem tak oczywisty."
+    },
+    {
+      "start": 2059.9,
+      "end": 2070.12,
+      "text": "Od ryku silnika, popotworny zgrzyt metalu zgniatanego w kolizji i krzyki rannych. Tak, tak, to jest prawdziwy horror."
+    },
+    {
+      "start": 2071.1,
+      "end": 2074.56,
+      "text": "Mniej jestem przekonany do tych zombie na Harleyach."
+    },
+    {
+      "start": 2075.56,
+      "end": 2076.16,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 2263.14,
+      "end": 2283.4,
+      "text": "Slaughter Day jest jednym z tych zespołów, których wytwórnia Testimony Records ma sporo w swoim katalogu, a zatem klasyczny death metal, którego słucha się z przyjemnością, ale o którym pewnie nie będę długo pamiętał, kiedy płyta już wróci na półkę."
+    },
+    {
+      "start": 2283.7,
+      "end": 2299.9,
+      "text": "Slaughter Day pochodzą z Niemiec, ale ich muzyka jest z Ameryki. Wyraźnie nawiązuje do wczesnych nagrań death, do twórczości autopsy. Zadowoleni będą też fani nieodżałowanej brytyjskiej grupy Bolt Thrower."
+    },
+    {
+      "start": 2299.9,
+      "end": 2310.78,
+      "text": "W połowie lutego ukazał się Dread Emperor, szósty duży album Slaughter Day i proponuję Państwu wysłuchanie piosenki tytułowej."
+    },
+    {
+      "start": 2584.48,
+      "end": 2586.62,
+      "text": "Można jeszcze bardziej oldschoolowo?"
+    },
+    {
+      "start": 2586.96,
+      "end": 2589.48,
+      "text": "Oczywiście, że można, czasem nawet trzeba."
+    },
+    {
+      "start": 2590.32,
+      "end": 2594.34,
+      "text": "Kiedy zespół nazywa się Hating Life, to co może grać?"
+    },
+    {
+      "start": 2595.22,
+      "end": 2598.8,
+      "text": "Wtajemniczeni wiedzą, że to tytuł jednego z klasycznych utworów"
+    },
+    {
+      "start": 2598.8,
+      "end": 2603.6,
+      "text": "szwedzkiej grupy Grave, pionierów deathmetalu z północy."
+    },
+    {
+      "start": 2604.16,
+      "end": 2608.44,
+      "text": "A jeśli ktoś miałby wątpliwości lub chciałby wierzyć w przypadki,"
+    },
+    {
+      "start": 2608.44,
+      "end": 2615.1,
+      "text": "i to dodam tylko, że intro otwierające album Hating Life nosi tytuł Into the Grave."
+    },
+    {
+      "start": 2615.82,
+      "end": 2623.4,
+      "text": "Mamy zatem do czynienia z deathmetallem brutalnym, surowym, ciężkim i stuprocentowo klasycznym."
+    },
+    {
+      "start": 2624.24,
+      "end": 2627.4,
+      "text": "Stoi za nim Santi, gitarzysta hiszpańskiej grupy Ataraxie,"
+    },
+    {
+      "start": 2628.12,
+      "end": 2631.66,
+      "text": "który wszystko tu wymyślił, zagrał i nagrał,"
+    },
+    {
+      "start": 2631.66,
+      "end": 2638.3,
+      "text": "sam tylko do dawania odgłosów paszczą namówił Javiego, kolegę z Ataraxie."
+    },
+    {
+      "start": 2639.22,
+      "end": 2644.68,
+      "text": "Debiutancka płyta Hating Life nosi tytuł Revenge from Beyond"
+    },
+    {
+      "start": 2644.68,
+      "end": 2651.66,
+      "text": "i jest skutecznym wehikułem czasu przenoszącym słuchacza do początku lat 90.,"
+    },
+    {
+      "start": 2651.66,
+      "end": 2658.56,
+      "text": "kiedy takie dźwięki zaczęły kruszyć mury piwnic i garaży na całym świecie,"
+    },
+    {
+      "start": 2658.56,
+      "end": 2663.78,
+      "text": "a wszyscy, którzy mieli więcej niż kilkanaście, no może dwadzieścia parę lat,"
+    },
+    {
+      "start": 2664.3,
+      "end": 2667.02,
+      "text": "uciekali przed nimi w popłochu."
+    },
+    {
+      "start": 2667.34,
+      "end": 2669.4,
+      "text": "Proszę nie regulować odbiorników,"
+    },
+    {
+      "start": 2670,
+      "end": 2674.98,
+      "text": "to ma tak parszywie brzmieć właśnie o to w tej muzyce chodzi."
+    },
+    {
+      "start": 2675.12,
+      "end": 2684.9,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2684.9,
+      "end": 2686.56,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2686.56,
+      "end": 2687.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2687.68,
+      "end": 2688.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2688.68,
+      "end": 2689.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2689.68,
+      "end": 2690.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2690.68,
+      "end": 2692.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2692.68,
+      "end": 2694.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2694.68,
+      "end": 2697.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2697.68,
+      "end": 2699.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2699.68,
+      "end": 2701.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2701.68,
+      "end": 2703.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2703.68,
+      "end": 2703.68,
+      "text": "DZIĘKI ZA OBSERWACIE!"
+    },
+    {
+      "start": 2703.68,
+      "end": 2707.72,
+      "text": "Wtf, wtf, wtf, wtf!"
+    },
+    {
+      "start": 2940.81,
+      "end": 2947.81,
+      "text": "In Aeternum nie udają weteranów, oni są starymi wiarusami na froncie ekstremy."
+    },
+    {
+      "start": 2948.57,
+      "end": 2956.01,
+      "text": "Szwedzi pojawili się na scenie na początku lat dziewięćdziesiątych i tutaj ciekawostka, nazywali się Behemoth,"
+    },
+    {
+      "start": 2956.65,
+      "end": 2964.59,
+      "text": "ale w 1994 roku poczuli, że muszą zmienić nazwę, bo innemu Behemothowi szło znacznie lepiej."
+    },
+    {
+      "start": 2964.59,
+      "end": 2974.07,
+      "text": "In Aeternum od początku balansowali pomiędzy black metalowym mrokiem, a death metalową brutalnością,"
+    },
+    {
+      "start": 2974.89,
+      "end": 2978.41,
+      "text": "jak zresztą wielu ich rodaków z tamtego czasu."
+    },
+    {
+      "start": 2979.13,
+      "end": 2982.93,
+      "text": "Wydali cztery płyty, trochę epek, ale nie zrobili wielkiej kariery."
+    },
+    {
+      "start": 2983.85,
+      "end": 2990.01,
+      "text": "Byli raczej jednym z wielu dzielnych żołnierzy z tej armii z północy, która wtedy zalała świat,"
+    },
+    {
+      "start": 2990.01,
+      "end": 2998.39,
+      "text": "niż wyróżniającym się harcownikiem czy nagradzanym różnymi honorami oficerem."
+    },
+    {
+      "start": 2999.15,
+      "end": 3005.15,
+      "text": "In Aeternum milczeli przez ponad dekadę, potem wypuścili epkę i znowu zniknęli,"
+    },
+    {
+      "start": 3005.85,
+      "end": 3009.53,
+      "text": "więc dopiero po ponad dwudziestu latach wracają z kolejną dużą płytą."
+    },
+    {
+      "start": 3010.65,
+      "end": 3013.43,
+      "text": "Jakby nic się nie zmieniło z taką samą muzyką,"
+    },
+    {
+      "start": 3013.43,
+      "end": 3020.09,
+      "text": "może tylko trochę lepiej, bardziej współcześnie wyprodukowaną i z taką samą oprawą."
+    },
+    {
+      "start": 3020.59,
+      "end": 3023.51,
+      "text": "Dla jednych będzie to wada, dla innych zaleta."
+    },
+    {
+      "start": 3024.17,
+      "end": 3030.07,
+      "text": "Ja raczej widzę siebie w tym drugim obozie, bo In Aeternum po prostu robią swoje,"
+    },
+    {
+      "start": 3030.25,
+      "end": 3035.53,
+      "text": "słychać w tym doświadczenie, ale jest też jasny płomień entuzjazmu."
+    },
+    {
+      "start": 3035.53,
+      "end": 3041.09,
+      "text": "i skoro o płomieniach mowa, album nosi tytuł Of Death and Fire"
+    },
+    {
+      "start": 3041.09,
+      "end": 3048.07,
+      "text": "w prosty i zarazem wyczerpujący sposób opisujący jego zawartość."
+    },
+    {
+      "start": 3048.07,
+      "end": 3049.63,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3308.42,
+      "end": 3318.24,
+      "text": "Nie jestem i nie będę zagorzałym fanem, ale mogę to z czystym sumieniem przyznać. In Aeternum robią to dobrze."
+    },
+    {
+      "start": 3319.08,
+      "end": 3332.3,
+      "text": "Natomiast Worm. Nie wiem właściwie co mam powiedzieć. Doskonale rozumiem konwencję, do której zaprasza nas ten zespół nazywający swoją muzykę nekromantycznym Black Doomem."
+    },
+    {
+      "start": 3333.12,
+      "end": 3351.46,
+      "text": "Tłumacząc to z języka pompatycznego na język ziemian, mamy do czynienia z próbą wskrzeszenia symfonicznego, wampirycznego, gotyckiego black metalu, który swoje artystyczne i komercyjne szczyty przeżywał w połowie lat dziewięćdziesiątych, w drugiej połowie."
+    },
+    {
+      "start": 3352.18,
+      "end": 3368.96,
+      "text": "Słyszę więc w Worm zarówno Cradle of Filth, jak i Dymu Borgir, słyszę Greków, ale najbardziej chyba Samael z czasów przejściowych z Blood Ritual, czy jeszcze bardziej Moonspell z tych ich najczarniejszych wcieleń."
+    },
+    {
+      "start": 3369.8,
+      "end": 3383.8,
+      "text": "Słyszę to wszystko, ale nie działa. Bardzo mi przykro. Nie wierzę zespołowi Worm. Może dlatego, że już jestem za stary na te sztuczki, że za dobrze je znam."
+    },
+    {
+      "start": 3383.8,
+      "end": 3401.56,
+      "text": "A może chodzi o to, że muzycy Worm są bardziej biegli technicznie niż wszyscy wymienieni przed chwilą w tamtym czasie, a te zaklęcia, żeby działać wymagają jakiejś dozy prymitywizmu, czy wręcz nieudolności."
+    },
+    {
+      "start": 3402.22,
+      "end": 3414.14,
+      "text": "Tak czy owak zespół rośnie, ich nową płytę zatytułowaną Necro Palace wydała właśnie wytwórnia Century Media i nie będę zaskoczony, jeśli zrobią sporą karierę."
+    },
+    {
+      "start": 3415.2,
+      "end": 3429.64,
+      "text": "Najciekawsze dla mnie jest to, że Worm pochodzą z Florydy, a więc z miejsca, w którym grało się zupełnie inny rodzaj metalu, kiedy Europejczycy wznosili te swoje pałace z lodu."
+    },
+    {
+      "start": 3430.38,
+      "end": 3451.78,
+      "text": "Zagram, więc Worm sami. Ocenicie, czy mam rację, czy też włączył mi się tryb Maruda, bo na przykład wokalista grupy, który przedstawia się jako Phantom Slaughter, uważa, że jeśli tego posłuchacie, to ciemność pożre na zawsze waszą śmiertelną duszę."
+    },
+    {
+      "start": 3452.68,
+      "end": 3453.96,
+      "text": "Chrup, chrup."
+    },
+    {
+      "start": 3455.96,
+      "end": 3456.64,
+      "text": "Chrup."
+    },
+    {
+      "start": 3888.59,
+      "end": 3906.03,
+      "text": "Lead Injector to też jest młodzież, która uprawia artystyczny cosplay, w dodatku rekonstruując czasy jeszcze dawniejsze niż te, za które wziął się Worm, ale choć sam się sobie dziwię, tym akurat wierzę."
+    },
+    {
+      "start": 3906.53,
+      "end": 3925.75,
+      "text": "Włożyli w płytę Witching Attack tyle smarkatego zapału, tyle energii, że nie jestem w stanie tak po prostu machnąć lekceważąco ręką, w dodatku nazywają się fajnie wstrzykiwacz ołowiu, więc już na wejściu poczułem do nich sympatię."
+    },
+    {
+      "start": 3925.75,
+      "end": 3944.47,
+      "text": "Lead Injector pochodzą z Drezna, a na Witching Attack nawiązują do thrashowych pierwocin, do głębokich lat osiemdziesiątych, kiedy dzisiejsi bogowie nie bardzo jeszcze umieli grać, za to bardzo chcieli, a w dodatku wszyscy jak jeden mąż kochali Venom."
+    },
+    {
+      "start": 3944.47,
+      "end": 3957.27,
+      "text": "Jeśli więc ktoś chciałby posmakować dźwięków przypominających debiuty Sodom, Kreatora, Destruction, Voivod czy Slayera, przecież nie zabronię."
+    },
+    {
+      "start": 4079.4,
+      "end": 4096.22,
+      "text": "Mayhem jeździli ostatnio po świecie z multimedialnym muzeum ku własnej czci i takie zabiegi oznaczają często kres drogi twórczej. Potem jest już tylko odcinanie kuponów mayhem symfonicznie, mayhem akustycznie, mayhem duety."
+    },
+    {
+      "start": 4096.22,
+      "end": 4114.66,
+      "text": "Nie tym razem jednak norweska grupa ma dla nas siódmą płytę zatytułowaną dość prosto Liturgy of Death, która może nie jest najjaśniejszym czy tam najciemniejszym punktem ich dyskografii, ale wstydu też nie ma."
+    },
+    {
+      "start": 4114.66,
+      "end": 4143,
+      "text": "To wciąż poziom dla większości zespołów black metalowych po prostu nieosiągalny. Co ciekawe, choć trzon mayhem tworzy niestrudzona sekcja rytmiczna Hellhammer i Necro Butcher, choć Artilla niezmiennie wydobywa ze swojego gardła najpiękniejsze trele, ciężar twórczy spoczywa na gitarzystach, których staż w tym legendarnym zespole jest stosunkowo krótki."
+    },
+    {
+      "start": 4143,
+      "end": 4161.12,
+      "text": "Zarówno Teloch, jak i Gull dołączyli do składu w drugiej dekadzie XXI wieku. Mimo to udaje się zachować charakter zespołu. Ta opowieść nie jest jeszcze skończona i dopisano do niej kolejny ciekawy rozdział."
+    },
+    {
+      "start": 4161.12,
+      "end": 4163.58,
+      "text": "Aaaaah!"
+    },
+    {
+      "start": 4577.74,
+      "end": 4599.62,
+      "text": "Mayhem to zespół, który od lat gra swoje w swojej własnej lidze, zbudowany na krwawej legendzie, ale przecież legitymizowany co najmniej dobrymi kolejnymi wydawnictwami, nie musi przejmować się konkurencją, ale to przecież nie znaczy, że inni Norwedzy Black Metalu nie grają."
+    },
+    {
+      "start": 4600.22,
+      "end": 4628.1,
+      "text": "Grają jeszcze jak, w dodatku niektórzy z nich na mistrzowskim poziomie. Jednym z takich zespołów jest Slagmour, który pojawił się na scenie 20 lat temu i dowodzi, że w tym najsurowszym, najbardziej antyludzkim obliczu norweskiego Black Metalu wciąż są terytoria, w które jeszcze nikt się nie zapuszczał, a jeśli się zapuścił, to być może stamtąd nie wrócił."
+    },
+    {
+      "start": 4628.1,
+      "end": 4651.1,
+      "text": "Swoją drogą, nowa płyta Slagmour zatytułowana Hulder's Ritual nawiązuje do podań ludowych, w których ktoś znikał bez śladu, porwany przez jakieś tajemnicze istoty jesienią tego roku, minionego roku, przepraszam, jesienią 2025, przygotowując grunt pod premierę albumu."
+    },
+    {
+      "start": 4651.1,
+      "end": 4661.1,
+      "text": "Lider Slagmour i jego kolega Snorre z Torn, z legenda sceny norweskiej, zniknęli."
+    },
+    {
+      "start": 4661.1,
+      "end": 4673.22,
+      "text": "Przepadli gdzieś w zalesionych górach Norwegii, inscenizując akcję poszukiwawczą, niepokojąc media i fanów na całym świecie."
+    },
+    {
+      "start": 4674.02,
+      "end": 4685.04,
+      "text": "Z jednej strony to głupie po prostu, ale z drugiej strony niby wszystkie te niepokojące PR-owe sztuczki w Black Metalu przetestowano,"
+    },
+    {
+      "start": 4685.1,
+      "end": 4688.98,
+      "text": "a tu proszę, Norwedzy wciąż potrafią zaskoczyć."
+    },
+    {
+      "start": 4689.68,
+      "end": 4694.74,
+      "text": "Na szczęście za tym wymyślnym i kontrowersyjnym konceptem idzie znakomita muzyka."
+    },
+    {
+      "start": 4694.74,
+      "end": 4704.08,
+      "text": "W utworze Huldergeist, którego za chwilę posłuchamy, usłyszycie gościnnie m.in. Hesta Lidera Toke"
+    },
+    {
+      "start": 4704.08,
+      "end": 4709,
+      "text": "i też będzie to właściwy człowiek na właściwym miejscu."
+    },
+    {
+      "start": 4709,
+      "end": 4711.42,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5188.13,
+      "end": 5195.73,
+      "text": "Wysłuchaliście Slagmaur, a ja nie zniknąłem, tylko dokończę dla Was audycję ciężko na sercu."
+    },
+    {
+      "start": 5196.51,
+      "end": 5204.11,
+      "text": "Przeniesiemy się tym razem na południe Europy i zarazem, jak to kiedyś celniął Slayer w tytule płyty, na południe od nieba."
+    },
+    {
+      "start": 5204.11,
+      "end": 5210.83,
+      "text": "The Magus to projekt, za którym stoi, pewnie nie zgadniecie, pan o pseudonimie Magus."
+    },
+    {
+      "start": 5211.41,
+      "end": 5216.61,
+      "text": "Fanom greckiego black metalu doskonale znany, bo przecież był pionierem tego gatunku."
+    },
+    {
+      "start": 5217.73,
+      "end": 5225.77,
+      "text": "Śmiem twierdzić, że Grecy, którzy wymyślali własną, charakterystyczną i bardzo przekonującą wizję diabelskiej muzyki,"
+    },
+    {
+      "start": 5225.77,
+      "end": 5232.77,
+      "text": "jeszcze przed norweską rewolucją, przegrali walkę o popularność nie z powodów artystycznych,"
+    },
+    {
+      "start": 5233.45,
+      "end": 5239.71,
+      "text": "ale przede wszystkim dlatego, że u nich płonęły tylko słowa i dźwięki."
+    },
+    {
+      "start": 5240.51,
+      "end": 5242.81,
+      "text": "Oczywiście płonęły ogniem piekielnym."
+    },
+    {
+      "start": 5243.53,
+      "end": 5249.57,
+      "text": "Pan Magus zaczynał dawno temu w Rotten Christ, później dał nam m.in. wspaniałą nekromantię."
+    },
+    {
+      "start": 5249.57,
+      "end": 5259.49,
+      "text": "Nekromantię to mój ulubiony black metalowy zespół z Helady, a cztery lata temu nekromantia została złożona do grobu,"
+    },
+    {
+      "start": 5259.61,
+      "end": 5268.61,
+      "text": "bo Magus uznał, że bez naprawdę niestety zmarłego barona Blood kontynuowanie działalności tego zespołu nie ma sensu"
+    },
+    {
+      "start": 5268.61,
+      "end": 5278.71,
+      "text": "i to bardzo szlachetny gest z jego strony, ale też wtedy zaczął pisać dalszy ciąg tej swojej historii jako po prostu The Magus."
+    },
+    {
+      "start": 5279.07,
+      "end": 5280.49,
+      "text": "Ten Magus."
+    },
+    {
+      "start": 5280.65,
+      "end": 5286.65,
+      "text": "I właśnie zaszczycił nas drugim albumem wydanym pod tym szyldem, albumem zatytułowanym Demonosofia."
+    },
+    {
+      "start": 5286.65,
+      "end": 5299.93,
+      "text": "Robi tutaj to, co potrafi najlepiej, wspaniale równoważąc tajemniczą atmosferę starych, okultystycznych horrorów z czystą dźwiękową przemocą."
+    },
+    {
+      "start": 5299.93,
+      "end": 5311.89,
+      "text": "Piosenka, której wysłuchamy nosi matematyczny tytuł The Six in Three is All One, który można przetłumaczyć jako sześciu w trójcy to jednia"
+    },
+    {
+      "start": 5311.89,
+      "end": 5316.61,
+      "text": "i wszystko się zgadza, dla mnie matematyka to czarna magia."
+    },
+    {
+      "start": 5318.61,
+      "end": 5319.45,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5618.88,
+      "end": 5636.96,
+      "text": "Belgowie z Gandawy po debiucie płytowym w Century Media, wydanym kilka lat temu, powrócili do Undergroundu i z wydanej w tym miesiącu epki zatytułowanej A Taunt in Metamorphosis wynika, że tu właśnie jest ich miejsce."
+    },
+    {
+      "start": 5637.44,
+      "end": 5656.24,
+      "text": "Nazywają się Predatory Void i są jednym z tych zespołów, które wszystko robią dobrze, znakomicie łącząc w tym przypadku takie żywioły jak Sludge, Doom i Black Metal, ale nie wiedzieć czemu nie przekłada się to na sukces, nie ma nawet chwilowej na nich mody."
+    },
+    {
+      "start": 5656.42,
+      "end": 5665.02,
+      "text": "Nie mówi się, że Predatory Void to będzie następna duża rzecz, a przecież mogłoby się tak mówić."
+    },
+    {
+      "start": 5665.8,
+      "end": 5680.84,
+      "text": "Tematem tej ich metamorfozy jest mierzenie się z tym wszystkim, co w nas samych paskudne, trudne, mroczne, o czym wolelibyśmy nie pamiętać, do czego wolelibyśmy się nie przyznawać."
+    },
+    {
+      "start": 5680.84,
+      "end": 5689.2,
+      "text": "Taka trochę autoterapia za pomocą brutalnych, ale nie brzydkich dźwięków, w dodatku ich własnych."
+    },
+    {
+      "start": 5689.88,
+      "end": 5698.24,
+      "text": "To nie jest kolejna kopia jakiegoś wielkiego, popularnego zespołu, ale oryginalna wypowiedź artystyczna."
+    },
+    {
+      "start": 5698.48,
+      "end": 5702.48,
+      "text": "No i może właśnie dlatego Predatory Void mają pod górkę."
+    },
+    {
+      "start": 5704.56,
+      "end": 5705.44,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5945.25,
+      "end": 5953.83,
+      "text": "Koskrad. Chyba tylko Irlandczykom może się wydawać, że to nazwa łatwa do wymówienia i zapamiętania. Koskrad."
+    },
+    {
+      "start": 5953.83,
+      "end": 5976.83,
+      "text": "Warto się jednak wysilić i jednak zapamiętać, bo album Carving the Coastway to the Other World w przekonujący sposób kreśli przed nami obraz pełnej przemocy zamieszkłej przeszłości celtyckiej Irlandii, która ogniem i mieczem komunikowała się z sąsiednimi plemionami."
+    },
+    {
+      "start": 6322.97,
+      "end": 6340.07,
+      "text": "Pozostańmy już do końca audycji w tamtej części świata. Grupa Domain pochodzi z Irlandii Północnej i swój debiutancki album zatytułowała w doskonałym bezruchu. Imperfect Stillness."
+    },
+    {
+      "start": 6340.99,
+      "end": 6370.61,
+      "text": "Ładnie, ale oczywiście metaforycznie, bo takiej zupełnej ciszy i całkowitego spokoju jednak się tu nie spodziewajcie. Nasłuchujcie za to black metalu, postmetalu, black gaze'u i takich tam, a więc cierpliwego budowania klimatu, raczej wprowadzania słuchacza w stan bliski hipnozie niż ekscytowania go porywającymi riffami."
+    },
+    {
+      "start": 6370.61,
+      "end": 6377.25,
+      "text": "W sam raz na zakończenie tego miłego, wspólnego wieczoru. Prawda? Dobranoc Państwu."
+    },
+    {
+      "start": 6377.25,
+      "end": 6379.29,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 22,
+    "transcribedAudioSec": 1688.93,
+    "segmentCount": 194,
+    "characterCount": 19207
+  },
+  "sourceId": "2026-02-25-przeglad-najciekawszych-nowych-plyt-z-ciezkim-brzmieniem"
+}
