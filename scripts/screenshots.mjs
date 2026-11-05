@@ -38,6 +38,13 @@ const engines = { chromium, firefox, webkit };
 const engine = engines[BROWSER];
 if (!engine) throw new Error(`unknown BROWSER=${BROWSER}`);
 
+// WebKit na Windowsie nie kończy oczekiwania na fonty (document.fonts nigdy nie
+// przechodzi w "loaded"), a Playwright czeka na to przed zrzutem — strona wisi.
+// W tej jednej konfiguracji serwujemy CSS bez @font-face, więc zrzut powstaje na
+// fontach systemowych. Blokowanie plików przez page.route zawieszało page.goto.
+const stripFonts = BROWSER === 'webkit' && process.platform === 'win32';
+if (stripFonts) console.warn('⚠️  webkit na Windowsie: CSS bez @font-face, zrzut na fontach systemowych');
+
 const server = createServer(async (request, response) => {
   const pathname = decodeURIComponent(new URL(request.url ?? '/', 'http://127.0.0.1').pathname);
   let target = join(DIST, normalize(pathname));
@@ -48,8 +55,12 @@ const server = createServer(async (request, response) => {
   try {
     const info = await stat(target);
     if (info.isDirectory()) target = join(target, 'index.html');
-    const body = await readFile(target);
-    response.writeHead(200, { 'Content-Type': MIME[extname(target)] ?? 'application/octet-stream' });
+    let body = await readFile(target);
+    const type = MIME[extname(target)] ?? 'application/octet-stream';
+    if (stripFonts && extname(target) === '.css') {
+      body = Buffer.from(body.toString('utf8').replace(/@font-face\s*\{[^}]*\}/g, ''), 'utf8');
+    }
+    response.writeHead(200, { 'Content-Type': type });
     response.end(body);
   } catch {
     response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }).end('not found');
@@ -70,14 +81,6 @@ const context = await browser.newContext({
   locale: 'pl-PL',
 });
 const page = await context.newPage();
-
-// WebKit na Windowsie nie kończy oczekiwania na fonty (document.fonts nigdy nie
-// przechodzi w "loaded"), a Playwright czeka na to przed każdym zrzutem. Blokujemy
-// pliki fontów tylko w tej konfiguracji — zrzut powstaje na fontach systemowych.
-if (BROWSER === 'webkit' && process.platform === 'win32') {
-  await page.route('**/*.woff2', (route) => route.abort());
-  console.warn('⚠️  webkit na Windowsie: fonty zablokowane, zrzut na fontach systemowych');
-}
 
 await page.goto(`${BASE}${PAGE}`, { waitUntil: 'load', timeout: 60_000 });
 
