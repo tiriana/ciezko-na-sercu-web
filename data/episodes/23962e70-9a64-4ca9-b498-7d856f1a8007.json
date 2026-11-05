@@ -3,20 +3,72 @@
   "id": "23962e70-9a64-4ca9-b498-7d856f1a8007",
   "analyzedAt": "2026-11-05",
   "durationSec": 6800,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek zbudowany wokół motywu szkoły i nauczania: metalowe kapele i albumy ułożone jak lekcje — od pierwszych kroków w gatunku, przez historię, po „lekcje bólu”. Punktem wyjścia są kasety pożyczone od kolegi i pierwsze zespoły, które uczyły słuchania. Dalej mowa o gatekeepingu i „kartkówkach” w środowisku metalowym, o Iron Maiden jako źródle wiedzy historycznej oraz o płytach o tematyce wojennej (m.in. Sabaton, Impaled Nazarene). Osobny wątek to muzyka jako lekcja patologii i cierpienia — Die Art is Murder, Obituary, Exhumed — a także pomysł na własny album o Dionizosie i metafora zespołów jako „profesorów”. W środku odcinka kanonada: utwory z kaset, od których zaczęła się ta edukacja.",
+  "topics": [
+    {
+      "start": 160,
+      "end": 176,
+      "label": "Metalowi nauczyciele i pierwsze kroki w świecie metalu"
+    },
+    {
+      "start": 3155,
+      "end": 3198,
+      "label": "Kanonada: utwory z kaset pożyczonych od kolegi"
+    },
+    {
+      "start": 3606,
+      "end": 3629,
+      "label": "Metalowe lekcje historii i odniesienia do edukacji"
+    },
+    {
+      "start": 4244,
+      "end": 4244,
+      "label": "Kartkówki i gatekeeping w środowisku metalowym"
+    },
+    {
+      "start": 4244,
+      "end": 4349,
+      "label": "Iron Maiden jako źródło wiedzy historycznej"
+    },
+    {
+      "start": 4938,
+      "end": 5035,
+      "label": "Lekcje bólu: Die Art is Murder, Obituary, Exhumed"
+    },
+    {
+      "start": 5767,
+      "end": 5829,
+      "label": "Lekcje patologii i WF na basenie"
+    },
+    {
+      "start": 6800,
+      "end": 6800,
+      "label": "Zespoły o tematyce wojennej: Sabaton, Impaled Nazarene"
+    },
+    {
+      "start": 6800,
+      "end": 6800,
+      "label": "Pomysł na album o Dionizosie"
+    },
+    {
+      "start": 6800,
+      "end": 6800,
+      "label": "Metal i nauczanie: zespoły jako „profesorowie”"
+    }
+  ],
   "tags": [],
   "tracks": [
     {
       "start": 8,
-      "end": 176,
+      "end": 160,
       "durationSec": 152,
       "artist": "Thou",
       "title": "School",
       "album": "Blessings of the Highest Order",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -27,9 +79,10 @@
       "artist": "Venom",
       "title": "Teacher's Pet",
       "album": "Black Metal",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -40,9 +93,10 @@
       "artist": "Van Halen",
       "title": "Hot for Teacher",
       "album": "1984",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -53,9 +107,10 @@
       "artist": "Quiet Riot",
       "title": "Bang Your Head (Metal Health)",
       "album": "Bang Your Head (Metal Health) [Digital 45]",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -79,9 +134,10 @@
       "artist": "Manowar",
       "title": "Carry On",
       "album": "Fighting the World",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -105,9 +161,10 @@
       "artist": "Exodus",
       "title": "A Lesson in Violence",
       "album": "Bonded by Blood",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -126,14 +183,15 @@
     },
     {
       "start": 2927,
-      "end": 3198,
+      "end": 3155,
       "durationSec": 229,
       "artist": "Thy Art Is Murder",
       "title": "Lesson In Pain",
       "album": "Godlike",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -144,22 +202,24 @@
       "artist": "Obituary",
       "title": "A Lesson in Vengeance",
       "album": "Obituary",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 3398,
-      "end": 3629,
+      "end": 3606,
       "durationSec": 204,
       "artist": "Exhumed",
       "title": "A Lesson In Pathology",
       "album": "Slaughtercult",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -178,7 +238,7 @@
     },
     {
       "start": 3949,
-      "end": 4349,
+      "end": 4244,
       "durationSec": 295,
       "artist": "Slayer",
       "title": "South of Heaven",
@@ -196,15 +256,16 @@
       "artist": "Iron Maiden",
       "title": "Aces High ((Live Long Beach Arena) [2015 Remaster])",
       "album": "Live After Death",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 4715,
-      "end": 5035,
+      "end": 4938,
       "durationSec": 223,
       "artist": "Impaled Nazarene",
       "title": "Total War, Winter War",
@@ -230,7 +291,7 @@
     },
     {
       "start": 5467,
-      "end": 5829,
+      "end": 5767,
       "durationSec": 300,
       "artist": "Meshuggah",
       "title": "Rational Gaze",
@@ -248,13 +309,72 @@
       "artist": "Ulver",
       "title": "Silence Teaches You How to Sing",
       "album": "Teachings In Silence",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 174,
+      "text": "To amerykańska grupa Thou, która pięknie zbezcześciła klasyczny numer Nirwany, czyli School."
+    },
+    {
+      "start": 450,
+      "text": "Pierwszy z życzeniami pospieszył brytyjski zespół Venom, a ja oczywiście dołączam z całych sił."
+    },
+    {
+      "start": 469,
+      "text": "W piosence Hot for Teacher zespół Van Halen wyrażał swój entuzjazm wobec nauczycielki i niekoniecznie chodziło o jej sukcesy na niwie edukacyjnej."
+    },
+    {
+      "start": 819,
+      "text": "Pierwszy z utworów wykonywała amerykańska grupa Quiet Riot, w Stanach w obym czasie wielka, u nas ledwie znana."
+    },
+    {
+      "start": 1838,
+      "text": "Na czwartej kasecie, proszę Państwa, 100% metalu w metalu. Jeżeli Wasze metalowe serca biją po właściwej stronie, to od razu będziecie wiedzieć, o co chodzi. Bo inne zespoły grają, a ten zespół zabija."
+    },
+    {
+      "start": 2760,
+      "text": "To była lekcja przemocy, jak w tym utworze Exodus."
+    },
+    {
+      "start": 2810,
+      "text": "Lekcje bólu poprowadzą Die Art is Murder. Australijczycy, którzy łączą brutalność z nowocześnością. Lesson in Pain to utwór z ich ostatniej, póki co, płyty ubiegłorocznej Godlike."
+    },
+    {
+      "start": 3134,
+      "text": "Temat zemsta. Autorem lektury nie jest jednak Aleksander Fredro, lecz amerykański zespół Obituary, który piosenkę A Lesson in Vengeance zamieścił na płycie zatytułowanej po prostu Obituary z 2017 roku."
+    },
+    {
+      "start": 3376,
+      "text": "Na czwartej lekcji mamy patologię, więc może to jest szkoła medyczna. Wykłada profesor Exhumed, Amerykanin, ale absolwent brytyjskiego Uniwersytetu Caracas. Podręcznik nosi tytuł Slaughter Cult. Ukazał się w 2000 roku. A lesson in pathology."
+    },
+    {
+      "start": 4244,
+      "text": "takie Aces High wydawało mi się znacznie bardziej interesujące od szkolnej lektury"
+    },
+    {
+      "start": 6800,
+      "text": "Tytuł piosenki brzmi Silence teaches you how to sing"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }
