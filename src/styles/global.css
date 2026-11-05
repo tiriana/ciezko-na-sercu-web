@@ -1676,11 +1676,13 @@ a {
 .audio-bar__toggle {
   display: inline-grid;
   place-items: center;
+  flex: 0 0 40px;
   width: 40px;
   height: 40px;
   padding: 0;
   border: 1px solid var(--line);
   border-radius: 50%;
+  aspect-ratio: 1;
   background: var(--bg);
   color: var(--text);
   cursor: pointer;

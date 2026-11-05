@@ -121,13 +121,39 @@ const setupBar = () => {
 
 const setNowPlaying = (label) => {
   const now = document.querySelector('[data-audio-now]');
-  if (!now || !label) return;
+  if (!now) return;
+  if (!label) {
+    now.hidden = true;
+    now.textContent = '';
+    return;
+  }
   now.hidden = false;
   now.textContent = `Teraz: ${label}`;
 };
 
+/** Czy strona pokazuje odcinek, który faktycznie jest w playerze. */
+const pageMatchesAudio = () => {
+  const data = document.querySelector('#audio-data');
+  if (!data) return false;
+  try {
+    const payload = JSON.parse(data.textContent ?? '{}');
+    return Boolean(payload.slug) && payload.slug === audio?.dataset.slug;
+  } catch {
+    return false;
+  }
+};
+
 const syncSpans = () => {
   if (!audio) return;
+  // Na stronie innej audycji nie podświetlamy jej wierszy czasem z granego odcinka.
+  if (!pageMatchesAudio()) {
+    for (const span of spans) {
+      span.element.classList.remove('is-active');
+      span.element.removeAttribute('aria-current');
+      setPlayingIcon(span.element.querySelector('.track-play'), false);
+    }
+    return;
+  }
   const active = audio.paused ? [] : activeSpans(audio.currentTime);
   const playingTrack = active.find((span) => span.kind === 'track');
   if (playingTrack) setNowPlaying(playingTrack.element.dataset.trackLabel);
@@ -140,8 +166,33 @@ const syncSpans = () => {
   }
 };
 
+/** Przełącza źródło na odcinek z bieżącej strony, jeśli gra inny. */
+const switchToPageEpisode = () => {
+  if (!audio) return;
+  const data = document.querySelector('#audio-data');
+  if (!data) return;
+  let payload;
+  try {
+    payload = JSON.parse(data.textContent ?? '{}');
+  } catch {
+    return;
+  }
+  if (!payload.src || audio.dataset.src === payload.src) return;
+  audio.dataset.src = payload.src;
+  audio.dataset.slug = payload.slug ?? '';
+  audio.src = payload.src;
+  audio.load();
+  setNowPlaying('');
+  const bar = document.querySelector('[data-audio-bar]');
+  const title = bar?.querySelector('[data-audio-title]');
+  if (title) title.textContent = payload.title ?? '';
+  const link = bar?.querySelector('[data-audio-link]');
+  if (link && payload.slug) link.href = `/odcinki/${payload.slug}/`;
+};
+
 const playFrom = (start) => {
   if (!audio) return;
+  switchToPageEpisode();
   const seek = () => {
     audio.currentTime = start;
     audio.play();
@@ -166,18 +217,25 @@ const applyEpisodeAudio = () => {
   }
   if (!payload.src) return;
 
-  const same = audio.dataset.src === payload.src;
+  const loadedSlug = audio.dataset.slug;
   bar.hidden = false;
+
+  // Player gra to, co użytkownik uruchomił: wejście na inną audycję nie przełącza źródła,
+  // bo przerwałoby słuchanie. Źródło zmienia dopiero klik w utwór na tej stronie.
+  if (loadedSlug && loadedSlug !== payload.slug) return;
+
   const title = bar.querySelector('[data-audio-title]');
   if (title) title.textContent = payload.title ?? '';
   const link = bar.querySelector('[data-audio-link]');
   if (link && payload.slug) link.href = `/odcinki/${payload.slug}/`;
 
-  if (!same) {
+  if (audio.dataset.src !== payload.src) {
     audio.dataset.src = payload.src;
+    audio.dataset.slug = payload.slug ?? '';
     audio.src = payload.src;
     audio.load();
     audio.currentTime = 0;
+    setNowPlaying('');
   }
 };
 
@@ -275,9 +333,11 @@ const initPage = () => {
     button.addEventListener('click', () => {
       if (!audio) return;
       const row = button.closest('[data-span-start]');
-      const isCurrent = row
-        ? audio.currentTime >= Number(row.dataset.spanStart) && audio.currentTime < Number(row.dataset.spanEnd)
-        : false;
+      // Czas z innej audycji nie mówi nic o tym, co gra — wtedy zawsze przełączamy i gramy.
+      const isCurrent =
+        row && pageMatchesAudio()
+          ? audio.currentTime >= Number(row.dataset.spanStart) && audio.currentTime < Number(row.dataset.spanEnd)
+          : false;
       if (isCurrent && !audio.paused) {
         audio.pause();
         syncSpans();
