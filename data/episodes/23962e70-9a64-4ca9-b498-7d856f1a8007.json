@@ -6,12 +6,12 @@
   "summary": "Odcinek zbudowany wokół motywu szkoły i nauczania: metalowe kapele i albumy ułożone jak lekcje — od pierwszych kroków w gatunku, przez historię, po „lekcje bólu”. Punktem wyjścia są kasety pożyczone od kolegi i pierwsze zespoły, które uczyły słuchania. Dalej mowa o gatekeepingu i „kartkówkach” w środowisku metalowym, o Iron Maiden jako źródle wiedzy historycznej oraz o płytach o tematyce wojennej (m.in. Sabaton, Impaled Nazarene). Osobny wątek to muzyka jako lekcja patologii i cierpienia — Die Art is Murder, Obituary, Exhumed — a także pomysł na własny album o Dionizosie i metafora zespołów jako „profesorów”. W środku odcinka kanonada: utwory z kaset, od których zaczęła się ta edukacja.",
   "topics": [
     {
-      "start": 160,
+      "start": 54,
       "end": 176,
       "label": "Metalowi nauczyciele i pierwsze kroki w świecie metalu"
     },
     {
-      "start": 3155,
+      "start": 3108,
       "end": 3198,
       "label": "Kanonada: utwory z kaset pożyczonych od kolegi"
     },
@@ -21,7 +21,7 @@
       "label": "Metalowe lekcje historii i odniesienia do edukacji"
     },
     {
-      "start": 4244,
+      "start": 4226,
       "end": 4244,
       "label": "Kartkówki i gatekeeping w środowisku metalowym"
     },
@@ -31,12 +31,12 @@
       "label": "Iron Maiden jako źródło wiedzy historycznej"
     },
     {
-      "start": 4938,
+      "start": 4826,
       "end": 5035,
       "label": "Lekcje bólu: Die Art is Murder, Obituary, Exhumed"
     },
     {
-      "start": 5767,
+      "start": 5616,
       "end": 5829,
       "label": "Lekcje patologii i WF na basenie"
     },
@@ -44,23 +44,13 @@
       "start": 6800,
       "end": 6800,
       "label": "Zespoły o tematyce wojennej: Sabaton, Impaled Nazarene"
-    },
-    {
-      "start": 6800,
-      "end": 6800,
-      "label": "Pomysł na album o Dionizosie"
-    },
-    {
-      "start": 6800,
-      "end": 6800,
-      "label": "Metal i nauczanie: zespoły jako „profesorowie”"
     }
   ],
   "tags": [],
   "tracks": [
     {
       "start": 8,
-      "end": 160,
+      "end": 54,
       "durationSec": 152,
       "artist": "Thou",
       "title": "School",
@@ -183,7 +173,7 @@
     },
     {
       "start": 2927,
-      "end": 3155,
+      "end": 3108,
       "durationSec": 229,
       "artist": "Thy Art Is Murder",
       "title": "Lesson In Pain",
@@ -238,7 +228,7 @@
     },
     {
       "start": 3949,
-      "end": 4244,
+      "end": 4226,
       "durationSec": 295,
       "artist": "Slayer",
       "title": "South of Heaven",
@@ -265,7 +255,7 @@
     },
     {
       "start": 4715,
-      "end": 4938,
+      "end": 4826,
       "durationSec": 223,
       "artist": "Impaled Nazarene",
       "title": "Total War, Winter War",
@@ -291,7 +281,7 @@
     },
     {
       "start": 5467,
-      "end": 5767,
+      "end": 5616,
       "durationSec": 300,
       "artist": "Meshuggah",
       "title": "Rational Gaze",

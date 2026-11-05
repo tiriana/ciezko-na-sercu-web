@@ -3,20 +3,97 @@
   "id": "def366bd-91ce-4567-8c6e-8177e4e8160b",
   "analyzedAt": "2026-11-05",
   "durationSec": 7263,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja poświęcona jest norweskiemu black metalowi, ze szczególnym uwzględzeniem zespołu Dimmu Borgir. Jarek Szubrycht prezentuje wywiady z liderami grupy, Szagratem i Silenosem, przeprowadzone podczas Mystic Festivalu w Gdańsku. Muzycy rozmawiają o procesie twórczym, długich przerwach między albumami oraz ewolucji brzmienia zespołu. Poruszany jest również temat obecności black metalu w kulturze norweskiej oraz roli polskiego perkusisty Darkaja w Dimmu Borgir. Audycja poświęcona jest norweskiej scenie black metalu, ze szczególnym uwzględnieniem zespołów, które mimo wysokiej jakości artystycznej pozostają w cieniu największych gigantów. Prowadzący omawia zapowiedź wspólnej trasy Dimmu Borgir i Behemoth oraz przybliża sylwetki pionierów gatunku, takich jak Thorns czy Forgotten Woods. Poruszane są wątki historyczne, w tym wpływ norweskiej sceny na brzmienie metalu oraz tragiczne losy muzyków, jak lider Windir, Walfar. Program stanowi muzyczną podróż przez różne nurty, od czystego black metalu po elementy folkowe. Audycja poświęcona różnym obliczom norweskiego black metalu oraz zjawiskom pokrewnym. Prowadzący omawia ewolucję zespołów takich jak Windir i powstanie Vraid, a także przytacza anegdotę o rzekomym zaginięciu muzyków ze Slagmaur. W programie pojawiają się wątki eksperymentalne, w tym post-black metalowe podejście zespołu Manes oraz queerowy black metal grupy Rosa Fenskep. Słuchacze poznają także brzmienia Slegest, Kolt Brand oraz nagrodzonego zespołu Jörtsjuk. Całość wieńczy wspomnienie o debiutanckiej płycie Dimmu Borgir.",
+  "topics": [
+    {
+      "start": 0,
+      "end": 4,
+      "label": "Norweski black metal w audycji"
+    },
+    {
+      "start": 4,
+      "end": 14,
+      "label": "Wywiad z Dimmu Borgir o procesie tworzenia i czasie między płytami"
+    },
+    {
+      "start": 14,
+      "end": 17,
+      "label": "Charakterystyka nowej płyty Grand Serpent Rising"
+    },
+    {
+      "start": 17,
+      "end": 24,
+      "label": "Akceptacja black metalu w Norwegii"
+    },
+    {
+      "start": 24,
+      "end": 26,
+      "label": "Rola perkusisty Darkaja w Dimmu Borgir"
+    },
+    {
+      "start": 26,
+      "end": 35,
+      "label": "Wspólna trasa Dimmu Borgir i Behemoth"
+    },
+    {
+      "start": 35,
+      "end": 40,
+      "label": "Norweska scena black metalu i jej pionierzy"
+    },
+    {
+      "start": 43,
+      "end": 50,
+      "label": "Projekt Thorns i wpływ Snorre'a Blackthorna na gatunek"
+    },
+    {
+      "start": 50,
+      "end": 112,
+      "label": "Zapomniane i undergroundowe zespoły norweskie"
+    },
+    {
+      "start": 112,
+      "end": 119,
+      "label": "Folkowe nurty norweskiego black metalu"
+    },
+    {
+      "start": 119,
+      "end": 145,
+      "label": "Dziedzictwo zespołu Windir i powstanie grupy Vraid"
+    },
+    {
+      "start": 145,
+      "end": 179,
+      "label": "Anegdota o rzekomym zaginięciu muzyków Slagmaur"
+    },
+    {
+      "start": 179,
+      "end": 243,
+      "label": "Eksperymentalne i awangardowe oblicza norweskiego metalu"
+    },
+    {
+      "start": 243,
+      "end": 279,
+      "label": "Queerowy black metal grupy Rosa Fenskep"
+    },
+    {
+      "start": 279,
+      "end": 517,
+      "label": "Tradycyjne i młodzieżowe podejście do black metalu"
+    }
+  ],
   "tags": [],
   "tracks": [
     {
       "start": 40,
-      "end": 517,
+      "end": 43,
       "durationSec": 181,
       "artist": "Dimmu Borgir",
       "title": "Puritania",
       "album": "Puritanical Euphoric Misanthropia",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -27,7 +104,7 @@
       "artist": "Dimmu Borgir",
       "title": "Ascent",
       "album": "Grand Serpent Rising",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -229,6 +306,24 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 14,
+      "text": "ten nowy album Norwegów, czyli Grand Serpent Rising"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": "Wita Was Jarek Szubrycht, prowadzący audycję"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": "oraz Mariusz Owczarek, jej wydawca."
+    }
+  ]
 }

@@ -3,46 +3,113 @@
   "id": "cb083283-015c-48a5-a169-5a29240f3784",
   "analyzedAt": "2026-11-05",
   "durationSec": 7291,
-  "summary": "",
-  "topics": [],
+  "summary": "W audycji omówiono najnowsze polskie wydawnictwa metalowe, począwszy od nowej płyty zespołu Hypnozaur, przez debiuty Phantom, Demon Fire, Asperatus i Shine, aż po starsze projekty Neolit i Sarmat. Prowadzący podkreślał potrzebę nadrobienia zaległości w prezentacji krajowej sceny metalowej i przybliżał kontekst każdego zespołu oraz ich wydawnicze drogi. W trakcie programu odtworzono fragmenty utworów, a prowadzący komentował ich brzmienie, tematy i znaczenie w szerszym kontekście polskiego metalu. W audycji omówiono najnowsze polskie wydawnictwa metalowe, koncentrując się na debiutach i drugich albumach zespołów takich jak Sarmat, Ageless Gateway, Impure Declaration, Hexen Altar, Azos Mountain, Piołun, Kurnugia, Damask, Lyre, Diatom oraz projekt Głód‑Pamięć. Prowadzący przybliżał kontekst muzyczny, łącząc różne podgatunki – od death i black metalu po folk i prog‑metal – oraz podkreślał ich polski charakter. Wspomniano także o wytwórni Pagan Records i o planach dalszych prezentacji. Audycja zakończyła się poleceniem utworu „Śniący Zbudź się” z projektu Pamięć.",
+  "topics": [
+    {
+      "start": 128,
+      "end": 309,
+      "label": "Prezentacja nowej płyty Hypnozaur – Afterlife i opis ich stylu"
+    },
+    {
+      "start": 503,
+      "end": 541,
+      "label": "Debiutancki album Phantom – Breathtaking"
+    },
+    {
+      "start": 902,
+      "end": 977,
+      "label": "Debiutancki album Demon Fire – The Fall"
+    },
+    {
+      "start": 1240,
+      "end": 1316,
+      "label": "Debiutancki album Asperatus – Shrines of Human Waste"
+    },
+    {
+      "start": 2280,
+      "end": 2407,
+      "label": "Debiutancki album Shine – Wrath Cult oraz informacje o ich historii"
+    },
+    {
+      "start": 3068,
+      "end": 3112,
+      "label": "Omówienie debiutu Sarmat i ich albumu \"The Ornaments of Disturbing Perspective\""
+    },
+    {
+      "start": 3528,
+      "end": 3569,
+      "label": "Prezentacja projektu Ageless Gateway i albumu \"Corruptor of Stars\""
+    },
+    {
+      "start": 3997,
+      "end": 4056,
+      "label": "Debiutancki album Impure Declaration – \"Of Veins, Tendons and Bones\""
+    },
+    {
+      "start": 4400,
+      "end": 4500,
+      "label": "Debiut Hexen Altar – album \"Descending Curse\""
+    },
+    {
+      "start": 5110,
+      "end": 5152,
+      "label": "Prezentacja projektu Głód i eksperymentalnego utworu \"Śniący Zbudź się\""
+    }
+  ],
   "tags": [],
   "tracks": [
     {
       "start": 12,
-      "end": 309,
+      "end": 128,
       "durationSec": 117,
       "artist": "Hypnosaur",
       "title": "Danger",
       "album": "Afterlife",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 309,
-      "end": 541,
+      "end": 503,
       "durationSec": 205,
       "artist": "Diving Stove",
       "title": "Byle Nie Zmądrzeć (Klemens)",
       "album": "Byle Nie Zmądrzeć (Klemens) - Single",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 541,
-      "end": 1316,
+      "end": 902,
       "durationSec": 362,
       "artist": "Fantom",
       "title": "Breathtaking Aggression",
       "album": "Breathtaking...",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 977,
+      "end": 1240,
+      "durationSec": 263,
+      "artist": "Asperatus",
+      "title": null,
+      "album": "Shrines of Human Waste",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
@@ -53,87 +120,133 @@
       "artist": "Asperatus",
       "title": "Extinction",
       "album": "Shrines of Human Waste",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 1588,
-      "end": 2407,
+      "end": 2063,
       "durationSec": 325,
       "artist": "Mansvara",
       "title": "Lingering Void's Echo",
       "album": "Sable Odes to Nihility",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 2063,
+      "end": 2280,
+      "durationSec": 234,
+      "artist": "Warsaw",
+      "title": "Fight for All",
+      "album": null,
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 2407,
-      "end": 3112,
+      "end": 2820,
       "durationSec": 340,
       "artist": "Shine",
       "title": "Wrath of the Hammer",
       "album": "Wrathcult",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 2820,
+      "end": 3068,
+      "durationSec": 249,
+      "artist": "Sarmat",
+      "title": null,
+      "album": "The Ornaments of Disturbing Perspective",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 3112,
-      "end": 3569,
+      "end": 3528,
       "durationSec": 392,
       "artist": "SARMAT",
       "title": "Syndrome of Dangerous Perspective",
       "album": "The Ornaments of Disturbing Perspectives",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 3569,
-      "end": 4056,
+      "end": 3997,
       "durationSec": 430,
       "artist": "Ageless Gateway",
       "title": "Visions of Parasitic Consciousness",
       "album": "Corruptor of Stars",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 4056,
-      "end": 4500,
+      "end": 4400,
       "durationSec": 382,
       "artist": "Impure Declaration",
       "title": "Rising Upon the Immolated Kingdom of Seraphs",
       "album": "Of Veins, Tendons and Bones",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 4500,
-      "end": 5152,
+      "end": 4765,
       "durationSec": 202,
       "artist": "Hexenaltar",
       "title": "Sacred Doom Through Inquisition",
       "album": "Descending Curse",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 4765,
+      "end": 5110,
+      "durationSec": 341,
+      "artist": "Głód",
+      "title": "Śniący Zbudź się",
+      "album": null,
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
@@ -203,6 +316,76 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 128,
+      "text": "Kwartet Hypnozaur powitał nas piosenką ze swojej nowej, drugiej dużej płyty zatytułowanej Afterlife"
+    },
+    {
+      "start": 258,
+      "text": "Niedawno nagrali swoją pierwszą piosenkę po polsku i choć rozumiem tę decyzję"
+    },
+    {
+      "start": 513,
+      "text": "Album nosi tytuł Breathtaking, że niby zapiera dech w piersi"
+    },
+    {
+      "start": 1260,
+      "text": "Album nazywa się Shrines of Human Waste i jest to death metal równie techniczny, co intensywny"
+    },
+    {
+      "start": 1505,
+      "text": "Wokalistą zespołu Asperatus, którego przed chwilą wysłuchaliśmy, jest Łukasz Ciepała"
+    },
+    {
+      "start": 1560,
+      "text": "debiutancka, znowu debiutancka płyta Sable Oats to Infinity wydana została w maju przez oficynę Gods of War"
+    },
+    {
+      "start": 1945,
+      "text": "Znajdziecie na niej m.in. utwór Fight for All, dedykowany ukraińskim żołnierzom walczącym o wolność własnej ojczyzny"
+    },
+    {
+      "start": 2280,
+      "text": "Debiutancka płyta zespołu nosi tytuł Wrath Cult"
+    },
+    {
+      "start": 3065,
+      "text": "zespół Sarmat, który na początku roku wydał swoją drugą płytę The Ornaments of Disturbing Perspective"
+    },
+    {
+      "start": 3115,
+      "text": "Mieszka tam zespół Sarmat, który na początku roku wydał swoją drugą płytę The Ornaments of Disturbing Perspective i nie ma tutaj żartów."
+    },
+    {
+      "start": 3594,
+      "text": "Debiutancki album projektu Ageless Gateway nosi tytuł Corruptor of Stars. Ukazał się w kwietniu i zabiera nas w taką oto podróż."
+    },
+    {
+      "start": 3997,
+      "text": "Impure Declaration ... na swojej znowu pierwszej dużej płycie zatytułowanej Of Veins, Tendons and Bones."
+    },
+    {
+      "start": 4400,
+      "text": "Zespół Hexen Altar ... zasłużył na pełnowymiarowy debiut płytowy, który nosi tytuł Descending Curse."
+    },
+    {
+      "start": 5110,
+      "text": "Utwór nosi tytuł Śniący Zbudź się, chyba trudno lepszy, na zakończenie audycji o tej porze."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 144,
+      "quote": "Prowadzi ją dla Was Jarek Szubrycht"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 144,
+      "quote": "a wydaje Mariusz Owczarek"
+    }
+  ]
 }

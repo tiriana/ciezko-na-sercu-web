@@ -3,18 +3,57 @@
   "id": "3453211a-4286-4476-a4df-73285a9c08d5",
   "analyzedAt": "2026-11-05",
   "durationSec": 7167,
-  "summary": "",
-  "topics": [],
+  "summary": "W audycji Jarek Szubrycht porusza problem długich, eksperymentalnych utworów, które trudno zmieścić w ramy radiowe, i prezentuje pięć wybranych kawałków, w tym wersję radiową debiutanckiego albumu Pop Art Secessionists „Tryton”. Następnie słuchacze usłyszą ciężki metalowy utwór „Circle” zespołu The Manical Veil, a później mroczną kompozycję Rewerent Bizarre „Sirith Angle”. W drugiej połowie programu pojawiają się krótsze, choć wciąż intensywne materiały – mini‑album szwedzkiej grupy Meshuga „I” oraz finałowy utwór San „Nowe” z albumu „Life Metal”. Audycja kończy się refleksją o granicach radiowych i podziękowaniami.",
+  "topics": [
+    {
+      "start": 31,
+      "end": 152,
+      "label": "Problemy z emisją bardzo długich, eksperymentalnych utworów w radiu"
+    },
+    {
+      "start": 152,
+      "end": 275,
+      "label": "Prezentacja Pop Art Secessionists i ich debiutanckiego albumu Tryton"
+    },
+    {
+      "start": 1701,
+      "end": 1778,
+      "label": "Metalowy utwór Circle zespołu The Manical Veil"
+    },
+    {
+      "start": 3019,
+      "end": 3099,
+      "label": "Rewerent Bizarre – utwór Sirith Angle z albumu Indirectory of the Bizarre Reverent"
+    },
+    {
+      "start": 4400,
+      "end": 4530,
+      "label": "Meshuga – mini‑album I oraz San – utwór Nowe z albumu Life Metal"
+    }
+  ],
   "tags": [],
   "tracks": [
     {
+      "start": 275,
+      "end": 1701,
+      "durationSec": 1416,
+      "artist": "The Manical Veil",
+      "title": "Circle",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
       "start": 1778,
-      "end": 3099,
+      "end": 3019,
       "durationSec": 1241,
       "artist": "Esoteric",
       "title": "Circle",
       "album": "The Maniacal Vale",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -22,14 +61,15 @@
     },
     {
       "start": 3099,
-      "end": 4530,
+      "end": 4400,
       "durationSec": 1266,
       "artist": "Reverend Bizarre",
       "title": "Cirith Ungol (German Version)",
       "album": "In the Rectory of (German Version)",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -40,7 +80,7 @@
       "artist": "Meshuggah",
       "title": "I (Remastered 2014)",
       "album": "I (Special Edition)",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -60,6 +100,28 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 1701,
+      "text": "Kolos, którego za chwilę wysłuchacie nosi tytuł Circle i otwiera The Manical Veil"
+    },
+    {
+      "start": 4400,
+      "text": "Zagram za to w całości mini album szwedzkiej grupy Meshuga, zatytułowany I"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 14,
+      "quote": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht w imieniu własnym i Mariusza Owczarka, wydawcy audycji."
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 14,
+      "quote": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht w imieniu własnym i Mariusza Owczarka, wydawcy audycji."
+    }
+  ]
 }
