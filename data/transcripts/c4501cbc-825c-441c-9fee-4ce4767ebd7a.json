@@ -1,0 +1,845 @@
+{
+  "version": 1,
+  "episodeId": "c4501cbc-825c-441c-9fee-4ce4767ebd7a",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109509512,
+  "fileMtimeMs": 1789150694879.413,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 13.63
+    },
+    {
+      "index": 1,
+      "start": 226.37,
+      "end": 358.81
+    },
+    {
+      "index": 2,
+      "start": 554.18,
+      "end": 649.85
+    },
+    {
+      "index": 3,
+      "start": 901.16,
+      "end": 1012.96
+    },
+    {
+      "index": 4,
+      "start": 1304.68,
+      "end": 1369.08
+    },
+    {
+      "index": 5,
+      "start": 1614.05,
+      "end": 1718.01
+    },
+    {
+      "index": 6,
+      "start": 2096.71,
+      "end": 2207
+    },
+    {
+      "index": 7,
+      "start": 2553.64,
+      "end": 2634.84
+    },
+    {
+      "index": 8,
+      "start": 2984.13,
+      "end": 3036.25
+    },
+    {
+      "index": 9,
+      "start": 3276.16,
+      "end": 3353.15
+    },
+    {
+      "index": 10,
+      "start": 3594.37,
+      "end": 3698.36
+    },
+    {
+      "index": 11,
+      "start": 4257.25,
+      "end": 4385.79
+    },
+    {
+      "index": 12,
+      "start": 4726.88,
+      "end": 4773.79
+    },
+    {
+      "index": 13,
+      "start": 4878.37,
+      "end": 4942.24
+    },
+    {
+      "index": 14,
+      "start": 5531.75,
+      "end": 5614.11
+    },
+    {
+      "index": 15,
+      "start": 6065.41,
+      "end": 6102.75
+    },
+    {
+      "index": 16,
+      "start": 6430.31,
+      "end": 6538.49
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.96,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 8.88,
+      "end": 11.3,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 226.37,
+      "end": 240.15,
+      "text": "Dobry wieczór Państwu. Powitałem Was piosenką o lecie w ramach zaklinania rzeczywistości, bo lato jest mi już niezbędnie potrzebne, przyznaję bez bicia."
+    },
+    {
+      "start": 240.15,
+      "end": 259.97,
+      "text": "Powitałem Was tą piosenką również w ramach zapowiedzi wizyty autorów i wykonawców utworu amerykańskiego zespołu Deftons w Polsce, bo dzisiejszy odcinek ciężko na sercu poświęcony będzie w całości koncertom, które czekają nas w lutym."
+    },
+    {
+      "start": 259.97,
+      "end": 278.75,
+      "text": "Kłania się Jarek Szubrycht, który będzie gadał i puszczał piosenki oraz Mariusz Owczarek, który audycję będzie wydawał. Przyznaję, mnie osobiście fenomen Deftons niespecjalnie dotyczy, nigdy nie słuchałem tego zespołu."
+    },
+    {
+      "start": 278.75,
+      "end": 292.71,
+      "text": "Kiedy się pojawił, ja w metalu szukałem i wciąż szukam dużo mocniejszych wrażeń, a jak chcę się wzruszyć albo umartwić, przesterowane gitary nie są mi do tego w ogóle potrzebne."
+    },
+    {
+      "start": 293.07,
+      "end": 308.35,
+      "text": "Abstrahując jednak od mojego gustu, głuchy, a przynajmniej do końca głuchy nie jestem i mogę bez trudu przyznać, że Deftons to zespół i ważny i dobry i wiem, że wielu ludzi czekało na ten ich polski koncert."
+    },
+    {
+      "start": 308.75,
+      "end": 318.43,
+      "text": "Już 5 lutego w łódzkiej Atlas Arenie w towarzystwie Denzela Curry i Drug Church Deftons się pojawią."
+    },
+    {
+      "start": 318.43,
+      "end": 336.65,
+      "text": "Co dalej? Nocni goście przybywają do Świdnicy 6 lutego i do Krosna dzień później, bo pod takim właśnie szyldem nocni goście wspólnie koncertują Hostia i Las Trumien."
+    },
+    {
+      "start": 337.33,
+      "end": 348.55,
+      "text": "Bardzo to fajny zestaw, rzecz w sam raz dla wielbicieli horrorów i przede wszystkim połączenia horrorów z metalem dosyć ekstremalnym."
+    },
+    {
+      "start": 349.25,
+      "end": 357.19,
+      "text": "No to niech będzie las, bo wiadomo, że im dalej w las trumien, tym więcej hałasu, a lubimy hałas."
+    },
+    {
+      "start": 357.19,
+      "end": 358.81,
+      "text": "Muzyka"
+    },
+    {
+      "start": 554.18,
+      "end": 582.78,
+      "text": "Już 6 lutego w Krakowie w klubie Studio zagrają Men War of Steel, włoska parodia m.in., a może nawet przede wszystkim Men War. Nie rozumiem tego fenomenu z kolei, przecież sam Men War jest już wystarczająco zabawny i dodatkowe dosypywanie do tego niewybrednych żartów jest do wytrzymania przez jakieś 5 minut, nie przez cały koncert."
+    },
+    {
+      "start": 582.78,
+      "end": 611.58,
+      "text": "No ale jaki kto kabaret lubi nie mnie sądzić. Nie wiem jednak czy na ten koncert się nie wybiorę, bo przed Men War of Steel gra zespół Uhai z Mongolii. Szkoda, że pojechali w tę sporą trasę po Europie w takim akurat towarzystwie i w takim się pokazują kontekście, bo to może ich ustawić w odbiorze fanów w kategorii śmiesznej ciekawostki."
+    },
+    {
+      "start": 611.58,
+      "end": 622.08,
+      "text": "No a ja te ich mongolskość w sensie nie narodowości, ale w ogóle odwołań do wielowiekowej kultury traktuję bardzo poważnie."
+    },
+    {
+      "start": 622.78,
+      "end": 648.26,
+      "text": "I z przyjemnością zaprezentuję Państwu kolejną piosenkę z wydanego w styczniu albumu Human Hearts. Jedną już puszczałem przed tygodniem, dlatego mówię, że to piosenka kolejna. Teraz będzie inna. Wracamy na step, by zapoznać się z sekretną historią Mongołów. Tak, właśnie taki tytuł nosi ten utwór."
+    },
+    {
+      "start": 901.16,
+      "end": 921.66,
+      "text": "Można już zsiadać, zsiodeł i konie rozkulbaczyć. Przypominam, że Uhaj zagrają 6 lutego w Krakowie z Nenwar of Steel, a także z grupami Cold Snap z Chorwacji, Lady Annabelle z Francji oraz My Own Ghost z Luksemburga."
+    },
+    {
+      "start": 922.04,
+      "end": 940.1,
+      "text": "Zapowiada się długi, obfity we wrażenia wieczór. Na kolejną odsłonę bardzo ciekawej podziemnej imprezy zapraszam do Wrocławia. Wspólny szyld Not Dying Yet obejmuje dwa koncertowe dni w dwóch różnych klubach."
+    },
+    {
+      "start": 940.1,
+      "end": 955.78,
+      "text": "6 lutego w klubie Liverpool królować będą Doom i Stoner, Dym i Przester. Zagrają Space Slug, świętujący dziesięciolecie swojego debiutanckiego albumu Lemmanis,"
+    },
+    {
+      "start": 955.78,
+      "end": 977.58,
+      "text": "a także czeski post-hardkorowy Lumen, krakowski Doom Stonerowy Moonstone, bardzo ładnie rosnący zespół, a także łączący ciężary z psychodelią Snakes, Snakes, Snakes z Łodzi, ze świetnej ubiegłorocznej płyty Syk."
+    },
+    {
+      "start": 977.58,
+      "end": 993.04,
+      "text": "To jest grupa, na którą naprawdę warto mieć oko. Dzień później, i wciąż mówimy o Not Dying Yet we Wrocławiu, 7 lutego impreza przeniesie się do klubu Łącznik,"
+    },
+    {
+      "start": 993.04,
+      "end": 1011.38,
+      "text": "Gdzie królował będzie black metal. Nasi rodzimi In Twilight's Embrace będą królami wieczoru, do tego holenderskie Deathless Void oraz dwa włoskie zespoły Patristic oraz Noise Trail Immersion."
+    },
+    {
+      "start": 1011.38,
+      "end": 1012.96,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1304.68,
+      "end": 1323.8,
+      "text": "Na Not That Yet do Wrocławia zaprosiły nas węże, węże, węże, a my już idziemy dalej i rzeczywiście od Wrocławia bardzo daleko do Białegostoku, aż gdzie 6 lutego w Motopubie rozpoczyna się wspólna podróż."
+    },
+    {
+      "start": 1323.8,
+      "end": 1338.86,
+      "text": "Death Has Spoken, to posępny dum, Asteria, czyli post-hardcore i black i Obsidian Mantra, tu z kolei mamy do czynienia z ekstremalnym metalem, ale o wyraźnym, progresywnym sznycie."
+    },
+    {
+      "start": 1338.86,
+      "end": 1345.68,
+      "text": "Te trzy zespoły połączyły siły, by zagrać razem kilka koncertów w kraju i za granicą."
+    },
+    {
+      "start": 1346.14,
+      "end": 1367,
+      "text": "Jak już wspominałem, zaczynają od Białegostoku, dwa dni później, 8 lutego w Warszawie, w Chmurach będziecie mogli ich zobaczyć, 27 marca, ten sam zestaw w Poznaniu, 29 marca we Wrocławiu, a w międzyczasie zagrają też w Kownie i w Berlinie."
+    },
+    {
+      "start": 1614.05,
+      "end": 1619.71,
+      "text": "Powiedziałem, że Obsidian Mantra to metal progresywny"
+    },
+    {
+      "start": 1619.71,
+      "end": 1623.61,
+      "text": "To co w takim razie powiedzieć o grupie Leprus"
+    },
+    {
+      "start": 1623.61,
+      "end": 1627.55,
+      "text": "Wiadomo, że to jest metal najprogresywniejszy"
+    },
+    {
+      "start": 1627.55,
+      "end": 1630.99,
+      "text": "Rzadko słucham, ale jak już się skuszę"
+    },
+    {
+      "start": 1630.99,
+      "end": 1632.87,
+      "text": "To zawsze jestem pod wrażeniem"
+    },
+    {
+      "start": 1632.87,
+      "end": 1636.13,
+      "text": "Czy to wersji studyjnej, czy wcielenia koncertowego"
+    },
+    {
+      "start": 1636.13,
+      "end": 1641.09,
+      "text": "W 2024 roku Norwegzy wydali znakomity album"
+    },
+    {
+      "start": 1641.09,
+      "end": 1642.97,
+      "text": "Melodies of Atonement"
+    },
+    {
+      "start": 1642.97,
+      "end": 1647.07,
+      "text": "I teraz jeżdżą z tym materiałem po świecie"
+    },
+    {
+      "start": 1647.07,
+      "end": 1650.39,
+      "text": "Do nas dojadą z dwoma koncertami"
+    },
+    {
+      "start": 1650.39,
+      "end": 1655.15,
+      "text": "10 lutego wystąpią w Gdańsku w B90"
+    },
+    {
+      "start": 1655.15,
+      "end": 1660.57,
+      "text": "I 17 lutego we Wrocławiu w klubie A2"
+    },
+    {
+      "start": 1660.57,
+      "end": 1664.03,
+      "text": "Towarzyszyć im będą Brytyjczycy z ILO"
+    },
+    {
+      "start": 1664.03,
+      "end": 1666.67,
+      "text": "To też progresywny metal"
+    },
+    {
+      "start": 1666.67,
+      "end": 1669.15,
+      "text": "Jest i ambitnie i ciężko"
+    },
+    {
+      "start": 1669.15,
+      "end": 1671.23,
+      "text": "A także grupa Crystal Lake"
+    },
+    {
+      "start": 1671.23,
+      "end": 1675.33,
+      "text": "Ci są może mniej metalowi, ale nie mniej progresywni"
+    },
+    {
+      "start": 1675.85,
+      "end": 1679.63,
+      "text": "Będą to więc wieczory, podczas których usłyszycie"
+    },
+    {
+      "start": 1679.63,
+      "end": 1682.57,
+      "text": "Kwartalną dawkę nutek"
+    },
+    {
+      "start": 1682.57,
+      "end": 1684.05,
+      "text": "Posłuchamy Leprus"
+    },
+    {
+      "start": 1684.05,
+      "end": 1685.65,
+      "text": "Utworu Faceless"
+    },
+    {
+      "start": 1685.65,
+      "end": 1687.27,
+      "text": "Prawdę mówiąc nie wiem"
+    },
+    {
+      "start": 1687.27,
+      "end": 1689.25,
+      "text": "Co bardziej mi imponuje"
+    },
+    {
+      "start": 1689.25,
+      "end": 1691.41,
+      "text": "W tym zespole, czy warstwa instrumentalna"
+    },
+    {
+      "start": 1691.41,
+      "end": 1694.49,
+      "text": "Która na poziomie aranżacji i wykonania"
+    },
+    {
+      "start": 1694.49,
+      "end": 1696.79,
+      "text": "Prezentuje poziom profesorski"
+    },
+    {
+      "start": 1696.79,
+      "end": 1698.69,
+      "text": "Czy te falsety"
+    },
+    {
+      "start": 1698.69,
+      "end": 1700.89,
+      "text": "Wokalisty grupy"
+    },
+    {
+      "start": 1700.89,
+      "end": 1702.97,
+      "text": "Ainara Solberga"
+    },
+    {
+      "start": 1702.97,
+      "end": 1706.79,
+      "text": "Z takim głosem i z takim nad nim panowaniem"
+    },
+    {
+      "start": 1706.79,
+      "end": 1710.27,
+      "text": "Mógłby robić karierę w mainstreamie"
+    },
+    {
+      "start": 1710.27,
+      "end": 1711.55,
+      "text": "Nie żeby ta kariera"
+    },
+    {
+      "start": 1711.55,
+      "end": 1714.15,
+      "text": "Którą robi teraz z Leprus"
+    },
+    {
+      "start": 1714.15,
+      "end": 1716.07,
+      "text": "Nie była imponująca"
+    },
+    {
+      "start": 1716.07,
+      "end": 1718.01,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2096.71,
+      "end": 2106.29,
+      "text": "Slomatics przybywają z Irlandii Północnej, by trochę nas podręczyć swoim Doom Sludgem w Krakowie, w klubie Gwarek."
+    },
+    {
+      "start": 2106.61,
+      "end": 2110.61,
+      "text": "Przed nimi wystąpią Moonstone oraz Astral Nomad."
+    },
+    {
+      "start": 2111.39,
+      "end": 2114.71,
+      "text": "Szykuje się zatem dźwiganie ciężarów przez cały wieczór."
+    },
+    {
+      "start": 2114.71,
+      "end": 2121.57,
+      "text": "Rzecz będzie się działa 13 lutego, to piątek bardzo miłe rozpoczęcie weekendu."
+    },
+    {
+      "start": 2122.71,
+      "end": 2127.47,
+      "text": "Trasa o poetyckiej nazwie, do spodu, do ziemi, w pustkę."
+    },
+    {
+      "start": 2128.09,
+      "end": 2139.25,
+      "text": "Zanim zaprowadzi swoich uczestników do wielkiego finału w rzeczonej pustce, zwiedzi kawał Polski od 13 do 28 lutego."
+    },
+    {
+      "start": 2139.25,
+      "end": 2146.17,
+      "text": "Tu na scenie spotkają się grupy zmarłym, to black metal poszukujący."
+    },
+    {
+      "start": 2147.01,
+      "end": 2149.95,
+      "text": "Vanheim, tu już bliżej piekła."
+    },
+    {
+      "start": 2150.47,
+      "end": 2154.93,
+      "text": "Sotoris, tu dla odmiany mamy stop, black i death metalu."
+    },
+    {
+      "start": 2155.55,
+      "end": 2157.15,
+      "text": "I wreszcie fiasko."
+    },
+    {
+      "start": 2158.03,
+      "end": 2164.69,
+      "text": "Bardzo podoba mi się nazwa tego zespołu, taka nie metalowa, ale przecież bardzo metalowa zarazem."
+    },
+    {
+      "start": 2164.77,
+      "end": 2171.47,
+      "text": "A więc fiasko to z kolei sludge, postmetal i chwilami blackowa jadowitość."
+    },
+    {
+      "start": 2171.47,
+      "end": 2174.71,
+      "text": "Do spodu, do ziemi, w pustkę."
+    },
+    {
+      "start": 2175.17,
+      "end": 2178.89,
+      "text": "Gwarantuje więc różnorodność, a odwiedzi."
+    },
+    {
+      "start": 2179.43,
+      "end": 2183.25,
+      "text": "Wrocław, to jest początek trasy, piątek 13 lutego."
+    },
+    {
+      "start": 2183.89,
+      "end": 2187.05,
+      "text": "Dzień później Częstochowa, Łódź."
+    },
+    {
+      "start": 2187.81,
+      "end": 2188.55,
+      "text": "Chwila przerwy."
+    },
+    {
+      "start": 2189.29,
+      "end": 2194.71,
+      "text": "I od 20 lutego Białystok, Lublin, Warszawa."
+    },
+    {
+      "start": 2195.61,
+      "end": 2198.47,
+      "text": "Znowu chwila oddechu."
+    },
+    {
+      "start": 2198.63,
+      "end": 2204.71,
+      "text": "I od 26 lutego Zielona Góra, Szczecin i Bydgoszcz."
+    },
+    {
+      "start": 2554.54,
+      "end": 2566.56,
+      "text": "Igor na żywo to jest dla mnie nadmiar wrażeń, chociaż jestem w stanie zrozumieć tych, co lubią się zakręcić na tej francuskiej karuzeli aż do zawrotów głowy."
+    },
+    {
+      "start": 2567.2,
+      "end": 2576.28,
+      "text": "Na pewno jest to projekt oryginalny, na pewno znaczący, nie sezonowa ciekawostka, tylko naprawdę poszerzanie granic metalu."
+    },
+    {
+      "start": 2576.28,
+      "end": 2588,
+      "text": "Igor zagra dla was w Walentynki w Warszawie, więc jeśli ktoś lubi życie na krawędzi, może zaproponować swojej drugiej połówce taką właśnie randkę."
+    },
+    {
+      "start": 2588.48,
+      "end": 2597.54,
+      "text": "Tego wieczoru wystąpią również grupy Dune i Thought Crimes, też fajnie, a całość będzie się działa w klubie Progresja."
+    },
+    {
+      "start": 2597.54,
+      "end": 2610.2,
+      "text": "A to oznacza, że te awangardowe szaleństwa Igora mają wielu zwolenników, bo klub duży i muszę przyznać, że to dla mnie zawsze niemałe zaskoczenie."
+    },
+    {
+      "start": 2610.88,
+      "end": 2617.18,
+      "text": "Mieszkańcy Krakowa z kolei mogą randkować w nieco bardziej przewidywalnych warunkach."
+    },
+    {
+      "start": 2617.18,
+      "end": 2627.82,
+      "text": "14 lutego w zaścianku zagra szwajcarski zespół Monkey Three, który zaproponuje lot z pustyni w kosmos od Stonera po psychodelię."
+    },
+    {
+      "start": 2628.42,
+      "end": 2633.22,
+      "text": "Dzień później powtórzy tę samą sztuczkę w Warszawie w klubie Woody."
+    },
+    {
+      "start": 2984.87,
+      "end": 2996.51,
+      "text": "15 lutego w krakowskim kwadracie pojawi się bardzo mocny zestaw czterech kapel z dalekich krajów pod przewodem brytyjskiego Cilosis."
+    },
+    {
+      "start": 2997.53,
+      "end": 3008.43,
+      "text": "Zespół z Reading z jednej strony nawiązuje do klasyki, do death metalu i thrashu, ale z drugiej brzmi bardzo nowocześnie, wręcz futurystycznie."
+    },
+    {
+      "start": 3008.43,
+      "end": 3013.77,
+      "text": "Nawet sterylnie, jak na tak ekstremalną muzykę."
+    },
+    {
+      "start": 3014.41,
+      "end": 3018.01,
+      "text": "I nie, nie narzekam. W sumie po prostu informuję."
+    },
+    {
+      "start": 3018.61,
+      "end": 3027.65,
+      "text": "Tego samego wieczoru wystąpią Amerykanie z Revocation, Distant z Niderlandów oraz Life Cycles też z Ameryki."
+    },
+    {
+      "start": 3028.11,
+      "end": 3033.95,
+      "text": "Jednym słowem agresja, technika, melodia. To trzy słowa w sumie. Taki to będzie koncert."
+    },
+    {
+      "start": 3035.33,
+      "end": 3036.25,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3276.16,
+      "end": 3289.22,
+      "text": "Melodyjny death metal to z nieznanych mi powodów specjalność ludów skandynawskich, czego przykładem jest choćby fiński zespół Omnium Gatherum."
+    },
+    {
+      "start": 3289.22,
+      "end": 3305.22,
+      "text": "W trasę zabrali ze sobą amerykańską grupę Fallujah. Tu jest brutalniej, ale zarazem bardzo, pewnie jeszcze bardziej technicznie oraz In Morning ze Szwecji, który stylistycznie bliższy jest Gwieździe Wieczoru."
+    },
+    {
+      "start": 3305.22,
+      "end": 3330.28,
+      "text": "Koncert odbędzie się 15 lutego w Krakowie w Hype Parku, a to oznacza, że 15 lutego będą mieszkańcy Krakowa i goście przebywający pod Wawelem mieli nie lada dylemat, bo dwie w gruncie rzeczy bliskie stylistycznie konkurencyjne imprezy będą się odbywały w dwóch różnych miejscach."
+    },
+    {
+      "start": 3330.28,
+      "end": 3351.56,
+      "text": "Omnium Gatherum promują tą trasą ubiegłoroczny album May the Bridges We Burn Light The Way. Bardzo ładny tytuł. Niech mosty, które palimy oświetlą nam drogę, ale przed chwilą wypuścili zupełnie nową piosenkę, której na płycie nie ma i która nosi tytuł Moongold. Jej zatem posłuchamy."
+    },
+    {
+      "start": 3594.37,
+      "end": 3619.29,
+      "text": "Horror, ten pisany przez trzy dziewiątki, to nie metal, tylko rap, ale mroczny, drapieżny, wymieszany z punkiem, ciężarami oraz industrialem, a na koncertach nie biorą jeńców, więc warto się wybrać do dwóch progów w Poznaniu 16 lutego i do Hydrozagadki w Warszawie 17 lutego."
+    },
+    {
+      "start": 3619.83,
+      "end": 3636.99,
+      "text": "No chyba, że w Warszawie będziecie wtedy w zupełnie innym celu, z zupełnie innych powodów, bo z bardzo ładną ekumeniczną trasą zatytułowaną Campaign for Musical Destruction przyjeżdżają do nas weterani z Naipą Death."
+    },
+    {
+      "start": 3637.45,
+      "end": 3661.51,
+      "text": "Wzięli sobie do towarzystwa na trasie europejskiej legendę amerykańskiego traszu, czyli Whiplash, zasłużoną brytyjską, bankową załogę Verrukers oraz naszych rodaków z Dope Lord, którzy zadbają o to, by gnieść publiczność smoliście czarnym, dumowym ciężarem."
+    },
+    {
+      "start": 3661.51,
+      "end": 3676.69,
+      "text": "Ten bardzo zróżnicowany, ale jakże uroczy zestaw wypełni 17 lutego właśnie warszawski klub Progresja, bo że wypełni nie mam co do tego wątpliwości."
+    },
+    {
+      "start": 3676.69,
+      "end": 3689.21,
+      "text": "Cieszę się natomiast z kolejnej okazji, by puścić w trójce Naipą Death, licząc na to, że w końcu któraś z ich piosenek przebije się do dziennej rotacji."
+    },
+    {
+      "start": 3690.21,
+      "end": 3696.69,
+      "text": "Posłuchamy też Dope Lord z utworem opowiadającym o bardzo dużej liczbie czaszek."
+    },
+    {
+      "start": 4257.25,
+      "end": 4276.29,
+      "text": "No i taki to będzie koncert. Naipon Death zagrają 10 piosenek, żeby wypełnić ten czas, który Doeplord ogarnie jedną. Tak trzeba się umieć ustawić, żeby się nie narobić, ale żeby sława i fortuna się zgadzały."
+    },
+    {
+      "start": 4276.29,
+      "end": 4295.63,
+      "text": "Primordial Serpent Sands to minitrasa podziemnych bluźnierców z Devil Priest, Moloch Letalis i Necrolast. Obejmie trzy miasta. 20 lutego ten zestaw pojawi się w Koszalinie, 21 w Olsztynie, 22 w Warszawie."
+    },
+    {
+      "start": 4295.63,
+      "end": 4309.55,
+      "text": "Na obu koncertach na północy. Gościem specjalnym będzie grupa Deus Mortem, a w Warszawie ich nie będzie. Za to do Devil Priest, Moloch Letalis i Necrolast dołączy Kingdom."
+    },
+    {
+      "start": 4310.05,
+      "end": 4318.05,
+      "text": "Ginger Rosną i Rosną to już gwiazda światowego formatu, o czym świadczą nie tylko rozmiary sal, w których grywają jako headlinerzy."
+    },
+    {
+      "start": 4318.05,
+      "end": 4326.83,
+      "text": "Tym razem jest to warszawska progresja, ale też supporty, które bynajmniej sroce spod ogona nie wypadły."
+    },
+    {
+      "start": 4327.49,
+      "end": 4332.07,
+      "text": "A więc niemiecki Empressest po świetnej ubiegłorocznej płycie Angel."
+    },
+    {
+      "start": 4333.29,
+      "end": 4342.47,
+      "text": "Tytuł może sugerować jakieś gotyki i romanse, ale to zaawansowany technicznie drapieżny progmetal z metalkorowymi ornamentami."
+    },
+    {
+      "start": 4342.47,
+      "end": 4357.81,
+      "text": "I jeszcze Textures, czyli weterani progmetalu z Holandii, uczniowie i prymusi w tej klasie Meshuga, którzy przed chwilą wydali album Genotype."
+    },
+    {
+      "start": 4358.31,
+      "end": 4367.93,
+      "text": "Już kiedyś go napisali, 10 lat temu, jako drugą stronę Phenotype, ale rozpadli się przed nagraniem, czy w trakcie."
+    },
+    {
+      "start": 4368.71,
+      "end": 4374.81,
+      "text": "Tego do końca nie wiadomo, bo to taka płyta, którą uważało się za istniejącą, ale zaginioną."
+    },
+    {
+      "start": 4375.17,
+      "end": 4379.13,
+      "text": "Teraz ponoć napisali i nagrali ten materiał od nowa."
+    },
+    {
+      "start": 4379.13,
+      "end": 4384.13,
+      "text": "To historia, przyznaję, równie zawiła jak muzyka Textures."
+    },
+    {
+      "start": 4726.88,
+      "end": 4741.7,
+      "text": "Zupełnie nieskomplikowane rzeczy usłyszą ci, co tego samego wieczoru, a mowa o 22 dniu lutego, też w Warszawie, wybiorą się nie do progresji, ale do Proximy."
+    },
+    {
+      "start": 4741.7,
+      "end": 4751.36,
+      "text": "Nie sposób się pomylić, w progresji będą grały rzeczy progresywne, a w Proximie będzie was bił swoim nowojorskim hardcorem Agnostic Front."
+    },
+    {
+      "start": 4751.92,
+      "end": 4760.22,
+      "text": "Grupa przyjeżdża z nowym materiałem, albumem Echoes in Eternity oraz gośćmi w postaci Wisdom in Chains i Raw Brigade."
+    },
+    {
+      "start": 4760.84,
+      "end": 4771.98,
+      "text": "Wisdom in Chains to hardcorowa supergrupa z amerykańsko-europejskim składem, Raw Brigade to kolumbijczycy, też hardcore, potężny i szczery do bólu."
+    },
+    {
+      "start": 4879.25,
+      "end": 4896.15,
+      "text": "Wyznawcy metalowej ekstremy na pewno spotkają się 24 lutego w Gdańsku w klubie B90, bo pojawi się tam taki zestaw legend Black Death metalu, że zignorować tego nie sposób."
+    },
+    {
+      "start": 4896.81,
+      "end": 4906.73,
+      "text": "Gwiazdą będą Norwegzy z Mayhem, ale trudno supportami nazwać takie zespoły jak szwedzki Marduk czy amerykański Immolation."
+    },
+    {
+      "start": 4907.41,
+      "end": 4924.85,
+      "text": "Zapowiadam ten koncert z tym większą przyjemnością, że przy okazji mogę puścić nowe utwory, bo Mayhem, kolejną płytę Liturgy of Death wydają już za chwilę, a Immolation swój album The Sand zapowiadają na kwiecień."
+    },
+    {
+      "start": 4925.51,
+      "end": 4933.99,
+      "text": "Mayhem nie zawodzi, sami się za chwilę przekonacie, ale Immolation to jest mistrzostwo absolutne."
+    },
+    {
+      "start": 4933.99,
+      "end": 4940.35,
+      "text": "Tyle dobrego Death metalu teraz powstaje, ale co mistrzowie to mistrzowie."
+    },
+    {
+      "start": 5532.61,
+      "end": 5545.67,
+      "text": "Rodzimy Die Worshipper to zespół z długim stażem, ale długim stażem brutto, bo pojawia się i znika, czasem liczą dłużej, czasem krócej."
+    },
+    {
+      "start": 5546.57,
+      "end": 5560.95,
+      "text": "Teraz znowu Die Worshipper wchodzi w czas wzmożonej aktywności, bo lada chwila ukaże się ich kolejny album zatytułowany Demony Wschodu i oczywiście promowany będzie koncertami."
+    },
+    {
+      "start": 5560.95,
+      "end": 5580.67,
+      "text": "W trasie weteranom z Die Worshipper towarzyszyć będą blackpunkowe mary i to jest bardzo ciekawe połączenie, bo oba zespoły odwołują się do ludowości, wiejskości, tradycji, choć na zupełnie różne sposoby."
+    },
+    {
+      "start": 5581.15,
+      "end": 5591.87,
+      "text": "Debiut płytowy Mar nosił tytuł Widy styczniowe, ale trasa będzie lutowa w dodatku z jednym finałowym koncertem w marcu."
+    },
+    {
+      "start": 5592.53,
+      "end": 5601.59,
+      "text": "Od 25 lutego do 1 marca będziecie mogli zobaczyć Die Worshipper z Marami w następujących miastach."
+    },
+    {
+      "start": 5602.03,
+      "end": 5612.53,
+      "text": "Gdańsk to klub Drizzly Grizzly, Poznań pod Minogą, Wrocław Łącznik, Kraków za ścianek i Warszawa Hydrozagadka."
+    },
+    {
+      "start": 5612.53,
+      "end": 5613.53,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 5613.53,
+      "end": 5614.11,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 6065.41,
+      "end": 6090.73,
+      "text": "Na dwa koncerty przybywają do Polski prosto z Los Angeles dumowe wróżki z Fethuth. Ciekawy zespół, ale towarzystwo też będą miały intrygujące w postaci niemieckich grup Colt Hain i Ella Reeve, a więc różne i dość świeże ujęcia ponurej, ciężkiej muzyki z kobietami w rolach głównych."
+    },
+    {
+      "start": 6090.73,
+      "end": 6100.75,
+      "text": "Zobaczymy to i usłyszymy 27 lutego w Warszawie i 28 lutego we Wrocławiu."
+    },
+    {
+      "start": 6431.05,
+      "end": 6443.55,
+      "text": "Może i Fethelf, i Coltheim, i L. Reef robią dziś w doom-metalu i okolicach rzeczy nowe, ale przecież skąd się wzięły?"
+    },
+    {
+      "start": 6444.21,
+      "end": 6448.69,
+      "text": "Na każdym sabacie jest taka sytuacja, że ktoś musi zacząć pierwszy."
+    },
+    {
+      "start": 6449.09,
+      "end": 6466.85,
+      "text": "Black Sabbath, wiadomo, to wymyślili, ale drugie życie takiej muzyce dali na przełomie lat 80. i 90. Brytyjczycy z Paradise Lost, którzy lubią wracać do Polski, a my lubimy kiedy oni do nas wracają."
+    },
+    {
+      "start": 6466.85,
+      "end": 6482.17,
+      "text": "Zatem zobaczymy ich na aż trzech koncertach. 27 lutego w Gdańsku w B90, 28 w Warszawie w Progresji i 2 marca we Wrocławiu w A2."
+    },
+    {
+      "start": 6482.55,
+      "end": 6494.75,
+      "text": "Paradise Lost przybywają z Włochami, z Shows of Null fajnie, ale jeszcze fajniej, że będzie z nimi też duński Saturnus, który może nigdy nie był bardzo popularny,"
+    },
+    {
+      "start": 6495.45,
+      "end": 6502.49,
+      "text": "ale równie melodyjne, co wisielcze połączenie doom i death-metalu opanował do perfekcji."
+    },
+    {
+      "start": 6502.49,
+      "end": 6519.35,
+      "text": "Można właściwie powiedzieć, że Saturnus jest takim robaczkiem, taką muszką w bursztynie, która gdzieś tam w czasie zamroziła ten styl wymyślony przez Paradise Lost na początku lat 90."
+    },
+    {
+      "start": 6519.67,
+      "end": 6529.53,
+      "text": "Paradise, jak wiadomo, zmieniali się, ewoluowali, wyskakiwali w przód, a potem wracali do przeszłości, a Saturnus swoje."
+    },
+    {
+      "start": 6529.81,
+      "end": 6536.19,
+      "text": "I dzisiaj właśnie oni zaśpiewają nam kołysankę na pożegnanie. Do usłyszenia za tydzień."
+    },
+    {
+      "start": 6536.19,
+      "end": 6538.49,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 17,
+    "transcribedAudioSec": 1413.69,
+    "segmentCount": 148,
+    "characterCount": 15321
+  },
+  "sourceId": "2026-02-04-ciezary-na-zywo-najciekawsze-koncerty-lutego"
+}
