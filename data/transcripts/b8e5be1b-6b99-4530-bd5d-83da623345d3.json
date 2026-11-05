@@ -1,0 +1,910 @@
+{
+  "version": 1,
+  "episodeId": "b8e5be1b-6b99-4530-bd5d-83da623345d3",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109924844,
+  "fileMtimeMs": 1789150667317.7156,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 15.26
+    },
+    {
+      "index": 1,
+      "start": 103.08,
+      "end": 169.69
+    },
+    {
+      "index": 2,
+      "start": 229.48,
+      "end": 297.02
+    },
+    {
+      "index": 3,
+      "start": 400.55,
+      "end": 437.12
+    },
+    {
+      "index": 4,
+      "start": 472.96,
+      "end": 479.07
+    },
+    {
+      "index": 5,
+      "start": 563.49,
+      "end": 631.87
+    },
+    {
+      "index": 6,
+      "start": 850.66,
+      "end": 938.62
+    },
+    {
+      "index": 7,
+      "start": 1182.31,
+      "end": 1275.96
+    },
+    {
+      "index": 8,
+      "start": 1467.65,
+      "end": 1603
+    },
+    {
+      "index": 9,
+      "start": 1891.04,
+      "end": 1992.6
+    },
+    {
+      "index": 10,
+      "start": 2498.88,
+      "end": 2603.32
+    },
+    {
+      "index": 11,
+      "start": 2933.22,
+      "end": 3008.92
+    },
+    {
+      "index": 12,
+      "start": 3337.83,
+      "end": 3378.17
+    },
+    {
+      "index": 13,
+      "start": 3603.65,
+      "end": 3681.6
+    },
+    {
+      "index": 14,
+      "start": 3879.72,
+      "end": 3953.79
+    },
+    {
+      "index": 15,
+      "start": 4145.57,
+      "end": 4198.59
+    },
+    {
+      "index": 16,
+      "start": 4374.31,
+      "end": 4408.64
+    },
+    {
+      "index": 17,
+      "start": 4706.88,
+      "end": 4771.04
+    },
+    {
+      "index": 18,
+      "start": 5349.25,
+      "end": 5419.32
+    },
+    {
+      "index": 19,
+      "start": 5707.68,
+      "end": 5779.77
+    },
+    {
+      "index": 20,
+      "start": 5985.57,
+      "end": 6069.63
+    },
+    {
+      "index": 21,
+      "start": 6337.32,
+      "end": 6426.2
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.3,
+      "text": "Trójka"
+    },
+    {
+      "start": 1.3,
+      "end": 4.94,
+      "text": "Program Trzeci Polskiego Radia"
+    },
+    {
+      "start": 4.94,
+      "end": 11.16,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 11.16,
+      "end": 15.26,
+      "text": "Next Team Speed"
+    },
+    {
+      "start": 104.04,
+      "end": 113.98,
+      "text": "Piosenkę na dobry wieczór wykonała dla nas skróda i był to tytułowy utwór z materiału Extreme Speed Violence."
+    },
+    {
+      "start": 114.74,
+      "end": 123.4,
+      "text": "Lubię, kiedy tytuły tak celnie opisują zawartość muzyczną materiału, bo jest ekstremalnie, jest szybko i przemoc też jest."
+    },
+    {
+      "start": 124.02,
+      "end": 131.18,
+      "text": "Extreme Speed Violence oficjalnie ukazała się tylko na kasecie, chociaż w internetach też tę muzykę można znaleźć,"
+    },
+    {
+      "start": 131.18,
+      "end": 135.18,
+      "text": "a jak sami usłyszeliście, poszukać warto."
+    },
+    {
+      "start": 135.8,
+      "end": 144.46,
+      "text": "Warto też zostać z nami do końca audycji, która nazywa się Ciężko na sercu, bo dziś bite dwie godziny z polską sceną."
+    },
+    {
+      "start": 144.58,
+      "end": 149.68,
+      "text": "Same nowości lub prawie nowości, ale haniebnie przeze mnie przegapione."
+    },
+    {
+      "start": 150.34,
+      "end": 155.5,
+      "text": "Mam na imię Jarek, na nazwisko Szubrycht i jak co tydzień będę dla was podnosił te ciężary,"
+    },
+    {
+      "start": 155.5,
+      "end": 160.62,
+      "text": "a asekurował mnie będzie Mariusz Owczarek, wydawca audycji."
+    },
+    {
+      "start": 161.16,
+      "end": 168.1,
+      "text": "To jeszcze raz skróda na drugą nóżkę, zanim przejdziemy do innych artystów i nieco innych klimatów."
+    },
+    {
+      "start": 229.48,
+      "end": 244.6,
+      "text": "Kolejny zespół, który mam przyjemność Państwu przedstawić, nosi dumną nazwę Odur. W tytule debiutanckiej epki ma fetor, a tytuł piosenki brzmi La La, La La, La La."
+    },
+    {
+      "start": 244.94,
+      "end": 269.92,
+      "text": "Co to może być zatem za muzyka? Oczywiście Grind i jego śliskie oraz lepkie okolice. Grupa pochodzi ze Słupska, jest zupełnie nowa, bo wspomniana epka Fetor Hepaticus wyszła raptem w styczniu, ale w składzie widzimy weteranów, starszych i trochę młodszych, związanych m.in. z takimi grupami jak Agresor,"
+    },
+    {
+      "start": 269.92,
+      "end": 284,
+      "text": "a to przecież zespół z pierwszej fali undergroundowego trashu lat 80., a także Colm Hatchery, Aborticide Obsession, Gate, Psychotorn, ITP, ITD."
+    },
+    {
+      "start": 284.56,
+      "end": 294.98,
+      "text": "Czy Odur to dla nich jednorazowa przygoda? Czy będziemy mieć z nich dłużej pociechę? Tego nie wiem, ale początek mają więcej niż przekonujący."
+    },
+    {
+      "start": 294.98,
+      "end": 297.02,
+      "text": "muzyka"
+    },
+    {
+      "start": 400.55,
+      "end": 420.69,
+      "text": "Teraz też nowa nazwa i ludzie, tym razem nowi, młoda warszawska kapela, która wjechała na scenę ze zmetalizowanym hardkorem, dobrudzonym grindem pełnym jadu i energii i takiego fajnego chaosu, z którym młodym, głodnym kapelom bardzo do twarzy."
+    },
+    {
+      "start": 420.69,
+      "end": 435.59,
+      "text": "Nazywają się Def Kneel, wydali właśnie epkę o tytule Def Kneel i ostatnio trochę pojeździli po Polsce z jadem i jak usłyszycie już za chwilę, to dla nich odpowiednie towarzystwo."
+    },
+    {
+      "start": 472.96,
+      "end": 479.08,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 564.41,
+      "end": 580.85,
+      "text": "Dużo dobrego dzieje się na polskiej scenie metalowej, ale też w jej okolicach, więc choć zaczęliśmy od ciosów raczej nokautujących, teraz przez chwilę zajmiemy się dźwiękami mniej ekstremalnymi, ale też wartymi uwagi."
+    },
+    {
+      "start": 581.47,
+      "end": 591.97,
+      "text": "Próbkę nowej płyty Pure Bedlam już prezentowałem kilka tygodni temu, przedpremierowo, kiedy gościłem w studiu Wojtka, pięknie w Pure Bedlam, śpiewającego."
+    },
+    {
+      "start": 592.31,
+      "end": 604.01,
+      "text": "Ale jeśli komuś umknęło, przypomnę, że trzecia płyta Pure Bedlam nazywa się Jubilance i jest wyciągiem z różnych odmian tak zwanego ciężkiego rocka."
+    },
+    {
+      "start": 604.23,
+      "end": 617.81,
+      "text": "Od post-hardcora przez grunge, ale taki raczej w stylu Alice in Chains niż ten grunge bliski punkowi, a więc w sumie to też metal, aż po emo."
+    },
+    {
+      "start": 618.53,
+      "end": 629.95,
+      "text": "Kiedyś Pure Bedlam robiliby z tym karierę w mainstreamie, teraz pewnie nie zrobią, ale to przecież nie znaczy, że przyjemność ze słuchania mniejsza."
+    },
+    {
+      "start": 850.66,
+      "end": 862.4,
+      "text": "To było Pure Bedlam, a przed nami kolejna piosenka, która w czasach dominacji rocka miałaby szansę na duże sukcesy w kraju i za granicą, w radiu i w telewizji."
+    },
+    {
+      "start": 863.06,
+      "end": 872.02,
+      "text": "Ale teraz takie granie, o ile nie pochodzi od nazw już osadzonych na rynku dawno wypromowanych, raczej ma pod górkę."
+    },
+    {
+      "start": 872.6,
+      "end": 889.18,
+      "text": "Chociaż autorem i wykonawcą utworu jest człowiek, który od dekad dzielnie walczy z żywiołem i na czele swojego macierzystego zespołu cieszył się swojego czasu sporą popularnością wśród metalowej publiczności."
+    },
+    {
+      "start": 889.9,
+      "end": 895.72,
+      "text": "Zespół ten nazywał się i właściwie chyba wciąż nazywa, bo działa Magnus."
+    },
+    {
+      "start": 895.92,
+      "end": 908.42,
+      "text": "To ich działanie jest takie raczej z doskoku niż na pełnych obrotach, nic więc dziwnego, że Rob Bandit, wokalista grupy, ma czas też na solowe materiały."
+    },
+    {
+      "start": 908.84,
+      "end": 918.44,
+      "text": "Mniej jadowite od tego, co nagrywa z Magnusem, bardziej współcześnie, brzmiące z pewnym gotyckim posmakiem."
+    },
+    {
+      "start": 919,
+      "end": 927.7,
+      "text": "Niezmiennie warte uwagi powinny się spodobać i fanom Paradise Lost, i Fields of the Nephilim, i może nawet Mansona."
+    },
+    {
+      "start": 928.34,
+      "end": 936.32,
+      "text": "Najnowsza płyta, solowa Roba Bandita, nosi tytuł Rope i wysłuchamy utworu tytułowego."
+    },
+    {
+      "start": 936.32,
+      "end": 938.62,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1182.31,
+      "end": 1189.73,
+      "text": "Słuchacie ciężko na sercu w trójce i słuchacie dzisiaj wyłącznie polskich artystów."
+    },
+    {
+      "start": 1190.07,
+      "end": 1196.23,
+      "text": "Warszawska grupa BHP, BHP, nie wiem, prawdę mówiąc, nie dopytałem."
+    },
+    {
+      "start": 1196.67,
+      "end": 1203.65,
+      "text": "To chyba pierwszy polski zespół grający New Metal, który przekonuje mnie bez żadnych zastrzeżeń."
+    },
+    {
+      "start": 1204.29,
+      "end": 1220.85,
+      "text": "Wiem, późno, bo to przedstawiciele drugiej fali New Metalu, ale nic na to nie poradzę, że w tej pierwszej zawsze miałem do rodzimych wykonawców, którzy parali się tym gatunkiem, mniejsze lub większe zastrzeżenia."
+    },
+    {
+      "start": 1221.25,
+      "end": 1240.17,
+      "text": "Być może chodzi o to, że na początku lat dwutysięcznych była to zupełnie nowa stylistyka, którą muzycy zajmujący się wcześniej innymi odmianami metalu i roka próbowali szybko sobie przyswoić, adaptować do swoich i naszych przyzwyczajeń."
+    },
+    {
+      "start": 1241.29,
+      "end": 1249.87,
+      "text": "A dla BHP to brzmienia zupełnie naturalne, oswojone. Grają to tak, jakby się z tym urodzili."
+    },
+    {
+      "start": 1249.87,
+      "end": 1272.49,
+      "text": "Ich nowa epka nosi tytuł Snap i choć słychać, że to jeszcze undergroundowa produkcja, potencjał jest taki, że jakbym był ważniakiem z jakiejś europejskiej wytwórni płytowej, adresującej swoje wydawnictwa do młodszych odbiorców ciężkich dźwięków, to już bym im podsuwał kontrakt do podpisania."
+    },
+    {
+      "start": 1467.65,
+      "end": 1491.27,
+      "text": "Przed nami chwila z ciężarami niemetalowymi, ale takimi, które na pewno znajdą poklask wśród metalowej publiczności, bo skoro kocha się tu Wardrunę i Heilung, a z drugiej strony np. Swans, Neptunian maksymalizm czy ciśnienie, to nie widzę powodu, by nie pokochać Hier."
+    },
+    {
+      "start": 1491.65,
+      "end": 1514.35,
+      "text": "Myślę, że trzeba też koniecznie wspomnieć nazwę Dead Can Dance, a więc zespołu w świecie metalu zawsze podziwianego, a Dead Can Dance wspominam przede wszystkim dlatego, że śpiew Macieja Świniarskiego przypomina młodego Brendana Perego i mówię to jako duży komplement."
+    },
+    {
+      "start": 1515.09,
+      "end": 1525.37,
+      "text": "Powiedział mi niedawno jeden Islandczyk, że popędził na koncert Hier, bo był ciekaw czemu zespół z Polski wziął sobie islandzką właśnie nazwę."
+    },
+    {
+      "start": 1526.07,
+      "end": 1529.91,
+      "text": "Na to pytanie wam nie odpowiem, ale mogę się domyślać."
+    },
+    {
+      "start": 1530.09,
+      "end": 1550.73,
+      "text": "Aura tej muzyki jest jak ten film Roberta Gersa o Wikingu, a więc mrok, dłużyzny, atmosfera tajemnicy i dojmującego niepokoju, ale zarazem oszałamiająca dawka surowego, piękna."
+    },
+    {
+      "start": 1550.73,
+      "end": 1572.99,
+      "text": "Liderem Hier jest Tomasz Chyła, skrzypek i kompozytor jazzowy, który w tym nowym projekcie wypływa na zupełnie inne wody i nawet jeśli jazz czasem pulsuje gdzieś w tle, czasem prawdę mówiąc nawet nie tylko w tle,"
+    },
+    {
+      "start": 1573.69,
+      "end": 1578.57,
+      "text": "muzyka Hier wymyka się jednoznacznej klasyfikacji gatunkowej."
+    },
+    {
+      "start": 1579.49,
+      "end": 1588.71,
+      "text": "Album Monochrom, debiut grupy, ukazał się na świecie z nalepką, zresztą jak najbardziej metalowej wytwórni, czyli Season of Mist."
+    },
+    {
+      "start": 1589.57,
+      "end": 1594.71,
+      "text": "Co za tym idzie, media się interesują, festiwale zapraszają."
+    },
+    {
+      "start": 1595.57,
+      "end": 1601.45,
+      "text": "Będzie to pięknie rosło, będziemy mieć kolejny fantastyczny towar eksportowy."
+    },
+    {
+      "start": 1891.74,
+      "end": 1898.08,
+      "text": "Zupełnie niemetalowy, ale niemetalowy inaczej jest też zespół Popsysze."
+    },
+    {
+      "start": 1898.88,
+      "end": 1903.7,
+      "text": "Przede wszystkim dlatego, że grupa nie ma związków z metalowym środowiskiem,"
+    },
+    {
+      "start": 1903.8,
+      "end": 1910.72,
+      "text": "przynajmniej nic o tym nie wiem i nijak nie odwołuje się do tego nurtu wizerunkowo."
+    },
+    {
+      "start": 1911.32,
+      "end": 1917.3,
+      "text": "Natomiast już w obrębie samych dźwięków nie są to rzeczy bardzo odległe od tego,"
+    },
+    {
+      "start": 1917.3,
+      "end": 1926.38,
+      "text": "czego słuchają fani choćby postmetalu albo psychodelicznych rubieży stoner metalu,"
+    },
+    {
+      "start": 1927.08,
+      "end": 1935.72,
+      "text": "czy tym podobnych roadburnowych klimatów, które żywią się równie chętnie dziedzictwem Black Sabbath,"
+    },
+    {
+      "start": 1935.72,
+      "end": 1944.78,
+      "text": "co na przykład kraut roka i hipisowskiego psychodelicznego roka z przełomu lat 60. i 70."
+    },
+    {
+      "start": 1945.66,
+      "end": 1955.88,
+      "text": "Popsysze pochodzą z Trójmiasta i to też słychać, to piękne dziedzictwo trójmiejskiej sceny alternatywnej."
+    },
+    {
+      "start": 1956.48,
+      "end": 1965.16,
+      "text": "Grupa wydała właśnie swoją piątą płytę zatytułowaną Powięź, z której wybrałem dla was utwór Nienasycenie."
+    },
+    {
+      "start": 1965.66,
+      "end": 1970.88,
+      "text": "Bo jestem święcie przekonany, że choć to podróż, która potrwa ponad 8 minut,"
+    },
+    {
+      "start": 1971.4,
+      "end": 1980.16,
+      "text": "właśnie Nienasycenie będzie uczuciem, z którym was pozostawi i zapragniecie więcej."
+    },
+    {
+      "start": 1980.86,
+      "end": 1989.72,
+      "text": "Słusznie, choć musicie się przygotować na to, że ten materiał zaskoczy was również zupełnie innymi emocjami."
+    },
+    {
+      "start": 1989.72,
+      "end": 1992.6,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2499.88,
+      "end": 2513.14,
+      "text": "Wracając na pozycje zdecydowanie metalowe, ale takie, żeby po popsyszach, czy może po popsyszu, po popsysze, nie były dla Was zbyt wielkim szokiem,"
+    },
+    {
+      "start": 2514.14,
+      "end": 2519.76,
+      "text": "przedstawię z wielką przyjemnością nagranie z nowego albumu kieleckiej grupy Belzebong."
+    },
+    {
+      "start": 2520.3,
+      "end": 2528.8,
+      "text": "Moda na Stoner Doom chyba już za nami. Pewnie kiedyś znowu wróci, bo to zawsze rozchodzi się falami."
+    },
+    {
+      "start": 2529.56,
+      "end": 2536.26,
+      "text": "Za to teraz jest dobry moment, by sprawdzić, co nam z tej poprzedniej fali zostało."
+    },
+    {
+      "start": 2536.26,
+      "end": 2548.14,
+      "text": "I Belzebong jest jednym z tych zespołów, które już nie muszą przejmować się aktualnymi trendami, bo grają swoje tak konsekwentnie i tak dobrze,"
+    },
+    {
+      "start": 2548.66,
+      "end": 2554.14,
+      "text": "że mają wierną, coraz większą w dodatku publiczność nie tylko w Polsce."
+    },
+    {
+      "start": 2554.8,
+      "end": 2567.62,
+      "text": "Jesienią zjeździli pół Europy z koncertami, a ich czwarta płyta, The End Is High, ukazuje się za sprawą włoskiej wytwórni Heavy Psych Sounds Records,"
+    },
+    {
+      "start": 2568.2,
+      "end": 2572.56,
+      "text": "co w tej branży oznacza pieczęć ze znakiem jakości."
+    },
+    {
+      "start": 2573.68,
+      "end": 2582.72,
+      "text": "No ale to Włosi powinni być wdzięczni Belzebongowi, że raczą ich zaszczycić dostarczeniem takich piosenek."
+    },
+    {
+      "start": 2582.88,
+      "end": 2588.46,
+      "text": "Tylko czterech, bo oczywiście są długie, jak na prawidła gatunku przystało."
+    },
+    {
+      "start": 2589.04,
+      "end": 2591.56,
+      "text": "Zatem zaprezentuję Wam najkrótszą."
+    },
+    {
+      "start": 2592.3,
+      "end": 2592.98,
+      "text": "Chcecie więcej?"
+    },
+    {
+      "start": 2593.58,
+      "end": 2596.48,
+      "text": "To zapraszam do zanurzenia się w cały album."
+    },
+    {
+      "start": 2600.56,
+      "end": 2601.48,
+      "text": "Zobaczcie, młodzieży."
+    },
+    {
+      "start": 2601.48,
+      "end": 2603.32,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 2934.22,
+      "end": 2942.9,
+      "text": "Belzebong ładnie nam rozgrzał lampy w głośnikach, więc czas przekazać sprzęt komuś, kto je prawdopodobnie spali."
+    },
+    {
+      "start": 2943.52,
+      "end": 2948.96,
+      "text": "No ale cóż, raz się żyje, odkręcamy potencjometry głośności do jedenastu."
+    },
+    {
+      "start": 2949.58,
+      "end": 2958.38,
+      "text": "Projekt HEARN to wspólne dzieło Marcela Gawineckiego z Ugorów i Wiktora Kozaka z Moonstone,"
+    },
+    {
+      "start": 2958.38,
+      "end": 2962.62,
+      "text": "którzy już w swoich macierzystych formacjach grają ciężko i głośno."
+    },
+    {
+      "start": 2963.22,
+      "end": 2972.64,
+      "text": "Ale widocznie nie aż tak ciężko i głośno, jak czasem by im się marzyło, więc wymyślili sobie rzeczony HEARN."
+    },
+    {
+      "start": 2973.9,
+      "end": 2983.58,
+      "text": "Tytułem debiutanckiego materiału What the Sun Said jednoznacznie informują, że to hołd dla formacji SEM,"
+    },
+    {
+      "start": 2983.58,
+      "end": 2989.08,
+      "text": "ale nawet gdyby się do tego nie przyznawali, wyprzeć też by się nie mogli."
+    },
+    {
+      "start": 2989.52,
+      "end": 2998.08,
+      "text": "Metalowe drony, infradźwięki, wibracje rozstrajające układ nerwowy i prasujące fałdy mózgowe."
+    },
+    {
+      "start": 2998.74,
+      "end": 3007.28,
+      "text": "Jeśli ktoś lubi takie wrażenia, z przyjemnością podryfuje sobie na tych ciężkich wodach."
+    },
+    {
+      "start": 3007.28,
+      "end": 3008.92,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3338.75,
+      "end": 3347.23,
+      "text": "Słuchacie ciężko na sercu odcinka poświęconego wyłącznie polskiej muzyce i czas podkręcić tempo."
+    },
+    {
+      "start": 3347.91,
+      "end": 3353.83,
+      "text": "Bydgoska grupa Mortis Day już od ponad trzech dekad walczy na death metalowym froncie,"
+    },
+    {
+      "start": 3354.61,
+      "end": 3358.33,
+      "text": "a to oznacza, że panowie doskonale znają reguły tej gry."
+    },
+    {
+      "start": 3358.33,
+      "end": 3364.91,
+      "text": "Pod koniec ubiegłego roku ukazał się ich piąty album zatytułowany The Bringers of Death"
+    },
+    {
+      "start": 3364.91,
+      "end": 3369.39,
+      "text": "i właściwie nic więcej nie trzeba mówić."
+    },
+    {
+      "start": 3369.93,
+      "end": 3376.61,
+      "text": "Polska szkoła death metalu w najczystszej postaci, dla fanów gatunku pozycja obowiązkowa."
+    },
+    {
+      "start": 3376.61,
+      "end": 3378.17,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3604.65,
+      "end": 3613.29,
+      "text": "Podobnie jak płyta Mortis Day, album zatytułowany United We Fall też jest tytułem ubiegłorocznym i też przeze mnie przegapionym."
+    },
+    {
+      "start": 3613.93,
+      "end": 3625.91,
+      "text": "A szkoda by było w ogóle o nim nie wspomnieć, w ogóle nie puścić tej muzyki, bo krakowski zespół Thy Disease przedstawił się na nim od jak najlepszej strony."
+    },
+    {
+      "start": 3626.53,
+      "end": 3632.39,
+      "text": "To też formacja już nie młoda, jej historia sięga poprzedniego stulecia."
+    },
+    {
+      "start": 3632.83,
+      "end": 3647.77,
+      "text": "Zaczynali na pograniczu black i death metalu, później poszli w stronę brzmień bardziej nowoczesnych, mocno nasyconych elektroniką, a teraz niespodzianka, nastąpił zwrot akcji ku brutalności."
+    },
+    {
+      "start": 3648.41,
+      "end": 3656.93,
+      "text": "United We Fall to właściwie album death metalowy, chociaż słychać, że to wciąż ten sam zespół."
+    },
+    {
+      "start": 3657.35,
+      "end": 3663.87,
+      "text": "Słychać też, że w nowy materiał włożono sporo pracy, zarówno w jego napisanie, jak i produkcję."
+    },
+    {
+      "start": 3664.81,
+      "end": 3678.41,
+      "text": "Radzę się zatem zapoznać, nawet jeżeli wcześniej z Thy Disease nie było wam po drodze, bo to zupełnie nowe otwarcie i moim zdaniem kierunek warty kontynuowania."
+    },
+    {
+      "start": 3879.72,
+      "end": 3886.48,
+      "text": "Przed nami Budda z samym Ha na końcu jak mniemam niemym."
+    },
+    {
+      "start": 3886.6,
+      "end": 3903.78,
+      "text": "Budda nie gra muzyki medytacyjnej, choć nie mi rozsądzać przy czym winszują sobie Państwo pomedytować, ale może się nie udać, bo za dużo się w tych piosenkach dzieje."
+    },
+    {
+      "start": 3904.14,
+      "end": 3919.88,
+      "text": "Punktem wyjścia jest death metal, niby brutalny i prymitywny, szczególnie na poziomie brzmieniowym, ale jednak na swój sposób wyrafinowany i sięgający swoimi mackami również poza granice gatunku."
+    },
+    {
+      "start": 3920.04,
+      "end": 3937.12,
+      "text": "Budda to duet z Bydgoszczy, który po serii wydanych niezależnie mniejszych materiałów zadebiutował właśnie dużym albumem Amiotrophy i wierzę, że to zapowiedź czegoś większego."
+    },
+    {
+      "start": 3937.72,
+      "end": 3939.72,
+      "text": "Będę uważnie obserwował."
+    },
+    {
+      "start": 3939.72,
+      "end": 3953.8,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4146.45,
+      "end": 4150.93,
+      "text": "Podobało się? To zróbmy jeszcze jeden śmiały krok w stronę odchłani."
+    },
+    {
+      "start": 4151.69,
+      "end": 4169.67,
+      "text": "Widziałem niedawno Upon the Altar na scenie i jest dobrze, choć powinni jeszcze trochę potu z siebie wylać, trochę dłużej ze sobą pograć, żeby było równie dobrze jak na materiałach studyjnych, bo tu już absolutnie niczego nie brakuje."
+    },
+    {
+      "start": 4170.23,
+      "end": 4182.93,
+      "text": "Inna sprawa, że rozpętanie takiego piekła na scenie to zadanie niełatwe, bo Tarnowski zespół proponuje bardzo gęsty death metal przypieczony na black metalowym ogniu."
+    },
+    {
+      "start": 4183.59,
+      "end": 4196.29,
+      "text": "Ich najnowsza grudniowa epka zatytułowana Profenation's Vapor to światowy poziom w tej dyscyplinie i żeby nie być gołosłownym puszczę Wam Dominatio in Excelsis."
+    },
+    {
+      "start": 4196.29,
+      "end": 4198.59,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4374.87,
+      "end": 4384.21,
+      "text": "To był Upon the Altar. Pozostajemy w tym samym kręgu piekielnym, gdzie po sąsiedzku hałasuje Temple of Decay."
+    },
+    {
+      "start": 4384.79,
+      "end": 4388.79,
+      "text": "Jednoosobowy projekt prowadzony przez niejakiego morta."
+    },
+    {
+      "start": 4389.69,
+      "end": 4398.91,
+      "text": "Lada chwila ukaże się trzecia płyta Temple of Decay zatytułowana Profanus i będzie to piękny popis dźwiękowej mizantropii."
+    },
+    {
+      "start": 4398.91,
+      "end": 4406.25,
+      "text": "W czym jak w czym, ale w tych najbardziej ekstremalnych rejonach metalu Polacy zawsze byli mistrzami."
+    },
+    {
+      "start": 4706.88,
+      "end": 4718.78,
+      "text": "Podobnie jak Temple of Decay jednoosobową hordą jest Actum Infernis Olsztyna, projekt wprawiany w ruch przez artystę o pseudonimie Draconis."
+    },
+    {
+      "start": 4719.54,
+      "end": 4729.1,
+      "text": "Zawartość swojej nowej trzeciej już płyty zapowiadał takimi słowami, bez kompromisów, bez światła, bez przebaczenia."
+    },
+    {
+      "start": 4729.1,
+      "end": 4737.8,
+      "text": "I prawdę mówiąc niewiele mam do dodania. Actum Inferni to black metal w prostej linii wyprowadzony z norweskiej szkoły."
+    },
+    {
+      "start": 4738.26,
+      "end": 4752.04,
+      "text": "Gatunku z tymi jazgoczącymi, ostrymi jak stłuczone szkło gitarami, z przeszywającym wysokim krzykiem wokalisty, ale też z melodyjnymi, melancholijnymi partiami."
+    },
+    {
+      "start": 4752.52,
+      "end": 4762.08,
+      "text": "Album nosi tytuł Insygnia Diabelskiej Władzy, a w audycji ciężko na sercu reprezentować go będzie utwór o tytule"
+    },
+    {
+      "start": 4762.08,
+      "end": 4769.4,
+      "text": "Na krawędzi egzystencji część pierwsza, nim kur obwieści świt."
+    },
+    {
+      "start": 5349.25,
+      "end": 5370.81,
+      "text": "Do świtu jeszcze daleko, a już za chwileczkę, już za momencik, waszej krwi pragnął będzie zespół Konig Reichsall, a właściwie to pragnął jej będzie wampir Heretyk, który posłużył się zespołem Konig Reichsall jako medium."
+    },
+    {
+      "start": 5371.49,
+      "end": 5389.59,
+      "text": "Utwór, w którym ta śląska grupa cytuje wiersz wampir Tadeusza Miecińskiego, swoją drogą ulubionego poety polskich black metalowców, pochodzi z mini albumu Loven 2, wydanego w grudniu ubiegłego roku."
+    },
+    {
+      "start": 5390.01,
+      "end": 5402.75,
+      "text": "Wydanego przede wszystkim po to, by potwierdzić jednoznacznie, że to dziś jeden z wiodących przedstawicieli nowego polskiego black metalu, a przecież gęsto na tej scenie, oj gęsto."
+    },
+    {
+      "start": 5402.75,
+      "end": 5417.37,
+      "text": "Krew! Pragnę Twojej krwi, by ugasić me pragnienie."
+    },
+    {
+      "start": 5708.42,
+      "end": 5712,
+      "text": "Kolejne dwa zespoły to Wstręt i Udręka."
+    },
+    {
+      "start": 5712.86,
+      "end": 5717.5,
+      "text": "I przez chwilę zastanawiałem się, w jakiej kolejności powinienem je zaprezentować,"
+    },
+    {
+      "start": 5717.6,
+      "end": 5720.58,
+      "text": "gdybym miał kierować się wyłącznie nazwami."
+    },
+    {
+      "start": 5721.12,
+      "end": 5725.52,
+      "text": "Czy Wstręt poprzedza Udrękę, czy raczej z niej wynika?"
+    },
+    {
+      "start": 5726.52,
+      "end": 5734.8,
+      "text": "To filozoficzne zagadnienie, które pozostawię Wam do rozstrzygnięcia na własny użytek,"
+    },
+    {
+      "start": 5734.8,
+      "end": 5737.12,
+      "text": "a zacznę od Wstrętu."
+    },
+    {
+      "start": 5737.66,
+      "end": 5743.32,
+      "text": "To dwuosobowy projekt z Warszawy, co jest o tyle ważne, że istnieje też,"
+    },
+    {
+      "start": 5743.38,
+      "end": 5747.64,
+      "text": "czy właściwie istniał Wstręt Gdański zupełnie inny."
+    },
+    {
+      "start": 5748.22,
+      "end": 5757.82,
+      "text": "Ten ze stolicy jest wstrętniejszy, bardziej brutalny, specjalizujący się w piwnicznym Black Death Metalu."
+    },
+    {
+      "start": 5758.4,
+      "end": 5765.18,
+      "text": "Niedawno ukazała się ich druga epka Enlightened Misanthropy i wysłuchamy utworu tytułowego."
+    },
+    {
+      "start": 5765.18,
+      "end": 5773.94,
+      "text": "Nie tylko dlatego, że bardzo podoba mi się sam tytuł, czyli oświecona misanthropia,"
+    },
+    {
+      "start": 5774.5,
+      "end": 5778.18,
+      "text": "choć to przecież byłby wystarczająco dobry powód."
+    },
+    {
+      "start": 5986.53,
+      "end": 5997.97,
+      "text": "Zanim powiem parę słów o udręce, chciałbym zaznaczyć głośno i wyraźnie, że w dzisiejszym wydaniu mamy nadreprezentację zespołów z wytwórni Gods of War."
+    },
+    {
+      "start": 5998.73,
+      "end": 6007.61,
+      "text": "W Polsce działa wiele podziemnych labeli metalowych, niektóre z nich przypominają o sobie z rzadka raz czy dwa do roku."
+    },
+    {
+      "start": 6007.61,
+      "end": 6025.47,
+      "text": "Inne mają bogate katalogi, ale mało kto może się pochwalić taką aktywnością jak Grzegorz, który po pierwsze wyławia czarne perły z rodzimego podziemia, ale też przecież znajduje fantastyczne kapele z całego świata."
+    },
+    {
+      "start": 6025.91,
+      "end": 6043.85,
+      "text": "Gods of War, proszę poszukać, sprawdzić, będą Państwo zadowoleni, szczególnie jeśli dzisiaj podobały Wam się nagrania Wstrętu, Skródy, Budda i Upon the Altar oraz jeśli spodoba Wam się Udręka."
+    },
+    {
+      "start": 6045.09,
+      "end": 6052.05,
+      "text": "No a co ma się nie spodobać, skoro to black metal spełniający wszystkie obowiązkowe kryteria gatunku."
+    },
+    {
+      "start": 6052.37,
+      "end": 6067.05,
+      "text": "Grupa pochodzi z Kielc, ich debiutancki album ukazał się pod koniec stycznia, nosi tytuł Nieistnienie i zapewne pozwolił Dręce zaistnieć na dłużej w życzliwej pamięci fanów black metalu."
+    },
+    {
+      "start": 6067.05,
+      "end": 6069.63,
+      "text": "Muzyka"
+    },
+    {
+      "start": 6337.32,
+      "end": 6351.3,
+      "text": "Na koniec dzisiejszej audycji zespół z Norwegii, ale skoro utwór nosi tytuł Nie módl się za nami, można to uznać za wskazówkę, że mamy do czynienia z rodakami i tak jest w istocie."
+    },
+    {
+      "start": 6351.84,
+      "end": 6358.08,
+      "text": "Mieszkają na północy, tam tworzą, ale jak najbardziej należy im się miejsce w dzisiejszej audycji."
+    },
+    {
+      "start": 6358.08,
+      "end": 6377.64,
+      "text": "Rides of Regress, tak nazywa się ten kwartet, zadebiutował w 2024 roku płytą Dust, którą odcinał słuchaczy od światła miażdżącym doom metalem nasyconym black metalową czernią."
+    },
+    {
+      "start": 6377.64,
+      "end": 6393.44,
+      "text": "Na najnowszym singlu, którego tytuł już znacie Nie módl się za nami, grupa kontynuuje ten kierunek i nie mógłbym sobie wyobrazić lepszego, bardziej przytłaczającego finału dzisiejszej audycji."
+    },
+    {
+      "start": 6393.78,
+      "end": 6407.18,
+      "text": "Nawet jeśli nie zmieści nam się cała kompozycja, proszę zespół o wybaczenie, bo to trwa 15 minut, będziecie mieli dobry obraz tego, czego się po Rides of Regress spodziewać"
+    },
+    {
+      "start": 6407.18,
+      "end": 6415.94,
+      "text": "i dobry powód, by odnaleźć całość w odmętach internetu i w skupieniu wysłuchać."
+    },
+    {
+      "start": 6416.6,
+      "end": 6424.06,
+      "text": "Dobranoc, jakkolwiek ironicznie by to nie brzmiało w kontekście tego, co za chwilę usłyszycie."
+    },
+    {
+      "start": 6424.06,
+      "end": 6426.2,
+      "text": "Dzień dobry."
+    }
+  ],
+  "stats": {
+    "windowCount": 22,
+    "transcribedAudioSec": 1518.1,
+    "segmentCount": 156,
+    "characterCount": 16583
+  },
+  "sourceId": "2026-02-11-nowosci-z-polski-od-psychodelii-po-ekstreme"
+}
