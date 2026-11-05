@@ -1,0 +1,930 @@
+{
+  "version": 1,
+  "episodeId": "cb083283-015c-48a5-a169-5a29240f3784",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 291645120,
+  "fileMtimeMs": 1789150479758.5251,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 13.76
+    },
+    {
+      "index": 1,
+      "start": 127.4,
+      "end": 310.04
+    },
+    {
+      "index": 2,
+      "start": 511.59000000000003,
+      "end": 542.72
+    },
+    {
+      "index": 3,
+      "start": 901.99,
+      "end": 978.3
+    },
+    {
+      "index": 4,
+      "start": 1238.69,
+      "end": 1317.15
+    },
+    {
+      "index": 5,
+      "start": 1537,
+      "end": 1589.82
+    },
+    {
+      "index": 6,
+      "start": 1912.1,
+      "end": 2019.55
+    },
+    {
+      "index": 7,
+      "start": 2061.09,
+      "end": 2064.57
+    },
+    {
+      "index": 8,
+      "start": 2295.52,
+      "end": 2408.03
+    },
+    {
+      "index": 9,
+      "start": 2744.61,
+      "end": 2821.28
+    },
+    {
+      "index": 10,
+      "start": 3067.52,
+      "end": 3113.56
+    },
+    {
+      "index": 11,
+      "start": 3502.6,
+      "end": 3570.49
+    },
+    {
+      "index": 12,
+      "start": 3997,
+      "end": 4057.92
+    },
+    {
+      "index": 13,
+      "start": 4436.87,
+      "end": 4501.63
+    },
+    {
+      "index": 14,
+      "start": 4700.96,
+      "end": 4766.24
+    },
+    {
+      "index": 15,
+      "start": 5104.1,
+      "end": 5153.08
+    },
+    {
+      "index": 16,
+      "start": 5381.51,
+      "end": 5439
+    },
+    {
+      "index": 17,
+      "start": 5659.11,
+      "end": 5729.31
+    },
+    {
+      "index": 18,
+      "start": 5942.69,
+      "end": 6028
+    },
+    {
+      "index": 19,
+      "start": 6297.67,
+      "end": 6381.5
+    },
+    {
+      "index": 20,
+      "start": 6669.54,
+      "end": 6771.39
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.92,
+      "text": "Trójka"
+    },
+    {
+      "start": 1.92,
+      "end": 5.58,
+      "text": "Program Trzeci Polskiego Radia"
+    },
+    {
+      "start": 5.58,
+      "end": 11.68,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 11.68,
+      "end": 13.76,
+      "text": "Muzyka"
+    },
+    {
+      "start": 128.14,
+      "end": 133.94,
+      "text": "Warszawski zespół Hypnozaur ostrzegał Was przed niebezpieczeństwem."
+    },
+    {
+      "start": 134.66,
+      "end": 143.64,
+      "text": "Nie bez powodu utworem Danger rozpoczęliśmy bowiem kolejny odcinek audycji Ciężko na sercu."
+    },
+    {
+      "start": 144.48,
+      "end": 148.92,
+      "text": "Prowadzi ją dla Was Jarek Szubrycht, a wydaje Mariusz Owczarek."
+    },
+    {
+      "start": 148.92,
+      "end": 163.08,
+      "text": "Kilka tygodni temu, podsumowując maj, odgrażałem się, że czasu brakuje na przedstawienie wielu ciekawych nowości z Polski i że trzeba będzie nadrobić zaległości."
+    },
+    {
+      "start": 163.08,
+      "end": 177.04,
+      "text": "A zatem to jest ten moment. Oj, dziś, dziś grane będą ciężary tylko z Polski. Rzeczy zupełnie świeże, tegoroczne, a nawet tego tygodniowe."
+    },
+    {
+      "start": 177.74,
+      "end": 185.88,
+      "text": "Kwartet Hypnozaur powitał nas piosenką ze swojej nowej, drugiej dużej płyty zatytułowanej Afterlife."
+    },
+    {
+      "start": 186.7,
+      "end": 189.44,
+      "text": "Mówią, że grają Jurassic Punk."
+    },
+    {
+      "start": 190.28,
+      "end": 200.06,
+      "text": "Śmieszne, ale on ani taki jurajski, ani taki bardzo punk, to po prostu pancerny rock'n'roll."
+    },
+    {
+      "start": 200.06,
+      "end": 203.98,
+      "text": "Ciężki w sam raz i w sam raz przebojowy."
+    },
+    {
+      "start": 204.6,
+      "end": 213.74,
+      "text": "Świetne granie z potencjałem na karierę, o ile Hypnozaurowi uda się zaistnieć poza granicami naszego kraju,"
+    },
+    {
+      "start": 213.74,
+      "end": 224.08,
+      "text": "bo u nas w tej stylistyce póki co nikomu chyba nie udało się przebić do szerokiej publiczności."
+    },
+    {
+      "start": 224.88,
+      "end": 228.88,
+      "text": "No ale może Hypnozaur będzie pierwszy, trzymam kciuki."
+    },
+    {
+      "start": 229.88,
+      "end": 231.98,
+      "text": "Więcej rock'n'rolla dzisiaj dla was nie mam."
+    },
+    {
+      "start": 232.76,
+      "end": 242.9,
+      "text": "Głównie zaproponuję wam gruz i piekielne wyziewy, bo Polacy od lat specjalizują się w metalowej ekstremie."
+    },
+    {
+      "start": 242.9,
+      "end": 251.8,
+      "text": "Mam jednak jeszcze jedną piosenkę, której intencją, czy właściwie intencją tych, co ją stworzyli i wykonują,"
+    },
+    {
+      "start": 252.32,
+      "end": 255.84,
+      "text": "jest wprowadzenie słuchacza w dobry nastrój."
+    },
+    {
+      "start": 256.54,
+      "end": 268.2,
+      "text": "Grupa Diving Stove też jest z Warszawy, ale też trochę z Ameryki, bo gra trash po amerykańsku i może odrobinę jest z Poznania,"
+    },
+    {
+      "start": 268.32,
+      "end": 277.5,
+      "text": "bo kiedy zaczęli ostatnio koncertować jako otwieracz przed acid drinkers, to chyba nikogo to połączenie nie zaskoczyło."
+    },
+    {
+      "start": 277.64,
+      "end": 290.18,
+      "text": "Właśnie na koncertach Diving Stove robią na mnie i nie tylko na mnie największe wrażenie, ale w studiu też dają radę."
+    },
+    {
+      "start": 290.92,
+      "end": 300.96,
+      "text": "Niedawno nagrali swoją pierwszą piosenkę po polsku i choć rozumiem tę decyzję, sam nie wiem, czy to najlepszy pomysł,"
+    },
+    {
+      "start": 300.96,
+      "end": 303.46,
+      "text": "za to z przesłaniem zawartym w tytule"
+    },
+    {
+      "start": 303.46,
+      "end": 308.22,
+      "text": "W pełni się zgadzam, byle nie zmądrzeć."
+    },
+    {
+      "start": 308.22,
+      "end": 310.04,
+      "text": "Muzyka"
+    },
+    {
+      "start": 512.59,
+      "end": 519.29,
+      "text": "Zostajemy przy Traszu, ale ze stolicy kraju płyniemy Wisłą na północ, do Torunia."
+    },
+    {
+      "start": 519.93,
+      "end": 531.55,
+      "text": "Kwartet Phantom jest młody, ambitny, kipi energią i w maju wydał swój debiutancki album w krakowskim labelu Defense."
+    },
+    {
+      "start": 532.51,
+      "end": 537.33,
+      "text": "Album nosi tytuł Breathtaking, że niby zapiera dech w piersi."
+    },
+    {
+      "start": 538.03,
+      "end": 541.09,
+      "text": "Sprawdźmy, nie trzeba wierzyć na słowo."
+    },
+    {
+      "start": 541.59,
+      "end": 542.69,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 901.99,
+      "end": 911.25,
+      "text": "Również nakładem The Fence ukazał się w maju album The Fall, debiutancka płyta grupy Demon Fire."
+    },
+    {
+      "start": 911.67,
+      "end": 921.25,
+      "text": "Znowu młodzież, tym razem z Katowic, znowu bardzo zdolna, ale bardziej drapieżna od kolegów z Torunia."
+    },
+    {
+      "start": 921.81,
+      "end": 932.03,
+      "text": "Bo obszar ich zainteresowań to death metal, techniczny, doprawiony groovem, tu i ówdzie nawet jakimiś okruchami black metalu."
+    },
+    {
+      "start": 932.79,
+      "end": 945.31,
+      "text": "Pięknych dożyliśmy czasów, skoro debiuty mamy na takim poziomie, choć z drugiej strony nie pięknych, bo nawet z tak solidnym materiałem trudno się dziś przebić."
+    },
+    {
+      "start": 946.13,
+      "end": 956.97,
+      "text": "Kierownikiem w Demon Fire jest Mikołaj Latacz, gra na gitarze, warczy, pisze piosenki i w ten sposób kontynuuje tradycje rodzinne."
+    },
+    {
+      "start": 957.07,
+      "end": 966.89,
+      "text": "Jego ojciec, Przemysław Latacz, jest liderem Planet Hell i ostatnio zabiera syna w międzyplanetarne loty w roli basisty,"
+    },
+    {
+      "start": 966.89,
+      "end": 976.61,
+      "text": "ale dzisiaj nie zajmujemy się starym, tylko młodym, a więc Demon Fire, proszę Państwa, przedstawia się Wam tak."
+    },
+    {
+      "start": 1239.65,
+      "end": 1245.65,
+      "text": "Jeszcze jeden debiutant, tym razem z Krakowa, nazywa się Asperatus."
+    },
+    {
+      "start": 1246.31,
+      "end": 1253.97,
+      "text": "To już jest młodzież nieco starsza, bo zespół z krótką przerwą działa od kilkunastu lat."
+    },
+    {
+      "start": 1254.75,
+      "end": 1260.99,
+      "text": "Wydał w tym czasie dwie epki i teraz wreszcie przyszedł czas na pełnowymiarowy debiut,"
+    },
+    {
+      "start": 1260.99,
+      "end": 1268.73,
+      "text": "co umożliwiła Asperatusowi współpraca z zasłużoną podziemną wytwórnią Medlion."
+    },
+    {
+      "start": 1269.59,
+      "end": 1278.57,
+      "text": "Album nazywa się Shrines of Human Waste i jest to death metal równie techniczny, co intensywny."
+    },
+    {
+      "start": 1279.53,
+      "end": 1288.57,
+      "text": "Już wcześniej mówiłem o dojrzałych debiutach, no ale ten tutaj to właściwie poziom od razu profesorski."
+    },
+    {
+      "start": 1288.89,
+      "end": 1298.41,
+      "text": "Zupełnie nie dzisiejsza to postawa, dzisiaj bowiem technologia umożliwia zamęczanie świata gradem wydawnictw,"
+    },
+    {
+      "start": 1299.03,
+      "end": 1304.35,
+      "text": "zanim muzycy nauczą się grać i grać ze sobą."
+    },
+    {
+      "start": 1305.27,
+      "end": 1311.67,
+      "text": "Asperatus natomiast długo czekał, by zadać nam nokautujący cios."
+    },
+    {
+      "start": 1316.61,
+      "end": 1317.15,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1538,
+      "end": 1544.06,
+      "text": "Wokalistą zespołu Asperatus, którego przed chwilą wysłuchaliśmy, jest Łukasz Ciepała."
+    },
+    {
+      "start": 1544.6,
+      "end": 1551.7,
+      "text": "Pięknie nam przed chwilą porykiwał i za moment porykiwał będzie ponownie, choć trochę inaczej,"
+    },
+    {
+      "start": 1552.2,
+      "end": 1558.78,
+      "text": "bo kapela inna, muzyka inna, więc pasują do niej inne środki wyrazu."
+    },
+    {
+      "start": 1559.78,
+      "end": 1571.78,
+      "text": "Łukasz jest bowiem również śpiewakiem w zespole Manswara, który sieje zniszczenie na pograniczu Black i Death Metalu"
+    },
+    {
+      "start": 1571.78,
+      "end": 1583.54,
+      "text": "i którego debiutancka, znowu debiutancka płyta Sable Oats to Infinity wydana została w maju przez oficynę Gods of War."
+    },
+    {
+      "start": 1584.18,
+      "end": 1587.64,
+      "text": "Pięknie to żre, posłuchajcie sami."
+    },
+    {
+      "start": 1913.1,
+      "end": 1920.24,
+      "text": "Zostawiamy na chwilę dawną stolicę Polski i przenosimy się do tej obecnej."
+    },
+    {
+      "start": 1920.92,
+      "end": 1924.92,
+      "text": "Zespół Warsaw jest oczywiście z Warszawy."
+    },
+    {
+      "start": 1925.06,
+      "end": 1934.24,
+      "text": "Mieliśmy już z nimi jedno spotkanie wciężko na sercu i teraz będziemy mieli kolejne i zapewne nie ostatnie."
+    },
+    {
+      "start": 1935.22,
+      "end": 1940.84,
+      "text": "Najnowsze dzieło Warsaw to epka zatytułowana Blood for God."
+    },
+    {
+      "start": 1940.84,
+      "end": 1946.18,
+      "text": "Jest to pierwsze wydawnictwo grupy od blisko dekady."
+    },
+    {
+      "start": 1947.38,
+      "end": 1958.86,
+      "text": "Znajdziecie na niej m.in. utwór Fight for All, dedykowany ukraińskim żołnierzom walczącym o wolność własnej ojczyzny,"
+    },
+    {
+      "start": 1959.14,
+      "end": 1965.78,
+      "text": "ale i stąd za wszystkich w tytule o pokój w Europie."
+    },
+    {
+      "start": 1966.42,
+      "end": 1974.7,
+      "text": "Usłyszycie w tym utworze śpiew Anny, która mieszkała z córką przez kilka miesięcy u marka, lidera Warsaw,"
+    },
+    {
+      "start": 1975.56,
+      "end": 1978.2,
+      "text": "kiedy uciekała przed wojną."
+    },
+    {
+      "start": 1979,
+      "end": 1981.7,
+      "text": "Swoje partie nagrała w studiu w Dnipro."
+    },
+    {
+      "start": 1982.34,
+      "end": 1989.6,
+      "text": "W jednym z dwóch studiów nagraniowych, które ocalały i wciąż działają w tym milionowym,"
+    },
+    {
+      "start": 1989.68,
+      "end": 1994.54,
+      "text": "a przynajmniej milionowym przed eskalacją wojny, mieście."
+    },
+    {
+      "start": 1995.5,
+      "end": 2001.66,
+      "text": "Mieście, na które obecnie, właściwie codziennie spadają ruskie rakiety."
+    },
+    {
+      "start": 2002.64,
+      "end": 2010.26,
+      "text": "No więc tak, wojna w metalu to nie pierwszyzna, ale ta tutaj jest bliższa rzeczywistości,"
+    },
+    {
+      "start": 2010.68,
+      "end": 2017.96,
+      "text": "bliższa teraźniejszości niż ta z numerów Boltrauer, Sodom czy Sabaton."
+    },
+    {
+      "start": 2017.96,
+      "end": 2019.56,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 2061.09,
+      "end": 2064.57,
+      "text": "MULȚUMIT PENTRU VIZIONARE!"
+    },
+    {
+      "start": 2296.22,
+      "end": 2303.28,
+      "text": "Teraz mamy niezłą historię, bo niby debiutanci, a jednak weterani."
+    },
+    {
+      "start": 2304.26,
+      "end": 2311.74,
+      "text": "Shine jest zespołem, który powstał raptem dwa lata temu i gra brutalny death metal."
+    },
+    {
+      "start": 2312.46,
+      "end": 2317.98,
+      "text": "Nie należy go zatem mylić ze stonerowo-dumowym Shine, też polskim,"
+    },
+    {
+      "start": 2317.98,
+      "end": 2325.34,
+      "text": "który narodził się jakąś dekadę wcześniej, ale w sumie to nie wiadomo nawet, czy wciąż istnieje."
+    },
+    {
+      "start": 2326.02,
+      "end": 2333.52,
+      "text": "Zajmijmy się zatem tym młodszym, Shine, którego liderem jest Tomasz Dobrzeniecki,"
+    },
+    {
+      "start": 2333.7,
+      "end": 2339.38,
+      "text": "a więc basista i wokalista nieodżałowanego Hazael'a."
+    },
+    {
+      "start": 2339.94,
+      "end": 2347.4,
+      "text": "Zespołu, który ruszył na podbój świata w latach 90. tuż za Vaderem,"
+    },
+    {
+      "start": 2347.88,
+      "end": 2355.88,
+      "text": "podpisał kontrakt z Century Media, co w tamtym czasie było właściwie gwarancją sukcesu."
+    },
+    {
+      "start": 2355.88,
+      "end": 2361.88,
+      "text": "Tyle tylko, że ich płyta nagrana dla Century Media nigdy się nie ukazała."
+    },
+    {
+      "start": 2363.38,
+      "end": 2370.24,
+      "text": "Może kiedyś do tej historii wrócimy, może będzie okazja, ale dzisiaj skupmy się na Shine."
+    },
+    {
+      "start": 2370.88,
+      "end": 2374.96,
+      "text": "Debiutancka płyta zespołu nosi tytuł Wrath Cult."
+    },
+    {
+      "start": 2375.94,
+      "end": 2381.76,
+      "text": "Wyszła nakładem prężnej, undergroundowej oficyny z Ameryki o nazwie Dark Descent."
+    },
+    {
+      "start": 2382.34,
+      "end": 2389.06,
+      "text": "Tej samej, która odkryła dla nas na przykład Blood Incantation albo Tanti Faxat."
+    },
+    {
+      "start": 2389.44,
+      "end": 2395.28,
+      "text": "Swoją drogą, Blood Incantation nagrywające obecnie dla Century Media."
+    },
+    {
+      "start": 2396.34,
+      "end": 2401.88,
+      "text": "Zapamiętajcie zatem nazwę grupy Shine i ten tytuł Wrath Cult,"
+    },
+    {
+      "start": 2402.62,
+      "end": 2406.5,
+      "text": "bo to może być początek pięknej historii."
+    },
+    {
+      "start": 2744.61,
+      "end": 2754.05,
+      "text": "Zespół Neolit nosi taką, a nie inną nazwę, bo powstał mniej więcej w epoce Neolitu."
+    },
+    {
+      "start": 2754.81,
+      "end": 2760.93,
+      "text": "Zaczynał od Def Doom Metalu, potem dryfował w stronę Blacku."
+    },
+    {
+      "start": 2760.93,
+      "end": 2772.79,
+      "text": "Dzisiaj najwięcej jest w tej muzyce Def Metalu, choć Neolit jak zwykle pozostawia sobie margines gatunkowej niedokreśloności."
+    },
+    {
+      "start": 2773.55,
+      "end": 2777.81,
+      "text": "Tak czy owak słychać w ich muzyce i doświadczenie."
+    },
+    {
+      "start": 2778.83,
+      "end": 2789.73,
+      "text": "I na szczęście niegasnący zapał, co w przypadku grup z ponad 30-letnim stażem nie jest takie oczywiste."
+    },
+    {
+      "start": 2789.73,
+      "end": 2802.13,
+      "text": "No ale Neolit nie mógł popaść w rutynę, bo to nie jest jeden z tych zespołów, które w pewnym czasie właściwie przeszły na zawodowstwo."
+    },
+    {
+      "start": 2802.49,
+      "end": 2804.87,
+      "text": "To jest niezmiennie underground."
+    },
+    {
+      "start": 2805.19,
+      "end": 2807.83,
+      "text": "To jest ciągle zajawka."
+    },
+    {
+      "start": 2808.75,
+      "end": 2813.19,
+      "text": "Nowy szósty album Neolit ukaże się we wrześniu."
+    },
+    {
+      "start": 2813.85,
+      "end": 2816.01,
+      "text": "Będzie nosił tytuł Inbir."
+    },
+    {
+      "start": 2816.01,
+      "end": 2818.99,
+      "text": "I będzie brzmiał mniej więcej tak."
+    },
+    {
+      "start": 3067.52,
+      "end": 3084.2,
+      "text": "Neolit już pożegnaliśmy. Pozostajemy w podobnych klimatach, a więc w ciemnych, zimnych, wilgotnych korytarzach łączących death metalowe katakumby z black metalowymi jaskiniami."
+    },
+    {
+      "start": 3084.82,
+      "end": 3096.94,
+      "text": "Mieszka tam zespół Sarmat, który na początku roku wydał swoją drugą płytę The Ornaments of Disturbing Perspective i nie ma tutaj żartów."
+    },
+    {
+      "start": 3097.66,
+      "end": 3105.86,
+      "text": "Jest za to kontrastowanie death metalowej wściekłości z ambientowym, posępnym spokojem."
+    },
+    {
+      "start": 3106.66,
+      "end": 3111.6,
+      "text": "Czyżby ziarno zasiane przez wspominany już dziś Blood Incantation?"
+    },
+    {
+      "start": 3111.6,
+      "end": 3113.56,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3502.6,
+      "end": 3517.36,
+      "text": "I jeszcze jeden debiut i znowu tak dojrzały, że ja nie wiem co tam teraz tej młodzieży do paszy dosypują, że tak szybko i taka silna i zdrowa rośnie."
+    },
+    {
+      "start": 3517.8,
+      "end": 3544.18,
+      "text": "Swoją drogą nie wiem nawet czy Aparition, tajemniczy osobnik stojący za Ageless Gateway jest młody, bo może jest stary jak stary Sącz i tylko dlatego pragnie zachować anonimowość, że boi się, żeby mu koledzy na turnusie w Ciechocinku nie dokuczali, że gra taką młodzieżową muzykę zamiast grać z nimi w bingo."
+    },
+    {
+      "start": 3544.18,
+      "end": 3566.96,
+      "text": "Co ja tutaj wygaduję? Pani Aparitionie proszę o wybaczenie, już wracam do konkretów. Debiutancki album projektu Ageless Gateway nosi tytuł Corruptor of Stars. Ukazał się w kwietniu i zabiera nas w taką oto podróż."
+    },
+    {
+      "start": 3997,
+      "end": 4020.2,
+      "text": "Impure Declaration. Są z Poznania, mają niemało doświadczenia nazbieranego w różnych podziemnych składach, więc trafiają do celu bezbłędnie na swojej znowu pierwszej dużej płycie zatytułowanej Of Veins, Tendons and Bones."
+    },
+    {
+      "start": 4020.2,
+      "end": 4044.12,
+      "text": "Surowy, piwniczny Death Metal krzyżują z Doomem i Black Metalem, bo żadna konwencja nie zakazuje takich eksperymentów na podgatunkach metalu, a nawet jakby zakazywała to nie sądzę, by Impure Declaration cokolwiek sobie z tego robili."
+    },
+    {
+      "start": 4044.12,
+      "end": 4056.18,
+      "text": "A więc raz jeszcze, Impure Declaration warto tę nazwę zapamiętać i warto posłuchać całej płyty wydanej w marcu przez oficynę Old Temple."
+    },
+    {
+      "start": 4056.18,
+      "end": 4057.92,
+      "text": "PIEŻE"
+    },
+    {
+      "start": 4436.87,
+      "end": 4452.37,
+      "text": "Zespół Hexen Altar już od dłuższej chwili kręci się po rodzimym undergroundzie, więc i on zasłużył na pełnowymiarowy debiut płytowy, który nosi tytuł Descending Curse."
+    },
+    {
+      "start": 4452.37,
+      "end": 4475.87,
+      "text": "Album jest nowy, ale muzyka stara. To bowiem surowy speed black thrash metal, wariacja na temat czasów, w których hartowała się stal i w Niemczech, w Zagłębiu Rury i w Stanach, ale i w Brazylii."
+    },
+    {
+      "start": 4475.87,
+      "end": 4490.05,
+      "text": "Te wszystkie tropy, te wszystkie ślady są tutaj jak najbardziej uzasadnione. Hexen Altar jest jednym z tych zespołów, którym nie zależy na oryginalności, tylko na skuteczności."
+    },
+    {
+      "start": 4490.93,
+      "end": 4497.73,
+      "text": "I ja to szanuję, bo tu nie ma litości, po Hexen Altar już nie ma kogo dobijać."
+    },
+    {
+      "start": 4500.63,
+      "end": 4501.63,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4701.74,
+      "end": 4722.32,
+      "text": "Wytwórnia Pagan Records odkryła dla nas Behemota, Furie i parę innych zespołów też odkryła, ale akurat nie Azos Mountain, bo zespół ten działa już od dłuższego czasu, choć od niedawna pod opieką Pagan właśnie."
+    },
+    {
+      "start": 4722.32,
+      "end": 4737.44,
+      "text": "Pierwszym owocem ich współpracy jest album Echa Krwi, wypełniony black metalem, który zdaniem muzyków ma jednoznacznie polski charakter."
+    },
+    {
+      "start": 4737.44,
+      "end": 4758.38,
+      "text": "I chyba rzeczywiście ma, nie tylko przez odwołania do różnych pomników polskiej kultury, widoczne już po samych tytułach piosenek, choćby po nikt nie woła, gdzie trudno nie pomyśleć o stepach akermańskich Mickiewicza."
+    },
+    {
+      "start": 4758.38,
+      "end": 4763.46,
+      "text": "My natomiast posłuchamy Bezdroży Jałowych."
+    },
+    {
+      "start": 4763.46,
+      "end": 4766.24,
+      "text": "Aaaaah!"
+    },
+    {
+      "start": 5104.1,
+      "end": 5121.56,
+      "text": "To były bezdroża jałowe, w które zabrał nas zespół Azos Mountain, a przed nami Piołun, też black metal i też swojski, nie tylko za sprawą nazwy."
+    },
+    {
+      "start": 5121.56,
+      "end": 5142.64,
+      "text": "Wieje nie tylko trupim jadem, ale i słowiańską melancholią. Liderem Piołunu jest Sorg, gitarzysta znany z takich grup jak Blaze of Perdition, Oremus czy Manbryne, a więc człowiek, który wie jak to się robi."
+    },
+    {
+      "start": 5142.64,
+      "end": 5151.1,
+      "text": "Druga płyta Piołunu zatytułowana Ex Solvuntur wyszła pod koniec maja i brzmi tak."
+    },
+    {
+      "start": 5151.56,
+      "end": 5153.08,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5382.51,
+      "end": 5394.07,
+      "text": "Prezentowałem wam już wciężko na sercu piosenkę z albumu Carmina Inferorum, debiutu tajemniczej grupy Kurnugia."
+    },
+    {
+      "start": 5395.17,
+      "end": 5405.81,
+      "text": "Prezentowałem i od razu zapowiadałem, że zagram tego więcej, a to dlatego, że Kurnugia bardzo mi się podoba,"
+    },
+    {
+      "start": 5405.81,
+      "end": 5417.01,
+      "text": "bo z jednej strony brzmi awangardowo, nowocześnie, oryginalnie, a z drugiej mamy do czynienia z totalnym powrotem do czasów,"
+    },
+    {
+      "start": 5417.67,
+      "end": 5429.07,
+      "text": "kiedy black metal był jeszcze piwniczny i nikt go nie chciał, natomiast książki Lovecrafta tajemnicze i niebezpieczne,"
+    },
+    {
+      "start": 5429.07,
+      "end": 5436.99,
+      "text": "bo niełatwe do zdobycia. A Ktulu jeszcze wtedy był młody i pełen wigoru."
+    },
+    {
+      "start": 5659.11,
+      "end": 5668.03,
+      "text": "To była Kurnugija, teraz też dziwactwo, ale o zupełnie innym charakterze."
+    },
+    {
+      "start": 5668.79,
+      "end": 5676.01,
+      "text": "Zespół Damask, a właściwie nie zespół, tylko jak sami chcą otwarty projekt muzyczny,"
+    },
+    {
+      "start": 5676.71,
+      "end": 5682.19,
+      "text": "to boczna uliczka trójmiejskiej dumowej grupy Sautrus."
+    },
+    {
+      "start": 5682.81,
+      "end": 5687.83,
+      "text": "I nie wiem w sumie o co im chodzi, właściwie to chyba o wszystko."
+    },
+    {
+      "start": 5688.15,
+      "end": 5694.65,
+      "text": "Trochę mi to przypomina niekontrolowane loty Devina Townsenda, takie, że wiecie."
+    },
+    {
+      "start": 5694.65,
+      "end": 5700.69,
+      "text": "Człowiek nie myśli, gdzie wyląduje, bo liczy się właśnie tylko lot."
+    },
+    {
+      "start": 5701.59,
+      "end": 5711.03,
+      "text": "Nie wiem nawet, czy mi się ten Damask podoba, ale uznałem, że głupio byłoby zignorować,"
+    },
+    {
+      "start": 5711.33,
+      "end": 5720.15,
+      "text": "bo ten ich debiutancki album Three Times Ten jest naprawdę rzeczą wyjątkową."
+    },
+    {
+      "start": 5720.95,
+      "end": 5727.73,
+      "text": "No a ja potem opowiadałbym wam, że lubię w muzyce oryginalność i tego bym wam nie puścił."
+    },
+    {
+      "start": 5727.73,
+      "end": 5729.31,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5943.17,
+      "end": 5968.21,
+      "text": "Lyre to też niekoniecznie moja estetyka, choć w tym przypadku doskonale wiem z czym mam do czynienia, jak to działa i wiem też, że jeśli ktoś lubi folk metal, to już pewnie Lyre zna, bo to zespół charakterystyczny i charakterny, zespół, który pięknie rośnie i już właściwie zaczyna robić międzynarodową karierę."
+    },
+    {
+      "start": 5968.21,
+      "end": 5980.29,
+      "text": "Nie bez powodu. Centralną postacią Lyre jest Michalina Malisz, grająca na Lirze Korbowej, stąd oczywiście nazwa i śpiewająca."
+    },
+    {
+      "start": 5980.87,
+      "end": 5993.99,
+      "text": "Michalina przez lata zdobywała doświadczenie w szwajcarskiej grupie Elevate, która jest bardzo poważnym graczem na światowej scenie folk metalowej."
+    },
+    {
+      "start": 5993.99,
+      "end": 6006.29,
+      "text": "Teraz Michalina pracuje na własny rachunek, a właściwie to ma biznes rodzinny, bo w Lyrek na gitarze gra jej mąż Piotr."
+    },
+    {
+      "start": 6006.99,
+      "end": 6015.79,
+      "text": "Robią to dobrze, czego dowodem jest nowy album Lyre zatytułowany Nothing is Promised."
+    },
+    {
+      "start": 6015.99,
+      "end": 6026.11,
+      "text": "Nic nie zostało obiecane. No nie wiem, nie wiem. Ja to bym im świetlaną przyszłość już na tym etapie obiecywał."
+    },
+    {
+      "start": 6298.63,
+      "end": 6317.71,
+      "text": "Progmetal, nie mówiąc już o progroku, to wciężko na sercu zjawisko rzadkie, bo innych emocji szukam w muzyce, zatem zwykle inne dźwięki wam prezentuję, ale cóż, jesteśmy w trójce i mamy obowiązki trójkowskie."
+    },
+    {
+      "start": 6317.71,
+      "end": 6340.07,
+      "text": "Raz na jakiś czas trzeba zatem pokłonić się tradycjom, którymi nasiąkały te mury. To był żart, pewnie nieśmieszny, natomiast prawda jest taka, że gdański zespół Diatom to grupa w swojej stylistyce po prostu bardzo dobra."
+    },
+    {
+      "start": 6340.07,
+      "end": 6365.07,
+      "text": "Dlatego Jungram nie po raz pierwszy zresztą i zgaduje, że nie po raz ostatni. Cztery lata po płytowym debiucie Diatom powraca z nową płytą zatytułowaną Low Light, na której jest mniej kombinowania, za to więcej ciężaru i ja to szanuję."
+    },
+    {
+      "start": 6365.07,
+      "end": 6379.89,
+      "text": "Tym bardziej, że wyobraźnie i umiejętności muzyków wciąż słychać tu w każdej minucie, zatem krok w stronę komunikatywności może wyjść Diatom tylko na dobre."
+    },
+    {
+      "start": 6670.24,
+      "end": 6684.24,
+      "text": "Jakiś czas temu prezentowałem w audycji muzykę zespołu Głód z płyty Trzecie Słońca i dziwne to było i bardzo dobre."
+    },
+    {
+      "start": 6685.18,
+      "end": 6691.96,
+      "text": "Dowiedziałem się wtedy, że część tego składu ma poboczny projekt o nazwie Pamięć."
+    },
+    {
+      "start": 6691.96,
+      "end": 6701.1,
+      "text": "I na szczęście pamiętałem, by w odpowiedniej chwili Wam tę muzykę zaprezentować."
+    },
+    {
+      "start": 6701.98,
+      "end": 6713.94,
+      "text": "To nawet nie jest metal, nie jest to rock, bo dźwięki generowane są w pamięci za pomocą saksofonu sopranowego,"
+    },
+    {
+      "start": 6713.94,
+      "end": 6722.68,
+      "text": "klarnetu basowego, pianina, syntezatorów analogowych, ale też na przykład noży."
+    },
+    {
+      "start": 6723.82,
+      "end": 6726.66,
+      "text": "Na nożach to w sumie i ja potrafię."
+    },
+    {
+      "start": 6727.26,
+      "end": 6734.86,
+      "text": "No ale nie potrafię robić takich rzeczy jak Pamięć, nie potrafię tak pięknie lawirować pomiędzy jazzem,"
+    },
+    {
+      "start": 6734.86,
+      "end": 6744.82,
+      "text": "czy też post-jazzem, współczeską, a dark ambientem i to tak bardzo dark, że prawie black."
+    },
+    {
+      "start": 6745.58,
+      "end": 6749.74,
+      "text": "Tak czy owak będziecie Państwo zadowoleni."
+    },
+    {
+      "start": 6750.52,
+      "end": 6760.66,
+      "text": "Utwór nosi tytuł Śniący Zbudź się, chyba trudno lepszy, na zakończenie audycji o tej porze."
+    },
+    {
+      "start": 6761.24,
+      "end": 6769.8,
+      "text": "Polecam się zatem Waszej życzliwej pamięci, słyszymy się za tydzień, a teraz słyszymy Pamięć."
+    }
+  ],
+  "stats": {
+    "windowCount": 21,
+    "transcribedAudioSec": 1487.78,
+    "segmentCount": 161,
+    "characterCount": 14603
+  },
+  "sourceId": "2026-06-17-dobre-nowe-polskie-przeglad-ciezkich-krajowych-premier-z-prz"
+}
