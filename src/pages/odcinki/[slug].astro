@@ -209,7 +209,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
             </p>
 
             {entry.audioUrl && (
-              <script type="application/json" id="audio-data" set:html={JSON.stringify({ src: entry.audioUrl, title: `${catalog.program.name} — ${formatEpisodeTitle(entry.title)}`, slug: entry.slug })} />
+              <script type="application/json" id="audio-data" set:html={JSON.stringify({ src: entry.audioUrl, title: formatEpisodeTitle(entry.title), slug: entry.slug })} />
             )}
 
             {blocks.length > 0 ? (

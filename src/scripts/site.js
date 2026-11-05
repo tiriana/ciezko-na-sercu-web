@@ -48,14 +48,16 @@ const formatTime = (seconds) => {
 const syncProgress = () => {
   if (!audio) return;
   const bar = document.querySelector('[data-audio-bar]');
-  const time = bar?.querySelector('[data-audio-time]');
+  const current = bar?.querySelector('[data-audio-current]');
+  const total = bar?.querySelector('[data-audio-total]');
   const progress = bar?.querySelector('[data-progress]');
   const fill = bar?.querySelector('[data-progress-fill]');
   const toggle = bar?.querySelector('[data-play-toggle]');
   const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
   const ratio = duration > 0 ? Math.min(1, audio.currentTime / duration) : 0;
 
-  if (time) time.textContent = `${formatTime(audio.currentTime)} / ${formatTime(duration)}`;
+  if (current) current.textContent = formatTime(audio.currentTime);
+  if (total) total.textContent = formatTime(duration);
   if (fill) fill.style.width = `${(ratio * 100).toFixed(2)}%`;
   if (progress) progress.setAttribute('aria-valuenow', String(Math.round(ratio * 100)));
   if (toggle) {
@@ -79,6 +81,25 @@ const setupBar = () => {
     if (!audio) return;
     if (audio.paused) audio.play();
     else audio.pause();
+  });
+
+  const volume = bar.querySelector('[data-volume]');
+  if (volume && audio) {
+    volume.addEventListener('input', () => {
+      audio.volume = Number(volume.value);
+    });
+    audio.volume = Number(volume.value);
+  }
+
+  bar.querySelector('[data-audio-close]')?.addEventListener('click', () => {
+    if (!audio) return;
+    audio.pause();
+    audio.removeAttribute('src');
+    audio.load();
+    delete audio.dataset.src;
+    delete audio.dataset.slug;
+    setNowPlaying('');
+    bar.hidden = true;
   });
 
   const progress = bar.querySelector('[data-progress]');
