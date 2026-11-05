@@ -1,0 +1,274 @@
+{
+  "version": 1,
+  "id": "4fa907fc-23a8-4bce-8011-fce60c435445",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T21:32:17.540Z",
+  "durationSec": 6799,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "azarath",
+      "label": "Azarath",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5264
+    },
+    {
+      "id": "bethlehem",
+      "label": "Bethlehem",
+      "type": "artist",
+      "source": "tracks",
+      "at": 702
+    },
+    {
+      "id": "cave-in",
+      "label": "Cave In",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2186
+    },
+    {
+      "id": "current-93",
+      "label": "Current 93",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6232
+    },
+    {
+      "id": "esoteric",
+      "label": "Esoteric",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2716
+    },
+    {
+      "id": "exumer",
+      "label": "Exumer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1103
+    },
+    {
+      "id": "lord-spikeheart",
+      "label": "Lord Spikeheart",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4698
+    },
+    {
+      "id": "mastodon",
+      "label": "Mastodon",
+      "type": "artist",
+      "source": "tracks",
+      "at": 11
+    },
+    {
+      "id": "portal",
+      "label": "Portal",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3527
+    },
+    {
+      "id": "sijjin",
+      "label": "Sijjin",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5706
+    },
+    {
+      "id": "venom",
+      "label": "Venom",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1402
+    }
+  ],
+  "tracks": [
+    {
+      "start": 11,
+      "end": 420,
+      "durationSec": 267,
+      "artist": "Mastodon",
+      "title": "March of the Fire Ants",
+      "album": "Remission",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 420,
+      "end": 702,
+      "durationSec": 216,
+      "artist": "Mastodon",
+      "title": "Shadows that Move",
+      "album": "Call of the Mastodon",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 702,
+      "end": 1103,
+      "durationSec": 192,
+      "artist": "Bethlehem",
+      "title": "Die Dunkelheit darbt",
+      "album": "Bethlehem",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1103,
+      "end": 1402,
+      "durationSec": 211,
+      "artist": "Exumer",
+      "title": "Fallen Saint",
+      "album": "Possessed by Fire",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1402,
+      "end": 1682,
+      "durationSec": 140,
+      "artist": "Venom",
+      "title": "Welcome to Hell",
+      "album": "Welcome to Hell",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1682,
+      "end": 2186,
+      "durationSec": 419,
+      "artist": "Venom",
+      "title": "Countess Bathory",
+      "album": "Black Metal",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2186,
+      "end": 2716,
+      "durationSec": 475,
+      "artist": "Cave In",
+      "title": "Blood Spiller",
+      "album": "Heavy Pendulum",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2716,
+      "end": 3527,
+      "durationSec": 692,
+      "artist": "Esoteric",
+      "title": "Caucus of Mind",
+      "album": "The Maniacal Vale",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3527,
+      "end": 4698,
+      "durationSec": 206,
+      "artist": "Portal",
+      "title": "Esp Ion Age",
+      "album": "Ion",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4698,
+      "end": 5264,
+      "durationSec": 153,
+      "artist": "Lord Spikeheart",
+      "title": "REIGN (feat. Iggor Cavalera & Jonas Karsten)",
+      "album": "REIGN - Single",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5264,
+      "end": 5706,
+      "durationSec": 263,
+      "artist": "Azarath",
+      "title": "I Hate Your Kind",
+      "album": "Praise The Beast",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5706,
+      "end": 6232,
+      "durationSec": 299,
+      "artist": "Sijjin",
+      "title": "Dakhma Curse",
+      "album": "Helljjin Combat",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6232,
+      "end": 6575,
+      "durationSec": 208,
+      "artist": "Current 93",
+      "title": "St. Peter's Keys All Bloody",
+      "album": "Dogs Blood Rising (Remastered)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6575,
+      "end": 6799,
+      "durationSec": 224,
+      "artist": "Current 93",
+      "title": "UrShadow",
+      "album": "Aleph At Hallucinatory Mountain",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
