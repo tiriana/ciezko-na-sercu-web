@@ -1,3 +1,4 @@
+import { duplicatesSchema } from './schema';
 import { readFile, readdir } from 'node:fs/promises';
 import type { z } from 'zod';
 import { join } from 'node:path';
@@ -150,9 +151,30 @@ export async function getTitles(): Promise<Record<string, TitleOverride>> {
   return data.titles;
 }
 
-export async function getEntries(): Promise<Entry[]> {
-  const [catalog, files, titles] = await Promise.all([getCatalog(), getEpisodeFiles(), getTitles()]);
-  return catalog.episodes.map((episode) => {
+let duplicatesCache: z.infer<typeof duplicatesSchema>['duplicates'] | undefined;
+
+/** Odcinki ukryte: to samo nagranie w dwóch wpisach katalogu. */
+export async function getDuplicates(): Promise<z.infer<typeof duplicatesSchema>['duplicates']> {
+  if (duplicatesCache) return duplicatesCache;
+  try {
+    duplicatesCache = (await load(join(DATA_DIR, 'duplicates.json'), duplicatesSchema)).duplicates;
+  } catch {
+    duplicatesCache = {};
+  }
+  return duplicatesCache;
+}
+
+export async function getEntries(options: { includeHidden?: boolean } = {}): Promise<Entry[]> {
+  const [catalog, files, titles, duplicates] = await Promise.all([
+    getCatalog(),
+    getEpisodeFiles(),
+    getTitles(),
+    getDuplicates(),
+  ]);
+  const visible = options.includeHidden
+    ? catalog.episodes
+    : catalog.episodes.filter((episode) => !duplicates[episode.id]);
+  return visible.map((episode) => {
     const override = titles[episode.id];
     const technical = TECHNICAL_TITLE.test(episode.title);
     return {

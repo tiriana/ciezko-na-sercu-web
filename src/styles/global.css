@@ -1829,3 +1829,12 @@ main {
 .tag-deeplink__close:hover {
   color: var(--text);
 }
+
+.duplicate-note {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+  color: var(--text);
+  font-size: 13.5px;
+}

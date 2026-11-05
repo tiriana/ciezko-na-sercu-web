@@ -141,6 +141,17 @@ export type CatalogEpisode = Catalog['episodes'][number];
 export type Episode = z.infer<typeof episodeSchema>;
 export type Track = Episode['tracks'][number];
 
+export const duplicatesSchema = z.object({
+  version: z.literal(1),
+  duplicates: z.record(
+    z.string(),
+    z.object({
+      of: z.string(),
+      reason: z.string().default(''),
+    }),
+  ),
+});
+
 export const titlesSchema = z.object({
   version: z.literal(1),
   titles: z.record(

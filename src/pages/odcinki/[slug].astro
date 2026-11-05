@@ -3,7 +3,7 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import PersonName from '../../components/PersonName.astro';
-import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
+import { getCatalog, getDuplicates, getEntries, getEpisodeFiles } from '../../lib/data';
 import { tagId } from '../../lib/tags';
 import {
   formatClock,
@@ -18,24 +18,38 @@ import {
 } from '../../lib/format';
 
 export async function getStaticPaths() {
-  const entries = await getEntries();
+  const [all, visible, duplicates] = await Promise.all([
+    getEntries({ includeHidden: true }),
+    getEntries(),
+    getDuplicates(),
+  ]);
   // Katalog jest posortowany od najnowszych, więc „poprzednia" to starsza audycja,
   // a „następna" — nowsza; na krańcach zakresu odpowiedniego linku po prostu nie ma.
-  return entries.map((entry, index) => {
-    const older = entries[index + 1];
-    const newer = entries[index - 1];
+  // Sąsiedzi liczą się po widocznych odcinkach, żeby ukryty duplikat nie trafiał do nawigacji.
+  return all.map((entry) => {
+    const index = visible.findIndex((item) => item.id === entry.id);
+    const older = index >= 0 ? visible[index + 1] : undefined;
+    const newer = index >= 0 ? visible[index - 1] : undefined;
+    const duplicate = duplicates[entry.id];
     return {
       params: { slug: entry.slug },
       props: {
         entry,
         older: older ? { slug: older.slug, title: formatEpisodeTitle(older.displayTitle) } : null,
         newer: newer ? { slug: newer.slug, title: formatEpisodeTitle(newer.displayTitle) } : null,
+        duplicate: duplicate
+          ? {
+              reason: duplicate.reason,
+              slug: all.find((item) => item.id === duplicate.of)?.slug ?? null,
+              title: all.find((item) => item.id === duplicate.of)?.displayTitle ?? null,
+            }
+          : null,
       },
     };
   });
 }
 
-const { entry, older, newer } = Astro.props;
+const { entry, older, newer, duplicate } = Astro.props;
 const [catalog, files] = await Promise.all([getCatalog(), getEpisodeFiles()]);
 const episode = files.get(entry.id);
 
@@ -176,6 +190,18 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
 
     <header class="ep-head">
       <p class="ep-head__date">{formatDate(entry.date)} · {formatWeekday(entry.date)} 00:05 · {catalog.program.station}</p>
+      {duplicate && (
+        <p class="duplicate-note">
+          Ten odcinek dubluje{' '}
+          {duplicate.slug ? (
+            <a href={`/odcinki/${duplicate.slug}/`}>{duplicate.title}</a>
+          ) : (
+            <span>{duplicate.title}</span>
+          )}
+          . {duplicate.reason}
+        </p>
+      )}
+
       <h1>{episodeTitle}</h1>
       {entry.titleKind === 'unofficial' ? (
         <p class="title-note">

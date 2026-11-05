@@ -154,6 +154,17 @@ for (const id of Object.keys(titles.titles)) {
   if (!ids.has(id)) problems.push(`titles.json: tytuł dla nieznanego odcinka ${id}`);
 }
 
+const duplicates = await readFile(join(DATA, 'duplicates.json'), 'utf8')
+  .then((raw) => JSON.parse(raw).duplicates ?? {})
+  .catch(() => ({}));
+
+for (const [id, entry] of Object.entries(duplicates)) {
+  if (!ids.has(id)) problems.push(`duplicates.json: ukryty odcinek ${id} nie istnieje w katalogu`);
+  if (!ids.has(entry.of)) problems.push(`duplicates.json: ${id} wskazuje na nieistniejący odcinek ${entry.of}`);
+  if (duplicates[entry.of]) problems.push(`duplicates.json: ${id} wskazuje na inny ukryty odcinek ${entry.of}`);
+  if (id === entry.of) problems.push(`duplicates.json: ${id} wskazuje sam na siebie`);
+}
+
 if (problems.length > 0) {
   console.error(`Dane niespójne (${problems.length}):`);
   for (const problem of problems) console.error(`  - ${problem}`);
