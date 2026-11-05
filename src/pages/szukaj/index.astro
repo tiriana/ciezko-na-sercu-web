@@ -1,0 +1,97 @@
+---
+import SiteFooter from '../../components/SiteFooter.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import Base from '../../layouts/Base.astro';
+---
+
+<Base title="Szukaj" description="Szukaj audycji po zespole, osobie, wydarzeniu albo tytule odcinka.">
+  <SiteHeader current="search" />
+
+  <main class="wrap">
+    <h1 class="page-title">Szukaj</h1>
+    <p class="page-lead">Zespół, osoba, wydarzenie albo tytuł odcinka. Wpisz co najmniej dwa znaki.</p>
+
+    <form class="search" role="search" onsubmit="return false">
+      <input
+        id="search-input"
+        class="search__input"
+        type="search"
+        name="q"
+        placeholder="np. Vader, Roadburn, Obituary"
+        autocomplete="off"
+        aria-describedby="search-status"
+      />
+      <p id="search-status" class="search__status" aria-live="polite"></p>
+    </form>
+
+    <ul id="search-results" class="search__results"></ul>
+  </main>
+
+  <SiteFooter />
+</Base>
+
+<script>
+  import { matches, type SearchEntry } from '../../lib/search';
+
+  const input = document.querySelector<HTMLInputElement>('#search-input');
+  const status = document.querySelector<HTMLParagraphElement>('#search-status');
+  const list = document.querySelector<HTMLUListElement>('#search-results');
+
+  if (input && status && list) {
+    let entries: SearchEntry[] = [];
+    let ready = false;
+
+    const load = async () => {
+      const response = await fetch('/search.json');
+      entries = (await response.json()) as SearchEntry[];
+      ready = true;
+      render();
+    };
+
+    const formatDate = (iso: string) =>
+      new Date(`${iso}T00:00:00Z`).toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
+
+    const render = () => {
+      const query = input.value.trim();
+      list.innerHTML = '';
+      if (query.length < 2) {
+        status.textContent = ready ? `${entries.length} odcinków w indeksie` : 'Wczytuję indeks…';
+        return;
+      }
+      const found = entries
+        .map((entry) => ({ entry, result: matches(entry, query) }))
+        .filter(({ result }) => result.hit);
+      status.textContent = found.length === 0 ? 'Brak wyników' : `${found.length} ${found.length === 1 ? 'odcinek' : 'odcinków'}`;
+
+      for (const { entry, result } of found) {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = `/odcinki/${entry.slug}/`;
+        const time = document.createElement('time');
+        time.dateTime = entry.date;
+        time.textContent = formatDate(entry.date);
+        const title = document.createElement('span');
+        title.textContent = entry.title;
+        link.append(time, title);
+        item.append(link);
+        if (result.tags.length > 0) {
+          const tags = document.createElement('p');
+          tags.className = 'search__tags';
+          tags.textContent = result.tags.slice(0, 6).map((tag) => tag.label).join(' · ');
+          item.append(tags);
+        }
+        list.append(item);
+      }
+    };
+
+    input.addEventListener('input', render);
+    load().catch(() => {
+      status.textContent = 'Nie udało się wczytać indeksu.';
+    });
+
+    const params = new URLSearchParams(location.search);
+    const initial = params.get('q');
+    if (initial) input.value = initial;
+    render();
+  }
+</script>

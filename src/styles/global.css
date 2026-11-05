@@ -1479,3 +1479,61 @@ a {
 .tag-cloud__word--person { fill: var(--muted); }
 .tag-cloud__word--event { fill: var(--accent); }
 .tag-cloud__word--work { fill: var(--muted); font-style: italic; }
+
+/* Szukaj */
+
+.search {
+  margin: 0 0 24px;
+}
+
+.search__input {
+  width: 100%;
+  max-width: 520px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 15px;
+}
+
+.search__input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.search__status {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.search__results {
+  margin: 0 0 48px;
+  padding: 0;
+  list-style: none;
+}
+
+.search__results li + li {
+  border-top: 1px solid var(--line);
+}
+
+.search__results a {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0 6px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.search__results time {
+  flex: 0 0 96px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.search__tags {
+  margin: 0 0 10px 112px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
