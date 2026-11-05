@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "episodeId": "ed60a96f-419a-42b1-b153-110683462d8b",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 114857537,
+  "fileMtimeMs": 1789150628734.7808,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 16.189999999999998
+    },
+    {
+      "index": 1,
+      "start": 241.83,
+      "end": 374.04
+    },
+    {
+      "index": 2,
+      "start": 736.55,
+      "end": 822.33
+    },
+    {
+      "index": 3,
+      "start": 1140.61,
+      "end": 1219.36
+    },
+    {
+      "index": 4,
+      "start": 1461.54,
+      "end": 1544.35
+    },
+    {
+      "index": 5,
+      "start": 1787.65,
+      "end": 1838.24
+    },
+    {
+      "index": 6,
+      "start": 2064.45,
+      "end": 2140.83
+    },
+    {
+      "index": 7,
+      "start": 2408.87,
+      "end": 2485.05
+    },
+    {
+      "index": 8,
+      "start": 2675.72,
+      "end": 2746.17
+    },
+    {
+      "index": 9,
+      "start": 2985.51,
+      "end": 3083.93
+    },
+    {
+      "index": 10,
+      "start": 3434.72,
+      "end": 3439.58
+    },
+    {
+      "index": 11,
+      "start": 3624.04,
+      "end": 3683.77
+    },
+    {
+      "index": 12,
+      "start": 4025.8,
+      "end": 4095.64
+    },
+    {
+      "index": 13,
+      "start": 4490.4,
+      "end": 4553.76
+    },
+    {
+      "index": 14,
+      "start": 4766.82,
+      "end": 4820.32
+    },
+    {
+      "index": 15,
+      "start": 5092.84,
+      "end": 5151.16
+    },
+    {
+      "index": 16,
+      "start": 5348.71,
+      "end": 5381.66
+    },
+    {
+      "index": 17,
+      "start": 5770.47,
+      "end": 5839.48
+    },
+    {
+      "index": 18,
+      "start": 6173.54,
+      "end": 6221.18
+    },
+    {
+      "index": 19,
+      "start": 6526.6,
+      "end": 6615.64
+    },
+    {
+      "index": 20,
+      "start": 6810.31,
+      "end": 6867.39
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 5.72,
+      "text": "trójka program trzeci polskiego radia"
+    },
+    {
+      "start": 9.56,
+      "end": 16.2,
+      "text": "ciężko na sercu"
+    },
+    {
+      "start": 241.83,
+      "end": 246.01,
+      "text": "Dobry wieczór. Za nami dzień, przed nami wspólne północy."
+    },
+    {
+      "start": 246.69,
+      "end": 251.15,
+      "text": "Zatem uznałem, że piosenka zatytułowana Dzień Północy"
+    },
+    {
+      "start": 251.15,
+      "end": 256.75,
+      "text": "będzie w sam raz na początek kolejnej odsłony Ciężko na sercu."
+    },
+    {
+      "start": 257.65,
+      "end": 262.85,
+      "text": "Wita Was Jarek Szubrycht w imieniu własnym oraz Mariusza Owczarka, wydawcy audycji."
+    },
+    {
+      "start": 263.77,
+      "end": 271.03,
+      "text": "Dzisiaj tradycyjnie już przegląd tego, co najciekawsze w ciężarach w mijającym miesiącu,"
+    },
+    {
+      "start": 271.03,
+      "end": 276.13,
+      "text": "a Warmia jest, jak sami słyszeliście, bardzo ciekawa."
+    },
+    {
+      "start": 276.95,
+      "end": 285.17,
+      "text": "Zespół wywodzi się z Black Metalu i z Warmii i w ich muzyce słychać i jedno i drugie,"
+    },
+    {
+      "start": 285.37,
+      "end": 291.91,
+      "text": "ale zarazem nic tu nie jest oczywiste w tym instrumentarium,"
+    },
+    {
+      "start": 292.07,
+      "end": 296.43,
+      "text": "które daleko wykracza poza podstawowy ekwipunek metalowców."
+    },
+    {
+      "start": 297.11,
+      "end": 299.47,
+      "text": "Brzmienie też jest ciekawe."
+    },
+    {
+      "start": 300.37,
+      "end": 310.55,
+      "text": "Nowa płyta Warmii zatytułowana Lauks ukazuje się 27 marca nakładem amerykańskiej wytwórni M Theory Audio"
+    },
+    {
+      "start": 310.55,
+      "end": 314.93,
+      "text": "i jak słyszycie, warto się nią zainteresować."
+    },
+    {
+      "start": 315.31,
+      "end": 319.71,
+      "text": "Skoro zaczęliśmy od Polski i od rzeczy nieoczywistych, to pójdźmy dalej tym tropem."
+    },
+    {
+      "start": 319.71,
+      "end": 322.33,
+      "text": "W Warszawie panuje głód."
+    },
+    {
+      "start": 323.35,
+      "end": 327.91,
+      "text": "No może jeszcze nie panuje, ale zapowiada się więcej niż obiecująco"
+    },
+    {
+      "start": 327.91,
+      "end": 331.35,
+      "text": "i trzymam kciuki za ich dalszą drogę."
+    },
+    {
+      "start": 331.95,
+      "end": 335.61,
+      "text": "Głód gra, trudno właściwie powiedzieć co,"
+    },
+    {
+      "start": 336.11,
+      "end": 339.17,
+      "text": "jakieś brudy, hałasy postrokowe, protometalowe,"
+    },
+    {
+      "start": 339.85,
+      "end": 345.17,
+      "text": "kwazipunkowe, ale najważniejsze, że gra je dobrze."
+    },
+    {
+      "start": 345.83,
+      "end": 349.87,
+      "text": "Debiutancka płyta głodu nosi tytuł Trzecie Słońca."
+    },
+    {
+      "start": 350.35,
+      "end": 353.47,
+      "text": "Została wydana przez wytwórnię Interstellar Smoke Records"
+    },
+    {
+      "start": 353.47,
+      "end": 358.49,
+      "text": "i obcowanie z tą muzyką jest prawdziwą przygodą."
+    },
+    {
+      "start": 358.99,
+      "end": 361.01,
+      "text": "Wybrałem dla Państwa utwór zatytułowany"
+    },
+    {
+      "start": 361.01,
+      "end": 364.89,
+      "text": "w walce muzyka moralnego szantażu."
+    },
+    {
+      "start": 364.97,
+      "end": 366.65,
+      "text": "Bo po pierwsze jest dobry, a po drugie"
+    },
+    {
+      "start": 366.65,
+      "end": 371.97,
+      "text": "jaki to jest piękny koncept muzyka moralnego szantażu."
+    },
+    {
+      "start": 737.39,
+      "end": 743.27,
+      "text": "Nurkujmy głębiej w tę króliczą norę, w polskie okołometalowe anomalie."
+    },
+    {
+      "start": 744.05,
+      "end": 751.59,
+      "text": "Tak się zresztą składa, że anomalie to tytuł nowej płyty projektu Ukć, albo Ukać,"
+    },
+    {
+      "start": 752.05,
+      "end": 758.77,
+      "text": "za którym stoi Łukasz Ikanras-Sarnacki, muzyk znany z takich grup jak"
+    },
+    {
+      "start": 758.77,
+      "end": 772.93,
+      "text": "Jak widać wszechstronny jest i pracowity, a nagrania Ukć dowodzą, że również pomysłowy."
+    },
+    {
+      "start": 773.67,
+      "end": 783.77,
+      "text": "Mam jednak wrażenie, że sam sobie trochę sabotuje karierę, bo Ukć to nazwa chyba nieszczególnie chwytliwa."
+    },
+    {
+      "start": 783.77,
+      "end": 786.85,
+      "text": "Ja tu się w ogóle męczę, żeby to do mikrofonu wypowiedzieć."
+    },
+    {
+      "start": 787.75,
+      "end": 793.21,
+      "text": "To nazwa nie obiecująca tych wszystkich ciekawych rzeczy, które niesie ze sobą muzyka."
+    },
+    {
+      "start": 794.49,
+      "end": 797.83,
+      "text": "Może to tylko moje subiektywne wrażenie, ale może nie."
+    },
+    {
+      "start": 798.87,
+      "end": 804.99,
+      "text": "Idę o zakład, że pod innym szyldem takie anomalie, upadek konającego ćwierćwiecza,"
+    },
+    {
+      "start": 805.07,
+      "end": 810.75,
+      "text": "bo to jest pełny tytuł płyty, budziłyby większe zainteresowanie."
+    },
+    {
+      "start": 810.75,
+      "end": 818.81,
+      "text": "A że jest się czym zainteresować, zaraz się przekonacie, słuchając ze mną właśnie utworu Anomalie."
+    },
+    {
+      "start": 818.81,
+      "end": 822.33,
+      "text": "Znokniętych serych kontaktów"
+    },
+    {
+      "start": 1140.61,
+      "end": 1150.73,
+      "text": "Zostawiamy naszą krainę mlekiem i anomaliami płynącą, by przenieść się do kraju ludzi wolnych i ojczyzny odważnych."
+    },
+    {
+      "start": 1151.13,
+      "end": 1163.23,
+      "text": "Czas na gwiazdy, prawdziwą legendę thrash metalu, czyli zespół Exodus, który nie znalazł się w Wielkiej Czwórce chyba tylko dlatego, że Metallica w porę podprowadziła im gitarzystę."
+    },
+    {
+      "start": 1163.97,
+      "end": 1169.97,
+      "text": "No i być może dlatego, że w Czwórce jest miejsce tylko dla czterech zespołów."
+    },
+    {
+      "start": 1169.97,
+      "end": 1178.83,
+      "text": "Tak czy owak, Exodus to mistrzowie i pionierzy gatunku, niestrudzenie robiące swoje od ponad czterech dekad."
+    },
+    {
+      "start": 1179.45,
+      "end": 1194.73,
+      "text": "Ich dwunasty album, zatytułowany Goliath, jest debiutem grupy w barwach austriackiej firmy Napalm Records i pozycją na pewno wyczekiwaną przez fanów metalowej klasyki."
+    },
+    {
+      "start": 1194.91,
+      "end": 1203.45,
+      "text": "Brzmi to bardzo dobrze, a czy cała płyta jest rzeczą, która prostała legendię zespołu, sam jeszcze nie wiem."
+    },
+    {
+      "start": 1204.23,
+      "end": 1214.55,
+      "text": "Jeszcze muszę się z tym osłuchać, póki co zaproponuję Wam jej wycinek w postaci utworu 3-1-1-1."
+    },
+    {
+      "start": 1214.55,
+      "end": 1219.37,
+      "text": "*muzyka*"
+    },
+    {
+      "start": 1461.54,
+      "end": 1483.34,
+      "text": "Sam nie wierzę, że to mówię, ale po pierwszym kontakcie, chętniej niż do nowego Eksodusa, wróciłbym do nowej płyty amerykańskiej grupy Lamb of God, młodszej o pokolenie, bo powstałej w 1994 roku, a więc też już w sumie nie aż tak bardzo młodej."
+    },
+    {
+      "start": 1483.34,
+      "end": 1496.3,
+      "text": "I też cieszącej się w pewnych kręgach, przynajmniej z statusem zespołu kultowego, w pewnych kręgach i w pewnych miejscach na świecie, szczególnie w ojczystej Ameryce."
+    },
+    {
+      "start": 1496.64,
+      "end": 1513.9,
+      "text": "Lamb of God jadą na thrashowym napędzie, ale wyraźnie słychać, że to zespół, który dojrzał już w XXI wieku, który ma ten groove, co to rozlał się po amerykańskim metalu za sprawą Pantery i Machine Head."
+    },
+    {
+      "start": 1514.02,
+      "end": 1527.1,
+      "text": "Nowy album Lamb of God nosi tytuł Into Oblivion i opowiada o gwałtownym upadku umowy społecznej ze szczególnym wskazaniem na Amerykę właśnie."
+    },
+    {
+      "start": 1528.3,
+      "end": 1535.38,
+      "text": "Rzeczy, które uważamy dziś za akceptowalne, przeraziłyby ludzi jeszcze 20 lat temu."
+    },
+    {
+      "start": 1536.2,
+      "end": 1540.52,
+      "text": "Mówią muzycy zespołu i niestety mają rację."
+    },
+    {
+      "start": 1544.02,
+      "end": 1544.32,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 1787.65,
+      "end": 1797.41,
+      "text": "Ze Stanów wyruszamy na północ do wciąż jeszcze niepodległej Kanady, gdzie tańczy dla nas i śpiewa zespół Threat Signal."
+    },
+    {
+      "start": 1798.21,
+      "end": 1811.95,
+      "text": "Działają od ponad 20 lat, ale przez niemal dekadę milczeli, by dziś powrócić albumem zatytułowanym Revelations, wydanym przez polską wytwórję Agonię."
+    },
+    {
+      "start": 1811.95,
+      "end": 1830.45,
+      "text": "Threat Signal to zaawansowane, technicznie lekko progresywne granie, w którym jest też niemało miejsca na ładne metal-korowe refreny, ale jeszcze więcej na naprawdę dobrą robotę gitarzystów."
+    },
+    {
+      "start": 1830.65,
+      "end": 1835.87,
+      "text": "Radzę zwrócić na to uwagę, zresztą wszyscy w tym zespole wiedzą co robią."
+    },
+    {
+      "start": 2064.45,
+      "end": 2079.61,
+      "text": "Powiedziałem przed chwilą, że Threat Signal to granie progresywne, oczywiście w ramach metalowych standardów, na które na przykład gwiżdże duet Meja i Hierarchy."
+    },
+    {
+      "start": 2080.37,
+      "end": 2103.31,
+      "text": "Ludzie, którzy zajmują się promowaniem tego projektu piszą, że to rzecz dla fanów The Body i Massive Attack, a ten szpagat oznacza, że są raczej bezradni i nie naśmiewam się z nich, bo sam nie mam pojęcia jak skategoryzować tę muzykę, bo tu właściwie wszystko może się zdarzyć i zdarza się."
+    },
+    {
+      "start": 2103.31,
+      "end": 2122.17,
+      "text": "Meja to duńsko-koreański projekt, zespół postrokowy, Hierarchy też z Danii to progresywny, agresywny synth-punk, a razem na płycie Interwoven robią jeszcze coś innego."
+    },
+    {
+      "start": 2122.17,
+      "end": 2133.31,
+      "text": "I jeżeli utwór, którego za chwilę wysłuchacie, nie zaskoczy was kontrastem, na którym został zbudowany, to ja już nie wiem, co was może zaskoczyć."
+    },
+    {
+      "start": 2133.31,
+      "end": 2140.83,
+      "text": "The scattered heart, so simple"
+    },
+    {
+      "start": 2408.87,
+      "end": 2414.25,
+      "text": "Przypominam to wspólne dzieło Mija i Hiraki"
+    },
+    {
+      "start": 2414.25,
+      "end": 2417.47,
+      "text": "Kolejny zespół nazywa się Prostitute"
+    },
+    {
+      "start": 2417.47,
+      "end": 2422.13,
+      "text": "Co po polsku oznacza seksworkerkę albo seksworkera"
+    },
+    {
+      "start": 2422.13,
+      "end": 2425.35,
+      "text": "Muzyka grupy jest zupełnie niepolska"
+    },
+    {
+      "start": 2425.35,
+      "end": 2429.05,
+      "text": "Bo mamy do czynienia z wściekłym postpunkiem"
+    },
+    {
+      "start": 2429.05,
+      "end": 2434.73,
+      "text": "Czy może równie gniewnym noise rockiem z Ameryki"
+    },
+    {
+      "start": 2434.73,
+      "end": 2438.43,
+      "text": "Ale o zdecydowanie orientalnym posmaku"
+    },
+    {
+      "start": 2438.43,
+      "end": 2444.75,
+      "text": "Uzasadnionym zresztą bo zespół tworzą muzycy o arabskich korzeniach"
+    },
+    {
+      "start": 2444.75,
+      "end": 2452.47,
+      "text": "Ich debiut Attempted Martyr teoretycznie ukazał się już jesienią 2024 roku"
+    },
+    {
+      "start": 2452.47,
+      "end": 2456.61,
+      "text": "Ale wydany był własnym sumptem zespołu"
+    },
+    {
+      "start": 2456.61,
+      "end": 2460.65,
+      "text": "Więc wieści rozchodziły się powoli"
+    },
+    {
+      "start": 2460.65,
+      "end": 2465.45,
+      "text": "I teraz w marcu Prostitute zadebiutowali po raz drugi"
+    },
+    {
+      "start": 2465.45,
+      "end": 2466.77,
+      "text": "Tym samym materiałem"
+    },
+    {
+      "start": 2466.77,
+      "end": 2471.01,
+      "text": "Tym razem już w barwach szacownej wytwórni Mute"
+    },
+    {
+      "start": 2471.01,
+      "end": 2475.87,
+      "text": "A to znaczy, że są teraz w jednej stajni z Depeche Mode i Nickiem Cave'em"
+    },
+    {
+      "start": 2475.87,
+      "end": 2479.63,
+      "text": "Więc pewnie będą robić karierę"
+    },
+    {
+      "start": 2479.63,
+      "end": 2482.97,
+      "text": "I oby tak się działo, bo zasługują"
+    },
+    {
+      "start": 2482.97,
+      "end": 2485.05,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2676.42,
+      "end": 2683.48,
+      "text": "Słuchacie ciężko na sercu, a przed nami rzeczy coraz cięższe, coraz mroczniejsze, bardziej brutalne."
+    },
+    {
+      "start": 2684.28,
+      "end": 2689.44,
+      "text": "Ale zanim docisnę pedał ekstremy do podłogi, proponuję chwilę oddechu."
+    },
+    {
+      "start": 2690.04,
+      "end": 2694.58,
+      "text": "Oddychać będziemy czarnym płucem. Tak jest. Zespoł nazywa się Black Lung."
+    },
+    {
+      "start": 2695.18,
+      "end": 2704.94,
+      "text": "Pochodzi z Baltimore i od ponad 20 lat raczy nas ciężkim i zwiewnym zarazem psychodelicznym stoner metalem."
+    },
+    {
+      "start": 2704.94,
+      "end": 2726.42,
+      "text": "Ich nowa płyta, piąta w dorobku grupy, nosi tytuł Forever Beyond i choć dźwięki uniosą was wysoko, w tekstach Black Lung twardo stąpają po ziemi, ostrzegając nas m.in. przed odrodzaniem faszyzmu i umacnianiem się korporacji oraz oligarchów."
+    },
+    {
+      "start": 2726.78,
+      "end": 2734.7,
+      "text": "Utwór nosi tytuł Traveller, czyli podróżnik i totalnie słyszę tę podróż w każdej nutce."
+    },
+    {
+      "start": 2735.12,
+      "end": 2741.86,
+      "text": "Aż chciałoby się wsiąść do auta, odpalić Black Lung na full i ruszyć w nieznane."
+    },
+    {
+      "start": 2742.6,
+      "end": 2744.66,
+      "text": "Tylko, kurczę, paliwo drogie."
+    },
+    {
+      "start": 2986.11,
+      "end": 3000.37,
+      "text": "Miałem już tę audycję pięknie przygotowaną. Wszystko było zważone, zmierzone, policzone, aż tu nagle, jak grom z jasnego nieba, spadła na nas nowa płyta Neurosis."
+    },
+    {
+      "start": 3000.87,
+      "end": 3011.99,
+      "text": "Mojego ukochanego Neurosis zespołu, z którym już się pożegnałem, który już opłakałem, który przecież nie istniał i na którego powrót nie było szans,"
+    },
+    {
+      "start": 3011.99,
+      "end": 3024.85,
+      "text": "kiedy okazało się, że Scott Kelly, jeden z filarów grupy, w domu był przemocowcem i zdecydowanie nie żył według wartości, które Neurosis uosabiało na scenie."
+    },
+    {
+      "start": 3025.99,
+      "end": 3033.99,
+      "text": "Miało już nie być Neurosis, ale powrócili nagle, bez zapowiedzi, właśnie wtedy, kiedy najbardziej są potrzebni."
+    },
+    {
+      "start": 3033.99,
+      "end": 3043.99,
+      "text": "Już tytuł płyty, nieprzemijająca miłość do płonącego świata, oddaje i nastrój chwili, i zawartość tego albumu."
+    },
+    {
+      "start": 3045.69,
+      "end": 3058.21,
+      "text": "Powrócili w chwale, a miejsce Scotta, który wydawał się nie do zastąpienia, wypełnił Aaron Turner, znany doskonale z Isis, Sumak czy Old Man Gloom."
+    },
+    {
+      "start": 3058.65,
+      "end": 3061.69,
+      "text": "Przyjaciel Neurosis i ich pilny uczeń."
+    },
+    {
+      "start": 3061.97,
+      "end": 3075.15,
+      "text": "Wspaniale wpisał się w ten zespół, a ja, wzruszony i zachwycony, zaprezentuję Wam utwór Blind, pochodzący z An Undying Love for a Burning World."
+    },
+    {
+      "start": 3075.15,
+      "end": 3082.05,
+      "text": "Nowej, dwunastej płyty Neurosis, wydanej po dekadzie twórczego milczenia."
+    },
+    {
+      "start": 3434.72,
+      "end": 3439.58,
+      "text": "A drift on sightless place"
+    },
+    {
+      "start": 3624.04,
+      "end": 3634.72,
+      "text": "James McBain to kawał gitarowego kota, nie tylko gitarowego zresztą, bo on w tym swoim Hell Ripper wszystko robi."
+    },
+    {
+      "start": 3634.72,
+      "end": 3651.84,
+      "text": "I wszystko robi dobrze, w dodatku na najwyższych obrotach muzyka projektu, który na scenie rozrasta się do pełnego zespołu, to speed thrash metal, hojnie doprawiony black metalowym jadem."
+    },
+    {
+      "start": 3652.52,
+      "end": 3670.56,
+      "text": "Nic dziwnego, że Jamesowi ten jego Hell Ripper pięknie rośnie, czego dowodem choćby album Kornak debiut Szkota w barwach Century Media, a więc bardzo poważnego gracza na metalowym rynku."
+    },
+    {
+      "start": 3671.36,
+      "end": 3682.08,
+      "text": "Fani starej metalowej szkoły będą więcej niż zadowoleni, ale nie tylko kataniarze znajdą w muzyce Hell Ripper coś dla siebie, to po prostu pięknie żre."
+    },
+    {
+      "start": 3682.52,
+      "end": 3683.74,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 4025.8,
+      "end": 4045.74,
+      "text": "Jeśli podobał wam się Hell Ripper, to pewnie nie będzie wam też wstrętny kolejny zespół, bo i tutaj będziemy mieli do czynienia z połączeniem Black Metalu z Trashem, choć tym razem żywioł Black Metalowy jest zdecydowanie dominujący."
+    },
+    {
+      "start": 4045.74,
+      "end": 4060.98,
+      "text": "No ale nazwa zobowiązuje. Ta brzmi Transylwania. Zespół jednak nie jest z Rumunii, tylko z Austrii, więc w sumie do Transylwanii daleko nie ma i może nikt ich nie oskarży o zawłaszczenie kulturowe."
+    },
+    {
+      "start": 4062.04,
+      "end": 4077.18,
+      "text": "Muzykę z kolei Transylwania ma raczej ze Skandynawii i gdyby potomkowie Wikingów, w tym przypadku bardziej Szwedzi niż Norwegowie, sprzedawali takie rzeczy na licencji, byliby bajecznie bogaci."
+    },
+    {
+      "start": 4077.64,
+      "end": 4092.14,
+      "text": "Magia posthuma. Trzecia duża płyta Transylwanii ukazała się w piątek trzynastego. To podobno nie był przypadek, tylko odważny akt kuszenia losu. Niech im będzie."
+    },
+    {
+      "start": 4490.84,
+      "end": 4498.96,
+      "text": "Black speed metal udający głębokie lata osiemdziesiąte to chyba obecnie dość modny kierunek."
+    },
+    {
+      "start": 4499.78,
+      "end": 4504.44,
+      "text": "Muzycy niemieckiego Nugtemerona noszą skórzane portki i pasy z nabojami,"
+    },
+    {
+      "start": 4504.62,
+      "end": 4509.62,
+      "text": "pobrzękują łańcuchami, błyszczą w słońcu od ćwieków i gwoździ,"
+    },
+    {
+      "start": 4510.34,
+      "end": 4515.96,
+      "text": "więc już właściwie wszystko jedno jak grają, skoro cała otoczka się zgadza."
+    },
+    {
+      "start": 4517.3,
+      "end": 4518.26,
+      "text": "Żartowałem."
+    },
+    {
+      "start": 4518.9,
+      "end": 4526.44,
+      "text": "Brzmią jak potomstwo Disaster, a więc wnuki tego najstarszego kreatora i Sodom,"
+    },
+    {
+      "start": 4527.5,
+      "end": 4535.12,
+      "text": "a więc ani krzty w tym oryginalności, ale jak ktoś ładnie śpiewa, to zawsze człowiekowi miło."
+    },
+    {
+      "start": 4535.74,
+      "end": 4541.84,
+      "text": "Po dekadzie spędzonej w czeluściech undergroundu, naznaczonej epkami i splitami,"
+    },
+    {
+      "start": 4542.64,
+      "end": 4548.26,
+      "text": "Nugtemeron wreszcie debiutuje pełną płytą, która nosi tytuł Demonic Scepter."
+    },
+    {
+      "start": 4548.34,
+      "end": 4551.3,
+      "text": "I szczypie w oczy mniej więcej tak."
+    },
+    {
+      "start": 4551.3,
+      "end": 4553.76,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4766.82,
+      "end": 4783.72,
+      "text": "Czerniej. Przesuwamy się w kierunku black metalu, ale nie zupełnie w sam główny nurt tego grania, bo zespół, którego za chwilę wysłuchacie zdecydowanie ma własny artystyczny język."
+    },
+    {
+      "start": 4783.72,
+      "end": 4804.78,
+      "text": "Fani to doceniają, więc portugalska Guiria rośnie w siłę z sezonu na sezon i z płyty na płytę. Ich debiut z nalepką Century Media, a w ogóle to piąta już płyta, nosi tytuł Los, co oznacza stratę."
+    },
+    {
+      "start": 4804.78,
+      "end": 4818.16,
+      "text": "Po przesłuchaniu jednak jestem przekonany, że i Guiria zyska na tej premierze, i wytwórnia, i przede wszystkim fani, bo sporo tu naprawdę dobrej muzyki."
+    },
+    {
+      "start": 4818.16,
+      "end": 4820.32,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5093.62,
+      "end": 5098.52,
+      "text": "Nieco inną wersję czarnego metalu ma norweski zespół Toulouse."
+    },
+    {
+      "start": 5099.4,
+      "end": 5104.1,
+      "text": "Pochodzą z Oslo i już od 35 lat walczą ze światłem,"
+    },
+    {
+      "start": 5104.86,
+      "end": 5110.62,
+      "text": "ale walczą mniej zaciekle, mniej bezlitośnie od wielu swoich rodaków."
+    },
+    {
+      "start": 5111.3,
+      "end": 5114.64,
+      "text": "I muszę przyznać, że to właśnie w Toulouse jest ciekawe,"
+    },
+    {
+      "start": 5114.64,
+      "end": 5122.64,
+      "text": "że w ich muzyce jest miejsce nie tylko na pęd, na łeb, na szyję, w otchłań,"
+    },
+    {
+      "start": 5123.3,
+      "end": 5130.02,
+      "text": "ale że jest też oddech, są średnie tempa, są interesujące nie black metalowe,"
+    },
+    {
+      "start": 5130.1,
+      "end": 5132.78,
+      "text": "a nawet nie metalowe ornamenty."
+    },
+    {
+      "start": 5133.48,
+      "end": 5138.08,
+      "text": "Nowa płyta Toulouse nosi tytuł Morbid Desires"
+    },
+    {
+      "start": 5138.08,
+      "end": 5142.58,
+      "text": "i zawiera m.in. piosenkę zatytułowaną Toulouse,"
+    },
+    {
+      "start": 5142.58,
+      "end": 5148.94,
+      "text": "a więc mamy tu do czynienia ze stuprocentowym stężeniem Toulouse'a w Toulouse'ie."
+    },
+    {
+      "start": 5148.94,
+      "end": 5151.16,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5349.37,
+      "end": 5353.95,
+      "text": "Gęstszą smołę miesza w swoim kotle brytyjski zespoł Winter Filth."
+    },
+    {
+      "start": 5354.65,
+      "end": 5363.83,
+      "text": "W ostatnich latach wyrośli na liderów tamtejszej sceny i na nowej płycie The Unhealding Season trzymają poziom."
+    },
+    {
+      "start": 5363.83,
+      "end": 5378.61,
+      "text": "W tekstach sporo nawiązań do pomników brytyjskiej literatury, bo Winter Filth to przedstawiciele black metalu intelektualnego, erudycyjnego, a nie jacyś tam jaskiniowcy, co znają tylko język."
+    },
+    {
+      "start": 5378.71,
+      "end": 5379.21,
+      "text": "Przemoc."
+    },
+    {
+      "start": 5770.47,
+      "end": 5784.85,
+      "text": "Kolejną premierę zawdzięczamy grupie Masticator. To brutale z Niemiec. Głównym budulcem ich stylu jest death metal, choć i thrash tu czasami pobłyskuje i black czernieje."
+    },
+    {
+      "start": 5785.15,
+      "end": 5810.21,
+      "text": "Nowa płyta Masticator nosi tytuł Total Mastery i może trochę na wyrost to samochwalstwo, ale trzeba przyznać, że potrafią grać. Niestety póki co Masticator zdaje się być jednym z tych zespołów, które robią dobre wrażenie, kiedy płyta gra albo kiedy trafisz na ich koncert na festiwalu,"
+    },
+    {
+      "start": 5811.03,
+      "end": 5837.83,
+      "text": "ale potem zbyt łatwo zapomnieć, że w ogóle istnieją. Ale to stan na dziś w dodatku wrażenie subiektywne. Jestem przekonany, że jeśli zespół będzie się rozwijał w takim tempie jak do tej pory, przyjdzie dojrzałość, która objawia się znamionami własnego stylu i może nam jeszcze ten Masticator dać sporo radości."
+    },
+    {
+      "start": 6173.54,
+      "end": 6189.4,
+      "text": "Amerykańska wytwórnia Relapse ma w swoim katalogu cały legion zespołów grających death metal i najczęściej jest to death metal bardziej oryginalny i porywający niż to, co robi grupa Temple of Void."
+    },
+    {
+      "start": 6189.74,
+      "end": 6203.34,
+      "text": "Chociaż w surowej muzyce kwartetu jest jakaś naturalna siła, która sprawia, że nie jestem w stanie tak po prostu się od tego odwrócić, tak po prostu zignorować."
+    },
+    {
+      "start": 6203.9,
+      "end": 6218.66,
+      "text": "Album nosi tytuł The Crow i za chwilę wysłuchamy utworu tytułowego zawieszonego gdzieś pomiędzy death metalem a doomem w stylu wczesnego Paradise Lost."
+    },
+    {
+      "start": 6526.6,
+      "end": 6553.22,
+      "text": "Przy Temple of Void nie byłem pewien, ale co do Egregor nie mam wątpliwości. To jest naprawdę dobre i zarazem inne, unikalne tym niedoskonałym, surowym brzmieniem, ale też konstrukcją piosenek, która czasem sugeruje, że mamy do czynienia z prymitywami, by za chwilę zaskoczyć jakąś techniczną i oryginalną zagrywką."
+    },
+    {
+      "start": 6553.22,
+      "end": 6573.08,
+      "text": "W materiałach na temat zespołu, w reakcjach na ich muzykę pojawiają się porównania do Nocturnus czy Morbid Angel. Może trochę tak, ale jeśli do Nocturnus to do Demo. Jeśli do Morbid Angel to do Abominations of Desolation."
+    },
+    {
+      "start": 6573.34,
+      "end": 6586.94,
+      "text": "I to oznacza taki trop, o którym nie pomyślałem od razu, ale tak, rzeczywiście, wokalista Egregor śpiewa w sposób trochę przypominający pochukiwania Majka Browninga."
+    },
+    {
+      "start": 6586.94,
+      "end": 6603.04,
+      "text": "I to chyba jest komplement, ale są też w tej muzyce i inne elementy, takie, które zdradzają, że od dawna mamy już XXI wiek i że zespół nie jest kalką żadnej konkretnej grupy."
+    },
+    {
+      "start": 6603.62,
+      "end": 6613.64,
+      "text": "Egregor pochodzą z Kanady, album It Echoes in the Wind to ich druga płyta i czuję, że przyjdzie nam się lepiej poznać."
+    },
+    {
+      "start": 6613.64,
+      "end": 6615.64,
+      "text": "Muzyka"
+    },
+    {
+      "start": 6810.31,
+      "end": 6819.29,
+      "text": "Na koniec audycji uspokoimy trochę tętno, nas spacerując po wiszącym ogrodzie."
+    },
+    {
+      "start": 6819.29,
+      "end": 6823.79,
+      "text": "Taką właśnie nazwę ma ten fiński zespół Hanging Garden."
+    },
+    {
+      "start": 6824.49,
+      "end": 6836.29,
+      "text": "Płodni z nich artyści, bo w ciągu dwóch dekad nastukali mały stosik epek, splitów, singli i innych wydawniczych drobiazgów,"
+    },
+    {
+      "start": 6837.15,
+      "end": 6841.59,
+      "text": "a do tego dziewięć dużych pełnoczasowych albumów."
+    },
+    {
+      "start": 6842.23,
+      "end": 6845.11,
+      "text": "Isle of Bliss jest właśnie dziewiątym."
+    },
+    {
+      "start": 6845.39,
+      "end": 6853.11,
+      "text": "Teksty Hanging Garden ma o życiu i śmierci, a nutki ma o death metalu i gothic dumie."
+    },
+    {
+      "start": 6854.03,
+      "end": 6863.11,
+      "text": "Zapraszam do Turkusowego lasu i zapraszam oczywiście do słuchania Ciężko na sercu już za tydzień."
+    },
+    {
+      "start": 6863.59,
+      "end": 6865.37,
+      "text": "Szybko minie. Dobranoc."
+    },
+    {
+      "start": 6867.15,
+      "end": 6867.37,
+      "text": "Dziękuje za oglądanie!"
+    }
+  ],
+  "stats": {
+    "windowCount": 21,
+    "transcribedAudioSec": 1373.09,
+    "segmentCount": 160,
+    "characterCount": 14612
+  },
+  "sourceId": "2026-03-25-marzec-2026-glosne-premiery-wielkie-powroty"
+}
