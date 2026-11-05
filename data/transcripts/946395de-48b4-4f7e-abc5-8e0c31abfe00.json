@@ -1,0 +1,930 @@
+{
+  "version": 1,
+  "episodeId": "946395de-48b4-4f7e-abc5-8e0c31abfe00",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 114745781,
+  "fileMtimeMs": 1789150486466.5864,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 126.68
+    },
+    {
+      "index": 1,
+      "start": 414.56,
+      "end": 591.45
+    },
+    {
+      "index": 2,
+      "start": 793.86,
+      "end": 832.7
+    },
+    {
+      "index": 3,
+      "start": 1240.64,
+      "end": 1327.2
+    },
+    {
+      "index": 4,
+      "start": 1723.59,
+      "end": 1879.58
+    },
+    {
+      "index": 5,
+      "start": 2195.72,
+      "end": 2261.79
+    },
+    {
+      "index": 6,
+      "start": 2955.97,
+      "end": 3033.05
+    },
+    {
+      "index": 7,
+      "start": 3492.58,
+      "end": 3590.62
+    },
+    {
+      "index": 8,
+      "start": 3835.59,
+      "end": 3933.82
+    },
+    {
+      "index": 9,
+      "start": 4172.23,
+      "end": 4273.37
+    },
+    {
+      "index": 10,
+      "start": 4859.33,
+      "end": 4919.58
+    },
+    {
+      "index": 11,
+      "start": 5166.56,
+      "end": 5219.07
+    },
+    {
+      "index": 12,
+      "start": 5451.36,
+      "end": 5537.69
+    },
+    {
+      "index": 13,
+      "start": 5693.73,
+      "end": 5793.37
+    },
+    {
+      "index": 14,
+      "start": 6046.72,
+      "end": 6078.49
+    },
+    {
+      "index": 15,
+      "start": 6329.67,
+      "end": 6407.42
+    },
+    {
+      "index": 16,
+      "start": 6810.95,
+      "end": 6933.85
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.46,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 8.72,
+      "end": 10.82,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 12.18,
+      "end": 16.16,
+      "text": "Dobry wieczór. Wita Was Jarek Szubrycht, autor audycji,"
+    },
+    {
+      "start": 16.72,
+      "end": 20.9,
+      "text": "która nie pozwoli Wam zasnąć przez następne dwie godziny."
+    },
+    {
+      "start": 21.52,
+      "end": 24.54,
+      "text": "Wita też Was Mariusz Owczarek, jej wydawca."
+    },
+    {
+      "start": 24.54,
+      "end": 31.68,
+      "text": "Audycja nazywa się ciężko na sercu i nie bez powodu tak się nazywa."
+    },
+    {
+      "start": 32.3,
+      "end": 34.66,
+      "text": "Dzisiaj zacznę od wyznania."
+    },
+    {
+      "start": 35.2,
+      "end": 39.58,
+      "text": "Kocham koncerty, ale nie przepadam za płytami koncertowymi."
+    },
+    {
+      "start": 40.22,
+      "end": 44.52,
+      "text": "Są bowiem tylko niedoskonałym zapisem doświadczenia,"
+    },
+    {
+      "start": 44.68,
+      "end": 50.46,
+      "text": "które jest znacznie bardziej wielowymiarowe niż tylko dźwięk."
+    },
+    {
+      "start": 50.78,
+      "end": 56,
+      "text": "Jeszcze mniej niż koncertowe płyty lubię te koncertowe filmy,"
+    },
+    {
+      "start": 56.54,
+      "end": 61.5,
+      "text": "bo dźwięk z obrazem tym bardziej, tym mocniej uświadamiają mi,"
+    },
+    {
+      "start": 61.86,
+      "end": 69.06,
+      "text": "jak totalnym i niepowtarzalnym doświadczeniem jest przeżywanie dobrego koncertu pod sceną."
+    },
+    {
+      "start": 70.32,
+      "end": 76,
+      "text": "Jest to jednak, od razu mówię, reguła, od której są wyjątki."
+    },
+    {
+      "start": 76,
+      "end": 82.16,
+      "text": "I jak się nad tym zastanowiłem, to okazało się, że tych wyjątków jest sporo."
+    },
+    {
+      "start": 82.34,
+      "end": 86.68,
+      "text": "Wystarczy by wypełnić dwugodzinną audycję."
+    },
+    {
+      "start": 87.38,
+      "end": 91.2,
+      "text": "Dzisiaj, moi mili, będę grał tylko z płyt koncertowych,"
+    },
+    {
+      "start": 91.76,
+      "end": 98.46,
+      "text": "a pretekstem do tego jest premiera koncertowej właśnie płyty zespołu Imperator."
+    },
+    {
+      "start": 98.46,
+      "end": 103.14,
+      "text": "Duże wydarzenie, bo jak wszyscy zainteresowani doskonale wiedzą,"
+    },
+    {
+      "start": 103.62,
+      "end": 108.32,
+      "text": "materiałami studyjnymi, Imperator nas nie rozpieszcza."
+    },
+    {
+      "start": 108.32,
+      "end": 109.9,
+      "text": "Widzę was, Imperator!"
+    },
+    {
+      "start": 115.46,
+      "end": 116.74,
+      "text": "Necronomikor!"
+    },
+    {
+      "start": 125.68,
+      "end": 126.68,
+      "text": "Uuuu!"
+    },
+    {
+      "start": 414.56,
+      "end": 439.04,
+      "text": "Słuchaliśmy Imperatora z płyty The Time After Time Live, nagranej w 2018 roku w warszawskiej progresji, a wydanej przed kilkoma chwilami przez vintage vinyl i zawierającej materiał z zamierzchłych czasów, gdy hartowała się stal."
+    },
+    {
+      "start": 439.04,
+      "end": 454.38,
+      "text": "Imperator bowiem powstał w 1984 roku w Łodzi i był jednym z czołowych przedstawicieli drugiej ekstremalnej fali polskiego metalu."
+    },
+    {
+      "start": 454.38,
+      "end": 466.26,
+      "text": "Przez kilka lat zespół był bardzo aktywny, od Jarocina przez scenę teatralną po metalowy underground o właściwie globalnym zasięgu."
+    },
+    {
+      "start": 466.26,
+      "end": 487.6,
+      "text": "Szybko zyskał status grupy wręcz kultowej. Wszyscy czekaliśmy niecierpliwie na ich płytowy debiut, ale niestety z jakichś względów Imperator nie był w stanie w pełni zrealizować tego potencjału."
+    },
+    {
+      "start": 487.6,
+      "end": 500.68,
+      "text": "To zresztą temat na inną długą opowieść. Wydali wtedy tylko jeden album studyjny w 1991, The Time Before Time."
+    },
+    {
+      "start": 501.44,
+      "end": 510.52,
+      "text": "Album dobry, ale na pewno nie aż tak dobry jak zapowiadały to ich kultowe demówki i porywające koncerty."
+    },
+    {
+      "start": 511.08,
+      "end": 520.18,
+      "text": "Potem Imperator się rozpadł, długo go nie było, a teraz znowu jest i kto wie, może jeszcze nadejdzie czas ich panowania."
+    },
+    {
+      "start": 520.94,
+      "end": 531.5,
+      "text": "Póki co słuchamy The Time After Time Live, a więc płyty, z której niezbicie wynika, że to naprawdę znakomity zespół."
+    },
+    {
+      "start": 531.5,
+      "end": 533.7,
+      "text": "Endless sacrifice!"
+    },
+    {
+      "start": 541.08,
+      "end": 542.08,
+      "text": "Zobaczcie!"
+    },
+    {
+      "start": 571.08,
+      "end": 573.08,
+      "text": "Zobaczcie!"
+    },
+    {
+      "start": 793.86,
+      "end": 817.02,
+      "text": "Imperatorowi już dziękujemy i przechodzimy do koncertówek, które są ze mną znacznie dłużej. Niektóre z nich całe moje metalowe życie. Na przykład debiut TSA, czyli live, grzecznie na mnie czekał już od 1982 roku."
+    },
+    {
+      "start": 823.86,
+      "end": 832.7,
+      "text": "Dziś już nie doda."
+    },
+    {
+      "start": 1240.64,
+      "end": 1249.66,
+      "text": "Jako młody maniak uwielbiałem Turbo i ich płytę Alive poskładaną z dwóch koncertów."
+    },
+    {
+      "start": 1249.66,
+      "end": 1261.84,
+      "text": "Jeden był z końcówki 1986 roku, drugi z początku 1987 i to był najlepszy czas dla zespołu."
+    },
+    {
+      "start": 1262.22,
+      "end": 1266.96,
+      "text": "Poznaniacy byli bez wątpienia na podium polskiej sceny metalowej."
+    },
+    {
+      "start": 1267.66,
+      "end": 1273.46,
+      "text": "W tamtym czasie może nawet przez chwilę na miejscu pierwszym, bo gwiazda TSA już bladła."
+    },
+    {
+      "start": 1273.46,
+      "end": 1283.7,
+      "text": "Natomiast Cut miał dopiero za chwilę osiągnąć pełnię swoich mocy, dopiero za chwilę miał wydać oddech wymarłych światów."
+    },
+    {
+      "start": 1284.38,
+      "end": 1293.76,
+      "text": "Alive to turbo już trashowe, ale jeszcze oparte na solidnym speed metalowym i po prostu heavy metalowym fundamencie."
+    },
+    {
+      "start": 1294.52,
+      "end": 1306.62,
+      "text": "To zespół dobrze zgrany, ale nie rutyniarski z świetnie rozśpiewanym Grzegorzem Kupczykiem, którego roznosi tu energia."
+    },
+    {
+      "start": 1306.82,
+      "end": 1316.6,
+      "text": "Wszystko się zgadza i aż dziw bierze, że tak łatwo, żeby nie powiedzieć koncertowo, to potem sprzeniewierzyli."
+    },
+    {
+      "start": 1316.82,
+      "end": 1325.62,
+      "text": "Ale dobrze, nie będę się czepiał, tym bardziej, że za dawne grzechy już odpokutowali."
+    },
+    {
+      "start": 1724.51,
+      "end": 1733.89,
+      "text": "Niewiele mamy nagrań z tamtych czasów, ale te, które mamy, to w dużej mierze nagrania koncertowe."
+    },
+    {
+      "start": 1734.79,
+      "end": 1741.27,
+      "text": "Znacznie więcej ich niż przyzwoitych materiałów studyjnych, z prozaicznych powodów."
+    },
+    {
+      "start": 1741.39,
+      "end": 1751.47,
+      "text": "Na koncercie można było zgrać z konsolety, co tam się udało ustawić i co zespół zmobilizowany wycisnął z siebie na scenie."
+    },
+    {
+      "start": 1751.47,
+      "end": 1759.31,
+      "text": "I nawet jeśli jakość była ledwie przyzwoita, to materiał zwykle bronił się koncertową energią."
+    },
+    {
+      "start": 1759.95,
+      "end": 1777.13,
+      "text": "Natomiast studiów nagraniowych było niewiele, swoje kosztowały, a w dodatku łatwo było trafić w ręce kogoś, kto zupełnie nie kumał takiej muzyki i wmawiał młodocianym metalowcom, że tak się nie robi."
+    },
+    {
+      "start": 1777.35,
+      "end": 1787.53,
+      "text": "W tamtym czasie więc często zdarzało się, że wersje studyjne nie oddawały potencjału zespołu, który ujawniał się na żywo."
+    },
+    {
+      "start": 1787.87,
+      "end": 1797.27,
+      "text": "Odwrotnie niż teraz, kiedy nawet płyty domowe i roboty śmigają aż miło, ale nie zawsze zespoły potrafią zbliżyć się do tego na scenie."
+    },
+    {
+      "start": 1797.83,
+      "end": 1808.25,
+      "text": "A zatem sporo z tego, co działo się w polskim metalu w latach osiemdziesiątych zostało oficjalnie zapisane na wydawnictwach koncertowych."
+    },
+    {
+      "start": 1808.35,
+      "end": 1815.11,
+      "text": "Mieliśmy na przykład trzy płyty z nagraniami polskich grup z Metalmani 87."
+    },
+    {
+      "start": 1815.53,
+      "end": 1822.53,
+      "text": "To były tak zwane splity, czyli każdy miał tu dla siebie jedną stronę winyla, m.in. Stoss Dragon Destroyer."
+    },
+    {
+      "start": 1822.53,
+      "end": 1837.45,
+      "text": "Ale było też wydawnictwo zatytułowane Trash Demo Live, które dokumentowało pierwszy okres działalności zespołu Testphobi, Testphobi Creon albo Creon,"
+    },
+    {
+      "start": 1837.53,
+      "end": 1843.27,
+      "text": "bo ta nazwa po drodze się w ten sposób zmieniała, w ten sposób mutowała."
+    },
+    {
+      "start": 1843.93,
+      "end": 1846.77,
+      "text": "Kaseta ukazała się już pod szyldem Creon."
+    },
+    {
+      "start": 1847.39,
+      "end": 1852.65,
+      "text": "Miała demo w tytule, bo jakość była demówkowa, co za chwilę zresztą usłyszycie,"
+    },
+    {
+      "start": 1853.23,
+      "end": 1857.93,
+      "text": "ale dystrybucja była oficjalna i wszyscy się w tym zasłuchiwaliśmy."
+    },
+    {
+      "start": 1858.73,
+      "end": 1863.19,
+      "text": "A ten miły pan, który twierdzi, że śmierć jest moją narzeczoną,"
+    },
+    {
+      "start": 1863.19,
+      "end": 1872.93,
+      "text": "to nikt inny jak Zbigniew Zaranek, niedawny zwycięzca telewizyjnego talent show The Voice Senior."
+    },
+    {
+      "start": 2195.72,
+      "end": 2213.96,
+      "text": "Najważniejszą dla mnie płytą koncertową polskiego zespołu z tamtych czasów, a może wszechczasów, jest bez wątpienia 38 Minutes of Life. Bardzo dziwnie to brzmi jak tak z angielska wymawiam, bo mówiliśmy oczywiście 38 minut."
+    },
+    {
+      "start": 2213.96,
+      "end": 2239.96,
+      "text": "Płyta zespołu Kat, wydana pod koniec 87 roku. Wchodziłem wtedy w 14. rok życia, więc skłamałbym, gdybym powiedział, że goła pupa z okładki nie robiła na mnie wrażenia, ale dzisiaj już tak bardzo się nią nie ekscytuje, a płyta nie przestaje mnie zachwycać."
+    },
+    {
+      "start": 2239.96,
+      "end": 2258.12,
+      "text": "Kat był wtedy nie do zatrzymania. Był potęgą, która co prawda potknęła się o własne nogi jeszcze bardziej efektownie i skutecznie niż turbo, ale cóż, cieszmy się muzyką, która nam została z tego ich najlepszego czasu."
+    },
+    {
+      "start": 2956.75,
+      "end": 2963.67,
+      "text": "Czym koncertówka Kata była w wymiarze lokalnym, tym w skali globalnej był dla nas podwójny album"
+    },
+    {
+      "start": 2963.67,
+      "end": 2968.37,
+      "text": "Eine kleine Nachtmusik zespołu Venom."
+    },
+    {
+      "start": 2968.89,
+      "end": 2978.59,
+      "text": "Wydany w Polsce na licencji, a zatem przemycający różne wszeteczne paskudstwa, podstrzechy późnego PRL-u,"
+    },
+    {
+      "start": 2978.99,
+      "end": 2987.51,
+      "text": "rozpalał naszą wyobraźnię nie tylko muzyką z piekła rodem, ale i niesamowitymi zdjęciami z wkładki."
+    },
+    {
+      "start": 2988.13,
+      "end": 2989.89,
+      "text": "Podobnie jak z Katem."
+    },
+    {
+      "start": 2990.31,
+      "end": 2998.61,
+      "text": "Venom był wielki, ale na własne życzenie to stracił i teraz owszem, mamy do czynienia z jego różnymi mutacjami,"
+    },
+    {
+      "start": 2999.75,
+      "end": 3003.33,
+      "text": "czasem nie najgorszymi, ale nie ma się co oszukiwać."
+    },
+    {
+      "start": 3003.45,
+      "end": 3006.33,
+      "text": "To są tylko wyroby Venomo podobne."
+    },
+    {
+      "start": 3006.97,
+      "end": 3015.09,
+      "text": "Zanim posłuchamy, jak brzmiał ten potężny, prawdziwy Venom w połowie lat osiemdziesiątych"
+    },
+    {
+      "start": 3015.09,
+      "end": 3023.73,
+      "text": "uszczytu swoich możliwości, pochwalę się jeszcze tylko, że miałem okazję zobaczyć ich na scenie"
+    },
+    {
+      "start": 3023.73,
+      "end": 3030.75,
+      "text": "w składzie i z Mantasem i z Kronosem i tak, to był jeden z koncertów życia."
+    },
+    {
+      "start": 3030.75,
+      "end": 3033.05,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3492.58,
+      "end": 3503.36,
+      "text": "Zasugerowałem przed chwilą, że koncertówka Venom była najważniejsza, ale chyba powinienem wprowadzić autopoprawkę."
+    },
+    {
+      "start": 3503.36,
+      "end": 3520.78,
+      "text": "Ona była dla mnie najważniejsza, nie dla wszystkich, bo jednak znacznie mocniej rezonował inny podwójny album wydany w Polsce na licencji i dostępny w księgarniach, czyli Life After Death, Iron Maiden."
+    },
+    {
+      "start": 3520.78,
+      "end": 3546.06,
+      "text": "Setki stron już zapisano o braterskiej przyjaźni Maiden z Polakami. Ich występ na poznańskim weselu urósł do metalowego ekwiwalentu remisu na Wembley, ale faktem jest, że to wielki zespół i że rzeczywiście regularnie u nas wtedy bywał, wtedy kiedy inni nas jeszcze omijali."
+    },
+    {
+      "start": 3546.48,
+      "end": 3564.08,
+      "text": "Life After Death to świetny materiał, pamiątka po World Slavery Tour, a więc po trasie, która wyniosła grupę na szczyt i zarazem ostatecznie przypieczętowała obecność Brusa Dickinson'a przy mikrofonie."
+    },
+    {
+      "start": 3564.88,
+      "end": 3567.8,
+      "text": "No i piękny Eddie wstaje z grobu na okładce."
+    },
+    {
+      "start": 3568.52,
+      "end": 3576.14,
+      "text": "Jak tu nie kupić takiej płyty, jak jej nie kochać, nawet jak mama i tata trochę prychają."
+    },
+    {
+      "start": 3576.14,
+      "end": 3578.36,
+      "text": "We are, we are, we are!"
+    },
+    {
+      "start": 3583.3,
+      "end": 3587.44,
+      "text": "Never let me sing your heart in the air!"
+    },
+    {
+      "start": 3588.64,
+      "end": 3589.04,
+      "text": "Hey!"
+    },
+    {
+      "start": 3590.04,
+      "end": 3590.62,
+      "text": "Hey!"
+    },
+    {
+      "start": 3836.21,
+      "end": 3841.81,
+      "text": "Był Venom, był Maiden, a niewiele później w każdej polskiej księgarni"
+    },
+    {
+      "start": 3841.81,
+      "end": 3845.47,
+      "text": "był też album Live Undead Slayera."
+    },
+    {
+      "start": 3846.75,
+      "end": 3849.27,
+      "text": "Dostrzegacie tu pewien wzór, prawda?"
+    },
+    {
+      "start": 3850.23,
+      "end": 3854.75,
+      "text": "Można się domyślać, że mieliśmy dostęp do płyt koncertowych"
+    },
+    {
+      "start": 3854.75,
+      "end": 3859.29,
+      "text": "największych gwiazd metalu, ale niekoniecznie do ich materiałów"
+    },
+    {
+      "start": 3859.29,
+      "end": 3862.19,
+      "text": "studyjnych nie bez powodu."
+    },
+    {
+      "start": 3862.19,
+      "end": 3868.47,
+      "text": "Otóż koncertówki były mniej poważane, sprzedawały się gorzej,"
+    },
+    {
+      "start": 3868.61,
+      "end": 3872.77,
+      "text": "a więc opłaty za licencje były mniejsze."
+    },
+    {
+      "start": 3872.91,
+      "end": 3876.67,
+      "text": "Po prostu te licencje dało się kupić po taniości."
+    },
+    {
+      "start": 3877.27,
+      "end": 3882.49,
+      "text": "Inna sprawa, że akurat Live Undead Slayera to koncertówka oszukana."
+    },
+    {
+      "start": 3883.07,
+      "end": 3889.21,
+      "text": "Owszem, jest to nagranie live na setkę, zespół pędzi,"
+    },
+    {
+      "start": 3889.21,
+      "end": 3895.33,
+      "text": "wszyscy ze sobą grają, nie było to nagrywane ścieżka po ścieżce,"
+    },
+    {
+      "start": 3895.89,
+      "end": 3900.99,
+      "text": "ale rejestrowane było w studiu, do którego wcisnęło się raptem"
+    },
+    {
+      "start": 3900.99,
+      "end": 3905.35,
+      "text": "paru szczęśliwców, chyba z jakiegoś konkursu radiowego."
+    },
+    {
+      "start": 3905.95,
+      "end": 3908.63,
+      "text": "Odgłosy znacznie liczniejszej publiczności,"
+    },
+    {
+      "start": 3908.89,
+      "end": 3912.99,
+      "text": "Bill Mettoyer, inżynier dźwięku pracujący wtedy ze Slayerem,"
+    },
+    {
+      "start": 3913.13,
+      "end": 3915.05,
+      "text": "dorzucił post factum."
+    },
+    {
+      "start": 3916.03,
+      "end": 3923.45,
+      "text": "Oczywiście w 1990 roku, kiedy Live Undead ukazała się w Polsce,"
+    },
+    {
+      "start": 3923.87,
+      "end": 3926.23,
+      "text": "nie mieliśmy o tym pojęcia."
+    },
+    {
+      "start": 3927.11,
+      "end": 3932.25,
+      "text": "Slayer to Slayer, kto by tam wnikał, jak działa czarna magia."
+    },
+    {
+      "start": 4172.23,
+      "end": 4189.71,
+      "text": "A jeśli ktoś po Live and Dead miałby wątpliwości, czy Slayer, aby potrafi grać koncerty, ostatecznie rozwiał je podwójny album Decade of Aggression z 1991 roku."
+    },
+    {
+      "start": 4190.07,
+      "end": 4200.01,
+      "text": "Swoją drogą proszę zauważyć, że przez PRL-owskie zapóźnienie cywilizacyjne mieliśmy te dwa wydawnictwa rok po roku."
+    },
+    {
+      "start": 4200.99,
+      "end": 4215.45,
+      "text": "Live and Dead wyszło u nas pięć lat po swojej oficjalnej premierze, a dekadę agresji mieliśmy od razu na piratach i różnica pomiędzy tymi dwoma materiałami była wstrząsająca."
+    },
+    {
+      "start": 4215.45,
+      "end": 4228.47,
+      "text": "Decade of Aggression jest albumem nagranym po Seasons in the Abyss, a więc po serii trzech najlepszych płyt Slayera i jednych z najlepszych płyt w historii metalu."
+    },
+    {
+      "start": 4229.75,
+      "end": 4238.79,
+      "text": "Proszę bardzo, niech to wybrzmi, proszę się nad tym zastanowić i wyciągnąć wnioski, jakie tam już sobie chcecie."
+    },
+    {
+      "start": 4239.23,
+      "end": 4243.11,
+      "text": "Ta koncertówka nie bez powodu ma dekadę w tytule."
+    },
+    {
+      "start": 4243.67,
+      "end": 4265.79,
+      "text": "Slayer obchodził wtedy dziesięciolecie działalności i miał już w dorobku Rain in Blood, South of Heaven, Seasons in the Abyss, O Hell Awaits i Show No Mercy już litościwie nie wspomnę, choć przecież powinienem być bez litości."
+    },
+    {
+      "start": 4266.91,
+      "end": 4271.11,
+      "text": "A co twój zespół zrobił przez pierwsze dziesięć lat istnienia?"
+    },
+    {
+      "start": 4271.11,
+      "end": 4273.37,
+      "text": "A co twój zespół zrobił przez pierwsze dziesięć lat istnienia?"
+    },
+    {
+      "start": 4860.11,
+      "end": 4885.37,
+      "text": "Skoro był już Slayer, to czas na zespół, który w owym czasie nazywany był Polskim Slayerem i na koncert, na którym prawie byłem, bo mieszkałem nieopodal na miasteczku studenckim i widziałem z okna akademika groteskowo wielkie siły policyjne zgromadzone, by dać odpór groźnym metalowcom."
+    },
+    {
+      "start": 4886.49,
+      "end": 4914.37,
+      "text": "Dlaczego się nie wybrałem? Nie pytajcie, bo nie wiem. Cóż, ominęła mnie historia. W Krakowie, w hali Wisły, 13 grudnia, Vader nagrał swoją pierwszą płytę koncertową, zatytułowaną The Darkest Age, Life 93. Doskonała nie była, ale jako dokument tamtych czasów i tamtego Vadera sprawdziła się znakomicie."
+    },
+    {
+      "start": 4915.65,
+      "end": 4919.59,
+      "text": "Wielkie prawa zastrzeżone."
+    },
+    {
+      "start": 5167.34,
+      "end": 5172.9,
+      "text": "Cześć Kraków! Dzięki Wam! Dzięki za wszystko! Do następnego razu!"
+    },
+    {
+      "start": 5174.04,
+      "end": 5188.8,
+      "text": "Na tę swoją najważniejszą płytę koncertową Vader musiał poczekać jeszcze kilka lat, ale powiedzieć, że wydanie Live in Japan było wydarzeniem, to nic nie powiedzieć."
+    },
+    {
+      "start": 5189.26,
+      "end": 5202.5,
+      "text": "Nasi ludzie nie tylko pojechali z koncertami do kraju kwitnącej wiśni, ale jeszcze nagrali tam album Live, jak jakiś Deep Purple czy inny Judas Priest."
+    },
+    {
+      "start": 5203.16,
+      "end": 5215.94,
+      "text": "Duma nas wszystkich rozpierała, jakbyśmy to my stali na scenie tokijskiego klubu Quattro 31 sierpnia 1998 roku."
+    },
+    {
+      "start": 5451.36,
+      "end": 5471.04,
+      "text": "Nie byłoby pewnie Live in Japan i mogłoby nie być w ogóle Vadera, gdyby nie Judas Priest i ich album Unleashed in the East z 1979 roku z trasy promującej album Hellband for Leather."
+    },
+    {
+      "start": 5471.04,
+      "end": 5497.22,
+      "text": "Okładkę tego wydawnictwa w formie plakatu powiesił sobie nad łóżkiem nastoletni Piotrek Wiwczarek, później i wciąż znany nam jako Peter z Vadera, który wpatrywał się w tych odzianych w skóry metalowych herosów, spowitych dymem i skąpanych w świetle reflektorów."
+    },
+    {
+      "start": 5497.22,
+      "end": 5502.1,
+      "text": "I marzył o tym, że też kiedyś tak będzie."
+    },
+    {
+      "start": 5503.06,
+      "end": 5512.22,
+      "text": "Nie słuchałem Unleashed in the East, kiedy ta płyta wyszła, bo miałem pięć lat i słuchałem wtedy harcerskiego zespołu Gawenda."
+    },
+    {
+      "start": 5512.96,
+      "end": 5524.26,
+      "text": "Też podobno jeździł z koncertami do Japonii, nie wiem czy nagrał tam koncertową płytę, ale już dawno nadrobiłem zaległości i tak potwierdzam."
+    },
+    {
+      "start": 5524.26,
+      "end": 5535.08,
+      "text": "Unleashed in the East to znakomity album koncertowy zresztą z czasów, kiedy Judas Priest po prostu był w mistrzowskiej formie."
+    },
+    {
+      "start": 5694.73,
+      "end": 5709.13,
+      "text": "Zupełnie odrębną kategorią są metalowe płyty koncertowe nagrane w Polsce i kto wie, może warto im poświęcić osobną audycję, bo parę ciekawostek by się uzbierało."
+    },
+    {
+      "start": 5709.13,
+      "end": 5723.39,
+      "text": "Swojego czasu najważniejszą z nich, bo pierwszą lub jedną z pierwszych, ale ja wcześniejszych, prawdę mówiąc, nie pamiętam, był album Alive in Poland, włoskiej grupy Bulldozer."
+    },
+    {
+      "start": 5723.89,
+      "end": 5737.53,
+      "text": "Swojego czasu Włosi byli wielbieni nad Wisłą, pewnie głównie dlatego, że do nas jeździli i przez to stawiano ich na równi z Wenomami i z Leierami tego świata."
+    },
+    {
+      "start": 5738.57,
+      "end": 5751.67,
+      "text": "Zupełnie niezasłużenie, co jednak nie znaczy, że Bulldozer nie miał swoich wartościowych pięciu minut, owszem miał w drugiej połowie lat osiemdziesiątych."
+    },
+    {
+      "start": 5751.67,
+      "end": 5756.47,
+      "text": "I ta koncertówka z Polski była kropką nad i."
+    },
+    {
+      "start": 5756.77,
+      "end": 5770.43,
+      "text": "Niewiele później zespół przestał istnieć i nie było go długie lata, potem powrócił, wciąż działa, no ale nie udało się odrobić zaległości."
+    },
+    {
+      "start": 5770.43,
+      "end": 5781.31,
+      "text": "Przed nami Bulldozer ze swojego szczytowego okresu z koncertu z Zabrza z 1989 roku."
+    },
+    {
+      "start": 5781.67,
+      "end": 5791.31,
+      "text": "Wnioskując z tego, co za chwilę usłyszymy, AC Milan miał wtedy sztamę z górnikiem Zabrze."
+    },
+    {
+      "start": 6047.72,
+      "end": 6056.16,
+      "text": "Słuchacie ciężko na sercu odcinka o tym, że co prawda nie słucham metalowych koncertówek, ale są wyjątki."
+    },
+    {
+      "start": 6057.1,
+      "end": 6061.34,
+      "text": "Death metalowych koncertówek w ogóle nie słucham, poza tymi wejderami,"
+    },
+    {
+      "start": 6062.14,
+      "end": 6065.92,
+      "text": "chociaż i tutaj oczywiście kilka przyzwoitych by się znalazło."
+    },
+    {
+      "start": 6066.02,
+      "end": 6069.54,
+      "text": "Morbid Angel, Death z Eindhoven czy Obituary."
+    },
+    {
+      "start": 6070.4,
+      "end": 6075.66,
+      "text": "Ale dzisiaj zaproponuję Państwu odrobinę kanibalizmu na żywo."
+    },
+    {
+      "start": 6076.36,
+      "end": 6078.5,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 6329.67,
+      "end": 6337.73,
+      "text": "Teraz czas na black metal, co oczywiście oznacza, że czas na life in Leipzig."
+    },
+    {
+      "start": 6338.07,
+      "end": 6354.87,
+      "text": "O ile bowiem w sporze mayhem kontra burzu można dyskutować o materiałach studyjnych, można porównywać, o tyle nikt nie ma wątpliwości, że koncertówki mayhem są o niebo lepsze."
+    },
+    {
+      "start": 6355.59,
+      "end": 6371.97,
+      "text": "Mają ich kilka, niektóre naprawdę dobre, chociażby Mediolanum Capta Est, a że ten zespół się zmieniał, że zmieniał się skład, zmieniał się styl, to fajnie, że w ten sposób dokumentuje się różne postacie tej grupy."
+    },
+    {
+      "start": 6372.45,
+      "end": 6382.69,
+      "text": "Ale ta najważniejsza koncertowa płyta mayhem to oczywiście life in Leipzig z 1990 roku."
+    },
+    {
+      "start": 6383.27,
+      "end": 6391.15,
+      "text": "Wrzeszczy dead, na gitarze gra Euronymus i to jest właśnie prawdziwe, oryginalne mayhem."
+    },
+    {
+      "start": 6391.65,
+      "end": 6393.75,
+      "text": "100% kultu w kulcie."
+    },
+    {
+      "start": 6394.45,
+      "end": 6407.43,
+      "text": "Kiedy jest kult, a kiedy jest cimno, a kiedy jest cimno, a przyzwychące mężczyzna może cię obszestować."
+    },
+    {
+      "start": 6810.95,
+      "end": 6812.81,
+      "text": "Are you dead?"
+    },
+    {
+      "start": 6815.77,
+      "end": 6821.13,
+      "text": "Zaczęliśmy od imperatora i na imperatorze skończymy."
+    },
+    {
+      "start": 6821.93,
+      "end": 6831.19,
+      "text": "Jestem bowiem przekonany, że norweski emperor wziął sobie imię zainspirowany naszym imperatorem."
+    },
+    {
+      "start": 6831.19,
+      "end": 6833.03,
+      "text": "Tak tym z Łodzi."
+    },
+    {
+      "start": 6833.89,
+      "end": 6843.95,
+      "text": "Znali go bowiem i lubili, a Euronymus, lider Mayhem miał przecież wydawać imperatora w swojej wytwórni Deathlike Silence."
+    },
+    {
+      "start": 6844.93,
+      "end": 6857.09,
+      "text": "Smarkaci muzycy emperora natomiast krążyli wtedy wokół Euronymusa jak ćma wokół świecy i nie wierzę, że to na przypadek."
+    },
+    {
+      "start": 6857.09,
+      "end": 6863.97,
+      "text": "Po raz pierwszy emperora widziałem na żywo wiosną 1999 roku."
+    },
+    {
+      "start": 6864.21,
+      "end": 6870.29,
+      "text": "Było to w Wiedniu, kiedy Norwedzy otwierali koncert Morbid Angel."
+    },
+    {
+      "start": 6871.37,
+      "end": 6877.09,
+      "text": "I to był jeden z tych historycznych momentów, kiedy support przyćmiewa gwiazdę."
+    },
+    {
+      "start": 6878.55,
+      "end": 6891.71,
+      "text": "Nie muzycznie, Morbid moim zdaniem był wtedy niedościgniony, ale też nie było wątpliwości, że większość fanów przyszła właśnie na emperora, że to już była ich epoka."
+    },
+    {
+      "start": 6891.71,
+      "end": 6908.95,
+      "text": "Niewiele później, bo 9 października tego samego roku emperor był gwiazdą pierwszej edycji Mystic Festiwalu, wtedy jednodniowego, odbywającego się w krakowskiej hali Wisły."
+    },
+    {
+      "start": 6909.83,
+      "end": 6915.71,
+      "text": "Oddam się wspomnieniom słuchując się w album Imperial Life Ceremony."
+    },
+    {
+      "start": 6916.37,
+      "end": 6921.97,
+      "text": "Z tamtego właśnie czasu wydany w 2000 roku."
+    },
+    {
+      "start": 6922.69,
+      "end": 6923.29,
+      "text": "Dobranoc."
+    },
+    {
+      "start": 6923.29,
+      "end": 6924.47,
+      "text": "Dzień dobry."
+    }
+  ],
+  "stats": {
+    "windowCount": 17,
+    "transcribedAudioSec": 1556.67,
+    "segmentCount": 165,
+    "characterCount": 15016
+  },
+  "sourceId": "2026-05-20-koncertowki-wszech-czasow"
+}
