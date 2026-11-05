@@ -144,6 +144,15 @@
             <tbody id="tracks"></tbody>
           </table>
 
+          <h3>Dodane utwory</h3>
+          <table>
+            <thead>
+              <tr><th>Wykonawca</th><th>Tytuł</th><th>Album</th><th>Start</th><th>Czas</th><th></th></tr>
+            </thead>
+            <tbody id="add-tracks"></tbody>
+          </table>
+          <p class="hint-line"><button type="button" id="add-track">Dodaj utwór</button></p>
+
           <h3>Wejścia</h3>
           <table>
             <thead>
@@ -151,6 +160,15 @@
             </thead>
             <tbody id="topics"></tbody>
           </table>
+
+          <h3>Dodane wejścia</h3>
+          <table>
+            <thead>
+              <tr><th>Etykieta</th><th>Start</th><th></th></tr>
+            </thead>
+            <tbody id="add-topics"></tbody>
+          </table>
+          <p class="hint-line"><button type="button" id="add-topic">Dodaj wejście</button></p>
 
           <div class="restore" id="restore"></div>
 
@@ -163,7 +181,15 @@
     </div>
 
     <script>
-      const state = { episode: null, tracks: [], topics: [], hiddenTracks: [], hiddenTopics: [] };
+      const state = {
+        episode: null,
+        tracks: [],
+        topics: [],
+        addTracks: [],
+        addTopics: [],
+        hiddenTracks: [],
+        hiddenTopics: [],
+      };
       const $ = (id) => document.getElementById(id);
 
       const fmt = (seconds) => {
@@ -303,6 +329,72 @@
         });
       };
 
+      const renderAdded = () => {
+        const trackBody = $('add-tracks');
+        trackBody.textContent = '';
+        state.addTracks.forEach((track, index) => {
+          const tr = document.createElement('tr');
+          const cells = [
+            ['artist', 'text', ''],
+            ['title', 'text', ''],
+            ['album', 'text', '(brak)'],
+            ['start', 'number', '0'],
+            ['durationSec', 'number', '0'],
+          ];
+          for (const [field, type, placeholder] of cells) {
+            const td = document.createElement('td');
+            const input = document.createElement('input');
+            input.type = type;
+            input.value = String(track[field] ?? '');
+            input.placeholder = placeholder;
+            input.addEventListener('input', () => {
+              track[field] = type === 'number' ? Number(input.value) : input.value;
+            });
+            td.append(input);
+            if (field === 'start') td.append(rowButton('weź', () => usePlayerTime(input)));
+            tr.append(td);
+          }
+          const actions = document.createElement('td');
+          actions.append(
+            rowButton('usuń', () => {
+              state.addTracks.splice(index, 1);
+              renderAdded();
+            })
+          );
+          tr.append(actions);
+          trackBody.append(tr);
+        });
+
+        const topicBody = $('add-topics');
+        topicBody.textContent = '';
+        state.addTopics.forEach((topic, index) => {
+          const tr = document.createElement('tr');
+          const labelCell = document.createElement('td');
+          const labelInput = document.createElement('input');
+          labelInput.type = 'text';
+          labelInput.value = topic.label ?? '';
+          labelInput.addEventListener('input', () => (topic.label = labelInput.value));
+          labelCell.append(labelInput);
+
+          const startCell = document.createElement('td');
+          const startInput = document.createElement('input');
+          startInput.type = 'number';
+          startInput.value = String(topic.start ?? 0);
+          startInput.addEventListener('input', () => (topic.start = Number(startInput.value)));
+          startCell.append(startInput, rowButton('weź', () => usePlayerTime(startInput)));
+
+          const actions = document.createElement('td');
+          actions.append(
+            rowButton('usuń', () => {
+              state.addTopics.splice(index, 1);
+              renderAdded();
+            })
+          );
+          tr.append(labelCell, startCell, actions);
+          topicBody.append(tr);
+        });
+      };
+
       const renderRestore = () => {
         const box = $('restore');
         box.textContent = '';
@@ -354,6 +446,8 @@
         state.topics = data.topics.map((topic) => ({ ...topic }));
         state.baseTracks = data.tracks.map((track) => ({ ...track }));
         state.baseTopics = data.topics.map((topic) => ({ ...topic }));
+        state.addTracks = (data.addTracks ?? []).map((track) => ({ ...track }));
+        state.addTopics = (data.addTopics ?? []).map((topic) => ({ ...topic }));
         state.hiddenTracks = (data.raw?.tracks ?? []).filter((fix) => fix.hide);
         state.hiddenTopics = (data.raw?.topics ?? []).filter((fix) => fix.hide);
 
@@ -370,6 +464,7 @@
 
         renderTracks();
         renderTopics();
+        renderAdded();
         renderRestore();
         renderList();
       };
@@ -388,6 +483,16 @@
       });
 
       $('filter').addEventListener('input', renderList);
+
+      $('add-track').addEventListener('click', () => {
+        state.addTracks.push({ artist: '', title: '', album: '', start: 0, durationSec: 0 });
+        renderAdded();
+      });
+
+      $('add-topic').addEventListener('click', () => {
+        state.addTopics.push({ label: '', start: 0 });
+        renderAdded();
+      });
 
       $('save').addEventListener('click', async () => {
         const episode = state.episode;
@@ -430,7 +535,14 @@
         const response = await fetch('/api/save', {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ id: episode.id, title: $('title').value, tracks, topics }),
+          body: JSON.stringify({
+            id: episode.id,
+            title: $('title').value,
+            tracks,
+            topics,
+            addTracks: state.addTracks,
+            addTopics: state.addTopics,
+          }),
         });
         const data = await response.json();
         $('status').textContent = response.ok ? 'zapisane — zbuduj stronę (npm run build)' : (data.error ?? 'błąd');

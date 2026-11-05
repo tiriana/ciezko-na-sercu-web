@@ -90,6 +90,26 @@ export const overrideSchema = z.object({
       })
     )
     .default([]),
+  // Wiersze dodane ręcznie: nie mają czego dopasować, więc są doklejane do osi.
+  addTracks: z
+    .array(
+      z.object({
+        artist: z.string().default(''),
+        title: z.string().default(''),
+        album: z.string().optional(),
+        start: z.number(),
+        durationSec: z.number().optional(),
+      })
+    )
+    .default([]),
+  addTopics: z
+    .array(
+      z.object({
+        start: z.number(),
+        label: z.string().default(''),
+      })
+    )
+    .default([]),
   // Poprawki wejść: dopasowanie po czasie i etykiecie, bo tagger nie nadaje im id.
   topics: z
     .array(

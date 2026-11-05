@@ -165,6 +165,8 @@ const server = createServer(async (req, res) => {
           topics: episodes.get(id)?.topics ?? [],
         },
         raw: overrides.get(id) ?? null,
+        addTracks: overrides.get(id)?.addTracks ?? [],
+        addTopics: overrides.get(id)?.addTopics ?? [],
       });
       return;
     }
@@ -203,9 +205,15 @@ const server = createServer(async (req, res) => {
         version: 1,
         tracks,
         topics,
+        addTracks: payload.addTracks ?? previous.addTracks ?? [],
+        addTopics: payload.addTopics ?? previous.addTopics ?? [],
         credits: previous.credits ?? { rename: {} },
       };
-      const empty = next.tracks.length === 0 && next.topics.length === 0;
+      const empty =
+        next.tracks.length === 0 &&
+        next.topics.length === 0 &&
+        next.addTracks.length === 0 &&
+        next.addTopics.length === 0;
       const overridePath = join(DATA, 'overrides', `${id}.json`);
       if (empty) {
         const { rm } = await import('node:fs/promises');

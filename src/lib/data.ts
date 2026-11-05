@@ -77,12 +77,31 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
       );
     }
 
+    if (override.addTopics.length > 0) {
+      episode.topics.push(...override.addTopics.map((topic) => ({ start: topic.start, label: topic.label })));
+      episode.topics.sort((left, right) => left.start - right.start);
+    }
+
     for (const fix of override.topics) {
       const topic = episode.topics.find((candidate) => candidate.start === fix.time && sameText(candidate.label, fix.label));
       if (!topic) continue;
       if (fix.start !== undefined) topic.start = fix.start;
       if (fix.newLabel) topic.label = fix.newLabel;
     }
+    if (override.addTracks.length > 0) {
+      episode.tracks.push(
+        ...override.addTracks.map((track) => ({
+          artist: track.artist,
+          title: track.title,
+          album: track.album ?? null,
+          start: track.start,
+          end: track.durationSec ? track.start + track.durationSec : undefined,
+          durationSec: track.durationSec,
+        }))
+      );
+      episode.tracks.sort((left, right) => left.start - right.start);
+    }
+
     if (override.topics.some((fix) => fix.hide)) {
       episode.topics = episode.topics.filter(
         (topic) => !override.topics.some((fix) => fix.hide && fix.time === topic.start && sameText(topic.label, fix.label))
