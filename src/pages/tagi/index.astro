@@ -9,8 +9,6 @@ import { layoutCloud } from '../../lib/wordcloud';
 const [entries, files] = await Promise.all([getEntries(), getEpisodeFiles()]);
 const index = buildTagIndex(files, entries);
 const tags = [...index.values()];
-const max = Math.max(1, ...tags.map((tag) => tag.episodes.length));
-
 // Chmura: wszystkie tagi naraz, rozmiar od częstości, układ liczony przy buildzie.
 // Osoby i znaczniki redakcyjne są w każdym odcinku, więc zdominowałyby chmurę —
 // w chmurze liczą się zespoły, wydarzenia, dzieła, miejsca i tematy.
@@ -24,7 +22,7 @@ const cloud = layoutCloud(
 const groups = TAG_TYPE_ORDER.map((type) => ({
   type,
   label: TAG_TYPE_LABELS[type],
-  tags: tags.filter((tag) => tag.type === type).sort((left, right) => right.episodes.length - left.episodes.length),
+  tags: tags.filter((tag) => tag.type === type).sort((left, right) => left.label.localeCompare(right.label, 'pl')),
 })).filter((group) => group.tags.length > 0);
 ---
 
@@ -60,20 +58,11 @@ const groups = TAG_TYPE_ORDER.map((type) => ({
     {groups.map((group) => (
       <section class="card tags-section" aria-labelledby={`tags-${group.type}`}>
         <h2 id={`tags-${group.type}`}>{group.label}</h2>
-        <ul class="tag-cloud">
-          {group.tags.map((tag) => (
-            <li>
-              <a
-                class="tag-cloud__item"
-                href={`/tagi/${tag.id}/`}
-                style={`--weight: ${(0.55 + (tag.episodes.length / max) * 0.45).toFixed(2)}`}
-              >
-                {tag.label}
-                <span class="tag-cloud__count">{tag.episodes.length}</span>
-              </a>
-            </li>
+        <p class="tag-list">
+          {group.tags.map((tag, index) => (
+            <>{index > 0 && <span class="tag-list__sep" aria-hidden="true">·</span>}<a href={`/tagi/${tag.id}/`}>{tag.label}</a></>
           ))}
-        </ul>
+        </p>
       </section>
     ))}
   </main>

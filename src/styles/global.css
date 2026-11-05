@@ -1576,3 +1576,27 @@ a {
   color: var(--muted);
   font-size: 12px;
 }
+
+.tag-list {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.tag-list a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tag-list a:hover {
+  color: var(--accent);
+}
+
+.tag-list__sep {
+  margin: 0 7px;
+  color: var(--muted);
+}
+
+.tags-cloud {
+  margin-bottom: 20px;
+}
