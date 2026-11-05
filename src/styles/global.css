@@ -1700,9 +1700,10 @@ a {
   cursor: pointer;
 }
 
-.audio-bar__skip svg {
-  width: 20px;
-  height: 20px;
+.audio-bar__skip {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
 }
 
 .audio-bar__skip:hover,
