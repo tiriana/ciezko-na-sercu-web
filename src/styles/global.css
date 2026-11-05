@@ -148,6 +148,17 @@ a {
 }
 
 
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: var(--hero-text);
+  background:
+    radial-gradient(120% 140% at 15% 0%, #2a2a2a 0%, transparent 55%),
+    linear-gradient(180deg, var(--hero-from), var(--hero-to));
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), 0 100%);
+  padding: 56px 0 84px;
+}
+
 .hero::before {
   content: "";
   position: absolute;
