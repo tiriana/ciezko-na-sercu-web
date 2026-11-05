@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "id": "8c25a2d1-b492-40f4-8cb7-20c77cd09647",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T16:06:53.671Z",
+  "durationSec": 6846,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "anthrax",
+      "label": "Anthrax",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5033
+    },
+    {
+      "id": "bethlehem",
+      "label": "Bethlehem",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4246
+    },
+    {
+      "id": "black-sabbath",
+      "label": "Black Sabbath",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1641
+    },
+    {
+      "id": "cannibal-corpse",
+      "label": "Cannibal Corpse",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2050
+    },
+    {
+      "id": "deep-purple",
+      "label": "Deep Purple",
+      "type": "artist",
+      "source": "tracks",
+      "at": 12
+    },
+    {
+      "id": "dokken",
+      "label": "Dokken",
+      "type": "artist",
+      "source": "tracks",
+      "at": 782
+    },
+    {
+      "id": "dying-fetus",
+      "label": "Dying Fetus",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5895
+    },
+    {
+      "id": "full-of-hell",
+      "label": "Full of Hell",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4068
+    },
+    {
+      "id": "kreator",
+      "label": "Kreator",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6322
+    },
+    {
+      "id": "mastodon",
+      "label": "Mastodon",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3368
+    },
+    {
+      "id": "megadeth",
+      "label": "Megadeth",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1110
+    },
+    {
+      "id": "meshuggah",
+      "label": "Meshuggah",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3544
+    },
+    {
+      "id": "mogwai",
+      "label": "Mogwai",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5725
+    },
+    {
+      "id": "mokadelic",
+      "label": "Mokadelic",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5532
+    },
+    {
+      "id": "motorhead",
+      "label": "Motörhead",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1348
+    },
+    {
+      "id": "naked-city",
+      "label": "NAKED CITY",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4632
+    },
+    {
+      "id": "powermad",
+      "label": "Powermad",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2786
+    },
+    {
+      "id": "rammstein",
+      "label": "Rammstein",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2430
+    },
+    {
+      "id": "slayer",
+      "label": "Slayer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4717
+    },
+    {
+      "id": "sleep",
+      "label": "Sleep",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6527
+    },
+    {
+      "id": "toxic-holocaust",
+      "label": "Toxic Holocaust",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3844
+    },
+    {
+      "id": "ulver",
+      "label": "Ulver",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3124
+    }
+  ],
+  "tracks": [
+    {
+      "start": 12,
+      "end": 782,
+      "durationSec": 203,
+      "artist": "Deep Purple",
+      "title": "Child In Time (Superhuman Stranger Things Version)",
+      "album": "Child In Time (Superhuman Stranger Things Version) - Single",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 782,
+      "end": 1110,
+      "durationSec": 277,
+      "artist": "Dokken",
+      "title": "Dream Warriors",
+      "album": "Back for the Attack",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1110,
+      "end": 1348,
+      "durationSec": 171,
+      "artist": "Megadeth",
+      "title": "No More Mr. Nice Guy",
+      "album": "Hidden Treasures",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1348,
+      "end": 1641,
+      "durationSec": 261,
+      "artist": "Motörhead",
+      "title": "Hellraiser",
+      "album": "March or Die",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1641,
+      "end": 2050,
+      "durationSec": 353,
+      "artist": "Black Sabbath",
+      "title": "Iron Man",
+      "album": "Paranoid",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2050,
+      "end": 2430,
+      "durationSec": 242,
+      "artist": "Cannibal Corpse",
+      "title": "Hammer Smashed Face",
+      "album": "Tomb of the Mutilated",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2430,
+      "end": 2786,
+      "durationSec": 259,
+      "artist": "Rammstein",
+      "title": "Rammstein",
+      "album": "Engel - EP",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2786,
+      "end": 3124,
+      "durationSec": 272,
+      "artist": "Powermad",
+      "title": "Slaughterhouse",
+      "album": "Absolute Power",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3124,
+      "end": 3368,
+      "durationSec": 202,
+      "artist": "Ulver",
+      "title": "In the Red",
+      "album": "Blood Inside",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3368,
+      "end": 3544,
+      "durationSec": 106,
+      "artist": "Mastodon",
+      "title": "Cut You Up with a Linoleum Knife (from the \"Aqua Teen Hunger Force Colon Movie Film for Theaters Colon the Soundtrack\")",
+      "album": "Medium Rarities",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3544,
+      "end": 3844,
+      "durationSec": 248,
+      "artist": "Meshuggah",
+      "title": "Suffer in Truth (Demo)",
+      "album": "Destroy Erase Improve (Reloaded)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3844,
+      "end": 4068,
+      "durationSec": 152,
+      "artist": "Toxic Holocaust",
+      "title": "Future Shock",
+      "album": "An Overdose of Death",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4068,
+      "end": 4246,
+      "durationSec": 125,
+      "artist": "Full of Hell",
+      "title": "Blue Litmus",
+      "album": "Full of Hell & Merzbow",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4246,
+      "end": 4632,
+      "durationSec": 331,
+      "artist": "Bethlehem",
+      "title": "Verschleierte Irreligiosität",
+      "album": "Dictius Te Necare",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4632,
+      "end": 4717,
+      "durationSec": 52,
+      "artist": "NAKED CITY",
+      "title": "Bonehead",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4717,
+      "end": 5033,
+      "durationSec": 288,
+      "artist": "Slayer",
+      "title": "Angel Of Death",
+      "album": "Reign In Blood",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5033,
+      "end": 5532,
+      "durationSec": 384,
+      "artist": "Anthrax",
+      "title": "In My World",
+      "album": "Persistence of Time",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5532,
+      "end": 5725,
+      "durationSec": 145,
+      "artist": "Mokadelic",
+      "title": "Doomed To Live",
+      "album": "GOMORRA - La serie (Colonna sonora originale)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5725,
+      "end": 5895,
+      "durationSec": 140,
+      "artist": "Mogwai",
+      "title": "I'm Not Going When I Don't Get Back",
+      "album": "Zerozerozero",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5895,
+      "end": 6322,
+      "durationSec": 277,
+      "artist": "Dying Fetus",
+      "title": "Second Skin",
+      "album": "Reign Supreme",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6322,
+      "end": 6527,
+      "durationSec": 161,
+      "artist": "Kreator",
+      "title": "Pleasure to Kill",
+      "album": "Pleasure to Kill",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6527,
+      "end": 6846,
+      "durationSec": 319,
+      "artist": "Sleep",
+      "title": "Holy Mountain",
+      "album": "Sleep's Holy Mountain",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
