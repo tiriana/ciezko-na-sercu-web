@@ -1,0 +1,4830 @@
+{
+  "version": 1,
+  "episodeId": "5aeb0e24-aece-4c32-9e35-b79e34daac65",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109557467,
+  "fileMtimeMs": 1789150855447.6345,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 14.46
+    },
+    {
+      "index": 1,
+      "start": 336.96,
+      "end": 445.76
+    },
+    {
+      "index": 2,
+      "start": 702.76,
+      "end": 748.83
+    },
+    {
+      "index": 3,
+      "start": 1114.72,
+      "end": 1278.24
+    },
+    {
+      "index": 4,
+      "start": 1278.24,
+      "end": 1533.4
+    },
+    {
+      "index": 5,
+      "start": 1533.4,
+      "end": 1785.85
+    },
+    {
+      "index": 6,
+      "start": 2051.75,
+      "end": 2074.84
+    },
+    {
+      "index": 7,
+      "start": 2074.84,
+      "end": 2123.93
+    },
+    {
+      "index": 8,
+      "start": 2123.93,
+      "end": 2589.66
+    },
+    {
+      "index": 9,
+      "start": 2589.66,
+      "end": 2728.12
+    },
+    {
+      "index": 10,
+      "start": 3012.71,
+      "end": 3207.07
+    },
+    {
+      "index": 11,
+      "start": 3207.07,
+      "end": 3504.7
+    },
+    {
+      "index": 12,
+      "start": 3504.7,
+      "end": 3970.27
+    },
+    {
+      "index": 13,
+      "start": 4084.42,
+      "end": 4268.96
+    },
+    {
+      "index": 14,
+      "start": 4929.03,
+      "end": 5004.86
+    },
+    {
+      "index": 15,
+      "start": 5508,
+      "end": 5531.55
+    },
+    {
+      "index": 16,
+      "start": 5740.16,
+      "end": 5958.65
+    },
+    {
+      "index": 17,
+      "start": 6592.93,
+      "end": 6737.05
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.44,
+      "text": "Trójka"
+    },
+    {
+      "start": 1.44,
+      "end": 5.1,
+      "text": "Program Trzeci Polskiego Radia"
+    },
+    {
+      "start": 5.1,
+      "end": 11.26,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 336.96,
+      "end": 343.72,
+      "text": "Dobry wieczór. Powitał nas zespół Martwa Aura piosenką zatytułowaną Lament Piąty."
+    },
+    {
+      "start": 344.52,
+      "end": 350.94,
+      "text": "Przyjdziemy po Was wszystkich. Obiecuje tu podmiot liryczny i być może chodzi mu o to,"
+    },
+    {
+      "start": 350.94,
+      "end": 360.76,
+      "text": "że Martwa Aura rusza właśnie w trasę koncertową w towarzystwie Towards Hellfire i Annihilation Vortex."
+    },
+    {
+      "start": 361.48,
+      "end": 366.98,
+      "text": "Jeździć będą po Polsce od 2 października do 12 października."
+    },
+    {
+      "start": 367.08,
+      "end": 375.42,
+      "text": "Od Poznania przez Chorzów, Łódź, Wrocław, Kraków, Warszawę, aż po Lublin."
+    },
+    {
+      "start": 376.22,
+      "end": 380.76,
+      "text": "Martwa Aura w ten sposób promować będzie swoją nową płytę Lament."
+    },
+    {
+      "start": 381.38,
+      "end": 386.26,
+      "text": "I jak sami Państwo słyszeli, bardzo to dobra płyta, dlatego od niej zaczęliśmy."
+    },
+    {
+      "start": 387.02,
+      "end": 391.22,
+      "text": "Audycja nosi tytuł Ciężko na sercu. Ja nazywam się Jarek Szubrycht."
+    },
+    {
+      "start": 391.48,
+      "end": 397.1,
+      "text": "Audycję wydaje Mariusz Owczarek i dzisiaj mówić będziemy o koncertach,"
+    },
+    {
+      "start": 397.1,
+      "end": 403.16,
+      "text": "które czekają nas w październiku. Będzie też gość, bo dawno gości nie było"
+    },
+    {
+      "start": 403.16,
+      "end": 408.54,
+      "text": "i byliście skazani tylko na mnie. Z serca współczuję."
+    },
+    {
+      "start": 409.18,
+      "end": 416.72,
+      "text": "Wracając do kalendarza. Od 3 do 25 października z przerwami jeździ po kraju"
+    },
+    {
+      "start": 416.72,
+      "end": 421.34,
+      "text": "zespół The Materia. Znany z telewizji, z talent show."
+    },
+    {
+      "start": 421.92,
+      "end": 425.8,
+      "text": "Znany również z tego, że organizuje własny festiwal."
+    },
+    {
+      "start": 426.8,
+      "end": 431.1,
+      "text": "I na szczęście znany też z tego, że jest zespołem biegłym"
+    },
+    {
+      "start": 431.1,
+      "end": 436.54,
+      "text": "w progresywnym, ciężkim graniu gdzieś pomiędzy Tulem a Meshuga."
+    },
+    {
+      "start": 437.84,
+      "end": 442.2,
+      "text": "Chyba zatem powinienem się wybrać na jeden z tych koncertów."
+    },
+    {
+      "start": 444.72,
+      "end": 445.76,
+      "text": "Muzyka"
+    },
+    {
+      "start": 702.76,
+      "end": 717.2,
+      "text": "Również od 3 października podróżować po Polsce będzie paczka złożona z trzech zespołów. Odra, a może ODR-A, Lastrumien oraz Odium."
+    },
+    {
+      "start": 717.54,
+      "end": 727.2,
+      "text": "Zagrają razem trzy koncerty w październiku w Krakowie, Rzeszowie i Wrocławiu i trzy następne w listopadzie w Katowicach, Łodzi i Warszawie."
+    },
+    {
+      "start": 728.56,
+      "end": 740.28,
+      "text": "Pretekstem do wspólnej wyprawy jest niedawna premiera Splitu, na którym spotkały się dwa pierwsze zespoły, a więc Odra i Las Trumien."
+    },
+    {
+      "start": 740.94,
+      "end": 747.12,
+      "text": "Wydawnictwo nosi tytuł Breslau Splin i brzmi mniej więcej tak."
+    },
+    {
+      "start": 1114.72,
+      "end": 1140.04,
+      "text": "Pierwszym utworem popłynęła nam Odra, a drugi to Gwóźdź w głowie zespołu Las Trumien. Jako, że tak się szczęśliwie składa, że obok mnie siedzi pan Wojciech, śpiewak Lasu Trumien, zapytam od razu, czy ten gwóźdź znalazł się w głowie przypadkiem, czy nie miał być, aby ostatnim gwoździem do trumny."
+    },
+    {
+      "start": 1140.68,
+      "end": 1158.54,
+      "text": "Właśnie tak jak mówisz, opcja numer dwa, akurat jest tak, że piosenki, które śpiewam i teksty, które piszę są raczej o tych najgorszych opcjach traktują i w tym przypadku faktycznie ten gwóźdź w głowie był tym gwoździem do trumny."
+    },
+    {
+      "start": 1158.54,
+      "end": 1168.06,
+      "text": "Niestety jeszcze dodatkowo był to gwóźdź w głowie dziecka. To jest bardzo przykra i bardzo smutna historia, ale na takich się właśnie skupiamy w naszej wesołej twórczości."
+    },
+    {
+      "start": 1168.84,
+      "end": 1179.38,
+      "text": "Do tekstów i inspiracji, które za nimi stoją jeszcze przejdziemy. Dziękuję Ci bardzo Wojtku za przyjęcie zaproszenia."
+    },
+    {
+      "start": 1180.18,
+      "end": 1187.5,
+      "text": "I porozmawiajmy o tym splicie i o tej trasie. Na początek jak skumaliście się z zespołem Odra?"
+    },
+    {
+      "start": 1187.84,
+      "end": 1203.48,
+      "text": "Wiesz co, z zespołem Odra łączy nas troszeczkę taka wspólna historia polegająca na tym, że nasz gitarzysta Bartek, który stoi za zespołem Las Trumion pod strony kompozycyjnej i który powołał ten projekt do życia,"
+    },
+    {
+      "start": 1204.3,
+      "end": 1214.38,
+      "text": "wywerbując potem naszą całą resztę, był kiedyś gitarzystą w zespole Odra. Nagrał z nimi bodajże jedną płytę, z tego co wiem zagrał dość sporo koncertów."
+    },
+    {
+      "start": 1215.18,
+      "end": 1223.3,
+      "text": "Potem nastąpiło jakieś tam rozstanie, właśnie każdy poszedł, znaczy Bartek w swoją stronę Odra, kontynuowała dalej z innym gitarzystą."
+    },
+    {
+      "start": 1223.3,
+      "end": 1239.1,
+      "text": "No ale z tego co wiem to jakiś tam kontakt zawsze utrzymywali i kiedy nam już się troszkę rozpędziła w cudzysłowie kariera z Lasem Trumien to w pewnym momencie padło takie hasło, które w sumie paść mogło w każdym momencie."
+    },
+    {
+      "start": 1239.38,
+      "end": 1254.1,
+      "text": "Dlaczego właściwie nie nagramy czegoś z Odrą? Mamy wspólny jakby mianownik muzyczny mi się wydaje i oni i my bardzo cenimy sobie tę scenę metalową, luizjańską."
+    },
+    {
+      "start": 1255.46,
+      "end": 1267.4,
+      "text": "Można powiedzieć Nowy Orlean, I hate God, Crowbar, oczywiście te klimaty, to jest jakby rzecz na tyle oczywista, że stwierdziliśmy hej, trzeba to wreszcie powołać do życia."
+    },
+    {
+      "start": 1267.4,
+      "end": 1276.6,
+      "text": "No i od słowa do słowa padł taki pomysł na współpracę, pomysł podchwycił Galon z Arkadian Industry, no i o to jesteśmy."
+    },
+    {
+      "start": 1277.28,
+      "end": 1278.24,
+      "text": "Odra mówił o socjalizmu."
+    },
+    {
+      "start": 1278.24,
+      "end": 1280.2,
+      "text": "sobie, że jest dla fanów I Hate God"
+    },
+    {
+      "start": 1280.2,
+      "end": 1282.28,
+      "text": "i miesięcznika detektyw"
+    },
+    {
+      "start": 1282.28,
+      "end": 1284.4,
+      "text": "bardzo przekonujący slogan reklamowy."
+    },
+    {
+      "start": 1284.48,
+      "end": 1285.82,
+      "text": "Jak rozumiem, również"
+    },
+    {
+      "start": 1285.82,
+      "end": 1288,
+      "text": "moglibyście po tym stanąć. Ja myślę, że to chyba"
+    },
+    {
+      "start": 1288,
+      "end": 1290,
+      "text": "nawet jest slogan, który bardziej był pod"
+    },
+    {
+      "start": 1290,
+      "end": 1291.96,
+      "text": "splita wymyślony,"
+    },
+    {
+      "start": 1292.38,
+      "end": 1294.06,
+      "text": "że ten miesięcznik detektyw"
+    },
+    {
+      "start": 1294.06,
+      "end": 1295.12,
+      "text": "to bardziej w naszą stronę."
+    },
+    {
+      "start": 1295.64,
+      "end": 1296.64,
+      "text": "Ale oczywiście"
+    },
+    {
+      "start": 1296.64,
+      "end": 1299.42,
+      "text": "bardzo możliwe, że"
+    },
+    {
+      "start": 1299.42,
+      "end": 1301.94,
+      "text": "chłopaki przy swoich tekstach również"
+    },
+    {
+      "start": 1301.94,
+      "end": 1302.92,
+      "text": "czerpią z takich"
+    },
+    {
+      "start": 1302.92,
+      "end": 1306.12,
+      "text": "złych,"
+    },
+    {
+      "start": 1306.92,
+      "end": 1307.78,
+      "text": "brzydkich historii,"
+    },
+    {
+      "start": 1308.16,
+      "end": 1309.82,
+      "text": "a zresztą to nie jest"
+    },
+    {
+      "start": 1309.82,
+      "end": 1312.46,
+      "text": "tajemnica, że pod tym względem"
+    },
+    {
+      "start": 1312.46,
+      "end": 1314.14,
+      "text": "to oni nas wyprzedzili o kilka"
+    },
+    {
+      "start": 1314.14,
+      "end": 1316.1,
+      "text": "długości, bo mieli przecież płytę"
+    },
+    {
+      "start": 1316.1,
+      "end": 1318.16,
+      "text": "Karl Denke Blues, poświęconą"
+    },
+    {
+      "start": 1318.16,
+      "end": 1320.08,
+      "text": "właśnie, nie wiem czy"
+    },
+    {
+      "start": 1320.08,
+      "end": 1322.28,
+      "text": "w całości, czy raczej to była"
+    },
+    {
+      "start": 1322.28,
+      "end": 1322.64,
+      "text": "część"
+    },
+    {
+      "start": 1322.64,
+      "end": 1326.22,
+      "text": "człowiekowi z Wrocławia, który"
+    },
+    {
+      "start": 1326.22,
+      "end": 1328.14,
+      "text": "handlował"
+    },
+    {
+      "start": 1328.14,
+      "end": 1329.64,
+      "text": "na stoiskach"
+    },
+    {
+      "start": 1329.64,
+      "end": 1331.8,
+      "text": "ludzkim mięsem i to jest odpowiedziła historia."
+    },
+    {
+      "start": 1333.44,
+      "end": 1334,
+      "text": "Czyli"
+    },
+    {
+      "start": 1334,
+      "end": 1336.04,
+      "text": "troszeczkę oni przetali szlaki"
+    },
+    {
+      "start": 1336.04,
+      "end": 1337.26,
+      "text": "dla nas na pewno pod tym kątem."
+    },
+    {
+      "start": 1338.08,
+      "end": 1340.04,
+      "text": "Czego możemy spodziewać się"
+    },
+    {
+      "start": 1340.04,
+      "end": 1341.22,
+      "text": "po waszej połówce?"
+    },
+    {
+      "start": 1341.82,
+      "end": 1342.68,
+      "text": "Splitu, czy"
+    },
+    {
+      "start": 1342.68,
+      "end": 1344.12,
+      "text": "i jak to się widzi"
+    },
+    {
+      "start": 1344.12,
+      "end": 1346.46,
+      "text": "z tym, co już do tej pory"
+    },
+    {
+      "start": 1346.46,
+      "end": 1348.02,
+      "text": "znamy,"
+    },
+    {
+      "start": 1348.08,
+      "end": 1349.3,
+      "text": "jeżeli chodzi o twórczość"
+    },
+    {
+      "start": 1349.3,
+      "end": 1349.88,
+      "text": "Lasu Trumien?"
+    },
+    {
+      "start": 1350.16,
+      "end": 1351.16,
+      "text": "Wiesz co, podeszliśmy"
+    },
+    {
+      "start": 1351.16,
+      "end": 1352.06,
+      "text": "troszeczkę do tematu"
+    },
+    {
+      "start": 1352.06,
+      "end": 1352.56,
+      "text": "dwojako."
+    },
+    {
+      "start": 1353.12,
+      "end": 1353.74,
+      "text": "Z jednej strony"
+    },
+    {
+      "start": 1353.74,
+      "end": 1354.52,
+      "text": "nie chcieliśmy"
+    },
+    {
+      "start": 1354.52,
+      "end": 1355.9,
+      "text": "szarżować z niespodziankami,"
+    },
+    {
+      "start": 1356.06,
+      "end": 1356.96,
+      "text": "bo też jakby"
+    },
+    {
+      "start": 1356.96,
+      "end": 1357.7,
+      "text": "mam wrażenie, że"
+    },
+    {
+      "start": 1357.7,
+      "end": 1358.74,
+      "text": "wypracowaliśmy sobie już"
+    },
+    {
+      "start": 1358.74,
+      "end": 1359.24,
+      "text": "przez te lata"
+    },
+    {
+      "start": 1359.24,
+      "end": 1361.26,
+      "text": "w miarę sprawdzoną formułę"
+    },
+    {
+      "start": 1361.26,
+      "end": 1364,
+      "text": "i tych zaskoczeń"
+    },
+    {
+      "start": 1364,
+      "end": 1365.3,
+      "text": "nie wiem, czy będzie sporo."
+    },
+    {
+      "start": 1365.58,
+      "end": 1366.88,
+      "text": "To są dalej piosenki"
+    },
+    {
+      "start": 1366.88,
+      "end": 1368.92,
+      "text": "utrzymane w podobnej stylistyce."
+    },
+    {
+      "start": 1369.12,
+      "end": 1370.12,
+      "text": "Tam dalej są teksty"
+    },
+    {
+      "start": 1370.12,
+      "end": 1370.88,
+      "text": "po polsku."
+    },
+    {
+      "start": 1371.1,
+      "end": 1372.2,
+      "text": "Teksty są wiadomo"
+    },
+    {
+      "start": 1372.2,
+      "end": 1374.34,
+      "text": "bazowane na"
+    },
+    {
+      "start": 1374.34,
+      "end": 1375.72,
+      "text": "prawdziwych zbrodniach."
+    },
+    {
+      "start": 1375.86,
+      "end": 1376.78,
+      "text": "Każdy tekst ma"
+    },
+    {
+      "start": 1376.78,
+      "end": 1379.44,
+      "text": "w książeczce"
+    },
+    {
+      "start": 1379.44,
+      "end": 1380.12,
+      "text": "do Splita"
+    },
+    {
+      "start": 1380.12,
+      "end": 1381.7,
+      "text": "dopisaną malutką historyjkę."
+    },
+    {
+      "start": 1381.82,
+      "end": 1382.58,
+      "text": "Taki kontekst,"
+    },
+    {
+      "start": 1382.92,
+      "end": 1383.86,
+      "text": "który lubimy dodawać"
+    },
+    {
+      "start": 1383.86,
+      "end": 1384.66,
+      "text": "w naszych wydawnictwach"
+    },
+    {
+      "start": 1384.66,
+      "end": 1385.34,
+      "text": "i jeżeli ktoś"
+    },
+    {
+      "start": 1385.34,
+      "end": 1385.96,
+      "text": "zbiera"
+    },
+    {
+      "start": 1385.96,
+      "end": 1388.32,
+      "text": "fizyczne wydawnictwa,"
+    },
+    {
+      "start": 1388.48,
+      "end": 1388.66,
+      "text": "to"
+    },
+    {
+      "start": 1388.66,
+      "end": 1390.04,
+      "text": "na pewno doskonale"
+    },
+    {
+      "start": 1390.04,
+      "end": 1391.24,
+      "text": "wie, jak to u nas wygląda."
+    },
+    {
+      "start": 1391.4,
+      "end": 1391.64,
+      "text": "Mamy"
+    },
+    {
+      "start": 1391.64,
+      "end": 1393.04,
+      "text": "tekst, ale przed nim"
+    },
+    {
+      "start": 1393.04,
+      "end": 1393.92,
+      "text": "jest taki krótki wstęp,"
+    },
+    {
+      "start": 1394.04,
+      "end": 1394.82,
+      "text": "który ma nakreślić"
+    },
+    {
+      "start": 1394.82,
+      "end": 1395.74,
+      "text": "właśnie ten kontekst."
+    },
+    {
+      "start": 1396.02,
+      "end": 1396.46,
+      "text": "Dlaczego"
+    },
+    {
+      "start": 1396.46,
+      "end": 1397.62,
+      "text": "w tekście"
+    },
+    {
+      "start": 1397.62,
+      "end": 1398.38,
+      "text": "śpiewam o takich"
+    },
+    {
+      "start": 1398.38,
+      "end": 1399.02,
+      "text": "głupotach?"
+    },
+    {
+      "start": 1399.64,
+      "end": 1400.66,
+      "text": "Ale kiedy już"
+    },
+    {
+      "start": 1400.66,
+      "end": 1401.76,
+      "text": "znasz ten kontekst,"
+    },
+    {
+      "start": 1401.84,
+      "end": 1402.36,
+      "text": "to nabiera to"
+    },
+    {
+      "start": 1402.36,
+      "end": 1403.26,
+      "text": "troszkę więcej sensu."
+    },
+    {
+      "start": 1403.7,
+      "end": 1404.8,
+      "text": "I w tym przypadku"
+    },
+    {
+      "start": 1404.8,
+      "end": 1406,
+      "text": "zrobiliśmy dokładnie to samo."
+    },
+    {
+      "start": 1406.1,
+      "end": 1406.88,
+      "text": "Nie zmieniamy formuły,"
+    },
+    {
+      "start": 1406.96,
+      "end": 1407.46,
+      "text": "która działa."
+    },
+    {
+      "start": 1408.72,
+      "end": 1409.32,
+      "text": "Troszeczkę"
+    },
+    {
+      "start": 1409.32,
+      "end": 1410.16,
+      "text": "chcieliśmy"
+    },
+    {
+      "start": 1410.16,
+      "end": 1410.74,
+      "text": "faktycznie"
+    },
+    {
+      "start": 1410.74,
+      "end": 1411.34,
+      "text": "pójść"
+    },
+    {
+      "start": 1411.34,
+      "end": 1412.2,
+      "text": "bardziej w klimaty"
+    },
+    {
+      "start": 1412.2,
+      "end": 1412.68,
+      "text": "strażowe,"
+    },
+    {
+      "start": 1412.8,
+      "end": 1413.6,
+      "text": "żeby się zbliżyć"
+    },
+    {
+      "start": 1413.6,
+      "end": 1417.26,
+      "text": "do naszych kolegów"
+    },
+    {
+      "start": 1417.26,
+      "end": 1417.62,
+      "text": "z Odry"
+    },
+    {
+      "start": 1417.62,
+      "end": 1418.28,
+      "text": "muzycznie."
+    },
+    {
+      "start": 1418.88,
+      "end": 1419.78,
+      "text": "Co nie zmienia"
+    },
+    {
+      "start": 1419.78,
+      "end": 1420.52,
+      "text": "faktu, że"
+    },
+    {
+      "start": 1420.52,
+      "end": 1422.74,
+      "text": "nie jest to"
+    },
+    {
+      "start": 1422.74,
+      "end": 1423.2,
+      "text": "pięć"
+    },
+    {
+      "start": 1423.2,
+      "end": 1424.28,
+      "text": "takich samych numerów,"
+    },
+    {
+      "start": 1424.28,
+      "end": 1425.12,
+      "text": "bo tyle numerów"
+    },
+    {
+      "start": 1425.12,
+      "end": 1425.68,
+      "text": "na splicie mamy."
+    },
+    {
+      "start": 1426.02,
+      "end": 1427.5,
+      "text": "jest"
+    },
+    {
+      "start": 1427.5,
+      "end": 1429.16,
+      "text": "część"
+    },
+    {
+      "start": 1429.16,
+      "end": 1429.86,
+      "text": "szybsza,"
+    },
+    {
+      "start": 1430.38,
+      "end": 1430.78,
+      "text": "na pewno"
+    },
+    {
+      "start": 1430.78,
+      "end": 1431.72,
+      "text": "bardziej punkowa"
+    },
+    {
+      "start": 1431.72,
+      "end": 1433.36,
+      "text": "i są dwa,"
+    },
+    {
+      "start": 1433.58,
+      "end": 1434.14,
+      "text": "gdzie udało się"
+    },
+    {
+      "start": 1434.14,
+      "end": 1435.28,
+      "text": "coś melodii nie pośpiewać,"
+    },
+    {
+      "start": 1435.4,
+      "end": 1435.9,
+      "text": "udało się tak"
+    },
+    {
+      "start": 1435.9,
+      "end": 1436.72,
+      "text": "bardziej zwolnić."
+    },
+    {
+      "start": 1437.2,
+      "end": 1437.74,
+      "text": "A jeden,"
+    },
+    {
+      "start": 1437.92,
+      "end": 1438.72,
+      "text": "który roboczo"
+    },
+    {
+      "start": 1438.72,
+      "end": 1439.24,
+      "text": "chyba był nawet"
+    },
+    {
+      "start": 1439.24,
+      "end": 1440.04,
+      "text": "nazwany Black Sabbath,"
+    },
+    {
+      "start": 1440.2,
+      "end": 1440.66,
+      "text": "więc to też"
+    },
+    {
+      "start": 1440.66,
+      "end": 1441.56,
+      "text": "bardzo dużo mówi."
+    },
+    {
+      "start": 1442.68,
+      "end": 1443.46,
+      "text": "A czego"
+    },
+    {
+      "start": 1443.46,
+      "end": 1444.36,
+      "text": "możemy się spodziewać"
+    },
+    {
+      "start": 1444.36,
+      "end": 1445.68,
+      "text": "po tych koncertach?"
+    },
+    {
+      "start": 1445.82,
+      "end": 1446.4,
+      "text": "Przygotowujecie"
+    },
+    {
+      "start": 1446.4,
+      "end": 1446.74,
+      "text": "jakieś"
+    },
+    {
+      "start": 1446.74,
+      "end": 1448.62,
+      "text": "specjalne"
+    },
+    {
+      "start": 1448.62,
+      "end": 1449.92,
+      "text": "atrakcje?"
+    },
+    {
+      "start": 1450.16,
+      "end": 1450.68,
+      "text": "Czy to będą"
+    },
+    {
+      "start": 1450.68,
+      "end": 1451.94,
+      "text": "koncerty,"
+    },
+    {
+      "start": 1452.08,
+      "end": 1452.94,
+      "text": "na których"
+    },
+    {
+      "start": 1452.94,
+      "end": 1453.32,
+      "text": "usłyszymy"
+    },
+    {
+      "start": 1453.32,
+      "end": 1454.08,
+      "text": "cały materiał"
+    },
+    {
+      "start": 1454.08,
+      "end": 1455.26,
+      "text": "z przynajmniej"
+    },
+    {
+      "start": 1455.26,
+      "end": 1455.64,
+      "text": "waszą,"
+    },
+    {
+      "start": 1455.72,
+      "end": 1456.68,
+      "text": "możesz mówić o was,"
+    },
+    {
+      "start": 1456.8,
+      "end": 1458.34,
+      "text": "czy całą waszą część"
+    },
+    {
+      "start": 1458.34,
+      "end": 1459.82,
+      "text": "tego splitu,"
+    },
+    {
+      "start": 1459.92,
+      "end": 1460.78,
+      "text": "materiał przekrojowy,"
+    },
+    {
+      "start": 1460.84,
+      "end": 1461.94,
+      "text": "jak to będzie brzmiało,"
+    },
+    {
+      "start": 1461.98,
+      "end": 1462.92,
+      "text": "jak to będzie wyglądało?"
+    },
+    {
+      "start": 1463.24,
+      "end": 1464.86,
+      "text": "Na potrzeby tej trasy"
+    },
+    {
+      "start": 1464.86,
+      "end": 1465.66,
+      "text": "to podjęliśmy sobie"
+    },
+    {
+      "start": 1465.66,
+      "end": 1466.46,
+      "text": "taką decyzję,"
+    },
+    {
+      "start": 1466.74,
+      "end": 1467.88,
+      "text": "że chcemy"
+    },
+    {
+      "start": 1467.88,
+      "end": 1468.86,
+      "text": "troszeczkę"
+    },
+    {
+      "start": 1468.86,
+      "end": 1469.86,
+      "text": "przewietrzyć"
+    },
+    {
+      "start": 1469.86,
+      "end": 1470.5,
+      "text": "naszą"
+    },
+    {
+      "start": 1470.5,
+      "end": 1472.12,
+      "text": "setlistę koncertową."
+    },
+    {
+      "start": 1472.36,
+      "end": 1472.78,
+      "text": "Zdecydowanie"
+    },
+    {
+      "start": 1472.78,
+      "end": 1474.64,
+      "text": "był już na to czas."
+    },
+    {
+      "start": 1474.78,
+      "end": 1475.72,
+      "text": "Po ostatnich koncertach"
+    },
+    {
+      "start": 1475.72,
+      "end": 1476.38,
+      "text": "praktycznie graliśmy"
+    },
+    {
+      "start": 1476.38,
+      "end": 1477.78,
+      "text": "przez chyba rok"
+    },
+    {
+      "start": 1477.78,
+      "end": 1478.2,
+      "text": "to samo."
+    },
+    {
+      "start": 1479.56,
+      "end": 1479.92,
+      "text": "Teraz"
+    },
+    {
+      "start": 1479.92,
+      "end": 1480.8,
+      "text": "chcemy wrócić"
+    },
+    {
+      "start": 1480.8,
+      "end": 1482.4,
+      "text": "do kilku numerów"
+    },
+    {
+      "start": 1482.4,
+      "end": 1483.1,
+      "text": "już nie granych"
+    },
+    {
+      "start": 1483.1,
+      "end": 1483.92,
+      "text": "dłuższy czas,"
+    },
+    {
+      "start": 1484.2,
+      "end": 1484.98,
+      "text": "a takich,"
+    },
+    {
+      "start": 1485.16,
+      "end": 1485.5,
+      "text": "które się"
+    },
+    {
+      "start": 1485.5,
+      "end": 1486.08,
+      "text": "w naszym"
+    },
+    {
+      "start": 1486.08,
+      "end": 1487.04,
+      "text": "mniemaniu"
+    },
+    {
+      "start": 1487.04,
+      "end": 1487.26,
+      "text": "dobrze"
+    },
+    {
+      "start": 1487.26,
+      "end": 1488.04,
+      "text": "sprawdzały"
+    },
+    {
+      "start": 1488.04,
+      "end": 1489.04,
+      "text": "na koncertach."
+    },
+    {
+      "start": 1489.84,
+      "end": 1490.2,
+      "text": "Powrócą"
+    },
+    {
+      "start": 1490.2,
+      "end": 1490.98,
+      "text": "takie numery"
+    },
+    {
+      "start": 1490.98,
+      "end": 1491.34,
+      "text": "jak"
+    },
+    {
+      "start": 1491.34,
+      "end": 1492.56,
+      "text": "sprzedawca śpiewników,"
+    },
+    {
+      "start": 1492.68,
+      "end": 1493.64,
+      "text": "Cmentarz Miłostowo,"
+    },
+    {
+      "start": 1493.86,
+      "end": 1494.24,
+      "text": "Klan,"
+    },
+    {
+      "start": 1495.44,
+      "end": 1496.26,
+      "text": "będzie też"
+    },
+    {
+      "start": 1496.26,
+      "end": 1497.58,
+      "text": "Arszenikowa Dama,"
+    },
+    {
+      "start": 1498.16,
+      "end": 1498.82,
+      "text": "czyli lecimy"
+    },
+    {
+      "start": 1498.82,
+      "end": 1499.52,
+      "text": "troszeczkę"
+    },
+    {
+      "start": 1499.52,
+      "end": 1500.78,
+      "text": "w takie starsze klimaty,"
+    },
+    {
+      "start": 1501.3,
+      "end": 1502.2,
+      "text": "a wywaliliśmy"
+    },
+    {
+      "start": 1502.2,
+      "end": 1503.02,
+      "text": "kilka pewniaków"
+    },
+    {
+      "start": 1503.02,
+      "end": 1503.68,
+      "text": "koncertowych"
+    },
+    {
+      "start": 1503.68,
+      "end": 1504,
+      "text": "z góry,"
+    },
+    {
+      "start": 1504.06,
+      "end": 1504.66,
+      "text": "przepraszamy."
+    },
+    {
+      "start": 1506.02,
+      "end": 1506.74,
+      "text": "Będą"
+    },
+    {
+      "start": 1506.74,
+      "end": 1507.48,
+      "text": "dwa numery"
+    },
+    {
+      "start": 1507.48,
+      "end": 1508.02,
+      "text": "ze splita"
+    },
+    {
+      "start": 1508.02,
+      "end": 1508.54,
+      "text": "grane,"
+    },
+    {
+      "start": 1510.32,
+      "end": 1510.8,
+      "text": "a tu jeszcze"
+    },
+    {
+      "start": 1510.8,
+      "end": 1511.5,
+      "text": "może nie zdradzę,"
+    },
+    {
+      "start": 1511.6,
+      "end": 1511.76,
+      "text": "które."
+    },
+    {
+      "start": 1513.3,
+      "end": 1514.12,
+      "text": "No i kilka"
+    },
+    {
+      "start": 1514.12,
+      "end": 1515.28,
+      "text": "z tej setlisty"
+    },
+    {
+      "start": 1515.28,
+      "end": 1515.8,
+      "text": "faktycznie"
+    },
+    {
+      "start": 1515.8,
+      "end": 1517.44,
+      "text": "tej jakby"
+    },
+    {
+      "start": 1517.44,
+      "end": 1517.98,
+      "text": "naszej"
+    },
+    {
+      "start": 1517.98,
+      "end": 1519.28,
+      "text": "podstawowej"
+    },
+    {
+      "start": 1519.28,
+      "end": 1520.34,
+      "text": "musiało też zostać,"
+    },
+    {
+      "start": 1520.46,
+      "end": 1521.1,
+      "text": "ale zdecydowanie"
+    },
+    {
+      "start": 1521.1,
+      "end": 1521.88,
+      "text": "jest to setlista"
+    },
+    {
+      "start": 1521.88,
+      "end": 1523.72,
+      "text": "troszkę"
+    },
+    {
+      "start": 1523.72,
+      "end": 1524.56,
+      "text": "bardziej"
+    },
+    {
+      "start": 1524.56,
+      "end": 1525.34,
+      "text": "odświeżona"
+    },
+    {
+      "start": 1525.34,
+      "end": 1526.16,
+      "text": "pod kątem tego,"
+    },
+    {
+      "start": 1526.34,
+      "end": 1526.64,
+      "text": "że no"
+    },
+    {
+      "start": 1526.64,
+      "end": 1527.8,
+      "text": "dużo z tych numerów"
+    },
+    {
+      "start": 1527.8,
+      "end": 1528.16,
+      "text": "nie graliśmy"
+    },
+    {
+      "start": 1528.16,
+      "end": 1528.66,
+      "text": "już jakiś czas"
+    },
+    {
+      "start": 1528.66,
+      "end": 1529.06,
+      "text": "i myślimy,"
+    },
+    {
+      "start": 1529.12,
+      "end": 1529.7,
+      "text": "że ludziom się"
+    },
+    {
+      "start": 1529.7,
+      "end": 1530.42,
+      "text": "mogły,"
+    },
+    {
+      "start": 1530.88,
+      "end": 1531.46,
+      "text": "mogło stęsknić"
+    },
+    {
+      "start": 1531.46,
+      "end": 1531.76,
+      "text": "za nimi."
+    },
+    {
+      "start": 1532.58,
+      "end": 1533.4,
+      "text": "A lubisz w ogóle"
+    },
+    {
+      "start": 1533.4,
+      "end": 1534.9,
+      "text": "Grać koncerty? Lubisz jeździć w trasy?"
+    },
+    {
+      "start": 1535.14,
+      "end": 1536.34,
+      "text": "Tak, bardzo lubię."
+    },
+    {
+      "start": 1537.38,
+      "end": 1539.42,
+      "text": "Dla mnie w przypadku Lasu Trumien"
+    },
+    {
+      "start": 1539.42,
+      "end": 1541.06,
+      "text": "koncerty są"
+    },
+    {
+      "start": 1541.06,
+      "end": 1543.08,
+      "text": "zdecydowanie, dają mi więcej frajdy"
+    },
+    {
+      "start": 1543.08,
+      "end": 1545.32,
+      "text": "niż siedzenie w studio."
+    },
+    {
+      "start": 1545.56,
+      "end": 1546.38,
+      "text": "Mam wrażenie, że"
+    },
+    {
+      "start": 1546.38,
+      "end": 1548.66,
+      "text": "na koncertach Lasu Trumien"
+    },
+    {
+      "start": 1548.66,
+      "end": 1550.14,
+      "text": "pojawia się"
+    },
+    {
+      "start": 1550.14,
+      "end": 1552.58,
+      "text": "taka naprawdę niesamowita energia."
+    },
+    {
+      "start": 1552.96,
+      "end": 1554.98,
+      "text": "Ja ją nazywam, chłopaki się troszkę ze mnie śmieją"
+    },
+    {
+      "start": 1554.98,
+      "end": 1556.96,
+      "text": "z tego powodu, ale ja ją nazywam troszkę taką"
+    },
+    {
+      "start": 1556.96,
+      "end": 1558.04,
+      "text": "hip-hopową energią."
+    },
+    {
+      "start": 1559.72,
+      "end": 1561.32,
+      "text": "Jest niesamowity kontakt"
+    },
+    {
+      "start": 1561.32,
+      "end": 1562.12,
+      "text": "z publicznością. Dużo przeklinasz."
+    },
+    {
+      "start": 1562.54,
+      "end": 1564.68,
+      "text": "Właśnie wbrew pozorom wcale nie, ale jest"
+    },
+    {
+      "start": 1564.68,
+      "end": 1566.54,
+      "text": "taki kontakt z publicznością, jest więcej"
+    },
+    {
+      "start": 1566.54,
+      "end": 1567.32,
+      "text": "bujania się."
+    },
+    {
+      "start": 1568.64,
+      "end": 1570.68,
+      "text": "My mamy to fantastyczne szczęście"
+    },
+    {
+      "start": 1570.68,
+      "end": 1572.42,
+      "text": "w nieszczęściu, bo nasz zespół powstał w"
+    },
+    {
+      "start": 1572.42,
+      "end": 1573.42,
+      "text": "czasach pandemii."
+    },
+    {
+      "start": 1575.1,
+      "end": 1576.7,
+      "text": "I szczęście w nieszczęściu"
+    },
+    {
+      "start": 1576.7,
+      "end": 1578.74,
+      "text": "polegało na tym, że już w trakcie"
+    },
+    {
+      "start": 1578.74,
+      "end": 1580.46,
+      "text": "pandemii praktycznie nagraliśmy epkę"
+    },
+    {
+      "start": 1580.46,
+      "end": 1582.62,
+      "text": "i płytę. I kiedy wreszcie"
+    },
+    {
+      "start": 1582.62,
+      "end": 1584.08,
+      "text": "udało nam się wyjść z tą muzyką"
+    },
+    {
+      "start": 1584.08,
+      "end": 1586.1,
+      "text": "na scenę,"
+    },
+    {
+      "start": 1586.1,
+      "end": 1587.94,
+      "text": "to ludzie byli przygotowani"
+    },
+    {
+      "start": 1587.94,
+      "end": 1590.2,
+      "text": "na naszym pierwszym koncercie, debiutanckim koncercie"
+    },
+    {
+      "start": 1590.2,
+      "end": 1591.68,
+      "text": "przed zespołem Dom Zły"
+    },
+    {
+      "start": 1591.68,
+      "end": 1592.94,
+      "text": "we Wrocławiu wtedy graliśmy."
+    },
+    {
+      "start": 1593.62,
+      "end": 1595.48,
+      "text": "Już na pierwszym koncercie ludzie śpiewali"
+    },
+    {
+      "start": 1595.48,
+      "end": 1597.46,
+      "text": "teksty, czyli coś absolutnie niesamowitego,"
+    },
+    {
+      "start": 1597.66,
+      "end": 1599.32,
+      "text": "coś czego się naprawdę nie zapomina,"
+    },
+    {
+      "start": 1599.46,
+      "end": 1600.76,
+      "text": "kiedy twój debiutancki koncert"
+    },
+    {
+      "start": 1600.76,
+      "end": 1603.72,
+      "text": "ma już taki, ten tak niesamowity element."
+    },
+    {
+      "start": 1604.5,
+      "end": 1608.76,
+      "text": "I cieszę się z tego, że ta energia jakby ona nie wygasa,"
+    },
+    {
+      "start": 1608.88,
+      "end": 1614.58,
+      "text": "ona dalej z nami jest i my mamy taki element teatrzyków"
+    },
+    {
+      "start": 1614.58,
+      "end": 1616.64,
+      "text": "w tych naszych występach na żywo."
+    },
+    {
+      "start": 1616.64,
+      "end": 1623.18,
+      "text": "No ja jestem ubrany w spodnie dresowe, żonobijkę i kaszkiet, no kto wie, ten wie."
+    },
+    {
+      "start": 1623.18,
+      "end": 1634.4,
+      "text": "Jest to pewien pastyż, grając taką muzykę, śpiewając takie teksty musi być ten element humoru czarnego,"
+    },
+    {
+      "start": 1634.4,
+      "end": 1640.04,
+      "text": "żeby to wszystko jednak, żeby jakaś higiena psychiczna została zachowana po prostu, tak uważam."
+    },
+    {
+      "start": 1640.86,
+      "end": 1647.1,
+      "text": "Więc ludzie się przyzwyczaili, że nasze koncerty to jest troszkę muzyki, troszkę riffów, troszkę tego performance."
+    },
+    {
+      "start": 1647.44,
+      "end": 1652.6,
+      "text": "I bardzo nam to połączenie odpowiada i myślę, że fajnie się sprawdza."
+    },
+    {
+      "start": 1653.4,
+      "end": 1658.68,
+      "text": "Z różnych powodów jest dobrze, kiedy publiczność zna teksty i może je śpiewać."
+    },
+    {
+      "start": 1659.14,
+      "end": 1668.4,
+      "text": "Jedziecie w trasę jesienią, a więc wszyscy na pewno od siebie pozarażacie się jakimś grypopodobnym świństwem w busie."
+    },
+    {
+      "start": 1669.4,
+      "end": 1677.24,
+      "text": "I wokaliści mają wtedy najgorzej, bo gitarzysta może sobie grać z chrypką i zatkanym nosem i nawet nikt się nie zorientuje."
+    },
+    {
+      "start": 1677.44,
+      "end": 1687.44,
+      "text": "Ja mam o tyle fajnie, że u mnie, jeżeli jakaś flegma się pojawiła, to myślę, że to tylko dodało występom jakiegoś pożądanego elementu."
+    },
+    {
+      "start": 1688.6,
+      "end": 1694.22,
+      "text": "Tak, jest to taka rzecz niestety czasami nieunikniona."
+    },
+    {
+      "start": 1695.64,
+      "end": 1701.96,
+      "text": "Granie koncertów wymaga, im człowiek jest starszy, tym bardziej też do tego mądrzej podchodzi."
+    },
+    {
+      "start": 1702.24,
+      "end": 1703.88,
+      "text": "Jest jakieś takie jednak dbanie o siebie."
+    },
+    {
+      "start": 1704.6,
+      "end": 1707.44,
+      "text": "Ok, dzisiaj nie imprezujemy, dzisiaj musimy spokojniej."
+    },
+    {
+      "start": 1707.94,
+      "end": 1709.66,
+      "text": "Czujemy, że jakieś choróbsko nas łapie."
+    },
+    {
+      "start": 1710.2,
+      "end": 1716.94,
+      "text": "A jednocześnie mam wrażenie, że na trasie to ten organizm zyskuje jakieś dodatkowe punkty wytrzymałości."
+    },
+    {
+      "start": 1716.94,
+      "end": 1724.96,
+      "text": "Po prostu jak w jakimś RPGu, jakbyś po prostu ubrał jakąś, nie wiem, zbroję, która ci maksuje statystyki."
+    },
+    {
+      "start": 1725.6,
+      "end": 1727.1,
+      "text": "Tak to troszeczkę wygląda."
+    },
+    {
+      "start": 1727.5,
+      "end": 1732.22,
+      "text": "Z mojej perspektywy jakby koncerty są takim troszkę odrębnym bytem."
+    },
+    {
+      "start": 1732.36,
+      "end": 1739.38,
+      "text": "Niby funkcjonujemy w rzeczywistości, czyli musimy się codziennie zatrzymać na maku na obiad i kupę."
+    },
+    {
+      "start": 1740.22,
+      "end": 1748.24,
+      "text": "Ale jednocześnie wiemy, że wieczorem jest ten moment, kiedy wchodzimy na scenę i to wszystko, to rozkładanie meczu, to jest znoszenie gratów."
+    },
+    {
+      "start": 1749.32,
+      "end": 1760.58,
+      "text": "Wszystkie te przyziemne, błahe, głupie rzeczy znikają i po prostu pojawia się ten moment, na który wszyscy czekaliśmy, my, jak i publiczność."
+    },
+    {
+      "start": 1761.3,
+      "end": 1775.52,
+      "text": "I myślę, że to jest gra warta świeczki, myślę, że to jakby jest ten czynnik, który napędza te wszystkie, wszystkie wyzwania, które koncertowanie jakby za sobą bierze."
+    },
+    {
+      "start": 1777.16,
+      "end": 1783.3,
+      "text": "Fajnie się gada, ale teraz jest ten moment, na który wszyscy słuchacze czekają."
+    },
+    {
+      "start": 1783.72,
+      "end": 1784.28,
+      "text": "Las Trumien."
+    },
+    {
+      "start": 2051.75,
+      "end": 2063.61,
+      "text": "Słuchacie ciężko na sercu. Jest dziś z nami Wojtek Kałuża, wokalista Lasu Trumien, a także zespołów Mentor i Pure Bedlam i jeszcze Grieving, o ile Grieving istnieje."
+    },
+    {
+      "start": 2063.61,
+      "end": 2074.85,
+      "text": "Grieving istnieje, jakby Grieving nigdy się nie rozpadł. Przy czym jak na muzykę dumową nie spieszymy się z niczym."
+    },
+    {
+      "start": 2074.84,
+      "end": 2077.02,
+      "text": "kiedyś było JD Overdrive"
+    },
+    {
+      "start": 2077.02,
+      "end": 2079.26,
+      "text": "i Forge of Clouds i po co"
+    },
+    {
+      "start": 2079.26,
+      "end": 2079.92,
+      "text": "Ci tyle tego?"
+    },
+    {
+      "start": 2080.92,
+      "end": 2082.88,
+      "text": "Świetne pytanie, które sobie zadaję prawie"
+    },
+    {
+      "start": 2082.88,
+      "end": 2085.06,
+      "text": "każdego dnia. No to jest chyba jakaś"
+    },
+    {
+      "start": 2085.06,
+      "end": 2087.16,
+      "text": "taka moja pomyliwość artystyczna."
+    },
+    {
+      "start": 2088.42,
+      "end": 2089.02,
+      "text": "Bardzo"
+    },
+    {
+      "start": 2089.02,
+      "end": 2091.04,
+      "text": "staram się, żeby każdy z tych projektów"
+    },
+    {
+      "start": 2091.04,
+      "end": 2093.38,
+      "text": "jednak traktować"
+    },
+    {
+      "start": 2093.38,
+      "end": 2095.34,
+      "text": "jakoś troszeczkę inaczej."
+    },
+    {
+      "start": 2096.06,
+      "end": 2097.08,
+      "text": "Zarówno wokalnie,"
+    },
+    {
+      "start": 2097.22,
+      "end": 2097.54,
+      "text": "jak i chodzi,"
+    },
+    {
+      "start": 2098.22,
+      "end": 2101.22,
+      "text": "jeżeli chodzi"
+    },
+    {
+      "start": 2101.22,
+      "end": 2102.84,
+      "text": "o toczkę, po prostu tego wszystkiego."
+    },
+    {
+      "start": 2104.56,
+      "end": 2105.76,
+      "text": "Myślę, że"
+    },
+    {
+      "start": 2105.76,
+      "end": 2108.44,
+      "text": "nie wiem, patrząc"
+    },
+    {
+      "start": 2108.44,
+      "end": 2110.44,
+      "text": "na taki mój niedośliniony"
+    },
+    {
+      "start": 2110.44,
+      "end": 2112.48,
+      "text": "wzór, jeżeli chodzi o umiejętności"
+    },
+    {
+      "start": 2112.48,
+      "end": 2113.92,
+      "text": "wokalne, jakim jest Mike Patton,"
+    },
+    {
+      "start": 2114.52,
+      "end": 2116.56,
+      "text": "stwierdzam, że skoro ten człowiek potrafił"
+    },
+    {
+      "start": 2116.56,
+      "end": 2118,
+      "text": "w"
+    },
+    {
+      "start": 2118,
+      "end": 2120.22,
+      "text": "30 projektach brzmieć inaczej, to"
+    },
+    {
+      "start": 2120.22,
+      "end": 2122.3,
+      "text": "hej, dlaczego ja nie mógłbym spróbować?"
+    },
+    {
+      "start": 2123.93,
+      "end": 2124.99,
+      "text": "fan Mike'a Pattona,"
+    },
+    {
+      "start": 2125.81,
+      "end": 2128.11,
+      "text": "mam nadzieję, że zgodzisz się z innym"
+    },
+    {
+      "start": 2128.11,
+      "end": 2129.95,
+      "text": "fanem Mike'a Pattona siedzącym naprzeciwko"
+    },
+    {
+      "start": 2129.95,
+      "end": 2132.17,
+      "text": "ciebie teraz, że jakby tych projektów"
+    },
+    {
+      "start": 2132.17,
+      "end": 2133.75,
+      "text": "było połowę mniej, to pewnie byłoby"
+    },
+    {
+      "start": 2133.75,
+      "end": 2136.69,
+      "text": "lepiej, lepiej jakości."
+    },
+    {
+      "start": 2136.75,
+      "end": 2138.05,
+      "text": "W pełni się zgadzam, w pełni się"
+    },
+    {
+      "start": 2138.05,
+      "end": 2138.49,
+      "text": "zgadzam."
+    },
+    {
+      "start": 2139.63,
+      "end": 2140.47,
+      "text": "Przy czym"
+    },
+    {
+      "start": 2140.47,
+      "end": 2144.31,
+      "text": "w tym całym jakby zalewie tych projektów"
+    },
+    {
+      "start": 2144.31,
+      "end": 2145.87,
+      "text": "każdy może sobie znaleźć"
+    },
+    {
+      "start": 2145.87,
+      "end": 2147.57,
+      "text": "coś dla siebie. Ktoś powie, że najlepszy"
+    },
+    {
+      "start": 2147.57,
+      "end": 2149.73,
+      "text": "Patton to jest Fate No More, ktoś powie, że"
+    },
+    {
+      "start": 2149.73,
+      "end": 2151.89,
+      "text": "najlepszy jest Mr. Bungle, ktoś inny jeszcze"
+    },
+    {
+      "start": 2151.89,
+      "end": 2153.35,
+      "text": "powie, że Dead Cross to jest objawienie."
+    },
+    {
+      "start": 2154.93,
+      "end": 2156.19,
+      "text": "Ja się spotkałem"
+    },
+    {
+      "start": 2156.19,
+      "end": 2158.65,
+      "text": "w moim przypadku z opiniami"
+    },
+    {
+      "start": 2158.65,
+      "end": 2161.03,
+      "text": "różnych ludzi, którzy podchodzili"
+    },
+    {
+      "start": 2161.03,
+      "end": 2163.09,
+      "text": "na koncercie, mówili, hej, super"
+    },
+    {
+      "start": 2163.09,
+      "end": 2165.09,
+      "text": "koncert, ale bardziej mi się podoba zespół X,"
+    },
+    {
+      "start": 2165.25,
+      "end": 2167.15,
+      "text": "bardziej mi się podoba w Mentorze, bardziej mi się podoba"
+    },
+    {
+      "start": 2167.15,
+      "end": 2168.89,
+      "text": "w Piór Bedlam. I to jest ciekawe"
+    },
+    {
+      "start": 2168.89,
+      "end": 2170.87,
+      "text": "za każdym razem, zwłaszcza"
+    },
+    {
+      "start": 2170.87,
+      "end": 2171.91,
+      "text": "zależności na to, kto"
+    },
+    {
+      "start": 2171.91,
+      "end": 2174.21,
+      "text": "te opinie właśnie"
+    },
+    {
+      "start": 2174.21,
+      "end": 2176.95,
+      "text": "wygłasza. Często się można zdziwić."
+    },
+    {
+      "start": 2177.93,
+      "end": 2178.91,
+      "text": "Ale to jest miłe,"
+    },
+    {
+      "start": 2179.03,
+      "end": 2181.21,
+      "text": "to znaczy, że gdzieś komuś"
+    },
+    {
+      "start": 2181.21,
+      "end": 2183.19,
+      "text": "po prostu jakaś tam"
+    },
+    {
+      "start": 2183.19,
+      "end": 2184.87,
+      "text": "cząstka moja artystyczna bardziej odpowiada"
+    },
+    {
+      "start": 2184.87,
+      "end": 2187.13,
+      "text": "i to jeszcze dalej mi potwierdza, że być może jest"
+    },
+    {
+      "start": 2187.13,
+      "end": 2187.91,
+      "text": "sens"
+    },
+    {
+      "start": 2187.91,
+      "end": 2191.17,
+      "text": "wchodzić w tą taką różnorodność artystyczną."
+    },
+    {
+      "start": 2191.67,
+      "end": 2192.57,
+      "text": "A powiedz mi, jak się"
+    },
+    {
+      "start": 2192.57,
+      "end": 2194.35,
+      "text": "przygotowujesz do"
+    },
+    {
+      "start": 2194.35,
+      "end": 2196.73,
+      "text": "tych nowych projektów?"
+    },
+    {
+      "start": 2197.13,
+      "end": 2198.95,
+      "text": "Mówisz, że próbujesz się wymyślać"
+    },
+    {
+      "start": 2198.95,
+      "end": 2200.17,
+      "text": "jakoś na nowo, tak jak"
+    },
+    {
+      "start": 2200.17,
+      "end": 2203.19,
+      "text": "aktor buduje swoją rolę"
+    },
+    {
+      "start": 2203.19,
+      "end": 2203.87,
+      "text": "w nowym"
+    },
+    {
+      "start": 2203.87,
+      "end": 2206.85,
+      "text": "przedstawieniu. Ty też budujesz"
+    },
+    {
+      "start": 2206.85,
+      "end": 2208.95,
+      "text": "postać sceniczną, wymyślasz sobie"
+    },
+    {
+      "start": 2208.95,
+      "end": 2210.41,
+      "text": "jej background story. Mówiłeś"
+    },
+    {
+      "start": 2210.41,
+      "end": 2213.45,
+      "text": "wcześniej o tym, że na koncertach"
+    },
+    {
+      "start": 2213.45,
+      "end": 2214.07,
+      "text": "Lasu Trumien"
+    },
+    {
+      "start": 2214.07,
+      "end": 2216.39,
+      "text": "masz odpowiedni outfit, żeby to pasowało"
+    },
+    {
+      "start": 2216.39,
+      "end": 2218.79,
+      "text": "do atmosfery"
+    },
+    {
+      "start": 2218.79,
+      "end": 2219.73,
+      "text": "tekstów."
+    },
+    {
+      "start": 2220.15,
+      "end": 2220.99,
+      "text": "Czy to też jest właśnie"
+    },
+    {
+      "start": 2220.99,
+      "end": 2222.53,
+      "text": "w taki sposób robione,"
+    },
+    {
+      "start": 2222.63,
+      "end": 2223.35,
+      "text": "czy po prostu"
+    },
+    {
+      "start": 2223.35,
+      "end": 2225.35,
+      "text": "modyfikujesz trochę głos"
+    },
+    {
+      "start": 2225.35,
+      "end": 2226.35,
+      "text": "przed mikrofonem w studiu"
+    },
+    {
+      "start": 2226.35,
+      "end": 2227.27,
+      "text": "i potem na koncertach"
+    },
+    {
+      "start": 2227.27,
+      "end": 2227.97,
+      "text": "już tak zostaje?"
+    },
+    {
+      "start": 2229.13,
+      "end": 2231.47,
+      "text": "Znaczy, akurat Lasu Trumien jest chyba najbardziej takim jaskrawym"
+    },
+    {
+      "start": 2231.47,
+      "end": 2233.17,
+      "text": "przykładem tego, gdzie ten element"
+    },
+    {
+      "start": 2233.17,
+      "end": 2235.11,
+      "text": "performance'u występuje i to"
+    },
+    {
+      "start": 2235.11,
+      "end": 2236.37,
+      "text": "od początku"
+    },
+    {
+      "start": 2236.37,
+      "end": 2238.97,
+      "text": "podskórnie czułem, że muszę coś takiego"
+    },
+    {
+      "start": 2238.97,
+      "end": 2241.59,
+      "text": "zaprezentować właśnie z dwóch powodów."
+    },
+    {
+      "start": 2242.01,
+      "end": 2242.75,
+      "text": "Raz, że"
+    },
+    {
+      "start": 2242.75,
+      "end": 2245.17,
+      "text": "naprawdę nie chciałem być tym"
+    },
+    {
+      "start": 2245.17,
+      "end": 2246.49,
+      "text": "kolejnym, naćpanym"
+    },
+    {
+      "start": 2246.49,
+      "end": 2247.57,
+      "text": "wokalistą sludge'owym,"
+    },
+    {
+      "start": 2247.71,
+      "end": 2249.13,
+      "text": "po prostu, który się miota."
+    },
+    {
+      "start": 2249.55,
+      "end": 2251.07,
+      "text": "Bo widzieliśmy ich już serki."
+    },
+    {
+      "start": 2251.19,
+      "end": 2252.73,
+      "text": "Chciałem po prostu coś innego,"
+    },
+    {
+      "start": 2252.89,
+      "end": 2254.29,
+      "text": "coś jakby..."
+    },
+    {
+      "start": 2254.29,
+      "end": 2256.53,
+      "text": "Nie, że gardzę tą formułą,"
+    },
+    {
+      "start": 2256.53,
+      "end": 2258.39,
+      "text": "ale chciałem ją po prostu taki spin"
+    },
+    {
+      "start": 2258.39,
+      "end": 2258.97,
+      "text": "na tę formułę"
+    },
+    {
+      "start": 2258.97,
+      "end": 2260.79,
+      "text": "zaprezentować leciutki."
+    },
+    {
+      "start": 2261.55,
+      "end": 2262.63,
+      "text": "No a druga rzecz, że"
+    },
+    {
+      "start": 2262.63,
+      "end": 2264.45,
+      "text": "to, co wspomniałem wcześniej,"
+    },
+    {
+      "start": 2264.55,
+      "end": 2265.75,
+      "text": "ten element czarnego humoru,"
+    },
+    {
+      "start": 2265.83,
+      "end": 2266.99,
+      "text": "który kiedy"
+    },
+    {
+      "start": 2266.99,
+      "end": 2268.97,
+      "text": "skupiasz swoje teksty"
+    },
+    {
+      "start": 2268.97,
+      "end": 2271.67,
+      "text": "na tak obrzydliwych rzeczach,"
+    },
+    {
+      "start": 2271.77,
+      "end": 2271.93,
+      "text": "bo"
+    },
+    {
+      "start": 2271.93,
+      "end": 2273.21,
+      "text": "jak"
+    },
+    {
+      "start": 2273.21,
+      "end": 2274.43,
+      "text": "być może"
+    },
+    {
+      "start": 2274.43,
+      "end": 2276.01,
+      "text": "wszyscy wiedzą lub nie,"
+    },
+    {
+      "start": 2277.01,
+      "end": 2278.39,
+      "text": "każdy, każdy"
+    },
+    {
+      "start": 2278.39,
+      "end": 2279.97,
+      "text": "tekst Lasu Trumien"
+    },
+    {
+      "start": 2279.97,
+      "end": 2282.05,
+      "text": "jest oparty"
+    },
+    {
+      "start": 2282.05,
+      "end": 2283.83,
+      "text": "o jakąś prawdziwą zbrodnię,"
+    },
+    {
+      "start": 2283.83,
+      "end": 2284.91,
+      "text": "czyli zrobiony research."
+    },
+    {
+      "start": 2285.03,
+      "end": 2285.91,
+      "text": "Nie jest to research"
+    },
+    {
+      "start": 2285.91,
+      "end": 2287.21,
+      "text": "jakoś superwielki,"
+    },
+    {
+      "start": 2287.27,
+      "end": 2287.59,
+      "text": "nie jest też"
+    },
+    {
+      "start": 2287.59,
+      "end": 2289.59,
+      "text": "ziemkiewiczowski,"
+    },
+    {
+      "start": 2289.73,
+      "end": 2289.81,
+      "text": "tak?"
+    },
+    {
+      "start": 2290.63,
+      "end": 2291.93,
+      "text": "Jest gdzieś tak po środku,"
+    },
+    {
+      "start": 2292.03,
+      "end": 2292.39,
+      "text": "powiedzmy."
+    },
+    {
+      "start": 2293.55,
+      "end": 2295.09,
+      "text": "Ale jest ten research,"
+    },
+    {
+      "start": 2295.23,
+      "end": 2296.65,
+      "text": "jest tam jakoś"
+    },
+    {
+      "start": 2296.65,
+      "end": 2299.85,
+      "text": "zagłębienie pewnego tematu,"
+    },
+    {
+      "start": 2299.93,
+      "end": 2300.79,
+      "text": "no i kiedy człowiek"
+    },
+    {
+      "start": 2300.79,
+      "end": 2301.11,
+      "text": "czyt, no,"
+    },
+    {
+      "start": 2301.27,
+      "end": 2302.63,
+      "text": "wiesz, kiedy przygotowuje"
+    },
+    {
+      "start": 2302.63,
+      "end": 2304.75,
+      "text": "10-12 tekstów"
+    },
+    {
+      "start": 2304.75,
+      "end": 2305.45,
+      "text": "na płytę"
+    },
+    {
+      "start": 2305.45,
+      "end": 2306.63,
+      "text": "pełną"
+    },
+    {
+      "start": 2306.63,
+      "end": 2308.83,
+      "text": "i czytam o 10-12 sprawach,"
+    },
+    {
+      "start": 2309.37,
+      "end": 2311.73,
+      "text": "mózg się potrafi spocić,"
+    },
+    {
+      "start": 2311.83,
+      "end": 2312.13,
+      "text": "naprawdę."
+    },
+    {
+      "start": 2312.13,
+      "end": 2312.71,
+      "text": "To są"
+    },
+    {
+      "start": 2312.71,
+      "end": 2314.35,
+      "text": "okropne, okropne"
+    },
+    {
+      "start": 2314.35,
+      "end": 2315.31,
+      "text": "treści,"
+    },
+    {
+      "start": 2315.53,
+      "end": 2315.87,
+      "text": "które trzeba"
+    },
+    {
+      "start": 2315.87,
+      "end": 2316.35,
+      "text": "przyswoić"
+    },
+    {
+      "start": 2316.35,
+      "end": 2317.21,
+      "text": "w większej ilości"
+    },
+    {
+      "start": 2317.21,
+      "end": 2318.81,
+      "text": "i zawsze czułem"
+    },
+    {
+      "start": 2318.81,
+      "end": 2319.57,
+      "text": "podskórnie,"
+    },
+    {
+      "start": 2319.73,
+      "end": 2321.01,
+      "text": "że ten właśnie"
+    },
+    {
+      "start": 2321.01,
+      "end": 2321.55,
+      "text": "kaszkiet,"
+    },
+    {
+      "start": 2321.63,
+      "end": 2322.61,
+      "text": "ten śmieszny kostium,"
+    },
+    {
+      "start": 2322.73,
+      "end": 2323.09,
+      "text": "to jak"
+    },
+    {
+      "start": 2323.09,
+      "end": 2324.73,
+      "text": "poruszam się na scenie,"
+    },
+    {
+      "start": 2325.15,
+      "end": 2325.91,
+      "text": "to jak zapowiadam"
+    },
+    {
+      "start": 2325.91,
+      "end": 2326.91,
+      "text": "tym takim bardziej"
+    },
+    {
+      "start": 2326.91,
+      "end": 2328.95,
+      "text": "przebitym głosem"
+    },
+    {
+      "start": 2328.95,
+      "end": 2329.43,
+      "text": "i tak dalej,"
+    },
+    {
+      "start": 2329.85,
+      "end": 2331.99,
+      "text": "to jakby jest częścią"
+    },
+    {
+      "start": 2331.99,
+      "end": 2332.89,
+      "text": "czegoś,"
+    },
+    {
+      "start": 2332.95,
+      "end": 2333.69,
+      "text": "co miałoby mi"
+    },
+    {
+      "start": 2333.69,
+      "end": 2334.37,
+      "text": "leciutko"
+    },
+    {
+      "start": 2334.37,
+      "end": 2335.59,
+      "text": "chociaż przywrócić"
+    },
+    {
+      "start": 2335.59,
+      "end": 2336.67,
+      "text": "tą właśnie"
+    },
+    {
+      "start": 2336.67,
+      "end": 2337.97,
+      "text": "higienę psychiczną."
+    },
+    {
+      "start": 2339.31,
+      "end": 2340.93,
+      "text": "Ale jednocześnie"
+    },
+    {
+      "start": 2340.93,
+      "end": 2341.67,
+      "text": "myślę, że"
+    },
+    {
+      "start": 2341.67,
+      "end": 2342.25,
+      "text": "troszeczkę"
+    },
+    {
+      "start": 2342.25,
+      "end": 2342.85,
+      "text": "podświadomie"
+    },
+    {
+      "start": 2342.85,
+      "end": 2343.45,
+      "text": "to samo chciałem"
+    },
+    {
+      "start": 2343.45,
+      "end": 2344.49,
+      "text": "zrobić z każdym"
+    },
+    {
+      "start": 2344.49,
+      "end": 2345.17,
+      "text": "moim innym"
+    },
+    {
+      "start": 2345.17,
+      "end": 2346.39,
+      "text": "zespołem"
+    },
+    {
+      "start": 2346.39,
+      "end": 2347.33,
+      "text": "z różnym skutkiem."
+    },
+    {
+      "start": 2347.55,
+      "end": 2347.77,
+      "text": "W przypadku"
+    },
+    {
+      "start": 2347.77,
+      "end": 2348.31,
+      "text": "Lasu Trumien"
+    },
+    {
+      "start": 2348.31,
+      "end": 2348.79,
+      "text": "chyba miałem"
+    },
+    {
+      "start": 2348.79,
+      "end": 2349.31,
+      "text": "bardziej"
+    },
+    {
+      "start": 2349.31,
+      "end": 2351.11,
+      "text": "formułę"
+    },
+    {
+      "start": 2351.11,
+      "end": 2351.49,
+      "text": "już taką"
+    },
+    {
+      "start": 2351.49,
+      "end": 2352.09,
+      "text": "wypracowaną,"
+    },
+    {
+      "start": 2352.15,
+      "end": 2352.79,
+      "text": "wymyśloną"
+    },
+    {
+      "start": 2352.79,
+      "end": 2353.27,
+      "text": "wcześniej,"
+    },
+    {
+      "start": 2353.93,
+      "end": 2354.51,
+      "text": "a w przypadku"
+    },
+    {
+      "start": 2354.51,
+      "end": 2355.09,
+      "text": "Pure Bedlam"
+    },
+    {
+      "start": 2355.09,
+      "end": 2356.35,
+      "text": "dalej zastanawiam się,"
+    },
+    {
+      "start": 2356.43,
+      "end": 2357.21,
+      "text": "jesteśmy na etapie"
+    },
+    {
+      "start": 2357.21,
+      "end": 2357.79,
+      "text": "trzeciej płyty,"
+    },
+    {
+      "start": 2357.95,
+      "end": 2358.75,
+      "text": "ja się dalej zastanawiam,"
+    },
+    {
+      "start": 2359.05,
+      "end": 2360.45,
+      "text": "który ciuch sceniczny"
+    },
+    {
+      "start": 2360.45,
+      "end": 2360.91,
+      "text": "będzie jednak"
+    },
+    {
+      "start": 2360.91,
+      "end": 2362.21,
+      "text": "najlepszy do tego zespołu."
+    },
+    {
+      "start": 2362.61,
+      "end": 2363.37,
+      "text": "I to są pierdoły"
+    },
+    {
+      "start": 2363.37,
+      "end": 2363.85,
+      "text": "tak naprawdę,"
+    },
+    {
+      "start": 2364.07,
+      "end": 2364.75,
+      "text": "ale mimo wszystko"
+    },
+    {
+      "start": 2364.75,
+      "end": 2366.31,
+      "text": "uważam, że"
+    },
+    {
+      "start": 2366.31,
+      "end": 2367.47,
+      "text": "jakoś trzeba się"
+    },
+    {
+      "start": 2367.47,
+      "end": 2368.39,
+      "text": "w jakiś sposób"
+    },
+    {
+      "start": 2368.39,
+      "end": 2368.89,
+      "text": "po prostu"
+    },
+    {
+      "start": 2368.89,
+      "end": 2370.85,
+      "text": "wyróżnić na tle"
+    },
+    {
+      "start": 2370.85,
+      "end": 2371.47,
+      "text": "chociażby"
+    },
+    {
+      "start": 2371.47,
+      "end": 2372.53,
+      "text": "innych swoich projektów,"
+    },
+    {
+      "start": 2372.61,
+      "end": 2373.43,
+      "text": "żeby ludzie widzieli,"
+    },
+    {
+      "start": 2373.57,
+      "end": 2373.77,
+      "text": "że aha,"
+    },
+    {
+      "start": 2373.85,
+      "end": 2374.71,
+      "text": "ten koleś wygląda"
+    },
+    {
+      "start": 2374.71,
+      "end": 2375.35,
+      "text": "tak w tym zespole,"
+    },
+    {
+      "start": 2375.45,
+      "end": 2376.27,
+      "text": "wygląda tak w tym zespole,"
+    },
+    {
+      "start": 2376.35,
+      "end": 2377.45,
+      "text": "ale też brzmi inaczej"
+    },
+    {
+      "start": 2377.45,
+      "end": 2378.73,
+      "text": "i to ze sobą"
+    },
+    {
+      "start": 2378.73,
+      "end": 2379.73,
+      "text": "koreluje bardzo fajnie."
+    },
+    {
+      "start": 2380.31,
+      "end": 2381.25,
+      "text": "A pisanie tekstów"
+    },
+    {
+      "start": 2381.25,
+      "end": 2382.49,
+      "text": "przychodzi ci z łatwością?"
+    },
+    {
+      "start": 2382.49,
+      "end": 2384.83,
+      "text": "No, w Lesie Trumien"
+    },
+    {
+      "start": 2384.83,
+      "end": 2386.07,
+      "text": "jest na to patent,"
+    },
+    {
+      "start": 2386.17,
+      "end": 2387.57,
+      "text": "jest na to określony pomysł,"
+    },
+    {
+      "start": 2388.17,
+      "end": 2389.23,
+      "text": "no ale masz do obsłużenia"
+    },
+    {
+      "start": 2389.23,
+      "end": 2390.77,
+      "text": "jeszcze parę innych"
+    },
+    {
+      "start": 2390.77,
+      "end": 2391.81,
+      "text": "projektów"
+    },
+    {
+      "start": 2391.81,
+      "end": 2393.23,
+      "text": "i jak to wygląda,"
+    },
+    {
+      "start": 2393.37,
+      "end": 2393.47,
+      "text": "czy"
+    },
+    {
+      "start": 2393.47,
+      "end": 2394.57,
+      "text": "są"
+    },
+    {
+      "start": 2394.57,
+      "end": 2395.87,
+      "text": "różni tekściarze,"
+    },
+    {
+      "start": 2395.99,
+      "end": 2396.87,
+      "text": "jedni piszą"
+    },
+    {
+      "start": 2396.87,
+      "end": 2399.07,
+      "text": "cały czas"
+    },
+    {
+      "start": 2399.07,
+      "end": 2400.19,
+      "text": "jakieś warianty"
+    },
+    {
+      "start": 2400.19,
+      "end": 2401.15,
+      "text": "właściwie tej samej"
+    },
+    {
+      "start": 2401.15,
+      "end": 2401.67,
+      "text": "opowieści,"
+    },
+    {
+      "start": 2401.77,
+      "end": 2402.43,
+      "text": "gdzieś tam o sobie"
+    },
+    {
+      "start": 2402.43,
+      "end": 2402.99,
+      "text": "i swoich"
+    },
+    {
+      "start": 2402.99,
+      "end": 2403.73,
+      "text": "demonach,"
+    },
+    {
+      "start": 2403.83,
+      "end": 2404.49,
+      "text": "czasem jest to bardzo"
+    },
+    {
+      "start": 2404.49,
+      "end": 2405.39,
+      "text": "rozległa opowieść"
+    },
+    {
+      "start": 2405.39,
+      "end": 2405.75,
+      "text": "oczywiście,"
+    },
+    {
+      "start": 2406.39,
+      "end": 2407.19,
+      "text": "więc to wcale nie znaczy,"
+    },
+    {
+      "start": 2407.29,
+      "end": 2407.69,
+      "text": "że te teksty"
+    },
+    {
+      "start": 2407.69,
+      "end": 2408.69,
+      "text": "muszą być identyczne,"
+    },
+    {
+      "start": 2409.35,
+      "end": 2411.21,
+      "text": "no a inni"
+    },
+    {
+      "start": 2411.21,
+      "end": 2413.13,
+      "text": "zbierają"
+    },
+    {
+      "start": 2413.13,
+      "end": 2414.09,
+      "text": "jak taka antena"
+    },
+    {
+      "start": 2414.09,
+      "end": 2415.75,
+      "text": "impulsy z zewnątrz"
+    },
+    {
+      "start": 2415.75,
+      "end": 2417.89,
+      "text": "i bardzo różne tematy"
+    },
+    {
+      "start": 2417.89,
+      "end": 2419.17,
+      "text": "przetwarzają w tekstach."
+    },
+    {
+      "start": 2419.31,
+      "end": 2420.97,
+      "text": "Ty jesteś"
+    },
+    {
+      "start": 2420.97,
+      "end": 2421.73,
+      "text": "jakim"
+    },
+    {
+      "start": 2421.73,
+      "end": 2422.61,
+      "text": "tekściarzem?"
+    },
+    {
+      "start": 2423.07,
+      "end": 2423.53,
+      "text": "Ja"
+    },
+    {
+      "start": 2423.53,
+      "end": 2424.99,
+      "text": "potrafię"
+    },
+    {
+      "start": 2424.99,
+      "end": 2425.89,
+      "text": "usiąść"
+    },
+    {
+      "start": 2425.89,
+      "end": 2426.79,
+      "text": "nad..."
+    },
+    {
+      "start": 2426.79,
+      "end": 2427.57,
+      "text": "Ja jestem zbieraczem,"
+    },
+    {
+      "start": 2427.69,
+      "end": 2428.81,
+      "text": "kolekcjonerem tytułów"
+    },
+    {
+      "start": 2428.81,
+      "end": 2429.83,
+      "text": "przede wszystkim."
+    },
+    {
+      "start": 2430.01,
+      "end": 2430.53,
+      "text": "Ja mam"
+    },
+    {
+      "start": 2430.53,
+      "end": 2431.47,
+      "text": "kilka"
+    },
+    {
+      "start": 2431.47,
+      "end": 2432.33,
+      "text": "folderów"
+    },
+    {
+      "start": 2432.33,
+      "end": 2433.17,
+      "text": "w telefonie,"
+    },
+    {
+      "start": 2434.05,
+      "end": 2435.23,
+      "text": "osobne zespoły"
+    },
+    {
+      "start": 2435.23,
+      "end": 2435.71,
+      "text": "i kiedy"
+    },
+    {
+      "start": 2435.71,
+      "end": 2436.77,
+      "text": "nie wiem,"
+    },
+    {
+      "start": 2436.85,
+      "end": 2437.49,
+      "text": "słucham czegoś,"
+    },
+    {
+      "start": 2437.53,
+      "end": 2438.25,
+      "text": "oglądam coś,"
+    },
+    {
+      "start": 2438.39,
+      "end": 2438.67,
+      "text": "coś,"
+    },
+    {
+      "start": 2438.91,
+      "end": 2439.41,
+      "text": "jakiś"
+    },
+    {
+      "start": 2439.41,
+      "end": 2441.07,
+      "text": "kolaż słów"
+    },
+    {
+      "start": 2441.07,
+      "end": 2442.03,
+      "text": "mi się bardzo spodoba,"
+    },
+    {
+      "start": 2442.21,
+      "end": 2442.33,
+      "text": "to"
+    },
+    {
+      "start": 2442.33,
+      "end": 2443.43,
+      "text": "o, to był super"
+    },
+    {
+      "start": 2443.43,
+      "end": 2444.95,
+      "text": "tytuł piosenki,"
+    },
+    {
+      "start": 2445.43,
+      "end": 2446.53,
+      "text": "więc taki tytuł piosenek"
+    },
+    {
+      "start": 2446.53,
+      "end": 2447.13,
+      "text": "to ja już mam"
+    },
+    {
+      "start": 2447.13,
+      "end": 2447.81,
+      "text": "w dziesiątki"
+    },
+    {
+      "start": 2447.81,
+      "end": 2449.25,
+      "text": "w tych"
+    },
+    {
+      "start": 2449.25,
+      "end": 2449.83,
+      "text": "folderkach."
+    },
+    {
+      "start": 2450.65,
+      "end": 2451.19,
+      "text": "No i wiem"
+    },
+    {
+      "start": 2451.19,
+      "end": 2451.59,
+      "text": "mniej więcej"
+    },
+    {
+      "start": 2451.59,
+      "end": 2451.99,
+      "text": "do którego"
+    },
+    {
+      "start": 2451.99,
+      "end": 2452.67,
+      "text": "folderku"
+    },
+    {
+      "start": 2452.67,
+      "end": 2453.73,
+      "text": "dany tytuł"
+    },
+    {
+      "start": 2453.73,
+      "end": 2454.35,
+      "text": "będzie najlepiej"
+    },
+    {
+      "start": 2454.35,
+      "end": 2454.83,
+      "text": "pasował."
+    },
+    {
+      "start": 2455.63,
+      "end": 2456.57,
+      "text": "Więc nie mam"
+    },
+    {
+      "start": 2456.57,
+      "end": 2457.71,
+      "text": "jakby elementów"
+    },
+    {
+      "start": 2457.71,
+      "end": 2458.21,
+      "text": "tekstów,"
+    },
+    {
+      "start": 2458.29,
+      "end": 2459.17,
+      "text": "nie potrafię"
+    },
+    {
+      "start": 2459.17,
+      "end": 2459.57,
+      "text": "faktycznie"
+    },
+    {
+      "start": 2459.57,
+      "end": 2460.29,
+      "text": "aż tak się"
+    },
+    {
+      "start": 2460.29,
+      "end": 2461.11,
+      "text": "zmobilizować,"
+    },
+    {
+      "start": 2461.21,
+      "end": 2461.83,
+      "text": "żeby pisać sobie"
+    },
+    {
+      "start": 2461.83,
+      "end": 2463.17,
+      "text": "fragmenty tekstów,"
+    },
+    {
+      "start": 2463.25,
+      "end": 2463.67,
+      "text": "które nagle"
+    },
+    {
+      "start": 2463.67,
+      "end": 2464.15,
+      "text": "wymyślę"
+    },
+    {
+      "start": 2464.15,
+      "end": 2464.89,
+      "text": "pod prysznicem."
+    },
+    {
+      "start": 2465.99,
+      "end": 2466.51,
+      "text": "Natomiast"
+    },
+    {
+      "start": 2466.51,
+      "end": 2467.79,
+      "text": "zapisuję sobie"
+    },
+    {
+      "start": 2467.79,
+      "end": 2468.55,
+      "text": "te tytuły"
+    },
+    {
+      "start": 2468.55,
+      "end": 2469.53,
+      "text": "i przeważnie jest tak,"
+    },
+    {
+      "start": 2469.59,
+      "end": 2470.01,
+      "text": "że kiedy widzę"
+    },
+    {
+      "start": 2470.01,
+      "end": 2470.35,
+      "text": "tytuł,"
+    },
+    {
+      "start": 2470.43,
+      "end": 2471.01,
+      "text": "to zaczyna mi się"
+    },
+    {
+      "start": 2471.01,
+      "end": 2471.43,
+      "text": "już kolorować"
+    },
+    {
+      "start": 2471.43,
+      "end": 2472.21,
+      "text": "pomysł na tekst,"
+    },
+    {
+      "start": 2472.27,
+      "end": 2473.13,
+      "text": "co bym tutaj widział."
+    },
+    {
+      "start": 2473.53,
+      "end": 2474.55,
+      "text": "Kiedy słyszę muzykę,"
+    },
+    {
+      "start": 2474.65,
+      "end": 2475.41,
+      "text": "która będzie pasowała"
+    },
+    {
+      "start": 2475.41,
+      "end": 2476.95,
+      "text": "właśnie pod ten tytuł,"
+    },
+    {
+      "start": 2477.13,
+      "end": 2477.35,
+      "text": "jakby"
+    },
+    {
+      "start": 2477.35,
+      "end": 2478.39,
+      "text": "sam proces"
+    },
+    {
+      "start": 2478.39,
+      "end": 2479.51,
+      "text": "zaczyna być"
+    },
+    {
+      "start": 2479.51,
+      "end": 2480.01,
+      "text": "łatwiejszy."
+    },
+    {
+      "start": 2480.93,
+      "end": 2481.81,
+      "text": "No w przypadku"
+    },
+    {
+      "start": 2481.81,
+      "end": 2482.49,
+      "text": "Lasu Trumien"
+    },
+    {
+      "start": 2482.49,
+      "end": 2483.41,
+      "text": "tutaj chodzi"
+    },
+    {
+      "start": 2483.41,
+      "end": 2483.89,
+      "text": "o powiedzenie"
+    },
+    {
+      "start": 2483.89,
+      "end": 2484.37,
+      "text": "historii,"
+    },
+    {
+      "start": 2484.49,
+      "end": 2485.13,
+      "text": "więc to jest"
+    },
+    {
+      "start": 2485.13,
+      "end": 2485.87,
+      "text": "dość w sumie"
+    },
+    {
+      "start": 2485.87,
+      "end": 2486.25,
+      "text": "proste."
+    },
+    {
+      "start": 2486.33,
+      "end": 2487.55,
+      "text": "Mam konkretny"
+    },
+    {
+      "start": 2487.55,
+      "end": 2487.83,
+      "text": "temat,"
+    },
+    {
+      "start": 2487.95,
+      "end": 2488.79,
+      "text": "konkretną treść,"
+    },
+    {
+      "start": 2488.93,
+      "end": 2489.43,
+      "text": "teraz jak to"
+    },
+    {
+      "start": 2489.43,
+      "end": 2490.31,
+      "text": "przerobimy na piosenkę,"
+    },
+    {
+      "start": 2490.41,
+      "end": 2491.01,
+      "text": "żeby miało sens."
+    },
+    {
+      "start": 2491.51,
+      "end": 2492.25,
+      "text": "I jest w tym"
+    },
+    {
+      "start": 2492.25,
+      "end": 2492.75,
+      "text": "taki element"
+    },
+    {
+      "start": 2492.75,
+      "end": 2493.61,
+      "text": "jakiejś zabawy,"
+    },
+    {
+      "start": 2493.87,
+      "end": 2494.61,
+      "text": "jakiegoś"
+    },
+    {
+      "start": 2494.61,
+      "end": 2495.47,
+      "text": "właśnie poszukiwania"
+    },
+    {
+      "start": 2495.47,
+      "end": 2495.87,
+      "text": "czegoś,"
+    },
+    {
+      "start": 2495.93,
+      "end": 2496.55,
+      "text": "czegoś takiego,"
+    },
+    {
+      "start": 2496.91,
+      "end": 2497.87,
+      "text": "takie fajne wyzwanie."
+    },
+    {
+      "start": 2498.99,
+      "end": 2499.73,
+      "text": "Podobnie mam"
+    },
+    {
+      "start": 2499.73,
+      "end": 2500.53,
+      "text": "z Mentorem,"
+    },
+    {
+      "start": 2500.81,
+      "end": 2501.29,
+      "text": "tylko tam"
+    },
+    {
+      "start": 2501.29,
+      "end": 2501.93,
+      "text": "te tematy"
+    },
+    {
+      "start": 2501.93,
+      "end": 2502.87,
+      "text": "są bardziej ogólne."
+    },
+    {
+      "start": 2502.97,
+      "end": 2503.47,
+      "text": "Tam dostałem"
+    },
+    {
+      "start": 2503.47,
+      "end": 2504.05,
+      "text": "prikaz"
+    },
+    {
+      "start": 2504.05,
+      "end": 2504.93,
+      "text": "masz śpiewać"
+    },
+    {
+      "start": 2504.93,
+      "end": 2506.09,
+      "text": "o szatanie,"
+    },
+    {
+      "start": 2506.51,
+      "end": 2507.17,
+      "text": "horrorach,"
+    },
+    {
+      "start": 2507.35,
+      "end": 2508.89,
+      "text": "i generalnie"
+    },
+    {
+      "start": 2508.89,
+      "end": 2510.87,
+      "text": "klimaty"
+    },
+    {
+      "start": 2510.87,
+      "end": 2511.49,
+      "text": "B-movie"
+    },
+    {
+      "start": 2511.49,
+      "end": 2513.25,
+      "text": "od początku"
+    },
+    {
+      "start": 2513.25,
+      "end": 2513.77,
+      "text": "do końca."
+    },
+    {
+      "start": 2513.97,
+      "end": 2514.73,
+      "text": "I ta estetyka,"
+    },
+    {
+      "start": 2514.81,
+      "end": 2515.93,
+      "text": "tam jest po prostu"
+    },
+    {
+      "start": 2515.93,
+      "end": 2517.09,
+      "text": "estetyka,"
+    },
+    {
+      "start": 2517.21,
+      "end": 2517.81,
+      "text": "która się"
+    },
+    {
+      "start": 2517.81,
+      "end": 2518.89,
+      "text": "pod ten zespół"
+    },
+    {
+      "start": 2518.89,
+      "end": 2519.39,
+      "text": "podpięła"
+    },
+    {
+      "start": 2519.39,
+      "end": 2520.29,
+      "text": "i tego się po prostu"
+    },
+    {
+      "start": 2520.29,
+      "end": 2520.67,
+      "text": "trzymam."
+    },
+    {
+      "start": 2520.79,
+      "end": 2521.41,
+      "text": "I z tym też się mogę"
+    },
+    {
+      "start": 2521.41,
+      "end": 2522.09,
+      "text": "bardzo fajnie bawić,"
+    },
+    {
+      "start": 2522.17,
+      "end": 2522.73,
+      "text": "z tym też mogę mieć"
+    },
+    {
+      "start": 2522.73,
+      "end": 2523.01,
+      "text": "dużo"
+    },
+    {
+      "start": 2523.01,
+      "end": 2524.95,
+      "text": "dużo fajnych pomysłów."
+    },
+    {
+      "start": 2525.53,
+      "end": 2525.97,
+      "text": "Tym bardziej,"
+    },
+    {
+      "start": 2526.15,
+      "end": 2527.19,
+      "text": "że to takie kino,"
+    },
+    {
+      "start": 2527.29,
+      "end": 2527.75,
+      "text": "klasy B,"
+    },
+    {
+      "start": 2527.89,
+      "end": 2528.15,
+      "text": "horror,"
+    },
+    {
+      "start": 2528.57,
+      "end": 2529.53,
+      "text": "SF i tak dalej,"
+    },
+    {
+      "start": 2529.57,
+      "end": 2530.31,
+      "text": "to jest też coś,"
+    },
+    {
+      "start": 2530.43,
+      "end": 2531.45,
+      "text": "co jest Ci bardzo bliskie."
+    },
+    {
+      "start": 2531.99,
+      "end": 2533.39,
+      "text": "Nie musiałeś nagle,"
+    },
+    {
+      "start": 2534.05,
+      "end": 2535.57,
+      "text": "żeby sprostać temu zadaniu,"
+    },
+    {
+      "start": 2535.63,
+      "end": 2536.19,
+      "text": "to ja teraz"
+    },
+    {
+      "start": 2536.19,
+      "end": 2537.19,
+      "text": "sprawdzę w ogóle,"
+    },
+    {
+      "start": 2537.27,
+      "end": 2537.99,
+      "text": "o co tutaj chodzi,"
+    },
+    {
+      "start": 2538.11,
+      "end": 2539.05,
+      "text": "co to są za filmy."
+    },
+    {
+      "start": 2539.17,
+      "end": 2539.81,
+      "text": "Nie, to ja po prostu"
+    },
+    {
+      "start": 2539.81,
+      "end": 2541.23,
+      "text": "sięgam po jakieś DVD,"
+    },
+    {
+      "start": 2541.43,
+      "end": 2541.95,
+      "text": "których mam,"
+    },
+    {
+      "start": 2542.59,
+      "end": 2543.53,
+      "text": "no chyba, że będzie to"
+    },
+    {
+      "start": 2543.53,
+      "end": 2544.05,
+      "text": "w tysiące,"
+    },
+    {
+      "start": 2544.29,
+      "end": 2545.21,
+      "text": "na półce"
+    },
+    {
+      "start": 2545.21,
+      "end": 2548.21,
+      "text": "i może o tym kolesiu"
+    },
+    {
+      "start": 2548.21,
+      "end": 2549.15,
+      "text": "z siekierą tym razem."
+    },
+    {
+      "start": 2550.13,
+      "end": 2550.63,
+      "text": "Piór B dla mnie"
+    },
+    {
+      "start": 2550.63,
+      "end": 2551.19,
+      "text": "jest chyba najbardziej"
+    },
+    {
+      "start": 2551.19,
+      "end": 2554.29,
+      "text": "taką osobistą"
+    },
+    {
+      "start": 2554.29,
+      "end": 2555.37,
+      "text": "banieczką tekstową,"
+    },
+    {
+      "start": 2555.57,
+      "end": 2556.75,
+      "text": "chociaż tutaj też"
+    },
+    {
+      "start": 2556.75,
+      "end": 2557.31,
+      "text": "staram się"
+    },
+    {
+      "start": 2557.31,
+      "end": 2558.49,
+      "text": "może nie tyle bardziej"
+    },
+    {
+      "start": 2558.49,
+      "end": 2559.21,
+      "text": "na przeżyciach,"
+    },
+    {
+      "start": 2559.33,
+      "end": 2560.15,
+      "text": "co na obserwacjach"
+    },
+    {
+      "start": 2560.15,
+      "end": 2560.61,
+      "text": "skupiać."
+    },
+    {
+      "start": 2562.07,
+      "end": 2562.67,
+      "text": "I też dbałem"
+    },
+    {
+      "start": 2562.67,
+      "end": 2563.43,
+      "text": "troszeczkę o to,"
+    },
+    {
+      "start": 2563.77,
+      "end": 2564.57,
+      "text": "żeby w myśl"
+    },
+    {
+      "start": 2564.57,
+      "end": 2565.75,
+      "text": "zespołów,"
+    },
+    {
+      "start": 2565.83,
+      "end": 2566.63,
+      "text": "które pod kątem"
+    },
+    {
+      "start": 2566.63,
+      "end": 2567.17,
+      "text": "Piór B dla mnie"
+    },
+    {
+      "start": 2567.17,
+      "end": 2568.11,
+      "text": "najbardziej inspirowały,"
+    },
+    {
+      "start": 2568.85,
+      "end": 2569.51,
+      "text": "też żeby te teksty"
+    },
+    {
+      "start": 2569.51,
+      "end": 2569.91,
+      "text": "nie były jakoś"
+    },
+    {
+      "start": 2569.91,
+      "end": 2570.67,
+      "text": "specjalnie oczywiste."
+    },
+    {
+      "start": 2570.81,
+      "end": 2571.13,
+      "text": "To nie jest,"
+    },
+    {
+      "start": 2571.37,
+      "end": 2571.73,
+      "text": "nie wiem,"
+    },
+    {
+      "start": 2572.11,
+      "end": 2572.71,
+      "text": "trawa zielona,"
+    },
+    {
+      "start": 2572.79,
+      "end": 2573.29,
+      "text": "niebo niebieskie."
+    },
+    {
+      "start": 2573.29,
+      "end": 2573.61,
+      "text": "Nie, nie,"
+    },
+    {
+      "start": 2573.79,
+      "end": 2575.85,
+      "text": "zróbmy to jakoś tak"
+    },
+    {
+      "start": 2575.85,
+      "end": 2578.09,
+      "text": "bardziej artystycznie."
+    },
+    {
+      "start": 2578.51,
+      "end": 2579.11,
+      "text": "I tutaj też"
+    },
+    {
+      "start": 2579.11,
+      "end": 2579.77,
+      "text": "mam znowu"
+    },
+    {
+      "start": 2579.77,
+      "end": 2580.53,
+      "text": "pole do popisu,"
+    },
+    {
+      "start": 2581.29,
+      "end": 2582.35,
+      "text": "jeżeli chodzi o jakby,"
+    },
+    {
+      "start": 2582.89,
+      "end": 2583.25,
+      "text": "nie wiem,"
+    },
+    {
+      "start": 2583.31,
+      "end": 2583.79,
+      "text": "tworzenie jakichś"
+    },
+    {
+      "start": 2583.79,
+      "end": 2584.39,
+      "text": "ciekawych pomysłów"
+    },
+    {
+      "start": 2584.39,
+      "end": 2584.97,
+      "text": "na te teksty,"
+    },
+    {
+      "start": 2585.21,
+      "end": 2585.93,
+      "text": "ale jest to znowu"
+    },
+    {
+      "start": 2585.93,
+      "end": 2586.49,
+      "text": "coś innego"
+    },
+    {
+      "start": 2586.49,
+      "end": 2587.27,
+      "text": "niż pozostałe"
+    },
+    {
+      "start": 2587.27,
+      "end": 2588.01,
+      "text": "dwa zespoły."
+    },
+    {
+      "start": 2589.66,
+      "end": 2601.68,
+      "text": "Jedną z pierwszych lektur mojego życia była książka Jak Wojtek został strażakiem, a teraz posłuchamy jak Wojtek został piosenkarzem. Skąd to się w ogóle u ciebie wzięło?"
+    },
+    {
+      "start": 2601.68,
+      "end": 2622.76,
+      "text": "Ojej, wydaje mi się, że jestem ofiarą teledysków głównie na Wiwie 2, gdzie po prostu widziałem tych drących się kolesi z tatuażami i wiem, że na pewno to też był pierwszy impuls, żeby zrobić sobie tatuaże."
+    },
+    {
+      "start": 2622.76,
+      "end": 2648.82,
+      "text": "I tak pomyślałem, że hej, chciałbym być tym kolesiem kiedyś i jakby to pragnienie, to jakby takie podskórna potrzeba, żeby znaleźć się kiedyś w tym świecie była wystarczająca, żeby dostać angaż w mojej pierwszej kapeli, gdzie bez absolutnie żadnych odsłuchów ja sobie śpiewałem teksty, myślałem, że brzmi to fajnie."
+    },
+    {
+      "start": 2648.82,
+      "end": 2659.26,
+      "text": "Dopiero pierwszy koncert z nagłosieniem troszkę zweryfikował moje możliwości. Na szczęście ten piękny etap już mam za sobą. Nie przetrwały żadne utwory lach, co mnie bardzo cieszy."
+    },
+    {
+      "start": 2661,
+      "end": 2677.16,
+      "text": "Ale no była to jakaś szkoła życia. Jakby stopniowo uczyłem się robić to lepiej i myślę, że dalej mam olbrzymie pole do rozwoju na tym polu, ale faktycznie z każdym rokiem wymyślam sobie coś nowego."
+    },
+    {
+      "start": 2677.94,
+      "end": 2682.94,
+      "text": "Rozwojułem się w jakiś fajny sposób. To jest cały czas jakaś podróż, która potrafi fascynować."
+    },
+    {
+      "start": 2684.22,
+      "end": 2690.1,
+      "text": "Za chwilę posłuchamy mentora, który dawno nie koncertował, bo podobno nagrywał nowy materiał. Prawda to?"
+    },
+    {
+      "start": 2690.38,
+      "end": 2696.44,
+      "text": "I piszemy nowy materiał. Mieliśmy nagrywać w tym roku, na ten moment chyba jednak przeszły rok."
+    },
+    {
+      "start": 2696.44,
+      "end": 2702.26,
+      "text": "No tutaj jest kwestia takich różnych planów, nie tylko moich, ale reszty składu."
+    },
+    {
+      "start": 2702.38,
+      "end": 2709.94,
+      "text": "Tutaj każdy jest w tej kapeli zajęty. Najbardziej Artur oczywiście z multum swoich projektów, gdzie ilością mnie tam przegonił już dawno, dawno temu."
+    },
+    {
+      "start": 2710.04,
+      "end": 2714.42,
+      "text": "To jest chyba zresztą numer jeden w Polsce, mam nadzieję ciągle, jeżeli chodzi o ilość projektów."
+    },
+    {
+      "start": 2715.86,
+      "end": 2726.52,
+      "text": "Ale intensywnie pracujemy, nowe kawałki się piszą, słyszałem już kilka, są bardzo fajne i bardzo mnie cieszy perspektywa pracy nad nimi."
+    },
+    {
+      "start": 2726.52,
+      "end": 2728.12,
+      "text": "DZIENNIKARZ"
+    },
+    {
+      "start": 3012.71,
+      "end": 3027.97,
+      "text": "Słuchacie ciężko na sercu wydania poświęconego koncertom października, ale że mamy specjalnego gościa to zamiast zwyczajowego przewracania kartek kalendarza trochę o tych koncertach pogawędzimy."
+    },
+    {
+      "start": 3028.89,
+      "end": 3040.85,
+      "text": "Tym bardziej, że Wojtek oprócz tego, że sam koncerty gra, o czym już opowiadał, od dawna je organizuje zarówno na szczeblu lokalnym w małych klubach jak i międzynarodowym, że tak to ujmę."
+    },
+    {
+      "start": 3041.31,
+      "end": 3046.35,
+      "text": "Razem jesteśmy na przykład w drużynie, która organizuje dla Państwa Mystic Festival."
+    },
+    {
+      "start": 3046.89,
+      "end": 3058.55,
+      "text": "W ogóle Wojtek ma bardzo bogate i szczególne CV, bo jest jedną z niewielu postaci na tym West Padole, która pracowała przy organizacji i Metal Mani i Mystic Festival."
+    },
+    {
+      "start": 3058.71,
+      "end": 3062.29,
+      "text": "W przyszłości bardowie będą śpiewać o tobie pieśni."
+    },
+    {
+      "start": 3064.15,
+      "end": 3069.41,
+      "text": "Pamiętasz pierwszy koncert, który zorganizowałeś albo przy którego organizacji brałeś udział?"
+    },
+    {
+      "start": 3069.41,
+      "end": 3073.69,
+      "text": "Tak, bardzo dobrze pamiętam, bo to było fantastyczne doświadczenie."
+    },
+    {
+      "start": 3073.79,
+      "end": 3082.31,
+      "text": "Nawet ostatnio rozmawiałem o tym z tourmanagerem obecnym, obituary, dlatego że właśnie to był koncert również obituary."
+    },
+    {
+      "start": 3082.41,
+      "end": 3085.01,
+      "text": "Jeżeli dobrze pamiętam, to było obituary, przepraszam."
+    },
+    {
+      "start": 3086.29,
+      "end": 3094.03,
+      "text": "Więc było obituary, było grave, katamenia się nazywał ten zespół i sinister."
+    },
+    {
+      "start": 3094.43,
+      "end": 3096.39,
+      "text": "A to z wysokiej półki w ogóle zacząłeś?"
+    },
+    {
+      "start": 3096.39,
+      "end": 3124.01,
+      "text": "Zacząłem bardzo wysoko, zacząłem bardzo wysoko, jakby miałem chrzest bojowy dość mocny, a pamiętam ten koncert, bo jakby tam wiele rzeczy było dla mnie takich, takie pierwsze zdziwienie typu, aha, więc przy takim hałasie na przykład podczas próby dźwięku, któryś z technicznych od nagłosienia rozstawił sobie zaraz przy scenie hamak i sobie spał w najlepsze, kiedy chłopaki tłukli na soundchecku death metal."
+    },
+    {
+      "start": 3124.01,
+      "end": 3128.65,
+      "text": "I byłem przy takim hałasie, że w ogóle można spać, to było dla mnie niepojęte."
+    },
+    {
+      "start": 3129.23,
+      "end": 3134.19,
+      "text": "Z czasem się nauczyłem, że oczywiście, że tak, to jest absolutnie normalna, zwyczajna rzecz."
+    },
+    {
+      "start": 3135.95,
+      "end": 3150.09,
+      "text": "Miałem przyjemność odbierania zespołu Grave z lotniska, gdzie już byli w stanie bardzo fajnym al dente i całą drogę do klubu śpiewali piosenki ABBY, więc tak zażartowałem, że..."
+    },
+    {
+      "start": 3150.09,
+      "end": 3150.75,
+      "text": "Nagrałeś to?"
+    },
+    {
+      "start": 3150.89,
+      "end": 3159.57,
+      "text": "Niestety nie, to były te czasy, kiedy ja nie miałem jeszcze telefonu z funkcją nagrywania, jakąś chyba starą nokię miałem, to niestety nie było, nie było jeszcze takiego..."
+    },
+    {
+      "start": 3159.57,
+      "end": 3166.35,
+      "text": "Ja bardzo wielu rzeczy żałuję, że nie mogłem nagrać swego czasu, bo naprawdę byłyby piękne historie."
+    },
+    {
+      "start": 3168.03,
+      "end": 3175.05,
+      "text": "Ja pamiętam, że wtedy zespołowi Grave, zapytałem się oczywiście z głupia Fran, to jesteście tą kapelą death metalową, tak?"
+    },
+    {
+      "start": 3175.27,
+      "end": 3178.99,
+      "text": "No, we are ABBA cover band, we don't know who invited us."
+    },
+    {
+      "start": 3179.07,
+      "end": 3183.75,
+      "text": "Po prostu te rzeczy się zapamiętuje, to są takie fajne..."
+    },
+    {
+      "start": 3183.75,
+      "end": 3207.07,
+      "text": "Zapamiętałem z tego koncertu, że zespół Sinister, który tego wieczoru zagrał moim zdaniem najciężej, najbardziej brutalnie, to były jednocześnie największe misiaczki na backstage'u i jedyną prośbę jaką mieli, to bodajże wokalista poprosił, czy mógłby na chwilkę pojechać z nami do hotelu, bo zapomniał swoje książki."
+    },
+    {
+      "start": 3207.07,
+      "end": 3211.81,
+      "text": "Może chociaż to była jakaś historia seryjnych morderców, o których już dzisiaj rozmawialiśmy. Nie."
+    },
+    {
+      "start": 3212.01,
+      "end": 3214.23,
+      "text": "Nie mam pojęcia, nie mam pojęcia. Podejrzewam, że coś absolutnie przyjemnego."
+    },
+    {
+      "start": 3214.23,
+      "end": 3216.05,
+      "text": "Dzieci z bólnego. Na przykład muminki."
+    },
+    {
+      "start": 3219.29,
+      "end": 3228.77,
+      "text": "Praca przy tych dużych przedsięwzięciach to po prostu praca, zawód, ale wciąż robisz koncerty małe, podziemne."
+    },
+    {
+      "start": 3229.77,
+      "end": 3237.81,
+      "text": "Czasem na nich można coś zarobić, ale to nie są pieniądze, które uzasadniałyby taki wysiłek organizacyjny, który się przy tym podejmuje."
+    },
+    {
+      "start": 3238.41,
+      "end": 3243.37,
+      "text": "Więc po co to robisz, po co to robiłeś? Co w tym fajnego?"
+    },
+    {
+      "start": 3243.95,
+      "end": 3255.61,
+      "text": "Ja zawsze jak ktoś mi zadaje takie pytanie, bo dziwo ktoś zadawał już takie pytanie wcześniej, mam przygotowaną odpowiedź, aby mieć wymówkę, żeby pójść w środę do knajpy."
+    },
+    {
+      "start": 3257.23,
+      "end": 3260.29,
+      "text": "Przeważnie tak jest, że te koncerty organizowane są w różne dni."
+    },
+    {
+      "start": 3260.55,
+      "end": 3267.39,
+      "text": "Prawda jest taka, że po prostu tworzę sobie taki kontrolowany chaos w swoim życiu, gdzie robi się coś fajnego."
+    },
+    {
+      "start": 3267.49,
+      "end": 3279.43,
+      "text": "Ja poznaję nowych ludzi, mam wrażenie, że pomagam tworzyć jakąś społeczność koncertową w Katowice, której troszeczkę w moim odczuciu brakowało na przestrzeni lat."
+    },
+    {
+      "start": 3279.71,
+      "end": 3292.37,
+      "text": "Teraz się to zmieniło na plus bardzo i też mnie to cieszy, że jakby jest już większa grupa zapaleńców, organizatorów, ludzi, którzy chcą coś robić dla tej szeroko pojętej kultury i to jest rewelacja."
+    },
+    {
+      "start": 3293.93,
+      "end": 3303.15,
+      "text": "I zawsze ja po prostu chciałem mieć koncerty, na które chciałem chodzić i w pewnym momencie stwierdziłem, że no właściwie to sam sobie nie mogę zrobić, więc dlaczego nie."
+    },
+    {
+      "start": 3303.55,
+      "end": 3314.05,
+      "text": "Nie ukrywam też, że organizacja tych koncertów jakby na szczeblu, tym takim lokalnym, mniejszym troszeczkę mi pozwala w jakiś sposób pchać moje zespoły koncertowo."
+    },
+    {
+      "start": 3314.05,
+      "end": 3329.77,
+      "text": "Często jest tak, że jak robię jakąś na przykład najbliższą trasę właśnie Lasu Trumien z Odrą, robię faktycznie pod banderą mojego Happy Dying Productions, co po prostu oznacza, że hej, na tym profilu facebookowym będą informacje na ten temat."
+    },
+    {
+      "start": 3330.37,
+      "end": 3336.09,
+      "text": "Ja wydrukuję plakaty, ja wydrukuję bilety, ja po prostu zajmę się logistyką tego wszystkiego."
+    },
+    {
+      "start": 3337.61,
+      "end": 3349.93,
+      "text": "I myślę, że to jest też jakieś rozwiązanie, żeby po prostu samego siebie zmotywować i do tego grania częstszego, ale też jakby żeby nie wypaść z tej banieczki tych mniejszych koncertów."
+    },
+    {
+      "start": 3350.93,
+      "end": 3361.11,
+      "text": "Moim zdaniem tam często się rzeczy dzieją po prostu najciekawsze, najbardziej świeże, najbardziej takie, z których można coś nowego, fajnego wyciągnąć."
+    },
+    {
+      "start": 3361.57,
+      "end": 3369.97,
+      "text": "No ja to zawsze powtarzam, że warto chodzić na te koncerty małe, czy to na małych scenach na festiwalach, czy na koncerty klubowe, dlatego, że z dwóch powodów."
+    },
+    {
+      "start": 3370.09,
+      "end": 3379.39,
+      "text": "Pierwszy jest taki, że większość tych zespołów nigdy na te duże sceny nie dotrze i czasem nie dlatego wcale, że to są gorsze zespoły od tych, które osiągną sukces, tylko jakieś tam życiowe sprawy."
+    },
+    {
+      "start": 3379.39,
+      "end": 3379.71,
+      "text": "Oczywiście."
+    },
+    {
+      "start": 3380.25,
+      "end": 3389.27,
+      "text": "W jadą i to się nie poukłada i to jest jedyna okazja, żeby te zespoły zobaczyć, więc dużo się traci, nie zwracając uwagi na to, co gra w małych klubach."
+    },
+    {
+      "start": 3389.93,
+      "end": 3397.01,
+      "text": "A drugi powód jest taki, że są tam zespoły, które na duże sceny kiedyś dotrą i wtedy trzeba będzie je oglądać z daleka."
+    },
+    {
+      "start": 3397.31,
+      "end": 3397.75,
+      "text": "Dokładnie."
+    },
+    {
+      "start": 3397.83,
+      "end": 3399.81,
+      "text": "A tutaj na wyciągnięcie ręki."
+    },
+    {
+      "start": 3399.89,
+      "end": 3405.25,
+      "text": "Nie ma nic lepszego niż móc powiedzieć parę lat później, a ja ich pamiętam z Hydrozagadki albo coś takiego."
+    },
+    {
+      "start": 3405.25,
+      "end": 3414.41,
+      "text": "Tak jest, dokładnie tak. Co cię najbardziej wkurza przy tej pracy albo może inaczej, co jest największym, czy bywa największym wyzwaniem?"
+    },
+    {
+      "start": 3416.09,
+      "end": 3428.61,
+      "text": "Wiesz co, ja jakby nie wiem, nie sądzę, żebym rzeczy odbierał na zasadzie wkurzania, na zasadzie coś może być chyba większym lub mniejszym wyzwaniem."
+    },
+    {
+      "start": 3429.05,
+      "end": 3433.93,
+      "text": "Proszę sobie zanotować, jeżeli chcecie pracować w tej branży, to nie można się łatwo irytować."
+    },
+    {
+      "start": 3433.93,
+      "end": 3441.21,
+      "text": "Ale tak. Ludzie, którzy ze mną pracowali, to pewnie teraz wywracają oczami, o czym on rozmawia, przecież on się bardzo łatwo irytuje."
+    },
+    {
+      "start": 3442.45,
+      "end": 3445.43,
+      "text": "Więc pewnie sam sobie na pewno w wielu momentach zaprzeczyłem teraz."
+    },
+    {
+      "start": 3446.11,
+      "end": 3448.99,
+      "text": "No nie, no staram się właśnie nie irytować, staram się być cierpliwy."
+    },
+    {
+      "start": 3449.19,
+      "end": 3465.97,
+      "text": "Wiem, że czasami niektóre problemy powstają nie ze złośliwości, tylko z braku wiedzy, z przypadku, no a tak naprawdę praca przy organizacji z koncertu w moim odczuciu głównie polega na tym, że po prostu te problemy należy rozwiązywać."
+    },
+    {
+      "start": 3466.97,
+      "end": 3475.65,
+      "text": "Więc staram się być tutaj cierpliwy, staram się być tutaj wyrozumiały, staram się właśnie myśleć nad rozwiązaniem bardziej niż załamywać się nad problemem."
+    },
+    {
+      "start": 3478.05,
+      "end": 3486.77,
+      "text": "No i czasami taki brak zorganizowania u ludzi, od których by się tego zorganizowania spodziewało, potrafi się zirytować. To na pewno."
+    },
+    {
+      "start": 3487.73,
+      "end": 3500.41,
+      "text": "No i jest taka, jest taka też skądś wynikająca bajka, że jednak łatwiej się pracuje z ekipami zagranicznymi niż z ekipami polskimi."
+    },
+    {
+      "start": 3500.41,
+      "end": 3503.09,
+      "text": "No i na pewnym szczeblu jest z tym troszeczkę prawdy."
+    },
+    {
+      "start": 3504.7,
+      "end": 3510.5,
+      "text": "Często plotkują o niestworzonych wymaganiach i kaprysach gwiazd, w tym gwiazd metalowych."
+    },
+    {
+      "start": 3511.38,
+      "end": 3520.24,
+      "text": "Czy zdarzyło Ci się mierzyć z żądaniami, które wydawały Ci się absurdalne albo które może i miały sens,"
+    },
+    {
+      "start": 3520.24,
+      "end": 3532.84,
+      "text": "ale przez jakieś tam okoliczności lub miejsce, gdzie się rzecz odbywała lub porę dnia, kiedy taka prośba, żądanie zostały wysunięte, były trudne do spełnienia?"
+    },
+    {
+      "start": 3533.68,
+      "end": 3542.64,
+      "text": "W moim odczuciu chyba się nie spotkałem z czymś, co było takie naprawdę, wow, musicie tę konkretną butelkę, tej konkretnie whisky z tego konkretnego rocznika,"
+    },
+    {
+      "start": 3542.82,
+      "end": 3546.9,
+      "text": "której nie ma w Waszym kraju, bo nigdy nie było, załatwić, bo inaczej nie wejdziemy na scenę."
+    },
+    {
+      "start": 3546.9,
+      "end": 3548.76,
+      "text": "Ja kiedyś coś takiego miałem."
+    },
+    {
+      "start": 3549.02,
+      "end": 3554.12,
+      "text": "No widzisz, ja słyszałem o takich koncertach, ja nawet znam ludzi, którzy pracowali przy takich koncertach."
+    },
+    {
+      "start": 3554.26,
+      "end": 3570.5,
+      "text": "Natomiast ja miałem to szczęście, że ekipy odpowiedzialne za właśnie wymagania gwiazd były dość takie, no, byli w stanie wybaczyć pewne kwestie z komunikacji."
+    },
+    {
+      "start": 3570.96,
+      "end": 3573.22,
+      "text": "Jeżeli czegoś nie mam, piszę, że tego nie mam."
+    },
+    {
+      "start": 3573.36,
+      "end": 3580.32,
+      "text": "Czy potrzebujemy, czy kombinujemy, czy możemy to zastąpić czymś innym i w dziesięciu procentach przypadków można to bezboleśnie zastąpić czymś innym."
+    },
+    {
+      "start": 3582,
+      "end": 3595.86,
+      "text": "Tak jak mówię, nie spotkałem się z niczym, co moim zdaniem byłoby ponad jakąś normalność, ale weźmy też pod uwagę, że no, rajder zespołu Judas Priest wygląda inaczej niż jakiegoś małego zespołu, który gra właśnie swój pierwszy festiwal."
+    },
+    {
+      "start": 3597.34,
+      "end": 3602.66,
+      "text": "Więc ktoś może powiedzieć, że w tym rajderze Judas Priest jest przesada, oni tego wszystkiego nie zjedzą, oni wszystkiego tego nie wypiją."
+    },
+    {
+      "start": 3602.9,
+      "end": 3606.92,
+      "text": "Dla mnie to jest już jakby chleb powszedni, więc nie dziwię się, brefni nie podskakuję."
+    },
+    {
+      "start": 3607.56,
+      "end": 3624.46,
+      "text": "W drugą stronę miałem taką jedną bardzo sympatyczną historię, którą za Twoim pozwoleniem opowiem, mianowicie zespół Poison The Well, który kiedyś przyjechał zagrać na Metalmani, był częścią trasy z The Linger Escape Plan, a The Linger Escape Plan byli jednym z naszych headlinerów wtedy."
+    },
+    {
+      "start": 3625.74,
+      "end": 3645.38,
+      "text": "I Poison The Well otwierali wtedy te Metalmanie w spodku, mieli bardzo normalny rajder, nic jakby poza stan, oprócz jednej rzeczy, która była powiedzmy, nie pasowała do reszty rajdera, mianowicie chcieli jeden talerz krewetek."
+    },
+    {
+      "start": 3646.74,
+      "end": 3656.98,
+      "text": "I ktoś może powiedzieć, ach, przesadzają, ach, jakieś fanaberie, ja po prostu podszedłem do naszej osoby, która się zamówała Kateringiem, słuchaj, talerz krewetek, to jest bardzo skomplikowana, żebyśmy im to załatwili."
+    },
+    {
+      "start": 3657.08,
+      "end": 3664.3,
+      "text": "Nie, zrobimy tak, wszystko mi powiedziała w minutę, jak to ogarniemy, przygotujemy im tam, folią zakryjemy, żeby nie wystygło, będą mieli w garderobie."
+    },
+    {
+      "start": 3664.64,
+      "end": 3672.72,
+      "text": "No i faktycznie, zespół przyjeżdża, pokazaliśmy im garderobę, jest tutaj i po chwili wraca gitarzysta cały, po prostu roztrzęsiony, cały ten, że krewetki mają w garderobie."
+    },
+    {
+      "start": 3673.14,
+      "end": 3676.68,
+      "text": "Na co ja odpowiadam, no tak, bo były w rajderze, no to dlaczego miałby ich nie być w garderobie?"
+    },
+    {
+      "start": 3677.1,
+      "end": 3678.54,
+      "text": "Zdziwiony byłem jego zdziwieniem."
+    },
+    {
+      "start": 3679.2,
+      "end": 3685.14,
+      "text": "Okazało się, że te krewetki były tam wpisywane przez nich specjalnie, żeby sprawdzić, czy w ogóle promotorzy czytają rajder."
+    },
+    {
+      "start": 3685.14,
+      "end": 3686.04,
+      "text": "I byliście pierwsi."
+    },
+    {
+      "start": 3686.08,
+      "end": 3686.74,
+      "text": "Byliśmy pierwsi."
+    },
+    {
+      "start": 3688.92,
+      "end": 3699,
+      "text": "Znakomite. Powiedz, czy to, co robisz poza sceną, czy to, co widzisz tam od tej drugiej strony przekłada się na to, co robisz na scenie?"
+    },
+    {
+      "start": 3699.2,
+      "end": 3706.16,
+      "text": "Tu wracamy już do twojej roli jako wokalisty frontmana wymienianych wcześniej zespołów."
+    },
+    {
+      "start": 3706.16,
+      "end": 3717.72,
+      "text": "Tyle koncertów już oglądałeś, że może po prostu wiesz, co trzeba zrobić, żeby było dobrze, że widzisz publiczność jak Neo widzi Matrix."
+    },
+    {
+      "start": 3718.16,
+      "end": 3732.26,
+      "text": "Z tą publicznością to zawsze jest, teoretycznie myślisz, że wiesz, a w praktyce dopiero na scenie, dopiero z konkretnym projektem widzisz, że coś działa lepiej, coś działa gorzej."
+    },
+    {
+      "start": 3732.66,
+      "end": 3736.34,
+      "text": "To jest myślę, że praca zawsze na żywym organizmie i tego się nie da wyuczyć."
+    },
+    {
+      "start": 3736.34,
+      "end": 3739.04,
+      "text": "To trzeba, to musi się po prostu organicznie pojawić."
+    },
+    {
+      "start": 3739.4,
+      "end": 3747.44,
+      "text": "Natomiast cały ten jakby aspekt okołosceniczny zdecydowanie mam bardziej, myślę, że mogę powiedzieć, opanowany."
+    },
+    {
+      "start": 3750.54,
+      "end": 3755.84,
+      "text": "Obserwuję to, przy czym pracuję i wyciągam jakieś wnioski dla siebie cały czas."
+    },
+    {
+      "start": 3756.52,
+      "end": 3763.2,
+      "text": "Pamiętam, jak na samym początku byłem szalenie zdziwiony, po co tym wokalistom woda mineralna niegazowana na scenę, skoro mogliby mieć po prostu piwko."
+    },
+    {
+      "start": 3763.86,
+      "end": 3769.76,
+      "text": "I zajęło mi parę dobrych lat, żeby stwierdzić, dobra, ta woda mineralna niegazowana to jest jednak ta droga, którą należy wybrać."
+    },
+    {
+      "start": 3772.14,
+      "end": 3779.52,
+      "text": "Mam wrażenie, taką obserwację, ale może się to brać ze specyficznej optyki z tego, że po prostu jestem coraz starszy,"
+    },
+    {
+      "start": 3779.98,
+      "end": 3789.38,
+      "text": "że publiczność koncertów metalowych, szeroko pojmowanych, rockowych po latach posuchy i stagnacji w tym zakresie"
+    },
+    {
+      "start": 3789.38,
+      "end": 3800.12,
+      "text": "od jakiejś dekady nie tylko rośnie, ale też, że się odmładza, że ciężka muzyka nawet dla nastolatków znowu jest fajna."
+    },
+    {
+      "start": 3800.24,
+      "end": 3801.8,
+      "text": "Powiedz mi, czy ty też tak to widzisz?"
+    },
+    {
+      "start": 3801.8,
+      "end": 3809.54,
+      "text": "Tak, myślę, że tak. Nawet na tych mniejszych lokalnych koncertach, jak mamy zespoły, które wiem, że ściągną konkretny rodzaj publiki"
+    },
+    {
+      "start": 3809.54,
+      "end": 3822.96,
+      "text": "i wiem, że to są raczej załoganci, którzy słuchają już tego metalu lat dziesiąt, to pojawiają się też czasami zaskakująco właśnie młode osoby"
+    },
+    {
+      "start": 3822.96,
+      "end": 3831.46,
+      "text": "na koncertach, gdzie niekoniecznie bym się tego spodziewał, takich naprawdę ekstremalnych, gdzie takie powszechne przekonanie panuje, że młodzież"
+    },
+    {
+      "start": 3831.46,
+      "end": 3839.2,
+      "text": "w dzisiejszych czasach tylko idzie w hip-hop, trapy, pop albo po prostu muzykę łatwiejszą i przyjemniejszą dla ucha."
+    },
+    {
+      "start": 3839.2,
+      "end": 3856.94,
+      "text": "Nie, są dalej ludzie, którzy po prostu szukają czegoś innego w muzyce, innych emocji być może i czegoś po prostu poza mainstreamem i to cały czas, to zjawisko cały czas będzie występowało w przyrodzie."
+    },
+    {
+      "start": 3856.94,
+      "end": 3867.42,
+      "text": "No ja tak myślę, że dla ludzi, którzy mają dzisiaj lat naście albo są na początku swoich lat dwudziestych, nie było innej rzeczywistości niż ta zdominowana przez rap."
+    },
+    {
+      "start": 3867.68,
+      "end": 3877.2,
+      "text": "Znaczna część młodych ludzi ma potrzebę wyróżniania się, więc też chyba teraz łatwo się wyróżniać po prostu sięgając po gitarę, czy jako twórca, czy jako fan."
+    },
+    {
+      "start": 3877.42,
+      "end": 3887.7,
+      "text": "Mi się wydaje, że rap był jakby taką muzyką buntowniczą dla pokolenia jeszcze dużo, dużo po nas."
+    },
+    {
+      "start": 3888.64,
+      "end": 3896.54,
+      "text": "Natomiast to najmłodsze pokolenie być może już zaczyna postrzegać rap jako muzykę troszeczkę bardziej konserwatywną i szuka czegoś, co będzie prawdziwym buntem."
+    },
+    {
+      "start": 3896.64,
+      "end": 3907.14,
+      "text": "Być może stąd jakiś taki naturalny przeskok do metalu, tudzież muzyki bardziej ekstremalnej, przy czym też pamiętajmy, że metal jest inny niż był 20-30 lat temu."
+    },
+    {
+      "start": 3907.48,
+      "end": 3918.78,
+      "text": "To prawda. No ale chyba znowu są takie czasy, że audycję radiową o metalu można by nazwać muzyka młodych i to byłoby bardzo dobra nazwa, gdyby nie to, że mam jeszcze lepszą ciężko na sercu."
+    },
+    {
+      "start": 3918.78,
+      "end": 3933.1,
+      "text": "I właśnie w ciężko na sercu gościliśmy dzisiaj Wojtka Kaurze. Bardzo ci dziękuję za przybycie. Trzymam kciuki za trasę. Przypomnisz, zerkniesz do ściągi i opowiesz gdzie dokładnie będzie was można i kiedy zobaczyć."
+    },
+    {
+      "start": 3933.1,
+      "end": 3943.78,
+      "text": "Dziękuję bardzo za zaproszenie. Mamy teraz małą traskę probującą nasz split Breslau-Splin, który nagraliśmy z Lasem Trummin razem z zespołem Odra."
+    },
+    {
+      "start": 3944.9,
+      "end": 3955.58,
+      "text": "I zaczynamy 3 października w Krakowie, dzień później Rzeszów, 5 Wrocław, a później w listopadzie mamy trzy koncerty kolejne."
+    },
+    {
+      "start": 3955.58,
+      "end": 3961.4,
+      "text": "To jest 14 listopada Katowice, 15 Łódź i kończymy całość w Warszawie w Klubie Chmury."
+    },
+    {
+      "start": 3962.4,
+      "end": 3966.56,
+      "text": "Dziękuję ci bardzo za wizytę w studiu. Pomacham ci spod sceny w Krakowie."
+    },
+    {
+      "start": 3966.8,
+      "end": 3968.04,
+      "text": "Bardzo dobrze. Odmacham."
+    },
+    {
+      "start": 4084.42,
+      "end": 4099.26,
+      "text": "Pożegnaliśmy Wojtka. Trudno się było rozstać, ale mam jeszcze obowiązki wobec państwa. Trzeba jakoś przekazać tę wyliczankę bardzo ciekawych koncertów październikowych."
+    },
+    {
+      "start": 4099.26,
+      "end": 4118.78,
+      "text": "A zatem Czerń, Clairvoyance i Ethan w krótkiej trasie, bo to właściwie druga część trasy zaczętej już we wrześniu, pomiędzy 2 a 5 października będą razem grać w Częstochowie, Rzeszowie, Białymstoku i Gdańsku."
+    },
+    {
+      "start": 4118.78,
+      "end": 4142.8,
+      "text": "4 października Essie Drinkers w Warszawie na Torwarze. Zespół wrócił z niebytu w dodatku w oryginalnym składzie z licą i chyba dobrze sobie radzą, a że fani zdążyli zatęsknić, to Essie Drinkers wypełniają salę o rozmiarach, w jakich dawno, a może nawet nigdy nie grali."
+    },
+    {
+      "start": 4142.8,
+      "end": 4152.18,
+      "text": "I super i trzymam kciuki i oby tę formę wysoką utrzymali, również w wersji studyjnej."
+    },
+    {
+      "start": 4152.92,
+      "end": 4163.32,
+      "text": "Wolfhard, Before the Dawn, Suotana oraz Full House Brew Crew to 6 października Kraków Klub Zaścianek."
+    },
+    {
+      "start": 4163.32,
+      "end": 4182.92,
+      "text": "Dwa dni później, a więc 8 października Duck Tranquility, Soen, Equilibrium oraz Jotun wypełnią, no jestem pewien, że wypełnią, bo fani takiego grania z jednej strony zahaczającego o ekstrema, o death metal, ale z drugiej strony jednak bardzo melodyjnego."
+    },
+    {
+      "start": 4182.92,
+      "end": 4191.04,
+      "text": "To całkiem liczny zastęp fanów, więc wypełnią wrocławski klub A2."
+    },
+    {
+      "start": 4191.9,
+      "end": 4204.92,
+      "text": "Arkona, Sotoris, Kaltwindur i Morat, czyli black metalowo, rocznie ostro będzie 10 października w Poznaniu pod Minogą."
+    },
+    {
+      "start": 4205.58,
+      "end": 4214.56,
+      "text": "Również dla fanów black metalu, dla jego interesujących meandrów rusza w Polskę taka paczka."
+    },
+    {
+      "start": 4214.7,
+      "end": 4218.44,
+      "text": "Atlas, Sisyphean oraz Fogged Tongues."
+    },
+    {
+      "start": 4219.44,
+      "end": 4233.66,
+      "text": "10 października będą razem grali we Wrocławiu w łączniku, 12 października w Warszawie w Mechaniku, a dzień później w Krakowie w Zaścianku."
+    },
+    {
+      "start": 4234.22,
+      "end": 4240.94,
+      "text": "Pozostajemy przy tych najmroczniejszych emocjach, przy tej wściekłości."
+    },
+    {
+      "start": 4241.7,
+      "end": 4247.74,
+      "text": "Również ona wypełni Hype Park 11 października w Krakowie."
+    },
+    {
+      "start": 4248.5,
+      "end": 4255.46,
+      "text": "Medico Peste, Stellar Blight, to bardzo ciekawy tegoroczny debiut, to zresztą za chwilę usłyszycie."
+    },
+    {
+      "start": 4256.06,
+      "end": 4259.46,
+      "text": "A także z Myrna i Nihilum."
+    },
+    {
+      "start": 4260.3,
+      "end": 4263.96,
+      "text": "To sobota, niedaleko mojego miejsca zamieszkania."
+    },
+    {
+      "start": 4264.66,
+      "end": 4265.22,
+      "text": "Wybiorę się."
+    },
+    {
+      "start": 4929.03,
+      "end": 4945.29,
+      "text": "Konan będzie grał swoje barbarzyńskie piosenki 13 października w Katowicach w Piątym Domu i 14 października w Warszawie w Hydrozagadce, a towarzyszyć będzie mu grupa C.R.A."
+    },
+    {
+      "start": 4946.73,
+      "end": 4961.13,
+      "text": "13 października w Krakowie w centrum kongresowym ICE, a więc na siedząco, czy to się godzi, wysłuchamy koncertu grup OPEC i PATOS."
+    },
+    {
+      "start": 4961.87,
+      "end": 4984.63,
+      "text": "No w sumie ma to sens, szczególnie ten nowy materiał OPEC jest bardzo progrokowy, bardzo kinowy w pewnym sensie, więc w takiej sali zaśniąć w wygodnym fotelu i dać się ponieść tej historii, to może być bardzo dobry pomysł."
+    },
+    {
+      "start": 4985.57,
+      "end": 5003.27,
+      "text": "Volbit, Bush i Gel w Warszawie na Torwarze 13 października, a więc w ten sam dzień, kiedy OPEC i PATOS w Krakowie i jak mniemam znaczna część publiczności na koncercie, Volbit siedzieć nie będzie."
+    },
+    {
+      "start": 5508,
+      "end": 5531.56,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5740.16,
+      "end": 5745.14,
+      "text": "Jedziemy dalej. Jesteśmy ledwie w połowie miesiąca."
+    },
+    {
+      "start": 5745.82,
+      "end": 5749.16,
+      "text": "Bongriper, Assal Nomad i Maruntuka."
+    },
+    {
+      "start": 5749.82,
+      "end": 5753.48,
+      "text": "To 15 października. Poznań klub pod Minogą."
+    },
+    {
+      "start": 5753.6,
+      "end": 5759.44,
+      "text": "Bongriper, amerykańska załoga, sluż dumowa, zasłużona."
+    },
+    {
+      "start": 5760.16,
+      "end": 5762.64,
+      "text": "Chętnie bym to zobaczył."
+    },
+    {
+      "start": 5762.64,
+      "end": 5765.62,
+      "text": "Do Poznania daleko, ale kto wie, kto wie."
+    },
+    {
+      "start": 5767.42,
+      "end": 5769.68,
+      "text": "Jeszcze bardziej kultowy zespół."
+    },
+    {
+      "start": 5770.16,
+      "end": 5773.72,
+      "text": "Niemetalowy, ale wielu metalowców kocha nadżycie."
+    },
+    {
+      "start": 5774.38,
+      "end": 5777.94,
+      "text": "Pojawi się 18 października w Łodzi w klubie Wytwórnia"
+    },
+    {
+      "start": 5777.94,
+      "end": 5781.38,
+      "text": "w ramach festiwalu Sound Edit, a zespół nazywa się"
+    },
+    {
+      "start": 5781.38,
+      "end": 5783.92,
+      "text": "Fields of the Nephilim."
+    },
+    {
+      "start": 5785.36,
+      "end": 5790.82,
+      "text": "Szkoda, że twórczo nie jest aktywny od bardzo dawna,"
+    },
+    {
+      "start": 5790.82,
+      "end": 5797.02,
+      "text": "ale koncerty to niezmiernie i niezmiennie wielkie przeżycie."
+    },
+    {
+      "start": 5797.86,
+      "end": 5803.96,
+      "text": "Zespoły V i Mary zagrają razem, a dobra, to jest zestawienie,"
+    },
+    {
+      "start": 5804.42,
+      "end": 5810.54,
+      "text": "17 października w Koszalinie, 18 października w Szczecinie."
+    },
+    {
+      "start": 5811.16,
+      "end": 5816.16,
+      "text": "19 października to niedziela w Gliwicach w Prezero Arena."
+    },
+    {
+      "start": 5816.64,
+      "end": 5819.78,
+      "text": "Sala duża, więc to muszą być gwiazdy."
+    },
+    {
+      "start": 5819.78,
+      "end": 5827.82,
+      "text": "I gwiazdy rzeczywiście są Arch Enemy, Elevate, Amorphis oraz Gate Creeper."
+    },
+    {
+      "start": 5828.46,
+      "end": 5831.72,
+      "text": "Natomiast ci, co wolą bardziej ekstremalne odmiany metalu,"
+    },
+    {
+      "start": 5831.84,
+      "end": 5836.04,
+      "text": "zamiast Gliwic tego samego dnia, przypominam 19 października,"
+    },
+    {
+      "start": 5836.18,
+      "end": 5842.34,
+      "text": "wybiorą zapewne Warszawę, gdzie odbędzie się ósma edycja Metal Commando Fest."
+    },
+    {
+      "start": 5843,
+      "end": 5846.48,
+      "text": "Imprezy niewielkiej, ale robiącej wiele hałasu."
+    },
+    {
+      "start": 5846.68,
+      "end": 5851.1,
+      "text": "Tym razem zagrają Deus Mortem, Terrestrial Hospice,"
+    },
+    {
+      "start": 5851.24,
+      "end": 5856.26,
+      "text": "Symbolical Zorza i Frightful, a rzecz dzieje się w klubie Voodoo."
+    },
+    {
+      "start": 5857.64,
+      "end": 5861.22,
+      "text": "20 października w Warszawie w progresji"
+    },
+    {
+      "start": 5861.22,
+      "end": 5864.14,
+      "text": "All Them Witches i Elder."
+    },
+    {
+      "start": 5864.6,
+      "end": 5870.22,
+      "text": "I jestem przekonany, że choć to poniedziałek sala będzie pełna."
+    },
+    {
+      "start": 5871.62,
+      "end": 5875.94,
+      "text": "Podobnie jak w czwartek 23 października"
+    },
+    {
+      "start": 5875.94,
+      "end": 5879.1,
+      "text": "wrocławski klub A2,"
+    },
+    {
+      "start": 5880.04,
+      "end": 5883.96,
+      "text": "no bo przyjeżdża tam piękny zestaw,"
+    },
+    {
+      "start": 5884.42,
+      "end": 5886.48,
+      "text": "absolutne koncertowe pewniaki"
+    },
+    {
+      "start": 5886.48,
+      "end": 5890.5,
+      "text": "i prawdziwe legendy gatunku."
+    },
+    {
+      "start": 5890.9,
+      "end": 5893.72,
+      "text": "Testament Obituary Destruction."
+    },
+    {
+      "start": 5894.58,
+      "end": 5898.94,
+      "text": "I jeszcze nerwoza jako truskawka na torcie."
+    },
+    {
+      "start": 5899.66,
+      "end": 5902.76,
+      "text": "23 października Wrocław, do zobaczenia."
+    },
+    {
+      "start": 5904.84,
+      "end": 5908.5,
+      "text": "Natomiast 23 października w Warszawie,"
+    },
+    {
+      "start": 5908.94,
+      "end": 5912.34,
+      "text": "a dzień później w tymże Wrocławiu,"
+    },
+    {
+      "start": 5912.46,
+      "end": 5915.28,
+      "text": "w miejscu ledwie co opuszczonym przez Testament i Obituary,"
+    },
+    {
+      "start": 5915.28,
+      "end": 5920.88,
+      "text": "pojawi się legenda amerykańskiego heavy metalu,"
+    },
+    {
+      "start": 5920.98,
+      "end": 5922.4,
+      "text": "może trochę glam metalu."
+    },
+    {
+      "start": 5922.52,
+      "end": 5926.88,
+      "text": "Oni gdzieś tam pomiędzy tymi gatunkami zawsze lawirowali."
+    },
+    {
+      "start": 5927.66,
+      "end": 5929.7,
+      "text": "Nie zrobili aż tak wielkiej kariery,"
+    },
+    {
+      "start": 5929.76,
+      "end": 5933.1,
+      "text": "jak niektóre grupy stylistycznie pokrewne,"
+    },
+    {
+      "start": 5933.18,
+      "end": 5933.96,
+      "text": "choćby Moty i Crew,"
+    },
+    {
+      "start": 5934.62,
+      "end": 5936.74,
+      "text": "ale z całą pewnością są zespołem"
+    },
+    {
+      "start": 5936.74,
+      "end": 5939.14,
+      "text": "zasłużenie kultowym."
+    },
+    {
+      "start": 5939.68,
+      "end": 5943.8,
+      "text": "Wasp wraca do Polski po bardzo udanym koncercie"
+    },
+    {
+      "start": 5943.8,
+      "end": 5945.32,
+      "text": "na tegorocznym Mystic Festiwalu."
+    },
+    {
+      "start": 5945.44,
+      "end": 5949.76,
+      "text": "Tym razem będą mieli dużo więcej czasu,"
+    },
+    {
+      "start": 5949.88,
+      "end": 5951.72,
+      "text": "będą mogli wszystkie te utwory,"
+    },
+    {
+      "start": 5951.78,
+      "end": 5952.94,
+      "text": "które kochacie Wam zagrać,"
+    },
+    {
+      "start": 5953.44,
+      "end": 5956.92,
+      "text": "w progresji i w klubie A2."
+    },
+    {
+      "start": 6592.93,
+      "end": 6607.57,
+      "text": "W Warszawie w Proximie 24 października i dzień później w Krakowie w Kwadracie."
+    },
+    {
+      "start": 6608.51,
+      "end": 6612.67,
+      "text": "Wolvenest, Dolk i Double Darkness. Bardzo ciekawy zestaw."
+    },
+    {
+      "start": 6613.35,
+      "end": 6616.57,
+      "text": "25 października w sobotę w Krakowie w Zaścianku będę."
+    },
+    {
+      "start": 6617.41,
+      "end": 6626.27,
+      "text": "Wolvenest szczególnie mnie przekonuje. To świetny zespół hipnotyzujący absolutnie w wersji koncertowej."
+    },
+    {
+      "start": 6627.23,
+      "end": 6637.15,
+      "text": "28 października fani klasycznego heavy metalu stawią się jak jeden mąż do tegoż heavy metalu miejsca świętego,"
+    },
+    {
+      "start": 6637.15,
+      "end": 6644.69,
+      "text": "a więc do katowickiego spotka, by razem z grupą Halloween świętować ich 40-lecie."
+    },
+    {
+      "start": 6644.79,
+      "end": 6649.07,
+      "text": "40 lat na scenie. Niesamowita sprawa wszystkiego najlepszego."
+    },
+    {
+      "start": 6650.05,
+      "end": 6657.33,
+      "text": "Mili panowie z Halloween. Gościem specjalnym tejże imprezy będzie grupa Beast in Black."
+    },
+    {
+      "start": 6658.25,
+      "end": 6664.99,
+      "text": "W warszawskim wódu swoje czary i mary 30 października będzie odprawiać grupa Neptunian Maximalism."
+    },
+    {
+      "start": 6664.99,
+      "end": 6673.49,
+      "text": "I jeżeli ktoś tego nie widział, jeżeli nie poczuł na własnej skórze, serdecznie polecam."
+    },
+    {
+      "start": 6674.87,
+      "end": 6681.11,
+      "text": "Natomiast rzeczy znacznie bardziej brutalne będą się wyprawiać w toruńskim klubie NRD."
+    },
+    {
+      "start": 6681.21,
+      "end": 6689.03,
+      "text": "30 października w Koszalińskiej Plastelinie dzień później i 1 listopada w Katowicach w Piątym Domu."
+    },
+    {
+      "start": 6689.77,
+      "end": 6691.37,
+      "text": "To jest paczka trzech zespołów."
+    },
+    {
+      "start": 6692.05,
+      "end": 6697.23,
+      "text": "Artificial Brain, Suffering Hour oraz Devoid of Thought."
+    },
+    {
+      "start": 6698.37,
+      "end": 6700.23,
+      "text": "Trochę lżejsze klimaty."
+    },
+    {
+      "start": 6700.87,
+      "end": 6706.85,
+      "text": "31 października we Wrocławiu w A2, czyli Lacuna, Coil i Nonpoint."
+    },
+    {
+      "start": 6707.41,
+      "end": 6714.39,
+      "text": "Ale w tym samym mieście tego samego dnia fani ekstremy też nie będą musieli się nudzić."
+    },
+    {
+      "start": 6714.51,
+      "end": 6721.57,
+      "text": "Nie będą musieli iść na Halloweenowe potańcówki z muzyką, której nie cierpią,"
+    },
+    {
+      "start": 6721.57,
+      "end": 6731.57,
+      "text": "bo w Liverpoolu zagra dla nich Spider i przede wszystkim kultowa amerykańska profanatika."
+    },
+    {
+      "start": 6732.95,
+      "end": 6733.93,
+      "text": "Dobranoc Państwu."
+    },
+    {
+      "start": 6733.93,
+      "end": 6737.05,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 18,
+    "transcribedAudioSec": 3120.92,
+    "segmentCount": 944,
+    "characterCount": 39607
+  },
+  "sourceId": "2025-10-01-pazdziernikowa-scena-koncertowa"
+}

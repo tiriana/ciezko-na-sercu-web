@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "id": "5aeb0e24-aece-4c32-9e35-b79e34daac65",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T20:43:41.332Z",
+  "durationSec": 6863,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "las-trumien",
+      "label": "Las Trumien",
+      "type": "artist",
+      "source": "tracks",
+      "at": 747
+    },
+    {
+      "id": "martwa-aura",
+      "label": "Martwa Aura",
+      "type": "artist",
+      "source": "tracks",
+      "at": 13
+    },
+    {
+      "id": "mentor",
+      "label": "Mentor",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2727
+    },
+    {
+      "id": "opeth",
+      "label": "Opeth",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5003
+    },
+    {
+      "id": "profanatica",
+      "label": "Profanatica",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6736
+    },
+    {
+      "id": "stellar-blight",
+      "label": "Stellar Blight",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4267
+    },
+    {
+      "id": "testament",
+      "label": "Testament",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5957
+    },
+    {
+      "id": "the-materia",
+      "label": "The Materia",
+      "type": "artist",
+      "source": "tracks",
+      "at": 444
+    },
+    {
+      "id": "volbeat",
+      "label": "Volbeat",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5530
+    }
+  ],
+  "tracks": [
+    {
+      "start": 13,
+      "end": 444,
+      "durationSec": 326,
+      "artist": "Martwa Aura",
+      "title": "Lament Piaty",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 444,
+      "end": 747,
+      "durationSec": 260,
+      "artist": "The Materia",
+      "title": "Declaration of Hate",
+      "album": "We Against Us",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 747,
+      "end": 2727,
+      "durationSec": 369,
+      "artist": "Las Trumien",
+      "title": "Gwóźdź w głowie",
+      "album": "Breslau Spleen - EP",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2727,
+      "end": 3969,
+      "durationSec": 288,
+      "artist": "Mentor",
+      "title": "Night of the Satanic Werewolves",
+      "album": "Guts, Graves and Blasphemy",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3969,
+      "end": 4267,
+      "durationSec": 117,
+      "artist": "Las Trumien",
+      "title": "Trupie rozmówki",
+      "album": "Budowniczowie grozy",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4267,
+      "end": 5003,
+      "durationSec": 663,
+      "artist": "Stellar Blight",
+      "title": "Weaponized Compassion",
+      "album": "EVENTIDE: Synod of the Dying Stars",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5003,
+      "end": 5530,
+      "durationSec": 506,
+      "artist": "Opeth",
+      "title": "The Funeral Portrait",
+      "album": "Blackwater Park (20th Anniversary Edition)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5530,
+      "end": 5957,
+      "durationSec": 212,
+      "artist": "Volbeat",
+      "title": "In the Barn of the Goat Giving Birth to Satan’s Spawn in a Dying World of Doom",
+      "album": "God Of Angels Trust",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5957,
+      "end": 6736,
+      "durationSec": 637,
+      "artist": "Testament",
+      "title": "Shadow People",
+      "album": "Para Bellum",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6736,
+      "end": 6863,
+      "durationSec": 128,
+      "artist": "Profanatica",
+      "title": "Weeping in Heaven",
+      "album": "The Enemy of Virtue",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
