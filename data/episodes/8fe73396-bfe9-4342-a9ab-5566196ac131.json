@@ -2,10 +2,66 @@
   "version": 1,
   "id": "8fe73396-bfe9-4342-a9ab-5566196ac131",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T19:16:47.149Z",
+  "updatedAt": "2026-11-05T19:22:13.650Z",
   "durationSec": 6851,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek poświęcono zapowiedziom festiwali metalowych w Polsce i za granicą, z naciskiem na ich programy i charakter. Omówiono norweski Inferno Festival w Oslo (Mayhem, Enslaved, Old Man's Child) oraz Roadburn w Tilburgu z Acid Mothers Temple, Cult of Luna i Boris. W Polsce przedstawiono Mystic Festival w Gdańsku (Megadeth, Behemoth, Mastodon, Electric Wizard), nowy Summer Punch w Warszawie, ekumeniczny Hell's Bells w Szczecinie (Possessed, Vader, Cockney Rejects) i Summer Dying Loud w Aleksandrowie Łódzkim (Satyricon, Destruction). Za granicą wskazano duński Copenhell (Iron Maiden, Alice Cooper), czeski Obscene Extreme w Trutnowie i Brutal Assault w twierdzy Josefov (Body Count, Primus, Wardruna) oraz Midgardsblot w Norwegii z celebracją kultury wikingów. Wątek poboczny stanowiły większe festiwale wielogatunkowe — Poland Rock, Castle Party i OFF Festival z Death Heaven i Chat Pile. Całość zamyka refleksja o społecznej wartości festiwali jako spotkań wspólnoty dzielącej te same wartości.",
+  "topics": [
+    {
+      "start": 76,
+      "end": 189,
+      "label": "Inferno Festival w Oslo i norweska scena"
+    },
+    {
+      "start": 572,
+      "end": 740,
+      "label": "Roadburn w Tilburgu i odkrywanie nowych terytoriów"
+    },
+    {
+      "start": 1898,
+      "end": 2092,
+      "label": "Mystic Festival w Gdańsku i scena nowoorleańska"
+    },
+    {
+      "start": 2658,
+      "end": 2790,
+      "label": "Nowy festiwal Summer Punch w Warszawie"
+    },
+    {
+      "start": 2934,
+      "end": 3062,
+      "label": "Copenhell w Kopenhadze i młode zespoły skandynawskie"
+    },
+    {
+      "start": 3306,
+      "end": 3403,
+      "label": "Hell's Bells w Szczecinie: metal i punk"
+    },
+    {
+      "start": 3650,
+      "end": 3733,
+      "label": "Obscene Extreme w Trutnowie i klimat DIY"
+    },
+    {
+      "start": 4100,
+      "end": 4200,
+      "label": "Poland Rock, Castle Party i OFF Festival"
+    },
+    {
+      "start": 4445,
+      "end": 4634,
+      "label": "Brutal Assault w twierdzy Josefov"
+    },
+    {
+      "start": 5305,
+      "end": 5388,
+      "label": "Midgardsblot i kultura wikingów"
+    },
+    {
+      "start": 5631,
+      "end": 5841,
+      "label": "Summer Dying Loud w Aleksandrowie Łódzkim"
+    }
+  ],
   "tags": [
     {
       "id": "body-count",
@@ -88,7 +144,7 @@
   "tracks": [
     {
       "start": 189,
-      "end": 740,
+      "end": 572,
       "durationSec": 384,
       "artist": "Zatokrev",
       "title": "Pearl Eyes",
@@ -101,7 +157,7 @@
     },
     {
       "start": 740,
-      "end": 2092,
+      "end": 1898,
       "durationSec": 1159,
       "artist": "Boris",
       "title": "Absolutego",
@@ -114,7 +170,7 @@
     },
     {
       "start": 2092,
-      "end": 2790,
+      "end": 2658,
       "durationSec": 567,
       "artist": "Corrosion of Conformity",
       "title": "Vote With a Bullet",
@@ -127,7 +183,7 @@
     },
     {
       "start": 2790,
-      "end": 3062,
+      "end": 2934,
       "durationSec": 146,
       "artist": "Paleface Swiss & Stick to Your Guns",
       "title": "Instrument Of War",
@@ -140,7 +196,7 @@
     },
     {
       "start": 3062,
-      "end": 3403,
+      "end": 3306,
       "durationSec": 246,
       "artist": "Håndgemeng",
       "title": "Satanic Panic Attack",
@@ -153,7 +209,7 @@
     },
     {
       "start": 3403,
-      "end": 3733,
+      "end": 3650,
       "durationSec": 249,
       "artist": "Discharge",
       "title": "Protest And Survive",
@@ -166,7 +222,7 @@
     },
     {
       "start": 3733,
-      "end": 4200,
+      "end": 4100,
       "durationSec": 368,
       "artist": "Macabre",
       "title": "Jeffrey Dahmer Blues",
@@ -179,7 +235,7 @@
     },
     {
       "start": 4200,
-      "end": 4634,
+      "end": 4445,
       "durationSec": 246,
       "artist": "Chat Pile",
       "title": "The New World",
@@ -192,7 +248,7 @@
     },
     {
       "start": 4634,
-      "end": 5388,
+      "end": 5305,
       "durationSec": 673,
       "artist": "Body Count",
       "title": "World War",
@@ -205,7 +261,7 @@
     },
     {
       "start": 5388,
-      "end": 5841,
+      "end": 5631,
       "durationSec": 244,
       "artist": "Mawiza",
       "title": "Lhan Antü",

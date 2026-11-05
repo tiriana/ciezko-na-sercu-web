@@ -2,10 +2,71 @@
   "version": 1,
   "id": "34ebe1c0-0c0d-4713-8e1f-d2c14e3d673c",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T19:16:47.148Z",
+  "updatedAt": "2026-11-05T19:22:13.648Z",
   "durationSec": 6912,
-  "summary": "",
-  "topics": [],
+  "summary": "Spotkanie otwiera pożegnanie Phila Campbella, byłego gitarzysty Motörhead, zmarłego w wieku 64 lat, z utworami „Dog Faced Boy” i „Till the End”. Głównym gościem jest Mariusz „Demon” Dzwonek, lider sosnowieckiego Frontside, który opowiada o nazwie zaczerpniętej ze skateboardingu, początkach w hardcore punku, kolejnych taśmach demo wydawanych w wytwórniach punkowych oraz fascynacji szwedzkim death metalem, która popchnęła zespół w stronę metalu. Wiele miejsca poświęca przerwie w działalności, dojściu nowego wokalisty Molly'ego i albumowi „Nemezis”, wydanemu po najdłuższej przerwie wydawniczej w historii grupy nakładem Massacre Records. Tematem przewodnim płyty są wątpliwości wobec mediów, polityki i napływających informacji, a rozmowa zahacza też o przemiany związane ze sztuczną inteligencją i niepewność zawodową. Drugi wątek to wywiad z Mikiem Muirem z Suicidal Tendencies o kłopotach z nazwą zespołu, cenzurze w szkołach i sklepach muzycznych oraz o powodach, dla których grupa wciąż gra.",
+  "topics": [
+    {
+      "start": 221,
+      "end": 342,
+      "label": "Pożegnanie Phila Campbella z Motörhead"
+    },
+    {
+      "start": 913,
+      "end": 1491,
+      "label": "Początki Frontside i pseudonim Demon"
+    },
+    {
+      "start": 1763,
+      "end": 1923,
+      "label": "Pierwsze taśmy demo i wydawnictwa punkowe"
+    },
+    {
+      "start": 1923,
+      "end": 2074,
+      "label": "Zwrot Frontside w stronę metalu"
+    },
+    {
+      "start": 2074,
+      "end": 2352,
+      "label": "Nowy wokalista Molly i zmiany składu"
+    },
+    {
+      "start": 2599,
+      "end": 2892,
+      "label": "Album Nemezis po najdłuższej przerwie"
+    },
+    {
+      "start": 2892,
+      "end": 3287,
+      "label": "Kontrakt z Massacre Records i plany zagraniczne"
+    },
+    {
+      "start": 3708,
+      "end": 4021,
+      "label": "Wątpliwości jako temat płyty Nemezis"
+    },
+    {
+      "start": 4262,
+      "end": 4287,
+      "label": "Trasa koncertowa Frontside i supporty"
+    },
+    {
+      "start": 4505,
+      "end": 4765,
+      "label": "Kłopoty Suicidal Tendencies z nazwą zespołu"
+    },
+    {
+      "start": 5144,
+      "end": 5250,
+      "label": "Mike Muir o szkole i buntowniczości"
+    },
+    {
+      "start": 5523,
+      "end": 5874,
+      "label": "Dlaczego Suicidal Tendencies nadal gra"
+    }
+  ],
   "tags": [
     {
       "id": "drown-my-day",
@@ -46,7 +107,7 @@
   "tracks": [
     {
       "start": 28,
-      "end": 342,
+      "end": 221,
       "durationSec": 195,
       "artist": "Motörhead",
       "title": "Dog-Face Boy",
@@ -72,7 +133,7 @@
     },
     {
       "start": 645,
-      "end": 1491,
+      "end": 913,
       "durationSec": 255,
       "artist": "Quo Vadis",
       "title": "Three Little Sixes",
@@ -85,7 +146,7 @@
     },
     {
       "start": 1491,
-      "end": 2352,
+      "end": 1763,
       "durationSec": 273,
       "artist": "Frontside",
       "title": "1902",
@@ -98,7 +159,7 @@
     },
     {
       "start": 2352,
-      "end": 3287,
+      "end": 2599,
       "durationSec": 247,
       "artist": "Frontside",
       "title": "Omen",
@@ -111,7 +172,7 @@
     },
     {
       "start": 3287,
-      "end": 4021,
+      "end": 3708,
       "durationSec": 55,
       "artist": "Frontside",
       "title": "Wejdź Prosto w Nowy System",
@@ -124,7 +185,7 @@
     },
     {
       "start": 4021,
-      "end": 4287,
+      "end": 4262,
       "durationSec": 211,
       "artist": "Frontside",
       "title": "Chaosu Nastał Czas",
@@ -137,7 +198,7 @@
     },
     {
       "start": 4287,
-      "end": 4765,
+      "end": 4505,
       "durationSec": 219,
       "artist": "Drown My Day",
       "title": "Anhedonia",
@@ -150,7 +211,7 @@
     },
     {
       "start": 4765,
-      "end": 5250,
+      "end": 5144,
       "durationSec": 381,
       "artist": "Suicidal Tendencies",
       "title": "How Will I Laugh Tomorrow (Video Edit)",
@@ -163,7 +224,7 @@
     },
     {
       "start": 5250,
-      "end": 5874,
+      "end": 5523,
       "durationSec": 274,
       "artist": "Suicidal Tendencies",
       "title": "You Can't Bring Me Down",
