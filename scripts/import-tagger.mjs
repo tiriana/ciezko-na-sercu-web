@@ -44,6 +44,7 @@ const toContract = (episode, analyzedAt, id) => {
     version: 1,
     id,
     analyzedAt,
+    updatedAt: episode.updatedAt ?? undefined,
     durationSec: episode.durationSec == null ? null : Math.round(episode.durationSec),
     summary: episode.summary ?? null,
     topics: (episode.topics ?? []).map((topic) => ({

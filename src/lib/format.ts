@@ -100,3 +100,17 @@ export const formatRole = (role: string) => ROLE_LABELS[role] ?? role;
 
 export const formatEpisodeTitle = (title: string) =>
   title.replace(/godz\.\s*(\d{2})(\d{2})\b/, 'godz. $1:$2');
+
+/** Data i godzina ostatniej aktualizacji, w czasie warszawskim. */
+export const formatDateTime = (iso: string) => {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return '—';
+  return new Intl.DateTimeFormat('pl-PL', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Europe/Warsaw',
+  }).format(date);
+};

@@ -2,23 +2,24 @@
   "version": 1,
   "id": "b8e5be1b-6b99-4530-bd5d-83da623345d3",
   "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T12:52:30.085Z",
   "durationSec": 6886,
   "summary": "",
   "topics": [],
   "tags": [
-    {
-      "id": "bhp",
-      "label": ".bHP",
-      "type": "artist",
-      "source": "tracks",
-      "at": 1274
-    },
     {
       "id": "belzebong",
       "label": "Belzebong",
       "type": "artist",
       "source": "tracks",
       "at": 2602
+    },
+    {
+      "id": "bhp",
+      "label": "bHP",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1274
     },
     {
       "id": "buddah",
@@ -142,7 +143,7 @@
       "start": 1274,
       "end": 1602,
       "durationSec": 195,
-      "artist": ".bHP",
+      "artist": "bHP",
       "title": "ROADBLOCK",
       "album": "SNAP",
       "confidence": "średnia",

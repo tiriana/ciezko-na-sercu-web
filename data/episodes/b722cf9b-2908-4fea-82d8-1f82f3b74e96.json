@@ -2,17 +2,11 @@
   "version": 1,
   "id": "b722cf9b-2908-4fea-82d8-1f82f3b74e96",
   "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T12:52:30.095Z",
   "durationSec": 6827,
   "summary": "",
   "topics": [],
   "tags": [
-    {
-      "id": "golgatha",
-      "label": ":Golgatha:",
-      "type": "artist",
-      "source": "tracks",
-      "at": 5423
-    },
     {
       "id": "april-ethereal",
       "label": "April Ethereal",
@@ -47,6 +41,13 @@
       "type": "artist",
       "source": "tracks",
       "at": 2063
+    },
+    {
+      "id": "golgatha",
+      "label": "Golgatha",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5423
     },
     {
       "id": "iron-maiden",
@@ -293,7 +294,7 @@
       "start": 5423,
       "end": 5803,
       "durationSec": 287,
-      "artist": ":Golgatha:",
+      "artist": "Golgatha",
       "title": "Rite of Spring",
       "album": "All My Dead Friends",
       "confidence": "średnia",

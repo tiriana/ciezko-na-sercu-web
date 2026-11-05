@@ -7,6 +7,7 @@ import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
 import {
   formatClock,
   formatDate,
+  formatDateTime,
   formatEpisodeTitle,
   formatRole,
   formatWeekday,
@@ -442,6 +443,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
             <h2 id="provenance-title">Jak to powstało</h2>
             <dl class="kv">
               <div><dt>Opracowano</dt><dd>{formatDate(episode.analyzedAt)}</dd></div>
+              {episode.updatedAt && <div><dt>Ostatnia aktualizacja</dt><dd>{formatDateTime(episode.updatedAt)}</dd></div>}
               {speechSec && <div><dt>Mowa</dt><dd>{formatClock(speechSec)}</dd></div>}
               <div><dt>Utwory</dt><dd>{episode.tracks.length}</dd></div>
               <div><dt>Zapowiedzi w audycji</dt><dd>{episode.quotes.length}</dd></div>

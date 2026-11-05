@@ -41,6 +41,8 @@ export const episodeSchema = z.object({
   version: z.literal(1),
   id: z.string().min(1),
   analyzedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  /** Czas ostatniego przeliczenia opracowania (ISO 8601); brak w starszych plikach. */
+  updatedAt: z.string().optional(),
   durationSec: z.number().nullable(),
   summary: z.string().nullable(),
   topics: z.array(z.object({ start: z.number(), end: z.number().optional(), label: z.string() })),
