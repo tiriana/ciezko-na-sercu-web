@@ -1351,6 +1351,17 @@ a {
   padding-top: 16px;
 }
 
+.tracks__row--child td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 0;
+}
+
+/* Kreskę zostawiamy tylko po ostatnim wątku grupy, żeby oddzielała ją od następnej pozycji. */
+.tracks__row--child-last td {
+  border-bottom: 1px solid var(--line);
+}
+
 .tracks__row--child .tracks__idx {
   padding-left: 26px;
 }

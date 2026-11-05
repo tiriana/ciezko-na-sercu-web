@@ -320,9 +320,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                           <td class="tracks__time">{formatClock(block.start)}</td>
                           <td class="tracks__time">{formatSpan(block.start, block.end)}</td>
                         </tr>
-                        {block.topics.map((topic) => (
+                        {block.topics.map((topic, index) => (
                           <tr
-                            class="tracks__row--entry tracks__row--child"
+                            class:list={{
+                              'tracks__row--entry': true,
+                              'tracks__row--child': true,
+                              'tracks__row--child-last': index === block.topics.length - 1,
+                            }}
                             data-span-start={topic.start}
                             data-span-end={topic.end}
                             data-kind="topic"
