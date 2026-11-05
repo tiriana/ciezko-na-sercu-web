@@ -31,7 +31,7 @@ import Base from '../../layouts/Base.astro';
       <p id="search-status" class="search__status" aria-live="polite"></p>
     </form>
 
-    <ul id="search-results" class="search__results"></ul>
+    <ul id="search-results" class="episode-list"></ul>
   </main>
 
   <SiteFooter />
@@ -170,6 +170,7 @@ import Base from '../../layouts/Base.astro';
       status.textContent = found.length === 0 ? 'Brak wyników' : `${found.length} ${found.length === 1 ? 'odcinek' : 'odcinków'}`;
 
       for (const { entry, result } of found) {
+        // Markup jak w EpisodeList.astro: jedna lista wyników dla tagów i wyszukiwarki.
         const item = document.createElement('li');
         const link = document.createElement('a');
         link.href = `/odcinki/${entry.slug}/`;
@@ -182,7 +183,7 @@ import Base from '../../layouts/Base.astro';
         item.append(link);
         if (result.tags.length > 0) {
           const tags = document.createElement('p');
-          tags.className = 'search__tags';
+          tags.className = 'episode-list__tags';
           tags.textContent = result.tags.slice(0, 6).map((tag) => tag.label).join(' · ');
           item.append(tags);
         }

@@ -281,19 +281,14 @@ const applyDeepLink = () => {
 
   for (const row of tagged) row.classList.add('is-tagged');
   tagged[0].scrollIntoView({ block: 'center', behavior: 'instant' });
-  const start = Number(tagged[0].dataset.spanStart);
-  if (Number.isFinite(start)) {
-    audio.currentTime = start;
-    syncSpans();
-  }
+  // Wejście z tagu tylko pokazuje, gdzie to jest: bez ustawiania czasu i bez grania.
   const last = tagged.length % 10;
   const teen = tagged.length % 100;
   const plural =
     tagged.length === 1 ? 'wystąpienie' : last >= 2 && last <= 4 && (teen < 12 || teen > 14) ? 'wystąpienia' : 'wystąpień';
-  const clock = new Date(start * 1000).toISOString().slice(11, 19);
   const note = document.createElement('p');
   note.className = 'tag-deeplink';
-  note.textContent = `${tagged[0].querySelector('.tracks__artist')?.textContent?.trim() ?? 'Tag'} — ${tagged.length} ${plural}. Ustawiono ${clock}.`;
+  note.textContent = `${tagged[0].querySelector('.tracks__artist')?.textContent?.trim() ?? 'Tag'} — ${tagged.length} ${plural}. Odtwarzanie zaczyna się po kliknięciu w utwór.`;
   document.querySelector('.tracks')?.before(note);
 };
 

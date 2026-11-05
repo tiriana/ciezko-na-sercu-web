@@ -1,9 +1,10 @@
 ---
+import EpisodeList from '../../components/EpisodeList.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import { getEntries, getEpisodeFiles } from '../../lib/data';
-import { formatDate, formatEpisodeTitle } from '../../lib/format';
+import { formatEpisodeTitle } from '../../lib/format';
 import { TAG_TYPE_LABELS, buildTagIndex } from '../../lib/tags';
 
 export async function getStaticPaths() {
@@ -24,16 +25,10 @@ const typeLabel = TAG_TYPE_LABELS[tag.type];
     <h1 class="page-title">{tag.label}</h1>
     <p class="page-lead">{typeLabel} · {tag.episodes.length} {tag.episodes.length === 1 ? 'odcinek' : 'odcinków'}</p>
 
-    <ul class="tag-episodes">
-      {tag.episodes.map((episode) => (
-        <li>
-          <a href={`/odcinki/${episode.slug}/?tag=${tag.id}`}>
-            <time datetime={episode.date}>{formatDate(episode.date)}</time>
-            <span>{formatEpisodeTitle(episode.title)}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
+    <EpisodeList
+      tagId={tag.id}
+      items={tag.episodes.map((episode) => ({ slug: episode.slug, date: episode.date, title: formatEpisodeTitle(episode.title) }))}
+    />
   </main>
 
   <SiteFooter />

@@ -1,0 +1,36 @@
+---
+/**
+ * Wspólna lista wyników: strona tagu i wyszukiwarka pokazują to samo.
+ * Wyszukiwarka buduje identyczny markup po stronie klienta (src/pages/szukaj),
+ * więc klasy i style są jedne.
+ */
+import { formatDate } from '../lib/format';
+
+interface Item {
+  slug: string;
+  date: string;
+  title: string;
+  tags?: string[];
+}
+
+interface Props {
+  items: Item[];
+  /** Doklejane do linków, żeby po wejściu podświetlić wiersze tego tagu. */
+  tagId?: string;
+}
+
+const { items, tagId } = Astro.props;
+const suffix = tagId ? `?tag=${tagId}` : '';
+---
+
+<ul class="episode-list">
+  {items.map((item) => (
+    <li>
+      <a href={`/odcinki/${item.slug}/${suffix}`}>
+        <time datetime={item.date}>{formatDate(item.date)}</time>
+        <span>{item.title}</span>
+      </a>
+      {item.tags && item.tags.length > 0 && <p class="episode-list__tags">{item.tags.join(' · ')}</p>}
+    </li>
+  ))}
+</ul>
