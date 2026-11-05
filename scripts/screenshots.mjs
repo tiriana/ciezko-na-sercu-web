@@ -88,7 +88,16 @@ await player.first().scrollIntoViewIfNeeded();
 await page.waitForTimeout(300);
 
 const file = `${OUT}/${OS_LABEL}-${BROWSER}.png`;
-await player.first().screenshot({ path: file, animations: 'disabled', timeout: 60_000 });
+try {
+  await player.first().screenshot({ path: file, animations: 'disabled', timeout: 60_000 });
+} catch (error) {
+  // WebKit na Windowsie potrafi czekać na fonty w nieskończoność (document.fonts nigdy
+  // nie przechodzi w "loaded"), mimo że strona jest wyrenderowana. Wtedy robimy zrzut
+  // na fontach systemowych, żeby artefakt powstał i było widać różnicę.
+  console.warn(`⚠️  ${BROWSER}: zrzut z fontami zablokowanymi (${error.name})`);
+  await page.addStyleTag({ content: '* { font-family: Arial, sans-serif !important; }' });
+  await player.first().screenshot({ path: file, animations: 'disabled', timeout: 30_000 });
+}
 console.log(file);
 
 await browser.close();
