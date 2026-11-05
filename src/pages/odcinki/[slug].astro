@@ -4,6 +4,7 @@ import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import PersonName from '../../components/PersonName.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../../lib/data';
+import { tagId } from '../../lib/tags';
 import {
   formatClock,
   formatDate,
@@ -250,6 +251,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         data-span-start={block.start}
                         data-span-end={block.end}
                         data-kind="track"
+                        data-tag-id={block.track.artist ? tagId(block.track.artist) : undefined}
                       >
                         <td class="tracks__idx">
                           {entry.audioUrl ? (

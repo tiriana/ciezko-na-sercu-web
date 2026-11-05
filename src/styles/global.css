@@ -1600,3 +1600,16 @@ a {
 .tags-cloud {
   margin-bottom: 20px;
 }
+
+.tracks tr.is-tagged {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.tag-deeplink {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  font-size: 13.5px;
+}

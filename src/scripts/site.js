@@ -106,6 +106,34 @@ if (audio) {
   // W tle przeglądarka ogranicza timeupdate — po powrocie do karty stan dosynchronizowuje się tutaj.
   document.addEventListener('visibilitychange', sync);
 
+  // Deep link z tagu: ?tag=<id> przewija do pierwszego wiersza z tym tagiem,
+  // podświetla wszystkie wystąpienia i ustawia czas, ale nie odtwarza — dźwięk bez
+  // gestu użytkownika i tak zostałby zablokowany.
+  const tagParam = new URLSearchParams(location.search).get('tag');
+  if (tagParam) {
+    const tagged = [...document.querySelectorAll('[data-tag-id]')].filter(
+      (row) => row.dataset.tagId === tagParam
+    );
+    if (tagged.length > 0) {
+      for (const row of tagged) row.classList.add('is-tagged');
+      tagged[0].scrollIntoView({ block: 'center', behavior: 'instant' });
+      const start = Number(tagged[0].dataset.spanStart);
+      if (Number.isFinite(start)) {
+        audio.currentTime = start;
+        sync();
+      }
+      const note = document.createElement('p');
+      note.className = 'tag-deeplink';
+      const last = tagged.length % 10;
+      const teen = tagged.length % 100;
+      const plural =
+        tagged.length === 1 ? 'wystąpienie' : last >= 2 && last <= 4 && (teen < 12 || teen > 14) ? 'wystąpienia' : 'wystąpień';
+      const clock = new Date(start * 1000).toISOString().slice(11, 19);
+      note.textContent = `${tagged[0].querySelector('.tracks__artist')?.textContent?.trim() ?? 'Tag'} — ${tagged.length} ${plural}. Ustawiono ${clock}.`;
+      document.querySelector('.tracks')?.before(note);
+    }
+  }
+
   for (const button of document.querySelectorAll('[data-skip]')) {
     const delta = Number(button.dataset.skip);
     button.addEventListener('click', () => {

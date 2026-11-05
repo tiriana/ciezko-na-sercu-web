@@ -27,7 +27,7 @@ const typeLabel = TAG_TYPE_LABELS[tag.type];
     <ul class="tag-episodes">
       {tag.episodes.map((episode) => (
         <li>
-          <a href={`/odcinki/${episode.slug}/`}>
+          <a href={`/odcinki/${episode.slug}/?tag=${tag.id}`}>
             <time datetime={episode.date}>{formatDate(episode.date)}</time>
             <span>{formatEpisodeTitle(episode.title)}</span>
           </a>

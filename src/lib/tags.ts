@@ -1,5 +1,16 @@
 import type { Tag } from './schema';
 
+/** Musi odpowiadać tagId w taggerze (src/tag/tags.ts), inaczej deep link nie trafi. */
+export function tagId(label: string): string {
+  return label
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ł/gi, 'l')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 export interface TagIndexEntry {
   id: string;
   label: string;
