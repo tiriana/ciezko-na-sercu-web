@@ -36,6 +36,89 @@ const setPlayingIcon = (button, playing) => {
   button.setAttribute('aria-label', playing ? 'Wstrzymaj odtwarzanie' : button.dataset.label);
 };
 
+const formatTime = (seconds) => {
+  if (!Number.isFinite(seconds) || seconds < 0) return '0:00';
+  const total = Math.floor(seconds);
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const sec = String(total % 60).padStart(2, '0');
+  return h > 0 ? `${h}:${String(m).padStart(2, '0')}:${sec}` : `${m}:${sec}`;
+};
+
+const syncProgress = () => {
+  if (!audio) return;
+  const bar = document.querySelector('[data-audio-bar]');
+  const time = bar?.querySelector('[data-audio-time]');
+  const progress = bar?.querySelector('[data-progress]');
+  const fill = bar?.querySelector('[data-progress-fill]');
+  const toggle = bar?.querySelector('[data-play-toggle]');
+  const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+  const ratio = duration > 0 ? Math.min(1, audio.currentTime / duration) : 0;
+
+  if (time) time.textContent = `${formatTime(audio.currentTime)} / ${formatTime(duration)}`;
+  if (fill) fill.style.width = `${(ratio * 100).toFixed(2)}%`;
+  if (progress) progress.setAttribute('aria-valuenow', String(Math.round(ratio * 100)));
+  if (toggle) {
+    toggle.dataset.state = audio.paused ? 'paused' : 'playing';
+    toggle.setAttribute('aria-label', audio.paused ? 'Odtwórz' : 'Wstrzymaj odtwarzanie');
+  }
+};
+
+const seekToRatio = (ratio) => {
+  if (!audio || !Number.isFinite(audio.duration) || audio.duration <= 0) return;
+  audio.currentTime = Math.min(Math.max(0, ratio), 1) * audio.duration;
+  syncProgress();
+};
+
+const setupBar = () => {
+  const bar = document.querySelector('[data-audio-bar]');
+  if (!bar || bar.dataset.bound === 'true') return;
+  bar.dataset.bound = 'true';
+
+  bar.querySelector('[data-play-toggle]')?.addEventListener('click', () => {
+    if (!audio) return;
+    if (audio.paused) audio.play();
+    else audio.pause();
+  });
+
+  const progress = bar.querySelector('[data-progress]');
+  if (progress) {
+    const ratioFromEvent = (event) => {
+      const rect = progress.getBoundingClientRect();
+      return rect.width > 0 ? (event.clientX - rect.left) / rect.width : 0;
+    };
+    let dragging = false;
+    progress.addEventListener('pointerdown', (event) => {
+      dragging = true;
+      progress.setPointerCapture(event.pointerId);
+      seekToRatio(ratioFromEvent(event));
+    });
+    progress.addEventListener('pointermove', (event) => {
+      if (dragging) seekToRatio(ratioFromEvent(event));
+    });
+    progress.addEventListener('pointerup', () => {
+      dragging = false;
+    });
+    progress.addEventListener('keydown', (event) => {
+      if (!audio || !Number.isFinite(audio.duration)) return;
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        audio.currentTime = Math.min(audio.duration, audio.currentTime + 5);
+      } else if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        audio.currentTime = Math.max(0, audio.currentTime - 5);
+      }
+    });
+  }
+
+  if (audio) {
+    for (const event of ['timeupdate', 'durationchange', 'loadedmetadata', 'play', 'pause', 'seeked', 'ended']) {
+      audio.addEventListener(event, syncProgress);
+    }
+    syncProgress();
+  }
+};
+
 const setNowPlaying = (label) => {
   const now = document.querySelector('[data-audio-now]');
   if (!now || !label) return;
@@ -169,6 +252,7 @@ const initPage = () => {
   }));
 
   setupAudio();
+  setupBar();
   applyEpisodeAudio();
   initIndexFilter();
 

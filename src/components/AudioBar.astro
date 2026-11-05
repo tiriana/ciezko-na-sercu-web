@@ -3,32 +3,66 @@
  * Pasek odtwarzacza żyje w layoucie i jest trwały między nawigacjami
  * (transition:persist), więc dźwięk nie przerywa się przy zmianie strony.
  * Źródło ustawia strona odcinka przez <script id="audio-data">.
+ *
+ * Kontrolki są własne, a nie natywne: Chromium rysuje białe tło na białym pasku,
+ * a długość tytułu odcinka i nazwy utworu zmienia się przy każdym odcinku.
  */
 const note =
   'Nagranie pochodzi z publicznie dostępnych zasobów Polskiego Radia. Strona nie kopiuje go ani nie rozpowszechnia — tylko odsyła do oryginalnego pliku.';
 ---
 
 <div class="audio-bar" transition:persist="player" data-audio-bar hidden>
-  <p class="audio-bar__title">
-    <a data-audio-link href="/"><span data-audio-title></span></a>
-    <span class="audio-bar__now" data-audio-now hidden></span>
+  <div class="audio-bar__main">
+    <p class="audio-bar__title">
+      <a data-audio-link href="/"><span data-audio-title></span></a>
+      <span class="audio-bar__now" data-audio-now hidden></span>
+    </p>
+
+    <div class="audio-bar__controls">
+      <button class="audio-bar__toggle" type="button" data-play-toggle aria-label="Odtwórz">
+        <svg class="audio-bar__icon audio-bar__icon--play" viewBox="0 0 10 12" aria-hidden="true">
+          <path d="M0 0 10 6 0 12Z" fill="currentColor" />
+        </svg>
+        <svg class="audio-bar__icon audio-bar__icon--pause" viewBox="0 0 10 12" aria-hidden="true">
+          <rect x="0" y="0" width="3.5" height="12" fill="currentColor" />
+          <rect x="6.5" y="0" width="3.5" height="12" fill="currentColor" />
+        </svg>
+      </button>
+
+      <span class="audio-bar__time" data-audio-time>0:00 / 0:00</span>
+
+      <div
+        class="audio-bar__progress"
+        data-progress
+        role="slider"
+        tabindex="0"
+        aria-label="Postęp odtwarzania"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <div class="audio-bar__progress-fill" data-progress-fill></div>
+      </div>
+
+      <div class="audio-bar__skips" role="group" aria-label="Przewijanie">
+        <button class="skip" type="button" data-skip="-15" aria-label="Cofnij 15 sekund">−15</button>
+        <button class="skip" type="button" data-skip="-5" aria-label="Cofnij 5 sekund">−5</button>
+        <button class="skip" type="button" data-skip="5" aria-label="Przewiń 5 sekund">+5</button>
+        <button class="skip" type="button" data-skip="15" aria-label="Przewiń 15 sekund">+15</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="audio-bar__note" title={note}>
+    <span aria-hidden="true">*</span> Nagranie pochodzi z publicznie dostępnych zasobów Polskiego
+    Radia. Strona nie kopiuje go ani nie rozpowszechnia — tylko odsyła do oryginalnego pliku.
   </p>
+
   <audio
     id="episode-audio"
-    controls
     preload="none"
     controlslist="nodownload noplaybackrate"
     disablepictureinpicture
     disableRemotePlayback
   ></audio>
-  <div class="audio-bar__skips" role="group" aria-label="Przewijanie">
-    <button class="skip" type="button" data-skip="-15" aria-label="Cofnij 15 sekund">−15</button>
-    <button class="skip" type="button" data-skip="-5" aria-label="Cofnij 5 sekund">−5</button>
-    <button class="skip" type="button" data-skip="5" aria-label="Przewiń 5 sekund">+5</button>
-    <button class="skip" type="button" data-skip="15" aria-label="Przewiń 15 sekund">+15</button>
-  </div>
-  <p class="audio-bar__note" title={note}>
-    <span aria-hidden="true">*</span> Nagranie pochodzi z publicznie dostępnych zasobów Polskiego
-    Radia. Strona nie kopiuje go ani nie rozpowszechnia — tylko odsyła do oryginalnego pliku.
-  </p>
 </div>
