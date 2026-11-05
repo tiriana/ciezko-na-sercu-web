@@ -1,0 +1,1130 @@
+{
+  "version": 1,
+  "episodeId": "f23dc576-f68c-43b6-b522-ae15ed03e3e1",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 115259136,
+  "fileMtimeMs": 1789150624484.8442,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0.7400000000000002,
+      "end": 133.85
+    },
+    {
+      "index": 1,
+      "start": 368.96,
+      "end": 555.8
+    },
+    {
+      "index": 2,
+      "start": 861.16,
+      "end": 993.56
+    },
+    {
+      "index": 3,
+      "start": 1275.62,
+      "end": 1360.7
+    },
+    {
+      "index": 4,
+      "start": 1552.32,
+      "end": 1688
+    },
+    {
+      "index": 5,
+      "start": 2166.56,
+      "end": 2182.97
+    },
+    {
+      "index": 6,
+      "start": 2375.59,
+      "end": 2480.48
+    },
+    {
+      "index": 7,
+      "start": 2714.21,
+      "end": 2828.44
+    },
+    {
+      "index": 8,
+      "start": 3219.14,
+      "end": 3289.34
+    },
+    {
+      "index": 9,
+      "start": 3322.92,
+      "end": 3326.56
+    },
+    {
+      "index": 10,
+      "start": 3360.52,
+      "end": 3365.72
+    },
+    {
+      "index": 11,
+      "start": 3399.84,
+      "end": 3403.16
+    },
+    {
+      "index": 12,
+      "start": 3437.38,
+      "end": 3442.72
+    },
+    {
+      "index": 13,
+      "start": 3487.81,
+      "end": 3494.43
+    },
+    {
+      "index": 14,
+      "start": 3564.04,
+      "end": 3621.05
+    },
+    {
+      "index": 15,
+      "start": 3855.14,
+      "end": 3955.58
+    },
+    {
+      "index": 16,
+      "start": 4470.72,
+      "end": 4551.2
+    },
+    {
+      "index": 17,
+      "start": 4943.33,
+      "end": 5024.51
+    },
+    {
+      "index": 18,
+      "start": 5202.98,
+      "end": 5242.2
+    },
+    {
+      "index": 19,
+      "start": 5514.34,
+      "end": 5577.21
+    },
+    {
+      "index": 20,
+      "start": 5880.45,
+      "end": 5926.14
+    },
+    {
+      "index": 21,
+      "start": 6156.42,
+      "end": 6267.04
+    },
+    {
+      "index": 22,
+      "start": 6445.38,
+      "end": 6510.27
+    },
+    {
+      "index": 23,
+      "start": 6738.31,
+      "end": 6835.55
+    }
+  ],
+  "segments": [
+    {
+      "start": 1.64,
+      "end": 6.18,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 10.48,
+      "end": 12.64,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 14.04,
+      "end": 22.66,
+      "text": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht, prowadzący audycję Ciężko na sercu oraz Mariusz Owczarek, jej wydawca."
+    },
+    {
+      "start": 23.02,
+      "end": 33.9,
+      "text": "Wiosna przyszła. Poznaję to nie po przebiśniegach i przylaszczkach, tylko po tym, że za nami kolejna edycja konkursu Road to Mystic,"
+    },
+    {
+      "start": 34.48,
+      "end": 44.26,
+      "text": "dzięki której zespoły, które nie otrzymały zaproszenia od organizatorów, mogą trafić na sceny czerwcowego Mystic Festiwalu."
+    },
+    {
+      "start": 44.26,
+      "end": 55.12,
+      "text": "W tym roku przyszło prawie 400 zgłoszeń z całej Polski. Od debiutantów bez oficjalnych wydawnictw w dorobku po weteranów,"
+    },
+    {
+      "start": 55.5,
+      "end": 63.96,
+      "text": "których dorobek i kariera liczone są w dekadach i w kilkunastu wydawnictwach."
+    },
+    {
+      "start": 63.96,
+      "end": 72.9,
+      "text": "Konkurs już rozstrzygnięty, więc dziś z czystym sercem, bez narażania się na zarzuty faworyzowania kogokolwiek,"
+    },
+    {
+      "start": 73.44,
+      "end": 82.46,
+      "text": "mogę Wam przedstawić trochę zespołów, które znalazły się w półfinałowej pięćdziesiątce i zrobiły na mnie duże wrażenie."
+    },
+    {
+      "start": 83.12,
+      "end": 88.88,
+      "text": "Wybrałem w dodatku raczej takich artystów, poza chyba dwoma grupami z finałowej piątki,"
+    },
+    {
+      "start": 89.08,
+      "end": 96.04,
+      "text": "którzy jeszcze nie zaistnieli wciężko na sercu. Stąd nieobecność dziś kilku kapel, które są świetne,"
+    },
+    {
+      "start": 96.14,
+      "end": 100.36,
+      "text": "ale które już znacie, bo je tutaj grałem i grał na bandę."
+    },
+    {
+      "start": 100.52,
+      "end": 107.82,
+      "text": "28 marca w Gdańsku w klubie Drizzly Grizzly odbył się koncert finałowy imprezy."
+    },
+    {
+      "start": 108.44,
+      "end": 113.14,
+      "text": "Pięć grup, z których dwie otrzymały zaproszenie na festiwal."
+    },
+    {
+      "start": 113.14,
+      "end": 120.2,
+      "text": "Jedna dlatego, że tak zdecydowała publiczność, a drugą wybrali jurorzy."
+    },
+    {
+      "start": 120.28,
+      "end": 125.1,
+      "text": "Głosami publiczności po fantastycznym, bardzo profesjonalnym, bardzo brutalnym,"
+    },
+    {
+      "start": 125.2,
+      "end": 132.28,
+      "text": "kipiącym energią występie przeszedł zespół Unblessed Divine."
+    },
+    {
+      "start": 369.96,
+      "end": 379.14,
+      "text": "Unblessed Divine to zespół stosunkowo młody, ale założony przez doświadczonych muzyków."
+    },
+    {
+      "start": 380.08,
+      "end": 387.74,
+      "text": "Jeden z nich, Lee, grał przez jakiś czas w Melvolent Creation, Michał z kolei grał m.in. w Sinister."
+    },
+    {
+      "start": 387.96,
+      "end": 393.22,
+      "text": "Połączyli siły i zarazem połączyli elementy death metalu, który tu jest podstawą brzmienia,"
+    },
+    {
+      "start": 393.22,
+      "end": 400.1,
+      "text": "z wpływami black metalu, industrialu i paru innych gatunków i stylistyk."
+    },
+    {
+      "start": 400.84,
+      "end": 408.18,
+      "text": "We wrześniu 2020 roku zespół nagrał debiutancką epkę The Coming Darkness."
+    },
+    {
+      "start": 408.72,
+      "end": 419.44,
+      "text": "Natomiast w 2023 roku ukazał się ich debiutancki album Puzzle to Darkness nakładem wytwórni Massacre Records."
+    },
+    {
+      "start": 419.44,
+      "end": 428.48,
+      "text": "A więc duża sprawa. W ubiegłym roku Lee zrezygnował z grupy z powodów osobistych,"
+    },
+    {
+      "start": 428.56,
+      "end": 437.22,
+      "text": "więc Unblessed Divine ze składu międzynarodowego stał się zespołem już w pełni polskim, rezydującym w Trójmieście."
+    },
+    {
+      "start": 437.22,
+      "end": 447.18,
+      "text": "Ktoś mógłby powiedzieć, że grupa z takim doświadczeniem, z kontraktem być może nie powinna brać udziału w takim konkursie,"
+    },
+    {
+      "start": 447.28,
+      "end": 450.2,
+      "text": "ale nie. Regulamin tego nie zabrania."
+    },
+    {
+      "start": 450.32,
+      "end": 452.1,
+      "text": "To nie jest konkurs dla amatorów."
+    },
+    {
+      "start": 452.52,
+      "end": 455.86,
+      "text": "W tym sensie, że oczywiście amatorzy mogą brać w nim udział."
+    },
+    {
+      "start": 456,
+      "end": 460.5,
+      "text": "Nikt tutaj nie sprawdza wykształcenia, referencji, kontraktów itp. itd."
+    },
+    {
+      "start": 460.5,
+      "end": 468.8,
+      "text": "Ale chodzi o to, że zespoły, które zdobywają te główne nagrody, czyli występ na festiwalu,"
+    },
+    {
+      "start": 468.94,
+      "end": 473.36,
+      "text": "muszą tam sobie radzić w warunkach konkurencji z najlepszymi."
+    },
+    {
+      "start": 473.62,
+      "end": 475.82,
+      "text": "I nie ma tu punktów za pochodzenie."
+    },
+    {
+      "start": 475.98,
+      "end": 479.68,
+      "text": "Trzeba po prostu robić to dobrze."
+    },
+    {
+      "start": 480.14,
+      "end": 482.84,
+      "text": "Unblessed Divine robią to doskonale."
+    },
+    {
+      "start": 483.06,
+      "end": 490.38,
+      "text": "Drugim zespołem, który awansował po koncertowym finale w Gdańsku, jest grupa Extensa."
+    },
+    {
+      "start": 490.78,
+      "end": 492.54,
+      "text": "Zupełnie inna."
+    },
+    {
+      "start": 493.04,
+      "end": 498.08,
+      "text": "Instrumentalne trio, które wykonuje muzykę ciężką."
+    },
+    {
+      "start": 498.24,
+      "end": 501.12,
+      "text": "Sami nazywają to Psycho Heavy Noise."
+    },
+    {
+      "start": 502.02,
+      "end": 506.62,
+      "text": "Nie ma, jak słyszycie tutaj magicznego słowa metal."
+    },
+    {
+      "start": 506.62,
+      "end": 511.98,
+      "text": "I choć to jest bardzo ciężkie, rzeczywiście nie jest to w tradycyjny sposób metalowe."
+    },
+    {
+      "start": 512.7,
+      "end": 517.6,
+      "text": "Raczej są to dźwięki, które można usłyszeć na przykład na festiwalu Roadburn."
+    },
+    {
+      "start": 517.82,
+      "end": 528.78,
+      "text": "Transowe, wielowarstwowe, leniwie płynące, kulminujące do potężnych ścian dźwięku."
+    },
+    {
+      "start": 529.28,
+      "end": 532.92,
+      "text": "Znakomity zespół zrobił największe wrażenie na jurorach."
+    },
+    {
+      "start": 532.92,
+      "end": 538.02,
+      "text": "Ja już ich znałem wcześniej z płyty ubiegłorocznej Eco Mora."
+    },
+    {
+      "start": 538.26,
+      "end": 539.2,
+      "text": "Świetny album."
+    },
+    {
+      "start": 539.66,
+      "end": 543.64,
+      "text": "Jeden z najlepszych, moim zdaniem, wydanych w Polsce w 2025 roku."
+    },
+    {
+      "start": 543.74,
+      "end": 547.18,
+      "text": "Z tego bardzo szerokiego spektrum ciężkich brzmień."
+    },
+    {
+      "start": 547.6,
+      "end": 550.46,
+      "text": "Na żywo Extensy wcześniej nie widziałem."
+    },
+    {
+      "start": 551.12,
+      "end": 553.74,
+      "text": "No ale proszę Państwa, to jest świat."
+    },
+    {
+      "start": 553.74,
+      "end": 555.8,
+      "text": "Świat."
+    },
+    {
+      "start": 862.16,
+      "end": 882.54,
+      "text": "I'm Blessed Divine i Extensa zagrają na Mystic Festiwalu, to już pewne, natomiast jestem przekonany, że wiele z tych zespołów, które dzisiaj zaprezentuję w dalszej części Ciężko na sercu, to są zespoły, które zobaczymy prędzej czy później i na tym festiwalu i na wielu innych, bo to po prostu zespoły dobre."
+    },
+    {
+      "start": 882.94,
+      "end": 899.44,
+      "text": "Poziom tego finału koncertowego też był bardzo wyrównany, no i trudne zadanie było zarówno przed publicznością, jak i przed jurorami, żeby z tych bardzo różnych, ale świetnych grup wybrać tylko dwie, bo tylko dwa miejsca były."
+    },
+    {
+      "start": 899.44,
+      "end": 910.92,
+      "text": "Świetny koncert zagrała na przykład black metalowa grupa Xifisurg. To są muzycy z Trójmiasta też, daleko nie mieli."
+    },
+    {
+      "start": 910.92,
+      "end": 928.94,
+      "text": "To wściekły black metal, bliski tradycyjnemu norweskiemu graniu, ale temu wariantowi bardziej symfonicznemu z klawiszami, a więc historią typu ówczesne Dimmu Borgir."
+    },
+    {
+      "start": 928.94,
+      "end": 939.78,
+      "text": "Xifisurg wydał niedawno pełnoczasowy album 1096 i z niego utwór za chwilę usłyszymy."
+    },
+    {
+      "start": 939.88,
+      "end": 947,
+      "text": "Znałem też wcześniej te nagrania studyjne, ale muszę powiedzieć, że na żywo zespół zyskuje."
+    },
+    {
+      "start": 947,
+      "end": 952.94,
+      "text": "Black metal na żywo powinien być wściekły, dziki, nieprzewidywalny, niebezpieczny."
+    },
+    {
+      "start": 953.02,
+      "end": 965.22,
+      "text": "I tu przede wszystkim lider frontman zespołu robi naprawdę spore wrażenie, nie tylko za sprawą tego, jakie wydobywa ze swojego gardła dźwięki i co gra na gitarze,"
+    },
+    {
+      "start": 965.22,
+      "end": 977.26,
+      "text": "ale też za sprawą swojej scenicznej osobowości, tej kreacji, tych gestów, które wykonuje, które rzeczywiście robią wrażenie,"
+    },
+    {
+      "start": 977.26,
+      "end": 986.58,
+      "text": "a jednocześnie są nieprzesadzone, nie wpadają w groteskę, co w tym black metalowym teatrze jest zjawiskiem nierzadkim."
+    },
+    {
+      "start": 986.86,
+      "end": 991.12,
+      "text": "A więc Xifisurg po udanym finale na Road to Mystic."
+    },
+    {
+      "start": 993.06,
+      "end": 993.56,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1276.46,
+      "end": 1296.12,
+      "text": "Zupełnie inną muzykę i inną postawę zaprezentowała grupa Dead Dukes i Ficurk to mizantropia black metalowa, a Dead Dukes to upominanie się o przyjaźń, tolerancję, szacunek dla drugiego człowieka, upominanie się bardzo głośne,"
+    },
+    {
+      "start": 1296.12,
+      "end": 1314.5,
+      "text": "bo ten sextet operuje na przecięciu takich gatunków jak hardcore, deathcore, new metal, ale te dużo bardziej brutalne niż komercyjne rejony new metalu."
+    },
+    {
+      "start": 1314.5,
+      "end": 1330.44,
+      "text": "Na scenie mnóstwo energii, trochę chaosu, ale takiego nie tylko akceptowalnego, ale wręcz dobrze działającego na widownię, która zresztą, bo Dead Dukes miał niełatwe zadanie,"
+    },
+    {
+      "start": 1330.44,
+      "end": 1342.2,
+      "text": "oni zaczynali ledwie po piętnastej i widownia od razu reagowała. Świetna kapela, młoda, ale będzie z nich wielki pożytek."
+    },
+    {
+      "start": 1342.2,
+      "end": 1359.06,
+      "text": "Już kiedyś tu prezentowałem fragment ich epki, Cycle of Violence i dobre to było, więc dzisiaj cieszę się, że jest powód, by puścić Państwu jeszcze jedną piosenkę z tego materiału, Dead Dukes."
+    },
+    {
+      "start": 1360.44,
+      "end": 1360.7,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 1552.88,
+      "end": 1565.56,
+      "text": "Jak już mówiłem, w tym finale koncertowym Road to Mystic znalazły się zespoły skrajnie odmienne i przekonaliście się już o tym do tej pory."
+    },
+    {
+      "start": 1565.7,
+      "end": 1573.98,
+      "text": "I proszę o to kolejny, piąty, ostatni dowód na potwierdzenie mojej tezy, warszawski zespół Schema."
+    },
+    {
+      "start": 1573.98,
+      "end": 1585.28,
+      "text": "Schema to doom metal, jak muzycy sami mówią, chwycili za instrumenty, by przelać swoje troski w dźwięki."
+    },
+    {
+      "start": 1585.28,
+      "end": 1596.26,
+      "text": "I rzeczywiście bardzo to zatroskana, ponura, smutna i wolno tocząca się, a jednocześnie bardzo ciężka muzyka,"
+    },
+    {
+      "start": 1596.26,
+      "end": 1608.58,
+      "text": "nawiązująca do klasycznego doom metalu, tego jego oblicza z początku lat dziewięćdziesiątych, raczej z Wielkiej Brytanii niż Ameryki,"
+    },
+    {
+      "start": 1608.58,
+      "end": 1613.32,
+      "text": "a więc My Dime Bright, wczesna anatema, morze Cathedral."
+    },
+    {
+      "start": 1614.56,
+      "end": 1626.88,
+      "text": "Schema ma na swoim koncie album pierwsze zauroczenie i pracuje już nad kolejnym dużym materiałem,"
+    },
+    {
+      "start": 1627.92,
+      "end": 1634.02,
+      "text": "którego zapowiedzią jest singiel Wejdź w moje bramy i za chwilę go wysłuchamy."
+    },
+    {
+      "start": 1634.02,
+      "end": 1645.74,
+      "text": "Po koncercie podszedł do mnie w Gdańsku muzyk zespołu Schema, pogawędziliśmy chwilę i zaprosił mnie na imprezę,"
+    },
+    {
+      "start": 1645.74,
+      "end": 1653.74,
+      "text": "którą zespół wraz z przyjaciółmi organizuje, która cyklicznie odbywa się w Warszawie w grudniu."
+    },
+    {
+      "start": 1654.16,
+      "end": 1658.88,
+      "text": "Zaprosił więc z dużym wyprzedzeniem i dobrze, ja to zaproszenie też wam przekazuję,"
+    },
+    {
+      "start": 1659,
+      "end": 1663.78,
+      "text": "bo to impreza, która ciekawie się zapowiada."
+    },
+    {
+      "start": 1664.12,
+      "end": 1667.7,
+      "text": "Nigdy nie byłem i obiecuję poprawę."
+    },
+    {
+      "start": 1667.78,
+      "end": 1671.48,
+      "text": "December's Doom, to się nazywa, w nazwie jest wszystko."
+    },
+    {
+      "start": 1671.74,
+      "end": 1679.16,
+      "text": "Grudzień i Doom Metal i taki też jest i będzie program tego wydarzenia."
+    },
+    {
+      "start": 1679.34,
+      "end": 1683,
+      "text": "Szczegóły przedstawię pewnie wam za czas jakiś, kiedy już będą znane."
+    },
+    {
+      "start": 1683,
+      "end": 1685.82,
+      "text": "Póki co słuchamy schemy."
+    },
+    {
+      "start": 2166.56,
+      "end": 2182.98,
+      "text": "Jeśli ktoś Cię zobaczy, to tylko z daleka, po zmierzchu albo w oślepiającej poświacie."
+    },
+    {
+      "start": 2376.23,
+      "end": 2383.97,
+      "text": "Road to Mystic nie jest miejscem, konkursem wyłącznie dla zespołów metalowych, podobnie jak sam festiwal."
+    },
+    {
+      "start": 2384.57,
+      "end": 2393.67,
+      "text": "Oczywiście nie jest też tak, że wszystko może się tu zdarzyć, że może być i reggae, i rap, i poezja śpiewana."
+    },
+    {
+      "start": 2393.67,
+      "end": 2405.99,
+      "text": "Chociaż wspomniana i grana wcześniej schema prezentowała utwór ze słowami Agnieszki Osieckiej, więc poezja śpiewana w pewnym sensie tak."
+    },
+    {
+      "start": 2407.21,
+      "end": 2420.57,
+      "text": "Obecność w półfinałowej pięćdziesiątce takiego zespołu jak Lulu Suicide świadczy jednak o bardzo szerokich horyzontach tej imprezy i jej uczestników."
+    },
+    {
+      "start": 2420.57,
+      "end": 2431.89,
+      "text": "Lulu Suicide to poznańskie trio, w skład którego wchodzą Maja Beży, Bobek Bobkowski oraz Stachu Psie Serce."
+    },
+    {
+      "start": 2432.47,
+      "end": 2442.89,
+      "text": "Zaczęli od albumu domowej roboty zatytułowanego Hi, I'm Ready to Die, nagranego w 2022 roku."
+    },
+    {
+      "start": 2442.89,
+      "end": 2453.67,
+      "text": "Dwa lata później ich muzyka trafiła do gry Crime Sting Cleaner i posypały się zaproszenia od dużych festiwali z Jarocinem na czele."
+    },
+    {
+      "start": 2454.17,
+      "end": 2459.57,
+      "text": "Muzyka Lulu Suicide to alternatywa z elementami grunge'u i shoo-gaze'u."
+    },
+    {
+      "start": 2460.37,
+      "end": 2464.41,
+      "text": "Nie jest to ciężkie, choć czasem ciężkie bywa."
+    },
+    {
+      "start": 2464.41,
+      "end": 2465.81,
+      "text": "Za chwilę zresztą usłyszycie."
+    },
+    {
+      "start": 2466.27,
+      "end": 2473.83,
+      "text": "Proponuję wam piosenkę o Wilkołaku, żeby nie było, że to zupełnie nie pasuje do tej audycji."
+    },
+    {
+      "start": 2473.83,
+      "end": 2479.83,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2715.15,
+      "end": 2730.25,
+      "text": "Kolejny zespół uważni słuchacze trójki już na pewno znają z innych audycji, bo to też nie metal, choć muzyka mroczna i ponura, więc nie widzę powodu, by wam jej nie zaprezentować."
+    },
+    {
+      "start": 2730.87,
+      "end": 2736.57,
+      "text": "Tym bardziej, że, a to przecież jest najważniejsze, jest to muzyka dobra."
+    },
+    {
+      "start": 2736.81,
+      "end": 2745.31,
+      "text": "Dorian's Steaming Shadow to zespół postpunkowy urodzony w 2022 roku w Białymstoku."
+    },
+    {
+      "start": 2746.09,
+      "end": 2759.35,
+      "text": "Grupa inspiruje się rokiem gotyckim z lat 80., zimną falą i nową falą i owszem doskonale słychać te wszystkie Bauhausy czy stare The Cure,"
+    },
+    {
+      "start": 2759.35,
+      "end": 2768.63,
+      "text": "ale jest też miejsce na wpływy współczesnej alternatywy i tu Dorian's Steaming Shadow wymieniają jako punkty odniesienia"
+    },
+    {
+      "start": 2768.63,
+      "end": 2774.59,
+      "text": "m.in. Idols, A Place to Berry Strangers czy Fountains DC."
+    },
+    {
+      "start": 2775.55,
+      "end": 2782.63,
+      "text": "Te muzyczne cienie i lamenty służą w dodatku przekazywaniu treści, w których jest miejsce dla polityki,"
+    },
+    {
+      "start": 2782.63,
+      "end": 2791.91,
+      "text": "historii, literatury, zjawisk społecznych, osobistych doświadczeń, ale i szczypty surrealizmu."
+    },
+    {
+      "start": 2793.19,
+      "end": 2799.43,
+      "text": "Z takim założeniem, takim podejściem do muzyki sukces powinien być tylko kwestią czasu."
+    },
+    {
+      "start": 2799.55,
+      "end": 2804.09,
+      "text": "Zresztą Dorian's Steaming Shadow już radzi sobie nieźle."
+    },
+    {
+      "start": 2804.09,
+      "end": 2815.15,
+      "text": "W 2024 roku zespół wydał debiutancki album zatytułowany Frozen Nightmares nakładem wytwórni Antena Krzyku."
+    },
+    {
+      "start": 2816.07,
+      "end": 2826.87,
+      "text": "Obecnie grupa pracuje nad drugim dużym materiałem, może już zresztą nie pracuje, tylko skończyła tę pracę i szykuje się do wydania."
+    },
+    {
+      "start": 3220.14,
+      "end": 3228.22,
+      "text": "Zespół Give Up To Failure pochodzi z Wrocławia i gra dla nas od 2019 roku."
+    },
+    {
+      "start": 3229.04,
+      "end": 3235.9,
+      "text": "Do tej pory wydał dwie pełnowymiarowe płyty, Burden i Cocoon, obie nakładem wytwórni Requiem Records,"
+    },
+    {
+      "start": 3236.66,
+      "end": 3242.56,
+      "text": "świetnego, niezależnego labelu, choć rzadko zapuszczającego się w stronę ciężarów."
+    },
+    {
+      "start": 3242.56,
+      "end": 3252.04,
+      "text": "A Give Up To Failure to jednak nie są typowe ciężary. Ich brzmienie oscyluje pomiędzy shoegazem, post-rockiem i post-metalem,"
+    },
+    {
+      "start": 3252.12,
+      "end": 3260.46,
+      "text": "ale też dobarwione jest szczyptą takich gatunków jak post-punk, dream pop czy ambient."
+    },
+    {
+      "start": 3261.24,
+      "end": 3268.92,
+      "text": "W ubiegłym roku ukazało się ich ostatnie, jak dotąd wydawnictwo, epka Fragile Bodies."
+    },
+    {
+      "start": 3268.92,
+      "end": 3279.72,
+      "text": "W minionym roku Give Up To Failure wystąpili na żywo podczas pięćsetnej odsłony audycji Off Control,"
+    },
+    {
+      "start": 3279.94,
+      "end": 3287.74,
+      "text": "a więc znacie ich z Anteny Trójki, ale wciężko na sercu jeszcze ich nie było."
+    },
+    {
+      "start": 3287.74,
+      "end": 3289.34,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3322.92,
+      "end": 3326.56,
+      "text": "Look what it does to me"
+    },
+    {
+      "start": 3360.52,
+      "end": 3365.72,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 3399.84,
+      "end": 3403.16,
+      "text": "DZIĘKI ZA OBSERWACIE"
+    },
+    {
+      "start": 3437.38,
+      "end": 3442.72,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 3487.81,
+      "end": 3494.43,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 3564.68,
+      "end": 3570.88,
+      "text": "Dzisiaj wciężko na sercu przegląd tego, co w polskim ciężkim i mrocznym undergroundzie piszczy,"
+    },
+    {
+      "start": 3571.68,
+      "end": 3574.94,
+      "text": "inspirowany konkursem Road to Mystic."
+    },
+    {
+      "start": 3575.76,
+      "end": 3580.08,
+      "text": "O zespole Torsje wiem niewiele, poza tym, że mają mocną nazwę,"
+    },
+    {
+      "start": 3580.62,
+      "end": 3585.56,
+      "text": "raczej wykluczającą w przyszłości granie ballad o niespełnionej miłości,"
+    },
+    {
+      "start": 3585.76,
+      "end": 3590,
+      "text": "które mogłyby robić furorę na listach przebojów."
+    },
+    {
+      "start": 3590.46,
+      "end": 3595.88,
+      "text": "Torsje to trio z kalisza, elektronika, perkusja i wokal."
+    },
+    {
+      "start": 3596.38,
+      "end": 3602.18,
+      "text": "To poszukiwanie własnego języka między hałasem a melodią,"
+    },
+    {
+      "start": 3602.34,
+      "end": 3607.56,
+      "text": "gdzieś pomiędzy techno, punkiem, metalem i noizem."
+    },
+    {
+      "start": 3608.12,
+      "end": 3614.12,
+      "text": "Jak to sami ładnie ujmują, powstali w celach hobbystyczno-eskapistycznych."
+    },
+    {
+      "start": 3614.96,
+      "end": 3618.9,
+      "text": "No ale czy nie po to właśnie jest cała ta nasza muzyka?"
+    },
+    {
+      "start": 3620.46,
+      "end": 3621.02,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 3855.64,
+      "end": 3861.34,
+      "text": "Doskonałe, prawda? Nazywają się Torsje i koniecznie trzeba o nich pamiętać."
+    },
+    {
+      "start": 3862.12,
+      "end": 3869.6,
+      "text": "Torsje to obok Flower and Pines, jedno z najważniejszych dla mnie odkryć tegorocznej edycji Road to Mystic,"
+    },
+    {
+      "start": 3870.32,
+      "end": 3878.94,
+      "text": "odkryć dokonanych na własny użytek, bo ani jedni, ani drudzy nie dostali aż tylu głosów, by awansować do koncertowego finału,"
+    },
+    {
+      "start": 3879.04,
+      "end": 3884.3,
+      "text": "a co za tym idzie na festiwalu, przynajmniej w tym roku też nie wystąpią."
+    },
+    {
+      "start": 3884.3,
+      "end": 3891.02,
+      "text": "Flower and Pines to kwartet z Wrocławia, założony 4 lata temu."
+    },
+    {
+      "start": 3891.8,
+      "end": 3899.06,
+      "text": "Ich muzyka opiera się na, cytuję, minimalistycznych strukturach i eklektycznych aranżacjach,"
+    },
+    {
+      "start": 3899.5,
+      "end": 3907.04,
+      "text": "często budowanych dramaturgicznie, co nadaje koncertom zespołu wyraźnie teatralny charakter."
+    },
+    {
+      "start": 3907.04,
+      "end": 3915.48,
+      "text": "Nie jestem pewien, co to znaczy, ale jeśli to, że Flower and Pines tworzą dźwięki działające na wyobraźnię,"
+    },
+    {
+      "start": 3915.6,
+      "end": 3917.86,
+      "text": "to tak, potwierdzam jak najbardziej."
+    },
+    {
+      "start": 3918.6,
+      "end": 3931.18,
+      "text": "Jest w tej muzyce post-rock i post-metal, jest industrial ambient, ITP, ITD, są wpływy takich gigantów jak Swans czy Neurosis."
+    },
+    {
+      "start": 3931.78,
+      "end": 3940.9,
+      "text": "Będę się pilnie przyglądał dalszym krokom Flower and Pines, a Wam polecam po audycji, po audycji, nie teraz,"
+    },
+    {
+      "start": 3941.52,
+      "end": 3946.72,
+      "text": "odszukać w sieci ich sesję live z kościoła w Pisarzowicach."
+    },
+    {
+      "start": 3947.26,
+      "end": 3953.28,
+      "text": "Jestem pewien, że zaczniecie podzielać mój entuzjazm wobec tego zespołu."
+    },
+    {
+      "start": 3953.28,
+      "end": 3955.58,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4471.72,
+      "end": 4485.48,
+      "text": "Orphanage Named Earth to coś na kształt supergrupy, bo zespół współtworzą muzycy doświadczeni m.in. w takich składach jak Sanctus Juda, Elbanda czy Post Regiment."
+    },
+    {
+      "start": 4485.48,
+      "end": 4501.76,
+      "text": "Muzyka mocna, kipiąca od emocji, przesłanie gniewne i dające do myślenia, bo zespół bada tu, cytuje, życie pierwotne, struktury hierarchii społecznej oraz miejsce jednostki we współczesnym świecie."
+    },
+    {
+      "start": 4502.3,
+      "end": 4515.08,
+      "text": "Orphanage Named Earth grają muzykę łączącą postmetal, hardcore i punk z plemiennym transem, zasuwają na dwa zestawy perkusyjne, więc nie ma zmiłuj."
+    },
+    {
+      "start": 4515.48,
+      "end": 4522.66,
+      "text": "Koncertowali już m.in. u boku I Hate God i żałuję, że na takim koncercie nie byłem."
+    },
+    {
+      "start": 4523.36,
+      "end": 4544.3,
+      "text": "Zespół wydał do tej pory trzy płyty, ostatnia z nich ubiegłoroczna zatytułowana Slaves and Kings jest znakomita, polecam, ale że składa się z dwóch numerów, które mają po niemal 20 minut, zaprezentuję dzisiaj piosenkę nieco wcześniejszą ze splitu z Death Throne."
+    },
+    {
+      "start": 4545.04,
+      "end": 4548.6,
+      "text": "Piosenkę o ogniu płonącym w sercu."
+    },
+    {
+      "start": 4548.6,
+      "end": 4550.6,
+      "text": "Piosenkę o ogniu płonącym w sercu."
+    },
+    {
+      "start": 4550.6,
+      "end": 4551.2,
+      "text": "Piosenkę o ogniu płonącym w sercu."
+    },
+    {
+      "start": 4943.83,
+      "end": 4951.95,
+      "text": "To był Orphanage Named Earth z utworem Fire in My Heart, a my dorzucamy do pieca."
+    },
+    {
+      "start": 4952.51,
+      "end": 4961.89,
+      "text": "Pora na rock'n'rolla. The Electric Gospel jest kwintetem z Warszawy z korzeniami sięgającymi stołecznej sceny punk rockowej."
+    },
+    {
+      "start": 4962.73,
+      "end": 4966.53,
+      "text": "Muzyka The Electric Gospel nie ma jednak z punkiem wiele wspólnego."
+    },
+    {
+      "start": 4966.53,
+      "end": 4981.53,
+      "text": "To raczej hołd dla klasycznego rock'n'rollowego brzmienia w stylu, jak wskazuje sam zespół Toma Petiego i Heartbreakers, The Helicopters, Black Krauss czy Status Quo."
+    },
+    {
+      "start": 4981.69,
+      "end": 4989.83,
+      "text": "Ja do tej listy dodałbym jeszcze na przykład The Cult, ale sami za chwilę sprawdzicie czy słusznie."
+    },
+    {
+      "start": 4989.83,
+      "end": 5003.75,
+      "text": "Jak twierdzą The Electric Gospel, ich klasyczne rock'owe brzmienie oraz chwytliwe refreny mają szansę równie dobrze wypaść zarówno w lokalnym barze, jak i na stadionie."
+    },
+    {
+      "start": 5004.49,
+      "end": 5010.43,
+      "text": "Pewnie mają rację, więc jak tylko pojawią się w barze nieopodal, wybiorę się na koncert."
+    },
+    {
+      "start": 5010.43,
+      "end": 5021.39,
+      "text": "I oczywiście życzę stadionów, chociaż po niedawnym meczu Szwecja-Polska wolałbym, żeby mi nikt o stadionach nie przypominał."
+    },
+    {
+      "start": 5021.39,
+      "end": 5024.51,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5203.98,
+      "end": 5223.76,
+      "text": "Rzeszowski SARS gra już od dobrych paru lat, konkretnie od 2018 roku i wykształcił w tym czasie dojrzałe pancerne brzmienie, które z braku lepszych pomysłów można nazwać defkorowym, ale w tej muzyce słychać też trochę innych wpływów."
+    },
+    {
+      "start": 5223.76,
+      "end": 5240.24,
+      "text": "W dorobku SARS mają epkę Through Reality oraz album Synthetic Domination i warto śledzić ich dalszy rozwój, a na potwierdzenie mych słów SARS walnie pięścią w stół."
+    },
+    {
+      "start": 5240.24,
+      "end": 5242.2,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5514.34,
+      "end": 5532.88,
+      "text": "Białostocka grupa Lucille, w ogóle jak słyszycie dzisiaj dużo dobrego dzieje się na Podlasiu i w ogóle na wschodzie Polski, bardzo mnie to cieszy, a więc Lucille przedstawia się jako świeża krew na krajowej scenie thrash metalowej."
+    },
+    {
+      "start": 5532.88,
+      "end": 5553.9,
+      "text": "Grupa założona przez Ramona i Eugenia w 2021 roku wypuściła epkę Too Proud to Beg for Mercy, natomiast pełnoczasowy album Dawn of Destruction wydany został w ubiegłym roku."
+    },
+    {
+      "start": 5554.36,
+      "end": 5574.74,
+      "text": "Nakładem niemieckiej wytwórni Dine Victims Production i Lucille chyba są tam na właściwym miejscu, bo jak sami przyznają, inspirują się nie tylko amerykańskim brzmieniem, ale także tełtońską stalą na wzór Kreatora, Destruction i Exhumer i doskonale to słychać."
+    },
+    {
+      "start": 5881.45,
+      "end": 5887.87,
+      "text": "Leprozorium to kolonia trendowatych oraz zespół z Wrocławia."
+    },
+    {
+      "start": 5888.73,
+      "end": 5890.25,
+      "text": "In lepros we trust."
+    },
+    {
+      "start": 5890.99,
+      "end": 5897.99,
+      "text": "Takim hasłem posługują się muzycy grupy grającej death, thrash, metal,"
+    },
+    {
+      "start": 5898.57,
+      "end": 5908.41,
+      "text": "chociaż też wybiegający czy zaglądający po inspiracje do innych gatunków, nawet do grindu."
+    },
+    {
+      "start": 5908.41,
+      "end": 5918.75,
+      "text": "W 2024 roku wydali epkę Skaza Ludzkości i jest to materiał na tyle ciekawy,"
+    },
+    {
+      "start": 5918.95,
+      "end": 5924.07,
+      "text": "że zapewnił im koncerty m.in. u boku Dark Angel."
+    },
+    {
+      "start": 6157,
+      "end": 6165.14,
+      "text": "Kiedy zespół nazywa się Warsaw, to oczywiście można się domyślać skąd pochodzi."
+    },
+    {
+      "start": 6165.94,
+      "end": 6172.28,
+      "text": "Grupa powstała w 2008 roku, a więc już chwilę temu w Warszawie."
+    },
+    {
+      "start": 6173.3,
+      "end": 6181.78,
+      "text": "Muzycy, którzy wchodzą w jej skład, interesują się przede wszystkim graniem szybkim, technicznym."
+    },
+    {
+      "start": 6181.78,
+      "end": 6192.52,
+      "text": "Przede wszystkim thrash metalowym, ale z wyraźnym death metalowym, bardziej ekstremalnym doładowaniem."
+    },
+    {
+      "start": 6193.24,
+      "end": 6204.54,
+      "text": "Grupa Warsaw zaczęła od dwóch epik i wydanego własnym sumptem debiutanckiego albumu Nuclear Nightmare."
+    },
+    {
+      "start": 6204.54,
+      "end": 6217.94,
+      "text": "Później była kolejna epka zatytułowana Blood Honor Vendetta i jeszcze jeden duży album wydany w 2017 roku zatytułowany The Manifest."
+    },
+    {
+      "start": 6218.58,
+      "end": 6229.54,
+      "text": "Roszady personalne nieco powstrzymywały Warsaw przed zataczaniem szerszych kręgów na rodzimej i nie tylko scenie."
+    },
+    {
+      "start": 6229.54,
+      "end": 6240.28,
+      "text": "Ale problemy chyba już za nimi, bo grupa obecnie promuje nową epkę Blood for God i jej fragment za chwilę usłyszymy."
+    },
+    {
+      "start": 6240.62,
+      "end": 6250.86,
+      "text": "Premiera tego materiału już niedługo, a grupa zapowiada już kolejny trzeci album pod roboczym tytułem The Revolution."
+    },
+    {
+      "start": 6251.6,
+      "end": 6265.46,
+      "text": "Zobaczymy, czy będzie to rewolucja w brzmieniu tego zespołu, ale ja na pewno dalsze kroki Warsaw będę śledził i będę Was o tym oczywiście na bieżąco informował."
+    },
+    {
+      "start": 6445.38,
+      "end": 6462.54,
+      "text": "Mikroprotokol to kolejny nowy skład założony przez doświadczonych muzyków, muzyków, których mogliście wcześniej, na pewno słyszeliście, usłyszeć w takich grupach jak Sphere Seward Dwellers czy Alastor."
+    },
+    {
+      "start": 6462.84,
+      "end": 6481.22,
+      "text": "Razem postanowili założyć kapele grającą Deathgrind wychodząc z założenia, że na polskiej scenie bogatej w bardzo różne odmiany metalu akurat Deathgrindu zbyt dużo nie ma."
+    },
+    {
+      "start": 6481.22,
+      "end": 6499.16,
+      "text": "Nie wiem czy to prawda, ale zarazem muszę powiedzieć, że Deathgrindu nigdy za dużo, więc witam Nekroprotokol i na tej naszej ojczystej scenie i w mojej audycji Chlebem i Solom."
+    },
+    {
+      "start": 6739.21,
+      "end": 6759.31,
+      "text": "Zanim zaprezentuję kompozycję kończącą dzisiejsze wydanie Ciężko na sercu, chciałbym przekazać wyrazy szacunku wszystkim artystom, którzy zgłosili w tym roku swoje nagrania do Road to Mystic i którzy zgłaszają je do podobnych konkursów związanych z innymi festiwalami."
+    },
+    {
+      "start": 6759.31,
+      "end": 6784.03,
+      "text": "Jest tego już niemało i dobrze, bo można się pokazać. Dzięki Wam i dzięki tej aktywności mamy niezbite dowody na to, że polska scena metalowa, okołometalowa, mroczna, ciężka, jak zwał, tak zwał, nie tylko obecnie jest w znakomitej formie, ale też, że czeka ją wspaniała przyszłość."
+    },
+    {
+      "start": 6784.31,
+      "end": 6798.35,
+      "text": "Życzę sukcesów, życzę wytrwałości przede wszystkim. Liczę na to, że jeszcze nie raz się spotkamy, a przynajmniej, że ja spotkam się jeszcze nie raz z Waszą muzyką."
+    },
+    {
+      "start": 6799.49,
+      "end": 6813.73,
+      "text": "Na koniec grupa Sunsucker. Dobra na pożegnanie. Jak sami mówią, to nie muzyka, to rytuał. I chyba coś jest na rzeczy."
+    },
+    {
+      "start": 6814.61,
+      "end": 6829.71,
+      "text": "Białostocki Sunsucker powstały niedawno, bo w 2024 roku porusza się w eterycznych rejonach postmetalu, postgotyku, prog rocka i stoner rocka."
+    },
+    {
+      "start": 6830.51,
+      "end": 6834.17,
+      "text": "Wśród cieni i mgieł. Dobranoc Państwu."
+    }
+  ],
+  "stats": {
+    "windowCount": 24,
+    "transcribedAudioSec": 1742.6,
+    "segmentCount": 198,
+    "characterCount": 18334
+  },
+  "sourceId": "2026-04-08-polfinalowe-wybory-mystic-festivalu"
+}
