@@ -272,10 +272,20 @@ const applyEpisodeAudio = () => {
   }
 };
 
+const clearDeepLink = (note) => {
+  for (const row of document.querySelectorAll('.is-tagged')) row.classList.remove('is-tagged');
+  note?.remove();
+  // Adres bez ?tag=, żeby odświeżenie nie zaznaczało ponownie.
+  history.replaceState(null, '', location.pathname);
+};
+
 const applyDeepLink = () => {
   if (!audio) return;
   const tagParam = new URLSearchParams(location.search).get('tag');
   if (!tagParam) return;
+  // astro:page-load odpala się też przy pierwszym wejściu, więc bez tej straży
+  // komunikat pojawiał się dwa razy.
+  if (document.querySelector('.tag-deeplink')) return;
   const tagged = [...document.querySelectorAll('[data-tag-id]')].filter((row) => row.dataset.tagId === tagParam);
   if (tagged.length === 0) return;
 
@@ -288,7 +298,15 @@ const applyDeepLink = () => {
     tagged.length === 1 ? 'wystąpienie' : last >= 2 && last <= 4 && (teen < 12 || teen > 14) ? 'wystąpienia' : 'wystąpień';
   const note = document.createElement('p');
   note.className = 'tag-deeplink';
-  note.textContent = `${tagged[0].querySelector('.tracks__artist')?.textContent?.trim() ?? 'Tag'} — ${tagged.length} ${plural}. Odtwarzanie zaczyna się po kliknięciu w utwór.`;
+  const label = document.createElement('span');
+  label.textContent = `${tagged[0].querySelector('.tracks__artist')?.textContent?.trim() ?? 'Tag'} — ${tagged.length} ${plural}. Odtwarzanie zaczyna się po kliknięciu w utwór.`;
+  const close = document.createElement('button');
+  close.type = 'button';
+  close.className = 'tag-deeplink__close';
+  close.setAttribute('aria-label', 'Odznacz podświetlone wiersze');
+  close.textContent = '×';
+  close.addEventListener('click', () => clearDeepLink(note));
+  note.append(label, close);
   document.querySelector('.tracks')?.before(note);
 };
 

@@ -1570,6 +1570,17 @@ a {
   font-size: 13.5px;
 }
 
+/* Krótkie strony też zajmują całą wysokość: stopka i player siedzą na dole. */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 /* Pasek odtwarzacza jest w layoucie (transition:persist), więc przykleja się do dołu.
    Układ jak w playerze Polskiego Radia: metadane, transport, oś czasu, głośność. */
 
@@ -1796,4 +1807,25 @@ a {
   .audio-bar__volume input {
     width: 56px;
   }
+}
+
+.tag-deeplink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tag-deeplink__close {
+  padding: 0 4px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.tag-deeplink__close:hover {
+  color: var(--text);
 }
