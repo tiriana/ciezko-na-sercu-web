@@ -2,10 +2,71 @@
   "version": 1,
   "id": "21cfd15d-e6bb-49d8-a00e-c0f854d0fdc2",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T21:31:29.323Z",
+  "updatedAt": "2026-11-05T23:30:08.937Z",
   "durationSec": 6889,
-  "summary": "",
-  "topics": [],
+  "summary": "Styczniowy przegląd nowości zdominowały dwa głośne wydawnictwa: pożegnalny, siedemnasty album Megadeth oraz szesnasta płyta Kreator zatytułowana Crushers of the World. Wśród premier deathmetalowych zaprezentowano Mountains of Madness szwajcarskiego Total Annihilation, Icon Polaków z Defaced, debiut Oraculum Hebris Divina, Eon of Obscenity Teksańczyków ze Stabbing oraz Metamorphosis rzeszowskiego Banisher. Zabrzmiały też nowe materiały Kasket, Excavated Graves i Smoke Rides, a obok nich inspirowany mongolskim śpiewem alikwotowym Human Hearts grupy U-High i deathcore'owy Endless z Las Vegas od Of Sulfur. Dalej od metalu przedstawiono Neverland Norwegów z Ulver, czwarty album włoskiej Maty oraz płytę Guild the Lily z Filadelfii. Na koniec dwa ulubione albumy miesiąca: jazzowy Ferum Sidereum włoskiego Czu i debiut Buck and Grillen z muzykami Refused.",
+  "topics": [
+    {
+      "start": 153,
+      "end": 217,
+      "label": "PaleFest Suisse i EP The Wilted o bezsenności"
+    },
+    {
+      "start": 217,
+      "end": 289,
+      "label": "Crystal Lake i metalcore na The Weight of Sound"
+    },
+    {
+      "start": 429,
+      "end": 543,
+      "label": "Megadeth: pożegnalny album i zdrowie Dave'a Mustaine'a"
+    },
+    {
+      "start": 733,
+      "end": 828,
+      "label": "Kreator i szesnasta płyta Crushers of the World"
+    },
+    {
+      "start": 1062,
+      "end": 1103,
+      "label": "Total Annihilation i deathmetalowe Mountains of Madness"
+    },
+    {
+      "start": 1365,
+      "end": 1404,
+      "label": "Defaced i Icon o autorytaryzmie oraz manipulacji"
+    },
+    {
+      "start": 2291,
+      "end": 2369,
+      "label": "Stabbing i Eon of Obscenity z żeńskim growlem"
+    },
+    {
+      "start": 3331,
+      "end": 3420,
+      "label": "U-High i Human Hearts z mongolskim śpiewem alikwotowym"
+    },
+    {
+      "start": 3860,
+      "end": 3913,
+      "label": "Of Sulfur i deathcore'owy album Endless z Las Vegas"
+    },
+    {
+      "start": 4446,
+      "end": 4516,
+      "label": "Ulver i współczesny, miejski album Neverland"
+    },
+    {
+      "start": 5766,
+      "end": 5811,
+      "label": "Czu i epicki jazz na Ferum Sidereum"
+    },
+    {
+      "start": 6243,
+      "end": 6889,
+      "label": "Buck and Grillen: jazz, noise rock i manifest antyfaszystowski"
+    }
+  ],
   "tags": [
     {
       "id": "banisher",
@@ -151,7 +212,7 @@
   "tracks": [
     {
       "start": 52,
-      "end": 289,
+      "end": 153,
       "durationSec": 73,
       "artist": "Paleface Swiss",
       "title": "Let Me Sleep",
@@ -164,7 +225,7 @@
     },
     {
       "start": 289,
-      "end": 543,
+      "end": 429,
       "durationSec": 131,
       "artist": "Crystal Lake",
       "title": "Neversleep (feat. Myke Terry)",
@@ -177,7 +238,7 @@
     },
     {
       "start": 543,
-      "end": 828,
+      "end": 733,
       "durationSec": 180,
       "artist": "Megadeth",
       "title": "I Don't Care",
@@ -190,7 +251,7 @@
     },
     {
       "start": 828,
-      "end": 1103,
+      "end": 1062,
       "durationSec": 208,
       "artist": "Kreator",
       "title": "Satanic Anarchy",
@@ -203,7 +264,7 @@
     },
     {
       "start": 1103,
-      "end": 1404,
+      "end": 1365,
       "durationSec": 227,
       "artist": "Total Annihilation",
       "title": "Age of Mental Suicide",
@@ -242,7 +303,7 @@
     },
     {
       "start": 2002,
-      "end": 2369,
+      "end": 2291,
       "durationSec": 290,
       "artist": "CaSkEt",
       "title": "Hammer, Knife, Spade",
@@ -281,7 +342,7 @@
     },
     {
       "start": 3066,
-      "end": 3420,
+      "end": 3331,
       "durationSec": 266,
       "artist": "Smoke Rites",
       "title": "Nothing Never",
@@ -307,7 +368,7 @@
     },
     {
       "start": 3691,
-      "end": 3913,
+      "end": 3860,
       "durationSec": 171,
       "artist": "Vreid",
       "title": "Kraken (From the Official Motion Picture Soundtrack \"Kraken\")",
@@ -333,7 +394,7 @@
     },
     {
       "start": 4333,
-      "end": 4516,
+      "end": 4446,
       "durationSec": 115,
       "artist": "Lionheart",
       "title": "Bulletproof",
@@ -385,7 +446,7 @@
     },
     {
       "start": 5370,
-      "end": 5811,
+      "end": 5766,
       "durationSec": 388,
       "artist": "The Hirsch Effekt",
       "title": "Das Nachsehen",
@@ -398,7 +459,7 @@
     },
     {
       "start": 5811,
-      "end": 6889,
+      "end": 6243,
       "durationSec": 433,
       "artist": "Zu",
       "title": "Golgotha",

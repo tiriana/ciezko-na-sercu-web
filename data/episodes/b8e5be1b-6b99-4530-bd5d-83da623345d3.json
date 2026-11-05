@@ -2,11 +2,69 @@
   "version": 1,
   "id": "b8e5be1b-6b99-4530-bd5d-83da623345d3",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T21:31:29.321Z",
+  "updatedAt": "2026-11-05T23:30:08.936Z",
   "durationSec": 6886,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja prezentuje najnowsze polskie wydawnictwa z kręgu ekstremalnego i alternatywnego metalu, zaczynając od cassette‑owej kolekcji Extreme Speed Violence, przez debiuty Odur i Def Kneel, a następnie omawiając nową płytę Pure Bedlam oraz solowy projekt Roba Bandita. W dalszej części prowadzący przybliża nowy polski nurt New Metal na przykładzie zespołu BHP oraz omawia projekty niemetalowe, takie jak Hier, Popsysze i Belzebong, podkreślając ich różnorodność i potencjał. Wszystkie prezentowane utwory pochodzą od polskich artystów, a program łączy surowe brzmienia z eksperymentalnymi klimatami. W audycji omówiono najnowsze wydawnictwa polskiej sceny metalowej, zaczynając od albumu Belzebong „The End Is High”. Następnie przedstawiono death‑metalowe pozycje Mortis Day „The Bringers of Death” oraz Thy Disease „United We Fall”. Kolejnym punktem była prezentacja projektu Budda i ich debiutu „Amiotrophy”. W dalszej części prowadzący przybliżył czarną metalową scenę, wymieniając m.in. Actum Infernis, Temple of Decay, Konig Reichsall, Wstręt i Udrękę, podkreślając ich wydawnicze działania i charakterystykę muzyczną. Ostatni segment audycji poświęcony jest norweskiemu kwartetowi Rides of Regress. Prowadzący przybliża ich dotychczasową twórczość, wspominając debiutancką płytę Dust. Zapowiedziany zostaje najnowszy singiel zespołu zatytułowany Nie módl się za nami, który charakteryzuje się ciężkim brzmieniem doom metalu i black metalu.",
+  "topics": [
+    {
+      "start": 104,
+      "end": 145,
+      "label": "Wprowadzenie i opis cassette‑owego projektu Extreme Speed Violence"
+    },
+    {
+      "start": 145,
+      "end": 168,
+      "label": "Prezentacja zespołu Rides of Regress"
+    },
+    {
+      "start": 229,
+      "end": 296,
+      "label": "Debiutancka EPka Odur – Fetor Hepaticus i utwór La La, La La, La La"
+    },
+    {
+      "start": 421,
+      "end": 478,
+      "label": "Nowa warszawska kapela Def Kneel i ich EPka Def Kneel"
+    },
+    {
+      "start": 581,
+      "end": 630,
+      "label": "Prezentacja trzeciej płyty Pure Bedlam – Jubilance"
+    },
+    {
+      "start": 1190,
+      "end": 1274,
+      "label": "Polski New Metal – zespół BHP i ich EPka Snap"
+    },
+    {
+      "start": 2540,
+      "end": 2602,
+      "label": "Prezentacja albumu Belzebong „The End Is High” i jego wydawnictwa Heavy Psych Sounds Records"
+    },
+    {
+      "start": 3359,
+      "end": 3377,
+      "label": "Omówienie polskich death‑metalowych wydań Mortis Day i Thy Disease"
+    },
+    {
+      "start": 3840,
+      "end": 3952,
+      "label": "Projekt Budda – debut „Amiotrophy” i jego stylistyka"
+    },
+    {
+      "start": 4470,
+      "end": 4770,
+      "label": "Czarna metalowa scena: Actum Infernis, Temple of Decay, Konig Reichsall, Wstręt i Udręka"
+    }
+  ],
   "tags": [
+    {
+      "id": "actum-infernis",
+      "label": "Actum Infernis",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4407
+    },
     {
       "id": "belzebong",
       "label": "Belzebong",
@@ -36,11 +94,24 @@
       "at": 478
     },
     {
+      "id": "def-kneel",
+      "label": "Def Kneel",
+      "type": "artist",
+      "source": "tracks",
+      "at": 296
+    },
+    {
       "id": "her",
       "label": "Hér",
       "type": "artist",
       "source": "tracks",
       "at": 1602
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "konigreichssaal",
@@ -50,11 +121,24 @@
       "at": 5418
     },
     {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "mortis-dei-official",
       "label": "Mortis Dei Official",
       "type": "artist",
       "source": "tracks",
       "at": 3377
+    },
+    {
+      "id": "odur",
+      "label": "Odur",
+      "type": "artist",
+      "source": "tracks",
+      "at": 168
     },
     {
       "id": "popsysze",
@@ -71,6 +155,13 @@
       "at": 630
     },
     {
+      "id": "rob-bandit",
+      "label": "Rob Bandit",
+      "type": "artist",
+      "source": "tracks",
+      "at": 937
+    },
+    {
       "id": "scruda",
       "label": "Scrüda",
       "type": "artist",
@@ -78,11 +169,18 @@
       "at": 14
     },
     {
+      "id": "temple-of-decay",
+      "label": "Temple of Decay",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4197
+    },
+    {
       "id": "thy-disease",
       "label": "Thy Disease",
       "type": "artist",
       "source": "tracks",
-      "at": 3680
+      "at": 3007
     },
     {
       "id": "udreka",
@@ -90,6 +188,13 @@
       "type": "artist",
       "source": "tracks",
       "at": 6068
+    },
+    {
+      "id": "upon-the-altar",
+      "label": "Upon the Altar",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4770
     },
     {
       "id": "wstret",
@@ -102,20 +207,47 @@
   "tracks": [
     {
       "start": 14,
-      "end": 478,
+      "end": 104,
       "durationSec": 91,
       "artist": "Scrüda",
       "title": "Extreme Speed Violence",
       "album": "Extreme Speed Violence - EP",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 168,
+      "end": 229,
+      "durationSec": 63,
+      "artist": "Odur",
+      "title": "La La, La La, La La",
+      "album": "Fetor Hepaticus",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 296,
+      "end": 421,
+      "durationSec": 107,
+      "artist": "Def Kneel",
+      "title": null,
+      "album": "Def Kneel",
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 478,
-      "end": 630,
+      "end": 581,
       "durationSec": 87,
       "artist": "Deathknell",
       "title": "Latex",
@@ -128,14 +260,28 @@
     },
     {
       "start": 630,
-      "end": 1274,
+      "end": 937,
       "durationSec": 222,
       "artist": "Pure Bedlam",
       "title": "Sober and Difficult",
       "album": "Jubilance",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 937,
+      "end": 1190,
+      "durationSec": 247,
+      "artist": "Rob Bandit",
+      "title": "Rope",
+      "album": "Rope",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
@@ -146,9 +292,10 @@
       "artist": "bHP",
       "title": "ROADBLOCK",
       "album": "SNAP",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -159,35 +306,51 @@
       "artist": "Hér",
       "title": "Needles and Bark",
       "album": "Monochrome",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 1991,
-      "end": 2602,
+      "end": 2540,
       "durationSec": 509,
       "artist": "Popsysze",
       "title": "Nienasycenie",
       "album": "Powiez",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 2602,
-      "end": 3377,
+      "end": 3007,
       "durationSec": 333,
       "artist": "Belzebong",
       "title": "420 Horsemen",
       "album": "The End Is High",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 3007,
+      "end": 3359,
+      "durationSec": 332,
+      "artist": "Thy Disease",
+      "title": null,
+      "album": "United We Fall",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
@@ -198,15 +361,16 @@
       "artist": "Mortis Dei Official",
       "title": "The fallen one",
       "album": "The Bringers Of Death",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 3680,
-      "end": 3952,
+      "end": 3840,
       "durationSec": 201,
       "artist": "Thy Disease",
       "title": "Regicide",
@@ -219,14 +383,54 @@
     },
     {
       "start": 3952,
-      "end": 5418,
+      "end": 4197,
       "durationSec": 195,
       "artist": "BüddaH",
       "title": "Waste of Flesh",
       "album": "Amyotrophy",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 4197,
+      "end": 4407,
+      "durationSec": 179,
+      "artist": "Temple of Decay",
+      "title": null,
+      "album": "Profanus",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 4407,
+      "end": 4470,
+      "durationSec": 301,
+      "artist": "Actum Infernis",
+      "title": null,
+      "album": "Insygnia Diabelskiej Władzy",
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 4770,
+      "end": 5418,
+      "durationSec": 581,
+      "artist": "Upon the Altar",
+      "title": "Dominatio in Excelsis",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
       ],
       "links": []
     },
@@ -270,6 +474,84 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 104,
+      "text": "Piosenkę na dobry wieczór wykonała dla nas skróda i był to tytułowy utwór z materiału Extreme Speed Violence."
+    },
+    {
+      "start": 229,
+      "text": "Kolejny zespół, który mam przyjemność Państwu przedstawić, nosi dumną nazwę Odur... tytuł piosenki brzmi La La, La La, La La."
+    },
+    {
+      "start": 421,
+      "text": "Nazywają się Def Kneel, wydali właśnie epkę o tytule Def Kneel"
+    },
+    {
+      "start": 581,
+      "text": "trzecia płyta Pure Bedlam nazywa się Jubilance i jest wyciągiem z różnych odmian tak zwanego ciężkiego rocka."
+    },
+    {
+      "start": 896,
+      "text": "Najnowsza płyta, solowa Roba Bandita, nosi tytuł Rope i wysłuchamy utworu tytułowego."
+    },
+    {
+      "start": 1190,
+      "text": "Ich nowa epka nosi tytuł Snap i choć słyszyć, że to jeszcze undergroundowa produkcja,"
+    },
+    {
+      "start": 1582,
+      "text": "Album Monochrom, debiut grupy, ukazał się na świecie z nalepką, zresztą jak najbardziej metalowej wytwórni, czyli Season of Mist."
+    },
+    {
+      "start": 1956,
+      "text": "Grupa wydała właśnie swoją piątą płytę zatytułowaną Powięź, z której wybrałem dla was utwór Nienasycenie."
+    },
+    {
+      "start": 2542,
+      "text": "I Belzebong jest jednym z tych zespołów... ich czwarta płyta, The End Is High, ukazuje się za sprawą włoskiej wytwórni Heavy Psych Sounds Records"
+    },
+    {
+      "start": 3359,
+      "text": "Bydgoska grupa Mortis Day... ukazał się ich piąty album zatytułowany The Bringers of Death"
+    },
+    {
+      "start": 3405,
+      "text": "album zatytułowany United We Fall... krakowski zespół Thy Disease przedstawił się na nim"
+    },
+    {
+      "start": 3840,
+      "text": "Budda to duet z Bydgoszczy... zadebiutował właśnie dużym albumem Amiotrophy"
+    },
+    {
+      "start": 4470,
+      "text": "trzecia płyta Temple of Decay zatytułowana Profanus"
+    },
+    {
+      "start": 4470,
+      "text": "Album nosi tytuł Insygnia Diabelskiej Władzy"
+    },
+    {
+      "start": 5317,
+      "text": "puszczę Wam Dominatio in Excelsis"
+    },
+    {
+      "start": 5317,
+      "text": "To był Upon the Altar"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 150,
+      "quote": "Mam na imię Jarek, na nazwisko Szubrycht i jak co tydzień będę dla was podnosił te cięźry,"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 156,
+      "quote": "a asekurował mnie będzie Mariusz Owczarek, wydawca audycji."
+    }
+  ]
 }

@@ -2,10 +2,71 @@
   "version": 1,
   "id": "c4501cbc-825c-441c-9fee-4ce4767ebd7a",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T21:31:29.322Z",
+  "updatedAt": "2026-11-05T23:30:08.937Z",
   "durationSec": 6860,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek poświęcony koncertom zaplanowanym na luty, otwarty występem Deftons w łódzkiej Atlas Arenie z Denzelem Currym i Drug Church. Omówiono wspólne koncerty Hostii i Lasu Trumien w Świdnicy i Krośnie, krakowski wieczór z mongolskim Uuhai i parodią Manowar oraz wrocławską imprezę Not Dying Yet z Space Slug, Lumenem, Moonstone i In Twilight's Embrace. Przedstawiono trasę Death Has Spoken, Asterii i Obsidian Mantry oraz koncerty Leprous promujące album Melodies of Atonement, a także trasę Do spodu, do ziemi, w pustkę ze Zmarłym, Vanheim, Sotoris i Fiasko. Zapowiedziano walentynkowy występ Igorrr w Progresji, trasę Napalm Death z Whiplash i Dope Lord oraz kwietniowe zapowiedzi nowych albumów Mayhem i Immolation przed gdańskim koncertem z Mardukiem. Osobne wątki dotyczyły nowej płyty Demony Wschodu Die Worshipper z trasą u boku Mar, trzech koncertów Paradise Lost z Saturnusem i duńskiego doom-death oraz Textures i albumu Genotype.",
+  "topics": [
+    {
+      "start": 240,
+      "end": 318,
+      "label": "Deftons w Atlas Arenie i zapowiedź lutowych koncertów"
+    },
+    {
+      "start": 318,
+      "end": 357,
+      "label": "Hostia i Las Trumien w Świdnicy i Krośnie"
+    },
+    {
+      "start": 554,
+      "end": 648,
+      "label": "Uuhai i Man War of Steel w Krakowie"
+    },
+    {
+      "start": 922,
+      "end": 1011,
+      "label": "Not Dying Yet we Wrocławiu: doom, stoner i black metal"
+    },
+    {
+      "start": 1614,
+      "end": 1717,
+      "label": "Leprous promuje Melodies of Atonement w Gdańsku i Wrocławiu"
+    },
+    {
+      "start": 2097,
+      "end": 2206,
+      "label": "Slomatics i trasa Do spodu, do ziemi, w pustkę"
+    },
+    {
+      "start": 2555,
+      "end": 2633,
+      "label": "Walentynkowy koncert Igorrr w warszawskiej Progresji"
+    },
+    {
+      "start": 3594,
+      "end": 3697,
+      "label": "Napalm Death i Campaign for Musical Destruction w Warszawie"
+    },
+    {
+      "start": 4727,
+      "end": 4772,
+      "label": "Agnostic Front z albumem Echoes in Eternity w Proximie"
+    },
+    {
+      "start": 4879,
+      "end": 4941,
+      "label": "Mayhem, Marduk i Immolation w gdańskim B90"
+    },
+    {
+      "start": 5533,
+      "end": 5613,
+      "label": "Die Worshipper i Mary promują album Demony Wschodu"
+    },
+    {
+      "start": 6431,
+      "end": 6537,
+      "label": "Paradise Lost, Saturnus i Shows of Null w trzech miastach"
+    }
+  ],
   "tags": [
     {
       "id": "agnostic-front",
@@ -130,7 +191,7 @@
   "tracks": [
     {
       "start": 12,
-      "end": 357,
+      "end": 240,
       "durationSec": 216,
       "artist": "Deftones",
       "title": "My Own Summer (Shove It)",
@@ -143,7 +204,7 @@
     },
     {
       "start": 357,
-      "end": 648,
+      "end": 554,
       "durationSec": 198,
       "artist": "Las Trumien",
       "title": "Listonosz puka",
@@ -156,7 +217,7 @@
     },
     {
       "start": 648,
-      "end": 1011,
+      "end": 922,
       "durationSec": 254,
       "artist": "Uuhai",
       "title": "SECRET HISTORY OF THE MONGOLS",
@@ -182,7 +243,7 @@
     },
     {
       "start": 1368,
-      "end": 1717,
+      "end": 1614,
       "durationSec": 248,
       "artist": "Obsidian Mantra",
       "title": "Who Will Become a Murderer",
@@ -195,7 +256,7 @@
     },
     {
       "start": 1717,
-      "end": 2206,
+      "end": 2097,
       "durationSec": 382,
       "artist": "Leprous",
       "title": "Faceless",
@@ -208,7 +269,7 @@
     },
     {
       "start": 2206,
-      "end": 2633,
+      "end": 2555,
       "durationSec": 350,
       "artist": "FIASKO",
       "title": "Sztuczne Kwiaty",
@@ -247,7 +308,7 @@
     },
     {
       "start": 3352,
-      "end": 3697,
+      "end": 3594,
       "durationSec": 244,
       "artist": "Omnium Gatherum",
       "title": "Moongold",
@@ -273,7 +334,7 @@
     },
     {
       "start": 4384,
-      "end": 4772,
+      "end": 4727,
       "durationSec": 344,
       "artist": "Textures",
       "title": "Storm Warning",
@@ -286,7 +347,7 @@
     },
     {
       "start": 4772,
-      "end": 4941,
+      "end": 4879,
       "durationSec": 108,
       "artist": "Agnostic Front",
       "title": "Way Of War",
@@ -299,7 +360,7 @@
     },
     {
       "start": 4941,
-      "end": 5613,
+      "end": 5533,
       "durationSec": 593,
       "artist": "Mayhem",
       "title": "Despair",
@@ -325,7 +386,7 @@
     },
     {
       "start": 6101,
-      "end": 6537,
+      "end": 6431,
       "durationSec": 331,
       "artist": "Coltaine",
       "title": "Keep Me Down In The Deep",
