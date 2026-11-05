@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "id": "ea141138-f73e-46e5-8ee7-b9c58ad3c7df",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T20:02:23.897Z",
+  "durationSec": 7067,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "black-sabbath",
+      "label": "Black Sabbath",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6436
+    },
+    {
+      "id": "candlemass",
+      "label": "Candlemass",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4492
+    },
+    {
+      "id": "cannibal-corpse",
+      "label": "Cannibal Corpse",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1971
+    },
+    {
+      "id": "decapitated",
+      "label": "Decapitated",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2622
+    },
+    {
+      "id": "entombed",
+      "label": "Entombed",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1326
+    },
+    {
+      "id": "exodus",
+      "label": "Exodus",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5322
+    },
+    {
+      "id": "morbid-angel",
+      "label": "Morbid Angel",
+      "type": "artist",
+      "source": "tracks",
+      "at": 487
+    },
+    {
+      "id": "my-dying-bride",
+      "label": "My Dying Bride",
+      "type": "artist",
+      "source": "tracks",
+      "at": 36
+    },
+    {
+      "id": "napalm-death",
+      "label": "Napalm Death",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3295
+    },
+    {
+      "id": "the-dillinger-escape-plan",
+      "label": "The Dillinger Escape Plan",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3957
+    }
+  ],
+  "tracks": [
+    {
+      "start": 36,
+      "end": 487,
+      "durationSec": 339,
+      "artist": "My Dying Bride",
+      "title": "My Wine In Silence",
+      "album": "Songs Of Darkness, Words Of Light",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 487,
+      "end": 905,
+      "durationSec": 322,
+      "artist": "Morbid Angel",
+      "title": "God of Emptiness",
+      "album": "Laibach Remixes - EP",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 905,
+      "end": 1326,
+      "durationSec": 279,
+      "artist": "Morbid Angel",
+      "title": "Nothing Is Not",
+      "album": "Formulas Fatal to the Flesh",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1326,
+      "end": 1971,
+      "durationSec": 593,
+      "artist": "Entombed",
+      "title": "Left Hand Path",
+      "album": "Left Hand Path",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1971,
+      "end": 2622,
+      "durationSec": 522,
+      "artist": "Cannibal Corpse",
+      "title": "Hammer Smashed Face",
+      "album": "Tomb of the Mutilated",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2622,
+      "end": 3295,
+      "durationSec": 491,
+      "artist": "Decapitated",
+      "title": "Spheres of Madness",
+      "album": "Nihility",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3295,
+      "end": 3957,
+      "durationSec": 506,
+      "artist": "Napalm Death",
+      "title": "Scum",
+      "album": "Scum",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3957,
+      "end": 4492,
+      "durationSec": 420,
+      "artist": "The Dillinger Escape Plan",
+      "title": "4th Grade Dropout",
+      "album": "Calculating Infinity",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4492,
+      "end": 5322,
+      "durationSec": 755,
+      "artist": "Candlemass",
+      "title": "Bewitched",
+      "album": "Nightfall",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5322,
+      "end": 6436,
+      "durationSec": 1026,
+      "artist": "Exodus",
+      "title": "Piranha",
+      "album": "Bonded by Blood",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6436,
+      "end": 7067,
+      "durationSec": 631,
+      "artist": "Black Sabbath",
+      "title": "Children of the Grave",
+      "album": "Master of Reality",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
