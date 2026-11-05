@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "id": "947bf413-cda4-4a1a-8c15-9206b9309660",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T16:19:54.916Z",
+  "durationSec": 6818,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "acid-drinkers",
+      "label": "Acid Drinkers",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4262
+    },
+    {
+      "id": "arrm",
+      "label": "ARRM",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1976
+    },
+    {
+      "id": "hate",
+      "label": "Hate",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3601
+    },
+    {
+      "id": "iron-maiden",
+      "label": "Iron Maiden",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4514
+    },
+    {
+      "id": "jad",
+      "label": "JAD",
+      "type": "artist",
+      "source": "tracks",
+      "at": 503
+    },
+    {
+      "id": "motorhead",
+      "label": "Motörhead",
+      "type": "artist",
+      "source": "tracks",
+      "at": 8
+    },
+    {
+      "id": "nightfall",
+      "label": "Nightfall",
+      "type": "artist",
+      "source": "tracks",
+      "at": 637
+    },
+    {
+      "id": "ozzy-osbourne",
+      "label": "Ozzy Osbourne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5152
+    },
+    {
+      "id": "samael",
+      "label": "Samael",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6419
+    },
+    {
+      "id": "signs-of-the-swarm",
+      "label": "Signs of the Swarm",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3149
+    },
+    {
+      "id": "sinister",
+      "label": "Sinister",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2707
+    },
+    {
+      "id": "trivax",
+      "label": "Trivax",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1189
+    },
+    {
+      "id": "vader",
+      "label": "Vader",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5508
+    }
+  ],
+  "tracks": [
+    {
+      "start": 8,
+      "end": 337,
+      "durationSec": 210,
+      "artist": "Motörhead",
+      "title": "Bomber (Live at Hammersmith)",
+      "album": "Better Motörhead Than Dead - Live at Hammersmith",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 337,
+      "end": 503,
+      "durationSec": 136,
+      "artist": "Motörhead",
+      "title": "Going to Brazil (Live 2014)",
+      "album": "Aftershock (Tour Edition)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 503,
+      "end": 637,
+      "durationSec": 57,
+      "artist": "JAD",
+      "title": "Lepsze Jutro",
+      "album": "Strach",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 637,
+      "end": 1189,
+      "durationSec": 308,
+      "artist": "Nightfall",
+      "title": "I've Never Dreamt The Life We Share",
+      "album": "I Am Jesus",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1189,
+      "end": 1976,
+      "durationSec": 698,
+      "artist": "Trivax",
+      "title": "Here Comes the Flood",
+      "album": "The Great Satan",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1976,
+      "end": 2707,
+      "durationSec": 699,
+      "artist": "ARRM",
+      "title": "Sinking in Depression (feat. Jacek Dzwonowski)",
+      "album": "II",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2707,
+      "end": 3149,
+      "durationSec": 234,
+      "artist": "Sinister",
+      "title": "Creative Killings",
+      "album": "Creative Killings",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3149,
+      "end": 3601,
+      "durationSec": 385,
+      "artist": "Signs of the Swarm",
+      "title": "Iron Sacrament (feat. Phil Bozeman)",
+      "album": "To Rid Myself Of Truth",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3601,
+      "end": 4262,
+      "durationSec": 399,
+      "artist": "Hate",
+      "title": "Bellum Regiis",
+      "album": "Bellum Regiis",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4262,
+      "end": 4329,
+      "durationSec": 61,
+      "artist": "Acid Drinkers",
+      "title": "Dancing In the Slaughter-House",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4329,
+      "end": 4514,
+      "durationSec": 90,
+      "artist": "Acid Drinkers",
+      "title": "Dancing In the Slaughter-House",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4514,
+      "end": 5152,
+      "durationSec": 407,
+      "artist": "Iron Maiden",
+      "title": "Powerslave (1998 Remaster)",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5152,
+      "end": 5508,
+      "durationSec": 304,
+      "artist": "Ozzy Osbourne",
+      "title": "Waiting for Darkness",
+      "album": "Bark at the Moon (Bonus Track Version)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5508,
+      "end": 6419,
+      "durationSec": 254,
+      "artist": "Vader",
+      "title": "Breath of Centuries",
+      "album": "The Ultimate Incantation",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6419,
+      "end": 6818,
+      "durationSec": 400,
+      "artist": "Samael",
+      "title": "Into the Pentagram",
+      "album": "Worship Him",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
