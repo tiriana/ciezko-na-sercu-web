@@ -178,7 +178,15 @@ const syncSpans = () => {
   }
   const active = audio.paused ? [] : activeSpans(audio.currentTime);
   const playingTrack = active.find((span) => span.kind === 'track');
-  if (playingTrack) setNowPlaying(playingTrack.element.dataset.trackLabel);
+  if (playingTrack) {
+    setNowPlaying(playingTrack.element.dataset.trackLabel);
+  } else if (active.length > 0) {
+    // Wejścia numerujemy po kolei: pełna nazwa wątku nie zmieści się w pasku,
+    // a „Wejście 7" wystarcza, żeby wiedzieć, co leci.
+    const span = active[0];
+    const order = spans.filter((item) => item.kind !== 'track' && item.element.compareDocumentPosition(span.element) & Node.DOCUMENT_POSITION_FOLLOWING).length;
+    setNowPlaying(`Wejście ${order + 1}`);
+  }
   for (const span of spans) {
     const isActive = active.includes(span);
     span.element.classList.toggle('is-active', isActive);
