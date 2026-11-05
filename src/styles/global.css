@@ -1613,3 +1613,23 @@ a {
   background: color-mix(in srgb, var(--accent) 8%, transparent);
   font-size: 13.5px;
 }
+
+/* Pasek odtwarzacza jest w layoucie (transition:persist), więc przykleja się do dołu. */
+.audio-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 30;
+  padding: 10px 20px 12px;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.audio-bar[hidden] {
+  display: none;
+}
+
+.audio-bar__title {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 12.5px;
+}

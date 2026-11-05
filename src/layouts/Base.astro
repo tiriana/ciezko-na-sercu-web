@@ -1,4 +1,7 @@
 ---
+import { ClientRouter } from 'astro:transitions';
+
+import AudioBar from '../components/AudioBar.astro';
 import '../styles/fonts.css';
 import '../styles/global.css';
 
@@ -28,9 +31,11 @@ const buildDate = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
     <link rel="preload" href="/fonts/inter-pl.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/anton-pl.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <ClientRouter />
   </head>
   <body>
     <slot />
+    <AudioBar />
     <script>
       import '../scripts/site.js';
     </script>
