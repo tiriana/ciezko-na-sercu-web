@@ -2,10 +2,71 @@
   "version": 1,
   "id": "fb087c45-dee7-4698-a1fa-d980bdf8922d",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T12:52:30.078Z",
+  "updatedAt": "2026-11-05T13:37:58.848Z",
   "durationSec": 7218,
-  "summary": "",
-  "topics": [],
+  "summary": "Majowy przegląd koncertów i festiwali, zdominowany przez metal w różnych odmianach. Omówiono trasę Monstro City promującą album Screams From Beneath the Surface, powrót Sacriversum z płytą Before the Birth of Light oraz serię koncertów Tima Rippera Owensa w Polsce. Polecono festiwale Death Is Not the End we Wrocławiu i Metal Commando w Warszawie, a także mniejsze inicjatywy, jak Hell and Fire Festival. Osobny wątek to projekt Furia gra kino, łączący koncert z archiwalnymi filmami Filmoteki Śląskiej o historii Śląska. Wspomniano też o występie Metalliki na Stadionie Śląskim z Gojirą i Knocked Loose oraz o koncertach Sabaton, Acid King, Jarboe, Blackwater Holy Light i Omen.",
+  "topics": [
+    {
+      "start": 211,
+      "end": 257,
+      "label": "Zapowiedź majowych koncertów i festiwali"
+    },
+    {
+      "start": 257,
+      "end": 305,
+      "label": "Monstro City, BioCancer i Reject the Sickness w trasie"
+    },
+    {
+      "start": 506,
+      "end": 589,
+      "label": "Warp Chamber, Degraved i Devil Priest w Łodzi"
+    },
+    {
+      "start": 589,
+      "end": 639,
+      "label": "Trzy koncerty Tima Rippera Owensa w Polsce"
+    },
+    {
+      "start": 969,
+      "end": 1113,
+      "label": "Sacriversum i trasa Before the Birth of Light"
+    },
+    {
+      "start": 1575,
+      "end": 1654,
+      "label": "Death Is Not the End Festival we Wrocławiu"
+    },
+    {
+      "start": 2823,
+      "end": 2874,
+      "label": "Metal Commando Fest w warszawskim Voodoo"
+    },
+    {
+      "start": 3359,
+      "end": 3457,
+      "label": "Kroma i trzy koncerty w Polsce"
+    },
+    {
+      "start": 3620,
+      "end": 3700,
+      "label": "Koncerty Jarboe w Warszawie i Poznaniu"
+    },
+    {
+      "start": 4458,
+      "end": 4599,
+      "label": "Furia gra kino z filmami Filmoteki Śląskiej"
+    },
+    {
+      "start": 4837,
+      "end": 4898,
+      "label": "Metallica, Gojira i Knocked Loose na Stadionie Śląskim"
+    },
+    {
+      "start": 6860,
+      "end": 6997,
+      "label": "Sabaton, Flor Jensen i Majestica w Ergo Arenie"
+    }
+  ],
   "tags": [
     {
       "id": "acid-king",
@@ -116,7 +177,7 @@
   "tracks": [
     {
       "start": 11,
-      "end": 305,
+      "end": 211,
       "durationSec": 202,
       "artist": "Monstrosity",
       "title": "Destroying Divinity",
@@ -129,7 +190,7 @@
     },
     {
       "start": 305,
-      "end": 639,
+      "end": 506,
       "durationSec": 203,
       "artist": "Monstrosity",
       "title": "The Colossal Rage",
@@ -142,7 +203,7 @@
     },
     {
       "start": 639,
-      "end": 1113,
+      "end": 969,
       "durationSec": 331,
       "artist": "Judas Priest(犹太祭司乐团)",
       "title": "Machine Man",
@@ -155,7 +216,7 @@
     },
     {
       "start": 1113,
-      "end": 1654,
+      "end": 1575,
       "durationSec": 463,
       "artist": "Sacriversum",
       "title": "Before the Birth of Light",
@@ -168,7 +229,7 @@
     },
     {
       "start": 1654,
-      "end": 2874,
+      "end": 2823,
       "durationSec": 1171,
       "artist": "Dead Congregation",
       "title": "Redemptive Immolation",
@@ -181,7 +242,7 @@
     },
     {
       "start": 2874,
-      "end": 3457,
+      "end": 3359,
       "durationSec": 486,
       "artist": "Christ Agony",
       "title": "Devilish Sad",
@@ -194,7 +255,7 @@
     },
     {
       "start": 3457,
-      "end": 3700,
+      "end": 3620,
       "durationSec": 165,
       "artist": "Khroma",
       "title": "Catch the Whip",
@@ -220,7 +281,7 @@
     },
     {
       "start": 4281,
-      "end": 4599,
+      "end": 4458,
       "durationSec": 68,
       "artist": "TSYTSKA",
       "title": "Smerdyuchi Shkarpetky (Stinky Socks)",
@@ -233,7 +294,7 @@
     },
     {
       "start": 4599,
-      "end": 4898,
+      "end": 4837,
       "durationSec": 239,
       "artist": "Furia",
       "title": "Stara Polska Księżycowa 2",
@@ -298,7 +359,7 @@
     },
     {
       "start": 6646,
-      "end": 6997,
+      "end": 6860,
       "durationSec": 215,
       "artist": "Trauma",
       "title": "Decayed by false",

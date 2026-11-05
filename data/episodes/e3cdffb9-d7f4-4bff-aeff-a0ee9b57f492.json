@@ -2,10 +2,66 @@
   "version": 1,
   "id": "e3cdffb9-d7f4-4bff-aeff-a0ee9b57f492",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T12:52:30.076Z",
+  "updatedAt": "2026-11-05T13:37:58.847Z",
   "durationSec": 7192,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja stanowi podsumowanie najważniejszych wydawnictw muzycznych z maja 2026 roku, skupiając się głównie na scenie metalowej. Prowadzący analizuje powrót do formy norweskiego zespołu Dimmu Borgir oraz bezkompromisowe podejście Darktron. Poruszane są wątki ewolucji black metalu poprzez twórczość projektu Treldom oraz historyczne znaczenie zespołu Venom. Słuchacze poznają także nowości od artystów takich jak Devin Townsend, Sparta czy polski zespół Wolfpack Headin' Nowhere. Audycja prezentuje szerokie spektrum muzyki ekstremalnej, od amerykańskiego zespołu Propane, który powrócił po latach przerwy spowodowanej traumatycznym napadem, po szwedzkie składy grające thrash i doom metal. Słuchacze poznają również litewskie Erdwe, szwedzki death metal w wykonaniu Sarkazm oraz teksański Frozen Soul. W dalszej części pojawiają się skrajne odmiany gatunku, takie jak slam death metal grupy Slamdown, a także brytyjski death metal zespołu Ingested. Fragment kończy się prezentacją greckiego black metalu Yothiria oraz brytyjskiej grupy Forest of Stars. Audycja kończy się prezentacją utworu zespołu Forest of Stars z Wielkiej Brytanii. Prowadzący opisuje kompozycję jako długą, meandrującą i nieprzewidywalną, wywołującą niepokój. Wspomniano również o niedawnej premierze ich albumu.",
+  "topics": [
+    {
+      "start": 0,
+      "end": 7,
+      "label": "Podsumowanie majowych wydawnictw muzycznych"
+    },
+    {
+      "start": 7,
+      "end": 13,
+      "label": "Norweska scena black metalowa: Dimmu Borgir, Darktron i Treldom"
+    },
+    {
+      "start": 20,
+      "end": 25,
+      "label": "Historia i współczesność zespołu Venom"
+    },
+    {
+      "start": 25,
+      "end": 36,
+      "label": "Alternatywne i lżejsze brzmienia: Sparta i Wolfpack Headin' Nowhere"
+    },
+    {
+      "start": 36,
+      "end": 52,
+      "label": "Eksperymentalna twórczość Devina Townsenda"
+    },
+    {
+      "start": 52,
+      "end": 57,
+      "label": "Powrót amerykańskiego zespołu Propane po latach milczenia"
+    },
+    {
+      "start": 57,
+      "end": 109,
+      "label": "Szwedzka scena metalowa: thrash i doom metal"
+    },
+    {
+      "start": 109,
+      "end": 131,
+      "label": "Ekstremalne brzmienia: death metal i slam death metal"
+    },
+    {
+      "start": 131,
+      "end": 143,
+      "label": "Polskie nowości metalowe: Kurnugia i Sznur"
+    },
+    {
+      "start": 143,
+      "end": 149,
+      "label": "Black metal z Grecji i Wielkiej Brytanii"
+    },
+    {
+      "start": 149,
+      "end": 577,
+      "label": "Prezentacja utworu zespołu Forest of Stars"
+    }
+  ],
   "tags": [
     {
       "id": "a-forest-of-stars",
@@ -85,6 +141,18 @@
       "at": 5276
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "monolord",
       "label": "Monolord",
       "type": "artist",
@@ -151,14 +219,15 @@
   "tracks": [
     {
       "start": 13,
-      "end": 577,
+      "end": 20,
       "durationSec": 413,
       "artist": "Dimmu Borgir",
       "title": "As Seen in the Unseen",
       "album": "Grand Serpent Rising",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -410,6 +479,24 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 7,
+      "text": "Dostrzec coś w czymś, co niewidzialne proponował nam norweski zespół Dimmu Borgir. Ja dostrzegam w płycie, z której As Seen in the Unseen pochodzi, powrót grupy do wysokiej formy."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 8,
+      "quote": "Wita was Jarek Szubrych, jej gospodarz"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 8,
+      "quote": "i Mariusz Owczarek, jej wydawca."
+    }
+  ]
 }
