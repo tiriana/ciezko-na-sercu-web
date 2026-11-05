@@ -1,0 +1,381 @@
+{
+  "version": 1,
+  "id": "519d7c2b-9d68-40cf-98d3-69c9796c3ea4",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T19:20:58.035Z",
+  "durationSec": 6826,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "1914",
+      "label": "1914",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1852
+    },
+    {
+      "id": "acidsitter",
+      "label": "AcidSitter",
+      "type": "artist",
+      "source": "tracks",
+      "at": 368
+    },
+    {
+      "id": "agnostic-front",
+      "label": "Agnostic Front",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3921
+    },
+    {
+      "id": "chat-pile-hayden-pedigo",
+      "label": "Chat Pile & Hayden Pedigo",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3616
+    },
+    {
+      "id": "dome-runner",
+      "label": "Dome Runner",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2237
+    },
+    {
+      "id": "fessus",
+      "label": "FESSUS",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4959
+    },
+    {
+      "id": "malefic-throne",
+      "label": "Malefic Throne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4117
+    },
+    {
+      "id": "master-s-hammer",
+      "label": "Master's Hammer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 763
+    },
+    {
+      "id": "matmos",
+      "label": "Matmos",
+      "type": "artist",
+      "source": "tracks",
+      "at": 11
+    },
+    {
+      "id": "preyrs",
+      "label": "PREYRS",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2749
+    },
+    {
+      "id": "pupil-slicer",
+      "label": "Pupil Slicer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2992
+    },
+    {
+      "id": "qrixkuor",
+      "label": "Qrixkuor",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5645
+    },
+    {
+      "id": "sun-of-the-dying",
+      "label": "Sun of the Dying",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5285
+    },
+    {
+      "id": "the-devil-s-trade",
+      "label": "The Devil's Trade",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1389
+    },
+    {
+      "id": "unprocessed-paleface-swiss",
+      "label": "Unprocessed & Paleface Swiss",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2469
+    },
+    {
+      "id": "voidceremony",
+      "label": "Voidceremony",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4536
+    },
+    {
+      "id": "waldgefluster",
+      "label": "Waldgeflüster",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6198
+    }
+  ],
+  "tracks": [
+    {
+      "start": 11,
+      "end": 368,
+      "durationSec": 250,
+      "artist": "Matmos",
+      "title": "Norway Doorway",
+      "album": "Metallic Life Review",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 368,
+      "end": 763,
+      "durationSec": 275,
+      "artist": "AcidSitter",
+      "title": "Killegos Attack! (feat. Maciej Cieslak)",
+      "album": "Escape from Egoland",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 763,
+      "end": 1048,
+      "durationSec": 246,
+      "artist": "Master's Hammer",
+      "title": "Beast Within",
+      "album": "Maldorör Disco",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1048,
+      "end": 1389,
+      "durationSec": 268,
+      "artist": "Master's Hammer",
+      "title": "Genesis P. Orridge",
+      "album": "Maldorör Disco",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1389,
+      "end": 1852,
+      "durationSec": 357,
+      "artist": "The Devil's Trade",
+      "title": "Nincs Szennyezetlen Szép",
+      "album": "Nincs Szennyezetlen Szép",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1852,
+      "end": 2237,
+      "durationSec": 346,
+      "artist": "1914",
+      "title": "1918 Pt 3: ADE (A duty to escape) (feat. Aaron Stainthorpe)",
+      "album": "Viribus Unitis",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2237,
+      "end": 2469,
+      "durationSec": 180,
+      "artist": "Dome Runner",
+      "title": "Split Self Matrix",
+      "album": "World Panopticon",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2469,
+      "end": 2749,
+      "durationSec": 206,
+      "artist": "Unprocessed & Paleface Swiss",
+      "title": "Solara",
+      "album": "Angel",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2749,
+      "end": 2992,
+      "durationSec": 193,
+      "artist": "PREYRS",
+      "title": "Wave Of Wisdom",
+      "album": "The Wounded Healer",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2992,
+      "end": 3276,
+      "durationSec": 265,
+      "artist": "Pupil Slicer",
+      "title": "Nomad",
+      "album": "Fleshwork",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3276,
+      "end": 3616,
+      "durationSec": 251,
+      "artist": "Pupil Slicer",
+      "title": "Fleshwork",
+      "album": "Fleshwork",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3616,
+      "end": 3921,
+      "durationSec": 234,
+      "artist": "Chat Pile & Hayden Pedigo",
+      "title": "Never Say Die",
+      "album": "In the Earth Again",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3921,
+      "end": 4117,
+      "durationSec": 145,
+      "artist": "Agnostic Front",
+      "title": "Matter Of Life & Death",
+      "album": "Echoes In Eternity",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4117,
+      "end": 4536,
+      "durationSec": 365,
+      "artist": "Malefic Throne",
+      "title": "The Voice of my Ghost",
+      "album": "The Conquering Darkness",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4536,
+      "end": 4959,
+      "durationSec": 348,
+      "artist": "Voidceremony",
+      "title": "Gnosis of Ambivalence",
+      "album": "Abditum",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4959,
+      "end": 5285,
+      "durationSec": 289,
+      "artist": "FESSUS",
+      "title": "The Depths of Lividity",
+      "album": "Subcutaneous Tomb",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5285,
+      "end": 5645,
+      "durationSec": 295,
+      "artist": "Sun of the Dying",
+      "title": "Black Birds Beneath Your Sky",
+      "album": "A Throne of Ashes",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5645,
+      "end": 6198,
+      "durationSec": 511,
+      "artist": "Qrixkuor",
+      "title": "And You Shall Know Perdition As Your Shrine",
+      "album": "The Womb of the World",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6198,
+      "end": 6826,
+      "durationSec": 628,
+      "artist": "Waldgeflüster",
+      "title": "Bamberg, 20. Juni",
+      "album": "Knochengesänge",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
