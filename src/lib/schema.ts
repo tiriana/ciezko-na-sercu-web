@@ -81,6 +81,24 @@ export const overrideSchema = z.object({
         album: z.string().optional(),
         start: z.number().optional(),
         durationSec: z.number().optional(),
+        /** Nowe wartości pól; stare (artist/title/album) zostają kluczem dopasowania. */
+        newArtist: z.string().optional(),
+        newTitle: z.string().optional(),
+        newAlbum: z.string().optional(),
+        /** Wiersz do ukrycia (np. fałszywe rozpoznanie Shazama). */
+        hide: z.boolean().optional(),
+      })
+    )
+    .default([]),
+  // Poprawki wejść: dopasowanie po czasie i etykiecie, bo tagger nie nadaje im id.
+  topics: z
+    .array(
+      z.object({
+        time: z.number(),
+        label: z.string(),
+        start: z.number().optional(),
+        newLabel: z.string().optional(),
+        hide: z.boolean().optional(),
       })
     )
     .default([]),

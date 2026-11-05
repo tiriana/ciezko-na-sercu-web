@@ -59,6 +59,34 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
       if (!track) continue;
       if (fix.start !== undefined) track.start = fix.start;
       if (fix.durationSec !== undefined) track.durationSec = fix.durationSec;
+      if (fix.newArtist !== undefined) track.artist = fix.newArtist;
+      if (fix.newTitle !== undefined) track.title = fix.newTitle;
+      if (fix.newAlbum !== undefined) track.album = fix.newAlbum;
+    }
+
+    if (override.tracks.some((fix) => fix.hide)) {
+      episode.tracks = episode.tracks.filter(
+        (track) =>
+          !override.tracks.some(
+            (fix) =>
+              fix.hide &&
+              sameText(track.artist, fix.artist) &&
+              sameText(track.title, fix.title) &&
+              sameText(track.album, fix.album)
+          )
+      );
+    }
+
+    for (const fix of override.topics) {
+      const topic = episode.topics.find((candidate) => candidate.start === fix.time && sameText(candidate.label, fix.label));
+      if (!topic) continue;
+      if (fix.start !== undefined) topic.start = fix.start;
+      if (fix.newLabel) topic.label = fix.newLabel;
+    }
+    if (override.topics.some((fix) => fix.hide)) {
+      episode.topics = episode.topics.filter(
+        (topic) => !override.topics.some((fix) => fix.hide && fix.time === topic.start && sameText(topic.label, fix.label))
+      );
     }
 
     const rename = override.credits.rename;

@@ -10,7 +10,8 @@
     "catalog": "node scripts/build-catalog.mjs",
     "import:tagger": "node scripts/import-tagger.mjs",
     "check": "node scripts/check-data.mjs",
-    "queue": "node scripts/queue.mjs"
+    "queue": "node scripts/queue.mjs",
+    "edytor": "node scripts/edytor.mjs"
   },
   "dependencies": {
     "astro": "^6.4.8",

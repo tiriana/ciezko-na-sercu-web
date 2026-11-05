@@ -8,6 +8,13 @@ streszczenie i tematy.
 
 Strona nie publikuje dźwięku ani treści audycji. Indeksuje odcinki i linkuje do nich.
 
+## Edytor osi czasu (lokalnie)
+
+`npm run edytor` uruchamia edytor na http://localhost:4330: lista odcinków, player,
+edycja tytułu, utworów (wykonawca, tytuł, album, start, czas, ukrycie) i wejść.
+Zapis trafia do `data/overrides/<id>.json` i `data/titles.json`, więc kolejny import
+z taggera niczego nie kasuje. Po zapisie: `npm run build` (albo `npm run site`).
+
 ## Status
 
 Strona działa na Astro (output statyczny) i publikuje się przy każdym pushu do `main` na Cloudflare
