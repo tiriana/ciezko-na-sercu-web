@@ -2,10 +2,71 @@
   "version": 1,
   "id": "acfe74c9-df8f-45fe-b04e-d21be9c3cb6a",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T14:05:55.398Z",
+  "updatedAt": "2026-11-05T15:24:46.202Z",
   "durationSec": 7174,
-  "summary": "",
-  "topics": [],
+  "summary": "Kwietniowy przegląd nowości zdominowały premiery z szeroko pojętej ciężkiej muzyki. Corrosion of Conformity przedstawili podwójny album Good God, Bad Man, łączący hardcore, southern rock, stoner i doom, a Truck Fighters zapowiedzieli płytę Master Flow i czerwcowy występ na Mystic Festiwalu. Obok Poison Ruin z Hymns from the Hills i punkowego The Shits z Diet of Worms pojawiły się wspólne dzieło Melvins i Napalm Death Savage Imperial Death March oraz album Skindred You Got This, mieszający metal, reggae i rap. Wspomniano pożegnalną EP Sepultury The Cloud of Unknowing oraz pośmiertny album At the Gates The Ghost of Future Death, dokończony według wskazówek Thomasa Lindberga, a także nowe materiały Vomitory, Immolation i Xorcist. Wśród polskich akcentów znalazł się debiut Blinded 23 zatytułowany Deuterium, nagrany z udziałem Rogera Oyersona i Pawła Jaroszewicza. W dalszej części przeglądu pojawiły się Landloss, Nervosa, Unearthly Rides, Ord i Witch Ripper oraz premierowe nagrania Dödsfänger i Dude Svens.",
+  "topics": [
+    {
+      "start": 249,
+      "end": 389,
+      "label": "Corrosion of Conformity i podwójny album Good God, Bad Man"
+    },
+    {
+      "start": 717,
+      "end": 760,
+      "label": "Truck Fighters, płyta Master Flow i występ na Mystic Festival"
+    },
+    {
+      "start": 1098,
+      "end": 1175,
+      "label": "Poison Ruin i album Hymns from the Hills"
+    },
+    {
+      "start": 1322,
+      "end": 1370,
+      "label": "The Shits i punkowa płyta Diet of Worms"
+    },
+    {
+      "start": 1626,
+      "end": 1682,
+      "label": "Melvins i Napalm Death, wspólny Savage Imperial Death March"
+    },
+    {
+      "start": 2256,
+      "end": 2377,
+      "label": "Skindred i album You Got This łączący metal z reggae"
+    },
+    {
+      "start": 3000,
+      "end": 3098,
+      "label": "Sepultura i pożegnalna EP The Cloud of Unknowing"
+    },
+    {
+      "start": 3455,
+      "end": 3568,
+      "label": "At the Gates, pośmiertny album The Ghost of Future Death"
+    },
+    {
+      "start": 4053,
+      "end": 4123,
+      "label": "Vomitory i deathmetalowy album In Death Throws"
+    },
+    {
+      "start": 4540,
+      "end": 4615,
+      "label": "Immolation i dwunasty album Descent"
+    },
+    {
+      "start": 5547,
+      "end": 5637,
+      "label": "Blinded 23 i debiutancki album Deuterium"
+    },
+    {
+      "start": 6561,
+      "end": 6631,
+      "label": "Dödsfänger i blackmetalowy album Within the Flesh"
+    }
+  ],
   "tags": [
     {
       "id": "at-the-gates",
@@ -144,7 +205,7 @@
   "tracks": [
     {
       "start": 12,
-      "end": 389,
+      "end": 249,
       "durationSec": 238,
       "artist": "Corrosion of Conformity",
       "title": "Gimme Some Moore",
@@ -157,7 +218,7 @@
     },
     {
       "start": 389,
-      "end": 760,
+      "end": 717,
       "durationSec": 328,
       "artist": "Corrosion of Conformity",
       "title": "You Or Me",
@@ -170,7 +231,7 @@
     },
     {
       "start": 760,
-      "end": 1175,
+      "end": 1098,
       "durationSec": 340,
       "artist": "Truckfighters",
       "title": "The Gorgon",
@@ -183,7 +244,7 @@
     },
     {
       "start": 1175,
-      "end": 1370,
+      "end": 1322,
       "durationSec": 148,
       "artist": "Poison Ruïn",
       "title": "Guts (Lay Your Self Aside)",
@@ -196,7 +257,7 @@
     },
     {
       "start": 1370,
-      "end": 1682,
+      "end": 1626,
       "durationSec": 257,
       "artist": "The S***s",
       "title": "Then You're Dead",
@@ -222,7 +283,7 @@
     },
     {
       "start": 1939,
-      "end": 2377,
+      "end": 2256,
       "durationSec": 318,
       "artist": "Melvins & Napalm Death",
       "title": "Rip The God",
@@ -248,7 +309,7 @@
     },
     {
       "start": 2642,
-      "end": 3098,
+      "end": 3000,
       "durationSec": 163,
       "artist": "Lantlôs",
       "title": "Daisies",
@@ -261,7 +322,7 @@
     },
     {
       "start": 3098,
-      "end": 3568,
+      "end": 3455,
       "durationSec": 357,
       "artist": "Sepultura",
       "title": "The Place",
@@ -287,7 +348,7 @@
     },
     {
       "start": 3823,
-      "end": 4123,
+      "end": 4053,
       "durationSec": 231,
       "artist": "Nervosa",
       "title": "Slave Machine",
@@ -313,7 +374,7 @@
     },
     {
       "start": 4374,
-      "end": 4615,
+      "end": 4540,
       "durationSec": 167,
       "artist": "Xorsist",
       "title": "Faceless",
@@ -352,7 +413,7 @@
     },
     {
       "start": 5183,
-      "end": 5637,
+      "end": 5547,
       "durationSec": 364,
       "artist": "Ordh",
       "title": "Apis Bull",
@@ -378,7 +439,7 @@
     },
     {
       "start": 6140,
-      "end": 6631,
+      "end": 6561,
       "durationSec": 421,
       "artist": "Witch Ripper",
       "title": "Symmetry of the Hourglass",

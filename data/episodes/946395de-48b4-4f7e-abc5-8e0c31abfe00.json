@@ -2,44 +2,29 @@
   "version": 1,
   "id": "946395de-48b4-4f7e-abc5-8e0c31abfe00",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T14:05:55.395Z",
+  "updatedAt": "2026-11-05T15:24:46.181Z",
   "durationSec": 7188,
-  "summary": "Audycja poświęcona jest fenomenowi płyt koncertowych jako unikalnego zapisu energii muzycznej, która często przewyższa nagrania studyjne. Prowadzący analizuje historię i znaczenie kultowych wydawnictw live, skupiając się na polskiej i światowej scenie metalowej. W programie pojawiają się wspomnienia o zespołach takich jak Imperator, TSA, Turbo, Kat, Venom oraz Iron Maiden. Autor dzieli się osobistymi refleksjami na temat wpływu tych nagrań na kształtowanie się gustów muzycznych w latach osiemdziesiątych. Audycja poświęcona jest fenomenowi i historii metalowych płyt koncertowych. Prowadzący analizuje różnice między nagraniami live a studyjnymi na przykładzie Slayera, omawiając kontrowersje wokół albumu Live Undead. Poruszany jest wątek polskiego zespołu Vader i jego znaczenia na arenie międzynarodowej poprzez wydawnictwa Live in Japan oraz The Darkest Age, Life 93. W programie pojawiają się również wzmianki o wpływie Judas Priest na polską scenę oraz o włoskiej grupie Bulldozer. Całość wieńczy omówienie black metalowych klasyków, takich jak Mayhem oraz Emperor.",
+  "summary": "Audycja prowadzona przez Jarek Szubrycht rozpoczyna się od autowego wyznania: prowadzący nie przepada za płytami koncertowymi, ale dziś postanowi je grać w całości, a pretekstem jest premiera płyty koncertowej zespołu Imperator. W audycji omawiane są klasyczne polskie koncertówki metalowe z lat 80.: TSA (Alive), Metalmani 87, Testphobi/Creon, Kat (38 Minutes of Life) oraz dwupłytowe wydawnictwa koncertowe Venom (Eine kleine Nachtmusik) i Iron Maiden (Life After Death). Prowadzący przytacza też historię zespołu Imperator — jego powstanie w 1984 roku w Łodzi, status kultowej grupy drugiej ekstremalnej fali, jedyną studyjną płytę z 1991 roku oraz obecność na scenie po długiej przerwie. Audycja omawia historię płyt koncertowych w metalu, zaczynając od koncertówek Slayera (m.in. Live Undead, Live and Dead, Decade of Aggression) i ich statusu jako tanich, mniej poważanych wydawnictw. Przechodzi do opisu pierwszej polskiej płyty koncertowej – Alive in Poland włoskiej grupy Bulldozer z 1989 roku nagranej w Zabrzu, a następnie skupia się na klasycznych koncertówkach metalu: Mayhem Life in Leipzig (1990), Emperor Imperial Life Ceremony (2000) oraz wspomnienie o Vaderze, którego pierwszą płytą koncertową była The Darkest Age, Life 93 nagrana w Krakowie w 1993 roku. Audycja kończy się zapowiedzią kolejnych utworów z kanonady.",
   "topics": [
     {
       "start": 0,
-      "end": 104,
-      "label": "Refleksja nad wartością płyt koncertowych względem studyjnych"
+      "end": 831,
+      "label": "Premiera płyty koncertowej Imperator"
     },
     {
-      "start": 104,
-      "end": 121,
-      "label": "Analiza płyt koncertowych Slayera i kwestia ich autentyczności"
+      "start": 6042,
+      "end": 6077,
+      "label": "Status i ekonomia płyt koncertowych w metalu: koncertówki sprzedawały się gorzej, dzięki niższym opłatom licencyjnym można było je kupić taniej"
     },
     {
-      "start": 121,
-      "end": 125,
-      "label": "Historia i znaczenie koncertowych wydań zespołu Vader"
+      "start": 6752,
+      "end": 6932,
+      "label": "Live Undead Slayera – koncertówka oszukana, nagrywana w studiu przez szczęśliwców z konkursu radiowego, dorzucany przez inżyniera Billa Metty"
     },
     {
-      "start": 130,
-      "end": 134,
-      "label": "Wpływ klasyków heavy metalu, jak Judas Priest, na rozwój sceny"
-    },
-    {
-      "start": 134,
-      "end": 145,
-      "label": "Metalowe płyty koncertowe nagrane w Polsce"
-    },
-    {
-      "start": 145,
-      "end": 590,
-      "label": "Black metalowe nagrania koncertowe: Mayhem i Emperor"
-    },
-    {
-      "start": 4917,
-      "end": 4918,
-      "label": "Wpływ zagranicznych płyt koncertowych na polską scenę metalową"
+      "start": 7188,
+      "end": 7188,
+      "label": "Live and Dead i Decade of Aggression – dwie koncertówki/albumy studyjne Slayera, różnica między nimi wynikała z PRL-owskiego opóźnienia dystrybucji"
     }
   ],
   "tags": [
@@ -63,13 +48,6 @@
       "type": "artist",
       "source": "tracks",
       "at": 6932
-    },
-    {
-      "id": "imperator",
-      "label": "Imperator",
-      "type": "artist",
-      "source": "tracks",
-      "at": 125
     },
     {
       "id": "iron-maiden",
@@ -149,68 +127,28 @@
   ],
   "tracks": [
     {
-      "start": 125,
-      "end": 130,
-      "durationSec": 291,
-      "artist": "Imperator",
-      "title": null,
-      "album": null,
-      "confidence": "średnia",
-      "sources": [
-        "zapowiedź"
-      ],
-      "links": []
-    },
-    {
-      "start": 590,
-      "end": 831,
-      "durationSec": 205,
-      "artist": "Imperator",
-      "title": null,
-      "album": "The Time After Time Live",
-      "confidence": "średnia",
-      "sources": [
-        "zapowiedź"
-      ],
-      "links": []
-    },
-    {
       "start": 831,
       "end": 1326,
       "durationSec": 411,
       "artist": "TSA",
       "title": "51)",
       "album": "Live 2021",
-      "confidence": "wysoka",
-      "sources": [
-        "shazam",
-        "zapowiedź"
-      ],
-      "links": []
-    },
-    {
-      "start": 1326,
-      "end": 1878,
-      "durationSec": 399,
-      "artist": "Turbo",
-      "title": "Seans z Wampirem (Live)",
-      "album": null,
-      "confidence": "niska",
+      "confidence": "średnia",
       "sources": [
         "shazam"
       ],
       "links": []
     },
     {
-      "start": 1878,
+      "start": 1326,
       "end": 2260,
-      "durationSec": 319,
+      "durationSec": 399,
       "artist": "Turbo",
-      "title": null,
-      "album": "Alive",
+      "title": "Seans z Wampirem (Live)",
+      "album": null,
       "confidence": "średnia",
       "sources": [
-        "zapowiedź"
+        "shazam"
       ],
       "links": []
     },
@@ -221,7 +159,7 @@
       "artist": "Kat",
       "title": "Mag-Sex",
       "album": "Oddech Wymarłych Światów",
-      "confidence": "niska",
+      "confidence": "średnia",
       "sources": [
         "shazam"
       ],
@@ -234,7 +172,7 @@
       "artist": "Venom",
       "title": "Too Loud (For the Crowd) [Live",
       "album": "Eine Kleine Nachtmusik",
-      "confidence": "niska",
+      "confidence": "średnia",
       "sources": [
         "shazam"
       ],
@@ -247,7 +185,7 @@
       "artist": "Iron Maiden",
       "title": "Iron Maiden (Live in Finland 1993)",
       "album": "A Real Live Dead One",
-      "confidence": "niska",
+      "confidence": "średnia",
       "sources": [
         "shazam"
       ],
@@ -268,7 +206,7 @@
     },
     {
       "start": 4272,
-      "end": 4917,
+      "end": 4918,
       "durationSec": 589,
       "artist": "Slayer",
       "title": "War Ensemble",
@@ -286,7 +224,7 @@
       "artist": "Vader",
       "title": "Breath of Centuries (Live'93)",
       "album": "The Darkest Age (Live'93)",
-      "confidence": "niska",
+      "confidence": "średnia",
       "sources": [
         "shazam"
       ],
@@ -320,12 +258,12 @@
     },
     {
       "start": 5792,
-      "end": 6077,
+      "end": 6042,
       "durationSec": 256,
       "artist": "Bulldozer",
       "title": "The Derby",
       "album": "Alive... in Poland 2011",
-      "confidence": "niska",
+      "confidence": "średnia",
       "sources": [
         "shazam"
       ],
@@ -338,7 +276,7 @@
       "artist": "Cannibal Corpse",
       "title": "Gallery of Suicide",
       "album": "Gallery of Suicide",
-      "confidence": "niska",
+      "confidence": "średnia",
       "sources": [
         "shazam"
       ],
@@ -346,7 +284,7 @@
     },
     {
       "start": 6406,
-      "end": 6932,
+      "end": 6752,
       "durationSec": 407,
       "artist": "Mayhem",
       "title": "The Freezing Moon (Live in Leipzig)",
@@ -364,43 +302,26 @@
       "artist": "Emperor",
       "title": "Sworn",
       "album": "IX Equilibrium",
-      "confidence": "niska",
+      "confidence": "średnia",
       "sources": [
         "shazam"
       ],
       "links": []
     }
   ],
-  "quotes": [
-    {
-      "start": 132,
-      "text": "będę grał tylko z płyt koncertowych, a pretekstem do tego jest premiera koncertowej właśnie płyty zespołu Imperator"
-    },
-    {
-      "start": 655,
-      "text": "Słuchaliśmy Imperatora z płyty The Time After Time Live, nagranej w 2018 roku w warszawskiej progresji"
-    },
-    {
-      "start": 1314,
-      "text": "Na przykład debiut TSA, czyli live, grzecznie na mnie czekał już od 1982 roku"
-    },
-    {
-      "start": 2041,
-      "text": "uwielbiałem Turbo i ich płytę Alive poskładaną z dwóch koncertów"
-    }
-  ],
+  "quotes": [],
   "credits": [
     {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
-      "time": 12,
-      "quote": "Wita Was Jarek Szubrycht, autor audycji"
+      "time": 0,
+      "quote": ""
     },
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 22,
-      "quote": "Wita też Was Mariusz Owczarek, jej wydawca."
+      "time": 0,
+      "quote": ""
     }
   ]
 }

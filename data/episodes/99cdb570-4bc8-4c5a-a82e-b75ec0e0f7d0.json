@@ -2,10 +2,71 @@
   "version": 1,
   "id": "99cdb570-4bc8-4c5a-a82e-b75ec0e0f7d0",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T14:05:55.398Z",
+  "updatedAt": "2026-11-05T15:24:46.209Z",
   "durationSec": 7205,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja relacjonuje trzy wieczory koncertowe Tallinn Music Week, największego festiwalu showcase'owego w krajach bałtyckich, gdzie reprezentacja ciężkich brzmień była wyjątkowo silna. W sobotę odbyła się bałtycka mutacja konkursu Road to Mystic, w której zagrały cztery zespoły z Estonii oraz po jednym z Litwy i Łotwy. Zaproszenia na Mystic Festival otrzymały estoński Bloodfeather z Tartu i łotewski Sever z Rygi, a o drugie miejsce jury toczyło zażarte dyskusje. W konkursie zaprezentowały się także Oli, czyli Oliver Mazurczak, litewski Grieve God, Artifer oraz Pale Ellison z Narwy. Czwartkowy wieczór pod egidą Heavy Music Estonia przyniósł industrialny Evestus, techniczny death metal Surgeon, fiński Numento z kantele w składzie i folkmetalowy Antsud Metal Project. Piątkowy wieczór klubowy przygotowany przez fiński festiwal Blow Up zdominowały Sunniva i grindcorowy Sos Asylum, a całość zamknęły płyty estońskich zespołów Humanity i Nihilist Crypt.",
+  "topics": [
+    {
+      "start": 203,
+      "end": 359,
+      "label": "Evestus i organizacja Heavy Music Estonia"
+    },
+    {
+      "start": 359,
+      "end": 389,
+      "label": "Bloodfeather z Tartu zwycięzcą konkursu"
+    },
+    {
+      "start": 1028,
+      "end": 1037,
+      "label": "Sever z Rygi i album Another Nightmare"
+    },
+    {
+      "start": 1549,
+      "end": 1563,
+      "label": "Oli, czyli Oliver Mazurczak, i piosenka Slave"
+    },
+    {
+      "start": 2060,
+      "end": 2083,
+      "label": "Litewski Grieve God i deathmetalowa ekstrema"
+    },
+    {
+      "start": 2699,
+      "end": 2752,
+      "label": "Artifer i epka The End is Only the Beginning"
+    },
+    {
+      "start": 3263,
+      "end": 3294,
+      "label": "Pale Ellison z Narwy i awaria gitary"
+    },
+    {
+      "start": 3792,
+      "end": 3894,
+      "label": "Czwartek: Evestus i Surgeon pod egidą Heavy Music Estonia"
+    },
+    {
+      "start": 4076,
+      "end": 4194,
+      "label": "Fiński Numento i instrument kantele"
+    },
+    {
+      "start": 5043,
+      "end": 5120,
+      "label": "Antsud Metal Project, folkmetal oparty na tradycji"
+    },
+    {
+      "start": 5585,
+      "end": 5652,
+      "label": "Piątek: Sunniva i Sos Asylum na wieczorze Blow Up"
+    },
+    {
+      "start": 6429,
+      "end": 6750,
+      "label": "Humanity i Nihilist Crypt, estoński death metal na koniec"
+    }
+  ],
   "tags": [
     {
       "id": "antsud-metal-project",
@@ -102,7 +163,7 @@
   "tracks": [
     {
       "start": 12,
-      "end": 389,
+      "end": 203,
       "durationSec": 192,
       "artist": "Evestus",
       "title": "Post Hate",
@@ -115,7 +176,7 @@
     },
     {
       "start": 389,
-      "end": 1037,
+      "end": 1028,
       "durationSec": 227,
       "artist": "Bloodfeather",
       "title": "Sins Ignored",
@@ -141,7 +202,7 @@
     },
     {
       "start": 1372,
-      "end": 1563,
+      "end": 1549,
       "durationSec": 177,
       "artist": "Sever",
       "title": "Dead & Gone",
@@ -167,7 +228,7 @@
     },
     {
       "start": 1876,
-      "end": 2083,
+      "end": 2060,
       "durationSec": 171,
       "artist": "OLLIE",
       "title": "Slave",
@@ -193,7 +254,7 @@
     },
     {
       "start": 2470,
-      "end": 2752,
+      "end": 2699,
       "durationSec": 230,
       "artist": "Griefgod",
       "title": "Pestilence",
@@ -219,7 +280,7 @@
     },
     {
       "start": 3004,
-      "end": 3294,
+      "end": 3263,
       "durationSec": 260,
       "artist": "Artifer",
       "title": "Brighter Side of Life",
@@ -245,7 +306,7 @@
     },
     {
       "start": 3569,
-      "end": 3894,
+      "end": 3792,
       "durationSec": 178,
       "artist": "Pale Alison",
       "title": "Fake",
@@ -258,7 +319,7 @@
     },
     {
       "start": 3894,
-      "end": 4194,
+      "end": 4076,
       "durationSec": 183,
       "artist": "Surgent",
       "title": "Hollow Doctrine",
@@ -284,7 +345,7 @@
     },
     {
       "start": 4701,
-      "end": 5120,
+      "end": 5043,
       "durationSec": 344,
       "artist": "NUMENTO",
       "title": "Opilion",
@@ -310,7 +371,7 @@
     },
     {
       "start": 5351,
-      "end": 5652,
+      "end": 5585,
       "durationSec": 229,
       "artist": "Antsud Metal Project",
       "title": "Pihlamari",
@@ -336,7 +397,7 @@
     },
     {
       "start": 6126,
-      "end": 6750,
+      "end": 6429,
       "durationSec": 139,
       "artist": "Sociasylum",
       "title": "Crossroads",
