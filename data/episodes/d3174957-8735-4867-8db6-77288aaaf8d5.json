@@ -1,56 +1,68 @@
 {
   "version": 1,
   "id": "d3174957-8735-4867-8db6-77288aaaf8d5",
-  "analyzedAt": "2026-11-04",
+  "analyzedAt": "2026-11-05",
   "durationSec": 7228,
   "summary": "Audycja „Śmierć, węże i powracające sny” prezentuje najciekawsze ciężkie brzmienia sierpnia 2026, zaczynając od Chelsea Wolfe i przechodząc przez Merlina Mansona, Electric Cowboy oraz Mastodona. Prowadzący omawia nowe albumy, ich kontekst prawny i artystyczny, a także przytacza ciekawostki o artystach takich jak Jesse Drexler. W dalszej części programu przybliża mniej znane projekty, m.in. La Drones, Black Spikes oraz płytę Tongue of Angels, podkreślając ich eksperymentalny charakter. W audycji prowadzący rozmawia o stanie polskiej sceny metalowej, porównując ją z litewską i wskazując na brak równie przekonujących graczy. Omówiono nową płytę „Pure Ecstasy” zespołu Bertus oraz prezentację brazylijskiego deathcore’owego projektu Aksy. Następnie przybliżono historię amerykańskiego zespołu Flotsam and Jetsam i ich najnowszy album „Rats in the Temple”. Kolejne segmenty poświęcono francuskiemu zespołowi Gorod, koncepcyjnemu projektowi Miscreance oraz polskiemu deathgrindowi FAM i ich płycie „Pleasure of Torture”. Na koniec przytoczono szwedzką grupę Necrodon i angielskie trio FEN, podkreślając różnorodność współczesnego heavy. W ostatniej części audycji prowadzący zaprowadził słuchaczy w norweskie pustkowia, prezentując nowy projekt Holistik autorstwa Thor Helge Skei, którego muzyka łączy wiele gatunków i jest polecana fanom Ulvera. Następnie omówiono nowy album Wyraj białoruskiego zespołu Dymna Lotwa, podkreślając ich polityczne tło i współpracę z Eronem Stainthorpem. Na zakończenie przytoczono amerykańską grupę Russian Circles i fragment ich dziewiątej płyty Nine, zachęcając do odpoczynku po intensywnych dźwiękach.",
   "topics": [
     {
-      "start": 265,
+      "start": 267,
+      "end": 335,
       "label": "Omówienie nowego albumu Merlina Mansona i jego twórczej odnowy"
     },
     {
       "start": 690,
+      "end": 787,
       "label": "Prezentacja zespołu Mastodon i utworu „Snakes for Dinner” z albumu Marrow Deep"
     },
     {
-      "start": 1260,
+      "start": 1340,
+      "end": 1560,
       "label": "Kanonada – przegląd mniej znanych, eksperymentalnych projektów (La Drones, Black Spikes)"
     },
     {
       "start": 1560,
+      "end": 1737,
       "label": "Ciekawostka o artyście wizualnym i muzycznym Jesse Drexler oraz jego albumie Tongue of Angels"
     },
     {
       "start": 5667,
+      "end": 5843,
       "label": "Prezentacja norweskiego projektu Holistik Thor Helge Skei"
     },
     {
-      "start": 6231,
+      "start": 6233,
+      "end": 6359,
       "label": "Omówienie albumu Wyraj zespołu Dymna Lotwa"
     },
     {
       "start": 6708,
+      "end": 6729,
       "label": "Wzmianka o Russian Circles i ich albumie Nine"
     },
     {
       "start": 7228,
+      "end": 7228,
       "label": "Porównanie polskiej sceny metalowej z litewską i brak przekonujących polskich graczy"
     },
     {
       "start": 7228,
+      "end": 7228,
       "label": "Nowa płyta „Pure Ecstasy” zespołu Bertus i utwór „Eyes Closed”"
     },
     {
       "start": 7228,
+      "end": 7228,
       "label": "Brazylijski deathcore Aksy – album „The Pain Made Me Who I Am”"
     },
     {
       "start": 7228,
+      "end": 7228,
       "label": "Historia Flotsam and Jetsam oraz ich najnowszy album „Rats in the Temple”"
     },
     {
       "start": 7228,
+      "end": 7228,
       "label": "Polski deathgrind FAM – album „Pleasure of Torture”"
     }
   ],
@@ -72,7 +84,7 @@
     },
     {
       "start": 335,
-      "end": 595,
+      "end": 690,
       "durationSec": 260,
       "artist": "Marilyn Manson",
       "title": "Front Toward Enemy",
@@ -86,7 +98,7 @@
     },
     {
       "start": 787,
-      "end": 932,
+      "end": 1042,
       "durationSec": 145,
       "artist": "Electric Callboy",
       "title": "The Way You Are",
@@ -114,7 +126,7 @@
     },
     {
       "start": 1737,
-      "end": 1860,
+      "end": 1899,
       "durationSec": 123,
       "artist": "Jesse Draxler, Lord Spikeheart & Hybrid Intuition",
       "title": "Traap Number 9",
@@ -127,7 +139,7 @@
     },
     {
       "start": 1899,
-      "end": 2121,
+      "end": 2192,
       "durationSec": 221,
       "artist": "Ladrones",
       "title": "Arriba La L",
@@ -141,7 +153,7 @@
     },
     {
       "start": 2192,
-      "end": 2507,
+      "end": 2601,
       "durationSec": 315,
       "artist": "Black Spikes",
       "title": "MOTINA",
@@ -155,7 +167,7 @@
     },
     {
       "start": 2601,
-      "end": 2780,
+      "end": 2839,
       "durationSec": 179,
       "artist": "Beartooth",
       "title": "Eyes Closed",
@@ -168,7 +180,7 @@
     },
     {
       "start": 2839,
-      "end": 3067,
+      "end": 3136,
       "durationSec": 228,
       "artist": "AXTY",
       "title": "who I am",
@@ -181,7 +193,7 @@
     },
     {
       "start": 3136,
-      "end": 3405,
+      "end": 3491,
       "durationSec": 269,
       "artist": "Flotsam and Jetsam",
       "title": "Harvesting the Hate",
@@ -194,7 +206,7 @@
     },
     {
       "start": 3491,
-      "end": 3846,
+      "end": 3957,
       "durationSec": 355,
       "artist": "Gorod",
       "title": "Remains",
@@ -207,7 +219,7 @@
     },
     {
       "start": 3957,
-      "end": 4390,
+      "end": 4477,
       "durationSec": 433,
       "artist": "Miscreance",
       "title": "Oracle's Rift",
@@ -220,7 +232,7 @@
     },
     {
       "start": 4477,
-      "end": 4688,
+      "end": 4915,
       "durationSec": 211,
       "artist": "Temple Of Dread",
       "title": "Dreadspawn Dominion",
@@ -233,7 +245,7 @@
     },
     {
       "start": 4915,
-      "end": 5146,
+      "end": 5222,
       "durationSec": 230,
       "artist": "Nekrodawn",
       "title": "Covenant of Carnage",
@@ -273,7 +285,7 @@
     },
     {
       "start": 6359,
-      "end": 6689,
+      "end": 6708,
       "durationSec": 330,
       "artist": "Dymna Lotva",
       "title": "The Boat Of Despair (feat. Aaron Stainthorpe)",

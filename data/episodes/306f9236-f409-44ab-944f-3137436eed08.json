@@ -7,62 +7,77 @@
   "topics": [
     {
       "start": 301,
+      "end": 449,
       "label": "Koncert Thy Art is Murder i towarzyszących mu zespołów w Warszawie"
     },
     {
-      "start": 604,
+      "start": 707,
+      "end": 712,
       "label": "Powrót australijskiego thrashowego pioniera Mortal Scene i goście w Chorzowie"
     },
     {
       "start": 712,
+      "end": 862,
       "label": "Festiwal Rockowizna – daty, miasta i lineupy"
     },
     {
-      "start": 1065,
+      "start": 1066,
+      "end": 1295,
       "label": "Off Festival w Katowicach – zapowiedź Death Heaven, Chat Pile, Emil and the Sniffers i Einstürzende Neubauten"
     },
     {
-      "start": 1672,
+      "start": 1673,
+      "end": 1718,
       "label": "Zapowiedź koncertu This Will Destroy You w Poznaniu oraz występ Ailstorm w trzech miastach"
     },
     {
       "start": 1718,
+      "end": 1837,
       "label": "Wspólny koncert Savatash, Nevermore i Armored Saint w Warszawie 11 sierpnia"
     },
     {
-      "start": 2401,
+      "start": 2402,
+      "end": 2447,
       "label": "Koncert Ermord Saint z Metal Church i Testamentem w Krakowie 13 sierpnia"
     },
     {
       "start": 2986,
+      "end": 3095,
       "label": "Festiwal Niech cisza milczy 14‑15 sierpnia w Pyskowicach"
     },
     {
-      "start": 3376,
+      "start": 3377,
+      "end": 3503,
       "label": "Rocznica 50-lecia Rose Tattoo i trasa Rock'n'Roll Outlaws One Last Ride"
     },
     {
       "start": 4108,
+      "end": 4200,
       "label": "True Metal Camp w Bogusławicach 22 sierpnia"
     },
     {
       "start": 4200,
+      "end": 4245,
       "label": "Festiwal Sound of the Ages na zamku w Ćmielowie z międzynarodowym składem"
     },
     {
       "start": 4245,
+      "end": 4320,
       "label": "Hell in the Shell w Sosnowcu – amfiteatr Muszelka i polskie zespoły"
     },
     {
       "start": 4320,
+      "end": 4380,
       "label": "Sundice Festival w Olsztynie – nowa lokalizacja i lineup"
     },
     {
-      "start": 4590,
+      "start": 4789,
+      "end": 4789,
       "label": "The Last Words of Death w Bydgoszczy – 38. edycja i lineup"
     },
     {
-      "start": 4710,
+      "start": 4789,
+      "end": 4862,
       "label": "Koncerty Fear Factory oraz towarzyszące występy w sierpniu i wrześniu"
     }
   ],
@@ -98,7 +113,7 @@
     },
     {
       "start": 862,
-      "end": 918,
+      "end": 935,
       "durationSec": 56,
       "artist": "Lord of the Lost",
       "title": "The Days Of Our Lives",
@@ -152,7 +167,7 @@
     },
     {
       "start": 2447,
-      "end": 2765,
+      "end": 2822,
       "durationSec": 318,
       "artist": "Testament",
       "title": "Native Blood",
@@ -166,7 +181,7 @@
     },
     {
       "start": 2822,
-      "end": 2968,
+      "end": 2986,
       "durationSec": 146,
       "artist": "Agnostic Front",
       "title": "Matter Of Life & Death",
@@ -192,7 +207,7 @@
     },
     {
       "start": 3503,
-      "end": 3740,
+      "end": 3890,
       "durationSec": 237,
       "artist": "Rose Tattoo",
       "title": "Rock 'N' Roll Outlaw (Live)",
@@ -206,7 +221,7 @@
     },
     {
       "start": 3890,
-      "end": 3938,
+      "end": 3953,
       "durationSec": 48,
       "artist": "Soen",
       "title": "Deceiver",
@@ -219,7 +234,7 @@
     },
     {
       "start": 3953,
-      "end": 4096,
+      "end": 4108,
       "durationSec": 143,
       "artist": "Soen",
       "title": "Deceiver",
@@ -246,7 +261,7 @@
     },
     {
       "start": 4862,
-      "end": 5580,
+      "end": 5666,
       "durationSec": 718,
       "artist": "Damnation",
       "title": "Son of Fire",
@@ -259,7 +274,7 @@
     },
     {
       "start": 5666,
-      "end": 5971,
+      "end": 6092,
       "durationSec": 305,
       "artist": "Soulfly",
       "title": "Tribe",
@@ -272,7 +287,7 @@
     },
     {
       "start": 6092,
-      "end": 6304,
+      "end": 6353,
       "durationSec": 212,
       "artist": "The Materia",
       "title": "1984",
@@ -285,7 +300,7 @@
     },
     {
       "start": 6353,
-      "end": 6638,
+      "end": 6730,
       "durationSec": 285,
       "artist": "Frightful",
       "title": "Disincarnate Sower",
@@ -362,6 +377,12 @@
   ],
   "credits": [
     {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
+    {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
       "time": 49,
@@ -372,12 +393,6 @@
       "name": "Michał Kowarski",
       "time": 56,
       "quote": "Audycję wydaje Michał Kowarski"
-    },
-    {
-      "role": "wydawca",
-      "name": "Mariusz Owczarek",
-      "time": 0,
-      "quote": ""
     }
   ]
 }

@@ -7,58 +7,72 @@
   "topics": [
     {
       "start": 305,
+      "end": 461,
       "label": "Premiery albumów i singli lipca 2026 – przegląd najważniejszych nowości"
     },
     {
       "start": 900,
+      "end": 950,
       "label": "Amerykańska scena metalowa – Five Finger Death Punch, Devil Driver, No Cure"
     },
     {
-      "start": 1500,
+      "start": 1566,
+      "end": 1629,
       "label": "Europejski nowoczesny metal – Future Palace, Moonspell, Haken, Old"
     },
     {
       "start": 2100,
+      "end": 2136,
       "label": "Eksperymentalne i post‑rockowe projekty – Dry Wedding, If This We Could Talk"
     },
     {
       "start": 3090,
+      "end": 3094,
       "label": "Rozważania o wspólnej trasie No Cure i Boundaries oraz nowy album Boundaries"
     },
     {
       "start": 3816,
+      "end": 3930,
       "label": "Premiera trzeciej płyty mongolskiego zespołu The Who"
     },
     {
-      "start": 4122,
+      "start": 4123,
+      "end": 4167,
       "label": "Opowieść o Enslaved, festiwalu i utworze Spirit Helper"
     },
     {
       "start": 4450,
+      "end": 4525,
       "label": "Prezentacja belgijskiej grupy Emptiness i albumu Nowhere's Picks"
     },
     {
       "start": 4918,
+      "end": 5030,
       "label": "Projekt Left to Die – debiutancki album Initium Mortis jako hołd dla Death"
     },
     {
-      "start": 5165,
+      "start": 5196,
+      "end": 5237,
       "label": "Nowa płyta Psychroptic – The Pulse of Annihilation"
     },
     {
-      "start": 5436,
+      "start": 5437,
+      "end": 5534,
       "label": "Projekt Ravage by the Yeti i album Snowbound Horror"
     },
     {
-      "start": 5735,
+      "start": 5746,
+      "end": 5851,
       "label": "Black metal – Profane Burial i album Desolate Echoes of Turmoil"
     },
     {
-      "start": 6027,
+      "start": 6238,
+      "end": 6270,
       "label": "Francuski zespół Mourir – dyskusja o ich brzmieniu"
     },
     {
       "start": 6710,
+      "end": 6760,
       "label": "Amerykański zespół Soas – utwór z albumu Fading Failing Ruin"
     }
   ],
@@ -66,7 +80,7 @@
   "tracks": [
     {
       "start": 4,
-      "end": 247,
+      "end": 305,
       "durationSec": 243,
       "artist": "Besvärjelsen",
       "title": "Didn't Come to Party",
@@ -80,7 +94,7 @@
     },
     {
       "start": 461,
-      "end": 590,
+      "end": 648,
       "durationSec": 129,
       "artist": "Five Finger Death Punch",
       "title": "Eye of the Storm",
@@ -94,7 +108,7 @@
     },
     {
       "start": 648,
-      "end": 892,
+      "end": 900,
       "durationSec": 245,
       "artist": "DevilDriver",
       "title": "Strike and Kill",
@@ -108,7 +122,7 @@
     },
     {
       "start": 950,
-      "end": 1143,
+      "end": 1226,
       "durationSec": 193,
       "artist": "Future Palace",
       "title": "Resurge",
@@ -136,7 +150,7 @@
     },
     {
       "start": 1629,
-      "end": 2064,
+      "end": 2100,
       "durationSec": 435,
       "artist": "Dry Wedding",
       "title": "Moths",
@@ -150,7 +164,7 @@
     },
     {
       "start": 2136,
-      "end": 2493,
+      "end": 2546,
       "durationSec": 357,
       "artist": "If These Trees Could Talk",
       "title": "Blurry Creatures",
@@ -164,7 +178,7 @@
     },
     {
       "start": 2546,
-      "end": 2745,
+      "end": 2837,
       "durationSec": 198,
       "artist": "Haken",
       "title": "delirium",
@@ -178,7 +192,7 @@
     },
     {
       "start": 2837,
-      "end": 3019,
+      "end": 3090,
       "durationSec": 182,
       "artist": "Allt",
       "title": "Omertà",
@@ -192,7 +206,7 @@
     },
     {
       "start": 3094,
-      "end": 3318,
+      "end": 3649,
       "durationSec": 223,
       "artist": "No Cure",
       "title": "Slowly Turning Blue",
@@ -233,7 +247,7 @@
     },
     {
       "start": 4167,
-      "end": 4445,
+      "end": 4450,
       "durationSec": 277,
       "artist": "Enslaved",
       "title": "Spirit Helper (feat. Kevin Kicking Woman)",
@@ -247,7 +261,7 @@
     },
     {
       "start": 4525,
-      "end": 4862,
+      "end": 4918,
       "durationSec": 336,
       "artist": "Emptiness",
       "title": "Nowhere Speaks",
@@ -317,7 +331,7 @@
     },
     {
       "start": 6270,
-      "end": 6708,
+      "end": 6710,
       "durationSec": 438,
       "artist": "Mourir",
       "title": "Je est absent",
@@ -423,6 +437,12 @@
   ],
   "credits": [
     {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
+    {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
       "time": 269,
@@ -433,12 +453,6 @@
       "name": "Michał Kowarski",
       "time": 269,
       "quote": "wydaje Michał Kowarski"
-    },
-    {
-      "role": "wydawca",
-      "name": "Mariusz Owczarek",
-      "time": 0,
-      "quote": ""
     }
   ]
 }
