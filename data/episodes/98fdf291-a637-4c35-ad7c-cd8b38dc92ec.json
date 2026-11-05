@@ -1,0 +1,340 @@
+{
+  "version": 1,
+  "id": "98fdf291-a637-4c35-ad7c-cd8b38dc92ec",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T21:43:03.018Z",
+  "durationSec": 6906,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "chat-pile",
+      "label": "Chat Pile",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6459
+    },
+    {
+      "id": "electric-wizard",
+      "label": "Electric Wizard",
+      "type": "artist",
+      "source": "tracks",
+      "at": 485
+    },
+    {
+      "id": "ethel-cain",
+      "label": "Ethel Cain",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3996
+    },
+    {
+      "id": "floating",
+      "label": "Floating",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2708
+    },
+    {
+      "id": "grayceon",
+      "label": "Grayceon",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3253
+    },
+    {
+      "id": "health",
+      "label": "HEALTH",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4472
+    },
+    {
+      "id": "hesitation-wounds",
+      "label": "Hesitation Wounds",
+      "type": "artist",
+      "source": "tracks",
+      "at": 24
+    },
+    {
+      "id": "idles",
+      "label": "IDLES",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1525
+    },
+    {
+      "id": "incendiary",
+      "label": "Incendiary",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5224
+    },
+    {
+      "id": "king-yosef",
+      "label": "King Yosef",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4685
+    },
+    {
+      "id": "maruja",
+      "label": "Maruja",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5956
+    },
+    {
+      "id": "meshuggah",
+      "label": "Meshuggah",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2014
+    },
+    {
+      "id": "prostitute",
+      "label": "Prostitute",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5615
+    }
+  ],
+  "tracks": [
+    {
+      "start": 24,
+      "end": 485,
+      "durationSec": 375,
+      "artist": "Hesitation Wounds",
+      "title": "New Abuse",
+      "album": "Awake for Everything",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 485,
+      "end": 909,
+      "durationSec": 388,
+      "artist": "Electric Wizard",
+      "title": "Black Mass (Live Walpurgisnacht 2020)",
+      "album": "Black Magic Rituals & Perversions Vol. 1 (Live Walpurgisnacht 2020)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 909,
+      "end": 1525,
+      "durationSec": 601,
+      "artist": "Electric Wizard",
+      "title": "Witchcult Today (Live Walpurgisnacht 2020)",
+      "album": "Black Magic Rituals & Perversions Vol. 1 (Live Walpurgisnacht 2020)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1525,
+      "end": 1765,
+      "durationSec": 231,
+      "artist": "IDLES",
+      "title": "1049 Gotho (Live at Le Bataclan)",
+      "album": "A Beautiful Thing: IDLES Live at Le Bataclan",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1765,
+      "end": 2014,
+      "durationSec": 196,
+      "artist": "IDLES",
+      "title": "Divide & Conquer (Live at Le Bataclan)",
+      "album": "A Beautiful Thing: IDLES Live at Le Bataclan",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2014,
+      "end": 2364,
+      "durationSec": 343,
+      "artist": "Meshuggah",
+      "title": "Electric Red (Live in Tokyo)",
+      "album": "Alive",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2364,
+      "end": 2708,
+      "durationSec": 282,
+      "artist": "Meshuggah",
+      "title": "New Millennium Cyanide Christ (Live)",
+      "album": "The Ophidian Trek (Live)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2708,
+      "end": 3253,
+      "durationSec": 516,
+      "artist": "Floating",
+      "title": "Still Dark Enough",
+      "album": "Hesitating Lights",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3253,
+      "end": 3996,
+      "durationSec": 723,
+      "artist": "Grayceon",
+      "title": "Forever Teeth",
+      "album": "Then The Darkness",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3996,
+      "end": 4472,
+      "durationSec": 425,
+      "artist": "Ethel Cain",
+      "title": "Nettles",
+      "album": "Willoughby Tucker, I'll Always Love You",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4472,
+      "end": 4685,
+      "durationSec": 207,
+      "artist": "HEALTH",
+      "title": "FEEL NOTHING",
+      "album": "VOL. 4 :: SLAVES OF FEAR",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4685,
+      "end": 4850,
+      "durationSec": 153,
+      "artist": "King Yosef",
+      "title": "Spire Of Fear",
+      "album": "Spire Of Fear",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4850,
+      "end": 5224,
+      "durationSec": 364,
+      "artist": "King Yosef",
+      "title": "Molting Fear",
+      "album": "Spire Of Fear",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5224,
+      "end": 5615,
+      "durationSec": 319,
+      "artist": "Incendiary",
+      "title": "Front Toward Enemy",
+      "album": "Thousand Mile Stare",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5615,
+      "end": 5956,
+      "durationSec": 240,
+      "artist": "Prostitute",
+      "title": "All Hail",
+      "album": "Attempted Martyr",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5956,
+      "end": 6204,
+      "durationSec": 208,
+      "artist": "Maruja",
+      "title": "Look Down On Us",
+      "album": "Pain to Power",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6204,
+      "end": 6459,
+      "durationSec": 158,
+      "artist": "Maruja",
+      "title": "Look Down On Us",
+      "album": "Pain to Power",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6459,
+      "end": 6906,
+      "durationSec": 448,
+      "artist": "Chat Pile",
+      "title": "Masc",
+      "album": "Cool World",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}

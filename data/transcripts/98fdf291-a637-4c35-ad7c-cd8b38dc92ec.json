@@ -1,0 +1,670 @@
+{
+  "version": 1,
+  "episodeId": "98fdf291-a637-4c35-ad7c-cd8b38dc92ec",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 110502912,
+  "fileMtimeMs": 1789150929379.6152,
+  "windows": [
+    {
+      "index": 0,
+      "start": 2.44,
+      "end": 25.76
+    },
+    {
+      "index": 1,
+      "start": 397.38,
+      "end": 486.97
+    },
+    {
+      "index": 2,
+      "start": 871.97,
+      "end": 910.91
+    },
+    {
+      "index": 3,
+      "start": 1509,
+      "end": 1526.68
+    },
+    {
+      "index": 4,
+      "start": 1754.5,
+      "end": 1766.68
+    },
+    {
+      "index": 5,
+      "start": 1959.27,
+      "end": 2015.48
+    },
+    {
+      "index": 6,
+      "start": 2355.56,
+      "end": 2365.05
+    },
+    {
+      "index": 7,
+      "start": 2643.88,
+      "end": 2709.4
+    },
+    {
+      "index": 8,
+      "start": 3222.21,
+      "end": 3254.65
+    },
+    {
+      "index": 9,
+      "start": 3974.88,
+      "end": 3997.76
+    },
+    {
+      "index": 10,
+      "start": 4419.43,
+      "end": 4473.37
+    },
+    {
+      "index": 11,
+      "start": 4677.03,
+      "end": 4686.81
+    },
+    {
+      "index": 12,
+      "start": 4836.8,
+      "end": 4851.29
+    },
+    {
+      "index": 13,
+      "start": 5212.71,
+      "end": 5225.6
+    },
+    {
+      "index": 14,
+      "start": 5541.86,
+      "end": 5561.88
+    },
+    {
+      "index": 15,
+      "start": 5581.92,
+      "end": 5616.06
+    },
+    {
+      "index": 16,
+      "start": 5773.6,
+      "end": 5777.21
+    },
+    {
+      "index": 17,
+      "start": 5852.77,
+      "end": 5895.45
+    },
+    {
+      "index": 18,
+      "start": 5936.13,
+      "end": 5957.53
+    },
+    {
+      "index": 19,
+      "start": 6162.63,
+      "end": 6168.7
+    },
+    {
+      "index": 20,
+      "start": 6197.73,
+      "end": 6205.5
+    },
+    {
+      "index": 21,
+      "start": 6360.2,
+      "end": 6460.28
+    }
+  ],
+  "segments": [
+    {
+      "start": 2.44,
+      "end": 6.04,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 6.04,
+      "end": 23.1,
+      "text": "Zespół Hesitation Rooms"
+    },
+    {
+      "start": 23.1,
+      "end": 24.16,
+      "text": "You have used"
+    },
+    {
+      "start": 24.16,
+      "end": 25.76,
+      "text": "Zespół Hesitation Rooms"
+    },
+    {
+      "start": 398.2,
+      "end": 402.44,
+      "text": "Hesitation Wounds, tym razem w tytule i zespół End."
+    },
+    {
+      "start": 403.12,
+      "end": 407.26,
+      "text": "Zestaw ran zawahaniowych na dobry początek naszego dzisiejszego spotkania."
+    },
+    {
+      "start": 417.48,
+      "end": 423.02,
+      "text": "Przyznam się bez bicia, że ta audycja została nagrana w sypialni mojego domu rodzinnego w Ostrołęce."
+    },
+    {
+      "start": 423.02,
+      "end": 430.62,
+      "text": "I spora część muzyki, która się dzisiaj pojawi, jest inspirowana Ostrołęką właśnie i okolicami."
+    },
+    {
+      "start": 434.3,
+      "end": 440.48,
+      "text": "Pierwsze miejsce, do którego udałem się w poszukiwaniu inspiracji był kościół pod wezwaniem św. Anny w Kamiance."
+    },
+    {
+      "start": 440.94,
+      "end": 442.72,
+      "text": "Bardzo, bardzo, bardzo polecam."
+    },
+    {
+      "start": 443.22,
+      "end": 449.06,
+      "text": "Nieduży kościół o średniej atrakcyjności, mówiąc o budynku, ale okolica wspaniała."
+    },
+    {
+      "start": 449.06,
+      "end": 456.58,
+      "text": "Środek lasu, stosunkowo blisko cywilizacji, ale jest na tyle cicho, że można w spokoju zebrać myśli."
+    },
+    {
+      "start": 457.1,
+      "end": 462.42,
+      "text": "150 metrów do rzeki, ławeczki, drewniane podesty, miejsce na ognisko."
+    },
+    {
+      "start": 462.84,
+      "end": 464.32,
+      "text": "Jednym słowem, bajka."
+    },
+    {
+      "start": 465.5,
+      "end": 471.34,
+      "text": "Jaki był pierwszy utwór, który przyszedł mi do głowy, stojąc w środku lasu, obok kościoła nocą?"
+    },
+    {
+      "start": 471.34,
+      "end": 486.98,
+      "text": "Nie, spokojnie, bez przysady. Nie będzie aż takiej profanacji, ale będą wiedźmy."
+    },
+    {
+      "start": 871.97,
+      "end": 877.07,
+      "text": "Przyznam, że w tej scenerii Electric Wizard brzmiało wyjątkowo epicko."
+    },
+    {
+      "start": 877.75,
+      "end": 883.15,
+      "text": "I w tamtym momencie dopadł mnie żal, że mimo intensywnego namawiania moich przyjaciół z liceum,"
+    },
+    {
+      "start": 883.57,
+      "end": 887.15,
+      "text": "mój pierwszym festiwal, na którym byłem, był dopiero 3 lata temu."
+    },
+    {
+      "start": 888.45,
+      "end": 892.57,
+      "text": "A w 2019 roku Electric Wizard właśnie grał na ofie."
+    },
+    {
+      "start": 893.31,
+      "end": 898.97,
+      "text": "Na otarcie łez pozostaje live, który został zarejestrowany rok później z okazji Nocy Walpurgi."
+    },
+    {
+      "start": 901.97,
+      "end": 905.37,
+      "text": "Podawnych Germanów Noc Zmarłych lub Złych Duchów."
+    },
+    {
+      "start": 906.11,
+      "end": 909.25,
+      "text": "Do oproszczenia można powiedzieć, że to takie germańskie dziady."
+    },
+    {
+      "start": 909.25,
+      "end": 910.91,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1509,
+      "end": 1516,
+      "text": "\"Black Mass\" i \"Witch Call Today\" Live Warpulgisnacht 2020."
+    },
+    {
+      "start": 1516,
+      "end": 1522,
+      "text": "Świetna płyta live i przy takich płytach pozostaniemy, choć będzie nieco spokojniej."
+    },
+    {
+      "start": 1524,
+      "end": 1526.68,
+      "text": "Nieco."
+    },
+    {
+      "start": 1754.5,
+      "end": 1758.5,
+      "text": "...doctors, or physicians, or cleaners that work for other people."
+    },
+    {
+      "start": 1759.72,
+      "end": 1762.48,
+      "text": "Cet chance on s'appelle, divide and conquer."
+    },
+    {
+      "start": 1762.8,
+      "end": 1763.62,
+      "text": "Merci beaucoup."
+    },
+    {
+      "start": 1959.27,
+      "end": 1963.45,
+      "text": "Idols, kolejny zespół, który ominął mnie i to nie raz."
+    },
+    {
+      "start": 1966.39,
+      "end": 1971.81,
+      "text": "2017 Off, 2019 Opener, 2024 Inside Seaside."
+    },
+    {
+      "start": 1972.61,
+      "end": 1975.49,
+      "text": "Mam nadzieję, że szybko wrócą, podobnie jak następny zespół."
+    },
+    {
+      "start": 1976.03,
+      "end": 1980.79,
+      "text": "Ostatni występ w Polsce, o ile mnie pamięć nie myli, Mystic Festival 2023."
+    },
+    {
+      "start": 1981.79,
+      "end": 1984.35,
+      "text": "Myszuga, czyli po łacinie szalony."
+    },
+    {
+      "start": 1984.35,
+      "end": 1988.87,
+      "text": "I wciąż uważam, że to jedna z najlepszych nazw zespołów wszechczasów."
+    },
+    {
+      "start": 1989.27,
+      "end": 1993.23,
+      "text": "Również sięgniemy po występ, który odbył się na żywo."
+    },
+    {
+      "start": 1994.37,
+      "end": 2001.45,
+      "text": "Alive, płyta z 2010 roku, czyli dwie i pół godziny najlepszych utworów z trasy promujących płytę Obzen."
+    },
+    {
+      "start": 2002.87,
+      "end": 2006.99,
+      "text": "To może Ian Skidman sam powie, co szaleńcy ze Szwecji zagrają."
+    },
+    {
+      "start": 2355.56,
+      "end": 2362.56,
+      "text": "To skoro już jesteśmy przy Myszuga Live, sięgnijmy po ich kolejną płytę nagraną ze sceny."
+    },
+    {
+      "start": 2362.56,
+      "end": 2365.06,
+      "text": "Dziękuję."
+    },
+    {
+      "start": 2644.8,
+      "end": 2653.88,
+      "text": "Jest to tak dobrze sterylnie wyprodukowana płyta live, że brzmiałaby jak płyta studyjna, gdyby nie to, że od czasu do czasu pojawia się publika."
+    },
+    {
+      "start": 2654.64,
+      "end": 2657.08,
+      "text": "Przede wszystkim wokal brzmi jednak jak ze sceny."
+    },
+    {
+      "start": 2657.84,
+      "end": 2659.52,
+      "text": "Dovidian track, Meszuga."
+    },
+    {
+      "start": 2662.1,
+      "end": 2671.32,
+      "text": "Jeśli ktoś włączył trójkę teraz, ja nazywam się Michał Kowarski, kłaniam się, a to jest audycja Ciężko na sercu, w zastępstwie za Jarka Szubrychta."
+    },
+    {
+      "start": 2671.32,
+      "end": 2679.02,
+      "text": "A to było Meszuga. Wszystkie utwory pojawiły się w mojej głowie podczas siedzenia pod kościołem pod wezwaniem św. Anny w Kamiance."
+    },
+    {
+      "start": 2679.72,
+      "end": 2689.76,
+      "text": "Polecam miejsce, ale na tamten moment przyznam, że było już trochę zimno, to było po 22, więc postanowiłem się udać pod kolejne inspirujące miejsce, tym razem w Ostrołęce."
+    },
+    {
+      "start": 2690.84,
+      "end": 2693.8,
+      "text": "Ale zanim zdradzę jakie, garść nowości."
+    },
+    {
+      "start": 2700.8,
+      "end": 2702.02,
+      "text": "Pozostajemy w Szwecji."
+    },
+    {
+      "start": 2702.6,
+      "end": 2706.58,
+      "text": "Zespół nazywa się Floating, a płyta nazywa się Hesitating Lights."
+    },
+    {
+      "start": 2706.58,
+      "end": 2709.4,
+      "text": "Hesitating Lights"
+    },
+    {
+      "start": 3222.21,
+      "end": 3228.05,
+      "text": "Zespół Floating, death metal połączony z post-punkiem, miasto UPSALAD"
+    },
+    {
+      "start": 3228.05,
+      "end": 3238.53,
+      "text": "I ze Szwecji do San Francisco się udamy"
+    },
+    {
+      "start": 3238.53,
+      "end": 3247.99,
+      "text": "I tym razem pierwsze skrzypce zagra w violonczelach"
+    },
+    {
+      "start": 3252.21,
+      "end": 3254.65,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 3974.88,
+      "end": 3984.88,
+      "text": "Then the Darkness ze spół Gracion. Kolejna nowa ciekawa płyta metalowa, godna polecenia, podobnie jak następny album, Ethel Cain."
+    },
+    {
+      "start": 3984.88,
+      "end": 3997.76,
+      "text": "Uwaga, nie będzie metalowo, ale czasem trzeba odetchnąć. Tym bardziej, że to smutna, mroczna, ciężka dla serca płyta, a w dalszej części programu same ciężkie znamienitości."
+    },
+    {
+      "start": 4420.43,
+      "end": 4426.85,
+      "text": "Heidel and Hedonia, postać, która stoi za projektem Eiffel Kane, zapowiada, że to ostatni album pod tym szyldem."
+    },
+    {
+      "start": 4427.37,
+      "end": 4431.27,
+      "text": "Szkoda, ale wierzę, że Heidel jeszcze nas zaskoczy nie raz."
+    },
+    {
+      "start": 4449.27,
+      "end": 4456.65,
+      "text": "W naszej podróży po Ostrołęce docieram teraz pod elektrownię, a konkretnie za elektrownię."
+    },
+    {
+      "start": 4456.65,
+      "end": 4465.11,
+      "text": "Puste pole otoczone lasem, betonowy mur, kominy, węgiel, dym. Brzmi jak industrial."
+    },
+    {
+      "start": 4465.11,
+      "end": 4473.37,
+      "text": "I żeby spokojnie wejść w te odmęty ciężkości, w ramach appetizera Health."
+    },
+    {
+      "start": 4677.03,
+      "end": 4686.81,
+      "text": "\"Health\" i \"Feel Nothing\", które pozwoli nam płynnie przejść do absolutnego artydziała industrialnego bezkompromisowego..."
+    },
+    {
+      "start": 4836.8,
+      "end": 4843.8,
+      "text": "King Joseph, Spite of Fear. Wydana w piątek, absolutnie genialna płyta."
+    },
+    {
+      "start": 4843.8,
+      "end": 4851.3,
+      "text": "Na pewno dostarczyła mi najwięcej radości ze wszystkich nowych rzeczy, które się pojawiły w audycji Ciężko na Sersu."
+    },
+    {
+      "start": 5212.71,
+      "end": 5219.11,
+      "text": "Tak brzmi wspaniały industrial metal, tak brzmi elektrownia w Ostrołęce."
+    },
+    {
+      "start": 5219.11,
+      "end": 5225.61,
+      "text": "Następne miejsce, no cóż, areszt w przytułach starych."
+    },
+    {
+      "start": 5541.86,
+      "end": 5551.82,
+      "text": "Skojarzenia wokalne z Zakiem de la Rochą i Rage Against the Machine absolutnie zrozumiałe, choć muzycznie bardziej w stronę Suicidal Tendencies."
+    },
+    {
+      "start": 5552.42,
+      "end": 5560.14,
+      "text": "Zespół Incendiary, bardzo polecam jeżeli ktoś lubi hardcore, posthardcore, choć teraz przejdziemy do odrobinę abstrakcji."
+    },
+    {
+      "start": 5560.14,
+      "end": 5561.88,
+      "text": "Zespół Incendiary"
+    },
+    {
+      "start": 5582.42,
+      "end": 5591.08,
+      "text": "Czy ktoś z Państwa wyobrażał sobie kiedyś, jak mogłaby brzmieć muzyczna interpretacja pogorzeliska po wybuchu bomby atomowej w Hiroshimie?"
+    },
+    {
+      "start": 5592.58,
+      "end": 5596.12,
+      "text": "Ground Zero, Consume Red, 1997."
+    },
+    {
+      "start": 5597.42,
+      "end": 5601.78,
+      "text": "Godzinna, bolesna, genialna płyta japońskiego zespołu."
+    },
+    {
+      "start": 5602.68,
+      "end": 5605.26,
+      "text": "Acz nie będziemy jej grać teraz w całości."
+    },
+    {
+      "start": 5607.5,
+      "end": 5611.66,
+      "text": "Pewien metalowy zespół postanowił Consume Red samplować."
+    },
+    {
+      "start": 5611.92,
+      "end": 5613.72,
+      "text": "i dodać co nieco od siebie."
+    },
+    {
+      "start": 5773.6,
+      "end": 5777.22,
+      "text": "TUNKA"
+    },
+    {
+      "start": 5852.77,
+      "end": 5857.01,
+      "text": "Zespół Prostitute w utworze All Hail."
+    },
+    {
+      "start": 5857.61,
+      "end": 5862.79,
+      "text": "Myślę, że za tydzień wrócimy do tego zespołu i ich debitanckiej płyty Attempted Martyr."
+    },
+    {
+      "start": 5863.75,
+      "end": 5866.75,
+      "text": "Tymczasem pozostaniemy przy saksofonie w roli głównej."
+    },
+    {
+      "start": 5882.77,
+      "end": 5895.45,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5936.13,
+      "end": 5957.53,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 6162.63,
+      "end": 6164.67,
+      "text": "My body is a shell"
+    },
+    {
+      "start": 6164.67,
+      "end": 6166.41,
+      "text": "So why so much division"
+    },
+    {
+      "start": 6166.41,
+      "end": 6168.71,
+      "text": "Is the joy that through our heads"
+    },
+    {
+      "start": 6197.73,
+      "end": 6205.51,
+      "text": "Właśnie w tym czasie, nie wytrzymy się, nie wytrzymy się, nie wytrzymy się, zawsze czuję się zimno."
+    },
+    {
+      "start": 6360.98,
+      "end": 6366.82,
+      "text": "Warto przypomnieć, że 14 września wychodzi debiutancka płyta zespołu Maruża."
+    },
+    {
+      "start": 6367.68,
+      "end": 6371.44,
+      "text": "Pain to Power. Maruża i Look Down on Us."
+    },
+    {
+      "start": 6372.62,
+      "end": 6376.96,
+      "text": "Czas płynienia ubłaganie, więc przed nami ostatni zespół w audycji Ciężko na sercu,"
+    },
+    {
+      "start": 6377.18,
+      "end": 6380.5,
+      "text": "ale wcześniej chciałbym się podzielić pewną refleksją."
+    },
+    {
+      "start": 6382.04,
+      "end": 6388.5,
+      "text": "Ta audycja powstała w Ostrołęce, mieście, które ma nie więcej niż 35 tysięcy mieszkańców."
+    },
+    {
+      "start": 6389.68,
+      "end": 6395.68,
+      "text": "Zainspirowana takimi wspaniałymi miejscami jak kościół w środku lasu, elektrownia czy zakład karny."
+    },
+    {
+      "start": 6396.66,
+      "end": 6399.84,
+      "text": "Brzmi jak wyborny zestaw zwiedzania, ale mówiąc absolutnie poważnie."
+    },
+    {
+      "start": 6400.8,
+      "end": 6405.78,
+      "text": "Trudne, nieprzystępne miejsca mogą inspirować do rzeczy wielkich i pięknych."
+    },
+    {
+      "start": 6407.68,
+      "end": 6413.24,
+      "text": "Takie trudne miejsce zainspirowało zespół Chat Pile do nagrania najlepszej płyty metalowej tamtego roku."
+    },
+    {
+      "start": 6413.9,
+      "end": 6414.36,
+      "text": "Moim zdaniem."
+    },
+    {
+      "start": 6414.36,
+      "end": 6419.56,
+      "text": "No, może poza Vida Blue zespołu Mamalek, ale to zostawimy sobie na za tydzień."
+    },
+    {
+      "start": 6419.82,
+      "end": 6423.38,
+      "text": "Tym bardziej, że niedawno Mamalek wydał remaster swoich wcześniejszych prac."
+    },
+    {
+      "start": 6424.04,
+      "end": 6424.68,
+      "text": "Ale do brzegu."
+    },
+    {
+      "start": 6425.68,
+      "end": 6428.52,
+      "text": "Nazwa Chat Pile wzięła się z przemysłu ciężkiego w Oklahoma."
+    },
+    {
+      "start": 6429.36,
+      "end": 6437.68,
+      "text": "Najbardziej ekstremalnym przykładem szkodliwości tegoż przemysłu jest miasto Pickett, które pod koniec XX wieku zostało całkowicie zamknięte i wyludnione."
+    },
+    {
+      "start": 6438.42,
+      "end": 6441.4,
+      "text": "To trzecie dziecko w mieście wyrodziło się za łowicą."
+    },
+    {
+      "start": 6442.34,
+      "end": 6447.18,
+      "text": "Jedyne co zostało to puste domy i białe hałdy, które miejscowi nazywałem Chat Pile."
+    },
+    {
+      "start": 6448.24,
+      "end": 6453.16,
+      "text": "Jak z braku perspektyw może narodzić się ciężkie piękna."
+    },
+    {
+      "start": 6453.46,
+      "end": 6454.18,
+      "text": "Michał Kowarski."
+    },
+    {
+      "start": 6454.84,
+      "end": 6456.24,
+      "text": "To była audycja Ciężko na sercu."
+    },
+    {
+      "start": 6457.16,
+      "end": 6458.22,
+      "text": "Miłego dalszego odbioru."
+    },
+    {
+      "start": 6458.22,
+      "end": 6460.28,
+      "text": "DZIENNIKARZ"
+    }
+  ],
+  "stats": {
+    "windowCount": 22,
+    "transcribedAudioSec": 695.12,
+    "segmentCount": 108,
+    "characterCount": 6924
+  },
+  "sourceId": "2025-08-20-metalowe-inspiracje-z-ostroleki"
+}
