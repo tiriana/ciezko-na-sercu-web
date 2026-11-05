@@ -68,9 +68,14 @@ if (audio) {
 
   // Stan liczymy zawsze z currentTime, a nie z własnego zegara: po powrocie do karty,
   // po przewinięciu i po zmianie prędkości odtwarzania wyróżnienie zgadza się samo.
-  // Pozycje mogą się nakładać w danych sprzed uzgadniania osi, a grupa wejść obejmuje
-  // swoje wątki — dlatego podświetlamy wszystkie pasujące, nie pierwsze z listy.
-  const activeSpans = (time) => spans.filter((span) => time >= span.start && time < span.end);
+  // Wejścia i utwory mogą się nakładać, więc aktywna jest ta pozycja, która zaczęła się
+  // najpóźniej — klik w wejście w środku utworu podświetla wejście, nie piosenkę.
+  const activeSpans = (time) => {
+    const covering = spans.filter((span) => time >= span.start && time < span.end);
+    if (covering.length <= 1) return covering;
+    const latest = Math.max(...covering.map((span) => span.start));
+    return covering.filter((span) => span.start === latest);
+  };
 
   const setPlayingIcon = (button, playing) => {
     if (!button) return;
@@ -87,9 +92,9 @@ if (audio) {
       if (isActive) span.element.setAttribute('aria-current', 'true');
       else span.element.removeAttribute('aria-current');
 
-      if (span.kind === 'track') {
-        setPlayingIcon(span.element.querySelector('.track-play'), isActive);
-      }
+      // Ikona pauzy należy się każdej grającej pozycji — także wejściu i grupie wejść,
+      // nie tylko utworowi.
+      setPlayingIcon(span.element.querySelector('.track-play'), isActive);
     }
   };
 
