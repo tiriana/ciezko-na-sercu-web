@@ -1,0 +1,333 @@
+{
+  "version": 1,
+  "id": "9b8fb645-2639-4b75-bcfe-d903f3e6f872",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T21:18:44.844Z",
+  "durationSec": 6867,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "abruptum",
+      "label": "Abruptum",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4016
+    },
+    {
+      "id": "alchemist",
+      "label": "Alchemist",
+      "type": "artist",
+      "source": "tracks",
+      "at": 696
+    },
+    {
+      "id": "blut-aus-nord",
+      "label": "Blut aus Nord",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4923
+    },
+    {
+      "id": "burnt-by-the-sun",
+      "label": "Burnt By the Sun",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1101
+    },
+    {
+      "id": "chrome-hoof",
+      "label": "Chrome Hoof",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2872
+    },
+    {
+      "id": "deathspell-omega",
+      "label": "Deathspell Omega",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5732
+    },
+    {
+      "id": "ephel-duath",
+      "label": "Ephel Duath",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1956
+    },
+    {
+      "id": "esoteric",
+      "label": "Esoteric",
+      "type": "artist",
+      "source": "tracks",
+      "at": 12
+    },
+    {
+      "id": "fleurety",
+      "label": "Fleurety",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3527
+    },
+    {
+      "id": "forgotten-silence",
+      "label": "Forgotten Silence",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2359
+    },
+    {
+      "id": "gnaw-their-tongues",
+      "label": "Gnaw Their Tongues",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4317
+    },
+    {
+      "id": "the-end",
+      "label": "The End",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1379
+    }
+  ],
+  "tracks": [
+    {
+      "start": 12,
+      "end": 696,
+      "durationSec": 551,
+      "artist": "Esoteric",
+      "title": "Cipher",
+      "album": "Paragon of Dissonance",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 696,
+      "end": 1101,
+      "durationSec": 245,
+      "artist": "Alchemist",
+      "title": "Great Southern Wasteland",
+      "album": "Austral Alien",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1101,
+      "end": 1193,
+      "durationSec": 47,
+      "artist": "Burnt By the Sun",
+      "title": "Lizard-skin Barbie",
+      "album": "Burnt By the Sun - EP",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1193,
+      "end": 1379,
+      "durationSec": 159,
+      "artist": "Burnt By the Sun",
+      "title": "Forlani",
+      "album": "The Perfect Is the Enemy of the Good",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1379,
+      "end": 1662,
+      "durationSec": 256,
+      "artist": "The End",
+      "title": "The Asphyxiation of Lisa-Claire",
+      "album": "Transfer Trachea Reverberations from Point: False Omniscient",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1662,
+      "end": 1956,
+      "durationSec": 201,
+      "artist": "The End",
+      "title": "Animals",
+      "album": "Elementary",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1956,
+      "end": 2172,
+      "durationSec": 180,
+      "artist": "Ephel Duath",
+      "title": "Hole IV",
+      "album": "Pain Remixes the Known",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2172,
+      "end": 2359,
+      "durationSec": 78,
+      "artist": "Ephel Duath",
+      "title": "Hole IV",
+      "album": "Pain Remixes the Known",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2359,
+      "end": 2872,
+      "durationSec": 479,
+      "artist": "Forgotten Silence",
+      "title": "Translucide",
+      "album": "La Grande Bouffe",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2872,
+      "end": 3185,
+      "durationSec": 260,
+      "artist": "Chrome Hoof",
+      "title": "Death Is Certain",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3185,
+      "end": 3527,
+      "durationSec": 235,
+      "artist": "Chrome Hoof",
+      "title": "Third Sun Descendant",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3527,
+      "end": 4016,
+      "durationSec": 330,
+      "artist": "Fleurety",
+      "title": "I Saw Claws",
+      "album": "Last-Minute Lies / I Left The Planet",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4016,
+      "end": 4317,
+      "durationSec": 216,
+      "artist": "Abruptum",
+      "title": "Tortus Torquero Colla Tumentes",
+      "album": "Evil Genius",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4317,
+      "end": 4923,
+      "durationSec": 556,
+      "artist": "Gnaw Their Tongues",
+      "title": "White Void Black Wounds",
+      "album": "I Speak the Truth, Yet With Every Word Uttered, Thousands Die",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4923,
+      "end": 5387,
+      "durationSec": 391,
+      "artist": "Blut aus Nord",
+      "title": "The Choir Of The Dead",
+      "album": "The Work Which Transforms God",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5387,
+      "end": 5732,
+      "durationSec": 252,
+      "artist": "Blut aus Nord",
+      "title": "Chorea Macchabeorum",
+      "album": "Deus Salutis Meae",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5732,
+      "end": 6233,
+      "durationSec": 393,
+      "artist": "Deathspell Omega",
+      "title": "Si Monumentum Requires, Circumspice",
+      "album": "Si Monumentum Requires, Circumspice",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6233,
+      "end": 6867,
+      "durationSec": 634,
+      "artist": "Deathspell Omega",
+      "title": "The Shrine of Mad Laughter",
+      "album": "Fas - Ite, Maledicti, in Ignem Aeternum",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
