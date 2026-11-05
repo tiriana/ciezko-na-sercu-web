@@ -1,0 +1,990 @@
+{
+  "version": 1,
+  "episodeId": "a2e6fbff-f591-4e3a-819a-a9cf0a8ad8f3",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 110914385,
+  "fileMtimeMs": 1789150661896.1848,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 98.17
+    },
+    {
+      "index": 1,
+      "start": 337.16,
+      "end": 499.45
+    },
+    {
+      "index": 2,
+      "start": 709.92,
+      "end": 831.58
+    },
+    {
+      "index": 3,
+      "start": 1045.51,
+      "end": 1133.02
+    },
+    {
+      "index": 4,
+      "start": 1373.51,
+      "end": 1451.87
+    },
+    {
+      "index": 5,
+      "start": 1749.96,
+      "end": 1790.88
+    },
+    {
+      "index": 6,
+      "start": 2108.87,
+      "end": 2187.07
+    },
+    {
+      "index": 7,
+      "start": 2376.96,
+      "end": 2470.75
+    },
+    {
+      "index": 8,
+      "start": 2638.44,
+      "end": 2744.89
+    },
+    {
+      "index": 9,
+      "start": 3049.03,
+      "end": 3128.67
+    },
+    {
+      "index": 10,
+      "start": 3342.12,
+      "end": 3447.23
+    },
+    {
+      "index": 11,
+      "start": 3697.73,
+      "end": 3804.51
+    },
+    {
+      "index": 12,
+      "start": 4076.42,
+      "end": 4182.84
+    },
+    {
+      "index": 13,
+      "start": 4395.14,
+      "end": 4462.2
+    },
+    {
+      "index": 14,
+      "start": 4754.72,
+      "end": 4781.79
+    },
+    {
+      "index": 15,
+      "start": 5026.18,
+      "end": 5105.44
+    },
+    {
+      "index": 16,
+      "start": 5390.72,
+      "end": 5467.9
+    },
+    {
+      "index": 17,
+      "start": 5657.28,
+      "end": 5768.44
+    },
+    {
+      "index": 18,
+      "start": 5796.93,
+      "end": 5818.81
+    },
+    {
+      "index": 19,
+      "start": 5921.41,
+      "end": 5956.54
+    },
+    {
+      "index": 20,
+      "start": 5975.36,
+      "end": 6018.2
+    },
+    {
+      "index": 21,
+      "start": 6058.66,
+      "end": 6068.25
+    },
+    {
+      "index": 22,
+      "start": 6141.67,
+      "end": 6205.31
+    },
+    {
+      "index": 23,
+      "start": 6400.93,
+      "end": 6518.04
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.4,
+      "end": 4.8,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 8.96,
+      "end": 10.96,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 11.94,
+      "end": 14.72,
+      "text": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht,"
+    },
+    {
+      "start": 15.16,
+      "end": 18.24,
+      "text": "prowadzący dla Was audycję Ciężko na sercu,"
+    },
+    {
+      "start": 18.76,
+      "end": 20.52,
+      "text": "którą wydaje Mariusz Owczarek."
+    },
+    {
+      "start": 21.2,
+      "end": 24.88,
+      "text": "Zanim przejdziemy do muzyki, parę słów wyjaśnienia,"
+    },
+    {
+      "start": 25.34,
+      "end": 28,
+      "text": "z czym dzisiaj będziemy się mierzyć."
+    },
+    {
+      "start": 28.56,
+      "end": 35.2,
+      "text": "Otóż staram się w Ciężko na sercu nie ulegać zbyt często trującej nostalgii,"
+    },
+    {
+      "start": 35.6,
+      "end": 38.28,
+      "text": "nie robić audycji jubileuszowych i wspominkowych,"
+    },
+    {
+      "start": 38.9,
+      "end": 42.54,
+      "text": "ale ten rok jakoś tak mi się od nich zaczął."
+    },
+    {
+      "start": 43,
+      "end": 46.7,
+      "text": "Najpierw podsumowanie pierwszej ćwiartki XXI wieku,"
+    },
+    {
+      "start": 46.84,
+      "end": 52.16,
+      "text": "potem dwa odcinki z Decapitated z okazji ich trzydziestych urodzin,"
+    },
+    {
+      "start": 52.16,
+      "end": 57.6,
+      "text": "a dzisiaj, no cóż, mamy rok 2026"
+    },
+    {
+      "start": 57.6,
+      "end": 62.72,
+      "text": "i właśnie uświadomiłem sobie, że to dla mnie oznacza"
+    },
+    {
+      "start": 62.72,
+      "end": 65.64,
+      "text": "czterdzieści lat w służbie metalu."
+    },
+    {
+      "start": 66.44,
+      "end": 67.06,
+      "text": "Grubo, prawda?"
+    },
+    {
+      "start": 68.02,
+      "end": 74.66,
+      "text": "Postanowiłem zatem sprawdzić, czy ten 1986 rok dla mnie tak szczególny,"
+    },
+    {
+      "start": 75.66,
+      "end": 81.78,
+      "text": "bo inicjacyjny, był rzeczywiście dla tej muzyki tak ważny i ciekawy,"
+    },
+    {
+      "start": 82.24,
+      "end": 84.08,
+      "text": "jak mi się wydaje."
+    },
+    {
+      "start": 84.76,
+      "end": 89.52,
+      "text": "I dzisiaj wynikami tego rekonesansu się z Wami podzielę."
+    },
+    {
+      "start": 89.74,
+      "end": 95.1,
+      "text": "Na początek zespół, od którego dla mnie to wszystko się zaczęło."
+    },
+    {
+      "start": 95.52,
+      "end": 96.16,
+      "text": "To ich wina."
+    },
+    {
+      "start": 337.16,
+      "end": 348.7,
+      "text": "Tak jest, to był szwedzki zespół Europe z albumu The Final Countdown, który uczynił z nich na krótko, ale skutecznie rockową Abbe."
+    },
+    {
+      "start": 349.42,
+      "end": 354.14,
+      "text": "Nie puściłem utworu tytułowego z tej płyty, bo jest zajeżdżony na śmierć."
+    },
+    {
+      "start": 354.14,
+      "end": 368.18,
+      "text": "Nie puściłem też ckliwej ballady Carrie, choć żona prosiła, słusznie argumentując, że całe nasze pokolenie tańczyło do niej na szkolnych dyskotekach przytulane."
+    },
+    {
+      "start": 368.8,
+      "end": 377.72,
+      "text": "Ale Rock the Night był trzecim co do ważności singlem z tej płyty i takim powiedzmy najbardziej metalowym."
+    },
+    {
+      "start": 377.72,
+      "end": 400.72,
+      "text": "No bo właśnie, absolutnie zachwycony The Final Countdown chciałem wszystko o tych pięknych Szwedach wiedzieć, co sprowadzało się głównie do nasłuchiwania radia i śledzenia piątkowej rubryki muzycznej w świecie młodych, ukazującym się trzy razy w tygodniu piśmie dla zuchów i harcerzy."
+    },
+    {
+      "start": 400.72,
+      "end": 411.42,
+      "text": "Tam dowiedziałem się z artykułów, które były właściwie przeklejką z niemieckiego Bravo, że Europe to zespół heavy metalowy."
+    },
+    {
+      "start": 412.68,
+      "end": 421.9,
+      "text": "Ciekawa sprawa, słyszałem wcześniej o tym gatunku muzycznym, ale byłem przekonany, że to nie dla mnie, że to hałas nie do przejścia."
+    },
+    {
+      "start": 422.34,
+      "end": 430.66,
+      "text": "No ale skoro w gazecie napisali, że Europe grają metal, to ja poproszę więcej."
+    },
+    {
+      "start": 431.52,
+      "end": 435.12,
+      "text": "Poszedłem więc do kolegi z pierwszej klatki."
+    },
+    {
+      "start": 435.7,
+      "end": 443.06,
+      "text": "Ja mieszkałem w trzeciej, daleko nie miałem, który był metalowcem, jedynym mi wtedy znanym."
+    },
+    {
+      "start": 443.06,
+      "end": 453.92,
+      "text": "Zebrałem się na odwagę, bo dwa lata starszy w tym wieku to przepaść i zapytałem, czy nie pożyczyłby mi jakiegoś metalu do posłuchania."
+    },
+    {
+      "start": 454.88,
+      "end": 463.52,
+      "text": "Jarek, mój imiennik, okazał się dobrym kolegą, bo wręczył mi chyba z pięć kaset, które miał od taty z Ameryki."
+    },
+    {
+      "start": 464.2,
+      "end": 470.76,
+      "text": "Zapytał tylko, jaki mam magnetofon w obawie, czy aby nie wciągnie tych jego skarbów."
+    },
+    {
+      "start": 470.84,
+      "end": 474.36,
+      "text": "Odpowiedziałem z dumą, że japoński, nówka z Peweksu."
+    },
+    {
+      "start": 474.92,
+      "end": 476.58,
+      "text": "Dziękuję mamo, dziękuję tato."
+    },
+    {
+      "start": 477.42,
+      "end": 480.58,
+      "text": "A więc drogocenne taśmy były bezpieczne."
+    },
+    {
+      "start": 480.96,
+      "end": 495.68,
+      "text": "Wśród tych kaset, które wtedy przyniosłem do domu była i taka, która przedstawiała kulturystę dźwigającego na swoich umięśnionych barkach wielką stalową kulę."
+    },
+    {
+      "start": 495.94,
+      "end": 497.46,
+      "text": "A na niej to nagranie."
+    },
+    {
+      "start": 709.92,
+      "end": 725,
+      "text": "Uwielbiam Van Halen. Wolę wcielenie z samym Hagarem niż z oryginalnym wokalistą Davidem Lirothem, bo po pierwsze od tego zacząłem, a po drugie sami mniej się popisuje, ma fajny luz."
+    },
+    {
+      "start": 725,
+      "end": 745.22,
+      "text": "No nie da się gościa nie lubić. Uwielbiam też oczywiście grę Ediego za to, że choć był gitarzystą o doskonałej technice, choć miał rewolucyjne pomysły, nie cisnął trzyminutowych solówek, ale myślał przede wszystkim o piosenkach, o kompozycjach."
+    },
+    {
+      "start": 745.22,
+      "end": 765.42,
+      "text": "I do dzisiaj Why Can This Be Love jest jedną z moich ulubionych piosenek wszechczasów. To jest taki numer, który kiedy jest mi smutno i źle zawsze wprowadzi trochę światła, więc zawsze go mam w takiej czy innej formie pod ręką. Teraz to jest bardzo łatwe."
+    },
+    {
+      "start": 766.24,
+      "end": 779.8,
+      "text": "Album, z którego pochodzi Why Can This Be Love, czyli 5150, też ukazał się w 1986 roku i był dla fana Europe absolutnie do zaakceptowania."
+    },
+    {
+      "start": 779.8,
+      "end": 797.36,
+      "text": "Swoją drogą pisało się u nas wtedy trochę o kontekście wydania tej płyty, a więc o wielkim pojedynku pomiędzy Van Halen z nowym wokalistą, a Davidem Lirotem, który debiutował solo."
+    },
+    {
+      "start": 798.8,
+      "end": 812.28,
+      "text": "Diamentowy Dave, wiedząc, że niełatwo będzie podskoczyć takiemu gitaryściu jak Eddie, wystawił do walki prawdziwą godzillę gitary, a więc Steve'a Vaja."
+    },
+    {
+      "start": 813.04,
+      "end": 825.96,
+      "text": "I choć bez cienia wahania zawsze wybiorę 5150, Ivan Halen, muszę przyznać, że ten debiut Lirota, czyli Eat Them and Smile, ma momenty."
+    },
+    {
+      "start": 826.32,
+      "end": 829.44,
+      "text": "Pierwszy z nich już na samym początku płyty."
+    },
+    {
+      "start": 829.44,
+      "end": 831.58,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1045.51,
+      "end": 1058.71,
+      "text": "Na innych kasetach od Jarka były już poważniejsze hałasy. Nie tego się spodziewałem. Nie przypominało to nijak The Final Countdown, ale podobało mi się, podobało jeszcze bardziej."
+    },
+    {
+      "start": 1058.71,
+      "end": 1081.89,
+      "text": "A więc to jest heavy metal. Chcę więcej. Na pewno był wśród tych kaset Black Sabbath, ale już z Dio, nie z Ozim, bo w 1986 roku Black Sabbath z Ozim był zamierzchłą przeszłością, którą miałem odkryć jakiś czas później."
+    },
+    {
+      "start": 1082.69,
+      "end": 1100.01,
+      "text": "Wokalista natomiast miał już rozpędzoną amerykańską karierę, choć akurat album wydany w tym moim inicjacyjnym roku, czyli The Ultimate Scene, nie należy do najwybitniejszych dzieł Osborna."
+    },
+    {
+      "start": 1100.49,
+      "end": 1107.81,
+      "text": "Być może dlatego, że to już nie jest płyta z Randym Rhodesem i zarazem nie jest to jeszcze płyta z Zachiem Wildem."
+    },
+    {
+      "start": 1108.53,
+      "end": 1125.33,
+      "text": "Oczywiście Jake i Lee to też świetny gitarzysta. Kiepskich nietoperzożerca nie zatrudniał, ale Jake nie miał chyba tyle charakteru, co Dwaj wcześniej wymienieni."
+    },
+    {
+      "start": 1126.09,
+      "end": 1130.79,
+      "text": "Ale żeby było sprawiedliwie, The Ultimate Scene zawiera też ten znakomity numer."
+    },
+    {
+      "start": 1374.43,
+      "end": 1396.47,
+      "text": "Szybko odkryłem Iron Maiden, bo Maiden był już wtedy wielki, w Polsce szczególnie, bo jako jeden z nielicznych zespołów zza żelaznej kurtyny odwiedzał nas z koncertami, a ich koncertowy album Life After Death ukazał się u nas na licencji i był do kupienia w każdej księgarni."
+    },
+    {
+      "start": 1396.97,
+      "end": 1416.77,
+      "text": "Poza tym Maiden miał najlepsze okładki, tego straszno swojskiego Eddie'ego w różnych wcieleniach. Dla fana komiksów i od niedawna metalu, który ledwie skończył 12 lat, takie okładki to była rzecz, której nie dało się zignorować."
+    },
+    {
+      "start": 1416.77,
+      "end": 1431.79,
+      "text": "W 1986 roku Iron Maiden wydali album Somewhere in Time. Dzisiaj z tych wszystkich płyt, które uważam za ich najlepsze, a więc właściwie wszystkich do Seventh Son of a Seventh Son włącznie,"
+    },
+    {
+      "start": 1432.55,
+      "end": 1449.73,
+      "text": "Somewhere in Time darze chyba najmniej płomiennym uczuciem, ale są wyjątki, choćby wspaniały utwór Wasted Years, zmarnowane lata. To na pewno nie jest piosenka o moich czterech dekadach z metalem."
+    },
+    {
+      "start": 1749.96,
+      "end": 1751,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1751,
+      "end": 1764.32,
+      "text": "Dowiedziałem się, że najpoważniejsza konkurencja Maiden to ich rodacy z Judas Priest, że są jak Mickiewicz i Słowacki, czy tam jak Boniek i Lato, dwa na słońcach swych przeciwne bogi."
+    },
+    {
+      "start": 1765.18,
+      "end": 1789.2,
+      "text": "Sięgnąłem zatem po Judas Priest i rozczarowanie. Maiden jednak fajniejszy. Długie lata tkwiłem w tym przekonaniu, chociaż teraz wolę Judasów. Wtedy po prostu źle zacząłem. Nie mając dostępu do informacji, ani do muzyki, dorwałem po prostu ich najnowszą płytę, czyli Turbo."
+    },
+    {
+      "start": 1789.2,
+      "end": 1790.88,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2109.71,
+      "end": 2130.39,
+      "text": "Żeby nie było, dzisiaj uwielbiam ten utwór i uważam, że Turbo to dobra płyta, ale wiadomo, bardzo komercyjna, skrojona na rynek amerykański, pod fanów takiego Van Halen, chociażby i niespecjalnie reprezentatywna dla tego, co w muzyce Judas Priest najlepsze."
+    },
+    {
+      "start": 2130.99,
+      "end": 2156.85,
+      "text": "Wtedy, 40 lat temu, uważałem, że znacznie lepszym zespołem od Judas Priest jest niemiecki Accept. Poznałem ich za sprawą Metal Heart, albumu wydanego w 1985 roku, którego utwór tytułowy zawierał cytat dla Elizy, Beethovena, co wydawało mi się wówczas szczytem muzycznego wyrafinowania."
+    },
+    {
+      "start": 2156.85,
+      "end": 2182.87,
+      "text": "W 1986 Except poszli za ciosem, wypuszczając świetną płytę Russian Roulette. Ich muzyka była właściwie mutacją nowej fali brytyjskiego heavy metalu, ale nieco inaczej poukładaną, no i uzbrojoną w ten charakterystyczny szorstki jak papier ścierny głos Udo Dirk Schneidera."
+    },
+    {
+      "start": 2186.85,
+      "end": 2187.07,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 2377.96,
+      "end": 2391.9,
+      "text": "Nazwę Motorhead w 1986 roku już znałem, ale na pewno jeszcze nie słuchałem ich muzyki, nie byłem fanem, nie byłem gotowy na ten wytrawny, brzydki rock'n'roll."
+    },
+    {
+      "start": 2391.9,
+      "end": 2413.7,
+      "text": "Na pewno zanim zostałem fanem samej muzyki, miałem na ścianie plakaty będące reprodukcjami okładek płyt Motorhead, m.in. Orgasmatron, wydanej właśnie w 1986 roku z tym pędzącym pancernym motor pociągiem."
+    },
+    {
+      "start": 2414.22,
+      "end": 2438.8,
+      "text": "Lemmy, lider Motorhead w białej gorączce swojej autobiografii pisał, że choć fani uważają Orgasmatron za jeden z klasycznych materiałów Motorhead, on się nie zgadza, bo brzmienie zepsute, bo tylko dwie dobre piosenki, tytułowa i Death Forever, bo to i tamto."
+    },
+    {
+      "start": 2438.8,
+      "end": 2454.62,
+      "text": "Nie śmiem oczywiście wchodzić w polemikę z Lemim, on przecież najlepiej wiedział jak to powinno brzmieć, ale przyznaję, że i ja należę do grona tych, co uważają Orgasmatron za klasyczny album Motorhead."
+    },
+    {
+      "start": 2454.62,
+      "end": 2465.24,
+      "text": "I uważam też, że płyta zawiera więcej znakomitych piosenek niż te dwie przez niego wspomniane, choćby Mean Machine."
+    },
+    {
+      "start": 2468.8,
+      "end": 2470.72,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 2638.44,
+      "end": 2662.12,
+      "text": "W końcu trafiłem na Metallicę. W 1986 roku zespół wydał swój najlepszy album Master of Puppets. Najlepszy, bo zawierający jeszcze te dzikie, thrashowe harce z dwóch pierwszych płyt, ale poukładane już w formy znacznie bardziej zaawansowane, ambitne i po prostu nowe."
+    },
+    {
+      "start": 2662.44,
+      "end": 2683.44,
+      "text": "Później oczywiście Metallica lepiej brzmiała, później miała, miewała zgrabniejsze piosenki, wręcz przeboje, ale moim zdaniem nie dostarczyła już nigdy albumu tak kompletnego, na którym nie ma ani jednej niepotrzebnej minuty."
+    },
+    {
+      "start": 2683.44,
+      "end": 2702.44,
+      "text": "Z Master of Puppets wymyśliłem sobie taką zabawę, że kiedy rodziców odwiedzał ktoś ze znajomych albo z rodziny, wpadałem z magnetofonem i oznajmiałem, że mam teraz nowy ulubiony zespół i że to takie fajne, że bardzo chciałbym puścić."
+    },
+    {
+      "start": 2704.44,
+      "end": 2712.54,
+      "text": "Niczego nie podejrzewająca ciocia mówiła, owszem, Jareczku, proszę, pokaż, czego teraz słuchasz."
+    },
+    {
+      "start": 2713.42,
+      "end": 2715,
+      "text": "Wciskałem, więc play."
+    },
+    {
+      "start": 2715.58,
+      "end": 2718.58,
+      "text": "Zaczynało się to plumkanie ze wstępu battery."
+    },
+    {
+      "start": 2719.28,
+      "end": 2725.36,
+      "text": "Ciocia, uśmiechnięta, kiwała życzliwie głową i nagle bentz."
+    },
+    {
+      "start": 2725.36,
+      "end": 2734.3,
+      "text": "Wjeżdżała ta traszowa chłosta, ciocia przerażona odskakiwała od głośnika, a ja byłem najszczęśliwszy na świecie."
+    },
+    {
+      "start": 2734.96,
+      "end": 2742.12,
+      "text": "Dziękuję Ci, Metallico, za te chwile radości, które wniosłaś do mojego nastoletniego życia."
+    },
+    {
+      "start": 3049.03,
+      "end": 3065.47,
+      "text": "Nie mogłem jeszcze mieć wtedy pojęcia o powiązaniach Megadev z Metallicą i ich toksycznych relacjach. Prawdopodobnie nie wiedziałem w ogóle o istnieniu Megadev, kiedy wydawali Peace Sells, but who's buying?"
+    },
+    {
+      "start": 3065.91,
+      "end": 3095.47,
+      "text": "Ale cóż, niezależnie od tej mojej świadomości, czy właściwie nieświadomości, działa się historia. Debiut Megadev jeszcze nie pokazywał w pełni potencjału Dave'a Mustaina i jego kolegów, ale właśnie na Peace Sells albumie z 1986 wyraźnie słychać, że to nie jest trashowa średnia, to nie jest peleton, że ten zespół wyrasta ponad przeciętność."
+    },
+    {
+      "start": 3095.47,
+      "end": 3122.39,
+      "text": "Album brzmi dobrze, jeszcze niedoskonale, ale już dobrze. Skład był świetny, dziś legendarny właściwie z Chrisem Polandem na gitarze i Garem Samuelsonem na bębnach. Niestety obaj wymienieni panowie zostali już rok później usunięci z grupy, bo ćpanie, jak to ćpanie, wymknęło im się spod kontroli."
+    },
+    {
+      "start": 3125.03,
+      "end": 3126.71,
+      "text": "Nie ma spania."
+    },
+    {
+      "start": 3342.12,
+      "end": 3361.84,
+      "text": "Słuchacie ciężko na sercu wspomnień z metalowego 1986 roku i przyznaję, że trochę was tu dzisiaj poszukuję, bo na pewno w 1986 nie słuchałem jeszcze tych wszystkich płyt wtedy wydanych."
+    },
+    {
+      "start": 3361.84,
+      "end": 3378.58,
+      "text": "Do niektórych docierałem z opóźnieniem, niektóre znałem na pewno, innych na pewno nie, ale są i takie, co do których dziś po prostu nie mam pewności, trudno rozplątać te najstarsze korzenie."
+    },
+    {
+      "start": 3378.8,
+      "end": 3388.44,
+      "text": "Jestem jednak przekonany, że Kinga Dymonda poznałem później, już za sprawą Abigail, a więc najwcześniej w 1987 roku."
+    },
+    {
+      "start": 3389.36,
+      "end": 3404.38,
+      "text": "Zanim go usłyszałem, na pewno wcześniej widziałem zdjęcia i coś o nim czytałem i oczywiście rozmawialiśmy o nim z kolegami metalowcami, wyolbrzymiając i kolorując wszystkie doniesienia o nim."
+    },
+    {
+      "start": 3404.38,
+      "end": 3426.1,
+      "text": "Dla nas ten straszny człowiek był nie śpiewającym dyszkantem, wokalistą z Danii, ale arcykapłanem kościoła szatana, spiekła rodem, kanibalem i czarnym magiem, o którym wspominać na wszelki wypadek można było tylko szeptem spluwając trzykrotnie przez lewe ramie."
+    },
+    {
+      "start": 3426.64,
+      "end": 3445.18,
+      "text": "Już puszczam muzykę, wspomnę jeszcze tylko bez spluwania, że w 1986 roku, po chwilowym rozpadzie grupy Merciful Fate, King Diamond zadebiutował jako artysta solowy albumem zatytułowanym Fatal Portrait."
+    },
+    {
+      "start": 3697.73,
+      "end": 3718.89,
+      "text": "Ale my przecież już mieliśmy wtedy swoich diabłów. Pamiętam jak dziś, że o Kacie dowiedziałem się z telewizora właśnie w 1986 roku. Trafiłem na ich występ w Opolu i byłem absolutnie zszokowany tym, co widzę i słyszę."
+    },
+    {
+      "start": 3719.83,
+      "end": 3732.41,
+      "text": "Mówiło się też wtedy i pisało, że grupa jest u progu kariery na zachodzie, bo ich debiutancki album Metal and Hell wydaje znakomita zagraniczna wytwórnia Ambush Records."
+    },
+    {
+      "start": 3733.17,
+      "end": 3749.73,
+      "text": "Ale oczywiście rzeczywistość nie była tak różowa, była raczej czarna jak black metal, bo nie dość, że wytwórnia wcale nie była znakomita, to jeszcze zbankrutowała właściwie w chwili wydania albumu."
+    },
+    {
+      "start": 3749.73,
+      "end": 3763.17,
+      "text": "Ślązaków, nie przez kata, ale nic z tą płytą nie była w stanie zrobić. My natomiast w Polsce mogliśmy kupić lokalne tłoczenie Metal and Hell."
+    },
+    {
+      "start": 3763.17,
+      "end": 3775.03,
+      "text": "O dziwo łatwiej dostępne niż polskojęzyczna wersja tego samego materiału, czyli trzy szóstki. I słuchało się tego, owszem słuchało, ale bez wielkiego przekonania."
+    },
+    {
+      "start": 3775.59,
+      "end": 3788.53,
+      "text": "Piwniczne brzmienie materiału nie pozwalało mi jeszcze wtedy docenić samej muzyki, choć już wydana rok później koncertówka 38 Minutes of Life, nie brzmiąca przecież wcale lepiej,"
+    },
+    {
+      "start": 3788.53,
+      "end": 3792.69,
+      "text": "choć inaczej, powaliła mnie i kolegów na kolana."
+    },
+    {
+      "start": 3793.65,
+      "end": 3798.31,
+      "text": "Z biegiem czasu oczywiście pokochałem i debiut kata."
+    },
+    {
+      "start": 3798.71,
+      "end": 3802.67,
+      "text": "Zdarzało mi się nawet jedną z tych piosenek publicznie wykonywać."
+    },
+    {
+      "start": 3802.67,
+      "end": 3804.51,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4076.42,
+      "end": 4084.78,
+      "text": "W 1986 roku polskim numerem jeden było dla mnie i dla wielu moich kumpli Turbo."
+    },
+    {
+      "start": 4085.18,
+      "end": 4096.78,
+      "text": "Nie byli tak mroczni i nieprzystępni jak Kat, a grali szybciej i ostrzej od TSA, co trafiało idealnie w nasze błyskawicznie radykalizujące się serduszka."
+    },
+    {
+      "start": 4098.14,
+      "end": 4111.52,
+      "text": "W 1986 Turbo wydało kawalerię szatana, a więc płytę prawie trashową i uważam, że w tym miejscu, w tym gatunku było im najbardziej do twarzy,"
+    },
+    {
+      "start": 4111.6,
+      "end": 4117.08,
+      "text": "chociaż te wcześniejsze, lżejsze rzeczy, na przykład Smak Ciszy też bardzo lubię."
+    },
+    {
+      "start": 4118.36,
+      "end": 4128.08,
+      "text": "Szkoda, że Turbo na trochę dłużej się tutaj nie zatrzymało, że szybko się zmieniało, za bardzo próbowało nadążać za tym, co się grało wtedy w Wielkim Świeciem."
+    },
+    {
+      "start": 4128.14,
+      "end": 4132.96,
+      "text": "i swój ówczesny potencjał roztrwoniło."
+    },
+    {
+      "start": 4133.3,
+      "end": 4144.9,
+      "text": "Ale póki co jesteśmy przy kawalerii szatana, która wbrew tytułowi i okładce jest zupełnie nieszatańska, a nawet antyszatańska."
+    },
+    {
+      "start": 4144.9,
+      "end": 4157.66,
+      "text": "Turbo bowiem zmyślnie wykorzystało diabelską muzykę, by nieść gorącym młodym metalowym głowom bardzo pozytywne chrześcijańskie przesłanie,"
+    },
+    {
+      "start": 4158.14,
+      "end": 4169.3,
+      "text": "może nie we wszystkich utworach jednakowo obecne, nie we wszystkich czytelne, ale posłuchajcie sobie tylko takiego wybacz wszystkim wrogom."
+    },
+    {
+      "start": 4169.3,
+      "end": 4180.52,
+      "text": "Nie teraz. Teraz tego nie puszczę, sami sobie musicie znaleźć, bo teraz cwałować będzie kawaleria szatana, część druga."
+    },
+    {
+      "start": 4180.52,
+      "end": 4182.84,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4395.14,
+      "end": 4404.62,
+      "text": "My tu w Polsce mieliśmy Kata i Turbo, a w Niemczech Trash Metal niszczył już obiekty na pełną skalę."
+    },
+    {
+      "start": 4405.12,
+      "end": 4413.2,
+      "text": "Destruction też wtedy wydali płytę, ale moim zdaniem ważniejsze były i są oczywiście Sodom i Kreator."
+    },
+    {
+      "start": 4413.88,
+      "end": 4422.38,
+      "text": "Sodom debiutował dużą płytą, czyli Obsessed by Cruelty i jeszcze nie mieli obsesji na punkcie militariów i wojen,"
+    },
+    {
+      "start": 4422.38,
+      "end": 4429.22,
+      "text": "a jak przystało na dobrze ułożonych młodocianych metalowców, pili z diabłem Brudershaft."
+    },
+    {
+      "start": 4429.82,
+      "end": 4437.58,
+      "text": "Pierwszy album Sodom to według dzisiejszych standardów równie dobrze Black Metal, co Trash."
+    },
+    {
+      "start": 4438.06,
+      "end": 4447.08,
+      "text": "Zresztą Black Metalowców inspirował, inspiruje wytwórnia założona przez Euronimusa, lidera Mayhem i guru norweskiej rewolucji,"
+    },
+    {
+      "start": 4447.08,
+      "end": 4450.3,
+      "text": "nosiła przecież nazwę Death Like Silence."
+    },
+    {
+      "start": 4451.08,
+      "end": 4454.04,
+      "text": "Od tej właśnie piosenki z debiutu Sodom."
+    },
+    {
+      "start": 4454.04,
+      "end": 4462.2,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4754.72,
+      "end": 4774,
+      "text": "Kreator. Kto nie nosił pod koniec lat osiemdziesiątych na plecach katany naszywki przedstawiającej okładkę Pleasure to Kill, a więc tego diabła kulturystę stosującego przemoc wobec kościotrupów, ten nie wie co to życie."
+    },
+    {
+      "start": 4774.68,
+      "end": 4780.14,
+      "text": "Pleasure to Kill jest najlepszą płytą Kreatora i nie zapraszam do dyskusji."
+    },
+    {
+      "start": 5026.18,
+      "end": 5034.58,
+      "text": "Teraz wyznanie trochę wstydliwe, no ale po 40 latach mam nadzieję, że to już uległo przedawnieniu."
+    },
+    {
+      "start": 5035.44,
+      "end": 5040.44,
+      "text": "Wiedziałem wtedy o istnieniu Slayera, ale uznałem, że to nie dla mnie."
+    },
+    {
+      "start": 5041.2,
+      "end": 5049.4,
+      "text": "Pożyczyłem od kolegi kasetę. Na jednej stronie było coś Bathory, pewnie debiut, a na drugiej Slayer najpewniej Raining Blood."
+    },
+    {
+      "start": 5050.08,
+      "end": 5057.74,
+      "text": "Bathory uznałem wtedy za nieśmieszny żart, a Slayer też z jakichś powodów do mnie nie trafił."
+    },
+    {
+      "start": 5058.34,
+      "end": 5069.06,
+      "text": "Stałem się wyznawcą dopiero dwa lata później, kiedy wydali South of Heaven, której nauczyłem się na pamięć i skruszony wróciłem do wcześniejszych materiałów."
+    },
+    {
+      "start": 5069.46,
+      "end": 5080.3,
+      "text": "Dzisiaj nie mam wątpliwości. Rain in Blood to najlepsza płyta Slayera i najlepsza płyta metalowa wydana w owym przedziwnym roku"
+    },
+    {
+      "start": 5080.3,
+      "end": 5085.8,
+      "text": "i zarazem jeden z najlepszych metalowych albumów wszechczasów."
+    },
+    {
+      "start": 5086.72,
+      "end": 5093.26,
+      "text": "Tu już właściwie mogę odpowiedzieć sobie i Wam na pytanie, które zadałem sobie na wstępie."
+    },
+    {
+      "start": 5093.26,
+      "end": 5099.38,
+      "text": "Czy 1986 rok był rokiem dla metalu wyjątkowym?"
+    },
+    {
+      "start": 5100.16,
+      "end": 5103.52,
+      "text": "Owszem, był. A dla Traszu? Najlepszym."
+    },
+    {
+      "start": 5103.52,
+      "end": 5105.44,
+      "text": "Zdjęcia"
+    },
+    {
+      "start": 5390.72,
+      "end": 5408.48,
+      "text": "Pamiętam jak Krzysztof Wacławiak, skądinąd świetny dziennikarz o wyjątkowo ostrym piórze, wymądrzał się chyba w non-stopie, że wszystko co jest bardziej ekstremalne od Slayera to bzdura, niewarta uwagi."
+    },
+    {
+      "start": 5408.86,
+      "end": 5426.7,
+      "text": "Przejąłem się tym, przyznaję, ale nie na długo, bo muzyka metalowa w tamtym czasie i właściwie do końca XX wieku błyskawicznie się radykalizowała, ale zarazem rozwijała, odkrywała przed słuchaczami fantastyczne nowe krainy."
+    },
+    {
+      "start": 5426.7,
+      "end": 5447.42,
+      "text": "I takim trochę bardziej brutalnym, nieokrzesanym kuzynem Slayera był zespół Dark Angel. O ile Slayer to skrajne skrzydło traszu, o tyle Dark Angel można uznać już za ten etap ewolucji, który za chwilę doprowadzi nas do narodzin death metalu."
+    },
+    {
+      "start": 5447.42,
+      "end": 5465.76,
+      "text": "Znakomity, niedoceniany chyba trochę zespół, który do dziś nie złożył broni. A w 86 Dark Angel wydali album Darkness Descent. Jeszcze z Donem Dotim na wokalu i moim zdaniem trzeba to znać."
+    },
+    {
+      "start": 5465.76,
+      "end": 5467.9,
+      "text": "DZIENNIKARZ"
+    },
+    {
+      "start": 5657.28,
+      "end": 5674.62,
+      "text": "Już miałem mówić, że przed nami kawał historii, no ale właściwie każda z prezentowanych dzisiaj płyt to rzecz historyczna, pomnikowa wręcz dla gatunku, dla wymienianych, puszczanych artystów."
+    },
+    {
+      "start": 5674.62,
+      "end": 5695,
+      "text": "W 1986 roku ukazał się drugi album kalifornijskiej grupy Possessed dla deathmetalu pionierskiej. Choć więcej brutalności i surowizny jest na debiucie, czyli Seven Churches z poprzedniego roku, ale i Beyond the Gates."
+    },
+    {
+      "start": 5695,
+      "end": 5709.6,
+      "text": "Ta płyta z 1986 robi robotę głównie za sprawą gitarzysty Larego Lalonde, który później zrobił karierę w Primus i grywał nawet z Tomem Waitsem."
+    },
+    {
+      "start": 5710.38,
+      "end": 5719.88,
+      "text": "Possessed byli przeznaczeni do wielkości. Niestety nie zawsze tacy artyści wypełniają swoje przeznaczenie."
+    },
+    {
+      "start": 5720.44,
+      "end": 5735.38,
+      "text": "Rozpadli się na chwilę pod koniec lat osiemdziesiątych i zanim zdążyli się odrodzić, a być może do tego by doszło, Jeff Beckera, wokalista grupy, został napadnięty pod sklepem przez jakichś bandziorów i postrzelony."
+    },
+    {
+      "start": 5736.12,
+      "end": 5749.74,
+      "text": "Częściowo sparaliżowany, wylądował w wózku inwalidzkim, ale to nie przeszkodziło mu reaktywować Possessed w wersji brutalniejszej niż pierwsze wcielenie."
+    },
+    {
+      "start": 5749.74,
+      "end": 5766.44,
+      "text": "Do dziś zresztą jeździ po świecie na czele tego zespołu i prawdziwy z niego wojownik, ale do tamtej pozycji, którą zespół zyskiwał w drugiej połowie lat osiemdziesiątych nigdy nie dało się wrócić."
+    },
+    {
+      "start": 5766.44,
+      "end": 5768.44,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5796.93,
+      "end": 5818.81,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5921.41,
+      "end": 5939.13,
+      "text": "Jeszcze tego nie wiedziałem, ale w 1986 roku jeden z moich ulubionych zespołów metalowych wydał płytę, drugą w swoim dorobku, na której wyraźnie zapowiedział kierunek rozwoju ku własnemu oryginalnemu stylowi."
+    },
+    {
+      "start": 5939.13,
+      "end": 5954.19,
+      "text": "I to oczywiście Kanadyjczycy z Wojwot i ich roar. A jeszcze w połowie drogi pomiędzy piekłem debiutu i kosmosem późniejszych materiałów, ale właśnie dlatego to bardzo ciekawa płyta."
+    },
+    {
+      "start": 5975.36,
+      "end": 6005.34,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 6005.38,
+      "end": 6018.2,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 6058.66,
+      "end": 6068.26,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 6141.67,
+      "end": 6155.51,
+      "text": "Nie wiedziałem też w 1986 roku, nie mogłem wiedzieć, że w Brazylii gra się nie tylko piłkę nożną, a tymczasem działo się tam sporo."
+    },
+    {
+      "start": 6155.51,
+      "end": 6176.11,
+      "text": "Dzięki wytwórni Cogumelo rozkwitał ekstremalny brazylijski underground i właśnie w 1986 Cogumelo wydało swój bestseller swojego najważniejszego zespołu, szybko zresztą podkradzionego przez amerykański label Roadrunner."
+    },
+    {
+      "start": 6176.11,
+      "end": 6195.25,
+      "text": "A mowa oczywiście o Morbid Visions, dużym debiucie Sepultury, płycie bardzo młodzieńczej, surowej, jeszcze trochę nieudolnej, bez Andreasa Kisera w składzie, no ale przecież słychać potencjał, słychać narodziny czegoś większego."
+    },
+    {
+      "start": 6196.17,
+      "end": 6201.93,
+      "text": "No i mamy tu utwór Troops of Doom, który był na tyle dobry, że przetrwał do dziś."
+    },
+    {
+      "start": 6204.47,
+      "end": 6205.31,
+      "text": "Muzyka"
+    },
+    {
+      "start": 6400.93,
+      "end": 6417.17,
+      "text": "Ja stałem kiedyś w kolejce do wywiadu z Metallicą w gronie innych dziennikarzy i jeśli ktoś w tym gronie miał koszulkę zespołową na sobie, no to oczywiście była to Metallica. Ja tylko miałem Venom."
+    },
+    {
+      "start": 6417.17,
+      "end": 6428.65,
+      "text": "I James Hetfield, szybko przymykający obok nas do pomieszczenia, w którym miał za chwilę udzielać wywiadów, przy mnie się zatrzymał, przybił piątkę, Venom, zaryczał."
+    },
+    {
+      "start": 6428.89,
+      "end": 6445.05,
+      "text": "No bo tak, Venom w połowie lat osiemdziesiątych nie był może bardzo popularny, ale był najważniejszy. Metallica i Slayer, Dark Angel i Possessed, Sodom i Kreator, Wojvod i Morbid Angel."
+    },
+    {
+      "start": 6445.89,
+      "end": 6450.51,
+      "text": "Trudno byłoby wyobrazić sobie ich wszystkich bez Venom."
+    },
+    {
+      "start": 6450.79,
+      "end": 6467.53,
+      "text": "Natknąłem się niedawno w sieci na opinię osoby kochającej metal, już wiedzącej o nim to i owo, ale osoby młodej, że koncert Venom na ubiegłorocznej edycji festiwalu Summer Dine Loud był rozczarowaniem."
+    },
+    {
+      "start": 6467.61,
+      "end": 6472.33,
+      "text": "Że niby taka legenda, niby taka ważna kapela, ale jakoś bez szału."
+    },
+    {
+      "start": 6473.89,
+      "end": 6485.65,
+      "text": "Otóż droga młodzieży, o to co teraz jeździ po świecie, to jest najlepsza wersja Venom, na jaką możemy dziś liczyć, ale zarazem to jedynie cień prawdziwego Venom."
+    },
+    {
+      "start": 6486.41,
+      "end": 6501.01,
+      "text": "Tamten Venom swój najlepszy, najbardziej wpływowy czas ukoronował koncertem, którego słuchaliśmy bez końca z wydanej również w Polsce płyty Eine kleine Nachtmusik."
+    },
+    {
+      "start": 6501.97,
+      "end": 6509.89,
+      "text": "Wydanej, a jakże w tym przedziwnym arcy metalowym 1986 roku."
+    },
+    {
+      "start": 6510.23,
+      "end": 6514.95,
+      "text": "I właśnie tamten Venom was dziś pożegna swoją nocną muzyczką."
+    },
+    {
+      "start": 6515.41,
+      "end": 6515.97,
+      "text": "Dobranoc."
+    }
+  ],
+  "stats": {
+    "windowCount": 24,
+    "transcribedAudioSec": 1917.22,
+    "segmentCount": 170,
+    "characterCount": 20254
+  },
+  "sourceId": "2026-02-18-czterdziesci-lat-minelo-jak-jeden-dzien-jak-bardzo-metalowy"
+}
