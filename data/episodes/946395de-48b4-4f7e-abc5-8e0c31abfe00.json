@@ -2,10 +2,46 @@
   "version": 1,
   "id": "946395de-48b4-4f7e-abc5-8e0c31abfe00",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T13:37:58.847Z",
+  "updatedAt": "2026-11-05T14:05:55.395Z",
   "durationSec": 7188,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja poświęcona jest fenomenowi płyt koncertowych jako unikalnego zapisu energii muzycznej, która często przewyższa nagrania studyjne. Prowadzący analizuje historię i znaczenie kultowych wydawnictw live, skupiając się na polskiej i światowej scenie metalowej. W programie pojawiają się wspomnienia o zespołach takich jak Imperator, TSA, Turbo, Kat, Venom oraz Iron Maiden. Autor dzieli się osobistymi refleksjami na temat wpływu tych nagrań na kształtowanie się gustów muzycznych w latach osiemdziesiątych. Audycja poświęcona jest fenomenowi i historii metalowych płyt koncertowych. Prowadzący analizuje różnice między nagraniami live a studyjnymi na przykładzie Slayera, omawiając kontrowersje wokół albumu Live Undead. Poruszany jest wątek polskiego zespołu Vader i jego znaczenia na arenie międzynarodowej poprzez wydawnictwa Live in Japan oraz The Darkest Age, Life 93. W programie pojawiają się również wzmianki o wpływie Judas Priest na polską scenę oraz o włoskiej grupie Bulldozer. Całość wieńczy omówienie black metalowych klasyków, takich jak Mayhem oraz Emperor.",
+  "topics": [
+    {
+      "start": 0,
+      "end": 104,
+      "label": "Refleksja nad wartością płyt koncertowych względem studyjnych"
+    },
+    {
+      "start": 104,
+      "end": 121,
+      "label": "Analiza płyt koncertowych Slayera i kwestia ich autentyczności"
+    },
+    {
+      "start": 121,
+      "end": 125,
+      "label": "Historia i znaczenie koncertowych wydań zespołu Vader"
+    },
+    {
+      "start": 130,
+      "end": 134,
+      "label": "Wpływ klasyków heavy metalu, jak Judas Priest, na rozwój sceny"
+    },
+    {
+      "start": 134,
+      "end": 145,
+      "label": "Metalowe płyty koncertowe nagrane w Polsce"
+    },
+    {
+      "start": 145,
+      "end": 590,
+      "label": "Black metalowe nagrania koncertowe: Mayhem i Emperor"
+    },
+    {
+      "start": 4917,
+      "end": 4918,
+      "label": "Wpływ zagranicznych płyt koncertowych na polską scenę metalową"
+    }
+  ],
   "tags": [
     {
       "id": "bulldozer",
@@ -29,11 +65,24 @@
       "at": 6932
     },
     {
+      "id": "imperator",
+      "label": "Imperator",
+      "type": "artist",
+      "source": "tracks",
+      "at": 125
+    },
+    {
       "id": "iron-maiden",
       "label": "Iron Maiden",
       "type": "artist",
       "source": "tracks",
       "at": 3589
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "judas-priest",
@@ -48,6 +97,12 @@
       "type": "artist",
       "source": "tracks",
       "at": 2260
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "mayhem",
@@ -94,28 +149,68 @@
   ],
   "tracks": [
     {
+      "start": 125,
+      "end": 130,
+      "durationSec": 291,
+      "artist": "Imperator",
+      "title": null,
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 590,
+      "end": 831,
+      "durationSec": 205,
+      "artist": "Imperator",
+      "title": null,
+      "album": "The Time After Time Live",
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
       "start": 831,
       "end": 1326,
       "durationSec": 411,
       "artist": "TSA",
       "title": "51)",
       "album": "Live 2021",
-      "confidence": "średnia",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 1326,
+      "end": 1878,
+      "durationSec": 399,
+      "artist": "Turbo",
+      "title": "Seans z Wampirem (Live)",
+      "album": null,
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
       "links": []
     },
     {
-      "start": 1326,
+      "start": 1878,
       "end": 2260,
-      "durationSec": 399,
+      "durationSec": 319,
       "artist": "Turbo",
-      "title": "Seans z Wampirem (Live)",
-      "album": null,
+      "title": null,
+      "album": "Alive",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
@@ -126,7 +221,7 @@
       "artist": "Kat",
       "title": "Mag-Sex",
       "album": "Oddech Wymarłych Światów",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -139,7 +234,7 @@
       "artist": "Venom",
       "title": "Too Loud (For the Crowd) [Live",
       "album": "Eine Kleine Nachtmusik",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -152,7 +247,7 @@
       "artist": "Iron Maiden",
       "title": "Iron Maiden (Live in Finland 1993)",
       "album": "A Real Live Dead One",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -173,7 +268,7 @@
     },
     {
       "start": 4272,
-      "end": 4918,
+      "end": 4917,
       "durationSec": 589,
       "artist": "Slayer",
       "title": "War Ensemble",
@@ -191,7 +286,7 @@
       "artist": "Vader",
       "title": "Breath of Centuries (Live'93)",
       "album": "The Darkest Age (Live'93)",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -230,7 +325,7 @@
       "artist": "Bulldozer",
       "title": "The Derby",
       "album": "Alive... in Poland 2011",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -243,7 +338,7 @@
       "artist": "Cannibal Corpse",
       "title": "Gallery of Suicide",
       "album": "Gallery of Suicide",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -269,13 +364,43 @@
       "artist": "Emperor",
       "title": "Sworn",
       "album": "IX Equilibrium",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 132,
+      "text": "będę grał tylko z płyt koncertowych, a pretekstem do tego jest premiera koncertowej właśnie płyty zespołu Imperator"
+    },
+    {
+      "start": 655,
+      "text": "Słuchaliśmy Imperatora z płyty The Time After Time Live, nagranej w 2018 roku w warszawskiej progresji"
+    },
+    {
+      "start": 1314,
+      "text": "Na przykład debiut TSA, czyli live, grzecznie na mnie czekał już od 1982 roku"
+    },
+    {
+      "start": 2041,
+      "text": "uwielbiałem Turbo i ich płytę Alive poskładaną z dwóch koncertów"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 12,
+      "quote": "Wita Was Jarek Szubrycht, autor audycji"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 22,
+      "quote": "Wita też Was Mariusz Owczarek, jej wydawca."
+    }
+  ]
 }
