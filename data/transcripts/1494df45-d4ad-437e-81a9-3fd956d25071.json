@@ -1,0 +1,3835 @@
+{
+  "version": 1,
+  "episodeId": "1494df45-d4ad-437e-81a9-3fd956d25071",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 290515200,
+  "fileMtimeMs": 1789150397456.9233,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 13.95
+    },
+    {
+      "index": 1,
+      "start": 181.38,
+      "end": 351.55
+    },
+    {
+      "index": 2,
+      "start": 722.76,
+      "end": 1043.32
+    },
+    {
+      "index": 3,
+      "start": 1281.48,
+      "end": 1665.85
+    },
+    {
+      "index": 4,
+      "start": 1665.85,
+      "end": 1875.77
+    },
+    {
+      "index": 5,
+      "start": 2213.48,
+      "end": 2682.46
+    },
+    {
+      "index": 6,
+      "start": 2939.97,
+      "end": 3238.04
+    },
+    {
+      "index": 7,
+      "start": 3872,
+      "end": 4317.5
+    },
+    {
+      "index": 8,
+      "start": 4555.43,
+      "end": 4865.76
+    },
+    {
+      "index": 9,
+      "start": 5501.83,
+      "end": 5974.62
+    },
+    {
+      "index": 10,
+      "start": 5974.62,
+      "end": 6060.09
+    },
+    {
+      "index": 11,
+      "start": 6484.87,
+      "end": 6581.56
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 5.68,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 9.68,
+      "end": 13.96,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 182.04,
+      "end": 193.34,
+      "text": "Dobry wieczór Państwu, kłania się Jarek Szubrycht, prowadzący dla Was audycję Ciężko na sercu, której wydawcą jest Mariusz Owczarek."
+    },
+    {
+      "start": 194.22,
+      "end": 202.66,
+      "text": "Trójka nadaje dla Was z Warszawy, z Myśliwieckiej, ale ja mieszkam w Krakowie i mam obowiązki krakowskie."
+    },
+    {
+      "start": 202.66,
+      "end": 217.82,
+      "text": "Oprócz podatków jest to na przykład przeganianie gołębi z balkonu, bo paskudzą, jedzenie obwarzanków na śniadanie, obiad i kolację oraz oczywiście wychodzenie z domu na pole."
+    },
+    {
+      "start": 218.52,
+      "end": 227.52,
+      "text": "Dzisiaj wyszedłem na pole, żeby przyjść do Was i zagrać Wam krakowski metal."
+    },
+    {
+      "start": 227.52,
+      "end": 242.06,
+      "text": "Wpadłem niedawno na ten pomysł, żeby jeden z odcinków audycji, to będzie właśnie ten odcinek, poświęcić krakowskiej scenie metalowej, bogatej, różnorodnej i ciekawej."
+    },
+    {
+      "start": 242.06,
+      "end": 257.14,
+      "text": "Zatem przez dwie godziny nie tylko nie uda się wyczerpać tematu, ale nawet zaznaczyć wszystkich ważnych wątków, ale puścić kilka ładnych piosenek i opowiedzieć parę ciekawych historii."
+    },
+    {
+      "start": 257.74,
+      "end": 259.44,
+      "text": "Na pewno się uda."
+    },
+    {
+      "start": 260.02,
+      "end": 273.4,
+      "text": "Wspomoże mnie w tym dziele gość, którego przedstawię Wam za chwilę i który sporo o krakowskim metalu wie, bo działa na rzecz tej sceny od dobrych kilku lat."
+    },
+    {
+      "start": 274.06,
+      "end": 275.6,
+      "text": "Kilku dekad właściwie."
+    },
+    {
+      "start": 276.22,
+      "end": 281.02,
+      "text": "Ale zanim zaczniemy rozmowę, powiem jeszcze, że powitał nas zespół Voodoo."
+    },
+    {
+      "start": 281.56,
+      "end": 294.68,
+      "text": "Prawdopodobnie pierwszy krakowski zespół metalowy, w dodatku, no ile się nie mylę, istniejący do dzisiaj, powstali w 1984 roku, a więc ponad cztery dekady temu."
+    },
+    {
+      "start": 295.54,
+      "end": 305.42,
+      "text": "Grali na pierwszej metalmani w 1986 roku i jeszcze za komuny wydali debiutancką płytę zatytułowaną po prostu Heavy Metal,"
+    },
+    {
+      "start": 306.14,
+      "end": 314.26,
+      "text": "na której fragmentu utworu o pięknym tytule Da Czadu Voodoo przed chwilą wysłuchaliście."
+    },
+    {
+      "start": 315.06,
+      "end": 319.9,
+      "text": "Metal, metal ogarnia wszystko, przenika wszystkich do krwi."
+    },
+    {
+      "start": 320.64,
+      "end": 325.46,
+      "text": "To fragment tekstu i zapowiedź tego, co będzie się za chwilę działo."
+    },
+    {
+      "start": 325.54,
+      "end": 335.28,
+      "text": "A już teraz inna, lokalna legenda wykonująca zupełnie inną muzykę, czyli grupa Holy Death, pionierzy krakowskiego black metalu."
+    },
+    {
+      "start": 336.18,
+      "end": 341.74,
+      "text": "Posłuchamy utworu z albumu Evil, czyli zło, ale z pytajnikiem."
+    },
+    {
+      "start": 341.74,
+      "end": 348.74,
+      "text": "Nie wiem dlaczego z pytajnikiem, skoro z muzyki ponad wszelką wątpliwość sączy się zło."
+    },
+    {
+      "start": 723.38,
+      "end": 732.42,
+      "text": "Raz jeszcze witam wszystkich serdecznie i witam w audycji mojego dzisiejszego gościa, to Adam Śliwakowski, cześć."
+    },
+    {
+      "start": 732.78,
+      "end": 733.4,
+      "text": "Cześć, witam."
+    },
+    {
+      "start": 734.2,
+      "end": 746.54,
+      "text": "Adam jest postacią w Krakowie, w środowisku metalowym bardzo dobrze znaną, zasłużoną, zasłużoną na wielu polach i o nich dzisiaj porozmawiamy."
+    },
+    {
+      "start": 746.54,
+      "end": 767.34,
+      "text": "Ale porozmawiamy też o jego spojrzeniu na krakowski metal, bo pomyślałem sobie, że fajnie będzie przyjrzeć się temu, jak ta scena się rozwijała, jak wyglądała kiedyś, jak wygląda dzisiaj, jakie miała wzloty, jakie miała na upadków, pewnie nie miała, miała najwyżej trochę niższe wzloty."
+    },
+    {
+      "start": 767.34,
+      "end": 779.18,
+      "text": "Adam, zacznijmy od tego, co, jak mi się wydaje, najważniejsze, czyli od twojego dzieła życia, od metal shopu."
+    },
+    {
+      "start": 780.38,
+      "end": 791.3,
+      "text": "Skąd pomysł i kiedy to się narodziło, żeby założyć sklep z fonogramami?"
+    },
+    {
+      "start": 791.38,
+      "end": 797.38,
+      "text": "Wtedy to chyba były przede wszystkim, jeżeli nie tylko, kasety i w dodatku tylko z metalem."
+    },
+    {
+      "start": 797.96,
+      "end": 809.74,
+      "text": "Tak, to było coś, co wyniknęło samoistnie, można powiedzieć, klasycznie z mojej miłości do muzyki, tak jak pewnie u większości ludzi, którzy nas teraz słuchają."
+    },
+    {
+      "start": 810.72,
+      "end": 823.2,
+      "text": "Wszystko zaczęło się tak naprawdę w połowie lat osiemdziesiątych. Ja pochodzę z małego miasteczka i w połowie lat osiemdziesiątych przywędrowałem do szkoły, do Krakowa"
+    },
+    {
+      "start": 823.2,
+      "end": 840.34,
+      "text": "i w tym momencie poznałem szerokość możliwości dostępu do muzyki, bo to były giełdy płytowe pod Przewiązką, to były giełdy płytowe w Katowicach."
+    },
+    {
+      "start": 841.48,
+      "end": 842.64,
+      "text": "Typowo fanowskie podejście."
+    },
+    {
+      "start": 843.1,
+      "end": 849,
+      "text": "A to już wtedy byłeś fanem metalu, jak do tego Krakowa przywędrowałeś, czy w Krakowie się nauczyłeś tego metalu?"
+    },
+    {
+      "start": 849,
+      "end": 861.2,
+      "text": "Nie, nie, nie, przywędrowałem już mając w głowie pełną metalu. Początki lata osiemdziesiąte oczywiście, pierwsze kasety i gdzieś tam zawsze zdobywanie tych płyt,"
+    },
+    {
+      "start": 861.34,
+      "end": 868.6,
+      "text": "tych nowych nagrań wiązały się z moimi przyjazdami do Krakowa. Wiadomo, miałem wtedy dziesięć, dwanaście lat, to były przyjazdy z rodzicami,"
+    },
+    {
+      "start": 868.6,
+      "end": 875.98,
+      "text": "ale już tak jak mówię, połowa lat osiemdziesiątych, no to już była szkoła, bez rodziców, tutaj jest taki zaczątek."
+    },
+    {
+      "start": 876.76,
+      "end": 884.82,
+      "text": "To wszystko gdzieś tam było oparte właśnie na giełdach, podpatrywaniu tej wymiany, tymi płytami kupna, sprzedaż."
+    },
+    {
+      "start": 885.14,
+      "end": 896.12,
+      "text": "Oczywiście wtedy to było wszystko bardziej fanowskie, aczkolwiek złapałem takiego bakcyla i myślę, że w tym momencie to można uznać za początek."
+    },
+    {
+      "start": 896.28,
+      "end": 908,
+      "text": "Później tak się życie potoczyło, że na początku lat dziewięćdziesiątych zostałem ojcem i musiałem w jakikolwiek sposób stanąć na wysokości zadania, żeby zarabiać na życie."
+    },
+    {
+      "start": 908.92,
+      "end": 918.66,
+      "text": "Najpierw to był mały sklepik, taka trafika z tytoniem i później siłą rozpędu muzyka cały czas była w głowie."
+    },
+    {
+      "start": 918.96,
+      "end": 925.42,
+      "text": "Postanowiłem do tej trafiki dołożyć sklep z muzyką metalową, no bo jakże inaczej."
+    },
+    {
+      "start": 925.52,
+      "end": 934.28,
+      "text": "To jak powiedziałeś, na początku to były praktycznie same kasety, kompakty ze względu na cenę i ze względu na dostępność."
+    },
+    {
+      "start": 934.28,
+      "end": 938.78,
+      "text": "Były naprawdę małym ułamkiem tego, co się wtedy sprzedawało."
+    },
+    {
+      "start": 939.72,
+      "end": 949.12,
+      "text": "Ten sklep był, jego lokalizacja była w miejscu, w którym dzisiaj mamy park imienia Wisławy Szaborskiej."
+    },
+    {
+      "start": 949.22,
+      "end": 949.9,
+      "text": "Tak, tak."
+    },
+    {
+      "start": 949.9,
+      "end": 954.5,
+      "text": "Później tam był, czy właściwie wcześniej przed parkiem był tam parking."
+    },
+    {
+      "start": 954.92,
+      "end": 955.12,
+      "text": "Tak."
+    },
+    {
+      "start": 955.12,
+      "end": 960.32,
+      "text": "I na uboczu tego parkingu stał twój sklepik."
+    },
+    {
+      "start": 960.66,
+      "end": 960.9,
+      "text": "Tak."
+    },
+    {
+      "start": 961.04,
+      "end": 970.84,
+      "text": "Miejsce nie tak dobrze widoczne, ale wszyscy metalowcy z Krakowa i przyjezdni wiedzieli jak tam trafić."
+    },
+    {
+      "start": 971.3,
+      "end": 977.38,
+      "text": "Sklepik niewielki, więc zgromadzenia również były spore przed sklepikiem."
+    },
+    {
+      "start": 977.48,
+      "end": 978.64,
+      "text": "To było też miejsce spotkań."
+    },
+    {
+      "start": 978.64,
+      "end": 982.06,
+      "text": "Tak, tak, tak, tak. I to właśnie najfajniej wspominam."
+    },
+    {
+      "start": 982.56,
+      "end": 988.84,
+      "text": "Wracając do wielkości sklepu, jak to określił Łukasz Orbitowski, kiedy w swojej audycji był to sklepik wielkości szaletu miejskiego."
+    },
+    {
+      "start": 990.22,
+      "end": 991.54,
+      "text": "I niech tak zostanie."
+    },
+    {
+      "start": 992.28,
+      "end": 1001.4,
+      "text": "Ale właśnie całe piękno egzystowania tego polegało na spotkaniu z ludźmi, którzy przychodzili po prostu porozmawiać, postać przed sklepem."
+    },
+    {
+      "start": 1002.14,
+      "end": 1010.96,
+      "text": "I jeszcze mylącym był fakt, że przed wejściem do mojego sklepu stała mała budka z kasetami Disco Polo."
+    },
+    {
+      "start": 1011.7,
+      "end": 1016.74,
+      "text": "I każdy, kto przychodził po raz pierwszy do mojego sklepu, musiał się najpierw zatrzymać przy tej budce."
+    },
+    {
+      "start": 1016.9,
+      "end": 1021.66,
+      "text": "No i się dziwił, że wow, gdzie metal, jak to są same kasety Disco Polo."
+    },
+    {
+      "start": 1021.86,
+      "end": 1023.64,
+      "text": "Ja jej nie pamiętam, wyparłem ją."
+    },
+    {
+      "start": 1023.82,
+      "end": 1024.42,
+      "text": "Tak, tak."
+    },
+    {
+      "start": 1025.62,
+      "end": 1031.48,
+      "text": "I nieodżałowany pan Bogdan, który zawsze siedział na stołeczku plastikowym i już się nawet nie odzywał, tylko pokazywał palcem."
+    },
+    {
+      "start": 1031.88,
+      "end": 1032.18,
+      "text": "Tam."
+    },
+    {
+      "start": 1033.14,
+      "end": 1039.32,
+      "text": "Łatwo miał, bo identyfikował twoich klientów po wyglądzie, po tych koszulkach i w fryzurach."
+    },
+    {
+      "start": 1039.5,
+      "end": 1039.96,
+      "text": "Dokładnie."
+    },
+    {
+      "start": 1040.5,
+      "end": 1041.38,
+      "text": "Posłuchajmy muzyki."
+    },
+    {
+      "start": 1041.38,
+      "end": 1043.32,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1282.06,
+      "end": 1309.86,
+      "text": "Słuchacie Ciężko na sercu w trójce. Rozmawiam dzisiaj z Adamem Śliwakowskim, założycielem i do tej pory szefem metal shopu, a to oznacza, że od tego początku lat dziewięćdziesiątych sklep z wydawnictwami muzycznymi, w dodatku poświęconymi jednemu gatunkowi i też trochę gatunkom pokrewnym,"
+    },
+    {
+      "start": 1310.24,
+      "end": 1318.9,
+      "text": "przetrwał te wszystkie burze, apokalipsy i co najmniej ze trzy końce świata fonografii. Łatwo pewnie nie było."
+    },
+    {
+      "start": 1318.9,
+      "end": 1339,
+      "text": "Nie, to były takie wzloty i upadki, to było kilka razy już dochodzenie do ściany i myśli zamykać, nie zamykać. Myślę, że tak jak w każdej branży, to wszystko gdzieś tam jest może nie tyle przewidywalne, ile gdzieś"
+    },
+    {
+      "start": 1339,
+      "end": 1347.66,
+      "text": "tam powtarza się w pewnych cyklach. Na początku było słabo, później fajnie, później znowu słabo, później znowu fajnie, a teraz jest fajnie."
+    },
+    {
+      "start": 1347.66,
+      "end": 1356.32,
+      "text": "A teraz jest fajnie, fajnie, bo czego chyba nie mogłeś, albo inaczej nie będę za ciebie odpowiadał, czego ja się nie"
+    },
+    {
+      "start": 1356.32,
+      "end": 1364.98,
+      "text": "spodziewałem, to jest tak duże zainteresowanie metalem nowego, młodego pokolenia."
+    },
+    {
+      "start": 1364.98,
+      "end": 1376.8,
+      "text": "Właściwie pokolenia, właściwie pokolenia naszych dzieci, które z jednej strony oczywiście przychodzą po te wszystkie akcesoria, bo chcą, żeby je identyfikowano na koncertach."
+    },
+    {
+      "start": 1377.22,
+      "end": 1398.88,
+      "text": "Też chodzą po koszulki, naszywki, bo te wszystkie rzeczy też u ciebie można znaleźć, ale o dziwo, chociaż zupełnie nie muszą, bo już dorastały w epoce cyfrowej i muzyki słuchają w taki sposób, który dla nas był nowością, czyli przez serwisy streamingowe ze smartfona, to kupują też nośniki."
+    },
+    {
+      "start": 1398.88,
+      "end": 1417.2,
+      "text": "Tak, i to jest fajne, i to jest naprawdę bardzo fajne, z tym, że tutaj muszę nawiązać właśnie do tych lat dziewięćdziesiątych, gdzie ludzie młodzi, no wtedy również ja byłem człowiekiem młodym, gdzieś tam bardziej się identyfikowali z określonym gatunkiem muzycznym."
+    },
+    {
+      "start": 1417.76,
+      "end": 1419.82,
+      "text": "Teraz jest totalna różnorodność."
+    },
+    {
+      "start": 1419.82,
+      "end": 1434.32,
+      "text": "Ktoś potrafi przyjść, kupić sobie koszulkę Manor, płytę Darktrona i naszywkę na przykład Parpli. I wiem, że on to kupuje dla siebie, nie mogę się temu nadliwić, aczkolwiek już przestałem na to zwracać uwagę."
+    },
+    {
+      "start": 1435.02,
+      "end": 1447.9,
+      "text": "No to nawet pod gatunkiem, bo prawda jest taka, że ta sama osoba pewnie w innym sklepie kupi koszulkę The Cure, a jeszcze wieczorem przed snem, chociaż nie wiem, która poradnia jest na to bardziej odpowiednia, być może poranek,"
+    },
+    {
+      "start": 1448.7,
+      "end": 1450.6,
+      "text": "słucha polskiego rapu."
+    },
+    {
+      "start": 1450.76,
+      "end": 1450.92,
+      "text": "Tak."
+    },
+    {
+      "start": 1450.96,
+      "end": 1455.26,
+      "text": "I to wszystko ma jakoś absolutnie miejsce w jego serduszku."
+    },
+    {
+      "start": 1455.26,
+      "end": 1477.58,
+      "text": "Dokładnie, dokładnie. I tak jak mówisz, w tym momencie przychodzi grupa młodzieży. Miałem taki przypadek. W tamtym roku przyszły trzy dziewczyny w wieku około 18-20 lat. Wszystkie były ubrane tak jak japońska manga w sukienki różowe, a więc zaczęły sobie przebierać naszywki,"
+    },
+    {
+      "start": 1477.58,
+      "end": 1479.32,
+      "text": "pokazywać, śmiać się z nich."
+    },
+    {
+      "start": 1479.52,
+      "end": 1485.6,
+      "text": "Totalnie myślałem, pomyłka, ktoś przyszedł do sklepu przeczekać, bo było na polubytu, bo akurat były wakacje, było gorąco."
+    },
+    {
+      "start": 1486.58,
+      "end": 1492.52,
+      "text": "I poszedł do mnie jedna z tych dziewczyn i mówi, że poproszę ostatniego dań kwetusa. I wow, po prostu wow."
+    },
+    {
+      "start": 1493.32,
+      "end": 1494.16,
+      "text": "Nie dla taty."
+    },
+    {
+      "start": 1494.66,
+      "end": 1503.62,
+      "text": "No właśnie, chyba nie dla taty, dlatego, że zdała tytuł, nie miała napisanego na karce. I te dziewczyny, której towarzyszyły absolutnie się nie zdziwiły, że ona właśnie bierze konkretnie to."
+    },
+    {
+      "start": 1504.12,
+      "end": 1517.82,
+      "text": "No to dobrze, bardzo dobry gust. A swoją drogą masz ten sklep w centrum Krakowa. Te lokalizacje się zmieniały, ale nieznacznie. To zawsze jest w dystansie spaceru od krakowskiego rynku."
+    },
+    {
+      "start": 1518.06,
+      "end": 1537.32,
+      "text": "I spaceruje po tych okolicach mnóstwo też turystów. Ludzi spoza Krakowa, spoza Polski nawet, którzy trafiają do twojego sklepu albo przypadkowo, albo bo szukają jakiegoś miejsca z płytami, z akcesoriami w tych miastach, które odwiedzają."
+    },
+    {
+      "start": 1537.32,
+      "end": 1547.9,
+      "text": "Jest też taka turystyka związana ze sklepami płytowymi. To jest zjawisko dobrze znane fanom muzyki. Dużo masz takich gości z zagranicy. I co to są za ludzie?"
+    },
+    {
+      "start": 1547.9,
+      "end": 1561.6,
+      "text": "Wiesz co, trzeba też dodać, że teraz Duga stała się ulicą hosteli. I naprawdę dużo ludzi do mnie trafia przypadkiem tylko dlatego, że ma swój pokój naprzeciwko, ma swój pokój z mojej prawej."
+    },
+    {
+      "start": 1562.26,
+      "end": 1568.86,
+      "text": "Kamienica w ogóle, w której jestem, składa się chyba z dziesięciu pokojów hostelowych. I tam też dużo ludzi przyjeżdża."
+    },
+    {
+      "start": 1569.28,
+      "end": 1573.22,
+      "text": "Czyli zamiast na śniadanie schodzą sobie kupić nową płytę."
+    },
+    {
+      "start": 1573.22,
+      "end": 1578.2,
+      "text": "Ale często przychodzą w pantoflach i też się już temu ludzie dziwię absolutnie."
+    },
+    {
+      "start": 1578.98,
+      "end": 1588.08,
+      "text": "Kilka miesięcy temu miałem fajny przypadek. Przyszedł do mnie Anglik. Chłopak z dziewczyną. Chłopak koło 30 lat, dziewczyna koło 20-25 lat."
+    },
+    {
+      "start": 1589.14,
+      "end": 1597.2,
+      "text": "I chłopak mówi, że jeździ sobie po świecie, po sklepach metalowych i kręci o nich krótkie filmiki."
+    },
+    {
+      "start": 1597.52,
+      "end": 1599.72,
+      "text": "Chłopak, który w ogóle nie wyglądał na metalowca. Absolutnie."
+    },
+    {
+      "start": 1600.38,
+      "end": 1608.66,
+      "text": "I pokazuje mi. Jednie, co mnie mogło zdziwić to, że filmik z Buenos Aires, z Rzymu, z Rio de Janeiro."
+    },
+    {
+      "start": 1609.46,
+      "end": 1616.06,
+      "text": "Ja mówię, wow, ma pieniądze, fajnie, super. Byli u mnie w sklepie około 2-3 godzin. Naprawdę, to była sobota."
+    },
+    {
+      "start": 1616.22,
+      "end": 1620.92,
+      "text": "Nie narzucając się innym klientom, kręcąc tymi filmiki. Cały czas pytali, czy mogą dalej nagrywać."
+    },
+    {
+      "start": 1621.02,
+      "end": 1629.72,
+      "text": "Tak, oczywiście, oczywiście. I po dwóch godzinach, no po trzech, bo wyszli o dziesiątej, wyszli po pierwszej. Dał mi kilka rzeczy, które sobie wybrał."
+    },
+    {
+      "start": 1630.24,
+      "end": 1642.22,
+      "text": "Bardzo był szczęśliwy, że mam tak różne rzeczy właśnie, począwszy od koszulek Boltrowera, skończywszy na flagach The Cure'a."
+    },
+    {
+      "start": 1643.48,
+      "end": 1652.68,
+      "text": "I wybrał właśnie totalny wachlarz rzeczy. I później sobie, jak odtworzyłem sobie jego zachowanie, mówi, że a, mój tata byłby zadowolony. A, mojemu tacie by się to na pewno podobało. Spoko."
+    },
+    {
+      "start": 1652.9,
+      "end": 1659.94,
+      "text": "No i na koniec pyta mi się, czy może sobie ze mną zrobić zdjęcie. No oczywiście on, jego dziewczyna. Zrobiliśmy sobie zdjęcie."
+    },
+    {
+      "start": 1660.86,
+      "end": 1665.86,
+      "text": "No i pyta się mnie, czy znam Bottomsona. Przepraszam, nie znam."
+    },
+    {
+      "start": 1665.85,
+      "end": 1668.07,
+      "text": "Bo Thompsona. Myślę, że Bo Thompson też mnie nie zna."
+    },
+    {
+      "start": 1668.41,
+      "end": 1669.57,
+      "text": "Po czym mówię, ale stary, ale ty masz"
+    },
+    {
+      "start": 1669.57,
+      "end": 1671.79,
+      "text": "wszystkie płyty mojego ojca. Ja mówię, wow, jak?"
+    },
+    {
+      "start": 1672.51,
+      "end": 1673.87,
+      "text": "Okazuje się, że Bo Thompson to jest"
+    },
+    {
+      "start": 1673.87,
+      "end": 1674.85,
+      "text": "zaurzyciel Bultrowera"
+    },
+    {
+      "start": 1674.85,
+      "end": 1677.81,
+      "text": "i on jest jego synem. I to jest"
+    },
+    {
+      "start": 1677.81,
+      "end": 1679.77,
+      "text": "taka właśnie jedna z rzeczy, która"
+    },
+    {
+      "start": 1679.77,
+      "end": 1681.79,
+      "text": "gdzieś tam zostaje w głowie. On ma swój"
+    },
+    {
+      "start": 1681.79,
+      "end": 1682.57,
+      "text": "kanał na"
+    },
+    {
+      "start": 1682.57,
+      "end": 1685.71,
+      "text": "YouTubie. Instagram bardzo właśnie"
+    },
+    {
+      "start": 1685.71,
+      "end": 1686.89,
+      "text": "prowadzi odnośnie"
+    },
+    {
+      "start": 1686.89,
+      "end": 1689.35,
+      "text": "sklepów, które znajdują się"
+    },
+    {
+      "start": 1689.35,
+      "end": 1691.63,
+      "text": "na całym świecie. Super."
+    },
+    {
+      "start": 1692.19,
+      "end": 1693.81,
+      "text": "Często też zaglądają do ciebie"
+    },
+    {
+      "start": 1693.81,
+      "end": 1696.07,
+      "text": "czasem zapowiedziani i zapraszani,"
+    },
+    {
+      "start": 1696.29,
+      "end": 1697.51,
+      "text": "a czasem zupełnie"
+    },
+    {
+      "start": 1697.51,
+      "end": 1699.89,
+      "text": "robiąc ci niespodziankę"
+    },
+    {
+      "start": 1699.89,
+      "end": 1701.91,
+      "text": "muzycy, którzy grają"
+    },
+    {
+      "start": 1701.91,
+      "end": 1703.85,
+      "text": "koncerty w Krakowie. Przyjeżdżają"
+    },
+    {
+      "start": 1703.85,
+      "end": 1705.89,
+      "text": "te kilka godzin wcześniej. Czasem zresztą"
+    },
+    {
+      "start": 1705.89,
+      "end": 1707.47,
+      "text": "nocują po prostu przed koncertem"
+    },
+    {
+      "start": 1707.47,
+      "end": 1709.41,
+      "text": "w Krakowie i"
+    },
+    {
+      "start": 1709.41,
+      "end": 1711.85,
+      "text": "co, sprawdzają? Czy masz ich płyty?"
+    },
+    {
+      "start": 1712.19,
+      "end": 1713.73,
+      "text": "Są niezadowoleni,"
+    },
+    {
+      "start": 1713.85,
+      "end": 1715.35,
+      "text": "jeżeli nie ma pełnej dyskografii."
+    },
+    {
+      "start": 1715.91,
+      "end": 1716.59,
+      "text": "Ostatnio"
+    },
+    {
+      "start": 1716.59,
+      "end": 1719.41,
+      "text": "odwieził mnie"
+    },
+    {
+      "start": 1719.41,
+      "end": 1721.31,
+      "text": "Don Dolan z"
+    },
+    {
+      "start": 1721.31,
+      "end": 1723.79,
+      "text": "Venoma. Zupełnie przypadkowo."
+    },
+    {
+      "start": 1723.81,
+      "end": 1725.73,
+      "text": "szedł po prostu na rynek. Miał jakąś"
+    },
+    {
+      "start": 1725.73,
+      "end": 1727.23,
+      "text": "próbę gdzieś"
+    },
+    {
+      "start": 1727.23,
+      "end": 1729.77,
+      "text": "i szli na rynek razem ze swoim"
+    },
+    {
+      "start": 1729.77,
+      "end": 1731.87,
+      "text": "gitarzystą. No i wpadł i wchodzą."
+    },
+    {
+      "start": 1732.11,
+      "end": 1733.57,
+      "text": "Wiedziałem, kto wchodzi do mojego sklepu."
+    },
+    {
+      "start": 1734.03,
+      "end": 1735.31,
+      "text": "Ale przedstawiły się, haj, mam tony."
+    },
+    {
+      "start": 1735.59,
+      "end": 1737.09,
+      "text": "No fajnie, super, elegancko."
+    },
+    {
+      "start": 1738.29,
+      "end": 1738.85,
+      "text": "Pouglądał,"
+    },
+    {
+      "start": 1739.27,
+      "end": 1740.33,
+      "text": "zapytał się,"
+    },
+    {
+      "start": 1740.89,
+      "end": 1741.69,
+      "text": "czy mam płyty"
+    },
+    {
+      "start": 1741.69,
+      "end": 1743.43,
+      "text": "jego zespołu, czyli"
+    },
+    {
+      "start": 1743.43,
+      "end": 1744.29,
+      "text": "Venom Incorporated."
+    },
+    {
+      "start": 1744.63,
+      "end": 1744.93,
+      "text": "Tak, oczywiście."
+    },
+    {
+      "start": 1744.93,
+      "end": 1745.83,
+      "text": "Myślałem, że latą"
+    },
+    {
+      "start": 1745.83,
+      "end": 1746.19,
+      "text": "krawty."
+    },
+    {
+      "start": 1747.89,
+      "end": 1748.79,
+      "text": "Tak, oczywiście."
+    },
+    {
+      "start": 1748.95,
+      "end": 1749.21,
+      "text": "Miałem."
+    },
+    {
+      "start": 1749.69,
+      "end": 1750.59,
+      "text": "Był zadowolony"
+    },
+    {
+      "start": 1750.59,
+      "end": 1752.55,
+      "text": "i fajnie."
+    },
+    {
+      "start": 1752.89,
+      "end": 1753.87,
+      "text": "Zupełnie przypadkiem"
+    },
+    {
+      "start": 1753.87,
+      "end": 1754.93,
+      "text": "w tamtym roku."
+    },
+    {
+      "start": 1756.11,
+      "end": 1757.43,
+      "text": "Megadef był w tamtym roku, czy w tym?"
+    },
+    {
+      "start": 1757.83,
+      "end": 1758.41,
+      "text": "W tamtym roku."
+    },
+    {
+      "start": 1758.69,
+      "end": 1759.91,
+      "text": "Przyszli do mnie muzycy Megadef."
+    },
+    {
+      "start": 1760.03,
+      "end": 1760.83,
+      "text": "Zupełnie przypadkiem."
+    },
+    {
+      "start": 1760.99,
+      "end": 1761.91,
+      "text": "Szukali prezentu"
+    },
+    {
+      "start": 1761.91,
+      "end": 1762.39,
+      "text": "dla"
+    },
+    {
+      "start": 1762.39,
+      "end": 1763.35,
+      "text": "swojego"
+    },
+    {
+      "start": 1763.35,
+      "end": 1764.87,
+      "text": "menadżera."
+    },
+    {
+      "start": 1764.95,
+      "end": 1765.67,
+      "text": "Miał jakieś urodziny."
+    },
+    {
+      "start": 1766.31,
+      "end": 1766.97,
+      "text": "Mam nadzieję, że"
+    },
+    {
+      "start": 1766.97,
+      "end": 1767.55,
+      "text": "sprzedali mi"
+    },
+    {
+      "start": 1767.55,
+      "end": 1768.33,
+      "text": "naszywkę kata."
+    },
+    {
+      "start": 1770.67,
+      "end": 1771.63,
+      "text": "Naszywkę kata nie ma,"
+    },
+    {
+      "start": 1771.69,
+      "end": 1772.37,
+      "text": "niestety, ale na pewno"
+    },
+    {
+      "start": 1772.37,
+      "end": 1772.83,
+      "text": "sprzedał."
+    },
+    {
+      "start": 1773.15,
+      "end": 1774.07,
+      "text": "Fajnie, bo gdzieś tam"
+    },
+    {
+      "start": 1774.07,
+      "end": 1775.67,
+      "text": "Piotrek, mój pracownik,"
+    },
+    {
+      "start": 1775.91,
+      "end": 1777.07,
+      "text": "który obecnie"
+    },
+    {
+      "start": 1777.07,
+      "end": 1778.69,
+      "text": "u mnie jest,"
+    },
+    {
+      "start": 1778.81,
+      "end": 1779.73,
+      "text": "puszczał Pestilensa."
+    },
+    {
+      "start": 1779.99,
+      "end": 1780.97,
+      "text": "Akurat jak oni wyszli,"
+    },
+    {
+      "start": 1781.05,
+      "end": 1781.63,
+      "text": "szedł Pestilens,"
+    },
+    {
+      "start": 1781.75,
+      "end": 1782.33,
+      "text": "pierwsza płyta"
+    },
+    {
+      "start": 1782.33,
+      "end": 1784.39,
+      "text": "i on się zaciekawił."
+    },
+    {
+      "start": 1784.43,
+      "end": 1784.75,
+      "text": "Co to jest,"
+    },
+    {
+      "start": 1784.79,
+      "end": 1785.51,
+      "text": "bo to jest bardzo dobre?"
+    },
+    {
+      "start": 1787.13,
+      "end": 1789.45,
+      "text": "I kupił tego Pestilensa."
+    },
+    {
+      "start": 1789.85,
+      "end": 1790.97,
+      "text": "Na tyle im się sklep podobał."
+    },
+    {
+      "start": 1791.13,
+      "end": 1791.89,
+      "text": "Spodobał, tak."
+    },
+    {
+      "start": 1792.07,
+      "end": 1793.13,
+      "text": "Na tyle im się sklep spodobał,"
+    },
+    {
+      "start": 1793.15,
+      "end": 1794.35,
+      "text": "że później przyszli na drugi dzień"
+    },
+    {
+      "start": 1794.35,
+      "end": 1796.37,
+      "text": "i pokupowali sobie"
+    },
+    {
+      "start": 1796.37,
+      "end": 1798.11,
+      "text": "parę tematów, parę rzeczy."
+    },
+    {
+      "start": 1799.37,
+      "end": 1800.29,
+      "text": "Ze spotkań,"
+    },
+    {
+      "start": 1800.37,
+      "end": 1800.89,
+      "text": "które miałem"
+    },
+    {
+      "start": 1800.89,
+      "end": 1801.75,
+      "text": "umówione, ustawione,"
+    },
+    {
+      "start": 1801.85,
+      "end": 1802.59,
+      "text": "to było spotkanie"
+    },
+    {
+      "start": 1802.59,
+      "end": 1803.83,
+      "text": "z Mortisem."
+    },
+    {
+      "start": 1804.55,
+      "end": 1805.23,
+      "text": "Menadżer gdzieś tam"
+    },
+    {
+      "start": 1805.23,
+      "end": 1805.91,
+      "text": "zaproponował,"
+    },
+    {
+      "start": 1806.11,
+      "end": 1807.05,
+      "text": "że fajnie byłoby"
+    },
+    {
+      "start": 1807.05,
+      "end": 1808.43,
+      "text": "mieć możliwość"
+    },
+    {
+      "start": 1808.43,
+      "end": 1810.21,
+      "text": "podpisywania przez niego płyt"
+    },
+    {
+      "start": 1810.21,
+      "end": 1812.07,
+      "text": "plus zakup tych płyt."
+    },
+    {
+      "start": 1812.25,
+      "end": 1812.95,
+      "text": "Aczkolwiek mieli bardzo"
+    },
+    {
+      "start": 1812.95,
+      "end": 1814.01,
+      "text": "niezłe doświadczenie"
+    },
+    {
+      "start": 1814.01,
+      "end": 1815.83,
+      "text": "z takiej samej rzeczy,"
+    },
+    {
+      "start": 1815.95,
+      "end": 1816.75,
+      "text": "którą zrobili w Stanach."
+    },
+    {
+      "start": 1816.87,
+      "end": 1817.69,
+      "text": "Nie wiem w jakim mieście,"
+    },
+    {
+      "start": 1817.81,
+      "end": 1819.35,
+      "text": "bo na to spotkanie w Stanach"
+    },
+    {
+      "start": 1819.35,
+      "end": 1819.85,
+      "text": "przyszło gdzieś"
+    },
+    {
+      "start": 1819.85,
+      "end": 1821.11,
+      "text": "około 5-6 osób."
+    },
+    {
+      "start": 1821.67,
+      "end": 1822.67,
+      "text": "I ten menadżer się upewniał,"
+    },
+    {
+      "start": 1822.75,
+      "end": 1823.31,
+      "text": "czy na pewno"
+    },
+    {
+      "start": 1823.31,
+      "end": 1824.89,
+      "text": "damy radę zrobić tak,"
+    },
+    {
+      "start": 1825.01,
+      "end": 1825.73,
+      "text": "żeby było lepiej."
+    },
+    {
+      "start": 1826.01,
+      "end": 1826.81,
+      "text": "I gdzieś tam wystarczyło"
+    },
+    {
+      "start": 1826.81,
+      "end": 1827.45,
+      "text": "parę ogłoszeń,"
+    },
+    {
+      "start": 1827.55,
+      "end": 1828.41,
+      "text": "poszta pantoflowa"
+    },
+    {
+      "start": 1828.41,
+      "end": 1829.47,
+      "text": "i się okazało,"
+    },
+    {
+      "start": 1829.47,
+      "end": 1831.11,
+      "text": "że przyszło gdzieś"
+    },
+    {
+      "start": 1831.11,
+      "end": 1832.03,
+      "text": "około 200-250"
+    },
+    {
+      "start": 1832.03,
+      "end": 1832.85,
+      "text": "osób."
+    },
+    {
+      "start": 1833.45,
+      "end": 1833.93,
+      "text": "Poszło to bardzo"
+    },
+    {
+      "start": 1833.93,
+      "end": 1834.29,
+      "text": "sprawnie,"
+    },
+    {
+      "start": 1834.41,
+      "end": 1835.21,
+      "text": "był przeszczęśliwy."
+    },
+    {
+      "start": 1835.49,
+      "end": 1836.17,
+      "text": "Mimo, że spotkanie"
+    },
+    {
+      "start": 1836.17,
+      "end": 1837.31,
+      "text": "zaczęło się od niefarta,"
+    },
+    {
+      "start": 1837.57,
+      "end": 1838.29,
+      "text": "bo brosiło piwo"
+    },
+    {
+      "start": 1838.29,
+      "end": 1839.41,
+      "text": "bezalkoholowe"
+    },
+    {
+      "start": 1839.41,
+      "end": 1840.81,
+      "text": "i jak wchodził za stolik"
+    },
+    {
+      "start": 1840.81,
+      "end": 1841.39,
+      "text": "do podpisywania,"
+    },
+    {
+      "start": 1841.49,
+      "end": 1842.21,
+      "text": "wylał na siebie"
+    },
+    {
+      "start": 1842.21,
+      "end": 1842.85,
+      "text": "cało do piwa."
+    },
+    {
+      "start": 1843.11,
+      "end": 1843.89,
+      "text": "A czy Mortis"
+    },
+    {
+      "start": 1843.89,
+      "end": 1845.27,
+      "text": "w metal shopie"
+    },
+    {
+      "start": 1845.27,
+      "end": 1846.71,
+      "text": "podpisywał"
+    },
+    {
+      "start": 1846.71,
+      "end": 1847.25,
+      "text": "płyty"
+    },
+    {
+      "start": 1847.25,
+      "end": 1848.31,
+      "text": "i pozował do zdjęć"
+    },
+    {
+      "start": 1848.31,
+      "end": 1849.69,
+      "text": "w stroju służbowym"
+    },
+    {
+      "start": 1849.69,
+      "end": 1850.67,
+      "text": "z nosem i uszami,"
+    },
+    {
+      "start": 1850.81,
+      "end": 1851.13,
+      "text": "czy..."
+    },
+    {
+      "start": 1851.13,
+      "end": 1852.87,
+      "text": "Nie, nie, nie, nie, nie, nie, nie, nie."
+    },
+    {
+      "start": 1853.59,
+      "end": 1854.03,
+      "text": "Okej."
+    },
+    {
+      "start": 1854.77,
+      "end": 1855.95,
+      "text": "Ale za to miał"
+    },
+    {
+      "start": 1855.95,
+      "end": 1857.11,
+      "text": "bardzo takiego"
+    },
+    {
+      "start": 1857.11,
+      "end": 1859.11,
+      "text": "człowieka do pomocy,"
+    },
+    {
+      "start": 1860.11,
+      "end": 1860.35,
+      "text": "który"
+    },
+    {
+      "start": 1860.35,
+      "end": 1862.07,
+      "text": "on cały czas wychodził"
+    },
+    {
+      "start": 1862.07,
+      "end": 1863.07,
+      "text": "i gdzieś tam"
+    },
+    {
+      "start": 1863.07,
+      "end": 1863.77,
+      "text": "odsuwał tych ludzi,"
+    },
+    {
+      "start": 1864.25,
+      "end": 1864.83,
+      "text": "żeby nie było"
+    },
+    {
+      "start": 1864.83,
+      "end": 1865.51,
+      "text": "zbyt"
+    },
+    {
+      "start": 1865.51,
+      "end": 1866.39,
+      "text": "swojsko."
+    },
+    {
+      "start": 1866.55,
+      "end": 1867.07,
+      "text": "W sklepie"
+    },
+    {
+      "start": 1867.07,
+      "end": 1867.79,
+      "text": "jednak"
+    },
+    {
+      "start": 1867.79,
+      "end": 1869.11,
+      "text": "jest"
+    },
+    {
+      "start": 1869.11,
+      "end": 1870.71,
+      "text": "zwykle"
+    },
+    {
+      "start": 1870.71,
+      "end": 1871.67,
+      "text": "bardzo"
+    },
+    {
+      "start": 1871.67,
+      "end": 1872.31,
+      "text": "swojsko,"
+    },
+    {
+      "start": 1872.39,
+      "end": 1872.73,
+      "text": "o czym"
+    },
+    {
+      "start": 1872.73,
+      "end": 1873.61,
+      "text": "porozmawiamy"
+    },
+    {
+      "start": 1873.61,
+      "end": 1874.15,
+      "text": "za chwilę."
+    },
+    {
+      "start": 1875.09,
+      "end": 1875.77,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2214.06,
+      "end": 2238.28,
+      "text": "Wracamy po przerwie do rozmowy z Adamem Śliwakowskim, który w Metal Shopie w Krakowie nie tylko sprzedawał i sprzedaje kasety, płyty z metalem, naszywki, koszulki ITP, ITD, ale który stworzył miejsce spotkań dla fanów muzyki, ale też dla zespołów."
+    },
+    {
+      "start": 2239.28,
+      "end": 2258.66,
+      "text": "Muzycy, lokalne kapele zawsze kręcili się wokół Metal Shopu i chciałbym, żebyśmy o tym teraz porozmawiali, dlatego że czasem pewnie trochę nieświadomie, ale w swoim czasie i bardzo też świadomie wspierałeś integrację i rozwój tej krakowskiej sceny."
+    },
+    {
+      "start": 2258.66,
+      "end": 2269.1,
+      "text": "Kiedy się zorientowałeś właśnie, że ten sklep, który miał służyć temu, czemu sklepy zwykle służą, czyli sprzedawaniu towaru, stał się czymś więcej?"
+    },
+    {
+      "start": 2269.66,
+      "end": 2282.66,
+      "text": "Myślę, że to wyszło wszystko bardzo naturalnie i samo z siebie. Tak jak wspomniałeś na początku, pierwsza lokalizacja tego sklepu z dużym chodnikiem, który się przed nim znajdował,"
+    },
+    {
+      "start": 2282.66,
+      "end": 2289.46,
+      "text": "służyła właśnie temu, że przychodziło bardzo dużo ludzi i stało po prostu przez sklepem rozmawiając, wymieniając poglądy."
+    },
+    {
+      "start": 2290.46,
+      "end": 2300.14,
+      "text": "Bardzo częstymi gośćmi byli u mnie muzycy z Hismatik, z nieodżałowanym Gerardem Niemczykiem,"
+    },
+    {
+      "start": 2300.66,
+      "end": 2311.06,
+      "text": "Virgin Snatch, czyli Grysik, Jacek Hero. To nie było tak, że gdzieś tam te zespoły się spotykały ze sobą i stały, rozmawiały przez cztery godziny."
+    },
+    {
+      "start": 2311.06,
+      "end": 2321.4,
+      "text": "To było tak, że w pewnym momencie ludzie się ze sobą przecinali, wymieniali krótkie cześć, cześć, ewentualnie jak coś trzeba było o czymś pogadać, to zostawali."
+    },
+    {
+      "start": 2322,
+      "end": 2330.76,
+      "text": "Ja wtedy nie myślałem o tym, że to będzie coś znaczącego, a szkolwiek teraz z perspektywy czasu fajnie się to wspomina po prostu."
+    },
+    {
+      "start": 2331.16,
+      "end": 2340.96,
+      "text": "No ja kiedy przyjechałem do Krakowa, a to była połowa lat dziewięćdziesiątych, końcówka pierwszej połowy, też już byłem metalowcem, też nie w Krakowie, nauczyłem się słuchać metalu,"
+    },
+    {
+      "start": 2341.34,
+      "end": 2356.68,
+      "text": "Ale właśnie dzięki regularnym pielgrzymkom do twojego sklepu poznałem bardzo dużo ludzi, którzy, zarówno tych, którzy mieszkali po prostu w Krakowie od zawsze i gdzieś tutaj działali na tej scenie,"
+    },
+    {
+      "start": 2356.74,
+      "end": 2365.12,
+      "text": "jak i takich jak ja przyjezdnych. To rzeczywiście było miejsce, które służyło integracji sceny krakowskiej."
+    },
+    {
+      "start": 2365.72,
+      "end": 2377.68,
+      "text": "Sklep służył jako platforma do rozprowadzania nagrań tych zespołów, zarówno kaset demo wydawanych zupełnie domowym sumptem,"
+    },
+    {
+      "start": 2377.76,
+      "end": 2389.94,
+      "text": "jak i bardzo wtedy licznych tych takich oficjalnych kaset, które wydawane były przez wytwórnie z całego kraju."
+    },
+    {
+      "start": 2389.94,
+      "end": 2394.94,
+      "text": "Była też firma krakowska, czyli Krun."
+    },
+    {
+      "start": 2395.42,
+      "end": 2396.3,
+      "text": "Tak, tak, tak."
+    },
+    {
+      "start": 2396.42,
+      "end": 2399.8,
+      "text": "Bardzo proszę o wspomnienie tej historii."
+    },
+    {
+      "start": 2399.92,
+      "end": 2402.88,
+      "text": "I to właśnie jest to, o czym mówiłem."
+    },
+    {
+      "start": 2403.34,
+      "end": 2407.94,
+      "text": "Jednym z bywalców sklepu był Marcin Piwowarczyk."
+    },
+    {
+      "start": 2408.82,
+      "end": 2411.82,
+      "text": "Przychodził jeden z ludzi, którzy gdzieś tam często kupowali."
+    },
+    {
+      "start": 2412.44,
+      "end": 2414.98,
+      "text": "Wymienialiśmy się poglądami na temat muzyki."
+    },
+    {
+      "start": 2414.98,
+      "end": 2420.76,
+      "text": "Marcin dosyć mocno siedział wtedy w takim metalu melancholijnym, Paradise Lost, My Dying."
+    },
+    {
+      "start": 2421.76,
+      "end": 2428.82,
+      "text": "I gdzieś tam od słowa do słowa dowiedziałem się, że jego ojciec jest współwłaścicielem firmy Gama."
+    },
+    {
+      "start": 2429.48,
+      "end": 2433.08,
+      "text": "I fajnie było, bo gdzieś tam oni wydali im pierwszą kasetę."
+    },
+    {
+      "start": 2433.3,
+      "end": 2442.8,
+      "text": "I Marcin rzucił propozycję, że firma Gama w tamtych czasach zajmowała się dystrybucją, nagrywaniem bajek, kaset z bajkami."
+    },
+    {
+      "start": 2443.2,
+      "end": 2443.98,
+      "text": "Przede wszystkim."
+    },
+    {
+      "start": 2444.18,
+      "end": 2450.22,
+      "text": "Bo tam gdzieś tam jakieś nagrania typu Anna Jantar, Krzysztof Krawczyk też u nich bywały, ale to bardziej szło w tą stronę."
+    },
+    {
+      "start": 2450.44,
+      "end": 2452.62,
+      "text": "Absolutnie to nie miało nic wspólnego z rokiem."
+    },
+    {
+      "start": 2452.62,
+      "end": 2458.94,
+      "text": "To była jedna z tych firm działających na przełomie, nie wiem kiedy oni zaczynali, ale..."
+    },
+    {
+      "start": 2458.94,
+      "end": 2459.9,
+      "text": "Początek lat dziewięćdziesiątych."
+    },
+    {
+      "start": 2460.02,
+      "end": 2461.64,
+      "text": "Początek lat dziewięćdziesiąty, dziewięćdziesiąty pierwszy."
+    },
+    {
+      "start": 2461.72,
+      "end": 2470.1,
+      "text": "I to była jedna z tych firm, które zaczęły jeszcze przed ustawą o prawach autorskich i zajmowały się dystrybucją tych kaset."
+    },
+    {
+      "start": 2470.1,
+      "end": 2479.18,
+      "text": "No nie pirackich, bo one pirackie wtedy nie były, bo nie było tej ustawy, no ale też kaset o nieuregulowanym statusie prawnym."
+    },
+    {
+      "start": 2479.74,
+      "end": 2485.38,
+      "text": "A kiedy ustawa się pojawiła, to część z tych firm się zamknęła, a część próbowała znaleźć sobie miejsce już na oficjalnym rynku."
+    },
+    {
+      "start": 2485.4,
+      "end": 2487.44,
+      "text": "I Gama właśnie w ten sposób, o którym opowiadasz."
+    },
+    {
+      "start": 2487.44,
+      "end": 2497.46,
+      "text": "I Gama wtedy zaczęła te bajki wydawać, ona po prostu nagrywała te bajki dla własnych potrzeb, miała stworzone studio, przyjeżdżali aktorzy, czytali te bajki dzieciom."
+    },
+    {
+      "start": 2497.86,
+      "end": 2501.42,
+      "text": "I gdzieś tam, no wiadomo, to jest też jakaś tam nisza."
+    },
+    {
+      "start": 2502.12,
+      "end": 2509.42,
+      "text": "No i Marcin pewnie swojemu ojcu zaproponował, że może wejść w coś innego, żeby zobaczyć, co to będzie."
+    },
+    {
+      "start": 2510.42,
+      "end": 2518.24,
+      "text": "No tutaj pojawiłem się Jan, bo Marcin wiedział też, że mam dostęp, mam dużo, rozmawiam z ludźmi i telefonicznie i listownie."
+    },
+    {
+      "start": 2518.56,
+      "end": 2524.78,
+      "text": "Tu się narodził pomysł, żeby po prostu spróbować z czymś wejść."
+    },
+    {
+      "start": 2525.62,
+      "end": 2528.46,
+      "text": "To szeleszczenie, to jest Adam, który przeglądał swoje notatek."
+    },
+    {
+      "start": 2528.46,
+      "end": 2528.8,
+      "text": "Tak jest."
+    },
+    {
+      "start": 2529.08,
+      "end": 2531.46,
+      "text": "No i pojechałem do ludzi z Gamy."
+    },
+    {
+      "start": 2531.68,
+      "end": 2537.18,
+      "text": "W świętej pamięci Artur Kuzioła był tam osobą bardziej decyzyjną niż pan Andrzej Piwowarczyk."
+    },
+    {
+      "start": 2537.18,
+      "end": 2541.4,
+      "text": "To, o czym powiedziałem, jak to może wyglądać."
+    },
+    {
+      "start": 2541.8,
+      "end": 2548.14,
+      "text": "Tutaj mówimy o połowie lat dziewięćdziesiątych, czyli już powolutku zaczynał się ten boom na polskie zespoły."
+    },
+    {
+      "start": 2548.66,
+      "end": 2552.46,
+      "text": "Wczesne wydawnictwa Tragemala, Morbid Noisa, Barona."
+    },
+    {
+      "start": 2552.88,
+      "end": 2556.62,
+      "text": "Już ludzie zaczęli doceniać wagę polskich zespołów."
+    },
+    {
+      "start": 2557.22,
+      "end": 2558.44,
+      "text": "Ludziom to się zaczęło podobać."
+    },
+    {
+      "start": 2558.64,
+      "end": 2563.92,
+      "text": "I gdzieś tam mój pierwszy pomysł był taki, żeby wydać chłopaków ze Schismatica."
+    },
+    {
+      "start": 2565,
+      "end": 2581.68,
+      "text": "Oni byli moimi częstymi gośćmi, fajni ludzie, wieloryb Gerard Niemczyk, nie pamiętam innych imion, ale fajni ludzie, świetna muzyka na tamte czasy, to była połowa lat dziewięćdziesiątych, bardzo zaawansowane granie techniczne, cynik, def."
+    },
+    {
+      "start": 2582.34,
+      "end": 2594.68,
+      "text": "Ludzie z Gamy się kompletnie nie znali na tej muzyce, także to wszystko gdzieś tam spoczęło na moich barkach, żebym faktycznie polecił im rzecz, która nie zniechęci od początku do wydawania."
+    },
+    {
+      "start": 2595,
+      "end": 2596.54,
+      "text": "I udało się."
+    },
+    {
+      "start": 2596.72,
+      "end": 2607.82,
+      "text": "Udało się, aczkolwiek przy ich masówce sprzedażowej bajek, nie wiem, wynik tysiąca, tysiąca pięciuset kasy Schismatica był niczym."
+    },
+    {
+      "start": 2608.7,
+      "end": 2612.6,
+      "text": "Ale potem przyszły tytuły, które sprzedały się na lepsze najlepiej."
+    },
+    {
+      "start": 2612.6,
+      "end": 2624.98,
+      "text": "Dokładnie i później przyszedł, no ja też troszeczkę stąpałem po cienkim lodzie, bo ja nie wiedziałem ile oni pieniędzy mogą, chcą wydać i co chcą tak naprawdę wydać."
+    },
+    {
+      "start": 2625,
+      "end": 2640.18,
+      "text": "No i stąd się narodził pomysł z Vaderem, bo znałem się z Mariuszem Kmiąkiem bardzo dobrze i kilka razy się spotykaliśmy ze sobą i wiedziałem, że ma być nowy Vader."
+    },
+    {
+      "start": 2640.42,
+      "end": 2650.44,
+      "text": "Aczkolwiek jest problem, bo nie wiem komu oni to wtedy zaoferowali, oni się bardzo uparli, żeby to promować tym singlem I Feel You, gdzie był cover Depeche'ów."
+    },
+    {
+      "start": 2651.3,
+      "end": 2655.14,
+      "text": "No niestety żadna wytwornia, z którą rozmawiali nie chciała się na to zgodzić."
+    },
+    {
+      "start": 2655.86,
+      "end": 2656.38,
+      "text": "Tchórze."
+    },
+    {
+      "start": 2656.46,
+      "end": 2669.16,
+      "text": "Tchórze, tak. I wtedy pamiętam, że gdzieś tam, ja chciałem być poza wszystkimi ustaleniami finansowymi, Mariusz z Piotrkiem, Wiwczarkiem przyjechali do Krakowa, no i się dogadali."
+    },
+    {
+      "start": 2669.52,
+      "end": 2679.12,
+      "text": "Robimy tutaj przerwę, dzisiaj gramy wyłącznie krakowskie zespoły, ale to jest ten moment, w którym zrobimy wyjątek, żeby pokazać, że my tchórzami nie jesteśmy."
+    },
+    {
+      "start": 2679.3,
+      "end": 2680.36,
+      "text": "Vader, I Feel You."
+    },
+    {
+      "start": 2681.86,
+      "end": 2682.46,
+      "text": "Tchórze."
+    },
+    {
+      "start": 2940.93,
+      "end": 2958.57,
+      "text": "Wracamy do rozmowy, Adam Śliwakowski jest dzisiaj moim gościem, wątków tutaj tak dużo, że już teraz widzę, że pewnie wszystkich nie poruszymy, a na pewno nie wszystkie uda nam się zgłębić, no ale rozmawiamy o wydawnictwach fonograficznych,"
+    },
+    {
+      "start": 2958.57,
+      "end": 2987.03,
+      "text": "Ale chciałbym też wspomnieć to, co sercu bliskie, czyli twoją aktywność medialną, mianowicie magazyn muzyczny, Metal Side, to też był taki czas na polskim rynku prasowym, kiedy po pierwsze było dużo tytułów prasowych, sporo tytułów muzycznych, a najwięcej, i tak zresztą chyba pozostało do dziś, mimo że wszędzie wszystko topnieje, metalowych."
+    },
+    {
+      "start": 2987.03,
+      "end": 2994.19,
+      "text": "Po co był ten kolejny magazyn, skoro już kilka na rynku funkcjonowało?"
+    },
+    {
+      "start": 2994.45,
+      "end": 3011.95,
+      "text": "Akurat tutaj w tym momencie powiem ci, że to nie było aż tak, bo gdzieś tam połowa lat dziewięćdziesiątych Tragemall ukazywał się dosyć wtedy rzadko, Morbid Noise też, ale to jeszcze nie było tak, że to było faktycznie tam kwartalnik."
+    },
+    {
+      "start": 3011.95,
+      "end": 3015.35,
+      "text": "A na Metal Hammer prawdziwi metalowcy patrzyli spogarną."
+    },
+    {
+      "start": 3015.49,
+      "end": 3035.27,
+      "text": "Dokładnie, dokładnie. Tak się też złożyło, że spośród osób, które do mnie przychodziły, było kilka, które przyjechały na studia do Krakowa, oczywiście metalowcy, nie muszę nadmieniać, przychodziły do mnie do sklepu i okazało się, że każda z tych osób w którymś momencie prowadziła sobie jakiegoś zina w miejscowości, z której pochodziła."
+    },
+    {
+      "start": 3035.27,
+      "end": 3046.45,
+      "text": "To jest Darek Puch, Tomek Franczak, Darek Kępny. I oczywiście przy takich rozmowach wyszło, że dlaczego bym nie spróbować z czymś swoim?"
+    },
+    {
+      "start": 3047.45,
+      "end": 3059.83,
+      "text": "Nie do końca chodziło nam o kwestie zarobkowe. To bardziej chodziło o to, żeby popisać sobie do wytworni, żeby sobie parę nowości pozałatwiać, żeby wytwornie mogły poprzesuwać, żeby je zrecenzować później."
+    },
+    {
+      "start": 3060.67,
+      "end": 3074.11,
+      "text": "I nie ukrywam, że tutaj znowu zahaczamy o Gamę. Przyszedłem do nich z takim pomysłem, gdyż nie byłem na tyle mocny finansowo, żeby móc takie czasopismo samemu sobie założyć i drukować."
+    },
+    {
+      "start": 3074.11,
+      "end": 3090.67,
+      "text": "No i tutaj gama też mi pomogła. W zamian za to, że byłem w stanie gdzieś tam im zaoferować jakieś fajne zespoły, na których sobie mogli zarobić pieniądze, postanowili troszeczkę dofinansować mi Metal Side'a."
+    },
+    {
+      "start": 3090.67,
+      "end": 3100.63,
+      "text": "To był 94. rok bodajże, jak się ukazał pierwszy numer. Oczywiście to wszystko było takie, że nie wiedzieliśmy w co uderzać."
+    },
+    {
+      "start": 3101.49,
+      "end": 3108.11,
+      "text": "Pierwszym pomysłem takim, żeby to czasopismo się troszeczkę wyróżniało na rynku, było to, że okładki chcieliśmy mieć namalowane."
+    },
+    {
+      "start": 3108.63,
+      "end": 3118.95,
+      "text": "A mój kumpel namalował nam jakieś tam, na chwilę obecną pewnie bazgroły by ktoś powiedział, aczkolwiek gdzieś tam to było coś innego niż wszystko dotychczas."
+    },
+    {
+      "start": 3118.95,
+      "end": 3121.17,
+      "text": "Ile numerów się ukazało? Pamiętasz dokładnie?"
+    },
+    {
+      "start": 3121.21,
+      "end": 3123.09,
+      "text": "Pięć albo sześć. Pięć albo sześć numerów."
+    },
+    {
+      "start": 3123.19,
+      "end": 3127.15,
+      "text": "Tak mało? Kurczę, dałbym sobie rękę uczniom, że tego było więcej."
+    },
+    {
+      "start": 3127.31,
+      "end": 3133.55,
+      "text": "Wiesz, ja jestem zadowolony z tego, że chyba, nie wiem, po raz pierwszy wydaliśmy drugi albo trzeci numer z kasetą."
+    },
+    {
+      "start": 3133.95,
+      "end": 3139.07,
+      "text": "Tutaj ukłony w stronę Mystica, to była kaseta reklamowa, rzeczami, które Mystic w tamtym czasie wydawał."
+    },
+    {
+      "start": 3139.07,
+      "end": 3147.33,
+      "text": "Ale gdzieś tam wiem, że do momentu, jak się Metal Side ukazał, nie było gazety z kasetą."
+    },
+    {
+      "start": 3147.49,
+      "end": 3154.55,
+      "text": "My wydaliśmy, później następny numer, wiadomo, to już była dodawana płyta równie z materiami reklamowymi Mystica."
+    },
+    {
+      "start": 3154.71,
+      "end": 3159.69,
+      "text": "Po części wytwórni, które nas o to prosiły, czy tam przysłały jakieś płyty w zamian."
+    },
+    {
+      "start": 3159.69,
+      "end": 3166.75,
+      "text": "A dlaczego zrezygnowałeś z wydawaniem Metal Side zamiast ten projekt rozwijać?"
+    },
+    {
+      "start": 3167.53,
+      "end": 3179.79,
+      "text": "Bo magazyn zniknął z rynku, no na pewno jeszcze nie w czasach, kiedy praca muzyczna zaczęła przeżywać ten głęboki kryzys spowodowany szerokim wejściem internetu."
+    },
+    {
+      "start": 3179.91,
+      "end": 3182.97,
+      "text": "Mogliście to jeszcze trochę pociągnąć."
+    },
+    {
+      "start": 3182.97,
+      "end": 3191.55,
+      "text": "No tutaj kłania się ekonomia. To było tak, że nie wiem, sklepy z całej Polski zamawiały sobie po 10-20 numerów."
+    },
+    {
+      "start": 3192.05,
+      "end": 3197.61,
+      "text": "Wysyłaliśmy im te numery. No ale później niestety problemy z odzyskaniem pieniędzy były dosyć duże."
+    },
+    {
+      "start": 3198.19,
+      "end": 3202.81,
+      "text": "Tutaj, no wszyscy wiemy jak było w Polsce w drugiej połowie lat 90-tych."
+    },
+    {
+      "start": 3202.81,
+      "end": 3210.31,
+      "text": "Nie mamy się co dziwić, że taki ktoś, kto wydaje Metal Side'a jest na samym końcu układu pokarmowego, któremu trzeba zapłacić."
+    },
+    {
+      "start": 3210.49,
+      "end": 3221.75,
+      "text": "Także, no a gama też nie była skora do dofinansowywania następnego numeru, gdzie poprzedni się zwrócił w 50%, załóżmy."
+    },
+    {
+      "start": 3222.15,
+      "end": 3230.81,
+      "text": "Trzeba było wysyłać tych młodocianych z birów, z pieszczochach i koszulkach i Mortal, co się gromadzili przed sklepem, żeby odzyskiwali długi."
+    },
+    {
+      "start": 3231.57,
+      "end": 3236.03,
+      "text": "Wystarczyło mnie zapytać im z takim pomysłem biznesowym do ciebie wjechał."
+    },
+    {
+      "start": 3872,
+      "end": 3874.06,
+      "text": "Autopromocja"
+    },
+    {
+      "start": 3874.06,
+      "end": 3875.46,
+      "text": "Nowości"
+    },
+    {
+      "start": 3875.46,
+      "end": 3877.48,
+      "text": "Muzyka sprzed dekady"
+    },
+    {
+      "start": 3877.48,
+      "end": 3879.02,
+      "text": "Sprzed dwóch"
+    },
+    {
+      "start": 3879.02,
+      "end": 3880.94,
+      "text": "Najpiękniejsza"
+    },
+    {
+      "start": 3880.94,
+      "end": 3883.28,
+      "text": "Muzyka, która nie zna pojęcia czasu"
+    },
+    {
+      "start": 3883.28,
+      "end": 3884.44,
+      "text": "I on"
+    },
+    {
+      "start": 3884.44,
+      "end": 3886.16,
+      "text": "A czy już mówiliśmy o nowościach?"
+    },
+    {
+      "start": 3886.34,
+      "end": 3887.6,
+      "text": "Paweł Kostrzewa"
+    },
+    {
+      "start": 3887.6,
+      "end": 3889.16,
+      "text": "Trójkowy ekspres"
+    },
+    {
+      "start": 3889.16,
+      "end": 3890.8,
+      "text": "I jego pojemne wagony"
+    },
+    {
+      "start": 3890.8,
+      "end": 3893.48,
+      "text": "Zapraszam w każdą sobotę przez całe lato"
+    },
+    {
+      "start": 3893.48,
+      "end": 3895.1,
+      "text": "Między 10 a 13"
+    },
+    {
+      "start": 3895.1,
+      "end": 3896.74,
+      "text": "Autopromocja"
+    },
+    {
+      "start": 3896.74,
+      "end": 3900.26,
+      "text": "Za Adamem Śliwakowskim, założycielem i szefem Metal Shopu"
+    },
+    {
+      "start": 3900.26,
+      "end": 3902.28,
+      "text": "Rozmawiamy"
+    },
+    {
+      "start": 3902.28,
+      "end": 3904.22,
+      "text": "O burzliwych latach"
+    },
+    {
+      "start": 3904.22,
+      "end": 3905.64,
+      "text": "90-tych"
+    },
+    {
+      "start": 3905.64,
+      "end": 3908.18,
+      "text": "I o Krakowie"
+    },
+    {
+      "start": 3908.18,
+      "end": 3910.48,
+      "text": "Właśnie, może trochę więcej o Krakowie"
+    },
+    {
+      "start": 3910.48,
+      "end": 3912.66,
+      "text": "Czy twoim zdaniem"
+    },
+    {
+      "start": 3912.66,
+      "end": 3914.56,
+      "text": "Krakowska scena"
+    },
+    {
+      "start": 3914.56,
+      "end": 3915.44,
+      "text": "Metalowa"
+    },
+    {
+      "start": 3915.44,
+      "end": 3918.86,
+      "text": "Jest inna, jakoś specyficzna?"
+    },
+    {
+      "start": 3919.16,
+      "end": 3920.34,
+      "text": "Różni się od tych"
+    },
+    {
+      "start": 3920.34,
+      "end": 3921.96,
+      "text": "Z innych polskich miast?"
+    },
+    {
+      "start": 3922.22,
+      "end": 3923.38,
+      "text": "Albo różniła kiedyś?"
+    },
+    {
+      "start": 3923.78,
+      "end": 3924.44,
+      "text": "Trudne pytanie"
+    },
+    {
+      "start": 3924.44,
+      "end": 3928.98,
+      "text": "Myślę, że w każdym mieście jest podobnie"
+    },
+    {
+      "start": 3928.98,
+      "end": 3930.58,
+      "text": "Ludzie, po prostu ludzie"
+    },
+    {
+      "start": 3930.58,
+      "end": 3932.68,
+      "text": "Ludzie, którzy"
+    },
+    {
+      "start": 3932.68,
+      "end": 3935.2,
+      "text": "Tworzą dane zespoły"
+    },
+    {
+      "start": 3935.2,
+      "end": 3937.16,
+      "text": "W danym momencie"
+    },
+    {
+      "start": 3937.16,
+      "end": 3938.32,
+      "text": "Za chwilę"
+    },
+    {
+      "start": 3938.32,
+      "end": 3940.48,
+      "text": "Grają w innych zespołach"
+    },
+    {
+      "start": 3940.48,
+      "end": 3941.78,
+      "text": "Tworzą różne projekty"
+    },
+    {
+      "start": 3941.78,
+      "end": 3943.16,
+      "text": "Ale myślę, że to jest specyfika"
+    },
+    {
+      "start": 3943.16,
+      "end": 3945.4,
+      "text": "Każdego miasta, każdego państwa"
+    },
+    {
+      "start": 3945.4,
+      "end": 3948,
+      "text": "Weźmy taką Szwecję, gdzie muzyk"
+    },
+    {
+      "start": 3948,
+      "end": 3948.38,
+      "text": "A"
+    },
+    {
+      "start": 3948.38,
+      "end": 3950.08,
+      "text": "Grał w 15 zespołach"
+    },
+    {
+      "start": 3950.08,
+      "end": 3952.14,
+      "text": "To samo jest, myślę, że w Krakowie"
+    },
+    {
+      "start": 3952.14,
+      "end": 3953.12,
+      "text": "Weźmy"
+    },
+    {
+      "start": 3953.12,
+      "end": 3954.34,
+      "text": "Jeszcze raz powtórzę"
+    },
+    {
+      "start": 3954.34,
+      "end": 3955.04,
+      "text": "Nieożdżowanego"
+    },
+    {
+      "start": 3955.04,
+      "end": 3956.3,
+      "text": "Grada Niemczyka"
+    },
+    {
+      "start": 3956.3,
+      "end": 3958.1,
+      "text": "No mnóstwo zespołów, w których grał"
+    },
+    {
+      "start": 3958.1,
+      "end": 3959.96,
+      "text": "Nawet chyba nie wiem, czy w Luxe"
+    },
+    {
+      "start": 3959.96,
+      "end": 3960.68,
+      "text": "Kulcie nie grał"
+    },
+    {
+      "start": 3960.68,
+      "end": 3961.28,
+      "text": "Gościnnie"
+    },
+    {
+      "start": 3961.28,
+      "end": 3962.12,
+      "text": "Nagrywał, tak"
+    },
+    {
+      "start": 3962.12,
+      "end": 3963.06,
+      "text": "Półpłyty nam nagrał"
+    },
+    {
+      "start": 3963.06,
+      "end": 3963.62,
+      "text": "Tak, tak"
+    },
+    {
+      "start": 3963.62,
+      "end": 3966.02,
+      "text": "A po drodze wszystkie Gladiatory"
+    },
+    {
+      "start": 3966.02,
+      "end": 3968.3,
+      "text": "No mordry z Częstochowy"
+    },
+    {
+      "start": 3968.3,
+      "end": 3968.54,
+      "text": "Ale"
+    },
+    {
+      "start": 3968.54,
+      "end": 3969.84,
+      "text": "Seismatic"
+    },
+    {
+      "start": 3969.84,
+      "end": 3970.86,
+      "text": "Death Sea"
+    },
+    {
+      "start": 3970.86,
+      "end": 3972.76,
+      "text": "Symbolik Immortality"
+    },
+    {
+      "start": 3972.76,
+      "end": 3973.94,
+      "text": "Holy Death"
+    },
+    {
+      "start": 3973.94,
+      "end": 3974.8,
+      "text": "Holy Death"
+    },
+    {
+      "start": 3974.8,
+      "end": 3975.58,
+      "text": "Dokładnie"
+    },
+    {
+      "start": 3975.58,
+      "end": 3977.24,
+      "text": "I to samo, no Leszek Wojni"
+    },
+    {
+      "start": 3977.24,
+      "end": 3977.82,
+      "text": "Sianorzęski"
+    },
+    {
+      "start": 3977.82,
+      "end": 3979.94,
+      "text": "Też tu jakiś wokal w Gladiatorze"
+    },
+    {
+      "start": 3979.94,
+      "end": 3981.2,
+      "text": "Tu znowu Holy Death"
+    },
+    {
+      "start": 3981.2,
+      "end": 3983,
+      "text": "Tu coś innego"
+    },
+    {
+      "start": 3983,
+      "end": 3985.94,
+      "text": "I myślę, że to cały czas się dzieje"
+    },
+    {
+      "start": 3985.94,
+      "end": 3986.28,
+      "text": "Bo"
+    },
+    {
+      "start": 3986.28,
+      "end": 3988.76,
+      "text": "Wiem, znam tych ludzi"
+    },
+    {
+      "start": 3988.76,
+      "end": 3992,
+      "text": "No bo to są ludzie, którzy przychodzili do mnie od dawien dawna"
+    },
+    {
+      "start": 3992,
+      "end": 3994.12,
+      "text": "Człowiek, który gra teraz"
+    },
+    {
+      "start": 3994.12,
+      "end": 3995.2,
+      "text": "Cadaveric Possession"
+    },
+    {
+      "start": 3995.2,
+      "end": 3996.76,
+      "text": "Darek"
+    },
+    {
+      "start": 3996.76,
+      "end": 3997.9,
+      "text": "Gra tam na basie"
+    },
+    {
+      "start": 3997.9,
+      "end": 4001.22,
+      "text": "On był wcześniej też gitarzystą w jakimś blackowym zespole"
+    },
+    {
+      "start": 4001.22,
+      "end": 4003.92,
+      "text": "Kilka miał projektów też gdzieś tam na boku"
+    },
+    {
+      "start": 4003.92,
+      "end": 4006.04,
+      "text": "Weźmy Maćka"
+    },
+    {
+      "start": 4006.04,
+      "end": 4008.38,
+      "text": "Perkusistę z Mgły"
+    },
+    {
+      "start": 4008.38,
+      "end": 4008.74,
+      "text": "No"
+    },
+    {
+      "start": 4008.74,
+      "end": 4010.88,
+      "text": "Pobocznych projektów"
+    },
+    {
+      "start": 4010.88,
+      "end": 4012.12,
+      "text": "No nie pobocznych, przepraszam"
+    },
+    {
+      "start": 4012.12,
+      "end": 4015.64,
+      "text": "No ale brał udział w nagrywaniu mnóstwa rzeczy"
+    },
+    {
+      "start": 4015.64,
+      "end": 4018.96,
+      "text": "Począwszy, nie wiem, jakiś tam"
+    },
+    {
+      "start": 4018.96,
+      "end": 4019.74,
+      "text": "Kryonix"
+    },
+    {
+      "start": 4019.74,
+      "end": 4022.66,
+      "text": "Chyba Die Disease tak samo w pewnym momencie grał"
+    },
+    {
+      "start": 4022.66,
+      "end": 4027.48,
+      "text": "To jest specyfika Krakowa, którą my znamy"
+    },
+    {
+      "start": 4027.48,
+      "end": 4029.64,
+      "text": "Ale myślę, że to tak wszędzie samo działa"
+    },
+    {
+      "start": 4029.64,
+      "end": 4030.96,
+      "text": "Okej, to po kolei"
+    },
+    {
+      "start": 4030.96,
+      "end": 4035.14,
+      "text": "Pionierami Krakowskiego Metalu"
+    },
+    {
+      "start": 4035.14,
+      "end": 4038.1,
+      "text": "I to w czasach, kiedy chyba jeszcze Cię tu nie było"
+    },
+    {
+      "start": 4038.1,
+      "end": 4040.92,
+      "text": "Był zespół voodoo"
+    },
+    {
+      "start": 4040.92,
+      "end": 4042.52,
+      "text": "Ale był osamotniony"
+    },
+    {
+      "start": 4042.52,
+      "end": 4045,
+      "text": "Bo w Krakowie królowała wtedy inna muzyka"
+    },
+    {
+      "start": 4045,
+      "end": 4047.04,
+      "text": "Z jednej strony piwnica pod baranami"
+    },
+    {
+      "start": 4047.04,
+      "end": 4049.68,
+      "text": "Piosenka studencka, z drugiej strony"
+    },
+    {
+      "start": 4049.68,
+      "end": 4052.68,
+      "text": "Te alternatywne dziwadła"
+    },
+    {
+      "start": 4052.68,
+      "end": 4056.7,
+      "text": "Od Dupont Pudelsów po Manam"
+    },
+    {
+      "start": 4056.7,
+      "end": 4060.1,
+      "text": "No i to voodoo samotnie rzeźbiące heavy metal"
+    },
+    {
+      "start": 4060.1,
+      "end": 4064.88,
+      "text": "Tak, tak, tak, ja powiem Ci szczerze, że nie znałem voodoo wcześniej"
+    },
+    {
+      "start": 4064.88,
+      "end": 4065.56,
+      "text": "Absolutnie"
+    },
+    {
+      "start": 4065.56,
+      "end": 4072.28,
+      "text": "Dopiero Forrest Foreman przyniósł mi płytę w 2019-2020 roku mniej więcej"
+    },
+    {
+      "start": 4072.28,
+      "end": 4073.58,
+      "text": "Którą nagrali"
+    },
+    {
+      "start": 4073.58,
+      "end": 4076.2,
+      "text": "I gdzieś tam zacząłem o nich czytać"
+    },
+    {
+      "start": 4076.2,
+      "end": 4078.14,
+      "text": "I byłem zszokowany, że oni"
+    },
+    {
+      "start": 4078.14,
+      "end": 4079.42,
+      "text": "Jarocin"
+    },
+    {
+      "start": 4079.42,
+      "end": 4080.74,
+      "text": "Metalmania"
+    },
+    {
+      "start": 4080.74,
+      "end": 4081.34,
+      "text": "Metalmania"
+    },
+    {
+      "start": 4081.34,
+      "end": 4082.58,
+      "text": "No właśnie, no właśnie"
+    },
+    {
+      "start": 4082.58,
+      "end": 4084.06,
+      "text": "No moje zdziwienie"
+    },
+    {
+      "start": 4084.06,
+      "end": 4086.62,
+      "text": "I myślę, że"
+    },
+    {
+      "start": 4086.62,
+      "end": 4090.1,
+      "text": "No dosyć mocno nie wykorzystali"
+    },
+    {
+      "start": 4090.1,
+      "end": 4093.16,
+      "text": "W tych połowie lat 80-tych"
+    },
+    {
+      "start": 4093.16,
+      "end": 4094.04,
+      "text": "W tej swojej popularności"
+    },
+    {
+      "start": 4094.04,
+      "end": 4096.72,
+      "text": "Przecież oni pierwszą płytę nagrali w 85-tym roku"
+    },
+    {
+      "start": 4096.72,
+      "end": 4098.66,
+      "text": "No klasycznie"
+    },
+    {
+      "start": 4098.66,
+      "end": 4100.18,
+      "text": "No ktoś powie, że nie mieli menadżera"
+    },
+    {
+      "start": 4100.18,
+      "end": 4102.12,
+      "text": "Który by ich popchał gdzieś dalej"
+    },
+    {
+      "start": 4102.12,
+      "end": 4104.18,
+      "text": "Być może myśleli, że po nagraniu płyty"
+    },
+    {
+      "start": 4104.18,
+      "end": 4106.06,
+      "text": "Po koncertowaniu na Metalmani"
+    },
+    {
+      "start": 4106.06,
+      "end": 4107.2,
+      "text": "W Jarocinie"
+    },
+    {
+      "start": 4107.2,
+      "end": 4108.8,
+      "text": "To samo przyjdzie"
+    },
+    {
+      "start": 4108.8,
+      "end": 4110.66,
+      "text": "No ale no jak wiemy z doświadczenia"
+    },
+    {
+      "start": 4110.66,
+      "end": 4111.44,
+      "text": "Nigdy samo nie przychodzi"
+    },
+    {
+      "start": 4111.44,
+      "end": 4115.52,
+      "text": "No właśnie nie mieli też zaplecza w postaci tej sceny"
+    },
+    {
+      "start": 4115.52,
+      "end": 4116.66,
+      "text": "Ona zaczęła w Krakowie"
+    },
+    {
+      "start": 4116.66,
+      "end": 4118.96,
+      "text": "Nie mówię tego"
+    },
+    {
+      "start": 4118.96,
+      "end": 4121.8,
+      "text": "Dlatego, że byłem świadkiem tego z pierwszej ręki"
+    },
+    {
+      "start": 4121.8,
+      "end": 4122.18,
+      "text": "No ale"
+    },
+    {
+      "start": 4122.18,
+      "end": 4124,
+      "text": "Później już kiedy tu przyjechałem"
+    },
+    {
+      "start": 4124,
+      "end": 4126.2,
+      "text": "Poznałem ludzi, którzy uczestnikami"
+    },
+    {
+      "start": 4126.2,
+      "end": 4127.34,
+      "text": "Świadkami tego byli"
+    },
+    {
+      "start": 4127.34,
+      "end": 4129.08,
+      "text": "Ta krakowska scena metalowa"
+    },
+    {
+      "start": 4129.08,
+      "end": 4131.28,
+      "text": "Dopiero chyba zaczęła się budować wokół Heliasa"
+    },
+    {
+      "start": 4131.28,
+      "end": 4132.7,
+      "text": "I to był taki pierwszy zespół, który"
+    },
+    {
+      "start": 4132.7,
+      "end": 4135.32,
+      "text": "Nie dość, że został lokalną gwiazdą"
+    },
+    {
+      "start": 4135.32,
+      "end": 4135.96,
+      "text": "To jeszcze"
+    },
+    {
+      "start": 4135.96,
+      "end": 4138.2,
+      "text": "No trochę pociągnął za sobą innych"
+    },
+    {
+      "start": 4138.2,
+      "end": 4140.64,
+      "text": "Inspirował innych do grania"
+    },
+    {
+      "start": 4140.64,
+      "end": 4141.18,
+      "text": "Tak, tak"
+    },
+    {
+      "start": 4141.18,
+      "end": 4144.2,
+      "text": "Jeszcze równocześnie z Heliasem Plus Minus"
+    },
+    {
+      "start": 4144.2,
+      "end": 4145.46,
+      "text": "Był Gladiator"
+    },
+    {
+      "start": 4145.46,
+      "end": 4147.32,
+      "text": "W którym też Gerard Niemczyk grał"
+    },
+    {
+      "start": 4147.32,
+      "end": 4147.82,
+      "text": "Helias"
+    },
+    {
+      "start": 4147.82,
+      "end": 4149.14,
+      "text": "Helias znowu, no to"
+    },
+    {
+      "start": 4149.14,
+      "end": 4150.66,
+      "text": "Gulary"
+    },
+    {
+      "start": 4150.66,
+      "end": 4153.12,
+      "text": "Który też się później w innych zespołach udzielał"
+    },
+    {
+      "start": 4153.12,
+      "end": 4155.82,
+      "text": "Aczkolwiek to nie była myślę taka popularność"
+    },
+    {
+      "start": 4155.82,
+      "end": 4158.06,
+      "text": "Która by powodowała to, że"
+    },
+    {
+      "start": 4158.06,
+      "end": 4159.94,
+      "text": "Helias nagle stałby się gwiazdą"
+    },
+    {
+      "start": 4159.94,
+      "end": 4160.86,
+      "text": "Zapraszanym właśnie"
+    },
+    {
+      "start": 4160.86,
+      "end": 4162.66,
+      "text": "Na metalmanie"
+    },
+    {
+      "start": 4162.66,
+      "end": 4166.74,
+      "text": "I jako, nie wiem, supporty do większych zespołów"
+    },
+    {
+      "start": 4166.74,
+      "end": 4168.34,
+      "text": "Nie, ja myślę o takim"
+    },
+    {
+      "start": 4168.34,
+      "end": 4169.96,
+      "text": "Lopalności lokalnej"
+    },
+    {
+      "start": 4169.96,
+      "end": 4172.34,
+      "text": "Tak, bo rzeczywiście poza Małopolską"
+    },
+    {
+      "start": 4172.34,
+      "end": 4174.52,
+      "text": "Nawet nie tyle samym Krakowem"
+    },
+    {
+      "start": 4174.52,
+      "end": 4176.52,
+      "text": "To nie był zespół raczej znany"
+    },
+    {
+      "start": 4176.52,
+      "end": 4178.36,
+      "text": "Wtedy sporo było zresztą takich"
+    },
+    {
+      "start": 4178.36,
+      "end": 4180.2,
+      "text": "Lokalnych gwiazd zespołów"
+    },
+    {
+      "start": 4180.2,
+      "end": 4181.76,
+      "text": "Które były duże w swoim mieście"
+    },
+    {
+      "start": 4181.76,
+      "end": 4182.74,
+      "text": "W regionie, no ale"
+    },
+    {
+      "start": 4182.74,
+      "end": 4185.2,
+      "text": "Niekoniecznie się to przekładało na"
+    },
+    {
+      "start": 4185.2,
+      "end": 4186.94,
+      "text": "No to co się działo na zewnątrz"
+    },
+    {
+      "start": 4186.94,
+      "end": 4187.92,
+      "text": "No nie było internetu"
+    },
+    {
+      "start": 4187.92,
+      "end": 4190.02,
+      "text": "Nie, nie tak łatwo było dotrzeć informacją"
+    },
+    {
+      "start": 4190.02,
+      "end": 4192.7,
+      "text": "Nawet te kilkaset kilometrów dalej"
+    },
+    {
+      "start": 4192.7,
+      "end": 4194.06,
+      "text": "Tak, dokładnie, dokładnie"
+    },
+    {
+      "start": 4194.06,
+      "end": 4195.66,
+      "text": "Nawet teraz sobie wpiszesz, że nie wiem"
+    },
+    {
+      "start": 4195.66,
+      "end": 4196.86,
+      "text": "Gladiatora"
+    },
+    {
+      "start": 4196.86,
+      "end": 4199.04,
+      "text": "To nie wychodzi ci z automatu Gladiator z Krakowa"
+    },
+    {
+      "start": 4199.04,
+      "end": 4201.76,
+      "text": "Tylko wychodzi Gladiator z jakiegoś Słupska"
+    },
+    {
+      "start": 4201.76,
+      "end": 4204.22,
+      "text": "Czy stamtąd"
+    },
+    {
+      "start": 4204.22,
+      "end": 4205.44,
+      "text": "Czyli jakiś tam film"
+    },
+    {
+      "start": 4205.44,
+      "end": 4207.4,
+      "text": "Z Russellem Crowe"
+    },
+    {
+      "start": 4207.4,
+      "end": 4207.96,
+      "text": "Dokładnie, dokładnie"
+    },
+    {
+      "start": 4207.96,
+      "end": 4210.04,
+      "text": "Bzdury kompletne w tym internecie"
+    },
+    {
+      "start": 4210.04,
+      "end": 4210.96,
+      "text": "Tak jest, tak jest"
+    },
+    {
+      "start": 4210.96,
+      "end": 4212.76,
+      "text": "Pierwszy boom"
+    },
+    {
+      "start": 4212.76,
+      "end": 4213.92,
+      "text": "Oczywiście ten boom"
+    },
+    {
+      "start": 4213.92,
+      "end": 4217.3,
+      "text": "Można brać tutaj w cudzysłów"
+    },
+    {
+      "start": 4217.3,
+      "end": 4220.86,
+      "text": "Bo to też nie były jakieś szalone nakłady"
+    },
+    {
+      "start": 4220.86,
+      "end": 4222.98,
+      "text": "Kasety, o czym już wspominałeś"
+    },
+    {
+      "start": 4222.98,
+      "end": 4226.14,
+      "text": "No ale zaczęło się rzeczywiście w mieście dziać"
+    },
+    {
+      "start": 4226.14,
+      "end": 4227.6,
+      "text": "Zaczęły powstawać zespoły"
+    },
+    {
+      "start": 4227.6,
+      "end": 4230.66,
+      "text": "Zaczęły grać coraz więcej koncertów"
+    },
+    {
+      "start": 4230.66,
+      "end": 4233.72,
+      "text": "To był ten czas, kiedy pojawił się"
+    },
+    {
+      "start": 4233.72,
+      "end": 4235.12,
+      "text": "Wspomniany już schizmatik"
+    },
+    {
+      "start": 4235.12,
+      "end": 4236.32,
+      "text": "Symbolic Immortality"
+    },
+    {
+      "start": 4236.32,
+      "end": 4237.8,
+      "text": "To wtedy był ewenement, bo"
+    },
+    {
+      "start": 4237.8,
+      "end": 4240.72,
+      "text": "Brutalna jak na tamte czasy"
+    },
+    {
+      "start": 4240.72,
+      "end": 4245.7,
+      "text": "Kapela z Miriam na wokalu"
+    },
+    {
+      "start": 4245.7,
+      "end": 4247.66,
+      "text": "Świetną wokalistką w ogóle"
+    },
+    {
+      "start": 4247.66,
+      "end": 4249.78,
+      "text": "Bo to był zespół Death Sea"
+    },
+    {
+      "start": 4249.78,
+      "end": 4251.04,
+      "text": "Który też znowu"
+    },
+    {
+      "start": 4251.04,
+      "end": 4254.4,
+      "text": "Lokalnie bardzo wiele znaczył"
+    },
+    {
+      "start": 4254.4,
+      "end": 4255.48,
+      "text": "Tego już byłeś świadkiem"
+    },
+    {
+      "start": 4255.48,
+      "end": 4255.76,
+      "text": "Prawda?"
+    },
+    {
+      "start": 4255.8,
+      "end": 4256.52,
+      "text": "Już byłeś w mieście"
+    },
+    {
+      "start": 4256.52,
+      "end": 4257,
+      "text": "Tak, tak, oczywiście"
+    },
+    {
+      "start": 4257,
+      "end": 4258.9,
+      "text": "No to już to ludzie, którzy się"
+    },
+    {
+      "start": 4258.9,
+      "end": 4261.28,
+      "text": "Przez mój sklep"
+    },
+    {
+      "start": 4261.28,
+      "end": 4262.52,
+      "text": "Przewijali, powiem brzydko"
+    },
+    {
+      "start": 4262.52,
+      "end": 4263.78,
+      "text": "Ale, ale, ale"
+    },
+    {
+      "start": 4263.78,
+      "end": 4265.24,
+      "text": "Muzycy Symbolic Immortality"
+    },
+    {
+      "start": 4265.24,
+      "end": 4266.04,
+      "text": "I właśnie Death Sea"
+    },
+    {
+      "start": 4266.04,
+      "end": 4269.3,
+      "text": "Grysik, Gerard Niemczyk"
+    },
+    {
+      "start": 4269.3,
+      "end": 4270.18,
+      "text": "Mateusz Wabik"
+    },
+    {
+      "start": 4270.18,
+      "end": 4272.06,
+      "text": "Jarek Kochman"
+    },
+    {
+      "start": 4272.06,
+      "end": 4274.44,
+      "text": "To gdzieś tam ludzie, którzy bardzo często"
+    },
+    {
+      "start": 4274.44,
+      "end": 4275.62,
+      "text": "U mnie bywali"
+    },
+    {
+      "start": 4275.62,
+      "end": 4277.12,
+      "text": "Zresztą chyba z tego co pamiętam"
+    },
+    {
+      "start": 4277.12,
+      "end": 4278.04,
+      "text": "Grysik grał wcześniej"
+    },
+    {
+      "start": 4278.04,
+      "end": 4279.46,
+      "text": "W Symbolic Immortality"
+    },
+    {
+      "start": 4279.46,
+      "end": 4281.94,
+      "text": "Powinniśmy tutaj mieć taką tablicę korkową"
+    },
+    {
+      "start": 4281.94,
+      "end": 4282.72,
+      "text": "Tak, tak, no właśnie"
+    },
+    {
+      "start": 4282.72,
+      "end": 4283.62,
+      "text": "Właśnie o tym mówię"
+    },
+    {
+      "start": 4283.62,
+      "end": 4284.08,
+      "text": "Tak, tak"
+    },
+    {
+      "start": 4284.08,
+      "end": 4285.24,
+      "text": "Sznureczkami"
+    },
+    {
+      "start": 4285.24,
+      "end": 4287.08,
+      "text": "Szpileczkami"
+    },
+    {
+      "start": 4287.08,
+      "end": 4287.58,
+      "text": "I tak"
+    },
+    {
+      "start": 4287.58,
+      "end": 4288.84,
+      "text": "I jakoś to spróbować"
+    },
+    {
+      "start": 4288.84,
+      "end": 4289.86,
+      "text": "A zresztą, a zresztą"
+    },
+    {
+      "start": 4289.86,
+      "end": 4291.84,
+      "text": "Grysik się z tego co pamiętam"
+    },
+    {
+      "start": 4291.84,
+      "end": 4293.14,
+      "text": "U mnie w sklepie poznał"
+    },
+    {
+      "start": 4293.14,
+      "end": 4293.92,
+      "text": "Bo w pewnym momencie"
+    },
+    {
+      "start": 4293.92,
+      "end": 4294.78,
+      "text": "U mnie pracował"
+    },
+    {
+      "start": 4294.78,
+      "end": 4297,
+      "text": "Łukasz Zieliński"
+    },
+    {
+      "start": 4297,
+      "end": 4297.52,
+      "text": "Zielony"
+    },
+    {
+      "start": 4297.52,
+      "end": 4298.94,
+      "text": "Oni się u mnie w sklepie poznali"
+    },
+    {
+      "start": 4298.94,
+      "end": 4299.84,
+      "text": "I stąd później pomysł"
+    },
+    {
+      "start": 4299.84,
+      "end": 4300.52,
+      "text": "Na jakiegoś tam"
+    },
+    {
+      "start": 4300.52,
+      "end": 4301.7,
+      "text": "Virgin Snatch"
+    },
+    {
+      "start": 4301.7,
+      "end": 4302.66,
+      "text": "I td i tp"
+    },
+    {
+      "start": 4302.66,
+      "end": 4304.12,
+      "text": "Także no to wszystko jest"
+    },
+    {
+      "start": 4304.12,
+      "end": 4306.1,
+      "text": "Ja mówiłem, że to wszystko"
+    },
+    {
+      "start": 4306.1,
+      "end": 4306.74,
+      "text": "Przez ciebie"
+    },
+    {
+      "start": 4306.74,
+      "end": 4307.74,
+      "text": "Tak jest"
+    },
+    {
+      "start": 4307.74,
+      "end": 4309,
+      "text": "Symbolic Immortality"
+    },
+    {
+      "start": 4309,
+      "end": 4310.82,
+      "text": "Jeszcze dzisiaj nie słuchaliśmy"
+    },
+    {
+      "start": 4310.82,
+      "end": 4312.22,
+      "text": "A więc proszę bardzo"
+    },
+    {
+      "start": 4312.22,
+      "end": 4313.96,
+      "text": "Taki głos"
+    },
+    {
+      "start": 4313.96,
+      "end": 4315.56,
+      "text": "Taki talent miałem Miriam"
+    },
+    {
+      "start": 4315.56,
+      "end": 4317.5,
+      "text": "DZIĘKI ZA OBSERWACIE"
+    },
+    {
+      "start": 4556.43,
+      "end": 4560.57,
+      "text": "Wracamy do Krakowa, wracamy do rozmowy z Adamem Śliwakowskim."
+    },
+    {
+      "start": 4561.57,
+      "end": 4567.65,
+      "text": "Tuż po tym pierwszym rozkwicie metalowego krakowskiego undergroundu"
+    },
+    {
+      "start": 4567.65,
+      "end": 4571.39,
+      "text": "nastąpił kolejny, właściwie te fale dwie na siebie się nałożyły,"
+    },
+    {
+      "start": 4572.31,
+      "end": 4577.21,
+      "text": "bo do głosu doszli wspominani też już dzisiaj przy innej okazji romantycy."
+    },
+    {
+      "start": 4577.99,
+      "end": 4583.55,
+      "text": "Cemetery of Scream, Cold Passion, Natrofia, Red Sun, Serpentia w pewnym sensie też"
+    },
+    {
+      "start": 4583.55,
+      "end": 4587.31,
+      "text": "i pewnie by trochę więcej tych kapel było."
+    },
+    {
+      "start": 4588.21,
+      "end": 4594.87,
+      "text": "Myślisz, że to kontynuowanie wielowiekowych tradycji artystycznych Krakowa"
+    },
+    {
+      "start": 4594.87,
+      "end": 4599.91,
+      "text": "jako miasta poetów, malarzy, romantyków?"
+    },
+    {
+      "start": 4600.35,
+      "end": 4605.85,
+      "text": "Wiesz co, nie wiem. Myślę jednak, że wtedy był bum na taką muzykę po prostu."
+    },
+    {
+      "start": 4606.69,
+      "end": 4608.63,
+      "text": "Ja nie mówię absolutnie, że to jest koniunkturalizm."
+    },
+    {
+      "start": 4608.71,
+      "end": 4612.05,
+      "text": "Ktoś sobie postanowił grać do metal. No wiesz, to musi być w sercu."
+    },
+    {
+      "start": 4612.67,
+      "end": 4615.91,
+      "text": "Aczkolwiek, wiesz, z wszystkich zespołów, które wymieniłeś,"
+    },
+    {
+      "start": 4616.69,
+      "end": 4620.53,
+      "text": "wiemy, że każdy z nich na swój sposób był zupełnie inny."
+    },
+    {
+      "start": 4620.65,
+      "end": 4621.17,
+      "text": "A to prawda."
+    },
+    {
+      "start": 4621.55,
+      "end": 4627.27,
+      "text": "I to też było fajne, bo gdzieś tam, no nie możesz tego wsadzić do jednego wora,"
+    },
+    {
+      "start": 4627.35,
+      "end": 4630.61,
+      "text": "bo każdy z nich tworzył smutną muzykę,"
+    },
+    {
+      "start": 4630.77,
+      "end": 4634.71,
+      "text": "ale naprawdę na swój sposób i to też było fajne."
+    },
+    {
+      "start": 4635.75,
+      "end": 4640.69,
+      "text": "Zresztą to też w tym momencie przekłada się na to, że każdy z tych zespołów był w stanie wydać taśmę, demo, płytę,"
+    },
+    {
+      "start": 4641.11,
+      "end": 4642.93,
+      "text": "gdzie w tamtych czasach to naprawdę nie było łatwe."
+    },
+    {
+      "start": 4643.45,
+      "end": 4647.25,
+      "text": "Co prawda i swoją drogą te zespoły też zmieniały się w czasie."
+    },
+    {
+      "start": 4647.75,
+      "end": 4647.95,
+      "text": "Tak."
+    },
+    {
+      "start": 4648.67,
+      "end": 4654.05,
+      "text": "Może nie wszystkie równie intensywnie, no ale jeżeli porównać pierwsze nagrania,"
+    },
+    {
+      "start": 4654.11,
+      "end": 4655.75,
+      "text": "nawet te oficjalne, Atrofia Red Sun,"
+    },
+    {
+      "start": 4656.43,
+      "end": 4660.91,
+      "text": "z tym czym niestety przedwcześnie się z nami ten zespół pożegnał,"
+    },
+    {
+      "start": 4660.95,
+      "end": 4663.81,
+      "text": "to są zupełnie odmienne światy."
+    },
+    {
+      "start": 4664.05,
+      "end": 4666.85,
+      "text": "No jakby na to nie patrzeć, najbardziej konsekwentne w tym co..."
+    },
+    {
+      "start": 4666.85,
+      "end": 4667.35,
+      "text": "Symmeterovskim."
+    },
+    {
+      "start": 4667.53,
+      "end": 4668.43,
+      "text": "Symmeterovskim, dokładnie."
+    },
+    {
+      "start": 4668.53,
+      "end": 4672.11,
+      "text": "Bo to w pewnym momencie był to zarzut dla nich, że się nie rozwijają."
+    },
+    {
+      "start": 4672.77,
+      "end": 4678.73,
+      "text": "Myślę, że to też była przyczyna do tego, że Marcin postanowił to wszystko zawiesić,"
+    },
+    {
+      "start": 4679.35,
+      "end": 4681.31,
+      "text": "ale no to samo Serpentia."
+    },
+    {
+      "start": 4682.07,
+      "end": 4688.53,
+      "text": "By disease, nie wiem, może troszkę inna bajka, ale też zupełnie inna muzyka niż..."
+    },
+    {
+      "start": 4688.53,
+      "end": 4695.59,
+      "text": "Na początku możemy rzucić na karp rozwoju, na karp tego, że nie wiem,"
+    },
+    {
+      "start": 4696.37,
+      "end": 4698.99,
+      "text": "lepiej, lepiej, lepiej się nauczyli komponować, lepiej grać."
+    },
+    {
+      "start": 4699.11,
+      "end": 4702.63,
+      "text": "No wiesz, jak zespoły się zakłada w wieku późno-nastoletnim,"
+    },
+    {
+      "start": 4702.89,
+      "end": 4707.73,
+      "text": "to oprócz czysto technicznych umiejętności, trudno też oczekiwać,"
+    },
+    {
+      "start": 4707.99,
+      "end": 4712.67,
+      "text": "że wszyscy będą mieli dokładnie takie same fascynacje, inspiracje nawet te pięć lat później,"
+    },
+    {
+      "start": 4712.77,
+      "end": 4714.85,
+      "text": "a co dopiero piętnaście lat później."
+    },
+    {
+      "start": 4714.99,
+      "end": 4720.21,
+      "text": "Dokładnie, plus jeszcze nie każdy ma takie same gitary, nie każdy ma takie same piecyki,"
+    },
+    {
+      "start": 4720.63,
+      "end": 4729.15,
+      "text": "stąd różne brzmienia, stąd różne podejście, żeby coś ulepszyć, coś przyspieszyć, coś zwolnić."
+    },
+    {
+      "start": 4729.33,
+      "end": 4730.95,
+      "text": "No takie życie po prostu."
+    },
+    {
+      "start": 4732.03,
+      "end": 4740.77,
+      "text": "Kolejna fala krakowskiego metalu, ta, która weszła w XXI wiek,"
+    },
+    {
+      "start": 4740.77,
+      "end": 4746.79,
+      "text": "to są takie zespoły i tu znowu, to jest myślę jakieś tam echo tego,"
+    },
+    {
+      "start": 4747.03,
+      "end": 4752.81,
+      "text": "co parę lat wcześniej robił chociażby Schismatic czy robiło Def Sea,"
+    },
+    {
+      "start": 4753.71,
+      "end": 4757.97,
+      "text": "czym inspirowali kilka lat młodszych kolegów."
+    },
+    {
+      "start": 4758.09,
+      "end": 4759.21,
+      "text": "Mam na myśli Skeptic."
+    },
+    {
+      "start": 4759.35,
+      "end": 4763.55,
+      "text": "Die Disease, Virgin Snatch to akurat może nie jest dobry przykład,"
+    },
+    {
+      "start": 4763.69,
+      "end": 4766.69,
+      "text": "no bo tutaj mamy personalne połączenie z Def Sea,"
+    },
+    {
+      "start": 4767.37,
+      "end": 4770.83,
+      "text": "ale Redemptor i tak dalej, i tak dalej."
+    },
+    {
+      "start": 4771.11,
+      "end": 4771.97,
+      "text": "Tak, dokładnie tak."
+    },
+    {
+      "start": 4772.37,
+      "end": 4777.97,
+      "text": "No i tutaj znowu wchodzimy w osoby i tym razem to jest Jacek Hero,"
+    },
+    {
+      "start": 4778.27,
+      "end": 4783.03,
+      "text": "który grał, udzielał się w takiej ilości kapel krakowskich,"
+    },
+    {
+      "start": 4783.11,
+      "end": 4786.53,
+      "text": "dookoła krakowskich, że no trudno, trudno zliczyć."
+    },
+    {
+      "start": 4786.91,
+      "end": 4792.59,
+      "text": "A jeszcze ilu młodych ludzi uczył teraz grania i też przez to jakoś inspirował."
+    },
+    {
+      "start": 4792.67,
+      "end": 4792.91,
+      "text": "Tak."
+    },
+    {
+      "start": 4793.29,
+      "end": 4796.67,
+      "text": "To w jaki sposób oni teraz grają metal w swoich zespołach?"
+    },
+    {
+      "start": 4796.93,
+      "end": 4798.53,
+      "text": "To dopiero warto byłoby sprawdzić."
+    },
+    {
+      "start": 4798.69,
+      "end": 4800.91,
+      "text": "A zespoł Antropomorf coś ci mówi czy nie?"
+    },
+    {
+      "start": 4801.33,
+      "end": 4802.33,
+      "text": "Antropomorf powinno."
+    },
+    {
+      "start": 4802.55,
+      "end": 4803.79,
+      "text": "Przepraszam, Antropoforę."
+    },
+    {
+      "start": 4804.27,
+      "end": 4805.53,
+      "text": "A widzisz, zaskoczenie."
+    },
+    {
+      "start": 4805.53,
+      "end": 4807.15,
+      "text": "To są synowie Jacka Hero."
+    },
+    {
+      "start": 4808.01,
+      "end": 4809.09,
+      "text": "Jacek, wybacz."
+    },
+    {
+      "start": 4809.71,
+      "end": 4810.67,
+      "text": "Chłopaki, wybacz."
+    },
+    {
+      "start": 4810.93,
+      "end": 4812.05,
+      "text": "To są synowie Jacka Hero."
+    },
+    {
+      "start": 4812.55,
+      "end": 4814.21,
+      "text": "I gdzie też fajna rzecz."
+    },
+    {
+      "start": 4814.63,
+      "end": 4817.43,
+      "text": "I znowu to jest to samo, o czym mówimy przez całą audycję."
+    },
+    {
+      "start": 4817.99,
+      "end": 4821.55,
+      "text": "Na basie u nich gra syn Pawła Węgrzyna."
+    },
+    {
+      "start": 4821.67,
+      "end": 4823.37,
+      "text": "Na co dzień perkusista Trophy Redstone."
+    },
+    {
+      "start": 4824.39,
+      "end": 4827.13,
+      "text": "I to jest to już następne pokolenie,"
+    },
+    {
+      "start": 4827.45,
+      "end": 4829.69,
+      "text": "które gdzieś tam się będzie przewijało."
+    },
+    {
+      "start": 4829.69,
+      "end": 4835.01,
+      "text": "Ja myślałem, że w Krakowie ta tradycja cechów i zawodów dziedziczonych"
+    },
+    {
+      "start": 4835.01,
+      "end": 4839.35,
+      "text": "z pokolenia na pokolenie dotyczy tylko lekarzy i adwokatów."
+    },
+    {
+      "start": 4839.77,
+      "end": 4843.67,
+      "text": "Ale proszę bardzo, drewmetalowcy też to stosują."
+    },
+    {
+      "start": 4843.83,
+      "end": 4847.25,
+      "text": "No cóż, jak w Krakowie się rodzisz,"
+    },
+    {
+      "start": 4847.37,
+      "end": 4850.07,
+      "text": "to masz pewne krakowskie obowiązki."
+    },
+    {
+      "start": 4850.39,
+      "end": 4851.19,
+      "text": "Tak jest, tak jest."
+    },
+    {
+      "start": 4851.27,
+      "end": 4854.63,
+      "text": "I właśnie to jest fajnie, bo obserwując nawet profil Jaska Hero,"
+    },
+    {
+      "start": 4854.79,
+      "end": 4858.01,
+      "text": "on tych chłopaków, swoich synów aż tak bardzo nie wspierał."
+    },
+    {
+      "start": 4858.61,
+      "end": 4859.59,
+      "text": "Dopiero w pewnym momencie."
+    },
+    {
+      "start": 4860.05,
+      "end": 4860.73,
+      "text": "A co mi tam?"
+    },
+    {
+      "start": 4860.85,
+      "end": 4861.33,
+      "text": "I puch."
+    },
+    {
+      "start": 4862.33,
+      "end": 4864.11,
+      "text": "I fajny. I to jest właśnie fajne."
+    },
+    {
+      "start": 5501.83,
+      "end": 5518.43,
+      "text": "Wracamy do rozmowy o Krakowie z Adamem Śliwakowskim z Metal Shopu o krakowskim metalu i to już niestety ostatnie wejście, ostatnia odsłona tej naszej dzisiejszej rozmowy."
+    },
+    {
+      "start": 5518.43,
+      "end": 5528.77,
+      "text": "Właściwie to nie powinienem poświęcać na nią jednej audycji. Powinniśmy mieć cykl trwający z pół roku, żeby o tym wszystkim opowiedzieć."
+    },
+    {
+      "start": 5529.49,
+      "end": 5544.73,
+      "text": "Prawdę mówiąc, kiedy się umawialiśmy na ten nasz dzisiejszy wywiad, to nie myślałem, że tego aż tak było dużo. Jakoś o pewnych rzeczach zapomniałem, ale kiedy już potem robiłem sobie notatki, okazało się, że kawał historii tej muzyki."
+    },
+    {
+      "start": 5544.73,
+      "end": 5550.27,
+      "text": "Nie tylko ważnej dla miasta, ale też dla całego kraju i dla świata, o czym za chwilę. Mógła."
+    },
+    {
+      "start": 5550.67,
+      "end": 5563.89,
+      "text": "Muszę to przyłożyć na to, co się dzieje w sklepie oczywiście. Sprzedaż. To jest niekończąca się historia. Przychodzą ludzie i pytają z Brazylii, z Indii, z Włoch i ze Słowacji."
+    },
+    {
+      "start": 5564.39,
+      "end": 5578.67,
+      "text": "Wszystko. Zawsze. I to jest cały czas koszulki, płyty, winyle, niekończąca się historia. I wszystkie odnogi również, brzydko powiedziane, no ale tak muszę powiedzieć, które są pochodne odnogi, czyli Huntologies, Kriegsmaschine."
+    },
+    {
+      "start": 5578.67,
+      "end": 5588.59,
+      "text": "To jest cały czas, cały czas, cały czas. Z perspektywy fana metalu mogłoby się wydawać, że równie dobrze powinna się sprzedawać furia."
+    },
+    {
+      "start": 5589.41,
+      "end": 5600.67,
+      "text": "Ale jednak furia jest bardziej polska. To kupują bardziej Polacy. Jak już kochają to na zabój, wiadomo, no mgła jest towarem eksportowym. No nie ma się co oszukiwać."
+    },
+    {
+      "start": 5601.07,
+      "end": 5615.15,
+      "text": "Ja sobie z tego do końca nie zdawałem sprawy, no bo ta mgła tutaj w Krakowie szczególnie była, zawsze była blisko. I nie, żebym nie cenił, ale nie zdawałem sobie sprawy ze skali zjawiska, dopóki nie zacząłem o tym rozmawiać właśnie ze znajomymi ze świata."
+    },
+    {
+      "start": 5615.15,
+      "end": 5640.11,
+      "text": "I na przykład dziennikarz niemieckiego Metalhammera, który pisze o black metalu od właściwie narodzin tego gatunku, ostatnio opowiadał mi, że jego zdaniem najważniejszym zespołem w sensie takiej energii, którą tchnął też innych, zainspirował do właściwie odrodzenia tego gatunku, najważniejszym w XXI wieku zespołem jest mgła."
+    },
+    {
+      "start": 5640.11,
+      "end": 5658.93,
+      "text": "A ja mówię, jak? Z Polski. No mówię, nie, nie. Na świecie. I rzeczywiście, wiesz, no zacząłem o tym myśleć. Zacząłem myśleć o tych koncertach, festiwalach, na które jeżdżę po świecie i na których ludzi w koszulkach mgły jest najwięcej spośród zespołów, które akurat w tym roku nie grają."
+    },
+    {
+      "start": 5658.93,
+      "end": 5670.73,
+      "text": "To znaczy rzeczywiście, jeżeli tam jest gwiazdą jakiś zespół X, to być może tego dnia tych koszulek będzie trochę więcej, ale poza tym od wielu lat mgła jest jakimś absolutnym dominatorem."
+    },
+    {
+      "start": 5671.23,
+      "end": 5674.07,
+      "text": "Ty przyglądałeś się początkom mgły?"
+    },
+    {
+      "start": 5674.31,
+      "end": 5674.49,
+      "text": "Nie."
+    },
+    {
+      "start": 5674.81,
+      "end": 5677.17,
+      "text": "Myślałeś, że to zaskoczyło cię, co?"
+    },
+    {
+      "start": 5677.17,
+      "end": 5692.89,
+      "text": "Zaskoczyłem. To po prostu wybuchło, wybuchło. Klasycznie wybuchło i gdzieś tam na próbę kilka płyt. Ja współpracuję z Paganem, z Tomkiem Krajewskim i gdzieś tam od niego brałem Furię i równocześnie tam mgła Furia."
+    },
+    {
+      "start": 5692.89,
+      "end": 5715.49,
+      "text": "I ona, ta sprzedaż była bardzo porównywalna. Po jakimś czasie, wow, zaskoczenie na maksa. Myśmy byli świadkami powstawania Black Metalu tak naprawdę. No w naszym życiu Black Metal zaistniał za naszego bytu i te pierwsze nagrania mogłem, no przepraszam, że to powiem, ale wydawały mi się strasznie wtórne."
+    },
+    {
+      "start": 5715.49,
+      "end": 5724.77,
+      "text": "No troszeczkę zabrane z jednego, z drugiego, trzeciego zespołu. No i stwierdziłem, dobra, no niech sobie chłopaki pograją. Jak sobie pograją, to im się znudzi."
+    },
+    {
+      "start": 5724.99,
+      "end": 5725.93,
+      "text": "Pewnie im się znudzi, tak."
+    },
+    {
+      "start": 5725.93,
+      "end": 5726.87,
+      "text": "Dokładnie, dokładnie."
+    },
+    {
+      "start": 5726.99,
+      "end": 5728.55,
+      "text": "I zajmą się czymś poważnym."
+    },
+    {
+      "start": 5728.93,
+      "end": 5733.15,
+      "text": "A tutaj, a tutaj, wow, taka niespodzianka. No totalny szacunek, totalny szacunek."
+    },
+    {
+      "start": 5733.15,
+      "end": 5755.29,
+      "text": "Ten Black Metal krakowski i być może nawet sama mgła nie istniałby zapewne bez Holy Death, czyli takiego zespołu, który dzisiaj cieszy się w pewnych kręgach mianem kultowego, który istniał dzięki uporowi Leszka Wojnicza i talentowi Gerarda, który tam też bardzo dużo w tym zespole robił."
+    },
+    {
+      "start": 5755.29,
+      "end": 5764.29,
+      "text": "No samo Holy Death rzeczywiście nie zrobiło wielkiej kariery, ale też myślę, że zainspirowało tutaj lokalnie właśnie kolejne pokolenie młodych adeptów mroku."
+    },
+    {
+      "start": 5764.67,
+      "end": 5779.97,
+      "text": "Tak, tak. No tym raczej, że no jak zarówno ja i ty wiemy, że Leszek jest bardzo znaną postacią w Krakowie, w Polsce. Wydaje gazetę, ma wytwórnię, która wznawia stare demosy z polskich zespołów."
+    },
+    {
+      "start": 5780.19,
+      "end": 5783.09,
+      "text": "Fantastyczną robotę robi z tymi wydawnictwami."
+    },
+    {
+      "start": 5783.09,
+      "end": 5800.59,
+      "text": "Tak, tak, tak, tak. Naprawdę no wyciąga rzeczy, o których nikt absolutnie nie pamięta. No gdzieś tam być może pochowane w pamięci są te rzeczy, ale jak on to wyda, to wtedy wow, no przecież to było fajne. I tutaj też szacunek jak najbardziej."
+    },
+    {
+      "start": 5801.09,
+      "end": 5808.63,
+      "text": "Tego black metalu w Krakowie jest dużo, dużo więcej. Medico Peste chociażby bardzo dobry zespół, ale też sporo młodszych kapel."
+    },
+    {
+      "start": 5809.63,
+      "end": 5823.09,
+      "text": "Silny też, nie wiem czy ilością, ale na pewno jakością jest ten nurt, który opiera się trochę na powrocie do przeszłości, trochę na reinterpretowaniu jej z myślą o współczesności."
+    },
+    {
+      "start": 5823.09,
+      "end": 5835.21,
+      "text": "I mam tu na myśli chociażby takie zespoły jak Terror Dawn czy Roadhog, czyli takie składy trashowe, crossoverowe. Roadhog to już trochę bardziej też heavy metal zahaczające."
+    },
+    {
+      "start": 5835.87,
+      "end": 5846.37,
+      "text": "Tak, tak, zgadzam się, ale widzisz to jest znowu to o czym już mówiliśmy. Terror Dawn nagrał ileś tam płyt, nie pamiętam dokładnie ile."
+    },
+    {
+      "start": 5847.55,
+      "end": 5854.09,
+      "text": "Tutaj postanowili właśnie bardziej uderzyć w te tony, uprościć, przygłośnić i zażarło."
+    },
+    {
+      "start": 5854.23,
+      "end": 5858.95,
+      "text": "I nagle się okazało, że ta ostatnia płyta jest totalnym przebojem."
+    },
+    {
+      "start": 5859.23,
+      "end": 5864.69,
+      "text": "No, jak rozmawiają z Łapą, no to po prostu sami są zszokowani, że aż to poszło w tą stronę."
+    },
+    {
+      "start": 5865.01,
+      "end": 5870.43,
+      "text": "Myślisz, że to jest tak, że oni coś zmienili i dlatego lepiej zażarło, czy że..."
+    },
+    {
+      "start": 5870.43,
+      "end": 5871.29,
+      "text": "Dobrze się wstrzelili."
+    },
+    {
+      "start": 5871.29,
+      "end": 5875.83,
+      "text": "Gusta publiczności się zmieniają też i teraz przyszedł moment na takie granie."
+    },
+    {
+      "start": 5875.83,
+      "end": 5883.85,
+      "text": "Tak jak mówię, wiesz, 5-6 lat temu, teraz też przełożymy to na sprzedaż, koszulki Cannibal Corpse'a."
+    },
+    {
+      "start": 5883.95,
+      "end": 5891.55,
+      "text": "Jeśli ktoś by widział ile ja sprzedaję koszulki Cannibal Corpse'a, nie umniejszając Cannibal Corpse'owi, powiedziałby, że to jest najpopularniejszy zespół na świecie."
+    },
+    {
+      "start": 5891.87,
+      "end": 5892.83,
+      "text": "Całkiem możliwe, że tak jest."
+    },
+    {
+      "start": 5892.99,
+      "end": 5897.35,
+      "text": "Ale na przykład teraz w tym momencie powrót do Punk Rock'a."
+    },
+    {
+      "start": 5897.35,
+      "end": 5901.69,
+      "text": "Ludzie szukają koszule Exploited, GBH, Dead Kennedys."
+    },
+    {
+      "start": 5902.49,
+      "end": 5906.33,
+      "text": "I w metalowym sklepie nie macie wstydu ludzi."
+    },
+    {
+      "start": 5906.41,
+      "end": 5906.81,
+      "text": "No właśnie."
+    },
+    {
+      "start": 5907.03,
+      "end": 5911.11,
+      "text": "I ja też widzę, ja koszulki biorę z wytworni angielskiej Plastic Head."
+    },
+    {
+      "start": 5911.25,
+      "end": 5917.51,
+      "text": "Ja widzę, że chyba to też jest nurt ogólnoświatowy, dlatego że od tamtego roku się właśnie takie koszulki dokładnie pokazały."
+    },
+    {
+      "start": 5917.51,
+      "end": 5922.93,
+      "text": "Oni też muszą iść za głosem tego, czego potrzebuje potencjalny nabywca."
+    },
+    {
+      "start": 5923.29,
+      "end": 5929.03,
+      "text": "Czyli w tym momencie powrót do, nie wiem czy widziałeś ostatnio Headfield'a, w jakiej był koszulce."
+    },
+    {
+      "start": 5929.33,
+      "end": 5929.49,
+      "text": "Nie."
+    },
+    {
+      "start": 5929.63,
+      "end": 5930.45,
+      "text": "Social Distortion."
+    },
+    {
+      "start": 5930.75,
+      "end": 5937.05,
+      "text": "Okej. Czy oprócz powrotu do Punk Rock'a widzisz jakieś jeszcze trendy, zmiany?"
+    },
+    {
+      "start": 5937.93,
+      "end": 5941.49,
+      "text": "No skupmy się na tej chociażby krakowskiej scenie."
+    },
+    {
+      "start": 5941.57,
+      "end": 5943.29,
+      "text": "Czy śledzisz na przykład tę młodą falę?"
+    },
+    {
+      "start": 5943.97,
+      "end": 5957.79,
+      "text": "Sporo jest zespołów nowych i to takich nowych składów zakładanych przez muzyków już trochę doświadczonych, na przykład, nie wiem, dwudziestu, paru trzydziestoletnich, jak i składów zakładanych przez nastolatków."
+    },
+    {
+      "start": 5958.57,
+      "end": 5967.01,
+      "text": "Myślę, że w tym stuleciu nie było aż takiego boomu na nowe kapele, jak ten, który przeżywamy od zakończenia pandemii."
+    },
+    {
+      "start": 5967.11,
+      "end": 5974.63,
+      "text": "Ja myślę, że młode kapele były zawsze, ale teraz jeszcze do tego dochodzi, no może nie."
+    },
+    {
+      "start": 5974.62,
+      "end": 5986.3,
+      "text": "Nie ułatwoć, ale chyba takiego słowa trzeba użyć. Ułatwoć wydawania płyt, nagrywania. Inne koszty są takich produkcji i dlatego nam się wydaje, że jest wysyp."
+    },
+    {
+      "start": 5986.3,
+      "end": 6007.88,
+      "text": "Do mnie do sklepu przychodzi, nie wiem, kilka razy w miesiącu, parę osób, parę zespołów i przynosi swoje płyty na zasadzie, żeby sprzedawać, żeby jej reklamować. Ostatnio, nie wiem, taki zespół Herzoga, jeśli dobrze pamiętam. I chłopaki fajnie to robią, bo gdzieś tam koszulki, naszywki z pełnym impetem."
+    },
+    {
+      "start": 6007.88,
+      "end": 6028.6,
+      "text": "I myślę, że to w tym momencie ma sens, ale to musi być oczywiście połączone z graniem koncertów. No wiemy, jak to się zaczynało u wielkich. No to jest kilkaset, źle powiedziałem, kilkadziesiąt koncertów w roku muszą co najmniej zagrać, żeby ktoś ich zauważył, żeby oni w jakikolwiek sposób zaistnieli. No wiemy, że inaczej tego nie ma."
+    },
+    {
+      "start": 6028.88,
+      "end": 6056.1,
+      "text": "No tak, oprócz talentu potrzebna jest wytrwałość. We wszystkim ona jest potrzebna. Na przykład jak Państwo wymyślicie sobie założenie sklepu płytowego, no to warto o tym myśleć w kategorii dekad, a nie miesięcy czy lat. Tak jak myśli i myślał o tym Adam Śliwakowski, mój dzisiejszy gość. Bardzo Ci dziękuję za pojawienie się w studiu i do zobaczenia."
+    },
+    {
+      "start": 6056.1,
+      "end": 6058.18,
+      "text": "Do zobaczenia. Dziękuję bardzo. Dzięki."
+    },
+    {
+      "start": 6058.88,
+      "end": 6060.06,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 6484.87,
+      "end": 6505.29,
+      "text": "Dziękuję Państwu serdecznie za towarzyszenie nam w tym spotkaniu z balladą. Mam nadzieję, że zainspirowaliśmy Was z Adamem do poszperania w historii, ale i współczesności krakowskiego metalu, bo jak słychać jest w czym wybierać."
+    },
+    {
+      "start": 6505.29,
+      "end": 6515.29,
+      "text": "A wybór piosenek był oczywiście subiektywny, można byłoby te audycje zilustrować zupełnie inaczej, a i tak byłoby dobrze."
+    },
+    {
+      "start": 6515.29,
+      "end": 6535.75,
+      "text": "Przed chwilą zagrały dla nas dwie skrajnie odmienne grupy, czyli Mgła i Terror Dome, grupy, o których wcześniej rozmawialiśmy, a na koniec coś w sam raz na późną nocną porę, czyli dwa projekty z uniwersum Mgły, czyli Hauntologist i Creek's Machine."
+    },
+    {
+      "start": 6536.29,
+      "end": 6545.51,
+      "text": "Oba znakomite, choć znowu zupełnie różne, ale zarazem słychać, że mają jakiś wspólny mianownik."
+    },
+    {
+      "start": 6545.51,
+      "end": 6551.93,
+      "text": "To a propos poruszanego wcześniej wątku, czy krakowski metal ma unikalne brzmienie."
+    },
+    {
+      "start": 6552.45,
+      "end": 6563.61,
+      "text": "Moim zdaniem ma na pewno krakowski black metal i jego okolice, a jak to brzmienie opisać, jak scharakteryzować, to już zostawię komuś innemu."
+    },
+    {
+      "start": 6563.61,
+      "end": 6568.99,
+      "text": "U Was natomiast zostawiając z jego intrygującymi przykładami."
+    },
+    {
+      "start": 6569.69,
+      "end": 6579.59,
+      "text": "Dobranoc do usłyszenia za tydzień, kiedy to dla odmiany wybierzemy się w muzyczną eskapadę hen daleko za ocean."
+    }
+  ],
+  "stats": {
+    "windowCount": 12,
+    "transcribedAudioSec": 3276.8,
+    "segmentCount": 751,
+    "characterCount": 43295
+  },
+  "sourceId": "2026-07-15-metalowy-krakow"
+}
