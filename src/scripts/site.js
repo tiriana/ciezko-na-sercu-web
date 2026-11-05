@@ -36,9 +36,18 @@ const setPlayingIcon = (button, playing) => {
   button.setAttribute('aria-label', playing ? 'Wstrzymaj odtwarzanie' : button.dataset.label);
 };
 
+const setNowPlaying = (label) => {
+  const now = document.querySelector('[data-audio-now]');
+  if (!now || !label) return;
+  now.hidden = false;
+  now.textContent = `Teraz: ${label}`;
+};
+
 const syncSpans = () => {
   if (!audio) return;
   const active = audio.paused ? [] : activeSpans(audio.currentTime);
+  const playingTrack = active.find((span) => span.kind === 'track');
+  if (playingTrack) setNowPlaying(playingTrack.element.dataset.trackLabel);
   for (const span of spans) {
     const isActive = active.includes(span);
     span.element.classList.toggle('is-active', isActive);
@@ -78,6 +87,8 @@ const applyEpisodeAudio = () => {
   bar.hidden = false;
   const title = bar.querySelector('[data-audio-title]');
   if (title) title.textContent = payload.title ?? '';
+  const link = bar.querySelector('[data-audio-link]');
+  if (link && payload.slug) link.href = `/odcinki/${payload.slug}/`;
 
   if (!same) {
     audio.dataset.src = payload.src;

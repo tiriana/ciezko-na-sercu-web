@@ -9,7 +9,10 @@ const note =
 ---
 
 <div class="audio-bar" transition:persist="player" data-audio-bar hidden>
-  <p class="audio-bar__title" data-audio-title></p>
+  <p class="audio-bar__title">
+    <a data-audio-link href="/"><span data-audio-title></span></a>
+    <span class="audio-bar__now" data-audio-now hidden></span>
+  </p>
   <audio
     id="episode-audio"
     controls

@@ -231,6 +231,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         data-span-end={block.end}
                         data-kind="track"
                         data-tag-id={block.track.artist ? tagId(block.track.artist) : undefined}
+                        data-track-label={[block.track.artist, block.track.title].filter(Boolean).join(' — ')}
                       >
                         <td class="tracks__idx">
                           {entry.audioUrl ? (
