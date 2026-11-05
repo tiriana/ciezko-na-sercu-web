@@ -1,0 +1,4115 @@
+{
+  "version": 1,
+  "episodeId": "b27a7c0f-4ac8-4e09-a557-9c9fa5a9f988",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 107067143,
+  "fileMtimeMs": 1789150976733.0447,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 72.12
+    },
+    {
+      "index": 1,
+      "start": 297.44,
+      "end": 740.25
+    },
+    {
+      "index": 2,
+      "start": 991.56,
+      "end": 1393.85
+    },
+    {
+      "index": 3,
+      "start": 1528.64,
+      "end": 1909.31
+    },
+    {
+      "index": 4,
+      "start": 2188.64,
+      "end": 2617.63
+    },
+    {
+      "index": 5,
+      "start": 2933.7,
+      "end": 3246.91
+    },
+    {
+      "index": 6,
+      "start": 3246.91,
+      "end": 3648.12
+    },
+    {
+      "index": 7,
+      "start": 3665.7,
+      "end": 3673.95
+    },
+    {
+      "index": 8,
+      "start": 3837.12,
+      "end": 3977.18
+    },
+    {
+      "index": 9,
+      "start": 4305.89,
+      "end": 4675.45
+    },
+    {
+      "index": 10,
+      "start": 4675.45,
+      "end": 4790.65
+    },
+    {
+      "index": 11,
+      "start": 5068.1,
+      "end": 5373.63
+    },
+    {
+      "index": 12,
+      "start": 5651.27,
+      "end": 5804.48
+    },
+    {
+      "index": 13,
+      "start": 5839.27,
+      "end": 5884.12
+    },
+    {
+      "index": 14,
+      "start": 5912.64,
+      "end": 5927.07
+    },
+    {
+      "index": 15,
+      "start": 5951.72,
+      "end": 6182.68
+    },
+    {
+      "index": 16,
+      "start": 6249.35,
+      "end": 6258.75
+    },
+    {
+      "index": 17,
+      "start": 6397.19,
+      "end": 6519.48
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.9,
+      "end": 5.08,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 5.32,
+      "end": 10.82,
+      "text": "Normalnie o tej porze audycja ciężko na sercu Jarek Szubrycht od północy do godziny drugiej."
+    },
+    {
+      "start": 11,
+      "end": 16.86,
+      "text": "Dziś w nieco innej konfiguracji spotykamy się po północy."
+    },
+    {
+      "start": 16.9,
+      "end": 19.22,
+      "text": "Gosia Jakubowska, Elżbieta Różycka, Maciej Jankowski."
+    },
+    {
+      "start": 19.34,
+      "end": 26.48,
+      "text": "No i właśnie, gościnnie także Jarek Szubrycht pojawi się wspólnie z Piotrem Mecem i Michałem Grabkiem-Grabkowskim,"
+    },
+    {
+      "start": 26.48,
+      "end": 33.24,
+      "text": "bo do drugiej właśnie będziemy wspominać Ozziego Osborna, który dziś w wieku 76 lat zmarł,"
+    },
+    {
+      "start": 33.3,
+      "end": 41.68,
+      "text": "ale nie chciałbym, żeby to była audycja smutna, chciałbym, żebyśmy raczej celebrowali te 76 lat bardzo niezwykłego życia Księcia Ciemności."
+    },
+    {
+      "start": 41.84,
+      "end": 50.78,
+      "text": "Dlatego przegląd poza tym, że twórczości Black Sabbath, no to również tych solowych utworów Ozziego Osborna oraz jego współprac,"
+    },
+    {
+      "start": 50.78,
+      "end": 56.82,
+      "text": "bo tych też było wiele na przestrzeni lat, zarówno on zapraszał artystów najróżniejszych na swoje płyty,"
+    },
+    {
+      "start": 56.94,
+      "end": 59.98,
+      "text": "jak i chętnie też takie zaproszenia przyjmował."
+    },
+    {
+      "start": 60.6,
+      "end": 66.64,
+      "text": "Teraz sięgniemy po jedną z tych nieco starszych płyt solowych Ozziego właśnie No Bone Movies,"
+    },
+    {
+      "start": 66.68,
+      "end": 70.5,
+      "text": "a za chwilę wracamy z gospodarzem cotygodniowym tego pasma."
+    },
+    {
+      "start": 71.6,
+      "end": 72.12,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 297.44,
+      "end": 300.6,
+      "text": "Ta eksploracja płyt Ozziego Osborne"
+    },
+    {
+      "start": 300.6,
+      "end": 302.4,
+      "text": "Jest naprawdę bardzo ciekawa"
+    },
+    {
+      "start": 302.4,
+      "end": 304.54,
+      "text": "Zwłaszcza po latach jak wraca się do tych płyt"
+    },
+    {
+      "start": 304.54,
+      "end": 306.34,
+      "text": "I spogląda się na te nazwiska"
+    },
+    {
+      "start": 306.34,
+      "end": 308.46,
+      "text": "Które współtworzyły jego albumy"
+    },
+    {
+      "start": 308.46,
+      "end": 310.44,
+      "text": "I tych gitarzystów, którzy przewijali się"
+    },
+    {
+      "start": 310.44,
+      "end": 312.12,
+      "text": "Przecież te składy Ozziego"
+    },
+    {
+      "start": 312.12,
+      "end": 314.08,
+      "text": "Też były absolutnie legendarne tutaj"
+    },
+    {
+      "start": 314.08,
+      "end": 316.56,
+      "text": "Między innymi przecież Randy Rhodes"
+    },
+    {
+      "start": 316.56,
+      "end": 318.06,
+      "text": "Także nieodżałowany"
+    },
+    {
+      "start": 318.06,
+      "end": 320.2,
+      "text": "Młodziutki wówczas gitarzysta"
+    },
+    {
+      "start": 320.2,
+      "end": 322.62,
+      "text": "Który zachwycał swoimi umiejętnościami"
+    },
+    {
+      "start": 322.62,
+      "end": 324.3,
+      "text": "Wszystkich, zachwycił też Ozziego"
+    },
+    {
+      "start": 324.3,
+      "end": 327,
+      "text": "Który z radością zatrudnił go w swoim składzie"
+    },
+    {
+      "start": 327,
+      "end": 328.84,
+      "text": "A to Blizzard of Oz"
+    },
+    {
+      "start": 328.84,
+      "end": 330.44,
+      "text": "Czyli cofamy się"
+    },
+    {
+      "start": 330.44,
+      "end": 335.3,
+      "text": "Do jednej z tych pierwszych płyt Ozziego"
+    },
+    {
+      "start": 335.3,
+      "end": 336.2,
+      "text": "No i oczywiście"
+    },
+    {
+      "start": 336.2,
+      "end": 339.16,
+      "text": "Wspominamy też te nagrania"
+    },
+    {
+      "start": 339.16,
+      "end": 340.04,
+      "text": "Najbardziej kultowe"
+    },
+    {
+      "start": 340.04,
+      "end": 341.88,
+      "text": "Bo zaczęliśmy dziś od Paranoity"
+    },
+    {
+      "start": 341.88,
+      "end": 343.96,
+      "text": "A tak przeglądając sobie media społecznościowe"
+    },
+    {
+      "start": 343.96,
+      "end": 344.96,
+      "text": "Jeszcze chwilę przed audycją"
+    },
+    {
+      "start": 344.96,
+      "end": 348.12,
+      "text": "Natknąłem się na post Walusia"
+    },
+    {
+      "start": 348.12,
+      "end": 349.1,
+      "text": "Walusz Kraksa Kryzys"
+    },
+    {
+      "start": 349.1,
+      "end": 350.6,
+      "text": "To o nim mówię"
+    },
+    {
+      "start": 350.6,
+      "end": 352.96,
+      "text": "Który też podkreślał niejednokrotnie"
+    },
+    {
+      "start": 352.96,
+      "end": 355.62,
+      "text": "Jak ważnym artystą dla niego był Ozzie"
+    },
+    {
+      "start": 355.62,
+      "end": 357.78,
+      "text": "I wymienił utwór Paranoity jako ten pierwszy"
+    },
+    {
+      "start": 357.78,
+      "end": 359.96,
+      "text": "Który w całości zagrał na gitarze"
+    },
+    {
+      "start": 359.96,
+      "end": 363.58,
+      "text": "Kiedy jeszcze uczył się i te pierwsze kroki gitarowe stawiał"
+    },
+    {
+      "start": 363.58,
+      "end": 367.02,
+      "text": "To też jest wydaje mi się bardzo istotne"
+    },
+    {
+      "start": 367.02,
+      "end": 367.8,
+      "text": "Co napisał"
+    },
+    {
+      "start": 367.8,
+      "end": 369.58,
+      "text": "Bo no właśnie to jest taki zespół"
+    },
+    {
+      "start": 369.58,
+      "end": 370.36,
+      "text": "To jest taki artysta"
+    },
+    {
+      "start": 370.36,
+      "end": 372.28,
+      "text": "Mówię o Black Sabbath i o samym Ozzie"
+    },
+    {
+      "start": 372.28,
+      "end": 376.32,
+      "text": "To jest artysta od którego uczymy się rock'n'rolla"
+    },
+    {
+      "start": 376.32,
+      "end": 380.1,
+      "text": "Bo Ozzie nie tylko był przecież rock'n'rollowym artystą"
+    },
+    {
+      "start": 380.1,
+      "end": 381.52,
+      "text": "Ale on był rock'n'rolem"
+    },
+    {
+      "start": 381.52,
+      "end": 382.96,
+      "text": "Przez te dziesiątki lat"
+    },
+    {
+      "start": 382.96,
+      "end": 385.48,
+      "text": "Przez które proponował nam kolejne płyty"
+    },
+    {
+      "start": 385.48,
+      "end": 386.34,
+      "text": "Kolejne koncerty"
+    },
+    {
+      "start": 386.34,
+      "end": 388.68,
+      "text": "Kolejne wyjątkowe wydarzenia"
+    },
+    {
+      "start": 388.68,
+      "end": 389.92,
+      "text": "Których było mnóstwo"
+    },
+    {
+      "start": 389.92,
+      "end": 392.46,
+      "text": "Jarek Szubrycht jest z nami już"
+    },
+    {
+      "start": 392.46,
+      "end": 394.42,
+      "text": "Połączeniem telefonicznym"
+    },
+    {
+      "start": 394.42,
+      "end": 395.24,
+      "text": "Dziś się słyszymy"
+    },
+    {
+      "start": 395.24,
+      "end": 396.04,
+      "text": "Halo, halo Jarku"
+    },
+    {
+      "start": 396.04,
+      "end": 397.38,
+      "text": "Jesteś z nami"
+    },
+    {
+      "start": 397.38,
+      "end": 398.52,
+      "text": "Też jestem oczywiście"
+    },
+    {
+      "start": 398.52,
+      "end": 400.94,
+      "text": "No to jest trudny moment"
+    },
+    {
+      "start": 400.94,
+      "end": 401.46,
+      "text": "Bo właściwie"
+    },
+    {
+      "start": 401.46,
+      "end": 403.16,
+      "text": "Co tutaj można powiedzieć"
+    },
+    {
+      "start": 403.16,
+      "end": 404.7,
+      "text": "Takiego co jeszcze nie zostało"
+    },
+    {
+      "start": 404.7,
+      "end": 406.72,
+      "text": "Przez te dziesiątki lat powiedziane o Ozzie"
+    },
+    {
+      "start": 406.72,
+      "end": 408.64,
+      "text": "Wiemy jak był wyjątkową postacią"
+    },
+    {
+      "start": 408.64,
+      "end": 409.84,
+      "text": "Ale bardzo spodobało mi się to"
+    },
+    {
+      "start": 409.84,
+      "end": 411.54,
+      "text": "Co mogliśmy usłyszeć w serwisie trójki"
+    },
+    {
+      "start": 411.54,
+      "end": 412.98,
+      "text": "O północy"
+    },
+    {
+      "start": 412.98,
+      "end": 414.58,
+      "text": "Fragment twojej wypowiedzi"
+    },
+    {
+      "start": 414.58,
+      "end": 416.24,
+      "text": "Kiedy wspominając Ozziego"
+    },
+    {
+      "start": 416.24,
+      "end": 416.82,
+      "text": "Mówiłeś o tym"
+    },
+    {
+      "start": 416.82,
+      "end": 417.74,
+      "text": "Że była to postać"
+    },
+    {
+      "start": 417.74,
+      "end": 419.66,
+      "text": "Na poły prawdziwa"
+    },
+    {
+      "start": 419.66,
+      "end": 420.6,
+      "text": "Na poły komiksowa"
+    },
+    {
+      "start": 420.6,
+      "end": 422.78,
+      "text": "I to jest wydaje mi się też"
+    },
+    {
+      "start": 422.78,
+      "end": 424.38,
+      "text": "W kontekście Ozziego"
+    },
+    {
+      "start": 424.38,
+      "end": 425.6,
+      "text": "Bardzo wymowne"
+    },
+    {
+      "start": 425.6,
+      "end": 427.52,
+      "text": "No bo on był tak wyjątkowy"
+    },
+    {
+      "start": 427.52,
+      "end": 430.52,
+      "text": "Że właściwie wydawać by się mogło"
+    },
+    {
+      "start": 430.52,
+      "end": 432.06,
+      "text": "Że nie istniał"
+    },
+    {
+      "start": 432.06,
+      "end": 434.28,
+      "text": "Bo nikt by go nie wymyślił takiego"
+    },
+    {
+      "start": 434.28,
+      "end": 436.42,
+      "text": "Tak to prawda"
+    },
+    {
+      "start": 436.42,
+      "end": 439.9,
+      "text": "Ja znalazłem sobie dzisiaj"
+    },
+    {
+      "start": 439.9,
+      "end": 441.56,
+      "text": "Na swój własny użytek"
+    },
+    {
+      "start": 441.56,
+      "end": 445.7,
+      "text": "Jego duet z Miss Piggy"
+    },
+    {
+      "start": 445.7,
+      "end": 448.18,
+      "text": "Utwór Born to be Wild"
+    },
+    {
+      "start": 448.18,
+      "end": 450.54,
+      "text": "I tak sobie pomyślałem"
+    },
+    {
+      "start": 450.54,
+      "end": 452.8,
+      "text": "Że oczywiście to nie jest numer Black Sabbath"
+    },
+    {
+      "start": 452.8,
+      "end": 453.44,
+      "text": "A nie Ozziego"
+    },
+    {
+      "start": 453.44,
+      "end": 454.58,
+      "text": "To jest cover Steppenwolf"
+    },
+    {
+      "start": 454.58,
+      "end": 457,
+      "text": "Ale to jest właściwie wszystko"
+    },
+    {
+      "start": 457,
+      "end": 458.28,
+      "text": "Co można o Ozziem powiedzieć"
+    },
+    {
+      "start": 458.28,
+      "end": 459.18,
+      "text": "On się urodził"
+    },
+    {
+      "start": 459.18,
+      "end": 461.18,
+      "text": "Żeby być szalonym"
+    },
+    {
+      "start": 461.18,
+      "end": 463.28,
+      "text": "I też jednocześnie był właśnie"
+    },
+    {
+      "start": 463.28,
+      "end": 465.28,
+      "text": "Jak taka trochę postać z mapetów"
+    },
+    {
+      "start": 465.28,
+      "end": 466.6,
+      "text": "Trochę nieprawdziwy"
+    },
+    {
+      "start": 466.6,
+      "end": 469.58,
+      "text": "Był księciem ciemności"
+    },
+    {
+      "start": 469.58,
+      "end": 474.16,
+      "text": "Ale jednocześnie był bardzo zabawny w tym wszystkim"
+    },
+    {
+      "start": 474.16,
+      "end": 476.92,
+      "text": "Był wielką gwiazdą rocka"
+    },
+    {
+      "start": 476.92,
+      "end": 480.16,
+      "text": "Ale jednocześnie pozostawał swojakiem"
+    },
+    {
+      "start": 480.16,
+      "end": 482.64,
+      "text": "Takim kumplem z sąsiedztwa"
+    },
+    {
+      "start": 482.64,
+      "end": 486.42,
+      "text": "A który na imprezach zawsze błaznuje"
+    },
+    {
+      "start": 486.42,
+      "end": 489.42,
+      "text": "Czasem przesadza z tym błaznowaniem"
+    },
+    {
+      "start": 489.42,
+      "end": 491.46,
+      "text": "No ale to jest problem"
+    },
+    {
+      "start": 491.46,
+      "end": 493.2,
+      "text": "No ale to jest problem bardziej najbliższej rodziny"
+    },
+    {
+      "start": 493.2,
+      "end": 494.54,
+      "text": "Niż tych wszystkich kolegów"
+    },
+    {
+      "start": 494.54,
+      "end": 497.12,
+      "text": "Którzy dobrze się bawią"
+    },
+    {
+      "start": 497.12,
+      "end": 499.96,
+      "text": "Obserwując jego wygłupy"
+    },
+    {
+      "start": 499.96,
+      "end": 501.82,
+      "text": "I ja myślę, że to jest też"
+    },
+    {
+      "start": 501.82,
+      "end": 503.78,
+      "text": "Taka prawda"
+    },
+    {
+      "start": 503.78,
+      "end": 506.24,
+      "text": "Niż on po prostu wprowadzał ludzi"
+    },
+    {
+      "start": 506.24,
+      "end": 507.78,
+      "text": "W dobry nastrój"
+    },
+    {
+      "start": 507.78,
+      "end": 512.68,
+      "text": "I też nawet myślę, że żegnać go powinniśmy"
+    },
+    {
+      "start": 512.68,
+      "end": 514.2,
+      "text": "Z uśmiechem"
+    },
+    {
+      "start": 514.2,
+      "end": 517.34,
+      "text": "Raczej z wdzięcznością za to wszystko"
+    },
+    {
+      "start": 517.34,
+      "end": 521.74,
+      "text": "Za to, że pokazał nam, że można być"
+    },
+    {
+      "start": 521.74,
+      "end": 524.38,
+      "text": "Przez całe życie beztroskim dzieciakiem"
+    },
+    {
+      "start": 524.38,
+      "end": 528.24,
+      "text": "Nawet jeżeli płaci się za to pewną cenę"
+    },
+    {
+      "start": 528.24,
+      "end": 532.42,
+      "text": "I ja za to jestem mu bardzo wdzięczny"
+    },
+    {
+      "start": 532.42,
+      "end": 534.04,
+      "text": "No właśnie o tym też myślałem"
+    },
+    {
+      "start": 534.04,
+      "end": 536.02,
+      "text": "Przygotowując się dziś do tego spotkania"
+    },
+    {
+      "start": 536.02,
+      "end": 538.1,
+      "text": "Nie było dużo czasu"
+    },
+    {
+      "start": 538.1,
+      "end": 540,
+      "text": "No bo wiadomość obiegła świat"
+    },
+    {
+      "start": 540,
+      "end": 542.38,
+      "text": "Już w godzinach raczej wieczornych"
+    },
+    {
+      "start": 542.38,
+      "end": 544.84,
+      "text": "Natomiast stwierdziłem, że zdecydowanie"
+    },
+    {
+      "start": 544.84,
+      "end": 546.44,
+      "text": "Wypadałoby tutaj"
+    },
+    {
+      "start": 546.44,
+      "end": 548.58,
+      "text": "Bardziej skoncentrować się na tej celebracji"
+    },
+    {
+      "start": 548.58,
+      "end": 550.76,
+      "text": "Tych 76 lat rock'n'rolla"
+    },
+    {
+      "start": 550.76,
+      "end": 553.9,
+      "text": "Aniżeli na smutkach związanych z tym"
+    },
+    {
+      "start": 553.9,
+      "end": 556.16,
+      "text": "Że Ozziego już fizycznie nie ma"
+    },
+    {
+      "start": 556.16,
+      "end": 557.66,
+      "text": "Choć jest przecież mnóstwo płyt"
+    },
+    {
+      "start": 557.66,
+      "end": 558.54,
+      "text": "Jest mnóstwo wspomnień"
+    },
+    {
+      "start": 558.54,
+      "end": 559.38,
+      "text": "Mnóstwo koncertów"
+    },
+    {
+      "start": 559.38,
+      "end": 562.18,
+      "text": "O których też dziś będziemy mówić"
+    },
+    {
+      "start": 562.18,
+      "end": 565.54,
+      "text": "Ale też bardzo wyjątkowe w ogóle"
+    },
+    {
+      "start": 565.54,
+      "end": 567.08,
+      "text": "Samo odejście Ozziego"
+    },
+    {
+      "start": 567.08,
+      "end": 569.44,
+      "text": "Też na jego zasadach przecież"
+    },
+    {
+      "start": 569.44,
+      "end": 572.08,
+      "text": "No bo to wygląda tak jakby sobie on to"
+    },
+    {
+      "start": 572.08,
+      "end": 574.14,
+      "text": "Po prostu sam wszystko zaplanował"
+    },
+    {
+      "start": 574.14,
+      "end": 575.38,
+      "text": "Wymyślił i zrealizował"
+    },
+    {
+      "start": 575.38,
+      "end": 576.56,
+      "text": "Tak dokładnie jak chciał"
+    },
+    {
+      "start": 576.56,
+      "end": 578.74,
+      "text": "Czyli ostatni koncert Black Sabbath"
+    },
+    {
+      "start": 578.74,
+      "end": 580.54,
+      "text": "Te kilka tygodni temu"
+    },
+    {
+      "start": 580.54,
+      "end": 581.74,
+      "text": "Koncert bardzo wyjątkowy"
+    },
+    {
+      "start": 581.74,
+      "end": 583.42,
+      "text": "Z udziałem wielu różnych artystów"
+    },
+    {
+      "start": 583.42,
+      "end": 584.36,
+      "text": "Bardzo ważnych"
+    },
+    {
+      "start": 584.36,
+      "end": 586.04,
+      "text": "W kontekście Ozziego"
+    },
+    {
+      "start": 586.04,
+      "end": 587.14,
+      "text": "Artystów także, którzy"
+    },
+    {
+      "start": 587.14,
+      "end": 590.28,
+      "text": "W ogóle zaczęli muzyką się zajmować"
+    },
+    {
+      "start": 590.28,
+      "end": 591.58,
+      "text": "Ze względu na Black Sabbath"
+    },
+    {
+      "start": 591.58,
+      "end": 593.28,
+      "text": "No i chwilę po tym koncercie"
+    },
+    {
+      "start": 593.28,
+      "end": 594.9,
+      "text": "Kiedy dopełnił dzieła"
+    },
+    {
+      "start": 594.9,
+      "end": 598.94,
+      "text": "Stwierdził, że ok, to już wszystko ode mnie"
+    },
+    {
+      "start": 598.94,
+      "end": 600.16,
+      "text": "Tak, to prawda"
+    },
+    {
+      "start": 600.16,
+      "end": 602.4,
+      "text": "Przypomina to trochę pożegnanie"
+    },
+    {
+      "start": 602.4,
+      "end": 604.76,
+      "text": "Równie starannie wyreżyserowane"
+    },
+    {
+      "start": 604.76,
+      "end": 606.44,
+      "text": "Davida Bowiego"
+    },
+    {
+      "start": 606.44,
+      "end": 607.5,
+      "text": "Tak, tak, tak, tak"
+    },
+    {
+      "start": 607.5,
+      "end": 609.82,
+      "text": "Ale powiedziałeś, że nie miałeś"
+    },
+    {
+      "start": 609.82,
+      "end": 612.24,
+      "text": "Zbyt wiele czasu, żeby przygotować się do tej audycji"
+    },
+    {
+      "start": 612.24,
+      "end": 613.28,
+      "text": "To też jest bardzo ciekawe"
+    },
+    {
+      "start": 613.28,
+      "end": 613.88,
+      "text": "Bo ja też"
+    },
+    {
+      "start": 613.88,
+      "end": 616.9,
+      "text": "Pisałem gorączkowo pożegnanie"
+    },
+    {
+      "start": 616.9,
+      "end": 618.32,
+      "text": "Teraz Ozziego"
+    },
+    {
+      "start": 618.32,
+      "end": 620.18,
+      "text": "Przez ostatnie półtorej godziny"
+    },
+    {
+      "start": 620.18,
+      "end": 623.12,
+      "text": "A przecież doskonale wiedzieliśmy"
+    },
+    {
+      "start": 623.12,
+      "end": 626.96,
+      "text": "Doskonale wiedzieliśmy, że to jest nieuchronne"
+    },
+    {
+      "start": 626.96,
+      "end": 627.68,
+      "text": "Że to się zbliża"
+    },
+    {
+      "start": 627.68,
+      "end": 629.68,
+      "text": "Że on jest chory od wielu lat"
+    },
+    {
+      "start": 629.68,
+      "end": 631.92,
+      "text": "I coraz bardziej chory"
+    },
+    {
+      "start": 631.92,
+      "end": 633.88,
+      "text": "Ale właśnie"
+    },
+    {
+      "start": 633.88,
+      "end": 636.46,
+      "text": "To jest coś, co się z jednej strony wie"
+    },
+    {
+      "start": 636.46,
+      "end": 640.12,
+      "text": "Ale z drugiej strony trudno dopuścić do siebie taką myśl"
+    },
+    {
+      "start": 640.12,
+      "end": 644.06,
+      "text": "Właśnie Ozzie był tak pełen życia"
+    },
+    {
+      "start": 644.06,
+      "end": 649.22,
+      "text": "Że to właściwie niewiarygodne"
+    },
+    {
+      "start": 649.22,
+      "end": 651.38,
+      "text": "Że go nie ma"
+    },
+    {
+      "start": 651.38,
+      "end": 653.2,
+      "text": "Że jednak umarł"
+    },
+    {
+      "start": 653.2,
+      "end": 653.64,
+      "text": "Jak to?"
+    },
+    {
+      "start": 653.96,
+      "end": 655.66,
+      "text": "Przecież miał być zawsze"
+    },
+    {
+      "start": 655.66,
+      "end": 657.72,
+      "text": "Ja właściwie w audycji"
+    },
+    {
+      "start": 657.72,
+      "end": 660.46,
+      "text": "Po tym koncercie w Birmingham"
+    },
+    {
+      "start": 660.46,
+      "end": 663.14,
+      "text": "Mówiłem, że"
+    },
+    {
+      "start": 663.14,
+      "end": 665.6,
+      "text": "Czekam tak naprawdę na"
+    },
+    {
+      "start": 665.6,
+      "end": 667.3,
+      "text": "Ok, pożegnanie"
+    },
+    {
+      "start": 667.3,
+      "end": 668.26,
+      "text": "Rozumiem, super"
+    },
+    {
+      "start": 668.26,
+      "end": 669.74,
+      "text": "Ale czekam na kolejną audycję"
+    },
+    {
+      "start": 669.74,
+      "end": 671.4,
+      "text": "Mam nadzieję, że Ozzie odpocznie"
+    },
+    {
+      "start": 671.4,
+      "end": 674.82,
+      "text": "I że tego rodzaju koncert"
+    },
+    {
+      "start": 674.82,
+      "end": 676.82,
+      "text": "Odbędzie się raz jeszcze"
+    },
+    {
+      "start": 676.82,
+      "end": 677.94,
+      "text": "Być może z innymi"
+    },
+    {
+      "start": 677.94,
+      "end": 679.28,
+      "text": "Gośćmi"
+    },
+    {
+      "start": 679.28,
+      "end": 680.86,
+      "text": "Bo nie dopuszczają do siebie myśli"
+    },
+    {
+      "start": 680.86,
+      "end": 683.84,
+      "text": "Że on naprawdę jest aż tak chory"
+    },
+    {
+      "start": 683.84,
+      "end": 688.42,
+      "text": "To jedna z tych postaci, których obecność była na tyle oczywista"
+    },
+    {
+      "start": 688.42,
+      "end": 692.14,
+      "text": "Że faktycznie trudno jest dopuścić do siebie taką myśl"
+    },
+    {
+      "start": 692.14,
+      "end": 694.1,
+      "text": "No, że ten koncert się już nie odbędzie"
+    },
+    {
+      "start": 694.1,
+      "end": 696.48,
+      "text": "Ale szczęśliwie odbyło się ich wiele"
+    },
+    {
+      "start": 696.48,
+      "end": 697.68,
+      "text": "Szczęśliwie odbył się ten"
+    },
+    {
+      "start": 697.68,
+      "end": 699.22,
+      "text": "No właśnie ostatni koncert"
+    },
+    {
+      "start": 699.22,
+      "end": 700.56,
+      "text": "O którym dziś jeszcze będziemy mówić"
+    },
+    {
+      "start": 700.56,
+      "end": 702.32,
+      "text": "Bo Michał Grabek Grabkowski"
+    },
+    {
+      "start": 702.32,
+      "end": 707.52,
+      "text": "Dziennikarz programu trzeciego był na miejscu i o tym też będzie opowiadał"
+    },
+    {
+      "start": 707.52,
+      "end": 714.3,
+      "text": "Ja teraz chciałbym, żebyśmy na moment sięgnęli po jedną z tych najbardziej kultowych płyt Black Sabbath"
+    },
+    {
+      "start": 714.3,
+      "end": 715.12,
+      "text": "Płytę imienną"
+    },
+    {
+      "start": 715.12,
+      "end": 716.22,
+      "text": "The Wizards"
+    },
+    {
+      "start": 716.22,
+      "end": 717.7,
+      "text": "I przypominam, że z nami"
+    },
+    {
+      "start": 717.7,
+      "end": 723.56,
+      "text": "Na łączu telefonicznym oczywiście gospodarz tego pasma między północą a godziną drugą"
+    },
+    {
+      "start": 723.56,
+      "end": 724.82,
+      "text": "Czyli audycji ciężko na sercu"
+    },
+    {
+      "start": 724.82,
+      "end": 726.02,
+      "text": "Jarek Szubrycht"
+    },
+    {
+      "start": 726.02,
+      "end": 727.28,
+      "text": "Za chwilę wrócimy"
+    },
+    {
+      "start": 727.28,
+      "end": 729.8,
+      "text": "I jeszcze z Jarkiem oczywiście rozmawiać będziemy"
+    },
+    {
+      "start": 729.8,
+      "end": 730.88,
+      "text": "O Ozim"
+    },
+    {
+      "start": 730.88,
+      "end": 733.42,
+      "text": "O wspomnieniach najróżniejszych z koncertów"
+    },
+    {
+      "start": 733.42,
+      "end": 734.7,
+      "text": "No a teraz wyciągnijmy"
+    },
+    {
+      "start": 734.7,
+      "end": 735.34,
+      "text": "The Wizard"
+    },
+    {
+      "start": 735.34,
+      "end": 738.64,
+      "text": "No bo przecież on takim właśnie czarodziejem był"
+    },
+    {
+      "start": 738.64,
+      "end": 740.22,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 992.22,
+      "end": 1003.32,
+      "text": "The Wizard z imiennej płyty Black Sabbath. Dziś będziemy tak przemierzać te różne płytowe zakątki Black Sabbath, zarówno jak i samego Ozziego solowo."
+    },
+    {
+      "start": 1003.56,
+      "end": 1011.88,
+      "text": "No i też wspominałem o tym, że gościnne występy Ozziego i innych artystów u Ozziego będą się dziś pojawiać."
+    },
+    {
+      "start": 1012.32,
+      "end": 1017.34,
+      "text": "Jarek Szubrych cały czas z nami, no i oczywiście rozmawiamy o Ozziego, wspominamy o Ozziego."
+    },
+    {
+      "start": 1017.34,
+      "end": 1028.74,
+      "text": "Ja bym się chciał wypytać o koncerty, o koncerty Black Sabbath, o koncerty Ozziego samego, no bo to jest jedno z takich moich wielkich marzeń, których niestety już nie zrealizuję."
+    },
+    {
+      "start": 1029.3,
+      "end": 1038.22,
+      "text": "Marzeń koncertowych. To jest jeden z tych artystów, z którymi mijałem się przez lata, no a wiem, że miałeś okazję widzieć go nie raz."
+    },
+    {
+      "start": 1039.72,
+      "end": 1046.9,
+      "text": "Tak, po raz pierwszy na Ozzieście w Katowicach, to był 2002 rok, to był Ozzie solo."
+    },
+    {
+      "start": 1047.02,
+      "end": 1058.22,
+      "text": "W ogóle Ozzież to była wspaniała inicjatywa, bo Ozzie Osborne, i tu też trzeba wspomnieć Sharon, jego żonę, która chyba po pierwsze uratowała mu życie,"
+    },
+    {
+      "start": 1058.72,
+      "end": 1076.32,
+      "text": "po jego wydaleniu z Black Sabbath, dlatego że już był tak wkopany w używki wszelakie i w związku z tym niesorny, że koledzy nie byli sobie w stanie z nim poradzić."
+    },
+    {
+      "start": 1076.32,
+      "end": 1090.42,
+      "text": "Ale nie tylko uratowała mu życie, ale też uratowała mu karierę, bo na prośbę ojca, swojego, legendarnego menadżera rockowych gwiazd Wielkiej Brytanii,"
+    },
+    {
+      "start": 1090.48,
+      "end": 1096.3,
+      "text": "zajęła się solową karierą Ozziego, zajęła się skutecznie, bo też z tego powstało małżeństwo,"
+    },
+    {
+      "start": 1097.12,
+      "end": 1108.4,
+      "text": "ale zajęła się w ten sposób też, że nie dość, że wymyśliła go jako artystę solowego, to potem też była inicjatorką i wykonawczynią tych różnych ciekawych pomysłów,"
+    },
+    {
+      "start": 1108.48,
+      "end": 1117.56,
+      "text": "które działy się wokół Ozziego, takich jak serial Rodzina Ozbornów z reality show z MTV, no i właśnie festiwal Ozfest,"
+    },
+    {
+      "start": 1117.56,
+      "end": 1125.28,
+      "text": "to gwiazdowy, absolutnie fantastyczny, dotarł do Polski w 2002 roku i dla mnie to też było marzenie spełnione,"
+    },
+    {
+      "start": 1125.38,
+      "end": 1135.72,
+      "text": "bo zobaczyłem go na scenie w bardzo dobrej formie, z świetnym programem, który zawierał też kilka otworów Black Sabbath."
+    },
+    {
+      "start": 1135.86,
+      "end": 1142.76,
+      "text": "Wtedy właściwie wydawało się, że to już będzie niespełnione marzenie, żeby zobaczyć go właśnie z Black Sabbath."
+    },
+    {
+      "start": 1142.76,
+      "end": 1149.28,
+      "text": "Na szczęście okazało się, że Black Sabbath w oryginalnym składzie jeszcze wrócili i jeszcze się udało,"
+    },
+    {
+      "start": 1149.88,
+      "end": 1153.58,
+      "text": "ale ten pierwszy raz to właśnie był 2002 rok w Spodku."
+    },
+    {
+      "start": 1154.08,
+      "end": 1155.34,
+      "text": "Cudownie, cudownie."
+    },
+    {
+      "start": 1155.88,
+      "end": 1164.58,
+      "text": "No i Black Sabbath po kilku latach, mówię po kilku latach od tego koncertu w 2002 roku wróciło w składzie oryginalnym,"
+    },
+    {
+      "start": 1164.84,
+      "end": 1183.26,
+      "text": "bo Ozzy miał swoje momenty, kiedy członkiem był, później trochę nie był, no ale ostatecznie oczywiście ten skład oryginalny w dużej mierze się ponownie spotkał także z Ozzy przez lata Dio w roli wokalisty głównego Black Sabbath."
+    },
+    {
+      "start": 1183.26,
+      "end": 1197.72,
+      "text": "No a te koncerty Black Sabbath to podejrzewam też było wydarzenie wyjątkowe, zwłaszcza kiedy skład wrócił w takiej formie, w jakiej chyba fani domagali się tego od lat."
+    },
+    {
+      "start": 1198.8,
+      "end": 1205.98,
+      "text": "Tak, to prawda. Ja je widziałem na trasie wymownie nazwanej The End i rzeczywiście to była ostatnia trasa koncertowa Black Sabbath."
+    },
+    {
+      "start": 1206.14,
+      "end": 1208.88,
+      "text": "Rzeczywiście to był koniec zespołu."
+    },
+    {
+      "start": 1209.88,
+      "end": 1221.16,
+      "text": "Sprawdziłem i właściwie nie mogłem uwierzyć, jak już sprawdziłem kiedy to było, bo to było w 2016 roku, czyli prawie 10 lat temu, mógłbym przyciąć, że najwyżej 3 lata temu,"
+    },
+    {
+      "start": 1221.92,
+      "end": 1237.76,
+      "text": "ale nie spodziewałem się cudów, bardziej chodziło o to, żeby poczuć tę magię, żeby dotknąć historii, natomiast koncert był absolutnie fantastyczny i Ozzy też był w bardzo dobrej formie."
+    },
+    {
+      "start": 1238.56,
+      "end": 1249,
+      "text": "Program oczywiście, wszystkie kultowe numery, świetne brzmienie, wszystko tam się zgadzało, więc tak, bardzo się cieszę, że mogłem tego doświadczyć."
+    },
+    {
+      "start": 1249.1,
+      "end": 1261.16,
+      "text": "Niestety nie byłem na tym koncercie teraz w Birmingham, ale też cieszę się, że widziałem właśnie Black Sabbath żegnających się, ale w sposób absolutnie triumfalny."
+    },
+    {
+      "start": 1261.16,
+      "end": 1268.96,
+      "text": "Nie pozostawili wątpliwości, dlaczego właśnie oni są nie tylko pianierami, ale też mistrzami takiej muzyki."
+    },
+    {
+      "start": 1269.66,
+      "end": 1276.6,
+      "text": "No a The End jako tytuł trasy to też jest jeden z takich zabiegów często stosowanych przez najróżniejszych artystów."
+    },
+    {
+      "start": 1276.72,
+      "end": 1280.78,
+      "text": "Przecież gansi jak się reaktywowali w częściowo składzie oryginalnym."
+    },
+    {
+      "start": 1280.88,
+      "end": 1285.46,
+      "text": "To też pierwsza trasa, w którą wyruszyli nosiła tytuł Not In This Lifetime."
+    },
+    {
+      "start": 1285.62,
+      "end": 1289.12,
+      "text": "Zresztą Oasis teraz robią coś bardzo podobnego."
+    },
+    {
+      "start": 1290.44,
+      "end": 1295.06,
+      "text": "Mówimy dziś o Ozzy, oczywiście to nikogo na pewno nie zaskakuje."
+    },
+    {
+      "start": 1295.18,
+      "end": 1301.94,
+      "text": "Mówimy o jego dokonaniach solowych, o jego dokonaniach w zespole i wspólnie z różnymi artystami."
+    },
+    {
+      "start": 1301.94,
+      "end": 1310.94,
+      "text": "Także na żywo i te utwory z płyt Live, których też sporo w swoim katalogu ma Ozzy, na pewno się pojawią."
+    },
+    {
+      "start": 1311.28,
+      "end": 1317.8,
+      "text": "Ale chciałbym jeszcze zahaczyć o utwór, o którym wspomniałeś, czyli oryginalnie oczywiście Steppenwolf, Born to be Wild."
+    },
+    {
+      "start": 1317.98,
+      "end": 1321.5,
+      "text": "No i tutaj jednym z wykonawców właśnie Ozzy Osborni."
+    },
+    {
+      "start": 1321.72,
+      "end": 1324.52,
+      "text": "Wrócimy sobie jeszcze za chwilę i jeszcze parę słów powiemy."
+    },
+    {
+      "start": 1324.6,
+      "end": 1326.12,
+      "text": "Jarek Szubrycht jest z nami, przypomnę."
+    },
+    {
+      "start": 1328.68,
+      "end": 1329.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1329.68,
+      "end": 1330.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1330.68,
+      "end": 1331.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1331.68,
+      "end": 1332.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1332.68,
+      "end": 1333.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1333.68,
+      "end": 1334.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1334.68,
+      "end": 1335.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1335.68,
+      "end": 1336.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1336.68,
+      "end": 1337.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1337.68,
+      "end": 1338.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1338.68,
+      "end": 1339.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1339.68,
+      "end": 1340.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1340.68,
+      "end": 1341.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1341.68,
+      "end": 1342.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1342.68,
+      "end": 1343.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1343.68,
+      "end": 1344.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1344.68,
+      "end": 1345.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1345.68,
+      "end": 1346.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1346.68,
+      "end": 1347.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1347.68,
+      "end": 1348.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1348.68,
+      "end": 1349.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1349.68,
+      "end": 1350.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1350.68,
+      "end": 1351.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1351.68,
+      "end": 1352.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1352.68,
+      "end": 1354.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1354.68,
+      "end": 1355.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1355.68,
+      "end": 1356.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1356.68,
+      "end": 1357.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1357.68,
+      "end": 1358.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1358.68,
+      "end": 1359.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1359.68,
+      "end": 1360.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1360.68,
+      "end": 1361.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1361.68,
+      "end": 1362.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1362.68,
+      "end": 1363.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1363.68,
+      "end": 1364.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1364.68,
+      "end": 1365.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1365.68,
+      "end": 1366.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1366.68,
+      "end": 1367.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1367.68,
+      "end": 1368.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1368.68,
+      "end": 1369.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1369.68,
+      "end": 1370.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1370.68,
+      "end": 1371.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1371.68,
+      "end": 1372.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1372.68,
+      "end": 1373.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1373.68,
+      "end": 1374.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1374.68,
+      "end": 1375.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1375.68,
+      "end": 1376.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1376.68,
+      "end": 1377.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1377.68,
+      "end": 1378.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1378.68,
+      "end": 1379.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1379.68,
+      "end": 1380.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1380.68,
+      "end": 1381.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1381.68,
+      "end": 1382.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1382.68,
+      "end": 1383.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1383.68,
+      "end": 1384.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1384.68,
+      "end": 1385.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1385.68,
+      "end": 1386.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1386.68,
+      "end": 1387.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1387.68,
+      "end": 1388.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1388.68,
+      "end": 1389.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1389.68,
+      "end": 1390.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1390.68,
+      "end": 1391.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1391.68,
+      "end": 1392.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1392.68,
+      "end": 1393.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1393.68,
+      "end": 1394.68,
+      "text": "Jarek Szubrycht jest z nami."
+    },
+    {
+      "start": 1528.64,
+      "end": 1532.28,
+      "text": "Daj mi kieszę. Nie ma way! Zostałem się!"
+    },
+    {
+      "start": 1558.64,
+      "end": 1580.58,
+      "text": "Ozzie Osborne, nieodżałowany w wieku 76 lat, zmarł. Od długiego czasu już mówiło się o tym, że to się może wydarzyć, ale o tym też zresztą wspominaliśmy. Nikt nie dopuszczał tej myśli do siebie. To jest jeden z tych pomników, tak jak zresztą Lemie Kilmister chociażby, z którym było bardzo podobnie."
+    },
+    {
+      "start": 1580.58,
+      "end": 1598.22,
+      "text": "Też tryb życia zwiastował, że może to się wydarzyć, ale też nikt nie dowierzał. Przecież Lemie miał być wieczny. A z nami cały czas Jarek Szubrycht, czyli gospodarz tego właśnie pasma, tutaj co tydzień w Trójce Ciężko na Sercu, czyli audycja poświęcona tym najcięższym brzmieniom."
+    },
+    {
+      "start": 1598.22,
+      "end": 1614.66,
+      "text": "No i dziś wspominamy Ozziego. Z uśmiechem na twarzach celebrujemy te 76 lat życia Ozziego i 76 lat rock'n'roll, no bo on był rock'n'rollem, był heavy metalem, który też przez lata zmieniał swoją definicję."
+    },
+    {
+      "start": 1614.66,
+      "end": 1630.56,
+      "text": "No a Ozzie cały czas z duchem czasu idąc proponował kolejne albumy. No ale chcielibyśmy się zatrzymać jeszcze na moment, sięgając też po z życia wzięty fragment wypowiedzi Ozziego przy jego poczuciu humoru."
+    },
+    {
+      "start": 1630.66,
+      "end": 1657.62,
+      "text": "No to jest cały Ozzie. Ozzie w całej swojej okazałości, czyli nawiązanie do serialu, o którym też wspominaliśmy, rodzina Ozbornów."
+    },
+    {
+      "start": 1657.62,
+      "end": 1667.78,
+      "text": "No i rzecz jasna, naturalne skojarzenie, czyli Flintstonowie i ta czołówka, którą Ozzie, jak sam uznał, powinien napisać."
+    },
+    {
+      "start": 1668.34,
+      "end": 1678.18,
+      "text": "I myślę, że tak już podsumowując to, o czym mówiliśmy, no humor na pewno będzie jedną z tych rzeczy, za które chcielibyśmy i za które na pewno zapamiętamy Ozziego Ozborna."
+    },
+    {
+      "start": 1678.84,
+      "end": 1697.92,
+      "text": "Tak, to warto wspomnieć. Jego autobiografię, Ja Ozzie, to się nazywa, została wydana również w Polsce i to jest taka książka, przy której po prostu trudno się nie popłakać ze śmiechu właściwie na każdej stronie."
+    },
+    {
+      "start": 1699,
+      "end": 1710.74,
+      "text": "Nawet jeżeli się zastanowić dobrze, to treść niektórych tych opowieści wcale tak bardzo śmieszna nie jest, no bo rzeczywiście Ozzie walczył z różnymi demonami,"
+    },
+    {
+      "start": 1711.58,
+      "end": 1729.56,
+      "text": "związanymi z nałogami, co też pewnie przyczyniło się do tego, że zszedł ze sceny trochę wcześniej niż tego sobie byśmy życzyli i pewnie przyczyniło się do tego, że już dzisiaj go żegnamy na zawsze."
+    },
+    {
+      "start": 1729.56,
+      "end": 1743.04,
+      "text": "Ale też znowu wspomniałeś z Lemiego, to trochę jest tak jak z Lemim, bo myślę, że część naszego uwielbienia i podziwu dla tych postaci trochę wiąże się też z tym, że to są tacy ludzie, którzy robią te wszystkie rzeczy,"
+    },
+    {
+      "start": 1743.04,
+      "end": 1765.68,
+      "text": "o których my byśmy nawet nie odważyli się pomyśleć, a co dopiero zrobić i oni robią to za nas, z dużym humorem i przy okazji jeszcze opatrując to wspaniałą muzyką, wspaniałymi występami."
+    },
+    {
+      "start": 1766.22,
+      "end": 1773.7,
+      "text": "Ozzie Osborne słowami Jarka Szubrychta. Jarku, bardzo Ci dziękuję za to, że zechciałeś dziś się z nami połączyć i porozmawiać,"
+    },
+    {
+      "start": 1773.88,
+      "end": 1782.12,
+      "text": "powspominać o Ozziego, nieodżałowanego Ozziego Osborne i na pewno, no tak teraz trochę się wyrywam, wychodzę przed szereg,"
+    },
+    {
+      "start": 1782.18,
+      "end": 1787.44,
+      "text": "ale myślę, że tutaj z odpowiedzialnością pełną mogę powiedzieć, że jeszcze będziesz do Ozziego w swoich audycjach wracał."
+    },
+    {
+      "start": 1788.1,
+      "end": 1796.76,
+      "text": "No tak, nie da się nie wracać, skoro audycja nazywa się ciężko na sercu i dzisiaj rzeczywiście jest ciężko na sercu"
+    },
+    {
+      "start": 1796.76,
+      "end": 1806.1,
+      "text": "i skoro audycja traktuje o wszystkich odmianach metalu, a właściwie nie można sobie wyobrazić metalu bez Black Sabbath"
+    },
+    {
+      "start": 1806.1,
+      "end": 1815.5,
+      "text": "i Ozziego właśnie. Na pewno jakiś by był, ale byłby zupełnie inny i nie sądzę by był lepszy."
+    },
+    {
+      "start": 1815.92,
+      "end": 1823.14,
+      "text": "No przecież wszyscy, nie tylko zresztą metalowcy, ale wszyscy, którzy grają muzykę rockową na gitarach elektrycznych,"
+    },
+    {
+      "start": 1823.92,
+      "end": 1834.02,
+      "text": "na przesterowanym brzmieniu, opartą na riffach, pośrednio lub bezpośrednio do Black Sabbath się odwołują."
+    },
+    {
+      "start": 1834.48,
+      "end": 1840.38,
+      "text": "Czy to jest budka suflera, czy nirvana, wszędzie tam Black Sabbath słychać."
+    },
+    {
+      "start": 1840.82,
+      "end": 1848.58,
+      "text": "A w tych zespołach, które ja puszczam ciężko na sercu, to już w ogóle, więc tak, tak, oczywiście, będzie zawsze obecny."
+    },
+    {
+      "start": 1848.8,
+      "end": 1855.44,
+      "text": "No te gitary by tak nie grały, gdyby nie Tony Iommi, oczywiście, no bo Black Sabbath to cały szereg muzyków,"
+    },
+    {
+      "start": 1855.6,
+      "end": 1864.18,
+      "text": "którzy na to pracowali przez lata. Zapytałeś mnie wcześniej o Changes, czy planuję dziś z woreczka pod tytułem Ozzie i Black Sabbath wyciągnąć."
+    },
+    {
+      "start": 1864.56,
+      "end": 1867.18,
+      "text": "Otóż tak, a dlaczego? Dlaczego Changes akurat?"
+    },
+    {
+      "start": 1868.66,
+      "end": 1876.5,
+      "text": "Bo to piękna piosenka, ale też dlatego, że namawiam tutaj słuchaczy, namawiam ciebie"
+    },
+    {
+      "start": 1876.5,
+      "end": 1883.32,
+      "text": "i sam siebie próbuje zmobilizować do tego, żeby wspominać Ozziego z uśmiechem."
+    },
+    {
+      "start": 1884.42,
+      "end": 1894.16,
+      "text": "No ale, wiesz, tak naprawdę, cytując pierwsze słowa tego utworu, czuję się nieszczęśliwy, czuję się tak bardzo smutny,"
+    },
+    {
+      "start": 1894.26,
+      "end": 1902.18,
+      "text": "bo straciłem przyjaciela. Nie wiem, czy najlepszego, ale na pewno ważnego przyjaciela."
+    },
+    {
+      "start": 1903.18,
+      "end": 1907.74,
+      "text": "Jarek Szubrych, bardzo ci, Jarku, dziękuję i do usłyszenia, mam nadzieję, niebawem."
+    },
+    {
+      "start": 2188.64,
+      "end": 2209.16,
+      "text": "Changes, utwór wybrany przez Jareka Szubrychta, no bo utwór piękny, ale też opowiadający historię o stracie, którą na pewno wszyscy w jakimś stopniu dziś odczuwamy, ale tak się umówiliśmy na początku, że dziś Ozzie'ego żegnamy z uśmiechem na ustach."
+    },
+    {
+      "start": 2209.16,
+      "end": 2224.2,
+      "text": "Ozzie, poza tym, że wielokrotnie bardzo zabawny i tak jak też Jarek wspominał, często się wygłupiał, często zabawiał towarzystwo, no to też nierzadko z przekazem do swoich odbiorców występował."
+    },
+    {
+      "start": 2232.12,
+      "end": 2250.36,
+      "text": "Słowa bardzo proste i nawet można byłoby się pokusić o takie stwierdzenie, że w niektórych okolicznościach banalne, ale jak mamy do czynienia z człowiekiem, który tak niecodzienną wówczas pasję zamienił w sposób na życie, no to chyba należałoby mu wierzyć."
+    },
+    {
+      "start": 2250.36,
+      "end": 2253.9,
+      "text": "A z nami w studiu trójki Piotr Metz. Dobry wieczór Piotrze."
+    },
+    {
+      "start": 2254.08,
+      "end": 2267.26,
+      "text": "Dobry wieczór. Ja chciałem nawiązać do Changes przede wszystkim, bo pamiętam, że przez lata nasz dzisiejszy bohater i bardzo się cieszę, że podkreśla, że żegnamy go z uśmiechem, do tego jeszcze pozwolę sobie wrócić."
+    },
+    {
+      "start": 2268.48,
+      "end": 2283.08,
+      "text": "Mówił jaki metal, w ogóle ludzie, to jest wszystko rock. To jest rock. Ci poważni metalowcy, smutni panowie, jak wejdą w swoje zawody, to nie mają prawa nagrać piosenki akustycznej."
+    },
+    {
+      "start": 2283.08,
+      "end": 2289.96,
+      "text": "A ja czasem bym chciał zaśpierać akustycznie, tak jak właśnie Changes. W związku z czym on się upierał, że to jest po prostu rock. On jest rockmanem."
+    },
+    {
+      "start": 2290.7,
+      "end": 2300.6,
+      "text": "Myślę, że miał w tym nie tylko przekornie, ale trochę racji, prawda? Bo dla mnie wielkość Black Sabbath i Oziego polega na tym, co właśnie podkreślaliście."
+    },
+    {
+      "start": 2301.02,
+      "end": 2309.32,
+      "text": "Czyli na dystansie do samego siebie i na poczuciu humoru, a nie robieniu z tego takiej rzeczywiście mszy na smutno."
+    },
+    {
+      "start": 2309.44,
+      "end": 2318.16,
+      "text": "No bo bardzo często takie zadęcie rockowe ociera się trochę o śmieszność, a on to rozbrajał w najprostszy możliwy sposób."
+    },
+    {
+      "start": 2318.16,
+      "end": 2325.48,
+      "text": "Ja nawet nie wiem, czy on nie zasługuje na tytuł faceta o najfajniejszym poczuciu humoru w branży. Tak sobie myślę po latach."
+    },
+    {
+      "start": 2325.8,
+      "end": 2328.16,
+      "text": "I to było też poczucie humoru bardzo..."
+    },
+    {
+      "start": 2329.56,
+      "end": 2337.2,
+      "text": "Znaczy, to widać, że ono po prostu tam jest i nie wymaga od niego wiele, żeby tę bombę właśnie rozbrajać w kółko."
+    },
+    {
+      "start": 2337.82,
+      "end": 2341.8,
+      "text": "Bombę w postaci na przykład właśnie tego rockowego zadęcia, o którym mówisz."
+    },
+    {
+      "start": 2341.8,
+      "end": 2349.52,
+      "text": "Bo wydaje mi się, oczywiście nie znałem Oziego osobiście, więc nie jestem w stanie tego z pełną odpowiedzialnością powiedzieć, ale..."
+    },
+    {
+      "start": 2349.52,
+      "end": 2352.78,
+      "text": "Przerwę ci, ale wszyscy mamy wrażenie, że go znaliśmy, prawda?"
+    },
+    {
+      "start": 2353,
+      "end": 2353.52,
+      "text": "To na pewno."
+    },
+    {
+      "start": 2353.64,
+      "end": 2356.26,
+      "text": "Tak, właśnie przez to przerwałem ci skończ myśli."
+    },
+    {
+      "start": 2356.52,
+      "end": 2360.62,
+      "text": "A czy puenta była taka, że wydaje mi się, że Ozzie raczej nigdy nie udawał?"
+    },
+    {
+      "start": 2361.12,
+      "end": 2373.44,
+      "text": "No właśnie, bo to nie tylko jest kwestia rockowego życia, ale to jest kwestia tego, że w jego przypadku naprawdę nie da się oddzielić życia prywatnego i tego wszystkiego, co się tam działo."
+    },
+    {
+      "start": 2374.06,
+      "end": 2381.4,
+      "text": "No oczywiście jakimś szczytowym punktem w tym wszystkim jest serial dla MTV od kariery, prawda?"
+    },
+    {
+      "start": 2381.4,
+      "end": 2390.58,
+      "text": "To był facet, który jednak nie przebierał się po występie na scenie w jakieś tam inne ciuchy i zachowywał się zupełnie inaczej."
+    },
+    {
+      "start": 2391.12,
+      "end": 2399.26,
+      "text": "To jest taki komiksowy, ikoniczny rockman, ale jak mówię z ogromnym uśmiechem."
+    },
+    {
+      "start": 2399.5,
+      "end": 2408.38,
+      "text": "No Naomi był zawsze takim trochę smutasem poważnym, ale on się koncentrował na rewelacyjnym zresztą graniu na gitarze, a Ozzie robił to o co chodzi."
+    },
+    {
+      "start": 2408.38,
+      "end": 2413.12,
+      "text": "Ja wiem, że zanim się ciągnęła też ta historia z tym odgryzaniem głów i tak dalej, i tak dalej."
+    },
+    {
+      "start": 2413.28,
+      "end": 2414.86,
+      "text": "No ale to też miał być żart przecież."
+    },
+    {
+      "start": 2414.88,
+      "end": 2427.88,
+      "text": "Co mu się przydarzyło, umówmy się, kiedy był natrąbiony tak mocno, że używki po prostu na chwilę odebrały mu umysł, ale to się przełożyło na jakąś etykietkę satanisty i w ogóle nie wiadomo kogo."
+    },
+    {
+      "start": 2428.46,
+      "end": 2435.56,
+      "text": "A on był, zdaje się, w ogóle z tego co wiem, modlił się przed występami, więc on był zupełnie duchowo w kompletnie drugą stronę."
+    },
+    {
+      "start": 2437.14,
+      "end": 2446.82,
+      "text": "Pamiętajmy go właśnie w ten sposób, bo teraz powiem coś, ja nie wiem czy nie odważę się dlatego, że jest późno, co może być kontrowersyjne, ale myślę, że gdzieś w środku masz takie samo poczucie."
+    },
+    {
+      "start": 2449.16,
+      "end": 2459.34,
+      "text": "Ja myślę, że on po tak przepięknym pożegnaniu się, co było jego marzeniem ze światem, ze wszystkimi, po prostu w którymś momencie odpuścił."
+    },
+    {
+      "start": 2459.44,
+      "end": 2473.86,
+      "text": "To znaczy ten organizm i on poczuli, że są spełnieni, że udało się to, co było trudne, ale udało się w sposób niewyobrażalnie wspaniały i po prostu postanowił, że to już."
+    },
+    {
+      "start": 2474.04,
+      "end": 2481.64,
+      "text": "Tak sobie myślę, to bardzo są takie myśli, tak jak mówię, no nie do mówienia głośno, ale jakoś tak to czujemy chyba wszyscy, prawda?"
+    },
+    {
+      "start": 2481.72,
+      "end": 2491.7,
+      "text": "Może zdecydowanie. Od tego też trochę wyszliśmy z Jarkiem, że to była jedna z moich pierwszych myśli, jak dziś okazało się, że Ozziego już nie ma."
+    },
+    {
+      "start": 2492.4,
+      "end": 2497.36,
+      "text": "No to właśnie to, że to właściwie wygląda tak, jakby on sobie to po prostu wymyślił w ten sposób."
+    },
+    {
+      "start": 2498.68,
+      "end": 2514.72,
+      "text": "To piękne pożegnanie, ostatni koncert w swoim mieście dla cały czas bardzo lojalnych i bardzo licznych zresztą też fanów Black Sabbath z najróżniejszych pokoleń."
+    },
+    {
+      "start": 2515.86,
+      "end": 2522.78,
+      "text": "I z udziałem gościnnym wielu przyjaciół, artystów, którzy chowali się na jego muzyce."
+    },
+    {
+      "start": 2522.8,
+      "end": 2526.92,
+      "text": "Teraz są spekulacje o wszystkich tych, którzy nie zostali zaproszeni, dlaczego, tak jak Megada."
+    },
+    {
+      "start": 2528.32,
+      "end": 2533.4,
+      "text": "No tak, no ale a tu wiesz co, tutaj można taką gwiazdkę postawić."
+    },
+    {
+      "start": 2534.12,
+      "end": 2544.84,
+      "text": "O tym też mówił Jarek, że po obejrzeniu gdzieś tam relacji z tego koncertu pomyślał sobie, że no dobra, no to teraz nie chodź i odpocznij chwilę, no i niech będzie ta druga część tego pożegnania."
+    },
+    {
+      "start": 2544.84,
+      "end": 2555.74,
+      "text": "Ale faktycznie pierwszą moją myślą było to, że to wszystko wygląda tak, jakby Ozzy sobie to zaplanował w ten sposób i po prostu jak to wszystko się udało, no to stwierdził, że no dobra, no to tyle ode mnie."
+    },
+    {
+      "start": 2555.82,
+      "end": 2565.86,
+      "text": "Ja myślę, że taki podświadoma reakcja organizmu, który na pewno, on zrobił więcej niż jego stan zdrowia mu na to pozwalał, znacznie więcej."
+    },
+    {
+      "start": 2565.86,
+      "end": 2569.12,
+      "text": "I to zrobił w sposób absolutnie wspaniały."
+    },
+    {
+      "start": 2569.66,
+      "end": 2576.68,
+      "text": "To będzie koncert, który będą wspominać pokolenia potem na pewno, jeden z tych niezwykłych."
+    },
+    {
+      "start": 2577.24,
+      "end": 2579.24,
+      "text": "No i potem, i potem co?"
+    },
+    {
+      "start": 2579.52,
+      "end": 2580.86,
+      "text": "I potem odpoczynek po prostu."
+    },
+    {
+      "start": 2581.84,
+      "end": 2584.04,
+      "text": "Chyba tak to należy postrzegać."
+    },
+    {
+      "start": 2584.28,
+      "end": 2588.36,
+      "text": "I Ozzy by się na pewno o te nasze rozważania nie obraził, jestem przekonany."
+    },
+    {
+      "start": 2588.58,
+      "end": 2593.34,
+      "text": "To tutaj stawiamy przecinek, bo opowieści jeszcze w rękawie mamy przynajmniej kilka."
+    },
+    {
+      "start": 2594.44,
+      "end": 2604.58,
+      "text": "Chciałbym teraz sięgnąć ponownie po jedną z piosenek Ozzy'ego, to też jest dobre słowo, piosenek Ozzy'ego, no bo przecież metalowe są utwory i kompozycje."
+    },
+    {
+      "start": 2605.26,
+      "end": 2611.34,
+      "text": "Ozzy pisał też piosenki rockowe, metalowe, także ballady, czy to na gitarze akustycznej, czy to na pianie."
+    },
+    {
+      "start": 2611.84,
+      "end": 2616,
+      "text": "Teraz Little Dose, czyli coś sprzed kilku ładnych lat, solowo."
+    },
+    {
+      "start": 2933.7,
+      "end": 2939.38,
+      "text": "Little Dolls i Ozzy Osborn, którego dziś do godziny drugiej wspominamy."
+    },
+    {
+      "start": 2940.08,
+      "end": 2949.94,
+      "text": "Przed momentem przypomniałem sobie, że przecież poza tymi głosami, które też pomiędzy piosenkami gdzieś się pojawiają,"
+    },
+    {
+      "start": 2949.94,
+      "end": 2958.72,
+      "text": "czyli głosami Ozzy'ego, głosami członków jego rodziny z różnych nagrań wyjętych, także mogą się pojawić głosy państwa."
+    },
+    {
+      "start": 2959.52,
+      "end": 2969.1,
+      "text": "Kto chce, niechaj pisze, niechaj dzwoni. Można pisać mailowo maciej.jankowski małpa polskieradio.pl lub no właśnie dzwonić 22 i 7 trójek."
+    },
+    {
+      "start": 2969.24,
+      "end": 2976.68,
+      "text": "Gosia Jakubowska jest przy telefonach i bardzo chętnie zbierze od państwa wspomnienia, bo podejrzewam, że jest wśród nas wiele osób,"
+    },
+    {
+      "start": 2976.68,
+      "end": 2987.04,
+      "text": "które na koncertach też były i mają historię do opowiedzenia. Mówiliśmy też przed momentem o pasji, właściwie Ozzy sam nam o pasji powiedział,"
+    },
+    {
+      "start": 2987.72,
+      "end": 2990.88,
+      "text": "no bo wszak pasja jest wspaniałą podróżą."
+    },
+    {
+      "start": 2992.88,
+      "end": 3016.84,
+      "text": "A czym by była ta pasja, a właściwie może co byłoby tym obiektem zainteresowania i później być może tą pasją, gdyby nie właśnie muzyka i życie rockmana?"
+    },
+    {
+      "start": 3016.84,
+      "end": 3029.38,
+      "text": "No Ozzy Osbourne w całej swojej okazałości ponownie."
+    },
+    {
+      "start": 3029.38,
+      "end": 3043.64,
+      "text": "A z nami cały czas w studiu Trójki Piotr Mec, z którym rozmawiamy o Ozim, o tym ostatnim pożegnaniu Black Sabbath sprzed kilku tygodni koncertowym, no ale ty też masz w rękawie kilka koncertowych historii,"
+    },
+    {
+      "start": 3043.72,
+      "end": 3048.48,
+      "text": "czy też historii związanych z Ozim, być może z jakimiś polskimi artystami także?"
+    },
+    {
+      "start": 3048.88,
+      "end": 3068.36,
+      "text": "Jacek Piotr Mec, o tym odcinek o Ozzycie w Spodku i w odróżnieniu od całej reszty Spodka rozpaczałem z jednego powodu. Rozpaczałem z powodu czegoś, co można nazwać niespełnieniem. To jest historia, która nie jest jakąś wielką tajemnicą, bo ona się pojawiła w książce grubej takiej cegle biograficznej Budki Suflera."
+    },
+    {
+      "start": 3068.42,
+      "end": 3084.16,
+      "text": "Ja zostałem kiedyś przez zespół poproszony o zorganizowanie sesji w Stanach Zjednoczonych w Los Angeles. Do tej sesji ostatecznie doszło, ale doszło dopiero po kilku latach opóźnienia. Myśmy polecieli do Los Angeles na takie zwiady i rozpoznanie po raz pierwszy w 1998 roku."
+    },
+    {
+      "start": 3084.16,
+      "end": 3104.06,
+      "text": "I mój tamtejszy znajomy, człowiek, który miał być producentem, takim koordynatorem bardziej tej sesji, człowiek, z którym znałem się dlatego, że robiłem u niego kilka razy dżingle radiowe wcześniej, umówił nam spotkanie z Tomem Panunzio, producentem."
+    },
+    {
+      "start": 3104.06,
+      "end": 3121.76,
+      "text": "To był człowiek, który wtedy w 1997 roku realizował koncertową część takiej składanki podwójnej Black Sabbath, która się nazywa Reunion. Oni się wtedy na chwilę ponownie spotkali i był de facto nadwornym producentem zespołu."
+    },
+    {
+      "start": 3122.62,
+      "end": 3131.54,
+      "text": "Teraz opowiem to tylko hasłowo i proszę mi wierzyć, są na to dowody. To wszystko, co opowiadam nie jest fantasmagorią ani koloryzowaniem, tylko szczerą prawdą."
+    },
+    {
+      "start": 3132.18,
+      "end": 3144.46,
+      "text": "Wyjeżdżaliśmy z Los Angeles z umową, wprawdzie ustną, ale mam też bardzo wczesne jeszcze maile, już były wtedy maile, gdzie to wszystko jest opisane."
+    },
+    {
+      "start": 3144.46,
+      "end": 3160.38,
+      "text": "Tom Panunzio miał być producentem dwóch nagrań, w których Ozzie Osborne zaśpiewa w duecie z Krzysztofem Cugowskim jedną piosenkę Black Sabbath, były już nawet typy, wśród nich paranoid, i jedną piosenkę Budki Suflera, którą mieli dopiero wybrać,"
+    },
+    {
+      "start": 3160.46,
+      "end": 3163.4,
+      "text": "dostali taki boks, który się wówczas ukazał, gdzie były wszystkie płyty."
+    },
+    {
+      "start": 3164.62,
+      "end": 3170.44,
+      "text": "Nie doszło do tego z przyczyn leżących po, że tak powiem, polskiej stronie."
+    },
+    {
+      "start": 3171,
+      "end": 3174.24,
+      "text": "Było bardzo duże opóźnienie terminowe i w momencie, kiedy"
+    },
+    {
+      "start": 3174.24,
+      "end": 3178.1,
+      "text": "byliśmy już, powiem tak w imieniu"
+    },
+    {
+      "start": 3178.1,
+      "end": 3180.22,
+      "text": "wszystkich gotowi polecieć do Stanów,"
+    },
+    {
+      "start": 3180.3,
+      "end": 3182.22,
+      "text": "to Ozzie miał już MTV"
+    },
+    {
+      "start": 3182.22,
+      "end": 3185.82,
+      "text": "i był bardzo zajęty, a w momencie, kiedy rozmawialiśmy,"
+    },
+    {
+      "start": 3186.5,
+      "end": 3188.4,
+      "text": "jak powiedział Panunzio, nudził się."
+    },
+    {
+      "start": 3188.78,
+      "end": 3190.18,
+      "text": "I powiedział, on to chętnie zrobi,"
+    },
+    {
+      "start": 3190.28,
+      "end": 3192.98,
+      "text": "on lubi takie ekscentryczne numery."
+    },
+    {
+      "start": 3194.28,
+      "end": 3195.66,
+      "text": "Mogło być, ale się nie udało."
+    },
+    {
+      "start": 3195.66,
+      "end": 3198.74,
+      "text": "Ale to trochę alternatywna rzeczywistość, co nie?"
+    },
+    {
+      "start": 3199.66,
+      "end": 3201.2,
+      "text": "Takie zderzenie"
+    },
+    {
+      "start": 3201.2,
+      "end": 3203.94,
+      "text": "Osborne i Cugowskiego na żywo."
+    },
+    {
+      "start": 3204.02,
+      "end": 3205.22,
+      "text": "Chciałbym bardzo to usłyszeć."
+    },
+    {
+      "start": 3205.72,
+      "end": 3210.26,
+      "text": "Tak, i myślę, że doświadczenia z późniejszej sesji,"
+    },
+    {
+      "start": 3210.44,
+      "end": 3212.74,
+      "text": "gdzie też nie było najgorzej,"
+    },
+    {
+      "start": 3212.82,
+      "end": 3215.38,
+      "text": "bo był Steve Lukater, Marcus Miller,"
+    },
+    {
+      "start": 3215.58,
+      "end": 3217.42,
+      "text": "a producentem był Greg Filling Gaines."
+    },
+    {
+      "start": 3218.5,
+      "end": 3222.44,
+      "text": "Tak naprawdę, mam nadzieję, że koledzy z zespołu się nie obrażą,"
+    },
+    {
+      "start": 3223.82,
+      "end": 3227.04,
+      "text": "wszyscy głównie tam cmokali nad wokalem Cugowskiego."
+    },
+    {
+      "start": 3228.4,
+      "end": 3231.12,
+      "text": "Filling Gaines go głaskał cały czas po plecach,"
+    },
+    {
+      "start": 3231.24,
+      "end": 3232.24,
+      "text": "mówiąc Gentle Giant."
+    },
+    {
+      "start": 3234.28,
+      "end": 3237.7,
+      "text": "Więc brzmi to trochę surrealistycznie, prawda?"
+    },
+    {
+      "start": 3237.92,
+      "end": 3240.06,
+      "text": "Wygląda to na coś bardzo dziwnego."
+    },
+    {
+      "start": 3240.64,
+      "end": 3242.02,
+      "text": "Ale naprawdę było realne."
+    },
+    {
+      "start": 3242.5,
+      "end": 3245.26,
+      "text": "No i tak samo jak ty jestem wciąż."
+    },
+    {
+      "start": 3246.91,
+      "end": 3249.35,
+      "text": "Teoretycznie przynajmniej bardzo ciekaw, co by z tego weszło."
+    },
+    {
+      "start": 3249.83,
+      "end": 3251.77,
+      "text": "Wiesz co, nie chcę nikomu podsuwać pomysłów,"
+    },
+    {
+      "start": 3251.85,
+      "end": 3253.45,
+      "text": "ale technologia idzie do przodu."
+    },
+    {
+      "start": 3254.01,
+      "end": 3255.01,
+      "text": "Tylko tyle powiem."
+    },
+    {
+      "start": 3255.17,
+      "end": 3259.11,
+      "text": "Pewnie tak, natomiast opowiadam tę historię"
+    },
+    {
+      "start": 3259.11,
+      "end": 3262.51,
+      "text": "nie tylko dlatego, że jest, tak jak powiedziałem,"
+    },
+    {
+      "start": 3262.61,
+      "end": 3264.35,
+      "text": "trochę surrealistyczna, ale też dlatego,"
+    },
+    {
+      "start": 3264.73,
+      "end": 3266.77,
+      "text": "że tam nie było jakby problemu,"
+    },
+    {
+      "start": 3267.45,
+      "end": 3269.53,
+      "text": "że nie wiadomo kto, zespół z Polski i tak dalej."
+    },
+    {
+      "start": 3269.67,
+      "end": 3272.83,
+      "text": "Dostali płyty, posłuchali, ozi, luz, przecież się nudzę."
+    },
+    {
+      "start": 3273.55,
+      "end": 3275.47,
+      "text": "To mówi o facecie trochę."
+    },
+    {
+      "start": 3276.45,
+      "end": 3278.05,
+      "text": "Zresztą to jest szersza myśl,"
+    },
+    {
+      "start": 3278.05,
+      "end": 3280.11,
+      "text": "bo późniejsze spotkanie z Lukaterem,"
+    },
+    {
+      "start": 3280.23,
+      "end": 3282.09,
+      "text": "czy z Markusem Millerem, czy z Schillą"
+    },
+    {
+      "start": 3282.09,
+      "end": 3283.67,
+      "text": "i perkusjalistką od Prince'a"
+    },
+    {
+      "start": 3283.67,
+      "end": 3285.77,
+      "text": "podczas tej sesji, która się już odbyła,"
+    },
+    {
+      "start": 3286.47,
+      "end": 3289.69,
+      "text": "pokazało, że tam nie ma żadnej bariery, przepaści."
+    },
+    {
+      "start": 3289.83,
+      "end": 3293.05,
+      "text": "Tam jest po prostu muzyk i muzyk."
+    },
+    {
+      "start": 3293.65,
+      "end": 3294.11,
+      "text": "I tyle."
+    },
+    {
+      "start": 3294.61,
+      "end": 3295.11,
+      "text": "Otóż to."
+    },
+    {
+      "start": 3295.27,
+      "end": 3299.13,
+      "text": "No i to też bardzo wyraźnie było widać"
+    },
+    {
+      "start": 3299.13,
+      "end": 3302.93,
+      "text": "podczas nagrań."
+    },
+    {
+      "start": 3303.83,
+      "end": 3306.31,
+      "text": "Serialu, o którym już dziś niejednokrotnie wspomnieliśmy,"
+    },
+    {
+      "start": 3306.31,
+      "end": 3309.91,
+      "text": "bo rodzina Ozbornów to była taka historia,"
+    },
+    {
+      "start": 3309.91,
+      "end": 3314.19,
+      "text": "która pozwoliła zajrzeć nam po prostu do domu księcia ciemności."
+    },
+    {
+      "start": 3314.95,
+      "end": 3319.07,
+      "text": "No i pokazała nam, że księże ciemności wcale aż taki mroczny,"
+    },
+    {
+      "start": 3319.15,
+      "end": 3320.91,
+      "text": "nie jest na co dzień i taki straszny."
+    },
+    {
+      "start": 3321.79,
+      "end": 3325.75,
+      "text": "No bo to był właśnie wizerunek medialny, który, myślę, ten serial oczywiście go też rozbił,"
+    },
+    {
+      "start": 3326.29,
+      "end": 3330.87,
+      "text": "ale też Ozzy takimi, no, przed chwilą krótki dialog z dziennikarką."
+    },
+    {
+      "start": 3331.31,
+      "end": 3334.25,
+      "text": "Takie poważne pytanie, co byś robił, gdybyś nie był muzykiem."
+    },
+    {
+      "start": 3334.31,
+      "end": 3335.83,
+      "text": "On to natychmiast rozubraja właśnie."
+    },
+    {
+      "start": 3335.93,
+      "end": 3337.41,
+      "text": "On miał taki stosunek do życia, no."
+    },
+    {
+      "start": 3337.49,
+      "end": 3337.91,
+      "text": "On miał..."
+    },
+    {
+      "start": 3337.91,
+      "end": 3339.51,
+      "text": "Tak, bo był włamywaczem."
+    },
+    {
+      "start": 3339.51,
+      "end": 3343.45,
+      "text": "Tak, a te rzeczy, o których też mówiłeś, te jego wypowiedzi,"
+    },
+    {
+      "start": 3343.55,
+      "end": 3347.27,
+      "text": "w których są najprostsze na świecie takie myśli,"
+    },
+    {
+      "start": 3347.93,
+      "end": 3351.19,
+      "text": "które czasami mogą nawet wyglądać na banalne,"
+    },
+    {
+      "start": 3351.29,
+      "end": 3352.83,
+      "text": "tylko że on nie używa niepotrzebnych słów."
+    },
+    {
+      "start": 3352.93,
+      "end": 3355.59,
+      "text": "On mówi po prostu samo sedno."
+    },
+    {
+      "start": 3355.67,
+      "end": 3357.83,
+      "text": "Nie koloryzuje, nie robi jakichś, nie wiadomo jakich,"
+    },
+    {
+      "start": 3358.23,
+      "end": 3361.19,
+      "text": "cyrków słownych, tylko mówi jak jest."
+    },
+    {
+      "start": 3361.19,
+      "end": 3365.83,
+      "text": "Co, do czego nie zawsze wszyscy są przyzwyczajeni, prawda?"
+    },
+    {
+      "start": 3365.91,
+      "end": 3368.89,
+      "text": "Że można powiedzieć w najprostszych słowach,"
+    },
+    {
+      "start": 3369.27,
+      "end": 3370.11,
+      "text": "bo więcej nie trzeba."
+    },
+    {
+      "start": 3370.93,
+      "end": 3373.31,
+      "text": "Na przykład, że ktoś jest głupi, albo że ktoś jest mądry."
+    },
+    {
+      "start": 3374.23,
+      "end": 3375.51,
+      "text": "Tak, to jest fajny."
+    },
+    {
+      "start": 3375.53,
+      "end": 3378.75,
+      "text": "To jest taki przykład, co jest po prostu tyle."
+    },
+    {
+      "start": 3378.97,
+      "end": 3380.75,
+      "text": "Nie wypada mówić, że ktoś jest głupi,"
+    },
+    {
+      "start": 3381.01,
+      "end": 3382.59,
+      "text": "albo nie wypada mówić, że ktoś jest mądry."
+    },
+    {
+      "start": 3382.59,
+      "end": 3386.61,
+      "text": "Ale czasami to słowo w zasadzie wystarcza, prawda?"
+    },
+    {
+      "start": 3387.13,
+      "end": 3388.25,
+      "text": "Bo więcej nie trzeba."
+    },
+    {
+      "start": 3388.41,
+      "end": 3389.21,
+      "text": "Ozzy był właśnie taki."
+    },
+    {
+      "start": 3389.75,
+      "end": 3391.97,
+      "text": "Ozzy Osborn słowami Piotra Meca,"
+    },
+    {
+      "start": 3392.11,
+      "end": 3394.69,
+      "text": "którego jeszcze sobie zatrzymam tutaj na chwilę,"
+    },
+    {
+      "start": 3395.23,
+      "end": 3397.97,
+      "text": "ale sięgnę po jeden z fragmentów,"
+    },
+    {
+      "start": 3398.41,
+      "end": 3401.03,
+      "text": "które tutaj gorączkowo przygotowywała"
+    },
+    {
+      "start": 3401.03,
+      "end": 3404.31,
+      "text": "przez ostatnie godzinę Gosia Jakubowska,"
+    },
+    {
+      "start": 3404.47,
+      "end": 3409.53,
+      "text": "która buszuje po różnych zakątkach życia Ozzygo Osborna,"
+    },
+    {
+      "start": 3409.61,
+      "end": 3412.33,
+      "text": "różnych nagraniach, które są wszędzie dostępne."
+    },
+    {
+      "start": 3412.33,
+      "end": 3414.83,
+      "text": "No i to jest akurat fragment z serialu,"
+    },
+    {
+      "start": 3414.93,
+      "end": 3415.89,
+      "text": "o którym mówiliśmy."
+    },
+    {
+      "start": 3416.65,
+      "end": 3421.03,
+      "text": "Serialu, który pokazywał, jaki był w istocie Książę Ciemności."
+    },
+    {
+      "start": 3430.21,
+      "end": 3433.03,
+      "text": "Sharon, proszę Cię, no przecież jestem Ozzym Osbornem,"
+    },
+    {
+      "start": 3433.09,
+      "end": 3435.51,
+      "text": "Księciem Ciemności, a Ty puszczasz bańki mydlane."
+    },
+    {
+      "start": 3435.75,
+      "end": 3437.89,
+      "text": "Jak to jest w ogóle możliwe?"
+    },
+    {
+      "start": 3437.89,
+      "end": 3443.11,
+      "text": "To cały dystans Ozzygo Osborna do siebie samego,"
+    },
+    {
+      "start": 3443.17,
+      "end": 3448.61,
+      "text": "do tej postaci, która wykreowana przez lata gdzieś do niego przylgnęła,"
+    },
+    {
+      "start": 3448.67,
+      "end": 3451.45,
+      "text": "no ale bardzo skutecznie, tak jak już to podkreślaliśmy,"
+    },
+    {
+      "start": 3452.25,
+      "end": 3453.35,
+      "text": "ten temat rozbrajał."
+    },
+    {
+      "start": 3453.41,
+      "end": 3458.63,
+      "text": "22 i 7 trójek, Państwo także mogą dzwonić i wypowiadać się na temat Ozzygo,"
+    },
+    {
+      "start": 3458.71,
+      "end": 3461.23,
+      "text": "na temat Black Sabbath, wspominać koncerty."
+    },
+    {
+      "start": 3461.59,
+      "end": 3463.39,
+      "text": "Ktoś do nas się dodzwonił, halo?"
+    },
+    {
+      "start": 3464.23,
+      "end": 3466.03,
+      "text": "Dobry wieczór, albo dzień dobry."
+    },
+    {
+      "start": 3466.39,
+      "end": 3468.65,
+      "text": "Dziękuję Wam za tą audycję z Ozzym."
+    },
+    {
+      "start": 3469.87,
+      "end": 3475.81,
+      "text": "Po prostu pozwoliście przejść w stan uśmiechu z tego, co się stało."
+    },
+    {
+      "start": 3476.63,
+      "end": 3478.85,
+      "text": "Miałem okazję jadeć być na koncercie Ozzygo w Łodzi."
+    },
+    {
+      "start": 3480.19,
+      "end": 3482.13,
+      "text": "Co to teraz będzie z tą muzyką? Powiedz się."
+    },
+    {
+      "start": 3482.89,
+      "end": 3485.63,
+      "text": "Muzyki cały czas jest bardzo dużo Ozzygo."
+    },
+    {
+      "start": 3485.75,
+      "end": 3487.65,
+      "text": "Płyt jest cały szereg, cała szafa."
+    },
+    {
+      "start": 3487.83,
+      "end": 3489.59,
+      "text": "Ale poczucia humoru nam będzie brakowało."
+    },
+    {
+      "start": 3489.69,
+      "end": 3491.27,
+      "text": "Poczucia humoru będzie brakowało."
+    },
+    {
+      "start": 3491.43,
+      "end": 3492.39,
+      "text": "I braku zadęcia."
+    },
+    {
+      "start": 3492.93,
+      "end": 3495.29,
+      "text": "Na szczęście są też te archiwa."
+    },
+    {
+      "start": 3495.79,
+      "end": 3499.51,
+      "text": "Oczywiście chciałoby się słuchać Ozzygo w nieskończoność jego wypowiedzi."
+    },
+    {
+      "start": 3499.97,
+      "end": 3502.41,
+      "text": "Tych nawet najkrótszych, że ktoś jest głupi, a ktoś jest mądry."
+    },
+    {
+      "start": 3502.95,
+      "end": 3504.53,
+      "text": "Tych przede wszystkim właściwie."
+    },
+    {
+      "start": 3504.67,
+      "end": 3505.99,
+      "text": "Tak, bo to jest pewna lekcja życiowa."
+    },
+    {
+      "start": 3505.99,
+      "end": 3511.91,
+      "text": "To jest lekcja, którą od Ozzygo pobieraliśmy przez 76 lat."
+    },
+    {
+      "start": 3512.51,
+      "end": 3518.87,
+      "text": "No a teraz żegnamy Ozzygo, ale bardzo się cieszę, że nasz słuchacz to podkreślił,"
+    },
+    {
+      "start": 3519.09,
+      "end": 3524.29,
+      "text": "że też i u niego na twarzy zagościł uśmiech dzięki tej audycji."
+    },
+    {
+      "start": 3524.39,
+      "end": 3527.55,
+      "text": "Bo trochę taka była misja, taki był pomysł na tę audycję,"
+    },
+    {
+      "start": 3527.69,
+      "end": 3531.77,
+      "text": "żeby właśnie uśmiechać się do tych 76 lat rock'n'rolla,"
+    },
+    {
+      "start": 3531.97,
+      "end": 3533.09,
+      "text": "które nam zafundowało Ozzy."
+    },
+    {
+      "start": 3533.59,
+      "end": 3540.19,
+      "text": "To jest wspaniała rzecz, że on wychował, myślę, w dużej mierze sobie publiczność."
+    },
+    {
+      "start": 3540.61,
+      "end": 3546.25,
+      "text": "Że publiczność Ozzygo jest publicznością dość unikatową."
+    },
+    {
+      "start": 3546.37,
+      "end": 3549.49,
+      "text": "To jest pewien gang, można by było tak powiedzieć."
+    },
+    {
+      "start": 3550.27,
+      "end": 3556.27,
+      "text": "Ludzi, którzy, mam nadzieję, których zaraził też w sensie tym codziennym, życiowym,"
+    },
+    {
+      "start": 3556.69,
+      "end": 3558.83,
+      "text": "właśnie takim podejściem do wszystkiego."
+    },
+    {
+      "start": 3558.91,
+      "end": 3560.09,
+      "text": "Jak trzeba to mówi o pasji?"
+    },
+    {
+      "start": 3560.59,
+      "end": 3567.27,
+      "text": "Piotr Metz dziś w ramach naszych wspominek Ozziego zagościł w Studiu Trójki."
+    },
+    {
+      "start": 3567.35,
+      "end": 3569.19,
+      "text": "Bardzo Ci dziękuję za tę wizytę."
+    },
+    {
+      "start": 3569.27,
+      "end": 3569.55,
+      "text": "Dziękuję."
+    },
+    {
+      "start": 3569.83,
+      "end": 3575.09,
+      "text": "I do zobaczenia w okolicznościach, mam nadzieję, przyjemniejszych nieco, niebawem."
+    },
+    {
+      "start": 3575.11,
+      "end": 3579.09,
+      "text": "Zrobię coś, czego w radiu się nie powinno robić, czyli pokażę Ci coś, czego słuchacze nie widzą."
+    },
+    {
+      "start": 3579.65,
+      "end": 3585.47,
+      "text": "Ale przed chwilą Dorota Busz przysłała mi zdjęcie zwręczenia Ozjemu w Polsce."
+    },
+    {
+      "start": 3585.47,
+      "end": 3590.43,
+      "text": "Jest to Ozzy najprawdziwszy, tak, złotej płyty."
+    },
+    {
+      "start": 3591.83,
+      "end": 3596.77,
+      "text": "Black Sabbath odbierający złotą płytę, no i Ozzy Osbourne na pierwszym planie."
+    },
+    {
+      "start": 3596.85,
+      "end": 3598.47,
+      "text": "Mama, I'm Coming Home."
+    },
+    {
+      "start": 3599.31,
+      "end": 3601.39,
+      "text": "Tego utworu zabraknąć dzisiaj nie mogło."
+    },
+    {
+      "start": 3601.45,
+      "end": 3602.15,
+      "text": "Nie, nie mogło. Dziękuję."
+    },
+    {
+      "start": 3602.65,
+      "end": 3603.03,
+      "text": "Dzięki."
+    },
+    {
+      "start": 3611.03,
+      "end": 3641.01,
+      "text": "Tego utworu zabraknąć dzisiaj nie ma."
+    },
+    {
+      "start": 3641.03,
+      "end": 3644.35,
+      "text": "Tego utworu zabraknąć dzisiaj nie ma."
+    },
+    {
+      "start": 3644.35,
+      "end": 3646.35,
+      "text": "Tego utworu zabraknąć dzisiaj nie ma."
+    },
+    {
+      "start": 3646.35,
+      "end": 3648.13,
+      "text": "Tego utworu zabraknąć dzisiaj nie ma."
+    },
+    {
+      "start": 3665.7,
+      "end": 3669.9,
+      "text": "I could be right, I could be wrong"
+    },
+    {
+      "start": 3669.9,
+      "end": 3673.96,
+      "text": "It hurts so bad, it's been so long"
+    },
+    {
+      "start": 3837.12,
+      "end": 3864.02,
+      "text": "Jeszcze Ozzie pojawi się nieraz na antenie Trójki, także chciałoby się powiedzieć jutro, ale to już właściwie dziś w porannym zapraszamy do Trójki, gdzie Piotr Mec nadal będzie wspominał swoimi słowami, swoimi historiami Ozziego Osborna, tak jak to robił teraz przez ostatnie kilkanaście minut i my jeszcze będziemy przez tę niespełna godzinę z Państwem, mam nadzieję, wspominać Ozziego Osborna."
+    },
+    {
+      "start": 3864.02,
+      "end": 3891.48,
+      "text": "22 i 7 trójek można dzwonić, a przez te ostatnie kilka godzin, przygotowując się do tego dzisiejszego spotkania, trochę niespodziewanego, a trochę, tak jak już powiedzieliśmy, spodziewanego udało nam się, udało się Gosiu Jakubowskiej, która dziś jest cichym bohaterem tej audycji, porozmawiać z wieloma osobami, które wspominają Ozziego Osborna również, między innymi do tego grona zalicza się Macio Moretti."
+    },
+    {
+      "start": 3892.32,
+      "end": 3897.18,
+      "text": "To zawsze było tak, że nawet jak się nie słuchało takiej muzyki, no to wszystko je dzieje, że był taki zespół Black Sabbath."
+    },
+    {
+      "start": 3898.18,
+      "end": 3902.02,
+      "text": "Bezkompromisowy i wizjonerski zespół pre-metalowy, no i właściwie metalowy."
+    },
+    {
+      "start": 3902.14,
+      "end": 3908,
+      "text": "No oni w sumie, można powiedzieć, że oni stworzyli w dużej mierze cały gatunek i do nich się wszyscy odnosili."
+    },
+    {
+      "start": 3908.28,
+      "end": 3915.74,
+      "text": "No na pewno jest to ikona, no i to taka zasłużona ikona, nie jakaś postać wymyślona w pięć minut, tylko to są lata"
+    },
+    {
+      "start": 3915.74,
+      "end": 3921.22,
+      "text": "konsekwentnego, jakiegoś takiego artystycznego działania."
+    },
+    {
+      "start": 3922.04,
+      "end": 3928.4,
+      "text": "Jeden z wielu nurtów, czy tam jakichś strumieni, które się wlewały we mnie i na pewno w jakiś sposób to przetworzyłem."
+    },
+    {
+      "start": 3928.88,
+      "end": 3933.9,
+      "text": "Ciężko wyobrazić sobie w ogóle świat Bezosiego, no po prostu on jakoś tak się wydawało, że zawsze będzie."
+    },
+    {
+      "start": 3934.44,
+      "end": 3937.42,
+      "text": "To jest jedna z tych osób, jedna z moich pierwszych koszulek, które miałem."
+    },
+    {
+      "start": 3937.5,
+      "end": 3940.32,
+      "text": "To była koszulka Black Sabbath, jakoś nie wiem skąd przemycona."
+    },
+    {
+      "start": 3940.86,
+      "end": 3942.62,
+      "text": "To była moja pierwsza super koszulka, no."
+    },
+    {
+      "start": 3942.94,
+      "end": 3945.02,
+      "text": "O, może właśnie o tym porozmawiamy."
+    },
+    {
+      "start": 3945.08,
+      "end": 3946.32,
+      "text": "22 i 7 trójek."
+    },
+    {
+      "start": 3946.42,
+      "end": 3949.52,
+      "text": "Pierwsze koszulki Black Sabbath kupione, no właśnie gdzie?"
+    },
+    {
+      "start": 3949.6,
+      "end": 3950.28,
+      "text": "Na koncercie?"
+    },
+    {
+      "start": 3950.48,
+      "end": 3953.06,
+      "text": "Może gdzieś po starszym bracie odziedziczone?"
+    },
+    {
+      "start": 3953.18,
+      "end": 3953.42,
+      "text": "Kto wie."
+    },
+    {
+      "start": 3954.04,
+      "end": 3956.16,
+      "text": "Zachęcam do dzwonienia, zachęcam do pisania."
+    },
+    {
+      "start": 3956.16,
+      "end": 3959.58,
+      "text": "Także mailowo maciej.jankowski, małpa, polskieradio.pl"
+    },
+    {
+      "start": 3959.58,
+      "end": 3964.48,
+      "text": "A za chwilę Grabek, czyli Michał Grabek-Grabkowski, który był na koncercie,"
+    },
+    {
+      "start": 3964.6,
+      "end": 3969.58,
+      "text": "ostatnim koncercie pożegnalnym, koncercie Black Sabbath, opowie nam o wrażeniach."
+    },
+    {
+      "start": 3970,
+      "end": 3973.62,
+      "text": "No to teraz, skoro o koncertach, no to właśnie w koncertowej wersji utwór,"
+    },
+    {
+      "start": 3973.7,
+      "end": 3975.56,
+      "text": "na który chyba wszyscy czekamy dziś."
+    },
+    {
+      "start": 3975.56,
+      "end": 3977.18,
+      "text": "Aaaa!"
+    },
+    {
+      "start": 4305.89,
+      "end": 4310.97,
+      "text": "Crazy Train, czyli utwór, który pojawić się dziś absolutnie musiał."
+    },
+    {
+      "start": 4311.07,
+      "end": 4315.99,
+      "text": "Jeden z wielu, które musiały się pojawić, choć tak naprawdę chciałoby się zagrać całą dyskografię."
+    },
+    {
+      "start": 4316.07,
+      "end": 4320.85,
+      "text": "Z jego całą dyskografię Black Sabbath i wszystkie utwory, w których maczał palca."
+    },
+    {
+      "start": 4320.99,
+      "end": 4327.85,
+      "text": "Tego było naprawdę sporo, nie starczyłoby nam absolutnie czasu, ale będziemy mieli jeszcze okazję, żeby do tego wrócić."
+    },
+    {
+      "start": 4327.85,
+      "end": 4333.07,
+      "text": "To akurat nagranie pochodzące z płyty z 2002 roku."
+    },
+    {
+      "start": 4333.17,
+      "end": 4338.31,
+      "text": "Jeden z koncertów, akurat w Tokio zarejestrowany materiał."
+    },
+    {
+      "start": 4338.65,
+      "end": 4345.21,
+      "text": "I gitara trudna do pomylenia z jakąkolwiek inną, czyli te pincze piszczące, takie wysokie dźwięki."
+    },
+    {
+      "start": 4345.27,
+      "end": 4349.51,
+      "text": "To oczywiście Zach Wilde, czyli wieloletni muzyczny partner Ozziego."
+    },
+    {
+      "start": 4349.59,
+      "end": 4354.55,
+      "text": "Tych gitarzystów przewijało się przynajmniej kilku na przestrzeni lat w składach Ozziego."
+    },
+    {
+      "start": 4354.55,
+      "end": 4360.25,
+      "text": "Zach Wilde, jeden z tych najbardziej wyrazistych przez lata."
+    },
+    {
+      "start": 4360.69,
+      "end": 4363.01,
+      "text": "No i także w ostatnim składzie Ozziego obecny."
+    },
+    {
+      "start": 4363.17,
+      "end": 4367.35,
+      "text": "A z nami już Michał Grabek-Grabkowski. Halo, halo, dobry wieczór."
+    },
+    {
+      "start": 4368.35,
+      "end": 4375.09,
+      "text": "Witam Ciebie Maćku i dobry wieczór wszystkim tym, którzy w tym ważnym dla rock'n'rolla dniu"
+    },
+    {
+      "start": 4375.09,
+      "end": 4378.73,
+      "text": "mają ochotę ten wieczór i tą noc spędzić z trójką. Kłaniam się."
+    },
+    {
+      "start": 4379.09,
+      "end": 4382.25,
+      "text": "Z trójką i z uśmiechem mam nadzieję, no bo tak się umówiliśmy już na początku,"
+    },
+    {
+      "start": 4382.31,
+      "end": 4389.29,
+      "text": "że z uśmiechem wspominamy księcia ciemności, który w istocie był człowiekiem pełnym radości,"
+    },
+    {
+      "start": 4389.81,
+      "end": 4394.67,
+      "text": "pełnym miłości do otaczającego świata, do muzyki, do innych artystów,"
+    },
+    {
+      "start": 4394.87,
+      "end": 4399.49,
+      "text": "których jak jeszcze usłyszymy od jego żony Sharon Osbourne,"
+    },
+    {
+      "start": 4400.49,
+      "end": 4404.87,
+      "text": "cały czas darzył wielkim szacunkiem i miłością właśnie,"
+    },
+    {
+      "start": 4404.99,
+      "end": 4407.17,
+      "text": "no bo od tego wszystko się zaczęło."
+    },
+    {
+      "start": 4407.67,
+      "end": 4410.21,
+      "text": "Ale spotkaliśmy się tutaj dziś z wielu powodów,"
+    },
+    {
+      "start": 4410.31,
+      "end": 4413.21,
+      "text": "oczywiście no przede wszystkim, żeby powspominać Ozziego,"
+    },
+    {
+      "start": 4413.31,
+      "end": 4416.23,
+      "text": "ale my dwaj, my konkretnie dwaj spotkaliśmy się dlatego,"
+    },
+    {
+      "start": 4416.39,
+      "end": 4419.37,
+      "text": "żeby powspominać Twoje doświadczenia z ostatnich tygodni."
+    },
+    {
+      "start": 4420.17,
+      "end": 4424.99,
+      "text": "No a chodzi oczywiście o koncert, o którym już dziś niejednokrotnie wspominaliśmy,"
+    },
+    {
+      "start": 4425.07,
+      "end": 4429.17,
+      "text": "czyli ten ostatni pożegnalny koncert Black Sabbath w Birmingham."
+    },
+    {
+      "start": 4430.37,
+      "end": 4434.39,
+      "text": "No właśnie ja jeszcze do, właściwie do wczoraj, jeszcze do dzisiaj,"
+    },
+    {
+      "start": 4434.81,
+      "end": 4438.93,
+      "text": "myśląc o tym koncercie, czy rozmawiając z kimkolwiek na jego temat,"
+    },
+    {
+      "start": 4440.07,
+      "end": 4443.05,
+      "text": "mogłem używać i pewnie używałem takiego sformułowania,"
+    },
+    {
+      "start": 4443.25,
+      "end": 4447.57,
+      "text": "że miałem przyjemność być na tym wydarzeniu,"
+    },
+    {
+      "start": 4447.57,
+      "end": 4451.33,
+      "text": "ale ta wiadomość, która dzisiaj do nas dotarła,"
+    },
+    {
+      "start": 4451.51,
+      "end": 4454.05,
+      "text": "troszeczkę zmienia postać rzeczy i myślę sobie,"
+    },
+    {
+      "start": 4454.33,
+      "end": 4458.51,
+      "text": "że ja miałem zaszczyt, ja miałem wielki zaszczyt,"
+    },
+    {
+      "start": 4458.67,
+      "end": 4463.05,
+      "text": "teraz tak użyję takich słów, być na tym koncercie,"
+    },
+    {
+      "start": 4463.71,
+      "end": 4467.79,
+      "text": "bo to był zaszczyt, to było coś zjawiskowego."
+    },
+    {
+      "start": 4470.37,
+      "end": 4472.63,
+      "text": "Czasami brakuje mi słów, żeby opisać to,"
+    },
+    {
+      "start": 4472.63,
+      "end": 4476.23,
+      "text": "co wydarzyło się w Birmingham dokładnie 5 lipca."
+    },
+    {
+      "start": 4476.67,
+      "end": 4480.85,
+      "text": "Wszyscy dobrze wiemy, że zjechało się na stadion Aston Villa"
+    },
+    {
+      "start": 4480.85,
+      "end": 4484.85,
+      "text": "półmetalowego świata, półrokowego świata."
+    },
+    {
+      "start": 4485.49,
+      "end": 4488.81,
+      "text": "Byli to wszyscy bliscy, znajomi, przyjaciele"
+    },
+    {
+      "start": 4488.81,
+      "end": 4490.69,
+      "text": "od jego zborczej zespołu Black Sabbath."
+    },
+    {
+      "start": 4492.13,
+      "end": 4494.85,
+      "text": "Wielokrotnie ze sceny padały sformułowania,"
+    },
+    {
+      "start": 4495.03,
+      "end": 4496.73,
+      "text": "że gdyby nie Black Sabbath,"
+    },
+    {
+      "start": 4496.97,
+      "end": 4498.51,
+      "text": "to nas by tutaj nie było,"
+    },
+    {
+      "start": 4499.19,
+      "end": 4501.37,
+      "text": "że Black Sabbath to nasza wielka inspiracja."
+    },
+    {
+      "start": 4501.37,
+      "end": 4504.17,
+      "text": "Nie będę opowiadał o występach Pantery,"
+    },
+    {
+      "start": 4504.41,
+      "end": 4507.67,
+      "text": "zespołu Tool, Metallica, Slayer czy Guns N' Roses,"
+    },
+    {
+      "start": 4507.83,
+      "end": 4512.57,
+      "text": "bo wiadomo, że to były wydarzenia naprawdę wyjątkowe,"
+    },
+    {
+      "start": 4513.15,
+      "end": 4516.99,
+      "text": "ale wszystko to zmierzało do tego wieczornego show,"
+    },
+    {
+      "start": 4517.09,
+      "end": 4519.11,
+      "text": "podzielonego na dwie części."
+    },
+    {
+      "start": 4520.05,
+      "end": 4521.55,
+      "text": "I o tym pewnie też słuchacze wiedzą,"
+    },
+    {
+      "start": 4521.55,
+      "end": 4523.37,
+      "text": "nie tylko z tej audycji,"
+    },
+    {
+      "start": 4523.47,
+      "end": 4524.89,
+      "text": "ale z tego, co można było obejrzeć,"
+    },
+    {
+      "start": 4525.39,
+      "end": 4527.05,
+      "text": "zobaczyć i gdzieś przeczytać,"
+    },
+    {
+      "start": 4527.79,
+      "end": 4529.77,
+      "text": "bo po ostatnim występie"
+    },
+    {
+      "start": 4529.77,
+      "end": 4531.59,
+      "text": "pojawił się na scenie on."
+    },
+    {
+      "start": 4532.15,
+      "end": 4534.17,
+      "text": "Pojawił się na scenie Książe Ciemności."
+    },
+    {
+      "start": 4535.69,
+      "end": 4536.97,
+      "text": "To z jednej strony był widok"
+    },
+    {
+      "start": 4536.97,
+      "end": 4538.49,
+      "text": "bardzo wzruszający,"
+    },
+    {
+      "start": 4538.93,
+      "end": 4539.95,
+      "text": "ale z drugiej strony"
+    },
+    {
+      "start": 4539.95,
+      "end": 4542.31,
+      "text": "to był widok smutny."
+    },
+    {
+      "start": 4542.43,
+      "end": 4545.67,
+      "text": "To był widok schorowanego niestety człowieka,"
+    },
+    {
+      "start": 4545.91,
+      "end": 4548.61,
+      "text": "który już tylko siedzi"
+    },
+    {
+      "start": 4548.61,
+      "end": 4552.61,
+      "text": "na pięknie przygotowanym na tę okoliczność tronie,"
+    },
+    {
+      "start": 4553.33,
+      "end": 4557.71,
+      "text": "który widać, że jest bardzo rozrywany"
+    },
+    {
+      "start": 4557.71,
+      "end": 4558.71,
+      "text": "przez emocje,"
+    },
+    {
+      "start": 4558.91,
+      "end": 4561.07,
+      "text": "które towarzyszyły mu podczas tego wieczoru,"
+    },
+    {
+      "start": 4561.07,
+      "end": 4564.15,
+      "text": "bo Ozzie Osborne nie krył wzruszenia."
+    },
+    {
+      "start": 4564.49,
+      "end": 4565.59,
+      "text": "Nie krył wzruszenia,"
+    },
+    {
+      "start": 4565.85,
+      "end": 4569.03,
+      "text": "bo widział, jak żegna go cały stadion,"
+    },
+    {
+      "start": 4569.21,
+      "end": 4572.51,
+      "text": "jak żegna go plejada muzyków z całego świata."
+    },
+    {
+      "start": 4573.15,
+      "end": 4574.21,
+      "text": "Nie krył tego wzruszenia,"
+    },
+    {
+      "start": 4574.39,
+      "end": 4575.69,
+      "text": "ale z drugiej strony"
+    },
+    {
+      "start": 4575.69,
+      "end": 4577.13,
+      "text": "mimo swojego wieku,"
+    },
+    {
+      "start": 4577.27,
+      "end": 4578.91,
+      "text": "mimo choroby, z którą walczył,"
+    },
+    {
+      "start": 4579.25,
+      "end": 4580.85,
+      "text": "nie był pozbawiony tych swoich"
+    },
+    {
+      "start": 4580.85,
+      "end": 4583.25,
+      "text": "scenicznych, diabelskich manier,"
+    },
+    {
+      "start": 4583.43,
+      "end": 4586.79,
+      "text": "którymi przecież darzył swoich fanów"
+    },
+    {
+      "start": 4586.79,
+      "end": 4588.51,
+      "text": "na koncertach przez te wszystkie lata."
+    },
+    {
+      "start": 4589.23,
+      "end": 4591.37,
+      "text": "O tym, że to były dwa krótkie sety,"
+    },
+    {
+      "start": 4591.43,
+      "end": 4593.49,
+      "text": "mówię tutaj o występie jego solo"
+    },
+    {
+      "start": 4593.49,
+      "end": 4595.03,
+      "text": "i o występie Black Sabbath,"
+    },
+    {
+      "start": 4595.51,
+      "end": 4596.17,
+      "text": "wszyscy wiemy."
+    },
+    {
+      "start": 4596.53,
+      "end": 4598.09,
+      "text": "To było szczególne widowisko,"
+    },
+    {
+      "start": 4598.17,
+      "end": 4599.49,
+      "text": "to był szczególny widok."
+    },
+    {
+      "start": 4599.69,
+      "end": 4601.95,
+      "text": "Ja, pisząc w internecie"
+    },
+    {
+      "start": 4601.95,
+      "end": 4603.43,
+      "text": "taki pamiętnik muzyczny"
+    },
+    {
+      "start": 4603.43,
+      "end": 4604.99,
+      "text": "i opisując to wydarzenie,"
+    },
+    {
+      "start": 4605.57,
+      "end": 4607.23,
+      "text": "użyłem takiego sformułowania"
+    },
+    {
+      "start": 4607.23,
+      "end": 4609.79,
+      "text": "w przypadku opisywania chyba"
+    },
+    {
+      "start": 4609.79,
+      "end": 4611.47,
+      "text": "Paranoi czy Iron Man,"
+    },
+    {
+      "start": 4611.61,
+      "end": 4614.51,
+      "text": "że i wtedy rozstąpiło się niebo,"
+    },
+    {
+      "start": 4614.99,
+      "end": 4617.01,
+      "text": "bo nie wiem jak reszta,"
+    },
+    {
+      "start": 4617.19,
+      "end": 4619.47,
+      "text": "ale mnie się tak to wydawało,"
+    },
+    {
+      "start": 4619.59,
+      "end": 4621.47,
+      "text": "że kiedy zabrzmiały pierwsze riffy"
+    },
+    {
+      "start": 4621.47,
+      "end": 4622.15,
+      "text": "Iron Man,"
+    },
+    {
+      "start": 4622.61,
+      "end": 4624.53,
+      "text": "to wtedy nastąpiła jakaś magia."
+    },
+    {
+      "start": 4624.71,
+      "end": 4626.37,
+      "text": "Dzisiaj patrząc z perspektywy"
+    },
+    {
+      "start": 4626.37,
+      "end": 4628.87,
+      "text": "tego, co się stało kilka godzin temu,"
+    },
+    {
+      "start": 4630.07,
+      "end": 4631.89,
+      "text": "to rozstąpione niebo"
+    },
+    {
+      "start": 4631.89,
+      "end": 4634.31,
+      "text": "myślę, że jest bardziej wymowne"
+    },
+    {
+      "start": 4634.31,
+      "end": 4636.85,
+      "text": "i nabiera troszeczkę innego znaczenia."
+    },
+    {
+      "start": 4637.17,
+      "end": 4638.47,
+      "text": "To było niezwykłe wydarzenie,"
+    },
+    {
+      "start": 4638.63,
+      "end": 4640.29,
+      "text": "to był fakt,"
+    },
+    {
+      "start": 4640.73,
+      "end": 4642.11,
+      "text": "to była świadomość."
+    },
+    {
+      "start": 4642.23,
+      "end": 4645.47,
+      "text": "Przepraszam, że raz widzimy"
+    },
+    {
+      "start": 4645.47,
+      "end": 4647.57,
+      "text": "i słyszymy po raz ostatni"
+    },
+    {
+      "start": 4647.57,
+      "end": 4649.39,
+      "text": "zespół, który się nazywa Black Sabbath,"
+    },
+    {
+      "start": 4649.71,
+      "end": 4650.53,
+      "text": "zespół, bez którego"
+    },
+    {
+      "start": 4650.53,
+      "end": 4652.37,
+      "text": "nie byłoby naprawdę wiele,"
+    },
+    {
+      "start": 4652.99,
+      "end": 4655.05,
+      "text": "ale to była też taka świadomość,"
+    },
+    {
+      "start": 4655.55,
+      "end": 4658.05,
+      "text": "że coś wielkiego w tym momencie się kończy,"
+    },
+    {
+      "start": 4658.29,
+      "end": 4661.21,
+      "text": "że zamykamy pewien bardzo ważny rozdział"
+    },
+    {
+      "start": 4661.21,
+      "end": 4663.35,
+      "text": "w każdej encyklopedii muzyki rockowej,"
+    },
+    {
+      "start": 4663.85,
+      "end": 4667.91,
+      "text": "ale nie wiem, czy wtedy myśleliśmy o tym,"
+    },
+    {
+      "start": 4667.91,
+      "end": 4670.79,
+      "text": "że kończy się też inny rozdział,"
+    },
+    {
+      "start": 4670.97,
+      "end": 4672.03,
+      "text": "który skończył się dzisiaj."
+    },
+    {
+      "start": 4672.45,
+      "end": 4675.45,
+      "text": "To był niezwykły koncert"
+    },
+    {
+      "start": 4675.45,
+      "end": 4687.87,
+      "text": "To była wielka moc, która wpłynęła ze sceny. Dzisiaj ciężko mi się o tym mówi, ale tak jak powiedziałem, wydaje mi się, że miałem wielki zaszczyt, bo to był zaszczyt zobaczyć Ozziego i zespół Black Sabbath 5 lipca w Wieninie."
+    },
+    {
+      "start": 4688.61,
+      "end": 4717.45,
+      "text": "Michał Grabek-Grabkowski o koncercie, który 5 lipca, no właśnie tak jak wspomniałeś, odbył wielkie pożegnanie, wielka ceremonia będąca takim ukoronowaniem historii, którą przez dekady kształtował zespół Black Sabbath, kształtował Ozzie Osborne jako jeden z tych najbardziej podstawowych, mówię oczywiście podstawowych w kontekście takim, że takich oczywistych artystów, których po prostu trzeba znać,"
+    },
+    {
+      "start": 4717.45,
+      "end": 4732.35,
+      "text": "jeżeli chce się coś więcej z muzyki wyciągnąć. Bardzo Ci dziękuję za te opowieści. Liczę na to, że jeszcze nieraz będzie okazja, żeby o tym koncercie porozmawiać, bo podejrzewam, że wspomnień z niego wyciągnąłeś wiele."
+    },
+    {
+      "start": 4733.39,
+      "end": 4746.21,
+      "text": "Bardzo chętnie, tak. Wspomnień z niego mam bez liku i też proszę mi wierzyć, że dzisiaj ciężko mi się opowiada o tym koncercie, ciężej niż opowiadało mi się dwa, trzy czy trzy dzień temu,"
+    },
+    {
+      "start": 4746.29,
+      "end": 4763.19,
+      "text": "bo teraz zupełnie inne uczucia towarzyszą, myślę, że nie tylko mi oczywiście, ale wszystkim tym, którzy ten wieczór świętowali z wielką legendą, z legendą przez Wielkie L, z Ozziem i z zespołem Black Sabbath."
+    },
+    {
+      "start": 4763.29,
+      "end": 4775.73,
+      "text": "Michał Grabek-Grabkowski dziś w audycji poświęconej Ozziemu Osbornowi, którego wspominać będziemy jeszcze do godziny drugiej, najróżniejszymi nagraniami. Bardzo Ci dziękuję za tę wizytę i rozmowę."
+    },
+    {
+      "start": 4776.53,
+      "end": 4777.87,
+      "text": "Dziękuję bardzo, do usłyszenia."
+    },
+    {
+      "start": 4778.49,
+      "end": 4788.57,
+      "text": "Ja przeglądając media społecznościowe, kiedy przygotowywałem się do tego spotkania dziś, spotkałem się z kilkoma, przynajmniej komentarzami, proszącymi o to nagranie. Ciekawe dlaczego."
+    },
+    {
+      "start": 4788.57,
+      "end": 4790.65,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 5068.92,
+      "end": 5086.74,
+      "text": "Muszę przyznać, że cieszyłem się jak zobaczyłem komentarz odnoszący się do tego właśnie nagrania Hellraiser, czyli Ozzy Osbourne tutaj na wokalu, ale w tworzeniu tego utworu brali udział także inni artyści, m.in. Lemmy Kilmister już dziś wspominany."
+    },
+    {
+      "start": 5086.74,
+      "end": 5097.44,
+      "text": "No i obiecuję, że jeszcze połączenie tych dwóch wyjątkowych głosów rock'n'rollowych, dwóch osób, które były rock'n'rollem na pewno się pojawi."
+    },
+    {
+      "start": 5097.72,
+      "end": 5106.74,
+      "text": "A komentarz, o którym mówię pojawił się bodajże na Facebooku Trójki, bo tam też przecież można dzielić się swoimi wspomnieniami związanymi z Ozzym."
+    },
+    {
+      "start": 5106.74,
+      "end": 5118.94,
+      "text": "Widziałem też zdjęcia z koncertów, mamy post poświęcony tej audycji, poświęcony Ozzymu zarówno na Facebooku jak i na Instagramie Trójki, ale można też pisać mailowo maciej.jenkowski małpa.polskieradio.pl"
+    },
+    {
+      "start": 5118.94,
+      "end": 5129.96,
+      "text": "Można dzwonić 22 i 7 trójek, jesteśmy dostępni. Gosia Jakubowska czuwa i na pewno bardzo chętnie odbierze od Państwa telefon i wysłucha wspomnień,"
+    },
+    {
+      "start": 5129.96,
+      "end": 5152.42,
+      "text": "Wspomnień czy też być może refleksji na temat Black Sabbath, na temat Ozziego, nieodżałowanego księcia ciemności, którego wspominamy dziś z wielkim uśmiechem na ustach, bo chyba tak już ostatecznie pomijając wszystko to, o czym już dziś mówiliśmy niejednokrotnie, on by sobie tego po prostu najzwyczajniej w świecie życzył."
+    },
+    {
+      "start": 5152.62,
+      "end": 5176.46,
+      "text": "Żebyśmy właśnie z uśmiechem na ustach mówili o nim, o jego poczuciu humoru, o jego muzyce, no i o tych chwilach bardzo beztroskich, wielu chwilach, których nam dostarczał, wpuszczając nas do swojego życia za pośrednictwem, no między innymi serialu, o którym też już dziś wspomnieliśmy, no i do tego serialu chciałbym jeszcze na moment dźwiękowo powrócić."
+    },
+    {
+      "start": 5176.46,
+      "end": 5204.66,
+      "text": "Wiem, że dzisiaj użyłem już sformułowania Ozzie Osborne w całej okazałości kilka razy, ale no nic innego nie przychodzi do głowy jak właśnie to Ozzie Osborne w całej okazałości mówiące o tym, że to co sprawiło,"
+    },
+    {
+      "start": 5204.66,
+      "end": 5212.64,
+      "text": "że zakochał się w Sharon Osborne, to właśnie jej śmiech, no i wszystko spuentowane tym niepowtarzalnym właśnie śmiechem Sharon Osborne,"
+    },
+    {
+      "start": 5213,
+      "end": 5221.82,
+      "text": "która swoją drogą też mówiąc o Ozzie niejednokrotnie zaznaczała, co takiego sprawiło, że i ona pokochała jego."
+    },
+    {
+      "start": 5221.82,
+      "end": 5231.82,
+      "text": "Zadnokrotnie zaznaczał się w tym, że to co się dzieje, że to co się dzieje, niejednokrotnie zaznaczał się w tym, że to co się dzieje, niejednokrotnie zaznaczał się w tym, że to co się dzieje."
+    },
+    {
+      "start": 5231.82,
+      "end": 5245.82,
+      "text": "Zadnokrotnie zaznaczał się w tym, że to co się dzieje, niejednokrotnie zaznaczał się w tym, że to co się dzieje, niejednokrotnie zaznaczał się w tym, że to co się dzieje."
+    },
+    {
+      "start": 5245.82,
+      "end": 5253.74,
+      "text": "On o śmiechu, ona o uśmiechu."
+    },
+    {
+      "start": 5253.74,
+      "end": 5263.58,
+      "text": "Sharon Osborne o Ozziem i Ozzie wcześniej, o Sharon Osborne, dziś jeszcze myślę, że kilka takich fragmentów przed godziną drugą pojawi się na antenie trójki."
+    },
+    {
+      "start": 5263.66,
+      "end": 5266.74,
+      "text": "22 i 7 trójek, ten telefon do Państwa dyspozycji."
+    },
+    {
+      "start": 5267.66,
+      "end": 5275.68,
+      "text": "Wszyscy go mają za takiego właśnie księcia ciemności, a on był takim pierwcą życia moim zdaniem i te wszystkie koncerty,"
+    },
+    {
+      "start": 5275.76,
+      "end": 5290.04,
+      "text": "na których byłem, namawianie do tego, żeby klatkać w ręce, żeby się bawić po prostu i to było jakby takie najważniejsze, a nie to, że on miał podwalowane oczy i szalony wzrok na koncertach."
+    },
+    {
+      "start": 5290.6,
+      "end": 5293.02,
+      "text": "Dobra zabawa. Chodziło o to, żeby była..."
+    },
+    {
+      "start": 5293.02,
+      "end": 5304.5,
+      "text": "Bardzo zazdroszczę tych wszystkich koncertów, na których Państwo byli, bo no niestety to jest jedno z moich wielkich, niespełnionych marzeń koncertowych, żeby Black Sabbath czy też Ozzie go zobaczyć na żywo."
+    },
+    {
+      "start": 5304.5,
+      "end": 5312.38,
+      "text": "Bardzo dziękuję, że Państwo dzwonią. Przypominam, 22 i 7 trójek można do godziny drugiej. Wspólnie z nami Ozzie go wspominać."
+    },
+    {
+      "start": 5313.22,
+      "end": 5319,
+      "text": "Wie Pani, to dla mnie najważniejszy chyba taki pionierski zespół dla gatunku heavy metalowego, tak?"
+    },
+    {
+      "start": 5319.28,
+      "end": 5319.78,
+      "text": "Black Sabbath."
+    },
+    {
+      "start": 5320.5,
+      "end": 5329.84,
+      "text": "Ozzie w zasadzie pierwszy metalowiec na świecie. Miał wpływ na wiele kapel, na całej zasadzie gatunek i podgatunki muzyki metalowej, muzyki ciężkiej."
+    },
+    {
+      "start": 5329.96,
+      "end": 5334.24,
+      "text": "Podobnie jak Sex Pistols miało taki sam wpływ na muzykę punkową."
+    },
+    {
+      "start": 5335.24,
+      "end": 5348.12,
+      "text": "I w zasadzie tyle. Wielka szkoda na pewno, chociaż tak jak tutaj było wcześniej powiedziane, wydaje mi się, że akurat tego człowieka można wspominać bardzo z uśmiechem i tak optymistycznie."
+    },
+    {
+      "start": 5348.84,
+      "end": 5349.62,
+      "text": "Super wokalista."
+    },
+    {
+      "start": 5350.54,
+      "end": 5351.58,
+      "text": "Dziękuję. Pozdrawiam."
+    },
+    {
+      "start": 5352.58,
+      "end": 5364.1,
+      "text": "A nasz słuchacz powiedział, wie Pani co, dlatego, że przecież przy telefonach czuwająca nad wszystkim cicha bohaterka tej audycji poświęconej Ozziemu Ozbornawi, czyli Gosia Jakubowska, która odbiera Państwa telefony."
+    },
+    {
+      "start": 5364.1,
+      "end": 5370.1,
+      "text": "22 i 7 trójek, raz jeszcze przypomnę nasz numer telefonu, a to jedna z tych współprac Ozziego wyjątkowych."
+    },
+    {
+      "start": 5651.27,
+      "end": 5668.99,
+      "text": "For heaven's sake, 2000, czyli Ozzy Osborne oczywiście, bo jego zabraknąć tutaj nie mogło, to Naomi, także gitarowo, no i Wu-Tang Clan, czyli to połączenie z kategorii wyjątkowych, których też w swoim katalogu Ozzy ma całkiem sporo."
+    },
+    {
+      "start": 5668.99,
+      "end": 5687.37,
+      "text": "Wspominamy go dziś bardzo różnymi głosami także państwa, 22 i 7 trójek. Gosia Jakubowska spotkała się z kilkoma osobami, które opowiedziały jej o swoich wrażeniach i wspomnieniach dotyczących Ozzy'ego. Był u nas już między innymi z takich osób właśnie, Macio Moretti, a teraz pojawia się Łukasz Orbitowski."
+    },
+    {
+      "start": 5687.37,
+      "end": 5714.53,
+      "text": "Wczesne lata 90. i odsłuchanie jedynki Black Sabbath na jakimś absolutnie tragicznym sprzęcie i gigantyczne wrażenie, jakie to zrobiło. Zaczęli Heavy Metal, ale ja nie zacząłem słuchać Heavy Metalu od Black Sabbath. Doszedłem do tego po slayerze, po Iron Maiden, a mimo to prostota tej muzyki i upiorny, przesycony emocjami wokal Ozzy'ego robił niesamowite wrażenie."
+    },
+    {
+      "start": 5714.53,
+      "end": 5719.11,
+      "text": "A jak myślimy Ozzy Osbourne, to jaki obraz zostaje w głowie?"
+    },
+    {
+      "start": 5719.87,
+      "end": 5740.23,
+      "text": "Doskonały przykład człowieka, który patrząc trochę na zimno, odkładając ten walor emocjonalny, który wymyślił się przynajmniej trzy razy, ponieważ razem z Black Sabbath wynalezi coś takiego jak Heavy Metal. Black Sabbath zbudowało to, od czego wyruszyliśmy w tę Heavy Metalową podróż, która trwa do dziś."
+    },
+    {
+      "start": 5740.23,
+      "end": 5763.73,
+      "text": "Ale należy też pamiętać o tym, że w latach osiemdziesiątych on się błyskawicznie odnalazł w komercyjnych brzmieniach, jako jeden z pierwszych na włosach miał tapir, a potem jeszcze Sharon Ozbourne, która uratowała mu karierę i przypuszczalnie przedłużyła życie, z pomocą żony wymyślił coś takiego jak rodzinny reality show."
+    },
+    {
+      "start": 5763.73,
+      "end": 5780.41,
+      "text": "Więc mówimy o człowieku, który nie tylko wymyślił Heavy Metal, ale odnalazł się w czasach, kiedy wieszczono mu zmierzch i jeszcze odnalazł się w telewizji. W związku z tym mamy do czynienia z osobą niż słuchanie ciekawą i wielowymiarową."
+    },
+    {
+      "start": 5781.21,
+      "end": 5802.79,
+      "text": "Wyjątkowość i wielowymiarowość właśnie, bo to też bardzo dobre słowo. Oz jego zborna słowami Łukasza Orbitowskiego. Bardzo dziękuję za ten głos. Przypominam, że jesteśmy z Państwem do godziny drugiej i wspólnie wspominamy Księcia Ciemności najróżniejszymi utworami z jego katalogu. To jest kolejna współpraca. Tym razem Infectious Grooves go zaprosili."
+    },
+    {
+      "start": 5839.27,
+      "end": 5869.25,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5869.27,
+      "end": 5884.13,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5912.64,
+      "end": 5927.08,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5951.72,
+      "end": 5980.2,
+      "text": "Wielokrotnie padł tytuł tego nagrania, ale raz jeszcze powtórzę"
+    },
+    {
+      "start": 5980.2,
+      "end": 5986.56,
+      "text": "czyli Infectious Grooves i Ozzy Osbourne, tutaj m.in. Robert Trujillo, też bardzo ciekawy wątek."
+    },
+    {
+      "start": 5987.06,
+      "end": 5991.98,
+      "text": "On z Ozzym przeciął się artystycznie niejednokrotnie, a to obecny basista Metalliki."
+    },
+    {
+      "start": 5992.18,
+      "end": 5994.8,
+      "text": "22 i 7 trójek, można do nas dzwonić."
+    },
+    {
+      "start": 5995.68,
+      "end": 6003.6,
+      "text": "Wychowany przez rodziców korzystałem z szans, jakie mi się nadarzały, żeby zobaczyć osoby, które były legendami,"
+    },
+    {
+      "start": 6003.74,
+      "end": 6007.7,
+      "text": "które prawdopodobnie niedługo mogą zakończyć karierę albo żywot na tym świecie."
+    },
+    {
+      "start": 6008.68,
+      "end": 6015.78,
+      "text": "Obydwa koncerty od jego zborna w Krakowie, zarówno w zespole Black Sabbath, jak i jego koncert solowy."
+    },
+    {
+      "start": 6015.78,
+      "end": 6027.18,
+      "text": "To można powiedzieć od nim na sam koniec, schodami do nieba, żeby wrócić do mamy i przybić piątkę z kolegami, z Dio, z Lemim i mieć bliżej, żeby szczekać do Księżyca."
+    },
+    {
+      "start": 6028.12,
+      "end": 6029,
+      "text": "Pozdrawiam serdecznie."
+    },
+    {
+      "start": 6029.66,
+      "end": 6032.68,
+      "text": "Bardzo dziękujemy za ten głos. Głosów mamy wiele."
+    },
+    {
+      "start": 6032.88,
+      "end": 6038.76,
+      "text": "Jednym z nich głos, myślę, że znany wielu fanom Death Metalu, bo głos Roberta Gajewskiego."
+    },
+    {
+      "start": 6038.76,
+      "end": 6047.76,
+      "text": "Moje pierwsze wspomnienie związane z zazmą z borem Black Sabbath to w zasadzie nawet nie sama postać od jego i sam zespół Black Sabbath,"
+    },
+    {
+      "start": 6047.9,
+      "end": 6053.42,
+      "text": "tylko piosenka, kompozycja Black Sabbath, która znalazła się na mini-albumie Sotis w formacji Vader."
+    },
+    {
+      "start": 6054.06,
+      "end": 6062.48,
+      "text": "Ja byłem wtedy tam do 7 klasy podstawówki, byłem na wakacjach i kumpel wziął na te wakacje właśnie kasetę Sotis."
+    },
+    {
+      "start": 6063.74,
+      "end": 6071,
+      "text": "I oprócz tego, że byłem zafascynowany już wówczas kapelami ze Stanów Zjednoczonych i mocno śledziłem polski underground,"
+    },
+    {
+      "start": 6071.8,
+      "end": 6077.76,
+      "text": "to na tym mini-albumie Sotis właśnie znalazła się kompozycja cover formacji Black Sabbath."
+    },
+    {
+      "start": 6077.76,
+      "end": 6086.98,
+      "text": "I zacząłem drążyć, bo ja w późniejszych latach zafascynowałem się głównie taką sceną posępnego, smutnego doom-metalu"
+    },
+    {
+      "start": 6086.98,
+      "end": 6091.94,
+      "text": "i w zasadzie pierwsza płyta, to powiedzieć, że to są protoplaści mrocznych, ciężkich brzmień"
+    },
+    {
+      "start": 6091.94,
+      "end": 6100.36,
+      "text": "i każdy zespół z lat 80-tych, 90-tych i nawet teraz, mam wrażenie, że nawet teraz coraz bardziej młodzi sięgają do korzeni"
+    },
+    {
+      "start": 6100.36,
+      "end": 6107.36,
+      "text": "i próbują gdzieś tam odtworzyć to, co właśnie Black Sabbath i Ozzy zrobili na początku lat 70-tych."
+    },
+    {
+      "start": 6107.36,
+      "end": 6114.4,
+      "text": "Oddzielną w ogóle postacią, taką kolorową, chociaż oczywiście jest do Książa Ciemności, jest sama postać Ozzygo,"
+    },
+    {
+      "start": 6115.06,
+      "end": 6123,
+      "text": "wypowiedziami, postawą, tym, co robił, tym, czego nie robił, w jaki sposób pewne rzeczy komunikował."
+    },
+    {
+      "start": 6123.62,
+      "end": 6130.62,
+      "text": "Absolutnie jest taką legendą buntu tego wszystkiego, co ja sobie wyobrażam jako taki non-konformizm"
+    },
+    {
+      "start": 6130.62,
+      "end": 6133.66,
+      "text": "i w muzyce, w sztuce, w zachowaniu."
+    },
+    {
+      "start": 6134.14,
+      "end": 6140.84,
+      "text": "Nie znam osób albo takich subkutury heavy metalowej, rock and Ozzy, na którą sama postać Ozzygo nie miała bez wpływu."
+    },
+    {
+      "start": 6141.5,
+      "end": 6148.48,
+      "text": "Robert Gajewski, czyli wokalista zespołu Karno, zespołu doom-metalowego, death metalowego, działającego już od ponad 25 lat"
+    },
+    {
+      "start": 6148.48,
+      "end": 6154.6,
+      "text": "i swoją drogą też wszystkiego najlepszego, bo przecież lipiec był tym miesiącem, w którym wszystko się zaczęło"
+    },
+    {
+      "start": 6154.6,
+      "end": 6158.2,
+      "text": "pod koniec 90-tego, pod koniec ubiegłego stulecia."
+    },
+    {
+      "start": 6158.34,
+      "end": 6159.8,
+      "text": "No to teraz Ozzy nieco nowszy."
+    },
+    {
+      "start": 6159.8,
+      "end": 6182.68,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 6249.35,
+      "end": 6258.75,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 6397.19,
+      "end": 6417.31,
+      "text": "Oj, dużo tego nagrania słuchałem swego czasu. Latimer's Mercy, czyli Ozzie Osborne z tych nieco nowszych płyt. Płyta Scream to akurat rok 2010. I wspomnienia Ozziego, nawet te jego słowami wypowiadane, wspomnienia dotyczące tego największego projektu, w jakim brał udział, czyli no oczywiście zespołu Black Sabbath."
+    },
+    {
+      "start": 6427.19,
+      "end": 6447.83,
+      "text": "No właśnie, czterech chłopaków z Birmingham, no i legendy, absolutne legendy metalu, ale przy tym też osoby, tak jak już wspominaliśmy, zwłaszcza Ozzie Osborne, z ogromną dozą dystansu do siebie."
+    },
+    {
+      "start": 6457.19,
+      "end": 6468.77,
+      "text": "Ozzie Osborne i wyrazy miłości w jego stronę wysyłane od fanów. Bardzo dziękujemy za tę audycję. Gosia Jakubowska, Elżbieta Różycka, Maciej Jankowski. To był zaszczyt. Do usłyszenia."
+    },
+    {
+      "start": 6487.19,
+      "end": 6492.31,
+      "text": "My shine wore off as time wore on"
+    },
+    {
+      "start": 6492.31,
+      "end": 6500.59,
+      "text": "I thought that I was living out the perfect life"
+    },
+    {
+      "start": 6500.59,
+      "end": 6506.93,
+      "text": "But in the lonely hours when the truth begins to rise"
+    },
+    {
+      "start": 6506.93,
+      "end": 6513.11,
+      "text": "I thought about the time when I turned my back and saw"
+    },
+    {
+      "start": 6513.11,
+      "end": 6519.47,
+      "text": "I ain't no nice guy after all"
+    }
+  ],
+  "stats": {
+    "windowCount": 18,
+    "transcribedAudioSec": 3955.04,
+    "segmentCount": 801,
+    "characterCount": 51270
+  },
+  "sourceId": "2025-07-23-ciezko-na-sercu-23-lipca-godz-0008"
+}

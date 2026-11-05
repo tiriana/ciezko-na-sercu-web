@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "id": "b27a7c0f-4ac8-4e09-a557-9c9fa5a9f988",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T22:38:00.571Z",
+  "durationSec": 6707,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "black-sabbath",
+      "label": "Black Sabbath",
+      "type": "artist",
+      "source": "tracks",
+      "at": 739
+    },
+    {
+      "id": "miss-piggy-ozzy-osbourne",
+      "label": "Miss Piggy & Ozzy Osbourne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1392
+    },
+    {
+      "id": "motorhead-ozzy-osbourne",
+      "label": "Motörhead & Ozzy Osbourne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6518
+    },
+    {
+      "id": "ozzy-osbourne",
+      "label": "Ozzy Osbourne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 71
+    },
+    {
+      "id": "wu-tang-clan",
+      "label": "Wu-Tang Clan",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5372
+    }
+  ],
+  "tracks": [
+    {
+      "start": 71,
+      "end": 739,
+      "durationSec": 228,
+      "artist": "Ozzy Osbourne",
+      "title": "No Bone Movies",
+      "album": "Blizzard of Ozz (40th Anniversary Expanded Edition)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 739,
+      "end": 1392,
+      "durationSec": 254,
+      "artist": "Black Sabbath",
+      "title": "The Wizard",
+      "album": "Black Sabbath",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1392,
+      "end": 1908,
+      "durationSec": 138,
+      "artist": "Miss Piggy & Ozzy Osbourne",
+      "title": "Born to Be Wild",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1908,
+      "end": 2616,
+      "durationSec": 282,
+      "artist": "Black Sabbath",
+      "title": "Changes",
+      "album": "Black Sabbath, Vol. 4",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2616,
+      "end": 3672,
+      "durationSec": 319,
+      "artist": "Ozzy Osbourne",
+      "title": "Little Dolls",
+      "album": "Diary of a Madman (Remastered Original Recording)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3672,
+      "end": 3976,
+      "durationSec": 166,
+      "artist": "Ozzy Osbourne",
+      "title": "Mama, I'm Coming Home",
+      "album": "No More Tears (Bonus Track Version)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3976,
+      "end": 4789,
+      "durationSec": 332,
+      "artist": "Ozzy Osbourne",
+      "title": "Crazy Train (Live)",
+      "album": "Live at Budokan",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4789,
+      "end": 5372,
+      "durationSec": 281,
+      "artist": "Ozzy Osbourne",
+      "title": "Hellraiser",
+      "album": "No More Tears (Bonus Track Version)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5372,
+      "end": 6181,
+      "durationSec": 281,
+      "artist": "Wu-Tang Clan",
+      "title": "For Heavens Sake",
+      "album": "Wu-Tang Forever",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6181,
+      "end": 6257,
+      "durationSec": 70,
+      "artist": "Ozzy Osbourne",
+      "title": "Latimer's Mercy",
+      "album": "Scream (Expanded Edition)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6257,
+      "end": 6518,
+      "durationSec": 141,
+      "artist": "Ozzy Osbourne",
+      "title": "Latimer's Mercy",
+      "album": "Scream (Expanded Edition)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6518,
+      "end": 6707,
+      "durationSec": 189,
+      "artist": "Motörhead & Ozzy Osbourne",
+      "title": "I Ain't No Nice Guy",
+      "album": "March or Die",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
