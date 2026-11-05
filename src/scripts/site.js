@@ -98,6 +98,7 @@ const setupBar = () => {
     audio.load();
     delete audio.dataset.src;
     delete audio.dataset.slug;
+    audio.dataset.closed = '1';
     setNowPlaying('');
     bar.hidden = true;
   });
@@ -199,12 +200,14 @@ const switchToPageEpisode = () => {
     return;
   }
   if (!payload.src || audio.dataset.src === payload.src) return;
+  delete audio.dataset.closed;
   audio.dataset.src = payload.src;
   audio.dataset.slug = payload.slug ?? '';
   audio.src = payload.src;
   audio.load();
   setNowPlaying('');
   const bar = document.querySelector('[data-audio-bar]');
+  if (bar) bar.hidden = false;
   const title = bar?.querySelector('[data-audio-title]');
   if (title) title.textContent = payload.title ?? '';
   const link = bar?.querySelector('[data-audio-link]');
@@ -239,7 +242,8 @@ const applyEpisodeAudio = () => {
   if (!payload.src) return;
 
   const loadedSlug = audio.dataset.slug;
-  bar.hidden = false;
+  // Zamknięty player zostaje zamknięty, dopóki użytkownik nie puści czegoś ponownie.
+  if (audio.dataset.closed !== '1') bar.hidden = false;
 
   // Player gra to, co użytkownik uruchomił: wejście na inną audycję nie przełącza źródła,
   // bo przerwałoby słuchanie. Źródło zmienia dopiero klik w utwór na tej stronie.
