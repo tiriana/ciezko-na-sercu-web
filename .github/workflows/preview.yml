@@ -1,0 +1,50 @@
+name: preview
+
+# Podgląd pracy nad gałęziami: osobny adres na Cloudflare Pages, main i produkcja bez zmian.
+on:
+  push:
+    branches: ['feat/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: preview-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CF_PROJECT: ciezko-na-sercu
+  CF_BRANCH: player-preview
+  WRANGLER_VERSION: 4.157.0
+
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Zainstaluj zależności
+        run: npm ci
+
+      - name: Zbuduj stronę
+        run: npm run build
+
+      - name: Opublikuj podgląd na Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_PAGES_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            response=$(curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" https://api.cloudflare.com/client/v4/accounts)
+            CLOUDFLARE_ACCOUNT_ID=$(echo "$response" | jq -r '.result[0].id // empty')
+            export CLOUDFLARE_ACCOUNT_ID
+          fi
+          npx --yes wrangler@$WRANGLER_VERSION pages deploy dist \
+            --project-name "$CF_PROJECT" --branch="$CF_BRANCH" --commit-dirty=true
+          echo "Podgląd: https://$CF_BRANCH.$CF_PROJECT.pages.dev"
