@@ -1492,7 +1492,7 @@ a {
   padding: 12px 14px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--card);
+  background: var(--surface);
   color: var(--text);
   font-size: 15px;
 }
@@ -1536,4 +1536,43 @@ a {
   margin: 0 0 10px 112px;
   color: var(--muted);
   font-size: 12.5px;
+}
+
+.search__field {
+  position: relative;
+  max-width: 520px;
+}
+
+.search__suggestions {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.search__suggestions li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search__suggestions li.is-active,
+.search__suggestions li:hover {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.search__count {
+  color: var(--muted);
+  font-size: 12px;
 }

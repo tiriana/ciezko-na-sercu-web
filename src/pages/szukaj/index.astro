@@ -12,15 +12,22 @@ import Base from '../../layouts/Base.astro';
     <p class="page-lead">Zespół, osoba, wydarzenie albo tytuł odcinka. Wpisz co najmniej dwa znaki.</p>
 
     <form class="search" role="search" onsubmit="return false">
-      <input
-        id="search-input"
-        class="search__input"
-        type="search"
-        name="q"
-        placeholder="np. Vader, Roadburn, Obituary"
-        autocomplete="off"
-        aria-describedby="search-status"
-      />
+      <div class="search__field">
+        <input
+          id="search-input"
+          class="search__input"
+          type="search"
+          name="q"
+          placeholder="np. Vader, Roadburn, Obituary"
+          autocomplete="off"
+          role="combobox"
+          aria-expanded="false"
+          aria-controls="search-suggestions"
+          aria-autocomplete="list"
+          aria-describedby="search-status"
+        />
+        <ul id="search-suggestions" class="search__suggestions" role="listbox" hidden></ul>
+      </div>
       <p id="search-status" class="search__status" aria-live="polite"></p>
     </form>
 
@@ -31,22 +38,121 @@ import Base from '../../layouts/Base.astro';
 </Base>
 
 <script>
-  import { matches, type SearchEntry } from '../../lib/search';
+  import { matches, normalize, type SearchEntry } from '../../lib/search';
 
   const input = document.querySelector<HTMLInputElement>('#search-input');
   const status = document.querySelector<HTMLParagraphElement>('#search-status');
   const list = document.querySelector<HTMLUListElement>('#search-results');
+  const suggestions = document.querySelector<HTMLUListElement>('#search-suggestions');
 
-  if (input && status && list) {
+  if (input && status && list && suggestions) {
     let entries: SearchEntry[] = [];
     let ready = false;
+    // Podpowiedzi to tagi z licznikiem odcinków: nazwa zespołu bywa dłuższa niż tytuł,
+    // więc użytkownik wybiera istniejący tag zamiast wpisywać go z pamięci.
+    let tags: { id: string; label: string; count: number; haystack: string }[] = [];
+    let active = -1;
+    let current: typeof tags = [];
 
     const load = async () => {
       const response = await fetch('/search.json');
       entries = (await response.json()) as SearchEntry[];
+      const counts = new Map<string, { id: string; label: string; count: number }>();
+      for (const entry of entries) {
+        for (const tag of entry.tags) {
+          const found = counts.get(tag.id) ?? { id: tag.id, label: tag.label, count: 0 };
+          found.count += 1;
+          counts.set(tag.id, found);
+        }
+      }
+      tags = [...counts.values()]
+        .map((tag) => ({ ...tag, haystack: normalize(tag.label) }))
+        .sort((left, right) => right.count - left.count || left.label.localeCompare(right.label, 'pl'));
       ready = true;
       render();
     };
+
+    const closeSuggestions = () => {
+      suggestions.hidden = true;
+      suggestions.innerHTML = '';
+      input.setAttribute('aria-expanded', 'false');
+      input.removeAttribute('aria-activedescendant');
+      active = -1;
+      current = [];
+    };
+
+    const pick = (index: number) => {
+      const chosen = current[index];
+      if (!chosen) return;
+      input.value = chosen.label;
+      closeSuggestions();
+      render();
+      input.focus();
+    };
+
+    const renderSuggestions = () => {
+      const query = normalize(input.value);
+      if (query.length < 2) {
+        closeSuggestions();
+        return;
+      }
+      current = tags.filter((tag) => tag.haystack.includes(query)).slice(0, 8);
+      if (current.length === 0) {
+        closeSuggestions();
+        return;
+      }
+      suggestions.innerHTML = '';
+      current.forEach((tag, index) => {
+        const item = document.createElement('li');
+        item.id = `search-suggestion-${index}`;
+        item.setAttribute('role', 'option');
+        item.dataset.index = String(index);
+        item.innerHTML = `<span>${tag.label}</span><span class="search__count">${tag.count}</span>`;
+        item.addEventListener('mousedown', (event) => {
+          event.preventDefault();
+          pick(index);
+        });
+        suggestions.append(item);
+      });
+      active = -1;
+      suggestions.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+    };
+
+    const highlight = () => {
+      for (const item of suggestions.children) {
+        const index = Number((item as HTMLElement).dataset.index);
+        item.classList.toggle('is-active', index === active);
+        item.setAttribute('aria-selected', index === active ? 'true' : 'false');
+      }
+      if (active >= 0) input.setAttribute('aria-activedescendant', `search-suggestion-${active}`);
+      else input.removeAttribute('aria-activedescendant');
+    };
+
+    input.addEventListener('input', () => {
+      renderSuggestions();
+      render();
+    });
+
+    input.addEventListener('keydown', (event) => {
+      if (suggestions.hidden) return;
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        active = (active + 1) % current.length;
+        highlight();
+      } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        active = active <= 0 ? current.length - 1 : active - 1;
+        highlight();
+      } else if (event.key === 'Enter') {
+        event.preventDefault();
+        if (active >= 0) pick(active);
+      } else if (event.key === 'Escape') {
+        closeSuggestions();
+      }
+    });
+
+    input.addEventListener('blur', () => window.setTimeout(closeSuggestions, 100));
 
     const formatDate = (iso: string) =>
       new Date(`${iso}T00:00:00Z`).toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
