@@ -1,0 +1,915 @@
+{
+  "version": 1,
+  "episodeId": "6b15af60-cace-4372-8f98-cc419719611d",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 110098316,
+  "fileMtimeMs": 1789150719046.079,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 209.79
+    },
+    {
+      "index": 1,
+      "start": 491.14,
+      "end": 645.85
+    },
+    {
+      "index": 2,
+      "start": 790.92,
+      "end": 850.59
+    },
+    {
+      "index": 3,
+      "start": 1084.32,
+      "end": 1137.5
+    },
+    {
+      "index": 4,
+      "start": 1324.45,
+      "end": 1386.43
+    },
+    {
+      "index": 5,
+      "start": 1672.32,
+      "end": 1714.11
+    },
+    {
+      "index": 6,
+      "start": 1978.66,
+      "end": 2036.16
+    },
+    {
+      "index": 7,
+      "start": 2390.63,
+      "end": 2426.81
+    },
+    {
+      "index": 8,
+      "start": 2515.24,
+      "end": 2564.06
+    },
+    {
+      "index": 9,
+      "start": 2826.05,
+      "end": 2900.57
+    },
+    {
+      "index": 10,
+      "start": 3120.32,
+      "end": 3196.06
+    },
+    {
+      "index": 11,
+      "start": 3573.12,
+      "end": 3625.92
+    },
+    {
+      "index": 12,
+      "start": 3959.62,
+      "end": 4012.7
+    },
+    {
+      "index": 13,
+      "start": 4245.12,
+      "end": 4289.82
+    },
+    {
+      "index": 14,
+      "start": 4613.73,
+      "end": 4671.84
+    },
+    {
+      "index": 15,
+      "start": 4748.42,
+      "end": 4751.74
+    },
+    {
+      "index": 16,
+      "start": 4809.06,
+      "end": 4888.22
+    },
+    {
+      "index": 17,
+      "start": 5307.56,
+      "end": 5361.12
+    },
+    {
+      "index": 18,
+      "start": 5610.72,
+      "end": 5688.92
+    },
+    {
+      "index": 19,
+      "start": 5712.29,
+      "end": 5778.84
+    },
+    {
+      "index": 20,
+      "start": 5798.24,
+      "end": 5825.69
+    },
+    {
+      "index": 21,
+      "start": 5847.84,
+      "end": 5935.64
+    },
+    {
+      "index": 22,
+      "start": 6190.28,
+      "end": 6194.52
+    },
+    {
+      "index": 23,
+      "start": 6213.35,
+      "end": 6295.71
+    },
+    {
+      "index": 24,
+      "start": 6560.29,
+      "end": 6612.03
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.14,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 8.26,
+      "end": 10.34,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 11.24,
+      "end": 20.66,
+      "text": "Dobry wieczór Państwu. Ciężko na sercu wita Was po raz pierwszy w nowym 2026 roku."
+    },
+    {
+      "start": 21.62,
+      "end": 26.82,
+      "text": "Mam nadzieję, że będzie lepszy, jeszcze lepszy od poprzedniego."
+    },
+    {
+      "start": 27.22,
+      "end": 31.4,
+      "text": "Nazywam się Jarek Szubrycht. Będę do Was przemawiał i puszczał piosenki."
+    },
+    {
+      "start": 31.5,
+      "end": 35.06,
+      "text": "Audycję wydaje Mariusz Owczarek."
+    },
+    {
+      "start": 35.64,
+      "end": 40.62,
+      "text": "Przemawiał będę dziś krótko, bo muzyki muszę zmieścić bardzo dużo."
+    },
+    {
+      "start": 41.12,
+      "end": 42.84,
+      "text": "Znakomitej muzyki."
+    },
+    {
+      "start": 43.78,
+      "end": 48.5,
+      "text": "Przez ostatnie tygodnie mierzyliśmy się z różnego rodzaju podsumowaniami,"
+    },
+    {
+      "start": 48.68,
+      "end": 54.64,
+      "text": "więc podsumuję dziś i ja, ale nie ostatnie 12 miesięcy,"
+    },
+    {
+      "start": 54.64,
+      "end": 60.4,
+      "text": "bo przecież co miesiąc wyciągam dla Was z nowości, co lepsze kąski,"
+    },
+    {
+      "start": 61.12,
+      "end": 68.6,
+      "text": "tylko podsumuję ostatnie 25 lat w pierwszym graniu,"
+    },
+    {
+      "start": 68.72,
+      "end": 74.42,
+      "text": "czy właściwie pierwsze 25 lat tego stulecia."
+    },
+    {
+      "start": 75.06,
+      "end": 82.1,
+      "text": "W Music Magazine, periodyku metalowym, którego nowy numer kilka dni temu trafił do sprzedaży,"
+    },
+    {
+      "start": 82.74,
+      "end": 87.64,
+      "text": "mamy takie podsumowanie i właśnie ono mnie zainspirowało."
+    },
+    {
+      "start": 88.32,
+      "end": 95.5,
+      "text": "Konkretnie zainspirował mnie Piotrek Dorosiński, redaktor naczelny Music Magazine,"
+    },
+    {
+      "start": 95.5,
+      "end": 107.92,
+      "text": "który parę tygodni temu poprosił mnie, żebym mu przesłał listę 10 ulubionych płyt metalowych i okołometalowych,"
+    },
+    {
+      "start": 108.06,
+      "end": 112.9,
+      "text": "osobno dychę polską i osobno zagraniczną."
+    },
+    {
+      "start": 112.98,
+      "end": 126.9,
+      "text": "Z ostatnich 25 lat właśnie zwrócił się z podobnym wyzwaniem do wielu dziennikarzy piszących lub gadających o ciężkiej muzyce w naszym kraju"
+    },
+    {
+      "start": 126.9,
+      "end": 131.72,
+      "text": "i z tej sumy naszych typów wyszła mu bardzo ciekawa lista,"
+    },
+    {
+      "start": 132.24,
+      "end": 134.06,
+      "text": "w której nie zdradzę."
+    },
+    {
+      "start": 134.22,
+      "end": 137.62,
+      "text": "Kupcie sobie Music Magazine i poczytajcie."
+    },
+    {
+      "start": 137.98,
+      "end": 144.7,
+      "text": "Zresztą wiele innych treści, które znajdziecie w tym numerze, też jest wartych czytania."
+    },
+    {
+      "start": 144.7,
+      "end": 156.14,
+      "text": "Ja na przykład zdążyłem już połknąć łapczywie fantastyczny artykuł analizujący obecność w furii w weselu."
+    },
+    {
+      "start": 156.82,
+      "end": 164.76,
+      "text": "Zdradzę jednak, że lista z gazety w niewielki tylko sposób widzi się z moimi propozycjami,"
+    },
+    {
+      "start": 165.38,
+      "end": 174.14,
+      "text": "co mnie niespecjalnie dziwi, bo w XXI wieku raczej się oddaliłem od głównego metalowego nurtu,"
+    },
+    {
+      "start": 174.34,
+      "end": 185.66,
+      "text": "ale skoro już mam tutaj taką fajną audycję i takich miłych słuchaczy, to co się mają te moje dziesiątki marnować."
+    },
+    {
+      "start": 186.3,
+      "end": 193.02,
+      "text": "Panie i panowie, dzisiaj wciężko na sercu dwadzieścia moich ulubionych płyt XXI wieku,"
+    },
+    {
+      "start": 193.68,
+      "end": 197.52,
+      "text": "dziesięć z Polski i dziesięć ze świata."
+    },
+    {
+      "start": 198.24,
+      "end": 207.8,
+      "text": "Zaczynamy od dziesiątki rodzimej, przed państwem mgła i ich ćwiczenia z daremności."
+    },
+    {
+      "start": 207.8,
+      "end": 209.8,
+      "text": "Muzyka"
+    },
+    {
+      "start": 491.14,
+      "end": 508.78,
+      "text": "Exercises in Futility Mugły, album sprzed dekady, jest nie tylko jedną z najważniejszych polskich płyt metalowych XXI wieku, ale jest też jednym z najbardziej wpływowych black metalowych albumów w kategorii open, globalnie."
+    },
+    {
+      "start": 509.3,
+      "end": 523.16,
+      "text": "Tak, to nie tylko moje zdanie, to jest opinia, z którą się stykam rozmawiając z muzykami, dziennikarzami, działaczami sceny metalowej właściwie z całego świata."
+    },
+    {
+      "start": 524.42,
+      "end": 535.72,
+      "text": "Weryfikuję ją też widząc koszulki mgły na koncertach i festiwalach w dalekich krajach, nawet na tych, na których mgła akurat nie gra."
+    },
+    {
+      "start": 535.72,
+      "end": 551.82,
+      "text": "Jest tego mnóstwo. Tak, proszę państwa, mgła jest tym zespołem, jednym z kilku, ale być może najważniejszym, który trnął w black metal nową siłę, nie wymyślając przy tym koła na nowo."
+    },
+    {
+      "start": 552.5,
+      "end": 564.72,
+      "text": "Natomiast trzeba to przyznać, zespół robi to dobrze. Piosenki ma świetnie napisane i zagrane, teksty przemyślane, wizerunek spójny, wszystko tu się zgadza."
+    },
+    {
+      "start": 565.72,
+      "end": 584.6,
+      "text": "Od razu zaznaczę, że każdy zespół, który dzisiaj się pojawi na tych moich listach reprezentuje tylko jedna płyta, więc czasami wybór był trudny, bo chciałoby się dać na przykład dwie mgły albo ze dwie płyty takiego Vadera."
+    },
+    {
+      "start": 584.6,
+      "end": 604.56,
+      "text": "Co prawda moje ulubione ich albumy, The Profundis i Black to the Blind powstały w poprzednim stuleciu, ale Vader niezmiennie trzyma poziom i w ostatnim ćwierćwieczu też wypuścił kilka fantastycznych materiałów, choćby Revelations, czy ostatnią, Solitude in Madness."
+    },
+    {
+      "start": 604.6,
+      "end": 620.84,
+      "text": "Ale w mojej dziesiątce znalazła się inna płyta. Wiem, to kontrowersyjny wybór, ale mam to gdzieś, bo to moja lista i mój głód właśnie ten album najlepiej zaspokaja."
+    },
+    {
+      "start": 621.06,
+      "end": 636.38,
+      "text": "Impressions in blood. A, jeśli pytacie o litany, to od razu powiem, że to rok dwutysięczny, a więc według moich obliczeń jestem humanistą, mogłem się pomylić, dwudziesty wiek."
+    },
+    {
+      "start": 636.96,
+      "end": 644.3,
+      "text": "Dwadzieścia pięć lat minęło od początku dwa tysiące pierwszego roku i w tym moim zestawieniu tego właśnie się trzymam."
+    },
+    {
+      "start": 790.92,
+      "end": 803,
+      "text": "Antigama. Na historię tego warszawskiego zespołu składa się seria zmarnowanych szans, ale też seria fantastycznych materiałów."
+    },
+    {
+      "start": 803.66,
+      "end": 815.8,
+      "text": "Uważam, że powinni być znacznie wyżej niż dziś są i nie na mojej liście, tylko w kategorii open na wszystkich listach."
+    },
+    {
+      "start": 816.84,
+      "end": 826.64,
+      "text": "I nie chodzi mi też o poziom artystyczny, bo ten jest niezmiennie wysoki. To wielki zespół. Chodzi mi o tak zwaną karierę."
+    },
+    {
+      "start": 826.82,
+      "end": 839.78,
+      "text": "Nie mamy dzisiaj czasu, a ja przyznaję, nie mam kompetencji i chyba wypadałoby kiedyś w wywiadzie zespół odpytać, czemu tak się zdarzyło."
+    },
+    {
+      "start": 840.22,
+      "end": 849.06,
+      "text": "Dzisiaj powiem wam więc tylko, że Resonance wydana przez kultową amerykańską wytwórnię Relapse jest wielką płytą."
+    },
+    {
+      "start": 1085.1,
+      "end": 1101.98,
+      "text": "Moim ulubionym materiałem Decapitated jest dziś chyba ich ostatni póki co album, czyli Cancer Culture, ale że maczałem w nim trochę palce, opuszki palców, nie wypada mi na niego głosować."
+    },
+    {
+      "start": 1101.98,
+      "end": 1119.3,
+      "text": "Typuje więc znakomitą płytę Organic Hallucinosis, na której do death metalu, już wcześniej zaawansowanego technicznie, doszły wyraźne fascynacje takim na przykład Meshuga."
+    },
+    {
+      "start": 1119.3,
+      "end": 1135.92,
+      "text": "To jedyna płyta Decapitated, na której śpiewa Kowan. Później niestety był ten straszny wypadek i po długiej przerwie, oczywiście już w innym składzie, Decapitated poszło w innym kierunku."
+    },
+    {
+      "start": 1135.92,
+      "end": 1137.5,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1324.45,
+      "end": 1347.23,
+      "text": "Blinded to znakomity zespół, zarówno w tym wcześniejszym wcieleniu, jak i obecnym, które nazywa się Blinded 23, że tak to przeczytam z amerykańska, bo też ten nowy Blinded skład ma międzynarodowy i pewnie międzynarodowy będzie miał zasięgi."
+    },
+    {
+      "start": 1347.23,
+      "end": 1358.07,
+      "text": "Ich nowy, czy może debiutancki, zależy jak to liczyć, album wyda jeszcze w tym roku wytwórnia Peaceville. Trzymam kciuki."
+    },
+    {
+      "start": 1358.07,
+      "end": 1374.75,
+      "text": "Ale zanim zaczął pisać się ten nowy zupełnie rozdział historii, pierwszy Blinded, ten bez cyferek w nazwie, pożegnał się w 2019 roku mini-albumem Niewiosna."
+    },
+    {
+      "start": 1375.39,
+      "end": 1384.35,
+      "text": "Nieoczekiwanie nagranym z Nihilem z Furie na wokalu. Przedziwny, to był materiał i wspaniały."
+    },
+    {
+      "start": 1384.35,
+      "end": 1386.43,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1673.16,
+      "end": 1693.5,
+      "text": "Artur Rumiński gościł niedawno w Ciężko na Sercu i trochę nam o sobie i swojej muzyce naopowiadał, więc dzisiaj powiem tylko, że Fading Backwards, czyli ubiegłoroczna płyta Tao, to wspaniały materiał, który moim zdaniem awansował zespół do polskiej czołówki."
+    },
+    {
+      "start": 1693.74,
+      "end": 1712.2,
+      "text": "Trudno, co prawda, sprzedać takie granie dużej publiczności, tym trudniej, że nie ma tam teatru szokującego wizerunku, nie ma też określonej przynależności gatunkowej. Jest tylko znakomita muzyka. Tylko."
+    },
+    {
+      "start": 1978.66,
+      "end": 1993.14,
+      "text": "Przed nami znowu Nihil. W dodatku nie po raz ostatni. Dzisiaj wychodzi więc na to, że uważam go za najważniejszego polskiego metalowego muzyka w tym stuleciu i oficjalnie to potwierdzam."
+    },
+    {
+      "start": 1993.14,
+      "end": 2007.8,
+      "text": "Tak właśnie jest. Moim zdaniem to jest jego czas i wierzę, że nie powiedział jeszcze ostatniego słowa. Podobają mi się różne jego wcielenia."
+    },
+    {
+      "start": 2008.66,
+      "end": 2022.8,
+      "text": "I żałuję, że od ponad dekady cicho jest o Morowym. Mam nadzieję, że to nie znaczy, że Morowe zmarło. A jeśli zmarło, to na pewno poszło do piekła."
+    },
+    {
+      "start": 2022.8,
+      "end": 2034.08,
+      "text": "Oto jak brzmiał znakomity album debiutancki grupy Morowe, Piekło, Labirynty, Diabły z 2010 roku."
+    },
+    {
+      "start": 2390.63,
+      "end": 2406.49,
+      "text": "Przed nami pierwsza polska trójka z dziesiątki najlepszych moim zdaniem polskich albumów XXI wieku. Pozycja trzecia."
+    },
+    {
+      "start": 2406.49,
+      "end": 2425.03,
+      "text": "W sumie wszystkie mniej lub bardziej lubi, ale moim zdaniem najlepszym postkobągowskim projektem była Nia. A najlepszym ich materiałem płytowy debiut Head Held High. I szkoda, że ta historia zbyt szybko się skończyła."
+    },
+    {
+      "start": 2425.03,
+      "end": 2426.81,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2515.24,
+      "end": 2537.32,
+      "text": "Album Nii widzę na miejscu trzecim, a na drugim rzecz w pewnym sensie pokrewna mentalnie i środowiskowo, rzecz w miarę świeża, czyli album OVV grupy Atrocious Filth, płyta z 2021 roku."
+    },
+    {
+      "start": 2537.32,
+      "end": 2549.04,
+      "text": "Wśród gości m.in. nieodżałowany perkusista Gerhard Niemczyk, wybitny muzyk, którego pożegnaliśmy w 2025 roku."
+    },
+    {
+      "start": 2549.84,
+      "end": 2560.9,
+      "text": "Nie wiadomo właściwie jaką muzykę gra tutaj Atrocious Filth, jak to opisać, gdzie zaszufladkować i to właśnie jest najlepsze."
+    },
+    {
+      "start": 2560.9,
+      "end": 2564.06,
+      "text": "D..."
+    },
+    {
+      "start": 2826.05,
+      "end": 2849.09,
+      "text": "Kto mniej więcej orientuje się, co ja o metalu przez ostatnie lata wypisuję i co o nim opowiadam, nie będzie zaskoczony, że na pierwszym miejscu mojej polskiej listy najlepszych albumów XXI wieku jest materiał grupy Furia,"
+    },
+    {
+      "start": 2849.09,
+      "end": 2860.57,
+      "text": "bo to zespół, który przywrócił mi wiarę w nasz rodzimy metal, kiedy już zdążyłem w niego zwątpić, gdzieś w połowie pierwszej dekady XXI wieku."
+    },
+    {
+      "start": 2861.19,
+      "end": 2873.05,
+      "text": "Poznałem ich na wysokości ich drugiej płyty Grudzień za Grudniem i każdy kolejny materiał był lepszy, bardziej zaskakujący, bardziej oryginalny."
+    },
+    {
+      "start": 2873.05,
+      "end": 2886.37,
+      "text": "I w myśl tej zasady konsekwentnie uważam Huteluna za najlepszą płytę Furii, arcywściekłą i arcypolską i tak bardzo ich własną."
+    },
+    {
+      "start": 2886.79,
+      "end": 2889.09,
+      "text": "Nikt inny tego nie mógł nagrać."
+    },
+    {
+      "start": 3120.32,
+      "end": 3130.08,
+      "text": "Ten koń, który przed chwilą cwałował pod nami, poniósł nas chę daleko poza granice ojczyzny."
+    },
+    {
+      "start": 3130.54,
+      "end": 3135.86,
+      "text": "Przed nami dziesięć fantastycznych albumów ze świata."
+    },
+    {
+      "start": 3136.56,
+      "end": 3139.46,
+      "text": "Pozycja dziesiąta, jazz i metal."
+    },
+    {
+      "start": 3140.1,
+      "end": 3147.5,
+      "text": "Połączenie znane i lubiane, ale myślałem, że już nic w tej kategorii nie może mnie zaskoczyć."
+    },
+    {
+      "start": 3147.72,
+      "end": 3152.92,
+      "text": "W końcu w świat jazzu wchodziłem od strony Naked City, więc no jak to przebić?"
+    },
+    {
+      "start": 3153.56,
+      "end": 3161.1,
+      "text": "Ale przyznaję, Imperial Triumphant zrobili coś, czego się nie spodziewałem, na co nie byłem gotowy,"
+    },
+    {
+      "start": 3161.18,
+      "end": 3165.04,
+      "text": "ale jak się okazało, bardzo tego potrzebowałem."
+    },
+    {
+      "start": 3165.04,
+      "end": 3175.62,
+      "text": "To odkrywcza muzyka, fantastyczna, do tego fascynujący, oryginalny wizerunek."
+    },
+    {
+      "start": 3176.26,
+      "end": 3181.68,
+      "text": "I znowu, każdy album świetny, te najnowsze to rzeczy wybitne,"
+    },
+    {
+      "start": 3182.28,
+      "end": 3190.24,
+      "text": "ale myślę, że właśnie na Vile Luxury Imperial Triumphant osiągnęli pełnię swoich możliwości,"
+    },
+    {
+      "start": 3190.24,
+      "end": 3194.42,
+      "text": "a to co później, to już właściwie wariacje na ten temat."
+    },
+    {
+      "start": 3195.42,
+      "end": 3196.06,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3573.12,
+      "end": 3600.12,
+      "text": "Ludzie mówią, że monoteist Celtic Frost to najlepszy powrót w historii metalu. I cóż, mówią prawdę. Po 16 latach milczenia, w dodatku poprzedzonego materiałami albo po prostu złymi, albo źle przyjętymi, Celtic Frost uderzyli z taką siłą, że na kolana nie padli tylko ci, co od razu padli trupem."
+    },
+    {
+      "start": 3600.7,
+      "end": 3624,
+      "text": "Szwajcarzy odzyskali swoją pozycję, swoje miejsce w historii gatunku. Szkoda tylko, że po monoteist Tom i Martin natychmiast znowu się pożarli, znowu nie udźwignęli ciężaru własnej legendy. No ale przynajmniej mamy ten wybitny album, więc nie będę narzekał."
+    },
+    {
+      "start": 3624,
+      "end": 3625.92,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3959.62,
+      "end": 3977.46,
+      "text": "I znowu trudna sprawa, ten odcinek ciężko na sercu w ogóle powinien się nazywać trudne sprawy, bo nie wiem, która płyta Gojiri jest najlepsza. L'Enfant Sauvage i Magma są pewnie dojrzalsze, lepiej wyprodukowane."
+    },
+    {
+      "start": 3977.46,
+      "end": 3998.02,
+      "text": "Ta ostatnia też przepyszna. Pewne jest natomiast, że właśnie za sprawą From Mars to Sirius kariera Francuzów wystrzeliła w kosmos i że jest to płyta, na której Gojira w całej okazałości objawiła swój unikalny styl."
+    },
+    {
+      "start": 3998.38,
+      "end": 4011.14,
+      "text": "Niby to wciąż bardzo ciężkie, brutalne, wręcz def metalowe, ale zarazem eleganckie, uduchowione. Nie wiem, jak oni to robią, ale robią to najlepiej."
+    },
+    {
+      "start": 4245.12,
+      "end": 4263.96,
+      "text": "To był strzał znikąd. Finlandia owszem miała za sobą piękną tradycję ekstremy, ale kiedy orans i pazuzu wyłonili się z lasu, kojarzyła się raczej z melodyjnym, wręcz słodkim podejściem do metalu z tymi wszystkimi nightwishami."
+    },
+    {
+      "start": 4263.96,
+      "end": 4287.82,
+      "text": "A tu, proszę Państwa, dzicz i szaleństwo. Narkotykowe odloty, grabarzy, hobbystów, kosmiczne podróże zombie gajowych. Warachtelia, płyta z 2016 roku. To już orans i pazuzu dojrzałe, ale wciąż głodne. Nienasycone wręcz."
+    },
+    {
+      "start": 4287.82,
+      "end": 4289.82,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4613.73,
+      "end": 4642.45,
+      "text": "Ta najważniejsza, przełomowa, nie tylko dla nich płyta The Dillinger Escape Plan to debiut amerykańskiej grupy, czyli Calculating Infinity z 1999 roku, ale myślę, że dopiero pięć lat później na drugiej dużej płycie z Gregiem Pucciato w roli wokalisty zespół objawił cały ten pawi ogon swoich możliwości."
+    },
+    {
+      "start": 4642.45,
+      "end": 4657.11,
+      "text": "Album Miss Machine wtedy wydawał się niemożliwym zlepkiem różnych stylistyk, od grindu przez hardcore, emo po death metal z jednej i właściwie pop z drugiej strony."
+    },
+    {
+      "start": 4657.77,
+      "end": 4668.87,
+      "text": "Dzisiaj słychać, że druga płyta The Dillinger Escape Plan to fundament położony pod nowoczesny metalcore i zarazem szczytowe osiągnięcie tego gatunku."
+    },
+    {
+      "start": 4748.42,
+      "end": 4751.74,
+      "text": "Let's go!"
+    },
+    {
+      "start": 4809.06,
+      "end": 4822.28,
+      "text": "Taki byłem zarozumiały i taki chyba zmęczony już tą materią,"
+    },
+    {
+      "start": 4822.54,
+      "end": 4826.36,
+      "text": "że wydawało mi się w pewnym momencie, że o metalu wiem wszystko,"
+    },
+    {
+      "start": 4826.36,
+      "end": 4830.62,
+      "text": "wszystko słyszałem, wszystko widziałem i nowych, mocnych wrażeń"
+    },
+    {
+      "start": 4830.62,
+      "end": 4836.46,
+      "text": "muszę szukać w innych miejscach, aż na pewnym forum internetowym"
+    },
+    {
+      "start": 4836.46,
+      "end": 4841.42,
+      "text": "przeczytałem o Death Spell Omega, tak opisywanym przez ludzi,"
+    },
+    {
+      "start": 4841.86,
+      "end": 4848.56,
+      "text": "którym wierzyłem, że myślałem, że to niemożliwe, ale posłuchałem."
+    },
+    {
+      "start": 4848.68,
+      "end": 4855.94,
+      "text": "Posłuchałem płyty Fast Ite Maledicti It Ignem Eternum i mózg mi spłonął."
+    },
+    {
+      "start": 4856.66,
+      "end": 4861.86,
+      "text": "Wiedziałem już, że się myliłem i byłem z tego powodu bardzo szczęśliwy."
+    },
+    {
+      "start": 4862.86,
+      "end": 4866.42,
+      "text": "Tak, po pierwsze metal nie zna granic, a po drugie,"
+    },
+    {
+      "start": 4866.42,
+      "end": 4870.2,
+      "text": "właśnie Black Metal okazał się takim jego wcieleniem,"
+    },
+    {
+      "start": 4871.2,
+      "end": 4874.66,
+      "text": "które zdolne jest do wymyślania się na nowo"
+    },
+    {
+      "start": 4874.66,
+      "end": 4882.1,
+      "text": "i wchodzenia w dowolne alchemiczne związki chyba właściwie bez końca."
+    },
+    {
+      "start": 4882.1,
+      "end": 4886.62,
+      "text": "A Francuzi są absolutnymi mistrzami tej gry."
+    },
+    {
+      "start": 4886.62,
+      "end": 4888.22,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5308.26,
+      "end": 5317.32,
+      "text": "Już chyba parę razy wspominałem dzisiaj, że w pierwszej dekadzie tego stulecia miałem kryzys wiary w metal."
+    },
+    {
+      "start": 5318.4,
+      "end": 5324.7,
+      "text": "Teraz muszę powiedzieć, że wywołała go m.in. szwedzka grupa Meshuga."
+    },
+    {
+      "start": 5325.4,
+      "end": 5329.9,
+      "text": "Nie dlatego, że coś robiła źle. Wręcz przeciwnie."
+    },
+    {
+      "start": 5330.38,
+      "end": 5349.74,
+      "text": "Robiła i wciąż robi to tak perfekcyjnie, że uznałem, że to koniec, że dalej już nic nie ma, że Meshuga po brzegi wypełnili naczynie zwane metalem, ba, że to jest menisk wypukły i nikt już niczego nie wciśnie."
+    },
+    {
+      "start": 5350.52,
+      "end": 5359.04,
+      "text": "Jaką najlepszą ich płytę z tego stulecia wskazuje nothing, choć w sumie wszystkie są najlepsze."
+    },
+    {
+      "start": 5360.38,
+      "end": 5361.12,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5610.72,
+      "end": 5624.96,
+      "text": "Przed nami pierwsza trójka moich ulubionych płyt z tego stulecia ze świata. Rośnie napięcie i rośnie do niewyobrażalnych rozmiarów moja egzaltacja."
+    },
+    {
+      "start": 5624.96,
+      "end": 5641.16,
+      "text": "Wybaczcie, no ale dzisiaj okazja wyjątkowa, bo rzeczywiście prezentuję rzeczy, które po prostu kocham. I kocham to połączenie dwóch artystów absolutnie niemożliwe."
+    },
+    {
+      "start": 5641.16,
+      "end": 5656.62,
+      "text": "Nie wymarzyłbym sobie go, choć obu uwielbiam, ale cuda się zdarzają i takim cudem właśnie był album Soust, wspólne dzieło Scotta Walkera i amerykańskich bogów Drone Metalu, czyli Sun."
+    },
+    {
+      "start": 5657.64,
+      "end": 5669.96,
+      "text": "Dzieło wspólne, choć przy jego tworzeniu nie było symetrii. Wielki Walker dyktował z markaczom z Ameryki warunki, a oni grzecznie wypełniali polecenia."
+    },
+    {
+      "start": 5669.96,
+      "end": 5682.34,
+      "text": "I słusznie, bo kiedy taki artysta jak Scott Walker mówi skacz, skocz, pewnie tak mówi, to wolno pytać tylko jak wysoko, panie Skocie."
+    },
+    {
+      "start": 5683.02,
+      "end": 5687.4,
+      "text": "I trzeba przyznać, że podskoczyli tu razem bardzo wysoko."
+    },
+    {
+      "start": 5687.4,
+      "end": 5688.92,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 5712.29,
+      "end": 5715.75,
+      "text": "Blade points knife the air"
+    },
+    {
+      "start": 5715.75,
+      "end": 5726.79,
+      "text": "All night he sees it"
+    },
+    {
+      "start": 5726.79,
+      "end": 5737.75,
+      "text": "Constellating his thought"
+    },
+    {
+      "start": 5742.29,
+      "end": 5750.75,
+      "text": "Acne on a leper"
+    },
+    {
+      "start": 5750.75,
+      "end": 5765.23,
+      "text": "Run, blade points disappear"
+    },
+    {
+      "start": 5772.29,
+      "end": 5778.85,
+      "text": "Sets its blackness glistening"
+    },
+    {
+      "start": 5798.24,
+      "end": 5802.4,
+      "text": "No nothing else lingers"
+    },
+    {
+      "start": 5802.4,
+      "end": 5808.32,
+      "text": "Gleam away, little brute"
+    },
+    {
+      "start": 5808.32,
+      "end": 5810.46,
+      "text": "Gleam away"
+    },
+    {
+      "start": 5810.46,
+      "end": 5821.14,
+      "text": "Gleam away, little brute"
+    },
+    {
+      "start": 5821.14,
+      "end": 5824.02,
+      "text": "Gleam away"
+    },
+    {
+      "start": 5847.84,
+      "end": 5877.82,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5877.84,
+      "end": 5907.82,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5907.86,
+      "end": 5935.64,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 6190.28,
+      "end": 6194.52,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 6213.35,
+      "end": 6236.21,
+      "text": "Uważam debaty za najlepsze, co przydarzyło się tak zwanemu ciężkiemu graniu w XXI wieku."
+    },
+    {
+      "start": 6236.67,
+      "end": 6241.15,
+      "text": "Nie powiedziałem metalowi, bo nie wiem nawet, czy to jeszcze metal."
+    },
+    {
+      "start": 6241.31,
+      "end": 6247.55,
+      "text": "Nie upieram się. Wszystko zależy od tego, jak bardzo szeroko macie definicję tej muzyki."
+    },
+    {
+      "start": 6248.45,
+      "end": 6258.65,
+      "text": "Jeśli na przykład uważacie, że takie Motley Crue to metal, to może wcale nie trzeba pakować The Body do tego samego worka na zwłoki."
+    },
+    {
+      "start": 6259.35,
+      "end": 6266.85,
+      "text": "Chyba powinienem kiedyś całą audycję poświęcić The Body, bo to zespół nadzwyczaj płodny."
+    },
+    {
+      "start": 6267.41,
+      "end": 6277.41,
+      "text": "Szczególnie jeśli wziąć pod uwagę nie tylko rzeczy własne amerykańskiego duetu, ale też liczne płyty nagrywane we współpracy z innymi zespołami i solistami."
+    },
+    {
+      "start": 6278.15,
+      "end": 6293.67,
+      "text": "Dużo tego, bardzo dużo. Bardzo szerokie spektrum artystycznych wrażeń, a jednak bez wahania wskaże No One Deserves Happiness z 2016 roku, jako moją ulubioną płytę The Body."
+    },
+    {
+      "start": 6293.67,
+      "end": 6295.71,
+      "text": "Muzyka"
+    },
+    {
+      "start": 6561.07,
+      "end": 6571.97,
+      "text": "Za nami dziewiętnaście wielkich płyt, dziewiętnaście niesamowitych zespołów i projektów, a przed nami jeszcze tylko ten jeden, ostatni."
+    },
+    {
+      "start": 6572.81,
+      "end": 6580.31,
+      "text": "Na pierwszym miejscu dzisiaj jeden z moich zespołów życia, nie ma ich tak wiele, Neurosis."
+    },
+    {
+      "start": 6580.85,
+      "end": 6593.67,
+      "text": "Nie mogę się pogodzić z tym, że Scott Kelly tak bardzo zawiódł rodzinę siebie samego, zespół, fanów, że definitywnie, jak się dzisiaj zdaje, zakończył to wszystko."
+    },
+    {
+      "start": 6593.67,
+      "end": 6606.11,
+      "text": "Na szczęście wspaniała muzyka pozostała. Mój ulubiony album, wydany w XXI wieku, to A Son That Never Sets, Neurosis."
+    },
+    {
+      "start": 6607.35,
+      "end": 6610.01,
+      "text": "Słuchaliście ciężko na sercu. Dobranoc."
+    },
+    {
+      "start": 6610.85,
+      "end": 6612.01,
+      "text": "Dziękuje za oglądanie!"
+    }
+  ],
+  "stats": {
+    "windowCount": 25,
+    "transcribedAudioSec": 1616.95,
+    "segmentCount": 154,
+    "characterCount": 14888
+  },
+  "sourceId": "2026-01-07-najlepsze-plyty-xxi-wieku"
+}
