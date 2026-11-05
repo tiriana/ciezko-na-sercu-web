@@ -1,0 +1,2980 @@
+{
+  "version": 1,
+  "episodeId": "6654e58c-3e67-4e65-bf3d-3c0269bda620",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109350218,
+  "fileMtimeMs": 1789150699232.8015,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 13.47
+    },
+    {
+      "index": 1,
+      "start": 285.96,
+      "end": 692.86
+    },
+    {
+      "index": 2,
+      "start": 978.05,
+      "end": 1120.7
+    },
+    {
+      "index": 3,
+      "start": 1358.92,
+      "end": 1611.68
+    },
+    {
+      "index": 4,
+      "start": 1815.49,
+      "end": 2104.57
+    },
+    {
+      "index": 5,
+      "start": 2393.44,
+      "end": 2787.1
+    },
+    {
+      "index": 6,
+      "start": 3091.33,
+      "end": 3249.63
+    },
+    {
+      "index": 7,
+      "start": 3249.63,
+      "end": 3601.92
+    },
+    {
+      "index": 8,
+      "start": 3601.92,
+      "end": 3760.38
+    },
+    {
+      "index": 9,
+      "start": 4190.47,
+      "end": 4624.22
+    },
+    {
+      "index": 10,
+      "start": 4854.31,
+      "end": 5118.43
+    },
+    {
+      "index": 11,
+      "start": 5833.09,
+      "end": 6301.08
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 5,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 9,
+      "end": 11.34,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 286.84,
+      "end": 295.38,
+      "text": "Dobry wieczór Państwu. Słuchacie ciężko na sercu w trójce. Audycję prowadzi Jarek Szubrycht, wydaje ją Mariusz Owczarek."
+    },
+    {
+      "start": 295.92,
+      "end": 310.7,
+      "text": "Zaczęliśmy od utworu Decapitated, bo dzisiaj druga część opowieści o tym zespole, którą przeze mnie prowokowany snu będzie Vogue Wacek Kiełtyka, gitarzysta i lider tej grupy, który znowu towarzyszy mi w studiu."
+    },
+    {
+      "start": 310.7,
+      "end": 311.72,
+      "text": "Dobry wieczór Wacku."
+    },
+    {
+      "start": 311.76,
+      "end": 319.12,
+      "text": "Dobry wieczór, witam wszystkich ponownie. Jest mi bardzo miło, że zostałem po raz drugi zaproszony do studia."
+    },
+    {
+      "start": 319.76,
+      "end": 334.06,
+      "text": "Nie było takiego planu, ale nie mogliśmy się nagadać, jak Państwo doskonale wiedzą i też myślę, że z pożytkiem dla słuchaczy, bo fajnie jest czasami wejść pod powierzchnię tej ukochanej muzyki."
+    },
+    {
+      "start": 334.06,
+      "end": 345.86,
+      "text": "W towarzystwie kogoś, kto słyszy, czuje ją trochę inaczej, kto być może pomaga nam dostrzec tam albo zrozumieć rzeczy, których sami nie rozumiemy, a na przykład przeczuwamy."
+    },
+    {
+      "start": 345.96,
+      "end": 356.48,
+      "text": "Ja tak mam, kiedy z Wackiem o muzyce rozmawiam. W ubiegłym tygodniu między innymi w ten sposób rozkładaliśmy na czynniki pierwsze Meshuga."
+    },
+    {
+      "start": 356.48,
+      "end": 376.8,
+      "text": "A skończyliśmy na Immolation, na Herein' After, na pięknym roku 1996 roku narodzin Decapitated i wciąż jeszcze o tym roku będziemy rozmawiać, jeszcze nie wyczerpaliśmy tematu, bo jak się okazuje dla metalu był to rok bardzo szczodry."
+    },
+    {
+      "start": 377.2,
+      "end": 379.28,
+      "text": "Załapałeś się na fenomen kata?"
+    },
+    {
+      "start": 379.94,
+      "end": 387.7,
+      "text": "Co masz na myśli dokładnie, zadając to pytanie, Jarku, czy załapałem się na fenomen, czy zostałem fanem kata, czy kochałem kata?"
+    },
+    {
+      "start": 387.8,
+      "end": 390.22,
+      "text": "Czy wychowałeś się na kaci, tak?"
+    },
+    {
+      "start": 390.22,
+      "end": 390.9,
+      "text": "Oczywiście, oczywiście."
+    },
+    {
+      "start": 390.98,
+      "end": 395.02,
+      "text": "Bo wiem, że grałeś cover kata na scenie, bo starsi koledzy cię zmusili, no ale..."
+    },
+    {
+      "start": 395.02,
+      "end": 401.82,
+      "text": "Popatrz jak to jest, Jarek, że znamy się tyle lat i w zasadzie nic o sobie nie wiemy i to w kwestiach muzycznych."
+    },
+    {
+      "start": 401.82,
+      "end": 406.98,
+      "text": "Słuchaj, tydzień temu dowiedziałem się, że nie jesteś fanem Venom, od tygodnia nie śpię przez to."
+    },
+    {
+      "start": 407,
+      "end": 407.52,
+      "text": "Jestem fanem, jestem fanem."
+    },
+    {
+      "start": 407.88,
+      "end": 410.62,
+      "text": "Odpowiedź, moja odpowiedź była enigmatyczna."
+    },
+    {
+      "start": 411.64,
+      "end": 414.66,
+      "text": "Nie dawała wszystkiego, nie dawała pełnej odpowiedzi."
+    },
+    {
+      "start": 415.16,
+      "end": 415.86,
+      "text": "Ale tak, jestem."
+    },
+    {
+      "start": 415.98,
+      "end": 424.28,
+      "text": "Znaczy, będąc fanem muzyki metalowej, dobra, fanem, może to jest za duże słowo, ale ciężko nie lubić Venom, no."
+    },
+    {
+      "start": 424.28,
+      "end": 431.2,
+      "text": "Bo to jest jakby podstawa tego wszystkiego, jest brud, jest diabeł i wszystko się tam zgadza."
+    },
+    {
+      "start": 431.32,
+      "end": 435.24,
+      "text": "Jest niebezpiecznie trochę i jest, no wiadomo, jest Venom."
+    },
+    {
+      "start": 435.64,
+      "end": 441.3,
+      "text": "Także tak, lubię Venom, ale to nie jest miłość taka, nie jestem pasjonatem."
+    },
+    {
+      "start": 441.86,
+      "end": 443.76,
+      "text": "Nie wiem, czy można być pasjonatem zespół Venom."
+    },
+    {
+      "start": 443.76,
+      "end": 444.72,
+      "text": "Zostawmy już ten Venom."
+    },
+    {
+      "start": 444.72,
+      "end": 447.88,
+      "text": "Zostawmy Venom, wróćmy do Kata."
+    },
+    {
+      "start": 448.1,
+      "end": 451.56,
+      "text": "A z kolei Kata to jest zupełnie inna para kaloszy."
+    },
+    {
+      "start": 451.8,
+      "end": 454.48,
+      "text": "Uwielbiam Kata, jestem ultra fanem Kata."
+    },
+    {
+      "start": 455.12,
+      "end": 460.16,
+      "text": "Zacznę może od tego, w kwestiach dla mnie właśnie takich edukacyjnych, kiedy uczyłem się grać na gitarze,"
+    },
+    {
+      "start": 460.28,
+      "end": 464.34,
+      "text": "kiedy już trochę, już wyszedłem z tego Seek and Destroy na jednej strunie"
+    },
+    {
+      "start": 464.34,
+      "end": 472.52,
+      "text": "i zacząłem trochę więcej rozumieć, jak ten instrument działa i jak na nim grać, metal przynajmniej,"
+    },
+    {
+      "start": 472.52,
+      "end": 480.16,
+      "text": "to Kat był moim bardzo dobrym nauczycielem, moim ogromnym, czerpałem z tego zespołu ogromną wiedzę,"
+    },
+    {
+      "start": 480.26,
+      "end": 484.8,
+      "text": "bo tak jak wcześniej ćwicząc przy właśnie metalice, przy sepulturze,"
+    },
+    {
+      "start": 485.22,
+      "end": 491.04,
+      "text": "później Kat był jakby kolejnym levelem w mojej edukacji gitarowej."
+    },
+    {
+      "start": 491.4,
+      "end": 495.12,
+      "text": "Ja generalnie to robiłem w ten sposób, już tak technicznie opowiadając o tym,"
+    },
+    {
+      "start": 495.22,
+      "end": 499.84,
+      "text": "że puszczałem sobie kasetę jakiegoś tam zespołu i uczyłem się po prostu całych płyt."
+    },
+    {
+      "start": 499.84,
+      "end": 506.42,
+      "text": "Grałem tą płytę jeden po drugim numerze na pamięć i w ten sposób nabywałem tych umiejętności."
+    },
+    {
+      "start": 507.18,
+      "end": 515.48,
+      "text": "I tak samo właśnie dzięki zespołowi Kat wydaje mi się, że wskoczyłem na kolejny level gry,"
+    },
+    {
+      "start": 515.94,
+      "end": 521.7,
+      "text": "dlatego że zagrać takie płyty jak właśnie Bastard czy Róże Miłości..."
+    },
+    {
+      "start": 521.7,
+      "end": 527.34,
+      "text": "Róże Miłości to jest właśnie 1996 rok, dlatego o tym Katie mówimy."
+    },
+    {
+      "start": 527.34,
+      "end": 538.44,
+      "text": "I znowu w 1996 roku ja pamiętam jak ta płyta wyszła i pamiętam jak ją słuchaliśmy właśnie z Wojtkiem u niego w domu."
+    },
+    {
+      "start": 538.98,
+      "end": 547.3,
+      "text": "I pamiętam, że od pierwszego usłyszenia trochę właśnie dziwiłem mnie, byłem jakby zdziwiony warstwą liryczną."
+    },
+    {
+      "start": 547.64,
+      "end": 549.68,
+      "text": "Nie byłem przygotowany jeszcze na tego typu..."
+    },
+    {
+      "start": 549.68,
+      "end": 550.56,
+      "text": "Nikt chyba nie był."
+    },
+    {
+      "start": 550.94,
+      "end": 552.16,
+      "text": "Nawet chyba nikt nie był."
+    },
+    {
+      "start": 552.16,
+      "end": 554.42,
+      "text": "Ja też nie byłem i też chwilę mi zajęło."
+    },
+    {
+      "start": 554.94,
+      "end": 558.2,
+      "text": "Więc a do tego to ile ja miałem wtedy lat?"
+    },
+    {
+      "start": 558.4,
+      "end": 559.5,
+      "text": "14, 15?"
+    },
+    {
+      "start": 559.9,
+      "end": 561.46,
+      "text": "To przyszło z czasem."
+    },
+    {
+      "start": 561.64,
+      "end": 565.48,
+      "text": "Na pewno Bastard był dla mnie taką płytą."
+    },
+    {
+      "start": 565.92,
+      "end": 576.54,
+      "text": "Pomimo swojej takiej dość skomplikowanej struktury, najbardziej, od każdym względem, emocjonalnym, technicznym ogólnie, to była moja płyta."
+    },
+    {
+      "start": 576.98,
+      "end": 578.74,
+      "text": "Ale rozmawiamy o 1996 roku."
+    },
+    {
+      "start": 578.88,
+      "end": 581.04,
+      "text": "Tak, wróćmy do tego i o Płycie Róże."
+    },
+    {
+      "start": 581.58,
+      "end": 583.2,
+      "text": "No genialna, genialna płyta."
+    },
+    {
+      "start": 583.3,
+      "end": 600.24,
+      "text": "Do dzisiaj przynajmniej raz, nie wiem jak jestem na trasie, czy słucham sobie muzyki gdzieś tam wieczorem, czy do snu na słuchawach podczas pracy, czy do imprezy jakiejś pokoncertowej, to te Róże to jest ciągle mocna pozycja."
+    },
+    {
+      "start": 600.24,
+      "end": 611.7,
+      "text": "Ja wolę tę płytę od Bastard też dlatego, że z Bastard jest jak z Injustice for All Metallica psuje mi wszystko brzmienie, które nie do końca mnie przekonuje."
+    },
+    {
+      "start": 612.02,
+      "end": 614.32,
+      "text": "Natomiast Róże Miłości brzmią doskonale."
+    },
+    {
+      "start": 614.42,
+      "end": 617.24,
+      "text": "Tam wszystko rzeczywiście zagrało."
+    },
+    {
+      "start": 618.04,
+      "end": 620.24,
+      "text": "Brzmią tak jak moim zdaniem brzmieć powinny."
+    },
+    {
+      "start": 620.32,
+      "end": 628.04,
+      "text": "Pod kątem takim technologicznym, czy produkcyjnym, to na pewno Róże zdecydowanie tutaj wygrywają."
+    },
+    {
+      "start": 628.04,
+      "end": 649.24,
+      "text": "Ja pamiętam nawet jak, teraz mi się przypomniała taka sytuacja, jak byłem na trasie z Machine Head i po jakimś tam koncercie siedzieliśmy sobie z tyłu z Robem i z Jaredem z tyłu w autobusie i ja im puściłem właśnie Róże, bo chciałem im pokazać, że w Polsce mamy też zespoły fajne i podobały im się bardzo."
+    },
+    {
+      "start": 649.24,
+      "end": 660.36,
+      "text": "Podobały im się riffy, podobały im się sceptycznie podeszli, bo zacząłem im wkręcać, że słuchajcie, teraz wam puszczę taki zarąbisty zespół z Polski, Kat i zacząłem im te teksty tłumaczyć w ogóle."
+    },
+    {
+      "start": 661.12,
+      "end": 664.24,
+      "text": "Te rzeczywistkie zacząłeś z kontrowersyjnej strony."
+    },
+    {
+      "start": 664.24,
+      "end": 669.14,
+      "text": "Bardzo im się podobało i byli pod wrażeniem produkcji i pod wrażeniem kompozycji."
+    },
+    {
+      "start": 669.68,
+      "end": 683.08,
+      "text": "Oczywiście stwierdzili, że no są zaczerpnięcia z metaliki, ale Rob stwierdził, że kurczę, faktycznie w każdym państwie, w każdym kraju jest jakiś taki jeden zespół, o którym nie wie świat, a jest genialny."
+    },
+    {
+      "start": 683.08,
+      "end": 690.84,
+      "text": "To prawda. No i jest na Różach Miłości utwór Odiprofanum Vulgus, moim zdaniem chyba najlepszy utwór Kata."
+    },
+    {
+      "start": 690.84,
+      "end": 692.86,
+      "text": "Muzyka"
+    },
+    {
+      "start": 978.05,
+      "end": 1000.21,
+      "text": "Słuchacie Ciężko na sercu w trójce. Moim gościem jest Vogue Leader Decapitated i utknęliśmy ci podróżnicy w czasie, utknęli w 1996 roku, bo to rok, w którym na przykład objawił się, nie zadebiutował, ale osiągnął status supergwiazdorski."
+    },
+    {
+      "start": 1000.59,
+      "end": 1006.93,
+      "text": "Marilyn Manson, Antichrist Superstar. Załapałeś się w ogóle na ten fenomen? Słuchałeś tego? Ekscytowałeś?"
+    },
+    {
+      "start": 1006.93,
+      "end": 1020.63,
+      "text": "Nie słuchałem tego wtedy jako fan, bo w tym czasie to ja byłem zasłuchany właśnie w takich zespoch jak Cut, Vader, no Deathmetallu głównie słuchałem, Thrashmetallu, Sepultury, Chaos AD, Arise."
+    },
+    {
+      "start": 1021.01,
+      "end": 1025.65,
+      "text": "Dla mnie Marilyn Manson był czymś takim bardziej popowym bym powiedział."
+    },
+    {
+      "start": 1026.05,
+      "end": 1030.31,
+      "text": "No tak, to były przebojowe piosenki, szczególnie w poroznaniu z Deathmetallem."
+    },
+    {
+      "start": 1030.31,
+      "end": 1044.11,
+      "text": "Tak, awangarda, pop, coś, to było coś, co dla takiego młodego, dość zatwardziałego metalowca było czymś nie do końca, czego nie mogłem do końca akceptować."
+    },
+    {
+      "start": 1044.63,
+      "end": 1047.99,
+      "text": "Rozumiem, niepisany kodeks nie pozwalał."
+    },
+    {
+      "start": 1048.43,
+      "end": 1058.65,
+      "text": "Zostawmy więc Mansona, a czy niepisany kodeks metalowca pozwoli ci zaakceptować punkową płytę Slayera, bo 96 rok to jest Undisputed Attitude."
+    },
+    {
+      "start": 1058.89,
+      "end": 1067.31,
+      "text": "To jest fantastyczna płyta moim zdaniem, ale przyjęta zmieszanymi uczuciami przez armię Slayerową."
+    },
+    {
+      "start": 1067.65,
+      "end": 1076.07,
+      "text": "Ale wiemy dobrze, że chłopaki ze Slayera byli fanami punk rocka i dzięki temu Slayer w ogóle powstał."
+    },
+    {
+      "start": 1076.53,
+      "end": 1079.15,
+      "text": "Wiadomo, bez punk rocka nie byłoby Slayera."
+    },
+    {
+      "start": 1079.31,
+      "end": 1083.63,
+      "text": "To cała agresja i ten urok i klimat Slayera to jest punk."
+    },
+    {
+      "start": 1083.63,
+      "end": 1088.35,
+      "text": "Tak, tam jest New Wave of British Heavy Metal, Venom i Hardcore Punk z Ameryki."
+    },
+    {
+      "start": 1088.61,
+      "end": 1091.27,
+      "text": "To jest wszystkie składniki Venomu."
+    },
+    {
+      "start": 1092.25,
+      "end": 1094.35,
+      "text": "Nie Venomu, tylko Slayera. Wszystkie składniki Slayera."
+    },
+    {
+      "start": 1094.35,
+      "end": 1099.57,
+      "text": "To dla nich na pewno była jakaś taka, jakiś ukłon właśnie dla swoich idoli."
+    },
+    {
+      "start": 1100.23,
+      "end": 1101.09,
+      "text": "Chcieli to zrobić."
+    },
+    {
+      "start": 1101.71,
+      "end": 1103.75,
+      "text": "Ale ty słuchałeś tej płyty? Lubiłeś ją? Lubisz?"
+    },
+    {
+      "start": 1103.93,
+      "end": 1108.77,
+      "text": "Nie mogę się za bardzo wypowiedzieć, bo słuchałem tej płyty, ale nie znam jej dobrze."
+    },
+    {
+      "start": 1108.77,
+      "end": 1111.51,
+      "text": "Może raz, może dwa razy przesłuchałem."
+    },
+    {
+      "start": 1111.79,
+      "end": 1113.01,
+      "text": "Powinienem do niej chyba wrócić."
+    },
+    {
+      "start": 1113.25,
+      "end": 1117.41,
+      "text": "Dobrze, to jest zadanie domowe, lektura na..."
+    },
+    {
+      "start": 1117.41,
+      "end": 1118.63,
+      "text": "Jest tyle płyt do nadrobienia."
+    },
+    {
+      "start": 1359.92,
+      "end": 1363.98,
+      "text": "Teraz o dwóch płytach, których słuchałeś na pewno wtedy, słuchałeś ich też później."
+    },
+    {
+      "start": 1364.18,
+      "end": 1369.6,
+      "text": "Zaczniemy od Roots, Sepultury. Czy to była zdrada, czy to było objawienie?"
+    },
+    {
+      "start": 1369.82,
+      "end": 1375.3,
+      "text": "Może to nie była zdrada, ale... I mam z tym albumem do dzisiaj problem tak naprawdę."
+    },
+    {
+      "start": 1375.6,
+      "end": 1381.34,
+      "text": "Nie wiem, nie wchodzi mi ta płyta jakoś tak... Na pewno utwór tytułowy jest genialny."
+    },
+    {
+      "start": 1381.64,
+      "end": 1388.64,
+      "text": "To jest taki hymn w metalu i świetny kawałek. Dobry riff i też, umówmy się, była to rewolucja."
+    },
+    {
+      "start": 1388.64,
+      "end": 1393.5,
+      "text": "Rewolucja w metalu, bo nie wiem, czy ktoś wcześniej grał w ten sposób,"
+    },
+    {
+      "start": 1394.08,
+      "end": 1397.18,
+      "text": "bo to był taki początek, takie podwaliny do New Metalu, prawda?"
+    },
+    {
+      "start": 1397.6,
+      "end": 1402.02,
+      "text": "Bo to był 96 rok, to tak naprawdę New Metal to wystrzelił, nie wiem, po 2000."
+    },
+    {
+      "start": 1402.34,
+      "end": 1408.8,
+      "text": "Tak, Korn wcześniej już te rzeczy robił, zresztą oni gdzieś tam chyba tego trochę podsłuchali"
+    },
+    {
+      "start": 1408.8,
+      "end": 1413.7,
+      "text": "i się inspirowali, no i tego samego producenta wzięli, tylko sepultura już była duża,"
+    },
+    {
+      "start": 1413.82,
+      "end": 1418.36,
+      "text": "a ten New Metal raczkujący jeszcze był mały. Więc oni to też wypuścili"
+    },
+    {
+      "start": 1418.36,
+      "end": 1422.16,
+      "text": "trochę szerzej, dotarli z tym do tej publiczności stricte metalowej,"
+    },
+    {
+      "start": 1423.16,
+      "end": 1426,
+      "text": "no i jednak zrobili po swojemu, bo to nie jest New Metalowa płyta,"
+    },
+    {
+      "start": 1426.06,
+      "end": 1429.38,
+      "text": "no to jest Płyta Sepultury, ale tak, oczywiście New Metal jest jej ważnym,"
+    },
+    {
+      "start": 1429.64,
+      "end": 1431.36,
+      "text": "brzmienie szczególnie, ważnym elementem."
+    },
+    {
+      "start": 1431.36,
+      "end": 1435.56,
+      "text": "Myślę, że po tym albumie poszła fala właśnie tych wszystkich zespołów,"
+    },
+    {
+      "start": 1436.36,
+      "end": 1442.52,
+      "text": "no ale wracając, dla mnie ten album to też był trochę taki szok, bo ja byłem przyzwyczajony do Sepultury"
+    },
+    {
+      "start": 1442.52,
+      "end": 1451.06,
+      "text": "z Arise albo z Binet The Remains, na Chaos AD oni już zmienili się, ale to jeszcze był..."
+    },
+    {
+      "start": 1451.06,
+      "end": 1453.04,
+      "text": "I zapowiadali już trochę to, co było na ruch."
+    },
+    {
+      "start": 1453.4,
+      "end": 1454.12,
+      "text": "Tak, dokładnie."
+    },
+    {
+      "start": 1454.24,
+      "end": 1457.36,
+      "text": "Ale jeszcze wtedy trudno było przewidzieć, w którą stronę się pójdzie."
+    },
+    {
+      "start": 1457.48,
+      "end": 1464.88,
+      "text": "Ale to była taka, Chaos AD, może to był taki właśnie opus magnum Sepultury,"
+    },
+    {
+      "start": 1465,
+      "end": 1468.84,
+      "text": "po tych wszystkich wcześniejszych płytach, dokonaniach, to był ten moment,"
+    },
+    {
+      "start": 1469.34,
+      "end": 1471.48,
+      "text": "gdzie doszli do takiego absolutu chyba."
+    },
+    {
+      "start": 1472.04,
+      "end": 1477.16,
+      "text": "Do dzisiaj ta płyta jest genialna i broni się, jest ponadczasowa."
+    },
+    {
+      "start": 1477.78,
+      "end": 1485.66,
+      "text": "A Roots był eksperymentem trochę, był odważnym pójściem właśnie w stronę muzyki etnicznej,"
+    },
+    {
+      "start": 1486.04,
+      "end": 1488.94,
+      "text": "Ameryki Południowej, czy tam Brazylii i Indian."
+    },
+    {
+      "start": 1489.9,
+      "end": 1492.72,
+      "text": "Te wszystkie elementy, które oni wykorzystywali, to było wspaniałe."
+    },
+    {
+      "start": 1493.5,
+      "end": 1499.56,
+      "text": "Instrumenty, oni gdzieś tam polecieli do dżungli i nagrywali te utwory z Indianami."
+    },
+    {
+      "start": 1500.12,
+      "end": 1504.4,
+      "text": "Na pewno jako eksperyment, czy przełom, czy coś nowatorskiego zupełnie dla metalu,"
+    },
+    {
+      "start": 1504.72,
+      "end": 1507.48,
+      "text": "na pewno odważny bardzo krok, który oni tutaj zrobili."
+    },
+    {
+      "start": 1507.56,
+      "end": 1512,
+      "text": "To wymagało dużej odwagi, ale wydaje mi się, że to jest taki zespół..."
+    },
+    {
+      "start": 1512,
+      "end": 1515.24,
+      "text": "Zresztą kiedyś słuchałem wywiadu z Andreasem i on powiedział,"
+    },
+    {
+      "start": 1515.24,
+      "end": 1520.88,
+      "text": "że dla niego nagrywanie takiej samej płyty za każdym razem nie jest dobrym pomysłem"
+    },
+    {
+      "start": 1520.88,
+      "end": 1527.28,
+      "text": "i jego sposób na Sepulturę to było to, żeby zmieniać, szukać i eksperymentować."
+    },
+    {
+      "start": 1527.76,
+      "end": 1532.28,
+      "text": "No, chyba później też, bo właściwie każda kolejna płyta Sepultury jest inna."
+    },
+    {
+      "start": 1533.04,
+      "end": 1536.94,
+      "text": "A faktycznie może Max po prostu na Roots znalazł jakąś formułę,"
+    },
+    {
+      "start": 1537.06,
+      "end": 1539.82,
+      "text": "którą potem Soulfly właściwie pielęgnował."
+    },
+    {
+      "start": 1540.18,
+      "end": 1544.3,
+      "text": "I poza tymi sytuacjami takimi czysto personalnymi,"
+    },
+    {
+      "start": 1544.48,
+      "end": 1551.76,
+      "text": "być może też tutaj nastąpił rozjazd tych dwóch najważniejszych person artystycznych w Sepulturze."
+    },
+    {
+      "start": 1552.16,
+      "end": 1557.3,
+      "text": "Tak teraz sobie pomyślałem, jak to mówiłeś, że Max chyba po prostu chciał robić to,"
+    },
+    {
+      "start": 1557.44,
+      "end": 1565.54,
+      "text": "do czego oni doszli na Roots, a Andreas rzeczywiście za każdym razem jednak próbuje wymyślać coś innego."
+    },
+    {
+      "start": 1565.98,
+      "end": 1569.6,
+      "text": "Co tam pomiędzy nimi zaszło, to nikt tak naprawdę nie wie, ale..."
+    },
+    {
+      "start": 1569.6,
+      "end": 1574.6,
+      "text": "Nie, ja mówię o czysto artystycznych i muzycznych postawach, które są rzeczywiście odmienne."
+    },
+    {
+      "start": 1574.98,
+      "end": 1581.04,
+      "text": "Ciekaw jestem właśnie, czy Max, czy Andreas tutaj akurat w aspekcie tej płyty, Roots,"
+    },
+    {
+      "start": 1581.5,
+      "end": 1586.28,
+      "text": "czy oni byli zgodni, czy tutaj było, czy oni byli zgodni co do kierunku,"
+    },
+    {
+      "start": 1586.5,
+      "end": 1589.44,
+      "text": "że pojedziemy do dżungli, że będziemy..."
+    },
+    {
+      "start": 1589.44,
+      "end": 1594.4,
+      "text": "Ja myślę, że to był czas dominacji Maxa jednak w zespole i wizji Maxa."
+    },
+    {
+      "start": 1594.4,
+      "end": 1599.7,
+      "text": "To tak przynajmniej z materiałów, które są mi dostępne, to wynika."
+    },
+    {
+      "start": 1599.98,
+      "end": 1603.52,
+      "text": "Posłuchajmy teraz Sepultury i zostawmy ją na chwilę, a może już na zawsze,"
+    },
+    {
+      "start": 1603.78,
+      "end": 1609.76,
+      "text": "ale posłuchajmy tej Roots, bo chciałbym jeszcze o jednej płycie z 96 roku za chwilę powiedzieć."
+    },
+    {
+      "start": 1609.76,
+      "end": 1611.68,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 1815.49,
+      "end": 1833.37,
+      "text": "To była sepultura i jej korzenie, a teraz ostatnia płyta z 96 roku, przynajmniej ostatnia w tej audycji, The Great Southern Trent Kill, Pantera. Proszę powiedzieć coś o tym zespole i o tej płycie."
+    },
+    {
+      "start": 1834.81,
+      "end": 1852.09,
+      "text": "No tak, Pantera, jeden z moich ulubionych zespołów na 100%, duża inspiracja w kwestii komponowania, w kwestii grania na gitarze. Często spotykam się z opiniami, że w moim brzmieniu słychać Dimebagga, Darella i no muszę się z tym zgodzić."
+    },
+    {
+      "start": 1852.09,
+      "end": 1854.43,
+      "text": "No właśnie miałem zapytać, protestujesz? No słychać."
+    },
+    {
+      "start": 1854.45,
+      "end": 1855.61,
+      "text": "Nie, no słychać, słychać."
+    },
+    {
+      "start": 1856.17,
+      "end": 1861.83,
+      "text": "Bo to jest ten trashowy, trashowo-defowy nawet punkt wyjścia, ale to jest też ten groove, którego..."
+    },
+    {
+      "start": 1861.83,
+      "end": 1865.41,
+      "text": "Groove plus właśnie kwestie jakiejś takiej artykulacji chyba, kostkowania."
+    },
+    {
+      "start": 1865.61,
+      "end": 1872.29,
+      "text": "Już takie czysto techniczne kwestie wydobycia dźwięku, które sprawiają właśnie, że coś brzmi tak, a nie inaczej."
+    },
+    {
+      "start": 1872.31,
+      "end": 1888.05,
+      "text": "Tu dygresja, dlatego mi się nie mogły spodobać koncerty tej Pantery teraz po powrocie, bo Zach Wilde tam, który jest świetnym gitarzystą, ale w swojej osobnej kategorii, jak wjechał z tym swoim śmietnikiem w numery, które były tak bardzo..."
+    },
+    {
+      "start": 1888.05,
+      "end": 1891.63,
+      "text": "W których istotą, to szybkie szczególnie, nie, było taka dokładność..."
+    },
+    {
+      "start": 1891.63,
+      "end": 1893.73,
+      "text": "Tak, tak, tak, artykulacja, to staccato takie."
+    },
+    {
+      "start": 1893.77,
+      "end": 1896.11,
+      "text": "Tak, więc ja nie byłem w stanie."
+    },
+    {
+      "start": 1896.45,
+      "end": 1898.31,
+      "text": "Ten tranzystorowy sound time bagga."
+    },
+    {
+      "start": 1898.39,
+      "end": 1898.61,
+      "text": "Tak."
+    },
+    {
+      "start": 1898.73,
+      "end": 1915.15,
+      "text": "On miał na to swój patent i to jest patent, który mało, mało który gitarzysta metalowy czy rockowy stosuje, bo on tu porusza takie mało ciekawe kwestie na przykład samego doboru sprzętu, który decyduje o tym, jak dany gitarzysta czy zespół brzmi."
+    },
+    {
+      "start": 1915.87,
+      "end": 1926.57,
+      "text": "Dimec wybierał, to nie był jakiś wypasiony, najdroższy sprzęt, te najbardziej czczone wzmacniacze lampowe typu Marshall czy Mesa."
+    },
+    {
+      "start": 1927.11,
+      "end": 1939.79,
+      "text": "On grał na randalach, to są takie średniej półki w sumie wzmacniacze tranzystorowe, które już na dzień dobry, samo to, że to jest tranzystor, nie będzie brzmiał tak potężnie i szeroko jak lampa."
+    },
+    {
+      "start": 1940.79,
+      "end": 1948.39,
+      "text": "Ale z drugiej strony ten tranzystor ma tą żyletę, ma ten cios, ma tą prędkość, ma tą prędkość."
+    },
+    {
+      "start": 1948.97,
+      "end": 1951.23,
+      "text": "Także tak, Dimec miał ten swój patent."
+    },
+    {
+      "start": 1952.11,
+      "end": 1954.19,
+      "text": "Ale o czym wróćmy, wróćmy, bo się tutaj zabędzimy."
+    },
+    {
+      "start": 1954.19,
+      "end": 1956.81,
+      "text": "Great Southern Trend Kill, 96 rok."
+    },
+    {
+      "start": 1956.93,
+      "end": 1961.23,
+      "text": "No może nie jest to moja ulubiona płyta Pantery, ale jest fajna, jest luzacka."
+    },
+    {
+      "start": 1961.23,
+      "end": 1970.65,
+      "text": "Nie czuć ciśnienia takiego, jak na przykład album wcześniejszy, Far Beyond Driven, który był genialnym albumem i był na pierwszym miejscu."
+    },
+    {
+      "start": 1970.79,
+      "end": 1972.41,
+      "text": "Dostali gramie i tak dalej, prawda?"
+    },
+    {
+      "start": 1973.51,
+      "end": 1984.75,
+      "text": "Ale słuchając tego Far Beyond Driven, masz wrażenie, że jest, gdzieś tam jest strasznie ciśnienie, że nie wiem, ja czuję, że w studium musiała panować jakaś taka atmosfera, że musimy to zrobić najlepiej na świecie, musimy dać radę."
+    },
+    {
+      "start": 1984.75,
+      "end": 1999.89,
+      "text": "Ja to się posłużę takim porównaniem z siłownią, które w przypadku akurat Pantery nie jest nieadekwatne, że poprzednie płyty to był człowiek, który spędza dużo czasu i wylewa dużo potu na siłowni, ćwiczy, odżywia się odpowiednio."
+    },
+    {
+      "start": 2000.57,
+      "end": 2009.47,
+      "text": "A Far Beyond Driven, no widać, że tam wjechały jakieś nielegalne substancje, które pomogły jeszcze tej masy dobudować i ona trochę nienaturalnie wygląda."
+    },
+    {
+      "start": 2009.63,
+      "end": 2024.93,
+      "text": "Coś w tym jest, coś w tym jest. Jest jakiś taki element obcego w tym, obcego DNA. Aczkolwiek płyta dopracowana do maksimum, aż przekraczająca jakieś normy zdrowego rozsądku."
+    },
+    {
+      "start": 2025.73,
+      "end": 2036.05,
+      "text": "Genialna płyta, ale może właśnie przez to, że, nie wiem, może se uświadomili, że osiągnęli już to, co chcieli, ten opus Magnum swój nagrali. Może wyluzowali trochę."
+    },
+    {
+      "start": 2036.49,
+      "end": 2043.87,
+      "text": "Więcej tam słuchać tego amerykańskiego południa, tego miejsca, skąd pochodzą. Zresztą to jest zaznaczone w tytule, Southern Trendki, ale fajnie, że to słychać."
+    },
+    {
+      "start": 2043.87,
+      "end": 2060.87,
+      "text": "Ale to ciekawy temat, bo tak jak w przypadku, jeszcze na momencik wracania do sepultury, tak jakby po pewnej takiej już finalnej, nazwijmy to płycie zespołu najlepszej, osiągnięcia jakichś laurów, jest ten luz i jakiś powrót do korzeni, do domu."
+    },
+    {
+      "start": 2060.87,
+      "end": 2071.09,
+      "text": "Tutaj sepultura, powrót do, romans właśnie z Brazylią, pokazanie skąd jesteśmy. Tutaj, jak zauważyłeś, Pantera południe."
+    },
+    {
+      "start": 2071.11,
+      "end": 2072.57,
+      "text": "Wróciła do Teksasu na pustynie."
+    },
+    {
+      "start": 2072.81,
+      "end": 2093.99,
+      "text": "Tak, tak. Trochę więcej luzu, trochę tak guma do rzucia wróciła, wiesz, i tak dalej. Tak, jestem fanem tej płyty i fajnie się jej słucha i właśnie ona przychodzi w takim momencie, kiedy, o, posłuchajmy sobie coś takiego mniej, nie wiem, wymagającego, po prostu takiego metalu dla przyjemności, dla grówu."
+    },
+    {
+      "start": 2094.55,
+      "end": 2101.79,
+      "text": "Posłuchajmy, proszę Państwa, metalu dla przyjemności, bo potem to już czeka nas naprawdę ciężka orka."
+    },
+    {
+      "start": 2393.44,
+      "end": 2406.5,
+      "text": "To była Pantera, a my czynimy krok do roku 2000, w którym ukazuje się debiutancki album zespołu Decapitated Wins of Creation."
+    },
+    {
+      "start": 2406.5,
+      "end": 2419.96,
+      "text": "O Decapitated rozmawiamy w kontekście trzydziestolecia zespołu, które w 2026 roku grupa obchodzi i obchodzić będzie na koncertach chociażby, na festiwalach."
+    },
+    {
+      "start": 2419.96,
+      "end": 2436.96,
+      "text": "Ale dziewięćdziesiąty szósty to było samo powstanie grupy, natomiast oficjalny debiut to rok dwutysięczny w wytwórni Irejk, która jeszcze wtedy nie zmarnotrowiła swojej legendy."
+    },
+    {
+      "start": 2438,
+      "end": 2441.08,
+      "text": "Niezłe wejście na scenę."
+    },
+    {
+      "start": 2441.08,
+      "end": 2457.66,
+      "text": "To prawda, to prawda. Zespół powstał w 1996 roku i przez te pierwsze cztery lata udało nam się nagrać dwie taśmy demo i pograć tam jakieś lokalne koncerty tu i ówdzie, lokalnie w Polsce."
+    },
+    {
+      "start": 2459.08,
+      "end": 2467.38,
+      "text": "Istnieć, ale nie był to jakiś, no nie nazwałbym tego jakimś mocnym wejściem w scenę, jakimś boomem."
+    },
+    {
+      "start": 2467.72,
+      "end": 2471.36,
+      "text": "Ukazywały się nam jakieś recenzje w magazynach, w zinach."
+    },
+    {
+      "start": 2472.04,
+      "end": 2479.86,
+      "text": "Klasycznie jakieś tam wysyłanie flairu, wymienianie się taśmami, zaprzyjaźnionymi zespołami i tak dalej."
+    },
+    {
+      "start": 2479.86,
+      "end": 2489.62,
+      "text": "Więc działaliśmy sobie tutaj spokojnie na naszym podwórku polskim, podziemnym, grając lokalne koncerty i dobrze się bawiąc."
+    },
+    {
+      "start": 2489.72,
+      "end": 2494.36,
+      "text": "I nagle, nie wiem czy miałbym opowiedzieć jak do tego wszystkiego doszło, czy po prostu..."
+    },
+    {
+      "start": 2494.36,
+      "end": 2497.08,
+      "text": "Nie, ludzie mają dostęp do internetu, bardziej opowiedz."
+    },
+    {
+      "start": 2497.08,
+      "end": 2507.64,
+      "text": "Nagle dostaliśmy w łapy deal z zachodnią wytwórnią, dokładnie z angielską wytwórnią Irejk, z wytwórnią, która wydawała duże zespoły."
+    },
+    {
+      "start": 2507.64,
+      "end": 2511.02,
+      "text": "No właśnie, bardziej mi chodzi o twoje poczucie wtedy."
+    },
+    {
+      "start": 2511.18,
+      "end": 2523.16,
+      "text": "To znaczy, tydzień temu mówiłeś o tym, że właściwie to nie miałeś żadnych oczekiwań związanych z zespołem, kiedy zespół powstawał, bo kolega wpadł na pomysł, więc popłynąłeś na tej fali."
+    },
+    {
+      "start": 2523.34,
+      "end": 2537.5,
+      "text": "No ale kiedy wydajesz płytę Irejk i wiesz, co z tą nalepką się ukazywało, jakie płyty się ukazywały, w jakim towarzystwie się znajdujecie, kiedy słyszysz o planach tych pierwszych tras koncertowych, to chyba już do ciebie dotarło, że coś się dzieje."
+    },
+    {
+      "start": 2537.52,
+      "end": 2547.76,
+      "text": "To dotarło wtedy do mnie i to dość mocno, bo ja pamiętam dokładnie, że stałem sobie w pokoju z tą świadomością, która mnie uderzyła."
+    },
+    {
+      "start": 2547.9,
+      "end": 2549.92,
+      "text": "To było jak fala uderzeniowa."
+    },
+    {
+      "start": 2550.46,
+      "end": 2557.94,
+      "text": "Naprawdę dla nastolatka, którym wtedy byłem, nie wiem ile miałem, 18 lat może, 17-18 lat."
+    },
+    {
+      "start": 2558.54,
+      "end": 2573.64,
+      "text": "To był szok, to było przejście no właśnie z tej takiej lokalnej, podziemnej zabawy na jakieś poważne rzeczy, których ja kompletnie nie rozumiałem, ale wiedziałem, że to jest coś już na serio."
+    },
+    {
+      "start": 2574.28,
+      "end": 2585.96,
+      "text": "I ta świadomość, że o kurczę, to jest coś poważnego, tutaj już nie ma żartów, żarty się skończyły, to już nie można sobie po prostu tak frywolnie podchodzić do tego tematu."
+    },
+    {
+      "start": 2585.96,
+      "end": 2596.6,
+      "text": "I naprawdę pamiętam, że uderzyło mnie to i to była chyba pierwsza w ogóle w życiu taka, taki moment, gdzie ja musiałem podjąć decyzję."
+    },
+    {
+      "start": 2596.8,
+      "end": 2601.28,
+      "text": "Podjąć decyzję i ta decyzja może dość mocno zaważyć na moim przyszłym życiu."
+    },
+    {
+      "start": 2602.4,
+      "end": 2609.08,
+      "text": "Bo raz, że przyszedł kontrakt z Irek, a jeszcze wcześniej przyszedł kontrakt z Mariuszem Kmiołkiem."
+    },
+    {
+      "start": 2610.44,
+      "end": 2611.48,
+      "text": "Menadżerski kontrakt."
+    },
+    {
+      "start": 2611.92,
+      "end": 2620.52,
+      "text": "I tam były napisane te wszystkie rzeczy, te zobowiązania, te płyty, jakieś pieniądze, jakieś..."
+    },
+    {
+      "start": 2620.52,
+      "end": 2622.48,
+      "text": "Terminy, jakieś..."
+    },
+    {
+      "start": 2622.48,
+      "end": 2623.24,
+      "text": "Procenty."
+    },
+    {
+      "start": 2624.06,
+      "end": 2628.28,
+      "text": "Dlatego ja byłem zszokowany zupełnie. Zupełnie byłem z tym zszokowany."
+    },
+    {
+      "start": 2629.8,
+      "end": 2632.44,
+      "text": "I wiedziałem, że to jest coś wielkiego."
+    },
+    {
+      "start": 2632.8,
+      "end": 2639.68,
+      "text": "Wiedziałem, że muszę się dobrze zastanowić, chociaż i tak wiedziałem, co mam zrobić i zrobiłem to."
+    },
+    {
+      "start": 2640.9,
+      "end": 2645.4,
+      "text": "Pomimo wszystko, pomimo tego, że tego nie rozumiałem, pomimo tego, że..."
+    },
+    {
+      "start": 2645.4,
+      "end": 2648.86,
+      "text": "Właśnie, co tu da dobre zastanawianie, jak serce wie?"
+    },
+    {
+      "start": 2649.12,
+      "end": 2652.32,
+      "text": "Serce wie, głowa jeszcze nie wie."
+    },
+    {
+      "start": 2653.94,
+      "end": 2658.96,
+      "text": "Zero doświadczenia, wiesz, ja nie miałem, zespół nie miał w ogóle żadnego doświadczenia."
+    },
+    {
+      "start": 2659.3,
+      "end": 2668.1,
+      "text": "Ja ostatnio gdzieś natrafiłem na jakiś rider, rider koncertowy, który Marcin, nasz basista,"
+    },
+    {
+      "start": 2668.62,
+      "end": 2675.86,
+      "text": "wczesny wysyłał do promotorów koncertów, które graliśmy i tam były jakieś takie śmieszne informacje,"
+    },
+    {
+      "start": 2676.02,
+      "end": 2681.6,
+      "text": "że potrzebujemy garderobi tyle i tyle metrów kwadratowych, że zwroty kosztów."
+    },
+    {
+      "start": 2681.6,
+      "end": 2686.14,
+      "text": "W ogóle widać było po tym brak zupełnie pojęcia i doświadczenia."
+    },
+    {
+      "start": 2687.06,
+      "end": 2695.4,
+      "text": "No, to było uderzenie, świadomość tego, że to Irek, że zaczynają się jakieś poważne klimaty."
+    },
+    {
+      "start": 2695.86,
+      "end": 2704.32,
+      "text": "Wcześniej, jakby z racji tego, że my to robiliśmy, że nagrywaliśmy, czuliśmy, że ok, robimy to, więc angażujemy się w to."
+    },
+    {
+      "start": 2704.86,
+      "end": 2713.84,
+      "text": "Gramy próby regularne, robimy to po coś, ale nie spodziewaliśmy, że to tak szybko nagle nas zaskoczy, że ta wiadomość, ten kontrakt i to wszystko."
+    },
+    {
+      "start": 2714.26,
+      "end": 2721.46,
+      "text": "I to w dodatku będzie od razu wejście na taki wysoki, międzynarodowy poziom, bo to też nie było takie oczywiste w Polsce jeszcze."
+    },
+    {
+      "start": 2721.46,
+      "end": 2729.14,
+      "text": "Słuchaj, nie mieliśmy jakiejś takiej, wydaje mi się, że fajnie jakby wtedy jakaś była taka, taki czas, jakaś taka, jak to nazwać?"
+    },
+    {
+      "start": 2730.3,
+      "end": 2730.7,
+      "text": "Przejściowy?"
+    },
+    {
+      "start": 2731.1,
+      "end": 2738.66,
+      "text": "Jakaś przejściowy czas, jakaś platforma do tego, żeby wyjść właśnie w tą pierwszą debiutancką płytę, w ten pierwszy kontrakt,"
+    },
+    {
+      "start": 2739.14,
+      "end": 2746.14,
+      "text": "żeby wiedzieć, jak to ugryźć, wiedzieć, jak z tym się zmierzyć i psychicznie i pod kątem takim czysto biznesowo,"
+    },
+    {
+      "start": 2747.2,
+      "end": 2749.48,
+      "text": "formalnym, tak, dokładnie."
+    },
+    {
+      "start": 2750.9,
+      "end": 2757.18,
+      "text": "No ale była to też z drugiej strony wielka frajda, wielka radość i jakby duma też, wiesz,"
+    },
+    {
+      "start": 2757.18,
+      "end": 2763.98,
+      "text": "no wiele osób z naszego otoczenia, które nas wspierały, nas supportowały, było z nas dumnych."
+    },
+    {
+      "start": 2764.16,
+      "end": 2767.22,
+      "text": "Starsi koledzy, metalowcy w mieście i tak dalej."
+    },
+    {
+      "start": 2767.58,
+      "end": 2772.16,
+      "text": "No dużo by tu opowiadać, bo to się wiąże później z różnymi następstwami i tak dalej."
+    },
+    {
+      "start": 2772.66,
+      "end": 2778.98,
+      "text": "To zostawmy na razie te następstwa, posłuchajmy, posłuchajmy czegoś z tego waszego debiutu."
+    },
+    {
+      "start": 2779.1,
+      "end": 2782.22,
+      "text": "Czy masz jakiś utwór, który szczególnie tak?"
+    },
+    {
+      "start": 2782.86,
+      "end": 2783.86,
+      "text": "Może Nine Steps."
+    },
+    {
+      "start": 2784.32,
+      "end": 2785.34,
+      "text": "Może Nine Steps."
+    },
+    {
+      "start": 2785.34,
+      "end": 2787.1,
+      "text": "DZIENNIKARZ"
+    },
+    {
+      "start": 3091.33,
+      "end": 3113.51,
+      "text": "Słuchacie ciężko na sercu drugiego odcinka poświęconego 30-leciu Decapitated jest ze mną w studiu VOG i jesteśmy w roku 2000, w roku debiutu płytowego Decapitated i zajmiemy się teraz tym, czym się zajmowaliśmy wcześniej, czyli nakreślaniem szerokiego kontekstu,"
+    },
+    {
+      "start": 3113.51,
+      "end": 3129.81,
+      "text": "bo wy wypuszczacie tę płytę, która jaka jest, słyszeliśmy przed chwilą, zresztą fani zespołu, fani death metalu doskonale wiedzą, no ale to nie działa w próżni, działa to w tym całym otoczeniu, które wtedy istnieje."
+    },
+    {
+      "start": 3130.95,
+      "end": 3143.15,
+      "text": "Decide nie był wtedy chyba taką wielką konkurencją, jak byłby jeszcze chwilę wcześniej, bo to rok, w którym wypuścili Incinerate hymn. No to już był czas nie najlepszego Decide."
+    },
+    {
+      "start": 3143.15,
+      "end": 3148.39,
+      "text": "Nie najlepszego, zdecydowanie. Nie no, dla mnie Decide to pierwsze trzy płyty, tak naprawdę."
+    },
+    {
+      "start": 3149.11,
+      "end": 3152.43,
+      "text": "Pełna zgoda. Ale Morbid Angel Gateways to Anihilation."
+    },
+    {
+      "start": 3153.01,
+      "end": 3161.91,
+      "text": "O, to zupełnie inna bajka. To akurat tutaj poziom był trzymany, tutaj są wspaniałe kompozycje, rozbudowane. No niesamowita jest ta płyta."
+    },
+    {
+      "start": 3161.99,
+      "end": 3172.79,
+      "text": "Niesamowita jest, nie chcę używać takich sztąpowych, że jest ciężar, że jest klimat. To po prostu się chłonie, to trzeba posłuchać i zdecydowanie Morbid Angel, czy w szczytowej, to nie wiem w formie,"
+    },
+    {
+      "start": 3172.79,
+      "end": 3190.49,
+      "text": "ale ciągle w bardzo wysokiej i w poszukujący, drążący i eksperymentujący też. Mega taka transowa też płyta. Nie jest to taka czysto death metalowa płyta, którą się słucha, chłonie, ale to jest metal, gdzie jest energia, gdzie jest moc."
+    },
+    {
+      "start": 3190.75,
+      "end": 3194.45,
+      "text": "Trochę tutaj odpłynął w jakieś zaświaty, w jakieś krainy."
+    },
+    {
+      "start": 3195.25,
+      "end": 3199.07,
+      "text": "Odpłynął, tak, za chwilę odpłynął, ale już tutaj się żegnają, ale jeszcze są obecni."
+    },
+    {
+      "start": 3199.07,
+      "end": 3211.13,
+      "text": "Powiedziałeś, że Decide nie był konkurencją. Ciężko powiedzieć to w kontekście debiutu Decapitated i Decide, pomimo tego, że Decide miał słabszy czas już i średnie te płyty były,"
+    },
+    {
+      "start": 3211.69,
+      "end": 3213.51,
+      "text": "ale był legendą i był to Decide."
+    },
+    {
+      "start": 3213.51,
+      "end": 3223.69,
+      "text": "Nie, no oczywiście. Bardziej chodzi mi o to, jak wy, wchodząc wtedy w scenę muzyczną z materiałem death metalowym, w jakie otoczenie wchodziliście?"
+    },
+    {
+      "start": 3223.69,
+      "end": 3231.43,
+      "text": "No bo też sprawdzałem, na ile dobrze pamiętam, czy to był dobry czas dla death metalu, czy nie był dobry."
+    },
+    {
+      "start": 3232.67,
+      "end": 3241.77,
+      "text": "I na dwoje babka wróżyła, powiem ci, no bo właśnie Decide grał, co grał, ale też ukazywały się takie płyty jak Immolation Close to World Below,"
+    },
+    {
+      "start": 3241.77,
+      "end": 3249.63,
+      "text": "o której mówiliśmy tydzień temu, która jest fantastyczną płytą Immolation, ale też to jest rok Nile."
+    },
+    {
+      "start": 3249.63,
+      "end": 3264.01,
+      "text": "I tu już wchodzi na scenę nowy death metal i okazuje się, że można ten death metal grać świeżo, że to nie jest temat artystycznie zamknięty i że to wcale nie jest tak, że w latach dziewięćdziesiątych wszystko zostało już tam wymyślone, powiedziane, zebrane."
+    },
+    {
+      "start": 3264.01,
+      "end": 3276.93,
+      "text": "Tak jak sepultura w dziewięćdziesiątym szóstym roku poszła wróc i zaczęła rozwijać gatunek, tak death metal i to jest bardzo dobry przykład, który właśnie tutaj użyłeś, Jarku, z Najlem."
+    },
+    {
+      "start": 3276.93,
+      "end": 3293.45,
+      "text": "Czy też, no właśnie, to od 2000 można postawić taką krechę w death metalu, że faktycznie zaczęło się zmieniać i wcale nie na gorsze, tylko w tym kontekście, że nurt czy gatunek zaczął się otwierać."
+    },
+    {
+      "start": 3293.69,
+      "end": 3312.51,
+      "text": "Nie były to jakieś mega odważne w takim sensie, że metalowcy porzuciliby ten gatunek, ale w takim, który rozwijał ten gatunek, ale w sposób ciągle akceptowalny przez prawdziwych metalowców, adeptów tej sztuki,"
+    },
+    {
+      "start": 3312.51,
+      "end": 3323.75,
+      "text": "ale jednak łączący nowe elementy, pojawił się nowy świat i to też dało podwaliny, czy debiut Decapitated, pozwolę sobie nieskromnie jakby też powiedzieć,"
+    },
+    {
+      "start": 3324.35,
+      "end": 3333.51,
+      "text": "bo my weszliśmy, może też w nienajlepszym momencie w death metalu, bo najlepszym były oczywiście lata dziewięćdziesiąte, dobrze? Powiem, że dziewięćdziesiąte?"
+    },
+    {
+      "start": 3333.51,
+      "end": 3336.51,
+      "text": "No na pewno, dziewięćdziesiąte, bo to był też..."
+    },
+    {
+      "start": 3336.51,
+      "end": 3338.25,
+      "text": "W osiemdziesiątych, no to nie no..."
+    },
+    {
+      "start": 3338.25,
+      "end": 3344.45,
+      "text": "Ta muzyka właściwie w osiemdziesiątych powstawała, natomiast w latach dziewięćdziesiątych to były największe triumfy prawie komercyjne,"
+    },
+    {
+      "start": 3344.55,
+      "end": 3348.97,
+      "text": "to znaczy niektóre zespoły podpisywały się wtedy z Majorsami, Morbid Dungeon na chwilę chociażby."
+    },
+    {
+      "start": 3349.09,
+      "end": 3352.17,
+      "text": "Dokładnie, największe sprzedaże i jednak chyba te płyty..."
+    },
+    {
+      "start": 3352.17,
+      "end": 3356.99,
+      "text": "Choć akurat Majorsi się tym death metalem udławili, bo ile na traszu się dawało zarobić pieniądze i go jakoś tam sprzedać..."
+    },
+    {
+      "start": 3356.99,
+      "end": 3361.89,
+      "text": "No może to nie był najlepszy pomysł, żeby robić z death metalów i jeszcze wtedy pop."
+    },
+    {
+      "start": 3362.49,
+      "end": 3363.79,
+      "text": "To nie były jeszcze areny."
+    },
+    {
+      "start": 3364.25,
+      "end": 3373.17,
+      "text": "Ale nigdy nie były. No popatrz, thrashowe ballady pozwalające zespołom thrashowym na sięganie do masowej publiczności się zdarzają."
+    },
+    {
+      "start": 3373.27,
+      "end": 3378.39,
+      "text": "Slayer na szczęście nigdy żadnej nie nagrał, ale Metallica oczywiście, Testament, wiesz, bardzo wiele zespołów."
+    },
+    {
+      "start": 3378.75,
+      "end": 3382.05,
+      "text": "Death metalowej ballady chyba jak do tej pory nie słyszałem."
+    },
+    {
+      "start": 3382.05,
+      "end": 3391.69,
+      "text": "Może do tego jeszcze później wrócimy, ale generalnie blasty też zaczęły wchodzić na duże obiekty, na areny."
+    },
+    {
+      "start": 3391.69,
+      "end": 3392.99,
+      "text": "Ale to już jest zupełnie..."
+    },
+    {
+      "start": 3392.99,
+      "end": 3394.73,
+      "text": "Właśnie Slipknot nam tutaj gdzieś się też pewnie..."
+    },
+    {
+      "start": 3394.73,
+      "end": 3395.99,
+      "text": "Slipknot musi się pojawić."
+    },
+    {
+      "start": 3396.35,
+      "end": 3398.99,
+      "text": "Ale dobra, nie mieszajmy aż tak bardzo."
+    },
+    {
+      "start": 3399.63,
+      "end": 3401.97,
+      "text": "Wróćmy do tego, jesteśmy przy Nile, rok 2000."
+    },
+    {
+      "start": 3402.51,
+      "end": 3408.39,
+      "text": "Też Heide Eternal, też to już było coś innego, bo też oni przekraczali prędkość światła."
+    },
+    {
+      "start": 3408.99,
+      "end": 3412.71,
+      "text": "Nile też przekraczał prędkość światła, ale używał nowych elementów."
+    },
+    {
+      "start": 3413.05,
+      "end": 3416.15,
+      "text": "Cały ten egipski lot, piramidy i tak dalej."
+    },
+    {
+      "start": 3416.73,
+      "end": 3420.03,
+      "text": "Nie tylko jakby na okładkach i w tekstach, ale również..."
+    },
+    {
+      "start": 3420.03,
+      "end": 3420.55,
+      "text": "To było słychać."
+    },
+    {
+      "start": 3420.55,
+      "end": 3421.69,
+      "text": "To było słychać przede wszystkim."
+    },
+    {
+      "start": 3421.85,
+      "end": 3429.11,
+      "text": "W skalach, w instrumentach, w dodatkowych jakichś instrumentach gdzieś tam z egipskich czy z Bliskiego Schodu."
+    },
+    {
+      "start": 3429.69,
+      "end": 3433.87,
+      "text": "Pozwolę sobie właśnie wrócić do tego mojego nieskromnego wywodu, gdzie zdecapitated."
+    },
+    {
+      "start": 3434.25,
+      "end": 3441.57,
+      "text": "Wjechaliśmy z debiutem w tym 2000 roku Wins of Creation i my zrobiliśmy to tak, że osłuchaliśmy się tego wszystkiego."
+    },
+    {
+      "start": 3442.23,
+      "end": 3447.67,
+      "text": "Jakby urośliśmy na tych wszystkich Decide'ach, Kanibalach, Vaderach i tak dalej."
+    },
+    {
+      "start": 3447.99,
+      "end": 3450.25,
+      "text": "Plus szkoła trashowa, plus szkoła muzyczna."
+    },
+    {
+      "start": 3450.99,
+      "end": 3460.93,
+      "text": "I to wszystko gdzieś tam się zmiksowało i dało efekt w tym takim hiper w sumie technicznym death metalu, który był czymś nowym."
+    },
+    {
+      "start": 3461.37,
+      "end": 3467.25,
+      "text": "Totalnie było słychać w tym elementy zaczerpnięte właśnie z naszych inspiracji."
+    },
+    {
+      "start": 3467.25,
+      "end": 3486.79,
+      "text": "Ale gdzieś wzięliśmy to wszystko i zmieszaliśmy w tym swoim plecaku i udało nam się zrobić coś, co pchnęło gdzieś jednak, dobra, może nie gatunek, ale gdzieś znaleźliśmy tą swoją półkę, nie wiem, znaleźliśmy swój język."
+    },
+    {
+      "start": 3486.79,
+      "end": 3501.67,
+      "text": "To prawda, przecież zresztą bywa kłopotliwe dla części odbiorców, szczególnie teraz na tym etapie, no bo właściwie co to jest za zespół, na taki wiesz, groove metal amerykański to jest zbyt ekstremalne, zbyt death metalowe."
+    },
+    {
+      "start": 3501.97,
+      "end": 3510.55,
+      "text": "Na death metal właśnie to jest tam zbyt wiele groove'u i tego, co nazywasz własnym językiem, bo wiesz, to rzeczywiście własne i trudno to sklasyfikować."
+    },
+    {
+      "start": 3510.79,
+      "end": 3522.41,
+      "text": "Więc nie wiem, czy artystycznie super, ale to tak pod względem takim czysto, nie wiem, marketingowym opowiadaniu o tej muzyce to jest zawsze kłopot, jak się gdzieś się tą własną ścieżką krąży."
+    },
+    {
+      "start": 3522.41,
+      "end": 3527.87,
+      "text": "Debiut był jeszcze oparty dość mocno właśnie w death metalu."
+    },
+    {
+      "start": 3527.89,
+      "end": 3532.31,
+      "text": "Tak, tak, ja mówię o tym współczesnym decapitated raczej niż o tamtych czasach."
+    },
+    {
+      "start": 3532.31,
+      "end": 3550.19,
+      "text": "Tak, to nie, to my jesteśmy zespołem, ja jestem kompozytorem, który z płytę na płytę dostarcza zupełnie coś innego i mam nadzieję, że się nie zapętlę i ciągle będę w stanie zaskakiwać z płytę na płytę, bo tak było od początku i tak się jakoś stało, że jesteśmy takim zespołem."
+    },
+    {
+      "start": 3550.19,
+      "end": 3574.93,
+      "text": "Nie jesteśmy zespołem w stylu Cannibal Corps czy Slayer, gdzie trzymamy się swojego określonego stylu za wszelką cenę, tylko już przy drugiej płycie nas spiła drastyczna zmiana, gdzie ja pamiętam jak dostałem telefon od naszego menadżera, który stwierdził, że on nie wie co to jest i żebyśmy sobie robili z tym co chcemy, bo on nie wie za co tutaj w ogóle się złapać i tak dalej."
+    },
+    {
+      "start": 3575.19,
+      "end": 3601.93,
+      "text": "A z kolei wytwórnia E-Rake była zachwycona i na tej płycie też znalazł się utwór, ten Svizz of Madness, który był ulubionym numerem właśnie w E-Rake i do dzisiaj gdzieś tam, bo ja ciągle się, Jarku, pamiętam od pierwszej trasy w Stanach, jak tam polecieliśmy, ja ciągle się spotykam właśnie z ludźmi, którzy przychodzą i mówią ten Svizz of Madness, Svizz of Madness, ponadto uważam, że już na Wings of Creation daliśmy jakieś takie..."
+    },
+    {
+      "start": 3601.92,
+      "end": 3603.86,
+      "text": "fundamenty pod"
+    },
+    {
+      "start": 3603.86,
+      "end": 3606.18,
+      "text": "dla tych kapel, zwłaszcza tych"
+    },
+    {
+      "start": 3606.18,
+      "end": 3608.58,
+      "text": "amerykańskich kapel, deadcore'owych"
+    },
+    {
+      "start": 3608.58,
+      "end": 3610.06,
+      "text": "czy metalcore'owych"
+    },
+    {
+      "start": 3610.06,
+      "end": 3612.36,
+      "text": "w kwestii właśnie tego,"
+    },
+    {
+      "start": 3612.52,
+      "end": 3614.2,
+      "text": "że my pokazaliśmy się, że się tak"
+    },
+    {
+      "start": 3614.2,
+      "end": 3616.2,
+      "text": "da grać, że"
+    },
+    {
+      "start": 3616.2,
+      "end": 3618.2,
+      "text": "można trochę zaszalić, że nie trzeba się trzymać takich"
+    },
+    {
+      "start": 3618.2,
+      "end": 3619.92,
+      "text": "topornych, właśnie"
+    },
+    {
+      "start": 3619.92,
+      "end": 3622.26,
+      "text": "gruzowatych, jaskiniowych,"
+    },
+    {
+      "start": 3622.38,
+      "end": 3624.26,
+      "text": "death metalowych riffów. Nie mówię tego"
+    },
+    {
+      "start": 3624.26,
+      "end": 3626.18,
+      "text": "w kontekście Morbid Angel Domination czy"
+    },
+    {
+      "start": 3626.18,
+      "end": 3627.38,
+      "text": "Covenant, bo tam jest"
+    },
+    {
+      "start": 3627.38,
+      "end": 3630.38,
+      "text": "fantazja, tam jest magia"
+    },
+    {
+      "start": 3630.38,
+      "end": 3631.16,
+      "text": "i poezja."
+    },
+    {
+      "start": 3631.92,
+      "end": 3633.14,
+      "text": "No ale ogólnie takiego"
+    },
+    {
+      "start": 3633.14,
+      "end": 3635.08,
+      "text": "death metalu topornego, gdzie my"
+    },
+    {
+      "start": 3635.08,
+      "end": 3637.24,
+      "text": "biegliśmy z pewną techniką, dzięki"
+    },
+    {
+      "start": 3637.24,
+      "end": 3638.9,
+      "text": "umiejętnościom, podejrzewam,"
+    },
+    {
+      "start": 3639.16,
+      "end": 3640.72,
+      "text": "zaczerpniętych w szkołach muzycznych,"
+    },
+    {
+      "start": 3641.52,
+      "end": 3643.22,
+      "text": "co dla nas było zupełnie naturalne, żeby"
+    },
+    {
+      "start": 3643.22,
+      "end": 3645.36,
+      "text": "móc zagrać w taki, a nie inny"
+    },
+    {
+      "start": 3645.36,
+      "end": 3647.44,
+      "text": "sposób. I połączyliśmy to z metalem,"
+    },
+    {
+      "start": 3647.88,
+      "end": 3649.02,
+      "text": "z metalem, z"
+    },
+    {
+      "start": 3649.02,
+      "end": 3650.68,
+      "text": "strasz metalem, z naszymi inspiracjami"
+    },
+    {
+      "start": 3650.68,
+      "end": 3653.24,
+      "text": "i wydaje mi się, że to był duży"
+    },
+    {
+      "start": 3653.24,
+      "end": 3655.44,
+      "text": "szok na zachodzie,"
+    },
+    {
+      "start": 3655.66,
+      "end": 3657.56,
+      "text": "którego nie do końca"
+    },
+    {
+      "start": 3657.56,
+      "end": 3659.22,
+      "text": "u nas w kraju ludzie byli"
+    },
+    {
+      "start": 3659.22,
+      "end": 3660.86,
+      "text": "świadomi, mogli jakby"
+    },
+    {
+      "start": 3660.86,
+      "end": 3663.38,
+      "text": "zaakceptować, czy skumać. I my też"
+    },
+    {
+      "start": 3663.38,
+      "end": 3665.7,
+      "text": "sami w zespole nie byliśmy świadomi tego, co"
+    },
+    {
+      "start": 3665.7,
+      "end": 3666.46,
+      "text": "zrobiliśmy."
+    },
+    {
+      "start": 3666.46,
+      "end": 3668.82,
+      "text": "Bo w Polsce byliście wtedy postrzegani jako"
+    },
+    {
+      "start": 3668.82,
+      "end": 3670.26,
+      "text": "jako zespół, który"
+    },
+    {
+      "start": 3670.26,
+      "end": 3672.06,
+      "text": "w Polsce byliśmy postrzegani jako"
+    },
+    {
+      "start": 3672.06,
+      "end": 3673.34,
+      "text": "jest klonem Wejdera."
+    },
+    {
+      "start": 3673.38,
+      "end": 3673.94,
+      "text": "Klonem Wejdera."
+    },
+    {
+      "start": 3673.94,
+      "end": 3674.96,
+      "text": "Złośliwie nazywanie"
+    },
+    {
+      "start": 3674.96,
+      "end": 3676.02,
+      "text": "The Copy Wejder."
+    },
+    {
+      "start": 3676.02,
+      "end": 3676.64,
+      "text": "The Copy Wejder."
+    },
+    {
+      "start": 3676.98,
+      "end": 3677.72,
+      "text": "Klonem Wejdera."
+    },
+    {
+      "start": 3677.88,
+      "end": 3679.48,
+      "text": "Oczywiście to była może"
+    },
+    {
+      "start": 3679.48,
+      "end": 3680.5,
+      "text": "największa w tym momencie"
+    },
+    {
+      "start": 3680.5,
+      "end": 3681.36,
+      "text": "inspiracja."
+    },
+    {
+      "start": 3682.16,
+      "end": 3682.38,
+      "text": "Akurat"
+    },
+    {
+      "start": 3682.38,
+      "end": 3683.62,
+      "text": "zacząłem komponować"
+    },
+    {
+      "start": 3683.62,
+      "end": 3684.64,
+      "text": "w momencie, kiedy byłem"
+    },
+    {
+      "start": 3684.64,
+      "end": 3685.24,
+      "text": "zainspirowany"
+    },
+    {
+      "start": 3685.24,
+      "end": 3686.2,
+      "text": "totalnie Wejderem."
+    },
+    {
+      "start": 3686.54,
+      "end": 3687.34,
+      "text": "To była moja jakby"
+    },
+    {
+      "start": 3687.34,
+      "end": 3687.68,
+      "text": "taka"
+    },
+    {
+      "start": 3687.68,
+      "end": 3689.18,
+      "text": "moje ciasto, moja"
+    },
+    {
+      "start": 3689.18,
+      "end": 3690.24,
+      "text": "moja baza, wiesz."
+    },
+    {
+      "start": 3690.76,
+      "end": 3691.74,
+      "text": "Okej, teraz"
+    },
+    {
+      "start": 3691.74,
+      "end": 3692.84,
+      "text": "zaczynam robić"
+    },
+    {
+      "start": 3692.84,
+      "end": 3693.8,
+      "text": "kawałki, konstruować."
+    },
+    {
+      "start": 3694.58,
+      "end": 3695.26,
+      "text": "A akurat jestem"
+    },
+    {
+      "start": 3695.26,
+      "end": 3697.04,
+      "text": "na etapie, wróćmy do"
+    },
+    {
+      "start": 3697.04,
+      "end": 3698.14,
+      "text": "mojej edukacji"
+    },
+    {
+      "start": 3698.14,
+      "end": 3699.6,
+      "text": "gitarowej, jestem"
+    },
+    {
+      "start": 3699.6,
+      "end": 3700.28,
+      "text": "na etapie"
+    },
+    {
+      "start": 3700.28,
+      "end": 3701.62,
+      "text": "obczuwania, wiesz, na gitarze"
+    },
+    {
+      "start": 3701.62,
+      "end": 3702.62,
+      "text": "całego De Profundis."
+    },
+    {
+      "start": 3703.2,
+      "end": 3704.38,
+      "text": "Więc jak ja mogę, więc jak"
+    },
+    {
+      "start": 3704.38,
+      "end": 3706.28,
+      "text": "ja mam tą technikę w łapach,"
+    },
+    {
+      "start": 3706.66,
+      "end": 3707.48,
+      "text": "a zaczynam komponować"
+    },
+    {
+      "start": 3707.48,
+      "end": 3708.06,
+      "text": "swoje utwory."
+    },
+    {
+      "start": 3708.42,
+      "end": 3709.24,
+      "text": "Tak to się dzieje przy"
+    },
+    {
+      "start": 3709.24,
+      "end": 3711.22,
+      "text": "każdy, każdy kompozytor,"
+    },
+    {
+      "start": 3711.32,
+      "end": 3712.66,
+      "text": "każdy, każdy twórca,"
+    },
+    {
+      "start": 3713.66,
+      "end": 3714.58,
+      "text": "szczególnie na początku,"
+    },
+    {
+      "start": 3715.04,
+      "end": 3716.08,
+      "text": "przy debiucie, czy przy"
+    },
+    {
+      "start": 3716.08,
+      "end": 3717.34,
+      "text": "pierwszych kompozycjach,"
+    },
+    {
+      "start": 3717.96,
+      "end": 3719.02,
+      "text": "ma swoje"
+    },
+    {
+      "start": 3719.02,
+      "end": 3720.56,
+      "text": "po prostu inspiracje, ma"
+    },
+    {
+      "start": 3720.56,
+      "end": 3722.26,
+      "text": "swoje źródła, które"
+    },
+    {
+      "start": 3722.26,
+      "end": 3723.66,
+      "text": "totalnie słychać."
+    },
+    {
+      "start": 3723.78,
+      "end": 3724.38,
+      "text": "Kończmy jeszcze rok"
+    },
+    {
+      "start": 3724.38,
+      "end": 3725.82,
+      "text": "dwutysięczny w kontekście"
+    },
+    {
+      "start": 3725.82,
+      "end": 3727.08,
+      "text": "death metalu i skoro"
+    },
+    {
+      "start": 3727.08,
+      "end": 3727.8,
+      "text": "wyjderzy mowa,"
+    },
+    {
+      "start": 3728.66,
+      "end": 3729,
+      "text": "litany."
+    },
+    {
+      "start": 3729.88,
+      "end": 3730.48,
+      "text": "Doskonała."
+    },
+    {
+      "start": 3731.52,
+      "end": 3732,
+      "text": "Uwielbiam."
+    },
+    {
+      "start": 3732.8,
+      "end": 3733.48,
+      "text": "Uwielbiam."
+    },
+    {
+      "start": 3734.4,
+      "end": 3735.96,
+      "text": "Jest to po prostu"
+    },
+    {
+      "start": 3735.96,
+      "end": 3737.12,
+      "text": "jadący czołg,"
+    },
+    {
+      "start": 3737.9,
+      "end": 3738.8,
+      "text": "jest zimno."
+    },
+    {
+      "start": 3738.94,
+      "end": 3740.02,
+      "text": "Szybko jadący czołg."
+    },
+    {
+      "start": 3740.04,
+      "end": 3740.66,
+      "text": "Wpada śnieg, jest"
+    },
+    {
+      "start": 3740.66,
+      "end": 3742.66,
+      "text": "minus czterdzieści."
+    },
+    {
+      "start": 3743.8,
+      "end": 3744.88,
+      "text": "Wspaniałe blasty."
+    },
+    {
+      "start": 3745.06,
+      "end": 3745.5,
+      "text": "Docent?"
+    },
+    {
+      "start": 3747.06,
+      "end": 3748.14,
+      "text": "Powinniśmy, powinniśmy"
+    },
+    {
+      "start": 3748.14,
+      "end": 3749.36,
+      "text": "o nim tutaj coś więcej"
+    },
+    {
+      "start": 3749.36,
+      "end": 3750.3,
+      "text": "opowiedzieć."
+    },
+    {
+      "start": 3750.78,
+      "end": 3751.68,
+      "text": "Jeden z wielkich"
+    },
+    {
+      "start": 3752.68,
+      "end": 3753.3,
+      "text": "Posłuchajmy"
+    },
+    {
+      "start": 3753.3,
+      "end": 3754.48,
+      "text": "Nail, posłuchajmy"
+    },
+    {
+      "start": 3754.48,
+      "end": 3755.68,
+      "text": "Wejdę raz"
+    },
+    {
+      "start": 3755.68,
+      "end": 3757.32,
+      "text": "litany i wracamy"
+    },
+    {
+      "start": 3757.32,
+      "end": 3758.22,
+      "text": "za chwil kilka."
+    },
+    {
+      "start": 3758.22,
+      "end": 3760.38,
+      "text": "DZIENNIKARZ"
+    },
+    {
+      "start": 4190.47,
+      "end": 4211.45,
+      "text": "Wracamy po tej krótkiej, death metalowej, bezlitosnej przerwie. Wracamy do Decapitated, wracamy do Ciężko na sercu i wracamy do 2000 roku, w którym ukazują się na przykład też takie płyty jak Nightwish, Wishmaster Children of Bottom Follow the Reaper."
+    },
+    {
+      "start": 4211.45,
+      "end": 4237.31,
+      "text": "A więc metal, metal zagrany z dużą wprawą, pewnie byś tak potrafił i to mogłoby przynieść ci pewnie większą popularność, pewnie większe pieniądze. Nie było nigdy, nie miałeś takiej pokusy, żeby, no nawet może jeżeli nie takie rzeczy jak Nightwish, bo tam w serduszku ci nie grają, no to takie rzeczy jak Children of Bottom chociażby grać."
+    },
+    {
+      "start": 4237.31,
+      "end": 4240.63,
+      "text": "Poznaliście się w ogóle z tym zespołem? Poznaliście się z Aleksii?"
+    },
+    {
+      "start": 4240.63,
+      "end": 4254.85,
+      "text": "Poznaliśmy się, tak. Poznaliśmy się z Children of Bottom podczas trasy koncertowej, bo kiedyś nas zaprosili na trasę, graliśmy z nimi w Europie, już nie pamiętam, 2014, 2000, coś gdzieś w tych rejonach."
+    },
+    {
+      "start": 4254.85,
+      "end": 4265.61,
+      "text": "Ja przygotowując się do tej audycji, też Children of Bottom mnie przypadkowo wyciągnąłem, no bo Aleksii był taką trochę figurą do ciebie podobną, czyli taki miotacz gitarowy, który gdzieś tam jest gdzieś."
+    },
+    {
+      "start": 4265.61,
+      "end": 4277.11,
+      "text": "On był w ogóle totalnym shredderem gitarowym, nazwijmy to i był ikoną. W pewnym momencie był jeden z najbardziej popularnych obok Zaka Wilda, obok Dimebega i w ogóle już mówimy o takich..."
+    },
+    {
+      "start": 4277.11,
+      "end": 4277.61,
+      "text": "Tak, fantastyczny gitarzysta, tak."
+    },
+    {
+      "start": 4277.71,
+      "end": 4289.15,
+      "text": "Fantastyczny gitarzysta. Jego gra była, wiesz, była lekka, bo on to zrobił z totalną łatwością. Podejrzewam, że musiał naprawdę dużo ćwiczyć, jak był młody."
+    },
+    {
+      "start": 4289.15,
+      "end": 4301.41,
+      "text": "Musiał na to ciężko pracować, żeby tak zagrać. Na pewno talent, ale tu widać, że to są godziny spędzone tutaj na pracy z instrumentem."
+    },
+    {
+      "start": 4302.17,
+      "end": 4312.59,
+      "text": "Fajna postać, nie znałem go osobiście, poznałem go na trasie, tylko że podczas tej trasy to on już w zasadzie prawie się do nikogo nie odzywał."
+    },
+    {
+      "start": 4312.59,
+      "end": 4326.93,
+      "text": "On wychodził tylko na scenę, a przez całe dnie siedział w autobusie w swoim pokoju tam na back lounge'u, gdzie ja tam raz poszedłem, bo któryś tam chyba klawiszowiec mnie zaprowadził, bo chciał mi pokazać, jak to tam wszystko wygląda w tym autobusie."
+    },
+    {
+      "start": 4326.93,
+      "end": 4341.59,
+      "text": "I tam zapukaliśmy do Aleksy, otworzyliśmy pokój. On tam siedział i miał cały pokój wyklejony flagami i plakatami KIS. I on sobie tam całymi dniami siedział i wychodził tylko, żeby coś zjeść albo na scenę."
+    },
+    {
+      "start": 4341.59,
+      "end": 4359.37,
+      "text": "I to wszystko. Ja pamiętam, że tylko raz z nim rozmawiałem w Atenach podczas próby. Ja pamiętam, że stałem naprzeciwko sceny, on podszedł i się ze mną przywitał i powiedział, że słyszał, że jedziemy niedługo do Stanów na trasę i że będzie to dla nas na pewno fajna trasa."
+    },
+    {
+      "start": 4359.37,
+      "end": 4367.93,
+      "text": "I coś tam, coś tam. Taka trochę gadka, szmatka. Wydaje mi się, że przyszedł się ze mną przywitać na zasadzie takiej kurtuazji, tak żeby po prostu przybić piątkę."
+    },
+    {
+      "start": 4367.93,
+      "end": 4380.65,
+      "text": "To był moment, kiedy on już był na etapie takiej ciężkiej walki z tymi swoimi demonami, nałogami. Pewnie się trzymał z dala, żeby nie popłynąć. No niestety, Aleksy przegrał tę walkę."
+    },
+    {
+      "start": 4380.71,
+      "end": 4388.93,
+      "text": "Ale wracając do tych zespołów, do tej muzyki, to jest muzyka wciąż oparta na muzyce jednak ostrej, ale jednak bardzo przystępna."
+    },
+    {
+      "start": 4389.37,
+      "end": 4392.95,
+      "text": "Dużo bardziej przystępna niż to, co w Decapitated robisz."
+    },
+    {
+      "start": 4393.05,
+      "end": 4401.57,
+      "text": "Ja doskonale pamiętam ten szum, ten boom na Cheater of Bodom w tych czasach. Ja oczywiście byłem zupełnie trochę po innej stronie."
+    },
+    {
+      "start": 4404.51,
+      "end": 4411.69,
+      "text": "Poruszałem się w innej stylistyce, w devmetalu, w thrashmetalu. Jeżeli miałbym słuchać czegoś, powiedzmy, lżejszego, to byłby to..."
+    },
+    {
+      "start": 4411.69,
+      "end": 4418.45,
+      "text": "Nie słuchać, Wacek, nie słuchać. Ja pytam, czy nie kusiło cię, żeby grać, żeby dotrzeć do szerszej publiczności,"
+    },
+    {
+      "start": 4418.45,
+      "end": 4422.01,
+      "text": "żeby grać w większych halach, żeby radio puszczało."
+    },
+    {
+      "start": 4422.01,
+      "end": 4426.07,
+      "text": "Nie, niespecjalnie, niespecjalnie, bo wiesz co, ja nie miałem nawet takiej świadomości wtedy."
+    },
+    {
+      "start": 4426.67,
+      "end": 4431.91,
+      "text": "Ja nie widziałem nigdy takich dużych koncertów. Ja nie widziałem nigdy wtedy takich dużych tras."
+    },
+    {
+      "start": 4432.57,
+      "end": 4437.45,
+      "text": "Dla mnie, dla mnie szczytem, wiesz, marzeń, to był, wiesz, to była trasa z Vaderem,"
+    },
+    {
+      "start": 4437.77,
+      "end": 4442.21,
+      "text": "gdzie my graliśmy w 2002 roku trasę z Crisun i z Vader w Europie."
+    },
+    {
+      "start": 4442.21,
+      "end": 4448.41,
+      "text": "Taką dużą trasę. Tam było chyba ze 40 koncertów. Od Irlandii po Grecję."
+    },
+    {
+      "start": 4449.57,
+      "end": 4454.77,
+      "text": "Ekstremalnie wielka, długa trasa, po której ja w ogóle wyczerpany wróciłem."
+    },
+    {
+      "start": 4455.05,
+      "end": 4458.87,
+      "text": "Jak ja spojrzałem do lustra, jak ja wyglądam po tej trasie, to ja się nie poznałem."
+    },
+    {
+      "start": 4459.39,
+      "end": 4461.93,
+      "text": "Ale to już jest temat na inną rozmowę."
+    },
+    {
+      "start": 4461.93,
+      "end": 4469.89,
+      "text": "Dla mnie te koncerty, jak ja widziałem, jak Vader zapełnia, nie wiem, salę po 400, 300, 500, 600 osób, 700 może."
+    },
+    {
+      "start": 4470.13,
+      "end": 4471.65,
+      "text": "Już nie pamiętam, jak to wtedy wyglądało."
+    },
+    {
+      "start": 4472.31,
+      "end": 4473.77,
+      "text": "To dla mnie to było wszystko."
+    },
+    {
+      "start": 4473.93,
+      "end": 4475.79,
+      "text": "Dla mnie to było..."
+    },
+    {
+      "start": 4475.79,
+      "end": 4482.51,
+      "text": "Ja sobie myślałem wtedy, że jeżeli ja ze swoim zespołem mógłbym zapełnić klub na właśnie taki jak Vader,"
+    },
+    {
+      "start": 4482.69,
+      "end": 4490.49,
+      "text": "to spoko, to ja nie mam większych tutaj inspiracji i też ja nie byłem, ja nie jeździłem zbyt często wtedy na duże koncerty,"
+    },
+    {
+      "start": 4490.59,
+      "end": 4497.39,
+      "text": "więc ja nie miałem też takiej jakby świadomości do końca, że są te wszystkie hale, te areny i że ten Trin of Bodo,"
+    },
+    {
+      "start": 4497.93,
+      "end": 4500.17,
+      "text": "że ja mógłbym w ogóle pomyśleć w ten sposób..."
+    },
+    {
+      "start": 4500.17,
+      "end": 4508.15,
+      "text": "Jesteśmy w radiu, więc państwo nie widzą, jak ja tutaj kręcę głową sam, nie wiem, czy z niedowierzaniem, czy z desaprobatą."
+    },
+    {
+      "start": 4508.91,
+      "end": 4512.69,
+      "text": "Po prostu nie wiedziałeś, że można grać mógł, która jest bardziej komercyjna, więc jej nie grałeś."
+    },
+    {
+      "start": 4512.71,
+      "end": 4514.83,
+      "text": "Ja nie podchodziłem do tego tematu w ten sposób."
+    },
+    {
+      "start": 4515.03,
+      "end": 4520.65,
+      "text": "Nie podchodziłem do tematu, może Nergal pochodził, bo on chyba podchodził bardziej w ten sposób,"
+    },
+    {
+      "start": 4520.65,
+      "end": 4527.49,
+      "text": "że on, nie wiem, w jakimś momencie zrozumiał, że kurczę, to na tym można tak zarobić,"
+    },
+    {
+      "start": 4527.63,
+      "end": 4533.93,
+      "text": "albo na tym można być dużym zespołem, można być, wiesz, ikoną, personą jakąś dużą i tak dalej."
+    },
+    {
+      "start": 4534.15,
+      "end": 4539.55,
+      "text": "I on zaczął w tym kierunku działać, mieć cel, że zrobię z zespołu to i to."
+    },
+    {
+      "start": 4539.97,
+      "end": 4541.41,
+      "text": "Ja nie miałem takiego celu."
+    },
+    {
+      "start": 4541.51,
+      "end": 4543.55,
+      "text": "Moim celem, nie wiem, co wtedy było moim celem."
+    },
+    {
+      "start": 4543.63,
+      "end": 4547.67,
+      "text": "Ja byłem na studiach, imprezowałem sobie, chodziłem po Krakowie."
+    },
+    {
+      "start": 4548.09,
+      "end": 4549.45,
+      "text": "Wyobraź sobie taką historię."
+    },
+    {
+      "start": 4549.85,
+      "end": 4553.57,
+      "text": "Po trzecim albo po czwartym, już nie pamiętam, roku studiów,"
+    },
+    {
+      "start": 4554.09,
+      "end": 4557.41,
+      "text": "ja pojechałem na Streeta, gdzie ja miałem propozycję,"
+    },
+    {
+      "start": 4557.53,
+      "end": 4561.51,
+      "text": "trasy w Stanach, czy tam w Japonii i wiesz, i Wojtek powiedział,"
+    },
+    {
+      "start": 4561.51,
+      "end": 4564.31,
+      "text": "że nie, nie pojedziemy do Japonii, bo ja mam sesję, muszę się uczyć,"
+    },
+    {
+      "start": 4564.67,
+      "end": 4565.99,
+      "text": "a studia są dla mnie najważniejsze."
+    },
+    {
+      "start": 4566.49,
+      "end": 4568.07,
+      "text": "No i wszyscy byli ok, nie, w zespole."
+    },
+    {
+      "start": 4568.15,
+      "end": 4572.07,
+      "text": "Nie było ciśnienia, że co ty weź, musimy wykorzystać tą szansę i coś tam, nie?"
+    },
+    {
+      "start": 4572.41,
+      "end": 4574.95,
+      "text": "Albo mieliśmy jakąś trasę chyba z Kanibalem czy coś,"
+    },
+    {
+      "start": 4575.05,
+      "end": 4577.61,
+      "text": "ale coś tam nie pasowało."
+    },
+    {
+      "start": 4578.01,
+      "end": 4580.65,
+      "text": "Ja wyobraź sobie, Jarek, pojechałem po chyba czwartym roku studiów"
+    },
+    {
+      "start": 4580.65,
+      "end": 4583.43,
+      "text": "do Szwajcarii, do Bazylei, grać na ulicy."
+    },
+    {
+      "start": 4584.11,
+      "end": 4587.59,
+      "text": "Ja grałem na Streecie i ja pamiętam, jak wracałem ze Streeta,"
+    },
+    {
+      "start": 4588.03,
+      "end": 4589.81,
+      "text": "z kumplem miałem w ręku keyboard,"
+    },
+    {
+      "start": 4590.11,
+      "end": 4592.87,
+      "text": "bo grałem tam jakieś, wiesz, cztery pory roku i coś,"
+    },
+    {
+      "start": 4592.97,
+      "end": 4593.89,
+      "text": "Ary na strunie G."
+    },
+    {
+      "start": 4594.55,
+      "end": 4600.09,
+      "text": "Ja wracałem na kemping, gdzie spałem, wiesz, pod jakimś namiotem, nad Renem"
+    },
+    {
+      "start": 4600.09,
+      "end": 4602.95,
+      "text": "i zahaczałem jakiś sklep muzyczny, patrzyłem do gazety"
+    },
+    {
+      "start": 4602.95,
+      "end": 4605.95,
+      "text": "i ja widziałem behemot grający gdzieś na festiwalach."
+    },
+    {
+      "start": 4606.05,
+      "end": 4610.11,
+      "text": "I ja mówię do siebie, kurde, może ja coś źle tutaj robię, wiesz?"
+    },
+    {
+      "start": 4612.85,
+      "end": 4614.79,
+      "text": "Bo oni już wtedy..."
+    },
+    {
+      "start": 4614.79,
+      "end": 4617.79,
+      "text": "Ja uwielbiałem grać koncerty, lubiłem jeździć w trasy, ja to robiłem"
+    },
+    {
+      "start": 4617.79,
+      "end": 4620.75,
+      "text": "i może mi się wydawało, że ja mam ciągle, wiesz, dużo czasu,"
+    },
+    {
+      "start": 4620.87,
+      "end": 4622.25,
+      "text": "że ja to później zrobię po prostu."
+    },
+    {
+      "start": 4854.31,
+      "end": 4882.91,
+      "text": "Jeszcze wracając do tego Aleksiego, jego umiejętności gry na gitarze i twoich umiejętności, mam takie pytanie z tym związane i też nawiązujące do roku 2000 ukazały się takie płyty jak Tony Iommi, płyta Iommi oraz Yngwie Malmsteen, War to End All Wars, płyta szrederska, gitarowa, nie żeby płyty decapitated nie były gitarowe, ale taka rozumiesz, 80% płyty to solówki."
+    },
+    {
+      "start": 4882.91,
+      "end": 4911.61,
+      "text": "Malmsteen, totalny szacun, oczywiście, oczywiście totalny szacun jako instrumentalista, wymiatacz i tak dalej, tylko z jednej strony tak, kompozycyjnie dla mnie to było takie dziwne zjawisko, zwłaszcza, że ja byłem po szkole muzycznej i te wszystkie jego, te skale, te klasyczne, ja miałem zawsze i do dzisiaj mam jakiś problem, jak słyszę albo widzę muzyka, który metalowego, z gitarą elektryczną, który stoi, wiesz, z orkiestrą smyczkową albo gra muzykę klasyczną, przekłada."
+    },
+    {
+      "start": 4911.61,
+      "end": 4914.09,
+      "text": "Nie byłem w szkole muzycznej, ale też mam z tym problem."
+    },
+    {
+      "start": 4915.43,
+      "end": 4930.03,
+      "text": "No właśnie, to może to nie ma żadnego związku z tą edukacją. Może ma, może nie, ale nie wiem dlaczego. Jedynym chyba takim projektem, ten był taki projekt The Great Cat, gdzie były dziewczyny, które grały..."
+    },
+    {
+      "start": 4930.03,
+      "end": 4931.51,
+      "text": "Jedna i tego Vivaldiego."
+    },
+    {
+      "start": 4931.51,
+      "end": 4937.83,
+      "text": "Vivaldiego, coś takiego było, pamiętam, tylko, że one grały, mi się to podobało, bo one były totalnie takie punkowe, to było brudne."
+    },
+    {
+      "start": 4938.01,
+      "end": 4941.51,
+      "text": "Podobało ci się, bo miałeś 14 lat, a ona była w bieliźnie, więc..."
+    },
+    {
+      "start": 4941.51,
+      "end": 4944.99,
+      "text": "To też mogą mieć 15%."
+    },
+    {
+      "start": 4944.99,
+      "end": 4945.93,
+      "text": "Spróbuj znajdź to teraz."
+    },
+    {
+      "start": 4947.33,
+      "end": 4948.73,
+      "text": "Posłuchasz, nie spodoba się."
+    },
+    {
+      "start": 4948.83,
+      "end": 4952.33,
+      "text": "Ale nie, to przynajmniej, wiesz co, to było takie brudne jakieś, takie niegrzeczne, nie?"
+    },
+    {
+      "start": 4952.71,
+      "end": 4953.91,
+      "text": "Niegrzeczne było, przyznaję."
+    },
+    {
+      "start": 4953.91,
+      "end": 4962.19,
+      "text": "A na przykład jak widzę, czy tam Malmsteena, czy Dave'a Mustaine'a, który gra jakieś, wiesz, klasyki w tak, kurde, no, trochę nieudolny sposób, no."
+    },
+    {
+      "start": 4962.41,
+      "end": 4971.99,
+      "text": "Wiesz, wolę posłuchać dobrego klasyka, grającego muzykę klasyczną na klawesynie, czy na fortepianie, czy na skrzypcach, niż, kurczę, Dave, metalowca udającego, wiesz."
+    },
+    {
+      "start": 4972.65,
+      "end": 4977.89,
+      "text": "Ale można nagrać płytę szrederską, nie pakując się w taką neoklasykę. Czy nigdy nie myślałeś o tym?"
+    },
+    {
+      "start": 4977.89,
+      "end": 4983.87,
+      "text": "Moje pytanie brzmi, czy nigdy nie myślałeś o tym, żeby zrobić płytę gitarową, instrumentalną, właśnie, wiesz, 80% solówek, patentów,"
+    },
+    {
+      "start": 4983.91,
+      "end": 4988.45,
+      "text": "warsztw, cudów, wyżyć się na tej gitarze, tak już, wiesz, potwornie."
+    },
+    {
+      "start": 4988.99,
+      "end": 4990.57,
+      "text": "Ach, tutaj..."
+    },
+    {
+      "start": 4990.57,
+      "end": 4995.63,
+      "text": "Ja nie miałem nigdy aspiracji, żeby być właśnie takim Steve Vai'em, czy Satrianim, wiesz."
+    },
+    {
+      "start": 4996.23,
+      "end": 4999.65,
+      "text": "I lubiłem, miałem czas, kiedy uwielbiałem, słuchajcie, właśnie, w szczególności Vaja."
+    },
+    {
+      "start": 5000.15,
+      "end": 5002.91,
+      "text": "Ale tam były... To nie był taki czysty popis do końca."
+    },
+    {
+      "start": 5003.01,
+      "end": 5005.11,
+      "text": "To była wypowiedź gitarzysty."
+    },
+    {
+      "start": 5005.11,
+      "end": 5013.29,
+      "text": "To było jak muzyka pop, tylko bez wokalu, gdzie gitarzysta jest jakby głównym tutaj prowadzącym to wszystko."
+    },
+    {
+      "start": 5013.91,
+      "end": 5015.97,
+      "text": "Wypowiadającym się."
+    },
+    {
+      "start": 5016.31,
+      "end": 5021.83,
+      "text": "I tam oczywiście czasami Shredderem, ale nie takim czysto też takim Shredderem, który chce pokazać swoje skille"
+    },
+    {
+      "start": 5021.83,
+      "end": 5027.71,
+      "text": "i zachwycić wszystkich swoją grą, dlatego że potrafi szybko ruszać paluchami po gryfie."
+    },
+    {
+      "start": 5028.37,
+      "end": 5032.83,
+      "text": "Dlatego ja byłem na przykład właśnie w tym momencie dużym fanem takiej płyty Fire Garden,"
+    },
+    {
+      "start": 5032.99,
+      "end": 5039.17,
+      "text": "Steve Vai'a, czy Sex and Religion, ale tam były też riffy, tam był grów, tam było dużo brudu,"
+    },
+    {
+      "start": 5039.25,
+      "end": 5043.15,
+      "text": "tam były mieszane style i to dość mocno mieszane style."
+    },
+    {
+      "start": 5043.29,
+      "end": 5048.59,
+      "text": "Tam były jakieś orientalne klimaty, jakiś metal, jakiś rock, klasyka."
+    },
+    {
+      "start": 5048.71,
+      "end": 5054.27,
+      "text": "I to było fajnie wszystko skonstruowane i to były utwory, po prostu fajne utwory muzyczne,"
+    },
+    {
+      "start": 5054.37,
+      "end": 5055.45,
+      "text": "których się dobrze słuchało."
+    },
+    {
+      "start": 5056.45,
+      "end": 5060.69,
+      "text": "Ja byłem gdzieś tak zawsze pośrodku, bo ja lubię riffy, lubię solówki."
+    },
+    {
+      "start": 5062.35,
+      "end": 5065.05,
+      "text": "Ale lubisz, kiedy te solówki się czasami kończą."
+    },
+    {
+      "start": 5065.17,
+      "end": 5067.31,
+      "text": "Nie lubię, lubię jak się solówka kończy, tak."
+    },
+    {
+      "start": 5068.07,
+      "end": 5071.35,
+      "text": "Chociaż i tak wydaje mi się, że tych solówek jest sporo w Decapitated."
+    },
+    {
+      "start": 5071.57,
+      "end": 5073.77,
+      "text": "Jest ich sporo i one dobrze robią."
+    },
+    {
+      "start": 5074.01,
+      "end": 5077.37,
+      "text": "Ale w Machine Head jest tego na przykład dużo więcej, jak grywasz koncerty z nimi."
+    },
+    {
+      "start": 5077.71,
+      "end": 5081.37,
+      "text": "Powiem Ci tak, jak wróciłem Kieś Stasy z Machine Head i zacząłem grać w Decap"
+    },
+    {
+      "start": 5081.37,
+      "end": 5084.33,
+      "text": "i mówię, kurde, chyba mam więcej solówek w Decap."
+    },
+    {
+      "start": 5084.45,
+      "end": 5086.41,
+      "text": "Cały czas solówka, solówka, solówka, solówka."
+    },
+    {
+      "start": 5086.69,
+      "end": 5089.49,
+      "text": "Tam też jest dużo solówek, ale może dlatego, że też Rob gra solo"
+    },
+    {
+      "start": 5089.49,
+      "end": 5093.29,
+      "text": "i tam jest często tak, że gramy je na zmianę, więc tego tak nie odczuwam."
+    },
+    {
+      "start": 5093.31,
+      "end": 5095.91,
+      "text": "I one są dłuższe, bo te numery też się ciągną."
+    },
+    {
+      "start": 5096.05,
+      "end": 5099.25,
+      "text": "Te numery się czasami ciągną, niebywale."
+    },
+    {
+      "start": 5101.05,
+      "end": 5102.89,
+      "text": "Zostawmy ten temat na inne spotkanie."
+    },
+    {
+      "start": 5104.13,
+      "end": 5106.71,
+      "text": "Posłuchajmy teraz takiej muzyki, jakiej,"
+    },
+    {
+      "start": 5106.71,
+      "end": 5109.97,
+      "text": "jakiej Wok prawdopodobnie nigdy nie nagra,"
+    },
+    {
+      "start": 5110.09,
+      "end": 5112.95,
+      "text": "czyli trochę gitarowego shreddingu."
+    },
+    {
+      "start": 5113.09,
+      "end": 5116.53,
+      "text": "I za chwilę spotkamy się jeszcze na ostatnie wejście."
+    },
+    {
+      "start": 5833.09,
+      "end": 5848.15,
+      "text": "Słuchacie ciężko na sercu w trójce, słuchacie spotkania z Vogiem drugiego już, które podsumowuje 30 lat Decapitated i tych wszystkich metalowych kontekstów funkcjonowania Decapitated."
+    },
+    {
+      "start": 5848.27,
+      "end": 5857.39,
+      "text": "Rozmowy, która zaplanowana była na część jednej audycji, rozrosła nam się do dwóch pełnych audycji, a i tak jak słyszycie doskonale nie mieścimy się z tym wszystkim."
+    },
+    {
+      "start": 5857.99,
+      "end": 5881.67,
+      "text": "Musimy pewnie nagrać serię podcastów, Wacku nie będzie chyba innej możliwości, żeby te tematy wszystkie wyczerpać, ale na dzisiaj kończyć musimy i skończmy w tym 2000 roku, bo mam jeszcze jeden zespół, który wydał wtedy płytę i wydaje mi się, że to jest zespół i płyta warte wspomnienia,"
+    },
+    {
+      "start": 5881.67,
+      "end": 5896.01,
+      "text": "Bo to też jest nowe otwarcie, też jest debiut i w kontekście Decapitated i myślenia o muzyce, które ty przejawiasz chyba też istotny, Lamb of God, New American Gospel."
+    },
+    {
+      "start": 5896.71,
+      "end": 5901.91,
+      "text": "Ciśnie mi się taka nie za ładna opinia mojego kolegi w kontekście tego zespołu."
+    },
+    {
+      "start": 5902.39,
+      "end": 5905.43,
+      "text": "Chyba nie powinienem jej powiedzieć, ale już zacząłem."
+    },
+    {
+      "start": 5905.91,
+      "end": 5911.63,
+      "text": "Dobra, to będzie brutalnie, ale jeden z moich znajomych powiedział, że to są popłuczyny po panterze."
+    },
+    {
+      "start": 5914.25,
+      "end": 5917.99,
+      "text": "Brutalnie, ale chyba nie do końca sprawiedliwe."
+    },
+    {
+      "start": 5918.01,
+      "end": 5919.71,
+      "text": "Nie, nie do końca sprawiedliwe."
+    },
+    {
+      "start": 5920.51,
+      "end": 5921.39,
+      "text": "Lamb of God."
+    },
+    {
+      "start": 5921.75,
+      "end": 5942.47,
+      "text": "Ja mówię dlatego, że w kontekście Decapitated to jest ważne, bo oni też właśnie brali, tak, z tej pantery, brali straszu, brali też trochę takich patentów z tego new metalu rosnącego, z hardcora i myślę, że to jest taki zespół, który też jest pomostem pomiędzy tym metalem lat dziewięćdziesiątych, a metalcorem, defcorem amerykańskim współczesnym."
+    },
+    {
+      "start": 5942.47,
+      "end": 5960.55,
+      "text": "Dokładnie. Na pewno ważny zespół, ważny zespół w ogóle w historii właśnie, będący takim połączeniem, jak to powiedziałeś, pomiędzy tym traszem takim klasycznym, a no właśnie tym metalcorem, tym nie wiadomo do końca czym później."
+    },
+    {
+      "start": 5960.97,
+      "end": 5963.91,
+      "text": "Amerykańskim XXI wiekiem w metalu w każdym razie."
+    },
+    {
+      "start": 5963.97,
+      "end": 5984.71,
+      "text": "Tak. Znajduję tutaj wiele fajnych riffów, utworów, bo niewątpliwie jest myśl kompozytorska bardzo duża. Mark jest bardzo fajnym gitarzystą. Dla mnie osobiście nie powiedziałbym, że brakuje mi jakiegoś elementu tutaj, że mógłbym określić ten zespół wybitnym."
+    },
+    {
+      "start": 5985.45,
+      "end": 5989.75,
+      "text": "W pewnym sensie dla sceny jest, bo mnie to jest, że to jest tak ogromny zespół."
+    },
+    {
+      "start": 5990.31,
+      "end": 5991.55,
+      "text": "Tak, bardzo duży w Stanach zespół."
+    },
+    {
+      "start": 5991.61,
+      "end": 6003.57,
+      "text": "Ogromny zespół. Może jakbym urodził się w Ameryce i wychował w tym klimacie, może lubiłbym ten zespół bardziej. Lubię ten zespół, znaczy tu nie ma jakichś niespodzianek."
+    },
+    {
+      "start": 6003.57,
+      "end": 6023.83,
+      "text": "Jest to oczywiste w pewnym sensie granie. Nie ma tutaj co rozkminiać, ale też pamiętam jak pojechaliśmy do Stanów i graliśmy Strasse z Lamb of God i pierwszy koncert, już nie pamiętam gdzie to było, ale mieliśmy garderobę w piwnicy zaraz pod sceną i pod podłogą publiczności."
+    },
+    {
+      "start": 6024.01,
+      "end": 6030.11,
+      "text": "Jak oni zaczęli grać, jak ludzie zaczęli skachać, to wszystko zaczęło się trząść. Myślałem, że Sufi nam się zwali."
+    },
+    {
+      "start": 6030.13,
+      "end": 6030.75,
+      "text": "Będzie się pogrzebani."
+    },
+    {
+      "start": 6030.87,
+      "end": 6039.19,
+      "text": "Naprawdę ich publiczność w Stanach to jest naprawdę żywioł. Doceniam zespół jak najbardziej. Nie miał na mnie jakiegoś dużego wpływu."
+    },
+    {
+      "start": 6040.59,
+      "end": 6043.67,
+      "text": "Nie byłem nigdy fanem, ale jak najbardziej."
+    },
+    {
+      "start": 6043.95,
+      "end": 6046.39,
+      "text": "No to dobra, to zostawmy ich, zostawmy."
+    },
+    {
+      "start": 6046.87,
+      "end": 6060.85,
+      "text": "Słuchaj, bo 2000 to jest też rok, w którym ukazują się takie super ważne dla new metalu płyty, czyli Chocolate Stirfish, Limbiski, Hybrid Theory, Linkin Park, White Pony, Deftones."
+    },
+    {
+      "start": 6060.95,
+      "end": 6063.55,
+      "text": "Ale rozumiem, że ciebie ta muzyka nie dotyczyła?"
+    },
+    {
+      "start": 6064.03,
+      "end": 6081.53,
+      "text": "Dotyczyła mnie o tyle, że byłem pod dużym wrażeniem, jak zmienia się produkcja, jak w ogóle, w jakim kierunku to wszystko idzie, że ciężkie brzmienie metal wchodzi pomiędzy pop, wchodzi nazwijmy to na jakieś salony, do telewizji."
+    },
+    {
+      "start": 6081.91,
+      "end": 6089.25,
+      "text": "Staje się ten gatunek, no bo co jak co, co by nie mówić, no to jest to ciągle metal. New metal, ale jest to ciągle metal."
+    },
+    {
+      "start": 6089.25,
+      "end": 6099.93,
+      "text": "I wchodzi nam tutaj do radio, do telewizji, podczas jakiegoś dziennego programu, czy w wiadomościach można usłyszeć i zobaczyć teledysk takiego zespołu."
+    },
+    {
+      "start": 6100.11,
+      "end": 6107.91,
+      "text": "No tak, ale Linkin Park to jest, słychać tam inspiracje metalem, ale trudno powiedzieć, żeby to były piosenki metalowe."
+    },
+    {
+      "start": 6107.91,
+      "end": 6118.25,
+      "text": "Natomiast, teoretycznie, rozmawiając o roku 2000, tego zespołu nie powinniśmy wymieniać, ale już się umówiliśmy, że do niego wrócimy i wróćmy na sam koniec."
+    },
+    {
+      "start": 6118.73,
+      "end": 6128.51,
+      "text": "Bo oni akurat wydali płytę w 99, a potem w 2001. W 99 płyta nazywała się Slipknot, a w 2001 nazywała się Iowa."
+    },
+    {
+      "start": 6129.25,
+      "end": 6134.91,
+      "text": "I to jest zespół, który grał ten nowy metal, ale jednocześnie był super ekstremalnym."
+    },
+    {
+      "start": 6134.97,
+      "end": 6140.49,
+      "text": "Zespoły były ekstremalnym właściwie jak te zespoły death metalowe, a mimo to ogromnie popularne."
+    },
+    {
+      "start": 6140.49,
+      "end": 6153.61,
+      "text": "Dokładnie, dokładnie. Oni wzięli to co najlepsze z death metalu, z trash metalu i wzięli to i zrobili z tego, przedłużyli, przedłużyli, po prostu napisali historię, kolejny krok w historii muzyki ciężkiej."
+    },
+    {
+      "start": 6154.21,
+      "end": 6164.73,
+      "text": "Wspaniały zespół, jakże ekstremalny, jakże ekstremalny, a zarazem komercyjny, przyswajalny dla szerokich rzeszy odbiorców."
+    },
+    {
+      "start": 6164.73,
+      "end": 6172.27,
+      "text": "I to jest fenomenalny zespół. Uwielbiam. Po jakimś dłuższym czasie, pamiętam, wróciłem do Iowa, to byłem zmiażdżony."
+    },
+    {
+      "start": 6172.85,
+      "end": 6182.83,
+      "text": "Zupełnie cały czas jest to cios. Nie bez powodu, myślę, że oni ciągle są na tym szczycie metalu, z headlinerem wszystkich tych festiwali i tak dalej."
+    },
+    {
+      "start": 6183.17,
+      "end": 6185.33,
+      "text": "Naprawdę świetnie to zrobili."
+    },
+    {
+      "start": 6185.83,
+      "end": 6197.43,
+      "text": "Zakończymy tę naszą fascynującą rozmowę, po pierwsze z bólem serca, po drugie sleepnotem, albo może lamp of God i sleepnotem, żeby porównać te dwa żywioły."
+    },
+    {
+      "start": 6197.53,
+      "end": 6204.75,
+      "text": "Powiedz mi tylko jeszcze na koniec, czy w tym, że jubileuszowym roku 2026 usłyszymy jakieś nowe rzeczy decapitated?"
+    },
+    {
+      "start": 6205.81,
+      "end": 6211.81,
+      "text": "Nie sądzę, żebyśmy mogli usłyszeć, aczkolwiek jestem właśnie w momencie komponowania nowej płyty."
+    },
+    {
+      "start": 6211.89,
+      "end": 6214.27,
+      "text": "Czyli ty usłyszysz, ale ja nie. Czyli nie usłyszymy."
+    },
+    {
+      "start": 6214.29,
+      "end": 6221.49,
+      "text": "Ja już słyszę i wiem dokładnie, co tam się wydarzy. Przynajmniej w jakichś 60%."
+    },
+    {
+      "start": 6221.49,
+      "end": 6229.79,
+      "text": "Usłyszymy za to nową płytę na 31-lecie. To mogę już obiecać w tym momencie."
+    },
+    {
+      "start": 6230.75,
+      "end": 6240.75,
+      "text": "Ale w tym roku zespół, już tak raz mówiąc i mówiąc na krótko na jakichś planach i sytuacji, co tam się dzieje."
+    },
+    {
+      "start": 6241.13,
+      "end": 6250.47,
+      "text": "W tym roku zespół nagra płytę i zagra trasę koncertową w czerwcu, czyli festiwale i jakieś klubowe koncerty."
+    },
+    {
+      "start": 6250.47,
+      "end": 6255.01,
+      "text": "To na pewno, może dołożymy do tego jakieś koncerty. Jeszcze tego nie wiemy."
+    },
+    {
+      "start": 6255.33,
+      "end": 6259.35,
+      "text": "Na pewno trasa festiwalowa w czerwiec, lipiec i sierpień."
+    },
+    {
+      "start": 6260.05,
+      "end": 6261.91,
+      "text": "Nagrywanie płyty później na jesieni."
+    },
+    {
+      "start": 6262.73,
+      "end": 6266.91,
+      "text": "I plan jest taki, żeby skończyć płytę przed świętami."
+    },
+    {
+      "start": 6267.85,
+      "end": 6270.19,
+      "text": "I wydać ją w 2027 roku."
+    },
+    {
+      "start": 6270.35,
+      "end": 6275.41,
+      "text": "Zatem spotykamy się tu i słyszymy najpóźniej w 2027 roku."
+    },
+    {
+      "start": 6275.61,
+      "end": 6277.33,
+      "text": "I wtedy już nie będziemy mówić o historii."
+    },
+    {
+      "start": 6277.33,
+      "end": 6281.53,
+      "text": "Będziemy mówić o współczesności, słuchać nowych piosenek Decapitated."
+    },
+    {
+      "start": 6281.97,
+      "end": 6291.03,
+      "text": "A dzisiaj bardzo Ci dziękuję za obecność w studiu i za te wszystkie fascynujące opowieści o muzyce i nie tylko."
+    },
+    {
+      "start": 6291.63,
+      "end": 6294.31,
+      "text": "Ja również dziękuję i pozdrawiam wszystkich, którzy słuchali."
+    },
+    {
+      "start": 6294.97,
+      "end": 6295.51,
+      "text": "Dobranoc."
+    },
+    {
+      "start": 6296.07,
+      "end": 6297.77,
+      "text": "Słuchaliście ciężko na sercu."
+    },
+    {
+      "start": 6298.25,
+      "end": 6299.17,
+      "text": "Do usłyszenia za tydzień."
+    },
+    {
+      "start": 6299.17,
+      "end": 6301.09,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 12,
+    "transcribedAudioSec": 3333.43,
+    "segmentCount": 580,
+    "characterCount": 47005
+  },
+  "sourceId": "2026-01-21-30-lat-decapitated-spotkanie-drugie-w-pozostalych-rolach-sla"
+}
