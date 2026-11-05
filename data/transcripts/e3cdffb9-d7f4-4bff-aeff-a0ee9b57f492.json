@@ -1,0 +1,1190 @@
+{
+  "version": 1,
+  "episodeId": "e3cdffb9-d7f4-4bff-aeff-a0ee9b57f492",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 287684160,
+  "fileMtimeMs": 1789150501126.4229,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0.040000000000000036,
+      "end": 14.04
+    },
+    {
+      "index": 1,
+      "start": 423.75,
+      "end": 578.3
+    },
+    {
+      "index": 2,
+      "start": 830.5,
+      "end": 907.42
+    },
+    {
+      "index": 3,
+      "start": 1200.2,
+      "end": 1317.02
+    },
+    {
+      "index": 4,
+      "start": 1499.56,
+      "end": 1560.32
+    },
+    {
+      "index": 5,
+      "start": 1747.72,
+      "end": 1825.08
+    },
+    {
+      "index": 6,
+      "start": 2164.23,
+      "end": 2282.56
+    },
+    {
+      "index": 7,
+      "start": 2564.29,
+      "end": 2648.28
+    },
+    {
+      "index": 8,
+      "start": 2832.8,
+      "end": 2879.13
+    },
+    {
+      "index": 9,
+      "start": 3115.88,
+      "end": 3233.82
+    },
+    {
+      "index": 10,
+      "start": 3445.28,
+      "end": 3472.32
+    },
+    {
+      "index": 11,
+      "start": 3626.63,
+      "end": 3732.96
+    },
+    {
+      "index": 12,
+      "start": 4149.06,
+      "end": 4190.88
+    },
+    {
+      "index": 13,
+      "start": 4515.84,
+      "end": 4577.82
+    },
+    {
+      "index": 14,
+      "start": 4808.87,
+      "end": 4869.08
+    },
+    {
+      "index": 15,
+      "start": 5022.37,
+      "end": 5097.31
+    },
+    {
+      "index": 16,
+      "start": 5184.71,
+      "end": 5199.42
+    },
+    {
+      "index": 17,
+      "start": 5223.4,
+      "end": 5277.6
+    },
+    {
+      "index": 18,
+      "start": 5487.49,
+      "end": 5563.55
+    },
+    {
+      "index": 19,
+      "start": 5797.54,
+      "end": 5853.18
+    },
+    {
+      "index": 20,
+      "start": 5871.94,
+      "end": 5902.56
+    },
+    {
+      "index": 21,
+      "start": 6236.84,
+      "end": 6299.36
+    },
+    {
+      "index": 22,
+      "start": 6574.28,
+      "end": 6646.94
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 2.04,
+      "text": "Trójka"
+    },
+    {
+      "start": 2.04,
+      "end": 5.66,
+      "text": "Program Trzeci Polskiego Radia"
+    },
+    {
+      "start": 5.66,
+      "end": 11.66,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 424.37,
+      "end": 426.25,
+      "text": "Dobry wieczór Państwu."
+    },
+    {
+      "start": 426.95,
+      "end": 433.67,
+      "text": "Dostrzec coś w czymś, co niewidzialne proponował nam norweski zespół Dimmu Borgir."
+    },
+    {
+      "start": 434.29,
+      "end": 438.17,
+      "text": "Ja dostrzegam w płycie, z której As Seen in the Unseen pochodzi,"
+    },
+    {
+      "start": 438.75,
+      "end": 441.85,
+      "text": "powrót grupy do wysokiej formy."
+    },
+    {
+      "start": 442.45,
+      "end": 445.61,
+      "text": "Album zatytułowany Grand Serpent Rising"
+    },
+    {
+      "start": 445.61,
+      "end": 449.79,
+      "text": "to na pewno jeden z najlepszych materiałów Dimmu Borgir,"
+    },
+    {
+      "start": 449.79,
+      "end": 455.11,
+      "text": "zespołu kiedyś bardzo popularnego, a potem przez długie lata"
+    },
+    {
+      "start": 455.11,
+      "end": 460.51,
+      "text": "cierpiącego na deficyt i mocy twórczych, i determinacji."
+    },
+    {
+      "start": 461.37,
+      "end": 466.01,
+      "text": "Czy Grand Serpent Rising wyniesie ich znowu na czarny tron?"
+    },
+    {
+      "start": 466.83,
+      "end": 470.57,
+      "text": "Tego nie wiemy. Będziemy obserwować rozwój wypadków,"
+    },
+    {
+      "start": 471.13,
+      "end": 474.21,
+      "text": "choćby wspólną trasę z Behemothem."
+    },
+    {
+      "start": 474.43,
+      "end": 479.67,
+      "text": "Słuchacie ciężko na sercu, audycji pełnej muzyki ciężkiej,"
+    },
+    {
+      "start": 479.79,
+      "end": 483.15,
+      "text": "gwałtownej, głośnej i pięknej."
+    },
+    {
+      "start": 483.77,
+      "end": 485.11,
+      "text": "Wita was Jarek Szubrych, jej gospodarz"
+    },
+    {
+      "start": 485.69,
+      "end": 488.27,
+      "text": "i Mariusz Owczarek, jej wydawca."
+    },
+    {
+      "start": 489.09,
+      "end": 492.33,
+      "text": "Dzisiaj czas na podsumowanie wydawnictw majowych."
+    },
+    {
+      "start": 493.01,
+      "end": 496.11,
+      "text": "Dużo tego było, w tym sporo dobrego,"
+    },
+    {
+      "start": 496.25,
+      "end": 498.87,
+      "text": "wszystko zatem się nie zmieści."
+    },
+    {
+      "start": 499.59,
+      "end": 502.29,
+      "text": "Proszę więc z góry o wybaczenie."
+    },
+    {
+      "start": 502.61,
+      "end": 506.13,
+      "text": "Postarałem się za to wybrać same smakołyki,"
+    },
+    {
+      "start": 506.23,
+      "end": 511.67,
+      "text": "więc ufam, że przed nami ekscytujące dwie godziny."
+    },
+    {
+      "start": 512.53,
+      "end": 515.11,
+      "text": "No już teraz to niespełna dwie."
+    },
+    {
+      "start": 516.11,
+      "end": 518.41,
+      "text": "Zaczęliśmy od black metalu z Norwegii,"
+    },
+    {
+      "start": 518.53,
+      "end": 520.79,
+      "text": "bombastycznego, symfonicznego,"
+    },
+    {
+      "start": 521.35,
+      "end": 524.87,
+      "text": "dopieszczonego produkcyjnie, wysokobudżetowego."
+    },
+    {
+      "start": 525.59,
+      "end": 529.33,
+      "text": "Tymczasem w maju nową płytę wydał inny wielki zespół"
+    },
+    {
+      "start": 529.33,
+      "end": 530.69,
+      "text": "z tamtego kraju."
+    },
+    {
+      "start": 531.25,
+      "end": 535.35,
+      "text": "Moim zdaniem większy i ważniejszy niż Dimo Borgir,"
+    },
+    {
+      "start": 535.45,
+      "end": 539.15,
+      "text": "choć na pewno nie aż tak popularny,"
+    },
+    {
+      "start": 539.21,
+      "end": 541.09,
+      "text": "choćby przez to, że uparcie"
+    },
+    {
+      "start": 541.09,
+      "end": 544.23,
+      "text": "odmawiający grania koncertów."
+    },
+    {
+      "start": 544.23,
+      "end": 548.13,
+      "text": "A także dlatego, że swoje płyty nagrywa"
+    },
+    {
+      "start": 548.13,
+      "end": 549.99,
+      "text": "w zatęchłej piwnicy,"
+    },
+    {
+      "start": 550.15,
+      "end": 551.37,
+      "text": "niczego nie poprawia,"
+    },
+    {
+      "start": 551.81,
+      "end": 553.69,
+      "text": "niczym się nie przejmuje."
+    },
+    {
+      "start": 554.27,
+      "end": 556.03,
+      "text": "Tak jest, chodzi o Darktron"
+    },
+    {
+      "start": 556.03,
+      "end": 559.31,
+      "text": "i ich nowy album Prehistoric Metal."
+    },
+    {
+      "start": 560.13,
+      "end": 562.11,
+      "text": "Programowo nieoryginalny,"
+    },
+    {
+      "start": 562.31,
+      "end": 563.73,
+      "text": "prymitywny i brzydki."
+    },
+    {
+      "start": 564.95,
+      "end": 568.27,
+      "text": "I choć pewnie nie będę często do niego wracał,"
+    },
+    {
+      "start": 568.59,
+      "end": 571.93,
+      "text": "kocham Darktron za tę ich bezkompromisowość."
+    },
+    {
+      "start": 571.93,
+      "end": 575.11,
+      "text": "Nie ma takiego drugiego zespołu"
+    },
+    {
+      "start": 575.11,
+      "end": 576.13,
+      "text": "i nie będzie."
+    },
+    {
+      "start": 831.02,
+      "end": 848.3,
+      "text": "Gdzieś pomiędzy tymi dwiema norweskimi skrajnościami, pomiędzy hollywoodzkim majestatem Dimmu Borgir, a gruzem Darktron, swoje własne poletko na skraju, jak na mizantropa przystało, uprawia Gal."
+    },
+    {
+      "start": 848.88,
+      "end": 857.24,
+      "text": "Moim zdaniem najlepszy black metalowy głos z Norwegii, chyba wszechczasów, a już na pewno obecnie."
+    },
+    {
+      "start": 857.24,
+      "end": 867.68,
+      "text": "W ostatnich latach Gal jest bardzo kreatywny, co rok to jakaś nowa płyta jego projektu."
+    },
+    {
+      "start": 868.2,
+      "end": 876.96,
+      "text": "Tym razem padło na Treldom, którego nowy album By The World jest chwytliwy i nieoczywisty."
+    },
+    {
+      "start": 876.96,
+      "end": 887.32,
+      "text": "Zarazem najczarniejszy na świecie i jednocześnie uciekający różnymi szparami z black metalowej szufladki."
+    },
+    {
+      "start": 888.1,
+      "end": 894.46,
+      "text": "Tak jest proszę Państwa, pojedynek Dimmu Borgir z Darktron wygrywa Treldom."
+    },
+    {
+      "start": 894.46,
+      "end": 902.46,
+      "text": "I bardzo Was proszę, zanurzcie się w całej tej płycie, nie tylko w tej jednej piosence."
+    },
+    {
+      "start": 903,
+      "end": 905.36,
+      "text": "Ale oczywiście od jednej trzeba zacząć."
+    },
+    {
+      "start": 905.36,
+      "end": 907.42,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1200.86,
+      "end": 1229.2,
+      "text": "Nie byłoby Dimmu Borgir, ani Treldom i już na pewno nie byłoby Darktron, niczego by nie było, gdyby u progu lat 80-tych angielski zespół Venom nie wpadł na to, że fajnie będzie zagrać hybrydę nowej fali, wtedy jeszcze rzeczywiście nowej, brytyjskiego heavy metalu z punk-rokiem, też w owym czasie nowym."
+    },
+    {
+      "start": 1230.2,
+      "end": 1256.42,
+      "text": "I jeszcze to unużać, utytłać, umorusać w diabolicznej oprawie. Wyszedł z tego proto-trash i proto-black metal zarazem, wyszły same piękne rzeczy. Tak było dopóki Venom, podgryzany przez młodsze kapele, które właściwie stworzył, nie zaczął potykać się o własne nogi."
+    },
+    {
+      "start": 1256.88,
+      "end": 1280.14,
+      "text": "Wszystko, co po Possessed, a więc płycie Venom z 1985 roku, jest mniej lub bardziej nieudane, z jednym chlubnym wyjątkiem, czyli płytą Resurrection z 2000 roku, która była krótkim, ale triumfalnym powrotem do formy."
+    },
+    {
+      "start": 1280.14,
+      "end": 1287.42,
+      "text": "Teraz mamy trzy Venomy, za to ani jednego naprawdę dobrego."
+    },
+    {
+      "start": 1288,
+      "end": 1297.22,
+      "text": "Ten z Kronosem, czyli frontmanem Venom, basistą i wokalistą, wydał właśnie płytę Into Oblivion,"
+    },
+    {
+      "start": 1297.86,
+      "end": 1306.38,
+      "text": "na której za pomocą autocytatów próbuje nas przekonać, że podróże w czasie są możliwe."
+    },
+    {
+      "start": 1307.36,
+      "end": 1314.8,
+      "text": "Czy im się udało? To już niech sobie Państwo sami rozważą w swoich czarnych serduszkach."
+    },
+    {
+      "start": 1314.8,
+      "end": 1317.02,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1500.18,
+      "end": 1503.38,
+      "text": "Słuchacie, ciężko na sercu w trójce."
+    },
+    {
+      "start": 1504.04,
+      "end": 1507.08,
+      "text": "Zaczęliśmy od black metalowej ekstremy"
+    },
+    {
+      "start": 1507.08,
+      "end": 1510.38,
+      "text": "i jeszcze dziś będzie groźnie,"
+    },
+    {
+      "start": 1510.66,
+      "end": 1513.88,
+      "text": "ale póki co proponuję chwilowy zwrot"
+    },
+    {
+      "start": 1513.88,
+      "end": 1517.56,
+      "text": "ku brzmieniom zupełnie innym, lżejszym,"
+    },
+    {
+      "start": 1518.28,
+      "end": 1523,
+      "text": "najbardziej przyswajalnym przez zdrowe jądro społeczeństwa."
+    },
+    {
+      "start": 1523.78,
+      "end": 1526.7,
+      "text": "Weźmy na przykład taki zespół Sparta,"
+    },
+    {
+      "start": 1526.7,
+      "end": 1531.1,
+      "text": "który powinien być grany w radiu w środku dnia, co godzinę"
+    },
+    {
+      "start": 1531.1,
+      "end": 1533.8,
+      "text": "i czemu nie jest, nie wiem,"
+    },
+    {
+      "start": 1534.04,
+      "end": 1538,
+      "text": "ale wiem, że ja tej okazji nie przepuszczę."
+    },
+    {
+      "start": 1538.5,
+      "end": 1543.6,
+      "text": "Teksańska Sparta, a więc grupa stworzona przez Jim'a Ward'a"
+    },
+    {
+      "start": 1543.6,
+      "end": 1545.64,
+      "text": "z At The Drive-In"
+    },
+    {
+      "start": 1545.64,
+      "end": 1550.24,
+      "text": "wydaje za kilka dni swój nowy, szósty album"
+    },
+    {
+      "start": 1550.24,
+      "end": 1552.1,
+      "text": "Cut A Silhouette"
+    },
+    {
+      "start": 1552.1,
+      "end": 1555.34,
+      "text": "i znajdziecie na nim całe tony"
+    },
+    {
+      "start": 1555.34,
+      "end": 1558.76,
+      "text": "chwytliwej, posthardkorowej melancholii."
+    },
+    {
+      "start": 1558.76,
+      "end": 1560.32,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1747.72,
+      "end": 1756.24,
+      "text": "Teraz też nie będzie metalu, ale będzie i ciężko i dobrze, w dodatku swojsko."
+    },
+    {
+      "start": 1756.24,
+      "end": 1764.24,
+      "text": "Swojsko nie za sprawą brzmienia, bo to jest światowe, ale za sprawą personelu."
+    },
+    {
+      "start": 1765.64,
+      "end": 1777.28,
+      "text": "Wolfpack Headin' Nowhere to nowy polski zespół, chociaż w składzie starzy wyjadacze i to doświadczenie, te ich umiejętności doskonale."
+    },
+    {
+      "start": 1777.72,
+      "end": 1797.92,
+      "text": "Słychać. Trzeba jednakowoż przy tym zaznaczyć, że muzycy Wolfpack Headin' Nowhere na co dzień grają lub grali wcześniej w znacznie bardziej brutalnych składach, m.in. Owl's Woods Graves, Azarat, Stellar Blight."
+    },
+    {
+      "start": 1797.92,
+      "end": 1803.8,
+      "text": "Tu jednak postanowili pokazać swoje łagodniejsze oblicze."
+    },
+    {
+      "start": 1804.56,
+      "end": 1815.36,
+      "text": "Nieco gotyckie, ale gotyckie w takim raczej współczesnym, miejskim wydaniu, a la typo negative."
+    },
+    {
+      "start": 1816,
+      "end": 1823.18,
+      "text": "Nie, że tam jakieś gotyckie, średniowieczne zamki czy koszule z żabotem."
+    },
+    {
+      "start": 1823.18,
+      "end": 1825.08,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2164.23,
+      "end": 2170.71,
+      "text": "Inne obszary muzyki alternatywnej mapuje Devin Townsend."
+    },
+    {
+      "start": 2170.99,
+      "end": 2190.13,
+      "text": "Słychać wciąż, że to metalowiec, bo łapę ma, czy raczej obecnie miewa ciężką, ale jego najnowsze dzieło, czyli The Moth, to nie jest już metal, tylko jakiś metalowo-operowy epos."
+    },
+    {
+      "start": 2190.13,
+      "end": 2196.91,
+      "text": "Rozpisany na gitarę, głos, wielką orkiestrę i niemały chór."
+    },
+    {
+      "start": 2197.71,
+      "end": 2212.35,
+      "text": "Devin pracował nad tym podobno 10 lat. Zgaduje, że wydał fortunę na realizację tego kolosa i uważa to za dzieło swojego życia."
+    },
+    {
+      "start": 2212.35,
+      "end": 2226.77,
+      "text": "Ja nie jestem pewien. Ja chyba wolę Devin'a z dużo wcześniejszych, tych bardziej metalowych wcieleń, bo w świecie metalu po prostu był zjawiskiem bardzo oryginalnym."
+    },
+    {
+      "start": 2226.77,
+      "end": 2234.91,
+      "text": "A tu, dokąd teraz zmierza, nie jestem już tego taki pewien."
+    },
+    {
+      "start": 2235.45,
+      "end": 2252.77,
+      "text": "Tak czy owak, Devin czuje, że marnuje się w metalowo-rockowej piaskownicy i zgaduje, że jego ambicją jest pisanie ścieżek dźwiękowych do jakichś odysei albo odysei kosmicznych."
+    },
+    {
+      "start": 2252.77,
+      "end": 2263.91,
+      "text": "Czy mi się to podoba? Niekoniecznie, bo to muzyka, która się ode mnie, od mojej potrzeby emocjonalnej, odbija."
+    },
+    {
+      "start": 2263.91,
+      "end": 2267.27,
+      "text": "Czy mi to imponuje? Jeszcze jak."
+    },
+    {
+      "start": 2268.09,
+      "end": 2281.03,
+      "text": "Na pewno warto przynajmniej spróbować, sprawdzić jak dziś brzmi twórczość Szalonego Dave'a w najbardziej jak dotąd intensywnym wydaniu."
+    },
+    {
+      "start": 2564.29,
+      "end": 2584.11,
+      "text": "Ukazało się w mijającym miesiącu sporo dobrego nowego metalu, na przykład album grupy The Narrator, ale wiecie jak jest, szczególnie ci, którzy nie trafili na ciężko na sercu po raz pierwszy."
+    },
+    {
+      "start": 2584.11,
+      "end": 2602.93,
+      "text": "Ja tu kieruję się własnym gustem i skoro mieliśmy klęskę urodzajów black czy death metalu, to na te bardziej nowoczesne brzmienia mam mało miejsca, ale Cage Fight puścić muszę."
+    },
+    {
+      "start": 2602.93,
+      "end": 2617.61,
+      "text": "Bo ich druga płyta, Exuvia, totalnie robi robotę i tymi wściekłymi wokalami i tnącymi jak żyletki riffami i potęgą sekcji."
+    },
+    {
+      "start": 2618.39,
+      "end": 2634.71,
+      "text": "Znakomita, brytyjska grupa, która sporo teraz gra i na festiwalach i na trasach z większymi nazwami i mam nadzieję, że będzie dzięki temu szybko rosła, tak jak na to zasługuje."
+    },
+    {
+      "start": 2634.71,
+      "end": 2646.75,
+      "text": "No i nazwę mają odpowiednią, Cage Fight, walka w klatce. Tak, to jest tak intensywne, brutalne i zarazem efektowne."
+    },
+    {
+      "start": 2646.75,
+      "end": 2648.29,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2832.8,
+      "end": 2836.7,
+      "text": "Bear łapę ma ciężką, jak to niedźwiedź."
+    },
+    {
+      "start": 2837.48,
+      "end": 2845.24,
+      "text": "Zespół pochodzi z Belgii i w maju pochwalił się nam mini-albumem Anhedonia."
+    },
+    {
+      "start": 2846.2,
+      "end": 2851.64,
+      "text": "Anhedonia to niemożliwość osiągnięcia przyjemności."
+    },
+    {
+      "start": 2851.82,
+      "end": 2859.38,
+      "text": "Ja tymczasem, ze słuchania muzyki tej grupy, czerpię przyjemność niemałą."
+    },
+    {
+      "start": 2859.38,
+      "end": 2869.14,
+      "text": "Bear grasuje na granicy math-cora z deaf-corem, a więc jest intensywnie, gęsto, technicznie,"
+    },
+    {
+      "start": 2869.56,
+      "end": 2876.62,
+      "text": "choć zdarzają się też chwile oddechów, które wkradają się niegłupie melodie."
+    },
+    {
+      "start": 3115.88,
+      "end": 3128.56,
+      "text": "Teraz będzie bardziej przewidywalnie, wręcz tradycyjnie w ramach szeroko pojmowanej współpracy hardcore'u z metalem."
+    },
+    {
+      "start": 3128.56,
+      "end": 3135.1,
+      "text": "Po wielu latach milczenia powrócił nowym materiałem amerykański zespół Propane."
+    },
+    {
+      "start": 3135.78,
+      "end": 3145.48,
+      "text": "Nowojorczycy nie bez powodu nie nagrywali, nie wydawali niczego od 2015 roku, od albumu Voice of Rebellion."
+    },
+    {
+      "start": 3145.88,
+      "end": 3150.88,
+      "text": "A od 2017 roku również nie koncertowali."
+    },
+    {
+      "start": 3150.88,
+      "end": 3167.88,
+      "text": "Otóż właśnie w 2017 roku po koncercie w Brukseli Gary Meskill złapał złodzieja, który próbował go okraść przed hotelem."
+    },
+    {
+      "start": 3167.88,
+      "end": 3177.9,
+      "text": "I na odsieczkoleżce ruszyło sześciu bandytów i tak pobili lidera Propane, że ledwie to przeżył."
+    },
+    {
+      "start": 3177.98,
+      "end": 3188.9,
+      "text": "Można w sieci znaleźć szczegółowy opis, jeżeli ktoś jest ciekawy, bo Gary o tym opowiadał, ale to rzeczywiście już była granica pomiędzy życiem a śmiercią."
+    },
+    {
+      "start": 3189.04,
+      "end": 3194.72,
+      "text": "Rozłupana czaszka, prawie całą krew stracił paskudna sprawa."
+    },
+    {
+      "start": 3195.4,
+      "end": 3208.84,
+      "text": "Nic dziwnego, że długie lata dochodził do siebie i fizycznie i psychicznie, bo trauma nie pozwalała mu szybko stanąć na nogi, ale udało się."
+    },
+    {
+      "start": 3209.72,
+      "end": 3214.02,
+      "text": "Gary i jego propane znowu jest z nami."
+    },
+    {
+      "start": 3214.7,
+      "end": 3217.8,
+      "text": "Wściekły jak wcześniej, a może i bardziej."
+    },
+    {
+      "start": 3218.68,
+      "end": 3226.14,
+      "text": "Słuchamy utworu Oceans of Bloods z albumu Stone Cold Anger."
+    },
+    {
+      "start": 3226.84,
+      "end": 3231.74,
+      "text": "Gary, bardzo się cieszę, że do nas wróciłeś."
+    },
+    {
+      "start": 3231.74,
+      "end": 3233.82,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3445.28,
+      "end": 3453.5,
+      "text": "Następna piosenka nazywa się British Petroleum i pędzi na pełnym trashowym gazie."
+    },
+    {
+      "start": 3454.22,
+      "end": 3464.04,
+      "text": "Nagrał ją szwedzki kwartet Eradicated i zamieścił na nowej, swojej drugiej płycie Wiring of Violence."
+    },
+    {
+      "start": 3464.78,
+      "end": 3470.42,
+      "text": "Wygląda na to, że The Haunted wreszcie doczekali się godnej konkurencji."
+    },
+    {
+      "start": 3471.28,
+      "end": 3472.32,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3626.63,
+      "end": 3629.93,
+      "text": "Teraz trochę zwolnimy."
+    },
+    {
+      "start": 3630.57,
+      "end": 3636.67,
+      "text": "Eradicated gnali z całą mocą silników na najwyższym biegu."
+    },
+    {
+      "start": 3637.57,
+      "end": 3641.57,
+      "text": "Tymczasem Monolord wlecze się na dwójce."
+    },
+    {
+      "start": 3641.57,
+      "end": 3646.41,
+      "text": "Ale za to, jak majestatycznie i stylowo on się wlecze."
+    },
+    {
+      "start": 3646.97,
+      "end": 3649.41,
+      "text": "Ten zespół też pochodzi ze Szwecji."
+    },
+    {
+      "start": 3650.35,
+      "end": 3658.79,
+      "text": "Gra jednak Doom Metal, muzykę, która niekoniecznie jest pierwszym skojarzeniem z tamtejszą sceną."
+    },
+    {
+      "start": 3658.93,
+      "end": 3663.97,
+      "text": "Oczywiście Candlemas to chlubny i klasyczny wyjątek."
+    },
+    {
+      "start": 3663.97,
+      "end": 3668.11,
+      "text": "Czy może jeden z nielicznych wyjątków."
+    },
+    {
+      "start": 3668.73,
+      "end": 3676.17,
+      "text": "Doom Monolorda ma jednak stonerowe, bardziej amerykańskie zabarwienie."
+    },
+    {
+      "start": 3676.95,
+      "end": 3687.43,
+      "text": "I pewnie dlatego zespół wybrał się aż do Oregonu, by nagrać nową płytę z Sylvią Massey w roli producentki."
+    },
+    {
+      "start": 3687.57,
+      "end": 3697.11,
+      "text": "Panią, która jako producentka, czy też realizatorka współpracowała m.in. z System of a Dawn Toolem, Slayerem."
+    },
+    {
+      "start": 3697.11,
+      "end": 3703.49,
+      "text": "Ale też Kylie Minogue i, uwaga, Johnem Cashem."
+    },
+    {
+      "start": 3704.49,
+      "end": 3709.73,
+      "text": "Z kim nie pracowała Sylvia, łatwiej byłoby wymienić."
+    },
+    {
+      "start": 3709.73,
+      "end": 3714.69,
+      "text": "Możecie sobie sprawdzić, żeby zaspokoić ciekawość."
+    },
+    {
+      "start": 3715.43,
+      "end": 3722.01,
+      "text": "Tak czy owak, wyprawa do Stanów Monolordowi się opłaciła."
+    },
+    {
+      "start": 3722.47,
+      "end": 3726.63,
+      "text": "Bo album Never Ending brzmi znakomicie."
+    },
+    {
+      "start": 3727.25,
+      "end": 3730.95,
+      "text": "Dowodem piosenka o sączącej się ranie."
+    },
+    {
+      "start": 3730.95,
+      "end": 3732.97,
+      "text": "Piosenka"
+    },
+    {
+      "start": 4149.06,
+      "end": 4165.3,
+      "text": "Pozostańmy jeszcze przez chwilę przy graniu, które polega raczej na ciężarze, brzmieniu i budowaniu klimatu niż na szybkości, brutalności czy technice."
+    },
+    {
+      "start": 4165.3,
+      "end": 4188.94,
+      "text": "Chociaż akurat brutalności Litwinom z Erdwe nie brakuje. Zespół pochodzi z Wilna i od dekady poszukuje nowej formuły dla dum, metalu i okolic i jak dowodzi najnowszy album Erdwe, czyli Epigrama, robią to bardzo skutecznie."
+    },
+    {
+      "start": 4188.94,
+      "end": 4190.88,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4515.84,
+      "end": 4523.12,
+      "text": "Wracamy do Szwecji i wracamy do muzyki o wyższym stężeniu agresji."
+    },
+    {
+      "start": 4523.74,
+      "end": 4540.98,
+      "text": "Sarkazm świetnie równoważą wściekłość z melodią i jeśli ktoś lubi death metal z ładnymi gitarowymi ornamentami i przejrzystym brzmieniem, na pewno polubi płytę Life Force Omnibund."
+    },
+    {
+      "start": 4540.98,
+      "end": 4558.16,
+      "text": "Mamy w końcu do czynienia z zespołem, który może nigdy nie był zaliczany do gwiazd tamtejszej sceny melodyjnego death metalu, ale przecież zjadł zęby na takiej muzyce."
+    },
+    {
+      "start": 4558.84,
+      "end": 4565.26,
+      "text": "Sarkazm doskonali się w tym rzemiośle od głębokich lat dziewięćdziesiątych."
+    },
+    {
+      "start": 4565.26,
+      "end": 4575.98,
+      "text": "Z małymi przerwami, co raczej nie służyło karierze, ale kto wie, może wtedy muzycy ćwiczyli samotnie, po domach."
+    },
+    {
+      "start": 4575.98,
+      "end": 4577.82,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4808.87,
+      "end": 4821.53,
+      "text": "No dobrze, dość tych melodii. Nie po to przecież trzymam Was przy radioodbiornikach po nocach, żeby Was usypiać ładnymi piosenkami."
+    },
+    {
+      "start": 4822.13,
+      "end": 4830.05,
+      "text": "Teksański zespół Frozen Soul. Gra death metal mało finezyjny, ale za to bardzo skuteczny."
+    },
+    {
+      "start": 4830.05,
+      "end": 4850.99,
+      "text": "Sekcja ma siłę, rify, ciężar, wokalista grób w głosie. Nowy album Frozen Soul nosi tytuł No Place for Warmth, w sensie, że nie ma miejsca na ciepło i to prawda nie będzie miło i przytulnie."
+    },
+    {
+      "start": 4850.99,
+      "end": 4867.19,
+      "text": "Specjalnie dla Państwa wybrałem utwór Dreadnought, który powstał we współpracy Frozen Soul z grupą Sangui Suga Bog. Proszę to odczytać jako wyraz mojej sympatii."
+    },
+    {
+      "start": 5023.33,
+      "end": 5025.83,
+      "text": "Ciężko i bezwzględnie, prawda?"
+    },
+    {
+      "start": 5026.73,
+      "end": 5037.21,
+      "text": "No to teraz czas na zespół, przy którym Frozen Soul, nawet we współpracy z Sangui Sugabog, zabrzmi słodko i niewinnie."
+    },
+    {
+      "start": 5037.75,
+      "end": 5050.15,
+      "text": "I proszę nie regulować odbiorników, nie polewać głośników wodą, nawet jeśli będzie Wam się wydawało, że zaraz zajmą się żywym ogniem."
+    },
+    {
+      "start": 5051.21,
+      "end": 5071.97,
+      "text": "Shrectomy mają brzmienie tak ciężkie, że chwilami aż groteskowe ta basowa buła deformuje muzykę niemieckiej grupy i bardzo dobrze, tak ma być, slam death metal ma zostawiać za sobą pasmo spalonej ziemi."
+    },
+    {
+      "start": 5071.97,
+      "end": 5079.39,
+      "text": "A tu mamy do czynienia ze Slamdownem, a więc skrajną flanką tej ekstremalnej muzyki."
+    },
+    {
+      "start": 5080.11,
+      "end": 5086.83,
+      "text": "I już tytuł nowej płyty, Gatrick Tommy, bardzo zabawny, wyjaśnia z czym mamy do czynienia."
+    },
+    {
+      "start": 5087.57,
+      "end": 5090.19,
+      "text": "Slamdown is not a face, mom."
+    },
+    {
+      "start": 5091.09,
+      "end": 5094.59,
+      "text": "Mamusiu, nie przejdą mi te dziwne zainteresowania."
+    },
+    {
+      "start": 5096.59,
+      "end": 5097.31,
+      "text": "Slamdown"
+    },
+    {
+      "start": 5184.71,
+      "end": 5185.99,
+      "text": "Sir, I'm trying, sir."
+    },
+    {
+      "start": 5186.21,
+      "end": 5188.13,
+      "text": "Private Pyle, I'm going to give you three seconds."
+    },
+    {
+      "start": 5188.61,
+      "end": 5193.25,
+      "text": "Exactly three fucking seconds to wipe that stupid-looking grin off your face"
+    },
+    {
+      "start": 5193.25,
+      "end": 5197.21,
+      "text": "or I will gouge out your eyeball and skullfuck you."
+    },
+    {
+      "start": 5224.2,
+      "end": 5230.36,
+      "text": "Kącik death metalowca zamyka w tym roku brytyjska grupa Ingested,"
+    },
+    {
+      "start": 5231.08,
+      "end": 5236.36,
+      "text": "która może pochwalić się nową płytą zatytułowaną Denigration."
+    },
+    {
+      "start": 5237.22,
+      "end": 5245.36,
+      "text": "Sami potrafią znokautować słuchacza, w końcu trenują w tej swojej wadze ciężkiej już od dwóch dekad,"
+    },
+    {
+      "start": 5245.36,
+      "end": 5253.32,
+      "text": "ale postanowiłem zaprezentować piosenkę, którą nagrali wspólnie z innym death metalowym czempionem,"
+    },
+    {
+      "start": 5253.42,
+      "end": 5257.06,
+      "text": "czyli Johnem Gallagerem z Dainfitus."
+    },
+    {
+      "start": 5257.9,
+      "end": 5259.74,
+      "text": "To nie mogło się nie udać."
+    },
+    {
+      "start": 5275.74,
+      "end": 5277.6,
+      "text": "DZIĘKI ZA OBSERWACIE"
+    },
+    {
+      "start": 5488.23,
+      "end": 5507.37,
+      "text": "Czeka nas niebawem osobna audycja poświęcona nowym, dobrym rzeczom z Polski, bo dzisiaj nie zmieszczę wszystkich wartych uwagi nagrań z maja, a mam jeszcze zaległości z kwietnia i nawet wcześniejsze bije się w pierś,"
+    },
+    {
+      "start": 5507.37,
+      "end": 5526.21,
+      "text": "ale coś z płyty Carmina Inferorum puścić wam muszę, w dodatku z obietnicą, że jeszcze do tego materiału wrócę, bo to rzecz dziwna i straszna i właśnie takie lubię najbardziej."
+    },
+    {
+      "start": 5526.21,
+      "end": 5541.35,
+      "text": "A zatem polski zespół z sumeryjską nazwą Kurnugija i właściwie tylko tyle o nich wiem, bo składu afiliacji miasta tudzież miast pochodzenia nie podają,"
+    },
+    {
+      "start": 5541.35,
+      "end": 5556.35,
+      "text": "A mi się nie chciało robić śledztwa, bo skoro artyści uważają, że muzyka ma przemawiać sama za siebie, to ja to uszanuję, tym bardziej, że przemawia, oj przemawia."
+    },
+    {
+      "start": 5556.35,
+      "end": 5563.55,
+      "text": "Słuchacie utworu \"Posesjonem\" na własną odpowiedzialność."
+    },
+    {
+      "start": 5798.38,
+      "end": 5822.34,
+      "text": "Wydawcą płyty Kurnugia jest wytwórnia Gods of War, pozdrawiam serdecznie, która znowu ma za sobą znakomite rozdanie, a w nim m.in. nowy album wałbrzyskiego zespołu Sznur, zatytułowany, pardon, French, Twel."
+    },
+    {
+      "start": 5822.34,
+      "end": 5837.56,
+      "text": "Taka to muzyka, takie teksty, nawet jak na świat ekstremalnego metalu, bardzo radykalne, odpychające, niepokojące i fascynujące zarazem."
+    },
+    {
+      "start": 5838.78,
+      "end": 5850.3,
+      "text": "Coraz lepszy ten sznur, coraz mocniejszy. Gratuluję konsekwencji i wielkiej, choć bez wątpienia chorej wyobraźni."
+    },
+    {
+      "start": 5852.34,
+      "end": 5853.16,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5871.94,
+      "end": 5875.72,
+      "text": "Kubeł na środku pełnym pobrzegi"
+    },
+    {
+      "start": 5875.72,
+      "end": 5877.86,
+      "text": "Ciągle bez niczego"
+    },
+    {
+      "start": 5877.86,
+      "end": 5881.38,
+      "text": "Z wiatrem zamiast serca"
+    },
+    {
+      "start": 5881.38,
+      "end": 5884.82,
+      "text": "Zgubiał z otwartym lijem"
+    },
+    {
+      "start": 5884.82,
+      "end": 5888.32,
+      "text": "Jedno wiatro do wszystkiego"
+    },
+    {
+      "start": 5888.32,
+      "end": 5890.68,
+      "text": "Nikt nic nie powiedział"
+    },
+    {
+      "start": 5890.68,
+      "end": 5893.98,
+      "text": "Ona się nie rusza"
+    },
+    {
+      "start": 5893.98,
+      "end": 5900.7,
+      "text": "Tu białe robaki jedzą w łoki"
+    },
+    {
+      "start": 5901.94,
+      "end": 5902.56,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 6237.54,
+      "end": 6242.68,
+      "text": "Powoli zbliżamy się do końca audycji, bo dochodzi godzina trzecia."
+    },
+    {
+      "start": 6243.58,
+      "end": 6255.68,
+      "text": "I grecki zespół Yothiria postanowił ten fakt skomentować utworem zatytułowanym, a jakże 3am, na trzecia nad ranem."
+    },
+    {
+      "start": 6255.68,
+      "end": 6262.18,
+      "text": "Zdaniem podmiotu lirycznego trzecia nad ranem to godzina duchów."
+    },
+    {
+      "start": 6262.7,
+      "end": 6269.46,
+      "text": "Drzwi się otwierają, demony przybywają i wolność jest blisko."
+    },
+    {
+      "start": 6270.38,
+      "end": 6279.02,
+      "text": "No tak, wszystko się zgadza, niebawem będziecie państwo wolni, będziecie mogli iść spać."
+    },
+    {
+      "start": 6279.02,
+      "end": 6287.2,
+      "text": "3am pochodzi z najnowszej płyty Yothiria zatytułowanej Gone with the Devil."
+    },
+    {
+      "start": 6287.92,
+      "end": 6294.62,
+      "text": "A w zespole, przypominam, gra weteran, heleńskiej sceny black metalowej, niejaki Jim Mutilator."
+    },
+    {
+      "start": 6295.42,
+      "end": 6297.78,
+      "text": "I czuć w tym rękę fachowca."
+    },
+    {
+      "start": 6297.78,
+      "end": 6299.36,
+      "text": "Muzyka"
+    },
+    {
+      "start": 6574.28,
+      "end": 6599.06,
+      "text": "Na finał utwór długi, przedziwnie meandrujący, zaskakujący pomysłami, zawierający i fragmenty przystępne, wręcz ładne i takie, które sprawią, że będziecie się rozglądać nerwowo po pokoju, sprawdzając czy z tą godziną duchów to przypadkiem nie była prawda."
+    },
+    {
+      "start": 6599.44,
+      "end": 6623.94,
+      "text": "Zespół nazywa się Forest of Stars, Las Gwiazd i na początku maja wydał płytę Stuck Overflow in Corpse Pile Interface, którą z braku lepszych pomysłów nazwałbym black metalową, choć ta nalepka absolutnie nie wyczerpuje tematu."
+    },
+    {
+      "start": 6624.34,
+      "end": 6633.22,
+      "text": "Zresztą nie ma co gadać. Szkoda każdej sekundy, która zabiera czas tej siedmioosobowej grupie z Wielkiej Brytanii."
+    },
+    {
+      "start": 6633.8,
+      "end": 6643.86,
+      "text": "Dodam tylko, że moim zdaniem właśnie taki powinien być metal, nieprzewidywalny i niebezpieczny. Innego nie chcę."
+    },
+    {
+      "start": 6644.42,
+      "end": 6645.4,
+      "text": "Dobranoc Państwu."
+    }
+  ],
+  "stats": {
+    "windowCount": 23,
+    "transcribedAudioSec": 1605.73,
+    "segmentCount": 211,
+    "characterCount": 15241
+  },
+  "sourceId": "2026-05-27-ciezki-maj-od-weteranow-z-norwegii-do-wizjonerow-z-anglii"
+}
