@@ -1457,3 +1457,25 @@ a {
 .side__tags a:hover {
   color: var(--accent);
 }
+
+.tags-cloud svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tag-cloud__word {
+  fill: var(--text);
+  font-family: 'Anton', system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+
+.tags-cloud a:hover .tag-cloud__word {
+  fill: var(--accent);
+}
+
+.tag-cloud__word--artist { font-weight: 400; }
+.tag-cloud__word--person { fill: var(--muted); }
+.tag-cloud__word--event { fill: var(--accent); }
+.tag-cloud__word--work { fill: var(--muted); font-style: italic; }

@@ -4,11 +4,22 @@ import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import { getEntries, getEpisodeFiles } from '../../lib/data';
 import { TAG_TYPE_LABELS, TAG_TYPE_ORDER, buildTagIndex } from '../../lib/tags';
+import { layoutCloud } from '../../lib/wordcloud';
 
 const [entries, files] = await Promise.all([getEntries(), getEpisodeFiles()]);
 const index = buildTagIndex(files, entries);
 const tags = [...index.values()];
 const max = Math.max(1, ...tags.map((tag) => tag.episodes.length));
+
+// Chmura: wszystkie tagi naraz, rozmiar od częstości, układ liczony przy buildzie.
+// Osoby i znaczniki redakcyjne są w każdym odcinku, więc zdominowałyby chmurę —
+// w chmurze liczą się zespoły, wydarzenia, dzieła, miejsca i tematy.
+const cloud = layoutCloud(
+  tags
+    .filter((tag) => tag.type !== 'person' && tag.type !== 'editorial')
+    .map((tag) => ({ id: tag.id, label: tag.label, count: tag.episodes.length, type: tag.type })),
+  { height: 620, maxSize: 54 }
+);
 
 const groups = TAG_TYPE_ORDER.map((type) => ({
   type,
@@ -25,6 +36,26 @@ const groups = TAG_TYPE_ORDER.map((type) => ({
     <p class="page-lead">
       {tags.length} tagów w {entries.length} odcinkach. Kliknij tag, żeby zobaczyć audycje, w których się pojawił.
     </p>
+
+    <section class="card tags-cloud" aria-label="Chmura tagów">
+      <svg viewBox={`0 0 ${cloud.width} ${cloud.height}`} role="img" aria-label="Chmura tagów, rozmiar od liczby odcinków">
+        {cloud.placed.map((word) => (
+          <a href={`/tagi/${word.id}/`}>
+            <text
+              x={word.x}
+              y={word.y}
+              font-size={word.size}
+              text-anchor="middle"
+              dominant-baseline="middle"
+              class={`tag-cloud__word tag-cloud__word--${word.type}`}
+              transform={word.rotate ? `rotate(-90 ${word.x} ${word.y})` : undefined}
+            >
+              {word.label}
+            </text>
+          </a>
+        ))}
+      </svg>
+    </section>
 
     {groups.map((group) => (
       <section class="card tags-section" aria-labelledby={`tags-${group.type}`}>
