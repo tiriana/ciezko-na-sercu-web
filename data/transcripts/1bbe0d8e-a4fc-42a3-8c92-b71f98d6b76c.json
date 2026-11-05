@@ -1,0 +1,760 @@
+{
+  "version": 1,
+  "episodeId": "1bbe0d8e-a4fc-42a3-8c92-b71f98d6b76c",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109701332,
+  "fileMtimeMs": 1789150931981.7434,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 104.32
+    },
+    {
+      "index": 1,
+      "start": 177.48,
+      "end": 202.68
+    },
+    {
+      "index": 2,
+      "start": 345.8,
+      "end": 349.44
+    },
+    {
+      "index": 3,
+      "start": 384.45,
+      "end": 387.8
+    },
+    {
+      "index": 4,
+      "start": 495.24,
+      "end": 515.26
+    },
+    {
+      "index": 5,
+      "start": 1276.58,
+      "end": 1308.6
+    },
+    {
+      "index": 6,
+      "start": 1577.92,
+      "end": 1590.72
+    },
+    {
+      "index": 7,
+      "start": 1635.62,
+      "end": 1649.24
+    },
+    {
+      "index": 8,
+      "start": 1836.36,
+      "end": 1891.8
+    },
+    {
+      "index": 9,
+      "start": 2559.62,
+      "end": 2587.87
+    },
+    {
+      "index": 10,
+      "start": 2813.41,
+      "end": 2862.84
+    },
+    {
+      "index": 11,
+      "start": 2931.33,
+      "end": 2945.12
+    },
+    {
+      "index": 12,
+      "start": 3336.93,
+      "end": 3350.59
+    },
+    {
+      "index": 13,
+      "start": 3624.93,
+      "end": 3689.56
+    },
+    {
+      "index": 14,
+      "start": 4002.53,
+      "end": 4021.05
+    },
+    {
+      "index": 15,
+      "start": 4231.72,
+      "end": 4270.17
+    },
+    {
+      "index": 16,
+      "start": 4466.15,
+      "end": 4501.76
+    },
+    {
+      "index": 17,
+      "start": 4811.4,
+      "end": 4836.57
+    },
+    {
+      "index": 18,
+      "start": 5854.4,
+      "end": 5871.8
+    },
+    {
+      "index": 19,
+      "start": 6236.87,
+      "end": 6261.6
+    },
+    {
+      "index": 20,
+      "start": 6571.84,
+      "end": 6609.6
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.32,
+      "end": 4.68,
+      "text": "Trójka. Program Trzeci Polskiego Radia."
+    },
+    {
+      "start": 6.12,
+      "end": 10.02,
+      "text": "Adam Hrynkiewicz, Michał Kowarski. Meldujemy się na stanowisku."
+    },
+    {
+      "start": 14.04,
+      "end": 16.08,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 17.72,
+      "end": 23.46,
+      "text": "Przyznam, dzisiejsze Ciężko na sercu będzie mniej ciężki niż przez ostatnie trzy tygodnie."
+    },
+    {
+      "start": 23.98,
+      "end": 27.52,
+      "text": "Będzie sporo metaliki, pojawi się Pink Floyd i nowa płyta Deftons."
+    },
+    {
+      "start": 27.74,
+      "end": 31.54,
+      "text": "Choć nie zabraknie klimatów ciężkich i zaskakujących."
+    },
+    {
+      "start": 32.02,
+      "end": 32.68,
+      "text": "Mike Patton."
+    },
+    {
+      "start": 38.6,
+      "end": 45.92,
+      "text": "Kiedy pierwszy raz usłyszałem ten utwór, myślałem, że to żart, że ktoś go dokleił do początkowych napisów filmu."
+    },
+    {
+      "start": 57.74,
+      "end": 66.48,
+      "text": "Potem dość szybko okazuje się, że jest to najlepiej skrojony utwór do sceny, w której rodzina spokojnie jedzie autem na wakacje."
+    },
+    {
+      "start": 67.08,
+      "end": 69.34,
+      "text": "Biorąc pod uwagę to, co się dzieje dalej w fabule."
+    },
+    {
+      "start": 70.34,
+      "end": 72.16,
+      "text": "Michelle Haneke, Funny Games."
+    },
+    {
+      "start": 72.42,
+      "end": 75.22,
+      "text": "Jeśli ktoś nie widział tego filmu, polecam bardzo."
+    },
+    {
+      "start": 76.02,
+      "end": 83.52,
+      "text": "Muzyka, zespół Naked City, utwór Bonehead, współpraca Johna Zorna i Mike'a Pattona właśnie."
+    },
+    {
+      "start": 84.2,
+      "end": 88.66,
+      "text": "No polecam, jak dorzucę też album Dead Radio, wspomnianego Naked City."
+    },
+    {
+      "start": 89.34,
+      "end": 91.94,
+      "text": "Choć to i Funny Games to na mocne nerwy."
+    },
+    {
+      "start": 92.36,
+      "end": 94.32,
+      "text": "Trzeba mieć dobry dzień, żeby się nie umęczyć."
+    },
+    {
+      "start": 94.96,
+      "end": 97.7,
+      "text": "Dlatego sięgniemy na początek po stare, dobre Black Sabbath."
+    },
+    {
+      "start": 98.22,
+      "end": 99.14,
+      "text": "To znaczy Faith No More."
+    },
+    {
+      "start": 100.1,
+      "end": 100.84,
+      "text": "To znaczy Black Sabbath."
+    },
+    {
+      "start": 101.16,
+      "end": 102.7,
+      "text": "Wciąż Mike Patton w roli głównej."
+    },
+    {
+      "start": 102.7,
+      "end": 104.32,
+      "text": "Muzyka"
+    },
+    {
+      "start": 177.48,
+      "end": 202.68,
+      "text": "Muzyka"
+    },
+    {
+      "start": 345.8,
+      "end": 349.44,
+      "text": "When darkness won't stop to end"
+    },
+    {
+      "start": 384.45,
+      "end": 387.81,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 495.24,
+      "end": 497.22,
+      "text": "Faith No More"
+    },
+    {
+      "start": 497.22,
+      "end": 498.3,
+      "text": "Warpix"
+    },
+    {
+      "start": 498.3,
+      "end": 499.02,
+      "text": "Alive"
+    },
+    {
+      "start": 499.02,
+      "end": 499.86,
+      "text": "Brixton Academy"
+    },
+    {
+      "start": 499.86,
+      "end": 501.3,
+      "text": "1990"
+    },
+    {
+      "start": 501.3,
+      "end": 503.16,
+      "text": "Na dobry początek"
+    },
+    {
+      "start": 503.16,
+      "end": 504.92,
+      "text": "Wspomniałem, że"
+    },
+    {
+      "start": 504.92,
+      "end": 507.1,
+      "text": "Deftones wydało w piątek nową płytę"
+    },
+    {
+      "start": 507.1,
+      "end": 513.64,
+      "text": "Wspominałem"
+    },
+    {
+      "start": 513.64,
+      "end": 515.26,
+      "text": "Wspominałem"
+    },
+    {
+      "start": 1276.58,
+      "end": 1280.34,
+      "text": "I my z Adamem tutaj nawet palca nie przyłożyliśmy."
+    },
+    {
+      "start": 1281.02,
+      "end": 1285.52,
+      "text": "Sami tak ładnie panowie z Deptons wymyślili te utwory, żeby się łączyły."
+    },
+    {
+      "start": 1286.56,
+      "end": 1294.4,
+      "text": "Płyta nazywa się Private Music, wyszła w piątek i przed chwilą usłyszeliśmy utwory od 4 do 6, jak stoi na albumie."
+    },
+    {
+      "start": 1295.82,
+      "end": 1304.76,
+      "text": "Dla przypomnienia, 5 lutego 2026 roku Deptons odwiedzi Atlas Arenę w Łodzi i mam nadzieję, że zagrają Life Party."
+    },
+    {
+      "start": 1305.3,
+      "end": 1306.98,
+      "text": "Cofamy się o 25 lat."
+    },
+    {
+      "start": 1578.74,
+      "end": 1584.18,
+      "text": "Naive Party, Deftones, White Pony, 1990 rok."
+    },
+    {
+      "start": 1584.7,
+      "end": 1590.72,
+      "text": "I przyznam, że te kobiece wokale do złudzenia kojarzą mi się z tym..."
+    },
+    {
+      "start": 1636.42,
+      "end": 1645.08,
+      "text": "Trasa szybkiego ruchu, pusta droga i zachód słońca w akompaniamencie The Great Gig in the Sky."
+    },
+    {
+      "start": 1645.64,
+      "end": 1646.48,
+      "text": "Ciężko to przebić."
+    },
+    {
+      "start": 1648.48,
+      "end": 1649.24,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1836.36,
+      "end": 1838.78,
+      "text": "Złośliwi powiedzą"
+    },
+    {
+      "start": 1838.78,
+      "end": 1841.24,
+      "text": "No tak, ale przecież to jest audycja metalowa."
+    },
+    {
+      "start": 1841.46,
+      "end": 1847.38,
+      "text": "Przyznaję, grań Floydów w audycji Ciężko na sercu jest delikatnym rozminięciem się z tematem,"
+    },
+    {
+      "start": 1848.04,
+      "end": 1852.54,
+      "text": "ale myślę, że Floydów świadomy jest każdy, kto słucha metalu."
+    },
+    {
+      "start": 1853.24,
+      "end": 1858.08,
+      "text": "Można ich lubić, można uwielbiać, można nie znać, nie być przekonanym,"
+    },
+    {
+      "start": 1858.08,
+      "end": 1862.62,
+      "text": "ale każdy jakoś zareaguje, kiedy usłyszy nazwę Pink Floyd."
+    },
+    {
+      "start": 1864.1,
+      "end": 1868.44,
+      "text": "Jeśli ktoś przekonany nie jest, a przesłucha w całości następny utwór,"
+    },
+    {
+      "start": 1869.76,
+      "end": 1873.48,
+      "text": "to myślę, że spokojnie może się nazywać aspirującym Floydowcem"
+    },
+    {
+      "start": 1873.48,
+      "end": 1877.08,
+      "text": "i brać się za dyskografię."
+    },
+    {
+      "start": 1877.86,
+      "end": 1879.18,
+      "text": "Ja bym zaczął The Virgin Bell chyba."
+    },
+    {
+      "start": 1879.9,
+      "end": 1886.68,
+      "text": "W każdym razie, w maju wyszedł remaster koncertu z Pompejów z 1972 roku"
+    },
+    {
+      "start": 1886.68,
+      "end": 1890.14,
+      "text": "i ostatnio ta płyta jeździ ze mną w samochodzie."
+    },
+    {
+      "start": 2559.62,
+      "end": 2566.92,
+      "text": "Echos. Część pierwsza. Pink Floyd. Live at Pompeii. Remastered 2025."
+    },
+    {
+      "start": 2567.62,
+      "end": 2572.52,
+      "text": "Ostatnio wracając z Mazur przesłuchałem całość ze dwa razy."
+    },
+    {
+      "start": 2573.02,
+      "end": 2577.64,
+      "text": "Polecam bardzo. Bardzo uniwersalny towarzysz drogi i nie tylko."
+    },
+    {
+      "start": 2578.34,
+      "end": 2581.7,
+      "text": "Ale potem zrobiło się ciemno, zaczęło padać."
+    },
+    {
+      "start": 2582.7,
+      "end": 2586.26,
+      "text": "Trzeba było włączyć sobie coś dynamiczniejszego."
+    },
+    {
+      "start": 2814.41,
+      "end": 2822.19,
+      "text": "Włączanie płyty Ride the Lightning, kiedy akurat burza szaleje, to oczywisty wybór, ale czasem takie są najlepsze."
+    },
+    {
+      "start": 2822.87,
+      "end": 2828.61,
+      "text": "Moim zdaniem najlepsza płyta Metalliki i jestem gotów się o to pokłócić."
+    },
+    {
+      "start": 2829.03,
+      "end": 2832.77,
+      "text": "Michał Kowarski, mapopolskieradio.pl. Zapraszam do dyskusji."
+    },
+    {
+      "start": 2833.49,
+      "end": 2839.25,
+      "text": "I jestem też gotów się pokłócić o to, że Metallica zawsze była trzymana przez prawą rękę Jamesa Hetfielda."
+    },
+    {
+      "start": 2839.25,
+      "end": 2842.03,
+      "text": "Uwaga, teraz będzie żart dla gitarzystów."
+    },
+    {
+      "start": 2842.59,
+      "end": 2849.77,
+      "text": "W drugim Elowostrołęce mawiano, że Hetfield byłby w stanie zagrać Blit Meshugga kostkując z dołu."
+    },
+    {
+      "start": 2850.61,
+      "end": 2851.93,
+      "text": "O gitarzystach jeszcze trochę będzie."
+    },
+    {
+      "start": 2852.69,
+      "end": 2861.17,
+      "text": "Wiadomo, Hetfield to gitara rytmiczna, ale jak mu przychodziło nagrywać solówki, takie, że aż serce rośnie."
+    },
+    {
+      "start": 2931.33,
+      "end": 2936.71,
+      "text": "Ale też jestem daleki od stwierdzenia, że nie cenię reszty zespołu."
+    },
+    {
+      "start": 2936.97,
+      "end": 2940.91,
+      "text": "Na przykład Jasonowi Newsteadowi zawsze się po głowie dostaje,"
+    },
+    {
+      "start": 2941.39,
+      "end": 2943.45,
+      "text": "a takie fajne partie potrafią komponować."
+    },
+    {
+      "start": 3336.93,
+      "end": 3339.45,
+      "text": "My Friend in Misery"
+    },
+    {
+      "start": 3339.45,
+      "end": 3342.39,
+      "text": "Metallica i pamiętna partia"
+    },
+    {
+      "start": 3342.39,
+      "end": 3343.47,
+      "text": "Jasona Newstada"
+    },
+    {
+      "start": 3343.47,
+      "end": 3346.03,
+      "text": "Szkoda, że całkiem go wycięli"
+    },
+    {
+      "start": 3346.03,
+      "end": 3346.91,
+      "text": "z Injustice for All"
+    },
+    {
+      "start": 3346.91,
+      "end": 3348.97,
+      "text": "Ale to da się naprawić"
+    },
+    {
+      "start": 3348.97,
+      "end": 3350.59,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3625.81,
+      "end": 3633.15,
+      "text": "Swoją drogą ta płyta wyszła 24 sierpnia 1988 roku, więc ocieramy się o rocznicę."
+    },
+    {
+      "start": 3633.67,
+      "end": 3636.11,
+      "text": "Lars też potrafi komponować genialne partie."
+    },
+    {
+      "start": 3636.81,
+      "end": 3643.85,
+      "text": "Dyer's Eve, Injustice for All i myślę, że panowie na Master of Puppets i Injustice for All w szczególności"
+    },
+    {
+      "start": 3643.85,
+      "end": 3650.03,
+      "text": "bawili się rytmem i potrafili takie delikatne załamania wkomponowywać bez poczucia,"
+    },
+    {
+      "start": 3650.37,
+      "end": 3652.53,
+      "text": "że dzieje się coś wyrywanego z kontekstu."
+    },
+    {
+      "start": 3654.93,
+      "end": 3660.15,
+      "text": "Raczej dzieje się coś intrygującego."
+    },
+    {
+      "start": 3661.67,
+      "end": 3666.83,
+      "text": "Można się oczywiście z Larsa śmiać, że gra nie równo, ale ostatnio naprawdę trzyma formę"
+    },
+    {
+      "start": 3666.83,
+      "end": 3672.57,
+      "text": "i gdyby nie on, pewnie ta audycja nie miałaby miejsca, bo dzięki jego minom w teledysku St. Anger"
+    },
+    {
+      "start": 3672.57,
+      "end": 3675.81,
+      "text": "zapragnąłem grę z na perkusji i zakochałem się w metalu."
+    },
+    {
+      "start": 3683.75,
+      "end": 3687.85,
+      "text": "O odkrywaniu muzyki jeszcze będzie, ale najpierw nowy koroner."
+    },
+    {
+      "start": 4002.53,
+      "end": 4013.13,
+      "text": "Dissonance Theory ukaże się 17 października i to będzie pierwsza płyta szwajcarskiego koronera od 1993 roku."
+    },
+    {
+      "start": 4013.63,
+      "end": 4015.05,
+      "text": "Także no, nie w kij dmuchał."
+    },
+    {
+      "start": 4015.61,
+      "end": 4019.37,
+      "text": "Zacieram ręce na tę płytę, a tymczasem Szwecja."
+    },
+    {
+      "start": 4231.72,
+      "end": 4241.26,
+      "text": "Neverlasting, stosunkowo nieznanego zespołu Feared, a szkoda, bo jest to naprawdę genialny zespół, za którym stoi Ola Englund."
+    },
+    {
+      "start": 4241.88,
+      "end": 4251.7,
+      "text": "Gość, który ponad 10 lat temu pokazał całemu światu za pośrednictwem serwisu YouTube, że stosunkowo skromnym nakładem finansowym można ukręcić nie lada brzmienie w domu."
+    },
+    {
+      "start": 4258.1,
+      "end": 4268.44,
+      "text": "Tutaj będzie dwóch bohaterów. Opoka metalowego brzmienia. Engl Savage i Mesa Boogie Dua Rectifier. Nie zwracajmy uwagi na bębny."
+    },
+    {
+      "start": 4466.15,
+      "end": 4474.67,
+      "text": "Wspaniałe w filmach Oli było to, że poza jego riffami można było natrafić na motywy innych artystów."
+    },
+    {
+      "start": 4475.31,
+      "end": 4477.69,
+      "text": "Uwaga, teraz będzie jaka to melodia."
+    },
+    {
+      "start": 4496.15,
+      "end": 4500.13,
+      "text": "Ci, co zgadli, że to entumpt, mogą sobie wpisać plusa."
+    },
+    {
+      "start": 4811.4,
+      "end": 4817.98,
+      "text": "To write, to shoot, strafe and speak the truth, 1997, Entombed."
+    },
+    {
+      "start": 4818.8,
+      "end": 4824.92,
+      "text": "Było już mocno, było tajemniczo, teraz będzie dziwacznie i wszystko co wcześniej."
+    },
+    {
+      "start": 4825.86,
+      "end": 4826.66,
+      "text": "Razem wzięte."
+    },
+    {
+      "start": 4827.54,
+      "end": 4832.62,
+      "text": "VW, moja płyta roku 2024 i drobny wycinek."
+    },
+    {
+      "start": 4833.2,
+      "end": 4834.96,
+      "text": "Zespół nazywa się Mama Lek."
+    },
+    {
+      "start": 5855.36,
+      "end": 5863.14,
+      "text": "Wiem, że to trochę głupia metafora, ale słuchając tej płyty miałem wrażenie, jakbym doświadczał żałobnego wyznania wielkiej stopy."
+    },
+    {
+      "start": 5863.84,
+      "end": 5868.56,
+      "text": "No to teraz będzie wyznanie pana, który pracuje w kotłowni i nie jest z tego powodu zadowolony."
+    },
+    {
+      "start": 5869.22,
+      "end": 5870.2,
+      "text": "Boiler Room."
+    },
+    {
+      "start": 5870.2,
+      "end": 5871.8,
+      "text": "Boiler Room."
+    },
+    {
+      "start": 6236.87,
+      "end": 6244.99,
+      "text": "Wydaje mi się, że Mama Lek można albo kochać, albo nienawidzić za ich dziwność i nieszablonowość."
+    },
+    {
+      "start": 6246.55,
+      "end": 6249.57,
+      "text": "Zbliżamy się do końca audycji Ciężko na sercu."
+    },
+    {
+      "start": 6249.89,
+      "end": 6251.31,
+      "text": "Zostały nam dwa utwory."
+    },
+    {
+      "start": 6251.87,
+      "end": 6253.81,
+      "text": "Najpierwszy, ostatni ogień."
+    },
+    {
+      "start": 6254.39,
+      "end": 6259.93,
+      "text": "Born at Night z Bowpile z ich najnowszej płyty Sunshine and Balance Beams."
+    },
+    {
+      "start": 6571.84,
+      "end": 6574.28,
+      "text": "Hałda zrodzona nocą"
+    },
+    {
+      "start": 6574.28,
+      "end": 6576.54,
+      "text": "Born at Night zespół Pile"
+    },
+    {
+      "start": 6576.54,
+      "end": 6584.2,
+      "text": "Na koniec"
+    },
+    {
+      "start": 6584.2,
+      "end": 6585.94,
+      "text": "chciałbym oddać hołd"
+    },
+    {
+      "start": 6585.94,
+      "end": 6587.64,
+      "text": "wielkiemu muzykowi, który"
+    },
+    {
+      "start": 6587.64,
+      "end": 6589.6,
+      "text": "20 sierpnia odszedł"
+    },
+    {
+      "start": 6589.6,
+      "end": 6590.94,
+      "text": "w wieku 51 lat"
+    },
+    {
+      "start": 6590.94,
+      "end": 6593.46,
+      "text": "Brent Heinz, który przez ponad"
+    },
+    {
+      "start": 6593.46,
+      "end": 6595.62,
+      "text": "20 lat zostawił masę genialnej"
+    },
+    {
+      "start": 6595.62,
+      "end": 6597.66,
+      "text": "muzyki wraz z zespołem"
+    },
+    {
+      "start": 6597.66,
+      "end": 6598.2,
+      "text": "Mastodon"
+    },
+    {
+      "start": 6598.2,
+      "end": 6601.82,
+      "text": "Adam Hrynkiewicz, Michał Kowarski"
+    },
+    {
+      "start": 6601.82,
+      "end": 6604.14,
+      "text": "to była audycja Ciężko na sercu"
+    },
+    {
+      "start": 6604.14,
+      "end": 6606.64,
+      "text": "życzymy miłego dalszego odbioru"
+    },
+    {
+      "start": 6606.64,
+      "end": 6609.6,
+      "text": "muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 21,
+    "transcribedAudioSec": 637.81,
+    "segmentCount": 127,
+    "characterCount": 6312
+  },
+  "sourceId": "2025-08-27-nieco-lzejsze-brzmienie-ciezkiej-muzy"
+}

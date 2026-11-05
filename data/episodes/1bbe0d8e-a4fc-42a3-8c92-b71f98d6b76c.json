@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "id": "1bbe0d8e-a4fc-42a3-8c92-b71f98d6b76c",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T21:37:34.462Z",
+  "durationSec": 6872,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "coroner",
+      "label": "Coroner",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3688
+    },
+    {
+      "id": "deftones",
+      "label": "Deftones",
+      "type": "artist",
+      "source": "tracks",
+      "at": 514
+    },
+    {
+      "id": "entombed",
+      "label": "Entombed",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4500
+    },
+    {
+      "id": "faith-no-more",
+      "label": "Faith No More",
+      "type": "artist",
+      "source": "tracks",
+      "at": 103
+    },
+    {
+      "id": "feared",
+      "label": "Feared",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4020
+    },
+    {
+      "id": "mamaleek",
+      "label": "Mamaleek",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4835
+    },
+    {
+      "id": "mastodon",
+      "label": "Mastodon",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6608
+    },
+    {
+      "id": "metallica",
+      "label": "Metallica",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2586
+    },
+    {
+      "id": "pile",
+      "label": "Pile",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6260
+    },
+    {
+      "id": "pink-floyd",
+      "label": "Pink Floyd",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1589
+    }
+  ],
+  "tracks": [
+    {
+      "start": 103,
+      "end": 201,
+      "durationSec": 76,
+      "artist": "Faith No More",
+      "title": "War Pigs",
+      "album": "The Real Thing",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 201,
+      "end": 386,
+      "durationSec": 146,
+      "artist": "Faith No More",
+      "title": "War Pigs",
+      "album": "The Real Thing",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 386,
+      "end": 514,
+      "durationSec": 110,
+      "artist": "Faith No More",
+      "title": "War Pigs",
+      "album": "The Real Thing",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 514,
+      "end": 1307,
+      "durationSec": 764,
+      "artist": "Deftones",
+      "title": "infinite source",
+      "album": "private music",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1307,
+      "end": 1589,
+      "durationSec": 272,
+      "artist": "Deftones",
+      "title": "Knife Prty",
+      "album": "White Pony",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1589,
+      "end": 1648,
+      "durationSec": 48,
+      "artist": "Pink Floyd",
+      "title": "The Great Gig In the Sky",
+      "album": "The Dark Side of the Moon",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1648,
+      "end": 1890,
+      "durationSec": 190,
+      "artist": "Pink Floyd",
+      "title": "The Great Gig In the Sky",
+      "album": "The Dark Side of the Moon",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1890,
+      "end": 2586,
+      "durationSec": 671,
+      "artist": "Pink Floyd",
+      "title": "Echoes - Part 1 (Live at Pompeii - MCMLXXII - 2025 Mix)",
+      "album": "Pink Floyd at Pompeii - MCMLXXII (2025 Mix)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2586,
+      "end": 2861,
+      "durationSec": 229,
+      "artist": "Metallica",
+      "title": "Fight Fire with Fire",
+      "album": "Ride the Lightning (Remastered) [2016 Remastered Version",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2861,
+      "end": 2944,
+      "durationSec": 72,
+      "artist": "Metallica",
+      "title": "Nothing Else Matters",
+      "album": "Metallica (Remastered)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2944,
+      "end": 3349,
+      "durationSec": 395,
+      "artist": "Metallica",
+      "title": "My Friend of Misery",
+      "album": "Metallica (Remastered)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3349,
+      "end": 3688,
+      "durationSec": 277,
+      "artist": "Metallica",
+      "title": "Dyers Eve",
+      "album": "And Justice for All (Remastered)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3688,
+      "end": 4020,
+      "durationSec": 316,
+      "artist": "Coroner",
+      "title": "Renewal",
+      "album": "Dissonance Theory",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4020,
+      "end": 4269,
+      "durationSec": 214,
+      "artist": "Feared",
+      "title": "My Own Redemption",
+      "album": "Synder",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4269,
+      "end": 4500,
+      "durationSec": 199,
+      "artist": "Feared",
+      "title": "Devil in White",
+      "album": "Furor Incarnatus",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4500,
+      "end": 4835,
+      "durationSec": 313,
+      "artist": "Entombed",
+      "title": "Damn Deal Done (2022 Remaster)",
+      "album": "DCLXVI  To Ride, Shoot Straight and Speak the Truth! (2022 Remaster)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4835,
+      "end": 5870,
+      "durationSec": 1021,
+      "artist": "Mamaleek",
+      "title": "Ancient Souls, No Longer Sorrowful",
+      "album": "Vida Blue",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5870,
+      "end": 6260,
+      "durationSec": 368,
+      "artist": "Mamaleek",
+      "title": "Boiler Room",
+      "album": "Diner Coffee",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6260,
+      "end": 6608,
+      "durationSec": 313,
+      "artist": "Pile",
+      "title": "Born at Night",
+      "album": "Sunshine and Balance Beams",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6608,
+      "end": 6872,
+      "durationSec": 264,
+      "artist": "Mastodon",
+      "title": "Oblivion",
+      "album": "Crack the Skye",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
