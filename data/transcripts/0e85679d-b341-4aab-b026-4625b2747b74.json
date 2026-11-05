@@ -1,0 +1,1260 @@
+{
+  "version": 1,
+  "episodeId": "0e85679d-b341-4aab-b026-4625b2747b74",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109142552,
+  "fileMtimeMs": 1789150925319.21,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 21.28
+    },
+    {
+      "index": 1,
+      "start": 396.48,
+      "end": 432.44
+    },
+    {
+      "index": 2,
+      "start": 623.01,
+      "end": 688.41
+    },
+    {
+      "index": 3,
+      "start": 865.22,
+      "end": 868.83
+    },
+    {
+      "index": 4,
+      "start": 1101.09,
+      "end": 1113.6
+    },
+    {
+      "index": 5,
+      "start": 1387.36,
+      "end": 1447.32
+    },
+    {
+      "index": 6,
+      "start": 1465.44,
+      "end": 1473.56
+    },
+    {
+      "index": 7,
+      "start": 1609.83,
+      "end": 1638.49
+    },
+    {
+      "index": 8,
+      "start": 1917.51,
+      "end": 1944
+    },
+    {
+      "index": 9,
+      "start": 2135.52,
+      "end": 2160.25
+    },
+    {
+      "index": 10,
+      "start": 2472.26,
+      "end": 2486.59
+    },
+    {
+      "index": 11,
+      "start": 2564.9,
+      "end": 2572.09
+    },
+    {
+      "index": 12,
+      "start": 2807.52,
+      "end": 2812.19
+    },
+    {
+      "index": 13,
+      "start": 3419.72,
+      "end": 3430.49
+    },
+    {
+      "index": 14,
+      "start": 3721.25,
+      "end": 3735.23
+    },
+    {
+      "index": 15,
+      "start": 3966.28,
+      "end": 3994.81
+    },
+    {
+      "index": 16,
+      "start": 4201.8,
+      "end": 4211.04
+    },
+    {
+      "index": 17,
+      "start": 4379.52,
+      "end": 4407.07
+    },
+    {
+      "index": 18,
+      "start": 4656.42,
+      "end": 4670.75
+    },
+    {
+      "index": 19,
+      "start": 4835.91,
+      "end": 4848.06
+    },
+    {
+      "index": 20,
+      "start": 5039.36,
+      "end": 5058.94
+    },
+    {
+      "index": 21,
+      "start": 5280.23,
+      "end": 5308.09
+    },
+    {
+      "index": 22,
+      "start": 5434.02,
+      "end": 5455.9
+    },
+    {
+      "index": 23,
+      "start": 5653.35,
+      "end": 5682.59
+    },
+    {
+      "index": 24,
+      "start": 5857.16,
+      "end": 5908.83
+    },
+    {
+      "index": 25,
+      "start": 6145.38,
+      "end": 6556.32
+    },
+    {
+      "index": 26,
+      "start": 6774.98,
+      "end": 6795.04
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.5,
+      "text": "Trójka"
+    },
+    {
+      "start": 1.5,
+      "end": 5,
+      "text": "Program Trzeci Polskiego Radia"
+    },
+    {
+      "start": 5,
+      "end": 9.62,
+      "text": "Dobry wieczór"
+    },
+    {
+      "start": 9.62,
+      "end": 15.8,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 15.8,
+      "end": 19.64,
+      "text": "Szwecja"
+    },
+    {
+      "start": 396.48,
+      "end": 412.22,
+      "text": "Bartek Machajewski, Michał Kowarski, Wald Hiarta w utworze Sargasso z albumu 30 maj 2025 roku."
+    },
+    {
+      "start": 412.22,
+      "end": 416.18,
+      "text": "Jeśli ktoś jeszcze nie słysza o całości, bardzo serdecznie polecam."
+    },
+    {
+      "start": 416.82,
+      "end": 420.74,
+      "text": "Ich debiut z 2011 roku zrobił na mnie nie lada wrażenie."
+    },
+    {
+      "start": 421.34,
+      "end": 426.46,
+      "text": "Wtedy wszyscy grający na siódemkach, ósemkach, mowa oczywiście o gitarach, mówili o dżędziem."
+    },
+    {
+      "start": 426.76,
+      "end": 429.56,
+      "text": "A panowie Szwedzi wymyślili swoją onomatopeję."
+    },
+    {
+      "start": 430.14,
+      "end": 430.68,
+      "text": "Cała..."
+    },
+    {
+      "start": 430.68,
+      "end": 432.44,
+      "text": "Muzyka"
+    },
+    {
+      "start": 623.01,
+      "end": 625.77,
+      "text": "Wildhiarta, Szwecja"
+    },
+    {
+      "start": 625.77,
+      "end": 627.11,
+      "text": "Polecamy"
+    },
+    {
+      "start": 627.11,
+      "end": 633.85,
+      "text": "I w sumie ten klimat jest dobry"
+    },
+    {
+      "start": 633.85,
+      "end": 636.27,
+      "text": "By opowiedzieć nieco o naszych następnych bohaterach"
+    },
+    {
+      "start": 636.27,
+      "end": 637.33,
+      "text": "La Disput"
+    },
+    {
+      "start": 637.33,
+      "end": 638.83,
+      "text": "Czyli po włosku Spur"
+    },
+    {
+      "start": 638.83,
+      "end": 640.91,
+      "text": "Spur sam ze sobą"
+    },
+    {
+      "start": 640.91,
+      "end": 642.73,
+      "text": "I głównie ze swoimi demonami"
+    },
+    {
+      "start": 642.73,
+      "end": 645.67,
+      "text": "Bardzo dobry, przemyślany, inteligentny hardcore"
+    },
+    {
+      "start": 645.67,
+      "end": 648.13,
+      "text": "Jeśli ktoś lubi na przykład Radiohead"
+    },
+    {
+      "start": 648.13,
+      "end": 649.39,
+      "text": "Albo Mars Volte"
+    },
+    {
+      "start": 649.39,
+      "end": 651.35,
+      "text": "I raczej jest na bakier"
+    },
+    {
+      "start": 651.35,
+      "end": 652.89,
+      "text": "Z mocnymi brzmieniami"
+    },
+    {
+      "start": 652.89,
+      "end": 656.29,
+      "text": "Myślę, że La Disput to jest bardzo dobry punkt"
+    },
+    {
+      "start": 656.29,
+      "end": 657.73,
+      "text": "Od którego można zacząć"
+    },
+    {
+      "start": 657.73,
+      "end": 660.57,
+      "text": "5 września wychodzi ich najnowsza płyta"
+    },
+    {
+      "start": 660.57,
+      "end": 664.25,
+      "text": "I znamy 12 z 14 utworów"
+    },
+    {
+      "start": 664.25,
+      "end": 667.57,
+      "text": "Otóż cały album składa się z kilku opowieści"
+    },
+    {
+      "start": 667.57,
+      "end": 670.39,
+      "text": "Niektóre mają jeden długi utwór"
+    },
+    {
+      "start": 670.39,
+      "end": 671.91,
+      "text": "Inne mają na przykład trzy utwory"
+    },
+    {
+      "start": 671.91,
+      "end": 675.07,
+      "text": "Jest tych opowieści na albumie pięć"
+    },
+    {
+      "start": 675.07,
+      "end": 679.07,
+      "text": "I ostatnią zostawili na premierę albumu"
+    },
+    {
+      "start": 679.07,
+      "end": 680.51,
+      "text": "Miesiąc"
+    },
+    {
+      "start": 680.51,
+      "end": 682.11,
+      "text": "Jak mówiłem"
+    },
+    {
+      "start": 682.11,
+      "end": 684.79,
+      "text": "Przemyślany, inteligentny hardcore"
+    },
+    {
+      "start": 684.79,
+      "end": 686.39,
+      "text": "Smutny hardcore"
+    },
+    {
+      "start": 686.39,
+      "end": 688.41,
+      "text": "Smutny hardcore"
+    },
+    {
+      "start": 865.22,
+      "end": 868.84,
+      "text": "I'm ashamed, I felt surprised."
+    },
+    {
+      "start": 1101.09,
+      "end": 1104.29,
+      "text": "If you will just turn to your last page of the banner this week,"
+    },
+    {
+      "start": 1104.95,
+      "end": 1110.37,
+      "text": "you will find a series of articles by Arnold Brink on that subject."
+    },
+    {
+      "start": 1110.37,
+      "end": 1113.59,
+      "text": "You must die. I must die."
+    },
+    {
+      "start": 1387.36,
+      "end": 1401.04,
+      "text": "We thank Thee for all the mercies bestowed upon us, for Thy Word and Thy Spirit, for Thy power of grace, and for Thy love as it speaks to us."
+    },
+    {
+      "start": 1403.12,
+      "end": 1424.56,
+      "text": "May we never cease seeking Thy kingdom, seeking Thy righteousness. May we wait on Thee day by day to receive with Thy hand food and drink and clothing and shelter and all things. In Jesus' name. Amen."
+    },
+    {
+      "start": 1425.84,
+      "end": 1440.56,
+      "text": "La Dispute – No One Was Driving The Car, premiera 5 września. La Dispute akurat to nie dotyczy, bo to zespół, który gra taką muzykę od bardzo dawna, ale mam wrażenie, że coraz więcej takiej muzyki trafia do szerszej publiczności niż powiedzmy kilka lat temu."
+    },
+    {
+      "start": 1442.74,
+      "end": 1447.32,
+      "text": "Tym bardziej, kiedy zdarzają się takie perełki."
+    },
+    {
+      "start": 1465.44,
+      "end": 1468.76,
+      "text": "Zespół nazywa się Tubi Gentle."
+    },
+    {
+      "start": 1468.76,
+      "end": 1470.76,
+      "text": "By być delikatnym."
+    },
+    {
+      "start": 1470.76,
+      "end": 1473.56,
+      "text": "Czy ja wiem?"
+    },
+    {
+      "start": 1609.83,
+      "end": 1612.39,
+      "text": "To jest płyta z tego roku"
+    },
+    {
+      "start": 1612.39,
+      "end": 1614.79,
+      "text": "A ten breakdown na koniec brzmi"
+    },
+    {
+      "start": 1614.79,
+      "end": 1616.93,
+      "text": "Jakbym cofnął się do 2008 roku"
+    },
+    {
+      "start": 1616.93,
+      "end": 1618.17,
+      "text": "Wspaniała rzecz"
+    },
+    {
+      "start": 1618.17,
+      "end": 1620.61,
+      "text": "Gramy pierwsze trzy utwory z płyty"
+    },
+    {
+      "start": 1620.61,
+      "end": 1622.19,
+      "text": "I am a spiritual being"
+    },
+    {
+      "start": 1622.19,
+      "end": 1623.69,
+      "text": "Having a human experience"
+    },
+    {
+      "start": 1623.69,
+      "end": 1636.35,
+      "text": "A tak zaczyna się utwór numer dwa"
+    },
+    {
+      "start": 1636.35,
+      "end": 1638.49,
+      "text": "Aleluja"
+    },
+    {
+      "start": 1917.51,
+      "end": 1923.15,
+      "text": "To be gentle. Płyta I am a spiritual being having a human experience."
+    },
+    {
+      "start": 1923.67,
+      "end": 1926.07,
+      "text": "Screamo wraca do łask, można powiedzieć."
+    },
+    {
+      "start": 1936.25,
+      "end": 1938.77,
+      "text": "To nie jedyna świetna płyta w tej materii."
+    },
+    {
+      "start": 1939.35,
+      "end": 1942.45,
+      "text": "Tym razem cofniemy się do 2024 roku."
+    },
+    {
+      "start": 2135.52,
+      "end": 2141.2,
+      "text": "Frail Body Artificial Booket, jedna z moich płyt roku poprzedniego."
+    },
+    {
+      "start": 2141.2,
+      "end": 2158.6,
+      "text": "I skoro już jesteśmy przy rozmyciu, to może sięgnijmy po płytę, od której wydaje mi się zaczęła się ta cała rekonquista związana z ubarwianiem black metalów, inne gatunki i powracania do Screamo na przykład, Death Heaven, Sun Matter."
+    },
+    {
+      "start": 2472.26,
+      "end": 2480.4,
+      "text": "Black metal zawsze był taki mroczny, zły, a może być chodzeniem po plaży przy zachodzie słońca."
+    },
+    {
+      "start": 2480.4,
+      "end": 2486.6,
+      "text": "To wciąż jest ciężka, agresywna muzyka, ale ma w sobie sporo ciepła."
+    },
+    {
+      "start": 2564.9,
+      "end": 2568.3,
+      "text": "Co nowego Panie kolego?"
+    },
+    {
+      "start": 2568.3,
+      "end": 2572.1,
+      "text": "Co nowego Panie kolego?"
+    },
+    {
+      "start": 2807.52,
+      "end": 2812.2,
+      "text": "Tu troszkę jak z czarno-białej pocztówki."
+    },
+    {
+      "start": 3419.72,
+      "end": 3424.22,
+      "text": "Ta końcówka brzmi jakby była napisana przez Noel'a Gallaghera."
+    },
+    {
+      "start": 3424.22,
+      "end": 3427.32,
+      "text": "Tu będzie po slowdive'owemu."
+    },
+    {
+      "start": 3427.32,
+      "end": 3430.5,
+      "text": "Przez cały czas jesteśmy przy Death Heaven."
+    },
+    {
+      "start": 3721.25,
+      "end": 3724.77,
+      "text": "Heaven, Death Heaven, Lonely People with Power."
+    },
+    {
+      "start": 3725.33,
+      "end": 3727.91,
+      "text": "2025 rok, ich najnowsza płyta."
+    },
+    {
+      "start": 3728.85,
+      "end": 3733.69,
+      "text": "No i rok 2025 szukuje kolejną wspaniałą premierę."
+    },
+    {
+      "start": 3733.69,
+      "end": 3735.23,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3966.28,
+      "end": 3971.28,
+      "text": "-22 sierpnia wychodzi najnowszy album Deftones, Private Music."
+    },
+    {
+      "start": 3971.28,
+      "end": 3976.28,
+      "text": "W lutym 2026 jeszcze koncert w Łodzi, niestety już wyprzedany,"
+    },
+    {
+      "start": 3976.28,
+      "end": 3981.28,
+      "text": "ale to wciąż są wspaniałe informacje, bo w końcu można z drugiej ręki poszukać biletów."
+    },
+    {
+      "start": 3981.28,
+      "end": 3987.28,
+      "text": "Na offie rozmawiałem z Maćkiem Jankowskim, który też jest wielkim fanem Deftones,"
+    },
+    {
+      "start": 3987.28,
+      "end": 3990.28,
+      "text": "który kawałek najchętniej byśmy usłyszeli na koncercie."
+    },
+    {
+      "start": 3990.28,
+      "end": 3993.28,
+      "text": "I komisyjnie wybraliśmy ten."
+    },
+    {
+      "start": 3993.28,
+      "end": 3994.82,
+      "text": "Zdjęcia i montaż"
+    },
+    {
+      "start": 4201.8,
+      "end": 4203.98,
+      "text": "Risk, płyta Diamond Ties"
+    },
+    {
+      "start": 4203.98,
+      "end": 4206.64,
+      "text": "Wracając do nowości"
+    },
+    {
+      "start": 4206.64,
+      "end": 4208.28,
+      "text": "Co nowego, panie kolego?"
+    },
+    {
+      "start": 4208.82,
+      "end": 4209.42,
+      "text": "Obsesja"
+    },
+    {
+      "start": 4209.42,
+      "end": 4211.04,
+      "text": "Obsesja"
+    },
+    {
+      "start": 4379.52,
+      "end": 4388.52,
+      "text": "Z kwietnia, no powiedzmy, że nowość, Thornhill Obsession z albumu Bodies z kwietnia tego roku właśnie."
+    },
+    {
+      "start": 4388.52,
+      "end": 4392.52,
+      "text": "Balans pomiędzy popem a dżentem."
+    },
+    {
+      "start": 4402.52,
+      "end": 4407.08,
+      "text": "Choć bliżej Złotego Środka byli na debiucie."
+    },
+    {
+      "start": 4656.42,
+      "end": 4670.76,
+      "text": "Thornhill Human z debiutanckiej płyty, wracając do relatywnych nowości, które mogły umknąć, Tsunami Sea Spirit Box również z kwietnia."
+    },
+    {
+      "start": 4835.91,
+      "end": 4844.77,
+      "text": "I dobrze, że jesteśmy przy Spirit Box, bo tak się akurat składa, że nagrali utwór wraz z Babymetal, który znalazł się na ich nowej płycie."
+    },
+    {
+      "start": 4845.15,
+      "end": 4846.39,
+      "text": "Ktoś chciałby fizyczną kopię?"
+    },
+    {
+      "start": 5039.36,
+      "end": 5041.38,
+      "text": "Babymetal"
+    },
+    {
+      "start": 5041.38,
+      "end": 5043.4,
+      "text": "My Queen z najnowszej płyty"
+    },
+    {
+      "start": 5043.4,
+      "end": 5045.22,
+      "text": "Metal Forth. Jeśli ktoś"
+    },
+    {
+      "start": 5045.22,
+      "end": 5047.3,
+      "text": "chciałby od nas dostać fizyczną"
+    },
+    {
+      "start": 5047.3,
+      "end": 5049.22,
+      "text": "kopię płyty, proszę pisać na adres"
+    },
+    {
+      "start": 5049.22,
+      "end": 5051.72,
+      "text": "michał.kowarskim.pl"
+    },
+    {
+      "start": 5051.72,
+      "end": 5053.6,
+      "text": "dane kontaktowe, adres"
+    },
+    {
+      "start": 5053.6,
+      "end": 5054.82,
+      "text": "wyślemy gdzie trzeba."
+    },
+    {
+      "start": 5055.06,
+      "end": 5056.98,
+      "text": "Co nowego panie kolego? A po pogrze"
+    },
+    {
+      "start": 5056.98,
+      "end": 5058.94,
+      "text": "jest..."
+    },
+    {
+      "start": 5280.23,
+      "end": 5282.47,
+      "text": "After the Burial"
+    },
+    {
+      "start": 5282.47,
+      "end": 5284.43,
+      "text": "Hum from the Hollow"
+    },
+    {
+      "start": 5284.43,
+      "end": 5285.55,
+      "text": "Najnowszy singiel"
+    },
+    {
+      "start": 5285.55,
+      "end": 5288.37,
+      "text": "Prawdopodobnie zostanie odegrany 14 września"
+    },
+    {
+      "start": 5288.37,
+      "end": 5289.95,
+      "text": "W progresji, gdyż wtedy panowie"
+    },
+    {
+      "start": 5289.95,
+      "end": 5291.83,
+      "text": "Zagoszczą w stolicy"
+    },
+    {
+      "start": 5291.83,
+      "end": 5295.03,
+      "text": "I mam nadzieję, że zagrają też ten utwór"
+    },
+    {
+      "start": 5295.03,
+      "end": 5300.87,
+      "text": "To nie jest moja sprawka"
+    },
+    {
+      "start": 5300.87,
+      "end": 5302.39,
+      "text": "Naprawdę ten klakson"
+    },
+    {
+      "start": 5302.39,
+      "end": 5303.43,
+      "text": "Znalazł się na płycie"
+    },
+    {
+      "start": 5303.43,
+      "end": 5304.75,
+      "text": "Ale breakdown po"
+    },
+    {
+      "start": 5304.75,
+      "end": 5306.69,
+      "text": "Wybitny"
+    },
+    {
+      "start": 5306.69,
+      "end": 5308.09,
+      "text": "To nie jest moja sprawka"
+    },
+    {
+      "start": 5435.02,
+      "end": 5437.34,
+      "text": "After the burial, raz jeszcze."
+    },
+    {
+      "start": 5438.34,
+      "end": 5438.7,
+      "text": "Oho."
+    },
+    {
+      "start": 5452.16,
+      "end": 5454.24,
+      "text": "Uwaga, Czesi na horyzoncie."
+    },
+    {
+      "start": 5454.24,
+      "end": 5455.9,
+      "text": "I'm coming!"
+    },
+    {
+      "start": 5653.35,
+      "end": 5656.31,
+      "text": "Polecam teledysk do tego utworu"
+    },
+    {
+      "start": 5656.31,
+      "end": 5658.81,
+      "text": "Mówiąc delikatnie, z humorkiem"
+    },
+    {
+      "start": 5658.81,
+      "end": 5660.69,
+      "text": "Abbey Falls i utwór Black Void"
+    },
+    {
+      "start": 5660.69,
+      "end": 5662.29,
+      "text": "Made in Czech Republic"
+    },
+    {
+      "start": 5662.29,
+      "end": 5665.45,
+      "text": "Co nowego, panie kolego"
+    },
+    {
+      "start": 5665.45,
+      "end": 5666.47,
+      "text": "Jutro uciekamy"
+    },
+    {
+      "start": 5681.85,
+      "end": 5682.59,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5857.16,
+      "end": 5859.82,
+      "text": "Album Tomorrow We Escape"
+    },
+    {
+      "start": 5859.82,
+      "end": 5861.56,
+      "text": "Okaże się 10 września"
+    },
+    {
+      "start": 5861.56,
+      "end": 5862.68,
+      "text": "Horror"
+    },
+    {
+      "start": 5862.68,
+      "end": 5865.12,
+      "text": "I na albumie znajdą się takie marki"
+    },
+    {
+      "start": 5865.12,
+      "end": 5867.2,
+      "text": "Jak chociażby Chelsea Wolf"
+    },
+    {
+      "start": 5867.2,
+      "end": 5868.26,
+      "text": "Czy Greg Pucciato"
+    },
+    {
+      "start": 5868.26,
+      "end": 5871.48,
+      "text": "Także myślę, że warto na tę płytę czekać"
+    },
+    {
+      "start": 5871.48,
+      "end": 5876.1,
+      "text": "No dobrze"
+    },
+    {
+      "start": 5876.1,
+      "end": 5879.36,
+      "text": "Myślę, że teraz już w ogóle ciężko nie będzie"
+    },
+    {
+      "start": 5879.36,
+      "end": 5881,
+      "text": "Będzie miło i przyjemnie"
+    },
+    {
+      "start": 5881,
+      "end": 5883.94,
+      "text": "Ja wiem, że ten utwór trochę odstaje"
+    },
+    {
+      "start": 5883.94,
+      "end": 5885.26,
+      "text": "Ale musimy jakoś wylądować"
+    },
+    {
+      "start": 5885.26,
+      "end": 5887.32,
+      "text": "Na wywiadzie z Danem Baretem z Heaven Is Life"
+    },
+    {
+      "start": 5887.32,
+      "end": 5890.02,
+      "text": "Poza tym szalenie mnie ekscytuje"
+    },
+    {
+      "start": 5890.02,
+      "end": 5893.12,
+      "text": "Że Dust, australijski postpunkowy zespół"
+    },
+    {
+      "start": 5893.12,
+      "end": 5894.82,
+      "text": "Zapowiedział debiutancki album"
+    },
+    {
+      "start": 5894.82,
+      "end": 5897.32,
+      "text": "W końcu, bo działają już od kilku lat"
+    },
+    {
+      "start": 5897.32,
+      "end": 5898.68,
+      "text": "I teraz apel"
+    },
+    {
+      "start": 5898.68,
+      "end": 5900.12,
+      "text": "Panie Arturze"
+    },
+    {
+      "start": 5900.12,
+      "end": 5903.12,
+      "text": "Jeśli jakimś cudem wraca pan skądś"
+    },
+    {
+      "start": 5903.12,
+      "end": 5904.04,
+      "text": "Słucha trójki"
+    },
+    {
+      "start": 5904.04,
+      "end": 5907.3,
+      "text": "Ten zespół powinien wystąpić nam w festiwalu za rok"
+    },
+    {
+      "start": 6146.38,
+      "end": 6153.02,
+      "text": "Niebo zawali się 10 października, ponieważ debiutancka płyta zespołu Dust ukaże się właśnie 10 października."
+    },
+    {
+      "start": 6153.9,
+      "end": 6159.46,
+      "text": "Sky is falling. Taki nosi tytuł. Parafrazując z angielskiego, nie umiem się doczekać."
+    },
+    {
+      "start": 6162.82,
+      "end": 6169.18,
+      "text": "I teraz myślę, że możemy się wyciszyć. Za chwil parę wywiad z Danem Baretten z Have a Nice Life."
+    },
+    {
+      "start": 6175.38,
+      "end": 6195.76,
+      "text": "Porażka niekoniecznie czyni nas silniejszymi, ale uczy i powoduje, że jest się mądrzejszym."
+    },
+    {
+      "start": 6198.94,
+      "end": 6202.92,
+      "text": "Dla mnie sposobem na kontaktowanie się z rzeczywistością są te drobne porażki."
+    },
+    {
+      "start": 6205.38,
+      "end": 6218.18,
+      "text": "Masz pomysł, próbujesz go zderzyć z rzeczywistością, nie udaje się, ale to pokazuje, co zmienić, by ten pomysł zadziałał."
+    },
+    {
+      "start": 6218.52,
+      "end": 6220.16,
+      "text": "Nie powinniśmy bać się porażek."
+    },
+    {
+      "start": 6220.34,
+      "end": 6225.76,
+      "text": "Porażki kształtują. Te życiowe, emocjonalne. Wiele z nich przeżywałeś mocno."
+    },
+    {
+      "start": 6225.76,
+      "end": 6231.94,
+      "text": "W szczególności te, które nawiązują do pierwszej płyty Have a Nice Life czy do solowej płyty Girls'a Korea."
+    },
+    {
+      "start": 6232.72,
+      "end": 6234.28,
+      "text": "Czy te emocje dalej są w tobie żywe?"
+    },
+    {
+      "start": 6234.78,
+      "end": 6245.14,
+      "text": "Wydaje mi się, że nie odczuwam tych emocji w ten sam sposób, ale wydaje mi się, że utrzymuje się we mnie pewien poziom wrażliwości."
+    },
+    {
+      "start": 6245.72,
+      "end": 6248.08,
+      "text": "Inne emocje przyszły i wypełniły ich miejsce."
+    },
+    {
+      "start": 6248.56,
+      "end": 6251.12,
+      "text": "Kontekst, w którym pojawiają się emocje, się zmienia."
+    },
+    {
+      "start": 6251.54,
+      "end": 6261.74,
+      "text": "Wydaje mi się, że życie się zmienia, przez co inaczej patrzę na rzeczy z tamtego okresu."
+    },
+    {
+      "start": 6262.14,
+      "end": 6263.58,
+      "text": "Na pewno dojrzałem jako osoba."
+    },
+    {
+      "start": 6263.96,
+      "end": 6265.36,
+      "text": "Wydaje mi się, że mogę więcej."
+    },
+    {
+      "start": 6265.56,
+      "end": 6272.5,
+      "text": "Jestem bardziej efektywny, choć problemy, które próbowałem wyrazić na pierwszych płytach, wciąż o nich myślę i staram się o nich mówić."
+    },
+    {
+      "start": 6272.5,
+      "end": 6285.5,
+      "text": "Trzeba jednak mieć nadzieję, że każdego roku, miesiąca stajesz się inną, lepszą osobą, ucząc się jak działać, jak działa świat."
+    },
+    {
+      "start": 6286.02,
+      "end": 6289.44,
+      "text": "Można powiedzieć, że jest trochę tak samo, a trochę inaczej."
+    },
+    {
+      "start": 6296.84,
+      "end": 6300.78,
+      "text": "Tutaj chciałbym się zaczepić o tę produktywność, efektywność."
+    },
+    {
+      "start": 6301.44,
+      "end": 6308.3,
+      "text": "Słuchałem kilku odcinków Twojego podcastu The Dan Barrett Show i motywem przewodnim tego podcastu jest właśnie produktywność."
+    },
+    {
+      "start": 6309.16,
+      "end": 6314.04,
+      "text": "Jak wyciskać jak najwięcej z dnia, interesów, życia i tak dalej."
+    },
+    {
+      "start": 6314.96,
+      "end": 6318.56,
+      "text": "Czuję tu pewien dysonans z tym, co Heaven Is Life wyraża swoją muzyką."
+    },
+    {
+      "start": 6319.02,
+      "end": 6323.82,
+      "text": "Czy bycie efektywnym nie jest ucieczką od tych ciężkich emocji, które od czasu do czasu się pojawiają?"
+    },
+    {
+      "start": 6323.82,
+      "end": 6335.46,
+      "text": "Te emocje nigdy nie odeszły. Raczej nauczyłem się, jak sobie z nimi radzić."
+    },
+    {
+      "start": 6336.04,
+      "end": 6339.68,
+      "text": "Zawsze bardzo interesowało mnie to, jak robić rzeczy dobrze, efektywnie."
+    },
+    {
+      "start": 6348.02,
+      "end": 6353.1,
+      "text": "Punktem zwrotnym było dla mnie uświadomienie sobie, że mogę mieć takie samo podejście względem siebie."
+    },
+    {
+      "start": 6353.44,
+      "end": 6356.54,
+      "text": "Musiałem się nauczyć wielu rzeczy, które innym przychodzą naturalnie."
+    },
+    {
+      "start": 6365.56,
+      "end": 6370,
+      "text": "Jak rozmawiać z ludźmi, tworzyć relacje, jak radzić sobie z silnymi emocjami."
+    },
+    {
+      "start": 6370.38,
+      "end": 6373.66,
+      "text": "Wciąż uczę się, jak rozmawiać o trudnych rzeczach z osobami bliskimi."
+    },
+    {
+      "start": 6373.66,
+      "end": 6377.66,
+      "text": "To ciągła nauka, ale podoba mi się samodoskonalenie."
+    },
+    {
+      "start": 6378.58,
+      "end": 6379.32,
+      "text": "Zawsze to lubiłem."
+    },
+    {
+      "start": 6379.84,
+      "end": 6385.84,
+      "text": "Teraz wygląda to trochę inaczej, ale jest to dużo więcej niż ucieczka, bo te emocje zawsze gdzieś w nas są."
+    },
+    {
+      "start": 6386.36,
+      "end": 6388.64,
+      "text": "Pozostaje kwestia tego, jak sobie z nimi radzić."
+    },
+    {
+      "start": 6391.24,
+      "end": 6396.58,
+      "text": "Często zdarzają mi się trudne dni, w których się wyłączam, ale to po prostu ludzkie, część naszej natury."
+    },
+    {
+      "start": 6396.94,
+      "end": 6407.32,
+      "text": "Jakiś czas temu widziałem post na twoim Instagramie, gdzie siadasz z gitarą przed kamerą i mówisz, nowa piosenka, Girls of Korea."
+    },
+    {
+      "start": 6408.16,
+      "end": 6412.94,
+      "text": "I zanim zaczynasz grać, twoje dzieci wpadają w kadr, zaczynają cię przytulać."
+    },
+    {
+      "start": 6413.04,
+      "end": 6415.54,
+      "text": "Jest to po prostu scena rozczulająca."
+    },
+    {
+      "start": 6416.74,
+      "end": 6421.28,
+      "text": "Jesteś przedsiębiorcą z sukcesami, muzykiem z sukcesami."
+    },
+    {
+      "start": 6421.8,
+      "end": 6423.18,
+      "text": "Masz wspaniałą rodzinę."
+    },
+    {
+      "start": 6424.22,
+      "end": 6425.86,
+      "text": "Proste pytanie, czy jesteś szczęśliwy?"
+    },
+    {
+      "start": 6427.68,
+      "end": 6432.02,
+      "text": "Jestem w momencie swojego życia, w którym nie mam żadnych hormonalnych dysproporcji w mózgu."
+    },
+    {
+      "start": 6432.2,
+      "end": 6433.9,
+      "text": "Nic strasznego się w moim życiu nie dzieje."
+    },
+    {
+      "start": 6434.42,
+      "end": 6436.7,
+      "text": "W pewnym momencie szczęście staje się wyborem."
+    },
+    {
+      "start": 6437.06,
+      "end": 6439.32,
+      "text": "Jestem szczęśliwy, ale nie spoczywam na laurach."
+    },
+    {
+      "start": 6439.6,
+      "end": 6440.14,
+      "text": "Taki jestem."
+    },
+    {
+      "start": 6446.58,
+      "end": 6449.68,
+      "text": "Zawsze zwracam uwagę na rzeczy, które mógłbym robić lepiej."
+    },
+    {
+      "start": 6449.92,
+      "end": 6451.46,
+      "text": "Mam tendencję do skupiania się na tym."
+    },
+    {
+      "start": 6451.46,
+      "end": 6456.28,
+      "text": "Tak naprawdę szczęście sprowadza się do skupiania się na rzeczach, które lubisz i które idą dobrze."
+    },
+    {
+      "start": 6474.78,
+      "end": 6480.86,
+      "text": "Na przykład, każdego ranka, kiedy robię śniadanie dla żony i dzieci, w kuchni leży notes, w którym zapisuję."
+    },
+    {
+      "start": 6480.86,
+      "end": 6483.16,
+      "text": "Każdego dnia, za co jestem wdzięczny."
+    },
+    {
+      "start": 6483.6,
+      "end": 6486.28,
+      "text": "Kiedy wychodzę z biura kilka godzin później, robię to samo."
+    },
+    {
+      "start": 6500.14,
+      "end": 6506.58,
+      "text": "W pewnym momencie zaczynasz naprawdę doceniać, że masz tyle jedzenia, ile potrzebujesz, że masz ciepłe, suche łóżko."
+    },
+    {
+      "start": 6507.2,
+      "end": 6510.26,
+      "text": "Jak wspominałeś, mam wspaniałą rodzinę, ale bycie szczęśliwym"
+    },
+    {
+      "start": 6510.26,
+      "end": 6511.46,
+      "text": "jest po prostu wyrazem."
+    },
+    {
+      "start": 6511.9,
+      "end": 6513.02,
+      "text": "Tak naprawdę to nawyki."
+    },
+    {
+      "start": 6513.14,
+      "end": 6516.46,
+      "text": "W pewnym momencie życia podejmujesz decyzję, że chcesz być szczęśliwym."
+    },
+    {
+      "start": 6516.8,
+      "end": 6518.64,
+      "text": "Trzeba w niej wytrwać i o nią dbać."
+    },
+    {
+      "start": 6519.14,
+      "end": 6526.4,
+      "text": "Czy przez to podejście nie miewasz problemów z komponowaniem, czy pisaniem, no, jednak smucnych piosenek?"
+    },
+    {
+      "start": 6526.4,
+      "end": 6533.14,
+      "text": "Nie mam z tym problemu."
+    },
+    {
+      "start": 6533.28,
+      "end": 6536.2,
+      "text": "Wydaje mi się, że to mit, że trzeba być w depresji, żeby pisać."
+    },
+    {
+      "start": 6543.2,
+      "end": 6548.24,
+      "text": "Ale nawet jeśli czułbym się dokładnie tak samo, nie chciałbym nagrywać w kółko tej samej płyty."
+    },
+    {
+      "start": 6548.68,
+      "end": 6549.52,
+      "text": "Znudziłoby mnie to."
+    },
+    {
+      "start": 6549.86,
+      "end": 6552.62,
+      "text": "Kiedy tworzymy muzykę, zawsze staramy się robić coś innego."
+    },
+    {
+      "start": 6555.84,
+      "end": 6556.32,
+      "text": "Muzyka"
+    },
+    {
+      "start": 6774.98,
+      "end": 6780.64,
+      "text": "Hi, this is Dan. Hi, this is Tim from Have a Nice Life and you're listening to Troika."
+    },
+    {
+      "start": 6781.2,
+      "end": 6783.92,
+      "text": "Dan and Tim, Reunited by Faith."
+    },
+    {
+      "start": 6784.8,
+      "end": 6790.46,
+      "text": "Bartek Machajewski, Michał Kowarski, Ciężko na sercu, po godzinie drugiej, Strefa Dread."
+    },
+    {
+      "start": 6791.22,
+      "end": 6793.52,
+      "text": "Życzymy miłego dalszego odbioru."
+    },
+    {
+      "start": 6793.52,
+      "end": 6795.04,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 27,
+    "transcribedAudioSec": 1010.69,
+    "segmentCount": 221,
+    "characterCount": 10286
+  },
+  "sourceId": "2025-08-13-ciezkie-brzmienie-z-roznych-stron-swiata"
+}
