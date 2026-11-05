@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "id": "df5e28d0-103e-4f36-a6f8-459220d2a529",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T19:31:45.801Z",
+  "durationSec": 6900,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "baest",
+      "label": "BAEST",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4890
+    },
+    {
+      "id": "blodmane",
+      "label": "Blodmåne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1002
+    },
+    {
+      "id": "galge",
+      "label": "Galge",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5203
+    },
+    {
+      "id": "katla",
+      "label": "Katla",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6537
+    },
+    {
+      "id": "kollapse",
+      "label": "Kollapse",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5531
+    },
+    {
+      "id": "konkhra",
+      "label": "Konkhra",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5957
+    },
+    {
+      "id": "kroyer",
+      "label": "Kroyer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3061
+    },
+    {
+      "id": "lightchapter",
+      "label": "LIGHTCHAPTER",
+      "type": "artist",
+      "source": "tracks",
+      "at": 472
+    },
+    {
+      "id": "lysbaerer",
+      "label": "Lysbaerer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 11
+    },
+    {
+      "id": "m-l",
+      "label": "MØL",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6249
+    },
+    {
+      "id": "permanoia",
+      "label": "PERMANOIA",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2361
+    },
+    {
+      "id": "swartzheim",
+      "label": "Swartzheim",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4328
+    },
+    {
+      "id": "terminalist",
+      "label": "Terminalist",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3532
+    }
+  ],
+  "tracks": [
+    {
+      "start": 11,
+      "end": 472,
+      "durationSec": 328,
+      "artist": "Lysbaerer",
+      "title": "November sol",
+      "album": "I: Som et lys i natten, må vi alle finde frelse",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 472,
+      "end": 787,
+      "durationSec": 248,
+      "artist": "LIGHTCHAPTER",
+      "title": "Where All Hope Begins",
+      "album": "Where All Hope Begins",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 787,
+      "end": 1002,
+      "durationSec": 202,
+      "artist": "LIGHTCHAPTER",
+      "title": "What I Have Become",
+      "album": "Where All Hope Begins",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1002,
+      "end": 1347,
+      "durationSec": 260,
+      "artist": "Blodmåne",
+      "title": "Thousand Voices",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1347,
+      "end": 1704,
+      "durationSec": 289,
+      "artist": "Blodmåne",
+      "title": "Luctus",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1704,
+      "end": 2361,
+      "durationSec": 614,
+      "artist": "Lysbaerer",
+      "title": "Forglem mig ej",
+      "album": "I: Som et lys i natten, må vi alle finde frelse",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2361,
+      "end": 2637,
+      "durationSec": 232,
+      "artist": "PERMANOIA",
+      "title": "Hypnagogia",
+      "album": "Hypnagogia - Single",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2637,
+      "end": 3061,
+      "durationSec": 259,
+      "artist": "PERMANOIA",
+      "title": "Desperation Shell",
+      "album": "Desperation Shell - Single",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3061,
+      "end": 3142,
+      "durationSec": 67,
+      "artist": "Kroyer",
+      "title": "GAS STATION",
+      "album": "TOWERING IRON",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3142,
+      "end": 3532,
+      "durationSec": 69,
+      "artist": "Kroyer",
+      "title": "GAS STATION",
+      "album": "TOWERING IRON",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3532,
+      "end": 3871,
+      "durationSec": 296,
+      "artist": "Terminalist",
+      "title": "The Crisis as Condition",
+      "album": "The Crisis as Condition",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3871,
+      "end": 4328,
+      "durationSec": 309,
+      "artist": "Terminalist",
+      "title": "Life Won't Last",
+      "album": "The Crisis as Condition",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4328,
+      "end": 4677,
+      "durationSec": 215,
+      "artist": "Swartzheim",
+      "title": "Wounds",
+      "album": "WOUNDS",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4677,
+      "end": 4890,
+      "durationSec": 144,
+      "artist": "Swartzheim",
+      "title": "Spitting Nails",
+      "album": "WOUNDS",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4890,
+      "end": 5203,
+      "durationSec": 260,
+      "artist": "BAEST",
+      "title": "Colossus",
+      "album": "Colossal",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5203,
+      "end": 5531,
+      "durationSec": 230,
+      "artist": "Galge",
+      "title": "Tankeløse Tåber",
+      "album": "Tankeløse Tåber - Single",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5531,
+      "end": 5957,
+      "durationSec": 349,
+      "artist": "Kollapse",
+      "title": "Død",
+      "album": "Ar",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5957,
+      "end": 6249,
+      "durationSec": 216,
+      "artist": "Konkhra",
+      "title": "Revolution",
+      "album": "Sad Plight of Lucifer",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6249,
+      "end": 6537,
+      "durationSec": 214,
+      "artist": "MØL",
+      "title": "Garland",
+      "album": "DREAMCRUSH",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6537,
+      "end": 6900,
+      "durationSec": 363,
+      "artist": "Katla",
+      "title": "Grim Jesus",
+      "album": "Scandinavian Pain",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
