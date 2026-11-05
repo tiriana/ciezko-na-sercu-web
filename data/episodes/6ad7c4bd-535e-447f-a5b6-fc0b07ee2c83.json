@@ -3,13 +3,74 @@
   "id": "6ad7c4bd-535e-447f-a5b6-fc0b07ee2c83",
   "analyzedAt": "2026-11-05",
   "durationSec": 7251,
-  "summary": "",
-  "topics": [],
+  "summary": "Przegląd czerwcowych wydarzeń otwiera Mystic Festival w Gdańsku — ostatnia edycja w stoczni, z Antraxem i Today is the Day, oraz nowy album Solstice A.A. Williams. Omówiono małe inicjatywy: festiwal Rykowisko w Rogoźniku z Vaderem i nawiązaniem do Trash Camp z 1988 roku, a także klubowe koncerty In Human Condition, Ashen Tomb i Epitome w Warszawie oraz Jungle Rot w Bydgoszczy. Wśród większych wydarzeń wymieniono Bring Me The Horizon z Knocked Loose w krakowskiej Tauron Arenie, powrót High Viz, A Perfect Circle na Torwarze, The Casualties i Malevolence. Osobny wątek to Alternatywna Zduńska Wola z jedynym w Polsce koncertem Shelter, Anją Huwe z Xmal Deutschland i Madballem, a także debiuty festiwalowe: Lost Generation w Krakowie z The Offspring i Papa Roach oraz Summer Punch w Warszawie z Bad Omens i Baby Metal. Dalej pojawiają się Trivium z Frontside i Heriot, A Day to Remember, Steel Panther, wspólny koncert Nothing i Hey Wire, Drowning Pool oraz Rivers of Nihil. Całość zamykają pierwsza edycja Hells Bells Festival w Szczecinie z UK Subs i Possessed, nowy album Nonslaughter Satanic Chaos Legions, koncert Uady w Hydrozagadce i powrót Sepultury z programem opartym na Chaos A.D.",
+  "topics": [
+    {
+      "start": 317,
+      "end": 469,
+      "label": "Mystic Festival w Gdańsku: Antrax i Today is the Day"
+    },
+    {
+      "start": 1178,
+      "end": 1274,
+      "label": "Rykowisko w Rogoźniku z Vaderem i wspomnienie Trash Camp"
+    },
+    {
+      "start": 1559,
+      "end": 1679,
+      "label": "In Human Condition, Ashen Tomb, Epitome i Jungle Rot w klubach"
+    },
+    {
+      "start": 1835,
+      "end": 1937,
+      "label": "Bring Me The Horizon, Knocked Loose, High Viz i A Perfect Circle"
+    },
+    {
+      "start": 2133,
+      "end": 2246,
+      "label": "The Casualties i Malevolence na polskich koncertach"
+    },
+    {
+      "start": 2516,
+      "end": 2697,
+      "label": "Alternatywna Zduńska Wola: Shelter, Anja Huwe, Madball"
+    },
+    {
+      "start": 2992,
+      "end": 3082,
+      "label": "Lost Generation Festival: The Offspring i Papa Roach"
+    },
+    {
+      "start": 3082,
+      "end": 3242,
+      "label": "Summer Punch: Bad Omens, Three Days Grace, Baby Metal"
+    },
+    {
+      "start": 3853,
+      "end": 3909,
+      "label": "Trivium, Frontside i Heriot oraz A Day to Remember"
+    },
+    {
+      "start": 4928,
+      "end": 5022,
+      "label": "Drowning Pool w Bielsku-Białej i Rivers of Nihil w Warszawie"
+    },
+    {
+      "start": 5378,
+      "end": 5577,
+      "label": "Hells Bells Festival w Szczecinie: UK Subs i Possessed"
+    },
+    {
+      "start": 6765,
+      "end": 6836,
+      "label": "Uada w Hydrozagadce i Sepultura z programem Chaos A.D."
+    }
+  ],
   "tags": [],
   "tracks": [
     {
       "start": 130,
-      "end": 469,
+      "end": 317,
       "durationSec": 188,
       "artist": "DOWN",
       "title": "Right Place, Wrong Time",
@@ -35,7 +96,7 @@
     },
     {
       "start": 953,
-      "end": 1274,
+      "end": 1178,
       "durationSec": 226,
       "artist": "A.A. Williams",
       "title": "Wolves",
@@ -48,7 +109,7 @@
     },
     {
       "start": 1274,
-      "end": 1679,
+      "end": 1559,
       "durationSec": 248,
       "artist": "Vader",
       "title": "Reborn In Flames",
@@ -61,7 +122,7 @@
     },
     {
       "start": 1679,
-      "end": 1937,
+      "end": 1835,
       "durationSec": 158,
       "artist": "Jungle Rot",
       "title": "Humans Shall Pay",
@@ -74,7 +135,7 @@
     },
     {
       "start": 1937,
-      "end": 2246,
+      "end": 2133,
       "durationSec": 197,
       "artist": "High Vis",
       "title": "Feeling Bless",
@@ -87,7 +148,7 @@
     },
     {
       "start": 2246,
-      "end": 2697,
+      "end": 2516,
       "durationSec": 241,
       "artist": "Malevolence",
       "title": "Salt The Wound",
@@ -100,7 +161,7 @@
     },
     {
       "start": 2697,
-      "end": 3242,
+      "end": 2992,
       "durationSec": 297,
       "artist": "Madball",
       "title": "Rebel Kids",
@@ -113,7 +174,7 @@
     },
     {
       "start": 3242,
-      "end": 3909,
+      "end": 3853,
       "durationSec": 593,
       "artist": "BABYMETAL & Polyphia",
       "title": "Sunset Kiss",
@@ -139,7 +200,7 @@
     },
     {
       "start": 4686,
-      "end": 5022,
+      "end": 4928,
       "durationSec": 244,
       "artist": "Nothing",
       "title": "Famine Asylum",
@@ -152,7 +213,7 @@
     },
     {
       "start": 5022,
-      "end": 5577,
+      "end": 5378,
       "durationSec": 339,
       "artist": "Rivers of Nihil",
       "title": "House of Light",
@@ -178,7 +239,7 @@
     },
     {
       "start": 6407,
-      "end": 6836,
+      "end": 6765,
       "durationSec": 359,
       "artist": "Nunslaughter",
       "title": "Satanic Chaos Legions",
