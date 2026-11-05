@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "id": "045c81c6-38e7-432e-85eb-a2c7afb64133",
+  "analyzedAt": "2026-11-05",
+  "updatedAt": "2026-11-05T20:23:19.115Z",
+  "durationSec": 6895,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "arrm",
+      "label": "ARRM",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5084
+    },
+    {
+      "id": "atrocious-filth",
+      "label": "Atrocious Filth",
+      "type": "artist",
+      "source": "tracks",
+      "at": 12
+    },
+    {
+      "id": "bnnt",
+      "label": "BNNT",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2444
+    },
+    {
+      "id": "seagulls-insane-and-swans-deceased-mining-out-the-void",
+      "label": "Seagulls Insane and Swans Deceased Mining out the Void",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5861
+    }
+  ],
+  "tracks": [
+    {
+      "start": 12,
+      "end": 505,
+      "durationSec": 303,
+      "artist": "Atrocious Filth",
+      "title": "Moans",
+      "album": "Moans - EP",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 505,
+      "end": 2444,
+      "durationSec": 260,
+      "artist": "Atrocious Filth",
+      "title": "T",
+      "album": "Ovv",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2444,
+      "end": 5084,
+      "durationSec": 1057,
+      "artist": "BNNT",
+      "title": "Sickness Begins When One Starts to Think",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5084,
+      "end": 5861,
+      "durationSec": 684,
+      "artist": "ARRM",
+      "title": "Birth (feat. Wacław Zimpel)",
+      "album": "II",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5861,
+      "end": 6895,
+      "durationSec": 1034,
+      "artist": "Seagulls Insane and Swans Deceased Mining out the Void",
+      "title": "V",
+      "album": "Seagulls Insane and Swans Deceased Mining out the Void",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}
