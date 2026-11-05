@@ -2,10 +2,71 @@
   "version": 1,
   "id": "ed60a96f-419a-42b1-b153-110683462d8b",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T15:24:46.219Z",
+  "updatedAt": "2026-11-05T19:16:47.146Z",
   "durationSec": 7195,
-  "summary": "",
-  "topics": [],
+  "summary": "Marcowy przegląd premier zdominowały polskie zespoły: Warmia z albumem Lauks łączącym black metal z nietypowym instrumentarium, warszawski Głód z debiutem Trzecie Słońca oraz projekt Ukć z płytą Anomalie, upadek konającego ćwierćwiecza. Wśród zagranicznych nowości znalazły się dwunasty album Exodusu Goliath, Into Oblivion Lamb of God o rozpadzie umowy społecznej oraz Revelations Threat Signal po dekadzie milczenia. Osobny wątek to powrót Neurosis z An Undying Love for a Burning World, pierwszą płytą po dekadzie ciszy i po odejściu Scotta Kelly'ego, którego zastąpił Aaron Turner. Nie zabrakło młodszego grania: Hell Ripper z Kornakiem, austriackiej Transylwanii z Magia Posthuma, portugalskiej Guirii z Los, niemieckiego Masticatora z Total Mastery i kanadyjskiego Egregora z It Echoes in the Wind. Całość zamyka fiński Hanging Garden z dziewiątym albumem Isle of Bliss, balansującym między death metalem a gothic doomem.",
+  "topics": [
+    {
+      "start": 271,
+      "end": 320,
+      "label": "Warmia i album Lauks, black metal z Warmii"
+    },
+    {
+      "start": 320,
+      "end": 737,
+      "label": "Głód i debiutancka płyta Trzecie Słońca"
+    },
+    {
+      "start": 737,
+      "end": 821,
+      "label": "Projekt Ukć i album Anomalie"
+    },
+    {
+      "start": 1141,
+      "end": 1218,
+      "label": "Exodus i dwunasty album Goliath"
+    },
+    {
+      "start": 1462,
+      "end": 1543,
+      "label": "Lamb of God i Into Oblivion"
+    },
+    {
+      "start": 1788,
+      "end": 1837,
+      "label": "Threat Signal wraca z albumem Revelations"
+    },
+    {
+      "start": 2409,
+      "end": 2484,
+      "label": "Prostitute i Attempted Martyr w Mute"
+    },
+    {
+      "start": 2986,
+      "end": 3082,
+      "label": "Powrót Neurosis i nowa płyta"
+    },
+    {
+      "start": 3624,
+      "end": 3682,
+      "label": "Hell Ripper i album Kornak"
+    },
+    {
+      "start": 4767,
+      "end": 4819,
+      "label": "Portugalska Guiria i album Los"
+    },
+    {
+      "start": 6527,
+      "end": 6614,
+      "label": "Egregor i It Echoes in the Wind"
+    },
+    {
+      "start": 6810,
+      "end": 6866,
+      "label": "Hanging Garden i Isle of Bliss"
+    }
+  ],
   "tags": [
     {
       "id": "black-lung",
@@ -144,7 +205,7 @@
   "tracks": [
     {
       "start": 15,
-      "end": 821,
+      "end": 271,
       "durationSec": 229,
       "artist": "Varmia",
       "title": "dzień, pół nocy",
@@ -157,7 +218,7 @@
     },
     {
       "start": 821,
-      "end": 1218,
+      "end": 1141,
       "durationSec": 321,
       "artist": "Ukc",
       "title": "Anomalie",
@@ -170,7 +231,7 @@
     },
     {
       "start": 1218,
-      "end": 1543,
+      "end": 1462,
       "durationSec": 245,
       "artist": "Exodus",
       "title": "3111",
@@ -183,7 +244,7 @@
     },
     {
       "start": 1543,
-      "end": 1837,
+      "end": 1788,
       "durationSec": 246,
       "artist": "Lamb of God",
       "title": "Blunt Force Blues",
@@ -209,7 +270,7 @@
     },
     {
       "start": 2139,
-      "end": 2484,
+      "end": 2409,
       "durationSec": 271,
       "artist": "Meejah",
       "title": "Dead Calls (feat. HIRAKI)",
@@ -235,7 +296,7 @@
     },
     {
       "start": 2745,
-      "end": 3082,
+      "end": 2986,
       "durationSec": 242,
       "artist": "Black Lung",
       "title": "Traveler",
@@ -248,7 +309,7 @@
     },
     {
       "start": 3082,
-      "end": 3682,
+      "end": 3624,
       "durationSec": 543,
       "artist": "Neurosis",
       "title": "Blind",
@@ -287,7 +348,7 @@
     },
     {
       "start": 4552,
-      "end": 4819,
+      "end": 4767,
       "durationSec": 216,
       "artist": "Nuctemeron",
       "title": "F**k Off!!! (In the Name of Evil)",
@@ -352,7 +413,7 @@
     },
     {
       "start": 6220,
-      "end": 6614,
+      "end": 6527,
       "durationSec": 308,
       "artist": "Temple of Void",
       "title": "The Crawl",
@@ -365,7 +426,7 @@
     },
     {
       "start": 6614,
-      "end": 6866,
+      "end": 6810,
       "durationSec": 198,
       "artist": "Egregore",
       "title": "Stair Into the Vortex",

@@ -2,10 +2,71 @@
   "version": 1,
   "id": "23b37fe0-3219-48b1-b79d-2d0bde9cd9fa",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T15:24:46.217Z",
+  "updatedAt": "2026-11-05T19:16:47.144Z",
   "durationSec": 7236,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek jest przeglądem najciekawszych koncertów kwietniowych, z naciskiem na death metal, którego fani dostają w tym miesiącu wyjątkowo dużo, oraz na black metal. Omówiono m.in. trasę Mass Hallucination z Hypocrisy, Abbath, Vomitory i Evraith, występy Panopticon, Vakus i Bastard Mycosis, Die Catafalque, Morfolit i Moonstone oraz Hell Ripper ze Schizofrenią i Sarkatorem. Sporo miejsca zajęły płyty promowane trasami: Hugerheim Eivar, Lonely God Fit for a King, In His Blood Vakus, Laux Warmii, Crushers of the World Kreator i The Dreaming Prince in Ecstasy Lamp of Murmuur. 15 kwietnia w Warszawie zderzają się Machine Head w Progresji oraz Kreator z Carcass, Exodus i Nails na Torwarze, a za koncert miesiąca uznano wspólny występ Full of Hell, The Body, Jawhead Fertilizer i Yacht w krakowskim Hype Parku. Wymieniono też Myrath z Tunezji, Demonsy, Author and Punisher, JK Flesh oraz Corpus of Fall z Tafne.",
+  "topics": [
+    {
+      "start": 334,
+      "end": 366,
+      "label": "Eivar promuje album Hugerheim w warszawskiej Proximie"
+    },
+    {
+      "start": 626,
+      "end": 673,
+      "label": "Fit for a King, Memphis Mayfire i Acres w Warszawie"
+    },
+    {
+      "start": 673,
+      "end": 741,
+      "label": "Hex Vessel, Aluk Todolo i Barra w Hydrozagadce"
+    },
+    {
+      "start": 1377,
+      "end": 1491,
+      "label": "Panopticon i Sanken w poznańskim klubie Dwa Progi"
+    },
+    {
+      "start": 1620,
+      "end": 1678,
+      "label": "Vakus i Bastard Mycosis na trasie koncertowej"
+    },
+    {
+      "start": 1865,
+      "end": 1939,
+      "label": "Die Catafalque, Morfolit i Moonstone — koncerty w Polsce"
+    },
+    {
+      "start": 2262,
+      "end": 2364,
+      "label": "Trasa Mass Hallucination: Hypocrisy, Abbath, Vomitory, Evraith"
+    },
+    {
+      "start": 2775,
+      "end": 2907,
+      "label": "Myrath z Tunezji i trasa Czas Północy Warmii"
+    },
+    {
+      "start": 3779,
+      "end": 3845,
+      "label": "Machine Head i Kreator z Carcass i Exodus"
+    },
+    {
+      "start": 5125,
+      "end": 5225,
+      "label": "Witch Fever, Xhunt, Vastum i Torture Rack"
+    },
+    {
+      "start": 6055,
+      "end": 6179,
+      "label": "Koncert miesiąca: Full of Hell, The Body, Jawhead Fertilizer"
+    },
+    {
+      "start": 6340,
+      "end": 6803,
+      "label": "JK Flesh, Corpus of Fall i Lamp of Murmuur"
+    }
+  ],
   "tags": [
     {
       "id": "author-punisher",
@@ -116,7 +177,7 @@
   "tracks": [
     {
       "start": 7,
-      "end": 366,
+      "end": 334,
       "durationSec": 247,
       "artist": "Hypocrisy",
       "title": "Eraser",
@@ -129,7 +190,7 @@
     },
     {
       "start": 366,
-      "end": 741,
+      "end": 626,
       "durationSec": 260,
       "artist": "EIHWAR",
       "title": "Nauðiz",
@@ -142,7 +203,7 @@
     },
     {
       "start": 741,
-      "end": 1491,
+      "end": 1377,
       "durationSec": 628,
       "artist": "Hexvessel",
       "title": "Listen To The River",
@@ -155,7 +216,7 @@
     },
     {
       "start": 1491,
-      "end": 1678,
+      "end": 1620,
       "durationSec": 130,
       "artist": "Panopticon",
       "title": "Come All Ye Coal Miners",
@@ -168,7 +229,7 @@
     },
     {
       "start": 1678,
-      "end": 1939,
+      "end": 1865,
       "durationSec": 188,
       "artist": "Vacuous",
       "title": "Contraband",
@@ -181,7 +242,7 @@
     },
     {
       "start": 1939,
-      "end": 2364,
+      "end": 2262,
       "durationSec": 324,
       "artist": "Morpholith",
       "title": "Psychosphere",
@@ -194,7 +255,7 @@
     },
     {
       "start": 2364,
-      "end": 2907,
+      "end": 2775,
       "durationSec": 412,
       "artist": "Vreid",
       "title": "From These Woods",
@@ -220,7 +281,7 @@
     },
     {
       "start": 3334,
-      "end": 3845,
+      "end": 3779,
       "durationSec": 365,
       "artist": "Hellripper",
       "title": "Baobhan Sith (Waltz of the Damned)",
@@ -233,7 +294,7 @@
     },
     {
       "start": 3845,
-      "end": 5225,
+      "end": 5125,
       "durationSec": 1282,
       "artist": "Machine Head",
       "title": "Halo",
@@ -272,7 +333,7 @@
     },
     {
       "start": 5869,
-      "end": 6179,
+      "end": 6055,
       "durationSec": 244,
       "artist": "Demoncy",
       "title": "Black Star Gnosis",
@@ -285,7 +346,7 @@
     },
     {
       "start": 6179,
-      "end": 6803,
+      "end": 6340,
       "durationSec": 475,
       "artist": "Full of Hell",
       "title": "Fractured Bonds to Mecca",

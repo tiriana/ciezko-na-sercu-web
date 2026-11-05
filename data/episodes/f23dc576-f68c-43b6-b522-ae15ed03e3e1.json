@@ -2,10 +2,61 @@
   "version": 1,
   "id": "f23dc576-f68c-43b6-b522-ae15ed03e3e1",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T15:24:46.216Z",
+  "updatedAt": "2026-11-05T19:16:47.143Z",
   "durationSec": 7204,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja poświęcona jest podsumowaniu konkursu Road to Mystic, który wyłonił zespoły występujące na Mystic Festiwalu. Prowadzący przybliża sylwetki półfinalistów, prezentując różnorodne brzmienia od death metalu i black metalu po doom metal i Psycho Heavy Noise. Słuchacze poznają historie grup takich jak Unblessed Divine, Extensa czy Xifisurg, które brały udział w finałowych koncertach w Gdańsku. Program stanowi prezentację wysokiego poziomu polskiej sceny ciężkiej muzyki. Audycja stanowi przegląd polskiego ciężkiego i mrocznego undergroundu, inspirowany konkursem Road to Mystic. Prowadzący prezentuje różnorodne zespoły, od alternatywy i post-punka, przez shoegaze i post-metal, aż po thrash metal i rock'n'rolla. Program skupia się na odkryciach muzycznych, w tym na artystach, którzy mimo dużego potencjału nie awansowali do finału festiwalu. Słuchacze poznają sylwetki grup takich jak Lulu Suicide, Dorian's Steaming Shadow czy Flower and Pines. Fragment audycji poświęcony jest prezentacji zespołów biorących udział w wyborach do Mystic Festivalu. Prowadzący przybliża sylwetki grup takich jak Leprozorium, Warsaw, Mikroprotokol oraz Sunsucker, omawiając ich historię, dyskografię oraz styl muzyczny. Audycja stanowi formę wsparcia dla młodych artystów zgłaszających się do konkursów festiwalowych, podkreślając dobrą kondycję polskiej sceny metalowej.",
+  "topics": [
+    {
+      "start": 0,
+      "end": 6,
+      "label": "Konkurs Road to Mystic i jego wyniki"
+    },
+    {
+      "start": 6,
+      "end": 27,
+      "label": "Prezentacja półfinalistów konkursu"
+    },
+    {
+      "start": 27,
+      "end": 39,
+      "label": "Warszawska impreza December's Doom"
+    },
+    {
+      "start": 39,
+      "end": 59,
+      "label": "Kontekst konkursu Road to Mystic i różnorodność gatunkowa festiwalu"
+    },
+    {
+      "start": 59,
+      "end": 104,
+      "label": "Przegląd polskiego ciężkiego i mrocznego undergroundu"
+    },
+    {
+      "start": 104,
+      "end": 132,
+      "label": "Prezentacja zespołów, które nie awansowały do finału Road to Mystic"
+    },
+    {
+      "start": 138,
+      "end": 142,
+      "label": "Sylwetka wrocławskiej grupy Leprozorium"
+    },
+    {
+      "start": 142,
+      "end": 147,
+      "label": "Historia i dyskografia warszawskiego zespołu Warsaw"
+    },
+    {
+      "start": 147,
+      "end": 153,
+      "label": "Debiut deathgrindowego składu Mikroprotokol"
+    },
+    {
+      "start": 153,
+      "end": 554,
+      "label": "Pożegnanie i prezentacja grupy Sunsucker"
+    }
+  ],
   "tags": [
     {
       "id": "dorian-s-steaming-shadow",
@@ -36,6 +87,12 @@
       "at": 3441
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "lucille",
       "label": "Lucille",
       "type": "artist",
@@ -48,6 +105,12 @@
       "type": "artist",
       "source": "tracks",
       "at": 2479
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "necro-protocol",
@@ -102,14 +165,15 @@
   "tracks": [
     {
       "start": 132,
-      "end": 554,
+      "end": 138,
       "durationSec": 238,
       "artist": "Unblessed Divine",
       "title": "I Feed",
       "album": "Portal To Darkness",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -283,6 +347,24 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 6,
+      "text": "w 2023 roku ukazał się ich debiutancki album Puzzle to Darkness nakładem wytwórni Massacre Records"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": "Kłania się Jarek Szubrycht, prowadzący audycję Ciężko na sercu"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 14,
+      "quote": "oraz Mariusz Owczarek, jej wydawca"
+    }
+  ]
 }
