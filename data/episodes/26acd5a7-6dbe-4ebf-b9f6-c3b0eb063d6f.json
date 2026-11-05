@@ -2,10 +2,71 @@
   "version": 1,
   "id": "26acd5a7-6dbe-4ebf-b9f6-c3b0eb063d6f",
   "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T19:22:13.652Z",
+  "updatedAt": "2026-11-05T21:31:29.319Z",
   "durationSec": 6891,
-  "summary": "",
-  "topics": [],
+  "summary": "Lutowy przegląd nowości z ciężkim brzmieniem objął kilkanaście płyt z pogranicza metalu, post-punka, death metalu i black metalu. W części lżejszej znalazły się powrót Roba Zombiego z „The Great Satan\", gotycko-post-punkowy Final Gasp („New Day Symptoms\"), włoski Ponte del Diavolo („The Venom Natura\") oraz transowy, elektroniczny debiut duetu Jagong („Gomi Kuzu Khan\") z muzykami Mono i Sam of R. Metalcore reprezentowały The Veer Union („Reinvention\") i ukraiński Space of Variations („Poisoned Art\", z ludowymi nawiązaniami i śpiewem po ukraińsku), a ostrzejsze oblicze gatunku pokazały Converge („Love Is Not Enough\"). Death i grind to X-Hyunt z koncepcyjnym „Red Asphalt\", Slaughter Day („Dread Emperor\"), oldschoolowy Hating Life („Revenge from Beyond\") oraz wracający po latach In Aeternum („Of Death and Fire\"). W black metalu omówiono Worm („Necro Palace\"), nowy album Mayhem („Liturgy of Death\"), Slagmaur z inscenizowaną akcją poszukiwawczą i płytą „Hulder's Ritual\" oraz grecki The Magus („Demonosofia\"). Całość domknęły Predatory Void („A Taunt in Metamorphosis\"), irlandzki Koskrad i debiut Domain z Irlandii Północnej („Imperfect Stillness\").",
+  "topics": [
+    {
+      "start": 189,
+      "end": 308,
+      "label": "Rob Zombie wraca z albumem The Great Satan"
+    },
+    {
+      "start": 565,
+      "end": 662,
+      "label": "Włoski Ponte del Diavolo i płyta The Venom Natura"
+    },
+    {
+      "start": 930,
+      "end": 1020,
+      "label": "Debiut duetu Jagong z muzykami Mono i Sam of R"
+    },
+    {
+      "start": 1488,
+      "end": 1668,
+      "label": "Ukraiński Space of Variations i album Poisoned Art"
+    },
+    {
+      "start": 1767,
+      "end": 1827,
+      "label": "Weterani Converge z płytą Love Is Not Enough"
+    },
+    {
+      "start": 2263,
+      "end": 2311,
+      "label": "Niemiecki Slaughter Day i oldschoolowy Dread Emperor"
+    },
+    {
+      "start": 2941,
+      "end": 3048,
+      "label": "Powrót In Aeternum z albumem Of Death and Fire"
+    },
+    {
+      "start": 3308,
+      "end": 3455,
+      "label": "Worm i nekromantyczny black doom z Florydy"
+    },
+    {
+      "start": 4079,
+      "end": 4162,
+      "label": "Mayhem i nowa płyta Liturgy of Death"
+    },
+    {
+      "start": 4658,
+      "end": 4710,
+      "label": "Slagmaur, Hulder's Ritual i inscenizowana akcja poszukiwawcza"
+    },
+    {
+      "start": 5188,
+      "end": 5318,
+      "label": "Grecki The Magus i album Demonosofia"
+    },
+    {
+      "start": 5945,
+      "end": 5977,
+      "label": "Irlandzki Koskrad o przemocy w celtyckiej przeszłości"
+    }
+  ],
   "tags": [
     {
       "id": "converge",
@@ -144,7 +205,7 @@
   "tracks": [
     {
       "start": 12,
-      "end": 308,
+      "end": 189,
       "durationSec": 158,
       "artist": "Rob Zombie",
       "title": "Punks And Demons",
@@ -157,7 +218,7 @@
     },
     {
       "start": 308,
-      "end": 662,
+      "end": 565,
       "durationSec": 259,
       "artist": "Final Gasp",
       "title": "The Apparition",
@@ -170,7 +231,7 @@
     },
     {
       "start": 662,
-      "end": 1020,
+      "end": 930,
       "durationSec": 270,
       "artist": "Ponte del Diavolo",
       "title": "Spirit, Blood, Poison, Ferment",
@@ -196,7 +257,7 @@
     },
     {
       "start": 1300,
-      "end": 1668,
+      "end": 1488,
       "durationSec": 188,
       "artist": "The Veer Union",
       "title": "Venom in My Veins",
@@ -209,7 +270,7 @@
     },
     {
       "start": 1668,
-      "end": 1827,
+      "end": 1767,
       "durationSec": 101,
       "artist": "Space Of Variations",
       "title": "TRIBE",
@@ -235,7 +296,7 @@
     },
     {
       "start": 2075,
-      "end": 2311,
+      "end": 2263,
       "durationSec": 190,
       "artist": "Exhumed",
       "title": "Unsafe At Any Speed",
@@ -261,7 +322,7 @@
     },
     {
       "start": 2706,
-      "end": 3048,
+      "end": 2941,
       "durationSec": 236,
       "artist": "Hating Life",
       "title": "Revenge from Beyond",
@@ -274,7 +335,7 @@
     },
     {
       "start": 3048,
-      "end": 3455,
+      "end": 3308,
       "durationSec": 262,
       "artist": "In Aeternum",
       "title": "The Vile God of Slime",
@@ -300,7 +361,7 @@
     },
     {
       "start": 3957,
-      "end": 4162,
+      "end": 4079,
       "durationSec": 123,
       "artist": "Lead Injector",
       "title": "Witching Attack",
@@ -313,7 +374,7 @@
     },
     {
       "start": 4162,
-      "end": 4710,
+      "end": 4658,
       "durationSec": 416,
       "artist": "Mayhem",
       "title": "Weep for Nothing",
@@ -326,7 +387,7 @@
     },
     {
       "start": 4710,
-      "end": 5318,
+      "end": 5188,
       "durationSec": 480,
       "artist": "Slagmaur",
       "title": "Huldergeist",
@@ -352,7 +413,7 @@
     },
     {
       "start": 5704,
-      "end": 5977,
+      "end": 5945,
       "durationSec": 243,
       "artist": "Predatory Void",
       "title": "New Moon",
