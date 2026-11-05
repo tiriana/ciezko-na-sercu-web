@@ -5,7 +5,43 @@
   "durationSec": 6912,
   "summary": "",
   "topics": [],
-  "tags": [],
+  "tags": [
+    {
+      "id": "drown-my-day",
+      "label": "Drown My Day",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4287
+    },
+    {
+      "id": "frontside",
+      "label": "Frontside",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1491
+    },
+    {
+      "id": "motorhead",
+      "label": "Motörhead",
+      "type": "artist",
+      "source": "tracks",
+      "at": 28
+    },
+    {
+      "id": "quo-vadis",
+      "label": "Quo Vadis",
+      "type": "artist",
+      "source": "tracks",
+      "at": 645
+    },
+    {
+      "id": "suicidal-tendencies",
+      "label": "Suicidal Tendencies",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4765
+    }
+  ],
   "tracks": [
     {
       "start": 28,

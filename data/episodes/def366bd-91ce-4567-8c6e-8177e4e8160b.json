@@ -81,7 +81,111 @@
       "label": "Tradycyjne i młodzieżowe podejście do black metalu"
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "id": "dimmu-borgir",
+      "label": "Dimmu Borgir",
+      "type": "artist",
+      "source": "tracks",
+      "at": 40
+    },
+    {
+      "id": "forgotten-woods",
+      "label": "Forgotten Woods",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3076
+    },
+    {
+      "id": "helheim",
+      "label": "Helheim",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3946
+    },
+    {
+      "id": "immortal",
+      "label": "Immortal",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6855
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "jordsjuk",
+      "label": "Jordsjuk",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6629
+    },
+    {
+      "id": "koldbrann",
+      "label": "Koldbrann",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6276
+    },
+    {
+      "id": "manes",
+      "label": "Manes",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5489
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "rosa-faenskap",
+      "label": "ROSA FAENSKAP",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5740
+    },
+    {
+      "id": "slagmaur",
+      "label": "Slagmaur",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5141
+    },
+    {
+      "id": "slegest",
+      "label": "Slegest",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6066
+    },
+    {
+      "id": "thorns",
+      "label": "Thorns",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2252
+    },
+    {
+      "id": "vreid",
+      "label": "Vreid",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4803
+    },
+    {
+      "id": "windir",
+      "label": "Windir",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4417
+    }
+  ],
   "tracks": [
     {
       "start": 40,

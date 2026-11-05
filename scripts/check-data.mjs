@@ -1,3 +1,7 @@
+// Musi odpowiadać TAG_TYPES/TAG_SOURCES w src/lib/schema.ts.
+const TAG_TYPES = ['artist', 'person', 'work', 'event', 'place', 'theme', 'editorial'];
+const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile'];
+
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
@@ -80,6 +84,8 @@ for (const name of await readdir(EPISODES)) {
   const tagIds = new Set();
   for (const tag of episode.tags) {
     if (!/^[a-z0-9-]+$/.test(tag.id)) problems.push(`${name}: tag o nieprawidłowym id: ${tag.id}`);
+    if (!TAG_TYPES.includes(tag.type)) problems.push(`${name}: tag ${tag.id} ma nieznany typ: ${tag.type}`);
+    if (!TAG_SOURCES.includes(tag.source)) problems.push(`${name}: tag ${tag.id} ma nieznane źródło: ${tag.source}`);
     if (tagIds.has(tag.id)) problems.push(`${name}: duplikat tagu ${tag.id}`);
     tagIds.add(tag.id);
   }

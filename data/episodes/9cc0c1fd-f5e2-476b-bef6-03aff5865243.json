@@ -66,7 +66,132 @@
       "label": "Analiza powrotu Black Sabbath i znaczenie albumu 13"
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "id": "alice-in-chains",
+      "label": "Alice In Chains",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6138
+    },
+    {
+      "id": "at-the-gates",
+      "label": "At The Gates",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4643
+    },
+    {
+      "id": "black-sabbath",
+      "label": "Black Sabbath",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6458
+    },
+    {
+      "id": "carcass",
+      "label": "Carcass",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4301
+    },
+    {
+      "id": "celtic-frost",
+      "label": "Celtic Frost",
+      "type": "artist",
+      "source": "tracks",
+      "at": 858
+    },
+    {
+      "id": "christ-agony",
+      "label": "Christ Agony",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5302
+    },
+    {
+      "id": "coroner",
+      "label": "Coroner",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1445
+    },
+    {
+      "id": "dark-angel",
+      "label": "Dark Angel",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2432
+    },
+    {
+      "id": "death-angel",
+      "label": "Death Angel",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2765
+    },
+    {
+      "id": "deep-purple",
+      "label": "Deep Purple",
+      "type": "artist",
+      "source": "tracks",
+      "at": 7
+    },
+    {
+      "id": "exhorder",
+      "label": "Exhorder",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3064
+    },
+    {
+      "id": "exodus",
+      "label": "Exodus",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2013
+    },
+    {
+      "id": "hell-born",
+      "label": "Hell-Born",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4923
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "neurosis",
+      "label": "Neurosis",
+      "type": "artist",
+      "source": "tracks",
+      "at": 386
+    },
+    {
+      "id": "possessed",
+      "label": "Possessed",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3639
+    },
+    {
+      "id": "usurper",
+      "label": "Usurper",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3899
+    }
+  ],
   "tracks": [
     {
       "start": 7,

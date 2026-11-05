@@ -459,7 +459,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
           {episode.tags.length > 0 && (
             <p class="side__tags" aria-label="Tagi audycji">
               {episode.tags.map((tag, index) => (
-                <>{index > 0 ? ' · ' : ''}{tag.label}</>
+                <>{index > 0 ? ' · ' : ''}<a href={`/tagi/${tag.id}/`}>{tag.label}</a></>
               ))}
             </p>
           )}

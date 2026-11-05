@@ -5,7 +5,155 @@
   "durationSec": 6948,
   "summary": "",
   "topics": [],
-  "tags": [],
+  "tags": [
+    {
+      "id": "accept",
+      "label": "Accept",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2186
+    },
+    {
+      "id": "dark-angel",
+      "label": "Dark Angel",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5466
+    },
+    {
+      "id": "david-lee-roth",
+      "label": "David Lee Roth",
+      "type": "artist",
+      "source": "tracks",
+      "at": 830
+    },
+    {
+      "id": "europe",
+      "label": "Europe",
+      "type": "artist",
+      "source": "tracks",
+      "at": 97
+    },
+    {
+      "id": "iron-maiden",
+      "label": "Iron Maiden",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1450
+    },
+    {
+      "id": "judas-priest",
+      "label": "Judas Priest",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1789
+    },
+    {
+      "id": "kat",
+      "label": "Kat",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3803
+    },
+    {
+      "id": "king-diamond",
+      "label": "King Diamond",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3446
+    },
+    {
+      "id": "kreator",
+      "label": "Kreator",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4780
+    },
+    {
+      "id": "megadeth",
+      "label": "Megadeth",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3127
+    },
+    {
+      "id": "metallica",
+      "label": "Metallica",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2743
+    },
+    {
+      "id": "motorhead",
+      "label": "Motörhead",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2469
+    },
+    {
+      "id": "ozzy-osbourne",
+      "label": "Ozzy Osbourne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1132
+    },
+    {
+      "id": "possessed",
+      "label": "Possessed",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5817
+    },
+    {
+      "id": "sepultura",
+      "label": "Sepultura",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6204
+    },
+    {
+      "id": "slayer",
+      "label": "Slayer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5104
+    },
+    {
+      "id": "sodom",
+      "label": "Sodom",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4461
+    },
+    {
+      "id": "turbo",
+      "label": "Turbo",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4181
+    },
+    {
+      "id": "van-halen",
+      "label": "Van Halen",
+      "type": "artist",
+      "source": "tracks",
+      "at": 498
+    },
+    {
+      "id": "venom",
+      "label": "Venom",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6517
+    },
+    {
+      "id": "voivod",
+      "label": "Voivod",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6067
+    }
+  ],
   "tracks": [
     {
       "start": 97,

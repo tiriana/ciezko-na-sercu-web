@@ -1,0 +1,51 @@
+---
+import SiteFooter from '../../components/SiteFooter.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import Base from '../../layouts/Base.astro';
+import { getEntries, getEpisodeFiles } from '../../lib/data';
+import { TAG_TYPE_LABELS, TAG_TYPE_ORDER, buildTagIndex } from '../../lib/tags';
+
+const [entries, files] = await Promise.all([getEntries(), getEpisodeFiles()]);
+const index = buildTagIndex(files, entries);
+const tags = [...index.values()];
+const max = Math.max(1, ...tags.map((tag) => tag.episodes.length));
+
+const groups = TAG_TYPE_ORDER.map((type) => ({
+  type,
+  label: TAG_TYPE_LABELS[type],
+  tags: tags.filter((tag) => tag.type === type).sort((left, right) => right.episodes.length - left.episodes.length),
+})).filter((group) => group.tags.length > 0);
+---
+
+<Base title="Tagi audycji" description="Zespoły, osoby, dzieła i wydarzenia, które pojawiły się w audycjach.">
+  <SiteHeader current="tags" />
+
+  <main class="wrap">
+    <h1 class="page-title">Tagi</h1>
+    <p class="page-lead">
+      {tags.length} tagów w {entries.length} odcinkach. Kliknij tag, żeby zobaczyć audycje, w których się pojawił.
+    </p>
+
+    {groups.map((group) => (
+      <section class="card tags-section" aria-labelledby={`tags-${group.type}`}>
+        <h2 id={`tags-${group.type}`}>{group.label}</h2>
+        <ul class="tag-cloud">
+          {group.tags.map((tag) => (
+            <li>
+              <a
+                class="tag-cloud__item"
+                href={`/tagi/${tag.id}/`}
+                style={`--weight: ${(0.55 + (tag.episodes.length / max) * 0.45).toFixed(2)}`}
+              >
+                {tag.label}
+                <span class="tag-cloud__count">{tag.episodes.length}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </main>
+
+  <SiteFooter />
+</Base>

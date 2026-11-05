@@ -46,7 +46,55 @@
       "label": "Zapowiedź i odtworzenie suity z albumu At War With Satan"
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "id": "beastie-boys",
+      "label": "Beastie Boys",
+      "type": "artist",
+      "source": "tracks",
+      "at": 22
+    },
+    {
+      "id": "cradle-of-filth",
+      "label": "Cradle of Filth",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3139
+    },
+    {
+      "id": "cronos",
+      "label": "Cronos",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2098
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "probot",
+      "label": "Probot",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3652
+    },
+    {
+      "id": "venom",
+      "label": "Venom",
+      "type": "artist",
+      "source": "tracks",
+      "at": 257
+    }
+  ],
   "tracks": [
     {
       "start": 22,

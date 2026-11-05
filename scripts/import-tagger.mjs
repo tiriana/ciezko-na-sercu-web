@@ -55,7 +55,9 @@ const toContract = (episode, analyzedAt, id) => {
     tags: (episode.tags ?? []).map((tag) => ({
       id: tag.id,
       label: tag.label,
-      start: tag.start == null ? undefined : Math.round(tag.start),
+      type: tag.type ?? 'editorial',
+      source: tag.source ?? 'profile',
+      at: tag.at == null ? undefined : Math.round(tag.at),
     })),
     tracks: (episode.tracks ?? []).map((track) => ({
       start: Math.round(track.start),

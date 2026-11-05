@@ -1377,3 +1377,83 @@ a {
   font-size: 12.5px;
   letter-spacing: 0.02em;
 }
+
+/* Tagi */
+
+.page-title {
+  margin: 32px 0 8px;
+}
+
+.page-lead {
+  margin: 0 0 28px;
+  color: var(--muted);
+}
+
+.page-back {
+  margin: 28px 0 0;
+  font-size: 13.5px;
+}
+
+.tags-section {
+  margin-bottom: 20px;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-cloud__item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: calc(13px + var(--weight) * 6px);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tag-cloud__item:hover {
+  color: var(--accent);
+}
+
+.tag-cloud__count {
+  color: var(--muted);
+  font-size: 11.5px;
+}
+
+.tag-episodes {
+  margin: 0 0 48px;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-episodes li + li {
+  border-top: 1px solid var(--line);
+}
+
+.tag-episodes a {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tag-episodes time {
+  flex: 0 0 96px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.side__tags a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.side__tags a:hover {
+  color: var(--accent);
+}

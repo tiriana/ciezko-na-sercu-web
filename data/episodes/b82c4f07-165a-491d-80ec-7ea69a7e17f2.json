@@ -41,7 +41,139 @@
       "label": "Polskie zespoły towarzyszące koncertowi – Hamulec, Sanity Control, Diving Stołów"
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "id": "arch-enemy",
+      "label": "Arch Enemy",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5909
+    },
+    {
+      "id": "biohazard",
+      "label": "Biohazard",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3960
+    },
+    {
+      "id": "blindead-23",
+      "label": "Blindead 23",
+      "type": "artist",
+      "source": "tracks",
+      "at": 351
+    },
+    {
+      "id": "carcass",
+      "label": "Carcass",
+      "type": "artist",
+      "source": "tracks",
+      "at": 12
+    },
+    {
+      "id": "cryptopsy",
+      "label": "Cryptopsy",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6637
+    },
+    {
+      "id": "hate",
+      "label": "Hate",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4877
+    },
+    {
+      "id": "in-flames",
+      "label": "In Flames",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2666
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "judas-priest",
+      "label": "Judas Priest",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6219
+    },
+    {
+      "id": "macabre",
+      "label": "Macabre",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1174
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "municipal-waste",
+      "label": "Municipal Waste",
+      "type": "artist",
+      "source": "tracks",
+      "at": 7010
+    },
+    {
+      "id": "odium-humani-generis",
+      "label": "Odium Humani Generis",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4472
+    },
+    {
+      "id": "poison-ruin",
+      "label": "Poison Ruïn",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2379
+    },
+    {
+      "id": "queens-of-the-stone-age",
+      "label": "Queens of the Stone Age",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3285
+    },
+    {
+      "id": "species",
+      "label": "Species",
+      "type": "artist",
+      "source": "tracks",
+      "at": 795
+    },
+    {
+      "id": "system-of-a-down",
+      "label": "System Of A Down",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3180
+    },
+    {
+      "id": "voivod-orchestre-symphonique-de-quebec",
+      "label": "Voivod & Orchestre symphonique de Québec",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5495
+    },
+    {
+      "id": "warning",
+      "label": "Warning",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1904
+    }
+  ],
   "tracks": [
     {
       "start": 12,

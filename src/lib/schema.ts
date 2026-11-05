@@ -24,6 +24,19 @@ export const catalogSchema = z.object({
   ),
 });
 
+export const TAG_TYPES = ['artist', 'person', 'work', 'event', 'place', 'theme', 'editorial'] as const;
+export const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile'] as const;
+
+export const tagSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  label: z.string().min(1),
+  type: z.enum(TAG_TYPES),
+  source: z.enum(TAG_SOURCES),
+  at: z.number().optional(),
+});
+
+export type Tag = z.infer<typeof tagSchema>;
+
 export const episodeSchema = z.object({
   version: z.literal(1),
   id: z.string().min(1),
@@ -31,8 +44,8 @@ export const episodeSchema = z.object({
   durationSec: z.number().nullable(),
   summary: z.string().nullable(),
   topics: z.array(z.object({ start: z.number(), end: z.number().optional(), label: z.string() })),
-  // Tagi wyprowadzone ze znaczników profilu (np. Kanonada); służą też przyszłemu wyszukiwaniu.
-  tags: z.array(z.object({ id: z.string(), label: z.string(), start: z.number().optional() })).default([]),
+  // Tagi odcinka: zespoły, osoby, dzieła, wydarzenia, miejsca, tematy i znaczniki redakcyjne.
+  tags: z.array(tagSchema).default([]),
   tracks: z.array(
     z.object({
       start: z.number(),

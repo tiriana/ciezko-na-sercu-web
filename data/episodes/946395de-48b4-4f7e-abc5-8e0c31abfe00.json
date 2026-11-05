@@ -5,7 +5,92 @@
   "durationSec": 7188,
   "summary": "",
   "topics": [],
-  "tags": [],
+  "tags": [
+    {
+      "id": "bulldozer",
+      "label": "Bulldozer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5792
+    },
+    {
+      "id": "cannibal-corpse",
+      "label": "Cannibal Corpse",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6077
+    },
+    {
+      "id": "emperor",
+      "label": "Emperor",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6932
+    },
+    {
+      "id": "iron-maiden",
+      "label": "Iron Maiden",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3589
+    },
+    {
+      "id": "judas-priest",
+      "label": "Judas Priest",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5536
+    },
+    {
+      "id": "kat",
+      "label": "Kat",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2260
+    },
+    {
+      "id": "mayhem",
+      "label": "Mayhem",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6406
+    },
+    {
+      "id": "slayer",
+      "label": "Slayer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3932
+    },
+    {
+      "id": "tsa",
+      "label": "TSA",
+      "type": "artist",
+      "source": "tracks",
+      "at": 831
+    },
+    {
+      "id": "turbo",
+      "label": "Turbo",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1326
+    },
+    {
+      "id": "vader",
+      "label": "Vader",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4918
+    },
+    {
+      "id": "venom",
+      "label": "Venom",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3032
+    }
+  ],
   "tracks": [
     {
       "start": 831,

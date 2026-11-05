@@ -81,7 +81,146 @@
       "label": "The Ocean – powrót z albumem koncepcyjnym „Solaris\""
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "id": "airbourne",
+      "label": "Airbourne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1539
+    },
+    {
+      "id": "anthrax",
+      "label": "Anthrax",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2142
+    },
+    {
+      "id": "archgoat",
+      "label": "Archgoat",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4753
+    },
+    {
+      "id": "behemoth",
+      "label": "Behemoth",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5069
+    },
+    {
+      "id": "chat-pile",
+      "label": "Chat Pile",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2870
+    },
+    {
+      "id": "cloven-hoof",
+      "label": "Cloven Hoof",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1801
+    },
+    {
+      "id": "emma-ruth-rundle",
+      "label": "Emma Ruth Rundle",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3516
+    },
+    {
+      "id": "gammacide",
+      "label": "Gammacide",
+      "type": "artist",
+      "source": "tracks",
+      "at": 447
+    },
+    {
+      "id": "godflesh",
+      "label": "Godflesh",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5984
+    },
+    {
+      "id": "godslut",
+      "label": "Godslut",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5702
+    },
+    {
+      "id": "green-carnation",
+      "label": "Green Carnation",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3977
+    },
+    {
+      "id": "green-lung",
+      "label": "Green Lung",
+      "type": "artist",
+      "source": "tracks",
+      "at": 806
+    },
+    {
+      "id": "harlott",
+      "label": "Harlott",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2689
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "sleep",
+      "label": "Sleep",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1209
+    },
+    {
+      "id": "the-eternal",
+      "label": "The Eternal",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4382
+    },
+    {
+      "id": "the-materia",
+      "label": "The Materia",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5426
+    },
+    {
+      "id": "the-ocean",
+      "label": "The Ocean",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6353
+    },
+    {
+      "id": "uncle-acid-the-deadbeats",
+      "label": "Uncle Acid & The Deadbeats",
+      "type": "artist",
+      "source": "tracks",
+      "at": 11
+    }
+  ],
   "tracks": [
     {
       "start": 11,

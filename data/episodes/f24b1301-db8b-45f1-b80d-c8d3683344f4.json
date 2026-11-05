@@ -5,7 +5,155 @@
   "durationSec": 6829,
   "summary": "",
   "topics": [],
-  "tags": [],
+  "tags": [
+    {
+      "id": "bathory",
+      "label": "Bathory",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2366
+    },
+    {
+      "id": "bolt-thrower",
+      "label": "Bolt Thrower",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5813
+    },
+    {
+      "id": "carnivore",
+      "label": "Carnivore",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3785
+    },
+    {
+      "id": "dying-fetus",
+      "label": "Dying Fetus",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4748
+    },
+    {
+      "id": "exodus",
+      "label": "Exodus",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1295
+    },
+    {
+      "id": "grip-inc",
+      "label": "Grip Inc.",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1988
+    },
+    {
+      "id": "manowar",
+      "label": "Manowar",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3262
+    },
+    {
+      "id": "marduk",
+      "label": "Marduk",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5585
+    },
+    {
+      "id": "mastodon",
+      "label": "Mastodon",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4346
+    },
+    {
+      "id": "mayhem",
+      "label": "Mayhem",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5134
+    },
+    {
+      "id": "megadeth",
+      "label": "Megadeth",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1066
+    },
+    {
+      "id": "meshuggah",
+      "label": "Meshuggah",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4151
+    },
+    {
+      "id": "napalm-death",
+      "label": "Napalm Death",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3558
+    },
+    {
+      "id": "nuclear-assault",
+      "label": "Nuclear Assault",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2675
+    },
+    {
+      "id": "primordial",
+      "label": "Primordial",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6365
+    },
+    {
+      "id": "slayer",
+      "label": "Slayer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 620
+    },
+    {
+      "id": "sodom",
+      "label": "Sodom",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1614
+    },
+    {
+      "id": "sotajumala",
+      "label": "Sotajumala",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4554
+    },
+    {
+      "id": "tank",
+      "label": "Tank",
+      "type": "artist",
+      "source": "tracks",
+      "at": 373
+    },
+    {
+      "id": "testament",
+      "label": "Testament",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2937
+    },
+    {
+      "id": "vader",
+      "label": "Vader",
+      "type": "artist",
+      "source": "tracks",
+      "at": 9
+    }
+  ],
   "tracks": [
     {
       "start": 9,

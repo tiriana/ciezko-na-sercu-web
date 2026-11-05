@@ -31,7 +31,55 @@
       "label": "Meshuga – mini‑album I oraz San – utwór Nowe z albumu Life Metal"
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "id": "esoteric",
+      "label": "Esoteric",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1778
+    },
+    {
+      "id": "i-feel-like-a-bombed-cathedral",
+      "label": "I Feel Like a Bombed Cathedral",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5911
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "meshuggah",
+      "label": "Meshuggah",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4530
+    },
+    {
+      "id": "reverend-bizarre",
+      "label": "Reverend Bizarre",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3099
+    },
+    {
+      "id": "the-manical-veil",
+      "label": "The Manical Veil",
+      "type": "artist",
+      "source": "tracks",
+      "at": 275
+    }
+  ],
   "tracks": [
     {
       "start": 275,

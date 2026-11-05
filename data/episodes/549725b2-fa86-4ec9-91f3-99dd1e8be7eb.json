@@ -5,7 +5,64 @@
   "durationSec": 6835,
   "summary": "",
   "topics": [],
-  "tags": [],
+  "tags": [
+    {
+      "id": "cisnienie",
+      "label": "Ciśnienie",
+      "type": "artist",
+      "source": "tracks",
+      "at": 12
+    },
+    {
+      "id": "decapitated",
+      "label": "Decapitated",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1287
+    },
+    {
+      "id": "hate-eternal",
+      "label": "Hate Eternal",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3133
+    },
+    {
+      "id": "immolation",
+      "label": "Immolation",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6263
+    },
+    {
+      "id": "imperial-triumphant",
+      "label": "Imperial Triumphant",
+      "type": "artist",
+      "source": "tracks",
+      "at": 612
+    },
+    {
+      "id": "meshuggah",
+      "label": "Meshuggah",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1930
+    },
+    {
+      "id": "metallica",
+      "label": "Metallica",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4599
+    },
+    {
+      "id": "venom",
+      "label": "Venom",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3915
+    }
+  ],
   "tracks": [
     {
       "start": 12,

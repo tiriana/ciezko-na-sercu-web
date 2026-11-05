@@ -5,7 +5,78 @@
   "durationSec": 6882,
   "summary": "",
   "topics": [],
-  "tags": [],
+  "tags": [
+    {
+      "id": "amebix",
+      "label": "Amebix",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6381
+    },
+    {
+      "id": "black-sabbath",
+      "label": "Black Sabbath",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1198
+    },
+    {
+      "id": "celtic-frost",
+      "label": "Celtic Frost",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5745
+    },
+    {
+      "id": "deep-purple",
+      "label": "Deep Purple",
+      "type": "artist",
+      "source": "tracks",
+      "at": 489
+    },
+    {
+      "id": "hawkwind",
+      "label": "Hawkwind",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3093
+    },
+    {
+      "id": "judas-priest",
+      "label": "Judas Priest",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2496
+    },
+    {
+      "id": "machine-head",
+      "label": "Machine Head",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6
+    },
+    {
+      "id": "mayhem",
+      "label": "Mayhem",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4567
+    },
+    {
+      "id": "slayer",
+      "label": "Slayer",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3963
+    },
+    {
+      "id": "venom",
+      "label": "Venom",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5122
+    }
+  ],
   "tracks": [
     {
       "start": 6,
