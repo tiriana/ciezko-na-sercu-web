@@ -2,10 +2,71 @@
   "version": 1,
   "id": "31fa2fa3-05f3-41c3-99bf-18a101132e82",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T15:10:21.585Z",
+  "updatedAt": "2026-11-06T16:04:49.573Z",
   "durationSec": 6899,
-  "summary": "",
-  "topics": [],
+  "summary": "Przegląd kwietniowych nowości ciężkiego brzmienia otwiera szósty album Ghost, Skeleta, z piekielno-karnawałowym singlem Satinized, oraz Mid-Death Crisis Wednesday 13. Caliban wraca z tytułowym Back from Hell nagranym z The Browning, a Voivod i James Thrillwell sięgają po repertuar Ramones przy okazji czerwcowego Best of Ramones Redux. Instrumentalny Quadwium opiera się na dwóch basach bezprogowych i wirtuozowskiej sekcji rytmicznej, Cytotoxin rozciąga czarnobylską apokalipsę na albumie Biographic, a Bleed From Within i Landmarks stawiają na nowoczesny metalcore. Wśród nawiązań do klasyki pojawiają się The Lord Weird Slough Feg z EP-ką kontynuującą Traveler oraz Pigs Pigs Pigs Pigs Pigs Pigs Pigs z Death Hilarious. Drugą połowę wypełnia doom i black metal — Church of the Sea, The Great Sea, Opia, Warfield, Imperishable, Benediction i In the Woods — przeplatane thrashowym powrotem do starej szkoły oraz nowym Untoned Machine Head z Reese'em Scruggsem w miejsce Wacława Kiełtyki.",
+  "topics": [
+    {
+      "start": 244,
+      "end": 314,
+      "label": "Ghost – nowa płyta Skeleta i singiel Satinized"
+    },
+    {
+      "start": 314,
+      "end": 344,
+      "label": "Wednesday 13 – album Mid-Death Crisis"
+    },
+    {
+      "start": 534,
+      "end": 596,
+      "label": "Caliban – Back from Hell z The Browning"
+    },
+    {
+      "start": 758,
+      "end": 801,
+      "label": "Voivod i Thrillwell grają Ramones"
+    },
+    {
+      "start": 953,
+      "end": 1020,
+      "label": "Quadwium – instrumentalny fusion na dwóch basach bezprogowych"
+    },
+    {
+      "start": 1247,
+      "end": 1286,
+      "label": "Cytotoxin – Biographic inspirowany katastrofą w Czarnobylu"
+    },
+    {
+      "start": 1785,
+      "end": 1877,
+      "label": "Bleed From Within – siódmy album Zenith"
+    },
+    {
+      "start": 2357,
+      "end": 2446,
+      "label": "The Lord Weird Slough Feg – EP Traveler's Supplement One"
+    },
+    {
+      "start": 2993,
+      "end": 3023,
+      "label": "Church of the Sea – ateński doom na albumie Eva"
+    },
+    {
+      "start": 4127,
+      "end": 4165,
+      "label": "Warfield – drugi album With the Old Breed"
+    },
+    {
+      "start": 5011,
+      "end": 5060,
+      "label": "Machine Head – Untoned bez Wacława Kiełtyki"
+    },
+    {
+      "start": 5579,
+      "end": 5603,
+      "label": "Benediction – Ravage of Empires i Engines of War"
+    }
+  ],
   "tags": [
     {
       "id": "benediction",
@@ -172,7 +233,7 @@
   "tracks": [
     {
       "start": 13,
-      "end": 344,
+      "end": 244,
       "durationSec": 232,
       "artist": "Ghost",
       "title": "Satanized",
@@ -185,7 +246,7 @@
     },
     {
       "start": 344,
-      "end": 596,
+      "end": 534,
       "durationSec": 191,
       "artist": "Wednesday 13",
       "title": "When the Devil Commands",
@@ -198,7 +259,7 @@
     },
     {
       "start": 596,
-      "end": 801,
+      "end": 758,
       "durationSec": 163,
       "artist": "Caliban",
       "title": "Back From Hell (feat. The Browning)",
@@ -211,7 +272,7 @@
     },
     {
       "start": 801,
-      "end": 1020,
+      "end": 953,
       "durationSec": 132,
       "artist": "Voivod",
       "title": "Zero Zero UFO (feat. JG Thirlwell)",
@@ -224,7 +285,7 @@
     },
     {
       "start": 1020,
-      "end": 1286,
+      "end": 1247,
       "durationSec": 227,
       "artist": "Quadvium",
       "title": "Náströnd",
@@ -250,7 +311,7 @@
     },
     {
       "start": 1595,
-      "end": 1877,
+      "end": 1785,
       "durationSec": 192,
       "artist": "Necrotted, Aborted & Coffin Feeder",
       "title": "Deus Ex",
@@ -276,7 +337,7 @@
     },
     {
       "start": 2124,
-      "end": 2446,
+      "end": 2357,
       "durationSec": 234,
       "artist": "LANDMVRKS, While She Sleeps & Mat Welsh",
       "title": "A Line in the Dust",
@@ -302,7 +363,7 @@
     },
     {
       "start": 2668,
-      "end": 3023,
+      "end": 2993,
       "durationSec": 325,
       "artist": "Pigs Pigs Pigs Pigs Pigs Pigs Pigs",
       "title": "Stitches",
@@ -341,7 +402,7 @@
     },
     {
       "start": 3712,
-      "end": 4165,
+      "end": 4127,
       "durationSec": 415,
       "artist": "Opia",
       "title": "Man Proposes, God Disposes",
@@ -380,7 +441,7 @@
     },
     {
       "start": 4785,
-      "end": 5060,
+      "end": 5011,
       "durationSec": 227,
       "artist": "Imperishable",
       "title": "Bells",
@@ -406,7 +467,7 @@
     },
     {
       "start": 5331,
-      "end": 5603,
+      "end": 5579,
       "durationSec": 250,
       "artist": "Idle Heirs",
       "title": "Pillow Talk (Instrumental)",

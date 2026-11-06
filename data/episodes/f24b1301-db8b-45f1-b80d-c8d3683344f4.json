@@ -2,10 +2,71 @@
   "version": 1,
   "id": "f24b1301-db8b-45f1-b80d-c8d3683344f4",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T15:10:21.586Z",
+  "updatedAt": "2026-11-06T16:04:49.574Z",
   "durationSec": 6829,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek poświęcony jest metalowym utworom o wojnie — od klasyki nowej fali brytyjskiego heavy metalu po współczesny death i black metal. Przegląd otwiera Tank z „Ciężką artylerią”, a dalej pojawiają się Slayer („Chemical Warfare”), Megadeth („Take No Prisoners”) i Exodus z płyty „Tempo of the Damned”. Niemiecką scenę reprezentuje Sodom, a międzynarodową — Grip Inc. z „Heretic War Chant”, Bathory z tytułowym utworem z „Destroyer of Worlds” oraz Nuclear Assault i Testament, podejmujące temat wojny atomowej i trzeciej wojny światowej. W dalszej części omówiono Manowar, Napalm Death, Carnivore, Meshuggah, Mastodon, fiński Sotajumala, Dying Fetus i Mayhem, którego „Esoteric Warfare” opiera się na zimnowojennych eksperymentach z parapsychologią. Całość zamykają Marduk z utworem „Warsaw” o powstaniu warszawskim, Bolt Thrower i Primordial z „All Against All”.",
+  "topics": [
+    {
+      "start": 193,
+      "end": 352,
+      "label": "Wojna jako motyw przewodni odcinka"
+    },
+    {
+      "start": 352,
+      "end": 373,
+      "label": "Tank i utwór „Ciężka artyleria”"
+    },
+    {
+      "start": 598,
+      "end": 620,
+      "label": "Slayer „Chemical Warfare” i militaryzm Jeffa Hannemana"
+    },
+    {
+      "start": 977,
+      "end": 1066,
+      "label": "Megadeth „Take No Prisoners” i pokoleniowy lęk"
+    },
+    {
+      "start": 1265,
+      "end": 1295,
+      "label": "Exodus z płyty „Tempo of the Damned”"
+    },
+    {
+      "start": 1950,
+      "end": 1988,
+      "label": "Grip Inc. „Heretic War Chant” z debiutu"
+    },
+    {
+      "start": 2310,
+      "end": 2366,
+      "label": "Bathory „Destroyer of Worlds” i cytat Oppenheimera"
+    },
+    {
+      "start": 2898,
+      "end": 2937,
+      "label": "Testament „World War III” z „Titans of Creation”"
+    },
+    {
+      "start": 3220,
+      "end": 3262,
+      "label": "Manowar „Święta Wojna” z „Fighting the World”"
+    },
+    {
+      "start": 5011,
+      "end": 5134,
+      "label": "Mayhem „Esoteric Warfare” i zimnowojenna parapsychologia"
+    },
+    {
+      "start": 5542,
+      "end": 5585,
+      "label": "Marduk „Warsaw” o powstaniu warszawskim"
+    },
+    {
+      "start": 6328,
+      "end": 6365,
+      "label": "Primordial „All Against All” na zamknięcie"
+    }
+  ],
   "tags": [
     {
       "id": "bathory",
@@ -158,7 +219,7 @@
   "tracks": [
     {
       "start": 9,
-      "end": 373,
+      "end": 193,
       "durationSec": 171,
       "artist": "Vader",
       "title": "This Is the War",
@@ -171,7 +232,7 @@
     },
     {
       "start": 373,
-      "end": 620,
+      "end": 598,
       "durationSec": 204,
       "artist": "Tank",
       "title": "Heavy Artillery",
@@ -184,7 +245,7 @@
     },
     {
       "start": 620,
-      "end": 1066,
+      "end": 977,
       "durationSec": 357,
       "artist": "Slayer",
       "title": "Chemical Warfare",
@@ -197,7 +258,7 @@
     },
     {
       "start": 1066,
-      "end": 1295,
+      "end": 1265,
       "durationSec": 201,
       "artist": "Megadeth",
       "title": "Take No Prisoners",
@@ -223,7 +284,7 @@
     },
     {
       "start": 1614,
-      "end": 1988,
+      "end": 1950,
       "durationSec": 338,
       "artist": "Sodom",
       "title": "Napalm in the Morning",
@@ -236,7 +297,7 @@
     },
     {
       "start": 1988,
-      "end": 2366,
+      "end": 2310,
       "durationSec": 323,
       "artist": "Grip Inc",
       "title": "Heretic War Chant",
@@ -262,7 +323,7 @@
     },
     {
       "start": 2675,
-      "end": 2937,
+      "end": 2898,
       "durationSec": 224,
       "artist": "Nuclear Assault",
       "title": "Nuclear War",
@@ -275,7 +336,7 @@
     },
     {
       "start": 2937,
-      "end": 3262,
+      "end": 3220,
       "durationSec": 284,
       "artist": "Testament",
       "title": "WWIII",
@@ -366,7 +427,7 @@
     },
     {
       "start": 4748,
-      "end": 5134,
+      "end": 5011,
       "durationSec": 265,
       "artist": "Dying Fetus",
       "title": "One Shot, One Kill",
@@ -379,7 +440,7 @@
     },
     {
       "start": 5134,
-      "end": 5585,
+      "end": 5542,
       "durationSec": 410,
       "artist": "Mayhem",
       "title": "Posthuman",
@@ -418,7 +479,7 @@
     },
     {
       "start": 6084,
-      "end": 6365,
+      "end": 6328,
       "durationSec": 246,
       "artist": "Bolt Thrower",
       "title": "Anti-Tank (Dead Armour)",

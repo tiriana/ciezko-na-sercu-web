@@ -2,10 +2,71 @@
   "version": 1,
   "id": "9ec1becd-9191-4cdf-a219-270a512bd49d",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T15:10:21.584Z",
+  "updatedAt": "2026-11-06T16:04:49.572Z",
   "durationSec": 6921,
-  "summary": "",
-  "topics": [],
+  "summary": "Majowy przegląd koncertowy: od duńskiego death metalu (Neckbreaker, Gouge) przez post-metalowy Dune po industrialny Godflesh w krakowskiej Progresji. Zapowiedziano premierę albumu „Bellum Regis\" grupy Hate oraz trasę Decapitated z nowym wokalistą, w towarzystwie Cryptopsy, Warbringera i Carnation. Sporo miejsca zajęły małe festiwale — Liturgia Zniszczenia, Metal Vulture, Hell and Fire, Metal Commando i 666 United Metal Fest. Omówiono też widowiskową trasę Ghost promującą płytę „Skeleta\" oraz występ Babymetal z Poppy i Bambie Thug w krakowskiej Tauron Arenie. Na koniec mocny akcent: Inquisition i Demonical. Relacja z festiwalu Roadburn zapowiedziana na kolejny tydzień.",
+  "topics": [
+    {
+      "start": 224,
+      "end": 284,
+      "label": "Powrót z festiwalu Roadburn, relacja i wywiady za tydzień"
+    },
+    {
+      "start": 284,
+      "end": 361,
+      "label": "Duńska scena: Neckbreaker i Gouge, death metal"
+    },
+    {
+      "start": 712,
+      "end": 837,
+      "label": "Venom Incorporated, Krisiun i Hate z albumem Bellum Regis"
+    },
+    {
+      "start": 1599,
+      "end": 1632,
+      "label": "1349 oraz The Ruins of Beverast w Krakowie 8 maja"
+    },
+    {
+      "start": 2371,
+      "end": 2403,
+      "label": "Born of Osiris, Ingested, Entheos i The Voynich Code w trasie"
+    },
+    {
+      "start": 2403,
+      "end": 2469,
+      "label": "Ghost, album Skeleta i koncert w Atlas Arenie"
+    },
+    {
+      "start": 2815,
+      "end": 2915,
+      "label": "Aborted, Krypta, The Zenith Passage i Organectomy"
+    },
+    {
+      "start": 4487,
+      "end": 4610,
+      "label": "Godflesh w Progresji, supporty Thaw i Larmo"
+    },
+    {
+      "start": 5512,
+      "end": 5609,
+      "label": "Babymetal z Poppy i Bambie Thug w Tauron Arenie"
+    },
+    {
+      "start": 5831,
+      "end": 5908,
+      "label": "Decapitated z nowym wokalistą, Cryptopsy i Warbringer"
+    },
+    {
+      "start": 6421,
+      "end": 6494,
+      "label": "Pallbearer w Hydrozagadce i Metal Commando Fest"
+    },
+    {
+      "start": 6494,
+      "end": 6573,
+      "label": "Inquisition i Demonical, dwa koncerty w Polsce"
+    }
+  ],
   "tags": [
     {
       "id": "1349",
@@ -95,7 +156,7 @@
   "tracks": [
     {
       "start": 8,
-      "end": 361,
+      "end": 224,
       "durationSec": 194,
       "artist": "Whores",
       "title": "Hieronymus Bosch Was Right",
@@ -108,7 +169,7 @@
     },
     {
       "start": 361,
-      "end": 837,
+      "end": 712,
       "durationSec": 318,
       "artist": "NECKBREAKKER",
       "title": "Absorption",
@@ -121,7 +182,7 @@
     },
     {
       "start": 837,
-      "end": 1632,
+      "end": 1599,
       "durationSec": 764,
       "artist": "Krisiun",
       "title": "Conquerors of Armagedon",
@@ -134,7 +195,7 @@
     },
     {
       "start": 1632,
-      "end": 2469,
+      "end": 2371,
       "durationSec": 741,
       "artist": "1349",
       "title": "The God Devourer",
@@ -147,7 +208,7 @@
     },
     {
       "start": 2469,
-      "end": 2915,
+      "end": 2815,
       "durationSec": 270,
       "artist": "Ghost",
       "title": "Lachryma",
@@ -186,7 +247,7 @@
     },
     {
       "start": 4183,
-      "end": 4610,
+      "end": 4487,
       "durationSec": 305,
       "artist": "Caliban",
       "title": "Dear Suffering (feat. Joe Bad & Fit for An Autopsy)",
@@ -199,7 +260,7 @@
     },
     {
       "start": 4610,
-      "end": 5609,
+      "end": 5512,
       "durationSec": 825,
       "artist": "Godflesh",
       "title": "Streetcleaner",
@@ -212,7 +273,7 @@
     },
     {
       "start": 5609,
-      "end": 5908,
+      "end": 5831,
       "durationSec": 201,
       "artist": "BABYMETAL & Poppy",
       "title": "from me to u",
@@ -225,7 +286,7 @@
     },
     {
       "start": 5908,
-      "end": 6573,
+      "end": 6421,
       "durationSec": 515,
       "artist": "Decapitated",
       "title": "Kill the Cult",
