@@ -2,10 +2,61 @@
   "version": 1,
   "id": "3343d4bb-2174-4be0-8b9e-809442010bbb",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T12:06:04.429Z",
+  "updatedAt": "2026-11-06T13:09:50.532Z",
   "durationSec": 6882,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek poświęcony zespołom, które nazwy wzięły od tytułów utworów lub płyt innych wykonawców. Punktem wyjścia jest Machine Head, którego nazwa jest hołdem dla płyty Deep Purple z 1971 roku; dalej przewijają się zespoły czerpiące z Black Sabbath — Spiral Architect (od utworu zamykającego Sabbath Bloody Sabbath, autorzy jednego albumu Skeptics' Universe z 2000 roku) i doommetalowy Saint Vitus. Omówiono Judas Priest, który zapożyczył nazwę z tekstu Boba Dylana, a sam użyczył jej niemieckiemu Running Wild, oraz Motörhead i nazwany od jego płyty nowojorski Overkill. Wątek Tormentora łączy pierwotną nazwę Kreatora, wcześniejszy utwór Slayera i węgierską grupę Atilli Cihary z albumem Anno Domini. Mayhem i Bathory wzięły nazwy z utworów Venom, a przy Bathory przytoczono historię Erzsébet Báthory, jej domniemane inspiracje dla Draculi i nowsze badania podważające legendę krwi. Na koniec Usurper z Chicago i grecki The Usurper wobec utworu The Usurper z To Mega Therion Celtic Frost oraz Amebix, pierwotnie The Band With No Name, i nowojorski Winter nazwany od ich debiutanckiego singla.",
+  "topics": [
+    {
+      "start": 446,
+      "end": 489,
+      "label": "Machine Head — nazwa od płyty Deep Purple z 1971 roku"
+    },
+    {
+      "start": 1152,
+      "end": 1198,
+      "label": "Spiral Architect — hołd dla utworu z Sabbath Bloody Sabbath"
+    },
+    {
+      "start": 1933,
+      "end": 1959,
+      "label": "Saint Vitus — doommetalowa nazwa od utworu Black Sabbath"
+    },
+    {
+      "start": 2424,
+      "end": 2496,
+      "label": "Running Wild — nazwa od utworu Judas Priest z Killing Machine"
+    },
+    {
+      "start": 2989,
+      "end": 3093,
+      "label": "Overkill — nazwa od utworu i płyty Motörhead"
+    },
+    {
+      "start": 3829,
+      "end": 3963,
+      "label": "Tormentor — Kreator, Slayer i węgierska legenda Atilli Cihary"
+    },
+    {
+      "start": 4531,
+      "end": 4567,
+      "label": "Mayhem — nazwa od akustycznej miniaturki Venom"
+    },
+    {
+      "start": 4986,
+      "end": 5122,
+      "label": "Bathory — od Countess Bathory Venom i historii Erzsébet Báthory"
+    },
+    {
+      "start": 5688,
+      "end": 5745,
+      "label": "Usurper — od utworu Celtic Frost z To Mega Therion"
+    },
+    {
+      "start": 6275,
+      "end": 6381,
+      "label": "Amebix i Winter — nazwa od debiutanckiego singla Amebix"
+    }
+  ],
   "tags": [
     {
       "id": "amebix",
@@ -81,7 +132,7 @@
   "tracks": [
     {
       "start": 6,
-      "end": 489,
+      "end": 446,
       "durationSec": 363,
       "artist": "Machine Head",
       "title": "Only the Names",
@@ -94,7 +145,7 @@
     },
     {
       "start": 489,
-      "end": 1198,
+      "end": 1152,
       "durationSec": 640,
       "artist": "Deep Purple",
       "title": "Space Truckin",
@@ -107,7 +158,7 @@
     },
     {
       "start": 1198,
-      "end": 1959,
+      "end": 1933,
       "durationSec": 716,
       "artist": "Black Sabbath",
       "title": "Spiral Architect",
@@ -120,7 +171,7 @@
     },
     {
       "start": 1959,
-      "end": 2496,
+      "end": 2424,
       "durationSec": 467,
       "artist": "Black Sabbath",
       "title": "St. Vitus Dance",
@@ -133,7 +184,7 @@
     },
     {
       "start": 2496,
-      "end": 3093,
+      "end": 2989,
       "durationSec": 461,
       "artist": "Judas Priest",
       "title": "Running Wild",
@@ -146,7 +197,7 @@
     },
     {
       "start": 3093,
-      "end": 3963,
+      "end": 3829,
       "durationSec": 737,
       "artist": "Hawkwind",
       "title": "Motorhead",
@@ -159,7 +210,7 @@
     },
     {
       "start": 3963,
-      "end": 4567,
+      "end": 4531,
       "durationSec": 568,
       "artist": "Slayer",
       "title": "Tormentor",
@@ -172,7 +223,7 @@
     },
     {
       "start": 4567,
-      "end": 5122,
+      "end": 4986,
       "durationSec": 420,
       "artist": "Mayhem",
       "title": "Freezing Moon",
@@ -185,7 +236,7 @@
     },
     {
       "start": 5122,
-      "end": 5745,
+      "end": 5688,
       "durationSec": 568,
       "artist": "Venom",
       "title": "Countess Bathory",
@@ -198,7 +249,7 @@
     },
     {
       "start": 5745,
-      "end": 6381,
+      "end": 6275,
       "durationSec": 496,
       "artist": "Celtic Frost",
       "title": "The Usurper",

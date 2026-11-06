@@ -2,10 +2,76 @@
   "version": 1,
   "id": "112c188d-1818-4215-bba3-9348f032ccba",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T12:06:04.427Z",
+  "updatedAt": "2026-11-06T13:09:50.525Z",
   "durationSec": 6851,
-  "summary": "",
-  "topics": [],
+  "summary": "Lipcowy przegląd koncertów otwiera Body Void w Warszawie, a zaraz potem festiwal Inne Brzmienia w Lublinie z Voivod, A Place to Bury Strangers, Pet Brick i The Ex. Na Rockowisku w Zwierzyńcu zagra Soulfly, w Katowicach wystąpi legendarny singapurski Impiety, a w Łodzi Judas Priest. We Wrocławiu pojawią się Heilung i mongolska grupa The Hu, równolegle Castle Party w Bolkowie oraz stonerowy Red Smoke w Pleszewie pokazują inne oblicza ciężkich brzmień. Dalej omówiono Antichrist Siege Machine, Endure Grind Attack w Morsku, D.R.I. oraz Ostrów Rock Festival z Katatonią i Soen. Całość zamyka Poland Rock, gdzie zagrają między innymi Zeal and Ardor, Paradise Lost i Fear Factory.",
+  "topics": [
+    {
+      "start": 492,
+      "end": 551,
+      "label": "Body Void, Larmo i Gash Faith w Warszawie"
+    },
+    {
+      "start": 551,
+      "end": 671,
+      "label": "Festiwal Inne Brzmienia w Lublinie"
+    },
+    {
+      "start": 1356,
+      "end": 1437,
+      "label": "Rockowisko w Zwierzyńcu, Soulfly i Samael"
+    },
+    {
+      "start": 2179,
+      "end": 2253,
+      "label": "Impiety w Katowicach, jedyny koncert w Polsce"
+    },
+    {
+      "start": 2253,
+      "end": 2340,
+      "label": "Judas Priest i Glory Hammer w Łodzi"
+    },
+    {
+      "start": 2340,
+      "end": 2557,
+      "label": "Heilung i The Hu we wrocławskiej Hali Stulecia"
+    },
+    {
+      "start": 3326,
+      "end": 3408,
+      "label": "Castle Party w Bolkowie, mniej metalu"
+    },
+    {
+      "start": 3408,
+      "end": 3468,
+      "label": "Red Smoke w Pleszewie, stoner i psychodelia"
+    },
+    {
+      "start": 3855,
+      "end": 3916,
+      "label": "Antichrist Siege Machine i Spite, dwa koncerty"
+    },
+    {
+      "start": 4466,
+      "end": 4593,
+      "label": "Endure Grind Attack w Morsku, death metal"
+    },
+    {
+      "start": 5032,
+      "end": 5067,
+      "label": "D.R.I. w Warszawie i Zabrzu"
+    },
+    {
+      "start": 5173,
+      "end": 5329,
+      "label": "Ostrów Rock Festival z Katatonią i Soen"
+    },
+    {
+      "start": 5985,
+      "end": 6181,
+      "label": "Poland Rock, Zeal and Ardor i Paradise Lost"
+    }
+  ],
   "tags": [
     {
       "id": "a-place-to-bury-strangers",
@@ -95,7 +161,7 @@
   "tracks": [
     {
       "start": 7,
-      "end": 671,
+      "end": 492,
       "durationSec": 487,
       "artist": "Body Void",
       "title": "Burn",
@@ -108,7 +174,7 @@
     },
     {
       "start": 671,
-      "end": 1437,
+      "end": 1356,
       "durationSec": 686,
       "artist": "A Place to Bury Strangers",
       "title": "Everything Always Goes Wrong",
@@ -134,7 +200,7 @@
     },
     {
       "start": 1826,
-      "end": 2557,
+      "end": 2179,
       "durationSec": 354,
       "artist": "Sear Bliss",
       "title": "The Upper World",
@@ -147,7 +213,7 @@
     },
     {
       "start": 2557,
-      "end": 3468,
+      "end": 3326,
       "durationSec": 770,
       "artist": "Heilung",
       "title": "Elivagar",
@@ -160,7 +226,7 @@
     },
     {
       "start": 3468,
-      "end": 3916,
+      "end": 3855,
       "durationSec": 388,
       "artist": "sunnata",
       "title": "The Sleeper",
@@ -186,7 +252,7 @@
     },
     {
       "start": 4151,
-      "end": 4593,
+      "end": 4466,
       "durationSec": 316,
       "artist": "Ossuary",
       "title": "Inborn Scourge Unbound",
@@ -199,7 +265,7 @@
     },
     {
       "start": 4593,
-      "end": 5067,
+      "end": 5032,
       "durationSec": 441,
       "artist": "Sinister",
       "title": "Sacramental Carnage",
@@ -212,7 +278,7 @@
     },
     {
       "start": 5067,
-      "end": 5329,
+      "end": 5173,
       "durationSec": 107,
       "artist": "D.R.I",
       "title": "You Say I'm Scum",
@@ -225,7 +291,7 @@
     },
     {
       "start": 5329,
-      "end": 6181,
+      "end": 5985,
       "durationSec": 595,
       "artist": "Katatonia",
       "title": "Temporal",

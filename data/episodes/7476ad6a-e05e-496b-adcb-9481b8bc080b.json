@@ -2,10 +2,71 @@
   "version": 1,
   "id": "7476ad6a-e05e-496b-adcb-9481b8bc080b",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T12:06:04.428Z",
+  "updatedAt": "2026-11-06T13:09:50.526Z",
   "durationSec": 6808,
-  "summary": "",
-  "topics": [],
+  "summary": "Przegląd nowości płytowych czerwca zdominowały powroty legend: Katatonia wydała \"Nightmares as Extensions of the Waking State\", pierwszy album bez współzałożyciela Andersa Nyströma, a Sodom siedemnasty krążek \"The Arsonist\", surowy thrash o okropieństwach wojny. Wśród propozycji deathmetalowych znalazły się \"Xenotaph\" Fallujah, łączący pierwiastki progresywne z żywiołem death metalu, \"Silent Echos\" Gruesome, świadomie naśladujący wczesny Death, oraz \"Defiance\" Night Bearer oparty na trylogii Mroczne Materie Philipa Pullmana. Lżejsze rejony reprezentują stonerowo-psychodeliczny debiut Mordbear i pompatyczny heavy metal Battlesnake. Wytwórnia Relapse Records przypomniała pionierów mathcore'u z Dead Guy, których druga płyta ukazuje się po trzydziestu latach milczenia, a Melville Lens pokazali najlepiej brzmiący album w karierze, zrealizowany z producentem Joshem Wilburem. W drugiej części dominował black metal i okolice: \"Heimat\" Heaven Shall Burn z gościnnym udziałem Jesse Leacha, \"Nocturn\" Hex Vessel wyrosły z koncertu zamówionego przez festiwal Roadburn oraz \"Hellfegen\" duetu Myr, nagrany w Norwegii przez polskich muzyków.",
+  "topics": [
+    {
+      "start": 305,
+      "end": 442,
+      "label": "Katatonia \"Nightmares as Extensions of the Waking State\" i odejście Nyströma"
+    },
+    {
+      "start": 442,
+      "end": 446,
+      "label": "Sodom \"The Arsonist\" — siedemnasty album, surowy thrash o wojnie"
+    },
+    {
+      "start": 996,
+      "end": 1018,
+      "label": "Fallujah \"Xenotaph\" — progresywny death metal"
+    },
+    {
+      "start": 1414,
+      "end": 1510,
+      "label": "Gruesome \"Silent Echos\" — hołd dla wczesnego Death"
+    },
+    {
+      "start": 1750,
+      "end": 1795,
+      "label": "Night Bearer \"Defiance\" według Mrocznych Materii Pullmana"
+    },
+    {
+      "start": 2094,
+      "end": 2159,
+      "label": "Mordbear — trzyutworowa EPka, stoner i psychodelia"
+    },
+    {
+      "start": 2471,
+      "end": 2582,
+      "label": "Battlesnake \"Dawn of the Exultants...\" — epicki heavy metal"
+    },
+    {
+      "start": 3256,
+      "end": 3366,
+      "label": "Dead Guy \"Near Death Travel Services\" — powrót po 30 latach"
+    },
+    {
+      "start": 3761,
+      "end": 3830,
+      "label": "Melville Lens \"Where Only the Truth is Spoken\" z Joshem Wilburem"
+    },
+    {
+      "start": 4082,
+      "end": 4142,
+      "label": "Heaven Shall Burn \"Heimat\" z gościnnym Jesse Leachem"
+    },
+    {
+      "start": 4357,
+      "end": 4431,
+      "label": "Hex Vessel \"Nocturn\" — materiał z koncertu dla Roadburn"
+    },
+    {
+      "start": 5035,
+      "end": 5127,
+      "label": "Myr \"Hellfegen\" — polscy muzycy grający norweski black metal"
+    }
+  ],
   "tags": [
     {
       "id": "austere",
@@ -144,7 +205,7 @@
   "tracks": [
     {
       "start": 6,
-      "end": 446,
+      "end": 305,
       "durationSec": 288,
       "artist": "Katatonia",
       "title": "Wind of no Change",
@@ -170,7 +231,7 @@
     },
     {
       "start": 729,
-      "end": 1018,
+      "end": 996,
       "durationSec": 231,
       "artist": "Sodom",
       "title": "Trigger Discipline",
@@ -183,7 +244,7 @@
     },
     {
       "start": 1018,
-      "end": 1510,
+      "end": 1414,
       "durationSec": 344,
       "artist": "Fallujah",
       "title": "The Obsidian Architect",
@@ -196,7 +257,7 @@
     },
     {
       "start": 1510,
-      "end": 1795,
+      "end": 1750,
       "durationSec": 225,
       "artist": "Gruesome",
       "title": "Silent Echoes",
@@ -209,7 +270,7 @@
     },
     {
       "start": 1795,
-      "end": 2159,
+      "end": 2094,
       "durationSec": 292,
       "artist": "Nightbearer",
       "title": "One Church Over All",
@@ -222,7 +283,7 @@
     },
     {
       "start": 2159,
-      "end": 2582,
+      "end": 2471,
       "durationSec": 282,
       "artist": "Mordbear",
       "title": "Like The Dead",
@@ -261,7 +322,7 @@
     },
     {
       "start": 3171,
-      "end": 3366,
+      "end": 3256,
       "durationSec": 68,
       "artist": "Massgrav",
       "title": "Faktum kvarstår",
@@ -287,7 +348,7 @@
     },
     {
       "start": 3586,
-      "end": 3830,
+      "end": 3761,
       "durationSec": 176,
       "artist": "Kaonashi",
       "title": "Red Sink, Yellow Teeth",
@@ -300,7 +361,7 @@
     },
     {
       "start": 3830,
-      "end": 4142,
+      "end": 4082,
       "durationSec": 253,
       "artist": "Malevolence",
       "title": "If It's All The Same To You",
@@ -313,7 +374,7 @@
     },
     {
       "start": 4142,
-      "end": 4431,
+      "end": 4357,
       "durationSec": 217,
       "artist": "Heaven Shall Burn",
       "title": "Numbered Days (feat. Jesse Leach & Killswitch Engage)",
@@ -339,7 +400,7 @@
     },
     {
       "start": 4703,
-      "end": 5127,
+      "end": 5035,
       "durationSec": 333,
       "artist": "Austere",
       "title": "Redolent Foulness",
