@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "id": "5961aa85-06f1-4b46-9920-4b727ceda947",
+  "analyzedAt": "2026-11-06",
+  "updatedAt": "2026-11-06T07:25:56.034Z",
+  "durationSec": 6878,
+  "summary": "",
+  "topics": [],
+  "tags": [
+    {
+      "id": "black-sabbath",
+      "label": "Black Sabbath",
+      "type": "artist",
+      "source": "tracks",
+      "at": 0
+    },
+    {
+      "id": "infectious-grooves",
+      "label": "Infectious Grooves",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5973
+    },
+    {
+      "id": "miss-piggy-ozzy-osbourne",
+      "label": "Miss Piggy & Ozzy Osbourne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1585
+    },
+    {
+      "id": "motorhead-ozzy-osbourne",
+      "label": "Motörhead & Ozzy Osbourne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6639
+    },
+    {
+      "id": "ozzy-osbourne",
+      "label": "Ozzy Osbourne",
+      "type": "artist",
+      "source": "tracks",
+      "at": 241
+    },
+    {
+      "id": "wu-tang-clan",
+      "label": "Wu-Tang Clan",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5542
+    }
+  ],
+  "tracks": [
+    {
+      "start": 0,
+      "end": 241,
+      "durationSec": 165,
+      "artist": "Black Sabbath",
+      "title": "Paranoid",
+      "album": "Paranoid",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 241,
+      "end": 909,
+      "durationSec": 228,
+      "artist": "Ozzy Osbourne",
+      "title": "No Bone Movies",
+      "album": "Blizzard of Ozz (40th Anniversary Expanded Edition)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 909,
+      "end": 1585,
+      "durationSec": 254,
+      "artist": "Black Sabbath",
+      "title": "The Wizard",
+      "album": "Black Sabbath",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 1585,
+      "end": 2078,
+      "durationSec": 116,
+      "artist": "Miss Piggy & Ozzy Osbourne",
+      "title": "Born to Be Wild",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2078,
+      "end": 2786,
+      "durationSec": 282,
+      "artist": "Black Sabbath",
+      "title": "Changes",
+      "album": "Black Sabbath, Vol. 4",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 2786,
+      "end": 3840,
+      "durationSec": 319,
+      "artist": "Ozzy Osbourne",
+      "title": "Little Dolls",
+      "album": "Diary of a Madman (Remastered Original Recording)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 3840,
+      "end": 4146,
+      "durationSec": 169,
+      "artist": "Ozzy Osbourne",
+      "title": "Mama, I'm Coming Home",
+      "album": "No More Tears (Bonus Track Version)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4146,
+      "end": 4959,
+      "durationSec": 332,
+      "artist": "Ozzy Osbourne",
+      "title": "Crazy Train (Live)",
+      "album": "Live at Budokan",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 4959,
+      "end": 5542,
+      "durationSec": 280,
+      "artist": "Ozzy Osbourne",
+      "title": "Hellraiser",
+      "album": "No More Tears (Bonus Track Version)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5542,
+      "end": 5973,
+      "durationSec": 281,
+      "artist": "Wu-Tang Clan",
+      "title": "For Heavens Sake",
+      "album": "Wu-Tang Forever",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 5973,
+      "end": 6330,
+      "durationSec": 175,
+      "artist": "Infectious Grooves",
+      "title": "Therapy",
+      "album": "The Plague That Makes Your Booty Move... It's the Infectious Grooves",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6330,
+      "end": 6639,
+      "durationSec": 239,
+      "artist": "Ozzy Osbourne",
+      "title": "Latimer's Mercy",
+      "album": "Scream (Expanded Edition)",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    },
+    {
+      "start": 6639,
+      "end": 6878,
+      "durationSec": 238,
+      "artist": "Motörhead & Ozzy Osbourne",
+      "title": "I Ain't No Nice Guy",
+      "album": "March or Die",
+      "confidence": "średnia",
+      "sources": [
+        "shazam"
+      ],
+      "links": []
+    }
+  ],
+  "quotes": [],
+  "credits": []
+}

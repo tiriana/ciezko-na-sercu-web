@@ -12,14 +12,27 @@ if (!workDir) {
 const catalog = JSON.parse(await readFile(new URL('../data/catalog.json', import.meta.url), 'utf8'));
 const bySlug = new Map();
 const byDate = new Map();
+const byTitle = new Map();
 for (const episode of catalog.episodes) {
   for (const slug of episode.slugs ?? []) bySlug.set(slug, episode.id);
   byDate.set(episode.date, [...(byDate.get(episode.date) ?? []), episode.id]);
+  const key = episode.title.normalize('NFC').trim().toLowerCase();
+  byTitle.set(key, [...(byTitle.get(key) ?? []), episode.id]);
 }
+
+const normalize = (value) => (value ?? '').normalize('NFC').trim().toLowerCase();
 
 function catalogIdFor(episode) {
   const byExactSlug = bySlug.get(episode.episodeId);
   if (byExactSlug) return byExactSlug;
+
+  // Tagger ucina identyfikator do 70 znaków, więc slug z katalogu bywa dłuższy.
+  const byPrefix = [...bySlug.entries()].filter(([slug]) => slug.startsWith(episode.episodeId));
+  if (byPrefix.length === 1) return byPrefix[0][1];
+
+  const byExactTitle = byTitle.get(normalize(episode.title)) ?? [];
+  if (byExactTitle.length === 1) return byExactTitle[0];
+
   const candidates = byDate.get(episode.date) ?? [];
   return candidates.length === 1 ? candidates[0] : null;
 }
