@@ -298,6 +298,12 @@ a {
 
 /* Toolbar */
 
+.toolbar .search {
+  /* Globalne `.search` ma margines dolny pod samodzielny formularz; w pasku filtrów
+     wypychał pole w górę względem kafelków lat. */
+  margin: 0;
+}
+
 .toolbar {
   display: flex;
   flex-wrap: wrap;
