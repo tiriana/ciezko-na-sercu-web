@@ -1,0 +1,985 @@
+{
+  "version": 1,
+  "episodeId": "9ec1becd-9191-4cdf-a219-270a512bd49d",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 110483624,
+  "fileMtimeMs": 1789151164615.8206,
+  "windows": [
+    {
+      "index": 0,
+      "start": 3.3,
+      "end": 9.280000000000001
+    },
+    {
+      "index": 1,
+      "start": 199.75,
+      "end": 362.43
+    },
+    {
+      "index": 2,
+      "start": 677.03,
+      "end": 838.11
+    },
+    {
+      "index": 3,
+      "start": 1599.17,
+      "end": 1633.05
+    },
+    {
+      "index": 4,
+      "start": 2371.27,
+      "end": 2470.46
+    },
+    {
+      "index": 5,
+      "start": 2737.48,
+      "end": 2916.28
+    },
+    {
+      "index": 6,
+      "start": 3163.36,
+      "end": 3250.3
+    },
+    {
+      "index": 7,
+      "start": 4113.16,
+      "end": 4184.99
+    },
+    {
+      "index": 8,
+      "start": 4487.43,
+      "end": 4611.1
+    },
+    {
+      "index": 9,
+      "start": 5432.84,
+      "end": 5610.08
+    },
+    {
+      "index": 10,
+      "start": 5807.68,
+      "end": 5909.5
+    },
+    {
+      "index": 11,
+      "start": 6420.96,
+      "end": 6574.78
+    }
+  ],
+  "segments": [
+    {
+      "start": 3.3,
+      "end": 6.92,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 6.92,
+      "end": 9.28,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 200.59,
+      "end": 206.77,
+      "text": "Dobry wieczór Państwu, kłania się Jarek Szubrycht, prowadzący dla Was audycję Ciężko na sercu."
+    },
+    {
+      "start": 207.57,
+      "end": 211.79,
+      "text": "Wydaje ją Mariusz Owczarek, nadaje trójka, program trzeci Polskiego Radia."
+    },
+    {
+      "start": 212.65,
+      "end": 218.81,
+      "text": "Już od roku umilamy Wam noce z wtorku na środę, o czym donoszę nie bez satysfakcji,"
+    },
+    {
+      "start": 219.57,
+      "end": 223.59,
+      "text": "życząc sobie i Wam wszystkiego najlepszego z okazji urodzin."
+    },
+    {
+      "start": 224.01,
+      "end": 227.59,
+      "text": "Przed chwilą wróciłem z mojego ukochanego festiwalu Roadburn."
+    },
+    {
+      "start": 228.31,
+      "end": 235.43,
+      "text": "Nawiozłem stertę wrażeń i piosenek, ale jeszcze nie jestem gotowy do podzielenia się tym wszystkim z Wami,"
+    },
+    {
+      "start": 235.55,
+      "end": 240.89,
+      "text": "bo muszę ochłonąć, uporządkować myśli i przede wszystkim opracować wywiady."
+    },
+    {
+      "start": 241.61,
+      "end": 246.75,
+      "text": "O Roadburn będzie więc za tydzień, a dziś tradycji niech stanie się zadość."
+    },
+    {
+      "start": 247.25,
+      "end": 254.69,
+      "text": "U progu nowego miesiąca posłuchamy artystów, których będzie można zobaczyć w najbliższym czasie na koncertach."
+    },
+    {
+      "start": 255.29,
+      "end": 264.17,
+      "text": "Powitała nas amerykańska grupa Horse i nie, nie chodzi o konia, która przyjeżdża niestety tylko na jeden koncert."
+    },
+    {
+      "start": 264.27,
+      "end": 272.43,
+      "text": "Niestety, bo ich uwielbiam, na żywo to jest petarda, a grają już 2 maja w Poznaniu."
+    },
+    {
+      "start": 273.25,
+      "end": 282.91,
+      "text": "Daleko mam i pewnie nie dotrę, nad czym ubolewam, ale kto może niech jedzie lub idzie, to będzie udany wieczór."
+    },
+    {
+      "start": 284.23,
+      "end": 295.05,
+      "text": "Duńska scena ostatnio kwitnie i owocuje, czego posmakować będą mogli ci, co stawią się w Warszawie w Wudu 2 maja i w Poznaniu pod Minogą 3 maja."
+    },
+    {
+      "start": 295.17,
+      "end": 308.05,
+      "text": "O właśnie, kto przyjdzie drugiego maja na Horse pod Minogę może tam przenocować i już następnego dnia będzie mógł zobaczyć dwie zacne duńskie grupy,"
+    },
+    {
+      "start": 308.05,
+      "end": 311.81,
+      "text": "a więc Neckbreaker i Gouge."
+    },
+    {
+      "start": 312.37,
+      "end": 314.61,
+      "text": "Ta druga gra death metal i robi to dobrze."
+    },
+    {
+      "start": 315.89,
+      "end": 322.13,
+      "text": "Ta pierwsza też death metal, podkuty nowoczesnym groove'em i robi to jeszcze lepiej."
+    },
+    {
+      "start": 322.69,
+      "end": 329.27,
+      "text": "Do niedawna nazywali się Neckenecker i pod tym szyldem wystąpili chociażby na Mystic Festival,"
+    },
+    {
+      "start": 329.83,
+      "end": 335.47,
+      "text": "ale podpisali kontrakt z Nuclear Blast i zgaduję, że wytwórnia zasugerowała,"
+    },
+    {
+      "start": 335.47,
+      "end": 343.15,
+      "text": "że ze skomplikowaną duńskojęzyczną nazwą będzie im trudniej zapaść w pamięć fanów."
+    },
+    {
+      "start": 344.43,
+      "end": 345.75,
+      "text": "Bardzo możliwe."
+    },
+    {
+      "start": 347.37,
+      "end": 351.83,
+      "text": "Chociaż fani metalu, jeśli tylko chcą, nie takie łamańce zapamiętują,"
+    },
+    {
+      "start": 352.43,
+      "end": 357.59,
+      "text": "ale zespół nazywa się już Neckbreaker i w grudniu wydał debiutancki album"
+    },
+    {
+      "start": 357.59,
+      "end": 362.43,
+      "text": "Within the Viscera, a brzmi to tak..."
+    },
+    {
+      "start": 677.03,
+      "end": 701.09,
+      "text": "Plugastwo z Ameryki w towarzystwie obrzydlistwa z Niemiec, czyli Die Pigas i Putridarium przyjeżdża do nas nad Odrę i Wisłę na dwie sztuki i fajnie, że coraz więcej dociera do nas z tej nowej fali staroszkolnego deathmetalu, który przeżywa drugą albo trzecią młodość."
+    },
+    {
+      "start": 701.09,
+      "end": 710.17,
+      "text": "A więc Die Pigas i Putridarium we Wrocławiu, w Liverpoolu 4 maja i dzień później w Warszawie w klubie voodoo."
+    },
+    {
+      "start": 711.65,
+      "end": 725.97,
+      "text": "Zestaw złożony z Venom Incorporated, Christian, Haidt i Ater zagra dla Was dwa koncerty w Warszawie w progresji 7 maja i w Zabrzu w wiatraku 8 maja."
+    },
+    {
+      "start": 725.97,
+      "end": 739.97,
+      "text": "No i tu muszę niestety powiedzieć, że obecne wcielenie Venom Incorporated jest zespołem, którego nie polecam, bo to nie tylko cover band prawdziwego Venom, ale w dodatku cover band szemrany."
+    },
+    {
+      "start": 740.49,
+      "end": 752.65,
+      "text": "Kiedy zespół opuścił Mantas, a stało się to w ubiegłym roku, Mantas, czyli oryginalny gitarzysta Venom, ta blond włosa, obecnie już biało włosa bestia."
+    },
+    {
+      "start": 753.39,
+      "end": 773.67,
+      "text": "Jego towarzysz, czyli Tony Dolan, zwany Demolition Manem, bez porozumienia z Mantasem i wbrew jego woli kontynuuje działalność Venom Incorporated, grając i śpiewając repertuar, z którego lepszą większością nie ma nic wspólnego."
+    },
+    {
+      "start": 773.67,
+      "end": 781.07,
+      "text": "Jest to proceder żenujący i dziwię się, że ludzie to kupują, że tańczą pod sceną i śpiewają refreny."
+    },
+    {
+      "start": 781.59,
+      "end": 788.99,
+      "text": "Pantony to powinien jeździć ze swoim Atomcraft i z nim próbować przekonać do siebie publiczność."
+    },
+    {
+      "start": 789.65,
+      "end": 796.89,
+      "text": "O Venom Incorporated szkoda gadać, ale na te koncerty i tak warto się wybrać."
+    },
+    {
+      "start": 796.89,
+      "end": 814.93,
+      "text": "Warto się na nie wybrać ze względu na Crision, czyli brazylijską maszynę do zabijania oraz Hate, czyli naszych rodaków, którzy już na początku maja świętują premierę nowego albumu zatytułowanego Bellum Regis, płyty wydanej przez Metal Blade."
+    },
+    {
+      "start": 815.75,
+      "end": 829.35,
+      "text": "Swoją drogą, prawie ćwierć wieku temu, kiedy jeszcze byłem piosenkarzem, graliśmy trasę u boku m.in. Crision i Hate i piękne to były chwile, nie zapomnę ich nigdy."
+    },
+    {
+      "start": 829.35,
+      "end": 835.95,
+      "text": "A więc Crision i nowego Hate posłuchamy i uczynię to z największą przyjemnością."
+    },
+    {
+      "start": 1599.17,
+      "end": 1611.13,
+      "text": "8 maja do Krakowa zawita norweska black metalowa zaraza. Znakomity zespół 1349, promujący ubiegłoroczny album The Wolf and the King."
+    },
+    {
+      "start": 1611.79,
+      "end": 1630.71,
+      "text": "Towarzyszyć im będą The Ruins of Beverest, Vitriol oraz Sarkator. I polecam przede wszystkim niemiecki Ruins of Beverest, bo to znakomity, jadowity black metal, nierzadko osuwający się w doom metalowe cienie."
+    },
+    {
+      "start": 1630.71,
+      "end": 1633.05,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2371.27,
+      "end": 2391.09,
+      "text": "Trzy koncerty dla fanów brzmień wciąż brutalnych, ale nie aż tak ponurych zagrają Ingested, Entheos, The Voynich Code oraz, to jest gwiazda wieczoru, amerykański zespół Born of Osiris, specjalizujący się w progresywnej odmianie metalchora."
+    },
+    {
+      "start": 2391.09,
+      "end": 2402.09,
+      "text": "W Krakowie w Hype Parku 9 maja, w Gdyni w Uchu dzień później i w hybrydach w Warszawie 17 maja."
+    },
+    {
+      "start": 2402.61,
+      "end": 2421.07,
+      "text": "Ani trochę progresywny nie jest zespół Ghost. Ghost planowo gra rzeczy, które grali już inni od ABBY przez Blue Easter Couch, Kiss czy Europe, ale robi to dobrze, a w kategorii oprawa sceniczna nie ma chyba dziś sobie równych."
+    },
+    {
+      "start": 2421.29,
+      "end": 2444.85,
+      "text": "Trzeba to zobaczyć na własne oczy, bo w ramach trwającej właśnie trasy Skeletur Ghost wyciąga fanom z łapek telefony, żeby nie skupiali się na robieniu i rozpowszechnianiu słabych kopii tych wszystkich cudów, tylko chłonęli i przeżywali koncert i zanieśli go dalej w głowach i serduszkach."
+    },
+    {
+      "start": 2445.45,
+      "end": 2450.55,
+      "text": "Popieram, popieram taką praktykę. Mam nadzieję, że będzie się upowszechniać."
+    },
+    {
+      "start": 2451.25,
+      "end": 2459.25,
+      "text": "Ghost przyjeżdża z nowymi dekoracjami i w nowych przebraniach, bo wydał właśnie niedawno kolejny album zatytułowany Skeleta."
+    },
+    {
+      "start": 2459.93,
+      "end": 2465.59,
+      "text": "Przyjemnie się tego słucha, ale żeby zrozumieć fenomen Ghost trzeba iść na koncert."
+    },
+    {
+      "start": 2466.03,
+      "end": 2468.85,
+      "text": "10 maja w Łodzi do Atlas Areny."
+    },
+    {
+      "start": 2469.65,
+      "end": 2470.47,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2738.26,
+      "end": 2749.18,
+      "text": "Mini trasy o wdzięcznej nazwie Liturgia Zniszczenia grają w maju zespoły Obsidian Mantra, Waśń, Despised Cruelty, Define."
+    },
+    {
+      "start": 2750.32,
+      "end": 2761,
+      "text": "Z taką nazwą jak Waśń mam nadzieję, że zespół nie planuje międzynarodowej kariery, choć z drugiej strony, skoro mgła mogła, to czemu i Waśni miałoby się nie udać."
+    },
+    {
+      "start": 2762.14,
+      "end": 2775.18,
+      "text": "Liturgia Zniszczenia. 9 maja odbędzie się w Łączniku we Wrocławiu, 10 maja w Browarze Warkot w Łodzi i 11 maja w Motopubie w Białymstoku."
+    },
+    {
+      "start": 2776.56,
+      "end": 2790.08,
+      "text": "Mini festiwal zatytułowany Metal Vulture, to już siódma edycja, szanuję, odbędzie się w Skarżysku Kamiennej w Semaforze, a zagrają Terror Dome, Atonement, Sempra i Prosectorium."
+    },
+    {
+      "start": 2791.3,
+      "end": 2798.26,
+      "text": "10 maja, bo chyba o tym nie powiedziałem, 10 maja, Metal Vulture, Skarżysko Kamienna."
+    },
+    {
+      "start": 2798.72,
+      "end": 2804.28,
+      "text": "Dla fanów Black Death metalowego undergroundu szykuje się miły wieczór w Katowicach."
+    },
+    {
+      "start": 2805.2,
+      "end": 2810.08,
+      "text": "Wystąpią The Facement, Said Rian, Amalekim oraz Exekwie Sacro."
+    },
+    {
+      "start": 2810.88,
+      "end": 2814.84,
+      "text": "Wystąpią w piątym domu 12 maja."
+    },
+    {
+      "start": 2814.84,
+      "end": 2821.1,
+      "text": "Na dwa koncerty przyjeżdża belgijska maszyna do mielenia mięsa z kośćmi, a więc zespół Aborted."
+    },
+    {
+      "start": 2821.8,
+      "end": 2824.44,
+      "text": "Grają doskonałe koncerty, więc polecam."
+    },
+    {
+      "start": 2825.1,
+      "end": 2829.22,
+      "text": "Choć chyba niedawno ta trasa stanęła pod znakiem zapytania."
+    },
+    {
+      "start": 2829.76,
+      "end": 2835.86,
+      "text": "Ken Bedene, perkusista grupy, narobił jakiś świństw w sieci."
+    },
+    {
+      "start": 2836.32,
+      "end": 2843.78,
+      "text": "Na szczęście zespół natychmiast zareagował, wyrzucił go ze swoich szeregów, odciął się od niego"
+    },
+    {
+      "start": 2843.78,
+      "end": 2850.34,
+      "text": "i zaangażował Kevina Paradisa, człowieka, który bębni w bardzo wielu grupach."
+    },
+    {
+      "start": 2850.42,
+      "end": 2856.92,
+      "text": "Seven Gates, Fard Crown, Mitridatic, Benighted, Neoblowiskarius itd."
+    },
+    {
+      "start": 2857.92,
+      "end": 2866.06,
+      "text": "Bębni w tak wielu zespołach, bo potrafi to robić i poradzi sobie również z intensywnym, piekielnie intensywnym materiałem Aborted."
+    },
+    {
+      "start": 2866.74,
+      "end": 2877.14,
+      "text": "Duże emocje budzi też krypta, która towarzyszy im na tej trasie, bo to death metal grany przez dziewczyny z Brazylii i grany dobrze."
+    },
+    {
+      "start": 2877.84,
+      "end": 2886.36,
+      "text": "Wierzę jednak, chciałbym wierzyć, że jesteśmy coraz bliżej czasów, w których kobiety na metalowej scenie nie budzą ekscytacji samą swoją obecnością"
+    },
+    {
+      "start": 2886.36,
+      "end": 2890.38,
+      "text": "i oceniane są tylko ze względu na muzykę."
+    },
+    {
+      "start": 2890.72,
+      "end": 2897.3,
+      "text": "Z Aborted i Kryptą przyjeżdżają też The Zenith Passage, czyli techniczny death metal z Ameryki"
+    },
+    {
+      "start": 2897.3,
+      "end": 2903.38,
+      "text": "oraz Organectomy, czyli też death metal, ale z Nowej Zelandii"
+    },
+    {
+      "start": 2903.38,
+      "end": 2913.94,
+      "text": "i towarzystwo to wystąpi 13 maja w Warszawie w Proximie, 14 maja natomiast w Krakowie w Hype Parku."
+    },
+    {
+      "start": 2913.94,
+      "end": 2916.28,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3163.36,
+      "end": 3171.12,
+      "text": "Imprecation i Baksaksaksa przyjeżdżają do Katowic do Piątego Domu 14 maja."
+    },
+    {
+      "start": 3171.68,
+      "end": 3180.68,
+      "text": "Imprecation to diaboliczny death metal ze Stanów Zjednoczonych, natomiast Baksaksaksa to najczarniejszy, prymitywny black metal z Niemiec."
+    },
+    {
+      "start": 3181.28,
+      "end": 3188.46,
+      "text": "To legenda undergroundu, która właściwie nigdy z ciemnej, zimnej piwnicy łba nie wystawiła."
+    },
+    {
+      "start": 3188.56,
+      "end": 3195.46,
+      "text": "I dobrze, taka muzyka powinna tam pozostać, co oczywiście nie znaczy, że nie jest warta uwagi."
+    },
+    {
+      "start": 3195.6,
+      "end": 3203.92,
+      "text": "Jeżeli tylko będę mógł, to 14 maja w Katowicach stawię się, żeby to zobaczyć i usłyszeć."
+    },
+    {
+      "start": 3204.6,
+      "end": 3207.88,
+      "text": "Dune, postmetal, doom i progrog."
+    },
+    {
+      "start": 3208.52,
+      "end": 3211.7,
+      "text": "Niby z Wielkiej Brytanii, ale też trochę z Arrakis."
+    },
+    {
+      "start": 3211.7,
+      "end": 3215.72,
+      "text": "Dwa koncerty w Polsce, w Poznaniu pod Minogą."
+    },
+    {
+      "start": 3215.9,
+      "end": 3218.8,
+      "text": "14 maja w Warszawie, w klubie Voodoo."
+    },
+    {
+      "start": 3219.28,
+      "end": 3221.3,
+      "text": "15 maja."
+    },
+    {
+      "start": 3222.08,
+      "end": 3227.8,
+      "text": "Niemiecki zespół black metalowy Groza przyjeżdża do nas w towarzystwie Fertana."
+    },
+    {
+      "start": 3228.72,
+      "end": 3231.7,
+      "text": "Pretekst to Neri Dir, albo może Nadir."
+    },
+    {
+      "start": 3232.28,
+      "end": 3236.1,
+      "text": "Album Grozy wydany w ubiegłym roku."
+    },
+    {
+      "start": 3237.36,
+      "end": 3240.2,
+      "text": "Trzy koncerty w Poznaniu w dwóch progach."
+    },
+    {
+      "start": 3240.28,
+      "end": 3244.6,
+      "text": "15 maja, dzień później w Warszawie w Hydrozagadce."
+    },
+    {
+      "start": 3244.6,
+      "end": 3248.78,
+      "text": "A w Krakowie w kwadracie 17 maja."
+    },
+    {
+      "start": 4113.16,
+      "end": 4120.88,
+      "text": "Kolejny mały lokalny, ale bardzo ciekawie zapowiadający się festiwal nosi nazwę Hell and Fire."
+    },
+    {
+      "start": 4121.66,
+      "end": 4130.92,
+      "text": "Wystąpią Sempra, Sight of Sorrow, Snake Eyes, Gilotyna, Godslat, Mateo Colon oraz Soul Drone."
+    },
+    {
+      "start": 4131.8,
+      "end": 4137.58,
+      "text": "Hell and Fire odbędzie się 16 maja w kultowej chorzowskiej leśniczówce."
+    },
+    {
+      "start": 4137.58,
+      "end": 4151.34,
+      "text": "W Krakowie natomiast też 16 maja będzie miał miejsce koncert grup Kaliban in Hertz wake, Kabal Assemble the Chariots."
+    },
+    {
+      "start": 4152.02,
+      "end": 4155.46,
+      "text": "To dobry moment, żeby nauczyć się odróżniać Kaliban od Kabal."
+    },
+    {
+      "start": 4156.32,
+      "end": 4165.94,
+      "text": "No więc Kaliban to zasłużony, długowieczny już metalcore z Niemiec, a Kabal to deathcore z Danii, wciąż jeszcze na dorobku."
+    },
+    {
+      "start": 4165.94,
+      "end": 4177.88,
+      "text": "Oba zespoły mogą wam odbić nerki swoimi piosenkami, ale ciosy Kaliban są bardziej techniczne, a Kabal może trafić poniżej pasa."
+    },
+    {
+      "start": 4178.74,
+      "end": 4182.9,
+      "text": "I żeby nie być gołosłownym posłuchamy najpierw Kaliban, a potem Kabal."
+    },
+    {
+      "start": 4487.43,
+      "end": 4504.61,
+      "text": "Bardzo lubię krakowski klub Warsztat, jego skłotowy vibe i na pewno wybiorę się 16 maja na Serotonin Zero, Last Panance, Six Steps Forward oraz Stigma Mortis."
+    },
+    {
+      "start": 4506.41,
+      "end": 4517.29,
+      "text": "Chciałbym też, no ale skoro będę w warsztacie w Krakowie, to pewnie nie będzie mnie w Warszawie, kurczę jest dylemat, jeszcze nie wiem w takim razie co wybiorę, bo chciałbym, chciałbym pojechać do progresji na Godflesh."
+    },
+    {
+      "start": 4517.43,
+      "end": 4525.69,
+      "text": "Zawsze wspaniały, to wynalazcy i niedoścignieni mistrzowie pancernego, industrialnego metalu."
+    },
+    {
+      "start": 4526.03,
+      "end": 4547.19,
+      "text": "Kiedyś grali bardzo mało koncertów, bo Justin po prostu ich nie lubił, chyba też, a może przede wszystkim dlatego, że sprzęt w latach 90. nie pozwalał na osiągnięcie pożądanego efektu, czyli do zbliżenia się do tego zniszczenia, które Godflesh fundował nam w wersji studyjnej."
+    },
+    {
+      "start": 4547.19,
+      "end": 4556.81,
+      "text": "Teraz już koncertują chętnie, coraz częściej, również w Polsce i bardzo dobrze, bo jeszcze jesteśmy nienasyceni."
+    },
+    {
+      "start": 4557.85,
+      "end": 4573.21,
+      "text": "Soporty Godflesh 16 maja w progresji to Thao i Larmo, szczególnie Thao polecam w waszej pamięci, bo to autorzy mojej ulubionej ciężkiej polskiej płyty z ubiegłego roku, czyli Fading Backwards."
+    },
+    {
+      "start": 4576.95,
+      "end": 4577.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4577.95,
+      "end": 4578.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4578.95,
+      "end": 4579.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4579.95,
+      "end": 4580.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4580.95,
+      "end": 4581.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4581.95,
+      "end": 4582.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4582.95,
+      "end": 4583.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4583.95,
+      "end": 4584.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4584.95,
+      "end": 4585.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4585.95,
+      "end": 4586.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4586.95,
+      "end": 4587.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4587.95,
+      "end": 4588.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4588.95,
+      "end": 4589.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4589.95,
+      "end": 4590.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4590.95,
+      "end": 4591.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4591.95,
+      "end": 4592.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4592.95,
+      "end": 4593.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4593.95,
+      "end": 4594.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4594.95,
+      "end": 4595.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4595.95,
+      "end": 4596.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4596.95,
+      "end": 4597.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4597.95,
+      "end": 4598.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4598.95,
+      "end": 4599.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4599.95,
+      "end": 4600.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4600.95,
+      "end": 4601.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4601.95,
+      "end": 4602.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4602.95,
+      "end": 4603.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4603.95,
+      "end": 4604.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4604.95,
+      "end": 4605.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4605.95,
+      "end": 4606.95,
+      "text": "Soporty Godflesh?"
+    },
+    {
+      "start": 4606.95,
+      "end": 4611.11,
+      "text": "Wszelkie prawa zastrzeżone."
+    },
+    {
+      "start": 5432.84,
+      "end": 5461.8,
+      "text": "Piekło i kult rifu, a więc Doplord w trasie, w towarzystwie różnych zespołów w różnych miejscach, pojawiają się tam między innymi u boku Sanity Control, Astral Nomad Red, Scope, a więc Doplord proszę łapać na trasie, będą grali w różnych datach, w różnych miejscach, w Warszawie, Katowicach, Poznaniu, Krakowie i Wrocławiu."
+    },
+    {
+      "start": 5462.6,
+      "end": 5491.4,
+      "text": "W Gdańsku, 17 maja, w parlamencie, God is an astronaut oraz Joe Quayle, kolejny mini festiwal, zatytułowany 666 United Medal Fest, bardzo poważnie, zatytułowany, odbędzie się w Łęce Wielkiej, w Pałacu w Łęce Wielkiej, macie moją ciekawość, 17 maja."
+    },
+    {
+      "start": 5492.36,
+      "end": 5512.24,
+      "text": "Bardzo ciekawy, podziemny, ale godny skład, Pandemonium, legenda polskiego undergroundu i dalej Dumas, Torsary, Odium Humanii Generis, Dymna Łotwa, Godslat i Wasteness, 666 United Metal Fest w Łęce Wielkiej."
+    },
+    {
+      "start": 5512.24,
+      "end": 5525.22,
+      "text": "Z japońskiego baby metal, kiedyś głównie się śmiano, ale teraz trudno nie liczyć się z nimi jako z siłą, która zapełnia na całym świecie wielkie hale."
+    },
+    {
+      "start": 5526.06,
+      "end": 5546.5,
+      "text": "Przyznaję, nie rozumiem tego fenomenu, więc tym bardziej popędzę do Tauron Areny, daleko nie mam, żeby zobaczyć o co właściwie chodzi w tym kawaii metalu i czy to coś jest również propozycją dla pana w średnim wieku,"
+    },
+    {
+      "start": 5546.5,
+      "end": 5556.38,
+      "text": "który nie wychował się na anime imandze, tylko na bolku lolku i na komiksach o Kapitanie Klosie."
+    },
+    {
+      "start": 5557.02,
+      "end": 5566.36,
+      "text": "Z kronikarskiego obowiązku dodam, że baby metal to damskie trio, w skład którego wchodzą sumetal, moa metal i momometal."
+    },
+    {
+      "start": 5567.22,
+      "end": 5580.56,
+      "text": "Intryguje mnie też popi, która zaczęła jako internetowy fenomen, hyperpopowe dziwadło, czerpiące też, ale nie przede wszystkim, inspiracje z new metalu i black metalu."
+    },
+    {
+      "start": 5580.8,
+      "end": 5588.44,
+      "text": "I też nie traktowano jej na początku poważnie, ale wygląda na to, że to już się zmieniło, już teraz trzeba."
+    },
+    {
+      "start": 5589.02,
+      "end": 5608.5,
+      "text": "Ostatnia płyta popi, czyli Negative Spaces robi furorę, a koncertami artystka pewnie tylko umocni swoją pozycję i ona właśnie obok Bambi Thug wystąpi przed baby metal w Krakowie, w Tauron Arenie 19 maja."
+    },
+    {
+      "start": 5609.56,
+      "end": 5610.08,
+      "text": "KONIEC"
+    },
+    {
+      "start": 5808.52,
+      "end": 5816.54,
+      "text": "Ciemna black metalowa noc nadciąga nad Białystok 23 maja, konkretnie do Motopubu."
+    },
+    {
+      "start": 5817.3,
+      "end": 5824.88,
+      "text": "Wystąpi tam Arkona, oczywiście Polska, oraz Odium Humani Generis i konnik Rice Hall."
+    },
+    {
+      "start": 5825.88,
+      "end": 5830.46,
+      "text": "I bardzo chciałbym być na tym koncercie, bo będzie na plasterki, na plasterki."
+    },
+    {
+      "start": 5830.94,
+      "end": 5836.76,
+      "text": "Decapitated jeżdżą po Europie z trasą Infernal Bloodshed i podróżują w Nielada Towarzystwie,"
+    },
+    {
+      "start": 5836.76,
+      "end": 5840.04,
+      "text": "a więc Cryptopsy, Warbringer i Carnation."
+    },
+    {
+      "start": 5840.16,
+      "end": 5844.78,
+      "text": "I tu też nie będzie się brało jeńców, nie mam co do tego wątpliwości."
+    },
+    {
+      "start": 5845.54,
+      "end": 5848.58,
+      "text": "Bardzo się cieszę i nie mogę się doczekać tego koncertu,"
+    },
+    {
+      "start": 5848.68,
+      "end": 5853.82,
+      "text": "bo po raz pierwszy będę miał okazję zobaczyć Decapitated z nowym wokalistą,"
+    },
+    {
+      "start": 5854.58,
+      "end": 5856.82,
+      "text": "którym jest Finn Emily Bode."
+    },
+    {
+      "start": 5857.46,
+      "end": 5863.06,
+      "text": "Będę patrzył surowym ojcowskim okiem, słuchał surowym dziadkowym uchem."
+    },
+    {
+      "start": 5863.92,
+      "end": 5870.3,
+      "text": "Bo od tych wszystkich metalowych koncertów słuch mam bardziej stępiony niż wzrok."
+    },
+    {
+      "start": 5871.06,
+      "end": 5873.86,
+      "text": "Cryptopsy też zobaczę z przyjemnością."
+    },
+    {
+      "start": 5874.1,
+      "end": 5875.56,
+      "text": "Cryptopsy nigdy dość."
+    },
+    {
+      "start": 5876.24,
+      "end": 5881.28,
+      "text": "Kanadyjczycy to legenda death metalu, równie brutalnego co technicznego."
+    },
+    {
+      "start": 5882,
+      "end": 5891.82,
+      "text": "I pewnie będzie to set oparty w dużej mierze na płycie o płonącej Gomorze z 2023 roku."
+    },
+    {
+      "start": 5892.4,
+      "end": 5899.7,
+      "text": "Dwa koncerty ten zestaw, Decapitated Cryptopsy, Warbringer i Carnation zagra w Polsce."
+    },
+    {
+      "start": 5900.28,
+      "end": 5903.28,
+      "text": "W Krakowie w Hype Parku 23 maja."
+    },
+    {
+      "start": 5903.28,
+      "end": 5906.96,
+      "text": "Maja w Warszawie w Proximie 24."
+    },
+    {
+      "start": 6420.96,
+      "end": 6432.78,
+      "text": "Amerykanie z Paul Bear przywiozą nam całe tony melancholii, ciężaru i klasycznych rockowych riffów do Hydrozagadki, do Warszawy."
+    },
+    {
+      "start": 6432.78,
+      "end": 6444.74,
+      "text": "23 maja odbędzie się ten koncert. Metal Commando Fest, siódma edycja w klubie voodoo 23 i 24 maja."
+    },
+    {
+      "start": 6445.28,
+      "end": 6453.02,
+      "text": "Dwie bardzo ciemne, bardzo ciężkie noce. Podczas pierwszej z nich na Metal Commando Fest zaprezentują się"
+    },
+    {
+      "start": 6453.02,
+      "end": 6460.08,
+      "text": "Ani Madame Nata, In Twilight's Embrace, Hołd dla Magnus, Nightlord oraz Morath."
+    },
+    {
+      "start": 6460.94,
+      "end": 6471.36,
+      "text": "Natomiast dzień później Arkona, wciąż ta lepsza, polska, Stillborn, Fam, Necrofuck oraz Trwoga."
+    },
+    {
+      "start": 6472.12,
+      "end": 6476.98,
+      "text": "23, 24 maja, voodoo, Warszawa, Metal Commando."
+    },
+    {
+      "start": 6476.98,
+      "end": 6489.76,
+      "text": "Stąd Jesus oraz Polymoon zapraszają do Gdańska, do Drizzly Grizzly 28 maja oraz do Wrocławia, do Transformatora 29 maja."
+    },
+    {
+      "start": 6490.14,
+      "end": 6493.74,
+      "text": "A zakończymy nasze dzisiejsze spotkanie brutalnym akcentem."
+    },
+    {
+      "start": 6494.48,
+      "end": 6502.8,
+      "text": "Otóż kolumbijski, czy właściwie dzisiaj chyba amerykański Inquisition podróżuje po Europie w towarzystwie szwedzkiego Demonical."
+    },
+    {
+      "start": 6502.8,
+      "end": 6511.8,
+      "text": "We Wrocławiu, w Liverpoolu 30 maja i w Warszawie ten sam zestaw w klubie Odessa 31 maja."
+    },
+    {
+      "start": 6512.48,
+      "end": 6516.06,
+      "text": "Demonical to zespół założony przez byłych muzyków grupy Sentinex."
+    },
+    {
+      "start": 6516.82,
+      "end": 6521.28,
+      "text": "Zrobili to prawie 20 lat temu z poczuciem misji."
+    },
+    {
+      "start": 6521.88,
+      "end": 6525.34,
+      "text": "Trzeba dotrzeć do korzeni death metalu."
+    },
+    {
+      "start": 6526.4,
+      "end": 6539.44,
+      "text": "Starają się i nieźle im to wychodzi, czego dowiodę prezentując Państwu utwór Valcomen Untergang w wersji koncertowej,"
+    },
+    {
+      "start": 6540.02,
+      "end": 6546.34,
+      "text": "a więc zbliżonej do tego, czego możemy się spodziewać pod koniec maja na tych dwóch koncertach w Polsce."
+    },
+    {
+      "start": 6546.98,
+      "end": 6555.08,
+      "text": "Piosenkę zarejestrowano w Brazylii, wokalista śpiewa po szwedzku, język metalu to prawdziwe esperanto."
+    },
+    {
+      "start": 6555.08,
+      "end": 6556.86,
+      "text": "Dobranoc Państwu"
+    },
+    {
+      "start": 6556.86,
+      "end": 6574.78,
+      "text": "Dzień dobry"
+    }
+  ],
+  "stats": {
+    "windowCount": 12,
+    "transcribedAudioSec": 1356.93,
+    "segmentCount": 181,
+    "characterCount": 15082
+  },
+  "sourceId": "2025-04-30-zapowiedzi-mocnych-koncertow-w-maju-pierwsze-urodziny-ciezko"
+}
