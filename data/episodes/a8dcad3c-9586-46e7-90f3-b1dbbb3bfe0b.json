@@ -2,10 +2,61 @@
   "version": 1,
   "id": "a8dcad3c-9586-46e7-90f3-b1dbbb3bfe0b",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T07:25:56.027Z",
+  "updatedAt": "2026-11-06T09:43:51.752Z",
   "durationSec": 6890,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja stanowi drugą część subiektywnego zestawienia niedocenianych lub zapomnianych polskich grup muzycznych, które wywodzą się z dziedzictwa zespołu Kobąg. Prowadzący przybliża historię i twórczość takich formacji jak Nia, Neuma, Samo oraz Moja Adrenalina (później Semantic Punk). Program analizuje artystyczne sukcesy tych zespołów, ich powiązania z międzynarodowymi wytwórniami oraz przyczyny, dla których nie udało im się zbudować trwałej kariery. Audycja poświęcona jest subiektywnemu zestawieniu niedocenianych polskich zespołów grających muzykę ekstremalną i ciężką. Prowadzący przybliża historię i twórczość grupy Keta, zwracając uwagę na ich progresywny charakter oraz artystyczną oprawę wydawnictw. Następnie słuchacze poznają historię zespołu Kiński, jego kluczowych członków oraz wpływ na polską scenę niezależną. Fragment obejmuje również wspomnienie o projekcie Kostasa New Program oraz krakowskim zespole Flash World. Audycja stanowi podsumowanie zestawienia niedocenianych polskich kapel. Prowadzący przybliża twórczość zespołu Flash World, wspominając o ich ewolucji brzmieniowej oraz wartości wczesnych nagrań. W programie pojawia się utwór z EP-ki Like We're All Equal Again, która porusza tematykę wojny. Fragment kończy się pożegnaniem słuchaczy.",
+  "topics": [
+    {
+      "start": 3,
+      "end": 28,
+      "label": "Subiektywne zestawienie niedocenianych polskich grup postkobągowych"
+    },
+    {
+      "start": 39,
+      "end": 103,
+      "label": "Prezentacja twórczości grupy Keta"
+    },
+    {
+      "start": 103,
+      "end": 130,
+      "label": "Refleksje nad polską sceną metalową i zespół Kiński"
+    },
+    {
+      "start": 130,
+      "end": 140,
+      "label": "Projekt Kostas New Program"
+    },
+    {
+      "start": 140,
+      "end": 266,
+      "label": "Zespół Flash World"
+    },
+    {
+      "start": 359,
+      "end": 396,
+      "label": "Zespół Nia i jego międzynarodowe rozpoznanie"
+    },
+    {
+      "start": 605,
+      "end": 791,
+      "label": "Zespół Neuma i jego eksperymentalne brzmienie"
+    },
+    {
+      "start": 1856,
+      "end": 1858,
+      "label": "Zespół Samo i jego korzenie w ekstremalnej muzyce"
+    },
+    {
+      "start": 2946,
+      "end": 3383,
+      "label": "Moja Adrenalina i ewolucja w Semantic Punk"
+    },
+    {
+      "start": 6890,
+      "end": 6890,
+      "label": "Omówienie płyty wydanej przed 2020 rokiem"
+    }
+  ],
   "tags": [
     {
       "id": "fleshworld",
@@ -15,11 +66,23 @@
       "at": 6127
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "ketha",
       "label": "Ketha",
       "type": "artist",
       "source": "tracks",
       "at": 2388
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "neuma",
@@ -36,6 +99,13 @@
       "at": 28
     },
     {
+      "id": "samo",
+      "label": "Samo",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1858
+    },
+    {
       "id": "semantik-punk",
       "label": "Semantik Punk",
       "type": "artist",
@@ -46,12 +116,12 @@
   "tracks": [
     {
       "start": 28,
-      "end": 266,
+      "end": 39,
       "durationSec": 160,
       "artist": "Nyia",
       "title": "Everything's a Dream (Album)",
       "album": null,
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -59,7 +129,7 @@
     },
     {
       "start": 266,
-      "end": 396,
+      "end": 359,
       "durationSec": 91,
       "artist": "Nyia",
       "title": "World's Throat (Album)",
@@ -72,12 +142,12 @@
     },
     {
       "start": 396,
-      "end": 791,
+      "end": 605,
       "durationSec": 237,
       "artist": "Neuma",
       "title": "It's Time To Leave",
       "album": "Neuma Vol. 2 (Reedycja)",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -85,14 +155,28 @@
     },
     {
       "start": 791,
-      "end": 2185,
+      "end": 1856,
       "durationSec": 346,
       "artist": "Neuma",
       "title": "Vandor",
+      "album": "Szkice",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 1858,
+      "end": 2185,
+      "durationSec": 169,
+      "artist": "Samo",
+      "title": null,
       "album": null,
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
@@ -116,7 +200,7 @@
       "artist": "Ketha",
       "title": "No Heart",
       "album": "Magnaminus - EP",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -124,12 +208,12 @@
     },
     {
       "start": 2811,
-      "end": 3383,
+      "end": 2946,
       "durationSec": 430,
       "artist": "Ketha",
       "title": "Sloader",
-      "album": null,
-      "confidence": "średnia",
+      "album": "Nie Toleruje, Bije",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -142,7 +226,7 @@
       "artist": "Ketha",
       "title": "Kanati",
       "album": "Wendigo",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -167,14 +251,45 @@
       "durationSec": 448,
       "artist": "Fleshworld",
       "title": "Chant of Many Voices",
-      "album": null,
-      "confidence": "średnia",
+      "album": "Like We're All Equal Again",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 140,
+      "text": "A dzisiaj jeszcze pora na zespół z Krakowa, który hałasuje w mieście od 15 lat, nazywa się Flash World"
+    },
+    {
+      "start": 1115,
+      "text": "Ostatni album zespołu zatytułowany Szkice ukazał się całkiem niedawno, bo w 2020 roku"
+    },
+    {
+      "start": 2015,
+      "text": "Ale dzisiaj o Samo, a Samo prosi w utworze, który za chwilę zagram, żeby go nienawidzić"
+    },
+    {
+      "start": 6890,
+      "text": "by zaprezentować Państwu coś z ich epki Like We're All Equal Again, opowiadającej o wojnie z perspektywy zarówno ofiar, jak i oprawców."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": "mówił do Was i puszczał piosenki Jarek Szubrycht"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 6890,
+      "quote": "audycję wydawał Mariusz Owczarek"
+    }
+  ]
 }

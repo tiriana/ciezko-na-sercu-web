@@ -2,10 +2,56 @@
   "version": 1,
   "id": "045c81c6-38e7-432e-85eb-a2c7afb64133",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T07:25:56.028Z",
+  "updatedAt": "2026-11-06T09:43:51.753Z",
   "durationSec": 6895,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja poświęcona jest wymagającej, eksperymentalnej i niszowej muzyce, która często wymyka się jednoznacznym klasyfikacjom gatunkowym. Jarek Szubrycht prezentuje polskie zespoły, które ze względu na swoją złożoność lub nietypowe brzmienie nie zdobyły szerokiej popularności. W programie pojawiają się wspomnienia o wybitnych muzykach, takich jak perkusista Gerard Niemczyk, oraz historie grup takich jak Atrocious Filth, Atrofia Red Sun, Blast Muzungu czy BNNT. Autor skupia się na artystach grających na granicy metalu, post-jazzu i eksperymentu. Audycja poświęcona jest wymagającej i eksperymentalnej muzyce ciężkiej. Prowadzący przybliża fenomen projektu BNNT oraz jego wariacje albumowe Multiverse realizowane przez różnych artystów. Następnie prezentuje postmetalowe i psychodeliczne brzmienia zespołu ARRM z Arturem Rumińskim w składzie. Fragment obejmuje również historię projektu Seagulls Insane and Swans Deceased Mining Out the Void, będącego kolaboracją muzyków związanych z Furią i Blinded.",
+  "topics": [
+    {
+      "start": 0,
+      "end": 7,
+      "label": "Prezentacja wymagającej i niszowej muzyki"
+    },
+    {
+      "start": 7,
+      "end": 12,
+      "label": "Zespół Atrocious Filth i postać Gerarda Niemczyka"
+    },
+    {
+      "start": 20,
+      "end": 30,
+      "label": "Historia i ewolucja zespołu Atrofia Red Sun"
+    },
+    {
+      "start": 30,
+      "end": 37,
+      "label": "Projekt Blast Muzungu i polska scena eksperymentalna"
+    },
+    {
+      "start": 37,
+      "end": 58,
+      "label": "Zespół BNNT i ich nietypowe podejście do brzmienia"
+    },
+    {
+      "start": 58,
+      "end": 122,
+      "label": "Projekt BNNT i wariacje albumu Multiverse"
+    },
+    {
+      "start": 122,
+      "end": 123,
+      "label": "Wpływ zespołu Kobong na współczesną scenę"
+    },
+    {
+      "start": 123,
+      "end": 136,
+      "label": "Zespół ARRM i postmetalowe brzmienia"
+    },
+    {
+      "start": 136,
+      "end": 505,
+      "label": "Projekt Seagulls Insane and Swans Deceased Mining Out the Void"
+    }
+  ],
   "tags": [
     {
       "id": "arrm",
@@ -29,6 +75,18 @@
       "at": 2444
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "seagulls-insane-and-swans-deceased-mining-out-the-void",
       "label": "Seagulls Insane and Swans Deceased Mining out the Void",
       "type": "artist",
@@ -39,14 +97,15 @@
   "tracks": [
     {
       "start": 12,
-      "end": 505,
+      "end": 20,
       "durationSec": 303,
       "artist": "Atrocious Filth",
       "title": "Moans",
       "album": "Moans - EP",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -103,6 +162,24 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 7,
+      "text": "Powitała nas olsztyńska grupa Atrocious Filth, utworem zatytułowanym Mons, pochodzącym z Epki, o tym samym tytule z 2016 roku."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 5,
+      "quote": "Dobry wieczór Państwu, kłania się Jarek Szubrycht."
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 5,
+      "quote": "Jej wydawcą jest Mariusz Owczarek"
+    }
+  ]
 }

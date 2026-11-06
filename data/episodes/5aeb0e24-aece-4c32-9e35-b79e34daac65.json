@@ -2,10 +2,71 @@
   "version": 1,
   "id": "5aeb0e24-aece-4c32-9e35-b79e34daac65",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T07:25:56.029Z",
+  "updatedAt": "2026-11-06T09:43:51.755Z",
   "durationSec": 6863,
-  "summary": "",
-  "topics": [],
+  "summary": "Przegląd październikowych koncertów otwiera trasa Martwej Aury promująca płytę „Lament”, w towarzystwie Towards Hellfire i Annihilation Vortex, oraz objazd The Materii po Polsce. Zapowiedziano też wspólną trasę Odry, Lasu Trumien i Odium, promującą split „Breslau Splin”, z koncertami w Krakowie, Rzeszowie, Wrocławiu, Katowicach, Łodzi i Warszawie. Gościem audycji był Wojtek Kałuża, wokalista Lasu Trumien, Mentor, Pure Bedlam i Grieving, który opowiadał o pracy nad splitem, tekstach opartych na prawdziwych zbrodniach, scenicznym kostiumie i czarnym humorze jako formie higieny psychicznej. Mówił również o odświeżeniu setlisty Lasu Trumien, o organizowaniu koncertów pod szyldem Happy Dying Productions oraz o pracy przy Metalmanii i Mystic Festiwalu, wraz z anegdotą o rajderze Poison The Well i talerzu krewetek. W drugiej części omówiono kalendarz występów, m.in. Acid Drinkers na Torwarze, Testament, Obituary i Destruction we Wrocławiu, W.A.S.P., Fields of the Nephilim, 40-lecie Halloween oraz Metal Commando Fest. Podkreślono też, że publiczność muzyki metalowej rośnie i wyraźnie się odmładza.",
+  "topics": [
+    {
+      "start": 337,
+      "end": 409,
+      "label": "Martwa Aura promuje płytę Lament na trasie"
+    },
+    {
+      "start": 409,
+      "end": 444,
+      "label": "Trasa The Materii po Polsce"
+    },
+    {
+      "start": 703,
+      "end": 747,
+      "label": "Split Breslau Splin i wspólna trasa z Odium"
+    },
+    {
+      "start": 1115,
+      "end": 1463,
+      "label": "Wojtek Kałuża o powstawaniu splitu z Odrą"
+    },
+    {
+      "start": 1463,
+      "end": 2052,
+      "label": "Odświeżona setlista koncertowa Lasu Trumien"
+    },
+    {
+      "start": 2052,
+      "end": 2229,
+      "label": "Różnorodność projektów wokalisty i wzór Mike'a Pattona"
+    },
+    {
+      "start": 2229,
+      "end": 2380,
+      "label": "Sceniczny performance i czarny humor w tekstach"
+    },
+    {
+      "start": 2380,
+      "end": 2727,
+      "label": "Warsztat pisania tekstów i kolekcjonowanie tytułów"
+    },
+    {
+      "start": 3013,
+      "end": 3608,
+      "label": "Organizacja koncertów, Metalmania i Mystic Festival"
+    },
+    {
+      "start": 3608,
+      "end": 3969,
+      "label": "Anegdota o rajderze Poison The Well i krewetkach"
+    },
+    {
+      "start": 4084,
+      "end": 4267,
+      "label": "Kalendarz koncertów: Acid Drinkers, Testament, W.A.S.P."
+    },
+    {
+      "start": 5740,
+      "end": 5957,
+      "label": "Fields of the Nephilim i Metal Commando Fest"
+    }
+  ],
   "tags": [
     {
       "id": "las-trumien",
@@ -74,7 +135,7 @@
   "tracks": [
     {
       "start": 13,
-      "end": 444,
+      "end": 337,
       "durationSec": 326,
       "artist": "Martwa Aura",
       "title": "Lament Piaty",
@@ -87,7 +148,7 @@
     },
     {
       "start": 444,
-      "end": 747,
+      "end": 703,
       "durationSec": 260,
       "artist": "The Materia",
       "title": "Declaration of Hate",
@@ -100,7 +161,7 @@
     },
     {
       "start": 747,
-      "end": 2727,
+      "end": 1115,
       "durationSec": 369,
       "artist": "Las Trumien",
       "title": "Gwóźdź w głowie",
@@ -113,7 +174,7 @@
     },
     {
       "start": 2727,
-      "end": 3969,
+      "end": 3013,
       "durationSec": 288,
       "artist": "Mentor",
       "title": "Night of the Satanic Werewolves",
@@ -126,7 +187,7 @@
     },
     {
       "start": 3969,
-      "end": 4267,
+      "end": 4084,
       "durationSec": 117,
       "artist": "Las Trumien",
       "title": "Trupie rozmówki",
@@ -165,7 +226,7 @@
     },
     {
       "start": 5530,
-      "end": 5957,
+      "end": 5740,
       "durationSec": 212,
       "artist": "Volbeat",
       "title": "In the Barn of the Goat Giving Birth to Satan’s Spawn in a Dying World of Doom",
