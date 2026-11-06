@@ -1,0 +1,945 @@
+{
+  "version": 1,
+  "episodeId": "57355569-d702-4446-ba75-69526f5cdc70",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109174244,
+  "fileMtimeMs": 1789151117757.0916,
+  "windows": [
+    {
+      "index": 0,
+      "start": 1.44,
+      "end": 7.32
+    },
+    {
+      "index": 1,
+      "start": 140.36,
+      "end": 267.68
+    },
+    {
+      "index": 2,
+      "start": 459.75,
+      "end": 515.84
+    },
+    {
+      "index": 3,
+      "start": 703.97,
+      "end": 817.63
+    },
+    {
+      "index": 4,
+      "start": 1144.9,
+      "end": 1199.23
+    },
+    {
+      "index": 5,
+      "start": 1344.58,
+      "end": 1361.95
+    },
+    {
+      "index": 6,
+      "start": 1436.77,
+      "end": 1482.94
+    },
+    {
+      "index": 7,
+      "start": 1643.52,
+      "end": 1709.28
+    },
+    {
+      "index": 8,
+      "start": 1909.38,
+      "end": 1994.88
+    },
+    {
+      "index": 9,
+      "start": 2426.12,
+      "end": 2494.81
+    },
+    {
+      "index": 10,
+      "start": 2729.76,
+      "end": 2820.41
+    },
+    {
+      "index": 11,
+      "start": 3105.06,
+      "end": 3231.93
+    },
+    {
+      "index": 12,
+      "start": 3509.25,
+      "end": 3566.88
+    },
+    {
+      "index": 13,
+      "start": 3765.64,
+      "end": 3832.16
+    },
+    {
+      "index": 14,
+      "start": 4083.56,
+      "end": 4214.2
+    },
+    {
+      "index": 15,
+      "start": 4412.48,
+      "end": 4484.48
+    },
+    {
+      "index": 16,
+      "start": 4866.31,
+      "end": 4922.43
+    },
+    {
+      "index": 17,
+      "start": 5210.66,
+      "end": 5241.66
+    },
+    {
+      "index": 18,
+      "start": 5576.84,
+      "end": 5660.57
+    },
+    {
+      "index": 19,
+      "start": 6011.65,
+      "end": 6079.58
+    },
+    {
+      "index": 20,
+      "start": 6372.04,
+      "end": 6440.28
+    }
+  ],
+  "segments": [
+    {
+      "start": 1.44,
+      "end": 5.02,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 141.3,
+      "end": 144.88,
+      "text": "Powitał Państwa Slayer serdecznymi pozdrowieniami."
+    },
+    {
+      "start": 145.62,
+      "end": 153.04,
+      "text": "Witam i ja, nazywam się Jarek Szubrycht, prowadzę dla Was od roku audycję Ciężko na sercu i dobrze Wam tak."
+    },
+    {
+      "start": 153.88,
+      "end": 159.72,
+      "text": "Wydawcą audycji jest Mariusz Owczarek, słuchacie Trójki, od kilku minut mamy środę."
+    },
+    {
+      "start": 160.52,
+      "end": 169.16,
+      "text": "Powitał Państwa Slayer, ale piosenką nie swoją, tylko kowerem grupy Verbal Abuse, hardkorowej legendy z Teksasu."
+    },
+    {
+      "start": 169.16,
+      "end": 183.24,
+      "text": "To nie przypadek. Kilka dni temu kolega Łukasz zaproponował na łamach Knockout Zin listę bodaj dwunastu najlepszych jego zdaniem metalowych wersji, zupełnie niemetalowych utworów."
+    },
+    {
+      "start": 183.96,
+      "end": 192.38,
+      "text": "Jego wybór znajduje kontrowersyjnym, tylko w kilku punktach się zgadzamy, ale to naturalne, każdy ma swój gust."
+    },
+    {
+      "start": 192.74,
+      "end": 209.28,
+      "text": "Wdzięczny jednak jestem Łukaszowi za tę iskierkę inspiracji, bo zacząłem się oczywiście zastanawiać, jakie piosenki znalazłyby się na mojej liście i z tego dumania wzięła się dzisiejsza audycja."
+    },
+    {
+      "start": 209.94,
+      "end": 219.64,
+      "text": "Zastrzegam od razu, że odrzuciłem kowery śmieszkowe, nienawidzę tych wygłupów bez próby zrozumienia oryginału, tej żenującej kalkulacji."
+    },
+    {
+      "start": 220.14,
+      "end": 228.94,
+      "text": "Hej, dołóżmy ciężkie gitary do refrenu, który wszyscy znają z radia, więc będą śpiewać pod sceną i pląsać wściekle."
+    },
+    {
+      "start": 228.94,
+      "end": 237.84,
+      "text": "Kiedyś ukazywały się całe takie składanki power metalowcy z Niemiec i Skandynawii, grający na przykład ABBE."
+    },
+    {
+      "start": 238.44,
+      "end": 243.56,
+      "text": "Jedna wersja gorsza była od drugiej, wolałbym o tym nie pamiętać."
+    },
+    {
+      "start": 244.62,
+      "end": 250.4,
+      "text": "Acid Drinkers z Fish Dicków, rzetelna robota, ale też nie dla mnie."
+    },
+    {
+      "start": 251.4,
+      "end": 260.04,
+      "text": "Six Feet Under, grający robione na kolanie death metalowe kowery rockowej klasyki, tego dzisiaj też nie usłyszycie."
+    },
+    {
+      "start": 260.18,
+      "end": 265.92,
+      "text": "Usłyszycie za to Slayera po raz drugi i na gada Dawida, baby."
+    },
+    {
+      "start": 460.61,
+      "end": 466.93,
+      "text": "Grał Slayer, ale piosenkę napisał i jako pierwszy nagrał pod koniec lat 60. zespół Iron Butterfly."
+    },
+    {
+      "start": 467.49,
+      "end": 477.45,
+      "text": "Tytuł jest fonetycznym zniekształceniem słów In a Garden of Eden, czyli w rajskim ogrodzie, no jak to przy piosenkach Slayera."
+    },
+    {
+      "start": 478.45,
+      "end": 485.55,
+      "text": "I wierzę, że takie wybrałem dzisiaj dla Was utwory, że nie raz jeszcze poczujecie się jak w raju."
+    },
+    {
+      "start": 485.55,
+      "end": 490.39,
+      "text": "Żeby nie być gołosłownym, posłuchajmy Diamonds and Rust."
+    },
+    {
+      "start": 491.23,
+      "end": 500.93,
+      "text": "Judas Priest zrobili to tak dobrze, że kiedy już poznałem wersję oryginalną, a więc John Bass, nie mogłem się do niej przyzwyczaić."
+    },
+    {
+      "start": 501.67,
+      "end": 512.85,
+      "text": "Utworem tym John rozliczyła się z Bobem Dylanem i ich romantyczną relacją, o czym przypomniał nam niedawno film kompletnie nieznany."
+    },
+    {
+      "start": 515.55,
+      "end": 515.81,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 703.97,
+      "end": 724.99,
+      "text": "Skoro już o Bobie mowa, najczęściej kowerowanym twórcą muzyki popularnej jest chyba właśnie Bob Dylan. W latach 60. i 70., kiedy tylko wypuszczał nowy numer, natychmiast rzucały się na niego sępy, czasem bardzo utalentowane sępy, by nagrać swoją wersję."
+    },
+    {
+      "start": 724.99,
+      "end": 743.75,
+      "text": "I bywało, że te przeróbki robione niemal w czasie rzeczywistym pieły się na listach przebojów wyżej jeszcze niż oryginały, więc wytwórnia płytowa wymyśliła slogan Nobody Sings Dylan Like Dylan, nikt nie śpiewa Dylana lepiej od Dylana."
+    },
+    {
+      "start": 743.75,
+      "end": 752.53,
+      "text": "Oczywiście trudno się nie zgodzić. Wymyślono to hasło, żeby przypomnieć fanom, że lepiej pić ze źródełka."
+    },
+    {
+      "start": 753.31,
+      "end": 769.69,
+      "text": "Metalowcy oczywiście też Boba nie oszczędzili. Na przykład Entompt przerobił Ballad of Hollis Brown, Candlemas All Along the Watchtower, chociaż nie jestem pewien, czy Candlemas przerabiali tutaj Dylana, czy też Hendricksa przerabiającego Dylana."
+    },
+    {
+      "start": 769.69,
+      "end": 790.77,
+      "text": "I są to bardzo dobre wersje, szczególnie druga z nich. Ja jednak proponuję coś innego. Ministry w 1996 roku pięknie zmasakrowali Lady Lay, zupełnie pozbawiając ten utwór romantyzmu."
+    },
+    {
+      "start": 790.77,
+      "end": 805.35,
+      "text": "Znamy tę wersję z płyty Filth Pig, która ukazała się po superpopularnym psalmie i w związku z tym, że nie była do niego za bardzo podobna, wszyscy narzekali."
+    },
+    {
+      "start": 806.25,
+      "end": 815.63,
+      "text": "Dzisiaj już wiemy, że niesłusznie historia przyznała ministry rację. To zupełnie inny zespół, ale niezmiennie świetny."
+    },
+    {
+      "start": 815.63,
+      "end": 817.63,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1145.68,
+      "end": 1150.02,
+      "text": "Skoro był Bob Dylan, to zróbmy też miejsce Neilowi Youngowi."
+    },
+    {
+      "start": 1150.66,
+      "end": 1155.02,
+      "text": "Nie aż tak popularny, szczególnie po tej stronie Atlantyku."
+    },
+    {
+      "start": 1155.98,
+      "end": 1160.32,
+      "text": "Chyba nie aż tak genialny, bo piszący i prostsze teksty, i łatwiejsze piosenki"
+    },
+    {
+      "start": 1160.32,
+      "end": 1164.98,
+      "text": "jest ponad wszelką wątpliwość artystą wybitnym."
+    },
+    {
+      "start": 1165.96,
+      "end": 1171.8,
+      "text": "Weźmy chociażby pieśń o igle i poczynionych przez nią szkodach."
+    },
+    {
+      "start": 1171.8,
+      "end": 1174.28,
+      "text": "The Needle and the Damage Done."
+    },
+    {
+      "start": 1174.76,
+      "end": 1180.54,
+      "text": "To ponura opowieść o nałogu heroinowym, który zabił Youngowi kilku przyjaciół,"
+    },
+    {
+      "start": 1180.64,
+      "end": 1185.5,
+      "text": "w tym Daniego Wittena, gitarzystę zespołu Crazy Horse,"
+    },
+    {
+      "start": 1185.78,
+      "end": 1189.14,
+      "text": "zespołu, który towarzyszył Neilowi Youngowi w tamtym czasie."
+    },
+    {
+      "start": 1190.48,
+      "end": 1197.72,
+      "text": "Utworu The Needle and the Damage Done posłuchamy w wersji autorstwa grindowej grupy Cloud Red."
+    },
+    {
+      "start": 1344.58,
+      "end": 1352.34,
+      "text": "Skoro o grindzie mowa, miejmy to już za sobą, bo oczywiście nie mogłem odmówić sobie i wam tej przyjemności."
+    },
+    {
+      "start": 1352.94,
+      "end": 1359.5,
+      "text": "Naipon Death. Krótko i na temat mówią Nackom, gdzie ich miejsce, cytując Dead Kennedys."
+    },
+    {
+      "start": 1436.77,
+      "end": 1444.75,
+      "text": "Punk i hardcore to w sumie bliscy krewni metalu, więc dość tego to zbyt łatwe."
+    },
+    {
+      "start": 1445.31,
+      "end": 1450.65,
+      "text": "Poszukajmy coverów piosenek, których w wersji metalowej nikt nie byłby sobie w stanie wyobrazić,"
+    },
+    {
+      "start": 1451.09,
+      "end": 1457.91,
+      "text": "dopóki ich nie zrobiono, a dzisiaj trudno uwierzyć, że nie były wymyślone jako metalowe."
+    },
+    {
+      "start": 1458.25,
+      "end": 1460.17,
+      "text": "Choćby takie got the time."
+    },
+    {
+      "start": 1460.93,
+      "end": 1471.25,
+      "text": "Antrax zrobił z tego swój numer, obecnie obowiązkowy na każdym koncercie i pod sceną dzieją się wtedy rzeczy epickie."
+    },
+    {
+      "start": 1471.97,
+      "end": 1481.01,
+      "text": "Oryginał George Xona, o dziwo, jest też bardzo dziarski, choć oczywiście zupełnie nietraszowy, ale warto sprawdzić."
+    },
+    {
+      "start": 1644.22,
+      "end": 1647.68,
+      "text": "Celtic Frost to był przedziwny zespół."
+    },
+    {
+      "start": 1648.4,
+      "end": 1653.42,
+      "text": "Z jednej strony szaleńczo wręcz odważny, rewolucyjny,"
+    },
+    {
+      "start": 1653.52,
+      "end": 1657.06,
+      "text": "wytyczający nowe szlaki dla muzyki ekstremalnej."
+    },
+    {
+      "start": 1657.58,
+      "end": 1661.62,
+      "text": "Samodzielnie wymyślił z pięć jej podgatunków."
+    },
+    {
+      "start": 1662.28,
+      "end": 1665.14,
+      "text": "Z drugiej strony zespół popełniający błędy,"
+    },
+    {
+      "start": 1665.24,
+      "end": 1668.56,
+      "text": "czasem wręcz potykający się o własne nogi,"
+    },
+    {
+      "start": 1668.56,
+      "end": 1673.16,
+      "text": "ale być może taki jest właśnie los wynalazców."
+    },
+    {
+      "start": 1673.52,
+      "end": 1676.76,
+      "text": "I kiedy się eksperymentuje, to się błądzi."
+    },
+    {
+      "start": 1677.52,
+      "end": 1681.12,
+      "text": "Nie wiem w sumie do której z tych kategorii zaliczyć pomysł"
+    },
+    {
+      "start": 1681.12,
+      "end": 1683.76,
+      "text": "z otwarciem albumu,"
+    },
+    {
+      "start": 1684.08,
+      "end": 1687.18,
+      "text": "kowerem nowofalowej grupy Wall of Voodoo."
+    },
+    {
+      "start": 1688.46,
+      "end": 1691.7,
+      "text": "Utworem, który niespecjalnie pasował do reszty materiału,"
+    },
+    {
+      "start": 1691.76,
+      "end": 1696.04,
+      "text": "czyli do znakomitej skądinąd płyty Into the Pandemonium."
+    },
+    {
+      "start": 1696.04,
+      "end": 1702.78,
+      "text": "No ale zarazem teraz trudno sobie wyobrazić ten album bez niego."
+    },
+    {
+      "start": 1703.46,
+      "end": 1707.84,
+      "text": "Słuchacie trójki, ale przez chwilę posłuchacie też meksykańskiego radia."
+    },
+    {
+      "start": 1910.22,
+      "end": 1915.02,
+      "text": "Pozostajemy w Szwajcarii w kręgu zbliżonym do Celtic Frost."
+    },
+    {
+      "start": 1915.68,
+      "end": 1923.28,
+      "text": "Tak bardzo zbliżonym, że techniczni Celtic Frost postanowili pewnego dnia razem pograć"
+    },
+    {
+      "start": 1923.28,
+      "end": 1927.62,
+      "text": "i owocem tego pomysłu był zespół Koroner."
+    },
+    {
+      "start": 1927.62,
+      "end": 1932.94,
+      "text": "Na pierwszych płytach ciekawy, na ostatnich wybitny."
+    },
+    {
+      "start": 1933.64,
+      "end": 1939.6,
+      "text": "Posłuchamy utworu, który zamyka przedostatni album grupy, czyli Mental Vortex."
+    },
+    {
+      "start": 1940.3,
+      "end": 1944.82,
+      "text": "A rzecz to z repertuaru Beatlesów, więc nie byle jaka."
+    },
+    {
+      "start": 1945.48,
+      "end": 1947.58,
+      "text": "I Want You, She's So Heavy."
+    },
+    {
+      "start": 1947.58,
+      "end": 1955.58,
+      "text": "To oczywiście nie jedyny utwór autorstwa czwórki z Liverpoolu, który nosi w sobie metalowy potencjał."
+    },
+    {
+      "start": 1957.1,
+      "end": 1962.5,
+      "text": "Są tacy, co twierdzą, że Beatlesi wymyślili wszystkie gatunki muzyki popularnej,"
+    },
+    {
+      "start": 1962.58,
+      "end": 1963.54,
+      "text": "a więc i metal też."
+    },
+    {
+      "start": 1964.2,
+      "end": 1969.3,
+      "text": "I tu wskazują przede wszystkim jako dowód utwór Helter Skelter."
+    },
+    {
+      "start": 1970.08,
+      "end": 1975.98,
+      "text": "Niesławny, bo rzekomo inspirował Charlesa Mansona do tych jego zbrodni."
+    },
+    {
+      "start": 1976.7,
+      "end": 1982.68,
+      "text": "A co za tym idzie, nie tylko chyba ze względów muzycznych doczekał się ciężkich przeróbek,"
+    },
+    {
+      "start": 1983.16,
+      "end": 1986.56,
+      "text": "więc jeszcze na pewno go w tej audycji usłyszycie."
+    },
+    {
+      "start": 1986.56,
+      "end": 1990.44,
+      "text": "Ale nie dziś, bo dziś koroner z przeróbką"
+    },
+    {
+      "start": 1990.44,
+      "end": 1992.88,
+      "text": "I Want You, She's So Heavy."
+    },
+    {
+      "start": 1992.88,
+      "end": 1994.88,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2426.12,
+      "end": 2436.66,
+      "text": "Sepultura zawsze dobrze radziła sobie z coverami, zarówno z ich doborem, bo to połowa sukcesu, jak i z opracowaniem."
+    },
+    {
+      "start": 2437.16,
+      "end": 2447.88,
+      "text": "Długo wahałem się, przyznaję, czy puścić dzisiaj Państwu ich wersję Bullet the Blue Sky U2 czy The Hunt New Model Army."
+    },
+    {
+      "start": 2448.8,
+      "end": 2459.92,
+      "text": "I prawdę mówiąc, chyba wolę wersję Bullet sepultury od oryginału, a w przypadku New Model Army nic oryginałów nie przebije, nikt nie zaśpiewa tego lepiej od Justina."
+    },
+    {
+      "start": 2459.92,
+      "end": 2475.18,
+      "text": "Ale mimo to puszczę The Hunt jako wspomnienie szoku, jakim dla wielu fanów metalu było odkrycie, że ten znakomity numer z Chaos AD nie jest autorską kompozycją Brazylijczyków."
+    },
+    {
+      "start": 2476,
+      "end": 2492.8,
+      "text": "Sądzę, jestem przekonany wręcz, że New Model Army zyskali wtedy spory zastęp nowych fanów i kto wie, czy właśnie nie dlatego do dziś pojawiają się na metalowych festiwalach i witani są jak u siebie w domu."
+    },
+    {
+      "start": 2729.76,
+      "end": 2749.9,
+      "text": "Taipą negatyw byli mistrzami coverów, tym swoim ponurym, przydymionym brzmieniem i głosem Petera Steele'a oczywiście umieli zawłaszczyć każdy utwór, nawet taki, który wydawał się nierozerwalnie zrośnięty z oryginalnym albo z kanonicznym wykonaniem."
+    },
+    {
+      "start": 2750.56,
+      "end": 2769.06,
+      "text": "Weźmy takie Hey Pete, czyli wariacje na temat Hey Joe, która po Hendrixie nie miała prawa się udać, a jednak było więc z czego wybierać, ale nawet przez chwilę nie miałem wątpliwości, co dzisiaj w audycji puścić."
+    },
+    {
+      "start": 2769.28,
+      "end": 2780.2,
+      "text": "Summer Breeze, piosenka autorstwa duetu Seals and Crofts, to wybór nieoczywisty, nie mój wybór, tylko typo negatyw."
+    },
+    {
+      "start": 2780.56,
+      "end": 2793.54,
+      "text": "Kto nie zna hippisowskiego, folkrockowego oryginału, polecam sprawdzić, szczególnie jeśli lubią Państwo duet Simon and Garfunkel albo takich Doobie Brothers."
+    },
+    {
+      "start": 2793.54,
+      "end": 2804.48,
+      "text": "No i typo negatyw, ci ponuracy, rozpływający się nad zaletami spokojnego letniego popołudnia, czy to się może udać?"
+    },
+    {
+      "start": 2805.16,
+      "end": 2805.94,
+      "text": "Jeszcze jak."
+    },
+    {
+      "start": 2806.6,
+      "end": 2818.78,
+      "text": "Moim zdaniem to tu kontrowersyjna opinia, najmocniejszy punkt Bloody Kisses, najbardziej popularnej, ale moim zdaniem najmniej udanej płyty typu negatyw."
+    },
+    {
+      "start": 3105.06,
+      "end": 3113.66,
+      "text": "Uwaga, teraz będę wyznawał miłość. Otóż kocham dwa pierwsze albumy Life of Agony."
+    },
+    {
+      "start": 3114.8,
+      "end": 3123.7,
+      "text": "Również za to, jak znakomicie udało się na nich uchwycić rozwój dręczonego osobistymi demonami młodzieńca."
+    },
+    {
+      "start": 3124.12,
+      "end": 3136.4,
+      "text": "Debiut, czyli River Runs Red, to późny wiek nastoletni, wciąż jeszcze spędzany w rodzinnym domu, choć z problemami, które już niekoniecznie się w nim mieszczą."
+    },
+    {
+      "start": 3137.38,
+      "end": 3146.8,
+      "text": "Młodsza o dwa lata płyta Ugly, wydana w 1995 roku, to już wejście w dorosłość i zagubienie się w niej."
+    },
+    {
+      "start": 3147.16,
+      "end": 3158.68,
+      "text": "Świetny album, który niestety nie został dobrze przyjęty, kiepsko się sprzedał i w ogóle był początkiem końca krótkiego pasma sukcesów Life of Agony,"
+    },
+    {
+      "start": 3159.56,
+      "end": 3166.26,
+      "text": "ale ja i tak kocham również za zamykającą go przeróbkę utworu szkockiej grupy Simple Minds."
+    },
+    {
+      "start": 3177.16,
+      "end": 3207.14,
+      "text": "Dzięki za oglądanie!"
+    },
+    {
+      "start": 3207.16,
+      "end": 3209.16,
+      "text": "Dzięki za oglądanie!"
+    },
+    {
+      "start": 3509.25,
+      "end": 3529.23,
+      "text": "Death metalu dzisiaj niewiele, bo death metal żywi się przede wszystkim innymi gatunkami metalu, a więc nie spełnia wyjściowych kryteriów, które przyjąłem poszukując utworów do tej audycji, choć oczywiście od tej reguły są wyjątki."
+    },
+    {
+      "start": 3529.23,
+      "end": 3545.97,
+      "text": "I takim wyjątkiem i przykładem, że można inaczej jest niderlandzki zespół Gorefest, który w 1993 roku zaskoczył wszystkich nierównym bojem z piosenką Autobahn, grupy Kraftwerk."
+    },
+    {
+      "start": 3547.05,
+      "end": 3557.13,
+      "text": "Nie jest to moim zdaniem wersja udana, ale trzeba przyznać, że Kraftwerk dla zespołów gitarowych to trudny orzech do zgryzienia."
+    },
+    {
+      "start": 3557.13,
+      "end": 3564.69,
+      "text": "Tak czy owak zapraszam Państwa do przejażdżki tą autostradą, choć ostrzegam, że jest wyboista."
+    },
+    {
+      "start": 3765.64,
+      "end": 3776.42,
+      "text": "Kto pamięta przełom lat osiemdziesiątych i dziewięćdziesiątych, ten doskonale wie, że na ulicach trwała wtedy wojna wszystkich ze wszystkimi."
+    },
+    {
+      "start": 3777.2,
+      "end": 3784.92,
+      "text": "Jednym z dawno już na szczęście zapomnianych jej frontów był konflikt depeszów z metalowcami."
+    },
+    {
+      "start": 3785.32,
+      "end": 3793.7,
+      "text": "Dzisiaj może brzmi to groteskowo, ale w niektórych częściach kraju owocował naprawdę krwawymi potyczkami."
+    },
+    {
+      "start": 3794.52,
+      "end": 3806.92,
+      "text": "Symbolicznym końcem tej wojny i ogłoszeniem trwałego, jak się miało okazać, pokoju był singiel Vadera, który ukazał się w 1995 roku."
+    },
+    {
+      "start": 3807.82,
+      "end": 3821.54,
+      "text": "Oprócz zapowiedzi wybitnej płyty The Profundis w postaci utworu An Act of Darkness, singiel ów zawierał def metalową poniekąd wersję I Feel You, Depeche Mode."
+    },
+    {
+      "start": 3823.4,
+      "end": 3830.02,
+      "text": "Nieodżałowanego docenta to sprawka, on zawsze szukał wrażeń poza metalowym kanonem."
+    },
+    {
+      "start": 3830.02,
+      "end": 3832.16,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4083.56,
+      "end": 4104.86,
+      "text": "To był Vader i jego spojrzenie na I Feel You, Depeche Mode. Inna sprawa, że album Songs of Faith and Devotion, z którego oryginał pochodzi, ma w sobie tak niewyczerpane pokłady mroku, że niewielu metalowców jest w stanie podjąć rzuconą tam rękawicę."
+    },
+    {
+      "start": 4104.86,
+      "end": 4125.16,
+      "text": "W kategorii niemetalowy mrok, absolutny, równie wysoko, a może jeszcze wyżej, plasuje się płyta Outside Davida Bowie'ego, arcydzieło. Mam wrażenie, że wciąż niedoceniane, nie należycie doceniane chyba."
+    },
+    {
+      "start": 4125.16,
+      "end": 4150.76,
+      "text": "Płyta skupiająca w sobie wiele niepokojów, idei, ale też gatunków muzycznych końca XX wieku. Mało jest przeróbek Bowie'ego w świecie metalu, jeszcze mniej udanych, ale naszemu rodzimemu behemotowi należy się przynajmniej medal za ofiarność i odwagę."
+    },
+    {
+      "start": 4151.16,
+      "end": 4168.4,
+      "text": "Lubię myśleć, że mam swój mały wkład w powstanie tej wersji utworu Hello Space Boy, że byłem tym motylkiem, który machnął skrzydłami, wywołując efekt, który wydarzył się w innym miejscu i czasie."
+    },
+    {
+      "start": 4169.24,
+      "end": 4180.42,
+      "text": "Pamiętam bowiem jak dziś, że kiedy już przestaliśmy sobie polecać nawzajem piwniczny black i cmentarny death metal i zeszło na inne gatunki."
+    },
+    {
+      "start": 4181.06,
+      "end": 4194.72,
+      "text": "Nergal przysłał mi kiedyś płytę CD-ROM z wypalonym albumem Johnego Casha, pierwszym z serii American Recordings, czyli pierwszym nagranym z Rickiem Rabinem w roli producenta."
+    },
+    {
+      "start": 4195.26,
+      "end": 4198.96,
+      "text": "Płytę z adnotacją, musisz tego posłuchać."
+    },
+    {
+      "start": 4199.62,
+      "end": 4205.34,
+      "text": "Trafił w dziesiątkę oczywiście i to był moment, który odczarował dla mnie muzykę country."
+    },
+    {
+      "start": 4206.16,
+      "end": 4211.38,
+      "text": "Chciałem mu się jakoś zrewanżować, więc wypaliłem mu outlet."
+    },
+    {
+      "start": 4412.48,
+      "end": 4419.22,
+      "text": "Słuchacie audycji Ciężko na sercu, wydania pełnego cudzesów."
+    },
+    {
+      "start": 4420.06,
+      "end": 4426.52,
+      "text": "Jak doskonale państwo słyszycie, jedni tutaj mają łatwiej, inni stawiają przed sobą trudne wyzwania."
+    },
+    {
+      "start": 4427.66,
+      "end": 4433.96,
+      "text": "Ale w kategorii nieoczywistych metalowych coverów, jednym z najbardziej karkołomnych przedsięwzięć"
+    },
+    {
+      "start": 4433.96,
+      "end": 4437.5,
+      "text": "musi być branie się za repertuar Bjork."
+    },
+    {
+      "start": 4438.18,
+      "end": 4447.16,
+      "text": "Trójmiejski zespół Progma C, swoją drogą perkusista grupy Koeman gra dziś ze wspomnianym wcześniej Nergalem w Me and That Man."
+    },
+    {
+      "start": 4448.38,
+      "end": 4456.54,
+      "text": "Wytrwale poszukiwał swojego miejsca na progresywnych obrzeżach metalu, bliżej chociażby Tula niż Dream Theater."
+    },
+    {
+      "start": 4457.66,
+      "end": 4465.54,
+      "text": "I ciekawe to było i szkoda, że się skończyło, ale publiczność na Progma C jakoś się nie poznała."
+    },
+    {
+      "start": 4465.54,
+      "end": 4472.5,
+      "text": "Może zespołowi zabrakło cierpliwości, na pewno nie zabrakło jakości."
+    },
+    {
+      "start": 4473,
+      "end": 4481.14,
+      "text": "Posłuchajcie jak poradzili sobie z Bjork na płycie Bardo Travel sprzed ponad piętnastu lat."
+    },
+    {
+      "start": 4481.14,
+      "end": 4484.48,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4867.31,
+      "end": 4876.37,
+      "text": "Marilyn Manson ma na koncie kilka bardzo udanych przeróbek, by wspomnieć Tainted Love, Soft Cell czy Sweet Dreams, Eurythmics."
+    },
+    {
+      "start": 4877.55,
+      "end": 4886.61,
+      "text": "Nie dziwię się nawet tym, co twierdzą, że to wersje lepsze od oryginałów, choć może nie do końca się zgadzam, szczególnie w przypadku Eurythmics."
+    },
+    {
+      "start": 4887.95,
+      "end": 4899.95,
+      "text": "Niedawno Manson porwał się jednak z motyką na słońce i poległ, ale muszę przyznać, że czasem wolę takie ambitne porażki od zbyt łatwych zwycięstw."
+    },
+    {
+      "start": 4901.15,
+      "end": 4915.69,
+      "text": "Bo wszystko tutaj brzmi naprawdę świetnie, Marilyn Manson dzielnie walczy z żywiołem, dobrze się tego słucha, no ale przecież oryginału In The Air Tonight nie da się przebić."
+    },
+    {
+      "start": 4915.69,
+      "end": 4919.99,
+      "text": "Phil Collins jest jeden, jedyny, niepodrabialny."
+    },
+    {
+      "start": 5210.66,
+      "end": 5216.68,
+      "text": "Czasem piosenki, które zostają coverami, są nisko zawieszonymi owocami."
+    },
+    {
+      "start": 5217.44,
+      "end": 5221.76,
+      "text": "Wyobraź sobie bowiem, że jesteś norweskim black metalowcem."
+    },
+    {
+      "start": 5222.36,
+      "end": 5228.68,
+      "text": "Masz zespół o nazwie Karpacki Las, więc jaką przeróbkę nagrywasz?"
+    },
+    {
+      "start": 5229.4,
+      "end": 5236.76,
+      "text": "Oczywiście nie Płonie ognisko w lesie, ale A Forest z repertuaru The Cure."
+    },
+    {
+      "start": 5237.52,
+      "end": 5239.64,
+      "text": "I robisz to zaskakująco dobrze."
+    },
+    {
+      "start": 5240.66,
+      "end": 5241.66,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5576.84,
+      "end": 5581.42,
+      "text": "Dobrze znany słuchaczom ciężko na sercu zespół Imperial Triumphant."
+    },
+    {
+      "start": 5581.42,
+      "end": 5589.92,
+      "text": "To nowojorscy jazzmeni przebrani za statuły wolności i udający ekstremalnych metalowców."
+    },
+    {
+      "start": 5590.62,
+      "end": 5598.58,
+      "text": "Ale ciągnie wilka do lasu, ma więc Imperial Triumphant w dorobku kilka fantastycznych wersji jazzowych standardów."
+    },
+    {
+      "start": 5598.58,
+      "end": 5607.78,
+      "text": "Na przykład Nefertiti Wayne'a Shortera, który to utwór chyba już Państwu prezentowałem."
+    },
+    {
+      "start": 5608.8,
+      "end": 5616.88,
+      "text": "Wbrew pozorom jednak te ich jazzowe eskapady to łatwa sprawa, bo idą szlakiem, który nie jest przetarty."
+    },
+    {
+      "start": 5617.38,
+      "end": 5619.04,
+      "text": "Z nikim nie da się tego porównać."
+    },
+    {
+      "start": 5620.06,
+      "end": 5626.12,
+      "text": "A tam ekstremalnie metalowa publiczność najczęściej nie kojarzy oryginałów."
+    },
+    {
+      "start": 5626.12,
+      "end": 5629.88,
+      "text": "Jeżeli kogoś uraziłem, przepraszam najmocniej."
+    },
+    {
+      "start": 5630.6,
+      "end": 5633.98,
+      "text": "Za to Radiohead. Radiohead kojarzą wszyscy."
+    },
+    {
+      "start": 5634.72,
+      "end": 5639.46,
+      "text": "W dodatku siła brytyjskiej grupy tkwi nie tylko w samych kompozycjach,"
+    },
+    {
+      "start": 5640,
+      "end": 5646.38,
+      "text": "ale również w ich charakterystycznym brzmieniu i w niepowtarzalnym śpiewie Toma Yorka."
+    },
+    {
+      "start": 5647.22,
+      "end": 5652.28,
+      "text": "No więc zmierzyć się z czymś takim to już zdecydowanie trudniejsze zadanie."
+    },
+    {
+      "start": 5652.9,
+      "end": 5658.62,
+      "text": "Sprawdźmy zatem, czy Imperial Triumphant poradził sobie z Paranoid Android."
+    },
+    {
+      "start": 6011.65,
+      "end": 6023.67,
+      "text": "Jesteśmy w trójce i mamy obowiązki trójkowe. Skoro więc pojawił się Radiohead, to już dociągniemy do końca audycji w towarzystwie rocka progresywnego."
+    },
+    {
+      "start": 6024.41,
+      "end": 6039.73,
+      "text": "Kanaryjski zespół Wojwot to bogowie. Nie zapraszam do dyskusji. A jedną z ich trzech najlepszych płyt jest bez wątpienia Nothing Face z 1989 roku."
+    },
+    {
+      "start": 6039.73,
+      "end": 6054.79,
+      "text": "Album, który zaskoczył nas nie tylko odejściem od twardego, thrashowego brzmienia czy riffami ukradzionymi Strawińskiemu, chociaż wtedy o tym nie wiedzieliśmy, ale przede wszystkim przeróbką Pink Floyd."
+    },
+    {
+      "start": 6055.55,
+      "end": 6064.53,
+      "text": "Zespołu, który młodociani metalowcy uważali za nudziarzy dla starych ludzi, nie bez, a zresztą nic."
+    },
+    {
+      "start": 6064.53,
+      "end": 6077.55,
+      "text": "W każdym razie Astronomy Domain w wykonaniu Wojwot to jeden z lepszych lotów w kosmos, jakie udało mi się wykonać przy pomocy muzyki. Polecam Piva."
+    },
+    {
+      "start": 6372.04,
+      "end": 6383.3,
+      "text": "W 2010 roku norweski zespół Shining trafił w dziesiątkę. Połączyć wściekłość black metalu z jazzowym szaleństwem przecież to oczywiste."
+    },
+    {
+      "start": 6383.92,
+      "end": 6400.3,
+      "text": "Album Black Jazz brzmiał dokładnie tak, jak się nazywał. Poszły za nim fantastyczne koncerty. Niestety Shining nie wykorzystał szansy, pchając się chwilę później w stronę niedobrych poprockowych refrenów."
+    },
+    {
+      "start": 6401.24,
+      "end": 6406.66,
+      "text": "Nie dlatego niedobrych, że poprockowych, tylko dlatego niedobrych, że niedobrych."
+    },
+    {
+      "start": 6406.66,
+      "end": 6429.98,
+      "text": "No ale cóż, może na Black Jazz wyczerpali temat. Płytę kończy nie Black Jazz, ale Black Rock. Przeróbka 21st Century Schizoid Man, czyli sztandarowego utworu brytyjskiej grupy King Crimson, w której gościnnie śpiewa Grutle Kjelson z Enslaved."
+    },
+    {
+      "start": 6430.44,
+      "end": 6436.8,
+      "text": "21st Century Schizoid Man zakończy też naszą audycję. Dobranoc Państwu."
+    }
+  ],
+  "stats": {
+    "windowCount": 21,
+    "transcribedAudioSec": 1492.1,
+    "segmentCount": 164,
+    "characterCount": 15934
+  },
+  "sourceId": "2025-05-14-metalowe-covery-niemetalowych-kawalkow"
+}
