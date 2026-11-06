@@ -2,10 +2,71 @@
   "version": 1,
   "id": "cbc6c91f-fe30-47b4-82ec-e440e0a449aa",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T21:06:36.377Z",
+  "updatedAt": "2026-11-06T22:03:22.407Z",
   "durationSec": 6959,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek w całości poświęcony polskiej muzyce metalowej — od lat 70. i przełomu, jaki przyniosło TSA, po scenę współczesną. Przypomniano ekstremalny underground lat 80.: Mercyless Death z demem Eternal Condemnation, Scarecrow z Deo Optimo Maximo, Hector z The Inner Dementia oraz DDT z koncepcją białego zła, a także reedycje wytwórni Thrashing Madness Productions. Druga część dotyczy poszukiwań poza konwencjami: Flash World, Keta, Atrocious Filth, Mordor Stigmata i Entropia. Zestawiono popularność Mgły z mniej znanym projektem Kriegs Machine oraz omówiono Hekatomb i płytę Korosta opartą na historii sekty muraszkowców z Polesia i Wołynia. Na koniec zaprezentowano dziwne projekty — Wilczycę, Narenwind, Ifryt i Egoist — oraz nowości Midspreader, Distruster, Fiasko i Deus Mortem.",
+  "topics": [
+    {
+      "start": 181,
+      "end": 240,
+      "label": "TSA i narodziny polskiej sceny metalowej"
+    },
+    {
+      "start": 240,
+      "end": 475,
+      "label": "Ekstremalny underground: Vader, Imperator, Mercyless Death"
+    },
+    {
+      "start": 475,
+      "end": 654,
+      "label": "Scarecrow i demo Deo Optimo Maximo"
+    },
+    {
+      "start": 654,
+      "end": 705,
+      "label": "Reedycje Thrashing Madness Productions i historia podziemia"
+    },
+    {
+      "start": 705,
+      "end": 1052,
+      "label": "DDT i koncepcja białego zła"
+    },
+    {
+      "start": 1052,
+      "end": 1472,
+      "label": "Hector i kaseta The Inner Dementia"
+    },
+    {
+      "start": 1472,
+      "end": 1894,
+      "label": "Progresywne poszukiwania: Flash World i Keta"
+    },
+    {
+      "start": 2223,
+      "end": 2350,
+      "label": "Atrocious Filth i album Ov"
+    },
+    {
+      "start": 3002,
+      "end": 3090,
+      "label": "Mgła, Kriegs Machine i pytanie o popularność"
+    },
+    {
+      "start": 4041,
+      "end": 4624,
+      "label": "Hekatomb i album Korosta o sekcie muraszkowców"
+    },
+    {
+      "start": 4624,
+      "end": 4958,
+      "label": "Wilczyca, Narenwind, Ifryt i Egoist"
+    },
+    {
+      "start": 5861,
+      "end": 5883,
+      "label": "Grind i nowości: Midspreader, Distruster, Fiasko, Deus Mortem"
+    }
+  ],
   "tags": [
     {
       "id": "atrocious-filth",
@@ -81,7 +142,7 @@
   "tracks": [
     {
       "start": 1894,
-      "end": 2350,
+      "end": 2223,
       "durationSec": 330,
       "artist": "Ketha",
       "title": "No Heart",
@@ -107,7 +168,7 @@
     },
     {
       "start": 2649,
-      "end": 3090,
+      "end": 3002,
       "durationSec": 354,
       "artist": "Entropia",
       "title": "Samsara",
@@ -133,7 +194,7 @@
     },
     {
       "start": 3572,
-      "end": 4958,
+      "end": 4041,
       "durationSec": 471,
       "artist": "Mord'a'Stigmata",
       "title": "Praefatio Pro Defunctis",
@@ -159,7 +220,7 @@
     },
     {
       "start": 5300,
-      "end": 5883,
+      "end": 5861,
       "durationSec": 227,
       "artist": "Ifryt",
       "title": "Klucz Salomona",

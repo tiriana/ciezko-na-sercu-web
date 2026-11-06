@@ -2,10 +2,71 @@
   "version": 1,
   "id": "6a6b3644-a24c-41f1-bac3-cee04d120028",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T21:06:36.377Z",
+  "updatedAt": "2026-11-06T22:03:22.407Z",
   "durationSec": 6827,
-  "summary": "",
-  "topics": [],
+  "summary": "Przegląd listopadowego kalendarza koncertowego w Polsce, od metalu progresywnego po death metal i hardcore. Największe nazwy miesiąca to Soen, Dream Theater z powracającym Mikiem Portnoyem oraz Sepultura w pożegnalnej trasie, obok thrashowego Assassin i hardrockowego Lucifer. Sporo miejsca poświęcono młodej polskiej scenie metalowej, między innymi trasie Żniwa Śmierci oraz zespołom Integrity, Ice i Czerni. Omówiono też premiery płyt — Mission 3 grupy Planet Hell i Cutting the Throat of God Ulcerate — a także trasy Krwawy Świt nad Polską i New York Blood Tour. Całość zamyka zapowiedź wyprzedanego koncertu Siu Siu w Poznaniu.",
+  "topics": [
+    {
+      "start": 46,
+      "end": 176,
+      "label": "Soen, Odland i TROP — listopadowa trasa progresywna"
+    },
+    {
+      "start": 441,
+      "end": 503,
+      "label": "Piąta edycja Black Metal Night Festival w Szczecinie"
+    },
+    {
+      "start": 503,
+      "end": 567,
+      "label": "Deus Mortem i trasa Krwawy Świt nad Polską"
+    },
+    {
+      "start": 892,
+      "end": 944,
+      "label": "Żniwa Śmierci i młoda polska scena metalowa"
+    },
+    {
+      "start": 1160,
+      "end": 1321,
+      "label": "Dream Theater i trasa 40-lecia z Mikiem Portnoyem"
+    },
+    {
+      "start": 1638,
+      "end": 1709,
+      "label": "Assassin i staroszkolny niemiecki thrash metal"
+    },
+    {
+      "start": 2048,
+      "end": 2122,
+      "label": "Geoff Tate na dwóch koncertach w Polsce"
+    },
+    {
+      "start": 2432,
+      "end": 2851,
+      "label": "Planet Hell i premiera albumu Mission 3"
+    },
+    {
+      "start": 3084,
+      "end": 3139,
+      "label": "Lucifer i cover Poszłabym za Tobą Breakoutu"
+    },
+    {
+      "start": 3692,
+      "end": 3772,
+      "label": "Ulcerate i album Cutting the Throat of God"
+    },
+    {
+      "start": 4188,
+      "end": 4592,
+      "label": "Integrity, Ice i Czerni — death metal i hardcore"
+    },
+    {
+      "start": 5712,
+      "end": 5865,
+      "label": "Sepultura w pożegnalnej trasie w katowickim Spodku"
+    }
+  ],
   "tags": [
     {
       "id": "agnostic-front",
@@ -123,7 +184,7 @@
   "tracks": [
     {
       "start": 176,
-      "end": 567,
+      "end": 441,
       "durationSec": 139,
       "artist": "Soen",
       "title": "Deceiver",
@@ -136,7 +197,7 @@
     },
     {
       "start": 567,
-      "end": 944,
+      "end": 892,
       "durationSec": 315,
       "artist": "Devilpriest",
       "title": "The Black Milk of Lilith",
@@ -149,7 +210,7 @@
     },
     {
       "start": 944,
-      "end": 1321,
+      "end": 1160,
       "durationSec": 217,
       "artist": "Sewer Dwellers",
       "title": "The Cassandra Complex",
@@ -162,7 +223,7 @@
     },
     {
       "start": 1321,
-      "end": 1709,
+      "end": 1638,
       "durationSec": 318,
       "artist": "Baroness",
       "title": "A Horse Called Golgotha",
@@ -175,7 +236,7 @@
     },
     {
       "start": 1709,
-      "end": 2122,
+      "end": 2048,
       "durationSec": 229,
       "artist": "Assassin",
       "title": "Back from the Dead",
@@ -188,7 +249,7 @@
     },
     {
       "start": 2122,
-      "end": 2851,
+      "end": 2432,
       "durationSec": 311,
       "artist": "Queensrÿche",
       "title": "Empire",
@@ -201,7 +262,7 @@
     },
     {
       "start": 2851,
-      "end": 3139,
+      "end": 3084,
       "durationSec": 235,
       "artist": "METZ",
       "title": "Never Still Again",
@@ -227,7 +288,7 @@
     },
     {
       "start": 3434,
-      "end": 3772,
+      "end": 3692,
       "durationSec": 236,
       "artist": "LUCIFER",
       "title": "The Dead Don't Speak",
@@ -240,7 +301,7 @@
     },
     {
       "start": 3772,
-      "end": 4592,
+      "end": 4188,
       "durationSec": 418,
       "artist": "Ulcerate",
       "title": "To Flow Through Ashen Hearts",
@@ -292,7 +353,7 @@
     },
     {
       "start": 5501,
-      "end": 5865,
+      "end": 5712,
       "durationSec": 212,
       "artist": "Agnostic Front",
       "title": "Gotta Go",
