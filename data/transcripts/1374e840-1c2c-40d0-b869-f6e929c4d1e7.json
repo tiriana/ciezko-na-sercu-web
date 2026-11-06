@@ -1,0 +1,920 @@
+{
+  "version": 1,
+  "episodeId": "1374e840-1c2c-40d0-b869-f6e929c4d1e7",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 110371868,
+  "fileMtimeMs": 1789151161956.7239,
+  "windows": [
+    {
+      "index": 0,
+      "start": 3.5599999999999996,
+      "end": 9.4
+    },
+    {
+      "index": 1,
+      "start": 220.61,
+      "end": 309.53
+    },
+    {
+      "index": 2,
+      "start": 572.23,
+      "end": 712.03
+    },
+    {
+      "index": 3,
+      "start": 1049.57,
+      "end": 1180.25
+    },
+    {
+      "index": 4,
+      "start": 1441.64,
+      "end": 1467.84
+    },
+    {
+      "index": 5,
+      "start": 1631.59,
+      "end": 1672.83
+    },
+    {
+      "index": 6,
+      "start": 1907.88,
+      "end": 1977.02
+    },
+    {
+      "index": 7,
+      "start": 2252.74,
+      "end": 2317.98
+    },
+    {
+      "index": 8,
+      "start": 2636.04,
+      "end": 2739
+    },
+    {
+      "index": 9,
+      "start": 3002.47,
+      "end": 3066.91
+    },
+    {
+      "index": 10,
+      "start": 3085.44,
+      "end": 3111.8
+    },
+    {
+      "index": 11,
+      "start": 3129.41,
+      "end": 3137.21
+    },
+    {
+      "index": 12,
+      "start": 3257.06,
+      "end": 3362.08
+    },
+    {
+      "index": 13,
+      "start": 3666.66,
+      "end": 3732.8
+    },
+    {
+      "index": 14,
+      "start": 3924.9,
+      "end": 3969.95
+    },
+    {
+      "index": 15,
+      "start": 4155.59,
+      "end": 4247.23
+    },
+    {
+      "index": 16,
+      "start": 4554.72,
+      "end": 4613.88
+    },
+    {
+      "index": 17,
+      "start": 4825.32,
+      "end": 4905.05
+    },
+    {
+      "index": 18,
+      "start": 5180.26,
+      "end": 5212.48
+    },
+    {
+      "index": 19,
+      "start": 5404.9,
+      "end": 5488.32
+    },
+    {
+      "index": 20,
+      "start": 5674.79,
+      "end": 5734.59
+    },
+    {
+      "index": 21,
+      "start": 5995.59,
+      "end": 6031
+    },
+    {
+      "index": 22,
+      "start": 6284.64,
+      "end": 6349.37
+    },
+    {
+      "index": 23,
+      "start": 6580.58,
+      "end": 6704.86
+    }
+  ],
+  "segments": [
+    {
+      "start": 3.56,
+      "end": 7.1,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 7.1,
+      "end": 9.4,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 221.35,
+      "end": 232.11,
+      "text": "Dobry wieczór Państwu, powitał Was estoński zespół Evestus, piosenką To Hell and Back, czyli Do piekła i z powrotem."
+    },
+    {
+      "start": 232.87,
+      "end": 240.11,
+      "text": "My dzisiaj udamy się do Talina i z powrotem, śladem mojej wyprawy z ubiegłego tygodnia."
+    },
+    {
+      "start": 240.67,
+      "end": 247.97,
+      "text": "Poznałem w stolicy Estonii dużo nowej muzyki, w tym dużo dobrej, więc się nią z Państwem podzielę."
+    },
+    {
+      "start": 248.45,
+      "end": 257.91,
+      "text": "Słuchacie audycji Ciężko na sercu, nazywam się Jarek Szubrycht i będę Wam puszczał piosenki i o nich opowiadał przez najbliższe dwie godziny."
+    },
+    {
+      "start": 258.49,
+      "end": 264.37,
+      "text": "Audycję wydaje Mariusz Owczarek, a nadaje trójka program trzeci Polskiego Radia."
+    },
+    {
+      "start": 265.11,
+      "end": 276.45,
+      "text": "Jak już wspomniałem, dzisiaj w audycji tylko ciężary z Estonii i choć w przeważającej większości będą to zespoły, które zobaczyłem w miniony weekend na żywo,"
+    },
+    {
+      "start": 276.45,
+      "end": 278.97,
+      "text": "zaczniemy od wyjątku."
+    },
+    {
+      "start": 279.59,
+      "end": 281.65,
+      "text": "Przed nami zespół Agresor."
+    },
+    {
+      "start": 282.35,
+      "end": 285.45,
+      "text": "Agresor jako hołd dla Kreatora."
+    },
+    {
+      "start": 287.41,
+      "end": 295.19,
+      "text": "Nie mało było grup o takiej nazwie na tym mniej więcej etapie, kiedy Kreator wydawał Extreme Aggression,"
+    },
+    {
+      "start": 295.81,
+      "end": 298.63,
+      "text": "a więc dosyć dawno temu."
+    },
+    {
+      "start": 299.19,
+      "end": 304.37,
+      "text": "To będzie agresor estoński, do niedawna zupełnie mi nieznany."
+    },
+    {
+      "start": 304.77,
+      "end": 307.01,
+      "text": "I jak się okazuje, sporo traciłem."
+    },
+    {
+      "start": 307.01,
+      "end": 309.53,
+      "text": "Muzyka"
+    },
+    {
+      "start": 572.23,
+      "end": 595.75,
+      "text": "Niezłe, prawda? Wyobraźcie sobie Państwo, że to nagranie z 1992 roku. Gdyby nie byli z Estonii, tylko z Wielkiej Brytanii, Niemiec czy Skandynawii zrobiliby karierę, ale wtedy zespół z byłej Republiki Radzieckiej praktycznie bez szans."
+    },
+    {
+      "start": 596.63,
+      "end": 610.57,
+      "text": "Opowiadam Wam o agresorze nie bez powodu, nie bez powodu go dzisiaj gram, bo dostałem w talinie płytę zatytułowaną Procreate the Petrifications w prezencie od syna perkusisty."
+    },
+    {
+      "start": 611.47,
+      "end": 626.35,
+      "text": "Otrzymałem ją wraz z taką oto anegdotą. Otóż tuż po upadku Związku Radzieckiego i po odzyskaniu przez Estonię niepodległości zaczęły się przemiany, równie burzliwe jak i u nas."
+    },
+    {
+      "start": 626.63,
+      "end": 644.35,
+      "text": "Młodzi ludzie wreszcie mogli grać swoją ukochaną muzykę zupełnie bez przeszkód związanych z fałszywą socjalistyczną moralnością, ale nie bardzo mogli ją nagrywać, bo wjechały nowe dzikie kapitalistyczne zasady."
+    },
+    {
+      "start": 644.35,
+      "end": 650.19,
+      "text": "I jedyne studio w stolicy kraju kosztowało prawdziwą fortunę."
+    },
+    {
+      "start": 650.83,
+      "end": 665.59,
+      "text": "Marco Atzo, wspomniany już bębniarz agresora, tak jednak głęboko wierzył w swoją kapelę, że sprzedał, uwaga, dziedziczoną w jego rodzinie szablę pamiętającą jeszcze władzę carów."
+    },
+    {
+      "start": 666.35,
+      "end": 680.45,
+      "text": "Dzięki tejże białej broni temu egzemplarzowi, który trafił, nie wiem, nawet nie dopytałem, czy do prywatnego kolekcjonera, czy do muzeum, powstał bardzo udany album."
+    },
+    {
+      "start": 681.65,
+      "end": 688.87,
+      "text": "Niestety kariery poza swoją ojczyzną agresor wielki nie zrobił, bo jak już mówiłem w tamtym czasie łatwo nie było."
+    },
+    {
+      "start": 689.39,
+      "end": 700.19,
+      "text": "Nagrali jeszcze jedną dużą płytę w 1994 roku, po czym zmienili styl na bardziej industrialny i nazwę na No Big Silence."
+    },
+    {
+      "start": 700.19,
+      "end": 709.13,
+      "text": "Ale to już inna historia, my słuchamy jeszcze raz agresora numeru tytułowego z debiutu, czyli Procreate Petrifications."
+    },
+    {
+      "start": 711.65,
+      "end": 712.03,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 1049.57,
+      "end": 1065.87,
+      "text": "Historia agresora i szabli po dziadku z carskiego wojska, nie to już sobie zmyśliłem, nie wiem właściwie skąd ta szabla w rodzinie się wzięła, usłyszałem przed klubem D3 w dzielnicy Teliskiwi."
+    },
+    {
+      "start": 1066.19,
+      "end": 1085.59,
+      "text": "Kiedyś były tam fabryki, dziś to się nazywa Teliskiwi Creative District i obejmuje kluby muzyczne, fantastycznie przygotowane do goszczenia zespołów, wielu gatunków o bardzo różnych wymaganiach rajderowych, pracownia artystyczne, galerie, restauracje ITP itd."
+    },
+    {
+      "start": 1085.59,
+      "end": 1111.01,
+      "text": "Świetne, tętniące życiem miejsce, którego za rok czy dwa nie rozjadą buldożery, gentryfikacji, no bo tak jest to pomyślone i tak pilnowane, żeby tam życie prawdziwe trwało, a nie za chwilę deweloper zbudował apartamentowcę wyburzając kluby muzyczne, jak to się dzieje w wielu miastach Polski niestety cały czas."
+    },
+    {
+      "start": 1111.77,
+      "end": 1138.79,
+      "text": "Pojawiłem się w Estonii, pojawiłem się w Tallinie zaproszony na Tallinn Music Week, festiwal showcase'owy, no ale mój szlak był przede wszystkim metalowy, bo już pierwszego wieczoru przyszedłem na imprezę właśnie do klubu D3, na której prezentowane były przede wszystkim metalowe zespoły z Estonii, na nich się tutaj skupię."
+    },
+    {
+      "start": 1138.79,
+      "end": 1149.39,
+      "text": "Choć był też zespół francuski, niespecjalnie interesujący i bardzo ciekawy zespół z Serbii o nazwie Lawina, który pewnie jeszcze kiedyś wciężko na sercu się pojawi."
+    },
+    {
+      "start": 1149.79,
+      "end": 1164.71,
+      "text": "Wieczór zaczął natomiast lokalny zespół Permanent Blue i nie było to hitchcockowskie rozpoczęcie od trzęsienia ziemi, bo grupa wykonuje progresywny metal, czy nawet progresywny rock."
+    },
+    {
+      "start": 1165.79,
+      "end": 1175.55,
+      "text": "Śpiewa eteryczna wokalistka, bardzo dobra wokalistka zgaduje, że śpiewa jakieś poezje, bo nic innego do takiej muzyki nie pasuje."
+    },
+    {
+      "start": 1175.67,
+      "end": 1178.43,
+      "text": "No nie dla mnie, to nie dla mnie, no ale może dla Was."
+    },
+    {
+      "start": 1178.43,
+      "end": 1180.25,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1442.64,
+      "end": 1449.64,
+      "text": "Permanent Blue miał swoje zalety, miał dużą kulturę muzyczną, niezłe pomysły, ale nie jest to moja estetyka."
+    },
+    {
+      "start": 1450.12,
+      "end": 1454.96,
+      "text": "Z ulgą zatem przyjąłem pojawienie się na scenie grupy Tomorrow Was The War."
+    },
+    {
+      "start": 1455.74,
+      "end": 1460.64,
+      "text": "Wyglądali na łobuzów, może dobrze wychowanych łobuzów, ale zawsze."
+    },
+    {
+      "start": 1461.76,
+      "end": 1464.64,
+      "text": "Grali hardcora z elementami metalcora."
+    },
+    {
+      "start": 1466.64,
+      "end": 1467.84,
+      "text": "Permanent Blue"
+    },
+    {
+      "start": 1631.59,
+      "end": 1643.01,
+      "text": "Zespół nazywa się Tomorrow Was The War, a więc jutro była wojna, a ich nowa epka nosi tytuł This War Left You Nothing."
+    },
+    {
+      "start": 1643.69,
+      "end": 1655.83,
+      "text": "Ukazała się kilka dni temu, na początku kwietnia i posłuchajmy jeszcze utworu tytułowego, który powstał we współpracy z grupą Have No Heroes."
+    },
+    {
+      "start": 1657.29,
+      "end": 1670.35,
+      "text": "Posłuchajmy, bo muszę przyznać szczerze, że w tych wersjach studyjnych Tomorrow Was The War jest zespołem póki co trochę bardziej przekonującym niż w wersji koncertowej."
+    },
+    {
+      "start": 1670.35,
+      "end": 1672.83,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1907.88,
+      "end": 1918.76,
+      "text": "Strict 9 grają razem od 2018 roku, a w ich muzyce spotykają się new metal, death metal i industrial metal."
+    },
+    {
+      "start": 1919.08,
+      "end": 1927.66,
+      "text": "Ten industrial, muszę wam powiedzieć, to w Estonii duża rzecz, znacznie większa niż przynajmniej obecnie u nas."
+    },
+    {
+      "start": 1928.66,
+      "end": 1937.34,
+      "text": "No więc Strict 9 bardzo interesująco łączą różne wpływy, choć znowu, jak w przypadku Tomorrow Was The War,"
+    },
+    {
+      "start": 1937.88,
+      "end": 1941.9,
+      "text": "na żywo zabrzmiało to trochę mniej przekonująco niż w wersji studyjnej."
+    },
+    {
+      "start": 1942.84,
+      "end": 1947.34,
+      "text": "Obstawiam, że z tych względów, że Estonia to po prostu nie jest duży kraj,"
+    },
+    {
+      "start": 1948.28,
+      "end": 1954.9,
+      "text": "te zespoły nie koncertują tak często, jak mogłyby i powinny i nie są tak dobrze zgrane,"
+    },
+    {
+      "start": 1954.9,
+      "end": 1958.62,
+      "text": "nie są aż tak pewne siebie na scenie."
+    },
+    {
+      "start": 1959.76,
+      "end": 1967.1,
+      "text": "No ale jak już powiedziałem, jest to dosyć ciekawe podejście do mieszania gatunków"
+    },
+    {
+      "start": 1967.1,
+      "end": 1971.98,
+      "text": "i żeby nie być gołosłownym, zaprezentuję wam fragment albumu Parasit."
+    },
+    {
+      "start": 1972.58,
+      "end": 1975.36,
+      "text": "Rzeczy sprzed czterech lat."
+    },
+    {
+      "start": 1975.36,
+      "end": 1977.02,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2252.74,
+      "end": 2269.46,
+      "text": "Strict 9 interesująco wyglądali, ciekawie grali, a pomiędzy koncertami pół wieczoru przegadałem, właściwie cały wieczór przegadałem z bardzo różnymi ludźmi, co było równie pouczające jak i miłe."
+    },
+    {
+      "start": 2269.46,
+      "end": 2297.6,
+      "text": "Ale większość tych rozmów odbyłem z gitarzystą i zarazem wokalistą młodej grupy Humanity. Zaczepił mnie ten miły młodzieniec, zapytał czy ja to ja, bo jako juror za dwa dni byłem osobą oczekiwaną na miejscu, a kiedy już się upewnił zarzucił mnie informacjami o lokalnej scenie, ale też o swoim zespole."
+    },
+    {
+      "start": 2297.6,
+      "end": 2316.32,
+      "text": "W swoim zespole, który nazywa się Humanity i jak zeznał ten młody człowiek, czasem bywa przezywany w swoim kraju estońskim decapitated. Po koncercie oraz po przesłuchaniu albumu Out of Structure chyba wiem dlaczego."
+    },
+    {
+      "start": 2316.32,
+      "end": 2317.98,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2636.04,
+      "end": 2647.32,
+      "text": "To był zespół Humanity ze swojej debiutanckiej płyty Out of Structure wydanej w czerwcu ubiegłego roku."
+    },
+    {
+      "start": 2647.32,
+      "end": 2669.54,
+      "text": "Historia grupy nie jest długa, bo najstarszy z muzyków, ten już wspomniany przed piosenką towarzysz mojego czwartkowego wieczoru ma chyba 19 lat i również z tego powodu grupa bywa porównywana do Decapitated, którzy równie młodo zaczynali."
+    },
+    {
+      "start": 2670.2,
+      "end": 2683.06,
+      "text": "Ale podobieństwo też polega na tym, że Humanity równie dobrze znają swoje instrumenty i jak je jeszcze trochę razem pograją, jak naprawdę okrzepną, to będzie z nich maszyna do zabijania."
+    },
+    {
+      "start": 2683.74,
+      "end": 2698.18,
+      "text": "Już zresztą dzielnie stają, ten ich death metal był bardzo przekonujący, świetnie brzmiący, przynajmniej do momentu, kiedy po kilku utworach mojemu młodemu koledze padła gitara."
+    },
+    {
+      "start": 2698.68,
+      "end": 2713.04,
+      "text": "Ale co ciekawe, on zamiast przerwać koncert, próbować ją naprawiać, coś tam lamentować, psuć nastrój publiczności, po prostu odrzucił instrument i Humanity leciało dalej na jedno wiosło."
+    },
+    {
+      "start": 2713.22,
+      "end": 2721.44,
+      "text": "On po prostu ryczał z mikrofonem w łapie i takie to było naturalne, że zastanawiałem się nawet, czy nie taki właśnie był plan."
+    },
+    {
+      "start": 2721.44,
+      "end": 2733.46,
+      "text": "Może mają jakieś numery zaranżowane tylko na jedną gitarę, nie mają, ale potrafią sobie poradzić, kiedy przychodzą kłopoty i to jest bardzo duża wartość."
+    },
+    {
+      "start": 2734.04,
+      "end": 2736.98,
+      "text": "Będziemy jeszcze z Humanity mieli pociechę."
+    },
+    {
+      "start": 2736.98,
+      "end": 2739,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3003.47,
+      "end": 3018.63,
+      "text": "Wieczór mijał, przyszedł czas na kolejny zespół, który nosi nazwę Soul i muszę przyznać niestety, że nie do końca kupiłem tą ich muzykę, być może dlatego, że weszli po Chimianie,"
+    },
+    {
+      "start": 3018.63,
+      "end": 3033.83,
+      "text": "którzy bardzo mi zmielili głowę, może dlatego, że też po prostu taki nowoczesny metal, jednak bardzo melodyjny, wpływający na jakieś szerokie rockowe wody,"
+    },
+    {
+      "start": 3033.83,
+      "end": 3047.85,
+      "text": "to nie jest to, czego na co dzień szukam w metalu, lubię jak jest brutalnie ciężko i grubo, a kiedy chcę posłuchać ładnych melodii, no to wiem gdzie ich szukać, niekoniecznie są to zespoły okołometalowe."
+    },
+    {
+      "start": 3047.85,
+      "end": 3060.95,
+      "text": "No ale Soul to też zespół solidny i znowu nie ma powodu, żebym nie zaprezentował Państwu jednej z ich piosenek, bo może Państwu przypadną do gustu."
+    },
+    {
+      "start": 3060.95,
+      "end": 3063.87,
+      "text": "Utwór nosi tytuł Vanishing Threshold."
+    },
+    {
+      "start": 3063.87,
+      "end": 3066.91,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3085.44,
+      "end": 3111.8,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 3129.41,
+      "end": 3132.01,
+      "text": "I guess I had to hit track button"
+    },
+    {
+      "start": 3132.01,
+      "end": 3134.47,
+      "text": "So I've reached the surface"
+    },
+    {
+      "start": 3134.47,
+      "end": 3137.21,
+      "text": "For the light can only blossom"
+    },
+    {
+      "start": 3257.06,
+      "end": 3270.92,
+      "text": "Czwartkową noc skończyłem bardzo późno, koncertem serbskiej grupy Lawina, a piątek upłynął mi bez metalu, jeśli nie liczyć szumów usznych z czwartku."
+    },
+    {
+      "start": 3271.08,
+      "end": 3285.36,
+      "text": "Za to w sobotnie popołudnie udałem się do klubu Kinomaja, gdzie organizacja o nazwie Heavy Music Estonia, w ich ojczystym języku nazywa się to Esti Raske Musicalit."
+    },
+    {
+      "start": 3286.24,
+      "end": 3294.1,
+      "text": "Zapraszała na finał Heavy Music Band Battle, czyli na coroczną bitwę estońskich zespołów metalowych."
+    },
+    {
+      "start": 3294.68,
+      "end": 3304.64,
+      "text": "Ta edycja imprezy miała być szczególna, bo jesienią na pewnym festiwalu w Niemczech poznałem Ota, szefa Heavy Music Estonia."
+    },
+    {
+      "start": 3305.42,
+      "end": 3314.78,
+      "text": "Opowiedział mi o tym, co tam u siebie robi, ja opowiedziałem jemu o tym, co ja i koledzy robimy w Polsce i nagle bum!"
+    },
+    {
+      "start": 3315.42,
+      "end": 3322.84,
+      "text": "Wtem w komiksach w wybuchającej chmurce nagle nas olśniło, trzeba połączyć siły."
+    },
+    {
+      "start": 3323.84,
+      "end": 3329.26,
+      "text": "Połączyliśmy je zatem, połączyliśmy Heavy Music Band Battle z Road to Mystic."
+    },
+    {
+      "start": 3329.78,
+      "end": 3339.42,
+      "text": "I udałem się do Talina na łowy, żeby przywieźć na Mystic Festival jakiś fajny zespół, którego tu nie znamy, a znać powinniśmy."
+    },
+    {
+      "start": 3339.64,
+      "end": 3345.6,
+      "text": "I temu właśnie służył sobotni wieczór, o którym opowiadał będę od teraz."
+    },
+    {
+      "start": 3346.12,
+      "end": 3355.52,
+      "text": "Pierwszy na scenie pojawił się zespół Surgeon i powiem wam, że kilka, kilkanaście sekund, a ja już byłem spokojny."
+    },
+    {
+      "start": 3355.86,
+      "end": 3358.8,
+      "text": "Dobra, mam kapele na nasz festiwal."
+    },
+    {
+      "start": 3359.2,
+      "end": 3360.54,
+      "text": "Mój trud skończony."
+    },
+    {
+      "start": 3361.06,
+      "end": 3362.08,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3666.66,
+      "end": 3690.72,
+      "text": "Sergent to kwartet z Talina, wykonujący progresywny death metal. Słuchać w tym było i scenę ze wschodniego wybrzeża Stanów Zjednoczonych, ale też wpływy Gojiry czy Meshuga. Bardzo dobrze przygotowana technicznie kapela, świetny, żywiołowo się zachowujący wokalista."
+    },
+    {
+      "start": 3691.82,
+      "end": 3708.8,
+      "text": "Sergent mają w dorobku tylko jeden duży album, po prostu Sergent sprzed trzech lat oraz singiel Demon Eyes wydany w tym roku. Utwor z płyty słuchaliśmy przed chwilą, a teraz wspomniane Oczy Demona."
+    },
+    {
+      "start": 3716.98,
+      "end": 3732.8,
+      "text": "Mamy do tego, co się dzieje, w tym roku. Mamy do tego, co się dzieje, w tym roku. Mamy do tego, co się dzieje, w tym roku. Mamy do tego, co się dzieje, w tym roku. Mamy do tego, co się dzieje."
+    },
+    {
+      "start": 3925.76,
+      "end": 3937.96,
+      "text": "Sergent był świetny i już myślałem, że mamy to, ale Intrepid, który miał drugą pozycję startową, zrobił na mnie jeszcze lepsze wrażenie."
+    },
+    {
+      "start": 3938.62,
+      "end": 3948.6,
+      "text": "Przede wszystkim tym, że słychać było i widać naprawdę zgrany, doświadczony zespół jest wymielone, powiedziałbym mój kolega Vogue."
+    },
+    {
+      "start": 3948.96,
+      "end": 3959.32,
+      "text": "Później dowiedziałem się, że jesienią 2024 roku, czyli właściwie przed chwilą, Intrepid zjeździł całą Europę u boku Nile."
+    },
+    {
+      "start": 3959.72,
+      "end": 3968.04,
+      "text": "No i cóż, widać to doświadczenie, tę pewność, którą nabiera się dopiero po którymś litrze potu wylanym na scenie."
+    },
+    {
+      "start": 4156.57,
+      "end": 4166.25,
+      "text": "Muzyka Intrepid to death metal, nie całkiem staroszkolny, ale też nieprogresywny w takim sensie, w jakim progresywny jest Sergent."
+    },
+    {
+      "start": 4167.11,
+      "end": 4176.35,
+      "text": "Jest to za to death metal zaskakujący pewnymi niuansami, kiedy już mi się wydawało, że wiem wszystko o tym utworze, który właśnie trwa,"
+    },
+    {
+      "start": 4176.35,
+      "end": 4185.47,
+      "text": "że wiem jak się będzie rozwijał, jak się skończy nagle niespodzianka, ostry zakręt i już rozgrywa się muzycznie zupełnie inna historia"
+    },
+    {
+      "start": 4185.47,
+      "end": 4194.35,
+      "text": "albo pojawiają się jakieś niuansy z innego świata, które sprawiają, że zainteresowanie raczej rośnie niż opada."
+    },
+    {
+      "start": 4194.91,
+      "end": 4203.65,
+      "text": "Prezencja sceniczna ważna rzecz i tu wokalista zamiatał scenę długimi dreadami, cały zespół zresztą był bardzo aktywny."
+    },
+    {
+      "start": 4204.65,
+      "end": 4208.25,
+      "text": "Podobało mi się zatem i nie tylko mi."
+    },
+    {
+      "start": 4209.47,
+      "end": 4218.13,
+      "text": "Ciekawostka tu na gitarze, grał Zimo Azzo, czyli ten człowiek, który nie odziedziczył szabli z czasów carskich,"
+    },
+    {
+      "start": 4218.69,
+      "end": 4221.85,
+      "text": "bo tatuś sprzedał, żeby nagrać płytę."
+    },
+    {
+      "start": 4222.23,
+      "end": 4233.23,
+      "text": "Zimo odziedziczył, natomiast jak widać i słychać miłość do metalu, a więc rzecz znacznie cenniejszą, prawda?"
+    },
+    {
+      "start": 4234.13,
+      "end": 4243.09,
+      "text": "Słuchamy piosenek Intrepid z epki Slain of Sanity, Murder of Mind z 2023 roku."
+    },
+    {
+      "start": 4243.09,
+      "end": 4247.23,
+      "text": "DZIĘKI ZA OBSERWACIE"
+    },
+    {
+      "start": 4554.72,
+      "end": 4569.68,
+      "text": "Ico Love to było coś zupełnie innego. Na froncie drobna, błękitnowłosa basistka, chyba jeszcze nastoletnia, ale świetnie panująca nad wielkim, ciężkim, ryczącym nisko instrumentem."
+    },
+    {
+      "start": 4569.68,
+      "end": 4594.72,
+      "text": "Obok niej miły młody człowiek w białej żonobijce, który ciekawie grał na gitarze i jeszcze ciekawiej śpiewał chwilami jak Ian Estbury. Cały ten zespół, który nazywał się Ico Love, brzmiał trochę jak postpunkowy The Cult, albo jak próba wywoływania duchów grunge'u, na szczęście bez kopiowania gigantów z tamtej epoki."
+    },
+    {
+      "start": 4599.68,
+      "end": 4613.88,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4825.32,
+      "end": 4836.92,
+      "text": "Słuchamy Ica Love, którzy raz twierdzą, że grają psychodelicznego desert rocka, a w innej wizytówce czytam, że to indie rock'n'roll."
+    },
+    {
+      "start": 4836.92,
+      "end": 4850.28,
+      "text": "I to wszystko prawda. Zadebiutowali w 2021 roku, ale ja was tutaj częstuję utworami z płyty Vagabond wydanej jesienią ubiegłego roku."
+    },
+    {
+      "start": 4851.78,
+      "end": 4865.08,
+      "text": "Ica Love to był najmniej ekstremalny zespół wieczoru, właściwie po prostu nie metalowy, ale też odnalazłby się świetnie na Mystiku, choćby w ciągu dnia na Desert Stage."
+    },
+    {
+      "start": 4865.08,
+      "end": 4881.32,
+      "text": "No ale, że inny festiwal, duża, mainstreamowa, estońska impreza potrzebował właśnie rockowej kapeli takiej, co to porwie tłumy, podzieliliśmy się laureatami, podzieliliśmy te nagrody w taki sposób."
+    },
+    {
+      "start": 4881.4,
+      "end": 4903.12,
+      "text": "Że zaproszenie do Polski, do Gdańska zostały zespoły groźniejsze, a Ica Love będzie wyrastał na lokalną gwiazdę, bo że wyrośnie nie mam wątpliwości, więc jestem przekonany, że prędzej czy później w Polsce ich zobaczycie i usłyszycie, więc warto zapamiętać tę nazwę i te piosenki."
+    },
+    {
+      "start": 5180.26,
+      "end": 5201.82,
+      "text": "Kolejna grupa to Dreams They Have Stolen. Trochę metal, trochę rock progresywny czy alternatywny. Wciśnięci pomiędzy Brutali i ten przebojowy, porywający Ikołow niewiele mieli do powiedzenia w sobotni wieczór."
+    },
+    {
+      "start": 5202.94,
+      "end": 5210.8,
+      "text": "Żałuję trochę, bo trzeba przyznać, że starali się jak mogli, czego dowodem niech będzie utwór Wings."
+    },
+    {
+      "start": 5405.42,
+      "end": 5420.86,
+      "text": "Kiedy na scenie pojawił się zespół Nihilisty Crypt, okazało się, że gitarzystę już znam, bo to lider Humanity, tego młodzieżowego zespołu sprzed dwóch dni, jest najmłodszym członkiem Nihilisty Crypt."
+    },
+    {
+      "start": 5420.86,
+      "end": 5432.26,
+      "text": "Od niedawna zresztą gra w tej grupie, bo zespół zaczął swoją ścieżkę przez brutalny death metal jeszcze kiedy nie było go na świecie."
+    },
+    {
+      "start": 5432.92,
+      "end": 5444.58,
+      "text": "Debiutancki album Nihilisty Crypt wydali w 2005 roku i są bardzo aktywni od tamtego czasu, są bardzo w Estonii znani i cenieni."
+    },
+    {
+      "start": 5444.58,
+      "end": 5460.94,
+      "text": "Czego najlepszym dowodem było to, że w głosowaniu publiczności, bo publiczność też mogła przyznać swoją nagrodę tego wieczoru, przyznawała ją w ten sposób, że gumowe kuleczki otrzymywane przy wejściu do klubu wrzucała do jednego z wielkich"
+    },
+    {
+      "start": 5460.94,
+      "end": 5472.6,
+      "text": "słojów opatrzonych logotypami kapel, a zatem tych kuleczek najwięcej właśnie Nihilisty Crypt nazbierał i w ogóle się nie dziwię."
+    },
+    {
+      "start": 5473.26,
+      "end": 5486.5,
+      "text": "Słuchamy utworu Diamonds z płyty Dimension z 2021 roku, póki co ostatniej dużej płyty w dorobku grupy."
+    },
+    {
+      "start": 5487.56,
+      "end": 5488.32,
+      "text": "DZIENNIKARZ"
+    },
+    {
+      "start": 5675.63,
+      "end": 5678.71,
+      "text": "Dobre, prawda? Bardzo, bardzo dobre."
+    },
+    {
+      "start": 5678.81,
+      "end": 5685.13,
+      "text": "Nihilisty Crypt to na scenie intensywność suffocation, czy immolation, potężne brzmienie,"
+    },
+    {
+      "start": 5685.41,
+      "end": 5688.87,
+      "text": "a do tego prawdziwy zwierz na wokalu."
+    },
+    {
+      "start": 5689.25,
+      "end": 5693.95,
+      "text": "I mam na myśli zarówno prezencję tego osobnika, jak i jego gardło."
+    },
+    {
+      "start": 5694.51,
+      "end": 5696.55,
+      "text": "Fantastyczny zespół."
+    },
+    {
+      "start": 5697.23,
+      "end": 5703.07,
+      "text": "I prawdę mówiąc, w połowie koncertu Nihilisty Crypt zacząłem smsować z kolegami w Polsce,"
+    },
+    {
+      "start": 5703.07,
+      "end": 5707.49,
+      "text": "mówiąc, słuchajcie, umawialiśmy się, że przywiozłem jeden zespół z tej Estonii,"
+    },
+    {
+      "start": 5707.59,
+      "end": 5714.89,
+      "text": "ale jest tak dobrze, naprawdę dobrze, że może jeszcze znajdziemy miejsce na dwa."
+    },
+    {
+      "start": 5715.69,
+      "end": 5722.45,
+      "text": "Okazało się, że znaleźliśmy, no ale nie uprzedzajmy faktów."
+    },
+    {
+      "start": 5722.55,
+      "end": 5728.73,
+      "text": "Posłuchajmy jeszcze jednego numeru Nihilisty Crypt singla z 2024 roku"
+    },
+    {
+      "start": 5728.73,
+      "end": 5732.81,
+      "text": "zatytułowanego Lessons in Constraint."
+    },
+    {
+      "start": 5733.07,
+      "end": 5734.59,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5995.59,
+      "end": 6013.11,
+      "text": "Ostatnia konkursowa kapela sobotniego wieczoru, ostatni rycerz stający w tej bitwie zespołów to Pridian, czyli kwartet startu, znacznie bardziej nowoczesny niż chociażby nihilisty crypt."
+    },
+    {
+      "start": 6013.47,
+      "end": 6028.73,
+      "text": "Grupa powstała w 2018 roku, do niedawna była zupełnie niezależna, ale jesienią 2024 roku podpisała się z Century Media i podpisała się nie bez powodu, jak się pewnie domyślacie."
+    },
+    {
+      "start": 6284.64,
+      "end": 6301.58,
+      "text": "Prudiant Metalcore, mocno podszyty elektroniką, mnie przypominał nieco obecne oblicze In Flames i niby nie moja bajka, ale podobnie jak z In Flames w wersji scenicznej trudno się temu oprzeć."
+    },
+    {
+      "start": 6301.58,
+      "end": 6316.08,
+      "text": "Nie dość, że dobre piosenki, to jeszcze fantastyczne brzmienie, znakomite wykonanie, frontman, który doskonale rozumie swoją rolę na scenie i wzorowo wykonuje swoją robotę."
+    },
+    {
+      "start": 6316.08,
+      "end": 6342.08,
+      "text": "No więc myślałem, że te dwa zespoły, które przyjadą z Estonii na Mystic 2025 to będzie Intrepid i Nihilistic Crypt, ale po koncercie Pridion i po naradzie z jurorami doszedłem do wniosku, że chyba jednak będzie inaczej."
+    },
+    {
+      "start": 6342.08,
+      "end": 6347.3,
+      "text": "Słuchamy Endless i zdaje się, że to światowa premiera tego utworu."
+    },
+    {
+      "start": 6580.58,
+      "end": 6600.42,
+      "text": "Tak było, tak było. Mili państwo, Prydian oraz Intrepid zwyciężyły pierwszą historyczną bitwę estońskich zespołów połączoną z estońską edycją Road to Mystic."
+    },
+    {
+      "start": 6600.42,
+      "end": 6624.98,
+      "text": "Fantastyczny wieczór, fantastyczni ludzie. Bardzo żałuję, że wszystkich tych zespołów nie mogliśmy od razu zaprosić, ale mam nadzieję, jestem przekonany, że będziemy jeszcze do Estonii wracali i że uda nam się uchylić drzwi, znaleźć korytarz, znaleźć tę drogę Stalina do naszego kraju, bo warto poznawać tę scenę."
+    },
+    {
+      "start": 6624.98,
+      "end": 6651.34,
+      "text": "I na koniec, na dobranoc, a propos tego ze Estonii, co warto poznawać, posłuchamy jeszcze zespołu, który rozpoczął nam ten piękny dzisiejszy wieczór, zespołu Evestus, którego liderem jest Odd, czyli ten człowiek, który zorganizował całe to przedsięwzięcie, który stoi za organizacją Heavy Music Estonia, promującą ciężkie brzmienia z tamtego kraju."
+    },
+    {
+      "start": 6651.98,
+      "end": 6656.04,
+      "text": "Sam również ma się czym pochwalić."
+    },
+    {
+      "start": 6656.14,
+      "end": 6668.98,
+      "text": "Vestus to znakomity zespół, bardziej industrialny, industrialno-rockowy niż metalowy, chociaż ciężary tutaj też doskonale słychać."
+    },
+    {
+      "start": 6671.98,
+      "end": 6681.36,
+      "text": "Współpracujący z producentem Gregor Numana, więc to jest też absolutnie poziom światowy."
+    },
+    {
+      "start": 6682.7,
+      "end": 6689.74,
+      "text": "Tego zespołu na koncercie jeszcze nie widziałem, ale mam nadzieję, że będę miał okazję."
+    },
+    {
+      "start": 6690.54,
+      "end": 6694.06,
+      "text": "A więc mój głos już na dzisiaj ucichnie."
+    },
+    {
+      "start": 6694.72,
+      "end": 6700.34,
+      "text": "Życzę Państwu dobrej nocy, natomiast Evestus opowie Wam o głosach w jego głowie."
+    },
+    {
+      "start": 6700.78,
+      "end": 6702.86,
+      "text": "Voices in my head."
+    },
+    {
+      "start": 6702.86,
+      "end": 6704.86,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 24,
+    "transcribedAudioSec": 1615.22,
+    "segmentCount": 156,
+    "characterCount": 17513
+  },
+  "sourceId": "2025-04-09-ciezary-z-estonii"
+}
