@@ -2,10 +2,71 @@
   "version": 1,
   "id": "a4672fcc-020a-433e-8d92-8d9da183de31",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T19:03:49.965Z",
+  "updatedAt": "2026-11-06T20:06:03.989Z",
   "durationSec": 6950,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek poświęcony zmarłemu 15 stycznia Davidowi Lynchowi i muzyce inspirowanej Twin Peaks — od postpunku i black metalu po dark ambient i stoner metal. Przypomniano utwory Trophy Scars, Aborym, Dødheimsgard, norweski black metal z albumu Neonism oraz Killed by a Yeti, którego mini-album The Summoning ukazał się prawie 35 lat po premierze serialu. Opowiedziano, jak wiadomość o śmierci reżysera dotarła na festiwal Eurosonic w Groningen, gdzie chwilę wcześniej jedna z wokalistek wybrała Lyncha jako osobę, do której chciałaby zadzwonić. Omówiono nawiązania do serialu w twórczości Marilyn Manson i Nine Inch Nails, a także dokonania Chimairy, Mors Subita, Swallow the Sun i Starmongera. Polskimi akcentami były supergrupa Albert Rosenfield oraz radiowa premiera Laura's Song zespołu Zuit z 1998 roku. Na koniec wyjaśniono, że impulsem dla muzyki Lyncha był cover Song to the Siren w wykonaniu This Mortal Coil, i zaprezentowano Huberta Zemlera z The Roadhouse Band.",
+  "topics": [
+    {
+      "start": 196,
+      "end": 334,
+      "label": "Śmierć Davida Lyncha i znaczenie jego twórczości"
+    },
+    {
+      "start": 624,
+      "end": 684,
+      "label": "Trophy Scars \"Darkness\" i powrót do muzyki z Twin Peaks"
+    },
+    {
+      "start": 684,
+      "end": 695,
+      "label": "Aborym, Dødheimsgard i norweski black metal inspirowany serialem"
+    },
+    {
+      "start": 2034,
+      "end": 2128,
+      "label": "\"Sowy nie są tym, czym się wydają\" i zespół Killed by a Yeti"
+    },
+    {
+      "start": 2369,
+      "end": 2474,
+      "label": "Festiwal Eurosonic i wieść o śmierci reżysera"
+    },
+    {
+      "start": 2680,
+      "end": 2763,
+      "label": "Dark ambient i płyta Altar SUN z Boris"
+    },
+    {
+      "start": 3205,
+      "end": 3252,
+      "label": "Marilyn Manson i Nine Inch Nails wobec Twin Peaks"
+    },
+    {
+      "start": 4346,
+      "end": 4415,
+      "label": "Fińskie zespoły: Mors Subita i Swallow the Sun"
+    },
+    {
+      "start": 5129,
+      "end": 5154,
+      "label": "Starmonger i utwór \"Black Lodge\""
+    },
+    {
+      "start": 5534,
+      "end": 6382,
+      "label": "Albert Rosenfield i Zuit: polskie wątki"
+    },
+    {
+      "start": 6382,
+      "end": 6477,
+      "label": "\"Song to the Siren\" i geneza muzyki Lyncha"
+    },
+    {
+      "start": 6646,
+      "end": 6950,
+      "label": "Hubert Zemler i The Roadhouse Band"
+    }
+  ],
   "tags": [
     {
       "id": "aborym",
@@ -116,7 +177,7 @@
   "tracks": [
     {
       "start": 8,
-      "end": 334,
+      "end": 196,
       "durationSec": 243,
       "artist": "David Lynch",
       "title": "I Know",
@@ -129,7 +190,7 @@
     },
     {
       "start": 334,
-      "end": 695,
+      "end": 624,
       "durationSec": 280,
       "artist": "Trophy Scars",
       "title": "Darkness",
@@ -168,7 +229,7 @@
     },
     {
       "start": 1533,
-      "end": 2128,
+      "end": 2034,
       "durationSec": 502,
       "artist": "Solefald",
       "title": "Speed Increased to Scaffold",
@@ -181,7 +242,7 @@
     },
     {
       "start": 2128,
-      "end": 2474,
+      "end": 2369,
       "durationSec": 56,
       "artist": "Killed By A Yeti",
       "title": "The Owls Are Not What They Seem",
@@ -194,7 +255,7 @@
     },
     {
       "start": 2474,
-      "end": 2763,
+      "end": 2680,
       "durationSec": 207,
       "artist": "Striborg",
       "title": "Garmonbozia",
@@ -207,7 +268,7 @@
     },
     {
       "start": 2763,
-      "end": 3252,
+      "end": 3205,
       "durationSec": 444,
       "artist": "Boris & sunn O)))",
       "title": "The Sinking Belle (Blue Sheep)",
@@ -246,7 +307,7 @@
     },
     {
       "start": 4023,
-      "end": 4415,
+      "end": 4346,
       "durationSec": 323,
       "artist": "Chimaira",
       "title": "The Flame",
@@ -272,7 +333,7 @@
     },
     {
       "start": 4644,
-      "end": 5154,
+      "end": 5129,
       "durationSec": 486,
       "artist": "Swallow the Sun",
       "title": "Ghost of Laura Palmer",
@@ -285,7 +346,7 @@
     },
     {
       "start": 5154,
-      "end": 6477,
+      "end": 5534,
       "durationSec": 382,
       "artist": "Starmonger",
       "title": "Black Lodge",
@@ -298,7 +359,7 @@
     },
     {
       "start": 6477,
-      "end": 6950,
+      "end": 6646,
       "durationSec": 170,
       "artist": "This Mortal Coil",
       "title": "Song to the Siren",

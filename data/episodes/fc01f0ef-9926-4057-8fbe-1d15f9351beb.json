@@ -2,10 +2,71 @@
   "version": 1,
   "id": "fc01f0ef-9926-4057-8fbe-1d15f9351beb",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T19:03:49.965Z",
+  "updatedAt": "2026-11-06T20:06:03.990Z",
   "durationSec": 7049,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek podsumowuje dwadzieścia najciekawszych polskich płyt 2024 roku, skupionych wokół metalu i jego ekstremalnych odmian. Omówiono m.in. Dom Zły, Icon of Evil, Davos, Sacrofuck, Ante Void, Tides from Nebula, Planet Hell, The Dog, Asur, Meat Spreader, Ast Mouth, Arkona, Dolę i Thao. Osobny wątek stanowi powrót Blinded 23 z mini-albumem Vanishing i styczniową trasą z Obscurse Sphinx, V i Kryształ. Poza metalem pojawiły się industrialno-folkowa Królówczana Smuga oraz blackmetalowe Kynig Reichsal i Hauntologist, a Planet Hell oparto konceptualnie na pismach Stanisława Lema. Na koniec wskazano Fading Backwards Thao jako najlepszy album roku.",
+  "topics": [
+    {
+      "start": 417,
+      "end": 522,
+      "label": "Dom Zły i zapowiedź polskich albumów 2024"
+    },
+    {
+      "start": 763,
+      "end": 811,
+      "label": "Icon of Evil i album Locust Cathedral"
+    },
+    {
+      "start": 1056,
+      "end": 1085,
+      "label": "Sacrofuck i płyta Święta Krew"
+    },
+    {
+      "start": 1246,
+      "end": 1313,
+      "label": "Ante Void i album Parasite"
+    },
+    {
+      "start": 1912,
+      "end": 1960,
+      "label": "Tides from Nebula i Instant Rewards"
+    },
+    {
+      "start": 2262,
+      "end": 2397,
+      "label": "Blinded 23, Haunting i trasa koncertowa"
+    },
+    {
+      "start": 2903,
+      "end": 2973,
+      "label": "Planet Hell i Lemowska Mission 3"
+    },
+    {
+      "start": 3601,
+      "end": 3642,
+      "label": "Asur i album Asurbanipal"
+    },
+    {
+      "start": 4266,
+      "end": 4582,
+      "label": "Meat Spreader i grindcore'owy album"
+    },
+    {
+      "start": 4582,
+      "end": 4639,
+      "label": "Królówczana Smuga i Konwulsanki"
+    },
+    {
+      "start": 6078,
+      "end": 6149,
+      "label": "Dola i album Tabernaculum"
+    },
+    {
+      "start": 6619,
+      "end": 6701,
+      "label": "Thao i Fading Backwards jako album roku"
+    }
+  ],
   "tags": [
     {
       "id": "altokui",
@@ -137,7 +198,7 @@
   "tracks": [
     {
       "start": 7,
-      "end": 522,
+      "end": 417,
       "durationSec": 411,
       "artist": "Dom Zły",
       "title": "Nie Pamiętam Siebie",
@@ -150,7 +211,7 @@
     },
     {
       "start": 522,
-      "end": 811,
+      "end": 763,
       "durationSec": 243,
       "artist": "Icon Of Evil",
       "title": "Verge of Collapse",
@@ -163,7 +224,7 @@
     },
     {
       "start": 811,
-      "end": 1085,
+      "end": 1056,
       "durationSec": 245,
       "artist": "Deivos",
       "title": "De Materia Turpi",
@@ -176,7 +237,7 @@
     },
     {
       "start": 1085,
-      "end": 1313,
+      "end": 1246,
       "durationSec": 162,
       "artist": "Sacrofuck",
       "title": "Wieczna wojna",
@@ -202,7 +263,7 @@
     },
     {
       "start": 1631,
-      "end": 1960,
+      "end": 1912,
       "durationSec": 282,
       "artist": "Ifryt",
       "title": "Frustracja seksualna jest źródłem mocy Vril",
@@ -215,7 +276,7 @@
     },
     {
       "start": 1960,
-      "end": 2397,
+      "end": 2262,
       "durationSec": 303,
       "artist": "Tides From Nebula",
       "title": "The Haunting",
@@ -228,7 +289,7 @@
     },
     {
       "start": 2397,
-      "end": 2973,
+      "end": 2903,
       "durationSec": 508,
       "artist": "Blindead 23",
       "title": "Haunting",
@@ -254,7 +315,7 @@
     },
     {
       "start": 3310,
-      "end": 3642,
+      "end": 3601,
       "durationSec": 222,
       "artist": "The Dog",
       "title": "The Ghost of David Rubinstein",
@@ -280,7 +341,7 @@
     },
     {
       "start": 4008,
-      "end": 4639,
+      "end": 4266,
       "durationSec": 260,
       "artist": "DEAMONOLITH",
       "title": "The Monolithic Cult of Death",
@@ -345,7 +406,7 @@
     },
     {
       "start": 5615,
-      "end": 6149,
+      "end": 6078,
       "durationSec": 465,
       "artist": "Arkona",
       "title": "Altaria",
@@ -358,7 +419,7 @@
     },
     {
       "start": 6149,
-      "end": 6701,
+      "end": 6619,
       "durationSec": 432,
       "artist": "Dola",
       "title": "Tabernakulum",

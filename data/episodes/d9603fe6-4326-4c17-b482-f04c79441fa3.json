@@ -2,10 +2,46 @@
   "version": 1,
   "id": "d9603fe6-4326-4c17-b482-f04c79441fa3",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T19:03:49.964Z",
+  "updatedAt": "2026-11-06T20:06:03.988Z",
   "durationSec": 6776,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja poświęcona najciekawszym nowościom metalowym miesiąca. Jarek Szubrycht prezentuje zarówno archiwalne nagrania legendarnej polskiej grupy Kat z koncertu w Poznaniu, jak i współczesne wydawnictwa z kręgu black metalu, thrashu i speed metalu. W programie pojawiają się projekty z Włoch, Szwecji, Iranu oraz polskie formacje takie jak Garota i Skróda. Autor porusza również wątek polityczny związany z sytuacją artysty z projektu Cabos. Audycja Ciężko na sercu 29 stycznia 2025 przybliżyła kilka premier muzycznych: irański zespół Confess, którego członków aresztowano za antyreligijną działalność i którzy uciekli do Turcji; szwedzkie The Halo Effect ze swoją drugą płytą March of the Unheard; The Helicopters z dziewiątą płytą Overdriver; The City Is Ours z nową płytą Will You Still Love Me?; Ex Deo z mini-albumem Year of the Four Emperors; Rats of Gomorra z debiutancką płytą Infectious Vermin; oraz Foul Transfixation. Wśród koncertowych informacji wymieniono trasę Obscure Sphinx po Polsce u boku Blinded 23. Audycję zakończono utworem Harakiri for the sky z płyty Scorched Earth Austriaków.",
+  "topics": [
+    {
+      "start": 6,
+      "end": 7,
+      "label": "Najciekawsze nowości miesiąca w muzyce metalowej"
+    },
+    {
+      "start": 7,
+      "end": 8,
+      "label": "Archiwalny zapis koncertu grupy Kat z 1985 roku"
+    },
+    {
+      "start": 13,
+      "end": 45,
+      "label": "Współczesna scena black metalowa i thrashowa"
+    },
+    {
+      "start": 45,
+      "end": 1369,
+      "label": "Sytuacja polityczna i deportacja muzyka projektu Cabos"
+    },
+    {
+      "start": 3121,
+      "end": 3253,
+      "label": "Premiera płytowa — Confess, The Halo Effect, The Helicopters, The City Is Ours, Ex Deo, Rats of Gomorra, Foul Transfixation"
+    },
+    {
+      "start": 4744,
+      "end": 5555,
+      "label": "Koncerty — Obscure Sphinx w Polsce u boku Blinded 23"
+    },
+    {
+      "start": 6776,
+      "end": 6776,
+      "label": "Muzyka współczesna — The City Is Ours (londyński zespół, nowa płyta)"
+    }
+  ],
   "tags": [
     {
       "id": "confess",
@@ -36,11 +72,23 @@
       "at": 2077
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "kaaboos",
       "label": "Kaaboos",
       "type": "artist",
       "source": "tracks",
       "at": 2434
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "moon-wizard",
@@ -102,14 +150,15 @@
   "tracks": [
     {
       "start": 8,
-      "end": 1369,
+      "end": 13,
       "durationSec": 360,
       "artist": "The Dog",
       "title": "Śpisz Jak Kamień (feat. In Twilight's Embrace & Shodan)",
       "album": "Śpisz Jak Kamień (feat. In Twilight's Embrace & Shodan) - Single",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -159,7 +208,7 @@
       "artist": "Kaaboos",
       "title": "Nordbundet",
       "album": "Anti-Cosmic Rebellion",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -167,7 +216,7 @@
     },
     {
       "start": 3006,
-      "end": 3253,
+      "end": 3121,
       "durationSec": 127,
       "artist": "Kaaboos",
       "title": "Qasam be Shaytan",
@@ -185,9 +234,10 @@
       "artist": "Confess",
       "title": "After Goliath (feat. George Kollias & Marzi Montazeri)",
       "album": "Destination Addiction (feat. George Kollias)",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -198,9 +248,10 @@
       "artist": "The Halo Effect",
       "title": "Cruel Perception",
       "album": "March Of The Unheard",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -245,7 +296,7 @@
     },
     {
       "start": 4547,
-      "end": 5555,
+      "end": 4744,
       "durationSec": 239,
       "artist": "Ex Deo",
       "title": "Vespasian",
@@ -276,7 +327,7 @@
       "artist": "Obscure Sphinx",
       "title": "Scarcity Hunter",
       "album": "Emovere - EP",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -289,13 +340,44 @@
       "artist": "Harakiri for the Sky",
       "title": "Too Late for Goodbyes (feat. Svalbard)",
       "album": "Scorched Earth",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 6,
+      "text": "Powitał nas wrocławski zespół The Dog, który z gościnnym udziałem Cypriana Łakomego, In Twilight's Embrace na wokalu oraz na gitarze Szczepana Inglota z grupy Shodan nagrał właśnie tę fantastyczną wersję katowego klasyka."
+    },
+    {
+      "start": 3164,
+      "text": "W utworze After Goliath mają nie lada gości, bębni George Collias, znany chociażby z Nile, a na gitarze gra Marcy Montaceri, czyli człowiek współpracujący m.in. z Philem Anselmo albo znany z grupy Exhorder."
+    },
+    {
+      "start": 3504,
+      "text": "Szwedzi z The Halo Effect wydali właśnie swoją drugą płytę zatytułowaną March of the Unheard, ale wytwórnia tytuuje ich pionierami melodyjnego death metalu."
+    },
+    {
+      "start": 6776,
+      "text": "utwór pochodzi z nowej płyty Austriaków zatytułowanej Scorched Earth, że są to black metalowe, ale w sumie ładne, melancholijne piosenki o tym, że świat się zepsuł i mamy przechlapane."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 6,
+      "quote": "ja nazywam się Jarek Szubrycht"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 6,
+      "quote": "wydawcą audycji jest Mariusz Owczarek"
+    }
+  ]
 }

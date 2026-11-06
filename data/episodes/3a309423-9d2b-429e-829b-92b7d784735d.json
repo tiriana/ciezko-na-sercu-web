@@ -2,10 +2,71 @@
   "version": 1,
   "id": "3a309423-9d2b-429e-829b-92b7d784735d",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T19:03:49.966Z",
+  "updatedAt": "2026-11-06T20:06:03.990Z",
   "durationSec": 6763,
-  "summary": "",
-  "topics": [],
+  "summary": "Subiektywne podsumowanie najlepszych zagranicznych płyt heavymetalowych i okołometalowych wydanych w 2024 roku, zapowiedziane jako pierwsza z dwóch części — tydzień później omówiona ma być scena polska. Wśród przypomnianych albumów znalazły się m.in. „Absolute Elsewhere” Blood Incantation, „Melodies of Atonement” Leprous, „Cometh the Storm” High on Fire, „A Chaos of Flowers” Big Brave, „You Won't Go Before You're Supposed To” Knocked Loose, „Cool World” Chat Pile i „Beating the Drums of Ancestral Force” Tzompantli. Wątki obejmowały wpływy Sepultury i Disembowelment na brzmienie Tzompantli, pracę nad książką o metalu rdzennych Amerykanów oraz burzę wokół występu Knocked Loose w programie Jimmy'ego Kimela. Osobne miejsce zajęły dwie płyty Full of Hell — „Coagulated Bliss” oraz „Scraping the Divine” nagrana z Andrew Nolanem — a także kolaboracja The Body z Dis Fig „Orchards of Futile Heaven” i nowy zespół byłego frontmana Oxbow, Buñuel. Za album roku uznano „Muuntautuja” fińskiego Oranssi Pazuzu, a wcześniej zapowiedziano lutowy koncert Full of Hell w warszawskiej Progresji.",
+  "topics": [
+    {
+      "start": 33,
+      "end": 83,
+      "label": "Podział podsumowania roku na część zagraniczną i polską"
+    },
+    {
+      "start": 439,
+      "end": 480,
+      "label": "Blood Incantation i album Absolute Elsewhere"
+    },
+    {
+      "start": 480,
+      "end": 503,
+      "label": "Gigan i progresywny death metal"
+    },
+    {
+      "start": 774,
+      "end": 830,
+      "label": "Leprous i płyta Melodies of Atonement"
+    },
+    {
+      "start": 1047,
+      "end": 1080,
+      "label": "High on Fire i album Cometh the Storm"
+    },
+    {
+      "start": 1659,
+      "end": 1679,
+      "label": "Big Brave i album A Chaos of Flowers"
+    },
+    {
+      "start": 2383,
+      "end": 2475,
+      "label": "Knocked Loose i burza wokół występu telewizyjnego"
+    },
+    {
+      "start": 2924,
+      "end": 2946,
+      "label": "Rozwiązanie Oxbow i nowa płyta Buñuel"
+    },
+    {
+      "start": 3158,
+      "end": 3251,
+      "label": "Tzompantli i metal rdzennych Amerykanów"
+    },
+    {
+      "start": 3733,
+      "end": 3773,
+      "label": "Dwie płyty Full of Hell z 2024 roku"
+    },
+    {
+      "start": 4687,
+      "end": 4765,
+      "label": "The Body i Dis Fig, Orchards of Futile Heaven"
+    },
+    {
+      "start": 6159,
+      "end": 6214,
+      "label": "Oranssi Pazuzu i album roku Muuntautuja"
+    }
+  ],
   "tags": [
     {
       "id": "big-brave",
@@ -151,7 +212,7 @@
   "tracks": [
     {
       "start": 83,
-      "end": 503,
+      "end": 439,
       "durationSec": 357,
       "artist": "Blood Incantation",
       "title": "The Message [Tablet I",
@@ -164,7 +225,7 @@
     },
     {
       "start": 503,
-      "end": 830,
+      "end": 774,
       "durationSec": 272,
       "artist": "Gigan",
       "title": "Erratic Pulsitivity and Horror",
@@ -177,7 +238,7 @@
     },
     {
       "start": 830,
-      "end": 1080,
+      "end": 1047,
       "durationSec": 209,
       "artist": "Leprous",
       "title": "Like a Sunken Ship",
@@ -203,7 +264,7 @@
     },
     {
       "start": 1453,
-      "end": 1679,
+      "end": 1659,
       "durationSec": 204,
       "artist": "Vircolac",
       "title": "All Comes to Pass, Nothing Shall Remain",
@@ -229,7 +290,7 @@
     },
     {
       "start": 2069,
-      "end": 2475,
+      "end": 2383,
       "durationSec": 314,
       "artist": "Julie Christmas",
       "title": "Seven Days",
@@ -255,7 +316,7 @@
     },
     {
       "start": 2674,
-      "end": 2946,
+      "end": 2924,
       "durationSec": 248,
       "artist": "Chat Pile",
       "title": "Masc",
@@ -268,7 +329,7 @@
     },
     {
       "start": 2946,
-      "end": 3251,
+      "end": 3158,
       "durationSec": 214,
       "artist": "Buñuel",
       "title": "Drug Burn",
@@ -281,7 +342,7 @@
     },
     {
       "start": 3251,
-      "end": 3773,
+      "end": 3733,
       "durationSec": 484,
       "artist": "Tzompantli",
       "title": "Tetzaviztli",
@@ -333,7 +394,7 @@
     },
     {
       "start": 4373,
-      "end": 4765,
+      "end": 4687,
       "durationSec": 315,
       "artist": "Inter Arma",
       "title": "Concrete Cliffs",
@@ -385,7 +446,7 @@
     },
     {
       "start": 5858,
-      "end": 6214,
+      "end": 6159,
       "durationSec": 209,
       "artist": "Couch Slut",
       "title": "Downhill Racer",
