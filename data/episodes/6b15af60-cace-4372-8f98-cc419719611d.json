@@ -1,11 +1,87 @@
 {
   "version": 1,
   "id": "6b15af60-cace-4372-8f98-cc419719611d",
-  "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T23:30:08.940Z",
+  "analyzedAt": "2026-11-06",
+  "updatedAt": "2026-11-06T01:24:31.066Z",
   "durationSec": 6897,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek to autorski ranking dwudziestu ulubionych płyt XXI wieku — dziesięciu polskich i dziesięciu zagranicznych — powstały po lekturze zestawienia w Music Magazine. Polską dziesiątkę otwiera Mgła z „Exercises in Futility”, a obok niej omówiono m.in. Vader, Antigamę, Decapitated, Blindead, Morowe, Nię, Atrocious Filth, Fading Backwards i Tao; pierwsze miejsce zajęła „Huteluna” Furii. Na liście światowej znalazły się Imperial Triumphant, Celtic Frost, Gojira, Oranssi Pazuzu, The Dillinger Escape Plan, Deathspell Omega, Meshuggah, The Body oraz wspólny album Scotta Walkera i Sunn O))). Zwycięzcą została „A Sun That Never Sets” Neurosis. Przez całość przewija się motyw kryzysu wiary w metal w pierwszej dekadzie stulecia i roli Nihila jako najważniejszego polskiego metalowego muzyka tego czasu, a także wspomnienie zmarłego perkusisty Gerharda Niemczyka i zakończenia działalności Blindead.",
+  "topics": [
+    {
+      "start": 44,
+      "end": 198,
+      "label": "Idea rankingu: 10 polskich i 10 zagranicznych płyt stulecia"
+    },
+    {
+      "start": 198,
+      "end": 208,
+      "label": "Mgła — Exercises in Futility i wpływowy polski black metal"
+    },
+    {
+      "start": 791,
+      "end": 849,
+      "label": "Antigama — Resonance z wytwórni Relapse"
+    },
+    {
+      "start": 1085,
+      "end": 1136,
+      "label": "Decapitated — Organic Hallucinosis, jedyna płyta z Kowanem"
+    },
+    {
+      "start": 1979,
+      "end": 2035,
+      "label": "Morowe — Piekło, Labirynty, Diabły i postać Nihila"
+    },
+    {
+      "start": 2391,
+      "end": 2425,
+      "label": "Nia — Head Held High jako najlepszy post-Kobongowy projekt"
+    },
+    {
+      "start": 2826,
+      "end": 2899,
+      "label": "Furia — Huteluna na szczycie polskiej dziesiątki"
+    },
+    {
+      "start": 3137,
+      "end": 3195,
+      "label": "Imperial Triumphant — Vile Luxury, jazz spotyka metal"
+    },
+    {
+      "start": 3573,
+      "end": 3624,
+      "label": "Celtic Frost — Monotheist jako najlepszy powrót w metalu"
+    },
+    {
+      "start": 3960,
+      "end": 4011,
+      "label": "Gojira — From Mars to Sirius i przełom kariery"
+    },
+    {
+      "start": 4809,
+      "end": 4887,
+      "label": "Deathspell Omega — Fas, objawienie francuskiego black metalu"
+    },
+    {
+      "start": 5308,
+      "end": 5360,
+      "label": "Meshuggah — Nothing i kryzys wiary w metal"
+    },
+    {
+      "start": 5611,
+      "end": 5934,
+      "label": "Scott Walker i Sunn O))) — wspólny album Soused"
+    },
+    {
+      "start": 6213,
+      "end": 6294,
+      "label": "The Body — No One Deserves Happiness i płodność zespołu"
+    },
+    {
+      "start": 6561,
+      "end": 6611,
+      "label": "Neurosis — A Sun That Never Sets zwycięzcą rankingu"
+    }
+  ],
   "tags": [
     {
       "id": "antigama",
@@ -164,7 +240,7 @@
     },
     {
       "start": 644,
-      "end": 849,
+      "end": 791,
       "durationSec": 148,
       "artist": "Vader",
       "title": "Red Code",
@@ -177,7 +253,7 @@
     },
     {
       "start": 849,
-      "end": 1136,
+      "end": 1085,
       "durationSec": 237,
       "artist": "Antigama",
       "title": "Psychonaut",
@@ -216,7 +292,7 @@
     },
     {
       "start": 1713,
-      "end": 2035,
+      "end": 1979,
       "durationSec": 268,
       "artist": "Thaw",
       "title": "The Great Devourer",
@@ -229,7 +305,7 @@
     },
     {
       "start": 2035,
-      "end": 2425,
+      "end": 2391,
       "durationSec": 358,
       "artist": "Morowe",
       "title": "Komenda",
@@ -255,7 +331,7 @@
     },
     {
       "start": 2563,
-      "end": 2899,
+      "end": 2826,
       "durationSec": 265,
       "artist": "Atrocious Filth",
       "title": "D",
@@ -268,7 +344,7 @@
     },
     {
       "start": 2899,
-      "end": 3195,
+      "end": 3137,
       "durationSec": 223,
       "artist": "Furia",
       "title": "Na Koń",
@@ -281,7 +357,7 @@
     },
     {
       "start": 3195,
-      "end": 3624,
+      "end": 3573,
       "durationSec": 380,
       "artist": "Imperial Triumphant",
       "title": "Swarming Opulence",
@@ -294,7 +370,7 @@
     },
     {
       "start": 3624,
-      "end": 4011,
+      "end": 3960,
       "durationSec": 337,
       "artist": "Celtic Frost",
       "title": "A Dying God Coming Into Human Flesh",
@@ -333,7 +409,7 @@
     },
     {
       "start": 4670,
-      "end": 4887,
+      "end": 4809,
       "durationSec": 140,
       "artist": "The Dillinger Escape Plan",
       "title": "Panasonic Youth",
@@ -346,7 +422,7 @@
     },
     {
       "start": 4887,
-      "end": 5360,
+      "end": 5308,
       "durationSec": 422,
       "artist": "Deathspell Omega",
       "title": "Bread of Bitterness",
@@ -359,7 +435,7 @@
     },
     {
       "start": 5360,
-      "end": 5934,
+      "end": 5611,
       "durationSec": 253,
       "artist": "Meshuggah",
       "title": "Spasm",
@@ -372,7 +448,7 @@
     },
     {
       "start": 5934,
-      "end": 6294,
+      "end": 6213,
       "durationSec": 258,
       "artist": "Scott Walker & sunn O)))",
       "title": "Fetish",
@@ -385,7 +461,7 @@
     },
     {
       "start": 6294,
-      "end": 6611,
+      "end": 6561,
       "durationSec": 268,
       "artist": "The Body",
       "title": "Shelter Is Illusory",

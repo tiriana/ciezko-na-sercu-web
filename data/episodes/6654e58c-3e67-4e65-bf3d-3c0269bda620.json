@@ -1,11 +1,72 @@
 {
   "version": 1,
   "id": "6654e58c-3e67-4e65-bf3d-3c0269bda620",
-  "analyzedAt": "2026-11-05",
-  "updatedAt": "2026-11-05T23:30:08.938Z",
+  "analyzedAt": "2026-11-06",
+  "updatedAt": "2026-11-06T01:24:31.065Z",
   "durationSec": 6850,
-  "summary": "",
-  "topics": [],
+  "summary": "Druga część rozmowy o trzydziestoleciu Decapitated, osnuta wokół lat 1996 i 2000. Omówiono fenomen Kata i płytę Róże Miłości, punkowy album Slayera Undisputed Attitude, a także Sepulturę i Roots oraz Panterę i The Great Southern Trend Kill jako przykłady zwrotu ku korzeniom po osiągnięciu szczytu. Gitarzysta Decapitated opowiada o kontrakcie z Earache, nagraniu debiutu Winds of Creation i o tym, jak zespół połączył death metal, thrash i szkołę muzyczną. Tło roku 2000 tworzą Deicide, Morbid Angel, Nile i Vader z Litany oraz bardziej przystępne płyty Children of Bodom i Nightwish. Na koniec mowa o Lamb of God, nu metalu z Linkin Park, Deftones i Slipknotem na czele, a także o planach nowej płyty na 2027 rok.",
+  "topics": [
+    {
+      "start": 287,
+      "end": 377,
+      "label": "Druga część historii trzydziestolecia Decapitated; perspektywa gitarzysty zespołu"
+    },
+    {
+      "start": 377,
+      "end": 691,
+      "label": "Fenomen Kata i płyta Róże Miłości z 1996 roku"
+    },
+    {
+      "start": 1048,
+      "end": 1119,
+      "label": "Slayer i punkowy album Undisputed Attitude"
+    },
+    {
+      "start": 1360,
+      "end": 1610,
+      "label": "Sepultura Roots: eksperyment etniczny i podwaliny nu metalu"
+    },
+    {
+      "start": 1815,
+      "end": 2103,
+      "label": "Pantera The Great Southern Trend Kill i brzmienie Dimebaga"
+    },
+    {
+      "start": 2393,
+      "end": 2786,
+      "label": "Kontrakt z Earache i debiut Winds of Creation"
+    },
+    {
+      "start": 3091,
+      "end": 3759,
+      "label": "Tło death metalu 2000: Deicide, Morbid Angel, Nile"
+    },
+    {
+      "start": 4190,
+      "end": 4623,
+      "label": "Children of Bodom, Nightwish i granie bardziej przystępnej muzyki"
+    },
+    {
+      "start": 4854,
+      "end": 5117,
+      "label": "Płyty shredderowe, Malmsteen, Iommi i granice gitarowego popisu"
+    },
+    {
+      "start": 5833,
+      "end": 6047,
+      "label": "Lamb of God jako pomost do metalcore i deathcore"
+    },
+    {
+      "start": 6047,
+      "end": 6198,
+      "label": "Nu metal: Linkin Park, Deftones i fenomen Slipknota"
+    },
+    {
+      "start": 6198,
+      "end": 6300,
+      "label": "Plany Decapitated: festiwale w 2026 i płyta w 2027"
+    }
+  ],
   "tags": [
     {
       "id": "children-of-bodom",
@@ -74,7 +135,7 @@
   "tracks": [
     {
       "start": 12,
-      "end": 691,
+      "end": 287,
       "durationSec": 276,
       "artist": "Decapitated",
       "title": "Kill the Cult",
@@ -87,7 +148,7 @@
     },
     {
       "start": 691,
-      "end": 1119,
+      "end": 1048,
       "durationSec": 288,
       "artist": "Kat",
       "title": "Odi Profanum Vulgus",
@@ -100,7 +161,7 @@
     },
     {
       "start": 1119,
-      "end": 1610,
+      "end": 1360,
       "durationSec": 241,
       "artist": "Slayer",
       "title": "Abolish Government / Superficial Love",
@@ -113,7 +174,7 @@
     },
     {
       "start": 1610,
-      "end": 2103,
+      "end": 1815,
       "durationSec": 207,
       "artist": "Sepultura",
       "title": "Roots Bloody Roots",
@@ -126,7 +187,7 @@
     },
     {
       "start": 2103,
-      "end": 2786,
+      "end": 2393,
       "durationSec": 292,
       "artist": "Pantera",
       "title": "Drag the Waters",
@@ -139,7 +200,7 @@
     },
     {
       "start": 2786,
-      "end": 3759,
+      "end": 3091,
       "durationSec": 307,
       "artist": "Decapitated",
       "title": "Nine Steps",
@@ -152,7 +213,7 @@
     },
     {
       "start": 3759,
-      "end": 4623,
+      "end": 4190,
       "durationSec": 433,
       "artist": "Nile",
       "title": "Masturbating the War God",
@@ -165,7 +226,7 @@
     },
     {
       "start": 4623,
-      "end": 5117,
+      "end": 4854,
       "durationSec": 233,
       "artist": "Children of Bodom",
       "title": "Are You Dead Yet",
@@ -178,7 +239,7 @@
     },
     {
       "start": 5117,
-      "end": 6300,
+      "end": 5833,
       "durationSec": 718,
       "artist": "The Great Kat",
       "title": "Beethoven Mosh (Beethoven's 5th Symphony In C Minor)",
