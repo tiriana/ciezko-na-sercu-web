@@ -2,10 +2,71 @@
   "version": 1,
   "id": "bac7fc57-7b66-40f3-b398-cd1e3ed20bda",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T20:06:03.992Z",
+  "updatedAt": "2026-11-06T21:06:36.376Z",
   "durationSec": 6901,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek w całości poświęcony serialowi Twin Peaks i muzyce, jaką zainspirował. Punktem wyjścia jest album Siouxsie Sioux z interpretacjami muzyki z serialu, a dalej metalowe apokryfy: Anthrax z utworem o czarnej chacie, supergrupa Fantômas na płycie The Director's Cut, polski duet Jarzmo z kompozycją Twin Peaks oraz Hostia z Fire Walks With Me. Przypomniano okoliczności powstania serialu, film Twin Peaks: Ogniu krocz ze mną, pamiętnik Laury Palmer i trzecią serię. Osobny wątek to relacja z podróży do miejsc kręcenia: North Bend z kawiarnią Twedes oraz Snoqualmie z mostem, tartakiem i zakrętem z czołówki. Przywołano też zespoły związane z regionem — Windham Hell, Mount Eerie i Bohren & der Club of Gore — a na koniec mroczną kompilację A Witch House and Occult Guide to Twin Peaks.",
+  "topics": [
+    {
+      "start": 430,
+      "end": 496,
+      "label": "Album Siouxsie Sioux z interpretacjami muzyki z Twin Peaks"
+    },
+    {
+      "start": 854,
+      "end": 909,
+      "label": "Anthrax i utwór o czarnej chacie z Sound of White Noise"
+    },
+    {
+      "start": 1229,
+      "end": 1286,
+      "label": "Supergrupa Fantômas i płyta The Director's Cut"
+    },
+    {
+      "start": 1501,
+      "end": 1542,
+      "label": "Polski duet Jarzmo i utwór Twin Peaks z Antropocenu"
+    },
+    {
+      "start": 1906,
+      "end": 2108,
+      "label": "Historia serialu, jego wpływ i okoliczności powstania"
+    },
+    {
+      "start": 2108,
+      "end": 2311,
+      "label": "Zespół Hostia i utwór Fire Walks With Me"
+    },
+    {
+      "start": 2855,
+      "end": 3058,
+      "label": "North Bend, kawiarnia Twedes i serialowe Double R Diner"
+    },
+    {
+      "start": 3349,
+      "end": 3562,
+      "label": "Snoqualmie: most, tartak, liceum i zakręt z czołówki"
+    },
+    {
+      "start": 4342,
+      "end": 4396,
+      "label": "Lokalny zespół Windham Hell i album South Facing Epitaph"
+    },
+    {
+      "start": 4994,
+      "end": 5072,
+      "label": "Mount Eerie i płyta Wind's Poem inspirowana serialem"
+    },
+    {
+      "start": 5318,
+      "end": 5374,
+      "label": "Bohren & der Club of Gore i jazz byłych metalowców"
+    },
+    {
+      "start": 5753,
+      "end": 6901,
+      "label": "Kompilacja A Witch House and Occult Guide to Twin Peaks"
+    }
+  ],
   "tags": [
     {
       "id": "angelo-badalamenti",
@@ -102,7 +163,7 @@
   "tracks": [
     {
       "start": 7,
-      "end": 496,
+      "end": 430,
       "durationSec": 410,
       "artist": "Xiu Xiu",
       "title": "Falling",
@@ -128,7 +189,7 @@
     },
     {
       "start": 548,
-      "end": 909,
+      "end": 854,
       "durationSec": 233,
       "artist": "Angelo Badalamenti",
       "title": "Twin Peaks Theme",
@@ -141,7 +202,7 @@
     },
     {
       "start": 909,
-      "end": 1286,
+      "end": 1229,
       "durationSec": 322,
       "artist": "Anthrax",
       "title": "Black Lodge",
@@ -154,7 +215,7 @@
     },
     {
       "start": 1286,
-      "end": 1542,
+      "end": 1501,
       "durationSec": 204,
       "artist": "Fantômas",
       "title": "Twin Peaks: Fire Walk With Me",
@@ -167,7 +228,7 @@
     },
     {
       "start": 1542,
-      "end": 2311,
+      "end": 1906,
       "durationSec": 349,
       "artist": "Jarzmo",
       "title": "Twin Peaks",
@@ -180,7 +241,7 @@
     },
     {
       "start": 2311,
-      "end": 3058,
+      "end": 2855,
       "durationSec": 545,
       "artist": "Harakiri for the Sky",
       "title": "Fire, Walk with Me",
@@ -193,7 +254,7 @@
     },
     {
       "start": 3058,
-      "end": 3562,
+      "end": 3349,
       "durationSec": 293,
       "artist": "Audrey Horne",
       "title": "Deathhorse",
@@ -219,7 +280,7 @@
     },
     {
       "start": 4038,
-      "end": 4396,
+      "end": 4342,
       "durationSec": 305,
       "artist": "Spektr",
       "title": "Through the Darkness of Future Past",
@@ -245,7 +306,7 @@
     },
     {
       "start": 4582,
-      "end": 5072,
+      "end": 4994,
       "durationSec": 414,
       "artist": "Windham Hell",
       "title": "Wrapped In Plastique",
@@ -258,7 +319,7 @@
     },
     {
       "start": 5072,
-      "end": 5374,
+      "end": 5318,
       "durationSec": 247,
       "artist": "Mount Eerie",
       "title": "Between Two Mysteries",
@@ -271,7 +332,7 @@
     },
     {
       "start": 5374,
-      "end": 6901,
+      "end": 5753,
       "durationSec": 380,
       "artist": "Bohren & Der Club of Gore",
       "title": "Constant Fear",

@@ -2,7 +2,7 @@
   "version": 1,
   "id": "a4672fcc-020a-433e-8d92-8d9da183de31",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T20:06:03.989Z",
+  "updatedAt": "2026-11-06T21:06:36.373Z",
   "durationSec": 6950,
   "summary": "Odcinek poświęcony zmarłemu 15 stycznia Davidowi Lynchowi i muzyce inspirowanej Twin Peaks — od postpunku i black metalu po dark ambient i stoner metal. Przypomniano utwory Trophy Scars, Aborym, Dødheimsgard, norweski black metal z albumu Neonism oraz Killed by a Yeti, którego mini-album The Summoning ukazał się prawie 35 lat po premierze serialu. Opowiedziano, jak wiadomość o śmierci reżysera dotarła na festiwal Eurosonic w Groningen, gdzie chwilę wcześniej jedna z wokalistek wybrała Lyncha jako osobę, do której chciałaby zadzwonić. Omówiono nawiązania do serialu w twórczości Marilyn Manson i Nine Inch Nails, a także dokonania Chimairy, Mors Subita, Swallow the Sun i Starmongera. Polskimi akcentami były supergrupa Albert Rosenfield oraz radiowa premiera Laura's Song zespołu Zuit z 1998 roku. Na koniec wyjaśniono, że impulsem dla muzyki Lyncha był cover Song to the Siren w wykonaniu This Mortal Coil, i zaprezentowano Huberta Zemlera z The Roadhouse Band.",
   "topics": [
@@ -53,7 +53,7 @@
     },
     {
       "start": 5534,
-      "end": 6382,
+      "end": 5835,
       "label": "Albert Rosenfield i Zuit: polskie wątki"
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "start": 6646,
-      "end": 6950,
+      "end": 6701,
       "label": "Hubert Zemler i The Roadhouse Band"
     }
   ],
@@ -104,6 +104,12 @@
       "at": 1043
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "killed-by-a-yeti",
       "label": "Killed By A Yeti",
       "type": "artist",
@@ -111,11 +117,24 @@
       "at": 2128
     },
     {
+      "id": "kimaira",
+      "label": "Kimaira",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6701
+    },
+    {
       "id": "marilyn-manson",
       "label": "Marilyn Manson",
       "type": "artist",
       "source": "tracks",
       "at": 3252
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "mors-subita",
@@ -182,7 +201,7 @@
       "artist": "David Lynch",
       "title": "I Know",
       "album": "Crazy Clown Time",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -358,6 +377,19 @@
       "links": []
     },
     {
+      "start": 5835,
+      "end": 6382,
+      "durationSec": 108,
+      "artist": "Nine Inch Nails",
+      "title": "She's Gone Away",
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
       "start": 6477,
       "end": 6646,
       "durationSec": 170,
@@ -369,8 +401,43 @@
         "shazam"
       ],
       "links": []
+    },
+    {
+      "start": 6701,
+      "end": 6950,
+      "durationSec": 249,
+      "artist": "Kimaira",
+      "title": null,
+      "album": "Resurrection",
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
+      ],
+      "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 5954,
+      "text": "Utwór She's Gone Away poznaliśmy dzięki trzeciemu sezonowi serialu w 2017 roku. Nine Inch Nails wykonują go w barze Roadhouse."
+    },
+    {
+      "start": 6950,
+      "text": "Kimaira wybrała się na wycieczkę z rodzimego Cleveland w stanie Ohio do Twin Peaks w 2007 roku na płycie Resurrection."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 10,
+      "quote": "audycji prowadzonej przez Jarka Szubrychta"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 10,
+      "quote": "wydawanej przez Mariusza Owczarka"
+    }
+  ]
 }

@@ -2,10 +2,61 @@
   "version": 1,
   "id": "3ec3d08a-58c3-49a9-bae4-e49c5559bab8",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T20:06:03.991Z",
+  "updatedAt": "2026-11-06T21:06:36.375Z",
   "durationSec": 6877,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek w dużej mierze poświęcony grudniowym koncertom: Brudny SMM promuje płytę Silesian Bastards występami w Poznaniu i Katowicach, a w trasach są m.in. Skeptik, Illusion, Frontside, Hostia, Korapszyn i Sunnata z albumu Chasing the Shadows. 7 grudnia w warszawskiej Proximie zagrają Sólstafir z nowej płyty Hin Helga Kvöl oraz Oranssi Pazuzu z Muuntautuja. Największym metalowym wydarzeniem miesiąca jest koncert Testament, Anthrax i Kreatora w katowickim Spodku 11 grudnia, a tego samego dnia Fit for an Autopsy zaprezentuje w Proximie album The Nothing That Is. W kolejnych dniach Proxima gości Dying Fetus z Chelsea Grin, Vitriolem i Despised Icon, a w krakowskim Zaścianku odbywa się dziesiąta edycja Drownfest z Faust Again jako gwiazdą. Omówiono też akustyczny występ Life of Agony we wrocławskim Starym Klasztorze 18 grudnia oraz trasę Roku, na której Furia z Galswirt i Aluktodolo gra program oparty na płycie Huta Luna.",
+  "topics": [
+    {
+      "start": 215,
+      "end": 265,
+      "label": "Brudny SMM, płyta Silesian Bastards i koncerty w Poznaniu i Katowicach"
+    },
+    {
+      "start": 499,
+      "end": 585,
+      "label": "Grudniowe trasy polskich zespołów, m.in. Skeptik, Illusion i Sunnata"
+    },
+    {
+      "start": 1056,
+      "end": 1122,
+      "label": "Sólstafir i Oranssi Pazuzu w warszawskiej Proximie 7 grudnia"
+    },
+    {
+      "start": 1623,
+      "end": 1677,
+      "label": "Terror w Hydrozagadce, support Nasty i Kombast"
+    },
+    {
+      "start": 1817,
+      "end": 1918,
+      "label": "Testament, Anthrax i Kreator w katowickim Spodku 11 grudnia"
+    },
+    {
+      "start": 3406,
+      "end": 3456,
+      "label": "Fit for an Autopsy, album The Nothing That Is i trasa"
+    },
+    {
+      "start": 4324,
+      "end": 4357,
+      "label": "Dying Fetus, Chelsea Grin, Vitriol i Despised Icon w Proximie"
+    },
+    {
+      "start": 5490,
+      "end": 5566,
+      "label": "Drownfest w krakowskim Zaścianku, gwiazda Faust Again"
+    },
+    {
+      "start": 5767,
+      "end": 5857,
+      "label": "Life of Agony akustycznie we wrocławskim Starym Klasztorze"
+    },
+    {
+      "start": 6067,
+      "end": 6242,
+      "label": "Trasa Roku: Furia, Galswirt i Aluktodolo w czterech miastach"
+    }
+  ],
   "tags": [
     {
       "id": "anthrax",
@@ -64,6 +115,12 @@
       "at": 6242
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "kreator",
       "label": "Kreator",
       "type": "artist",
@@ -76,6 +133,12 @@
       "type": "artist",
       "source": "tracks",
       "at": 5857
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "roadhog",
@@ -123,25 +186,26 @@
   "tracks": [
     {
       "start": 7,
-      "end": 265,
+      "end": 215,
       "durationSec": 190,
       "artist": "Brüdny Skürwiel",
       "title": "Silesian Bastards",
       "album": "Silesian Bastards",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 265,
-      "end": 585,
+      "end": 499,
       "durationSec": 234,
       "artist": "Roadhog",
       "title": "Masquerade",
       "album": "Gates to Madness",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -149,7 +213,7 @@
     },
     {
       "start": 585,
-      "end": 1122,
+      "end": 1056,
       "durationSec": 472,
       "artist": "sunnata",
       "title": "Saviour's Raft",
@@ -162,7 +226,7 @@
     },
     {
       "start": 1122,
-      "end": 1677,
+      "end": 1623,
       "durationSec": 501,
       "artist": "Solstafir",
       "title": "Freygátan",
@@ -175,7 +239,7 @@
     },
     {
       "start": 1677,
-      "end": 1918,
+      "end": 1817,
       "durationSec": 141,
       "artist": "Terror",
       "title": "Pain Is Forever",
@@ -227,7 +291,7 @@
     },
     {
       "start": 3129,
-      "end": 3456,
+      "end": 3406,
       "durationSec": 278,
       "artist": "Testament",
       "title": "3 Days in Darkness",
@@ -253,7 +317,7 @@
     },
     {
       "start": 3838,
-      "end": 4357,
+      "end": 4324,
       "durationSec": 488,
       "artist": "Sylosis",
       "title": "The Path (feat. Heriot)",
@@ -292,7 +356,7 @@
     },
     {
       "start": 5435,
-      "end": 5566,
+      "end": 5490,
       "durationSec": 57,
       "artist": "Despised Icon",
       "title": "Light Speed",
@@ -305,7 +369,7 @@
     },
     {
       "start": 5566,
-      "end": 5857,
+      "end": 5767,
       "durationSec": 202,
       "artist": "Drown My Day",
       "title": "Murder",
@@ -318,7 +382,7 @@
     },
     {
       "start": 5857,
-      "end": 6242,
+      "end": 6067,
       "durationSec": 211,
       "artist": "Life of Agony",
       "title": "Lost At 22",
@@ -343,6 +407,24 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 3,
+      "text": "Brudny SMM na swojej płycie Silesian Bastards, z której wysłuchaliśmy piosenki tytułowej"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 4,
+      "quote": "Nazywam się Jarek Szubrycht"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 4,
+      "quote": "Wydawcą audycji jest Mariusz Owczarek"
+    }
+  ]
 }
