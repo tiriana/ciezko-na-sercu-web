@@ -179,12 +179,6 @@ import Base from '../../layouts/Base.astro';
         const title = document.createElement('span');
         title.textContent = entry.title;
         main.append(title);
-        if (result.tags.length > 0) {
-          const tags = document.createElement('span');
-          tags.className = 'episode-list__tags';
-          tags.textContent = result.tags.slice(0, 6).map((tag) => tag.label).join(' · ');
-          main.append(tags);
-        }
         link.append(time, main);
         item.append(link);
         list.append(item);

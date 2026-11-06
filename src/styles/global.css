@@ -1587,6 +1587,9 @@ body {
 
 main {
   flex: 1 0 auto;
+  /* Auto-marginesy w kolumnie flex kurczą element do treści, więc szerokość skakała
+     między pustą a wypełnioną listą wyników. */
+  width: 100%;
 }
 
 /* Pasek odtwarzacza jest w layoucie (transition:persist), więc przykleja się do dołu.
