@@ -98,6 +98,10 @@ const ROLE_LABELS: Record<string, string> = {
 
 export const formatRole = (role: string) => ROLE_LABELS[role] ?? role;
 
+/** Tytuł do wyświetlenia: nieoficjalny, gdy istnieje, inaczej tytuł z katalogu. */
+export const resolveDisplayTitle = (entry: { title: string; displayTitle?: string }): string =>
+  formatEpisodeTitle(entry.displayTitle ?? entry.title);
+
 export const formatEpisodeTitle = (title: string) =>
   title.replace(/godz\.\s*(\d{2})(\d{2})\b/, 'godz. $1:$2');
 

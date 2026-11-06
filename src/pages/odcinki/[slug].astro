@@ -9,7 +9,7 @@ import {
   formatClock,
   formatDate,
   formatDateTime,
-  formatEpisodeTitle,
+  resolveDisplayTitle,
   formatRole,
   formatWeekday,
   pluralEntries,
@@ -35,8 +35,8 @@ export async function getStaticPaths() {
       params: { slug: entry.slug },
       props: {
         entry,
-        older: older ? { slug: older.slug, title: formatEpisodeTitle(older.displayTitle) } : null,
-        newer: newer ? { slug: newer.slug, title: formatEpisodeTitle(newer.displayTitle) } : null,
+        older: older ? { slug: older.slug, title: resolveDisplayTitle(older) } : null,
+        newer: newer ? { slug: newer.slug, title: resolveDisplayTitle(newer) } : null,
         duplicate: duplicate
           ? {
               reason: duplicate.reason,
@@ -171,7 +171,7 @@ const creditRows = (() => {
   return [...byName.values()].sort((left, right) => left.time - right.time);
 })();
 
-const episodeTitle = formatEpisodeTitle(entry.displayTitle);
+const episodeTitle = resolveDisplayTitle(entry);
 const title = episode
   ? `${episodeTitle} — ${catalog.program.name}`
   : `${episodeTitle} — opracowanie zaplanowane`;
@@ -206,7 +206,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
       {entry.titleKind === 'unofficial' ? (
         <p class="title-note">
           {entry.titleNote ?? 'Tytuł redakcyjny.'} · Tytuł oryginalny:{' '}
-          <span>{formatEpisodeTitle(entry.title)}</span>
+          <span>{resolveDisplayTitle({ title: entry.title })}</span>
         </p>
       ) : entry.titleKind === 'technical' ? (
         <p class="title-note">Tytuł techniczny z katalogu — audycja nie ma własnego tytułu.</p>

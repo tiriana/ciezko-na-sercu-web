@@ -16,7 +16,7 @@ export interface TagIndexEntry {
   label: string;
   type: Tag['type'];
   /** Odcinki, w których tag występuje, od najnowszego. */
-  episodes: { id: string; slug: string; title: string; date: string; at?: number }[];
+  episodes: { id: string; slug: string; title: string; displayTitle?: string; date: string; at?: number }[];
 }
 
 export const TAG_TYPE_LABELS: Record<Tag['type'], string> = {
@@ -56,7 +56,14 @@ export function buildTagIndex(
     if (!episode) continue;
     for (const tag of episode.tags) {
       const current = index.get(tag.id) ?? { id: tag.id, label: tag.label, type: tag.type, episodes: [] };
-      current.episodes.push({ id: entry.id, slug: entry.slug, title: entry.title, date: entry.date, at: tag.at });
+      current.episodes.push({
+        id: entry.id,
+        slug: entry.slug,
+        title: entry.title,
+        displayTitle: entry.displayTitle,
+        date: entry.date,
+        at: tag.at,
+      });
       index.set(tag.id, current);
     }
   }

@@ -4,7 +4,7 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import { getEntries, getEpisodeFiles } from '../../lib/data';
-import { formatEpisodeTitle } from '../../lib/format';
+import { resolveDisplayTitle } from '../../lib/format';
 import { TAG_TYPE_LABELS, buildTagIndex } from '../../lib/tags';
 
 export async function getStaticPaths() {
@@ -27,7 +27,7 @@ const typeLabel = TAG_TYPE_LABELS[tag.type];
 
     <EpisodeList
       tagId={tag.id}
-      items={tag.episodes.map((episode) => ({ slug: episode.slug, date: episode.date, title: formatEpisodeTitle(episode.title) }))}
+      items={tag.episodes.map((episode) => ({ slug: episode.slug, date: episode.date, title: resolveDisplayTitle(episode) }))}
     />
   </main>
 
