@@ -2,10 +2,71 @@
   "version": 1,
   "id": "bb15e994-e32d-462c-b08e-abd2d5d2f0c7",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T01:24:31.067Z",
+  "updatedAt": "2026-11-06T03:30:59.119Z",
   "durationSec": 6843,
-  "summary": "",
-  "topics": [],
+  "summary": "W audycji Jarek Szubrycht zapowiada najciekawsze koncerty i festiwale planowane na styczeń 2026, omawiając zarówno undergroundowe wydarzenia metalowe, jak i większe projekty sceniczne. Przedstawia szczegóły festiwalu \"Niech cisza milczy nawet zimą\" w Bielsku-Białej oraz trasę Polish Metal Alliance, a także opisuje międzynarodowy Heidenfest z udziałem wielu zagranicznych zespołów. Wspomina premierę nowego albumu austriackiego projektu Elende oraz nową płytę i trasę Titanic Sea Moon, a na koniec informuje o Frozen Hardcore Fest w Warszawie. W audycji omówiono najważniejsze koncerty i festiwale metalowe stycznia 2026, począwszy od Frozen Hardcore Fest w Warszawie, przez występy grup takich jak Architects, Pure Bedlam, Counterpulse oraz Earth. Prowadzący przybliżył także projekty artystyczne, m.in. koreański projekt Mad Men’s Sprite oraz nowy album Pure Bedlam „Jubilance”. Zapowiedziano także koncerty Bellwidge i Aerial Ruin oraz ich wsparcie od 40 Watt Sun. Audycja skupia się na nadchodzących koncertach ekstremalnego metalu w Polsce w styczniu 2026 roku. Prowadzący omawia występy zespołów Bellwidge i Aerial Ruin wraz z supportem 40 Watt Sun w Warszawie i Wrocławiu. Zapowiedziano również koncert Lorna Shore na warszawskim Torwarze oraz trasę zespołu Ultimas obejmującą Szczecin, Gdynię i Kraków. Fragment kończy się refleksją nad bezpieczeństwem obchodów Sylwestra.",
+  "topics": [
+    {
+      "start": 600,
+      "end": 695,
+      "label": "Zapowiedź festiwalu \"Niech cisza milczy nawet zimą\" w Bielsku-Białej i planowane koncerty 9‑10 stycznia"
+    },
+    {
+      "start": 1330,
+      "end": 1528,
+      "label": "Polish Metal Alliance – opis projektu, skład, trasa koncertowa po Polsce w styczniu"
+    },
+    {
+      "start": 1860,
+      "end": 1916,
+      "label": "Heidenfest – międzynarodowy festiwal metalowy z wieloma zespołami, daty i miejsca w Polsce"
+    },
+    {
+      "start": 2120,
+      "end": 2162,
+      "label": "Premiera nowego albumu Elende \"Zerfol\" i zapowiedź utworu tytułowego"
+    },
+    {
+      "start": 2590,
+      "end": 2744,
+      "label": "Titanic Sea Moon – nowa podwójna płyta \"Random Acts of Senseless Kindness\" oraz trasa koncertowa po Polsce"
+    },
+    {
+      "start": 3517,
+      "end": 3520,
+      "label": "Frozen Hardcore Fest – dwudniowy festiwal w klubie Mechanik w Warszawie (16‑17 stycznia)"
+    },
+    {
+      "start": 3520,
+      "end": 3603,
+      "label": "Zapowiedź i opis festiwalu Frozen Hardcore Fest w Warszawie"
+    },
+    {
+      "start": 3780,
+      "end": 3908,
+      "label": "Prezentacja koreańskiego projektu Mad Men’s Sprite i jego muzycznych inspiracji"
+    },
+    {
+      "start": 4260,
+      "end": 4304,
+      "label": "Koncerty i premiery zespołów Architects oraz Pure Bedlam w styczniu"
+    },
+    {
+      "start": 5040,
+      "end": 5244,
+      "label": "Trasa Death Worship, Fidesz Inversa i Kringa pod szyldem „Śmierć Puka”"
+    },
+    {
+      "start": 5910,
+      "end": 6003,
+      "label": "Zapowiedź koncertu Bellwidge i Aerial Ruin oraz supportu 40 Watt Sun"
+    },
+    {
+      "start": 6843,
+      "end": 6843,
+      "label": "Koncerty Bellwidge i Aerial Ruin w Warszawie i Wrocławiu"
+    }
+  ],
   "tags": [
     {
       "id": "architects",
@@ -43,6 +104,12 @@
       "at": 1916
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "landmvrks",
       "label": "LANDMVRKS",
       "type": "artist",
@@ -71,6 +138,12 @@
       "at": 3908
     },
     {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "pralaya",
       "label": "Pralaya प्रलय",
       "type": "artist",
@@ -93,10 +166,10 @@
     },
     {
       "id": "time-is-the-ruler",
-      "label": "Time Is The Ruler",
+      "label": "Time is the Ruler",
       "type": "artist",
       "source": "tracks",
-      "at": 3603
+      "at": 2744
     },
     {
       "id": "wolf-spider",
@@ -114,28 +187,30 @@
       "artist": "Terrestrial Hospice",
       "title": "December Night",
       "album": "Caviary To the General",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 384,
-      "end": 695,
+      "end": 600,
       "durationSec": 209,
       "artist": "Pralaya प्रलय",
       "title": "Deathcrown",
       "album": "Beyond the Tattered Curtain of Unspeakable Madness",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 695,
-      "end": 1528,
+      "end": 1330,
       "durationSec": 643,
       "artist": "Loathfinder",
       "title": "Peel it off me",
@@ -148,7 +223,7 @@
     },
     {
       "start": 1528,
-      "end": 1916,
+      "end": 1860,
       "durationSec": 269,
       "artist": "Wolf Spider",
       "title": "VII XV",
@@ -161,7 +236,7 @@
     },
     {
       "start": 1916,
-      "end": 2162,
+      "end": 2120,
       "durationSec": 207,
       "artist": "Finntroll",
       "title": "Trollhammaren",
@@ -174,33 +249,48 @@
     },
     {
       "start": 2162,
-      "end": 3603,
+      "end": 2590,
       "durationSec": 433,
       "artist": "Ellende",
       "title": "Zerfall (Video Version)",
       "album": "Zerfall (Video Version) - Single",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 2744,
+      "end": 3517,
+      "durationSec": 774,
+      "artist": "Time is the Ruler",
+      "title": null,
+      "album": "Opt Out",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 3603,
-      "end": 3908,
+      "end": 3780,
       "durationSec": 192,
       "artist": "Time Is The Ruler",
       "title": "The Tension",
       "album": "Opt Out",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 3908,
-      "end": 4304,
+      "end": 4260,
       "durationSec": 257,
       "artist": "Madmans Esprit",
       "title": "Please Stop Loving Me",
@@ -218,9 +308,10 @@
       "artist": "Architects",
       "title": "Whiplash",
       "album": "The Sky, the Earth & All Between",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -231,7 +322,7 @@
       "artist": "LANDMVRKS",
       "title": "Blood Red",
       "album": "The Darkest Place I've Ever Been",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -239,7 +330,7 @@
     },
     {
       "start": 4822,
-      "end": 5244,
+      "end": 5040,
       "durationSec": 214,
       "artist": "Pure Bedlam",
       "title": "Houseburning Party",
@@ -252,14 +343,15 @@
     },
     {
       "start": 5244,
-      "end": 6003,
+      "end": 5910,
       "durationSec": 682,
       "artist": "Earth",
       "title": "Hell's Winter",
       "album": "Angels of Darkness, Demons of Light 1",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -283,13 +375,68 @@
       "artist": "Lorna Shore",
       "title": "Oblivion",
       "album": "I Feel The Everblack Festering Within Me",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 254,
+      "text": "Uroki grudniowej nocy opiewał dla państwa zespół Terrestrial Hospice, który rusza w Polskę siać zgorszenie i zniszczenie w towarzystwie grup Pralaja i Upon the Altar."
+    },
+    {
+      "start": 288,
+      "text": "Nieprzekonanych na pewno przekona Pralaja próbką ich tegorocznej debiutanckiej płyty Beyond the Tattered Curtain of Unspeakable Madness."
+    },
+    {
+      "start": 2120,
+      "text": "Elende już 2 stycznia wydają swój nowy album zatytułowany Zerfol i opatrzony piękną okładką."
+    },
+    {
+      "start": 3520,
+      "text": "Na zachętę posłuchamy Time is the Ruler z ich tegorocznego debiutu Opt Out"
+    },
+    {
+      "start": 3600,
+      "text": "Time is the Ruler."
+    },
+    {
+      "start": 3820,
+      "text": "koreański artysta Kyuho wpadł, bo to on stoi za Mad Men's Sprite"
+    },
+    {
+      "start": 4260,
+      "text": "Gwiazda wieczoru będzie grupa Architects, która w tym roku wydała świetny album The Sky, The Earth and All Between"
+    },
+    {
+      "start": 5040,
+      "text": "Death Worship to plugawy, bezlitosny black death metal z Kanady, obecnie chyba z Niemiec"
+    },
+    {
+      "start": 5400,
+      "text": "25 stycznia w klubie Kwadrat hipnotyzować mnie będą swoimi dronami i mrokami Amerykanie z Earth"
+    },
+    {
+      "start": 6843,
+      "text": "tegoroczny album Lorna Shore, czyli znakomity I Feel the Ever Black Festering Within Me"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 261,
+      "quote": "Dobry wieczór mówi wam Jarek Szubrycht w imieniu własnym"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 261,
+      "quote": "oraz Mariusza Owczarka, wydawcy audycji"
+    }
+  ]
 }

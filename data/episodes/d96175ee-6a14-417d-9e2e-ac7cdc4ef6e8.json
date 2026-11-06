@@ -2,10 +2,71 @@
   "version": 1,
   "id": "d96175ee-6a14-417d-9e2e-ac7cdc4ef6e8",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T01:24:31.067Z",
+  "updatedAt": "2026-11-06T03:30:59.120Z",
   "durationSec": 6902,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek poświęcony Arturowi Rumińskiemu i jego licznym projektom muzycznym. Punktem wyjścia jest Project Mishram, indyjski zespół łączący metal z ragami karnatackimi, co prowadzi do pytania, czy metal jest jeszcze gatunkiem, czy raczej rodzajem ekspresji. Rumiński omawia aktywne przedsięwzięcia — instrumentalny ARM, smolisty i eksperymentalny TOW, Furię, Mentors, studyjny Grieving, Gruzję oraz solową muzykę ambientowo-dronową z przetwarzanej gitary — a także punkowo-hardcorowe początki, grę w Nowym Jorku i dołączenie do Furii. Osobny wątek stanowi teatr: Wesele w Teatrze Starym i Termopile Polskie w Teatrze Narodowym w reżyserii Jana Klaty, setny spektakl Wesela oraz nowa publiczność odkrywająca zespół. W części podsumowującej rok pojawiają się albumy Chat Pile z Haydenem Pedigo, Koronera i Swans, muzyka ECM Records, Ghosted i Piotra Kurka, a także refleksja o nadmiarze współczesnej muzyki. Całość zamyka wskazanie Black Sabbath i płyty Paranoid jako najważniejszego źródła.",
+  "topics": [
+    {
+      "start": 610,
+      "end": 731,
+      "label": "Project Mishram i metal łączony z muzyką karnatacką"
+    },
+    {
+      "start": 1269,
+      "end": 1406,
+      "label": "Projekty: ARM, TOW, Furia, Mentors, Grieving, Gruzja, solo"
+    },
+    {
+      "start": 2191,
+      "end": 2346,
+      "label": "Punkowo-hardcorowe początki, scena sosnowiecka, wyjazd do Nowego Jorku"
+    },
+    {
+      "start": 2346,
+      "end": 2505,
+      "label": "Dołączenie do Furii i poszerzanie granic black metalu"
+    },
+    {
+      "start": 2505,
+      "end": 2544,
+      "label": "Płyty Nocel i Księżyc milczy luty, otwarcie na eksperymenty"
+    },
+    {
+      "start": 3397,
+      "end": 3649,
+      "label": "Wesele w Teatrze Starym i współpraca z Janem Klatą"
+    },
+    {
+      "start": 3649,
+      "end": 3782,
+      "label": "Setny spektakl Wesela i nowa teatralna publiczność"
+    },
+    {
+      "start": 4005,
+      "end": 4288,
+      "label": "Gruzja i Termopile Polskie w Teatrze Narodowym"
+    },
+    {
+      "start": 4753,
+      "end": 4934,
+      "label": "Chat Pile i Hayden Pedigo, album In the Earth Again"
+    },
+    {
+      "start": 4934,
+      "end": 5157,
+      "label": "Podsumowania roku, płyty Koronera i Swans"
+    },
+    {
+      "start": 5513,
+      "end": 5862,
+      "label": "Nadmiar współczesnej muzyki i poszukiwanie nowych dźwięków"
+    },
+    {
+      "start": 5862,
+      "end": 5946,
+      "label": "Black Sabbath i Paranoid jako najważniejsze źródło"
+    }
+  ],
   "tags": [
     {
       "id": "arrm",
@@ -80,7 +141,7 @@
     },
     {
       "start": 548,
-      "end": 731,
+      "end": 610,
       "durationSec": 63,
       "artist": "Project Mishram",
       "title": "Tamasat",
@@ -93,7 +154,7 @@
     },
     {
       "start": 731,
-      "end": 1406,
+      "end": 1269,
       "durationSec": 386,
       "artist": "Project Mishram",
       "title": "LIBERATE",
@@ -106,7 +167,7 @@
     },
     {
       "start": 1406,
-      "end": 2544,
+      "end": 2191,
       "durationSec": 680,
       "artist": "ARRM",
       "title": "Birth (feat. Wacław Zimpel)",
@@ -119,7 +180,7 @@
     },
     {
       "start": 2544,
-      "end": 3782,
+      "end": 3397,
       "durationSec": 847,
       "artist": "Furia",
       "title": "Tam Jest Tu",
@@ -132,7 +193,7 @@
     },
     {
       "start": 3782,
-      "end": 4288,
+      "end": 4005,
       "durationSec": 225,
       "artist": "Gruzja",
       "title": "Aleksandria",
@@ -145,7 +206,7 @@
     },
     {
       "start": 4288,
-      "end": 5157,
+      "end": 4753,
       "durationSec": 466,
       "artist": "Thaw",
       "title": "In the Laughter and the Stride",
@@ -158,7 +219,7 @@
     },
     {
       "start": 5157,
-      "end": 5946,
+      "end": 5513,
       "durationSec": 357,
       "artist": "Coroner",
       "title": "Sacrificial Lamb",

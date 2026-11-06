@@ -2,10 +2,71 @@
   "version": 1,
   "id": "ea2fda3a-43df-41d5-9006-5bca93fce00e",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T01:24:31.068Z",
+  "updatedAt": "2026-11-06T03:30:59.120Z",
   "durationSec": 7008,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek poświęcony łączeniu metalu z gatunkami, które wydają się z nim nie do pogodzenia — tytułowym „stopom metali”. Punktem wyjścia jest rap-metal Anthraxu i mini-album „I'm the Man”, prowadzący do nu metalu, horrorcore'u Ho99o9 oraz do rapera Daleka, który z perkusistą Charlesem Haywardem nagrał jedną z najlepszych płyt roku. Metal spotyka się z amerikaną na „American Gothic” Wayfarer i w mrocznych pieśniach Chelsea Wolfe z płyty „She Reaches Out to She Reaches Out to She”. Z elektroniką łączą go remiksy Fear Factory („Fear Is the Mind Killer”) i Vadera („Kingdom”), a także twórczość The Prodigy i japoński J-pop Babymetal. Dalej pojawiają się blackgaze Deafheaven na „Lonely People With Power” oraz eklektyzm londyńskiego Chrome Hoof. Całość zamykają black metal z gospel u Zeal & Ardor, metal z reggae u Aurora Wave („Monument”) i jazzowa koda w wykonaniu The Kilimanjaro Darkjazz Ensemble oraz Neptunian Maximalism.",
+  "topics": [
+    {
+      "start": 382,
+      "end": 397,
+      "label": "Rap-metal Anthraxu, nu metal i horrorcore Ho99o9"
+    },
+    {
+      "start": 575,
+      "end": 731,
+      "label": "Dalek i Charles Hayward — wspólny album"
+    },
+    {
+      "start": 892,
+      "end": 947,
+      "label": "Wayfarer i americana na „American Gothic”"
+    },
+    {
+      "start": 1772,
+      "end": 1869,
+      "label": "Chelsea Wolfe — „She Reaches Out to She”"
+    },
+    {
+      "start": 2127,
+      "end": 2196,
+      "label": "Fear Factory i remiksy „Fear Is the Mind Killer”"
+    },
+    {
+      "start": 2554,
+      "end": 3053,
+      "label": "Vader i remiksy z minialbumu „Kingdom”"
+    },
+    {
+      "start": 3053,
+      "end": 3152,
+      "label": "The Prodigy — techno w świecie metalu"
+    },
+    {
+      "start": 3407,
+      "end": 3485,
+      "label": "Babymetal — metal połączony z J-popem"
+    },
+    {
+      "start": 3927,
+      "end": 3984,
+      "label": "Deafheaven i blackgaze na „Lonely People With Power”"
+    },
+    {
+      "start": 5110,
+      "end": 5260,
+      "label": "Zeal & Ardor — black metal połączony z gospel"
+    },
+    {
+      "start": 5331,
+      "end": 5449,
+      "label": "Aurora Wave — metal i reggae na „Monument”"
+    },
+    {
+      "start": 5800,
+      "end": 5900,
+      "label": "Jazzowa koda: Kilimanjaro Darkjazz Ensemble i Neptunian Maximalism"
+    }
+  ],
   "tags": [
     {
       "id": "anthrax",
@@ -116,7 +177,7 @@
   "tracks": [
     {
       "start": 12,
-      "end": 397,
+      "end": 382,
       "durationSec": 183,
       "artist": "Anthrax",
       "title": "I'm the Man (Def Uncensored Version)",
@@ -129,7 +190,7 @@
     },
     {
       "start": 397,
-      "end": 731,
+      "end": 575,
       "durationSec": 178,
       "artist": "Ho99o9",
       "title": "LA Riots",
@@ -142,7 +203,7 @@
     },
     {
       "start": 731,
-      "end": 947,
+      "end": 892,
       "durationSec": 162,
       "artist": "Dälek & Charles Hayward",
       "title": "Breathe Slow",
@@ -168,7 +229,7 @@
     },
     {
       "start": 1427,
-      "end": 1869,
+      "end": 1772,
       "durationSec": 346,
       "artist": "Wayfarer",
       "title": "Black Plumes Over God’s Country",
@@ -181,7 +242,7 @@
     },
     {
       "start": 1869,
-      "end": 2196,
+      "end": 2127,
       "durationSec": 259,
       "artist": "Chelsea Wolfe",
       "title": "House Of Self-Undoing",
@@ -194,7 +255,7 @@
     },
     {
       "start": 2196,
-      "end": 3152,
+      "end": 2554,
       "durationSec": 359,
       "artist": "Fear Factory",
       "title": "Self Immolation (Liquid Sky Mix)",
@@ -207,7 +268,7 @@
     },
     {
       "start": 3152,
-      "end": 3485,
+      "end": 3407,
       "durationSec": 257,
       "artist": "The Prodigy",
       "title": "Run with the Wolves",
@@ -246,7 +307,7 @@
     },
     {
       "start": 3782,
-      "end": 3984,
+      "end": 3927,
       "durationSec": 146,
       "artist": "Bambie Thug",
       "title": "REDRUM",
@@ -298,7 +359,7 @@
     },
     {
       "start": 4891,
-      "end": 5260,
+      "end": 5110,
       "durationSec": 221,
       "artist": "Chrome Hoof",
       "title": "Leave This Ruined Husk",
@@ -311,7 +372,7 @@
     },
     {
       "start": 5260,
-      "end": 5449,
+      "end": 5331,
       "durationSec": 72,
       "artist": "Zeal & Ardor",
       "title": "Wake of a Nation",
@@ -337,7 +398,7 @@
     },
     {
       "start": 5597,
-      "end": 5900,
+      "end": 5800,
       "durationSec": 205,
       "artist": "aurorawave",
       "title": "Judge Me (feat. Aaron Gillespie)",
