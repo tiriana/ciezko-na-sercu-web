@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "episodeId": "669a19b6-7598-4a3c-bf06-255596c73549",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109924844,
+  "fileMtimeMs": 1789151194836.7483,
+  "windows": [
+    {
+      "index": 0,
+      "start": 4.1,
+      "end": 9.4
+    },
+    {
+      "index": 1,
+      "start": 204.74,
+      "end": 396.51
+    },
+    {
+      "index": 2,
+      "start": 637.38,
+      "end": 670.84
+    },
+    {
+      "index": 3,
+      "start": 870.08,
+      "end": 911.23
+    },
+    {
+      "index": 4,
+      "start": 1278.34,
+      "end": 1327.9
+    },
+    {
+      "index": 5,
+      "start": 1352.71,
+      "end": 1410.3
+    },
+    {
+      "index": 6,
+      "start": 1548.39,
+      "end": 1602.94
+    },
+    {
+      "index": 7,
+      "start": 1803.59,
+      "end": 1841.02
+    },
+    {
+      "index": 8,
+      "start": 1870.95,
+      "end": 1874.46
+    },
+    {
+      "index": 9,
+      "start": 1935.84,
+      "end": 1947.84
+    },
+    {
+      "index": 10,
+      "start": 2049.57,
+      "end": 2125.37
+    },
+    {
+      "index": 11,
+      "start": 2375.81,
+      "end": 2407.87
+    },
+    {
+      "index": 12,
+      "start": 2769.41,
+      "end": 2806.78
+    },
+    {
+      "index": 13,
+      "start": 3162.6,
+      "end": 3229.69
+    },
+    {
+      "index": 14,
+      "start": 3432.1,
+      "end": 3499.2
+    },
+    {
+      "index": 15,
+      "start": 3765.16,
+      "end": 3801.72
+    },
+    {
+      "index": 16,
+      "start": 3990.5,
+      "end": 4033.56
+    },
+    {
+      "index": 17,
+      "start": 4315.43,
+      "end": 4385.95
+    },
+    {
+      "index": 18,
+      "start": 4809.28,
+      "end": 4837.85
+    },
+    {
+      "index": 19,
+      "start": 5194.56,
+      "end": 5242.84
+    },
+    {
+      "index": 20,
+      "start": 5459.81,
+      "end": 5520.96
+    },
+    {
+      "index": 21,
+      "start": 5748.16,
+      "end": 5785.92
+    },
+    {
+      "index": 22,
+      "start": 5994.72,
+      "end": 6075.9
+    }
+  ],
+  "segments": [
+    {
+      "start": 4.1,
+      "end": 7.54,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 205.52,
+      "end": 211.74,
+      "text": "Powitał nas zespół Everything is Fire i rzeczywiście dzisiaj będzie ogień."
+    },
+    {
+      "start": 212.46,
+      "end": 216.96,
+      "text": "Witam Was i ja, Jarek Szubrycht w audycji Ciężko na sercu,"
+    },
+    {
+      "start": 217.42,
+      "end": 221.18,
+      "text": "którą wydaje Mariusz Owczarek i też Was wita."
+    },
+    {
+      "start": 221.82,
+      "end": 230.88,
+      "text": "Dzisiaj zapraszam do zapoznania się z kilkunastoma utworami autorstwa"
+    },
+    {
+      "start": 230.88,
+      "end": 236.46,
+      "text": "wyłącznie polskich artystów. Już podobną audycję robiłem jakiś czas temu."
+    },
+    {
+      "start": 237.78,
+      "end": 245.84,
+      "text": "Przedstawiałem grupy, które zgłosiły się i przeszły do półfinału konkursu"
+    },
+    {
+      "start": 245.84,
+      "end": 250.44,
+      "text": "Road to Mystic organizowanego w 2024 roku."
+    },
+    {
+      "start": 251.16,
+      "end": 260.52,
+      "text": "Teraz mamy rok kolejny, 2025 i kolejną edycję, której półfinał już za nami."
+    },
+    {
+      "start": 260.52,
+      "end": 267.26,
+      "text": "Wyczekałem do tego momentu, dlatego że nie chciałem wybierając pewne zespoły,"
+    },
+    {
+      "start": 267.72,
+      "end": 272.66,
+      "text": "niczego sugerować, bo to są moje osobiste preferencje."
+    },
+    {
+      "start": 273.54,
+      "end": 278.18,
+      "text": "Te wybory fanów muzyki już za nami."
+    },
+    {
+      "start": 278.84,
+      "end": 284.74,
+      "text": "Czwórka finalistów Road to Mystic zaprezentuje się 26 kwietnia"
+    },
+    {
+      "start": 284.74,
+      "end": 292.18,
+      "text": "w gdańskim klubie Drizzly Grizzly. To jest dokładnie ten sam klub, który na festiwalu"
+    },
+    {
+      "start": 292.18,
+      "end": 301.88,
+      "text": "przeistacza się w Sabbath Stage i jeden z tych czterech zespołów zagra na Mystic festiwalu."
+    },
+    {
+      "start": 302,
+      "end": 306.7,
+      "text": "Czasem okazuje się, że mogą zagrać dwa, ale tego jeszcze dzisiaj nie wiemy."
+    },
+    {
+      "start": 306.78,
+      "end": 309.96,
+      "text": "26 kwietnia wszystko się okaże."
+    },
+    {
+      "start": 310.06,
+      "end": 314.52,
+      "text": "Wstęp na ten koncert jest wolny, więc oczywiście zapraszam wszystkich,"
+    },
+    {
+      "start": 314.68,
+      "end": 318.74,
+      "text": "którzy będą w pobliżu. Będzie dobra zabawa i dużo dobrej muzyki."
+    },
+    {
+      "start": 318.74,
+      "end": 326.24,
+      "text": "A dzisiaj wciężko na sercu dobrej muzyki jeszcze więcej, bo mamy na to aż dwie godziny."
+    },
+    {
+      "start": 326.88,
+      "end": 332.38,
+      "text": "I to moje najdłuższe wejście, to powitalne, bo postaram się jak najmniej gadać,"
+    },
+    {
+      "start": 332.46,
+      "end": 334.8,
+      "text": "żeby móc jak najwięcej zagrać."
+    },
+    {
+      "start": 335.3,
+      "end": 340.8,
+      "text": "Niestety wszystkich 50 półfinalistów zagrać nie jestem w stanie."
+    },
+    {
+      "start": 340.8,
+      "end": 345.5,
+      "text": "Musiałem dokonywać wyborów, często bardzo trudnych, ale pocieszam się"
+    },
+    {
+      "start": 345.5,
+      "end": 350.6,
+      "text": "i pocieszam Was, że wydaje mi się, że do wszystkich właściwie tych grup"
+    },
+    {
+      "start": 350.6,
+      "end": 356.48,
+      "text": "prędzej czy później będę wracał, bo poziom zgłoszeń nie po raz pierwszy."
+    },
+    {
+      "start": 356.56,
+      "end": 359.76,
+      "text": "Zresztą w tym roku nadzwyczaj wysoki."
+    },
+    {
+      "start": 360.54,
+      "end": 365.94,
+      "text": "A więc jak już wspomniałem, powitała nas grupa Everything is Fire,"
+    },
+    {
+      "start": 365.94,
+      "end": 374.62,
+      "text": "a pozostając w tej konwencji posłuchamy grupy Ionian, zespołu z Gdańska,"
+    },
+    {
+      "start": 375.4,
+      "end": 380.32,
+      "text": "stworzonego przez starych wyjadaczy, chociaż szyld nowy,"
+    },
+    {
+      "start": 381.04,
+      "end": 389.36,
+      "text": "no ale i muzyka świeża, trzeba przyznać, choć mieszcząca się w gatunku,"
+    },
+    {
+      "start": 390.02,
+      "end": 394.94,
+      "text": "którym można po prostu określić mianem death metalu."
+    },
+    {
+      "start": 395.94,
+      "end": 396.48,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 637.38,
+      "end": 651.1,
+      "text": "Bardzo różne zespoły zgłaszają się do Road to Mystic. Bardzo szerokie jest to spektrum ciężkiej muzyki, którą chętnie widzimy później na scenach Mystic Festiwalu."
+    },
+    {
+      "start": 651.1,
+      "end": 662.26,
+      "text": "Więc z jednej strony może to być właśnie death metal, ekstremalny black metal, a z drugiej strony mogą to być takie rzeczy jak grupa Negative Paradise z Konina."
+    },
+    {
+      "start": 662.88,
+      "end": 668.72,
+      "text": "Nie będę długo Wam opowiadał, co to trio robi. Sami posłuchajcie."
+    },
+    {
+      "start": 870.08,
+      "end": 885.08,
+      "text": "Panom technicznego trash death metalu, szczególnie fanom z Warszawy tego zespołu przedstawiać nie trzeba, bo on już od dłuższego czasu robi sporo zamieszania."
+    },
+    {
+      "start": 885.08,
+      "end": 909.26,
+      "text": "Zespół Species, bardzo dobra technicznie zaawansowana grupa, która powoli, może nawet trochę zbyt wolno jak na ich umiejętności rozwija swoją karierę, ale liczę na to, że lada moment pojawi się nowy materiał i Species wykonają już nie krok naprzód, ale skok."
+    },
+    {
+      "start": 1279.34,
+      "end": 1283.78,
+      "text": "Przed nami zespół z Bydgoszczy, który nazywa się Technofobia."
+    },
+    {
+      "start": 1284.48,
+      "end": 1291.2,
+      "text": "I jak mniemam, nie chodzi o to, że boją się technicznego grania takiego, jakie proponuje zespół Spises,"
+    },
+    {
+      "start": 1291.38,
+      "end": 1294.98,
+      "text": "ale na przykład, że być może boją się muzyki techno chyba też, nie?"
+    },
+    {
+      "start": 1295.58,
+      "end": 1306.16,
+      "text": "Może na przykład technologii, która wkracza do każdej dziedziny naszego życia, zabierając nam pracę oraz duszę."
+    },
+    {
+      "start": 1306.16,
+      "end": 1309.82,
+      "text": "Ja trochę się boję, muszę przyznać."
+    },
+    {
+      "start": 1310.28,
+      "end": 1318.98,
+      "text": "Technofobia wydała swoją debiutancką epkę Anti-Human Terror pod koniec ubiegłego roku."
+    },
+    {
+      "start": 1319.78,
+      "end": 1326.34,
+      "text": "I właśnie z tego wydawnictwa posłuchamy utworu, który jest propozycją prostą, bezpośrednią i konkretną."
+    },
+    {
+      "start": 1326.34,
+      "end": 1327.9,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1352.71,
+      "end": 1382.69,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 1382.71,
+      "end": 1412.69,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 1549.23,
+      "end": 1565.73,
+      "text": "Wieczny mróz. Chcielibyście. Na szczęście już przyszła wiosna i wieczny mróz ustępuje ptaszkom i promieniom słońca, a właściwie ptaszkom grzejącym się w promieniach słońca."
+    },
+    {
+      "start": 1565.73,
+      "end": 1588.25,
+      "text": "Natomiast Wieczny mróz zespół z Łodzi nie ustępuje nikomu, nie zna litości, choć ma na koncie singiel zatytułowany Litość, gra muzykę łączącą wpływy def metalu, thrash metalu, black metalu, różnych gatunków."
+    },
+    {
+      "start": 1588.25,
+      "end": 1599.63,
+      "text": "Ważne, że robi to z serca surowo, bezkompromisowo. No i takie rzeczy też na Road to Mystic się zdarzają."
+    },
+    {
+      "start": 1804.39,
+      "end": 1827.95,
+      "text": "Nazwa zespołu Viria, i tu czytam z przesłanego przez nich biogramu, oznacza nie tylko pozytywną energię i determinację, ale jest też manifestem zespołu, przekonaniem, że każdy koncert to nie tylko muzyczne przeżycie, ale prawdziwe katarzis, które ma wyzwalać energię i moc w publiczności."
+    },
+    {
+      "start": 1829.43,
+      "end": 1839.47,
+      "text": "Nie wiem jeszcze jak z koncertami, ale muszę przyznać, że w wersji studyjnej Viria jest całkiem, całkiem przekonująca."
+    },
+    {
+      "start": 1870.95,
+      "end": 1874.47,
+      "text": "What would you hide or possibly"
+    },
+    {
+      "start": 1935.84,
+      "end": 1947.84,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2049.57,
+      "end": 2070.75,
+      "text": "Bardzo mi się to podoba, że te nowe zespoły prezentują tak bardzo szerokie spektrum ciężkiego grania, że mniej jest teraz niż chociażby w latach dziewięćdziesiątych trendów, które w jakimś czasie obowiązywały właściwie większość sceny."
+    },
+    {
+      "start": 2070.75,
+      "end": 2087.73,
+      "text": "Kiedy grało się thrash, to prawie wszyscy grali thrash, potem kiedy death metal wszedł do biegu, to albo ci thrashowcy przerzucili się na death metal, albo przyszło trochę młodsze pokolenie, które właśnie death metal ćwiczyło, potem black metal i tak dalej, i tak dalej."
+    },
+    {
+      "start": 2088.47,
+      "end": 2099.39,
+      "text": "Dzisiaj wszyscy, wszystko wszędzie naraz grają i super, i tak jest dobrze i dzięki temu mamy dużo nowej, bardzo zróżnicowanej muzyki."
+    },
+    {
+      "start": 2099.39,
+      "end": 2111.73,
+      "text": "Na przykład taki skow z Wrocławia, który łączy punk, black metal i jeszcze jakieś inne wpływy, bardziej alternatywne, sludge."
+    },
+    {
+      "start": 2112.65,
+      "end": 2113.43,
+      "text": "Trudno powiedzieć."
+    },
+    {
+      "start": 2113.43,
+      "end": 2121.85,
+      "text": "W każdym razie robi to dobrze, robi to z pełną energią, robi to na surowo, tak jak trzeba."
+    },
+    {
+      "start": 2123.21,
+      "end": 2125.37,
+      "text": "JTK Blackout"
+    },
+    {
+      "start": 2375.81,
+      "end": 2386.07,
+      "text": "Impermanence to sąsiedzi z Krakowa, może się mijamy na ulicach, ale się nie znamy, choć na pewno lada moment się poznamy,"
+    },
+    {
+      "start": 2386.07,
+      "end": 2396.97,
+      "text": "bo pewnie zobaczę ich koncert w którymś z klubów. Łączą techniczny death metal z wpływami black metalu i robią to dobrze."
+    },
+    {
+      "start": 2397.09,
+      "end": 2405.83,
+      "text": "Póki co mają na koncie dwa single, ale przygotowują się do wydania płyty, no a ja z ciekawością na tę płytę czekam."
+    },
+    {
+      "start": 2769.41,
+      "end": 2783.49,
+      "text": "Heresy Denied pochodzą z Poznania. Grają razem już od dobrych kilkunastu lat i to słychać, słychać to doświadczenie, słychać, że są tu umiejętności, jest tu myśl."
+    },
+    {
+      "start": 2784.69,
+      "end": 2805.07,
+      "text": "Debutancki album Heresy Denied ukazał się w 2016 roku, w 2022 kolejny, a 2024 to singiel i tego właśnie za chwilę posłuchamy, Lifeless Silkwets, no i oby tak dalej, panowie, oby tak dalej."
+    },
+    {
+      "start": 3162.6,
+      "end": 3170.7,
+      "text": "Album The Art of Death to podróż w ukryte zakątki ludzkich cierpień, zmagań oraz emocji."
+    },
+    {
+      "start": 3171.3,
+      "end": 3177.08,
+      "text": "Tych dodających skrzydeł oraz tych sprowadzających na samo dno."
+    },
+    {
+      "start": 3178.4,
+      "end": 3181.82,
+      "text": "Czytam w notce o zespole Error Theory."
+    },
+    {
+      "start": 3181.82,
+      "end": 3187.82,
+      "text": "Brzmi to dosyć patetycznie, może nawet trochę pretensjonalnie, ale muzyka fantastyczna."
+    },
+    {
+      "start": 3188.48,
+      "end": 3197.52,
+      "text": "Naprawdę The Art of Death nie bez powodu i nie bez pokrycia ma tę sztukę w tytule płyty."
+    },
+    {
+      "start": 3197.64,
+      "end": 3204.06,
+      "text": "Error Theory to jest jedno z moich prywatnych, większych odkryć tegorocznej edycji Road to Mystic."
+    },
+    {
+      "start": 3204.14,
+      "end": 3207.46,
+      "text": "Będę się bardzo pilnie temu zespołowi przyglądał."
+    },
+    {
+      "start": 3211.96,
+      "end": 3229.7,
+      "text": "Wielkie prawa zastrzeżone."
+    },
+    {
+      "start": 3432.36,
+      "end": 3436.02,
+      "text": "Czy w konkursie pojawiają się zespoły black metalowe?"
+    },
+    {
+      "start": 3436.6,
+      "end": 3437.34,
+      "text": "Jeszcze jak."
+    },
+    {
+      "start": 3437.9,
+      "end": 3439.64,
+      "text": "Na przykład taki KIR."
+    },
+    {
+      "start": 3440.12,
+      "end": 3443.68,
+      "text": "KIR to projekt założony przez muzyków Porońce i Autre,"
+    },
+    {
+      "start": 3444.28,
+      "end": 3448.76,
+      "text": "który, cytuję, eksploruje najniższe poziomy ludzkiej natury"
+    },
+    {
+      "start": 3448.76,
+      "end": 3453.54,
+      "text": "stłamszonej pod betonowym butem miasta."
+    },
+    {
+      "start": 3453.66,
+      "end": 3457.62,
+      "text": "No jak tak się przysłuchać temu, co tutaj nagrywają,"
+    },
+    {
+      "start": 3458.42,
+      "end": 3461.6,
+      "text": "to tak, jest, jest ten betonowy."
+    },
+    {
+      "start": 3461.6,
+      "end": 3462.9,
+      "text": "Bud miasta."
+    },
+    {
+      "start": 3464.2,
+      "end": 3468.54,
+      "text": "Lapelle du vide, mam nadzieję, że tak się to czyta,"
+    },
+    {
+      "start": 3468.76,
+      "end": 3470.32,
+      "text": "a może du vide? Nie wiem."
+    },
+    {
+      "start": 3470.74,
+      "end": 3473.86,
+      "text": "Proszę nie tytułować płyt po francusku,"
+    },
+    {
+      "start": 3473.94,
+      "end": 3475.66,
+      "text": "jeżeli chcecie, żebym miał ciężko na sercu,"
+    },
+    {
+      "start": 3476.32,
+      "end": 3479.68,
+      "text": "nie łamał sobie języka i nie gwałcił wam uszu,"
+    },
+    {
+      "start": 3479.76,
+      "end": 3481.48,
+      "text": "próbując to odczytać."
+    },
+    {
+      "start": 3481.48,
+      "end": 3486.48,
+      "text": "To jeden z najciekawszych polskich metalowych materiałów ubiegłego roku."
+    },
+    {
+      "start": 3486.84,
+      "end": 3489.82,
+      "text": "Nie zmieściłem go niestety w podsumowaniu,"
+    },
+    {
+      "start": 3489.98,
+      "end": 3492.52,
+      "text": "ale teraz triumfalnie powraca."
+    },
+    {
+      "start": 3493.1,
+      "end": 3495.14,
+      "text": "Kir w utworze momentu."
+    },
+    {
+      "start": 3495.96,
+      "end": 3497.6,
+      "text": "Przez z tego dnia."
+    },
+    {
+      "start": 3498.6,
+      "end": 3499.2,
+      "text": "Zdjęcie."
+    },
+    {
+      "start": 3766,
+      "end": 3786.74,
+      "text": "Diving Stove z Warszawy to jest zespół, który lokalnie robi sporo zamieszania i trudno się dziwić, bo tak grany thrash, bardzo staroszkolnie, z bardzo łatwo odszyfrowywalnymi inspiracjami, a no musi się sprawdzać na koncertach."
+    },
+    {
+      "start": 3786.74,
+      "end": 3797.04,
+      "text": "Jestem przekonany, że to jest petarda. Diving Stove zatem, póki co w wersji niekoncertowej, no ale to tylko na zachętę."
+    },
+    {
+      "start": 3797.04,
+      "end": 3801.72,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3990.5,
+      "end": 4001.48,
+      "text": "Bardzo dziękuję zespołowi Maruntuka, że napisał sobie tak ładną notkę, że nie muszę nic wymyślać, tylko po prostu to przeczytam."
+    },
+    {
+      "start": 4002.36,
+      "end": 4009.5,
+      "text": "Maruntuka to taki trochę bękart Joba i Eldera, porzucony i wychowany przez mgłę."
+    },
+    {
+      "start": 4010.08,
+      "end": 4017.58,
+      "text": "Bleki, sladże, łamańce, śluz, melodyjki, a na żywo spastyczny, tego nie przeczytam."
+    },
+    {
+      "start": 4017.86,
+      "end": 4027.64,
+      "text": "Wydali niedawno debiut o tytule UZ, który zabierze ciebie, drogi słuchaczu, w mroczną podróż do bagnistej krainy."
+    },
+    {
+      "start": 4028.12,
+      "end": 4032.12,
+      "text": "I pamiętaj, że na nadzieję jest już za późno."
+    },
+    {
+      "start": 4316.43,
+      "end": 4338.69,
+      "text": "Czernina. Bardzo piękna nazwa. Bardzo mi się podoba, kiedy zespoły wyszukują w polszczyźnie takich terminów trochę zapomnianych w codziennym języku, trochę porzuconych, trochę przykrytych już pajęczyną, by nadać im zupełnie nowych znaczeń."
+    },
+    {
+      "start": 4339.69,
+      "end": 4353.31,
+      "text": "Czernina gra, różne rzeczy gra, bo jest tu i Black, i Sludge, i Prototrush, i Hardcore, i Noise, i różne inne dźwięki."
+    },
+    {
+      "start": 4353.43,
+      "end": 4367.09,
+      "text": "Wszystko to jakoś zlepione w przekonującą całość, czy też, jak życzy sobie zespół, wychodzi absolutny kwas w dobrym tego słowa znaczeniu."
+    },
+    {
+      "start": 4368.57,
+      "end": 4376.41,
+      "text": "Słuchamy utworu z płyty wydanej w ubiegłym roku, która nosi tytuł Na pograniczu usidlenia."
+    },
+    {
+      "start": 4376.79,
+      "end": 4381.49,
+      "text": "I muszę przyznać, że rzeczywiście ja też już jestem przez Czerninę prawie usidlony."
+    },
+    {
+      "start": 4809.28,
+      "end": 4814.8,
+      "text": "Doom metal i okolice też są obecne w Road to Mystic. Oczywiście, że są."
+    },
+    {
+      "start": 4815.6,
+      "end": 4822.02,
+      "text": "Weźmy taki zespół Metallus. I znowu cytuję, majestatyczny niczym katedra,"
+    },
+    {
+      "start": 4822.4,
+      "end": 4827.06,
+      "text": "powolny niczym góra. No ja nie wiem swoją drogą, czy góra jest powolna."
+    },
+    {
+      "start": 4827.06,
+      "end": 4829.64,
+      "text": "Wydaje mi się, że raczej nieruchoma, no ale niech będzie."
+    },
+    {
+      "start": 4830.62,
+      "end": 4835.9,
+      "text": "I, to mi się podoba, barbarzyński niczym biceps Konana."
+    },
+    {
+      "start": 5194.56,
+      "end": 5210.28,
+      "text": "Takie zespoły jak Rawna to ja bardzo, bardzo lubię, nawet nie dlatego, że uważam, że to był najlepszy zespół w tegorocznym półfinale Road to Mystic, choć moim zdaniem jeden z lepszych zdecydowanie,"
+    },
+    {
+      "start": 5210.28,
+      "end": 5228.14,
+      "text": "ale przede wszystkim dlatego, że jestem w kropce próbując opisać tę muzykę, bo oczywiście wpływy są wyraźne, jest tam trochę i black metalu i trochę jakichś post hardkorowych rzeczy, innych dziwadeł i łamańców,"
+    },
+    {
+      "start": 5228.14,
+      "end": 5241.04,
+      "text": "no ale nazwy na to jakiejś jednoznacznej, takiej, którą mógłbym rzucić i będą Państwo już wiedzieli co za chwilę usłyszycie, nie, nie ma, takiej nazwy nie ma, więc rawny trzeba po prostu posłuchać."
+    },
+    {
+      "start": 5241.04,
+      "end": 5242.84,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5460.77,
+      "end": 5468.53,
+      "text": "Zawsze kiedy widzę nazwę grupy Sunday at Nine, zastanawiam się, co ja robię w niedzielę o dziewiątej."
+    },
+    {
+      "start": 5469.33,
+      "end": 5479.07,
+      "text": "Nie śpię już, bo ja nie jestem ze śpiochów i wcześniej wstaję, no ale chyba nic szczególnie interesującego."
+    },
+    {
+      "start": 5479.07,
+      "end": 5494.93,
+      "text": "Więc na pewno dobrym rozwiązaniem będzie choćby w niedzielę o dziewiątej sięgnięcie po wydany w ubiegłym roku debiutancki album Sunday at Nine, zatytułowany Chosen Obed Forgotten."
+    },
+    {
+      "start": 5494.93,
+      "end": 5516.93,
+      "text": "To muzyka pełna energii, więc można się obejść bez kawy, która ma w sobie trochę groove metalu, trochę tych bardziej melodyjnych obrzeży, death metalu, trochę progresji, dobrze wymyślone, profesjonalne granie."
+    },
+    {
+      "start": 5748.16,
+      "end": 5760.14,
+      "text": "Kolejny zespół, któremu wróżę dużą karierę, jeżeli tylko nie odciągną ich odgrania inne pomysły na życie, to Entreaty."
+    },
+    {
+      "start": 5760.14,
+      "end": 5767.4,
+      "text": "W 2024 roku wydali swój debiutancki album, nazywa się New Definition of an End."
+    },
+    {
+      "start": 5767.92,
+      "end": 5783.34,
+      "text": "Posłuchamy oczywiście fragmentu tej płyty, no i proszę Państwa, wszystkim grupom, niezależnie od tego, jaką muzykę prezentują, życzyłbym tak dojrzałych debiutów na takim poziomie."
+    },
+    {
+      "start": 5783.7,
+      "end": 5784.1,
+      "text": "Entreaty."
+    },
+    {
+      "start": 5994.72,
+      "end": 6011.4,
+      "text": "Na koniec zespół, który prezentowałem tydzień temu, Uliata Digir. Uliata Digir to metal z braku lepszego terminu awangardowy, metal poszukujący."
+    },
+    {
+      "start": 6011.4,
+      "end": 6039.54,
+      "text": "Czasem zupełnie nie metal, bo odpływają bardzo dalekie terytoria. Wydali na początku tego roku swój debiutancki album. Jest to naprawdę fantastyczna jazda, w której odnajdą się i fani Imperial Triumphant, czy Oransi Pazuzu, ale też ci, którzy pamiętają takie projekty jak chociażby Yakuza."
+    },
+    {
+      "start": 6040.2,
+      "end": 6066.32,
+      "text": "Życzę zespołowi Uliata Digir jak najlepiej, choć trudne zadanie przed sobą postawili. Już się zamykam, bo i tak cała piosenka się nie zmieści, trwa 15 minut, ale to nie jest tak bardzo istotne, bo jestem przekonany, że nawet po tym, co się zmieści, sięgniecie po ten znakomity album."
+    },
+    {
+      "start": 6067,
+      "end": 6074.18,
+      "text": "Uliata Digir na dobranoc, a ja żegnam się z Państwem. Do usłyszenia za tydzień."
+    }
+  ],
+  "stats": {
+    "windowCount": 23,
+    "transcribedAudioSec": 1172.82,
+    "segmentCount": 130,
+    "characterCount": 11420
+  },
+  "sourceId": "2025-03-12-polskie-kapele-metalowe-w-drodze-na-mystic-festival-2025"
+}
