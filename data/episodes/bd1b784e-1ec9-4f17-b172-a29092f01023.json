@@ -2,10 +2,71 @@
   "version": 1,
   "id": "bd1b784e-1ec9-4f17-b172-a29092f01023",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T17:05:42.459Z",
+  "updatedAt": "2026-11-06T18:01:35.281Z",
   "durationSec": 6910,
-  "summary": "",
-  "topics": [],
+  "summary": "Przegląd lutowych nowości metalowych: od black-grindowego albumu \"Gold\" formacji Scour z Philem Anselmo, przez deathmetalowy \"In His Blood\" Brytyjczyków Vacues z wytwórni Relapse, po sludge'owy \"Guides for the Misguided\" kalifornijskiego 16. Omówiono trasę Toń i Whitcraft \"Diabły, Jelenie, Chwasty, Korzenie\" oraz towarzyszący jej split \"Księgi Wieczyste\", którego strona A \"Grunty Leśne\" należy do Toń, a strona B \"Grunty Rolne\" do Whitcraft. Zaprezentowano albumy Hangman's Chair (\"Sediction\"), Year of the Cobra, The Owl (\"Iwa Ave\", z nawiązaniami do prozy Federico Garcíi Lorki i Sylwii Plath), Indian Nightmare (\"Banished into Endless Chaos\"), Jinjer (\"Duel\") oraz koncepcyjny \"Assonication\" Obscury. Przywołano też archiwalia Mercyless — demówki \"Behind the Black Door\" i \"Realm of the Dark\" na wydawnictwie \"Behind the Realms of the Dark\" oraz debiut \"The Awakening\" z 1990 roku, otwierający katalog Death Like Silence. W blackmetalowej części zestawiono Grab (\"Kremes\"), kanadyjski Unrequited (\"Pathway to the Moon\"), Francuzów The Great Old Ones (\"Kadath\") i The Decline of the Eye (\"Wilhelm\") oraz polską Barrę z albumem \"Entheos\". Wspomniano również Grave Infestation (\"Carnage Gathers\") i debiut Love Is Noise \"To Live In A Different Way\".",
+  "topics": [
+    {
+      "start": 187,
+      "end": 286,
+      "label": "Scour i Phil Anselmo, album \"Gold\""
+    },
+    {
+      "start": 286,
+      "end": 306,
+      "label": "Vacues, deathmetalowy \"In His Blood\""
+    },
+    {
+      "start": 471,
+      "end": 556,
+      "label": "Trasa Toń i Whitcraft oraz split \"Księgi Wieczyste\""
+    },
+    {
+      "start": 1321,
+      "end": 1387,
+      "label": "Hangman's Chair, album \"Sediction\""
+    },
+    {
+      "start": 1731,
+      "end": 1770,
+      "label": "Year of the Cobra, trzecia płyta"
+    },
+    {
+      "start": 2014,
+      "end": 2075,
+      "label": "The Owl, \"Iwa Ave\" i literackie inspiracje"
+    },
+    {
+      "start": 2405,
+      "end": 2439,
+      "label": "Indian Nightmare, \"Banished into Endless Chaos\""
+    },
+    {
+      "start": 2679,
+      "end": 2768,
+      "label": "Mercyless, wznowienie dawnych demówek"
+    },
+    {
+      "start": 3017,
+      "end": 3103,
+      "label": "Jinjer, album \"Duel\""
+    },
+    {
+      "start": 3337,
+      "end": 3436,
+      "label": "Obscura, koncepcyjny \"Assonication\""
+    },
+    {
+      "start": 3926,
+      "end": 3978,
+      "label": "16, album \"Guides for the Misguided\""
+    },
+    {
+      "start": 5489,
+      "end": 5538,
+      "label": "Grab, album \"Kremes\""
+    }
+  ],
   "tags": [
     {
       "id": "16",
@@ -130,7 +191,7 @@
   "tracks": [
     {
       "start": 78,
-      "end": 306,
+      "end": 187,
       "durationSec": 111,
       "artist": "Scour",
       "title": "Blades",
@@ -143,7 +204,7 @@
     },
     {
       "start": 306,
-      "end": 556,
+      "end": 471,
       "durationSec": 166,
       "artist": "Vacuous",
       "title": "In His Blood",
@@ -156,7 +217,7 @@
     },
     {
       "start": 556,
-      "end": 1387,
+      "end": 1321,
       "durationSec": 766,
       "artist": "TOŃ",
       "title": "Dziennik. Dzień pierwszy",
@@ -169,7 +230,7 @@
     },
     {
       "start": 1387,
-      "end": 1770,
+      "end": 1731,
       "durationSec": 346,
       "artist": "Hangman's Chair",
       "title": "In Disguise",
@@ -182,7 +243,7 @@
     },
     {
       "start": 1770,
-      "end": 2075,
+      "end": 2014,
       "durationSec": 245,
       "artist": "Year Of The Cobra",
       "title": "7 Years",
@@ -195,7 +256,7 @@
     },
     {
       "start": 2075,
-      "end": 2439,
+      "end": 2405,
       "durationSec": 332,
       "artist": "Di'Aul",
       "title": "Duende",
@@ -208,7 +269,7 @@
     },
     {
       "start": 2439,
-      "end": 2768,
+      "end": 2679,
       "durationSec": 240,
       "artist": "Indian Nightmare",
       "title": "Looking into the Fire",
@@ -221,7 +282,7 @@
     },
     {
       "start": 2768,
-      "end": 3103,
+      "end": 3017,
       "durationSec": 249,
       "artist": "Merciless",
       "title": "Realm of the Dark (Realm of the Dark 1988) [2024 Remastered Version",
@@ -234,7 +295,7 @@
     },
     {
       "start": 3103,
-      "end": 3436,
+      "end": 3337,
       "durationSec": 235,
       "artist": "Jinjer",
       "title": "Green Serpent",
@@ -260,7 +321,7 @@
     },
     {
       "start": 3712,
-      "end": 3978,
+      "end": 3926,
       "durationSec": 215,
       "artist": "Grave Infestation",
       "title": "Carnage Gathers",
@@ -312,7 +373,7 @@
     },
     {
       "start": 5067,
-      "end": 5538,
+      "end": 5489,
       "durationSec": 424,
       "artist": "The Great Old Ones",
       "title": "In the Mouth of Madness",

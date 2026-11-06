@@ -2,10 +2,71 @@
   "version": 1,
   "id": "669a19b6-7598-4a3c-bf06-255596c73549",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T17:05:42.458Z",
+  "updatedAt": "2026-11-06T18:01:35.280Z",
   "durationSec": 6886,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek poświęcony polskim zespołom zgłoszonym do konkursu Road to Mystic 2025, którego półfinał wyłonił czwórkę finalistów; 26 kwietnia w gdańskim klubie Drizzly Grizzly zagrają oni o miejsce na Mystic Festival. Zaprezentowano szeroki przekrój sceny: death metal (Ionian, Impermanence), techniczny thrash death (Species), thrash (Diving Stove), black i sludge (KIR, Czernina, Skow), doom (Metallus) oraz rzeczy trudne do zaszufladkowania (Rawna, Uliata Digir). Omówiono premierowe i ubiegłoroczne wydawnictwa, m.in. EP Anti-Human Terror Technofobii, debiut UZ Maruntuki, płytę Na pograniczu usidlenia Czerniny, album The Art of Death Error Theory, Lapelle du vide KIR, Chosen Obed Forgotten Sunday at Nine i New Definition of an End Entreaty. Podkreślono bardzo wysoki poziom tegorocznych zgłoszeń oraz różnorodność gatunkową współczesnej sceny w porównaniu z latami dziewięćdziesiątymi.",
+  "topics": [
+    {
+      "start": 206,
+      "end": 366,
+      "label": "Everything is Fire i formuła konkursu Road to Mystic 2025"
+    },
+    {
+      "start": 366,
+      "end": 395,
+      "label": "Ionian, deathmetalowy zespół z Gdańska pod nowym szyldem"
+    },
+    {
+      "start": 870,
+      "end": 910,
+      "label": "Species, techniczny thrash death metal z Warszawy"
+    },
+    {
+      "start": 1279,
+      "end": 1409,
+      "label": "Technofobia i debiutancka EP Anti-Human Terror"
+    },
+    {
+      "start": 2376,
+      "end": 2406,
+      "label": "Impermanence, krakowski techniczny death metal z wpływami blacku"
+    },
+    {
+      "start": 3163,
+      "end": 3228,
+      "label": "Error Theory i album The Art of Death"
+    },
+    {
+      "start": 3432,
+      "end": 3498,
+      "label": "KIR i blackmetalowy album Lapelle du vide"
+    },
+    {
+      "start": 3991,
+      "end": 4032,
+      "label": "Maruntuka i debiut UZ z bagnistą atmosferą"
+    },
+    {
+      "start": 4316,
+      "end": 4384,
+      "label": "Czernina i płyta Na pograniczu usidlenia"
+    },
+    {
+      "start": 4809,
+      "end": 4836,
+      "label": "Metallus i doom metal obecny w konkursie"
+    },
+    {
+      "start": 5195,
+      "end": 5241,
+      "label": "Rawna, zespół trudny do jednoznacznego zaszufladkowania"
+    },
+    {
+      "start": 5995,
+      "end": 6074,
+      "label": "Uliata Digir i awangardowy, poszukujący metal"
+    }
+  ],
   "tags": [
     {
       "id": "aeonian",
@@ -143,7 +204,7 @@
     },
     {
       "start": 669,
-      "end": 910,
+      "end": 870,
       "durationSec": 202,
       "artist": "Negative Paradise",
       "title": "Lusty Thing",
@@ -156,7 +217,7 @@
     },
     {
       "start": 910,
-      "end": 1409,
+      "end": 1279,
       "durationSec": 370,
       "artist": "Species",
       "title": "Parasite",
@@ -208,7 +269,7 @@
     },
     {
       "start": 1946,
-      "end": 2406,
+      "end": 2376,
       "durationSec": 105,
       "artist": "Virya",
       "title": "Rise",
@@ -234,7 +295,7 @@
     },
     {
       "start": 2805,
-      "end": 3228,
+      "end": 3163,
       "durationSec": 359,
       "artist": "Heresy Denied",
       "title": "Lifeless Silhouettes",
@@ -247,7 +308,7 @@
     },
     {
       "start": 3228,
-      "end": 3498,
+      "end": 3432,
       "durationSec": 205,
       "artist": "Error Theory",
       "title": "Unholy",
@@ -273,7 +334,7 @@
     },
     {
       "start": 3800,
-      "end": 4032,
+      "end": 3991,
       "durationSec": 192,
       "artist": "Diving Stove",
       "title": "Trains Colliding",
@@ -286,7 +347,7 @@
     },
     {
       "start": 4032,
-      "end": 4384,
+      "end": 4316,
       "durationSec": 285,
       "artist": "Maruntuka",
       "title": "II",
@@ -299,7 +360,7 @@
     },
     {
       "start": 4384,
-      "end": 4836,
+      "end": 4809,
       "durationSec": 426,
       "artist": "Czernina",
       "title": "Przeoczyć Wiosnę",
@@ -312,7 +373,7 @@
     },
     {
       "start": 4836,
-      "end": 5241,
+      "end": 5195,
       "durationSec": 360,
       "artist": "Metallus",
       "title": "Funeral of the Sun",
@@ -338,7 +399,7 @@
     },
     {
       "start": 5519,
-      "end": 6074,
+      "end": 5995,
       "durationSec": 230,
       "artist": "Sunday at 9",
       "title": "Preacher of Neglect",
