@@ -1,0 +1,2190 @@
+{
+  "version": 1,
+  "episodeId": "7a326a5e-2fbd-4fd3-be6c-5ed4a45abe54",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 110156160,
+  "fileMtimeMs": 1789151148133.0706,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 13.5
+    },
+    {
+      "index": 1,
+      "start": 396.32,
+      "end": 514.52
+    },
+    {
+      "index": 2,
+      "start": 1218.4,
+      "end": 1334.72
+    },
+    {
+      "index": 3,
+      "start": 1647.08,
+      "end": 1652.32
+    },
+    {
+      "index": 4,
+      "start": 1697.64,
+      "end": 1700.89
+    },
+    {
+      "index": 5,
+      "start": 2044.1,
+      "end": 2445.98
+    },
+    {
+      "index": 6,
+      "start": 2679.27,
+      "end": 3058.2
+    },
+    {
+      "index": 7,
+      "start": 3287.11,
+      "end": 3395.96
+    },
+    {
+      "index": 8,
+      "start": 3699.84,
+      "end": 3795.93
+    },
+    {
+      "index": 9,
+      "start": 4002.98,
+      "end": 4012.44
+    },
+    {
+      "index": 10,
+      "start": 4219.68,
+      "end": 4462.11
+    },
+    {
+      "index": 11,
+      "start": 4733.7,
+      "end": 5000.96
+    },
+    {
+      "index": 12,
+      "start": 5220.71,
+      "end": 5572.6
+    },
+    {
+      "index": 13,
+      "start": 5750.08,
+      "end": 5945.44
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.44,
+      "text": "Trójka"
+    },
+    {
+      "start": 1.44,
+      "end": 5.2,
+      "text": "Program Trzeci Polskiego Radia"
+    },
+    {
+      "start": 5.2,
+      "end": 11.28,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 11.28,
+      "end": 13.5,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 397.06,
+      "end": 408.06,
+      "text": "Ta urocza piosenka, którą pozwoliłem sobie powitać Was w dzisiejszym wydaniu Ciężko na sercu, nosi tytuł In Meetings Hearts Beat Closer, a więc coś w rodzaju"
+    },
+    {
+      "start": 408.06,
+      "end": 419.98,
+      "text": "Podczas spotkań serca biją bliżej siebie. Mogło to by być motto festiwalu Roadburn, który odbywa się co roku w Tilburgu na południu Niderlandów"
+    },
+    {
+      "start": 419.98,
+      "end": 427.82,
+      "text": "i podczas którego serca uczestników nie tylko biją bliżej siebie, ale i szybciej od nadmiaru emocji."
+    },
+    {
+      "start": 429.18,
+      "end": 443.1,
+      "text": "Utwór, którego wysłuchaliśmy to wspólne dzieło amerykańskich grup The Body i Thou, które nie występowały tym razem wspólnie, ale osobno, tudzież w różnych innych konfiguracjach."
+    },
+    {
+      "start": 443.1,
+      "end": 450.2,
+      "text": "O czym za chwilę, bo póki co formalnością musi stać się zadość."
+    },
+    {
+      "start": 450.84,
+      "end": 452.04,
+      "text": "Dobry wieczór Państwu."
+    },
+    {
+      "start": 452.42,
+      "end": 459.84,
+      "text": "Kłania się Jarek Szubrycht, którego rolą jest puszczanie Wam wieczorową porą muzyki tak brzydkiej, że aż pięknej."
+    },
+    {
+      "start": 460.54,
+      "end": 465.68,
+      "text": "Audycja nazywa się Ciężko na sercu, a jej wydawcą jest Mariusz Owczarek."
+    },
+    {
+      "start": 466.22,
+      "end": 474.88,
+      "text": "Dzisiaj wydanie specjalne, poświęcone festiwalowi Roadburn, na którego kolejną edycję niestety przyjdzie czekać prawie rok."
+    },
+    {
+      "start": 476.02,
+      "end": 490.82,
+      "text": "Podsumujemy sobie bowiem edycję 2025, która odbyła się w Wielkanoc i na której wystąpił mój ulubiony współczesny zespół metalowy, tudzież okołometalowy, czyli The Body."
+    },
+    {
+      "start": 491.32,
+      "end": 496.42,
+      "text": "Dali świetny koncert z This Fig i jeszcze lepszy samotnie."
+    },
+    {
+      "start": 497.3,
+      "end": 501.3,
+      "text": "Miejmy więc to za sobą, podwójne uderzenie The Body."
+    },
+    {
+      "start": 501.84,
+      "end": 512.6,
+      "text": "Najpierw z Felicją Częt, a więc rzeczoną This Fig, a później już bez gości w podstawowym duecie, oko w oko, z pustką i rozpaczą."
+    },
+    {
+      "start": 512.6,
+      "end": 514.52,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1219.18,
+      "end": 1223.64,
+      "text": "Na początek powiem wam, czego w Roadburn nie lubię, nie cierpię wręcz."
+    },
+    {
+      "start": 1224.28,
+      "end": 1228.4,
+      "text": "Choć przez pięć dni jak głupi biegam od sceny do sceny,"
+    },
+    {
+      "start": 1228.88,
+      "end": 1232.94,
+      "text": "staję w kolejkach do miejsc, które mieszczą mniej ludzi niż jest chętnych,"
+    },
+    {
+      "start": 1233.38,
+      "end": 1240.36,
+      "text": "choć walczę najzielniej jak potrafię i tak pod koniec czuję gorycz porażki."
+    },
+    {
+      "start": 1240.88,
+      "end": 1244.08,
+      "text": "Bo nie zobaczyłem wszystkiego, co chciałem."
+    },
+    {
+      "start": 1244.08,
+      "end": 1247.28,
+      "text": "Bo ktoś mi opowiada o koncercie, z którego zrezygnowałem,"
+    },
+    {
+      "start": 1247.7,
+      "end": 1252.28,
+      "text": "wybierając inny i oczywiście twierdzi, że to był najlepszy koncert festiwalu,"
+    },
+    {
+      "start": 1252.38,
+      "end": 1258.2,
+      "text": "a więc ja już zaczynam żałować, że pewnie nie wybrałem najlepiej."
+    },
+    {
+      "start": 1258.94,
+      "end": 1265.12,
+      "text": "Na szczęście nad tą goryczą, nad tym FOMO dominuje słodycz zwycięstwa."
+    },
+    {
+      "start": 1265.24,
+      "end": 1268.2,
+      "text": "Bo jednak widziałem mnóstwo fantastycznych koncertów,"
+    },
+    {
+      "start": 1268.72,
+      "end": 1271.48,
+      "text": "zarówno artystów, których już znam i cenię"
+    },
+    {
+      "start": 1271.48,
+      "end": 1275.1,
+      "text": "i z myślą, o których tam jechałem,"
+    },
+    {
+      "start": 1275.1,
+      "end": 1278.82,
+      "text": "jak i takich, o których dowiedziałem się na miejscu,"
+    },
+    {
+      "start": 1279.82,
+      "end": 1282.92,
+      "text": "ale poniosłem w serduszku do domu."
+    },
+    {
+      "start": 1283.72,
+      "end": 1285.76,
+      "text": "Mówię o tym wszystkim, żeby uprzedzić,"
+    },
+    {
+      "start": 1285.86,
+      "end": 1288.94,
+      "text": "drogich słuchaczy, że mój szlak przez Roadburn"
+    },
+    {
+      "start": 1288.94,
+      "end": 1292.06,
+      "text": "to absolutnie subiektywny wybór."
+    },
+    {
+      "start": 1292.68,
+      "end": 1296.88,
+      "text": "Ktoś mógł biegać po festiwalu równie intensywnie jak ja"
+    },
+    {
+      "start": 1296.88,
+      "end": 1301.68,
+      "text": "i wynieść z niego zupełnie inne muzyczne wspomnienia."
+    },
+    {
+      "start": 1302.4,
+      "end": 1306.12,
+      "text": "A teraz na chwilę się zamknę i pozwolę mówić muzyce."
+    },
+    {
+      "start": 1307.12,
+      "end": 1312.48,
+      "text": "Przed nami trzy zespoły, czy właściwie dwa zespoły i jeden solista,"
+    },
+    {
+      "start": 1313.06,
+      "end": 1317.16,
+      "text": "których koncerty na tegorocznym Roadburn były niemałym wydarzeniem."
+    },
+    {
+      "start": 1318.12,
+      "end": 1323.24,
+      "text": "I zarazem będzie to ten zestaw, ta trójka,"
+    },
+    {
+      "start": 1324.04,
+      "end": 1327.48,
+      "text": "doskonałym dowodem na to, jak bardzo eklektyczny"
+    },
+    {
+      "start": 1327.48,
+      "end": 1330.52,
+      "text": "i odważny jest to festiwal."
+    },
+    {
+      "start": 1331.16,
+      "end": 1333.1,
+      "text": "Zapnijcie pasy, lecimy."
+    },
+    {
+      "start": 1647.08,
+      "end": 1652.32,
+      "text": "\"Sevda olmasaydı da, gönülle donasaydı\""
+    },
+    {
+      "start": 1697.64,
+      "end": 1700.9,
+      "text": "Güzellerin içinde"
+    },
+    {
+      "start": 2044.1,
+      "end": 2058.26,
+      "text": "Co tu się działo? Najpierw Oransi Pazuzu ze swoim post-black metalem kosmicznym i leśnym zarazem, potem Altingan, czyli mistrzowi anatolijskiej psychodeli."
+    },
+    {
+      "start": 2058.68,
+      "end": 2073.14,
+      "text": "Z myślą o koncercie na Roadburn wybrali swoje najcięższe numery, ale i tak brzmieli jak goście z innego świata. I dobrze, bo była to bardzo ciekawa odskocznia od łomotu."
+    },
+    {
+      "start": 2073.14,
+      "end": 2084.6,
+      "text": "A skoro o łomocie mowa, The Bug, który zafundował Tilburgowi nalot dywanowy, zrobił na wszystkich ogromne wrażenie."
+    },
+    {
+      "start": 2085,
+      "end": 2100.02,
+      "text": "Zostały zgliszcza z moich uszu, mimo zatyczek, strzępy, ale piękne to było i już nie mogę się doczekać The Baga burzącego basami gdańską stocznię na tegorocznym Mystiku."
+    },
+    {
+      "start": 2102.18,
+      "end": 2113.18,
+      "text": "Możemy zatem ustalić, jak to możliwe, że te odległe muzyczne światy spotykają się na jednym festiwalu i o dziwo ma to wszystko sens."
+    },
+    {
+      "start": 2113.18,
+      "end": 2124.38,
+      "text": "Rozmawiam z Becky Laverty, która na Roadburn łączy kilka ważnych ról, ale po kolei."
+    },
+    {
+      "start": 2125.18,
+      "end": 2132.18,
+      "text": "Zaczęłam w 2014 roku."
+    },
+    {
+      "start": 2132.18,
+      "end": 2138.18,
+      "text": "zajmowałam się wtedy mediami i komunikacją międzynarodową."
+    },
+    {
+      "start": 2138.18,
+      "end": 2146.18,
+      "text": "Moja praca polegała na informowaniu ludzi o tym, co robimy, zapraszaniu dziennikarzy i prezentowaniu zespołów, które grały na festiwalu."
+    },
+    {
+      "start": 2146.18,
+      "end": 2150.18,
+      "text": "W kolejnych latach moje obowiązki ewoluowały."
+    },
+    {
+      "start": 2150.18,
+      "end": 2161.18,
+      "text": "Zajęłam się programem poza muzycznym, a że byłam w niemal codziennym kontakcie z Wolterem, zaczął mnie pytać, co myślę o zespołach, które zamierza zaprosić."
+    },
+    {
+      "start": 2161.18,
+      "end": 2166.18,
+      "text": "Więc on zaczął mnie pytania, co ja myślałam o bandach, których powinien wybrać i tak dalej."
+    },
+    {
+      "start": 2166.18,
+      "end": 2168.18,
+      "text": "Więc to była dość naturalna ewoluowa."
+    },
+    {
+      "start": 2168.18,
+      "end": 2170.18,
+      "text": "A potem kilka lat temu..."
+    },
+    {
+      "start": 2171.18,
+      "end": 2180.18,
+      "text": "Kilka lat temu stałam się częścią ekipy zajmującej się programem, oficjalnie chyba w czasie, kiedy nie mieliśmy Roadburn w okresie pandemii."
+    },
+    {
+      "start": 2181.18,
+      "end": 2187.18,
+      "text": "Walter jest dyrektorem artystycznym, a ja i Dan współtworzymy z nim radę programową."
+    },
+    {
+      "start": 2187.18,
+      "end": 2197.18,
+      "text": "Niezmiennie zajmuję się programem poza muzycznym, robię wiele rzeczy związanych z komunikacją, chociaż 013 też ma ekipę od promocji."
+    },
+    {
+      "start": 2198.18,
+      "end": 2203.18,
+      "text": "Piszę notatki o zespołach, z dumą i starannością prezentując naszych artystów."
+    },
+    {
+      "start": 2203.18,
+      "end": 2206.18,
+      "text": "Chcę ich przedstawiać z jak najlepszej strony."
+    },
+    {
+      "start": 2214.18,
+      "end": 2223.18,
+      "text": "Skoro zajmuję się programem, Becky jest odpowiednią adresatką pytania, które nurtuje muzyków, fanów, ale i samych organizatorów."
+    },
+    {
+      "start": 2224.18,
+      "end": 2227.18,
+      "text": "Czym właściwie jest tak zwany zespół Roadburnowy?"
+    },
+    {
+      "start": 2228.18,
+      "end": 2231.18,
+      "text": "Jakie cechy powinien posiadać?"
+    },
+    {
+      "start": 2232.18,
+      "end": 2244.18,
+      "text": "No bo nie chodzi przecież o sam styl muzyczny czy wizerunek, bo gdzie Orancy Pazuzu, gdzie Altingan, gdzie The Bug, by wspomnieć tylko ten zestaw, który przed chwilą wybrzmiał."
+    },
+    {
+      "start": 2245.18,
+      "end": 2249.18,
+      "text": "Musi być więc coś jeszcze, coś niełatwego do zdefiniowania."
+    },
+    {
+      "start": 2249.18,
+      "end": 2259.18,
+      "text": "Myślę, że nie ma na to recepty."
+    },
+    {
+      "start": 2260.18,
+      "end": 2262.18,
+      "text": "Czasem jest to również kwestia czasu."
+    },
+    {
+      "start": 2262.18,
+      "end": 2266.18,
+      "text": "Nie pracujemy z konkretnymi kwotami poświęconymi poszczególnym gatunkom."
+    },
+    {
+      "start": 2266.18,
+      "end": 2275.18,
+      "text": "Nie mamy na przykład zbyt wiele death metalu na Roadburn, ale death metal na Roadburn może się sprawdzić w odpowiednim kontekście."
+    },
+    {
+      "start": 2276.18,
+      "end": 2282.18,
+      "text": "Możemy zaprosić kilka zespołów death metalowych, które nam się podobają, jeśli ułożą się w sensowny wzór."
+    },
+    {
+      "start": 2283.18,
+      "end": 2288.18,
+      "text": "Nie ma sensu dzień wypełniony folkiem z jednym zespołem death metalowym wstawionym w środek."
+    },
+    {
+      "start": 2289.18,
+      "end": 2296.18,
+      "text": "W ubiegłym roku mieliśmy jednak Blood Incantation, a to otworzyło możliwości dla innych zbliżonych stylistycznie zespołów."
+    },
+    {
+      "start": 2306.18,
+      "end": 2311.18,
+      "text": "Jednego roku możesz nie być więc zespołem Roadburnowym, ale już następnego tak."
+    },
+    {
+      "start": 2312.18,
+      "end": 2314.18,
+      "text": "I to nie musi być twoja ewolucja, ale nasza."
+    },
+    {
+      "start": 2315.18,
+      "end": 2317.18,
+      "text": "Kontekst jest naprawdę ważny."
+    },
+    {
+      "start": 2318.18,
+      "end": 2319.18,
+      "text": "Do tego odpowiedni czas."
+    },
+    {
+      "start": 2320.18,
+      "end": 2322.18,
+      "text": "I jak zawsze powtarzamy, szósty zmysł."
+    },
+    {
+      "start": 2323.18,
+      "end": 2324.18,
+      "text": "To jak układanie puzzli."
+    },
+    {
+      "start": 2325.18,
+      "end": 2326.18,
+      "text": "Czy ten zespół pasuje do tamtego?"
+    },
+    {
+      "start": 2327.18,
+      "end": 2328.18,
+      "text": "I nie chodzi o gatunek."
+    },
+    {
+      "start": 2329.18,
+      "end": 2332.18,
+      "text": "Nie zastanawiamy się, czy mamy wystarczająco dużo dłumu albo folku."
+    },
+    {
+      "start": 2333.18,
+      "end": 2339.18,
+      "text": "Czasem tylko upewniamy się, czy pomiędzy gatunkami istnieje równowaga, ale nie zaczynamy rozmowy w stylu:"
+    },
+    {
+      "start": 2340.18,
+      "end": 2342.18,
+      "text": "\"Potrzebujemy dziesięć kapel folkowych. Kto pierwszy?\""
+    },
+    {
+      "start": 2343.18,
+      "end": 2346.18,
+      "text": "Idziemy więc śladem Waltera, jego artystycznej wizji,"
+    },
+    {
+      "start": 2347.18,
+      "end": 2352.18,
+      "text": "ale kierujemy się przeczuciem i układamy tę układankę kawałek po kawałku."
+    },
+    {
+      "start": 2354.18,
+      "end": 2356.18,
+      "text": "Nie można się zgłosić na Roadburn."
+    },
+    {
+      "start": 2357.18,
+      "end": 2361.18,
+      "text": "Nie ma nawet konkursu, w którym zwycięstwo zapewniałoby występ na festiwalu."
+    },
+    {
+      "start": 2362.18,
+      "end": 2370.18,
+      "text": "Pytam zatem Becky, czy to możliwe, żeby Roadburn otworzył się odrobinę szerzej na artystów z Europy Wschodniej."
+    },
+    {
+      "start": 2371.18,
+      "end": 2382.18,
+      "text": "Nie uważam, żebyśmy byli zamknięci, ale rzeczywiście ludzie często pytają, co zrobić, żeby zagrać na Roadburn."
+    },
+    {
+      "start": 2383.18,
+      "end": 2387.18,
+      "text": "Czy trzeba mieć agenta? Jak dostać się w zasięg naszego radaru?"
+    },
+    {
+      "start": 2388.18,
+      "end": 2391.18,
+      "text": "Szczera odpowiedź brzmi: musisz robić swoje."
+    },
+    {
+      "start": 2392.18,
+      "end": 2394.18,
+      "text": "Musisz to robić z Roadburn czy bez."
+    },
+    {
+      "start": 2395.18,
+      "end": 2396.18,
+      "text": "Iść swoją ścieżką."
+    },
+    {
+      "start": 2397.18,
+      "end": 2403.18,
+      "text": "Ludzie, którzy mają własną wizję muzyki i pozostają jej wierni, w końcu zostaną dostrzeżeni."
+    },
+    {
+      "start": 2404.18,
+      "end": 2414.18,
+      "text": "Natomiast ludzie, którzy desperacko pragną znaleźć się w kręgu naszego radaru, raczej nas zniechęcają."
+    },
+    {
+      "start": 2415.18,
+      "end": 2417.18,
+      "text": "Wróćcie innym razem, mówimy im."
+    },
+    {
+      "start": 2418.18,
+      "end": 2425.18,
+      "text": "Musisz podążać za swoją wizją aż do momentu, kiedy już właściwie nie potrzebujesz Roadburn, bo i tak robisz swoje."
+    },
+    {
+      "start": 2426.18,
+      "end": 2428.18,
+      "text": "Na pewno nie zamykamy się na żaden kraj."
+    },
+    {
+      "start": 2429.18,
+      "end": 2431.18,
+      "text": "Są przecież kraje odleglejsze od Twojego."
+    },
+    {
+      "start": 2432.18,
+      "end": 2436.18,
+      "text": "Takie, z których trudniej jest sprowadzić artystów ze względu na koszty i wizy."
+    },
+    {
+      "start": 2437.18,
+      "end": 2441.18,
+      "text": "Ale dla nas nie ma granic geograficznych i artystycznych."
+    },
+    {
+      "start": 2679.27,
+      "end": 2686.29,
+      "text": "Roadburn to jeden z niewielu festiwali zdominowanych przez szeroko pojęte ciężkie brzmienia,"
+    },
+    {
+      "start": 2686.29,
+      "end": 2690.67,
+      "text": "na których kobiety na scenie nie są wyjątkiem, lecz regułą."
+    },
+    {
+      "start": 2691.55,
+      "end": 2696.93,
+      "text": "Czyżby to właśnie Becky dbała o równość i odpowiednią reprezentację kobiet w programie?"
+    },
+    {
+      "start": 2697.83,
+      "end": 2702.17,
+      "text": "Nie zawsze bowiem tak było, to zmiana, która nastąpiła w ostatnich latach."
+    },
+    {
+      "start": 2709.27,
+      "end": 2718.83,
+      "text": "Nie stosujemy parytetów. Nie mam pojęcia, czy tegoroczny Roadburn jest zrównoważony pod względem płci."
+    },
+    {
+      "start": 2718.83,
+      "end": 2724.39,
+      "text": "Nie liczyłam tego. Czasem zbyt skrupulatne pilnowanie takiej równowagi nie pomaga."
+    },
+    {
+      "start": 2725.31,
+      "end": 2733.29,
+      "text": "Z drugiej strony dobrze jest zauważyć, że kobiety i osoby niebinarne są w ciężkiej muzyce raczej niedoreprezentowane."
+    },
+    {
+      "start": 2739.27,
+      "end": 2748.45,
+      "text": "Zadaniem ludzi takich jak my jest pokazanie, że ciężka muzyka ma różne oblicza."
+    },
+    {
+      "start": 2748.45,
+      "end": 2758.75,
+      "text": "Nie możemy mieć wszystkiego na jednej edycji festiwalu, ale skoro naszą misją jest sprowadzenie na Roadburn różnorodnej, progresywnej, ciężkiej muzyki,"
+    },
+    {
+      "start": 2759.57,
+      "end": 2766.43,
+      "text": "naszym zadaniem jest również wychodzenie poza własne doświadczenie, opuszczanie naszej strefy komfortu."
+    },
+    {
+      "start": 2767.55,
+      "end": 2774.97,
+      "text": "W Radzie Programowej mamy dwóch mężczyzn, ale oni również rozglądają się za kobietami i artystami niebinarnymi."
+    },
+    {
+      "start": 2775.73,
+      "end": 2776.85,
+      "text": "To także moje zadanie."
+    },
+    {
+      "start": 2786.85,
+      "end": 2791.29,
+      "text": "Stawiamy na różnorodność pod względem płci, ale też kraju pochodzenia."
+    },
+    {
+      "start": 2792.13,
+      "end": 2797.55,
+      "text": "W Niderlandach i Belgii, albo w Wielkiej Brytanii, gdzie mieszkam, jest mnóstwo fantastycznych artystów,"
+    },
+    {
+      "start": 2798.93,
+      "end": 2806.55,
+      "text": "ale gdybyśmy zwracali uwagę tylko na to, co dzieje się po sąsiedzku, ominęłyby nas wiele znakomitych zjawisk."
+    },
+    {
+      "start": 2810.55,
+      "end": 2817.31,
+      "text": "Może parę lat temu, kiedy układaliśmy program, musiałam się o to upominać."
+    },
+    {
+      "start": 2818.07,
+      "end": 2820.95,
+      "text": "Mieliśmy już potwierdzonych część zespołów i wtedy mówiłam,"
+    },
+    {
+      "start": 2821.33,
+      "end": 2825.63,
+      "text": "sami mężczyźni, musimy zaprosić jakieś kobiety, gdzie one są."
+    },
+    {
+      "start": 2827.09,
+      "end": 2830.09,
+      "text": "Nie chodziło jednak o parytety, lecz o poczucie równowagi."
+    },
+    {
+      "start": 2830.09,
+      "end": 2832.67,
+      "text": "A równowaga ma wiele twarzy."
+    },
+    {
+      "start": 2833.35,
+      "end": 2834.49,
+      "text": "Dotyczy też gatunków."
+    },
+    {
+      "start": 2835.25,
+      "end": 2837.87,
+      "text": "Nie jesteśmy festiwalem metalowym, choć mamy tu metal."
+    },
+    {
+      "start": 2838.61,
+      "end": 2841.65,
+      "text": "Nie jesteśmy festiwalem folkowym, chociaż folk też mamy."
+    },
+    {
+      "start": 2842.73,
+      "end": 2845.89,
+      "text": "Gdyby tu grali sami mężczyźni, to nie byłby Roadburn."
+    },
+    {
+      "start": 2849.99,
+      "end": 2855.73,
+      "text": "Częścią doświadczenia Roadburn, oprócz samej muzyki, tego przyjaznego miejsca, jakim jest Tilburg,"
+    },
+    {
+      "start": 2855.85,
+      "end": 2863.61,
+      "text": "przebywania wśród festiwalowej społeczności, jest również ekspozycja na pewnego rodzaju wartości."
+    },
+    {
+      "start": 2864.47,
+      "end": 2869.17,
+      "text": "Nawet jeśli Roadburn nie nazywa ich wprost, nie wyciąga na sztandary,"
+    },
+    {
+      "start": 2869.17,
+      "end": 2874.21,
+      "text": "wszyscy to czują i wiedzą, że chodzi o budowanie właśnie poczucia wspólnoty,"
+    },
+    {
+      "start": 2874.73,
+      "end": 2877.61,
+      "text": "że chodzi o otwartość i tolerancję."
+    },
+    {
+      "start": 2878.53,
+      "end": 2884.41,
+      "text": "Pytam zatem Becky, na ile to są świadome działania twórców festiwalu,"
+    },
+    {
+      "start": 2884.61,
+      "end": 2890.53,
+      "text": "a na ile po prostu samo wychodzi z połączenia tych energii twórczych,"
+    },
+    {
+      "start": 2890.61,
+      "end": 2894.65,
+      "text": "tych idei, które artyści przywożą do Tilburga ze sobą."
+    },
+    {
+      "start": 2904.65,
+      "end": 2908.01,
+      "text": "Przez wiele, wiele lat przychodziło nam to zupełnie naturalnie."
+    },
+    {
+      "start": 2908.01,
+      "end": 2911.51,
+      "text": "Ale świat poza Roadburn drastycznie się zmienił."
+    },
+    {
+      "start": 2912.43,
+      "end": 2918.51,
+      "text": "Nie czujemy się już na Roadburn, tą bańką kompletnie izolowaną od świata, którą kiedyś byliśmy."
+    },
+    {
+      "start": 2919.05,
+      "end": 2922.13,
+      "text": "Niektóre elementy tego świata zakradły się do Roadburn,"
+    },
+    {
+      "start": 2922.75,
+      "end": 2927.01,
+      "text": "więc nasza społeczność musiała się w pewien sposób zredefiniować."
+    },
+    {
+      "start": 2927.89,
+      "end": 2938.39,
+      "text": "Rozmawiamy o tym wszystkim, ale podobnie jak z parytetem płci nie chcemy stosować sztywnych reguł i na przykład zapraszać zespołów o określonych poglądach."
+    },
+    {
+      "start": 2938.39,
+      "end": 2940.79,
+      "text": "Ale faszystów też tu nie chcemy."
+    },
+    {
+      "start": 2941.11,
+      "end": 2944.89,
+      "text": "To nie są zespoły dla Roadburn, nawet jeśli nagrywają znakomite płyty."
+    },
+    {
+      "start": 2945.75,
+      "end": 2949.81,
+      "text": "Nie chcemy słuchać muzyki tworzonej przez ludzi o odrażających przekonaniach."
+    },
+    {
+      "start": 2952.81,
+      "end": 2968.81,
+      "text": "Dla mnie to łatwa decyzja, ale trudności może sprawiać to, że często pracujemy z zespołami spod ziemiach."
+    },
+    {
+      "start": 2969.51,
+      "end": 2974.51,
+      "text": "Nie wszystkie mają strony internetowe, nie zawsze można znaleźć w sieci ich teksty,"
+    },
+    {
+      "start": 2975.17,
+      "end": 2980.19,
+      "text": "nie zawsze wprost mówią o swoich poglądach, niektóre nawet nigdy nie udzieliły wywiadu."
+    },
+    {
+      "start": 2980.91,
+      "end": 2982.03,
+      "text": "Niczego o nich nie wiadomo."
+    },
+    {
+      "start": 2983.37,
+      "end": 2987.07,
+      "text": "Sami przecież nie przesłuchujemy zespołów przed ich zaproszeniem i nie pytamy,"
+    },
+    {
+      "start": 2987.61,
+      "end": 2989.41,
+      "text": "a jakie macie poglądy polityczne?"
+    },
+    {
+      "start": 2990.43,
+      "end": 2992.61,
+      "text": "W tym miejscu pomaga nasza społeczność."
+    },
+    {
+      "start": 2993.51,
+      "end": 2998.01,
+      "text": "Ludzie, którym ufamy, polecają nam nowe zespoły i możemy ich zapytać."
+    },
+    {
+      "start": 2998.55,
+      "end": 2999.67,
+      "text": "Skąd ich znasz?"
+    },
+    {
+      "start": 3013.63,
+      "end": 3016.35,
+      "text": "Sieć społeczna bardzo pomaga Roadburnowi."
+    },
+    {
+      "start": 3016.93,
+      "end": 3019.07,
+      "text": "To działa organicznie od wielu lat."
+    },
+    {
+      "start": 3020.17,
+      "end": 3023.13,
+      "text": "Teraz jednak musimy być bardziej ostrożni, bo jak wspomniałam,"
+    },
+    {
+      "start": 3023.65,
+      "end": 3025.13,
+      "text": "świat bardzo szybko się zmienia."
+    },
+    {
+      "start": 3026.21,
+      "end": 3028.53,
+      "text": "I chociaż rzeczywistość zakradła się na Roadburn,"
+    },
+    {
+      "start": 3028.55,
+      "end": 3032.83,
+      "text": "chcemy, żeby ten festiwal różnił się nieco od prawdziwego życia."
+    },
+    {
+      "start": 3033.73,
+      "end": 3036.99,
+      "text": "To powinno być miejsce, w którym możesz być sobą."
+    },
+    {
+      "start": 3038.03,
+      "end": 3041.45,
+      "text": "Wśród ludzi, z którymi łączą cię te same wartości,"
+    },
+    {
+      "start": 3042.01,
+      "end": 3043.21,
+      "text": "gdzie czujesz się bezpiecznie."
+    },
+    {
+      "start": 3043.87,
+      "end": 3045.87,
+      "text": "Jesteś częścią tej wspólnoty."
+    },
+    {
+      "start": 3045.87,
+      "end": 3048.57,
+      "text": "To jest miejsce, gdzie jest miejsce, gdzie można być i zewnętrznie,"
+    },
+    {
+      "start": 3048.57,
+      "end": 3049.89,
+      "text": "gdzie można być i zewnętrznie się zewnętrznie."
+    },
+    {
+      "start": 3049.89,
+      "end": 3051.03,
+      "text": "Zobaczcie się zewnętrznie."
+    },
+    {
+      "start": 3051.03,
+      "end": 3052.55,
+      "text": "Zobaczcie się, gdzie można być bezpieczny."
+    },
+    {
+      "start": 3052.55,
+      "end": 3054.23,
+      "text": "Zobaczcie się, gdzie można być zewnętrznie."
+    },
+    {
+      "start": 3054.23,
+      "end": 3055.19,
+      "text": "Zobaczcie się, gdzie można być zewnętrznie."
+    },
+    {
+      "start": 3055.19,
+      "end": 3056.71,
+      "text": "Zobaczcie się, gdzie można być społeczeństwa."
+    },
+    {
+      "start": 3056.71,
+      "end": 3057.29,
+      "text": "Zobaczcie się, gdzie można być zewnętrznie."
+    },
+    {
+      "start": 3057.29,
+      "end": 3058.21,
+      "text": "Zobaczcie się, gdzie można być zewnętrznie."
+    },
+    {
+      "start": 3287.11,
+      "end": 3307.09,
+      "text": "To był mój dziesiąty lub jedenasty Roadburn, więc już nic nie powinno mnie dziwić, ale jednak ten festiwal potrafi zaskoczyć i powiem Wam, że takiego koncertu, takiej muzyki, jaką dostarczyli Hiszpan Frente Abierto ze swoją kompanią jeszcze nie widziałem i nie słyszałem."
+    },
+    {
+      "start": 3307.09,
+      "end": 3326.69,
+      "text": "A kiedy o tym mówię, brzmi to banalnie. To było połączenie flamenco z metalem. Ale jeśli wyobrażacie sobie jakąś ornamentykę flamenco, gitarową solówkę w tym stylu, dołączoną do zwykłych metalowych piosenek, to zupełnie błądzicie."
+    },
+    {
+      "start": 3326.69,
+      "end": 3339.87,
+      "text": "Ten metal był bardzo ponury, lawirujący gdzieś w okolicach Dumu i Sladżu, natomiast flamenco prawdziwe, pełne pasji i rozpaczy."
+    },
+    {
+      "start": 3340.09,
+      "end": 3357.71,
+      "text": "Frente Abierto, lider zespołu, zaprosił do współpracy wielkie gwiazdy tego oryginalnego, żeby nie powiedzieć ortodoksyjnego flamenco, Lelen Soto i Sebastiana Cruza, którzy absolutnie wspaniale śpiewali."
+    },
+    {
+      "start": 3357.71,
+      "end": 3366.27,
+      "text": "I to jeszcze połączono z sugestywnymi filmami. Cały ten pakiet robił wielkie wrażenie."
+    },
+    {
+      "start": 3367.49,
+      "end": 3382.65,
+      "text": "Płyta Frente Abierto i jego kompanii, zatytułowana Guerra e Toro Eso, czyli Wojna o Wszystko, dopiero się ukaże, ale ja już mogę zaprezentować Wam jej fragment, co czynie z wielką radością."
+    },
+    {
+      "start": 3382.65,
+      "end": 3393.61,
+      "text": "W tym akurat utworze, zatytułowanym Loque en el Mundo Vale, śpiewa inna legenda flamenco Ines Bacán. Posłuchajcie."
+    },
+    {
+      "start": 3700.72,
+      "end": 3718.18,
+      "text": "Jest drugi, a może nawet trzeci dzień festiwalu, przed południe, 11.30, a przed jednym z klubów stoi już długa, długa kolejka, bo półtorej godziny później ma tam się odbyć pierwszy koncert tego dnia."
+    },
+    {
+      "start": 3718.18,
+      "end": 3731.86,
+      "text": "Takie rzeczy tylko na Roadburn. Kto grał? Witch Club Satan. I ten koncert miał być wielkim wydarzeniem. Zespół jest na fali wznoszącej niestety kłopoty techniczne."
+    },
+    {
+      "start": 3731.86,
+      "end": 3744.76,
+      "text": "Ciągła walka z awarią instrumentu basistki sprawiły, że atmosfera trochę siadła. Widać było, że dziewczyny, bo to kobiecy zespół, są coraz bardziej zdenerwowane."
+    },
+    {
+      "start": 3745.48,
+      "end": 3761.6,
+      "text": "Szkoda. Mimo to było naprawdę dobrze, naprawdę intrygująco. To black metal. Black metalist Krieg twierdzą norweskie wiedźmy z Witch Club Satan i trudno się z nimi spierać."
+    },
+    {
+      "start": 3762.52,
+      "end": 3779.16,
+      "text": "Ich koncerty to też Krieg, też wojna, chociaż ten swój feministyczny, żarliwy black metal, wściekły muzycznie, odważny wizualnie, nie będę opowiadał szczegółów, ale sprawdźcie przy okazji,"
+    },
+    {
+      "start": 3779.8,
+      "end": 3793.8,
+      "text": "łączą z elementami wręcz bajkowymi, słodkimi. Krótko mówiąc, Witch Club Satan to jest trochę takie połączenie domowych melodii z Darktron."
+    },
+    {
+      "start": 4002.98,
+      "end": 4012.44,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 4220.68,
+      "end": 4224.36,
+      "text": "Panowie z Chet Pile już nam się przedstawili, muzycznie również."
+    },
+    {
+      "start": 4225.04,
+      "end": 4229.28,
+      "text": "Fantastyczny to zespół i jeden z najlepszych koncertów tegorocznego Roadburn."
+    },
+    {
+      "start": 4230.16,
+      "end": 4234.18,
+      "text": "Postarałem się więc o wywiad, żeby przybliżyć Państwu trochę tę grupę"
+    },
+    {
+      "start": 4234.18,
+      "end": 4241.32,
+      "text": "z nadzieją, że i u nas będą pięknie rosnąć i zaczną do nas regularnie przyjeżdżać."
+    },
+    {
+      "start": 4242.02,
+      "end": 4245.1,
+      "text": "Uprzedzam, że jakość techniczna materiału nie jest najlepsza,"
+    },
+    {
+      "start": 4245.18,
+      "end": 4248.26,
+      "text": "ale wiecie, to festiwal, warunki polowe."
+    },
+    {
+      "start": 4249.5,
+      "end": 4253.94,
+      "text": "Panowie wchodzą sobie w słowo, jeden kończy zdanie rozpoczęte przez drugiego,"
+    },
+    {
+      "start": 4254.08,
+      "end": 4257.1,
+      "text": "więc doszedłem do wniosku, że nie będę ich rozdzielał,"
+    },
+    {
+      "start": 4257.52,
+      "end": 4260.82,
+      "text": "że w tłumaczeniu staną się jednym wspólnym głosem Chet Pile."
+    },
+    {
+      "start": 4261.24,
+      "end": 4266.42,
+      "text": "Zresztą tam w tle słychać, jak druga połowa zespołu udziela innego wywiadu,"
+    },
+    {
+      "start": 4266.46,
+      "end": 4269.32,
+      "text": "więc macie pełen pakiet."
+    },
+    {
+      "start": 4270.16,
+      "end": 4273.06,
+      "text": "A naszą rozmowę zacząłem od Live at Roadburn,"
+    },
+    {
+      "start": 4273.2,
+      "end": 4277.64,
+      "text": "czyli albumu koncertowego zarejestrowanego przez Chet Pile"
+    },
+    {
+      "start": 4277.64,
+      "end": 4283.08,
+      "text": "dwa lata wcześniej w Tilburgu, który właśnie teraz miał swoją premierę."
+    },
+    {
+      "start": 4283.76,
+      "end": 4290.46,
+      "text": "Zapytałem, czy taki był plan, czy w 2023 roku przyjeżdżali do Niderlandów na Roadburn"
+    },
+    {
+      "start": 4290.46,
+      "end": 4294.42,
+      "text": "z myślą o nagraniu płyty koncertowej."
+    },
+    {
+      "start": 4298.9,
+      "end": 4302.82,
+      "text": "Nie mieliśmy pojęcia, co jest grane."
+    },
+    {
+      "start": 4303.5,
+      "end": 4305.92,
+      "text": "Dopiero kiedy zeszliśmy ze sceny, usłyszeliśmy,"
+    },
+    {
+      "start": 4306.46,
+      "end": 4308.88,
+      "text": "a tak przy okazji, nagraliśmy Wasz koncert."
+    },
+    {
+      "start": 4309.74,
+      "end": 4312.34,
+      "text": "Posłuchaliśmy tego i okazało się, że brzmi fajnie."
+    },
+    {
+      "start": 4312.9,
+      "end": 4314.18,
+      "text": "Nie było zbyt wielu pomyłek."
+    },
+    {
+      "start": 4314.96,
+      "end": 4320.38,
+      "text": "Tylko zagraliśmy bardzo szybko, o 30% szybciej od oryginalnego tempa tych utworów."
+    },
+    {
+      "start": 4321.3,
+      "end": 4323.04,
+      "text": "Dzięki temu materiał ma swój charakter."
+    },
+    {
+      "start": 4323.72,
+      "end": 4326.1,
+      "text": "Nie gramy z metronomem, więc tempa mogą pływać."
+    },
+    {
+      "start": 4326.22,
+      "end": 4327.48,
+      "text": "Koncert ma swoje prawa."
+    },
+    {
+      "start": 4328.18,
+      "end": 4333.48,
+      "text": "Byliśmy trochę zdenerwowani, bo to był największy koncert, jaki graliśmy w tamtym czasie."
+    },
+    {
+      "start": 4334.12,
+      "end": 4336.12,
+      "text": "Później zagraliśmy kilka większych."
+    },
+    {
+      "start": 4337.56,
+      "end": 4340.8,
+      "text": "Roadburn wrzucił potem na swoją stronę fragmenty tych nagrań,"
+    },
+    {
+      "start": 4341.42,
+      "end": 4342.94,
+      "text": "więc fani zaczęli dopytywać."
+    },
+    {
+      "start": 4343.86,
+      "end": 4346.14,
+      "text": "A że zawsze chcieliśmy nagrać płytę koncertową,"
+    },
+    {
+      "start": 4347.08,
+      "end": 4352.42,
+      "text": "poprosiliśmy Gereda Stimfla, z którym pracujemy od lat, żeby nam to zmiksował."
+    },
+    {
+      "start": 4353.56,
+      "end": 4355.4,
+      "text": "Wysłaliśmy mu nagrania do Filadelfii,"
+    },
+    {
+      "start": 4355.4,
+      "end": 4358.46,
+      "text": "zrobił swoje i teraz płyta ukazała się na winylu."
+    },
+    {
+      "start": 4359.06,
+      "end": 4361.02,
+      "text": "Brzmi dobrze, jestem zachwycony."
+    },
+    {
+      "start": 4361.36,
+      "end": 4362.32,
+      "text": "Ludziom też się podoba."
+    },
+    {
+      "start": 4367.02,
+      "end": 4375.24,
+      "text": "Czy pierwszy koncert przed tak dużą publicznością w tak ogromnym klubie z taką produkcją"
+    },
+    {
+      "start": 4375.24,
+      "end": 4377.06,
+      "text": "trochę ich nie onieśmielał?"
+    },
+    {
+      "start": 4377.86,
+      "end": 4380.86,
+      "text": "To jest fantastyczne na Roadburn, swoją drogą,"
+    },
+    {
+      "start": 4380.86,
+      "end": 4384.1,
+      "text": "że zespoły, które zwykle grają w małych klubach,"
+    },
+    {
+      "start": 4384.64,
+      "end": 4390.04,
+      "text": "tu dostają do dyspozycji scenę i oprawę, o jakiej zwykle nie mogą marzyć,"
+    },
+    {
+      "start": 4390.3,
+      "end": 4396.22,
+      "text": "ale to wcale nie znaczy, że na nią nie zasługują i że nie wiedzą, co z tym zrobić."
+    },
+    {
+      "start": 4396.84,
+      "end": 4398.8,
+      "text": "Zwykle stają na wysokości zadania,"
+    },
+    {
+      "start": 4399.7,
+      "end": 4403.38,
+      "text": "dowodząc, że prawdziwe jest stare żołnierskie przysłowie,"
+    },
+    {
+      "start": 4403.86,
+      "end": 4408.18,
+      "text": "że każdy szeregowiec nosi w plecaku buławę marszałkowską."
+    },
+    {
+      "start": 4408.18,
+      "end": 4414.32,
+      "text": "Było inaczej, ale kiedy już znaleźliśmy się na scenie,"
+    },
+    {
+      "start": 4414.78,
+      "end": 4416.94,
+      "text": "czuliśmy się jak na każdym innym koncercie."
+    },
+    {
+      "start": 4417.02,
+      "end": 4421.98,
+      "text": "Kiedy grasz dla wielkiego tłumu, i tak widzisz tylko ludzi w pierwszych rzędach."
+    },
+    {
+      "start": 4422.56,
+      "end": 4423.7,
+      "text": "Światła cię oślepiają."
+    },
+    {
+      "start": 4424.88,
+      "end": 4428.3,
+      "text": "Dla mnie to lepiej, bo to mi ułatwia dysocjację, kiedy jestem na scenie."
+    },
+    {
+      "start": 4429.44,
+      "end": 4432.56,
+      "text": "Czasem czuję tremę, ale po latach, nawet wtedy,"
+    },
+    {
+      "start": 4433.08,
+      "end": 4435.38,
+      "text": "zamieniła się raczej w ekscytację niż strach."
+    },
+    {
+      "start": 4436.28,
+      "end": 4439.52,
+      "text": "Jeśli dźwięk na scenie jest dobry, cała trema mnie opuszcza."
+    },
+    {
+      "start": 4440.18,
+      "end": 4443.06,
+      "text": "Kiedy tylko dociera do mnie, że wszystko brzmi tak, jak powinno,"
+    },
+    {
+      "start": 4443.64,
+      "end": 4444.62,
+      "text": "niech się dzieje, co chcę."
+    },
+    {
+      "start": 4445.3,
+      "end": 4446.96,
+      "text": "A tutaj brzmienie było świetne."
+    },
+    {
+      "start": 4449.02,
+      "end": 4453.3,
+      "text": "Sprawdzimy, czy nie kłamią, czy rzeczywiście tak świetnie brzmiało."
+    },
+    {
+      "start": 4453.3,
+      "end": 4457.38,
+      "text": "Słuchamy Crawl Space z albumu koncertowego"
+    },
+    {
+      "start": 4457.38,
+      "end": 4460.02,
+      "text": "Chet Pyle live at Roadburn."
+    },
+    {
+      "start": 4734.7,
+      "end": 4741.28,
+      "text": "Chad Pyle doskonale pasuje do Roadburn, ale zastanawiałem się, jak na co dzień wygląda ich publiczność."
+    },
+    {
+      "start": 4741.86,
+      "end": 4752.84,
+      "text": "Dla kogo grają w Stanach? Dla metalowców? Dla punków? Podobają się pewnie i jednym, i drugim, ale zarazem nigdzie nie mogą się czuć jak u siebie w domu."
+    },
+    {
+      "start": 4752.84,
+      "end": 4766.22,
+      "text": "To dla nas prawdziwe błogosławieństwo. Tam u siebie podobamy się starym fanom noise rocka, którzy pamiętają początki wytwórni Amphetamine Reptile."
+    },
+    {
+      "start": 4767.12,
+      "end": 4772.56,
+      "text": "Lubią nas też 20-letnie trans kobiety i dzieciaki słuchające mrocznego metalu."
+    },
+    {
+      "start": 4773.72,
+      "end": 4776.64,
+      "text": "Czasem widzę, jak bardzo różni ludzie rozmawiają o nas w sieci."
+    },
+    {
+      "start": 4777.08,
+      "end": 4781.9,
+      "text": "Moje ulubione zespoły to Ellison Chains, Linkin Park i Chad Pyle."
+    },
+    {
+      "start": 4782.68,
+      "end": 4786.44,
+      "text": "W porządku, a więc lubią nas też ludzie, którzy słuchają mainstreamowego metalu."
+    },
+    {
+      "start": 4787.62,
+      "end": 4792.84,
+      "text": "Nie jesteśmy wielkim zespołem, ale dla niektórych fanów jesteśmy przepustką do noise rocka."
+    },
+    {
+      "start": 4793.38,
+      "end": 4796.64,
+      "text": "Dzięki nam odkrywają zespoły, które nas inspirowały."
+    },
+    {
+      "start": 4797.16,
+      "end": 4799.96,
+      "text": "Takie jak The Jesus Lizard, Big Black czy Shellac."
+    },
+    {
+      "start": 4800.74,
+      "end": 4804.16,
+      "text": "Naszą pierwszą dużą trasę zagraliśmy z Lingwa Ignota."
+    },
+    {
+      "start": 4804.72,
+      "end": 4811.86,
+      "text": "Trudno o projekty bardziej odległe w spektrum artystycznej, ciężkiej muzyki, ale i w tym świecie nas zaakceptowano."
+    },
+    {
+      "start": 4812.54,
+      "end": 4818.86,
+      "text": "Ale zapraszają nas na wspólne koncerty, również kapele, które grają znacznie bardziej lekkostrawnego rocka."
+    },
+    {
+      "start": 4819.62,
+      "end": 4824.22,
+      "text": "Tutaj rozmawiałem na przykład z muzykami Human Impact, którzy są na scenie od zawsze."
+    },
+    {
+      "start": 4824.38,
+      "end": 4827.04,
+      "text": "I oni też mówili, że uwielbiają nasz zespół."
+    },
+    {
+      "start": 4827.88,
+      "end": 4831.2,
+      "text": "To aż dziwne, że tak wiele różnych środowisk się do nas przyznaje."
+    },
+    {
+      "start": 4831.2,
+      "end": 4842.34,
+      "text": "Ten ekumeniczny aspekt muzyki Chet Pile sprawia, że trudno ich jednoznacznie sklasyfikować, czy nawet opisać."
+    },
+    {
+      "start": 4842.98,
+      "end": 4849.56,
+      "text": "Po Roadburn 2023 znajomi pytali mnie, co najbardziej mi się podobało."
+    },
+    {
+      "start": 4850.34,
+      "end": 4852.38,
+      "text": "Wymieniałem m.in. Chet Pile właśnie."
+    },
+    {
+      "start": 4853.58,
+      "end": 4856.36,
+      "text": "Zatem padało kolejne pytanie, a co oni grają?"
+    },
+    {
+      "start": 4856.98,
+      "end": 4863.58,
+      "text": "No i tu zaczynały się schody, chociaż jako dziennikarz zajmujący się zawodowo opisywaniem muzyki,"
+    },
+    {
+      "start": 4863.66,
+      "end": 4869.02,
+      "text": "tańczeniem o architekturze powinienem umieć udzielać takich odpowiedzi."
+    },
+    {
+      "start": 4869.8,
+      "end": 4880,
+      "text": "Chet Pile to nie metal, to zespół rockowy, niech będzie, że noise rockowy albo postpunkowy, grający ładne, zgrabne piosenki."
+    },
+    {
+      "start": 4880.9,
+      "end": 4885.96,
+      "text": "Ale brzmi nieładnie, bo brzmi bardzo ciężko, wręcz totalnie."
+    },
+    {
+      "start": 4889.04,
+      "end": 4890.36,
+      "text": "Kochamy Nirwany."
+    },
+    {
+      "start": 4891.16,
+      "end": 4893.3,
+      "text": "Jesteśmy jak Nirvana, która nisko się stroi."
+    },
+    {
+      "start": 4893.6,
+      "end": 4897.8,
+      "text": "Nie, żebym porównywał nas do jednego z najwspanialszych zespołów w historii."
+    },
+    {
+      "start": 4898.5,
+      "end": 4902.6,
+      "text": "Nie jesteśmy aż tak dobrzy, ale kradniemy od nich struktury piosenek."
+    },
+    {
+      "start": 4903.26,
+      "end": 4907.6,
+      "text": "Jest chwytliwy riff, grasz go głośno, a kiedy wchodzi wokal trochę ciszej."
+    },
+    {
+      "start": 4908.12,
+      "end": 4909.42,
+      "text": "W refrenie znowu głośniej."
+    },
+    {
+      "start": 4910.44,
+      "end": 4912.4,
+      "text": "Pixis też uwielbiamy i Sonic Youth."
+    },
+    {
+      "start": 4912.68,
+      "end": 4919.02,
+      "text": "Sonic Youth bywali bardziej eksperymentalni, ale wszystkie trzy wymienione zespoły działały w pewnych ramach."
+    },
+    {
+      "start": 4919.04,
+      "end": 4920.88,
+      "text": "Pisały chwytliwe piosenki."
+    },
+    {
+      "start": 4921.82,
+      "end": 4923.8,
+      "text": "Nine Inch Nails też można tu wymienić."
+    },
+    {
+      "start": 4924.66,
+      "end": 4933.1,
+      "text": "Chodzi o zespoły, które grają trzyminutowe piosenki, ale jak w naszym przypadku, wstrzykują w te trzy minuty naprawdę ekstremalne elementy."
+    },
+    {
+      "start": 4934.32,
+      "end": 4941.74,
+      "text": "Kocham też black metal i death metal, dużo tego słucham, no ale to bardziej amorficzna muzyka, skonstruowana niemal jak klasyka."
+    },
+    {
+      "start": 4942.4,
+      "end": 4944.18,
+      "text": "Nie na zasadzie zwrotek i refrenów."
+    },
+    {
+      "start": 4944.6,
+      "end": 4948.6,
+      "text": "Chyba nie jestem wystarczająco dobrym kompozytorem, by takie rzeczy tworzyć."
+    },
+    {
+      "start": 4949.04,
+      "end": 4951.98,
+      "text": "Mój mózg radzi sobie ze zwrotkami i refrenami."
+    },
+    {
+      "start": 4952.62,
+      "end": 4954.5,
+      "text": "Łatwiej jest pamiętać na scenie."
+    },
+    {
+      "start": 4955.38,
+      "end": 4956.76,
+      "text": "Czasem to fajne układanki."
+    },
+    {
+      "start": 4957.46,
+      "end": 4964.14,
+      "text": "Na przykład Shame z naszej nowej płyty zaczyna się od indie rocka, a kończy niemal death metalowym tremolo."
+    },
+    {
+      "start": 4965.22,
+      "end": 4967.68,
+      "text": "Sprawdzamy, czy tak skrajne rzeczy da się połączyć."
+    },
+    {
+      "start": 4968.62,
+      "end": 4970.5,
+      "text": "Poza tym stroimy się jak metalowcy."
+    },
+    {
+      "start": 4971.04,
+      "end": 4971.5,
+      "text": "Drop A."
+    },
+    {
+      "start": 4972.26,
+      "end": 4978.44,
+      "text": "Możemy grać zwykłą indie rockową piosenkę, ale przez obniżony strój gitar będzie to brzmiało bardzo ciężko."
+    },
+    {
+      "start": 4979.12,
+      "end": 4980.06,
+      "text": "Taka nasza sztuczka."
+    },
+    {
+      "start": 4980.9,
+      "end": 4987.9,
+      "text": "Możemy grać co chcemy, ale z tym niskim strojem i elektronicznym brzmieniem bębnów to zawsze będzie brzmiało jak my."
+    },
+    {
+      "start": 4992.74,
+      "end": 4998.78,
+      "text": "Posłuchajmy zatem Shame i sprawdźmy, jak ten indie rock mutuje w death metal."
+    },
+    {
+      "start": 4998.78,
+      "end": 5000.96,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5221.49,
+      "end": 5226.05,
+      "text": "Jest w muzyce Chet Pile coś specyficznego, jedynego w swoim rodzaju."
+    },
+    {
+      "start": 5226.73,
+      "end": 5231.37,
+      "text": "Być może związanego z miejscem, z którego pochodzi zespół z Oklahomą."
+    },
+    {
+      "start": 5232.21,
+      "end": 5236.03,
+      "text": "W jakimś sensie ich piosenki przywodzą mi na myśl muzykę country"
+    },
+    {
+      "start": 5236.03,
+      "end": 5239.11,
+      "text": "i niekoniecznie wielkie gwiazdy country popu,"
+    },
+    {
+      "start": 5240.07,
+      "end": 5244.97,
+      "text": "ale raczej te radiostacje, których słucha prowincjonalna Ameryka,"
+    },
+    {
+      "start": 5245.43,
+      "end": 5248.83,
+      "text": "choć przecież to zupełnie inne dźwięki."
+    },
+    {
+      "start": 5249.41,
+      "end": 5252.83,
+      "text": "Podzieliłem się tą myślą z Lutherem i Stinnem"
+    },
+    {
+      "start": 5252.83,
+      "end": 5255.93,
+      "text": "i o dziwo jej nie wyśmiali. Wręcz przeciwnie."
+    },
+    {
+      "start": 5263.25,
+      "end": 5270.19,
+      "text": "W muzyce country ważne jest snucie opowieści."
+    },
+    {
+      "start": 5270.95,
+      "end": 5274.27,
+      "text": "Reagan, nasz wokalista, jest w tym naprawdę dobry."
+    },
+    {
+      "start": 5275.17,
+      "end": 5277.97,
+      "text": "Pod tym względem Amerykana jest częścią naszego stylu."
+    },
+    {
+      "start": 5278.11,
+      "end": 5281.53,
+      "text": "Do tego właśnie skończyliśmy nagrywać wspólną płytę"
+    },
+    {
+      "start": 5281.53,
+      "end": 5287.03,
+      "text": "z Haydenem Perigot. To typowo amerykańskie, prymitywne granie na gitarze,"
+    },
+    {
+      "start": 5287.55,
+      "end": 5289.83,
+      "text": "które ma w sobie posmak prawdziwego zachodu."
+    },
+    {
+      "start": 5292.83,
+      "end": 5296.95,
+      "text": "Niedługo wydamy więc płytę najbliższą country w naszej karierze."
+    },
+    {
+      "start": 5296.95,
+      "end": 5302.33,
+      "text": "To wszystko musi się przesączać do naszej muzyki, bo jesteśmy skąd jesteśmy."
+    },
+    {
+      "start": 5303.37,
+      "end": 5307.25,
+      "text": "Ray ma bardzo mocny akcent, a jego głos dobrze słychać."
+    },
+    {
+      "start": 5307.81,
+      "end": 5313.75,
+      "text": "Ma to w sobie pewne cechy muzyki folkowej, nawet jeśli stylistyka jest tak odległa od folku."
+    },
+    {
+      "start": 5314.47,
+      "end": 5315.65,
+      "text": "Mamy to w swoim DNA."
+    },
+    {
+      "start": 5316.61,
+      "end": 5321.53,
+      "text": "Zresztą Ray przez 20 lat nagrywał akustyczne płyty folkowe, zanim założyliśmy chat pile,"
+    },
+    {
+      "start": 5322.15,
+      "end": 5324.41,
+      "text": "więc to doświadczenie też wniósł do zespołu."
+    },
+    {
+      "start": 5325.21,
+      "end": 5327.17,
+      "text": "Jego teksty i wokale mają ten vibe."
+    },
+    {
+      "start": 5332.89,
+      "end": 5335.79,
+      "text": "Cool World to płyta o przemocy."
+    },
+    {
+      "start": 5336.61,
+      "end": 5340.29,
+      "text": "I niestety o braku nadziei na ucieczkę od niej."
+    },
+    {
+      "start": 5351.01,
+      "end": 5355.17,
+      "text": "Żyjemy w czasach zdominowanych przez politykę, która jest mroczna"
+    },
+    {
+      "start": 5355.17,
+      "end": 5358.05,
+      "text": "i nie niesie z sobą zbyt wiele nadziei."
+    },
+    {
+      "start": 5358.73,
+      "end": 5361.35,
+      "text": "Szczególnie w naszym kraju, choć wszędzie dzieje się źle."
+    },
+    {
+      "start": 5362.01,
+      "end": 5363.59,
+      "text": "Świat osuwa się w faszyzm."
+    },
+    {
+      "start": 5364.61,
+      "end": 5368.93,
+      "text": "A jeśli to nas nie dopadnie, już na nas czyhają globalne zmiany klimatyczne."
+    },
+    {
+      "start": 5369.91,
+      "end": 5373.01,
+      "text": "W jakimś sensie jesteśmy z tym pogodzeni, bo to część życia,"
+    },
+    {
+      "start": 5373.49,
+      "end": 5375.41,
+      "text": "świadomość, że nic nie jest trwałe."
+    },
+    {
+      "start": 5375.99,
+      "end": 5377.53,
+      "text": "Musisz to zaakceptować."
+    },
+    {
+      "start": 5378.53,
+      "end": 5380.81,
+      "text": "Co nie znaczy, że nie poddajesz się instynktowi"
+    },
+    {
+      "start": 5380.81,
+      "end": 5384.87,
+      "text": "i nie czujesz przerażenia tym wszystkim, co zagraża tobie i twojej rodzinie."
+    },
+    {
+      "start": 5386.79,
+      "end": 5389.65,
+      "text": "Dla mnie Cool World jest płytą pełną gniewu."
+    },
+    {
+      "start": 5390.33,
+      "end": 5392.77,
+      "text": "Czasem ludzie mówią, że jesteśmy nihilistami."
+    },
+    {
+      "start": 5393.31,
+      "end": 5394.03,
+      "text": "Nie zgadzam się."
+    },
+    {
+      "start": 5394.67,
+      "end": 5396.37,
+      "text": "Wkurza nas to, że świat jest, jaki jest."
+    },
+    {
+      "start": 5396.51,
+      "end": 5398.81,
+      "text": "Nie mówimy, olać to, wszystko jedno."
+    },
+    {
+      "start": 5399.85,
+      "end": 5401.53,
+      "text": "To wszystko naprawdę ma znaczenie."
+    },
+    {
+      "start": 5402.35,
+      "end": 5404.67,
+      "text": "Kiedy siedzisz w domu i oglądasz na Instagramie,"
+    },
+    {
+      "start": 5404.75,
+      "end": 5406.69,
+      "text": "jak czołgi rozjeżdżają dzieci w gazie,"
+    },
+    {
+      "start": 5407.11,
+      "end": 5408.27,
+      "text": "jak masz nie czuć gniewu."
+    },
+    {
+      "start": 5409.07,
+      "end": 5411.49,
+      "text": "My trzej, mam na myśli instrumentalistów,"
+    },
+    {
+      "start": 5411.57,
+      "end": 5413.69,
+      "text": "Chad Pyle, nie piszemy tekstów."
+    },
+    {
+      "start": 5414.17,
+      "end": 5417.51,
+      "text": "Reagan pisze wszystko sam, ale ze wszystkim się zgadzamy."
+    },
+    {
+      "start": 5418.31,
+      "end": 5419.55,
+      "text": "Nie musimy mu niczego podpowiadać,"
+    },
+    {
+      "start": 5420.49,
+      "end": 5422.39,
+      "text": "bo te teksty rezonują z tym, co czujemy."
+    },
+    {
+      "start": 5423.55,
+      "end": 5425.27,
+      "text": "Poprzednią płytę, czyli God's Country,"
+    },
+    {
+      "start": 5426.03,
+      "end": 5427.99,
+      "text": "tworzyliśmy w czasie COVID-u, w lockdownie."
+    },
+    {
+      "start": 5428.83,
+      "end": 5430.55,
+      "text": "Mieliśmy kontakt tylko ze sobą."
+    },
+    {
+      "start": 5431.39,
+      "end": 5433.41,
+      "text": "Dlatego powstał album pełen niepokoju."
+    },
+    {
+      "start": 5434.05,
+      "end": 5435.65,
+      "text": "Rzecz o popadaniu w szaleństwo."
+    },
+    {
+      "start": 5436.47,
+      "end": 5439.49,
+      "text": "Na Cool World emocją, która dominuje, jest gniew."
+    },
+    {
+      "start": 5447.49,
+      "end": 5450.05,
+      "text": "Ciekaw jestem, jak na takie zespoły jak Chad Pyle,"
+    },
+    {
+      "start": 5450.67,
+      "end": 5452.67,
+      "text": "zaangażowane, gniewne, odważne,"
+    },
+    {
+      "start": 5453.15,
+      "end": 5456.67,
+      "text": "a wpłynie obecna sytuacja polityczna w Ameryce."
+    },
+    {
+      "start": 5457.43,
+      "end": 5459.23,
+      "text": "Są tacy, co twierdzą, że im gorzej,"
+    },
+    {
+      "start": 5459.33,
+      "end": 5461.01,
+      "text": "tym lepiej dla sztuki."
+    },
+    {
+      "start": 5461.47,
+      "end": 5463.85,
+      "text": "Zapytałem więc moich rozmówców,"
+    },
+    {
+      "start": 5463.97,
+      "end": 5467.27,
+      "text": "jak oceniają rządy Donalda Trumpa i jego ludzi."
+    },
+    {
+      "start": 5467.27,
+      "end": 5486.81,
+      "text": "Trudno powiedzieć."
+    },
+    {
+      "start": 5486.95,
+      "end": 5488.43,
+      "text": "Wszystko zmienia się z dnia na dzień."
+    },
+    {
+      "start": 5489.11,
+      "end": 5490.55,
+      "text": "Trump jest tak niestabilny,"
+    },
+    {
+      "start": 5490.55,
+      "end": 5493.73,
+      "text": "że coś zrobi, a następnego dnia zmieni zdanie."
+    },
+    {
+      "start": 5494.29,
+      "end": 5495.57,
+      "text": "To wszystko jest sprawdzaniem,"
+    },
+    {
+      "start": 5495.67,
+      "end": 5497.13,
+      "text": "co może im ujść na słucho,"
+    },
+    {
+      "start": 5497.17,
+      "end": 5499.71,
+      "text": "czy mogą ignorować sąd najwyższy itd."
+    },
+    {
+      "start": 5500.65,
+      "end": 5502.31,
+      "text": "Wszystko dzieje się tak szybko."
+    },
+    {
+      "start": 5503.05,
+      "end": 5505.53,
+      "text": "Amerykanie tego nie znają, takiej destabilizacji."
+    },
+    {
+      "start": 5506.61,
+      "end": 5508.29,
+      "text": "Byłem w liceum, kiedy rządził Bush,"
+    },
+    {
+      "start": 5508.65,
+      "end": 5509.97,
+      "text": "ale to było coś innego."
+    },
+    {
+      "start": 5510.83,
+      "end": 5511.79,
+      "text": "Bush był równie zły,"
+    },
+    {
+      "start": 5511.91,
+      "end": 5514.01,
+      "text": "ale przynajmniej było to zło przewidywalne."
+    },
+    {
+      "start": 5514.81,
+      "end": 5517.09,
+      "text": "Teraz mamy chaotyczne i głupie rządy ludzi,"
+    },
+    {
+      "start": 5517.75,
+      "end": 5519.17,
+      "text": "którzy chcą zniszczyć państwo,"
+    },
+    {
+      "start": 5519.17,
+      "end": 5523.01,
+      "text": "aby móc sprywatyzować wszystko i na tym zarabiać."
+    },
+    {
+      "start": 5523.65,
+      "end": 5524.45,
+      "text": "Taki jest cel."
+    },
+    {
+      "start": 5525.27,
+      "end": 5526.97,
+      "text": "Pozbyć się Departamentu Edukacji"
+    },
+    {
+      "start": 5526.97,
+      "end": 5527.71,
+      "text": "i tym podobnych,"
+    },
+    {
+      "start": 5528.15,
+      "end": 5529.19,
+      "text": "zdestabilizować."
+    },
+    {
+      "start": 5530.25,
+      "end": 5531.73,
+      "text": "Osłabiają giełdę,"
+    },
+    {
+      "start": 5531.81,
+      "end": 5533.97,
+      "text": "żeby kupować tanie i później sprzedawać."
+    },
+    {
+      "start": 5534.49,
+      "end": 5535.53,
+      "text": "To takie bezczelne."
+    },
+    {
+      "start": 5536.27,
+      "end": 5538.19,
+      "text": "Nie mieliśmy chyba tak bezczelnej władzy"
+    },
+    {
+      "start": 5538.19,
+      "end": 5539.59,
+      "text": "od czasów Andrew Jacksona,"
+    },
+    {
+      "start": 5540.03,
+      "end": 5541.41,
+      "text": "który też walczył z sądami."
+    },
+    {
+      "start": 5542.13,
+      "end": 5543.39,
+      "text": "Tak doszło do szlaku West,"
+    },
+    {
+      "start": 5543.93,
+      "end": 5546.31,
+      "text": "do deportacji rdzennych Amerykanów do Oklahoma."
+    },
+    {
+      "start": 5546.31,
+      "end": 5549.83,
+      "text": "Mam jednak w sobie odrobinę optymizmu."
+    },
+    {
+      "start": 5550.65,
+      "end": 5552.25,
+      "text": "Bywało już przecież równie źle."
+    },
+    {
+      "start": 5552.97,
+      "end": 5555.37,
+      "text": "Mieliśmy w Ameryce tak zwany pozłacany wiek"
+    },
+    {
+      "start": 5555.37,
+      "end": 5556.71,
+      "text": "i to nie było nic dobrego,"
+    },
+    {
+      "start": 5557.37,
+      "end": 5558.41,
+      "text": "ale przynajmniej wiemy,"
+    },
+    {
+      "start": 5558.51,
+      "end": 5559.99,
+      "text": "że jesteśmy w stanie z tego wyjść."
+    },
+    {
+      "start": 5560.91,
+      "end": 5561.71,
+      "text": "Mam więc nadzieję,"
+    },
+    {
+      "start": 5561.89,
+      "end": 5564.27,
+      "text": "że jest światełko na końcu tunelu."
+    },
+    {
+      "start": 5564.91,
+      "end": 5565.53,
+      "text": "Ale kto wie."
+    },
+    {
+      "start": 5569.53,
+      "end": 5572.61,
+      "text": "ale, kto znam."
+    },
+    {
+      "start": 5751.08,
+      "end": 5761.92,
+      "text": "Długo mógłbym opowiadać o tegorocznym Roadburn, jedna audycja to za mało, by przekazać tyle wrażeń i opowieści, by puścić te wszystkie piosenki, które chciałbym wam puścić."
+    },
+    {
+      "start": 5762.72,
+      "end": 5768.24,
+      "text": "Był Bunuel, a więc dowód na to, że Eugene Robinson ma życie po Oxbow."
+    },
+    {
+      "start": 5768.24,
+      "end": 5784.98,
+      "text": "Był Steve Fontille, powrócił do domu, tym razem ze swoją twórczością solową, która trochę brzmi jak Neurosis, ale bez kłów i pazurów, a także z projektem Harvest Man, który trochę brzmi jak David Gilmour."
+    },
+    {
+      "start": 5785.98,
+      "end": 5799,
+      "text": "Mam jednak nadzieję, że Neurosis się reaktywuje, że powstanie, że powróci, w jakim składzie to już im pozostawiam, byle tylko wrócił na scenę."
+    },
+    {
+      "start": 5799.12,
+      "end": 5802.1,
+      "text": "Bardzo, bardzo was potrzebujemy, na Roadburn najbardziej."
+    },
+    {
+      "start": 5802.3,
+      "end": 5823.08,
+      "text": "Był Michael Girard i Christophe Honda, więc kawałek strzęp, mutacja Swans i oczywiście Michael był wściekły, zarówno na publiczność, jak i na Christophe'a, którego rugał w trakcie koncertu, co nie pomagało atmosferze tego występu, ale muzyce oczywiście pomagało."
+    },
+    {
+      "start": 5823.08,
+      "end": 5846.88,
+      "text": "Był zespół Violent Magic Orchestra, technochłosta z black metalem, fantastycznymi wizualizacjami, coś co absolutnie pierze mózg i jeżeli ktoś potrzebuje takiego prania, suszenia, wyrzymania i jeszcze wirowania,"
+    },
+    {
+      "start": 5846.88,
+      "end": 5853,
+      "text": "to Violent Magic Orchestra jest absolutnie obecnie numerem jeden na tej scenie."
+    },
+    {
+      "start": 5853.14,
+      "end": 5857.26,
+      "text": "Taki Igor na przykład, czy Perturbator mogą się chować."
+    },
+    {
+      "start": 5857.7,
+      "end": 5861.38,
+      "text": "Był Thou, fantastyczne koncerty, był uniform, doskonały."
+    },
+    {
+      "start": 5861.86,
+      "end": 5868.78,
+      "text": "Dot Heimsgaard zaprezentował bardzo bombastyczną wersję swojej muzyki."
+    },
+    {
+      "start": 5868.78,
+      "end": 5875.66,
+      "text": "Był Big Brave, był bardzo rzadko widywany w Europie Envy i tak dalej, i tak dalej."
+    },
+    {
+      "start": 5876.22,
+      "end": 5883.48,
+      "text": "Największe wrażenie na mnie jednak zrobił chyba, i dość nieoczekiwanie, amerykański zespół Sumac."
+    },
+    {
+      "start": 5884.5,
+      "end": 5891.62,
+      "text": "Lubię bardzo z płyt, ale nie spodziewałem się, że aż tak doskonale mogą zabrzmieć na koncertach,"
+    },
+    {
+      "start": 5891.62,
+      "end": 5899.72,
+      "text": "przy czym ten koncert z Moormather, z którą niedawno nagrali płyty, był tylko połowicznie udany."
+    },
+    {
+      "start": 5900.52,
+      "end": 5908.84,
+      "text": "Samo połączenie tych świetnych artystów wydawało się doskonałym pomysłem i być może sprawdzi się w wersji studyjnej,"
+    },
+    {
+      "start": 5908.9,
+      "end": 5913.18,
+      "text": "mówię sprawdzi się, bo wsłuchanie się w album The Film jeszcze przede mną,"
+    },
+    {
+      "start": 5913.88,
+      "end": 5920.78,
+      "text": "ale na żywo miałem wrażenie, że zespół ogranicza wokalistkę, a ona krępuje zespół."
+    },
+    {
+      "start": 5920.78,
+      "end": 5928.34,
+      "text": "Za to sumak sam, absolutne zniszczenie, zupełnie nowy poziom ciężaru i zarazem feelingu,"
+    },
+    {
+      "start": 5928.72,
+      "end": 5932.92,
+      "text": "nowy wymiar metalu, czy jakkolwiek to się nazywa."
+    },
+    {
+      "start": 5933.04,
+      "end": 5937.18,
+      "text": "Ale dobrze, dobrze, już kończę, już się dzisiaj dość nagadałem."
+    },
+    {
+      "start": 5938.1,
+      "end": 5941.72,
+      "text": "Posłuchajmy muzyki, a ja się pożegnam."
+    },
+    {
+      "start": 5942.2,
+      "end": 5943.98,
+      "text": "Do usłyszenia za tydzień."
+    },
+    {
+      "start": 5943.98,
+      "end": 5945.44,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 14,
+    "transcribedAudioSec": 2308.66,
+    "segmentCount": 420,
+    "characterCount": 26933
+  },
+  "sourceId": "2025-05-07-festiwal-roadburn-2025-w-tilburgu"
+}
