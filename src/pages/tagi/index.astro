@@ -16,7 +16,7 @@ const cloud = layoutCloud(
   tags
     .filter((tag) => tag.type !== 'person' && tag.type !== 'editorial')
     .map((tag) => ({ id: tag.id, label: tag.label, count: tag.episodes.length, type: tag.type })),
-  { height: 620, maxSize: 54 }
+  { height: 420, maxSize: 42 }
 );
 
 const groups = TAG_TYPE_ORDER.map((type) => ({
@@ -26,20 +26,34 @@ const groups = TAG_TYPE_ORDER.map((type) => ({
 })).filter((group) => group.tags.length > 0);
 ---
 
-<Base title="Tagi audycji" description="Zespoły, osoby, dzieła i wydarzenia, które pojawiły się w audycjach.">
+<Base title="Tagi audycji" description="Zespoły, osoby, dzieła i wydarzenia, które pojawiły się w audycjach." bodyClass="page-fixed">
   <SiteHeader current="tags" />
 
-  <main class="wrap">
+  <main class="wrap tags-page">
     <h1 class="page-title">Tagi</h1>
     <p class="page-lead">
       {tags.length} tagów w {entries.length} odcinkach. Kliknij tag, żeby zobaczyć audycje, w których się pojawił.
     </p>
 
+    <div class="tags-filter">
+      <input
+        id="tag-filter"
+        class="tags-filter__input"
+        type="search"
+        placeholder="Filtruj tagi, np. vader, roadburn"
+        autocomplete="off"
+        aria-describedby="tag-filter-status"
+      />
+      <p id="tag-filter-status" class="tags-filter__status" aria-live="polite"></p>
+    </div>
+
+    <div class="tags-page__body">
     <section class="card tags-cloud" aria-label="Chmura tagów">
       <svg viewBox={`0 0 ${cloud.width} ${cloud.height}`} role="img" aria-label="Chmura tagów, rozmiar od liczby odcinków">
         {cloud.placed.map((word) => (
           <a href={`/tagi/${word.id}/`}>
             <text
+              data-tag-label={word.label}
               x={word.x}
               y={word.y}
               font-size={word.size}
@@ -59,13 +73,56 @@ const groups = TAG_TYPE_ORDER.map((type) => ({
       <section class="card tags-section" aria-labelledby={`tags-${group.type}`}>
         <h2 id={`tags-${group.type}`}>{group.label}</h2>
         <p class="tag-list">
-          {group.tags.map((tag, index) => (
-            <>{index > 0 && <span class="tag-list__sep" aria-hidden="true">·</span>}<a href={`/tagi/${tag.id}/`}>{tag.label}</a></>
+          {group.tags.map((tag) => (
+            <a href={`/tagi/${tag.id}/`} data-tag-label={tag.label}>{tag.label}</a>
           ))}
         </p>
       </section>
     ))}
+    </div>
   </main>
 
   <SiteFooter />
 </Base>
+
+<script>
+  const input = document.querySelector<HTMLInputElement>('#tag-filter');
+  const status = document.querySelector<HTMLParagraphElement>('#tag-filter-status');
+
+  const fold = (value: string) =>
+    value
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .trim();
+
+  const apply = () => {
+    if (!input || !status) return;
+    const query = fold(input.value);
+    let visible = 0;
+
+    for (const link of document.querySelectorAll<HTMLElement>('[data-tag-label]')) {
+      const hit = query.length === 0 || fold(link.dataset.tagLabel ?? '').includes(query);
+      link.classList.toggle('is-filtered-out', !hit);
+      if (hit) visible++;
+    }
+
+    // Chmura ma układ liczony przy buildzie, więc po filtrze zostałoby w niej puste miejsce.
+    document.querySelector<HTMLElement>('.tags-cloud')?.classList.toggle('is-hidden', query.length > 0);
+
+    for (const section of document.querySelectorAll<HTMLElement>('.tags-section')) {
+      const links = [...section.querySelectorAll<HTMLElement>('.tag-list a')];
+      const visibleLinks = links.filter((link) => !link.classList.contains('is-filtered-out'));
+      // Kropka jest pseudo-elementem poprzedzającego linku, więc pierwszy widoczny
+      // wiersz musi ją schować — inaczej lista zaczyna się od „·”.
+      visibleLinks.forEach((link, index) => link.classList.toggle('is-first', index === 0));
+      section.hidden = visibleLinks.length === 0;
+    }
+
+    const plural = visible === 1 ? 'tag' : visible % 10 >= 2 && visible % 10 <= 4 && (visible < 12 || visible > 14) ? 'tagi' : 'tagów';
+    status.textContent = query.length === 0 ? '' : visible === 0 ? 'Brak tagów' : `${visible} ${plural}`;
+  };
+
+  input?.addEventListener('input', apply);
+  apply();
+</script>

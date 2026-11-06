@@ -1878,3 +1878,87 @@ main {
   color: var(--text);
   font-size: 13.5px;
 }
+
+/* Strona tagów: filtr + jedna oś przewijania (stopka i player zostają widoczne). */
+
+body.page-fixed {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tags-page {
+  display: flex;
+  flex-direction: column;
+  /* Globalne `flex: 1 0 auto` nie pozwala się kurczyć, więc strona rosła powyżej okna. */
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.tags-page__body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--muted) 45%, transparent) transparent;
+}
+
+.tags-page__body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tags-page__body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tags-page__body::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--muted) 45%, transparent);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 999px;
+}
+
+.tags-filter {
+  margin: 0 0 18px;
+}
+
+.tags-filter__input {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+}
+
+.tags-filter__status {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  min-height: 18px;
+}
+
+.tag-list a.is-first::before {
+  content: none;
+}
+
+.tag-list a + a::before {
+  content: '·';
+  margin: 0 6px;
+  color: var(--muted);
+}
+
+.is-filtered-out,
+.is-hidden {
+  display: none;
+}
+
+.tags-cloud svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
