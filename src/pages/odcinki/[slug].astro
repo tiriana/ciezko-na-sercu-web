@@ -488,18 +488,18 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
       </section>
     )}
     <nav class="ep-nav" aria-label="Sąsiednie audycje">
-      {older ? (
-        <a class="ep-nav__link" href={`/odcinki/${older.slug}/`}>
-          <span class="ep-nav__label">← Poprzednia audycja</span>
-          <span class="ep-nav__title">{older.title}</span>
+      {newer ? (
+        <a class="ep-nav__link" href={`/odcinki/${newer.slug}/`}>
+          <span class="ep-nav__label">← Nowsza audycja</span>
+          <span class="ep-nav__title">{newer.title}</span>
         </a>
       ) : (
         <span />
       )}
-      {newer ? (
-        <a class="ep-nav__link ep-nav__link--next" href={`/odcinki/${newer.slug}/`}>
-          <span class="ep-nav__label">Następna audycja →</span>
-          <span class="ep-nav__title">{newer.title}</span>
+      {older ? (
+        <a class="ep-nav__link ep-nav__link--next" href={`/odcinki/${older.slug}/`}>
+          <span class="ep-nav__label">Starsza audycja →</span>
+          <span class="ep-nav__title">{older.title}</span>
         </a>
       ) : (
         <span />
