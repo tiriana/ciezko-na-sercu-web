@@ -1,0 +1,1180 @@
+{
+  "version": 1,
+  "episodeId": "d9603fe6-4326-4c17-b482-f04c79441fa3",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 108168857,
+  "fileMtimeMs": 1789151241652.9902,
+  "windows": [
+    {
+      "index": 0,
+      "start": 3.4000000000000004,
+      "end": 9.18
+    },
+    {
+      "index": 1,
+      "start": 366.4,
+      "end": 526.24
+    },
+    {
+      "index": 2,
+      "start": 805.57,
+      "end": 849.95
+    },
+    {
+      "index": 3,
+      "start": 1116.84,
+      "end": 1178.78
+    },
+    {
+      "index": 4,
+      "start": 1292.64,
+      "end": 1370.52
+    },
+    {
+      "index": 5,
+      "start": 1710.24,
+      "end": 1781.5
+    },
+    {
+      "index": 6,
+      "start": 1993.67,
+      "end": 2078.75
+    },
+    {
+      "index": 7,
+      "start": 2362.76,
+      "end": 2435.32
+    },
+    {
+      "index": 8,
+      "start": 2710.66,
+      "end": 2791.2
+    },
+    {
+      "index": 9,
+      "start": 2809.57,
+      "end": 2868.64
+    },
+    {
+      "index": 10,
+      "start": 2891.36,
+      "end": 3007.8
+    },
+    {
+      "index": 11,
+      "start": 3132.13,
+      "end": 3254.52
+    },
+    {
+      "index": 12,
+      "start": 3512.16,
+      "end": 3547.04
+    },
+    {
+      "index": 13,
+      "start": 3782.21,
+      "end": 3799.74
+    },
+    {
+      "index": 14,
+      "start": 3985.67,
+      "end": 4028.67
+    },
+    {
+      "index": 15,
+      "start": 4210.24,
+      "end": 4258.91
+    },
+    {
+      "index": 16,
+      "start": 4490.37,
+      "end": 4548.38
+    },
+    {
+      "index": 17,
+      "start": 4784.48,
+      "end": 4834.78
+    },
+    {
+      "index": 18,
+      "start": 4873.64,
+      "end": 4896.54
+    },
+    {
+      "index": 19,
+      "start": 4914.4,
+      "end": 4973.53
+    },
+    {
+      "index": 20,
+      "start": 4992.39,
+      "end": 5067.04
+    },
+    {
+      "index": 21,
+      "start": 5274.6,
+      "end": 5330.46
+    },
+    {
+      "index": 22,
+      "start": 5525.35,
+      "end": 5556.09
+    },
+    {
+      "index": 23,
+      "start": 5828.9,
+      "end": 5882.08
+    },
+    {
+      "index": 24,
+      "start": 6454.44,
+      "end": 6501.08
+    }
+  ],
+  "segments": [
+    {
+      "start": 3.4,
+      "end": 6.9,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 6.9,
+      "end": 9.18,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 366.94,
+      "end": 372.46,
+      "text": "Dobry wieczór Państwu, mam nadzieję, że nie śpicie jak kamień, bo ja tu audycję zaczynam."
+    },
+    {
+      "start": 373.22,
+      "end": 379.96,
+      "text": "Nazywa się Ciężko na sercu, ja nazywam się Jarek Szubrycht, wydawcą audycji jest Mariusz Owczarek."
+    },
+    {
+      "start": 380.7,
+      "end": 385.74,
+      "text": "Powitał nas wrocławski zespół The Dog, który z gościnnym udziałem Cypriana Łakomego,"
+    },
+    {
+      "start": 386.1,
+      "end": 392.18,
+      "text": "In Twilight's Embrace na wokalu oraz na gitarze Szczepana Inglota z grupy Shodan"
+    },
+    {
+      "start": 392.18,
+      "end": 396.38,
+      "text": "nagrał właśnie tę fantastyczną wersję katowego klasyka."
+    },
+    {
+      "start": 396.4,
+      "end": 401.4,
+      "text": "Nie przypuszczałem, że audycję poświęconą najciekawszym nowościom miesiąca,"
+    },
+    {
+      "start": 402.28,
+      "end": 407.4,
+      "text": "bo takie właśnie będzie dzisiejsze Ciężko na sercu, otworzę utworem Kata,"
+    },
+    {
+      "start": 408.66,
+      "end": 415.76,
+      "text": "ale co jeszcze ciekawsze, za chwilę usłyszycie Kata w oryginale, w nagraniu z przedwieków,"
+    },
+    {
+      "start": 415.92,
+      "end": 422.08,
+      "text": "ale z zupełnie nowego wydawnictwa, bo tak się złożyło, że przed chwilą premierę miała płyta"
+    },
+    {
+      "start": 422.08,
+      "end": 428.22,
+      "text": "Rock Arena 85, której tytuł mówi właściwie wszystko."
+    },
+    {
+      "start": 428.9,
+      "end": 436.26,
+      "text": "Jest to zapis koncertu Kata z Poznania, który odbył się tam w ramach mini festiwalu"
+    },
+    {
+      "start": 436.26,
+      "end": 440.26,
+      "text": "19 maja 1985 roku."
+    },
+    {
+      "start": 441.54,
+      "end": 446.96,
+      "text": "Tego dnia zagrały również w arenie grupy Hanoi Rocks i Pretty Maids."
+    },
+    {
+      "start": 447.08,
+      "end": 454.48,
+      "text": "To były gwiazdy z dalekiego świata, z zachodu, wtedy rzecz rzadka na polskich scenach,"
+    },
+    {
+      "start": 455,
+      "end": 458.1,
+      "text": "oraz Turbo i oddział zamknięty."
+    },
+    {
+      "start": 458.64,
+      "end": 464.4,
+      "text": "Kat był z tego zestawu najbardziej ekstremalny, dokooptowany w ostatniej chwili,"
+    },
+    {
+      "start": 464.54,
+      "end": 469.2,
+      "text": "ale moim skromnym zdaniem był jednocześnie najlepszy."
+    },
+    {
+      "start": 469.78,
+      "end": 474.46,
+      "text": "Zespół występował wtedy w składzie dzisiaj uznawanym za klasyczny,"
+    },
+    {
+      "start": 474.54,
+      "end": 479.56,
+      "text": "a więc Roman Kostrzewski był wokalistą, Piotr Luczyk gitarzystą,"
+    },
+    {
+      "start": 479.86,
+      "end": 485.96,
+      "text": "drugim gitarzystą Wojciech Mrowiec, Tomasz Jaguś grał na gitarze basowej,"
+    },
+    {
+      "start": 486.18,
+      "end": 488.56,
+      "text": "a Ireneusz Lott na perkusji."
+    },
+    {
+      "start": 489.26,
+      "end": 493.64,
+      "text": "Płytę Rock Arena 85 wydała oficyna High Voltage,"
+    },
+    {
+      "start": 493.68,
+      "end": 501.24,
+      "text": "która specjalizuje się w wyszukiwaniu i przypominaniu perełek z naszej metalowej historii."
+    },
+    {
+      "start": 501.9,
+      "end": 507.86,
+      "text": "Jakość tego nagrania, jak pewnie możecie się spodziewać, jest butlegowa,"
+    },
+    {
+      "start": 508.44,
+      "end": 514.48,
+      "text": "a więc proszę nie regulować odbiorników, proszę nie narzekać, że szumi i dudni,"
+    },
+    {
+      "start": 514.48,
+      "end": 523.68,
+      "text": "tylko cieszyć się, że stajecie oko w oko, czytam ucho w ucho z prawdziwym kultem."
+    },
+    {
+      "start": 523.68,
+      "end": 526.24,
+      "text": "DZIENNIKARZ"
+    },
+    {
+      "start": 805.57,
+      "end": 809.67,
+      "text": "Skoro był kat, to niech teraz będzie garota."
+    },
+    {
+      "start": 810.03,
+      "end": 818.15,
+      "text": "Wyraźnie słychać bowiem, że niemało katowi zawdzięczają i gratuluję, bo grunt to dobre wzorce."
+    },
+    {
+      "start": 818.93,
+      "end": 823.89,
+      "text": "Oczywiście innych wpływów w muzyce garoty też jest niemało."
+    },
+    {
+      "start": 824.05,
+      "end": 829.61,
+      "text": "Przede wszystkim black metalu, trochę panka, dla każdego coś miłego."
+    },
+    {
+      "start": 830.35,
+      "end": 837.77,
+      "text": "Tytuł płyty drugiej w dorobku Garoty, w której premiera Lada Dzień brzmi z mieczem na gwiazdy."
+    },
+    {
+      "start": 838.47,
+      "end": 848.09,
+      "text": "Bardzo ładny tytuł w duchu polskiego romantyzmu i gdyby Roman Kostrzewski na taki wpadł, to pewnie nie zawahałby się go użyć."
+    },
+    {
+      "start": 1116.84,
+      "end": 1127.2,
+      "text": "To była absolutna premiera, posiądę cię jak żywą z albumu z mieczem na gwiazdy szczecińskiej formacji Garota."
+    },
+    {
+      "start": 1127.84,
+      "end": 1138.26,
+      "text": "Sam zespół już był prezentowany wciążko na sercu, puszczałem coś z ich splitu ze skródą zatytułowanego Czerń Północy."
+    },
+    {
+      "start": 1138.26,
+      "end": 1151.78,
+      "text": "No więc rzeczona skróda też za kilka dni wydaje dużą płytę, w ich przypadku debiutancką i również w prężnie działającej podziemnej wytwórni Gods of War."
+    },
+    {
+      "start": 1152.2,
+      "end": 1157.2,
+      "text": "Bardzo dziękuję przy okazji za dostarczenie mi przedpremierowo tych utworów."
+    },
+    {
+      "start": 1157.42,
+      "end": 1166.22,
+      "text": "Album skródy nosi tytuł Fury Among Ruin, a piosenka, której za chwilę wysłuchamy to Philosophy."
+    },
+    {
+      "start": 1167.24,
+      "end": 1176.76,
+      "text": "Prawdę mówiąc, inaczej wyobrażałem sobie filozofię, ale co ja, chłop z chłopów, mogę wiedzieć o tych uczonych sprawach."
+    },
+    {
+      "start": 1176.76,
+      "end": 1178.78,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1293.58,
+      "end": 1298.28,
+      "text": "Audycja nazywa się Ciężko na sercu, ale to chyba słychać."
+    },
+    {
+      "start": 1298.92,
+      "end": 1302.66,
+      "text": "Skoro już jedziemy z tym czarnym metalem, trochę współczesnym,"
+    },
+    {
+      "start": 1302.74,
+      "end": 1307.62,
+      "text": "ale jednak zanurzonym w thrashu i speedmetalu lat osiemdziesiątych,"
+    },
+    {
+      "start": 1308.16,
+      "end": 1310.04,
+      "text": "pozostańmy w temacie."
+    },
+    {
+      "start": 1310.88,
+      "end": 1314.84,
+      "text": "Zespół nazywa się Sarkator, więc musi być dobry,"
+    },
+    {
+      "start": 1314.9,
+      "end": 1319.14,
+      "text": "bo wszystkie dobre kapele mają nazwy kończące się na Ator."
+    },
+    {
+      "start": 1319.14,
+      "end": 1321.52,
+      "text": "Jest to wiedza powszechna."
+    },
+    {
+      "start": 1322.22,
+      "end": 1326.5,
+      "text": "Ci w dodatku chyba zlepili Sarkofago z Kreatorem,"
+    },
+    {
+      "start": 1326.64,
+      "end": 1329.98,
+      "text": "za co należą im się dodatkowe punkty."
+    },
+    {
+      "start": 1330.74,
+      "end": 1334.3,
+      "text": "Na szczęście w muzyce też to połączenie słychać,"
+    },
+    {
+      "start": 1334.38,
+      "end": 1337.72,
+      "text": "więc nie sposób się na nich gniewać."
+    },
+    {
+      "start": 1338.44,
+      "end": 1340,
+      "text": "Grupa pochodzi ze Szwecji."
+    },
+    {
+      "start": 1340.94,
+      "end": 1345.08,
+      "text": "Słychać w ich muzyce skórę, gwoździe, pasy z nabojami"
+    },
+    {
+      "start": 1345.08,
+      "end": 1348.98,
+      "text": "i młodzieńczy wręcz entuzjazm i nie bez powodu,"
+    },
+    {
+      "start": 1349.1,
+      "end": 1351.66,
+      "text": "bo to bardzo młodzi ludzie."
+    },
+    {
+      "start": 1352.44,
+      "end": 1358.78,
+      "text": "Chociaż Swarming Angels and Flies to ich trzecia już płyta."
+    },
+    {
+      "start": 1359.28,
+      "end": 1361.38,
+      "text": "Słuchamy utworu tytułowego,"
+    },
+    {
+      "start": 1362.58,
+      "end": 1365.86,
+      "text": "a ta gitara tak gra, że naprawdę słyszę,"
+    },
+    {
+      "start": 1366.04,
+      "end": 1368.8,
+      "text": "jak kłębią się te anioły i muchy."
+    },
+    {
+      "start": 1368.8,
+      "end": 1370.52,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1711.12,
+      "end": 1732.52,
+      "text": "Kiedy Szwedzi z Sarkator się rodzili, muzycy kolejnego zespołu byli już weteranami, mieli na koncie kultowe płyty i rozpad i powrót i całą tę operę mydlaną właściwą zespołom, które były zbyt dobre i zbyt kochane, żeby zupełnie odpuścić, a za mało popularne, by dało się z tego żyć."
+    },
+    {
+      "start": 1732.52,
+      "end": 1749.2,
+      "text": "Mowa o włoskiej grupie NecroDev, która narobiła trochę szumu w latach 80., ale przez odejście perkusisty do sadist nie istniała przez niemal całą kolejną dekadę, kiedy mogłaby konsumować owoce wcześniejszej pracy."
+    },
+    {
+      "start": 1749.36,
+      "end": 1768.56,
+      "text": "Tak czy owak NecroDev powrócili, dzielnie walczyli przez ponad ćwierć wieku i właśnie wydali kolejną płytę zatytułowaną Arimortis, która zarazem jest ich pożegnaniem, co jest już oficjalnie ogłaszane w dniu premiery."
+    },
+    {
+      "start": 1768.9,
+      "end": 1778.52,
+      "text": "Szkoda trochę, bo materiał dobry, choć znowu nie aż tak dobry, żeby cokolwiek w karierze NecroDev zmienić."
+    },
+    {
+      "start": 1779.36,
+      "end": 1781.5,
+      "text": "Ja, ja, ja, ja!"
+    },
+    {
+      "start": 1993.67,
+      "end": 2000.59,
+      "text": "Pozostajemy we Włoszech, a ja spróbuję przeczytać tytuł utworu, który za chwilę zaprezentuję."
+    },
+    {
+      "start": 2001.21,
+      "end": 2003.21,
+      "text": "Przepraszam, będę się kompromitował."
+    },
+    {
+      "start": 2004.09,
+      "end": 2010.45,
+      "text": "La Grotta della Sibilla atto uno, l'crivo al hostaria."
+    },
+    {
+      "start": 2011.41,
+      "end": 2017.99,
+      "text": "Proszę o wybaczenie wszystkich Włochów i osoby znające język włoski, ale nie mogłem sobie odmówić."
+    },
+    {
+      "start": 2018.67,
+      "end": 2027.05,
+      "text": "Hesperia to projekt jednoosobowy, na wszystkim gra i śpiewa niejaki Hesperus, oczywiście, bo kto inny w Hesperii,"
+    },
+    {
+      "start": 2027.57,
+      "end": 2038.43,
+      "text": "który odwołuje się do historii i kultury Włoch i trzeba mu to oddać, że będzie miał o czym nagrywać płyty do końca życia"
+    },
+    {
+      "start": 2038.43,
+      "end": 2043.33,
+      "text": "i jeszcze dzieci i wnuki będą mogły jego dzieło kontynuować."
+    },
+    {
+      "start": 2043.73,
+      "end": 2053.61,
+      "text": "Tytuł płyty brzmi Fralli Monti Sibillini, co podobno znaczy czarna średniowieczna zima nad górami sybillinskimi."
+    },
+    {
+      "start": 2054.27,
+      "end": 2059.33,
+      "text": "Nie wiem, może ktoś sobie ze mnie jaja robi, ale przeczytałem to za materiałami prasowymi."
+    },
+    {
+      "start": 2060.05,
+      "end": 2065.95,
+      "text": "Ciekawe jest to, że w jednym niedługim utworze Hesperia łączy black metal z pompatyczną,"
+    },
+    {
+      "start": 2066.63,
+      "end": 2076.75,
+      "text": "quasi symfoniczną formą, a to wszystko jeszcze zderza z folkiem, czy nawet wizją muzyki ze średniowiecznej karczmy rodem."
+    },
+    {
+      "start": 2076.75,
+      "end": 2078.75,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2363.5,
+      "end": 2374.1,
+      "text": "Hesperia może i przybywa ze słonecznej Italii, czy raczej się w niej okopała, ale muzyczną ścieżkę ma o zdecydowanie skandynawskiej proweniencji."
+    },
+    {
+      "start": 2374.58,
+      "end": 2386.54,
+      "text": "Podobnie jak kolejny zespół, który nazywa się Cabos. Nawet tytuł piosenki jest odpowiedni. Kierunek północ. Nordbundet."
+    },
+    {
+      "start": 2392.76,
+      "end": 2422.74,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 2422.76,
+      "end": 2435.32,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 2710.66,
+      "end": 2731.22,
+      "text": "Niektórzy z was pewnie rozpoznali w wysłuchanym właśnie utworze Cover Talkę, ale wykonawca, czyli Cabos, wbrew pozorom, nie pochodzi z Norwegii, ani nawet z Helu, w ogóle nie jest z północy, tylko z południa, ściśle mówiąc z Bliskiego Wschodu."
+    },
+    {
+      "start": 2731.22,
+      "end": 2760.74,
+      "text": "Cabos to jednoosobowy projekt kierowany przez niejakiego Atasza, Irańczyka mieszkającego, a jednak w Norwegii. Śpiewa po persku, otwarcie krytykując islam, więc nic dziwnego, że kiedy zagroziła mu deportacja, zaangażował opinię publiczną, by pomogła mu zostać, obawiając się, że w Iranie czeka go marny los."
+    },
+    {
+      "start": 2760.74,
+      "end": 2780.12,
+      "text": "No i obawiając się niebezpodstawnie. Obecnie Atasz zbiera pieniądze na obsługę prawną, bo odwołał się w sądzie od procedury deportacyjnej. No i jest szansa, że Norwedzy pozwolą mu jednak zostać na swojej przyjaznej dla Black Metalu ziemi."
+    },
+    {
+      "start": 2780.12,
+      "end": 2789.02,
+      "text": "A póki co Cabos wydał płytę Anti-Cosmic Rebellion i tak, to jest prawdziwy bunt."
+    },
+    {
+      "start": 2790.26,
+      "end": 2791.2,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 2809.57,
+      "end": 2814.07,
+      "text": "Wszystkie prawa zastrzeżone tego, co się pojawiło, że kolejny szanak."
+    },
+    {
+      "start": 2815.07,
+      "end": 2818.07,
+      "text": "Nie małżeństwo, bo nie małżeństwo."
+    },
+    {
+      "start": 2820.07,
+      "end": 2823.57,
+      "text": "Nie małżeństwo, zostało załżeństwo."
+    },
+    {
+      "start": 2826.07,
+      "end": 2830.07,
+      "text": "Nie małżeństwo i nie małżeństwo."
+    },
+    {
+      "start": 2831.07,
+      "end": 2834.07,
+      "text": "Nie małżeństwo, nie małżeństwo."
+    },
+    {
+      "start": 2834.57,
+      "end": 2836.07,
+      "text": "Nie małżeństwo."
+    },
+    {
+      "start": 2838.57,
+      "end": 2844.07,
+      "text": "Nie małżeństwo, bo nie małżeństwo."
+    },
+    {
+      "start": 2846.57,
+      "end": 2849.57,
+      "text": "Nie małżeństwo, bo nie małżeństwo."
+    },
+    {
+      "start": 2850.57,
+      "end": 2853.57,
+      "text": "Nie małżeństwo, bo nie małżeństwo."
+    },
+    {
+      "start": 2854.57,
+      "end": 2860.57,
+      "text": "Nie małżeństwo, bo nie małżeństwo."
+    },
+    {
+      "start": 2863.07,
+      "end": 2867.57,
+      "text": "Nie małżeństwo, bo nie małżeństwo."
+    },
+    {
+      "start": 2867.57,
+      "end": 2868.65,
+      "text": "Nie ma!"
+    },
+    {
+      "start": 2891.36,
+      "end": 2893.36,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 2921.36,
+      "end": 2923.36,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 2951.36,
+      "end": 2953.36,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 2981.36,
+      "end": 3007.8,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3132.13,
+      "end": 3150.65,
+      "text": "To był irański Kabos. Jeżeli ktoś z Was, drodzy słuchacze, pomyślał sobie, że to rzadka okazja posłuchać metalowego zespołu z Iranu, to trochę miał rację, a trochę nie, bo o to proszę, już pcha się następny."
+    },
+    {
+      "start": 3150.65,
+      "end": 3164.61,
+      "text": "Nosi nazwę Confess i gra zupełnie inaczej, ale ich losy dowodzą, że Kabos rzeczywiście powinien bać się deportacji i bronić się przed nią rękami i nogami."
+    },
+    {
+      "start": 3165.39,
+      "end": 3176.19,
+      "text": "Muzycy Confess mieszkali kiedyś i tworzyli w Teheranie, ale po wydaniu dwóch płyt zostali aresztowani za działalność antyreligijną i antypaństwową."
+    },
+    {
+      "start": 3176.19,
+      "end": 3191.73,
+      "text": "W Iranie zresztą pewnie na jedno wychodzi. Wyszli za kaucją i uciekli do Turcji, a przez Turcję dalej, ale jeżeli dobrze rozumiem, wyroki w ich sprawach i tak zapadły."
+    },
+    {
+      "start": 3191.73,
+      "end": 3202.09,
+      "text": "Lider Confess dostał 14 lat więzienia i 74 baty, a jego kolega 2 lata więzienia."
+    },
+    {
+      "start": 3203.07,
+      "end": 3211.55,
+      "text": "Przytaczam tę historię z pozdrowieniami dla wszystkich fanów metalu głosujących w wyborach na religijną prawicę."
+    },
+    {
+      "start": 3212.49,
+      "end": 3223.81,
+      "text": "Teraz Confess są bezpieczni. Nagrywają takie płyty jak Destination Addiction, która wychodzi 31 stycznia."
+    },
+    {
+      "start": 3224.37,
+      "end": 3232.69,
+      "text": "W utworze After Goliath mają nie lada gości, bębni George Collias, znany chociażby z Nile,"
+    },
+    {
+      "start": 3232.69,
+      "end": 3243.33,
+      "text": "a na gitarze gra Marcy Montaceri, czyli człowiek współpracujący m.in. z Philem Anselmo albo znany z grupy Exhorder."
+    },
+    {
+      "start": 3244.11,
+      "end": 3252.43,
+      "text": "Fani sepultury ze środkowego okresu działalności, tak powiedzmy z czasów KSAD, powinni być zadowoleni."
+    },
+    {
+      "start": 3512.16,
+      "end": 3526.04,
+      "text": "Szwedzi z The Halo Effect wydali właśnie swoją drugą płytę zatytułowaną March of the Unheard, ale wytwórnia tytułuje ich pionierami melodyjnego death metalu."
+    },
+    {
+      "start": 3526.04,
+      "end": 3547.04,
+      "text": "I wszystko się zgadza, bo w składzie mamy więcej muzyków in flames niż jest w obecnym składzie in flames oraz wokalistę dark tranquility, ale nawet gdybym wam tego nie powiedział to i tak byście to usłyszeli, bo takie rzeczy tylko w Geteborgu."
+    },
+    {
+      "start": 3782.21,
+      "end": 3798.23,
+      "text": "Więcej Szwecji audycja wytrzyma, a The Helicopters za kilka dni wydają nową płytę, a tytułem jednego z promujących ją singli pytają, czy czuję się normalny. Nie potwierdzam i nie zaprzeczam."
+    },
+    {
+      "start": 3985.67,
+      "end": 3999.93,
+      "text": "Overdriver to tytuł dziewiątej już płyty w dorobku Helicopters. Na okładce mamy jakieś urządzenie elektryczne, ni to magnetofon szpulowy, ni wzmacniacz."
+    },
+    {
+      "start": 3999.93,
+      "end": 4010.65,
+      "text": "W każdym razie wygląda srogo, wskazówkę ma wychyloną na czerwone, co znaczy, że jest głośno, jest przester, wszystko się zgadza."
+    },
+    {
+      "start": 4011.69,
+      "end": 4021.37,
+      "text": "Urządzenie ma słuszne rozmiary sporej kamienicy, a ludzie, chociaż widzimy tylko ich dłonie, oddają mu nabożną cześć."
+    },
+    {
+      "start": 4021.97,
+      "end": 4026.79,
+      "text": "Niby to głupie, naiwne, ale działa. To zupełnie jak z rock'n'rollem."
+    },
+    {
+      "start": 4210.24,
+      "end": 4219.82,
+      "text": "Helakopters zagrali nam rock'n'rolla, niemodnego, czy może raczej takiego, który nigdy z mody nie wychodzi."
+    },
+    {
+      "start": 4220.66,
+      "end": 4225.48,
+      "text": "Pora jednak na bardziej współczesne dźwięki, na muzykę młodzieżową."
+    },
+    {
+      "start": 4226.4,
+      "end": 4235.14,
+      "text": "Zespół nazywa się The City Is Ours, Miasto jest Nasze i chyba chodzi o Londyn, bo stamtąd grupa pochodzi."
+    },
+    {
+      "start": 4235.68,
+      "end": 4248.92,
+      "text": "Nowa płyta zespołu zatytułowana Will You Still Love Me? premierę ma 31 stycznia i jest kolorową mieszanką rzeczy bardzo ciężkich z rzeczami stuprocentowo popowymi,"
+    },
+    {
+      "start": 4249.44,
+      "end": 4257.24,
+      "text": "takimi tam param, pam, pam, pam, które za chwilę usłyszycie, ale przyznaję, że ma to swój urok."
+    },
+    {
+      "start": 4490.37,
+      "end": 4498.69,
+      "text": "Czy wiecie państwo, że cesarz Vespazian wymyślił i rozpoczął budowę rzymskiego koloseum?"
+    },
+    {
+      "start": 4498.69,
+      "end": 4512.75,
+      "text": "A zanim tego dokonał był tym, który wyszedł zwycięsko z tak zwanego Roku Czterech Cesarzy, czyli chaosu, który zapanował w Imperium Rzymskim po obaleniu Nerona."
+    },
+    {
+      "start": 4513.97,
+      "end": 4525.49,
+      "text": "Ale jeżeli tego nie wiedzieliście, to dowiecie się i dowiecie się wiele więcej z mini-albumu grupy Ex Deo, zatytułowanego właśnie Year of the Four Emperors."
+    },
+    {
+      "start": 4525.77,
+      "end": 4543.11,
+      "text": "Każdemu z cesarzy poświęcono tu jedną piosenkę, a za tym projektem Ex Deo stoi Maurizio Iacono z Kataklizm i zresztą dokonuje tego przy współpracy ze swoimi kolegami z zespołu."
+    },
+    {
+      "start": 4543.11,
+      "end": 4546.73,
+      "text": "Doskonale słychać, że to nie nowicjusze."
+    },
+    {
+      "start": 4784.48,
+      "end": 4798.42,
+      "text": "Szczury z Gomory. Po polsku też fajnie brzmiałaby ta nazwa, tylko muzycy Rats of Gomorra pewnie nie umieliby jej wypowiedzieć, bo pochodzą z Niemiec."
+    },
+    {
+      "start": 4798.42,
+      "end": 4815.04,
+      "text": "To duet gitarzysta i wokalista Daniel Sterling oraz perkucista Amortis Paulsen. Rats of Gomorra wydali właśnie debiutancką dużą płytę zatytułowaną Infectious Vermin."
+    },
+    {
+      "start": 4815.98,
+      "end": 4831.6,
+      "text": "Przyznają się do wpływów m.in. Bolt Trower i naszego Vadera, ale ja tu słyszę też stary Morbid Angel, choćby frazowanie podobne do Davida Vincenta i cóż dużo mówić, lubię takie ciosy."
+    },
+    {
+      "start": 4831.6,
+      "end": 4834.78,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4873.64,
+      "end": 4896.54,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4914.4,
+      "end": 4917.34,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4917.34,
+      "end": 4919.26,
+      "text": "Współpraca z Mojecicami"
+    },
+    {
+      "start": 4919.26,
+      "end": 4921.3,
+      "text": "Współpraca z Chaosu"
+    },
+    {
+      "start": 4921.3,
+      "end": 4923.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4923.42,
+      "end": 4925.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4925.42,
+      "end": 4927.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4927.42,
+      "end": 4929.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4929.42,
+      "end": 4931.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4931.42,
+      "end": 4933.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4933.42,
+      "end": 4935.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4935.42,
+      "end": 4937.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4937.42,
+      "end": 4939.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4939.42,
+      "end": 4941.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4941.42,
+      "end": 4943.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4943.42,
+      "end": 4945.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4945.42,
+      "end": 4947.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4947.42,
+      "end": 4949.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4949.42,
+      "end": 4951.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4951.42,
+      "end": 4953.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4953.42,
+      "end": 4955.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4955.42,
+      "end": 4957.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4957.42,
+      "end": 4959.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4959.42,
+      "end": 4961.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4961.42,
+      "end": 4963.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4963.42,
+      "end": 4965.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4965.42,
+      "end": 4967.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4967.42,
+      "end": 4969.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4969.42,
+      "end": 4971.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4971.42,
+      "end": 4972.42,
+      "text": "Współpraca z Merytnami"
+    },
+    {
+      "start": 4972.42,
+      "end": 4973.5,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4992.39,
+      "end": 5022.37,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5022.39,
+      "end": 5052.37,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5052.39,
+      "end": 5053.49,
+      "text": "W środek tarczy."
+    },
+    {
+      "start": 5054.15,
+      "end": 5057.05,
+      "text": "31 stycznia wychodzi ich pierwsza epka,"
+    },
+    {
+      "start": 5057.41,
+      "end": 5059.13,
+      "text": "Foul Transfixation,"
+    },
+    {
+      "start": 5059.61,
+      "end": 5061.21,
+      "text": "którą otworzy piosenka"
+    },
+    {
+      "start": 5061.21,
+      "end": 5063.57,
+      "text": "Putrid Gates of Bone."
+    },
+    {
+      "start": 5064.21,
+      "end": 5065.21,
+      "text": "Absolutna premiera."
+    },
+    {
+      "start": 5275.6,
+      "end": 5292.48,
+      "text": "Jeszcze jeden brutalny cios przed nami. Rzecz co prawda wyszła pod koniec grudnia, ale nie bądźmy drobiazgowi, tym bardziej, że pod koniec grudnia mogła państwu umknąć tak jak i mi umknęła, a szkoda byłoby, bo warta jest uwagi."
+    },
+    {
+      "start": 5292.48,
+      "end": 5308.02,
+      "text": "Byliśmy w Portugalii, więc teraz krótki spacerek do Hiszpanii, gdzie pojawił się niedawno zespół Death Control i chłoszcze nas czule połączeniem grindu z Trashem i Death Metalem."
+    },
+    {
+      "start": 5308.36,
+      "end": 5328.46,
+      "text": "Jeśli ich debiutancka płyta zatytułowana The Endless Echo of His Own Litany wyda wam się nieco zbyt dojrzała jak na debiut, to będziecie mieć rację, bo szyld jest nowy, ale za sterami stary wyga dopi z grupy Maczetazo."
+    },
+    {
+      "start": 5328.46,
+      "end": 5330.46,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5526.29,
+      "end": 5532.05,
+      "text": "Zespół nazywa się Moon Wizard, a Moon Wizard to pewnie taki czarodziej,"
+    },
+    {
+      "start": 5532.13,
+      "end": 5536.11,
+      "text": "co zamiast różdżką rzuca uroki przy pomocy gitary."
+    },
+    {
+      "start": 5536.73,
+      "end": 5541.63,
+      "text": "Amerykanie grają z toner metal, a więc riffy mają tłuste jak Makrela,"
+    },
+    {
+      "start": 5542.03,
+      "end": 5545.09,
+      "text": "aurę dostojną i nieco tajemniczą."
+    },
+    {
+      "start": 5545.79,
+      "end": 5550.25,
+      "text": "10 stycznia wydali płytę Sirens, świetny materiał,"
+    },
+    {
+      "start": 5550.79,
+      "end": 5554.47,
+      "text": "choć nie wiem, czy przywyknę do tego brzmienia."
+    },
+    {
+      "start": 5555.35,
+      "end": 5556.09,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5828.9,
+      "end": 5837.46,
+      "text": "Fajnie śpiewa ta Sammy Wolff, wokalistka Moon Wizard, ale gdzie tam jej do naszej Zofii."
+    },
+    {
+      "start": 5838.22,
+      "end": 5850.64,
+      "text": "Obscure Sphinx, bo mowa oczywiście o wielebnej wokalistce tej grupy, niedawno zagrali trasę po Polsce u boku Blinded 23 i podobno były to fantastyczne koncerty."
+    },
+    {
+      "start": 5851.06,
+      "end": 5860.72,
+      "text": "Niestety nie mogłem być na żadnym z nich, ale wierzę oczywiście, choćby po tym co widziałem na festiwalu Summer Dine Loud."
+    },
+    {
+      "start": 5860.72,
+      "end": 5875.78,
+      "text": "Na domiar dobrego Obscure Sphinx powrócili nie tylko do działalności koncertowej, ale i wydawniczej, czego owocem jest przygotowany specjalnie na tę właśnie trasę mini-album Emover."
+    },
+    {
+      "start": 5876.32,
+      "end": 5879.66,
+      "text": "Otwiera go piosenka Scarity Hunter."
+    },
+    {
+      "start": 5881.06,
+      "end": 5882.08,
+      "text": "Wszelkie prawa zastrzeżone."
+    },
+    {
+      "start": 6455.14,
+      "end": 6458.7,
+      "text": "Patrzę na zegarek i widzę, że już późno."
+    },
+    {
+      "start": 6459.3,
+      "end": 6463.24,
+      "text": "Harakiri for the sky twierdzą wręcz w tytule utworu,"
+    },
+    {
+      "start": 6463.58,
+      "end": 6465.44,
+      "text": "który zakończy dzisiejszą audycję,"
+    },
+    {
+      "start": 6466.06,
+      "end": 6468.56,
+      "text": "że jest too late for goodbyes,"
+    },
+    {
+      "start": 6468.98,
+      "end": 6471.56,
+      "text": "czyli za późno na pożegnanie."
+    },
+    {
+      "start": 6472.86,
+      "end": 6473.6,
+      "text": "Niech im będzie."
+    },
+    {
+      "start": 6474.44,
+      "end": 6476.32,
+      "text": "Dzisiaj wyjdę ze studia po angielsku,"
+    },
+    {
+      "start": 6476.8,
+      "end": 6478.52,
+      "text": "na odchodnym rzucając tylko,"
+    },
+    {
+      "start": 6478.92,
+      "end": 6481.86,
+      "text": "że utwór pochodzi z nowej płyty Austriaków"
+    },
+    {
+      "start": 6481.86,
+      "end": 6484.94,
+      "text": "zatytułowanej Scorched Earth,"
+    },
+    {
+      "start": 6485.52,
+      "end": 6486.96,
+      "text": "że są to black metalowe,"
+    },
+    {
+      "start": 6487.02,
+      "end": 6489.58,
+      "text": "ale w sumie ładne, melancholijne piosenki"
+    },
+    {
+      "start": 6489.58,
+      "end": 6493.9,
+      "text": "o tym, że świat się zepsuł i mamy przechlapane."
+    },
+    {
+      "start": 6494.76,
+      "end": 6496.76,
+      "text": "No dobrze, Harakiri for the sky,"
+    },
+    {
+      "start": 6497.32,
+      "end": 6499.54,
+      "text": "powiedzcie mi coś, czego nie wiem."
+    },
+    {
+      "start": 6499.54,
+      "end": 6501.08,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 25,
+    "transcribedAudioSec": 1552.65,
+    "segmentCount": 207,
+    "characterCount": 14180
+  },
+  "sourceId": "2025-01-29-ciezko-na-sercu-29-stycznia-godz-0005"
+}
