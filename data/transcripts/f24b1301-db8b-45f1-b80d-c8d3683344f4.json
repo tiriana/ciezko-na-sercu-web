@@ -1,0 +1,670 @@
+{
+  "version": 1,
+  "episodeId": "f24b1301-db8b-45f1-b80d-c8d3683344f4",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109014950,
+  "fileMtimeMs": 1789151196101.0332,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 10.17
+    },
+    {
+      "index": 1,
+      "start": 177.67,
+      "end": 374.88
+    },
+    {
+      "index": 2,
+      "start": 575.59,
+      "end": 621.79
+    },
+    {
+      "index": 3,
+      "start": 975.94,
+      "end": 1067.1
+    },
+    {
+      "index": 4,
+      "start": 1265.03,
+      "end": 1296.48
+    },
+    {
+      "index": 5,
+      "start": 1557.99,
+      "end": 1615.2
+    },
+    {
+      "index": 6,
+      "start": 1950.28,
+      "end": 1989.76
+    },
+    {
+      "index": 7,
+      "start": 2309.28,
+      "end": 2367
+    },
+    {
+      "index": 8,
+      "start": 2643.59,
+      "end": 2676.92
+    },
+    {
+      "index": 9,
+      "start": 2897.73,
+      "end": 2938.2
+    },
+    {
+      "index": 10,
+      "start": 3218.98,
+      "end": 3263.68
+    },
+    {
+      "index": 11,
+      "start": 3545.03,
+      "end": 3559.84
+    },
+    {
+      "index": 12,
+      "start": 3747.91,
+      "end": 3786.59
+    },
+    {
+      "index": 13,
+      "start": 4138.63,
+      "end": 4152.7
+    },
+    {
+      "index": 14,
+      "start": 4307.88,
+      "end": 4347.52
+    },
+    {
+      "index": 15,
+      "start": 4509.7,
+      "end": 4555.36
+    },
+    {
+      "index": 16,
+      "start": 4718.92,
+      "end": 4749.08
+    },
+    {
+      "index": 17,
+      "start": 5010.6,
+      "end": 5135.23
+    },
+    {
+      "index": 18,
+      "start": 5542.28,
+      "end": 5586.43
+    },
+    {
+      "index": 19,
+      "start": 5779.91,
+      "end": 5814.84
+    },
+    {
+      "index": 20,
+      "start": 6041.86,
+      "end": 6085.53
+    },
+    {
+      "index": 21,
+      "start": 6328.39,
+      "end": 6366.43
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 10.18,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 177.67,
+      "end": 186.01,
+      "text": "Dobry wieczór Państwu. Nazywam się Jarek Szubrych i przez najbliższe dwie godziny będę Wam puszczał piosenki."
+    },
+    {
+      "start": 186.83,
+      "end": 192.33,
+      "text": "Audycję wydaje Mariusz Owczarek, a słuchacie Ciężko na sercu w trójce."
+    },
+    {
+      "start": 193.03,
+      "end": 199.01,
+      "text": "Zespół Vader wyjaśnił Wam, jaki będzie temat naszego dzisiejszego spotkania."
+    },
+    {
+      "start": 199.01,
+      "end": 202.23,
+      "text": "To jest wojna. Wojna totalna."
+    },
+    {
+      "start": 202.97,
+      "end": 210.39,
+      "text": "Rozmyślając nad myślą przewodnią dzisiejszej audycji przeglądałem wiadomości."
+    },
+    {
+      "start": 211.21,
+      "end": 219.73,
+      "text": "Rosja bombarduje Ukrainę, Izrael gazę, Amerykanie opowiadają o swojej nowej, cudownej broni."
+    },
+    {
+      "start": 220.35,
+      "end": 223.81,
+      "text": "Putin chce umieścić atom w kosmosie."
+    },
+    {
+      "start": 223.81,
+      "end": 231.93,
+      "text": "My się zbroimy, Niemcy się zbroją, Bułgarzy się zbroją, Rumunii też wszyscy właściwie."
+    },
+    {
+      "start": 232.71,
+      "end": 234.43,
+      "text": "Trudno się tym nie niepokoić."
+    },
+    {
+      "start": 235.27,
+      "end": 241.13,
+      "text": "Powróciła atmosfera zagrożenia wojną światową, którą pamiętam z dzieciństwa."
+    },
+    {
+      "start": 241.81,
+      "end": 245.13,
+      "text": "Oczywiście pamiętam atmosferę zagrożenia."
+    },
+    {
+      "start": 245.25,
+      "end": 248.59,
+      "text": "Ten strach na szczęście nie wojnę."
+    },
+    {
+      "start": 249.13,
+      "end": 254.27,
+      "text": "Ale dzisiaj posłuchamy zatem metalu o wojnie."
+    },
+    {
+      "start": 254.83,
+      "end": 264.97,
+      "text": "I nie będzie to robienie sobie jaj z pogrzebu, bo metalowcy już na pewno większość z nich traktują wojnę bardzo poważnie."
+    },
+    {
+      "start": 265.89,
+      "end": 279.27,
+      "text": "Ktoś powiedziałby, że to niezdrowe zainteresowanie, ale czy aby na pewno może to właśnie jest zdrowsze od pychania od siebie myśli, tematów trudnych, budzących lęk."
+    },
+    {
+      "start": 279.41,
+      "end": 286.11,
+      "text": "Może lepiej je w tym bezpiecznym otoczeniu sztuki przepracować."
+    },
+    {
+      "start": 287.01,
+      "end": 296.39,
+      "text": "Gdybym rzucił kamieniem w dowolnym kierunku, trafiłbym zapewne w zespół metalowy, który ma w repertuarze utwory o tematyce wojennej."
+    },
+    {
+      "start": 297.47,
+      "end": 301.47,
+      "text": "Większości z tych najbardziej oczywistych dzisiaj nie zaprezentuję."
+    },
+    {
+      "start": 302.21,
+      "end": 310.47,
+      "text": "Nie będzie zatem Sabatonu, nie będzie Metalliki, choć ich One warto przynajmniej wspomnieć."
+    },
+    {
+      "start": 310.99,
+      "end": 318.53,
+      "text": "Nie będzie też Iron Maiden, choć Wojen w ich piosenkach wiele z różnych epok i zakątków globu."
+    },
+    {
+      "start": 318.69,
+      "end": 325.65,
+      "text": "Dla niejednego małolata, dla mnie też teksty Iron Maiden to były cenne lekcje historii."
+    },
+    {
+      "start": 326.23,
+      "end": 334.93,
+      "text": "Zresztą cały ten nurt nowej fali brytyjskiego heavy metalu ochoczo się do wojny i wątków militarnych odwoływał."
+    },
+    {
+      "start": 335.93,
+      "end": 339.29,
+      "text": "Mieliśmy więc Saxon i ich Crusader oraz Dogs of War."
+    },
+    {
+      "start": 339.89,
+      "end": 341.55,
+      "text": "Mieliśmy Blitzkrieg i Holocaust."
+    },
+    {
+      "start": 342.55,
+      "end": 348.27,
+      "text": "I wreszcie zespół Tank, który skupiał się w tekstach na trzech głównych tematach."
+    },
+    {
+      "start": 348.27,
+      "end": 351.01,
+      "text": "Piwie, kobietach i wojnie."
+    },
+    {
+      "start": 351.69,
+      "end": 360.39,
+      "text": "Samo słowo Tank, szczególnie jeżeli tutaj mowa o piwie może znaczyć różne rzeczy, ale logo zespołu jednoznacznie wskazuje, że chodzi o czołg."
+    },
+    {
+      "start": 361.47,
+      "end": 372.73,
+      "text": "Może zresztą mają piosenki, w których spotykają się wszystkie trzy wątki, ale ja wybrałem dzisiaj dla Państwa ciężką artylerię."
+    },
+    {
+      "start": 374.39,
+      "end": 374.89,
+      "text": "Muzyka"
+    },
+    {
+      "start": 575.59,
+      "end": 598.13,
+      "text": "Jak już powiedziałem, wielu oczywistych wyborów dzisiaj nie będzie. Nie zmieści się na przykład nic sepultury, też żałuję innym razem. Nie będzie również war ensemble Slayera, choć byłby to pierwszy przykład metalowego numeru o wojnie, który podałbym obudzony w środku nocy."
+    },
+    {
+      "start": 598.13,
+      "end": 619.63,
+      "text": "Oczywiście Slayer miał okołowojennych piosenek znacznie więcej, przede wszystkim przez militarystyczne pasje Jeffa Hanemana i jedną z nich Państwu zaprezentuję, jedną z moich ulubionych i mam wrażenie, że niedocenianą. Chemical Warfare."
+    },
+    {
+      "start": 619.63,
+      "end": 621.79,
+      "text": "Muzyka"
+    },
+    {
+      "start": 976.64,
+      "end": 987.02,
+      "text": "Dave Mustaine, podobnie jak Jeff Zeslayera i wielu innych ich rówieśników, też nie może przestać myśleć i pisać o wojnie."
+    },
+    {
+      "start": 987.58,
+      "end": 995.66,
+      "text": "To musi być kwestia pokoleniowa, bo skoro ja pamiętam dorastanie w tym strachu przed trzecią wojną światową,"
+    },
+    {
+      "start": 995.66,
+      "end": 1009.1,
+      "text": "to co dopiero powiedzieć o ludziach o dekadę starszych, dla których druga jeszcze była świeżym, co prawda zapożyczonym za sprawą rodziców, ale świeżym wspomnieniem."
+    },
+    {
+      "start": 1010.1,
+      "end": 1019.52,
+      "text": "I ta trzecia, o której ciągle wszyscy mówili, do której nas przygotowywali, to było realne zagrożenie, nie dało się tego zlekceważyć."
+    },
+    {
+      "start": 1019.52,
+      "end": 1034.18,
+      "text": "Zresztą sama już nazwa zespołu Mustaina, czyli Megadeth, odnosi się ponoć do terminu wymyślonego w latach pięćdziesiątych do jednostki miary efektywności broni jądrowej."
+    },
+    {
+      "start": 1035.22,
+      "end": 1042.2,
+      "text": "Jedna mega śmierć oznaczać miała ładunek zdolny do unicestwienia miliona ludzi."
+    },
+    {
+      "start": 1043.1,
+      "end": 1051.4,
+      "text": "Megadeth mają utwory i o wojnach współczesnych, i tych mają chyba więcej, i o tych, które kiedyś się rozgrywały w przeszłości,"
+    },
+    {
+      "start": 1052.14,
+      "end": 1060.46,
+      "text": "ale łatwo wyciągnąć z nich uniwersalne i aktualne wnioski o paskudnej naturze ludzkiej."
+    },
+    {
+      "start": 1060.46,
+      "end": 1065.4,
+      "text": "Take no prisoners zaliczyć należy do tej drugiej kategorii."
+    },
+    {
+      "start": 1265.03,
+      "end": 1293.59,
+      "text": "Metalliki nie będzie, ale był Slayer, był Megadeth. To może jeszcze czwarty zespół z amerykańskiej trashowej Wielkiej Czwórki. Posłuchajmy Exodus z płyty Tempo of the Damned z 2004 roku. Opowieści o tym, jak broń, wojna, przemoc staje się religią. I niekoniecznie jest to narracja ironiczna czy protest song."
+    },
+    {
+      "start": 1295.03,
+      "end": 1296.45,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 1558.69,
+      "end": 1573.47,
+      "text": "Niemiecka Wielka Traszowa Czwórka mniej ochoczo zajmowała się wojną niż ich amerykańscy koledzy, co na pewno wiąże się z historyczną odpowiedzialnością narodu niemieckiego za II wojnę światową."
+    },
+    {
+      "start": 1574.39,
+      "end": 1583.57,
+      "text": "No bo jak tu układać i śpiewać o niej piosenki, skoro rodzice w niej uczestniczyli, w najlepszym wypadku jako niemi świadkowie."
+    },
+    {
+      "start": 1583.57,
+      "end": 1591.97,
+      "text": "Ale oczywiście jest Sodom, Sodom, który w mundurze polowym czuje się jak ryba w wodzie."
+    },
+    {
+      "start": 1592.87,
+      "end": 1598.47,
+      "text": "No i w końcu tyle ma wojen do dyspozycji, że przecież nie musi zajmować się własnymi."
+    },
+    {
+      "start": 1613.57,
+      "end": 1615.21,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 1950.28,
+      "end": 1961.68,
+      "text": "Grip Incorporated. Wspaniały zespół, w którym spotkali się gitarzysta i producent Waldemar Sorychta z wybitnym perkusistą Dave'em Lombardo."
+    },
+    {
+      "start": 1962.64,
+      "end": 1971.22,
+      "text": "Zespół, którego zbyt krótka historia zakończyła się w 2008 roku wraz ze śmiercią wokalisty Gasa Chambersa."
+    },
+    {
+      "start": 1971.22,
+      "end": 1982.68,
+      "text": "Posłuchamy utworu Heretic War Chant z debiutu Grip Incorporated, płyty Power of Inner Strength z 1995 roku."
+    },
+    {
+      "start": 1983.14,
+      "end": 1987.6,
+      "text": "Pesymistycznej opowieści o tym, że wojna się wszystkim opłaca."
+    },
+    {
+      "start": 1987.6,
+      "end": 1989.76,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2310.04,
+      "end": 2325.34,
+      "text": "Szwedzki Bathory, nieodżałowany projekt Quartona Setta, pamiętany jest i ceniony przede wszystkim ze względu na zasługi dla black metalu z północy, za położenie fundamentu pod tę muzykę."
+    },
+    {
+      "start": 2325.64,
+      "end": 2340.6,
+      "text": "Okres wikiński w twórczości Bathory też ma swoich wielbicieli i zasłużenie, ale taka na przykład płyta Destroyer of Worlds z 2001 roku nie jest szczególnie ceniona."
+    },
+    {
+      "start": 2341.76,
+      "end": 2351.8,
+      "text": "Kiedy się ukazała, przyznaję, że też za nią nie przepadałem, ale dzisiaj słyszę, że to naprawdę dobra i oryginalna muzyka."
+    },
+    {
+      "start": 2352.5,
+      "end": 2361.3,
+      "text": "Posłuchajmy utworu tytułowego, inspirowanego oczywiście słowami Roberta Oppenheimera, wynalazcy bomby atomowej."
+    },
+    {
+      "start": 2361.92,
+      "end": 2365.26,
+      "text": "Stałem się śmiercią, niszczycielem światów."
+    },
+    {
+      "start": 2643.59,
+      "end": 2656.67,
+      "text": "Chyba nie muszę mówić, że amerykański zespół Nuclear Assault wziął sobie zagrożenie wojną atomową do serca, nie bez powodu miał taką nazwę, jaką miał."
+    },
+    {
+      "start": 2656.67,
+      "end": 2674.39,
+      "text": "A na debiutanckiej płycie z 1986 roku miał w dodatku utwór zatytułowany Nuclear War. Album nosił tytuł Game Over, bo po takiej wojnie gra jest już dla wszystkich skończona."
+    },
+    {
+      "start": 2897.73,
+      "end": 2909.81,
+      "text": "To jeszcze jeden numer o Trzeciej Wojnie Światowej, znacznie młodszy od poprzedniego, bo temat niestety nie może się jakoś zdezaktualizować."
+    },
+    {
+      "start": 2910.43,
+      "end": 2917.87,
+      "text": "Testament z albumu Titans of Creation, utwór zatytułowany po prostu World War III."
+    },
+    {
+      "start": 2918.41,
+      "end": 2925.67,
+      "text": "Chuck Billy nie posługuje się w swoich tekstach wymyślnym językiem, tu jest prosto i na temat."
+    },
+    {
+      "start": 2926.37,
+      "end": 2936.29,
+      "text": "Witamy w Trzeciej Wojnie Światowej. Wszyscy zginą. Nie ma ucieczki. Twoje płuca stają się czarne. Nikt nie może cię uratować. To Armageddon."
+    },
+    {
+      "start": 3219.76,
+      "end": 3224.14,
+      "text": "Oczywiście różne są wojny, każdy toczy taką, na jaką go stać."
+    },
+    {
+      "start": 3224.8,
+      "end": 3230.12,
+      "text": "Za chwilę posłuchamy utworu o tym, że bracia w metalu nie znają panów."
+    },
+    {
+      "start": 3230.74,
+      "end": 3240.3,
+      "text": "Zespół Man War i ich Święta Wojna z mojej ulubionej płyty tego amerykańskiego zespołu zatytułowanej Fighting the World."
+    },
+    {
+      "start": 3241.2,
+      "end": 3248.46,
+      "text": "Ulubionej, bo poznałem ją w odpowiednim smarkatem wieku i śpiewałem tę piosenkę stojąc przed lustrem."
+    },
+    {
+      "start": 3248.98,
+      "end": 3251.64,
+      "text": "I pompując pięścią powietrze."
+    },
+    {
+      "start": 3252.32,
+      "end": 3258.58,
+      "text": "Chodźcie tutaj po zerzy z całą swoją trzynastoletnią bezwzględnością."
+    },
+    {
+      "start": 3259.04,
+      "end": 3260.86,
+      "text": "Pokażę wam, gdzie wasze miejsce."
+    },
+    {
+      "start": 3545.03,
+      "end": 3558.43,
+      "text": "To może dla kontrastu Neypon Death, utwór otwierający ich album Order of the Leech z 2002 roku, nosi tytuł Kontynuując wojnę z głupotą."
+    },
+    {
+      "start": 3747.91,
+      "end": 3762.41,
+      "text": "Peter Steele w typu Negative zajmował się głównie wojną płci, ale w swoim pierwszym zespole w Carnivore skupiał się na zupełnie innych wojnach."
+    },
+    {
+      "start": 3762.41,
+      "end": 3781.61,
+      "text": "Na debiucie była to wojna termonuklearna, ale to już dzisiaj przerabialiśmy, a na drugiej, czyli na Retaliation, mamy utwór bardzo współczesny, bardzo aktualny, wtedy w 1987 roku i teraz niestety również."
+    },
+    {
+      "start": 3782.15,
+      "end": 3784.31,
+      "text": "Race War, wojna raz."
+    },
+    {
+      "start": 3784.31,
+      "end": 3786.59,
+      "text": "WSZIĘKI"
+    },
+    {
+      "start": 4138.63,
+      "end": 4151.11,
+      "text": "Meszuga Niegorsi też mają piosenkę o wojnie, zatytułowaną po prostu War, Wojna. Kiedy słyszysz wycie syren, wiec, że nadciąga."
+    },
+    {
+      "start": 4308.54,
+      "end": 4327.9,
+      "text": "Lubię Mastodon, bardzo dobry zespół, ale kiedyś naprawdę uwielbiałem, kiedy jeszcze byli podziemni, ekstremalni, kiedy nie pakowali tych power metalowych, podniosłych hymnów do swoich numerów, kiedy więcej w tym wszystkim było brudu i nieokrzesania."
+    },
+    {
+      "start": 4327.9,
+      "end": 4345.6,
+      "text": "Mini album Life's Blood ukazał się w 2001 roku, a więc jeszcze przed debiutancką dużą płytą Mastodon jest w każdej minucie znakomity, choćby za sprawą utworu Welcoming War."
+    },
+    {
+      "start": 4345.6,
+      "end": 4347.52,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4509.7,
+      "end": 4525.48,
+      "text": "Żeby nie było, że dzisiaj same gwiazdy i nie chciało mi się sięgać głębiej na półkę, Sota Jumala to fiński death metal z piwnicy, a właściwie z okopów."
+    },
+    {
+      "start": 4525.48,
+      "end": 4541.76,
+      "text": "Nazwa zespołu oznacza bowiem Boga Wojny, a utwór, którego posłuchamy za chwilę to tytułowa piosenka z ich debiutanckiego mini-albumu Pansari Kolonna, czyli kolumna pancerna."
+    },
+    {
+      "start": 4541.76,
+      "end": 4555.26,
+      "text": "I nawet gdybym nie mówił biegle po fińsku, domyśliłbym się tego patrząc na okładkę. Przedstawia gąsienice czołgu na śniegu."
+    },
+    {
+      "start": 4718.92,
+      "end": 4739.84,
+      "text": "Dain Fitus to death metal polityczny, wojujący, a więc niemało mają utworów z tekstami krytykującymi amerykański imperializm i militaryzm, nie tylko amerykański zresztą, no choć przede wszystkim zajmują się swoim rządem, a nie cudzymi."
+    },
+    {
+      "start": 4739.84,
+      "end": 4747.04,
+      "text": "Weźmy na przykład taki utwór One Shot One Kill z albumu Stop At Nothing."
+    },
+    {
+      "start": 4748.92,
+      "end": 4749.08,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5011.44,
+      "end": 5026.34,
+      "text": "Wydaje mi się, że płyta Esoteric Warfare norweskiej grupy Mayhem nie jest szczególnie ceniona przez fanów zespołu, bo wybitnego gitarzysta i autora muzyki Blasphemera zastąpił niejaki Teloch."
+    },
+    {
+      "start": 5026.34,
+      "end": 5043.4,
+      "text": "I ja rozumiem tę rezerwę i nawet ją do jakiegoś stopnia podzielałem, ale mam wrażenie, że jeszcze tutaj Teloch bardzo, bardzo się starał za wszelką cenę próbując udowodnić, że sprosta temu niełatwemu zadaniu."
+    },
+    {
+      "start": 5043.96,
+      "end": 5056.44,
+      "text": "Muzycznie więc Esoteric Warfare się broni, ale teksty, koncept, oprawa graficzna autorstwa naszego rodaka Zbyszka Bielaka to już majstersztykt."
+    },
+    {
+      "start": 5057.5,
+      "end": 5072.24,
+      "text": "Teksty oparte zostały na historii zimnowojennej rywalizacji Zachodu ze Wschodem, która nie była tylko wyścigiem zbrojeń w tradycyjnym tego słowa znaczeniu,"
+    },
+    {
+      "start": 5073.36,
+      "end": 5081.06,
+      "text": "a więc nie chodziło tylko o to kto więcej wyprodukuje rakiet, bomb, czołgów czy okrętów podwodnych."
+    },
+    {
+      "start": 5081.4,
+      "end": 5091.52,
+      "text": "Zarówno Amerykanie jak i Rosjanie mnóstwo sił i środków poświęcali badaniom zjawisk parapsychologicznych i ezoterycznych,"
+    },
+    {
+      "start": 5092.22,
+      "end": 5103.1,
+      "text": "wychodząc z założenia, że jeżeli magia albo chociaż telepatia działa, dobrze będzie ją wykorzystać jako broń."
+    },
+    {
+      "start": 5103.26,
+      "end": 5110.2,
+      "text": "Kto z Państwa widział serial Stranger Things na jednej z popularnych platform streamingowych,"
+    },
+    {
+      "start": 5110.86,
+      "end": 5117.56,
+      "text": "ten zna temat i nie został on wyssany z palca całkowicie przez scenarzystów."
+    },
+    {
+      "start": 5118.3,
+      "end": 5130.8,
+      "text": "Temat fascynujący, który na esoteric warfare świetnie ujął Attila, wokalista grupy, w końcu Węgier doskonale pamiętający czasy komuny,"
+    },
+    {
+      "start": 5131.12,
+      "end": 5133.2,
+      "text": "więc czuje temat jak mało kto."
+    },
+    {
+      "start": 5542.28,
+      "end": 5562.78,
+      "text": "Szwedzki Marduk, trochę podobnie jak nasz Wejder, zna tylko dwa tematy tekstów. Albo szatan, albo wojna. Mógłbym więc całą audycję złożyć z ich militarnego urobku, ale skoro trzeba wybrać jeden numer, inaczej być nie mogło."
+    },
+    {
+      "start": 5563.32,
+      "end": 5584.06,
+      "text": "Warszaw. Utwór poświęcony powstaniu warszawskiemu bez romantyzowania, bez emocji, co zresztą w chwili premiery ponad 20 lat temu w Polsce budziło sporo kontrowersji, no ale nic w tym dziwnego. Powstanie warszawskie to wciąż otwarta rana."
+    },
+    {
+      "start": 5779.91,
+      "end": 5798.05,
+      "text": "Gdybym złowił Złotą Rybkę, a ona w zamian za wolność zaproponowałaby mi, że reaktywuje trzy dowolne zespoły, pierwszym którego powrót bym sobie zażyczył byłby Bolt Thrower."
+    },
+    {
+      "start": 5798.63,
+      "end": 5812.59,
+      "text": "Wyjaśniłbym wam dlaczego, ale po co mam gadać, niech przemówi muzyka, choćby utwór No Gods, No Glory, co w wolnym tłumaczeniu oznacza bez pracy nie ma kołaczy."
+    },
+    {
+      "start": 6041.86,
+      "end": 6054.18,
+      "text": "Bold Strower powstał w połowie lat 80. i był na brytyjskiej, czy w ogóle europejskiej scenie death metalowej zjawiskiem pionierskim."
+    },
+    {
+      "start": 6054.6,
+      "end": 6066.36,
+      "text": "Jako, że muzycy wywodzili się ze środowiska, w którym metal przeplatał się z punkiem, miało to wpływ nie tylko na brzmienie grupy, ale i na ich postawę."
+    },
+    {
+      "start": 6066.88,
+      "end": 6083.68,
+      "text": "Choć teksty Bold Strower oscylowały wokół wojny, nie było tym niezdrowej, militarystycznej podjarki długimi lufami, ale jedno wielkie ostrzeżenie przed przerażającą historią, która może się powtórzyć."
+    },
+    {
+      "start": 6328.39,
+      "end": 6342.95,
+      "text": "Nie mogę się uwolnić od How It Ends ostatniej póki co płyty irlandzkiej grupy Primordial. Jej tytuł można przetłumaczyć jako Tak to się kończy i niech będzie."
+    },
+    {
+      "start": 6342.95,
+      "end": 6357.95,
+      "text": "Tak właśnie skończy się ta audycja. Skończy się utworem Wszyscy przeciwko wszystkim, bo taka jest przecież istota wojny i taka jest natura człowieka."
+    },
+    {
+      "start": 6358.39,
+      "end": 6364.11,
+      "text": "Czy to jest Kali Yuga, której nie mogłeś się doczekać? Czy to może twój upadek Rzymu?"
+    }
+  ],
+  "stats": {
+    "windowCount": 22,
+    "transcribedAudioSec": 1117.54,
+    "segmentCount": 108,
+    "characterCount": 11791
+  },
+  "sourceId": "2025-04-16-ciezka-artyleria-mocna-muzyka-z-wojna-w-tle"
+}
