@@ -2,10 +2,71 @@
   "version": 1,
   "id": "7a326a5e-2fbd-4fd3-be6c-5ed4a45abe54",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T14:07:22.268Z",
+  "updatedAt": "2026-11-06T15:10:21.579Z",
   "durationSec": 6885,
-  "summary": "",
-  "topics": [],
+  "summary": "Przegląd festiwalu Roadburn 2025 w Tilburgu, skoncentrowany na najgłośniejszych koncertach edycji. The Body zagrało dwukrotnie — z Felicją Częt oraz samotnie w duecie — a obok nich wystąpili Oranssi Pazuzu, Altın Gün i The Bug, którego basowe natarcie zapowiedziano też na Mystic Festival. Becky Laverty opisała kulisy programu: brak parytetów, układanie line-upu jak puzzli, wagę kontekstu i odrzucanie zespołów o faszystowskich poglądach. Frente Abierto połączył ortodoksyjne flamenco z ponurym metalem, prezentując fragment nadchodzącej płyty Guerra e Toro Eso, a Witch Club Satan zmierzył się z awarią sprzętu basistki. Chat Pile opowiedzieli o koncertowym albumie Live at Roadburn, inspiracjach Nirvaną, Pixies i Sonic Youth oraz o pełnej gniewu płycie Cool World. W podsumowaniu wymieniono także Sumac, Thou, Uniform, Violent Magic Orchestra, Big Brave, Envy, Buñuel i Violent Magic Orchestra.",
+  "topics": [
+    {
+      "start": 466,
+      "end": 513,
+      "label": "Roadburn 2025 i dwa koncerty The Body"
+    },
+    {
+      "start": 1219,
+      "end": 1307,
+      "label": "Subiektywny wybór koncertów i lęk przed przegapieniem"
+    },
+    {
+      "start": 1307,
+      "end": 1333,
+      "label": "Oranssi Pazuzu, Altın Gün i The Bug"
+    },
+    {
+      "start": 2044,
+      "end": 2113,
+      "label": "Eklektyzm festiwalu na przykładzie trzech koncertów"
+    },
+    {
+      "start": 2113,
+      "end": 2444,
+      "label": "Becky Laverty o programie i filozofii festiwalu"
+    },
+    {
+      "start": 2679,
+      "end": 3057,
+      "label": "Kobiety w ciężkiej muzyce i różnorodność programu"
+    },
+    {
+      "start": 3287,
+      "end": 3394,
+      "label": "Frente Abierto łączy flamenco z ponurym metalem"
+    },
+    {
+      "start": 3701,
+      "end": 3794,
+      "label": "Witch Club Satan i awaria sprzętu basistki"
+    },
+    {
+      "start": 4221,
+      "end": 4461,
+      "label": "Chat Pile o albumie koncertowym z Roadburn"
+    },
+    {
+      "start": 4735,
+      "end": 4999,
+      "label": "Chat Pile o publiczności i amerykańskich korzeniach"
+    },
+    {
+      "start": 5333,
+      "end": 5571,
+      "label": "Album Cool World o przemocy i polityce USA"
+    },
+    {
+      "start": 5751,
+      "end": 5944,
+      "label": "Przegląd pozostałych koncertów: Sumac, Thou, Uniform"
+    }
+  ],
   "tags": [
     {
       "id": "alt-n-gun",
@@ -81,7 +142,7 @@
   "tracks": [
     {
       "start": 12,
-      "end": 513,
+      "end": 466,
       "durationSec": 386,
       "artist": "The Body & Thou",
       "title": "In Meetings Hearts Beat Closer",
@@ -94,7 +155,7 @@
     },
     {
       "start": 513,
-      "end": 1333,
+      "end": 1219,
       "durationSec": 707,
       "artist": "The Body & Dis Fig",
       "title": "Orchards of a Futile Heaven",
@@ -120,7 +181,7 @@
     },
     {
       "start": 1651,
-      "end": 2444,
+      "end": 2044,
       "durationSec": 395,
       "artist": "Altın Gün",
       "title": "Sevda Olmasaydi",
@@ -133,7 +194,7 @@
     },
     {
       "start": 2444,
-      "end": 3057,
+      "end": 2679,
       "durationSec": 236,
       "artist": "Buñuel",
       "title": "When God Used a Rope",
@@ -146,7 +207,7 @@
     },
     {
       "start": 3057,
-      "end": 3394,
+      "end": 3287,
       "durationSec": 232,
       "artist": "Thou",
       "title": "I Feel Nothing When You Cry",
@@ -159,7 +220,7 @@
     },
     {
       "start": 3394,
-      "end": 3794,
+      "end": 3701,
       "durationSec": 307,
       "artist": "Frente Abierto & Inés Bacán",
       "title": "Lo Que En El Mundo Vale (Bambera)",
@@ -185,7 +246,7 @@
     },
     {
       "start": 4011,
-      "end": 4461,
+      "end": 4221,
       "durationSec": 210,
       "artist": "Chat Pile",
       "title": "Funny Man",
@@ -198,7 +259,7 @@
     },
     {
       "start": 4461,
-      "end": 4999,
+      "end": 4735,
       "durationSec": 275,
       "artist": "Chat Pile",
       "title": "Crawlspace - Live at Roadburn, 2023",
@@ -211,7 +272,7 @@
     },
     {
       "start": 4999,
-      "end": 5571,
+      "end": 5333,
       "durationSec": 223,
       "artist": "Chat Pile",
       "title": "Shame",
@@ -224,7 +285,7 @@
     },
     {
       "start": 5571,
-      "end": 5944,
+      "end": 5751,
       "durationSec": 181,
       "artist": "Chat Pile",
       "title": "Wicked Puppet Dance",

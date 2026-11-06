@@ -2,10 +2,71 @@
   "version": 1,
   "id": "57355569-d702-4446-ba75-69526f5cdc70",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T14:07:22.266Z",
+  "updatedAt": "2026-11-06T15:10:21.578Z",
   "durationSec": 6839,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek poświęcony metalowym coverom utworów spoza metalu, wybranym według własnych kryteriów — bez przeróbek ironicznych i deathmetalowych składanek. Omówiono wersje Slayera (In-A-Gadda-Da-Vida Iron Butterfly), Judas Priest (Diamonds and Rust Joan Baez), Ministry (Lay Lady Lay Boba Dylana) i Cloud Rat (The Needle and the Damage Done Neila Younga). Dalej Celtic Frost i Mexican Radio Wall of Voodoo, Coroner i I Want You (She's So Heavy) Beatlesów oraz Sepultura i The Hunt New Model Army. W drugiej części Type O Negative (Summer Breeze), Vader (I Feel You Depeche Mode), Imperial Triumphant (Paranoid Android Radiohead) i Shining (21st Century Schizoid Man King Crimson). Przewija się wątek trudności mierzenia się z repertuarem o silnym, rozpoznawalnym brzmieniu i głosem wokalisty.",
+  "topics": [
+    {
+      "start": 169,
+      "end": 266,
+      "label": "Lista najlepszych metalowych coverów niemetalowych utworów według Knockout Zin"
+    },
+    {
+      "start": 461,
+      "end": 491,
+      "label": "Slayer i In-A-Gadda-Da-Vida grupy Iron Butterfly"
+    },
+    {
+      "start": 491,
+      "end": 514,
+      "label": "Judas Priest przerabia Diamonds and Rust Joan Baez"
+    },
+    {
+      "start": 704,
+      "end": 816,
+      "label": "Bob Dylan najczęściej coverowanym twórcą; Ministry i Lay Lady Lay"
+    },
+    {
+      "start": 1146,
+      "end": 1198,
+      "label": "Neil Young, The Needle and the Damage Done w wersji Cloud Rat"
+    },
+    {
+      "start": 1644,
+      "end": 1708,
+      "label": "Celtic Frost i cover Mexican Radio Wall of Voodoo"
+    },
+    {
+      "start": 1910,
+      "end": 1993,
+      "label": "Coroner i I Want You (She's So Heavy) Beatlesów"
+    },
+    {
+      "start": 2426,
+      "end": 2493,
+      "label": "Sepultura i The Hunt New Model Army"
+    },
+    {
+      "start": 2730,
+      "end": 2819,
+      "label": "Type O Negative przerabia Summer Breeze Seals and Crofts"
+    },
+    {
+      "start": 3766,
+      "end": 3831,
+      "label": "Vader, I Feel You Depeche Mode i koniec wojny depeszów z metalowcami"
+    },
+    {
+      "start": 5577,
+      "end": 5659,
+      "label": "Imperial Triumphant mierzy się z Paranoid Android Radiohead"
+    },
+    {
+      "start": 6372,
+      "end": 6439,
+      "label": "Shining i 21st Century Schizoid Man King Crimson"
+    }
+  ],
   "tags": [
     {
       "id": "anthrax",
@@ -151,7 +212,7 @@
   "tracks": [
     {
       "start": 6,
-      "end": 266,
+      "end": 169,
       "durationSec": 136,
       "artist": "Slayer",
       "title": "I Hate You",
@@ -164,7 +225,7 @@
     },
     {
       "start": 266,
-      "end": 514,
+      "end": 461,
       "durationSec": 195,
       "artist": "Slayer",
       "title": "In a Gadda Da Vida",
@@ -177,7 +238,7 @@
     },
     {
       "start": 514,
-      "end": 816,
+      "end": 704,
       "durationSec": 191,
       "artist": "Judas Priest",
       "title": "Diamonds and Rust",
@@ -190,7 +251,7 @@
     },
     {
       "start": 816,
-      "end": 1198,
+      "end": 1146,
       "durationSec": 330,
       "artist": "Ministry",
       "title": "Lay Lady Lay",
@@ -229,7 +290,7 @@
     },
     {
       "start": 1481,
-      "end": 1708,
+      "end": 1644,
       "durationSec": 164,
       "artist": "Anthrax",
       "title": "Got The Time",
@@ -242,7 +303,7 @@
     },
     {
       "start": 1708,
-      "end": 1993,
+      "end": 1910,
       "durationSec": 203,
       "artist": "Celtic Frost",
       "title": "Mexican Radio",
@@ -255,7 +316,7 @@
     },
     {
       "start": 1993,
-      "end": 2493,
+      "end": 2426,
       "durationSec": 434,
       "artist": "Coroner",
       "title": "I Want You (She's So Heavy)",
@@ -268,7 +329,7 @@
     },
     {
       "start": 2493,
-      "end": 2819,
+      "end": 2730,
       "durationSec": 238,
       "artist": "Sepultura",
       "title": "The Hunt",
@@ -307,7 +368,7 @@
     },
     {
       "start": 3565,
-      "end": 3831,
+      "end": 3766,
       "durationSec": 202,
       "artist": "Gorefest",
       "title": "Autobahn",
@@ -372,7 +433,7 @@
     },
     {
       "start": 5240,
-      "end": 5659,
+      "end": 5577,
       "durationSec": 338,
       "artist": "Carpathian Forest",
       "title": "A Forest",
@@ -398,7 +459,7 @@
     },
     {
       "start": 6078,
-      "end": 6439,
+      "end": 6372,
       "durationSec": 296,
       "artist": "Voivod",
       "title": "Astronomy Domine",

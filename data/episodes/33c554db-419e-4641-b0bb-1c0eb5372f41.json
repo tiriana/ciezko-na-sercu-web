@@ -2,10 +2,71 @@
   "version": 1,
   "id": "33c554db-419e-4641-b0bb-1c0eb5372f41",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T14:07:22.263Z",
+  "updatedAt": "2026-11-06T15:10:21.576Z",
   "durationSec": 6869,
-  "summary": "",
-  "topics": [],
+  "summary": "Przegląd najnowszych polskich wydawnictw, z przewagą metalu, ale z wyraźnymi wyjątkami poza gatunkiem. Otwiera go krakowski Taraban z mini-albumem Oath, obok lżejszych propozycji: gdańskiego post-punkowego Love Worms, psychodelicznej Oranżady z improwizowaną płytą Salto i Acid Sitter z utworem Psychopomp. Sięgnięto też po neofolkowe Poświaty projektu OLS, blackmetalowy zwrot zespołu Vee na mini-albumie Bluzg oraz trzynasty album Behemota The Shit of God, nagrany z Jensem Bogrenem. W dalszej części omówiono death-blackowy debiut Stellar Blight, powrót Medico Peste z Aesthetic of Hunger, Wielkie Zanikanie zespołu Zmarłym i Lament Martwej Aury. Padły też zapowiedzi nowych materiałów Warnheim (Void), Vader (Human Hility z hymnem Mystic Festival), Toughness, Frightful, Loth Finder i doomowego Metallus z We're All Doomed.",
+  "topics": [
+    {
+      "start": 187,
+      "end": 265,
+      "label": "Krakowski Taraban i mini-album Oath"
+    },
+    {
+      "start": 786,
+      "end": 838,
+      "label": "Debiut gdańskiego Love Worms; post-punk"
+    },
+    {
+      "start": 1022,
+      "end": 1099,
+      "label": "Oranżada: singiel So Many Faces i płyta Salto"
+    },
+    {
+      "start": 1281,
+      "end": 1335,
+      "label": "Acid Sitter i Psychopomp; produkcja Macieja Cieślaka"
+    },
+    {
+      "start": 1732,
+      "end": 1788,
+      "label": "OLS i album Poświaty; słowiański neofolk"
+    },
+    {
+      "start": 2039,
+      "end": 2194,
+      "label": "Vee i Bluzg; blackmetalowy zwrot Tui Szmaragd"
+    },
+    {
+      "start": 2314,
+      "end": 2416,
+      "label": "Behemoth: The Shit of God i produkcja Jensa Bogrena"
+    },
+    {
+      "start": 3118,
+      "end": 3186,
+      "label": "Medico Peste wraca z Aesthetic of Hunger"
+    },
+    {
+      "start": 3752,
+      "end": 3826,
+      "label": "Zmarłym i Wielkie Zanikanie; black metal z Końskich"
+    },
+    {
+      "start": 5077,
+      "end": 5168,
+      "label": "Vader: Human Hility i hymn Mystic Festival"
+    },
+    {
+      "start": 5752,
+      "end": 5789,
+      "label": "Frightful i What Lies Ahead; thrash z melodiami"
+    },
+    {
+      "start": 6421,
+      "end": 6462,
+      "label": "Metallus i We're All Doomed; warszawski doom"
+    }
+  ],
   "tags": [
     {
       "id": "acidsitter",
@@ -29,6 +90,18 @@
       "at": 5789
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "jens-bogren",
+      "label": "Jens Bogren",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "loathfinder",
       "label": "Loathfinder",
       "type": "artist",
@@ -41,6 +114,12 @@
       "type": "artist",
       "source": "tracks",
       "at": 629
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "medico-peste",
@@ -116,14 +195,15 @@
   "tracks": [
     {
       "start": 6,
-      "end": 265,
+      "end": 187,
       "durationSec": 182,
       "artist": "Taraban",
       "title": "Country Song",
       "album": "OATH - EP",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -134,7 +214,7 @@
       "artist": "Taraban",
       "title": "The Oath",
       "album": "OATH - EP",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -142,7 +222,7 @@
     },
     {
       "start": 629,
-      "end": 838,
+      "end": 786,
       "durationSec": 158,
       "artist": "Loveworms",
       "title": "The Drop",
@@ -155,7 +235,7 @@
     },
     {
       "start": 838,
-      "end": 1099,
+      "end": 1022,
       "durationSec": 185,
       "artist": "Oranżada",
       "title": "So Many Faces",
@@ -168,7 +248,7 @@
     },
     {
       "start": 1099,
-      "end": 1335,
+      "end": 1281,
       "durationSec": 183,
       "artist": "Oranżada",
       "title": "Ostatnie poprawki galaktycznego krawca (feat. Maja Laura)",
@@ -181,7 +261,7 @@
     },
     {
       "start": 1335,
-      "end": 1788,
+      "end": 1732,
       "durationSec": 302,
       "artist": "AcidSitter",
       "title": "PSYCHOPOMP",
@@ -194,7 +274,7 @@
     },
     {
       "start": 1788,
-      "end": 2194,
+      "end": 2039,
       "durationSec": 238,
       "artist": "Ols",
       "title": "proch kość liść",
@@ -207,7 +287,7 @@
     },
     {
       "start": 2194,
-      "end": 2416,
+      "end": 2314,
       "durationSec": 82,
       "artist": "Wij",
       "title": "Kretoszczur",
@@ -220,7 +300,7 @@
     },
     {
       "start": 2416,
-      "end": 3186,
+      "end": 3118,
       "durationSec": 347,
       "artist": "Behemoth",
       "title": "O Venvs, Come",
@@ -233,7 +313,7 @@
     },
     {
       "start": 3186,
-      "end": 3826,
+      "end": 3752,
       "durationSec": 567,
       "artist": "Medico Peste",
       "title": "Viaticum",
@@ -259,7 +339,7 @@
     },
     {
       "start": 4535,
-      "end": 5168,
+      "end": 5077,
       "durationSec": 543,
       "artist": "Varnheim",
       "title": "Onwards",
@@ -285,7 +365,7 @@
     },
     {
       "start": 5433,
-      "end": 5789,
+      "end": 5752,
       "durationSec": 320,
       "artist": "Toughness",
       "title": "The Profanity That Creates an Expression of Pain at the Impossibility of Ascending to the Lower Realms",
@@ -311,7 +391,7 @@
     },
     {
       "start": 6110,
-      "end": 6462,
+      "end": 6421,
       "durationSec": 281,
       "artist": "Loathfinder",
       "title": "Dead dogs",
@@ -336,6 +416,30 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 4,
+      "text": "Posłuchajmy The Oath, a więc utworu tytułowego Zrzeczonej Epki."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": "Wita Was Jarek Szubrycht, prowadzący i przygotowujący dla Was te bezeceństwa"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": "oraz Mariusz Owczarek, który audycję wydaje."
+    },
+    {
+      "role": "producent",
+      "name": "Jens Bogren",
+      "time": 39,
+      "quote": "producenta, czyli Szweda Jensa Bogrena"
+    }
+  ]
 }

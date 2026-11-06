@@ -23,7 +23,7 @@ const { items, tagId } = Astro.props;
 const suffix = tagId ? `?tag=${tagId}` : '';
 ---
 
-<ul class="episode-list">
+<ul class="episode-list episode-list--scroll">
   {items.map((item) => (
     <li>
       <a href={`/odcinki/${item.slug}/${suffix}`}>
