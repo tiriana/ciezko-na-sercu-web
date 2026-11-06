@@ -2,10 +2,61 @@
   "version": 1,
   "id": "947bf413-cda4-4a1a-8c15-9206b9309660",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T03:30:59.122Z",
+  "updatedAt": "2026-11-06T05:31:41.952Z",
   "durationSec": 6818,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja stanowi przegląd nadchodzących koncertów metalowych i rockowych w Polsce w grudniu 2025 roku. Jarek Szubrycht przybliża sylwetki artystów takich jak Phil Campbell z Bastard Sons, zespół JAD oraz formacje grające black i death metal, w tym Apsu i Trivax. Program zawiera również informacje o trasach koncertowych grup ARM oraz Sinister i Pessimist. Całość osadzona jest w kontekście historycznym i kulturowym, wspominając m.in. rocznicę powstania Motorhead czy datę wprowadzenia stanu wojennego. Audycja skupia się na nadchodzących wydarzeniach koncertowych w grudniu, prezentując zarówno podziemne festiwale metalowe, jak i duże koncerty legendarnych zespołów. Prowadzący omawia trasy koncertowe grup takich jak Hejt czy Acid Drinkers, przywołując historię tych formacji. Ważnym wątkiem jest również literatura poświęcona muzyce metalowej, w tym biografie Black Sabbath oraz albumy okolicznościowe Iron Maiden. Fragment zawiera również informacje o lokalnych imprezach w Bydgoszczy, Tychach, Wrocławiu, Łodzi i Gdańsku. Audycja poświęcona jest literaturze związanej z historią metalu oraz wspomnieniom o polskiej scenie undergroundowej. Prowadzący omawia nową książkę o Ozzy'm Osbourne, która stanowi uzupełnienie jego autobiografii i porusza tematy starości oraz odchodzenia. Kolejnym wątkiem jest publikacja Wojciecha Lisa dotycząca festiwalu Straszydło w Ciechanowie, przywołująca czasy polskiego thrash i death metalu lat 80. i 90. Fragment zawiera również refleksje nad ewolucją muzyki ekstremalnej oraz wspomnienia o zespołach takich jak Vader czy Samael.",
+  "topics": [
+    {
+      "start": 4,
+      "end": 7,
+      "label": "Zapowiedź koncertów na nadchodzące tygodnie"
+    },
+    {
+      "start": 7,
+      "end": 8,
+      "label": "Trasa zespołu JAD"
+    },
+    {
+      "start": 16,
+      "end": 31,
+      "label": "Koncerty black i okultmetalowe (Apsu, Ancient, Trivax)"
+    },
+    {
+      "start": 31,
+      "end": 49,
+      "label": "Trasa projektu ARM Artura Rumińskiego"
+    },
+    {
+      "start": 49,
+      "end": 106,
+      "label": "Nadchodzące podziemne festiwale metalowe w Polsce"
+    },
+    {
+      "start": 106,
+      "end": 113,
+      "label": "Koncert Acid Drinkers w Katowicach i historia zespołu"
+    },
+    {
+      "start": 113,
+      "end": 123,
+      "label": "Literatura metalowa: biografie i albumy okolicznościowe"
+    },
+    {
+      "start": 123,
+      "end": 337,
+      "label": "Książka o Ozzy'm Osbourne i jego pożegnaniu ze sceną"
+    },
+    {
+      "start": 1306,
+      "end": 1370,
+      "label": "Festiwal Straszydło i polski metalowy underground lat 80. i 90."
+    },
+    {
+      "start": 1370,
+      "end": 1976,
+      "label": "Prezentacja utworów zespołów z epoki festiwalu Straszydło"
+    }
+  ],
   "tags": [
     {
       "id": "acid-drinkers",
@@ -41,6 +92,18 @@
       "type": "artist",
       "source": "tracks",
       "at": 503
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "motorhead",
@@ -102,14 +165,15 @@
   "tracks": [
     {
       "start": 8,
-      "end": 337,
+      "end": 16,
       "durationSec": 210,
       "artist": "Motörhead",
       "title": "Bomber (Live at Hammersmith)",
       "album": "Better Motörhead Than Dead - Live at Hammersmith",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -154,7 +218,7 @@
     },
     {
       "start": 1189,
-      "end": 1976,
+      "end": 1306,
       "durationSec": 698,
       "artist": "Trivax",
       "title": "Here Comes the Flood",
@@ -289,13 +353,36 @@
       "artist": "Samael",
       "title": "Into the Pentagram",
       "album": "Worship Him",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 5,
+      "text": "A my jeszcze raz posłuchajmy, jak brzmiało oryginalne Motorhead na żywo, kiedy jeszcze Lemmy nie tylko żył, ale był w znakomitej formie. Podobnie jak otwierający audycję, Bomber nagranie pochodzi z koncertowego albumu Better Motorhead Than Dead"
+    },
+    {
+      "start": 6818,
+      "text": "A na zakończenie opowieści o Straszydle i dzisiejszej audycji puszczę Państwu zespół, który właśnie dzięki temu festiwalowi trafił w Polsce do szerszych mas fanów"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 3,
+      "quote": "wita Was Jarek Szubrycht"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 3,
+      "quote": "w imieniu własnym i Mariusza Owczarka, wydawcę audycji"
+    }
+  ]
 }

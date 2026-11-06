@@ -2,10 +2,76 @@
   "version": 1,
   "id": "8c25a2d1-b492-40f4-8cb7-20c77cd09647",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T03:30:59.121Z",
+  "updatedAt": "2026-11-06T05:31:41.951Z",
   "durationSec": 6846,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja poświęcona jest obecności muzyki ciężkiej, metalowej i hardrockowej w kinie oraz serialach telewizyjnych. Prowadzący analizuje przypadki wykorzystania utworów klasyków, takich jak Deep Purple czy Black Sabbath, a także bardziej ekstremalnych brzmień w produkcjach głównego nurtu. Poruszane są wątki emocjonalnego wpływu muzyki z filmów dziecięcych, jak Akademia Pana Kleksa, oraz relacji między horrorem a metalem. Program obejmuje zarówno znane hity, jak i mniej oczywiste zestawienia z filmów Davida Lincha czy komedii z Jimem Carreyem. Audycja skupia się na relacjach między kinem, serialami a muzyką, ze szczególnym uwzględnieniem gatunków ciężkich i alternatywnych. Prowadzący analizuje ścieżki dźwiękowe w filmach Davida Lyncha, Davida Finchera czy Michaela Hanekego, wskazując na ich kluczową rolę w budowaniu atmosfery. Poruszane są wątki filmów takich jak „Steve”, „Sztuka samoobrony” czy „Gomorra”, a także wpływ konkretnych zespołów, od Rammstein po Slayer, na odbiór dzieł wizualnych. Całość stanowi przegląd muzycznych wyborów twórców filmowych, od metalu po post-rock. W audycji omówiono kilka nietypowych ścieżek dźwiękowych użytych w serialach i filmach. Najpierw wspomniano o włoskim zespole Mokadelik, który stworzył muzykę według wytycznych, a następnie o współpracy z Mogłaj, którego utwory pojawiają się w różnych produkcjach, od dokumentu o Zidanie po eposy sci‑fi. Poruszono temat ekstremalnego metalu w serialu South Park oraz europejskiego trash‑metalu w niemieckim serialu Dark, podkreślając użycie utworu „Pleasure to Kill”. Na koniec przytoczono fragment muzyczny z serialu True Detective, wykonany przez zespół Sen na dobranoc.",
+  "topics": [
+    {
+      "start": 5,
+      "end": 6,
+      "label": "Muzyka metalowa i ciężka w filmach i serialach"
+    },
+    {
+      "start": 6,
+      "end": 11,
+      "label": "Wpływ ścieżek dźwiękowych z filmów dziecięcych na młodych słuchaczy"
+    },
+    {
+      "start": 11,
+      "end": 12,
+      "label": "Relacje między gatunkiem horroru a heavy metalem"
+    },
+    {
+      "start": 40,
+      "end": 50,
+      "label": "Muzyka w filmach Davida Lyncha"
+    },
+    {
+      "start": 50,
+      "end": 55,
+      "label": "Ścieżki dźwiękowe w skandynawskich kryminałach i filmach noir"
+    },
+    {
+      "start": 55,
+      "end": 109,
+      "label": "Muzyka w filmach kameralnych i dramatach społecznych"
+    },
+    {
+      "start": 109,
+      "end": 130,
+      "label": "Niepokojące kino i jego muzyczna oprawa"
+    },
+    {
+      "start": 130,
+      "end": 782,
+      "label": "Serial Gomorra i jego muzyczny klimat"
+    },
+    {
+      "start": 5580,
+      "end": 5606,
+      "label": "Muzyka zespołu Mokadelik stworzoną na zamówienie"
+    },
+    {
+      "start": 5606,
+      "end": 5725,
+      "label": "Współpraca z Mogłaj i szerokie wykorzystanie jego muzyki w filmach i serialach"
+    },
+    {
+      "start": 5864,
+      "end": 5895,
+      "label": "Ekstremalny metal w serialu South Park"
+    },
+    {
+      "start": 5950,
+      "end": 6101,
+      "label": "Trash metal w serialu Dark, w tym utwór „Pleasure to Kill”"
+    },
+    {
+      "start": 6101,
+      "end": 6322,
+      "label": "Fragment muzyczny z True Detective wykonany przez zespół Sen na dobranoc"
+    }
+  ],
   "tags": [
     {
       "id": "anthrax",
@@ -64,11 +130,23 @@
       "at": 4068
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "kreator",
       "label": "Kreator",
       "type": "artist",
       "source": "tracks",
       "at": 6322
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "mastodon",
@@ -165,14 +243,15 @@
   "tracks": [
     {
       "start": 12,
-      "end": 782,
+      "end": 40,
       "durationSec": 203,
       "artist": "Deep Purple",
       "title": "Child In Time (Superhuman Stranger Things Version)",
       "album": "Child In Time (Superhuman Stranger Things Version) - Single",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -386,20 +465,21 @@
     },
     {
       "start": 5532,
-      "end": 5725,
+      "end": 5580,
       "durationSec": 145,
       "artist": "Mokadelic",
       "title": "Doomed To Live",
       "album": "GOMORRA - La serie (Colonna sonora originale)",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 5725,
-      "end": 5895,
+      "end": 5864,
       "durationSec": 140,
       "artist": "Mogwai",
       "title": "I'm Not Going When I Don't Get Back",
@@ -412,14 +492,15 @@
     },
     {
       "start": 5895,
-      "end": 6322,
+      "end": 5950,
       "durationSec": 277,
       "artist": "Dying Fetus",
       "title": "Second Skin",
       "album": "Reign Supreme",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -450,6 +531,36 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 4,
+      "text": "Zacząłem dzisiaj od Child in Time, żelaznej klasyki hard rocka, ale w nowej wersji takie Child in Time usłyszeli widzowie najświeższe i podobno już ostatniej serii Stranger Things."
+    },
+    {
+      "start": 5580,
+      "text": "więc muzykę stworzył według odpowiednich wytycznych włoski zespół Mokadelik"
+    },
+    {
+      "start": 5864,
+      "text": "A jednak Dying Fitus się nie spodziewałem. Sprawdźcie sobie sami sezon 23, odcinek 2"
+    },
+    {
+      "start": 5950,
+      "text": "Pojawia się Pleasure to Kill kreatora, doskonały wybór"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": "Mówi do Was Jarek Szubrycht, prowadzący audycję Ciężko na sercu."
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": "Jej wydawcą jest Mariusz Owczarek."
+    }
+  ]
 }
