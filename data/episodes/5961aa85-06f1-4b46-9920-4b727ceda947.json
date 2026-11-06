@@ -2,10 +2,71 @@
   "version": 1,
   "id": "5961aa85-06f1-4b46-9920-4b727ceda947",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T11:33:23.227Z",
+  "updatedAt": "2026-11-06T12:06:04.422Z",
   "durationSec": 6878,
-  "summary": "",
-  "topics": [],
+  "summary": "Specjalne wydanie poświęcone Ozzy'emu Osbornowi, który zmarł w wieku 76 lat. Przypomniano drogę od debiutu Black Sabbath i utworu Paranoid przez solowe płyty z Randym Rhoadsem i Blizzard of Oz po późniejsze albumy i współprace — m.in. z Lemmym Kilmisterem, Wu-Tang Clan i Infectious Grooves. Omówiono pożegnalny koncert zespołu w Birmingham z 5 lipca, na którym obok Black Sabbath wystąpili m.in. Metallica, Tool, Slayer i Guns N' Roses. Wspominano festiwal Ozzfest i koncert w Katowicach w 2002 roku, trasę The End oraz rolę Sharon Osbourne w ratowaniu kariery muzyka. Sięgnięto też po autobiografię „Ja, Ozzy”, serial „Rodzina Osbourne'ów” i historię niezrealizowanego duetu z Krzysztofem Cugowskim. Całość utrzymana w tonie celebracji i humoru, z podkreśleniem dystansu artysty do własnego wizerunku Księcia Ciemności.",
+  "topics": [
+    {
+      "start": 163,
+      "end": 197,
+      "label": "Black Sabbath i Paranoid na otwarcie wspomnień"
+    },
+    {
+      "start": 197,
+      "end": 241,
+      "label": "Śmierć Ozzy'ego Osbourne'a w wieku 76 lat"
+    },
+    {
+      "start": 469,
+      "end": 606,
+      "label": "Randy Rhoads i album Blizzard of Oz"
+    },
+    {
+      "start": 606,
+      "end": 747,
+      "label": "Poczucie humoru Ozzy'ego i duet z Miss Piggy"
+    },
+    {
+      "start": 747,
+      "end": 909,
+      "label": "Pożegnalny koncert Black Sabbath w Birmingham"
+    },
+    {
+      "start": 1210,
+      "end": 1369,
+      "label": "Ozzfest 2002 w Katowicach i rola Sharon Osbourne"
+    },
+    {
+      "start": 1369,
+      "end": 1585,
+      "label": "Trasa The End i powrót oryginalnego składu"
+    },
+    {
+      "start": 1849,
+      "end": 2078,
+      "label": "Autobiografia „Ja, Ozzy” i walka z nałogami"
+    },
+    {
+      "start": 2421,
+      "end": 2786,
+      "label": "Dystans do siebie i rozbrajanie rockowego zadęcia"
+    },
+    {
+      "start": 3218,
+      "end": 3474,
+      "label": "Niezrealizowany duet z Krzysztofem Cugowskim i Budką Suflera"
+    },
+    {
+      "start": 3474,
+      "end": 3840,
+      "label": "Serial „Rodzina Osbourne'ów” i medialny wizerunek"
+    },
+    {
+      "start": 5239,
+      "end": 5542,
+      "label": "Hellraiser i współpraca z Lemmym Kilmisterem"
+    }
+  ],
   "tags": [
     {
       "id": "black-sabbath",
@@ -53,7 +114,7 @@
   "tracks": [
     {
       "start": 0,
-      "end": 241,
+      "end": 163,
       "durationSec": 165,
       "artist": "Black Sabbath",
       "title": "Paranoid",
@@ -66,7 +127,7 @@
     },
     {
       "start": 241,
-      "end": 909,
+      "end": 469,
       "durationSec": 228,
       "artist": "Ozzy Osbourne",
       "title": "No Bone Movies",
@@ -79,7 +140,7 @@
     },
     {
       "start": 909,
-      "end": 1585,
+      "end": 1210,
       "durationSec": 254,
       "artist": "Black Sabbath",
       "title": "The Wizard",
@@ -92,7 +153,7 @@
     },
     {
       "start": 1585,
-      "end": 2078,
+      "end": 1849,
       "durationSec": 116,
       "artist": "Miss Piggy & Ozzy Osbourne",
       "title": "Born to Be Wild",
@@ -105,7 +166,7 @@
     },
     {
       "start": 2078,
-      "end": 2786,
+      "end": 2421,
       "durationSec": 282,
       "artist": "Black Sabbath",
       "title": "Changes",
@@ -118,7 +179,7 @@
     },
     {
       "start": 2786,
-      "end": 3840,
+      "end": 3218,
       "durationSec": 319,
       "artist": "Ozzy Osbourne",
       "title": "Little Dolls",
@@ -157,7 +218,7 @@
     },
     {
       "start": 4959,
-      "end": 5542,
+      "end": 5239,
       "durationSec": 280,
       "artist": "Ozzy Osbourne",
       "title": "Hellraiser",

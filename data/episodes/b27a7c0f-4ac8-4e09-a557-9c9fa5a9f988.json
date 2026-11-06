@@ -2,10 +2,71 @@
   "version": 1,
   "id": "b27a7c0f-4ac8-4e09-a557-9c9fa5a9f988",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T11:33:23.226Z",
+  "updatedAt": "2026-11-06T12:06:04.421Z",
   "durationSec": 6707,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja poświęcona pamięci Ozzy'ego Osbourne'a, który zmarł w wieku 76 lat, pomyślana jako celebra jego życia i kariery, a nie smutne pożegnanie. Przegląd obejmuje twórczość Black Sabbath — od imiennej płyty i utworów „The Wizard”, „Paranoid” i „Changes” — oraz solowe albumy, od „Blizzard of Ozz” z Randym Rhoadsem po „Scream” z 2010 roku. Wspominane są koncerty: Ozzfest 2002 w Katowicach, pożegnalna trasa „The End” z 2016 roku i ostatni występ w Birmingham 5 lipca, relacjonowany przez obecnego na miejscu dziennikarza. Osobny wątek stanowią współprace — „For Heaven's Sake” z Wu-Tang Clan, „Hellraiser” z Lemmym Kilmisterem, nagrania z Infectious Grooves i Robertem Trujillo oraz niezrealizowana sesja Budki Suflera z Krzysztofem Cugowskim w Los Angeles. Całość dopełniają rozmowy o Sharon Osbourne, serialu „Rodzina Osbourne'ów”, autobiografii „Ja, Ozzy” i wspomnienia muzyków oraz słuchaczy.",
+  "topics": [
+    {
+      "start": 26,
+      "end": 71,
+      "label": "śmierć Ozzy'ego Osbourne'a i celebracyjny ton audycji"
+    },
+    {
+      "start": 340,
+      "end": 714,
+      "label": "Paranoid i pierwsze gitarowe kroki Walusia"
+    },
+    {
+      "start": 714,
+      "end": 739,
+      "label": "imienna płyta Black Sabbath i The Wizard"
+    },
+    {
+      "start": 1040,
+      "end": 1199,
+      "label": "koncert w Katowicach i Ozzfest 2002"
+    },
+    {
+      "start": 1199,
+      "end": 1392,
+      "label": "trasa The End i powrót oryginalnego składu"
+    },
+    {
+      "start": 1679,
+      "end": 1865,
+      "label": "autobiografia Ja, Ozzy i poczucie humoru"
+    },
+    {
+      "start": 1865,
+      "end": 1908,
+      "label": "utwór Changes i żegnanie z uśmiechem"
+    },
+    {
+      "start": 3049,
+      "end": 3672,
+      "label": "niezrealizowana sesja Budki Suflera i Cugowskiego"
+    },
+    {
+      "start": 3864,
+      "end": 3976,
+      "label": "wspomnienia muzyków i słuchaczy o Black Sabbath"
+    },
+    {
+      "start": 4420,
+      "end": 4789,
+      "label": "relacja z pożegnalnego koncertu w Birmingham"
+    },
+    {
+      "start": 5069,
+      "end": 5372,
+      "label": "Hellraiser i współpraca z Lemmym Kilmisterem"
+    },
+    {
+      "start": 5651,
+      "end": 6181,
+      "label": "For Heaven's Sake z Wu-Tang Clan"
+    }
+  ],
   "tags": [
     {
       "id": "black-sabbath",
@@ -46,7 +107,7 @@
   "tracks": [
     {
       "start": 71,
-      "end": 739,
+      "end": 340,
       "durationSec": 228,
       "artist": "Ozzy Osbourne",
       "title": "No Bone Movies",
@@ -59,7 +120,7 @@
     },
     {
       "start": 739,
-      "end": 1392,
+      "end": 1040,
       "durationSec": 254,
       "artist": "Black Sabbath",
       "title": "The Wizard",
@@ -72,7 +133,7 @@
     },
     {
       "start": 1392,
-      "end": 1908,
+      "end": 1679,
       "durationSec": 138,
       "artist": "Miss Piggy & Ozzy Osbourne",
       "title": "Born to Be Wild",
@@ -98,7 +159,7 @@
     },
     {
       "start": 2616,
-      "end": 3672,
+      "end": 3049,
       "durationSec": 319,
       "artist": "Ozzy Osbourne",
       "title": "Little Dolls",
@@ -111,7 +172,7 @@
     },
     {
       "start": 3672,
-      "end": 3976,
+      "end": 3864,
       "durationSec": 166,
       "artist": "Ozzy Osbourne",
       "title": "Mama, I'm Coming Home",
@@ -124,7 +185,7 @@
     },
     {
       "start": 3976,
-      "end": 4789,
+      "end": 4420,
       "durationSec": 332,
       "artist": "Ozzy Osbourne",
       "title": "Crazy Train (Live)",
@@ -137,7 +198,7 @@
     },
     {
       "start": 4789,
-      "end": 5372,
+      "end": 5069,
       "durationSec": 281,
       "artist": "Ozzy Osbourne",
       "title": "Hellraiser",
@@ -150,7 +211,7 @@
     },
     {
       "start": 5372,
-      "end": 6181,
+      "end": 5651,
       "durationSec": 281,
       "artist": "Wu-Tang Clan",
       "title": "For Heavens Sake",

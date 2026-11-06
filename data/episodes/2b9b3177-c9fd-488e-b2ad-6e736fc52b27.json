@@ -2,10 +2,66 @@
   "version": 1,
   "id": "2b9b3177-c9fd-488e-b2ad-6e736fc52b27",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T11:33:23.222Z",
+  "updatedAt": "2026-11-06T12:06:04.418Z",
   "durationSec": 6897,
-  "summary": "",
-  "topics": [],
+  "summary": "W audycji prowadzący przywołuje długie, epickie utwory zespołów Swans i Godspeed You! Black Emperor, podkreślając ich kontemplacyjną naturę. Następnie porusza temat aktualnych wydarzeń w Strefie Gazy, łącząc je z tytułem nowej płyty Godspeed. W dalszej części goście z zespołu Ciśnienie opowiadają o procesie twórczym, improwizacji i emocjach wyrażanych w ich muzyce. W audycji goście rozmawiają o artystycznym wymiarze ich występów, podkreślając, że niezgoda i emocje na scenie prowadzą do katharsis i ekstazy. Dyskutują o nietypowym składu instrumentarium, które zastępuje tradycyjną gitarę, oraz o początkach zespołu, które wiążą się z programem „Dzielnica Brzmi Dobrze”. Poruszają temat wsparcia polskiej sceny muzycznej, zachęcając do grania, samodzielnej produkcji i promocji mniej znanych zespołów. Na koniec omawiają nowe projekty i koncerty, w tym zespół Split Chains oraz występ Deftones w Łodzi, oraz zapowiadają premiery płytowe. W tej części audycji prowadzący rozmawiają o utworze \"Cropsey\" zespołu Have a Nice Life, podkreślając jego emocjonalny przekaz i wpływ na słuchaczy w trudnych momentach życia. Opisują, jak muzyka pomaga radzić sobie z samotnością i smutkiem, a także przywołują wspomnienia z koncertu, gdzie utwór otworzył występ. Wspomniana zostaje także rozmowa z Danem Barretem, twórcą projektu Giles Corey, oraz zaproszenie do zamknięcia oczu i wsłuchania się w muzykę. Na koniec prowadzący zachęcają do dalszego słuchania i życzą miłego odbioru.",
+  "topics": [
+    {
+      "start": 41,
+      "end": 45,
+      "label": "Omówienie długich, epickich utworów Swans i ich albumu Birthing"
+    },
+    {
+      "start": 306,
+      "end": 332,
+      "label": "Refleksje nad niezgodą i emocjami na scenie jako źródłem katharsis i ekstazy"
+    },
+    {
+      "start": 332,
+      "end": 376,
+      "label": "Nietypowy dobór instrumentów i brak tradycyjnej gitary w zespole"
+    },
+    {
+      "start": 376,
+      "end": 617,
+      "label": "Historia powstania zespołu poprzez program Dzielnica Brzmi Dobrze"
+    },
+    {
+      "start": 617,
+      "end": 1079,
+      "label": "Apel o wsparcie polskich zespołów: gra, samodzielna produkcja, promocja"
+    },
+    {
+      "start": 1079,
+      "end": 1412,
+      "label": "Prezentacja nowych zespołów i zapowiedzi koncertów oraz wydań płytowych (Split Chains, Deftones, Private Music)"
+    },
+    {
+      "start": 3352,
+      "end": 3444,
+      "label": "Polityczny kontekst – odniesienie do konfliktu w Strefie Gazy i tytułu płyty Godspeed You! Black Emperor"
+    },
+    {
+      "start": 3851,
+      "end": 4036,
+      "label": "Rozmowa z członkami zespołu Ciśnienie o improwizacji i procesie tworzenia"
+    },
+    {
+      "start": 4535,
+      "end": 4899,
+      "label": "Dyskusja o roli jamu i improwizacji w muzyce zespołu Ciśnienie"
+    },
+    {
+      "start": 6347,
+      "end": 6403,
+      "label": "Omówienie utworu \"Cropsey\" zespołu Have a Nice Life i jego emocjonalnego znaczenia"
+    },
+    {
+      "start": 6403,
+      "end": 6461,
+      "label": "Wspomnienie rozmowy z Danem Barretem (Giles Corey)"
+    }
+  ],
   "tags": [
     {
       "id": "36-crazyfists",
@@ -13,6 +69,12 @@
       "type": "artist",
       "source": "tracks",
       "at": 5112
+    },
+    {
+      "id": "bartek-machajewski",
+      "label": "Bartek Machajewski",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "bhp",
@@ -64,6 +126,18 @@
       "at": 6007
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "oathbreaker",
       "label": "Oathbreaker",
       "type": "artist",
@@ -88,7 +162,7 @@
   "tracks": [
     {
       "start": 45,
-      "end": 1412,
+      "end": 306,
       "durationSec": 1318,
       "artist": "Eros Ramazzotti",
       "title": "Un'emozione Per Sempre",
@@ -105,8 +179,8 @@
       "durationSec": 605,
       "artist": "Godspeed You! Black Emperor",
       "title": "PALE SPECTATOR TAKES PHOTOGRAPHS",
-      "album": null,
-      "confidence": "średnia",
+      "album": "Motion Blur",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -140,12 +214,12 @@
     },
     {
       "start": 3155,
-      "end": 3444,
+      "end": 3352,
       "durationSec": 141,
       "artist": "Ciśnienie",
       "title": "Bydło",
       "album": "Zwierzakom",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -158,7 +232,7 @@
       "artist": "Ciśnienie",
       "title": "Bydło",
       "album": "Zwierzakom",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -166,7 +240,7 @@
     },
     {
       "start": 3770,
-      "end": 4036,
+      "end": 3851,
       "durationSec": 246,
       "artist": "Ciśnienie",
       "title": "Bydło",
@@ -205,7 +279,7 @@
     },
     {
       "start": 4459,
-      "end": 4899,
+      "end": 4535,
       "durationSec": 413,
       "artist": "Oathbreaker",
       "title": "Being Able to Feel Nothing",
@@ -270,14 +344,15 @@
     },
     {
       "start": 6007,
-      "end": 6461,
+      "end": 6347,
       "durationSec": 341,
       "artist": "Have A Nice Life",
       "title": "Cropsey",
       "album": "The Unnatural World",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -295,6 +370,38 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 639,
+      "text": "Portrayal of Guilt"
+    },
+    {
+      "start": 2132,
+      "text": "Mowa o Deftones"
+    },
+    {
+      "start": 6347,
+      "text": "Have a Nice Life, Cropsey."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "realizacja",
+      "name": "Bartek Machajewski",
+      "time": 6,
+      "quote": "Bartek Machajewski audycję realizuje."
+    }
+  ]
 }
