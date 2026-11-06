@@ -2,10 +2,71 @@
   "version": 1,
   "id": "1bbe0d8e-a4fc-42a3-8c92-b71f98d6b76c",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T09:43:51.759Z",
+  "updatedAt": "2026-11-06T11:28:09.397Z",
   "durationSec": 6872,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek krąży wokół Mike'a Pattona — od Naked City i muzyki do filmu Funny Games po Faith No More i Black Sabbath. Sporo miejsca dostaje nowa płyta Deftones Private Music, z której zagrano utwory 4–6, a obok niej powrót do White Pony i zapowiedź koncertu w Atlas Arenie w Łodzi. Przypomniano remaster koncertu Pink Floyd Live at Pompeii z 1972 roku, w tym The Great Gig in the Sky i Echoes. Metallica reprezentowana jest przez Ride the Lightning i rocznicę ...And Justice for All, z omówieniem partii Hetfielda, Newsteda i Ulricha. Pojawiają się nowa płyta Coroner Dissonance Theory, Feared i Ola Englund z brzmieniem Engl Savage i Mesa Boogie, Entombed, Mama Lek oraz Pile. Całość zamyka hołd dla zmarłego Breta Hinsha z Mastodon.",
+  "topics": [
+    {
+      "start": 39,
+      "end": 95,
+      "label": "Mike Patton, Naked City i muzyka do Funny Games"
+    },
+    {
+      "start": 95,
+      "end": 103,
+      "label": "Faith No More i Black Sabbath na rozgrzewkę"
+    },
+    {
+      "start": 505,
+      "end": 514,
+      "label": "Nowa płyta Deftones Private Music"
+    },
+    {
+      "start": 1636,
+      "end": 1648,
+      "label": "Pink Floyd, The Great Gig in the Sky i remaster z Pompejów"
+    },
+    {
+      "start": 2814,
+      "end": 2861,
+      "label": "Metallica Ride the Lightning i gra Jamesa Hetfielda"
+    },
+    {
+      "start": 3626,
+      "end": 3688,
+      "label": "Rocznica ...And Justice for All i partie Larsa Ulricha"
+    },
+    {
+      "start": 4003,
+      "end": 4020,
+      "label": "Koroner i nowa płyta Dissonance Theory"
+    },
+    {
+      "start": 4232,
+      "end": 4269,
+      "label": "Feared, Ola Englund i domowe brzmienie gitar"
+    },
+    {
+      "start": 4475,
+      "end": 4500,
+      "label": "Zgadywanie motywów i utwór Entombed"
+    },
+    {
+      "start": 4828,
+      "end": 4835,
+      "label": "Mama Lek i płyta roku 2024"
+    },
+    {
+      "start": 6252,
+      "end": 6260,
+      "label": "Pile i Born at Night"
+    },
+    {
+      "start": 6284,
+      "end": 6608,
+      "label": "Hołd dla Breta Hinsha z Mastodon"
+    }
+  ],
   "tags": [
     {
       "id": "coroner",
@@ -107,7 +168,7 @@
     },
     {
       "start": 386,
-      "end": 514,
+      "end": 505,
       "durationSec": 110,
       "artist": "Faith No More",
       "title": "War Pigs",
@@ -146,7 +207,7 @@
     },
     {
       "start": 1589,
-      "end": 1648,
+      "end": 1636,
       "durationSec": 48,
       "artist": "Pink Floyd",
       "title": "The Great Gig In the Sky",
@@ -185,7 +246,7 @@
     },
     {
       "start": 2586,
-      "end": 2861,
+      "end": 2814,
       "durationSec": 229,
       "artist": "Metallica",
       "title": "Fight Fire with Fire",
@@ -224,7 +285,7 @@
     },
     {
       "start": 3349,
-      "end": 3688,
+      "end": 3626,
       "durationSec": 277,
       "artist": "Metallica",
       "title": "Dyers Eve",
@@ -237,7 +298,7 @@
     },
     {
       "start": 3688,
-      "end": 4020,
+      "end": 4003,
       "durationSec": 316,
       "artist": "Coroner",
       "title": "Renewal",
@@ -250,7 +311,7 @@
     },
     {
       "start": 4020,
-      "end": 4269,
+      "end": 4232,
       "durationSec": 214,
       "artist": "Feared",
       "title": "My Own Redemption",
@@ -263,7 +324,7 @@
     },
     {
       "start": 4269,
-      "end": 4500,
+      "end": 4475,
       "durationSec": 199,
       "artist": "Feared",
       "title": "Devil in White",
@@ -276,7 +337,7 @@
     },
     {
       "start": 4500,
-      "end": 4835,
+      "end": 4828,
       "durationSec": 313,
       "artist": "Entombed",
       "title": "Damn Deal Done (2022 Remaster)",
@@ -302,7 +363,7 @@
     },
     {
       "start": 5870,
-      "end": 6260,
+      "end": 6252,
       "durationSec": 368,
       "artist": "Mamaleek",
       "title": "Boiler Room",
@@ -315,7 +376,7 @@
     },
     {
       "start": 6260,
-      "end": 6608,
+      "end": 6284,
       "durationSec": 313,
       "artist": "Pile",
       "title": "Born at Night",

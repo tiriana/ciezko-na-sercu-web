@@ -2,11 +2,71 @@
   "version": 1,
   "id": "2b122f0a-8d64-4be5-8810-c648bd2744b0",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T09:43:51.756Z",
+  "updatedAt": "2026-11-06T11:28:09.393Z",
   "durationSec": 6961,
-  "summary": "",
-  "topics": [],
+  "summary": "W audycji Jarek Szubrycht kontynuował serię o nietypowych i ciężkich brzmieniach, przybliżając słuchaczom mało znane zagraniczne zespoły. Omówił historię i twórczość fińskiego projektu F oraz brytyjskiego Thine, a następnie przedstawił grecki zespół Swan Christie, który przekształcił się w A Band Apart. Kolejne segmenty poświęcone były południowokoreańskiemu Jambinai, eksperymentalnemu Oxbow oraz projekcie OM, a na koniec przytoczono norweski Red Harvest. Prowadzący podkreślał, że kolejne odcinki będą poświęcone polskim zespołom. W audycji omówiono ewolucję norweskiego zespołu Red Harvest, podkreślając ich zmienność i brutalne brzmienie. Następnie przybliżono amerykańską grupę Soylent Green, ich historię oraz najnowsze wydawnictwa. Poruszono także temat holenderskiego festiwalu Roadburn i występu zespołu Sam of R, a na koniec przyjrzano się eksperymentalnemu projektowi Canate oraz ich utworowi „Dead”.",
+  "topics": [
+    {
+      "start": 813,
+      "end": 876,
+      "label": "Prezentacja fińskiego zespołu F i ich jedynej płyty 1-3"
+    },
+    {
+      "start": 876,
+      "end": 924,
+      "label": "Omówienie brytyjskiego zespołu Thine i ich powiązań z wytwórnią Peaceville"
+    },
+    {
+      "start": 1698,
+      "end": 1761,
+      "label": "Historia greckiego zespołu Swan Christie i przemiana w A Band Apart"
+    },
+    {
+      "start": 2547,
+      "end": 2677,
+      "label": "Przedstawienie południowokoreańskiego zespołu Jambinai oraz ich unikalnych instrumentów"
+    },
+    {
+      "start": 4320,
+      "end": 4420,
+      "label": "Recenzja norweskiego zespołu Red Harvest i ich przemian stylistycznych"
+    },
+    {
+      "start": 4420,
+      "end": 4452,
+      "label": "Red Harvest – zmiany brzmieniowe i brutalny styl"
+    },
+    {
+      "start": 4887,
+      "end": 4936,
+      "label": "Soylent Green – historia i aktualny katalog"
+    },
+    {
+      "start": 5805,
+      "end": 5921,
+      "label": "Festiwal Roadburn i występ Sam of R"
+    },
+    {
+      "start": 6262,
+      "end": 6397,
+      "label": "Canate – kontrowersyjny projekt i utwór „Dead”"
+    }
+  ],
   "tags": [
+    {
+      "id": "canate",
+      "label": "Canate",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5921
+    },
+    {
+      "id": "f",
+      "label": "F",
+      "type": "artist",
+      "source": "tracks",
+      "at": 38
+    },
     {
       "id": "jambinai",
       "label": "Jambinai",
@@ -15,11 +75,23 @@
       "at": 2677
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "khanate",
       "label": "Khanate",
       "type": "artist",
       "source": "tracks",
       "at": 6397
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "om",
@@ -66,26 +138,40 @@
   ],
   "tracks": [
     {
+      "start": 38,
+      "end": 813,
+      "durationSec": 769,
+      "artist": "F",
+      "title": null,
+      "album": "1-3",
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
       "start": 924,
       "end": 1486,
       "durationSec": 529,
       "artist": "Thine",
       "title": "Feathers & Roses",
       "album": "A Town Like This",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 1486,
-      "end": 1761,
+      "end": 1698,
       "durationSec": 194,
       "artist": "Thine",
       "title": "Homewrecker Extraordinaire",
       "album": "In Therapy",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -98,22 +184,24 @@
       "artist": "Swan Christy",
       "title": "Ressurection If Possible (NORMAL)",
       "album": "Today Died Yesterday",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 2312,
-      "end": 2677,
+      "end": 2547,
       "durationSec": 257,
       "artist": "Swan Christy",
       "title": "Pure Inspiration (NORMAL)",
       "album": "Julian",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -124,9 +212,10 @@
       "artist": "Jambinai",
       "title": "Deus Benedicat Tibi",
       "album": "A Hermitage",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -137,9 +226,10 @@
       "artist": "Oxbow",
       "title": "Cold & Well-Lit Place",
       "album": "Thin Black Duke",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -163,15 +253,16 @@
       "artist": "OM",
       "title": "Meditation Is the Practice of Death",
       "album": "God Is Good",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 4094,
-      "end": 4452,
+      "end": 4320,
       "durationSec": 260,
       "artist": "Red Harvest",
       "title": "Synthesize My DNA",
@@ -184,14 +275,15 @@
     },
     {
       "start": 4452,
-      "end": 4936,
+      "end": 4887,
       "durationSec": 437,
       "artist": "Red Harvest",
       "title": "Beyond the Limits of physical Xperience",
       "album": "A Greater Darkness",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -210,14 +302,28 @@
     },
     {
       "start": 5550,
-      "end": 6397,
+      "end": 5805,
       "durationSec": 249,
       "artist": "Soilent Green",
       "title": "Antioxidant",
       "album": "Inevitable Collapse In the Presence of Conviction",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 5921,
+      "end": 6262,
+      "durationSec": 352,
+      "artist": "Canate",
+      "title": "Dead",
+      "album": null,
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
@@ -228,13 +334,72 @@
       "artist": "Khanate",
       "title": "Dead",
       "album": "Things Viral",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 813,
+      "text": "Tak jest jedna literka F jak Franciszek, a płyta, z której pochodzi to nagranie nosi tytuł 1-3"
+    },
+    {
+      "start": 876,
+      "text": "Za takowych też chyba można uznać angielski zespół Thine, który w połowie lat dziewięćdziesiątych podpisał kontrakt z wytwórnią Peaceville"
+    },
+    {
+      "start": 1698,
+      "text": "Ale już druga płyta, zdecydowanie mniej romantyczna, za to bardziej progresywna, zatytułowana Today Died Yesterday"
+    },
+    {
+      "start": 2262,
+      "text": "Posłuchajcie tylko piosenki zatytułowanej Pure Inspiration"
+    },
+    {
+      "start": 2604,
+      "text": "geomungo, które ma struny, więc w sumie nadaje się do ciężkiej muzyki"
+    },
+    {
+      "start": 2955,
+      "text": "zostawili nam album Love's Holiday, który brzmi mniej więcej tak"
+    },
+    {
+      "start": 3600,
+      "text": "Meditation is the Practice of Death, czyli Medytacja jest ćwiczeniem śmierci"
+    },
+    {
+      "start": 4406,
+      "text": "Co udowodnie za chwilę puszczając dwa numery z albumu A Greater Darkness z 2007 roku"
+    },
+    {
+      "start": 5538,
+      "text": "Póki co słuchamy utworu Antioxidant ze wspomnianej przed chwilą ostatniej płyty nowo-orlańskiej grupy"
+    },
+    {
+      "start": 6262,
+      "text": "wybrzmi adekwatnie zatytułowana piosenka Dead, zespołu o egzotycznej nazwie Canate"
+    },
+    {
+      "start": 6390,
+      "text": "Rzecz pochodzi z albumu Things Viral, wydanego w 2003 roku"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 16,
+      "quote": "Jestem Jarek Szubrycht i jestem prowadzącym"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 16,
+      "quote": "a wydawcą jest Mariusz Owczarek"
+    }
+  ]
 }

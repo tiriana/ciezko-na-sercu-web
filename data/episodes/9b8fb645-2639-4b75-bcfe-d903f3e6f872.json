@@ -2,10 +2,51 @@
   "version": 1,
   "id": "9b8fb645-2639-4b75-bcfe-d903f3e6f872",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T09:43:51.757Z",
+  "updatedAt": "2026-11-06T11:28:09.394Z",
   "durationSec": 6867,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja poświęcona jest mniej znanym, eksperymentalnym zespołom metalowym i ich wydawniczym historiom. Prowadzący przywitał się, przedstawił utwór Esoteric i omówił ich miejsce w funeral doom, po czym przeskoczył do Alchemist oraz roli wytwórni Relapse. Następnie przytoczono historię zespołów The End i Eiffel Duath, w tym rzadkie materiały i remiksy, a później omówiono unikalność Chrome Hoof oraz dalsze przykłady nietypowych grup jak Forgotten Silence i Fleurety. Całość zakończyła się refleksją o jakości muzyki niezależnej od popularności. W audycji prowadzący omawia kilka niezwykłych projektów muzycznych z pogranicza black metalu i eksperymentalnego dźwięku. Najpierw przybliża historię szwedzkiego projektu Abruptum, opisując jego założycieli, kontrowersyjne występy i zmianę stylu na dark ambient. Następnie przechodzi do holenderskiego eksperymentalnego projektu Gnorden Tongs, podkreślając jego mroczną estetykę i osobiste motywacje twórcy. Kolejnym tematem jest francuski zespół Blood House Nord, którego twórczość łączy black metal z industrialem i ambientem, a także zapowiedź ich nowego albumu. Na koniec prowadzący dzieli się własną historią odkrycia zespołu Death Spell Omega, opisując ich anonimowość i wpływ na jego muzyczne zainteresowania.",
+  "topics": [
+    {
+      "start": 64,
+      "end": 71,
+      "label": "Wprowadzenie i historia projektu Abruptum"
+    },
+    {
+      "start": 71,
+      "end": 81,
+      "label": "Prezentacja eksperymentalnego projektu Gnorden Tongs"
+    },
+    {
+      "start": 81,
+      "end": 94,
+      "label": "Omówienie francuskiego zespołu Blood House Nord i ich dyskografii"
+    },
+    {
+      "start": 94,
+      "end": 562,
+      "label": "Osobista historia prowadzącego z muzyką Death Spell Omega"
+    },
+    {
+      "start": 562,
+      "end": 696,
+      "label": "Wprowadzenie i opis zespołu Esoteric – funeral doom z elementami prog rocku"
+    },
+    {
+      "start": 955,
+      "end": 1101,
+      "label": "Alchemist, ich wydawnictwa na Relapse i powiązania z innymi zespołami"
+    },
+    {
+      "start": 1865,
+      "end": 1956,
+      "label": "Historia i debiut kanadyjskiego zespołu The End oraz ich album Elementary"
+    },
+    {
+      "start": 2868,
+      "end": 2872,
+      "label": "Unikalność i eklektyzm brytyjskiego projektu Chrome Hoof"
+    }
+  ],
   "tags": [
     {
       "id": "abruptum",
@@ -85,6 +126,18 @@
       "at": 4317
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "the-end",
       "label": "The End",
       "type": "artist",
@@ -95,20 +148,21 @@
   "tracks": [
     {
       "start": 12,
-      "end": 696,
+      "end": 64,
       "durationSec": 551,
       "artist": "Esoteric",
       "title": "Cipher",
       "album": "Paragon of Dissonance",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 696,
-      "end": 1101,
+      "end": 955,
       "durationSec": 245,
       "artist": "Alchemist",
       "title": "Great Southern Wasteland",
@@ -126,9 +180,10 @@
       "artist": "Burnt By the Sun",
       "title": "Lizard-skin Barbie",
       "album": "Burnt By the Sun - EP",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -139,9 +194,10 @@
       "artist": "Burnt By the Sun",
       "title": "Forlani",
       "album": "The Perfect Is the Enemy of the Good",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -152,20 +208,21 @@
       "artist": "The End",
       "title": "The Asphyxiation of Lisa-Claire",
       "album": "Transfer Trachea Reverberations from Point: False Omniscient",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 1662,
-      "end": 1956,
+      "end": 1865,
       "durationSec": 201,
       "artist": "The End",
       "title": "Animals",
       "album": "Elementary",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -199,14 +256,15 @@
     },
     {
       "start": 2359,
-      "end": 2872,
+      "end": 2868,
       "durationSec": 479,
       "artist": "Forgotten Silence",
       "title": "Translucide",
       "album": "La Grande Bouffe",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -217,9 +275,10 @@
       "artist": "Chrome Hoof",
       "title": "Death Is Certain",
       "album": null,
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -243,9 +302,10 @@
       "artist": "Fleurety",
       "title": "I Saw Claws",
       "album": "Last-Minute Lies / I Left The Planet",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -328,6 +388,48 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 562,
+      "text": "Ta piękna, niespiesznie rozwijająca się piosenka to Cypher z repertuaru angielskiej grupy Esoteric"
+    },
+    {
+      "start": 1154,
+      "text": "Band by the Sun pochodzili z New Jersey, byli aktywni przez pierwszą dekadę XXI wieku i grali w ściekłą mieszankę death metalu"
+    },
+    {
+      "start": 1174,
+      "text": "na drugiej płycie zatytułowanej The Perfect is the Enemy of the Good"
+    },
+    {
+      "start": 1644,
+      "text": "Tuż przed rozpadem Kanadyjczycy wydali świetny trzeci album, Elementary"
+    },
+    {
+      "start": 2355,
+      "text": "Posłuchamy utworu Translucide z płyty Le Grand Buffet z 2012 roku"
+    },
+    {
+      "start": 3132,
+      "text": "Wysłuchaliśmy piosenki, tak, jednej piosenki, to nie były dwa różne utwory grupy Chromchów o tym, że śmierć jest pewniakiem"
+    },
+    {
+      "start": 3421,
+      "text": "I bardzo dobrze zrobili, czego dowodem będzie piosenka właśnie z tamtego materiału zatytułowana I Saw Close"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": "Nazywam się Jarek Szubrych."
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 675,
+      "quote": "Te audycje wydaje Mariusz Owczarek."
+    }
+  ]
 }

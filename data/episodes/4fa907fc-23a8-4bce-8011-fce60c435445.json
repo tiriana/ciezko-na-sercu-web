@@ -2,10 +2,76 @@
   "version": 1,
   "id": "4fa907fc-23a8-4bce-8011-fce60c435445",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T09:43:51.758Z",
+  "updatedAt": "2026-11-06T11:28:09.396Z",
   "durationSec": 6799,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek otwiera pożegnanie Brenta Hindsa, gitarzysty i wokalisty Mastodon, który 20 sierpnia zginął w wypadku motocyklowym w Atlancie, kilka miesięcy po rozstaniu z zespołem. Drugie wspomnienie dotyczy Jürgena Bartscha, założyciela Bethlehem, zmarłego 27 sierpnia. Dalej wrześniowy przegląd koncertów: Atheist z Origin, Exhumer z albumem Possessed by Fire oraz szesnasta edycja Summer Dying Loud w Aleksandrowie Łódzkim z Venom, Karkasem, Terrorizerem, Samael, Grave, Portalem i Cult of Luna. Omówiono też Avant Art Festival z Merzbowem, Igorem Cavalerą i Heraldo Bernocchim, występy Caustic Wound, Obscury, Riders of Doom, Thunderfest w Bytowie i Bleed From Within. Na koniec zapowiedziano Primal Fear, mini festiwal Death Opens the Grave, F.A.U.N. z Jebanished Privatiers oraz koncert Current 93.",
+  "topics": [
+    {
+      "start": 318,
+      "end": 420,
+      "label": "Śmierć Brenta Hindsa, gitarzysty Mastodon"
+    },
+    {
+      "start": 643,
+      "end": 702,
+      "label": "Śmierć Jürgena Bartscha, założyciela Bethlehem"
+    },
+    {
+      "start": 926,
+      "end": 1008,
+      "label": "Koncerty Atheist w Warszawie i Krakowie"
+    },
+    {
+      "start": 1008,
+      "end": 1103,
+      "label": "Exhumer i album Possessed by Fire"
+    },
+    {
+      "start": 1312,
+      "end": 1402,
+      "label": "Festiwal Summer Dying Loud w Aleksandrowie Łódzkim"
+    },
+    {
+      "start": 2100,
+      "end": 2186,
+      "label": "Pierwszy dzień festiwalu: Karkas, Terrorizer, Cave In"
+    },
+    {
+      "start": 2668,
+      "end": 2716,
+      "label": "Samael, Grave i pożegnanie Orange Goblin"
+    },
+    {
+      "start": 3406,
+      "end": 3527,
+      "label": "Portal, Venom i Cult of Luna na zamknięcie"
+    },
+    {
+      "start": 3732,
+      "end": 4698,
+      "label": "Avant Art Festival: Merzbow, Cavalera, Bernocchi"
+    },
+    {
+      "start": 4860,
+      "end": 5144,
+      "label": "Archangel, Mogwai i Caustic Wound"
+    },
+    {
+      "start": 5144,
+      "end": 5264,
+      "label": "Obscura, Riders of Doom i Thunderfest"
+    },
+    {
+      "start": 5525,
+      "end": 5584,
+      "label": "Bleed From Within, Vigedud i Sektori"
+    },
+    {
+      "start": 5584,
+      "end": 5706,
+      "label": "Primal Fear, Death Opens the Grave, F.A.U.N., Current 93"
+    }
+  ],
   "tags": [
     {
       "id": "azarath",
@@ -88,7 +154,7 @@
   "tracks": [
     {
       "start": 11,
-      "end": 420,
+      "end": 318,
       "durationSec": 267,
       "artist": "Mastodon",
       "title": "March of the Fire Ants",
@@ -101,7 +167,7 @@
     },
     {
       "start": 420,
-      "end": 702,
+      "end": 643,
       "durationSec": 216,
       "artist": "Mastodon",
       "title": "Shadows that Move",
@@ -114,7 +180,7 @@
     },
     {
       "start": 702,
-      "end": 1103,
+      "end": 926,
       "durationSec": 192,
       "artist": "Bethlehem",
       "title": "Die Dunkelheit darbt",
@@ -127,7 +193,7 @@
     },
     {
       "start": 1103,
-      "end": 1402,
+      "end": 1312,
       "durationSec": 211,
       "artist": "Exumer",
       "title": "Fallen Saint",
@@ -153,7 +219,7 @@
     },
     {
       "start": 1682,
-      "end": 2186,
+      "end": 2100,
       "durationSec": 419,
       "artist": "Venom",
       "title": "Countess Bathory",
@@ -166,7 +232,7 @@
     },
     {
       "start": 2186,
-      "end": 2716,
+      "end": 2668,
       "durationSec": 475,
       "artist": "Cave In",
       "title": "Blood Spiller",
@@ -179,7 +245,7 @@
     },
     {
       "start": 2716,
-      "end": 3527,
+      "end": 3406,
       "durationSec": 692,
       "artist": "Esoteric",
       "title": "Caucus of Mind",
@@ -192,7 +258,7 @@
     },
     {
       "start": 3527,
-      "end": 4698,
+      "end": 3732,
       "durationSec": 206,
       "artist": "Portal",
       "title": "Esp Ion Age",
@@ -205,7 +271,7 @@
     },
     {
       "start": 4698,
-      "end": 5264,
+      "end": 4860,
       "durationSec": 153,
       "artist": "Lord Spikeheart",
       "title": "REIGN (feat. Iggor Cavalera & Jonas Karsten)",
@@ -218,7 +284,7 @@
     },
     {
       "start": 5264,
-      "end": 5706,
+      "end": 5525,
       "durationSec": 263,
       "artist": "Azarath",
       "title": "I Hate Your Kind",
