@@ -2,10 +2,71 @@
   "version": 1,
   "id": "14461177-6e2d-435d-b8da-c940df82eaa4",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T05:31:41.955Z",
+  "updatedAt": "2026-11-06T07:25:56.026Z",
   "durationSec": 6891,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja poświęcona jest polskiej kulturze w muzyce metalowej i eksperymentalnej. Prowadzący omawia nową płytę Tenebris „Kochanowski” i jej konceptualne odniesienia do poezji, po czym przechodzi do albumu Ugory „Grupa Żałobna”, opisując jego wiejską tematykę. Następnie prezentowane są utwory i zapowiedzi zespołów Czernina, Oset oraz Asterie, a także nowi wykonawcy Voice i Dead You, których twórczość łączy różne podgatunki metalu. W trakcie programu pojawiają się liczne komentarze dotyczące polsko‑słowiańskich inspiracji oraz planowane koncerty. W audycji omówiono kilka polskich zespołów metalowych, zaczynając od nowej ekipy Dead You i ich utworu „Vile” z gościnnym wokalistą z amerykańskiego zespołu Saltwound. Następnie przybliżono długoletni zespół Ferocity oraz ich piąty album „The Evolution”. Kolejnym punktem była krakowska grupa Impermanence i ich niedawno wydany album „Annika”, wydany we współpracy gruzińskiej i kostarykańskiej wytwórni. Prowadzący przedstawił także nowość Repulsive – album „Fury Unleashed” oraz omówił wieloletni projekt New Breed i ich najnowszy album „Outlaw”. Na koniec zaprezentowano mystyczny projekt Mysticon z płytą „Bieśń” oraz czarny metalowy zespół Cało i ich utwór „Ogrom Bytu”. W audycji prowadzący omawiali inspiracje muzyczne, przywołując zespoły Dead Can Dance i Vardruna oraz opisując brzmienie Drowned in Silver jako rytualny rock i metal. Następnie porównano ich styl do Neurosis i Wolvenest, podkreślając unikalność dźwięku. Kolejnym wątkiem była prezentacja białostockiego kwartetu Death Has Spoken, ich dotychczasowych płyt Epke i Splita oraz nowo wydanego albumu Elegi, wydanego w belgijskiej wytwórni Muse Music Records. Audycja zakończyła się podziękowaniami i życzeniami dobrej nocy.",
+  "topics": [
+    {
+      "start": 272,
+      "end": 446,
+      "label": "Wprowadzenie i analiza albumu Tenebris „Kochanowski” oraz utworu „Duch\""
+    },
+    {
+      "start": 651,
+      "end": 700,
+      "label": "Prezentacja nowego albumu Ugory „Grupa Żałobna\" i jego wiejskiej tematyki"
+    },
+    {
+      "start": 1124,
+      "end": 1165,
+      "label": "Premiera utworu tytułowego zespołu Czernina z albumu „Oszukać listopad\""
+    },
+    {
+      "start": 1375,
+      "end": 1384,
+      "label": "Prezentacja zespołu Oset i utworu „Gorycz\" z debiutanckiej płyty „Sagan\""
+    },
+    {
+      "start": 2324,
+      "end": 2369,
+      "label": "Zapowiedź koncertów i nowej płyty Asterie „Miejsce\" oraz utworu „148\""
+    },
+    {
+      "start": 3118,
+      "end": 3241,
+      "label": "Prezentacja zespołu Dead You i utworu Vile z gościnnym wokalistą Saltwound"
+    },
+    {
+      "start": 3367,
+      "end": 3595,
+      "label": "Omówienie Ferocity i ich piątego albumu The Evolution"
+    },
+    {
+      "start": 3595,
+      "end": 3624,
+      "label": "Impermanence – nowy album Annika wydany we współpracy dwóch zagranicznych wytwórni"
+    },
+    {
+      "start": 3915,
+      "end": 3986,
+      "label": "Repulsive – album Fury Unleashed oraz jego miejsce w polskim death metalu"
+    },
+    {
+      "start": 4266,
+      "end": 4295,
+      "label": "New Breed – album Outlaw i analiza ich progresywnego brzmienia"
+    },
+    {
+      "start": 5977,
+      "end": 6026,
+      "label": "Inspiracje muzyczne – wymienione zespoły Dead Can Dance i Vardruna"
+    },
+    {
+      "start": 6542,
+      "end": 6582,
+      "label": "Prezentacja zespołu Death Has Spoken i ich albumu Elegi"
+    }
+  ],
   "tags": [
     {
       "id": "alan-gray",
@@ -64,11 +125,30 @@
       "at": 3624
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "mysthicon",
       "label": "Mysthicon",
       "type": "artist",
       "source": "tracks",
       "at": 4700
+    },
+    {
+      "id": "new-breed",
+      "label": "New Breed",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4295
     },
     {
       "id": "repulsive",
@@ -116,7 +196,7 @@
   "tracks": [
     {
       "start": 11,
-      "end": 446,
+      "end": 272,
       "durationSec": 188,
       "artist": "Alan Gray",
       "title": "The Reserve\" Christmas Truce ( Unusual and Heartwarming Christmas Song)",
@@ -129,40 +209,43 @@
     },
     {
       "start": 446,
-      "end": 700,
+      "end": 651,
       "durationSec": 199,
       "artist": "Tenebris",
       "title": "Kosy",
       "album": "Kochanowski",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 700,
-      "end": 1165,
+      "end": 1124,
       "durationSec": 377,
       "artist": "Ugory",
       "title": "Lament",
       "album": "Grupa żałobna",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 1165,
-      "end": 1384,
+      "end": 1375,
       "durationSec": 162,
       "artist": "Czernina",
       "title": "Oszukać Listopad",
       "album": "Oszukać Listopad - Single",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -173,7 +256,7 @@
       "artist": "Sowieso & Co",
       "title": "The Escape (Saite Zwei Remix)",
       "album": "Dopaminium",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -181,12 +264,12 @@
     },
     {
       "start": 1911,
-      "end": 2369,
+      "end": 2324,
       "durationSec": 397,
       "artist": "Gorycz",
       "title": "Wybacza",
       "album": "Zasypia",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -199,22 +282,24 @@
       "artist": "Asteriæ",
       "title": "1 - 4 - 8",
       "album": "Miejsce, które nazywam sobą - EP",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 2882,
-      "end": 3241,
+      "end": 3118,
       "durationSec": 237,
       "artist": "Voice",
       "title": "God of Fire",
       "album": "God of Fire - Single",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -225,7 +310,7 @@
       "artist": "DeadDue",
       "title": "Vile (feat. Saltwound)",
       "album": "Cycle of Violence - EP",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -233,12 +318,12 @@
     },
     {
       "start": 3302,
-      "end": 3624,
+      "end": 3367,
       "durationSec": 51,
       "artist": "DeadDue",
       "title": "Vile (feat. Saltwound)",
       "album": "Cycle of Violence - EP",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -246,27 +331,42 @@
     },
     {
       "start": 3624,
-      "end": 3986,
+      "end": 3915,
       "durationSec": 302,
       "artist": "Impermanence",
       "title": "Ascension Through Defiance",
       "album": "Anicca",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 3986,
-      "end": 4700,
+      "end": 4266,
       "durationSec": 206,
       "artist": "Repulsive",
       "title": "Eternity In Total Nothingness",
       "album": "Fury Unleashed",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 4295,
+      "end": 4700,
+      "durationSec": 308,
+      "artist": "New Breed",
+      "title": "C-No",
+      "album": "Outlaw",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
       ],
       "links": []
     },
@@ -285,7 +385,7 @@
     },
     {
       "start": 5609,
-      "end": 6026,
+      "end": 5977,
       "durationSec": 335,
       "artist": "Semprah",
       "title": "Kult Pustki (Cult of Emptiness)",
@@ -298,14 +398,15 @@
     },
     {
       "start": 6026,
-      "end": 6582,
+      "end": 6542,
       "durationSec": 502,
       "artist": "Drowned In Silver",
       "title": "Waves of Sorrow",
       "album": "Mothers",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -316,13 +417,72 @@
       "artist": "Death Has Spoken",
       "title": "Through Shaded Ways",
       "album": "Elegy",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 272,
+      "text": "Utwór, od którego dzisiaj zacząłem, nosi tytuł Duch i pochodzi z wydanej niedawno nowej płyty grupy Tenebris, zatytułowanej Kochanowski."
+    },
+    {
+      "start": 682,
+      "text": "Na swojej nowej płycie Ugory opowiadają nam o ludowym, wiejskim przeżywaniu śmierci i żałoby."
+    },
+    {
+      "start": 1124,
+      "text": "A ja już dziś mogę wam zaprezentować utwór tytułowy, który opowiada o życiu w depresji, rezygnacji, ciągłej walce..."
+    },
+    {
+      "start": 2364,
+      "text": "Asterie w utworze 148."
+    },
+    {
+      "start": 2798,
+      "text": "God of Fire to bardzo dobry numer, zawodowo zagrany i zaśpiewany, świetnie brzmiący."
+    },
+    {
+      "start": 3595,
+      "text": "Ich album, niedawno wydany, nosi tytuł Annika"
+    },
+    {
+      "start": 3915,
+      "text": "Ta jednak w styczniu właśnie na początku tego roku wyszła, nosi tytuł Fury Unleashed i przyniosła nam 12 porcji krwistego def metalowego mięsa"
+    },
+    {
+      "start": 4266,
+      "text": "za chwilę go usłyszycie, który nazywa się C-No"
+    },
+    {
+      "start": 5977,
+      "text": "Wśród inspiracji grupa wymienia m.in. takie nazwy jak Dead Can Dance"
+    },
+    {
+      "start": 6004,
+      "text": "Drowned in Silver ma trochę tego rytualnego, transowego aspektu, ale to jednak muzyka rockowa"
+    },
+    {
+      "start": 6559,
+      "text": "ich trzeci album, czyli właśnie Elegi, ukazał się niedawno w belgijskiej wytwórni Muse Music Records"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 262,
+      "quote": "Słuchacie ciężko na sercu, w programie trzecim Polskiego Radia mówi do Was Jarek Szubrycht"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 262,
+      "quote": "audycję wydaje Mariusz Owczarek"
+    }
+  ]
 }

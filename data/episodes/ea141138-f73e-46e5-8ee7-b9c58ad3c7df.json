@@ -2,10 +2,66 @@
   "version": 1,
   "id": "ea141138-f73e-46e5-8ee7-b9c58ad3c7df",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T05:31:41.957Z",
+  "updatedAt": "2026-11-06T07:25:56.027Z",
   "durationSec": 7067,
-  "summary": "",
-  "topics": [],
+  "summary": "Punktem wyjścia jest oficjalne rozstanie Aarona Stainthorpe'a z My Dying Bride i fani wieszczący koniec zespołu — odcinek zbiera przykłady grup, które przetrwały wymianę pozornie niezastąpionego wokalisty. Omówione zostają Morbid Angel (odejście Davida Vincenta i Steve Tucker na \"Formulas Fatal to the Flesh\"), Entombed (Petrov, Orvar Säfström oraz Nicke Andersson śpiewający na \"Clandestine\"), Cannibal Corpse (Chris Barnes zastąpiony przez Corpsegrindera) i Decapitated (Sauron, Covan, nowy wokalista z Finlandii). Dalej Napalm Death z trzema kolejnymi głosami — Nickiem Bullenem, Lee Dorrianem i Barneyem Greenwayem — oraz The Dillinger Escape Plan, gdzie po Dimitim Minakakisie i epce z Mike'em Pattonem na front wyszedł Greg Puciato. Zamykają całość Candlemass z Messiah Marcolinem i Björnem Flodqvistem, Exodus z Paulem Baloffem, Zetro Souzą i Robem Dukesem oraz Black Sabbath, gdzie zestawione są epoki Ozzy'ego Osbourne'a i Ronniego Jamesa Dio.",
+  "topics": [
+    {
+      "start": 373,
+      "end": 486,
+      "label": "Rozstanie Aarona Stainthorpe'a z My Dying Bride i losy zespołu"
+    },
+    {
+      "start": 486,
+      "end": 487,
+      "label": "Morbid Angel po Davie Vincentcie i album z Stevem Tuckerem"
+    },
+    {
+      "start": 1208,
+      "end": 1326,
+      "label": "Entombed: Petrov, Orvar Säfström i Nicke Andersson na Clandestine"
+    },
+    {
+      "start": 1919,
+      "end": 1971,
+      "label": "Cannibal Corpse: Chris Barnes zastąpiony przez Corpsegrindera"
+    },
+    {
+      "start": 2492,
+      "end": 2622,
+      "label": "Decapitated: Sauron, Covan i nowy wokalista z Finlandii"
+    },
+    {
+      "start": 3111,
+      "end": 3196,
+      "label": "Iron Maiden i Van Halen jako klasyczne przykłady zmiany frontmana"
+    },
+    {
+      "start": 3196,
+      "end": 3295,
+      "label": "Napalm Death: Nick Bullen, Lee Dorrian i Barney Greenway"
+    },
+    {
+      "start": 3800,
+      "end": 3957,
+      "label": "The Dillinger Escape Plan: Minakakis, Patton i Greg Puciato"
+    },
+    {
+      "start": 4376,
+      "end": 4492,
+      "label": "Candlemass: Messiah Marcolin i Björn Flodqvist"
+    },
+    {
+      "start": 5247,
+      "end": 5322,
+      "label": "Exodus poza Wielką Czwórką thrashu i jego trzej wokaliści"
+    },
+    {
+      "start": 6347,
+      "end": 6436,
+      "label": "Black Sabbath: epoka Ozzy'ego Osbourne'a i Ronniego Jamesa Dio"
+    }
+  ],
   "tags": [
     {
       "id": "black-sabbath",
@@ -81,7 +137,7 @@
   "tracks": [
     {
       "start": 36,
-      "end": 487,
+      "end": 373,
       "durationSec": 339,
       "artist": "My Dying Bride",
       "title": "My Wine In Silence",
@@ -107,7 +163,7 @@
     },
     {
       "start": 905,
-      "end": 1326,
+      "end": 1208,
       "durationSec": 279,
       "artist": "Morbid Angel",
       "title": "Nothing Is Not",
@@ -120,7 +176,7 @@
     },
     {
       "start": 1326,
-      "end": 1971,
+      "end": 1919,
       "durationSec": 593,
       "artist": "Entombed",
       "title": "Left Hand Path",
@@ -133,7 +189,7 @@
     },
     {
       "start": 1971,
-      "end": 2622,
+      "end": 2492,
       "durationSec": 522,
       "artist": "Cannibal Corpse",
       "title": "Hammer Smashed Face",
@@ -146,7 +202,7 @@
     },
     {
       "start": 2622,
-      "end": 3295,
+      "end": 3111,
       "durationSec": 491,
       "artist": "Decapitated",
       "title": "Spheres of Madness",
@@ -159,7 +215,7 @@
     },
     {
       "start": 3295,
-      "end": 3957,
+      "end": 3800,
       "durationSec": 506,
       "artist": "Napalm Death",
       "title": "Scum",
@@ -172,7 +228,7 @@
     },
     {
       "start": 3957,
-      "end": 4492,
+      "end": 4376,
       "durationSec": 420,
       "artist": "The Dillinger Escape Plan",
       "title": "4th Grade Dropout",
@@ -185,7 +241,7 @@
     },
     {
       "start": 4492,
-      "end": 5322,
+      "end": 5247,
       "durationSec": 755,
       "artist": "Candlemass",
       "title": "Bewitched",
@@ -198,7 +254,7 @@
     },
     {
       "start": 5322,
-      "end": 6436,
+      "end": 6347,
       "durationSec": 1026,
       "artist": "Exodus",
       "title": "Piranha",
