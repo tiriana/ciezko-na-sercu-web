@@ -2,10 +2,66 @@
   "version": 1,
   "id": "61683e30-b030-4c32-b0d7-3bffbf96b7dc",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T18:01:35.282Z",
+  "updatedAt": "2026-11-06T19:03:49.962Z",
   "durationSec": 6858,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek otwiera zapowiedź pożegnalnego koncertu Black Sabbath w oryginalnym składzie 5 lipca w Birmingham, z Ozzym Osbournem, Tonym Iommim, Geezerem Butlerem i Billem Wardem oraz gośćmi takimi jak Metallica, Slayer, Pantera, Anthrax, Gojira, Alice in Chains i Lamb of God, z Tomem Morello jako dyrektorem muzycznym. Decyzję o rezygnacji z biletów uzasadnia wcześniejszym pożegnaniem zespołu w dobrej formie i chęcią skupienia się na tegorocznych festiwalach. Dalej następuje przegląd europejskich imprez: Inferno w Oslo, które odbędzie się bez zmarłego 11 lutego założyciela Jana Martina Jensena, Roadburn w Tilburgu, Desertfest w Berlinie, Obscene Extreme w Trutnovie, Brutal Assault w twierdzy Josefov, Midgardsblot w Borre i ArcTanGent w Bristolu. Przy każdej imprezie podane są terminy i program, m.in. Behemoth, Batushka i Blood Incantation na Inferno oraz The Body, Swans i Thou na Roadburn. Całość zamyka wskazanie festiwali stawiających na awangardę i wątek progresywny, z Melvins jako muzycznym podsumowaniem.",
+  "topics": [
+    {
+      "start": 478,
+      "end": 691,
+      "label": "Pożegnalny koncert Black Sabbath w Birmingham i jego goście"
+    },
+    {
+      "start": 691,
+      "end": 719,
+      "label": "Vader i cover utworu Black Sabbath"
+    },
+    {
+      "start": 1131,
+      "end": 1329,
+      "label": "Inferno Festival w Oslo i śmierć założyciela"
+    },
+    {
+      "start": 1628,
+      "end": 1731,
+      "label": "Program Inferno: Behemoth, Batushka, Blood Incantation"
+    },
+    {
+      "start": 2327,
+      "end": 2456,
+      "label": "Roadburn w Tilburgu i ewolucja festiwalu"
+    },
+    {
+      "start": 3051,
+      "end": 3246,
+      "label": "Gwiazdy Roadburn: The Body, Swans, Thou"
+    },
+    {
+      "start": 4054,
+      "end": 4133,
+      "label": "Desertfest Berlin: stoner, doom i protometal"
+    },
+    {
+      "start": 4369,
+      "end": 4396,
+      "label": "Obscene Extreme w Trutnovie i scena grindowa"
+    },
+    {
+      "start": 5135,
+      "end": 5207,
+      "label": "Brutal Assault w twierdzy Josefov"
+    },
+    {
+      "start": 6171,
+      "end": 6272,
+      "label": "Midgardsblot w Borre i kultura wikińska"
+    },
+    {
+      "start": 6434,
+      "end": 6559,
+      "label": "ArcTanGent w Bristolu i progresywny metal"
+    }
+  ],
   "tags": [
     {
       "id": "1349",
@@ -128,7 +184,7 @@
     },
     {
       "start": 330,
-      "end": 719,
+      "end": 478,
       "durationSec": 149,
       "artist": "Black Sabbath",
       "title": "War Pigs",
@@ -141,7 +197,7 @@
     },
     {
       "start": 719,
-      "end": 1329,
+      "end": 1131,
       "durationSec": 364,
       "artist": "Vader",
       "title": "Black Sabbath",
@@ -154,7 +210,7 @@
     },
     {
       "start": 1329,
-      "end": 1731,
+      "end": 1628,
       "durationSec": 301,
       "artist": "1349",
       "title": "The God Devourer",
@@ -167,7 +223,7 @@
     },
     {
       "start": 1731,
-      "end": 2456,
+      "end": 2327,
       "durationSec": 597,
       "artist": "ROSA FAENSKAP",
       "title": "Livredd",
@@ -180,7 +236,7 @@
     },
     {
       "start": 2456,
-      "end": 3246,
+      "end": 3051,
       "durationSec": 595,
       "artist": "The Body",
       "title": "Partly Alive",
@@ -193,7 +249,7 @@
     },
     {
       "start": 3246,
-      "end": 4133,
+      "end": 4054,
       "durationSec": 809,
       "artist": "Black Curse",
       "title": "Spleen Girt With Serpent",
@@ -206,7 +262,7 @@
     },
     {
       "start": 4133,
-      "end": 4396,
+      "end": 4369,
       "durationSec": 237,
       "artist": "Dinosaur Jr",
       "title": "The Leper",
@@ -232,7 +288,7 @@
     },
     {
       "start": 4781,
-      "end": 5207,
+      "end": 5135,
       "durationSec": 355,
       "artist": "Antichrist Siege Machine",
       "title": "Only Evil",
@@ -258,7 +314,7 @@
     },
     {
       "start": 5545,
-      "end": 6272,
+      "end": 6171,
       "durationSec": 627,
       "artist": "Inter Arma",
       "title": "Gardens in the Dark",
@@ -271,7 +327,7 @@
     },
     {
       "start": 6272,
-      "end": 6559,
+      "end": 6434,
       "durationSec": 164,
       "artist": "The Crazy World of Arthur Brown",
       "title": "Fire",

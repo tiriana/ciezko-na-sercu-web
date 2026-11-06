@@ -2,10 +2,71 @@
   "version": 1,
   "id": "799726ce-dd56-49eb-bda3-752bdef669cd",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T18:01:35.282Z",
+  "updatedAt": "2026-11-06T19:03:49.963Z",
   "durationSec": 6869,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek buduje walentynkową playlistę z metalowych piosenek o miłości, świadomie odwracając jej słodki wizerunek. Obok klasyki — Judas Priest z albumu Turbo, Motorhead, Pantery z This Love i Carcass z Heartwork — pojawiają się Type O Negative, Misfits z Die, Die My Darling oraz Alice Cooper z I Love the Dead. Osobny wątek łączy miłość ze śmiercią: Erosa z Thanatosem, nekrofilię w tekstach Slayera i Cannibal Corpse oraz proces z 1996 roku, który zainspirował Pig Destroyer. Przywołane są też osobiste wspomnienia o zespole Desperator z Dukli i utworze In Love grupy Grave. Dalsza część przechodzi do black metalu z Darkthrone, gotyckiego romantyzmu My Dying Bride i Cradle of Filth oraz kobiecego spojrzenia Derkety. Całość zamyka powrót do debiutu Type O Negative i tematu niewierności.",
+  "topics": [
+    {
+      "start": 356,
+      "end": 413,
+      "label": "Walentynki bez różu: metalowa ścieżka dźwiękowa na randkę"
+    },
+    {
+      "start": 731,
+      "end": 770,
+      "label": "Judas Priest, album Turbo i lament tradycyjnych fanów"
+    },
+    {
+      "start": 1090,
+      "end": 1109,
+      "label": "Pantera i This Love: miłość przeradzająca się w nienawiść"
+    },
+    {
+      "start": 2456,
+      "end": 2495,
+      "label": "Misfits i Die, Die My Darling Glenna Danziga"
+    },
+    {
+      "start": 2679,
+      "end": 2764,
+      "label": "Eros i Thanatos, Alice Cooper i motyw nekrofilii"
+    },
+    {
+      "start": 2961,
+      "end": 2987,
+      "label": "Slayer, utwór Necrophiliac i oswajanie tabu"
+    },
+    {
+      "start": 3829,
+      "end": 3875,
+      "label": "Cannibal Corpse i okładka albumu Tomb of the Mutilated"
+    },
+    {
+      "start": 4094,
+      "end": 4133,
+      "label": "Black metal i Darkthrone: romantyzm przebrany za demony"
+    },
+    {
+      "start": 4335,
+      "end": 4352,
+      "label": "My Dying Bride i teksty pisane krwawiącym sercem"
+    },
+    {
+      "start": 5155,
+      "end": 5231,
+      "label": "Cradle of Filth i Gothic Romance z Dusk and Her Embrace"
+    },
+    {
+      "start": 5721,
+      "end": 5821,
+      "label": "Derketa: kobiece spojrzenie na miłość w doom metalu"
+    },
+    {
+      "start": 6092,
+      "end": 6134,
+      "label": "Powrót do Type O Negative i temat niewierności"
+    }
+  ],
   "tags": [
     {
       "id": "cannibal-corpse",
@@ -130,7 +191,7 @@
   "tracks": [
     {
       "start": 7,
-      "end": 413,
+      "end": 356,
       "durationSec": 350,
       "artist": "Coil",
       "title": "Tainted Love",
@@ -143,7 +204,7 @@
     },
     {
       "start": 413,
-      "end": 770,
+      "end": 731,
       "durationSec": 320,
       "artist": "Judas Priest",
       "title": "Turbo Lover",
@@ -156,7 +217,7 @@
     },
     {
       "start": 770,
-      "end": 1109,
+      "end": 1090,
       "durationSec": 321,
       "artist": "Motörhead",
       "title": "Love Me Forever",
@@ -208,7 +269,7 @@
     },
     {
       "start": 2094,
-      "end": 2495,
+      "end": 2456,
       "durationSec": 364,
       "artist": "Type O Negative",
       "title": "Everyone I Love Is Dead",
@@ -221,7 +282,7 @@
     },
     {
       "start": 2495,
-      "end": 2764,
+      "end": 2679,
       "durationSec": 184,
       "artist": "The Misfits",
       "title": "Die, Die My Darling (Fox Studio 1983)",
@@ -234,7 +295,7 @@
     },
     {
       "start": 2764,
-      "end": 2987,
+      "end": 2961,
       "durationSec": 198,
       "artist": "Samael",
       "title": "I Love the Dead (666)",
@@ -273,7 +334,7 @@
     },
     {
       "start": 3623,
-      "end": 3875,
+      "end": 3829,
       "durationSec": 208,
       "artist": "Grave",
       "title": "In Love",
@@ -286,7 +347,7 @@
     },
     {
       "start": 3875,
-      "end": 4133,
+      "end": 4094,
       "durationSec": 220,
       "artist": "Cannibal Corpse",
       "title": "I Cum Blood",
@@ -299,7 +360,7 @@
     },
     {
       "start": 4133,
-      "end": 4352,
+      "end": 4335,
       "durationSec": 203,
       "artist": "Darkthrone",
       "title": "Natassja In Eternal Sleep",
@@ -325,7 +386,7 @@
     },
     {
       "start": 4764,
-      "end": 5231,
+      "end": 5155,
       "durationSec": 391,
       "artist": "My Dying Bride",
       "title": "For You",
@@ -338,7 +399,7 @@
     },
     {
       "start": 5231,
-      "end": 5821,
+      "end": 5721,
       "durationSec": 492,
       "artist": "Cradle of Filth",
       "title": "A Gothic Romance (Red Roses for the Devil's Whore)",
@@ -351,7 +412,7 @@
     },
     {
       "start": 5821,
-      "end": 6134,
+      "end": 6092,
       "durationSec": 273,
       "artist": "Derketa",
       "title": "Until Our Death",
