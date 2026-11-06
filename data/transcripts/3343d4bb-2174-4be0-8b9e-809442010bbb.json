@@ -1,0 +1,605 @@
+{
+  "version": 1,
+  "episodeId": "3343d4bb-2174-4be0-8b9e-809442010bbb",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109861043,
+  "fileMtimeMs": 1789151105044.3074,
+  "windows": [
+    {
+      "index": 0,
+      "start": 1.7599999999999998,
+      "end": 7.32
+    },
+    {
+      "index": 1,
+      "start": 293.76,
+      "end": 298.43
+    },
+    {
+      "index": 2,
+      "start": 367.3,
+      "end": 490.94
+    },
+    {
+      "index": 3,
+      "start": 1128.26,
+      "end": 1199.8
+    },
+    {
+      "index": 4,
+      "start": 1912.84,
+      "end": 1960.51
+    },
+    {
+      "index": 5,
+      "start": 2424.29,
+      "end": 2497.37
+    },
+    {
+      "index": 6,
+      "start": 2955.3,
+      "end": 3094.62
+    },
+    {
+      "index": 7,
+      "start": 3828.58,
+      "end": 3964.7
+    },
+    {
+      "index": 8,
+      "start": 4530.08,
+      "end": 4568.92
+    },
+    {
+      "index": 9,
+      "start": 4985.57,
+      "end": 5123.23
+    },
+    {
+      "index": 10,
+      "start": 5687.84,
+      "end": 5746.17
+    },
+    {
+      "index": 11,
+      "start": 6239.62,
+      "end": 6382.43
+    }
+  ],
+  "segments": [
+    {
+      "start": 1.76,
+      "end": 5.16,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 293.76,
+      "end": 298.44,
+      "text": "'Cause my real name is your RA"
+    },
+    {
+      "start": 367.3,
+      "end": 377.1,
+      "text": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht, prowadzący audycję. Pozdrawia Was też Mariusz Owczarek, jej wydawca."
+    },
+    {
+      "start": 377.28,
+      "end": 387.4,
+      "text": "Słuchacie ciężko na sercu tych cotygodniowych dwóch godzin w trójce, które poświęcone są metalowi i okolicom."
+    },
+    {
+      "start": 387.96,
+      "end": 399.58,
+      "text": "Dzisiaj miałem chwalić się łupami przywiezionymi z Mystic Festiwalu, a więc wywiadami ze znakomitymi artystami, ale nie zdążyłem ich jeszcze przetłumaczyć i opracować."
+    },
+    {
+      "start": 400.32,
+      "end": 408.6,
+      "text": "Proszę o wybaczenie. Wywiad jednak nie zając, nie ucieknie, pójdą w lipcu."
+    },
+    {
+      "start": 409.28,
+      "end": 418.32,
+      "text": "Tymczasem dzisiaj zapraszam Was na odcinek, który chodził mi po głowie od dłuższego czasu i wreszcie się zmaterializował."
+    },
+    {
+      "start": 419.16,
+      "end": 427.68,
+      "text": "Podpowiedź znaleźliście w utworze, który otworzył audycję Only the Names, grupy Machine Head."
+    },
+    {
+      "start": 428.76,
+      "end": 436.1,
+      "text": "Jak masz na imię, przyjacielu? Moje brzmi tak samo, co za dziwny zbieg okoliczności, śpiewa Rob Flynn."
+    },
+    {
+      "start": 436.7,
+      "end": 444.88,
+      "text": "Tak jest. Dzisiaj wciężko na sercu zajmować się będziemy imionami i zero zbiegów okoliczności."
+    },
+    {
+      "start": 445.74,
+      "end": 454.04,
+      "text": "Pojawią się zespoły, które wzięły sobie nazwę od tytułów utworów lub płyt innych grup."
+    },
+    {
+      "start": 455.22,
+      "end": 463.44,
+      "text": "Uznałem, że fajnie będzie to zestawić, żeby sprawdzić, czy daleko pada jabłko od jabłoni."
+    },
+    {
+      "start": 464.38,
+      "end": 470.94,
+      "text": "Zresztą, żeby daleko nie szukać, właśnie Machine Head jest przykładem takiej kapeli."
+    },
+    {
+      "start": 471.76,
+      "end": 478.42,
+      "text": "Nazwa zespołu to przecież hołd dla płyty Deep Purple z 1971 roku."
+    },
+    {
+      "start": 478.56,
+      "end": 486.3,
+      "text": "Tej samej, na której znajduje się chociażby Highway Star, Smoke on the Water, czy Space Trucking."
+    },
+    {
+      "start": 487.14,
+      "end": 488.84,
+      "text": "Posłuchajmy, jak to brzmi."
+    },
+    {
+      "start": 488.84,
+      "end": 490.94,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1128.26,
+      "end": 1132.82,
+      "text": "Czy zasady dzisiejszej zabawy są już jasne?"
+    },
+    {
+      "start": 1133.38,
+      "end": 1138.16,
+      "text": "Zatem cofnijmy się do źródła, do ojców założycieli z Black Sabbath."
+    },
+    {
+      "start": 1138.84,
+      "end": 1144.8,
+      "text": "Ich muzyczne DNA krąży w żyłach i buduje szkielety tysięcy metalowych zespołów,"
+    },
+    {
+      "start": 1145.26,
+      "end": 1151.98,
+      "text": "ale znalazłoby się też kilka takich, co przyznają się do tego w nazwach."
+    },
+    {
+      "start": 1151.98,
+      "end": 1158.48,
+      "text": "Na przykład norweska grupa Spiral Architect, która wydała tylko jeden album,"
+    },
+    {
+      "start": 1158.64,
+      "end": 1166.72,
+      "text": "Skeptics The Universe w 2000 roku i był to album za to bardzo dobry."
+    },
+    {
+      "start": 1166.84,
+      "end": 1174.62,
+      "text": "Podobno Spiral Architect się nie rozpadli i rozważają powrót do studia i na scenę,"
+    },
+    {
+      "start": 1175.08,
+      "end": 1178.32,
+      "text": "ale że są rozchwytywanymi sesyjnymi miotaczami."
+    },
+    {
+      "start": 1178.32,
+      "end": 1182.78,
+      "text": "Jeden z nich gra w Satyricon, inny w Borknagar i chyba z ich sanem."
+    },
+    {
+      "start": 1182.92,
+      "end": 1186.42,
+      "text": "To pewnie ten powrót nieprędko się wydarzy."
+    },
+    {
+      "start": 1187.52,
+      "end": 1190.92,
+      "text": "Nazwę Norwegowie oczywiście pobrali od Black Sabbath, od utworu,"
+    },
+    {
+      "start": 1190.98,
+      "end": 1194.78,
+      "text": "który zamyka album Sabbath, Bloody Sabbath."
+    },
+    {
+      "start": 1195.88,
+      "end": 1198.04,
+      "text": "Poszukajmy podobieństw."
+    },
+    {
+      "start": 1198.04,
+      "end": 1199.8,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1913.72,
+      "end": 1919.14,
+      "text": "Nie zgadlibyście, że taka muzyka wywodzi się bezpośrednio z Black Sabbath, prawda?"
+    },
+    {
+      "start": 1919.86,
+      "end": 1922.62,
+      "text": "No zresztą bezpośrednio się nie wywodzi."
+    },
+    {
+      "start": 1923.1,
+      "end": 1931.66,
+      "text": "Ale żeby nie było, są i tacy, którzy pobierając od Black Sabbath imię wzięli je z całym dobrodziejstwem inwentarza."
+    },
+    {
+      "start": 1932.54,
+      "end": 1939.16,
+      "text": "Kalifornijski zespół Saint Vitus, pionierski dla nurtu zwanego Doom Metalem,"
+    },
+    {
+      "start": 1939.16,
+      "end": 1947.44,
+      "text": "to przecież skóra zdarta z Black Sabbath, czego dowodem będzie piosenka o białej i czarnej magii."
+    },
+    {
+      "start": 1948.42,
+      "end": 1954.4,
+      "text": "Wcześniej jednak wysłuchamy utworu Saint Vitus Dance z sabatowskiej czwórki"
+    },
+    {
+      "start": 1954.4,
+      "end": 1958.06,
+      "text": "i tu nie będzie żadnych wątpliwości."
+    },
+    {
+      "start": 2424.29,
+      "end": 2437.97,
+      "text": "Wielki Judas Priest swoją nazwę wziął z tekstu piosenki Boba Dylana, więc żeby spłacić karmiczny dług podarował kilka nazw innym zespołom."
+    },
+    {
+      "start": 2438.45,
+      "end": 2455.55,
+      "text": "Dzisiaj przytoczę tylko jeden przykład. Sięgamy po płytę Killing Machine, znaną też pod tytułem Hell Band for Leather, wymyślonym na potrzeby amerykańskiego rynku w 1978 roku, kontrolowanego przez bigotów."
+    },
+    {
+      "start": 2455.55,
+      "end": 2472.53,
+      "text": "Na albumie tym znajduje się kompozycja Running Wild, która dostarczyła szyld pewnemu niemieckiemu zespołowi łączącemu heavy metal z piractwem, bynajmniej nie fonograficznym."
+    },
+    {
+      "start": 2473.05,
+      "end": 2491.19,
+      "text": "Pozwolę sobie jednak zaprezentować utwór Running Wild z czasów, kiedy jeszcze zajmowali się piekłem na płycie z czyśćcem w tytule, zamiast zawracać Wam głowę na abordażem, takielunkiem i bukszprytem."
+    },
+    {
+      "start": 2496.59,
+      "end": 2497.37,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2955.3,
+      "end": 2971.32,
+      "text": "Jak zapewne wiecie, nazwa zespołu Motorhead zaczerpnięta została z tytułu utworu space rockowej grupy Hawkwind, ale nie wiem czy można tu zaliczyć punkt, czy sędziowie uznają,"
+    },
+    {
+      "start": 2971.32,
+      "end": 2988.5,
+      "text": "bo Lemmy Kilminster sam ten numer napisał, kiedy był członkiem Hawkwind, a jak już odszedł z grupy, czy tam został wykopany z wielkim hukiem, to zabrał piosenkę ze sobą i uczynił hymnem własnej kapeli."
+    },
+    {
+      "start": 2989.26,
+      "end": 3005.96,
+      "text": "Skupmy się więc na przypadku bardziej oczywistym. Otóż wspomniany Motorhead ma w dorobku utwór zatytułowany Overkill, pochodzący z płyty opatrzonej takim samym tytułem, wydanej w 1979 roku."
+    },
+    {
+      "start": 3005.96,
+      "end": 3011.72,
+      "text": "To drugi album, Motorhead, dodam z kronikarskiego obowiązku."
+    },
+    {
+      "start": 3013.04,
+      "end": 3028.64,
+      "text": "Już rok później, w 1980 roku w New Jersey, mili młodzi ludzie zakładają zespół, w którym chcą grać ostrą, bezkompromisową muzykę, jakiej świat nie widział."
+    },
+    {
+      "start": 3028.7,
+      "end": 3050.08,
+      "text": "I nie zgadniecie, jaką sobie biorą nazwę. Tak jest, Overkill. Overkill to jeden z pionierów amerykańskiego trashu, ale przez to, że ze wschodniego wybrzeża, które mniej było w czasie boomu na trash hołubione,"
+    },
+    {
+      "start": 3051.44,
+      "end": 3063.32,
+      "text": "nie zaliczony nigdy do Wielkiej Czwórki, a przynajmniej nieoficjalnie, bo to jest jeden z tych zespołów, o których się dyskutuje, kiedy dyskutuje się o tym, kto powinien być w Wielkiej Czwórce, jeżeli nie Antraks."
+    },
+    {
+      "start": 3064.38,
+      "end": 3075.96,
+      "text": "Swoją drogą mówi się czasem o Overkill, że to Motorhead trash metalu, ale nie jestem pewien, czy nie dlatego, że ludzie sugerują się nazwą."
+    },
+    {
+      "start": 3077.04,
+      "end": 3085.74,
+      "text": "Mógłbym Wam tu nawet puścić Overkill w wykonaniu Overkill, ale tego nie zrobię, bo audycja z coverami będzie innym razem."
+    },
+    {
+      "start": 3086.34,
+      "end": 3091.68,
+      "text": "Dzisiaj sprawdzamy, powtarzam, czy daleko pada jabłko od jabłoni."
+    },
+    {
+      "start": 3091.68,
+      "end": 3094.62,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3828.58,
+      "end": 3840.18,
+      "text": "O, teraz trudne się wylosowało. No więc zacznijmy od tego, że znany Wam doskonale kreator nazywał się u zarania swoich dziejów Tormentor."
+    },
+    {
+      "start": 3840.44,
+      "end": 3853.42,
+      "text": "Ale Mille doszedł do wniosku, że to zbyt popularne imię, coś jak dziś Maja albo Antoni, więc postanowił przechrzcić swoje ukochane dziecko."
+    },
+    {
+      "start": 3854.68,
+      "end": 3869.4,
+      "text": "Nagrał jednak na wiecznej rzeczy pamiątkę, piosenkę zatytułowaną Tormentor i umieścił ją na debiutanckiej płycie kreatora, czyli Endless Pain, wydanej w 1985 roku."
+    },
+    {
+      "start": 3870.38,
+      "end": 3879.12,
+      "text": "Traf jednak chciał, że kreator, zwany nie bez przyczyny europejskim slayerem, nie był pierwszy, bo ten oryginalny slayer, amerykański,"
+    },
+    {
+      "start": 3880.78,
+      "end": 3891.26,
+      "text": "piosenkę zatytułowaną Tormentor miał na swojej debiutanckiej płycie, czyli Show No Mercy, wydanej dwa lata wcześniej."
+    },
+    {
+      "start": 3892.62,
+      "end": 3899,
+      "text": "A to jest zupełnie inny utwór, ale to nic, nie ma na to paragrafu."
+    },
+    {
+      "start": 3899.54,
+      "end": 3915.7,
+      "text": "Problemy jednak pojawiają się, kiedy chce się ustalić ojcostwo węgierskiego Tormentora, prawdziwej legendy madziarskiej sceny metalowej, macierzystego zespołu Atilli Cihara,"
+    },
+    {
+      "start": 3916.66,
+      "end": 3924.46,
+      "text": "czyli wokalisty norweskiej grupy Mayhem, co ta globalizacja robi z metalem."
+    },
+    {
+      "start": 3925.48,
+      "end": 3939.56,
+      "text": "Tormentor, wracamy na Węgry, powstał w 1988 roku, więc mógł się inspirować zarówno slayerem, jak i kreatorem, a być może jednym i drugim."
+    },
+    {
+      "start": 3939.56,
+      "end": 3943.44,
+      "text": "Może muzyka przyniesie jakąś odpowiedź."
+    },
+    {
+      "start": 3944.04,
+      "end": 3953.76,
+      "text": "Żeby to rozstrzygnąć, posłuchajmy zatem utworu Tormentor, a następnie Tormentor i jeszcze Tormentor."
+    },
+    {
+      "start": 3953.76,
+      "end": 3963.14,
+      "text": "A właściwie jednego z dwóch Tormentorów, które znalazły się na Anno Domini, owianym legendą debiucie Tormentora."
+    },
+    {
+      "start": 3964.14,
+      "end": 3964.7,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4530.82,
+      "end": 4536.48,
+      "text": "Skoro już padła ta nazwa, pochylmy się na chwilę nad zespołem Mayhem."
+    },
+    {
+      "start": 4537.1,
+      "end": 4544.1,
+      "text": "To, że pionierzy norweskiego black metalu pożyczyli sobie nazwę od utworu brytyjskiej grupy Venom,"
+    },
+    {
+      "start": 4544.64,
+      "end": 4549.78,
+      "text": "która termin black metal w ogóle wymyśliła, nie dziwi ani trochę."
+    },
+    {
+      "start": 4550.42,
+      "end": 4557.36,
+      "text": "Ale że akurat zainspirowali się Mayhem with Mercy, króciutką, słodziutką, akustyczną miniaturką,"
+    },
+    {
+      "start": 4557.36,
+      "end": 4560.44,
+      "text": "niezbadane są ścieżki pana."
+    },
+    {
+      "start": 4560.44,
+      "end": 4568.92,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4985.57,
+      "end": 4997.07,
+      "text": "Venom ochrzcił w ogniu i krwi kilka zespołów, zresztą kilka znakomitych, ale najcenniejszy łup to bez wątpienia szwedzkie Bathory."
+    },
+    {
+      "start": 4998.21,
+      "end": 5006.25,
+      "text": "Legendarne i samo inspirujące dla wielu kolejnych pokoleń metalowców, skąd się przecież musiało wziąć."
+    },
+    {
+      "start": 5006.73,
+      "end": 5020.85,
+      "text": "Quarton Seth, twórca Bathory, przez długie lata jedyny członek tej hordy, twierdził co prawda, że wpadł na nazwę po zwiedzeniu londyńskiego Muzeum Strachów,"
+    },
+    {
+      "start": 5021.51,
+      "end": 5032.43,
+      "text": "ale Jonas Ackerlund, który wtedy w Bathory grał na perkusji, pamięta to inaczej i uważa, że gdyby nie piosenka Countess Bathory, właśnie Venomu,"
+    },
+    {
+      "start": 5032.43,
+      "end": 5036.35,
+      "text": "ich zespół pewnie nazywałby się inaczej."
+    },
+    {
+      "start": 5036.73,
+      "end": 5044.87,
+      "text": "Swoją drogą Ackerlund to jest ten sam człowiek, który kręcił później teledyski między innymi dla Madonny i Beyons,"
+    },
+    {
+      "start": 5045.43,
+      "end": 5054.19,
+      "text": "a także film fabularny Władcy Chaosu o wspomnianym już dzisiaj zespolem Mayhem z Norwegii."
+    },
+    {
+      "start": 5054.65,
+      "end": 5058.45,
+      "text": "Wróćmy jednak do Countess Bathory."
+    },
+    {
+      "start": 5059.33,
+      "end": 5069.59,
+      "text": "Utwór pochodzi z albumu Black Metal, wydanego przez Venom w 1982 roku i jest opowieścią o Erzbet Bathory,"
+    },
+    {
+      "start": 5070.51,
+      "end": 5078.73,
+      "text": "hrabinie, która ponoć kąpała się we krwi zabitych własnoręcznie dziewcząt w swoim zamku w Transylwanii."
+    },
+    {
+      "start": 5078.73,
+      "end": 5084.95,
+      "text": "Tak to ona właśnie zainspirowała Brama Stokera do napisania Draculi."
+    },
+    {
+      "start": 5085.87,
+      "end": 5094.55,
+      "text": "Oczywiście, żeby było zabawnie, najnowsze badania sugerują, że pani Bathory bynajmniej nie była krwiopijczą wiedźmą,"
+    },
+    {
+      "start": 5095.03,
+      "end": 5098.05,
+      "text": "ale ofiarą politycznej nagonki."
+    },
+    {
+      "start": 5098.51,
+      "end": 5102.81,
+      "text": "Oczerniano ją w ten sposób, by przejąć jej majątek."
+    },
+    {
+      "start": 5103.23,
+      "end": 5104.93,
+      "text": "Pewne rzeczy się nie zmieniają."
+    },
+    {
+      "start": 5105.29,
+      "end": 5111.23,
+      "text": "Zupełnie na marginesie pani Erzbet Bathory była też krewną Stefana Bathorygo,"
+    },
+    {
+      "start": 5112.33,
+      "end": 5120.49,
+      "text": "więc jak Kronos o niej śpiewa, to trochę jakby ona z Polakach w dumnych Sarmatach śpiewał."
+    },
+    {
+      "start": 5122.23,
+      "end": 5123.23,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5687.84,
+      "end": 5699.2,
+      "text": "Szwajcar Tom Gabriel Fischer zainspirował legion metalowych muzyków, zarówno pod szyldem Hellhammer, jak i Celtic Frost."
+    },
+    {
+      "start": 5699.4,
+      "end": 5706.46,
+      "text": "Dziś czasu starczy na jeden tylko z tych przypadków, choć może nie do końca jeden."
+    },
+    {
+      "start": 5707.36,
+      "end": 5722.98,
+      "text": "Otóż na wybitnej płycie Toma Gatherion z 1985 roku, najlepszej moim zdaniem w dyskografii Celtic Frost, znajduje się utwór The Azurper, Usurpator."
+    },
+    {
+      "start": 5722.98,
+      "end": 5734.8,
+      "text": "I nie trzeba być Sherlockiem Holmsem, by wydedukować, że właśnie z powodu Celtic Frost pewna grupa z Chicago gra taką, a nie inną muzykę."
+    },
+    {
+      "start": 5735.08,
+      "end": 5740.5,
+      "text": "Chociaż Grecy z The Azurper też brzmią jakby wyskoczyli z głowy Fischerowi."
+    },
+    {
+      "start": 5740.8,
+      "end": 5744.02,
+      "text": "Dzisiaj jednak Amerykanie Amerykanów wolę."
+    },
+    {
+      "start": 6239.62,
+      "end": 6255.62,
+      "text": "Żeby nie było, wolę tych konkretnych Amerykanów od tych konkretnych Greków, uzurpatorów jednych, a nie, że w ogóle amerykańską nację od wspaniałych mieszkańców Helady."
+    },
+    {
+      "start": 6256.96,
+      "end": 6274.58,
+      "text": "Czas szybko mija przy dobrej muzyce, więc nie zmieszczę wszystkich przygotowanych na dziś par, czar par, prawda, czar par. Koniecznie jeszcze kiedyś muszę wrócić do tej zabawy. Mam nadzieję, że dla was równie ciekawe jak i dla mnie."
+    },
+    {
+      "start": 6274.58,
+      "end": 6291.68,
+      "text": "A na koniec, na koniec brytyjski Amebix. Bardzo ciekawy zespół. Zaczynali jako, uwaga, The Band With No Name, czyli zespół bez nazwy, co nam pięknie koresponduje z tematyką dzisiejszej audycji."
+    },
+    {
+      "start": 6292.3,
+      "end": 6311.26,
+      "text": "A w końcu jednak na nazwę się zdecydowali, a ich muzyka była teoretycznie punkiem, jednak innym niż wszystko, co wcześniej grano, bo bardzo ciężkim, surowym, wręcz brutalnym, więc tu akurat trudniej im było się na coś zdecydować."
+    },
+    {
+      "start": 6311.42,
+      "end": 6329.82,
+      "text": "Czasem grali szybko, to znów wolno. Uważa się Amebix za pionierów Krastpunka, ale zrobili falę o znacznie szerszym zasięgu. Ich wpływy słychać i we współczesnym black metalu i w niezupełnie współczesnym doomie."
+    },
+    {
+      "start": 6329.82,
+      "end": 6355.16,
+      "text": "Tak jest. Hałaśliwa i bezkompromisowa muzyka Amebix nie była bez wpływu na nowojorską grupę Winter, która grała doom bez całego tego europejskiego romantyzmu, bez ładnych melodii, skrzypiec śpiewającej operowym głosem dziewoi, bez religijnej pompy."
+    },
+    {
+      "start": 6355.5,
+      "end": 6371.64,
+      "text": "Winter to po prostu ciemność, pustka i zima. A nazwę wzięli od Amebix, właśnie od tytułu debiutanckiego singla Anglików z 1983 roku."
+    },
+    {
+      "start": 6372.64,
+      "end": 6380.32,
+      "text": "Żegnam Państwa w ten letni wieczór, w tę letnią noc dwiema piosenkami o zimie."
+    }
+  ],
+  "stats": {
+    "windowCount": 12,
+    "transcribedAudioSec": 979.24,
+    "segmentCount": 105,
+    "characterCount": 10270
+  },
+  "sourceId": "2025-06-18-imiona-w-muzyce-metalowej"
+}
