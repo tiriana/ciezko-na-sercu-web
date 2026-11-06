@@ -1423,7 +1423,7 @@ a {
 }
 
 .episode-list time {
-  flex: 0 0 160px;
+  flex: 0 0 200px;
   white-space: nowrap;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
