@@ -1,0 +1,1380 @@
+{
+  "version": 1,
+  "episodeId": "cbc6c91f-fe30-47b4-82ec-e440e0a449aa",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 278353155,
+  "fileMtimeMs": 1789151453640.5874,
+  "windows": [
+    {
+      "index": 0,
+      "start": 2.5,
+      "end": 255.96
+    },
+    {
+      "index": 1,
+      "start": 401.44,
+      "end": 549.72
+    },
+    {
+      "index": 2,
+      "start": 569.03,
+      "end": 596.7
+    },
+    {
+      "index": 3,
+      "start": 625.48,
+      "end": 792.16
+    },
+    {
+      "index": 4,
+      "start": 1051.75,
+      "end": 1152.35
+    },
+    {
+      "index": 5,
+      "start": 1458.66,
+      "end": 1565.5
+    },
+    {
+      "index": 6,
+      "start": 1815.81,
+      "end": 1895.68
+    },
+    {
+      "index": 7,
+      "start": 2222.69,
+      "end": 2351.48
+    },
+    {
+      "index": 8,
+      "start": 2601.86,
+      "end": 2650.72
+    },
+    {
+      "index": 9,
+      "start": 3001.54,
+      "end": 3091.87
+    },
+    {
+      "index": 10,
+      "start": 3544.9,
+      "end": 3573.18
+    },
+    {
+      "index": 11,
+      "start": 4040.74,
+      "end": 4107.58
+    },
+    {
+      "index": 12,
+      "start": 4623.84,
+      "end": 4661.6
+    },
+    {
+      "index": 13,
+      "start": 4903.3,
+      "end": 4959.87
+    },
+    {
+      "index": 14,
+      "start": 5267.49,
+      "end": 5301.6
+    },
+    {
+      "index": 15,
+      "start": 5525.7,
+      "end": 5574.2
+    },
+    {
+      "index": 16,
+      "start": 5860.74,
+      "end": 5884.7
+    },
+    {
+      "index": 17,
+      "start": 5967.46,
+      "end": 6004.73
+    },
+    {
+      "index": 18,
+      "start": 6068.61,
+      "end": 6097.47
+    },
+    {
+      "index": 19,
+      "start": 6284.71,
+      "end": 6318.65
+    },
+    {
+      "index": 20,
+      "start": 6572.45,
+      "end": 6613.05
+    }
+  ],
+  "segments": [
+    {
+      "start": 2.5,
+      "end": 5.96,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 5.96,
+      "end": 16.96,
+      "text": "Dobry wieczór Państwu. Słuchacie audycji Ciężko na sercu, którą wydaje dla Was Mariusz Owczarek, a prowadzi Jarek Szubrycht."
+    },
+    {
+      "start": 17.62,
+      "end": 27.1,
+      "text": "Wracam z długiej podróży, choć na antenie nie było mnie tylko przez tydzień, bo dzięki technologii udało mi się tę nieobecność zminimalizować."
+    },
+    {
+      "start": 27.1,
+      "end": 35.76,
+      "text": "Nie byłem na wakacjach, a pewne owoce tej podróży usłyszycie w audycji już za tydzień i później też."
+    },
+    {
+      "start": 36.28,
+      "end": 39.72,
+      "text": "Nie dzisiaj jednak, bo dziś tylko Polska."
+    },
+    {
+      "start": 40.5,
+      "end": 46.08,
+      "text": "Już jakiś czas temu odgrażałem się, że będę więcej czasu i miejsca poświęcał rodzimym artystom,"
+    },
+    {
+      "start": 46.08,
+      "end": 55.88,
+      "text": "a w audycji, którą przygotowywałem przynajmniej częściowo w Święto Niepodległości nie wypada, żeby było inaczej."
+    },
+    {
+      "start": 56.5,
+      "end": 65.28,
+      "text": "Polscy fani metalu patrzą na niego z dumą i optymizmem, porównywalnym z tym, który spotyka się u fanów piłki nożnej."
+    },
+    {
+      "start": 66.06,
+      "end": 73.54,
+      "text": "Metalowcy co prawda mają do tego więcej podstaw, ale nie oszukujmy się, globalną potęgą nie jesteśmy."
+    },
+    {
+      "start": 74.16,
+      "end": 80.22,
+      "text": "Lokalną owszem, regionalną jak najbardziej, globalną jednak nie."
+    },
+    {
+      "start": 80.22,
+      "end": 85.5,
+      "text": "I nie dlatego, że brakuje w Polsce talentu, wręcz przeciwnie, tego mamy aż nadto."
+    },
+    {
+      "start": 86.06,
+      "end": 92,
+      "text": "Niestety z przyczyn geopolitycznych, kulturowych, organizacyjnych i kilku innych ekonomicznych,"
+    },
+    {
+      "start": 92.7,
+      "end": 101.08,
+      "text": "chociażby nasza droga ku wielkim scenom wciąż jest jeszcze dłuższa, choć skraca się z roku na rok,"
+    },
+    {
+      "start": 101.6,
+      "end": 110.18,
+      "text": "niż droga nie tylko Amerykanów i Anglików, a ci drudzy swoją drogą ostatnio Brexitem trochę ją sobie znowu wydłużyli,"
+    },
+    {
+      "start": 110.74,
+      "end": 116.76,
+      "text": "ale też mieszkańców Skandynawii i właściwie wszystkich krajów tak zwanej Europy Zachodniej,"
+    },
+    {
+      "start": 117.56,
+      "end": 124.02,
+      "text": "przyjmując podział kontynentu obowiązujący przed upadkiem muru berlińskiego."
+    },
+    {
+      "start": 125.02,
+      "end": 130.64,
+      "text": "Mur berliński, kiedy to było, zakrzyknie przedstawiciel młodzieży młodszej,"
+    },
+    {
+      "start": 131.2,
+      "end": 139.52,
+      "text": "ale prawda jest taka, że wszystko u nas się zaczęło, kiedy jeszcze nasza część Europy była sowieckim protektoratem."
+    },
+    {
+      "start": 140.2,
+      "end": 147.02,
+      "text": "I opowieść o polskim metalu można już snuć od testu, od zespołu z Wojciechem Gąsowskim przy mikrofonie,"
+    },
+    {
+      "start": 147.1,
+      "end": 153.04,
+      "text": "może nawet od breakoutu, albo od budki suflera, która na początkowym etapie działalności"
+    },
+    {
+      "start": 153.04,
+      "end": 156.54,
+      "text": "zawdzięczała niemało choćby Deep Purple."
+    },
+    {
+      "start": 157.48,
+      "end": 160.22,
+      "text": "Warto też wymienić zjednoczone siły natury mech,"
+    },
+    {
+      "start": 160.22,
+      "end": 169.96,
+      "text": "tym bardziej, że Robert Millord śpiewanie we własnym zespole dzielił też z działalnością usługową"
+    },
+    {
+      "start": 169.96,
+      "end": 175.42,
+      "text": "i napisał chociażby teksty na kultowy, debiutancki singiel Kata."
+    },
+    {
+      "start": 176.1,
+      "end": 180.72,
+      "text": "To wszystko lata 70., ale prawdziwy przełom przyszedł w latach 80."
+    },
+    {
+      "start": 181.18,
+      "end": 184.08,
+      "text": "wraz z nadejściem TSA."
+    },
+    {
+      "start": 184.42,
+      "end": 189.58,
+      "text": "Oni pierwsi identyfikowali się bowiem jako zespół heavy metalowy,"
+    },
+    {
+      "start": 190.08,
+      "end": 197.32,
+      "text": "więc szybko zgromadzili wokół siebie rozrastającą się subkulturową armię."
+    },
+    {
+      "start": 198.02,
+      "end": 201.66,
+      "text": "Armia ta potrzebowała oczywiście swoich nie tylko szeregowców,"
+    },
+    {
+      "start": 201.78,
+      "end": 205.32,
+      "text": "ale też dowódców, bohaterów i generałów."
+    },
+    {
+      "start": 206.02,
+      "end": 208.36,
+      "text": "Dzisiaj jednak nie będzie ani słowa o Wejderze,"
+    },
+    {
+      "start": 208.36,
+      "end": 214.74,
+      "text": "ani nawet o Kacie, czyli najważniejszym zespole formacyjnych lat polskiego metalu."
+    },
+    {
+      "start": 215.3,
+      "end": 218.82,
+      "text": "Nie będzie też o Turbo, które starało się za bardzo,"
+    },
+    {
+      "start": 219,
+      "end": 226.02,
+      "text": "ani o teście fobii Kreonie, który padł ofiarą polskiej mutacji Satanic Panic,"
+    },
+    {
+      "start": 226.02,
+      "end": 233.02,
+      "text": "a którego wokalista niedawno zachwycał swoich rówieśników w programie Voice Senior."
+    },
+    {
+      "start": 234.52,
+      "end": 239.8,
+      "text": "Wspominając dawne czasy, skupimy się na ekstremalnym undergroundzie."
+    },
+    {
+      "start": 240.3,
+      "end": 244.2,
+      "text": "Tym, który zrodził Vadera, ale też Imperatora,"
+    },
+    {
+      "start": 244.26,
+      "end": 248.34,
+      "text": "Slashing Death, Thrasher Death i wiele innych ówczesnych potęg,"
+    },
+    {
+      "start": 248.68,
+      "end": 251,
+      "text": "choćby takie Merciless Death."
+    },
+    {
+      "start": 255.08,
+      "end": 255.96,
+      "text": "Muzyka"
+    },
+    {
+      "start": 402.4,
+      "end": 409.46,
+      "text": "Wysłuchaliśmy utworu Ritual of the Black Host z kasety Demo Eternal Condemnation."
+    },
+    {
+      "start": 410.14,
+      "end": 415.92,
+      "text": "To kultowe demo przedstawicieli kościoła Slayera z diecezji szczecińskiej."
+    },
+    {
+      "start": 416.46,
+      "end": 420.88,
+      "text": "Grupa nazywa się Mercyless Death, właściwie nazywała się Mercyless Death"
+    },
+    {
+      "start": 420.88,
+      "end": 428.12,
+      "text": "i w drugiej połowie lat 80. była jednym z najważniejszych tworów naszego podziemia."
+    },
+    {
+      "start": 428.12,
+      "end": 432.38,
+      "text": "Robili furorę na festiwalach, od straszydła po jarocin."
+    },
+    {
+      "start": 433.08,
+      "end": 438.74,
+      "text": "Z metalmanii ich podobno skreślono, bo mieli zbyt satanistyczny wizerunek."
+    },
+    {
+      "start": 439.44,
+      "end": 447.6,
+      "text": "Do tego doszły problemy muzyków z obowiązującą służbą wojskową,"
+    },
+    {
+      "start": 447.7,
+      "end": 452,
+      "text": "która wtedy zniszczyła niejedną dobrze zapowiadającą się karierę."
+    },
+    {
+      "start": 452.34,
+      "end": 458.8,
+      "text": "Do tego doszła emigracja, któregoś z muzyków itp. itd. zwyczajne życiowe problemy."
+    },
+    {
+      "start": 459.22,
+      "end": 464.72,
+      "text": "W końcu Mercyless Death się ogarnęli, zaczęli nagrywać i wydawać płyty,"
+    },
+    {
+      "start": 465.2,
+      "end": 469.38,
+      "text": "ale swój moment zdążyli przegapić i choć to dobre materiały,"
+    },
+    {
+      "start": 469.86,
+      "end": 473.88,
+      "text": "nie dało się już nadrobić straconego czasu."
+    },
+    {
+      "start": 474.64,
+      "end": 478.82,
+      "text": "Zmarnowaną okazją był też krótki żywot bydgoskiej grupy Scarecrow,"
+    },
+    {
+      "start": 479.3,
+      "end": 482.28,
+      "text": "jednej z moich ulubionych z tamtego czasu."
+    },
+    {
+      "start": 482.9,
+      "end": 489.12,
+      "text": "Swoim zakapturzonym wizerunkiem i przede wszystkim muzyką oraz przesłaniem"
+    },
+    {
+      "start": 489.12,
+      "end": 492.08,
+      "text": "wyprzedzili swój czas, wyprzedzili swoją epokę,"
+    },
+    {
+      "start": 492.64,
+      "end": 499.2,
+      "text": "bo zapowiedzieli to wszystko, co wydarzyło się i wciąż się wydarza w Black Metalu,"
+    },
+    {
+      "start": 499.68,
+      "end": 504.44,
+      "text": "a więc dobrych kilka, kilkanaście, nawet kilkadziesiąt lat później."
+    },
+    {
+      "start": 505.14,
+      "end": 507.96,
+      "text": "Demos Scarecrow, Deo Optimo Maximo,"
+    },
+    {
+      "start": 508.96,
+      "end": 511.74,
+      "text": "nagranie z 1989 roku,"
+    },
+    {
+      "start": 512.54,
+      "end": 515.72,
+      "text": "pozostaje jednym z moich ulubionych wykwitów"
+    },
+    {
+      "start": 515.72,
+      "end": 518.32,
+      "text": "polskiego podziemia lat osiemdziesiątych."
+    },
+    {
+      "start": 518.84,
+      "end": 523.06,
+      "text": "To materiał krótki, ale piekielnie intensywny."
+    },
+    {
+      "start": 523.52,
+      "end": 526.74,
+      "text": "Oto jego próbka, życie, po nim śmierć."
+    },
+    {
+      "start": 536.74,
+      "end": 538.74,
+      "text": "Zmimość i nam szkilem."
+    },
+    {
+      "start": 541.9,
+      "end": 543.62,
+      "text": "Radość z moich ulubionych rozwań."
+    },
+    {
+      "start": 546.62,
+      "end": 548.2,
+      "text": "Zmimość dla drwoga."
+    },
+    {
+      "start": 548.2,
+      "end": 549.72,
+      "text": "Zmimość i nam szkilem."
+    },
+    {
+      "start": 569.03,
+      "end": 587.45,
+      "text": "Zwieżek, pysy, tłońce, ciężyt, no, życie, odnieść, życie, odnieść, życie, odnieść."
+    },
+    {
+      "start": 589.59,
+      "end": 594.93,
+      "text": "Jakie jest to życie? Drugie buce, krótkie, wolę się zdekli, zabawa!"
+    },
+    {
+      "start": 626.32,
+      "end": 633.04,
+      "text": "Dzisiaj wciężko na sercu słuchamy tylko rzeczy z Polski i w dużej mierze po polsku."
+    },
+    {
+      "start": 633.6,
+      "end": 637.9,
+      "text": "Póki co grzebiemy w archiwach i mam te nagrania wciąż na kasetach,"
+    },
+    {
+      "start": 638.44,
+      "end": 643.42,
+      "text": "ale prawdę mówiąc nie wykopywałem ich z pudeł, nie ściągałem ze strychu,"
+    },
+    {
+      "start": 643.52,
+      "end": 650.74,
+      "text": "nie sprawdzałem czy wciąż grają, bo mogę posługiwać się wersją znacznie wygodniejszą,"
+    },
+    {
+      "start": 650.74,
+      "end": 656.58,
+      "text": "a więc fantastycznymi reedycjami wytwórnicy Thrashing Madness Productions."
+    },
+    {
+      "start": 657.16,
+      "end": 660.68,
+      "text": "Leszek Wojnicz Sianorzęcki, który stoi za tą oficyną,"
+    },
+    {
+      "start": 661.24,
+      "end": 665.94,
+      "text": "znany jest też jako wydawca magazynu Old School Metal Maniac,"
+    },
+    {
+      "start": 666.42,
+      "end": 672.24,
+      "text": "ukazującego się po polsku i po angielsku, był też wokalistą grupy Holy Death"
+    },
+    {
+      "start": 672.24,
+      "end": 679.84,
+      "text": "i wykonuje niesamowitą pracę służącą udokumentowaniu historii polskiego metalu."
+    },
+    {
+      "start": 679.84,
+      "end": 683.78,
+      "text": "Jeśli to się nie skończy wysokim odznaczeniem państwowym,"
+    },
+    {
+      "start": 684.2,
+      "end": 688.38,
+      "text": "no to ja nie wiem, za co oni te ordery dają."
+    },
+    {
+      "start": 688.88,
+      "end": 694.32,
+      "text": "Na pewno do płyt z nalepką Thrashing Madness będę jeszcze w audycji wracał,"
+    },
+    {
+      "start": 694.66,
+      "end": 699.18,
+      "text": "a i pewnie z Leszkiem dobrze będzie tu kiedyś pogawędzić."
+    },
+    {
+      "start": 699.78,
+      "end": 704.16,
+      "text": "Póki co dzisiaj jeszcze dwa tytuły z tego katalogu."
+    },
+    {
+      "start": 704.5,
+      "end": 711.02,
+      "text": "Zaczynamy od piskiej grupy DDT, która pojawiła się na początku lat dziewięćdziesiątych"
+    },
+    {
+      "start": 711.02,
+      "end": 716.96,
+      "text": "i zwracała na siebie uwagę tym, że od razu wypisała się z wyścigu"
+    },
+    {
+      "start": 716.96,
+      "end": 720.38,
+      "text": "kto zagra szybciej i bardziej brutalnie."
+    },
+    {
+      "start": 721.04,
+      "end": 727,
+      "text": "DDT stawiali przede wszystkim na atmosferę, na ciężar muzyki,"
+    },
+    {
+      "start": 727.46,
+      "end": 732.94,
+      "text": "stąd od razu pojawiały się porównania do Paradise Lost czy do Celtic Frost"
+    },
+    {
+      "start": 732.94,
+      "end": 738.66,
+      "text": "albo postrzeganie DDT jako konkurencji dla łódzkiego pandemonium,"
+    },
+    {
+      "start": 739.08,
+      "end": 745.04,
+      "text": "bo oni w tamtym czasie byli u nas w tej estetyce bezkonkurencyjni."
+    },
+    {
+      "start": 745.74,
+      "end": 749.54,
+      "text": "Żeby jeszcze dodać sobie kilka punktów do oryginalności,"
+    },
+    {
+      "start": 749.64,
+      "end": 753.58,
+      "text": "DDT wymyślili koncepcję białego zła,"
+    },
+    {
+      "start": 754.42,
+      "end": 758.02,
+      "text": "ale nie powiem państwu na czym to miałoby polegać,"
+    },
+    {
+      "start": 758.52,
+      "end": 761.12,
+      "text": "bo była to koncepcja dosyć mętna."
+    },
+    {
+      "start": 762.12,
+      "end": 765.84,
+      "text": "Dość powiedzieć, że w jej ramach muzycy ubierali się na scenie na biało,"
+    },
+    {
+      "start": 765.92,
+      "end": 771.22,
+      "text": "a to akurat było w tamtym czasie i na tej scenie ewenementem."
+    },
+    {
+      "start": 771.8,
+      "end": 774.14,
+      "text": "Niestety po dwóch kasetach demo,"
+    },
+    {
+      "start": 774.68,
+      "end": 778.24,
+      "text": "czyli The Throne, Death i Fineness of Brutality,"
+    },
+    {
+      "start": 778.84,
+      "end": 782.16,
+      "text": "żywot DDT dobiegł końca"
+    },
+    {
+      "start": 782.16,
+      "end": 786.02,
+      "text": "i możemy o nich rozmawiać dzisiaj tylko nad grobem."
+    },
+    {
+      "start": 786.68,
+      "end": 789.44,
+      "text": "Conversation behind the grave."
+    },
+    {
+      "start": 1051.97,
+      "end": 1056.37,
+      "text": "Jednym z moich ulubionych zespołów tamtych czasów był Hector z Gdyni."
+    },
+    {
+      "start": 1057.37,
+      "end": 1062.81,
+      "text": "Powstał w 1986 roku, a trzy lata później nagrał materiał,"
+    },
+    {
+      "start": 1063.47,
+      "end": 1068.01,
+      "text": "którego fragmentu za chwilę posłuchamy, czyli The Inner Dementia."
+    },
+    {
+      "start": 1068.59,
+      "end": 1074.03,
+      "text": "Coś więcej niż demo, to płyta na kasecie, tak to chyba trzeba nazwać."
+    },
+    {
+      "start": 1074.17,
+      "end": 1078.63,
+      "text": "I powszechne to było, powszechne to był w tamtym czasie format,"
+    },
+    {
+      "start": 1078.63,
+      "end": 1085.33,
+      "text": "kiedy winyle wciąż były reglamentowane, wydawane tylko przez państwowe wytwórnie"
+    },
+    {
+      "start": 1085.33,
+      "end": 1090.31,
+      "text": "i zbyt drogie. O kompaktach już co prawda słyszeliśmy i pojawiały się"
+    },
+    {
+      "start": 1090.31,
+      "end": 1093.57,
+      "text": "chociażby w Pewexach, ale drogie były jeszcze bardziej."
+    },
+    {
+      "start": 1094.21,
+      "end": 1098.81,
+      "text": "Natomiast kasety były powszechnego użytku i można było materiały tak wydawać"
+    },
+    {
+      "start": 1098.81,
+      "end": 1104.53,
+      "text": "i dosyć łatwo dystrybuować. Z jednej strony Hector był dzieckiem swoich czasów,"
+    },
+    {
+      "start": 1104.53,
+      "end": 1110.67,
+      "text": "a więc thrashu na najwyższych obrotach z wpływami hardcora i grindu,"
+    },
+    {
+      "start": 1111.17,
+      "end": 1116.97,
+      "text": "a z drugiej strony słychać było w tej muzyce choćby wpływ Kanadyjczyków z Wojwot,"
+    },
+    {
+      "start": 1117.35,
+      "end": 1123.67,
+      "text": "czy wręcz trójmiejskiej sceny alternatywnej, która była stolicą polskiej psychodelii."
+    },
+    {
+      "start": 1124.35,
+      "end": 1128.47,
+      "text": "Bardzo żałuję, że Hector, który tak wspaniale się zapowiadał,"
+    },
+    {
+      "start": 1128.51,
+      "end": 1134.25,
+      "text": "nie przetrwał długo. Pod nieco zmodyfikowanym szyldem Hectcore"
+    },
+    {
+      "start": 1134.25,
+      "end": 1139.73,
+      "text": "wydali jeszcze jeden album, Imagine Theatre, bardzo udany zresztą,"
+    },
+    {
+      "start": 1140.35,
+      "end": 1148.09,
+      "text": "ale 1993 rok nie był to w Polsce dobry czas i nie było to dobre miejsce"
+    },
+    {
+      "start": 1148.09,
+      "end": 1150.65,
+      "text": "na poszukujący thrash."
+    },
+    {
+      "start": 1151.35,
+      "end": 1152.35,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1459.6,
+      "end": 1471.36,
+      "text": "Słuchacie audycji ciężko na sercu w trójce, za nami miłe chwile spędzone w towarzystwie undergroundowych klasyków, a przecież ledwie musnąłem temat."
+    },
+    {
+      "start": 1471.96,
+      "end": 1483.54,
+      "text": "Nieprzypadkowo jednak zakończyłem hektorem właśnie, bo teraz chciałbym jakiś kwadrans, może dwa, poświęcić przedstawicielom progresywnej myśli w polskim metalu"
+    },
+    {
+      "start": 1483.54,
+      "end": 1496.12,
+      "text": "i nie mylić proszę z metalem progresywnym jako gatunkiem. Chodzi mi raczej o tych, co szukają dziury w całym, co odkrywają nowe lądy, co łączą skrajności poza konwencjami."
+    },
+    {
+      "start": 1497.24,
+      "end": 1508.04,
+      "text": "Takim kibicuje nie tylko kiedy znajdują, ale również kiedy błądzą, kiedy schodzą na manowce, kiedy psują, potykają się o własne nogi i sabotują własne kariery."
+    },
+    {
+      "start": 1508.04,
+      "end": 1522.74,
+      "text": "Bo bez tych eksperymentów nie byłoby rozwoju, tak jak nie byłoby rozwoju bez tych eksperymentów, które szalonym naukowcom wybuchają prosto w nosy."
+    },
+    {
+      "start": 1523.4,
+      "end": 1530.98,
+      "text": "Dzisiaj wybrałem jednak kilka utworów, które należy zaliczyć do eksperymentów zdecydowanie udanych."
+    },
+    {
+      "start": 1530.98,
+      "end": 1541.68,
+      "text": "Na pewno od strony artystycznej. Choćby taki Flash World z Krakowa, a więc zderzenie post-hardcora z post-black metalem."
+    },
+    {
+      "start": 1542.46,
+      "end": 1548.24,
+      "text": "Posłuchamy fragmentu płyty The Essence Has Changed But The Details Remained."
+    },
+    {
+      "start": 1548.9,
+      "end": 1552.48,
+      "text": "Materiał ten ma już pięć lat i nie zrobił z nich gwiazd."
+    },
+    {
+      "start": 1552.82,
+      "end": 1557.86,
+      "text": "Świat nie jest sprawiedliwy, ale to fantastyczny album."
+    },
+    {
+      "start": 1558.38,
+      "end": 1562.72,
+      "text": "Okładka też znakomita. Sprawdźcie to sobie w internetach."
+    },
+    {
+      "start": 1816.77,
+      "end": 1829.11,
+      "text": "Piosenka, której wysłuchaliśmy nosi tytuł Koszmar Ontologa, bo w odróżnieniu od lat 80. i nawet 90. teraz metal grają wykształciuchy."
+    },
+    {
+      "start": 1829.75,
+      "end": 1839.19,
+      "text": "Może dlatego taki Flash World nie robi szerszej kariery, bo jest zbyt hermetyczny, inteligencki i zawiły."
+    },
+    {
+      "start": 1839.19,
+      "end": 1851.83,
+      "text": "I jeśli tak, to też tłumaczyłoby, dlaczego Keta nigdy nie doczekała się Legionu Fanów, choć to również znakomity, oryginalny zespół."
+    },
+    {
+      "start": 1852.39,
+      "end": 1862.29,
+      "text": "A po latach będzie płakanie, będzie przepłacanie za płyty na aukcjach internetowych i namawianie muzyków do reaktywacji."
+    },
+    {
+      "start": 1862.89,
+      "end": 1869.85,
+      "text": "Keta pojawiła się jakieś 20 lat temu i tak pojawia się i znika od tamtego czasu."
+    },
+    {
+      "start": 1869.97,
+      "end": 1884.27,
+      "text": "Najpierw w Leżańsku i Rzeszowie, potem w Krakowie, a teraz lider grupy, czyli Mr. Trip, mieszka w Nowym Jorku, więc kto wie, do czego to doprowadzi."
+    },
+    {
+      "start": 1884.27,
+      "end": 1893.25,
+      "text": "Słuchamy utworu No Heart z wydanego w 2018 roku mini albumu Magna Minus."
+    },
+    {
+      "start": 2222.69,
+      "end": 2232.51,
+      "text": "Z tych wszystkich dziwnometalowych zespołów, jednym z najdziwniejszych i zarazem najlepszych jest bez wątpienia Atrocious Filth."
+    },
+    {
+      "start": 2233.17,
+      "end": 2246.09,
+      "text": "Powstali w Olsztynie na początku tego stulecia, a w skład zespołu wchodził nieodżałowany docent, czyli Krzysztof Raczkowski, perkusista Wejdera."
+    },
+    {
+      "start": 2246.09,
+      "end": 2259.23,
+      "text": "I w Wejderze właśnie bezlitośnie mucił blasty, natomiast w Atrocious Filth poszerzał granice metalu i swoich osobistych umiejętności."
+    },
+    {
+      "start": 2260.19,
+      "end": 2265.87,
+      "text": "Poszerzał obrzmienia industrialne, postbankowe i inne takie."
+    },
+    {
+      "start": 2266.45,
+      "end": 2286.17,
+      "text": "Docenta już niestety dawno z nami nie ma, ale gitarzysta i lider Atrocious Filth, czyli Andrzej Choromański jest człowiekiem niestrudzonym, a zatem grupa nie tylko istnieje, ale przeżywa najlepszy moment w swojej karierze."
+    },
+    {
+      "start": 2286.17,
+      "end": 2289.79,
+      "text": "I znowu najlepszy na pewno artystycznie."
+    },
+    {
+      "start": 2290.29,
+      "end": 2298.45,
+      "text": "Wydana w styczniu 2021 roku płyta o VV, nie wiem jak to przeczytać."
+    },
+    {
+      "start": 2299.21,
+      "end": 2306.15,
+      "text": "To materiał wybitny, nie tylko jak na standardy metalowe, ale w kategorii open."
+    },
+    {
+      "start": 2306.77,
+      "end": 2322.67,
+      "text": "Muzycy zespołu to już nie młodzieniaszki, mają inne zajęcia, inne życie, nie marzą o wielkiej karierze, nie cisną, więc nie widzimy Atrocious Filth na plakatach światowych festiwali."
+    },
+    {
+      "start": 2322.67,
+      "end": 2328.49,
+      "text": "W sumie trochę szkoda, bo ta ich muzyka to naprawdę świat."
+    },
+    {
+      "start": 2329.15,
+      "end": 2344.35,
+      "text": "To metal tak wizjonerski, tak doskonale brzmiący, że mamy do czynienia z pułapem osiągalnym właściwie dla pojedynczych zespołów z całego globu."
+    },
+    {
+      "start": 2344.35,
+      "end": 2349.85,
+      "text": "Ale co ja tu będę gadał, skoro przemówić może muzyka."
+    },
+    {
+      "start": 2601.86,
+      "end": 2612.04,
+      "text": "To był Atrocious Filth i mam nadzieję, że nie znudzi im się, że będą jeszcze nasraczyli kolejnymi materiałami."
+    },
+    {
+      "start": 2612.04,
+      "end": 2628.22,
+      "text": "A teraz czas na entropię. Zespół z Oleśnicy i ich metal wymyślony zdecydowanie w XXI wieku, bo z jednej strony jest to dziedzictwo black metalu, a z drugiej postmetalowy trans."
+    },
+    {
+      "start": 2628.22,
+      "end": 2644.14,
+      "text": "Z płyty Ufonaut wybrałem dla Państwa utwór Samsara. Samsara to nieustanne wędrowanie, to buddyjska koncepcja oznaczająca kołowrót narodzin i śmierci."
+    },
+    {
+      "start": 2645.1,
+      "end": 2649.14,
+      "text": "I to naprawdę w tej piosence Entropii słychać."
+    },
+    {
+      "start": 2649.14,
+      "end": 2650.72,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3002.18,
+      "end": 3012.2,
+      "text": "Gdyby to była audycja o sukcesach polskiego metalu w kraju i za granicą, nie obeszłoby się bez prezentacji nagrań mgły."
+    },
+    {
+      "start": 3012.92,
+      "end": 3018.46,
+      "text": "Nie dalej jak dwa tygodnie temu na festiwalu w jednym z amerykańskich rezerwatów,"
+    },
+    {
+      "start": 3018.94,
+      "end": 3022.52,
+      "text": "przez rdzennych Amerykanów i zarazem metalowców oczywiście,"
+    },
+    {
+      "start": 3023.12,
+      "end": 3027.96,
+      "text": "pytany byłem o to, jak wymawiać nazwę tej krakowskiej grupy,"
+    },
+    {
+      "start": 3027.96,
+      "end": 3033.3,
+      "text": "bo spotkałem fanów, którzy chcieli być pewni, że robią to dobrze"
+    },
+    {
+      "start": 3033.3,
+      "end": 3038.66,
+      "text": "i tę czynność właśnie, czyli naukę wymawiania nazwy mgła"
+    },
+    {
+      "start": 3038.66,
+      "end": 3043.94,
+      "text": "już wcześniej wykonywałem w różnych zakątkach Europy,"
+    },
+    {
+      "start": 3044,
+      "end": 3049,
+      "text": "co chyba najlepiej świadczy o tym, że zespół jest bardzo popularny."
+    },
+    {
+      "start": 3049.84,
+      "end": 3052.66,
+      "text": "Ale to nie jest audycja o tych popularnych,"
+    },
+    {
+      "start": 3052.66,
+      "end": 3057.46,
+      "text": "to audycja o grupach, które są wielkie duchem, wielkie muzyką,"
+    },
+    {
+      "start": 3057.96,
+      "end": 3060,
+      "text": "niekoniecznie zasięgami."
+    },
+    {
+      "start": 3060.56,
+      "end": 3067.04,
+      "text": "Takie na przykład Kriegs Machine, czyli personel, ten sam co we mgle,"
+    },
+    {
+      "start": 3067.58,
+      "end": 3071.52,
+      "text": "ale muzyka zupełnie inna, bardziej zagmatwana, nie tak przystępna,"
+    },
+    {
+      "start": 3072.1,
+      "end": 3075.24,
+      "text": "a więc i rozpoznawalność znacznie mniejsza,"
+    },
+    {
+      "start": 3075.74,
+      "end": 3079.52,
+      "text": "sukcesów spektakularnych nie odnotowano."
+    },
+    {
+      "start": 3079.52,
+      "end": 3083.28,
+      "text": "A szkoda, bo to muzyka wspaniała."
+    },
+    {
+      "start": 3083.84,
+      "end": 3090,
+      "text": "Weźmy choćby płytę Enemy of Man sprzed dokładnie dekady."
+    },
+    {
+      "start": 3544.9,
+      "end": 3546.78,
+      "text": "Od Kriegs Machine"
+    },
+    {
+      "start": 3546.78,
+      "end": 3549.12,
+      "text": "blisko i geograficznie"
+    },
+    {
+      "start": 3549.12,
+      "end": 3550.12,
+      "text": "i artystycznie"
+    },
+    {
+      "start": 3550.12,
+      "end": 3552.26,
+      "text": "do morda stigmata."
+    },
+    {
+      "start": 3553,
+      "end": 3554.86,
+      "text": "Zespół z bochni od dwóch"
+    },
+    {
+      "start": 3554.86,
+      "end": 3556.5,
+      "text": "dekad mieszający w kotle"
+    },
+    {
+      "start": 3556.5,
+      "end": 3559.1,
+      "text": "mętny wywar z ekstremalnego"
+    },
+    {
+      "start": 3559.1,
+      "end": 3560.56,
+      "text": "metalu, zupełnie"
+    },
+    {
+      "start": 3560.56,
+      "end": 3562.46,
+      "text": "niemetalowej awangardy"
+    },
+    {
+      "start": 3562.46,
+      "end": 3565.1,
+      "text": "i filozoficznych tekstów."
+    },
+    {
+      "start": 3565.84,
+      "end": 3567.1,
+      "text": "Słuchamy utworu"
+    },
+    {
+      "start": 3567.1,
+      "end": 3568.3,
+      "text": "Prefatio Pro"
+    },
+    {
+      "start": 3568.3,
+      "end": 3570.68,
+      "text": "Defunctis z płyty"
+    },
+    {
+      "start": 3570.68,
+      "end": 3571.56,
+      "text": "Anssia."
+    },
+    {
+      "start": 3571.56,
+      "end": 3573.18,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4040.74,
+      "end": 4050.34,
+      "text": "W ostatnich dniach ubiegłego roku wyszła płyta Korosta, pełnowymiarowy debiut szczecińskiej grupy Hekatomb."
+    },
+    {
+      "start": 4051.02,
+      "end": 4057.12,
+      "text": "Na pierwszy rzut oka i ucha wydawać by się mogło, że to wariacja na temat Batuszki,"
+    },
+    {
+      "start": 4057.74,
+      "end": 4065.7,
+      "text": "ale tak naprawdę muzyka jest inna i koncept tekstowy absolutnie fascynujący i oryginalny,"
+    },
+    {
+      "start": 4065.7,
+      "end": 4082.74,
+      "text": "bo to opowieść o zapomnianej, choć w jakiejś formie do dziś istniejącej sekcie muraszkowców działającej na Polesiu i Wołyniu w latach 30. XX wieku,"
+    },
+    {
+      "start": 4082.82,
+      "end": 4090.08,
+      "text": "wtedy odnoszącej największe sukcesy, jeżeli działalność sekt mierzy się w sukcesach,"
+    },
+    {
+      "start": 4090.08,
+      "end": 4094.28,
+      "text": "tak jak przedsięwzięć biznesowych albo zespołów muzycznych."
+    },
+    {
+      "start": 4095.02,
+      "end": 4098.68,
+      "text": "Kto nie zaradził się nigdy świeżbem w imię Boga,"
+    },
+    {
+      "start": 4099.24,
+      "end": 4102.64,
+      "text": "kto nie skuwał łańcuchami diabła w wiejskiej stodole,"
+    },
+    {
+      "start": 4103.32,
+      "end": 4104.82,
+      "text": "ten nie zrozumie."
+    },
+    {
+      "start": 4105.52,
+      "end": 4106.12,
+      "text": "Hekatomb."
+    },
+    {
+      "start": 4106.12,
+      "end": 4107.58,
+      "text": "DZIENNIKARZ"
+    },
+    {
+      "start": 4624.2,
+      "end": 4630.84,
+      "text": "Rodzimi metalowcy pewnie mają za złe zespołowi Wilki, że zają taką fajną nazwę,"
+    },
+    {
+      "start": 4631.36,
+      "end": 4638.18,
+      "text": "ale jest Wilczyca, duet z Warszawy, bardzo pracowity i całkiem intrygujący."
+    },
+    {
+      "start": 4638.86,
+      "end": 4644.38,
+      "text": "Wykonują black metal, z jednej strony pozostający w zgodzie z prawidłami gatunku,"
+    },
+    {
+      "start": 4644.5,
+      "end": 4649.94,
+      "text": "z drugiej ozdabiany tu i ówdzie własnymi, oryginalnymi pomysłami."
+    },
+    {
+      "start": 4649.94,
+      "end": 4659.18,
+      "text": "Chętnie wracam do ubiegłorocznej płyty Wilczycy zatytułowanej Magia, która brzmi tak właśnie."
+    },
+    {
+      "start": 4659.18,
+      "end": 4661.6,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4903.3,
+      "end": 4911.56,
+      "text": "Z black metalu wychodzi, ale rozłazi się we wszystkie świata strony projekt Narenwind."
+    },
+    {
+      "start": 4912.24,
+      "end": 4916.62,
+      "text": "Jego połowa to niejaki evil, dbający o warstwę muzyczną."
+    },
+    {
+      "start": 4917.2,
+      "end": 4922.68,
+      "text": "Człowiek znany z radomskiej grupy Sauron, od wielu lat mieszkający w Norwegii."
+    },
+    {
+      "start": 4922.68,
+      "end": 4930.76,
+      "text": "Kto tam się wybiera na festiwal Inferno, na pewno tego dżentelmena spotka."
+    },
+    {
+      "start": 4931.48,
+      "end": 4940.76,
+      "text": "Druga połowa Narenwind to wokalista Klimmorg, człowiek z olsztyńskiej grupy Non Opus Dei."
+    },
+    {
+      "start": 4941.64,
+      "end": 4951.12,
+      "text": "I ciekawa jest ta ich wspólna muzyka, inna dziwna, czego dowodem choćby album zatytułowany jest"
+    },
+    {
+      "start": 4951.12,
+      "end": 4957.82,
+      "text": "Dziewięć kluczy do Królestwa Cieni, wydawnictwo sprzed trzech lat."
+    },
+    {
+      "start": 5267.49,
+      "end": 5290.93,
+      "text": "Dziwnym projektem jest też żorski Ifryt, przy czym Ifryt to nazwa Żory, to miejsce pochodzenia, a więc solowa działalność niejakiego Kuny, człowieka młodego, więc pełnego twórczej energii, a przy tym najwyraźniej zainteresowanego różnymi obliczami nie tylko ciężkiego grania."
+    },
+    {
+      "start": 5290.93,
+      "end": 5299.93,
+      "text": "Posłuchajmy fragmentu debiutanckiej epki Ifrytu, czyli płuc wydanych w ubiegłym roku."
+    },
+    {
+      "start": 5526.26,
+      "end": 5533.3,
+      "text": "Skoro już o oryginalnych projektach solowych mowa, warto przypomnieć sobie o Egoist."
+    },
+    {
+      "start": 5533.96,
+      "end": 5542.46,
+      "text": "Pod tym szyldem dwie płyty nagrał Stanisław Wołonciej z Bielska Białej, muzyk również grupy Newbreed."
+    },
+    {
+      "start": 5543.06,
+      "end": 5548.4,
+      "text": "Co prawda Stanisław milczy od dobrych kilku lat, ale ponoć niedefinitywnie."
+    },
+    {
+      "start": 5549.28,
+      "end": 5561.16,
+      "text": "Fani metalu progresywnego, ale zagranego z przytupem i, że się tak wyrażę, z pazurem, powinni Egoista znać i lubić."
+    },
+    {
+      "start": 5562.4,
+      "end": 5572.28,
+      "text": "Oto jak ta jednoosobowa grupa brzmi na płycie Ultra Selfish Revolution sprzed już 15 lat."
+    },
+    {
+      "start": 5572.28,
+      "end": 5574.2,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5860.74,
+      "end": 5871.46,
+      "text": "Słuchacie Państwo, ciężko na sercu i ostatni segment dzisiejszego spotkania z polskimi ciężarami poświęcimy na brutali."
+    },
+    {
+      "start": 5871.46,
+      "end": 5880.86,
+      "text": "Nic bowiem lepiej nie smakuje w środku nocy od bezkompromisowego, spuszczonego ze smyczy grindu."
+    },
+    {
+      "start": 5881.34,
+      "end": 5882.8,
+      "text": "Na przykład takiego."
+    },
+    {
+      "start": 5882.8,
+      "end": 5884.7,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5967.46,
+      "end": 5992.38,
+      "text": "To był zespół Midspreader, konkretnie otwarcie tegorocznego albumu Mental Disease Transmitted by Radioactive Fear, kawał soczystego, nadpsutego mięcha dostarczonego przez rzeźników z wieloletnim doświadczeniem zdobytym w takich grupach jak Dead Infections, Quash Bowels czy Neuropatia."
+    },
+    {
+      "start": 5992.38,
+      "end": 6003.14,
+      "text": "Bardzo piękne, bardzo wesołe nutki. Posłuchajmy zatem jeszcze jednej piosenki w wykonaniu Midspreader, czyli Havok In My Head."
+    },
+    {
+      "start": 6068.61,
+      "end": 6071.25,
+      "text": "Na koniec audycji kilka"
+    },
+    {
+      "start": 6071.25,
+      "end": 6072.39,
+      "text": "nowości."
+    },
+    {
+      "start": 6073.21,
+      "end": 6074.67,
+      "text": "Distruster z Krakowa"
+    },
+    {
+      "start": 6074.67,
+      "end": 6076.43,
+      "text": "wydał przed chwilą epkę"
+    },
+    {
+      "start": 6076.43,
+      "end": 6079.49,
+      "text": "Obscurum per Obscurius"
+    },
+    {
+      "start": 6079.49,
+      "end": 6081.45,
+      "text": "i to pięknie"
+    },
+    {
+      "start": 6081.45,
+      "end": 6082.89,
+      "text": "źle i mocno"
+    },
+    {
+      "start": 6082.89,
+      "end": 6085.15,
+      "text": "kopie i w sumie nic dziwnego, skoro"
+    },
+    {
+      "start": 6085.15,
+      "end": 6086.71,
+      "text": "na bębnach mamy Jamesa"
+    },
+    {
+      "start": 6086.71,
+      "end": 6089.23,
+      "text": "Stewarta, znanego choćby"
+    },
+    {
+      "start": 6089.23,
+      "end": 6091.43,
+      "text": "z Vadera i Decapitated,"
+    },
+    {
+      "start": 6091.97,
+      "end": 6093.17,
+      "text": "a struny szarpie"
+    },
+    {
+      "start": 6093.17,
+      "end": 6095.43,
+      "text": "łapa terror z Terror Dome."
+    },
+    {
+      "start": 6096.69,
+      "end": 6097.47,
+      "text": "Muzyka"
+    },
+    {
+      "start": 6284.71,
+      "end": 6295.03,
+      "text": "Warszawski zespół Fiasko gra brudną i brutalną mieszankę black metalu ze sludżem i śpiewa o śmierci."
+    },
+    {
+      "start": 6295.03,
+      "end": 6297.37,
+      "text": "Czego tu nie lubić?"
+    },
+    {
+      "start": 6298.03,
+      "end": 6307.51,
+      "text": "Drugi album Fiaska nosi tytuł Amok Koma, właśnie się ukazał, a otwiera go piosenka Spod Spodu."
+    },
+    {
+      "start": 6308.17,
+      "end": 6316.39,
+      "text": "Gdyby umarł, Maciek umarł i leżał na desce, podskoczyłby jeszcze, słysząc jak mu Fiasko gra."
+    },
+    {
+      "start": 6573.13,
+      "end": 6580.15,
+      "text": "Polska black metalem stoi, zawsze go było dużo i zawsze dużo dobrego."
+    },
+    {
+      "start": 6580.83,
+      "end": 6585.93,
+      "text": "Niełatwo więc znaleźć się w czołówce, ale zdaje się, że wrocławski Deus Mortem,"
+    },
+    {
+      "start": 6586.07,
+      "end": 6591.93,
+      "text": "który od dekady wytrwale ściga najlepszych, właśnie do tego grona dołączył."
+    },
+    {
+      "start": 6592.61,
+      "end": 6599.41,
+      "text": "Płyta Thanatos, która właśnie teraz ma premierę, uroczo cuchnie siarką."
+    },
+    {
+      "start": 6599.41,
+      "end": 6608.65,
+      "text": "Pewnie w tym winie z tytułu utworu When the Creation Tastes of Dionysian Wine też jest sama siarka."
+    },
+    {
+      "start": 6609.19,
+      "end": 6611.55,
+      "text": "Dobranoc Państwu. Wasze zdrowie."
+    },
+    {
+      "start": 6611.55,
+      "end": 6613.05,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 21,
+    "transcribedAudioSec": 1588.07,
+    "segmentCount": 251,
+    "characterCount": 16968
+  },
+  "sourceId": "2024-11-13-ciezko-na-sercu-13-listopada-godz-0005"
+}
