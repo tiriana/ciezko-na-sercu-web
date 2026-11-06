@@ -2,10 +2,71 @@
   "version": 1,
   "id": "b37b1198-2355-43f9-a3e6-bc34d31fbd13",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T16:04:49.576Z",
+  "updatedAt": "2026-11-06T17:05:42.456Z",
   "durationSec": 6824,
-  "summary": "",
-  "topics": [],
+  "summary": "Kwietniowy przegląd koncertowy otwiera trasa Anti-Matter z okazji 25-lecia płyty Savior oraz wspólne tournée Czord, Konigreis Hall i Kyr pod szyldem Exegi Monumentum. Dalej mowa o mniejszych objazdach: Taxi Cavemen z Neon Mad, Moonstone, Drone My Day z Awakening Sun i Hostii. Osobny wątek to Furia, która w katowickim Rialto zagra do filmowych archiwaliów z okazji 25-lecia Filmoteki Śląskiej. Zapowiedziano też Harakiri for the Sky promujące album Scorched Earth, festiwal Opoczno Strikes Again, koncerty Dark Tranquility i Moonspell oraz blackmetalowe pakiety Concrete Winds i Black Curse, Spectral Wound i Lamp of Murmur oraz trasę Kierunek Północ. Najbardziej masowym wydarzeniem miesiąca ma być Unholy Trinity z Behemotem, Satyriconem i Rotting Christ we wrocławskiej Hali Stulecia. Na koniec zapowiedziano występ Michaela Giry i Christopha Hahna ze Swans w Palladium oraz Primordial i Amenrę w towarzystwie Year of the Cobra.",
+  "topics": [
+    {
+      "start": 305,
+      "end": 407,
+      "label": "Anti-Matter i trasa 25-lecia płyty Savior"
+    },
+    {
+      "start": 407,
+      "end": 466,
+      "label": "Trasa Exegi Monumentum: Czord, Konigreis Hall, Kyr"
+    },
+    {
+      "start": 776,
+      "end": 849,
+      "label": "Taxi Cavemen z Neon Mad oraz kwietniowa trasa Moonstone"
+    },
+    {
+      "start": 1213,
+      "end": 1258,
+      "label": "Drone My Day z Awakening Sun i koncerty Hostii"
+    },
+    {
+      "start": 1481,
+      "end": 1595,
+      "label": "Furia w Rialto na 25-lecie Filmoteki Śląskiej"
+    },
+    {
+      "start": 1860,
+      "end": 1898,
+      "label": "Harakiri for the Sky promuje album Scorched Earth"
+    },
+    {
+      "start": 2368,
+      "end": 2498,
+      "label": "The Picture Books, Opoczno Strikes Again i Downfall of Gaia"
+    },
+    {
+      "start": 3660,
+      "end": 3800,
+      "label": "Dark Tranquility i Moonspell, Swallow the Sun z Before the Dawn"
+    },
+    {
+      "start": 4182,
+      "end": 4333,
+      "label": "Concrete Winds, Black Curse, Spectral Wound i trasa Kierunek Północ"
+    },
+    {
+      "start": 4498,
+      "end": 4623,
+      "label": "Unholy Trinity: Behemoth, Satyricon i Rotting Christ"
+    },
+    {
+      "start": 5014,
+      "end": 5062,
+      "label": "Michael Gira i Christoph Hahn ze Swans w Palladium"
+    },
+    {
+      "start": 5322,
+      "end": 5414,
+      "label": "Primordial i Amenra z Year of the Cobra"
+    }
+  ],
   "tags": [
     {
       "id": "abominated",
@@ -130,7 +191,7 @@
   "tracks": [
     {
       "start": 8,
-      "end": 466,
+      "end": 305,
       "durationSec": 297,
       "artist": "Antimatter",
       "title": "The Last Laugh",
@@ -143,7 +204,7 @@
     },
     {
       "start": 466,
-      "end": 849,
+      "end": 776,
       "durationSec": 312,
       "artist": "Königreichssaal",
       "title": "Rubikon",
@@ -156,7 +217,7 @@
     },
     {
       "start": 849,
-      "end": 1258,
+      "end": 1213,
       "durationSec": 366,
       "artist": "Moonstone",
       "title": "Emerald",
@@ -169,7 +230,7 @@
     },
     {
       "start": 1258,
-      "end": 1595,
+      "end": 1481,
       "durationSec": 224,
       "artist": "Drown My Day",
       "title": "You Will Not Get Rid of Me",
@@ -182,7 +243,7 @@
     },
     {
       "start": 1595,
-      "end": 1898,
+      "end": 1860,
       "durationSec": 267,
       "artist": "The Top Orchestra",
       "title": "Pop Corn",
@@ -195,7 +256,7 @@
     },
     {
       "start": 1898,
-      "end": 2498,
+      "end": 2368,
       "durationSec": 471,
       "artist": "Dödsrit",
       "title": "Nocturnal Fire",
@@ -234,7 +295,7 @@
     },
     {
       "start": 3245,
-      "end": 3800,
+      "end": 3660,
       "durationSec": 416,
       "artist": "Austere",
       "title": "Time Awry",
@@ -247,7 +308,7 @@
     },
     {
       "start": 3800,
-      "end": 4333,
+      "end": 4182,
       "durationSec": 383,
       "artist": "Moonspell",
       "title": "Tenebarum Oratorium (Andamento I/Erudit Compendyum)",
@@ -260,7 +321,7 @@
     },
     {
       "start": 4333,
-      "end": 4623,
+      "end": 4498,
       "durationSec": 167,
       "artist": "Concrete Winds",
       "title": "Hell Trance",
@@ -273,7 +334,7 @@
     },
     {
       "start": 4623,
-      "end": 5062,
+      "end": 5014,
       "durationSec": 392,
       "artist": "Satyricon",
       "title": "Filthgrinder (Remastered Version)",
@@ -286,7 +347,7 @@
     },
     {
       "start": 5062,
-      "end": 5414,
+      "end": 5322,
       "durationSec": 262,
       "artist": "Swans",
       "title": "You F*****g People Make Me Sick",

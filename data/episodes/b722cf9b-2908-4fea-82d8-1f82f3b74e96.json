@@ -2,10 +2,71 @@
   "version": 1,
   "id": "b722cf9b-2908-4fea-82d8-1f82f3b74e96",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T16:04:49.577Z",
+  "updatedAt": "2026-11-06T17:05:42.457Z",
   "durationSec": 6827,
-  "summary": "",
-  "topics": [],
+  "summary": "Audycja zbiera utwory o wiośnie — od id marcowych i Iron Maiden po majowy śnieg. Wątki marcowe reprezentują Dimmu Borgir z utworem Renewal oraz belgijski Brutus z piosenką March. Największą przestrzeń zajmuje Winter Sun z prawie piętnastominutowym Awaken from the Dark Slumber (Spring), inspirowanym Vivaldim, obok którego stoją ponure wizje wiosny w wykonaniu Nocturnal Depression i Furii z płyty Marzannie Królowej Polski. Dalej pojawiają się Kringa z All Stillborn Fires Lick My Heart, Nargaroth z albumu Jahreszeiten i Opeth z bonusowym Spring MCMLXXIV. Poza metalem sięgnięto po The Jesus and Mary Chain z April Skies i hardcore'owy Rites of Spring, a funeralne ujęcie tematu przynoszą Sentenced z Funeral Spring i Forgotten Tomb z Springtime Depression. Całość zamyka Majhem piosenką o zamarzającym księżycu.",
+  "topics": [
+    {
+      "start": 127,
+      "end": 223,
+      "label": "Iron Maiden i motyw id marcowych"
+    },
+    {
+      "start": 669,
+      "end": 730,
+      "label": "Winter Sun inspirowany Vivaldim"
+    },
+    {
+      "start": 1638,
+      "end": 1669,
+      "label": "Nocturnal Depression i czarna wiosna"
+    },
+    {
+      "start": 1993,
+      "end": 2063,
+      "label": "Furia z płyty Marzannie Królowej Polski"
+    },
+    {
+      "start": 2419,
+      "end": 2490,
+      "label": "Kringa o cyklu życia i śmierci"
+    },
+    {
+      "start": 2895,
+      "end": 2986,
+      "label": "Nargaroth z albumu Jahreszeiten"
+    },
+    {
+      "start": 3606,
+      "end": 3661,
+      "label": "Opeth i Spring MCMLXXIV"
+    },
+    {
+      "start": 4916,
+      "end": 4942,
+      "label": "The Jesus and Mary Chain – April Skies"
+    },
+    {
+      "start": 5175,
+      "end": 5233,
+      "label": "Rites of Spring i scena waszyngtońska"
+    },
+    {
+      "start": 5725,
+      "end": 5803,
+      "label": "Sentenced i Funeral Spring z Amok"
+    },
+    {
+      "start": 6019,
+      "end": 6063,
+      "label": "Forgotten Tomb – wiosenna depresja"
+    },
+    {
+      "start": 6485,
+      "end": 6512,
+      "label": "Majhem o zamarzającym księżycu"
+    }
+  ],
   "tags": [
     {
       "id": "april-ethereal",
@@ -123,7 +184,7 @@
   "tracks": [
     {
       "start": 13,
-      "end": 223,
+      "end": 127,
       "durationSec": 105,
       "artist": "Iron Maiden",
       "title": "The Ides of March (2015 Remaster)",
@@ -149,7 +210,7 @@
     },
     {
       "start": 514,
-      "end": 730,
+      "end": 669,
       "durationSec": 156,
       "artist": "Brutus",
       "title": "March",
@@ -162,7 +223,7 @@
     },
     {
       "start": 730,
-      "end": 1669,
+      "end": 1638,
       "durationSec": 865,
       "artist": "Wintersun",
       "title": "Awaken from the Dark Slumber (Spring)",
@@ -175,7 +236,7 @@
     },
     {
       "start": 1669,
-      "end": 2063,
+      "end": 1993,
       "durationSec": 325,
       "artist": "Nocturnal Depression",
       "title": "Spring",
@@ -188,7 +249,7 @@
     },
     {
       "start": 2063,
-      "end": 2490,
+      "end": 2419,
       "durationSec": 357,
       "artist": "Furia",
       "title": "Wodzenie",
@@ -201,7 +262,7 @@
     },
     {
       "start": 2490,
-      "end": 2986,
+      "end": 2895,
       "durationSec": 407,
       "artist": "Kringa",
       "title": "Labyrinth Heirs",
@@ -214,7 +275,7 @@
     },
     {
       "start": 2986,
-      "end": 3661,
+      "end": 3606,
       "durationSec": 622,
       "artist": "Nargaroth",
       "title": "Frühling",
@@ -253,7 +314,7 @@
     },
     {
       "start": 4658,
-      "end": 4942,
+      "end": 4916,
       "durationSec": 258,
       "artist": "April Ethereal",
       "title": "The First Step Into the Unknown",
@@ -266,7 +327,7 @@
     },
     {
       "start": 4942,
-      "end": 5233,
+      "end": 5175,
       "durationSec": 234,
       "artist": "The Jesus and Mary Chain",
       "title": "April Skies",
@@ -292,7 +353,7 @@
     },
     {
       "start": 5423,
-      "end": 5803,
+      "end": 5725,
       "durationSec": 287,
       "artist": "Golgatha",
       "title": "Rite of Spring",
@@ -305,7 +366,7 @@
     },
     {
       "start": 5803,
-      "end": 6063,
+      "end": 6019,
       "durationSec": 217,
       "artist": "Sentenced",
       "title": "Funeral Spring",
@@ -318,7 +379,7 @@
     },
     {
       "start": 6063,
-      "end": 6512,
+      "end": 6485,
       "durationSec": 422,
       "artist": "Forgotten Tomb",
       "title": "Daylight Obsession",

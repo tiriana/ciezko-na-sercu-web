@@ -2,7 +2,7 @@
   "version": 1,
   "id": "9ec1becd-9191-4cdf-a219-270a512bd49d",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T16:04:49.572Z",
+  "updatedAt": "2026-11-06T17:05:42.454Z",
   "durationSec": 6921,
   "summary": "Majowy przegląd koncertowy: od duńskiego death metalu (Neckbreaker, Gouge) przez post-metalowy Dune po industrialny Godflesh w krakowskiej Progresji. Zapowiedziano premierę albumu „Bellum Regis\" grupy Hate oraz trasę Decapitated z nowym wokalistą, w towarzystwie Cryptopsy, Warbringera i Carnation. Sporo miejsca zajęły małe festiwale — Liturgia Zniszczenia, Metal Vulture, Hell and Fire, Metal Commando i 666 United Metal Fest. Omówiono też widowiskową trasę Ghost promującą płytę „Skeleta\" oraz występ Babymetal z Poppy i Bambie Thug w krakowskiej Tauron Arenie. Na koniec mocny akcent: Inquisition i Demonical. Relacja z festiwalu Roadburn zapowiedziana na kolejny tydzień.",
   "topics": [
@@ -132,11 +132,23 @@
       "at": 4610
     },
     {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "krisiun",
       "label": "Krisiun",
       "type": "artist",
       "source": "tracks",
       "at": 837
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "neckbreakker",
@@ -161,9 +173,10 @@
       "artist": "Whores",
       "title": "Hieronymus Bosch Was Right",
       "album": "War",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -311,6 +324,24 @@
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 139,
+      "text": "szczególnie Thao polecam w waszej pamięci, bo to autorzy mojej ulubionej ciężkiej polskiej płyty z ubiegłego roku, czyli Fading Backwards."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 3,
+      "quote": "kłania się Jarek Szubrycht, prowadzący dla Was audycję Ciężko na sercu."
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 3,
+      "quote": "Wydaje ją Mariusz Owczarek"
+    }
+  ]
 }

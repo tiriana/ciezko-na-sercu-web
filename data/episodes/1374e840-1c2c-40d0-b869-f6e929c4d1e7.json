@@ -2,10 +2,86 @@
   "version": 1,
   "id": "1374e840-1c2c-40d0-b869-f6e929c4d1e7",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T16:04:49.575Z",
+  "updatedAt": "2026-11-06T17:05:42.456Z",
   "durationSec": 6914,
-  "summary": "",
-  "topics": [],
+  "summary": "W audycji Jarek Szubrycht oprowadza słuchaczy po estonskiej scenie metalowej, zaczynając od zespołu Agresor i jego debiutanckiego utworu z płyty „Procreate the Petrifications”. Następnie przywołuje wspomnienia z Tallinn Music Week, opisując koncerty takich grup jak Permanent Blue, Tomorrow Was The War i Strict 9. Gość z zespołu Humanity opowiada o swojej debiutanckiej płycie „Out of Structure”, a na koniec pojawia się zespół Soul, którego brzmienie nie przekonało prowadzącego. Przez cały odcinek prowadzący łączy relacje z historią estonskiej muzyki po upadku ZSRR z aktualnymi koncertowymi wrażeniami. W audycji prowadzący omawia współpracę polskiej sceny metalowej z estońską inicjatywą Heavy Music Estonia, opisując przygotowania do festiwalu Mystic oraz prezentując wybrane estońskie zespoły. Najpierw przytacza utwór „Vanishing Threshold” zespołu Soul, po czym przechodzi do relacji z koncertu w Tallinie, w którym wystąpiły m.in. Sergent, Intrepid i Ico Love. Następnie omawia konkursowy wieczór, w którym rywalizowały zespoły Nihilisty Crypt i Pridian, podkreślając ich brzmienie i plany dalszych występów w Polsce. W audycji omówiono estonską scenę metalową, początkowo prezentując zespół Pridian i jego nowoczesny metalcore. Prowadzący zmienił pierwotne prognozy co do występu zespołów, wskazując na niespodziewane zmiany w konkursie. Następnie odtworzono światową premierę utworu \"Endless\", po czym ogłoszono wyniki rywalizacji, w której zwyciężyły Prydian i Intrepid. Na zakończenie zapowiedziano występ zespołu Evestus, którego lider organizuje Heavy Music Estonia.",
+  "topics": [
+    {
+      "start": 221,
+      "end": 308,
+      "label": "Wprowadzenie i historia zespołu Agresor oraz prezentacja utworu z płyty „Procreate the Petrifications”"
+    },
+    {
+      "start": 1050,
+      "end": 1179,
+      "label": "Relacje z Tallinn Music Week – opis sceny, klubów i pierwszych koncertów"
+    },
+    {
+      "start": 1456,
+      "end": 1466,
+      "label": "Prezentacja zespołu Tomorrow Was The War i ich nowej epki „This War Left You Nothing”"
+    },
+    {
+      "start": 1908,
+      "end": 1976,
+      "label": "Omówienie zespołu Strict 9 oraz fragment albumu „Parasit”"
+    },
+    {
+      "start": 2616,
+      "end": 2738,
+      "label": "Rozmowa z przedstawicielem zespołu Humanity i prezentacja ich debiutanckiej płyty „Out of Structure\""
+    },
+    {
+      "start": 3030,
+      "end": 3136,
+      "label": "Prezentacja zespołu Soul i odtworzenie utworu „Vanishing Threshold”"
+    },
+    {
+      "start": 3270,
+      "end": 3361,
+      "label": "Współpraca z Heavy Music Estonia i przygotowania do Mystic Festival"
+    },
+    {
+      "start": 3667,
+      "end": 3731,
+      "label": "Przegląd estońskich zespołów: Sergent i Intrepid"
+    },
+    {
+      "start": 4565,
+      "end": 4612,
+      "label": "Prezentacja Ico Love i dyskusja o ich stylu muzycznym"
+    },
+    {
+      "start": 5580,
+      "end": 5733,
+      "label": "Konkursowy wieczór: występy Nihilisty Crypt i Pridian"
+    },
+    {
+      "start": 5996,
+      "end": 6030,
+      "label": "Prezentacja zespołu Pridian i jego nowoczesnego brzmienia"
+    },
+    {
+      "start": 6316,
+      "end": 6332,
+      "label": "Zmiana prognoz dotyczących występu zespołów z Estonii"
+    },
+    {
+      "start": 6332,
+      "end": 6348,
+      "label": "Światowa premiera utworu \"Endless\""
+    },
+    {
+      "start": 6581,
+      "end": 6625,
+      "label": "Ogłoszenie wyników konkursu – zwycięstwo Prydian i Intrepid"
+    },
+    {
+      "start": 6625,
+      "end": 6703,
+      "label": "Zapowiedź i krótka charakterystyka zespołu Evestus"
+    }
+  ],
   "tags": [
     {
       "id": "aggressor",
@@ -48,6 +124,18 @@
       "type": "artist",
       "source": "tracks",
       "at": 3968
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "nihilistikrypt",
@@ -102,14 +190,15 @@
   "tracks": [
     {
       "start": 8,
-      "end": 308,
+      "end": 221,
       "durationSec": 214,
       "artist": "Evestus",
       "title": "To Hell And Back",
       "album": "Post Hate Teen Depression",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -120,15 +209,16 @@
       "artist": "Aggressor",
       "title": "Lifestyle",
       "album": "Procreate the Petrifactions",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 711,
-      "end": 1179,
+      "end": 1050,
       "durationSec": 341,
       "artist": "Aggressor",
       "title": "Procreate the Petrifactions",
@@ -141,7 +231,7 @@
     },
     {
       "start": 1179,
-      "end": 1466,
+      "end": 1456,
       "durationSec": 264,
       "artist": "Permanent Blue",
       "title": "Solitary Throne",
@@ -159,15 +249,16 @@
       "artist": "TOMORROW WAS THE WAR",
       "title": "Weakest Hands",
       "album": "This War Left You Nothing - EP",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 1671,
-      "end": 1976,
+      "end": 1908,
       "durationSec": 238,
       "artist": "TOMORROW WAS THE WAR",
       "title": "This War Left You Nothing (feat. Have No Heroes)",
@@ -185,33 +276,35 @@
       "artist": "Strych:9",
       "title": "Pretty Boy",
       "album": "Parasiit",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 2316,
-      "end": 2738,
+      "end": 2616,
       "durationSec": 321,
       "artist": "Humanity",
       "title": "Plague of Babylon",
       "album": "Out of Structure",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 2738,
-      "end": 3136,
+      "end": 3030,
       "durationSec": 267,
       "artist": "Humanity",
       "title": "Qualms of Consumence",
       "album": "Out of Structure",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -219,7 +312,7 @@
     },
     {
       "start": 3136,
-      "end": 3361,
+      "end": 3270,
       "durationSec": 123,
       "artist": "SOLD",
       "title": "Vanishing Threshold",
@@ -232,14 +325,15 @@
     },
     {
       "start": 3361,
-      "end": 3731,
+      "end": 3667,
       "durationSec": 308,
       "artist": "Surgent",
       "title": "Blood Offering",
       "album": "Surgent",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -250,9 +344,10 @@
       "artist": "Surgent",
       "title": "Demon Eyes (feat. Laur Lindmäe)",
       "album": "Demon Eyes (feat. Laur Lindmäe) - Single",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -263,22 +358,24 @@
       "artist": "Intrepid",
       "title": "By the Blinding Light",
       "album": "Slaying of Sanity / Murder of Mind - EP",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 4246,
-      "end": 4612,
+      "end": 4565,
       "durationSec": 311,
       "artist": "Intrepid",
       "title": "Mesmerism",
       "album": "Slaying of Sanity / Murder of Mind - EP",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -289,9 +386,10 @@
       "artist": "Echolove",
       "title": "GREATER EXISTENCE",
       "album": "VAGABOND",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -323,33 +421,35 @@
     },
     {
       "start": 5487,
-      "end": 5733,
+      "end": 5580,
       "durationSec": 190,
       "artist": "Nihilistikrypt",
       "title": "Diemonds",
       "album": "Diemension",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 5733,
-      "end": 6030,
+      "end": 5996,
       "durationSec": 264,
       "artist": "Nihilistikrypt",
       "title": "Lessons in Constraint",
       "album": "Lessons in Constraint - Single",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 6030,
-      "end": 6348,
+      "end": 6316,
       "durationSec": 257,
       "artist": "Pridian",
       "title": "DINY",
@@ -362,12 +462,12 @@
     },
     {
       "start": 6348,
-      "end": 6703,
+      "end": 6581,
       "durationSec": 234,
       "artist": "Pridian",
       "title": "Endless",
       "album": "Venetian Dark",
-      "confidence": "średnia",
+      "confidence": "niska",
       "sources": [
         "shazam"
       ],
@@ -380,13 +480,80 @@
       "artist": "Evestus",
       "title": "Voices In My Head",
       "album": "Post Hate Teen Depression",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 221,
+      "text": "powitał Was estoński zespół Evestus, piosenką To Hell and Back"
+    },
+    {
+      "start": 221,
+      "text": "Agresor numeru tytułowego z debiutu, czyli Procreate Petrifications"
+    },
+    {
+      "start": 1456,
+      "text": "ich nowa epka nosi tytuł This War Left You Nothing"
+    },
+    {
+      "start": 1908,
+      "text": "zaprezentuję wam fragment albumu Parasit"
+    },
+    {
+      "start": 2616,
+      "text": "zespół Humanity ze swojej debiutanckiej płyty Out of Structure wydanej w czerwcu ubiegłego roku"
+    },
+    {
+      "start": 3668,
+      "text": "Sergent to kwartet z Talina, wykonujący progresywny death metal."
+    },
+    {
+      "start": 3710,
+      "text": "Utór z płyty słuchaliśmy przed chwilą, a teraz wspomniane Oczy Demona."
+    },
+    {
+      "start": 3930,
+      "text": "Muzyka Intrepid to death metal, nie całkiem staroszkolny, ale też nieprogresywny w takim sensie"
+    },
+    {
+      "start": 4260,
+      "text": "Słuchamy piosenek Intrepid z epki Slain of Sanity, Murder of Mind z 2023 roku."
+    },
+    {
+      "start": 4566,
+      "text": "Zadebiutowali w 2021 roku, ale ja was tutaj częstuję utworami z płyty Vagabond wydanej jesienią ubiegłego roku."
+    },
+    {
+      "start": 5310,
+      "text": "Słuchamy utworu Diamonds z płyty Dimension z 2021 roku."
+    },
+    {
+      "start": 5730,
+      "text": "Posłuchajmy jeszcze jednego numeru Nihilisty Crypt singla z 2024 roku zatytułowanego Lessons in Constraint."
+    },
+    {
+      "start": 6625,
+      "text": "posłuchamy jeszcze zespołu, który rozpoczął nam ten piękny dzisiejszy wieczór, zespołu Evestus"
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 248,
+      "quote": "Słuchacie audycji Ciężko na sercu, nazywam się Jarek Szubrycht i będę Wam puszczał piosenki i o nich opowiadał przez najbliższe dwie godziny"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 258,
+      "quote": "Audycję wydaje Mariusz Owczarek, a nadaje trójka program trzeci Polskiego Radia"
+    }
+  ]
 }
