@@ -2,10 +2,71 @@
   "version": 1,
   "id": "dadb129b-2310-4348-87b1-869eaf9bfdb6",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T13:09:50.535Z",
+  "updatedAt": "2026-11-06T14:07:22.259Z",
   "durationSec": 6860,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek zapowiada Mystic Festival 2025 w gdańskiej stoczni i przegląda czerwcowy kalendarz koncertowy. Z programu festiwalu omówiono Turbonegro, Eagles of Death Metal, Arthura Browna, hołd dla Bathory pod szyldem Blood Fire Death, Beherit, Suicidal Tendencies, Vader grający w całości 'Litany', trójmiejski Here oraz Prydian i Intrepid z nowymi albumami. Poza Gdańskiem zapowiedziano poznańskie koncerty The Cult, Sacred Reich i Soulfly, Lorna Shore we Wrocławiu i Airbourne w Warszawie, Ephemerę z SUN oraz Black Silesię w Byczynie z 40-leciem Onslaughta. Na koniec wymieniono trasy Coilguns i Hydry z Sautrusem, a także Incantation, Steve'a von Tilla, Sólstafir i Powerwolf.",
+  "topics": [
+    {
+      "start": 161,
+      "end": 277,
+      "label": "Mystic Festival 2025, Turbonegro i Eagles of Death Metal"
+    },
+    {
+      "start": 455,
+      "end": 599,
+      "label": "Arthur Brown i jego festiwalowy rekord"
+    },
+    {
+      "start": 744,
+      "end": 888,
+      "label": "Blood Fire Death: hołd dla Bathory i Quorthona"
+    },
+    {
+      "start": 1162,
+      "end": 1324,
+      "label": "Beherit i powrót fińskiej legendy black metalu"
+    },
+    {
+      "start": 1586,
+      "end": 1704,
+      "label": "Suicidal Tendencies i 'Send Me Your Money'"
+    },
+    {
+      "start": 1902,
+      "end": 2030,
+      "label": "Vader, Here, Prydian i Intrepid na Mysticu"
+    },
+    {
+      "start": 2526,
+      "end": 2619,
+      "label": "Poznań 9 czerwca: The Cult, Sacred Reich i Soulfly"
+    },
+    {
+      "start": 3334,
+      "end": 3410,
+      "label": "Airbourne w Warszawie i Lorna Shore we Wrocławiu"
+    },
+    {
+      "start": 4106,
+      "end": 4189,
+      "label": "Ephemera w Warszawie i dronmetalowy SUN"
+    },
+    {
+      "start": 4759,
+      "end": 4834,
+      "label": "Black Silesia w Byczynie i 40-lecie Onslaughta"
+    },
+    {
+      "start": 5450,
+      "end": 5495,
+      "label": "Trasy Coilguns oraz Hydry i Sautrusa po Polsce"
+    },
+    {
+      "start": 6224,
+      "end": 6303,
+      "label": "Incantation, Steve von Till, Sólstafir i Powerwolf"
+    }
+  ],
   "tags": [
     {
       "id": "bathory",
@@ -137,7 +198,7 @@
   "tracks": [
     {
       "start": 38,
-      "end": 277,
+      "end": 161,
       "durationSec": 125,
       "artist": "Turbonegro",
       "title": "All My Friends Are Dead",
@@ -150,7 +211,7 @@
     },
     {
       "start": 277,
-      "end": 599,
+      "end": 455,
       "durationSec": 167,
       "artist": "Eagles of Death Metal",
       "title": "Don't Speak (I Came To Make a Bang!)",
@@ -163,7 +224,7 @@
     },
     {
       "start": 599,
-      "end": 888,
+      "end": 744,
       "durationSec": 146,
       "artist": "The Crazy World of Arthur Brown",
       "title": "Fire",
@@ -176,7 +237,7 @@
     },
     {
       "start": 888,
-      "end": 1324,
+      "end": 1162,
       "durationSec": 276,
       "artist": "Bathory",
       "title": "Call from the Grave",
@@ -189,7 +250,7 @@
     },
     {
       "start": 1324,
-      "end": 1704,
+      "end": 1586,
       "durationSec": 263,
       "artist": "Beherit",
       "title": "The Gate of Inanna",
@@ -202,7 +263,7 @@
     },
     {
       "start": 1704,
-      "end": 2030,
+      "end": 1902,
       "durationSec": 200,
       "artist": "Suicidal Tendencies",
       "title": "Send Me Your Money",
@@ -228,7 +289,7 @@
     },
     {
       "start": 2207,
-      "end": 2619,
+      "end": 2526,
       "durationSec": 320,
       "artist": "Pridian",
       "title": "Out for Blood",
@@ -241,7 +302,7 @@
     },
     {
       "start": 2619,
-      "end": 3410,
+      "end": 3334,
       "durationSec": 717,
       "artist": "The Cult",
       "title": "Rise",
@@ -267,7 +328,7 @@
     },
     {
       "start": 3919,
-      "end": 4189,
+      "end": 4106,
       "durationSec": 189,
       "artist": "Fit for An Autopsy",
       "title": "Lower Purpose",
@@ -306,7 +367,7 @@
     },
     {
       "start": 4568,
-      "end": 4834,
+      "end": 4759,
       "durationSec": 179,
       "artist": "Scott Walker & sunn O)))",
       "title": "Lullaby",
@@ -332,7 +393,7 @@
     },
     {
       "start": 5049,
-      "end": 5495,
+      "end": 5450,
       "durationSec": 401,
       "artist": "Onslaught",
       "title": "Power from Hell (2025 Re-Recording)",
@@ -358,7 +419,7 @@
     },
     {
       "start": 5773,
-      "end": 6303,
+      "end": 6224,
       "durationSec": 453,
       "artist": "Hydra",
       "title": "When The Devil's Coming Down",

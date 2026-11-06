@@ -2,10 +2,71 @@
   "version": 1,
   "id": "78541c12-e18c-4efb-b1d8-b65e61d239a4",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T13:09:50.534Z",
+  "updatedAt": "2026-11-06T14:07:22.258Z",
   "durationSec": 6899,
-  "summary": "",
-  "topics": [],
+  "summary": "Rozmowa z Łukaszem Dunajem — twórcą magazynu Noise i autorem podcastu Czarne Owce — o kondycji metalowego dziennikarstwa i prasy muzycznej. Dunaj tłumaczy zawieszenie papierowego Noise Magazine jako element szerszego kryzysu wydawniczego: rosnących kosztów, zwijania punktów sprzedaży i okrutnych marż narzucanych małym tytułom przez dominującą sieć dystrybucyjną. Ratunku szuka w podcastach i treściach online, przyznając, że ich monetyzacja pozostaje poważnym ograniczeniem. Dużo miejsca zajmuje namysł nad rolą dziennikarza jako nawigatora i selekcjonera w warunkach bezprecedensowego nadmiaru muzyki, z przykładami rekomendacji, które nie zadziałały (New Roses, The Body, Living Colour), i tych, które w końcu zadziałały (Oranssi Pazuzu, Imperial Triumphant, pierwszy mosh pit pod sceną podczas Mystic Festival). Dunaj opowiada też o predyspozycjach charakterologicznych potrzebnych w tym zawodzie, o niechęci do druzgocących recenzji młodych zespołów oraz o zbyt hojnych zachwytach weryfikowanych przez czas, jak płyta Otta Solstafir. Całość zamyka wątek podcastu Czarne Owce — portretów ludzi życia publicznego, którzy w młodości słuchali metalu — oraz kolekcjonerskie zwierzenia o winylach, wydaniach specjalnych i gadżetach.",
+  "topics": [
+    {
+      "start": 930,
+      "end": 1070,
+      "label": "Łukasz Dunaj, magazyn Noise i autorska audycja muzyczna"
+    },
+    {
+      "start": 1070,
+      "end": 1320,
+      "label": "Zawieszenie Noise Magazine na tle kryzysu prasy"
+    },
+    {
+      "start": 1320,
+      "end": 1483,
+      "label": "Młodzi odbiorcy, podcasty i treści online zamiast papieru"
+    },
+    {
+      "start": 1483,
+      "end": 1576,
+      "label": "Ograniczona monetyzacja treści muzycznych w sieci"
+    },
+    {
+      "start": 2440,
+      "end": 2678,
+      "label": "Rola dziennikarza jako przewodnika i selekcjonera"
+    },
+    {
+      "start": 2678,
+      "end": 2865,
+      "label": "Skuteczność rekomendacji: New Roses, The Body, Living Colour"
+    },
+    {
+      "start": 2865,
+      "end": 3075,
+      "label": "Oranssi Pazuzu, Imperial Triumphant i mosh pit na Mystic Festival"
+    },
+    {
+      "start": 4012,
+      "end": 4272,
+      "label": "Predyspozycje charakterologiczne: upór i odporność na rozczarowania"
+    },
+    {
+      "start": 4272,
+      "end": 4599,
+      "label": "Niechęć do negatywnych recenzji młodych zespołów"
+    },
+    {
+      "start": 4599,
+      "end": 4979,
+      "label": "Otwartość na nową muzykę: Voivod, Confessor, Laibach"
+    },
+    {
+      "start": 5900,
+      "end": 6410,
+      "label": "Podcast Czarne Owce: metalowcy w życiu publicznym"
+    },
+    {
+      "start": 6410,
+      "end": 6557,
+      "label": "Kolekcja winyli, wydania specjalne i gadżety"
+    }
+  ],
   "tags": [
     {
       "id": "dead-congregation",
@@ -79,7 +140,7 @@
     },
     {
       "start": 266,
-      "end": 1576,
+      "end": 930,
       "durationSec": 665,
       "artist": "Mercyful Fate",
       "title": "The Uninvited Guest",
@@ -92,7 +153,7 @@
     },
     {
       "start": 1576,
-      "end": 3075,
+      "end": 2440,
       "durationSec": 866,
       "artist": "Eagles of Death Metal",
       "title": "Got the Power",
@@ -105,7 +166,7 @@
     },
     {
       "start": 3075,
-      "end": 4979,
+      "end": 4012,
       "durationSec": 937,
       "artist": "Neurosis",
       "title": "Times of Grace",
@@ -118,7 +179,7 @@
     },
     {
       "start": 4979,
-      "end": 6557,
+      "end": 5900,
       "durationSec": 922,
       "artist": "LIK",
       "title": "Morgue Rat",
