@@ -1,0 +1,955 @@
+{
+  "version": 1,
+  "episodeId": "b2cafc7b-95ff-458a-a660-508f01644315",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 110770937,
+  "fileMtimeMs": 1789151123351.8887,
+  "windows": [
+    {
+      "index": 0,
+      "start": 1.7599999999999998,
+      "end": 7.71
+    },
+    {
+      "index": 1,
+      "start": 50.44,
+      "end": 130.72
+    },
+    {
+      "index": 2,
+      "start": 222.21,
+      "end": 338.56
+    },
+    {
+      "index": 3,
+      "start": 522.24,
+      "end": 558.84
+    },
+    {
+      "index": 4,
+      "start": 708.55,
+      "end": 772.03
+    },
+    {
+      "index": 5,
+      "start": 897.03,
+      "end": 1002.91
+    },
+    {
+      "index": 6,
+      "start": 1253.76,
+      "end": 1315.9
+    },
+    {
+      "index": 7,
+      "start": 1642.08,
+      "end": 1720.09
+    },
+    {
+      "index": 8,
+      "start": 2017.48,
+      "end": 2066.46
+    },
+    {
+      "index": 9,
+      "start": 2367.97,
+      "end": 2422.62
+    },
+    {
+      "index": 10,
+      "start": 2689.67,
+      "end": 2758.65
+    },
+    {
+      "index": 11,
+      "start": 2793.57,
+      "end": 2798.46
+    },
+    {
+      "index": 12,
+      "start": 3088.8,
+      "end": 3180.7
+    },
+    {
+      "index": 13,
+      "start": 3402.53,
+      "end": 3431.52
+    },
+    {
+      "index": 14,
+      "start": 3622.47,
+      "end": 3669.21
+    },
+    {
+      "index": 15,
+      "start": 3992.2,
+      "end": 4027.68
+    },
+    {
+      "index": 16,
+      "start": 4230.5,
+      "end": 4308.57
+    },
+    {
+      "index": 17,
+      "start": 4477.99,
+      "end": 4543.48
+    },
+    {
+      "index": 18,
+      "start": 4760.23,
+      "end": 4827.61
+    },
+    {
+      "index": 19,
+      "start": 5223.17,
+      "end": 5324.99
+    },
+    {
+      "index": 20,
+      "start": 5524.26,
+      "end": 5590.04
+    },
+    {
+      "index": 21,
+      "start": 5913.89,
+      "end": 5979.58
+    },
+    {
+      "index": 22,
+      "start": 6010.28,
+      "end": 6059.07
+    },
+    {
+      "index": 23,
+      "start": 6080.39,
+      "end": 6136.22
+    },
+    {
+      "index": 24,
+      "start": 6217.51,
+      "end": 6312.54
+    },
+    {
+      "index": 25,
+      "start": 6547.36,
+      "end": 6622.36
+    }
+  ],
+  "segments": [
+    {
+      "start": 1.76,
+      "end": 5.24,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 51.34,
+      "end": 56.38,
+      "text": "Powitała nas piosenka Bitter Life zespołu Hostia, Gorzkie Życie."
+    },
+    {
+      "start": 57.08,
+      "end": 62.54,
+      "text": "Jeden z czeskich browarów ma slogan reklamowy, który nie ma sobie równych na całym świecie."
+    },
+    {
+      "start": 63.12,
+      "end": 66.68,
+      "text": "Nie można lepszego wymyślić, jeśli chodzi o reklamę piwa, brzmi on"
+    },
+    {
+      "start": 66.68,
+      "end": 70.44,
+      "text": "Żywot je hoszki, czyli życie jest gorzkie."
+    },
+    {
+      "start": 71.2,
+      "end": 75.32,
+      "text": "Pachu, wokalista Hosti, od kilku lat mieszka w Czechach."
+    },
+    {
+      "start": 75.74,
+      "end": 76.3,
+      "text": "Przypadek?"
+    },
+    {
+      "start": 76.8,
+      "end": 84.56,
+      "text": "Bitter Life pochodzi z Razor Blade Psalms, czwartej płyty Hosti, która ukazała się w maju."
+    },
+    {
+      "start": 85.2,
+      "end": 88.8,
+      "text": "Niewiele ponad 20 minut muzyki, ale samo gęste."
+    },
+    {
+      "start": 89.68,
+      "end": 97.38,
+      "text": "Całą poprzednią audycję poświęciłem najlepszym moim zdaniem nowym polskim wydawnictwom z metalem i okolicami,"
+    },
+    {
+      "start": 98.14,
+      "end": 101.48,
+      "text": "ale jak widać nie wyczerpałem tematu."
+    },
+    {
+      "start": 101.76,
+      "end": 113.42,
+      "text": "Dzisiaj będzie okazja nadrobić zaległości, bo cały odcinek Ciężko na sercu poświęcony jest nowej muzyce z maja polskiej i tej z dalekiego świata."
+    },
+    {
+      "start": 114,
+      "end": 121.24,
+      "text": "Wita Was Jarek Szubrycht, prowadzący audycję i Mariusz Owczarek, który z anielską cierpliwością ją wydaje."
+    },
+    {
+      "start": 122,
+      "end": 128.58,
+      "text": "To może na drugą nóżkę jeszcze raz hostia, tym razem śpiewająca o pustym grobie."
+    },
+    {
+      "start": 128.58,
+      "end": 130.72,
+      "text": "Muzyka"
+    },
+    {
+      "start": 222.21,
+      "end": 231.83,
+      "text": "Pozostajemy przy polskiej muzyce. Tym razem zespół, który właśnie wyrywa się w szeroki świat, więc trzymamy kciuki."
+    },
+    {
+      "start": 232.45,
+      "end": 246.29,
+      "text": "Tym bardziej, że choć ekstremalny metal z nad Wisły, Def i Black, świetnie radzi sobie za granicą, zespoły wykonujące inne odmiany ciężkiej muzyki niekoniecznie dotąd radziły sobie równie dobrze."
+    },
+    {
+      "start": 246.29,
+      "end": 262.29,
+      "text": "Może krakowski The Method to zmieni. Zespół porusza się w szeroko pojętej estetyce metalcore'owej, a więc potrafi ugryźć kiedy trzeba, ale jest też miejsce na melodię i śpiewanie czystym głosem."
+    },
+    {
+      "start": 262.75,
+      "end": 272.83,
+      "text": "Podobno niedawno zaszli daleko w jednym z naszych rodzimych telewizyjnych talent shows i dobrze trzeba edukować szeroką publiczność."
+    },
+    {
+      "start": 273.81,
+      "end": 279.75,
+      "text": "Sądzę jednak, że dla ich potencjalnych fanów poza Polską niewiele to znaczy."
+    },
+    {
+      "start": 280.87,
+      "end": 284.03,
+      "text": "Musi się obronić sama muzyka."
+    },
+    {
+      "start": 284.23,
+      "end": 298.21,
+      "text": "The Method wydali właśnie mini album Rituals z nalepką kalifornijskiej wytwórni Sick and Strike, która zajmuje się, jak sama twierdzi, progresją w agresji."
+    },
+    {
+      "start": 298.77,
+      "end": 306.91,
+      "text": "Co oznacza w praktyce wydawanie nowego metalu, metalcora, defcora i tym podobnych."
+    },
+    {
+      "start": 307.57,
+      "end": 315.63,
+      "text": "I jest to dobre miejsce dla The Method, doskonała trampolina do dalekiego skoku i niech im się darzy."
+    },
+    {
+      "start": 315.63,
+      "end": 326.65,
+      "text": "Jak twierdzi zespół, treścią Rituals jest ukazanie zapomnianej i tajemniczej kultury tubylczej Polski sprzed stuleci."
+    },
+    {
+      "start": 327.45,
+      "end": 329.83,
+      "text": "A więc prasłowiański metalcore?"
+    },
+    {
+      "start": 330.35,
+      "end": 330.85,
+      "text": "Czemu nie?"
+    },
+    {
+      "start": 331.53,
+      "end": 335.07,
+      "text": "Posłuchamy utworu o siedmiu rytuałach."
+    },
+    {
+      "start": 522.56,
+      "end": 536.26,
+      "text": "Na chwilę jeszcze zostaniemy w Polsce i damy się zmaltretować grupie Chainsword, która wydała niedawno epkę Chapter 12, solidną porcję death metalowego mięcha."
+    },
+    {
+      "start": 537.02,
+      "end": 543.94,
+      "text": "Utwór nosi tytuł Good Morning Vietnam i oczywiście traktuje o wojnie w Wietnamie."
+    },
+    {
+      "start": 544.44,
+      "end": 556.9,
+      "text": "Zrobiłem sobie niedawno powtórkę z czasu apokalipsy Coppoli, co i wam polecam, bo jeśli to nie jest jeden z najlepszych filmów wszechczasów, to nie wiem co nim jest."
+    },
+    {
+      "start": 708.97,
+      "end": 723.73,
+      "text": "Był spływający krwią Wietnam, konflikt sprzed kilkudziesięcioleci i może pozostańmy już w Azji, ale współczesnej, coraz śmielej, poczynającej sobie na niwie ekstremalnych brzmień."
+    },
+    {
+      "start": 724.29,
+      "end": 735.95,
+      "text": "Czepang to grind z Nepalu, tak jest z Nepalu, nawet na dachu świata gra się tak brutalne dźwięki, albo inaczej gra się w Stanach,"
+    },
+    {
+      "start": 735.95,
+      "end": 742.43,
+      "text": "choć zespół pochodzi z Nepalu, przeprowadził się jednak z Kathmandu do Nowego Jorku."
+    },
+    {
+      "start": 742.99,
+      "end": 751.91,
+      "text": "Mają też w składzie kolumbijczyka, więc nazywają swoją muzykę immigrant corem, bardzo ładnie ją nazywają."
+    },
+    {
+      "start": 752.43,
+      "end": 761.37,
+      "text": "Nową płytę Czepang zatytułowaną Yehappa, chyba właśnie tak się to czyta, wydała kultowa wytwórnia Relapse"
+    },
+    {
+      "start": 761.37,
+      "end": 770.01,
+      "text": "i wystarczy kilka sekund kontaktu z tą muzyką, by nabrać przekonania, że to dla Czepang odpowiednie miejsce."
+    },
+    {
+      "start": 770.01,
+      "end": 772.03,
+      "text": "Muzyka"
+    },
+    {
+      "start": 897.03,
+      "end": 906.65,
+      "text": "Przenosimy się na Tajwan. Skąd płyną dobre wieści? Po latach przerwy na scenę wrócił zespół Ktonik, lokalna gwiazda."
+    },
+    {
+      "start": 907.41,
+      "end": 919.19,
+      "text": "Nic a nic nie przesadzam. Na ich kanale w serwisie YouTube znajdziecie nagrania z koncertu na Tajwanie właśnie i publiczności na nim co najmniej jak na bajmie."
+    },
+    {
+      "start": 919.55,
+      "end": 941.11,
+      "text": "Ktonik milczał przez dobrych parę lat przypominając o sobie z rzadka koncertami na specjalne okazje, bo w 2016 roku Freddie Lim, wokalista grupy został posłem do tajwańskiego parlamentu, gdzie ciężko pracował zajmując się między innymi obronnością."
+    },
+    {
+      "start": 941.11,
+      "end": 952.19,
+      "text": "A to jak wiadomo na Tajwanie nie jest temat drugorzędny. Jak widać inna polityka naprawdę jest możliwa."
+    },
+    {
+      "start": 952.83,
+      "end": 963.47,
+      "text": "Kadencja jednak się skończyła, właściwie dwie i Freddie postanowił nie ubiegać się o kolejną reelekcję, ale wciąż pozostaje w służbie publicznej."
+    },
+    {
+      "start": 963.47,
+      "end": 974.61,
+      "text": "Został właśnie mianowany ambasadorem Tajwanu w Finlandii. I to jest bardzo dobry wybór, bo połowa Finów to przecież fani metalu."
+    },
+    {
+      "start": 975.31,
+      "end": 985.63,
+      "text": "Jako ambasador Freddie będzie miał jednak chyba więcej wolnego czasu, bo Ktonik zapowiada wzmożenie aktywności koncertowej i wydawniczej."
+    },
+    {
+      "start": 985.63,
+      "end": 990.39,
+      "text": "Jako dowód przedstawiając nowy singiel Endless Eons."
+    },
+    {
+      "start": 990.39,
+      "end": 1000.69,
+      "text": "Na bardzo ciekawe połączenie tego, co doskonale znamy z metalowych scen Europy z tajwańską tradycją muzyczną."
+    },
+    {
+      "start": 1000.69,
+      "end": 1002.91,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1254.72,
+      "end": 1263.78,
+      "text": "Żegnamy zespół Itaka. Choć nie jest to dla mnie muzyka pierwszego wyboru, zespół to był świetny i pięknie się rozwijał."
+    },
+    {
+      "start": 1264.66,
+      "end": 1272.52,
+      "text": "Byli inni, nie tylko dlatego, że swój metal kormieszali z wpływami i prog rocka, i industrialu, i black metalu nawet,"
+    },
+    {
+      "start": 1273.12,
+      "end": 1282.14,
+      "text": "ale dlatego też, że podkreślali swój queerowy i multikulturowy charakter, co w ekstremalnej muzyce nie jest już może ewenementem,"
+    },
+    {
+      "start": 1282.14,
+      "end": 1290.78,
+      "text": "ale wciąż nie jest też zjawiskiem powszechnym. Prawie dotarli na Mystic Festival w ubiegłym roku."
+    },
+    {
+      "start": 1291.74,
+      "end": 1300.98,
+      "text": "Odwołali swój udział w ostatniej chwili. Być może już zaczęły się problemy, które doprowadziły do rozpadu tej grupy."
+    },
+    {
+      "start": 1301.82,
+      "end": 1308.74,
+      "text": "Słuchamy ich pożegnalnego singla zatytułowanego po prostu Itaka, którego tekst radzi."
+    },
+    {
+      "start": 1308.74,
+      "end": 1314.06,
+      "text": "Nie płacz, bo się skończyło. Uśmiechnij się, że w ogóle było."
+    },
+    {
+      "start": 1314.06,
+      "end": 1315.9,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1642.08,
+      "end": 1659.56,
+      "text": "Pora na black metal. Może nie taki najczarniejszy z piwnicy wykopanej w środku lasu, bo zespół And Oceans już w latach dziewięćdziesiątych uchodził za przedstawicieli raczej progresywnego skrzydła tego nurtu."
+    },
+    {
+      "start": 1659.56,
+      "end": 1678.06,
+      "text": "Ja bym ich umiejscowił gdzieś po środku, bo nie jest to Dark Throne, ale nie mają też zacięcia awangardowego. Po prostu lubią czasem wpleść w piosenkę ładną melodię albo skorzystać z narzędzi, które nieco łagodzą czy urozmaicają brzmienie."
+    },
+    {
+      "start": 1678.62,
+      "end": 1690.02,
+      "text": "Znacznie bardziej progresywny i dziwaczny był zespół Havok Unit, który powstał na gruzach And Oceans na początku XXI wieku, ale nie o nim teraz mowa."
+    },
+    {
+      "start": 1690.6,
+      "end": 1695.2,
+      "text": "And Oceans bowiem powrócili i zarazem wrócili do korzeni."
+    },
+    {
+      "start": 1695.56,
+      "end": 1717.98,
+      "text": "23 maja wytwórnia Season of Mist wydała nowy siódmy album Finów zatytułowany The Regeneration Interary i zdaje się, że And Oceans tym razem zdecydowali się na przypomnienie sobie i nam emocji, które towarzyszyły im na początku artystycznej podróży."
+    },
+    {
+      "start": 2017.48,
+      "end": 2029.98,
+      "text": "Balmog to zespół z hiszpańskiej Galicji, a tytuł ich nowej piątej płyty brzmi Lajo, co po galicyjsku właśnie oznacza Lament."
+    },
+    {
+      "start": 2030.54,
+      "end": 2038.98,
+      "text": "Założę się, że nie jedna płyta z muzyką fado lub pokrewną nosi taki tytuł, ale to bynajmniej nie znaczy, że tu fado usłyszycie."
+    },
+    {
+      "start": 2039.5,
+      "end": 2048.26,
+      "text": "Usłyszycie black metal, groźny i jadowity, ale jednak przełamany brzmieniami o zupełnie innych korzeniach."
+    },
+    {
+      "start": 2048.98,
+      "end": 2059.84,
+      "text": "Te wejścia gitar są zupełnie nie black metalowe, wokalista swoją drogą naprawdę świetny też nie ogranicza się do jednostajnego wrzasku."
+    },
+    {
+      "start": 2060.72,
+      "end": 2064.62,
+      "text": "Interesująca płyta, muszę jej poświęcić więcej czasu."
+    },
+    {
+      "start": 2367.97,
+      "end": 2384.67,
+      "text": "Ghostbath to ciekawy przypadek. Zespół pochodzi z Dakoty Północnej i brzmi jak black metal z Ameryki, więc niby wszystko się zgadza, ale początkowo budził zainteresowanie, bo udawał, że jest z Chin."
+    },
+    {
+      "start": 2385.35,
+      "end": 2402.73,
+      "text": "Przedziwny pomysł. Ich nowy album nosi tytuł Rose Thorn Necklace i jest pełen wściekłości oraz rozpaczy, tak jak być powinno. Nie ukrywam, że utwór, który za chwilę usłyszycie wybrałem ze względu na tytuł."
+    },
+    {
+      "start": 2402.73,
+      "end": 2420.43,
+      "text": "Wódczany motyl. Ale z tymi niepokojącymi odgłosami w środku i elektronicznym bitem wychodzącym na pierwszy plan jest wspaniale niepokojący i intrygujący. Przed wami Ghostbath."
+    },
+    {
+      "start": 2689.67,
+      "end": 2702.71,
+      "text": "Pora na weteranów. 40 lat na scenie świętuje szwedzka grupa Candlemas, która z tej okazji przygotowała dla fanów prezent w postaci mini albumu Black Star."
+    },
+    {
+      "start": 2703.07,
+      "end": 2713.71,
+      "text": "Na nim m.in. kowery Black Sabbath i Pentagram, żeby nie było wątpliwości skąd wziął się nie tylko Candlemas, ale cały Doom Metal."
+    },
+    {
+      "start": 2715.11,
+      "end": 2727.37,
+      "text": "Kusiło mnie oczywiście, żeby puścić któryś z tych dwóch numerów i jeszcze może na to przyjdzie czas, ale dzisiaj nie, bo dzisiaj audycja z nowościami, a więc tylko autorskie piosenki."
+    },
+    {
+      "start": 2727.37,
+      "end": 2736.45,
+      "text": "Posłuchamy zatem utworu tytułowego z nowego wydawnictwa Candlemas, czyli Czarnej Gwiazdy."
+    },
+    {
+      "start": 2740.55,
+      "end": 2758.65,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 2793.57,
+      "end": 2798.47,
+      "text": "Jak przyjaciół się z nami, jak przyjaciół"
+    },
+    {
+      "start": 3089.54,
+      "end": 3105.2,
+      "text": "Skoro już o weteranach mowa, Candlemas to wciąż młodziki przy włoskiej grupie Def SS, która powstała w 1977 roku i cieszy się w pewnych kręgach opinią zespołu kultowego."
+    },
+    {
+      "start": 3105.86,
+      "end": 3115.84,
+      "text": "Absolutnie zasłużono. Poza Italią, szczególnie popularni co prawda nigdy nie byli, ale kto miał wiedzieć, ten wiedział."
+    },
+    {
+      "start": 3116,
+      "end": 3129.5,
+      "text": "Dość powiedzieć, że gdyby nie Def SS, wielka dzisiejsza gwiazda, czyli szwedzki zespół Ghost, pewnie trochę by brzmiała inaczej i inaczej dziś wyglądała."
+    },
+    {
+      "start": 3129.96,
+      "end": 3135.76,
+      "text": "I nie są to tylko moje domysły, choć za chwilę usłyszycie, że domyślić się nietrudno."
+    },
+    {
+      "start": 3136.22,
+      "end": 3143.2,
+      "text": "Tobias, czyli lider Ghost, chętniej często o tym opowiada, więc być może Steve Sylvester,"
+    },
+    {
+      "start": 3143.2,
+      "end": 3158.14,
+      "text": "czyli Stefano Silvestri, lider i głos Def SS, na starość doczeka się należnego mu uznania, popularności i może nawet paru groszy."
+    },
+    {
+      "start": 3158.92,
+      "end": 3166.54,
+      "text": "Nowy album Def SS nosi tytuł The Entity i jest albumem koncepcyjnym, inspirowanym literaturą,"
+    },
+    {
+      "start": 3166.54,
+      "end": 3175.62,
+      "text": "m.in. pismami Alistaira Crowley'a, ale też np. kultową opowieścią, niezwykły przypadek doktora Jekyll'a i pana Hyda,"
+    },
+    {
+      "start": 3176.04,
+      "end": 3178.5,
+      "text": "Roberta Louisa Stevensona."
+    },
+    {
+      "start": 3178.5,
+      "end": 3180.7,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3402.53,
+      "end": 3413.73,
+      "text": "The Haunted zawsze byli szwedzką odpowiedzią na Slayera, posmarowaną dla smaku cienką warstwą lokalnej odmiany death metalu."
+    },
+    {
+      "start": 3413.73,
+      "end": 3428.71,
+      "text": "Nie dało się tego nie lubić i nic się nie zmieniło. Po długich ośmiu latach The Haunted wracają z dziesiątym albumem zatytułowanym Songs of Last Resort i niezmiennie to mają."
+    },
+    {
+      "start": 3622.47,
+      "end": 3631.89,
+      "text": "Kilka jest, albo było zespołów o nazwie Ossuary, ale ten z Wisconsin interesuje nas dziś najbardziej."
+    },
+    {
+      "start": 3631.89,
+      "end": 3645.89,
+      "text": "W podziemiu szepcze się od nich coraz głośniej od dłuższego czasu i wreszcie zespół ziścił pokładane w nim nadzieję za sprawą pierwszej dużej płyty zatytułowanej Abhorrent Warship."
+    },
+    {
+      "start": 3647.19,
+      "end": 3661.55,
+      "text": "To death metal, któremu nigdzie się nie śpieszy, za to ciągnie za sobą smród stęchlizny, prawdziwy oddech wymarłych światów, jeśli wiecie co chcę powiedzieć."
+    },
+    {
+      "start": 3662.17,
+      "end": 3667.03,
+      "text": "Bardzo dobra to płyta, bo bardzo zła, przed państwem Ossuary."
+    },
+    {
+      "start": 3992.2,
+      "end": 4013.64,
+      "text": "Pozostajemy w krainie death metalu, ale to Niderlandy. Antropomorfia to weterani tamtejszej sceny. Nigdy co prawda wielkiego sukcesu nie osiągnęli, gdzie im tam do takiego gorefest, ale powstali już w odległym 1990 roku w Tilburgu."
+    },
+    {
+      "start": 4013.64,
+      "end": 4027.68,
+      "text": "Grają ten death metal od kilku dekad, więc doskonale wiedzą gdzie uderzyć, żeby zabolało. Ich nowy album nosi tytuł The Void of Light."
+    },
+    {
+      "start": 4230.5,
+      "end": 4246.06,
+      "text": "Czesi z zespołu Pandemia też od dawna wojują w podziemiu, dokładnie od trzech dekad i nie wymyślają koła na nowo, nie przełamują schematów, nie poszerzają granic gatunku."
+    },
+    {
+      "start": 4246.06,
+      "end": 4263.06,
+      "text": "Po prostu grają brutalny death metal tak, jak go wymyślono w latach dziewięćdziesiątych i robią to najlepiej jak potrafią. A że potrafią nieźle przekonacie się słuchając Darkened Devotion, ich szóstej płyty."
+    },
+    {
+      "start": 4263.6,
+      "end": 4279.98,
+      "text": "Jeśli przyjdzie wam do głów, że może słuchają i lubią naszego Wejdera, to musicie wiedzieć, że i mnie to przyszło do głowy, chociaż oczywiście pandemia ma też inne istotne punkty odniesienia, te zza oceanu przede wszystkim."
+    },
+    {
+      "start": 4280.72,
+      "end": 4292.68,
+      "text": "Dużo dzisiaj w audycji, jak zwykle, piosenek o szatanach, grobach i innych potwornościach, ale pandemia zaśpiewa o tym, co mnie chyba przeraża najbardziej."
+    },
+    {
+      "start": 4293.42,
+      "end": 4300.98,
+      "text": "Swoją drogą, kto jeśli nie tekściarze ekstremalnych zespołów metalowych ma najciekawsze tematy tekstów?"
+    },
+    {
+      "start": 4300.98,
+      "end": 4304.98,
+      "text": "Słuchamy piosenki o paraliżu sennym."
+    },
+    {
+      "start": 4478.99,
+      "end": 4484.73,
+      "text": "Stęskniliście się za Morgoth? Trudno, musicie sobie jakoś z tym radzić."
+    },
+    {
+      "start": 4485.23,
+      "end": 4492.55,
+      "text": "Na szczęście Mark Greve, głos Morgoth wciąż jest z nami w różnych wcieleniach i konfiguracjach."
+    },
+    {
+      "start": 4493.39,
+      "end": 4498.31,
+      "text": "Tym razem wraca do korzeni, do czystego death metalu z zespołem Leper Colony,"
+    },
+    {
+      "start": 4498.97,
+      "end": 4503.47,
+      "text": "w którym współpracuje ze szwedzkim gitarzystą Roga Johanssonem,"
+    },
+    {
+      "start": 4504.03,
+      "end": 4509.37,
+      "text": "znanym m.in. Spaganizer i właściwie miliona innych projektów."
+    },
+    {
+      "start": 4510.97,
+      "end": 4517.41,
+      "text": "Leper Colony właśnie wydali nową, drugą płytę zatytułowaną Those of the Morbid."
+    },
+    {
+      "start": 4518.53,
+      "end": 4524.25,
+      "text": "Pamiętacie, kiedy w death metalu chodziło o fajne riffy, niesamowite wokale, potężne bębny"
+    },
+    {
+      "start": 4524.25,
+      "end": 4531.13,
+      "text": "i teksty o waszych ulubionych horrorach? Pytają muzycy grupy w materiale prasowym"
+    },
+    {
+      "start": 4531.13,
+      "end": 4534.25,
+      "text": "i twierdzą, że właśnie taką płytę stworzyli."
+    },
+    {
+      "start": 4535.09,
+      "end": 4538.75,
+      "text": "Odpowiadam, pamiętam, a jakże i potwierdzam."
+    },
+    {
+      "start": 4539.13,
+      "end": 4541.37,
+      "text": "Tak właśnie brzmi Leper Colony."
+    },
+    {
+      "start": 4760.23,
+      "end": 4788.05,
+      "text": "Zespół Jade to też twór międzynarodowy, kolejny metalowy beneficjent strefy Schengen, a w nim muzycy znani m.in. z grup Graveyard i Foscor, którzy razem tworzą rzecz zupełnie nową, niby osadzoną w nurcie death metalowym, ale skupioną raczej na budowaniu atmosfery niż wymuszaniu posłuszeństwa brutalną siłą."
+    },
+    {
+      "start": 4788.47,
+      "end": 4805.39,
+      "text": "Udaje im się jednak osiągnąć artystyczne cele bez rozmiękczania brzmienia, bez kompromisów, no dobrze, bez większych kompromisów, za co niniejszym udzielam im oficjalnej pochwały z wpisaniem do akt."
+    },
+    {
+      "start": 4805.73,
+      "end": 4818.47,
+      "text": "Nowa płyta Jade zatytułowana jest Mysteries of a Flowery Dream i przyznam, że na podstawie samego tytułu bym po nią nie sięgnął tajemnicę kwiecistego snu."
+    },
+    {
+      "start": 4819.47,
+      "end": 4825.41,
+      "text": "Nikt nie jest bardziej niepoprawnie romantyczny od wytatuowanych, brodatych metalowców."
+    },
+    {
+      "start": 4825.41,
+      "end": 4827.61,
+      "text": "Muzyka"
+    },
+    {
+      "start": 5223.17,
+      "end": 5235.07,
+      "text": "Nie łatwo grać progresywny metal czy progresywnego rocka, choć akurat dzisiaj się nim nie zajmujemy, w sposób naprawdę progresywny."
+    },
+    {
+      "start": 5235.63,
+      "end": 5243.57,
+      "text": "Nie wystarczy przecież wyciskanie z gryfu gitary pokręconych riffów, nietypowe metrum i ciągłe zmiany tempa."
+    },
+    {
+      "start": 5243.57,
+      "end": 5254.55,
+      "text": "Bo czym tu zaimponować, kiedy Dream Theater z jednej strony czy na drugim biegunie gatunku Meshuga właściwie wyczerpali temat."
+    },
+    {
+      "start": 5255.31,
+      "end": 5265.67,
+      "text": "Na szczęście raz na jakiś czas trafiają się zespoły, które potrafią znaleźć wyłom w tym monolicie i jednak robią coś inaczej po swojemu."
+    },
+    {
+      "start": 5265.67,
+      "end": 5275.95,
+      "text": "A fantastyczne umiejętności techniczne w tym gatunku jednak niezbędne, tylko pomagają im osiągnąć cel."
+    },
+    {
+      "start": 5276.53,
+      "end": 5287.99,
+      "text": "Takim zespołem jest szwedzki zespół Vildhjarta, który już od dwóch dekad wędruje przez muzykę poza utartymi ścieżkami."
+    },
+    {
+      "start": 5288.25,
+      "end": 5300.13,
+      "text": "Ich nowy album zatytułowany tak, że nie umiem tego przeczytać, bo oprócz słowa regnet oraz przedimka określonego the zawiera plusy i pytajniki,"
+    },
+    {
+      "start": 5300.87,
+      "end": 5310.57,
+      "text": "ale to w sumie pasuje, bo jestem równie bezbronny wobec prób opisania tej muzyki słowami."
+    },
+    {
+      "start": 5311.11,
+      "end": 5317.19,
+      "text": "Długo będę się wgryzał w ten album, ale już dziś wiem, że warto."
+    },
+    {
+      "start": 5318.47,
+      "end": 5321.59,
+      "text": "Puszczę wam utwór tytułowy, wgryźcie się i wy."
+    },
+    {
+      "start": 5524.26,
+      "end": 5539.54,
+      "text": "Więcej tytułów, których nie umiem przeczytać. Pewnie niech się biedny redaktor męczy. Tym razem nie umiem, bo nie znam francuskiego, ale zgaduję, że to może brzmieć mniej więcej Le Matre Fou."
+    },
+    {
+      "start": 5539.54,
+      "end": 5558.44,
+      "text": "I chodzi o szalonych władców, bo właśnie do filmu Szaleni Władcy Jeana Rousha powstała ta muzyka stworzona przez zespół Year of No Light na zamówienie jednego z francuskich muzeów."
+    },
+    {
+      "start": 5558.44,
+      "end": 5578.34,
+      "text": "Sam film nakręcony w 1950 roku przedstawia z kolei rytuał religii czy parareligii o nazwie Hauka, która powstała we francuskich koloniach w Afryce i przedrzeźniała ceremonie, na przykład wojskowe władz kolonialnych."
+    },
+    {
+      "start": 5578.92,
+      "end": 5588.38,
+      "text": "Dzisiaj Year of No Light wydają to na płycie, a ja się bardzo cieszę, choć muzyka ani trochę radosna nie jest."
+    },
+    {
+      "start": 5588.44,
+      "end": 5590.02,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5914.67,
+      "end": 5925.27,
+      "text": "Kiedy ostatnio oglądałem koncert Steve'a von Chilla na festiwalu Roadburn, nie mogłem się oprzeć wrażeniu, że chcę iść w ślady Nika Cave'a."
+    },
+    {
+      "start": 5925.81,
+      "end": 5936.21,
+      "text": "Po wysłuchaniu nowej płyty Steve'a zatytułowanej Alone in a World of Wands, tylko się w tym przekonaniu umocniłem."
+    },
+    {
+      "start": 5936.87,
+      "end": 5951.51,
+      "text": "Fani Marka Lanegana czy Hugo Reysa też znajdą tu coś dla siebie, choć niezmiennie słychać i na szczęście słychać, że to głos Neurosis, a więc jest mroczniej i ciężej."
+    },
+    {
+      "start": 5952.17,
+      "end": 5961.31,
+      "text": "Znakomity album, choć oczywiście za Neurosis tęsknię i jak głupi wierzę, że wrócą kiedyś w odświeżonym składzie."
+    },
+    {
+      "start": 5961.31,
+      "end": 5969.27,
+      "text": "Póki co słuchamy Steve'a, słuchamy intensywnie, żeby na polskich koncertach móc śpiewać razem z nim."
+    },
+    {
+      "start": 5970.07,
+      "end": 5976.43,
+      "text": "Pod koniec czerwca przyjeżdża do Krakowa i Warszawy i oczywiście widzimy się przy barierce."
+    },
+    {
+      "start": 6010.28,
+      "end": 6020.08,
+      "text": "The silence pulls the power from the air and I cannot clear my hand"
+    },
+    {
+      "start": 6020.08,
+      "end": 6030.62,
+      "text": "You often told me that time is full of holes and souls with empty eyes"
+    },
+    {
+      "start": 6030.62,
+      "end": 6038.7,
+      "text": "In days like these they're cryptic static in a fears and stands"
+    },
+    {
+      "start": 6038.7,
+      "end": 6043.22,
+      "text": "In the way of our dreams"
+    },
+    {
+      "start": 6043.22,
+      "end": 6046.76,
+      "text": "No I can't and I won't"
+    },
+    {
+      "start": 6046.76,
+      "end": 6052.42,
+      "text": "No I will not watch them fade"
+    },
+    {
+      "start": 6052.42,
+      "end": 6057.8,
+      "text": "No I can't and I won't"
+    },
+    {
+      "start": 6057.8,
+      "end": 6059.08,
+      "text": "No I will"
+    },
+    {
+      "start": 6080.39,
+      "end": 6110.37,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 6110.39,
+      "end": 6132.31,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 6132.31,
+      "end": 6136.23,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 6217.51,
+      "end": 6231.47,
+      "text": "Apokaliptyczna Amerykana. Tak ktoś nazwał tę muzykę i od razu miał moją uwagę. Amerykana uwielbiam, Apokalipsa jeszcze jak."
+    },
+    {
+      "start": 6231.47,
+      "end": 6253.19,
+      "text": "W dodatku zespół ma Lux w nazwie, no więc jak tu ich nie kochać. Grupa Lux Interna, bo o niej mowa na początku maja uraczyła nas nowym albumem zatytułowanym New Wilderness Gospel i choć pochodzi z Nowego Jorku muzykę ma zdecydowanie nie miejską."
+    },
+    {
+      "start": 6253.19,
+      "end": 6263.05,
+      "text": "Jak wilki. To tytuł utworu, Like Wolves, nie sugeruje bynajmniej, że Lux Interna grają jak wilki."
+    },
+    {
+      "start": 6274.91,
+      "end": 6276.91,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 6304.91,
+      "end": 6306.91,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 6309.91,
+      "end": 6310.91,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 6310.91,
+      "end": 6312.55,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 6548.36,
+      "end": 6564.06,
+      "text": "Zaczęliśmy od Polaków i na Polakach zakończymy zespół nazywa się Bezkres i niby jest nowofalowy, ale odkąd to nową falę wydaje wytwórnia Pagan Records, zasłużona przede wszystkim dla sceny black metalowej."
+    },
+    {
+      "start": 6564.44,
+      "end": 6577.76,
+      "text": "Jeśli jednak wierzyć wieści gminnej, która niesie pogłoskę, że to projekt, który powstał na gruzach formacji kły, wszystko staje się jasne, choć muzyka ciemna jak noc."
+    },
+    {
+      "start": 6578.42,
+      "end": 6589.58,
+      "text": "I wszystko zostaje w rodzinie rozszerzonej, bo zabrzmienie debiutu Bezkresu odpowiada Nihil, lider Furii, też wydawanej przez Pagan."
+    },
+    {
+      "start": 6590.22,
+      "end": 6606.28,
+      "text": "Powiedziałem, że nowa fala, bo to dominujący żywioł w muzyce Bezkresu, ale spotkaliśmy się w audycji ciężko na sercu, nie po to, żeby słuchać wariacji na temat Joy Division czy innej siekiery, tylko żeby było naprawdę groźnie,"
+    },
+    {
+      "start": 6606.76,
+      "end": 6613.8,
+      "text": "więc wybrałem utwór, w którym zespół nie wypiera się swoich ekstremalnych korzeni."
+    },
+    {
+      "start": 6613.8,
+      "end": 6620.84,
+      "text": "Ja już mówię dobranoc i zostawiam Państwa z bezkresem i utworem Śródgłos."
+    },
+    {
+      "start": 6620.84,
+      "end": 6622.36,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 26,
+    "transcribedAudioSec": 1648.18,
+    "segmentCount": 161,
+    "characterCount": 16709
+  },
+  "sourceId": "2025-05-28-metal-znad-wisly"
+}
