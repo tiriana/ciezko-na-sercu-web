@@ -2,10 +2,71 @@
   "version": 1,
   "id": "12d3f6f2-47fa-4d9c-af68-60fe93a531ec",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T11:28:09.410Z",
+  "updatedAt": "2026-11-06T11:33:23.225Z",
   "durationSec": 6889,
-  "summary": "",
-  "topics": [],
+  "summary": "Przegląd sierpniowych koncertów: Ossuary z Mental Funeral, Machine Head z Fear Factory i Frail w Katowicach, festiwal Silesian Noise z Mastodon i Ministry, Dark Angel grający cały album Darkness Descends, Mayhem oraz Gojira z Kingiem w Tauron Arenie. Zapowiedziano też piknikowy Summer Discomfort w Cholerzynie, gdzie zagrają m.in. Belzebong i Diving Stove. Wśród nowych płyt omówiono Ul chilijskiej grupy Mauiza, inspirowany kulturą Mapucze i nagrany z gościnnym udziałem Joe Duplantiera z Gojiry, The Exodus of Gravity projektu Arcadia z perkusistą Mastodon, EP Car Bomb oraz Blood Strangen szwedzkiego Blessings. Zaprezentowano również albumy Abigail Williams, Beheaded, Entrails, Malthusian i Unleashed.",
+  "topics": [
+    {
+      "start": 405,
+      "end": 547,
+      "label": "Ossuary, album Abhorrent Worship, koncert w krakowskim Warsztacie"
+    },
+    {
+      "start": 681,
+      "end": 819,
+      "label": "Iron Maiden, Avatar, OFF Festival, Machine Head i Fear Factory"
+    },
+    {
+      "start": 819,
+      "end": 914,
+      "label": "Silesian Noise: Mastodon, Ministry, Obituary, Between the Buried and Me"
+    },
+    {
+      "start": 1659,
+      "end": 1769,
+      "label": "Inter Arma, Wayfarer oraz Dark Angel z albumem Darkness Descends"
+    },
+    {
+      "start": 1949,
+      "end": 2022,
+      "label": "Summer Discomfort w Cholerzynie i koncert Diving Stove"
+    },
+    {
+      "start": 2720,
+      "end": 2872,
+      "label": "Płyta Ul grupy Mauiza o kulturze Mapucze"
+    },
+    {
+      "start": 3135,
+      "end": 3179,
+      "label": "Arcadia i The Exodus of Gravity z perkusistą Mastodon"
+    },
+    {
+      "start": 3435,
+      "end": 3488,
+      "label": "Car Bomb i EP Tiles Whisper's Dreams"
+    },
+    {
+      "start": 3928,
+      "end": 4004,
+      "label": "Blessings i album Blood Strangen z Pelagic Records"
+    },
+    {
+      "start": 4561,
+      "end": 4652,
+      "label": "Album Bring Mirrors to the Surface zespołu Za to krew"
+    },
+    {
+      "start": 5215,
+      "end": 5248,
+      "label": "Abigail Williams, Beheaded i Entrails, nowe albumy death metalowe"
+    },
+    {
+      "start": 6118,
+      "end": 6194,
+      "label": "Malthusian The Summoning Bell i Unleashed Fire Upon Your Lands"
+    }
+  ],
   "tags": [
     {
       "id": "abigail-williams",
@@ -137,7 +198,7 @@
   "tracks": [
     {
       "start": 7,
-      "end": 547,
+      "end": 405,
       "durationSec": 339,
       "artist": "Ossuary",
       "title": "Instinctual Prostration",
@@ -150,7 +211,7 @@
     },
     {
       "start": 547,
-      "end": 914,
+      "end": 681,
       "durationSec": 136,
       "artist": "Mammoth Grinder",
       "title": "Corpse of Divinant",
@@ -176,7 +237,7 @@
     },
     {
       "start": 1477,
-      "end": 1769,
+      "end": 1659,
       "durationSec": 182,
       "artist": "Ministry",
       "title": "Goddamn White Trash",
@@ -189,7 +250,7 @@
     },
     {
       "start": 1769,
-      "end": 2022,
+      "end": 1949,
       "durationSec": 181,
       "artist": "Suffocation",
       "title": "As Grace Descends",
@@ -215,7 +276,7 @@
     },
     {
       "start": 2262,
-      "end": 2872,
+      "end": 2720,
       "durationSec": 460,
       "artist": "GOJIRA",
       "title": "Flying Whales",
@@ -228,7 +289,7 @@
     },
     {
       "start": 2872,
-      "end": 3179,
+      "end": 3135,
       "durationSec": 264,
       "artist": "Mawiza",
       "title": "Ti Inan Paw-Pawkan (feat. Joe Duplantier)",
@@ -241,7 +302,7 @@
     },
     {
       "start": 3179,
-      "end": 3488,
+      "end": 3435,
       "durationSec": 258,
       "artist": "Arcadea",
       "title": "Fuzzy Planet",
@@ -267,7 +328,7 @@
     },
     {
       "start": 3707,
-      "end": 4004,
+      "end": 3928,
       "durationSec": 223,
       "artist": "ACCVSED & The Narrator",
       "title": "Don't Let Me Fall Apart",
@@ -280,7 +341,7 @@
     },
     {
       "start": 4004,
-      "end": 4652,
+      "end": 4561,
       "durationSec": 558,
       "artist": "Blessings",
       "title": "No Good Things",
@@ -293,7 +354,7 @@
     },
     {
       "start": 4652,
-      "end": 5248,
+      "end": 5215,
       "durationSec": 564,
       "artist": "Zatokrev",
       "title": "Unwinding Spirits (feat. Manuel Gagneux)",
@@ -332,7 +393,7 @@
     },
     {
       "start": 5861,
-      "end": 6194,
+      "end": 6118,
       "durationSec": 259,
       "artist": "Entrails",
       "title": "Wings of Death",

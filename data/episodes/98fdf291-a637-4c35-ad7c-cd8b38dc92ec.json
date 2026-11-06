@@ -2,10 +2,71 @@
   "version": 1,
   "id": "98fdf291-a637-4c35-ad7c-cd8b38dc92ec",
   "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T11:28:09.402Z",
+  "updatedAt": "2026-11-06T11:33:23.219Z",
   "durationSec": 6906,
-  "summary": "",
-  "topics": [],
+  "summary": "Odcinek zbudowany wokół miejsc z Ostrołęki i okolic, które zainspirowały dobór muzyki: kościoła św. Anny w Kamiance ukrytego w środku lasu, elektrowni oraz zakładu karnego. Przy kościele pojawia się Electric Wizard, a dalej utwory Idols i koncertowy album Alive Meshuggah. Wśród nowości omówiono szwedzki Floating z płytą Hesitating Lights łączący death metal z post-punkiem, mroczną, nie-metalową płytę Ethel Cain oraz industrialny album Spite of Fear King Josepha. Sięgnięto też po hardcore Incendiary, japoński Ground Zero i ich Consume Red z 1997, zsamplowany później przez Prostitute z debiutu Attempted Martyr oraz zapowiedziano debiut Maruży Pain to Power na 14 września. Całość zamyka refleksja o trudnych, nieprzystępnych miejscach, które inspirują do rzeczy wielkich, na przykładzie Chat Pile i wyludnionego górniczego miasta w Oklahomie.",
+  "topics": [
+    {
+      "start": 434,
+      "end": 471,
+      "label": "Kościół św. Anny w Kamiance jako inspiracja"
+    },
+    {
+      "start": 471,
+      "end": 485,
+      "label": "Electric Wizard i wiedźmy w leśnej scenerii"
+    },
+    {
+      "start": 1959,
+      "end": 2014,
+      "label": "Idols i Meshuggah z albumem Alive"
+    },
+    {
+      "start": 2701,
+      "end": 2708,
+      "label": "Floating i nowa płyta Hesitating Lights"
+    },
+    {
+      "start": 3975,
+      "end": 3996,
+      "label": "Ethel Cain i nowe albumy metalowe"
+    },
+    {
+      "start": 4449,
+      "end": 4472,
+      "label": "Elektrownia w Ostrołęce i industrial: Health"
+    },
+    {
+      "start": 4837,
+      "end": 4850,
+      "label": "King Joseph i album Spite of Fear"
+    },
+    {
+      "start": 5552,
+      "end": 5582,
+      "label": "Incendiary i muzyka hardcore"
+    },
+    {
+      "start": 5582,
+      "end": 5615,
+      "label": "Ground Zero i Consume Red z 1997"
+    },
+    {
+      "start": 5853,
+      "end": 5956,
+      "label": "Prostitute — All Hail i debiut Attempted Martyr"
+    },
+    {
+      "start": 6361,
+      "end": 6408,
+      "label": "Maruża — debiut Pain to Power"
+    },
+    {
+      "start": 6408,
+      "end": 6459,
+      "label": "Chat Pile i inspiracje trudnymi miejscami"
+    }
+  ],
   "tags": [
     {
       "id": "chat-pile",
@@ -102,7 +163,7 @@
   "tracks": [
     {
       "start": 24,
-      "end": 485,
+      "end": 434,
       "durationSec": 375,
       "artist": "Hesitation Wounds",
       "title": "New Abuse",
@@ -154,7 +215,7 @@
     },
     {
       "start": 1765,
-      "end": 2014,
+      "end": 1959,
       "durationSec": 196,
       "artist": "IDLES",
       "title": "Divide & Conquer (Live at Le Bataclan)",
@@ -180,7 +241,7 @@
     },
     {
       "start": 2364,
-      "end": 2708,
+      "end": 2701,
       "durationSec": 282,
       "artist": "Meshuggah",
       "title": "New Millennium Cyanide Christ (Live)",
@@ -206,7 +267,7 @@
     },
     {
       "start": 3253,
-      "end": 3996,
+      "end": 3975,
       "durationSec": 723,
       "artist": "Grayceon",
       "title": "Forever Teeth",
@@ -219,7 +280,7 @@
     },
     {
       "start": 3996,
-      "end": 4472,
+      "end": 4449,
       "durationSec": 425,
       "artist": "Ethel Cain",
       "title": "Nettles",
@@ -245,7 +306,7 @@
     },
     {
       "start": 4685,
-      "end": 4850,
+      "end": 4837,
       "durationSec": 153,
       "artist": "King Yosef",
       "title": "Spire Of Fear",
@@ -271,7 +332,7 @@
     },
     {
       "start": 5224,
-      "end": 5615,
+      "end": 5552,
       "durationSec": 319,
       "artist": "Incendiary",
       "title": "Front Toward Enemy",
@@ -284,7 +345,7 @@
     },
     {
       "start": 5615,
-      "end": 5956,
+      "end": 5853,
       "durationSec": 240,
       "artist": "Prostitute",
       "title": "All Hail",
@@ -310,7 +371,7 @@
     },
     {
       "start": 6204,
-      "end": 6459,
+      "end": 6361,
       "durationSec": 158,
       "artist": "Maruja",
       "title": "Look Down On Us",
