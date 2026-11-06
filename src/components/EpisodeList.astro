@@ -28,9 +28,11 @@ const suffix = tagId ? `?tag=${tagId}` : '';
     <li>
       <a href={`/odcinki/${item.slug}/${suffix}`}>
         <time datetime={item.date}>{formatDate(item.date)}</time>
-        <span>{item.title}</span>
+        <span class="episode-list__main">
+          <span>{item.title}</span>
+          {item.tags && item.tags.length > 0 && <span class="episode-list__tags">{item.tags.join(' · ')}</span>}
+        </span>
       </a>
-      {item.tags && item.tags.length > 0 && <p class="episode-list__tags">{item.tags.join(' · ')}</p>}
     </li>
   ))}
 </ul>

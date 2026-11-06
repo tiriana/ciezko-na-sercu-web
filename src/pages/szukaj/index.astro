@@ -154,9 +154,6 @@ import Base from '../../layouts/Base.astro';
 
     input.addEventListener('blur', () => window.setTimeout(closeSuggestions, 100));
 
-    const formatDate = (iso: string) =>
-      new Date(`${iso}T00:00:00Z`).toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
-
     const render = () => {
       const query = input.value.trim();
       list.innerHTML = '';
@@ -176,17 +173,20 @@ import Base from '../../layouts/Base.astro';
         link.href = `/odcinki/${entry.slug}/`;
         const time = document.createElement('time');
         time.dateTime = entry.date;
-        time.textContent = formatDate(entry.date);
+        time.textContent = entry.dateLabel ?? entry.date;
+        const main = document.createElement('span');
+        main.className = 'episode-list__main';
         const title = document.createElement('span');
         title.textContent = entry.title;
-        link.append(time, title);
-        item.append(link);
+        main.append(title);
         if (result.tags.length > 0) {
-          const tags = document.createElement('p');
+          const tags = document.createElement('span');
           tags.className = 'episode-list__tags';
           tags.textContent = result.tags.slice(0, 6).map((tag) => tag.label).join(' · ');
-          item.append(tags);
+          main.append(tags);
         }
+        link.append(time, main);
+        item.append(link);
         list.append(item);
       }
     };

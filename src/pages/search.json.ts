@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 
 import { getEntries, getEpisodeFiles } from '../lib/data';
-import { resolveDisplayTitle } from '../lib/format';
+import { formatDate, resolveDisplayTitle } from '../lib/format';
 import { normalize } from '../lib/search';
 
 export const prerender = true;
@@ -18,7 +18,7 @@ export const GET: APIRoute = async () => {
     const tags = (episode?.tags ?? []).map((tag) => ({ id: tag.id, label: tag.label, type: tag.type }));
     const title = resolveDisplayTitle(entry);
     const haystack = normalize([entry.title, title, ...tags.map((tag) => tag.label)].join(' '));
-    return { slug: entry.slug, title, date: entry.date, haystack, tags };
+    return { slug: entry.slug, title, date: entry.date, dateLabel: formatDate(entry.date), haystack, tags };
   });
 
   return new Response(JSON.stringify(index), {

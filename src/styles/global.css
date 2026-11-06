@@ -1425,6 +1425,7 @@ a {
 .episode-list time {
   flex: 0 0 200px;
   white-space: nowrap;
+  text-align: right;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
@@ -1488,8 +1489,15 @@ a {
   font-size: 13px;
 }
 
+.episode-list__main {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
 .episode-list__tags {
-  margin: 0 0 10px 176px;
+  margin: 0;
   color: var(--muted);
   font-size: 12.5px;
 }

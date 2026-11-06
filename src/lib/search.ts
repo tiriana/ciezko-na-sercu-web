@@ -19,6 +19,7 @@ export interface SearchEntry {
   slug: string;
   title: string;
   date: string;
+  dateLabel?: string;
   /** Tytuł i tagi znormalizowane raz przy buildzie — klient tylko porównuje. */
   haystack: string;
   tags: SearchTag[];
