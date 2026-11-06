@@ -1,0 +1,800 @@
+{
+  "version": 1,
+  "episodeId": "3ec3d08a-58c3-49a9-bae4-e49c5559bab8",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "fileSizeBytes": 109780979,
+  "fileMtimeMs": 1789151279088.1777,
+  "windows": [
+    {
+      "index": 0,
+      "start": 2.88,
+      "end": 8.76
+    },
+    {
+      "index": 1,
+      "start": 195.52,
+      "end": 266.91
+    },
+    {
+      "index": 2,
+      "start": 498.28,
+      "end": 586.84
+    },
+    {
+      "index": 3,
+      "start": 1055.94,
+      "end": 1123.48
+    },
+    {
+      "index": 4,
+      "start": 1621.67,
+      "end": 1678.33
+    },
+    {
+      "index": 5,
+      "start": 1816.64,
+      "end": 1919.52
+    },
+    {
+      "index": 6,
+      "start": 2164.26,
+      "end": 2221.82
+    },
+    {
+      "index": 7,
+      "start": 2555.68,
+      "end": 2636.67
+    },
+    {
+      "index": 8,
+      "start": 3010.28,
+      "end": 3130.88
+    },
+    {
+      "index": 9,
+      "start": 3405.89,
+      "end": 3457.05
+    },
+    {
+      "index": 10,
+      "start": 3756.32,
+      "end": 3839
+    },
+    {
+      "index": 11,
+      "start": 4323.56,
+      "end": 4358.08
+    },
+    {
+      "index": 12,
+      "start": 4827.24,
+      "end": 4869.34
+    },
+    {
+      "index": 13,
+      "start": 5299.78,
+      "end": 5366.4
+    },
+    {
+      "index": 14,
+      "start": 5385.83,
+      "end": 5436.67
+    },
+    {
+      "index": 15,
+      "start": 5490.21,
+      "end": 5567.16
+    },
+    {
+      "index": 16,
+      "start": 5765.83,
+      "end": 5858.56
+    },
+    {
+      "index": 17,
+      "start": 6066.92,
+      "end": 6243.68
+    }
+  ],
+  "segments": [
+    {
+      "start": 2.88,
+      "end": 6.46,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 196.42,
+      "end": 202.48,
+      "text": "Dobry wieczór. Nie wiem jak Państwo, ale ja chętnie przespałbym cały grudzień i połowę stycznia."
+    },
+    {
+      "start": 203.32,
+      "end": 209.72,
+      "text": "Wiem, to kontrowersyjne wyznanie, jeśli wziąć pod uwagę porę, o której emitowana jest ta audycja,"
+    },
+    {
+      "start": 210.16,
+      "end": 214.56,
+      "text": "ale co innego marzenia, co innego brutalna rzeczywistość."
+    },
+    {
+      "start": 214.56,
+      "end": 226.34,
+      "text": "Z tą drugą równie brutalnie rozprawia się zespół Brudny SMM na swojej płycie Silesian Bastards, z której wysłuchaliśmy piosenki tytułowej."
+    },
+    {
+      "start": 226.9,
+      "end": 235.62,
+      "text": "Brudny SMM promuje ten album koncertami. 6 grudnia w Poznaniu, 7 grudnia w Katowicach."
+    },
+    {
+      "start": 236.1,
+      "end": 240.88,
+      "text": "Towarzyszą im Nekrofag tylko w Poznaniu i Roadhog w obu miastach."
+    },
+    {
+      "start": 240.88,
+      "end": 246.84,
+      "text": "Za chwilę posłuchamy Roadhog, a ja jeszcze tylko dopełnię formalności."
+    },
+    {
+      "start": 247.34,
+      "end": 251.76,
+      "text": "Kłania się Wam Ciemny Blondyn wieczorową porą. Nazywam się Jarek Szubrycht."
+    },
+    {
+      "start": 252.1,
+      "end": 257.9,
+      "text": "Audycja nazywa się Ciężko na sercu, a radio to Trójka, program trzeci Polskiego Radia."
+    },
+    {
+      "start": 258.32,
+      "end": 264.54,
+      "text": "Wydawcą audycji jest Mariusz Owczarek, a gra nam Roadhog z płyty Gates to Madness."
+    },
+    {
+      "start": 499.14,
+      "end": 508.64,
+      "text": "Kiedyś grudzień w branży muzycznej był czasem martwym, niemal niczego się nie wydawało, a jeśli koncerty, to tylko z kolędami."
+    },
+    {
+      "start": 509.34,
+      "end": 519.18,
+      "text": "Jakiś czas temu ta sezonowość przestała obowiązywać i właściwie tylko w okresie świąteczno-noworocznym trochę mniej się dzieje przez raptem parę dni."
+    },
+    {
+      "start": 519.56,
+      "end": 530.3,
+      "text": "No i dobrze, człowiek nie jest taki, żeby w grudniu na koncert nie poszedł, skoro już nie wolno mu całego grudnia przespać, co ustaliliśmy w poprzednim wejściu."
+    },
+    {
+      "start": 531.18,
+      "end": 538.34,
+      "text": "A zatem kilka słów o trasach polskich zespołów rozpoczętych jeszcze w listopadzie."
+    },
+    {
+      "start": 538.96,
+      "end": 546.96,
+      "text": "Proszę sobie zerkać na profile tych grup, żeby sprawdzić dokładnie gdzie grają i którego, bo jest to kilka koncertów w różnych miastach."
+    },
+    {
+      "start": 546.96,
+      "end": 556.42,
+      "text": "A więc od 6 grudnia w trasie do 21 właściwie z przerwami jest krakowski skeptik i jego goście."
+    },
+    {
+      "start": 557.12,
+      "end": 563.54,
+      "text": "W trasie również jest grupa Sonata i Narbo da Kal."
+    },
+    {
+      "start": 564.14,
+      "end": 571.8,
+      "text": "W trasie również są Illusion i Frontside i Hostia, to jest takie trio."
+    },
+    {
+      "start": 571.8,
+      "end": 574.7,
+      "text": "A także zespół Korapszyn."
+    },
+    {
+      "start": 574.7,
+      "end": 579.62,
+      "text": "Jeszcze raz zachęcam do sprawdzania social mediów wymienionych grup."
+    },
+    {
+      "start": 579.78,
+      "end": 584.62,
+      "text": "A nam pięknie zagra Sonata dla przyjaciół Sutanna."
+    },
+    {
+      "start": 584.62,
+      "end": 586.84,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1055.94,
+      "end": 1073.36,
+      "text": "To była sunnata z tegorocznej płyty Chasing the Shadows. A my teraz przenosimy się w czasie do 7 grudnia, kiedy to w warszawskim klubie Proxima spotkają się ze swoimi fanami grupy Helga, Oransi Pazuzu i Solstafir."
+    },
+    {
+      "start": 1073.36,
+      "end": 1090.2,
+      "text": "Dobry to będzie koncert, bo Solstafir znowu ma kły i pazury i spod tych swetrów znowu przezierają kolczugi. Oransi Pazuzu natomiast nagrali jedną z najlepszych płyt Mroku, czyli Muntantuja."
+    },
+    {
+      "start": 1090.2,
+      "end": 1109.78,
+      "text": "I prawdę mówiąc współczuję trochę Solstafir, że wychodzą po Oransi, bo to najpierw będzie dla publiczności zderzenie z rozpędzonym pociągiem czy nawet statkiem kosmicznym, a później dopiero przyjdzie czas na subtelności i niuans w wykonaniu Islandczyków."
+    },
+    {
+      "start": 1109.78,
+      "end": 1121.86,
+      "text": "U mnie dzisiaj zatem odwrotnie najpierw Solstafir z nowej bardzo udanej płyty Hinhelga Kfol, a następnie Oransi Pazuzu, czyli sałatka z grzybów i gwoździ."
+    },
+    {
+      "start": 1121.86,
+      "end": 1123.48,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1622.57,
+      "end": 1627.63,
+      "text": "Terror spóźnił się na czas najlepszej świetności amerykańskiego,"
+    },
+    {
+      "start": 1628.13,
+      "end": 1630.83,
+      "text": "zmetalizowanego, twardzielskiego hardcora."
+    },
+    {
+      "start": 1631.75,
+      "end": 1634.91,
+      "text": "W dodatku grupa pochodzi z Los Angeles, nie z Nowego Jorku,"
+    },
+    {
+      "start": 1635.01,
+      "end": 1637.37,
+      "text": "tudzież okolic, a więc wszystko źle."
+    },
+    {
+      "start": 1637.87,
+      "end": 1642.13,
+      "text": "Tylko muzyka dobrze, a koncerty nawet bardzo dobrze."
+    },
+    {
+      "start": 1642.71,
+      "end": 1647.29,
+      "text": "Terror wraca do Polski, zagra w Hydrozagadce w Warszawie,"
+    },
+    {
+      "start": 1647.77,
+      "end": 1650.13,
+      "text": "a więc w klubie niewielkim, ciasnym."
+    },
+    {
+      "start": 1650.13,
+      "end": 1655.15,
+      "text": "Zatem mogę sobie tylko wyobrażać, jak dzikie harce tam będą siedziały"
+    },
+    {
+      "start": 1655.15,
+      "end": 1659.01,
+      "text": "i bardzo proszę Państwa, żeby nie opuszczać klubu spoconym,"
+    },
+    {
+      "start": 1659.13,
+      "end": 1664.85,
+      "text": "żeby odczekać kilka chwil po koncercie, bo w grudniu nieszczęście gotowe."
+    },
+    {
+      "start": 1665.37,
+      "end": 1672.75,
+      "text": "Zanim jednak Terror rozłupie Wam czaszki, rozmiękczyć je będą mogli Belgowie z zespołu Nesty"
+    },
+    {
+      "start": 1672.75,
+      "end": 1676.69,
+      "text": "i nowojorski, a tutaj miejsce się zgadza, kombast."
+    },
+    {
+      "start": 1677.65,
+      "end": 1678.33,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1816.64,
+      "end": 1828.56,
+      "text": "Teraz kilka słów o największym metalowym koncercie grudnia, na którym pewnie spotkam wielu z miłych słuchaczy machających łbami pod sceną."
+    },
+    {
+      "start": 1828.56,
+      "end": 1848.04,
+      "text": "I ani trochę mnie to nie dziwi, bo 11 grudnia w Katowicach gościć będzie wspaniałe Trash Metalowe Trio. Trzech tenorów Traszu. Traszowi Trzej Królowie, Triple Trash Treat, że przypomnę kultowy format ze starego i zagranicznego MTV."
+    },
+    {
+      "start": 1848.04,
+      "end": 1863.04,
+      "text": "Scen spotka, a więc miejsca uświęconego metalowymi tradycjami, wezmą 11 grudnia w posiadanie amerykańskie grupy Testament i Antrax oraz Niemcy z Kreatora."
+    },
+    {
+      "start": 1863.04,
+      "end": 1881.38,
+      "text": "Mówię Testament i Kreator, chociaż wiem, że tak nie powinienem, ale tak się nauczyłem i jak wiadomo, czym skorupka za młodu. Tak też nazywało się te zespoły w moim pokoleniu i już tego nie zmienię i nawet nie będę próbował."
+    },
+    {
+      "start": 1881.38,
+      "end": 1897.44,
+      "text": "Bo zresztą na zapowiadanym właśnie teraz przeze mnie koncercie na pewno usłyszycie skandowanie Kreator, Kreator w wykonaniu siwobrodych wojów, czy tam wujów w moim wieku oraz Kreator, Kreator."
+    },
+    {
+      "start": 1897.44,
+      "end": 1913.32,
+      "text": "I tak pokrzykiwać będzie młodzież po Erasmusach, ale tak naprawdę, choć dzieli ich pokolenie i znajomość języków i kategoria wagowa, łączy jeden wspólny cel."
+    },
+    {
+      "start": 1913.82,
+      "end": 1917.76,
+      "text": "Usłyszeć na żywo cokolwiek z płyty Pleasure to Kill."
+    },
+    {
+      "start": 1917.76,
+      "end": 1919.52,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2164.26,
+      "end": 2176.54,
+      "text": "Kochałem Kreatora do płyty Extreme Aggression włącznie, no może nawet do Comma of Souls. Późniejsze płyty lubię, ale już tylko lubię."
+    },
+    {
+      "start": 2176.86,
+      "end": 2191.42,
+      "text": "Natomiast koncerty, ten zespół zawsze grał bardzo dobre. No a pierwsze płyty to wiadomo prawdziwy kult. Miałem nawet na swojej pierwszej, drugiej chyba katanie na plecach telewizor Pleasure to Kill,"
+    },
+    {
+      "start": 2191.94,
+      "end": 2203.68,
+      "text": "bo w tamtym czasie, na przełomie lat 80. i 90. Kreator był w Polsce wielki, wielbiony niemal na równi ze Slayerem i z Venom."
+    },
+    {
+      "start": 2204.36,
+      "end": 2220.26,
+      "text": "No a teraz inny zespół, jeszcze większy, jeżeli mierzyć na liczbę sprzedanych płyt, choć w Polsce chyba nie aż tak bardzo kochany, nie aż tak bardzo wielbiony jak Niemcy z Kreatora."
+    },
+    {
+      "start": 2220.26,
+      "end": 2221.82,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2555.68,
+      "end": 2578.72,
+      "text": "Tak, to Antrax. Niby zespół z wielkiej czwórki thrash metalu, ale od zawsze budzący kontrowersje, no bo za wesoły, bo kombinował z punkiem, tak jakby cały thrash nie był z panka, czy rapem, bo odszedł Belladonna, a więc niedobrze, bo Belladonna wrócił, też niedobrze."
+    },
+    {
+      "start": 2579.6,
+      "end": 2587.22,
+      "text": "Ja tam Antrax lubię, a może nie wszystko, ale za to te rzeczy Antraxu, które lubię, to lubię bardzo."
+    },
+    {
+      "start": 2587.8,
+      "end": 2595.68,
+      "text": "Mówiąc szczerze, sądzę, że z thrashowej wielkiej czwórki jest to zespół najbardziej równy."
+    },
+    {
+      "start": 2596.84,
+      "end": 2612.38,
+      "text": "I choć nigdy nie latali aż tak wysoko jak koledzy z Kalifornii na swoich najnowszych płytach, to też nigdy nie przydarzyły im się ewidentne potknięcia i latali wystarczająco wysoko, właściwie zawsze."
+    },
+    {
+      "start": 2613.42,
+      "end": 2621.74,
+      "text": "Najbardziej cenię chyba płyty Among the Living i Spreading the Disease, to z racji metrykalnych zapewne, ale to też są po prostu dobre płyty."
+    },
+    {
+      "start": 2622.68,
+      "end": 2634.64,
+      "text": "Lubię też bardzo State of Euphoria, a więc ten album, który inspiruje polskich black metalowców od 1988 roku."
+    },
+    {
+      "start": 3010.28,
+      "end": 3029.14,
+      "text": "Wreszcie testament. Zawsze tuż za wielką czwórką, zawsze solidnie, czasami genialnie. Bardzo lubię debiut, kocham New Order, bo ma tę dynamikę, zadziorność debiutu, ale zarazem ciekawszą, mroczniejszą aurę."
+    },
+    {
+      "start": 3029.74,
+      "end": 3049.3,
+      "text": "Uwielbiam Practice What You Preach, ale też ten zwrot ku ekstremie, ku death metalowi bardzo przypadł mi do gustu The Gathering. To oczywiście potężna płyta, choć i te najnowsze też sroce spod ogona nie wypadły. Testament to solidna firma zawsze dowozi."
+    },
+    {
+      "start": 3050.88,
+      "end": 3065.7,
+      "text": "Znakiem firmowym zespołu, nie jedynym, są pojedynki gitarowe Erika Petersona, który tutaj jest tą metalową siłą, znakomicie rytmicznie, fantastyczne wymyśla riffy."
+    },
+    {
+      "start": 3066.26,
+      "end": 3074.66,
+      "text": "I Aleksa Skolnika, który jest z kolei, czy reprezentuje jazzową finezję, ale oczywiście obaj grać potrafią, grać właściwie wirtuozersko."
+    },
+    {
+      "start": 3075.88,
+      "end": 3085.46,
+      "text": "Najważniejszy jednak jest oczywiście Chuck Billy, jeden z najlepszych głosów i jeden z topowych frontmanów w tym gatunku."
+    },
+    {
+      "start": 3085.64,
+      "end": 3092.18,
+      "text": "Testament również dzięki niemu zawsze na koncertach tak doskonale się sprawdza."
+    },
+    {
+      "start": 3092.4,
+      "end": 3103.18,
+      "text": "Uważam tylko, żeby nie podchodzić na ich koncertach, już chyba o tym mówiłem w tej audycji, zbyt blisko, bo oni zawsze odkręcają się na sprzęcie na maksa,"
+    },
+    {
+      "start": 3103.18,
+      "end": 3108.96,
+      "text": "co ma swoje plusy dodatnie, bo na koncerty metalowe powinny trochę sponiewierać."
+    },
+    {
+      "start": 3109.56,
+      "end": 3118.64,
+      "text": "No ale i plusy ujemne, bo po pierwsze piszczy w uszach, a po drugie akurat właśnie testament ma w swoich numerach na tyle finezji, na tyle dobrze je wykonuje,"
+    },
+    {
+      "start": 3118.78,
+      "end": 3123.4,
+      "text": "że czasami trochę więcej selektywności by się przydało."
+    },
+    {
+      "start": 3123.5,
+      "end": 3128.5,
+      "text": "Ale już nie narzekam na pastu jeglany i puszczam Państwu testament."
+    },
+    {
+      "start": 3130.14,
+      "end": 3130.88,
+      "text": "Muzyka"
+    },
+    {
+      "start": 3405.89,
+      "end": 3421.35,
+      "text": "Fit for an Autopsy wypuścili niedawno nowy, siódmy już album zatytułowany The Nothing That He Is, na którym zespół ten rozszerza swoją wizję progresywnego deathcora."
+    },
+    {
+      "start": 3421.69,
+      "end": 3432.27,
+      "text": "Płyta opowiada o najmroczniejszych aspektach ludzkiej natury. Nigdy bym się nie spodziewał, w metalu taka tematyka się nie zdarza."
+    },
+    {
+      "start": 3433.09,
+      "end": 3454.63,
+      "text": "Ale żarty na bok, bo materiał naprawdę świetny. Fit for an Autopsy. Oczywiście pojechali w trasę promować tę płytę i wystąpią w Polsce już 11 grudnia, a więc to propozycja tylko dla tych, co nie wybiorą się na trasze do Spodka, bardzo mi przykro, w warszawskiej Proximie."
+    },
+    {
+      "start": 3756.32,
+      "end": 3769.46,
+      "text": "Takie rzeczy będą się działy 11 grudnia w warszawskiej Proximie i lepiej się na ten koncert nie spóźnić, bo już od samego początku będzie naprawdę dobrze."
+    },
+    {
+      "start": 3769.46,
+      "end": 3788.46,
+      "text": "Przed Feat for an Autopsy zaprezentują się aż trzy zespoły, Silosis, Darkest Hour i Heriot. O Brytyjczykach z Heriot już tu opowiadałem, ich płyta The Word by the Mouth of Hell to absolutna czołówka tegorocznego nowego metalu."
+    },
+    {
+      "start": 3788.7,
+      "end": 3801.76,
+      "text": "Silosis przy nich to już kapela zasłużona, bo istniejąca od ponad dwóch dekad z kilkoma płytami na koncie, w tym najnowszą, ubiegłoroczną A Sign of Things to Come."
+    },
+    {
+      "start": 3802.7,
+      "end": 3814.82,
+      "text": "Ich propozycja to pogranicze pomiędzy traszem, a nieco bardziej nowoczesnym metalcorem. Od wydawnictwa właściwie zależy, który z tych żywiołów w jakiej proporcji jest bardziej obecny."
+    },
+    {
+      "start": 3814.82,
+      "end": 3825.44,
+      "text": "Tuż przed trasą Silosis przypomnieli o sobie epką zatytułowaną The Path i numer tytułowy to ich wspólny utwór z Heriot właśnie."
+    },
+    {
+      "start": 3826.54,
+      "end": 3837.38,
+      "text": "No i oczywiście nie wypada tego nie zaprezentować, tym bardziej, że numer całkiem udany, ale puszczę też Heriot solo, bo lubię i kto mi zabroni."
+    },
+    {
+      "start": 3838.38,
+      "end": 3839,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4323.56,
+      "end": 4339.26,
+      "text": "13 grudnia warszawska progresja zadrży w posadach, o co zadba przede wszystkim gwiazda wieczoru, czyli amerykańska legenda death metalu w porywach do death grindu, grupa Dine Fitus."
+    },
+    {
+      "start": 4339.26,
+      "end": 4355.9,
+      "text": "Słyną z bezkompromisowego, brutalnego brzmienia, biegłości technicznej i zaangażowanych politycznych tekstów, a więc mamy do czynienia z ekstremalną muzyką dla dorosłych, no więc czego tu nie lubić."
+    },
+    {
+      "start": 4355.9,
+      "end": 4358.08,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4827.24,
+      "end": 4855.84,
+      "text": "Dying Fitus jest dobry na wszystko, ale proszę przyjść na ten koncert punktualnie i nie marnować czasu w barze, bo Amerykanie przywożą ze sobą doborową paczkę równie bezkompromisowych rodaków, a więc Chelsea Green, których ostatni album nosi tytuł Suffer in Heaven i do tego Vitriol, których najnowsza płyta nazywa się Suffer and Become."
+    },
+    {
+      "start": 4856.16,
+      "end": 4864.72,
+      "text": "Proszę zwrócić uwagę na to, że słowo Suffer, cierpienie, występuje w tytułach obu tych albumów."
+    },
+    {
+      "start": 4865.16,
+      "end": 4865.82,
+      "text": "Przypadek?"
+    },
+    {
+      "start": 4865.82,
+      "end": 4869.34,
+      "text": "It's not going back!"
+    },
+    {
+      "start": 5300.52,
+      "end": 5305.38,
+      "text": "Za nami Chelsea Green Vitriol, Dine Phytos też już był."
+    },
+    {
+      "start": 5306.14,
+      "end": 5310.68,
+      "text": "To jeszcze czwarty z zespołów, które pojawią się w progresji 13 grudnia."
+    },
+    {
+      "start": 5311.16,
+      "end": 5318.16,
+      "text": "Nazywa się Despised Icon, pochodzi z Kanady i już od dwóch dekad pięknie nam gra"
+    },
+    {
+      "start": 5318.16,
+      "end": 5325.62,
+      "text": "Deathcora na najwyższych obrotach, rozpisanego na dwa gardła, czy raczej na dwie kopary."
+    },
+    {
+      "start": 5326.32,
+      "end": 5333.02,
+      "text": "Widziałem Despised Icon dwa lata temu w Budapeszcie, kiedy jeździli po Europie w towarzystwie Decapitated"
+    },
+    {
+      "start": 5333.02,
+      "end": 5339.96,
+      "text": "i to był bardzo dobry koncert, więc też innego nie ma powodu spodziewać się w Warszawie."
+    },
+    {
+      "start": 5352.86,
+      "end": 5366.4,
+      "text": "Wszystkie prawa zastrzeżone."
+    },
+    {
+      "start": 5385.83,
+      "end": 5415.81,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5415.83,
+      "end": 5436.67,
+      "text": "Dziękuje za oglądanie!"
+    },
+    {
+      "start": 5490.21,
+      "end": 5512.47,
+      "text": "Fani Def Cora i brzmień pokrewnych prosto z Warszawy będą mogli się udać do Krakowa, gdzie dzień później, a więc 14 grudnia odbędzie się 10. edycja Drownfest, imprezy zorganizowanej przez zespół Drown My Day, stąd nazwa w klubie Zaścianek."
+    },
+    {
+      "start": 5512.47,
+      "end": 5526.97,
+      "text": "W tym roku gwiazdą wieczoru będzie legenda polskiej sceny Metal Cora, ostatnio przez dłuższy czas pauzująca, więc przez fanów gatunku teraz witana na scenie entuzjastycznie grupa Faust Again."
+    },
+    {
+      "start": 5527.63,
+      "end": 5550.29,
+      "text": "Program uzupełniają oczywiście gospodarze imprezy, czyli Down My Day, warszawska grupa Czerń, metalkorowe Moron i My Own Abyss, defkorowcy z zespołu Synapsa oraz Six Steps Forward, którzy proponują nowoczesny hardcore."
+    },
+    {
+      "start": 5550.29,
+      "end": 5565.53,
+      "text": "Ja wiem, że grudzień i być może będzie już śnieg, ale na ten koncert warto przyjść w lekkim, sportowym obuwiu, bo trzeba będzie wysoko skakać. Może warto wziąć jak na WF buty na zmianę."
+    },
+    {
+      "start": 5766.79,
+      "end": 5772.71,
+      "text": "Life of Agony. Bez prądu, tylko Mina, Joy i Alan."
+    },
+    {
+      "start": 5773.33,
+      "end": 5779.73,
+      "text": "To nie będzie zwykły występ i właściwie nie wiem, jak to sobie wyobrazić,"
+    },
+    {
+      "start": 5780.35,
+      "end": 5784.53,
+      "text": "bo oczywiście rozumiem ten ładunek emocjonalny utworów Life of Agony."
+    },
+    {
+      "start": 5785.01,
+      "end": 5787.89,
+      "text": "To na pewno da się przetłumaczyć na inne instrumenty,"
+    },
+    {
+      "start": 5787.99,
+      "end": 5793.19,
+      "text": "no ale jednak ciężar tych płyt, szczególnie pierwszej, River Run Shred,"
+    },
+    {
+      "start": 5793.19,
+      "end": 5796.15,
+      "text": "która jest dla mnie jedną z płyt formacyjnych,"
+    },
+    {
+      "start": 5796.87,
+      "end": 5802.45,
+      "text": "ciężar wydaje mi się zupełnie nieodzownym elementem tej muzyki."
+    },
+    {
+      "start": 5802.57,
+      "end": 5806.01,
+      "text": "No ale skoro kiedyś Alice in Chains tak pięknie sobie poradziło bez prądu,"
+    },
+    {
+      "start": 5806.09,
+      "end": 5809.77,
+      "text": "to być może Life of Agony też znajdą sposób."
+    },
+    {
+      "start": 5809.95,
+      "end": 5815.55,
+      "text": "Przekonają się już ci, którzy nowojorską grupę zobaczą i usłyszą"
+    },
+    {
+      "start": 5815.55,
+      "end": 5822.43,
+      "text": "w wersji akustycznej 18 grudnia we wrocławskim starym klasztorze."
+    },
+    {
+      "start": 5822.43,
+      "end": 5826.99,
+      "text": "Jak już wspomniałem, River Run Shred to jedna z tych płyt,"
+    },
+    {
+      "start": 5827.05,
+      "end": 5831.19,
+      "text": "które dla mnie są najważniejsze, jedna z płyt właściwie życia"
+    },
+    {
+      "start": 5831.19,
+      "end": 5836.99,
+      "text": "i już ją wciężko na sercu prezentowałem jej fragmenty właściwie."
+    },
+    {
+      "start": 5837.71,
+      "end": 5841.57,
+      "text": "Natomiast wielką krzywdą byłoby mówienie o Life of Agony"
+    },
+    {
+      "start": 5841.57,
+      "end": 5844.33,
+      "text": "jako o zespole jednej płyty,"
+    },
+    {
+      "start": 5844.87,
+      "end": 5850.43,
+      "text": "bo chociażby kolejny album, Ugly, to rzecz absolutnie wspaniała"
+    },
+    {
+      "start": 5850.43,
+      "end": 5853.09,
+      "text": "i tego jeszcze chyba nie grałem."
+    },
+    {
+      "start": 6066.92,
+      "end": 6080.3,
+      "text": "Na koniec kilka słów o koncertach, które organizator promuje pod szyldem Trasa Roku. To bardzo buńczuczna deklaracja, ale nie bez pokrycia."
+    },
+    {
+      "start": 6080.3,
+      "end": 6096.62,
+      "text": "Muszę przyznać, na pewno jest to jedna z ciekawszych tras koncertowych metalowych, okołometalowych, jakie w 2024 roku przetoczyły się, czy w tym przypadku przetoczą jeszcze, przez Polskę."
+    },
+    {
+      "start": 6096.92,
+      "end": 6109.72,
+      "text": "A było dużo dobrego, jak doskonale Państwo wiecie. Mam na myśli wspólne występy katowickiej grupy Furia i zespołów Galswirt i Aluktodolo."
+    },
+    {
+      "start": 6109.72,
+      "end": 6124.86,
+      "text": "Furia jest tu oczywiście gospodarzem, Galswirt i Aluktodolo gośćmi. 19 grudnia we wrocławskim A2, 20 grudnia w gdańskim B90."
+    },
+    {
+      "start": 6125.7,
+      "end": 6134.5,
+      "text": "21 grudnia w warszawskim klubie Progresja i wielki finał 22 grudnia w krakowskim Hype Parku."
+    },
+    {
+      "start": 6134.5,
+      "end": 6147.8,
+      "text": "Furia wciąż jeszcze jeździ z programem opartym na doskonałej ubiegłorocznej płycie Huta Luna, a ich goście to Galswirt, jak już wspomniałem."
+    },
+    {
+      "start": 6148,
+      "end": 6159.92,
+      "text": "Niedawno gościł w Polsce zespół Gorgorod, wciąż bardzo dobry, ale bez Gala za mikrofonem już nie tak dobry, czyli nie tak zły jak wcześniej."
+    },
+    {
+      "start": 6160.8,
+      "end": 6169.6,
+      "text": "I Gal tę swoją wizję black metalu roztacza teraz we własnym składzie na koncertach, na płytach też, ale na koncertach to jest absolutnie"
+    },
+    {
+      "start": 6169.6,
+      "end": 6177.04,
+      "text": "absolutnie fantastyczne. Moim zdaniem to jest jeden z najlepszych czynnych obecnie zespołów black metalowych z Norwegii."
+    },
+    {
+      "start": 6178,
+      "end": 6183.78,
+      "text": "Zupełnie inną muzykę proponuje trzeci zespół, czyli Aluktodolo."
+    },
+    {
+      "start": 6185.04,
+      "end": 6196.34,
+      "text": "Francuska grupa, która w tym roku, we wrześniu przypomniała sobie nową płytą Luxe i też koncertem na festiwalu Summer Day in Loud,"
+    },
+    {
+      "start": 6196.48,
+      "end": 6206.06,
+      "text": "bardzo udanym, bardzo klimatycznym. Oświetlała ich tylko jedna, zwisająca z sufitu, za to sporych rozmiarów żarówka."
+    },
+    {
+      "start": 6207.32,
+      "end": 6213.12,
+      "text": "Aluktodolo, co grają właściwie trudno powiedzieć. Jedni mówią, że to occult rock, cokolwiek to znaczy."
+    },
+    {
+      "start": 6213.74,
+      "end": 6220.86,
+      "text": "Inni, że post black metal, też właściwie nie wiadomo. Crowd rock, no może trochę, ale na pewno nie taki czysty,"
+    },
+    {
+      "start": 6221.4,
+      "end": 6229.56,
+      "text": "jak to drzewiej bywało. Tak czy owak spotkanie z Aluktodolo to fantastyczna przygoda."
+    },
+    {
+      "start": 6229.56,
+      "end": 6237.58,
+      "text": "I utworami tych dwóch grup, Galswirt i Aluktodolo właśnie, kończymy dzisiejsze spotkanie."
+    },
+    {
+      "start": 6238.08,
+      "end": 6241.64,
+      "text": "Dobranoc Państwu i do zobaczenia na koncertach."
+    },
+    {
+      "start": 6241.64,
+      "end": 6243.68,
+      "text": "Muzyka"
+    }
+  ],
+  "stats": {
+    "windowCount": 18,
+    "transcribedAudioSec": 1326.42,
+    "segmentCount": 138,
+    "characterCount": 14380
+  },
+  "sourceId": "2024-12-04-ciezko-na-sercu-4-grudnia-godz-0005"
+}
