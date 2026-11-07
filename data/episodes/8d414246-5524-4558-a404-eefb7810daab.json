@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.311Z",
   "durationSec": 6815,
-  "summary": "W audycji Jarek Szubrycht oprowadza słuchaczy po estonskiej i litewskiej scenie metalowej, zaczynając od zespołu Tarapita i ich nowej płyty. Opowiada o inicjatywie Heavy Music Estonia, która wspiera lokalne zespoły i organizuje koncerty. Przedstawia relacje z koncertów Sun Killer, Diversion Ends oraz Mobisa Mobisa, a także zapowiada i odtwarza fragmenty muzyki Freak Angel i The Primer. Na koniec wspomina projekt Fumantum, ukazując różnorodność eksperymentalnych brzmień w regionie. W audycji omówiono różnorodne projekty muzyczne z Estonii i Litwy, począwszy od eksperymentalnego projektu Fumantum, przez artystkę Laura Pritz, która aspiruje do Eurowizji, po lokalny metalcore Artifer. Następnie przytoczono występy estońskiego death metalu Surogoat oraz litewskie odkrycia – folkmetalowy Ukanose, black metalowy Scyzy Fian i progresywny Ju od Warnis. Audycję zamknięto prezentacją litewskiego projektu Protokol F40.1, którego nazwa nawiązuje do klasyfikacji medycznej ICD.",
+  "summary": "Audycja prezentuje nowości z estońskiej i litewskiej sceny metalowej, zebrane głównie podczas koncertu dziesięciu estońskich zespołów 3 października w tallińskim klubie Taper, zorganizowanego przez stowarzyszenie Heavy Music Estonia. Wśród omówionych wykonawców znalazły się: black metalowa Tarapita z albumem \"Oise Te Vaga Uhex\", młode Sun Killer (mini-album \"Totality\") i Diversion Ends (EP \"Divided\"), post/space-rockowa Mobisa Mobisa (album \"Secretly Dangerous\"), deathcore'owy The Primer (album \"Perpetual Cycles of Violence\"), dark-ambientowy projekt Fumantum Martina Seppa, piosenkarka Laura Pritz kojarzona z próbami startu w Eurowizji, metalcore'owy Artifer startujący w konkursie Road to Mystic, industrialny Freak Angel (EP \"Control\", związany też z Castle Party) oraz brutalny death metalowy Surogoat (album \"Consumed by the Wrath of Time\"). Omówiono też progresywny Pantokrator, który we wrześniu wydał płytę z interpretacjami sonetów Szekspira. Z Litwy zaprezentowano folk metalową Ukanose (album \"Siaurum Vejum\"), black metalowy Scyzy Fian (album \"Divergence\"), powiązany z nim Juodvarnis (album \"Tekmes\") oraz death metalowy Protokol F40.1 (album \"Fatal Ritual\").",
   "topics": [
     {
       "start": 381,
@@ -162,6 +162,20 @@
       "type": "artist",
       "source": "tracks",
       "at": 4839
+    },
+    {
+      "id": "tarapita-zespol",
+      "label": "Tarapita (zespół)",
+      "type": "person",
+      "source": "credits",
+      "at": 4541
+    },
+    {
+      "id": "pantokrator-zespol",
+      "label": "Pantokrator (zespół)",
+      "type": "person",
+      "source": "credits",
+      "at": 4552
     }
   ],
   "tracks": [
@@ -466,8 +480,67 @@
       "name": "Mariusz Owczarek",
       "time": 381,
       "quote": "wydawcą jest Mariusz Owczarek"
+    },
+    {
+      "role": "gość",
+      "name": "Tarapita (zespół)",
+      "time": 4541,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Pantokrator (zespół)",
+      "time": 4552,
+      "quote": ""
     }
   ],
-  "interviews": [],
-  "mentions": []
+  "interviews": [
+    {
+      "with": "Tarapita",
+      "topic": "nowa płyta \"Oise Te Vaga Uhex\"",
+      "at": 4541
+    },
+    {
+      "with": "Pantokrator",
+      "topic": "wrześniowa płyta z interpretacjami sonetów Szekspira",
+      "at": 4552
+    }
+  ],
+  "mentions": [
+    {
+      "type": "concert",
+      "title": "Koncert 10 estońskich zespołów w klubie Taper (Tallin, 3 października)",
+      "author": null,
+      "note": "Wydarzenie zorganizowane przez stowarzyszenie Heavy Music Estonia, wokół którego zbudowany jest odcinek.",
+      "at": 1671
+    },
+    {
+      "type": "festival",
+      "title": "Eurowizja (Konkurs Piosenki Eurowizji)",
+      "author": null,
+      "note": "Laura Pritz kilkukrotnie próbowała reprezentować Estonię w konkursie.",
+      "at": 3706
+    },
+    {
+      "type": "festival",
+      "title": "Road to Mystic",
+      "author": null,
+      "note": "Artifer startował w estońskim finale wiosną, był blisko zwycięstwa.",
+      "at": 3968
+    },
+    {
+      "type": "festival",
+      "title": "Castle Party",
+      "author": null,
+      "note": "Freak Angel gościł na tym festiwalu.",
+      "at": 2514
+    },
+    {
+      "type": "book",
+      "title": "Sonety",
+      "author": "William Szekspir",
+      "note": "Pantokrator wydał we wrześniu płytę z własnymi interpretacjami tych sonetów.",
+      "at": 4552
+    }
+  ]
 }

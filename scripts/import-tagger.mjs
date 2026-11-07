@@ -46,6 +46,16 @@ const parseSources = (source) =>
 
 const isoDate = (date) => date.toISOString().slice(0, 10);
 
+// Ta sama reguła co tagId w src/lib/tags.ts: id tagu musi być identyczny po obu stronach.
+const tagId = (label) =>
+  label
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ł/gi, 'l')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
 // Pogłębione opracowanie z taggera (scripts/opencode-insights.sh): lepsze streszczenie
 // oraz fakty spoza tracklisty. Goście dołączają do creditsów, bo to ta sama rola na stronie.
 async function readInsights(sourceId) {
@@ -84,13 +94,22 @@ const toContract = (episode, analyzedAt, id, insights) => {
       end: topic.end == null ? undefined : Math.round(topic.end),
       label: topic.topic,
     })),
-    tags: (episode.tags ?? []).map((tag) => ({
-      id: tag.id,
-      label: tag.label,
-      type: tag.type ?? 'editorial',
-      source: tag.source ?? 'profile',
-      at: tag.at == null ? undefined : Math.round(tag.at),
-    })),
+    tags: [
+      ...(episode.tags ?? []).map((tag) => ({
+        id: tag.id,
+        label: tag.label,
+        type: tag.type ?? 'editorial',
+        source: tag.source ?? 'profile',
+        at: tag.at == null ? undefined : Math.round(tag.at),
+      })),
+      ...(insights?.guests ?? []).map((guest) => ({
+        id: tagId(guest.name),
+        label: guest.name,
+        type: 'person',
+        source: 'credits',
+        at: guest.at == null ? undefined : Math.round(guest.at),
+      })),
+    ].filter((tag, index, all) => all.findIndex((other) => other.id === tag.id) === index),
     tracks: (episode.tracks ?? []).map((track) => ({
       start: Math.round(track.start),
       end: track.end == null ? undefined : Math.round(track.end),

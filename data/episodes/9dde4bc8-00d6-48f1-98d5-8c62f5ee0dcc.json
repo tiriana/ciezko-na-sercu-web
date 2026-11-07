@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.304Z",
   "durationSec": 6872,
-  "summary": "W pierwszej części audycji Jarek Szubrycht poświęcił uwagę pamięci zmarłych artystów metalowych, przywołując ich twórczość i losy. Omówił klasyczny album Black Sabbath „Heaven and Hell”, a następnie rozważał, jak losy mogłyby wyglądać inaczej dla Thin Lizzy. Przedstawił swoje przemyślenia o wczesnych albumach Iron Maiden i zmianie wokalisty. Na koniec wspomniał o niedawno wydanej książce o Chucku Schuldinerze, liderze zespołu Death, podkreślając jego wpływ na death metal. W tym fragmencie audycji prowadzący rozmawia o śmierci i dziedzictwie wielu legendarnych muzyków metalowych, przywołując ich życie, twórczość i wpływ na scenę. Omówiono losy Mike’a Browninga i ostatnią płytę Nocturnus, wspomniano o Thomasie Lindbergu i planowanym wydaniu albumu This Fear. Pojawiły się refleksje nad tragicznymi losami LG Petrova, Mieszka Talarczyka, Alexiego Lajho oraz członków Pantery i Slipknota. Audycja kończy się hołdem dla Tomasza Molki, Romana Kostrzewskiego i norweskiego zespołu Mayhem, podkreślając, że muzyka jest pamięcią o zmarłych artystach. W audycji poruszono temat muzyki autentycznie niebezpiecznej, której przekraczanie tabu łączy się z działaniem, nie tylko słowem. Prowadzący odwołał się do popularności true crime w kulturze, wskazując na podobne ludzkie potrzeby. Następnie wspomniano o pożegnaniu zespołu Life Eternal oraz o utworze Euronymusa z Mayhem, a na koniec podkreślono, jak długa jest lista artystów, którzy już nie żyją, i jak ich muzyka pozostaje ich dziedzictwem.",
+  "summary": "Odcinek to wydanie zaduszkowe poświęcone zmarłym muzykom metalowym, zainspirowane filmem koncertowym \"Back to the Beginning\" (pożegnalny koncert Black Sabbath w Birmingham) oraz początkiem listopada. Prowadzący omawia kolejno sylwetki i okoliczności śmierci m.in. Petera Steele'a (Type O Negative), Ronniego Jamesa Dio (Black Sabbath, Rainbow, Dio), Eddiego Van Halena, Phila Lynotta (Thin Lizzy), Lemmy'ego Kilmistera (Motörhead), Paula Di'Anno (Iron Maiden), Cronosa (Venom), Quorthona (Bathory), Chucka Schuldinera (Death), Mike'a Browninga (Nocturnus, Morbid Angel), Tomasa Lindberga \"Tompy\" (At The Gates), LG Petrova (Entombed), Mieszka Talarczyka (Nasum, zginął w tsunami w 2004 roku), Alexiego Laiho (Children of Bodom), Dimebaga Darrella i Vinniego Paula (Pantera), Paula Graya i Joeya Jordisona (Slipknot), Krzysztofa \"Docenta\" Raczkowskiego (Vader), Tomasza \"De Molki\" Molki oraz Romana Kostrzewskiego (Kat). Przy okazji wspomina książkę \"Born Human\" o Chucku Schuldinerze oraz badania wskazujące, że zainteresowanie fanów horroru i metalu tematyką śmierci działa na nich psychicznie wzmacniająco, zmniejszając lęk. Na koniec omawia historię zespołu Mayhem i śmierć Euronymusa jako mit założycielski norweskiej sceny black metalowej, puszczając utwór \"Life Eternal\" z tekstem napisanym przez Deada.",
   "topics": [
     {
       "start": 350,
@@ -590,5 +590,62 @@
     }
   ],
   "interviews": [],
-  "mentions": []
+  "mentions": [
+    {
+      "type": "film",
+      "title": "Back to the Beginning",
+      "author": null,
+      "note": "zapis pożegnalnego koncertu Black Sabbath w Birmingham kilka dni przed śmiercią Ozzy'ego Osbourne'a, inspiracja do tematu odcinka",
+      "at": 363
+    },
+    {
+      "type": "book",
+      "title": "Born Human",
+      "author": null,
+      "note": "niedawno wydana w Polsce książka o życiu i muzyce Chucka Schuldinera",
+      "at": 3285
+    },
+    {
+      "type": "festival",
+      "title": "With Full Force",
+      "author": null,
+      "note": "niemiecki festiwal, gdzie prowadzący przeprowadzał wywiad z Tomasem Lindbergiem \"Tompą\"",
+      "at": 4101
+    },
+    {
+      "type": "concert",
+      "title": "Ostatni koncert Paula Di'Anno w Krakowie",
+      "author": null,
+      "note": "sierpień 2024, kilka miesięcy przed śmiercią wokalisty",
+      "at": 2272
+    },
+    {
+      "type": "concert",
+      "title": "Trasa koncertowa Children of Bodom z okazji 30-lecia zespołu",
+      "author": null,
+      "note": "Alexiego Laiho na gitarze i wokalu zastępuje Sami Elbanna z Lost Society",
+      "at": 4771
+    },
+    {
+      "type": "concert",
+      "title": "Koncerty reunionowe Pantery",
+      "author": null,
+      "note": "z Philem Anselmo, bez możliwości odtworzenia stylu gry zmarłego Dimebaga Darrella",
+      "at": 5036
+    },
+    {
+      "type": "concert",
+      "title": "Pożegnalny koncert Romana Kostrzewskiego we Wrocławiu",
+      "author": null,
+      "note": null,
+      "at": 6134
+    },
+    {
+      "type": "film",
+      "title": "Planowany film z pożegnalnego koncertu Romana Kostrzewskiego",
+      "author": null,
+      "note": "zapowiadany, niepotwierdzony termin premiery",
+      "at": 6146
+    }
+  ]
 }
