@@ -9,6 +9,7 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
+  actions: write
 
 # Wersja powstaje z typów commitów, więc dwa przebiegi naraz policzyłyby ją dwa razy.
 concurrency:
@@ -30,3 +31,10 @@ jobs:
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Commit z podbitą wersją powstał z tokena Actions, więc sam nie uruchomi deployu.
+      # Dispatch przechodzi przez tę blokadę i publikuje stronę już z nowym numerem.
+      - name: Deploy po wydaniu
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main
