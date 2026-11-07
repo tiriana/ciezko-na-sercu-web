@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.0...v1.0.1) (2026-11-07)
+
+### Bug Fixes
+
+* wydanie podbija wersję w package.json i uruchamia deploy ([94d3a6a](https://github.com/tiriana/ciezko-na-sercu-web/commit/94d3a6aad5a4ba5be94731a66c01194ddc354605))
+
 ## 1.0.0 (2026-11-07)
 
 ### Features
