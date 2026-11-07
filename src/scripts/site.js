@@ -293,7 +293,9 @@ const applyDeepLink = () => {
     if (link.getAttribute('href')?.endsWith(`/tagi/${tagParam}/`)) link.classList.add('is-tagged');
   }
 
-  const tagged = [...document.querySelectorAll('[data-tag-id]')].filter((row) => row.dataset.tagId === tagParam);
+  const tagged = [...document.querySelectorAll('[data-tag-ids]')].filter((row) =>
+    (row.dataset.tagIds ?? '').split(/\s+/).includes(tagParam)
+  );
   if (tagged.length === 0) return;
 
   for (const row of tagged) row.classList.add('is-tagged');
@@ -306,7 +308,11 @@ const applyDeepLink = () => {
   const note = document.createElement('p');
   note.className = 'tag-deeplink';
   const label = document.createElement('span');
-  label.textContent = `${tagged[0].querySelector('.tracks__artist')?.textContent?.trim() ?? 'Tag'} — ${tagged.length} ${plural}. Odtwarzanie zaczyna się po kliknięciu w utwór.`;
+  const tagLabel =
+    document.querySelector('.side__tags a.is-tagged')?.textContent?.trim() ??
+    tagged[0].querySelector('.tracks__artist')?.textContent?.trim() ??
+    'Tag';
+  label.textContent = `${tagLabel} — ${tagged.length} ${plural}. Odtwarzanie zaczyna się po kliknięciu w wiersz.`;
   const close = document.createElement('button');
   close.type = 'button';
   close.className = 'tag-deeplink__close';
