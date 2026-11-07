@@ -856,6 +856,7 @@ a {
 .kv dd {
   margin: 0;
   color: var(--ink);
+  text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
