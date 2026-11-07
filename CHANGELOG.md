@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.3...v1.0.4) (2026-11-07)
+
+### Bug Fixes
+
+* pasek tagu znika płynnie, zwijając się do zera ([60ba136](https://github.com/tiriana/ciezko-na-sercu-web/commit/60ba13634486983ff8f69d13eee7e4dd342e5247))
+* tag podświetla też wejścia, nie tylko utwory ([08f4e65](https://github.com/tiriana/ciezko-na-sercu-web/commit/08f4e654385d0b79cf30ca065a2939e0ccdd5f4a))
+
 ## [1.0.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.2...v1.0.3) (2026-11-07)
 
 ### Bug Fixes
