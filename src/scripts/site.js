@@ -288,6 +288,11 @@ const applyDeepLink = () => {
   // astro:page-load odpala się też przy pierwszym wejściu, więc bez tej straży
   // komunikat pojawiał się dwa razy.
   if (document.querySelector('.tag-deeplink')) return;
+  // Tag w karcie obok: podświetlamy też link, żeby było widać, skąd przyszliśmy.
+  for (const link of document.querySelectorAll('.side__tags a')) {
+    if (link.getAttribute('href')?.endsWith(`/tagi/${tagParam}/`)) link.classList.add('is-tagged');
+  }
+
   const tagged = [...document.querySelectorAll('[data-tag-id]')].filter((row) => row.dataset.tagId === tagParam);
   if (tagged.length === 0) return;
 

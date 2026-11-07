@@ -1530,6 +1530,13 @@ a {
   color: var(--accent);
 }
 
+.side__tags a.is-tagged {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .tags-cloud svg {
   display: block;
   width: 100%;
