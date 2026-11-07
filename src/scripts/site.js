@@ -274,9 +274,23 @@ const applyEpisodeAudio = () => {
   }
 };
 
+// Pasek zwija się do zera, więc lista pod nim podjeżdża, zamiast przeskakiwać.
+const collapseNote = (note) => {
+  if (!note) return;
+  note.style.overflow = 'hidden';
+  const animation = note.animate(
+    [
+      { height: `${note.offsetHeight}px`, opacity: 1 },
+      { height: '0px', opacity: 0 },
+    ],
+    { duration: 180, easing: 'ease-in', fill: 'forwards' }
+  );
+  animation.finished.then(() => note.remove()).catch(() => note.remove());
+};
+
 const clearDeepLink = (note) => {
   for (const row of document.querySelectorAll('.is-tagged')) row.classList.remove('is-tagged');
-  note?.remove();
+  collapseNote(note);
   // Adres bez ?tag=, żeby odświeżenie nie zaznaczało ponownie.
   history.replaceState(null, '', location.pathname);
 };
