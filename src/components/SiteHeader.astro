@@ -14,6 +14,8 @@ const { current } = Astro.props;
     </a>
     <nav class="site-nav" aria-label="Główna">
       <a href="/" aria-current={current === 'episodes' ? 'page' : undefined}>Odcinki</a>
+      <a href="/tagi/" aria-current={current === 'tags' ? 'page' : undefined}>Tagi</a>
+      <a href="/o-projekcie/" aria-current={current === 'about' ? 'page' : undefined}>O projekcie</a>
       <a
         class="site-nav__external"
         href="https://www.polskieradio.pl/trojka/audycje/ciezko-na-sercu,10644"
@@ -25,8 +27,6 @@ const { current } = Astro.props;
           <path d="M14 4h6v6M20 4l-8 8M10 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-4" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </a>
-      <a href="/tagi/" aria-current={current === 'tags' ? 'page' : undefined}>Tagi</a>
-      <a href="/o-projekcie/" aria-current={current === 'about' ? 'page' : undefined}>O projekcie</a>
     </nav>
   </div>
 </header>

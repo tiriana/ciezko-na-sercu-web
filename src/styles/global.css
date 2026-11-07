@@ -1346,6 +1346,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  margin-left: 24px;
 }
 
 .site-nav__external svg {
