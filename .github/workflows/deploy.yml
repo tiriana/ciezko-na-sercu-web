@@ -1,9 +1,15 @@
 name: deploy
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Wersja do nazwy przebiegu (bez „v”)'
+        required: false
+        type: string
+
+# Nazwa przebiegu mówi, którą wersję publikuje — bez tego lista wygląda jak „deploy #245”.
+run-name: deploy v${{ inputs.version || '?' }}
 
 permissions:
   contents: read
