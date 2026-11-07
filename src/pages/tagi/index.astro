@@ -26,7 +26,7 @@ const groups = TAG_TYPE_ORDER.map((type) => ({
 })).filter((group) => group.tags.length > 0);
 ---
 
-<Base title="Tagi audycji" description="Zespoły, osoby, dzieła i wydarzenia, które pojawiły się w audycjach." bodyClass="page-fixed">
+<Base title="Tagi audycji" description="Zespoły, osoby, dzieła i wydarzenia, które pojawiły się w audycjach.">
   <SiteHeader current="tags" />
 
   <main class="wrap tags-page">
@@ -47,7 +47,6 @@ const groups = TAG_TYPE_ORDER.map((type) => ({
       <p id="tag-filter-status" class="tags-filter__status" aria-live="polite"></p>
     </div>
 
-    <div class="tags-page__body">
     <section class="card tags-cloud" aria-label="Chmura tagów">
       <svg viewBox={`0 0 ${cloud.width} ${cloud.height}`} role="img" aria-label="Chmura tagów, rozmiar od liczby odcinków">
         {cloud.placed.map((word) => (
@@ -79,7 +78,6 @@ const groups = TAG_TYPE_ORDER.map((type) => ({
         </p>
       </section>
     ))}
-    </div>
   </main>
 
   <SiteFooter />

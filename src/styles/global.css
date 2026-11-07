@@ -1898,42 +1898,10 @@ main {
 
 /* Strona tagów: filtr + jedna oś przewijania (stopka i player zostają widoczne). */
 
-body.page-fixed {
-  height: 100vh;
-  overflow: hidden;
-}
-
 .tags-page {
   display: flex;
   flex-direction: column;
-  /* Globalne `flex: 1 0 auto` nie pozwala się kurczyć, więc strona rosła powyżej okna. */
-  flex: 1 1 auto;
-  min-height: 0;
-}
-
-.tags-page__body {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 12px;
-  scrollbar-width: thin;
-  scrollbar-color: color-mix(in srgb, var(--muted) 45%, transparent) transparent;
-}
-
-.tags-page__body::-webkit-scrollbar {
-  width: 10px;
-}
-
-.tags-page__body::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.tags-page__body::-webkit-scrollbar-thumb {
-  background: color-mix(in srgb, var(--muted) 45%, transparent);
-  border: 3px solid transparent;
-  background-clip: padding-box;
-  border-radius: 999px;
+    flex: 1 1 auto;
 }
 
 .tags-filter {
