@@ -197,6 +197,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 6360
+    },
+    {
+      "id": "black-sabbath",
+      "label": "Black Sabbath",
+      "type": "artist",
+      "source": "title"
+    },
+    {
+      "id": "back-to-the-beginning",
+      "label": "Back to the Beginning",
+      "type": "concert",
+      "source": "title"
     }
   ],
   "tracks": [

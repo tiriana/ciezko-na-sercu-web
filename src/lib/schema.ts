@@ -25,7 +25,7 @@ export const catalogSchema = z.object({
 });
 
 export const TAG_TYPES = ['artist', 'person', 'work', 'event', 'concert', 'place', 'theme', 'editorial'] as const;
-export const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile'] as const;
+export const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile', 'title'] as const;
 
 export const tagSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),

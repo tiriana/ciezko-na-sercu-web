@@ -11,6 +11,7 @@ if (!workDir) {
 // Kluczem jest uuid odcinka z katalogu; katalog zna też historyczne slugi, więc dopasowanie
 // łapie opracowania zrobione przed zmianą tytułu. Data zostaje jako ostatnia deska ratunku.
 const catalog = JSON.parse(await readFile(new URL('../data/catalog.json', import.meta.url), 'utf8'));
+const byId = new Map(catalog.episodes.map((episode) => [episode.id, episode]));
 const bySlug = new Map();
 const byDate = new Map();
 const byTitle = new Map();
@@ -37,6 +38,35 @@ function catalogIdFor(episode) {
   const candidates = byDate.get(episode.date) ?? [];
   return candidates.length === 1 ? candidates[0] : null;
 }
+
+// Etykieta trafia w tytuł odcinka — to mocny sygnał, którego ekstrakcja z transkryptu
+// nie zawsze łapie (odcinek w całości o festiwalu bywa bez wzmianki z nazwą).
+const fold = (value) =>
+  value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ł/gi, 'l')
+    .toLowerCase();
+
+const titleTags = (title, labels) => {
+  if (!title) return [];
+  const haystack = ` ${fold(title).replace(/[^a-z0-9]+/g, ' ')} `;
+  const found = [];
+  for (const [label, type] of labels) {
+    if (label.length < 4) continue;
+    const needle = ` ${fold(label).replace(/[^a-z0-9]+/g, ' ')} `;
+    if (needle.trim().length < 4) continue;
+    if (!haystack.includes(needle)) continue;
+    found.push({ id: tagId(label), label, type, source: 'title' });
+  }
+  // „Emperor” w „Godspeed You! Black Emperor” to ta sama fraza, nie osobny tag.
+  return found.filter(
+    (entry) =>
+      !found.some(
+        (other) => other !== entry && fold(other.label).length > fold(entry.label).length && fold(other.label).includes(fold(entry.label))
+      )
+  );
+};
 
 const parseSources = (source) =>
   source
@@ -161,6 +191,7 @@ const toContract = (episode, analyzedAt, id, insights) => {
       })),
       ...(insights?.mentions ?? []).filter((mention) => MENTION_KINDS[mention.type]).map(mentionTag),
       ...creditsToTags(houseCredits),
+      ...titleTags(byId.get(id)?.title, knownLabels),
     ].filter((tag, index, all) => all.findIndex((other) => other.id === tag.id) === index),
     tracks: (episode.tracks ?? []).map((track) => ({
       start: Math.round(track.start),
@@ -180,6 +211,35 @@ const toContract = (episode, analyzedAt, id, insights) => {
 
 await mkdir(resolve(outputDir), { recursive: true });
 await mkdir(resolve(transcriptsDir), { recursive: true });
+
+// Najpierw zbieramy wszystkie etykiety z opracowań: dopasowanie tytułu korzysta
+// z zamkniętego słownika tagów, więc nie wymyśla nowych nazw.
+const knownLabels = new Map();
+{
+  const dirs = await readdir(workDir, { withFileTypes: true });
+  for (const dir of dirs) {
+    if (!dir.isDirectory()) continue;
+    let episode;
+    try {
+      episode = JSON.parse(await readFile(join(workDir, dir.name, 'episode.json'), 'utf8'));
+    } catch {
+      continue;
+    }
+    const insights = await readInsights(dir.name);
+    const labels = [
+      ...(episode.tags ?? []).map((tag) => [tag.label, tag.type ?? 'editorial']),
+      ...(insights?.mentions ?? [])
+        .filter((mention) => MENTION_KINDS[mention.type])
+        .map((mention) => [MENTION_KINDS[mention.type].label(mention), MENTION_KINDS[mention.type].type]),
+      ...(insights?.guests ?? []).map((guest) => [guest.name, 'person']),
+      ...(episode.credits ?? []).map((credit) => [credit.name, 'person']),
+    ];
+    for (const [label, type] of labels) {
+      if (!label || typeof label !== 'string') continue;
+      if (!knownLabels.has(label)) knownLabels.set(label, type);
+    }
+  }
+}
 
 const entries = await readdir(workDir, { withFileTypes: true });
 let imported = 0;
