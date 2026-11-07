@@ -97,6 +97,31 @@ try {
   });
   check('filtr działa po wejściu z menu', afterNav.visible.length > 0 && afterNav.visible.every((label) => label.toLowerCase().includes('vader')), JSON.stringify(afterNav));
 
+  // Lista odcinków: filtr tytułu. Wiersze mają data-month tak samo jak nagłówki miesięcy,
+  // więc pętla nagłówków potrafiła nadpisywać im hidden.
+  await page.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'networkidle' });
+  await page.fill('[data-filter-title]', 'estonia');
+  await page.waitForTimeout(100);
+  const list = await page.evaluate(() => {
+    const rows = [...document.querySelectorAll('[data-episode]')];
+    const visible = rows.filter((row) => !row.hidden);
+    return {
+      total: rows.length,
+      visible: visible.map((row) => row.dataset.episode),
+      months: [...document.querySelectorAll('.list__month[data-month]')].filter((month) => !month.hidden).length,
+      counter: document.querySelector('[data-result-count]')?.textContent ?? '',
+    };
+  });
+  check('filtr listy zostawia tylko pasujące tytuły', list.visible.every((title) => title.toLowerCase().includes('estonia')), list.visible.join(', '));
+  check('filtr listy nie ukrywa pasującego wiersza', list.visible.length > 0, `${list.visible.length} widocznych z ${list.total}`);
+  check('licznik zgadza się z liczbą wierszy', list.counter === String(list.visible.length), `„${list.counter}” vs ${list.visible.length}`);
+  check('zostaje tylko nagłówek miesiąca z trafieniem', list.months === 1, `${list.months} nagłówków`);
+
+  await page.fill('[data-filter-title]', '');
+  await page.waitForTimeout(100);
+  const restoredList = await page.evaluate(() => [...document.querySelectorAll('[data-episode]')].filter((row) => !row.hidden).length);
+  check('wyczyszczenie filtra przywraca całą listę', restoredList === list.total, `${restoredList} z ${list.total}`);
+
   const player = await page.evaluate(() => {
     const bar = document.querySelector('.audio-bar');
     if (!bar || bar.hidden) return 'brak paska';

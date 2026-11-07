@@ -437,6 +437,10 @@ a {
   color: var(--muted);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .episode-row {
   display: grid;
   grid-template-columns: 118px minmax(0, 1fr) auto;

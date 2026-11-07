@@ -312,41 +312,47 @@ const applyDeepLink = () => {
   document.querySelector('.tracks')?.before(note);
 };
 
-const initIndexFilter = () => {
-  const search = document.querySelector('[data-filter-title]');
-  if (!search || search.dataset.bound === 'true') return;
-  search.dataset.bound = 'true';
+// Filtr listy odcinków wisi na dokumencie, nie na polu: po nawigacji klienckiej pole
+// jest nowym elementem, a raz związany handler zostawał przy starym i przestawał filtrować.
+let indexFilterYear = 'all';
+
+const applyIndexFilter = (search) => {
   const rows = [...document.querySelectorAll('[data-episode]')];
-  const months = [...document.querySelectorAll('[data-month]')];
+  // Tylko nagłówki: data-month mają też wiersze i pętla miesięcy nadpisywała ich hidden.
+  const months = [...document.querySelectorAll('.list__month[data-month]')];
   const counter = document.querySelector('[data-result-count]');
   const empty = document.querySelector('[data-empty]');
-  const yearChips = [...document.querySelectorAll('[data-year]')];
-  let year = 'all';
-
-  const apply = () => {
-    const needle = search.value.trim().toLowerCase();
-    for (const row of rows) {
-      const matchesYear = year === 'all' || row.dataset.date.startsWith(year);
-      const matchesText = row.dataset.episode.toLowerCase().includes(needle);
-      row.hidden = !(matchesYear && matchesText);
-    }
-    for (const month of months) {
-      const group = month.dataset.month;
-      month.hidden = !rows.some((row) => !row.hidden && row.dataset.month === group);
-    }
-    const visible = rows.filter((row) => !row.hidden).length;
-    if (counter) counter.textContent = String(visible);
-    if (empty) empty.hidden = visible > 0;
-  };
-
-  search.addEventListener('input', apply);
-  for (const chip of yearChips) {
-    chip.addEventListener('click', () => {
-      year = chip.dataset.year;
-      for (const other of yearChips) other.setAttribute('aria-pressed', String(other === chip));
-      apply();
-    });
+  const needle = search.value.trim().toLowerCase();
+  for (const row of rows) {
+    const matchesYear = indexFilterYear === 'all' || row.dataset.date.startsWith(indexFilterYear);
+    const matchesText = row.dataset.episode.toLowerCase().includes(needle);
+    row.hidden = !(matchesYear && matchesText);
   }
+  for (const month of months) {
+    month.hidden = !rows.some((row) => !row.hidden && row.dataset.month === month.dataset.month);
+  }
+  const visible = rows.filter((row) => !row.hidden).length;
+  if (counter) counter.textContent = String(visible);
+  if (empty) empty.hidden = visible > 0;
+};
+
+const initIndexFilter = () => {
+  if (document.body.dataset.indexFilter === 'on') return;
+  document.body.dataset.indexFilter = 'on';
+  document.addEventListener('input', (event) => {
+    const search = event.target instanceof Element ? event.target.closest('[data-filter-title]') : null;
+    if (search) applyIndexFilter(search);
+  });
+  document.addEventListener('click', (event) => {
+    const chip = event.target instanceof Element ? event.target.closest('[data-year]') : null;
+    if (!chip) return;
+    indexFilterYear = chip.dataset.year;
+    for (const other of document.querySelectorAll('[data-year]')) {
+      other.setAttribute('aria-pressed', String(other === chip));
+    }
+    const search = document.querySelector('[data-filter-title]');
+    if (search) applyIndexFilter(search);
+  });
 };
 
 const initPage = () => {
