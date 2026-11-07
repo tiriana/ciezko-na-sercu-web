@@ -84,43 +84,53 @@ const groups = TAG_TYPE_ORDER.map((type) => ({
 </Base>
 
 <script>
-  const input = document.querySelector<HTMLInputElement>('#tag-filter');
-  const status = document.querySelector<HTMLParagraphElement>('#tag-filter-status');
+  // Filtr wiąże się z nowym DOM przy każdej nawigacji klienckiej; bez tego wejście
+  // na stronę tagów z menu zostawia martwe pole.
+  const initTagFilter = () => {
+    const input = document.querySelector<HTMLInputElement>('#tag-filter');
+    const status = document.querySelector<HTMLParagraphElement>('#tag-filter-status');
 
-  const fold = (value: string) =>
-    value
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .toLowerCase()
-      .trim();
+    const fold = (value: string) =>
+      value
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .trim();
 
-  const apply = () => {
-    if (!input || !status) return;
-    const query = fold(input.value);
-    let visible = 0;
+    const apply = () => {
+      if (!input || !status) return;
+      const query = fold(input.value);
+      let visible = 0;
 
-    for (const link of document.querySelectorAll<HTMLElement>('[data-tag-label]')) {
-      const hit = query.length === 0 || fold(link.dataset.tagLabel ?? '').includes(query);
-      link.classList.toggle('is-filtered-out', !hit);
-      if (hit) visible++;
-    }
+      for (const link of document.querySelectorAll<HTMLElement>('[data-tag-label]')) {
+        const hit = query.length === 0 || fold(link.dataset.tagLabel ?? '').includes(query);
+        link.classList.toggle('is-filtered-out', !hit);
+      }
+      // Liczymy tylko etykiety z sekcji: chmura też ma data-tag-label, a po filtrze jest ukryta.
+      for (const link of document.querySelectorAll<HTMLElement>('.tags-section .tag-list a')) {
+        if (!link.classList.contains('is-filtered-out')) visible++;
+      }
 
-    // Chmura ma układ liczony przy buildzie, więc po filtrze zostałoby w niej puste miejsce.
-    document.querySelector<HTMLElement>('.tags-cloud')?.classList.toggle('is-hidden', query.length > 0);
+      // Chmura ma układ liczony przy buildzie, więc po filtrze zostałoby w niej puste miejsce.
+      document.querySelector<HTMLElement>('.tags-cloud')?.classList.toggle('is-hidden', query.length > 0);
 
-    for (const section of document.querySelectorAll<HTMLElement>('.tags-section')) {
-      const links = [...section.querySelectorAll<HTMLElement>('.tag-list a')];
-      const visibleLinks = links.filter((link) => !link.classList.contains('is-filtered-out'));
-      // Kropka jest pseudo-elementem poprzedzającego linku, więc pierwszy widoczny
-      // wiersz musi ją schować — inaczej lista zaczyna się od „·”.
-      visibleLinks.forEach((link, index) => link.classList.toggle('is-first', index === 0));
-      section.hidden = visibleLinks.length === 0;
-    }
+      for (const section of document.querySelectorAll<HTMLElement>('.tags-section')) {
+        const links = [...section.querySelectorAll<HTMLElement>('.tag-list a')];
+        const visibleLinks = links.filter((link) => !link.classList.contains('is-filtered-out'));
+        // Kropka jest pseudo-elementem poprzedzającego linku, więc pierwszy widoczny
+        // wiersz musi ją schować — inaczej lista zaczyna się od „·”.
+        visibleLinks.forEach((link, index) => link.classList.toggle('is-first', index === 0));
+        section.hidden = visibleLinks.length === 0;
+      }
 
-    const plural = visible === 1 ? 'tag' : visible % 10 >= 2 && visible % 10 <= 4 && (visible < 12 || visible > 14) ? 'tagi' : 'tagów';
-    status.textContent = query.length === 0 ? '' : visible === 0 ? 'Brak tagów' : `${visible} ${plural}`;
+      const plural = visible === 1 ? 'tag' : visible % 10 >= 2 && visible % 10 <= 4 && (visible < 12 || visible > 14) ? 'tagi' : 'tagów';
+      status.textContent = query.length === 0 ? '' : visible === 0 ? 'Brak tagów' : `${visible} ${plural}`;
+    };
+
+    input?.addEventListener('input', apply);
+    apply();
   };
 
-  input?.addEventListener('input', apply);
-  apply();
+  initTagFilter();
+  document.addEventListener('astro:page-load', initTagFilter);
 </script>
