@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.359Z",
   "durationSec": 6860,
-  "summary": "Odcinek poświęcony koncertom zaplanowanym na luty, otwarty występem Deftons w łódzkiej Atlas Arenie z Denzelem Currym i Drug Church. Omówiono wspólne koncerty Hostii i Lasu Trumien w Świdnicy i Krośnie, krakowski wieczór z mongolskim Uuhai i parodią Manowar oraz wrocławską imprezę Not Dying Yet z Space Slug, Lumenem, Moonstone i In Twilight's Embrace. Przedstawiono trasę Death Has Spoken, Asterii i Obsidian Mantry oraz koncerty Leprous promujące album Melodies of Atonement, a także trasę Do spodu, do ziemi, w pustkę ze Zmarłym, Vanheim, Sotoris i Fiasko. Zapowiedziano walentynkowy występ Igorrr w Progresji, trasę Napalm Death z Whiplash i Dope Lord oraz kwietniowe zapowiedzi nowych albumów Mayhem i Immolation przed gdańskim koncertem z Mardukiem. Osobne wątki dotyczyły nowej płyty Demony Wschodu Die Worshipper z trasą u boku Mar, trzech koncertów Paradise Lost z Saturnusem i duńskiego doom-death oraz Textures i albumu Genotype.",
+  "summary": "Odcinek w całości poświęcony jest przeglądowi koncertów czekających w lutym w Polsce, od dużych tras (Deftones w Atlas Arenie, Napalm Death z trasą \"Campaign for Musical Destruction\", Mayhem z Marduk i Immolation w Gdańsku, Paradise Lost na trzech koncertach, Agnostic Front, Jinjer w Warszawie) po liczne podziemne pakiety koncertowe (m.in. \"Not Dying Yet\" we Wrocławiu, trasa \"Do spodu, do ziemi, w pustkę\", minitrasa Primordial Serpent Sands, wspólna podróż Death Has Spoken/Asteria/Obsidian Mantra). Omówiono też mongolski zespół Uhai i ich album \"Human Hearts\", norweski Leprous promujący płytę \"Melodies of Atonement\", nowy singiel Omnium Gatherum \"Moongold\" zapowiadający ich album \"May the Bridges We Burn Light the Way\", a także zbliżające się wydawnictwa: \"Liturgy of Death\" Mayhem, \"The Sand\" Immolation, \"Demony Wschodu\" Die Worshippera oraz \"Genotype\" holenderskiego Textures, opisanego jako powrót do niedokończonego przed laty materiału \"Phenotype\". Padają też porównania stylistyczne, np. duński Saturnus opisany jako zakonserwowana w czasie kontynuacja wczesnego stylu Paradise Lost.",
   "topics": [
     {
       "start": 240,
@@ -186,6 +186,153 @@
       "type": "artist",
       "source": "tracks",
       "at": 648
+    },
+    {
+      "id": "koncert-deftones-w-atlas-arenie-w-lodzi",
+      "label": "Deftones w Atlas Arenie w Łodzi",
+      "type": "concert",
+      "source": "transcript",
+      "at": 309
+    },
+    {
+      "id": "koncert-hostia-i-las-trumien-trasa-nocni-goscie",
+      "label": "Hostia i Las Trumien (trasa \"Nocni goście\")",
+      "type": "concert",
+      "source": "transcript",
+      "at": 318
+    },
+    {
+      "id": "koncert-manowar-of-steel-wloska-parodia-manowara-i-uhai-w-klubie-studio-w-krakowie",
+      "label": "Manowar of Steel (włoska parodia Manowara) i Uhai w klubie Studio w Krakowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 554
+    },
+    {
+      "id": "not-dying-yet-we-wroclawiu",
+      "label": "Not Dying Yet we Wrocławiu",
+      "type": "event",
+      "source": "transcript",
+      "at": 922
+    },
+    {
+      "id": "trasa-death-has-spoken-asteria-i-obsidian-mantra",
+      "label": "Trasa Death Has Spoken, Asteria i Obsidian Mantra",
+      "type": "event",
+      "source": "transcript",
+      "at": 1305
+    },
+    {
+      "id": "koncert-leprous-w-gdansku-i-wroclawiu",
+      "label": "Leprous w Gdańsku i Wrocławiu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1647
+    },
+    {
+      "id": "koncert-slomatics-w-klubie-gwarek-w-krakowie",
+      "label": "Slomatics w klubie Gwarek w Krakowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2097
+    },
+    {
+      "id": "trasa-do-spodu-do-ziemi-w-pustke",
+      "label": "Trasa \"Do spodu, do ziemi, w pustkę\"",
+      "type": "event",
+      "source": "transcript",
+      "at": 2123
+    },
+    {
+      "id": "koncert-igorrr-w-warszawie-koncert-walentynkowy",
+      "label": "Igorrr w Warszawie (koncert walentynkowy)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2555
+    },
+    {
+      "id": "koncert-monkey3-w-krakowie-i-warszawie",
+      "label": "Monkey3 w Krakowie i Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2617
+    },
+    {
+      "id": "koncert-sylosis-w-krakowskim-kwadracie",
+      "label": "Sylosis w krakowskim Kwadracie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2985
+    },
+    {
+      "id": "koncert-omnium-gatherum-w-krakowskim-hype-parku",
+      "label": "Omnium Gatherum w krakowskim Hype Parku",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3276
+    },
+    {
+      "id": "koncert-ho99o9-w-poznaniu-i-warszawie",
+      "label": "Ho99o9 w Poznaniu i Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3594
+    },
+    {
+      "id": "napalm-death-trasa-campaign-for-musical-destruction",
+      "label": "Napalm Death, trasa \"Campaign for Musical Destruction\"",
+      "type": "event",
+      "source": "transcript",
+      "at": 3620
+    },
+    {
+      "id": "primordial-serpent-sands",
+      "label": "Primordial Serpent Sands",
+      "type": "event",
+      "source": "transcript",
+      "at": 4276
+    },
+    {
+      "id": "koncert-jinjer-w-warszawskiej-progresji",
+      "label": "Jinjer w warszawskiej Progresji",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4310
+    },
+    {
+      "id": "koncert-agnostic-front-w-warszawskiej-proximie",
+      "label": "Agnostic Front w warszawskiej Proximie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4727
+    },
+    {
+      "id": "koncert-mayhem-marduk-i-immolation-w-gdansku",
+      "label": "Mayhem, Marduk i Immolation w Gdańsku",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4879
+    },
+    {
+      "id": "die-worshipper-i-mary-trasa-lutowo-marcowa",
+      "label": "Die Worshipper i Mary, trasa lutowo-marcowa",
+      "type": "event",
+      "source": "transcript",
+      "at": 5533
+    },
+    {
+      "id": "koncert-fetuth-colt-hain-i-ella-reeve-w-warszawie-i-wroclawiu",
+      "label": "Fetuth, Colt Hain i Ella Reeve w Warszawie i Wrocławiu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6065
+    },
+    {
+      "id": "koncert-paradise-lost-w-gdansku-warszawie-i-wroclawiu",
+      "label": "Paradise Lost w Gdańsku, Warszawie i Wrocławiu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6449
     }
   ],
   "tracks": [

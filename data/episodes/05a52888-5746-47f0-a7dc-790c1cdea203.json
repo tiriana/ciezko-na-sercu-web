@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.344Z",
   "durationSec": 7178,
-  "summary": "Odcinek bez jednego tematu przewodniego — zbiór ulubionych, często niedocenianych utworów, dla których wcześniej nie było pretekstu. Od nagrań z przełomu lat 80. i 90. (Vengeance „Arabia\", Queensrÿche „Empire\") przechodzi do wczesnych dokonań Samaela, Nocturnusa, Hellwitch i Impetigo, pokazując ówczesne podziemie. Kolejny blok to szwedzki death metal: Entombed z „Clandestine\", Tiamat z „Clouds\", Therion z „Beyond Sanctorum\" i Desultory z „Into Eternity\". Dalej pojawiają się Confessor, industrialny Treponem Pal, japoński noiserock Zeni Geva oraz doomowa scena lat 90. z Thergothon i diSEMBOWELMENT. Całość zamyka przypomnienie „Cold Lake\" i niedocenionego „Vanity Nemesis\" Celtic Frost oraz fińskiego Waltari z „Yeah, Yeah, Die, Die\".",
+  "summary": "Jarek Szubrycht przedstawia subiektywny, niepowiązany tematycznie zestaw swoich ulubionych utworów z metalu lat 80. i 90., m.in. holenderskiego Vengeance (\"Arabia\"), Queensrÿche (\"Empire\"), szwajcarskiego Samaela (zwłaszcza debiut \"Worship Him\" i demo \"Medieval Prophecy\") oraz amerykańskiego Nocturnusa, którego demo \"The Science of Horror\" ceni wyżej niż późniejszy album \"The Key\". Szeroko omówiona jest szwedzka scena: Entombed i kulisy wokali na płycie \"Clandestine\" (growling nagrał perkusista Nicke Andersson, a nie widoczny w teledysku Johnny Dordevic z Carnage), Tiamat (\"Clouds\"), Therion (\"Beyond Sanctorum\" wysoko cenione, \"Theli\" mniej) i Desultory. Padają też Hellwitch i Impetigo, w tym informacja o śmierci gitarzysty Impetigo, Marka, w lutym 2026 roku, a także fińska Xysma, amerykański Confessor (\"Condemned\"), francuski Treponem Pal, japońska Zeni Geva (\"Slam King\"), doomowe Disembowelment, Nekroschizma, Winter i Thergothon. Na koniec mowa o Celtic Frost (nieudane \"Cold Lake\" i niedoceniony \"Vanity/Nemesis\") oraz fińskim Valtari i jego albumie \"Yeah Yeah Die Die\", zestawionym z bardziej znanym \"Theli\" Theriona.",
   "topics": [
     {
       "start": 341,
@@ -186,6 +186,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 4781
+    },
+    {
+      "id": "straszydlo",
+      "label": "Straszydło",
+      "type": "event",
+      "source": "transcript",
+      "at": 872
+    },
+    {
+      "id": "star-trek",
+      "label": "Star Trek",
+      "type": "work",
+      "source": "transcript",
+      "at": 1455
+    },
+    {
+      "id": "gwiezdne-wojny",
+      "label": "Gwiezdne wojny",
+      "type": "work",
+      "source": "transcript",
+      "at": 1455
+    },
+    {
+      "id": "obcy",
+      "label": "Obcy",
+      "type": "work",
+      "source": "transcript",
+      "at": 1455
     }
   ],
   "tracks": [

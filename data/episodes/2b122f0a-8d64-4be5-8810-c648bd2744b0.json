@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.376Z",
   "durationSec": 6961,
-  "summary": "W audycji Jarek Szubrycht kontynuował serię o nietypowych i ciężkich brzmieniach, przybliżając słuchaczom mało znane zagraniczne zespoły. Omówił historię i twórczość fińskiego projektu F oraz brytyjskiego Thine, a następnie przedstawił grecki zespół Swan Christie, który przekształcił się w A Band Apart. Kolejne segmenty poświęcone były południowokoreańskiemu Jambinai, eksperymentalnemu Oxbow oraz projekcie OM, a na koniec przytoczono norweski Red Harvest. Prowadzący podkreślał, że kolejne odcinki będą poświęcone polskim zespołom. W audycji omówiono ewolucję norweskiego zespołu Red Harvest, podkreślając ich zmienność i brutalne brzmienie. Następnie przybliżono amerykańską grupę Soylent Green, ich historię oraz najnowsze wydawnictwa. Poruszono także temat holenderskiego festiwalu Roadburn i występu zespołu Sam of R, a na koniec przyjrzano się eksperymentalnemu projektowi Canate oraz ich utworowi „Dead”.",
+  "summary": "Odcinek poświęcony wyłącznie zagranicznym wykonawcom z pogranicza metalu, doomu, sludge'u i eksperymentu. Przypomniano fiński zespół F (wcześniej Funkant), którego jedyny album „1-3” nie odniósł sukcesu, oraz angielski Thine, nieskutecznie promowany przez wytwórnię Peaceville. Omówiono grecki Swan Christie, który zaczynał w progresywnym death doomie (m.in. „Today Died Yesterday”, „Julian”), a potem porzucił metal i zmienił nazwę na A Band Apart, oraz zespół Dine z jego trzema płytami, w tym „In Therapy”. Przybliżono południowokoreański Jambinai, łączący post-rock z koreańską tradycją muzyczną i instrumentami takimi jak geomungo, a także zakończony w 2024 roku Oxbow z Eugene'em Robinsonem i albumem „Thin Black Duke”. Pokazano OM, projekt wywodzący się z Sleep, który rozciąga sludge i doom na rytuały Wschodu, industrialny Red Harvest zmieniający styl z płyty na płytę oraz nowoorleański Soylent Green z bagiennym sludge'em i grindem. Na koniec sięgnięto po Sum of R, chwalony za koncert na Roadburn, i po Khanate Stephena O'Malley'a, którego twórczość określono jako celowo odpychającą i brzydką.",
   "topics": [
     {
       "start": 813,
@@ -134,6 +134,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 924
+    },
+    {
+      "id": "koncert-wystep-jambinai-na-ceremonii-zamkniecia-zimowych-igrzysk-olimpijskich-w-pjongczangu",
+      "label": "Występ Jambinai na ceremonii zamknięcia zimowych igrzysk olimpijskich w Pjongczangu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2567
+    },
+    {
+      "id": "koncert-koncert-jambinai-na-off-festivalu-w-katowicach",
+      "label": "Koncert Jambinai na OFF Festivalu w Katowicach",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2646
+    },
+    {
+      "id": "roadburn",
+      "label": "Roadburn",
+      "type": "event",
+      "source": "transcript",
+      "at": 5797
+    },
+    {
+      "id": "koncert-wystep-sum-of-r-na-roadburn-w-2022-roku",
+      "label": "Występ Sum of R na Roadburn w 2022 roku",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5845
     }
   ],
   "tracks": [

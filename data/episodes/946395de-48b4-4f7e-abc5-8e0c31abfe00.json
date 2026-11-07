@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.342Z",
   "durationSec": 7188,
-  "summary": "Audycja prowadzona przez Jarek Szubrycht rozpoczyna się od autowego wyznania: prowadzący nie przepada za płytami koncertowymi, ale dziś postanowi je grać w całości, a pretekstem jest premiera płyty koncertowej zespołu Imperator. W audycji omawiane są klasyczne polskie koncertówki metalowe z lat 80.: TSA (Alive), Metalmani 87, Testphobi/Creon, Kat (38 Minutes of Life) oraz dwupłytowe wydawnictwa koncertowe Venom (Eine kleine Nachtmusik) i Iron Maiden (Life After Death). Prowadzący przytacza też historię zespołu Imperator — jego powstanie w 1984 roku w Łodzi, status kultowej grupy drugiej ekstremalnej fali, jedyną studyjną płytę z 1991 roku oraz obecność na scenie po długiej przerwie. Audycja omawia historię płyt koncertowych w metalu, zaczynając od koncertówek Slayera (m.in. Live Undead, Live and Dead, Decade of Aggression) i ich statusu jako tanich, mniej poważanych wydawnictw. Przechodzi do opisu pierwszej polskiej płyty koncertowej – Alive in Poland włoskiej grupy Bulldozer z 1989 roku nagranej w Zabrzu, a następnie skupia się na klasycznych koncertówkach metalu: Mayhem Life in Leipzig (1990), Emperor Imperial Life Ceremony (2000) oraz wspomnienie o Vaderze, którego pierwszą płytą koncertową była The Darkest Age, Life 93 nagrana w Krakowie w 1993 roku. Audycja kończy się zapowiedzią kolejnych utworów z kanonady.",
+  "summary": "Audycja była w całości poświęcona płytom koncertowym, a bezpośrednim pretekstem była premiera albumu \"The Time After Time Live\" zespołu Imperator, nagranego w 2018 roku w warszawskiej Proximie i wydanego przez Vintage Vinyl; Imperator powstał w 1984 roku w Łodzi, był czołowym przedstawicielem drugiej fali ekstremalnego metalu w Polsce i zdobył status kultowego, choć wydał tylko jeden album studyjny (The Time Before Time, 1991) przed rozpadem. Omówiono klasyczne koncertówki metalowe: TSA \"Live\", Turbo \"Alive\" (złożone z koncertów z 1986 i 1987), Kat \"38 Minut życia\" (1987), Venom \"Eine Kleine Nachtmusik\" oraz Iron Maiden \"Live After Death\" nagrane podczas World Slavery Tour. Osobno omówiono Slayera: \"Live Undead\" (1990), w którym odgłosy publiczności dograł po fakcie inżynier Bill Metoyer, oraz \"Decade of Aggression\" (1991) wydany z okazji dziesięciolecia zespołu. Przedstawiono polskie wątki: koncertówki Vadera \"The Darkest Age Live '93\" (Kraków) i \"Live in Japan\" (Tokio, 1998) inspirowane przez Judas Priest \"Unleashed in the East\", a także włoski Bulldozer \"Alive in Poland\" nagrany w Zabrzu w 1989 roku. Na koniec omówiono scenę black metalową: Mayhem \"Live in Leipzig\" z udziałem Dead i Euronymusa oraz norweski Emperor (którego nazwa miała być inspirowana łódzkim Imperatorem) wraz z albumem \"Emperial Live Ceremony\".",
   "topics": [
     {
       "start": 0,
@@ -123,6 +123,48 @@
       "type": "artist",
       "source": "tracks",
       "at": 3032
+    },
+    {
+      "id": "koncert-iron-maiden",
+      "label": "Iron Maiden",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3546
+    },
+    {
+      "id": "koncert-vader",
+      "label": "Vader",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4886
+    },
+    {
+      "id": "koncert-judas-priest",
+      "label": "Judas Priest",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5451
+    },
+    {
+      "id": "koncert-bulldozer",
+      "label": "Bulldozer",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5770
+    },
+    {
+      "id": "koncert-emperor",
+      "label": "Emperor",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6864
+    },
+    {
+      "id": "mystic-festival-pierwsza-edycja",
+      "label": "Mystic Festival, pierwsza edycja",
+      "type": "event",
+      "source": "transcript",
+      "at": 6892
     }
   ],
   "tracks": [

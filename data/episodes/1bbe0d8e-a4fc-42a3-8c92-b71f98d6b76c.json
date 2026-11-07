@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.378Z",
   "durationSec": 6872,
-  "summary": "Odcinek krąży wokół Mike'a Pattona — od Naked City i muzyki do filmu Funny Games po Faith No More i Black Sabbath. Sporo miejsca dostaje nowa płyta Deftones Private Music, z której zagrano utwory 4–6, a obok niej powrót do White Pony i zapowiedź koncertu w Atlas Arenie w Łodzi. Przypomniano remaster koncertu Pink Floyd Live at Pompeii z 1972 roku, w tym The Great Gig in the Sky i Echoes. Metallica reprezentowana jest przez Ride the Lightning i rocznicę ...And Justice for All, z omówieniem partii Hetfielda, Newsteda i Ulricha. Pojawiają się nowa płyta Coroner Dissonance Theory, Feared i Ola Englund z brzmieniem Engl Savage i Mesa Boogie, Entombed, Mama Lek oraz Pile. Całość zamyka hołd dla zmarłego Breta Hinsha z Mastodon.",
+  "summary": "Odcinek krąży wokół lżejszego niż zwykle, ale wciąż ciężkiego brzmienia: punktem wyjścia jest Mike Patton, którego głos łączy Naked City i Johna Zorna z utworem do filmu Funny Games Michaela Haneke oraz koncertem Faith No More z Brixton Academy z 1990 roku. Sporo miejsca dostaje nowa płyta Deftones Private Music, której kolejne utwory zestawiono z White Pony sprzed 25 lat i zapowiedzią koncertu w łódzkiej Atlas Arenie. Pojawia się Pink Floyd — remaster koncertu Live at Pompeii z 1972 roku, polecany jako uniwersalny towarzysz drogi, wraz z The Great Gig in the Sky. Metallica daje pretekst do rozmowy o Ride the Lightning, rocznicy wydania ...And Justice for All, wyciętej partii Jasona Newsteda oraz o gitarowym kunszcie Jamesa Hetfielda i komponowaniu Larsa Ulricha. Omówione są też nowy album Coronera Dissonance Theory, pierwszy od 1993 roku, szwedzki Feared i Ola Englund z domowym brzmieniem opartym na Engl Savage i Mesie Boogie Dual Rectifier, a także Entombed i Mamaleek. Wspomniany jest zmarły 20 sierpnia w wieku 51 lat Brent Hinds z Mastodon, któremu oddano hołd, oraz zespół Pile z utworem Born at Night.",
   "topics": [
     {
       "start": 39,
@@ -149,6 +149,20 @@
       "type": "artist",
       "source": "tracks",
       "at": 1589
+    },
+    {
+      "id": "funny-games",
+      "label": "Funny Games",
+      "type": "work",
+      "source": "transcript",
+      "at": 70
+    },
+    {
+      "id": "koncert-deftones",
+      "label": "Deftones",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1296
     }
   ],
   "tracks": [

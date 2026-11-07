@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.400Z",
   "durationSec": 6904,
-  "summary": "Przegląd otwiera relacja z kopenhaskiego festiwalu When Copenhagen Freezes Over, zimowej uwertury przed duńskim Copenhell, na której zaprezentowały się młode zespoły lokalnej sceny. Pokazano brutalny gore/slam Gattrall Disgorge z albumem First Degree Murder, łączący metalcore z rapem i trapem Gradians, żywiołową Koja, syntezatorowo-thrashowy 802 oraz feministyczny crust black death Vulvatorius. Wieczór zamknął doświadczony Leave Loss z materiałem z koncepcyjnego albumu The Crescent King o heroicznych czynach tytułowego króla. Drugą część wypełnia przegląd lutowych koncertów w Polsce: Tesseract w gdańskim B90, The Halo Effect z supportami Pain i Blood Red Hourglass, Cattle Decapitation w warszawskiej Proximie, deathcore'owy zestaw Distant i Enterprise Earth w Hydrozagadce oraz Napalm Death z Crowbarem i Full of Hell w Progresji. Zapowiedziano też koncerty Saxon z Girlschool, jubileuszowe trasy Bullet For My Valentine i Trivium, występ Obscury we Wrocławiu oraz powrót ukraińskiego 1914 do koncertowania mimo ograniczeń związanych ze służbą wojskową.",
+  "summary": "Odcinek w dużej części poświęcony był relacji z kopenhaskiego festiwalu When Copenhagen Freezes Over, zimowej uwertury dla duńskiego Copenhell, na którym wystąpili debiutujący Gattrall Disgorge (brutalny gore/slam death z albumu First Degree Murder), metalcore'owo-trapowy Gradients, Koja, trio 802 łączące thrash z syntezatorami w duchu Stranger Things, feministyczny crust/black Vulvatorius oraz najbardziej utytułowany Livløs, grający materiał z koncepcyjnej płyty The Crescent King. Prowadzący chwalił 802 i Livløs jako zespoły, które po tym występie zbierały oferty od europejskich agencji i wytwórni, i które zobaczymy wkrótce na festiwalach. Druga część audycji to przegląd lutowych koncertów w Polsce: Tesseract w gdańskim B90, The Halo Effect z Pain i Blood Red Hourglass, Cattle Decapitation z Shadow of Intent, Revocation i Vulvodynia w warszawskiej Proximie, Distant w Hydrozagadce, Napalm Death z Crowbarem, Full of Hell i The Brat w Progresji, Saxon z Girlschool w Krakowie i Warszawie oraz jubileuszowe trasy Bullet For My Valentine i Trivium w Gliwicach. Na koniec zapowiedziano Obscurę z Gorod i Skeletal Remains we Wrocławiu oraz występ ukraińskiego 1914 w Warszawie, którego koncerty bywają odwoływane z powodu ograniczeń w wyjazdach mężczyzn objętych służbą wojskową.",
   "topics": [
     {
       "start": 182,
@@ -179,6 +179,97 @@
       "type": "artist",
       "source": "tracks",
       "at": 1853
+    },
+    {
+      "id": "obstynic-stream",
+      "label": "Obstynic Stream",
+      "type": "event",
+      "source": "transcript",
+      "at": 220
+    },
+    {
+      "id": "when-copenhagen-freezes-over",
+      "label": "When Copenhagen Freezes Over",
+      "type": "event",
+      "source": "transcript",
+      "at": 350
+    },
+    {
+      "id": "copenhell",
+      "label": "Copenhell",
+      "type": "event",
+      "source": "transcript",
+      "at": 350
+    },
+    {
+      "id": "stranger-things",
+      "label": "Stranger Things",
+      "type": "work",
+      "source": "transcript",
+      "at": 1567
+    },
+    {
+      "id": "koncert-tesseract",
+      "label": "Tesseract",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3094
+    },
+    {
+      "id": "koncert-the-halo-effect",
+      "label": "The Halo Effect",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3517
+    },
+    {
+      "id": "koncert-cattle-decapitation",
+      "label": "Cattle Decapitation",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3820
+    },
+    {
+      "id": "koncert-distant",
+      "label": "Distant",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4115
+    },
+    {
+      "id": "koncert-napalm-death",
+      "label": "Napalm Death",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4340
+    },
+    {
+      "id": "koncert-saxon",
+      "label": "Saxon",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4710
+    },
+    {
+      "id": "koncert-bullet-for-my-valentine-i-trivium",
+      "label": "Bullet For My Valentine i Trivium",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5468
+    },
+    {
+      "id": "koncert-obscura",
+      "label": "Obscura",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5788
+    },
+    {
+      "id": "koncert-1914",
+      "label": "1914",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6220
     }
   ],
   "tracks": [

@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.362Z",
   "durationSec": 6835,
-  "summary": "W audycji Jarek Szubrycht rozmawia z Voggiem, gitarzystą Decapitated, o początkach zespołu i ich pierwszej trasie w Nowym Jorku. Gość opisuje wrażenia z pobytu w mieście, wpływ nowojorskiej sceny na brzmienie oraz elementy jazzu i klasyki w najnowszej płycie Imperial Triumphant. Dyskutują także o wyborze jednego utworu, który mogliby wysłać w kosmos, oraz o gościnnych występach Vogg’a w innych projektach. W rozmowie Jarek Szubrych prowadzi wywiad z Voggiem z Decapitated, skupiając się na ich wspólnych doświadczeniach z zespołem Meszuga oraz na roli tego szwedzkiego zespołu w rozwoju nowoczesnego metalu. Gość opisuje techniczne i pamięciowe wyzwania grania ich muzyki, a także charakterystyczną ciszę i perfekcję ich koncertów, co według niego zaczyna nudzić. Następnie dyskutują o najważniejszych albumach metalu od 2000 roku, wymieniając m.in. płyty Meszuga, Morbid Danger, Gateways to Annihilation, Heretic oraz Heid Eternal. Rozmowa kończy się refleksją nad zmianami w metalowej scenie i osobistymi preferencjami gościa. Rozmowa skupia się na wspomnieniach związanych z zespołem Decapitated oraz ich początkach w ekstremalnym metalu. Gość opowiada o spotkaniu z legendami gatunku, takimi jak zespół Hate Eternal, podczas trasy koncertowej w Stanach Zjednoczonych. Następnie następuje przejście do tematu 30-lecia działalności Decapitated i retrospekcji roku 1981. Rozmówcy dyskutują o klasykach heavy metalu z tamtego okresu, takich jak Iron Maiden i Judas Priest, porównując ich brzmienie i energię. Audycja dotyczy 30-lecia zespołu Decapitated, a prowadzący Jarek Szubrycht zaprasza gościa Voga do opowiedzenia o początkach działalności zespołu. Wątek obejmuje historię pierwszego kontaktu z metalem, kuzyna Sławomira, który wprowadził słuchacza w muzykę metalową lat 80., oraz historię założenia zespołu przez Wojtka Wąsowicza. W audycji wspomina się o muzykach i płytach: Judas Priest, Iron Maiden, Venom (płyta Welcome to Hell), Metallica (utwór Seek and Destroy), Warlock, Sepultura, Tankard, Autopsy, oraz polskich wykonawcach Lady Punk i klasyków polskiego rocka. Rozmowa z Voggem dotyczy początków działalności zespołu Decapitated oraz jego muzycznych inspiracji z lat 90. Muzyk wspomina moment powstania grupy w 1996 roku, brak wielkich planów na karierę oraz pierwsze emocje związane z graniem death metalu. Wątek obejmuje również zestawienie ówczesnych nurtów, takich jak black metal i death metal, oraz wpływ edukacji muzycznej na odbiór ekstremalnych brzmień.",
+  "summary": "Vogg (Wacław Kiełtyka), gitarzysta Decapitated, rozmawia z prowadzącym o albumie Imperial Triumphant \"Gold Star\" (nowojorski klimat, wpływy jazzu i muzyki klasycznej, gościnny udział Thomasa Hackego z Meshuggah) oraz o twórczości Meshuggah (\"Catch 33\", EP \"I\"), ich wpływie na metal XXI wieku i perfekcyjnych, choć coraz bardziej przewidywalnych koncertach. Wspomina formacyjne przeżycia z początku kariery Decapitated: spotkanie z muzykami Hate Eternal (Erik Rutan, Derek Roddy, Jared Anderson) na festiwalu Milwaukee Metal Fest w 2002 roku oraz utratę zachwytu nad Morbid Angel po albumie \"Heretic\". Opowiada o swojej muzycznej edukacji, pierwszym kontakcie z metalem u kuzyna, nauce gry na gitarze od brata i pierwszym opanowanym utworze (\"Seek and Destroy\" Metalliki). Omawia okoliczności powstania Decapitated w 1996 roku z inicjatywy Wojtka Wąsowicza oraz ówczesną scenę muzyczną: przesunięcie gustu z black metalu w stronę death metalu, rozczarowanie albumem Metalliki \"Load\" i kluczowe wydawnictwa death metalowe z 1996 roku (Cryptopsy, Hypocrisy, Immolation).",
   "topics": [
     {
       "start": 48,
@@ -166,6 +166,27 @@
       "label": "Vogg",
       "type": "person",
       "source": "credits"
+    },
+    {
+      "id": "waclaw-vogg-kieltyka",
+      "label": "Wacław \"Vogg\" Kiełtyka",
+      "type": "person",
+      "source": "credits",
+      "at": 1168
+    },
+    {
+      "id": "milwaukee-metal-fest",
+      "label": "Milwaukee Metal Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 2975
+    },
+    {
+      "id": "koncert-koncert-iron-maiden-w-krakowie",
+      "label": "Koncert Iron Maiden w Krakowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3890
     }
   ],
   "tracks": [
@@ -312,6 +333,12 @@
       "name": "Vogg",
       "time": 1401,
       "quote": "rozmową z Vogiem"
+    },
+    {
+      "role": "gość",
+      "name": "Wacław \"Vogg\" Kiełtyka",
+      "time": 1168,
+      "quote": ""
     }
   ]
 }

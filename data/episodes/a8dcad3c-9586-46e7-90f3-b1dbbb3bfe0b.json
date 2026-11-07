@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.373Z",
   "durationSec": 6890,
-  "summary": "Audycja stanowi drugą część subiektywnego zestawienia niedocenianych lub zapomnianych polskich grup muzycznych, które wywodzą się z dziedzictwa zespołu Kobąg. Prowadzący przybliża historię i twórczość takich formacji jak Nia, Neuma, Samo oraz Moja Adrenalina (później Semantic Punk). Program analizuje artystyczne sukcesy tych zespołów, ich powiązania z międzynarodowymi wytwórniami oraz przyczyny, dla których nie udało im się zbudować trwałej kariery. Audycja poświęcona jest subiektywnemu zestawieniu niedocenianych polskich zespołów grających muzykę ekstremalną i ciężką. Prowadzący przybliża historię i twórczość grupy Keta, zwracając uwagę na ich progresywny charakter oraz artystyczną oprawę wydawnictw. Następnie słuchacze poznają historię zespołu Kiński, jego kluczowych członków oraz wpływ na polską scenę niezależną. Fragment obejmuje również wspomnienie o projekcie Kostasa New Program oraz krakowskim zespole Flash World. Audycja stanowi podsumowanie zestawienia niedocenianych polskich kapel. Prowadzący przybliża twórczość zespołu Flash World, wspominając o ich ewolucji brzmieniowej oraz wartości wczesnych nagrań. W programie pojawia się utwór z EP-ki Like We're All Equal Again, która porusza tematykę wojny. Fragment kończy się pożegnaniem słuchaczy.",
+  "summary": "Odcinek jest drugą częścią subiektywnego zestawienia znakomitych, lecz niedocenianych lub zapomnianych polskich zespołów, skupioną na formacjach wyrosłych z Kobonga i szeroko pojętej polskiej ekstremie. Omówiono Nię, której debiut Head Held High ukazał się w 2004 roku nakładem brytyjskiego Candlelight, oraz Neumę — ostatni album Szkice z 2020 roku nominowano do Fryderyka w kategorii metal, ale zespół nie reaktywował się nawet po nominacji. Przypomniano Samo Roberta Gasperowicza oraz warszawską Moją Adrenalinę, która po nagraniu płyty u Rossa Robinsona zmieniła nazwę na Semantic Punk i oparła teksty na twórczości Gombrowicza i Masłowskiej. Pojawiły się też Keta Macieja Janasa, z EP-ką inspirowaną pismami Lema i albumem Wendigo, oraz Kiński z Copula Mundi z 1993 roku i powrotem Preterito Futurum. W zestawieniu znalazł się także Kostas New Program oraz krakowski Flash World, którego album ukazał się jesienią 2019 roku, kilka miesięcy przed pandemią, a którego EP-ka Like We're All Equal Again opowiada o wojnie z perspektywy ofiar i oprawców.",
   "topics": [
     {
       "start": 3,
@@ -111,6 +111,55 @@
       "type": "artist",
       "source": "tracks",
       "at": 2185
+    },
+    {
+      "id": "tworczosc-witolda-gombrowicza",
+      "label": "twórczość Witolda Gombrowicza",
+      "type": "work",
+      "source": "transcript",
+      "at": 2107
+    },
+    {
+      "id": "tworczosc-doroty-maslowskiej",
+      "label": "twórczość Doroty Masłowskiej",
+      "type": "work",
+      "source": "transcript",
+      "at": 2107
+    },
+    {
+      "id": "pisma-stanislawa-lema",
+      "label": "pisma Stanisława Lema",
+      "type": "work",
+      "source": "transcript",
+      "at": 2779
+    },
+    {
+      "id": "metalmania",
+      "label": "Metalmania",
+      "type": "event",
+      "source": "transcript",
+      "at": 3274
+    },
+    {
+      "id": "off-festival",
+      "label": "OFF Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 3274
+    },
+    {
+      "id": "avant-art",
+      "label": "Avant Art",
+      "type": "event",
+      "source": "transcript",
+      "at": 5452
+    },
+    {
+      "id": "twin-peaks",
+      "label": "Twin Peaks",
+      "type": "work",
+      "source": "transcript",
+      "at": 6047
     }
   ],
   "tracks": [

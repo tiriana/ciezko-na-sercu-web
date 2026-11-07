@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.403Z",
   "durationSec": 6950,
-  "summary": "Odcinek poświęcony zmarłemu 15 stycznia Davidowi Lynchowi i muzyce inspirowanej Twin Peaks — od postpunku i black metalu po dark ambient i stoner metal. Przypomniano utwory Trophy Scars, Aborym, Dødheimsgard, norweski black metal z albumu Neonism oraz Killed by a Yeti, którego mini-album The Summoning ukazał się prawie 35 lat po premierze serialu. Opowiedziano, jak wiadomość o śmierci reżysera dotarła na festiwal Eurosonic w Groningen, gdzie chwilę wcześniej jedna z wokalistek wybrała Lyncha jako osobę, do której chciałaby zadzwonić. Omówiono nawiązania do serialu w twórczości Marilyn Manson i Nine Inch Nails, a także dokonania Chimairy, Mors Subita, Swallow the Sun i Starmongera. Polskimi akcentami były supergrupa Albert Rosenfield oraz radiowa premiera Laura's Song zespołu Zuit z 1998 roku. Na koniec wyjaśniono, że impulsem dla muzyki Lyncha był cover Song to the Siren w wykonaniu This Mortal Coil, i zaprezentowano Huberta Zemlera z The Roadhouse Band.",
+  "summary": "Odcinek poświęcony pamięci Davida Lyncha, zmarłego 15 stycznia 2025 roku, i muzyce inspirowanej „Twin Peaks”. Omówiono okoliczności śmierci reżysera oraz historię tego, jak prowadzący dowiedział się o niej na festiwalu Eurosonic w Groningen, podczas gali nagród Music Moves Europe. Przypomniano szereg rockowych i metalowych zespołów nawiązujących do serialu: Trophy Scars, Aborym, Solefald (album Neonism z 1999 roku), Killed by a Yeti (The Summoning), Marilyn Manson (Portrait of an American Family, utwór Wrapped in Plastic), Nine Inch Nails (She's Gone Away napisany specjalnie dla trzeciego sezonu), Chimairę (Resurrection), fiński Mors Subita (Origin of Fire, nagrany jeszcze z wokalistą Emilem Bode, obecnie w Decapitated), Swallow the Sun (Ghosts of Loss) i Starmonger (Occultation, otwierający utwór Black Lodge). Polskim wątkiem była supergrupa Albert Rosenfield, założona w 1994 roku przez basistów Heya, Wilków, Acid Drinkers i innych zespołów, oraz krakowski Zuit, którego utwór Laura's Song z 1998 roku miał radiową premierę, a debiutancki album ma się ukazać z okazji 30-lecia grupy. Wyjaśniono też genezę muzyki z „Twin Peaks”: zachwyt Lyncha wersją Song to the Siren zespołu This Mortal Coil, niemożność jej licencjonowania do Blue Velvet i początek współpracy reżysera z Angelo Badalamentim.",
   "topics": [
     {
       "start": 196,
@@ -191,6 +191,41 @@
       "type": "artist",
       "source": "tracks",
       "at": 334
+    },
+    {
+      "id": "blue-velvet",
+      "label": "Blue Velvet",
+      "type": "work",
+      "source": "transcript",
+      "at": 321
+    },
+    {
+      "id": "dzikosc-serca",
+      "label": "Dzikość serca",
+      "type": "work",
+      "source": "transcript",
+      "at": 321
+    },
+    {
+      "id": "zagubiona-autostrada",
+      "label": "Zagubiona autostrada",
+      "type": "work",
+      "source": "transcript",
+      "at": 321
+    },
+    {
+      "id": "eurosonic-noorderslag-w-groningen",
+      "label": "Eurosonic Noorderslag w Groningen",
+      "type": "event",
+      "source": "transcript",
+      "at": 2369
+    },
+    {
+      "id": "koncert-hubert-zemler-i-the-roadhouse-band",
+      "label": "Hubert Zemler i The Roadhouse Band",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6678
     }
   ],
   "tracks": [

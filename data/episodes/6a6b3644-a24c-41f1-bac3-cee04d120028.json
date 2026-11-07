@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.407Z",
   "durationSec": 6827,
-  "summary": "Przegląd listopadowego kalendarza koncertowego w Polsce, od metalu progresywnego po death metal i hardcore. Największe nazwy miesiąca to Soen, Dream Theater z powracającym Mikiem Portnoyem oraz Sepultura w pożegnalnej trasie, obok thrashowego Assassin i hardrockowego Lucifer. Sporo miejsca poświęcono młodej polskiej scenie metalowej, między innymi trasie Żniwa Śmierci oraz zespołom Integrity, Ice i Czerni. Omówiono też premiery płyt — Mission 3 grupy Planet Hell i Cutting the Throat of God Ulcerate — a także trasy Krwawy Świt nad Polską i New York Blood Tour. Całość zamyka zapowiedź wyprzedanego koncertu Siu Siu w Poznaniu.",
+  "summary": "Odcinek jest przeglądem listopadowych koncertów w Polsce, otwartym występami Soen z fińskim Odland i kanadyjskim TROP — Soen opisano jako zespół łączący przebojowość prawdziwych piosenek z pierwiastkiem progresywnym, rzadko wchodzący w wielominutowe łamańce. Wśród zapowiedzi znalazły się trasa Dream Theater na 40-lecie grupy z powracającym perkusistą Mike'em Portnoyem i nagrywaną szesnastą płytą, a także koncerty Drakonian, Assassin, While She Sleeps, High Vis, Helmet, Alcest, Evergrey, Accept i Sepultury. Osobne wątki poświęcono premierze płyty Mission 3 grupy Planet Hell, nawiązującej do Stanisława Lema, oraz 30-leciu płyty Betty Helmet. Sepulturę przedstawiono jako zespół żegnający się ze sceną, z nowym perkusistą Greysonem Nekrutmanem i supportami Obituary i Jinjer. Lucifer przypomniano przez cover utworu Breakoutu „Poszłabym za Tobą” z tekstem przełożonym na angielski przez Filipa Łobodzińskiego.",
   "topics": [
     {
       "start": 46,
@@ -179,6 +179,90 @@
       "type": "artist",
       "source": "tracks",
       "at": 6429
+    },
+    {
+      "id": "black-metal-night-festival",
+      "label": "Black Metal Night Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 441
+    },
+    {
+      "id": "koncert-cosmic-envy-european-tour",
+      "label": "Cosmic Envy European Tour",
+      "type": "concert",
+      "source": "transcript",
+      "at": 493
+    },
+    {
+      "id": "koncert-krwawy-swit-nad-polska",
+      "label": "Krwawy Świt nad Polską",
+      "type": "concert",
+      "source": "transcript",
+      "at": 521
+    },
+    {
+      "id": "koncert-zniwa-smierci",
+      "label": "Żniwa Śmierci",
+      "type": "concert",
+      "source": "transcript",
+      "at": 892
+    },
+    {
+      "id": "koncert-decade-of-reflective-divinations",
+      "label": "Decade of Reflective Divinations",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1960
+    },
+    {
+      "id": "koncert-the-big-rock-show-tour-24",
+      "label": "The Big Rock Show Tour 24",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2063
+    },
+    {
+      "id": "tworczosc-stanislawa-lema",
+      "label": "Twórczość Stanisława Lema",
+      "type": "work",
+      "source": "transcript",
+      "at": 2449
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 3084
+    },
+    {
+      "id": "koncert-pince-and-knuckles-faces-of-death-tour",
+      "label": "Pince and Knuckles Faces of Death Tour",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3668
+    },
+    {
+      "id": "koncert-disc-crusade-tour",
+      "label": "Disc Crusade Tour",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4265
+    },
+    {
+      "id": "koncert-new-york-blood-tour",
+      "label": "New York Blood Tour",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5460
+    },
+    {
+      "id": "twin-peaks",
+      "label": "Twin Peaks",
+      "type": "work",
+      "source": "transcript",
+      "at": 6400
     }
   ],
   "tracks": [

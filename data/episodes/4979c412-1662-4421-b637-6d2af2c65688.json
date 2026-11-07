@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.412Z",
   "durationSec": 6913,
-  "summary": "W pierwszej części audycji Jarek Szubrycht i Mariusz Owczarek poświęcili cały odcinek festiwalowi Obscenic Stream, opisując jego charakter jako czterodniowe (czasem pięciodniowe) wydarzenie ekstremalnej muzyki gitarowej. Omówiono gatunki dominujące na scenie – grind, death, thrash, hardcore i noise‑core – oraz przytoczono liczne nazwy zespołów, w tym legendarnych przedstawicieli death metalu. Szczególną uwagę poświęcono występowi Autopsy, który zagrał materiał z debiutanckiego albumu „Severed Survival”, oraz specjalnemu projektowi Walking Corpses, cover‑bandowi Brutal Through z udziałem Dana Lilkera. Na koniec podkreślono, że festiwal nie jest komercyjny, a jego siła tkwi w surowej, radykalnej muzyce. W audycji prowadzący rozmawiali o festiwalu Obscenic Stream, podkreślając jubileusze – 25‑lecie festiwalu, półwiecze organizatora Miroslava Urbańca oraz urodziny artystów. Omówiono charakter festiwalu jako miejsca przyjaznego dziwakom, gdzie panuje wolność i brak agresji, a uczestnicy wyrażają siebie w ekstrawaganckich kostiumach. Wspomniano o starszych grupach grindowych i death‑metalowych, które występowały na Obstyn, oraz o nowych zespołach takich jak Gutalax, Rompeprop i Hemorage. Podkreślono różnorodność publiczności i otwartość festiwalu na wszystkie subkultury. W audycji prowadzący omawiali różne zespoły grind i death metalowe, zaczynając od hiszpańskiego Hemorrhage, po czeski Gutalax oraz japoński Final Exit. Następnie skupili się na polskich przedstawicielach sceny Obscin, takich jak Hostia i Meat Spreader, a w dalszej części poświęcili dużo uwagi legendarnemu brytyjskiemu Napalm Death, opisując ich historię, zmiany w składzie oraz najważniejsze albumy i utwory. W trakcie programu przywołano także inne zespoły, m.in. Vader i Antigamę, podkreślając ich wkład w festiwal Obscene Extreme. Audycja zakończyła się podziękowaniami i życzeniami dobrej nocy dla słuchaczy.",
+  "summary": "Odcinek w całości poświęcony 25. edycji festiwalu Obscene Extreme w Trutnovie, z którego prowadzący wrócił w niedzielę. Opisano charakter imprezy: jedna scena, koncerty od 10 rano do około 3 w nocy, wyłącznie muzyka ekstremalna i gitarowa — grind, death metal, thrash, hardcore i crust. Najwięcej miejsca dostali Autopsy, którzy zagrali w przeważającej części materiał z debiutanckiego Severed Survival, oraz Walking Corpses — cover band Brutal Truth z Danem Lilkerem na basie, powołany na jubileusz festiwalu, który wykonał całą płytę Extreme Conditions Demand Extreme Responses. Wymieniono też inne gwiazdy: Napalm Death, Dying Fetus, Ratos de Porão, Wolf Brigade, japoński Sabbat, Protector, Drop Dead i Convulse, przy czym Ratos de Porão oraz Siege żegnały się z europejską publicznością, a brazylijska Sao Direta zagrała w Europie pierwszy raz 37 lat po powstaniu. Osobne wątki to fenomen Gutalax i medycznego grindu (Hemorrhage, Rompeprop), japoński noise Final Exit, polskie zespoły Hostia i Meat Spreader oraz atmosfera festiwalu — brak agresji, wchodzenie fanów na scenę, festiwalowe przedszkole Kinder Grinder i poczucie bezpieczeństwa. W kanonadzie przypomniano historię Napalm Death — powstanie pod Birmingham, płytę Scum i drugie narodziny za sprawą Harmony Corruption z Markiem Greenwayem.",
   "topics": [
     {
       "start": 30,
@@ -161,6 +161,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 2584
+    },
+    {
+      "id": "obscene-extreme",
+      "label": "Obscene Extreme",
+      "type": "event",
+      "source": "transcript",
+      "at": 31
+    },
+    {
+      "id": "koncert-koncert-autopsy-na-obscene-extreme",
+      "label": "Koncert Autopsy na Obscene Extreme",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1111
+    },
+    {
+      "id": "koncert-koncert-walking-corpses-na-obscene-extreme",
+      "label": "Koncert Walking Corpses na Obscene Extreme",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1876
+    },
+    {
+      "id": "brutal-assault",
+      "label": "Brutal Assault",
+      "type": "event",
+      "source": "transcript",
+      "at": 2187
     }
   ],
   "tracks": [

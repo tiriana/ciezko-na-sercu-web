@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.371Z",
   "durationSec": 6891,
-  "summary": "Audycja poświęcona jest polskiej kulturze w muzyce metalowej i eksperymentalnej. Prowadzący omawia nową płytę Tenebris „Kochanowski” i jej konceptualne odniesienia do poezji, po czym przechodzi do albumu Ugory „Grupa Żałobna”, opisując jego wiejską tematykę. Następnie prezentowane są utwory i zapowiedzi zespołów Czernina, Oset oraz Asterie, a także nowi wykonawcy Voice i Dead You, których twórczość łączy różne podgatunki metalu. W trakcie programu pojawiają się liczne komentarze dotyczące polsko‑słowiańskich inspiracji oraz planowane koncerty. W audycji omówiono kilka polskich zespołów metalowych, zaczynając od nowej ekipy Dead You i ich utworu „Vile” z gościnnym wokalistą z amerykańskiego zespołu Saltwound. Następnie przybliżono długoletni zespół Ferocity oraz ich piąty album „The Evolution”. Kolejnym punktem była krakowska grupa Impermanence i ich niedawno wydany album „Annika”, wydany we współpracy gruzińskiej i kostarykańskiej wytwórni. Prowadzący przedstawił także nowość Repulsive – album „Fury Unleashed” oraz omówił wieloletni projekt New Breed i ich najnowszy album „Outlaw”. Na koniec zaprezentowano mystyczny projekt Mysticon z płytą „Bieśń” oraz czarny metalowy zespół Cało i ich utwór „Ogrom Bytu”. W audycji prowadzący omawiali inspiracje muzyczne, przywołując zespoły Dead Can Dance i Vardruna oraz opisując brzmienie Drowned in Silver jako rytualny rock i metal. Następnie porównano ich styl do Neurosis i Wolvenest, podkreślając unikalność dźwięku. Kolejnym wątkiem była prezentacja białostockiego kwartetu Death Has Spoken, ich dotychczasowych płyt Epke i Splita oraz nowo wydanego albumu Elegi, wydanego w belgijskiej wytwórni Muse Music Records. Audycja zakończyła się podziękowaniami i życzeniami dobrej nocy.",
+  "summary": "Wydanie z okazji Narodowego Święta Niepodległości w całości wypełniła nowa polska muzyka, w dużej części osadzona w rodzimej kulturze — od poezji po malarstwo. Album „Kochanowski” grupy Tenebris odczytuje fraszki poety jako pitagorejski labirynt, a okładka według szkicu Matejki i cytaty z Mickiewicza i Słowackiego dopełniają całości; koncert zespołu na Summer Dying Loud oceniono jednak krytycznie. Ugory na „Grupie Żałobnej” opowiadają o ludowym przeżywaniu śmierci na polskiej wsi, Czernina na „Oszukać listopad” — o życiu w depresji, a ośmioosobowy gdański Oset zadebiutował jazzowym „Saganem”. Olsztyńska Gorycz wróciła po trzech latach albumem „Zasypia”, konceptem o skomplikowanych relacjach międzyludzkich, a poznańska Asterie promuje drugą płytę „Miejsce, które nazywam sobą” trasą koncertową; obok nich zaprezentowano Voice Daniela Ludwiczaka, deathcore'owy Dead You z gościem z Saltwound, deathmetalowe Ferocity z „The Evolution”, Impermanence z „Annika”, Repulsive z „Fury Unleashed” i progresywny New Breed z „Outlaw”. Później omówiono beskidzki Mysticon z „Bieśń” i wierszem Tuwima, Cało z debiutem „Ludzie Błądzący w Nocy” cytującym Kasprowicza, Sempra z „Czas Zagłady” i żeńskim wokalem Joanny Sużyn, Drowned in Silver z „Mothers” oraz deathdoomowy Death Has Spoken z „Elegi”.",
   "topics": [
     {
       "start": 272,
@@ -191,6 +191,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 2882
+    },
+    {
+      "id": "fraszki",
+      "label": "Fraszki",
+      "type": "work",
+      "source": "transcript",
+      "at": 289
+    },
+    {
+      "id": "summer-dying-loud",
+      "label": "Summer Dying Loud",
+      "type": "event",
+      "source": "transcript",
+      "at": 325
+    },
+    {
+      "id": "koncert-asterie",
+      "label": "Asterie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2341
+    },
+    {
+      "id": "dies-irae",
+      "label": "Dies Irae",
+      "type": "work",
+      "source": "transcript",
+      "at": 5195
     }
   ],
   "tracks": [

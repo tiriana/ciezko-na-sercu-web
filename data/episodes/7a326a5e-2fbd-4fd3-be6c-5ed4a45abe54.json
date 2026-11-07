@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.390Z",
   "durationSec": 6885,
-  "summary": "Przegląd festiwalu Roadburn 2025 w Tilburgu, skoncentrowany na najgłośniejszych koncertach edycji. The Body zagrało dwukrotnie — z Felicją Częt oraz samotnie w duecie — a obok nich wystąpili Oranssi Pazuzu, Altın Gün i The Bug, którego basowe natarcie zapowiedziano też na Mystic Festival. Becky Laverty opisała kulisy programu: brak parytetów, układanie line-upu jak puzzli, wagę kontekstu i odrzucanie zespołów o faszystowskich poglądach. Frente Abierto połączył ortodoksyjne flamenco z ponurym metalem, prezentując fragment nadchodzącej płyty Guerra e Toro Eso, a Witch Club Satan zmierzył się z awarią sprzętu basistki. Chat Pile opowiedzieli o koncertowym albumie Live at Roadburn, inspiracjach Nirvaną, Pixies i Sonic Youth oraz o pełnej gniewu płycie Cool World. W podsumowaniu wymieniono także Sumac, Thou, Uniform, Violent Magic Orchestra, Big Brave, Envy, Buñuel i Violent Magic Orchestra.",
+  "summary": "Wydanie poświęcone festiwalowi Roadburn 2025 w Tilburgu, który odbył się w czasie Wielkanocy. The Body zagrało dwa koncerty — najpierw z This Fig, a potem w podstawowym duecie. Wśród omówionych występów znalazły się Orange Pazuzu, Altın Gün, The Bug, Frente Abierto z flamenco Lelen Soto, Sebastiana Cruza i Ines Bacán, Witch Club Satan, Thou, Uniform, Big Brave, Envy oraz Sumac. Becky Laverty opowiedziała o pracy nad programem, kryteriach doboru artystów, braku parytetów i znaczeniu różnorodności oraz wspólnoty. Zespół Chat Pile mówił o albumie koncertowym Live at Roadburn, płycie Cool World, wpływach country i sytuacji politycznej w USA.",
   "topics": [
     {
       "start": 466,
@@ -137,6 +137,27 @@
       "type": "artist",
       "source": "tracks",
       "at": 3794
+    },
+    {
+      "id": "becky-laverty",
+      "label": "Becky Laverty",
+      "type": "person",
+      "source": "credits",
+      "at": 2113
+    },
+    {
+      "id": "luther-i-stinn-chat-pile",
+      "label": "Luther i Stinn, Chat Pile",
+      "type": "person",
+      "source": "credits",
+      "at": 4230
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 2085
     }
   ],
   "tracks": [
@@ -311,5 +332,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "gość",
+      "name": "Becky Laverty",
+      "time": 2113,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Luther i Stinn, Chat Pile",
+      "time": 4230,
+      "quote": ""
+    }
+  ]
 }

@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.409Z",
   "durationSec": 6841,
-  "summary": "W pierwszej części audycji \"Ciężko na sercu\" Jarek Szubrycht zapowiada wydarzenia muzyczne w październiku, koncentrując się na koncertach i festiwalach w polskich klubach oraz na nowościach wydawniczych. Omówiono premierę płyty Zamilskiej \"United Kingdom of Excity\" oraz jej trasy koncertowe, a także zapowiedź koncertu amerykańskiego death‑metalowego zespołu Immolation. Dużo uwagi poświęcono norweskiemu black‑metalowemu zespołowi 1349 i ich nadchodzącemu albumowi \"The Wolf and the King\". Na koniec wspomniano o Black Waves Festival w Jarocinie oraz o innych planowanych koncertach, podkreślając ciężki, mroczny charakter muzyki prezentowanej w audycji. W audycji omówiono nadchodzącą czarną, kameralną imprezę muzyczną oraz zapowiedzi koncertów w całej Polsce w październiku, w tym w Jarocinie, Warszawie, Poznaniu, Wrocławiu i Gdańsku. Przedstawiono trzy zespoły – Inter Arma, Tantifaxat i Five the Hero Fund – oraz ich najnowsze wydawnictwa, a także zapowiedziano koncerty Black Braid, Dot Street i Lampów Murmur. Szczegółowo opisano projekt Black Braid, jego kontrowersje i pochodzenie lidera. Na koniec podano intensywny kalendarz koncertów Morne, Power Wolf i innych, zachęcając słuchaczy do udziału. W audycji prowadzący omawiali nadchodzące koncerty w Polsce, wymieniając miasta i daty występów wielu zespołów metalowych i alternatywnych. Podkreślono trudność w uczestnictwie we wszystkich wydarzeniach, które odbywają się jednocześnie. Zapowiedziano występy takich grup jak Mesa, Eminence, Septic Flash, Health, Ghost, Dool oraz Hangman's Chair. Wspomniano także o nowej płycie Raven Van Dorst – The Shape of Fluidity – i zachęcano słuchaczy do jej odsłuchu przed koncertami. Audycja zakończyła się pożegnaniem i zaproszeniem do kolejnego odcinka.",
+  "summary": "Odcinek poświęcony zapowiedziom październikowych koncertów w polskich klubach, salach i halach. Omówiono trasę Zamilskiej z Larmą (Kraków, Warszawa, Gdańsk, Poznań), jej nową płytę United Kingdom of Excity oraz europejskie koncerty z Kim Gordon, a także występ Big Brave i album Chaos of Flowers. Zapowiedziano trasę Immolation ze Schizophrenią, Municipal Waste i Cannibal Corpse, przy czym Eric Rutan nie przyjedzie do Europy, bo huragan Helena zniszczył jego dom. Przedstawiono koncerty A Place to Bury Strangers, 1349 z nowym albumem The Wolf and the King oraz Black Braid, wokół którego omówiono awanturę na festiwalu Midgardsblot i spór o rdzenne pochodzenie twórcy. Wspomniano też Black Waves Festival w Jarocinie oraz koncerty Inter Arma, Morne, Ne Obliviscaris, Powerwolf, Mesy, Septicflesh, Health i Dool z albumem The Shape of Fluidity.",
   "topics": [
     {
       "start": 61,
@@ -155,6 +155,146 @@
       "type": "artist",
       "source": "tracks",
       "at": 47
+    },
+    {
+      "id": "koncert-zamilska-z-larma",
+      "label": "Zamilská z Larmą",
+      "type": "concert",
+      "source": "transcript",
+      "at": 155
+    },
+    {
+      "id": "unsound",
+      "label": "Unsound",
+      "type": "event",
+      "source": "transcript",
+      "at": 155
+    },
+    {
+      "id": "koncert-kim-gordon-trasa-europejska",
+      "label": "Kim Gordon – trasa europejska",
+      "type": "concert",
+      "source": "transcript",
+      "at": 121
+    },
+    {
+      "id": "koncert-big-brave",
+      "label": "Big Brave",
+      "type": "concert",
+      "source": "transcript",
+      "at": 182
+    },
+    {
+      "id": "koncert-immolation-schizophrenia-municipal-waste-cannibal-corpse",
+      "label": "Immolation, Schizophrenia, Municipal Waste, Cannibal Corpse",
+      "type": "concert",
+      "source": "transcript",
+      "at": 777
+    },
+    {
+      "id": "koncert-a-place-to-bury-strangers",
+      "label": "A Place to Bury Strangers",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1277
+    },
+    {
+      "id": "koncert-1349-z-kampfar-i-ask",
+      "label": "1349 z Kampfar i Ask",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1603
+    },
+    {
+      "id": "black-waves-festival",
+      "label": "Black Waves Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 2518
+    },
+    {
+      "id": "koncert-inter-arma-tinnitus-attax-five-the-hierophant",
+      "label": "Inter Arma, Tinnitus Attax?, Five the Hierophant",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2571
+    },
+    {
+      "id": "koncert-black-braid-lamp-of-murmuur-dot-street",
+      "label": "Black Braid, Lamp of Murmuur, Döt Street",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3990
+    },
+    {
+      "id": "midgardsblot",
+      "label": "Midgardsblot",
+      "type": "event",
+      "source": "transcript",
+      "at": 5531
+    },
+    {
+      "id": "koncert-morne",
+      "label": "Morne",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6134
+    },
+    {
+      "id": "koncert-ne-obliviscaris-walkways-freedom-of-fear",
+      "label": "Ne Obliviscaris, Walkways, Freedom of Fear",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6160
+    },
+    {
+      "id": "koncert-powerwolf-hammerfall-wind-rose",
+      "label": "Powerwolf, Hammerfall, Wind Rose",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6186
+    },
+    {
+      "id": "koncert-mismore",
+      "label": "Mismore",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6231
+    },
+    {
+      "id": "koncert-mesa",
+      "label": "Mesa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6249
+    },
+    {
+      "id": "koncert-eminence-aviana-old",
+      "label": "Eminence, Aviana, Old",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6275
+    },
+    {
+      "id": "koncert-septicflesh-equilibrium-oceans-scar-of-the-sun",
+      "label": "Septicflesh, Equilibrium, Oceans, Scar of the Sun",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6307
+    },
+    {
+      "id": "koncert-health-ghost-zetra",
+      "label": "Health, Ghost, Zetra",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6350
+    },
+    {
+      "id": "koncert-dool-z-hangman-s-chair",
+      "label": "Dool z Hangman's Chair",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6383
     }
   ],
   "tracks": [

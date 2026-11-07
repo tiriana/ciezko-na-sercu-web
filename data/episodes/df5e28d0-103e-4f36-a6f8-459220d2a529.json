@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.370Z",
   "durationSec": 6900,
-  "summary": "Odcinek poświęcony duńskiej scenie metalowej, zbudowany wokół relacji z festiwalu Mono Goes Metal w Orhus, organizowanego przez klub i stowarzyszenie Monorama. Przedstawiono zespoły z programu: Light Chapter łączący melodyjny death metal z syntezatorami w duchu lat 80., blackmetalowe Blue Manny i Liss Bearer, posthardcore'ową Permanię, mieszającą punk z black metalem Vulvatorius (Ditte Krøyer zagrała też solowo jako Kroyer), melodyjno-thrashowy 802, techniczny thrash Terminalist oraz crossover Schwarzheim. Opisano kulisy imprezy: około 30 salek prób w budynku Monoramy, finansowanie festiwalu ze zrzutek, warsztaty dla młodych muzyków i wypadek publiczności podczas koncertu Schwarzheim. W drugiej części zagrano Best z albumu Kolossal, progresywno-agresywne Galge z płyty Dodelik oraz Colaps, którego wokalista Peter Clement Lund zmaga się z chorobą nowotworową. Przypomniano też niewykorzystany potencjał Konkry i sięgnięto po nowości Möl oraz Katli z albumem Scandinavian Pain.",
+  "summary": "Odcinek relacjonuje duński mini-festiwal Mono Goes Metal w klubie Monorama w Aarhus: zagrały tam Light Chapter (melodyjny death metal z syntezatorami, płyta 'Where All Hope Begins'), Blodmåne (black metal, występ z wypożyczoną sekcją rytmiczną po odejściu basistki tuż przed koncertem), Liss Bearer (black metal inspirowany Cult of Luna, zapowiedziana kolejna płyta 'Troldom'), Permanoia (młody zespół łączący brzmienie zbliżone do Deftones z post-hardcore), Vulvatorius, której wokalistka Ditte Kröyer zagrała pierwszy solowy, elektroniczny koncert pod szyldem Kröyer, 802 (melodyjne utwory z thrashowym riffowaniem i śpiewającym perkusistą jako frontmanem, singiel 'Sunshine Lover'), Terminalist (techniczny thrash metal, płyta 'The Crisis as Condition') oraz Schwarzheim, kończący wieczór utworem z nadchodzącej płyty 'Wounds' – podczas ich koncertu skoczek ze sceny uderzył o podłogę, stracił przytomność i wezwano karetkę, choć po chwili doszedł do siebie. Omówiono też funkcjonowanie Monoramy jako sieci ok. 30 sal prób wykorzystywanych przez około 500 muzyków, finansowanej przez miasto i zrzutki, oraz towarzyszące festiwalowi warsztaty i obecność gości branżowych z Wielkiej Brytanii i Norwegii. W dalszej części zaprezentowano inne duńskie zespoły: Best (death metal, płyta 'Kolosal'), Galge (progresywny black/grind/hardcore, płyta 'Dødelig'), Colaps z wokalistą Peterem Klementem Lundem – naukowcem zajmującym się żałobą, który niedawno przeszedł agresywną terapię onkologiczną – Konkrę (zespół z historią współpracy z Jamesem Murphym i Chrisem Contosem, ostatnia płyta 'Sad Flight of Lucifer'), Möl (zapowiedź albumu 'Dream Crush', singiel 'Garland') oraz Katlę (doom metal, płyta 'Scandinavian Pain').",
   "topics": [
     {
       "start": 372,
@@ -158,6 +158,48 @@
       "type": "artist",
       "source": "tracks",
       "at": 3532
+    },
+    {
+      "id": "mono-goes-metal",
+      "label": "Mono Goes Metal",
+      "type": "event",
+      "source": "transcript",
+      "at": 366
+    },
+    {
+      "id": "wacken",
+      "label": "Wacken",
+      "type": "event",
+      "source": "transcript",
+      "at": 4555
+    },
+    {
+      "id": "mystic-festiwal",
+      "label": "Mystic Festiwal",
+      "type": "event",
+      "source": "transcript",
+      "at": 6462
+    },
+    {
+      "id": "midgardsblot",
+      "label": "Midgardsblot",
+      "type": "event",
+      "source": "transcript",
+      "at": 4274
+    },
+    {
+      "id": "unsound",
+      "label": "Unsound",
+      "type": "event",
+      "source": "transcript",
+      "at": 3023
+    },
+    {
+      "id": "audio-river",
+      "label": "Audio River",
+      "type": "event",
+      "source": "transcript",
+      "at": 3023
     }
   ],
   "tracks": [

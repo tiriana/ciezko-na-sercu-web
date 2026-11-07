@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.383Z",
   "durationSec": 6881,
-  "summary": "Odcinek podsumowuje cztery dni festiwalu Obscene Extreme w Trutnowie — imprezy odbywającej się od ponad ćwierćwiecza w otoczonym drzewami amfiteatrze, gdzie od rana do nocy królują grindcore, death metal, punk, crust i power violence, a black metal oraz syntezatory są niechciane. Omówiono koncerty japońskiego Butcher ABC z płytą North of Hell, malezyjskich Perpetual i Tools of the Trade, brazylijskich Agrotoxico i ROT oraz Overthrust z Botswany, którego występ rozczarował wykonawczo, choć studyjny album Infected by Myth wypada znacznie lepiej. Discharge zagrał koncert z przesłaniami o Trumpie, politykach brytyjskich i Palestyńczykach z Gazy, a Godflesh odpowiedział całkowitym dystansem, izolacją i czystą dźwiękową przemocą. Pojawiły się też Brutal Sphincter z politycznym goregrindem, Raised by Owls z coverem Limp Bizkit i konkursem tańca à la Barney, Cancer z festiwalowym przedszkolem uczącym stage divingu oraz General Surgery w zakrwawionych kitlach, grający hołd dla wczesnego Carcass. Ostatni dzień przyniósł pożegnalny występ Inhumate, kończących działalność w listopadzie, a także koncerty Lack of Interest, Undergang i Cephalic Carnage z maskami kozłów i ukulele.",
+  "summary": "Odcinek jest relacją z tegorocznej edycji czeskiego festiwalu Obscene Extreme w Trutnowie — imprezy odbywającej się od ponad ćwierćwiecza w otoczonym drzewami amfiteatrze, gdzie rządzą grindcore, death metal, punk, crust, hardcore i power violence, a black metal oraz syntezatory są niepożądane. Najwięcej uwagi poświęcono koncertom: japońskiemu Butcher ABC z płytą North of Hell, brazylijskim Agrotoxico i ROT, malezyjskim Perpetual i Tools of the Trade oraz botswańskiemu Overthrustowi, którego występ rozczarował wykonawczo, choć studyjne Infected by Myth wypada znacznie lepiej. Za najważniejsze wydarzenie uznano politycznie zaangażowany występ Discharge, dedykujący utwory Palestyńczykom z Gazy i atakujący polityków, skontrastowany z całkowicie zdystansowanym, bezosobowym Godflesh. Wśród najlepszych koncertów wymieniono żegnających się trasą pożegnalną Francuzów z Inhumate, a także General Surgery z hołdem dla wczesnego Carcass, Cephalic Carnage, Undergang oraz austriacki This Harmonic Orchestra. Opisano też specyficzną atmosferę festiwalu — przyjazną, pozbawioną przemocy mimo radykalnych tekstów i koszulek — oraz stałą tradycję, jaką są skoki ze sceny dzieciaków, a także zabawy i konkursy zespołu Raised by Owls.",
   "topics": [
     {
       "start": 236,
@@ -179,6 +179,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 517
+    },
+    {
+      "id": "obscene-extreme",
+      "label": "Obscene Extreme",
+      "type": "event",
+      "source": "transcript",
+      "at": 268
+    },
+    {
+      "id": "injure-grind-attack",
+      "label": "Injure Grind Attack",
+      "type": "event",
+      "source": "transcript",
+      "at": 1455
+    },
+    {
+      "id": "koncert-black-sabbath",
+      "label": "Black Sabbath",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3796
+    },
+    {
+      "id": "koncert-inhumate",
+      "label": "Inhumate",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5188
     }
   ],
   "tracks": [

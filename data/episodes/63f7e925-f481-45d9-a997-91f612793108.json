@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.383Z",
   "durationSec": 6861,
-  "summary": "W audycji Jarek Szubrycht omawia koncert Back to the Beginning w Birmingham, podczas którego Ozzy Osbourne pożegnał się ze sceną. Prowadzący krytykuje brak wielu europejskich zespołów oraz podkreśla wpływ Black Sabbath na cały metalowy krajobraz. Wspomina także o pominiętych artystach i przywołuje przykłady zespołów, które mogłyby wystąpić, a także przytacza fragmenty utworów i albumów, by zilustrować dziedzictwo sabatowego brzmienia. W drugiej części audycji prowadzący krytykuje brak reprezentacji sceny ekstremalnej na festiwalu Back to the Beginning, przywołując m.in. Autopsy i ich utwór „In the Grip of Winter”. Następnie rozmawia z Marco Lajho z Beherit, opisując początki fińskiego zespołu, ich debiutancki album „The Oath of Black Blood” oraz trudności z wydawcą Turbo Music. Porusza także wpływ norweskiego black metalu lat 90. na twórczość Beherit i ich dążenie do eksperymentalnych brzmień. Rozmowa z Marko, liderem zespołu Beherit, na temat ewolucji muzycznej grupy oraz ich bezkompromisowego podejścia do gatunków. Artysta wyjaśnia, dlaczego zespół przez dekady nie koncertował i co skłoniło ich do powrotu na scenę po latach przerwy. Poruszony zostaje temat budowania wizerunku poprzez eksperymenty z elektroniką i ambientem oraz zaskakującej popularności zespołu na współczesnych festiwalach. Marko dzieli się również swoją wizją nowego brzmienia, które łączy klasyczny repertuar z nowoczesnymi elementami.",
+  "summary": "Odcinek poświęcony koncertowi Back to the Beginning w Birmingham, na którym Ozzy Osbourne pożegnał się ze sceną u boku Black Sabbath. Prowadzący odbiera to wydarzenie jako celebrację amerykańskiego rockowego imperializmu, zależną od znajomości Sharon Osbourne i dyrektora muzycznego Toma Morello, i wylicza nieobecnych: z Europy załapały się właściwie tylko Gojira oraz K.K. Downing, a z Ameryki zabrakło choćby Neurosis, Pentagramu czy Corrosion of Conformity. W pierwszej części przypomina zespoły, które jego zdaniem powinny tam wystąpić: Mercyful Fate, Venom, Celtic Frost, Candlemass, My Dying Bride i Paradise Lost oraz Cathedral z Lee Dorianem i jego wytwórnią Rise Above. W drugiej części rozmawia z Marco Laiho, liderem fińskiego Beherit, o początkach zespołu w 1989 roku, inspiracjach takich jak Celtic Frost i brazylijska wytwórnia Cogumelo, nieudanym debiucie The Oath of Black Blood oraz różnorodności dyskografii łączącej metal z elektroniką i ambientem. Laiho opowiada też o powrocie na scenę po dekadach przerwy, braku strategii i planowanej trasie po Ameryce Północnej we wrześniu, a jako esencję stylu Beherit wskazuje utwór Nocturnal Evil.",
   "topics": [
     {
       "start": 132,
@@ -162,6 +162,41 @@
       "type": "artist",
       "source": "tracks",
       "at": 935
+    },
+    {
+      "id": "marco-laiho",
+      "label": "Marco Laiho",
+      "type": "person",
+      "source": "credits",
+      "at": 4686
+    },
+    {
+      "id": "koncert-back-to-the-beginning",
+      "label": "Back to the Beginning",
+      "type": "concert",
+      "source": "transcript",
+      "at": 389
+    },
+    {
+      "id": "inne-brzmienia",
+      "label": "Inne Brzmienia",
+      "type": "event",
+      "source": "transcript",
+      "at": 411
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 4686
+    },
+    {
+      "id": "koncert-trasa-beherit-po-ameryce-polnocnej",
+      "label": "Trasa Beherit po Ameryce Północnej",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6360
     }
   ],
   "tracks": [
@@ -403,6 +438,12 @@
       "name": "Mariusz Owczarek",
       "time": 383,
       "quote": "Witam w imieniu własnym oraz Mariusza Owczarka, który jest w tej audycji wydawcą."
+    },
+    {
+      "role": "gość",
+      "name": "Marco Laiho",
+      "time": 4686,
+      "quote": ""
     }
   ]
 }

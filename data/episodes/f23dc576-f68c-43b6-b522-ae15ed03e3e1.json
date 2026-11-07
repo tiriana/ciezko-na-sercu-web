@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.349Z",
   "durationSec": 7204,
-  "summary": "Audycja omawia półfinałowy etap konkursu Road to Mystic, prezentując pięćdziesiąt najlepszych zespołów i ich drogi do festiwalu. Szczegółowo przybliżono historię i twórczość Unblessed Divine oraz Extensa, a także omówiono występy i muzyczne profile Xifisurg, Dead Dukes, Ficurk i Schema. Prowadzący podkreśla różnorodność gatunkową konkursu oraz zapowiada kolejne odsłony festiwalu, w tym wydarzenie December's Doom. W trakcie audycji odtworzono fragmenty wybranych utworów oraz zapowiedziano nowy singiel zespołu Schema. Audycja poświęcona jest półfinałowym wybrom Mystic Festivalu, prezentującym zespoły spoza konkursu. Prowadzący opisuje szerokie spektrum muzyczne imprezy — od metalu ciężkiego (Lulu Suicide) przez postpunk (Dorian's Steaming Shadow) i shoegaze/post-rock (Give Up To Failure) po elektronikę (Torsje), post-rock (Flower and Pines), postmetal (Orphanage Named Earth), rock'n'rolla (The Electric Gospel), thrash metalu (SARS, Lucille) oraz innych gatunków jak leprozorium. Wątkiem przewodnim jest prezentacja mrocznego i alternatywnego undergroundu polskiego, a także nawiązanie do wcześniejszych audycji antenowych, w których zaprezentowano te zespoły. Audycja poświęcona jest półfinałowym wyborom na Mystic Festival 2026, prezentując trzy zgłoszone do konkursu zespoły: Leprozorium, Warsaw i Mikroprotokol. Prowadzący Jarek Szubrycht omawia historię każdego z nich, ich dorobek muzyczny oraz plany na przyszłość, a także przekazuje wyrazy uznania dla wszystkich uczestników konkursu. Na koniec wspomina o grupie Sunsucker jako o ostatnim wykonaniu w audycji.",
+  "summary": "Audycja podsumowuje tegoroczną edycję konkursu Road to Mystic (blisko 400 zgłoszeń) i koncert finałowy pięciu zespołów 28 marca w gdańskim klubie Drizzly Grizzly, z którego na Mystic Festival awansowały Unblessed Divine (death metal, wybór publiczności) i Extensa (instrumentalne trio w stylistyce określanej jako psycho heavy noise, wybór jurorów). Omówiono pozostałych finalistów koncertowych – black metalowy Xifisurg, łączący hardcore, deathcore i nu metal Dead Dukes oraz doom metalową Schemę – a także szerszy przegląd półfinałowej pięćdziesiątki: alternatywne z elementami grunge'u i shoegaze'u Lulu Suicide, postpunkowy Dorian's Steaming Shadow, shoegaze'owo-postmetalowy Give Up To Failure, eksperymentalne Torsje i Flower and Pines, łączącą postmetal, hardcore i punk z plemiennym transem supergrupę Orphanage Named Earth, rock'n'rollowy The Electric Gospel, SARS, thrashmetalowe Lucille i Warsaw, death/thrashowe Leprozorium, nowo powstały deathgrindowy Nekroprotokół oraz postmetalowo-stonerowy Sunsucker. Przy poszczególnych zespołach podano szczegóły dyskografii, wytwórni (m.in. Massacre Records, Requiem Records, Antena Krzyku, Dying Victims Productions) oraz powiązania personalne muzyków z innymi znanymi składami, w tym Malevolent Creation, Sinister, Sanctus Judas, Elbanda, Post Regiment, Sfear, Svdwellers i Alastor.",
   "topics": [
     {
       "start": 64,
@@ -187,6 +187,41 @@
       "type": "artist",
       "source": "tracks",
       "at": 992
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 34
+    },
+    {
+      "id": "koncert-koncert-finalowy-road-to-mystic",
+      "label": "Koncert finałowy Road to Mystic",
+      "type": "concert",
+      "source": "transcript",
+      "at": 101
+    },
+    {
+      "id": "roadburn",
+      "label": "Roadburn",
+      "type": "event",
+      "source": "transcript",
+      "at": 513
+    },
+    {
+      "id": "jarocin",
+      "label": "Jarocin",
+      "type": "event",
+      "source": "transcript",
+      "at": 2443
+    },
+    {
+      "id": "december-s-doom",
+      "label": "December's Doom",
+      "type": "event",
+      "source": "transcript",
+      "at": 1668
     }
   ],
   "tracks": [

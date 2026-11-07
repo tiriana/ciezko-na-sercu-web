@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.361Z",
   "durationSec": 6850,
-  "summary": "Druga część rozmowy o trzydziestoleciu Decapitated, osnuta wokół lat 1996 i 2000. Omówiono fenomen Kata i płytę Róże Miłości, punkowy album Slayera Undisputed Attitude, a także Sepulturę i Roots oraz Panterę i The Great Southern Trend Kill jako przykłady zwrotu ku korzeniom po osiągnięciu szczytu. Gitarzysta Decapitated opowiada o kontrakcie z Earache, nagraniu debiutu Winds of Creation i o tym, jak zespół połączył death metal, thrash i szkołę muzyczną. Tło roku 2000 tworzą Deicide, Morbid Angel, Nile i Vader z Litany oraz bardziej przystępne płyty Children of Bodom i Nightwish. Na koniec mowa o Lamb of God, nu metalu z Linkin Park, Deftones i Slipknotem na czele, a także o planach nowej płyty na 2027 rok.",
+  "summary": "Druga część rozmowy z Voggiem (Wojciechem Kiełtyką), liderem i gitarzystą Decapitated, kontynuuje przegląd przełomowego dla metalu roku 1996 i prowadzi przez historię zespołu aż do roku 2000. Omówiono płyty Kata (zwłaszcza „Różę miłości” w zestawieniu z „Bastardem”), Slayera „Undisputed Attitude”, Sepultury „Roots” na tle „Chaos AD” wraz z rozejściem się wizji Maksa Cavalery i Andreasa Kissera, oraz Panterę „The Great Southern Trendkill” z dygresją o brzmieniu gitary Dimebaga Darrella (wzmacniacze Randall). Vogg opowiedział o początkach Decapitated (powstanie w 1996, dwie taśmy demo, kontrakt z wytwórnią Earache i menadżerem Mariuszem Kmiołkiem) oraz o debiucie „Wings of Creation” (2000) na tle ówczesnej sceny deathmetalowej (Deicide, Morbid Angel, Immolation, Nile, Vader), w tym o łatce „klona Vadera” i popularności utworu „Spheres of Madness” w USA. Poruszono wątek Children of Bodom i tragicznej historii Alexiego Laiho, płyty szrederskie Malmsteena i solowe projekty Steve'a Vaia, a na koniec Lamb of God „New American Gospel” oraz Slipknot jako zespół łączący ekstremalność z komercyjnym sukcesem. Vogg zdradził, że Decapitated komponuje nowy album, który ma ukazać się w 2027 roku, a latem 2026 zespół zagra trasę festiwalową.",
   "topics": [
     {
       "start": 287,
@@ -130,6 +130,41 @@
       "type": "artist",
       "source": "tracks",
       "at": 5117
+    },
+    {
+      "id": "vogg-wojciech-kieltyka",
+      "label": "Vogg (Wojciech Kiełtyka)",
+      "type": "person",
+      "source": "credits",
+      "at": 296
+    },
+    {
+      "id": "koncert-trasa-koncertowa-z-krisiun-i-vaderem-europa-2002",
+      "label": "Trasa koncertowa z Krisiun i Vaderem (Europa, 2002)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4442
+    },
+    {
+      "id": "koncert-trasa-koncertowa-z-machine-head",
+      "label": "Trasa koncertowa z Machine Head",
+      "type": "concert",
+      "source": "transcript",
+      "at": 628
+    },
+    {
+      "id": "koncert-trasa-koncertowa-po-usa-z-lamb-of-god",
+      "label": "Trasa koncertowa po USA z Lamb of God",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6004
+    },
+    {
+      "id": "trasa-festiwalowa-decapitated-w-2026-roku",
+      "label": "Trasa festiwalowa Decapitated w 2026 roku",
+      "type": "event",
+      "source": "transcript",
+      "at": 6250
     }
   ],
   "tracks": [
@@ -265,5 +300,12 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "gość",
+      "name": "Vogg (Wojciech Kiełtyka)",
+      "time": 296,
+      "quote": ""
+    }
+  ]
 }

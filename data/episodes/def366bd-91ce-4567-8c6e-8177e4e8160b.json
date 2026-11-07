@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.339Z",
   "durationSec": 7263,
-  "summary": "Audycja poświęcona jest norweskiemu black metalowi, ze szczególnym uwzględzeniem zespołu Dimmu Borgir. Jarek Szubrycht prezentuje wywiady z liderami grupy, Szagratem i Silenosem, przeprowadzone podczas Mystic Festivalu w Gdańsku. Muzycy rozmawiają o procesie twórczym, długich przerwach między albumami oraz ewolucji brzmienia zespołu. Poruszany jest również temat obecności black metalu w kulturze norweskiej oraz roli polskiego perkusisty Darkaja w Dimmu Borgir. Audycja poświęcona jest norweskiej scenie black metalu, ze szczególnym uwzględnieniem zespołów, które mimo wysokiej jakości artystycznej pozostają w cieniu największych gigantów. Prowadzący omawia zapowiedź wspólnej trasy Dimmu Borgir i Behemoth oraz przybliża sylwetki pionierów gatunku, takich jak Thorns czy Forgotten Woods. Poruszane są wątki historyczne, w tym wpływ norweskiej sceny na brzmienie metalu oraz tragiczne losy muzyków, jak lider Windir, Walfar. Program stanowi muzyczną podróż przez różne nurty, od czystego black metalu po elementy folkowe. Audycja poświęcona różnym obliczom norweskiego black metalu oraz zjawiskom pokrewnym. Prowadzący omawia ewolucję zespołów takich jak Windir i powstanie Vraid, a także przytacza anegdotę o rzekomym zaginięciu muzyków ze Slagmaur. W programie pojawiają się wątki eksperymentalne, w tym post-black metalowe podejście zespołu Manes oraz queerowy black metal grupy Rosa Fenskep. Słuchacze poznają także brzmienia Slegest, Kolt Brand oraz nagrodzonego zespołu Jörtsjuk. Całość wieńczy wspomnienie o debiutanckiej płycie Dimmu Borgir.",
+  "summary": "Audycja poświęcona norweskiemu black metalowi, zdominowana przez wywiad z Szagratem (wokalistą) i Silenozem (gitarzystą) Dimmu Borgir, przeprowadzony podczas Mystic Festival w Gdańsku. Muzycy opowiedzieli o ośmioletniej przerwie między płytami i powrocie do mroczniejszego, bardziej black metalowego brzmienia na albumie Grand Serpent Rising, a także o roli perkusisty Darka \"Daraja\" Brzozowskiego, który gra w zespole od 18 lat. Omówiono wspólną trasę koncertową Dimmu Borgir, Behemotha i Dark Funeral — największą black metalową trasę w historii — z koncertem w Katowicach 25 października. W dalszej części prowadzący przedstawił przegląd mniej znanych lub niedocenionych norweskich zespołów black metalowych: Thorns i jego lidera Snorre'a (Blackthorn), Forgotten Woods, Helheim, Windir (w tym śmierć lidera Valfara w zamieci śnieżnej w 2004 roku i powstały po nim zespół Vraid), Manes, Rosa Fenskep (queerowy black metal), Slegest, Kolt Brand oraz Jortsjuk, nagrodzony norweskim Fryderykiem (Spelemann) za album Nagled Till Livet. Wspomniano incydent z listopada ubiegłego roku, gdy Snorre i lider Slagmaur, General Grips Fisser, zainscenizowali swoje zaginięcie w górach jako promocję nowej płyty Slagmaur. Na zakończenie prowadzący przywołał debiutancki album Immortal, Diabolical Full Moon Mysticism.",
   "topics": [
     {
       "start": 0,
@@ -185,6 +185,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 4417
+    },
+    {
+      "id": "szagrat",
+      "label": "Szagrat",
+      "type": "person",
+      "source": "credits",
+      "at": 280
+    },
+    {
+      "id": "silenoz",
+      "label": "Silenoz",
+      "type": "person",
+      "source": "credits",
+      "at": 319
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 229
+    },
+    {
+      "id": "koncert-trasa-dimmu-borgir-behemoth-i-dark-funeral",
+      "label": "Trasa Dimmu Borgir, Behemoth i Dark Funeral",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1597
     }
   ],
   "tracks": [
@@ -429,6 +457,18 @@
       "name": "Mariusz Owczarek",
       "time": 0,
       "quote": "oraz Mariusz Owczarek, jej wydawca."
+    },
+    {
+      "role": "gość",
+      "name": "Szagrat",
+      "time": 280,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Silenoz",
+      "time": 319,
+      "quote": ""
     }
   ]
 }

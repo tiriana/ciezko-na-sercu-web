@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.385Z",
   "durationSec": 6808,
-  "summary": "Przegląd nowości płytowych czerwca zdominowały powroty legend: Katatonia wydała \"Nightmares as Extensions of the Waking State\", pierwszy album bez współzałożyciela Andersa Nyströma, a Sodom siedemnasty krążek \"The Arsonist\", surowy thrash o okropieństwach wojny. Wśród propozycji deathmetalowych znalazły się \"Xenotaph\" Fallujah, łączący pierwiastki progresywne z żywiołem death metalu, \"Silent Echos\" Gruesome, świadomie naśladujący wczesny Death, oraz \"Defiance\" Night Bearer oparty na trylogii Mroczne Materie Philipa Pullmana. Lżejsze rejony reprezentują stonerowo-psychodeliczny debiut Mordbear i pompatyczny heavy metal Battlesnake. Wytwórnia Relapse Records przypomniała pionierów mathcore'u z Dead Guy, których druga płyta ukazuje się po trzydziestu latach milczenia, a Melville Lens pokazali najlepiej brzmiący album w karierze, zrealizowany z producentem Joshem Wilburem. W drugiej części dominował black metal i okolice: \"Heimat\" Heaven Shall Burn z gościnnym udziałem Jesse Leacha, \"Nocturn\" Hex Vessel wyrosły z koncertu zamówionego przez festiwal Roadburn oraz \"Hellfegen\" duetu Myr, nagrany w Norwegii przez polskich muzyków.",
+  "summary": "Czerwcowe podsumowanie nowości zdominowały nowe płyty: Katatonia wydała Nightmares as Extensions of the Waking State, pierwszy album bez współzałożyciela Andersa Nyströma, który odszedł, zarzucając zespołowi zerwanie z black-doomowymi korzeniami; zespół zagra 26 lipca na Ostrów Rock Festival i 18 listopada w warszawskiej Progresji. Sodom po pięciu latach przerwy wraca siedemnastym albumem The Arsonist, surowym thrashmetalem o okropieństwach wojny, a obok niego pojawiły się deathmetalowe akcenty: szósta płyta Fallujah Xenotaph oraz Silent Echoes Gruesome, świadomie klonujące wczesny Death i sposób śpiewania Chucka Schuldinera. Night Bearer nagrał Defiance oparty na trylogii Mroczne Materie Philipa Pullmana, a amerykański Kao Nashi na płycie I Want to Go Home miesza hardcore, death metal, emo, jazz, grind i noise. Dużo miejsca zajęły odmiany black metalu: Hex Vessel z siódmym albumem Nocturn wyrosłym z koncertu zamówionego przez festiwal Roadburn, Lord Belial z dziesiątym albumem Unholy Trinity, debiut Myr Hellfegen nagrany przez Polaków w Norwegii z Pawłem Jaroszewiczem i Filipem Hałuchą, a także Wekeras, Oster i doomowy debiut Obsidian Scapes. Wśród powrotów wyróżniono Dead Guy, którzy po trzydziestu latach milczenia wydają Near Death Travel Services, co stało się możliwe dzięki pracom nad filmem dokumentalnym o zespole, oraz Melville Lens z najlepiej brzmiącą w ich dorobku płytą Where Only the Truth is Spoken. Poza tym omówiono Heaven Shall Burn i ich dziesiąty album Heimat, trzyutworową epkę Mordbear, pompatyczny heavy metal Battlesnake, progresywny hard rock Avkrast oraz grindpunkowy album Musgrave Pizza Speciale.",
   "topics": [
     {
       "start": 305,
@@ -200,6 +200,62 @@
       "type": "artist",
       "source": "tracks",
       "at": 446
+    },
+    {
+      "id": "ostrow-rock-festival",
+      "label": "Ostrów Rock Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 398
+    },
+    {
+      "id": "koncert-katatonia-w-warszawskiej-progresji",
+      "label": "Katatonia w warszawskiej Progresji",
+      "type": "concert",
+      "source": "transcript",
+      "at": 415
+    },
+    {
+      "id": "mroczne-materie",
+      "label": "Mroczne Materie",
+      "type": "work",
+      "source": "transcript",
+      "at": 1734
+    },
+    {
+      "id": "koncert-trasy-koncertowe-z-kiss",
+      "label": "Trasy koncertowe z Kiss",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2492
+    },
+    {
+      "id": "obscene-extreme",
+      "label": "Obscene Extreme",
+      "type": "event",
+      "source": "transcript",
+      "at": 3161
+    },
+    {
+      "id": "film-dokumentalny-o-zespole-dead-guy",
+      "label": "Film dokumentalny o zespole Dead Guy",
+      "type": "work",
+      "source": "transcript",
+      "at": 3320
+    },
+    {
+      "id": "spirited-away-w-krainie-bogow",
+      "label": "Spirited Away: W krainie bogów",
+      "type": "work",
+      "source": "transcript",
+      "at": 3548
+    },
+    {
+      "id": "roadburn-festival",
+      "label": "Roadburn Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 4386
     }
   ],
   "tracks": [

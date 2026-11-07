@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.391Z",
   "durationSec": 6921,
-  "summary": "Majowy przegląd koncertowy: od duńskiego death metalu (Neckbreaker, Gouge) przez post-metalowy Dune po industrialny Godflesh w krakowskiej Progresji. Zapowiedziano premierę albumu „Bellum Regis\" grupy Hate oraz trasę Decapitated z nowym wokalistą, w towarzystwie Cryptopsy, Warbringera i Carnation. Sporo miejsca zajęły małe festiwale — Liturgia Zniszczenia, Metal Vulture, Hell and Fire, Metal Commando i 666 United Metal Fest. Omówiono też widowiskową trasę Ghost promującą płytę „Skeleta\" oraz występ Babymetal z Poppy i Bambie Thug w krakowskiej Tauron Arenie. Na koniec mocny akcent: Inquisition i Demonical. Relacja z festiwalu Roadburn zapowiedziana na kolejny tydzień.",
+  "summary": "Odcinek poświęcony jest zapowiedziom majowych koncertów i festiwali w Polsce, a zapowiedź relacji z festiwalu Roadburn, z którego prowadzący właśnie wrócił, zostaje odłożona do następnego tygodnia z powodu potrzeby opracowania wywiadów. Wśród zapowiedzi są m.in. amerykański Horse, grający 2 maja w Poznaniu, oraz duńska scena deathmetalowa: Neckbreaker, który podpisał kontrakt z Nuclear Blast i w grudniu wydał debiutancki album Within the Viscera, oraz Gouge. Prowadzący odradza koncerty obecnego wcielenia Venom Incorporated, zarzucając Tony'emu Dolanowi prowadzenie działalności bez zgody Mantasa, a poleca trasę z brazylijskim Crisix i Hate, który na początku maja wydaje album Bellum Regis nakładem Metal Blade. Sporo miejsca zajmują Ghost z albumem Skeleta i praktyką odbierania fanom telefonów na koncertach oraz Aborted, który po wyrzuceniu perkusisty Kena Bedene za zachowanie w sieci zaangażował Kevina Paradisa. Prowadzący komentuje też obecność kobiet na metalowej scenie przy okazji brazylijskiej grupy Crypta i zastanawia się nad fenomenem Baby Metal oraz Poppy, której album Negative Spaces robi furorę.",
   "topics": [
     {
       "start": 224,
@@ -163,6 +163,69 @@
       "type": "artist",
       "source": "tracks",
       "at": 8
+    },
+    {
+      "id": "roadburn",
+      "label": "Roadburn",
+      "type": "event",
+      "source": "transcript",
+      "at": 224
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 325
+    },
+    {
+      "id": "liturgia-zniszczenia",
+      "label": "Liturgia Zniszczenia",
+      "type": "event",
+      "source": "transcript",
+      "at": 2740
+    },
+    {
+      "id": "metal-vulture",
+      "label": "Metal Vulture",
+      "type": "event",
+      "source": "transcript",
+      "at": 2777
+    },
+    {
+      "id": "koncert-skeletur-tour-ghost",
+      "label": "Skeletur Tour (Ghost)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2421
+    },
+    {
+      "id": "hell-and-fire",
+      "label": "Hell and Fire",
+      "type": "event",
+      "source": "transcript",
+      "at": 4113
+    },
+    {
+      "id": "666-united-metal-fest",
+      "label": "666 United Metal Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 5463
+    },
+    {
+      "id": "koncert-infernal-bloodshed-tour-decapitated",
+      "label": "Infernal Bloodshed Tour (Decapitated)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5831
+    },
+    {
+      "id": "metal-commando-fest",
+      "label": "Metal Commando Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 6433
     }
   ],
   "tracks": [

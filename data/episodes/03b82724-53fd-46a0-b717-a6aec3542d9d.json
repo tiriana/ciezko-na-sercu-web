@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.398Z",
   "durationSec": 6863,
-  "summary": "Drugi odcinek lutowego remanentu dopełnia zaległości: niemiecki Mantar z płytą Post-Apokaliptic Depression oraz polska Uliata Digir z blisko czterdziestominutowym, sześcioutworowym materiałem. Główną część spotkania wypełnia przegląd marcowych koncertów w Polsce, otwarty przez Suicidal Angels z Domination Incorporated i Tribulation promujący płytę Sabrosa in Eternum. Omówiono też trasy Master z King Parrot i Czerń, Udo Dirkschneidera z Crown Shift i All for Metal oraz Domu Złego, który jedzie w europejską trasę z Zill & Ardor. Osobny wątek to wyprzedany festiwal Death is not the end we wrocławskim Łączniku, a dalej Suffocation z młodymi zespołami deathcorowymi oraz Biohazard i Life of Agony w Progresji. Zapowiedziano również trasę The Aggressive Progressive z Rivers of Nihil, Scenic i Beyond Creation oraz trzy polskie koncerty Cult of Fire z The Great Old Ones i Caronte.",
+  "summary": "Druga część lutowego remanentu uzupełnia przegląd najlepszych wydawnictw miesiąca o dwie płyty pominięte w poprzednim odcinku: niemiecki Mantar z albumem Post-Apocalyptic Depression (nazwa zespołu znaczy po turecku „grzyb”, muzyka jest ostra w smaku) oraz polską Uliatę Digir, której materiał to raptem sześć utworów, ale blisko 40 minut pokręconej, dziwnej i fascynującej muzyki. Główną treść odcinka stanowi comiesięczny przegląd marcowych koncertów w Polsce, w którym Tribulation opisano jako zespół po ewolucji od piwnicznego death i black metalu przez psychodelę do formy łagodniejszej, lecz trudniejszej do przyswojenia, Master jako nieprzerwanie trwających pionierów death metalu, a Udo Dirkschneidera jako jeden z najważniejszych głosów klasycznego europejskiego metalu, wciąż w formie w wieku 72 lat. Dom Zły wskazano jako zespół coraz mroczniejszy i bardziej ekstremalny, który po trasie po Polsce wyjeżdża na podbój Europy z Zeal & Ardor — zdaniem prowadzącego to potencjalny towar eksportowy. Wspomniano też o wyprzedanym festiwalu Death is not the end we Wrocławiu, zdominowanym przez piwniczny undergroundowy death metal. Krytycznie oceniono Zakk Wylde’a za skupienie się na cover bandach (Pantera, Zakk Sabbath), chwalono Turbo jako grupę, która wróciła do właściwej formuły i wydaje materiał najwyższej jakości dzięki Wojciechowi Hoffmanowi, a koncert Cult of Fire z orkiestrą symfoniczną na Brutal Assault określono jako całkowicie niezrozumiały i nieudany.",
   "topics": [
     {
       "start": 223,
@@ -186,6 +186,195 @@
       "type": "artist",
       "source": "tracks",
       "at": 325
+    },
+    {
+      "id": "koncert-suicidal-angels-domination-incorporated",
+      "label": "Suicidal Angels + Domination Incorporated",
+      "type": "concert",
+      "source": "transcript",
+      "at": 776
+    },
+    {
+      "id": "koncert-tribulation-livgone",
+      "label": "Tribulation + Livgone",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1021
+    },
+    {
+      "id": "koncert-master-king-parrot-czern",
+      "label": "Master + King Parrot + Czerń",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1442
+    },
+    {
+      "id": "koncert-udo-dirkschneider-crown-shift-all-for-metal",
+      "label": "Udo Dirkschneider + Crown Shift + All for Metal",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1641
+    },
+    {
+      "id": "koncert-dynazty-nenwar-of-steel",
+      "label": "Dynazty + Nenwar of Steel",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1775
+    },
+    {
+      "id": "koncert-dom-zly",
+      "label": "Dom Zły",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2055
+    },
+    {
+      "id": "death-is-not-the-end",
+      "label": "Death is not the end",
+      "type": "event",
+      "source": "transcript",
+      "at": 2543
+    },
+    {
+      "id": "koncert-alt",
+      "label": "Alt",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3090
+    },
+    {
+      "id": "koncert-god-is-an-astronaut-jo-quail",
+      "label": "God is an Astronaut + Jo Quail",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3111
+    },
+    {
+      "id": "koncert-get-the-shot-vomit-forth-half-me-soul-prism",
+      "label": "Get The Shot + Vomit Forth + Half Me + Soul Prism",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3130
+    },
+    {
+      "id": "koncert-hostia",
+      "label": "Hostia",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3295
+    },
+    {
+      "id": "koncert-ton-i-whitcraft",
+      "label": "Toń i Whitcraft",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3321
+    },
+    {
+      "id": "koncert-the-stops",
+      "label": "The Stops",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3331
+    },
+    {
+      "id": "koncert-java-i-easy-and-the-black-trees",
+      "label": "Java i Easy and the Black Trees",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3341
+    },
+    {
+      "id": "koncert-turbo-trasa-wiecznie-mlodzi-w-metalu",
+      "label": "Turbo — trasa „Wiecznie młodzi w metalu”",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3349
+    },
+    {
+      "id": "koncert-suffocation-angelmaker-fuming-mouth-carcosa-melancholia",
+      "label": "Suffocation + AngelMaker + Fuming Mouth + Carcosa + Melancholia",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3674
+    },
+    {
+      "id": "koncert-biohazard-life-of-agony",
+      "label": "Biohazard + Life of Agony",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3943
+    },
+    {
+      "id": "koncert-zakk-sabbath",
+      "label": "Zakk Sabbath",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4512
+    },
+    {
+      "id": "koncert-entropy-ampacity-igam",
+      "label": "Entropy + Ampacity + IGAM",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4547
+    },
+    {
+      "id": "koncert-gorgoroth-eternus-deathrite-archaic",
+      "label": "Gorgoroth + Eternus + Deathrite + Archaic",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4657
+    },
+    {
+      "id": "koncert-the-aggressive-progressive-rivers-of-nihil-cynic-beyond-creation-deicide",
+      "label": "The Aggressive Progressive — Rivers of Nihil, Cynic, Beyond Creation, Deicide",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4776
+    },
+    {
+      "id": "koncert-planet-of-zeus-las-trumien",
+      "label": "Planet of Zeus + Las Trumien",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4801
+    },
+    {
+      "id": "koncert-limp-bizkit-bones-ecca-vandal-n8noface-karen-dio-riff-raff",
+      "label": "Limp Bizkit + Bones + Ecca Vandal + N8NOFACE + Karen Dio + Riff Raff",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4842
+    },
+    {
+      "id": "koncert-lordi-sick-and-beautiful",
+      "label": "Lordi + Sick and Beautiful",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5099
+    },
+    {
+      "id": "koncert-godsmack-pod-drowning-pool",
+      "label": "Godsmack + POD + Drowning Pool",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5140
+    },
+    {
+      "id": "koncert-cult-of-fire-the-great-old-ones-caronte",
+      "label": "Cult of Fire + The Great Old Ones + Caronte",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5219
+    },
+    {
+      "id": "brutal-assault",
+      "label": "Brutal Assault",
+      "type": "event",
+      "source": "transcript",
+      "at": 5272
     }
   ],
   "tracks": [

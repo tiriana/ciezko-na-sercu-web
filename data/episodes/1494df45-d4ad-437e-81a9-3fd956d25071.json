@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.333Z",
   "durationSec": 7263,
-  "summary": "Audycja poświęcona jest krakowskiej scenie metalowej. Prowadzący Jarek Szubrycht rozmawia z Adamem Śliwakowskim, założycielem kultowego sklepu Metal Shop, o historii rozwoju lokalnej sceny oraz funkcjonowaniu sklepu od lat dziewięćdziesiątych. Rozmowa obejmuje ewolucję sposobów konsumpcji muzyki, od kaset i giełd po erę cyfrową i streaming, oraz zmiany w podejściu młodych słuchaczy do gatunków muzycznych. W programie pojawiają się również utwory krakowskich pionierów metalu. Rozmowa dotyczy funkcjonowania sklepu muzycznego w centrum Krakowa oraz ewolucji gustów muzycznych słuchaczy. Gość opowiada o różnorodności zakupowej klientów, którzy łączą gatunki takie jak metal, post-punk czy rap. Wspomina również o specyfice turystyki płytowej oraz o przypadkowych wizytach znanych muzyków, m.in. z zespołów Venom, Megadeth czy Morbid Angel. Przedstawione zostaje także doświadczenie związane z organizacją spotkania z zespołem Mortis. Rozmowa z Adamem Śliwakowskim, twórcą krakowskiego Metal Shopu, na temat roli tego miejsca w integracji lokalnej sceny metalowej w latach dziewięćdziesiątych. Gość wspomina, jak sklep stał się platformą wymiany myśli dla muzyków oraz miejscem dystrybucji kaset demo i oficjalnych nagrań. Poruszony zostaje wątek współpracy z firmą Gama, która przeszła od wydawania bajek do wydawania polskiego metalu, w tym zespołu Vader. Wspomniano również o działalności magazynu Metal Side oraz o historii polskiego rynku wydawniczego i prasowego w tamtym okresie. Rozmowa dotyczy historii krakowskiej sceny metalowej oraz działalności magazynu Metal Side. Adam Śliwakowski wspomina proces powstawania czasopisma, współpracę z wytwórnią Gama oraz trudności ekonomiczne lat 90. Gość przybliża również specyfikę krakowskich muzyków, którzy często występują w wielu projektach jednocześnie. Poruszane są wątki pionierskich zespołów, takich jak Voodoo oraz Helias, które kształtowały lokalną scenę. Rozmowa z Adamem Śliwakowskim dotyczy historii krakowskiej sceny metalowej, ze szczególnym uwzględnieniem lokalnych zespołów i ich wpływu na region. Rozmówcy wspominają o pionierskich grupach, takich jak Symbolic Immortality czy Death Sea, oraz o trudnościach w budowaniu rozpoznawalności przed erą internetu. Poruszany jest temat kolejnych fal rozwoju gatunku w Krakowie oraz zjawiska muzycznej „dziedziczności”, gdzie synowie znanych muzyków kontynuują tradycje rodziców. Audycja ukazuje ewolucję brzmień i rozwój umiejętności technicznych krakowskich artystów na przestrzeni dekad. Ostatnia część rozmowy z Adamem Śliwakowskim z Metal Shopu poświęcona jest historii i współczesności krakowskiej sceny metalowej. Rozmówcy omawiają fenomen zespołu Mgła jako światowego towaru eksportowego oraz rolę lokalnych formacji, takich jak Holy Death, w kształtowaniu gatunku. Poruszany jest również temat trendów sprzedażowych w sklepach muzycznych, w tym powrót do punk rocka oraz zmiany w gustach publiczności. Gość wspomina o łatwiejszym procesie wydawania muzyki po pandemii oraz o znaczeniu koncertowania dla nowych zespołów. Podsumowanie cyklu audycji poświęconego historii i współczesności krakowskiego metalu. Prowadzący wraz z gościem Adamem zachęcają słuchaczy do samodzielnego odkrywania lokalnej sceny. W ostatniej części usłyszano utwory grup Mgła oraz Terror Dome, a także projekty Hauntologist i Creek's Machine. Rozważano kwestię unikalnego brzmienia krakowskiego black metalu.",
+  "summary": "Odcinek poświęcony krakowskiej scenie metalowej, prowadzony z udziałem Adama Śliwakowskiego, założyciela i szefa sklepu Metal Shop. Omówiono historię sklepu działającego od początku lat 90., który stał się miejscem spotkań lokalnych muzyków i fanów, oraz jego rolę w wydawaniu kaset przez krakowską firmę Gama (m.in. Schismatic, singiel Vadera \"I Feel You\") i w powstaniu magazynu Metal Side (1994, 5-6 numerów). Przedstawiono kolejne fale rozwoju krakowskiego metalu: pionierski zespół Voodoo, Holy Death jako prekursora black metalu, nurt melancholijny (Cemetery of Scream, Cold Passion, Atrofia, Red Sun, Serpentia), falę lat 2000. (Skeptic, Die Disease, Redemptor, Antropomorf) oraz współczesny fenomen Mgły, opisanej jako najważniejszy polski eksportowy zespół black metalowy XXI wieku, wraz z pokrewnymi projektami Hauntologist i Kriegsmaschine. Poruszono też obecne trendy rynkowe: powrót mody na punk rock, boom na nowe zespoły po pandemii oraz zjawisko \"dziedziczenia\" grania w rodzinach muzyków.",
   "topics": [
     {
       "start": 0,
@@ -166,6 +166,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 3237
+    },
+    {
+      "id": "metalmania",
+      "label": "Metalmania",
+      "type": "event",
+      "source": "transcript",
+      "at": 296
+    },
+    {
+      "id": "jarocin",
+      "label": "Jarocin",
+      "type": "event",
+      "source": "transcript",
+      "at": 4078
+    },
+    {
+      "id": "koncert-koncert-megadeth-w-krakowie",
+      "label": "Koncert Megadeth w Krakowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1758
+    },
+    {
+      "id": "koncert-koncert-venom-inc-w-krakowie",
+      "label": "Koncert Venom Inc. w Krakowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1719
     }
   ],
   "tracks": [
@@ -299,6 +327,12 @@
       "name": "Mariusz Owczarek",
       "time": 182,
       "quote": "której wydawcą jest Mariusz Owczarek"
+    },
+    {
+      "role": "gość",
+      "name": "Adam Śliwakowski",
+      "time": 723,
+      "quote": ""
     }
   ]
 }

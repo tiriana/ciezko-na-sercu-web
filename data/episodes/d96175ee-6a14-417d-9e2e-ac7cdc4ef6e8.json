@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.366Z",
   "durationSec": 6902,
-  "summary": "Odcinek poświęcony Arturowi Rumińskiemu i jego licznym projektom muzycznym. Punktem wyjścia jest Project Mishram, indyjski zespół łączący metal z ragami karnatackimi, co prowadzi do pytania, czy metal jest jeszcze gatunkiem, czy raczej rodzajem ekspresji. Rumiński omawia aktywne przedsięwzięcia — instrumentalny ARM, smolisty i eksperymentalny TOW, Furię, Mentors, studyjny Grieving, Gruzję oraz solową muzykę ambientowo-dronową z przetwarzanej gitary — a także punkowo-hardcorowe początki, grę w Nowym Jorku i dołączenie do Furii. Osobny wątek stanowi teatr: Wesele w Teatrze Starym i Termopile Polskie w Teatrze Narodowym w reżyserii Jana Klaty, setny spektakl Wesela oraz nowa publiczność odkrywająca zespół. W części podsumowującej rok pojawiają się albumy Chat Pile z Haydenem Pedigo, Koronera i Swans, muzyka ECM Records, Ghosted i Piotra Kurka, a także refleksja o nadmiarze współczesnej muzyki. Całość zamyka wskazanie Black Sabbath i płyty Paranoid jako najważniejszego źródła.",
+  "summary": "Gościem odcinka jest Artur Rumiński, muzyk związany z zespołami ARM, Furia, Gruzja, TOW, Mentors i Griving oraz działalnością solową, który opowiada o charakterze i stanie prac nad każdym z tych projektów, w tym o nowej płycie ARM i planowanej płycie solowej. Wspomina swoją drogę muzyczną od punka i hardcore'u w Sosnowcu, przez grę w hardcore'owym zespole w Nowym Jorku, po dołączenie do Furii i rozwój jej brzmienia w stronę mniej konwencjonalnego black metalu. Szeroko omówiona jest teatralna przygoda Furii — udział w spektaklu „Wesele” w reżyserii Jana Klaty, zagranym po raz setny w Teatrze Narodowym w Warszawie — oraz udział zespołu Gruzja w spektaklu „Termopile polskie” Mieczyńskiego, również w reżyserii Klaty. Rumiński i prowadzący rozmawiają o najciekawszych płytach mijającego roku, wymieniając m.in. „In the Earth Again” Chat Pile i Haydena Pedigo, nowe albumy Rotten Sound i Coroner oraz odkrycia z katalogu wytwórni ECM Records, a także o koncertach zespołu Swans. Na koniec Rumiński wskazuje Black Sabbath, a konkretnie album „Paranoid”, jako najważniejszy punkt odniesienia w swojej muzycznej edukacji.",
   "topics": [
     {
       "start": 610,
@@ -123,6 +123,20 @@
       "type": "artist",
       "source": "tracks",
       "at": 4288
+    },
+    {
+      "id": "artur-ruminski",
+      "label": "Artur Rumiński",
+      "type": "person",
+      "source": "credits",
+      "at": 1159
+    },
+    {
+      "id": "koncert-swans",
+      "label": "Swans",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5056
     }
   ],
   "tracks": [
@@ -258,5 +272,12 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "gość",
+      "name": "Artur Rumiński",
+      "time": 1159,
+      "quote": ""
+    }
+  ]
 }

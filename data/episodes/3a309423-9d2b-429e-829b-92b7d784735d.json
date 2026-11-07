@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.404Z",
   "durationSec": 6763,
-  "summary": "Subiektywne podsumowanie najlepszych zagranicznych płyt heavymetalowych i okołometalowych wydanych w 2024 roku, zapowiedziane jako pierwsza z dwóch części — tydzień później omówiona ma być scena polska. Wśród przypomnianych albumów znalazły się m.in. „Absolute Elsewhere” Blood Incantation, „Melodies of Atonement” Leprous, „Cometh the Storm” High on Fire, „A Chaos of Flowers” Big Brave, „You Won't Go Before You're Supposed To” Knocked Loose, „Cool World” Chat Pile i „Beating the Drums of Ancestral Force” Tzompantli. Wątki obejmowały wpływy Sepultury i Disembowelment na brzmienie Tzompantli, pracę nad książką o metalu rdzennych Amerykanów oraz burzę wokół występu Knocked Loose w programie Jimmy'ego Kimela. Osobne miejsce zajęły dwie płyty Full of Hell — „Coagulated Bliss” oraz „Scraping the Divine” nagrana z Andrew Nolanem — a także kolaboracja The Body z Dis Fig „Orchards of Futile Heaven” i nowy zespół byłego frontmana Oxbow, Buñuel. Za album roku uznano „Muuntautuja” fińskiego Oranssi Pazuzu, a wcześniej zapowiedziano lutowy koncert Full of Hell w warszawskiej Progresji.",
+  "summary": "Odcinek to pierwsza część podsumowania roku 2024 — subiektywny wybór dwudziestu ulubionych zagranicznych płyt, z zapowiedzią, że część polska pojawi się tydzień później. Prowadzący omówił m.in. albumy Blood Incantation „Absolute Elsewhere”, Gigan „Anomalous Abstractigate Infinitesimus”, Leprous „Melodies of Atonement”, High on Fire „Cometh the Storm”, Big Brave „A Chaos of Flowers” i Julie Christmas „Ridiculous and Full of Blood”. Knocked Loose płytą „You Won't Go Before You're Supposed To” przebili się do nowej publiczności, czego dowodem była burza wokół występu w nocnym programie Jimmy'ego Kimmela. Full of Hell wydali w ciągu roku dwie płyty — „Coagulated Bliss” oraz „Scraping the Divine” nagraną z Andrew Nolanem — a The Body po raz kolejny połączyli siły z inną artystką, tym razem z Felicią Chen. Prowadzący wspomniał, że pracuje nad książką o metalu granym przez rdzennych Amerykanów, i opowiadał o wykorzystaniu tradycyjnych bębnów i fletów przez zespół Tom Pantley. Za swój ulubiony album roku uznał „Muuntautuja” fińskiej grupy Oranssi Pazuzu.",
   "topics": [
     {
       "start": 33,
@@ -207,6 +207,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 1453
+    },
+    {
+      "id": "ksiazka-o-metalu-granym-przez-rdzennych-amerykanow-w-przygotowaniu",
+      "label": "książka o metalu granym przez rdzennych Amerykanów (w przygotowaniu)",
+      "type": "work",
+      "source": "transcript",
+      "at": 3158
+    },
+    {
+      "id": "koncert-full-of-hell-w-warszawskiej-progresji-luty",
+      "label": "Full of Hell w warszawskiej Progresji (luty)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3761
+    },
+    {
+      "id": "koncert-ostatni-koncert-na-ktorym-prowadzacy-byl-w-2024-roku",
+      "label": "ostatni koncert, na którym prowadzący był w 2024 roku",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5416
+    },
+    {
+      "id": "roadburn",
+      "label": "Roadburn",
+      "type": "event",
+      "source": "transcript",
+      "at": 5815
     }
   ],
   "tracks": [

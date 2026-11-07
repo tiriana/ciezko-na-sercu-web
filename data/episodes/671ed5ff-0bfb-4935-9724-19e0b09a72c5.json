@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.412Z",
   "durationSec": 6817,
-  "summary": "W odcinku prowadzący Jarek Szubrycht relacjonuje swoje wrażenia z festiwalu Summer Dying Loud w Aleksandrowie Łódzkim, opisując zarówno logistykę, jak i atmosferę różnych scen. Opowiada o spotkaniu z zespołem Opeth w Niemczech oraz o koncertach takich jak Antichristian Siege Machine, Mayhem, Coldbran, Wolvenest i Shazula. Krytycznie ocenia występ Mayhem, chwaląc jednocześnie nową energię Coldbran i intensywność Wolvenest. Na koniec przytacza koncert kolumbijskiego zespołu Masakrę i ich utwór „Death Metal Forever”. W audycji prowadzący omawiają koncert zespołu Masakrę, w tym ich utwór \"Death Metal Forever\" z albumu Live in Poland, oraz wspominają o innych występach festiwalowych, m.in. Immemorial, Primordial i Overkill. Poruszono problemy techniczne koncertu Immemorial oraz nową płytę Rebirth, a także dyskusję o albumie Scorched zespołu Overkill i rywalizacji z Metalliką. Dalsza część programu poświęcona jest francuskiemu zespołowi Aluc Todolo i ich albumowi Lux, a na koniec podsumowano festiwal Summer Dying Loud, podkreślając energię i różnorodność występów. W odcinku prowadzący rozmawiają o wyzwaniach organizacyjnych festiwalu Summer Dine Loud, opisując trudności techniczne i logistyczne oraz emocje związane z występami. Szczegółowo omawiane są koncerty headlinerów – Mayhem, Godflesh, The Crown i Overkill – oraz ich wpływ na publiczność. Poruszany jest temat roli miasta Aleksandrów Łódzki jako gospodarza i integracji uczestników festiwalu. Na koniec zapowiedziane są plany na kolejną edycję oraz informacje o biletach kolekcjonerskich i rekordowych rezerwacjach noclegów. W odcinku prowadzący omawiają plany na przyszłoroczne edycje festiwalu, podkreślając konieczność rezerwacji hoteli już teraz. Dyskutują o utrzymaniu kameralnej atmosfery festiwalu oraz możliwości rozbudowy o dodatkową scenę i inne formy kulturalne, takie jak warsztaty i panele dyskusyjne. Wspominają o dotychczasowych sukcesach w sprzedaży noclegów i o rozmowach z potencjalnymi wykonawcami, w tym z zespołem Godflesh. Na koniec podziękowują gościom i zapowiadają kolejne spotkania na festiwalach.",
+  "summary": "Odcinek w całości poświęcony festiwalowi Summer Dying Loud w Aleksandrowie Łódzkim — jego 15. edycji, na którą złożyło się 51 kapel z całego świata grających przez trzy dni na dużej scenie i w klubowej Krypcie. Z pierwszego dnia prowadzący relacjonuje koncert Antichrist Siege Machine promujący album Vengeance of Eternal Fire oraz zawiedziony występ Mayhem, oskarżony o muzealny, gablociany charakter widowiska na 40-lecie zespołu, a także zamykający noc koncert Wolvenest. Z drugiego dnia omówione zostały m.in. Masakra (płyta Live in Poland nagrana w warszawskim Voodoo), King Dude, nieudany powrót Immemorial z płytą Rebirth, Primordial, Overkill z krążkiem Scorched zagrany bez basisty D.D. Verniego, Aluc Todolo z albumem Lux, Moonspell i reaktywowany Obscure Sphinx. Osobny wątek to kulisy organizacji: problemy techniczne, logistyka trasy Overkill, spóźnienia i zespół Masakra, który przyjechał bez własnych instrumentów. Całość dopełnia rozmowa z organizatorem o formule festiwalu, relacjach z miastem i planach na 2025 rok. Prowadzący wspomina też wyjazd do Niemiec na spotkanie z zespołem Opeth i odsłuch nowej płyty, którego efekty zapowiedziano w kolejnej audycji.",
   "topics": [
     {
       "start": 30,
@@ -180,6 +180,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 2011
+    },
+    {
+      "id": "tomasz-barszcz",
+      "label": "Tomasz Barszcz",
+      "type": "person",
+      "source": "credits",
+      "at": 5324
+    },
+    {
+      "id": "summer-dying-loud-2024-15-edycja",
+      "label": "Summer Dying Loud 2024 (15. edycja)",
+      "type": "event",
+      "source": "transcript",
+      "at": 7
+    },
+    {
+      "id": "summer-dying-loud-2025",
+      "label": "Summer Dying Loud 2025",
+      "type": "event",
+      "source": "transcript",
+      "at": 6210
+    },
+    {
+      "id": "koncert-trasa-europejska-antichrist-siege-machine-i-ascended-dead",
+      "label": "Trasa europejska Antichrist Siege Machine i Ascended Dead",
+      "type": "concert",
+      "source": "transcript",
+      "at": 977
     }
   ],
   "tracks": [
@@ -406,5 +434,12 @@
       "text": "Bardzo się cieszę, że udało się pierwszy raz zorganizować koncert The Crown z Szwecji."
     }
   ],
-  "credits": []
+  "credits": [
+    {
+      "role": "gość",
+      "name": "Tomasz Barszcz",
+      "time": 5324,
+      "quote": ""
+    }
+  ]
 }

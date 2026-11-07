@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.399Z",
   "durationSec": 6858,
-  "summary": "Odcinek otwiera zapowiedź pożegnalnego koncertu Black Sabbath w oryginalnym składzie 5 lipca w Birmingham, z Ozzym Osbournem, Tonym Iommim, Geezerem Butlerem i Billem Wardem oraz gośćmi takimi jak Metallica, Slayer, Pantera, Anthrax, Gojira, Alice in Chains i Lamb of God, z Tomem Morello jako dyrektorem muzycznym. Decyzję o rezygnacji z biletów uzasadnia wcześniejszym pożegnaniem zespołu w dobrej formie i chęcią skupienia się na tegorocznych festiwalach. Dalej następuje przegląd europejskich imprez: Inferno w Oslo, które odbędzie się bez zmarłego 11 lutego założyciela Jana Martina Jensena, Roadburn w Tilburgu, Desertfest w Berlinie, Obscene Extreme w Trutnovie, Brutal Assault w twierdzy Josefov, Midgardsblot w Borre i ArcTanGent w Bristolu. Przy każdej imprezie podane są terminy i program, m.in. Behemoth, Batushka i Blood Incantation na Inferno oraz The Body, Swans i Thou na Roadburn. Całość zamyka wskazanie festiwali stawiających na awangardę i wątek progresywny, z Melvins jako muzycznym podsumowaniem.",
+  "summary": "Odcinek poświęcony pożegnalnemu koncertowi Black Sabbath w oryginalnym składzie, zaplanowanemu na 5 lipca w Birmingham, z udziałem Oziego Osbourne'a, Tony'ego Iommiego, Geezera Butlera i Billa Warda oraz Metalliki, Slayera, Pantery, Anthraxu, Gojiry, Alice in Chains i Lamb of God, pod dyrekcją muzyczną Toma Morello. Prowadzący tłumaczy, dlaczego nie stanął do wyścigu o bilety — woli pamiętać zespół z czasów, gdy Ozzy był w dobrej formie — i zamiast tego proponuje przegląd europejskich festiwali. Omawia Inferno Festival w Oslo, którego tegoroczna edycja się nie odbędzie po śmierci założyciela Jana Martina Jensena, oraz Roadburn w Tilburgu, reklamowany hasłem o przedefiniowywaniu ciężkości, z Sethem z Neurosis jako rezydentem i występami Swans, Thou i Supplicate. Kolejne polecenia to Desertfest w Berlinie, Obscene Extreme w Trutnovie, Brutal Assault w twierdzy Josefov, Midgard's Blood w Borre pod Oslo oraz ArcTanGent w Bristolu. W tle przewijają się nazwy z line-upów, m.in. Behemoth, Blood Incantation, Godflesh, Mayhem, Wardruna i Melvins.",
   "topics": [
     {
       "start": 478,
@@ -153,6 +153,69 @@
       "type": "artist",
       "source": "tracks",
       "at": 719
+    },
+    {
+      "id": "koncert-black-sabbath-pozegnalny-koncert-w-oryginalnym-skladzie",
+      "label": "Black Sabbath — pożegnalny koncert w oryginalnym składzie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 496
+    },
+    {
+      "id": "inferno-festival",
+      "label": "Inferno Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 1131
+    },
+    {
+      "id": "koncert-pierwszy-koncert-mayhem-w-polsce-na-mystic-festival-w-krakowie",
+      "label": "Pierwszy koncert Mayhem w Polsce na Mystic Festival w Krakowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1315
+    },
+    {
+      "id": "roadburn",
+      "label": "Roadburn",
+      "type": "event",
+      "source": "transcript",
+      "at": 2327
+    },
+    {
+      "id": "desertfest",
+      "label": "Desertfest",
+      "type": "event",
+      "source": "transcript",
+      "at": 4054
+    },
+    {
+      "id": "obscene-extreme",
+      "label": "Obscene Extreme",
+      "type": "event",
+      "source": "transcript",
+      "at": 4382
+    },
+    {
+      "id": "brutal-assault",
+      "label": "Brutal Assault",
+      "type": "event",
+      "source": "transcript",
+      "at": 5152
+    },
+    {
+      "id": "midgard-s-blood",
+      "label": "Midgard's Blood",
+      "type": "event",
+      "source": "transcript",
+      "at": 6178
+    },
+    {
+      "id": "arctangent",
+      "label": "ArcTanGent",
+      "type": "event",
+      "source": "transcript",
+      "at": 6434
     }
   ],
   "tracks": [

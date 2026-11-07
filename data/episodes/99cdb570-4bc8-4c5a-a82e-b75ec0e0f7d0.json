@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.347Z",
   "durationSec": 7205,
-  "summary": "Audycja relacjonuje trzy wieczory koncertowe Tallinn Music Week, największego festiwalu showcase'owego w krajach bałtyckich, gdzie reprezentacja ciężkich brzmień była wyjątkowo silna. W sobotę odbyła się bałtycka mutacja konkursu Road to Mystic, w której zagrały cztery zespoły z Estonii oraz po jednym z Litwy i Łotwy. Zaproszenia na Mystic Festival otrzymały estoński Bloodfeather z Tartu i łotewski Sever z Rygi, a o drugie miejsce jury toczyło zażarte dyskusje. W konkursie zaprezentowały się także Oli, czyli Oliver Mazurczak, litewski Grieve God, Artifer oraz Pale Ellison z Narwy. Czwartkowy wieczór pod egidą Heavy Music Estonia przyniósł industrialny Evestus, techniczny death metal Surgeon, fiński Numento z kantele w składzie i folkmetalowy Antsud Metal Project. Piątkowy wieczór klubowy przygotowany przez fiński festiwal Blow Up zdominowały Sunniva i grindcorowy Sos Asylum, a całość zamknęły płyty estońskich zespołów Humanity i Nihilist Crypt.",
+  "summary": "Audycja relacjonuje trzy wieczory koncertowe tegorocznego Tallinn Music Week, festiwalu showcase'owego w krajach bałtyckich, ze szczególnym uwzględnieniem sceny metalowej skupionej wokół nieformalnego stowarzyszenia Heavy Music Estonia. W sobotnim finale bałtyckiej edycji konkursu Road to Mystic zaproszenie na Mystic Festival otrzymały zespoły Blood Feather z Tartu oraz Sever z Rygi, a wśród pozostałych finalistów omówiono Oliego (Oliver Mazurczak), Artifer, litewski Grieve God i Pale Ellison z Narwy. Z czwartkowego wieczoru pod egidą Heavy Music Estonia wspomniano industrialny Evestus, techniczno-progresywny death metalowy Surgeon (zwycięzca estońskiego odpowiednika Fryderyka za debiut w 2022 roku), fiński melodyjny death metalowy Numento z wokalistką Katri grającą na kantele, oraz folkmetalowy projekt Ansud Metal Project, łączący zespół Ansud z producentem Emanuelem Hermano Celepisem. Piątkowy wieczór, przygotowany przez ludzi z fińskiego festiwalu Blow Up, przyniósł występy fińskiej Sunnivy oraz estońskiego Sos Asylum. Na koniec omówiono płyty estońskich zespołów Humanity i Nihilisty Crypt, przekazane prowadzącemu przez gitarzystę Martina; wspomniano też, że muzycy Humanity planują przerwę w działalności z powodu obowiązkowej służby wojskowej.",
   "topics": [
     {
       "start": 203,
@@ -158,6 +158,27 @@
       "type": "artist",
       "source": "tracks",
       "at": 3894
+    },
+    {
+      "id": "tallinn-music-week",
+      "label": "Tallinn Music Week",
+      "type": "event",
+      "source": "transcript",
+      "at": 271
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 354
+    },
+    {
+      "id": "blow-up",
+      "label": "Blow Up",
+      "type": "event",
+      "source": "transcript",
+      "at": 5585
     }
   ],
   "tracks": [

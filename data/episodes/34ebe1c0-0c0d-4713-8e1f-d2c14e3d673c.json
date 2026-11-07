@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.352Z",
   "durationSec": 6912,
-  "summary": "Spotkanie otwiera pożegnanie Phila Campbella, byłego gitarzysty Motörhead, zmarłego w wieku 64 lat, z utworami „Dog Faced Boy” i „Till the End”. Głównym gościem jest Mariusz „Demon” Dzwonek, lider sosnowieckiego Frontside, który opowiada o nazwie zaczerpniętej ze skateboardingu, początkach w hardcore punku, kolejnych taśmach demo wydawanych w wytwórniach punkowych oraz fascynacji szwedzkim death metalem, która popchnęła zespół w stronę metalu. Wiele miejsca poświęca przerwie w działalności, dojściu nowego wokalisty Molly'ego i albumowi „Nemezis”, wydanemu po najdłuższej przerwie wydawniczej w historii grupy nakładem Massacre Records. Tematem przewodnim płyty są wątpliwości wobec mediów, polityki i napływających informacji, a rozmowa zahacza też o przemiany związane ze sztuczną inteligencją i niepewność zawodową. Drugi wątek to wywiad z Mikiem Muirem z Suicidal Tendencies o kłopotach z nazwą zespołu, cenzurze w szkołach i sklepach muzycznych oraz o powodach, dla których grupa wciąż gra.",
+  "summary": "Audycja otwiera się pożegnaniem Phila Campbella, byłego gitarzysty Motorhead, zmarłego w wyniku powikłań pooperacyjnych w wieku 64 lat; przypomniano historię utworu „Dog Faced Boy”, napisanego przez Lemmy'ego o Campbellu, oraz jego rolę w zespole od 1984 roku i udział w projekcie Phil Campbell and the Bastard Sons. Głównym wątkiem jest rozmowa z Mariuszem „Demonem” Dzwonkiem, liderem sosnowieckiej grupy Frontside, o historii zespołu — od hardcore-punkowych i crossoverowych korzeni inspirowanych m.in. Suicidal Tendencies i Biohazard, przez zmiany składu (w tym dołączenie perkusisty Destroja i nowego wokalisty Molly'ego po odejściu Aumana), wydanie dwóch płyt hardrockowych i przerwę związaną z pandemią, aż po nową płytę „Nemezis” wydaną przez Massacre Records po najdłuższej przerwie wydawniczej w historii zespołu, którą Demon uważa za najlepszą w dorobku grupy; przewodnim tematem płyty są wątpliwości wobec informacji, polityki i mediów. Drugą częścią jest archiwalny wywiad z Mikiem Muirem, liderem Suicidal Tendencies, nagrany na Mystic Festival w Gdańsku, w którym opowiada o problemach zespołu wynikających z jego nazwy (odmowy sprzedaży płyt przez sklepy, interwencje policji, zakazy noszenia koszulek zespołu w amerykańskich szkołach) oraz o swojej filozofii tworzenia muzyki niezależnie od oczekiwań i krytyki innych.",
   "topics": [
     {
       "start": 221,
@@ -102,6 +102,55 @@
       "type": "artist",
       "source": "tracks",
       "at": 4765
+    },
+    {
+      "id": "mariusz-demon-dzwonek",
+      "label": "Mariusz \"Demon\" Dzwonek",
+      "type": "person",
+      "source": "credits",
+      "at": 913
+    },
+    {
+      "id": "mike-muir",
+      "label": "Mike Muir",
+      "type": "person",
+      "source": "credits",
+      "at": 4505
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 629
+    },
+    {
+      "id": "koncert-trasa-koncertowa-promujaca-plyte-nemezis",
+      "label": "trasa koncertowa promująca płytę \"Nemezis\"",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3662
+    },
+    {
+      "id": "koncert-trasa-koncertowa-z-biomechanical-i-decapitated",
+      "label": "trasa koncertowa z Biomechanical i Decapitated",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2954
+    },
+    {
+      "id": "koncert-trasa-suicidal-tendencies-z-metallica",
+      "label": "trasa Suicidal Tendencies z Metallicą",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4651
+    },
+    {
+      "id": "koncert-koncert-headlinerski-suicidal-tendencies-w-virginia-beach",
+      "label": "koncert headlinerski Suicidal Tendencies w Virginia Beach",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5764
     }
   ],
   "tracks": [
@@ -276,5 +325,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "gość",
+      "name": "Mariusz \"Demon\" Dzwonek",
+      "time": 913,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Mike Muir",
+      "time": 4505,
+      "quote": ""
+    }
+  ]
 }

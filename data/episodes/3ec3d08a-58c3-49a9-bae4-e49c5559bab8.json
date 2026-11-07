@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.405Z",
   "durationSec": 6877,
-  "summary": "Odcinek w dużej mierze poświęcony grudniowym koncertom: Brudny SMM promuje płytę Silesian Bastards występami w Poznaniu i Katowicach, a w trasach są m.in. Skeptik, Illusion, Frontside, Hostia, Korapszyn i Sunnata z albumu Chasing the Shadows. 7 grudnia w warszawskiej Proximie zagrają Sólstafir z nowej płyty Hin Helga Kvöl oraz Oranssi Pazuzu z Muuntautuja. Największym metalowym wydarzeniem miesiąca jest koncert Testament, Anthrax i Kreatora w katowickim Spodku 11 grudnia, a tego samego dnia Fit for an Autopsy zaprezentuje w Proximie album The Nothing That Is. W kolejnych dniach Proxima gości Dying Fetus z Chelsea Grin, Vitriolem i Despised Icon, a w krakowskim Zaścianku odbywa się dziesiąta edycja Drownfest z Faust Again jako gwiazdą. Omówiono też akustyczny występ Life of Agony we wrocławskim Starym Klasztorze 18 grudnia oraz trasę Roku, na której Furia z Galswirt i Aluktodolo gra program oparty na płycie Huta Luna.",
+  "summary": "Odcinek był grudniowym przeglądem koncertów i tras, rozpoczętym od Brudnego SMM promującego płytę „Silesian Bastards” występami 6 grudnia w Poznaniu i 7 grudnia w Katowicach, z Nekrofagiem i Roadhogiem jako supportami; w trasach są też Skeptik, Sonata, Illusion z Frontside i Hostią oraz Korapszyn. 7 grudnia w warszawskiej Proximie zagrają Helga, Oranssi Pazuzu i Sólstafir — Oranssi Pazuzu promuje uznaną „Muuntautuja”, a Sólstafir nowy album „Hin helga kvöl”. 11 grudnia w katowickim Spodku wystąpi thrashowe trio Testament, Anthrax i Kreator, co stało się okazją do wspomnień o „Pleasure to Kill”, „Among the Living” i „The Gathering”; tego samego dnia w Proximie zagra Fit for an Autopsy z siódmą płytą „The Nothing That Is”, w towarzystwie Sylosis, Darkest Hour i Heriot. 13 grudnia w Progresji wystąpi Dying Fetus z Chelsea Grin, Vitriolem i Despised Icon, a 14 grudnia w krakowskim Zaścianku odbędzie się dziesiąta edycja Drownfest z Faust Again jako gwiazdą wieczoru. Na koniec omówiono akustyczny występ Life of Agony 18 grudnia we wrocławskim Starym Klasztorze oraz „Trasę Roku” Furi z Gaahl's Wyrd i Aluktodolo, uznaną za jedną z ciekawszych tras metalowych 2024 roku.",
   "topics": [
     {
       "start": 215,
@@ -181,6 +181,104 @@
       "type": "artist",
       "source": "tracks",
       "at": 3129
+    },
+    {
+      "id": "koncert-brudny-smm-koncerty-promujace-album-silesian-bastards",
+      "label": "Brudny SMM – koncerty promujące album „Silesian Bastards”",
+      "type": "concert",
+      "source": "transcript",
+      "at": 227
+    },
+    {
+      "id": "koncert-skeptik-trasa-koncertowa",
+      "label": "Skeptik – trasa koncertowa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 547
+    },
+    {
+      "id": "koncert-sonata-i-narbo-da-kal-trasa-koncertowa",
+      "label": "Sonata i Narbo da Kal – trasa koncertowa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 557
+    },
+    {
+      "id": "koncert-illusion-frontside-i-hostia-trasa-koncertowa",
+      "label": "Illusion, Frontside i Hostia – trasa koncertowa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 564
+    },
+    {
+      "id": "koncert-korapszyn-trasa-koncertowa",
+      "label": "Korapszyn – trasa koncertowa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 572
+    },
+    {
+      "id": "koncert-helga-oranssi-pazuzu-i-solstafir-proxima-warszawa",
+      "label": "Helga, Oranssi Pazuzu i Sólstafir – Proxima, Warszawa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1056
+    },
+    {
+      "id": "koncert-terror-hydrozagadka-warszawa",
+      "label": "Terror – Hydrozagadka, Warszawa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1643
+    },
+    {
+      "id": "koncert-testament-anthrax-i-kreator-spodek-katowice",
+      "label": "Testament, Anthrax i Kreator – Spodek, Katowice",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1817
+    },
+    {
+      "id": "koncert-fit-for-an-autopsy-proxima-warszawa",
+      "label": "Fit for an Autopsy – Proxima, Warszawa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3433
+    },
+    {
+      "id": "koncert-dying-fetus-progresja-warszawa",
+      "label": "Dying Fetus – Progresja, Warszawa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4324
+    },
+    {
+      "id": "drownfest-10-edycja-klub-zascianek-krakow",
+      "label": "Drownfest – 10. edycja, klub Zaścianek, Kraków",
+      "type": "event",
+      "source": "transcript",
+      "at": 5490
+    },
+    {
+      "id": "koncert-life-of-agony-koncert-akustyczny-stary-klasztor-wroclaw",
+      "label": "Life of Agony – koncert akustyczny, Stary Klasztor, Wrocław",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5810
+    },
+    {
+      "id": "koncert-trasa-roku-furia-gaahl-s-wyrd-i-aluktodolo",
+      "label": "Trasa Roku – Furia, Gaahl's Wyrd i Aluktodolo",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6067
+    },
+    {
+      "id": "summer-day-in-loud",
+      "label": "Summer Day in Loud",
+      "type": "event",
+      "source": "transcript",
+      "at": 6185
     }
   ],
   "tracks": [

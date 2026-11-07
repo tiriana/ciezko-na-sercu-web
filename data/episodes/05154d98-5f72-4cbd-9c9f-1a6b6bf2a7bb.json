@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.322Z",
   "durationSec": 7146,
-  "summary": "W pierwszej części audycji Jarek Szubrycht przywitał słuchaczy, wspominając japoński zespół Psyche oraz ich nową płytę „Goh K”. Następnie omówił festiwal Summer Dying Loud, podkreślając zarówno znane nazwiska, jak i mniej znane zespoły grające na mniejszych scenach. Kolejnym wątkiem była zapowiedź trasy koncertowej Dom Zły oraz innych wydarzeń metalowych w Polsce, w tym koncertu The Laws i 30. urodzin Metal Music Attack, a także liczne zagraniczne i polskie zespoły występujące w najbliższych tygodniach. W odcinku omówiono najważniejsze festiwale metalowe planowane na wrzesień, w tym Thunderfest w Bytowie, Moonrise Festival w Dobrym Mieście oraz Metal Commando Fest w Warszawie. Podano szczegóły dotyczące line‑upów, premier płyt i koncertów, m.in. występów Die Disease, Neolit, Funebrarum i Devin Townsenda. Poruszono także mniej znane wydarzenia, takie jak Underground Descents w Katowicach, Blastfest w Lublinie oraz nową trasę zespołu Allegeon, a na koniec zapowiedziano koncerty Spirit Box i polską odsłonę trasy Tsunami Sea. W audycji prowadzący omawia nadchodzące koncerty metalowe i eksperymentalne zaplanowane na wrzesień, podkreślając wyjątkowość występów kobiet i międzynarodowych zespołów. Szczególną uwagę poświęca festiwalowi Avant Art, który ma obejmować cały miesiąc i łączyć koncerty z projekcjami filmowymi oraz spotkaniami. Wspomina także kilka konkretnych występów, w tym progresywny metalcór Spirit Box oraz hybrydowy projekt Aurora Wave, a na koniec zachęca do odkrywania mniej znanych grup, takich jak Senyawa czy Earth Ball.",
+  "summary": "Odcinek to przegląd koncertów i festiwali zaplanowanych na wrzesień. Najwięcej miejsca poświęcono Summer Dying Loud w Aleksandrowie Łódzkim (3-5 września) z udziałem Tryptikon, Nevermore, Destruction, Sventevit (Nergal z Mystyrming grający debiut Behemota), Satyricon i Jesu oraz mniejszej scenie z Off with Feather and Bone, Arabrot, Cryptic Shift i polskim Stellar Blight. Omówiono trasę Dom Zły łączącego hardcore z black metalem, powrót zespołu The Laws jako kontynuatora Sarcófago (którego lider Wagner Antichrist wykłada dziś ekonomię na brazylijskiej uczelni), a także festiwale Thunderfest w Bytowie z pożegnalnym koncertem The Crown w Polsce, Blastfest w Lublinie z norweskim Kadaver oraz Avant Art z indonezyjską grupą Senyawa. Wspomniano album Neolitu „Inbir” z pierwszym w 35-letniej historii zespołu utworem po polsku oraz nową płytę Funebrarum „Beckoning the Void of Eternal Silence”, wydaną po 17 latach oczekiwania.",
   "topics": [
     {
       "start": 390,
@@ -169,6 +169,174 @@
       "type": "artist",
       "source": "tracks",
       "at": 711
+    },
+    {
+      "id": "koncert-psyche-devil-master",
+      "label": "Psyche + Devil Master",
+      "type": "concert",
+      "source": "transcript",
+      "at": 411
+    },
+    {
+      "id": "summer-dying-loud",
+      "label": "Summer Dying Loud",
+      "type": "event",
+      "source": "transcript",
+      "at": 609
+    },
+    {
+      "id": "koncert-faust-sacrifice-chainsaw-i-xificurg",
+      "label": "Faust Sacrifice Chainsaw i Xificurg",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2542
+    },
+    {
+      "id": "koncert-dom-zly-trasa-koncertowa",
+      "label": "Dom Zły — trasa koncertowa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2551
+    },
+    {
+      "id": "koncert-the-laws",
+      "label": "The Laws",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2657
+    },
+    {
+      "id": "koncert-30-urodziny-zalozyciela-metal-music-attack",
+      "label": "30. urodziny założyciela Metal Music Attack",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2838
+    },
+    {
+      "id": "koncert-koncert-w-root-boy",
+      "label": "Koncert w Root Boy",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2865
+    },
+    {
+      "id": "thunderfest",
+      "label": "Thunderfest",
+      "type": "event",
+      "source": "transcript",
+      "at": 3258
+    },
+    {
+      "id": "moonrise-festival",
+      "label": "Moonrise Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 3869
+    },
+    {
+      "id": "metal-commando-fest",
+      "label": "Metal Commando Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 3921
+    },
+    {
+      "id": "koncert-cenotaph-i-cryptworm",
+      "label": "Cenotaph i Cryptworm",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4537
+    },
+    {
+      "id": "koncert-drug-church",
+      "label": "Drug Church",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4556
+    },
+    {
+      "id": "koncert-devin-townsend",
+      "label": "Devin Townsend",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4579
+    },
+    {
+      "id": "underground-descents",
+      "label": "Underground Descents",
+      "type": "event",
+      "source": "transcript",
+      "at": 4903
+    },
+    {
+      "id": "koncert-koncert-w-carpenter-inn",
+      "label": "Koncert w Carpenter Inn",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4957
+    },
+    {
+      "id": "blastfest",
+      "label": "Blastfest",
+      "type": "event",
+      "source": "transcript",
+      "at": 4997
+    },
+    {
+      "id": "koncert-allegaeon-gorod-halizis-trasa",
+      "label": "Allegaeon, Gorod, Halizis — trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5725
+    },
+    {
+      "id": "koncert-funebrarum",
+      "label": "Funebrarum",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5749
+    },
+    {
+      "id": "koncert-1914",
+      "label": "1914",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6125
+    },
+    {
+      "id": "koncert-tsunami-sea-trasa",
+      "label": "Tsunami Sea — trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6154
+    },
+    {
+      "id": "koncert-tenside-sugar-spine-aurora-wave",
+      "label": "Tenside, Sugar Spine, Aurora Wave",
+      "type": "concert",
+      "source": "transcript",
+      "at": 7078
+    },
+    {
+      "id": "koncert-koncerty-na-koniec-miesiaca",
+      "label": "Koncerty na koniec miesiąca",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6737
+    },
+    {
+      "id": "avant-art-festival",
+      "label": "Avant Art Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 6776
+    },
+    {
+      "id": "koncert-senyawa",
+      "label": "Senyawa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6811
     }
   ],
   "tracks": [

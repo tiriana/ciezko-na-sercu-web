@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.407Z",
   "durationSec": 6959,
-  "summary": "Odcinek w całości poświęcony polskiej muzyce metalowej — od lat 70. i przełomu, jaki przyniosło TSA, po scenę współczesną. Przypomniano ekstremalny underground lat 80.: Mercyless Death z demem Eternal Condemnation, Scarecrow z Deo Optimo Maximo, Hector z The Inner Dementia oraz DDT z koncepcją białego zła, a także reedycje wytwórni Thrashing Madness Productions. Druga część dotyczy poszukiwań poza konwencjami: Flash World, Keta, Atrocious Filth, Mordor Stigmata i Entropia. Zestawiono popularność Mgły z mniej znanym projektem Kriegs Machine oraz omówiono Hekatomb i płytę Korosta opartą na historii sekty muraszkowców z Polesia i Wołynia. Na koniec zaprezentowano dziwne projekty — Wilczycę, Narenwind, Ifryt i Egoist — oraz nowości Midspreader, Distruster, Fiasko i Deus Mortem.",
+  "summary": "Odcinek poświęcony wyłącznie polskiej muzyce ciężkiej — od prehistorii gatunku w latach 70. i przełomu, jaki przyniosło TSA, po scenę współczesną. W części o ekstremalnym undergroundzie lat 80. przypomniano Mercyless Death (demo Eternal Condemnation, problemy muzyków ze służbą wojskową, skreślenie z Metalmanii) i Scarecrow (demo Deo Optimo Maximo, wyprzedzające późniejszy black metal), a także reedycje Thrashing Madness Productions. Z początku lat 90. omówiono DDT (koncepcja „białego zła”, dwa dema i szybki koniec działalności) oraz Hector (The Inner Dementia, późniejsza działalność jako Hectcore i album Imagine Theatre). W bloku o poszukujących zespołach znaleźli się Flash World (The Essence Has Changed But The Details Remained), Keta (Magna Minus), Atrocious Filth z Krzysztofem „Docentem” Raczkowskim, Entropia (Ufonaut), Kriegs Machine (Enemy of Man) oraz zespół z Bochni łączący ekstremalny metal z awangardą i filozoficznymi tekstami. Nowszą scenę reprezentowały Hekatomb (Korosta — koncept o sekcie muraszkowców na Polesiu i Wołyniu w latach 30.), Wilczyca (Magia), Narenwind (Dziewięć kluczy do Królestwa Cieni), Ifryt (Płuca) i Egoist (Ultra Selfish Revolution). Wśród najnowszych wydawnictw przedstawiono grind Midspreader (Mental Disease Transmitted by Radioactive Fear), EP-kę Distruster Obscurum per Obscurius, album Fiasko Amok Koma oraz Deus Mortem Thanatos.",
   "topics": [
     {
       "start": 181,
@@ -137,6 +137,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 4958
+    },
+    {
+      "id": "straszydlo",
+      "label": "Straszydło",
+      "type": "event",
+      "source": "transcript",
+      "at": 428
+    },
+    {
+      "id": "jarocin",
+      "label": "Jarocin",
+      "type": "event",
+      "source": "transcript",
+      "at": 428
+    },
+    {
+      "id": "metalmania",
+      "label": "Metalmania",
+      "type": "event",
+      "source": "transcript",
+      "at": 433
+    },
+    {
+      "id": "inferno",
+      "label": "Inferno",
+      "type": "event",
+      "source": "transcript",
+      "at": 4923
     }
   ],
   "tracks": [

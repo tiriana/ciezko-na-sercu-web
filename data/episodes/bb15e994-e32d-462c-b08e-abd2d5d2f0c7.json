@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.365Z",
   "durationSec": 6843,
-  "summary": "W audycji Jarek Szubrycht zapowiada najciekawsze koncerty i festiwale planowane na styczeń 2026, omawiając zarówno undergroundowe wydarzenia metalowe, jak i większe projekty sceniczne. Przedstawia szczegóły festiwalu \"Niech cisza milczy nawet zimą\" w Bielsku-Białej oraz trasę Polish Metal Alliance, a także opisuje międzynarodowy Heidenfest z udziałem wielu zagranicznych zespołów. Wspomina premierę nowego albumu austriackiego projektu Elende oraz nową płytę i trasę Titanic Sea Moon, a na koniec informuje o Frozen Hardcore Fest w Warszawie. W audycji omówiono najważniejsze koncerty i festiwale metalowe stycznia 2026, począwszy od Frozen Hardcore Fest w Warszawie, przez występy grup takich jak Architects, Pure Bedlam, Counterpulse oraz Earth. Prowadzący przybliżył także projekty artystyczne, m.in. koreański projekt Mad Men’s Sprite oraz nowy album Pure Bedlam „Jubilance”. Zapowiedziano także koncerty Bellwidge i Aerial Ruin oraz ich wsparcie od 40 Watt Sun. Audycja skupia się na nadchodzących koncertach ekstremalnego metalu w Polsce w styczniu 2026 roku. Prowadzący omawia występy zespołów Bellwidge i Aerial Ruin wraz z supportem 40 Watt Sun w Warszawie i Wrocławiu. Zapowiedziano również koncert Lorna Shore na warszawskim Torwarze oraz trasę zespołu Ultimas obejmującą Szczecin, Gdynię i Kraków. Fragment kończy się refleksją nad bezpieczeństwem obchodów Sylwestra.",
+  "summary": "Odcinek sylwestrowy w całości poświęcony zapowiedziom koncertów i festiwali odbywających się w Polsce w styczniu 2026 roku, obejmujących szerokie spektrum gatunków: black/death metal, metalcore, folk metal, post-black metal, drone/doom i post-rock. Omówiono m.in. trasę Terrestrial Hospice z Pralają i Upon the Altar, festiwal Niech Cisza Milczy Nawet Zimą w Bielsku-Białej, cover-supergrupę Polish Metal Alliance (złożoną z muzyków Vader, Decapitated, Nocnego Kochanka i innych, z udziałem m.in. Krzyśka Zalewskiego i Kasi Kowalskiej) oraz objazdowy festiwal folkmetalowy Heidenfest z Korpiklaani i Finntrollem. Zapowiedziano nowe płyty: Zerfall austriackiego Elende, podwójny album Random Acts of Senseless Kindness Titanic Sea Moon oraz Jubilance Pure Bedlam, a także omówiono koreański projekt Mad Men's Sprite łączący depressive suicidal black metal z muzyką popularną. Wśród innych wydarzeń wymieniono koncerty Architects (promujący album The Sky, The Earth and All Between), Ensiferum, Lorna Shore z Whitechapel i Shadow of Intent, trasę Death Worship/Fides Inversa/Kriegshog pod szyldem Śmierć Puka we Wschodnią Bramę, koncert Earth w Krakowie oraz trasę Bell Witch i Aerial Ruin z 40 Watt Sun.",
   "topics": [
     {
       "start": 600,
@@ -177,6 +177,125 @@
       "type": "artist",
       "source": "tracks",
       "at": 1528
+    },
+    {
+      "id": "koncert-terrestrial-hospice-pralaja-upon-the-altar-trasa",
+      "label": "Terrestrial Hospice / Pralaja / Upon the Altar – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 348
+    },
+    {
+      "id": "niech-cisza-milczy-nawet-zima",
+      "label": "Niech Cisza Milczy Nawet Zimą",
+      "type": "event",
+      "source": "transcript",
+      "at": 630
+    },
+    {
+      "id": "koncert-polish-metal-alliance-trasa",
+      "label": "Polish Metal Alliance – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1460
+    },
+    {
+      "id": "heidenfest",
+      "label": "Heidenfest",
+      "type": "event",
+      "source": "transcript",
+      "at": 1811
+    },
+    {
+      "id": "koncert-elende-skaalg-firtan",
+      "label": "Elende / Skaalg / Firtan",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2121
+    },
+    {
+      "id": "koncert-titanic-sea-moon-elektrytual-trasa",
+      "label": "Titanic Sea Moon / Elektrytuał – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2594
+    },
+    {
+      "id": "frozen-hardcore-fest",
+      "label": "Frozen Hardcore Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 3517
+    },
+    {
+      "id": "koncert-mad-men-s-sprite-shattered-innocence",
+      "label": "Mad Men's Sprite / Shattered Innocence",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3881
+    },
+    {
+      "id": "koncert-ensiferum-freedom-call-dragony",
+      "label": "Ensiferum / Freedom Call / Dragony",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4164
+    },
+    {
+      "id": "koncert-architects-landmvrks-president",
+      "label": "Architects / Landmvrks / President",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4198
+    },
+    {
+      "id": "koncert-pure-bedlam-koncertowa-premiera-albumu-jubilance",
+      "label": "Pure Bedlam – koncertowa premiera albumu Jubilance",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4737
+    },
+    {
+      "id": "koncert-smierc-puka-we-wschodnia-brame-trasa-death-worship-fides-inversa-kriegshog",
+      "label": "Śmierć Puka we Wschodnią Bramę – trasa (Death Worship, Fides Inversa, Kriegshog)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5035
+    },
+    {
+      "id": "koncert-counterpulse-tsunami-one-step-closer-gut-complex",
+      "label": "Counterpulse / Tsunami / One Step Closer / Gut Complex",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5118
+    },
+    {
+      "id": "koncert-earth-z-udzialem-nataszy-grujowicz-i-steve-a-moore-a",
+      "label": "Earth, z udziałem Nataszy Grujowicz i Steve'a Moore'a",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5176
+    },
+    {
+      "id": "koncert-bell-witch-aerial-ruin-40-watt-sun-trasa",
+      "label": "Bell Witch & Aerial Ruin / 40 Watt Sun – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5925
+    },
+    {
+      "id": "koncert-lorna-shore-whitechapel-shadow-of-intent-humanity-s-last-breath",
+      "label": "Lorna Shore / Whitechapel / Shadow of Intent / Humanity's Last Breath",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6494
+    },
+    {
+      "id": "koncert-vltimas-trasa",
+      "label": "VLTIMAS – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6549
     }
   ],
   "tracks": [

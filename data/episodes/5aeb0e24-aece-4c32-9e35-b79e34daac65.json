@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.374Z",
   "durationSec": 6863,
-  "summary": "Przegląd październikowych koncertów otwiera trasa Martwej Aury promująca płytę „Lament”, w towarzystwie Towards Hellfire i Annihilation Vortex, oraz objazd The Materii po Polsce. Zapowiedziano też wspólną trasę Odry, Lasu Trumien i Odium, promującą split „Breslau Splin”, z koncertami w Krakowie, Rzeszowie, Wrocławiu, Katowicach, Łodzi i Warszawie. Gościem audycji był Wojtek Kałuża, wokalista Lasu Trumien, Mentor, Pure Bedlam i Grieving, który opowiadał o pracy nad splitem, tekstach opartych na prawdziwych zbrodniach, scenicznym kostiumie i czarnym humorze jako formie higieny psychicznej. Mówił również o odświeżeniu setlisty Lasu Trumien, o organizowaniu koncertów pod szyldem Happy Dying Productions oraz o pracy przy Metalmanii i Mystic Festiwalu, wraz z anegdotą o rajderze Poison The Well i talerzu krewetek. W drugiej części omówiono kalendarz występów, m.in. Acid Drinkers na Torwarze, Testament, Obituary i Destruction we Wrocławiu, W.A.S.P., Fields of the Nephilim, 40-lecie Halloween oraz Metal Commando Fest. Podkreślono też, że publiczność muzyki metalowej rośnie i wyraźnie się odmładza.",
+  "summary": "Odcinek poświęcony październikowej scenie koncertowej. Martwa Aura promuje nową płytę \"Lament\" i od 2 do 12 października jedzie w trasę z Towards Hellfire i Annihilation Vortex, a The Materia koncertuje po kraju od 3 do 25 października. Odra i Las Trumien wydały wspólny split \"Breslau Split\", a wraz z Odium zagrają w październiku w Krakowie, Rzeszowie i Wrocławiu oraz w listopadzie w Katowicach, Łodzi i Warszawie. Gościem był Wojtek Kałuża, wokalista Lasu Trumien, który opowiadał o utworze \"Gwóźdź w głowie\", prawdziwych zbrodniach jako podstawie tekstów, czarnym humorze i scenicznym kostiumie, a także o projektach Mentor, Pure Bedlam i Grieving oraz o organizowaniu koncertów i festiwali. Wymieniono też dziesiątki październikowych koncertów, m.in. Testament, Obituary i Destruction we wrocławskim A2, Arch Enemy i Amorphis w Gliwicach, W.A.S.P., Fields of the Nephilim na festiwalu Sound Edit i 40-lecie grupy Halloween w Katowicach.",
   "topics": [
     {
       "start": 337,
@@ -130,6 +130,69 @@
       "type": "artist",
       "source": "tracks",
       "at": 5530
+    },
+    {
+      "id": "wojtek-kaluza",
+      "label": "Wojtek Kałuża",
+      "type": "person",
+      "source": "credits",
+      "at": 1115
+    },
+    {
+      "id": "jak-wojtek-zostal-strazakiem",
+      "label": "Jak Wojtek został strażakiem",
+      "type": "work",
+      "source": "transcript",
+      "at": 2590
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 3041
+    },
+    {
+      "id": "metalmania",
+      "label": "Metalmania",
+      "type": "event",
+      "source": "transcript",
+      "at": 3047
+    },
+    {
+      "id": "koncert-obituary-grave-katamenia-sinister",
+      "label": "Obituary, Grave, Katamenia, Sinister",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3069
+    },
+    {
+      "id": "sound-edit",
+      "label": "Sound Edit",
+      "type": "event",
+      "source": "transcript",
+      "at": 5778
+    },
+    {
+      "id": "metal-commando-fest",
+      "label": "Metal Commando Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 5836
+    },
+    {
+      "id": "koncert-testament-obituary-destruction-i-nervosa",
+      "label": "Testament, Obituary, Destruction i Nervosa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5891
+    },
+    {
+      "id": "koncert-halloween-40-lecie",
+      "label": "Halloween — 40-lecie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6637
     }
   ],
   "tracks": [
@@ -265,5 +328,12 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "gość",
+      "name": "Wojtek Kałuża",
+      "time": 1115,
+      "quote": ""
+    }
+  ]
 }

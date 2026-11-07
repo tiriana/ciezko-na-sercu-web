@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.373Z",
   "durationSec": 6895,
-  "summary": "Audycja poświęcona jest wymagającej, eksperymentalnej i niszowej muzyce, która często wymyka się jednoznacznym klasyfikacjom gatunkowym. Jarek Szubrycht prezentuje polskie zespoły, które ze względu na swoją złożoność lub nietypowe brzmienie nie zdobyły szerokiej popularności. W programie pojawiają się wspomnienia o wybitnych muzykach, takich jak perkusista Gerard Niemczyk, oraz historie grup takich jak Atrocious Filth, Atrofia Red Sun, Blast Muzungu czy BNNT. Autor skupia się na artystach grających na granicy metalu, post-jazzu i eksperymentu. Audycja poświęcona jest wymagającej i eksperymentalnej muzyce ciężkiej. Prowadzący przybliża fenomen projektu BNNT oraz jego wariacje albumowe Multiverse realizowane przez różnych artystów. Następnie prezentuje postmetalowe i psychodeliczne brzmienia zespołu ARRM z Arturem Rumińskim w składzie. Fragment obejmuje również historię projektu Seagulls Insane and Swans Deceased Mining Out the Void, będącego kolaboracją muzyków związanych z Furią i Blinded.",
+  "summary": "Odcinek poświęcony polskim zespołom grającym wymagającą, pokręconą muzykę na granicy gatunków i środowisk, które z tego powodu nie przebijają się do szerszej publiczności. Przypomniano olsztyński Atrocious Filth (EP „Mons” z 2016, album „OVV” z 2021) oraz zmarłego perkusistę Gerarda Niemczyka, który partie do płyty Lux Occulta „The Mother and the Enemy” nagrał w jednym podejściu, bez poprawek. Krakowska Atrofia Red Sun przeszła od metalu atmosferycznego do progresywnego, futurystycznego death metalu („Twisted Logic”, 2003); jej działalność przerwał wypadek na trasie Decapitated w Rosji jesienią 2007 roku, po którym wokalista Adrian Kowanek do dziś nie wrócił do zdrowia. Omówiono efemeryczny Blast Muzungu i album „Gaijin Gabba” (2006) z muzykami z kręgu Lado ABC, inspirowany m.in. Johnem Zornem i japońską sceną, oraz BNNT z Konradem Smoleńskim i Danielem Szwedem, którego „Multiverse” doczekał się pięciu autorskich wariacji wydanych przez Instant Classic. Przedstawiono też ARRM Artura Rumińskiego, łączący postmetal i ambient z krautrockiem i psychodelią, a także jednorazowy projekt Nihila i Havoka – Seagulls Insane and Swans Deceased Mining Out the Void (2011).",
   "topics": [
     {
       "start": 0,
@@ -92,6 +92,20 @@
       "type": "artist",
       "source": "tracks",
       "at": 5861
+    },
+    {
+      "id": "koncert-trasa-koncertowa-arrm",
+      "label": "Trasa koncertowa ARRM",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5049
+    },
+    {
+      "id": "unsound",
+      "label": "Unsound",
+      "type": "event",
+      "source": "transcript",
+      "at": 5071
     }
   ],
   "tracks": [

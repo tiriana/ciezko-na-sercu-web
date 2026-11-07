@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.340Z",
   "durationSec": 7251,
-  "summary": "Przegląd czerwcowych wydarzeń otwiera Mystic Festival w Gdańsku — ostatnia edycja w stoczni, z Antraxem i Today is the Day, oraz nowy album Solstice A.A. Williams. Omówiono małe inicjatywy: festiwal Rykowisko w Rogoźniku z Vaderem i nawiązaniem do Trash Camp z 1988 roku, a także klubowe koncerty In Human Condition, Ashen Tomb i Epitome w Warszawie oraz Jungle Rot w Bydgoszczy. Wśród większych wydarzeń wymieniono Bring Me The Horizon z Knocked Loose w krakowskiej Tauron Arenie, powrót High Viz, A Perfect Circle na Torwarze, The Casualties i Malevolence. Osobny wątek to Alternatywna Zduńska Wola z jedynym w Polsce koncertem Shelter, Anją Huwe z Xmal Deutschland i Madballem, a także debiuty festiwalowe: Lost Generation w Krakowie z The Offspring i Papa Roach oraz Summer Punch w Warszawie z Bad Omens i Baby Metal. Dalej pojawiają się Trivium z Frontside i Heriot, A Day to Remember, Steel Panther, wspólny koncert Nothing i Hey Wire, Drowning Pool oraz Rivers of Nihil. Całość zamykają pierwsza edycja Hells Bells Festival w Szczecinie z UK Subs i Possessed, nowy album Nonslaughter Satanic Chaos Legions, koncert Uady w Hydrozagadce i powrót Sepultury z programem opartym na Chaos A.D.",
+  "summary": "Audycja to przegląd czerwcowych koncertów i festiwali. Prowadzący omawia m.in. Mystic Festival w Gdańsku (ostatnia edycja na terenie stoczni, występy Down, Anthrax, Today Is the Day) oraz nowy album A.A. Williams „Solstice”, a także festiwal Rykowisko w Rogoźniku, nawiązujący do historycznego Trash Campu z 1988 roku z udziałem Vadera. Wymienia koncerty klubowe (In Human Condition, Ashen Tomb, Epitome, Jungle Road, Malevolence, Venom Inc.) oraz większe wydarzenia: Bring Me The Horizon z Knocked Loose, A Perfect Circle, High Viz, trasę The Casualties i Trivium z Heriotem. Szczegółowo opisuje program Dni Zduńskiej Woli (koncert Sheltera, Ani Huwe z Xmal Deutschland i Clan of Xymox, line-up z Madball) oraz nowe festiwale: Lost Generation (The Offspring, Papa Roach, Hollywood Undead), Summer Punch (Bad Omens, Three Days Grace, Babymetal) i debiutancki Hells Bells Festival w Szczecinie, łączący scenę punkową (UK Subs, Possessed) z metalową, z dłuższą opowieścią o Charliem Harperze i Jeffie Beckericie. Wspomina też koncerty A Day to Remember, Steel Panther, Nothing z Heywire (nawiązując do występu Nothing na festiwalu Roadburn), Drowning Pool, Rivers of Nihil, Nonslaughter zapowiadającego album „Satanic Chaos Legions” oraz Cavalera Brothers prezentujących album „Chaos A.D.” Sepultury.",
   "topics": [
     {
       "start": 317,
@@ -172,6 +172,195 @@
       "type": "artist",
       "source": "tracks",
       "at": 1274
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 341
+    },
+    {
+      "id": "rykowisko",
+      "label": "Rykowisko",
+      "type": "event",
+      "source": "transcript",
+      "at": 1178
+    },
+    {
+      "id": "trash-camp",
+      "label": "Trash Camp",
+      "type": "event",
+      "source": "transcript",
+      "at": 1211
+    },
+    {
+      "id": "koncert-in-human-condition-ashen-tomb-epitome",
+      "label": "In Human Condition, Ashen Tomb, Epitome",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1559
+    },
+    {
+      "id": "koncert-jungle-road",
+      "label": "Jungle Road",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1581
+    },
+    {
+      "id": "koncert-bring-me-the-horizon-knocked-loose",
+      "label": "Bring Me The Horizon, Knocked Loose",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1835
+    },
+    {
+      "id": "koncert-high-viz",
+      "label": "High Viz",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1882
+    },
+    {
+      "id": "koncert-a-perfect-circle",
+      "label": "A Perfect Circle",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1896
+    },
+    {
+      "id": "koncert-the-casualties",
+      "label": "The Casualties",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2133
+    },
+    {
+      "id": "koncert-malevolence-boundaries-grideron-heavy-runner",
+      "label": "Malevolence, Boundaries, Grideron, Heavy Runner",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2220
+    },
+    {
+      "id": "koncert-venom-inc",
+      "label": "Venom Inc.",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2485
+    },
+    {
+      "id": "dni-zdunskiej-woli-alternatywna-zdunska-wola",
+      "label": "Dni Zduńskiej Woli / Alternatywna Zduńska Wola",
+      "type": "event",
+      "source": "transcript",
+      "at": 2512
+    },
+    {
+      "id": "summer-dine-loud",
+      "label": "Summer Dine Loud",
+      "type": "event",
+      "source": "transcript",
+      "at": 2656
+    },
+    {
+      "id": "lost-generation-festival",
+      "label": "Lost Generation Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 2992
+    },
+    {
+      "id": "koncert-alter-bridge",
+      "label": "Alter Bridge",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3069
+    },
+    {
+      "id": "summer-punch",
+      "label": "Summer Punch",
+      "type": "event",
+      "source": "transcript",
+      "at": 3082
+    },
+    {
+      "id": "koncert-trivium-heriot-frontside",
+      "label": "Trivium, Heriot, Frontside",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3853
+    },
+    {
+      "id": "koncert-a-day-to-remember-madball-dying-wish",
+      "label": "A Day to Remember, Madball, Dying Wish",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4599
+    },
+    {
+      "id": "koncert-steel-panther",
+      "label": "Steel Panther",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4615
+    },
+    {
+      "id": "koncert-nothing-heywire",
+      "label": "Nothing, Heywire",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4636
+    },
+    {
+      "id": "roadburn",
+      "label": "Roadburn",
+      "type": "event",
+      "source": "transcript",
+      "at": 4636
+    },
+    {
+      "id": "koncert-drowning-pool",
+      "label": "Drowning Pool",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4928
+    },
+    {
+      "id": "koncert-rivers-of-nihil",
+      "label": "Rivers of Nihil",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4963
+    },
+    {
+      "id": "hells-bells-festival",
+      "label": "Hells Bells Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 5360
+    },
+    {
+      "id": "koncert-nonslaughter",
+      "label": "Nonslaughter",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6282
+    },
+    {
+      "id": "koncert-lada",
+      "label": "Lada",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6765
+    },
+    {
+      "id": "koncert-cavalera-brothers",
+      "label": "Cavalera Brothers",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6794
     }
   ],
   "tracks": [

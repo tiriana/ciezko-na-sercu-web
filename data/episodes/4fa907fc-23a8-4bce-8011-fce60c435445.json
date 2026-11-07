@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.377Z",
   "durationSec": 6799,
-  "summary": "Odcinek otwiera pożegnanie Brenta Hindsa, gitarzysty i wokalisty Mastodon, który 20 sierpnia zginął w wypadku motocyklowym w Atlancie, kilka miesięcy po rozstaniu z zespołem. Drugie wspomnienie dotyczy Jürgena Bartscha, założyciela Bethlehem, zmarłego 27 sierpnia. Dalej wrześniowy przegląd koncertów: Atheist z Origin, Exhumer z albumem Possessed by Fire oraz szesnasta edycja Summer Dying Loud w Aleksandrowie Łódzkim z Venom, Karkasem, Terrorizerem, Samael, Grave, Portalem i Cult of Luna. Omówiono też Avant Art Festival z Merzbowem, Igorem Cavalerą i Heraldo Bernocchim, występy Caustic Wound, Obscury, Riders of Doom, Thunderfest w Bytowie i Bleed From Within. Na koniec zapowiedziano Primal Fear, mini festiwal Death Opens the Grave, F.A.U.N. z Jebanished Privatiers oraz koncert Current 93.",
+  "summary": "Odcinek otwiera wspomnienie Breta Hinsa — gitarzysty, kompozytora i wokalisty Mastodon — który 20 sierpnia zginął w Atlancie, potrącony przez samochód podczas jazdy motocyklem; przypomniano, że w marcu rozstał się z zespołem w nienajlepszej atmosferze i że miał zaawansowane plany, a jego grę cechowało oryginalne połączenie death metalu, post-hardcore'u i country, słyszalne już na pierwszych płytach grupy. Drugą stratą jest Jürgen Bartsch, założyciel niemieckiego Bethlehem, zmarły 27 sierpnia po długiej chorobie — zespół od debiutu „Dark Metal\" z 1994 roku szedł własną, eksperymentalną drogą na pograniczu black metalu i alternatywnego rocka, a prowadzący wątpi, by przetrwał bez swojego lidera. Reszta odcinka to wrześniowy przegląd koncertów i festiwali w Polsce: dwie daty A Taste, koncerty Exhumera, festiwal Summer Dying Loud w Aleksandrowie Łódzkim z Venom (w składzie z Kronosem) jako główną gwiazdą, pożegnalny koncert Orange Goblin, set Samaela oparty na „Ceremony of the Opposites\" oraz powrót Portalu. Omówiono też Avant Art Festival we Wrocławiu i Warszawie, m.in. wspólny występ Merzbow, Igora Cavalery i Heraldo Bernocciego, oraz szereg klubowych koncertów — Obscury, Mogwai, Caustic Wound, Bleed From Within, Primal Fear, F.A.U.N. i Current 93. Osobny wątek to rozpad kanonicznego składu Venom i zapowieǳiany pozew Mantasa i Abaddona przeciwko Kronosowi o udziały finansowe.",
   "topics": [
     {
       "start": 318,
@@ -149,6 +149,125 @@
       "type": "artist",
       "source": "tracks",
       "at": 1402
+    },
+    {
+      "id": "koncert-a-taste-koncerty-w-polsce",
+      "label": "A Taste – koncerty w Polsce",
+      "type": "concert",
+      "source": "transcript",
+      "at": 926
+    },
+    {
+      "id": "koncert-exhumer-koncerty-w-polsce",
+      "label": "Exhumer – koncerty w Polsce",
+      "type": "concert",
+      "source": "transcript",
+      "at": 999
+    },
+    {
+      "id": "summer-dying-loud",
+      "label": "Summer Dying Loud",
+      "type": "event",
+      "source": "transcript",
+      "at": 1312
+    },
+    {
+      "id": "avant-art-festival",
+      "label": "Avant Art Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 3749
+    },
+    {
+      "id": "koncert-archangel-koncert-w-poznaniu",
+      "label": "Archangel – koncert w Poznaniu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4860
+    },
+    {
+      "id": "koncert-mogwai-koncert-w-progresji",
+      "label": "Mogwai – koncert w Progresji",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4873
+    },
+    {
+      "id": "koncert-caustic-wound-koncert-w-voodoo",
+      "label": "Caustic Wound – koncert w VooDoo",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4906
+    },
+    {
+      "id": "koncert-odium-humani-generis-i-skruda-wspolna-trasa",
+      "label": "Odium Humani Generis i Skruda – wspólna trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4943
+    },
+    {
+      "id": "koncert-obscura-koncert-w-hydrozagadce",
+      "label": "Obscura – koncert w Hydrozagadce",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5170
+    },
+    {
+      "id": "koncert-riders-of-doom-druga-edycja",
+      "label": "Riders of Doom – druga edycja",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5184
+    },
+    {
+      "id": "thunderfest",
+      "label": "Thunderfest",
+      "type": "event",
+      "source": "transcript",
+      "at": 5237
+    },
+    {
+      "id": "koncert-bleed-from-within-koncert-w-progresji",
+      "label": "Bleed From Within – koncert w Progresji",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5542
+    },
+    {
+      "id": "koncert-vigedud-i-sektori-koncert-w-voodoo",
+      "label": "Vigedud i Sektori – koncert w VooDoo",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5556
+    },
+    {
+      "id": "koncert-primal-fear-koncert-w-stodole",
+      "label": "Primal Fear – koncert w Stodole",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5597
+    },
+    {
+      "id": "death-opens-the-grave",
+      "label": "Death Opens the Grave",
+      "type": "event",
+      "source": "transcript",
+      "at": 5622
+    },
+    {
+      "id": "koncert-f-a-u-n-trasa-z-jebanished-privatiers-oraz-janice-burns-i-johnem-doranem",
+      "label": "F.A.U.N. – trasa z Jebanished Privatiers oraz Janice Burns i Johnem Doranem",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6016
+    },
+    {
+      "id": "koncert-current-93-koncert-w-palladium",
+      "label": "Current 93 – koncert w Palladium",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6147
     }
   ],
   "tracks": [

@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.387Z",
   "durationSec": 6939,
-  "summary": "Przegląd majowych nowości z kręgu metalu i okolic — polskich oraz ze sceny światowej. Z Polski pokazano Hostię z albumem Razor Blade Psalms, krakowski The Method z metalcore'ową epką Rituals osnutą wokół prasłowiańskich rytuałów, Chainsword z deathmetalową EP Chapter 12 oraz nowofalowy Bezkres, wydany przez Pagan Records i powstały na gruzach formacji Kły. Ze sceny zagranicznej omówiono m.in. nepalsko-nowojorski Chepang (Yehappa), powrót tajwańskiego Ktonik z singlem Endless Eons, fiński And Oceans, hiszpański Balmog (Lajo), Ghostbath (Rose Thorn Necklace), Candlemass świętujący 40-lecie minialbumem Black Star i włoski Death SS z koncepcyjnym The Entity. Pojawiły się też The Haunted (Songs of Last Resort), Ossuary, Antropomorphia, czeska Pandemia, Leper Colony, Jade, Vildhjarta, Year of No Light z muzyką do filmu Szaleni władcy oraz solowy album Steve'a Von Tilla Alone in a World of Wands i Lux Interna z New Wilderness Gospel. Osobno wspomniano rozpad Itaki i jej pożegnalny singiel.",
+  "summary": "Odcinek w całości poświęcony majowym nowościom płytowym — polskim i zagranicznym. Z Polski omówiono czwartą płytę Hostii Razor Blade Psalms (nieco ponad 20 minut „gęstej” muzyki), metalcore'owy mini album The Method Rituals, wydany przez kalifornijską Sick and Strike i inspirowany zapomnianą, tajemniczą kulturą tubylczą Polski sprzed stuleci, deathmetalową epkę Chainsword Chapter 12, pożegnalny singiel rozwiązanej grupy Itaka oraz nowofalowy, ciemny debiut Bezkresu w Pagan Records, łączony z rozwiązaniem formacji Kły. Z zagranicy: nepalsko-nowojorski grind Chepang z płytą Yehappa w Relapse, powrót tajwańskiego Chthonic po latach przerwy z singlem Endless Eons i zapowiedzią wzmożonej aktywności koncertowej i wydawniczej, fiński ...And Oceans z siódmym albumem The Regeneration Itinerary oraz hiszpański Balmog z Lajo. Wątek weteranów obejmuje 40-lecie Candlemass z mini albumem Black Star, Death SS z koncepcyjnym The Entity inspirowanym pismami Crowleya i opowieścią Stevensona, powrót The Haunted po ośmiu latach z Songs of Last Resort, a także Ossuary, Anthropomorphia, Pandemię, Leper Colony i Jade. Odcinek zamykają apokaliptyczna amerykana Lux Interny (New Wilderness Gospel) i muzyka Year of No Light do filmu Szaleni Władcy Jeana Rousha. Osobno omówiono nową płytę Steve'a von Tilla Alone in a World of Wounds — z zaproszeniem na jego koncerty w Krakowie i Warszawie pod koniec czerwca.",
   "topics": [
     {
       "start": 2,
@@ -226,6 +226,55 @@
       "type": "artist",
       "source": "tracks",
       "at": 5589
+    },
+    {
+      "id": "czas-apokalipsy",
+      "label": "Czas apokalipsy",
+      "type": "work",
+      "source": "transcript",
+      "at": 544
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 1282
+    },
+    {
+      "id": "pisma-alistaira-crowley-a",
+      "label": "Pisma Alistaira Crowley'a",
+      "type": "work",
+      "source": "transcript",
+      "at": 3167
+    },
+    {
+      "id": "niezwykly-przypadek-doktora-jekylla-i-pana-hyde-a",
+      "label": "Niezwykły przypadek doktora Jekylla i pana Hyde'a",
+      "type": "work",
+      "source": "transcript",
+      "at": 3167
+    },
+    {
+      "id": "szaleni-wladcy",
+      "label": "Szaleni Władcy",
+      "type": "work",
+      "source": "transcript",
+      "at": 5540
+    },
+    {
+      "id": "roadburn",
+      "label": "Roadburn",
+      "type": "event",
+      "source": "transcript",
+      "at": 5915
+    },
+    {
+      "id": "koncert-koncerty-steve-a-von-tilla-w-krakowie-i-warszawie",
+      "label": "Koncerty Steve'a von Tilla w Krakowie i Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5970
     }
   ],
   "tracks": [

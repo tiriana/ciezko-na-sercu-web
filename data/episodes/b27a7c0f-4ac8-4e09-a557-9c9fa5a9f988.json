@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.381Z",
   "durationSec": 6707,
-  "summary": "Audycja poświęcona pamięci Ozzy'ego Osbourne'a, który zmarł w wieku 76 lat, pomyślana jako celebra jego życia i kariery, a nie smutne pożegnanie. Przegląd obejmuje twórczość Black Sabbath — od imiennej płyty i utworów „The Wizard”, „Paranoid” i „Changes” — oraz solowe albumy, od „Blizzard of Ozz” z Randym Rhoadsem po „Scream” z 2010 roku. Wspominane są koncerty: Ozzfest 2002 w Katowicach, pożegnalna trasa „The End” z 2016 roku i ostatni występ w Birmingham 5 lipca, relacjonowany przez obecnego na miejscu dziennikarza. Osobny wątek stanowią współprace — „For Heaven's Sake” z Wu-Tang Clan, „Hellraiser” z Lemmym Kilmisterem, nagrania z Infectious Grooves i Robertem Trujillo oraz niezrealizowana sesja Budki Suflera z Krzysztofem Cugowskim w Los Angeles. Całość dopełniają rozmowy o Sharon Osbourne, serialu „Rodzina Osbourne'ów”, autobiografii „Ja, Ozzy” i wspomnienia muzyków oraz słuchaczy.",
+  "summary": "Odcinek poświęcony zmarłemu w wieku 76 lat Ozzy'emu Osbornowi — celebracja jego życia i kariery z przeglądem twórczości Black Sabbath, płyt solowych i licznych współprac. Jarek Szubrycht mówił o solowych składach Ozzy'ego i przewijających się przez nie gitarzystach (Randy Rhoads, Zakk Wylde), o roli Sharon Osbourne, która uratowała mu życie i karierę, oraz wspominał własne koncerty: Ozzfest w katowickim Spodku w 2002 roku i pożegnalną trasę Black Sabbath The End w 2016 roku. Podkreślał humor i dystans Ozzy'ego do własnego wizerunku, a jego autobiografię „Ja, Ozzy” wskazywał jako źródło opowieści, przy których trudno się nie popłakać ze śmiechu. Piotr Metz rozwijał wątek poczucia humoru i rock'n'rollowego zadęcia, które Ozzy rozbrajał, oraz opowiedział o nieudanej sesji w Los Angeles w 1998 roku, gdzie Ozzy miał zaśpiewać w duecie z Krzysztofem Cugowskim utwór Black Sabbath (wśród typów był Paranoid) i piosenkę Budki Suflera, do czego nie doszło z powodu opóźnień po polskiej stronie. Michał Grabek-Grabkowski relacjonował ostatni koncert Black Sabbath 5 lipca w Birmingham, gdzie obok występów Pantery, Tool, Metalliki, Slayera i Guns N' Roses Ozzy pojawił się na tronie — wzruszony, ale wciąż z diabelskim scenicznym wdziękiem. W nagraniach wypowiedzieli się też Macio Moretti, Łukasz Orbitowski i Robert Gajewski, mówiąc o wpływie Black Sabbath na heavy metal i o własnych pierwszych kontaktach z zespołem.",
   "topics": [
     {
       "start": 26,
@@ -102,6 +102,90 @@
       "type": "artist",
       "source": "tracks",
       "at": 5372
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits",
+      "at": 390
+    },
+    {
+      "id": "piotr-metz",
+      "label": "Piotr Metz",
+      "type": "person",
+      "source": "credits",
+      "at": 2250
+    },
+    {
+      "id": "michal-grabek-grabkowski",
+      "label": "Michał Grabek-Grabkowski",
+      "type": "person",
+      "source": "credits",
+      "at": 4363
+    },
+    {
+      "id": "macio-moretti",
+      "label": "Macio Moretti",
+      "type": "person",
+      "source": "credits",
+      "at": 3892
+    },
+    {
+      "id": "lukasz-orbitowski",
+      "label": "Łukasz Orbitowski",
+      "type": "person",
+      "source": "credits",
+      "at": 5669
+    },
+    {
+      "id": "robert-gajewski",
+      "label": "Robert Gajewski",
+      "type": "person",
+      "source": "credits",
+      "at": 6033
+    },
+    {
+      "id": "ja-ozzy",
+      "label": "Ja, Ozzy",
+      "type": "work",
+      "source": "transcript",
+      "at": 1679
+    },
+    {
+      "id": "rodzina-osbourne-ow",
+      "label": "Rodzina Osbourne'ów",
+      "type": "work",
+      "source": "transcript",
+      "at": 2250
+    },
+    {
+      "id": "koncert-pozegnalny-koncert-black-sabbath-w-birmingham",
+      "label": "Pożegnalny koncert Black Sabbath w Birmingham",
+      "type": "concert",
+      "source": "transcript",
+      "at": 577
+    },
+    {
+      "id": "koncert-the-end",
+      "label": "The End",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1199
+    },
+    {
+      "id": "ozzfest",
+      "label": "Ozzfest",
+      "type": "event",
+      "source": "transcript",
+      "at": 1047
+    },
+    {
+      "id": "koncert-not-in-this-lifetime",
+      "label": "Not in This Lifetime",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1281
     }
   ],
   "tracks": [
@@ -263,5 +347,42 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "gość",
+      "name": "Jarek Szubrycht",
+      "time": 390,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Piotr Metz",
+      "time": 2250,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Michał Grabek-Grabkowski",
+      "time": 4363,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Macio Moretti",
+      "time": 3892,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Łukasz Orbitowski",
+      "time": 5669,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Robert Gajewski",
+      "time": 6033,
+      "quote": ""
+    }
+  ]
 }

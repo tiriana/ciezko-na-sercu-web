@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.379Z",
   "durationSec": 6837,
-  "summary": "Odcinek obejmuje ciężkie brzmienia z całego świata: od szwedzkiego Wild Hiarta i utworu Sargasso z majowej płyty, przez La Dispute z premierą 5 września i albumem złożonym z pięciu opowieści, po screamo To Be Gentle i Frail Body. Deafheaven przypomniano jako zespół, od którego zaczęło się łączenie black metalu z innymi gatunkami, aż po tegoroczny Lonely People with Power. Zapowiedziano nowy album Deftones Private Music na 22 sierpnia i lutowy koncert w Łodzi oraz płyty Thornhill Bodies, Spiritbox Tsunami Sea i wspólny utwór Spiritbox z Babymetal. Wśród nowości pojawiły się After the Burial z singlem Hum from the Hollow, czeski Abbey Falls oraz album Tomorrow We Escape z Chelsea Wolfe i Gregiem Puciato. Całość domyka rozmowa z Danem Barrettem z Have a Nice Life o porażkach, produktywności, szczęściu i pisaniu smutnych piosenek bez depresji oraz zapowiedź debiutu australijskiego Dust, Sky Is Falling.",
+  "summary": "Odcinek zbiera ciężkie brzmienie z różnych stron świata: szwedzki Vildhjarta i utwór Sargasso z albumu wydanego 30 maja 2025, amerykański La Dispute z zapowiedzią płyty i utworem No One Was Driving The Car (premiera 5 września, album złożony z pięciu opowieści) oraz To Be Gentle z płytą I Am a Spiritual Being Having a Human Experience i Frail Body z Artificial Bouquet jako dowody powrotu screamo. Wątek Deafheaven rozciągnięto od Sunbather, płyty uznanej za początek ponownego zainteresowania tym nurtem, po tegoroczny Lonely People with Power, a obok pojawiły się premierowe zapowiedzi: nowy album Deftones Private Music z 22 sierpnia wraz z wyprzedanym koncertem w Łodzi w lutym 2026, Thornhill z Obsession, Spiritbox z Tsunami Sea i wspólnym utworem z Babymetal, singiel After the Burial, czeski Abbey Falls oraz album Tomorrow We Escape z udziałem Chelsea Wolfe i Grega Puciato. Ogłoszono też debiut australijskiego Dust, Sky Is Falling, na 10 października, i zaapelowano o zaproszenie zespołu na przyszłoroczny OFF Festival. Rozmowa z Danem Barrettem z Have a Nice Life dotyczyła porażek i radzenia sobie z trudnymi emocjami, produktywności i podcastu The Dan Barrett Show, a także szczęścia jako świadomego wyboru i pisania smutnych piosenek bez depresji.",
   "topics": [
     {
       "start": 16,
@@ -177,6 +177,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 20
+    },
+    {
+      "id": "dan-barrett",
+      "label": "Dan Barrett",
+      "type": "person",
+      "source": "credits",
+      "at": 6199
+    },
+    {
+      "id": "koncert-deftones-koncert-w-lodzi",
+      "label": "Deftones – koncert w Łodzi",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3971
+    },
+    {
+      "id": "off-festival",
+      "label": "OFF Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 3981
+    },
+    {
+      "id": "koncert-after-the-burial-koncert-w-progresji",
+      "label": "After the Burial – koncert w Progresji",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5286
     }
   ],
   "tracks": [
@@ -493,6 +521,12 @@
       "name": "Bartek Machajewski",
       "time": 396,
       "quote": "Bartek Machajewski, Michał Kowarski, Wald Hiarta w utworze Sargasso."
+    },
+    {
+      "role": "gość",
+      "name": "Dan Barrett",
+      "time": 6199,
+      "quote": ""
     }
   ]
 }

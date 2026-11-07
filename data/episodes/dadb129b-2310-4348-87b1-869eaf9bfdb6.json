@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.387Z",
   "durationSec": 6860,
-  "summary": "Odcinek zapowiada Mystic Festival 2025 w gdańskiej stoczni i przegląda czerwcowy kalendarz koncertowy. Z programu festiwalu omówiono Turbonegro, Eagles of Death Metal, Arthura Browna, hołd dla Bathory pod szyldem Blood Fire Death, Beherit, Suicidal Tendencies, Vader grający w całości 'Litany', trójmiejski Here oraz Prydian i Intrepid z nowymi albumami. Poza Gdańskiem zapowiedziano poznańskie koncerty The Cult, Sacred Reich i Soulfly, Lorna Shore we Wrocławiu i Airbourne w Warszawie, Ephemerę z SUN oraz Black Silesię w Byczynie z 40-leciem Onslaughta. Na koniec wymieniono trasy Coilguns i Hydry z Sautrusem, a także Incantation, Steve'a von Tilla, Sólstafir i Powerwolf.",
+  "summary": "Odcinek zapowiada Mystic Festival 2025 w gdańskiej stoczni (start 5 czerwca) i skupia się na mniej oczywistych punktach jego programu. Wśród nich wymieniono Turbonegro i Eagles of Death Metal, Arthura Browna — występującego tuż przed 83. urodzinami prekursora scenicznego makijażu i płonącego hełmu — Suicidal Tendencies oraz hołd dla Bathory pod szyldem Blood Fire Death, zagrany przez supergrupę z muzykami Mayhem, Emperor, Enslaved i Aura Noir. Przypomniano historię fińskiego Beherit, które po dekadach poza głównym obiegiem wróciło do rzadkich koncertów, i zapowiedziano jego występ w Gdańsku; z polskich artystów wyróżniono Vader (pełne Litany oraz wystawa o historii zespołu) i wywodzący się ze sceny trójmiejskiej Here. Druga część to przegląd czerwcowych koncertów w Polsce: The Cult, Soulfly i Sacred Reich w Poznaniu, Airbourne w Warszawie oraz Lorna Shore we Wrocławiu. Omówiono też festiwale Ephemera i Black Silesia, trasy Coilguns i Black Magic Tour, Church of Doom oraz koncerty Incantation, Avenged Sevenfold, Dream Theater, Sólstafir, Steve'a von Tilla i zestaw Powerwolf–Epica–DragonForce.",
   "topics": [
     {
       "start": 161,
@@ -193,6 +193,181 @@
       "type": "artist",
       "source": "tracks",
       "at": 5495
+    },
+    {
+      "id": "mystic-festival-2025",
+      "label": "Mystic Festival 2025",
+      "type": "event",
+      "source": "transcript",
+      "at": 161
+    },
+    {
+      "id": "koncert-koncert-vadera-ktory-zainspirowal-nazwe-eagles-of-death-metal",
+      "label": "Koncert Vadera, który zainspirował nazwę Eagles of Death Metal",
+      "type": "concert",
+      "source": "transcript",
+      "at": 251
+    },
+    {
+      "id": "beyond-the-gates",
+      "label": "Beyond the Gates",
+      "type": "event",
+      "source": "transcript",
+      "at": 765
+    },
+    {
+      "id": "koncert-blood-fire-death-a-tribute-to-quorthon-and-the-music-of-bathory",
+      "label": "Blood Fire Death – A Tribute to Quorthon and the Music of Bathory",
+      "type": "concert",
+      "source": "transcript",
+      "at": 790
+    },
+    {
+      "id": "koncert-vader-litany-i-wystawa-o-historii-zespolu",
+      "label": "Vader – Litany i wystawa o historii zespołu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1902
+    },
+    {
+      "id": "koncert-the-cult",
+      "label": "The Cult",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2526
+    },
+    {
+      "id": "koncert-sacred-reich",
+      "label": "Sacred Reich",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2565
+    },
+    {
+      "id": "koncert-soulfly",
+      "label": "Soulfly",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2580
+    },
+    {
+      "id": "koncert-airbourne-z-creeper-i-house-of-protection",
+      "label": "Airbourne z Creeper i House of Protection",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3334
+    },
+    {
+      "id": "koncert-lorna-shore-z-fit-for-an-autopsy-i-signs-of-the-storm",
+      "label": "Lorna Shore z Fit for an Autopsy i Signs of the Storm",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3356
+    },
+    {
+      "id": "koncert-fit-for-an-autopsy-i-signs-of-the-storm",
+      "label": "Fit for an Autopsy i Signs of the Storm",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3893
+    },
+    {
+      "id": "ephemera",
+      "label": "Ephemera",
+      "type": "event",
+      "source": "transcript",
+      "at": 4106
+    },
+    {
+      "id": "unsound",
+      "label": "Unsound",
+      "type": "event",
+      "source": "transcript",
+      "at": 4106
+    },
+    {
+      "id": "black-silesia",
+      "label": "Black Silesia",
+      "type": "event",
+      "source": "transcript",
+      "at": 4759
+    },
+    {
+      "id": "koncert-onslaught-40-lecie-power-from-hell",
+      "label": "Onslaught – 40-lecie Power From Hell",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5014
+    },
+    {
+      "id": "koncert-trasa-coilguns",
+      "label": "Trasa Coilguns",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5450
+    },
+    {
+      "id": "koncert-black-magic-tour-hydra-i-sautrus",
+      "label": "Black Magic Tour – Hydra i Sautrus",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5696
+    },
+    {
+      "id": "church-of-doom-4",
+      "label": "Church of Doom #4",
+      "type": "event",
+      "source": "transcript",
+      "at": 5739
+    },
+    {
+      "id": "koncert-incantation-z-morat",
+      "label": "Incantation z Morat",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6224
+    },
+    {
+      "id": "koncert-poison-ruin",
+      "label": "Poison Ruin",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6243
+    },
+    {
+      "id": "koncert-avenged-sevenfold-z-palais-royal",
+      "label": "Avenged Sevenfold z Palais Royal",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6252
+    },
+    {
+      "id": "koncert-dream-theater",
+      "label": "Dream Theater",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6282
+    },
+    {
+      "id": "koncert-steve-von-till",
+      "label": "Steve von Till",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6509
+    },
+    {
+      "id": "koncert-solstafir",
+      "label": "Sólstafir",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6534
+    },
+    {
+      "id": "koncert-powerwolf-epica-i-dragonforce",
+      "label": "Powerwolf, Epica i DragonForce",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6569
     }
   ],
   "tracks": [

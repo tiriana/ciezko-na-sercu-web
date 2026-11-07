@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.384Z",
   "durationSec": 6851,
-  "summary": "Lipcowy przegląd koncertów otwiera Body Void w Warszawie, a zaraz potem festiwal Inne Brzmienia w Lublinie z Voivod, A Place to Bury Strangers, Pet Brick i The Ex. Na Rockowisku w Zwierzyńcu zagra Soulfly, w Katowicach wystąpi legendarny singapurski Impiety, a w Łodzi Judas Priest. We Wrocławiu pojawią się Heilung i mongolska grupa The Hu, równolegle Castle Party w Bolkowie oraz stonerowy Red Smoke w Pleszewie pokazują inne oblicza ciężkich brzmień. Dalej omówiono Antichrist Siege Machine, Endure Grind Attack w Morsku, D.R.I. oraz Ostrów Rock Festival z Katatonią i Soen. Całość zamyka Poland Rock, gdzie zagrają między innymi Zeal and Ardor, Paradise Lost i Fear Factory.",
+  "summary": "Odcinek to lipcowy kalendarz koncertowy — prowadzący omawia festiwale i trasy, które odbędą się w Polsce w ciągu miesiąca. Wśród festiwali wymieniono darmowe Inne Brzmienia w Lublinie (3–6 lipca, m.in. Voivod, A Place to Bury Strangers, Petbrick, Lee Ranaldo, Yonatan Gat i The Ex), Rockowisko w Zwierzyńcu z Soufly i Samael, Castle Party w Bolkowie z Carpenter Brut, Red Smoke w Pleszewie (Kadavar, Monolord, Sunnata) oraz Pol'and'Rock w Czaplinku-Broczynie (Zeal & Ardor, Paradise Lost, Fear Factory). Z koncertów zapowiedziano m.in. Body Void w Warszawie, węgierski Sear Bliss (wyróżniany puzonem, rzadkim w black metalu), Impiety z Singapuru, Judas Priest w Łodzi z Glory Hammer, Massacre w Krakowie, wspólny występ Heilung i The HU we Wrocławiu, Antichrist Siege Machine, amerykański Ossuary, D.R.I., Yoth Iria z Sarcatorem, Gaerę i Queens of the Stone Age. Zestawienie Heilung z The HU oceniono jako znakomity pomysł, choć wobec zwrotu The HU w stronę generycznego amerykańskiego new metalu wyrażono wątpliwości. Przy okazji Fear Factory mówiono o zmianie wokalisty — Burton C. Bell wypadał na żywo różnie, a Milo Silvestro radzi sobie świetnie — oraz o nowym singlu Paradise Lost o ciszy jak grób, zwiastującym album Ascension z premierą we wrześniu.",
   "topics": [
     {
       "start": 492,
@@ -156,6 +156,139 @@
       "type": "artist",
       "source": "tracks",
       "at": 3468
+    },
+    {
+      "id": "koncert-body-void",
+      "label": "Body Void",
+      "type": "concert",
+      "source": "transcript",
+      "at": 492
+    },
+    {
+      "id": "inne-brzmienia",
+      "label": "Inne Brzmienia",
+      "type": "event",
+      "source": "transcript",
+      "at": 551
+    },
+    {
+      "id": "rockowisko-niezly-zwierzyniec",
+      "label": "Rockowisko / Niezły Zwierzyniec",
+      "type": "event",
+      "source": "transcript",
+      "at": 1356
+    },
+    {
+      "id": "koncert-sear-bliss",
+      "label": "Sear Bliss",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1786
+    },
+    {
+      "id": "koncert-impiety",
+      "label": "Impiety",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2179
+    },
+    {
+      "id": "koncert-judas-priest",
+      "label": "Judas Priest",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2246
+    },
+    {
+      "id": "koncert-massacre",
+      "label": "Massacre",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2310
+    },
+    {
+      "id": "koncert-heilung-the-hu",
+      "label": "Heilung, The HU",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2340
+    },
+    {
+      "id": "castle-party",
+      "label": "Castle Party",
+      "type": "event",
+      "source": "transcript",
+      "at": 3326
+    },
+    {
+      "id": "red-smoke",
+      "label": "Red Smoke",
+      "type": "event",
+      "source": "transcript",
+      "at": 3399
+    },
+    {
+      "id": "koncert-antichrist-siege-machine",
+      "label": "Antichrist Siege Machine",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3905
+    },
+    {
+      "id": "koncert-ossuary",
+      "label": "Ossuary",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4086
+    },
+    {
+      "id": "endure-grind-attack",
+      "label": "Endure Grind Attack",
+      "type": "event",
+      "source": "transcript",
+      "at": 4466
+    },
+    {
+      "id": "koncert-d-r-i",
+      "label": "D.R.I.",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5032
+    },
+    {
+      "id": "ostrow-rock-festival",
+      "label": "Ostrów Rock Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 5173
+    },
+    {
+      "id": "koncert-yoth-iria-sarcator",
+      "label": "Yoth Iria, Sarcator",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5228
+    },
+    {
+      "id": "koncert-gaerea",
+      "label": "Gaerea",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5929
+    },
+    {
+      "id": "koncert-queens-of-the-stone-age",
+      "label": "Queens of the Stone Age",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5945
+    },
+    {
+      "id": "pol-and-rock",
+      "label": "Pol'and'Rock",
+      "type": "event",
+      "source": "transcript",
+      "at": 5985
     }
   ],
   "tracks": [

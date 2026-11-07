@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.355Z",
   "durationSec": 6942,
-  "summary": "W audycji Jarek Szubrycht zapowiada marcowe koncerty o ciężkim brzmieniu, omawiając m.in. trasy zespołów Trucizna i Pralaja, Godspeed You Black Emperor, Michaela Schenkera oraz projekt Kanonen Fiber. Podkreśla różnorodność sceny – od post‑rocku po black metal i progresywny death metal – i zachęca słuchaczy do wyboru koncertów w różnych miastach Polski. Wspomina także o nadchodzących występach Acid Drinkers, Turbo, Mesajach oraz fińskiej grupie Impaled Nazarene. Na koniec przytacza wrażenia z koncertów symfonicznego i power metalu, wskazując na ich wyjątkowość. W audycji omówiono nadchodzące koncerty metalowe i alternatywne w Polsce w marcu, podkreślając zarówno międzynarodowe gwiazdy, jak i lokalne zespoły. Prowadzący przytoczył szczegóły występów Epica, Heaven Shall Burn, Xastur, Unsane oraz nowej trasy Body Snatcher, a także zapowiedział premiery płyt i nowe projekty, takie jak Frontside i 1914. Wspomniano także o różnorodnych podgatunkach – od symfonicznego power metalu po folk‑metal i noise rock – oraz o planowanych datach i miejscach koncertów. Na koniec podkreślono znaczenie sceny metalowej w Polsce i zachęcono słuchaczy do udziału w wydarzeniach. W audycji omówiono planowane koncerty 28 marca w Krakowie, w tym występy Tottenmesse, Stellar Blight i Myrrh, oraz zapowiedź finału konkursu Road to Mystic w Gdańsku. Przedstawiono koncepcję Road to Mystic Showcase, w którym wystąpią Snakes, Snakes, Snakes, Belzebong i Medico Peste. Wspomniano o nowych wydawnictwach – debiutanckim albumie Monochrome zespołu Hier, płycie The End Is High Belzebonga oraz Aesthetic of Hunger Medico Peste, a także o szwedzkim kwartetcie Lig i ich najnowszej płycie Nekro. Na koniec zapowiedziano utwór Lig inspirowany historią Karen Greenlee.",
+  "summary": "Audycja jest przeglądem koncertów metalowych i pokrewnych gatunków zaplanowanych w Polsce na marzec. Omówiono m.in. trasę Trucizny i Pralai pod szyldem \"The Devil's March\", trzy koncerty Godspeed You Black Emperor, występ Michaela Schenkera z programem \"Moje lata z UFO\" oraz trasę Between the Buried and Me promującą album \"The Blue Nowhere\". Szeroko przedstawiono cięższy koniec sceny: Kanonenfieber, Avatar z Alien Weaponry i Agabas, Epikę z Amaranthe i Charlotte Wessels na Torwarze, Heaven Shall Burn z The Halo Effect, Xasthura, Unsane oraz Lord of the Lost w trasie \"Tournoir\". Osobno omówiono wydarzenia 28 marca, w tym finał konkursu Road to Mystic w Gdańsku z towarzyszącym pokazem Road to Mystic Showcase oraz koncert Frontside promującego nowy album \"Nemezis\" z nowym wokalistą. Na zakończenie wspomniano trasę szwedzkiego Lik z najnowszą płytą \"Nekro\".",
   "topics": [
     {
       "start": 184,
@@ -201,6 +201,216 @@
       "type": "artist",
       "source": "tracks",
       "at": 2669
+    },
+    {
+      "id": "koncert-trucizna-i-pralaja-trasa-the-devil-s-march",
+      "label": "Trucizna i Pralaja – trasa \"The Devil's March\"",
+      "type": "concert",
+      "source": "transcript",
+      "at": 224
+    },
+    {
+      "id": "koncert-godspeed-you-black-emperor",
+      "label": "Godspeed You Black Emperor",
+      "type": "concert",
+      "source": "transcript",
+      "at": 552
+    },
+    {
+      "id": "koncert-michael-schenker-moje-lata-z-ufo",
+      "label": "Michael Schenker – \"Moje lata z UFO\"",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1050
+    },
+    {
+      "id": "koncert-dougie-white",
+      "label": "Dougie White",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1133
+    },
+    {
+      "id": "koncert-between-the-buried-and-me-z-monosphere",
+      "label": "Between the Buried and Me z Monosphere",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1149
+    },
+    {
+      "id": "koncert-kanonenfieber",
+      "label": "Kanonenfieber",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1610
+    },
+    {
+      "id": "koncert-avatar-z-alien-weaponry-i-agabas",
+      "label": "Avatar z Alien Weaponry i Agabas",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1660
+    },
+    {
+      "id": "koncert-villagers-of-ioannina-city-five-the-hierophant-sunnata",
+      "label": "Villagers of Ioannina City, Five the Hierophant, Sunnata",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1980
+    },
+    {
+      "id": "koncert-sphere-i-murder-wspolna-trasa",
+      "label": "Sphere i Murder – wspólna trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2022
+    },
+    {
+      "id": "koncert-acid-drinkers-i-turbo",
+      "label": "Acid Drinkers i Turbo",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2049
+    },
+    {
+      "id": "koncert-messiah-z-hellfuck-i-brudny-skurczybyk",
+      "label": "Messiah z Hellfuck i Brudny Skurczybyk",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2081
+    },
+    {
+      "id": "koncert-impaled-nazarene",
+      "label": "Impaled Nazarene",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2119
+    },
+    {
+      "id": "koncert-eyehategod-z-czernia-i-metami",
+      "label": "Eyehategod z Czernią i Mętami",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2156
+    },
+    {
+      "id": "koncert-epica-amaranthe-charlotte-wessels",
+      "label": "Epica, Amaranthe, Charlotte Wessels",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2256
+    },
+    {
+      "id": "koncert-heaven-shall-burn-the-halo-effect-the-black-dahlia-murder-frozen-soul",
+      "label": "Heaven Shall Burn, The Halo Effect, The Black Dahlia Murder, Frozen Soul",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2308
+    },
+    {
+      "id": "koncert-xasthur-z-lukasem-hagerem",
+      "label": "Xasthur z Lukasem Hagerem",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2638
+    },
+    {
+      "id": "koncert-unsane-z-peru-i-only-mess-w-warszawie",
+      "label": "Unsane z Peru (i Only Mess w Warszawie)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2877
+    },
+    {
+      "id": "koncert-lord-of-the-lost-trasa-tournoir",
+      "label": "Lord of the Lost – trasa \"Tournoir\"",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3159
+    },
+    {
+      "id": "koncert-bodysnatcher-ingested-big-ass-truck",
+      "label": "Bodysnatcher, Ingested, Big Ass Truck",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3194
+    },
+    {
+      "id": "koncert-stoned-jesus-i-wheel",
+      "label": "Stoned Jesus i Wheel",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3437
+    },
+    {
+      "id": "koncert-feuerschwanz-z-miracle-of-sound",
+      "label": "Feuerschwanz z Miracle of Sound",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3471
+    },
+    {
+      "id": "koncert-1914-trasa-the-war-that-never-ends",
+      "label": "1914 – trasa \"The War That Never Ends\"",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3517
+    },
+    {
+      "id": "koncert-frontside-z-hamulcem-drug-my-day-i-the-cold-memories",
+      "label": "Frontside z Hamulcem, Drug My Day i The Cold Memories",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3938
+    },
+    {
+      "id": "koncert-death-has-spoken-asteria-obsidian-mantra",
+      "label": "Death Has Spoken, Asteria, Obsidian Mantra",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4280
+    },
+    {
+      "id": "koncert-serotonin-zero-clairvoyance-tyrann-the-black-thunder",
+      "label": "Serotonin Zero, Clairvoyance, Tyrann, The Black Thunder",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4298
+    },
+    {
+      "id": "koncert-the-suster",
+      "label": "The Suster",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4321
+    },
+    {
+      "id": "koncert-totenmesse-stellar-blight-myrrh",
+      "label": "Totenmesse, Stellar Blight, Myrrh",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4523
+    },
+    {
+      "id": "road-to-mystic-final-konkursu-i-road-to-mystic-showcase-hier-snakes-snakes-snakes-belzebong-medico-peste",
+      "label": "Road to Mystic – finał konkursu i Road to Mystic Showcase (Hier, Snakes Snakes Snakes, Belzebong, Medico Peste)",
+      "type": "event",
+      "source": "transcript",
+      "at": 5137
+    },
+    {
+      "id": "koncert-garrison-astronaut",
+      "label": "Garrison Astronaut",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5163
+    },
+    {
+      "id": "koncert-lik",
+      "label": "Lik",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6611
     }
   ],
   "tracks": [

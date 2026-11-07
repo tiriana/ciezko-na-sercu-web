@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.359Z",
   "durationSec": 6889,
-  "summary": "Styczniowy przegląd nowości zdominowały dwa głośne wydawnictwa: pożegnalny, siedemnasty album Megadeth oraz szesnasta płyta Kreator zatytułowana Crushers of the World. Wśród premier deathmetalowych zaprezentowano Mountains of Madness szwajcarskiego Total Annihilation, Icon Polaków z Defaced, debiut Oraculum Hebris Divina, Eon of Obscenity Teksańczyków ze Stabbing oraz Metamorphosis rzeszowskiego Banisher. Zabrzmiały też nowe materiały Kasket, Excavated Graves i Smoke Rides, a obok nich inspirowany mongolskim śpiewem alikwotowym Human Hearts grupy U-High i deathcore'owy Endless z Las Vegas od Of Sulfur. Dalej od metalu przedstawiono Neverland Norwegów z Ulver, czwarty album włoskiej Maty oraz płytę Guild the Lily z Filadelfii. Na koniec dwa ulubione albumy miesiąca: jazzowy Ferum Sidereum włoskiego Czu i debiut Buck and Grillen z muzykami Refused.",
+  "summary": "Audycja to przegląd styczniowych nowości metalowych i pokrewnych. Megadeth wydali siedemnasty, zapowiadany jako ostatni album (tytułowy „Megadeth”), co wiąże się ze zdrowotnymi problemami Dave'a Mustaine'a (przykurcz Dupuytrena) i pożegnalną trasą obejmującą m.in. Mystic Festival w Gdańsku. Kreator wydali szesnastą płytę „Crushers of the World”, odebraną przez prowadzącego z rezerwą, z utworem „Satanic Anarchy” nawiązującym do filmu „Hellraiser” Clive'a Barkera. Omówiono liczne nowe albumy death- i deathcore'owe: japoński Crystal Lake („The Weight of Sound”), szwajcarski Total Annihilation („Mountains of Madness”), polskie Defaced („Icon”, o autorytaryzmie i kontroli społecznej), Excavated Graves i Banisher („Metamorphosis”), a także Oraculum, Kasket, Stabbing („Eon of Obscenity” z wokalistką Bridget Lynch, wcześniej koncertowo związaną z Suffocation) oraz Of Sulfur z Las Vegas („Endless”). Wśród innych gatunków pojawiły się: warszawski sludge/doom Smoke Rides („Eager Eyes of Talion”), norweski Vreid z instrumentalnym singlem na ścieżkę dźwiękową filmu „Kraken”, bardziej popowa płyta Ulver „Neverland” porównywana do „Perdition City”, włoski zespół Mata oraz amerykański New Miserable Experience („Guild the Lily”) inspirowani Ulverem, a także niemiecki The Hirsch Effect („Der Brauch”). Na koniec prowadzący wskazał dwie ulubione płyty miesiąca: „Ferrum Sidereum” włoskiego Zu oraz debiutancki, antyfaszystowski album noise-jazzowego projektu z udziałem muzyków Refused i Matsa Gustafssona.",
   "topics": [
     {
       "start": 153,
@@ -207,6 +207,27 @@
       "type": "artist",
       "source": "tracks",
       "at": 5811
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 443
+    },
+    {
+      "id": "hellraiser",
+      "label": "Hellraiser",
+      "type": "work",
+      "source": "transcript",
+      "at": 816
+    },
+    {
+      "id": "kraken",
+      "label": "Kraken",
+      "type": "work",
+      "source": "transcript",
+      "at": 3658
     }
   ],
   "tracks": [

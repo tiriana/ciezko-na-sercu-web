@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.410Z",
   "durationSec": 6913,
-  "summary": "Audycja rozpoczęła się od wprowadzenia słuchaczy w koncert kanadyjskiego duetu Grimelda, po którym prowadzący opowiadał o islandzkiej grupie Mur i jej pierwszym singlu „Heimslit”. Następnie zaprezentowano nowy materiał polskiego projektu Blinded – utwory „Vanishing” i „Let Them Speak”. W dalszej części omówiono album „Parasite” polskiego trio Ante Void oraz wybrany utwór „Abyss Gaze is Back”. Kolejne segmenty poświęcono zespołowi Czerń (utwór „Jestem” z płyty „Klątwa”) i Unto Others („Mama Likes, The Door Closed” z „Never Neverland”), a na koniec przytoczono debutowy tytułowy kawałek Crimson Vale z albumu „Hex”. W audycji prowadzący rozważał sens i kontekst współczesnego metalu, przytaczając cytaty i notki prasowe, a także omawiał różne podgatunki i ich ewolucję. Przedstawił zespoły takie jak A Dorior, Kanonen Fieber, APEP, Ripped to Shreds, God the Throne, Winterfelleth, Ice Alert, Treldom, Dreamless Vale oraz Odium Humani Generis, podkreślając ich stylistykę, historię i najnowsze wydawnictwa. Wiele uwag dotyczyło nowych albumów i utworów, które były odtwarzane lub zapowiadane. Prowadzący zakończył program refleksją nad polskim black metalem i pożegnaniem słuchaczy.",
+  "summary": "Relacja z festiwalu Reeperbahn w Hamburgu: kanadyjski duet Grimelda z Saskatchewan (post-hardcore, dwóch muzyków w sukienkach) wirtuozerią i absurdalnym humorem przyćmił poważną konkurencję, a islandzki Múr, grający mieszankę post-, prog- i black metalu, wystąpił z opóźnieniem i problemami technicznymi; tego samego dnia ukazał się pierwszy singiel zespołu, „Heimslit”. Osobny wątek to powrót Blinded 23 po pięciu latach przerwy z minialbumem „Vanishing”, który według Havoka opowiada o najgorszym okresie w jego życiu. Wydanie zamyka przegląd wrześniowych wydawnictw ciężkich brzmień: „Parasite” Ante Void (Pagan Records, trio z Destroyerem z Hate, Adamem Sierżęgą i Haldorem Grunbergiem), „Budowniczowie Grozy” Lasu Trumien, „Klątwa” Czereni oraz „Never Neverland” Unto Others z produkcją Toma Dalgety’ego. Przy okazji Unto Others prowadzący odrzuca porównania do Type O Negative i Sisters of Mercy, entuzjastycznie przyjmuje za to brytyjski Crimson Vale (dawne Bird It's Baby) z debiutem „Hex” i powrót The Jesus Lizard po 26 latach z albumem „Rack”. Omówiono także m.in. Adorior, „Die Urkatastrophe” Kanonen Fieber o I wojnie światowej (z utworem o Lwowie), APEP, Ripped to Shreds, „The Judas Paradox” God Dethroned, „The Imperious Horizon” Winterfylleth, Ice Alert, Dreamless Vale i „Międzyczasa” Odium Humani Generis.",
   "topics": [
     {
       "start": 142,
@@ -190,6 +190,27 @@
       "type": "artist",
       "source": "tracks",
       "at": 5008
+    },
+    {
+      "id": "reeperbahn-festival",
+      "label": "Reeperbahn Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 159
+    },
+    {
+      "id": "koncert-koncert-grimeldy-na-reeperbahn-festival",
+      "label": "Koncert Grimeldy na Reeperbahn Festival",
+      "type": "concert",
+      "source": "transcript",
+      "at": 165
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 226
     }
   ],
   "tracks": [

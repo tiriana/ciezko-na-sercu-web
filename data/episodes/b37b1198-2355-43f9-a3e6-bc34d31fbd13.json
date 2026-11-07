@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.395Z",
   "durationSec": 6824,
-  "summary": "Kwietniowy przegląd koncertowy otwiera trasa Anti-Matter z okazji 25-lecia płyty Savior oraz wspólne tournée Czord, Konigreis Hall i Kyr pod szyldem Exegi Monumentum. Dalej mowa o mniejszych objazdach: Taxi Cavemen z Neon Mad, Moonstone, Drone My Day z Awakening Sun i Hostii. Osobny wątek to Furia, która w katowickim Rialto zagra do filmowych archiwaliów z okazji 25-lecia Filmoteki Śląskiej. Zapowiedziano też Harakiri for the Sky promujące album Scorched Earth, festiwal Opoczno Strikes Again, koncerty Dark Tranquility i Moonspell oraz blackmetalowe pakiety Concrete Winds i Black Curse, Spectral Wound i Lamp of Murmur oraz trasę Kierunek Północ. Najbardziej masowym wydarzeniem miesiąca ma być Unholy Trinity z Behemotem, Satyriconem i Rotting Christ we wrocławskiej Hali Stulecia. Na koniec zapowiedziano występ Michaela Giry i Christopha Hahna ze Swans w Palladium oraz Primordial i Amenrę w towarzystwie Year of the Cobra.",
+  "summary": "Odcinek w całości poświęcony zapowiedziom kwietniowych koncertów i festiwali. Omówiono trasę Anti-Matter z okazji 25-lecia debiutu (sześć koncertów w Polsce) oraz wspólną trasę Exegi Monumentum łączącą Czord, Konigreis Hall i Kyr. Najwięcej miejsca zajęły duże objazdy: Unholy Trinity z Behemothem, Satyriconem i Rotting Christ we wrocławskiej Hali Stulecia, koncerty Primordial, Amenry, Swans w duecie Michael Gira–Christoph Hahn, Blood Incantation z Minami Deutsch oraz Dark Tranquility i Moonspell. Przy okazji Moonspella i Satyriconu prowadzący przekonywał, że ich bardziej progresywne albumy (The Butterfly Effect, Rebel Extravaganza) nie zdobyły uznania fanów, a w przypadku Blood Incantation wskazał, że woli wcześniejszy album od Absolute Elsewhere. Zapowiedziano też festiwale Opoczno Strikes Again, Post-Mortem i Blastfest, finał konkursu Road to Mystic oraz dwa koncerty Furi do archiwaliów Filmoteki Śląskiej na 25-lecie instytucji.",
   "topics": [
     {
       "start": 305,
@@ -186,6 +186,216 @@
       "type": "artist",
       "source": "tracks",
       "at": 6721
+    },
+    {
+      "id": "koncert-anti-matter-trasa-z-okazji-25-lecia-debiutu",
+      "label": "Anti-Matter — trasa z okazji 25-lecia debiutu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 370
+    },
+    {
+      "id": "koncert-exegi-monumentum-czord-konigreis-hall-kyr",
+      "label": "Exegi Monumentum — Czord, Konigreis Hall, Kyr",
+      "type": "concert",
+      "source": "transcript",
+      "at": 416
+    },
+    {
+      "id": "koncert-taxi-cavemen-i-neon-mad-wspolna-trasa",
+      "label": "Taxi Cavemen i Neon Mad — wspólna trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 783
+    },
+    {
+      "id": "koncert-moonstone-trasa",
+      "label": "Moonstone — trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 809
+    },
+    {
+      "id": "koncert-drown-my-day-i-awakening-sun-trasa",
+      "label": "Drown My Day i Awakening Sun — trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1213
+    },
+    {
+      "id": "koncert-furia-25-lecie-filmoteki-slaskiej",
+      "label": "Furia — 25-lecie Filmoteki Śląskiej",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1527
+    },
+    {
+      "id": "koncert-harakiri-for-the-sky",
+      "label": "Harakiri for the Sky",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1860
+    },
+    {
+      "id": "koncert-the-picture-books",
+      "label": "The Picture Books",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2379
+    },
+    {
+      "id": "opoczno-strikes-again",
+      "label": "Opoczno Strikes Again",
+      "type": "event",
+      "source": "transcript",
+      "at": 2394
+    },
+    {
+      "id": "koncert-downfall-of-gaia",
+      "label": "Downfall of Gaia",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2423
+    },
+    {
+      "id": "koncert-sumac-i-farao-overlord",
+      "label": "Sumac i Farao Overlord",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2782
+    },
+    {
+      "id": "koncert-wyatt-e",
+      "label": "Wyatt E",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3150
+    },
+    {
+      "id": "post-mortem",
+      "label": "Post-Mortem",
+      "type": "event",
+      "source": "transcript",
+      "at": 3236
+    },
+    {
+      "id": "koncert-dark-tranquility-i-moonspell",
+      "label": "Dark Tranquility i Moonspell",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3660
+    },
+    {
+      "id": "koncert-swallow-the-sun-i-before-the-dawn",
+      "label": "Swallow the Sun i Before the Dawn",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3660
+    },
+    {
+      "id": "summer-dying-loud",
+      "label": "Summer Dying Loud",
+      "type": "event",
+      "source": "transcript",
+      "at": 3694
+    },
+    {
+      "id": "koncert-concrete-winds-i-black-curse",
+      "label": "Concrete Winds i Black Curse",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4195
+    },
+    {
+      "id": "koncert-spectral-wound-i-lamp-of-murmur",
+      "label": "Spectral Wound i Lamp of Murmur",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4227
+    },
+    {
+      "id": "koncert-kierunek-polnoc-dead-squad-tour-tokke-asagraum-heimland",
+      "label": "Kierunek Północ / Dead Squad Tour — Tokke, Asagraum, Heimland",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4239
+    },
+    {
+      "id": "koncert-final-konkursu-road-to-mystic",
+      "label": "Finał konkursu Road to Mystic",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4275
+    },
+    {
+      "id": "koncert-unholy-trinity-behemoth-satyricon-rotting-christ",
+      "label": "Unholy Trinity — Behemoth, Satyricon, Rotting Christ",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4498
+    },
+    {
+      "id": "koncert-swans-michael-gira-i-christoph-hahn",
+      "label": "Swans — Michael Gira i Christoph Hahn",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5014
+    },
+    {
+      "id": "koncert-primordial",
+      "label": "Primordial",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5322
+    },
+    {
+      "id": "koncert-amenra-i-year-of-the-cobra",
+      "label": "Amenra i Year of the Cobra",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5386
+    },
+    {
+      "id": "blastfest",
+      "label": "Blastfest",
+      "type": "event",
+      "source": "transcript",
+      "at": 5970
+    },
+    {
+      "id": "koncert-blood-incantation-i-minami-deutsch",
+      "label": "Blood Incantation i Minami Deutsch",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6213
+    },
+    {
+      "id": "obcy",
+      "label": "Obcy",
+      "type": "work",
+      "source": "transcript",
+      "at": 6249
+    },
+    {
+      "id": "star-trek",
+      "label": "Star Trek",
+      "type": "work",
+      "source": "transcript",
+      "at": 6249
+    },
+    {
+      "id": "koncert-a-place-to-bury-strangers",
+      "label": "A Place to Bury Strangers",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6604
+    },
+    {
+      "id": "koncert-wide-world",
+      "label": "Wide World",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6644
     }
   ],
   "tracks": [

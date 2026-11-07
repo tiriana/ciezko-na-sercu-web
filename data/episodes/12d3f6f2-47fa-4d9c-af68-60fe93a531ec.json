@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.380Z",
   "durationSec": 6889,
-  "summary": "Przegląd sierpniowych koncertów: Ossuary z Mental Funeral, Machine Head z Fear Factory i Frail w Katowicach, festiwal Silesian Noise z Mastodon i Ministry, Dark Angel grający cały album Darkness Descends, Mayhem oraz Gojira z Kingiem w Tauron Arenie. Zapowiedziano też piknikowy Summer Discomfort w Cholerzynie, gdzie zagrają m.in. Belzebong i Diving Stove. Wśród nowych płyt omówiono Ul chilijskiej grupy Mauiza, inspirowany kulturą Mapucze i nagrany z gościnnym udziałem Joe Duplantiera z Gojiry, The Exodus of Gravity projektu Arcadia z perkusistą Mastodon, EP Car Bomb oraz Blood Strangen szwedzkiego Blessings. Zaprezentowano również albumy Abigail Williams, Beheaded, Entrails, Malthusian i Unleashed.",
+  "summary": "Odcinek w dużej mierze poświęcony zapowiedziom sierpniowych koncertów i festiwali oraz premier płytowych. Punktem wyjścia jest Ossuary i album Abhorrent Worship, kupiony w wersji fizycznej od samej wokalistki po koncercie w krakowskim Warsztacie, gdzie zespół zagrał z Mental Funeral — nazwanym oczywistym hołdem dla Autopsy — oraz z czeskim Cancer Void. Prowadzący przekonuje, że warto chodzić na małe, podziemne koncerty, i zapowiada m.in. Mammoth Grinder, Iron Maiden z Avatarem na Stadionie Narodowym, OFF Festival w Katowicach, Machine Head z Fear Factory i Frail, Silesian Noise z Ministry i Mastodonem, Dark Angel grający cały album Darkness Descends w hołdzie zmarłemu gitarzyście, Mayhem, Suffocation, Summer Discomfort oraz Gojirę w Tauron Arenie. W części płytowej omawia m.in. Ul peruwiańskiego Mauiza i jego związki z kulturą Mapuczów, The Exodus of Gravity Arcadii, EP-kę Car Bomb, debiut Accust, Blood Strangen Blessings, Bring Mirrors to the Surface Za to krew, nowy album Abigail Williams, Beheaded, Entrails, The Summoning Bell Malthusiana oraz piętnasty album Unleashed. Podkreśla, że latem płyty łatwiej przegapić, i zapowiada, że do Mauizy oraz Malthusiana jeszcze będzie wracał.",
   "topics": [
     {
       "start": 405,
@@ -193,6 +193,125 @@
       "type": "artist",
       "source": "tracks",
       "at": 4652
+    },
+    {
+      "id": "koncert-ossuary-koncert-w-krakowskim-warsztacie",
+      "label": "Ossuary — koncert w krakowskim Warsztacie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 435
+    },
+    {
+      "id": "koncert-mammoth-grinder-koncert-w-warszawskim-klubie-voodoo",
+      "label": "Mammoth Grinder — koncert w warszawskim klubie VooDoo",
+      "type": "concert",
+      "source": "transcript",
+      "at": 527
+    },
+    {
+      "id": "koncert-iron-maiden-i-avatar-stadion-narodowy-w-warszawie",
+      "label": "Iron Maiden i Avatar — Stadion Narodowy w Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 706
+    },
+    {
+      "id": "off-festival-w-katowicach",
+      "label": "OFF Festival w Katowicach",
+      "type": "event",
+      "source": "transcript",
+      "at": 733
+    },
+    {
+      "id": "koncert-machine-head-fear-factory-i-frail-mck-katowice",
+      "label": "Machine Head, Fear Factory i Frail — MCK Katowice",
+      "type": "concert",
+      "source": "transcript",
+      "at": 773
+    },
+    {
+      "id": "koncert-silesian-noise-mck-katowice",
+      "label": "Silesian Noise — MCK Katowice",
+      "type": "concert",
+      "source": "transcript",
+      "at": 819
+    },
+    {
+      "id": "koncert-inter-arma-i-wayfarer-krakow-i-wroclaw",
+      "label": "Inter Arma i Wayfarer — Kraków i Wrocław",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1666
+    },
+    {
+      "id": "koncert-dark-angel-wroclaw-i-warszawa",
+      "label": "Dark Angel — Wrocław i Warszawa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1689
+    },
+    {
+      "id": "koncert-krypta-hydrozagadka-w-warszawie",
+      "label": "Krypta — Hydrozagadka w Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1705
+    },
+    {
+      "id": "koncert-imperial-triumphant-wroclawski-lucznik",
+      "label": "Imperial Triumphant — wrocławski Łucznik",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1709
+    },
+    {
+      "id": "koncert-mayhem-letnia-scena-progresji-w-warszawie",
+      "label": "Mayhem — letnia scena progresji w Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1729
+    },
+    {
+      "id": "koncert-suffocation-angel-maker-i-skeletal-remains-krakowski-hype-park",
+      "label": "Suffocation, Angel Maker i Skeletal Remains — krakowski Hype Park",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1751
+    },
+    {
+      "id": "summer-discomfort-cholerzyn-pod-krakowem",
+      "label": "Summer Discomfort — Cholerzyn pod Krakowem",
+      "type": "event",
+      "source": "transcript",
+      "at": 1963
+    },
+    {
+      "id": "koncert-panzerfaust-i-awski-trzy-koncerty",
+      "label": "Panzerfaust i Awski — trzy koncerty",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2206
+    },
+    {
+      "id": "koncert-gojira-tauron-arena-w-krakowie",
+      "label": "Gojira — Tauron Arena w Krakowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2220
+    },
+    {
+      "id": "metal-mind-festival-w-walbrzychu",
+      "label": "Metal Mind Festival w Wałbrzychu",
+      "type": "event",
+      "source": "transcript",
+      "at": 2720
+    },
+    {
+      "id": "roadburn",
+      "label": "Roadburn",
+      "type": "event",
+      "source": "transcript",
+      "at": 4589
     }
   ],
   "tracks": [

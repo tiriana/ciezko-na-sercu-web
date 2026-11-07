@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.394Z",
   "durationSec": 6914,
-  "summary": "W audycji Jarek Szubrycht oprowadza słuchaczy po estonskiej scenie metalowej, zaczynając od zespołu Agresor i jego debiutanckiego utworu z płyty „Procreate the Petrifications”. Następnie przywołuje wspomnienia z Tallinn Music Week, opisując koncerty takich grup jak Permanent Blue, Tomorrow Was The War i Strict 9. Gość z zespołu Humanity opowiada o swojej debiutanckiej płycie „Out of Structure”, a na koniec pojawia się zespół Soul, którego brzmienie nie przekonało prowadzącego. Przez cały odcinek prowadzący łączy relacje z historią estonskiej muzyki po upadku ZSRR z aktualnymi koncertowymi wrażeniami. W audycji prowadzący omawia współpracę polskiej sceny metalowej z estońską inicjatywą Heavy Music Estonia, opisując przygotowania do festiwalu Mystic oraz prezentując wybrane estońskie zespoły. Najpierw przytacza utwór „Vanishing Threshold” zespołu Soul, po czym przechodzi do relacji z koncertu w Tallinie, w którym wystąpiły m.in. Sergent, Intrepid i Ico Love. Następnie omawia konkursowy wieczór, w którym rywalizowały zespoły Nihilisty Crypt i Pridian, podkreślając ich brzmienie i plany dalszych występów w Polsce. W audycji omówiono estonską scenę metalową, początkowo prezentując zespół Pridian i jego nowoczesny metalcore. Prowadzący zmienił pierwotne prognozy co do występu zespołów, wskazując na niespodziewane zmiany w konkursie. Następnie odtworzono światową premierę utworu \"Endless\", po czym ogłoszono wyniki rywalizacji, w której zwyciężyły Prydian i Intrepid. Na zakończenie zapowiedziano występ zespołu Evestus, którego lider organizuje Heavy Music Estonia.",
+  "summary": "Odcinek poświęcony estońskiej scenie heavymetalowej, oparty na relacji z wyprawy do Tallina na festiwal showcase'owy Tallinn Music Week oraz na finał Heavy Music Band Battle połączony z estońską edycją Road to Mystic. Przypomniano historię zespołu Agresor, którego debiut Procreate the Petrifications z 1992 roku powstał dzięki sprzedaży rodzinnej szabli przez perkusistę Marko Atso; grupa nagrała jeszcze jedną płytę w 1994 roku, po czym zmieniła styl na industrialny i nazwę na No Big Silence. W klubie D3 w dzielnicy Telliskivi zagrali progresywny Permanent Blue, hardcore'owo-metalcore'owy Tomorrow Was The War z nową epką This War Left You Nothing powstałą we współpracy z Have No Heroes, łączący nu-metal, death metal i industrial Strict 9 z albumem Parasit, młodzieżowe deathmetalowe Humanity z debiutem Out of Structure porównywane do Decapitated oraz melodyjny Soul. W sobotniej bitwie zespołów wystąpili Surgeon, Intrepid, Ica Love, Dreams They Have Stolen, Nihilistic Crypt i Pridian; zwyciężyły Pridian i Intrepid, zdobywając miejsce na Mystic Festival 2025, a Nihilistic Crypt wygrał głosowanie publiczności. Omówiono także Evestus, industrialno-rockowy zespół prowadzony przez Otta, stojącego za organizacją Heavy Music Estonia i współpracującego z producentem Gregorem Numanem.",
   "topics": [
     {
       "start": 221,
@@ -185,6 +185,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 1466
+    },
+    {
+      "id": "tallinn-music-week",
+      "label": "Tallinn Music Week",
+      "type": "event",
+      "source": "transcript",
+      "at": 1112
+    },
+    {
+      "id": "koncert-heavy-music-band-battle",
+      "label": "Heavy Music Band Battle",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3286
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 3330
+    },
+    {
+      "id": "koncert-trasa-intrepid-z-nile-po-europie",
+      "label": "Trasa Intrepid z Nile po Europie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3349
     }
   ],
   "tracks": [

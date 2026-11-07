@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.382Z",
   "durationSec": 6878,
-  "summary": "Specjalne wydanie poświęcone Ozzy'emu Osbornowi, który zmarł w wieku 76 lat. Przypomniano drogę od debiutu Black Sabbath i utworu Paranoid przez solowe płyty z Randym Rhoadsem i Blizzard of Oz po późniejsze albumy i współprace — m.in. z Lemmym Kilmisterem, Wu-Tang Clan i Infectious Grooves. Omówiono pożegnalny koncert zespołu w Birmingham z 5 lipca, na którym obok Black Sabbath wystąpili m.in. Metallica, Tool, Slayer i Guns N' Roses. Wspominano festiwal Ozzfest i koncert w Katowicach w 2002 roku, trasę The End oraz rolę Sharon Osbourne w ratowaniu kariery muzyka. Sięgnięto też po autobiografię „Ja, Ozzy”, serial „Rodzina Osbourne'ów” i historię niezrealizowanego duetu z Krzysztofem Cugowskim. Całość utrzymana w tonie celebracji i humoru, z podkreśleniem dystansu artysty do własnego wizerunku Księcia Ciemności.",
+  "summary": "Specjalne wydanie audycji poświęcone Ozzy'emu Osbourne'owi, zmarłemu w wieku 76 lat — wspomnienie jego życia i kariery prowadzone pod hasłem celebracji, a nie żałoby. Rozmówcy omawiali rolę Black Sabbath jako prekursorów heavy metalu oraz solową twórczość Osbourne'a, w tym współprace z innymi artystami (Wu-Tang Clan, Infectious Grooves, Lemmy Kilmister) i gitarzystów przewijających się przez jego składy (Randy Rhoads, Zakk Wylde). Jarek Szubrycht opowiadał o koncertach Ozzfest w Katowicach w 2002 roku i pożegnalnej trasie The End w 2016 roku oraz o autobiografii „Ja, Ozzy”, a Piotr Metz — o nigdy niezrealizowanej sesji w Los Angeles, w której Osbourne miał zaśpiewać w duecie z Krzysztofem Cugowskim, i o tym, że humor oraz dystans do własnego wizerunku odróżniały go od rockowego zadęcia. Michał Grabek-Grabkowski relacjonował ostatni koncert Black Sabbath 5 lipca w Birmingham, z udziałem m.in. Metalliki, Slayera, Pantery, Tool i Guns N' Roses, gdzie Osbourne wystąpił siedząc na tronie, wyraźnie wzruszony. W nagraniach i telefonach słuchaczy powtarzały się wątki pionierskiej roli zespołu, nonkonformizmu wokalisty i jego wpływu na kolejne pokolenia muzyków.",
   "topics": [
     {
       "start": 163,
@@ -109,6 +109,90 @@
       "type": "artist",
       "source": "tracks",
       "at": 5542
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits",
+      "at": 561
+    },
+    {
+      "id": "piotr-metz",
+      "label": "Piotr Metz",
+      "type": "person",
+      "source": "credits",
+      "at": 2421
+    },
+    {
+      "id": "michal-grabek-grabkowski",
+      "label": "Michał Grabek-Grabkowski",
+      "type": "person",
+      "source": "credits",
+      "at": 4534
+    },
+    {
+      "id": "macio-moretti",
+      "label": "Macio Moretti",
+      "type": "person",
+      "source": "credits",
+      "at": 4062
+    },
+    {
+      "id": "lukasz-orbitowski",
+      "label": "Łukasz Orbitowski",
+      "type": "person",
+      "source": "credits",
+      "at": 5858
+    },
+    {
+      "id": "robert-gajewski",
+      "label": "Robert Gajewski",
+      "type": "person",
+      "source": "credits",
+      "at": 6210
+    },
+    {
+      "id": "ozzfest",
+      "label": "Ozzfest",
+      "type": "event",
+      "source": "transcript",
+      "at": 1286
+    },
+    {
+      "id": "koncert-the-end",
+      "label": "The End",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1369
+    },
+    {
+      "id": "koncert-not-in-this-lifetime",
+      "label": "Not in This Lifetime",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1451
+    },
+    {
+      "id": "ja-ozzy",
+      "label": "Ja, Ozzy",
+      "type": "work",
+      "source": "transcript",
+      "at": 1849
+    },
+    {
+      "id": "biografia-budki-suflera",
+      "label": "biografia Budki Suflera",
+      "type": "work",
+      "source": "transcript",
+      "at": 3230
+    },
+    {
+      "id": "koncert-pozegnalny-koncert-black-sabbath-villa-park-birmingham",
+      "label": "pożegnalny koncert Black Sabbath, Villa Park, Birmingham",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4640
     }
   ],
   "tracks": [
@@ -283,5 +367,42 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "gość",
+      "name": "Jarek Szubrycht",
+      "time": 561,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Piotr Metz",
+      "time": 2421,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Michał Grabek-Grabkowski",
+      "time": 4534,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Macio Moretti",
+      "time": 4062,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Łukasz Orbitowski",
+      "time": 5858,
+      "quote": ""
+    },
+    {
+      "role": "gość",
+      "name": "Robert Gajewski",
+      "time": 6210,
+      "quote": ""
+    }
+  ]
 }

@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.396Z",
   "durationSec": 6936,
-  "summary": "Przegląd marcowych nowości metalowych, zdominowany przez płyty z pogranicza death i black metalu. Omówiono szósty album Imperial Triumphant Gold Star, Lonely People With Power Deafheaven oraz trzeci krążek Alien Weaponry Terra, odwołujący się do przedkolonialnych tradycji maoryskich. Wśród premier znalazły się też The Return of Magic Rwake, Blood Dynasty Arch Enemy i Something to Pierce włoskiego Sadist. Do tego debiut szwedzkiego Impurity The Eternal Sleep nagrany w studiu Sunlight, Death Comes to All Gates to Hell, Hymns in Dissonance Whitechapel i Everything Rots duńskiego Cabal. Usłyszeliśmy także Pure Lenses francuskiego zespołu, dwie EP-ki Amenra — The Thorn i With Fang and Claw — oraz wspólny album The Body z Intensive Care Was I Good Enough?. Całość zamyka rozmowa z Danim Filthem o płycie Cradle of Filth The Screaming of the Valkyries i nadchodzącym występie na Mystic Festival w Gdańsku.",
+  "summary": "Odcinek jest przeglądem najważniejszych marcowych premier metalowych. Omówiono m.in. szósty album Imperial Triumphant Gold Star (z utworem Pleasure Dome, w którym gościnnie zagrali Dave Lombardo i perkusista Meshuggah), nową płytę Deafheaven Lonely People With Power i trzeci album Alien Weaponry Terra, odwołujący się do przedkolonialnych tradycji maoryskich. Dalej pojawiły się: The Return of Magic Rwake, dwunasta płyta Arch Enemy Blood Dynasty, dziesiąty album Sadist Something to Pierce, debiut szwedzkiego Impurity The Eternal Sleep nagrany w studiu Sunlight, Death Comes to All Gates to Hell, Hymns in Dissonance Whitechapel, Everything Rots duńskiego Cabal, Pure Lenses francuskiego Fonche, dwie EP-ki Amenra (The Thorn i With Fang and Claw) oraz kooperacja The Body z Intensive Care Was I Good Enough?. Rozmowa z Danim Filthem dotyczyła albumu Cradle of Filth The Screaming of the Valkyries: procesu twórczego, wymiany składu i aklimatyzacji amerykańskich muzyków, czeskiego pierwiastka w zespole oraz odchodzenia od szokującej erotyki w wizerunku na rzecz zmieniających się standardów. Filth mówił też o trwałości ekstremalnego metalu przez pokolenia i o tym, co chciałby, żeby po Cradle of Filth zostało.",
   "topics": [
     {
       "start": 293,
@@ -165,6 +165,41 @@
       "type": "artist",
       "source": "tracks",
       "at": 3392
+    },
+    {
+      "id": "dani-filth",
+      "label": "Dani Filth",
+      "type": "person",
+      "source": "credits",
+      "at": 7647
+    },
+    {
+      "id": "koncert-amenra-koncerty-w-polsce",
+      "label": "Amenra — koncerty w Polsce",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4331
+    },
+    {
+      "id": "koncert-amerykanska-trasa-danzig",
+      "label": "amerykańska trasa Danzig",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5584
+    },
+    {
+      "id": "horrory-wytworni-hammer",
+      "label": "horrory wytwórni Hammer",
+      "type": "work",
+      "source": "transcript",
+      "at": 5775
+    },
+    {
+      "id": "mystic-festival-w-gdansku",
+      "label": "Mystic Festival w Gdańsku",
+      "type": "event",
+      "source": "transcript",
+      "at": 6525
     }
   ],
   "tracks": [
@@ -391,5 +426,12 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "gość",
+      "name": "Dani Filth",
+      "time": 7647,
+      "quote": ""
+    }
+  ]
 }

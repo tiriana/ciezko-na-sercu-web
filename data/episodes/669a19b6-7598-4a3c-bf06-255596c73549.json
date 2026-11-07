@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.397Z",
   "durationSec": 6886,
-  "summary": "Odcinek poświęcony polskim zespołom zgłoszonym do konkursu Road to Mystic 2025, którego półfinał wyłonił czwórkę finalistów; 26 kwietnia w gdańskim klubie Drizzly Grizzly zagrają oni o miejsce na Mystic Festival. Zaprezentowano szeroki przekrój sceny: death metal (Ionian, Impermanence), techniczny thrash death (Species), thrash (Diving Stove), black i sludge (KIR, Czernina, Skow), doom (Metallus) oraz rzeczy trudne do zaszufladkowania (Rawna, Uliata Digir). Omówiono premierowe i ubiegłoroczne wydawnictwa, m.in. EP Anti-Human Terror Technofobii, debiut UZ Maruntuki, płytę Na pograniczu usidlenia Czerniny, album The Art of Death Error Theory, Lapelle du vide KIR, Chosen Obed Forgotten Sunday at Nine i New Definition of an End Entreaty. Podkreślono bardzo wysoki poziom tegorocznych zgłoszeń oraz różnorodność gatunkową współczesnej sceny w porównaniu z latami dziewięćdziesiątymi.",
+  "summary": "Odcinek w całości poświęcony polskim zespołom, które przeszły do półfinału konkursu Road to Mystic 2025; poziom tegorocznych zgłoszeń oceniono jako nadzwyczaj wysoki, a półfinałowa pięćdziesiątka reprezentuje szerokie spektrum ciężkiego grania — od death i black metalu po punk, sludge, hardcore i noise. Szeroki rozstrzał gatunkowy uznano za zaletę odróżniającą obecną scenę od lat 90., gdy większość zespołów podążała za jednym obowiązującym trendem. Finałowa czwórka zaprezentuje się 26 kwietnia w gdańskim klubie Drizzly Grizzly, a jeden z tych zespołów — być może dwa — zagra na Mystic Festival. Wśród omawianych grup znaleźli się gdański Ionian (death metal, nowy szyld starych wyjadaczy), warszawski Species (techniczny thrash death), bydgoska Technofobia z epką Anti-Human Terror, łódzki Wieczny Mróz, wrocławski Skow łączący punk, black metal i sludge, krakowski Impermanence oraz poznański Heresy Denied z singlem Lifeless Silkwets. Error Theory i jego album The Art of Death wskazano jako jedno z większych odkryć tegorocznej edycji, a wśród pozostałych propozycji wymieniono blackmetalowy KIR, warszawski Diving Stove, Czerninę z płytą Na pograniczu usidlenia, doomowy Metallus, Sunday at Nine, Entreaty z debiutem New Definition of an End oraz awangardowy Uliata Digir.",
   "topics": [
     {
       "start": 206,
@@ -186,6 +186,20 @@
       "type": "artist",
       "source": "tracks",
       "at": 1601
+    },
+    {
+      "id": "koncert-final-road-to-mystic-2025-w-klubie-drizzly-grizzly",
+      "label": "Finał Road to Mystic 2025 w klubie Drizzly Grizzly",
+      "type": "concert",
+      "source": "transcript",
+      "at": 264
+    },
+    {
+      "id": "mystic-festival-2025",
+      "label": "Mystic Festival 2025",
+      "type": "event",
+      "source": "transcript",
+      "at": 292
     }
   ],
   "tracks": [

@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.377Z",
   "durationSec": 6867,
-  "summary": "Audycja poświęcona jest mniej znanym, eksperymentalnym zespołom metalowym i ich wydawniczym historiom. Prowadzący przywitał się, przedstawił utwór Esoteric i omówił ich miejsce w funeral doom, po czym przeskoczył do Alchemist oraz roli wytwórni Relapse. Następnie przytoczono historię zespołów The End i Eiffel Duath, w tym rzadkie materiały i remiksy, a później omówiono unikalność Chrome Hoof oraz dalsze przykłady nietypowych grup jak Forgotten Silence i Fleurety. Całość zakończyła się refleksją o jakości muzyki niezależnej od popularności. W audycji prowadzący omawia kilka niezwykłych projektów muzycznych z pogranicza black metalu i eksperymentalnego dźwięku. Najpierw przybliża historię szwedzkiego projektu Abruptum, opisując jego założycieli, kontrowersyjne występy i zmianę stylu na dark ambient. Następnie przechodzi do holenderskiego eksperymentalnego projektu Gnorden Tongs, podkreślając jego mroczną estetykę i osobiste motywacje twórcy. Kolejnym tematem jest francuski zespół Blood House Nord, którego twórczość łączy black metal z industrialem i ambientem, a także zapowiedź ich nowego albumu. Na koniec prowadzący dzieli się własną historią odkrycia zespołu Death Spell Omega, opisując ich anonimowość i wpływ na jego muzyczne zainteresowania.",
+  "summary": "Audycja poświęcona zespołom, które grają oryginalną muzykę i robią rzeczy po swojemu, ale nie przebijają się do szerokiej publiczności — punktem wyjścia był koncert Esoteric zamykający drugi dzień festiwalu Summer Dying Loud, a prowadzący sięgnął alfabetycznie po płyty z własnej półki. Przy literze A omówiono Alchemist z Australii, których ostatnie albumy Austral Alien i Tripsis wydała Relapse, oraz Burnt by the Sun z New Jersey, którzy po trzech albumach, w tym The Perfect is the Enemy of the Good, zakończyli działalność. Równie krótko istnieli Kanadyjczycy z The End, autorzy Elementary z 2008 roku, łączącego wcześniejsze hałasy z technicznymi łamańcami z prog rocka i jazzu. Dalej pojawił się włoski Ephel Duath z Padwy, nazwany od gór oddzielających Mordor, z elektroindustrialnymi remiksami Pain Remixes The Known autorstwa Raldo Bernocciego z Sigillum S, czeska Forgotten Silence z Brna i jej Le Grand Buffet, oraz Chrome Hoof z Londynu, łączący ciężki metal z disco, funkiem, jazzem i estetyką musicalową. Omówiono też norweski Fleurety, który po blackmetalowym debiucie skręcił w eksperymenty na minialbumie Last Minute Lies, oraz Abruptum, którego pierwsze płyty ukazały się nakładem Death Like Silence, a jego współtwórca IT zmarł w 2017 roku. Na koniec Gnaw Their Tongues Holendra Maurice'a de Jongha, Blut Aus Nord z Normandii z zapowiedzią szesnastego albumu Ethereal Horizons na listopad oraz anonimowy Deathspell Omega, który nie koncertuje i w tekstach sięga od konceptów gnostyckich po reinterpretację Hegla.",
   "topics": [
     {
       "start": 64,
@@ -143,6 +143,41 @@
       "type": "artist",
       "source": "tracks",
       "at": 1379
+    },
+    {
+      "id": "maurice-de-jong",
+      "label": "Maurice de Jong",
+      "type": "person",
+      "source": "credits",
+      "at": 4279
+    },
+    {
+      "id": "summer-dying-loud",
+      "label": "Summer Dying Loud",
+      "type": "event",
+      "source": "transcript",
+      "at": 616
+    },
+    {
+      "id": "koncert-merzbow-i-igor-cavalera-we-wroclawiu",
+      "label": "Merzbow i Igor Cavalera we Wrocławiu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1940
+    },
+    {
+      "id": "apokalipsa-sw-jana",
+      "label": "Apokalipsa św. Jana",
+      "type": "work",
+      "source": "transcript",
+      "at": 4247
+    },
+    {
+      "id": "to",
+      "label": "To",
+      "type": "work",
+      "source": "transcript",
+      "at": 3904
     }
   ],
   "tracks": [
@@ -430,6 +465,12 @@
       "name": "Mariusz Owczarek",
       "time": 675,
       "quote": "Te audycje wydaje Mariusz Owczarek."
+    },
+    {
+      "role": "gość",
+      "name": "Maurice de Jong",
+      "time": 4279,
+      "quote": ""
     }
   ]
 }

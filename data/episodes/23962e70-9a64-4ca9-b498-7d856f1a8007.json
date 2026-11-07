@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.408Z",
   "durationSec": 6800,
-  "summary": "Odcinek zbudowany wokół motywu szkoły i nauczania: metalowe kapele i albumy ułożone jak lekcje — od pierwszych kroków w gatunku, przez historię, po „lekcje bólu”. Punktem wyjścia są kasety pożyczone od kolegi i pierwsze zespoły, które uczyły słuchania. Dalej mowa o gatekeepingu i „kartkówkach” w środowisku metalowym, o Iron Maiden jako źródle wiedzy historycznej oraz o płytach o tematyce wojennej (m.in. Sabaton, Impaled Nazarene). Osobny wątek to muzyka jako lekcja patologii i cierpienia — Die Art is Murder, Obituary, Exhumed — a także pomysł na własny album o Dionizosie i metafora zespołów jako „profesorów”. W środku odcinka kanonada: utwory z kaset, od których zaczęła się ta edukacja.",
+  "summary": "Odcinek z okazji Dnia Nauczyciela, w całości poświęcony metalowym nauczycielom i metalowej edukacji. Punktem wyjścia były kasety pożyczone w dzieciństwie przez starszego sąsiada: Quiet Riot, Van Halen z albumu 5150 (z Sammym Hagarem, którego autor woli od Davida Lee Rotha), Black Sabbath (z przywiązaniem do Ozzy'ego i epoki Ronniego Jamesa Dio, zwłaszcza Heaven and Hell) oraz Manowar i Fighting the World, zawierające piosenkę o ojcowskim przekazie dla syna. Sporo miejsca zajęła refleksja o gatekeepingu w środowisku metalowym — dawnych „kartkówkach” ze składu i dyskografii, naszywkach i logotypach — ocenianym jako coś, co cementowało wspólnotę, ale często przybierało formę wymuszeń i przemocy. Autor opowiadał też, jak metal uczył go angielskiego, historii (Iron Maiden i Aces High kontra szkolny Dywizjon 303) oraz skłonił do studiowania mitologii pod teksty o Dionizosie. W audycji pojawiły się także Thy Art Is Murder, Obituary z biografią Zastygli w czasie, Exhumed, My Chemical Romance, chiński projekt Hoplites z albumem Paramanuensis, szwedzki Meshuggah jako „profesorowie” ekstremy oraz zamykający całość Ulver z utworem Silence teaches you how to sing.",
   "topics": [
     {
       "start": 54,
@@ -171,6 +171,34 @@
       "type": "artist",
       "source": "tracks",
       "at": 176
+    },
+    {
+      "id": "obituary-zastygli-w-czasie",
+      "label": "Obituary. Zastygli w czasie",
+      "type": "work",
+      "source": "transcript",
+      "at": 3178
+    },
+    {
+      "id": "dywizjon-303",
+      "label": "Dywizjon 303",
+      "type": "work",
+      "source": "transcript",
+      "at": 4263
+    },
+    {
+      "id": "mitologia",
+      "label": "Mitologia",
+      "type": "work",
+      "source": "transcript",
+      "at": 4937
+    },
+    {
+      "id": "conan",
+      "label": "Conan",
+      "type": "work",
+      "source": "transcript",
+      "at": 2149
     }
   ],
   "tracks": [

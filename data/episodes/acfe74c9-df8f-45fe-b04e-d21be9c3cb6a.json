@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.347Z",
   "durationSec": 7174,
-  "summary": "Kwietniowy przegląd nowości zdominowały premiery z szeroko pojętej ciężkiej muzyki. Corrosion of Conformity przedstawili podwójny album Good God, Bad Man, łączący hardcore, southern rock, stoner i doom, a Truck Fighters zapowiedzieli płytę Master Flow i czerwcowy występ na Mystic Festiwalu. Obok Poison Ruin z Hymns from the Hills i punkowego The Shits z Diet of Worms pojawiły się wspólne dzieło Melvins i Napalm Death Savage Imperial Death March oraz album Skindred You Got This, mieszający metal, reggae i rap. Wspomniano pożegnalną EP Sepultury The Cloud of Unknowing oraz pośmiertny album At the Gates The Ghost of Future Death, dokończony według wskazówek Thomasa Lindberga, a także nowe materiały Vomitory, Immolation i Xorcist. Wśród polskich akcentów znalazł się debiut Blinded 23 zatytułowany Deuterium, nagrany z udziałem Rogera Oyersona i Pawła Jaroszewicza. W dalszej części przeglądu pojawiły się Landloss, Nervosa, Unearthly Rides, Ord i Witch Ripper oraz premierowe nagrania Dödsfänger i Dude Svens.",
+  "summary": "Audycja to przegląd kwietniowych nowości: otwiera ją podwójny album Corrosion of Conformity „Good God, Bad Man”, nagrany częściowo w prywatnym studiu Barry'ego Giba, łączący hardcore, southern rock, stoner i doom. Omówiono też szwedzki „Master Flow” Truck Fighters (zespół zagra w czerwcu na Mystic Festiwalu), „Hymns from the Hills” Poison Ruin, „Diet of Worms” The Shits oraz wspólny album Melvins i Napalm Death „Savage Imperial Death March”, którego tytuł pochodzi od nazwy ich wspólnych tras koncertowych. Szeroko omówiono dwa pożegnalne wydawnictwa: epkę Sepultury „The Cloud of Unknowing”, o której istnieniu prowadzący dowiedział się rok wcześniej od Andreasa Kissera podczas Mystic Talks, oraz album At The Gates „The Ghost of Future Death”, nagrany przed śmiercią wokalisty Thomasa Lindberga — zdążył on zarejestrować demo wokali dzień przed operacją nowotworu ślinianek i zmarł we wrześniu 2025 roku, a zespół dokończył płytę według jego wskazówek. Dalej zaprezentowano nowości z pogranicza death i black metalu: Skindred („You Got This”, z elementami reggae i rapu), Landloss („Nowhere, in Between, Forever”), A Treju („The End is Not The End”), Nervozę („Slave Machine”), Vomitory („In Death Throws”), Xorcist („Aberrations”), Immolation („Descent”), Unearthly Rides („Total Symphony of the Flesh”), Ord („Blind in Abyssal Realms”), polski zespół Blinded 23 z debiutanckim albumem „Deuterium” (z udziałem m.in. Rogera Öjersanda z Katatonii i Pawła Jaroszewicza), Witch Rippera („Through the Hourglass”), Dötzsfängera („Within the Flesh”) oraz holenderski Dude Swens.",
   "topics": [
     {
       "start": 249,
@@ -200,6 +200,27 @@
       "type": "artist",
       "source": "tracks",
       "at": 4374
+    },
+    {
+      "id": "mystic-festiwal",
+      "label": "Mystic Festiwal",
+      "type": "event",
+      "source": "transcript",
+      "at": 750
+    },
+    {
+      "id": "mystic-talks",
+      "label": "Mystic Talks",
+      "type": "event",
+      "source": "transcript",
+      "at": 3009
+    },
+    {
+      "id": "koncert-trasa-pozegnalna-sepultury",
+      "label": "trasa pożegnalna Sepultury",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3020
     }
   ],
   "tracks": [

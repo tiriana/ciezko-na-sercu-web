@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.329Z",
   "durationSec": 7237,
-  "summary": "W pierwszej części audycji prowadzący omawia najciekawsze sierpniowe festiwale i koncerty metalowe w Polsce. Przedstawia szczegóły występów zagranicznych zespołów, takich jak Thy Art is Murder, Mortal Scene oraz liczne lineupy festiwalu Rockowizna, a także zachęca do odwiedzenia Off Festival. Wspomina także o planowanych koncertach This Will Destroy You i szkockim zespole Ailstorm, podkreślając różnorodność sceny metalowej w kraju. W audycji omówiono najważniejsze metalowe festiwale i koncerty sierpnia 2026 w Polsce, zaczynając od wspólnego występu Savatash, Nevermore i Armored Saint w Warszawie. Następnie przedstawiono planowane koncerty w Krakowie, w tym występ Ermord Saint z Metal Church i Testamentem, oraz liczne festiwale w różnych miastach, takie jak Niech cisza milczy, Kurde Fest i True Metal Camp. Poruszono także rocznicę pięćdziesięciolecia australijskiego zespołu Rose Tattoo oraz zapowiedzi koncertów zagranicznych i polskich grup, podkreślając bogactwo sceny metalowej w kraju. W audycji omówiono najważniejsze metalowe festiwale sierpnia 2026 roku, koncentrując się na wydarzeniach w Polsce i zagranicą. Prelegent przedstawił szczegóły festiwalu Sound of the Ages na zamku w Ćmielowie oraz Hell in the Shell w Sosnowcu, a także zapowiedział Sundice Festival w Olsztynie i szereg koncertów w różnych miastach. Wspomniano o międzynarodowych gościach, takich jak Michael Schenker, oraz o rodzimych gwiazdach, m.in. Vader, Hate i de Materia. Na koniec podkreślono planowane występy Fear Factory, Frightful i innych zespołów oraz zaproszono słuchaczy do zadawania pytań.",
+  "summary": "Audycja to przegląd sierpniowych koncertów i festiwali metalowych w Polsce i za granicą. Omówiono m.in. koncert Thy Art is Murder w Warszawie, reaktywację australijskiego zespołu Mortal Scene, trzy edycje festiwalu Rockowizna (Gdańsk, Poznań, Kraków) oraz katowicki Off Festival z udziałem Einstürzende Neubauten i Chat Pile. Przedstawiono wspólne koncerty weteranów metalu — Savatage, Nevermore i Armored Saint w Warszawie oraz Armored Saint, Metal Church i Testament w Krakowie — a także pożegnalną trasę australijskiego Rose Tattoo z okazji 50-lecia zespołu. Szeroko omówiono serię imprez przypadających na 22 sierpnia (True Metal Camp, 666 United Metal Fest, Sound of the Ages, Hell in the Shell, pierwszą edycję Sundice Festival w nowej lokalizacji w Olsztynie) oraz trasy koncertowe Soulfly Maxa Cavalery, Fear Factory i polski przystanek trasy Demonizing Europe. Wspomniano też o wydanej niedawno po polsku książce Aleksandra Hacke „Hałas” o zespole Einstürzende Neubauten.",
   "topics": [
     {
       "start": 301,
@@ -206,6 +206,223 @@
       "type": "artist",
       "source": "tracks",
       "at": 66
+    },
+    {
+      "id": "koncert-thy-art-is-murder-w-warszawie",
+      "label": "Thy Art is Murder w Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 59
+    },
+    {
+      "id": "koncert-mortal-scene-w-chorzowie",
+      "label": "Mortal Scene w Chorzowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 354
+    },
+    {
+      "id": "koncert-primus-w-warszawie",
+      "label": "Primus w Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 423
+    },
+    {
+      "id": "rockowizna",
+      "label": "Rockowizna",
+      "type": "event",
+      "source": "transcript",
+      "at": 705
+    },
+    {
+      "id": "brutal-assault",
+      "label": "Brutal Assault",
+      "type": "event",
+      "source": "transcript",
+      "at": 1065
+    },
+    {
+      "id": "off-festival",
+      "label": "Off Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 1104
+    },
+    {
+      "id": "halas",
+      "label": "Hałas",
+      "type": "work",
+      "source": "transcript",
+      "at": 1146
+    },
+    {
+      "id": "koncert-this-will-destroy-you-w-poznaniu",
+      "label": "This Will Destroy You w Poznaniu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1672
+    },
+    {
+      "id": "koncert-alestorm-trasa-polska",
+      "label": "Alestorm – trasa polska",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1695
+    },
+    {
+      "id": "koncert-savatage-nevermore-i-armored-saint-w-warszawie",
+      "label": "Savatage, Nevermore i Armored Saint w Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1746
+    },
+    {
+      "id": "koncert-armored-saint-metal-church-i-testament-w-krakowie",
+      "label": "Armored Saint, Metal Church i Testament w Krakowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2401
+    },
+    {
+      "id": "koncert-agnostic-front-w-warszawie",
+      "label": "Agnostic Front w Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2764
+    },
+    {
+      "id": "niech-cisza-milczy",
+      "label": "Niech Cisza Milczy",
+      "type": "event",
+      "source": "transcript",
+      "at": 2966
+    },
+    {
+      "id": "koncert-koncert-w-klubie-potok-warszawa",
+      "label": "Koncert w klubie Potok (Warszawa)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3023
+    },
+    {
+      "id": "kurde-fest",
+      "label": "Kurde Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 3037
+    },
+    {
+      "id": "koncert-rose-tattoo-rock-n-roll-outlaws-one-last-ride",
+      "label": "Rose Tattoo – Rock'n'Roll Outlaws: One Last Ride",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3376
+    },
+    {
+      "id": "koncert-angelus-apatrida-w-polsce",
+      "label": "Angelus Apatrida w Polsce",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3738
+    },
+    {
+      "id": "koncert-soen-i-only-sons-trasa",
+      "label": "Soen i Only Sons – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3756
+    },
+    {
+      "id": "true-metal-camp",
+      "label": "True Metal Camp",
+      "type": "event",
+      "source": "transcript",
+      "at": 4094
+    },
+    {
+      "id": "666-united-metal-fest",
+      "label": "666 United Metal Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 4173
+    },
+    {
+      "id": "sound-of-the-ages",
+      "label": "Sound of the Ages",
+      "type": "event",
+      "source": "transcript",
+      "at": 4242
+    },
+    {
+      "id": "hell-in-the-shell",
+      "label": "Hell in the Shell",
+      "type": "event",
+      "source": "transcript",
+      "at": 4286
+    },
+    {
+      "id": "koncert-vader-piekielne-lato-trasa",
+      "label": "Vader – Piekielne Lato (trasa)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4334
+    },
+    {
+      "id": "sundice-festival",
+      "label": "Sundice Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 4795
+    },
+    {
+      "id": "koncert-soulfly-trasa",
+      "label": "Soulfly – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5599
+    },
+    {
+      "id": "koncert-demonizing-europe-trasa",
+      "label": "Demonizing Europe – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5969
+    },
+    {
+      "id": "koncert-violentor-trasa",
+      "label": "Violentor – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6003
+    },
+    {
+      "id": "materia-fest",
+      "label": "Materia Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 6039
+    },
+    {
+      "id": "the-last-words-of-death",
+      "label": "The Last Words of Death",
+      "type": "event",
+      "source": "transcript",
+      "at": 6303
+    },
+    {
+      "id": "koncert-fear-factory-trasa",
+      "label": "Fear Factory – trasa",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6637
+    },
+    {
+      "id": "koncert-nothing-w-warszawie",
+      "label": "Nothing w Warszawie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6677
     }
   ],
   "tracks": [

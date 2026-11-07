@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.336Z",
   "durationSec": 7145,
-  "summary": "W pierwszej części audycji Jarek Szubrycht omawia najciekawsze koncerty i festiwale metalowe planowane na lipiec 2026, począwszy od występów brytyjskich zespołów w festiwalu Rokowizna po liczne polskie mikrofestiwale. Następnie prowadzący wchodzi w temat seryjnych morderców, przywołując ich obecność w kulturze popularnej i w muzyce, zwłaszcza w twórczości amerykańskiego zespołu Macabre. W dalszej części zapowiada się seria koncertów zagranicznych i polskich grup, w tym występy Macabre, Las Trumien, Poison Ruin, In Flames oraz System of a Down, a także opisuje szczegóły festiwali Red Smoke, Bloody Fest, Bestial Invasion i innych. Audycja kończy się zapowiedzią nadchodzących koncertów i refleksją nad wpływem tych wydarzeń na polską scenę metalową. W audycji omówiono najważniejsze koncerty i festiwale metalowe planowane na lipiec 2026, ze szczególnym uwzględnieniem występów System of a Down, Queens of the Stone Age oraz mniej znanych zespołów undergroundowych. Poruszono temat festiwalu Atak Szczurów, prezentując jego lineup i miejsce w polskim undergroundzie. Przedstawiono także recenzję nowej płyty kanadyjskiego zespołu Vojvod oraz sytuację archiwalnych grup takich jak Arch Enemy i Phil Campbell's Bastard Sons. Na koniec zapowiedziano kolejne koncerty w różnych miastach, podkreślając różnorodność sceny metalowej w Polsce. W podcaście prowadzący omawiał nadchodzące koncerty i festiwale w lipcu, ze szczególnym uwzieszaniem na występ amerykańskiego zespołu Municipal Waste w Krakowie. Zaznaczył, że ich występ będzie połączony z występami polskich grup, takich jak Hamulec, Sanity Control i Diving Stołów. Przypomniał, że koncerty potrafią wywoływać sporo zamieszania, ale warto je odwiedzić. Na koniec podziękował słuchaczom i zapowiedział kolejne muzyczne spotkania w przyszłym tygodniu.",
+  "summary": "Audycja to przegląd koncertów i festiwali metalowych i pokrewnych zaplanowanych na lipiec. Omówiono festiwale takie jak Rokowizna/Metalowizna w Zwierzyńcu (z Carcass jako gwiazdą), Rozłupnię, Crossover Krakau, Bloody Fest, Red Smoke w Pleszewie, Bestial Invasion, Live and Burn Festival oraz konkurencyjne, jednoczesne Atak Szczurów i Czarne Rewiry we Wrocławiu. Wśród zapowiedzianych koncertów wymieniono m.in. Macabre z projektem Schiering/Pungent Stench i Lasem Trumien, In Flames z Bleed From Within, System of a Down, Queens of the Stone Age i Acid Bath na Stadionie Narodowym, Biohazard z Chrome, Violence/Death Angel i Sworn Enemy, a także Scorpions, Voivod, Arch Enemy, Phil Campbell's Bastard Sons przed Judas Priest, Terror, Cryptopsy, Crowbar, Mushroom Head i Municipal Waste. Skrytykowano symfoniczną płytę Voivod pt. Syfonik jako nieudany eksperyment. Przywołano historię zespołu Acid Bath, w tym śmierć basisty Audiego Pitre w 1997 roku, zabitego przez pijanego kierowcę razem z obojgiem rodziców.",
   "topics": [
     {
       "start": 260,
@@ -173,6 +173,174 @@
       "type": "artist",
       "source": "tracks",
       "at": 1904
+    },
+    {
+      "id": "rokowizna-metalowizna",
+      "label": "Rokowizna / Metalowizna",
+      "type": "event",
+      "source": "transcript",
+      "at": 275
+    },
+    {
+      "id": "koncert-last-lightning-trasa-polska",
+      "label": "Last Lightning - trasa polska",
+      "type": "concert",
+      "source": "transcript",
+      "at": 700
+    },
+    {
+      "id": "rozlupnia",
+      "label": "Rozłupnia",
+      "type": "event",
+      "source": "transcript",
+      "at": 740
+    },
+    {
+      "id": "crossover-krakau",
+      "label": "Crossover Krakau",
+      "type": "event",
+      "source": "transcript",
+      "at": 774
+    },
+    {
+      "id": "koncert-macabre-schiering-place-pungent-stench-las-trumien",
+      "label": "Macabre / Schiering Place Pungent Stench / Las Trumien",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1107
+    },
+    {
+      "id": "bloody-fest",
+      "label": "Bloody Fest",
+      "type": "event",
+      "source": "transcript",
+      "at": 1802
+    },
+    {
+      "id": "red-smoke",
+      "label": "Red Smoke",
+      "type": "event",
+      "source": "transcript",
+      "at": 1832
+    },
+    {
+      "id": "bestial-invasion",
+      "label": "Bestial Invasion",
+      "type": "event",
+      "source": "transcript",
+      "at": 2287
+    },
+    {
+      "id": "koncert-poison-ruin",
+      "label": "Poison Ruin",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2324
+    },
+    {
+      "id": "koncert-in-flames-bleed-from-within",
+      "label": "In Flames / Bleed From Within",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2602
+    },
+    {
+      "id": "live-and-burn-festival",
+      "label": "Live and Burn Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 2943
+    },
+    {
+      "id": "koncert-system-of-a-down-queens-of-the-stone-age-acid-bath",
+      "label": "System of a Down / Queens of the Stone Age / Acid Bath",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2962
+    },
+    {
+      "id": "koncert-biohazard-chrome-violence-lub-death-angel-we-wroclawiu-sworn-enemy",
+      "label": "Biohazard / Chrome / Violence (lub Death Angel we Wrocławiu) / Sworn Enemy",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3844
+    },
+    {
+      "id": "koncert-scorpions",
+      "label": "Scorpions",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4415
+    },
+    {
+      "id": "atak-szczurow",
+      "label": "Atak Szczurów",
+      "type": "event",
+      "source": "transcript",
+      "at": 4434
+    },
+    {
+      "id": "czarne-rewiry",
+      "label": "Czarne Rewiry",
+      "type": "event",
+      "source": "transcript",
+      "at": 4821
+    },
+    {
+      "id": "koncert-voivod",
+      "label": "Voivod",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5404
+    },
+    {
+      "id": "koncert-arch-enemy",
+      "label": "Arch Enemy",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5857
+    },
+    {
+      "id": "koncert-phil-campbell-s-bastard-sons-judas-priest",
+      "label": "Phil Campbell's Bastard Sons / Judas Priest",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6134
+    },
+    {
+      "id": "koncert-terror-stick-to-your-guns",
+      "label": "Terror / Stick to Your Guns",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6595
+    },
+    {
+      "id": "koncert-terror-walwodynia-cryptopsy",
+      "label": "Terror / Walwodynia / Cryptopsy",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6611
+    },
+    {
+      "id": "koncert-crowbar",
+      "label": "Crowbar",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6874
+    },
+    {
+      "id": "koncert-mushroom-head",
+      "label": "Mushroom Head",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6894
+    },
+    {
+      "id": "koncert-municipal-waste",
+      "label": "Municipal Waste",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6935
     }
   ],
   "tracks": [

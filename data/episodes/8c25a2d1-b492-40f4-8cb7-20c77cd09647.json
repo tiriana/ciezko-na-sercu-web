@@ -4,7 +4,7 @@
   "analyzedAt": "2026-11-06",
   "updatedAt": "2026-11-06T22:03:22.368Z",
   "durationSec": 6846,
-  "summary": "Audycja poświęcona jest obecności muzyki ciężkiej, metalowej i hardrockowej w kinie oraz serialach telewizyjnych. Prowadzący analizuje przypadki wykorzystania utworów klasyków, takich jak Deep Purple czy Black Sabbath, a także bardziej ekstremalnych brzmień w produkcjach głównego nurtu. Poruszane są wątki emocjonalnego wpływu muzyki z filmów dziecięcych, jak Akademia Pana Kleksa, oraz relacji między horrorem a metalem. Program obejmuje zarówno znane hity, jak i mniej oczywiste zestawienia z filmów Davida Lincha czy komedii z Jimem Carreyem. Audycja skupia się na relacjach między kinem, serialami a muzyką, ze szczególnym uwzględnieniem gatunków ciężkich i alternatywnych. Prowadzący analizuje ścieżki dźwiękowe w filmach Davida Lyncha, Davida Finchera czy Michaela Hanekego, wskazując na ich kluczową rolę w budowaniu atmosfery. Poruszane są wątki filmów takich jak „Steve”, „Sztuka samoobrony” czy „Gomorra”, a także wpływ konkretnych zespołów, od Rammstein po Slayer, na odbiór dzieł wizualnych. Całość stanowi przegląd muzycznych wyborów twórców filmowych, od metalu po post-rock. W audycji omówiono kilka nietypowych ścieżek dźwiękowych użytych w serialach i filmach. Najpierw wspomniano o włoskim zespole Mokadelik, który stworzył muzykę według wytycznych, a następnie o współpracy z Mogłaj, którego utwory pojawiają się w różnych produkcjach, od dokumentu o Zidanie po eposy sci‑fi. Poruszono temat ekstremalnego metalu w serialu South Park oraz europejskiego trash‑metalu w niemieckim serialu Dark, podkreślając użycie utworu „Pleasure to Kill”. Na koniec przytoczono fragment muzyczny z serialu True Detective, wykonany przez zespół Sen na dobranoc.",
+  "summary": "Audycja poświęcona była utworom metalowym i innym ciężkim brzmieniom obecnym w filmach i serialach, z pominięciem oczywistych skojarzeń typu Judgment Night, Kruk, Dracula 2000, Zombieland czy metaliczna scena ze Stranger Things. Punktem wyjścia była osobista anegdota prowadzącego o muzyce z Akademii Pana Kleksa, która w dzieciństwie wywołała u niego lęk i fascynację otwierającą drogę do poszukiwania cięższych brzmień. Omówiono m.in. obecność Dokken w Koszmarze z ulicy Wiązdów 3, Megadeth w Szokerze, utwór Hellraiser w wersji Motorhead w Hellraiser III, Black Sabbath w filmie Ironman oraz Cannibal Corpse w scenie z Ace Ventura. Szczególną uwagę poświęcono Rammsteinowi w Zagubionej autostradzie i Power Medowi w Dzikości serca Davida Lyncha, a także Ulverowi w Dziewczynie z tatuażem, Mastodonowi w Aqua Teen Hunger Force i Meszudze w filmie Steve. Przywołano też ekstremalne wybory ścieżek dźwiękowych w Gummo i Funny Games, Slayera w Jackassie i Pozostawionych oraz muzykę w serialach Gomora, ZeroZeroZero, South Park, Dark i True Detective.",
   "topics": [
     {
       "start": 5,
@@ -238,6 +238,209 @@
       "type": "artist",
       "source": "tracks",
       "at": 3124
+    },
+    {
+      "id": "stranger-things",
+      "label": "Stranger Things",
+      "type": "work",
+      "source": "transcript",
+      "at": 241
+    },
+    {
+      "id": "koncert-koncert-deep-purple",
+      "label": "Koncert Deep Purple",
+      "type": "concert",
+      "source": "transcript",
+      "at": 287
+    },
+    {
+      "id": "judgment-night",
+      "label": "Judgment Night",
+      "type": "work",
+      "source": "transcript",
+      "at": 340
+    },
+    {
+      "id": "kruk",
+      "label": "Kruk",
+      "type": "work",
+      "source": "transcript",
+      "at": 340
+    },
+    {
+      "id": "dracula-2000",
+      "label": "Dracula 2000",
+      "type": "work",
+      "source": "transcript",
+      "at": 340
+    },
+    {
+      "id": "zombieland",
+      "label": "Zombieland",
+      "type": "work",
+      "source": "transcript",
+      "at": 353
+    },
+    {
+      "id": "akademia-pana-kleksa",
+      "label": "Akademia Pana Kleksa",
+      "type": "work",
+      "source": "transcript",
+      "at": 385
+    },
+    {
+      "id": "koszmar-z-ulicy-wiazdow-3-wojownicy-snu",
+      "label": "Koszmar z ulicy Wiązdów 3: Wojownicy snu",
+      "type": "work",
+      "source": "transcript",
+      "at": 710
+    },
+    {
+      "id": "szoker",
+      "label": "Szoker",
+      "type": "work",
+      "source": "transcript",
+      "at": 1057
+    },
+    {
+      "id": "hellraiser-iii",
+      "label": "Hellraiser III",
+      "type": "work",
+      "source": "transcript",
+      "at": 1308
+    },
+    {
+      "id": "ironman",
+      "label": "Ironman",
+      "type": "work",
+      "source": "transcript",
+      "at": 1628
+    },
+    {
+      "id": "ace-ventura-psi-detektyw",
+      "label": "Ace Ventura: Psi Detektyw",
+      "type": "work",
+      "source": "transcript",
+      "at": 1992
+    },
+    {
+      "id": "zagubiona-autostrada",
+      "label": "Zagubiona autostrada",
+      "type": "work",
+      "source": "transcript",
+      "at": 2291
+    },
+    {
+      "id": "dzikosc-serca",
+      "label": "Dzikość serca",
+      "type": "work",
+      "source": "transcript",
+      "at": 2688
+    },
+    {
+      "id": "dziewczyna-z-tatuazem",
+      "label": "Dziewczyna z tatuażem",
+      "type": "work",
+      "source": "transcript",
+      "at": 3056
+    },
+    {
+      "id": "aqua-teen-hunger-force-colon-movie-film-for-theaters",
+      "label": "Aqua Teen Hunger Force: Colon Movie Film for Theaters",
+      "type": "work",
+      "source": "transcript",
+      "at": 3324
+    },
+    {
+      "id": "steve",
+      "label": "Steve",
+      "type": "work",
+      "source": "transcript",
+      "at": 3472
+    },
+    {
+      "id": "piekielny-chlopak",
+      "label": "Piekielny chłopak",
+      "type": "work",
+      "source": "transcript",
+      "at": 3791
+    },
+    {
+      "id": "sztuka-samoobrony",
+      "label": "Sztuka samoobrony",
+      "type": "work",
+      "source": "transcript",
+      "at": 3995
+    },
+    {
+      "id": "gummo",
+      "label": "Gummo",
+      "type": "work",
+      "source": "transcript",
+      "at": 4192
+    },
+    {
+      "id": "funny-games",
+      "label": "Funny Games",
+      "type": "work",
+      "source": "transcript",
+      "at": 4577
+    },
+    {
+      "id": "jackass",
+      "label": "Jackass",
+      "type": "work",
+      "source": "transcript",
+      "at": 4683
+    },
+    {
+      "id": "pozostawieni",
+      "label": "Pozostawieni",
+      "type": "work",
+      "source": "transcript",
+      "at": 4696
+    },
+    {
+      "id": "swiat-wedlug-bundych",
+      "label": "Świat według Bundych",
+      "type": "work",
+      "source": "transcript",
+      "at": 5004
+    },
+    {
+      "id": "gomora",
+      "label": "Gomora",
+      "type": "work",
+      "source": "transcript",
+      "at": 5416
+    },
+    {
+      "id": "zerozerozero",
+      "label": "ZeroZeroZero",
+      "type": "work",
+      "source": "transcript",
+      "at": 5677
+    },
+    {
+      "id": "south-park",
+      "label": "South Park",
+      "type": "work",
+      "source": "transcript",
+      "at": 5864
+    },
+    {
+      "id": "dark",
+      "label": "Dark",
+      "type": "work",
+      "source": "transcript",
+      "at": 6170
+    },
+    {
+      "id": "true-detective",
+      "label": "True Detective",
+      "type": "work",
+      "source": "transcript",
+      "at": 6481
     }
   ],
   "tracks": [
