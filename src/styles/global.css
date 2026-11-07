@@ -1371,6 +1371,16 @@ a {
   padding-left: 26px;
 }
 
+.tracks__row--child .track-play {
+  width: 20px;
+  height: 20px;
+}
+
+.tracks__row--child .track-play__icon {
+  width: 7px;
+  height: 8px;
+}
+
 .tracks__row--child .tracks__thread {
   color: var(--muted);
   font-size: 13.5px;
