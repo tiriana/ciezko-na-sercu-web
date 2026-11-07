@@ -2000,8 +2000,7 @@ main {
 }
 
 .tag-list a + a::before {
-  content: '·';
-  margin: 0 6px;
+  content: '\00a0· ';
   color: var(--muted);
 }
 
