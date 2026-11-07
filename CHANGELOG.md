@@ -1,3 +1,9 @@
+## [1.0.6](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.5...v1.0.6) (2026-11-07)
+
+### Bug Fixes
+
+* zwijanie paska tagu obejmuje padding i margines, bez skoku na końcu ([62178cd](https://github.com/tiriana/ciezko-na-sercu-web/commit/62178cdd85273130b6783457f07793c0dbd40235))
+
 ## [1.0.5](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.4...v1.0.5) (2026-11-07)
 
 ### Bug Fixes
