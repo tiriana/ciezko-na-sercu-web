@@ -24,12 +24,13 @@ export const TAG_TYPE_LABELS: Record<Tag['type'], string> = {
   person: 'Osoby',
   work: 'Dzieła',
   event: 'Wydarzenia',
+  concert: 'Koncerty',
   place: 'Miejsca',
   theme: 'Tematy',
   editorial: 'Redakcyjne',
 };
 
-export const TAG_TYPE_ORDER: Tag['type'][] = ['artist', 'person', 'event', 'work', 'place', 'theme', 'editorial'];
+export const TAG_TYPE_ORDER: Tag['type'][] = ['artist', 'person', 'event', 'concert', 'work', 'place', 'theme', 'editorial'];
 
 interface EpisodeForTags {
   id: string;

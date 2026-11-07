@@ -244,6 +244,62 @@
       "type": "artist",
       "source": "tracks",
       "at": 2490
+    },
+    {
+      "id": "back-to-the-beginning",
+      "label": "Back to the Beginning",
+      "type": "work",
+      "source": "transcript",
+      "at": 363
+    },
+    {
+      "id": "born-human",
+      "label": "Born Human",
+      "type": "work",
+      "source": "transcript",
+      "at": 3285
+    },
+    {
+      "id": "with-full-force",
+      "label": "With Full Force",
+      "type": "event",
+      "source": "transcript",
+      "at": 4101
+    },
+    {
+      "id": "koncert-ostatni-koncert-paula-di-anno-w-krakowie",
+      "label": "Ostatni koncert Paula Di'Anno w Krakowie",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2272
+    },
+    {
+      "id": "koncert-trasa-koncertowa-children-of-bodom-z-okazji-30-lecia-zespolu",
+      "label": "Trasa koncertowa Children of Bodom z okazji 30-lecia zespołu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 4771
+    },
+    {
+      "id": "koncert-koncerty-reunionowe-pantery",
+      "label": "Koncerty reunionowe Pantery",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5036
+    },
+    {
+      "id": "koncert-pozegnalny-koncert-romana-kostrzewskiego-we-wroclawiu",
+      "label": "Pożegnalny koncert Romana Kostrzewskiego we Wrocławiu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 6134
+    },
+    {
+      "id": "planowany-film-z-pozegnalnego-koncertu-romana-kostrzewskiego",
+      "label": "Planowany film z pożegnalnego koncertu Romana Kostrzewskiego",
+      "type": "work",
+      "source": "transcript",
+      "at": 6146
     }
   ],
   "tracks": [
@@ -587,65 +643,6 @@
       "name": "Mariusz Owczarek",
       "time": 293,
       "quote": "w imieniu własnym oraz Mariusza Owczarka, który ją wydaje"
-    }
-  ],
-  "interviews": [],
-  "mentions": [
-    {
-      "type": "film",
-      "title": "Back to the Beginning",
-      "author": null,
-      "note": "zapis pożegnalnego koncertu Black Sabbath w Birmingham kilka dni przed śmiercią Ozzy'ego Osbourne'a, inspiracja do tematu odcinka",
-      "at": 363
-    },
-    {
-      "type": "book",
-      "title": "Born Human",
-      "author": null,
-      "note": "niedawno wydana w Polsce książka o życiu i muzyce Chucka Schuldinera",
-      "at": 3285
-    },
-    {
-      "type": "festival",
-      "title": "With Full Force",
-      "author": null,
-      "note": "niemiecki festiwal, gdzie prowadzący przeprowadzał wywiad z Tomasem Lindbergiem \"Tompą\"",
-      "at": 4101
-    },
-    {
-      "type": "concert",
-      "title": "Ostatni koncert Paula Di'Anno w Krakowie",
-      "author": null,
-      "note": "sierpień 2024, kilka miesięcy przed śmiercią wokalisty",
-      "at": 2272
-    },
-    {
-      "type": "concert",
-      "title": "Trasa koncertowa Children of Bodom z okazji 30-lecia zespołu",
-      "author": null,
-      "note": "Alexiego Laiho na gitarze i wokalu zastępuje Sami Elbanna z Lost Society",
-      "at": 4771
-    },
-    {
-      "type": "concert",
-      "title": "Koncerty reunionowe Pantery",
-      "author": null,
-      "note": "z Philem Anselmo, bez możliwości odtworzenia stylu gry zmarłego Dimebaga Darrella",
-      "at": 5036
-    },
-    {
-      "type": "concert",
-      "title": "Pożegnalny koncert Romana Kostrzewskiego we Wrocławiu",
-      "author": null,
-      "note": null,
-      "at": 6134
-    },
-    {
-      "type": "film",
-      "title": "Planowany film z pożegnalnego koncertu Romana Kostrzewskiego",
-      "author": null,
-      "note": "zapowiadany, niepotwierdzony termin premiery",
-      "at": 6146
     }
   ]
 }

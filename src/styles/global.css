@@ -860,35 +860,6 @@ a {
   font-variant-numeric: tabular-nums;
 }
 
-.context-list {
-  display: grid;
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.context-list + .context-list {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-}
-
-.context-list__type {
-  display: block;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.context-list__note {
-  display: block;
-  color: var(--muted);
-}
-
 .note {
   padding: 16px;
   border-left: 3px solid var(--accent);

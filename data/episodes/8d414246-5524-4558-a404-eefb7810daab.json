@@ -176,6 +176,41 @@
       "type": "person",
       "source": "credits",
       "at": 4552
+    },
+    {
+      "id": "koncert-koncert-10-estonskich-zespolow-w-klubie-taper-tallin-3-pazdziernika",
+      "label": "Koncert 10 estońskich zespołów w klubie Taper (Tallin, 3 października)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1671
+    },
+    {
+      "id": "eurowizja-konkurs-piosenki-eurowizji",
+      "label": "Eurowizja (Konkurs Piosenki Eurowizji)",
+      "type": "event",
+      "source": "transcript",
+      "at": 3706
+    },
+    {
+      "id": "road-to-mystic",
+      "label": "Road to Mystic",
+      "type": "event",
+      "source": "transcript",
+      "at": 3968
+    },
+    {
+      "id": "castle-party",
+      "label": "Castle Party",
+      "type": "event",
+      "source": "transcript",
+      "at": 2514
+    },
+    {
+      "id": "sonety",
+      "label": "Sonety",
+      "type": "work",
+      "source": "transcript",
+      "at": 4552
     }
   ],
   "tracks": [
@@ -492,55 +527,6 @@
       "name": "Pantokrator (zespół)",
       "time": 4552,
       "quote": ""
-    }
-  ],
-  "interviews": [
-    {
-      "with": "Tarapita",
-      "topic": "nowa płyta \"Oise Te Vaga Uhex\"",
-      "at": 4541
-    },
-    {
-      "with": "Pantokrator",
-      "topic": "wrześniowa płyta z interpretacjami sonetów Szekspira",
-      "at": 4552
-    }
-  ],
-  "mentions": [
-    {
-      "type": "concert",
-      "title": "Koncert 10 estońskich zespołów w klubie Taper (Tallin, 3 października)",
-      "author": null,
-      "note": "Wydarzenie zorganizowane przez stowarzyszenie Heavy Music Estonia, wokół którego zbudowany jest odcinek.",
-      "at": 1671
-    },
-    {
-      "type": "festival",
-      "title": "Eurowizja (Konkurs Piosenki Eurowizji)",
-      "author": null,
-      "note": "Laura Pritz kilkukrotnie próbowała reprezentować Estonię w konkursie.",
-      "at": 3706
-    },
-    {
-      "type": "festival",
-      "title": "Road to Mystic",
-      "author": null,
-      "note": "Artifer startował w estońskim finale wiosną, był blisko zwycięstwa.",
-      "at": 3968
-    },
-    {
-      "type": "festival",
-      "title": "Castle Party",
-      "author": null,
-      "note": "Freak Angel gościł na tym festiwalu.",
-      "at": 2514
-    },
-    {
-      "type": "book",
-      "title": "Sonety",
-      "author": "William Szekspir",
-      "note": "Pantokrator wydał we wrześniu płytę z własnymi interpretacjami tych sonetów.",
-      "at": 4552
     }
   ]
 }

@@ -24,7 +24,7 @@ export const catalogSchema = z.object({
   ),
 });
 
-export const TAG_TYPES = ['artist', 'person', 'work', 'event', 'place', 'theme', 'editorial'] as const;
+export const TAG_TYPES = ['artist', 'person', 'work', 'event', 'concert', 'place', 'theme', 'editorial'] as const;
 export const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile'] as const;
 
 export const tagSchema = z.object({
@@ -36,9 +36,6 @@ export const tagSchema = z.object({
 });
 
 export type Tag = z.infer<typeof tagSchema>;
-
-// Albumy i utwory są już w trackliście, więc przywołania opisują tylko to, co padło w rozmowie.
-export const MENTION_TYPES = ['book', 'film', 'concert', 'festival'] as const;
 
 export const episodeSchema = z.object({
   version: z.literal(1),
@@ -69,20 +66,6 @@ export const episodeSchema = z.object({
   quotes: z.array(z.object({ start: z.number(), text: z.string() })),
   credits: z
     .array(z.object({ role: z.string(), name: z.string(), time: z.number(), quote: z.string() }))
-    .default([]),
-  interviews: z
-    .array(z.object({ with: z.string().min(1), topic: z.string().nullable(), at: z.number().nullable() }))
-    .default([]),
-  mentions: z
-    .array(
-      z.object({
-        type: z.enum(MENTION_TYPES),
-        title: z.string().min(1),
-        author: z.string().nullable(),
-        note: z.string().nullable(),
-        at: z.number().nullable(),
-      })
-    )
     .default([]),
 });
 

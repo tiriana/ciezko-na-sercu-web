@@ -1,5 +1,5 @@
 // Musi odpowiadać TAG_TYPES/TAG_SOURCES w src/lib/schema.ts.
-const TAG_TYPES = ['artist', 'person', 'work', 'event', 'place', 'theme', 'editorial'];
+const TAG_TYPES = ['artist', 'person', 'work', 'event', 'concert', 'place', 'theme', 'editorial'];
 const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile'];
 
 import { readdir, readFile } from 'node:fs/promises';

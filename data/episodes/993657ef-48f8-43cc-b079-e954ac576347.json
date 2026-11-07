@@ -207,6 +207,20 @@
       "type": "artist",
       "source": "tracks",
       "at": 1639
+    },
+    {
+      "id": "koncert-trasa-graveyard-z-blues-pills",
+      "label": "Trasa Graveyard z Blues Pills",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2129
+    },
+    {
+      "id": "koncert-trasa-insomnium-z-amorphis",
+      "label": "Trasa Insomnium z Amorphis",
+      "type": "concert",
+      "source": "transcript",
+      "at": 3682
     }
   ],
   "tracks": [
@@ -555,23 +569,6 @@
       "name": "Mariusz Owczarek",
       "time": 250,
       "quote": "i Mariusz Owczarek, który audycję wydaje"
-    }
-  ],
-  "interviews": [],
-  "mentions": [
-    {
-      "type": "concert",
-      "title": "Trasa Graveyard z Blues Pills",
-      "author": null,
-      "note": "Koncert 17 marca w klubie Stodoła w Warszawie",
-      "at": 2129
-    },
-    {
-      "type": "concert",
-      "title": "Trasa Insomnium z Amorphis",
-      "author": null,
-      "note": "Koncert w styczniu w warszawskiej Progresji",
-      "at": 3682
     }
   ]
 }

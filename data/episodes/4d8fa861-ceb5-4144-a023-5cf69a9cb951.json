@@ -209,6 +209,55 @@
       "type": "person",
       "source": "credits",
       "at": 3579
+    },
+    {
+      "id": "roadburn",
+      "label": "Roadburn",
+      "type": "event",
+      "source": "transcript",
+      "at": 417
+    },
+    {
+      "id": "koncert-neurosis",
+      "label": "Neurosis",
+      "type": "concert",
+      "source": "transcript",
+      "at": 943
+    },
+    {
+      "id": "koncert-pentagram",
+      "label": "Pentagram",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5078
+    },
+    {
+      "id": "koncert-coroner",
+      "label": "Coroner",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5078
+    },
+    {
+      "id": "koncert-wojwoda",
+      "label": "Wojwoda",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5078
+    },
+    {
+      "id": "koncert-doom-na-roadburn-2012",
+      "label": "Doom na Roadburn 2012",
+      "type": "concert",
+      "source": "transcript",
+      "at": 5215
+    },
+    {
+      "id": "iron-man",
+      "label": "Iron Man",
+      "type": "work",
+      "source": "transcript",
+      "at": 2424
     }
   ],
   "tracks": [
@@ -486,74 +535,6 @@
       "name": "Walter",
       "time": 3579,
       "quote": ""
-    }
-  ],
-  "interviews": [
-    {
-      "with": "Martin Kanja (Lord Spikeheart)",
-      "topic": "debiutancka solowa płyta The Adept, wytwórnia Hekalu Records, hołd dla prababci Mutoni wa Kirimy",
-      "at": 1248
-    },
-    {
-      "with": "Janis Ironfawn (Body Void)",
-      "topic": "nowa płyta Atrocity Machine, kapitalizm i cielesność, tożsamość queer/trans w scenie metalowej",
-      "at": 2262
-    },
-    {
-      "with": "Walter (Roadburn)",
-      "topic": "tegoroczna edycja festiwalu, ewolucja Roadburn od metalu ku szerzej pojętej ciężkiej muzyce",
-      "at": 3579
-    }
-  ],
-  "mentions": [
-    {
-      "type": "festival",
-      "title": "Roadburn",
-      "author": null,
-      "note": "Holenderski festiwal w Tilburgu, w 2024 roku odbył się w trzeci weekend kwietnia; cały odcinek jest mu poświęcony",
-      "at": 417
-    },
-    {
-      "type": "concert",
-      "title": "Neurosis",
-      "author": null,
-      "note": "Host wspomina, że widział trzy różne koncerty tego zespołu na jednej edycji Roadburn jako przykład tradycji kilkukrotnych występów",
-      "at": 943
-    },
-    {
-      "type": "concert",
-      "title": "Pentagram",
-      "author": null,
-      "note": "Zespół widziany przez host'a na wcześniejszych edycjach Roadburn, zanim festiwal stał się popularny",
-      "at": 5078
-    },
-    {
-      "type": "concert",
-      "title": "Coroner",
-      "author": null,
-      "note": "Zespół widziany przez host'a na wcześniejszych edycjach Roadburn, zanim festiwal stał się popularny",
-      "at": 5078
-    },
-    {
-      "type": "concert",
-      "title": "Wojwoda",
-      "author": null,
-      "note": "Zapis fonetyczny z transkryptu; zespół widziany przez host'a na wcześniejszych edycjach Roadburn",
-      "at": 5078
-    },
-    {
-      "type": "concert",
-      "title": "Doom na Roadburn 2012",
-      "author": null,
-      "note": "Koncert w sali Patronaat (zdesakralizowany kościół), która od tamtej pory nie jest już miejscem koncertowym festiwalu, bo budynek sprzedano na salon meblarski",
-      "at": 5215
-    },
-    {
-      "type": "film",
-      "title": "Iron Man",
-      "author": null,
-      "note": "Janis Ironfawn porównuje tematykę płyty Atrocity Machine do utraty człowieczeństwa przez bohatera tego filmu",
-      "at": 2424
     }
   ]
 }

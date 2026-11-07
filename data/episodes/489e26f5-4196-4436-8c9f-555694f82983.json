@@ -94,6 +94,13 @@
       "type": "artist",
       "source": "tracks",
       "at": 257
+    },
+    {
+      "id": "koncert-koncert-venom-w-hammersmith-odeon-1984",
+      "label": "Koncert Venom w Hammersmith Odeon (1984)",
+      "type": "concert",
+      "source": "transcript",
+      "at": 1415
     }
   ],
   "tracks": [
@@ -342,16 +349,6 @@
       "name": "Mariusz Owczarek",
       "time": 163,
       "quote": "Mariusz Owczarek, jej wydawca"
-    }
-  ],
-  "interviews": [],
-  "mentions": [
-    {
-      "type": "concert",
-      "title": "Koncert Venom w Hammersmith Odeon (1984)",
-      "author": null,
-      "note": "Nagranie z koncertu krążyło w Polsce na pirackich kasetach VHS.",
-      "at": 1415
     }
   ]
 }

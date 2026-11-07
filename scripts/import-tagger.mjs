@@ -56,6 +56,27 @@ const tagId = (label) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 
+// Przywołania z rozmowy idą do tagów: festiwal to wydarzenie, koncert ma własną grupę,
+// książka i film to dzieła. Koncerty bierzemy po zespole, bo tytuł bywa zdaniem.
+const MENTION_KINDS = {
+  festival: { type: 'event', label: (m) => m.title },
+  concert: { type: 'concert', label: (m) => m.author || m.title, prefix: 'koncert-' },
+  book: { type: 'work', label: (m) => m.title },
+  film: { type: 'work', label: (m) => m.title },
+};
+
+const mentionTag = (mention) => {
+  const kind = MENTION_KINDS[mention.type];
+  const label = kind.label(mention);
+  return {
+    id: `${kind.prefix ?? ''}${tagId(label)}`,
+    label,
+    type: kind.type,
+    source: 'transcript',
+    at: mention.at == null ? undefined : Math.round(mention.at),
+  };
+};
+
 // Pogłębione opracowanie z taggera (scripts/opencode-insights.sh): lepsze streszczenie
 // oraz fakty spoza tracklisty. Goście dołączają do creditsów, bo to ta sama rola na stronie.
 async function readInsights(sourceId) {
@@ -109,6 +130,7 @@ const toContract = (episode, analyzedAt, id, insights) => {
         source: 'credits',
         at: guest.at == null ? undefined : Math.round(guest.at),
       })),
+      ...(insights?.mentions ?? []).filter((mention) => MENTION_KINDS[mention.type]).map(mentionTag),
     ].filter((tag, index, all) => all.findIndex((other) => other.id === tag.id) === index),
     tracks: (episode.tracks ?? []).map((track) => ({
       start: Math.round(track.start),
@@ -131,18 +153,6 @@ const toContract = (episode, analyzedAt, id, insights) => {
       })),
       ...guestCredits,
     ],
-    interviews: (insights?.interviews ?? []).map((interview) => ({
-      with: interview.with,
-      topic: interview.topic ?? null,
-      at: interview.at == null ? null : Math.round(interview.at),
-    })),
-    mentions: (insights?.mentions ?? []).map((mention) => ({
-      type: mention.type,
-      title: mention.title,
-      author: mention.author ?? null,
-      note: mention.note ?? null,
-      at: mention.at == null ? null : Math.round(mention.at),
-    })),
   };
 };
 

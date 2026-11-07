@@ -220,6 +220,27 @@
       "type": "artist",
       "source": "tracks",
       "at": 11
+    },
+    {
+      "id": "maska-czerwonego-moru",
+      "label": "Maska Czerwonego Moru",
+      "type": "work",
+      "source": "transcript",
+      "at": 358
+    },
+    {
+      "id": "tworczosc-artura-rimbauda-i-szekspira",
+      "label": "twórczość Artura Rimbauda i Szekspira",
+      "type": "work",
+      "source": "transcript",
+      "at": 3926
+    },
+    {
+      "id": "solaris",
+      "label": "Solaris",
+      "type": "work",
+      "source": "transcript",
+      "at": 6324
     }
   ],
   "tracks": [
@@ -536,30 +557,6 @@
       "name": "Mariusz Owczarek",
       "time": 0,
       "quote": ""
-    }
-  ],
-  "interviews": [],
-  "mentions": [
-    {
-      "type": "book",
-      "title": "Maska Czerwonego Moru",
-      "author": "Edgar Allan Poe",
-      "note": "opowiadanie, które zainspirowało album Uncle Acid and the Dead Beats 'Shapes of Midnight'",
-      "at": 358
-    },
-    {
-      "type": "book",
-      "title": "twórczość Artura Rimbauda i Szekspira",
-      "author": "Arthur Rimbaud, William Szekspir",
-      "note": "wymienieni jako inspiracja trylogii Green Carnation 'A Dark Poem'",
-      "at": 3926
-    },
-    {
-      "type": "film",
-      "title": "Solaris",
-      "author": "Andriej Tarkowski",
-      "note": "pierwowzór koncepcyjny płyty The Ocean 'Solaris', pośrednio związany z powieścią Stanisława Lema",
-      "at": 6324
     }
   ]
 }

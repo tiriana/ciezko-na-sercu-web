@@ -116,6 +116,27 @@
       "type": "person",
       "source": "credits",
       "at": 930
+    },
+    {
+      "id": "mystic-festival",
+      "label": "Mystic Festival",
+      "type": "event",
+      "source": "transcript",
+      "at": 222
+    },
+    {
+      "id": "koncert-new-roses",
+      "label": "New Roses",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2716
+    },
+    {
+      "id": "koncert-oranssi-pazuzu",
+      "label": "Oranssi Pazuzu",
+      "type": "concert",
+      "source": "transcript",
+      "at": 2885
     }
   ],
   "tracks": [
@@ -218,56 +239,6 @@
       "name": "Łukasz Dunaj",
       "time": 930,
       "quote": ""
-    }
-  ],
-  "interviews": [
-    {
-      "with": "Łukasz Dunaj",
-      "topic": "kryzys prasy metalowej i zawieszenie wydawania Noise Magazine od września 2024 roku",
-      "at": 930
-    },
-    {
-      "with": "Łukasz Dunaj",
-      "topic": "sens uprawiania dziennikarstwa muzycznego i wspólna przeszłość w redakcji Thrash'em All",
-      "at": 2440
-    },
-    {
-      "with": "Łukasz Dunaj",
-      "topic": "predyspozycje charakterologiczne dziennikarzy muzycznych oraz zasady oceniania i recenzowania zespołów",
-      "at": 4024
-    },
-    {
-      "with": "Łukasz Dunaj",
-      "topic": "podcast „Czarne Owce” i stereotypy dotyczące fanów metalu",
-      "at": 5913
-    },
-    {
-      "with": "Łukasz Dunaj",
-      "topic": "kolekcjonowanie płyt winylowych i wydań specjalnych",
-      "at": 6293
-    }
-  ],
-  "mentions": [
-    {
-      "type": "festival",
-      "title": "Mystic Festival",
-      "author": null,
-      "note": "festiwal w Gdańsku, w trakcie którego nagrano odcinek",
-      "at": 222
-    },
-    {
-      "type": "concert",
-      "title": "koncert New Roses w klubie B90 w Gdańsku",
-      "author": "New Roses",
-      "note": "słabo sprzedany koncert mimo wieloletniej promocji zespołu przez obu dziennikarzy",
-      "at": 2716
-    },
-    {
-      "type": "concert",
-      "title": "koncert Oranssi Pazuzu na Mystic Festival (Shrine Stage, klub B90)",
-      "author": "Oranssi Pazuzu",
-      "note": "pierwszy zaobserwowany przez Dunaja „młyn” pod sceną tego zespołu",
-      "at": 2885
     }
   ]
 }

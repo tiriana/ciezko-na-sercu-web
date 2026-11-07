@@ -10,7 +10,6 @@ import {
   formatDate,
   formatDateTime,
   resolveDisplayTitle,
-  formatMentionType,
   formatRole,
   formatWeekday,
   pluralEntries,
@@ -445,34 +444,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                   </div>
                 ))}
               </dl>
-            </section>
-          )}
-
-          {(episode.interviews.length > 0 || episode.mentions.length > 0) && (
-            <section class="card" aria-labelledby="context-title">
-              <h2 id="context-title">Rozmowy i przywołania</h2>
-              {episode.interviews.length > 0 && (
-                <ul class="context-list">
-                  {episode.interviews.map((interview) => (
-                    <li>
-                      <strong><PersonName name={interview.with} /></strong>
-                      {interview.topic && <span> — {interview.topic}</span>}
-                    </li>
-                  ))}
-                </ul>
-              )}
-              {episode.mentions.length > 0 && (
-                <ul class="context-list">
-                  {episode.mentions.map((mention) => (
-                    <li>
-                      <span class="context-list__type">{formatMentionType(mention.type)}</span>
-                      <strong>{mention.title}</strong>
-                      {mention.author && <span> — {mention.author}</span>}
-                      {mention.note && <span class="context-list__note">{mention.note}</span>}
-                    </li>
-                  ))}
-                </ul>
-              )}
             </section>
           )}
 
