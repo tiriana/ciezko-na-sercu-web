@@ -106,15 +106,82 @@
       .restore button { margin-left: 6px; }
       .hint-line { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
       .hidden-row td { color: var(--muted); text-decoration: line-through; }
+      .tabs { display: flex; gap: 4px; }
+      .tabs a {
+        padding: 5px 10px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 13px;
+      }
+      .tabs a:hover { color: var(--text); }
+      .tabs a[aria-current="page"] { border-color: var(--line); background: #fff; color: var(--accent); }
+      .tags-main { max-width: 900px; }
+      .tags-main h2 { font-size: 14px; margin: 22px 0 4px; }
+      .tags-main h2:first-child { margin-top: 0; }
+      .alias-table input { width: 100%; }
+      .alias-table td:first-child { width: 38%; }
+      .candidates { margin: 8px 0 0; padding-left: 18px; font-size: 13px; }
+      .candidates li { margin-bottom: 4px; }
+      .candidates button { margin-left: 6px; }
+      .tag-index { margin: 8px 0 0; padding: 0; list-style: none; font-size: 13px; }
+      .tag-index li { padding: 3px 0; border-bottom: 1px solid #f0ece6; }
+      .tag-index .type-select { margin-right: 6px; font-size: 11px; padding: 1px 2px; }
+      .tag-index .count { color: var(--muted); }
+      .tag-index .alias-of { color: var(--accent); font-size: 12px; }
     </style>
   </head>
   <body>
     <header>
-      <h1>Edytor osi czasu</h1>
-      <span class="hint">klik w czas = przewiń, „weź czas” = wpisz pozycję z playera</span>
+      <h1>Edytor</h1>
+      <nav class="tabs" aria-label="Sekcje">
+        <a href="#/odcinki" data-tab="odcinki">Odcinki</a>
+        <a href="#/tagi" data-tab="tagi">Tagi</a>
+      </nav>
+      <span class="hint" id="tab-hint">klik w czas = przewiń, „weź czas” = wpisz pozycję z playera</span>
     </header>
 
-    <div class="layout">
+    <div class="view" id="view-tagi" hidden>
+      <main class="main tags-main">
+        <h2>Warianty tej samej nazwy</h2>
+        <p class="hint-line">
+          Wariant po lewej pokazuje się na stronie jako etykieta po prawej. Zmiana działa po
+          <code>npm run build</code>.
+        </p>
+
+        <table class="alias-table">
+          <thead>
+            <tr><th>Wariant</th><th>Etykieta kanoniczna</th><th></th></tr>
+          </thead>
+          <tbody id="alias-rows"></tbody>
+        </table>
+
+        <p class="hint-line">
+          <input id="alias-from" type="text" list="tag-labels" placeholder="wariant, np. Vogg" />
+          <input id="alias-to" type="text" list="tag-labels" placeholder="kanoniczna, np. Wacław &quot;Vogg&quot; Kiełtyka" />
+          <button type="button" id="alias-add">Dodaj</button>
+        </p>
+        <datalist id="tag-labels"></datalist>
+
+        <h2>Kandydaci</h2>
+        <p class="hint-line">Osoby, których krótsza etykieta jest całym słowem w dłuższej. Sprawdź, czy to naprawdę ta sama osoba.</p>
+        <ul class="candidates" id="alias-candidates"></ul>
+        <p class="hint-line" id="dismissed-box"></p>
+
+        <div class="toolbar">
+          <button class="primary" id="alias-save" type="button">Zapisz aliases.json</button>
+          <span class="status" id="alias-status"></span>
+        </div>
+
+        <h2>Etykiety w danych</h2>
+        <input id="tag-search" type="search" placeholder="Filtruj etykiety…" />
+        <p class="hint-line" id="tag-count"></p>
+        <ul class="tag-index" id="tag-index"></ul>
+      </main>
+    </div>
+
+    <div class="layout" id="view-odcinki">
       <aside class="sidebar">
         <input id="filter" type="search" placeholder="Filtruj odcinki…" />
         <ul class="list" id="list"></ul>
@@ -560,6 +627,209 @@
       };
 
       load();
+
+      // --- Zakładka „Tagi”: warianty nazw (data/aliases.json) ---
+
+      const tagState = { aliases: {}, types: {}, dismissed: [], tags: [], candidates: [], draft: [] };
+
+      const aliasRows = () => {
+        const body = $('alias-rows');
+        body.textContent = '';
+        if (tagState.draft.length === 0) {
+          const tr = document.createElement('tr');
+          const td = document.createElement('td');
+          td.colSpan = 3;
+          td.className = 'empty';
+          td.textContent = 'Brak wariantów — każda etykieta jest osobnym tagiem.';
+          tr.append(td);
+          body.append(tr);
+          return;
+        }
+        tagState.draft.forEach((entry, index) => {
+          const tr = document.createElement('tr');
+
+          const from = document.createElement('td');
+          const fromInput = document.createElement('input');
+          fromInput.type = 'text';
+          fromInput.value = entry.from;
+          fromInput.setAttribute('list', 'tag-labels');
+          fromInput.addEventListener('input', () => (entry.from = fromInput.value));
+          from.append(fromInput);
+
+          const to = document.createElement('td');
+          const toInput = document.createElement('input');
+          toInput.type = 'text';
+          toInput.value = entry.to;
+          toInput.setAttribute('list', 'tag-labels');
+          toInput.addEventListener('input', () => (entry.to = toInput.value));
+          to.append(toInput);
+
+          const actions = document.createElement('td');
+          actions.append(
+            rowButton('usuń', () => {
+              tagState.draft.splice(index, 1);
+              aliasRows();
+            })
+          );
+
+          tr.append(from, to, actions);
+          body.append(tr);
+        });
+      };
+
+      const renderCandidates = () => {
+        const list = $('alias-candidates');
+        list.textContent = '';
+        if (tagState.candidates.length === 0) {
+          const li = document.createElement('li');
+          li.className = 'empty';
+          li.textContent = 'Brak kandydatów.';
+          list.append(li);
+          return;
+        }
+        for (const candidate of tagState.candidates) {
+          const li = document.createElement('li');
+          li.append(`„${candidate.from}” ⊂ „${candidate.to}”`);
+          li.append(
+            rowButton('scal', () => {
+              tagState.draft.push({ from: candidate.from, to: candidate.to });
+              aliasRows();
+            })
+          );
+          li.append(
+            rowButton('usuń', () => {
+              tagState.dismissed.push({ from: candidate.from, to: candidate.to });
+              tagState.candidates = tagState.candidates.filter((item) => item !== candidate);
+              renderCandidates();
+            })
+          );
+          list.append(li);
+        }
+
+        const box = $('dismissed-box');
+        box.textContent = '';
+        if (tagState.dismissed.length === 0) return;
+        box.append('Odrzucone: ');
+        tagState.dismissed.forEach((pair, index) => {
+          const span = document.createElement('span');
+          span.append(`„${pair.from}” ⊂ „${pair.to}” `);
+          span.append(
+            rowButton('przywróć', () => {
+              tagState.dismissed.splice(index, 1);
+              loadTags();
+            })
+          );
+          span.append(' ');
+          box.append(span);
+        });
+      };
+
+      const renderTagIndex = () => {
+        const needle = $('tag-search').value.trim().toLowerCase();
+        const list = $('tag-index');
+        list.textContent = '';
+        const matches = tagState.tags.filter((tag) => tag.label.toLowerCase().includes(needle));
+        $('tag-count').textContent = `${matches.length} z ${tagState.tags.length} etykiet`;
+        for (const tag of matches.slice(0, 300)) {
+          const li = document.createElement('li');
+          const type = document.createElement('select');
+          type.className = 'type-select';
+          for (const option of ['artist', 'person', 'work', 'event', 'concert', 'place', 'theme', 'editorial']) {
+            const item = document.createElement('option');
+            item.value = option;
+            item.textContent = option;
+            item.selected = option === tag.type;
+            type.append(item);
+          }
+          type.addEventListener('change', () => {
+            if (type.value === tag.originalType) delete tagState.types[tag.label];
+            else tagState.types[tag.label] = type.value;
+            tag.type = type.value;
+          });
+          const count = document.createElement('span');
+          count.className = 'count';
+          count.textContent = `${tag.count} odc.`;
+          li.append(type, tag.label, ' ', count);
+          if (tag.canonical !== tag.label) {
+            const alias = document.createElement('span');
+            alias.className = 'alias-of';
+            alias.textContent = ` → ${tag.canonical}`;
+            li.append(alias);
+          }
+          list.append(li);
+        }
+      };
+
+      const loadTags = async () => {
+        const response = await fetch('/api/tags');
+        const data = await response.json();
+        tagState.aliases = data.aliases ?? {};
+        tagState.types = data.types ?? {};
+        tagState.dismissed = data.dismissed ?? [];
+        tagState.tags = data.tags ?? [];
+        tagState.candidates = data.candidates ?? [];
+        tagState.draft = Object.entries(tagState.aliases).map(([from, to]) => ({ from, to }));
+        const datalist = $('tag-labels');
+        datalist.textContent = '';
+        for (const tag of tagState.tags.slice(0, 2000)) {
+          const option = document.createElement('option');
+          option.value = tag.label;
+          datalist.append(option);
+        }
+        aliasRows();
+        renderCandidates();
+        renderTagIndex();
+      };
+
+      $('alias-add').addEventListener('click', () => {
+        const from = $('alias-from').value.trim();
+        const to = $('alias-to').value.trim();
+        if (!from || !to) return;
+        tagState.draft.push({ from, to });
+        $('alias-from').value = '';
+        $('alias-to').value = '';
+        aliasRows();
+      });
+
+      $('tag-search').addEventListener('input', renderTagIndex);
+
+      $('alias-save').addEventListener('click', async () => {
+        const aliases = {};
+        for (const entry of tagState.draft) {
+          if (entry.from.trim() && entry.to.trim() && entry.from.trim() !== entry.to.trim()) {
+            aliases[entry.from.trim()] = entry.to.trim();
+          }
+        }
+        const response = await fetch('/api/aliases', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ aliases, types: tagState.types, dismissed: tagState.dismissed }),
+        });
+        const data = await response.json();
+        $('alias-status').textContent = response.ok ? 'zapisane — zbuduj stronę (npm run build)' : (data.error ?? 'błąd');
+        if (response.ok) await loadTags();
+      });
+
+      const showTab = (tab) => {
+        const tags = tab === 'tagi';
+        $('view-tagi').hidden = !tags;
+        $('view-odcinki').hidden = tags;
+        $('tab-hint').textContent = tags
+          ? 'wariant po lewej pokazuje się na stronie jako etykieta po prawej'
+          : 'klik w czas = przewiń, „weź czas” = wpisz pozycję z playera';
+        for (const link of document.querySelectorAll('[data-tab]')) {
+          link.setAttribute('aria-current', String(link.dataset.tab === tab));
+        }
+      };
+
+      const route = () => {
+        const tab = location.hash === '#/tagi' ? 'tagi' : 'odcinki';
+        showTab(tab);
+        if (tab === 'tagi') loadTags();
+      };
+
+      window.addEventListener('hashchange', route);
+      route();
     </script>
   </body>
 </html>

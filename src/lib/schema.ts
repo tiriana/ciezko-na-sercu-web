@@ -42,9 +42,14 @@ export type Tag = z.infer<typeof tagSchema>;
 export const aliasesSchema = z.object({
   version: z.literal(1),
   aliases: z.record(z.string(), z.string().min(1)),
+  // Etykieta bywa trafnie nazwana, ale źle opisanym typem (zespół jako osoba).
+  types: z.record(z.string(), z.enum(TAG_TYPES)).default({}),
+  // Pary „kandydat na scalenie”, które redakcja odrzuciła — żeby nie wracały przy każdym uruchomieniu.
+  dismissed: z.array(z.object({ from: z.string().min(1), to: z.string().min(1) })).default([]),
 });
 
 export type Aliases = z.infer<typeof aliasesSchema>['aliases'];
+export type TagTypes = z.infer<typeof aliasesSchema>['types'];
 
 export const episodeSchema = z.object({
   version: z.literal(1),

@@ -45,7 +45,7 @@ const distance = (left, right) => {
 
 const catalog = catalogSchema.parse(JSON.parse(await readFile(join(DATA, 'catalog.json'), 'utf8')));
 const titles = titlesSchema.parse(JSON.parse(await readFile(join(DATA, 'titles.json'), 'utf8')));
-const { aliases } = aliasesSchema.parse(JSON.parse(await readFile(join(DATA, 'aliases.json'), 'utf8')));
+const { aliases, types: tagTypes, dismissed } = aliasesSchema.parse(JSON.parse(await readFile(join(DATA, 'aliases.json'), 'utf8')));
 
 const resolveAlias = (label) => {
   let current = label;
@@ -200,18 +200,29 @@ const words = (value) =>
     .trim();
 
 const personLabels = [...knownLabels].filter((label) => TAG_TYPE_OF.get(label) === 'person' && resolveAlias(label) === label);
+const isDismissed = (from, to) => dismissed.some((pair) => pair.from === from && pair.to === to);
 const aliasCandidates = [];
 for (const shorter of personLabels) {
   for (const longer of personLabels) {
     if (longer.length <= shorter.length + 3) continue;
     if (!` ${words(longer)} `.includes(` ${words(shorter)} `)) continue;
+    if (isDismissed(shorter, longer)) continue;
     aliasCandidates.push(`„${shorter}” ⊂ „${longer}”`);
   }
 }
 
+const unknownTargets = [];
 for (const [alias, target] of Object.entries(aliases)) {
   if (alias === target) problems.push(`alias ${alias} wskazuje sam na siebie`);
-  if (!knownLabels.has(target)) problems.push(`alias ${alias} wskazuje na nieistniejącą etykietę: ${target}`);
+  if (!knownLabels.has(target)) unknownTargets.push(`${alias} -> ${target}`);
+}
+for (const label of Object.keys(tagTypes)) {
+  if (!knownLabels.has(label)) problems.push(`types: nie ma etykiety ${label}`);
+}
+
+if (unknownTargets.length > 0) {
+  console.log(`${unknownTargets.length} aliasów tworzy nową etykietę (zamierzona zmiana nazwy, nie literówka?):`);
+  for (const item of unknownTargets) console.log(`  - ${item}`);
 }
 
 if (problems.length > 0) {

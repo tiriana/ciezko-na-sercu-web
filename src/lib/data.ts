@@ -12,6 +12,7 @@ import {
   peopleSchema,
   titlesSchema,
   type Aliases,
+  type TagTypes,
   type Catalog,
   type CatalogEpisode,
   type Episode,
@@ -120,9 +121,10 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
     }
   }
   const aliases = await getAliases();
-  if (Object.keys(aliases).length > 0) {
+  const types = await getTagTypes();
+  if (Object.keys(aliases).length > 0 || Object.keys(types).length > 0) {
     for (const episode of episodes) {
-      episode.tags = mergeAliases(episode.tags, aliases);
+      episode.tags = mergeAliases(episode.tags, aliases, types);
       episode.credits = episode.credits.map((credit) => ({ ...credit, name: resolveAlias(credit.name, aliases) }));
     }
   }
@@ -131,14 +133,15 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
 
 // Po podstawieniu kanonicznej etykiety dwa tagi mogą się zlać w jeden: zostaje pierwszy,
 // a czas wejścia z drugiego wypełnia lukę, jeśli pierwszy go nie miał.
-function mergeAliases(tags: Episode['tags'], aliases: Aliases): Episode['tags'] {
+function mergeAliases(tags: Episode['tags'], aliases: Aliases, types: TagTypes): Episode['tags'] {
   const merged = new Map<string, Episode['tags'][number]>();
   for (const tag of tags) {
     const label = resolveAlias(tag.label, aliases);
     const id = label === tag.label ? tag.id : tagId(label);
+    const type = types[label] ?? tag.type;
     const current = merged.get(id);
     if (!current) {
-      merged.set(id, { ...tag, id, label });
+      merged.set(id, { ...tag, id, label, type });
       continue;
     }
     if (current.at === undefined && tag.at !== undefined) current.at = tag.at;
@@ -160,6 +163,17 @@ async function getOverrides(): Promise<Map<string, z.infer<typeof overrideSchema
 }
 
 let aliasesCache: Aliases | undefined;
+let tagTypesCache: TagTypes | undefined;
+
+export async function getTagTypes(): Promise<TagTypes> {
+  if (tagTypesCache) return tagTypesCache;
+  try {
+    tagTypesCache = (await load(join(DATA_DIR, 'aliases.json'), aliasesSchema)).types;
+  } catch {
+    tagTypesCache = {};
+  }
+  return tagTypesCache;
+}
 
 export async function getAliases(): Promise<Aliases> {
   if (aliasesCache) return aliasesCache;
