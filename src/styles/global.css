@@ -1185,6 +1185,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 12px 20px;
+  margin-bottom: 12px;
 }
 
 .programme__head .card__sub {
