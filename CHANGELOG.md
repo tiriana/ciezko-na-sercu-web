@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.6...v1.0.7) (2026-11-07)
+
+### Bug Fixes
+
+* deploy nosi nazwę wersji, którą publikuje ([cc762c3](https://github.com/tiriana/ciezko-na-sercu-web/commit/cc762c3e8a4a098c053e325e278c5737b9231756))
+
 ## [1.0.6](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.5...v1.0.6) (2026-11-07)
 
 ### Bug Fixes
