@@ -2,6 +2,7 @@ import { copyFile, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/pro
 import { join, resolve } from 'node:path';
 
 const [workDir, outputDir = 'data/episodes', transcriptsDir = 'data/transcripts'] = process.argv.slice(2);
+const insightsDir = process.env.RAT_INSIGHTS_DIR ?? join(workDir, '..', '..', 'insights');
 if (!workDir) {
   console.error('usage: node scripts/import-tagger.mjs <tagger work/episodes> [out]');
   process.exit(1);
@@ -45,7 +46,17 @@ const parseSources = (source) =>
 
 const isoDate = (date) => date.toISOString().slice(0, 10);
 
-const toContract = (episode, analyzedAt, id) => {
+// Pogłębione opracowanie z taggera (scripts/opencode-insights.sh): lepsze streszczenie
+// oraz fakty spoza tracklisty. Goście dołączają do creditsów, bo to ta sama rola na stronie.
+async function readInsights(sourceId) {
+  try {
+    return JSON.parse(await readFile(join(insightsDir, `${sourceId}.json`), 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+const toContract = (episode, analyzedAt, id, insights) => {
   const quotes = new Map();
   for (const track of episode.tracks ?? []) {
     if (!track.quote) continue;
@@ -53,13 +64,20 @@ const toContract = (episode, analyzedAt, id) => {
     quotes.set(`${start}|${track.quote}`, { start: Math.round(start), text: track.quote });
   }
 
+  const guestCredits = (insights?.guests ?? []).map((guest) => ({
+    role: 'gość',
+    name: guest.name,
+    time: Math.round(guest.at ?? 0),
+    quote: '',
+  }));
+
   return {
     version: 1,
     id,
     analyzedAt,
     updatedAt: episode.updatedAt ?? undefined,
     durationSec: episode.durationSec == null ? null : Math.round(episode.durationSec),
-    summary: episode.summary ?? null,
+    summary: insights?.summary ?? episode.summary ?? null,
     topics: (episode.topics ?? []).map((topic) => ({
       start: Math.round(topic.time),
       // Koniec policzony w taggerze; brak = strona wyprowadzi go z następnej pozycji.
@@ -85,11 +103,26 @@ const toContract = (episode, analyzedAt, id) => {
       links: [],
     })),
     quotes: [...quotes.values()].sort((a, b) => a.start - b.start),
-    credits: (episode.credits ?? []).map((credit) => ({
-      role: credit.role,
-      name: credit.name,
-      time: Math.round(credit.time ?? 0),
-      quote: credit.quote ?? '',
+    credits: [
+      ...(episode.credits ?? []).map((credit) => ({
+        role: credit.role,
+        name: credit.name,
+        time: Math.round(credit.time ?? 0),
+        quote: credit.quote ?? '',
+      })),
+      ...guestCredits,
+    ],
+    interviews: (insights?.interviews ?? []).map((interview) => ({
+      with: interview.with,
+      topic: interview.topic ?? null,
+      at: interview.at == null ? null : Math.round(interview.at),
+    })),
+    mentions: (insights?.mentions ?? []).map((mention) => ({
+      type: mention.type,
+      title: mention.title,
+      author: mention.author ?? null,
+      note: mention.note ?? null,
+      at: mention.at == null ? null : Math.round(mention.at),
     })),
   };
 };
@@ -117,8 +150,9 @@ for (const entry of entries) {
     console.warn(`pominięto ${entry.name}: brak odcinka w katalogu`);
     continue;
   }
+  const insights = await readInsights(entry.name);
   const target = join(outputDir, `${id}.json`);
-  await writeFile(resolve(target), `${JSON.stringify(toContract(episode, analyzedAt, id), null, 2)}\n`);
+  await writeFile(resolve(target), `${JSON.stringify(toContract(episode, analyzedAt, id, insights), null, 2)}\n`);
   imported += 1;
 
   // Transkrypty są danymi audycji, więc leżą w repo strony razem z opracowaniem,

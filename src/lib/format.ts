@@ -98,6 +98,15 @@ const ROLE_LABELS: Record<string, string> = {
 
 export const formatRole = (role: string) => ROLE_LABELS[role] ?? role;
 
+const MENTION_LABELS: Record<string, string> = {
+  book: 'Książka',
+  film: 'Film',
+  concert: 'Koncert',
+  festival: 'Festiwal',
+};
+
+export const formatMentionType = (type: string) => MENTION_LABELS[type] ?? type;
+
 /** Tytuł do wyświetlenia: nieoficjalny, gdy istnieje, inaczej tytuł z katalogu. */
 export const resolveDisplayTitle = (entry: { title: string; displayTitle?: string }): string =>
   formatEpisodeTitle(entry.displayTitle ?? entry.title);
