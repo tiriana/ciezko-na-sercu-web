@@ -447,7 +447,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                 {creditRows.map((row) => (
                   <div>
                     <dt>{row.roles.map(formatRole).join(' / ')}</dt>
-                    <dd><PersonName name={row.name} /></dd>
+                    <dd><PersonName name={row.name} tags={episode.tags} /></dd>
                   </div>
                 ))}
               </dl>

@@ -1,19 +1,25 @@
 ---
+import type { Tag } from '../lib/schema';
 import { getPeople } from '../lib/data';
 
 interface Props {
   name: string;
+  /** Tagi odcinka: jeśli osoba ma tag, prowadzimy do jej indeksu na stronie. */
+  tags?: Tag[];
 }
 
-// Link tylko wtedy, gdy znamy profil: identyfikatory w adresach Polskiego Radia
-// nie wynikają z nazwiska, więc mapa jest ręczna (data/people.json).
-const { name } = Astro.props;
+// Profil w Polskim Radiu tylko wtedy, gdy go znamy: identyfikatory w adresach nie
+// wynikają z nazwiska, więc mapa jest ręczna (data/people.json).
+const { name, tags } = Astro.props;
 const people = await getPeople();
 const person = people[name];
+const tag = tags?.find((candidate) => candidate.label === name && candidate.type === 'person');
 ---
 
 {
-  person?.url ? (
+  tag ? (
+    <a class="person-link" href={`/tagi/${tag.id}/`}>{name}</a>
+  ) : person?.url ? (
     <a class="person-link" href={person.url} target="_blank" rel="noopener noreferrer">
       {name} ↗
     </a>
