@@ -5,7 +5,7 @@ const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile'];
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { catalogSchema, episodeSchema, peopleSchema, titlesSchema } from '../src/lib/schema.ts';
+import { aliasesSchema, catalogSchema, episodeSchema, peopleSchema, titlesSchema } from '../src/lib/schema.ts';
 
 const DATA = 'data';
 const EPISODES = join(DATA, 'episodes');
@@ -45,6 +45,22 @@ const distance = (left, right) => {
 
 const catalog = catalogSchema.parse(JSON.parse(await readFile(join(DATA, 'catalog.json'), 'utf8')));
 const titles = titlesSchema.parse(JSON.parse(await readFile(join(DATA, 'titles.json'), 'utf8')));
+const { aliases } = aliasesSchema.parse(JSON.parse(await readFile(join(DATA, 'aliases.json'), 'utf8')));
+
+const resolveAlias = (label) => {
+  let current = label;
+  for (let step = 0; step < 5; step++) {
+    const next = aliases[current];
+    if (!next || next === current) break;
+    current = next;
+  }
+  return current;
+};
+
+// Etykiety spotkane w danych: tagi i nazwy w creditsach. Alias musi wskazywać na jedną z nich,
+// inaczej literówka w aliasie cicho rozjedzie tag na dwa.
+const knownLabels = new Set();
+const TAG_TYPE_OF = new Map();
 
 const ids = new Set();
 const slugs = new Map();
@@ -69,10 +85,17 @@ for (const name of await readdir(EPISODES)) {
 
   // Dwie formy tego samego nazwiska w jednej roli to zwykle błąd transkrypcji;
   // tagger scala je sam, więc tutaj tylko ostrzegamy o danych sprzed poprawki.
+  for (const credit of episode.credits) knownLabels.add(credit.name);
+  for (const tag of episode.tags) {
+    knownLabels.add(tag.label);
+    TAG_TYPE_OF.set(tag.label, tag.type);
+  }
+
   const seenPairs = new Set();
   for (const credit of episode.credits) {
     for (const other of episode.credits) {
       if (credit === other || credit.role !== other.role || credit.name === other.name) continue;
+      if (resolveAlias(credit.name) === resolveAlias(other.name)) continue;
       if (!similarNames(credit.name, other.name)) continue;
       const pair = [credit.name, other.name].sort().join('|');
       if (seenPairs.has(pair)) continue;
@@ -165,6 +188,32 @@ for (const [id, entry] of Object.entries(duplicates)) {
   if (id === entry.of) problems.push(`duplicates.json: ${id} wskazuje sam na siebie`);
 }
 
+// Ten sam byt bywa zapisany raz krótko, raz z pełnym imieniem („Vogg" / „Wacław Vogg Kiełtyka").
+// Zgadujemy tylko wśród osób i tylko po całym słowie — inaczej „Master" trafia w „Devil Master".
+const words = (value) =>
+  value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ł/gi, 'l')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+
+const personLabels = [...knownLabels].filter((label) => TAG_TYPE_OF.get(label) === 'person' && resolveAlias(label) === label);
+const aliasCandidates = [];
+for (const shorter of personLabels) {
+  for (const longer of personLabels) {
+    if (longer.length <= shorter.length + 3) continue;
+    if (!` ${words(longer)} `.includes(` ${words(shorter)} `)) continue;
+    aliasCandidates.push(`„${shorter}” ⊂ „${longer}”`);
+  }
+}
+
+for (const [alias, target] of Object.entries(aliases)) {
+  if (alias === target) problems.push(`alias ${alias} wskazuje sam na siebie`);
+  if (!knownLabels.has(target)) problems.push(`alias ${alias} wskazuje na nieistniejącą etykietę: ${target}`);
+}
+
 if (problems.length > 0) {
   console.error(`Dane niespójne (${problems.length}):`);
   for (const problem of problems) console.error(`  - ${problem}`);
@@ -176,6 +225,11 @@ if (staleTimeline.length > 0) {
     `${staleTimeline.length} opracowań ma dane sprzed uzgadniania osi programu — przelicz \`rat tag\`, ` +
       'żeby czasy wejść i utworów przestały się nakładać.'
   );
+}
+
+if (aliasCandidates.length > 0) {
+  console.log(`${aliasCandidates.length} par etykiet wygląda na ten sam byt (do rozważenia w data/aliases.json):`);
+  for (const candidate of aliasCandidates.slice(0, 10)) console.log(`  - ${candidate}`);
 }
 
 console.log(

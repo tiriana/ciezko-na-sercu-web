@@ -37,6 +37,15 @@ export const tagSchema = z.object({
 
 export type Tag = z.infer<typeof tagSchema>;
 
+// Ten sam byt bywa zapisany różnie („Vogg”, „Vogg (Wojciech Kiełtyka)”, pełne imię).
+// Klucz to wariant spotkany w danych, wartość — etykieta kanoniczna.
+export const aliasesSchema = z.object({
+  version: z.literal(1),
+  aliases: z.record(z.string(), z.string().min(1)),
+});
+
+export type Aliases = z.infer<typeof aliasesSchema>['aliases'];
+
 export const episodeSchema = z.object({
   version: z.literal(1),
   id: z.string().min(1),

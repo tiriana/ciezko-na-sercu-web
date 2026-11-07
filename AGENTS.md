@@ -12,6 +12,14 @@ nie trzeba za każdym razem odkrywać.
 4. Audycja leci w środy o 00:05; pliki audio nigdy nie trafiają do repo — strona tylko
    odsyła do plików Polskiego Radia.
 
+## Warianty tej samej nazwy
+
+`data/aliases.json` mapuje wariant etykiety na jej formę kanoniczną („Vogg" →
+„Wacław "Vogg" Kiełtyka"). Podstawienie dzieje się przy wczytywaniu danych, więc tagi,
+creditsy i strony `/tagi/<id>/` widzą jedną osobę. Klucz to dosłowna etykieta z danych —
+łączenie robimy tutaj, nie przez podmianę w `data/episodes`. `npm run check` wypisuje
+kandydatów: osoby, których krótsza etykieta jest całym słowem w dłuższej.
+
 ## Osoby w creditsach
 
 Nową osobę dodajemy do `data/people.json` z polem `url` tylko po sprawdzeniu wyszukiwaniem

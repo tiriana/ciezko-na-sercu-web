@@ -1,14 +1,17 @@
 import { duplicatesSchema } from './schema';
+import { tagId } from './tags';
 import { readFile, readdir } from 'node:fs/promises';
 import type { z } from 'zod';
 import { join } from 'node:path';
 
 import {
+  aliasesSchema,
   catalogSchema,
   episodeSchema,
   overrideSchema,
   peopleSchema,
   titlesSchema,
+  type Aliases,
   type Catalog,
   type CatalogEpisode,
   type Episode,
@@ -116,7 +119,31 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
       episode.credits = episode.credits.map((credit) => ({ ...credit, name: rename[credit.name] ?? credit.name }));
     }
   }
+  const aliases = await getAliases();
+  if (Object.keys(aliases).length > 0) {
+    for (const episode of episodes) {
+      episode.tags = mergeAliases(episode.tags, aliases);
+      episode.credits = episode.credits.map((credit) => ({ ...credit, name: resolveAlias(credit.name, aliases) }));
+    }
+  }
   return new Map(episodes.map((episode) => [episode.id, episode]));
+}
+
+// Po podstawieniu kanonicznej etykiety dwa tagi mogą się zlać w jeden: zostaje pierwszy,
+// a czas wejścia z drugiego wypełnia lukę, jeśli pierwszy go nie miał.
+function mergeAliases(tags: Episode['tags'], aliases: Aliases): Episode['tags'] {
+  const merged = new Map<string, Episode['tags'][number]>();
+  for (const tag of tags) {
+    const label = resolveAlias(tag.label, aliases);
+    const id = label === tag.label ? tag.id : tagId(label);
+    const current = merged.get(id);
+    if (!current) {
+      merged.set(id, { ...tag, id, label });
+      continue;
+    }
+    if (current.at === undefined && tag.at !== undefined) current.at = tag.at;
+  }
+  return [...merged.values()];
 }
 
 async function getOverrides(): Promise<Map<string, z.infer<typeof overrideSchema>>> {
@@ -131,6 +158,30 @@ async function getOverrides(): Promise<Map<string, z.infer<typeof overrideSchema
   );
   return new Map(loaded);
 }
+
+let aliasesCache: Aliases | undefined;
+
+export async function getAliases(): Promise<Aliases> {
+  if (aliasesCache) return aliasesCache;
+  try {
+    aliasesCache = (await load(join(DATA_DIR, 'aliases.json'), aliasesSchema)).aliases;
+  } catch {
+    aliasesCache = {};
+  }
+  return aliasesCache;
+}
+
+// Warianty mogą wskazywać jeden na drugi („Vogg” -> „Vogg (Wojciech Kiełtyka)” -> pełne
+// imię), więc idziemy łańcuchem. Limit chroni przed pętlą w danych.
+const resolveAlias = (label: string, aliases: Aliases) => {
+  let current = label;
+  for (let step = 0; step < 5; step++) {
+    const next = aliases[current];
+    if (!next || next === current) break;
+    current = next;
+  }
+  return current;
+};
 
 let peopleCache: Record<string, Person> | undefined;
 
