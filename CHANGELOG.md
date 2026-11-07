@@ -1,3 +1,9 @@
+## [1.0.9](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.8...v1.0.9) (2026-11-07)
+
+### Bug Fixes
+
+* chmura tagów bez czerwieni — wydarzenia jak zespoły, osoby i dzieła przygaszone ([46f0ee8](https://github.com/tiriana/ciezko-na-sercu-web/commit/46f0ee8cc9fa9256746f062daf2c7a674589434e))
+
 ## [1.0.8](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.7...v1.0.8) (2026-11-07)
 
 ### Bug Fixes
