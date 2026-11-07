@@ -1597,12 +1597,12 @@ a {
   fill: var(--accent);
 }
 
-/* Różnice między typami tagów mają być czytelne dopiero po chwili patrzenia:
-   wydarzenia cieplejsze, osoby i dzieła tylko odrobinę ciemniejsze, dzieła kursywą. */
+/* Kolor niesie tylko hierarchię wielkości: wydarzenia i zespoły jak reszta tekstu,
+   osoby i dzieła przygaszone. Bez czerwieni, która sugerowała ważność. */
 .tag-cloud__word--artist { font-weight: 400; }
-.tag-cloud__word--person { fill: color-mix(in srgb, var(--text) 82%, var(--muted)); }
-.tag-cloud__word--event { fill: color-mix(in srgb, var(--accent) 42%, var(--text)); }
-.tag-cloud__word--work { fill: color-mix(in srgb, var(--text) 82%, var(--muted)); font-style: italic; }
+.tag-cloud__word--person { fill: var(--muted); }
+.tag-cloud__word--event { fill: var(--text); }
+.tag-cloud__word--work { fill: var(--muted); font-style: italic; }
 
 /* Szukaj */
 
