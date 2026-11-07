@@ -1,3 +1,9 @@
+## [1.0.8](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.7...v1.0.8) (2026-11-07)
+
+### Bug Fixes
+
+* typy w chmurze tagów różnią się subtelnie, bez czerwieni sugerującej wagę ([2a150cb](https://github.com/tiriana/ciezko-na-sercu-web/commit/2a150cb71a1be94921a6478d5859ac73a5ea7aca))
+
 ## [1.0.7](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.6...v1.0.7) (2026-11-07)
 
 ### Bug Fixes
