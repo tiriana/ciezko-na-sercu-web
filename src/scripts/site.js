@@ -22,7 +22,7 @@ const setupAudio = () => {
 let spans = [];
 
 const activeSpans = (time) => {
-  const covering = spans.filter((span) => time >= span.start && time < span.end);
+  const covering = spans.filter((span) => span.kind !== 'topic-group' && time >= span.start && time < span.end);
   if (covering.length <= 1) return covering;
   // Wejścia i utwory mogą się nakładać: aktywna jest pozycja, która zaczęła się najpóźniej.
   const latest = Math.max(...covering.map((span) => span.start));
@@ -188,7 +188,9 @@ const syncSpans = () => {
     setNowPlaying(`Wejście ${order + 1}`);
   }
   for (const span of spans) {
-    const isActive = active.includes(span);
+    const isActive = span.kind === 'topic-group'
+      ? active.some((item) => item.kind === 'topic' && item.start >= span.start && item.start < span.end)
+      : active.includes(span);
     span.element.classList.toggle('is-active', isActive);
     if (isActive) span.element.setAttribute('aria-current', 'true');
     else span.element.removeAttribute('aria-current');
