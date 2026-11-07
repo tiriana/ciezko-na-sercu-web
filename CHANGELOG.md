@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.1...v1.0.2) (2026-11-07)
+
+### Bug Fixes
+
+* wersja w stopce bez podkreślenia i mniej widoczna ([4a6e4cd](https://github.com/tiriana/ciezko-na-sercu-web/commit/4a6e4cde4b39910685dcad1321a3f4faef1cb8a3))
+
 ## [1.0.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.0...v1.0.1) (2026-11-07)
 
 ### Bug Fixes
