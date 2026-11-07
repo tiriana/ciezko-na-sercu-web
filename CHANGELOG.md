@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.4...v1.0.5) (2026-11-07)
+
+### Bug Fixes
+
+* tytuł odcinka dokłada tagi z istniejącego słownika ([9d7f763](https://github.com/tiriana/ciezko-na-sercu-web/commit/9d7f763ccb35d0a6470a69c5a31625127c37c2c8))
+
 ## [1.0.4](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.3...v1.0.4) (2026-11-07)
 
 ### Bug Fixes
