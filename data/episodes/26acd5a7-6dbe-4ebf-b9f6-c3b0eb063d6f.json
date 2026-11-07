@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "26acd5a7-6dbe-4ebf-b9f6-c3b0eb063d6f",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.356Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.824Z",
   "durationSec": 6891,
   "summary": "Audycja to przegląd najciekawszych płyt wydanych w lutym w szeroko pojętej ciężkiej muzyce. Omówiono m.in. „The Great Satan” Roba Zombie, „New Day Symptoms” Final Gasp, „The Venom Natura” Ponte del Diavolo, debiutancki album duetu Jagong „Gomi Kuzu Khan” oraz metalcore'owe „Reinvention” The Veer Union i „Poisoned Art” ukraińskiej Space of Variations, chwalonej za nawiązania do rodzimej kultury ludowej i teksty w języku ukraińskim. Wśród płyt bardziej ekstremalnych wymieniono „Love Is Not Enough” Converge, koncepcyjny „Red Asphalt” X-Hyunt o niebezpieczeństwach motoryzacji, „Dread Emperor” Slaughter Day, debiutancką „Revenge from Beyond” projektu Hating Life gitarzysty Ataraxie, „Of Death and Fire” szwedzkiego In Aeternum (dawniej działającego jako Behemoth) oraz „Necro Palace” grupy Worm, ocenione krytycznie jako technicznie sprawne, ale nieprzekonujące odtworzenie gotyckiego black metalu lat 90. Zaprezentowano też thrashowy „Witching Attack” Lead Injector, nową płytę Mayhem „Liturgy of Death” oraz „Hulder's Ritual” norweskiego Slagmaur, któremu towarzyszyła kontrowersyjna kampania promocyjna z inscenizowanym zniknięciem lidera i Snorre z Torn. Na koniec omówiono „Demonosofię” projektu The Magus (wcześniej Rotten Christ i Nekromantia), epkę „A Taunt in Metamorphosis” Predatory Void, „Carving the Coastway to the Other World” Koskrad oraz debiutancki „Imperfect Stillness” północnoirlandzkiej grupy Domain.",
   "topics": [
@@ -207,6 +207,18 @@
       "type": "work",
       "source": "transcript",
       "at": 217
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -459,5 +471,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

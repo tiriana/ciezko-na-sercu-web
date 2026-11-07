@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "799726ce-dd56-49eb-bda3-752bdef669cd",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.400Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.906Z",
   "durationSec": 6869,
   "summary": "Walentynkowe wydanie poświęcone miłości w metalu — od Judas Priest i Motörhead, przez Panterę, Carcass i Strapping Young Lad, po Type O Negative. Przewodnim wątkiem jest zestawienie Erosa z Tanatosem: miłość aż po grób i jej mroczne odmiany, od Alice Cooper i Slayera po Misfits i Pig Destroyer. Przywołano sprawę z 1996 roku, w której Slayera oskarżono o zainspirowanie trzech nastolatków z Kalifornii do zabójstwa koleżanki; sąd odrzucił pozew. Prowadzący opowiedział o swoim pierwszym tekście — protest songu „Jestem przeciw” dla Desperatora, pierwszego metalowego zespołu z Dukli — zapowiedzianym przez kolegę Gileka jako ballada dla zakochanych metali. Omówiono też romantyczne oblicza doom i black metalu: My Dying Bride, Cradle of Filth, Darkthrone oraz żeński Derketa, u którego miłość przezwycięża śmierć.",
   "topics": [
@@ -193,6 +193,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 3559
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -445,5 +457,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

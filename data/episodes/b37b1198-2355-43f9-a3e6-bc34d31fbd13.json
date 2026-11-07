@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "b37b1198-2355-43f9-a3e6-bc34d31fbd13",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.395Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.898Z",
   "durationSec": 6824,
   "summary": "Odcinek w całości poświęcony zapowiedziom kwietniowych koncertów i festiwali. Omówiono trasę Anti-Matter z okazji 25-lecia debiutu (sześć koncertów w Polsce) oraz wspólną trasę Exegi Monumentum łączącą Czord, Konigreis Hall i Kyr. Najwięcej miejsca zajęły duże objazdy: Unholy Trinity z Behemothem, Satyriconem i Rotting Christ we wrocławskiej Hali Stulecia, koncerty Primordial, Amenry, Swans w duecie Michael Gira–Christoph Hahn, Blood Incantation z Minami Deutsch oraz Dark Tranquility i Moonspell. Przy okazji Moonspella i Satyriconu prowadzący przekonywał, że ich bardziej progresywne albumy (The Butterfly Effect, Rebel Extravaganza) nie zdobyły uznania fanów, a w przypadku Blood Incantation wskazał, że woli wcześniejszy album od Absolute Elsewhere. Zapowiedziano też festiwale Opoczno Strikes Again, Post-Mortem i Blastfest, finał konkursu Road to Mystic oraz dwa koncerty Furi do archiwaliów Filmoteki Śląskiej na 25-lecie instytucji.",
   "topics": [
@@ -396,6 +396,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 6644
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -622,5 +634,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

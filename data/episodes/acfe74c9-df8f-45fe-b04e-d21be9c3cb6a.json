@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "acfe74c9-df8f-45fe-b04e-d21be9c3cb6a",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.347Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.811Z",
   "durationSec": 7174,
   "summary": "Audycja to przegląd kwietniowych nowości: otwiera ją podwójny album Corrosion of Conformity „Good God, Bad Man”, nagrany częściowo w prywatnym studiu Barry'ego Giba, łączący hardcore, southern rock, stoner i doom. Omówiono też szwedzki „Master Flow” Truck Fighters (zespół zagra w czerwcu na Mystic Festiwalu), „Hymns from the Hills” Poison Ruin, „Diet of Worms” The Shits oraz wspólny album Melvins i Napalm Death „Savage Imperial Death March”, którego tytuł pochodzi od nazwy ich wspólnych tras koncertowych. Szeroko omówiono dwa pożegnalne wydawnictwa: epkę Sepultury „The Cloud of Unknowing”, o której istnieniu prowadzący dowiedział się rok wcześniej od Andreasa Kissera podczas Mystic Talks, oraz album At The Gates „The Ghost of Future Death”, nagrany przed śmiercią wokalisty Thomasa Lindberga — zdążył on zarejestrować demo wokali dzień przed operacją nowotworu ślinianek i zmarł we wrześniu 2025 roku, a zespół dokończył płytę według jego wskazówek. Dalej zaprezentowano nowości z pogranicza death i black metalu: Skindred („You Got This”, z elementami reggae i rapu), Landloss („Nowhere, in Between, Forever”), A Treju („The End is Not The End”), Nervozę („Slave Machine”), Vomitory („In Death Throws”), Xorcist („Aberrations”), Immolation („Descent”), Unearthly Rides („Total Symphony of the Flesh”), Ord („Blind in Abyssal Realms”), polski zespół Blinded 23 z debiutanckim albumem „Deuterium” (z udziałem m.in. Rogera Öjersanda z Katatonii i Pawła Jaroszewicza), Witch Rippera („Through the Hourglass”), Dötzsfängera („Within the Flesh”) oraz holenderski Dude Swens.",
   "topics": [
@@ -221,6 +221,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 3020
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -499,5 +511,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

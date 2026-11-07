@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "d96175ee-6a14-417d-9e2e-ac7cdc4ef6e8",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.366Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.841Z",
   "durationSec": 6902,
   "summary": "Gościem odcinka jest Artur Rumiński, muzyk związany z zespołami ARM, Furia, Gruzja, TOW, Mentors i Griving oraz działalnością solową, który opowiada o charakterze i stanie prac nad każdym z tych projektów, w tym o nowej płycie ARM i planowanej płycie solowej. Wspomina swoją drogę muzyczną od punka i hardcore'u w Sosnowcu, przez grę w hardcore'owym zespole w Nowym Jorku, po dołączenie do Furii i rozwój jej brzmienia w stronę mniej konwencjonalnego black metalu. Szeroko omówiona jest teatralna przygoda Furii — udział w spektaklu „Wesele” w reżyserii Jana Klaty, zagranym po raz setny w Teatrze Narodowym w Warszawie — oraz udział zespołu Gruzja w spektaklu „Termopile polskie” Mieczyńskiego, również w reżyserii Klaty. Rumiński i prowadzący rozmawiają o najciekawszych płytach mijającego roku, wymieniając m.in. „In the Earth Again” Chat Pile i Haydena Pedigo, nowe albumy Rotten Sound i Coroner oraz odkrycia z katalogu wytwórni ECM Records, a także o koncertach zespołu Swans. Na koniec Rumiński wskazuje Black Sabbath, a konkretnie album „Paranoid”, jako najważniejszy punkt odniesienia w swojej muzycznej edukacji.",
   "topics": [
@@ -137,6 +137,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 5056
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -273,6 +285,18 @@
   ],
   "quotes": [],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Artur Rumiński",

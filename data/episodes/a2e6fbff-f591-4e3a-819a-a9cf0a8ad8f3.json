@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "a2e6fbff-f591-4e3a-819a-a9cf0a8ad8f3",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.356Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.826Z",
   "durationSec": 6948,
   "summary": "Audycja jest osobistą retrospektywą Jarka Szubrychta, który sprawdza, czy rok 1986 — rok jego własnej inicjacji w metalu — był rzeczywiście przełomowy dla gatunku. Omówiono wydane wtedy albumy: The Final Countdown Europe, 5150 Van Halen i solowy debiut Davida Lee Rotha Eat 'Em and Smile, The Ultimate Sin Ozzy'ego Osbourne'a, Somewhere in Time Iron Maiden, Turbo Judas Priest, Russian Roulette Accept, Orgasmatron Motörhead, Master of Puppets Metalliki, Peace Sells... But Who's Buying? Megadeth, Fatal Portrait King Diamonda, Metal and Hell Kata, Kawalerię Szatana Turbo, Obsessed by Cruelty Sodomu, Pleasure to Kill Kreatora, Reign in Blood Slayera, Darkness Descends Dark Angel, Beyond the Gates Possessed, Rrröööaaarrr Voivod, Morbid Visions Sepultury oraz koncertówkę Eine Kleine Nachtmusik Venom. Reign in Blood Slayera uznano za najlepszy album metalowy 1986 roku i jeden z najlepszych w historii gatunku, a sam rok za szczególnie ważny dla thrash metalu. Przywołano też upadłość wytwórni Ambush Records tuż po wydaniu debiutu Kata oraz rolę brazylijskiej Cogumelo Records w wypromowaniu Sepultury.",
   "topics": [
@@ -245,6 +245,18 @@
       "type": "event",
       "source": "transcript",
       "at": 6446
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -523,5 +535,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

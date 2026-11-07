@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "bac7fc57-7b66-40f3-b398-cd1e3ed20bda",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.406Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.916Z",
   "durationSec": 6901,
   "summary": "Odcinek poświęcony inspiracjom, jakie serial Twin Peaks Davida Lyncha i Marka Frosta wywarł na muzykę, przede wszystkim metalową. Przypomniano historię serialu: emisję od kwietnia 1990 roku, wątek śmierci Laury Palmer i śledztwo agenta Coopera, presję stacji i widzów, która wymusiła ujawnienie zabójcy, kasację po dwóch sezonach oraz późniejszy film-prequel, pamiętnik Laury Palmer i trzecią serię. Omówiono twinpeaksowe apokryfy: utwór Anthrax z płyty Sound of White Noise nagrany z Badem Lamentim, filmowe przeróbki Fantômasa z The Director's Cut, utwór Twin Peaks polskiego duetu Jarzmo z debiutu Antropocen oraz nagrania Hostii i Harakiri for the Sky. Dużo miejsca zajęła relacja z podróży do miejsc kręcenia serialu: North Bend z kawiarnią Tweeds Cafe (serialowe Double R Diner, kawa i placek z wiśniami) oraz Snoqualmie z mostem, siedzibą szeryfa, zakrętem z czołówki i hotelem Salish Lodge (serialowe Great Northern). Przywołano zespoły zainspirowane serialem: norweski Audrey Horne z muzykami z Gorgoroth i Enslaved, fiński Swallow the Sun, francuski Spectre, lokalny Windham Hell oraz Mount Eerie Phila Elveruma, a także kompilację A Witch House and Occult Guide to Twin Peaks i jazz Bohren & der Club of Gore inspirowany muzyką Badalamentiego.",
   "topics": [
@@ -186,6 +186,18 @@
       "type": "work",
       "source": "transcript",
       "at": 2271
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -373,5 +385,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

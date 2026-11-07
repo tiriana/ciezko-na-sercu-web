@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "4979c412-1662-4421-b637-6d2af2c65688",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.412Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.930Z",
   "durationSec": 6913,
   "summary": "Odcinek w całości poświęcony 25. edycji festiwalu Obscene Extreme w Trutnovie, z którego prowadzący wrócił w niedzielę. Opisano charakter imprezy: jedna scena, koncerty od 10 rano do około 3 w nocy, wyłącznie muzyka ekstremalna i gitarowa — grind, death metal, thrash, hardcore i crust. Najwięcej miejsca dostali Autopsy, którzy zagrali w przeważającej części materiał z debiutanckiego Severed Survival, oraz Walking Corpses — cover band Brutal Truth z Danem Lilkerem na basie, powołany na jubileusz festiwalu, który wykonał całą płytę Extreme Conditions Demand Extreme Responses. Wymieniono też inne gwiazdy: Napalm Death, Dying Fetus, Ratos de Porão, Wolf Brigade, japoński Sabbat, Protector, Drop Dead i Convulse, przy czym Ratos de Porão oraz Siege żegnały się z europejską publicznością, a brazylijska Sao Direta zagrała w Europie pierwszy raz 37 lat po powstaniu. Osobne wątki to fenomen Gutalax i medycznego grindu (Hemorrhage, Rompeprop), japoński noise Final Exit, polskie zespoły Hostia i Meat Spreader oraz atmosfera festiwalu — brak agresji, wchodzenie fanów na scenę, festiwalowe przedszkole Kinder Grinder i poczucie bezpieczeństwa. W kanonadzie przypomniano historię Napalm Death — powstanie pod Birmingham, płytę Scum i drugie narodziny za sprawą Harmony Corruption z Markiem Greenwayem.",
   "topics": [
@@ -32,7 +32,7 @@
       "label": "Anegdoty o Danie Lilkerze i jego dalszej aktywności na scenie metalowej"
     },
     {
-      "start": 2361,
+      "start": 2376,
       "end": 2400,
       "label": "Jubileusze i urodziny związane z Obscenic Stream oraz organizatorem Miroslavem Urbańcem"
     },
@@ -47,7 +47,7 @@
       "label": "Wspomnienie starszych zespołów grindowych i death‑metalowych występujących na Obstyn"
     },
     {
-      "start": 3990,
+      "start": 4005,
       "end": 4040,
       "label": "Prezentacja nowych zespołów Gutalax, Rompeprop i Hemorage oraz ich stylu"
     },
@@ -57,7 +57,7 @@
       "label": "Wstęp o hiszpańskim zespole Hemorrhage i jego stylistyce"
     },
     {
-      "start": 4249,
+      "start": 4348,
       "end": 4419,
       "label": "Prezentacja czeskiego Gutalax i ich występów na festiwalu"
     },
@@ -189,6 +189,18 @@
       "type": "event",
       "source": "transcript",
       "at": 2187
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -249,7 +261,7 @@
     },
     {
       "start": 2233,
-      "end": 2361,
+      "end": 2376,
       "durationSec": 145,
       "artist": "Brutal Truth",
       "title": "Ill-Neglect",
@@ -290,7 +302,7 @@
     },
     {
       "start": 3722,
-      "end": 3990,
+      "end": 4005,
       "durationSec": 88,
       "artist": "Mutilated Judge",
       "title": "My Girlfriend Left Me for a Guy With a Hakuna Matata Tattoo",
@@ -303,7 +315,7 @@
     },
     {
       "start": 4081,
-      "end": 4249,
+      "end": 4348,
       "durationSec": 207,
       "artist": "Haemorrhage",
       "title": "Obstetric Phantom",
@@ -445,5 +457,18 @@
       "text": "oraz Throws of Joy in the Jaws of Defeatism, to jest 2020, to rzeczy znakomite"
     }
   ],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

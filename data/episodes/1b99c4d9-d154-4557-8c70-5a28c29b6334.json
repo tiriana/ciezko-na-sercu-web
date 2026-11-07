@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "1b99c4d9-d154-4557-8c70-5a28c29b6334",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.372Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.851Z",
   "durationSec": 6889,
   "summary": "Za najważniejsze wydawnictwo października uznano oficjalny debiut Hellthrone The Will to Die — slayerowy napęd z deathmetalowym korpusem, efekt wieloletniej pracy zespołu. Po blisko dekadzie milczenia wróciła Crystagony z albumem Anthems, a obok niej nowe płyty wydali Corruption (Tequila Songs and Desert Winds, wierność stoner metalowi), Owls Woods Graves (Strix), debiutujący Eric Zahn (mini-album Petrihor z żeńskim wokalem Julii) oraz Frail (Heretics and Lullabies z gościnnym Jasonem Popsonem). Conjurer na Unself opowiada o poczuciu nie-bycia sobą, pisany po ujawnieniu przez Danny'ego Nightingale'a tożsamości niebinarnej i diagnozy autyzmu; Author and Punisher na Nocturnal Birding transponował ptasie śpiewy na gitarę i zadedykował płytę ofiarom migracji przez granicę meksykańsko-amerykańską, wspierając Border Angels; Psychonaut na World Maker zmierzył się jednocześnie z narodzinami dziecka i śmiercią ojców; Agriculture na The Spiritual Sound połączył black metal z emo i garażowym graniem. Coroner wrócił po 32 latach albumem Dissonance Theory, a równolegle ukazały się Parabellum Testamentu i Chama Soulfly, współprodukowana przez Ziona Kavalera. Reszta miesiąca to nowa fala brutalnego death metalu: Sanguisugabogg, Bonginator (Retro Death), Tribal Gaze, Stillbirth (Survival Protocol), Despised Icon (Shadow Work), Wolvenest (Procession) i Primitive Man (Observance, premiera na Halloween).",
   "topics": [
@@ -214,6 +214,18 @@
       "type": "work",
       "source": "transcript",
       "at": 3931
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -479,5 +491,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "dadb129b-2310-4348-87b1-869eaf9bfdb6",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.387Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.886Z",
   "durationSec": 6860,
   "summary": "Odcinek zapowiada Mystic Festival 2025 w gdańskiej stoczni (start 5 czerwca) i skupia się na mniej oczywistych punktach jego programu. Wśród nich wymieniono Turbonegro i Eagles of Death Metal, Arthura Browna — występującego tuż przed 83. urodzinami prekursora scenicznego makijażu i płonącego hełmu — Suicidal Tendencies oraz hołd dla Bathory pod szyldem Blood Fire Death, zagrany przez supergrupę z muzykami Mayhem, Emperor, Enslaved i Aura Noir. Przypomniano historię fińskiego Beherit, które po dekadach poza głównym obiegiem wróciło do rzadkich koncertów, i zapowiedziano jego występ w Gdańsku; z polskich artystów wyróżniono Vader (pełne Litany oraz wystawa o historii zespołu) i wywodzący się ze sceny trójmiejskiej Here. Druga część to przegląd czerwcowych koncertów w Polsce: The Cult, Soulfly i Sacred Reich w Poznaniu, Airbourne w Warszawie oraz Lorna Shore we Wrocławiu. Omówiono też festiwale Ephemera i Black Silesia, trasy Coilguns i Black Magic Tour, Church of Doom oraz koncerty Incantation, Avenged Sevenfold, Dream Theater, Sólstafir, Steve'a von Tilla i zestaw Powerwolf–Epica–DragonForce.",
   "topics": [
@@ -368,6 +368,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 6569
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -633,5 +645,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

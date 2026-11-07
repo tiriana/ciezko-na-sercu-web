@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "6b15af60-cace-4372-8f98-cc419719611d",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.363Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.837Z",
   "durationSec": 6897,
   "summary": "Audycja to osobiste podsumowanie prowadzącego – dwudziestu ulubionych płyt metalowych i okołometalowych z lat 2001-2025, dziesięciu polskich i dziesięciu zagranicznych, zainspirowane ankietą czasopisma Music Magazine wśród dziennikarzy piszących o ciężkiej muzyce. W polskiej dziesiątce omówiono m.in. Mgłę (Exercises in Futility), Vadera (Impressions in Blood, z przywołaniem też De Profundis, Black to the Blind, Revelations i Solitude in Madness), Antigamę (Resonance, wydaną przez wytwórnię Relapse), Decapitated (Organic Hallucinosis z wokalistą Kowanem, z przywołaniem też Cancer Culture i wypadku zespołu), Blindead (EP Niewiosna z Nihilem z Furii na wokalu oraz zapowiedź nowego albumu składu Blindead 23 dla wytwórni Peaceville), Tao (Fading Backwards), Mord/Morowe (debiut Piekło, Labirynty, Diabły z 2010), Nię (Head Held High) i Atrocious Filth (OVV z 2021, z udziałem zmarłego w 2025 roku perkusisty Gerarda Niemczyka), a na pierwszym miejscu znalazła się Furia z albumem Huta Luna, poprzedzona wzmianką o Grudniu za Grudniem. W światowej dziesiątce omówiono Imperial Triumphant (Vile Luxury), powrotny album Celtic Frost Monotheist, Gojirę (From Mars to Sirius, z porównaniem do L'Enfant Sauvage i Magmy), Oranssi Pazuzu (Varahtelija z 2016), The Dillinger Escape Plan (Miss Machine z 2004, z przywołaniem debiutu Calculating Infinity z 1999), Death Spell Omega (Fas – Ite, Maledicti, in Ignem Aeternum), Meshuggah oraz duet Sunn O))) i Scotta Walkera (album Soused), a na czele zestawienia stanął album Neurosis A Sun That Never Sets, przy czym prowadzący wyraził rozczarowanie postawą wokalisty zespołu, Scotta Kelly'ego. Wspomniano też album The Body No One Deserves Happiness jako ulubiony materiał tego duetu.",
   "topics": [
@@ -229,6 +229,18 @@
       "type": "work",
       "source": "transcript",
       "at": 145
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -494,5 +506,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "78541c12-e18c-4efb-b1d8-b65e61d239a4",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.386Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.885Z",
   "durationSec": 6899,
   "summary": "Jarek Szubrycht rozmawia z Łukaszem Dunajem (redaktor naczelny Noise Magazine, prowadzący „Włącz ten hałas” w Radiu 357) o kryzysie metalowej prasy drukowanej — zawieszeniu wydawania Noise Magazine od września 2024 roku z powodu rosnących kosztów druku, monopolu sieci dystrybucji prasy i przenoszenia się odbiorców do podcastów, YouTube'a i streamingu. Rozmówcy wspominają wspólną pracę w magazynie Thrash'em All i rywalizację o wywiady z artystami takimi jak Dimmu Borgir i Immortal. Dyskutują o zespołach ich zdaniem niedocenionych w Polsce mimo wieloletniego promowania — słabo sprzedanym koncercie New Roses w klubie B90 w Gdańsku oraz niszowej pozycji zespołu The Buddy, którego okładka w Noise Magazine przyniosła słabą sprzedaż. Wspominają rosnącą popularność Oranssi Pazuzu i Imperial Triumphant, w tym pierwszy zaobserwowany przez Dunaja „młyn” pod sceną Oranssi Pazuzu na Mystic Festival. Dunaj mówi o swoim podejściu do recenzowania — unika negatywnych ocen młodych, rodzimych zespołów, przyznaje się do wcześniejszego przechwalania płyt (np. „Otta” Sólstafir) oraz do zespołów, które „kliknęły” mu dopiero po latach (Voivod, Confessor, Laibach). Omawiają też jego podcast „Czarne Owce”, w którym rozmawia o metalu z osobami nieznanymi ze sceny metalowej (Olga Drenda, Marcin Prokop, Radek Łukasiewicz), oraz jego kolekcję płyt winylowych (ponad 1500 egzemplarzy) i wydań specjalnych.",
   "topics": [
@@ -137,6 +137,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 2885
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -234,6 +246,18 @@
   ],
   "quotes": [],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Łukasz Dunaj",

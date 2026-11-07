@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "98fdf291-a637-4c35-ad7c-cd8b38dc92ec",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.378Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.865Z",
   "durationSec": 6906,
   "summary": "Odcinek nagrany w Ostrołęce i zbudowany wokół miejsc, które zainspirowały dobór muzyki: kościoła św. Anny w środku lasu pod Kamionką, elektrowni i dawnego zakładu karnego. Przy kościele pojawiły się Electric Wizard z koncertowej płyty z Nocy Walpurgi 2020 oraz Meshuggah, w tym album koncertowy \"Alive\" z 2010 roku z trasy promującej \"Obzen\"; prowadzący wspomniał, że nie zdążył zobaczyć Electric Wizard na Off Festivalu w 2019 ani Idols na Off Festivalu 2017, Open'erze 2019 i Inside Seaside 2024. Wśród nowości zagrał szwedzki Floating z płytą \"Hesitating Lights\", łączący death metal z post-punkiem, oraz Ethel Cain — mroczna, nie-metalowa płyta, którą Hayden Anhedonia zapowiada jako ostatnią pod tym szyldem. Przy elektrowni zabrzmiały Health z \"Feel Nothing\" i industrialny King Joseph z wydanej w piątek płyty \"Spite of Fear\", a przy dawnym areszcie Incendiary, którego wokal kojarzy się z Zackiem de la Rochą, choć muzycznie bliżej mu do Suicidal Tendencies. Dalej przypomniano japoński Ground Zero z \"Consume Red\" z 1997 roku — godzinnej, bolesnej płyty, której fragmenty samplingował później pewien zespół metalowy — oraz Prostitute z utworem \"All Hail\" z debiutu \"Attempted Martyr\", do którego prowadzący chce wrócić za tydzień. Całość zamyka refleksja, że trudne, nieprzystępne miejsca mogą inspirować do rzeczy wielkich, zilustrowana Chat Pile, którego nazwa pochodzi od hałd przemysłowych w Oklahomie; wspomniano też wrześniowy debiut Maruży \"Pain to Power\" i remastery wcześniejszych nagrań Mamalek.",
   "topics": [
@@ -199,6 +199,12 @@
       "type": "event",
       "source": "transcript",
       "at": 1976
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -444,6 +450,12 @@
       "name": "Michał Kowarski",
       "time": 2662,
       "quote": "Ja nazywam się Michał Kowarski, kłaniam się, a to jest audycja Ciężko na sercu, w zastępstwie."
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
     }
   ]
 }

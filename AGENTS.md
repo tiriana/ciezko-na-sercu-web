@@ -3,6 +3,14 @@
 Dane audycji leżą w `data/`; opis pól i przepływu jest w README. Poniżej fakty, których
 nie trzeba za każdym razem odkrywać.
 
+## Wersje
+
+Numer wersji powstaje automatycznie z typów commitów (`semantic-release`, workflow
+`.github/workflows/release.yml`). Prefiksy, które robią release: `feat:` → minor,
+`fix:`/`perf:`/`refactor:`/`revert:` → patch, `!`/`BREAKING CHANGE:` → major. Commity
+bez prefiksu (`docs:`, `chore:` albo zwykłe zdanie) nie tworzą wersji. Wersja jest
+wypisana w stopce strony.
+
 ## Ciężko na sercu (Trójka)
 
 1. Prowadzącym jest **Jarek Szubrycht** — pisownia stała, nie zmieniała się od początku

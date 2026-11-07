@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "66636938-8f22-4cb5-8516-f54159c975a7",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.331Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.785Z",
   "durationSec": 7216,
   "summary": "Audycja w całości poświęcona była amerykańskiej scenie black metalowej, oprowadzanej wokół książki Daniela Lake'a \"USBM. Amerykański black metal. Rewolucja tożsamości\" (wyd. Inrock). Omówiono m.in. Acheron, Von, Apsu, Grand Belial's Key i Profanaticę (Paul Ledney) jako pionierów gatunku, a także Leviathana (Jef Whitehead) jako czołową postać sceny. Przedstawiono Xasthura (Scott Conner), który po latach black metalu przeszedł w stronę mrocznego folku i zapowiada na październik album \"Open to Misinterpretation\", oraz Usurper z Chicago grający klasyczny, surowy metal. Osobno omówiono Cobalt (zmarły rok wcześniej lider Erik Wunder), Wolves in the Throne Room (bracia Weaver i ich związek z naturą), Panopticon (Austin Lunn, albumy Kentucky i Laurentian Blue łączące black metal z folkiem i tematyką robotniczą), Liturgy oraz Deafheaven i ich album Sunbather, który wywołał spór o przynależność gatunkową. Na koniec wymieniono zespoły pominięte w książce lub debiutujące później: Yellow Eyes, Nechochwen i Black Braid.",
   "topics": [
@@ -165,6 +165,18 @@
       "type": "event",
       "source": "transcript",
       "at": 5804
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -326,5 +338,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

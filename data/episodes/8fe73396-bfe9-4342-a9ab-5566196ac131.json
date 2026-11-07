@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "8fe73396-bfe9-4342-a9ab-5566196ac131",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.353Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.821Z",
   "durationSec": 6851,
   "summary": "Audycja w całości poświęcona jest zapowiedziom festiwali metalowych i pokrewnych na nadchodzący sezon. Omówiono m.in. norweski Inferno Festival (2-5 kwietnia) z Mayhem, Enslaved i Old Man's Child, holenderski Roadburn (16-19 kwietnia) z Cult of Luna, Boris i Today Is the Day oraz gdański Mystic Festival (początek czerwca) z Megadeth, Behemoth, Mastodon i mocną reprezentacją amerykańskiej sceny sludge. Przedstawiono też nowy warszawski Summer Punch (18-19 czerwca) z Babymetal i Bad Omens, duński Copenhell (24-27 czerwca) z Iron Maiden i hołdem dla Bathory oraz pierwszą edycję szczecińskiego Hell's Bells (26-27 czerwca), łączącego metal z punkiem (Possessed, U.D.O., Vader, Dis-chord, Cockney Rejects). Omówiono czeski Obscene Extreme w Trutnovie (1-5 lipca) z Converge i Macabre (w tym akustyczny projekt Macabre Minstrels), kolidujące terminy OFF Festivalu w Katowicach i Brutal Assault w Józefowie (5-8 sierpnia, z Body Count, Primus, Vardruna), norweski Midgardsblot (połowa sierpnia) celebrujący kulturę wikingów oraz kończący sezon Summer Dying Loud w Aleksandrowie Łódzkim (3-5 września) z Satyricon i Behemotem. Prowadzący wspomina też o swojej wcześniejszej pracy przy OFF Festivalu oraz dzieli się osobistymi rekomendacjami co do konkretnych koncertów i odkryć.",
   "topics": [
@@ -230,6 +230,18 @@
       "type": "event",
       "source": "transcript",
       "at": 5631
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -378,5 +390,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

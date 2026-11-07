@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "bd1b784e-1ec9-4f17-b172-a29092f01023",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.398Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.904Z",
   "durationSec": 6910,
   "summary": "Odcinek jest podsumowaniem lutowych nowości metalowych, otwartym albumem Gold formacji Scour, w którym Phil Anselmo łączy black metal z grindem i thrashem, a zamykanym płytą Entheos polskiego projektu Barra, w którym grają muzycy Mordy Stigmata i Jarun. Wątek deathmetalowy reprezentują Vacuous z In His Blood, odwołujący się do brzmienia sprzed ćwierćwiecza, oraz Grave Infestation z Carnage Gathers, a także siódma płyta Obscury Assonication, przy której podkreślono techniczne mistrzostwo Steffena Kummerera. Blackmetalową część remanentu wypełniają The Owl z Iwa Ave, czerpiący z prozy Federica Garcíi Lorki i Sylvii Plath, The Decline of the Eye z Wilhelma opartego na filozofii egzystencjalnej, oddany Lovecraftowi The Great Old Ones z Kadath, bawarski Grab z Kremes oraz kanadyjski Unrequited z blackgaze'owym Pathway to the Moon. Osobno omówiono wolniejsze, ciężkie granie: Hangman's Chair z Sediction wydanym w walentynki, debiutancki album Year of the Cobra, sludge'owy 16 z Guides for the Misguided uznanym za jeden z najlepszych materiałów roku, Indian Nightmare na pograniczu metalu i punk rocka oraz Love Is Noise z To Live In A Different Way. Przywołano też ukraiński Jinjer i jego piątą płytę Duel oraz kompilację szwedzkiego Mercyless Behind the Realms of the Dark, zbierającą demówki starsze niż debiut The Awakening z 1990 roku. Zapowiedziano także wspólną trasę Toń i Whitcraft po Polsce i towarzyszący jej split Księgi Wieczyste, którego strony noszą tytuły Grunty Leśne i Grunty Rolne.",
   "topics": [
@@ -228,6 +228,18 @@
       "type": "work",
       "source": "transcript",
       "at": 6449
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -454,5 +466,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

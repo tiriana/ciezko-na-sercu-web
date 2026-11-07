@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "b2cafc7b-95ff-458a-a660-508f01644315",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.387Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.887Z",
   "durationSec": 6939,
   "summary": "Odcinek w całości poświęcony majowym nowościom płytowym — polskim i zagranicznym. Z Polski omówiono czwartą płytę Hostii Razor Blade Psalms (nieco ponad 20 minut „gęstej” muzyki), metalcore'owy mini album The Method Rituals, wydany przez kalifornijską Sick and Strike i inspirowany zapomnianą, tajemniczą kulturą tubylczą Polski sprzed stuleci, deathmetalową epkę Chainsword Chapter 12, pożegnalny singiel rozwiązanej grupy Itaka oraz nowofalowy, ciemny debiut Bezkresu w Pagan Records, łączony z rozwiązaniem formacji Kły. Z zagranicy: nepalsko-nowojorski grind Chepang z płytą Yehappa w Relapse, powrót tajwańskiego Chthonic po latach przerwy z singlem Endless Eons i zapowiedzią wzmożonej aktywności koncertowej i wydawniczej, fiński ...And Oceans z siódmym albumem The Regeneration Itinerary oraz hiszpański Balmog z Lajo. Wątek weteranów obejmuje 40-lecie Candlemass z mini albumem Black Star, Death SS z koncepcyjnym The Entity inspirowanym pismami Crowleya i opowieścią Stevensona, powrót The Haunted po ośmiu latach z Songs of Last Resort, a także Ossuary, Anthropomorphia, Pandemię, Leper Colony i Jade. Odcinek zamykają apokaliptyczna amerykana Lux Interny (New Wilderness Gospel) i muzyka Year of No Light do filmu Szaleni Władcy Jeana Rousha. Osobno omówiono nową płytę Steve'a von Tilla Alone in a World of Wounds — z zaproszeniem na jego koncerty w Krakowie i Warszawie pod koniec czerwca.",
   "topics": [
@@ -275,6 +275,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 5970
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -579,5 +591,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "ea141138-f73e-46e5-8ee7-b9c58ad3c7df",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.372Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.852Z",
   "durationSec": 7067,
   "summary": "Tematem odcinka są wokaliści, których odejście wydawało się końcem zespołu. Punktem wyjścia jest rozstanie Aarona Stainthorpe'a z My Dying Bride i spór fanów o to, czy grupa przetrwa bez jego charakterystycznego, czystego lamentu. Jako kontrprzykłady przywołane zostają Morbid Angel ze Stevem Tuckerem na Formulas Fatal to the Flesh, Entombed z Nickiem Anderssonem na Clandestine, Cannibal Corpse z George'em \"Corpsegrinderem\" Fisherem, Decapitated z Sauronem i Cowanem, Napalm Death z Lee Dorrianem i Barneyem Greenwayem, The Dillinger Escape Plan z Gregiem Puciato, Candlemass z Björnem Flodkvistem oraz Exodus z kolejnymi frontmanami. Osobno omówione są Iron Maiden i Van Halen, gdzie zmiana wokalisty nie przesądziła o wartości muzyki, a na końcu Black Sabbath z Ozzym i Ronniem Jamesem Dio, którego prowadzący uznaje za swojego pierwszego wokalistę zespołu. Wniosek jest taki, że niepowtarzalnego głosu nie da się podrobić, ale można zrobić coś innego i wcale nie gorzej.",
   "topics": [
@@ -139,6 +139,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 3934
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -287,5 +299,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

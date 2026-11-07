@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "03b82724-53fd-46a0-b717-a6aec3542d9d",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.398Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.903Z",
   "durationSec": 6863,
   "summary": "Druga część lutowego remanentu uzupełnia przegląd najlepszych wydawnictw miesiąca o dwie płyty pominięte w poprzednim odcinku: niemiecki Mantar z albumem Post-Apocalyptic Depression (nazwa zespołu znaczy po turecku „grzyb”, muzyka jest ostra w smaku) oraz polską Uliatę Digir, której materiał to raptem sześć utworów, ale blisko 40 minut pokręconej, dziwnej i fascynującej muzyki. Główną treść odcinka stanowi comiesięczny przegląd marcowych koncertów w Polsce, w którym Tribulation opisano jako zespół po ewolucji od piwnicznego death i black metalu przez psychodelę do formy łagodniejszej, lecz trudniejszej do przyswojenia, Master jako nieprzerwanie trwających pionierów death metalu, a Udo Dirkschneidera jako jeden z najważniejszych głosów klasycznego europejskiego metalu, wciąż w formie w wieku 72 lat. Dom Zły wskazano jako zespół coraz mroczniejszy i bardziej ekstremalny, który po trasie po Polsce wyjeżdża na podbój Europy z Zeal & Ardor — zdaniem prowadzącego to potencjalny towar eksportowy. Wspomniano też o wyprzedanym festiwalu Death is not the end we Wrocławiu, zdominowanym przez piwniczny undergroundowy death metal. Krytycznie oceniono Zakk Wylde’a za skupienie się na cover bandach (Pantera, Zakk Sabbath), chwalono Turbo jako grupę, która wróciła do właściwej formuły i wydaje materiał najwyższej jakości dzięki Wojciechowi Hoffmanowi, a koncert Cult of Fire z orkiestrą symfoniczną na Brutal Assault określono jako całkowicie niezrozumiały i nieudany.",
   "topics": [
@@ -375,6 +375,18 @@
       "type": "event",
       "source": "transcript",
       "at": 5272
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -601,5 +613,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

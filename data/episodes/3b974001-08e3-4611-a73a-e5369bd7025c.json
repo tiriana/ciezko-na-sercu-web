@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "3b974001-08e3-4611-a73a-e5369bd7025c",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.355Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.823Z",
   "durationSec": 6942,
   "summary": "Audycja jest przeglądem koncertów metalowych i pokrewnych gatunków zaplanowanych w Polsce na marzec. Omówiono m.in. trasę Trucizny i Pralai pod szyldem \"The Devil's March\", trzy koncerty Godspeed You Black Emperor, występ Michaela Schenkera z programem \"Moje lata z UFO\" oraz trasę Between the Buried and Me promującą album \"The Blue Nowhere\". Szeroko przedstawiono cięższy koniec sceny: Kanonenfieber, Avatar z Alien Weaponry i Agabas, Epikę z Amaranthe i Charlotte Wessels na Torwarze, Heaven Shall Burn z The Halo Effect, Xasthura, Unsane oraz Lord of the Lost w trasie \"Tournoir\". Osobno omówiono wydarzenia 28 marca, w tym finał konkursu Road to Mystic w Gdańsku z towarzyszącym pokazem Road to Mystic Showcase oraz koncert Frontside promującego nowy album \"Nemezis\" z nowym wokalistą. Na zakończenie wspomniano trasę szwedzkiego Lik z najnowszą płytą \"Nekro\".",
   "topics": [
@@ -22,7 +22,7 @@
       "label": "Michael Schenker – koncert w Warszawie 7 marca oraz Dougie White i Rainbow"
     },
     {
-      "start": 1590,
+      "start": 1610,
       "end": 1699,
       "label": "Kanonen Fiber i towarzyszące im projekty (Avatar, Alien Weaponry, Agabas) oraz ich występy w marcu"
     },
@@ -42,13 +42,13 @@
       "label": "Projekt Xastur i występ w klubie Odessa"
     },
     {
-      "start": 3111,
+      "start": 3216,
       "end": 3376,
       "label": "Turnus Body Snatcher z premierą albumu \"Hell is Here, Hell is Home\""
     },
     {
-      "start": 4267,
-      "end": 4320,
+      "start": 3938,
+      "end": 4062,
       "label": "Nowy album Frontside \"Nemezis\" i trasa koncertowa w marcu"
     },
     {
@@ -57,7 +57,7 @@
       "label": "Koncert ukraińskiego zespołu 1914 w Warszawie (Proxima) 25 marca"
     },
     {
-      "start": 4475,
+      "start": 4523,
       "end": 4563,
       "label": "Koncerty 28 marca w Krakowie z Tottenmesse, Stellar Blight i Myrrh"
     },
@@ -67,7 +67,7 @@
       "label": "Finał konkursu Road to Mystic w Gdańsku 28 marca"
     },
     {
-      "start": 4625,
+      "start": 5225,
       "end": 5245,
       "label": "Road to Mystic Showcase – lineup Snakes, Snakes, Snakes, Belzebong, Medico Peste"
     },
@@ -444,7 +444,7 @@
     },
     {
       "start": 1212,
-      "end": 1590,
+      "end": 1610,
       "durationSec": 399,
       "artist": "Between the Buried and Me",
       "title": "God Terror",
@@ -513,7 +513,7 @@
     },
     {
       "start": 2947,
-      "end": 3111,
+      "end": 3216,
       "durationSec": 214,
       "artist": "Unsane",
       "title": "Stop",
@@ -539,7 +539,7 @@
     },
     {
       "start": 3610,
-      "end": 4062,
+      "end": 3938,
       "durationSec": 330,
       "artist": "1914",
       "title": "1916 (The Südtirol Offensive)",
@@ -552,7 +552,7 @@
     },
     {
       "start": 4062,
-      "end": 4267,
+      "end": 4320,
       "durationSec": 220,
       "artist": "Frontside",
       "title": "Omen",
@@ -566,7 +566,7 @@
     },
     {
       "start": 4380,
-      "end": 4475,
+      "end": 4523,
       "durationSec": 145,
       "artist": "Desaster",
       "title": "Kill the Idol",
@@ -579,7 +579,7 @@
     },
     {
       "start": 4580,
-      "end": 4625,
+      "end": 5225,
       "durationSec": 528,
       "artist": "MYR",
       "title": "Saturnine Child",

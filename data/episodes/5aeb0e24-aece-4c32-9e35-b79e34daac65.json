@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "5aeb0e24-aece-4c32-9e35-b79e34daac65",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.374Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.858Z",
   "durationSec": 6863,
   "summary": "Odcinek poświęcony październikowej scenie koncertowej. Martwa Aura promuje nową płytę \"Lament\" i od 2 do 12 października jedzie w trasę z Towards Hellfire i Annihilation Vortex, a The Materia koncertuje po kraju od 3 do 25 października. Odra i Las Trumien wydały wspólny split \"Breslau Split\", a wraz z Odium zagrają w październiku w Krakowie, Rzeszowie i Wrocławiu oraz w listopadzie w Katowicach, Łodzi i Warszawie. Gościem był Wojtek Kałuża, wokalista Lasu Trumien, który opowiadał o utworze \"Gwóźdź w głowie\", prawdziwych zbrodniach jako podstawie tekstów, czarnym humorze i scenicznym kostiumie, a także o projektach Mentor, Pure Bedlam i Grieving oraz o organizowaniu koncertów i festiwali. Wymieniono też dziesiątki październikowych koncertów, m.in. Testament, Obituary i Destruction we wrocławskim A2, Arch Enemy i Amorphis w Gliwicach, W.A.S.P., Fields of the Nephilim na festiwalu Sound Edit i 40-lecie grupy Halloween w Katowicach.",
   "topics": [
@@ -193,6 +193,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 6637
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -329,6 +341,18 @@
   ],
   "quotes": [],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Wojtek Kałuża",

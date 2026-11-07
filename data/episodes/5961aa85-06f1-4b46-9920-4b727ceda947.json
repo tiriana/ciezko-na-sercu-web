@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "5961aa85-06f1-4b46-9920-4b727ceda947",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.382Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.875Z",
   "durationSec": 6878,
   "summary": "Specjalne wydanie audycji poświęcone Ozzy'emu Osbourne'owi, zmarłemu w wieku 76 lat — wspomnienie jego życia i kariery prowadzone pod hasłem celebracji, a nie żałoby. Rozmówcy omawiali rolę Black Sabbath jako prekursorów heavy metalu oraz solową twórczość Osbourne'a, w tym współprace z innymi artystami (Wu-Tang Clan, Infectious Grooves, Lemmy Kilmister) i gitarzystów przewijających się przez jego składy (Randy Rhoads, Zakk Wylde). Jarek Szubrycht opowiadał o koncertach Ozzfest w Katowicach w 2002 roku i pożegnalnej trasie The End w 2016 roku oraz o autobiografii „Ja, Ozzy”, a Piotr Metz — o nigdy niezrealizowanej sesji w Los Angeles, w której Osbourne miał zaśpiewać w duecie z Krzysztofem Cugowskim, i o tym, że humor oraz dystans do własnego wizerunku odróżniały go od rockowego zadęcia. Michał Grabek-Grabkowski relacjonował ostatni koncert Black Sabbath 5 lipca w Birmingham, z udziałem m.in. Metalliki, Slayera, Pantery, Tool i Guns N' Roses, gdzie Osbourne wystąpił siedząc na tronie, wyraźnie wzruszony. W nagraniach i telefonach słuchaczy powtarzały się wątki pionierskiej roli zespołu, nonkonformizmu wokalisty i jego wpływu na kolejne pokolenia muzyków.",
   "topics": [
@@ -193,6 +193,12 @@
       "type": "concert",
       "source": "transcript",
       "at": 4640
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -368,6 +374,18 @@
   ],
   "quotes": [],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Jarek Szubrycht",

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "b722cf9b-2908-4fea-82d8-1f82f3b74e96",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.397Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.900Z",
   "durationSec": 6827,
   "summary": "Odcinek poświęcony motywowi wiosny w metalu i muzyce ciężkiej. Wiosna jako odnowienie i nadzieja pojawia się w instrumentalnym „The Ides of March” Iron Maiden otwierającym album Killers, w „Renewal” Dimmu Borgir z płyty Abrahadabra, w piętnastominutowym „Awaken from the Dark Slumber Spring” fińskiego Winter Sun, nawiązującym do Vivaldiego, oraz w mistycznym cyklu życia i śmierci na albumie All Stillborn Fires Lick My Heart austriackiej grupy Kringa. Drugi biegun to wiosna jako rozpacz i mrok — „Spring” francuskiego Nocturnal Depression, „wesołkowaty” zdaniem prowadzącego black metal Nargaroth z albumu Jahreszeiten oraz wiosenna depresja włoskiego Forgotten Tomb. Osobny wątek stanowią miesiące i pory roku: „March” belgijskiego Brutus, „Wodzenie” furii z płyty Marzannie, Królowej Polski, „Spring MCMLXXIV” Opeth z bonusowego dysku albumu Sorceress, kwietniowe niebo The Jesus and Mary Chain z Darklands i waszyngtoński hardcore Rites of Spring. Prowadzący przypomina też warszawski April Ethereal, który nazwę wziął od utworu Opeth, a którego muzycy kontynuują działalność w Thezis i Painting, oraz album Amok Sentenced z „Funeral Spring”.",
   "topics": [
@@ -179,6 +179,18 @@
       "type": "artist",
       "source": "tracks",
       "at": 730
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -405,5 +417,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

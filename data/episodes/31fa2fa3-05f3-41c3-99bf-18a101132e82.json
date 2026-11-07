@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "31fa2fa3-05f3-41c3-99bf-18a101132e82",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.392Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.894Z",
   "durationSec": 6899,
   "summary": "Odcinek to przegląd kwietniowych nowości wydawniczych. Wśród nich szósta płyta Ghost „Skeleta\" (premiera 25 kwietnia), oceniana jako rzecz mało odkrywcza, ale dająca przednią zabawę, solowy album Wednesday 13 „Mid-Death Crisis\", „Back from Hell\" Calibana nagrany wspólnie z The Browning oraz „Zenith\" szkockiego Bleed From Within. Zaprezentowano też projekty nietypowe: Quadwium, duet basistów Steve'a DiGiorgio i Jerome'a Paula Thesselinga z perkusistą Jumą van Ekelenem i gitarzystką Eve, a także przedpremierowo „Best of Ramones Redux\" z Voivodem i Fytusem. Omówiono kolejne nowe wydawnictwa: Cytotoxin, Necrotated, Landmarks, The Lord Weird Slough Feg, Pigs Pigs Pigs Pigs Pigs Pigs Pigs, Church of the Sea, The Great Sea, Opia, Warfield, Seagin, Imperishable, Machine Head, Idle Hands, Benediction, Tar, Malfas i In the Woods... Przy Machine Head podkreślono zmianę składu — Vogga zastąpił Reese Scruggs z Hayvok.",
   "topics": [
@@ -235,6 +235,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 2644
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -539,5 +551,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

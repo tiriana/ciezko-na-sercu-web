@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "57355569-d702-4446-ba75-69526f5cdc70",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.389Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.890Z",
   "durationSec": 6839,
   "summary": "Odcinek poświęcony metalowym wersjom utworów spoza metalu — prowadzący odrzucił covery prześmiewcze i przeróbki rockowej klasyki, a zestaw ułożył pod wpływem listy dwunastu najlepszych jego zdaniem metalowych wersji niemetalowych piosenek, opublikowanej przez Łukasza w Knockout Zin. Omówił m.in. Slayera (Verbal Abuse), Judas Priest (Diamonds and Rust Joan Baez), Ministry (Lay Lady Lay Dylana), Napalm Death, Anthrax (Got the Time Joe Jacksona), Celtic Frost (Wall of Voodoo) i Coroner (I Want You, She's So Heavy Beatlesów). Dalej: Sepultura (The Hunt New Model Army), Type O Negative (Summer Breeze), Life of Agony (cover Simple Minds), Gorefest (Autobahn Kraftwerk), Vader (I Feel You Depeche Mode), Behemoth (Hello Space Boy Bowie'ego), Proghma-C (Björk), Marilyn Manson (In the Air Tonight), Carpathian Forest (A Forest The Cure), Imperial Triumphant (Paranoid Android), Voivod (Astronomy Domine) i Shining (21st Century Schizoid Man). Przewijały się wątki wyższości niektórych wersji nad oryginałami, pozycji Boba Dylana jako najczęściej coverowanego twórcy muzyki popularnej oraz trudności, jakie metalowcom sprawia repertuar oparty na innym brzmieniu i śpiewie. Prowadzący opowiedział też, jak Nergal przysłał mu pierwszy album z serii American Recordings Johnny'ego Casha, co odczarowało dla niego country, i zasugerował własny udział w powstaniu behemotowej wersji Hello Space Boy.",
   "topics": [
@@ -221,6 +221,18 @@
       "type": "work",
       "source": "transcript",
       "at": 502
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -499,5 +511,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

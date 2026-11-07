@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "112c188d-1818-4215-bba3-9348f032ccba",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.384Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.880Z",
   "durationSec": 6851,
   "summary": "Odcinek to lipcowy kalendarz koncertowy — prowadzący omawia festiwale i trasy, które odbędą się w Polsce w ciągu miesiąca. Wśród festiwali wymieniono darmowe Inne Brzmienia w Lublinie (3–6 lipca, m.in. Voivod, A Place to Bury Strangers, Petbrick, Lee Ranaldo, Yonatan Gat i The Ex), Rockowisko w Zwierzyńcu z Soufly i Samael, Castle Party w Bolkowie z Carpenter Brut, Red Smoke w Pleszewie (Kadavar, Monolord, Sunnata) oraz Pol'and'Rock w Czaplinku-Broczynie (Zeal & Ardor, Paradise Lost, Fear Factory). Z koncertów zapowiedziano m.in. Body Void w Warszawie, węgierski Sear Bliss (wyróżniany puzonem, rzadkim w black metalu), Impiety z Singapuru, Judas Priest w Łodzi z Glory Hammer, Massacre w Krakowie, wspólny występ Heilung i The HU we Wrocławiu, Antichrist Siege Machine, amerykański Ossuary, D.R.I., Yoth Iria z Sarcatorem, Gaerę i Queens of the Stone Age. Zestawienie Heilung z The HU oceniono jako znakomity pomysł, choć wobec zwrotu The HU w stronę generycznego amerykańskiego new metalu wyrażono wątpliwości. Przy okazji Fear Factory mówiono o zmianie wokalisty — Burton C. Bell wypadał na żywo różnie, a Milo Silvestro radzi sobie świetnie — oraz o nowym singlu Paradise Lost o ciszy jak grób, zwiastującym album Ascension z premierą we wrześniu.",
   "topics": [
@@ -289,6 +289,18 @@
       "type": "event",
       "source": "transcript",
       "at": 5985
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -450,5 +462,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

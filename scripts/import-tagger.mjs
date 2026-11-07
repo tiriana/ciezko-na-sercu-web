@@ -87,7 +87,36 @@ async function readInsights(sourceId) {
   }
 }
 
+// Stałe obsady nie wynikają z rozpoznawania: audycję prowadzi Jarek Szubrycht, a wydaje
+// Mariusz Owczarek. Wyjątki (zastępstwo) przychodzą z taggera i wtedy nie dopisujemy nikogo.
+const HOST = 'Jarek Szubrycht';
+const PUBLISHER = 'Mariusz Owczarek';
+
+const withHouseCredits = (credits) => {
+  const next = [...credits];
+  const hasOtherHost = next.some((credit) => credit.role === 'prowadzący' && credit.name !== HOST);
+  if (!hasOtherHost && !next.some((credit) => credit.role === 'prowadzący')) {
+    next.push({ role: 'prowadzący', name: HOST, time: 0, quote: '' });
+  }
+  const hasPublisher = next.some((credit) => credit.role === 'wydawca' || credit.role === 'producent');
+  if (!hasPublisher) next.push({ role: 'wydawca', name: PUBLISHER, time: 0, quote: '' });
+  return next;
+};
+
+const creditsToTags = (credits) =>
+  credits
+    .filter((credit) => credit.name === HOST || credit.name === PUBLISHER)
+    .map((credit) => ({ id: tagId(credit.name), label: credit.name, type: 'person', source: 'credits' }));
+
 const toContract = (episode, analyzedAt, id, insights) => {
+  const houseCredits = withHouseCredits([
+    ...(episode.credits ?? []).map((credit) => ({
+      role: credit.role,
+      name: credit.name,
+      time: Math.round(credit.time ?? 0),
+      quote: credit.quote ?? '',
+    })),
+  ]);
   const quotes = new Map();
   for (const track of episode.tracks ?? []) {
     if (!track.quote) continue;
@@ -131,6 +160,7 @@ const toContract = (episode, analyzedAt, id, insights) => {
         at: guest.at == null ? undefined : Math.round(guest.at),
       })),
       ...(insights?.mentions ?? []).filter((mention) => MENTION_KINDS[mention.type]).map(mentionTag),
+      ...creditsToTags(houseCredits),
     ].filter((tag, index, all) => all.findIndex((other) => other.id === tag.id) === index),
     tracks: (episode.tracks ?? []).map((track) => ({
       start: Math.round(track.start),
@@ -144,15 +174,7 @@ const toContract = (episode, analyzedAt, id, insights) => {
       links: [],
     })),
     quotes: [...quotes.values()].sort((a, b) => a.start - b.start),
-    credits: [
-      ...(episode.credits ?? []).map((credit) => ({
-        role: credit.role,
-        name: credit.name,
-        time: Math.round(credit.time ?? 0),
-        quote: credit.quote ?? '',
-      })),
-      ...guestCredits,
-    ],
+    credits: [...houseCredits, ...guestCredits],
   };
 };
 

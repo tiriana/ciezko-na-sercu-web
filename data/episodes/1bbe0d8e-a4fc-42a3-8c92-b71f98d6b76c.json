@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "1bbe0d8e-a4fc-42a3-8c92-b71f98d6b76c",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.378Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.864Z",
   "durationSec": 6872,
   "summary": "Odcinek krąży wokół lżejszego niż zwykle, ale wciąż ciężkiego brzmienia: punktem wyjścia jest Mike Patton, którego głos łączy Naked City i Johna Zorna z utworem do filmu Funny Games Michaela Haneke oraz koncertem Faith No More z Brixton Academy z 1990 roku. Sporo miejsca dostaje nowa płyta Deftones Private Music, której kolejne utwory zestawiono z White Pony sprzed 25 lat i zapowiedzią koncertu w łódzkiej Atlas Arenie. Pojawia się Pink Floyd — remaster koncertu Live at Pompeii z 1972 roku, polecany jako uniwersalny towarzysz drogi, wraz z The Great Gig in the Sky. Metallica daje pretekst do rozmowy o Ride the Lightning, rocznicy wydania ...And Justice for All, wyciętej partii Jasona Newsteda oraz o gitarowym kunszcie Jamesa Hetfielda i komponowaniu Larsa Ulricha. Omówione są też nowy album Coronera Dissonance Theory, pierwszy od 1993 roku, szwedzki Feared i Ola Englund z domowym brzmieniem opartym na Engl Savage i Mesie Boogie Dual Rectifier, a także Entombed i Mamaleek. Wspomniany jest zmarły 20 sierpnia w wieku 51 lat Brent Hinds z Mastodon, któremu oddano hołd, oraz zespół Pile z utworem Born at Night.",
   "topics": [
@@ -58,12 +58,12 @@
     },
     {
       "start": 6252,
-      "end": 6260,
+      "end": 6254,
       "label": "Pile i Born at Night"
     },
     {
-      "start": 6284,
-      "end": 6608,
+      "start": 6254,
+      "end": 6260,
       "label": "Hołd dla Breta Hinsha z Mastodon"
     }
   ],
@@ -163,6 +163,12 @@
       "type": "concert",
       "source": "transcript",
       "at": 1296
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -402,7 +408,7 @@
     },
     {
       "start": 6260,
-      "end": 6284,
+      "end": 6608,
       "durationSec": 313,
       "artist": "Pile",
       "title": "Born at Night",
@@ -440,6 +446,12 @@
       "name": "Michał Kowarski",
       "time": 6,
       "quote": "Adam Hrynkiewicz, Michał Kowarski. Meldujemy się na stanowisku."
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
     }
   ]
 }

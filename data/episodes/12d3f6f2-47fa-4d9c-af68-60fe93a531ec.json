@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "12d3f6f2-47fa-4d9c-af68-60fe93a531ec",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.380Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.869Z",
   "durationSec": 6889,
   "summary": "Odcinek w dużej mierze poświęcony zapowiedziom sierpniowych koncertów i festiwali oraz premier płytowych. Punktem wyjścia jest Ossuary i album Abhorrent Worship, kupiony w wersji fizycznej od samej wokalistki po koncercie w krakowskim Warsztacie, gdzie zespół zagrał z Mental Funeral — nazwanym oczywistym hołdem dla Autopsy — oraz z czeskim Cancer Void. Prowadzący przekonuje, że warto chodzić na małe, podziemne koncerty, i zapowiada m.in. Mammoth Grinder, Iron Maiden z Avatarem na Stadionie Narodowym, OFF Festival w Katowicach, Machine Head z Fear Factory i Frail, Silesian Noise z Ministry i Mastodonem, Dark Angel grający cały album Darkness Descends w hołdzie zmarłemu gitarzyście, Mayhem, Suffocation, Summer Discomfort oraz Gojirę w Tauron Arenie. W części płytowej omawia m.in. Ul peruwiańskiego Mauiza i jego związki z kulturą Mapuczów, The Exodus of Gravity Arcadii, EP-kę Car Bomb, debiut Accust, Blood Strangen Blessings, Bring Mirrors to the Surface Za to krew, nowy album Abigail Williams, Beheaded, Entrails, The Summoning Bell Malthusiana oraz piętnasty album Unleashed. Podkreśla, że latem płyty łatwiej przegapić, i zapowiada, że do Mauizy oraz Malthusiana jeszcze będzie wracał.",
   "topics": [
@@ -312,6 +312,18 @@
       "type": "event",
       "source": "transcript",
       "at": 4589
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -551,5 +563,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "b27a7c0f-4ac8-4e09-a557-9c9fa5a9f988",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.381Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.872Z",
   "durationSec": 6707,
   "summary": "Odcinek poświęcony zmarłemu w wieku 76 lat Ozzy'emu Osbornowi — celebracja jego życia i kariery z przeglądem twórczości Black Sabbath, płyt solowych i licznych współprac. Jarek Szubrycht mówił o solowych składach Ozzy'ego i przewijających się przez nie gitarzystach (Randy Rhoads, Zakk Wylde), o roli Sharon Osbourne, która uratowała mu życie i karierę, oraz wspominał własne koncerty: Ozzfest w katowickim Spodku w 2002 roku i pożegnalną trasę Black Sabbath The End w 2016 roku. Podkreślał humor i dystans Ozzy'ego do własnego wizerunku, a jego autobiografię „Ja, Ozzy” wskazywał jako źródło opowieści, przy których trudno się nie popłakać ze śmiechu. Piotr Metz rozwijał wątek poczucia humoru i rock'n'rollowego zadęcia, które Ozzy rozbrajał, oraz opowiedział o nieudanej sesji w Los Angeles w 1998 roku, gdzie Ozzy miał zaśpiewać w duecie z Krzysztofem Cugowskim utwór Black Sabbath (wśród typów był Paranoid) i piosenkę Budki Suflera, do czego nie doszło z powodu opóźnień po polskiej stronie. Michał Grabek-Grabkowski relacjonował ostatni koncert Black Sabbath 5 lipca w Birmingham, gdzie obok występów Pantery, Tool, Metalliki, Slayera i Guns N' Roses Ozzy pojawił się na tronie — wzruszony, ale wciąż z diabelskim scenicznym wdziękiem. W nagraniach wypowiedzieli się też Macio Moretti, Łukasz Orbitowski i Robert Gajewski, mówiąc o wpływie Black Sabbath na heavy metal i o własnych pierwszych kontaktach z zespołem.",
   "topics": [
@@ -186,6 +186,12 @@
       "type": "concert",
       "source": "transcript",
       "at": 1281
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -348,6 +354,18 @@
   ],
   "quotes": [],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Jarek Szubrycht",

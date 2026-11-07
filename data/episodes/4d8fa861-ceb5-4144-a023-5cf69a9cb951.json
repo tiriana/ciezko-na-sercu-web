@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "4d8fa861-ceb5-4144-a023-5cf69a9cb951",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.413Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.933Z",
   "durationSec": 6818,
   "summary": "Audycja w całości poświęcona jest holenderskiemu festiwalowi Roadburn w Tilburgu (trzeci weekend kwietnia 2024), ulubionemu festiwalowi prowadzącego, na którym bywał już około dziesięciu razy. Wśród omawianych koncertów tegorocznej edycji znalazły się występy Noru, Chelsea Wolfe, Hex Vessel (dwa różne programy, w tym w całości album Polar Vail), Couch Slut (pierwsze europejskie koncerty, wokalistka Megan Ostrositz raniąca sobie głowę mikrofonem, premiera płyty You Could Do It Tonight) oraz Body Void (koncept albumu Atrocity Machine o kapitalizmie i cielesności). Martin Kanja, występujący jako Lord Spikeheart, po rozpadzie duetu Duma wydał debiutancką solową płytę The Adept nakładem własnej wytwórni Hekalu Records, z udziałem gości takich jak Senyawa, Fatboy Sharif i Brodinski, dedykowaną swojej prababci Mutoni wa Kirimie, uczestniczce powstania Mau Mau i jedynej kobiecie w stopniu marszałka polnego w tej walce. Janis Ironfawn z Body Void mówiła o tematyce kapitalizmu i cielesności na płycie Atrocity Machine oraz o stopniowej zmianie nastawienia metalowej publiczności do osób queer i trans. Walter, dyrektor artystyczny Roadburn, opowiedział o powojennej (po pandemii) ewolucji festiwalu od imprezy stricte metalowej ku szerzej pojętej \"ciężkiej muzyce\", obejmującej też rap (Clipping), folk (Lankum) czy Jesus and Mary Chain, oraz o tym, że program kształtuje wizja artystyczna, a nie oczekiwania publiczności. W ramach Kanonady przypomniano brytyjski zespół Doom i jego album Total Doom z 1989 roku, nawiązując do koncertu tej grupy na Roadburn w 2012 roku.",
   "topics": [
@@ -12,7 +12,7 @@
       "label": "Wprowadzenie i zapowiedź, że audycja będzie poświęcona festiwalowi Roadburn"
     },
     {
-      "start": 540,
+      "start": 547,
       "end": 591,
       "label": "Opis koncertów i artystów występujących na Roadburn 2024, m.in. White World, Noru, Chelsea Wolfe"
     },
@@ -22,8 +22,8 @@
       "label": "Szczegółowa dyskusja o Hex Vessel, ich albumie \"Polar Vail\" i tradycji festiwalu"
     },
     {
-      "start": 1228,
-      "end": 1440,
+      "start": 1506,
+      "end": 1580,
       "label": "Prezentacja solowej płyty Lorda Spikearta \"The Adept\" oraz gości i współpracowników"
     },
     {
@@ -72,7 +72,7 @@
       "label": "Problemy organizacyjne po pandemii: inflacja, dostępność zespołów i konieczność redefinicji tożsamości festiwalu"
     },
     {
-      "start": 4577,
+      "start": 4637,
       "end": 4728,
       "label": "Opis festiwalu Roadburn – jego progresywny charakter, dominacja black i death metalu oraz atmosfera w Tilburgu"
     },
@@ -82,7 +82,7 @@
       "label": "Prezentacja brytyjskiego zespołu Doom i ich albumu Total Doom z 1989 roku"
     },
     {
-      "start": 5409,
+      "start": 5609,
       "end": 5660,
       "label": "Wzmianka o grupie Kanata, ich utworze It Wants To Fly oraz płycie To Be Crew"
     },
@@ -258,6 +258,18 @@
       "type": "work",
       "source": "transcript",
       "at": 2424
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -277,7 +289,7 @@
     },
     {
       "start": 457,
-      "end": 540,
+      "end": 547,
       "durationSec": 91,
       "artist": "Knoll",
       "title": "Fettered Oath",
@@ -304,7 +316,7 @@
     },
     {
       "start": 973,
-      "end": 1228,
+      "end": 1440,
       "durationSec": 277,
       "artist": "Hexvessel",
       "title": "The Tundra Is Awake",
@@ -318,7 +330,7 @@
     },
     {
       "start": 1440,
-      "end": 1580,
+      "end": 1506,
       "durationSec": 67,
       "artist": "Lord Spikeheart",
       "title": "33rd Degree Access (feat. Backxwash & SAIONJI BBBBBBB)",
@@ -401,7 +413,7 @@
     },
     {
       "start": 4370,
-      "end": 4577,
+      "end": 4637,
       "durationSec": 267,
       "artist": "Inter Arma",
       "title": "Desolation's Harp",
@@ -442,7 +454,7 @@
     },
     {
       "start": 5297,
-      "end": 5409,
+      "end": 5609,
       "durationSec": 313,
       "artist": "Doom",
       "title": "Agree To Differ",
@@ -518,6 +530,18 @@
     }
   ],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Martin Kanja (Lord Spikeheart)",

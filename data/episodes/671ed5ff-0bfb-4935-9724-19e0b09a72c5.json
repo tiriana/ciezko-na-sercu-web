@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "671ed5ff-0bfb-4935-9724-19e0b09a72c5",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.412Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.928Z",
   "durationSec": 6817,
   "summary": "Odcinek w całości poświęcony festiwalowi Summer Dying Loud w Aleksandrowie Łódzkim — jego 15. edycji, na którą złożyło się 51 kapel z całego świata grających przez trzy dni na dużej scenie i w klubowej Krypcie. Z pierwszego dnia prowadzący relacjonuje koncert Antichrist Siege Machine promujący album Vengeance of Eternal Fire oraz zawiedziony występ Mayhem, oskarżony o muzealny, gablociany charakter widowiska na 40-lecie zespołu, a także zamykający noc koncert Wolvenest. Z drugiego dnia omówione zostały m.in. Masakra (płyta Live in Poland nagrana w warszawskim Voodoo), King Dude, nieudany powrót Immemorial z płytą Rebirth, Primordial, Overkill z krążkiem Scorched zagrany bez basisty D.D. Verniego, Aluc Todolo z albumem Lux, Moonspell i reaktywowany Obscure Sphinx. Osobny wątek to kulisy organizacji: problemy techniczne, logistyka trasy Overkill, spóźnienia i zespół Masakra, który przyjechał bez własnych instrumentów. Całość dopełnia rozmowa z organizatorem o formule festiwalu, relacjach z miastem i planach na 2025 rok. Prowadzący wspomina też wyjazd do Niemiec na spotkanie z zespołem Opeth i odsłuch nowej płyty, którego efekty zapowiedziano w kolejnej audycji.",
   "topics": [
@@ -27,8 +27,8 @@
       "label": "Krytyka występu Mayhem i prezentacja zespołu Coldbran"
     },
     {
-      "start": 1922,
-      "end": 2011,
+      "start": 2447,
+      "end": 2505,
       "label": "Podsumowanie drugiego dnia – koncert Masakrę i utwór Death Metal Forever"
     },
     {
@@ -52,7 +52,7 @@
       "label": "Porównanie albumu Overkill \"Scorched\" z Metalliką i dyskusja o scenie metalowej"
     },
     {
-      "start": 4320,
+      "start": 4328,
       "end": 4405,
       "label": "Prezentacja francuskiego zespołu Aluc Todolo i ich albumu \"Lux\" oraz podsumowanie festiwalu"
     },
@@ -67,7 +67,7 @@
       "label": "Ocena występów headlinerów – Mayhem, Godflesh, The Crown i Overkill – i ich energetyczny wpływ na publiczność."
     },
     {
-      "start": 5620,
+      "start": 6083,
       "end": 6100,
       "label": "Rola Aleksandrowa Łódzkiego jako miasta‑gospodarza oraz integracja uczestników festiwalu."
     },
@@ -208,6 +208,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 977
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -267,7 +279,7 @@
     },
     {
       "start": 1658,
-      "end": 1922,
+      "end": 2011,
       "durationSec": 301,
       "artist": "Koldbrann",
       "title": "Fortærer Av Minne Og Form",
@@ -280,7 +292,7 @@
     },
     {
       "start": 2011,
-      "end": 2505,
+      "end": 2447,
       "durationSec": 437,
       "artist": "Wolvennest",
       "title": "Accabadora",
@@ -333,7 +345,7 @@
     },
     {
       "start": 4107,
-      "end": 4320,
+      "end": 4328,
       "durationSec": 221,
       "artist": "Overkill",
       "title": "The Surgeon",
@@ -374,7 +386,7 @@
     },
     {
       "start": 5596,
-      "end": 5620,
+      "end": 6083,
       "durationSec": 244,
       "artist": "The Crown",
       "title": "Total Satan",
@@ -435,6 +447,18 @@
     }
   ],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Tomasz Barszcz",

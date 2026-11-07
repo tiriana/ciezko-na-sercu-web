@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "c1f69944-7eda-4555-b407-26473451deac",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.314Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.762Z",
   "durationSec": 6862,
   "summary": "Odcinek to przegląd koncertów metalowych w Polsce w październiku: od ekstremalnych pakietów (Voidhanger, Koroner, Belfegor, Xandria, Der Weg Einer Freiheit z Conjurer) po duże wydarzenia, jak wspólna trasa Behemoth, Dimmu Borgir i Dark Funeral w katowickim Spodku oraz festiwale Black Waves w Jarocinie i nowy Death Ceremony w Katowicach z Tomem Gabrielem Warriorem (Triumph of Death), Bloodbath i Asphyx. Omówiono trasę Deep Purple promującą album Splat, koncert Europe z okazji 40-lecia utworu The Final Countdown i premiery płyty Come This Madness, a także występy Haken, Mistyrmink, Orans i Pazuzu z islandzkim Mur, Amon Amarth z Orbit Culture i Soywork oraz japońskiego Boris z Planning for Burial. Przy okazji trasy mongolskiego Dehu prowadzący odniósł się do historycznych podbojów Czyngis-chana jako tła dla estetyki zespołu. Wspomniano też o problemach Blinded 23, których jesienną trasę promującą album Deuterium ograniczyło zniknięcie organizatora z pieniędzmi.",
   "topics": [
@@ -17,17 +17,17 @@
       "label": "Ekstremalne koncerty 2 października – Havok, Blood Red Throne i goście"
     },
     {
-      "start": 735,
-      "end": 842,
+      "start": 1205,
+      "end": 1211,
       "label": "Festiwal Black Waves w Jarocinie i zapowiedź zagranicznych zespołów"
     },
     {
-      "start": 1205,
+      "start": 1211,
       "end": 1332,
       "label": "Koncert Haken w Warszawie oraz premiera mini‑albumu „In A Fevered Dream\""
     },
     {
-      "start": 2880,
+      "start": 2966,
       "end": 3039,
       "label": "Trasy i koncerty Mistyrmink oraz After Glam Tour"
     },
@@ -57,18 +57,18 @@
       "label": "Nadchodząca trasa black‑metalowych potęg Behemoth, Dimmu Borgir i Dark Funeral w październiku"
     },
     {
-      "start": 5628,
+      "start": 5886,
       "end": 5938,
       "label": "Koncert Amon Amarth w Prezero Arenie Gliwice 29 października"
     },
     {
       "start": 6206,
-      "end": 6413,
+      "end": 6346,
       "label": "Festiwal Death Ceremony w Katowicach z Tomem Gabriel Warriorem i zespołami death/black metalowymi"
     },
     {
-      "start": 6862,
-      "end": 6862,
+      "start": 6346,
+      "end": 6413,
       "label": "Polskie koncerty Boris i Planning for Burial 31 października – 1 listopada"
     }
   ],
@@ -453,7 +453,7 @@
     },
     {
       "start": 505,
-      "end": 735,
+      "end": 842,
       "durationSec": 241,
       "artist": "Havok",
       "title": "Fifth Generation Warfare",
@@ -520,7 +520,7 @@
     },
     {
       "start": 2539,
-      "end": 2880,
+      "end": 2966,
       "durationSec": 358,
       "artist": "Conjurer",
       "title": "Let Us Live",
@@ -615,7 +615,7 @@
     },
     {
       "start": 5283,
-      "end": 5628,
+      "end": 5886,
       "durationSec": 553,
       "artist": "Dark Funeral",
       "title": "We Are the Apocalypse (Live in Stockholm)",

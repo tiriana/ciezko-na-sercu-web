@@ -1,5 +1,6 @@
 ---
 import { getCatalog } from '../lib/data';
+import { version } from '../../package.json';
 
 const catalog = await getCatalog();
 ---
@@ -28,4 +29,7 @@ const catalog = await getCatalog();
       </ul>
     </div>
   </div>
+  <p class="site-footer__version" aria-label={`Wersja ${version}`}>
+    <a href="https://github.com/tiriana/ciezko-na-sercu-web/releases" rel="noopener noreferrer">{version}</a>
+  </p>
 </footer>

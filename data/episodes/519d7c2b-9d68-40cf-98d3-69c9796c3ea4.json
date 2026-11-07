@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "519d7c2b-9d68-40cf-98d3-69c9796c3ea4",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.370Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.847Z",
   "durationSec": 6826,
   "summary": "Audycja podsumowuje listopadowe premiery płytowe z metalu i pokrewnych gatunków. Omówiono m.in. krakowski Acid Sitter i album \"Escape from Eagle Land\", czeski Masters Hammer, który na płycie \"Maldoror Disco\" odszedł od black metalu w stronę elektroniki, z udziałem Genesisa P-Orridge'a, oraz węgiersko-apalaski projekt The Devil's Trade Dawida Mako, którego utwór tytułowy jest elegią dla zmarłej niedawno matki artysty. Przedstawiono koncepcyjny album \"Viribus Unitis\" ukraińskiego zespołu 1914, opowiadający o Iwanie, Ukraińcu z Lwowa, uczestniku I wojny światowej, z gościnnym udziałem Aarona Stainthorpe'a z My Dying Bride, a także nowości fińskiego Dome Runner (\"World Panopticon\"), niemieckiego Unprocessed (\"Angel\", gościnnie Celi z Paleface Swiss) i irlandzkiego Prayers, którego debiut \"The Wounded Healer\" inspirowany jest pismami Carla Gustava Junga. Szeroko omówiono trzeci album Pupil Slicer \"Flashwork\", wskazany jako ulubiona płyta miesiąca prowadzącego, oraz wspólny album Chat Pile i Haydena Pedigo \"In the Earth Again\". Wspomniano też \"Echoes in Eternity\" Agnostic Front - pierwszy album nagrany przez Rogera Mireta po wygranej walce z rakiem zdiagnozowanym w 2021 roku, death metalową supergrupę Malefic Throne (muzycy Morbid Angel, Angel Corpse i Origin) z płytą \"The Conquering Darkness\", a także Void Ceremony (\"Abditum\"), Fessus (\"Subcutaneous Tombs\", debiut Australijczyka Brentona Weira mieszkającego w Austrii), Son of a Dying (\"Throne of Ashes\") i Keurig's Core (\"The Womb of the World\", produkcja Grega Chandlera z Ezoteric).",
   "topics": [
@@ -186,6 +186,18 @@
       "type": "artist",
       "source": "tracks",
       "at": 6198
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -438,5 +450,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "61683e30-b030-4c32-b0d7-3bffbf96b7dc",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.399Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.905Z",
   "durationSec": 6858,
   "summary": "Odcinek poświęcony pożegnalnemu koncertowi Black Sabbath w oryginalnym składzie, zaplanowanemu na 5 lipca w Birmingham, z udziałem Oziego Osbourne'a, Tony'ego Iommiego, Geezera Butlera i Billa Warda oraz Metalliki, Slayera, Pantery, Anthraxu, Gojiry, Alice in Chains i Lamb of God, pod dyrekcją muzyczną Toma Morello. Prowadzący tłumaczy, dlaczego nie stanął do wyścigu o bilety — woli pamiętać zespół z czasów, gdy Ozzy był w dobrej formie — i zamiast tego proponuje przegląd europejskich festiwali. Omawia Inferno Festival w Oslo, którego tegoroczna edycja się nie odbędzie po śmierci założyciela Jana Martina Jensena, oraz Roadburn w Tilburgu, reklamowany hasłem o przedefiniowywaniu ciężkości, z Sethem z Neurosis jako rezydentem i występami Swans, Thou i Supplicate. Kolejne polecenia to Desertfest w Berlinie, Obscene Extreme w Trutnovie, Brutal Assault w twierdzy Josefov, Midgard's Blood w Borre pod Oslo oraz ArcTanGent w Bristolu. W tle przewijają się nazwy z line-upów, m.in. Behemoth, Blood Incantation, Godflesh, Mayhem, Wardruna i Melvins.",
   "topics": [
@@ -216,6 +216,18 @@
       "type": "event",
       "source": "transcript",
       "at": 6434
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -416,5 +428,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

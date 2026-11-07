@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "6a6b3644-a24c-41f1-bac3-cee04d120028",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.407Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.919Z",
   "durationSec": 6827,
   "summary": "Odcinek jest przeglądem listopadowych koncertów w Polsce, otwartym występami Soen z fińskim Odland i kanadyjskim TROP — Soen opisano jako zespół łączący przebojowość prawdziwych piosenek z pierwiastkiem progresywnym, rzadko wchodzący w wielominutowe łamańce. Wśród zapowiedzi znalazły się trasa Dream Theater na 40-lecie grupy z powracającym perkusistą Mike'em Portnoyem i nagrywaną szesnastą płytą, a także koncerty Drakonian, Assassin, While She Sleeps, High Vis, Helmet, Alcest, Evergrey, Accept i Sepultury. Osobne wątki poświęcono premierze płyty Mission 3 grupy Planet Hell, nawiązującej do Stanisława Lema, oraz 30-leciu płyty Betty Helmet. Sepulturę przedstawiono jako zespół żegnający się ze sceną, z nowym perkusistą Greysonem Nekrutmanem i supportami Obituary i Jinjer. Lucifer przypomniano przez cover utworu Breakoutu „Poszłabym za Tobą” z tekstem przełożonym na angielski przez Filipa Łobodzińskiego.",
   "topics": [
@@ -263,6 +263,18 @@
       "type": "work",
       "source": "transcript",
       "at": 6400
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -489,5 +501,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

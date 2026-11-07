@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "22997189-a7c5-4550-ba27-5f1ec2d28f77",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.383Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.877Z",
   "durationSec": 6881,
   "summary": "Odcinek jest relacją z tegorocznej edycji czeskiego festiwalu Obscene Extreme w Trutnowie — imprezy odbywającej się od ponad ćwierćwiecza w otoczonym drzewami amfiteatrze, gdzie rządzą grindcore, death metal, punk, crust, hardcore i power violence, a black metal oraz syntezatory są niepożądane. Najwięcej uwagi poświęcono koncertom: japońskiemu Butcher ABC z płytą North of Hell, brazylijskim Agrotoxico i ROT, malezyjskim Perpetual i Tools of the Trade oraz botswańskiemu Overthrustowi, którego występ rozczarował wykonawczo, choć studyjne Infected by Myth wypada znacznie lepiej. Za najważniejsze wydarzenie uznano politycznie zaangażowany występ Discharge, dedykujący utwory Palestyńczykom z Gazy i atakujący polityków, skontrastowany z całkowicie zdystansowanym, bezosobowym Godflesh. Wśród najlepszych koncertów wymieniono żegnających się trasą pożegnalną Francuzów z Inhumate, a także General Surgery z hołdem dla wczesnego Carcass, Cephalic Carnage, Undergang oraz austriacki This Harmonic Orchestra. Opisano też specyficzną atmosferę festiwalu — przyjazną, pozbawioną przemocy mimo radykalnych tekstów i koszulek — oraz stałą tradycję, jaką są skoki ze sceny dzieciaków, a także zabawy i konkursy zespołu Raised by Owls.",
   "topics": [
@@ -207,6 +207,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 5188
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -459,5 +471,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

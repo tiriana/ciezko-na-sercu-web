@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "ed60a96f-419a-42b1-b153-110683462d8b",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.350Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.816Z",
   "durationSec": 7195,
   "summary": "Audycja to comiesięczny przegląd premier metalowych i rockowych z marca 2026. Omówiono polskie wydawnictwa: nową płytę Warmii (Lauks, M Theory Audio), debiut Głodu (Trzecie Słońca, Interstellar Smoke Records) oraz projekt Ukć Łukasza Ikanrasa-Sarnackiego (Anomalie, upadek konającego ćwierćwiecza). Przedstawiono powroty i albumy gwiazd gatunku: Exodus (Goliath, Napalm Records), Lamb of God (Into Oblivion, album o gwałtownym upadku umowy społecznej w Ameryce) oraz Neurosis (An Undying Love for a Burning World) – pierwszy album po dekadzie milczenia, nagrany po odejściu Scotta Kelly'ego (oskarżonego o przemoc domową) i dołączeniu Aarona Turnera (znanego z Isis, Sumac, Old Man Gloom). Omówiono kanadyjski Threat Signal (Revelations, wytwórnia Agonia) oraz duet Meja i Hierarchy (Interwoven), łączący post-rock z synth-punkiem, a także Prostitute, których debiut Attempted Martyr doczekał się reedycji w wytwórni Mute. Zaprezentowano serię premier z pogranicza black/death/thrash metalu: Black Lung (Forever Beyond), Hell Ripper (Kornak, Century Media), Transylvania (Magia Posthuma), Nugtemeron (Demonic Scepter), Guiria (Los, Century Media), Toulouse (Morbid Desires), Winter Filth (The Unhealding Season), Masticator (Total Mastery), Temple of Void (The Crow) i Egregor (It Echoes in the Wind). Audycję zamknął fiński Hanging Garden albumem Isle of Bliss, łączącym death metal z gothic doom.",
   "topics": [
@@ -200,6 +200,18 @@
       "type": "artist",
       "source": "tracks",
       "at": 5380
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -452,5 +464,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

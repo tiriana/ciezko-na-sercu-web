@@ -2,6 +2,7 @@
 import { ClientRouter } from 'astro:transitions';
 
 import AudioBar from '../components/AudioBar.astro';
+import { version } from '../../package.json';
 import '../styles/fonts.css';
 import '../styles/global.css';
 
@@ -24,6 +25,7 @@ const buildDate = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="version" content={version} />
     <meta name="build-id" content={buildId} />
     <meta name="build-date" content={buildDate} />
     <link rel="canonical" href={canonical} />

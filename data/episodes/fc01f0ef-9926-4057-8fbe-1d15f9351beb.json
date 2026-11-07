@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "fc01f0ef-9926-4057-8fbe-1d15f9351beb",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.404Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.912Z",
   "durationSec": 7049,
   "summary": "Odcinek poświęcony dwudziestu najciekawszym polskim albumom 2024 roku, zdominowanym przez odmiany ekstremalne — death i black metal, bo zdaniem prowadzącego Polacy lepiej radzą sobie w tych radykalnych odmianach niż w metalu tradycyjnym. W zestawieniu znalazły się m.in. „Ku pogrzebaniu serc” Domu Złego, „Locust Cathedral” Icon of Evil (powrót po latach milczenia), „Apofenia” Davos, „Święta Krew” Sacrofuck, „Parasite” supergrupy Ante Void z Destroyerem, „The Monolithic Cult of Death” Demonoith i „Asurbanipal” Asur. Planet Hell z albumem „Mission 3” opiera się konceptualnie i tekstowo na pismach Stanisława Lema, a obok czystego metalu pojawiły się rzeczy pograniczne: instrumentalny postmetal Tides from Nebula („Instant Rewards”), łączący hardcore z przyswajalnymi melodiami The Dog („Somewhere, Anywhere”), industrialno-folkowa Królewczana Smuga Adama Piętaka („Konwulsanki”) oraz Dola z „Tabernaculum”, krążąca między black metalem, ambientem, sludge i elektroniką. Blinded 23 wróciło po pięciu latach przerwy mini-albumem „Vanishing” i zapowiada trasę oraz nową płytę nagraną w Szwecji. Za bezdyskusyjnie najlepszy album roku prowadzący uznał „Fading Backwards” Thao pod wodzą Artura Rumińskiego, wysoko stawiając też „Psalmen o Delirium” Kynig Reichsal, „Hollow” Hauntologist, „Stella Pandora” Arkony oraz „Enemy of the Human Race” Ast Mouth.",
   "topics": [
@@ -214,6 +214,18 @@
       "type": "event",
       "source": "transcript",
       "at": 3530
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -466,5 +478,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "4fa907fc-23a8-4bce-8011-fce60c435445",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.377Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.863Z",
   "durationSec": 6799,
   "summary": "Odcinek otwiera wspomnienie Breta Hinsa — gitarzysty, kompozytora i wokalisty Mastodon — który 20 sierpnia zginął w Atlancie, potrącony przez samochód podczas jazdy motocyklem; przypomniano, że w marcu rozstał się z zespołem w nienajlepszej atmosferze i że miał zaawansowane plany, a jego grę cechowało oryginalne połączenie death metalu, post-hardcore'u i country, słyszalne już na pierwszych płytach grupy. Drugą stratą jest Jürgen Bartsch, założyciel niemieckiego Bethlehem, zmarły 27 sierpnia po długiej chorobie — zespół od debiutu „Dark Metal\" z 1994 roku szedł własną, eksperymentalną drogą na pograniczu black metalu i alternatywnego rocka, a prowadzący wątpi, by przetrwał bez swojego lidera. Reszta odcinka to wrześniowy przegląd koncertów i festiwali w Polsce: dwie daty A Taste, koncerty Exhumera, festiwal Summer Dying Loud w Aleksandrowie Łódzkim z Venom (w składzie z Kronosem) jako główną gwiazdą, pożegnalny koncert Orange Goblin, set Samaela oparty na „Ceremony of the Opposites\" oraz powrót Portalu. Omówiono też Avant Art Festival we Wrocławiu i Warszawie, m.in. wspólny występ Merzbow, Igora Cavalery i Heraldo Bernocciego, oraz szereg klubowych koncertów — Obscury, Mogwai, Caustic Wound, Bleed From Within, Primal Fear, F.A.U.N. i Current 93. Osobny wątek to rozpad kanonicznego składu Venom i zapowieǳiany pozew Mantasa i Abaddona przeciwko Kronosowi o udziały finansowe.",
   "topics": [
@@ -268,6 +268,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 6147
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -455,5 +467,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

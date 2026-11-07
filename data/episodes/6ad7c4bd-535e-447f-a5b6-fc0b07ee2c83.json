@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "6ad7c4bd-535e-447f-a5b6-fc0b07ee2c83",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.340Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.801Z",
   "durationSec": 7251,
   "summary": "Audycja to przegląd czerwcowych koncertów i festiwali. Prowadzący omawia m.in. Mystic Festival w Gdańsku (ostatnia edycja na terenie stoczni, występy Down, Anthrax, Today Is the Day) oraz nowy album A.A. Williams „Solstice”, a także festiwal Rykowisko w Rogoźniku, nawiązujący do historycznego Trash Campu z 1988 roku z udziałem Vadera. Wymienia koncerty klubowe (In Human Condition, Ashen Tomb, Epitome, Jungle Road, Malevolence, Venom Inc.) oraz większe wydarzenia: Bring Me The Horizon z Knocked Loose, A Perfect Circle, High Viz, trasę The Casualties i Trivium z Heriotem. Szczegółowo opisuje program Dni Zduńskiej Woli (koncert Sheltera, Ani Huwe z Xmal Deutschland i Clan of Xymox, line-up z Madball) oraz nowe festiwale: Lost Generation (The Offspring, Papa Roach, Hollywood Undead), Summer Punch (Bad Omens, Three Days Grace, Babymetal) i debiutancki Hells Bells Festival w Szczecinie, łączący scenę punkową (UK Subs, Possessed) z metalową, z dłuższą opowieścią o Charliem Harperze i Jeffie Beckericie. Wspomina też koncerty A Day to Remember, Steel Panther, Nothing z Heywire (nawiązując do występu Nothing na festiwalu Roadburn), Drowning Pool, Rivers of Nihil, Nonslaughter zapowiadającego album „Satanic Chaos Legions” oraz Cavalera Brothers prezentujących album „Chaos A.D.” Sepultury.",
   "topics": [
@@ -361,6 +361,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 6794
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -561,5 +573,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

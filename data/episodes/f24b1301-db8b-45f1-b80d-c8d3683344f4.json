@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "f24b1301-db8b-45f1-b80d-c8d3683344f4",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.393Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.895Z",
   "durationSec": 6829,
   "summary": "Audycja poświęcona jest metalowym utworom o wojnie, osadzonym w atmosferze powracającego lęku przed konfliktem światowym: bombardowań Ukrainy i Gazy, wyścigu zbrojeń oraz planów umieszczenia broni jądrowej w kosmosie. Prowadzący świadomie zrezygnował z najbardziej oczywistych wyborów — Sabatonu, Metalliki, Iron Maiden, Sepultury i „War Ensemble” Slayera — sięgając po repertuar mniej ograny. Omówił m.in. nazwę Megadeth, odnoszącą się do wymyślonego w latach pięćdziesiątych terminu na jednostkę skuteczności broni jądrowej, historię Grip Inc. Waldemara Sorychty i Dave'a Lombardo, przerwaną śmiercią wokalisty Gusa Chambersa w 2008 roku, oraz „Tempo of the Damned” Exodus jako opowieść o tym, jak broń, wojna i przemoc stają się religią. Przy okazji „Esoteric Warfare” Mayhem wskazał na zimnowojenne badania parapsychologiczne i ezoteryczne traktowane jako broń, a także na teksty Attili i okładkę Zbigniewa Bielaka. „Warsaw” Marduka opisał jako pozbawiony romantyzacji utwór o powstaniu warszawskim, a Bolt Thrower — jako pionierów europejskiego death metalu z punkiem w tle, ostrzegających przed powtórką historii. Płytę How It Ends Primordial przywołał jako diagnozę natury człowieka, której istotą jest wojna wszystkich przeciwko wszystkim.",
   "topics": [
@@ -221,6 +221,18 @@
       "type": "work",
       "source": "transcript",
       "at": 5103
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -512,5 +524,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

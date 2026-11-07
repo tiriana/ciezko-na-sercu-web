@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "3a309423-9d2b-429e-829b-92b7d784735d",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.404Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.913Z",
   "durationSec": 6763,
   "summary": "Odcinek to pierwsza część podsumowania roku 2024 — subiektywny wybór dwudziestu ulubionych zagranicznych płyt, z zapowiedzią, że część polska pojawi się tydzień później. Prowadzący omówił m.in. albumy Blood Incantation „Absolute Elsewhere”, Gigan „Anomalous Abstractigate Infinitesimus”, Leprous „Melodies of Atonement”, High on Fire „Cometh the Storm”, Big Brave „A Chaos of Flowers” i Julie Christmas „Ridiculous and Full of Blood”. Knocked Loose płytą „You Won't Go Before You're Supposed To” przebili się do nowej publiczności, czego dowodem była burza wokół występu w nocnym programie Jimmy'ego Kimmela. Full of Hell wydali w ciągu roku dwie płyty — „Coagulated Bliss” oraz „Scraping the Divine” nagraną z Andrew Nolanem — a The Body po raz kolejny połączyli siły z inną artystką, tym razem z Felicią Chen. Prowadzący wspomniał, że pracuje nad książką o metalu granym przez rdzennych Amerykanów, i opowiadał o wykorzystaniu tradycyjnych bębnów i fletów przez zespół Tom Pantley. Za swój ulubiony album roku uznał „Muuntautuja” fińskiej grupy Oranssi Pazuzu.",
   "topics": [
@@ -235,6 +235,18 @@
       "type": "event",
       "source": "transcript",
       "at": 5815
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -500,5 +512,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

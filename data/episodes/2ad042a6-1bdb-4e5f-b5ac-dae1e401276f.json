@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "2ad042a6-1bdb-4e5f-b5ac-dae1e401276f",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.375Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.859Z",
   "durationSec": 6824,
   "summary": "Przegląd nowości, które ukazały się we wrześniu lub ukażą się w najbliższych dniach. Francuski projekt Igor wydał piątą płytę Amen, na której w utworze Blast Beat Falafel na gitarze zagrał Trey Spruance z Mr. Bungle i Faith No More. Amerykański Intercourse Tareka Achmeda wraca albumem How I Fell In Love With The Void opartym na gorzkiej ironii i neurotycznych spazmach, a pensylwański Talach na płycie Promeval Obsession Detachment łączy science fiction w tekstach z towarzyszącą albumowi grą; założycielem grupy jest Max Portnoy, syn Mike'a, który przeszedł z perkusji na gitarę basową. Lorna Shore umacnia pozycję albumem I Feel The Ever Black Festering Within Me, Ciśnienie nagrało na żywo Angry Noises z postmetalowym transem, jazzowym dęciem Moniki oraz cytatami z Holsta i Strawińskiego, a Paradise Lost po pięciu latach przerwy wrócił siedemnastą płytą Ascension w bardziej gotyckim, melancholijnym nurcie. Wśród kolejnych premier są Stunt Jesus z Songs to the Sun i reinterpretacją mitu o Ikarze na okładce, szwajcarski Abraham z Id Sung Wyssa, Barrens z Corpse Lights, November's Doom z tarotowym Major Arcana w produkcji Dana Swano oraz warszawski Species, który podpisał kontrakt z 20 Buck Spin i wydał Changelings. Polską część przeglądu wypełniają Meluzyna z epką To Hell inspirowana gotykiem i punkiem, Optical Sun z płytą Diabeł i samplingiem z filmów o diable oraz Narenwind z Gorzkimi Plonami i interpretacjami polskiej poezji, a na koniec czarny metal: Der Wegeiner Freiheit z Inern, Jörgsiuk z Nagled Till Leavet, Jord z Emelan Traden i Wintersorg z Wattenkrafterna Spell.",
   "topics": [
@@ -214,6 +214,18 @@
       "type": "work",
       "source": "transcript",
       "at": 4597
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -492,5 +504,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "9f159c89-fc90-44f8-a05f-cc012b75d6ed",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.410Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.924Z",
   "durationSec": 6913,
   "summary": "Relacja z festiwalu Reeperbahn w Hamburgu: kanadyjski duet Grimelda z Saskatchewan (post-hardcore, dwóch muzyków w sukienkach) wirtuozerią i absurdalnym humorem przyćmił poważną konkurencję, a islandzki Múr, grający mieszankę post-, prog- i black metalu, wystąpił z opóźnieniem i problemami technicznymi; tego samego dnia ukazał się pierwszy singiel zespołu, „Heimslit”. Osobny wątek to powrót Blinded 23 po pięciu latach przerwy z minialbumem „Vanishing”, który według Havoka opowiada o najgorszym okresie w jego życiu. Wydanie zamyka przegląd wrześniowych wydawnictw ciężkich brzmień: „Parasite” Ante Void (Pagan Records, trio z Destroyerem z Hate, Adamem Sierżęgą i Haldorem Grunbergiem), „Budowniczowie Grozy” Lasu Trumien, „Klątwa” Czereni oraz „Never Neverland” Unto Others z produkcją Toma Dalgety’ego. Przy okazji Unto Others prowadzący odrzuca porównania do Type O Negative i Sisters of Mercy, entuzjastycznie przyjmuje za to brytyjski Crimson Vale (dawne Bird It's Baby) z debiutem „Hex” i powrót The Jesus Lizard po 26 latach z albumem „Rack”. Omówiono także m.in. Adorior, „Die Urkatastrophe” Kanonen Fieber o I wojnie światowej (z utworem o Lwowie), APEP, Ripped to Shreds, „The Judas Paradox” God Dethroned, „The Imperious Horizon” Winterfylleth, Ice Alert, Dreamless Vale i „Międzyczasa” Odium Humani Generis.",
   "topics": [
@@ -42,7 +42,7 @@
       "label": "Analiza stylu i wyjątkowości zespołu A Dorior w kontekście tradycyjnego i ekstremalnego metalu"
     },
     {
-      "start": 3610,
+      "start": 3664,
       "end": 3725,
       "label": "Prezentacja projektu Kanonen Fieber, jego tematyka historyczna i nowy album Die Urkatastrophe"
     },
@@ -211,6 +211,18 @@
       "type": "event",
       "source": "transcript",
       "at": 226
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -351,7 +363,7 @@
     },
     {
       "start": 3275,
-      "end": 3610,
+      "end": 3664,
       "durationSec": 351,
       "artist": "Adorior",
       "title": "Moment Of Mania",
@@ -530,5 +542,18 @@
       "text": "nowy album to Międzyczasa"
     }
   ],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

@@ -1,70 +1,60 @@
 {
   "version": 1,
   "id": "cbc6c91f-fe30-47b4-82ec-e440e0a449aa",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.407Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.918Z",
   "durationSec": 6959,
   "summary": "Odcinek poświęcony wyłącznie polskiej muzyce ciężkiej — od prehistorii gatunku w latach 70. i przełomu, jaki przyniosło TSA, po scenę współczesną. W części o ekstremalnym undergroundzie lat 80. przypomniano Mercyless Death (demo Eternal Condemnation, problemy muzyków ze służbą wojskową, skreślenie z Metalmanii) i Scarecrow (demo Deo Optimo Maximo, wyprzedzające późniejszy black metal), a także reedycje Thrashing Madness Productions. Z początku lat 90. omówiono DDT (koncepcja „białego zła”, dwa dema i szybki koniec działalności) oraz Hector (The Inner Dementia, późniejsza działalność jako Hectcore i album Imagine Theatre). W bloku o poszukujących zespołach znaleźli się Flash World (The Essence Has Changed But The Details Remained), Keta (Magna Minus), Atrocious Filth z Krzysztofem „Docentem” Raczkowskim, Entropia (Ufonaut), Kriegs Machine (Enemy of Man) oraz zespół z Bochni łączący ekstremalny metal z awangardą i filozoficznymi tekstami. Nowszą scenę reprezentowały Hekatomb (Korosta — koncept o sekcie muraszkowców na Polesiu i Wołyniu w latach 30.), Wilczyca (Magia), Narenwind (Dziewięć kluczy do Królestwa Cieni), Ifryt (Płuca) i Egoist (Ultra Selfish Revolution). Wśród najnowszych wydawnictw przedstawiono grind Midspreader (Mental Disease Transmitted by Radioactive Fear), EP-kę Distruster Obscurum per Obscurius, album Fiasko Amok Koma oraz Deus Mortem Thanatos.",
   "topics": [
     {
-      "start": 181,
-      "end": 240,
-      "label": "TSA i narodziny polskiej sceny metalowej"
+      "start": 0,
+      "end": 18,
+      "label": "Historia polskiego metalu: od TSA do współczesności"
     },
     {
-      "start": 240,
-      "end": 475,
-      "label": "Ekstremalny underground: Vader, Imperator, Mercyless Death"
+      "start": 18,
+      "end": 402,
+      "label": "Historia trójmiejskiej sceny alternatywnej i zespołu Hector"
     },
     {
-      "start": 475,
-      "end": 654,
-      "label": "Scarecrow i demo Deo Optimo Maximo"
+      "start": 402,
+      "end": 516,
+      "label": "Mercyless Death — kultowe demo z kasetki"
     },
     {
-      "start": 654,
-      "end": 705,
-      "label": "Reedycje Thrashing Madness Productions i historia podziemia"
+      "start": 516,
+      "end": 660,
+      "label": "Scarecrow — bydgoski zespół wyprzedzający epokę Black Metalu"
     },
     {
-      "start": 705,
-      "end": 1052,
-      "label": "DDT i koncepcja białego zła"
+      "start": 660,
+      "end": 1026,
+      "label": "DDT — grupa z początku lat 90. skupiająca się na atmosferze i ciężarze"
     },
     {
-      "start": 1052,
-      "end": 1472,
-      "label": "Hector i kaseta The Inner Dementia"
+      "start": 1026,
+      "end": 1151,
+      "label": "Reedycje Thrashing Madness Productions i praca Leszka Wojnicza-Sianorzęckiego"
     },
     {
-      "start": 1472,
+      "start": 1480,
       "end": 1894,
-      "label": "Progresywne poszukiwania: Flash World i Keta"
+      "label": "Progresywna myśl i eksperymenty w polskim metalu"
     },
     {
-      "start": 2223,
+      "start": 2263,
       "end": 2350,
-      "label": "Atrocious Filth i album Ov"
+      "label": "Prezentacja zespołów undergroundowych i ich unikalnego brzmienia"
     },
     {
-      "start": 3002,
+      "start": 3000,
       "end": 3090,
-      "label": "Mgła, Kriegs Machine i pytanie o popularność"
+      "label": "Popularność polskiego metalu na świecie na przykładzie Mgły"
     },
     {
-      "start": 4041,
-      "end": 4624,
-      "label": "Hekatomb i album Korosta o sekcie muraszkowców"
-    },
-    {
-      "start": 4624,
-      "end": 4958,
-      "label": "Wilczyca, Narenwind, Ifryt i Egoist"
-    },
-    {
-      "start": 5861,
-      "end": 5883,
-      "label": "Grind i nowości: Midspreader, Distruster, Fiasko, Deus Mortem"
+      "start": 6959,
+      "end": 6959,
+      "label": "Projekt solowy Egoist i muzyka progresywna"
     }
   ],
   "tags": [
@@ -83,6 +73,13 @@
       "at": 6612
     },
     {
+      "id": "egoist",
+      "label": "Egoist",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4660
+    },
+    {
       "id": "entropia",
       "label": "Entropia",
       "type": "artist",
@@ -97,11 +94,24 @@
       "at": 6317
     },
     {
+      "id": "flash-world",
+      "label": "Flash World",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1151
+    },
+    {
       "id": "ifryt",
       "label": "Ifryt",
       "type": "artist",
       "source": "tracks",
       "at": 5300
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
     },
     {
       "id": "ketha",
@@ -118,6 +128,12 @@
       "at": 3090
     },
     {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
+    },
+    {
       "id": "meat-spreader",
       "label": "Meat Spreader",
       "type": "artist",
@@ -130,6 +146,13 @@
       "type": "artist",
       "source": "tracks",
       "at": 3572
+    },
+    {
+      "id": "narenwind",
+      "label": "Narenwind",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4106
     },
     {
       "id": "narrenwind",
@@ -169,15 +192,29 @@
   ],
   "tracks": [
     {
+      "start": 1151,
+      "end": 1480,
+      "durationSec": 309,
+      "artist": "Flash World",
+      "title": null,
+      "album": "The Essence Has Changed But The Details Remained",
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
       "start": 1894,
-      "end": 2223,
+      "end": 2263,
       "durationSec": 330,
       "artist": "Ketha",
       "title": "No Heart",
       "album": "Magnaminus - EP",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -188,22 +225,24 @@
       "artist": "Atrocious Filth",
       "title": "T",
       "album": "Ovv",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 2649,
-      "end": 3002,
+      "end": 3000,
       "durationSec": 354,
       "artist": "Entropia",
       "title": "Samsara",
       "album": "Ufonaut",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
@@ -214,22 +253,50 @@
       "artist": "Kriegsmaschine",
       "title": "Farewell to Grace",
       "album": "Enemy of Man",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     },
     {
       "start": 3572,
-      "end": 4041,
+      "end": 4106,
       "durationSec": 471,
       "artist": "Mord'a'Stigmata",
       "title": "Praefatio Pro Defunctis",
       "album": "Ansia",
+      "confidence": "wysoka",
+      "sources": [
+        "shazam",
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 4106,
+      "end": 4660,
+      "durationSec": 519,
+      "artist": "Narenwind",
+      "title": null,
+      "album": "Dziewięć kluczy do Królestwa Cieni",
       "confidence": "średnia",
       "sources": [
-        "shazam"
+        "zapowiedź"
+      ],
+      "links": []
+    },
+    {
+      "start": 4660,
+      "end": 4958,
+      "durationSec": 245,
+      "artist": "Egoist",
+      "title": null,
+      "album": null,
+      "confidence": "średnia",
+      "sources": [
+        "zapowiedź"
       ],
       "links": []
     },
@@ -248,7 +315,7 @@
     },
     {
       "start": 5300,
-      "end": 5861,
+      "end": 5883,
       "durationSec": 227,
       "artist": "Ifryt",
       "title": "Klucz Salomona",
@@ -292,13 +359,64 @@
       "artist": "Deus Mortem",
       "title": "When the Creation Tastes of Dionysian Wine",
       "album": "Thanatos",
-      "confidence": "średnia",
+      "confidence": "wysoka",
       "sources": [
-        "shazam"
+        "shazam",
+        "zapowiedź"
       ],
       "links": []
     }
   ],
-  "quotes": [],
-  "credits": []
+  "quotes": [
+    {
+      "start": 1134,
+      "text": "Posłuchamy fragmentu płyty The Essence Has Changed But The Details Remained."
+    },
+    {
+      "start": 1824,
+      "text": "Słuchamy utworu No Heart z wydanego w 2018 roku mini albumu Magna Minus."
+    },
+    {
+      "start": 2280,
+      "text": "Wydana w styczniu 2021 roku płyta o VV"
+    },
+    {
+      "start": 2628,
+      "text": "Z płyty Ufonaut wybrałem dla Państwa utwór Samsara."
+    },
+    {
+      "start": 3084,
+      "text": "Weźmy choćby płytę Enemy of Man sprzed dokładnie dekady."
+    },
+    {
+      "start": 3564,
+      "text": "Słuchamy utworu Prefatio Pro Defunctis z płyty Anssia."
+    },
+    {
+      "start": 4320,
+      "text": "choćby album zatytułowany jest Dziewięć kluczy do Królestwa Cieni, wydawnictwo sprzed trzech lat."
+    },
+    {
+      "start": 4686,
+      "text": "Pod tym szyldem dwie płyty nagrał Stanisław Wołonciej z Bielska Białej"
+    },
+    {
+      "start": 6959,
+      "text": "Płyta Thanatos, która właśnie teraz ma premierę, uroczo cuchnie siarką. Pewnie w tym winie z tytułu utworu When the Creation Tastes of Dionysian Wine też jest sama siarka."
+    }
+  ],
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

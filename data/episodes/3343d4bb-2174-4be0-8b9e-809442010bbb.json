@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "3343d4bb-2174-4be0-8b9e-809442010bbb",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.385Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.882Z",
   "durationSec": 6882,
   "summary": "Odcinek poświęcony zespołom metalowym, które zapożyczyły nazwy od tytułów utworów lub płyt innych wykonawców — autor zestawiał takie pary, sprawdzając, czy „daleko pada jabłko od jabłoni”. Machine Head wzięli nazwę od płyty Deep Purple z 1971 roku, norweski Spiral Architect — od utworu zamykającego Sabbath Bloody Sabbath, a pionierski dla doom metalu kalifornijski Saint Vitus, określony jako „skóra zdarta z Black Sabbath”, od „Saint Vitus Dance”; niemiecki Running Wild pożyczył tytuł od kompozycji Judas Priest z Killing Machine, znanej też jako Hell Bent for Leather. Motörhead zaczerpnęli nazwę z napisanego przez Lemmy’ego utworu Hawkwind, a nowojorski Overkill — z ich piosenki z płyty z 1979 roku; omówiono też miejsce Overkill w dyskusji o Wielkiej Czwórce thrashu i porównanie do Motorhead. Osobny wątek to Kreator, u zarania działający jako Tormentor, który nagrał utwór o tym tytule na Endless Pain, wyprzedzony jednak przez Slayera; przy okazji węgierskiego Tormentora, macierzystego zespołu Attili Cihara, i Mayhem, którzy nazwę wzięli od „Mayhem with Mercy” Venomu. Najcenniejszym „łupem” Venomu okazało się Bathory — nazwa od „Countess Bathory” z płyty Black Metal, wraz z opowieścią o Erzsébet Báthory, rzekomej inspiracji Draculi Brama Stokera i najnowszych badaniach podważających jej winę. Na koniec Celtic Frost i utwór „The Usurper” z To Mega Therion jako źródło nazwy chicagowskiego Usurper oraz Amebix — niegdyś The Band With No Name, których debiutancki singiel „Winter” dał nazwę nowojorskiej grupie Winter.",
   "topics": [
@@ -148,6 +148,18 @@
       "type": "work",
       "source": "transcript",
       "at": 5079
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -296,5 +308,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

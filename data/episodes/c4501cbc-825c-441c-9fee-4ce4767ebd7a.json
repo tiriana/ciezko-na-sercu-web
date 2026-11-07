@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "c4501cbc-825c-441c-9fee-4ce4767ebd7a",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.359Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.828Z",
   "durationSec": 6860,
   "summary": "Odcinek w całości poświęcony jest przeglądowi koncertów czekających w lutym w Polsce, od dużych tras (Deftones w Atlas Arenie, Napalm Death z trasą \"Campaign for Musical Destruction\", Mayhem z Marduk i Immolation w Gdańsku, Paradise Lost na trzech koncertach, Agnostic Front, Jinjer w Warszawie) po liczne podziemne pakiety koncertowe (m.in. \"Not Dying Yet\" we Wrocławiu, trasa \"Do spodu, do ziemi, w pustkę\", minitrasa Primordial Serpent Sands, wspólna podróż Death Has Spoken/Asteria/Obsidian Mantra). Omówiono też mongolski zespół Uhai i ich album \"Human Hearts\", norweski Leprous promujący płytę \"Melodies of Atonement\", nowy singiel Omnium Gatherum \"Moongold\" zapowiadający ich album \"May the Bridges We Burn Light the Way\", a także zbliżające się wydawnictwa: \"Liturgy of Death\" Mayhem, \"The Sand\" Immolation, \"Demony Wschodu\" Die Worshippera oraz \"Genotype\" holenderskiego Textures, opisanego jako powrót do niedokończonego przed laty materiału \"Phenotype\". Padają też porównania stylistyczne, np. duński Saturnus opisany jako zakonserwowana w czasie kontynuacja wczesnego stylu Paradise Lost.",
   "topics": [
@@ -333,6 +333,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 6449
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -559,5 +571,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

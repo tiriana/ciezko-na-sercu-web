@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "86f2c956-0067-42db-8663-0adfed0059e3",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.396Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.899Z",
   "durationSec": 6936,
   "summary": "Odcinek jest przeglądem najważniejszych marcowych premier metalowych. Omówiono m.in. szósty album Imperial Triumphant Gold Star (z utworem Pleasure Dome, w którym gościnnie zagrali Dave Lombardo i perkusista Meshuggah), nową płytę Deafheaven Lonely People With Power i trzeci album Alien Weaponry Terra, odwołujący się do przedkolonialnych tradycji maoryskich. Dalej pojawiły się: The Return of Magic Rwake, dwunasta płyta Arch Enemy Blood Dynasty, dziesiąty album Sadist Something to Pierce, debiut szwedzkiego Impurity The Eternal Sleep nagrany w studiu Sunlight, Death Comes to All Gates to Hell, Hymns in Dissonance Whitechapel, Everything Rots duńskiego Cabal, Pure Lenses francuskiego Fonche, dwie EP-ki Amenra (The Thorn i With Fang and Claw) oraz kooperacja The Body z Intensive Care Was I Good Enough?. Rozmowa z Danim Filthem dotyczyła albumu Cradle of Filth The Screaming of the Valkyries: procesu twórczego, wymiany składu i aklimatyzacji amerykańskich muzyków, czeskiego pierwiastka w zespole oraz odchodzenia od szokującej erotyki w wizerunku na rzecz zmieniających się standardów. Filth mówił też o trwałości ekstremalnego metalu przez pokolenia i o tym, co chciałby, żeby po Cradle of Filth zostało.",
   "topics": [
@@ -200,6 +200,18 @@
       "type": "event",
       "source": "transcript",
       "at": 6525
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -427,6 +439,18 @@
   ],
   "quotes": [],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Dani Filth",

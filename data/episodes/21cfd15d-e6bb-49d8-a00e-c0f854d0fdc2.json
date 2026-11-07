@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "21cfd15d-e6bb-49d8-a00e-c0f854d0fdc2",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.359Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.830Z",
   "durationSec": 6889,
   "summary": "Audycja to przegląd styczniowych nowości metalowych i pokrewnych. Megadeth wydali siedemnasty, zapowiadany jako ostatni album (tytułowy „Megadeth”), co wiąże się ze zdrowotnymi problemami Dave'a Mustaine'a (przykurcz Dupuytrena) i pożegnalną trasą obejmującą m.in. Mystic Festival w Gdańsku. Kreator wydali szesnastą płytę „Crushers of the World”, odebraną przez prowadzącego z rezerwą, z utworem „Satanic Anarchy” nawiązującym do filmu „Hellraiser” Clive'a Barkera. Omówiono liczne nowe albumy death- i deathcore'owe: japoński Crystal Lake („The Weight of Sound”), szwajcarski Total Annihilation („Mountains of Madness”), polskie Defaced („Icon”, o autorytaryzmie i kontroli społecznej), Excavated Graves i Banisher („Metamorphosis”), a także Oraculum, Kasket, Stabbing („Eon of Obscenity” z wokalistką Bridget Lynch, wcześniej koncertowo związaną z Suffocation) oraz Of Sulfur z Las Vegas („Endless”). Wśród innych gatunków pojawiły się: warszawski sludge/doom Smoke Rides („Eager Eyes of Talion”), norweski Vreid z instrumentalnym singlem na ścieżkę dźwiękową filmu „Kraken”, bardziej popowa płyta Ulver „Neverland” porównywana do „Perdition City”, włoski zespół Mata oraz amerykański New Miserable Experience („Guild the Lily”) inspirowani Ulverem, a także niemiecki The Hirsch Effect („Der Brauch”). Na koniec prowadzący wskazał dwie ulubione płyty miesiąca: „Ferrum Sidereum” włoskiego Zu oraz debiutancki, antyfaszystowski album noise-jazzowego projektu z udziałem muzyków Refused i Matsa Gustafssona.",
   "topics": [
@@ -228,6 +228,18 @@
       "type": "work",
       "source": "transcript",
       "at": 3658
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -493,5 +505,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

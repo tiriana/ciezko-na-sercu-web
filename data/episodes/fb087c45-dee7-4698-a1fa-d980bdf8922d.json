@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "fb087c45-dee7-4698-a1fa-d980bdf8922d",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.344Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.808Z",
   "durationSec": 7218,
   "summary": "Cała audycja poświęcona jest przeglądowi koncertów i festiwali metalowych oraz rockowych w Polsce w maju. Omówiono trasę Monstro City \"Screams Across Europe Tour\" promującą płytę \"Screams From Beneath the Surface\" (support: BioCancer, Reject the Sickness), powrót Sacriversum z nową płytą \"Before the Birth of Light\" wydaną dla zagranicznej wytwórni oraz solowe koncerty Tima Rippera Owensa, przy czym przypomniano jego epizod w Judas Priest u boku Roba Halforda. Przedstawiono festiwale: Death is not the end we Wrocławiu, Metal Commando Fest w Warszawie, Hell and Fire Festival (Kraków/Chorzów), Siła Gniewu part 3 z udziałem reaktywowanego Damnation oraz Riders of Doom z fińskim Lord Vicar jako gwiazdą. Szeroko omówiono trasę Furii \"Furia gra kino\", łączącą koncerty z archiwalnymi materiałami filmowymi Filmoteki Śląskiej o historii Śląska, w tym zapowiadany jako pierwszy w pełni immersyjny koncert polskiego zespołu metalowego w Krakowie. Wspomniano koncert Metalliki z Gojirą i Knocked Loose na Stadionie Śląskim oraz Sabatonu (nowa płyta \"Legends\") w Ergo Arenie z udziałem Flor Jensen i Majesticy, a także występy Jarboe, Blackwater Holy Light (nowa płyta \"Not Here Not Gone\" po przeprowadzce z Portland do Los Angeles), gitarzysty granego pod nazwą John Fyfe oraz Acid King.",
   "topics": [
@@ -256,6 +256,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 6915
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -469,5 +481,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "34ebe1c0-0c0d-4713-8e1f-d2c14e3d673c",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.352Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.820Z",
   "durationSec": 6912,
   "summary": "Audycja otwiera się pożegnaniem Phila Campbella, byłego gitarzysty Motorhead, zmarłego w wyniku powikłań pooperacyjnych w wieku 64 lat; przypomniano historię utworu „Dog Faced Boy”, napisanego przez Lemmy'ego o Campbellu, oraz jego rolę w zespole od 1984 roku i udział w projekcie Phil Campbell and the Bastard Sons. Głównym wątkiem jest rozmowa z Mariuszem „Demonem” Dzwonkiem, liderem sosnowieckiej grupy Frontside, o historii zespołu — od hardcore-punkowych i crossoverowych korzeni inspirowanych m.in. Suicidal Tendencies i Biohazard, przez zmiany składu (w tym dołączenie perkusisty Destroja i nowego wokalisty Molly'ego po odejściu Aumana), wydanie dwóch płyt hardrockowych i przerwę związaną z pandemią, aż po nową płytę „Nemezis” wydaną przez Massacre Records po najdłuższej przerwie wydawniczej w historii zespołu, którą Demon uważa za najlepszą w dorobku grupy; przewodnim tematem płyty są wątpliwości wobec informacji, polityki i mediów. Drugą częścią jest archiwalny wywiad z Mikiem Muirem, liderem Suicidal Tendencies, nagrany na Mystic Festival w Gdańsku, w którym opowiada o problemach zespołu wynikających z jego nazwy (odmowy sprzedaży płyt przez sklepy, interwencje policji, zakazy noszenia koszulek zespołu w amerykańskich szkołach) oraz o swojej filozofii tworzenia muzyki niezależnie od oczekiwań i krytyki innych.",
   "topics": [
@@ -151,6 +151,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 5764
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -326,6 +338,18 @@
   ],
   "quotes": [],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Mariusz \"Demon\" Dzwonek",

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "6654e58c-3e67-4e65-bf3d-3c0269bda620",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.361Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.833Z",
   "durationSec": 6850,
   "summary": "Druga część rozmowy z Voggiem (Wojciechem Kiełtyką), liderem i gitarzystą Decapitated, kontynuuje przegląd przełomowego dla metalu roku 1996 i prowadzi przez historię zespołu aż do roku 2000. Omówiono płyty Kata (zwłaszcza „Różę miłości” w zestawieniu z „Bastardem”), Slayera „Undisputed Attitude”, Sepultury „Roots” na tle „Chaos AD” wraz z rozejściem się wizji Maksa Cavalery i Andreasa Kissera, oraz Panterę „The Great Southern Trendkill” z dygresją o brzmieniu gitary Dimebaga Darrella (wzmacniacze Randall). Vogg opowiedział o początkach Decapitated (powstanie w 1996, dwie taśmy demo, kontrakt z wytwórnią Earache i menadżerem Mariuszem Kmiołkiem) oraz o debiucie „Wings of Creation” (2000) na tle ówczesnej sceny deathmetalowej (Deicide, Morbid Angel, Immolation, Nile, Vader), w tym o łatce „klona Vadera” i popularności utworu „Spheres of Madness” w USA. Poruszono wątek Children of Bodom i tragicznej historii Alexiego Laiho, płyty szrederskie Malmsteena i solowe projekty Steve'a Vaia, a na koniec Lamb of God „New American Gospel” oraz Slipknot jako zespół łączący ekstremalność z komercyjnym sukcesem. Vogg zdradził, że Decapitated komponuje nowy album, który ma ukazać się w 2027 roku, a latem 2026 zespół zagra trasę festiwalową.",
   "topics": [
@@ -165,6 +165,18 @@
       "type": "event",
       "source": "transcript",
       "at": 6250
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -301,6 +313,18 @@
   ],
   "quotes": [],
   "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    },
     {
       "role": "gość",
       "name": "Vogg (Wojciech Kiełtyka)",

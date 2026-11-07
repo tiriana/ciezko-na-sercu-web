@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "c212de95-87c3-4d9b-8894-fcc043e33c57",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.406Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.915Z",
   "durationSec": 6826,
   "summary": "Przegląd listopadowych wydawnictw zdominowały nowe płyty deathmetalowych i blackmetalowych zespołów: Massacre wydało Necrolution w polskiej Agonii, łącząc florydzki death metal z lovecraftowskimi motywami, a duńska Konkhra wróciła po latach z Sad Plight of Lucifer. Omówiono teżCryptic Brood z Necrotic Flesh Bacteria, szwedzki Repuked, Mammoth Grinder Chrisa Ulsha oraz polskie premiery — As to Mouth z Enemy of the Human Race i debiut zespołu Mary, nazwany chłopskim black core'em z tekstami o pańszczyźnie i Jakubie Szeli. Sporo miejsca zajęły sprawy sporne: decyzja o zbudowaniu kampanii nowego albumu Nachtmystium Blight Privilege na kryminalnej przeszłości Blake'a Judda oraz rozpad składu As I Lay Dying przed premierą Through Storms Ahead i odwołana trasa europejska. Sólstafir na nowej płycie wrócił do drapieżniejszego brzmienia, Tribulation coraz mocniej skręca w gotyk, a Neon Nightmare Nate'a Garretta okazał się hołdem dla Type O Negative. Zaprezentowano również Czort, Ante-Inferno, Furze, The Gates of Slumber, Distant z gościnnym Mattem Heafym oraz belgijski Wolfang.",
   "topics": [
@@ -207,6 +207,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 3969
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -459,5 +471,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

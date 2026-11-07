@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "93e8a5c7-d0e7-4d84-af8f-37fa5c24bcf0",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.400Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.907Z",
   "durationSec": 6904,
   "summary": "Odcinek w dużej części poświęcony był relacji z kopenhaskiego festiwalu When Copenhagen Freezes Over, zimowej uwertury dla duńskiego Copenhell, na którym wystąpili debiutujący Gattrall Disgorge (brutalny gore/slam death z albumu First Degree Murder), metalcore'owo-trapowy Gradients, Koja, trio 802 łączące thrash z syntezatorami w duchu Stranger Things, feministyczny crust/black Vulvatorius oraz najbardziej utytułowany Livløs, grający materiał z koncepcyjnej płyty The Crescent King. Prowadzący chwalił 802 i Livløs jako zespoły, które po tym występie zbierały oferty od europejskich agencji i wytwórni, i które zobaczymy wkrótce na festiwalach. Druga część audycji to przegląd lutowych koncertów w Polsce: Tesseract w gdańskim B90, The Halo Effect z Pain i Blood Red Hourglass, Cattle Decapitation z Shadow of Intent, Revocation i Vulvodynia w warszawskiej Proximie, Distant w Hydrozagadce, Napalm Death z Crowbarem, Full of Hell i The Brat w Progresji, Saxon z Girlschool w Krakowie i Warszawie oraz jubileuszowe trasy Bullet For My Valentine i Trivium w Gliwicach. Na koniec zapowiedziano Obscurę z Gorod i Skeletal Remains we Wrocławiu oraz występ ukraińskiego 1914 w Warszawie, którego koncerty bywają odwoływane z powodu ograniczeń w wyjazdach mężczyzn objętych służbą wojskową.",
   "topics": [
@@ -270,6 +270,18 @@
       "type": "concert",
       "source": "transcript",
       "at": 6220
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -548,5 +560,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

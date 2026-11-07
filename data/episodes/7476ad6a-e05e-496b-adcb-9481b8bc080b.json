@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "7476ad6a-e05e-496b-adcb-9481b8bc080b",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.385Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.881Z",
   "durationSec": 6808,
   "summary": "Czerwcowe podsumowanie nowości zdominowały nowe płyty: Katatonia wydała Nightmares as Extensions of the Waking State, pierwszy album bez współzałożyciela Andersa Nyströma, który odszedł, zarzucając zespołowi zerwanie z black-doomowymi korzeniami; zespół zagra 26 lipca na Ostrów Rock Festival i 18 listopada w warszawskiej Progresji. Sodom po pięciu latach przerwy wraca siedemnastym albumem The Arsonist, surowym thrashmetalem o okropieństwach wojny, a obok niego pojawiły się deathmetalowe akcenty: szósta płyta Fallujah Xenotaph oraz Silent Echoes Gruesome, świadomie klonujące wczesny Death i sposób śpiewania Chucka Schuldinera. Night Bearer nagrał Defiance oparty na trylogii Mroczne Materie Philipa Pullmana, a amerykański Kao Nashi na płycie I Want to Go Home miesza hardcore, death metal, emo, jazz, grind i noise. Dużo miejsca zajęły odmiany black metalu: Hex Vessel z siódmym albumem Nocturn wyrosłym z koncertu zamówionego przez festiwal Roadburn, Lord Belial z dziesiątym albumem Unholy Trinity, debiut Myr Hellfegen nagrany przez Polaków w Norwegii z Pawłem Jaroszewiczem i Filipem Hałuchą, a także Wekeras, Oster i doomowy debiut Obsidian Scapes. Wśród powrotów wyróżniono Dead Guy, którzy po trzydziestu latach milczenia wydają Near Death Travel Services, co stało się możliwe dzięki pracom nad filmem dokumentalnym o zespole, oraz Melville Lens z najlepiej brzmiącą w ich dorobku płytą Where Only the Truth is Spoken. Poza tym omówiono Heaven Shall Burn i ich dziesiąty album Heimat, trzyutworową epkę Mordbear, pompatyczny heavy metal Battlesnake, progresywny hard rock Avkrast oraz grindpunkowy album Musgrave Pizza Speciale.",
   "topics": [
@@ -256,6 +256,18 @@
       "type": "event",
       "source": "transcript",
       "at": 4386
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits"
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -521,5 +533,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 0,
+      "quote": ""
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
+    }
+  ]
 }

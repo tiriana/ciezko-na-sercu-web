@@ -1,8 +1,8 @@
 {
   "version": 1,
   "id": "2b9b3177-c9fd-488e-b2ad-6e736fc52b27",
-  "analyzedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T22:03:22.380Z",
+  "analyzedAt": "2026-11-07",
+  "updatedAt": "2026-11-07T22:57:32.868Z",
   "durationSec": 6897,
   "summary": "Odcinek oscylował wokół długich, epickich form: otwierał go utwór tytułowy z majowej płyty Swans „Birthing\", a Michael Gira zapowiadał, że to ostatni album z serii rozbudowanych kompozycji budujących napięcie, czasem do absurdu. Sporo miejsca poświęcono płycie Godspeed You! Black Emperor „No Title as of 13 February 2024, 28,340 Dead\" (październik 2024), której tytuł odnosi się do ludobójstwa w Strefie Gazy — na tle deklaracji wsparcia dla Palestyny składanych na koncertach Softplay, Lambrini Girls i Fontaines DC kontrastuje z nią chłodny, wyrażany wyłącznie muzyką sprzeciw zespołu Ciśnienie. Z członkami Ciśnienia rozmawiano po ich koncercie na OFF Festivalu o ok. 20-procentowej improwizacji i niechęci do jamowania, o złości, niezgodzie i katharsis na scenie, o świadomej rezygnacji z gitary elektrycznej i wokalu oraz o początkach zespołu w programie Dzielnica Brzmi Dobrze. Omówiono też zremiksowaną wersję ostatniej płyty Portrayal of Guilt, dorobek zawieszonego w 2017 roku Off-Breakera, kwestię „siermiężnej\" produkcji w black metalu oraz nowometalowe nawiązania w namiocie eksperymentalnym. Padły zapowiedzi: nowej płyty Deftones „Private Music\" (22 sierpnia) i ich koncertu 5 lutego 2026 w Atlas Arenie w Łodzi, a także rozmowy z Danem Barrettem z Have a Nice Life w kolejnym odcinku.",
   "topics": [
@@ -235,6 +235,12 @@
       "type": "concert",
       "source": "transcript",
       "at": 5928
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits"
     }
   ],
   "tracks": [
@@ -474,6 +480,12 @@
       "name": "Bartek Machajewski",
       "time": 6,
       "quote": "Bartek Machajewski audycję realizuje."
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 0,
+      "quote": ""
     },
     {
       "role": "gość",
