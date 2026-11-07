@@ -228,11 +228,18 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
     {episode ? (
       <div class="ep-body">
         <div class="stack">
-          <section class="card" aria-labelledby="programme-title">
+          <section class="card programme" aria-labelledby="programme-title">
             <h2 id="programme-title">Program audycji</h2>
-            <p class="card__sub">
-              {pluralTracks(episode.tracks.length)} i {pluralEntries(episode.topics.length)} w kolejności emisji
-            </p>
+            <div class="programme__head">
+              <p class="card__sub">
+                {pluralTracks(episode.tracks.length)} i {pluralEntries(episode.topics.length)} w kolejności emisji
+              </p>
+              <label class="switch">
+                <input class="switch__input" type="checkbox" role="switch" id="show-entries" checked />
+                <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+                <span class="switch__label">Pokazuj wejścia</span>
+              </label>
+            </div>
 
             {entry.audioUrl && (
               <script type="application/json" id="audio-data" set:html={JSON.stringify({ src: entry.audioUrl, title: episodeTitle, slug: entry.slug })} />
