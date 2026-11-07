@@ -274,17 +274,25 @@ const applyEpisodeAudio = () => {
   }
 };
 
-// Pasek zwija się do zera, więc lista pod nim podjeżdża, zamiast przeskakiwać.
+// Pasek zwija się do zera razem z paddingiem i marginesem — bez tego po usunięciu
+// elementu treść pod nim przeskakuje o te kilkanaście pikseli.
 const collapseNote = (note) => {
   if (!note) return;
+  const style = getComputedStyle(note);
+  const from = {
+    height: `${note.offsetHeight}px`,
+    paddingTop: style.paddingTop,
+    paddingBottom: style.paddingBottom,
+    marginTop: style.marginTop,
+    marginBottom: style.marginBottom,
+    opacity: 1,
+  };
   note.style.overflow = 'hidden';
-  const animation = note.animate(
-    [
-      { height: `${note.offsetHeight}px`, opacity: 1 },
-      { height: '0px', opacity: 0 },
-    ],
-    { duration: 180, easing: 'ease-in', fill: 'forwards' }
-  );
+  const animation = note.animate([from, { height: '0px', paddingTop: '0px', paddingBottom: '0px', marginTop: '0px', marginBottom: '0px', opacity: 0 }], {
+    duration: 220,
+    easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+    fill: 'forwards',
+  });
   animation.finished.then(() => note.remove()).catch(() => note.remove());
 };
 
