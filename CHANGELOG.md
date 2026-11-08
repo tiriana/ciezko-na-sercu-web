@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.1.3...v1.2.0) (2026-11-08)
+
+### Features
+
+* transkrypcja pomija odcinki już zrobione tymi parametrami ([8988216](https://github.com/tiriana/ciezko-na-sercu-web/commit/8988216ffc99ea0ef899ea94bf1b6c53bbf2378b))
+
 ## [1.1.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.1.2...v1.1.3) (2026-11-08)
 
 ### Bug Fixes
