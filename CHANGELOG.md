@@ -1,3 +1,9 @@
+## [1.13.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.13.0...v1.13.1) (2026-11-08)
+
+### Bug Fixes
+
+* bezsensowne ?t= znika z adresu, zbyt duże przycina się do długości nagrania ([444bc9d](https://github.com/tiriana/ciezko-na-sercu-web/commit/444bc9dff7b073d220bea9763ffda60f3f13e662))
+
 ## [1.13.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.12.1...v1.13.0) (2026-11-08)
 
 ### Features
