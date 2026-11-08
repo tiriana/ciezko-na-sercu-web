@@ -60,7 +60,7 @@
       "newAlbum": "Jailbreak",
       "start": 1550.95,
       "durationSec": 146,
-      "end": 1788.7
+      "end": 1788.98
     },
     {
       "artist": "Motörhead",
@@ -72,6 +72,28 @@
       "start": 1869.25,
       "durationSec": 323,
       "end": 2192.27
+    },
+    {
+      "artist": "Iron Maiden",
+      "title": "Wrathchild (2015 Remaster)",
+      "album": "Killers (2015 Remaster)",
+      "newArtist": "Iron Maiden",
+      "newTitle": "Wrathchild (2015 Remaster)",
+      "newAlbum": "Killers (2015 Remaster)",
+      "start": 2275.29,
+      "durationSec": 172,
+      "end": 2446.81
+    },
+    {
+      "artist": "Venom",
+      "title": "Buried Alive",
+      "album": "Black Metal",
+      "newArtist": "Venom",
+      "newTitle": "Buried Alive",
+      "newAlbum": "Black Metal",
+      "start": 2460.43,
+      "durationSec": 229,
+      "end": 2718.02
     }
   ],
   "topics": [
@@ -158,6 +180,19 @@
       "label": "Omówienie albumu Black Sabbath „Heaven and Hell”",
       "start": 800.18,
       "newLabel": "Omówienie albumu Black Sabbath „Heaven and Hell”"
+    },
+    {
+      "time": 1788.7,
+      "label": "Lemmy i legenda Motörhead",
+      "start": 1788.98,
+      "newLabel": "Lemmy i legenda Motörhead"
+    },
+    {
+      "time": 2192.27,
+      "label": "Refleksje nad wczesnymi albumami Iron Maiden i zmianą wokalisty",
+      "start": 2192.27,
+      "newLabel": "Refleksje nad wczesnymi albumami Iron Maiden i zmianą wokalisty",
+      "end": 2275.29
     }
   ],
   "addTracks": [
@@ -169,7 +204,13 @@
       "end": 15.77
     }
   ],
-  "addTopics": [],
+  "addTopics": [
+    {
+      "label": "Kronos",
+      "start": 2446.81,
+      "end": 2460.43
+    }
+  ],
   "credits": {
     "rename": {}
   }
