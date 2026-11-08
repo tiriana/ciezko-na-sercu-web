@@ -165,7 +165,6 @@
       .wave-legend i { width: 7px; height: 7px; border-radius: 50%; }
       .wave-legend .dot-start { background: var(--accent); }
       .wave-legend .dot-topic { background: #1f6f6b; }
-      .wave-legend .dot-end { background: #9a9086; }
       .wave-tools { display: flex; gap: 4px; }
       .wave-tools button {
         min-width: 26px;
@@ -209,7 +208,6 @@
       }
       .wave-marker:hover, .wave-marker:focus { opacity: 1; }
       .wave-marker.is-topic { color: #1f6f6b; }
-      .wave-marker.is-end { color: #9a9086; opacity: 0.7; }
       .wave-marker.is-dense { opacity: 0; pointer-events: none; }
       .wave-stage:hover .wave-marker.is-dense { opacity: 0.3; }
       .wave-marker.is-dense:focus { opacity: 1; pointer-events: auto; }
@@ -222,7 +220,6 @@
         margin-left: -0.5px;
         background: currentColor;
       }
-      .wave-marker.is-end .wave-marker-line { top: 10px; background: none; border-left: 1px dashed currentColor; width: 0; }
       .wave-marker-dot {
         position: absolute;
         left: 50%;
@@ -235,7 +232,6 @@
         box-shadow: 0 0 0 2px var(--surface);
       }
       .wave-marker.is-topic .wave-marker-dot { bottom: 2px; top: auto; width: 7px; height: 7px; margin-left: -3.5px; }
-      .wave-marker.is-end .wave-marker-dot { bottom: 2px; top: auto; width: 6px; height: 6px; margin-left: -3px; background: var(--surface); border: 1.5px solid currentColor; }
       .wave-marker:focus { outline: none; }
       .wave-marker:focus .wave-marker-dot { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent); }
       .wave-marker.is-dragging { opacity: 1; }
@@ -360,7 +356,6 @@
               <span class="wave-legend" aria-hidden="true">
                 <span><i class="dot-start"></i>start utworu</span>
                 <span><i class="dot-topic"></i>wejście</span>
-                <span><i class="dot-end"></i>koniec</span>
               </span>
               <span class="wave-tools">
                 <button type="button" id="wave-out" title="Oddal" aria-label="Oddal waveform" disabled>−</button>
@@ -389,8 +384,8 @@
               </div>
             </div>
             <p class="wave-hint">
-              kółko = zoom, przeciągnięcie tła = przesunięcie, klik = przewiń bez grania, dwuklik
-              = graj; znaczniki przeciągasz myszką albo Tab + ←/→ (Shift = 1 s)
+              kółko = zoom, tło = przesuń, klik = przewiń bez grania, dwuklik = graj; znaczniki
+              (początki) przeciągnij lub Tab + ←/→ (Shift = 1 s); początek tnie poprzedni fragment
             </p>
           </section>
 
@@ -463,6 +458,7 @@
       };
       const $ = (id) => document.getElementById(id);
       const fieldInputs = new WeakMap();
+      const topicBase = new WeakMap();
 
       const fmt = (seconds) => {
         if (!Number.isFinite(seconds)) return '—';
@@ -740,6 +736,9 @@
         state.topics = data.topics.map((topic) => ({ ...topic }));
         state.baseTracks = data.tracks.map((track) => ({ ...track }));
         state.baseTopics = data.topics.map((topic) => ({ ...topic }));
+        // Wiersz wejścia trzeba dopasować do poprawki po czasie i etykiecie z chwili wczytania,
+        // bo po przesunięciu `start` zmienia się i klucz przestałby pasować.
+        state.topics.forEach((topic, index) => topicBase.set(topic, { ...state.baseTopics[index] }));
         state.addTracks = (data.addTracks ?? []).map((track) => ({ ...track }));
         state.addTopics = (data.addTopics ?? []).map((topic) => ({ ...topic }));
         state.hiddenTracks = (data.raw?.tracks ?? []).filter((fix) => fix.hide);
@@ -891,54 +890,80 @@
       const trackEnd = (track) => {
         const start = Number(track.start);
         if (Number.isFinite(track.end) && track.end > start) return track.end;
-        if (Number(track.durationSec) > 0) return start + Number(track.durationSec);
+        if (track.durationSec > 0) return start + Number(track.durationSec);
         return null;
+      };
+
+      const topicEnd = (topic) => {
+        const start = Number(topic.start);
+        return Number.isFinite(topic.end) && topic.end > start ? topic.end : null;
       };
 
       const trackName = (track) =>
         `${track.artist?.trim() || 'bez wykonawcy'} — ${track.title?.trim() || 'bez tytułu'}`;
 
+      // Fragmenty osi: każdy utwór i każde wejście. Koniec fragmentu to początek następnego,
+      // więc znaczników końca nie ma — początek tnie poprzedni fragment.
+      const fragments = () => [
+        ...state.tracks.map((object) => ({ object, track: true, start: Number(object.start), end: trackEnd(object) })),
+        ...state.addTracks.map((object) => ({ object, track: true, start: Number(object.start), end: trackEnd(object) })),
+        ...state.topics.map((object) => ({ object, track: false, start: Number(object.start), end: topicEnd(object) })),
+        ...state.addTopics.map((object) => ({ object, track: false, start: Number(object.start), end: topicEnd(object) })),
+      ];
+
+      const precedingFragment = (marker, time) => {
+        let best = null;
+        for (const fragment of fragments()) {
+          if (fragment.object === marker.object) continue;
+          if (!Number.isFinite(fragment.start) || fragment.start >= time) continue;
+          const better =
+            !best ||
+            fragment.start > best.start ||
+            (fragment.start === best.start && best.end === null && fragment.end !== null);
+          if (better) best = fragment;
+        }
+        return best;
+      };
+
+      const setFragmentEnd = (fragment, time) => {
+        fragment.end = time;
+        fragment.object.end = time;
+        if (!fragment.track) return;
+        const durationSec = Math.max(0, Math.round(time - Number(fragment.object.start)));
+        fragment.object.durationSec = durationSec;
+        const inputs = fieldInputs.get(fragment.object);
+        if (inputs?.duration) inputs.duration.value = String(durationSec);
+      };
+
       const collectMarkers = () => {
         const markers = [];
-        const push = (kind, object, field, time, priority, name) => {
+        const push = (kind, object, time, priority, name) => {
           if (!Number.isFinite(time)) return;
-          markers.push({ kind, object, field, time, priority, name, key: `${kind}:${objectKey(object)}` });
+          markers.push({ kind, object, time, priority, name, key: `${kind}:${objectKey(object)}` });
         };
-        for (const track of state.tracks) {
-          push('start', track, 'start', Number(track.start), 1, `Początek: ${trackName(track)}`);
-          const end = trackEnd(track);
-          if (end !== null) push('end', track, 'end', end, 3, `Koniec: ${trackName(track)}`);
-        }
-        for (const track of state.addTracks) {
-          push('start', track, 'start', Number(track.start), 1, `Początek: ${trackName(track)}`);
-          const end = trackEnd(track);
-          if (end !== null) push('end', track, 'end', end, 3, `Koniec: ${trackName(track)}`);
-        }
-        for (const topic of state.topics) {
-          push('topic', topic, 'start', Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
-        }
-        for (const topic of state.addTopics) {
-          push('topic', topic, 'start', Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
-        }
+        for (const track of state.tracks) push('start', track, Number(track.start), 1, `Początek: ${trackName(track)}`);
+        for (const track of state.addTracks) push('start', track, Number(track.start), 1, `Początek: ${trackName(track)}`);
+        for (const topic of state.topics) push('topic', topic, Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
+        for (const topic of state.addTopics) push('topic', topic, Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
         return markers;
       };
 
       const markerNodes = new Map();
+      const MIN_FRAGMENT = 5;
 
-      const applyMarkerTime = (marker, time) => {
-        const next = clampNumber(Math.round(time * 10) / 10, 0, wave.duration);
+      const moveStart = (marker, requested) => {
+        const old = marker.time;
+        const ownEnd = marker.kind === 'start' ? trackEnd(marker.object) : topicEnd(marker.object);
+        const previous = precedingFragment(marker, old);
+        const low = previous ? Number(previous.start) + MIN_FRAGMENT : 0;
+        const high = ownEnd === null ? wave.duration : Math.min(wave.duration, ownEnd - MIN_FRAGMENT);
+        const next = clampNumber(Math.round(requested * 10) / 10, low, Math.max(low, high));
+        if (next === old) return;
         marker.time = next;
-        if (marker.kind === 'end') {
-          marker.object.end = next;
-          const durationSec = Math.max(0, Math.round(next - Number(marker.object.start ?? 0)));
-          marker.object.durationSec = durationSec;
-          const inputs = fieldInputs.get(marker.object);
-          if (inputs?.duration) inputs.duration.value = String(durationSec);
-        } else {
-          marker.object[marker.field] = next;
-          const inputs = fieldInputs.get(marker.object);
-          if (inputs?.start) inputs.start.value = String(next);
-        }
+        marker.object.start = next;
+        const inputs = fieldInputs.get(marker.object);
+        if (inputs?.start) inputs.start.value = String(next);
+        if (previous && previous.end !== null && Math.abs(previous.end - old) <= 0.5) setFragmentEnd(previous, next);
       };
 
       const placeMarker = (node, marker) => {
@@ -963,7 +988,7 @@
             if (!moved && Math.abs(moveEvent.clientX - originX) > 2) moved = true;
             if (!moved) return;
             const ratio = clampNumber((moveEvent.clientX - rect.left) / rect.width, 0, 1);
-            applyMarkerTime(marker, wave.start + ratio * wave.span);
+            moveStart(marker, wave.start + ratio * wave.span);
             placeMarker(node, marker);
           };
           const cleanup = () => {
@@ -986,7 +1011,7 @@
           event.preventDefault();
           event.stopPropagation();
           const step = event.shiftKey ? 1 : 0.1;
-          applyMarkerTime(marker, marker.time + (event.key === 'ArrowRight' ? step : -step));
+          moveStart(marker, marker.time + (event.key === 'ArrowRight' ? step : -step));
           placeMarker(node, marker);
         });
       };
@@ -1399,9 +1424,19 @@
 
         const topics = [];
         for (const topic of state.topics) {
-          const base = state.baseTopics.find((item) => item.label === topic.label && item.start === topic.start);
-          if (base && base.label === topic.label) continue;
-          topics.push({ time: base ? base.start : topic.start, label: base ? base.label : topic.label, start: topic.start, newLabel: topic.label });
+          const base =
+            topicBase.get(topic) ??
+            state.baseTopics.find((item) => item.label === topic.label && item.start === topic.start);
+          const endChanged = base ? base.end !== topic.end : topic.end !== undefined;
+          if (base && base.start === topic.start && base.label === topic.label && !endChanged) continue;
+          const fix = {
+            time: base ? base.start : topic.start,
+            label: base ? base.label : topic.label,
+            start: topic.start,
+            newLabel: topic.label,
+          };
+          if (endChanged) fix.end = topic.end;
+          topics.push(fix);
         }
         topics.push(...state.hiddenTopics);
 
