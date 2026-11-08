@@ -2,8 +2,19 @@
 /**
  * Zamienia wejście workflow (slugi/uuidy, opcjonalny limit) na macierz jobów
  * transkrypcji. Puste wejście = wszystkie odcinki z katalogu.
+ *
+ * Długość audio czytamy z pliku przez ffprobe (range request), bo transkrypt
+ * kończy się tam, gdzie kończy się mowa — odcinek z muzycznym outro byłby ucięty.
  */
-import { appendFileSync, existsSync, readFileSync } from 'node:fs';
+import { execFile } from 'node:child_process';
+import { appendFileSync, readFileSync } from 'node:fs';
+import { promisify } from 'node:util';
+
+const run = promisify(execFile);
+
+const CHUNK_SEC = 2700;
+const MIN_EPISODE_SEC = 115 * 60;
+const PROBE_TIMEOUT_MS = 30_000;
 
 const catalog = JSON.parse(readFileSync(new URL('../data/catalog.json', import.meta.url), 'utf8'));
 const wanted = String(process.env.EPISODES ?? '')
@@ -31,23 +42,35 @@ if (wanted.length > 0) {
 }
 if (limit > 0) episodes = episodes.slice(0, limit);
 
-// Jeden job na 45 min audio: przy 4 wątkach w Actions odcinek 2-godzinny nie zmieściłby
-// się w limicie 6 h, a krótkie kawałki dają przewidywalny czas. Każdy odcinek ma co
-// najmniej 1:55, więc ostatni kawałek zawsze tniemy pełną długością — ffmpeg kończy
-// na końcu pliku, więc nie płacimy za nieistniejące audio.
-const CHUNK_SEC = 2700;
-const MIN_EPISODE_SEC = 115 * 60;
+const probeDuration = async (url) => {
+  if (!url) return 0;
+  try {
+    const { stdout } = await run(
+      'ffprobe',
+      ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', url],
+      { timeout: PROBE_TIMEOUT_MS }
+    );
+    const seconds = Number.parseFloat(stdout.trim());
+    return Number.isFinite(seconds) ? seconds : 0;
+  } catch {
+    return 0;
+  }
+};
 
-const durationOf = (episode) => {
-  const transcript = new URL(`../data/transcripts/${episode.id}.json`, import.meta.url);
-  if (!existsSync(transcript)) return 0;
-  const windows = JSON.parse(readFileSync(transcript, 'utf8')).windows ?? [];
-  return windows.reduce((max, window) => Math.max(max, window.end ?? 0), 0);
+const transcriptEnd = (episode) => {
+  try {
+    const transcript = JSON.parse(readFileSync(new URL(`../data/transcripts/${episode.id}.json`, import.meta.url), 'utf8'));
+    return (transcript.windows ?? []).reduce((max, window) => Math.max(max, window.end ?? 0), 0);
+  } catch {
+    return 0;
+  }
 };
 
 const matrix = [];
 for (const episode of episodes) {
-  const duration = Math.max(durationOf(episode), MIN_EPISODE_SEC);
+  const probed = await probeDuration(episode.audioUrl);
+  const known = Math.max(probed, transcriptEnd(episode));
+  const duration = Math.max(known, MIN_EPISODE_SEC);
   const parts = Math.ceil(duration / CHUNK_SEC);
   for (let part = 0; part < parts; part += 1) {
     matrix.push({
@@ -59,10 +82,12 @@ for (const episode of episodes) {
       length: CHUNK_SEC,
     });
   }
+  console.log(`${episode.slug}: ${Math.round(duration / 60)} min -> ${parts} kawałków`);
 }
+
 const output = process.env.GITHUB_OUTPUT;
 if (output) {
   appendFileSync(output, `matrix=${JSON.stringify(matrix)}\n`);
   appendFileSync(output, `count=${matrix.length}\n`);
 }
-console.log(`${matrix.length} odcinków do transkrypcji`);
+console.log(`${matrix.length} jobów transkrypcji`);

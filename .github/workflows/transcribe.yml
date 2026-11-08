@@ -56,6 +56,11 @@ jobs:
       count: ${{ steps.build.outputs.count }}
     steps:
       - uses: actions/checkout@v5
+
+      # Długość audio bierzemy z pliku, a nie z transkryptu — potrzebny ffprobe.
+      - name: Zainstaluj ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - id: build
         env:
           EPISODES: ${{ inputs.episodes }}
