@@ -1,3 +1,14 @@
+## [1.1.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.11...v1.1.0) (2026-11-08)
+
+### Features
+
+* transkrypcja odcinków w GitHub Actions, gęstsze segmenty ([7b99abf](https://github.com/tiriana/ciezko-na-sercu-web/commit/7b99abf2fd0e329b1244ddf236f48a024c6be418))
+* zgłaszanie błędów przy elementach odcinka ([ef992e6](https://github.com/tiriana/ciezko-na-sercu-web/commit/ef992e63fb679fc2759ccf44c27085263e01f22b))
+
+### Bug Fixes
+
+* przebieg deployu na gałęzi podglądu nazywa się nazwą gałęzi ([29710e9](https://github.com/tiriana/ciezko-na-sercu-web/commit/29710e90f0a5a623a1f6a2f1fd99fb22f333a964))
+
 ## [1.0.11](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.10...v1.0.11) (2026-11-08)
 
 ### Bug Fixes
