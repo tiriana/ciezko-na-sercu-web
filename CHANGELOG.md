@@ -1,3 +1,9 @@
+## [1.8.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.8.1...v1.8.2) (2026-11-08)
+
+### Bug Fixes
+
+* utwory bez wykonawcy i podzielone na bloki scalone, tematy bez długości nie pokazują „—” ([8011951](https://github.com/tiriana/ciezko-na-sercu-web/commit/8011951c947b804b3f35241ffd2f69eb2fb890fb))
+
 ## [1.8.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.8.0...v1.8.1) (2026-11-08)
 
 ### Bug Fixes
