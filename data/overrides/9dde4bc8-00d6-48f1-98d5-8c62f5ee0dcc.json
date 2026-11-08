@@ -148,7 +148,51 @@
       "newAlbum": "Left Hand Path",
       "start": 4449.62,
       "durationSec": 164,
-      "end": 4633.64
+      "end": 4623.98
+    },
+    {
+      "artist": "Nasum",
+      "title": "We Curse You All",
+      "album": "Helvete",
+      "newArtist": "Nasum",
+      "newTitle": "We Curse You All",
+      "newAlbum": "Helvete",
+      "start": 4668.7,
+      "durationSec": 63,
+      "end": 4732.01
+    },
+    {
+      "artist": "Children of Bodom",
+      "title": "Are You Dead Yet",
+      "album": "Are You Dead Yet",
+      "newArtist": "Children of Bodom",
+      "newTitle": "Are You Dead Yet",
+      "newAlbum": "Are You Dead Yet",
+      "start": 4791.85,
+      "durationSec": 233,
+      "end": 5036.46
+    },
+    {
+      "artist": "Pantera",
+      "title": "I'm Broken",
+      "album": "Far Beyond Driven (20th Anniversary Deluxe Edition)",
+      "newArtist": "Pantera",
+      "newTitle": "I'm Broken",
+      "newAlbum": "Far Beyond Driven (20th Anniversary Deluxe Edition)",
+      "start": 5073.17,
+      "durationSec": 256,
+      "end": 5339.2
+    },
+    {
+      "artist": "Slipknot",
+      "title": "Everything Ends",
+      "album": "Iowa",
+      "newArtist": "Slipknot",
+      "newTitle": "Everything Ends",
+      "newAlbum": "Iowa",
+      "start": 5384.15,
+      "durationSec": 234,
+      "end": 5636.94
     }
   ],
   "topics": [
@@ -268,6 +312,12 @@
       "start": 3598.36,
       "newLabel": "Omówienie życia i twórczości Mike'a Browninga oraz albumu Unicursal",
       "end": 3664.29
+    },
+    {
+      "time": 5650,
+      "label": "Wspomnienia i hołdy dla zmarłych muzyków metalowych – od Mike’a Browninga po LG Petrova i Mieszka Talarczyka",
+      "start": 5636.94,
+      "newLabel": "DOCENT"
     }
   ],
   "addTracks": [
@@ -299,6 +349,26 @@
       "label": "LG Petrov",
       "start": 4412.93,
       "end": 4449.62
+    },
+    {
+      "label": "Tsunami 2004",
+      "start": 4623.98,
+      "end": 4668.7
+    },
+    {
+      "label": "Alexi Lajho",
+      "start": 4732.01,
+      "end": 4791.85
+    },
+    {
+      "label": "PANTERA",
+      "start": 5025.28,
+      "end": 5073.17
+    },
+    {
+      "label": "SLIPKNOT",
+      "start": 5328.27,
+      "end": 5384.15
     }
   ],
   "credits": {
