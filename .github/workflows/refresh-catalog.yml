@@ -83,4 +83,4 @@ jobs:
       - name: Zamów transkrypcję nowego odcinka
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run transcribe-weekly.yml --ref main
+        run: gh workflow run transcribe-daily.yml --ref main
