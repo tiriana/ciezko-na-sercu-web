@@ -48,7 +48,10 @@ jobs:
           RADIO_DIR: ${{ vars.RADIO_DIR || '/Shared/Radio' }}
         run: |
           mkdir -p .cache
-          rclone copy "$RCLONE_REMOTE:$RADIO_DIR/$PROGRAM_DIR/episodes.json" .cache
+          # Sekret bywa zapisany z końcowym dwukropkiem (tak wypisuje go `rclone config string`),
+          # a wtedy `...::/Shared/...` znaczy „pusta ścieżka" i rclone zgłasza brak katalogu.
+          REMOTE="${RCLONE_REMOTE%:}"
+          rclone copy "$REMOTE:$RADIO_DIR/$PROGRAM_DIR/episodes.json" .cache
 
       - name: Przelicz katalog
         run: node scripts/build-catalog.mjs .cache/episodes.json data/catalog.json
@@ -76,7 +79,7 @@ jobs:
       - name: Opublikuj stronę
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run deploy.yml --ref main -f screenshots=false
+        run: gh workflow run deploy.yml --ref main
 
       # Nowy odcinek ma pierwszeństwo przed kolejką, więc transkrypcję zamawiamy od razu
       # po odświeżeniu katalogu. Plan bierze najnowszy odcinek bez transkryptu.
