@@ -22,12 +22,38 @@ const wanted = String(process.env.EPISODES ?? '')
   .map((value) => value.trim())
   .filter(Boolean);
 const limit = Number.parseInt(process.env.LIMIT ?? '0', 10) || 0;
+const force = process.env.FORCE === 'true';
+const wantedParams = {
+  maxLen: Number(process.env.MAX_LEN ?? '20'),
+  splitOnWord: process.env.SPLIT_ON_WORD !== 'false',
+  vad: process.env.VAD === 'true',
+};
 
 const byKey = new Map();
 for (const episode of catalog.episodes) {
   byKey.set(episode.id, episode);
   for (const slug of episode.slugs ?? [episode.slug]) byKey.set(slug, episode);
 }
+
+const readTranscript = (id) => {
+  try {
+    return JSON.parse(readFileSync(new URL(`../data/transcripts/${id}.json`, import.meta.url), 'utf8'));
+  } catch {
+    return null;
+  }
+};
+
+// Odcinek jest „zrobiony", gdy jego transkrypt powstał z tymi samymi parametrami.
+const isDone = (episode) => {
+  const transcript = readTranscript(episode.id);
+  const params = transcript?.params;
+  if (!params) return false;
+  return (
+    params.maxLen === wantedParams.maxLen &&
+    params.splitOnWord === wantedParams.splitOnWord &&
+    params.vad === wantedParams.vad
+  );
+};
 
 let episodes = catalog.episodes;
 if (wanted.length > 0) {
@@ -39,6 +65,11 @@ if (wanted.length > 0) {
     }
     return episode;
   });
+}
+if (wanted.length === 0 && !force) {
+  const done = episodes.filter(isDone).length;
+  episodes = episodes.filter((episode) => !isDone(episode));
+  console.log(`pominięto ${done} odcinków już zrobionych tymi parametrami`);
 }
 if (limit > 0) episodes = episodes.slice(0, limit);
 

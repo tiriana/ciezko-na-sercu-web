@@ -32,6 +32,11 @@ on:
         required: false
         default: '0'
         type: string
+      force:
+        description: 'Licz też odcinki już zrobione tymi parametrami'
+        required: false
+        default: false
+        type: boolean
 
 run-name: transkrypcja ${{ inputs.episodes || 'wszystkie odcinki' }}
 
@@ -65,6 +70,10 @@ jobs:
         env:
           EPISODES: ${{ inputs.episodes }}
           LIMIT: ${{ inputs.limit }}
+          FORCE: ${{ inputs.force }}
+          MAX_LEN: ${{ inputs.max_len }}
+          SPLIT_ON_WORD: ${{ inputs.split_on_word }}
+          VAD: ${{ inputs.vad }}
         run: node scripts/plan-transcribe.mjs
 
   transcribe:

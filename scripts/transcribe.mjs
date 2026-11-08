@@ -122,6 +122,9 @@ const transcript = {
   provider: 'whisper-cpp',
   model: path.basename(whisperModel).replace(/^ggml-/, '').replace(/\.bin$/, ''),
   language: 'pl',
+  // Parametry zapisane w pliku są znacznikiem „ten odcinek jest już zrobiony w tej
+  // wersji": plan-transcribe pomija transkrypty z innymi wartościami.
+  params: { maxLen: Number(maxLen), splitOnWord, vad: useVad },
   fileSizeBytes: fileInfo.size,
   fileMtimeMs: fileInfo.mtimeMs,
   windows,
