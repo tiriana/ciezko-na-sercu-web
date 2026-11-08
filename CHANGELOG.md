@@ -1,3 +1,9 @@
+## [1.7.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.2...v1.7.3) (2026-11-08)
+
+### Bug Fixes
+
+* tracklista ma stałe szerokości kolumn ([438bc7c](https://github.com/tiriana/ciezko-na-sercu-web/commit/438bc7cdc92536bff01d6643ccaa3483d9706162))
+
 ## [1.7.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.1...v1.7.2) (2026-11-08)
 
 ### Bug Fixes
