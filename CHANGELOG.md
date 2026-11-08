@@ -1,3 +1,9 @@
+## [1.0.10](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.9...v1.0.10) (2026-11-08)
+
+### Bug Fixes
+
+* menu na telefonie — przycisk z hamburgerem i rozwijana nawigacja ([b53fcf4](https://github.com/tiriana/ciezko-na-sercu-web/commit/b53fcf4a8c1e018d3148b9373e08ab053198314e))
+
 ## [1.0.9](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.8...v1.0.9) (2026-11-07)
 
 ### Bug Fixes
