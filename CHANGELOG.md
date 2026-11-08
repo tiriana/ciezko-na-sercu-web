@@ -1,3 +1,9 @@
+## [1.14.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.14.0...v1.14.1) (2026-11-08)
+
+### Bug Fixes
+
+* obrys fokusu paska fragmentu otula samą linię ([200276c](https://github.com/tiriana/ciezko-na-sercu-web/commit/200276c09598a2d9f3535890ee7da6e0f5e98aa2))
+
 ## [1.14.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.13.1...v1.14.0) (2026-11-08)
 
 ### Features
