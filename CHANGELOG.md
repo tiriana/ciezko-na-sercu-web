@@ -1,3 +1,9 @@
+## [1.7.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.0...v1.7.1) (2026-11-08)
+
+### Bug Fixes
+
+* odświeżanie katalogu radzi sobie z dwukropkiem w sekrecie rclone ([371be6c](https://github.com/tiriana/ciezko-na-sercu-web/commit/371be6c00b7e9c8d79383b1e09dcc42908e21339))
+
 ## [1.7.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.6.0...v1.7.0) (2026-11-08)
 
 ### Features
