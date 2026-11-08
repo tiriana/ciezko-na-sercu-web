@@ -1,3 +1,9 @@
+## [1.7.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.1...v1.7.2) (2026-11-08)
+
+### Bug Fixes
+
+* odświeżanie katalogu rebase'uje przed pushem ([2f591fb](https://github.com/tiriana/ciezko-na-sercu-web/commit/2f591fbf787e38f63927b94e5551987cb34e73e8))
+
 ## [1.7.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.0...v1.7.1) (2026-11-08)
 
 ### Bug Fixes
