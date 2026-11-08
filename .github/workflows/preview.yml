@@ -15,12 +15,15 @@ concurrency:
 
 env:
   CF_PROJECT: ciezko-na-sercu
-  CF_BRANCH: player-preview
   WRANGLER_VERSION: 4.157.0
 
 jobs:
   preview:
     runs-on: ubuntu-26.04
+    env:
+      # Każda gałąź ma własny adres podglądu: ukośniki w nazwie Cloudflare zamienia na myślniki.
+      CF_BRANCH: ${{ github.ref_name }}
+      STAGING: '1'
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
@@ -46,4 +49,4 @@ jobs:
           fi
           npx --yes wrangler@$WRANGLER_VERSION pages deploy dist \
             --project-name "$CF_PROJECT" --branch="$CF_BRANCH" --commit-dirty=true
-          echo "Podgląd: https://$CF_BRANCH.$CF_PROJECT.pages.dev"
+          echo "Podgląd: https://$(echo "$CF_BRANCH" | tr '/' '-').$CF_PROJECT.pages.dev"
