@@ -6,13 +6,11 @@ name: transkrypcja dzienna
 # Plan bierze najnowszy odcinek bez transkryptu, więc świeży materiał ma pierwszeństwo.
 
 on:
-  # 12:00 UTC = zaległość o porze, gdy nikt nie czeka: środowe pobieranie (02:00 UTC)
-  # i odświeżenie katalogu (04:00 UTC) mają własne wywołanie, więc nowy odcinek nie
-  # stoi w kolejce za przebiegiem zaległości. Drugi cron to zapas na wypadek, gdyby
-  # dispatch z refresh-catalog.yml nie doszedł.
+  # Zaległość: 12:00 UTC, czyli poza porą publikacji. Nowy odcinek nie ma tu cronu —
+  # przychodzi dispatchem z refresh-catalog.yml, który sam rusza z repository_dispatch
+  # wysyłanego przez workflow pobierania w repo downloadera.
   schedule:
     - cron: '0 12 * * *'
-    - cron: '30 4 * * 3'
   workflow_dispatch:
 
 run-name: "wybór odcinka do transkrypcji"
