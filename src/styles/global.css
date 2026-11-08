@@ -734,10 +734,18 @@ a {
   border-bottom: 0;
 }
 
+/* Kolumna z playem mieści przycisk razem z odstępem od tekstu obok — przy
+   table-layout: fixed wąska komórka wypychała przycisk na treść sąsiedniej. */
 .tracks__idx {
-  width: 34px;
+  width: 40px;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
+}
+
+.tracks th.tracks__idx,
+.tracks td.tracks__idx {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .tracks__artist {
@@ -1240,36 +1248,30 @@ a {
   color: var(--accent);
 }
 
+/* Cała grafika (ramka i symbol) to jedno SVG, więc button nie rysuje własnego kółka. */
 .track-play {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-grid;
+  place-items: center;
   width: 26px;
   height: 26px;
   padding: 0;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  background: transparent;
+  border: 0;
+  background: none;
   color: var(--ink);
+  line-height: 0;
   cursor: pointer;
-  transition: border-color 0.15s ease, color 0.15s ease;
+  transition: color 0.15s ease;
 }
 
 .track-play__icon {
   display: block;
-  width: 9px;
-  height: 11px;
-}
-
-/* Trójkąt ma środek ciężkości w lewej połowie, więc flex-box centruje go optycznie
-   w prawo; margines wyrównuje tylko jego. Dwie belki pauzy są symetryczne i nie ruszamy. */
-.track-play__icon--play {
-  margin-left: 2px;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 
 .track-play:hover,
 .track-play:focus-visible {
-  border-color: var(--accent);
   color: var(--accent);
 }
 
@@ -1556,23 +1558,22 @@ a {
   border-bottom: 0;
 }
 
-/* Kreskę zostawiamy tylko po ostatnim wątku grupy, żeby oddzielała ją od następnej pozycji. */
-.tracks__row--child-last td {
-  border-bottom: 1px solid var(--line);
+/* Kreskę zostawiamy tylko po ostatnim wątku grupy, żeby oddzielała ją od następnej pozycji.
+   W układzie tabeli rysują ją komórki; na wąskim ekranie wiersz jest siatką i kreskę
+   rysuje sam <tr>, więc komórki nie mogą jej dublować. */
+@media (min-width: 721px) {
+  .tracks__row--child-last td {
+    border-bottom: 1px solid var(--line);
+  }
 }
 
-.tracks__row--child .tracks__idx {
-  padding-left: 26px;
+.tracks__row--child td.tracks__idx {
+  padding-left: 16px;
 }
 
 .tracks__row--child .track-play {
   width: 20px;
   height: 20px;
-}
-
-.tracks__row--child .track-play__icon {
-  width: 7px;
-  height: 8px;
 }
 
 .tracks__row--child .tracks__thread {
@@ -1964,6 +1965,7 @@ main {
   color: var(--text);
 }
 
+/* Kółko jest częścią SVG, tak jak symbol — button nie rysuje własnej ramki. */
 .audio-bar__toggle {
   display: inline-grid;
   place-items: center;
@@ -1972,10 +1974,10 @@ main {
   height: 42px;
   padding: 0;
   border: 0;
-  border-radius: 50%;
-  background: var(--accent);
+  background: none;
   color: #fff;
   aspect-ratio: 1;
+  line-height: 0;
   cursor: pointer;
 }
 
@@ -1984,8 +1986,9 @@ main {
 }
 
 .audio-bar__icon {
-  width: 11px;
-  height: 13px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .audio-bar__toggle[data-state='paused'] .audio-bar__icon--pause,
