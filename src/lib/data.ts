@@ -92,6 +92,7 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
       const topic = episode.topics.find((candidate) => candidate.start === fix.time && sameText(candidate.label, fix.label));
       if (!topic) continue;
       if (fix.start !== undefined) topic.start = fix.start;
+      if (fix.end !== undefined) topic.end = fix.end;
       if (fix.newLabel) topic.label = fix.newLabel;
     }
     if (override.addTracks.length > 0) {

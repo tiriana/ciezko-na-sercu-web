@@ -133,6 +133,8 @@ export const overrideSchema = z.object({
         time: z.number(),
         label: z.string(),
         start: z.number().optional(),
+        /** Ręczny koniec wejścia; bez niego zostaje granica z taggera. */
+        end: z.number().optional(),
         newLabel: z.string().optional(),
         hide: z.boolean().optional(),
       })
