@@ -1,6 +1,8 @@
 # ciezko-na-sercu-web
 
-Opublikowana wersja: **https://ciezko-na-sercu.pages.dev** (Cloudflare Pages), kopia: https://ciezko-na-sercu.surge.sh
+1. Produkcja: **https://ciezko-na-sercu.pages.dev** — gałąź `main`, Cloudflare Pages.
+2. Staging: **https://develop.ciezko-na-sercu.pages.dev** — gałąź `develop`, z `noindex`.
+3. Podglądy: **https://<gałąź>.ciezko-na-sercu.pages.dev** — dla gałęzi `feat/**`.
 
 Strona z katalogiem odcinków audycji „Ciężko na sercu" (Trójka): lista odcinków, strona
 każdego odcinka i — uzupełniane z czasem — opracowanie: rozpoznane utwory, wykonawcy,
@@ -8,71 +10,88 @@ streszczenie i tematy.
 
 Strona nie publikuje dźwięku ani treści audycji. Indeksuje odcinki i linkuje do nich.
 
-## Edytor osi czasu (lokalnie)
+## Przepływ
 
-`npm run edytor` uruchamia edytor na http://localhost:4330: lista odcinków, player,
-edycja tytułu, utworów (wykonawca, tytuł, album, start, czas, ukrycie) i wejść.
-Zapis trafia do `data/overrides/<id>.json` i `data/titles.json`, więc kolejny import
-z taggera niczego nie kasuje. Po zapisie: `npm run build` (albo `npm run site`).
+1. `detect-episode.yml` — w środę o 02:00 czasu polskiego (dwa crony UTC plus strażnik
+   strefy, więc działa i w CET, i w CEST) pobiera listę odcinków ze strony audycji
+   i porównuje ją z `data/catalog.json`. Brak nowego wpisu kończy przebieg.
+2. `refresh-catalog.yml` — gdy wykrycie znajdzie odcinek spoza katalogu (albo ręcznie):
+   `scripts/fetch-episodes.mjs` czyta paginację serwisu, `scripts/build-catalog.mjs` liczy
+   katalog, commit trafia do `main`, deploy publikuje wpis bez opracowania, a
+   `transcribe-daily.yml` zamawia transkrypcję.
+3. `transcribe.yml` — whisper.cpp czyta audio prosto z adresu w Polskim Radiu
+   (`ffmpeg -i <url>`, kawałki 45-minutowe), składa części, przelicza czasy tematów
+   i publikuje stronę ponownie. Plik audio nie trafia na dysk runnera ani do artefaktów.
+4. Opracowanie odcinka leży w `data/episodes/<uuid>.json`; build czyta wyłącznie `data/`.
+5. Zmiana formatu strony audycji nie wyłącza wykrywania po cichu: przebieg kończy się
+   błędem i otwiera (albo komentuje) issue „Środowe wykrycie odcinka nie działa”.
 
-## Status
+## Uruchomienie
 
-Strona działa na Astro (output statyczny) i publikuje się przy każdym pushu do `main` na Cloudflare
-Pages, a dodatkowo — jako kopia zapasowa — na Surge (błąd Surge nie przerywa przebiegu).
-Build czyta wyłącznie `data/`; katalog odcinków odświeża osobny workflow (środa 04:00 UTC,
-`repository_dispatch` z downloadera albo ręcznie), pobierając `episodes.json` z Egnyte
-i commitując przeliczony `data/catalog.json`.
+```
+mise install       # Node w wersji z mise.toml
+mise run build     # waliduje data/ i buduje dist/
+mise run dev       # podgląd na http://localhost:4321
+```
+
+1. `mise run build` — `scripts/check-data.mjs` i `astro build`.
+2. `mise run e2e` — testy Playwright na zbudowanym `dist/` (build musi być aktualny).
+3. `npm run check` — sama walidacja `data/`, bez budowania.
+4. `npm run edytor` — lokalny edytor osi czasu na http://localhost:4330.
+5. `npm run queue` — przelicza `data/queue.json` (tempo i plan opracowań).
+6. `npm run episodes` — pobiera listę odcinków ze strony audycji (domyślnie na stdout).
+7. `npm run catalog -- .cache/episodes.json data/catalog.json` — przelicza katalog
+   z pobranej listy.
+
+## Edytor osi czasu
+
+`npm run edytor` otwiera listę odcinków, player, edycję tytułu, utworów (wykonawca, tytuł,
+album, start, czas, ukrycie) i wejść. Zapis trafia do `data/overrides/<id>.json`
+i `data/titles.json`, więc kolejne przeliczenie katalogu ani transkrypcja niczego nie
+kasują. Po zapisie: `mise run build`.
+
+## Dane
+
+1. `data/catalog.json` — katalog odcinków: data, tytuł, slug(i), `articleId`, `audioUrl`.
+2. `data/episodes/<uuid>.json` — opracowania: utwory, wejścia, streszczenie, creditsy.
+3. `data/transcripts/<uuid>.json|.txt` — pełne transkrypty i segmenty.
+4. `data/titles.json` — tytuły redakcyjne dla odcinków o tytule technicznym
+   („Ciężko na sercu 1 maja godz. 0005”). Każdy wpis trzyma `originalTitle`, a strona
+   pokazuje oba i oznacza nasz tytuł jako nieoficjalny.
+5. `data/catalog-titles.json` — tytuły wyjątków wstawiane już przy budowie katalogu.
+6. `data/overrides/<uuid>.json` — ręczne poprawki utworów i creditsów, odporne na
+   ponowne przeliczenia.
+7. `data/aliases.json` — warianty nazw sprowadzone do jednej osoby lub zespołu.
+8. `data/people.json`, `data/duplicates.json`, `data/queue.json` — profile osób,
+   odcinki-duplikaty, plan kolejki opracowań.
+
+`npm run check` waliduje całość przed buildem.
+
+## Deploy
+
+Gałąź wybiera środowisko:
+
+1. `main` → produkcja, wydanie z semantic-release (numer wersji w stopce).
+2. `develop` → staging na `develop.ciezko-na-sercu.pages.dev`, z `noindex`.
+3. `feat/**` → podgląd pod własnym adresem gałęzi (`preview.yml`).
+
+Workflow:
+
+1. `deploy.yml` — build i `wrangler pages deploy`; wymaga sekretu `CLOUDFLARE_PAGES_TOKEN`
+   (uprawnienie Account → Cloudflare Pages → Edit) i zmiennej `CLOUDFLARE_ACCOUNT_ID`
+   (przy jej braku numer konta jest pobierany z API).
+2. `detect-episode.yml` — środowe wykrycie nowego odcinka; `workflow_dispatch`
+   z „Symuluj nowy odcinek” przechodzi całą ścieżkę bez czekania na publikację
+   (transkrypcji wtedy nie zamawia).
+3. `refresh-catalog.yml` — odświeżenie katalogu ze strony audycji.
+4. `transcribe.yml` / `transcribe-daily.yml` — transkrypcja wskazanych odcinków i wybór
+   jednej zaległości dziennie.
+5. `release.yml` — wersja i changelog z typów commitów.
+6. `screenshots.yml` — zrzuty strony odcinka na trzech systemach i trzech silnikach.
+
+## Dokumentacja
 
 1. [docs/plan.md](docs/plan.md) — zakres, model danych, harmonogram, ryzyka.
 2. [docs/design.md](docs/design.md) — co przenosimy z wyglądu Trójki, a czego nie.
 3. [docs/stack.md](docs/stack.md) — wybór generatora i odrzucone alternatywy.
 4. `mockup/` — statyczny mockup, z którego powstał layout (nie jest deployowany).
-
-## Uruchomienie
-
-```
-npm install
-npm run build      # waliduje data/ i buduje dist/
-npm run dev        # podgląd na localhost:4321
-```
-
-Dane:
-
-1. `data/catalog.json` — katalog odcinków, generowany z downloadera: `npm run catalog -- <episodes.json>`.
-2. `data/episodes/<id>.json` — opracowania. Import z taggera: `npm run import:tagger -- ../radio-auditions-tagger/work/episodes`.
-3. `data/titles.json` — tytuły nieoficjalne dla odcinków, które w katalogu mają tytuł techniczny
-   („Ciężko na sercu 1 maja godz. 0005”). Każdy wpis trzyma `originalTitle`, a strona pokazuje
-   oba i oznacza nasz tytuł jako nieoficjalny.
-
-## Kolejka opracowań
-
-Szacunki tempa są dla redakcji, nie dla widzów — na stronie ich nie ma. `npm run queue`
-zapisuje `data/queue.json`: liczbę opracowanych odcinków, pozostałe, tempo (~18,5 min na
-odcinek, okno nocne 21:00–09:00) i planowaną datę każdego odcinka. Wartości stałe siedzą
-w `src/lib/schedule.ts`.
-
-## Dane
-
-Wszystkie dane audycji leżą w tym repozytorium, w `data/`: `catalog.json` (z downloadera),
-`episodes/<uuid>.json` (opracowania), `transcripts/<uuid>.json|.txt` (pełne transkrypty),
-`titles.json` (tytuły redakcyjne), `people.json` (nazwisko → profil w serwisie Polskiego
-Radia) i `overrides/<uuid>.json` (ręczne poprawki utworów i creditsów, odporne na ponowny
-import). `npm run check` waliduje całość przed buildem; import z taggera robi
-`scripts/import-tagger.mjs`.
-
-## Deploy
-
-1. `.github/workflows/deploy.yml` — build i publikacja; wymaga sekretu `CLOUDFLARE_PAGES_TOKEN`
-   (Cloudflare Pages, uprawnienie Account → Cloudflare Pages → Edit) i `SURGE_TOKEN` (kopia).
-   Numer konta Cloudflare bierze ze zmiennej `CLOUDFLARE_ACCOUNT_ID`, a gdy jej nie ma — z API.
-2. `.github/workflows/refresh-catalog.yml` — katalog z Egnyte; wymaga `RCLONE_REMOTE`,
-   opcjonalna zmienna `RADIO_DIR` (domyślnie `/Shared/Radio`).
-
-## Powiązane repozytoria
-
-1. [polskie-radio-downloader](https://github.com/tiriana/polskie-radio-downloader) — pobiera
-   odcinki i utrzymuje `episodes.json`. Kompletny, traktowany jako źródło prawdy o katalogu.
-2. [radio-auditions-tagger](https://github.com/tiriana/radio-auditions-tagger) — analiza audio:
-   segmentacja mowa/muzyka, transkrypcja, rozpoznawanie utworów, ekstrakcja tematów.
-   Wyciąga też metadane opracowań (`episode.json`); import do tej strony: `npm run import:tagger`.
-3. To repozytorium — konsument obu powyższych.
