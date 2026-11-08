@@ -1,3 +1,9 @@
+## [1.7.5](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.4...v1.7.5) (2026-11-08)
+
+### Bug Fixes
+
+* mode full, żeby Renovate tworzył PR-y mimo trybu Silent ([b478f4c](https://github.com/tiriana/ciezko-na-sercu-web/commit/b478f4c878b97a62beadc67ca810b001907c77af))
+
 ## [1.7.4](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.3...v1.7.4) (2026-11-08)
 
 ### Bug Fixes
