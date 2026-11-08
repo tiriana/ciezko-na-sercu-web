@@ -123,7 +123,13 @@ const applyTimeLink = () => {
   const raw = new URLSearchParams(location.search).get('t');
   if (raw === null) return;
   const seconds = Number(raw);
-  if (!Number.isFinite(seconds) || seconds <= 0) return;
+  if (!Number.isFinite(seconds) || seconds <= 0) {
+    // Adres jest stanem, więc bezsensowny `t` nie ma w nim zostać.
+    const url = new URL(location.href);
+    url.searchParams.delete('t');
+    history.replaceState(null, '', url);
+    return;
+  }
   const seek = () => {
     if (!Number.isFinite(audio.duration) || audio.duration <= 0) return;
     audio.currentTime = Math.min(seconds, audio.duration);
