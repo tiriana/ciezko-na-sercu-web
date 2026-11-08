@@ -1,3 +1,13 @@
+## [1.8.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.7...v1.8.0) (2026-11-08)
+
+### Features
+
+* Node z mise zamiast setup-node w workflowach ([#39](https://github.com/tiriana/ciezko-na-sercu-web/issues/39)) ([a4b02a9](https://github.com/tiriana/ciezko-na-sercu-web/commit/a4b02a96ba099a5f2c573d6e12d1dbb0f3680c0e))
+
+### Reverts
+
+* conventional-changelog-conventionalcommits wraca do 8 ([461a399](https://github.com/tiriana/ciezko-na-sercu-web/commit/461a399d5a7c0c04b278d8da2f9c15d4d80d1ef3))
+
 ## [1.7.7](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.6...v1.7.7) (2026-11-08)
 
 ### Bug Fixes
