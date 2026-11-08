@@ -229,6 +229,31 @@ const heartbeat = setInterval(() => {
 }, 25_000);
 heartbeat.unref();
 
+// ——— Stan „ok” znaczników ———
+// Trzymamy go w `.cache`, bo `data/` jest auto-commitowane w powłoce właściciela;
+// `.cache` jest ignorowany i wystarcza, żeby przetrwać restart serwera i czyszczenie
+// pamięci przeglądarki.
+const REVIEWED_PATH = join(CACHE, 'reviewed.json');
+let reviewedQueue = Promise.resolve();
+
+const readReviewed = () => readJson(REVIEWED_PATH, { version: 1, episodes: {} });
+
+// Zapis jednego znacznika to odczyt-modyfikacja-zapis, więc kolejka trzyma spójność,
+// gdy dwie karty klikają jednocześnie.
+const updateReviewed = (mutate) => {
+  const job = reviewedQueue.then(async () => {
+    const data = await readReviewed();
+    data.version = 1;
+    data.episodes = data.episodes ?? {};
+    const result = mutate(data);
+    await mkdir(CACHE, { recursive: true });
+    await writeFile(REVIEWED_PATH, `${JSON.stringify(data, null, 2)}\n`);
+    return result;
+  });
+  reviewedQueue = job.catch(() => {});
+  return job;
+};
+
 const json = (res, status, value) => {
   res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' });
   res.end(JSON.stringify(value));
@@ -332,6 +357,37 @@ const server = createServer(async (req, res) => {
     // Szybka sonda dla karty, która straciła SSE: lekka, bez czytania danych.
     if (url.pathname === '/api/health') {
       return json(res, 200, { ok: true, uptime: Math.round(process.uptime()) });
+    }
+
+    if (url.pathname === '/api/reviewed' && req.method === 'GET') {
+      await reviewedQueue;
+      const data = await readReviewed();
+      const id = url.searchParams.get('id');
+      if (!id) return json(res, 200, { version: 1, episodes: data.episodes ?? {} });
+      return json(res, 200, { version: 1, id, reviewed: data.episodes?.[id] ?? {} });
+    }
+
+    if (url.pathname === '/api/reviewed' && req.method === 'POST') {
+      const payload = JSON.parse(await readBody(req));
+      const id = String(payload.id ?? '');
+      if (!id) return json(res, 400, { error: 'brak id odcinka' });
+      const markers = payload.markers && typeof payload.markers === 'object' ? payload.markers : null;
+      const key = String(payload.key ?? '');
+      if (!markers && !key) return json(res, 400, { error: 'brak klucza znacznika' });
+      const reviewed = await updateReviewed((data) => {
+        // `markers` zastępuje cały zestaw odcinka (cofnięcie), `key` zmienia jeden wpis.
+        const next = markers
+          ? Object.fromEntries(Object.entries(markers).filter(([, value]) => value).map(([name]) => [name, true]))
+          : { ...(data.episodes[id] ?? {}) };
+        if (!markers) {
+          if (payload.reviewed) next[key] = true;
+          else delete next[key];
+        }
+        if (Object.keys(next).length > 0) data.episodes[id] = next;
+        else delete data.episodes[id];
+        return next;
+      });
+      return json(res, 200, { ok: true, id, reviewed });
     }
 
     if (url.pathname === '/api/events') {

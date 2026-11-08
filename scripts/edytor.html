@@ -353,6 +353,7 @@
       .wave-legend i { width: 7px; height: 7px; border-radius: 50%; }
       .wave-legend .dot-start { background: var(--accent); }
       .wave-legend .dot-topic { background: #1f6f6b; }
+      .wave-legend .dot-ok { background: #1f7a4a; }
       .wave-menu {
         position: fixed;
         z-index: 30;
@@ -377,6 +378,35 @@
         cursor: pointer;
       }
       .wave-menu[hidden] { display: none; }
+      .wave-menu button[hidden] { display: none; }
+      .wave-count { font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .wave-count[hidden] { display: none; }
+      .wave-label {
+        position: fixed;
+        z-index: 31;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 280px;
+        max-width: calc(100vw - 16px);
+        padding: 8px 10px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+        box-shadow: 0 10px 24px rgba(28, 26, 24, 0.18);
+      }
+      .wave-label[hidden] { display: none; }
+      .wave-label label { font-size: 11px; color: var(--muted); }
+      .wave-label input {
+        width: 100%;
+        padding: 5px 7px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        font: inherit;
+        font-size: 12.5px;
+      }
+      .wave-label input:focus { border-color: var(--accent); outline: none; }
+      .wave-label-hint { color: var(--muted); font-size: 10.5px; }
       .wave-menu button:hover,
       .wave-menu button:focus-visible { background: #f0ece6; outline: none; }
       .wave-menu small { display: block; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
@@ -447,6 +477,29 @@
         box-shadow: 0 0 0 2px var(--surface);
       }
       .wave-marker.is-topic .wave-marker-dot { bottom: 2px; top: auto; width: 7px; height: 7px; margin-left: -3.5px; }
+      .wave-marker.is-reviewed .wave-marker-dot {
+        width: 12px;
+        height: 12px;
+        margin-left: -6px;
+        background: #1f7a4a;
+        box-shadow: 0 0 0 2px var(--surface);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wave-marker.is-reviewed.is-topic .wave-marker-dot {
+        width: 11px;
+        height: 11px;
+        margin-left: -5.5px;
+      }
+      .wave-marker.is-reviewed .wave-marker-dot::after {
+        content: "✓";
+        color: #fffdfb;
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .wave-marker.is-reviewed .wave-marker-line { opacity: 0.55; }
       .wave-marker:focus { outline: none; }
       .wave-marker:focus .wave-marker-dot { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent); }
       .wave-marker.is-dragging { opacity: 1; }
@@ -585,9 +638,11 @@
             <div class="wave-head">
               <span class="wave-name" id="wave-title">Głośność</span>
               <span class="wave-window" id="wave-window">—</span>
+              <span class="wave-count" id="wave-count" hidden></span>
               <span class="wave-legend" aria-hidden="true">
                 <span><i class="dot-start"></i>start utworu</span>
                 <span><i class="dot-topic"></i>wejście</span>
+                <span><i class="dot-ok"></i>ok</span>
               </span>
               <span class="wave-tools">
                 <button
@@ -625,7 +680,7 @@
               </div>
             </div>
             <p class="wave-hint">
-              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń; początek tnie poprzedni fragment
+              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń, Shift+Enter = ok; początek tnie poprzedni fragment
             </p>
           </section>
 
@@ -714,10 +769,20 @@
 
     <div class="wave-menu" id="wave-menu" role="menu" aria-label="Akcje waveformu" hidden>
       <button type="button" role="menuitem" id="wave-menu-add">
-        Dodaj wejście tutaj
+        <span>Dodaj wejście tutaj</span>
         <small id="wave-menu-time"></small>
       </button>
+      <button type="button" role="menuitem" id="wave-menu-ok" hidden>
+        <span id="wave-menu-ok-text">Oznacz jako ok</span>
+        <small id="wave-menu-mark"></small>
+      </button>
     </div>
+
+    <form class="wave-label" id="wave-label" hidden>
+      <label for="wave-label-input">Nazwa nowego wejścia</label>
+      <input id="wave-label-input" type="text" placeholder="Nowe wejście" autocomplete="off" />
+      <span class="wave-label-hint">Enter = zatwierdź, Esc = zostaw bez nazwy</span>
+    </form>
 
     <script>
       const state = {
@@ -1131,8 +1196,10 @@
         base: topicBase.has(topic) ? structuredClone(topicBase.get(topic)) : null,
       });
 
-      const pushUndo = () => {
+      const pushUndo = (kind = 'data') => {
         undoStack.push({
+          kind,
+          reviewed: [...reviewed],
           tracks: structuredClone(state.tracks),
           topics: state.topics.map(snapshotTopic),
           addTracks: structuredClone(state.addTracks),
@@ -1175,11 +1242,20 @@
         state.addTopics = structuredClone(snapshot.addTopics);
         state.hiddenTracks = structuredClone(snapshot.hiddenTracks);
         state.hiddenTopics = structuredClone(snapshot.hiddenTopics);
+        reviewed = new Set(snapshot.reviewed ?? []);
+        if (state.episode) REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
         editBurst.key = null;
         renderTracks();
         renderTopics();
         renderAdded();
         renderRestore();
+        buildMarkers();
+        // Stan „ok” nie należy do danych odcinka: cofnięcie go nie brudzi ani nie zapisuje.
+        if (snapshot.kind === 'reviewed') {
+          persistReviewedAll();
+          noteStatus('cofnięto ok');
+          return;
+        }
         markDirty();
         setStatus('dirty', 'cofnięto');
         statusTimer = setTimeout(() => {
@@ -1448,6 +1524,8 @@
           return;
         }
         state.episode = data;
+        reviewed = new Set();
+        loadReviewed(data.id);
         undoStack.length = 0;
         editBurst.key = null;
         wave.undoTaken = false;
@@ -1667,17 +1745,104 @@
         fragment.object.end = time;
       };
 
+      // ——— Znaczniki „ok” ———
+      // Klucz jest trwały między zapisami (artyści i tytuły nie zmieniają się przy
+      // przeciąganiu), a `start` to tylko awaryjne wyjście dla wpisów bez etykiety.
+      const REVIEWED_BY_EPISODE = new Map();
+      let reviewed = new Set();
+      let reviewedRequest = 0;
+
+      const reviewKeyOf = (kind, object) => {
+        const clean = (value) => String(value ?? '').normalize('NFC').trim().toLowerCase();
+        if (kind === 'topic') {
+          const label = clean(object.label);
+          return label ? `p:${label}` : `p:${Number(object.start).toFixed(2)}`;
+        }
+        const name = [clean(object.artist), clean(object.title)].filter(Boolean).join('|');
+        return name ? `t:${name}` : `t:${Number(object.start).toFixed(2)}`;
+      };
+
       const collectMarkers = () => {
         const markers = [];
         const push = (kind, object, time, priority, name) => {
           if (!Number.isFinite(time)) return;
-          markers.push({ kind, object, time, priority, name, key: `${kind}:${objectKey(object)}` });
+          const reviewKey = reviewKeyOf(kind, object);
+          markers.push({
+            kind,
+            object,
+            time,
+            priority,
+            name,
+            reviewKey,
+            reviewed: reviewed.has(reviewKey),
+            key: `${kind}:${objectKey(object)}`,
+          });
         };
         for (const track of state.tracks) push('start', track, Number(track.start), 1, `Początek: ${trackName(track)}`);
         for (const track of state.addTracks) push('start', track, Number(track.start), 1, `Początek: ${trackName(track)}`);
         for (const topic of state.topics) push('topic', topic, Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
         for (const topic of state.addTopics) push('topic', topic, Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
         return markers;
+      };
+
+      const updateCounts = () => {
+        const node = $('wave-count');
+        const markers = collectMarkers();
+        const ok = markers.filter((marker) => marker.reviewed).length;
+        node.textContent = markers.length > 0 ? `${ok} z ${markers.length} ok` : '';
+        node.hidden = markers.length === 0;
+      };
+
+      const loadReviewed = async (id) => {
+        if (REVIEWED_BY_EPISODE.has(id)) {
+          reviewed = REVIEWED_BY_EPISODE.get(id);
+          buildMarkers();
+          return;
+        }
+        const token = (reviewedRequest += 1);
+        try {
+          const response = await fetch(`/api/reviewed?id=${encodeURIComponent(id)}`);
+          if (!response.ok) return;
+          const data = await response.json();
+          if (token !== reviewedRequest || state.episode?.id !== id) return;
+          reviewed = new Set(Object.keys(data.reviewed ?? {}));
+          REVIEWED_BY_EPISODE.set(id, reviewed);
+          buildMarkers();
+        } catch {}
+      };
+
+      const persistReviewed = (key, value) => {
+        const id = state.episode?.id;
+        if (!id) return;
+        fetch('/api/reviewed', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ id, key, reviewed: value }),
+        }).catch(() => noteStatus('nie zapisano stanu ok'));
+      };
+
+      // Cofnięcie zmienia cały zestaw naraz, więc wysyłamy go w jednym żądaniu.
+      const persistReviewedAll = () => {
+        const id = state.episode?.id;
+        if (!id) return;
+        const markers = Object.fromEntries([...reviewed].map((key) => [key, true]));
+        fetch('/api/reviewed', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ id, markers }),
+        }).catch(() => {});
+      };
+
+      const toggleReviewed = (marker) => {
+        if (!state.episode || !marker.reviewKey) return;
+        pushUndo('reviewed');
+        const next = !reviewed.has(marker.reviewKey);
+        if (next) reviewed.add(marker.reviewKey);
+        else reviewed.delete(marker.reviewKey);
+        REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
+        persistReviewed(marker.reviewKey, next);
+        buildMarkers();
+        noteStatus(next ? 'oznaczono ok' : 'zdjęto ok');
       };
 
       const markerNodes = new Map();
@@ -1721,7 +1886,7 @@
         node.style.left = `${((marker.time - wave.start) / wave.span) * width}px`;
         const label = `${marker.name}, ${fmtPrecise(marker.time)}`;
         node.setAttribute('aria-label', label);
-        node.title = `${label} — przeciągnij albo ←/→ (Alt = 10 ms, Shift = 1 s); Del usuwa`;
+        node.title = `${label} — przeciągnij albo ←/→ (Alt = 10 ms, Shift = 1 s); Del usuwa; Shift+Enter = ok`;
       };
 
       // Skoki po znacznikach: ‹/› (oraz przecinek i kropka na scenie) tylko przesuwają
@@ -1835,40 +2000,148 @@
         markDirty();
         renderAdded();
         buildMarkers();
-        const inputs = fieldInputs.get(topic);
-        if (inputs?.label) {
-          inputs.label.scrollIntoView({ block: 'nearest' });
-          inputs.label.focus({ preventScroll: true });
-          inputs.label.select();
-        }
+        // Etykietę wpisujemy pod znacznikiem, a nie w tabeli niżej — inaczej strona
+        // odjeżdża od waveformu akurat w momencie, w którym się go używa.
+        openLabelAt(topic);
         return topic;
       };
+
+      const labelForm = $('wave-label');
+      const labelInput = $('wave-label-input');
+      let labelTarget = null;
+      let labelInitial = '';
+
+      const positionLabel = (topic) => {
+        const rect = stageEl().getBoundingClientRect();
+        const x = rect.left + ((topic.start - wave.start) / wave.span) * rect.width;
+        const box = labelForm.getBoundingClientRect();
+        const left = clampNumber(x - 16, 8, Math.max(8, window.innerWidth - box.width - 8));
+        const below = rect.bottom + 8;
+        const top = below + box.height > window.innerHeight - 8 ? rect.top - box.height - 8 : below;
+        labelForm.style.left = `${left}px`;
+        labelForm.style.top = `${clampNumber(top, 8, Math.max(8, window.innerHeight - box.height - 8))}px`;
+      };
+
+      const openLabelAt = (topic) => {
+        labelTarget = topic;
+        labelInitial = topic.label ?? '';
+        labelInput.value = labelInitial;
+        labelForm.hidden = false;
+        positionLabel(topic);
+        labelInput.focus({ preventScroll: true });
+        labelInput.select();
+      };
+
+      const closeLabel = ({ revert = false } = {}) => {
+        if (labelForm.hidden) return;
+        labelForm.hidden = true;
+        const topic = labelTarget;
+        labelTarget = null;
+        if (!revert || !topic) return;
+        // Esc zostawia wpis, ale bez wpisanej nazwy.
+        topic.label = labelInitial;
+        waveSync();
+      };
+
+      labelInput.addEventListener('input', () => {
+        if (!labelTarget) return;
+        const topic = labelTarget;
+        editField(topic, 'label', () => {
+          topic.label = labelInput.value;
+          waveSync();
+        });
+      });
+
+      labelForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (labelTarget) {
+          labelTarget.label = labelInput.value.trim();
+          waveSync();
+        }
+        closeLabel();
+        stageEl().focus({ preventScroll: true });
+      });
+
+      labelInput.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') return;
+        event.preventDefault();
+        closeLabel({ revert: true });
+        stageEl().focus({ preventScroll: true });
+      });
+
+      document.addEventListener(
+        'pointerdown',
+        (event) => {
+          if (labelForm.hidden || event.target.closest?.('.wave-label') || event.target.closest?.('.wave-marker')) return;
+          closeLabel();
+        },
+        true
+      );
+
+      // Popover stoi na współrzędnych ekranu, więc zmiana widoku go unieważnia.
+      window.addEventListener('scroll', () => closeLabel(), { passive: true });
+      window.addEventListener('resize', () => closeLabel());
 
       const waveMenu = $('wave-menu');
       let menuTime = null;
       let menuOpener = null;
+      let menuMarker = null;
 
       const closeMenu = ({ restoreFocus = false } = {}) => {
         if (waveMenu.hidden) return;
         waveMenu.hidden = true;
         const opener = menuOpener;
         menuOpener = null;
+        menuMarker = null;
         menuTime = null;
         if (restoreFocus) opener?.focus?.({ preventScroll: true });
       };
 
-      const openMenuAt = (clientX, clientY, time, opener) => {
+      const menuItems = () => [...waveMenu.querySelectorAll('[role="menuitem"]')].filter((item) => !item.hidden);
+
+      // Jedno menu, dwa konteksty: na znaczniku oferuje „ok”, na pustej scenie dodanie wejścia.
+      const openMenuAt = (clientX, clientY, time, opener, marker = null) => {
         menuTime = time;
         menuOpener = opener;
-        $('wave-menu-time').textContent = fmtPrecise(time);
+        menuMarker = marker;
+        $('wave-menu-add').hidden = Boolean(marker);
+        $('wave-menu-ok').hidden = !marker;
+        if (marker) {
+          $('wave-menu-ok-text').textContent = marker.reviewed ? 'Odznacz ok' : 'Oznacz jako ok';
+          $('wave-menu-mark').textContent = `${marker.name}, ${fmtPrecise(marker.time)}`;
+        } else {
+          $('wave-menu-time').textContent = fmtPrecise(time);
+        }
         waveMenu.hidden = false;
         const rect = waveMenu.getBoundingClientRect();
         const x = clampNumber(clientX, 8, Math.max(8, window.innerWidth - rect.width - 8));
         const y = clampNumber(clientY, 8, Math.max(8, window.innerHeight - rect.height - 8));
         waveMenu.style.left = `${x}px`;
         waveMenu.style.top = `${y}px`;
-        $('wave-menu-add').focus({ preventScroll: true });
+        menuItems()[0]?.focus({ preventScroll: true });
       };
+
+      $('wave-menu-ok').addEventListener('click', () => {
+        const marker = menuMarker;
+        closeMenu();
+        if (marker) toggleReviewed(marker);
+      });
+
+      // Enter i spacja działają na przycisku natywnie; strzałki przechodzą między pozycjami.
+      waveMenu.addEventListener('keydown', (event) => {
+        if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        const items = menuItems();
+        if (items.length <= 1) return;
+        const index = items.indexOf(document.activeElement);
+        const next =
+          event.key === 'Home'
+            ? 0
+            : event.key === 'End'
+              ? items.length - 1
+              : (index + (event.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length;
+        items[next]?.focus();
+      });
 
       $('wave-menu-add').addEventListener('click', () => {
         const time = menuTime;
@@ -1934,6 +2207,12 @@
         });
 
         node.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' && event.shiftKey) {
+            event.preventDefault();
+            event.stopPropagation();
+            toggleReviewed(marker);
+            return;
+          }
           if (event.key === 'Delete' || event.key === 'Backspace') {
             event.preventDefault();
             event.stopPropagation();
@@ -1976,8 +2255,14 @@
           shown.push({ entry, x });
         }
 
+        const focusedKey = document.activeElement?.dataset?.markerKey;
+        const rank = (entry) => {
+          if (entry.node.dataset.markerKey === focusedKey) return 0;
+          if (entry.marker.reviewed) return 1;
+          return entry.marker.kind === 'start' ? 2 : 3;
+        };
         const taken = [];
-        for (const item of [...shown].sort((a, b) => a.entry.marker.priority - b.entry.marker.priority)) {
+        for (const item of [...shown].sort((a, b) => rank(a.entry) - rank(b.entry))) {
           if (taken.some((other) => Math.abs(other - item.x) < gap)) item.entry.node.classList.add('is-dense');
           else taken.push(item.x);
         }
@@ -1994,13 +2279,16 @@
           if (entry) {
             // Ten sam obiekt znacznika trzymają domknięcia przeciągania i klawiatury.
             Object.assign(entry.marker, marker);
+            entry.node.classList.toggle('is-reviewed', Boolean(marker.reviewed));
+            entry.node.setAttribute('aria-pressed', String(Boolean(marker.reviewed)));
             continue;
           }
           const node = document.createElement('button');
           node.type = 'button';
-          node.className = `wave-marker is-${marker.kind}`;
+          node.className = `wave-marker is-${marker.kind}${marker.reviewed ? ' is-reviewed' : ''}`;
           node.dataset.markerKey = marker.key;
-          node.title = `${marker.name} — przeciągnij albo ←/→; Del usuwa`;
+          node.title = `${marker.name} — przeciągnij albo ←/→; Del usuwa; Shift+Enter = ok`;
+          node.setAttribute('aria-pressed', String(Boolean(marker.reviewed)));
           const line = document.createElement('span');
           line.className = 'wave-marker-line';
           const dot = document.createElement('span');
@@ -2017,6 +2305,7 @@
         }
         positionMarkers();
         updateNav();
+        updateCounts();
         if (focusedKey) {
           container.querySelector(`[data-marker-key="${focusedKey}"]`)?.focus({ preventScroll: true });
         }
@@ -2318,8 +2607,12 @@
         if (!wave.peaks) return;
         // Na znaczniku nie ma jeszcze własnych akcji — zostawiamy menu przeglądarki
         // i chowamy nasze, żeby nie wisiało pod kursorem.
-        if (event.target.closest('.wave-marker')) {
-          closeMenu();
+        const markerNode = event.target.closest('.wave-marker');
+        if (markerNode) {
+          const entry = markerNodes.get(markerNode.dataset.markerKey);
+          if (!entry) return;
+          event.preventDefault();
+          openMenuAt(event.clientX, event.clientY, entry.marker.time, markerNode, entry.marker);
           return;
         }
         event.preventDefault();
