@@ -1,3 +1,24 @@
+## [1.15.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.14.1...v1.15.0) (2026-11-08)
+
+### Features
+
+* **data:** add topic entry and correct end time ([0cdf2d0](https://github.com/tiriana/ciezko-na-sercu-web/commit/0cdf2d02b8a976c2caef43830c8a6ee899fe567e))
+* **editor:** add context menu and shortcut to insert entry ([2b3d958](https://github.com/tiriana/ciezko-na-sercu-web/commit/2b3d958ac94b679f7c47e3d1d5c9cc53bf6a103e))
+* **edytor:** add health endpoint and improve episode list layout ([233c12b](https://github.com/tiriana/ciezko-na-sercu-web/commit/233c12b37c9449d7225951a8dd5ddeebc117ab7b))
+* **edytor:** add live reload prompt, SSE events endpoint, and watch mode ([b53b3db](https://github.com/tiriana/ciezko-na-sercu-web/commit/b53b3db6403d4190e5250e901c7c81d1389f1465))
+* **edytor:** add reviewed markers UI and persistence API ([2bd9e9b](https://github.com/tiriana/ciezko-na-sercu-web/commit/2bd9e9ba54251c8ad9b226b6de5d024edf5eb605))
+
+### Bug Fixes
+
+* **data:** adjust track timestamps wip ([b7fcecd](https://github.com/tiriana/ciezko-na-sercu-web/commit/b7fcecd4de73122f03d365a6ee2757b8ec360d5e))
+* **data:** wip adjust Black Sabbath track end/start times ([3d3eac9](https://github.com/tiriana/ciezko-na-sercu-web/commit/3d3eac90dafedba0b35a1893628929490260cdef))
+* **data:** wip adjust event timestamps ([ec7bc13](https://github.com/tiriana/ciezko-na-sercu-web/commit/ec7bc13e6d2202fa902a63e3b11951a38eda4995))
+* **overrides:** correct end and start timestamps ([12fad6e](https://github.com/tiriana/ciezko-na-sercu-web/commit/12fad6ebeeaf02d4afaecdd66ecde92ad86186cd))
+* **overrides:** correct end/start timestamps for Black Sabbath track ([148ca5a](https://github.com/tiriana/ciezko-na-sercu-web/commit/148ca5a4424305cbe6c2939b19c7187f50673429))
+* **overrides:** wip adjust Black Sabbath track timestamps ([c948a43](https://github.com/tiriana/ciezko-na-sercu-web/commit/c948a43d28cb50fa8098231e996d3e23d60284a4))
+* **overrides:** wip adjust subtitle timestamps ([39c465b](https://github.com/tiriana/ciezko-na-sercu-web/commit/39c465b5254f6df043eafc56d16fab30af80b260))
+* **overrides:** wip adjust track start/end timestamps ([7dc5370](https://github.com/tiriana/ciezko-na-sercu-web/commit/7dc5370efb5a8eb9368bfdadc28e7c49892e4096))
+
 ## [1.14.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.14.0...v1.14.1) (2026-11-08)
 
 ### Bug Fixes
