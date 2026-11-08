@@ -64,6 +64,7 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
       if (!track) continue;
       if (fix.start !== undefined) track.start = fix.start;
       if (fix.durationSec !== undefined) track.durationSec = fix.durationSec;
+      if (fix.end !== undefined) track.end = fix.end;
       if (fix.newArtist !== undefined) track.artist = fix.newArtist;
       if (fix.newTitle !== undefined) track.title = fix.newTitle;
       if (fix.newAlbum !== undefined) track.album = fix.newAlbum;

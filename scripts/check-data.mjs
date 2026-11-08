@@ -140,6 +140,7 @@ for (const name of await readdir(EPISODES)) {
 const TRANSCRIPTS = join(DATA, 'transcripts');
 const transcriptFiles = await readdir(TRANSCRIPTS).catch(() => []);
 const transcriptIds = new Set();
+const speechByEpisode = new Map();
 for (const name of transcriptFiles) {
   if (!name.endsWith('.json')) continue;
   const id = name.slice(0, -5);
@@ -150,6 +151,10 @@ for (const name of transcriptFiles) {
   if (!Array.isArray(transcript.segments) || transcript.segments.length === 0) {
     problems.push(`transcripts/${name}: brak segmentów`);
   }
+  speechByEpisode.set(
+    id,
+    (transcript.segments ?? []).filter((segment) => segment.text?.trim().length > 0).map((segment) => segment.start)
+  );
 }
 
 for (const name of transcriptFiles) {
@@ -236,6 +241,27 @@ if (staleTimeline.length > 0) {
     `${staleTimeline.length} opracowań ma dane sprzed uzgadniania osi programu — przelicz \`rat tag\`, ` +
       'żeby czasy wejść i utworów przestały się nakładać.'
   );
+}
+
+// Koniec utworu powinien wypaść tam, gdzie zaczyna się mowa (etap 1, #52). Resztki
+// są legalne, więc to podpowiedź, nie błąd — ich naprawą zajmuje się etap 2 (#53).
+const tails = [];
+for (const name of await readdir(EPISODES)) {
+  if (!name.endsWith('.json')) continue;
+  const episode = JSON.parse(await readFile(join(EPISODES, name), 'utf8'));
+  const speech = speechByEpisode.get(episode.id) ?? [];
+  for (const track of episode.tracks ?? []) {
+    if (!(track.durationSec > 0) || typeof track.end !== 'number') continue;
+    const nominalEnd = track.start + track.durationSec;
+    if (track.end - nominalEnd <= 3) continue;
+    if (!speech.some((start) => start >= nominalEnd && start < track.end)) continue;
+    tails.push(`${episode.id}: ${track.artist ?? '?'} — ${track.title ?? '?'} (${Math.round(track.end - nominalEnd)} s)`);
+  }
+}
+
+if (tails.length > 0) {
+  console.log(`${tails.length} utworów kończy się w środku wypowiedzi (kandydaci do etapu 2, #53):`);
+  for (const tail of tails.slice(0, 10)) console.log(`  - ${tail}`);
 }
 
 if (aliasCandidates.length > 0) {
