@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.2.0...v1.3.0) (2026-11-08)
+
+### Features
+
+* transkrypcja jednego odcinka dziennie z harmonogramu ([ec63c08](https://github.com/tiriana/ciezko-na-sercu-web/commit/ec63c08e5c0389f282ee811a74064d8b22ece535))
+
 ## [1.2.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.1.3...v1.2.0) (2026-11-08)
 
 ### Features
