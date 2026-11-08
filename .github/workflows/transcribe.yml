@@ -46,6 +46,7 @@ run-name: "transkrypcja: ${{ inputs.label || inputs.episodes || 'wszystkie odcin
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: transcribe
@@ -168,6 +169,9 @@ jobs:
       - name: Złóż części
         run: node scripts/merge-transcripts.mjs .incoming data/transcripts
 
+      - name: Przelicz czasy tematów
+        run: node scripts/snap-topics.mjs
+
       - run: npm ci
       - run: npm run check
 
@@ -179,6 +183,12 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/transcripts
-          git commit -m "fix: transkrypcje gęstszymi segmentami (${GITHUB_RUN_ID})"
+          git add data/transcripts data/episodes
+          git commit -m "fix: transkrypcja i przeliczone czasy tematów (${GITHUB_RUN_ID})"
           git push
+
+      # Push z GITHUB_TOKEN nie uruchamia workflow, więc deploy zamawiamy ręcznie.
+      - name: Deploy po aktualizacji danych
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main
