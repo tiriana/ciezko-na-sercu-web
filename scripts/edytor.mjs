@@ -567,15 +567,21 @@ const server = createServer(async (req, res) => {
         normalize(left.artist) === normalize(right.artist) &&
         normalize(left.title) === normalize(right.title) &&
         normalize(left.album ?? '') === normalize(right.album ?? '');
+      // Edytor wysyła `null`, gdy pole zostanie wyczyszczone (album bywa `null` już
+      // w danych odcinka), a schemat strony przyjmuje tylko tekst albo brak pola —
+      // bez tego zapis wywalał build.
+      const compact = (fix) => Object.fromEntries(Object.entries(fix).filter(([, value]) => value !== null && value !== undefined));
       const tracks = [...previous.tracks];
-      for (const fix of payload.tracks ?? []) {
+      for (const incoming of payload.tracks ?? []) {
+        const fix = compact(incoming);
         const index = tracks.findIndex((existing) => sameTrack(existing, fix));
         if (index >= 0) tracks[index] = fix;
         else tracks.push(fix);
       }
       const sameTopic = (left, right) => left.time === right.time && normalize(left.label) === normalize(right.label);
       const topics = [...(previous.topics ?? [])];
-      for (const fix of payload.topics ?? []) {
+      for (const incoming of payload.topics ?? []) {
+        const fix = compact(incoming);
         const index = topics.findIndex((existing) => sameTopic(existing, fix));
         if (index >= 0) topics[index] = fix;
         else topics.push(fix);
@@ -584,8 +590,8 @@ const server = createServer(async (req, res) => {
         version: 1,
         tracks,
         topics,
-        addTracks: payload.addTracks ?? previous.addTracks ?? [],
-        addTopics: payload.addTopics ?? previous.addTopics ?? [],
+        addTracks: (payload.addTracks ?? previous.addTracks ?? []).map(compact),
+        addTopics: (payload.addTopics ?? previous.addTopics ?? []).map(compact),
         credits: previous.credits ?? { rename: {} },
       };
       const empty =
