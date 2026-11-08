@@ -130,6 +130,169 @@
       .tag-index .type-select { margin-right: 6px; font-size: 11px; padding: 1px 2px; }
       .tag-index .count { color: var(--muted); }
       .tag-index .alias-of { color: var(--accent); font-size: 12px; }
+
+      .wave {
+        margin: 0 0 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+      }
+      .wave [hidden] { display: none !important; }
+      .wave-head {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px 12px;
+        padding: 6px 10px;
+        border-bottom: 1px solid var(--line);
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .wave-name {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--text);
+      }
+      .wave-window {
+        color: var(--text);
+        font-size: 12.5px;
+        font-variant-numeric: tabular-nums;
+      }
+      .wave-legend { display: flex; gap: 10px; flex-wrap: wrap; margin-left: auto; font-size: 11.5px; }
+      .wave-legend span { display: inline-flex; align-items: center; gap: 4px; }
+      .wave-legend i { width: 7px; height: 7px; border-radius: 50%; }
+      .wave-legend .dot-start { background: var(--accent); }
+      .wave-legend .dot-topic { background: #1f6f6b; }
+      .wave-legend .dot-end { background: #9a9086; }
+      .wave-tools { display: flex; gap: 4px; }
+      .wave-tools button {
+        min-width: 26px;
+        padding: 3px 7px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: var(--surface);
+        font: inherit;
+        font-size: 12px;
+        line-height: 1.3;
+        cursor: pointer;
+      }
+      .wave-tools button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+      .wave-tools button:disabled { opacity: 0.4; cursor: default; }
+      .wave-stage {
+        position: relative;
+        height: 76px;
+        background: linear-gradient(#fffdfb, #f8f4ee);
+        touch-action: pan-y;
+        cursor: crosshair;
+        overflow: hidden;
+      }
+      .wave-stage:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+      .wave-stage.is-panning { cursor: grabbing; }
+      #wave-canvas { display: block; width: 100%; height: 100%; }
+      .wave-markers { position: absolute; inset: 0; pointer-events: none; }
+      .wave-marker {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 13px;
+        margin-left: -6.5px;
+        padding: 0;
+        border: 0;
+        background: none;
+        color: var(--accent);
+        cursor: ew-resize;
+        pointer-events: auto;
+        opacity: 0.85;
+      }
+      .wave-marker:hover, .wave-marker:focus { opacity: 1; }
+      .wave-marker.is-topic { color: #1f6f6b; }
+      .wave-marker.is-end { color: #9a9086; opacity: 0.7; }
+      .wave-marker.is-dense { opacity: 0; pointer-events: none; }
+      .wave-stage:hover .wave-marker.is-dense { opacity: 0.3; }
+      .wave-marker.is-dense:focus { opacity: 1; pointer-events: auto; }
+      .wave-marker-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        margin-left: -0.5px;
+        background: currentColor;
+      }
+      .wave-marker.is-end .wave-marker-line { top: 10px; background: none; border-left: 1px dashed currentColor; width: 0; }
+      .wave-marker-dot {
+        position: absolute;
+        left: 50%;
+        top: 1px;
+        width: 8px;
+        height: 8px;
+        margin-left: -4px;
+        border-radius: 50%;
+        background: currentColor;
+        box-shadow: 0 0 0 2px var(--surface);
+      }
+      .wave-marker.is-topic .wave-marker-dot { bottom: 2px; top: auto; width: 7px; height: 7px; margin-left: -3.5px; }
+      .wave-marker.is-end .wave-marker-dot { bottom: 2px; top: auto; width: 6px; height: 6px; margin-left: -3px; background: var(--surface); border: 1.5px solid currentColor; }
+      .wave-marker:focus { outline: none; }
+      .wave-marker:focus .wave-marker-dot { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent); }
+      .wave-marker.is-dragging { opacity: 1; }
+      .wave-marker.is-dragging .wave-marker-line { width: 2px; margin-left: -1px; }
+      .wave-playhead {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 2px;
+        margin-left: -1px;
+        background: #1c1a18;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+      .wave-status {
+        position: absolute;
+        inset: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: var(--muted);
+        background: rgba(255, 253, 251, 0.86);
+      }
+      .wave-stage.is-error { height: auto; min-height: 76px; display: flex; align-items: center; cursor: default; }
+      .wave-stage.is-error #wave-canvas,
+      .wave-stage.is-error .wave-markers,
+      .wave-stage.is-error .wave-playhead { display: none; }
+      .wave-fallback { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; padding: 12px; }
+      .wave-fallback p { margin: 0; }
+      .wave-fallback-reason { flex-basis: 100%; font-size: 13px; color: var(--text); }
+      .wave-fallback-note { font-size: 11.5px; color: var(--muted); }
+      .wave-fallback button {
+        padding: 4px 9px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: var(--surface);
+        font: inherit;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .wave-fallback button:hover { border-color: var(--accent); color: var(--accent); }
+      .wave-hint { margin: 0; padding: 5px 10px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); }
+
+      @media (max-width: 760px) {
+        .layout { grid-template-columns: minmax(0, 1fr); }
+        .sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
+        .list { max-height: 190px; }
+        .main { padding: 12px 12px 60px; }
+        #editor table { display: block; overflow-x: auto; }
+        .wave-legend { margin-left: 0; }
+        .wave-stage { height: 64px; }
+        header { position: static; }
+        .player { top: 0; }
+      }
     </style>
   </head>
   <body>
@@ -190,6 +353,47 @@
       <main class="main">
         <p class="empty" id="empty">Wybierz odcinek z listy.</p>
         <div id="editor" hidden>
+          <section class="wave" aria-labelledby="wave-title">
+            <div class="wave-head">
+              <span class="wave-name" id="wave-title">Głośność</span>
+              <span class="wave-window" id="wave-window">—</span>
+              <span class="wave-legend" aria-hidden="true">
+                <span><i class="dot-start"></i>start utworu</span>
+                <span><i class="dot-topic"></i>wejście</span>
+                <span><i class="dot-end"></i>koniec</span>
+              </span>
+              <span class="wave-tools">
+                <button type="button" id="wave-out" title="Oddal" aria-label="Oddal waveform" disabled>−</button>
+                <button type="button" id="wave-in" title="Przybliż" aria-label="Przybliż waveform" disabled>+</button>
+                <button type="button" id="wave-all" disabled>całość</button>
+              </span>
+            </div>
+            <div
+              class="wave-stage"
+              id="wave-stage"
+              tabindex="0"
+              role="group"
+              aria-label="Waveform nagrania: kółko przybliża, strzałki przesuwają okno, klik przewija"
+            >
+              <canvas id="wave-canvas" aria-hidden="true"></canvas>
+              <div class="wave-markers" id="wave-markers"></div>
+              <div class="wave-playhead" id="wave-playhead" hidden></div>
+              <p class="wave-status" id="wave-status" hidden></p>
+              <div class="wave-fallback" id="wave-fallback" hidden>
+                <p class="wave-fallback-reason" id="wave-fallback-reason"></p>
+                <p class="wave-fallback-note">
+                  Waveform liczy ffmpeg, czytając nagranie z sieci — bez ffmpeg i dostępu do nagrania
+                  się nie uda.
+                </p>
+                <button type="button" id="wave-retry">spróbuj ponownie</button>
+              </div>
+            </div>
+            <p class="wave-hint">
+              kółko = zoom, przeciągnięcie tła = przesunięcie, klik = przewiń bez grania, dwuklik
+              = graj; znaczniki przeciągasz myszką albo Tab + ←/→ (Shift = 1 s)
+            </p>
+          </section>
+
           <div class="player">
             <button type="button" data-skip="-5">−5 s</button>
             <audio id="audio" controls preload="none"></audio>
@@ -258,6 +462,7 @@
         hiddenTopics: [],
       };
       const $ = (id) => document.getElementById(id);
+      const fieldInputs = new WeakMap();
 
       const fmt = (seconds) => {
         if (!Number.isFinite(seconds)) return '—';
@@ -337,15 +542,22 @@
           const startInput = document.createElement('input');
           startInput.type = 'number';
           startInput.value = String(track.start ?? 0);
-          startInput.addEventListener('input', () => (track.start = Number(startInput.value)));
+          startInput.addEventListener('input', () => {
+            track.start = Number(startInput.value);
+            waveSync();
+          });
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(track.start)));
 
           const duration = document.createElement('td');
           const durationInput = document.createElement('input');
           durationInput.type = 'number';
           durationInput.value = String(track.durationSec ?? 0);
-          durationInput.addEventListener('input', () => (track.durationSec = Number(durationInput.value)));
+          durationInput.addEventListener('input', () => {
+            track.durationSec = Number(durationInput.value);
+            waveSync();
+          });
           duration.append(durationInput);
+          fieldInputs.set(track, { start: startInput, duration: durationInput });
 
           const actions = document.createElement('td');
           const hide = rowButton('ukryj', () => {
@@ -359,6 +571,7 @@
           tr.append(artist, title, album, start, duration, actions);
           body.append(tr);
         });
+        waveSync();
       };
 
       const renderTopics = () => {
@@ -378,8 +591,12 @@
           const startInput = document.createElement('input');
           startInput.type = 'number';
           startInput.value = String(topic.start ?? 0);
-          startInput.addEventListener('input', () => (topic.start = Number(startInput.value)));
+          startInput.addEventListener('input', () => {
+            topic.start = Number(startInput.value);
+            waveSync();
+          });
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(topic.start)));
+          fieldInputs.set(topic, { start: startInput });
 
           const actions = document.createElement('td');
           actions.append(
@@ -394,6 +611,7 @@
           tr.append(label, start, actions);
           body.append(tr);
         });
+        waveSync();
       };
 
       const renderAdded = () => {
@@ -408,6 +626,7 @@
             ['start', 'number', '0'],
             ['durationSec', 'number', '0'],
           ];
+          const inputs = {};
           for (const [field, type, placeholder] of cells) {
             const td = document.createElement('td');
             const input = document.createElement('input');
@@ -416,11 +635,14 @@
             input.placeholder = placeholder;
             input.addEventListener('input', () => {
               track[field] = type === 'number' ? Number(input.value) : input.value;
+              if (type === 'number') waveSync();
             });
+            inputs[field] = input;
             td.append(input);
             if (field === 'start') td.append(rowButton('weź', () => usePlayerTime(input)));
             tr.append(td);
           }
+          fieldInputs.set(track, inputs);
           const actions = document.createElement('td');
           actions.append(
             rowButton('usuń', () => {
@@ -447,8 +669,12 @@
           const startInput = document.createElement('input');
           startInput.type = 'number';
           startInput.value = String(topic.start ?? 0);
-          startInput.addEventListener('input', () => (topic.start = Number(startInput.value)));
+          startInput.addEventListener('input', () => {
+            topic.start = Number(startInput.value);
+            waveSync();
+          });
           startCell.append(startInput, rowButton('weź', () => usePlayerTime(startInput)));
+          fieldInputs.set(topic, { start: startInput });
 
           const actions = document.createElement('td');
           actions.append(
@@ -460,6 +686,7 @@
           tr.append(labelCell, startCell, actions);
           topicBody.append(tr);
         });
+        waveSync();
       };
 
       const renderRestore = () => {
@@ -534,7 +761,585 @@
         renderAdded();
         renderRestore();
         renderList();
+        openWave(data.id);
       };
+
+      // --- Waveform: głośność nagrania, zoom, przesuwanie okna, znaczniki ---
+
+      const PEAKS_PER_SECOND = 100;
+      const MIN_WAVE_SPAN = 5;
+      const peaksCache = new Map();
+      const peaksPending = new Map();
+
+      const wave = {
+        id: null,
+        peaks: null,
+        duration: 0,
+        start: 0,
+        span: 0,
+        token: 0,
+        loadingTimer: 0,
+        frame: 0,
+        following: false,
+        pan: null,
+      };
+
+      const clampNumber = (value, low, high) => Math.min(high, Math.max(low, value));
+      const stageEl = () => $('wave-stage');
+
+      const fmtWave = (seconds) => {
+        if (!Number.isFinite(seconds)) return '—';
+        if (wave.span > 30) return fmt(seconds);
+        const total = Math.max(0, seconds);
+        const minutes = Math.floor(total / 60);
+        const rest = (total % 60).toFixed(1).padStart(4, '0');
+        return `${minutes}:${rest}`;
+      };
+
+      const setWaveStatus = (text) => {
+        const node = $('wave-status');
+        node.textContent = text;
+        node.hidden = !text;
+      };
+
+      const setWaveTools = (enabled) => {
+        for (const id of ['wave-in', 'wave-out', 'wave-all']) $(id).disabled = !enabled;
+      };
+
+      const drawWave = () => {
+        const stage = stageEl();
+        const canvas = $('wave-canvas');
+        const width = stage.clientWidth;
+        const height = stage.clientHeight;
+        if (!width || !height) return;
+        const ratio = window.devicePixelRatio || 1;
+        if (canvas.width !== Math.round(width * ratio) || canvas.height !== Math.round(height * ratio)) {
+          canvas.width = Math.round(width * ratio);
+          canvas.height = Math.round(height * ratio);
+        }
+        const ctx = canvas.getContext('2d');
+        ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+        ctx.clearRect(0, 0, width, height);
+        const peaks = wave.peaks;
+        if (!peaks || !wave.span) return;
+
+        const base = wave.start * PEAKS_PER_SECOND;
+        const perPixel = (wave.span * PEAKS_PER_SECOND) / width;
+        const middle = height / 2;
+        const amplitude = Math.max(1, middle - 3);
+        const currentTime = $('audio').currentTime;
+        const playheadX = Number.isFinite(currentTime) ? ((currentTime - wave.start) / wave.span) * width : -1;
+
+        ctx.fillStyle = 'rgba(120, 110, 100, 0.14)';
+        const step =
+          [1, 2, 5, 10, 15, 30, 60, 120, 300, 600, 900, 1800].find(
+            (value) => (value / wave.span) * width >= 90
+          ) ?? 1800;
+        for (let time = Math.ceil(wave.start / step) * step; time < wave.start + wave.span; time += step) {
+          ctx.fillRect(Math.round(((time - wave.start) / wave.span) * width), 0, 1, height);
+        }
+
+        const bars = (color) => {
+          ctx.fillStyle = color;
+          if (perPixel < 1.6) {
+            // okno krótsze niż ~1,6 słupka na piksel: rysujemy pojedyncze słupki z odstępem
+            const stride = width / (wave.span * PEAKS_PER_SECOND);
+            const barWidth = Math.max(1, stride * 0.7);
+            const last = Math.ceil(base + wave.span * PEAKS_PER_SECOND);
+            for (let index = Math.floor(base); index < last; index += 1) {
+              const value = peaks[index] ?? 0;
+              const x = ((index - base) / PEAKS_PER_SECOND / wave.span) * width;
+              const size = Math.max(0.5, (value / 255) * amplitude);
+              ctx.fillRect(x, middle - size, barWidth, size * 2);
+            }
+            return;
+          }
+          for (let x = 0; x < width; x += 1) {
+            const from = Math.floor(base + x * perPixel);
+            const to = Math.max(from + 1, Math.floor(base + (x + 1) * perPixel));
+            let peak = 0;
+            for (let index = from; index < to; index += 1) {
+              const value = peaks[index] ?? 0;
+              if (value > peak) peak = value;
+            }
+            const size = Math.max(0.5, (peak / 255) * amplitude);
+            ctx.fillRect(x, middle - size, 1, size * 2);
+          }
+        };
+
+        bars('rgba(118, 106, 94, 0.6)');
+        if (playheadX > 0) {
+          ctx.save();
+          ctx.beginPath();
+          ctx.rect(0, 0, Math.min(width, playheadX), height);
+          ctx.clip();
+          bars('rgba(200, 16, 46, 0.68)');
+          ctx.restore();
+        }
+      };
+
+      const objectKeys = new WeakMap();
+      let objectSeq = 0;
+      const objectKey = (object) => {
+        if (!objectKeys.has(object)) {
+          objectSeq += 1;
+          objectKeys.set(object, objectSeq);
+        }
+        return objectKeys.get(object);
+      };
+
+      const trackEnd = (track) => {
+        const start = Number(track.start);
+        if (Number.isFinite(track.end) && track.end > start) return track.end;
+        if (Number(track.durationSec) > 0) return start + Number(track.durationSec);
+        return null;
+      };
+
+      const trackName = (track) =>
+        `${track.artist?.trim() || 'bez wykonawcy'} — ${track.title?.trim() || 'bez tytułu'}`;
+
+      const collectMarkers = () => {
+        const markers = [];
+        const push = (kind, object, field, time, priority, name) => {
+          if (!Number.isFinite(time)) return;
+          markers.push({ kind, object, field, time, priority, name, key: `${kind}:${objectKey(object)}` });
+        };
+        for (const track of state.tracks) {
+          push('start', track, 'start', Number(track.start), 1, `Początek: ${trackName(track)}`);
+          const end = trackEnd(track);
+          if (end !== null) push('end', track, 'end', end, 3, `Koniec: ${trackName(track)}`);
+        }
+        for (const track of state.addTracks) {
+          push('start', track, 'start', Number(track.start), 1, `Początek: ${trackName(track)}`);
+          const end = trackEnd(track);
+          if (end !== null) push('end', track, 'end', end, 3, `Koniec: ${trackName(track)}`);
+        }
+        for (const topic of state.topics) {
+          push('topic', topic, 'start', Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
+        }
+        for (const topic of state.addTopics) {
+          push('topic', topic, 'start', Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
+        }
+        return markers;
+      };
+
+      const markerNodes = new Map();
+
+      const applyMarkerTime = (marker, time) => {
+        const next = clampNumber(Math.round(time * 10) / 10, 0, wave.duration);
+        marker.time = next;
+        if (marker.kind === 'end') {
+          marker.object.end = next;
+          const durationSec = Math.max(0, Math.round(next - Number(marker.object.start ?? 0)));
+          marker.object.durationSec = durationSec;
+          const inputs = fieldInputs.get(marker.object);
+          if (inputs?.duration) inputs.duration.value = String(durationSec);
+        } else {
+          marker.object[marker.field] = next;
+          const inputs = fieldInputs.get(marker.object);
+          if (inputs?.start) inputs.start.value = String(next);
+        }
+      };
+
+      const placeMarker = (node, marker) => {
+        const width = stageEl().clientWidth || 1;
+        node.style.left = `${((marker.time - wave.start) / wave.span) * width}px`;
+        node.setAttribute('aria-label', `${marker.name}, ${fmt(marker.time)}`);
+      };
+
+      const bindMarker = (node, marker) => {
+        node.addEventListener('pointerdown', (event) => {
+          if (event.button !== 0 || !wave.peaks) return;
+          event.stopPropagation();
+          event.preventDefault();
+          node.focus({ preventScroll: true });
+          const rect = stageEl().getBoundingClientRect();
+          const originX = event.clientX;
+          let moved = false;
+          node.setPointerCapture(event.pointerId);
+          node.classList.add('is-dragging');
+
+          const move = (moveEvent) => {
+            if (!moved && Math.abs(moveEvent.clientX - originX) > 2) moved = true;
+            if (!moved) return;
+            const ratio = clampNumber((moveEvent.clientX - rect.left) / rect.width, 0, 1);
+            applyMarkerTime(marker, wave.start + ratio * wave.span);
+            placeMarker(node, marker);
+          };
+          const cleanup = () => {
+            node.removeEventListener('pointermove', move);
+            node.removeEventListener('pointerup', finish);
+            node.removeEventListener('pointercancel', cleanup);
+            node.classList.remove('is-dragging');
+          };
+          const finish = () => {
+            cleanup();
+            if (!moved) seek(marker.time);
+          };
+          node.addEventListener('pointermove', move);
+          node.addEventListener('pointerup', finish);
+          node.addEventListener('pointercancel', cleanup);
+        });
+
+        node.addEventListener('keydown', (event) => {
+          if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+          event.preventDefault();
+          event.stopPropagation();
+          const step = event.shiftKey ? 1 : 0.1;
+          applyMarkerTime(marker, marker.time + (event.key === 'ArrowRight' ? step : -step));
+          placeMarker(node, marker);
+        });
+      };
+
+      const positionMarkers = () => {
+        const width = stageEl().clientWidth;
+        if (!wave.peaks || !wave.span || !width) {
+          for (const entry of markerNodes.values()) entry.node.hidden = true;
+          return;
+        }
+
+        // Gęstość: przy pełnym oddaleniu znaczniki nachodzą na siebie, więc widoczny
+        // zostaje ten o wyższym priorytecie (start > wejście > koniec), a resztę
+        // chowa kreska — nadal jest w kolejności Tab i wraca po fokusie lub najechaniu.
+        const gap = Math.max(4.5, width / 130);
+        const shown = [];
+        for (const entry of markerNodes.values()) {
+          const { node, marker } = entry;
+          const x = ((marker.time - wave.start) / wave.span) * width;
+          node.classList.remove('is-dense');
+          if (x < -10 || x > width + 10) {
+            node.hidden = true;
+            continue;
+          }
+          node.hidden = false;
+          node.style.left = `${x}px`;
+          node.setAttribute('aria-label', `${marker.name}, ${fmt(marker.time)}`);
+          shown.push({ entry, x });
+        }
+
+        const taken = [];
+        for (const item of [...shown].sort((a, b) => a.entry.marker.priority - b.entry.marker.priority)) {
+          if (taken.some((other) => Math.abs(other - item.x) < gap)) item.entry.node.classList.add('is-dense');
+          else taken.push(item.x);
+        }
+      };
+
+      const buildMarkers = () => {
+        const container = $('wave-markers');
+        const focusedKey = document.activeElement?.dataset?.markerKey;
+        const markers = collectMarkers();
+        const seen = new Set();
+        for (const marker of markers) {
+          seen.add(marker.key);
+          const entry = markerNodes.get(marker.key);
+          if (entry) {
+            // Ten sam obiekt znacznika trzymają domknięcia przeciągania i klawiatury.
+            Object.assign(entry.marker, marker);
+            continue;
+          }
+          const node = document.createElement('button');
+          node.type = 'button';
+          node.className = `wave-marker is-${marker.kind}`;
+          node.dataset.markerKey = marker.key;
+          node.title = `${marker.name} — przeciągnij albo ←/→`;
+          const line = document.createElement('span');
+          line.className = 'wave-marker-line';
+          const dot = document.createElement('span');
+          dot.className = 'wave-marker-dot';
+          node.append(line, dot);
+          bindMarker(node, marker);
+          container.append(node);
+          markerNodes.set(marker.key, { node, marker });
+        }
+        for (const [key, entry] of [...markerNodes]) {
+          if (seen.has(key)) continue;
+          entry.node.remove();
+          markerNodes.delete(key);
+        }
+        positionMarkers();
+        if (focusedKey) {
+          container.querySelector(`[data-marker-key="${focusedKey}"]`)?.focus({ preventScroll: true });
+        }
+      };
+
+      const clearMarkers = () => {
+        for (const entry of markerNodes.values()) entry.node.remove();
+        markerNodes.clear();
+      };
+
+      const syncPlayhead = () => {
+        const node = $('wave-playhead');
+        const width = stageEl().clientWidth;
+        const audio = $('audio');
+        const time = audio.currentTime;
+        if (!wave.peaks || !wave.span || !width || !Number.isFinite(time)) {
+          node.hidden = true;
+          return;
+        }
+        if (!audio.paused && !wave.following) {
+          const right = wave.start + wave.span;
+          if (time >= right - wave.span * 0.04 || time < wave.start) {
+            wave.following = true;
+            setWindow(time - wave.span * 0.1, wave.span);
+            wave.following = false;
+          }
+        }
+        const x = ((time - wave.start) / wave.span) * width;
+        if (x < -1 || x > width + 1) {
+          node.hidden = true;
+          return;
+        }
+        node.hidden = false;
+        node.style.left = `${x}px`;
+      };
+
+      const renderWave = () => {
+        $('wave-window').textContent = wave.span
+          ? `${fmtWave(wave.start)} – ${fmtWave(wave.start + wave.span)}`
+          : '—';
+        drawWave();
+        positionMarkers();
+      };
+
+      const setWindow = (start, span) => {
+        if (!wave.duration) return;
+        const minSpan = Math.min(MIN_WAVE_SPAN, wave.duration);
+        wave.span = clampNumber(span, minSpan, wave.duration);
+        wave.start = clampNumber(start, 0, Math.max(0, wave.duration - wave.span));
+        renderWave();
+        syncPlayhead();
+      };
+
+      const zoomWave = (factor) => {
+        if (!wave.peaks) return;
+        const time = $('audio').currentTime;
+        const inside = Number.isFinite(time) && time > wave.start && time < wave.start + wave.span;
+        const ratio = inside ? (time - wave.start) / wave.span : 0.5;
+        const anchor = wave.start + wave.span * ratio;
+        const span = wave.span * factor;
+        setWindow(anchor - span * ratio, span);
+      };
+
+      const seekQuiet = (time) => {
+        const audio = $('audio');
+        if (!Number.isFinite(time) || !wave.duration) return;
+        audio.currentTime = clampNumber(time, 0, wave.duration);
+        $('clock').textContent = fmt(audio.currentTime);
+        syncPlayhead();
+        drawWave();
+      };
+
+      const timeAt = (clientX) => {
+        const rect = stageEl().getBoundingClientRect();
+        const ratio = clampNumber((clientX - rect.left) / rect.width, 0, 1);
+        return wave.start + ratio * wave.span;
+      };
+
+      let waveSyncFrame = 0;
+      function waveSync() {
+        if (waveSyncFrame) return;
+        waveSyncFrame = requestAnimationFrame(() => {
+          waveSyncFrame = 0;
+          buildMarkers();
+        });
+      }
+
+      const fetchPeaks = (id) => {
+        if (peaksCache.has(id)) return Promise.resolve(peaksCache.get(id));
+        if (peaksPending.has(id)) return peaksPending.get(id);
+        const job = (async () => {
+          try {
+            const response = await fetch(`/api/peaks?id=${encodeURIComponent(id)}`);
+            if (!response.ok) {
+              let reason = `serwer odpowiedział ${response.status}`;
+              if ((response.headers.get('content-type') ?? '').includes('json')) {
+                const data = await response.json().catch(() => null);
+                if (data?.error) reason = String(data.error);
+              }
+              return { error: reason };
+            }
+            const buffer = await response.arrayBuffer();
+            if (buffer.byteLength === 0) return { error: 'serwer zwrócił pusty waveform' };
+            const result = { peaks: new Uint8Array(buffer) };
+            peaksCache.set(id, result);
+            return result;
+          } catch (error) {
+            return { error: `nie udało się pobrać waveformu: ${error.message}` };
+          } finally {
+            peaksPending.delete(id);
+          }
+        })();
+        peaksPending.set(id, job);
+        return job;
+      };
+
+      const showWaveError = (reason) => {
+        setWaveStatus('');
+        setWaveTools(false);
+        wave.peaks = null;
+        wave.duration = 0;
+        wave.span = 0;
+        $('wave-markers').textContent = '';
+        $('wave-playhead').hidden = true;
+        $('wave-fallback-reason').textContent = reason;
+        $('wave-fallback').hidden = false;
+        stageEl().classList.add('is-error');
+        $('wave-window').textContent = '—';
+        drawWave();
+      };
+
+      const openWave = async (id) => {
+        const token = (wave.token += 1);
+        wave.id = id;
+        wave.peaks = null;
+        wave.duration = 0;
+        wave.span = 0;
+        wave.start = 0;
+        clearMarkers();
+        $('wave-playhead').hidden = true;
+        $('wave-fallback').hidden = true;
+        stageEl().classList.remove('is-error');
+        setWaveTools(false);
+        drawWave();
+        $('wave-window').textContent = '—';
+
+        const startedAt = Date.now();
+        setWaveStatus('liczę waveform… 0 s');
+        clearInterval(wave.loadingTimer);
+        wave.loadingTimer = setInterval(() => {
+          if (token === wave.token) {
+            setWaveStatus(`liczę waveform… ${Math.round((Date.now() - startedAt) / 1000)} s`);
+          }
+        }, 1000);
+
+        const result = await fetchPeaks(id);
+        if (token !== wave.token) return;
+        clearInterval(wave.loadingTimer);
+        if (result.error) {
+          showWaveError(result.error);
+          return;
+        }
+        wave.peaks = result.peaks;
+        wave.duration = result.peaks.length / PEAKS_PER_SECOND;
+        setWaveStatus('');
+        setWaveTools(true);
+        buildMarkers();
+        setWindow(0, wave.duration);
+      };
+
+      const audioEl = $('audio');
+      const refreshWave = () => {
+        syncPlayhead();
+        drawWave();
+      };
+      const frameLoop = () => {
+        wave.frame = 0;
+        refreshWave();
+        if (!audioEl.paused) wave.frame = requestAnimationFrame(frameLoop);
+      };
+      const startFrames = () => {
+        if (!wave.frame) wave.frame = requestAnimationFrame(frameLoop);
+      };
+
+      audioEl.addEventListener('play', startFrames);
+      audioEl.addEventListener('pause', () => {
+        if (wave.frame) cancelAnimationFrame(wave.frame);
+        wave.frame = 0;
+        refreshWave();
+      });
+      audioEl.addEventListener('seeked', refreshWave);
+      audioEl.addEventListener('timeupdate', refreshWave);
+      audioEl.addEventListener('loadedmetadata', refreshWave);
+
+      for (const id of ['wave-in', 'wave-out', 'wave-all']) {
+        $(id).addEventListener('click', () => {
+          if (id === 'wave-in') zoomWave(0.6);
+          else if (id === 'wave-out') zoomWave(1.7);
+          else setWindow(0, wave.duration);
+        });
+      }
+
+      stageEl().addEventListener(
+        'wheel',
+        (event) => {
+          if (!wave.peaks) return;
+          event.preventDefault();
+          const rect = stageEl().getBoundingClientRect();
+          const ratio = clampNumber((event.clientX - rect.left) / rect.width, 0, 1);
+          const anchor = wave.start + wave.span * ratio;
+          const factor = Math.exp(clampNumber(event.deltaY, -120, 120) * 0.002);
+          const span = wave.span * factor;
+          setWindow(anchor - span * ratio, span);
+        },
+        { passive: false }
+      );
+
+      stageEl().addEventListener('pointerdown', (event) => {
+        if (event.button !== 0 || !wave.peaks || event.target.closest('.wave-marker')) return;
+        stageEl().focus({ preventScroll: true });
+        stageEl().setPointerCapture(event.pointerId);
+        wave.pan = { x: event.clientX, start: wave.start, moved: false, pointerId: event.pointerId };
+      });
+
+      stageEl().addEventListener('pointermove', (event) => {
+        const pan = wave.pan;
+        if (!pan || pan.pointerId !== event.pointerId) return;
+        const rect = stageEl().getBoundingClientRect();
+        const dx = event.clientX - pan.x;
+        if (!pan.moved && Math.abs(dx) > 2) pan.moved = true;
+        if (!pan.moved) return;
+        stageEl().classList.add('is-panning');
+        setWindow(pan.start - (dx / rect.width) * wave.span, wave.span);
+      });
+
+      const endPan = (event) => {
+        const pan = wave.pan;
+        if (!pan || pan.pointerId !== event.pointerId) return;
+        wave.pan = null;
+        stageEl().classList.remove('is-panning');
+        if (!pan.moved) seekQuiet(timeAt(event.clientX));
+      };
+
+      stageEl().addEventListener('pointerup', endPan);
+      stageEl().addEventListener('pointercancel', () => {
+        wave.pan = null;
+        stageEl().classList.remove('is-panning');
+      });
+
+      stageEl().addEventListener('dblclick', (event) => {
+        if (!wave.peaks || event.target.closest('.wave-marker')) return;
+        seek(timeAt(event.clientX));
+      });
+
+      stageEl().addEventListener('keydown', (event) => {
+        if (!wave.peaks) return;
+        const step = wave.span * 0.1;
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          setWindow(wave.start - step, wave.span);
+        } else if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          setWindow(wave.start + step, wave.span);
+        } else if (event.key === '+' || event.key === '=') {
+          event.preventDefault();
+          zoomWave(0.6);
+        } else if (event.key === '-') {
+          event.preventDefault();
+          zoomWave(1.7);
+        }
+      });
+
+      $('wave-retry').addEventListener('click', () => {
+        if (!wave.id) return;
+        peaksCache.delete(wave.id);
+        openWave(wave.id);
+      });
+
+      if ('ResizeObserver' in window) {
+        new ResizeObserver(() => renderWave()).observe(stageEl());
+      } else {
+        window.addEventListener('resize', renderWave);
+      }
 
       for (const button of document.querySelectorAll('[data-skip]')) {
         button.addEventListener('click', () => {
@@ -572,6 +1377,7 @@
           if (!base) continue;
           const changed =
             base.start !== track.start ||
+            base.end !== track.end ||
             base.durationSec !== track.durationSec ||
             (base.artist ?? '') !== (track.artist ?? '') ||
             (base.title ?? '') !== (track.title ?? '') ||
@@ -586,6 +1392,7 @@
             newAlbum: track.album,
             start: track.start,
             durationSec: track.durationSec,
+            end: track.end,
           });
         }
         tracks.push(...state.hiddenTracks);
