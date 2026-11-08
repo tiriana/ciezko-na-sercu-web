@@ -72,7 +72,14 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/catalog.json
           git commit -m "Katalog odcinków: odświeżenie z Egnyte ($(date -u +%Y-%m-%d))"
-          git push
+          # main żyje własnym życiem (wydania, transkrypcje), więc przed push-em
+          # dopasowujemy się do zdalnego, a przy wyścigu próbujemy jeszcze raz.
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main
+            if git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
 
       # Push wykonany GITHUB_TOKEN-em nie uruchamia innych workflowów, więc deploy odpalamy
       # jawnie — workflow_dispatch jest jedynym wyjątkiem od tej reguły.
