@@ -63,6 +63,22 @@ export const formatClock = (seconds: number) => {  const total = Math.max(0, Mat
     : `${minutes}:${String(rest).padStart(2, '0')}`;
 };
 
+const PL_LETTERS: Record<string, string> = {
+  ą: 'a', ć: 'c', ę: 'e', ł: 'l', ń: 'n', ó: 'o', ś: 's', ź: 'z', ż: 'z',
+};
+
+/** Identyfikator fragmentu w adresie (`?f=`): tytuł utworu albo etykieta wejścia. */
+export const fragmentSlug = (text: string) =>
+  text
+    .toLowerCase()
+    .replace(/[ąćęłńóśźż]/g, (char) => PL_LETTERS[char])
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 60)
+    .replace(/-$/, '');
+
 export const pluralTracks = (count: number) => {
   if (count === 1) return '1 utwór';
   if (count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 10 || count % 100 >= 20)) {

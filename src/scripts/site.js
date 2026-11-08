@@ -65,7 +65,6 @@ const syncProgress = () => {
     toggle.setAttribute('aria-label', audio.paused ? 'Odtwórz' : 'Wstrzymaj odtwarzanie');
   }
   syncFragment();
-  writeTimeToUrl();
 };
 
 /** Fragment, w którym jesteśmy: utwór albo pojedynczy wątek, nigdy grupa wejść. */
@@ -77,47 +76,76 @@ const currentFragment = (time) => {
   return covering.reduce((latest, span) => (span.start >= latest.start ? span : latest));
 };
 
+/** Pasek postępu w wierszu fragmentu, który właśnie leci — resztę wierszy ukrywa CSS
+ * przez `.is-active`, więc tutaj wystarczy wypełnienie jednego paska. */
 const syncFragment = () => {
-  const wrap = document.querySelector('[data-fragment]');
-  if (!wrap || !audio) return;
-  const fragment = pageMatchesAudio() ? currentFragment(audio.currentTime) : null;
-  if (!fragment) {
-    wrap.hidden = true;
-    return;
-  }
+  if (!audio || !pageMatchesAudio()) return;
+  const fragment = currentFragment(audio.currentTime);
+  writeFragmentToUrl(fragment);
+  if (!fragment) return;
+  const barElement = spans.find((span) => span.element === fragment.element)?.progress;
+  if (!barElement) return;
   const total = fragment.end - fragment.start;
   const elapsed = Math.min(total, Math.max(0, audio.currentTime - fragment.start));
   const ratio = total > 0 ? elapsed / total : 0;
-  const name = wrap.querySelector('[data-fragment-name]');
-  const fill = wrap.querySelector('[data-fragment-fill]');
-  const barElement = wrap.querySelector('[data-fragment-progress]');
-  const left = wrap.querySelector('[data-fragment-left]');
-
-  wrap.hidden = false;
-  if (name) name.textContent = fragment.element.dataset.trackLabel ?? fragment.element.querySelector('td:nth-child(2)')?.textContent?.trim() ?? '';
+  const fill = barElement.querySelector('[data-fragment-fill]');
   if (fill) fill.style.width = `${(ratio * 100).toFixed(2)}%`;
-  if (barElement) barElement.setAttribute('aria-valuenow', String(Math.round(ratio * 100)));
-  if (left) left.textContent = `-${formatTime(Math.max(0, total - elapsed))}`;
+  barElement.setAttribute('aria-valuenow', String(Math.round(ratio * 100)));
 };
 
-let lastWrittenSecond = -1;
+let lastFragmentId = null;
 
-/** Adres jest stanem odtwarzacza: pozycja trafia do `?t=`, więc wystarczy skopiować
- * adres z paska przeglądarki. Zapisuje się też po pauzie i po przewinięciu, nie tylko
- * w trakcie grania. */
-const writeTimeToUrl = () => {
-  if (!audio || !pageMatchesAudio()) return;
-  const second = Math.floor(audio.currentTime);
-  if (!Number.isFinite(second) || second < 0 || second === lastWrittenSecond) return;
-  lastWrittenSecond = second;
+/** W adresie jest fragment, który leci — nie sekunda. Link skopiowany w środku utworu
+ * otwiera jego początek, a adres zmienia się raz na fragment, nie co sekundę. */
+const writeFragmentToUrl = (fragment) => {
+  const id = fragment?.element.dataset.fragmentId ?? null;
+  if (id === lastFragmentId) return;
   const url = new URL(location.href);
-  // Na starcie nagrania adres zostaje czysty; `?t=0` dopisujemy tylko wtedy, gdy już jest.
-  if (second === 0 && !url.searchParams.has('t')) return;
-  url.searchParams.set('t', String(second));
+  if (!id && !url.searchParams.has('f')) {
+    lastFragmentId = id;
+    return;
+  }
+  lastFragmentId = id;
+  url.searchParams.delete('t');
+  if (id) url.searchParams.set('f', id);
+  else url.searchParams.delete('f');
   history.replaceState(null, '', url);
 };
 
 /** Wejście z ?t= ustawia pozycję, ale nie odtwarza. */
+const seekWhenReady = (seconds) => {
+  if (!audio) return;
+  const seek = () => {
+    if (!Number.isFinite(audio.duration) || audio.duration <= 0) return;
+    audio.currentTime = Math.min(seconds, audio.duration);
+    syncProgress();
+    syncSpans();
+  };
+  if (audio.readyState >= 1) seek();
+  else audio.addEventListener('loadedmetadata', seek, { once: true });
+};
+
+/** Wejście z `?f=` ustawia początek fragmentu i podświetla wiersz; nie odtwarza. */
+const applyFragmentLink = () => {
+  if (!audio) return;
+  const params = new URLSearchParams(location.search);
+  // Starszy link ze sekundą ma pierwszeństwo: `f` dopisze się dopiero po ustawieniu czasu.
+  if (params.has('t')) return;
+  const id = params.get('f');
+  if (!id) return;
+  const row = document.querySelector(`[data-fragment-id="${CSS.escape(id)}"]`);
+  const start = Number(row?.dataset.spanStart);
+  if (Number.isFinite(start)) {
+    seekWhenReady(start);
+    return;
+  }
+  // Adres jest stanem, więc identyfikator spoza tej strony nie ma w nim zostać.
+  const url = new URL(location.href);
+  url.searchParams.delete('f');
+  history.replaceState(null, '', url);
+};
+
+/** Starsze linki z `?t=<sekunda>` nadal działają; nowe adresy niosą `?f=` (Część #44). */
 const applyTimeLink = () => {
   if (!audio) return;
   const raw = new URLSearchParams(location.search).get('t');
@@ -130,14 +158,7 @@ const applyTimeLink = () => {
     history.replaceState(null, '', url);
     return;
   }
-  const seek = () => {
-    if (!Number.isFinite(audio.duration) || audio.duration <= 0) return;
-    audio.currentTime = Math.min(seconds, audio.duration);
-    syncProgress();
-    syncSpans();
-  };
-  if (audio.readyState >= 1) seek();
-  else audio.addEventListener('loadedmetadata', seek, { once: true });
+  seekWhenReady(seconds);
 };
 
 const seekToRatio = (ratio) => {
@@ -496,12 +517,21 @@ const initIndexFilter = () => {
   });
 };
 
+// `astro:page-load` odpala się także przy pierwszym wejściu, a adres po zapisie `?f=`
+// wygląda jak nowy link — bez tej flagi drugie przejście ustawiałoby początek fragmentu
+// zamiast sekundy z `?t=`.
+let applyLinksOnNextPage = true;
+document.addEventListener('astro:before-swap', () => {
+  applyLinksOnNextPage = true;
+});
+
 const initPage = () => {
   spans = [...document.querySelectorAll('[data-span-start]')].map((element) => ({
     element,
     start: Number(element.dataset.spanStart),
     end: Number(element.dataset.spanEnd),
     kind: element.dataset.kind,
+    progress: element.querySelector('[data-fragment-progress]'),
   }));
 
   setupAudio();
@@ -542,10 +572,59 @@ const initPage = () => {
     });
   }
 
-  applyDeepLink();
-  applyTimeLink();
+  for (const element of document.querySelectorAll('[data-fragment-progress]')) {
+    if (element.dataset.bound === 'true') continue;
+    element.dataset.bound = 'true';
+    const row = element.closest('[data-span-start]');
+    const start = Number(row?.dataset.spanStart ?? 0);
+    const end = Number(row?.dataset.spanEnd ?? 0);
+    if (!(end > start)) continue;
+
+    // Przewijanie w obrębie fragmentu: ten sam czas trafia do nagrania, ale nigdy
+    // poza jego koniec, bo fragment bywa dłuższy niż samo nagranie.
+    const seekInside = (ratio) => {
+      if (!audio) return;
+      const target = start + Math.min(1, Math.max(0, ratio)) * (end - start);
+      const limit = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : target;
+      audio.currentTime = Math.max(0, Math.min(target, limit));
+      syncProgress();
+      syncSpans();
+    };
+    const ratioFromEvent = (event) => {
+      const rect = element.getBoundingClientRect();
+      return rect.width > 0 ? (event.clientX - rect.left) / rect.width : 0;
+    };
+    let dragging = false;
+    element.addEventListener('pointerdown', (event) => {
+      dragging = true;
+      element.setPointerCapture(event.pointerId);
+      seekInside(ratioFromEvent(event));
+    });
+    element.addEventListener('pointermove', (event) => {
+      if (dragging) seekInside(ratioFromEvent(event));
+    });
+    element.addEventListener('pointerup', () => {
+      dragging = false;
+    });
+    element.addEventListener('keydown', (event) => {
+      if (!audio) return;
+      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+        event.preventDefault();
+        const step = event.key === 'ArrowRight' ? 5 : -5;
+        seekInside((audio.currentTime - start + step) / (end - start));
+      }
+    });
+  }
+
+  if (applyLinksOnNextPage) {
+    applyLinksOnNextPage = false;
+    applyDeepLink();
+    applyFragmentLink();
+    applyTimeLink();
+  }
   applyEntriesLink();
   syncSpans();
+  syncFragment();
 };
 
 /** Przełącznik wejść jest stanem strony, więc trafia do adresu jako `?wejscia=0`.

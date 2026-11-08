@@ -15,6 +15,7 @@ import {
   resolveDisplayTitle,
   formatRole,
   formatWeekday,
+  fragmentSlug,
   pluralEntries,
   pluralThreads,
   pluralTracks,
@@ -153,6 +154,17 @@ for (const item of items) {
   blocks.push(item);
 }
 
+// Adres podaje fragment (`?f=`), więc każdy odtwarzalny wiersz dostaje stabilny
+// identyfikator z tytułu; powtórki na tej samej stronie rozróżnia przyrostek.
+const usedFragmentIds = new Set<string>();
+const fragmentId = (text: string) => {
+  const base = fragmentSlug(text) || 'fragment';
+  let id = base;
+  for (let n = 2; usedFragmentIds.has(id); n += 1) id = `${base}-${n}`;
+  usedFragmentIds.add(id);
+  return id;
+};
+
 // Sekcje o zerowej długości (te same znaczniki czasu z modelu) nie mają sensu jako
 // osobne wiersze — w grupie zostają treścią, a czas pokazujemy jako „—".
 const formatSpan = (start: number, end: number) => (end - start < 1 ? '—' : formatClock(end - start));
@@ -279,6 +291,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         data-span-start={block.start}
                         data-span-end={block.end}
                         data-kind="track"
+                        data-fragment-id={fragmentId([block.track.artist, block.track.title].filter(Boolean).join(' ') || 'utwór')}
                         data-tag-ids={block.track.artist ? tagId(block.track.artist) : undefined}
                         data-track-label={[block.track.artist, block.track.title].filter(Boolean).join(' — ')}
                       >
@@ -349,6 +362,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                             data-span-start={topic.start}
                             data-span-end={topic.end}
                             data-kind="topic"
+                            data-fragment-id={fragmentId(topic.label)}
                             data-tag-ids={topicTagIds(topic).join(' ') || undefined}
                           >
                             <td class="tracks__idx">
@@ -382,6 +396,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         data-span-start={block.start}
                         data-span-end={block.end}
                         data-kind="topic"
+                        data-fragment-id={fragmentId(block.label)}
                         data-tag-ids={topicTagIds(block).join(' ') || undefined}
                       >
                         <td class="tracks__idx">
