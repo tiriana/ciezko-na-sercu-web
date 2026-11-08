@@ -1,3 +1,9 @@
+## [1.9.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.8.2...v1.9.0) (2026-11-08)
+
+### Features
+
+* deeplink do fragmentu i pasek postępu bieżącego fragmentu ([5cbd239](https://github.com/tiriana/ciezko-na-sercu-web/commit/5cbd2394643825aea685609bdd59bd8bccbd02b3))
+
 ## [1.8.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.8.1...v1.8.2) (2026-11-08)
 
 ### Bug Fixes
