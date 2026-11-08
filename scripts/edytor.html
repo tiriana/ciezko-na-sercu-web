@@ -577,6 +577,16 @@
       const fieldInputs = new WeakMap();
       const topicBase = new WeakMap();
 
+      // Etykieta znacznika z setnymi: fmt zaokrągla do pełnych sekund i przy edycji
+      // z dokładnością 10 ms gubiłaby różnicę, którą właśnie ustawiono.
+      const fmtPrecise = (seconds) => {
+        if (!Number.isFinite(seconds)) return '—';
+        const rounded = Math.round(Math.max(0, seconds) * 100) / 100;
+        const whole = Math.floor(rounded);
+        const hundredths = String(Math.round((rounded - whole) * 100)).padStart(2, '0');
+        return `${fmt(whole)}.${hundredths}`;
+      };
+
       const fmt = (seconds) => {
         if (!Number.isFinite(seconds)) return '—';
         const total = Math.max(0, Math.round(seconds));
@@ -623,7 +633,8 @@
       };
 
       const usePlayerTime = (input) => {
-        input.value = String(Math.round($('audio').currentTime));
+        // Ta sama dokładność co przy znacznikach: 10 ms, nie cała sekunda.
+        input.value = String(Math.round($('audio').currentTime * 100) / 100);
         // Programowe ustawienie value nie odpala „input”, więc stan trzeba zaktualizować ręcznie.
         input.dispatchEvent(new Event('input'));
       };
@@ -847,6 +858,7 @@
           const start = document.createElement('td');
           const startInput = document.createElement('input');
           startInput.type = 'number';
+          startInput.step = '0.01';
           startInput.value = String(track.start ?? 0);
           startInput.addEventListener('input', () => editField(track, 'start', () => {
             track.start = Number(startInput.value);
@@ -901,6 +913,7 @@
           const start = document.createElement('td');
           const startInput = document.createElement('input');
           startInput.type = 'number';
+          startInput.step = '0.01';
           startInput.value = String(topic.start ?? 0);
           startInput.addEventListener('input', () => editField(topic, 'start', () => {
             topic.start = Number(startInput.value);
@@ -986,6 +999,7 @@
           const startCell = document.createElement('td');
           const startInput = document.createElement('input');
           startInput.type = 'number';
+          startInput.step = '0.01';
           startInput.value = String(topic.start ?? 0);
           startInput.addEventListener('input', () => editField(topic, 'start', () => {
             topic.start = Number(startInput.value);
@@ -1305,7 +1319,8 @@
             following ? Number(following.start) - MIN_FRAGMENT : wave.duration
           )
         );
-        const next = clampNumber(Math.round(requested * 10) / 10, low, high);
+        // 10 ms: poniżej tego i tak nie ma sensu, bo ramka MP3 ma ~26 ms.
+        const next = clampNumber(Math.round(requested * 100) / 100, low, high);
         if (next === old) return;
         markDirty();
         // Przeciągnięcie to jeden krok cofania, dlatego zrzut robimy tylko przy pierwszym ruchu.
@@ -1324,7 +1339,9 @@
       const placeMarker = (node, marker) => {
         const width = stageEl().clientWidth || 1;
         node.style.left = `${((marker.time - wave.start) / wave.span) * width}px`;
-        node.setAttribute('aria-label', `${marker.name}, ${fmt(marker.time)}`);
+        const label = `${marker.name}, ${fmtPrecise(marker.time)}`;
+        node.setAttribute('aria-label', label);
+        node.title = `${label} — przeciągnij albo ←/→ (Alt = 10 ms, Shift = 1 s)`;
       };
 
       const bindMarker = (node, marker) => {
@@ -1366,7 +1383,8 @@
           if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
           event.preventDefault();
           event.stopPropagation();
-          const step = event.shiftKey ? 1 : 0.1;
+          // Alt to dokładność zapisu (10 ms), Shift to skok o sekundę.
+          const step = event.altKey ? 0.01 : event.shiftKey ? 1 : 0.1;
           moveStart(marker, marker.time + (event.key === 'ArrowRight' ? step : -step));
           placeMarker(node, marker);
         });
@@ -1394,7 +1412,7 @@
           }
           node.hidden = false;
           node.style.left = `${x}px`;
-          node.setAttribute('aria-label', `${marker.name}, ${fmt(marker.time)}`);
+          node.setAttribute('aria-label', `${marker.name}, ${fmtPrecise(marker.time)}`);
           shown.push({ entry, x });
         }
 
