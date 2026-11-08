@@ -1994,11 +1994,60 @@ main {
 }
 
 .audio-bar__timeline {
-  display: flex;
-  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 10px;
+  gap: 4px 10px;
+  flex: 1 1 auto;
   min-width: 0;
+}
+
+/* Pasek bieżącego fragmentu jest cieńszy od głównego i podpisany po lewej,
+   żeby nie konkurował z osią całej audycji. */
+.audio-bar__fragment {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.audio-bar__fragment[hidden] {
+  display: none;
+}
+
+.audio-bar__fragment-name {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.audio-bar__progress--fragment {
+  grid-column: auto;
+  height: 3px;
+}
+
+.audio-bar__link {
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.audio-bar__link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.audio-bar__link:hover,
+.audio-bar__link[data-state='copied'] {
+  color: var(--accent);
 }
 
 .audio-bar__time {

@@ -64,6 +64,92 @@ const syncProgress = () => {
     toggle.dataset.state = audio.paused ? 'paused' : 'playing';
     toggle.setAttribute('aria-label', audio.paused ? 'Odtwórz' : 'Wstrzymaj odtwarzanie');
   }
+  syncFragment();
+  writeTimeToUrl();
+};
+
+/** Fragment, w którym jesteśmy: utwór albo pojedynczy wątek, nigdy grupa wejść. */
+const currentFragment = (time) => {
+  const covering = spans.filter(
+    (span) => span.kind !== 'topic-group' && span.end > span.start && time >= span.start && time < span.end
+  );
+  if (covering.length === 0) return null;
+  return covering.reduce((latest, span) => (span.start >= latest.start ? span : latest));
+};
+
+const syncFragment = () => {
+  const wrap = document.querySelector('[data-fragment]');
+  if (!wrap || !audio) return;
+  const fragment = pageMatchesAudio() ? currentFragment(audio.currentTime) : null;
+  if (!fragment) {
+    wrap.hidden = true;
+    return;
+  }
+  const total = fragment.end - fragment.start;
+  const elapsed = Math.min(total, Math.max(0, audio.currentTime - fragment.start));
+  const ratio = total > 0 ? elapsed / total : 0;
+  const name = wrap.querySelector('[data-fragment-name]');
+  const fill = wrap.querySelector('[data-fragment-fill]');
+  const barElement = wrap.querySelector('[data-fragment-progress]');
+  const left = wrap.querySelector('[data-fragment-left]');
+
+  wrap.hidden = false;
+  if (name) name.textContent = fragment.element.dataset.trackLabel ?? fragment.element.querySelector('td:nth-child(2)')?.textContent?.trim() ?? '';
+  if (fill) fill.style.width = `${(ratio * 100).toFixed(2)}%`;
+  if (barElement) barElement.setAttribute('aria-valuenow', String(Math.round(ratio * 100)));
+  if (left) left.textContent = `-${formatTime(Math.max(0, total - elapsed))}`;
+};
+
+let lastWrittenSecond = -1;
+
+/** Adres nadąża za odtwarzaniem, żeby „skopiuj link” nie wymagał klikania w przycisk. */
+const writeTimeToUrl = () => {
+  if (!audio || audio.paused || !pageMatchesAudio()) return;
+  const second = Math.floor(audio.currentTime);
+  if (second === lastWrittenSecond) return;
+  lastWrittenSecond = second;
+  const url = new URL(location.href);
+  url.searchParams.set('t', String(second));
+  history.replaceState(null, '', url);
+};
+
+/** Wejście z ?t= ustawia pozycję, ale nie odtwarza. */
+const applyTimeLink = () => {
+  if (!audio) return;
+  const raw = new URLSearchParams(location.search).get('t');
+  if (raw === null) return;
+  const seconds = Number(raw);
+  if (!Number.isFinite(seconds) || seconds <= 0) return;
+  const seek = () => {
+    if (!Number.isFinite(audio.duration) || audio.duration <= 0) return;
+    audio.currentTime = Math.min(seconds, audio.duration);
+    syncProgress();
+    syncSpans();
+  };
+  if (audio.readyState >= 1) seek();
+  else audio.addEventListener('loadedmetadata', seek, { once: true });
+};
+
+const setupCopyLink = () => {
+  const bar = document.querySelector('[data-audio-bar]');
+  const button = bar?.querySelector('[data-copy-link]');
+  if (!button || button.dataset.bound === 'true') return;
+  button.dataset.bound = 'true';
+  button.addEventListener('click', async () => {
+    const url = new URL(location.href);
+    if (audio && pageMatchesAudio()) url.searchParams.set('t', String(Math.floor(audio.currentTime)));
+    try {
+      await navigator.clipboard.writeText(url.toString());
+      button.dataset.state = 'copied';
+      button.setAttribute('aria-label', 'Link skopiowany');
+      setTimeout(() => {
+        delete button.dataset.state;
+        button.setAttribute('aria-label', 'Skopiuj link do tego miejsca');
+      }, 2000);
+    } catch {
+      button.setAttribute('aria-label', 'Nie udało się skopiować linku');
+    }
+  });
 };
 
 const seekToRatio = (ratio) => {
@@ -132,6 +218,8 @@ const setupBar = () => {
       }
     });
   }
+
+  setupCopyLink();
 
   if (audio) {
     for (const event of ['timeupdate', 'durationchange', 'loadedmetadata', 'play', 'pause', 'seeked', 'ended']) {
@@ -463,6 +551,7 @@ const initPage = () => {
   }
 
   applyDeepLink();
+  applyTimeLink();
   syncSpans();
 };
 
