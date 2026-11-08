@@ -1,3 +1,9 @@
+## [1.1.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.1.2...v1.1.3) (2026-11-08)
+
+### Bug Fixes
+
+* plan transkrypcji mierzy długość audio przez ffprobe ([b43d054](https://github.com/tiriana/ciezko-na-sercu-web/commit/b43d0542a75c4103c18b751b1a4e5f6056f46a3e))
+
 ## [1.1.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.1.1...v1.1.2) (2026-11-08)
 
 ### Bug Fixes
