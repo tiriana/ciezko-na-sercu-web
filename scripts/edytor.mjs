@@ -329,6 +329,11 @@ const server = createServer(async (req, res) => {
       return;
     }
 
+    // Szybka sonda dla karty, która straciła SSE: lekka, bez czytania danych.
+    if (url.pathname === '/api/health') {
+      return json(res, 200, { ok: true, uptime: Math.round(process.uptime()) });
+    }
+
     if (url.pathname === '/api/events') {
       res.writeHead(200, {
         'content-type': 'text/event-stream; charset=utf-8',

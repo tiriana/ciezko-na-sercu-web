@@ -33,24 +33,55 @@
       }
       header h1 { margin: 0; font-size: 15px; }
       header .hint { color: var(--muted); font-size: 12px; }
-      .layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: calc(100vh - 45px); }
-      .sidebar { border-right: 1px solid var(--line); background: var(--surface); padding: 12px; }
-      .sidebar input { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; }
-      .list { margin: 10px 0 0; padding: 0; list-style: none; max-height: calc(100vh - 130px); overflow: auto; }
+      .layout { display: flex; flex-direction: column; min-height: calc(100vh - 45px); }
+      /* Lista odcinków to niski pas nad edytorem: waveform dostaje całą szerokość,
+         a przy 108 odcinkach pas przewija się w bok, nie w dół. */
+      .episodes {
+        position: sticky;
+        top: var(--header-h, 52px);
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 6px 16px;
+        border-bottom: 1px solid var(--line);
+        background: var(--surface);
+      }
+      .episodes-bar { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+      .episodes input { width: 190px; padding: 6px 9px; border: 1px solid var(--line); border-radius: 6px; font: inherit; font-size: 12.5px; }
+      .episodes-count { color: var(--muted); font-size: 11.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+      .list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 196px;
+        grid-template-rows: minmax(0, 1fr);
+        gap: 2px 6px;
+        min-width: 0;
+        max-height: 46px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+      }
+      .list li { min-width: 0; }
       .list button {
         display: block;
         width: 100%;
-        padding: 7px 8px;
+        padding: 4px 8px;
         border: 0;
         border-radius: 6px;
         background: none;
         text-align: left;
         font: inherit;
         cursor: pointer;
+        overflow: hidden;
       }
       .list button:hover { background: #f0ece6; }
       .list button[aria-current="true"] { background: #f7e6e9; color: var(--accent); }
-      .list time { display: block; color: var(--muted); font-size: 11.5px; }
+      .list button span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12.5px; }
+      .list time { display: block; color: var(--muted); font-size: 11px; white-space: nowrap; }
       .main { padding: 16px 20px 60px; }
       .empty { color: var(--muted); }
       .player {
@@ -62,7 +93,7 @@
         border-radius: 8px;
         background: var(--surface);
         position: sticky;
-        top: 45px;
+        top: calc(var(--header-h, 52px) + var(--band-h, 0px));
         z-index: 4;
       }
       .player audio { flex: 1 1 auto; height: 36px; }
@@ -112,6 +143,57 @@
         background: var(--surface);
         box-shadow: 0 -5px 12px rgba(28, 26, 24, 0.05);
       }
+      #editor > .toolbar .health {
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 6px 10px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: #f6f1ea;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      #editor > .toolbar .health[hidden] { display: none; }
+      #editor > .toolbar .health[data-state="down"] {
+        border-color: #c8102e;
+        background: #fbe6e9;
+        color: #8d0b1d;
+        font-weight: 600;
+      }
+      #editor > .toolbar .health[data-state="back"] {
+        border-color: #1f7a4a;
+        background: #e7f4ec;
+        color: #145c36;
+      }
+      .draft-offer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin: 12px 0 4px;
+        padding: 8px 12px;
+        border: 1px solid #d99b00;
+        border-radius: 6px;
+        background: #fdf3dd;
+        color: #7a5a08;
+        font-size: 12.5px;
+      }
+      .draft-offer[hidden] { display: none; }
+      .draft-offer button {
+        padding: 3px 9px;
+        border: 1px solid #d99b00;
+        border-radius: 5px;
+        background: #fffdfb;
+        color: #7a5a08;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .draft-offer button:hover { background: #fbe9c2; }
+      .draft-offer button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
       #editor > .toolbar .reload-prompt {
         padding: 3px 9px;
         border: 1px solid #d99b00;
@@ -397,16 +479,17 @@
       .wave-hint { margin: 0; padding: 5px 10px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); }
 
       @media (max-width: 760px) {
-        .layout { grid-template-columns: minmax(0, 1fr); }
-        .sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
-        .list { max-height: 190px; }
+        .episodes { top: 0; flex-wrap: wrap; gap: 6px 10px; padding: 6px 12px; }
+        .episodes-bar { flex: 1 1 auto; min-width: 0; }
+        .episodes input { width: 100%; min-width: 0; }
+        .list { flex-basis: 100%; grid-template-rows: minmax(0, 1fr); grid-auto-columns: 168px; max-height: 46px; }
         .main { padding: 12px 12px 60px; }
         #editor > .toolbar { margin: 16px -12px -60px; padding: 10px 12px 12px; }
         #editor table { display: block; overflow-x: auto; }
         .wave-legend { margin-left: 0; }
         .wave-stage { height: 64px; }
         header { position: static; }
-        .player { top: 0; }
+        .player { top: var(--band-h, 0px); }
       }
     </style>
   </head>
@@ -460,10 +543,13 @@
     </div>
 
     <div class="layout" id="view-odcinki">
-      <aside class="sidebar">
-        <input id="filter" type="search" placeholder="Filtruj odcinki…" />
+      <section class="episodes" aria-label="Odcinki">
+        <div class="episodes-bar">
+          <input id="filter" type="search" placeholder="Filtruj odcinki…" aria-label="Filtruj odcinki" />
+          <span class="episodes-count" id="episodes-count"></span>
+        </div>
         <ul class="list" id="list"></ul>
-      </aside>
+      </section>
 
       <main class="main">
         <p class="empty" id="empty">Wybierz odcinek z listy.</p>
@@ -516,6 +602,12 @@
             <span class="clock" id="clock">0:00</span>
           </div>
 
+          <div class="draft-offer" id="draft-offer" hidden>
+            <span id="draft-when"></span>
+            <button type="button" id="draft-restore">przywróć</button>
+            <button type="button" id="draft-discard">odrzuć</button>
+          </div>
+
           <div class="field">
             <label for="title">Tytuł nieoficjalny (puste = tytuł z katalogu)</label>
             <input id="title" type="text" />
@@ -559,6 +651,10 @@
           <div class="restore" id="restore"></div>
 
           <div class="toolbar">
+            <div class="health" id="health" data-state="up" role="status" aria-live="assertive" hidden>
+              <span class="health-text" id="health-text"></span>
+              <button type="button" class="health-retry" id="health-retry" hidden>spróbuj ponownie</button>
+            </div>
             <button class="primary" id="save" type="button">Zapisz</button>
             <kbd class="shortcut">Ctrl+S</kbd>
             <label class="auto-save">
@@ -626,11 +722,16 @@
         const needle = $('filter').value.trim().toLowerCase();
         const list = $('list');
         list.textContent = '';
-        for (const entry of episodes.filter((item) => item.displayTitle.toLowerCase().includes(needle))) {
+        const matches = episodes.filter((item) => item.displayTitle.toLowerCase().includes(needle));
+        $('episodes-count').textContent = needle
+          ? `${matches.length} z ${episodes.length}`
+          : `${episodes.length} odcinków`;
+        for (const entry of matches) {
           const li = document.createElement('li');
           const button = document.createElement('button');
           button.type = 'button';
           button.setAttribute('aria-current', String(state.episode?.id === entry.id));
+          button.title = entry.displayTitle;
           button.innerHTML = `<span>${entry.displayTitle}</span><time>${entry.date}${entry.edited ? ' · poprawki' : ''}</time>`;
           button.addEventListener('click', () => {
             // Porzucenie niezapisanych zmian musi być świadome — inaczej jeden klik
@@ -760,6 +861,7 @@
         setDirty(true);
         setStatus('dirty', 'niezapisane zmiany');
         queueAutoSave();
+        queueDraft();
       };
 
       const savedLabel = () => {
@@ -767,8 +869,212 @@
         return `zapisane ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
       };
 
+      // --- Stan serwera: SSE mówi „jest”, /api/health mówi „wrócił” ---
+
+      const HEALTH_DOWN_MS = 3000;
+      const HEALTH_POLL_MS = 5000;
+      const health = { state: 'up', downTimer: 0, pollTimer: 0, backTimer: 0 };
+      let serverUp = true;
+
+      const showHealth = (state, text) => {
+        health.state = state;
+        const node = $('health');
+        node.dataset.state = state;
+        node.hidden = state === 'up';
+        $('health-text').textContent = text;
+        $('health-retry').hidden = state !== 'down';
+      };
+
+      const probeHealth = async () => {
+        try {
+          const response = await fetch('/api/health', { cache: 'no-store' });
+          return response.ok;
+        } catch {
+          return false;
+        }
+      };
+
+      const stopHealthPoll = () => {
+        clearInterval(health.pollTimer);
+        health.pollTimer = 0;
+      };
+
+      const serverDown = () => {
+        if (serverUp) {
+          serverUp = false;
+          // Najpierw neutralne „łączę…”: restart node --watch trwa sekundę i nie jest awarią.
+          showHealth('waiting', 'łączę…');
+          clearTimeout(health.downTimer);
+          health.downTimer = setTimeout(() => {
+            if (!serverUp) showHealth('down', 'serwer nie odpowiada — zmiany nie są zapisywane');
+          }, HEALTH_DOWN_MS);
+        }
+        if (!health.pollTimer) {
+          health.pollTimer = setInterval(async () => {
+            if (await probeHealth()) serverBack();
+          }, HEALTH_POLL_MS);
+        }
+      };
+
+      const serverBack = () => {
+        const wasDown = health.state === 'down';
+        serverUp = true;
+        clearTimeout(health.downTimer);
+        stopHealthPoll();
+        if (wasDown) {
+          showHealth('back', 'serwer wrócił');
+          clearTimeout(health.backTimer);
+          health.backTimer = setTimeout(() => showHealth('up', ''), 2500);
+        } else {
+          showHealth('up', '');
+        }
+      };
+
+      // --- Kopia robocza: niezapisane zmiany przeżywają pad serwera i przeładowanie ---
+
+      const DRAFT_PREFIX = 'edytor.draft.';
+      const DRAFT_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+      let draftTimer = 0;
+      let pendingDraft = null;
+
+      const draftKeyFor = (id) => `${DRAFT_PREFIX}${id}`;
+
+      const draftSnapshot = () => ({
+        id: state.episode?.id ?? null,
+        at: Date.now(),
+        tracks: state.tracks,
+        topics: state.topics,
+        addTracks: state.addTracks,
+        addTopics: state.addTopics,
+        hiddenTracks: state.hiddenTracks,
+        hiddenTopics: state.hiddenTopics,
+      });
+
+      const writeDraft = () => {
+        draftTimer = 0;
+        if (!state.episode || !dirty) return;
+        try {
+          const keep = draftKeyFor(state.episode.id);
+          // Jedna kopia robocza: ta z bieżącego odcinka.
+          for (const key of Object.keys(localStorage)) {
+            if (key.startsWith(DRAFT_PREFIX) && key !== keep) localStorage.removeItem(key);
+          }
+          localStorage.setItem(keep, JSON.stringify(draftSnapshot()));
+        } catch {}
+      };
+
+      const queueDraft = () => {
+        clearTimeout(draftTimer);
+        draftTimer = setTimeout(writeDraft, 500);
+      };
+
+      const dropDraft = (id = state.episode?.id) => {
+        if (!id) return;
+        clearTimeout(draftTimer);
+        draftTimer = 0;
+        try {
+          localStorage.removeItem(draftKeyFor(id));
+        } catch {}
+      };
+
+      const readDraft = (id) => {
+        try {
+          const raw = localStorage.getItem(draftKeyFor(id));
+          if (!raw) return null;
+          const draft = JSON.parse(raw);
+          if (!draft || draft.id !== id || !Number.isFinite(draft.at)) return null;
+          if (Date.now() - draft.at > DRAFT_TTL_MS) {
+            localStorage.removeItem(draftKeyFor(id));
+            return null;
+          }
+          return draft;
+        } catch {
+          return null;
+        }
+      };
+
+      const sweepDrafts = () => {
+        try {
+          for (const key of Object.keys(localStorage)) {
+            if (!key.startsWith(DRAFT_PREFIX)) continue;
+            const draft = JSON.parse(localStorage.getItem(key) ?? 'null');
+            if (!draft || !Number.isFinite(draft.at) || Date.now() - draft.at > DRAFT_TTL_MS) {
+              localStorage.removeItem(key);
+            }
+          }
+        } catch {}
+      };
+
+      const timelineFingerprint = (data) =>
+        JSON.stringify([
+          data.tracks ?? [],
+          data.topics ?? [],
+          data.addTracks ?? [],
+          data.addTopics ?? [],
+          data.hiddenTracks ?? [],
+          data.hiddenTopics ?? [],
+        ]);
+
+      const currentTimeline = () => ({
+        tracks: state.tracks,
+        topics: state.topics,
+        addTracks: state.addTracks,
+        addTopics: state.addTopics,
+        hiddenTracks: state.hiddenTracks,
+        hiddenTopics: state.hiddenTopics,
+      });
+
+      const offerDraft = (id) => {
+        const draft = readDraft(id);
+        const node = $('draft-offer');
+        if (!draft || timelineFingerprint(draft) === timelineFingerprint(currentTimeline())) {
+          pendingDraft = null;
+          node.hidden = true;
+          return;
+        }
+        pendingDraft = draft;
+        const at = new Date(draft.at);
+        $('draft-when').textContent = `niezapisane zmiany z ${String(at.getHours()).padStart(2, '0')}:${String(at.getMinutes()).padStart(2, '0')} —`;
+        node.hidden = false;
+      };
+
+      const applyDraft = () => {
+        if (!pendingDraft) return;
+        const draft = pendingDraft;
+        pushUndo();
+        state.tracks = structuredClone(draft.tracks ?? []);
+        state.topics = (draft.topics ?? []).map((topic, index) => {
+          const copy = structuredClone(topic);
+          // Kolejność wierszy mogła się zmienić przez ukrywanie, więc bazę bierzemy
+          // po etykiecie, a dopiero potem po pozycji.
+          const base = state.baseTopics.find((entry) => entry.label === copy.label) ?? state.baseTopics[index];
+          if (base) topicBase.set(copy, { ...base });
+          return copy;
+        });
+        state.addTracks = structuredClone(draft.addTracks ?? []);
+        state.addTopics = structuredClone(draft.addTopics ?? []);
+        state.hiddenTracks = structuredClone(draft.hiddenTracks ?? []);
+        state.hiddenTopics = structuredClone(draft.hiddenTopics ?? []);
+        pendingDraft = null;
+        $('draft-offer').hidden = true;
+        renderTracks();
+        renderTopics();
+        renderAdded();
+        renderRestore();
+        markDirty();
+      };
+
+      $('draft-restore').addEventListener('click', applyDraft);
+      $('draft-discard').addEventListener('click', () => {
+        pendingDraft = null;
+        dropDraft();
+        $('draft-offer').hidden = true;
+      });
+
       window.addEventListener('beforeunload', (event) => {
         if (!dirty) return;
+        // Zapis synchroniczny: kopia ma powstać, zanim karta zniknie.
+        writeDraft();
         event.preventDefault();
         event.returnValue = '';
       });
@@ -1084,12 +1390,18 @@
 
       const openEpisode = async (id) => {
         cancelAutoSave();
+        pendingDraft = null;
+        $('draft-offer').hidden = true;
         setDirty(false);
         setStatus('clean', 'brak zmian');
         const response = await fetch(`/api/episode?id=${encodeURIComponent(id)}`);
         const data = await response.json();
         if (!response.ok) {
           setStatus('error', `błąd: ${data.error ?? 'nie udało się wczytać odcinka'}`);
+          // Gdy nic nie było otwarte, edytor jest schowany i komunikat musi trafić
+          // w miejsce zastępcze; przy otwartym odcinku wystarczy pasek zapisu.
+          $('empty').textContent = `błąd: ${data.error ?? 'nie udało się wczytać odcinka'}`;
+          $('empty').hidden = !$('editor').hidden;
           return;
         }
         state.episode = data;
@@ -1125,6 +1437,7 @@
         renderRestore();
         renderList();
         openWave(data.id);
+        offerDraft(data.id);
       };
 
       // --- Waveform: głośność nagrania, zoom, przesuwanie okna, znaczniki ---
@@ -1971,21 +2284,25 @@
               addTopics: state.addTopics,
             }),
           });
-          const data = await response.json().catch(() => ({}));
-          if (!response.ok) {
-            setStatus('error', `błąd: ${data.error ?? `serwer odpowiedział ${response.status}`}`);
+          // Sam status 200 nie wystarcza: przy padniętym serwerze albo pośredniku
+          // odpowiedź bywa pusta, a wtedy „zapisane” byłoby kłamstwem.
+          const data = await response.json().catch(() => null);
+          if (!response.ok || data?.ok !== true) {
+            const reason = data?.error ?? (response.ok ? 'serwer nie potwierdził zapisu' : `serwer odpowiedział ${response.status}`);
+            setStatus('error', 'błąd: nie zapisano', `błąd: nie zapisano — ${reason}`);
             return false;
           }
           const label = savedLabel();
           const note = `${label} — zbuduj stronę (npm run build)`;
           setDirty(false);
+          dropDraft(episode.id);
           setStatus('saved', label, note);
           statusTimer = setTimeout(() => setStatus('clean', label, note), 4000);
           episodes = episodes.map((item) => (item.id === episode.id ? { ...item, displayTitle: $('title').value.trim() || item.originalTitle } : item));
           renderList();
           return true;
         } catch (error) {
-          setStatus('error', `błąd: ${error.message}`);
+          setStatus('error', 'błąd: nie zapisano', `błąd: nie zapisano — ${error.message}`);
           return false;
         }
       };
@@ -2112,10 +2429,18 @@
       };
 
       const eventsSource = new EventSource('/api/events');
+      eventsSource.addEventListener('open', () => serverBack());
+      eventsSource.addEventListener('error', () => serverDown());
       eventsSource.addEventListener('hello', (event) => onServerFile(JSON.parse(event.data).mtime));
       eventsSource.addEventListener('change', (event) => onServerFile(JSON.parse(event.data).mtime));
+      $('health-retry').addEventListener('click', async () => {
+        if (await probeHealth()) serverBack();
+        else showHealth('down', 'serwer nadal nie odpowiada — zmiany nie są zapisywane');
+      });
       reloadPrompt.addEventListener('click', () => {
         // Świadoma zgoda: porzucamy niezapisane zmiany, ale zostaje odcinek, czas i zoom.
+        // Kopia robocza i tak powstaje, więc po przeładowaniu jest co przywrócić.
+        writeDraft();
         stashSession();
         location.reload();
       });
@@ -2128,10 +2453,43 @@
         renderList();
       };
 
+      // Wysokość nagłówka bywa różna (zawija się przy węższym oknie), a pas odcinków
+      // przykleja się tuż pod nim — stąd mierzona zmienna zamiast liczby w CSS.
+      const chromeSizes = { header: 0, band: 0 };
+      const syncChrome = () => {
+        const header = Math.round(document.querySelector('header').getBoundingClientRect().height);
+        const band = Math.round(document.querySelector('.episodes').getBoundingClientRect().height);
+        // Zapisywanie zmienionej wartości w kółko przez ResizeObserver tylko mrugałoby stylem.
+        if (header !== chromeSizes.header) {
+          chromeSizes.header = header;
+          document.documentElement.style.setProperty('--header-h', `${header}px`);
+        }
+        if (band !== chromeSizes.band) {
+          chromeSizes.band = band;
+          document.documentElement.style.setProperty('--band-h', `${band}px`);
+        }
+      };
+      syncChrome();
+      window.addEventListener('resize', syncChrome);
+      if ('ResizeObserver' in window) {
+        // Wysokość pasa zmienia się po wczytaniu listy i przy zawijaniu filtra.
+        new ResizeObserver(() => syncChrome()).observe(document.querySelector('.episodes'));
+      }
+
       const boot = async () => {
+        sweepDrafts();
         const saved = takeSession();
         await load();
-        if (saved) await restoreSession(saved);
+        if (saved) {
+          await restoreSession(saved);
+          return;
+        }
+        // Bez sesji i bez ?id= otwieramy najnowszy odcinek, żeby edytor nigdy nie był pusty.
+        const requested = new URLSearchParams(location.search).get('id');
+        const target = episodes.some((entry) => entry.id === requested) ? requested : episodes[0]?.id;
+        if (!target) return;
+        $('empty').textContent = 'wczytuję odcinek…';
+        await openEpisode(target);
       };
 
       boot();
