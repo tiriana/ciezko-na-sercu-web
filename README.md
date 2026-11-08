@@ -53,10 +53,11 @@ transkrypcja niczego nie kasują. Po zapisie: `mise run build`.
 Nad playerem jest waveform z `GET /api/peaks?id=`: 100 słupków na sekundę, liczonych
 przez `ffmpeg` prosto z `audioUrl` (nagranie nigdy nie leży w repo), z cache
 w `.cache/peaks/`. Kółko przybliża, przeciągnięcie tła przesuwa okno, klik przewija bez
-grania, dwuklik gra. Znaczniki (początek i koniec utworu, początek wejścia) przeciąga się
-myszką albo strzałkami po dojściu Tabem; zmiana końca zapisuje też `end` poprawki, bo
-samo `durationSec` nie przesuwa granicy. Bez `ffmpeg` albo bez sieci w miejscu waveformu
-jest komunikat z powodem i przycisk ponowienia, a reszta edytora działa normalnie.
+grania, dwuklik gra. Znaczniki to same początki (utwór, wejście) — koniec fragmentu jest
+tam, gdzie zaczyna się następny, więc przesunięcie początku domyka poprzedni fragment
+i zapisuje jego `end`. Znaczniki przeciąga się myszką albo strzałkami po dojściu Tabem.
+Bez `ffmpeg` albo bez sieci w miejscu waveformu jest komunikat z powodem i przycisk
+ponowienia, a reszta edytora działa normalnie.
 
 ## Dane
 
