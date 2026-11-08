@@ -1,3 +1,9 @@
+## [1.7.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.6.0...v1.7.0) (2026-11-08)
+
+### Features
+
+* transkrypcja codzienna plus natychmiast nowy odcinek ([2f5a921](https://github.com/tiriana/ciezko-na-sercu-web/commit/2f5a921cea77f56409f1b94aca45e201a0d87816))
+
 ## [1.6.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.5.0...v1.6.0) (2026-11-08)
 
 ### Features
