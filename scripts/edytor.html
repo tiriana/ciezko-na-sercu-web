@@ -101,7 +101,50 @@
       .row-actions button:hover, .toolbar button:hover { border-color: var(--accent); color: var(--accent); }
       .toolbar { display: flex; gap: 8px; align-items: center; margin-top: 16px; }
       .toolbar .primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-      .toolbar .status { color: var(--muted); font-size: 12px; }
+      #editor > .toolbar {
+        position: sticky;
+        bottom: 0;
+        z-index: 3;
+        margin: 16px -20px -60px;
+        padding: 10px 20px 12px;
+        border-top: 1px solid var(--line);
+        background: var(--surface);
+        box-shadow: 0 -5px 12px rgba(28, 26, 24, 0.05);
+      }
+      .save-state {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 12px;
+        font-variant-numeric: tabular-nums;
+      }
+      .save-dot {
+        flex: 0 0 auto;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: currentColor;
+        opacity: 0;
+        transition: opacity 0.15s ease;
+      }
+      .save-state[data-state="dirty"] { color: #8a6410; }
+      .save-state[data-dirty="true"] .save-dot { opacity: 1; background: #d99b00; }
+      .save-state[data-state="saved"] { color: #1f6f3f; }
+      .save-state[data-state="error"] { color: #b31026; font-weight: 600; }
+      .save-state[data-state="saving"] .save-dot {
+        opacity: 1;
+        width: 9px;
+        height: 9px;
+        background: none;
+        border: 1.5px solid currentColor;
+        border-right-color: transparent;
+        animation: save-spin 0.7s linear infinite;
+      }
+      @keyframes save-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) {
+        .save-state[data-state="saving"] .save-dot { animation: none; border-right-color: currentColor; }
+      }
       .shortcut {
         padding: 2px 5px;
         border: 1px solid var(--line);
@@ -304,6 +347,7 @@
         .sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
         .list { max-height: 190px; }
         .main { padding: 12px 12px 60px; }
+        #editor > .toolbar { margin: 16px -12px -60px; padding: 10px 12px 12px; }
         #editor table { display: block; overflow-x: auto; }
         .wave-legend { margin-left: 0; }
         .wave-stage { height: 64px; }
@@ -461,7 +505,10 @@
           <div class="toolbar">
             <button class="primary" id="save" type="button">Zapisz</button>
             <kbd class="shortcut">Ctrl+S</kbd>
-            <span class="status" id="status"></span>
+            <span class="save-state" id="status" data-state="clean" role="status" aria-live="polite">
+              <span class="save-dot" aria-hidden="true"></span>
+              <span class="save-text">brak zmian</span>
+            </span>
           </div>
         </div>
       </main>
@@ -507,7 +554,12 @@
           button.type = 'button';
           button.setAttribute('aria-current', String(state.episode?.id === entry.id));
           button.innerHTML = `<span>${entry.displayTitle}</span><time>${entry.date}${entry.edited ? ' · poprawki' : ''}</time>`;
-          button.addEventListener('click', () => openEpisode(entry.id));
+          button.addEventListener('click', () => {
+            // Porzucenie niezapisanych zmian musi być świadome — inaczej jeden klik
+            // w listę kasuje robotę bez śladu.
+            if (dirty && state.episode && !window.confirm('Masz niezapisane zmiany. Otworzyć inny odcinek?')) return;
+            openEpisode(entry.id);
+          });
           li.append(button);
           list.append(li);
         }
@@ -526,6 +578,43 @@
         // Programowe ustawienie value nie odpala „input”, więc stan trzeba zaktualizować ręcznie.
         input.dispatchEvent(new Event('input'));
       };
+
+      // --- Wskaźnik stanu zapisu ---
+
+      const BASE_TITLE = document.title;
+      let dirty = false;
+      let statusTimer = 0;
+
+      const setStatus = (state, text, title = text) => {
+        clearTimeout(statusTimer);
+        const node = $('status');
+        const label = node.querySelector('.save-text');
+        node.dataset.state = state;
+        node.dataset.dirty = String(dirty);
+        node.title = title;
+        if (label.textContent !== text) label.textContent = text;
+      };
+
+      const setDirty = (value) => {
+        dirty = value;
+        document.title = dirty ? `• ${BASE_TITLE}` : BASE_TITLE;
+      };
+
+      const markDirty = () => {
+        setDirty(true);
+        setStatus('dirty', 'niezapisane zmiany');
+      };
+
+      const savedLabel = () => {
+        const now = new Date();
+        return `zapisane ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+      };
+
+      window.addEventListener('beforeunload', (event) => {
+        if (!dirty) return;
+        event.preventDefault();
+        event.returnValue = '';
+      });
 
       // --- Cofanie zmian osi czasu (Ctrl+Z) ---
 
@@ -561,6 +650,7 @@
 
       const editField = (object, field, apply) => {
         beginEdit(`${objectKey(object)}:${field}`);
+        markDirty();
         apply();
       };
 
@@ -586,7 +676,11 @@
         renderTopics();
         renderAdded();
         renderRestore();
-        $('status').textContent = 'cofnięto';
+        markDirty();
+        setStatus('dirty', 'cofnięto');
+        statusTimer = setTimeout(() => {
+          if (dirty) setStatus('dirty', 'niezapisane zmiany');
+        }, 2500);
       };
 
       const renderTracks = () => {
@@ -647,6 +741,7 @@
           const actions = document.createElement('td');
           const hide = rowButton('ukryj', () => {
             pushUndo();
+            markDirty();
             state.hiddenTracks.push({ artist: track.artist, title: track.title, album: track.album, hide: true });
             state.tracks.splice(index, 1);
             renderTracks();
@@ -691,6 +786,7 @@
           actions.append(
             rowButton('ukryj', () => {
               pushUndo();
+              markDirty();
               state.hiddenTopics.push({ time: topic.start, label: topic.label, hide: true });
               state.topics.splice(index, 1);
               renderTopics();
@@ -737,6 +833,7 @@
           actions.append(
             rowButton('usuń', () => {
               pushUndo();
+              markDirty();
               state.addTracks.splice(index, 1);
               renderAdded();
             })
@@ -774,6 +871,7 @@
           actions.append(
             rowButton('usuń', () => {
               pushUndo();
+              markDirty();
               state.addTopics.splice(index, 1);
               renderAdded();
             })
@@ -799,6 +897,7 @@
           span.append(
             rowButton('przywróć', () => {
               pushUndo();
+              markDirty();
               if (item.kind === 'track') {
                 state.hiddenTracks = state.hiddenTracks.filter((entry) => entry !== item.entry);
                 state.tracks.push({ ...state.episode.original.tracks.find((t) => t.artist === item.entry.artist && t.title === item.entry.title) ?? item.entry });
@@ -824,11 +923,12 @@
       };
 
       const openEpisode = async (id) => {
-        $('status').textContent = '';
+        setDirty(false);
+        setStatus('clean', 'brak zmian');
         const response = await fetch(`/api/episode?id=${encodeURIComponent(id)}`);
         const data = await response.json();
         if (!response.ok) {
-          $('status').textContent = data.error ?? 'błąd';
+          setStatus('error', `błąd: ${data.error ?? 'nie udało się wczytać odcinka'}`);
           return;
         }
         state.episode = data;
@@ -1079,6 +1179,7 @@
         );
         const next = clampNumber(Math.round(requested * 10) / 10, low, high);
         if (next === old) return;
+        markDirty();
         // Przeciągnięcie to jeden krok cofania, dlatego zrzut robimy tylko przy pierwszym ruchu.
         if (!dragging || !wave.undoTaken) {
           pushUndo();
@@ -1519,12 +1620,14 @@
 
       $('add-track').addEventListener('click', () => {
         pushUndo();
+        markDirty();
         state.addTracks.push({ artist: '', title: '', album: '', start: 0, durationSec: 0 });
         renderAdded();
       });
 
       $('add-topic').addEventListener('click', () => {
         pushUndo();
+        markDirty();
         state.addTopics.push({ label: '', start: 0 });
         renderAdded();
       });
@@ -1578,24 +1681,34 @@
         }
         topics.push(...state.hiddenTopics);
 
-        $('status').textContent = 'zapisuję…';
-        const response = await fetch('/api/save', {
-          method: 'POST',
-          headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({
-            id: episode.id,
-            title: $('title').value,
-            tracks,
-            topics,
-            addTracks: state.addTracks,
-            addTopics: state.addTopics,
-          }),
-        });
-        const data = await response.json();
-        $('status').textContent = response.ok ? 'zapisane — zbuduj stronę (npm run build)' : (data.error ?? 'błąd');
-        if (response.ok) {
+        setStatus('saving', 'zapisuję…', 'trwa zapis');
+        try {
+          const response = await fetch('/api/save', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({
+              id: episode.id,
+              title: $('title').value,
+              tracks,
+              topics,
+              addTracks: state.addTracks,
+              addTopics: state.addTopics,
+            }),
+          });
+          const data = await response.json().catch(() => ({}));
+          if (!response.ok) {
+            setStatus('error', `błąd: ${data.error ?? `serwer odpowiedział ${response.status}`}`);
+            return;
+          }
+          const label = savedLabel();
+          const note = `${label} — zbuduj stronę (npm run build)`;
+          setDirty(false);
+          setStatus('saved', label, note);
+          statusTimer = setTimeout(() => setStatus('clean', label, note), 4000);
           episodes = episodes.map((item) => (item.id === episode.id ? { ...item, displayTitle: $('title').value.trim() || item.originalTitle } : item));
           renderList();
+        } catch (error) {
+          setStatus('error', `błąd: ${error.message}`);
         }
       });
 
@@ -1611,7 +1724,7 @@
           if (key === 's') {
             event.preventDefault();
             if (!state.episode) {
-              $('status').textContent = 'najpierw otwórz odcinek';
+              setStatus('error', 'najpierw otwórz odcinek');
               return;
             }
             $('save').click();
