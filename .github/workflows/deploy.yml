@@ -1,6 +1,8 @@
 name: deploy
 
 on:
+  push:
+    branches: [main, raportowanie-bledow]
   workflow_dispatch:
     inputs:
       version:
@@ -9,7 +11,7 @@ on:
         type: string
 
 # Nazwa przebiegu mówi, którą wersję publikuje — bez tego lista wygląda jak „deploy #245”.
-run-name: deploy v${{ inputs.version || '?' }}
+run-name: deploy ${{ inputs.version && format('v{0}', inputs.version) || github.ref_name }}
 
 permissions:
   contents: read
@@ -63,11 +65,14 @@ jobs:
           # Projekt tworzymy raz; przy kolejnych przebiegach komenda zwraca błąd i go ignorujemy.
           npx --yes wrangler@$WRANGLER_VERSION pages project create "$CF_PROJECT" \
             --production-branch=main || true
+          # Nazwa gałęzi wybiera adres: main to produkcja, każda inna — podgląd
+          # na https://<gałąź>.<projekt>.pages.dev.
           npx --yes wrangler@$WRANGLER_VERSION pages deploy dist \
-            --project-name "$CF_PROJECT" --branch=main --commit-dirty=true
+            --project-name "$CF_PROJECT" --branch="$GITHUB_REF_NAME" --commit-dirty=true
 
       - name: Opublikuj na Surge
         # Kopia zapasowa: Surge bywa niedostępny, więc jego błąd nie czerwieni całego przebiegu.
+        if: github.ref_name == 'main'
         continue-on-error: true
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}

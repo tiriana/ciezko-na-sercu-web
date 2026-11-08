@@ -3,6 +3,7 @@ import SiteFooter from '../../components/SiteFooter.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import PersonName from '../../components/PersonName.astro';
+import ReportLink from '../../components/ReportLink.astro';
 import { getCatalog, getDuplicates, getEntries, getEpisodeFiles } from '../../lib/data';
 import { tagId } from '../../lib/tags';
 import {
@@ -234,6 +235,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         {entry.sourceUrl && (
           <a class="btn" href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">Odcinek w Polskim Radiu ↗</a>
         )}
+        <ReportLink element={`${entry.slug}|odcinek`} label="Zgłoś błąd" class="report-link--head" />
       </div>
     </header>
 
@@ -302,7 +304,12 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                           <div class="tracks__artist">
                             {block.track.artist ?? <span class="tracks__album">wykonawca nierozpoznany</span>}
                           </div>
-                          <div>{block.track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}</div>
+                          <div>
+                            {block.track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}
+                            <ReportLink
+                              element={`${entry.slug}|utwór:${block.index}|${[block.track.artist, block.track.title].filter(Boolean).join(' — ')}`}
+                            />
+                          </div>
                         </td>
                         <td class="tracks__album">{block.track.album ?? '—'}</td>
                         <td class="tracks__time">{formatClock(block.start)}</td>
@@ -372,7 +379,10 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                               ) : null}
                             </td>
                             <td>
-                              <div class="tracks__thread">{topic.label}</div>
+                              <div class="tracks__thread">
+                                {topic.label}
+                                <ReportLink element={`${entry.slug}|wejście:${topic.start}|${topic.label}`} />
+                              </div>
                             </td>
                             <td class="tracks__album">—</td>
                             <td class="tracks__time">{formatClock(topic.start)}</td>
@@ -408,7 +418,10 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         </td>
                         <td>
                           <div class="tracks__kind">Wejście</div>
-                          <div>{block.label}</div>
+                          <div>
+                            {block.label}
+                            <ReportLink element={`${entry.slug}|wejście:${block.start}|${block.label}`} />
+                          </div>
                         </td>
                         <td class="tracks__album">—</td>
                         <td class="tracks__time">{formatClock(block.start)}</td>
@@ -437,7 +450,10 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                     ) : (
                       <time>{formatClock(quote.start)}</time>
                     )}
-                    <p>{quote.text}</p>
+                    <p>
+                      {quote.text}
+                      <ReportLink element={`${entry.slug}|cytat:${quote.start}`} />
+                    </p>
                   </li>
                 ))}
               </ol>
@@ -448,7 +464,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         <aside class="side">
           {episode.summary && (
             <section class="card" aria-labelledby="summary-title">
-              <h2 id="summary-title">Streszczenie</h2>
+              <h2 id="summary-title">Streszczenie <ReportLink element={`${entry.slug}|streszczenie`} /></h2>
               <p>{episode.summary}</p>
               <div class="note">Streszczenie wygenerowane przez AI.</div>
             </section>
@@ -456,7 +472,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
 
           {episode.credits.length > 0 && (
             <section class="card" aria-labelledby="credits-title">
-              <h2 id="credits-title">Credits</h2>
+              <h2 id="credits-title">Credits <ReportLink element={`${entry.slug}|credits`} /></h2>
               <dl class="kv">
                 {creditRows.map((row) => (
                   <div>
