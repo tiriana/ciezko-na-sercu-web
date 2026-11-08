@@ -34,9 +34,9 @@
       header h1 { margin: 0; font-size: 15px; }
       header .hint { color: var(--muted); font-size: 12px; }
       .layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: calc(100vh - 45px); }
-      /* Lista zostaje w kolumnie, ale nie na całą wysokość ekranu: kończy się tam,
-         gdzie panel głośności z playerem, i przewija się sama. Wysokość liczy
-         syncChrome() z realnego układu, a clamp jest tylko bezpiecznikiem. */
+      /* Lista zajmuje całą wysokość ekranu minus chrome, a własny scrollbar
+         trzyma ją w miejscu podczas pracy przy waveformie. 100dvh, bo na
+         telefonie pasek adresu zmienia 100vh w trakcie przewijania. */
       .sidebar {
         position: sticky;
         /* 16 px = górny padding kolumny treści, żeby krawędzie się zgadzały */
@@ -45,7 +45,7 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
-        height: var(--sidebar-h, clamp(340px, 56vh, 520px));
+        height: calc(100dvh - var(--header-h, 52px) - 32px);
         padding: 12px;
         border-right: 1px solid var(--line);
         background: var(--surface);
@@ -2917,26 +2917,14 @@
         renderList();
       };
 
-      // Wysokość nagłówka bywa różna (zawija się przy węższym oknie), a pas odcinków
+      // Wysokość nagłówka bywa różna (zawija się przy węższym oknie), a sidebar
       // przykleja się tuż pod nim — stąd mierzona zmienna zamiast liczby w CSS.
-      const chromeSizes = { header: 0, sidebar: 0 };
+      let headerSize = 0;
       const syncChrome = () => {
         const header = Math.round(document.querySelector('header').getBoundingClientRect().height);
-        if (header !== chromeSizes.header) {
-          chromeSizes.header = header;
-          document.documentElement.style.setProperty('--header-h', `${header}px`);
-        }
-        // Sidebar kończy się tam, gdzie panel głośności z playerem. `offsetTop` to pozycja
-        // w układzie, więc przyklejenie i przewinięcie strony niczego tu nie psują.
-        const panel = document.querySelector('.wave');
-        const playerEl = document.querySelector('.player');
-        const narrow = window.matchMedia('(max-width: 760px)').matches;
-        const height =
-          !narrow && panel && playerEl ? Math.round(playerEl.offsetTop - panel.offsetTop + playerEl.offsetHeight) : 0;
-        if (height > 0 && height !== chromeSizes.sidebar) {
-          chromeSizes.sidebar = height;
-          document.documentElement.style.setProperty('--sidebar-h', `${height}px`);
-        }
+        if (header === headerSize) return;
+        headerSize = header;
+        document.documentElement.style.setProperty('--header-h', `${header}px`);
       };
       syncChrome();
       window.addEventListener('resize', syncChrome);

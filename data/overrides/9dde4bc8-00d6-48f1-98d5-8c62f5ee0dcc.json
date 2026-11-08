@@ -16,7 +16,7 @@
       "newAlbum": "Black Sabbath, Vol. 4",
       "start": 15.77,
       "durationSec": 281,
-      "end": 293.8
+      "end": 293.94
     },
     {
       "artist": "Type O Negative",
@@ -27,7 +27,7 @@
       "newAlbum": "World Coming Down",
       "start": 431.56,
       "durationSec": 369,
-      "end": 800.13
+      "end": 800.18
     },
     {
       "artist": "Black Sabbath",
@@ -50,6 +50,28 @@
       "start": 1216.76,
       "durationSec": 277,
       "end": 1493.18
+    },
+    {
+      "artist": "Thin Lizzy",
+      "title": "Jailbreak",
+      "album": "Jailbreak",
+      "newArtist": "Thin Lizzy",
+      "newTitle": "Jailbreak",
+      "newAlbum": "Jailbreak",
+      "start": 1550.95,
+      "durationSec": 146,
+      "end": 1788.7
+    },
+    {
+      "artist": "Motörhead",
+      "title": "Love Me Forever",
+      "album": "1916",
+      "newArtist": "Motörhead",
+      "newTitle": "Love Me Forever",
+      "newAlbum": "1916",
+      "start": 1869.25,
+      "durationSec": 323,
+      "end": 2192.27
     }
   ],
   "topics": [
@@ -104,6 +126,38 @@
       "label": "Rozważania o losie Thin Lizzy i jej potencjale",
       "start": 1493.18,
       "newLabel": "Rozważania o losie Thin Lizzy i jej potencjale"
+    },
+    {
+      "time": 1493.18,
+      "label": "Rozważania o losie Thin Lizzy i jej potencjale",
+      "start": 1493.18,
+      "newLabel": "Rozważania o losie Thin Lizzy i jej potencjale",
+      "end": 1550.95
+    },
+    {
+      "time": 1791.75,
+      "label": "Lemmy i legenda Motörhead",
+      "start": 1788.7,
+      "newLabel": "Lemmy i legenda Motörhead",
+      "end": 1869.25
+    },
+    {
+      "time": 2196,
+      "label": "Refleksje nad wczesnymi albumami Iron Maiden i zmianą wokalisty",
+      "start": 2192.27,
+      "newLabel": "Refleksje nad wczesnymi albumami Iron Maiden i zmianą wokalisty"
+    },
+    {
+      "time": 293.8,
+      "label": "Pamięć o zmarłych artystach metalowych – Peter Steele, Ronnie Dio, Eddie Van Halen, Lemmy i inni",
+      "start": 293.94,
+      "newLabel": "Pamięć o zmarłych artystach metalowych – Peter Steele, Ronnie Dio, Eddie Van Halen, Lemmy i inni"
+    },
+    {
+      "time": 800.13,
+      "label": "Omówienie albumu Black Sabbath „Heaven and Hell”",
+      "start": 800.18,
+      "newLabel": "Omówienie albumu Black Sabbath „Heaven and Hell”"
     }
   ],
   "addTracks": [

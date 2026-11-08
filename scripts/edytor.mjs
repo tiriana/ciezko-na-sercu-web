@@ -230,10 +230,10 @@ const heartbeat = setInterval(() => {
 heartbeat.unref();
 
 // ——— Stan „ok” znaczników ———
-// Trzymamy go w `.cache`, bo `data/` jest auto-commitowane w powłoce właściciela;
-// `.cache` jest ignorowany i wystarcza, żeby przetrwać restart serwera i czyszczenie
-// pamięci przeglądarki.
-const REVIEWED_PATH = join(CACHE, 'reviewed.json');
+// To dorobek redakcji, nie cache: leży w `data/`, więc trafia do commita i jedzie
+// z projektem na inną maszynę. Klucze są po etykietach, więc zmiana etykiety
+// osieroca znacznik — świadomy koszt czytelnego pliku.
+const REVIEWED_PATH = join(ROOT, 'data', 'reviewed.json');
 let reviewedQueue = Promise.resolve();
 
 const readReviewed = () => readJson(REVIEWED_PATH, { version: 1, episodes: {} });
@@ -246,7 +246,7 @@ const updateReviewed = (mutate) => {
     data.version = 1;
     data.episodes = data.episodes ?? {};
     const result = mutate(data);
-    await mkdir(CACHE, { recursive: true });
+    await mkdir(dirname(REVIEWED_PATH), { recursive: true });
     await writeFile(REVIEWED_PATH, `${JSON.stringify(data, null, 2)}\n`);
     return result;
   });
