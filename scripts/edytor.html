@@ -353,6 +353,33 @@
       .wave-legend i { width: 7px; height: 7px; border-radius: 50%; }
       .wave-legend .dot-start { background: var(--accent); }
       .wave-legend .dot-topic { background: #1f6f6b; }
+      .wave-menu {
+        position: fixed;
+        z-index: 30;
+        min-width: 200px;
+        padding: 4px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+        box-shadow: 0 10px 24px rgba(28, 26, 24, 0.18);
+      }
+      .wave-menu button {
+        display: block;
+        width: 100%;
+        padding: 6px 10px;
+        border: 0;
+        border-radius: 4px;
+        background: none;
+        color: var(--text);
+        text-align: left;
+        font: inherit;
+        font-size: 12.5px;
+        cursor: pointer;
+      }
+      .wave-menu[hidden] { display: none; }
+      .wave-menu button:hover,
+      .wave-menu button:focus-visible { background: #f0ece6; outline: none; }
+      .wave-menu small { display: block; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
       .wave-tools { display: flex; gap: 4px; }
       .wave-tools button {
         min-width: 26px;
@@ -563,6 +590,13 @@
                 <span><i class="dot-topic"></i>wejście</span>
               </span>
               <span class="wave-tools">
+                <button
+                  type="button"
+                  id="wave-add"
+                  title="Dodaj wejście w miejscu kursora (Shift+N)"
+                  aria-label="Dodaj wejście w miejscu kursora"
+                  disabled
+                >＋ wejście</button>
                 <button type="button" id="wave-prev" title="Poprzedni znacznik" aria-label="Poprzedni znacznik" disabled>‹</button>
                 <button type="button" id="wave-next" title="Następny znacznik" aria-label="Następny znacznik" disabled>›</button>
                 <button type="button" id="wave-out" title="Oddal" aria-label="Oddal waveform" disabled>−</button>
@@ -575,7 +609,7 @@
               id="wave-stage"
               tabindex="0"
               role="group"
-              aria-label="Waveform nagrania: kółko przybliża, strzałki przesuwają okno, klik przewija"
+              aria-label="Waveform nagrania: kółko przybliża, strzałki przesuwają okno, klik przewija, prawy przycisk dodaje wejście"
             >
               <canvas id="wave-canvas" aria-hidden="true"></canvas>
               <div class="wave-markers" id="wave-markers"></div>
@@ -676,6 +710,13 @@
           </div>
         </div>
       </main>
+    </div>
+
+    <div class="wave-menu" id="wave-menu" role="menu" aria-label="Akcje waveformu" hidden>
+      <button type="button" role="menuitem" id="wave-menu-add">
+        Dodaj wejście tutaj
+        <small id="wave-menu-time"></small>
+      </button>
     </div>
 
     <script>
@@ -1229,6 +1270,7 @@
           const labelInput = document.createElement('input');
           labelInput.type = 'text';
           labelInput.value = topic.label ?? '';
+          labelInput.placeholder = 'Nowe wejście';
           labelInput.addEventListener('input', () => editField(topic, 'label', () => {
             topic.label = labelInput.value;
             waveSync();
@@ -1315,6 +1357,7 @@
           const labelInput = document.createElement('input');
           labelInput.type = 'text';
           labelInput.value = topic.label ?? '';
+          labelInput.placeholder = 'Nowe wejście';
           labelInput.addEventListener('input', () => editField(topic, 'label', () => {
             topic.label = labelInput.value;
             waveSync();
@@ -1331,7 +1374,7 @@
             waveSync();
           }));
           startCell.append(startInput, rowButton('weź', () => usePlayerTime(startInput)));
-          fieldInputs.set(topic, { start: startInput });
+          fieldInputs.set(topic, { start: startInput, label: labelInput });
 
           const actions = document.createElement('td');
           actions.append(
@@ -1484,7 +1527,7 @@
       };
 
       const setWaveTools = (enabled) => {
-        for (const id of ['wave-in', 'wave-out', 'wave-all', 'wave-prev', 'wave-next']) $(id).disabled = !enabled;
+        for (const id of ['wave-in', 'wave-out', 'wave-all', 'wave-prev', 'wave-next', 'wave-add']) $(id).disabled = !enabled;
       };
 
       const drawWave = () => {
@@ -1761,6 +1804,99 @@
         buildMarkers();
         if (focusTarget) markerNodes.get(focusTarget.key)?.node.focus({ preventScroll: true });
       };
+
+      // --- Dodawanie wejścia w miejscu, którego nie wykrył tagger ---
+
+      const ADD_TOPIC_GUARD = 0.5;
+
+      const noteStatus = (text) => {
+        setStatus(dirty ? 'dirty' : 'clean', text);
+        clearTimeout(statusTimer);
+        statusTimer = setTimeout(
+          () => setStatus(dirty ? 'dirty' : 'clean', dirty ? 'niezapisane zmiany' : 'brak zmian'),
+          2500
+        );
+      };
+
+      const addTopicAt = (time) => {
+        if (!wave.duration) return null;
+        const start = clampNumber(Math.round(time * 100) / 100, 0, wave.duration);
+        // Dwa znaczniki w tym samym miejscu to zawsze pomyłka, a nie nowa informacja.
+        const neighbour = collectMarkers().find((marker) => Math.abs(marker.time - start) <= ADD_TOPIC_GUARD);
+        if (neighbour) {
+          noteStatus('tu już jest znacznik');
+          return null;
+        }
+        pushUndo();
+        // Dokładnie te same pola, które wysyła saveEpisode dla dodanych wejść
+        // (label + start); `end` w schemacie addTopics nie istnieje.
+        const topic = { label: '', start };
+        state.addTopics.push(topic);
+        markDirty();
+        renderAdded();
+        buildMarkers();
+        const inputs = fieldInputs.get(topic);
+        if (inputs?.label) {
+          inputs.label.scrollIntoView({ block: 'nearest' });
+          inputs.label.focus({ preventScroll: true });
+          inputs.label.select();
+        }
+        return topic;
+      };
+
+      const waveMenu = $('wave-menu');
+      let menuTime = null;
+      let menuOpener = null;
+
+      const closeMenu = ({ restoreFocus = false } = {}) => {
+        if (waveMenu.hidden) return;
+        waveMenu.hidden = true;
+        const opener = menuOpener;
+        menuOpener = null;
+        menuTime = null;
+        if (restoreFocus) opener?.focus?.({ preventScroll: true });
+      };
+
+      const openMenuAt = (clientX, clientY, time, opener) => {
+        menuTime = time;
+        menuOpener = opener;
+        $('wave-menu-time').textContent = fmtPrecise(time);
+        waveMenu.hidden = false;
+        const rect = waveMenu.getBoundingClientRect();
+        const x = clampNumber(clientX, 8, Math.max(8, window.innerWidth - rect.width - 8));
+        const y = clampNumber(clientY, 8, Math.max(8, window.innerHeight - rect.height - 8));
+        waveMenu.style.left = `${x}px`;
+        waveMenu.style.top = `${y}px`;
+        $('wave-menu-add').focus({ preventScroll: true });
+      };
+
+      $('wave-menu-add').addEventListener('click', () => {
+        const time = menuTime;
+        closeMenu();
+        addTopicAt(time);
+      });
+
+      document.addEventListener(
+        'pointerdown',
+        (event) => {
+          if (!waveMenu.hidden && !event.target.closest?.('.wave-menu')) closeMenu();
+        },
+        true
+      );
+
+      document.addEventListener(
+        'keydown',
+        (event) => {
+          if (event.key !== 'Escape' || waveMenu.hidden) return;
+          event.preventDefault();
+          closeMenu({ restoreFocus: true });
+        },
+        true
+      );
+
+      // Menu wisi na współrzędnych ekranu, więc każdy ruch strony je unieważnia.
+      window.addEventListener('scroll', () => closeMenu(), { passive: true });
+      window.addEventListener('resize', () => closeMenu());
 
       const bindMarker = (node, marker) => {
         node.addEventListener('pointerdown', (event) => {
@@ -2170,8 +2306,36 @@
         } else if (event.key === ',' || event.key === '.') {
           event.preventDefault();
           jumpToMarker(event.key === ',' ? -1 : 1);
+        } else if (event.shiftKey && event.code === 'KeyN') {
+          event.preventDefault();
+          addTopicAt($('audio').currentTime);
         }
       });
+
+      $('wave-add').addEventListener('click', () => addTopicAt($('audio').currentTime));
+
+      stageEl().addEventListener('contextmenu', (event) => {
+        if (!wave.peaks) return;
+        // Na znaczniku nie ma jeszcze własnych akcji — zostawiamy menu przeglądarki
+        // i chowamy nasze, żeby nie wisiało pod kursorem.
+        if (event.target.closest('.wave-marker')) {
+          closeMenu();
+          return;
+        }
+        event.preventDefault();
+        const rect = stageEl().getBoundingClientRect();
+        const inside = event.clientX >= rect.left && event.clientX <= rect.right;
+        const time = inside ? timeAt(event.clientX) : $('audio').currentTime;
+        openMenuAt(
+          inside ? event.clientX : rect.left + rect.width / 2,
+          inside ? event.clientY : rect.bottom,
+          time,
+          stageEl()
+        );
+      });
+
+      // Kółko zmienia okno, więc punkt pod menu przestaje być tym samym miejscem.
+      stageEl().addEventListener('wheel', () => closeMenu(), { passive: true });
 
       $('wave-prev').addEventListener('click', () => jumpToMarker(-1));
       $('wave-next').addEventListener('click', () => jumpToMarker(1));
