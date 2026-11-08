@@ -128,7 +128,48 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
       episode.credits = episode.credits.map((credit) => ({ ...credit, name: resolveAlias(credit.name, aliases) }));
     }
   }
+  for (const episode of episodes) sanitizeEpisode(episode);
   return new Map(episodes.map((episode) => [episode.id, episode]));
+}
+
+// Shazam czasem nie zna wykonawcy ("None") albo dzieli ten sam utwór na dwa bloki.
+// Bez tego na stronie widać „None" i dwa razy ten sam tytuł pod rząd.
+function sanitizeEpisode(episode: Episode): void {
+  episode.tags = episode.tags.filter((tag) => tag.label !== 'None' && tag.label !== 'null');
+  episode.tracks = episode.tracks.map((track) => ({
+    ...track,
+    artist: track.artist && track.artist !== 'None' && track.artist !== 'null' ? track.artist : null,
+  }));
+
+  const merged: Episode['tracks'] = [];
+  for (const track of episode.tracks) {
+    const previous = merged.at(-1);
+    const sameTrack =
+      previous &&
+      previous.artist === track.artist &&
+      previous.title === track.title &&
+      previous.album === track.album &&
+      previous.end !== undefined &&
+      Math.abs(previous.end - track.start) <= 1;
+    if (sameTrack) {
+      previous.end = track.end;
+      previous.durationSec = (previous.durationSec ?? 0) + (track.durationSec ?? 0);
+      continue;
+    }
+    merged.push(track);
+  }
+  episode.tracks = merged;
+
+  // Temat bez długości to punkt: rozciągamy go do następnego tematu, żeby nie renderował „—”.
+  episode.topics = episode.topics.filter((topic, index, all) => {
+    if (topic.end === undefined || topic.end > topic.start) return true;
+    const next = all[index + 1];
+    if (next && next.start > topic.start) {
+      topic.end = next.start;
+      return true;
+    }
+    return false;
+  });
 }
 
 // Po podstawieniu kanonicznej etykiety dwa tagi mogą się zlać w jeden: zostaje pierwszy,
