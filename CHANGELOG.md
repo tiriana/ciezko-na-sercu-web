@@ -1,3 +1,9 @@
+## [1.4.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.3.0...v1.4.0) (2026-11-08)
+
+### Features
+
+* dzienny wybór odcinka z tytułem w nazwie przebiegu ([8d67799](https://github.com/tiriana/ciezko-na-sercu-web/commit/8d677993fa84f0c2ec7d2bac8c80984721197473))
+
 ## [1.3.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.2.0...v1.3.0) (2026-11-08)
 
 ### Features
