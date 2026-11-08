@@ -2,7 +2,7 @@ name: deploy
 
 on:
   push:
-    branches: [main]
+    branches: [main, develop]
   workflow_dispatch:
     inputs:
       version:
@@ -21,14 +21,15 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  SURGE_DOMAIN: ciezko-na-sercu.surge.sh
-  SURGE_VERSION: 0.56.0
   CF_PROJECT: ciezko-na-sercu
   WRANGLER_VERSION: 4.157.0
 
 jobs:
   deploy:
     runs-on: ubuntu-26.04
+    # develop to staging: build z tym samym kodem, ale bez indeksowania.
+    env:
+      STAGING: ${{ github.ref_name != 'main' && '1' || '0' }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
@@ -64,15 +65,7 @@ jobs:
           # Projekt tworzymy raz; przy kolejnych przebiegach komenda zwraca błąd i go ignorujemy.
           npx --yes wrangler@$WRANGLER_VERSION pages project create "$CF_PROJECT" \
             --production-branch=main || true
-          # Nazwa gałęzi wybiera adres: main to produkcja, każda inna — podgląd
-          # na https://<gałąź>.<projekt>.pages.dev.
+          # Nazwa gałęzi wybiera adres: main to produkcja, develop — staging
+          # na https://develop.<projekt>.pages.dev, feat/** — podglądy.
           npx --yes wrangler@$WRANGLER_VERSION pages deploy dist \
             --project-name "$CF_PROJECT" --branch="$GITHUB_REF_NAME" --commit-dirty=true
-
-      - name: Opublikuj na Surge
-        # Kopia zapasowa: Surge bywa niedostępny, więc jego błąd nie czerwieni całego przebiegu.
-        if: github.ref_name == 'main'
-        continue-on-error: true
-        env:
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        run: npx --yes surge@$SURGE_VERSION dist "$SURGE_DOMAIN"

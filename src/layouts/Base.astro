@@ -16,6 +16,7 @@ const { title, description, bodyClass } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const buildId = process.env.GITHUB_SHA?.slice(0, 7) ?? 'local';
 const buildDate = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+const staging = process.env.STAGING === '1';
 ---
 
 <!doctype html>
@@ -25,6 +26,7 @@ const buildDate = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {staging && <meta name="robots" content="noindex" />}
     <meta name="version" content={version} />
     <meta name="build-id" content={buildId} />
     <meta name="build-date" content={buildDate} />
