@@ -1626,53 +1626,86 @@ a {
   text-transform: uppercase;
 }
 
-/* Grupa wejść: nagłówek z jednym playem i wcięte wątki */
+/* Wejście z kilkoma wątkami to jeden fragment: wątki siedzą zwinięte pod etykietą
+   Nagłówek pokazuje pierwszy wątek, reszta czeka pod „+N”. */
 
-.tracks__row--group .tracks__kind {
-  color: var(--accent);
+.threads {
+  margin: 2px 0 0;
 }
 
-.tracks__row--group td {
-  padding-top: 16px;
+.threads__summary {
+  display: block;
+  cursor: pointer;
+  list-style: none;
 }
 
-.tracks__row--child td {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-bottom: 0;
+.threads__summary::-webkit-details-marker {
+  display: none;
 }
 
-/* Kreskę zostawiamy tylko po ostatnim wątku grupy, żeby oddzielała ją od następnej pozycji.
-   W układzie tabeli rysują ją komórki; na wąskim ekranie wiersz jest siatką i kreskę
-   rysuje sam <tr>, więc komórki nie mogą jej dublować. */
-@media (min-width: 721px) {
-  .tracks__row--child-last td {
-    border-bottom: 1px solid var(--line);
-  }
+/* Zwinięta etykieta kończy się „+N” i strzałką w tym samym wierszu tekstu —
+   po owinięciu flex rozjeżdżał je na osobną linię. */
+.threads__summary::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 6px;
+  border-right: 1.5px solid var(--muted);
+  border-bottom: 1.5px solid var(--muted);
+  transform: rotate(45deg) translateY(-1px);
+  transition: transform 160ms ease;
+  vertical-align: 1px;
 }
 
-.tracks__row--child td.tracks__idx {
-  padding-left: 16px;
+.threads[open] .threads__summary::after {
+  transform: rotate(225deg) translateY(1px);
 }
 
-.tracks__row--child .track-play {
-  width: 20px;
-  height: 20px;
+.threads__summary:hover .threads__label {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
-.tracks__row--child .tracks__thread {
+.threads__summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.threads__count {
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.threads__list {
+  margin: 6px 0 2px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 5px;
+}
+
+.threads__item {
+  display: grid;
+  grid-template-columns: minmax(3.6em, max-content) 1fr;
+  gap: 10px;
   color: var(--muted);
   font-size: 13.5px;
+  line-height: 1.45;
 }
 
-.tracks__row--child .tracks__time {
+.threads__time {
   color: var(--muted);
   font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
 }
 
-.tracks__row--group.is-active,
-.tracks__row--child.is-active {
-  background: color-mix(in srgb, var(--accent) 6%, transparent);
+.threads__item:target {
+  color: var(--text);
 }
 
 .side__tags {

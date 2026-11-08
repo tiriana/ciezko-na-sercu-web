@@ -22,7 +22,7 @@ const setupAudio = () => {
 let spans = [];
 
 const activeSpans = (time) => {
-  const covering = spans.filter((span) => span.kind !== 'topic-group' && time >= span.start && time < span.end);
+  const covering = spans.filter((span) => time >= span.start && time < span.end);
   if (covering.length <= 1) return covering;
   // Wejścia i utwory mogą się nakładać: aktywna jest pozycja, która zaczęła się najpóźniej.
   const latest = Math.max(...covering.map((span) => span.start));
@@ -67,10 +67,10 @@ const syncProgress = () => {
   syncFragment();
 };
 
-/** Fragment, w którym jesteśmy: utwór albo pojedynczy wątek, nigdy grupa wejść. */
+/** Fragment, w którym jesteśmy: utwór albo wejście (z wątkami razem). */
 const currentFragment = (time) => {
   const covering = spans.filter(
-    (span) => span.kind !== 'topic-group' && span.end > span.start && time >= span.start && time < span.end
+    (span) => span.end > span.start && time >= span.start && time < span.end
   );
   if (covering.length === 0) return null;
   return covering.reduce((latest, span) => (span.start >= latest.start ? span : latest));
@@ -288,9 +288,7 @@ const syncSpans = () => {
     setNowPlaying('');
   }
   for (const span of spans) {
-    const isActive = span.kind === 'topic-group'
-      ? active.some((item) => item.kind === 'topic' && item.start >= span.start && item.start < span.end)
-      : active.includes(span);
+    const isActive = active.includes(span);
     span.element.classList.toggle('is-active', isActive);
     if (isActive) span.element.setAttribute('aria-current', 'true');
     else span.element.removeAttribute('aria-current');

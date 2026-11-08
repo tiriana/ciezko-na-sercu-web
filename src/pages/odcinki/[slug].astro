@@ -165,6 +165,13 @@ const fragmentId = (text: string) => {
   return id;
 };
 
+// Grupa wejść to jeden fragment, więc identyfikator dostaje pierwszy wątek, a każdy
+// wątek zachowuje kotwicę po swoim dawnym id — stare linki `?f=` nadal trafiają w wiersz.
+const groupIds = new Map<GroupBlock, string[]>();
+for (const block of blocks) {
+  if (block.kind === 'group') groupIds.set(block, block.topics.map((topic) => fragmentId(topic.label)));
+}
+
 // Sekcje o zerowej długości (te same znaczniki czasu z modelu) nie mają sensu jako
 // osobne wiersze — w grupie zostają treścią, a czas pokazujemy jako „—".
 const formatSpan = (start: number, end: number) => (end - start < 1 ? '—' : formatClock(end - start));
@@ -326,70 +333,53 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         <td class="tracks__time">{formatClock(block.track.durationSec)}</td>
                       </tr>
                     ) : block.kind === 'group' ? (
-                      <>
-                        <tr
-                          class="tracks__row--entry tracks__row--group"
-                          data-span-start={block.start}
-                          data-span-end={block.end}
-                          data-kind="topic-group"
-                        >
-                          <td class="tracks__idx">
-                            {entry.audioUrl ? (
-                              <button
-                                class="track-play"
-                                type="button"
-                                data-track-start={block.start}
-                                aria-label={`Odtwórz od ${formatClock(block.start)}`}
-                              >
-                                <TrackPlayIcon />
-                              </button>
-                            ) : null}
-                          </td>
-                          <td>
-                            <div class="tracks__kind">Wejście · {pluralThreads(block.topics.length)}</div>
-                          </td>
-                          <td class="tracks__album">—</td>
-                          <td class="tracks__time">{formatClock(block.start)}</td>
-                          <td class="tracks__time">{formatSpan(block.start, block.end)}</td>
-                        </tr>
-                        {block.topics.map((topic, index) => (
-                          <tr
-                            class:list={{
-                              'tracks__row--entry': true,
-                              'tracks__row--child': true,
-                              'tracks__row--child-last': index === block.topics.length - 1,
-                            }}
-                            data-span-start={topic.start}
-                            data-span-end={topic.end}
-                            data-kind="topic"
-                            data-fragment-id={fragmentId(topic.label)}
-                            data-tag-ids={topicTagIds(topic).join(' ') || undefined}
-                          >
-                            <td class="tracks__idx">
-                              {entry.audioUrl ? (
-                                <button
-                                  class="track-play"
-                                  type="button"
-                                  data-track-start={topic.start}
-                                  aria-label={`Odtwórz od ${formatClock(topic.start)}`}
-                                >
-                                  <TrackPlayIcon />
-                                </button>
-                              ) : null}
-                            </td>
-                            <td>
-                              <div class="tracks__thread">
-                                {topic.label}
-                                <ReportLink element={`${entry.slug}|wejście:${topic.start}|${topic.label}`} />
-                              </div>
-                              {topic.end > topic.start && <FragmentProgress />}
-                            </td>
-                            <td class="tracks__album">—</td>
-                            <td class="tracks__time">{formatClock(topic.start)}</td>
-                            <td class="tracks__time">{formatSpan(topic.start, topic.end)}</td>
-                          </tr>
-                        ))}
-                      </>
+                      <tr
+                        class="tracks__row--entry"
+                        data-span-start={block.start}
+                        data-span-end={block.end}
+                        data-kind="topic"
+                        data-fragment-id={groupIds.get(block)?.[0]}
+                        data-tag-ids={[...new Set(block.topics.flatMap((topic) => topicTagIds(topic)))].join(' ') || undefined}
+                      >
+                        <td class="tracks__idx">
+                          {entry.audioUrl ? (
+                            <button
+                              class="track-play"
+                              type="button"
+                              data-track-start={block.start}
+                              aria-label={`Odtwórz od ${formatClock(block.start)}`}
+                            >
+                              <TrackPlayIcon />
+                            </button>
+                          ) : null}
+                        </td>
+                        <td>
+                          <div class="tracks__kind">Wejście · {pluralThreads(block.topics.length)}</div>
+                          <details class="threads">
+                            <summary class="threads__summary">
+                              <span class="threads__label">{block.topics[0].label}</span>
+                              <span class="threads__count">+{block.topics.length - 1}</span>
+                            </summary>
+                            <ol class="threads__list">
+                              {/* Pierwszy wątek jest etykietą wiersza, więc w rozwinięciu
+                                  zostają tylko pozostałe — inaczej ta sama treść stoi dwa razy. */}
+                              {block.topics.slice(1).map((topic, index) => (
+                                <li class="threads__item" id={`frag-${groupIds.get(block)?.[index + 1]}`}>
+                                  <span class="threads__time">{formatClock(topic.start)}</span>
+                                  <span class="threads__text">
+                                    {topic.label}
+                                    <ReportLink element={`${entry.slug}|wejście:${topic.start}|${topic.label}`} />
+                                  </span>
+                                </li>
+                              ))}
+                            </ol>
+                          </details>
+                          {block.end > block.start && <FragmentProgress />}
+                        </td>
+                        <td class="tracks__album">—</td>
+                        <td class="tracks__time">{formatClock(block.start)}</td>
+                        <td class="tracks__time">{formatSpan(block.start, block.end)}</td>
+                      </tr>
                     ) : (
                       <tr
                         class="tracks__row--entry"
