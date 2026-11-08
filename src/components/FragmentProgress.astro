@@ -1,0 +1,17 @@
+---
+// Pasek leży na kresce pod wierszem (patrz `[data-fragment-progress]` w CSS), więc jego
+// pojawienie się nie przesuwa tabeli. Sam pasek jest tylko wskaźnikiem, bez czasu.
+---
+
+<div
+  class="fragment-progress"
+  data-fragment-progress
+  role="slider"
+  tabindex="0"
+  aria-label="Postęp w tym fragmencie"
+  aria-valuemin="0"
+  aria-valuemax="100"
+  aria-valuenow="0"
+>
+  <span class="fragment-progress__fill" data-fragment-fill></span>
+</div>

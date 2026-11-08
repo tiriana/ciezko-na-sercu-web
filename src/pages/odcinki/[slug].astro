@@ -4,6 +4,7 @@ import SiteHeader from '../../components/SiteHeader.astro';
 import Base from '../../layouts/Base.astro';
 import PersonName from '../../components/PersonName.astro';
 import ReportLink from '../../components/ReportLink.astro';
+import FragmentProgress from '../../components/FragmentProgress.astro';
 import TrackPlayIcon from '../../components/TrackPlayIcon.astro';
 import { getCatalog, getDuplicates, getEntries, getEpisodeFiles } from '../../lib/data';
 import { tagId } from '../../lib/tags';
@@ -305,6 +306,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                               element={`${entry.slug}|utwór:${block.index}|${[block.track.artist, block.track.title].filter(Boolean).join(' — ')}`}
                             />
                           </div>
+                          {block.end > block.start && <FragmentProgress />}
                         </td>
                         <td class="tracks__album">{block.track.album ?? '—'}</td>
                         <td class="tracks__time">{formatClock(block.start)}</td>
@@ -366,6 +368,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                                 {topic.label}
                                 <ReportLink element={`${entry.slug}|wejście:${topic.start}|${topic.label}`} />
                               </div>
+                              {topic.end > topic.start && <FragmentProgress />}
                             </td>
                             <td class="tracks__album">—</td>
                             <td class="tracks__time">{formatClock(topic.start)}</td>
@@ -399,6 +402,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                             {block.label}
                             <ReportLink element={`${entry.slug}|wejście:${block.start}|${block.label}`} />
                           </div>
+                          {block.end > block.start && <FragmentProgress />}
                         </td>
                         <td class="tracks__album">—</td>
                         <td class="tracks__time">{formatClock(block.start)}</td>

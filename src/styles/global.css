@@ -1178,6 +1178,8 @@ a {
   .tracks td:nth-child(2) {
     grid-column: 2;
     grid-row: 1 / span 2;
+    /* Rozciągnięta komórka kończy się na kresce wiersza — tam siada pasek postępu. */
+    align-self: stretch;
   }
 
   .tracks td.tracks__album {
@@ -1410,6 +1412,87 @@ a {
 .tracks tr.is-active .tracks__artist,
 .tracks tr.is-active .tracks__time {
   color: var(--accent);
+}
+
+/* Pasek postępu leży dokładnie na kresce pod wierszem, więc jego pojawienie się nie
+   zmienia wysokości tabeli. Sam obszar kliknięcia jest wyższy od widocznej linii. */
+.tracks td:nth-child(2) {
+  position: relative;
+}
+
+.fragment-progress {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  /* Pasek przykrywa kreskę od lewej krawędzi wiersza: 40 px kolumny z playem. */
+  left: -40px;
+  display: none;
+  height: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.fragment-progress::before,
+.fragment-progress__fill {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.fragment-progress::before {
+  content: '';
+  right: 0;
+  left: 0;
+  background: var(--line);
+}
+
+.fragment-progress:hover::before,
+.fragment-progress:focus-visible::before {
+  background: var(--line-strong);
+}
+
+.fragment-progress__fill {
+  left: 0;
+  width: 0;
+  background: var(--accent);
+}
+
+.tracks tr.is-active .fragment-progress {
+  display: block;
+  animation: fragment-progress-in 160ms ease-out;
+}
+
+.fragment-progress:focus-visible {
+  outline: none;
+}
+
+/* Obrys obejmuje samą linię, nie cały (niewidoczny) obszar kliknięcia. */
+.fragment-progress:focus-visible::before {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Na dotyku obszar kliknięcia rośnie — tam nie konkuruje z zaznaczaniem tekstu. */
+@media (pointer: coarse) {
+  .fragment-progress {
+    height: 24px;
+  }
+}
+
+@keyframes fragment-progress-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* W układzie siatki komórka kończy się 13 px (padding i kreska wiersza) nad kreską. */
+@media (max-width: 720px) {
+  .fragment-progress {
+    bottom: -13px;
+    left: -52px;
+  }
 }
 
 .timeline li.is-active > p,
@@ -2003,34 +2086,6 @@ main {
   gap: 4px 10px;
   flex: 1 1 auto;
   min-width: 0;
-}
-
-/* Pasek bieżącego fragmentu jest cieńszy od głównego i podpisany po lewej,
-   żeby nie konkurował z osią całej audycji. */
-.audio-bar__fragment {
-  display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: minmax(0, 1fr) auto auto;
-  align-items: center;
-  gap: 8px;
-  min-width: 0;
-}
-
-.audio-bar__fragment[hidden] {
-  display: none;
-}
-
-.audio-bar__fragment-name {
-  overflow: hidden;
-  color: var(--muted);
-  font-size: 11px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.audio-bar__progress--fragment {
-  grid-column: auto;
-  height: 3px;
 }
 
 .audio-bar__time {
