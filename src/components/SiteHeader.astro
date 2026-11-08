@@ -12,7 +12,17 @@ const { current } = Astro.props;
       <span class="brand__mark">Ciężko <span>na</span> sercu</span>
       <span class="brand__note">indeks audycji</span>
     </a>
-    <nav class="site-nav" aria-label="Główna">
+    <button
+      class="site-menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      aria-label="Menu"
+      data-menu-toggle
+    >
+      <span class="site-menu-toggle__bars" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Główna">
       <a href="/" aria-current={current === 'episodes' ? 'page' : undefined}>Odcinki</a>
       <a href="/tagi/" aria-current={current === 'tags' ? 'page' : undefined}>Tagi</a>
       <a href="/o-projekcie/" aria-current={current === 'about' ? 'page' : undefined}>O projekcie</a>

@@ -296,6 +296,34 @@ const collapseNote = (note) => {
   animation.finished.then(() => note.remove()).catch(() => note.remove());
 };
 
+// Menu na telefonie. Delegacja na dokumencie, bo po nawigacji klienckiej nagłówek
+// jest nowym elementem, a handler przypięty do przycisku zostałby przy starym.
+const closeMenu = () => {
+  const nav = document.querySelector('.site-nav');
+  const toggle = document.querySelector('[data-menu-toggle]');
+  if (nav) delete nav.dataset.open;
+  toggle?.setAttribute('aria-expanded', 'false');
+};
+
+document.addEventListener('click', (event) => {
+  const toggle = event.target instanceof Element ? event.target.closest('[data-menu-toggle]') : null;
+  if (toggle) {
+    const nav = document.querySelector('.site-nav');
+    const open = nav?.dataset.open === 'true';
+    if (nav) nav.dataset.open = String(!open);
+    toggle.setAttribute('aria-expanded', String(!open));
+    return;
+  }
+  const insideNav = event.target instanceof Element && event.target.closest('.site-nav');
+  if (insideNav) closeMenu();
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMenu();
+});
+
+document.addEventListener('astro:page-load', closeMenu);
+
 const clearDeepLink = (note) => {
   for (const row of document.querySelectorAll('.is-tagged')) row.classList.remove('is-tagged');
   collapseNote(note);

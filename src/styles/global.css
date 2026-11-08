@@ -1012,8 +1012,107 @@ a {
   }
 }
 
+/* Menu na telefonie: przycisk w nagłówku rozwija nawigację pod nim. */
+.site-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.site-menu-toggle__bars,
+.site-menu-toggle__bars::before,
+.site-menu-toggle__bars::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--text);
+  transition: transform 140ms ease, opacity 140ms ease;
+}
+
+.site-menu-toggle__bars {
+  position: relative;
+}
+
+.site-menu-toggle__bars::before,
+.site-menu-toggle__bars::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.site-menu-toggle__bars::before {
+  top: -6px;
+}
+
+.site-menu-toggle__bars::after {
+  top: 6px;
+}
+
+.site-menu-toggle[aria-expanded='true'] .site-menu-toggle__bars {
+  background: transparent;
+}
+
+.site-menu-toggle[aria-expanded='true'] .site-menu-toggle__bars::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.site-menu-toggle[aria-expanded='true'] .site-menu-toggle__bars::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 @media (max-width: 720px) {
+  .site-header__inner {
+    position: relative;
+  }
+
+  .site-menu-toggle {
+    display: inline-flex;
+  }
+
   .site-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 6px 0;
+    border: 1px solid var(--line-strong);
+    border-radius: 10px;
+    background: var(--surface);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    z-index: 30;
+  }
+
+  .site-nav[data-open='true'] {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 12px 18px;
+    border-bottom: 0;
+  }
+
+  .site-nav a + a {
+    border-top: 1px solid var(--line);
+  }
+
+  .site-nav a.site-nav__external {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-nav:not([data-open='true']) {
     display: none;
   }
 
