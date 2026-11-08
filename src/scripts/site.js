@@ -102,13 +102,17 @@ const syncFragment = () => {
 
 let lastWrittenSecond = -1;
 
-/** Adres nadąża za odtwarzaniem, żeby „skopiuj link” nie wymagał klikania w przycisk. */
+/** Adres jest stanem odtwarzacza: pozycja trafia do `?t=`, więc wystarczy skopiować
+ * adres z paska przeglądarki. Zapisuje się też po pauzie i po przewinięciu, nie tylko
+ * w trakcie grania. */
 const writeTimeToUrl = () => {
-  if (!audio || audio.paused || !pageMatchesAudio()) return;
+  if (!audio || !pageMatchesAudio()) return;
   const second = Math.floor(audio.currentTime);
-  if (second === lastWrittenSecond) return;
+  if (!Number.isFinite(second) || second < 0 || second === lastWrittenSecond) return;
   lastWrittenSecond = second;
   const url = new URL(location.href);
+  // Na starcie nagrania adres zostaje czysty; `?t=0` dopisujemy tylko wtedy, gdy już jest.
+  if (second === 0 && !url.searchParams.has('t')) return;
   url.searchParams.set('t', String(second));
   history.replaceState(null, '', url);
 };
@@ -128,28 +132,6 @@ const applyTimeLink = () => {
   };
   if (audio.readyState >= 1) seek();
   else audio.addEventListener('loadedmetadata', seek, { once: true });
-};
-
-const setupCopyLink = () => {
-  const bar = document.querySelector('[data-audio-bar]');
-  const button = bar?.querySelector('[data-copy-link]');
-  if (!button || button.dataset.bound === 'true') return;
-  button.dataset.bound = 'true';
-  button.addEventListener('click', async () => {
-    const url = new URL(location.href);
-    if (audio && pageMatchesAudio()) url.searchParams.set('t', String(Math.floor(audio.currentTime)));
-    try {
-      await navigator.clipboard.writeText(url.toString());
-      button.dataset.state = 'copied';
-      button.setAttribute('aria-label', 'Link skopiowany');
-      setTimeout(() => {
-        delete button.dataset.state;
-        button.setAttribute('aria-label', 'Skopiuj link do tego miejsca');
-      }, 2000);
-    } catch {
-      button.setAttribute('aria-label', 'Nie udało się skopiować linku');
-    }
-  });
 };
 
 const seekToRatio = (ratio) => {
@@ -219,8 +201,6 @@ const setupBar = () => {
     });
   }
 
-  setupCopyLink();
-
   if (audio) {
     for (const event of ['timeupdate', 'durationchange', 'loadedmetadata', 'play', 'pause', 'seeked', 'ended']) {
       audio.addEventListener(event, syncProgress);
@@ -264,16 +244,21 @@ const syncSpans = () => {
     }
     return;
   }
-  const active = audio.paused ? [] : activeSpans(audio.currentTime);
-  const playingTrack = active.find((span) => span.kind === 'track');
+  // Pozycję pokazujemy także po pauzie i po wejściu z `?t=`, ale nie na starcie od zera:
+  // wtedy nie wybrano jeszcze żadnego miejsca.
+  const active = audio.currentTime > 0 ? activeSpans(audio.currentTime) : [];
+  const playing = !audio.paused;
+  const playingTrack = playing ? active.find((span) => span.kind === 'track') : null;
   if (playingTrack) {
     setNowPlaying(playingTrack.element.dataset.trackLabel);
-  } else if (active.length > 0) {
+  } else if (playing && active.length > 0) {
     // Wejścia numerujemy po kolei: pełna nazwa wątku nie zmieści się w pasku,
     // a „Wejście 7" wystarcza, żeby wiedzieć, co leci.
     const span = active[0];
     const order = spans.filter((item) => item.kind !== 'track' && item.element.compareDocumentPosition(span.element) & Node.DOCUMENT_POSITION_FOLLOWING).length;
     setNowPlaying(`Wejście ${order + 1}`);
+  } else {
+    setNowPlaying('');
   }
   for (const span of spans) {
     const isActive = span.kind === 'topic-group'
@@ -282,7 +267,8 @@ const syncSpans = () => {
     span.element.classList.toggle('is-active', isActive);
     if (isActive) span.element.setAttribute('aria-current', 'true');
     else span.element.removeAttribute('aria-current');
-    setPlayingIcon(span.element.querySelector('.track-play'), isActive);
+    // Ikona pauzy tylko wtedy, gdy naprawdę gra — po deeplinku wiersz jest tylko wskazany.
+    setPlayingIcon(span.element.querySelector('.track-play'), isActive && playing);
   }
 };
 
@@ -552,7 +538,25 @@ const initPage = () => {
 
   applyDeepLink();
   applyTimeLink();
+  applyEntriesLink();
   syncSpans();
+};
+
+/** Przełącznik wejść jest stanem strony, więc trafia do adresu jako `?wejscia=0`.
+ * Dzięki temu skopiowany adres odtwarza to, co widzi nadawca. */
+const applyEntriesLink = () => {
+  const toggle = document.querySelector('#show-entries');
+  if (!toggle) return;
+  const value = new URLSearchParams(location.search).get('wejscia');
+  if (value !== null) toggle.checked = value !== '0';
+  if (toggle.dataset.bound === 'true') return;
+  toggle.dataset.bound = 'true';
+  toggle.addEventListener('change', () => {
+    const url = new URL(location.href);
+    if (toggle.checked) url.searchParams.delete('wejscia');
+    else url.searchParams.set('wejscia', '0');
+    history.replaceState(null, '', url);
+  });
 };
 
 initPage();
