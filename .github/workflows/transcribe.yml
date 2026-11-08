@@ -172,6 +172,9 @@ jobs:
       - name: Przelicz czasy tematów
         run: node scripts/snap-topics.mjs
 
+      - name: Przytnij końce utworów do początku mowy
+        run: node scripts/snap-boundaries.mjs
+
       - run: npm ci
       - run: npm run check
 
