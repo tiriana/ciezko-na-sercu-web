@@ -31,9 +31,12 @@ if (wanted.length > 0) {
 }
 if (limit > 0) episodes = episodes.slice(0, limit);
 
-// Jeden job na ~45 min audio: przy 4 wątkach w Actions odcinek 2-godzinny nie zmieściłby
-// się w limicie 6 h, a krótkie kawałki dają przewidywalny czas.
+// Jeden job na 45 min audio: przy 4 wątkach w Actions odcinek 2-godzinny nie zmieściłby
+// się w limicie 6 h, a krótkie kawałki dają przewidywalny czas. Każdy odcinek ma co
+// najmniej 1:55, więc ostatni kawałek zawsze tniemy pełną długością — ffmpeg kończy
+// na końcu pliku, więc nie płacimy za nieistniejące audio.
 const CHUNK_SEC = 2700;
+const MIN_EPISODE_SEC = 115 * 60;
 
 const durationOf = (episode) => {
   const transcript = new URL(`../data/transcripts/${episode.id}.json`, import.meta.url);
@@ -44,17 +47,16 @@ const durationOf = (episode) => {
 
 const matrix = [];
 for (const episode of episodes) {
-  const duration = durationOf(episode);
-  const parts = duration > 0 ? Math.ceil(duration / CHUNK_SEC) : 1;
+  const duration = Math.max(durationOf(episode), MIN_EPISODE_SEC);
+  const parts = Math.ceil(duration / CHUNK_SEC);
   for (let part = 0; part < parts; part += 1) {
-    const start = part * CHUNK_SEC;
     matrix.push({
       id: episode.id,
       slug: episode.slug,
       audioUrl: episode.audioUrl,
       part,
-      start,
-      length: duration > 0 ? Math.min(CHUNK_SEC, Math.ceil(duration - start)) : 0,
+      start: part * CHUNK_SEC,
+      length: CHUNK_SEC,
     });
   }
 }
