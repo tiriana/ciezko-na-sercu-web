@@ -1,3 +1,9 @@
+## [1.0.11](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.10...v1.0.11) (2026-11-08)
+
+### Bug Fixes
+
+* lista na stronie tagu ma szerokość treści, bez wewnętrznego przewijania ([0c900db](https://github.com/tiriana/ciezko-na-sercu-web/commit/0c900dbc1cfaee858abaeb93830c55ac938f8f87))
+
 ## [1.0.10](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.9...v1.0.10) (2026-11-08)
 
 ### Bug Fixes
