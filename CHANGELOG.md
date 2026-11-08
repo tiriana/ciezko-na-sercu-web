@@ -1,3 +1,9 @@
+## [1.7.4](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.3...v1.7.4) (2026-11-08)
+
+### Bug Fixes
+
+* usunięcie onboarding z renovate.json (opcja tylko globalna) ([f3223a8](https://github.com/tiriana/ciezko-na-sercu-web/commit/f3223a89bfddb976179d1880f5d7cd50b91aa8ac))
+
 ## [1.7.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.2...v1.7.3) (2026-11-08)
 
 ### Bug Fixes
