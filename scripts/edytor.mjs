@@ -6,6 +6,7 @@
  * Edytuje wyłącznie warstwę poprawek, więc kolejny import z taggera niczego nie kasuje.
  */
 import { createServer } from 'node:http';
+import { spawn } from 'node:child_process';
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -13,6 +14,10 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data');
 const PORT = Number(process.env.PORT ?? 4330);
+const CACHE = join(ROOT, '.cache');
+const PEAKS = join(CACHE, 'peaks');
+const PEAKS_PER_SEC = 100; // 1 słupek = 10 ms
+const SAMPLE_RATE = 2000; // z tego redukujemy do PEAKS_PER_SEC (max z 20 próbek)
 
 const readJson = async (path, fallback) => {
   try {
@@ -182,6 +187,78 @@ const readBody = (req) =>
     req.on('error', reject);
   });
 
+/** Szczyty głośności do waveformu: ffmpeg czyta nagranie strumieniem z URL (range
+ * requests), więc plik na dysku nie jest potrzebny. Wynik leży w `.cache/peaks`. */
+const peaksInFlight = new Map();
+
+const computePeaks = (audioUrl) =>
+  new Promise((resolve, reject) => {
+    const ffmpeg = spawn('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-i', audioUrl, '-ac', '1', '-ar', String(SAMPLE_RATE), '-f', 's16le', '-']);
+    const peaks = [];
+    const perBucket = SAMPLE_RATE / PEAKS_PER_SEC; // 20 próbek = 10 ms
+    let peak = 0;
+    let samples = 0;
+    let leftover = Buffer.alloc(0);
+    let errorText = '';
+
+    // Bierzemy maksimum z próbek, bo przeliczanie ich na jeden słupek uśrednianiem
+    // zgubiłoby transjenty i waveform kłamałby o cichych fragmentach.
+    const take = (buffer) => {
+      for (let offset = 0; offset + 2 <= buffer.length; offset += 2) {
+        const value = Math.abs(buffer.readInt16LE(offset)) / 32768;
+        if (value > peak) peak = value;
+        samples += 1;
+        if (samples === perBucket) {
+          peaks.push(Math.min(255, Math.round(peak * 255)));
+          peak = 0;
+          samples = 0;
+        }
+      }
+    };
+
+    const onData = (chunk) => {
+      const buffer = leftover.length > 0 ? Buffer.concat([leftover, chunk]) : chunk;
+      const usable = buffer.length - (buffer.length % 2);
+      leftover = buffer.subarray(usable);
+      take(buffer.subarray(0, usable));
+    };
+
+    ffmpeg.stdout.on('data', onData);
+    ffmpeg.stderr.on('data', (chunk) => {
+      errorText += chunk.toString();
+      if (errorText.length > 4000) errorText = errorText.slice(-4000);
+    });
+    ffmpeg.on('error', (error) => reject(error.code === 'ENOENT' ? new Error('brak ffmpeg w PATH') : error));
+    ffmpeg.on('close', (code) => {
+      if (code !== 0) return reject(new Error(errorText.trim() || `ffmpeg zakończył się kodem ${code}`));
+      if (peaks.length === 0) return reject(new Error('ffmpeg nie zwrócił dźwięku'));
+      // Audycja jest zmiksowana cicho (szczyty ~-8 dBFS), więc bez normalizacji waveform
+      // byłby płaski. Skalujemy do najgłośniejszego miejsca i podnosimy wykładnikiem,
+      // bo słupek ma pokazywać głośność czytelnie, nie wiernie w skali liniowej.
+      const loudest = peaks.reduce((max, value) => (value > max ? value : max), 1);
+      resolve(Uint8Array.from(peaks, (value) => Math.round(255 * (value / loudest) ** 0.6)));
+    });
+  });
+
+const peaksFile = (id) => join(PEAKS, `${id}.bin`);
+
+const loadPeaks = async (id, audioUrl) => {
+  try {
+    const cached = await readFile(peaksFile(id));
+    if (cached.length > 0) return cached;
+  } catch {}
+  const running = peaksInFlight.get(id);
+  if (running) return running;
+  const job = (async () => {
+    const data = await computePeaks(audioUrl);
+    await mkdir(PEAKS, { recursive: true });
+    await writeFile(peaksFile(id), data);
+    return data;
+  })().finally(() => peaksInFlight.delete(id));
+  peaksInFlight.set(id, job);
+  return job;
+};
+
 const server = createServer(async (req, res) => {
   const url = new URL(req.url ?? '/', `http://localhost:${PORT}`);
 
@@ -190,6 +267,27 @@ const server = createServer(async (req, res) => {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
       res.end(await readFile(join(ROOT, 'scripts', 'edytor.html'), 'utf8'));
       return;
+    }
+
+    if (url.pathname === '/api/peaks') {
+      const id = url.searchParams.get('id');
+      const catalog = await loadCatalog();
+      const entry = catalog.episodes.find((item) => item.id === id);
+      if (!entry) return json(res, 404, { error: 'nie ma takiego odcinka' });
+      if (!entry.audioUrl) return json(res, 503, { error: 'katalog nie ma adresu nagrania dla tego odcinka' });
+      try {
+        const data = await loadPeaks(id, entry.audioUrl);
+        res.writeHead(200, {
+          'content-type': 'application/octet-stream',
+          'content-length': data.length,
+          'x-peaks-per-second': String(PEAKS_PER_SEC),
+          'cache-control': 'no-store',
+        });
+        res.end(data);
+        return;
+      } catch (error) {
+        return json(res, 503, { error: `nie udało się policzyć waveformu: ${error.message}` });
+      }
     }
 
     if (url.pathname === '/api/tags') {
