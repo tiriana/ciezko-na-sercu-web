@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.1.1...v1.1.2) (2026-11-08)
+
+### Bug Fixes
+
+* plan transkrypcji zakłada minimum 1:55 na odcinek, ostatni kawałek pełnej długości ([e95aa4f](https://github.com/tiriana/ciezko-na-sercu-web/commit/e95aa4ff1999edb751b322bca1599a559be10b84))
+
 ## [1.1.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.1.0...v1.1.1) (2026-11-08)
 
 ### Bug Fixes
