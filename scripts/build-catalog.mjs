@@ -35,34 +35,38 @@ export function sourceUrlFor(episode) {
   return `${ODCINEK_URL}/${slugify(episode.title)},${uuid[1]}`;
 }
 
+async function previousCatalog(output) {
+  try {
+    return JSON.parse(await readFile(resolve(output), 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
 // Sluga z poprzedniego katalogu zostają w historii, żeby stare adresy dalej działały
 // po poprawce tytułu. Bez tego każda zmiana tytułu zabijałaby linki do odcinka.
-async function previousSlugs(output) {
-  try {
-    const catalog = JSON.parse(await readFile(resolve(output), 'utf8'));
-    const map = new Map();
-    for (const episode of catalog.episodes) {
-      // Katalogi sprzed zmiany kluczy miały id = slug; uuid z audioUrl łączy oba formaty.
-      const id = episodeId({ mp3Url: episode.mp3Url ?? episode.audioUrl }) ?? episode.id;
-      map.set(id, episode.slugs ?? [episode.slug ?? episode.id]);
-    }
-    return map;
-  } catch {
-    return new Map();
+function slugsFrom(catalog) {
+  const map = new Map();
+  for (const episode of catalog?.episodes ?? []) {
+    // Katalogi sprzed zmiany kluczy miały id = slug; uuid z audioUrl łączy oba formaty.
+    const id = episodeId({ mp3Url: episode.mp3Url ?? episode.audioUrl }) ?? episode.id;
+    map.set(id, episode.slugs ?? [episode.slug ?? episode.id]);
   }
+  return map;
 }
 
 const [input, output = 'data/catalog.json'] = process.argv.slice(2);
 if (!input) {
-  console.error('usage: node scripts/build-catalog.mjs <downloader-episodes.json> [out]');
+  console.error('usage: node scripts/build-catalog.mjs <episodes.json> [out]');
   process.exit(1);
 }
 
 const downloaded = JSON.parse(await readFile(input, 'utf8'));
-const known = await previousSlugs(output);
+const previous = await previousCatalog(output);
+const known = slugsFrom(previous);
 
-// Downloader zna tylko tytuł techniczny („... godz. 0005”). Tytuł z serwisu Polskiego
-// Radia trzymamy osobno, żeby odświeżenie katalogu go nie nadpisywało.
+// Serwis podaje tytuł techniczny („... godz. 0005”). Tytuł redakcyjny trzymamy osobno,
+// żeby odświeżenie katalogu go nie nadpisywało.
 async function catalogTitles() {
   try {
     return JSON.parse(await readFile(new URL('../data/catalog-titles.json', import.meta.url), 'utf8')).titles ?? {};
@@ -106,9 +110,13 @@ for (const episode of episodes) {
   }
 }
 
+// Znacznik czasu zmienia się tylko wtedy, gdy zmienił się katalog — inaczej każde
+// odświeżenie commitowałoby samą datę i uruchamiało deploy bez powodu.
+const unchanged = previous && JSON.stringify(previous.episodes) === JSON.stringify(episodes);
+
 const catalog = {
   version: 1,
-  generatedAt: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
+  generatedAt: unchanged ? previous.generatedAt : new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
   program: PROGRAM,
   episodes,
 };
