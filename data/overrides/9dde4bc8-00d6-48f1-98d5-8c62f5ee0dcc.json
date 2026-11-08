@@ -6,6 +6,25 @@
       "title": "Love Me Forever",
       "start": 1869,
       "durationSec": 323
+    },
+    {
+      "artist": "Black Sabbath",
+      "title": "Changes",
+      "album": "Black Sabbath, Vol. 4",
+      "newArtist": "Black Sabbath",
+      "newTitle": "Changes",
+      "newAlbum": "Black Sabbath, Vol. 4",
+      "start": 15.77,
+      "durationSec": 281,
+      "end": 293.48
+    }
+  ],
+  "topics": [
+    {
+      "time": 293.32,
+      "label": "Pamięć o zmarłych artystach metalowych – Peter Steele, Ronnie Dio, Eddie Van Halen, Lemmy i inni",
+      "start": 293.48,
+      "newLabel": "Pamięć o zmarłych artystach metalowych – Peter Steele, Ronnie Dio, Eddie Van Halen, Lemmy i inni"
     }
   ],
   "addTracks": [
@@ -13,7 +32,12 @@
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 6.7,
-      "durationSec": 8.06
+      "durationSec": 8.06,
+      "end": 15.77
     }
-  ]
+  ],
+  "addTopics": [],
+  "credits": {
+    "rename": {}
+  }
 }
