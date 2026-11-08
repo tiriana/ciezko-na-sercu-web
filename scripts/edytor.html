@@ -256,7 +256,18 @@
         opacity: 0.5;
         pointer-events: none;
       }
-      .wave-playhead.is-pinned { opacity: 0.85; }
+      /* Kreska doszła do krawędzi okna: zostaje na niej i pokazuje, w którą stronę
+         odtwarzanie uciekło — inaczej wygląda jak zwykłe obramowanie panelu. */
+      .wave-playhead.is-pinned { opacity: 1; background: var(--accent); }
+      .wave-playhead.is-pinned::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        border: 4px solid transparent;
+      }
+      .wave-playhead.is-pinned-right::after { left: 2px; border-left-color: var(--accent); border-right-width: 0; }
+      .wave-playhead.is-pinned-left::after { right: 2px; border-right-color: var(--accent); border-left-width: 0; }
       .wave-status {
         position: absolute;
         inset: 0;
@@ -1208,6 +1219,8 @@
         markerNodes.clear();
       };
 
+      const PIN_INSET = 8;
+
       const syncPlayhead = () => {
         const node = $('wave-playhead');
         const width = stageEl().clientWidth;
@@ -1219,10 +1232,16 @@
         // Okno się nie przesuwa w trakcie odtwarzania: kiedy kursor wyjeżdża za krawędź,
         // kreska zatrzymuje się na niej, a nie znika ani nie ciągnie widoku za sobą.
         const ratio = (time - wave.start) / wave.span;
-        const x = ratio < 0 ? 0 : ratio > 1 ? width - 1 : ratio * width;
+        const pinnedLeft = ratio < 0;
+        const pinnedRight = ratio > 1;
+        // Przy krawędzi kreska odsuwa się o szerokość strzałki, bo na samej krawędzi
+        // zlewałaby się z obramowaniem panelu.
+        const x = pinnedLeft ? PIN_INSET : pinnedRight ? width - PIN_INSET : ratio * width;
         node.hidden = false;
         node.style.left = `${x}px`;
-        node.classList.toggle('is-pinned', ratio < 0 || ratio > 1);
+        node.classList.toggle('is-pinned', pinnedLeft || pinnedRight);
+        node.classList.toggle('is-pinned-left', pinnedLeft);
+        node.classList.toggle('is-pinned-right', pinnedRight);
       };
 
       const renderWave = () => {
@@ -1582,22 +1601,31 @@
 
       // Ctrl/Cmd+S zapisuje wszędzie, Ctrl/Cmd+Z cofa tylko wtedy, gdy fokus nie jest
       // w polu tekstowym — tam natywne cofanie przeglądarki ma pierwszeństwo.
-      document.addEventListener('keydown', (event) => {
-        if (!event.ctrlKey && !event.metaKey) return;
-        const key = event.key.toLowerCase();
-        if (key === 's') {
-          if (!state.episode) return;
-          event.preventDefault();
-          $('save').click();
-          return;
-        }
-        if (key === 'z' && !event.shiftKey) {
-          if (event.target.closest?.('input, textarea, [contenteditable=""], [contenteditable="true"]')) return;
-          if (undoStack.length === 0) return;
-          event.preventDefault();
-          undoEdit();
-        }
-      });
+      // Faza przechwytywania i `code` zamiast `key`: skrót nie może zginąć w żadnym
+      // elemencie, a układ klawiatury nie ma znaczenia.
+      document.addEventListener(
+        'keydown',
+        (event) => {
+          if (!event.ctrlKey && !event.metaKey) return;
+          const key = event.code === 'KeyS' ? 's' : event.code === 'KeyZ' ? 'z' : '';
+          if (key === 's') {
+            event.preventDefault();
+            if (!state.episode) {
+              $('status').textContent = 'najpierw otwórz odcinek';
+              return;
+            }
+            $('save').click();
+            return;
+          }
+          if (key === 'z' && !event.shiftKey) {
+            if (event.target.closest?.('input, textarea, [contenteditable=""], [contenteditable="true"]')) return;
+            if (undoStack.length === 0) return;
+            event.preventDefault();
+            undoEdit();
+          }
+        },
+        true
+      );
 
       const load = async () => {
         const response = await fetch('/api/episodes');

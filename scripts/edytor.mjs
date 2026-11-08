@@ -266,7 +266,8 @@ const server = createServer(async (req, res) => {
 
   try {
     if (url.pathname === '/') {
-      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+      // Bez tego przeglądarka trzyma starą wersję edytora i nowe skróty „nie działają”.
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       res.end(await readFile(join(ROOT, 'scripts', 'edytor.html'), 'utf8'));
       return;
     }
