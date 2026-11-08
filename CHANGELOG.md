@@ -1,3 +1,9 @@
+## [1.8.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.8.0...v1.8.1) (2026-11-08)
+
+### Bug Fixes
+
+* tytuł odcinka z serwisu nie ginie przy odświeżeniu katalogu ([51afb71](https://github.com/tiriana/ciezko-na-sercu-web/commit/51afb71ff8537eba0caa9eab5fe47207ee915f0a))
+
 ## [1.8.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.7...v1.8.0) (2026-11-08)
 
 ### Features
