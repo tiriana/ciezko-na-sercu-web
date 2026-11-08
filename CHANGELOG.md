@@ -1,3 +1,9 @@
+## [1.10.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.9.0...v1.10.0) (2026-11-08)
+
+### Features
+
+* katalog odcinków prosto ze strony audycji, transkrypcja strumieniuje audio z URL ([9750200](https://github.com/tiriana/ciezko-na-sercu-web/commit/975020057411cfc1a09af6f79cdb944858009be7))
+
 ## [1.9.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.8.2...v1.9.0) (2026-11-08)
 
 ### Features
