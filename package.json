@@ -1,6 +1,6 @@
 {
   "name": "ciezko-na-sercu-web",
-  "version": "1.14.0",
+  "version": "1.16.2",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,12 +11,13 @@
     "import:tagger": "node scripts/import-tagger.mjs",
     "check": "node scripts/check-data.mjs",
     "queue": "node scripts/queue.mjs",
-    "edytor": "node scripts/edytor.mjs",
+    "edytor": "node scripts/edytor-run.mjs",
     "test:e2e": "node scripts/e2e-tagi.mjs",
     "release": "semantic-release",
     "transcribe": "node scripts/transcribe.mjs",
     "episodes": "node scripts/fetch-episodes.mjs",
-    "boundaries": "node scripts/snap-boundaries.mjs"
+    "boundaries": "node scripts/snap-boundaries.mjs",
+    "edytor:bez-nadzorcy": "node --watch scripts/edytor.mjs"
   },
   "dependencies": {
     "astro": "^7.4.7",

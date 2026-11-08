@@ -8,7 +8,8 @@
 import { createServer } from 'node:http';
 import { spawn } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, rename, readdir, mkdir, stat } from 'node:fs/promises';
+import { watch } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -23,14 +24,25 @@ const SAMPLE_RATE = 2000; // z tego redukujemy do PEAKS_PER_SEC (max z 20 próbe
 const readJson = async (path, fallback) => {
   try {
     return JSON.parse(await readFile(path, 'utf8'));
-  } catch {
+  } catch (error) {
+    // Uszkodzony plik (np. zapis przerwany restartem) nie może udawać „brak danych”,
+    // bo następny zapis nadpisałby go pustką. Zostawiamy kopię i mówimy o tym głośno.
+    if (error.code !== 'ENOENT') {
+      const copy = `${path}.uszkodzony`;
+      await writeFile(copy, `${await readFile(path, 'utf8')}\n`).catch(() => {});
+      console.error(`Nie da się odczytać ${path}: ${error.message} — kopia w ${copy}`);
+    }
     return fallback;
   }
 };
 
+// Zapis przez plik tymczasowy: przerwany restart zostawia albo starą, albo nową wersję,
+// nigdy uciętą w połowie.
 const writeJson = async (path, value) => {
   await mkdir(dirname(path), { recursive: true });
-  await writeFile(path, `${JSON.stringify(value, null, 2)}\n`);
+  const temp = `${path}.tmp-${process.pid}`;
+  await writeFile(temp, `${JSON.stringify(value, null, 2)}\n`);
+  await rename(temp, path);
 };
 
 const normalize = (value) => (value ?? '').normalize('NFC').trim().toLowerCase();
@@ -150,6 +162,9 @@ const applyOverrides = (episode, override) => {
     if (!track) continue;
     if (fix.start !== undefined) track.start = fix.start;
     if (fix.durationSec !== undefined) track.durationSec = fix.durationSec;
+    // `end` podmienia granicę utworu, gdy redakcja przecięła go ręcznie (to samo pole
+    // czyta src/lib/data.ts); bez tego edytor po przeładowaniu liczyłby koniec z durationSec.
+    if (fix.end !== undefined) track.end = fix.end;
     if (fix.newArtist !== undefined) track.artist = fix.newArtist;
     if (fix.newTitle !== undefined) track.title = fix.newTitle;
     if (fix.newAlbum !== undefined) track.album = fix.newAlbum;
@@ -157,13 +172,19 @@ const applyOverrides = (episode, override) => {
   result.tracks = result.tracks.filter(
     (track) =>
       !(override?.tracks ?? []).some(
-        (fix) => fix.hide && same(track.artist, fix.artist) && same(track.title, fix.title) && same(track.album, fix.album)
+        (fix) =>
+          fix.hide &&
+          same(track.artist, fix.artist) &&
+          same(track.title, fix.title) &&
+          same(track.album, fix.album) &&
+          (fix.start === undefined || Math.abs(track.start - fix.start) < 0.01)
       )
   );
   for (const fix of override?.topics ?? []) {
     const topic = result.topics.find((candidate) => candidate.start === fix.time && same(candidate.label, fix.label));
     if (!topic) continue;
     if (fix.start !== undefined) topic.start = fix.start;
+    if (fix.end !== undefined) topic.end = fix.end;
     if (fix.newLabel) topic.label = fix.newLabel;
   }
   result.topics = result.topics.filter(
@@ -172,9 +193,97 @@ const applyOverrides = (episode, override) => {
   return result;
 };
 
+// Podgląd pliku edytora: przeglądarka dostaje zdarzenie SSE i odświeża się sama,
+// zamiast czekać, aż ktoś zgasi serwer. Restart procesu (node --watch) nie psuje
+// niczego, bo klienci to zwykłe odpowiedzi HTTP — po restarcie EventSource łączy się
+// ponownie i dostaje świeży stan pliku.
+const HTML_PATH = join(ROOT, 'scripts', 'edytor.html');
+const events = new Set();
+let htmlMtime = 0;
+
+const readHtmlMtime = async () => {
+  try {
+    htmlMtime = (await stat(HTML_PATH)).mtimeMs;
+  } catch {}
+  return htmlMtime;
+};
+
+const broadcastChange = () => {
+  const payload = `event: change\ndata: ${JSON.stringify({ mtime: htmlMtime })}\n\n`;
+  for (const client of events) {
+    try {
+      client.write(payload);
+    } catch {
+      events.delete(client);
+    }
+  }
+};
+
+let watchTimer = 0;
+const watcher = watch(dirname(HTML_PATH), { persistent: false }, (_event, filename) => {
+  // Zmiana przez zapis atomowy podmienia plik na nowy i wywołuje rename — stąd filtr
+  // po nazwie zamiast po typie zdarzenia.
+  if (filename && filename !== 'edytor.html') return;
+  clearTimeout(watchTimer);
+  watchTimer = setTimeout(async () => {
+    await readHtmlMtime();
+    broadcastChange();
+  }, 150);
+});
+watcher.on('error', (error) => console.error('podgląd edytora:', error.message));
+readHtmlMtime();
+
+// Puls co 25 s trzyma połączenie przy życiu i usuwa te, które już nie odpowiadają.
+const heartbeat = setInterval(() => {
+  for (const client of events) {
+    try {
+      client.write(': puls\n\n');
+    } catch {
+      events.delete(client);
+    }
+  }
+}, 25_000);
+heartbeat.unref();
+
+// ——— Stan „ok” znaczników ———
+// To dorobek redakcji, nie cache: leży w `data/`, więc trafia do commita i jedzie
+// z projektem na inną maszynę. Klucze są po etykietach, więc zmiana etykiety
+// osieroca znacznik — świadomy koszt czytelnego pliku.
+const REVIEWED_PATH = join(ROOT, 'data', 'reviewed.json');
+let reviewedQueue = Promise.resolve();
+
+const readReviewed = () => readJson(REVIEWED_PATH, { version: 1, episodes: {} });
+
+// Zapis jednego znacznika to odczyt-modyfikacja-zapis, więc kolejka trzyma spójność,
+// gdy dwie karty klikają jednocześnie.
+const updateReviewed = (mutate) => {
+  const job = reviewedQueue.then(async () => {
+    const data = await readReviewed();
+    data.version = 1;
+    data.episodes = data.episodes ?? {};
+    const result = mutate(data);
+    await mkdir(dirname(REVIEWED_PATH), { recursive: true });
+    await writeFile(REVIEWED_PATH, `${JSON.stringify(data, null, 2)}\n`);
+    return result;
+  });
+  reviewedQueue = job.catch(() => {});
+  return job;
+};
+
+// Odpowiedź może już być zamknięta (klient zerwał, albo nagłówek poszedł wcześniej) —
+// wtedy writeHead rzuca ERR_HTTP_HEADERS_SENT i wywracał cały proces.
 const json = (res, status, value) => {
-  res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' });
-  res.end(JSON.stringify(value));
+  if (res.headersSent || res.writableEnded) {
+    res.destroy();
+    return;
+  }
+  try {
+    res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' });
+    res.end(JSON.stringify(value));
+  } catch (error) {
+    console.error('odpowiedź:', error.message);
+    res.destroy();
+  }
 };
 
 const readBody = (req) =>
@@ -224,6 +333,13 @@ const computePeaks = (audioUrl) =>
       take(buffer.subarray(0, usable));
     };
 
+    // Zerwany strumień (ubity ffmpeg, przerwane połączenie) inaczej kończył się
+    // nieobsłużonym zdarzeniem 'error' i wywalał serwer.
+    ffmpeg.stdout.on('error', (error) => reject(error));
+    ffmpeg.stderr.on('error', () => {});
+    ffmpeg.on('exit', (code, signal) => {
+      if (signal) reject(new Error(`ffmpeg przerwany (${signal})`));
+    });
     ffmpeg.stdout.on('data', onData);
     ffmpeg.stderr.on('data', (chunk) => {
       errorText += chunk.toString();
@@ -269,6 +385,56 @@ const server = createServer(async (req, res) => {
       // Bez tego przeglądarka trzyma starą wersję edytora i nowe skróty „nie działają”.
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       res.end(await readFile(join(ROOT, 'scripts', 'edytor.html'), 'utf8'));
+      return;
+    }
+
+    // Szybka sonda dla karty, która straciła SSE: lekka, bez czytania danych.
+    if (url.pathname === '/api/health') {
+      return json(res, 200, { ok: true, uptime: Math.round(process.uptime()), pid: process.pid });
+    }
+
+    if (url.pathname === '/api/reviewed' && req.method === 'GET') {
+      await reviewedQueue;
+      const data = await readReviewed();
+      const id = url.searchParams.get('id');
+      if (!id) return json(res, 200, { version: 1, episodes: data.episodes ?? {} });
+      return json(res, 200, { version: 1, id, reviewed: data.episodes?.[id] ?? {} });
+    }
+
+    if (url.pathname === '/api/reviewed' && req.method === 'POST') {
+      const payload = JSON.parse(await readBody(req));
+      const id = String(payload.id ?? '');
+      if (!id) return json(res, 400, { error: 'brak id odcinka' });
+      const markers = payload.markers && typeof payload.markers === 'object' ? payload.markers : null;
+      const key = String(payload.key ?? '');
+      if (!markers && !key) return json(res, 400, { error: 'brak klucza znacznika' });
+      const reviewed = await updateReviewed((data) => {
+        // `markers` zastępuje cały zestaw odcinka (cofnięcie), `key` zmienia jeden wpis.
+        const next = markers
+          ? Object.fromEntries(Object.entries(markers).filter(([, value]) => value).map(([name]) => [name, true]))
+          : { ...(data.episodes[id] ?? {}) };
+        if (!markers) {
+          if (payload.reviewed) next[key] = true;
+          else delete next[key];
+        }
+        if (Object.keys(next).length > 0) data.episodes[id] = next;
+        else delete data.episodes[id];
+        return next;
+      });
+      return json(res, 200, { ok: true, id, reviewed });
+    }
+
+    if (url.pathname === '/api/events') {
+      res.writeHead(200, {
+        'content-type': 'text/event-stream; charset=utf-8',
+        'cache-control': 'no-store',
+        connection: 'keep-alive',
+      });
+      res.write('retry: 1000\n\n');
+      res.write(`event: hello\ndata: ${JSON.stringify({ mtime: htmlMtime })}\n\n`);
+      events.add(res);
+      // Bez tego zamknięta karta zostawia wpis i każde odświeżenie mnoży klientów.
+      res.on('close', () => events.delete(res));
       return;
     }
 
@@ -401,15 +567,21 @@ const server = createServer(async (req, res) => {
         normalize(left.artist) === normalize(right.artist) &&
         normalize(left.title) === normalize(right.title) &&
         normalize(left.album ?? '') === normalize(right.album ?? '');
+      // Edytor wysyła `null`, gdy pole zostanie wyczyszczone (album bywa `null` już
+      // w danych odcinka), a schemat strony przyjmuje tylko tekst albo brak pola —
+      // bez tego zapis wywalał build.
+      const compact = (fix) => Object.fromEntries(Object.entries(fix).filter(([, value]) => value !== null && value !== undefined));
       const tracks = [...previous.tracks];
-      for (const fix of payload.tracks ?? []) {
+      for (const incoming of payload.tracks ?? []) {
+        const fix = compact(incoming);
         const index = tracks.findIndex((existing) => sameTrack(existing, fix));
         if (index >= 0) tracks[index] = fix;
         else tracks.push(fix);
       }
       const sameTopic = (left, right) => left.time === right.time && normalize(left.label) === normalize(right.label);
       const topics = [...(previous.topics ?? [])];
-      for (const fix of payload.topics ?? []) {
+      for (const incoming of payload.topics ?? []) {
+        const fix = compact(incoming);
         const index = topics.findIndex((existing) => sameTopic(existing, fix));
         if (index >= 0) topics[index] = fix;
         else topics.push(fix);
@@ -418,8 +590,8 @@ const server = createServer(async (req, res) => {
         version: 1,
         tracks,
         topics,
-        addTracks: payload.addTracks ?? previous.addTracks ?? [],
-        addTopics: payload.addTopics ?? previous.addTopics ?? [],
+        addTracks: (payload.addTracks ?? previous.addTracks ?? []).map(compact),
+        addTopics: (payload.addTopics ?? previous.addTopics ?? []).map(compact),
         credits: previous.credits ?? { rename: {} },
       };
       const empty =
@@ -460,7 +632,29 @@ const server = createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => {
-  console.log(`Edytor: http://localhost:${PORT}`);
-  console.log('Zapisuje do data/overrides i data/titles.json — potem: npm run build');
+// Port bywa zajęty przez stary proces, który dopiero się zamyka — zamiast umierać
+// ze stosem, próbujemy jeszcze kilka razy.
+const listen = (attempt = 0) => {
+  server.listen(PORT, () => {
+    console.log(`Edytor: http://localhost:${PORT}`);
+    console.log('Zapisuje do data/overrides i data/titles.json — potem: npm run build');
+  });
+  server.once('error', (error) => {
+    if (error.code === 'EADDRINUSE' && attempt < 10) {
+      console.error(`Port ${PORT} zajęty, czekam ${attempt + 1}/10…`);
+      setTimeout(() => listen(attempt + 1), 1000);
+      return;
+    }
+    console.error(`Serwer nie wystartował: ${error.message}`);
+    process.exit(2);
+  });
+};
+listen();
+
+// Jeden nieudany request nie może gasić edytora w trakcie pracy.
+process.on('uncaughtException', (error) => {
+  console.error('nieobsłużony wyjątek:', error);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('nieobsłużone odrzucenie:', reason);
 });

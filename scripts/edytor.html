@@ -34,13 +34,46 @@
       header h1 { margin: 0; font-size: 15px; }
       header .hint { color: var(--muted); font-size: 12px; }
       .layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: calc(100vh - 45px); }
-      .sidebar { border-right: 1px solid var(--line); background: var(--surface); padding: 12px; }
-      .sidebar input { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; }
-      .list { margin: 10px 0 0; padding: 0; list-style: none; max-height: calc(100vh - 130px); overflow: auto; }
+      /* Lista zajmuje całą wysokość ekranu minus chrome, a własny scrollbar
+         trzyma ją w miejscu podczas pracy przy waveformie. 100dvh, bo na
+         telefonie pasek adresu zmienia 100vh w trakcie przewijania. */
+      .sidebar {
+        position: sticky;
+        /* 16 px = górny padding kolumny treści, żeby krawędzie się zgadzały */
+        top: calc(var(--header-h, 52px) + var(--banner-h, 0px) + 16px);
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        height: calc(100dvh - var(--header-h, 52px) - var(--banner-h, 0px) - 32px);
+        padding: 12px;
+        border-right: 1px solid var(--line);
+        background: var(--surface);
+      }
+      .sidebar input[type="search"] {
+        width: 100%;
+        padding: 7px 9px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        font: inherit;
+        font-size: 12.5px;
+      }
+      .list-count { color: var(--muted); font-size: 11.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+      .list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex: 1 1 auto;
+        min-height: 0;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        scrollbar-width: thin;
+      }
+      .list li + li { margin-top: 2px; }
       .list button {
         display: block;
         width: 100%;
-        padding: 7px 8px;
+        padding: 5px 8px;
         border: 0;
         border-radius: 6px;
         background: none;
@@ -50,7 +83,8 @@
       }
       .list button:hover { background: #f0ece6; }
       .list button[aria-current="true"] { background: #f7e6e9; color: var(--accent); }
-      .list time { display: block; color: var(--muted); font-size: 11.5px; }
+      .list button span { display: block; font-size: 12.5px; line-height: 1.25; }
+      .list time { display: block; color: var(--muted); font-size: 11px; }
       .main { padding: 16px 20px 60px; }
       .empty { color: var(--muted); }
       .player {
@@ -62,7 +96,7 @@
         border-radius: 8px;
         background: var(--surface);
         position: sticky;
-        top: 45px;
+        top: calc(var(--header-h, 52px) + var(--banner-h, 0px));
         z-index: 4;
       }
       .player audio { flex: 1 1 auto; height: 36px; }
@@ -112,6 +146,113 @@
         background: var(--surface);
         box-shadow: 0 -5px 12px rgba(28, 26, 24, 0.05);
       }
+      #editor > .toolbar .health {
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 6px 10px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: #f6f1ea;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      #editor > .toolbar .health[hidden] { display: none; }
+      /* Awaria serwera: pełna szerokość pod nagłówkiem, nie do przeoczenia. */
+      .net-banner {
+        position: sticky;
+        top: var(--header-h, 52px);
+        z-index: 45;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 44px;
+        padding: 6px 16px;
+        background: #b3102c;
+        color: #fffdfb;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        box-shadow: 0 2px 10px rgba(28, 26, 24, 0.28);
+      }
+      .net-banner[hidden] { display: none; }
+      .net-banner .net-text { flex: 1 1 auto; }
+      .net-banner button {
+        flex: 0 0 auto;
+        padding: 5px 12px;
+        border: 1px solid rgba(255, 253, 251, 0.7);
+        border-radius: 5px;
+        background: #fffdfb;
+        color: #b3102c;
+        font: inherit;
+        font-size: 12.5px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .net-banner button:hover { background: #fbe6e9; }
+      .net-banner button:focus-visible { outline: 2px solid #fffdfb; outline-offset: 2px; }
+      @keyframes net-attention {
+        0%, 100% { background-color: #b3102c; }
+        50% { background-color: #e01a3c; }
+      }
+      /* Dwie zmiany tła po 600 ms: jedno krótkie mrugnięcie, nie stroboskop. */
+      .net-banner.is-attention { animation: net-attention 600ms ease-in-out 2; }
+      @media (prefers-reduced-motion: reduce) {
+        .net-banner.is-attention { animation: none; }
+      }
+      #save.is-offline {
+        background: #ded5cb;
+        border-color: #cfc4b8;
+        color: #7a7168;
+        box-shadow: none;
+      }
+      #editor > .toolbar .health[data-state="back"] {
+        border-color: #1f7a4a;
+        background: #e7f4ec;
+        color: #145c36;
+      }
+      .draft-offer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin: 12px 0 4px;
+        padding: 8px 12px;
+        border: 1px solid #d99b00;
+        border-radius: 6px;
+        background: #fdf3dd;
+        color: #7a5a08;
+        font-size: 12.5px;
+      }
+      .draft-offer[hidden] { display: none; }
+      .draft-offer button {
+        padding: 3px 9px;
+        border: 1px solid #d99b00;
+        border-radius: 5px;
+        background: #fffdfb;
+        color: #7a5a08;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .draft-offer button:hover { background: #fbe9c2; }
+      .draft-offer button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+      #editor > .toolbar .reload-prompt {
+        padding: 3px 9px;
+        border: 1px solid #d99b00;
+        border-radius: 5px;
+        background: #fdf3dd;
+        color: #7a5a08;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      #editor > .toolbar .reload-prompt:hover { background: #fbe9c2; color: #7a5a08; border-color: #b88300; }
+      #editor > .toolbar .reload-prompt[hidden] { display: none; }
+      #editor > .toolbar .reload-prompt:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
       .auto-save {
         display: inline-flex;
         align-items: center;
@@ -257,6 +398,125 @@
       .wave-legend i { width: 7px; height: 7px; border-radius: 50%; }
       .wave-legend .dot-start { background: var(--accent); }
       .wave-legend .dot-topic { background: #1f6f6b; }
+      .wave-legend .dot-ok { background: #1f7a4a; }
+      .wave-menu {
+        position: fixed;
+        z-index: 30;
+        min-width: 200px;
+        padding: 4px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+        box-shadow: 0 10px 24px rgba(28, 26, 24, 0.18);
+      }
+      .wave-menu button {
+        display: block;
+        width: 100%;
+        padding: 6px 10px;
+        border: 0;
+        border-radius: 4px;
+        background: none;
+        color: var(--text);
+        text-align: left;
+        font: inherit;
+        font-size: 12.5px;
+        cursor: pointer;
+      }
+      .wave-menu[hidden] { display: none; }
+      .wave-menu button[hidden] { display: none; }
+      .wave-menu button.is-destructive { color: #b3102c; }
+      .wave-menu button.is-destructive:hover,
+      .wave-menu button.is-destructive:focus-visible { background: #fbe6e9; }
+      .wave-edit {
+        position: fixed;
+        z-index: 32;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 300px;
+        max-width: calc(100vw - 16px);
+        max-height: calc(100vh - 32px);
+        overflow-y: auto;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        box-shadow: 0 14px 30px rgba(28, 26, 24, 0.22);
+      }
+      .wave-edit[hidden] { display: none; }
+      .wave-edit h3 {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .wave-edit label { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: var(--muted); }
+      .wave-edit input {
+        width: 100%;
+        padding: 5px 7px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        font: inherit;
+        font-size: 12.5px;
+        color: var(--text);
+      }
+      .wave-edit input:focus { border-color: var(--accent); outline: none; }
+      .wave-edit input.is-invalid { border-color: var(--accent); background: #fbe6e9; }
+      .wave-edit-row { display: flex; gap: 8px; }
+      .wave-edit-row label { flex: 1 1 0; }
+      .wave-edit-error { margin: 0; color: #8d0b1d; font-size: 11.5px; }
+      .wave-edit-warn { margin: 0; color: #7a5a08; font-size: 11.5px; }
+      .wave-edit-error[hidden], .wave-edit-warn[hidden] { display: none; }
+      .wave-edit-actions { display: flex; align-items: center; gap: 8px; margin-top: 2px; }
+      .wave-edit-actions .grow { flex: 1 1 auto; }
+      .wave-edit-actions button {
+        padding: 4px 10px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: #fffdfb;
+        color: var(--text);
+        font: inherit;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .wave-edit-actions button[hidden] { display: none; }
+      .wave-edit-actions button:hover { border-color: var(--accent); color: var(--accent); }
+      .wave-edit-actions button.primary { border-color: var(--accent); background: var(--accent); color: #fffdfb; }
+      .wave-edit-actions button.primary:hover { background: #b00e28; color: #fffdfb; }
+      .wave-edit-hint { color: var(--muted); font-size: 10.5px; }
+      .wave-count { font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .wave-count[hidden] { display: none; }
+      .wave-label {
+        position: fixed;
+        z-index: 31;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 280px;
+        max-width: calc(100vw - 16px);
+        padding: 8px 10px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+        box-shadow: 0 10px 24px rgba(28, 26, 24, 0.18);
+      }
+      .wave-label[hidden] { display: none; }
+      .wave-label label { font-size: 11px; color: var(--muted); }
+      .wave-label input {
+        width: 100%;
+        padding: 5px 7px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        font: inherit;
+        font-size: 12.5px;
+      }
+      .wave-label input:focus { border-color: var(--accent); outline: none; }
+      .wave-label-hint { color: var(--muted); font-size: 10.5px; }
+      .wave-menu button:hover,
+      .wave-menu button:focus-visible { background: #f0ece6; outline: none; }
+      .wave-menu small { display: block; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
       .wave-tools { display: flex; gap: 4px; }
       .wave-tools button {
         min-width: 26px;
@@ -273,7 +533,7 @@
       .wave-tools button:disabled { opacity: 0.4; cursor: default; }
       .wave-stage {
         position: relative;
-        height: 76px;
+        height: clamp(160px, 27vh, 300px);
         background: linear-gradient(#fffdfb, #f8f4ee);
         touch-action: pan-y;
         cursor: crosshair;
@@ -299,10 +559,16 @@
         opacity: 0.85;
       }
       .wave-marker:hover, .wave-marker:focus { opacity: 1; }
+      /* Grubsza kreska rozróżnia ten spod palca, gdy dwie kropki leżą w tym samym pikselu. */
+      .wave-marker:hover .wave-marker-line,
+      .wave-marker:focus .wave-marker-line { width: 2px; margin-left: -1px; }
       .wave-marker.is-topic { color: #1f6f6b; }
-      .wave-marker.is-dense { opacity: 0; pointer-events: none; }
-      .wave-stage:hover .wave-marker.is-dense { opacity: 0.3; }
-      .wave-marker.is-dense:focus { opacity: 1; pointer-events: auto; }
+      /* Nakładające się znaczniki leżą jeden na drugim; o tym, który jest wyżej,
+         decyduje kolejność warstw, a najechanie i fokus zawsze wyciągają swój. */
+      .wave-marker { z-index: 2; }
+      .wave-marker.is-topic { z-index: 1; }
+      .wave-marker.is-reviewed { z-index: 3; }
+      .wave-marker:hover, .wave-marker:focus { z-index: 5; }
       .wave-marker-line {
         position: absolute;
         top: 0;
@@ -315,15 +581,38 @@
       .wave-marker-dot {
         position: absolute;
         left: 50%;
-        top: 1px;
-        width: 8px;
-        height: 8px;
-        margin-left: -4px;
+        top: 0;
+        width: 11px;
+        height: 11px;
+        margin-left: -5.5px;
         border-radius: 50%;
         background: currentColor;
         box-shadow: 0 0 0 2px var(--surface);
       }
-      .wave-marker.is-topic .wave-marker-dot { bottom: 2px; top: auto; width: 7px; height: 7px; margin-left: -3.5px; }
+      .wave-marker.is-topic .wave-marker-dot { bottom: 1px; top: auto; width: 10px; height: 10px; margin-left: -5px; }
+      .wave-marker.is-reviewed .wave-marker-dot {
+        width: 15px;
+        height: 15px;
+        margin-left: -7.5px;
+        background: #1f7a4a;
+        box-shadow: 0 0 0 2px var(--surface);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wave-marker.is-reviewed.is-topic .wave-marker-dot {
+        width: 14px;
+        height: 14px;
+        margin-left: -7px;
+      }
+      .wave-marker.is-reviewed .wave-marker-dot::after {
+        content: "✓";
+        color: #fffdfb;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .wave-marker.is-reviewed .wave-marker-line { opacity: 0.55; }
       .wave-marker:focus { outline: none; }
       .wave-marker:focus .wave-marker-dot { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent); }
       .wave-marker.is-dragging { opacity: 1; }
@@ -384,15 +673,21 @@
 
       @media (max-width: 760px) {
         .layout { grid-template-columns: minmax(0, 1fr); }
-        .sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
-        .list { max-height: 190px; }
+        .sidebar {
+          position: static;
+          height: auto;
+          max-height: 46vh;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
         .main { padding: 12px 12px 60px; }
         #editor > .toolbar { margin: 16px -12px -60px; padding: 10px 12px 12px; }
         #editor table { display: block; overflow-x: auto; }
         .wave-legend { margin-left: 0; }
-        .wave-stage { height: 64px; }
+        .wave-stage { height: 120px; }
         header { position: static; }
-        .player { top: 0; }
+        .net-banner { top: 0; font-size: 13.5px; padding: 6px 12px; }
+        .player { top: var(--banner-h, 0px); }
       }
     </style>
   </head>
@@ -405,6 +700,11 @@
       </nav>
       <span class="hint" id="tab-hint">klik w czas = przewiń, „weź czas” = wpisz pozycję z playera</span>
     </header>
+
+    <aside class="net-banner" id="net-banner" role="alert" hidden>
+      <span class="net-text" id="net-text">serwer nie odpowiada — zmiany nie są zapisywane</span>
+      <button type="button" id="net-retry" title="sprawdź, czy serwer wrócił">spróbuj ponownie</button>
+    </aside>
 
     <div class="view" id="view-tagi" hidden>
       <main class="main tags-main">
@@ -446,8 +746,9 @@
     </div>
 
     <div class="layout" id="view-odcinki">
-      <aside class="sidebar">
-        <input id="filter" type="search" placeholder="Filtruj odcinki…" />
+      <aside class="sidebar" aria-label="Odcinki">
+        <input id="filter" type="search" placeholder="Filtruj odcinki…" aria-label="Filtruj odcinki" />
+        <span class="list-count" id="episodes-count"></span>
         <ul class="list" id="list"></ul>
       </aside>
 
@@ -458,11 +759,22 @@
             <div class="wave-head">
               <span class="wave-name" id="wave-title">Głośność</span>
               <span class="wave-window" id="wave-window">—</span>
+              <span class="wave-count" id="wave-count" hidden></span>
               <span class="wave-legend" aria-hidden="true">
                 <span><i class="dot-start"></i>start utworu</span>
                 <span><i class="dot-topic"></i>wejście</span>
+                <span><i class="dot-ok"></i>ok</span>
               </span>
               <span class="wave-tools">
+                <button
+                  type="button"
+                  id="wave-add"
+                  title="Dodaj wejście w miejscu kursora (Shift+N)"
+                  aria-label="Dodaj wejście w miejscu kursora"
+                  disabled
+                >＋ wejście</button>
+                <button type="button" id="wave-prev" title="Poprzedni znacznik" aria-label="Poprzedni znacznik" disabled>‹</button>
+                <button type="button" id="wave-next" title="Następny znacznik" aria-label="Następny znacznik" disabled>›</button>
                 <button type="button" id="wave-out" title="Oddal" aria-label="Oddal waveform" disabled>−</button>
                 <button type="button" id="wave-in" title="Przybliż" aria-label="Przybliż waveform" disabled>+</button>
                 <button type="button" id="wave-all" disabled>całość</button>
@@ -473,7 +785,7 @@
               id="wave-stage"
               tabindex="0"
               role="group"
-              aria-label="Waveform nagrania: kółko przybliża, strzałki przesuwają okno, klik przewija"
+              aria-label="Waveform nagrania: kółko przybliża, strzałki przesuwają okno, klik przewija, prawy przycisk dodaje wejście"
             >
               <canvas id="wave-canvas" aria-hidden="true"></canvas>
               <div class="wave-markers" id="wave-markers"></div>
@@ -489,7 +801,7 @@
               </div>
             </div>
             <p class="wave-hint">
-              kółko = zoom, tło = przesuń, klik = przewiń bez grania, dwuklik = graj, spacja = graj/pauza; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s); początek tnie poprzedni fragment
+              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń, Shift+Enter = ok; początek tnie poprzedni fragment
             </p>
           </section>
 
@@ -498,6 +810,12 @@
             <audio id="audio" controls preload="none"></audio>
             <button type="button" data-skip="5">+5 s</button>
             <span class="clock" id="clock">0:00</span>
+          </div>
+
+          <div class="draft-offer" id="draft-offer" hidden>
+            <span id="draft-when"></span>
+            <button type="button" id="draft-restore">przywróć</button>
+            <button type="button" id="draft-discard">odrzuć</button>
           </div>
 
           <div class="field">
@@ -543,6 +861,10 @@
           <div class="restore" id="restore"></div>
 
           <div class="toolbar">
+            <div class="health" id="health" data-state="up" role="status" aria-live="assertive" hidden>
+              <span class="health-text" id="health-text"></span>
+              <button type="button" class="health-retry" id="health-retry" hidden>spróbuj ponownie</button>
+            </div>
             <button class="primary" id="save" type="button">Zapisz</button>
             <kbd class="shortcut">Ctrl+S</kbd>
             <label class="auto-save">
@@ -554,6 +876,9 @@
               />
               auto-zapis
             </label>
+            <button type="button" class="reload-prompt" id="reload-prompt" hidden>
+              edytor zmieniony — odśwież
+            </button>
             <span class="save-state" id="status" data-state="clean" role="status" aria-live="polite">
               <span class="save-dot" aria-hidden="true"></span>
               <span class="save-text">brak zmian</span>
@@ -562,6 +887,45 @@
         </div>
       </main>
     </div>
+
+    <div class="wave-menu" id="wave-menu" role="menu" aria-label="Akcje waveformu" hidden>
+      <button type="button" role="menuitem" id="wave-menu-add">
+        <span>Dodaj wejście tutaj</span>
+        <small id="wave-menu-time"></small>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-ok" hidden>
+        <span id="wave-menu-ok-text">Oznacz jako ok</span>
+        <small id="wave-menu-mark"></small>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-edit" hidden>
+        <span>Edytuj…</span>
+        <small id="wave-menu-edit-mark"></small>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-remove" class="is-destructive" hidden>
+        <span>Usuń znacznik</span>
+        <small id="wave-menu-remove-mark"></small>
+      </button>
+    </div>
+
+    <form class="wave-label" id="wave-label" hidden>
+      <label for="wave-label-input">Nazwa nowego wejścia</label>
+      <input id="wave-label-input" type="text" placeholder="Nowe wejście" autocomplete="off" />
+      <span class="wave-label-hint">Enter = zatwierdź, Esc = zostaw bez nazwy</span>
+    </form>
+
+    <form class="wave-edit" id="wave-edit" role="dialog" aria-labelledby="wave-edit-title" hidden>
+      <h3 id="wave-edit-title">Edytuj znacznik</h3>
+      <div id="wave-edit-fields"></div>
+      <p class="wave-edit-error" id="wave-edit-error" role="alert" hidden></p>
+      <p class="wave-edit-warn" id="wave-edit-warn" hidden></p>
+      <div class="wave-edit-actions">
+        <button type="button" id="wave-edit-restore" hidden>Przywróć</button>
+        <span class="grow"></span>
+        <button type="button" id="wave-edit-cancel">Anuluj</button>
+        <button type="submit" class="primary" id="wave-edit-save">Zapisz</button>
+      </div>
+      <span class="wave-edit-hint">Tab = następne pole, Enter = zapisz, Esc = anuluj</span>
+    </form>
 
     <script>
       const state = {
@@ -607,11 +971,16 @@
         const needle = $('filter').value.trim().toLowerCase();
         const list = $('list');
         list.textContent = '';
-        for (const entry of episodes.filter((item) => item.displayTitle.toLowerCase().includes(needle))) {
+        const matches = episodes.filter((item) => item.displayTitle.toLowerCase().includes(needle));
+        $('episodes-count').textContent = needle
+          ? `${matches.length} z ${episodes.length}`
+          : `${episodes.length} odcinków`;
+        for (const entry of matches) {
           const li = document.createElement('li');
           const button = document.createElement('button');
           button.type = 'button';
           button.setAttribute('aria-current', String(state.episode?.id === entry.id));
+          button.title = entry.displayTitle;
           button.innerHTML = `<span>${entry.displayTitle}</span><time>${entry.date}${entry.edited ? ' · poprawki' : ''}</time>`;
           button.addEventListener('click', () => {
             // Porzucenie niezapisanych zmian musi być świadome — inaczej jeden klik
@@ -734,13 +1103,21 @@
 
       const setDirty = (value) => {
         dirty = value;
-        document.title = dirty ? `• ${BASE_TITLE}` : BASE_TITLE;
+        syncTitle();
+      };
+
+      // Edytor ma dwa niezależne powody, żeby oznaczyć kartę: niezapisane zmiany
+      // i brak serwera. Oba muszą być widoczne naraz.
+      let netDown = false;
+      const syncTitle = () => {
+        document.title = `${netDown ? '⚠ ' : ''}${dirty ? '• ' : ''}${BASE_TITLE}`;
       };
 
       const markDirty = () => {
         setDirty(true);
         setStatus('dirty', 'niezapisane zmiany');
         queueAutoSave();
+        queueDraft();
       };
 
       const savedLabel = () => {
@@ -748,8 +1125,238 @@
         return `zapisane ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
       };
 
+      // --- Stan serwera: SSE mówi „jest”, /api/health mówi „wrócił” ---
+
+      const HEALTH_DOWN_MS = 3000;
+      const HEALTH_POLL_MS = 5000;
+      const health = { state: 'up', downTimer: 0, pollTimer: 0, backTimer: 0 };
+      let serverUp = true;
+
+      const banner = () => $('net-banner');
+
+      const setBanner = (on) => {
+        const node = banner();
+        if (node.hidden === !on) return;
+        node.hidden = !on;
+        netDown = on;
+        syncTitle();
+        if (on) {
+          // Jedno mrugnięcie przy pojawieniu się; klasa znika po animacji, żeby
+          // kolejna awaria znowu była widoczna.
+          node.classList.remove('is-attention');
+          void node.offsetWidth;
+          node.classList.add('is-attention');
+        } else {
+          node.classList.remove('is-attention');
+        }
+        // Zapisz wygląda na zablokowany, ale działa — klik i Ctrl+S mają pokazać błąd.
+        const save = $('save');
+        save.classList.toggle('is-offline', on);
+        save.title = on ? 'brak połączenia z serwerem' : '';
+        syncChrome();
+      };
+
+      const showHealth = (state, text) => {
+        health.state = state;
+        const node = $('health');
+        node.dataset.state = state;
+        // Stan „down” ma własny, pełnoekranowy banner — pasek zapisu nic nie powtarza.
+        node.hidden = state === 'up' || state === 'down';
+        $('health-text').textContent = text;
+        $('health-retry').hidden = true;
+        setBanner(state === 'down');
+      };
+
+      const probeHealth = async () => {
+        try {
+          const response = await fetch('/api/health', { cache: 'no-store' });
+          return response.ok;
+        } catch {
+          return false;
+        }
+      };
+
+      const stopHealthPoll = () => {
+        clearInterval(health.pollTimer);
+        health.pollTimer = 0;
+      };
+
+      const serverDown = () => {
+        if (serverUp) {
+          serverUp = false;
+          // Najpierw neutralne „łączę…”: restart node --watch trwa sekundę i nie jest awarią.
+          showHealth('waiting', 'łączę…');
+          clearTimeout(health.downTimer);
+          health.downTimer = setTimeout(() => {
+            if (!serverUp) showHealth('down', 'serwer nie odpowiada — zmiany nie są zapisywane');
+          }, HEALTH_DOWN_MS);
+        }
+        if (!health.pollTimer) {
+          health.pollTimer = setInterval(async () => {
+            if (await probeHealth()) serverBack();
+          }, HEALTH_POLL_MS);
+        }
+      };
+
+      const serverBack = () => {
+        const wasDown = health.state === 'down';
+        serverUp = true;
+        clearTimeout(health.downTimer);
+        stopHealthPoll();
+        if (wasDown) {
+          showHealth('back', 'serwer wrócił');
+          clearTimeout(health.backTimer);
+          health.backTimer = setTimeout(() => showHealth('up', ''), 2500);
+        } else {
+          showHealth('up', '');
+        }
+      };
+
+      // --- Kopia robocza: niezapisane zmiany przeżywają pad serwera i przeładowanie ---
+
+      const DRAFT_PREFIX = 'edytor.draft.';
+      const DRAFT_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+      let draftTimer = 0;
+      let pendingDraft = null;
+
+      const draftKeyFor = (id) => `${DRAFT_PREFIX}${id}`;
+
+      const draftSnapshot = () => ({
+        id: state.episode?.id ?? null,
+        at: Date.now(),
+        tracks: state.tracks,
+        topics: state.topics,
+        addTracks: state.addTracks,
+        addTopics: state.addTopics,
+        hiddenTracks: state.hiddenTracks,
+        hiddenTopics: state.hiddenTopics,
+      });
+
+      const writeDraft = () => {
+        draftTimer = 0;
+        if (!state.episode || !dirty) return;
+        try {
+          const keep = draftKeyFor(state.episode.id);
+          // Jedna kopia robocza: ta z bieżącego odcinka.
+          for (const key of Object.keys(localStorage)) {
+            if (key.startsWith(DRAFT_PREFIX) && key !== keep) localStorage.removeItem(key);
+          }
+          localStorage.setItem(keep, JSON.stringify(draftSnapshot()));
+        } catch {}
+      };
+
+      const queueDraft = () => {
+        clearTimeout(draftTimer);
+        draftTimer = setTimeout(writeDraft, 500);
+      };
+
+      const dropDraft = (id = state.episode?.id) => {
+        if (!id) return;
+        clearTimeout(draftTimer);
+        draftTimer = 0;
+        try {
+          localStorage.removeItem(draftKeyFor(id));
+        } catch {}
+      };
+
+      const readDraft = (id) => {
+        try {
+          const raw = localStorage.getItem(draftKeyFor(id));
+          if (!raw) return null;
+          const draft = JSON.parse(raw);
+          if (!draft || draft.id !== id || !Number.isFinite(draft.at)) return null;
+          if (Date.now() - draft.at > DRAFT_TTL_MS) {
+            localStorage.removeItem(draftKeyFor(id));
+            return null;
+          }
+          return draft;
+        } catch {
+          return null;
+        }
+      };
+
+      const sweepDrafts = () => {
+        try {
+          for (const key of Object.keys(localStorage)) {
+            if (!key.startsWith(DRAFT_PREFIX)) continue;
+            const draft = JSON.parse(localStorage.getItem(key) ?? 'null');
+            if (!draft || !Number.isFinite(draft.at) || Date.now() - draft.at > DRAFT_TTL_MS) {
+              localStorage.removeItem(key);
+            }
+          }
+        } catch {}
+      };
+
+      const timelineFingerprint = (data) =>
+        JSON.stringify([
+          data.tracks ?? [],
+          data.topics ?? [],
+          data.addTracks ?? [],
+          data.addTopics ?? [],
+          data.hiddenTracks ?? [],
+          data.hiddenTopics ?? [],
+        ]);
+
+      const currentTimeline = () => ({
+        tracks: state.tracks,
+        topics: state.topics,
+        addTracks: state.addTracks,
+        addTopics: state.addTopics,
+        hiddenTracks: state.hiddenTracks,
+        hiddenTopics: state.hiddenTopics,
+      });
+
+      const offerDraft = (id) => {
+        const draft = readDraft(id);
+        const node = $('draft-offer');
+        if (!draft || timelineFingerprint(draft) === timelineFingerprint(currentTimeline())) {
+          pendingDraft = null;
+          node.hidden = true;
+          return;
+        }
+        pendingDraft = draft;
+        const at = new Date(draft.at);
+        $('draft-when').textContent = `niezapisane zmiany z ${String(at.getHours()).padStart(2, '0')}:${String(at.getMinutes()).padStart(2, '0')} —`;
+        node.hidden = false;
+      };
+
+      const applyDraft = () => {
+        if (!pendingDraft) return;
+        const draft = pendingDraft;
+        pushUndo();
+        state.tracks = structuredClone(draft.tracks ?? []);
+        state.topics = (draft.topics ?? []).map((topic, index) => {
+          const copy = structuredClone(topic);
+          // Kolejność wierszy mogła się zmienić przez ukrywanie, więc bazę bierzemy
+          // po etykiecie, a dopiero potem po pozycji.
+          const base = state.baseTopics.find((entry) => entry.label === copy.label) ?? state.baseTopics[index];
+          if (base) topicBase.set(copy, { ...base });
+          return copy;
+        });
+        state.addTracks = structuredClone(draft.addTracks ?? []);
+        state.addTopics = structuredClone(draft.addTopics ?? []);
+        state.hiddenTracks = structuredClone(draft.hiddenTracks ?? []);
+        state.hiddenTopics = structuredClone(draft.hiddenTopics ?? []);
+        pendingDraft = null;
+        $('draft-offer').hidden = true;
+        renderTracks();
+        renderTopics();
+        renderAdded();
+        renderRestore();
+        markDirty();
+      };
+
+      $('draft-restore').addEventListener('click', applyDraft);
+      $('draft-discard').addEventListener('click', () => {
+        pendingDraft = null;
+        dropDraft();
+        $('draft-offer').hidden = true;
+      });
+
       window.addEventListener('beforeunload', (event) => {
         if (!dirty) return;
+        // Zapis synchroniczny: kopia ma powstać, zanim karta zniknie.
+        writeDraft();
         event.preventDefault();
         event.returnValue = '';
       });
@@ -765,8 +1372,10 @@
         base: topicBase.has(topic) ? structuredClone(topicBase.get(topic)) : null,
       });
 
-      const pushUndo = () => {
+      const pushUndo = (kind = 'data') => {
         undoStack.push({
+          kind,
+          reviewed: [...reviewed],
           tracks: structuredClone(state.tracks),
           topics: state.topics.map(snapshotTopic),
           addTracks: structuredClone(state.addTracks),
@@ -799,6 +1408,9 @@
       const undoEdit = () => {
         const snapshot = undoStack.pop();
         if (!snapshot) return;
+        // Cofnięcie może przywrócić „ok” zdjęte przez przesunięcie, a wtedy plik
+        // musi wrócić do tego samego stanu, nie tylko ekran.
+        const reviewedBefore = [...reviewed].sort().join('\u0000');
         state.tracks = structuredClone(snapshot.tracks);
         state.topics = snapshot.topics.map((entry) => {
           const topic = structuredClone(entry.data);
@@ -809,11 +1421,21 @@
         state.addTopics = structuredClone(snapshot.addTopics);
         state.hiddenTracks = structuredClone(snapshot.hiddenTracks);
         state.hiddenTopics = structuredClone(snapshot.hiddenTopics);
+        reviewed = new Set(snapshot.reviewed ?? []);
+        if (state.episode) REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
+        const reviewedChanged = [...reviewed].sort().join('\u0000') !== reviewedBefore;
         editBurst.key = null;
         renderTracks();
         renderTopics();
         renderAdded();
         renderRestore();
+        buildMarkers();
+        // Stan „ok” nie należy do danych odcinka: cofnięcie go nie brudzi ani nie zapisuje.
+        if (reviewedChanged) persistReviewedAll();
+        if (snapshot.kind === 'reviewed') {
+          noteStatus('cofnięto ok');
+          return;
+        }
         markDirty();
         setStatus('dirty', 'cofnięto');
         statusTimer = setTimeout(() => {
@@ -861,7 +1483,9 @@
           startInput.step = '0.01';
           startInput.value = String(track.start ?? 0);
           startInput.addEventListener('input', () => editField(track, 'start', () => {
+            const reviewKey = reviewKeyOf('start', track);
             track.start = Number(startInput.value);
+            clearReviewedOnMove(reviewKey);
             waveSync();
           }));
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(track.start)));
@@ -875,7 +1499,7 @@
             waveSync();
           }));
           duration.append(durationInput);
-          fieldInputs.set(track, { start: startInput, duration: durationInput });
+          fieldInputs.set(track, { start: startInput, duration: durationInput, artist: artistInput, title: titleInput, album: albumInput });
 
           const actions = document.createElement('td');
           const hide = rowButton('ukryj', () => {
@@ -904,6 +1528,7 @@
           const labelInput = document.createElement('input');
           labelInput.type = 'text';
           labelInput.value = topic.label ?? '';
+          labelInput.placeholder = 'Nowe wejście';
           labelInput.addEventListener('input', () => editField(topic, 'label', () => {
             topic.label = labelInput.value;
             waveSync();
@@ -916,7 +1541,9 @@
           startInput.step = '0.01';
           startInput.value = String(topic.start ?? 0);
           startInput.addEventListener('input', () => editField(topic, 'start', () => {
+            const reviewKey = reviewKeyOf('topic', topic);
             topic.start = Number(startInput.value);
+            clearReviewedOnMove(reviewKey);
             waveSync();
           }));
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(topic.start)));
@@ -960,7 +1587,9 @@
             input.value = String(track[field] ?? '');
             input.placeholder = placeholder;
             input.addEventListener('input', () => editField(track, field, () => {
+              const reviewKey = field === 'start' ? reviewKeyOf('start', track) : null;
               track[field] = type === 'number' ? Number(input.value) : input.value;
+              if (reviewKey) clearReviewedOnMove(reviewKey);
               waveSync();
             }));
             inputs[field] = input;
@@ -990,6 +1619,7 @@
           const labelInput = document.createElement('input');
           labelInput.type = 'text';
           labelInput.value = topic.label ?? '';
+          labelInput.placeholder = 'Nowe wejście';
           labelInput.addEventListener('input', () => editField(topic, 'label', () => {
             topic.label = labelInput.value;
             waveSync();
@@ -1002,11 +1632,13 @@
           startInput.step = '0.01';
           startInput.value = String(topic.start ?? 0);
           startInput.addEventListener('input', () => editField(topic, 'start', () => {
+            const reviewKey = reviewKeyOf('topic', topic);
             topic.start = Number(startInput.value);
+            clearReviewedOnMove(reviewKey);
             waveSync();
           }));
           startCell.append(startInput, rowButton('weź', () => usePlayerTime(startInput)));
-          fieldInputs.set(topic, { start: startInput });
+          fieldInputs.set(topic, { start: startInput, label: labelInput });
 
           const actions = document.createElement('td');
           actions.append(
@@ -1059,21 +1691,30 @@
       const seek = (seconds) => {
         const audio = $('audio');
         if (!Number.isFinite(seconds)) return;
+        resetJumpChain();
         audio.currentTime = seconds;
         audio.play();
       };
 
       const openEpisode = async (id) => {
         cancelAutoSave();
+        pendingDraft = null;
+        $('draft-offer').hidden = true;
         setDirty(false);
         setStatus('clean', 'brak zmian');
         const response = await fetch(`/api/episode?id=${encodeURIComponent(id)}`);
         const data = await response.json();
         if (!response.ok) {
           setStatus('error', `błąd: ${data.error ?? 'nie udało się wczytać odcinka'}`);
+          // Gdy nic nie było otwarte, edytor jest schowany i komunikat musi trafić
+          // w miejsce zastępcze; przy otwartym odcinku wystarczy pasek zapisu.
+          $('empty').textContent = `błąd: ${data.error ?? 'nie udało się wczytać odcinka'}`;
+          $('empty').hidden = !$('editor').hidden;
           return;
         }
         state.episode = data;
+        reviewed = new Set();
+        loadReviewed(data.id);
         undoStack.length = 0;
         editBurst.key = null;
         wave.undoTaken = false;
@@ -1106,12 +1747,17 @@
         renderRestore();
         renderList();
         openWave(data.id);
+        offerDraft(data.id);
+        // Panel głośności zmienił wysokość, więc sidebar dostaje nowy limit od razu.
+        syncChrome();
       };
 
       // --- Waveform: głośność nagrania, zoom, przesuwanie okna, znaczniki ---
 
       const PEAKS_PER_SECOND = 100;
-      const MIN_WAVE_SPAN = 5;
+      // 1 słupek = 10 ms (100 na sekundę), więc 0,25 s to 25 słupków — poniżej tego
+      // rysowalibyśmy mniej słupków niż pikseli i wymyślali szczegół, którego nie ma.
+      const MIN_WAVE_SPAN = 0.25;
       const peaksCache = new Map();
       const peaksPending = new Map();
 
@@ -1126,6 +1772,7 @@
         frame: 0,
         pan: null,
         undoTaken: false,
+        restoreWindow: null,
       };
 
       const clampNumber = (value, low, high) => Math.min(high, Math.max(low, value));
@@ -1136,7 +1783,9 @@
         if (wave.span > 30) return fmt(seconds);
         const total = Math.max(0, seconds);
         const minutes = Math.floor(total / 60);
-        const rest = (total % 60).toFixed(1).padStart(4, '0');
+        // Przy oknie poniżej 3 s setne są potrzebne, inaczej etykieta stoi w miejscu.
+        const digits = wave.span <= 3 ? 2 : 1;
+        const rest = (total % 60).toFixed(digits).padStart(digits + 3, '0');
         return `${minutes}:${rest}`;
       };
 
@@ -1147,7 +1796,7 @@
       };
 
       const setWaveTools = (enabled) => {
-        for (const id of ['wave-in', 'wave-out', 'wave-all']) $(id).disabled = !enabled;
+        for (const id of ['wave-in', 'wave-out', 'wave-all', 'wave-prev', 'wave-next', 'wave-add']) $(id).disabled = !enabled;
       };
 
       const drawWave = () => {
@@ -1287,11 +1936,38 @@
         fragment.object.end = time;
       };
 
+      // ——— Znaczniki „ok” ———
+      // Klucz jest trwały między zapisami (artyści i tytuły nie zmieniają się przy
+      // przeciąganiu), a `start` to tylko awaryjne wyjście dla wpisów bez etykiety.
+      const REVIEWED_BY_EPISODE = new Map();
+      let reviewed = new Set();
+      let reviewedRequest = 0;
+
+      const reviewKeyOf = (kind, object) => {
+        const clean = (value) => String(value ?? '').normalize('NFC').trim().toLowerCase();
+        if (kind === 'topic') {
+          const label = clean(object.label);
+          return label ? `p:${label}` : `p:${Number(object.start).toFixed(2)}`;
+        }
+        const name = [clean(object.artist), clean(object.title)].filter(Boolean).join('|');
+        return name ? `t:${name}` : `t:${Number(object.start).toFixed(2)}`;
+      };
+
       const collectMarkers = () => {
         const markers = [];
         const push = (kind, object, time, priority, name) => {
           if (!Number.isFinite(time)) return;
-          markers.push({ kind, object, time, priority, name, key: `${kind}:${objectKey(object)}` });
+          const reviewKey = reviewKeyOf(kind, object);
+          markers.push({
+            kind,
+            object,
+            time,
+            priority,
+            name,
+            reviewKey,
+            reviewed: reviewed.has(reviewKey),
+            key: `${kind}:${objectKey(object)}`,
+          });
         };
         for (const track of state.tracks) push('start', track, Number(track.start), 1, `Początek: ${trackName(track)}`);
         for (const track of state.addTracks) push('start', track, Number(track.start), 1, `Początek: ${trackName(track)}`);
@@ -1300,17 +1976,89 @@
         return markers;
       };
 
+      const updateCounts = () => {
+        const node = $('wave-count');
+        const markers = collectMarkers();
+        const ok = markers.filter((marker) => marker.reviewed).length;
+        node.textContent = markers.length > 0 ? `${ok} z ${markers.length} ok` : '';
+        node.hidden = markers.length === 0;
+      };
+
+      const loadReviewed = async (id) => {
+        if (REVIEWED_BY_EPISODE.has(id)) {
+          reviewed = REVIEWED_BY_EPISODE.get(id);
+          buildMarkers();
+          return;
+        }
+        const token = (reviewedRequest += 1);
+        try {
+          const response = await fetch(`/api/reviewed?id=${encodeURIComponent(id)}`);
+          if (!response.ok) return;
+          const data = await response.json();
+          if (token !== reviewedRequest || state.episode?.id !== id) return;
+          reviewed = new Set(Object.keys(data.reviewed ?? {}));
+          REVIEWED_BY_EPISODE.set(id, reviewed);
+          buildMarkers();
+        } catch {}
+      };
+
+      const persistReviewed = (key, value) => {
+        const id = state.episode?.id;
+        if (!id) return;
+        fetch('/api/reviewed', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ id, key, reviewed: value }),
+        }).catch(() => noteStatus('nie zapisano stanu ok'));
+      };
+
+      // Przesunięty znacznik nie jest już sprawdzony: „ok” tyczyło się konkretnego
+      // miejsca, więc nowa pozycja je unieważnia. Klucz bierzemy sprzed zmiany `start`,
+      // bo dla wpisów bez etykiety zawiera on starą wartość.
+      const clearReviewedOnMove = (reviewKey) => {
+        if (!reviewKey || !reviewed.has(reviewKey)) return false;
+        reviewed.delete(reviewKey);
+        if (state.episode) REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
+        persistReviewed(reviewKey, false);
+        buildMarkers();
+        noteStatus('przesunięto — zdjęto ok');
+        return true;
+      };
+
+      // Cofnięcie zmienia cały zestaw naraz, więc wysyłamy go w jednym żądaniu.
+      const persistReviewedAll = () => {
+        const id = state.episode?.id;
+        if (!id) return;
+        const markers = Object.fromEntries([...reviewed].map((key) => [key, true]));
+        fetch('/api/reviewed', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ id, markers }),
+        }).catch(() => {});
+      };
+
+      const toggleReviewed = (marker) => {
+        if (!state.episode || !marker.reviewKey) return;
+        pushUndo('reviewed');
+        const next = !reviewed.has(marker.reviewKey);
+        if (next) reviewed.add(marker.reviewKey);
+        else reviewed.delete(marker.reviewKey);
+        REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
+        persistReviewed(marker.reviewKey, next);
+        buildMarkers();
+        noteStatus(next ? 'oznaczono ok' : 'zdjęto ok');
+      };
+
       const markerNodes = new Map();
       const MIN_FRAGMENT = 5;
 
-      const moveStart = (marker, requested, dragging = false) => {
-        const old = marker.time;
+      // Granice przesuwania początku: nie wchodzimy w poprzednika i nie przeskakujemy
+      // następnego początku, bo to on wyznacza koniec tego fragmentu.
+      const startBounds = (marker) => {
         const ownEnd = marker.kind === 'start' ? trackEnd(marker.object) : topicEnd(marker.object);
-        const previous = precedingFragment(marker, old);
-        const following = followingFragment(marker, old);
+        const previous = precedingFragment(marker, marker.time);
+        const following = followingFragment(marker, marker.time);
         const low = previous ? Number(previous.start) + MIN_FRAGMENT : 0;
-        // Kolejność fragmentów jest święta: początek nie wchodzi w poprzednika i nie
-        // przeskakuje następnego początku, bo to on wyznacza koniec tego fragmentu.
         const high = Math.max(
           low,
           Math.min(
@@ -1319,9 +2067,16 @@
             following ? Number(following.start) - MIN_FRAGMENT : wave.duration
           )
         );
+        return { low, high, previous, following, ownEnd };
+      };
+
+      const moveStart = (marker, requested, dragging = false) => {
+        const old = marker.time;
+        const { low, high, previous } = startBounds(marker);
         // 10 ms: poniżej tego i tak nie ma sensu, bo ramka MP3 ma ~26 ms.
         const next = clampNumber(Math.round(requested * 100) / 100, low, high);
         if (next === old) return;
+        resetJumpChain();
         markDirty();
         // Przeciągnięcie to jeden krok cofania, dlatego zrzut robimy tylko przy pierwszym ruchu.
         if (!dragging || !wave.undoTaken) {
@@ -1330,6 +2085,8 @@
         }
         marker.time = next;
         marker.object.start = next;
+        // Zrzut cofania jest już zrobiony, więc Ctrl+Z przywróci i czas, i „ok”.
+        clearReviewedOnMove(marker.reviewKey);
         const inputs = fieldInputs.get(marker.object);
         if (inputs?.start) inputs.start.value = String(next);
         // Koniec poprzedniego fragmentu to ten początek — bez tolerancji i bez przerw.
@@ -1341,8 +2098,617 @@
         node.style.left = `${((marker.time - wave.start) / wave.span) * width}px`;
         const label = `${marker.name}, ${fmtPrecise(marker.time)}`;
         node.setAttribute('aria-label', label);
-        node.title = `${label} — przeciągnij albo ←/→ (Alt = 10 ms, Shift = 1 s)`;
+        node.title = `${label} — przeciągnij albo ←/→ (Alt = 10 ms, Shift = 1 s); Del usuwa; Shift+Enter = ok`;
       };
+
+      // Skoki po znacznikach: ‹/› (oraz przecinek i kropka na scenie) tylko przesuwają
+      // kursor, więc odtwarzanie zostaje w tym stanie, w jakim było.
+      const markerTimes = () =>
+        [...markerNodes.values()]
+          .map((entry) => entry.marker.time)
+          .filter((time) => Number.isFinite(time))
+          .sort((left, right) => left - right);
+
+      const updateNav = () => {
+        const times = markerTimes();
+        const time = $('audio').currentTime;
+        const ready = Boolean(wave.peaks) && times.length > 0 && Number.isFinite(time);
+        $('wave-prev').disabled = !ready || !times.some((value) => value < time - 0.001);
+        $('wave-next').disabled = !ready || !times.some((value) => value > time + 0.001);
+      };
+
+      // Pamięć skoków: przy odtwarzaniu czas ucieka między kliknięciami, więc drugie
+      // ‹ w krótkim odstępie liczy się od znacznika, na którym wylądowaliśmy — inaczej
+      // „wstecz” zostawałoby na tym samym znaczniku.
+      const JUMP_CHAIN_MS = 1200;
+      const jumpMemory = { index: -1, direction: 0, at: 0 };
+      let jumpInFlight = false;
+
+      const resetJumpChain = () => {
+        jumpMemory.index = -1;
+        jumpMemory.direction = 0;
+        jumpMemory.at = 0;
+      };
+
+      // Każde inne przewinięcie kasuje łańcuch: liczy się tylko seria ‹ albo ›.
+      $('audio').addEventListener('seeking', () => {
+        if (!jumpInFlight) resetJumpChain();
+      });
+
+      const jumpToMarker = (direction) => {
+        const times = markerTimes();
+        const audio = $('audio');
+        if (times.length === 0) return;
+        const chained =
+          jumpMemory.index >= 0 &&
+          jumpMemory.direction === direction &&
+          performance.now() - jumpMemory.at < JUMP_CHAIN_MS;
+        let index;
+        if (chained) {
+          index = jumpMemory.index + (direction < 0 ? -1 : 1);
+          // Kolejne naciśnięcie poza końcem nic nie robi — tak samo, jak wyłączony przycisk.
+          if (index < 0 || index >= times.length) return;
+        } else {
+          const time = audio.currentTime;
+          if (!Number.isFinite(time)) return;
+          index =
+            direction < 0
+              ? times.findLastIndex((value) => value < time - 0.001)
+              : times.findIndex((value) => value > time + 0.001);
+          if (index < 0 || index >= times.length) return;
+        }
+        const target = times[index];
+        jumpInFlight = true;
+        audio.currentTime = target;
+        setTimeout(() => {
+          jumpInFlight = false;
+        }, 120);
+        jumpMemory.index = index;
+        jumpMemory.direction = direction;
+        jumpMemory.at = performance.now();
+        $('clock').textContent = fmt(audio.currentTime);
+        // Okno przesuwa się tylko wtedy, gdy cel wypada poza widokiem.
+        if (target < wave.start || target > wave.start + wave.span) {
+          setWindow(target - wave.span / 2, wave.span);
+        }
+        syncPlayhead();
+        drawWave();
+        updateNav();
+      };
+
+      // Usunięcie znacznika to ta sama poprawka `hide`, którą pisze przycisk „ukryj”,
+      // więc Ctrl+Z je cofa, a ukrycie przeżywa przeładowanie. Koniec poprzedniego
+      // fragmentu wynika z następnego początku, więc skraca się sam.
+      const deleteMarker = (marker) => {
+        const object = marker.object;
+        const time = marker.time;
+        const neighbours = collectMarkers()
+          .filter((entry) => entry.object !== object)
+          .sort((left, right) => left.time - right.time);
+        const nextIndex = neighbours.findIndex((entry) => entry.time >= time);
+        const focusTarget = nextIndex >= 0 ? neighbours[nextIndex] : neighbours.at(-1);
+        // Usunięcie początku scali dwa fragmenty: poprzedni sięga teraz do następnego
+        // początku, a gdy żadnego nie ma — do końca kasowanego fragmentu.
+        const previous = precedingFragment(marker, time);
+        const following = followingFragment(marker, time);
+        const removedEnd = marker.kind === 'start' ? trackEnd(object) : topicEnd(object);
+
+        pushUndo();
+        if (state.tracks.includes(object)) {
+          // `start` zawęża ukrycie do tego wystąpienia — bez niego zniknąłby też
+          // bliźniak rozpoznany przez Shazam pod tym samym tytułem.
+          state.hiddenTracks.push({ artist: object.artist, title: object.title, album: object.album, start: object.start, hide: true });
+          state.tracks.splice(state.tracks.indexOf(object), 1);
+        } else if (state.topics.includes(object)) {
+          state.hiddenTopics.push({ time: object.start, label: object.label, hide: true });
+          state.topics.splice(state.topics.indexOf(object), 1);
+        } else if (state.addTracks.includes(object)) {
+          state.addTracks.splice(state.addTracks.indexOf(object), 1);
+        } else if (state.addTopics.includes(object)) {
+          state.addTopics.splice(state.addTopics.indexOf(object), 1);
+        } else {
+          return;
+        }
+        if (previous && previous.end !== null && Math.abs(previous.end - time) <= 0.5) {
+          setFragmentEnd(previous, following ? Number(following.start) : (removedEnd ?? time));
+        }
+        markDirty();
+        renderTracks();
+        renderTopics();
+        renderAdded();
+        renderRestore();
+        // waveSync() odkłada przebudowę do rAF, a fokus potrzebuje węzła już teraz.
+        buildMarkers();
+        if (focusTarget) markerNodes.get(focusTarget.key)?.node.focus({ preventScroll: true });
+      };
+
+      // --- Dodawanie wejścia w miejscu, którego nie wykrył tagger ---
+
+      const ADD_TOPIC_GUARD = 0.5;
+
+      const noteStatus = (text) => {
+        setStatus(dirty ? 'dirty' : 'clean', text);
+        clearTimeout(statusTimer);
+        statusTimer = setTimeout(
+          () => setStatus(dirty ? 'dirty' : 'clean', dirty ? 'niezapisane zmiany' : 'brak zmian'),
+          2500
+        );
+      };
+
+      const addTopicAt = (time) => {
+        if (!wave.duration) return null;
+        const start = clampNumber(Math.round(time * 100) / 100, 0, wave.duration);
+        // Dwa znaczniki w tym samym miejscu to zawsze pomyłka, a nie nowa informacja.
+        const neighbour = collectMarkers().find((marker) => Math.abs(marker.time - start) <= ADD_TOPIC_GUARD);
+        if (neighbour) {
+          noteStatus('tu już jest znacznik');
+          return null;
+        }
+        pushUndo();
+        // Dokładnie te same pola, które wysyła saveEpisode dla dodanych wejść
+        // (label + start); `end` w schemacie addTopics nie istnieje.
+        const topic = { label: '', start };
+        state.addTopics.push(topic);
+        markDirty();
+        renderAdded();
+        buildMarkers();
+        // Etykietę wpisujemy pod znacznikiem, a nie w tabeli niżej — inaczej strona
+        // odjeżdża od waveformu akurat w momencie, w którym się go używa.
+        openLabelAt(topic);
+        return topic;
+      };
+
+      const labelForm = $('wave-label');
+      const labelInput = $('wave-label-input');
+      let labelTarget = null;
+      let labelInitial = '';
+
+      const positionLabel = (topic) => {
+        const rect = stageEl().getBoundingClientRect();
+        const x = rect.left + ((topic.start - wave.start) / wave.span) * rect.width;
+        const box = labelForm.getBoundingClientRect();
+        const left = clampNumber(x - 16, 8, Math.max(8, window.innerWidth - box.width - 8));
+        const below = rect.bottom + 8;
+        const top = below + box.height > window.innerHeight - 8 ? rect.top - box.height - 8 : below;
+        labelForm.style.left = `${left}px`;
+        labelForm.style.top = `${clampNumber(top, 8, Math.max(8, window.innerHeight - box.height - 8))}px`;
+      };
+
+      const openLabelAt = (topic) => {
+        labelTarget = topic;
+        labelInitial = topic.label ?? '';
+        labelInput.value = labelInitial;
+        labelForm.hidden = false;
+        positionLabel(topic);
+        labelInput.focus({ preventScroll: true });
+        labelInput.select();
+      };
+
+      const closeLabel = ({ revert = false } = {}) => {
+        if (labelForm.hidden) return;
+        labelForm.hidden = true;
+        const topic = labelTarget;
+        labelTarget = null;
+        if (!revert || !topic) return;
+        // Esc zostawia wpis, ale bez wpisanej nazwy.
+        topic.label = labelInitial;
+        waveSync();
+      };
+
+      labelInput.addEventListener('input', () => {
+        if (!labelTarget) return;
+        const topic = labelTarget;
+        editField(topic, 'label', () => {
+          topic.label = labelInput.value;
+          waveSync();
+        });
+      });
+
+      labelForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (labelTarget) {
+          labelTarget.label = labelInput.value.trim();
+          waveSync();
+        }
+        closeLabel();
+        stageEl().focus({ preventScroll: true });
+      });
+
+      labelInput.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') return;
+        event.preventDefault();
+        closeLabel({ revert: true });
+        stageEl().focus({ preventScroll: true });
+      });
+
+      document.addEventListener(
+        'pointerdown',
+        (event) => {
+          if (labelForm.hidden || event.target.closest?.('.wave-label') || event.target.closest?.('.wave-marker')) return;
+          closeLabel();
+        },
+        true
+      );
+
+      // Popover stoi na współrzędnych ekranu, więc zmiana widoku go unieważnia.
+      window.addEventListener('scroll', () => closeLabel(), { passive: true });
+      window.addEventListener('resize', () => closeLabel());
+
+
+      // --- Edycja pól znacznika (menu → „Edytuj…”) ---
+
+      const editForm = $('wave-edit');
+      const editFields = $('wave-edit-fields');
+      const editError = $('wave-edit-error');
+      const editWarn = $('wave-edit-warn');
+      let editTarget = null;
+      let editOpener = null;
+
+      const EDIT_FIELDS = {
+        start: [
+          ['artist', 'Wykonawca', 'text'],
+          ['title', 'Tytuł', 'text'],
+          ['album', 'Album', 'text'],
+          ['start', 'Start (s)', 'number'],
+          ['durationSec', 'Czas (s)', 'number'],
+        ],
+        topic: [
+          ['label', 'Etykieta', 'text'],
+          ['start', 'Start (s)', 'number'],
+        ],
+      };
+
+      // Pola numeryczne stoją obok siebie, tekstowe pełną szerokością.
+      const NUMERIC_FIELDS = new Set(['start', 'durationSec']);
+
+      const fieldInput = (name) => editFields.querySelector(`[name="${name}"]`);
+
+      const editValueOf = (marker, field) =>
+        field === 'start' ? fmtPreciseNumber(marker.time) : marker.object[field] ?? '';
+
+      const fmtPreciseNumber = (seconds) => String(Math.round(Number(seconds) * 100) / 100);
+
+      const buildEditFields = (marker) => {
+        editFields.textContent = '';
+        const defs = EDIT_FIELDS[marker.kind === 'start' ? 'start' : 'topic'];
+        let row = null;
+        for (const [field, label, type] of defs) {
+          const wrapper = document.createElement('label');
+          const caption = document.createElement('span');
+          caption.textContent = label;
+          const input = document.createElement('input');
+          input.type = type;
+          input.name = field;
+          input.id = `wave-edit-field-${field}`;
+          input.autocomplete = 'off';
+          input.value = String(editValueOf(marker, field));
+          if (type === 'number') {
+            input.step = '0.01';
+            input.inputMode = 'decimal';
+          }
+          wrapper.append(caption, input);
+          if (NUMERIC_FIELDS.has(field) && defs.filter((entry) => NUMERIC_FIELDS.has(entry[0])).length > 1) {
+            if (!row) {
+              row = document.createElement('div');
+              row.className = 'wave-edit-row';
+              editFields.append(row);
+            }
+            row.append(wrapper);
+          } else {
+            row = null;
+            editFields.append(wrapper);
+          }
+        }
+      };
+
+      const positionEdit = (marker) => {
+        const stage = stageEl().getBoundingClientRect();
+        const x = stage.left + ((marker.time - wave.start) / wave.span) * stage.width;
+        const box = editForm.getBoundingClientRect();
+        const left = clampNumber(x - 24, 8, Math.max(8, window.innerWidth - box.width - 8));
+        const below = stage.bottom + 8;
+        const top = below + box.height > window.innerHeight - 8 ? stage.top - box.height - 8 : below;
+        editForm.style.left = `${left}px`;
+        editForm.style.top = `${clampNumber(top, 8, Math.max(8, window.innerHeight - box.height - 8))}px`;
+      };
+
+      const openEdit = (marker, opener) => {
+        editTarget = marker;
+        editOpener = opener ?? null;
+        $('wave-edit-title').textContent = marker.kind === 'start' ? 'Edytuj utwór' : 'Edytuj wejście';
+        buildEditFields(marker);
+        editError.hidden = true;
+        editWarn.hidden = true;
+        editWarn.textContent = '';
+        // Przywracanie ma sens tylko dla wiersza, który jest w ukrytych — znaczniki
+        // ukrytych wierszy nie istnieją, więc to zabezpieczenie na przyszłość.
+        const hidden = state.hiddenTracks.some(
+          (entry) => entry.artist === marker.object.artist && entry.title === marker.object.title
+        );
+        $('wave-edit-restore').hidden = !(marker.kind === 'start' && hidden);
+        editForm.hidden = false;
+        positionEdit(marker);
+        const first = editFields.querySelector('input');
+        first?.focus({ preventScroll: true });
+        first?.select();
+      };
+
+      const closeEdit = ({ keepFocus = false } = {}) => {
+        if (editForm.hidden) return;
+        editForm.hidden = true;
+        editTarget = null;
+        editFields.textContent = '';
+        editError.hidden = true;
+        editWarn.hidden = true;
+        const opener = editOpener;
+        editOpener = null;
+        if (!keepFocus) opener?.focus?.({ preventScroll: true });
+      };
+
+      const snapSeconds = (value) => Math.round(Number(value) * 100) / 100;
+
+      // Zwraca gotowe wartości albo komunikat przy pierwszym błędnym polu.
+      const readEditValues = (marker) => {
+        for (const input of editFields.querySelectorAll('input')) input.classList.remove('is-invalid');
+        const fail = (field, message) => ({ ok: false, field, message });
+        const values = {};
+        const bounds = startBounds(marker);
+
+        const startRaw = fieldInput('start')?.value ?? '';
+        const start = Number(startRaw.replace(',', '.'));
+        if (startRaw.trim() === '' || !Number.isFinite(start)) return fail('start', 'Start musi być liczbą.');
+        if (start < bounds.low - 0.001 || start > bounds.high + 0.001) {
+          return fail(
+            'start',
+            `Start musi mieścić się w ${bounds.low.toFixed(2)}–${bounds.high.toFixed(2)} s (sąsiednie znaczniki i koniec fragmentu).`
+          );
+        }
+        values.start = clampNumber(snapSeconds(start), bounds.low, bounds.high);
+
+        if (marker.kind === 'start') {
+          const durationRaw = fieldInput('durationSec')?.value ?? '';
+          const duration = Number(durationRaw.replace(',', '.'));
+          if (durationRaw.trim() === '' || !Number.isFinite(duration)) return fail('durationSec', 'Czas musi być liczbą.');
+          if (duration <= 0) return fail('durationSec', 'Czas musi być większy od zera.');
+          if (duration > wave.duration) return fail('durationSec', 'Czas nie mieści się w nagraniu.');
+          values.durationSec = snapSeconds(duration);
+          values.artist = fieldInput('artist').value.trim();
+          values.title = fieldInput('title').value.trim();
+          values.album = fieldInput('album').value.trim();
+        } else {
+          values.label = fieldInput('label').value.trim();
+        }
+        return { ok: true, values };
+      };
+
+      const applyEdit = () => {
+        const marker = editTarget;
+        if (!marker) return false;
+        const result = readEditValues(marker);
+        if (!result.ok) {
+          fieldInput(result.field)?.classList.add('is-invalid');
+          fieldInput(result.field)?.focus({ preventScroll: true });
+          editError.textContent = result.message;
+          editError.hidden = false;
+          return false;
+        }
+        const values = result.values;
+        const object = marker.object;
+        const oldReviewKey = marker.reviewKey;
+        pushUndo();
+        // Start idzie przez moveStart: ta sama granica, to samo cięcie poprzednika,
+        // a zrzut cofania mamy już zrobiony wyżej.
+        if (values.start !== snapSeconds(marker.time)) {
+          wave.undoTaken = true;
+          moveStart(marker, values.start, true);
+          wave.undoTaken = false;
+        }
+        if (marker.kind === 'start') {
+          object.artist = values.artist;
+          object.title = values.title;
+          object.album = values.album;
+          if (object.durationSec !== values.durationSec) {
+            object.durationSec = values.durationSec;
+            // Ręczne cięcie (`end`) jest starsze niż nowa długość, więc je zdejmujemy.
+            object.end = undefined;
+          }
+        } else {
+          object.label = values.label;
+        }
+
+        const inputs = fieldInputs.get(object);
+        if (inputs) {
+          if (inputs.start) inputs.start.value = String(snapSeconds(marker.time));
+          if (inputs.durationSec) inputs.durationSec.value = String(values.durationSec ?? inputs.durationSec.value);
+          if (inputs.artist) inputs.artist.value = object.artist ?? '';
+          if (inputs.title) inputs.title.value = object.title ?? '';
+          if (inputs.album) inputs.album.value = object.album ?? '';
+          if (inputs.label) inputs.label.value = object.label ?? '';
+        }
+
+        // Zmiana nazwy przenosi też „ok”, inaczej pieczątka osierociłaby się na starym kluczu.
+        const newReviewKey = reviewKeyOf(marker.kind, object);
+        if (oldReviewKey && oldReviewKey !== newReviewKey) {
+          if (reviewed.delete(oldReviewKey)) {
+            reviewed.add(newReviewKey);
+            if (state.episode) REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
+            persistReviewedAll();
+          }
+        }
+
+        markDirty();
+        buildMarkers();
+        noteStatus('zmieniono znacznik');
+        const warn = marker.kind === 'start' && (!object.artist || !object.title);
+        closeEdit();
+        if (warn) {
+          // Ostrzeżenie jest informacją, nie blokadą: strona pokaże „bez wykonawcy”.
+          noteStatus('bez wykonawcy lub tytułu — strona użyje zapisu zastępczego');
+        }
+        return true;
+      };
+
+      editForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        applyEdit();
+      });
+
+      $('wave-edit-cancel').addEventListener('click', () => closeEdit());
+
+      $('wave-edit-restore').addEventListener('click', () => {
+        const marker = editTarget;
+        if (!marker) return;
+        const object = marker.object;
+        const entry = state.hiddenTracks.find((row) => row.artist === object.artist && row.title === object.title);
+        if (!entry) return;
+        pushUndo();
+        state.hiddenTracks = state.hiddenTracks.filter((row) => row !== entry);
+        state.tracks.push({
+          ...(state.episode.original.tracks.find((row) => row.artist === entry.artist && row.title === entry.title) ?? entry),
+        });
+        markDirty();
+        renderTracks();
+        renderRestore();
+        buildMarkers();
+        closeEdit({ keepFocus: true });
+        noteStatus('przywrócono wiersz');
+      });
+
+      editFields.addEventListener('input', (event) => {
+        event.target.classList.remove('is-invalid');
+        editError.hidden = true;
+        if (editTarget?.kind === 'start') {
+          const artist = fieldInput('artist')?.value.trim();
+          const title = fieldInput('title')?.value.trim();
+          editWarn.hidden = Boolean(artist && title);
+          editWarn.textContent = 'Bez wykonawcy lub tytułu strona pokaże zapis zastępczy („bez wykonawcy”).';
+        }
+      });
+
+      editForm.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') return;
+        event.preventDefault();
+        event.stopPropagation();
+        closeEdit();
+      });
+
+      document.addEventListener(
+        'pointerdown',
+        (event) => {
+          if (editForm.hidden || event.target.closest?.('.wave-edit')) return;
+          closeEdit();
+        },
+        true
+      );
+
+      window.addEventListener('scroll', () => closeEdit(), { passive: true });
+      window.addEventListener('resize', () => closeEdit());
+
+      const waveMenu = $('wave-menu');
+      let menuTime = null;
+      let menuOpener = null;
+      let menuMarker = null;
+
+      const closeMenu = ({ restoreFocus = false } = {}) => {
+        if (waveMenu.hidden) return;
+        waveMenu.hidden = true;
+        const opener = menuOpener;
+        menuOpener = null;
+        menuMarker = null;
+        menuTime = null;
+        if (restoreFocus) opener?.focus?.({ preventScroll: true });
+      };
+
+      const menuItems = () => [...waveMenu.querySelectorAll('[role="menuitem"]')].filter((item) => !item.hidden);
+
+      // Jedno menu, dwa konteksty: na znaczniku oferuje „ok”, na pustej scenie dodanie wejścia.
+      const openMenuAt = (clientX, clientY, time, opener, marker = null) => {
+        menuTime = time;
+        menuOpener = opener;
+        menuMarker = marker;
+        $('wave-menu-add').hidden = Boolean(marker);
+        $('wave-menu-ok').hidden = !marker;
+        $('wave-menu-edit').hidden = !marker;
+        $('wave-menu-remove').hidden = !marker;
+        if (marker) {
+          $('wave-menu-edit-mark').textContent = marker.name;
+          $('wave-menu-remove-mark').textContent = marker.name;
+          $('wave-menu-ok-text').textContent = marker.reviewed ? 'Odznacz ok' : 'Oznacz jako ok';
+          $('wave-menu-mark').textContent = `${marker.name}, ${fmtPrecise(marker.time)}`;
+        } else {
+          $('wave-menu-time').textContent = fmtPrecise(time);
+        }
+        waveMenu.hidden = false;
+        const rect = waveMenu.getBoundingClientRect();
+        const x = clampNumber(clientX, 8, Math.max(8, window.innerWidth - rect.width - 8));
+        const y = clampNumber(clientY, 8, Math.max(8, window.innerHeight - rect.height - 8));
+        waveMenu.style.left = `${x}px`;
+        waveMenu.style.top = `${y}px`;
+        menuItems()[0]?.focus({ preventScroll: true });
+      };
+
+      $('wave-menu-remove').addEventListener('click', () => {
+        const marker = menuMarker;
+        closeMenu();
+        if (marker) deleteMarker(marker);
+      });
+
+      $('wave-menu-edit').addEventListener('click', () => {
+        const marker = menuMarker;
+        const opener = menuOpener;
+        closeMenu();
+        if (marker) openEdit(marker, opener);
+      });
+
+      $('wave-menu-ok').addEventListener('click', () => {
+        const marker = menuMarker;
+        closeMenu();
+        if (marker) toggleReviewed(marker);
+      });
+
+      // Enter i spacja działają na przycisku natywnie; strzałki przechodzą między pozycjami.
+      waveMenu.addEventListener('keydown', (event) => {
+        if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        const items = menuItems();
+        if (items.length <= 1) return;
+        const index = items.indexOf(document.activeElement);
+        const next =
+          event.key === 'Home'
+            ? 0
+            : event.key === 'End'
+              ? items.length - 1
+              : (index + (event.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length;
+        items[next]?.focus();
+      });
+
+      $('wave-menu-add').addEventListener('click', () => {
+        const time = menuTime;
+        closeMenu();
+        addTopicAt(time);
+      });
+
+      document.addEventListener(
+        'pointerdown',
+        (event) => {
+          if (!waveMenu.hidden && !event.target.closest?.('.wave-menu')) closeMenu();
+        },
+        true
+      );
+
+      document.addEventListener(
+        'keydown',
+        (event) => {
+          if (event.key !== 'Escape' || waveMenu.hidden) return;
+          event.preventDefault();
+          closeMenu({ restoreFocus: true });
+        },
+        true
+      );
+
+      // Menu wisi na współrzędnych ekranu, więc każdy ruch strony je unieważnia.
+      window.addEventListener('scroll', () => closeMenu(), { passive: true });
+      window.addEventListener('resize', () => closeMenu());
 
       const bindMarker = (node, marker) => {
         node.addEventListener('pointerdown', (event) => {
@@ -1380,6 +2746,18 @@
         });
 
         node.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' && event.shiftKey) {
+            event.preventDefault();
+            event.stopPropagation();
+            toggleReviewed(marker);
+            return;
+          }
+          if (event.key === 'Delete' || event.key === 'Backspace') {
+            event.preventDefault();
+            event.stopPropagation();
+            deleteMarker(marker);
+            return;
+          }
           if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
           event.preventDefault();
           event.stopPropagation();
@@ -1397,15 +2775,12 @@
           return;
         }
 
-        // Gęstość: przy pełnym oddaleniu znaczniki nachodzą na siebie, więc widoczny
-        // zostaje ten o wyższym priorytecie (start > wejście > koniec), a resztę
-        // chowa kreska — nadal jest w kolejności Tab i wraca po fokusie lub najechaniu.
-        const gap = Math.max(4.5, width / 130);
-        const shown = [];
+        // Wszystkie znaczniki są widoczne. Nakładające się na siebie rozdziela
+        // warstwa (patrz CSS) i fokus, a nie chowanie — inaczej kolejność Tab
+        // rozjeżdżałaby się z tym, co widać.
         for (const entry of markerNodes.values()) {
           const { node, marker } = entry;
           const x = ((marker.time - wave.start) / wave.span) * width;
-          node.classList.remove('is-dense');
           if (x < -10 || x > width + 10) {
             node.hidden = true;
             continue;
@@ -1413,13 +2788,6 @@
           node.hidden = false;
           node.style.left = `${x}px`;
           node.setAttribute('aria-label', `${marker.name}, ${fmtPrecise(marker.time)}`);
-          shown.push({ entry, x });
-        }
-
-        const taken = [];
-        for (const item of [...shown].sort((a, b) => a.entry.marker.priority - b.entry.marker.priority)) {
-          if (taken.some((other) => Math.abs(other - item.x) < gap)) item.entry.node.classList.add('is-dense');
-          else taken.push(item.x);
         }
       };
 
@@ -1434,13 +2802,16 @@
           if (entry) {
             // Ten sam obiekt znacznika trzymają domknięcia przeciągania i klawiatury.
             Object.assign(entry.marker, marker);
+            entry.node.classList.toggle('is-reviewed', Boolean(marker.reviewed));
+            entry.node.setAttribute('aria-pressed', String(Boolean(marker.reviewed)));
             continue;
           }
           const node = document.createElement('button');
           node.type = 'button';
-          node.className = `wave-marker is-${marker.kind}`;
+          node.className = `wave-marker is-${marker.kind}${marker.reviewed ? ' is-reviewed' : ''}`;
           node.dataset.markerKey = marker.key;
-          node.title = `${marker.name} — przeciągnij albo ←/→`;
+          node.title = `${marker.name} — przeciągnij albo ←/→; Del usuwa; Shift+Enter = ok`;
+          node.setAttribute('aria-pressed', String(Boolean(marker.reviewed)));
           const line = document.createElement('span');
           line.className = 'wave-marker-line';
           const dot = document.createElement('span');
@@ -1456,6 +2827,8 @@
           markerNodes.delete(key);
         }
         positionMarkers();
+        updateNav();
+        updateCounts();
         if (focusedKey) {
           container.querySelector(`[data-marker-key="${focusedKey}"]`)?.focus({ preventScroll: true });
         }
@@ -1471,6 +2844,7 @@
       const syncPlayhead = () => {
         const node = $('wave-playhead');
         const width = stageEl().clientWidth;
+        updateNav();
         const time = $('audio').currentTime;
         if (!wave.peaks || !wave.span || !width || !Number.isFinite(time)) {
           node.hidden = true;
@@ -1521,6 +2895,7 @@
       const seekQuiet = (time) => {
         const audio = $('audio');
         if (!Number.isFinite(time) || !wave.duration) return;
+        resetJumpChain();
         audio.currentTime = clampNumber(time, 0, wave.duration);
         $('clock').textContent = fmt(audio.currentTime);
         syncPlayhead();
@@ -1577,6 +2952,7 @@
         wave.peaks = null;
         wave.duration = 0;
         wave.span = 0;
+        wave.restoreWindow = null;
         $('wave-markers').textContent = '';
         $('wave-playhead').hidden = true;
         $('wave-fallback-reason').textContent = reason;
@@ -1623,6 +2999,12 @@
         setWaveTools(true);
         buildMarkers();
         setWindow(0, wave.duration);
+        // Okno z poprzedniego życia strony (odświeżenie po zmianie pliku).
+        if (wave.restoreWindow) {
+          const saved = wave.restoreWindow;
+          wave.restoreWindow = null;
+          setWindow(saved.start, saved.span);
+        }
       };
 
       const audioEl = $('audio');
@@ -1734,8 +3116,46 @@
         } else if (event.key === '-') {
           event.preventDefault();
           zoomWave(1.7);
+        } else if (event.key === ',' || event.key === '.') {
+          event.preventDefault();
+          jumpToMarker(event.key === ',' ? -1 : 1);
+        } else if (event.shiftKey && event.code === 'KeyN') {
+          event.preventDefault();
+          addTopicAt($('audio').currentTime);
         }
       });
+
+      $('wave-add').addEventListener('click', () => addTopicAt($('audio').currentTime));
+
+      stageEl().addEventListener('contextmenu', (event) => {
+        if (!wave.peaks) return;
+        // Na znaczniku nie ma jeszcze własnych akcji — zostawiamy menu przeglądarki
+        // i chowamy nasze, żeby nie wisiało pod kursorem.
+        const markerNode = event.target.closest('.wave-marker');
+        if (markerNode) {
+          const entry = markerNodes.get(markerNode.dataset.markerKey);
+          if (!entry) return;
+          event.preventDefault();
+          openMenuAt(event.clientX, event.clientY, entry.marker.time, markerNode, entry.marker);
+          return;
+        }
+        event.preventDefault();
+        const rect = stageEl().getBoundingClientRect();
+        const inside = event.clientX >= rect.left && event.clientX <= rect.right;
+        const time = inside ? timeAt(event.clientX) : $('audio').currentTime;
+        openMenuAt(
+          inside ? event.clientX : rect.left + rect.width / 2,
+          inside ? event.clientY : rect.bottom,
+          time,
+          stageEl()
+        );
+      });
+
+      // Kółko zmienia okno, więc punkt pod menu przestaje być tym samym miejscem.
+      stageEl().addEventListener('wheel', () => closeMenu(), { passive: true });
+
+      $('wave-prev').addEventListener('click', () => jumpToMarker(-1));
+      $('wave-next').addEventListener('click', () => jumpToMarker(1));
 
       $('wave-retry').addEventListener('click', () => {
         if (!wave.id) return;
@@ -1754,6 +3174,7 @@
           const audio = $('audio');
           const delta = Number(button.dataset.skip);
           const limit = Number.isFinite(audio.duration) ? audio.duration : audio.currentTime + delta;
+          resetJumpChain();
           audio.currentTime = Math.min(Math.max(0, audio.currentTime + delta), limit);
         });
       }
@@ -1845,21 +3266,25 @@
               addTopics: state.addTopics,
             }),
           });
-          const data = await response.json().catch(() => ({}));
-          if (!response.ok) {
-            setStatus('error', `błąd: ${data.error ?? `serwer odpowiedział ${response.status}`}`);
+          // Sam status 200 nie wystarcza: przy padniętym serwerze albo pośredniku
+          // odpowiedź bywa pusta, a wtedy „zapisane” byłoby kłamstwem.
+          const data = await response.json().catch(() => null);
+          if (!response.ok || data?.ok !== true) {
+            const reason = data?.error ?? (response.ok ? 'serwer nie potwierdził zapisu' : `serwer odpowiedział ${response.status}`);
+            setStatus('error', 'błąd: nie zapisano', `błąd: nie zapisano — ${reason}`);
             return false;
           }
           const label = savedLabel();
           const note = `${label} — zbuduj stronę (npm run build)`;
           setDirty(false);
+          dropDraft(episode.id);
           setStatus('saved', label, note);
           statusTimer = setTimeout(() => setStatus('clean', label, note), 4000);
           episodes = episodes.map((item) => (item.id === episode.id ? { ...item, displayTitle: $('title').value.trim() || item.originalTitle } : item));
           renderList();
           return true;
         } catch (error) {
-          setStatus('error', `błąd: ${error.message}`);
+          setStatus('error', 'błąd: nie zapisano', `błąd: nie zapisano — ${error.message}`);
           return false;
         }
       };
@@ -1896,6 +3321,117 @@
         true
       );
 
+      // --- Odświeżanie na żywo: serwer pilnuje pliku, przeglądarka tylko podmienia stronę ---
+
+      const SESSION_KEY = 'edytor.session';
+      const pageLoadedAt = performance.timeOrigin;
+
+      // Stan wczytujemy z powrotem po przeładowaniu, żeby zmiana pliku nie wyglądała
+      // jak zamknięcie i otwarcie edytora — tylko jak podmiana kodu.
+      const stashSession = () => {
+        try {
+          sessionStorage.setItem(
+            SESSION_KEY,
+            JSON.stringify({
+              id: state.episode?.id ?? null,
+              time: $('audio').currentTime,
+              paused: $('audio').paused,
+              scrollY: window.scrollY,
+              start: wave.start,
+              span: wave.span,
+              filter: $('filter').value,
+              autoSave: $('auto-save').checked,
+            })
+          );
+        } catch {}
+      };
+
+      const takeSession = () => {
+        try {
+          const raw = sessionStorage.getItem(SESSION_KEY);
+          sessionStorage.removeItem(SESSION_KEY);
+          return raw ? JSON.parse(raw) : null;
+        } catch {
+          return null;
+        }
+      };
+
+      const restoreSession = async (saved) => {
+        if (!saved?.id) return;
+        // Stan z sesji mógł powstać wcześniej niż localStorage, więc przełącznik
+        // ustawiamy przez zdarzenie — inaczej zmienna i checkbox by się rozjechały.
+        if (typeof saved.autoSave === 'boolean' && $('auto-save').checked !== saved.autoSave) {
+          $('auto-save').click();
+        }
+        if (Number.isFinite(saved.start) && saved.span > 0) {
+          wave.restoreWindow = { start: saved.start, span: saved.span };
+        }
+        await openEpisode(saved.id);
+        const audio = $('audio');
+        if (Number.isFinite(saved.time) && saved.time > 0) {
+          audio.currentTime = saved.time;
+          // Metadane potrafią wczytać się po ustawieniu czasu i cofnąć seek.
+          audio.addEventListener(
+            'loadedmetadata',
+            () => {
+              if (Math.abs(audio.currentTime - saved.time) > 0.5) audio.currentTime = saved.time;
+            },
+            { once: true }
+          );
+          $('clock').textContent = fmt(audio.currentTime);
+        }
+        if (saved.paused === false) audio.play().catch(() => {});
+        if (saved.filter) {
+          $('filter').value = saved.filter;
+          renderList();
+        }
+        window.scrollTo(0, saved.scrollY ?? 0);
+        requestAnimationFrame(() => window.scrollTo(0, saved.scrollY ?? 0));
+      };
+
+      const reloadPrompt = $('reload-prompt');
+      let serverMtime = null;
+
+      const onServerFile = (mtime) => {
+        if (!Number.isFinite(mtime)) return;
+        const first = serverMtime === null;
+        const changed = !first && mtime !== serverMtime;
+        serverMtime = mtime;
+        // Pierwsze podłączenie porównuje plik z chwilą wczytania strony: nowszy plik
+        // znaczy, że karta jest starsza niż kod (np. po restarcie serwera).
+        const stale = first ? mtime > pageLoadedAt : changed;
+        if (!stale) return;
+        if (dirty) {
+          // Niezapisane zmiany nie mogą zniknąć pod ręką — o odświeżeniu decyduje człowiek.
+          reloadPrompt.hidden = false;
+          return;
+        }
+        stashSession();
+        location.reload();
+      };
+
+      const eventsSource = new EventSource('/api/events');
+      eventsSource.addEventListener('open', () => serverBack());
+      eventsSource.addEventListener('error', () => serverDown());
+      eventsSource.addEventListener('hello', (event) => onServerFile(JSON.parse(event.data).mtime));
+      eventsSource.addEventListener('change', (event) => onServerFile(JSON.parse(event.data).mtime));
+      const retryConnection = async () => {
+        if (await probeHealth()) serverBack();
+        // Nadal nic: banner mrugnie w odpowiedzi na klik, bez nowego komunikatu.
+        else setBanner(true);
+      };
+
+      $('health-retry').addEventListener('click', retryConnection);
+      $('net-retry').addEventListener('click', retryConnection);
+      reloadPrompt.addEventListener('click', () => {
+        // Świadoma zgoda: porzucamy niezapisane zmiany, ale zostaje odcinek, czas i zoom.
+        // Kopia robocza i tak powstaje, więc po przeładowaniu jest co przywrócić.
+        writeDraft();
+        stashSession();
+        location.reload();
+      });
+      window.addEventListener('pagehide', () => eventsSource.close());
+
       const load = async () => {
         const response = await fetch('/api/episodes');
         const data = await response.json();
@@ -1903,7 +3439,48 @@
         renderList();
       };
 
-      load();
+      // Wysokość nagłówka bywa różna (zawija się przy węższym oknie), a sidebar
+      // przykleja się tuż pod nim — stąd mierzona zmienna zamiast liczby w CSS.
+      let headerSize = 0;
+      let bannerSize = -1;
+      const syncChrome = () => {
+        const header = Math.round(document.querySelector('header').getBoundingClientRect().height);
+        if (header !== headerSize) {
+          headerSize = header;
+          document.documentElement.style.setProperty('--header-h', `${header}px`);
+        }
+        // Banner jest w układzie i sam spycha treść, ale przyklejone sidebar i player
+        // muszą znać jego wysokość, żeby nie wjechały pod niego.
+        const bannerNode = document.getElementById('net-banner');
+        const bannerHeight = bannerNode.hidden ? 0 : Math.round(bannerNode.getBoundingClientRect().height);
+        if (bannerHeight !== bannerSize) {
+          bannerSize = bannerHeight;
+          document.documentElement.style.setProperty('--banner-h', `${bannerHeight}px`);
+        }
+      };
+      syncChrome();
+      window.addEventListener('resize', syncChrome);
+      if ('ResizeObserver' in window) {
+        new ResizeObserver(() => syncChrome()).observe(document.querySelector('.main'));
+      }
+
+      const boot = async () => {
+        sweepDrafts();
+        const saved = takeSession();
+        await load();
+        if (saved) {
+          await restoreSession(saved);
+          return;
+        }
+        // Bez sesji i bez ?id= otwieramy najnowszy odcinek, żeby edytor nigdy nie był pusty.
+        const requested = new URLSearchParams(location.search).get('id');
+        const target = episodes.some((entry) => entry.id === requested) ? requested : episodes[0]?.id;
+        if (!target) return;
+        $('empty').textContent = 'wczytuję odcinek…';
+        await openEpisode(target);
+      };
+
+      boot();
 
       // --- Zakładka „Tagi”: warianty nazw (data/aliases.json) ---
 
