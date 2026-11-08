@@ -1812,6 +1812,32 @@ a {
   outline-offset: -2px;
 }
 
+.report-link {
+  display: inline-block;
+  margin-left: 8px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+  vertical-align: baseline;
+  opacity: 0.75;
+}
+
+.report-link:hover {
+  color: var(--accent);
+  border-bottom-style: solid;
+  opacity: 1;
+}
+
+.report-link--head {
+  font-size: 11.5px;
+  opacity: 1;
+}
+
 .tag-deeplink {
   margin: 0 0 12px;
   padding: 8px 12px;

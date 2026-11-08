@@ -1,0 +1,29 @@
+---
+/**
+ * Link do zgłoszenia błędu w formularzu Google. Wartość pola „Element" jest
+ * czytelna dla człowieka i maszynowa zarazem: `<slug>|<typ>:<id>|<opis>`.
+ * Prefill idzie w adresie, więc nie ma żadnego backendu po naszej stronie.
+ */
+const REPORT_FORM =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdnSKLoHH2ImaOcsEzU705lGpm2Grdly762owR2wW86LqG6RA/viewform';
+const ENTRY_ELEMENT = 'entry.915308992';
+
+interface Props {
+  element: string;
+  label?: string;
+  class?: string;
+}
+
+const { element, label = 'Zgłoś', class: className } = Astro.props;
+const href = `${REPORT_FORM}?usp=pp_url&${ENTRY_ELEMENT}=${encodeURIComponent(element)}`;
+---
+
+<a
+  class:list={['report-link', className]}
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  title={`Zgłoś błąd: ${element}`}
+>
+  {label}
+</a>
