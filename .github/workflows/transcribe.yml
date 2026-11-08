@@ -60,12 +60,12 @@ env:
 
 jobs:
   plan:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     outputs:
       matrix: ${{ steps.build.outputs.matrix }}
       count: ${{ steps.build.outputs.count }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       # Długość audio bierzemy z pliku, a nie z transkryptu — potrzebny ffprobe.
       - name: Zainstaluj ffmpeg
@@ -84,7 +84,7 @@ jobs:
   transcribe:
     needs: plan
     if: needs.plan.outputs.count != '0'
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 90
     env:
       MAX_LEN: ${{ inputs.max_len }}
@@ -96,7 +96,7 @@ jobs:
       matrix:
         include: ${{ fromJSON(needs.plan.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       # Obraz ubuntu-24.04 nie ma ffmpeg w PATH, a skrypt przycina nim audio.
       - name: Zainstaluj ffmpeg
@@ -156,9 +156,9 @@ jobs:
 
   commit:
     needs: transcribe
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - uses: actions/download-artifact@v8
         with:
