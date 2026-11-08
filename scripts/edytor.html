@@ -112,6 +112,20 @@
         background: var(--surface);
         box-shadow: 0 -5px 12px rgba(28, 26, 24, 0.05);
       }
+      #editor > .toolbar .reload-prompt {
+        padding: 3px 9px;
+        border: 1px solid #d99b00;
+        border-radius: 5px;
+        background: #fdf3dd;
+        color: #7a5a08;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      #editor > .toolbar .reload-prompt:hover { background: #fbe9c2; color: #7a5a08; border-color: #b88300; }
+      #editor > .toolbar .reload-prompt[hidden] { display: none; }
+      #editor > .toolbar .reload-prompt:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
       .auto-save {
         display: inline-flex;
         align-items: center;
@@ -463,6 +477,8 @@
                 <span><i class="dot-topic"></i>wejście</span>
               </span>
               <span class="wave-tools">
+                <button type="button" id="wave-prev" title="Poprzedni znacznik" aria-label="Poprzedni znacznik" disabled>‹</button>
+                <button type="button" id="wave-next" title="Następny znacznik" aria-label="Następny znacznik" disabled>›</button>
                 <button type="button" id="wave-out" title="Oddal" aria-label="Oddal waveform" disabled>−</button>
                 <button type="button" id="wave-in" title="Przybliż" aria-label="Przybliż waveform" disabled>+</button>
                 <button type="button" id="wave-all" disabled>całość</button>
@@ -489,7 +505,7 @@
               </div>
             </div>
             <p class="wave-hint">
-              kółko = zoom, tło = przesuń, klik = przewiń bez grania, dwuklik = graj, spacja = graj/pauza; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s); początek tnie poprzedni fragment
+              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń; początek tnie poprzedni fragment
             </p>
           </section>
 
@@ -554,6 +570,9 @@
               />
               auto-zapis
             </label>
+            <button type="button" class="reload-prompt" id="reload-prompt" hidden>
+              edytor zmieniony — odśwież
+            </button>
             <span class="save-state" id="status" data-state="clean" role="status" aria-live="polite">
               <span class="save-dot" aria-hidden="true"></span>
               <span class="save-text">brak zmian</span>
@@ -1111,7 +1130,9 @@
       // --- Waveform: głośność nagrania, zoom, przesuwanie okna, znaczniki ---
 
       const PEAKS_PER_SECOND = 100;
-      const MIN_WAVE_SPAN = 5;
+      // 1 słupek = 10 ms (100 na sekundę), więc 0,25 s to 25 słupków — poniżej tego
+      // rysowalibyśmy mniej słupków niż pikseli i wymyślali szczegół, którego nie ma.
+      const MIN_WAVE_SPAN = 0.25;
       const peaksCache = new Map();
       const peaksPending = new Map();
 
@@ -1126,6 +1147,7 @@
         frame: 0,
         pan: null,
         undoTaken: false,
+        restoreWindow: null,
       };
 
       const clampNumber = (value, low, high) => Math.min(high, Math.max(low, value));
@@ -1136,7 +1158,9 @@
         if (wave.span > 30) return fmt(seconds);
         const total = Math.max(0, seconds);
         const minutes = Math.floor(total / 60);
-        const rest = (total % 60).toFixed(1).padStart(4, '0');
+        // Przy oknie poniżej 3 s setne są potrzebne, inaczej etykieta stoi w miejscu.
+        const digits = wave.span <= 3 ? 2 : 1;
+        const rest = (total % 60).toFixed(digits).padStart(digits + 3, '0');
         return `${minutes}:${rest}`;
       };
 
@@ -1147,7 +1171,7 @@
       };
 
       const setWaveTools = (enabled) => {
-        for (const id of ['wave-in', 'wave-out', 'wave-all']) $(id).disabled = !enabled;
+        for (const id of ['wave-in', 'wave-out', 'wave-all', 'wave-prev', 'wave-next']) $(id).disabled = !enabled;
       };
 
       const drawWave = () => {
@@ -1341,7 +1365,88 @@
         node.style.left = `${((marker.time - wave.start) / wave.span) * width}px`;
         const label = `${marker.name}, ${fmtPrecise(marker.time)}`;
         node.setAttribute('aria-label', label);
-        node.title = `${label} — przeciągnij albo ←/→ (Alt = 10 ms, Shift = 1 s)`;
+        node.title = `${label} — przeciągnij albo ←/→ (Alt = 10 ms, Shift = 1 s); Del usuwa`;
+      };
+
+      // Skoki po znacznikach: ‹/› (oraz przecinek i kropka na scenie) tylko przesuwają
+      // kursor, więc odtwarzanie zostaje w tym stanie, w jakim było.
+      const markerTimes = () =>
+        [...markerNodes.values()]
+          .map((entry) => entry.marker.time)
+          .filter((time) => Number.isFinite(time))
+          .sort((left, right) => left - right);
+
+      const updateNav = () => {
+        const times = markerTimes();
+        const time = $('audio').currentTime;
+        const ready = Boolean(wave.peaks) && times.length > 0 && Number.isFinite(time);
+        $('wave-prev').disabled = !ready || !times.some((value) => value < time - 0.001);
+        $('wave-next').disabled = !ready || !times.some((value) => value > time + 0.001);
+      };
+
+      const jumpToMarker = (direction) => {
+        const times = markerTimes();
+        const audio = $('audio');
+        const time = audio.currentTime;
+        if (times.length === 0 || !Number.isFinite(time)) return;
+        const target =
+          direction < 0
+            ? [...times].reverse().find((value) => value < time - 0.001)
+            : times.find((value) => value > time + 0.001);
+        if (target === undefined) return;
+        audio.currentTime = target;
+        $('clock').textContent = fmt(audio.currentTime);
+        // Okno przesuwa się tylko wtedy, gdy cel wypada poza widokiem.
+        if (target < wave.start || target > wave.start + wave.span) {
+          setWindow(target - wave.span / 2, wave.span);
+        }
+        syncPlayhead();
+        drawWave();
+        updateNav();
+      };
+
+      // Usunięcie znacznika to ta sama poprawka `hide`, którą pisze przycisk „ukryj”,
+      // więc Ctrl+Z je cofa, a ukrycie przeżywa przeładowanie. Koniec poprzedniego
+      // fragmentu wynika z następnego początku, więc skraca się sam.
+      const deleteMarker = (marker) => {
+        const object = marker.object;
+        const time = marker.time;
+        const neighbours = collectMarkers()
+          .filter((entry) => entry.object !== object)
+          .sort((left, right) => left.time - right.time);
+        const nextIndex = neighbours.findIndex((entry) => entry.time >= time);
+        const focusTarget = nextIndex >= 0 ? neighbours[nextIndex] : neighbours.at(-1);
+        // Usunięcie początku scali dwa fragmenty: poprzedni sięga teraz do następnego
+        // początku, a gdy żadnego nie ma — do końca kasowanego fragmentu.
+        const previous = precedingFragment(marker, time);
+        const following = followingFragment(marker, time);
+        const removedEnd = marker.kind === 'start' ? trackEnd(object) : topicEnd(object);
+
+        pushUndo();
+        if (state.tracks.includes(object)) {
+          state.hiddenTracks.push({ artist: object.artist, title: object.title, album: object.album, hide: true });
+          state.tracks.splice(state.tracks.indexOf(object), 1);
+        } else if (state.topics.includes(object)) {
+          state.hiddenTopics.push({ time: object.start, label: object.label, hide: true });
+          state.topics.splice(state.topics.indexOf(object), 1);
+        } else if (state.addTracks.includes(object)) {
+          state.addTracks.splice(state.addTracks.indexOf(object), 1);
+        } else if (state.addTopics.includes(object)) {
+          state.addTopics.splice(state.addTopics.indexOf(object), 1);
+        } else {
+          return;
+        }
+        if (previous && previous.end !== null && Math.abs(previous.end - time) <= 0.5) {
+          setFragmentEnd(previous, following ? Number(following.start) : (removedEnd ?? time));
+        }
+        markDirty();
+        renderTracks();
+        renderTopics();
+        renderAdded();
+        renderRestore();
+        // waveSync() odkłada przebudowę do rAF, a fokus potrzebuje węzła już teraz.
+        buildMarkers();
+        if (focusTarget) markerNodes.get(focusTarget.key)?.node.focus({ preventScroll: true });
       };
 
       const bindMarker = (node, marker) => {
@@ -1380,6 +1485,12 @@
         });
 
         node.addEventListener('keydown', (event) => {
+          if (event.key === 'Delete' || event.key === 'Backspace') {
+            event.preventDefault();
+            event.stopPropagation();
+            deleteMarker(marker);
+            return;
+          }
           if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
           event.preventDefault();
           event.stopPropagation();
@@ -1440,7 +1551,7 @@
           node.type = 'button';
           node.className = `wave-marker is-${marker.kind}`;
           node.dataset.markerKey = marker.key;
-          node.title = `${marker.name} — przeciągnij albo ←/→`;
+          node.title = `${marker.name} — przeciągnij albo ←/→; Del usuwa`;
           const line = document.createElement('span');
           line.className = 'wave-marker-line';
           const dot = document.createElement('span');
@@ -1456,6 +1567,7 @@
           markerNodes.delete(key);
         }
         positionMarkers();
+        updateNav();
         if (focusedKey) {
           container.querySelector(`[data-marker-key="${focusedKey}"]`)?.focus({ preventScroll: true });
         }
@@ -1471,6 +1583,7 @@
       const syncPlayhead = () => {
         const node = $('wave-playhead');
         const width = stageEl().clientWidth;
+        updateNav();
         const time = $('audio').currentTime;
         if (!wave.peaks || !wave.span || !width || !Number.isFinite(time)) {
           node.hidden = true;
@@ -1577,6 +1690,7 @@
         wave.peaks = null;
         wave.duration = 0;
         wave.span = 0;
+        wave.restoreWindow = null;
         $('wave-markers').textContent = '';
         $('wave-playhead').hidden = true;
         $('wave-fallback-reason').textContent = reason;
@@ -1623,6 +1737,12 @@
         setWaveTools(true);
         buildMarkers();
         setWindow(0, wave.duration);
+        // Okno z poprzedniego życia strony (odświeżenie po zmianie pliku).
+        if (wave.restoreWindow) {
+          const saved = wave.restoreWindow;
+          wave.restoreWindow = null;
+          setWindow(saved.start, saved.span);
+        }
       };
 
       const audioEl = $('audio');
@@ -1734,8 +1854,14 @@
         } else if (event.key === '-') {
           event.preventDefault();
           zoomWave(1.7);
+        } else if (event.key === ',' || event.key === '.') {
+          event.preventDefault();
+          jumpToMarker(event.key === ',' ? -1 : 1);
         }
       });
+
+      $('wave-prev').addEventListener('click', () => jumpToMarker(-1));
+      $('wave-next').addEventListener('click', () => jumpToMarker(1));
 
       $('wave-retry').addEventListener('click', () => {
         if (!wave.id) return;
@@ -1896,6 +2022,105 @@
         true
       );
 
+      // --- Odświeżanie na żywo: serwer pilnuje pliku, przeglądarka tylko podmienia stronę ---
+
+      const SESSION_KEY = 'edytor.session';
+      const pageLoadedAt = performance.timeOrigin;
+
+      // Stan wczytujemy z powrotem po przeładowaniu, żeby zmiana pliku nie wyglądała
+      // jak zamknięcie i otwarcie edytora — tylko jak podmiana kodu.
+      const stashSession = () => {
+        try {
+          sessionStorage.setItem(
+            SESSION_KEY,
+            JSON.stringify({
+              id: state.episode?.id ?? null,
+              time: $('audio').currentTime,
+              paused: $('audio').paused,
+              scrollY: window.scrollY,
+              start: wave.start,
+              span: wave.span,
+              filter: $('filter').value,
+              autoSave: $('auto-save').checked,
+            })
+          );
+        } catch {}
+      };
+
+      const takeSession = () => {
+        try {
+          const raw = sessionStorage.getItem(SESSION_KEY);
+          sessionStorage.removeItem(SESSION_KEY);
+          return raw ? JSON.parse(raw) : null;
+        } catch {
+          return null;
+        }
+      };
+
+      const restoreSession = async (saved) => {
+        if (!saved?.id) return;
+        // Stan z sesji mógł powstać wcześniej niż localStorage, więc przełącznik
+        // ustawiamy przez zdarzenie — inaczej zmienna i checkbox by się rozjechały.
+        if (typeof saved.autoSave === 'boolean' && $('auto-save').checked !== saved.autoSave) {
+          $('auto-save').click();
+        }
+        if (Number.isFinite(saved.start) && saved.span > 0) {
+          wave.restoreWindow = { start: saved.start, span: saved.span };
+        }
+        await openEpisode(saved.id);
+        const audio = $('audio');
+        if (Number.isFinite(saved.time) && saved.time > 0) {
+          audio.currentTime = saved.time;
+          // Metadane potrafią wczytać się po ustawieniu czasu i cofnąć seek.
+          audio.addEventListener(
+            'loadedmetadata',
+            () => {
+              if (Math.abs(audio.currentTime - saved.time) > 0.5) audio.currentTime = saved.time;
+            },
+            { once: true }
+          );
+          $('clock').textContent = fmt(audio.currentTime);
+        }
+        if (saved.paused === false) audio.play().catch(() => {});
+        if (saved.filter) {
+          $('filter').value = saved.filter;
+          renderList();
+        }
+        window.scrollTo(0, saved.scrollY ?? 0);
+        requestAnimationFrame(() => window.scrollTo(0, saved.scrollY ?? 0));
+      };
+
+      const reloadPrompt = $('reload-prompt');
+      let serverMtime = null;
+
+      const onServerFile = (mtime) => {
+        if (!Number.isFinite(mtime)) return;
+        const first = serverMtime === null;
+        const changed = !first && mtime !== serverMtime;
+        serverMtime = mtime;
+        // Pierwsze podłączenie porównuje plik z chwilą wczytania strony: nowszy plik
+        // znaczy, że karta jest starsza niż kod (np. po restarcie serwera).
+        const stale = first ? mtime > pageLoadedAt : changed;
+        if (!stale) return;
+        if (dirty) {
+          // Niezapisane zmiany nie mogą zniknąć pod ręką — o odświeżeniu decyduje człowiek.
+          reloadPrompt.hidden = false;
+          return;
+        }
+        stashSession();
+        location.reload();
+      };
+
+      const eventsSource = new EventSource('/api/events');
+      eventsSource.addEventListener('hello', (event) => onServerFile(JSON.parse(event.data).mtime));
+      eventsSource.addEventListener('change', (event) => onServerFile(JSON.parse(event.data).mtime));
+      reloadPrompt.addEventListener('click', () => {
+        // Świadoma zgoda: porzucamy niezapisane zmiany, ale zostaje odcinek, czas i zoom.
+        stashSession();
+        location.reload();
+      });
+      window.addEventListener('pagehide', () => eventsSource.close());
+
       const load = async () => {
         const response = await fetch('/api/episodes');
         const data = await response.json();
@@ -1903,7 +2128,13 @@
         renderList();
       };
 
-      load();
+      const boot = async () => {
+        const saved = takeSession();
+        await load();
+        if (saved) await restoreSession(saved);
+      };
+
+      boot();
 
       // --- Zakładka „Tagi”: warianty nazw (data/aliases.json) ---
 

@@ -11,7 +11,7 @@
     "import:tagger": "node scripts/import-tagger.mjs",
     "check": "node scripts/check-data.mjs",
     "queue": "node scripts/queue.mjs",
-    "edytor": "node scripts/edytor.mjs",
+    "edytor": "node --watch scripts/edytor.mjs",
     "test:e2e": "node scripts/e2e-tagi.mjs",
     "release": "semantic-release",
     "transcribe": "node scripts/transcribe.mjs",

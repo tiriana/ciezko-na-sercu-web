@@ -8,7 +8,8 @@
 import { createServer } from 'node:http';
 import { spawn } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir, stat } from 'node:fs/promises';
+import { watch } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -150,6 +151,9 @@ const applyOverrides = (episode, override) => {
     if (!track) continue;
     if (fix.start !== undefined) track.start = fix.start;
     if (fix.durationSec !== undefined) track.durationSec = fix.durationSec;
+    // `end` podmienia granicę utworu, gdy redakcja przecięła go ręcznie (to samo pole
+    // czyta src/lib/data.ts); bez tego edytor po przeładowaniu liczyłby koniec z durationSec.
+    if (fix.end !== undefined) track.end = fix.end;
     if (fix.newArtist !== undefined) track.artist = fix.newArtist;
     if (fix.newTitle !== undefined) track.title = fix.newTitle;
     if (fix.newAlbum !== undefined) track.album = fix.newAlbum;
@@ -164,6 +168,7 @@ const applyOverrides = (episode, override) => {
     const topic = result.topics.find((candidate) => candidate.start === fix.time && same(candidate.label, fix.label));
     if (!topic) continue;
     if (fix.start !== undefined) topic.start = fix.start;
+    if (fix.end !== undefined) topic.end = fix.end;
     if (fix.newLabel) topic.label = fix.newLabel;
   }
   result.topics = result.topics.filter(
@@ -171,6 +176,58 @@ const applyOverrides = (episode, override) => {
   );
   return result;
 };
+
+// Podgląd pliku edytora: przeglądarka dostaje zdarzenie SSE i odświeża się sama,
+// zamiast czekać, aż ktoś zgasi serwer. Restart procesu (node --watch) nie psuje
+// niczego, bo klienci to zwykłe odpowiedzi HTTP — po restarcie EventSource łączy się
+// ponownie i dostaje świeży stan pliku.
+const HTML_PATH = join(ROOT, 'scripts', 'edytor.html');
+const events = new Set();
+let htmlMtime = 0;
+
+const readHtmlMtime = async () => {
+  try {
+    htmlMtime = (await stat(HTML_PATH)).mtimeMs;
+  } catch {}
+  return htmlMtime;
+};
+
+const broadcastChange = () => {
+  const payload = `event: change\ndata: ${JSON.stringify({ mtime: htmlMtime })}\n\n`;
+  for (const client of events) {
+    try {
+      client.write(payload);
+    } catch {
+      events.delete(client);
+    }
+  }
+};
+
+let watchTimer = 0;
+const watcher = watch(dirname(HTML_PATH), { persistent: false }, (_event, filename) => {
+  // Zmiana przez zapis atomowy podmienia plik na nowy i wywołuje rename — stąd filtr
+  // po nazwie zamiast po typie zdarzenia.
+  if (filename && filename !== 'edytor.html') return;
+  clearTimeout(watchTimer);
+  watchTimer = setTimeout(async () => {
+    await readHtmlMtime();
+    broadcastChange();
+  }, 150);
+});
+watcher.on('error', (error) => console.error('podgląd edytora:', error.message));
+readHtmlMtime();
+
+// Puls co 25 s trzyma połączenie przy życiu i usuwa te, które już nie odpowiadają.
+const heartbeat = setInterval(() => {
+  for (const client of events) {
+    try {
+      client.write(': puls\n\n');
+    } catch {
+      events.delete(client);
+    }
+  }
+}, 25_000);
+heartbeat.unref();
 
 const json = (res, status, value) => {
   res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' });
@@ -269,6 +326,20 @@ const server = createServer(async (req, res) => {
       // Bez tego przeglądarka trzyma starą wersję edytora i nowe skróty „nie działają”.
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
       res.end(await readFile(join(ROOT, 'scripts', 'edytor.html'), 'utf8'));
+      return;
+    }
+
+    if (url.pathname === '/api/events') {
+      res.writeHead(200, {
+        'content-type': 'text/event-stream; charset=utf-8',
+        'cache-control': 'no-store',
+        connection: 'keep-alive',
+      });
+      res.write('retry: 1000\n\n');
+      res.write(`event: hello\ndata: ${JSON.stringify({ mtime: htmlMtime })}\n\n`);
+      events.add(res);
+      // Bez tego zamknięta karta zostawia wpis i każde odświeżenie mnoży klientów.
+      res.on('close', () => events.delete(res));
       return;
     }
 
