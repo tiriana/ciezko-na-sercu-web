@@ -703,7 +703,14 @@ a {
 .tracks {
   width: 100%;
   border-collapse: collapse;
+  /* Stałe szerokości kolumn: bez tego ukrycie wejść zwęża kolumnę albumu
+     i cała tabela przesuwa się w bok przy każdym przełączeniu. */
+  table-layout: fixed;
   font-size: 14px;
+}
+
+.tracks th:nth-child(3) {
+  width: 24%;
 }
 
 .tracks th {
