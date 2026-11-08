@@ -77,3 +77,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main -f screenshots=false
+
+      # Nowy odcinek ma pierwszeństwo przed kolejką, więc transkrypcję zamawiamy od razu
+      # po odświeżeniu katalogu. Plan bierze najnowszy odcinek bez transkryptu.
+      - name: Zamów transkrypcję nowego odcinka
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run transcribe-weekly.yml --ref main

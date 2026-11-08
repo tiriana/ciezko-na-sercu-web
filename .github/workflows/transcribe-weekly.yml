@@ -1,12 +1,16 @@
-name: transkrypcja dzienna
+name: transkrypcja tygodniowa
 
-# Jeden odcinek na dobę. Osobny workflow, bo nazwa przebiegu musi znać tytuł
-# audycji, a `run-name` w transcribe.yml widzi tylko swoje wejścia — tutaj
-# wybieramy następny odcinek i przekazujemy go razem z tytułem.
+# Jedna audycja w tygodniu, po pobraniu nowych odcinków. Osobny workflow, bo nazwa
+# przebiegu musi znać tytuł audycji, a `run-name` w transcribe.yml widzi tylko
+# swoje wejścia — tutaj wybieramy odcinek i przekazujemy go razem z tytułem.
+# Plan bierze najnowszy odcinek bez transkryptu, więc świeży materiał ma pierwszeństwo.
 
 on:
+  # Wtorkowe pobranie nowych audycji startuje 02:00 UTC, katalog odświeża się 04:00 UTC,
+  # a transkrypcja rusza po nim — i to natychmiast, dispatchem z refresh-catalog.yml.
+  # Ten cron jest tylko zapasem na wypadek, gdyby tamten dispatch nie doszedł.
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '30 4 * * 3'
   workflow_dispatch:
 
 run-name: "wybór odcinka do transkrypcji"
