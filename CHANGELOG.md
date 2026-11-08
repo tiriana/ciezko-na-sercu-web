@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.1.0...v1.1.1) (2026-11-08)
+
+### Bug Fixes
+
+* transkrypcja instaluje ffmpeg na runnerze ([8bbf952](https://github.com/tiriana/ciezko-na-sercu-web/commit/8bbf95217a451953aff44bc7561a398d000dc471))
+
 ## [1.1.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.0.11...v1.1.0) (2026-11-08)
 
 ### Features
