@@ -1468,10 +1468,11 @@ a {
   outline: none;
 }
 
-/* Obrys obejmuje samą linię, nie cały (niewidoczny) obszar kliknięcia. */
+/* Obrys otula samą linię (3 px), nie cały niewidoczny obszar kliknięcia —
+   z odstępem rósłby do ~13 px i wystawał pod wiersz. */
 .fragment-progress:focus-visible::before {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
+  outline: 1px solid var(--accent);
+  outline-offset: 0;
 }
 
 /* Na dotyku obszar kliknięcia rośnie — tam nie konkuruje z zaznaczaniem tekstu. */
