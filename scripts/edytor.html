@@ -925,14 +925,21 @@
         return best;
       };
 
+      const followingFragment = (marker, time) => {
+        let best = null;
+        for (const fragment of fragments()) {
+          if (fragment.object === marker.object) continue;
+          if (!Number.isFinite(fragment.start) || fragment.start <= time) continue;
+          if (!best || fragment.start < best.start) best = fragment;
+        }
+        return best;
+      };
+
+      // Koniec zmieniamy tylko w warstwie poprawki: `durationSec` to długość utworu
+      // z metadanych i zostaje bez zmian, bo to pole edytuje się w tabeli.
       const setFragmentEnd = (fragment, time) => {
         fragment.end = time;
         fragment.object.end = time;
-        if (!fragment.track) return;
-        const durationSec = Math.max(0, Math.round(time - Number(fragment.object.start)));
-        fragment.object.durationSec = durationSec;
-        const inputs = fieldInputs.get(fragment.object);
-        if (inputs?.duration) inputs.duration.value = String(durationSec);
       };
 
       const collectMarkers = () => {
@@ -955,15 +962,26 @@
         const old = marker.time;
         const ownEnd = marker.kind === 'start' ? trackEnd(marker.object) : topicEnd(marker.object);
         const previous = precedingFragment(marker, old);
+        const following = followingFragment(marker, old);
         const low = previous ? Number(previous.start) + MIN_FRAGMENT : 0;
-        const high = ownEnd === null ? wave.duration : Math.min(wave.duration, ownEnd - MIN_FRAGMENT);
-        const next = clampNumber(Math.round(requested * 10) / 10, low, Math.max(low, high));
+        // Kolejność fragmentów jest święta: początek nie wchodzi w poprzednika i nie
+        // przeskakuje następnego początku, bo to on wyznacza koniec tego fragmentu.
+        const high = Math.max(
+          low,
+          Math.min(
+            wave.duration,
+            ownEnd === null ? wave.duration : ownEnd - MIN_FRAGMENT,
+            following ? Number(following.start) - MIN_FRAGMENT : wave.duration
+          )
+        );
+        const next = clampNumber(Math.round(requested * 10) / 10, low, high);
         if (next === old) return;
         marker.time = next;
         marker.object.start = next;
         const inputs = fieldInputs.get(marker.object);
         if (inputs?.start) inputs.start.value = String(next);
-        if (previous && previous.end !== null && Math.abs(previous.end - old) <= 0.5) setFragmentEnd(previous, next);
+        // Koniec poprzedniego fragmentu to ten początek — bez tolerancji i bez przerw.
+        if (previous) setFragmentEnd(previous, next);
       };
 
       const placeMarker = (node, marker) => {
