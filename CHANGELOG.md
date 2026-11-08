@@ -1,3 +1,9 @@
+## [1.12.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.11.0...v1.12.0) (2026-11-08)
+
+### Features
+
+* podglądy feat/** pod adresem własnej gałęzi ([023ea02](https://github.com/tiriana/ciezko-na-sercu-web/commit/023ea0285cb153347f6d399f0b143f031298eb7b))
+
 ## [1.11.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.10.0...v1.11.0) (2026-11-08)
 
 ### Features
