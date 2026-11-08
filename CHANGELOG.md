@@ -1,3 +1,9 @@
+## [1.16.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.16.1...v1.16.2) (2026-11-08)
+
+### Bug Fixes
+
+* **edytor:** wyczyszczone pole poprawki nie trafia jako null ([3e0d589](https://github.com/tiriana/ciezko-na-sercu-web/commit/3e0d5897b6d8de8127e742c73185f7e7db5d94d1))
+
 ## [1.16.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.16.0...v1.16.1) (2026-11-08)
 
 ### Bug Fixes
