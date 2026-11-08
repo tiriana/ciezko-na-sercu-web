@@ -40,12 +40,12 @@
       .sidebar {
         position: sticky;
         /* 16 px = górny padding kolumny treści, żeby krawędzie się zgadzały */
-        top: calc(var(--header-h, 52px) + 16px);
+        top: calc(var(--header-h, 52px) + var(--banner-h, 0px) + 16px);
         z-index: 3;
         display: flex;
         flex-direction: column;
         gap: 8px;
-        height: calc(100dvh - var(--header-h, 52px) - 32px);
+        height: calc(100dvh - var(--header-h, 52px) - var(--banner-h, 0px) - 32px);
         padding: 12px;
         border-right: 1px solid var(--line);
         background: var(--surface);
@@ -96,7 +96,7 @@
         border-radius: 8px;
         background: var(--surface);
         position: sticky;
-        top: var(--header-h, 52px);
+        top: calc(var(--header-h, 52px) + var(--banner-h, 0px));
         z-index: 4;
       }
       .player audio { flex: 1 1 auto; height: 36px; }
@@ -159,11 +159,53 @@
         font-size: 12px;
       }
       #editor > .toolbar .health[hidden] { display: none; }
-      #editor > .toolbar .health[data-state="down"] {
-        border-color: #c8102e;
-        background: #fbe6e9;
-        color: #8d0b1d;
+      /* Awaria serwera: pełna szerokość pod nagłówkiem, nie do przeoczenia. */
+      .net-banner {
+        position: sticky;
+        top: var(--header-h, 52px);
+        z-index: 45;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 44px;
+        padding: 6px 16px;
+        background: #b3102c;
+        color: #fffdfb;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        box-shadow: 0 2px 10px rgba(28, 26, 24, 0.28);
+      }
+      .net-banner[hidden] { display: none; }
+      .net-banner .net-text { flex: 1 1 auto; }
+      .net-banner button {
+        flex: 0 0 auto;
+        padding: 5px 12px;
+        border: 1px solid rgba(255, 253, 251, 0.7);
+        border-radius: 5px;
+        background: #fffdfb;
+        color: #b3102c;
+        font: inherit;
+        font-size: 12.5px;
         font-weight: 600;
+        cursor: pointer;
+      }
+      .net-banner button:hover { background: #fbe6e9; }
+      .net-banner button:focus-visible { outline: 2px solid #fffdfb; outline-offset: 2px; }
+      @keyframes net-attention {
+        0%, 100% { background-color: #b3102c; }
+        50% { background-color: #e01a3c; }
+      }
+      /* Dwie zmiany tła po 600 ms: jedno krótkie mrugnięcie, nie stroboskop. */
+      .net-banner.is-attention { animation: net-attention 600ms ease-in-out 2; }
+      @media (prefers-reduced-motion: reduce) {
+        .net-banner.is-attention { animation: none; }
+      }
+      #save.is-offline {
+        background: #ded5cb;
+        border-color: #cfc4b8;
+        color: #7a7168;
+        box-shadow: none;
       }
       #editor > .toolbar .health[data-state="back"] {
         border-color: #1f7a4a;
@@ -576,7 +618,8 @@
         .wave-legend { margin-left: 0; }
         .wave-stage { height: 120px; }
         header { position: static; }
-        .player { top: 0; }
+        .net-banner { top: 0; font-size: 13.5px; padding: 6px 12px; }
+        .player { top: var(--banner-h, 0px); }
       }
     </style>
   </head>
@@ -589,6 +632,11 @@
       </nav>
       <span class="hint" id="tab-hint">klik w czas = przewiń, „weź czas” = wpisz pozycję z playera</span>
     </header>
+
+    <aside class="net-banner" id="net-banner" role="alert" hidden>
+      <span class="net-text" id="net-text">serwer nie odpowiada — zmiany nie są zapisywane</span>
+      <button type="button" id="net-retry" title="sprawdź, czy serwer wrócił">spróbuj ponownie</button>
+    </aside>
 
     <div class="view" id="view-tagi" hidden>
       <main class="main tags-main">
@@ -965,7 +1013,14 @@
 
       const setDirty = (value) => {
         dirty = value;
-        document.title = dirty ? `• ${BASE_TITLE}` : BASE_TITLE;
+        syncTitle();
+      };
+
+      // Edytor ma dwa niezależne powody, żeby oznaczyć kartę: niezapisane zmiany
+      // i brak serwera. Oba muszą być widoczne naraz.
+      let netDown = false;
+      const syncTitle = () => {
+        document.title = `${netDown ? '⚠ ' : ''}${dirty ? '• ' : ''}${BASE_TITLE}`;
       };
 
       const markDirty = () => {
@@ -987,13 +1042,39 @@
       const health = { state: 'up', downTimer: 0, pollTimer: 0, backTimer: 0 };
       let serverUp = true;
 
+      const banner = () => $('net-banner');
+
+      const setBanner = (on) => {
+        const node = banner();
+        if (node.hidden === !on) return;
+        node.hidden = !on;
+        netDown = on;
+        syncTitle();
+        if (on) {
+          // Jedno mrugnięcie przy pojawieniu się; klasa znika po animacji, żeby
+          // kolejna awaria znowu była widoczna.
+          node.classList.remove('is-attention');
+          void node.offsetWidth;
+          node.classList.add('is-attention');
+        } else {
+          node.classList.remove('is-attention');
+        }
+        // Zapisz wygląda na zablokowany, ale działa — klik i Ctrl+S mają pokazać błąd.
+        const save = $('save');
+        save.classList.toggle('is-offline', on);
+        save.title = on ? 'brak połączenia z serwerem' : '';
+        syncChrome();
+      };
+
       const showHealth = (state, text) => {
         health.state = state;
         const node = $('health');
         node.dataset.state = state;
-        node.hidden = state === 'up';
+        // Stan „down” ma własny, pełnoekranowy banner — pasek zapisu nic nie powtarza.
+        node.hidden = state === 'up' || state === 'down';
         $('health-text').textContent = text;
-        $('health-retry').hidden = state !== 'down';
+        $('health-retry').hidden = true;
+        setBanner(state === 'down');
       };
 
       const probeHealth = async () => {
@@ -2897,10 +2978,14 @@
       eventsSource.addEventListener('error', () => serverDown());
       eventsSource.addEventListener('hello', (event) => onServerFile(JSON.parse(event.data).mtime));
       eventsSource.addEventListener('change', (event) => onServerFile(JSON.parse(event.data).mtime));
-      $('health-retry').addEventListener('click', async () => {
+      const retryConnection = async () => {
         if (await probeHealth()) serverBack();
-        else showHealth('down', 'serwer nadal nie odpowiada — zmiany nie są zapisywane');
-      });
+        // Nadal nic: banner mrugnie w odpowiedzi na klik, bez nowego komunikatu.
+        else setBanner(true);
+      };
+
+      $('health-retry').addEventListener('click', retryConnection);
+      $('net-retry').addEventListener('click', retryConnection);
       reloadPrompt.addEventListener('click', () => {
         // Świadoma zgoda: porzucamy niezapisane zmiany, ale zostaje odcinek, czas i zoom.
         // Kopia robocza i tak powstaje, więc po przeładowaniu jest co przywrócić.
@@ -2920,11 +3005,21 @@
       // Wysokość nagłówka bywa różna (zawija się przy węższym oknie), a sidebar
       // przykleja się tuż pod nim — stąd mierzona zmienna zamiast liczby w CSS.
       let headerSize = 0;
+      let bannerSize = -1;
       const syncChrome = () => {
         const header = Math.round(document.querySelector('header').getBoundingClientRect().height);
-        if (header === headerSize) return;
-        headerSize = header;
-        document.documentElement.style.setProperty('--header-h', `${header}px`);
+        if (header !== headerSize) {
+          headerSize = header;
+          document.documentElement.style.setProperty('--header-h', `${header}px`);
+        }
+        // Banner jest w układzie i sam spycha treść, ale przyklejone sidebar i player
+        // muszą znać jego wysokość, żeby nie wjechały pod niego.
+        const bannerNode = document.getElementById('net-banner');
+        const bannerHeight = bannerNode.hidden ? 0 : Math.round(bannerNode.getBoundingClientRect().height);
+        if (bannerHeight !== bannerSize) {
+          bannerSize = bannerHeight;
+          document.documentElement.style.setProperty('--banner-h', `${bannerHeight}px`);
+        }
       };
       syncChrome();
       window.addEventListener('resize', syncChrome);
