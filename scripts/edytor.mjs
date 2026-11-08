@@ -7,6 +7,7 @@
  */
 import { createServer } from 'node:http';
 import { spawn } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -240,11 +241,12 @@ const computePeaks = (audioUrl) =>
     });
   });
 
-const peaksFile = (id) => join(PEAKS, `${id}.bin`);
+// Adres nagrania w nazwie pliku: podmiana audioUrl w katalogu unieważnia cache.
+const peaksFile = (id, audioUrl) => join(PEAKS, `${id}-${createHash('sha1').update(audioUrl).digest('hex').slice(0, 8)}.bin`);
 
 const loadPeaks = async (id, audioUrl) => {
   try {
-    const cached = await readFile(peaksFile(id));
+    const cached = await readFile(peaksFile(id, audioUrl));
     if (cached.length > 0) return cached;
   } catch {}
   const running = peaksInFlight.get(id);
@@ -252,7 +254,7 @@ const loadPeaks = async (id, audioUrl) => {
   const job = (async () => {
     const data = await computePeaks(audioUrl);
     await mkdir(PEAKS, { recursive: true });
-    await writeFile(peaksFile(id), data);
+    await writeFile(peaksFile(id, audioUrl), data);
     return data;
   })().finally(() => peaksInFlight.delete(id));
   peaksInFlight.set(id, job);
