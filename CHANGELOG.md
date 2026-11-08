@@ -1,3 +1,10 @@
+## [1.11.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.10.0...v1.11.0) (2026-11-08)
+
+### Features
+
+* develop publikuje staging z noindex, koniec z kopią na Surge ([b723a49](https://github.com/tiriana/ciezko-na-sercu-web/commit/b723a49420b3f8e59dd98185de1e9d5ea38f04f6))
+* środowe wykrycie nowego odcinka o 02:00 czasu polskiego ([c0aaa17](https://github.com/tiriana/ciezko-na-sercu-web/commit/c0aaa17ed81386ff2d6aba451a7d02e0ae552330))
+
 ## [1.10.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.9.0...v1.10.0) (2026-11-08)
 
 ### Features
