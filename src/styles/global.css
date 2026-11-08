@@ -1731,35 +1731,6 @@ a {
   font-size: 13px;
 }
 
-.episode-list--scroll {
-  max-height: 62vh;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding-right: 12px;
-  scrollbar-width: thin;
-  scrollbar-color: color-mix(in srgb, var(--muted) 45%, transparent) transparent;
-}
-
-.episode-list--scroll::-webkit-scrollbar {
-  width: 10px;
-}
-
-.episode-list--scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.episode-list--scroll::-webkit-scrollbar-thumb {
-  background: color-mix(in srgb, var(--muted) 45%, transparent);
-  border: 3px solid transparent;
-  background-clip: padding-box;
-  border-radius: 999px;
-}
-
-.episode-list--scroll::-webkit-scrollbar-thumb:hover {
-  background: var(--muted);
-  background-clip: padding-box;
-}
-
 .episode-list__main {
   display: flex;
   flex-direction: column;
