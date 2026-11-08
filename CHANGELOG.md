@@ -1,3 +1,9 @@
+## [1.16.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.16.0...v1.16.1) (2026-11-08)
+
+### Bug Fixes
+
+* ukrywanie utworu zawężone do jednego wystąpienia ([b7c33ae](https://github.com/tiriana/ciezko-na-sercu-web/commit/b7c33aea0b4c2926c24ec4150ae3031552468ac5))
+
 ## [1.16.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.15.2...v1.16.0) (2026-11-08)
 
 ### Features
