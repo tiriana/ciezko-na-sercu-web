@@ -1,20 +1,16 @@
-# Odświeżanie katalogu odcinków z Egnyte.
+# Odświeżanie katalogu odcinków prosto ze strony audycji.
 #
-# Katalog czyta wyłącznie workflow publikujący — tutaj tylko pobieramy episodes.json z serwera
-# i zapisujemy przeliczony data/catalog.json. Commit trafia do main, a push uruchamia deploy.
+# Lista odcinków i adresy audio są na polskieradio.pl, więc nie ma pośrednika:
+# `scripts/fetch-episodes.mjs` czyta paginację serwisu, `build-catalog.mjs` liczy katalog.
+# Commit trafia do main, a deploy publikuje zmianę.
 #
 # Uruchamiany:
-#   1. w środę 04:00 UTC, dwie godziny po pobieraniu nowych odcinków (02:00 UTC);
-#   2. zdarzeniem repository_dispatch (typ: catalog-refresh) z repozytorium downloadera;
-#   3. ręcznie (workflow_dispatch).
+#   1. ręcznie (workflow_dispatch);
+#   2. ze środowego workflow wykrywającego nowy odcinek (#43).
 
 name: Odśwież katalog
 
 on:
-  schedule:
-    - cron: '0 4 * * 3'
-  repository_dispatch:
-    types: [catalog-refresh]
   workflow_dispatch:
 
 permissions:
@@ -24,9 +20,6 @@ permissions:
 concurrency:
   group: catalog-refresh
   cancel-in-progress: false
-
-env:
-  PROGRAM_DIR: 'Ciężko na Sercu'
 
 jobs:
   refresh:
@@ -38,19 +31,8 @@ jobs:
         with:
           cache: true
 
-      - name: Zainstaluj rclone
-        run: curl -fsSL https://rclone.org/install.sh | sudo bash
-
-      - name: Pobierz episodes.json z Egnyte
-        env:
-          RCLONE_REMOTE: ${{ secrets.RCLONE_REMOTE }}
-          RADIO_DIR: ${{ vars.RADIO_DIR || '/Shared/Radio' }}
-        run: |
-          mkdir -p .cache
-          # Sekret bywa zapisany z końcowym dwukropkiem (tak wypisuje go `rclone config string`),
-          # a wtedy `...::/Shared/...` znaczy „pusta ścieżka" i rclone zgłasza brak katalogu.
-          REMOTE="${RCLONE_REMOTE%:}"
-          rclone copy "$REMOTE:$RADIO_DIR/$PROGRAM_DIR/episodes.json" .cache
+      - name: Pobierz listę odcinków ze strony audycji
+        run: node scripts/fetch-episodes.mjs .cache/episodes.json
 
       - name: Przelicz katalog
         run: node scripts/build-catalog.mjs .cache/episodes.json data/catalog.json
@@ -70,7 +52,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/catalog.json
-          git commit -m "Katalog odcinków: odświeżenie z Egnyte ($(date -u +%Y-%m-%d))"
+          git commit -m "Katalog odcinków: odświeżenie ze strony audycji ($(date -u +%Y-%m-%d))"
           # main żyje własnym życiem (wydania, transkrypcje), więc przed push-em
           # dopasowujemy się do zdalnego, a przy wyścigu próbujemy jeszcze raz.
           for attempt in 1 2 3; do

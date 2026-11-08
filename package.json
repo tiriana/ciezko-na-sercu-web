@@ -14,7 +14,8 @@
     "edytor": "node scripts/edytor.mjs",
     "test:e2e": "node scripts/e2e-tagi.mjs",
     "release": "semantic-release",
-    "transcribe": "node scripts/transcribe.mjs"
+    "transcribe": "node scripts/transcribe.mjs",
+    "episodes": "node scripts/fetch-episodes.mjs"
   },
   "dependencies": {
     "astro": "^7.4.7",

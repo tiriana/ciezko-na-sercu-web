@@ -59,12 +59,16 @@ const wav = path.join(work, 'audio.wav');
 
 const audioArg = flag('audio');
 const urlArg = flag('url');
+let input;
+let downloadedStat = null;
 if (audioArg) {
   await copyFile(path.resolve(audioArg), source);
+  input = source;
+  downloadedStat = await stat(source);
 } else if (urlArg) {
-  const response = await fetch(urlArg);
-  if (!response.ok) throw new Error(`Nie udało się pobrać audio: HTTP ${response.status}`);
-  await writeFile(source, Buffer.from(await response.arrayBuffer()));
+  // ffmpeg czyta po HTTP z range requests, więc nie ma po co ściągać całego
+  // dwugodzinnego pliku: na dysk trafia tylko wycięty 45-minutowy kawałek.
+  input = urlArg;
 } else {
   console.error('Podaj --audio albo --url.');
   process.exit(1);
@@ -73,7 +77,7 @@ if (audioArg) {
 const trim = [];
 if (chunkStart > 0) trim.push('-ss', String(chunkStart));
 if (chunkLength > 0) trim.push('-t', String(chunkLength));
-await run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...trim, '-i', source, '-ar', '16000', '-ac', '1', '-c:a', 'pcm_s16le', wav]);
+await run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...trim, '-i', input, '-ar', '16000', '-ac', '1', '-c:a', 'pcm_s16le', wav]);
 
 const asrBase = path.join(work, 'asr');
 await run(
@@ -115,7 +119,6 @@ for (const segment of segments) {
   windows.push({ index: windows.length, start: segment.start, end: segment.end });
 }
 
-const fileInfo = await stat(source);
 const transcript = {
   version: 1,
   episodeId: id,
@@ -125,8 +128,8 @@ const transcript = {
   // Parametry zapisane w pliku są znacznikiem „ten odcinek jest już zrobiony w tej
   // wersji": plan-transcribe pomija transkrypty z innymi wartościami.
   params: { maxLen: Number(maxLen), splitOnWord, vad: useVad },
-  fileSizeBytes: fileInfo.size,
-  fileMtimeMs: fileInfo.mtimeMs,
+  fileSizeBytes: downloadedStat?.size ?? null,
+  fileMtimeMs: downloadedStat?.mtimeMs ?? null,
   windows,
   segments,
   stats: {
