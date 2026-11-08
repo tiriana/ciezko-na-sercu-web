@@ -102,6 +102,15 @@
       .toolbar { display: flex; gap: 8px; align-items: center; margin-top: 16px; }
       .toolbar .primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
       .toolbar .status { color: var(--muted); font-size: 12px; }
+      .shortcut {
+        padding: 2px 5px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background: #fff;
+        color: var(--muted);
+        font: inherit;
+        font-size: 11px;
+      }
       .restore { margin-top: 14px; color: var(--muted); font-size: 12.5px; }
       .restore button { margin-left: 6px; }
       .hint-line { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
@@ -247,6 +256,7 @@
         opacity: 0.5;
         pointer-events: none;
       }
+      .wave-playhead.is-pinned { opacity: 0.85; }
       .wave-status {
         position: absolute;
         inset: 0;
@@ -384,8 +394,7 @@
               </div>
             </div>
             <p class="wave-hint">
-              kółko = zoom, tło = przesuń, klik = przewiń bez grania, dwuklik = graj; znaczniki
-              (początki) przeciągnij lub Tab + ←/→ (Shift = 1 s); początek tnie poprzedni fragment
+              kółko = zoom, tło = przesuń, klik = przewiń bez grania, dwuklik = graj, spacja = graj/pauza; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s); początek tnie poprzedni fragment
             </p>
           </section>
 
@@ -440,6 +449,7 @@
 
           <div class="toolbar">
             <button class="primary" id="save" type="button">Zapisz</button>
+            <kbd class="shortcut">Ctrl+S</kbd>
             <span class="status" id="status"></span>
           </div>
         </div>
@@ -506,6 +516,68 @@
         input.dispatchEvent(new Event('input'));
       };
 
+      // --- Cofanie zmian osi czasu (Ctrl+Z) ---
+
+      const UNDO_LIMIT = 50;
+      const undoStack = [];
+      const editBurst = { key: null, at: 0 };
+
+      const snapshotTopic = (topic) => ({
+        data: structuredClone(topic),
+        base: topicBase.has(topic) ? structuredClone(topicBase.get(topic)) : null,
+      });
+
+      const pushUndo = () => {
+        undoStack.push({
+          tracks: structuredClone(state.tracks),
+          topics: state.topics.map(snapshotTopic),
+          addTracks: structuredClone(state.addTracks),
+          addTopics: structuredClone(state.addTopics),
+          hiddenTracks: structuredClone(state.hiddenTracks),
+          hiddenTopics: structuredClone(state.hiddenTopics),
+        });
+        if (undoStack.length > UNDO_LIMIT) undoStack.shift();
+      };
+
+      // Jedno wpisanie w pole = jeden krok cofania: kolejne „input” w tym samym polu
+      // w ciągu 800 ms dokłada się do tego samego wpisu, a wyjście z pola zamyka serię.
+      const beginEdit = (key) => {
+        const now = Date.now();
+        if (editBurst.key !== key || now - editBurst.at > 800) pushUndo();
+        editBurst.key = key;
+        editBurst.at = now;
+      };
+
+      const editField = (object, field, apply) => {
+        beginEdit(`${objectKey(object)}:${field}`);
+        apply();
+      };
+
+      document.addEventListener('focusout', () => {
+        editBurst.key = null;
+      });
+
+      const undoEdit = () => {
+        const snapshot = undoStack.pop();
+        if (!snapshot) return;
+        state.tracks = structuredClone(snapshot.tracks);
+        state.topics = snapshot.topics.map((entry) => {
+          const topic = structuredClone(entry.data);
+          if (entry.base) topicBase.set(topic, structuredClone(entry.base));
+          return topic;
+        });
+        state.addTracks = structuredClone(snapshot.addTracks);
+        state.addTopics = structuredClone(snapshot.addTopics);
+        state.hiddenTracks = structuredClone(snapshot.hiddenTracks);
+        state.hiddenTopics = structuredClone(snapshot.hiddenTopics);
+        editBurst.key = null;
+        renderTracks();
+        renderTopics();
+        renderAdded();
+        renderRestore();
+        $('status').textContent = 'cofnięto';
+      };
+
       const renderTracks = () => {
         const body = $('tracks');
         body.textContent = '';
@@ -516,14 +588,20 @@
           const artistInput = document.createElement('input');
           artistInput.type = 'text';
           artistInput.value = track.artist ?? '';
-          artistInput.addEventListener('input', () => (track.artist = artistInput.value));
+          artistInput.addEventListener('input', () => editField(track, 'artist', () => {
+            track.artist = artistInput.value;
+            waveSync();
+          }));
           artist.append(artistInput);
 
           const title = document.createElement('td');
           const titleInput = document.createElement('input');
           titleInput.type = 'text';
           titleInput.value = track.title ?? '';
-          titleInput.addEventListener('input', () => (track.title = titleInput.value));
+          titleInput.addEventListener('input', () => editField(track, 'title', () => {
+            track.title = titleInput.value;
+            waveSync();
+          }));
           title.append(titleInput);
 
           const album = document.createElement('td');
@@ -531,32 +609,33 @@
           albumInput.type = 'text';
           albumInput.value = track.album ?? '';
           albumInput.placeholder = '(brak)';
-          albumInput.addEventListener('input', () => (track.album = albumInput.value));
+          albumInput.addEventListener('input', () => editField(track, 'album', () => (track.album = albumInput.value)));
           album.append(albumInput);
 
           const start = document.createElement('td');
           const startInput = document.createElement('input');
           startInput.type = 'number';
           startInput.value = String(track.start ?? 0);
-          startInput.addEventListener('input', () => {
+          startInput.addEventListener('input', () => editField(track, 'start', () => {
             track.start = Number(startInput.value);
             waveSync();
-          });
+          }));
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(track.start)));
 
           const duration = document.createElement('td');
           const durationInput = document.createElement('input');
           durationInput.type = 'number';
           durationInput.value = String(track.durationSec ?? 0);
-          durationInput.addEventListener('input', () => {
+          durationInput.addEventListener('input', () => editField(track, 'durationSec', () => {
             track.durationSec = Number(durationInput.value);
             waveSync();
-          });
+          }));
           duration.append(durationInput);
           fieldInputs.set(track, { start: startInput, duration: durationInput });
 
           const actions = document.createElement('td');
           const hide = rowButton('ukryj', () => {
+            pushUndo();
             state.hiddenTracks.push({ artist: track.artist, title: track.title, album: track.album, hide: true });
             state.tracks.splice(index, 1);
             renderTracks();
@@ -580,23 +659,27 @@
           const labelInput = document.createElement('input');
           labelInput.type = 'text';
           labelInput.value = topic.label ?? '';
-          labelInput.addEventListener('input', () => (topic.label = labelInput.value));
+          labelInput.addEventListener('input', () => editField(topic, 'label', () => {
+            topic.label = labelInput.value;
+            waveSync();
+          }));
           label.append(labelInput);
 
           const start = document.createElement('td');
           const startInput = document.createElement('input');
           startInput.type = 'number';
           startInput.value = String(topic.start ?? 0);
-          startInput.addEventListener('input', () => {
+          startInput.addEventListener('input', () => editField(topic, 'start', () => {
             topic.start = Number(startInput.value);
             waveSync();
-          });
+          }));
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(topic.start)));
           fieldInputs.set(topic, { start: startInput });
 
           const actions = document.createElement('td');
           actions.append(
             rowButton('ukryj', () => {
+              pushUndo();
               state.hiddenTopics.push({ time: topic.start, label: topic.label, hide: true });
               state.topics.splice(index, 1);
               renderTopics();
@@ -629,10 +712,10 @@
             input.type = type;
             input.value = String(track[field] ?? '');
             input.placeholder = placeholder;
-            input.addEventListener('input', () => {
+            input.addEventListener('input', () => editField(track, field, () => {
               track[field] = type === 'number' ? Number(input.value) : input.value;
-              if (type === 'number') waveSync();
-            });
+              waveSync();
+            }));
             inputs[field] = input;
             td.append(input);
             if (field === 'start') td.append(rowButton('weź', () => usePlayerTime(input)));
@@ -642,6 +725,7 @@
           const actions = document.createElement('td');
           actions.append(
             rowButton('usuń', () => {
+              pushUndo();
               state.addTracks.splice(index, 1);
               renderAdded();
             })
@@ -658,23 +742,27 @@
           const labelInput = document.createElement('input');
           labelInput.type = 'text';
           labelInput.value = topic.label ?? '';
-          labelInput.addEventListener('input', () => (topic.label = labelInput.value));
+          labelInput.addEventListener('input', () => editField(topic, 'label', () => {
+            topic.label = labelInput.value;
+            waveSync();
+          }));
           labelCell.append(labelInput);
 
           const startCell = document.createElement('td');
           const startInput = document.createElement('input');
           startInput.type = 'number';
           startInput.value = String(topic.start ?? 0);
-          startInput.addEventListener('input', () => {
+          startInput.addEventListener('input', () => editField(topic, 'start', () => {
             topic.start = Number(startInput.value);
             waveSync();
-          });
+          }));
           startCell.append(startInput, rowButton('weź', () => usePlayerTime(startInput)));
           fieldInputs.set(topic, { start: startInput });
 
           const actions = document.createElement('td');
           actions.append(
             rowButton('usuń', () => {
+              pushUndo();
               state.addTopics.splice(index, 1);
               renderAdded();
             })
@@ -699,6 +787,7 @@
           span.append(item.label);
           span.append(
             rowButton('przywróć', () => {
+              pushUndo();
               if (item.kind === 'track') {
                 state.hiddenTracks = state.hiddenTracks.filter((entry) => entry !== item.entry);
                 state.tracks.push({ ...state.episode.original.tracks.find((t) => t.artist === item.entry.artist && t.title === item.entry.title) ?? item.entry });
@@ -732,6 +821,9 @@
           return;
         }
         state.episode = data;
+        undoStack.length = 0;
+        editBurst.key = null;
+        wave.undoTaken = false;
         state.tracks = data.tracks.map((track) => ({ ...track }));
         state.topics = data.topics.map((topic) => ({ ...topic }));
         state.baseTracks = data.tracks.map((track) => ({ ...track }));
@@ -779,8 +871,8 @@
         token: 0,
         loadingTimer: 0,
         frame: 0,
-        following: false,
         pan: null,
+        undoTaken: false,
       };
 
       const clampNumber = (value, low, high) => Math.min(high, Math.max(low, value));
@@ -958,7 +1050,7 @@
       const markerNodes = new Map();
       const MIN_FRAGMENT = 5;
 
-      const moveStart = (marker, requested) => {
+      const moveStart = (marker, requested, dragging = false) => {
         const old = marker.time;
         const ownEnd = marker.kind === 'start' ? trackEnd(marker.object) : topicEnd(marker.object);
         const previous = precedingFragment(marker, old);
@@ -976,6 +1068,11 @@
         );
         const next = clampNumber(Math.round(requested * 10) / 10, low, high);
         if (next === old) return;
+        // Przeciągnięcie to jeden krok cofania, dlatego zrzut robimy tylko przy pierwszym ruchu.
+        if (!dragging || !wave.undoTaken) {
+          pushUndo();
+          wave.undoTaken = true;
+        }
         marker.time = next;
         marker.object.start = next;
         const inputs = fieldInputs.get(marker.object);
@@ -999,6 +1096,7 @@
           const rect = stageEl().getBoundingClientRect();
           const originX = event.clientX;
           let moved = false;
+          wave.undoTaken = false;
           node.setPointerCapture(event.pointerId);
           node.classList.add('is-dragging');
 
@@ -1006,7 +1104,7 @@
             if (!moved && Math.abs(moveEvent.clientX - originX) > 2) moved = true;
             if (!moved) return;
             const ratio = clampNumber((moveEvent.clientX - rect.left) / rect.width, 0, 1);
-            moveStart(marker, wave.start + ratio * wave.span);
+            moveStart(marker, wave.start + ratio * wave.span, true);
             placeMarker(node, marker);
           };
           const cleanup = () => {
@@ -1113,27 +1211,18 @@
       const syncPlayhead = () => {
         const node = $('wave-playhead');
         const width = stageEl().clientWidth;
-        const audio = $('audio');
-        const time = audio.currentTime;
+        const time = $('audio').currentTime;
         if (!wave.peaks || !wave.span || !width || !Number.isFinite(time)) {
           node.hidden = true;
           return;
         }
-        if (!audio.paused && !wave.following) {
-          const right = wave.start + wave.span;
-          if (time >= right - wave.span * 0.04 || time < wave.start) {
-            wave.following = true;
-            setWindow(time - wave.span * 0.1, wave.span);
-            wave.following = false;
-          }
-        }
-        const x = ((time - wave.start) / wave.span) * width;
-        if (x < -1 || x > width + 1) {
-          node.hidden = true;
-          return;
-        }
+        // Okno się nie przesuwa w trakcie odtwarzania: kiedy kursor wyjeżdża za krawędź,
+        // kreska zatrzymuje się na niej, a nie znika ani nie ciągnie widoku za sobą.
+        const ratio = (time - wave.start) / wave.span;
+        const x = ratio < 0 ? 0 : ratio > 1 ? width - 1 : ratio * width;
         node.hidden = false;
         node.style.left = `${x}px`;
+        node.classList.toggle('is-pinned', ratio < 0 || ratio > 1);
       };
 
       const renderWave = () => {
@@ -1356,6 +1445,16 @@
 
       stageEl().addEventListener('keydown', (event) => {
         if (!wave.peaks) return;
+        if (event.code === 'Space' || event.key === ' ') {
+          if (event.ctrlKey || event.metaKey || event.altKey) return;
+          // Spacja gra/pauzuje od kursora. preventDefault blokuje i przewijanie strony,
+          // i aktywację przycisku znacznika, na którym akurat jest fokus.
+          event.preventDefault();
+          const audio = $('audio');
+          if (audio.paused) audio.play().catch(() => {});
+          else audio.pause();
+          return;
+        }
         const step = wave.span * 0.1;
         if (event.key === 'ArrowLeft') {
           event.preventDefault();
@@ -1400,11 +1499,13 @@
       $('filter').addEventListener('input', renderList);
 
       $('add-track').addEventListener('click', () => {
+        pushUndo();
         state.addTracks.push({ artist: '', title: '', album: '', start: 0, durationSec: 0 });
         renderAdded();
       });
 
       $('add-topic').addEventListener('click', () => {
+        pushUndo();
         state.addTopics.push({ label: '', start: 0 });
         renderAdded();
       });
@@ -1476,6 +1577,25 @@
         if (response.ok) {
           episodes = episodes.map((item) => (item.id === episode.id ? { ...item, displayTitle: $('title').value.trim() || item.originalTitle } : item));
           renderList();
+        }
+      });
+
+      // Ctrl/Cmd+S zapisuje wszędzie, Ctrl/Cmd+Z cofa tylko wtedy, gdy fokus nie jest
+      // w polu tekstowym — tam natywne cofanie przeglądarki ma pierwszeństwo.
+      document.addEventListener('keydown', (event) => {
+        if (!event.ctrlKey && !event.metaKey) return;
+        const key = event.key.toLowerCase();
+        if (key === 's') {
+          if (!state.episode) return;
+          event.preventDefault();
+          $('save').click();
+          return;
+        }
+        if (key === 'z' && !event.shiftKey) {
+          if (event.target.closest?.('input, textarea, [contenteditable=""], [contenteditable="true"]')) return;
+          if (undoStack.length === 0) return;
+          event.preventDefault();
+          undoEdit();
         }
       });
 
