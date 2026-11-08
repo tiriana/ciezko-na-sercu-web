@@ -11,6 +11,7 @@ import {
   overrideSchema,
   peopleSchema,
   titlesSchema,
+  transcriptSchema,
   type Aliases,
   type TagTypes,
   type Catalog,
@@ -18,11 +19,13 @@ import {
   type Episode,
   type Person,
   type TitleOverride,
+  type Transcript,
 } from './schema';
 
 const DATA_DIR = join(process.cwd(), 'data');
 const EPISODES_DIR = join(DATA_DIR, 'episodes');
 const OVERRIDES_DIR = join(DATA_DIR, 'overrides');
+const TRANSCRIPTS_DIR = join(DATA_DIR, 'transcripts');
 
 type Entry = CatalogEpisode & {
   enriched: boolean;
@@ -203,6 +206,18 @@ async function getOverrides(): Promise<Map<string, z.infer<typeof overrideSchema
     names.map(async (name) => [name.replace(/\.json$/, ''), await load(join(OVERRIDES_DIR, name), overrideSchema)] as const)
   );
   return new Map(loaded);
+}
+
+let transcriptsCache: Map<string, Transcript> | undefined;
+
+export async function getTranscripts(): Promise<Map<string, Transcript>> {
+  if (transcriptsCache) return transcriptsCache;
+  const names = (await readdir(TRANSCRIPTS_DIR)).filter((name) => name.endsWith('.json'));
+  const loaded = await Promise.all(
+    names.map(async (name) => [name.replace(/\.json$/, ''), await load(join(TRANSCRIPTS_DIR, name), transcriptSchema)] as const)
+  );
+  transcriptsCache = new Map(loaded);
+  return transcriptsCache;
 }
 
 let aliasesCache: Aliases | undefined;

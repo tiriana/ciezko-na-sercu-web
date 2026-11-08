@@ -6,7 +6,8 @@ import PersonName from '../../components/PersonName.astro';
 import ReportLink from '../../components/ReportLink.astro';
 import FragmentProgress from '../../components/FragmentProgress.astro';
 import TrackPlayIcon from '../../components/TrackPlayIcon.astro';
-import { getCatalog, getDuplicates, getEntries, getEpisodeFiles } from '../../lib/data';
+import { getCatalog, getDuplicates, getEntries, getEpisodeFiles, getTranscripts } from '../../lib/data';
+import { transcriptParagraphs } from '../../lib/transcript';
 import { tagId } from '../../lib/tags';
 import {
   formatClock,
@@ -54,8 +55,9 @@ export async function getStaticPaths() {
 }
 
 const { entry, older, newer, duplicate } = Astro.props;
-const [catalog, files] = await Promise.all([getCatalog(), getEpisodeFiles()]);
+const [catalog, files, transcripts] = await Promise.all([getCatalog(), getEpisodeFiles(), getTranscripts()]);
 const episode = files.get(entry.id);
+const paragraphs = transcriptParagraphs(transcripts.get(entry.id));
 
 // Tematy i cytaty mają tylko start, więc koniec wyprowadzamy: początek następnej pozycji
 // w tej samej sekcji, a dla ostatniej — 30 s, żeby nie świeciła do końca audycji.
@@ -421,6 +423,34 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <p class="card__sub">Brak rozpoznanych utworów i wejść w tym odcinku.</p>
             )}
           </section>
+
+          {paragraphs.length > 0 && (
+            <section class="card" id="transkrypcja" aria-labelledby="transcript-title">
+              <h2 id="transcript-title">Transkrypcja</h2>
+              <p class="card__sub">
+                Zapis mowy z audycji powstały automatycznie. Nazwiska i tytuły mogą być przekręcone.
+              </p>
+              <details class="transcript">
+                <summary class="transcript__summary">
+                  Cały tekst · {paragraphs.length} {paragraphs.length === 1 ? 'akapit' : paragraphs.length < 5 ? 'akapity' : 'akapitów'}
+                </summary>
+                <div class="transcript__body">
+                  {paragraphs.map((paragraph) => (
+                    <p class="transcript__paragraph">
+                      {entry.audioUrl ? (
+                        <button class="time-link" type="button" data-track-start={paragraph.start}>
+                          {formatClock(paragraph.start)}
+                        </button>
+                      ) : (
+                        <span class="transcript__time">{formatClock(paragraph.start)}</span>
+                      )}
+                      <span>{paragraph.text}</span>
+                    </p>
+                  ))}
+                </div>
+              </details>
+            </section>
+          )}
 
           {SHOW_QUOTES && episode.quotes.length > 0 && (
             <section class="card" aria-labelledby="quotes-title">

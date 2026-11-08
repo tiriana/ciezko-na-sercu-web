@@ -24,6 +24,20 @@ export const catalogSchema = z.object({
   ),
 });
 
+export const transcriptSchema = z.object({
+  version: z.number(),
+  episodeId: z.string(),
+  segments: z.array(
+    z.object({
+      start: z.number(),
+      end: z.number(),
+      text: z.string(),
+    }),
+  ),
+});
+
+export type Transcript = z.infer<typeof transcriptSchema>;
+
 export const TAG_TYPES = ['artist', 'person', 'work', 'event', 'concert', 'place', 'theme', 'editorial'] as const;
 export const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile', 'title'] as const;
 
