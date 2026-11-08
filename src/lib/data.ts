@@ -90,7 +90,9 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
     }
 
     if (override.addTopics.length > 0) {
-      episode.topics.push(...override.addTopics.map((topic) => ({ start: topic.start, label: topic.label })));
+      episode.topics.push(
+        ...override.addTopics.map((topic) => ({ start: topic.start, label: topic.label, ...(topic.end !== undefined ? { end: topic.end } : {}) }))
+      );
       episode.topics.sort((left, right) => left.start - right.start);
     }
 

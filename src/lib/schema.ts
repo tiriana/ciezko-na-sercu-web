@@ -137,6 +137,7 @@ export const overrideSchema = z.object({
       z.object({
         start: z.number(),
         label: z.string().default(''),
+        end: z.number().optional(),
       })
     )
     .default([]),

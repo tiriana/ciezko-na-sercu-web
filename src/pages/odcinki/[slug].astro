@@ -78,12 +78,22 @@ const spanEnd = (items: { start: number }[], index: number, durationSec: number 
   return durationSec ? Math.min(end, durationSec) : end;
 };
 
-// Koniec policzony w taggerze ma pierwszeństwo: on wie, gdzie naprawdę kończy się
-// wejście po przycięciu do utworu. Wyprowadzanie z następnej pozycji to fallback.
-const topicSpans = (episode?.topics ?? []).map((topic, index) => ({
-  ...topic,
-  end: topic.end ?? spanEnd(episode?.topics ?? [], index, episode?.durationSec ?? null),
-}));
+// Początek utworu zawsze kończy wejście, nawet jeśli zapisany koniec mówi inaczej —
+// inaczej wejście „przeciąga się” przez cały blok muzyczny do następnego wątku.
+// Własny (wcześniejszy) koniec z poprawek zostaje, bo bywa świadomym cięciem.
+const programStarts = [
+  ...(episode?.tracks ?? []).map((track) => track.start),
+  ...(episode?.topics ?? []).map((topic) => topic.start),
+].sort((left, right) => left - right);
+
+const topicSpans = (episode?.topics ?? []).map((topic, index) => {
+  const nextStart = programStarts.find((start) => start > topic.start + 0.001);
+  const limit = nextStart ?? (episode?.durationSec ?? null);
+  const derived = spanEnd(episode?.topics ?? [], index, episode?.durationSec ?? null);
+  const declared = topic.end ?? derived;
+  const end = limit !== null ? Math.min(declared, limit) : declared;
+  return { ...topic, end: Math.max(end, topic.start) };
+});
 const quoteSpans = (episode?.quotes ?? []).map((quote, index) => ({
   ...quote,
   end: spanEnd(episode?.quotes ?? [], index, episode?.durationSec ?? null),
