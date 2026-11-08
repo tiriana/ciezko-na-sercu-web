@@ -1,0 +1,126 @@
+name: wykrycie odcinka
+
+# Środa, 02:00 czasu polskiego: sprawdzenie, czy jest nowy odcinek. Jeśli tak —
+# `refresh-catalog.yml` commituje katalog, publikuje wpis i zamawia transkrypcję;
+# po transkrypcji `transcribe.yml` przelicza tematy i publikuje ponownie.
+#
+# GitHub liczy crony w UTC, a Warszawa zmienia czas, więc harmonogram to dwa crony
+# (00:00 i 01:00 UTC) i strażnik, który przepuszcza wyłącznie przebieg trafiający
+# w godzinę 02:00 czasu lokalnego.
+
+on:
+  schedule:
+    - cron: '0 0 * * 3' # 02:00 CEST
+    - cron: '0 1 * * 3' # 02:00 CET
+  workflow_dispatch:
+    inputs:
+      simulate:
+        description: 'Symuluj nowy odcinek (cała ścieżka bez czekania na publikację)'
+        type: boolean
+        default: false
+
+run-name: wykrycie odcinka${{ inputs.simulate && ' (symulacja)' || '' }}
+
+permissions:
+  contents: read
+  actions: write
+  issues: write
+
+# Dwa crony i ręczne uruchomienie nie mogą iść równolegle: drugi przebieg
+# po pierwszym i tak nie znajdzie nowego odcinka, ale miałby po co sięgać do sieci.
+concurrency:
+  group: detect-episode
+  cancel-in-progress: false
+
+jobs:
+  detect:
+    runs-on: ubuntu-26.04
+    steps:
+      - name: Strażnik pory (Europe/Warsaw)
+        id: guard
+        env:
+          SIMULATE: ${{ inputs.simulate }}
+        run: |
+          if [ "$SIMULATE" = "true" ]; then
+            echo "Symulacja: strażnik pominięty."
+            exit 0
+          fi
+          hour=$(TZ=Europe/Warsaw date +%H)
+          if [ "$hour" != "02" ]; then
+            echo "Europe/Warsaw: ${hour}:xx — to nie pora publikacji. Kończę."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        if: steps.guard.outputs.skip != 'true'
+
+      - uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # v5
+        if: steps.guard.outputs.skip != 'true'
+        with:
+          cache: true
+
+      - name: Pobierz listę odcinków ze strony audycji
+        if: steps.guard.outputs.skip != 'true'
+        run: node scripts/fetch-episodes.mjs .cache/episodes.json
+
+      - name: Porównaj z katalogiem
+        id: check
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          SIMULATE: ${{ inputs.simulate }}
+        run: node scripts/detect-new-episode.mjs data/catalog.json .cache/episodes.json
+
+      - name: Podsumowanie
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          IS_NEW: ${{ steps.check.outputs.new }}
+          COUNT: ${{ steps.check.outputs.count }}
+          TITLES: ${{ steps.check.outputs.titles }}
+        run: |
+          {
+            echo "### Wykrycie odcinka"
+            echo ""
+            if [ "$IS_NEW" = "true" ]; then
+              echo "Nowe odcinki: $COUNT"
+              echo ""
+              echo '```'
+              printf '%s\n' "$TITLES"
+              echo '```'
+            else
+              echo "Katalog aktualny — nic do zrobienia."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Odśwież katalog, opublikuj wpis i zamów transkrypcję
+        if: steps.check.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SIMULATE: ${{ inputs.simulate }}
+        run: |
+          if [ "$SIMULATE" = "true" ]; then
+            gh workflow run refresh-catalog.yml --ref main -f simulate=true
+          else
+            gh workflow run refresh-catalog.yml --ref main
+          fi
+
+  alert:
+    # Zmiana formatu strony wyłącza wykrywanie po cichu, więc porażka musi być głośna.
+    needs: detect
+    if: failure()
+    runs-on: ubuntu-26.04
+    steps:
+      - name: Zgłoś awarię wykrywania
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title='Środowe wykrycie odcinka nie działa'
+          body="Przebieg z $(date -u +%Y-%m-%dT%H:%MZ) zakończył się błędem: $RUN_URL"
+          number=$(gh issue list --state open --limit 100 --json number,title \
+            --jq ".[] | select(.title == \"$title\") | .number" | head -1)
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi

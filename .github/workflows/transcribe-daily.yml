@@ -7,8 +7,8 @@ name: transkrypcja dzienna
 
 on:
   # Zaległość: 12:00 UTC, czyli poza porą publikacji. Nowy odcinek nie ma tu cronu —
-  # przychodzi dispatchem z refresh-catalog.yml, który sam rusza z repository_dispatch
-  # wysyłanego przez workflow pobierania w repo downloadera.
+  # przychodzi dispatchem z refresh-catalog.yml, który uruchamia środowe wykrycie
+  # odcinka (detect-episode.yml), gdy ze strony audycji widać wpis spoza katalogu.
   schedule:
     - cron: '0 12 * * *'
   workflow_dispatch:

@@ -12,6 +12,11 @@ name: Odśwież katalog
 
 on:
   workflow_dispatch:
+    inputs:
+      simulate:
+        description: 'Symulacja: opublikuj mimo braku zmian (transkrypcji nie zamawiam)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -44,6 +49,7 @@ jobs:
         run: node scripts/check-data.mjs
 
       - name: Zapisz zmiany
+        id: commit
         run: |
           if git diff --quiet -- data/catalog.json; then
             echo "Katalog bez zmian"
@@ -57,21 +63,29 @@ jobs:
           # dopasowujemy się do zdalnego, a przy wyścigu próbujemy jeszcze raz.
           for attempt in 1 2 3; do
             git pull --rebase --autostash origin main
-            if git push; then exit 0; fi
+            if git push; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             sleep 5
           done
           exit 1
 
       # Push wykonany GITHUB_TOKEN-em nie uruchamia innych workflowów, więc deploy odpalamy
-      # jawnie — workflow_dispatch jest jedynym wyjątkiem od tej reguły.
+      # jawnie — workflow_dispatch jest jedynym wyjątkiem od tej reguły. Symulacja także
+      # publikuje, żeby dało się sprawdzić całą ścieżkę bez nowego odcinka.
       - name: Opublikuj stronę
+        if: steps.commit.outputs.changed == 'true' || inputs.simulate
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
 
       # Nowy odcinek ma pierwszeństwo przed kolejką, więc transkrypcję zamawiamy od razu
       # po odświeżeniu katalogu. Plan bierze najnowszy odcinek bez transkryptu.
+      # Symulacja jej nie zamawia: to godziny pracy runnerów na materiale, który i tak
+      # trafi do kolejki.
       - name: Zamów transkrypcję nowego odcinka
+        if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run transcribe-daily.yml --ref main
