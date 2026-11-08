@@ -61,22 +61,35 @@ if (!input) {
 const downloaded = JSON.parse(await readFile(input, 'utf8'));
 const known = await previousSlugs(output);
 
+// Downloader zna tylko tytuł techniczny („... godz. 0005”). Tytuł z serwisu Polskiego
+// Radia trzymamy osobno, żeby odświeżenie katalogu go nie nadpisywało.
+async function catalogTitles() {
+  try {
+    return JSON.parse(await readFile(new URL('../data/catalog-titles.json', import.meta.url), 'utf8')).titles ?? {};
+  } catch {
+    return {};
+  }
+}
+
+const titles = await catalogTitles();
+
 const episodes = downloaded
   .filter((episode) => !episode.duplicateOf)
   .map((episode) => {
     const id = episodeId(episode);
     if (!id) throw new Error(`odcinek bez uuid w mp3Url: ${episode.title}`);
-    const slug = `${episode.date}-${slugify(episode.title)}`;
+    const title = titles[id] ?? episode.title;
+    const slug = `${episode.date}-${slugify(title)}`;
     const history = known.get(id) ?? [];
     return {
       id,
       slug,
       slugs: history.includes(slug) ? history : [slug, ...history],
       date: episode.date,
-      title: episode.title,
+      title,
       articleId: episode.articleId ?? null,
       durationSec: null,
-      sourceUrl: sourceUrlFor(episode),
+      sourceUrl: sourceUrlFor({ ...episode, title }),
       audioUrl: episode.mp3Url ? episode.mp3Url.replace(/^http:\/\//, 'https://') : null,
     };
   })
