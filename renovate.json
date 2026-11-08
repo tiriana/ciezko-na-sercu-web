@@ -1,28 +1,44 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", ":semanticPrefixFixDepsChoreOthers"],
-  "onboarding": false,
+  "extends": [
+    "config:recommended",
+    ":semanticPrefixFixDepsChoreOthers"
+  ],
   "timezone": "Europe/Warsaw",
-  "schedule": ["before 7am on monday"],
+  "schedule": [
+    "before 7am on monday"
+  ],
   "dependencyDashboard": true,
   "rangeStrategy": "bump",
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 7am on the first day of the month"]
+    "schedule": [
+      "before 7am on the first day of the month"
+    ]
   },
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchManagers": ["npm"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchManagers": [
+        "npm"
+      ],
       "groupName": "npm: minor i patch"
     },
     {
-      "matchManagers": ["github-actions"],
+      "matchManagers": [
+        "github-actions"
+      ],
       "groupName": "GitHub Actions",
       "pinDigests": true
     },
     {
-      "matchDepTypes": ["engines", "packageManager"],
+      "matchDepTypes": [
+        "engines",
+        "packageManager"
+      ],
       "enabled": false
     }
   ]
