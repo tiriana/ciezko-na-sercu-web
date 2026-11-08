@@ -6,6 +6,9 @@ name: transcribe
 # (przyciąganie tematów do segmentów, import) robi się lokalnie.
 
 on:
+  # Jedna audycja dziennie: planbierze najnowszy niezrobiony odcinek (3 joby po 45 min).
+  schedule:
+    - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
       episodes:
@@ -38,7 +41,7 @@ on:
         default: false
         type: boolean
 
-run-name: transkrypcja ${{ inputs.episodes || 'wszystkie odcinki' }}
+run-name: transkrypcja ${{ github.event_name == 'schedule' && 'dzienna' || inputs.episodes || 'wszystkie odcinki' }}
 
 permissions:
   contents: write
@@ -69,7 +72,8 @@ jobs:
       - id: build
         env:
           EPISODES: ${{ inputs.episodes }}
-          LIMIT: ${{ inputs.limit }}
+          # Harmonogram bierze jeden odcinek; ręczne uruchomienie rządzi się wejściem `limit`.
+          LIMIT: ${{ github.event_name == 'schedule' && '1' || inputs.limit }}
           FORCE: ${{ inputs.force }}
           MAX_LEN: ${{ inputs.max_len }}
           SPLIT_ON_WORD: ${{ inputs.split_on_word }}
