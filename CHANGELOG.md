@@ -1,3 +1,9 @@
+## [1.15.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.15.1...v1.15.2) (2026-11-08)
+
+### Bug Fixes
+
+* **edytor:** martwy serwer widoczny na całą szerokość ([82106d5](https://github.com/tiriana/ciezko-na-sercu-web/commit/82106d52b29623f2572e63759446e50d630ce2bb)), closes [#b3102c](https://github.com/tiriana/ciezko-na-sercu-web/issues/b3102c)
+
 ## [1.15.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.15.0...v1.15.1) (2026-11-08)
 
 ### Bug Fixes
