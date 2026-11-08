@@ -1,3 +1,9 @@
+## [1.7.6](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.5...v1.7.6) (2026-11-08)
+
+### Bug Fixes
+
+* **deps:** update dependency astro to v7 [security] ([#33](https://github.com/tiriana/ciezko-na-sercu-web/issues/33)) ([0a594c0](https://github.com/tiriana/ciezko-na-sercu-web/commit/0a594c07f0423aa6e5e0be9b717b2adc94c69573))
+
 ## [1.7.5](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.4...v1.7.5) (2026-11-08)
 
 ### Bug Fixes
