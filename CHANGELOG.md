@@ -1,3 +1,10 @@
+## [1.14.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.13.1...v1.14.0) (2026-11-08)
+
+### Features
+
+* adres wskazuje fragment (?f=), nie sekundę odtwarzania ([4483c11](https://github.com/tiriana/ciezko-na-sercu-web/commit/4483c11d7c1db5c25082c94ed27273f156f1b74c))
+* pasek postępu w wierszu odtwarzanego fragmentu ([0dd915b](https://github.com/tiriana/ciezko-na-sercu-web/commit/0dd915b64a672db49b247ba60ac782c52a86490a))
+
 ## [1.13.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.13.0...v1.13.1) (2026-11-08)
 
 ### Bug Fixes
