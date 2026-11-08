@@ -13,3 +13,7 @@ screenshots/
 
 # Lokalne intro do wykrywania (prawa Polskiego Radia, nie commitujemy)
 intro.mp3
+
+# Artefakty transkrypcji w Actions i lokalnie
+.incoming/
+.cache/

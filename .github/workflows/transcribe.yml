@@ -1,0 +1,162 @@
+name: transcribe
+
+# Ponowna transkrypcja wybranych odcinków gęstszymi segmentami (`-ml 20 -sow`).
+# Liczy się w darmowych minutach publicznego repo, więc ciężka praca nie zajmuje
+# lokalnego komputera. Wynik to data/transcripts/<uuid>.json — dalsze kroki
+# (przyciąganie tematów do segmentów, import) robi się lokalnie.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episodes:
+        description: 'UUID lub slugi oddzielone przecinkami; puste = wszystkie'
+        required: false
+        type: string
+      max_len:
+        description: 'Maksymalna długość segmentu w znakach (-ml)'
+        required: false
+        default: '20'
+        type: string
+      split_on_word:
+        description: 'Dziel po słowie (-sow)'
+        required: false
+        default: true
+        type: boolean
+      vad:
+        description: 'VAD whispera (obcina ~40% tekstu — zostaw wyłączone)'
+        required: false
+        default: false
+        type: boolean
+      limit:
+        description: 'Ile odcinków najwyżej (0 = bez limitu)'
+        required: false
+        default: '0'
+        type: string
+
+run-name: transkrypcja ${{ inputs.episodes || 'wszystkie odcinki' }}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: transcribe
+  cancel-in-progress: false
+
+env:
+  WHISPER_VERSION: v1.9.5
+  WHISPER_MODEL: ggml-large-v3-turbo-q5_0.bin
+  WHISPER_MODEL_URL: https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo-q5_0.bin
+  THREADS: '4'
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.build.outputs.matrix }}
+      count: ${{ steps.build.outputs.count }}
+    steps:
+      - uses: actions/checkout@v5
+      - id: build
+        env:
+          EPISODES: ${{ inputs.episodes }}
+          LIMIT: ${{ inputs.limit }}
+        run: node scripts/plan-transcribe.mjs
+
+  transcribe:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      MAX_LEN: ${{ inputs.max_len }}
+      SPLIT_ON_WORD: ${{ inputs.split_on_word }}
+      VAD: ${{ inputs.vad }}
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Cache whisper.cpp
+        id: whisper-cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/whisper
+          key: whisper-${{ env.WHISPER_VERSION }}-${{ runner.arch }}
+
+      - name: Build whisper.cpp
+        if: steps.whisper-cache.outputs.cache-hit != 'true'
+        run: |
+          git clone --depth 1 --branch "$WHISPER_VERSION" https://github.com/ggml-org/whisper.cpp.git .cache/whisper/src
+          cmake -S .cache/whisper/src -B .cache/whisper/src/build \
+            -DWHISPER_BUILD_TESTS=OFF -DWHISPER_BUILD_SERVER=OFF -DCMAKE_BUILD_TYPE=Release
+          cmake --build .cache/whisper/src/build -j 4 --target whisper-cli
+          mkdir -p .cache/whisper/bin
+          cp -a .cache/whisper/src/build/bin/. .cache/whisper/bin/
+
+      - name: Cache model
+        id: model-cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/models
+          key: model-${{ env.WHISPER_MODEL }}
+
+      - name: Download model
+        if: steps.model-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p .cache/models
+          curl -sSL -o ".cache/models/$WHISPER_MODEL" "$WHISPER_MODEL_URL"
+
+      - name: Transcribe
+        env:
+          WHISPER_BIN: ${{ github.workspace }}/.cache/whisper/bin/whisper-cli
+          WHISPER_MODEL_PATH: ${{ github.workspace }}/.cache/models/${{ env.WHISPER_MODEL }}
+          ID: ${{ matrix.id }}
+          URL: ${{ matrix.audioUrl }}
+          START: ${{ matrix.start }}
+          LENGTH: ${{ matrix.length }}
+          PART: ${{ matrix.part }}
+        run: |
+          WHISPER_BIN="$WHISPER_BIN" \
+          WHISPER_MODEL="$WHISPER_MODEL_PATH" \
+          node scripts/transcribe.mjs --id "$ID" --url "$URL" \
+            --start "$START" --length "$LENGTH" --part "$PART" --out .incoming
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: transcript-${{ matrix.id }}-${{ matrix.part }}
+          path: .incoming/${{ matrix.id }}.part*.json
+          if-no-files-found: error
+          retention-days: 7
+
+  commit:
+    needs: transcribe
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: transcript-*
+          path: .incoming
+          merge-multiple: true
+
+      - name: Złóż części
+        run: node scripts/merge-transcripts.mjs .incoming data/transcripts
+
+      - run: npm ci
+      - run: npm run check
+
+      - name: Commit
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Brak zmian."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/transcripts
+          git commit -m "fix: transkrypcje gęstszymi segmentami (${GITHUB_RUN_ID})"
+          git push
