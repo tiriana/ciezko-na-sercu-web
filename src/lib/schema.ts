@@ -95,6 +95,8 @@ export const overrideSchema = z.object({
         album: z.string().optional(),
         start: z.number().optional(),
         durationSec: z.number().optional(),
+        /** Ręczna granica utworu; bez niej `end` wynika z `start + durationSec`. */
+        end: z.number().optional(),
         /** Nowe wartości pól; stare (artist/title/album) zostają kluczem dopasowania. */
         newArtist: z.string().optional(),
         newTitle: z.string().optional(),
@@ -131,6 +133,8 @@ export const overrideSchema = z.object({
         time: z.number(),
         label: z.string(),
         start: z.number().optional(),
+        /** Ręczny koniec wejścia; bez niego zostaje granica z taggera. */
+        end: z.number().optional(),
         newLabel: z.string().optional(),
         hide: z.boolean().optional(),
       })

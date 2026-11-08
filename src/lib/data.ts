@@ -64,6 +64,7 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
       if (!track) continue;
       if (fix.start !== undefined) track.start = fix.start;
       if (fix.durationSec !== undefined) track.durationSec = fix.durationSec;
+      if (fix.end !== undefined) track.end = fix.end;
       if (fix.newArtist !== undefined) track.artist = fix.newArtist;
       if (fix.newTitle !== undefined) track.title = fix.newTitle;
       if (fix.newAlbum !== undefined) track.album = fix.newAlbum;
@@ -91,6 +92,7 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
       const topic = episode.topics.find((candidate) => candidate.start === fix.time && sameText(candidate.label, fix.label));
       if (!topic) continue;
       if (fix.start !== undefined) topic.start = fix.start;
+      if (fix.end !== undefined) topic.end = fix.end;
       if (fix.newLabel) topic.label = fix.newLabel;
     }
     if (override.addTracks.length > 0) {

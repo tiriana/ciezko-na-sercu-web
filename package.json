@@ -15,7 +15,8 @@
     "test:e2e": "node scripts/e2e-tagi.mjs",
     "release": "semantic-release",
     "transcribe": "node scripts/transcribe.mjs",
-    "episodes": "node scripts/fetch-episodes.mjs"
+    "episodes": "node scripts/fetch-episodes.mjs",
+    "boundaries": "node scripts/snap-boundaries.mjs"
   },
   "dependencies": {
     "astro": "^7.4.7",

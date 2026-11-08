@@ -101,7 +101,99 @@
       .row-actions button:hover, .toolbar button:hover { border-color: var(--accent); color: var(--accent); }
       .toolbar { display: flex; gap: 8px; align-items: center; margin-top: 16px; }
       .toolbar .primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-      .toolbar .status { color: var(--muted); font-size: 12px; }
+      #editor > .toolbar {
+        position: sticky;
+        bottom: 0;
+        z-index: 3;
+        flex-wrap: wrap;
+        margin: 16px -20px -60px;
+        padding: 10px 20px 12px;
+        border-top: 1px solid var(--line);
+        background: var(--surface);
+        box-shadow: 0 -5px 12px rgba(28, 26, 24, 0.05);
+      }
+      .auto-save {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        color: var(--muted);
+        font-size: 12px;
+        cursor: pointer;
+        user-select: none;
+      }
+      .auto-save input {
+        appearance: none;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 17px;
+        margin: 0;
+        border-radius: 9px;
+        background: #d7d0c6;
+        position: relative;
+        cursor: pointer;
+        transition: background 0.15s ease;
+      }
+      .auto-save input::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 1px 2px rgba(28, 26, 24, 0.25);
+        transition: transform 0.15s ease;
+      }
+      .auto-save input:checked { background: var(--accent); }
+      .auto-save input:checked::after { transform: translateX(13px); }
+      .auto-save input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+      .auto-save:hover input { background: #c9c1b6; }
+      .auto-save:hover input:checked { background: #b00e28; }
+      .save-state {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-left: auto;
+        color: var(--muted);
+        font-size: 12px;
+        font-variant-numeric: tabular-nums;
+      }
+      .save-dot {
+        flex: 0 0 auto;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: currentColor;
+        opacity: 0;
+        transition: opacity 0.15s ease;
+      }
+      .save-state[data-state="dirty"] { color: #8a6410; }
+      .save-state[data-dirty="true"] .save-dot { opacity: 1; background: #d99b00; }
+      .save-state[data-state="saved"] { color: #1f6f3f; }
+      .save-state[data-state="error"] { color: #b31026; font-weight: 600; }
+      .save-state[data-state="saving"] .save-dot {
+        opacity: 1;
+        width: 9px;
+        height: 9px;
+        background: none;
+        border: 1.5px solid currentColor;
+        border-right-color: transparent;
+        animation: save-spin 0.7s linear infinite;
+      }
+      @keyframes save-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) {
+        .save-state[data-state="saving"] .save-dot { animation: none; border-right-color: currentColor; }
+      }
+      .shortcut {
+        padding: 2px 5px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background: #fff;
+        color: var(--muted);
+        font: inherit;
+        font-size: 11px;
+      }
       .restore { margin-top: 14px; color: var(--muted); font-size: 12.5px; }
       .restore button { margin-left: 6px; }
       .hint-line { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
@@ -130,6 +222,178 @@
       .tag-index .type-select { margin-right: 6px; font-size: 11px; padding: 1px 2px; }
       .tag-index .count { color: var(--muted); }
       .tag-index .alias-of { color: var(--accent); font-size: 12px; }
+
+      .wave {
+        margin: 0 0 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+      }
+      .wave [hidden] { display: none !important; }
+      .wave-head {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px 12px;
+        padding: 6px 10px;
+        border-bottom: 1px solid var(--line);
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .wave-name {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--text);
+      }
+      .wave-window {
+        color: var(--text);
+        font-size: 12.5px;
+        font-variant-numeric: tabular-nums;
+      }
+      .wave-legend { display: flex; gap: 10px; flex-wrap: wrap; margin-left: auto; font-size: 11.5px; }
+      .wave-legend span { display: inline-flex; align-items: center; gap: 4px; }
+      .wave-legend i { width: 7px; height: 7px; border-radius: 50%; }
+      .wave-legend .dot-start { background: var(--accent); }
+      .wave-legend .dot-topic { background: #1f6f6b; }
+      .wave-tools { display: flex; gap: 4px; }
+      .wave-tools button {
+        min-width: 26px;
+        padding: 3px 7px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: var(--surface);
+        font: inherit;
+        font-size: 12px;
+        line-height: 1.3;
+        cursor: pointer;
+      }
+      .wave-tools button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+      .wave-tools button:disabled { opacity: 0.4; cursor: default; }
+      .wave-stage {
+        position: relative;
+        height: 76px;
+        background: linear-gradient(#fffdfb, #f8f4ee);
+        touch-action: pan-y;
+        cursor: crosshair;
+        overflow: hidden;
+      }
+      .wave-stage:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+      .wave-stage.is-panning { cursor: grabbing; }
+      #wave-canvas { display: block; width: 100%; height: 100%; }
+      .wave-markers { position: absolute; inset: 0; pointer-events: none; }
+      .wave-marker {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 13px;
+        margin-left: -6.5px;
+        padding: 0;
+        border: 0;
+        background: none;
+        color: var(--accent);
+        cursor: ew-resize;
+        pointer-events: auto;
+        opacity: 0.85;
+      }
+      .wave-marker:hover, .wave-marker:focus { opacity: 1; }
+      .wave-marker.is-topic { color: #1f6f6b; }
+      .wave-marker.is-dense { opacity: 0; pointer-events: none; }
+      .wave-stage:hover .wave-marker.is-dense { opacity: 0.3; }
+      .wave-marker.is-dense:focus { opacity: 1; pointer-events: auto; }
+      .wave-marker-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        margin-left: -0.5px;
+        background: currentColor;
+      }
+      .wave-marker-dot {
+        position: absolute;
+        left: 50%;
+        top: 1px;
+        width: 8px;
+        height: 8px;
+        margin-left: -4px;
+        border-radius: 50%;
+        background: currentColor;
+        box-shadow: 0 0 0 2px var(--surface);
+      }
+      .wave-marker.is-topic .wave-marker-dot { bottom: 2px; top: auto; width: 7px; height: 7px; margin-left: -3.5px; }
+      .wave-marker:focus { outline: none; }
+      .wave-marker:focus .wave-marker-dot { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent); }
+      .wave-marker.is-dragging { opacity: 1; }
+      .wave-marker.is-dragging .wave-marker-line { width: 2px; margin-left: -1px; }
+      .wave-playhead {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 2px;
+        margin-left: -1px;
+        background: #1c1a18;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+      /* Kreska doszła do krawędzi okna: zostaje na niej i pokazuje, w którą stronę
+         odtwarzanie uciekło — inaczej wygląda jak zwykłe obramowanie panelu. */
+      .wave-playhead.is-pinned { opacity: 1; }
+      .wave-playhead.is-pinned::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        border: 4px solid transparent;
+      }
+      .wave-playhead.is-pinned-right::after { left: 2px; border-left-color: #1c1a18; border-right-width: 0; }
+      .wave-playhead.is-pinned-left::after { right: 2px; border-right-color: #1c1a18; border-left-width: 0; }
+      .wave-status {
+        position: absolute;
+        inset: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: var(--muted);
+        background: rgba(255, 253, 251, 0.86);
+      }
+      .wave-stage.is-error { height: auto; min-height: 76px; display: flex; align-items: center; cursor: default; }
+      .wave-stage.is-error #wave-canvas,
+      .wave-stage.is-error .wave-markers,
+      .wave-stage.is-error .wave-playhead { display: none; }
+      .wave-fallback { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; padding: 12px; }
+      .wave-fallback p { margin: 0; }
+      .wave-fallback-reason { flex-basis: 100%; font-size: 13px; color: var(--text); }
+      .wave-fallback-note { font-size: 11.5px; color: var(--muted); }
+      .wave-fallback button {
+        padding: 4px 9px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: var(--surface);
+        font: inherit;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .wave-fallback button:hover { border-color: var(--accent); color: var(--accent); }
+      .wave-hint { margin: 0; padding: 5px 10px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); }
+
+      @media (max-width: 760px) {
+        .layout { grid-template-columns: minmax(0, 1fr); }
+        .sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
+        .list { max-height: 190px; }
+        .main { padding: 12px 12px 60px; }
+        #editor > .toolbar { margin: 16px -12px -60px; padding: 10px 12px 12px; }
+        #editor table { display: block; overflow-x: auto; }
+        .wave-legend { margin-left: 0; }
+        .wave-stage { height: 64px; }
+        header { position: static; }
+        .player { top: 0; }
+      }
     </style>
   </head>
   <body>
@@ -190,6 +454,45 @@
       <main class="main">
         <p class="empty" id="empty">Wybierz odcinek z listy.</p>
         <div id="editor" hidden>
+          <section class="wave" aria-labelledby="wave-title">
+            <div class="wave-head">
+              <span class="wave-name" id="wave-title">Głośność</span>
+              <span class="wave-window" id="wave-window">—</span>
+              <span class="wave-legend" aria-hidden="true">
+                <span><i class="dot-start"></i>start utworu</span>
+                <span><i class="dot-topic"></i>wejście</span>
+              </span>
+              <span class="wave-tools">
+                <button type="button" id="wave-out" title="Oddal" aria-label="Oddal waveform" disabled>−</button>
+                <button type="button" id="wave-in" title="Przybliż" aria-label="Przybliż waveform" disabled>+</button>
+                <button type="button" id="wave-all" disabled>całość</button>
+              </span>
+            </div>
+            <div
+              class="wave-stage"
+              id="wave-stage"
+              tabindex="0"
+              role="group"
+              aria-label="Waveform nagrania: kółko przybliża, strzałki przesuwają okno, klik przewija"
+            >
+              <canvas id="wave-canvas" aria-hidden="true"></canvas>
+              <div class="wave-markers" id="wave-markers"></div>
+              <div class="wave-playhead" id="wave-playhead" hidden></div>
+              <p class="wave-status" id="wave-status" hidden></p>
+              <div class="wave-fallback" id="wave-fallback" hidden>
+                <p class="wave-fallback-reason" id="wave-fallback-reason"></p>
+                <p class="wave-fallback-note">
+                  Waveform liczy ffmpeg, czytając nagranie z sieci — bez ffmpeg i dostępu do nagrania
+                  się nie uda.
+                </p>
+                <button type="button" id="wave-retry">spróbuj ponownie</button>
+              </div>
+            </div>
+            <p class="wave-hint">
+              kółko = zoom, tło = przesuń, klik = przewiń bez grania, dwuklik = graj, spacja = graj/pauza; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s); początek tnie poprzedni fragment
+            </p>
+          </section>
+
           <div class="player">
             <button type="button" data-skip="-5">−5 s</button>
             <audio id="audio" controls preload="none"></audio>
@@ -241,7 +544,20 @@
 
           <div class="toolbar">
             <button class="primary" id="save" type="button">Zapisz</button>
-            <span class="status" id="status"></span>
+            <kbd class="shortcut">Ctrl+S</kbd>
+            <label class="auto-save">
+              <input
+                type="checkbox"
+                role="switch"
+                id="auto-save"
+                title="zapisuje 1,2 s po ostatniej zmianie"
+              />
+              auto-zapis
+            </label>
+            <span class="save-state" id="status" data-state="clean" role="status" aria-live="polite">
+              <span class="save-dot" aria-hidden="true"></span>
+              <span class="save-text">brak zmian</span>
+            </span>
           </div>
         </div>
       </main>
@@ -258,6 +574,18 @@
         hiddenTopics: [],
       };
       const $ = (id) => document.getElementById(id);
+      const fieldInputs = new WeakMap();
+      const topicBase = new WeakMap();
+
+      // Etykieta znacznika z setnymi: fmt zaokrągla do pełnych sekund i przy edycji
+      // z dokładnością 10 ms gubiłaby różnicę, którą właśnie ustawiono.
+      const fmtPrecise = (seconds) => {
+        if (!Number.isFinite(seconds)) return '—';
+        const rounded = Math.round(Math.max(0, seconds) * 100) / 100;
+        const whole = Math.floor(rounded);
+        const hundredths = String(Math.round((rounded - whole) * 100)).padStart(2, '0');
+        return `${fmt(whole)}.${hundredths}`;
+      };
 
       const fmt = (seconds) => {
         if (!Number.isFinite(seconds)) return '—';
@@ -285,7 +613,12 @@
           button.type = 'button';
           button.setAttribute('aria-current', String(state.episode?.id === entry.id));
           button.innerHTML = `<span>${entry.displayTitle}</span><time>${entry.date}${entry.edited ? ' · poprawki' : ''}</time>`;
-          button.addEventListener('click', () => openEpisode(entry.id));
+          button.addEventListener('click', () => {
+            // Porzucenie niezapisanych zmian musi być świadome — inaczej jeden klik
+            // w listę kasuje robotę bez śladu.
+            if (dirty && state.episode && !window.confirm('Masz niezapisane zmiany. Otworzyć inny odcinek?')) return;
+            openEpisode(entry.id);
+          });
           li.append(button);
           list.append(li);
         }
@@ -300,9 +633,192 @@
       };
 
       const usePlayerTime = (input) => {
-        input.value = String(Math.round($('audio').currentTime));
+        // Ta sama dokładność co przy znacznikach: 10 ms, nie cała sekunda.
+        input.value = String(Math.round($('audio').currentTime * 100) / 100);
         // Programowe ustawienie value nie odpala „input”, więc stan trzeba zaktualizować ręcznie.
         input.dispatchEvent(new Event('input'));
+      };
+
+      // --- Auto-zapis ---
+
+      const AUTO_SAVE_DELAY = 1200;
+      const AUTO_SAVE_KEY = 'edytor.autoSave';
+      const autoSave = { on: false, timer: 0, running: false, queued: false, paused: false };
+
+      const readAutoSave = () => {
+        try {
+          return localStorage.getItem(AUTO_SAVE_KEY) === '1';
+        } catch {
+          return false;
+        }
+      };
+
+      const writeAutoSave = (value) => {
+        try {
+          localStorage.setItem(AUTO_SAVE_KEY, value ? '1' : '0');
+        } catch {}
+      };
+
+      // Ustawiane przed pierwszym renderem, żeby pasek nie mrugnął wyłączonym stanem.
+      autoSave.on = readAutoSave();
+      $('auto-save').checked = autoSave.on;
+
+      const autoSaveToggle = $('auto-save');
+      autoSaveToggle.addEventListener('change', () => {
+        autoSave.on = autoSaveToggle.checked;
+        writeAutoSave(autoSave.on);
+        autoSave.queued = false;
+        autoSave.paused = false;
+        if (!autoSave.on) {
+          clearTimeout(autoSave.timer);
+          autoSave.timer = 0;
+          return;
+        }
+        if (dirty && state.episode) queueAutoSave();
+      });
+
+      const cancelAutoSave = () => {
+        clearTimeout(autoSave.timer);
+        autoSave.timer = 0;
+        autoSave.queued = false;
+        autoSave.paused = false;
+      };
+
+      // Jedno zapisanie na serię zmian: każda zmiana przesuwa termin, więc przeciąganie
+      // znacznika czy wpisywanie cyfr kończy się jednym żądaniem po ostatnim zdarzeniu.
+      const queueAutoSave = () => {
+        if (!autoSave.on || !state.episode) return;
+        autoSave.paused = false;
+        clearTimeout(autoSave.timer);
+        autoSave.timer = setTimeout(runAutoSave, AUTO_SAVE_DELAY);
+      };
+
+      const runAutoSave = async () => {
+        autoSave.timer = 0;
+        if (!autoSave.on || autoSave.paused || !state.episode) return;
+        if (autoSave.running) {
+          // W trakcie żądania zmiany tylko kolejkują jeden dodatkowy zapis.
+          autoSave.queued = true;
+          return;
+        }
+        autoSave.running = true;
+        const ok = await saveEpisode();
+        autoSave.running = false;
+        if (!ok) {
+          // Błąd zatrzymuje auto-zapis do następnej zmiany — inaczej powstałaby pętla.
+          autoSave.paused = true;
+          autoSave.queued = false;
+          return;
+        }
+        if (autoSave.queued) {
+          autoSave.queued = false;
+          runAutoSave();
+        }
+      };
+
+      // --- Wskaźnik stanu zapisu ---
+
+      const BASE_TITLE = document.title;
+      let dirty = false;
+      let statusTimer = 0;
+
+      const setStatus = (state, text, title = text) => {
+        clearTimeout(statusTimer);
+        const node = $('status');
+        const label = node.querySelector('.save-text');
+        node.dataset.state = state;
+        node.dataset.dirty = String(dirty);
+        node.title = title;
+        if (label.textContent !== text) label.textContent = text;
+      };
+
+      const setDirty = (value) => {
+        dirty = value;
+        document.title = dirty ? `• ${BASE_TITLE}` : BASE_TITLE;
+      };
+
+      const markDirty = () => {
+        setDirty(true);
+        setStatus('dirty', 'niezapisane zmiany');
+        queueAutoSave();
+      };
+
+      const savedLabel = () => {
+        const now = new Date();
+        return `zapisane ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+      };
+
+      window.addEventListener('beforeunload', (event) => {
+        if (!dirty) return;
+        event.preventDefault();
+        event.returnValue = '';
+      });
+
+      // --- Cofanie zmian osi czasu (Ctrl+Z) ---
+
+      const UNDO_LIMIT = 50;
+      const undoStack = [];
+      const editBurst = { key: null, at: 0 };
+
+      const snapshotTopic = (topic) => ({
+        data: structuredClone(topic),
+        base: topicBase.has(topic) ? structuredClone(topicBase.get(topic)) : null,
+      });
+
+      const pushUndo = () => {
+        undoStack.push({
+          tracks: structuredClone(state.tracks),
+          topics: state.topics.map(snapshotTopic),
+          addTracks: structuredClone(state.addTracks),
+          addTopics: structuredClone(state.addTopics),
+          hiddenTracks: structuredClone(state.hiddenTracks),
+          hiddenTopics: structuredClone(state.hiddenTopics),
+        });
+        if (undoStack.length > UNDO_LIMIT) undoStack.shift();
+      };
+
+      // Jedno wpisanie w pole = jeden krok cofania: kolejne „input” w tym samym polu
+      // w ciągu 800 ms dokłada się do tego samego wpisu, a wyjście z pola zamyka serię.
+      const beginEdit = (key) => {
+        const now = Date.now();
+        if (editBurst.key !== key || now - editBurst.at > 800) pushUndo();
+        editBurst.key = key;
+        editBurst.at = now;
+      };
+
+      const editField = (object, field, apply) => {
+        beginEdit(`${objectKey(object)}:${field}`);
+        markDirty();
+        apply();
+      };
+
+      document.addEventListener('focusout', () => {
+        editBurst.key = null;
+      });
+
+      const undoEdit = () => {
+        const snapshot = undoStack.pop();
+        if (!snapshot) return;
+        state.tracks = structuredClone(snapshot.tracks);
+        state.topics = snapshot.topics.map((entry) => {
+          const topic = structuredClone(entry.data);
+          if (entry.base) topicBase.set(topic, structuredClone(entry.base));
+          return topic;
+        });
+        state.addTracks = structuredClone(snapshot.addTracks);
+        state.addTopics = structuredClone(snapshot.addTopics);
+        state.hiddenTracks = structuredClone(snapshot.hiddenTracks);
+        state.hiddenTopics = structuredClone(snapshot.hiddenTopics);
+        editBurst.key = null;
+        renderTracks();
+        renderTopics();
+        renderAdded();
+        renderRestore();
+        markDirty();
+        setStatus('dirty', 'cofnięto');
+        statusTimer = setTimeout(() => {
+          if (dirty) setStatus('dirty', 'niezapisane zmiany');
+        }, 2500);
       };
 
       const renderTracks = () => {
@@ -315,14 +831,20 @@
           const artistInput = document.createElement('input');
           artistInput.type = 'text';
           artistInput.value = track.artist ?? '';
-          artistInput.addEventListener('input', () => (track.artist = artistInput.value));
+          artistInput.addEventListener('input', () => editField(track, 'artist', () => {
+            track.artist = artistInput.value;
+            waveSync();
+          }));
           artist.append(artistInput);
 
           const title = document.createElement('td');
           const titleInput = document.createElement('input');
           titleInput.type = 'text';
           titleInput.value = track.title ?? '';
-          titleInput.addEventListener('input', () => (track.title = titleInput.value));
+          titleInput.addEventListener('input', () => editField(track, 'title', () => {
+            track.title = titleInput.value;
+            waveSync();
+          }));
           title.append(titleInput);
 
           const album = document.createElement('td');
@@ -330,25 +852,35 @@
           albumInput.type = 'text';
           albumInput.value = track.album ?? '';
           albumInput.placeholder = '(brak)';
-          albumInput.addEventListener('input', () => (track.album = albumInput.value));
+          albumInput.addEventListener('input', () => editField(track, 'album', () => (track.album = albumInput.value)));
           album.append(albumInput);
 
           const start = document.createElement('td');
           const startInput = document.createElement('input');
           startInput.type = 'number';
+          startInput.step = '0.01';
           startInput.value = String(track.start ?? 0);
-          startInput.addEventListener('input', () => (track.start = Number(startInput.value)));
+          startInput.addEventListener('input', () => editField(track, 'start', () => {
+            track.start = Number(startInput.value);
+            waveSync();
+          }));
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(track.start)));
 
           const duration = document.createElement('td');
           const durationInput = document.createElement('input');
           durationInput.type = 'number';
           durationInput.value = String(track.durationSec ?? 0);
-          durationInput.addEventListener('input', () => (track.durationSec = Number(durationInput.value)));
+          durationInput.addEventListener('input', () => editField(track, 'durationSec', () => {
+            track.durationSec = Number(durationInput.value);
+            waveSync();
+          }));
           duration.append(durationInput);
+          fieldInputs.set(track, { start: startInput, duration: durationInput });
 
           const actions = document.createElement('td');
           const hide = rowButton('ukryj', () => {
+            pushUndo();
+            markDirty();
             state.hiddenTracks.push({ artist: track.artist, title: track.title, album: track.album, hide: true });
             state.tracks.splice(index, 1);
             renderTracks();
@@ -359,6 +891,7 @@
           tr.append(artist, title, album, start, duration, actions);
           body.append(tr);
         });
+        waveSync();
       };
 
       const renderTopics = () => {
@@ -371,19 +904,29 @@
           const labelInput = document.createElement('input');
           labelInput.type = 'text';
           labelInput.value = topic.label ?? '';
-          labelInput.addEventListener('input', () => (topic.label = labelInput.value));
+          labelInput.addEventListener('input', () => editField(topic, 'label', () => {
+            topic.label = labelInput.value;
+            waveSync();
+          }));
           label.append(labelInput);
 
           const start = document.createElement('td');
           const startInput = document.createElement('input');
           startInput.type = 'number';
+          startInput.step = '0.01';
           startInput.value = String(topic.start ?? 0);
-          startInput.addEventListener('input', () => (topic.start = Number(startInput.value)));
+          startInput.addEventListener('input', () => editField(topic, 'start', () => {
+            topic.start = Number(startInput.value);
+            waveSync();
+          }));
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(topic.start)));
+          fieldInputs.set(topic, { start: startInput });
 
           const actions = document.createElement('td');
           actions.append(
             rowButton('ukryj', () => {
+              pushUndo();
+              markDirty();
               state.hiddenTopics.push({ time: topic.start, label: topic.label, hide: true });
               state.topics.splice(index, 1);
               renderTopics();
@@ -394,6 +937,7 @@
           tr.append(label, start, actions);
           body.append(tr);
         });
+        waveSync();
       };
 
       const renderAdded = () => {
@@ -408,22 +952,28 @@
             ['start', 'number', '0'],
             ['durationSec', 'number', '0'],
           ];
+          const inputs = {};
           for (const [field, type, placeholder] of cells) {
             const td = document.createElement('td');
             const input = document.createElement('input');
             input.type = type;
             input.value = String(track[field] ?? '');
             input.placeholder = placeholder;
-            input.addEventListener('input', () => {
+            input.addEventListener('input', () => editField(track, field, () => {
               track[field] = type === 'number' ? Number(input.value) : input.value;
-            });
+              waveSync();
+            }));
+            inputs[field] = input;
             td.append(input);
             if (field === 'start') td.append(rowButton('weź', () => usePlayerTime(input)));
             tr.append(td);
           }
+          fieldInputs.set(track, inputs);
           const actions = document.createElement('td');
           actions.append(
             rowButton('usuń', () => {
+              pushUndo();
+              markDirty();
               state.addTracks.splice(index, 1);
               renderAdded();
             })
@@ -440,19 +990,29 @@
           const labelInput = document.createElement('input');
           labelInput.type = 'text';
           labelInput.value = topic.label ?? '';
-          labelInput.addEventListener('input', () => (topic.label = labelInput.value));
+          labelInput.addEventListener('input', () => editField(topic, 'label', () => {
+            topic.label = labelInput.value;
+            waveSync();
+          }));
           labelCell.append(labelInput);
 
           const startCell = document.createElement('td');
           const startInput = document.createElement('input');
           startInput.type = 'number';
+          startInput.step = '0.01';
           startInput.value = String(topic.start ?? 0);
-          startInput.addEventListener('input', () => (topic.start = Number(startInput.value)));
+          startInput.addEventListener('input', () => editField(topic, 'start', () => {
+            topic.start = Number(startInput.value);
+            waveSync();
+          }));
           startCell.append(startInput, rowButton('weź', () => usePlayerTime(startInput)));
+          fieldInputs.set(topic, { start: startInput });
 
           const actions = document.createElement('td');
           actions.append(
             rowButton('usuń', () => {
+              pushUndo();
+              markDirty();
               state.addTopics.splice(index, 1);
               renderAdded();
             })
@@ -460,6 +1020,7 @@
           tr.append(labelCell, startCell, actions);
           topicBody.append(tr);
         });
+        waveSync();
       };
 
       const renderRestore = () => {
@@ -476,6 +1037,8 @@
           span.append(item.label);
           span.append(
             rowButton('przywróć', () => {
+              pushUndo();
+              markDirty();
               if (item.kind === 'track') {
                 state.hiddenTracks = state.hiddenTracks.filter((entry) => entry !== item.entry);
                 state.tracks.push({ ...state.episode.original.tracks.find((t) => t.artist === item.entry.artist && t.title === item.entry.title) ?? item.entry });
@@ -501,18 +1064,26 @@
       };
 
       const openEpisode = async (id) => {
-        $('status').textContent = '';
+        cancelAutoSave();
+        setDirty(false);
+        setStatus('clean', 'brak zmian');
         const response = await fetch(`/api/episode?id=${encodeURIComponent(id)}`);
         const data = await response.json();
         if (!response.ok) {
-          $('status').textContent = data.error ?? 'błąd';
+          setStatus('error', `błąd: ${data.error ?? 'nie udało się wczytać odcinka'}`);
           return;
         }
         state.episode = data;
+        undoStack.length = 0;
+        editBurst.key = null;
+        wave.undoTaken = false;
         state.tracks = data.tracks.map((track) => ({ ...track }));
         state.topics = data.topics.map((topic) => ({ ...topic }));
         state.baseTracks = data.tracks.map((track) => ({ ...track }));
         state.baseTopics = data.topics.map((topic) => ({ ...topic }));
+        // Wiersz wejścia trzeba dopasować do poprawki po czasie i etykiecie z chwili wczytania,
+        // bo po przesunięciu `start` zmienia się i klucz przestałby pasować.
+        state.topics.forEach((topic, index) => topicBase.set(topic, { ...state.baseTopics[index] }));
         state.addTracks = (data.addTracks ?? []).map((track) => ({ ...track }));
         state.addTopics = (data.addTopics ?? []).map((topic) => ({ ...topic }));
         state.hiddenTracks = (data.raw?.tracks ?? []).filter((fix) => fix.hide);
@@ -534,7 +1105,649 @@
         renderAdded();
         renderRestore();
         renderList();
+        openWave(data.id);
       };
+
+      // --- Waveform: głośność nagrania, zoom, przesuwanie okna, znaczniki ---
+
+      const PEAKS_PER_SECOND = 100;
+      const MIN_WAVE_SPAN = 5;
+      const peaksCache = new Map();
+      const peaksPending = new Map();
+
+      const wave = {
+        id: null,
+        peaks: null,
+        duration: 0,
+        start: 0,
+        span: 0,
+        token: 0,
+        loadingTimer: 0,
+        frame: 0,
+        pan: null,
+        undoTaken: false,
+      };
+
+      const clampNumber = (value, low, high) => Math.min(high, Math.max(low, value));
+      const stageEl = () => $('wave-stage');
+
+      const fmtWave = (seconds) => {
+        if (!Number.isFinite(seconds)) return '—';
+        if (wave.span > 30) return fmt(seconds);
+        const total = Math.max(0, seconds);
+        const minutes = Math.floor(total / 60);
+        const rest = (total % 60).toFixed(1).padStart(4, '0');
+        return `${minutes}:${rest}`;
+      };
+
+      const setWaveStatus = (text) => {
+        const node = $('wave-status');
+        node.textContent = text;
+        node.hidden = !text;
+      };
+
+      const setWaveTools = (enabled) => {
+        for (const id of ['wave-in', 'wave-out', 'wave-all']) $(id).disabled = !enabled;
+      };
+
+      const drawWave = () => {
+        const stage = stageEl();
+        const canvas = $('wave-canvas');
+        const width = stage.clientWidth;
+        const height = stage.clientHeight;
+        if (!width || !height) return;
+        const ratio = window.devicePixelRatio || 1;
+        if (canvas.width !== Math.round(width * ratio) || canvas.height !== Math.round(height * ratio)) {
+          canvas.width = Math.round(width * ratio);
+          canvas.height = Math.round(height * ratio);
+        }
+        const ctx = canvas.getContext('2d');
+        ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+        ctx.clearRect(0, 0, width, height);
+        const peaks = wave.peaks;
+        if (!peaks || !wave.span) return;
+
+        const base = wave.start * PEAKS_PER_SECOND;
+        const perPixel = (wave.span * PEAKS_PER_SECOND) / width;
+        const middle = height / 2;
+        const amplitude = Math.max(1, middle - 3);
+        const currentTime = $('audio').currentTime;
+        const playheadX = Number.isFinite(currentTime) ? ((currentTime - wave.start) / wave.span) * width : -1;
+
+        ctx.fillStyle = 'rgba(120, 110, 100, 0.14)';
+        const step =
+          [1, 2, 5, 10, 15, 30, 60, 120, 300, 600, 900, 1800].find(
+            (value) => (value / wave.span) * width >= 90
+          ) ?? 1800;
+        for (let time = Math.ceil(wave.start / step) * step; time < wave.start + wave.span; time += step) {
+          ctx.fillRect(Math.round(((time - wave.start) / wave.span) * width), 0, 1, height);
+        }
+
+        const bars = (color) => {
+          ctx.fillStyle = color;
+          if (perPixel < 1.6) {
+            // okno krótsze niż ~1,6 słupka na piksel: rysujemy pojedyncze słupki z odstępem
+            const stride = width / (wave.span * PEAKS_PER_SECOND);
+            const barWidth = Math.max(1, stride * 0.7);
+            const last = Math.ceil(base + wave.span * PEAKS_PER_SECOND);
+            for (let index = Math.floor(base); index < last; index += 1) {
+              const value = peaks[index] ?? 0;
+              const x = ((index - base) / PEAKS_PER_SECOND / wave.span) * width;
+              const size = Math.max(0.5, (value / 255) * amplitude);
+              ctx.fillRect(x, middle - size, barWidth, size * 2);
+            }
+            return;
+          }
+          for (let x = 0; x < width; x += 1) {
+            const from = Math.floor(base + x * perPixel);
+            const to = Math.max(from + 1, Math.floor(base + (x + 1) * perPixel));
+            let peak = 0;
+            for (let index = from; index < to; index += 1) {
+              const value = peaks[index] ?? 0;
+              if (value > peak) peak = value;
+            }
+            const size = Math.max(0.5, (peak / 255) * amplitude);
+            ctx.fillRect(x, middle - size, 1, size * 2);
+          }
+        };
+
+        bars('rgba(118, 106, 94, 0.6)');
+        if (playheadX > 0) {
+          ctx.save();
+          ctx.beginPath();
+          ctx.rect(0, 0, Math.min(width, playheadX), height);
+          ctx.clip();
+          bars('rgba(200, 16, 46, 0.68)');
+          ctx.restore();
+        }
+      };
+
+      const objectKeys = new WeakMap();
+      let objectSeq = 0;
+      const objectKey = (object) => {
+        if (!objectKeys.has(object)) {
+          objectSeq += 1;
+          objectKeys.set(object, objectSeq);
+        }
+        return objectKeys.get(object);
+      };
+
+      const trackEnd = (track) => {
+        const start = Number(track.start);
+        if (Number.isFinite(track.end) && track.end > start) return track.end;
+        if (track.durationSec > 0) return start + Number(track.durationSec);
+        return null;
+      };
+
+      const topicEnd = (topic) => {
+        const start = Number(topic.start);
+        return Number.isFinite(topic.end) && topic.end > start ? topic.end : null;
+      };
+
+      const trackName = (track) =>
+        `${track.artist?.trim() || 'bez wykonawcy'} — ${track.title?.trim() || 'bez tytułu'}`;
+
+      // Fragmenty osi: każdy utwór i każde wejście. Koniec fragmentu to początek następnego,
+      // więc znaczników końca nie ma — początek tnie poprzedni fragment.
+      const fragments = () => [
+        ...state.tracks.map((object) => ({ object, track: true, start: Number(object.start), end: trackEnd(object) })),
+        ...state.addTracks.map((object) => ({ object, track: true, start: Number(object.start), end: trackEnd(object) })),
+        ...state.topics.map((object) => ({ object, track: false, start: Number(object.start), end: topicEnd(object) })),
+        ...state.addTopics.map((object) => ({ object, track: false, start: Number(object.start), end: topicEnd(object) })),
+      ];
+
+      const precedingFragment = (marker, time) => {
+        let best = null;
+        for (const fragment of fragments()) {
+          if (fragment.object === marker.object) continue;
+          if (!Number.isFinite(fragment.start) || fragment.start >= time) continue;
+          const better =
+            !best ||
+            fragment.start > best.start ||
+            (fragment.start === best.start && best.end === null && fragment.end !== null);
+          if (better) best = fragment;
+        }
+        return best;
+      };
+
+      const followingFragment = (marker, time) => {
+        let best = null;
+        for (const fragment of fragments()) {
+          if (fragment.object === marker.object) continue;
+          if (!Number.isFinite(fragment.start) || fragment.start <= time) continue;
+          if (!best || fragment.start < best.start) best = fragment;
+        }
+        return best;
+      };
+
+      // Koniec zmieniamy tylko w warstwie poprawki: `durationSec` to długość utworu
+      // z metadanych i zostaje bez zmian, bo to pole edytuje się w tabeli.
+      const setFragmentEnd = (fragment, time) => {
+        fragment.end = time;
+        fragment.object.end = time;
+      };
+
+      const collectMarkers = () => {
+        const markers = [];
+        const push = (kind, object, time, priority, name) => {
+          if (!Number.isFinite(time)) return;
+          markers.push({ kind, object, time, priority, name, key: `${kind}:${objectKey(object)}` });
+        };
+        for (const track of state.tracks) push('start', track, Number(track.start), 1, `Początek: ${trackName(track)}`);
+        for (const track of state.addTracks) push('start', track, Number(track.start), 1, `Początek: ${trackName(track)}`);
+        for (const topic of state.topics) push('topic', topic, Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
+        for (const topic of state.addTopics) push('topic', topic, Number(topic.start), 2, `Wejście: ${topic.label?.trim() || 'bez etykiety'}`);
+        return markers;
+      };
+
+      const markerNodes = new Map();
+      const MIN_FRAGMENT = 5;
+
+      const moveStart = (marker, requested, dragging = false) => {
+        const old = marker.time;
+        const ownEnd = marker.kind === 'start' ? trackEnd(marker.object) : topicEnd(marker.object);
+        const previous = precedingFragment(marker, old);
+        const following = followingFragment(marker, old);
+        const low = previous ? Number(previous.start) + MIN_FRAGMENT : 0;
+        // Kolejność fragmentów jest święta: początek nie wchodzi w poprzednika i nie
+        // przeskakuje następnego początku, bo to on wyznacza koniec tego fragmentu.
+        const high = Math.max(
+          low,
+          Math.min(
+            wave.duration,
+            ownEnd === null ? wave.duration : ownEnd - MIN_FRAGMENT,
+            following ? Number(following.start) - MIN_FRAGMENT : wave.duration
+          )
+        );
+        // 10 ms: poniżej tego i tak nie ma sensu, bo ramka MP3 ma ~26 ms.
+        const next = clampNumber(Math.round(requested * 100) / 100, low, high);
+        if (next === old) return;
+        markDirty();
+        // Przeciągnięcie to jeden krok cofania, dlatego zrzut robimy tylko przy pierwszym ruchu.
+        if (!dragging || !wave.undoTaken) {
+          pushUndo();
+          wave.undoTaken = true;
+        }
+        marker.time = next;
+        marker.object.start = next;
+        const inputs = fieldInputs.get(marker.object);
+        if (inputs?.start) inputs.start.value = String(next);
+        // Koniec poprzedniego fragmentu to ten początek — bez tolerancji i bez przerw.
+        if (previous) setFragmentEnd(previous, next);
+      };
+
+      const placeMarker = (node, marker) => {
+        const width = stageEl().clientWidth || 1;
+        node.style.left = `${((marker.time - wave.start) / wave.span) * width}px`;
+        const label = `${marker.name}, ${fmtPrecise(marker.time)}`;
+        node.setAttribute('aria-label', label);
+        node.title = `${label} — przeciągnij albo ←/→ (Alt = 10 ms, Shift = 1 s)`;
+      };
+
+      const bindMarker = (node, marker) => {
+        node.addEventListener('pointerdown', (event) => {
+          if (event.button !== 0 || !wave.peaks) return;
+          event.stopPropagation();
+          event.preventDefault();
+          node.focus({ preventScroll: true });
+          const rect = stageEl().getBoundingClientRect();
+          const originX = event.clientX;
+          let moved = false;
+          wave.undoTaken = false;
+          node.setPointerCapture(event.pointerId);
+          node.classList.add('is-dragging');
+
+          const move = (moveEvent) => {
+            if (!moved && Math.abs(moveEvent.clientX - originX) > 2) moved = true;
+            if (!moved) return;
+            const ratio = clampNumber((moveEvent.clientX - rect.left) / rect.width, 0, 1);
+            moveStart(marker, wave.start + ratio * wave.span, true);
+            placeMarker(node, marker);
+          };
+          const cleanup = () => {
+            node.removeEventListener('pointermove', move);
+            node.removeEventListener('pointerup', finish);
+            node.removeEventListener('pointercancel', cleanup);
+            node.classList.remove('is-dragging');
+          };
+          const finish = () => {
+            cleanup();
+            if (!moved) seek(marker.time);
+          };
+          node.addEventListener('pointermove', move);
+          node.addEventListener('pointerup', finish);
+          node.addEventListener('pointercancel', cleanup);
+        });
+
+        node.addEventListener('keydown', (event) => {
+          if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+          event.preventDefault();
+          event.stopPropagation();
+          // Alt to dokładność zapisu (10 ms), Shift to skok o sekundę.
+          const step = event.altKey ? 0.01 : event.shiftKey ? 1 : 0.1;
+          moveStart(marker, marker.time + (event.key === 'ArrowRight' ? step : -step));
+          placeMarker(node, marker);
+        });
+      };
+
+      const positionMarkers = () => {
+        const width = stageEl().clientWidth;
+        if (!wave.peaks || !wave.span || !width) {
+          for (const entry of markerNodes.values()) entry.node.hidden = true;
+          return;
+        }
+
+        // Gęstość: przy pełnym oddaleniu znaczniki nachodzą na siebie, więc widoczny
+        // zostaje ten o wyższym priorytecie (start > wejście > koniec), a resztę
+        // chowa kreska — nadal jest w kolejności Tab i wraca po fokusie lub najechaniu.
+        const gap = Math.max(4.5, width / 130);
+        const shown = [];
+        for (const entry of markerNodes.values()) {
+          const { node, marker } = entry;
+          const x = ((marker.time - wave.start) / wave.span) * width;
+          node.classList.remove('is-dense');
+          if (x < -10 || x > width + 10) {
+            node.hidden = true;
+            continue;
+          }
+          node.hidden = false;
+          node.style.left = `${x}px`;
+          node.setAttribute('aria-label', `${marker.name}, ${fmtPrecise(marker.time)}`);
+          shown.push({ entry, x });
+        }
+
+        const taken = [];
+        for (const item of [...shown].sort((a, b) => a.entry.marker.priority - b.entry.marker.priority)) {
+          if (taken.some((other) => Math.abs(other - item.x) < gap)) item.entry.node.classList.add('is-dense');
+          else taken.push(item.x);
+        }
+      };
+
+      const buildMarkers = () => {
+        const container = $('wave-markers');
+        const focusedKey = document.activeElement?.dataset?.markerKey;
+        const markers = collectMarkers();
+        const seen = new Set();
+        for (const marker of markers) {
+          seen.add(marker.key);
+          const entry = markerNodes.get(marker.key);
+          if (entry) {
+            // Ten sam obiekt znacznika trzymają domknięcia przeciągania i klawiatury.
+            Object.assign(entry.marker, marker);
+            continue;
+          }
+          const node = document.createElement('button');
+          node.type = 'button';
+          node.className = `wave-marker is-${marker.kind}`;
+          node.dataset.markerKey = marker.key;
+          node.title = `${marker.name} — przeciągnij albo ←/→`;
+          const line = document.createElement('span');
+          line.className = 'wave-marker-line';
+          const dot = document.createElement('span');
+          dot.className = 'wave-marker-dot';
+          node.append(line, dot);
+          bindMarker(node, marker);
+          container.append(node);
+          markerNodes.set(marker.key, { node, marker });
+        }
+        for (const [key, entry] of [...markerNodes]) {
+          if (seen.has(key)) continue;
+          entry.node.remove();
+          markerNodes.delete(key);
+        }
+        positionMarkers();
+        if (focusedKey) {
+          container.querySelector(`[data-marker-key="${focusedKey}"]`)?.focus({ preventScroll: true });
+        }
+      };
+
+      const clearMarkers = () => {
+        for (const entry of markerNodes.values()) entry.node.remove();
+        markerNodes.clear();
+      };
+
+      const PIN_INSET = 8;
+
+      const syncPlayhead = () => {
+        const node = $('wave-playhead');
+        const width = stageEl().clientWidth;
+        const time = $('audio').currentTime;
+        if (!wave.peaks || !wave.span || !width || !Number.isFinite(time)) {
+          node.hidden = true;
+          return;
+        }
+        // Okno się nie przesuwa w trakcie odtwarzania: kiedy kursor wyjeżdża za krawędź,
+        // kreska zatrzymuje się na niej, a nie znika ani nie ciągnie widoku za sobą.
+        const ratio = (time - wave.start) / wave.span;
+        const pinnedLeft = ratio < 0;
+        const pinnedRight = ratio > 1;
+        // Przy krawędzi kreska odsuwa się o szerokość strzałki, bo na samej krawędzi
+        // zlewałaby się z obramowaniem panelu.
+        const x = pinnedLeft ? PIN_INSET : pinnedRight ? width - PIN_INSET : ratio * width;
+        node.hidden = false;
+        node.style.left = `${x}px`;
+        node.classList.toggle('is-pinned', pinnedLeft || pinnedRight);
+        node.classList.toggle('is-pinned-left', pinnedLeft);
+        node.classList.toggle('is-pinned-right', pinnedRight);
+      };
+
+      const renderWave = () => {
+        $('wave-window').textContent = wave.span
+          ? `${fmtWave(wave.start)} – ${fmtWave(wave.start + wave.span)}`
+          : '—';
+        drawWave();
+        positionMarkers();
+      };
+
+      const setWindow = (start, span) => {
+        if (!wave.duration) return;
+        const minSpan = Math.min(MIN_WAVE_SPAN, wave.duration);
+        wave.span = clampNumber(span, minSpan, wave.duration);
+        wave.start = clampNumber(start, 0, Math.max(0, wave.duration - wave.span));
+        renderWave();
+        syncPlayhead();
+      };
+
+      const zoomWave = (factor) => {
+        if (!wave.peaks) return;
+        const time = $('audio').currentTime;
+        const inside = Number.isFinite(time) && time > wave.start && time < wave.start + wave.span;
+        const ratio = inside ? (time - wave.start) / wave.span : 0.5;
+        const anchor = wave.start + wave.span * ratio;
+        const span = wave.span * factor;
+        setWindow(anchor - span * ratio, span);
+      };
+
+      const seekQuiet = (time) => {
+        const audio = $('audio');
+        if (!Number.isFinite(time) || !wave.duration) return;
+        audio.currentTime = clampNumber(time, 0, wave.duration);
+        $('clock').textContent = fmt(audio.currentTime);
+        syncPlayhead();
+        drawWave();
+      };
+
+      const timeAt = (clientX) => {
+        const rect = stageEl().getBoundingClientRect();
+        const ratio = clampNumber((clientX - rect.left) / rect.width, 0, 1);
+        return wave.start + ratio * wave.span;
+      };
+
+      let waveSyncFrame = 0;
+      function waveSync() {
+        if (waveSyncFrame) return;
+        waveSyncFrame = requestAnimationFrame(() => {
+          waveSyncFrame = 0;
+          buildMarkers();
+        });
+      }
+
+      const fetchPeaks = (id) => {
+        if (peaksCache.has(id)) return Promise.resolve(peaksCache.get(id));
+        if (peaksPending.has(id)) return peaksPending.get(id);
+        const job = (async () => {
+          try {
+            const response = await fetch(`/api/peaks?id=${encodeURIComponent(id)}`);
+            if (!response.ok) {
+              let reason = `serwer odpowiedział ${response.status}`;
+              if ((response.headers.get('content-type') ?? '').includes('json')) {
+                const data = await response.json().catch(() => null);
+                if (data?.error) reason = String(data.error);
+              }
+              return { error: reason };
+            }
+            const buffer = await response.arrayBuffer();
+            if (buffer.byteLength === 0) return { error: 'serwer zwrócił pusty waveform' };
+            const result = { peaks: new Uint8Array(buffer) };
+            peaksCache.set(id, result);
+            return result;
+          } catch (error) {
+            return { error: `nie udało się pobrać waveformu: ${error.message}` };
+          } finally {
+            peaksPending.delete(id);
+          }
+        })();
+        peaksPending.set(id, job);
+        return job;
+      };
+
+      const showWaveError = (reason) => {
+        setWaveStatus('');
+        setWaveTools(false);
+        wave.peaks = null;
+        wave.duration = 0;
+        wave.span = 0;
+        $('wave-markers').textContent = '';
+        $('wave-playhead').hidden = true;
+        $('wave-fallback-reason').textContent = reason;
+        $('wave-fallback').hidden = false;
+        stageEl().classList.add('is-error');
+        $('wave-window').textContent = '—';
+        drawWave();
+      };
+
+      const openWave = async (id) => {
+        const token = (wave.token += 1);
+        wave.id = id;
+        wave.peaks = null;
+        wave.duration = 0;
+        wave.span = 0;
+        wave.start = 0;
+        clearMarkers();
+        $('wave-playhead').hidden = true;
+        $('wave-fallback').hidden = true;
+        stageEl().classList.remove('is-error');
+        setWaveTools(false);
+        drawWave();
+        $('wave-window').textContent = '—';
+
+        const startedAt = Date.now();
+        setWaveStatus('liczę waveform… 0 s');
+        clearInterval(wave.loadingTimer);
+        wave.loadingTimer = setInterval(() => {
+          if (token === wave.token) {
+            setWaveStatus(`liczę waveform… ${Math.round((Date.now() - startedAt) / 1000)} s`);
+          }
+        }, 1000);
+
+        const result = await fetchPeaks(id);
+        if (token !== wave.token) return;
+        clearInterval(wave.loadingTimer);
+        if (result.error) {
+          showWaveError(result.error);
+          return;
+        }
+        wave.peaks = result.peaks;
+        wave.duration = result.peaks.length / PEAKS_PER_SECOND;
+        setWaveStatus('');
+        setWaveTools(true);
+        buildMarkers();
+        setWindow(0, wave.duration);
+      };
+
+      const audioEl = $('audio');
+      const refreshWave = () => {
+        syncPlayhead();
+        drawWave();
+      };
+      const frameLoop = () => {
+        wave.frame = 0;
+        refreshWave();
+        if (!audioEl.paused) wave.frame = requestAnimationFrame(frameLoop);
+      };
+      const startFrames = () => {
+        if (!wave.frame) wave.frame = requestAnimationFrame(frameLoop);
+      };
+
+      audioEl.addEventListener('play', startFrames);
+      audioEl.addEventListener('pause', () => {
+        if (wave.frame) cancelAnimationFrame(wave.frame);
+        wave.frame = 0;
+        refreshWave();
+      });
+      audioEl.addEventListener('seeked', refreshWave);
+      audioEl.addEventListener('timeupdate', refreshWave);
+      audioEl.addEventListener('loadedmetadata', refreshWave);
+
+      for (const id of ['wave-in', 'wave-out', 'wave-all']) {
+        $(id).addEventListener('click', () => {
+          if (id === 'wave-in') zoomWave(0.6);
+          else if (id === 'wave-out') zoomWave(1.7);
+          else setWindow(0, wave.duration);
+        });
+      }
+
+      stageEl().addEventListener(
+        'wheel',
+        (event) => {
+          if (!wave.peaks) return;
+          event.preventDefault();
+          const rect = stageEl().getBoundingClientRect();
+          const ratio = clampNumber((event.clientX - rect.left) / rect.width, 0, 1);
+          const anchor = wave.start + wave.span * ratio;
+          const factor = Math.exp(clampNumber(event.deltaY, -120, 120) * 0.002);
+          const span = wave.span * factor;
+          setWindow(anchor - span * ratio, span);
+        },
+        { passive: false }
+      );
+
+      stageEl().addEventListener('pointerdown', (event) => {
+        if (event.button !== 0 || !wave.peaks || event.target.closest('.wave-marker')) return;
+        stageEl().focus({ preventScroll: true });
+        stageEl().setPointerCapture(event.pointerId);
+        wave.pan = { x: event.clientX, start: wave.start, moved: false, pointerId: event.pointerId };
+      });
+
+      stageEl().addEventListener('pointermove', (event) => {
+        const pan = wave.pan;
+        if (!pan || pan.pointerId !== event.pointerId) return;
+        const rect = stageEl().getBoundingClientRect();
+        const dx = event.clientX - pan.x;
+        if (!pan.moved && Math.abs(dx) > 2) pan.moved = true;
+        if (!pan.moved) return;
+        stageEl().classList.add('is-panning');
+        setWindow(pan.start - (dx / rect.width) * wave.span, wave.span);
+      });
+
+      const endPan = (event) => {
+        const pan = wave.pan;
+        if (!pan || pan.pointerId !== event.pointerId) return;
+        wave.pan = null;
+        stageEl().classList.remove('is-panning');
+        if (!pan.moved) seekQuiet(timeAt(event.clientX));
+      };
+
+      stageEl().addEventListener('pointerup', endPan);
+      stageEl().addEventListener('pointercancel', () => {
+        wave.pan = null;
+        stageEl().classList.remove('is-panning');
+      });
+
+      stageEl().addEventListener('dblclick', (event) => {
+        if (!wave.peaks || event.target.closest('.wave-marker')) return;
+        seek(timeAt(event.clientX));
+      });
+
+      stageEl().addEventListener('keydown', (event) => {
+        if (!wave.peaks) return;
+        if (event.code === 'Space' || event.key === ' ') {
+          if (event.ctrlKey || event.metaKey || event.altKey) return;
+          // Spacja gra/pauzuje od kursora. preventDefault blokuje i przewijanie strony,
+          // i aktywację przycisku znacznika, na którym akurat jest fokus.
+          event.preventDefault();
+          const audio = $('audio');
+          if (audio.paused) audio.play().catch(() => {});
+          else audio.pause();
+          return;
+        }
+        const step = wave.span * 0.1;
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          setWindow(wave.start - step, wave.span);
+        } else if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          setWindow(wave.start + step, wave.span);
+        } else if (event.key === '+' || event.key === '=') {
+          event.preventDefault();
+          zoomWave(0.6);
+        } else if (event.key === '-') {
+          event.preventDefault();
+          zoomWave(1.7);
+        }
+      });
+
+      $('wave-retry').addEventListener('click', () => {
+        if (!wave.id) return;
+        peaksCache.delete(wave.id);
+        openWave(wave.id);
+      });
+
+      if ('ResizeObserver' in window) {
+        new ResizeObserver(() => renderWave()).observe(stageEl());
+      } else {
+        window.addEventListener('resize', renderWave);
+      }
 
       for (const button of document.querySelectorAll('[data-skip]')) {
         button.addEventListener('click', () => {
@@ -552,18 +1765,26 @@
       $('filter').addEventListener('input', renderList);
 
       $('add-track').addEventListener('click', () => {
+        pushUndo();
+        markDirty();
         state.addTracks.push({ artist: '', title: '', album: '', start: 0, durationSec: 0 });
         renderAdded();
       });
 
       $('add-topic').addEventListener('click', () => {
+        pushUndo();
+        markDirty();
         state.addTopics.push({ label: '', start: 0 });
         renderAdded();
       });
 
-      $('save').addEventListener('click', async () => {
+      const saveEpisode = async () => {
         const episode = state.episode;
-        if (!episode) return;
+        if (!episode) return false;
+        // Ręczny zapis poleceniem lub przyciskiem unieważnia zaplanowany auto-zapis.
+        clearTimeout(autoSave.timer);
+        autoSave.timer = 0;
+        autoSave.queued = false;
         const tracks = [];
         for (const track of state.tracks) {
           // Porównujemy z tym, co edytor wczytał — nie z surowym plikiem taggera,
@@ -572,6 +1793,7 @@
           if (!base) continue;
           const changed =
             base.start !== track.start ||
+            base.end !== track.end ||
             base.durationSec !== track.durationSec ||
             (base.artist ?? '') !== (track.artist ?? '') ||
             (base.title ?? '') !== (track.title ?? '') ||
@@ -586,38 +1808,93 @@
             newAlbum: track.album,
             start: track.start,
             durationSec: track.durationSec,
+            end: track.end,
           });
         }
         tracks.push(...state.hiddenTracks);
 
         const topics = [];
         for (const topic of state.topics) {
-          const base = state.baseTopics.find((item) => item.label === topic.label && item.start === topic.start);
-          if (base && base.label === topic.label) continue;
-          topics.push({ time: base ? base.start : topic.start, label: base ? base.label : topic.label, start: topic.start, newLabel: topic.label });
+          const base =
+            topicBase.get(topic) ??
+            state.baseTopics.find((item) => item.label === topic.label && item.start === topic.start);
+          const endChanged = base ? base.end !== topic.end : topic.end !== undefined;
+          if (base && base.start === topic.start && base.label === topic.label && !endChanged) continue;
+          const fix = {
+            time: base ? base.start : topic.start,
+            label: base ? base.label : topic.label,
+            start: topic.start,
+            newLabel: topic.label,
+          };
+          if (endChanged) fix.end = topic.end;
+          topics.push(fix);
         }
         topics.push(...state.hiddenTopics);
 
-        $('status').textContent = 'zapisuję…';
-        const response = await fetch('/api/save', {
-          method: 'POST',
-          headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({
-            id: episode.id,
-            title: $('title').value,
-            tracks,
-            topics,
-            addTracks: state.addTracks,
-            addTopics: state.addTopics,
-          }),
-        });
-        const data = await response.json();
-        $('status').textContent = response.ok ? 'zapisane — zbuduj stronę (npm run build)' : (data.error ?? 'błąd');
-        if (response.ok) {
+        setStatus('saving', 'zapisuję…', 'trwa zapis');
+        try {
+          const response = await fetch('/api/save', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({
+              id: episode.id,
+              title: $('title').value,
+              tracks,
+              topics,
+              addTracks: state.addTracks,
+              addTopics: state.addTopics,
+            }),
+          });
+          const data = await response.json().catch(() => ({}));
+          if (!response.ok) {
+            setStatus('error', `błąd: ${data.error ?? `serwer odpowiedział ${response.status}`}`);
+            return false;
+          }
+          const label = savedLabel();
+          const note = `${label} — zbuduj stronę (npm run build)`;
+          setDirty(false);
+          setStatus('saved', label, note);
+          statusTimer = setTimeout(() => setStatus('clean', label, note), 4000);
           episodes = episodes.map((item) => (item.id === episode.id ? { ...item, displayTitle: $('title').value.trim() || item.originalTitle } : item));
           renderList();
+          return true;
+        } catch (error) {
+          setStatus('error', `błąd: ${error.message}`);
+          return false;
         }
+      };
+
+      $('save').addEventListener('click', () => {
+        saveEpisode();
       });
+
+      // Ctrl/Cmd+S zapisuje wszędzie, Ctrl/Cmd+Z cofa tylko wtedy, gdy fokus nie jest
+      // w polu tekstowym — tam natywne cofanie przeglądarki ma pierwszeństwo.
+      // Faza przechwytywania i `code` zamiast `key`: skrót nie może zginąć w żadnym
+      // elemencie, a układ klawiatury nie ma znaczenia.
+      document.addEventListener(
+        'keydown',
+        (event) => {
+          if (!event.ctrlKey && !event.metaKey) return;
+          const key = event.code === 'KeyS' ? 's' : event.code === 'KeyZ' ? 'z' : '';
+          if (key === 's') {
+            event.preventDefault();
+            if (!state.episode) {
+              setStatus('error', 'najpierw otwórz odcinek');
+              return;
+            }
+            $('save').click();
+            return;
+          }
+          if (key === 'z' && !event.shiftKey) {
+            if (event.target.closest?.('input, textarea, [contenteditable=""], [contenteditable="true"]')) return;
+            if (undoStack.length === 0) return;
+            event.preventDefault();
+            undoEdit();
+          }
+        },
+        true
+      );
 
       const load = async () => {
         const response = await fetch('/api/episodes');
