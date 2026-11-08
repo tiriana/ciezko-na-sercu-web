@@ -82,7 +82,7 @@
       "newAlbum": "Killers (2015 Remaster)",
       "start": 2275.29,
       "durationSec": 172,
-      "end": 2446.81
+      "end": 2447.01
     },
     {
       "artist": "Venom",
@@ -193,6 +193,45 @@
       "start": 5384.15,
       "durationSec": 234,
       "end": 5636.94
+    },
+    {
+      "artist": "Vader",
+      "title": "Carnal",
+      "album": "XXV",
+      "newArtist": "Vader",
+      "newTitle": "Carnal",
+      "newAlbum": "XXV",
+      "start": 5682.72,
+      "durationSec": 53,
+      "end": 5810.77
+    },
+    {
+      "artist": "None",
+      "title": "Scar to Scars",
+      "album": "Procreation",
+      "hide": true
+    },
+    {
+      "artist": "Kat",
+      "title": "Porwany Obłędem",
+      "album": "38 Minutes of Life",
+      "newArtist": "Kat",
+      "newTitle": "Porwany Obłędem",
+      "newAlbum": "38 Minutes of Life",
+      "start": 6140.99,
+      "durationSec": 259,
+      "end": 6408.59
+    },
+    {
+      "artist": "Mayhem",
+      "title": "Life Eternal",
+      "album": "De Mysteriis Dom Sathanas",
+      "newArtist": "Mayhem",
+      "newTitle": "Life Eternal",
+      "newAlbum": "De Mysteriis Dom Sathanas",
+      "start": 6513.4,
+      "durationSec": 343,
+      "end": 6872
     }
   ],
   "topics": [
@@ -317,7 +356,38 @@
       "time": 5650,
       "label": "Wspomnienia i hołdy dla zmarłych muzyków metalowych – od Mike’a Browninga po LG Petrova i Mieszka Talarczyka",
       "start": 5636.94,
-      "newLabel": "DOCENT"
+      "newLabel": "DOCENT",
+      "end": 5682.72
+    },
+    {
+      "time": 6528,
+      "label": "Wspomnienie o zmarłych artystach i ich długiej liście",
+      "hide": true
+    },
+    {
+      "time": 6478.55,
+      "label": "Podsumowanie legendy Mayhem i zapowiedź utworu Life Eternal",
+      "hide": true
+    },
+    {
+      "time": 6479,
+      "label": "Muzyka autentycznie niebezpieczna i przekraczanie tabu",
+      "hide": true
+    },
+    {
+      "time": 6480,
+      "label": "Popularność true crime w serialach, podcastach i książkach",
+      "hide": true
+    },
+    {
+      "time": 6538,
+      "label": "Pocieszanie się pozostawioną muzyką zmarłych twórców",
+      "hide": true
+    },
+    {
+      "time": 6600,
+      "label": "Omówienie ostatnich płyt i planowanych wydawnictw zespołów (Nocturnus AD, This Fear, Children of Bodom, Mayhem)",
+      "hide": true
     }
   ],
   "addTracks": [
@@ -332,7 +402,7 @@
   "addTopics": [
     {
       "label": "Kronos",
-      "start": 2446.81,
+      "start": 2447.01,
       "end": 2460.43
     },
     {
@@ -369,6 +439,21 @@
       "label": "SLIPKNOT",
       "start": 5328.27,
       "end": 5384.15
+    },
+    {
+      "label": "Tomasz Molka",
+      "start": 5810.77,
+      "end": 5854.27
+    },
+    {
+      "label": "KAT",
+      "start": 6093.36,
+      "end": 6140.99
+    },
+    {
+      "label": "MAYHAM",
+      "start": 6408.59,
+      "end": 6513.4
     }
   ],
   "credits": {

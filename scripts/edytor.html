@@ -424,6 +424,9 @@
       }
       .wave-menu[hidden] { display: none; }
       .wave-menu button[hidden] { display: none; }
+      .wave-menu button.is-destructive { color: #b3102c; }
+      .wave-menu button.is-destructive:hover,
+      .wave-menu button.is-destructive:focus-visible { background: #fbe6e9; }
       .wave-edit {
         position: fixed;
         z-index: 32;
@@ -556,10 +559,16 @@
         opacity: 0.85;
       }
       .wave-marker:hover, .wave-marker:focus { opacity: 1; }
+      /* Grubsza kreska rozróżnia ten spod palca, gdy dwie kropki leżą w tym samym pikselu. */
+      .wave-marker:hover .wave-marker-line,
+      .wave-marker:focus .wave-marker-line { width: 2px; margin-left: -1px; }
       .wave-marker.is-topic { color: #1f6f6b; }
-      .wave-marker.is-dense { opacity: 0; pointer-events: none; }
-      .wave-stage:hover .wave-marker.is-dense { opacity: 0.3; }
-      .wave-marker.is-dense:focus { opacity: 1; pointer-events: auto; }
+      /* Nakładające się znaczniki leżą jeden na drugim; o tym, który jest wyżej,
+         decyduje kolejność warstw, a najechanie i fokus zawsze wyciągają swój. */
+      .wave-marker { z-index: 2; }
+      .wave-marker.is-topic { z-index: 1; }
+      .wave-marker.is-reviewed { z-index: 3; }
+      .wave-marker:hover, .wave-marker:focus { z-index: 5; }
       .wave-marker-line {
         position: absolute;
         top: 0;
@@ -891,6 +900,10 @@
       <button type="button" role="menuitem" id="wave-menu-edit" hidden>
         <span>Edytuj…</span>
         <small id="wave-menu-edit-mark"></small>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-remove" class="is-destructive" hidden>
+        <span>Usuń znacznik</span>
+        <small id="wave-menu-remove-mark"></small>
       </button>
     </div>
 
@@ -2547,8 +2560,10 @@
         $('wave-menu-add').hidden = Boolean(marker);
         $('wave-menu-ok').hidden = !marker;
         $('wave-menu-edit').hidden = !marker;
+        $('wave-menu-remove').hidden = !marker;
         if (marker) {
           $('wave-menu-edit-mark').textContent = marker.name;
+          $('wave-menu-remove-mark').textContent = marker.name;
           $('wave-menu-ok-text').textContent = marker.reviewed ? 'Odznacz ok' : 'Oznacz jako ok';
           $('wave-menu-mark').textContent = `${marker.name}, ${fmtPrecise(marker.time)}`;
         } else {
@@ -2562,6 +2577,12 @@
         waveMenu.style.top = `${y}px`;
         menuItems()[0]?.focus({ preventScroll: true });
       };
+
+      $('wave-menu-remove').addEventListener('click', () => {
+        const marker = menuMarker;
+        closeMenu();
+        if (marker) deleteMarker(marker);
+      });
 
       $('wave-menu-edit').addEventListener('click', () => {
         const marker = menuMarker;
@@ -2685,16 +2706,12 @@
           return;
         }
 
-        // Gęstość: przy pełnym oddaleniu znaczniki nachodzą na siebie, więc widoczny
-        // zostaje ten o wyższym priorytecie (start > wejście > koniec), a resztę
-        // chowa kreska — nadal jest w kolejności Tab i wraca po fokusie lub najechaniu.
-        // Kropki mają 11–15 px, więc odstęp musi być od nich większy, żeby się nie zlewały.
-        const gap = Math.max(6, width / 120);
-        const shown = [];
+        // Wszystkie znaczniki są widoczne. Nakładające się na siebie rozdziela
+        // warstwa (patrz CSS) i fokus, a nie chowanie — inaczej kolejność Tab
+        // rozjeżdżałaby się z tym, co widać.
         for (const entry of markerNodes.values()) {
           const { node, marker } = entry;
           const x = ((marker.time - wave.start) / wave.span) * width;
-          node.classList.remove('is-dense');
           if (x < -10 || x > width + 10) {
             node.hidden = true;
             continue;
@@ -2702,19 +2719,6 @@
           node.hidden = false;
           node.style.left = `${x}px`;
           node.setAttribute('aria-label', `${marker.name}, ${fmtPrecise(marker.time)}`);
-          shown.push({ entry, x });
-        }
-
-        const focusedKey = document.activeElement?.dataset?.markerKey;
-        const rank = (entry) => {
-          if (entry.node.dataset.markerKey === focusedKey) return 0;
-          if (entry.marker.reviewed) return 1;
-          return entry.marker.kind === 'start' ? 2 : 3;
-        };
-        const taken = [];
-        for (const item of [...shown].sort((a, b) => rank(a.entry) - rank(b.entry))) {
-          if (taken.some((other) => Math.abs(other - item.x) < gap)) item.entry.node.classList.add('is-dense');
-          else taken.push(item.x);
         }
       };
 
