@@ -11,7 +11,7 @@ on:
         type: string
 
 # Nazwa przebiegu mówi, którą wersję publikuje — bez tego lista wygląda jak „deploy #245”.
-run-name: deploy v${{ inputs.version || '?' }}
+run-name: deploy ${{ inputs.version && format('v{0}', inputs.version) || github.ref_name }}
 
 permissions:
   contents: read
