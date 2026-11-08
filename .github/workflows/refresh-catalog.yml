@@ -86,7 +86,7 @@ jobs:
       - name: Opublikuj stronę
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run deploy.yml --ref main
+        run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
 
       # Nowy odcinek ma pierwszeństwo przed kolejką, więc transkrypcję zamawiamy od razu
       # po odświeżeniu katalogu. Plan bierze najnowszy odcinek bez transkryptu.
