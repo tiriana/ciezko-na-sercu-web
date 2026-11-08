@@ -1,3 +1,9 @@
+## [1.16.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.15.2...v1.16.0) (2026-11-08)
+
+### Features
+
+* **edytor:** add supervisor script and UI improvements ([1b556fb](https://github.com/tiriana/ciezko-na-sercu-web/commit/1b556fbaa98578a954d89e83d26ce326d240da70))
+
 ## [1.15.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.15.1...v1.15.2) (2026-11-08)
 
 ### Bug Fixes
