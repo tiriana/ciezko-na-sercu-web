@@ -1,3 +1,9 @@
+## [1.5.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.4.0...v1.5.0) (2026-11-08)
+
+### Features
+
+* przeliczanie czasów tematów po transkrypcji ([dd7a9a2](https://github.com/tiriana/ciezko-na-sercu-web/commit/dd7a9a2ca645912d5f70fbb6da9d79cf1d6bece3))
+
 ## [1.4.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.3.0...v1.4.0) (2026-11-08)
 
 ### Features
