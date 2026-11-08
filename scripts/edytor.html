@@ -424,6 +424,65 @@
       }
       .wave-menu[hidden] { display: none; }
       .wave-menu button[hidden] { display: none; }
+      .wave-edit {
+        position: fixed;
+        z-index: 32;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 300px;
+        max-width: calc(100vw - 16px);
+        max-height: calc(100vh - 32px);
+        overflow-y: auto;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        box-shadow: 0 14px 30px rgba(28, 26, 24, 0.22);
+      }
+      .wave-edit[hidden] { display: none; }
+      .wave-edit h3 {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .wave-edit label { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: var(--muted); }
+      .wave-edit input {
+        width: 100%;
+        padding: 5px 7px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        font: inherit;
+        font-size: 12.5px;
+        color: var(--text);
+      }
+      .wave-edit input:focus { border-color: var(--accent); outline: none; }
+      .wave-edit input.is-invalid { border-color: var(--accent); background: #fbe6e9; }
+      .wave-edit-row { display: flex; gap: 8px; }
+      .wave-edit-row label { flex: 1 1 0; }
+      .wave-edit-error { margin: 0; color: #8d0b1d; font-size: 11.5px; }
+      .wave-edit-warn { margin: 0; color: #7a5a08; font-size: 11.5px; }
+      .wave-edit-error[hidden], .wave-edit-warn[hidden] { display: none; }
+      .wave-edit-actions { display: flex; align-items: center; gap: 8px; margin-top: 2px; }
+      .wave-edit-actions .grow { flex: 1 1 auto; }
+      .wave-edit-actions button {
+        padding: 4px 10px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: #fffdfb;
+        color: var(--text);
+        font: inherit;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .wave-edit-actions button[hidden] { display: none; }
+      .wave-edit-actions button:hover { border-color: var(--accent); color: var(--accent); }
+      .wave-edit-actions button.primary { border-color: var(--accent); background: var(--accent); color: #fffdfb; }
+      .wave-edit-actions button.primary:hover { background: #b00e28; color: #fffdfb; }
+      .wave-edit-hint { color: var(--muted); font-size: 10.5px; }
       .wave-count { font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
       .wave-count[hidden] { display: none; }
       .wave-label {
@@ -513,19 +572,19 @@
       .wave-marker-dot {
         position: absolute;
         left: 50%;
-        top: 1px;
-        width: 8px;
-        height: 8px;
-        margin-left: -4px;
+        top: 0;
+        width: 11px;
+        height: 11px;
+        margin-left: -5.5px;
         border-radius: 50%;
         background: currentColor;
         box-shadow: 0 0 0 2px var(--surface);
       }
-      .wave-marker.is-topic .wave-marker-dot { bottom: 2px; top: auto; width: 7px; height: 7px; margin-left: -3.5px; }
+      .wave-marker.is-topic .wave-marker-dot { bottom: 1px; top: auto; width: 10px; height: 10px; margin-left: -5px; }
       .wave-marker.is-reviewed .wave-marker-dot {
-        width: 12px;
-        height: 12px;
-        margin-left: -6px;
+        width: 15px;
+        height: 15px;
+        margin-left: -7.5px;
         background: #1f7a4a;
         box-shadow: 0 0 0 2px var(--surface);
         display: flex;
@@ -533,14 +592,14 @@
         justify-content: center;
       }
       .wave-marker.is-reviewed.is-topic .wave-marker-dot {
-        width: 11px;
-        height: 11px;
-        margin-left: -5.5px;
+        width: 14px;
+        height: 14px;
+        margin-left: -7px;
       }
       .wave-marker.is-reviewed .wave-marker-dot::after {
         content: "✓";
         color: #fffdfb;
-        font-size: 9px;
+        font-size: 10px;
         font-weight: 700;
         line-height: 1;
       }
@@ -825,6 +884,10 @@
         <span>Dodaj wejście tutaj</span>
         <small id="wave-menu-time"></small>
       </button>
+      <button type="button" role="menuitem" id="wave-menu-edit" hidden>
+        <span>Edytuj…</span>
+        <small id="wave-menu-edit-mark"></small>
+      </button>
       <button type="button" role="menuitem" id="wave-menu-ok" hidden>
         <span id="wave-menu-ok-text">Oznacz jako ok</span>
         <small id="wave-menu-mark"></small>
@@ -835,6 +898,20 @@
       <label for="wave-label-input">Nazwa nowego wejścia</label>
       <input id="wave-label-input" type="text" placeholder="Nowe wejście" autocomplete="off" />
       <span class="wave-label-hint">Enter = zatwierdź, Esc = zostaw bez nazwy</span>
+    </form>
+
+    <form class="wave-edit" id="wave-edit" role="dialog" aria-labelledby="wave-edit-title" hidden>
+      <h3 id="wave-edit-title">Edytuj znacznik</h3>
+      <div id="wave-edit-fields"></div>
+      <p class="wave-edit-error" id="wave-edit-error" role="alert" hidden></p>
+      <p class="wave-edit-warn" id="wave-edit-warn" hidden></p>
+      <div class="wave-edit-actions">
+        <button type="button" id="wave-edit-restore" hidden>Przywróć</button>
+        <span class="grow"></span>
+        <button type="button" id="wave-edit-cancel">Anuluj</button>
+        <button type="submit" class="primary" id="wave-edit-save">Zapisz</button>
+      </div>
+      <span class="wave-edit-hint">Tab = następne pole, Enter = zapisz, Esc = anuluj</span>
     </form>
 
     <script>
@@ -1403,7 +1480,7 @@
             waveSync();
           }));
           duration.append(durationInput);
-          fieldInputs.set(track, { start: startInput, duration: durationInput });
+          fieldInputs.set(track, { start: startInput, duration: durationInput, artist: artistInput, title: titleInput, album: albumInput });
 
           const actions = document.createElement('td');
           const hide = rowButton('ukryj', () => {
@@ -1936,14 +2013,13 @@
       const markerNodes = new Map();
       const MIN_FRAGMENT = 5;
 
-      const moveStart = (marker, requested, dragging = false) => {
-        const old = marker.time;
+      // Granice przesuwania początku: nie wchodzimy w poprzednika i nie przeskakujemy
+      // następnego początku, bo to on wyznacza koniec tego fragmentu.
+      const startBounds = (marker) => {
         const ownEnd = marker.kind === 'start' ? trackEnd(marker.object) : topicEnd(marker.object);
-        const previous = precedingFragment(marker, old);
-        const following = followingFragment(marker, old);
+        const previous = precedingFragment(marker, marker.time);
+        const following = followingFragment(marker, marker.time);
         const low = previous ? Number(previous.start) + MIN_FRAGMENT : 0;
-        // Kolejność fragmentów jest święta: początek nie wchodzi w poprzednika i nie
-        // przeskakuje następnego początku, bo to on wyznacza koniec tego fragmentu.
         const high = Math.max(
           low,
           Math.min(
@@ -1952,6 +2028,12 @@
             following ? Number(following.start) - MIN_FRAGMENT : wave.duration
           )
         );
+        return { low, high, previous, following, ownEnd };
+      };
+
+      const moveStart = (marker, requested, dragging = false) => {
+        const old = marker.time;
+        const { low, high, previous } = startBounds(marker);
         // 10 ms: poniżej tego i tak nie ma sensu, bo ramka MP3 ma ~26 ms.
         const next = clampNumber(Math.round(requested * 100) / 100, low, high);
         if (next === old) return;
@@ -2170,6 +2252,276 @@
       window.addEventListener('scroll', () => closeLabel(), { passive: true });
       window.addEventListener('resize', () => closeLabel());
 
+
+      // --- Edycja pól znacznika (menu → „Edytuj…”) ---
+
+      const editForm = $('wave-edit');
+      const editFields = $('wave-edit-fields');
+      const editError = $('wave-edit-error');
+      const editWarn = $('wave-edit-warn');
+      let editTarget = null;
+      let editOpener = null;
+
+      const EDIT_FIELDS = {
+        start: [
+          ['artist', 'Wykonawca', 'text'],
+          ['title', 'Tytuł', 'text'],
+          ['album', 'Album', 'text'],
+          ['start', 'Start (s)', 'number'],
+          ['durationSec', 'Czas (s)', 'number'],
+        ],
+        topic: [
+          ['label', 'Etykieta', 'text'],
+          ['start', 'Start (s)', 'number'],
+        ],
+      };
+
+      // Pola numeryczne stoją obok siebie, tekstowe pełną szerokością.
+      const NUMERIC_FIELDS = new Set(['start', 'durationSec']);
+
+      const fieldInput = (name) => editFields.querySelector(`[name="${name}"]`);
+
+      const editValueOf = (marker, field) =>
+        field === 'start' ? fmtPreciseNumber(marker.time) : marker.object[field] ?? '';
+
+      const fmtPreciseNumber = (seconds) => String(Math.round(Number(seconds) * 100) / 100);
+
+      const buildEditFields = (marker) => {
+        editFields.textContent = '';
+        const defs = EDIT_FIELDS[marker.kind === 'start' ? 'start' : 'topic'];
+        let row = null;
+        for (const [field, label, type] of defs) {
+          const wrapper = document.createElement('label');
+          const caption = document.createElement('span');
+          caption.textContent = label;
+          const input = document.createElement('input');
+          input.type = type;
+          input.name = field;
+          input.id = `wave-edit-field-${field}`;
+          input.autocomplete = 'off';
+          input.value = String(editValueOf(marker, field));
+          if (type === 'number') {
+            input.step = '0.01';
+            input.inputMode = 'decimal';
+          }
+          wrapper.append(caption, input);
+          if (NUMERIC_FIELDS.has(field) && defs.filter((entry) => NUMERIC_FIELDS.has(entry[0])).length > 1) {
+            if (!row) {
+              row = document.createElement('div');
+              row.className = 'wave-edit-row';
+              editFields.append(row);
+            }
+            row.append(wrapper);
+          } else {
+            row = null;
+            editFields.append(wrapper);
+          }
+        }
+      };
+
+      const positionEdit = (marker) => {
+        const stage = stageEl().getBoundingClientRect();
+        const x = stage.left + ((marker.time - wave.start) / wave.span) * stage.width;
+        const box = editForm.getBoundingClientRect();
+        const left = clampNumber(x - 24, 8, Math.max(8, window.innerWidth - box.width - 8));
+        const below = stage.bottom + 8;
+        const top = below + box.height > window.innerHeight - 8 ? stage.top - box.height - 8 : below;
+        editForm.style.left = `${left}px`;
+        editForm.style.top = `${clampNumber(top, 8, Math.max(8, window.innerHeight - box.height - 8))}px`;
+      };
+
+      const openEdit = (marker, opener) => {
+        editTarget = marker;
+        editOpener = opener ?? null;
+        $('wave-edit-title').textContent = marker.kind === 'start' ? 'Edytuj utwór' : 'Edytuj wejście';
+        buildEditFields(marker);
+        editError.hidden = true;
+        editWarn.hidden = true;
+        editWarn.textContent = '';
+        // Przywracanie ma sens tylko dla wiersza, który jest w ukrytych — znaczniki
+        // ukrytych wierszy nie istnieją, więc to zabezpieczenie na przyszłość.
+        const hidden = state.hiddenTracks.some(
+          (entry) => entry.artist === marker.object.artist && entry.title === marker.object.title
+        );
+        $('wave-edit-restore').hidden = !(marker.kind === 'start' && hidden);
+        editForm.hidden = false;
+        positionEdit(marker);
+        const first = editFields.querySelector('input');
+        first?.focus({ preventScroll: true });
+        first?.select();
+      };
+
+      const closeEdit = ({ keepFocus = false } = {}) => {
+        if (editForm.hidden) return;
+        editForm.hidden = true;
+        editTarget = null;
+        editFields.textContent = '';
+        editError.hidden = true;
+        editWarn.hidden = true;
+        const opener = editOpener;
+        editOpener = null;
+        if (!keepFocus) opener?.focus?.({ preventScroll: true });
+      };
+
+      const snapSeconds = (value) => Math.round(Number(value) * 100) / 100;
+
+      // Zwraca gotowe wartości albo komunikat przy pierwszym błędnym polu.
+      const readEditValues = (marker) => {
+        for (const input of editFields.querySelectorAll('input')) input.classList.remove('is-invalid');
+        const fail = (field, message) => ({ ok: false, field, message });
+        const values = {};
+        const bounds = startBounds(marker);
+
+        const startRaw = fieldInput('start')?.value ?? '';
+        const start = Number(startRaw.replace(',', '.'));
+        if (startRaw.trim() === '' || !Number.isFinite(start)) return fail('start', 'Start musi być liczbą.');
+        if (start < bounds.low - 0.001 || start > bounds.high + 0.001) {
+          return fail(
+            'start',
+            `Start musi mieścić się w ${bounds.low.toFixed(2)}–${bounds.high.toFixed(2)} s (sąsiednie znaczniki i koniec fragmentu).`
+          );
+        }
+        values.start = clampNumber(snapSeconds(start), bounds.low, bounds.high);
+
+        if (marker.kind === 'start') {
+          const durationRaw = fieldInput('durationSec')?.value ?? '';
+          const duration = Number(durationRaw.replace(',', '.'));
+          if (durationRaw.trim() === '' || !Number.isFinite(duration)) return fail('durationSec', 'Czas musi być liczbą.');
+          if (duration <= 0) return fail('durationSec', 'Czas musi być większy od zera.');
+          if (duration > wave.duration) return fail('durationSec', 'Czas nie mieści się w nagraniu.');
+          values.durationSec = snapSeconds(duration);
+          values.artist = fieldInput('artist').value.trim();
+          values.title = fieldInput('title').value.trim();
+          values.album = fieldInput('album').value.trim();
+        } else {
+          values.label = fieldInput('label').value.trim();
+        }
+        return { ok: true, values };
+      };
+
+      const applyEdit = () => {
+        const marker = editTarget;
+        if (!marker) return false;
+        const result = readEditValues(marker);
+        if (!result.ok) {
+          fieldInput(result.field)?.classList.add('is-invalid');
+          fieldInput(result.field)?.focus({ preventScroll: true });
+          editError.textContent = result.message;
+          editError.hidden = false;
+          return false;
+        }
+        const values = result.values;
+        const object = marker.object;
+        const oldReviewKey = marker.reviewKey;
+        pushUndo();
+        // Start idzie przez moveStart: ta sama granica, to samo cięcie poprzednika,
+        // a zrzut cofania mamy już zrobiony wyżej.
+        if (values.start !== snapSeconds(marker.time)) {
+          wave.undoTaken = true;
+          moveStart(marker, values.start, true);
+          wave.undoTaken = false;
+        }
+        if (marker.kind === 'start') {
+          object.artist = values.artist;
+          object.title = values.title;
+          object.album = values.album;
+          if (object.durationSec !== values.durationSec) {
+            object.durationSec = values.durationSec;
+            // Ręczne cięcie (`end`) jest starsze niż nowa długość, więc je zdejmujemy.
+            object.end = undefined;
+          }
+        } else {
+          object.label = values.label;
+        }
+
+        const inputs = fieldInputs.get(object);
+        if (inputs) {
+          if (inputs.start) inputs.start.value = String(snapSeconds(marker.time));
+          if (inputs.durationSec) inputs.durationSec.value = String(values.durationSec ?? inputs.durationSec.value);
+          if (inputs.artist) inputs.artist.value = object.artist ?? '';
+          if (inputs.title) inputs.title.value = object.title ?? '';
+          if (inputs.album) inputs.album.value = object.album ?? '';
+          if (inputs.label) inputs.label.value = object.label ?? '';
+        }
+
+        // Zmiana nazwy przenosi też „ok”, inaczej pieczątka osierociłaby się na starym kluczu.
+        const newReviewKey = reviewKeyOf(marker.kind, object);
+        if (oldReviewKey && oldReviewKey !== newReviewKey) {
+          if (reviewed.delete(oldReviewKey)) {
+            reviewed.add(newReviewKey);
+            if (state.episode) REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
+            persistReviewedAll();
+          }
+        }
+
+        markDirty();
+        buildMarkers();
+        noteStatus('zmieniono znacznik');
+        const warn = marker.kind === 'start' && (!object.artist || !object.title);
+        closeEdit();
+        if (warn) {
+          // Ostrzeżenie jest informacją, nie blokadą: strona pokaże „bez wykonawcy”.
+          noteStatus('bez wykonawcy lub tytułu — strona użyje zapisu zastępczego');
+        }
+        return true;
+      };
+
+      editForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        applyEdit();
+      });
+
+      $('wave-edit-cancel').addEventListener('click', () => closeEdit());
+
+      $('wave-edit-restore').addEventListener('click', () => {
+        const marker = editTarget;
+        if (!marker) return;
+        const object = marker.object;
+        const entry = state.hiddenTracks.find((row) => row.artist === object.artist && row.title === object.title);
+        if (!entry) return;
+        pushUndo();
+        state.hiddenTracks = state.hiddenTracks.filter((row) => row !== entry);
+        state.tracks.push({
+          ...(state.episode.original.tracks.find((row) => row.artist === entry.artist && row.title === entry.title) ?? entry),
+        });
+        markDirty();
+        renderTracks();
+        renderRestore();
+        buildMarkers();
+        closeEdit({ keepFocus: true });
+        noteStatus('przywrócono wiersz');
+      });
+
+      editFields.addEventListener('input', (event) => {
+        event.target.classList.remove('is-invalid');
+        editError.hidden = true;
+        if (editTarget?.kind === 'start') {
+          const artist = fieldInput('artist')?.value.trim();
+          const title = fieldInput('title')?.value.trim();
+          editWarn.hidden = Boolean(artist && title);
+          editWarn.textContent = 'Bez wykonawcy lub tytułu strona pokaże zapis zastępczy („bez wykonawcy”).';
+        }
+      });
+
+      editForm.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') return;
+        event.preventDefault();
+        event.stopPropagation();
+        closeEdit();
+      });
+
+      document.addEventListener(
+        'pointerdown',
+        (event) => {
+          if (editForm.hidden || event.target.closest?.('.wave-edit')) return;
+          closeEdit();
+        },
+        true
+      );
+
+      window.addEventListener('scroll', () => closeEdit(), { passive: true });
+      window.addEventListener('resize', () => closeEdit());
+
       const waveMenu = $('wave-menu');
       let menuTime = null;
       let menuOpener = null;
@@ -2194,7 +2546,9 @@
         menuMarker = marker;
         $('wave-menu-add').hidden = Boolean(marker);
         $('wave-menu-ok').hidden = !marker;
+        $('wave-menu-edit').hidden = !marker;
         if (marker) {
+          $('wave-menu-edit-mark').textContent = marker.name;
           $('wave-menu-ok-text').textContent = marker.reviewed ? 'Odznacz ok' : 'Oznacz jako ok';
           $('wave-menu-mark').textContent = `${marker.name}, ${fmtPrecise(marker.time)}`;
         } else {
@@ -2208,6 +2562,13 @@
         waveMenu.style.top = `${y}px`;
         menuItems()[0]?.focus({ preventScroll: true });
       };
+
+      $('wave-menu-edit').addEventListener('click', () => {
+        const marker = menuMarker;
+        const opener = menuOpener;
+        closeMenu();
+        if (marker) openEdit(marker, opener);
+      });
 
       $('wave-menu-ok').addEventListener('click', () => {
         const marker = menuMarker;
@@ -2327,7 +2688,8 @@
         // Gęstość: przy pełnym oddaleniu znaczniki nachodzą na siebie, więc widoczny
         // zostaje ten o wyższym priorytecie (start > wejście > koniec), a resztę
         // chowa kreska — nadal jest w kolejności Tab i wraca po fokusie lub najechaniu.
-        const gap = Math.max(4.5, width / 130);
+        // Kropki mają 11–15 px, więc odstęp musi być od nich większy, żeby się nie zlewały.
+        const gap = Math.max(6, width / 120);
         const shown = [];
         for (const entry of markerNodes.values()) {
           const { node, marker } = entry;

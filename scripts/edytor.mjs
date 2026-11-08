@@ -8,7 +8,7 @@
 import { createServer } from 'node:http';
 import { spawn } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { readFile, writeFile, readdir, mkdir, stat } from 'node:fs/promises';
+import { readFile, writeFile, rename, readdir, mkdir, stat } from 'node:fs/promises';
 import { watch } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -24,14 +24,25 @@ const SAMPLE_RATE = 2000; // z tego redukujemy do PEAKS_PER_SEC (max z 20 próbe
 const readJson = async (path, fallback) => {
   try {
     return JSON.parse(await readFile(path, 'utf8'));
-  } catch {
+  } catch (error) {
+    // Uszkodzony plik (np. zapis przerwany restartem) nie może udawać „brak danych”,
+    // bo następny zapis nadpisałby go pustką. Zostawiamy kopię i mówimy o tym głośno.
+    if (error.code !== 'ENOENT') {
+      const copy = `${path}.uszkodzony`;
+      await writeFile(copy, `${await readFile(path, 'utf8')}\n`).catch(() => {});
+      console.error(`Nie da się odczytać ${path}: ${error.message} — kopia w ${copy}`);
+    }
     return fallback;
   }
 };
 
+// Zapis przez plik tymczasowy: przerwany restart zostawia albo starą, albo nową wersję,
+// nigdy uciętą w połowie.
 const writeJson = async (path, value) => {
   await mkdir(dirname(path), { recursive: true });
-  await writeFile(path, `${JSON.stringify(value, null, 2)}\n`);
+  const temp = `${path}.tmp-${process.pid}`;
+  await writeFile(temp, `${JSON.stringify(value, null, 2)}\n`);
+  await rename(temp, path);
 };
 
 const normalize = (value) => (value ?? '').normalize('NFC').trim().toLowerCase();
@@ -254,9 +265,20 @@ const updateReviewed = (mutate) => {
   return job;
 };
 
+// Odpowiedź może już być zamknięta (klient zerwał, albo nagłówek poszedł wcześniej) —
+// wtedy writeHead rzuca ERR_HTTP_HEADERS_SENT i wywracał cały proces.
 const json = (res, status, value) => {
-  res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' });
-  res.end(JSON.stringify(value));
+  if (res.headersSent || res.writableEnded) {
+    res.destroy();
+    return;
+  }
+  try {
+    res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' });
+    res.end(JSON.stringify(value));
+  } catch (error) {
+    console.error('odpowiedź:', error.message);
+    res.destroy();
+  }
 };
 
 const readBody = (req) =>
@@ -306,6 +328,13 @@ const computePeaks = (audioUrl) =>
       take(buffer.subarray(0, usable));
     };
 
+    // Zerwany strumień (ubity ffmpeg, przerwane połączenie) inaczej kończył się
+    // nieobsłużonym zdarzeniem 'error' i wywalał serwer.
+    ffmpeg.stdout.on('error', (error) => reject(error));
+    ffmpeg.stderr.on('error', () => {});
+    ffmpeg.on('exit', (code, signal) => {
+      if (signal) reject(new Error(`ffmpeg przerwany (${signal})`));
+    });
     ffmpeg.stdout.on('data', onData);
     ffmpeg.stderr.on('data', (chunk) => {
       errorText += chunk.toString();
@@ -356,7 +385,7 @@ const server = createServer(async (req, res) => {
 
     // Szybka sonda dla karty, która straciła SSE: lekka, bez czytania danych.
     if (url.pathname === '/api/health') {
-      return json(res, 200, { ok: true, uptime: Math.round(process.uptime()) });
+      return json(res, 200, { ok: true, uptime: Math.round(process.uptime()), pid: process.pid });
     }
 
     if (url.pathname === '/api/reviewed' && req.method === 'GET') {
@@ -592,7 +621,29 @@ const server = createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => {
-  console.log(`Edytor: http://localhost:${PORT}`);
-  console.log('Zapisuje do data/overrides i data/titles.json — potem: npm run build');
+// Port bywa zajęty przez stary proces, który dopiero się zamyka — zamiast umierać
+// ze stosem, próbujemy jeszcze kilka razy.
+const listen = (attempt = 0) => {
+  server.listen(PORT, () => {
+    console.log(`Edytor: http://localhost:${PORT}`);
+    console.log('Zapisuje do data/overrides i data/titles.json — potem: npm run build');
+  });
+  server.once('error', (error) => {
+    if (error.code === 'EADDRINUSE' && attempt < 10) {
+      console.error(`Port ${PORT} zajęty, czekam ${attempt + 1}/10…`);
+      setTimeout(() => listen(attempt + 1), 1000);
+      return;
+    }
+    console.error(`Serwer nie wystartował: ${error.message}`);
+    process.exit(2);
+  });
+};
+listen();
+
+// Jeden nieudany request nie może gasić edytora w trakcie pracy.
+process.on('uncaughtException', (error) => {
+  console.error('nieobsłużony wyjątek:', error);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('nieobsłużone odrzucenie:', reason);
 });

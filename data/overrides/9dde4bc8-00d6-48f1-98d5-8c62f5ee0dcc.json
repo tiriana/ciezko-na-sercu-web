@@ -93,7 +93,62 @@
       "newAlbum": "Black Metal",
       "start": 2460.43,
       "durationSec": 229,
-      "end": 2718.02
+      "end": 2712.32
+    },
+    {
+      "artist": "Bathory - Tribute",
+      "title": "A Fine Day To Die (feat. Baskíria)",
+      "album": "A Hungarian Tribute To Bathory",
+      "newArtist": "Bathory - Tribute",
+      "newTitle": "A Fine Day To Die (feat. Baskíria)",
+      "newAlbum": "A Hungarian Tribute To Bathory",
+      "start": 2763.2,
+      "durationSec": 514,
+      "end": 3277.04
+    },
+    {
+      "artist": "Chuck Schuldiner",
+      "title": "Zombie Ritual",
+      "album": null,
+      "newArtist": "Chuck Schuldiner",
+      "newTitle": "Zombie Ritual",
+      "newAlbum": null,
+      "start": 3414.31,
+      "durationSec": 184,
+      "end": 3598.36
+    },
+    {
+      "artist": "Nocturnus AD",
+      "title": "Yesod, The Dark Side of the Moon",
+      "album": "Unicursal (Bonus Track Version)",
+      "newArtist": "Nocturnus AD",
+      "newTitle": "Yesod, The Dark Side of the Moon",
+      "newAlbum": "Unicursal (Bonus Track Version)",
+      "start": 3664.29,
+      "durationSec": 419,
+      "end": 4090.15
+    },
+    {
+      "artist": "Disfear",
+      "title": "Early Graves",
+      "album": "The Last Nail",
+      "newArtist": "Disfear",
+      "newTitle": "Early Graves",
+      "newAlbum": "The Last Nail",
+      "start": 4167.61,
+      "durationSec": 246,
+      "end": 4422.77
+    },
+    {
+      "artist": "Entombed",
+      "title": "But Life Goes On",
+      "album": "Left Hand Path",
+      "newArtist": "Entombed",
+      "newTitle": "But Life Goes On",
+      "newAlbum": "Left Hand Path",
+      "start": 4449.62,
+      "durationSec": 164,
+      "end": 4633.64
     }
   ],
   "topics": [
@@ -193,6 +248,26 @@
       "start": 2192.27,
       "newLabel": "Refleksje nad wczesnymi albumami Iron Maiden i zmianą wokalisty",
       "end": 2275.29
+    },
+    {
+      "time": 3285,
+      "label": "Wspomnienie o książce o Chucku Schuldinerze i jego roli w death metalu",
+      "start": 3277.04,
+      "newLabel": "Wspomnienie o książce o Chucku Schuldinerze i jego roli w death metalu",
+      "end": 3414.31
+    },
+    {
+      "time": 3605,
+      "label": "Omówienie życia i twórczości Mike'a Browninga oraz albumu Unicursal",
+      "start": 3598.36,
+      "newLabel": "Omówienie życia i twórczości Mike'a Browninga oraz albumu Unicursal"
+    },
+    {
+      "time": 3598.36,
+      "label": "Omówienie życia i twórczości Mike'a Browninga oraz albumu Unicursal",
+      "start": 3598.36,
+      "newLabel": "Omówienie życia i twórczości Mike'a Browninga oraz albumu Unicursal",
+      "end": 3664.29
     }
   ],
   "addTracks": [
@@ -209,6 +284,21 @@
       "label": "Kronos",
       "start": 2446.81,
       "end": 2460.43
+    },
+    {
+      "label": "Quarton Seth",
+      "start": 2712.32,
+      "end": 2763.2
+    },
+    {
+      "label": "Tomas Lindberg",
+      "start": 4081.85,
+      "end": 4167.61
+    },
+    {
+      "label": "LG Petrov",
+      "start": 4412.93,
+      "end": 4449.62
     }
   ],
   "credits": {
