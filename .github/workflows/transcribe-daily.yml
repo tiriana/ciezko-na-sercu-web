@@ -1,0 +1,43 @@
+name: transkrypcja dzienna
+
+# Jeden odcinek na dobę. Osobny workflow, bo nazwa przebiegu musi znać tytuł
+# audycji, a `run-name` w transcribe.yml widzi tylko swoje wejścia — tutaj
+# wybieramy następny odcinek i przekazujemy go razem z tytułem.
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+run-name: "wybór odcinka do transkrypcji"
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: transcribe-daily
+  cancel-in-progress: false
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Wybierz następny odcinek
+        id: next
+        env:
+          PRINT_NEXT: 'true'
+        run: node scripts/plan-transcribe.mjs
+
+      - name: Uruchom transkrypcję
+        if: steps.next.outputs.next != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEXT: ${{ steps.next.outputs.next }}
+          TITLE: ${{ steps.next.outputs.title }}
+          REMAINING: ${{ steps.next.outputs.count }}
+        run: |
+          echo "Zostało $REMAINING odcinków, dziś: $TITLE ($NEXT)"
+          gh workflow run transcribe.yml --ref main -f episodes="$NEXT" -f label="$TITLE"

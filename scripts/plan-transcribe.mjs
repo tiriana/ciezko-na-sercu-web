@@ -97,6 +97,21 @@ const transcriptEnd = (episode) => {
   }
 };
 
+const outputFile = process.env.GITHUB_OUTPUT;
+const emit = (key, value) => {
+  if (outputFile) appendFileSync(outputFile, `${key}=${value}\n`);
+  console.log(`${key}=${value}`);
+};
+
+// Tryb dla harmonogramu: nie liczymy macierzy, tylko wskazujemy następny odcinek.
+if (process.env.PRINT_NEXT === 'true') {
+  const next = episodes[0];
+  emit('count', String(episodes.length));
+  emit('next', next?.slug ?? '');
+  emit('title', (next?.title ?? '').replace(/[\r\n]+/g, ' '));
+  process.exit(0);
+}
+
 const matrix = [];
 for (const episode of episodes) {
   const probed = await probeDuration(episode.audioUrl);
