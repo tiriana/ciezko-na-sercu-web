@@ -91,6 +91,8 @@ export function snapBoundaries(tracks, topics, segments, options = {}) {
   return { tracks: nextTracks, topics: nextTopics, fixed, tooLarge, unresolved, corrections, skipped, movedTopics };
 }
 
+import { frozenEpisodes } from './frozen.mjs';
+
 const readJson = (file) => JSON.parse(readFileSync(file, 'utf8'));
 
 const args = process.argv.slice(2);
@@ -111,6 +113,11 @@ if (wanted.length > 0 && targets.length !== wanted.length) {
   process.exit(1);
 }
 
+// Odcinki z choć jednym znacznikiem „ok” są przejrzane przez redakcję — automat ich nie rusza.
+const frozen = frozenEpisodes(root);
+const skippedFrozen = targets.filter((entry) => frozen.has(entry.id));
+const writable = targets.filter((entry) => !frozen.has(entry.id));
+
 const rows = [];
 const allCorrections = [];
 const allSkipped = [];
@@ -120,7 +127,7 @@ let changedTopics = 0;
 let totalTooLarge = 0;
 let totalUnresolved = 0;
 
-for (const entry of targets) {
+for (const entry of writable) {
   const episodeFile = path.join(root, 'data/episodes', `${entry.id}.json`);
   const transcriptFile = path.join(root, 'data/transcripts', `${entry.id}.json`);
   let episode;
@@ -196,6 +203,10 @@ if (largestSkipped.length > 0) {
         `${item.oldEnd} -> ${item.newEnd}  (-${item.delta})`
     );
   });
+}
+
+if (skippedFrozen.length > 0) {
+  console.log(`pominięte odcinki z oznaczeniami „ok”: ${skippedFrozen.length}`);
 }
 
 if (!reportOnly) {

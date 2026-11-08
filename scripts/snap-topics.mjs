@@ -115,6 +115,8 @@ export function snapTopics(topics, segments, durationSec, options = {}) {
   return { topics: result, moved };
 }
 
+import { frozenEpisodes } from './frozen.mjs';
+
 const readJson = (file) => JSON.parse(readFileSync(file, 'utf8'));
 const root = process.cwd();
 const catalog = readJson(path.join(root, 'data/catalog.json'));
@@ -131,9 +133,13 @@ if (wanted.length > 0 && targets.length !== wanted.length) {
   process.exit(1);
 }
 
+// Odcinki z choć jednym znacznikiem „ok” są przejrzane przez redakcję — automat ich nie rusza.
+const frozen = frozenEpisodes(root);
+const skippedFrozen = targets.filter((entry) => frozen.has(entry.id)).length;
+
 let changedFiles = 0;
 let changedTopics = 0;
-for (const entry of targets) {
+for (const entry of targets.filter((item) => !frozen.has(item.id))) {
   const episodeFile = path.join(root, 'data/episodes', `${entry.id}.json`);
   const transcriptFile = path.join(root, 'data/transcripts', `${entry.id}.json`);
   let episode;
@@ -181,4 +187,5 @@ for (const entry of targets) {
   console.log(`${entry.slug}: ${moved.length} tematów przesuniętych`);
 }
 
+if (skippedFrozen > 0) console.log(`pominięte odcinki z oznaczeniami „ok”: ${skippedFrozen}`);
 console.log(`przesunięto ${changedTopics} tematów w ${changedFiles} odcinkach`);

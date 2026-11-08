@@ -107,3 +107,8 @@ Workflow:
 2. [docs/design.md](docs/design.md) — co przenosimy z wyglądu Trójki, a czego nie.
 3. [docs/stack.md](docs/stack.md) — wybór generatora i odrzucone alternatywy.
 4. `mockup/` — statyczny mockup, z którego powstał layout (nie jest deployowany).
+
+Odcinki, w których choć jeden znacznik oznaczono w edytorze jako „ok”, są nietykalne
+dla automatów: `snap-boundaries`, `snap-topics` i `import-tagger` pomijają je i mówią
+o tym w podsumowaniu (`import-tagger` nadpisze tylko z `--force`). Stan „ok” leży
+w `data/reviewed.json` i jedzie z repo.

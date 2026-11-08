@@ -1,7 +1,13 @@
 import { copyFile, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
+import { frozenEpisodes } from './frozen.mjs';
 
 const [workDir, outputDir = 'data/episodes', transcriptsDir = 'data/transcripts'] = process.argv.slice(2);
+// Odcinki z choć jednym znacznikiem „ok” są przejrzane przez redakcję; import nadpisałby
+// całe opracowanie (razem z ręcznymi poprawkami). `--force` świadomie to obchodzi.
+const force = process.argv.includes('--force');
+const frozen = frozenEpisodes(process.cwd());
+let skippedFrozen = 0;
 const insightsDir = process.env.RAT_INSIGHTS_DIR ?? join(workDir, '..', '..', 'insights');
 if (!workDir) {
   console.error('usage: node scripts/import-tagger.mjs <tagger work/episodes> [out]');
@@ -261,6 +267,11 @@ for (const entry of entries) {
     console.warn(`pominięto ${entry.name}: brak odcinka w katalogu`);
     continue;
   }
+  if (frozen.has(id) && !force) {
+    skippedFrozen += 1;
+    console.warn(`pominięto ${entry.name}: odcinek ma znaczniki „ok” (--force nadpisze)`);
+    continue;
+  }
   const insights = await readInsights(entry.name);
   const target = join(outputDir, `${id}.json`);
   await writeFile(resolve(target), `${JSON.stringify(toContract(episode, analyzedAt, id, insights), null, 2)}\n`);
@@ -291,5 +302,6 @@ for (const entry of entries) {
   }
 }
 
+if (skippedFrozen > 0) console.log(`pominięte odcinki z oznaczeniami „ok”: ${skippedFrozen} (użyj --force, żeby nadpisać)`);
 console.log(`${imported} opracowań -> ${outputDir}`);
 console.log(`${transcripts} plików transkryptów -> ${transcriptsDir}`);
