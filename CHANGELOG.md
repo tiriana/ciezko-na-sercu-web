@@ -1,3 +1,9 @@
+## [1.15.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.15.0...v1.15.1) (2026-11-08)
+
+### Bug Fixes
+
+* **edytor:** sidebar w pionie, wysoki na waveform z playerem ([2a69fc4](https://github.com/tiriana/ciezko-na-sercu-web/commit/2a69fc4f21ed57da6417fbeadb912f7ce51db84e))
+
 ## [1.15.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.14.1...v1.15.0) (2026-11-08)
 
 ### Features
