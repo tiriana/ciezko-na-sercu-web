@@ -78,7 +78,10 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
               fix.hide &&
               sameText(track.artist, fix.artist) &&
               sameText(track.title, fix.title) &&
-              sameText(track.album, fix.album)
+              sameText(track.album, fix.album) &&
+              // Ten sam utwór bywa rozpoznany dwa razy (Shazam); `start` zawęża ukrycie
+              // do jednego wystąpienia, gdy poprawka go podaje.
+              (fix.start === undefined || Math.abs(track.start - fix.start) < 0.01)
           )
       );
     }

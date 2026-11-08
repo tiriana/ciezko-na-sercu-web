@@ -1408,6 +1408,9 @@
       const undoEdit = () => {
         const snapshot = undoStack.pop();
         if (!snapshot) return;
+        // Cofnięcie może przywrócić „ok” zdjęte przez przesunięcie, a wtedy plik
+        // musi wrócić do tego samego stanu, nie tylko ekran.
+        const reviewedBefore = [...reviewed].sort().join('\u0000');
         state.tracks = structuredClone(snapshot.tracks);
         state.topics = snapshot.topics.map((entry) => {
           const topic = structuredClone(entry.data);
@@ -1420,6 +1423,7 @@
         state.hiddenTopics = structuredClone(snapshot.hiddenTopics);
         reviewed = new Set(snapshot.reviewed ?? []);
         if (state.episode) REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
+        const reviewedChanged = [...reviewed].sort().join('\u0000') !== reviewedBefore;
         editBurst.key = null;
         renderTracks();
         renderTopics();
@@ -1427,8 +1431,8 @@
         renderRestore();
         buildMarkers();
         // Stan „ok” nie należy do danych odcinka: cofnięcie go nie brudzi ani nie zapisuje.
+        if (reviewedChanged) persistReviewedAll();
         if (snapshot.kind === 'reviewed') {
-          persistReviewedAll();
           noteStatus('cofnięto ok');
           return;
         }
@@ -1479,7 +1483,9 @@
           startInput.step = '0.01';
           startInput.value = String(track.start ?? 0);
           startInput.addEventListener('input', () => editField(track, 'start', () => {
+            const reviewKey = reviewKeyOf('start', track);
             track.start = Number(startInput.value);
+            clearReviewedOnMove(reviewKey);
             waveSync();
           }));
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(track.start)));
@@ -1535,7 +1541,9 @@
           startInput.step = '0.01';
           startInput.value = String(topic.start ?? 0);
           startInput.addEventListener('input', () => editField(topic, 'start', () => {
+            const reviewKey = reviewKeyOf('topic', topic);
             topic.start = Number(startInput.value);
+            clearReviewedOnMove(reviewKey);
             waveSync();
           }));
           start.append(startInput, rowButton('weź', () => usePlayerTime(startInput)), rowButton('▶', () => seek(topic.start)));
@@ -1579,7 +1587,9 @@
             input.value = String(track[field] ?? '');
             input.placeholder = placeholder;
             input.addEventListener('input', () => editField(track, field, () => {
+              const reviewKey = field === 'start' ? reviewKeyOf('start', track) : null;
               track[field] = type === 'number' ? Number(input.value) : input.value;
+              if (reviewKey) clearReviewedOnMove(reviewKey);
               waveSync();
             }));
             inputs[field] = input;
@@ -1622,7 +1632,9 @@
           startInput.step = '0.01';
           startInput.value = String(topic.start ?? 0);
           startInput.addEventListener('input', () => editField(topic, 'start', () => {
+            const reviewKey = reviewKeyOf('topic', topic);
             topic.start = Number(startInput.value);
+            clearReviewedOnMove(reviewKey);
             waveSync();
           }));
           startCell.append(startInput, rowButton('weź', () => usePlayerTime(startInput)));
@@ -1679,6 +1691,7 @@
       const seek = (seconds) => {
         const audio = $('audio');
         if (!Number.isFinite(seconds)) return;
+        resetJumpChain();
         audio.currentTime = seconds;
         audio.play();
       };
@@ -1999,6 +2012,19 @@
         }).catch(() => noteStatus('nie zapisano stanu ok'));
       };
 
+      // Przesunięty znacznik nie jest już sprawdzony: „ok” tyczyło się konkretnego
+      // miejsca, więc nowa pozycja je unieważnia. Klucz bierzemy sprzed zmiany `start`,
+      // bo dla wpisów bez etykiety zawiera on starą wartość.
+      const clearReviewedOnMove = (reviewKey) => {
+        if (!reviewKey || !reviewed.has(reviewKey)) return false;
+        reviewed.delete(reviewKey);
+        if (state.episode) REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
+        persistReviewed(reviewKey, false);
+        buildMarkers();
+        noteStatus('przesunięto — zdjęto ok');
+        return true;
+      };
+
       // Cofnięcie zmienia cały zestaw naraz, więc wysyłamy go w jednym żądaniu.
       const persistReviewedAll = () => {
         const id = state.episode?.id;
@@ -2050,6 +2076,7 @@
         // 10 ms: poniżej tego i tak nie ma sensu, bo ramka MP3 ma ~26 ms.
         const next = clampNumber(Math.round(requested * 100) / 100, low, high);
         if (next === old) return;
+        resetJumpChain();
         markDirty();
         // Przeciągnięcie to jeden krok cofania, dlatego zrzut robimy tylko przy pierwszym ruchu.
         if (!dragging || !wave.undoTaken) {
@@ -2058,6 +2085,8 @@
         }
         marker.time = next;
         marker.object.start = next;
+        // Zrzut cofania jest już zrobiony, więc Ctrl+Z przywróci i czas, i „ok”.
+        clearReviewedOnMove(marker.reviewKey);
         const inputs = fieldInputs.get(marker.object);
         if (inputs?.start) inputs.start.value = String(next);
         // Koniec poprzedniego fragmentu to ten początek — bez tolerancji i bez przerw.
@@ -2088,17 +2117,55 @@
         $('wave-next').disabled = !ready || !times.some((value) => value > time + 0.001);
       };
 
+      // Pamięć skoków: przy odtwarzaniu czas ucieka między kliknięciami, więc drugie
+      // ‹ w krótkim odstępie liczy się od znacznika, na którym wylądowaliśmy — inaczej
+      // „wstecz” zostawałoby na tym samym znaczniku.
+      const JUMP_CHAIN_MS = 1200;
+      const jumpMemory = { index: -1, direction: 0, at: 0 };
+      let jumpInFlight = false;
+
+      const resetJumpChain = () => {
+        jumpMemory.index = -1;
+        jumpMemory.direction = 0;
+        jumpMemory.at = 0;
+      };
+
+      // Każde inne przewinięcie kasuje łańcuch: liczy się tylko seria ‹ albo ›.
+      $('audio').addEventListener('seeking', () => {
+        if (!jumpInFlight) resetJumpChain();
+      });
+
       const jumpToMarker = (direction) => {
         const times = markerTimes();
         const audio = $('audio');
-        const time = audio.currentTime;
-        if (times.length === 0 || !Number.isFinite(time)) return;
-        const target =
-          direction < 0
-            ? [...times].reverse().find((value) => value < time - 0.001)
-            : times.find((value) => value > time + 0.001);
-        if (target === undefined) return;
+        if (times.length === 0) return;
+        const chained =
+          jumpMemory.index >= 0 &&
+          jumpMemory.direction === direction &&
+          performance.now() - jumpMemory.at < JUMP_CHAIN_MS;
+        let index;
+        if (chained) {
+          index = jumpMemory.index + (direction < 0 ? -1 : 1);
+          // Kolejne naciśnięcie poza końcem nic nie robi — tak samo, jak wyłączony przycisk.
+          if (index < 0 || index >= times.length) return;
+        } else {
+          const time = audio.currentTime;
+          if (!Number.isFinite(time)) return;
+          index =
+            direction < 0
+              ? times.findLastIndex((value) => value < time - 0.001)
+              : times.findIndex((value) => value > time + 0.001);
+          if (index < 0 || index >= times.length) return;
+        }
+        const target = times[index];
+        jumpInFlight = true;
         audio.currentTime = target;
+        setTimeout(() => {
+          jumpInFlight = false;
+        }, 120);
+        jumpMemory.index = index;
+        jumpMemory.direction = direction;
+        jumpMemory.at = performance.now();
         $('clock').textContent = fmt(audio.currentTime);
         // Okno przesuwa się tylko wtedy, gdy cel wypada poza widokiem.
         if (target < wave.start || target > wave.start + wave.span) {
@@ -2128,7 +2195,9 @@
 
         pushUndo();
         if (state.tracks.includes(object)) {
-          state.hiddenTracks.push({ artist: object.artist, title: object.title, album: object.album, hide: true });
+          // `start` zawęża ukrycie do tego wystąpienia — bez niego zniknąłby też
+          // bliźniak rozpoznany przez Shazam pod tym samym tytułem.
+          state.hiddenTracks.push({ artist: object.artist, title: object.title, album: object.album, start: object.start, hide: true });
           state.tracks.splice(state.tracks.indexOf(object), 1);
         } else if (state.topics.includes(object)) {
           state.hiddenTopics.push({ time: object.start, label: object.label, hide: true });
@@ -2826,6 +2895,7 @@
       const seekQuiet = (time) => {
         const audio = $('audio');
         if (!Number.isFinite(time) || !wave.duration) return;
+        resetJumpChain();
         audio.currentTime = clampNumber(time, 0, wave.duration);
         $('clock').textContent = fmt(audio.currentTime);
         syncPlayhead();
@@ -3104,6 +3174,7 @@
           const audio = $('audio');
           const delta = Number(button.dataset.skip);
           const limit = Number.isFinite(audio.duration) ? audio.duration : audio.currentTime + delta;
+          resetJumpChain();
           audio.currentTime = Math.min(Math.max(0, audio.currentTime + delta), limit);
         });
       }

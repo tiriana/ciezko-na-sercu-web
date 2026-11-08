@@ -172,7 +172,12 @@ const applyOverrides = (episode, override) => {
   result.tracks = result.tracks.filter(
     (track) =>
       !(override?.tracks ?? []).some(
-        (fix) => fix.hide && same(track.artist, fix.artist) && same(track.title, fix.title) && same(track.album, fix.album)
+        (fix) =>
+          fix.hide &&
+          same(track.artist, fix.artist) &&
+          same(track.title, fix.title) &&
+          same(track.album, fix.album) &&
+          (fix.start === undefined || Math.abs(track.start - fix.start) < 0.01)
       )
   );
   for (const fix of override?.topics ?? []) {
