@@ -1,3 +1,9 @@
+## [1.7.7](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.6...v1.7.7) (2026-11-08)
+
+### Bug Fixes
+
+* **deps:** update npm: minor i patch ([#36](https://github.com/tiriana/ciezko-na-sercu-web/issues/36)) ([4a2589c](https://github.com/tiriana/ciezko-na-sercu-web/commit/4a2589cb7d0622304e413263e3c545f0dd65b07a))
+
 ## [1.7.6](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.7.5...v1.7.6) (2026-11-08)
 
 ### Bug Fixes
