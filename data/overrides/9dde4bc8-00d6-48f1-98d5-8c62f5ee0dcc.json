@@ -109,10 +109,8 @@
     {
       "artist": "Chuck Schuldiner",
       "title": "Zombie Ritual",
-      "album": null,
       "newArtist": "Chuck Schuldiner",
       "newTitle": "Zombie Ritual",
-      "newAlbum": null,
       "start": 3414.31,
       "durationSec": 184,
       "end": 3598.36
@@ -231,7 +229,9 @@
       "artist": "None",
       "title": "Scar to Scars",
       "album": "Procreation",
-      "hide": true
+      "hide": true,
+      "start": 5868,
+      "durationSec": 72
     }
   ],
   "topics": [
