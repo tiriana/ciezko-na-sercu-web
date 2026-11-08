@@ -1,3 +1,9 @@
+## [1.12.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.12.0...v1.12.1) (2026-11-08)
+
+### Bug Fixes
+
+* odświeżenie katalogu bez zmian nie podbija daty ani nie publikuje ([1613d5a](https://github.com/tiriana/ciezko-na-sercu-web/commit/1613d5ad362b051c8031a559d0e74400a106e7dc))
+
 ## [1.12.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.11.0...v1.12.0) (2026-11-08)
 
 ### Features
