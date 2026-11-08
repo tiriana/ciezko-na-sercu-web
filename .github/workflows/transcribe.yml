@@ -6,6 +6,8 @@ name: transcribe
 # (przyciąganie tematów do segmentów, import) robi się lokalnie.
 
 on:
+  push:
+    branches: [transkrypcja-preview]
   workflow_dispatch:
     inputs:
       episodes:
@@ -59,12 +61,14 @@ jobs:
       - id: build
         env:
           EPISODES: ${{ inputs.episodes }}
-          LIMIT: ${{ inputs.limit }}
+          # Push na gałąź podglądu liczy jeden odcinek, żeby test nie zjadał godzin.
+          LIMIT: ${{ github.event_name == 'push' && '1' || inputs.limit }}
         run: node scripts/plan-transcribe.mjs
 
   transcribe:
     needs: plan
-    if: needs.plan.outputs.count != '0'
+    # Push z commitem transkryptów pochodzi od bota — bez tej straży przebieg zapętliłby się.
+    if: needs.plan.outputs.count != '0' && github.actor != 'github-actions[bot]'
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     env:
