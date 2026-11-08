@@ -1,3 +1,13 @@
+## [1.13.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.12.1...v1.13.0) (2026-11-08)
+
+### Features
+
+* adres jest stanem odtwarzacza (?t= i ?wejscia=), bez przycisku kopiowania ([342cd72](https://github.com/tiriana/ciezko-na-sercu-web/commit/342cd72e6ae135e245e1d01c55b20c050b34708e))
+
+### Bug Fixes
+
+* play i pauza jako całe SVG, odstęp od tekstu i jedna kreska po ostatnim wątku ([ed70f9d](https://github.com/tiriana/ciezko-na-sercu-web/commit/ed70f9d0832779d6841b561fabe6ab2e125bac6b)), closes [#48](https://github.com/tiriana/ciezko-na-sercu-web/issues/48) [#49](https://github.com/tiriana/ciezko-na-sercu-web/issues/49)
+
 ## [1.12.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.12.0...v1.12.1) (2026-11-08)
 
 ### Bug Fixes
