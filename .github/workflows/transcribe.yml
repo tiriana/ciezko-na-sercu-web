@@ -79,6 +79,10 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      # Obraz ubuntu-24.04 nie ma ffmpeg w PATH, a skrypt przycina nim audio.
+      - name: Zainstaluj ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Cache whisper.cpp
         id: whisper-cache
         uses: actions/cache@v4
