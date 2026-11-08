@@ -105,16 +105,56 @@
         position: sticky;
         bottom: 0;
         z-index: 3;
+        flex-wrap: wrap;
         margin: 16px -20px -60px;
         padding: 10px 20px 12px;
         border-top: 1px solid var(--line);
         background: var(--surface);
         box-shadow: 0 -5px 12px rgba(28, 26, 24, 0.05);
       }
+      .auto-save {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        color: var(--muted);
+        font-size: 12px;
+        cursor: pointer;
+        user-select: none;
+      }
+      .auto-save input {
+        appearance: none;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 17px;
+        margin: 0;
+        border-radius: 9px;
+        background: #d7d0c6;
+        position: relative;
+        cursor: pointer;
+        transition: background 0.15s ease;
+      }
+      .auto-save input::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 1px 2px rgba(28, 26, 24, 0.25);
+        transition: transform 0.15s ease;
+      }
+      .auto-save input:checked { background: var(--accent); }
+      .auto-save input:checked::after { transform: translateX(13px); }
+      .auto-save input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+      .auto-save:hover input { background: #c9c1b6; }
+      .auto-save:hover input:checked { background: #b00e28; }
       .save-state {
         display: inline-flex;
         align-items: center;
         gap: 6px;
+        margin-left: auto;
         color: var(--muted);
         font-size: 12px;
         font-variant-numeric: tabular-nums;
@@ -505,6 +545,15 @@
           <div class="toolbar">
             <button class="primary" id="save" type="button">Zapisz</button>
             <kbd class="shortcut">Ctrl+S</kbd>
+            <label class="auto-save">
+              <input
+                type="checkbox"
+                role="switch"
+                id="auto-save"
+                title="zapisuje 1,2 s po ostatniej zmianie"
+              />
+              auto-zapis
+            </label>
             <span class="save-state" id="status" data-state="clean" role="status" aria-live="polite">
               <span class="save-dot" aria-hidden="true"></span>
               <span class="save-text">brak zmian</span>
@@ -579,6 +628,83 @@
         input.dispatchEvent(new Event('input'));
       };
 
+      // --- Auto-zapis ---
+
+      const AUTO_SAVE_DELAY = 1200;
+      const AUTO_SAVE_KEY = 'edytor.autoSave';
+      const autoSave = { on: false, timer: 0, running: false, queued: false, paused: false };
+
+      const readAutoSave = () => {
+        try {
+          return localStorage.getItem(AUTO_SAVE_KEY) === '1';
+        } catch {
+          return false;
+        }
+      };
+
+      const writeAutoSave = (value) => {
+        try {
+          localStorage.setItem(AUTO_SAVE_KEY, value ? '1' : '0');
+        } catch {}
+      };
+
+      // Ustawiane przed pierwszym renderem, żeby pasek nie mrugnął wyłączonym stanem.
+      autoSave.on = readAutoSave();
+      $('auto-save').checked = autoSave.on;
+
+      const autoSaveToggle = $('auto-save');
+      autoSaveToggle.addEventListener('change', () => {
+        autoSave.on = autoSaveToggle.checked;
+        writeAutoSave(autoSave.on);
+        autoSave.queued = false;
+        autoSave.paused = false;
+        if (!autoSave.on) {
+          clearTimeout(autoSave.timer);
+          autoSave.timer = 0;
+          return;
+        }
+        if (dirty && state.episode) queueAutoSave();
+      });
+
+      const cancelAutoSave = () => {
+        clearTimeout(autoSave.timer);
+        autoSave.timer = 0;
+        autoSave.queued = false;
+        autoSave.paused = false;
+      };
+
+      // Jedno zapisanie na serię zmian: każda zmiana przesuwa termin, więc przeciąganie
+      // znacznika czy wpisywanie cyfr kończy się jednym żądaniem po ostatnim zdarzeniu.
+      const queueAutoSave = () => {
+        if (!autoSave.on || !state.episode) return;
+        autoSave.paused = false;
+        clearTimeout(autoSave.timer);
+        autoSave.timer = setTimeout(runAutoSave, AUTO_SAVE_DELAY);
+      };
+
+      const runAutoSave = async () => {
+        autoSave.timer = 0;
+        if (!autoSave.on || autoSave.paused || !state.episode) return;
+        if (autoSave.running) {
+          // W trakcie żądania zmiany tylko kolejkują jeden dodatkowy zapis.
+          autoSave.queued = true;
+          return;
+        }
+        autoSave.running = true;
+        const ok = await saveEpisode();
+        autoSave.running = false;
+        if (!ok) {
+          // Błąd zatrzymuje auto-zapis do następnej zmiany — inaczej powstałaby pętla.
+          autoSave.paused = true;
+          autoSave.queued = false;
+          return;
+        }
+        if (autoSave.queued) {
+          autoSave.queued = false;
+          runAutoSave();
+        }
+      };
+
       // --- Wskaźnik stanu zapisu ---
 
       const BASE_TITLE = document.title;
@@ -603,6 +729,7 @@
       const markDirty = () => {
         setDirty(true);
         setStatus('dirty', 'niezapisane zmiany');
+        queueAutoSave();
       };
 
       const savedLabel = () => {
@@ -923,6 +1050,7 @@
       };
 
       const openEpisode = async (id) => {
+        cancelAutoSave();
         setDirty(false);
         setStatus('clean', 'brak zmian');
         const response = await fetch(`/api/episode?id=${encodeURIComponent(id)}`);
@@ -1632,9 +1760,13 @@
         renderAdded();
       });
 
-      $('save').addEventListener('click', async () => {
+      const saveEpisode = async () => {
         const episode = state.episode;
-        if (!episode) return;
+        if (!episode) return false;
+        // Ręczny zapis poleceniem lub przyciskiem unieważnia zaplanowany auto-zapis.
+        clearTimeout(autoSave.timer);
+        autoSave.timer = 0;
+        autoSave.queued = false;
         const tracks = [];
         for (const track of state.tracks) {
           // Porównujemy z tym, co edytor wczytał — nie z surowym plikiem taggera,
@@ -1698,7 +1830,7 @@
           const data = await response.json().catch(() => ({}));
           if (!response.ok) {
             setStatus('error', `błąd: ${data.error ?? `serwer odpowiedział ${response.status}`}`);
-            return;
+            return false;
           }
           const label = savedLabel();
           const note = `${label} — zbuduj stronę (npm run build)`;
@@ -1707,9 +1839,15 @@
           statusTimer = setTimeout(() => setStatus('clean', label, note), 4000);
           episodes = episodes.map((item) => (item.id === episode.id ? { ...item, displayTitle: $('title').value.trim() || item.originalTitle } : item));
           renderList();
+          return true;
         } catch (error) {
           setStatus('error', `błąd: ${error.message}`);
+          return false;
         }
+      };
+
+      $('save').addEventListener('click', () => {
+        saveEpisode();
       });
 
       // Ctrl/Cmd+S zapisuje wszędzie, Ctrl/Cmd+Z cofa tylko wtedy, gdy fokus nie jest
