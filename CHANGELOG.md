@@ -1,3 +1,9 @@
+## [1.20.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.19.0...v1.20.0) (2026-11-09)
+
+### Features
+
+* środowe sondowanie publikacji i zaślepki opracowań ([6426b8a](https://github.com/tiriana/ciezko-na-sercu-web/commit/6426b8a67327be0cdea7833a0f539c5b4d8274fe))
+
 ## [1.19.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.18.2...v1.19.0) (2026-11-09)
 
 ### Features
