@@ -1,3 +1,9 @@
+## [1.28.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.27.1...v1.28.0) (2026-11-09)
+
+### Features
+
+* oznacza nierozpoznane utwory w trackliście ([f502c14](https://github.com/tiriana/ciezko-na-sercu-web/commit/f502c14828ab831cea3d70f8fe6a142929124a61))
+
 ## [1.27.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.27.0...v1.27.1) (2026-11-09)
 
 ### Bug Fixes
