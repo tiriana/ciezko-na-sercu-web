@@ -901,6 +901,10 @@
         <span>Edytuj…</span>
         <small id="wave-menu-edit-mark"></small>
       </button>
+      <button type="button" role="menuitem" id="wave-menu-merge" hidden>
+        <span>Wtop w poprzedni</span>
+        <small id="wave-menu-merge-mark"></small>
+      </button>
       <button type="button" role="menuitem" id="wave-menu-remove" class="is-destructive" hidden>
         <span>Usuń znacznik</span>
         <small id="wave-menu-remove-mark"></small>
@@ -2176,6 +2180,98 @@
         updateNav();
       };
 
+      // ——— Wtapianie znacznika w poprzedni ———
+
+      // Dwie etykiety sklejamy tylko wtedy, gdy naprawdę się różnią — powtórzone
+      // „Changes / Changes” nikomu nie pomaga.
+      const joinLabels = (left, right) => {
+        const first = String(left ?? '').trim();
+        const second = String(right ?? '').trim();
+        if (!first) return second;
+        if (!second || first === second) return first;
+        return `${first} / ${second}`;
+      };
+
+      // Wtopienie ma sens tylko wtedy, gdy najbliższy wcześniejszy znacznik jest
+      // tego samego rodzaju: utwór w utwór, wejście w wejście.
+      const previousSameKind = (marker) => {
+        const earlier = collectMarkers()
+          .filter((entry) => entry.object !== marker.object && Number.isFinite(entry.time))
+          .filter((entry) => entry.time < marker.time)
+          .sort((left, right) => right.time - left.time);
+        const previous = earlier[0] ?? null;
+        return previous && previous.kind === marker.kind ? previous : null;
+      };
+
+      const mergeIntoPrevious = (marker, previous, opener = null) => {
+        const early = previous.object;
+        const late = marker.object;
+        const lateEnd = marker.kind === 'start' ? trackEnd(late) : topicEnd(late);
+        const following = followingFragment(marker, marker.time);
+        // Koniec wtopionego fragmentu to jego własne cięcie, a gdy go nie ma —
+        // początek następnego fragmentu, tak samo jak przy zwykłym zaznaczeniu.
+        const mergedEnd = lateEnd ?? (following ? Number(following.start) : null);
+
+        const earlierReviewed = reviewed.has(previous.reviewKey);
+        const laterReviewed = reviewed.has(marker.reviewKey);
+
+        pushUndo();
+
+        if (marker.kind === 'start') {
+          early.artist = joinLabels(early.artist, late.artist);
+          early.title = joinLabels(early.title, late.title);
+          if (!String(early.album ?? '').trim()) early.album = late.album;
+          const earlyDuration = Number(early.durationSec);
+          const lateDuration = Number(late.durationSec);
+          const bothKnown = earlyDuration > 0 && lateDuration > 0;
+          if (bothKnown) early.durationSec = snapSeconds(earlyDuration + lateDuration);
+        } else {
+          early.label = joinLabels(early.label, late.label);
+        }
+
+        if (mergedEnd !== null && mergedEnd > Number(early.start)) {
+          early.end = mergedEnd;
+        }
+
+        // Zniknięcie późniejszego znacznika idzie tą samą drogą co „Usuń znacznik”,
+        // żeby w poprawkach nie zostało nic osieroconego.
+        if (state.tracks.includes(late)) {
+          state.hiddenTracks.push({ artist: late.artist, title: late.title, album: late.album, start: late.start, hide: true });
+          state.tracks.splice(state.tracks.indexOf(late), 1);
+        } else if (state.addTracks.includes(late)) {
+          state.addTracks.splice(state.addTracks.indexOf(late), 1);
+        } else if (state.topics.includes(late)) {
+          state.hiddenTopics.push({ time: late.start, label: late.label, hide: true });
+          state.topics.splice(state.topics.indexOf(late), 1);
+        } else if (state.addTopics.includes(late)) {
+          state.addTopics.splice(state.addTopics.indexOf(late), 1);
+        } else {
+          return;
+        }
+
+        // Scalenie zostawia jeden znacznik, więc „ok” z któregokolwiek z nich ląduje
+        // na nowym kluczu; stary klucz późniejszego znika razem z jego etykietą.
+        const mergedKey = reviewKeyOf(marker.kind, early);
+        const keepReviewed = earlierReviewed || laterReviewed;
+        reviewed.delete(previous.reviewKey);
+        reviewed.delete(marker.reviewKey);
+        if (keepReviewed) reviewed.add(mergedKey);
+        if (state.episode) REVIEWED_BY_EPISODE.set(state.episode.id, reviewed);
+        persistReviewedAll();
+
+        markDirty();
+        renderTracks();
+        renderTopics();
+        renderAdded();
+        renderRestore();
+        buildMarkers();
+
+        const merged = collectMarkers().find((entry) => entry.object === early) ?? null;
+        // Tytuł trzeba zwykle poprawić od razu, więc edycja otwiera się sama.
+        if (merged) openEdit(merged, opener);
+        noteStatus('wtopiono w poprzedni');
+      };
+
       // Usunięcie znacznika to ta sama poprawka `hide`, którą pisze przycisk „ukryj”,
       // więc Ctrl+Z je cofa, a ukrycie przeżywa przeładowanie. Koniec poprzedniego
       // fragmentu wynika z następnego początku, więc skraca się sam.
@@ -2626,13 +2722,16 @@
         menuTime = time;
         menuOpener = opener;
         menuMarker = marker;
+        const previous = marker ? previousSameKind(marker) : null;
         $('wave-menu-add').hidden = Boolean(marker);
         $('wave-menu-ok').hidden = !marker;
         $('wave-menu-edit').hidden = !marker;
+        $('wave-menu-merge').hidden = !previous;
         $('wave-menu-remove').hidden = !marker;
         if (marker) {
           $('wave-menu-edit-mark').textContent = marker.name;
           $('wave-menu-remove-mark').textContent = marker.name;
+          $('wave-menu-merge-mark').textContent = previous ? `${previous.name}, ${fmtPrecise(previous.time)}` : '';
           $('wave-menu-ok-text').textContent = marker.reviewed ? 'Odznacz ok' : 'Oznacz jako ok';
           $('wave-menu-mark').textContent = `${marker.name}, ${fmtPrecise(marker.time)}`;
         } else {
@@ -2658,6 +2757,14 @@
         const opener = menuOpener;
         closeMenu();
         if (marker) openEdit(marker, opener);
+      });
+
+      $('wave-menu-merge').addEventListener('click', () => {
+        const marker = menuMarker;
+        const opener = menuOpener;
+        const previous = marker ? previousSameKind(marker) : null;
+        closeMenu();
+        if (marker && previous) mergeIntoPrevious(marker, previous, opener);
       });
 
       $('wave-menu-ok').addEventListener('click', () => {
