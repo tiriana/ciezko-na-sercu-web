@@ -1,3 +1,9 @@
+## [1.25.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.24.2...v1.25.0) (2026-11-09)
+
+### Features
+
+* **edytor:** wybór pierwszego niezatwierdzonego znacznika ([65a6f23](https://github.com/tiriana/ciezko-na-sercu-web/commit/65a6f23f7b16f715d67f30b889818ad64761da52))
+
 ## [1.24.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.24.1...v1.24.2) (2026-11-09)
 
 ### Bug Fixes
