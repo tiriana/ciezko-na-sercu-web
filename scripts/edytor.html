@@ -785,6 +785,13 @@
                   aria-label="Dodaj wejście w miejscu kursora"
                   disabled
                 >＋ wejście</button>
+                <button
+                  type="button"
+                  id="wave-add-track"
+                  title="Dodaj utwór w miejscu kursora (Shift+T)"
+                  aria-label="Dodaj utwór w miejscu kursora"
+                  disabled
+                >＋ utwór</button>
                 <button type="button" id="wave-prev" title="Poprzedni znacznik" aria-label="Poprzedni znacznik" disabled>‹</button>
                 <button type="button" id="wave-next" title="Następny znacznik" aria-label="Następny znacznik" disabled>›</button>
                 <button type="button" id="wave-out" title="Oddal" aria-label="Oddal waveform" disabled>−</button>
@@ -797,7 +804,7 @@
               id="wave-stage"
               tabindex="0"
               role="group"
-              aria-label="Waveform nagrania: kółko przybliża, strzałki przesuwają okno, klik przewija, prawy przycisk dodaje wejście"
+              aria-label="Waveform nagrania: kółko przybliża, strzałki przesuwają okno, klik przewija, prawy przycisk dodaje wejście lub utwór"
             >
               <canvas id="wave-canvas" aria-hidden="true"></canvas>
               <div class="wave-markers" id="wave-markers"></div>
@@ -813,7 +820,7 @@
               </div>
             </div>
             <p class="wave-hint">
-              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń, Shift+Enter = ok; początek tnie poprzedni fragment
+              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; Shift+N = wejście, Shift+T = utwór; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń, Shift+Enter = ok; początek tnie poprzedni fragment
             </p>
           </section>
 
@@ -904,6 +911,10 @@
       <button type="button" role="menuitem" id="wave-menu-add">
         <span>Dodaj wejście tutaj</span>
         <small id="wave-menu-time"></small>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-add-track">
+        <span>Dodaj utwór tutaj</span>
+        <small id="wave-menu-track-time"></small>
       </button>
       <button type="button" role="menuitem" id="wave-menu-ok" hidden>
         <span id="wave-menu-ok-text">Oznacz jako ok</span>
@@ -1586,7 +1597,10 @@
       const renderAdded = () => {
         const trackBody = $('add-tracks');
         trackBody.textContent = '';
-        state.addTracks.forEach((track, index) => {
+        state.addTracks
+          .map((track, index) => ({ track, index }))
+          .sort((left, right) => Number(left.track.start) - Number(right.track.start))
+          .forEach(({ track, index }) => {
           const tr = document.createElement('tr');
           const cells = [
             ['artist', 'text', ''],
@@ -1625,7 +1639,7 @@
           );
           tr.append(actions);
           trackBody.append(tr);
-        });
+          });
 
         const topicBody = $('add-topics');
         topicBody.textContent = '';
