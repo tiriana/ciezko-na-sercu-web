@@ -1,7 +1,83 @@
 {
   "version": 1,
-  "tracks": [],
-  "topics": [],
+  "tracks": [
+    {
+      "artist": "Wolves in the Throne Room",
+      "title": "Knights of Tiamat",
+      "album": "Estuary",
+      "newArtist": "Wolves in the Throne Room",
+      "newTitle": "Knights of Tiamat",
+      "newAlbum": "Estuary",
+      "start": 12,
+      "durationSec": 513,
+      "end": 523.07
+    },
+    {
+      "artist": "Gloryhammer",
+      "title": "Die with a Sword in My Hand",
+      "album": "Space 1993: Wrath of Kor-Virliath",
+      "newArtist": "Gloryhammer",
+      "newTitle": "Die with a Sword in My Hand",
+      "newAlbum": "Space 1993: Wrath of Kor-Virliath",
+      "start": 739.58,
+      "durationSec": 239,
+      "end": 977.63
+    },
+    {
+      "artist": "Wij",
+      "title": "Duch",
+      "album": "Protisty",
+      "newArtist": "Wij",
+      "newTitle": "Duch",
+      "newAlbum": "Protisty",
+      "start": 1138.38,
+      "durationSec": 385,
+      "end": 1521.86
+    },
+    {
+      "artist": "Hatebreed",
+      "title": "The Carrion Choir",
+      "album": "Fatal Paradox",
+      "newArtist": "Hatebreed",
+      "newTitle": "The Carrion Choir",
+      "newAlbum": "Fatal Paradox",
+      "start": 1597.36,
+      "durationSec": 183,
+      "end": 1783.52
+    }
+  ],
+  "topics": [
+    {
+      "time": 524,
+      "label": "Wolves in the Throne Room – nowy album Estuary i koncerty listopadowe",
+      "start": 523.07,
+      "newLabel": "Wolves in the Throne Room – nowy album Estuary i koncerty listopadowe"
+    },
+    {
+      "time": 610,
+      "label": "Kalendarz koncertów power‑metalowych i symfonicznych w Polsce",
+      "hide": true
+    },
+    {
+      "time": 676,
+      "label": "Glory Hammer – opis projektu i zapowiedź utworu",
+      "hide": true
+    },
+    {
+      "time": 977.52,
+      "label": "Trasa V z Fertile Hump i gośćmi oraz inne trasy jesienne",
+      "start": 977.63,
+      "newLabel": "Trasa V z Fertile Hump i gośćmi oraz inne trasy jesienne",
+      "end": 1138.38
+    },
+    {
+      "time": 1524,
+      "label": "Kanonada – przegląd zagranicznych zespołów i ich koncertów w listopadzie",
+      "start": 1521.86,
+      "newLabel": "Kanonada – przegląd zagranicznych zespołów i ich koncertów w listopadzie",
+      "end": 1597.36
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +85,14 @@
       "start": 4.73,
       "durationSec": 8.06
     }
-  ]
+  ],
+  "addTopics": [
+    {
+      "label": "Mo",
+      "start": 1779.76
+    }
+  ],
+  "credits": {
+    "rename": {}
+  }
 }
