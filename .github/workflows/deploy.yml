@@ -124,7 +124,8 @@ jobs:
   alert:
     # Nieudany deploy zostawia produkcję na starym albo mieszanym buildzie — musi być głośno.
     needs: deploy
-    if: failure()
+    # Staging ma własny adres i własne wdrożenia; alert dotyczy tylko produkcji.
+    if: failure() && github.ref == 'refs/heads/main'
     runs-on: ubuntu-26.04
     permissions:
       issues: write
