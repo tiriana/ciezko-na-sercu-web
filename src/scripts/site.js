@@ -239,13 +239,8 @@ const setupBar = () => {
 const setNowPlaying = (label) => {
   const now = document.querySelector('[data-audio-now]');
   if (!now) return;
-  if (!label) {
-    now.hidden = true;
-    now.textContent = '';
-    return;
-  }
-  now.hidden = false;
-  now.textContent = `Teraz: ${label}`;
+  // Linia zostaje w layoucie także bez utworu, więc pasek nie zmienia wysokości po starcie.
+  now.textContent = label ? `Teraz: ${label}` : '';
 };
 
 /** Czy strona pokazuje odcinek, który faktycznie jest w playerze. */

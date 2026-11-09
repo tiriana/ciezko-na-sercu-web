@@ -2116,14 +2116,11 @@ main {
 
 .audio-bar__now {
   display: block;
+  min-height: 1.35em; /* pusta linia też zajmuje miejsce, żeby pasek nie skakał przy starcie */
   overflow: hidden;
   color: var(--muted);
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.audio-bar__now[hidden] {
-  display: none;
 }
 
 .audio-bar__transport {
