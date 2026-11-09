@@ -229,10 +229,12 @@ const setupBar = () => {
   }
 
   if (audio) {
-    for (const event of ['timeupdate', 'durationchange', 'loadedmetadata', 'play', 'pause', 'seeked', 'ended']) {
+    for (const event of ['timeupdate', 'durationchange', 'loadedmetadata', 'play', 'pause', 'seeked', 'ended', 'emptied', 'loadstart']) {
       audio.addEventListener(event, syncProgress);
+      audio.addEventListener(event, syncPlayers);
     }
     syncProgress();
+    syncPlayers();
   }
 };
 
@@ -331,6 +333,75 @@ const playFrom = (start) => {
   }
   audio.addEventListener('loadedmetadata', seek, { once: true });
   audio.load();
+};
+
+/** Ładuje do paska dowolną audycję — z listy albo z przycisku przy tytule. */
+const loadEpisode = (payload) => {
+  if (!audio || !bar) return false;
+  const changed = audio.dataset.src !== payload.src;
+  delete audio.dataset.closed;
+  audio.dataset.src = payload.src;
+  audio.dataset.slug = payload.slug ?? '';
+  if (changed) {
+    audio.src = payload.src;
+    audio.load();
+    audio.currentTime = 0;
+  }
+  bar.hidden = false;
+  const title = bar.querySelector('[data-audio-title]');
+  if (title) title.textContent = payload.title ?? '';
+  const link = bar.querySelector('[data-audio-link]');
+  if (link && payload.slug) link.href = `/odcinki/${payload.slug}/`;
+  return changed;
+};
+
+const playEpisode = (payload, start = 0) => {
+  if (!audio || !payload.src) return;
+  const changed = loadEpisode(payload);
+  const seek = () => {
+    audio.currentTime = start;
+    audio.play().catch(() => {});
+  };
+  if (changed || audio.readyState < 1) audio.addEventListener('loadedmetadata', seek, { once: true });
+  else seek();
+};
+
+/** Ten sam odcinek przełącza pauzę; inny zaczyna od zera. */
+const toggleEpisode = (payload) => {
+  if (!audio || !payload.src) return;
+  if (audio.dataset.src === payload.src && audio.dataset.slug === (payload.slug ?? '')) {
+    if (audio.paused) audio.play().catch(() => {});
+    else audio.pause();
+    return;
+  }
+  playEpisode(payload, 0);
+};
+
+const payloadOf = (element) => ({
+  src: element.dataset.audioSrc ?? '',
+  slug: element.dataset.audioSlug ?? '',
+  title: element.dataset.audioTitle ?? '',
+});
+
+/** Stan „gra ten odcinek” dla listy i dla przycisku przy tytule. */
+const syncPlayers = () => {
+  if (!audio) return;
+  const slug = audio.dataset.slug ?? '';
+  const playing = !audio.paused;
+  for (const button of document.querySelectorAll('[data-episode-play]')) {
+    const playingThis = Boolean(slug) && button.dataset.audioSlug === slug && playing;
+    button.dataset.state = playingThis ? 'playing' : 'paused';
+    button.setAttribute('aria-pressed', String(playingThis));
+    const label = playingThis
+      ? button.dataset.stopLabel ?? 'Zatrzymaj audycję'
+      : button.dataset.label ?? 'Odtwórz audycję';
+    button.setAttribute('aria-label', label);
+    const text = button.querySelector('[data-play-text]');
+    if (text) text.textContent = label;
+  }
+  for (const row of document.querySelectorAll('.episode-row[data-audio-slug]')) {
+    row.classList.toggle('is-playing', Boolean(slug) && row.dataset.audioSlug === slug && playing);
+  }
 };
 
 /** Ustawia źródło z danych strony odcinka; ten sam odcinek nie restartuje odtwarzania. */
@@ -518,6 +589,15 @@ document.addEventListener('astro:before-swap', () => {
   applyLinksOnNextPage = true;
 });
 
+// Delegacja na dokumencie: po nawigacji klienckiej lista jest nowym elementem.
+document.addEventListener('click', (event) => {
+  const button = event.target instanceof Element ? event.target.closest('[data-episode-play]') : null;
+  if (!button) return;
+  event.preventDefault();
+  toggleEpisode(payloadOf(button));
+  syncPlayers();
+});
+
 const initPage = () => {
   spans = [...document.querySelectorAll('[data-span-start]')].map((element) => ({
     element,
@@ -617,6 +697,7 @@ const initPage = () => {
   }
   applyEntriesLink();
   syncSpans();
+  syncPlayers();
   syncFragment();
 };
 

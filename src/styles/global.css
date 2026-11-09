@@ -443,7 +443,7 @@ a {
 
 .episode-row {
   display: grid;
-  grid-template-columns: 118px minmax(0, 1fr) auto;
+  grid-template-columns: auto 118px minmax(0, 1fr) auto;
   gap: 20px;
   align-items: center;
   padding: 18px 22px;
@@ -458,6 +458,25 @@ a {
 .episode-row:hover {
   background: color-mix(in srgb, var(--ink) 4%, var(--surface));
   border-left-color: var(--accent);
+}
+
+/* Odcinek, który właśnie leci: tło i kreska mówią to samo, co pauza na przycisku. */
+.episode-row.is-playing {
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  border-left-color: var(--accent);
+}
+
+.episode-row.is-playing:hover {
+  background: color-mix(in srgb, var(--accent) 11%, var(--surface));
+}
+
+.episode-row__play {
+  width: 26px;
+  height: 26px;
+}
+
+.episode-row__play--empty {
+  display: block;
 }
 
 .episode-row__date {
@@ -1132,13 +1151,28 @@ a {
   }
 
   .episode-row {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px 14px;
+  }
+
+  .episode-row__main,
+  .episode-row__actions {
+    grid-column: 1 / -1;
   }
 
   .episode-row__actions {
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  .ep-head__title {
+    gap: 12px;
+  }
+
+  .ep-head__play {
+    width: 44px;
+    height: 44px;
+    margin-top: 6px;
   }
 
   .tracks thead {
@@ -1251,6 +1285,92 @@ a {
 }
 
 /* Cała grafika (ramka i symbol) to jedno SVG, więc button nie rysuje własnego kółka. */
+/* Przycisk całej audycji: ten sam rysunek co przy wierszach programu, tylko większy. */
+.ep-play {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--ink);
+  line-height: 0;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.ep-play .track-play__icon {
+  width: 100%;
+  height: 100%;
+}
+
+/* Reguła ogólna pokazuje oba rysunki naraz, a w gridzie wylądowałyby jeden pod drugim. */
+.ep-play .track-play__icon--pause {
+  display: none;
+}
+
+.ep-play:hover,
+.ep-play:focus-visible {
+  color: var(--accent);
+}
+
+.ep-play:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.ep-play[data-state='playing'] {
+  color: var(--accent);
+}
+
+.ep-play[data-state='playing'] .track-play__icon--play {
+  display: none;
+}
+
+.ep-play[data-state='playing'] .track-play__icon--pause {
+  display: block;
+}
+
+.ep-head__title {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ep-head__play {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  margin-top: 10px;
+}
+
+.unprocessed__line {
+  margin: 6px 0 4px;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.unprocessed__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0 0;
+}
+
+.unprocessed__play {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.unprocessed__play .track-play__icon {
+  width: 18px;
+  height: 18px;
+}
+
 .track-play {
   display: inline-grid;
   place-items: center;

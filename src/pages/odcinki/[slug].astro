@@ -6,6 +6,7 @@ import PersonName from '../../components/PersonName.astro';
 import ReportLink from '../../components/ReportLink.astro';
 import FragmentProgress from '../../components/FragmentProgress.astro';
 import TrackPlayIcon from '../../components/TrackPlayIcon.astro';
+import EpisodePlay from '../../components/EpisodePlay.astro';
 import { getCatalog, getDuplicates, getEntries, getEpisodeFiles, getTranscripts } from '../../lib/data';
 import { transcriptParagraphs } from '../../lib/transcript';
 import { tagId } from '../../lib/tags';
@@ -58,6 +59,9 @@ const { entry, older, newer, duplicate } = Astro.props;
 const [catalog, files, transcripts] = await Promise.all([getCatalog(), getEpisodeFiles(), getTranscripts()]);
 const episode = files.get(entry.id);
 const paragraphs = transcriptParagraphs(transcripts.get(entry.id));
+// Nieopracowany to odcinek bez pliku opracowania albo z plikiem-zaślepką, w którym nie ma
+// jeszcze ani utworów, ani wejść. Tabela z samym nagłówkiem nic by nie mówiła.
+const unprocessed = !episode || (episode.tracks.length === 0 && episode.topics.length === 0);
 
 // Tematy i cytaty mają tylko start, więc koniec wyprowadzamy: początek następnej pozycji
 // w tej samej sekcji, a dla ostatniej — 30 s, żeby nie świeciła do końca audycji.
@@ -249,7 +253,17 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         </p>
       )}
 
-      <h1>{episodeTitle}</h1>
+      <div class="ep-head__title">
+        {entry.audioUrl && (
+          <EpisodePlay
+            src={entry.audioUrl}
+            slug={entry.slug}
+            title={episodeTitle}
+            class="ep-head__play"
+          />
+        )}
+        <h1>{episodeTitle}</h1>
+      </div>
       {entry.titleKind === 'unofficial' ? (
         <p class="title-note">
           {entry.titleNote ?? 'Tytuł redakcyjny.'} · Tytuł oryginalny:{' '}
@@ -278,7 +292,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         <div class="stack">
           <section class="card programme" aria-labelledby="programme-title">
             <h2 id="programme-title">Program audycji</h2>
-            <div class="programme__head">
+            <div class="programme__head" hidden={unprocessed}>
               <p class="card__sub">
                 {pluralTracks(episode.tracks.length)} i {pluralEntries(episode.topics.length)} w kolejności emisji
               </p>
@@ -293,7 +307,30 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <script type="application/json" id="audio-data" set:html={JSON.stringify({ src: entry.audioUrl, title: episodeTitle, slug: entry.slug })} />
             )}
 
-            {blocks.length > 0 ? (
+            {unprocessed ? (
+              <div class="unprocessed">
+                <p class="unprocessed__line">Tracklista pojawi się wkrótce.</p>
+                <p class="card__sub">Możesz już posłuchać całej audycji.</p>
+                {entry.audioUrl && (
+                  <p class="unprocessed__actions">
+                    <button
+                      class="btn btn--solid unprocessed__play"
+                      type="button"
+                      data-episode-play
+                      data-audio-src={entry.audioUrl}
+                      data-audio-slug={entry.slug}
+                      data-audio-title={episodeTitle}
+                      data-label="Cała audycja"
+                      data-stop-label="Zatrzymaj audycję"
+                      aria-label="Cała audycja"
+                    >
+                      <TrackPlayIcon />
+                      <span data-play-text>Cała audycja</span>
+                    </button>
+                  </p>
+                )}
+              </div>
+            ) : blocks.length > 0 ? (
               <table class="tracks">
                 <thead>
                   <tr>
@@ -540,14 +577,30 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
       </div>
     ) : (
       <section class="card card--planned" aria-labelledby="planned-title">
-        <h2 id="planned-title">Opracowanie jeszcze nie powstało</h2>
-        <p class="card__sub">
-          Ten odcinek jest już w indeksie. Tracklista, wejścia i streszczenie pojawią się, gdy
-          audycja zostanie opracowana.
-        </p>
-        {entry.sourceUrl && (
-          <a class="btn btn--solid" href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">Posłuchaj w Polskim Radiu ↗</a>
-        )}
+        <h2 id="planned-title">Program audycji</h2>
+        <div class="unprocessed">
+          <p class="unprocessed__line">Tracklista pojawi się wkrótce.</p>
+          <p class="card__sub">Możesz już posłuchać całej audycji.</p>
+          {entry.audioUrl && (
+            <p class="unprocessed__actions">
+              <button
+                class="btn btn--solid unprocessed__play"
+                type="button"
+                data-episode-play
+                data-audio-src={entry.audioUrl}
+                data-audio-slug={entry.slug}
+                data-audio-title={episodeTitle}
+                data-label="Cała audycja"
+                data-stop-label="Zatrzymaj audycję"
+                aria-label="Cała audycja"
+              >
+                <TrackPlayIcon />
+                <span data-play-text>Cała audycja</span>
+              </button>
+              <a class="btn" href={entry.sourceUrl ?? catalog.program.pageUrl} target="_blank" rel="noopener noreferrer">Polskie Radio ↗</a>
+            </p>
+          )}
+        </div>
       </section>
     )}
     <nav class="ep-nav" aria-label="Sąsiednie audycje">

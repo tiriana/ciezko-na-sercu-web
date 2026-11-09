@@ -3,6 +3,7 @@ import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import Base from '../layouts/Base.astro';
 import PersonName from '../components/PersonName.astro';
+import EpisodePlay from '../components/EpisodePlay.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../lib/data';
 import { formatDay, formatEpisodeTitle, monthKey, monthLabel, resolveDisplayTitle } from '../lib/format';
 
@@ -96,9 +97,25 @@ for (const entry of entries) {
           <>
             <div class="list__month" data-month={key}>{monthLabel(group[0].date)}</div>
             {group.map((entry) => (
-              <article class="episode-row" data-episode={resolveDisplayTitle(entry)} data-date={entry.date} data-month={key}>
+              <article
+                class="episode-row"
+                data-episode={resolveDisplayTitle(entry)}
+                data-date={entry.date}
+                data-month={key}
+                data-audio-slug={entry.slug}
+              >
+                {entry.audioUrl ? (
+                  <EpisodePlay
+                    src={entry.audioUrl}
+                    slug={entry.slug}
+                    title={resolveDisplayTitle(entry)}
+                    class="episode-row__play"
+                  />
+                ) : (
+                  <span class="episode-row__play episode-row__play--empty" aria-hidden="true" />
+                )}
                 <div class="episode-row__date">{formatDay(entry.date)}</div>
-                <div>
+                <div class="episode-row__main">
                   <h3 class="episode-row__title">
                     <a href={`/odcinki/${entry.slug}/`}>{resolveDisplayTitle(entry)}</a>
                     {entry.titleKind !== 'official' && (
