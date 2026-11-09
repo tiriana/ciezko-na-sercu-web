@@ -1,3 +1,9 @@
+## [1.24.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.24.1...v1.24.2) (2026-11-09)
+
+### Bug Fixes
+
+* długość fragmentu liczy się do następnego znacznika ([f44e204](https://github.com/tiriana/ciezko-na-sercu-web/commit/f44e2045fba172a640ff4b3a4df62a994520864e))
+
 ## [1.24.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.24.0...v1.24.1) (2026-11-09)
 
 ### Bug Fixes
