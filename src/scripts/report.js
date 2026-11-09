@@ -59,12 +59,8 @@ const renderChips = (bubble, element) => {
   );
 };
 
-const HORNS = `<svg class="report-toast__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-  <rect x="5" y="13.4" width="14" height="7.9" rx="2.5"/>
-  <rect x="6.2" y="2.6" width="3.6" height="10.8" rx="1.8"/>
-  <rect x="14.2" y="5.2" width="3.6" height="8.2" rx="1.8"/>
-  <rect x="10.2" y="10.2" width="3.6" height="3.2" rx="1.6"/>
-  <rect x="3.2" y="13.8" width="4.6" height="3" rx="1.5" transform="rotate(-18 5.5 15.3)"/>
+const HORNS = `<svg class="report-toast__icon" viewBox="11 0 42 64" fill="currentColor" aria-hidden="true" focusable="false">
+  <path d="M51,44 C51,53.925 42.925,62 33,62 L31,62 C21.075,62 13,53.925 13,44 L13,40 L13,40 C13,37.8 14.8,36 17,36 L21,36 L21,36 L23,36 L27,36 C27.347,36 27.679,36.059 28,36.142 L28,37.5 C28,37.776 27.776,38 27.5,38 L23.5,38 C23.224,38 23,38.224 23,38.5 C23,38.776 23.224,39 23.5,39 L28,39 C28.552,39 29,38.552 29,38 L29,36.557 C30.14,37.221 30.918,38.422 30.982,39.818 C31.081,42.108 29.271,44 27.003,44 L22.003,44 C21.451,44 21.003,44.448 21.003,45 C21.003,45.552 21.451,46 22.003,46 L26.751,46 C28.885,46 30.837,44.928 31.973,43.279 C33.119,45.006 35.106,46 37,46 C40.308,46 43,43.308 43,40 L43,12 C43,9.794 44.794,8 47,8 C49.206,8 51,9.794 51,12 L51,44 Z M13,6 C13,3.794 14.794,2 17,2 C19.206,2 21,3.794 21,6 L21,34 L17,34 C15.465,34 14.064,34.589 13,35.547 L13,6 Z M23,23 C23,20.8 24.8,19 27,19 C29.2,19 31,20.8 31,23 L31,35.537 C29.938,34.585 28.539,34 27,34 L23,34 L23,23 Z M33,23 C33,20.8 34.8,19 37,19 C39.2,19 41,20.8 41,23 L41,40 C41,42.209 39.209,44 37,44 C35.024,44 33,42.399 33,40 L33,23 Z M47,6 C43.686,6 41,8.686 41,12 L41,18.547 C39.936,17.589 38.535,17 37,17 C34.918,17 33.077,18.076 32,19.698 C30.923,18.076 29.082,17 27,17 C25.465,17 24.064,17.589 23,18.547 L23,6 C23,2.686 20.314,0 17,0 C13.7,0 11,2.7 11,6 L11,44 C11,55 20,64 31,64 L33,64 C44,64 53,55 53,44 L53,12 C53,8.7 50.3,6 47,6 L47,6 Z M38.5,38 C38.776,38 39,38.224 39,38.5 L39,40 C39,41.105 38.105,42 37,42 C36.724,42 36.5,42.224 36.5,42.5 C36.5,42.776 36.724,43 37,43 C38.657,43 40,41.657 40,40 L40,38 C40,37.448 39.552,37 39,37 L34.5,37 L34.5,37 C34.224,37 34,37.224 34,37.5 C34,37.776 34.224,38 34.5,38 L38.5,38 Z M19,27.5 C19,27.224 18.776,27 18.5,27 L15.5,27 C15.224,27 15,27.224 15,27.5 C15,27.776 15.224,28 15.5,28 L18.5,28 C18.776,28 19,27.776 19,27.5 L19,27.5 Z M29,31.5 C29,31.224 28.776,31 28.5,31 L25.5,31 C25.224,31 25,31.224 25,31.5 C25,31.776 25.224,32 25.5,32 L28.5,32 C28.776,32 29,31.776 29,31.5 L29,31.5 Z M35.5,32 L38.5,32 C38.776,32 39,31.776 39,31.5 C39,31.224 38.776,31 38.5,31 L35.5,31 C35.224,31 35,31.224 35,31.5 C35,31.776 35.224,32 35.5,32 L35.5,32 Z M48.5,33 L45.5,33 C45.224,33 45,33.224 45,33.5 C45,33.776 45.224,34 45.5,34 L48.5,34 C48.776,34 49,33.776 49,33.5 C49,33.224 48.776,33 48.5,33 L48.5,33 Z M48.5,20 L45.5,20 C45.224,20 45,20.224 45,20.5 C45,20.776 45.224,21 45.5,21 L48.5,21 C48.776,21 49,20.776 49,20.5 C49,20.224 48.776,20 48.5,20 L48.5,20 Z M15.5,15 L18.5,15 C18.776,15 19,14.776 19,14.5 C19,14.224 18.776,14 18.5,14 L15.5,14 C15.224,14 15,14.224 15,14.5 C15,14.776 15.224,15 15.5,15 L15.5,15 Z"/>
 </svg>`;
 
 const uuid = () =>
@@ -325,6 +321,8 @@ const openBubble = (link) => {
     type: null,
     seq: 0,
     saved: false,
+    attempted: false,
+    signalled: false,
     timer: 0,
   };
   state.session = session;
@@ -344,10 +342,36 @@ const openBubble = (link) => {
   else bubble.querySelector('[data-report-type]')?.focus({ preventScroll: true });
 };
 
-const closeBubble = ({ focus = true } = {}) => {
+// Samo otwarcie dymku przy fragmencie jest sygnałem, że coś tu nie gra — nawet gdy
+// ktoś nie dopisze ani słowa. Cała audycja i cały transkrypt są na to za ogólne.
+const wantsSignal = (session) => {
+  const [kind = '', id] = (session.element.split('|')[1] ?? '').split(':');
+  if (kind === 'utwór' || kind === 'wejście') return true;
+  return kind === 'transkrypt' && id !== undefined;
+};
+
+const sendSignal = (session, text) => {
+  session.signalled = true;
+  const report = {
+    element: session.element,
+    type: 'sygnal',
+    text,
+    page: location.pathname + location.search,
+    id: uuid(),
+  };
+  // Cicho: bez statusu, bez podziękowania i bez kolejki — nieudany sygnał po prostu przepada.
+  send(report).catch(() => {});
+};
+
+const closeBubble = ({ focus = true, signal = true } = {}) => {
   const { bubble, session } = state;
   if (!bubble || bubble.hidden || !session) return;
   clearTimeout(session.timer);
+  // Nic nie wysłano i nic nie wybrano: zostaje po cichu zgłoszony sam fakt kliknięcia,
+  // a wpisany tekst (jeśli zdążył powstać) jedzie razem z nim, zamiast przepaść.
+  if (signal && !session.attempted && !session.signalled && wantsSignal(session)) {
+    sendSignal(session, bubbleText().value.trim());
+  }
   bubble.hidden = true;
   session.link.setAttribute('aria-expanded', 'false');
   state.session = null;
@@ -363,6 +387,7 @@ const submit = (session, type) => {
     id: session.id,
   };
   const seq = ++session.seq;
+  session.attempted = true;
   setStatus(session, 'zapisywanie…');
 
   attempt(report)
@@ -391,6 +416,7 @@ const submit = (session, type) => {
 /** Cała audycja: jedno zgłoszenie z wpisanego tekstu, bez podpowiedzi i bez autozapisu. */
 const sendEpisode = async (session) => {
   if (!session || session.mode !== 'episode') return;
+  session.attempted = true;
   const text = bubbleText().value.trim();
   if (!text) return;
 
@@ -488,7 +514,7 @@ window.addEventListener('resize', placeBubble);
 window.addEventListener('scroll', () => state.session && placeBubble(), { passive: true });
 window.addEventListener('online', flushQueue);
 
-document.addEventListener('astro:before-swap', () => closeBubble({ focus: false }));
+document.addEventListener('astro:before-swap', () => closeBubble({ focus: false, signal: false }));
 
 const init = () => {
   initLinks();

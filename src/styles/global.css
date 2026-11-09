@@ -2167,10 +2167,12 @@ a {
   transform: none;
 }
 
+/* Znak z viewBox 42×64 jest wysoki i cienki — przy 20 px gubił kreski,
+   więc dostaje pełną wysokość wiersza i własną szerokość z proporcji. */
 .report-toast__icon {
   flex: none;
-  width: 20px;
-  height: 20px;
+  width: auto;
+  height: 24px;
   color: var(--accent);
 }
 
