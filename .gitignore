@@ -17,3 +17,7 @@ intro.mp3
 # Artefakty transkrypcji w Actions i lokalnie
 .incoming/
 .cache/
+
+# Osobne worktree na prace feat/*
+.slim/
+.slim-*/
