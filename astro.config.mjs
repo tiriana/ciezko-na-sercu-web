@@ -23,6 +23,6 @@ function legacyRedirects() {
 
 export default defineConfig({
   site: 'https://ciezko-na-sercu.pages.dev',
-  build: { format: 'directory' },
+  build: { format: 'directory', inlineStylesheets: 'always' },
   redirects: legacyRedirects(),
 });

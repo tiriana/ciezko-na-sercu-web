@@ -60,6 +60,43 @@
   </div>
 
   <div class="audio-bar__extras">
+    <div class="audio-bar__jump">
+      <button
+        class="audio-bar__jump-toggle"
+        type="button"
+        data-jump-toggle
+        aria-controls="audio-jump-menu"
+        aria-expanded="false"
+        aria-label="Skocz do…"
+        title="Skocz do znacznika lub innej audycji"
+      >
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M3 4h10M3 8h6M3 12h10" stroke-linecap="round" />
+          <path d="m10 6 3 2-3 2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Skocz do</span>
+      </button>
+      <div class="audio-bar__jump-menu" id="audio-jump-menu" data-jump-menu hidden role="group" aria-label="Dodatkowe skoki">
+        <section class="audio-bar__jump-group" aria-label="Znaczniki programu">
+          <h2>Znaczniki</h2>
+          <button type="button" data-jump-marker="-1" aria-label="Poprzedni znacznik" title="Poprzedni znacznik">
+            <span aria-hidden="true">←</span><span>Poprzedni znacznik</span>
+          </button>
+          <button type="button" data-jump-marker="1" aria-label="Następny znacznik" title="Następny znacznik">
+            <span aria-hidden="true">→</span><span>Następny znacznik</span>
+          </button>
+        </section>
+        <section class="audio-bar__jump-group" aria-label="Audycje w katalogu">
+          <h2>Audycje</h2>
+          <button type="button" data-jump-episode="-1" aria-label="Poprzednia audycja" title="Poprzednia audycja">
+            <span aria-hidden="true">←</span><span>Poprzednia audycja</span>
+          </button>
+          <button type="button" data-jump-episode="1" aria-label="Następna audycja" title="Następna audycja">
+            <span aria-hidden="true">→</span><span>Następna audycja</span>
+          </button>
+        </section>
+      </div>
+    </div>
     <label class="audio-bar__volume">
       <span class="visually-hidden">Głośność</span>
       <svg viewBox="0 0 16 14" aria-hidden="true">
