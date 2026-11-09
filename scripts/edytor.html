@@ -1826,7 +1826,7 @@
       };
 
       const setWaveTools = (enabled) => {
-        for (const id of ['wave-in', 'wave-out', 'wave-all', 'wave-prev', 'wave-next', 'wave-add']) $(id).disabled = !enabled;
+        for (const id of ['wave-in', 'wave-out', 'wave-all', 'wave-prev', 'wave-next', 'wave-add', 'wave-add-track']) $(id).disabled = !enabled;
       };
 
       const drawWave = () => {
@@ -2346,7 +2346,9 @@
 
       // --- Dodawanie wejścia w miejscu, którego nie wykrył tagger ---
 
-      const ADD_TOPIC_GUARD = 0.5;
+      const ADD_MARKER_GUARD = 0.5;
+      const TODO_TOPIC_LABEL = '#TODO - wygeneruj opis znacznika';
+      const TODO_TRACK_TITLE = '#TODO - rozpoznaj piosenkę';
 
       const noteStatus = (text) => {
         setStatus(dirty ? 'dirty' : 'clean', text);
@@ -2361,7 +2363,7 @@
         if (!wave.duration) return null;
         const start = clampNumber(Math.round(time * 100) / 100, 0, wave.duration);
         // Dwa znaczniki w tym samym miejscu to zawsze pomyłka, a nie nowa informacja.
-        const neighbour = collectMarkers().find((marker) => Math.abs(marker.time - start) <= ADD_TOPIC_GUARD);
+        const neighbour = collectMarkers().find((marker) => Math.abs(marker.time - start) <= ADD_MARKER_GUARD);
         if (neighbour) {
           noteStatus('tu już jest znacznik');
           return null;
@@ -2369,7 +2371,7 @@
         pushUndo();
         // Dokładnie te same pola, które wysyła saveEpisode dla dodanych wejść
         // (label + start); `end` w schemacie addTopics nie istnieje.
-        const topic = { label: '', start };
+        const topic = { label: TODO_TOPIC_LABEL, start };
         state.addTopics.push(topic);
         markDirty();
         renderAdded();
@@ -2378,6 +2380,32 @@
         // odjeżdża od waveformu akurat w momencie, w którym się go używa.
         openLabelAt(topic);
         return topic;
+      };
+
+      const addTrackAt = (time) => {
+        if (!wave.duration) return null;
+        const start = clampNumber(Math.round(time * 100) / 100, 0, wave.duration);
+        const neighbour = collectMarkers().find((marker) => Math.abs(marker.time - start) <= ADD_MARKER_GUARD);
+        if (neighbour) {
+          noteStatus('tu już jest znacznik');
+          return null;
+        }
+        const next = collectMarkers()
+          .map((marker) => marker.time)
+          .filter((markerTime) => markerTime > start)
+          .sort((left, right) => left - right)[0];
+        const requestedDuration = next === undefined ? 180 : next - start;
+        const durationSec = Math.max(0, Math.min(requestedDuration, wave.duration - start));
+        const track = { artist: '', title: TODO_TRACK_TITLE, album: '', start, durationSec };
+        pushUndo();
+        state.addTracks.push(track);
+        state.addTracks.sort((left, right) => Number(left.start) - Number(right.start));
+        markDirty();
+        renderAdded();
+        buildMarkers();
+        const marker = collectMarkers().find((entry) => entry.object === track);
+        if (marker) openEdit(marker);
+        return track;
       };
 
       const labelForm = $('wave-label');
@@ -2797,6 +2825,7 @@
         menuMarker = marker;
         const previous = marker ? previousSameKind(marker) : null;
         $('wave-menu-add').hidden = Boolean(marker);
+        $('wave-menu-add-track').hidden = Boolean(marker);
         $('wave-menu-ok').hidden = !marker;
         $('wave-menu-edit').hidden = !marker;
         $('wave-menu-merge').hidden = !previous;
@@ -2809,6 +2838,7 @@
           $('wave-menu-mark').textContent = `${marker.name}, ${fmtPrecise(marker.time)}`;
         } else {
           $('wave-menu-time').textContent = fmtPrecise(time);
+          $('wave-menu-track-time').textContent = fmtPrecise(time);
         }
         waveMenu.hidden = false;
         const rect = waveMenu.getBoundingClientRect();
@@ -2866,6 +2896,12 @@
         const time = menuTime;
         closeMenu();
         addTopicAt(time);
+      });
+
+      $('wave-menu-add-track').addEventListener('click', () => {
+        const time = menuTime;
+        closeMenu();
+        addTrackAt(time);
       });
 
       document.addEventListener(
@@ -3302,10 +3338,14 @@
         } else if (event.shiftKey && event.code === 'KeyN') {
           event.preventDefault();
           addTopicAt($('audio').currentTime);
+        } else if (event.shiftKey && event.code === 'KeyT') {
+          event.preventDefault();
+          addTrackAt($('audio').currentTime);
         }
       });
 
       $('wave-add').addEventListener('click', () => addTopicAt($('audio').currentTime));
+      $('wave-add-track').addEventListener('click', () => addTrackAt($('audio').currentTime));
 
       stageEl().addEventListener('contextmenu', (event) => {
         if (!wave.peaks) return;
