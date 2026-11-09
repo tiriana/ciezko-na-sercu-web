@@ -131,7 +131,29 @@
       "newAlbum": "Apeiron",
       "start": 5475.03,
       "durationSec": 465,
-      "end": 5952.37
+      "end": 5939.04
+    },
+    {
+      "artist": "Esoteric",
+      "title": "Caucus of Mind",
+      "album": "The Maniacal Vale",
+      "newArtist": "Esoteric",
+      "newTitle": "Caucus of Mind",
+      "newAlbum": "The Maniacal Vale",
+      "start": 6007.13,
+      "durationSec": 426,
+      "end": 6432.42
+    },
+    {
+      "artist": "In Twilight's Embrace",
+      "title": "Żywi nieumarli",
+      "album": "Lawa - EP",
+      "newArtist": "In Twilight's Embrace",
+      "newTitle": "Żywi nieumarli",
+      "newAlbum": "Lawa - EP",
+      "start": 6573.12,
+      "durationSec": 370,
+      "end": 6958
     }
   ],
   "topics": [
@@ -202,6 +224,25 @@
       "start": 4584.63,
       "newLabel": "Koncerty Imperial Triumphant w Krakowie i Warszawie oraz występ przed nimi zespołu Knoll",
       "end": 4646.63
+    },
+    {
+      "time": 5952.37,
+      "label": "The Ruins of Beverast jako gwiazda wieczoru",
+      "start": 5939.04,
+      "newLabel": "The Ruins of Beverast jako gwiazda wieczoru",
+      "end": 6007.13
+    },
+    {
+      "time": 6445.89,
+      "label": "Zapowiedź koncertów i tras w listopadzie (Elevate, Pain, Wolfhard, Black Gold, Samo Psycho, Acid Drinkers, Diving Stove, Flotsam and Jetsam)",
+      "start": 6432.42,
+      "newLabel": "Zapowiedź koncertów i tras w listopadzie (Elevate, Pain, Wolfhard, Black Gold, Samo Psycho, Acid Drinkers, Diving Stove, Flotsam and Jetsam) / Festiwal Black Roses Fest w Kutnie",
+      "end": 6573.12
+    },
+    {
+      "time": 6544,
+      "label": "Festiwal Black Roses Fest w Kutnie",
+      "hide": true
     }
   ],
   "addTracks": [
@@ -212,14 +253,14 @@
       "durationSec": 8.06
     },
     {
-      "artist": "",
+      "artist": "Hellborn",
       "title": "#TODO - rozpoznaj piosenkę",
-      "album": "",
+      "album": "Siedem",
       "start": 3387,
       "durationSec": 419
     },
     {
-      "artist": "NApalm Death",
+      "artist": "Napalm Death",
       "title": "#TODO - rozpoznaj piosenkę",
       "album": "",
       "start": 5387.42,
@@ -229,32 +270,32 @@
   ],
   "addTopics": [
     {
-      "label": "Mo",
+      "label": "Monolord i Mars Red Sky — koncerty 7 listopada w Warszawie i dzień później w Krakowie",
       "start": 1779.76,
       "end": 1882.61
     },
     {
-      "label": "#TODO - wygeneruj opis znacznika",
+      "label": "Kamelot, Nasty i Medico Peste — listopadowe koncerty w Polsce",
       "start": 2319.32,
       "end": 2422.96
     },
     {
-      "label": "#TODO - wygeneruj opis znacznika",
+      "label": "Korn, Papa Roach, Health i Carpenter Brut — koncerty w połowie listopada",
       "start": 3717.66,
       "end": 3797.6
     },
     {
-      "label": "#TODO - wygeneruj opis znacznika",
+      "label": "Death metal 17 listopada: Fleshcrawl w Krakowie oraz Carnifex, Despised Icon i Suffocation w Warszawie",
       "start": 4023.54,
       "end": 4116.66
     },
     {
-      "label": "#TODO - wygeneruj opis znacznika",
+      "label": "Napalm Death i Master — trasa Campaign for Musical Destruction, 20 listopada w Krakowie",
       "start": 5321.68,
       "end": 5387.42
     },
     {
-      "label": "#TODO - wygeneruj opis znacznika",
+      "label": "Anneke van Giersbergen — koncerty 21 listopada w Krakowie i 22 listopada w Warszawie",
       "start": 5388.91,
       "end": 5475.03
     }
