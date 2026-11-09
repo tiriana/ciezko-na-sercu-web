@@ -1,3 +1,9 @@
+## [1.18.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.18.0...v1.18.1) (2026-11-09)
+
+### Bug Fixes
+
+* ikona rogów w podziękowaniu czytelna już przy 16 px ([6dab454](https://github.com/tiriana/ciezko-na-sercu-web/commit/6dab45493bcd5d2c1db1bb99740b85d2626febc5))
+
 ## [1.18.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.17.0...v1.18.0) (2026-11-09)
 
 ### Features
