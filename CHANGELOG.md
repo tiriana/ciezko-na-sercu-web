@@ -1,3 +1,33 @@
+## [1.17.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.16.2...v1.17.0) (2026-11-09)
+
+### Features
+
+* cała transkrypcja odcinka do przeczytania na stronie ([c70a2c9](https://github.com/tiriana/ciezko-na-sercu-web/commit/c70a2c92aa1e5e677537686195a7527787f9e043))
+* **edytor:** add keyboard shortcuts and improve pinned playhead UI ([433490e](https://github.com/tiriana/ciezko-na-sercu-web/commit/433490e6aace570f4b1634525b7be32087e29d1e))
+* **edytor:** add undo, save shortcut, and spacebar playback ([254d2d1](https://github.com/tiriana/ciezko-na-sercu-web/commit/254d2d1b3a023b75a63da46019c2ba5011db0a63))
+* **edytor:** przełącznik auto-zapisu ([b908635](https://github.com/tiriana/ciezko-na-sercu-web/commit/b908635bb441c2e871e1a1225a1b98932190e15e))
+* **edytor:** szczyty głośności do waveformu z ffmpeg i cache ([7cbf8fa](https://github.com/tiriana/ciezko-na-sercu-web/commit/7cbf8fae831da0749fbe4ea1bac705e8c9896a79))
+* **edytor:** waveform z zoomem i przeciąganymi znacznikami ([c580f9d](https://github.com/tiriana/ciezko-na-sercu-web/commit/c580f9d9612550a9bf52816037f4c66daf5178f0))
+* **edytor:** widoczny stan zapisu ([a7424dd](https://github.com/tiriana/ciezko-na-sercu-web/commit/a7424ddb0b3fb5931bff6f0b40a98a31d0ceef66))
+* **edytor:** znaczniki z dokładnością do 10 ms ([e1cdc09](https://github.com/tiriana/ciezko-na-sercu-web/commit/e1cdc090a96d5349b4bec3656d0e10239a4b2254))
+* **etap 1:** koniec utworu przytulony do początku mowy z transkryptu ([05ea738](https://github.com/tiriana/ciezko-na-sercu-web/commit/05ea738e9532eee97ae8150991968cd6f6a8cb8b))
+* odcinki z oznaczeniem ok są nietykalne dla automatów ([d9df8d2](https://github.com/tiriana/ciezko-na-sercu-web/commit/d9df8d2e175cc8efaa63386cea6a7dc415c5627d))
+* ręczny `end` utworu w poprawkach i ostrzeżenie o ogonach w check ([4d13a78](https://github.com/tiriana/ciezko-na-sercu-web/commit/4d13a785d413e097a2097b46ea65703a632b060a))
+* ręczny `end` wejścia w poprawkach ([fa5ce95](https://github.com/tiriana/ciezko-na-sercu-web/commit/fa5ce950fadab0d345fffd3627cc909335709aef))
+* **report:** add client‑side error reporting UI and script ([f3e116a](https://github.com/tiriana/ciezko-na-sercu-web/commit/f3e116a8ff46e2113f722d1bd6eb213cbef8d376))
+* wejście z wieloma wątkami to jeden fragment programu ([e563d6f](https://github.com/tiriana/ciezko-na-sercu-web/commit/e563d6f28f77dcc1c8e2b8d64495b75bc36184e3))
+
+### Bug Fixes
+
+* **ci:** preset changelogów w wersji 8, zgodnej z semantic-release ([7e98cd6](https://github.com/tiriana/ciezko-na-sercu-web/commit/7e98cd64c688ef149958e365c3fa2d3ae323986b))
+* **data:** Carnal trwa 2:09, nie 53 s ([987c348](https://github.com/tiriana/ciezko-na-sercu-web/commit/987c3484427bd98781b6626a722f0e8f94b47d72))
+* **data:** correct end timestamp and reorder keys ([6da7f6d](https://github.com/tiriana/ciezko-na-sercu-web/commit/6da7f6d2ef2ba706868d4a12a5a9bd47fed26494))
+* **edytor:** cache szczytów unieważnia się przy zmianie adresu nagrania ([7d2c0ff](https://github.com/tiriana/ciezko-na-sercu-web/commit/7d2c0ffc6766fbb89fba13c10545b936414c8fc0))
+* **edytor:** kursor przy krawędzi jest czarny i ze strzałką ([161df4f](https://github.com/tiriana/ciezko-na-sercu-web/commit/161df4f9e0f55ae2316ca35f3b9cd160c1149e76))
+* **edytor:** początek zawsze tnie poprzedni fragment ([1212db4](https://github.com/tiriana/ciezko-na-sercu-web/commit/1212db4ea171fa369f61dcce4ffa80c0a5ebf980))
+* pasek odtwarzacza trzyma wysokość, gdy nic nie leci ([5248200](https://github.com/tiriana/ciezko-na-sercu-web/commit/5248200cc82d6f19b7ba749ffe42c6196c20f0de))
+* początek utworu kończy wejście, także dodane ręcznie ([c2d6541](https://github.com/tiriana/ciezko-na-sercu-web/commit/c2d65417db78e4caab73766ade49bbb924285d5a))
+
 ## [1.16.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.16.1...v1.16.2) (2026-11-08)
 
 ### Bug Fixes
