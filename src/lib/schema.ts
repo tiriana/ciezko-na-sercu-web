@@ -129,6 +129,8 @@ export const overrideSchema = z.object({
         album: z.string().optional(),
         start: z.number(),
         durationSec: z.number().optional(),
+        /** Ręczna granica dodanego utworu; bez niej `end` wynika z `durationSec`. */
+        end: z.number().optional(),
       })
     )
     .default([]),

@@ -90,12 +90,16 @@ const programStarts = [
   ...(episode?.topics ?? []).map((topic) => topic.start),
 ].sort((left, right) => left - right);
 
+// Długość liczymy zawsze do następnego znacznika — nie z zapisanego `end` ani
+// `durationSec`, bo te bywają nieaktualne po przesunięciu sąsiada. Ostatnia pozycja
+// nie ma następnika, więc tam dopiero sięgamy po zapisane granice.
+const nextStartOf = (start: number) => programStarts.find((candidate) => candidate > start + 0.001) ?? null;
+
 const topicSpans = (episode?.topics ?? []).map((topic, index) => {
-  const nextStart = programStarts.find((start) => start > topic.start + 0.001);
-  const limit = nextStart ?? (episode?.durationSec ?? null);
+  const nextStart = nextStartOf(topic.start);
   const derived = spanEnd(episode?.topics ?? [], index, episode?.durationSec ?? null);
-  const declared = topic.end ?? derived;
-  const end = limit !== null ? Math.min(declared, limit) : declared;
+  const fallback = topic.end ?? derived;
+  const end = nextStart ?? (episode?.durationSec ? Math.min(fallback, episode.durationSec) : fallback);
   return { ...topic, end: Math.max(end, topic.start) };
 });
 const quoteSpans = (episode?.quotes ?? []).map((quote, index) => ({
@@ -139,7 +143,7 @@ const items: (TrackBlock | (TopicSpan & { kind: 'topic' }))[] = [
     kind: 'track' as const,
     index: index + 1,
     start: track.start,
-    end: track.end ?? track.start + track.durationSec,
+    end: nextStartOf(track.start) ?? track.end ?? track.start + track.durationSec,
     track,
   })),
   ...topicSpans.map((topic) => ({ kind: 'topic' as const, ...topic })),
@@ -381,7 +385,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         </td>
                         <td class="tracks__album">{block.track.album ?? '—'}</td>
                         <td class="tracks__time">{formatClock(block.start)}</td>
-                        <td class="tracks__time">{formatClock(block.track.durationSec)}</td>
+                        <td class="tracks__time">{formatSpan(block.start, block.end)}</td>
                       </tr>
                     ) : block.kind === 'group' ? (
                       <tr

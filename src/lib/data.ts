@@ -110,7 +110,7 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
           title: track.title,
           album: track.album ?? null,
           start: track.start,
-          end: track.durationSec ? track.start + track.durationSec : undefined,
+          end: track.end ?? (track.durationSec ? track.start + track.durationSec : undefined),
           durationSec: track.durationSec,
         }))
       );
