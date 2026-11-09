@@ -1,12 +1,23 @@
 ---
 /**
- * Link do zgłoszenia błędu w formularzu Google. Wartość pola „Element" jest
- * czytelna dla człowieka i maszynowa zarazem: `<slug>|<typ>:<id>|<opis>`.
- * Prefill idzie w adresie, więc nie ma żadnego backendu po naszej stronie.
+ * Zgłaszanie błędu w elemencie strony. Bez JS link prowadzi do starego formularza Google;
+ * z JS (`src/scripts/report.js`) otwiera dymek i wysyła zgłoszenie prosto do arkusza,
+ * więc użytkownik nigdy nie widzi docs.google.com.
+ *
+ * Wartość `element` jest czytelna dla człowieka i maszynowa zarazem: `<slug>|<typ>:<id>|<opis>`.
  */
 const REPORT_FORM =
   'https://docs.google.com/forms/d/e/1FAIpQLSdnSKLoHH2ImaOcsEzU705lGpm2Grdly762owR2wW86LqG6RA/viewform';
 const ENTRY_ELEMENT = 'entry.915308992';
+
+const KIND_LABELS: Record<string, string> = {
+  odcinek: 'Cały odcinek',
+  utwór: 'Utwór',
+  wejście: 'Wejście',
+  cytat: 'Cytat',
+  streszczenie: 'Streszczenie',
+  credits: 'Credits',
+};
 
 interface Props {
   element: string;
@@ -15,6 +26,9 @@ interface Props {
 }
 
 const { element, label = 'Zgłoś', class: className } = Astro.props;
+const [, kindWithId = '', description] = element.split('|');
+const kind = kindWithId.split(':')[0];
+const target = description || KIND_LABELS[kind] || 'Ten fragment';
 const href = `${REPORT_FORM}?usp=pp_url&${ENTRY_ELEMENT}=${encodeURIComponent(element)}`;
 ---
 
@@ -23,6 +37,9 @@ const href = `${REPORT_FORM}?usp=pp_url&${ENTRY_ELEMENT}=${encodeURIComponent(el
   href={href}
   target="_blank"
   rel="noopener noreferrer"
+  data-report-link
+  data-report-element={element}
+  data-report-target={target}
   title={`Zgłoś błąd: ${element}`}
 >
   {label}

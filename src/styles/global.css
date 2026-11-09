@@ -1699,86 +1699,15 @@ a {
   text-transform: uppercase;
 }
 
-/* Wejście z kilkoma wątkami to jeden fragment: wątki siedzą zwinięte pod etykietą
-   Nagłówek pokazuje pierwszy wątek, reszta czeka pod „+N”. */
+/* Kilka wejść pod rząd to jeden wiersz z tytułem pierwszego — reszta zostaje w danych.
+   Wąska kolumna obcina długi tytuł wielokropkiem; pełna wersja jest w `title`. */
 
-.threads {
-  margin: 2px 0 0;
-}
-
-.threads__summary {
-  display: block;
-  cursor: pointer;
-  list-style: none;
-}
-
-.threads__summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Zwinięta etykieta kończy się „+N” i strzałką w tym samym wierszu tekstu —
-   po owinięciu flex rozjeżdżał je na osobną linię. */
-.threads__summary::after {
-  content: '';
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-left: 6px;
-  border-right: 1.5px solid var(--muted);
-  border-bottom: 1.5px solid var(--muted);
-  transform: rotate(45deg) translateY(-1px);
-  transition: transform 160ms ease;
-  vertical-align: 1px;
-}
-
-.threads[open] .threads__summary::after {
-  transform: rotate(225deg) translateY(1px);
-}
-
-.threads__summary:hover .threads__label {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-
-.threads__summary:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: 3px;
-}
-
-.threads__count {
-  margin-left: 8px;
-  color: var(--muted);
-  font-size: 11.5px;
-  font-variant-numeric: tabular-nums;
-}
-
-.threads__list {
-  margin: 6px 0 2px;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 5px;
-}
-
-.threads__item {
-  display: grid;
-  grid-template-columns: minmax(3.6em, max-content) 1fr;
-  gap: 10px;
-  color: var(--muted);
-  font-size: 13.5px;
-  line-height: 1.45;
-}
-
-.threads__time {
-  color: var(--muted);
-  font-size: 12.5px;
-  font-variant-numeric: tabular-nums;
-}
-
-.threads__item:target {
-  color: var(--text);
+.tracks__entry-label {
+  margin: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .side__tags {
@@ -2034,6 +1963,198 @@ a {
 .report-link--head {
   font-size: 11.5px;
   opacity: 1;
+}
+
+/* Dymek zgłoszenia i podziękowanie leżą poza dokumentem, więc nic się nie przesuwa. */
+.report-bubble {
+  position: absolute;
+  z-index: 60;
+  width: 300px;
+  max-width: calc(100vw - 16px);
+  padding: 14px 14px 11px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-raised);
+  box-shadow: 0 2px 6px rgba(20, 30, 35, 0.08), 0 18px 40px rgba(20, 30, 35, 0.18);
+  color: var(--text);
+  animation: report-pop 160ms cubic-bezier(0.2, 0.9, 0.3, 1.15) both;
+}
+
+.report-bubble[hidden] {
+  display: none;
+}
+
+@keyframes report-pop {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.98);
+  }
+}
+
+.report-bubble__eyebrow {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.report-bubble__target {
+  margin: 2px 0 10px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.report-bubble__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.report-chip {
+  padding: 5px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: color 120ms ease, border-color 120ms ease, background-color 120ms ease;
+}
+
+.report-chip:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.report-chip[aria-pressed='true'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.report-chip:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.report-bubble__text {
+  display: block;
+  width: 100%;
+  min-height: 58px;
+  margin-top: 10px;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.45;
+  resize: vertical;
+}
+
+.report-bubble__text:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+  border-color: transparent;
+}
+
+.report-bubble__status {
+  min-height: 15px;
+  margin: 7px 0 0;
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.report-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 96px;
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: calc(100vw - 24px);
+  padding: 10px 10px 10px 14px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--surface);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.32);
+  opacity: 0;
+  transform: translateY(8px) scale(0.98);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.report-toast[hidden] {
+  display: none;
+}
+
+.report-toast.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.report-toast__icon {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  color: var(--accent);
+}
+
+.report-toast__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.report-toast__close {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.report-toast__close:hover,
+.report-toast__close:focus-visible {
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .report-bubble {
+    width: 320px;
+  }
+
+  /* Poniżej 16 px Safari na telefonie powiększa stronę przy wejściu w pole tekstowe. */
+  .report-bubble__text {
+    font-size: 16px;
+  }
+
+  .report-toast {
+    right: 12px;
+    left: 12px;
+    bottom: 12px;
+    border-radius: 14px;
+  }
 }
 
 .tag-deeplink {

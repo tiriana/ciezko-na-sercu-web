@@ -177,8 +177,9 @@ const fragmentId = (text: string) => {
   return id;
 };
 
-// Grupa wejść to jeden fragment, więc identyfikator dostaje pierwszy wątek, a każdy
-// wątek zachowuje kotwicę po swoim dawnym id — stare linki `?f=` nadal trafiają w wiersz.
+// Grupa wejść to jeden fragment, więc wiersz dostaje identyfikator pierwszego wątku.
+// Pozostałe wątki nie są już pokazywane, ale ich identyfikatory nadal rezerwujemy,
+// żeby widoczne fragmenty nie zmieniły adresów.
 const groupIds = new Map<GroupBlock, string[]>();
 for (const block of blocks) {
   if (block.kind === 'group') groupIds.set(block, block.topics.map((topic) => fragmentId(topic.label)));
@@ -334,9 +335,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                           </div>
                           <div>
                             {block.track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}
-                            <ReportLink
-                              element={`${entry.slug}|utwór:${block.index}|${[block.track.artist, block.track.title].filter(Boolean).join(' — ')}`}
-                            />
                           </div>
                           {block.end > block.start && <FragmentProgress />}
                         </td>
@@ -367,25 +365,10 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         </td>
                         <td>
                           <div class="tracks__kind">Wejście · {pluralThreads(block.topics.length)}</div>
-                          <details class="threads">
-                            <summary class="threads__summary">
-                              <span class="threads__label">{block.topics[0].label}</span>
-                              <span class="threads__count">+{block.topics.length - 1}</span>
-                            </summary>
-                            <ol class="threads__list">
-                              {/* Pierwszy wątek jest etykietą wiersza, więc w rozwinięciu
-                                  zostają tylko pozostałe — inaczej ta sama treść stoi dwa razy. */}
-                              {block.topics.slice(1).map((topic, index) => (
-                                <li class="threads__item" id={`frag-${groupIds.get(block)?.[index + 1]}`}>
-                                  <span class="threads__time">{formatClock(topic.start)}</span>
-                                  <span class="threads__text">
-                                    {topic.label}
-                                    <ReportLink element={`${entry.slug}|wejście:${topic.start}|${topic.label}`} />
-                                  </span>
-                                </li>
-                              ))}
-                            </ol>
-                          </details>
+                          {/* Kolejne wejścia pod rząd dają jeden wiersz z tytułem pierwszego:
+                              pełna lista zajmowała więcej miejsca niż wnosiła. Pełny tytuł
+                              zostaje w `title`, więc nadal jest dostępny z klawiatury i myszą. */}
+                          <div class="tracks__entry-label" title={block.topics[0].label}>{block.topics[0].label}</div>
                           {block.end > block.start && <FragmentProgress />}
                         </td>
                         <td class="tracks__album">—</td>
@@ -417,7 +400,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                           <div class="tracks__kind">Wejście</div>
                           <div>
                             {block.label}
-                            <ReportLink element={`${entry.slug}|wejście:${block.start}|${block.label}`} />
                           </div>
                           {block.end > block.start && <FragmentProgress />}
                         </td>
@@ -478,7 +460,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                     )}
                     <p>
                       {quote.text}
-                      <ReportLink element={`${entry.slug}|cytat:${quote.start}`} />
                     </p>
                   </li>
                 ))}
@@ -490,7 +471,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         <aside class="side">
           {episode.summary && (
             <section class="card" aria-labelledby="summary-title">
-              <h2 id="summary-title">Streszczenie <ReportLink element={`${entry.slug}|streszczenie`} /></h2>
+              <h2 id="summary-title">Streszczenie</h2>
               <p>{episode.summary}</p>
               <div class="note">Streszczenie wygenerowane przez AI.</div>
             </section>
@@ -498,7 +479,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
 
           {episode.credits.length > 0 && (
             <section class="card" aria-labelledby="credits-title">
-              <h2 id="credits-title">Credits <ReportLink element={`${entry.slug}|credits`} /></h2>
+              <h2 id="credits-title">Credits</h2>
               <dl class="kv">
                 {creditRows.map((row) => (
                   <div>
