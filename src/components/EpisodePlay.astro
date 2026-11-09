@@ -1,0 +1,34 @@
+---
+/**
+ * Przycisk odtwarzania całej audycji. Ten sam komponent stoi w liście odcinków
+ * (mały) i przy tytule na stronie odcinka (duży) — różni je tylko klasa.
+ * Źródło i tytuł jadą w atrybutach, bo lista nie ma `<script id="audio-data">`.
+ */
+import TrackPlayIcon from './TrackPlayIcon.astro';
+
+interface Props {
+  src: string;
+  slug: string;
+  title: string;
+  label?: string;
+  class?: string;
+}
+
+const { src, slug, title, label = 'Odtwórz audycję', class: className } = Astro.props;
+const stopLabel = 'Zatrzymaj audycję';
+---
+
+<button
+  class:list={['ep-play', className]}
+  type="button"
+  data-episode-play
+  data-audio-src={src}
+  data-audio-slug={slug}
+  data-audio-title={title}
+  data-label={label}
+  data-stop-label={stopLabel}
+  aria-label={label}
+  aria-pressed="false"
+>
+  <TrackPlayIcon />
+</button>
