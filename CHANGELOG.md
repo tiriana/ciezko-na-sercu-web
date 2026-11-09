@@ -1,3 +1,9 @@
+## [1.22.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.22.1...v1.22.2) (2026-11-09)
+
+### Bug Fixes
+
+* **edytor:** etykieta znacznika w polu wielowierszowym ([dbbfe9c](https://github.com/tiriana/ciezko-na-sercu-web/commit/dbbfe9c93614bb543922179d43ba884fee2bfbdb))
+
 ## [1.22.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.22.0...v1.22.1) (2026-11-09)
 
 ### Bug Fixes
