@@ -1,3 +1,9 @@
+## [1.27.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.27.0...v1.27.1) (2026-11-09)
+
+### Bug Fixes
+
+* **edytor:** licz długość do następnego znacznika ([68a4ff7](https://github.com/tiriana/ciezko-na-sercu-web/commit/68a4ff708d44ae74148de035c3c1f932217d6524))
+
 ## [1.27.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.26.0...v1.27.0) (2026-11-09)
 
 ### Features
