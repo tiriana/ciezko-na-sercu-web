@@ -10,6 +10,8 @@ import { execFile } from 'node:child_process';
 import { appendFileSync, readFileSync } from 'node:fs';
 import { promisify } from 'node:util';
 
+import { frozenEpisodes } from './frozen.mjs';
+
 const run = promisify(execFile);
 
 const CHUNK_SEC = 2700;
@@ -67,9 +69,12 @@ if (wanted.length > 0) {
   });
 }
 if (wanted.length === 0 && !force) {
+  const frozen = frozenEpisodes();
   const done = episodes.filter(isDone).length;
-  episodes = episodes.filter((episode) => !isDone(episode));
+  const skippedFrozen = episodes.filter((episode) => frozen.has(episode.id)).length;
+  episodes = episodes.filter((episode) => !isDone(episode) && !frozen.has(episode.id));
   console.log(`pominięto ${done} odcinków już zrobionych tymi parametrami`);
+  console.log(`pominięto ${skippedFrozen} odcinków z oznaczeniami „ok”`);
 }
 if (limit > 0) episodes = episodes.slice(0, limit);
 

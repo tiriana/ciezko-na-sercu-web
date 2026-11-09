@@ -12,19 +12,27 @@ Strona nie publikuje dźwięku ani treści audycji. Indeksuje odcinki i linkuje 
 
 ## Przepływ
 
-1. `detect-episode.yml` — w środę o 02:00 czasu polskiego (dwa crony UTC plus strażnik
-   strefy, więc działa i w CET, i w CEST) pobiera listę odcinków ze strony audycji
-   i porównuje ją z `data/catalog.json`. Brak nowego wpisu kończy przebieg.
+1. `detect-episode.yml` — w środę od 00:05 do 02:00 czasu polskiego (crony UTC na
+   wtorkowy wieczór i środowy ranek plus strażnik strefy, więc działa i w CET, i w CEST)
+   co 10 minut pobiera listę odcinków ze strony audycji i porównuje ją z `data/catalog.json`.
+   Brak nowego wpisu albo jeszcze nieudostępniony plik audio kończy przebieg sukcesem —
+   kolejne sondowanie za 10 minut ponowi próbę.
 2. `refresh-catalog.yml` — gdy wykrycie znajdzie odcinek spoza katalogu (albo ręcznie):
    `scripts/fetch-episodes.mjs` czyta paginację serwisu, `scripts/build-catalog.mjs` liczy
-   katalog, commit trafia do `main`, deploy publikuje wpis bez opracowania, a
-   `transcribe-daily.yml` zamawia transkrypcję.
+   katalog, `scripts/stub-episodes.mjs` zakłada puste opracowanie, commit trafia do `main`,
+   deploy publikuje wpis bez tracklisty, a `transcribe-daily.yml` zamawia transkrypcję.
 3. `transcribe.yml` — whisper.cpp czyta audio prosto z adresu w Polskim Radiu
    (`ffmpeg -i <url>`, kawałki 45-minutowe), składa części, przelicza czasy tematów
    i publikuje stronę ponownie. Plik audio nie trafia na dysk runnera ani do artefaktów.
+   Pomija odcinki z choć jednym znacznikiem „ok” przy wyborze z kolejki (ręczne
+   wskazanie odcinka albo `force` to obchodzi).
 4. Opracowanie odcinka leży w `data/episodes/<uuid>.json`; build czyta wyłącznie `data/`.
 5. Zmiana formatu strony audycji nie wyłącza wykrywania po cichu: przebieg kończy się
    błędem i otwiera (albo komentuje) issue „Środowe wykrycie odcinka nie działa”.
+
+Środowa ścieżka jest w pełni automatyczna: sondowanie co 10 minut → katalog, zaślepka
+opracowania i deploy wpisu → transkrypcja i rozpoznanie utworów → drugi deploy
+z uzupełnionym programem. Streszczenie AI doda się osobno, gdy pipeline dostanie model.
 
 ## Uruchomienie
 

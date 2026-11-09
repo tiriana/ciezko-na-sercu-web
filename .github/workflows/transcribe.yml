@@ -191,6 +191,8 @@ jobs:
           git push
 
       # Push z GITHUB_TOKEN nie uruchamia workflow, więc deploy zamawiamy ręcznie.
+      # Krok commita kończy się „Brak zmian.”, gdy nic się nie zmieniło, ale deploy
+      # i tak idzie — publikacja jest idempotentna i nie może wywalić przebiegu.
       - name: Deploy po aktualizacji danych
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

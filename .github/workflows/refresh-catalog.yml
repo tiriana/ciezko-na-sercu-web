@@ -42,6 +42,11 @@ jobs:
       - name: Przelicz katalog
         run: node scripts/build-catalog.mjs .cache/episodes.json data/catalog.json
 
+      # Wpis ma się pojawić od razu, a tracklista dojdzie po transkrypcji — dlatego
+      # każdy odcinek bez pliku opracowania dostaje zaślepkę z pustym programem.
+      - name: Utwórz zaślepki opracowań
+        run: node scripts/stub-episodes.mjs
+
       - name: Zainstaluj zależności
         run: npm ci
 
@@ -51,13 +56,14 @@ jobs:
       - name: Zapisz zmiany
         id: commit
         run: |
-          if git diff --quiet -- data/catalog.json; then
+          if git diff --quiet -- data/catalog.json data/episodes \
+            && [ -z "$(git ls-files --others --exclude-standard data/episodes)" ]; then
             echo "Katalog bez zmian"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/catalog.json
+          git add data/catalog.json data/episodes
           git commit -m "Katalog odcinków: odświeżenie ze strony audycji ($(date -u +%Y-%m-%d))"
           # main żyje własnym życiem (wydania, transkrypcje), więc przed push-em
           # dopasowujemy się do zdalnego, a przy wyścigu próbujemy jeszcze raz.
