@@ -71,3 +71,78 @@ jobs:
           # na https://develop.<projekt>.pages.dev, feat/** — podglądy.
           npx --yes wrangler@$WRANGLER_VERSION pages deploy dist \
             --project-name "$CF_PROJECT" --branch="$GITHUB_REF_NAME" --commit-dirty=true
+
+      - name: Test dymny po publikacji
+        # Tylko produkcja: develop ma własny adres (develop.<projekt>.pages.dev) i własną
+        # wersję, więc porównywanie stopki z package.json na tej gałęzi nie ma sensu.
+        if: github.ref == 'refs/heads/main'
+        env:
+          BASE_URL: https://ciezko-na-sercu.pages.dev
+          # Najstarszy odcinek w katalogu — stabilny adres, nie zniknie przy edycji listy.
+          EPISODE_PATH: /odcinki/2024-05-01-ciezko-na-sercu-1-maja-godz-0005/
+        run: |
+          set -uo pipefail
+          expected=$(node -p "require('./package.json').version")
+          body=$(mktemp)
+          echo "Oczekiwana wersja: $expected"
+
+          for attempt in $(seq 1 18); do
+            problems=""
+
+            home_code=$(curl -sS --max-time 20 -o "$body" -w '%{http_code}' "$BASE_URL/" || echo 000)
+            if [ "$home_code" != 200 ]; then
+              problems="$problems strona główna: HTTP $home_code."
+            else
+              grep -qF ">$expected</a>" "$body" \
+                || problems="$problems w stopce brak wersji $expected."
+              asset=$(grep -o '/_astro/[^"]*' "$body" | head -1)
+              if [ -z "$asset" ]; then
+                problems="$problems strona główna nie wskazuje pliku /_astro/."
+              else
+                asset_code=$(curl -sS --max-time 20 -o /dev/null -w '%{http_code}' "$BASE_URL$asset" || echo 000)
+                [ "$asset_code" = 200 ] || problems="$problems $asset: HTTP $asset_code."
+              fi
+            fi
+
+            episode_code=$(curl -sS --max-time 20 -o /dev/null -w '%{http_code}' "$BASE_URL$EPISODE_PATH" || echo 000)
+            [ "$episode_code" = 200 ] || problems="$problems $EPISODE_PATH: HTTP $episode_code."
+
+            if [ -z "$problems" ]; then
+              echo "Produkcja odpowiada i pokazuje wersję $expected (próba $attempt)."
+              rm -f "$body"
+              exit 0
+            fi
+            if [ "$attempt" = 18 ]; then
+              echo "::error::Produkcja nie przeszła testu dymnego po 3 minutach:$problems"
+              rm -f "$body"
+              exit 1
+            fi
+            echo "Próba $attempt/18 — czekam 10 s:$problems"
+            sleep 10
+          done
+
+  alert:
+    # Nieudany deploy zostawia produkcję na starym albo mieszanym buildzie — musi być głośno.
+    needs: deploy
+    if: failure()
+    runs-on: ubuntu-26.04
+    permissions:
+      issues: write
+    steps:
+      - name: Zgłoś nieudane wdrożenie
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          COMMIT: ${{ github.sha }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          title='Wdrożenie na produkcję nie działa'
+          body="Przebieg z $(date -u +%Y-%m-%dT%H:%MZ) dla commita [$COMMIT](${{ github.server_url }}/${{ github.repository }}/commit/$COMMIT) na gałęzi \`$BRANCH\` zakończył się błędem: $RUN_URL"
+          number=$(gh issue list --state open --limit 100 --json number,title \
+            --jq ".[] | select(.title == \"$title\") | .number" | head -1)
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi

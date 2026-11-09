@@ -99,7 +99,9 @@ Workflow:
 
 1. `deploy.yml` — build i `wrangler pages deploy`; wymaga sekretu `CLOUDFLARE_PAGES_TOKEN`
    (uprawnienie Account → Cloudflare Pages → Edit) i zmiennej `CLOUDFLARE_ACCOUNT_ID`
-   (przy jej braku numer konta jest pobierany z API).
+   (przy jej braku numer konta jest pobierany z API). Po publikacji na `main` test dymny
+   sprawdza stronę główną, wersję w stopce, stronę odcinka i plik `/_astro/`; nieudany
+   przebieg otwiera (albo komentuje) issue „Wdrożenie na produkcję nie działa”.
 2. `detect-episode.yml` — środowe wykrycie nowego odcinka; `workflow_dispatch`
    z „Symuluj nowy odcinek” przechodzi całą ścieżkę bez czekania na publikację
    (transkrypcji wtedy nie zamawia).
@@ -108,6 +110,9 @@ Workflow:
    jednej zaległości dziennie.
 5. `release.yml` — wersja i changelog z typów commitów.
 6. `screenshots.yml` — zrzuty strony odcinka na trzech systemach i trzech silnikach.
+7. `rollback.yml` — cofnięcie produkcji do wskazanego wdrożenia Cloudflare
+   (`workflow_dispatch` z id wdrożenia); po cofnięciu ten sam test dymny i wersja
+   odczytana ze stopki w podsumowaniu.
 
 ## Dokumentacja
 
