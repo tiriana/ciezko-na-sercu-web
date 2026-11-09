@@ -1,3 +1,9 @@
+## [1.27.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.26.0...v1.27.0) (2026-11-09)
+
+### Features
+
+* **data:** utwory bez rozpoznania mają tytuł zastępczy i flagę ([0f8075d](https://github.com/tiriana/ciezko-na-sercu-web/commit/0f8075d920e95868dcd786de3aa95412620671ab)), closes [#TODO](https://github.com/tiriana/ciezko-na-sercu-web/issues/TODO)
+
 ## [1.26.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.25.0...v1.26.0) (2026-11-09)
 
 ### Features
