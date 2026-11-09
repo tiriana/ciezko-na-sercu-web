@@ -374,8 +374,15 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                           <div class="tracks__artist">
                             {block.track.artist ?? <span class="tracks__album">wykonawca nierozpoznany</span>}
                           </div>
-                          <div>
+                          <div class:list={['tracks__title-line', block.track.unrecognized && 'tracks__title-line--unrecognized']}>
+                            <span class:list={['tracks__title-text', block.track.unrecognized && 'tracks__title-text--unrecognized']}>
                             {block.track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}
+                            </span>
+                            {block.track.unrecognized && (
+                              <span class="tracks__unrecognized" title="Nie udało się rozpoznać utworu — tylko wykonawca">
+                                nierozpoznana
+                              </span>
+                            )}
                             <ReportLink
                               element={`${entry.slug}|utwór:${block.index}|${[block.track.artist, block.track.title].filter(Boolean).join(' — ')}`}
                               class="report-link--row"
