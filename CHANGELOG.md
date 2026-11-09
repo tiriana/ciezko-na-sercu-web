@@ -1,3 +1,11 @@
+## [1.22.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.21.0...v1.22.0) (2026-11-09)
+
+### Features
+
+* **edytor:** wtopienie znacznika w poprzedni z tego samego rodzaju ([25efed0](https://github.com/tiriana/ciezko-na-sercu-web/commit/25efed0d536eb03b12b32826146da032b5f2bcf5))
+* znaczniki utworów i wejść na szynie odtwarzacza ([03f11e0](https://github.com/tiriana/ciezko-na-sercu-web/commit/03f11e02ecc48decbee84086c1cfc408648f66bb))
+* znaczniki utworów i wejść na szynie odtwarzacza ([2eb0205](https://github.com/tiriana/ciezko-na-sercu-web/commit/2eb020510287f79737c3e4602c454448b8b86623))
+
 ## [1.21.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.20.0...v1.21.0) (2026-11-09)
 
 ### Features
