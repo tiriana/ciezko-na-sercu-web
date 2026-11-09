@@ -12,6 +12,7 @@
         --text: #1c1a18;
         --muted: #6b635b;
         --accent: #c8102e;
+        --ok: #1f7a4a;
       }
       * { box-sizing: border-box; }
       body {
@@ -119,6 +120,7 @@
       table { width: 100%; border-collapse: collapse; margin-top: 8px; background: var(--surface); }
       th, td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle; }
       th { color: var(--muted); font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+      tbody tr.is-selected { background: #e9f5ee; box-shadow: inset 3px 0 var(--ok); }
       td input[type="text"] { width: 100%; border: 1px solid transparent; background: none; padding: 3px 4px; font: inherit; border-radius: 4px; }
       td input[type="text"]:focus { border-color: var(--accent); outline: none; background: #fff; }
       td input[type="number"] { width: 84px; padding: 3px 5px; border: 1px solid var(--line); border-radius: 4px; font: inherit; font-variant-numeric: tabular-nums; }
@@ -604,17 +606,20 @@
         pointer-events: auto;
         opacity: 0.85;
       }
-      .wave-marker:hover, .wave-marker:focus { opacity: 1; }
+      .wave-marker:hover, .wave-marker:focus,
+      .wave-marker.is-selected { opacity: 1; }
       /* Grubsza kreska rozróżnia ten spod palca, gdy dwie kropki leżą w tym samym pikselu. */
       .wave-marker:hover .wave-marker-line,
-      .wave-marker:focus .wave-marker-line { width: 2px; margin-left: -1px; }
+      .wave-marker:focus .wave-marker-line,
+      .wave-marker.is-selected .wave-marker-line { width: 2px; margin-left: -1px; }
       .wave-marker.is-topic { color: #1f6f6b; }
       /* Nakładające się znaczniki leżą jeden na drugim; o tym, który jest wyżej,
          decyduje kolejność warstw, a najechanie i fokus zawsze wyciągają swój. */
       .wave-marker { z-index: 2; }
       .wave-marker.is-topic { z-index: 1; }
       .wave-marker.is-reviewed { z-index: 3; }
-      .wave-marker:hover, .wave-marker:focus { z-index: 5; }
+      .wave-marker:hover, .wave-marker:focus,
+      .wave-marker.is-selected { z-index: 5; }
       .wave-marker-line {
         position: absolute;
         top: 0;
@@ -661,6 +666,7 @@
       .wave-marker.is-reviewed .wave-marker-line { opacity: 0.55; }
       .wave-marker:focus { outline: none; }
       .wave-marker:focus .wave-marker-dot { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent); }
+      .wave-marker.is-selected .wave-marker-dot { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--ok); }
       .wave-marker.is-dragging { opacity: 1; }
       .wave-marker.is-dragging .wave-marker-line { width: 2px; margin-left: -1px; }
       .wave-playhead {
@@ -1676,6 +1682,7 @@
         body.textContent = '';
         state.tracks.forEach((track, index) => {
           const tr = document.createElement('tr');
+          tr.dataset.markerObjectKey = String(objectKey(track));
 
           const artist = document.createElement('td');
           const artistInput = document.createElement('input');
@@ -1751,6 +1758,7 @@
         body.textContent = '';
         state.topics.forEach((topic, index) => {
           const tr = document.createElement('tr');
+          tr.dataset.markerObjectKey = String(objectKey(topic));
 
           const label = document.createElement('td');
           const labelInput = document.createElement('input');
@@ -1803,6 +1811,7 @@
           .sort((left, right) => Number(left.track.start) - Number(right.track.start))
           .forEach(({ track, index }) => {
           const tr = document.createElement('tr');
+          tr.dataset.markerObjectKey = String(objectKey(track));
           const cells = [
             ['artist', 'text', ''],
             ['title', 'text', ''],
@@ -1846,6 +1855,7 @@
         topicBody.textContent = '';
         state.addTopics.forEach((topic, index) => {
           const tr = document.createElement('tr');
+          tr.dataset.markerObjectKey = String(objectKey(topic));
           const labelCell = document.createElement('td');
           const labelInput = document.createElement('input');
           labelInput.type = 'text';
@@ -2027,6 +2037,8 @@
         await openEpisode(id);
       };
 
+      let pendingAutoSelection = null;
+
       const seek = (seconds) => {
         const audio = $('audio');
         if (!Number.isFinite(seconds)) return;
@@ -2035,9 +2047,11 @@
         audio.play();
       };
 
-      const openEpisode = async (id) => {
+      const openEpisode = async (id, { deferAutoSelection = false } = {}) => {
         cancelAutoSave();
+        pendingAutoSelection = null;
         pendingDraft = null;
+        clearMarkerSelection();
         $('draft-offer').hidden = true;
         currentOutbox = null;
         outboxMessage = '';
@@ -2056,7 +2070,6 @@
         }
         state.episode = data;
         reviewed = new Set();
-        loadReviewed(data.id);
         undoStack.length = 0;
         editBurst.key = null;
         wave.undoTaken = false;
@@ -2089,7 +2102,14 @@
         renderRestore();
         await loadOutboxForEpisode(data);
         renderList();
-        openWave(data.id);
+        const reviewedReady = loadReviewed(data.id);
+        const waveReady = openWave(data.id);
+        pendingAutoSelection = async () => {
+          const [loaded] = await Promise.all([reviewedReady, waveReady]);
+          if (!loaded || state.episode?.id !== data.id || wave.id !== data.id || !wave.peaks) return;
+          selectFirstUnreviewed();
+        };
+        if (!deferAutoSelection) void pendingAutoSelection();
         offerDraft(data.id);
         // Panel głośności zmienił wysokość, więc sidebar dostaje nowy limit od razu.
         syncChrome();
@@ -2331,18 +2351,21 @@
         if (REVIEWED_BY_EPISODE.has(id)) {
           reviewed = REVIEWED_BY_EPISODE.get(id);
           buildMarkers();
-          return;
+          return true;
         }
         const token = (reviewedRequest += 1);
         try {
           const response = await fetch(`/api/reviewed?id=${encodeURIComponent(id)}`);
-          if (!response.ok) return;
+          if (!response.ok) return false;
           const data = await response.json();
-          if (token !== reviewedRequest || state.episode?.id !== id) return;
+          if (token !== reviewedRequest || state.episode?.id !== id) return false;
           reviewed = new Set(Object.keys(data.reviewed ?? {}));
           REVIEWED_BY_EPISODE.set(id, reviewed);
           buildMarkers();
-        } catch {}
+          return true;
+        } catch {
+          return false;
+        }
       };
 
       const persistReviewed = (key, value) => {
@@ -2393,7 +2416,51 @@
       };
 
       const markerNodes = new Map();
+      let selectedMarkerKey = null;
+      let selectedObjectKey = null;
       const MIN_FRAGMENT = 5;
+
+      const markerHint = (marker) => `${marker.name} — przeciągnij albo ←/→; Del usuwa; Shift+Enter = ok`;
+
+      const syncMarkerSelection = () => {
+        for (const [key, entry] of markerNodes) {
+          const selected = key === selectedMarkerKey;
+          entry.node.classList.toggle('is-selected', selected);
+          if (selected) entry.node.title = `${entry.marker.name}, ${fmtPrecise(entry.marker.time)} — przeciągnij albo ←/→; Del usuwa; Shift+Enter = ok`;
+          else entry.node.title = markerHint(entry.marker);
+        }
+        for (const row of document.querySelectorAll('tr.is-selected[data-marker-object-key]')) row.classList.remove('is-selected');
+        if (!selectedMarkerKey) return;
+        const row = document.querySelector(`tr[data-marker-object-key="${selectedObjectKey}"]`);
+        row?.classList.add('is-selected');
+      };
+
+      const clearMarkerSelection = () => {
+        selectedMarkerKey = null;
+        selectedObjectKey = null;
+        syncMarkerSelection();
+      };
+
+      const selectMarker = (marker) => {
+        if (!marker || !wave.peaks || !(wave.span > 0)) return;
+        selectedMarkerKey = marker.key;
+        selectedObjectKey = objectKey(marker.object);
+        setWindow(marker.time - wave.span / 2, wave.span);
+        syncMarkerSelection();
+        document
+          .querySelector(`tr[data-marker-object-key="${selectedObjectKey}"]`)
+          ?.scrollIntoView({ block: 'nearest', behavior: 'instant' });
+      };
+
+      const selectFirstUnreviewed = () => {
+        const markers = collectMarkers().sort((left, right) => left.time - right.time);
+        const next =
+          markers.find((marker) => marker.kind === 'start' && !marker.reviewed) ??
+          markers.find((marker) => marker.kind === 'topic' && !marker.reviewed) ??
+          null;
+        if (next) selectMarker(next);
+        else clearMarkerSelection();
+      };
 
       // Granice przesuwania początku: nie wchodzimy w poprzednika i nie przeskakujemy
       // następnego początku, bo to on wyznacza koniec tego fragmentu.
@@ -3333,13 +3400,19 @@
             Object.assign(entry.marker, marker);
             entry.node.classList.toggle('is-reviewed', Boolean(marker.reviewed));
             entry.node.setAttribute('aria-pressed', String(Boolean(marker.reviewed)));
+            entry.node.dataset.markerTime = String(marker.time);
+            entry.node.dataset.reviewKey = marker.reviewKey ?? '';
+            entry.node.dataset.markerObjectKey = String(objectKey(marker.object));
             continue;
           }
           const node = document.createElement('button');
           node.type = 'button';
           node.className = `wave-marker is-${marker.kind}${marker.reviewed ? ' is-reviewed' : ''}`;
           node.dataset.markerKey = marker.key;
-          node.title = `${marker.name} — przeciągnij albo ←/→; Del usuwa; Shift+Enter = ok`;
+          node.dataset.markerTime = String(marker.time);
+          node.dataset.reviewKey = marker.reviewKey ?? '';
+          node.dataset.markerObjectKey = String(objectKey(marker.object));
+          node.title = markerHint(marker);
           node.setAttribute('aria-pressed', String(Boolean(marker.reviewed)));
           const line = document.createElement('span');
           line.className = 'wave-marker-line';
@@ -3356,6 +3429,8 @@
           markerNodes.delete(key);
         }
         positionMarkers();
+        if (selectedMarkerKey && !markerNodes.has(selectedMarkerKey)) clearMarkerSelection();
+        else syncMarkerSelection();
         updateNav();
         updateCounts();
         if (focusedKey) {
@@ -3959,7 +4034,7 @@
         if (Number.isFinite(saved.start) && saved.span > 0) {
           wave.restoreWindow = { start: saved.start, span: saved.span };
         }
-        await openEpisode(saved.id);
+        await openEpisode(saved.id, { deferAutoSelection: true });
         const audio = $('audio');
         if (Number.isFinite(saved.time) && saved.time > 0) {
           audio.currentTime = saved.time;
@@ -3979,7 +4054,12 @@
           renderList();
         }
         window.scrollTo(0, saved.scrollY ?? 0);
-        requestAnimationFrame(() => window.scrollTo(0, saved.scrollY ?? 0));
+        await new Promise((resolve) => requestAnimationFrame(() => {
+          window.scrollTo(0, saved.scrollY ?? 0);
+          resolve();
+        }));
+        await pendingAutoSelection?.();
+        pendingAutoSelection = null;
       };
 
       const reloadPrompt = $('reload-prompt');
