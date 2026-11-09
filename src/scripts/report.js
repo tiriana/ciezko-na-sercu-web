@@ -59,12 +59,12 @@ const renderChips = (bubble, element) => {
   );
 };
 
-const HORNS = `<svg class="report-toast__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-  <path d="M6.2 13.4h11.2a2.6 2.6 0 0 1 2.6 2.6v3a2.5 2.5 0 0 1-2.5 2.5H6.5A2.5 2.5 0 0 1 4 19v-3a2.6 2.6 0 0 1 2.2-2.6Z"/>
-  <path d="M6.6 13.4V2.9a1.6 1.6 0 0 1 3.2 0v10.5"/>
-  <path d="M13.8 13.4V4.3a1.6 1.6 0 0 1 3.2 0v9.1"/>
-  <path d="M10 13.4v-2.2a1.9 1.9 0 0 1 3.8 0v2.2"/>
-  <path d="M5 16.1h4.4"/>
+const HORNS = `<svg class="report-toast__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+  <rect x="5" y="13.4" width="14" height="7.9" rx="2.5"/>
+  <rect x="6.2" y="2.6" width="3.6" height="10.8" rx="1.8"/>
+  <rect x="14.2" y="5.2" width="3.6" height="8.2" rx="1.8"/>
+  <rect x="10.2" y="10.2" width="3.6" height="3.2" rx="1.6"/>
+  <rect x="3.2" y="13.8" width="4.6" height="3" rx="1.5" transform="rotate(-18 5.5 15.3)"/>
 </svg>`;
 
 const uuid = () =>
