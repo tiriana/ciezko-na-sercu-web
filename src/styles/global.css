@@ -2498,10 +2498,23 @@ main {
 }
 
 .audio-bar__time {
+  /* Licznik zmienia treść („0:00” → „1:54:16”), więc trzymamy dla niego miejsce na
+     najdłuższą realną wartość, czyli „1:59:59”. Bez tego oś postępu zwężała się
+     i poszerzała przy każdym tyknięciu. */
   flex: 0 0 auto;
+  width: 6.5ch;
   color: var(--muted);
   font-size: 12px;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.audio-bar__time:first-child {
+  text-align: right;
+}
+
+.audio-bar__time:last-child {
+  text-align: left;
 }
 
 .audio-bar__progress {
