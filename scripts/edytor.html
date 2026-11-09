@@ -1016,6 +1016,28 @@
         hiddenTopics: [],
       };
       const $ = (id) => document.getElementById(id);
+      const closeOnViewportScroll = (close) => {
+        let left = window.scrollX;
+        let top = window.scrollY;
+        window.addEventListener('scroll', () => {
+          const nextLeft = window.scrollX;
+          const nextTop = window.scrollY;
+          if (nextLeft === left && nextTop === top) return;
+          left = nextLeft;
+          top = nextTop;
+          close();
+        }, { passive: true });
+      };
+      const closeOnViewportResize = (close) => {
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        window.addEventListener('resize', () => {
+          if (window.innerWidth === width && window.innerHeight === height) return;
+          width = window.innerWidth;
+          height = window.innerHeight;
+          close();
+        });
+      };
       const fieldInputs = new WeakMap();
       const topicBase = new WeakMap();
 
@@ -1775,9 +1797,10 @@
           const duration = document.createElement('td');
           const durationInput = document.createElement('input');
           durationInput.type = 'number';
-          durationInput.value = String(track.durationSec ?? 0);
+          durationInput.value = String(fragmentLength(track, true) ?? track.durationSec ?? 0);
           durationInput.addEventListener('input', () => editField(track, 'durationSec', () => {
             track.durationSec = Number(durationInput.value);
+            track.end = undefined;
             waveSync();
           }));
           duration.append(durationInput);
@@ -1797,6 +1820,7 @@
           tr.append(artist, title, album, start, duration, actions);
           body.append(tr);
         });
+        syncTrackLengths();
         waveSync();
       };
 
@@ -1847,6 +1871,7 @@
           tr.append(label, start, actions);
           body.append(tr);
         });
+        syncTrackLengths();
         waveSync();
       };
 
@@ -1940,6 +1965,7 @@
           tr.append(labelCell, startCell, actions);
           topicBody.append(tr);
         });
+        syncTrackLengths();
         waveSync();
       };
 
@@ -2315,6 +2341,47 @@
         ...state.addTopics.map((object) => ({ object, track: false, start: Number(object.start), end: topicEnd(object) })),
       ];
 
+      const nextFragmentAfter = (object) => {
+        const start = Number(object.start);
+        return fragments()
+          .filter((fragment) => fragment.object !== object && Number.isFinite(fragment.start) && fragment.start > start + 0.001)
+          .sort((left, right) => left.start - right.start)[0] ?? null;
+      };
+
+      const fragmentEnd = (object, track) => {
+        const next = nextFragmentAfter(object);
+        if (next) return next.start;
+        const end = track ? trackEnd(object) : topicEnd(object);
+        return end ?? (wave.duration > Number(object.start) ? wave.duration : null);
+      };
+
+      const fragmentLength = (object, track) => {
+        const end = fragmentEnd(object, track);
+        return end === null ? null : Math.max(0, end - Number(object.start));
+      };
+
+      const formatFragmentLength = (seconds) => (Number.isFinite(seconds) ? fmt(Math.floor(Math.max(0, seconds))) : '—');
+
+      const syncTrackLengths = () => {
+        for (const track of [...state.tracks, ...state.addTracks]) {
+          const input = fieldInputs.get(track)?.duration ?? fieldInputs.get(track)?.durationSec;
+          if (!input) continue;
+          const next = nextFragmentAfter(track);
+          const length = fragmentLength(track, true) ?? 0;
+          if (next) {
+            input.type = 'text';
+            input.readOnly = true;
+            input.title = `Długość wynika z następnego znacznika (${fmtPrecise(next.start)} s). Przesuń go, aby ją zmienić.`;
+            input.value = formatFragmentLength(length);
+          } else {
+            input.type = 'number';
+            input.readOnly = false;
+            input.title = 'Ostatni fragment: można edytować jego długość.';
+            if (document.activeElement !== input) input.value = String(length);
+          }
+        }
+      };
+
       const precedingFragment = (marker, time) => {
         let best = null;
         for (const fragment of fragments()) {
@@ -2472,14 +2539,16 @@
       let selectedObjectKey = null;
       const MIN_FRAGMENT = 5;
 
-      const markerHint = (marker) => `${marker.name} — przeciągnij albo ←/→; Del usuwa; Shift+Enter = ok`;
+      const markerHint = (marker) => {
+        const length = fragmentLength(marker.object, marker.kind === 'start');
+        return `${marker.name}, ${fmtPrecise(marker.time)}; długość ${formatFragmentLength(length)} — przeciągnij albo ←/→; Del usuwa; Shift+Enter = ok`;
+      };
 
       const syncMarkerSelection = () => {
         for (const [key, entry] of markerNodes) {
           const selected = key === selectedMarkerKey;
           entry.node.classList.toggle('is-selected', selected);
-          if (selected) entry.node.title = `${entry.marker.name}, ${fmtPrecise(entry.marker.time)} — przeciągnij albo ←/→; Del usuwa; Shift+Enter = ok`;
-          else entry.node.title = markerHint(entry.marker);
+          entry.node.title = markerHint(entry.marker);
         }
         for (const row of document.querySelectorAll('tr.is-selected[data-marker-object-key]')) row.classList.remove('is-selected');
         if (!selectedMarkerKey) return;
@@ -2553,14 +2622,16 @@
         if (inputs?.start) inputs.start.value = String(next);
         // Koniec poprzedniego fragmentu to ten początek — bez tolerancji i bez przerw.
         if (previous) setFragmentEnd(previous, next);
+        syncTrackLengths();
       };
 
       const placeMarker = (node, marker) => {
         const width = stageEl().clientWidth || 1;
         node.style.left = `${((marker.time - wave.start) / wave.span) * width}px`;
+        node.dataset.markerTime = String(marker.time);
         const label = `${marker.name}, ${fmtPrecise(marker.time)}`;
         node.setAttribute('aria-label', label);
-        node.title = `${label} — przeciągnij albo ←/→ (Alt = 10 ms, Shift = 1 s); Del usuwa; Shift+Enter = ok`;
+        node.title = markerHint(marker);
       };
 
       // Skoki po znacznikach: ‹/› (oraz przecinek i kropka na scenie) tylko przesuwają
@@ -2913,8 +2984,8 @@
       );
 
       // Popover stoi na współrzędnych ekranu, więc zmiana widoku go unieważnia.
-      window.addEventListener('scroll', () => closeLabel(), { passive: true });
-      window.addEventListener('resize', () => closeLabel());
+      closeOnViewportScroll(() => closeLabel());
+      closeOnViewportResize(() => closeLabel());
 
 
       // --- Edycja pól znacznika (menu → „Edytuj…”) ---
@@ -2945,8 +3016,11 @@
 
       const fieldInput = (name) => editFields.querySelector(`[name="${name}"]`);
 
-      const editValueOf = (marker, field) =>
-        field === 'start' ? fmtPreciseNumber(marker.time) : marker.object[field] ?? '';
+      const editValueOf = (marker, field) => {
+        if (field === 'start') return fmtPreciseNumber(marker.time);
+        if (field === 'durationSec' && marker.kind === 'start') return fragmentLength(marker.object, true) ?? '';
+        return marker.object[field] ?? '';
+      };
 
       const fmtPreciseNumber = (seconds) => String(Math.round(Number(seconds) * 100) / 100);
 
@@ -2997,6 +3071,18 @@
           if (type === 'number') {
             input.step = '0.01';
             input.inputMode = 'decimal';
+          }
+          if (field === 'durationSec' && marker.kind === 'start') {
+            const next = nextFragmentAfter(marker.object);
+            if (next) {
+              input.type = 'text';
+              input.readOnly = true;
+              input.value = formatFragmentLength(fragmentLength(marker.object, true));
+              input.title = `Długość wynika z następnego znacznika (${fmtPrecise(next.start)} s). Przesuń go, aby ją zmienić.`;
+            } else {
+              input.dataset.initialValue = input.value;
+              input.title = 'Ostatni fragment: można edytować jego długość.';
+            }
           }
           wrapper.append(caption, input);
           if (NUMERIC_FIELDS.has(field) && defs.filter((entry) => NUMERIC_FIELDS.has(entry[0])).length > 1) {
@@ -3081,12 +3167,15 @@
         values.start = clampNumber(snapSeconds(start), bounds.low, bounds.high);
 
         if (marker.kind === 'start') {
-          const durationRaw = fieldInput('durationSec')?.value ?? '';
-          const duration = Number(durationRaw.replace(',', '.'));
-          if (durationRaw.trim() === '' || !Number.isFinite(duration)) return fail('durationSec', 'Czas musi być liczbą.');
-          if (duration <= 0) return fail('durationSec', 'Czas musi być większy od zera.');
-          if (duration > wave.duration) return fail('durationSec', 'Czas nie mieści się w nagraniu.');
-          values.durationSec = snapSeconds(duration);
+          const durationInput = fieldInput('durationSec');
+          if (durationInput && !durationInput.readOnly && durationInput.value !== durationInput.dataset.initialValue) {
+            const durationRaw = durationInput.value;
+            const duration = Number(durationRaw.replace(',', '.'));
+            if (durationRaw.trim() === '' || !Number.isFinite(duration)) return fail('durationSec', 'Czas musi być liczbą.');
+            if (duration <= 0) return fail('durationSec', 'Czas musi być większy od zera.');
+            if (duration > wave.duration) return fail('durationSec', 'Czas nie mieści się w nagraniu.');
+            values.durationSec = snapSeconds(duration);
+          }
           values.artist = fieldInput('artist').value.trim();
           values.title = fieldInput('title').value.trim();
           values.album = fieldInput('album').value.trim();
@@ -3122,7 +3211,7 @@
           object.artist = values.artist;
           object.title = values.title;
           object.album = values.album;
-          if (object.durationSec !== values.durationSec) {
+          if (values.durationSec !== undefined && object.durationSec !== values.durationSec) {
             object.durationSec = values.durationSec;
             // Ręczne cięcie (`end`) jest starsze niż nowa długość, więc je zdejmujemy.
             object.end = undefined;
@@ -3134,7 +3223,8 @@
         const inputs = fieldInputs.get(object);
         if (inputs) {
           if (inputs.start) inputs.start.value = String(snapSeconds(marker.time));
-          if (inputs.durationSec) inputs.durationSec.value = String(values.durationSec ?? inputs.durationSec.value);
+          if (inputs.durationSec && values.durationSec !== undefined) inputs.durationSec.value = String(values.durationSec);
+          if (inputs.duration && values.durationSec !== undefined) inputs.duration.value = String(values.durationSec);
           if (inputs.artist) inputs.artist.value = object.artist ?? '';
           if (inputs.title) inputs.title.value = object.title ?? '';
           if (inputs.album) inputs.album.value = object.album ?? '';
@@ -3230,8 +3320,8 @@
         true
       );
 
-      window.addEventListener('scroll', () => closeEdit(), { passive: true });
-      window.addEventListener('resize', () => closeEdit());
+      closeOnViewportScroll(() => closeEdit());
+      closeOnViewportResize(() => closeEdit());
 
       const waveMenu = $('wave-menu');
       let menuTime = null;
@@ -3355,8 +3445,8 @@
       );
 
       // Menu wisi na współrzędnych ekranu, więc każdy ruch strony je unieważnia.
-      window.addEventListener('scroll', () => closeMenu(), { passive: true });
-      window.addEventListener('resize', () => closeMenu());
+      closeOnViewportScroll(() => closeMenu());
+      closeOnViewportResize(() => closeMenu());
 
       const bindMarker = (node, marker) => {
         node.addEventListener('pointerdown', (event) => {
@@ -3481,6 +3571,7 @@
           markerNodes.delete(key);
         }
         positionMarkers();
+        syncTrackLengths();
         if (selectedMarkerKey && !markerNodes.has(selectedMarkerKey)) clearMarkerSelection();
         else syncMarkerSelection();
         updateNav();
