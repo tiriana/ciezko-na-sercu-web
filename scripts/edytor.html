@@ -85,6 +85,10 @@
       .list button:hover { background: #f0ece6; }
       .list button[aria-current="true"] { background: #f7e6e9; color: var(--accent); }
       .list button span { display: block; font-size: 12.5px; line-height: 1.25; }
+      .list button .episode-list__title { display: flex; align-items: center; gap: 6px; width: 100%; }
+      .list button .episode-list__title-text { flex: 1 1 auto; min-width: 0; }
+      .episode-progress-slot { display: inline-flex; flex: 0 0 7px; width: 7px; height: 7px; }
+      .list button .episode-all-ok { display: block; width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
       .list time { display: block; color: var(--muted); font-size: 11px; }
       .main { padding: 16px 20px 60px; }
       .empty { color: var(--muted); }
@@ -1041,6 +1045,37 @@
       };
 
       let episodes = [];
+      let episodeProgress = {};
+      let progressRequest = 0;
+
+      const updateProgressDots = () => {
+        for (const button of document.querySelectorAll('#list button[data-episode-id]')) {
+          const progress = episodeProgress[button.dataset.episodeId];
+          const slot = button.querySelector('.episode-progress-slot');
+          if (!slot) continue;
+          slot.textContent = '';
+          if (!progress || progress.total === 0 || progress.ok !== progress.total) continue;
+          const dot = document.createElement('span');
+          dot.className = 'episode-all-ok';
+          dot.setAttribute('role', 'img');
+          dot.setAttribute('aria-label', 'wszystkie znaczniki oznaczone jako ok');
+          dot.title = 'wszystkie znaczniki oznaczone jako ok';
+          slot.append(dot);
+        }
+      };
+
+      const loadProgress = async () => {
+        const request = ++progressRequest;
+        try {
+          const response = await fetch('/api/progress', { cache: 'no-store' });
+          if (!response.ok) return;
+          const progress = await response.json();
+          if (request !== progressRequest) return;
+          episodeProgress = progress;
+          updateProgressDots();
+        } catch {}
+      };
+
       const renderList = () => {
         const needle = $('filter').value.trim().toLowerCase();
         const list = $('list');
@@ -1053,9 +1088,20 @@
           const li = document.createElement('li');
           const button = document.createElement('button');
           button.type = 'button';
+          button.dataset.episodeId = entry.id;
           button.setAttribute('aria-current', String(state.episode?.id === entry.id));
           button.title = entry.displayTitle;
-          button.innerHTML = `<span>${entry.displayTitle}</span><time>${entry.date}${entry.edited ? ' · poprawki' : ''}</time>`;
+          const title = document.createElement('span');
+          title.className = 'episode-list__title';
+          const titleText = document.createElement('span');
+          titleText.className = 'episode-list__title-text';
+          titleText.textContent = entry.displayTitle;
+          const slot = document.createElement('span');
+          slot.className = 'episode-progress-slot';
+          title.append(titleText, slot);
+          const date = document.createElement('time');
+          date.textContent = `${entry.date}${entry.edited ? ' · poprawki' : ''}`;
+          button.append(title, date);
           button.addEventListener('click', () => {
             // Porzucenie niezapisanych zmian musi być świadome — inaczej jeden klik
             // w listę kasuje robotę bez śladu.
@@ -1065,6 +1111,7 @@
           li.append(button);
           list.append(li);
         }
+        updateProgressDots();
       };
 
       const rowButton = (label, onClick) => {
@@ -2375,6 +2422,9 @@
           method: 'POST',
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({ id, key, reviewed: value }),
+        }).then((response) => {
+          if (!response.ok) throw new Error(`serwer odpowiedział ${response.status}`);
+          void loadProgress();
         }).catch(() => noteStatus('nie zapisano stanu ok'));
       };
 
@@ -2400,6 +2450,8 @@
           method: 'POST',
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({ id, markers }),
+        }).then((response) => {
+          if (response.ok) void loadProgress();
         }).catch(() => {});
       };
 
@@ -3912,8 +3964,15 @@
             setDirty(true);
             setStatus('dirty', 'zapisano starszą wersję — są nowsze zmiany');
           }
-          episodes = episodes.map((item) => (item.id === episode.id ? { ...item, displayTitle: $('title').value.trim() || item.originalTitle } : item));
-          renderList();
+          const listEntry = episodes.find((item) => item.id === episode.id);
+          if (listEntry) {
+            listEntry.displayTitle = $('title').value.trim() || listEntry.originalTitle;
+            const button = [...document.querySelectorAll('#list button[data-episode-id]')].find((item) => item.dataset.episodeId === episode.id);
+            const title = button?.querySelector('.episode-list__title-text');
+            if (title) title.textContent = listEntry.displayTitle;
+            if (button) button.title = listEntry.displayTitle;
+          }
+          void loadProgress();
           return true;
         } catch (error) {
           outboxMessage = 'nie udało się wysłać — spróbuj ponownie';
@@ -4110,6 +4169,7 @@
         const data = await response.json();
         episodes = data.episodes ?? [];
         renderList();
+        await loadProgress();
       };
 
       // Wysokość nagłówka bywa różna (zawija się przy węższym oknie), a sidebar

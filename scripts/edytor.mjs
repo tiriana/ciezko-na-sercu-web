@@ -62,6 +62,14 @@ const writeJson = async (path, value) => {
 
 const normalize = (value) => (value ?? '').normalize('NFC').trim().toLowerCase();
 const same = (left, right) => right === undefined || normalize(left) === normalize(right);
+const reviewKeyOf = (kind, object) => {
+  if (kind === 'topic') {
+    const label = normalize(object.label);
+    return label ? `p:${label}` : `p:${Number(object.start).toFixed(2)}`;
+  }
+  const name = [normalize(object.artist), normalize(object.title)].filter(Boolean).join('|');
+  return name ? `t:${name}` : `t:${Number(object.start).toFixed(2)}`;
+};
 
 const loadCatalog = () => readJson(join(DATA, 'catalog.json'), { episodes: [] });
 const ALIASES_PATH = join(DATA, 'aliases.json');
@@ -276,7 +284,7 @@ heartbeat.unref();
 // To dorobek redakcji, nie cache: leży w `data/`, więc trafia do commita i jedzie
 // z projektem na inną maszynę. Klucze są po etykietach, więc zmiana etykiety
 // osieroca znacznik — świadomy koszt czytelnego pliku.
-const REVIEWED_PATH = join(ROOT, 'data', 'reviewed.json');
+const REVIEWED_PATH = join(DATA, 'reviewed.json');
 let reviewedQueue = Promise.resolve();
 
 const readReviewed = () => readJson(REVIEWED_PATH, { version: 1, episodes: {} });
@@ -600,6 +608,30 @@ const handleRequest = async (req, res) => {
           }))
           .sort((a, b) => (a.date < b.date ? 1 : -1)),
       });
+      return;
+    }
+
+    if (url.pathname === '/api/progress' && req.method === 'GET') {
+      const [catalog, episodes, overrides] = await Promise.all([loadCatalog(), loadEpisodes(), loadOverrides()]);
+      await reviewedQueue;
+      const reviewed = await readReviewed();
+      const progress = {};
+      for (const entry of catalog.episodes) {
+        const override = overrides.get(entry.id) ?? {};
+        const effective = applyOverrides(episodes.get(entry.id), override);
+        const tracks = [...(effective?.tracks ?? []), ...(override.addTracks ?? [])];
+        const topics = [...(effective?.topics ?? []), ...(override.addTopics ?? [])];
+        const markers = [
+          ...tracks.map((track) => ({ kind: 'track', object: track })),
+          ...topics.map((topic) => ({ kind: 'topic', object: topic })),
+        ];
+        const marks = reviewed.episodes?.[entry.id] ?? {};
+        progress[entry.id] = {
+          total: markers.length,
+          ok: markers.filter((marker) => marks[reviewKeyOf(marker.kind, marker.object)] === true).length,
+        };
+      }
+      json(res, 200, progress);
       return;
     }
 
