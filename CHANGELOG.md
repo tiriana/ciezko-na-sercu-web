@@ -1,3 +1,9 @@
+## [1.18.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.18.1...v1.18.2) (2026-11-09)
+
+### Bug Fixes
+
+* zgłoszenia idą do nowego arkusza po zmianie wdrożenia ([881eb5f](https://github.com/tiriana/ciezko-na-sercu-web/commit/881eb5f3e15a12618ae6cc03ae7280af60fa5aa1))
+
 ## [1.18.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.18.0...v1.18.1) (2026-11-09)
 
 ### Bug Fixes
