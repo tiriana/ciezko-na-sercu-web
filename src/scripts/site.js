@@ -520,13 +520,11 @@ const pageMarkerStarts = () => {
   return starts.filter((start, index) => index === 0 || start - starts[index - 1] > 0.05);
 };
 
-/** Próg, poniżej którego skok wygląda jak brak ruchu — wtedy cofamy do kolejnego znacznika. */
-const MARKER_MIN_HOP_SEC = 0.75;
-
-/** Poprzedni znacznik zawsze cofa o widoczny kawałek; ten sam znacznik nie liczy się jako „poprzedni”. */
+/** Poprzedni znacznik to ten przed początkiem granego fragmentu — nie początek bieżącego. */
 const previousMarkerStart = (starts, current) => {
-  const earlier = starts.filter((start) => start < current - MARKER_MIN_HOP_SEC);
-  return earlier.length > 0 ? earlier[earlier.length - 1] : null;
+  const currentStart = starts.filter((start) => start <= current + 0.05).at(-1);
+  if (currentStart === undefined) return null;
+  return starts.filter((start) => start < currentStart - 0.05).at(-1) ?? null;
 };
 
 const nextMarkerStart = (starts, current) => starts.find((start) => start > current + 0.05) ?? null;
