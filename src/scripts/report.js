@@ -4,7 +4,7 @@
 // Gdy sieci nie ma, zgłoszenie czeka w localStorage i idzie przy następnej wizycie.
 
 const ENDPOINT =
-  'https://script.google.com/macros/s/AKfycbwXOVFnecZ-UcHtjsRPYXSOvBStN7Wivs_fy07cCCNc2vpgLcfIfrRfOM38BsGweih2CA/exec'; // web app Apps Script dopisujący wiersz do zakładki `Zgłoszenia`
+  'https://script.google.com/macros/s/AKfycbz-btiVjGXn5gqsya5wTBHTAAVwxqjl-6NOt3aK2gcggZwQlVHsawuiZMv4VZ8LX6o8qg/exec'; // web app Apps Script dopisujący wiersz do zakładki `Zgłoszenia`
 // Klucz jest jawny w kodzie strony — podpis odsiewa tylko ślepe boty, nie chroni przed kimś,
 // kto przeczytał ten plik. Serwer i tak ogranicza tempo i liczbę zgłoszeń.
 const SECRET = 'w2pQ7tKcN3vB8mJx5sLd1RfY6gH0aZ4eU9iO3bX7';
