@@ -453,7 +453,8 @@
         color: var(--muted);
       }
       .wave-edit label { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: var(--muted); }
-      .wave-edit input {
+      .wave-edit input,
+      .wave-edit textarea {
         width: 100%;
         padding: 5px 7px;
         border: 1px solid var(--line);
@@ -462,8 +463,19 @@
         font-size: 12.5px;
         color: var(--text);
       }
-      .wave-edit input:focus { border-color: var(--accent); outline: none; }
-      .wave-edit input.is-invalid { border-color: var(--accent); background: #fbe6e9; }
+      /* Etykieta wejścia bywa długim zdaniem, więc pole ma się zawijać, a nie przewijać w poziomie. */
+      .wave-edit textarea {
+        box-sizing: border-box;
+        min-height: 0;
+        line-height: 1.35;
+        resize: none;
+        overflow-y: auto;
+        overflow-wrap: anywhere;
+      }
+      .wave-edit input:focus,
+      .wave-edit textarea:focus { border-color: var(--accent); outline: none; }
+      .wave-edit input.is-invalid,
+      .wave-edit textarea.is-invalid { border-color: var(--accent); background: #fbe6e9; }
       .wave-edit-row { display: flex; gap: 8px; }
       .wave-edit-row label { flex: 1 1 0; }
       .wave-edit-error { margin: 0; color: #8d0b1d; font-size: 11.5px; }
@@ -2442,14 +2454,14 @@
 
       const EDIT_FIELDS = {
         start: [
-          ['artist', 'Wykonawca', 'text'],
-          ['title', 'Tytuł', 'text'],
-          ['album', 'Album', 'text'],
+          ['artist', 'Wykonawca', 'textarea'],
+          ['title', 'Tytuł', 'textarea'],
+          ['album', 'Album', 'textarea'],
           ['start', 'Start (s)', 'number'],
           ['durationSec', 'Czas (s)', 'number'],
         ],
         topic: [
-          ['label', 'Etykieta', 'text'],
+          ['label', 'Etykieta', 'textarea'],
           ['start', 'Start (s)', 'number'],
         ],
       };
@@ -2464,6 +2476,28 @@
 
       const fmtPreciseNumber = (seconds) => String(Math.round(Number(seconds) * 100) / 100);
 
+      // Wysokość etykiety rośnie z treścią do pięciu wierszy, dalej pole się przewija.
+      const LABEL_ROWS = 2;
+      const LABEL_MAX_ROWS = 5;
+
+      const autoSizeField = (textarea) => {
+        if (!textarea) return;
+        const style = getComputedStyle(textarea);
+        const line = parseFloat(style.lineHeight) || 17;
+        const extra =
+          parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) +
+          parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth);
+        // Wykonawca, tytuł i album wyglądają jak zwykłe pola, dopóki mieszczą się w jednej
+        // linii; rosną dopiero przy dłuższej wartości, bo i tam zdarza się ucięcie.
+        const rows = textarea.dataset.rows ?? String(LABEL_ROWS);
+        textarea.style.height = 'auto';
+        const max = line * LABEL_MAX_ROWS + extra;
+        const min = line * Number(rows) + extra;
+        const wanted = Math.min(Math.max(textarea.scrollHeight, min), max);
+        textarea.style.height = `${wanted}px`;
+        textarea.style.overflowY = textarea.scrollHeight > max + 0.5 ? 'auto' : 'hidden';
+      };
+
       const buildEditFields = (marker) => {
         editFields.textContent = '';
         const defs = EDIT_FIELDS[marker.kind === 'start' ? 'start' : 'topic'];
@@ -2472,12 +2506,20 @@
           const wrapper = document.createElement('label');
           const caption = document.createElement('span');
           caption.textContent = label;
-          const input = document.createElement('input');
-          input.type = type;
+          const input = document.createElement(type === 'textarea' ? 'textarea' : 'input');
           input.name = field;
           input.id = `wave-edit-field-${field}`;
           input.autocomplete = 'off';
           input.value = String(editValueOf(marker, field));
+          if (type === 'textarea') {
+            const rows = field === 'label' ? LABEL_ROWS : 1;
+            input.dataset.rows = String(rows);
+            input.rows = rows;
+            input.wrap = 'soft';
+            input.spellcheck = true;
+          } else {
+            input.type = type;
+          }
           if (type === 'number') {
             input.step = '0.01';
             input.inputMode = 'decimal';
@@ -2523,8 +2565,11 @@
         );
         $('wave-edit-restore').hidden = !(marker.kind === 'start' && hidden);
         editForm.hidden = false;
+        // Wysokość ustawiamy przed pierwszym malowaniem, więc okno nie skacze przy
+        // otwarciu na długiej etykiecie.
+        for (const field of editFields.querySelectorAll('textarea')) autoSizeField(field);
         positionEdit(marker);
-        const first = editFields.querySelector('input');
+        const first = editFields.querySelector('input, textarea');
         first?.focus({ preventScroll: true });
         first?.select();
       };
@@ -2545,7 +2590,7 @@
 
       // Zwraca gotowe wartości albo komunikat przy pierwszym błędnym polu.
       const readEditValues = (marker) => {
-        for (const input of editFields.querySelectorAll('input')) input.classList.remove('is-invalid');
+        for (const input of editFields.querySelectorAll('input, textarea')) input.classList.remove('is-invalid');
         const fail = (field, message) => ({ ok: false, field, message });
         const values = {};
         const bounds = startBounds(marker);
@@ -2679,6 +2724,20 @@
           editWarn.hidden = Boolean(artist && title);
           editWarn.textContent = 'Bez wykonawcy lub tytułu strona pokaże zapis zastępczy („bez wykonawcy”).';
         }
+      });
+
+      editFields.addEventListener('keydown', (event) => {
+        const field = event.target;
+        if (!(field instanceof HTMLTextAreaElement)) return;
+        if (event.key !== 'Enter' || event.shiftKey) return;
+        // W pole wielowierszowe Enter domyślnie wstawia nową linię; tutaj zapisuje,
+        // a świadome przełamanie linii zostaje pod Shift+Enter.
+        event.preventDefault();
+        editForm.requestSubmit();
+      });
+
+      editFields.addEventListener('input', (event) => {
+        if (event.target instanceof HTMLTextAreaElement) autoSizeField(event.target);
       });
 
       editForm.addEventListener('keydown', (event) => {
