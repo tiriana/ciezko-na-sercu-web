@@ -1,3 +1,9 @@
+## [1.19.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.18.2...v1.19.0) (2026-11-09)
+
+### Features
+
+* samo otwarcie zgłoszenia przy fragmencie też jest sygnałem ([a3f9c76](https://github.com/tiriana/ciezko-na-sercu-web/commit/a3f9c76824233964cb2a394145e01e87fe038cb3))
+
 ## [1.18.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.18.1...v1.18.2) (2026-11-09)
 
 ### Bug Fixes
