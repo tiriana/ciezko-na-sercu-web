@@ -55,6 +55,72 @@
       "start": 1882.61,
       "durationSec": 437,
       "end": 2323.17
+    },
+    {
+      "artist": "Medico Peste",
+      "title": "Livid",
+      "album": "א: Tremendum Et Fascinatio",
+      "newArtist": "Medico Peste",
+      "newTitle": "Livid",
+      "newAlbum": "א: Tremendum Et Fascinatio",
+      "start": 2422.96,
+      "durationSec": 320,
+      "end": 2742.41
+    },
+    {
+      "artist": "Confess",
+      "title": "After Goliath (feat. George Kollias & Marzi Montazeri)",
+      "album": "Destination Addiction (feat. George Kollias)",
+      "newArtist": "Confess",
+      "newTitle": "After Goliath (feat. George Kollias & Marzi Montazeri)",
+      "newAlbum": "Destination Addiction (feat. George Kollias)",
+      "start": 2822.93,
+      "durationSec": 260,
+      "end": 3083.25
+    },
+    {
+      "artist": "Witchmaster",
+      "title": "Necroslaughter",
+      "album": "Masochistic Devil Worship",
+      "newArtist": "Witchmaster",
+      "newTitle": "Necroslaughter",
+      "newAlbum": "Masochistic Devil Worship",
+      "start": 3134.32,
+      "durationSec": 120,
+      "end": 3257.05
+    },
+    {
+      "artist": "Korn",
+      "title": "Lost In The Grandeur",
+      "album": "Requiem",
+      "newArtist": "Korn",
+      "newTitle": "Lost In The Grandeur",
+      "newAlbum": "Requiem",
+      "start": 3797.6,
+      "durationSec": 227,
+      "end": 4023.54
+    },
+    {
+      "artist": "Despised Icon",
+      "title": "Reaper (feat. Tom Barber & Scott Ian Lewis)",
+      "album": "Shadow Work",
+      "newArtist": "Despised Icon",
+      "newTitle": "Reaper (feat. Tom Barber & Scott Ian Lewis)",
+      "newAlbum": "Shadow Work",
+      "start": 4116.66,
+      "durationSec": 469,
+      "end": 4584.63
+    },
+    {
+      "artist": "Imperial Triumphant",
+      "title": "Metrovertigo",
+      "album": "Spirit Of Ecstasy",
+      "newArtist": "Imperial Triumphant",
+      "newTitle": "Metrovertigo",
+      "newAlbum": "Spirit Of Ecstasy",
+      "start": 4646.63,
+      "durationSec": 677,
+      "end": 5488
     }
   ],
   "topics": [
@@ -93,6 +159,38 @@
       "label": "Trasa V z Fertile Hump i gośćmi oraz inne trasy jesienne",
       "start": 977.69,
       "newLabel": "Trasa V z Fertile Hump i gośćmi oraz inne trasy jesienne"
+    },
+    {
+      "time": 2747,
+      "label": "Zapowiedź koncertów Holy Phone, Outlander, Give Up To Failure i Pure Bedlam w Wrocławiu i Warszawie",
+      "start": 2742.41,
+      "newLabel": "Zapowiedź koncertów Holy Phone, Outlander, Give Up To Failure i Pure Bedlam w Wrocławiu i Warszawie / Powrót i trasa zespołu Atrophy oraz gościnny występ irańsko-norweskiej grupy Confess",
+      "end": 2822.93
+    },
+    {
+      "time": 2778,
+      "label": "Powrót i trasa zespołu Atrophy oraz gościnny występ irańsko-norweskiej grupy Confess",
+      "hide": true
+    },
+    {
+      "time": 3089.93,
+      "label": "Jubileusz 30-lecia Witchmastera i koncerty w Katowicach, Warszawie i Gdańsku",
+      "start": 3083.25,
+      "newLabel": "Jubileusz 30-lecia Witchmastera i koncerty w Katowicach, Warszawie i Gdańsku",
+      "end": 3134.32
+    },
+    {
+      "time": 3263.62,
+      "label": "Impreza Siła Gniewu w Poznaniu z Hellborn, Kingdom i Damage Case oraz nowy album Hellborn \"Siedem\"",
+      "start": 3257.05,
+      "newLabel": "Impreza Siła Gniewu w Poznaniu z Hellborn, Kingdom i Damage Case oraz nowy album Hellborn \"Siedem\""
+    },
+    {
+      "time": 4594,
+      "label": "Koncerty Imperial Triumphant w Krakowie i Warszawie oraz występ przed nimi zespołu Knoll",
+      "start": 4584.63,
+      "newLabel": "Koncerty Imperial Triumphant w Krakowie i Warszawie oraz występ przed nimi zespołu Knoll",
+      "end": 4646.63
     }
   ],
   "addTracks": [
@@ -101,6 +199,21 @@
       "title": "Intro",
       "start": 4.73,
       "durationSec": 8.06
+    },
+    {
+      "artist": "",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
+      "start": 3387,
+      "durationSec": 419
+    },
+    {
+      "artist": "NApalm Death",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
+      "start": 5387.42,
+      "durationSec": 100.46,
+      "end": 5392.42
     }
   ],
   "addTopics": [
@@ -108,6 +221,30 @@
       "label": "Mo",
       "start": 1779.76,
       "end": 1882.61
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 2319.32,
+      "end": 2422.96
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 3717.66,
+      "end": 3797.6
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 4023.54,
+      "end": 4116.66
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 5321.68,
+      "end": 5387.42
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 5388.91
     }
   ],
   "credits": {
