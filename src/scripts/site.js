@@ -232,6 +232,10 @@ const setupBar = () => {
     for (const event of ['timeupdate', 'durationchange', 'loadedmetadata', 'play', 'pause', 'seeked', 'ended']) {
       audio.addEventListener(event, syncProgress);
     }
+    // Pozycje znaczników zależą od długości nagrania, więc przeliczamy je, gdy ta się pojawi.
+    for (const event of ['durationchange', 'loadedmetadata', 'emptied']) {
+      audio.addEventListener(event, renderMarkers);
+    }
     syncProgress();
   }
 };
@@ -242,6 +246,79 @@ const setNowPlaying = (label) => {
   // Linia zostaje w layoucie także bez utworu, więc pasek nie zmienia wysokości po starcie.
   now.textContent = label ? `Teraz: ${label}` : '';
 };
+
+// ——— Znaczniki na szynie postępu ———
+// Bierzemy je z wierszy programu, które strona odcinka już wyrenderowała; lista odcinków
+// takich wierszy nie ma, więc start z listy nie rysuje żadnych znaczników.
+
+const markersHost = bar?.querySelector('[data-markers]');
+let markerSpecs = [];
+
+const readMarkers = () => {
+  markerSpecs = [];
+  if (!markersHost || !pageMatchesAudio()) return;
+  for (const row of document.querySelectorAll('[data-span-start]')) {
+    const kind = row.dataset.kind;
+    if (kind !== 'track' && kind !== 'topic') continue;
+    const time = Number(row.dataset.spanStart);
+    if (!Number.isFinite(time)) continue;
+    const cell = row.children[1];
+    // Etykieta wejścia siedzi w drugiej komórce razem z nagłówkiem „Wejście” i linkiem
+    // „Zgłoś”, więc bierzemy z klonu tylko tekst bez tych dwóch rzeczy.
+    const clone = cell?.cloneNode(true);
+    clone?.querySelectorAll('.tracks__kind, [data-report-link]').forEach((node) => node.remove());
+    const label =
+      row.dataset.trackLabel?.trim() ||
+      clone?.querySelector('.tracks__entry-label')?.textContent?.trim() ||
+      clone?.textContent?.replace(/\s+/g, ' ').trim() ||
+      '';
+    markerSpecs.push({ time, kind, label });
+  }
+};
+
+const renderMarkers = () => {
+  if (!markersHost) return;
+  markersHost.textContent = '';
+  const duration = Number.isFinite(audio?.duration) ? audio.duration : 0;
+  if (markerSpecs.length === 0 || duration <= 0) return;
+  const fragment = document.createDocumentFragment();
+  for (const spec of markerSpecs) {
+    const node = document.createElement('span');
+    node.className = 'audio-bar__marker';
+    node.dataset.kind = spec.kind;
+    node.dataset.start = String(spec.time);
+    node.title = `${spec.kind === 'track' ? 'utwór' : 'wejście'} — ${spec.label}, ${formatTime(spec.time)}`;
+    node.style.left = `${(spec.time / duration) * 100}%`;
+    fragment.append(node);
+  }
+  markersHost.append(fragment);
+};
+
+const seekToMarker = (node) => {
+  if (!audio) return;
+  const start = Number(node.dataset.start);
+  if (!Number.isFinite(start)) return;
+  const limit = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : start;
+  audio.currentTime = Math.max(0, Math.min(start, limit));
+  syncProgress();
+  syncSpans();
+};
+
+if (markersHost) {
+  // Przeciąganie po szynie i klik w znacznik to dwie różne intencje: znacznik wygrywa,
+  // a zdarzenie nie leci dalej do obsługi szyny. Pauza zostaje pauzą.
+  markersHost.addEventListener(
+    'pointerdown',
+    (event) => {
+      const node = event.target instanceof Element ? event.target.closest('.audio-bar__marker') : null;
+      if (!node) return;
+      event.stopPropagation();
+      event.preventDefault();
+      seekToMarker(node);
+    },
+    true
+  );
+}
 
 /** Czy strona pokazuje odcinek, który faktycznie jest w playerze. */
 const pageMatchesAudio = () => {
@@ -518,6 +595,15 @@ document.addEventListener('astro:before-swap', () => {
   applyLinksOnNextPage = true;
 });
 
+// Szerokość osi zmienia się przy zmianie okna i przy zwijaniu paska — znaczniki trzymają
+// się procentów, więc wystarczy je przerysować po zmianie rozmiaru.
+const markersRail = bar?.querySelector('[data-progress]');
+if (markersRail && 'ResizeObserver' in window) {
+  new ResizeObserver(() => renderMarkers()).observe(markersRail);
+} else {
+  window.addEventListener('resize', () => renderMarkers());
+}
+
 const initPage = () => {
   spans = [...document.querySelectorAll('[data-span-start]')].map((element) => ({
     element,
@@ -616,6 +702,8 @@ const initPage = () => {
     applyTimeLink();
   }
   applyEntriesLink();
+  readMarkers();
+  renderMarkers();
   syncSpans();
   syncFragment();
 };
