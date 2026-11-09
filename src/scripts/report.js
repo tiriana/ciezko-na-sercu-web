@@ -4,27 +4,67 @@
 // Gdy sieci nie ma, zgłoszenie czeka w localStorage i idzie przy następnej wizycie.
 
 const ENDPOINT =
-  'https://script.google.com/macros/s/AKfycbzdWhI4hQOJzrh4m73G05vcdSxnVQPE1caRIdsfbiYcOnwgljPccyvGakTWfOuebFL7mw/exec'; // web app Apps Script dopisujący wiersz do zakładki `Zgłoszenia`
+  'https://script.google.com/macros/s/AKfycbwXOVFnecZ-UcHtjsRPYXSOvBStN7Wivs_fy07cCCNc2vpgLcfIfrRfOM38BsGweih2CA/exec'; // web app Apps Script dopisujący wiersz do zakładki `Zgłoszenia`
 // Klucz jest jawny w kodzie strony — podpis odsiewa tylko ślepe boty, nie chroni przed kimś,
 // kto przeczytał ten plik. Serwer i tak ogranicza tempo i liczbę zgłoszeń.
 const SECRET = 'w2pQ7tKcN3vB8mJx5sLd1RfY6gH0aZ4eU9iO3bX7';
 
 const QUEUE_KEY = 'ciezko:zgloszenia';
+const DRAFT_KEY = 'ciezko:szkic';
+const REJECTED = 'dziś już dużo zgłoszeń o tym fragmencie — spróbuj później';
 const DRAFT_DELAY = 800;
 const TOAST_DURATION = 4500;
 
 const TYPES = {
   'brak-wejscia': 'Brakuje wejścia',
   'poczatek-uciety': 'Początek ucięty',
+  'zly-tytul': 'Zły tytuł',
+  'zly-start': 'Zły start',
+  'zle-nazwisko': 'Złe nazwisko',
+  'znieksztalcony-tekst': 'Zniekształcony tekst',
   inne: 'Inne',
 };
 
+// Zgłoszenie mówi samo, czego dotyczy: element `<slug>|<rodzaj>[:<id>]` wybiera układ dymku.
+// Cała audycja to sam tekst i „Wyślij” — chipy pasują do konkretnego fragmentu.
+const CHIP_SETS = {
+  transkrypt: ['zle-nazwisko', 'znieksztalcony-tekst', 'inne'],
+  fragment: ['brak-wejscia', 'zly-tytul', 'zly-start', 'inne'],
+};
+
+const chipKind = (element) => {
+  const kind = element.split('|')[1]?.split(':')[0] ?? '';
+  if (kind === 'transkrypt') return 'transkrypt';
+  // Wiersze programu: utwory i wejścia.
+  if (kind === 'utwór' || kind === 'wejście') return 'fragment';
+  return 'odcinek';
+};
+
+const chipsFor = (element) => CHIP_SETS[chipKind(element)] ?? [];
+
+const renderChips = (bubble, element) => {
+  const container = bubble.querySelector('.report-bubble__chips');
+  container.dataset.kind = chipKind(element);
+  container.hidden = chipKind(element) === 'odcinek';
+  container.replaceChildren(
+    ...chipsFor(element).map((type) => {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'report-chip';
+      chip.dataset.reportType = type;
+      chip.setAttribute('aria-pressed', 'false');
+      chip.textContent = TYPES[type];
+      return chip;
+    })
+  );
+};
+
 const HORNS = `<svg class="report-toast__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-  <path d="M6 11.2h12a2 2 0 0 1 2 2v5.3a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 18.5v-5.3a2 2 0 0 1 2-2Z"/>
-  <path d="M7.2 11.2V4.7a1.7 1.7 0 0 1 3.4 0v6.5"/>
-  <path d="M15.4 11.2V7.6a1.7 1.7 0 0 1 3.4 0v3.6"/>
-  <path d="M10.6 11.2V9.9a1.5 1.5 0 0 1 3 0v1.3"/>
-  <path d="M5.2 15.6c1.8-1.6 3.7-2.2 5.6-2.2"/>
+  <path d="M6.2 13.4h11.2a2.6 2.6 0 0 1 2.6 2.6v3a2.5 2.5 0 0 1-2.5 2.5H6.5A2.5 2.5 0 0 1 4 19v-3a2.6 2.6 0 0 1 2.2-2.6Z"/>
+  <path d="M6.6 13.4V2.9a1.6 1.6 0 0 1 3.2 0v10.5"/>
+  <path d="M13.8 13.4V4.3a1.6 1.6 0 0 1 3.2 0v9.1"/>
+  <path d="M10 13.4v-2.2a1.9 1.9 0 0 1 3.8 0v2.2"/>
+  <path d="M5 16.1h4.4"/>
 </svg>`;
 
 const uuid = () =>
@@ -49,10 +89,7 @@ const writeQueue = (items) => {
   }
 };
 
-// Arkusz liczy podpis z tekstu zamienionego na ASCII (polskie znaki widzi jako `?`),
-// więc podpisujemy dokładnie to, co on porównuje — treść w zgłoszeniu zostaje pełna.
-const asciiOnly = (value) => value.replace(/[^\x00-\x7f]/g, '?');
-
+// Arkusz składa podpis z pól zakodowanych jak w adresie URL, sklejonych pionową kreską.
 const sign = async (ts, report) => {
   const encoder = new TextEncoder();
   const key = await crypto.subtle.importKey(
@@ -62,12 +99,28 @@ const sign = async (ts, report) => {
     false,
     ['sign']
   );
-  const mac = await crypto.subtle.sign(
-    'HMAC',
-    key,
-    encoder.encode(asciiOnly(`${ts}|${report.element}|${report.type}|${report.text}`))
-  );
+  const message = [ts, report.element, report.type, report.text]
+    .map((value) => encodeURIComponent(String(value)))
+    .join('|');
+  const mac = await crypto.subtle.sign('HMAC', key, encoder.encode(message));
   return [...new Uint8Array(mac)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
+};
+
+// Szkic z całej audycji nie jest wysyłany w tle — trzymamy go lokalnie, żeby
+// zamknięcie dymku nie kasowało tego, co użytkownik zdążył napisać.
+const readDraft = (element) => {
+  try {
+    return localStorage.getItem(`${DRAFT_KEY}:${element}`) ?? '';
+  } catch {
+    return '';
+  }
+};
+
+const saveDraft = (element, text) => {
+  try {
+    if (text) localStorage.setItem(`${DRAFT_KEY}:${element}`, text);
+    else localStorage.removeItem(`${DRAFT_KEY}:${element}`);
+  } catch {}
 };
 
 const send = async (report) => {
@@ -89,6 +142,8 @@ const send = async (report) => {
 };
 
 const isRetryable = (error) => /nieaktualne|limit dzienny/i.test(String(error?.message ?? ''));
+
+const isRejected = (error) => /za dużo zgłoszeń/i.test(String(error?.message ?? ''));
 
 const attempt = async (report) => {
   try {
@@ -143,40 +198,48 @@ const ensureBubble = () => {
   bubble.innerHTML = `
     <p class="report-bubble__eyebrow" id="report-bubble-title">Co jest nie tak?</p>
     <p class="report-bubble__target" id="report-bubble-target"></p>
-    <div class="report-bubble__chips" role="group" aria-label="Rodzaj błędu">
-      <button type="button" class="report-chip" data-report-type="brak-wejscia" aria-pressed="false">Brakuje wejścia</button>
-      <button type="button" class="report-chip" data-report-type="poczatek-uciety" aria-pressed="false">Początek ucięty</button>
-      <button type="button" class="report-chip" data-report-type="inne" aria-pressed="false">Inne</button>
-    </div>
+    <div class="report-bubble__chips" role="group" aria-label="Rodzaj błędu"></div>
     <label class="visually-hidden" for="report-bubble-text">Co jeszcze warto wiedzieć?</label>
     <textarea id="report-bubble-text" class="report-bubble__text" rows="2" placeholder="Możesz dopisać szczegóły…"></textarea>
+    <div class="report-bubble__actions" hidden>
+      <button type="button" class="report-send" disabled>Wyślij</button>
+    </div>
     <p class="report-bubble__status" role="status" aria-live="polite"></p>
   `;
 
   const text = bubble.querySelector('.report-bubble__text');
 
-  for (const chip of bubble.querySelectorAll('[data-report-type]')) {
-    chip.addEventListener('click', () => {
-      const session = state.session;
-      if (!session) return;
-      const type = chip.dataset.reportType ?? 'inne';
-      selectChip(session, type);
-      clearTimeout(session.timer);
-      // „Inne” bez zdania nie mówi nic — dopiero tekst robi z niego zgłoszenie.
-      if (type === 'inne' && text.value.trim() === '') {
-        setStatus(session, 'Dopisz zdanie opisu, wtedy wyślemy.');
-        text.focus({ preventScroll: true });
-        return;
-      }
-      submit(session, type);
-    });
-  }
+  // Chipy są przerysowywane przy każdym otwarciu (odcinek i transkrypt mają inne),
+  // więc klik łapiemy na kontenerze, a nie na pojedynczych przyciskach.
+  bubble.querySelector('.report-bubble__chips').addEventListener('click', (event) => {
+    const chip = event.target instanceof Element ? event.target.closest('[data-report-type]') : null;
+    const session = state.session;
+    if (!chip || !session) return;
+    const type = chip.dataset.reportType ?? 'inne';
+    selectChip(session, type);
+    clearTimeout(session.timer);
+    // „Inne” bez zdania nie mówi nic — dopiero tekst robi z niego zgłoszenie.
+    if (type === 'inne' && text.value.trim() === '') {
+      setStatus(session, 'Dopisz zdanie opisu, wtedy wyślemy.');
+      text.focus({ preventScroll: true });
+      return;
+    }
+    submit(session, type);
+  });
 
   text.addEventListener('input', () => {
     const session = state.session;
     if (!session) return;
-    const type = session.type ?? 'inne';
     clearTimeout(session.timer);
+
+    // Cała audycja: tekst to całe zgłoszenie, więc idzie dopiero po „Wyślij”.
+    if (session.mode === 'episode') {
+      saveDraft(session.element, text.value);
+      updateSendState(session);
+      return;
+    }
+
+    const type = session.type ?? 'inne';
     session.timer = setTimeout(() => {
       if (state.session !== session) return;
       if (type === 'inne' && text.value.trim() === '') return;
@@ -184,6 +247,16 @@ const ensureBubble = () => {
       if (session.type === null) selectChip(session, 'inne');
       submit(session, type);
     }, DRAFT_DELAY);
+  });
+
+  bubble.querySelector('.report-send').addEventListener('click', () => sendEpisode(state.session));
+
+  text.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' || !(event.metaKey || event.ctrlKey)) return;
+    const session = state.session;
+    if (!session || session.mode !== 'episode') return;
+    event.preventDefault();
+    sendEpisode(session);
   });
 
   document.body.append(bubble);
@@ -199,6 +272,11 @@ const selectChip = (session, type) => {
 };
 
 const bubbleText = () => state.bubble.querySelector('.report-bubble__text');
+
+const updateSendState = (session) => {
+  if (state.session !== session) return;
+  state.bubble.querySelector('.report-send').disabled = bubbleText().value.trim() === '';
+};
 
 const setStatus = (session, message) => {
   if (state.session !== session) return;
@@ -242,6 +320,7 @@ const openBubble = (link) => {
     link,
     element: link.dataset.reportElement ?? '',
     target: link.dataset.reportTarget ?? '',
+    mode: chipKind(link.dataset.reportElement ?? '') === 'odcinek' ? 'episode' : 'chips',
     id: uuid(),
     type: null,
     seq: 0,
@@ -251,16 +330,18 @@ const openBubble = (link) => {
   state.session = session;
 
   bubble.querySelector('#report-bubble-target').textContent = session.target;
-  for (const chip of bubble.querySelectorAll('[data-report-type]')) {
-    chip.setAttribute('aria-pressed', 'false');
-  }
-  bubbleText().value = '';
+  renderChips(bubble, session.element);
+  bubble.querySelector('.report-bubble__actions').hidden = session.mode !== 'episode';
+  bubbleText().value = session.mode === 'episode' ? readDraft(session.element) : '';
+  updateSendState(session);
   bubble.querySelector('.report-bubble__status').textContent = '';
 
   link.setAttribute('aria-expanded', 'true');
   bubble.hidden = false;
   placeBubble();
-  bubble.querySelector('[data-report-type]')?.focus({ preventScroll: true });
+  // W trybie audycji nie ma chipa, który mógłby dostać focus — wchodzimy w pole tekstu.
+  if (session.mode === 'episode') bubbleText().focus({ preventScroll: true });
+  else bubble.querySelector('[data-report-type]')?.focus({ preventScroll: true });
 };
 
 const closeBubble = ({ focus = true } = {}) => {
@@ -292,14 +373,52 @@ const submit = (session, type) => {
       session.saved = true;
       showToast();
     })
-    .catch(() => {
-      enqueue(report);
+    .catch((error) => {
       if (seq !== session.seq) return;
+      // Limit na jeden element nie mija po odświeżeniu — kolejka tylko by go powtarzała.
+      if (isRejected(error)) {
+        setStatus(session, REJECTED);
+        return;
+      }
+      enqueue(report);
       setStatus(
         session,
         navigator.onLine ? 'spróbujemy później' : 'zapisane lokalnie, wyślemy później'
       );
     });
+};
+
+/** Cała audycja: jedno zgłoszenie z wpisanego tekstu, bez podpowiedzi i bez autozapisu. */
+const sendEpisode = async (session) => {
+  if (!session || session.mode !== 'episode') return;
+  const text = bubbleText().value.trim();
+  if (!text) return;
+
+  const report = {
+    element: session.element,
+    type: 'inne',
+    text,
+    page: location.pathname + location.search,
+    id: session.id,
+  };
+  const seq = ++session.seq;
+  const button = state.bubble.querySelector('.report-send');
+  button.disabled = true;
+  setStatus(session, 'zapisywanie…');
+
+  try {
+    await attempt(report);
+    if (seq !== session.seq) return;
+    saveDraft(session.element, '');
+    bubbleText().value = '';
+    setStatus(session, 'zapisano');
+    closeBubble();
+    showToast();
+  } catch (error) {
+    if (seq !== session.seq) return;
+    setStatus(session, isRejected(error) ? REJECTED : 'nie udało się wysłać — spróbuj jeszcze raz');
+    button.disabled = false;
+  }
 };
 
 const ensureToast = () => {
@@ -365,6 +484,8 @@ document.addEventListener('keydown', (event) => {
 });
 
 window.addEventListener('resize', placeBubble);
+// Dymek trzyma się linku także wtedy, gdy strona przewija się pod nim.
+window.addEventListener('scroll', () => state.session && placeBubble(), { passive: true });
 window.addEventListener('online', flushQueue);
 
 document.addEventListener('astro:before-swap', () => closeBubble({ focus: false }));

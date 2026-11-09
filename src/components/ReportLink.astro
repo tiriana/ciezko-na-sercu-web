@@ -12,6 +12,7 @@ const ENTRY_ELEMENT = 'entry.915308992';
 
 const KIND_LABELS: Record<string, string> = {
   odcinek: 'Cały odcinek',
+  transkrypt: 'Transkrypt',
   utwór: 'Utwór',
   wejście: 'Wejście',
   cytat: 'Cytat',
@@ -23,12 +24,13 @@ interface Props {
   element: string;
   label?: string;
   class?: string;
+  target?: string;
 }
 
-const { element, label = 'Zgłoś', class: className } = Astro.props;
+const { element, label = 'Zgłoś', class: className, target: explicitTarget } = Astro.props;
 const [, kindWithId = '', description] = element.split('|');
 const kind = kindWithId.split(':')[0];
-const target = description || KIND_LABELS[kind] || 'Ten fragment';
+const target = explicitTarget || description || KIND_LABELS[kind] || 'Ten fragment';
 const href = `${REPORT_FORM}?usp=pp_url&${ENTRY_ELEMENT}=${encodeURIComponent(element)}`;
 ---
 

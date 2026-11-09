@@ -335,6 +335,10 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                           </div>
                           <div>
                             {block.track.title ?? <span class="tracks__album">tytuł nierozpoznany</span>}
+                            <ReportLink
+                              element={`${entry.slug}|utwór:${block.index}|${[block.track.artist, block.track.title].filter(Boolean).join(' — ')}`}
+                              class="report-link--row"
+                            />
                           </div>
                           {block.end > block.start && <FragmentProgress />}
                         </td>
@@ -368,7 +372,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                           {/* Kolejne wejścia pod rząd dają jeden wiersz z tytułem pierwszego:
                               pełna lista zajmowała więcej miejsca niż wnosiła. Pełny tytuł
                               zostaje w `title`, więc nadal jest dostępny z klawiatury i myszą. */}
-                          <div class="tracks__entry-label" title={block.topics[0].label}>{block.topics[0].label}</div>
+                          <div class="tracks__entry-line">
+                            <div class="tracks__entry-label" title={block.topics[0].label}>{block.topics[0].label}</div>
+                            <ReportLink
+                              element={`${entry.slug}|wejście:${block.topics[0].start}|${block.topics[0].label}`}
+                              class="report-link--row"
+                            />
+                          </div>
                           {block.end > block.start && <FragmentProgress />}
                         </td>
                         <td class="tracks__album">—</td>
@@ -400,6 +410,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                           <div class="tracks__kind">Wejście</div>
                           <div>
                             {block.label}
+                            <ReportLink element={`${entry.slug}|wejście:${block.start}|${block.label}`} class="report-link--row" />
                           </div>
                           {block.end > block.start && <FragmentProgress />}
                         </td>
@@ -425,6 +436,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <details class="transcript">
                 <summary class="transcript__summary">
                   Cały tekst · {paragraphs.length} {paragraphs.length === 1 ? 'akapit' : paragraphs.length < 5 ? 'akapity' : 'akapitów'}
+                  <ReportLink element={`${entry.slug}|transkrypt`} class="report-link--summary" />
                 </summary>
                 <div class="transcript__body">
                   {paragraphs.map((paragraph) => (
@@ -436,7 +448,14 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                       ) : (
                         <span class="transcript__time">{formatClock(paragraph.start)}</span>
                       )}
-                      <span>{paragraph.text}</span>
+                      <span>
+                        {paragraph.text}
+                        <ReportLink
+                          element={`${entry.slug}|transkrypt:${Math.floor(paragraph.start)}`}
+                          target={`Transkrypt od ${formatClock(paragraph.start)}`}
+                          class="report-link--para"
+                        />
+                      </span>
                     </p>
                   ))}
                 </div>
