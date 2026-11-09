@@ -1,3 +1,10 @@
+## [1.23.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.22.2...v1.23.0) (2026-11-09)
+
+### Features
+
+* **editor:** add button to add track at cursor ([b2c10c7](https://github.com/tiriana/ciezko-na-sercu-web/commit/b2c10c7e19bf3abbea4aaa3c9556367507e15daf))
+* **editor:** add track creation shortcut and button ([673c018](https://github.com/tiriana/ciezko-na-sercu-web/commit/673c018bd803cc6d6dedf683aa9b32a06e413b05))
+
 ## [1.22.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.22.1...v1.22.2) (2026-11-09)
 
 ### Bug Fixes
