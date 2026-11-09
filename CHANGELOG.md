@@ -1,3 +1,9 @@
+## [1.26.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.25.0...v1.26.0) (2026-11-09)
+
+### Features
+
+* **edytor:** zielona kropka dla w pełni sprawdzonych audycji ([0ce5d43](https://github.com/tiriana/ciezko-na-sercu-web/commit/0ce5d43fc48272b0b690982a51a71041a0e08d94))
+
 ## [1.25.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.24.2...v1.25.0) (2026-11-09)
 
 ### Features
