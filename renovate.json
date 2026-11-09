@@ -41,6 +41,16 @@
         "packageManager"
       ],
       "enabled": false
+    },
+    {
+      "matchPackageNames": [
+        "conventional-changelog-conventionalcommits"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "enabled": false,
+      "description": "Preset 9+ wymaga conventional-changelog-writer@9, a semantic-release 25 wozi 8 — major zepsuje release."
     }
   ]
 }
