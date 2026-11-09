@@ -1,3 +1,9 @@
+## [1.21.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.20.0...v1.21.0) (2026-11-09)
+
+### Features
+
+* odtwarzanie audycji z listy i przy tytule, komunikat dla nieopracowanych ([#64](https://github.com/tiriana/ciezko-na-sercu-web/issues/64)) ([2092cac](https://github.com/tiriana/ciezko-na-sercu-web/commit/2092cac87d2e226507e027a8a14523d07c2d227b))
+
 ## [1.20.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.19.0...v1.20.0) (2026-11-09)
 
 ### Features
