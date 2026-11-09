@@ -1,0 +1,147 @@
+---
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import Base from '../layouts/Base.astro';
+
+const title = 'Nie ma takiej strony — Ciężko na sercu';
+const description = 'Ta strona nie istnieje. Wróć do odcinków albo przejrzyj tagi.';
+---
+
+<Base {title} {description}>
+  <SiteHeader />
+
+  <main class="wrap not-found">
+    <section class="not-found__card" aria-labelledby="not-found-title">
+      <p class="not-found__eyebrow">404 · ADRES NIEZNANY</p>
+      <h1 id="not-found-title">Nie ma takiej strony</h1>
+      <p class="not-found__copy">Adres mógł się zestarzeć albo zawierać literówkę.</p>
+      <nav class="not-found__links" aria-label="Dalej">
+        <a class="not-found__link not-found__link--primary" href="/">Odcinki</a>
+        <a class="not-found__link" href="/tagi/">Tagi</a>
+      </nav>
+    </section>
+  </main>
+
+  <SiteFooter />
+</Base>
+
+<style>
+  .not-found {
+    display: grid;
+    min-height: min(70vh, 760px);
+    place-items: center;
+    padding-block: clamp(56px, 10vw, 128px);
+  }
+
+  .not-found__card {
+    position: relative;
+    width: min(100%, 760px);
+    overflow: hidden;
+    padding: clamp(24px, 6vw, 64px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface-raised);
+    box-shadow: 0 18px 42px rgb(20 30 35 / 7%);
+  }
+
+  .not-found__card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 100%;
+    background: var(--accent);
+    content: '';
+  }
+
+  .not-found__eyebrow {
+    margin: 0 0 18px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  .not-found h1 {
+    max-width: 10ch;
+    margin: 0;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: clamp(42px, 8vw, 88px);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 0.98;
+    text-transform: uppercase;
+  }
+
+  .not-found__copy {
+    max-width: 38ch;
+    margin: 20px 0 28px;
+    color: var(--muted);
+    font-size: clamp(15px, 2vw, 18px);
+    line-height: 1.55;
+  }
+
+  .not-found__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .not-found__link {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18px;
+    border: 1px solid var(--line-strong);
+    border-radius: 5px;
+    color: var(--ink);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+  }
+
+  .not-found__link:hover {
+    border-color: var(--ink);
+    background: var(--surface);
+  }
+
+  .not-found__link--primary {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  .not-found__link--primary:hover {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 88%, var(--ink));
+    color: var(--accent-ink);
+  }
+
+  .not-found__link:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 520px) {
+    .not-found {
+      min-height: 58vh;
+      padding-block: 44px;
+    }
+
+    .not-found__card {
+      padding: 24px 22px 26px;
+    }
+
+    .not-found__card::after {
+      width: 5px;
+    }
+
+    .not-found h1 {
+      max-width: 8ch;
+      font-size: clamp(42px, 12vw, 58px);
+    }
+  }
+</style>
