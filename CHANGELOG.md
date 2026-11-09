@@ -1,3 +1,9 @@
+## [1.29.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.28.0...v1.29.0) (2026-11-09)
+
+### Features
+
+* dodaje stronę 404 ([45ee0e4](https://github.com/tiriana/ciezko-na-sercu-web/commit/45ee0e416bb1b0cb748634e6123f6542607fa286))
+
 ## [1.28.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.27.1...v1.28.0) (2026-11-09)
 
 ### Features
