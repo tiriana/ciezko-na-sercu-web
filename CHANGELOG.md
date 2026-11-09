@@ -1,3 +1,9 @@
+## [1.24.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.23.0...v1.24.0) (2026-11-09)
+
+### Features
+
+* adds new capability/behavior/API/option ([344e766](https://github.com/tiriana/ciezko-na-sercu-web/commit/344e766cad140bef49adad9a949784406c4891f4))
+
 ## [1.23.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.22.2...v1.23.0) (2026-11-09)
 
 ### Features
