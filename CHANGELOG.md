@@ -1,3 +1,9 @@
+## [1.18.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.17.0...v1.18.0) (2026-11-09)
+
+### Features
+
+* zgłaszanie błędów bąbelkiem, bez Google Forms ([792eb0c](https://github.com/tiriana/ciezko-na-sercu-web/commit/792eb0c7091ddc6f84b17c11f33c678147468e7f))
+
 ## [1.17.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.16.2...v1.17.0) (2026-11-09)
 
 ### Features
