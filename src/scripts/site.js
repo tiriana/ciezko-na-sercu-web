@@ -20,6 +20,7 @@ const setupAudio = () => {
 };
 
 let spans = [];
+let audioEpisodes = [];
 
 const activeSpans = (time) => {
   const covering = spans.filter((span) => time >= span.start && time < span.end);
@@ -65,6 +66,7 @@ const syncProgress = () => {
     toggle.setAttribute('aria-label', audio.paused ? 'Odtwórz' : 'Wstrzymaj odtwarzanie');
   }
   syncFragment();
+  syncJumpControls();
 };
 
 /** Fragment, w którym jesteśmy: utwór albo wejście (z wątkami razem). */
@@ -172,6 +174,31 @@ const setupBar = () => {
   if (!bar || bar.dataset.bound === 'true') return;
   bar.dataset.bound = 'true';
 
+  const jump = bar.querySelector('.audio-bar__jump');
+  const jumpToggle = bar.querySelector('[data-jump-toggle]');
+  const jumpMenu = bar.querySelector('[data-jump-menu]');
+  jumpToggle?.addEventListener('click', () => {
+    if (!jumpMenu) return;
+    const open = jumpMenu.hidden;
+    jumpMenu.hidden = !open;
+    jumpToggle.setAttribute('aria-expanded', String(open));
+    if (open) {
+      syncJumpControls();
+      jumpMenu.querySelector('button:not(:disabled)')?.focus({ preventScroll: true });
+    }
+  });
+  jumpMenu?.addEventListener('click', (event) => {
+    const button = event.target instanceof Element ? event.target.closest('button') : null;
+    if (!button || button.disabled) return;
+    if (button.dataset.jumpMarker) jumpToMarker(Number(button.dataset.jumpMarker));
+    if (button.dataset.jumpEpisode) jumpToEpisode(Number(button.dataset.jumpEpisode));
+    closeJumpMenu(true);
+  });
+  document.addEventListener('pointerdown', (event) => {
+    if (!jumpMenu || jumpMenu.hidden || !(event.target instanceof Node) || jump?.contains(event.target)) return;
+    closeJumpMenu();
+  }, true);
+
   bar.querySelector('[data-play-toggle]')?.addEventListener('click', () => {
     if (!audio) return;
     if (audio.paused) audio.play();
@@ -220,10 +247,10 @@ const setupBar = () => {
       if (!audio || !Number.isFinite(audio.duration)) return;
       if (event.key === 'ArrowRight') {
         event.preventDefault();
-        audio.currentTime = Math.min(audio.duration, audio.currentTime + 5);
+        audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
       } else if (event.key === 'ArrowLeft') {
         event.preventDefault();
-        audio.currentTime = Math.max(0, audio.currentTime - 5);
+        audio.currentTime = Math.max(0, audio.currentTime - 10);
       }
     });
   }
@@ -429,6 +456,7 @@ const loadEpisode = (payload) => {
   if (title) title.textContent = payload.title ?? '';
   const link = bar.querySelector('[data-audio-link]');
   if (link && payload.slug) link.href = `/odcinki/${payload.slug}/`;
+  syncJumpControls();
   return changed;
 };
 
@@ -458,6 +486,181 @@ const payloadOf = (element) => ({
   src: element.dataset.audioSrc ?? '',
   slug: element.dataset.audioSlug ?? '',
   title: element.dataset.audioTitle ?? '',
+});
+
+const readAudioEpisodes = () => {
+  const data = document.querySelector('#audio-catalog-data');
+  if (data) {
+    try {
+      const episodes = JSON.parse(data.textContent ?? '[]');
+      if (Array.isArray(episodes)) {
+        const entries = episodes.filter((episode) => episode?.src && episode?.slug);
+        if (entries.length > 0) {
+          audioEpisodes = entries;
+          return;
+        }
+      }
+    } catch {
+      return;
+    }
+  }
+  const entries = [...document.querySelectorAll('.episode-row [data-episode-play]')]
+    .map(payloadOf)
+    .filter((episode) => episode.src && episode.slug);
+  if (entries.length > 0) audioEpisodes = entries;
+};
+
+const pageMarkerStarts = () => {
+  if (!document.querySelector('#audio-data')) return [];
+  return spans
+    .filter((span) => span.kind === 'track' || span.kind === 'topic')
+    .map((span) => span.start)
+    .filter(Number.isFinite)
+    .sort((left, right) => left - right);
+};
+
+const episodeIndex = () => audioEpisodes.findIndex((episode) => episode.slug === audio?.dataset.slug);
+
+const setJumpState = (button, enabled, label, reason = label) => {
+  if (!button) return;
+  button.disabled = !enabled;
+  button.setAttribute('aria-label', label);
+  button.title = enabled ? label : reason;
+};
+
+const syncJumpControls = () => {
+  if (!bar) return;
+  const current = pageMatchesAudio() && Number.isFinite(audio?.currentTime) ? audio.currentTime : 0;
+  const starts = pageMarkerStarts();
+  let previousMarker = null;
+  let nextMarker = null;
+  for (const start of starts) {
+    if (start < current - 0.05) previousMarker = start;
+    else if (start > current + 0.05) {
+      nextMarker = start;
+      break;
+    }
+  }
+  const markerUnavailable = starts.length === 0;
+  const episodePage = Boolean(document.querySelector('.programme'));
+  const markerReason = !episodePage
+    ? 'Znaczniki dostępne na stronie odcinka'
+    : document.querySelector('[data-span-start]')
+      ? 'Skoki wymagają nagrania dostępnego na stronie odcinka'
+      : 'W tym odcinku nie ma znaczników programu';
+  setJumpState(
+    bar.querySelector('[data-jump-marker="-1"]'),
+    !markerUnavailable && previousMarker !== null,
+    'Poprzedni znacznik',
+    markerUnavailable ? markerReason : 'Nie ma wcześniejszego znacznika w tym odcinku'
+  );
+  setJumpState(
+    bar.querySelector('[data-jump-marker="1"]'),
+    !markerUnavailable && nextMarker !== null,
+    'Następny znacznik',
+    markerUnavailable ? markerReason : 'Nie ma następnego znacznika w tym odcinku'
+  );
+
+  const index = episodeIndex();
+  const canFindEpisode = index >= 0;
+  setJumpState(
+    bar.querySelector('[data-jump-episode="-1"]'),
+    canFindEpisode && index > 0,
+    'Poprzednia audycja',
+    canFindEpisode ? 'Brak nowszej audycji w katalogu' : 'Najpierw uruchom audycję z katalogu'
+  );
+  setJumpState(
+    bar.querySelector('[data-jump-episode="1"]'),
+    canFindEpisode && index < audioEpisodes.length - 1,
+    'Następna audycja',
+    canFindEpisode ? 'Brak starszej audycji w katalogu' : 'Najpierw uruchom audycję z katalogu'
+  );
+};
+
+const closeJumpMenu = (restoreFocus = false) => {
+  const toggle = bar?.querySelector('[data-jump-toggle]');
+  const menu = bar?.querySelector('[data-jump-menu]');
+  if (!toggle || !menu || menu.hidden) return;
+  menu.hidden = true;
+  toggle.setAttribute('aria-expanded', 'false');
+  if (restoreFocus) toggle.focus({ preventScroll: true });
+};
+
+const jumpToMarker = (direction) => {
+  if (!audio) return;
+  const starts = pageMarkerStarts();
+  const current = pageMatchesAudio() && Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+  const target = direction < 0
+    ? [...starts].reverse().find((start) => start < current - 0.05)
+    : starts.find((start) => start > current + 0.05);
+  if (target === undefined) return;
+
+  const data = document.querySelector('#audio-data');
+  let page;
+  try {
+    page = JSON.parse(data?.textContent ?? '{}');
+  } catch {
+    return;
+  }
+  if (!page.src || !page.slug) return;
+
+  const resume = !audio.paused;
+  if (!pageMatchesAudio()) {
+    const changed = loadEpisode({ src: page.src, slug: page.slug, title: page.title ?? '' });
+    const seek = () => {
+      audio.currentTime = Math.min(target, Number.isFinite(audio.duration) ? audio.duration : target);
+      if (resume) audio.play().catch(() => {});
+      syncProgress();
+      syncSpans();
+    };
+    if (changed || audio.readyState < 1) audio.addEventListener('loadedmetadata', seek, { once: true });
+    else seek();
+  } else {
+    audio.currentTime = Math.min(target, Number.isFinite(audio.duration) ? audio.duration : target);
+    syncProgress();
+    syncSpans();
+  }
+  syncJumpControls();
+};
+
+const jumpToEpisode = (direction) => {
+  const index = episodeIndex();
+  const episode = audioEpisodes[index + direction];
+  if (!episode) return;
+  playEpisode(episode, 0);
+  syncJumpControls();
+};
+
+document.addEventListener('keydown', (event) => {
+  const jumpMenu = bar?.querySelector('[data-jump-menu]');
+  if (event.key === 'Escape' && jumpMenu && !jumpMenu.hidden) {
+    event.preventDefault();
+    closeJumpMenu(true);
+    return;
+  }
+  if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+  const target = event.target;
+  if (
+    target instanceof Element &&
+    target.closest('input, textarea, select, [contenteditable=""], [contenteditable="true"], [role="textbox"]')
+  ) return;
+  if (!audio?.dataset.src) return;
+
+  if (event.key === ',' || event.key === '.') {
+    event.preventDefault();
+    jumpToMarker(event.key === ',' ? -1 : 1);
+  } else if (event.key === '[' || event.key === ']') {
+    event.preventDefault();
+    jumpToEpisode(event.key === '[' ? -1 : 1);
+  } else if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    event.preventDefault();
+    const delta = event.key === 'ArrowLeft' ? -10 : 10;
+    const limit = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : audio.currentTime + delta;
+    audio.currentTime = Math.min(Math.max(0, audio.currentTime + delta), limit);
+    syncProgress();
+    syncSpans();
+    syncJumpControls();
+  }
 });
 
 /** Stan „gra ten odcinek” dla listy i dla przycisku przy tytule. */
@@ -684,6 +887,7 @@ if (markersRail && 'ResizeObserver' in window) {
 }
 
 const initPage = () => {
+  readAudioEpisodes();
   spans = [...document.querySelectorAll('[data-span-start]')].map((element) => ({
     element,
     start: Number(element.dataset.spanStart),
@@ -786,6 +990,7 @@ const initPage = () => {
   syncSpans();
   syncPlayers();
   syncFragment();
+  syncJumpControls();
 };
 
 /** Przełącznik wejść jest stanem strony, więc trafia do adresu jako `?wejscia=0`.

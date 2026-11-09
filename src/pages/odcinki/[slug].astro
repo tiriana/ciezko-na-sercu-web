@@ -29,6 +29,9 @@ export async function getStaticPaths() {
     getEntries(),
     getDuplicates(),
   ]);
+  const audioEpisodes = visible
+    .filter((item) => item.audioUrl)
+    .map((item) => ({ src: item.audioUrl!, slug: item.slug, title: resolveDisplayTitle(item) }));
   // Katalog jest posortowany od najnowszych, więc „poprzednia" to starsza audycja,
   // a „następna" — nowsza; na krańcach zakresu odpowiedniego linku po prostu nie ma.
   // Sąsiedzi liczą się po widocznych odcinkach, żeby ukryty duplikat nie trafiał do nawigacji.
@@ -41,6 +44,7 @@ export async function getStaticPaths() {
       params: { slug: entry.slug },
       props: {
         entry,
+        audioEpisodes,
         older: older ? { slug: older.slug, title: resolveDisplayTitle(older) } : null,
         newer: newer ? { slug: newer.slug, title: resolveDisplayTitle(newer) } : null,
         duplicate: duplicate
@@ -55,7 +59,7 @@ export async function getStaticPaths() {
   });
 }
 
-const { entry, older, newer, duplicate } = Astro.props;
+const { entry, audioEpisodes, older, newer, duplicate } = Astro.props;
 const [catalog, files, transcripts] = await Promise.all([getCatalog(), getEpisodeFiles(), getTranscripts()]);
 const episode = files.get(entry.id);
 const paragraphs = transcriptParagraphs(transcripts.get(entry.id));
@@ -308,7 +312,14 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
             </div>
 
             {entry.audioUrl && (
-              <script type="application/json" id="audio-data" set:html={JSON.stringify({ src: entry.audioUrl, title: episodeTitle, slug: entry.slug })} />
+              <script
+                type="application/json"
+                id="audio-data"
+                set:html={JSON.stringify({ src: entry.audioUrl, title: episodeTitle, slug: entry.slug })}
+              />
+            )}
+            {entry.audioUrl && (
+              <script type="application/json" id="audio-catalog-data" set:html={JSON.stringify(audioEpisodes)} />
             )}
 
             {unprocessed ? (
