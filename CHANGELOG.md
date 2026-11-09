@@ -1,3 +1,9 @@
+## [1.24.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.24.0...v1.24.1) (2026-11-09)
+
+### Bug Fixes
+
+* **edytor:** trwały outbox i odporność serwera ([f60a0cc](https://github.com/tiriana/ciezko-na-sercu-web/commit/f60a0cc9cae9438125e12594587e4a9af01f6948))
+
 ## [1.24.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.23.0...v1.24.0) (2026-11-09)
 
 ### Features
