@@ -18,7 +18,9 @@ permissions:
 
 concurrency:
   group: deploy-${{ github.ref }}
-  cancel-in-progress: true
+  # Nie przerywamy publikacji w połowie: anulowany upload zostawiał stronę
+  # przez chwilę na mieszance dwóch buildów. Lepiej poczekać w kolejce.
+  cancel-in-progress: false
 
 env:
   CF_PROJECT: ciezko-na-sercu
