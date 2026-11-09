@@ -512,12 +512,24 @@ const readAudioEpisodes = () => {
 
 const pageMarkerStarts = () => {
   if (!document.querySelector('#audio-data')) return [];
-  return spans
+  const starts = spans
     .filter((span) => span.kind === 'track' || span.kind === 'topic')
     .map((span) => span.start)
     .filter(Number.isFinite)
     .sort((left, right) => left - right);
+  return starts.filter((start, index) => index === 0 || start - starts[index - 1] > 0.05);
 };
+
+/** Próg, poniżej którego skok wygląda jak brak ruchu — wtedy cofamy do kolejnego znacznika. */
+const MARKER_MIN_HOP_SEC = 0.75;
+
+/** Poprzedni znacznik zawsze cofa o widoczny kawałek; ten sam znacznik nie liczy się jako „poprzedni”. */
+const previousMarkerStart = (starts, current) => {
+  const earlier = starts.filter((start) => start < current - MARKER_MIN_HOP_SEC);
+  return earlier.length > 0 ? earlier[earlier.length - 1] : null;
+};
+
+const nextMarkerStart = (starts, current) => starts.find((start) => start > current + 0.05) ?? null;
 
 const episodeIndex = () => audioEpisodes.findIndex((episode) => episode.slug === audio?.dataset.slug);
 
@@ -532,15 +544,8 @@ const syncJumpControls = () => {
   if (!bar) return;
   const current = pageMatchesAudio() && Number.isFinite(audio?.currentTime) ? audio.currentTime : 0;
   const starts = pageMarkerStarts();
-  let previousMarker = null;
-  let nextMarker = null;
-  for (const start of starts) {
-    if (start < current - 0.05) previousMarker = start;
-    else if (start > current + 0.05) {
-      nextMarker = start;
-      break;
-    }
-  }
+  const previousMarker = previousMarkerStart(starts, current);
+  const nextMarker = nextMarkerStart(starts, current);
   const markerUnavailable = starts.length === 0;
   const episodePage = Boolean(document.querySelector('.programme'));
   const markerReason = !episodePage
@@ -590,10 +595,8 @@ const jumpToMarker = (direction) => {
   if (!audio) return;
   const starts = pageMarkerStarts();
   const current = pageMatchesAudio() && Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
-  const target = direction < 0
-    ? [...starts].reverse().find((start) => start < current - 0.05)
-    : starts.find((start) => start > current + 0.05);
-  if (target === undefined) return;
+  const target = direction < 0 ? previousMarkerStart(starts, current) : nextMarkerStart(starts, current);
+  if (target === null) return;
 
   const data = document.querySelector('#audio-data');
   let page;
