@@ -239,6 +239,40 @@
       }
       .draft-offer button:hover { background: #fbe9c2; }
       .draft-offer button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+      .outbox-offer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin: 12px 0 4px;
+        padding: 8px 12px;
+        border: 1px solid #287a5b;
+        border-radius: 6px;
+        background: #e9f5ee;
+        color: #18563e;
+        font-size: 12.5px;
+      }
+      .outbox-offer[hidden] { display: none; }
+      .outbox-offer button {
+        padding: 3px 9px;
+        border: 1px solid #287a5b;
+        border-radius: 5px;
+        background: #fffdfb;
+        color: #18563e;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .outbox-offer button:hover { background: #d8eee1; }
+      .outbox-offer button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+      .outbox-error { flex-basis: 100%; color: #8d0b1d; }
+      .outbox-sync {
+        color: #8b6000;
+        font-size: 11px;
+        font-weight: 600;
+      }
+      .outbox-sync[hidden] { display: none; }
       #editor > .toolbar .reload-prompt {
         padding: 3px 9px;
         border: 1px solid #d99b00;
@@ -836,6 +870,12 @@
             <button type="button" id="draft-restore">przywróć</button>
             <button type="button" id="draft-discard">odrzuć</button>
           </div>
+          <div class="outbox-offer" id="outbox-offer" role="status" aria-live="polite" hidden>
+            <span id="outbox-when"></span>
+            <span class="outbox-error" id="outbox-error" hidden></span>
+            <button type="button" id="outbox-send">wyślij</button>
+            <button type="button" id="outbox-discard">odrzuć</button>
+          </div>
 
           <div class="field">
             <label for="title">Tytuł nieoficjalny (puste = tytuł z katalogu)</label>
@@ -895,6 +935,7 @@
               />
               auto-zapis
             </label>
+            <span class="outbox-sync" id="outbox-sync" role="status" aria-live="polite" hidden>synchronizacja…</span>
             <button type="button" class="reload-prompt" id="reload-prompt" hidden>
               edytor zmieniony — odśwież
             </button>
@@ -1116,6 +1157,7 @@
 
       const BASE_TITLE = document.title;
       let dirty = false;
+      let editRevision = 0;
       let statusTimer = 0;
 
       const setStatus = (state, text, title = text) => {
@@ -1141,6 +1183,7 @@
       };
 
       const markDirty = () => {
+        editRevision += 1;
         setDirty(true);
         setStatus('dirty', 'niezapisane zmiany');
         queueAutoSave();
@@ -1226,14 +1269,15 @@
       };
 
       const serverBack = () => {
-        const wasDown = health.state === 'down';
+        const recovered = !serverUp;
         serverUp = true;
         clearTimeout(health.downTimer);
         stopHealthPoll();
-        if (wasDown) {
+        if (recovered) {
           showHealth('back', 'serwer wrócił');
           clearTimeout(health.backTimer);
           health.backTimer = setTimeout(() => showHealth('up', ''), 2500);
+          void retryOutboxAfterRecovery();
         } else {
           showHealth('up', '');
         }
@@ -1245,6 +1289,13 @@
       const DRAFT_TTL_MS = 7 * 24 * 60 * 60 * 1000;
       let draftTimer = 0;
       let pendingDraft = null;
+      const OUTBOX_DB_NAME = 'edytorOutbox';
+      const OUTBOX_STORE_NAME = 'outbox';
+      const OUTBOX_SEQUENCE_STORE = 'sequences';
+      let outboxDbPromise = null;
+      let currentOutbox = null;
+      let outboxMessage = '';
+      let outboxReplayRunning = false;
 
       const draftKeyFor = (id) => `${DRAFT_PREFIX}${id}`;
 
@@ -1284,6 +1335,151 @@
         try {
           localStorage.removeItem(draftKeyFor(id));
         } catch {}
+      };
+
+      const openOutboxDb = () => {
+        if (outboxDbPromise) return outboxDbPromise;
+        outboxDbPromise = new Promise((resolve, reject) => {
+          if (!('indexedDB' in window)) {
+            reject(new Error('IndexedDB jest niedostępne'));
+            return;
+          }
+          const request = indexedDB.open(OUTBOX_DB_NAME, 2);
+          request.onupgradeneeded = () => {
+            if (!request.result.objectStoreNames.contains(OUTBOX_STORE_NAME)) {
+              request.result.createObjectStore(OUTBOX_STORE_NAME);
+            }
+            if (!request.result.objectStoreNames.contains(OUTBOX_SEQUENCE_STORE)) {
+              request.result.createObjectStore(OUTBOX_SEQUENCE_STORE);
+            }
+          };
+          request.onsuccess = () => resolve(request.result);
+          request.onerror = () => reject(request.error ?? new Error('nie można otworzyć IndexedDB'));
+          request.onblocked = () => reject(new Error('IndexedDB jest zablokowane przez inną kartę'));
+        });
+        return outboxDbPromise;
+      };
+
+      const readOutbox = async (id) => {
+        const db = await openOutboxDb();
+        return new Promise((resolve, reject) => {
+          const transaction = db.transaction(OUTBOX_STORE_NAME, 'readonly');
+          const request = transaction.objectStore(OUTBOX_STORE_NAME).get(id);
+          request.onsuccess = () => resolve(request.result ?? null);
+          request.onerror = () => reject(request.error ?? new Error('nie można odczytać skrzynki'));
+        });
+      };
+
+      const writeOutbox = async (id, payload) => {
+        const db = await openOutboxDb();
+        return new Promise((resolve, reject) => {
+          const transaction = db.transaction([OUTBOX_STORE_NAME, OUTBOX_SEQUENCE_STORE], 'readwrite');
+          const store = transaction.objectStore(OUTBOX_STORE_NAME);
+          const sequences = transaction.objectStore(OUTBOX_SEQUENCE_STORE);
+          let record = null;
+          let previousRecord;
+          let previousSequence;
+          let recordReady = false;
+          let sequenceReady = false;
+          const commit = () => {
+            if (!recordReady || !sequenceReady) return;
+            const previousSnapshot = previousRecord?.payload?.snapshot;
+            const previousRevision = Math.max(Number(previousSnapshot?.revision ?? -1), Number(previousSequence?.revision ?? -1));
+            const nextRevision = Number(payload?.snapshot?.revision ?? 0);
+            const previousStateAt = Math.max(Number(previousSnapshot?.stateAt ?? -1), Number(previousSequence?.stateAt ?? -1));
+            const nextStateAt = Number(payload?.snapshot?.stateAt ?? 0);
+            if (previousRevision > nextRevision || (previousRevision === nextRevision && previousStateAt > nextStateAt)) {
+              if (!previousRecord) {
+                record = { seq: previousSequence.seq, id, stale: true, absent: true };
+                return;
+              }
+              record = { ...previousRecord, id, stale: true };
+              return;
+            }
+            record = {
+              seq: Math.max(Number(previousRecord?.seq) || 0, Number(previousSequence?.seq) || 0) + 1,
+              savedAt: Date.now(),
+              payload: structuredClone(payload),
+            };
+            store.put(record, id);
+            sequences.put({ seq: record.seq, revision: nextRevision, stateAt: nextStateAt }, id);
+          };
+          const request = store.get(id);
+          const sequenceRequest = sequences.get(id);
+          request.onsuccess = () => {
+            previousRecord = request.result;
+            recordReady = true;
+            commit();
+          };
+          sequenceRequest.onsuccess = () => {
+            previousSequence = sequenceRequest.result;
+            sequenceReady = true;
+            commit();
+          };
+          transaction.oncomplete = () => {
+            if (record.stale) {
+              currentOutbox = record.absent
+                ? null
+                : { ...record, restored: currentOutbox?.restored ?? false };
+              renderOutbox();
+              resolve(record);
+              return;
+            }
+            record.id = id;
+            record.restored = currentOutbox?.id === id && currentOutbox.restored;
+            currentOutbox = record;
+            outboxMessage = '';
+            renderOutbox();
+            resolve(record);
+          };
+          transaction.onerror = () => reject(transaction.error ?? new Error('nie można zapisać skrzynki'));
+          transaction.onabort = () => reject(transaction.error ?? new Error('zapis skrzynki został przerwany'));
+        });
+      };
+
+      const clearOutbox = async (id, seq) => {
+        const db = await openOutboxDb();
+        return new Promise((resolve, reject) => {
+          const transaction = db.transaction(OUTBOX_STORE_NAME, 'readwrite');
+          const store = transaction.objectStore(OUTBOX_STORE_NAME);
+          let cleared = false;
+          const request = store.get(id);
+          request.onsuccess = () => {
+            if (request.result?.seq !== seq) return;
+            store.delete(id);
+            cleared = true;
+          };
+          transaction.oncomplete = () => {
+            if (cleared && currentOutbox?.id === id && currentOutbox.seq === seq) {
+              currentOutbox = null;
+              outboxMessage = '';
+              renderOutbox();
+            }
+            resolve(cleared);
+          };
+          transaction.onerror = () => reject(transaction.error ?? new Error('nie można wyczyścić skrzynki'));
+          transaction.onabort = () => reject(transaction.error ?? new Error('czyszczenie skrzynki zostało przerwane'));
+        });
+      };
+
+      const outboxTime = (record) => {
+        const date = new Date(record.savedAt);
+        return `${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`;
+      };
+
+      const renderOutbox = () => {
+        const offer = $('outbox-offer');
+        const indicator = $('outbox-sync');
+        const visible = Boolean(currentOutbox && currentOutbox.id === state.episode?.id);
+        offer.hidden = !visible;
+        indicator.hidden = !visible;
+        if (!visible) return;
+        $('outbox-when').textContent = currentOutbox.restored
+          ? `przywrócono niezapisane zmiany z ${outboxTime(currentOutbox)}`
+          : `oczekujące zmiany z ${outboxTime(currentOutbox)}`;
+        const error = $('outbox-error');
+        error.hidden = !outboxMessage;
+        error.textContent = outboxMessage;
       };
 
       const readDraft = (id) => {
@@ -1336,6 +1532,11 @@
       const offerDraft = (id) => {
         const draft = readDraft(id);
         const node = $('draft-offer');
+        if (currentOutbox?.id === id) {
+          pendingDraft = null;
+          node.hidden = true;
+          return;
+        }
         if (!draft || timelineFingerprint(draft) === timelineFingerprint(currentTimeline())) {
           pendingDraft = null;
           node.hidden = true;
@@ -1718,6 +1919,114 @@
         }
       };
 
+      const snapshotTrack = (track) => ({
+        artist: track.artist ?? '',
+        title: track.title ?? '',
+        album: track.album ?? null,
+        start: Number(track.start),
+        durationSec: track.durationSec ?? null,
+        end: track.end ?? null,
+      });
+
+      const outboxTopicFingerprint = (topic) => ({
+        label: topic.label ?? '',
+        start: Number(topic.start),
+        end: topic.end ?? null,
+      });
+
+      const editorSnapshot = () => ({
+        title: $('title').value.trim(),
+        revision: editRevision,
+        stateAt: Date.now(),
+        tracks: structuredClone(state.tracks),
+        topics: state.topics.map((topic) => ({
+          data: structuredClone(topic),
+          base: structuredClone(topicBase.get(topic) ?? state.baseTopics.find((item) => item.label === topic.label) ?? null),
+        })),
+        addTracks: structuredClone(state.addTracks),
+        addTopics: structuredClone(state.addTopics),
+        hiddenTracks: structuredClone(state.hiddenTracks),
+        hiddenTopics: structuredClone(state.hiddenTopics),
+      });
+
+      const snapshotFingerprint = (snapshot) =>
+        JSON.stringify({
+          title: snapshot.title ?? '',
+          tracks: (snapshot.tracks ?? []).map(snapshotTrack).sort((left, right) => left.start - right.start || left.title.localeCompare(right.title)),
+          topics: (snapshot.topics ?? [])
+            .map((entry) => outboxTopicFingerprint(entry.data ?? entry))
+            .sort((left, right) => left.start - right.start || left.label.localeCompare(right.label)),
+          addTracks: (snapshot.addTracks ?? []).map(snapshotTrack).sort((left, right) => left.start - right.start || left.title.localeCompare(right.title)),
+          addTopics: (snapshot.addTopics ?? []).map(outboxTopicFingerprint).sort((left, right) => left.start - right.start || left.label.localeCompare(right.label)),
+          hiddenTracks: (snapshot.hiddenTracks ?? []).map(snapshotTrack).sort((left, right) => left.start - right.start || left.title.localeCompare(right.title)),
+          hiddenTopics: (snapshot.hiddenTopics ?? []).map(outboxTopicFingerprint).sort((left, right) => left.start - right.start || left.label.localeCompare(right.label)),
+        });
+
+      const serverSnapshot = (data) => ({
+        title: data.title ?? '',
+        tracks: data.tracks ?? [],
+        topics: data.topics ?? [],
+        addTracks: data.addTracks ?? [],
+        addTopics: data.addTopics ?? [],
+        hiddenTracks: (data.raw?.tracks ?? []).filter((track) => track.hide),
+        hiddenTopics: (data.raw?.topics ?? []).filter((topic) => topic.hide),
+      });
+
+      const restoreOutboxState = (snapshot) => {
+        editRevision = Math.max(editRevision, Number(snapshot.revision) || 0) + 1;
+        state.tracks = structuredClone(snapshot.tracks ?? []);
+        state.topics = (snapshot.topics ?? []).map((entry) => {
+          const topic = structuredClone(entry.data ?? entry);
+          const base = entry.base ?? state.baseTopics.find((item) => item.label === topic.label) ?? null;
+          if (base) topicBase.set(topic, structuredClone(base));
+          return topic;
+        });
+        state.addTracks = structuredClone(snapshot.addTracks ?? []);
+        state.addTopics = structuredClone(snapshot.addTopics ?? []);
+        state.hiddenTracks = structuredClone(snapshot.hiddenTracks ?? []);
+        state.hiddenTopics = structuredClone(snapshot.hiddenTopics ?? []);
+        $('title').value = snapshot.title ?? '';
+        renderTracks();
+        renderTopics();
+        renderAdded();
+        renderRestore();
+        editRevision += 1;
+        setDirty(true);
+        setStatus('dirty', 'przywrócono niezapisane zmiany');
+        queueDraft();
+      };
+
+      const loadOutboxForEpisode = async (data) => {
+        currentOutbox = null;
+        outboxMessage = '';
+        renderOutbox();
+        let record;
+        try {
+          record = await readOutbox(data.id);
+        } catch (error) {
+          setStatus('error', 'nie można odczytać kopii offline', error.message);
+          return;
+        }
+        if (!record) return;
+        currentOutbox = { ...record, id: data.id, restored: false };
+        const snapshot = record.payload?.snapshot;
+        editRevision = Math.max(editRevision, Number(snapshot?.revision) || 0);
+        if (snapshot && snapshotFingerprint(snapshot) !== snapshotFingerprint(serverSnapshot(data))) {
+          currentOutbox.restored = true;
+          restoreOutboxState(snapshot);
+        }
+        renderOutbox();
+      };
+
+      const discardOutboxForEpisode = async () => {
+        const id = state.episode?.id;
+        const record = currentOutbox;
+        if (!id || !record) return;
+        const cleared = await clearOutbox(id, record.seq);
+        if (cleared) dropDraft(id);
+        await openEpisode(id);
+      };
+
       const seek = (seconds) => {
         const audio = $('audio');
         if (!Number.isFinite(seconds)) return;
@@ -1730,6 +2039,9 @@
         cancelAutoSave();
         pendingDraft = null;
         $('draft-offer').hidden = true;
+        currentOutbox = null;
+        outboxMessage = '';
+        renderOutbox();
         setDirty(false);
         setStatus('clean', 'brak zmian');
         const response = await fetch(`/api/episode?id=${encodeURIComponent(id)}`);
@@ -1775,6 +2087,7 @@
         renderTopics();
         renderAdded();
         renderRestore();
+        await loadOutboxForEpisode(data);
         renderList();
         openWave(data.id);
         offerDraft(data.id);
@@ -3419,7 +3732,7 @@
         renderAdded();
       });
 
-      const saveEpisode = async () => {
+      const saveEpisode = async (payloadOverride = null) => {
         const episode = state.episode;
         if (!episode) return false;
         // Ręczny zapis poleceniem lub przyciskiem unieważnia zaplanowany auto-zapis.
@@ -3472,46 +3785,106 @@
         }
         topics.push(...state.hiddenTopics);
 
-        setStatus('saving', 'zapisuję…', 'trwa zapis');
+        const revision = editRevision;
+        const payload = payloadOverride ?? {
+          id: episode.id,
+          title: $('title').value,
+          tracks,
+          topics,
+          addTracks: state.addTracks,
+          addTopics: state.addTopics,
+          snapshot: editorSnapshot(),
+        };
         try {
+          const outboxRecord = await writeOutbox(episode.id, payload);
+          if (outboxRecord.stale) {
+            outboxMessage = 'jest już nowsza kopia — nie wysłano starszych zmian';
+            renderOutbox();
+            setStatus('error', 'nie wysłano starszych zmian');
+            return false;
+          }
+          setStatus('saving', 'zapisuję…', 'trwa zapis');
           const response = await fetch('/api/save', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({
-              id: episode.id,
-              title: $('title').value,
-              tracks,
-              topics,
-              addTracks: state.addTracks,
-              addTopics: state.addTopics,
-            }),
+            body: JSON.stringify(payload),
           });
           // Sam status 200 nie wystarcza: przy padniętym serwerze albo pośredniku
           // odpowiedź bywa pusta, a wtedy „zapisane” byłoby kłamstwem.
           const data = await response.json().catch(() => null);
-          if (!response.ok || data?.ok !== true) {
+          if (response.status !== 200 || data?.ok !== true) {
             const reason = data?.error ?? (response.ok ? 'serwer nie potwierdził zapisu' : `serwer odpowiedział ${response.status}`);
+            outboxMessage = 'nie udało się wysłać — spróbuj ponownie';
+            renderOutbox();
             setStatus('error', 'błąd: nie zapisano', `błąd: nie zapisano — ${reason}`);
             return false;
           }
+          let cleared = false;
+          try {
+            cleared = await clearOutbox(episode.id, outboxRecord.seq);
+          } catch (error) {
+            outboxMessage = `zapisano na serwerze, ale nie można potwierdzić synchronizacji: ${error.message}`;
+            renderOutbox();
+          }
           const label = savedLabel();
           const note = `${label} — zbuduj stronę (npm run build)`;
-          setDirty(false);
-          dropDraft(episode.id);
-          setStatus('saved', label, note);
-          statusTimer = setTimeout(() => setStatus('clean', label, note), 4000);
+          if (cleared && revision === editRevision) {
+            setDirty(false);
+            dropDraft(episode.id);
+            setStatus('saved', label, note);
+            statusTimer = setTimeout(() => setStatus('clean', label, note), 4000);
+          } else {
+            setDirty(true);
+            setStatus('dirty', 'zapisano starszą wersję — są nowsze zmiany');
+          }
           episodes = episodes.map((item) => (item.id === episode.id ? { ...item, displayTitle: $('title').value.trim() || item.originalTitle } : item));
           renderList();
           return true;
         } catch (error) {
+          outboxMessage = 'nie udało się wysłać — spróbuj ponownie';
+          renderOutbox();
+          serverDown();
           setStatus('error', 'błąd: nie zapisano', `błąd: nie zapisano — ${error.message}`);
           return false;
+        }
+      };
+
+      const submitOutbox = async () => {
+        const id = state.episode?.id;
+        if (!id) return false;
+        try {
+          const record = await readOutbox(id);
+          const current = editorSnapshot();
+          if (record?.payload?.snapshot && snapshotFingerprint(record.payload.snapshot) === snapshotFingerprint(current)) {
+            return saveEpisode(record.payload);
+          }
+        } catch (error) {
+          outboxMessage = `nie można odczytać kopii: ${error.message}`;
+          renderOutbox();
+          return false;
+        }
+        return saveEpisode();
+      };
+
+      const retryOutboxAfterRecovery = async () => {
+        if (outboxReplayRunning || !currentOutbox || currentOutbox.id !== state.episode?.id) return;
+        outboxReplayRunning = true;
+        try {
+          await submitOutbox();
+        } finally {
+          outboxReplayRunning = false;
         }
       };
 
       $('save').addEventListener('click', () => {
         saveEpisode();
       });
+
+      $('outbox-send').addEventListener('click', () => submitOutbox());
+      $('outbox-discard').addEventListener('click', () => discardOutboxForEpisode().catch((error) => {
+        outboxMessage = `nie można odrzucić kopii: ${error.message}`;
+        renderOutbox();
+      }));
 
       // Ctrl/Cmd+S zapisuje wszędzie, Ctrl/Cmd+Z cofa tylko wtedy, gdy fokus nie jest
       // w polu tekstowym — tam natywne cofanie przeglądarki ma pierwszeństwo.

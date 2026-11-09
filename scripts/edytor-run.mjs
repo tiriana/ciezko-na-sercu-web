@@ -6,16 +6,17 @@
 import { spawn } from 'node:child_process';
 import { appendFile, mkdir, stat } from 'node:fs/promises';
 import { watch } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const LOG = join(ROOT, '.cache', 'edytor.log');
+const LOG = join(resolve(process.env.EDITOR_CACHE_DIR ?? join(ROOT, '.cache')), 'edytor.log');
 const ENTRY = join(ROOT, 'scripts', 'edytor.mjs');
 
-const stamp = () => new Date().toISOString().slice(11, 19);
-const log = async (line) => {
-  const text = `[${stamp()}] ${line}\n`;
+const stamp = () => new Date().toISOString();
+const log = async (line, error) => {
+  const detail = error instanceof Error ? error.stack ?? error.message : String(error ?? '');
+  const text = `[${stamp()}] ${line}${detail ? `\n${detail}` : ''}\n`;
   process.stdout.write(text);
   await appendFile(LOG, text).catch(() => {});
 };
@@ -31,6 +32,7 @@ let startedAt = 0;
 const start = () => {
   startedAt = Date.now();
   child = spawn(process.execPath, [ENTRY], { cwd: ROOT, env: process.env, stdio: ['ignore', 'pipe', 'pipe'] });
+  void log(`start pid=${child.pid ?? '—'} port=${process.env.PORT ?? 4330}`);
   child.stdout.on('data', (chunk) => process.stdout.write(chunk));
   child.stderr.on('data', (chunk) => {
     process.stderr.write(chunk);
@@ -48,6 +50,7 @@ const start = () => {
       if (!stopping) start();
     }, delay);
   });
+  child.on('error', (error) => log('nie udało się uruchomić serwera', error));
 };
 
 const restart = async (reason) => {
@@ -86,6 +89,7 @@ watcher.on('error', (error) => log(`podgląd plików: ${error.message}`));
 
 const stop = () => {
   stopping = true;
+  void log('nadzorca zatrzymany przez sygnał');
   child?.kill('SIGTERM');
   setTimeout(() => process.exit(0), 300);
 };

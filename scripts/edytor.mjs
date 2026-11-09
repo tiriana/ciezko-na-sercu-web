@@ -7,19 +7,28 @@
  */
 import { createServer } from 'node:http';
 import { spawn } from 'node:child_process';
-import { createHash } from 'node:crypto';
-import { readFile, writeFile, rename, readdir, mkdir, stat } from 'node:fs/promises';
+import { createHash, randomUUID } from 'node:crypto';
+import { appendFile, readFile, writeFile, rename, readdir, mkdir, rm, stat } from 'node:fs/promises';
 import { watch } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DATA = join(ROOT, 'data');
+const DATA = resolve(process.env.EDITOR_DATA_DIR ?? join(ROOT, 'data'));
 const PORT = Number(process.env.PORT ?? 4330);
-const CACHE = join(ROOT, '.cache');
+const CACHE = resolve(process.env.EDITOR_CACHE_DIR ?? join(ROOT, '.cache'));
+const LOG = join(CACHE, 'edytor.log');
 const PEAKS = join(CACHE, 'peaks');
 const PEAKS_PER_SEC = 100; // 1 słupek = 10 ms
 const SAMPLE_RATE = 2000; // z tego redukujemy do PEAKS_PER_SEC (max z 20 próbek)
+
+const log = async (message, error) => {
+  const detail = error instanceof Error ? error.stack ?? error.message : String(error ?? '');
+  const text = `[${new Date().toISOString()}] ${message}${detail ? `\n${detail}` : ''}\n`;
+  process.stderr.write(text);
+  await mkdir(CACHE, { recursive: true }).catch(() => {});
+  await appendFile(LOG, text).catch(() => {});
+};
 
 const readJson = async (path, fallback) => {
   try {
@@ -27,12 +36,13 @@ const readJson = async (path, fallback) => {
   } catch (error) {
     // Uszkodzony plik (np. zapis przerwany restartem) nie może udawać „brak danych”,
     // bo następny zapis nadpisałby go pustką. Zostawiamy kopię i mówimy o tym głośno.
+    if (error.code === 'ENOENT') return fallback;
     if (error.code !== 'ENOENT') {
       const copy = `${path}.uszkodzony`;
       await writeFile(copy, `${await readFile(path, 'utf8')}\n`).catch(() => {});
-      console.error(`Nie da się odczytać ${path}: ${error.message} — kopia w ${copy}`);
+      await log(`Nie da się odczytać ${path} — kopia w ${copy}`, error);
     }
-    return fallback;
+    throw error;
   }
 };
 
@@ -40,9 +50,14 @@ const readJson = async (path, fallback) => {
 // nigdy uciętą w połowie.
 const writeJson = async (path, value) => {
   await mkdir(dirname(path), { recursive: true });
-  const temp = `${path}.tmp-${process.pid}`;
-  await writeFile(temp, `${JSON.stringify(value, null, 2)}\n`);
-  await rename(temp, path);
+  const temp = `${path}.tmp-${process.pid}-${randomUUID()}`;
+  try {
+    await writeFile(temp, `${JSON.stringify(value, null, 2)}\n`);
+    await rename(temp, path);
+  } catch (error) {
+    await rm(temp, { force: true }).catch(() => {});
+    throw error;
+  }
 };
 
 const normalize = (value) => (value ?? '').normalize('NFC').trim().toLowerCase();
@@ -125,11 +140,22 @@ const loadOverrides = async () => {
   let names = [];
   try {
     names = (await readdir(join(DATA, 'overrides'))).filter((name) => name.endsWith('.json'));
-  } catch {
-    return map;
+  } catch (error) {
+    if (error.code === 'ENOENT') return map;
+    throw error;
   }
   for (const name of names) {
-    map.set(name.replace(/\.json$/, ''), await readJson(join(DATA, 'overrides', name), null));
+    const path = join(DATA, 'overrides', name);
+    const value = await readJson(path, null);
+    if (!value || typeof value !== 'object' || Array.isArray(value)) {
+      throw new TypeError(`nieprawidłowy plik poprawek: ${path}`);
+    }
+    for (const field of ['tracks', 'topics', 'addTracks', 'addTopics']) {
+      if (value[field] !== undefined && !Array.isArray(value[field])) {
+        throw new TypeError(`pole ${field} nie jest tablicą w ${path}`);
+      }
+    }
+    map.set(name.replace(/\.json$/, ''), value);
   }
   return map;
 };
@@ -139,8 +165,9 @@ const loadEpisodes = async () => {
   let names = [];
   try {
     names = (await readdir(join(DATA, 'episodes'))).filter((name) => name.endsWith('.json'));
-  } catch {
-    return map;
+  } catch (error) {
+    if (error.code === 'ENOENT') return map;
+    throw error;
   }
   for (const name of names) {
     map.set(name.replace(/\.json$/, ''), await readJson(join(DATA, 'episodes', name), null));
@@ -289,13 +316,69 @@ const json = (res, status, value) => {
 const readBody = (req) =>
   new Promise((resolve, reject) => {
     let data = '';
+    let tooLarge = false;
     req.on('data', (chunk) => {
+      if (tooLarge) return;
       data += chunk;
-      if (data.length > 1_000_000) reject(new Error('za duże'));
+      if (Buffer.byteLength(data) > 1_000_000) {
+        tooLarge = true;
+        data = '';
+      }
     });
-    req.on('end', () => resolve(data));
+    req.on('end', () => (tooLarge ? reject(new Error('za duże żądanie')) : resolve(data)));
     req.on('error', reject);
   });
+
+const validateSavePayload = (payload) => {
+  const record = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
+  const string = (value) => typeof value === 'string';
+  const optionalString = (value) => value === undefined || value === null || string(value);
+  const optionalNumber = (value) => value === undefined || value === null || (typeof value === 'number' && Number.isFinite(value));
+  const optionalBoolean = (value) => value === undefined || typeof value === 'boolean';
+  const array = (value) => value === undefined || Array.isArray(value);
+  const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+
+  if (!record(payload)) return 'treść musi być obiektem JSON';
+  if (typeof payload.id !== 'string' || !uuid.test(payload.id)) return 'id odcinka ma nieprawidłowy format';
+  if (!optionalString(payload.title)) return 'title musi być tekstem';
+  for (const key of ['tracks', 'topics', 'addTracks', 'addTopics']) {
+    if (!array(payload[key])) return `${key} musi być tablicą`;
+  }
+  for (const [index, track] of (payload.tracks ?? []).entries()) {
+    if (!record(track)) return `tracks[${index}] musi być obiektem`;
+    for (const field of ['artist', 'title', 'newArtist', 'newTitle', 'album', 'newAlbum']) {
+      if (!optionalString(track[field])) return `tracks[${index}].${field} musi być tekstem`;
+    }
+    for (const field of ['start', 'durationSec', 'end']) {
+      if (!optionalNumber(track[field])) return `tracks[${index}].${field} musi być liczbą`;
+    }
+    if (!optionalBoolean(track.hide)) return `tracks[${index}].hide musi być wartością logiczną`;
+  }
+  for (const [index, topic] of (payload.topics ?? []).entries()) {
+    if (!record(topic)) return `topics[${index}] musi być obiektem`;
+    if (typeof topic.label !== 'string') return `topics[${index}].label musi być tekstem`;
+    if (typeof topic.time !== 'number' || !Number.isFinite(topic.time)) return `topics[${index}].time musi być liczbą`;
+    for (const field of ['time', 'start', 'end']) {
+      if (!optionalNumber(topic[field])) return `topics[${index}].${field} musi być liczbą`;
+    }
+    if (!optionalString(topic.newLabel)) return `topics[${index}].newLabel musi być tekstem`;
+    if (!optionalBoolean(topic.hide)) return `topics[${index}].hide musi być wartością logiczną`;
+  }
+  for (const [index, track] of (payload.addTracks ?? []).entries()) {
+    if (!record(track)) return `addTracks[${index}] musi być obiektem`;
+    if (!string(track.artist) || !string(track.title)) return `addTracks[${index}] wymaga tekstowych pól artist i title`;
+    if (!optionalString(track.album)) return `addTracks[${index}].album musi być tekstem`;
+    if (typeof track.start !== 'number' || !Number.isFinite(track.start)) return `addTracks[${index}].start musi być liczbą`;
+    if (!optionalNumber(track.durationSec)) return `addTracks[${index}].durationSec musi być liczbą`;
+  }
+  for (const [index, topic] of (payload.addTopics ?? []).entries()) {
+    if (!record(topic)) return `addTopics[${index}] musi być obiektem`;
+    if (typeof topic.label !== 'string') return `addTopics[${index}].label musi być tekstem`;
+    if (typeof topic.start !== 'number' || !Number.isFinite(topic.start)) return `addTopics[${index}].start musi być liczbą`;
+    if (!optionalNumber(topic.end)) return `addTopics[${index}].end musi być liczbą`;
+  }
+  return null;
+};
 
 /** Szczyty głośności do waveformu: ffmpeg czyta nagranie strumieniem z URL (range
  * requests), więc plik na dysku nie jest potrzebny. Wynik leży w `.cache/peaks`. */
@@ -377,10 +460,9 @@ const loadPeaks = async (id, audioUrl) => {
   return job;
 };
 
-const server = createServer(async (req, res) => {
-  const url = new URL(req.url ?? '/', `http://localhost:${PORT}`);
-
+const handleRequest = async (req, res) => {
   try {
+    const url = new URL(req.url ?? '/', `http://localhost:${PORT}`);
     if (url.pathname === '/') {
       // Bez tego przeglądarka trzyma starą wersję edytora i nowe skróty „nie działają”.
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
@@ -551,13 +633,24 @@ const server = createServer(async (req, res) => {
     }
 
     if (req.method === 'POST' && url.pathname === '/api/save') {
-      const payload = JSON.parse(await readBody(req));
-      const id = payload.id;
-      if (!id) return json(res, 400, { error: 'brak id' });
+      let payload;
+      try {
+        payload = JSON.parse(await readBody(req));
+      } catch (error) {
+        await log('nieprawidłowe żądanie /api/save', error);
+        return json(res, 400, { ok: false, error: `nieprawidłowy JSON: ${error.message}` });
+      }
+      const validation = validateSavePayload(payload);
+      if (validation) {
+        const error = new TypeError(validation);
+        await log('nieprawidłowe żądanie /api/save', error);
+        return json(res, 400, { ok: false, error: validation });
+      }
+      const { id } = payload;
 
       const catalog = await loadCatalog();
       const entry = catalog.episodes.find((item) => item.id === id);
-      if (!entry) return json(res, 404, { error: 'nie ma takiego odcinka' });
+      if (!entry) return json(res, 400, { ok: false, error: 'nie ma takiego odcinka' });
 
       const overrides = await loadOverrides();
       const previous = overrides.get(id) ?? { version: 1, tracks: [], topics: [], credits: { rename: {} } };
@@ -601,7 +694,6 @@ const server = createServer(async (req, res) => {
         next.addTopics.length === 0;
       const overridePath = join(DATA, 'overrides', `${id}.json`);
       if (empty) {
-        const { rm } = await import('node:fs/promises');
         await rm(overridePath, { force: true });
       } else {
         await writeJson(overridePath, next);
@@ -628,8 +720,16 @@ const server = createServer(async (req, res) => {
 
     json(res, 404, { error: 'nie ma takiej ścieżki' });
   } catch (error) {
-    json(res, 500, { error: String(error) });
+    await log(`błąd żądania ${req.method} ${req.url ?? '/'}`, error);
+    json(res, 500, { ok: false, error: error instanceof Error ? error.message : String(error) });
   }
+};
+
+const server = createServer((req, res) => {
+  void handleRequest(req, res).catch(async (error) => {
+    await log(`błąd granicy żądania ${req.method} ${req.url ?? '/'}`, error);
+    json(res, 500, { ok: false, error: error instanceof Error ? error.message : String(error) });
+  });
 });
 
 // Port bywa zajęty przez stary proces, który dopiero się zamyka — zamiast umierać
@@ -637,24 +737,26 @@ const server = createServer(async (req, res) => {
 const listen = (attempt = 0) => {
   server.listen(PORT, () => {
     console.log(`Edytor: http://localhost:${PORT}`);
-    console.log('Zapisuje do data/overrides i data/titles.json — potem: npm run build');
+    console.log(`Dane: ${DATA}; log: ${LOG}`);
+    void log(`start pid=${process.pid} port=${PORT} data=${DATA}`);
   });
   server.once('error', (error) => {
     if (error.code === 'EADDRINUSE' && attempt < 10) {
-      console.error(`Port ${PORT} zajęty, czekam ${attempt + 1}/10…`);
+      void log(`port ${PORT} zajęty, próba ${attempt + 1}/10`, error);
       setTimeout(() => listen(attempt + 1), 1000);
       return;
     }
-    console.error(`Serwer nie wystartował: ${error.message}`);
+    void log(`serwer nie wystartował na porcie ${PORT}`, error);
     process.exit(2);
   });
 };
-listen();
 
 // Jeden nieudany request nie może gasić edytora w trakcie pracy.
 process.on('uncaughtException', (error) => {
-  console.error('nieobsłużony wyjątek:', error);
+  void log('uncaughtException — proces pozostaje aktywny', error);
 });
 process.on('unhandledRejection', (reason) => {
-  console.error('nieobsłużone odrzucenie:', reason);
+  void log('unhandledRejection — proces pozostaje aktywny', reason);
 });
+
+listen();
