@@ -1,3 +1,9 @@
+## [1.22.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.22.0...v1.22.1) (2026-11-09)
+
+### Bug Fixes
+
+* licznik czasu w pasku ma stałą szerokość ([0bdffc5](https://github.com/tiriana/ciezko-na-sercu-web/commit/0bdffc56b21f96db4c5566afeec0a2072abf07e0))
+
 ## [1.22.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.21.0...v1.22.0) (2026-11-09)
 
 ### Features
