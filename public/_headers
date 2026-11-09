@@ -1,0 +1,15 @@
+# Cache-Control dla Cloudflare Pages. Pliki w /_astro/ mają hash w nazwie, więc mogą być
+# cache'owane na zawsze; fonty nie mają hasha, więc tydzień. HTML zawsze rewalidujemy.
+# Cloudflare dokleja nagłówki ze wszystkich pasujących reguł, dlatego węższe reguły
+# najpierw zdejmują Cache-Control z `/*`, a dopiero potem ustawiają własny.
+
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/_astro/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  ! Cache-Control
+  Cache-Control: public, max-age=604800

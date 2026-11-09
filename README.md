@@ -51,6 +51,18 @@ mise run dev       # podgląd na http://localhost:4321
 7. `npm run catalog -- .cache/episodes.json data/catalog.json` — przelicza katalog
    z pobranej listy.
 
+## Fonty
+
+`scripts/subset-fonts.sh` odtwarza `public/fonts/*.woff2` przez `pyftsubset` (fontTools +
+brotli) do zakresu znaków używanego na stronie i sprawdza, że każdy znak z `dist/**/*.html`
+obecny w źródle trafił do podzbioru:
+
+```
+python3 -m venv .venv-fonts
+.venv-fonts/bin/pip install fonttools brotli
+PATH="$PWD/.venv-fonts/bin:$PATH" scripts/subset-fonts.sh
+```
+
 ## Edytor osi czasu
 
 `npm run edytor` otwiera listę odcinków, waveform, player, edycję tytułu, utworów

@@ -6,6 +6,7 @@ dist/
 mockup/CNAME
 
 # Artefakty narzędzi lokalnych
+.venv-fonts/
 .playwright-mcp/
 .cortexkit/
 .cache/
