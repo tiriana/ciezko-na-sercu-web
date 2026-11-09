@@ -112,6 +112,7 @@ export async function getEpisodeFiles(): Promise<Map<string, Episode>> {
           start: track.start,
           end: track.end ?? (track.durationSec ? track.start + track.durationSec : undefined),
           durationSec: track.durationSec,
+          ...(track.unrecognized ? { unrecognized: true } : {}),
         }))
       );
       episode.tracks.sort((left, right) => left.start - right.start);

@@ -89,6 +89,8 @@ export const episodeSchema = z.object({
       confidence: z.string().nullable(),
       sources: z.array(z.string()),
       links: z.array(z.url()),
+      /** Rozpoznanie się nie udało — strona pokazuje to wprost. */
+      unrecognized: z.boolean().optional(),
     }),
   ),
   quotes: z.array(z.object({ start: z.number(), text: z.string() })),
@@ -131,6 +133,8 @@ export const overrideSchema = z.object({
         durationSec: z.number().optional(),
         /** Ręczna granica dodanego utworu; bez niej `end` wynika z `durationSec`. */
         end: z.number().optional(),
+        /** Utwór, którego nie udało się rozpoznać — tytuł zastępczy, flaga dla strony. */
+        unrecognized: z.boolean().optional(),
       })
     )
     .default([]),
