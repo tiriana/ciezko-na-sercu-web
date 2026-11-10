@@ -128,13 +128,20 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git diff --quiet && git diff --cached --quiet; then
-            echo "Brak zmian."
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/overrides data/voiceprint.json
-          git commit -m "fix: wejścia z profilu głosu (${GITHUB_RUN_ID})"
-          git push
+          bash scripts/push-data.sh "fix: wejścia z profilu głosu (${GITHUB_RUN_ID})" data/overrides data/voiceprint.json
           gh workflow run deploy.yml --ref main
+
+      # Push mógł się nie udać mimo ponowień; wtedy praca i tak nie przepada —
+      # poprawki da się pobrać z artefaktu i nałożyć ręcznie.
+      - name: Zachowaj poprawki, gdy push się nie udał
+        if: failure() && inputs.apply
+        run: |
+          git format-patch origin/main --stdout > voiceprint-push.patch || true
+          test -s voiceprint-push.patch
+
+      - uses: actions/upload-artifact@v5
+        if: failure() && inputs.apply
+        with:
+          name: voiceprint-push
+          path: voiceprint-push.patch
+          if-no-files-found: ignore

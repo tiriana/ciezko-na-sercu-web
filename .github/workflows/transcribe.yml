@@ -180,15 +180,7 @@ jobs:
 
       - name: Commit
         run: |
-          if git diff --quiet && git diff --cached --quiet; then
-            echo "Brak zmian."
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/transcripts data/episodes
-          git commit -m "fix: transkrypcja i przeliczone czasy tematów (${GITHUB_RUN_ID})"
-          git push
+          bash scripts/push-data.sh "fix: transkrypcja i przeliczone czasy tematów (${GITHUB_RUN_ID})" data/transcripts data/episodes
 
       # Push z GITHUB_TOKEN nie uruchamia workflow, więc deploy zamawiamy ręcznie.
       # Krok commita kończy się „Brak zmian.”, gdy nic się nie zmieniło, ale deploy

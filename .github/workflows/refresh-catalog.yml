@@ -56,26 +56,7 @@ jobs:
       - name: Zapisz zmiany
         id: commit
         run: |
-          if git diff --quiet -- data/catalog.json data/episodes \
-            && [ -z "$(git ls-files --others --exclude-standard data/episodes)" ]; then
-            echo "Katalog bez zmian"
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/catalog.json data/episodes
-          git commit -m "Katalog odcinków: odświeżenie ze strony audycji ($(date -u +%Y-%m-%d))"
-          # main żyje własnym życiem (wydania, transkrypcje), więc przed push-em
-          # dopasowujemy się do zdalnego, a przy wyścigu próbujemy jeszcze raz.
-          for attempt in 1 2 3; do
-            git pull --rebase --autostash origin main
-            if git push; then
-              echo "changed=true" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
-            sleep 5
-          done
-          exit 1
+          bash scripts/push-data.sh "Katalog odcinków: odświeżenie ze strony audycji ($(date -u +%Y-%m-%d))" data/catalog.json data/episodes
 
       # Push wykonany GITHUB_TOKEN-em nie uruchamia innych workflowów, więc deploy odpalamy
       # jawnie — workflow_dispatch jest jedynym wyjątkiem od tej reguły. Symulacja także
