@@ -378,6 +378,7 @@ const validateSavePayload = (payload) => {
     if (!optionalString(track.album)) return `addTracks[${index}].album musi być tekstem`;
     if (typeof track.start !== 'number' || !Number.isFinite(track.start)) return `addTracks[${index}].start musi być liczbą`;
     if (!optionalNumber(track.durationSec)) return `addTracks[${index}].durationSec musi być liczbą`;
+    if (!optionalBoolean(track.unrecognized)) return `addTracks[${index}].unrecognized musi być wartością logiczną`;
   }
   for (const [index, topic] of (payload.addTopics ?? []).entries()) {
     if (!record(topic)) return `addTopics[${index}] musi być obiektem`;

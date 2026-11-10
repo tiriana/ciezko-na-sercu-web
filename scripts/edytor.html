@@ -924,7 +924,7 @@
           <h3>Dodane utwory</h3>
           <table>
             <thead>
-              <tr><th>Wykonawca</th><th>Tytuł</th><th>Album</th><th>Start</th><th>Czas</th><th></th></tr>
+              <tr><th>Wykonawca</th><th>Tytuł</th><th>Album</th><th>Start</th><th>Czas</th><th>Nierozp.</th><th></th></tr>
             </thead>
             <tbody id="add-tracks"></tbody>
           </table>
@@ -1930,6 +1930,19 @@
             tr.append(td);
           }
           fieldInputs.set(track, inputs);
+          const unrecognizedCell = document.createElement('td');
+          const unrecognizedBox = document.createElement('input');
+          unrecognizedBox.type = 'checkbox';
+          unrecognizedBox.title = 'Nierozpoznany utwór: strona pokazuje przy nim plakietkę';
+          unrecognizedBox.checked = Boolean(track.unrecognized);
+          unrecognizedBox.addEventListener('change', () => {
+            pushUndo();
+            markDirty();
+            if (unrecognizedBox.checked) track.unrecognized = true;
+            else delete track.unrecognized;
+          });
+          unrecognizedCell.append(unrecognizedBox);
+          tr.append(unrecognizedCell);
           const actions = document.createElement('td');
           actions.append(
             rowButton('usuń', () => {
