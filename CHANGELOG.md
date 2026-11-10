@@ -1,3 +1,10 @@
+## [1.31.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.31.1...v1.31.2) (2026-11-10)
+
+### Bug Fixes
+
+* edytor sam przeładowuje nowy kod z unieważnieniem cache ([67f9725](https://github.com/tiriana/ciezko-na-sercu-web/commit/67f9725c55f0fa56adb4694445eb49324813c6de))
+* margines fragmentu w edytorze to 1 s ([0f84d8e](https://github.com/tiriana/ciezko-na-sercu-web/commit/0f84d8e12b5f6cf557376e38d2ca39e61af4a078))
+
 ## [1.31.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.31.0...v1.31.1) (2026-11-10)
 
 ### Bug Fixes
