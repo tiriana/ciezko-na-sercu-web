@@ -1,0 +1,102 @@
+name: voiceprint
+
+# Profil głosu prowadzącego: Silero VAD + embeddingi ECAPA na całym odcinku.
+# Wynik to artifact z blokami mowy i etykietą mówcy — na razie tylko analiza,
+# nic nie trafia do data/ bez decyzji człowieka.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episodes:
+        description: 'UUID lub slugi oddzielone przecinkami; puste = najnowsze wg LIMIT'
+        required: false
+        type: string
+      limit:
+        description: 'Ile odcinków (0 = bez limitu)'
+        required: false
+        default: '2'
+        type: string
+      max_spans:
+        description: 'Limit bloków mowy na odcinek (0 = wszystkie) — do szybkich prób'
+        required: false
+        default: '0'
+        type: string
+
+run-name: "profil głosu: ${{ inputs.episodes || 'ostatnie odcinki' }}"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: voiceprint
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-26.04
+    outputs:
+      matrix: ${{ steps.build.outputs.matrix }}
+      count: ${{ steps.build.outputs.count }}
+    steps:
+      - uses: actions/checkout@v7
+      - id: build
+        env:
+          EPISODES: ${{ inputs.episodes }}
+          LIMIT: ${{ inputs.limit }}
+        run: node scripts/plan-voiceprint.mjs
+
+  analyse:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    runs-on: ubuntu-26.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Zainstaluj ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Cache pip i modeli
+        uses: actions/cache@v6
+        with:
+          path: |
+            ~/.cache/pip
+            .cache/voiceprint
+            ~/.cache/torch
+          key: voiceprint-${{ runner.arch }}-${{ hashFiles('scripts/voiceprint.py') }}
+
+      - name: Zainstaluj zależności
+        run: |
+          python -m pip install --upgrade pip
+          pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio
+          pip install speechbrain numpy
+
+      - name: Policz profil głosu
+        env:
+          ID: ${{ matrix.id }}
+          URL: ${{ matrix.audioUrl }}
+          MAX_SPANS: ${{ inputs.max_spans }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python scripts/voiceprint.py \
+            --id "$ID" --url "$URL" \
+            --episode "data/episodes/$ID.json" \
+            --transcript "data/transcripts/$ID.json" \
+            --max-spans "$MAX_SPANS" \
+            --out ".incoming/$ID.voiceprint.json"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: voiceprint-${{ matrix.id }}
+          path: .incoming/${{ matrix.id }}.voiceprint.json
+          if-no-files-found: error
+          retention-days: 14
