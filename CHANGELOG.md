@@ -1,3 +1,13 @@
+## [1.37.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.36.0...v1.37.0) (2026-11-10)
+
+### Features
+
+* jeden widok stanu etapów (Whisper, Shazam, profil głosu) ([56eca37](https://github.com/tiriana/ciezko-na-sercu-web/commit/56eca37cae863f5d210accde9736f782efd2e4eb))
+
+### Bug Fixes
+
+* push danych z workflow nie gubi pracy przy wyścigu ([8eeb667](https://github.com/tiriana/ciezko-na-sercu-web/commit/8eeb667ae711ac1d0f7b58275feab079143fa69c))
+
 ## [1.36.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.35.0...v1.36.0) (2026-11-10)
 
 ### Features
