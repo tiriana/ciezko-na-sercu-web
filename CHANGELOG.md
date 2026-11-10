@@ -1,3 +1,9 @@
+## [1.34.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.33.0...v1.34.0) (2026-11-10)
+
+### Features
+
+* Add new tracks and topics to data/reviewed.json ([6552012](https://github.com/tiriana/ciezko-na-sercu-web/commit/65520122c055f175357096782a69117ca2f73bc0))
+
 ## [1.33.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.32.0...v1.33.0) (2026-11-10)
 
 ### Features
