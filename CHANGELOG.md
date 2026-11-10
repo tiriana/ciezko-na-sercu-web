@@ -1,3 +1,9 @@
+## [1.31.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.31.0...v1.31.1) (2026-11-10)
+
+### Bug Fixes
+
+* profil głosu czeka na transkrypt i utwory, startuje po transkrypcji ([f87bde1](https://github.com/tiriana/ciezko-na-sercu-web/commit/f87bde1a39e7344befec72b2b4f8545f2181ed64))
+
 ## [1.31.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.30.1...v1.31.0) (2026-11-10)
 
 ### Features
