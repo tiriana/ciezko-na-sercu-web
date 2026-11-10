@@ -1,3 +1,9 @@
+## [1.32.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.31.2...v1.32.0) (2026-11-10)
+
+### Features
+
+* szukanie znaczników na osi ([fd852a7](https://github.com/tiriana/ciezko-na-sercu-web/commit/fd852a7bef25d5e199cf0f04df272b7474ae85d6))
+
 ## [1.31.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.31.1...v1.31.2) (2026-11-10)
 
 ### Bug Fixes
