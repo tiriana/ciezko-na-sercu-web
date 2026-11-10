@@ -1,6 +1,29 @@
 {
   "version": 1,
-  "tracks": [],
+  "tracks": [
+    {
+      "artist": "Amon Amarth",
+      "title": "We Rule the Waves",
+      "album": "The Allfather Awakens",
+      "newArtist": "Amon Amarth",
+      "newTitle": "We Rule the Waves",
+      "newAlbum": "The Allfather Awakens",
+      "start": 14.93,
+      "durationSec": 230,
+      "end": 242.26
+    },
+    {
+      "artist": "Ministry",
+      "title": "Singularity",
+      "album": "Hate To Go - Take Out Or Delivery",
+      "newArtist": "Ministry",
+      "newTitle": "Singularity",
+      "newAlbum": "Hate To Go - Take Out Or Delivery",
+      "start": 354.68,
+      "durationSec": 48,
+      "end": 490.44
+    }
+  ],
   "topics": [
     {
       "time": 315.39,
@@ -11,6 +34,13 @@
       "time": 650.88,
       "label": "Prezentacja brytyjskiego zespołu Gnode i ich nowej części trylogii Chronicles of Gnode",
       "start": 610
+    },
+    {
+      "time": 242.99,
+      "label": "Premiera albumu Ministry „Hate to Go, Take Out or Delivery” i podsumowanie kariery zespołu",
+      "start": 242.26,
+      "newLabel": "Premiera albumu Ministry „Hate to Go, Take Out or Delivery” i podsumowanie kariery zespołu",
+      "end": 354.68
     }
   ],
   "addTracks": [
@@ -18,7 +48,8 @@
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 6,
-      "durationSec": 8.06
+      "durationSec": 8.06,
+      "end": 14.93
     }
   ],
   "addTopics": [
@@ -62,5 +93,8 @@
       "start": 5707.25,
       "end": 5752.21
     }
-  ]
+  ],
+  "credits": {
+    "rename": {}
+  }
 }
