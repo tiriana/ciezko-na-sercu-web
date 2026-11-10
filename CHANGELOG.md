@@ -1,3 +1,9 @@
+## [1.35.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.34.0...v1.35.0) (2026-11-10)
+
+### Features
+
+* **data:** add hellborn track entry ([6da1586](https://github.com/tiriana/ciezko-na-sercu-web/commit/6da15864e9ec404282a5e7bd0c112539cc2474d1))
+
 ## [1.34.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.33.0...v1.34.0) (2026-11-10)
 
 ### Features
