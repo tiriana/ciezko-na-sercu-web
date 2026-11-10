@@ -3,7 +3,7 @@
  * Macierz jobów profilu głosu: slugi/uuidy z wejścia workflow albo N ostatnich odcinków.
  * Cały odcinek trafia do jednego joba, bo VAD i embeddingi potrzebują ciągłego audio.
  */
-import { appendFileSync, readFileSync } from 'node:fs';
+import { appendFileSync, readFileSync, writeFileSync } from 'node:fs';
 
 const catalog = JSON.parse(readFileSync(new URL('../data/catalog.json', import.meta.url), 'utf8'));
 const wanted = String(process.env.EPISODES ?? '')
@@ -35,7 +35,8 @@ const matrix = episodes
   .filter((episode) => episode.audioUrl)
   .map((episode) => ({ id: episode.id, slug: episode.slug, audioUrl: episode.audioUrl }));
 
+const target = process.env.OUT ?? 'ids.txt';
+writeFileSync(target, matrix.map((episode) => `${episode.id}\t${episode.audioUrl}`).join('\n') + (matrix.length ? '\n' : ''));
 const output = process.env.GITHUB_OUTPUT;
-const payload = JSON.stringify({ include: matrix });
-if (output) appendFileSync(output, `matrix=${payload}\ncount=${matrix.length}\n`);
-console.log(`odcinków: ${matrix.length}`);
+if (output) appendFileSync(output, `count=${matrix.length}\n`);
+console.log(`odcinków: ${matrix.length} → ${target}`);

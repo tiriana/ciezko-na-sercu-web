@@ -31,30 +31,17 @@ concurrency:
   group: voiceprint
   cancel-in-progress: false
 
-jobs:
-  plan:
-    runs-on: ubuntu-26.04
-    outputs:
-      matrix: ${{ steps.build.outputs.matrix }}
-      count: ${{ steps.build.outputs.count }}
-    steps:
-      - uses: actions/checkout@v7
-      - id: build
-        env:
-          EPISODES: ${{ inputs.episodes }}
-          LIMIT: ${{ inputs.limit }}
-        run: node scripts/plan-voiceprint.mjs
+env:
+  HF_TOKEN: ${{ secrets.HF_TOKEN }}
 
+jobs:
   analyse:
-    needs: plan
-    if: needs.plan.outputs.count != '0'
     runs-on: ubuntu-26.04
-    timeout-minutes: 60
-    strategy:
-      fail-fast: false
-      max-parallel: 4
-      matrix:
-        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    timeout-minutes: 120
+    env:
+      EPISODES: ${{ inputs.episodes }}
+      LIMIT: ${{ inputs.limit }}
+      MAX_SPANS: ${{ inputs.max_spans }}
     steps:
       - uses: actions/checkout@v7
 
@@ -80,23 +67,29 @@ jobs:
           pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio
           pip install speechbrain numpy
 
-      - name: Policz profil głosu
-        env:
-          ID: ${{ matrix.id }}
-          URL: ${{ matrix.audioUrl }}
-          MAX_SPANS: ${{ inputs.max_spans }}
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      - name: Wybierz odcinki
+        run: node scripts/plan-voiceprint.mjs
+
+      - name: Policz profile głosu
         run: |
-          python scripts/voiceprint.py \
-            --id "$ID" --url "$URL" \
-            --episode "data/episodes/$ID.json" \
-            --transcript "data/transcripts/$ID.json" \
-            --max-spans "$MAX_SPANS" \
-            --out ".incoming/$ID.voiceprint.json"
+          mkdir -p voiceprint-out
+          while IFS=$'\t' read -r id url; do
+            [ -z "$id" ] && continue
+            echo "::group::$id"
+            python scripts/voiceprint.py \
+              --id "$id" --url "$url" \
+              --episode "data/episodes/$id.json" \
+              --transcript "data/transcripts/$id.json" \
+              --max-spans "$MAX_SPANS" \
+              --out "voiceprint-out/$id.voiceprint.json"
+            echo "::endgroup::"
+          done < ids.txt
 
       - uses: actions/upload-artifact@v7
+        if: always()
         with:
-          name: voiceprint-${{ matrix.id }}
-          path: .incoming/${{ matrix.id }}.voiceprint.json
-          if-no-files-found: error
+          name: voiceprint
+          include-hidden-files: false
+          path: voiceprint-out/*.voiceprint.json
+          if-no-files-found: warn
           retention-days: 14
