@@ -1,47 +1,62 @@
 name: voiceprint
 
-# Profil głosu prowadzącego: Silero VAD + embeddingi ECAPA na całym odcinku.
-# Wynik to artifact z blokami mowy i etykietą mówcy — na razie tylko analiza,
-# nic nie trafia do data/ bez decyzji człowieka.
+# Profil głosu prowadzącego i domykanie wejść — całość na GitHubie:
+# Silero VAD + embeddingi ECAPA, potem import nowych i wydłużonych wejść
+# do data/overrides, commit i deploy. Rejestr data/voiceprint.json mówi,
+# które odcinki są już przerobione; odcinki z „ok” czekają na FORCE.
 
 on:
   workflow_dispatch:
     inputs:
       episodes:
-        description: 'UUID lub slugi oddzielone przecinkami; puste = najnowsze wg LIMIT'
+        description: 'UUID lub slugi oddzielone przecinkami; puste = kolejka'
         required: false
         type: string
       limit:
-        description: 'Ile odcinków (0 = bez limitu)'
+        description: 'Ile odcinków w tym przebiegu (0 = bez limitu)'
         required: false
-        default: '2'
+        default: '20'
         type: string
-      max_spans:
-        description: 'Limit bloków mowy na odcinek (0 = wszystkie) — do szybkich prób'
+      force:
+        description: 'Ruszaj też odcinki z oznaczeniami „ok”'
         required: false
-        default: '0'
+        default: false
+        type: boolean
+      parallel:
+        description: 'Ile odcinków liczyć równolegle'
+        required: false
+        default: '4'
         type: string
+      apply:
+        description: 'Zapisz wejścia do danych i wdróż (bez tego tylko artefakt)'
+        required: false
+        default: true
+        type: boolean
+  schedule:
+    # Codziennie po porannej transkrypcji: dokłada nowe odcinki do kolejki.
+    - cron: '30 4 * * *'
 
-run-name: "profil głosu: ${{ inputs.episodes || 'ostatnie odcinki' }}"
+run-name: "profil głosu: ${{ inputs.episodes || 'kolejka' }}"
 
 permissions:
-  contents: read
+  contents: write
+  actions: write
 
 concurrency:
   group: voiceprint
   cancel-in-progress: false
 
-env:
-  HF_TOKEN: ${{ secrets.HF_TOKEN }}
-
 jobs:
-  analyse:
+  voiceprint:
     runs-on: ubuntu-26.04
-    timeout-minutes: 120
+    timeout-minutes: 180
     env:
       EPISODES: ${{ inputs.episodes }}
-      LIMIT: ${{ inputs.limit }}
-      MAX_SPANS: ${{ inputs.max_spans }}
+      LIMIT: ${{ inputs.limit || '20' }}
+      FORCE: ${{ inputs.force }}
+      PARALLEL: ${{ inputs.parallel || '4' }}
+      APPLY: ${{ github.event_name == 'schedule' || inputs.apply }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
     steps:
       - uses: actions/checkout@v7
 
@@ -51,6 +66,11 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
 
       - name: Cache pip i modeli
         uses: actions/cache@v6
@@ -67,29 +87,54 @@ jobs:
           pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio
           pip install speechbrain numpy
 
+      - name: Postęp przed przebiegiem
+        run: node scripts/voiceprint-status.mjs
+
       - name: Wybierz odcinki
+        id: plan
         run: node scripts/plan-voiceprint.mjs
 
       - name: Policz profile głosu
-        run: |
-          mkdir -p voiceprint-out
-          while IFS=$'\t' read -r id url; do
-            [ -z "$id" ] && continue
-            echo "::group::$id"
-            python scripts/voiceprint.py \
-              --id "$id" --url "$url" \
-              --episode "data/episodes/$id.json" \
-              --transcript "data/transcripts/$id.json" \
-              --max-spans "$MAX_SPANS" \
-              --out "voiceprint-out/$id.voiceprint.json"
-            echo "::endgroup::"
-          done < ids.txt
+        if: steps.plan.outputs.count != '0'
+        run: node scripts/run-voiceprint.mjs --parallel "$PARALLEL"
 
       - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: voiceprint
-          include-hidden-files: false
           path: voiceprint-out/*.voiceprint.json
           if-no-files-found: warn
           retention-days: 14
+
+      - name: Zapisz wejścia w danych
+        if: inputs.apply && steps.plan.outputs.count != '0'
+        run: node scripts/import-voiceprint.mjs --write voiceprint-out/*.voiceprint.json
+
+      - run: npm ci
+        if: always() && inputs.apply
+
+      - run: npm run check
+        if: always() && inputs.apply
+
+      - run: npm run build
+        if: always() && inputs.apply
+
+      - name: Postęp po przebiegu
+        if: always()
+        run: node scripts/voiceprint-status.mjs
+
+      - name: Commit i deploy
+        if: always() && inputs.apply
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Brak zmian."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/overrides data/voiceprint.json
+          git commit -m "fix: wejścia z profilu głosu (${GITHUB_RUN_ID})"
+          git push
+          gh workflow run deploy.yml --ref main
