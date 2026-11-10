@@ -1,3 +1,9 @@
+## [1.36.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.35.0...v1.36.0) (2026-11-10)
+
+### Features
+
+* adres kontaktowy autora w stopce i przy prawach ([8fdb6b6](https://github.com/tiriana/ciezko-na-sercu-web/commit/8fdb6b6b394efcc55b1c4e0ce47b0657c6e8b158))
+
 ## [1.35.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.34.0...v1.35.0) (2026-11-10)
 
 ### Features
