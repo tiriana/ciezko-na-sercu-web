@@ -197,3 +197,18 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run deploy.yml --ref main
+
+      # Świeży transkrypt to jedyny moment, w którym profil głosu ma z czego
+      # zrobić etykiety — dlatego domykamy wejścia od razu, bez czekania na noc.
+      - name: Domykaj wejścia profilem głosu
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MATRIX: ${{ needs.plan.outputs.matrix }}
+        run: |
+          ids=$(node -e 'const m=JSON.parse(process.env.MATRIX||"{\"include\":[]}");console.log([...new Set(m.include.map((j)=>j.id))].join(","))')
+          if [ -z "$ids" ]; then
+            echo "Brak odcinków do domknięcia."
+            exit 0
+          fi
+          echo "Profil głosu dla: $ids"
+          gh workflow run voiceprint.yml --ref main -f episodes="$ids" -f limit=0 -f apply=true

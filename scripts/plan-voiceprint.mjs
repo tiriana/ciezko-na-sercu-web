@@ -4,7 +4,7 @@
  * inaczej wszystkie (z limitem). Odcinki z ręcznymi oznaczeniami „ok” wypadają,
  * dopóki nie ustawisz FORCE=true.
  */
-import { appendFileSync, readFileSync, writeFileSync } from 'node:fs';
+import { appendFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
 
 import { frozenEpisodes } from './frozen.mjs';
 import { processedEpisodes } from './voiceprint-ledger.mjs';
@@ -49,9 +49,26 @@ if (!force) {
 
 if (limit > 0) episodes = episodes.slice(0, limit);
 
-const rows = episodes
-  .filter((episode) => episode.audioUrl)
-  .map((episode) => `${episode.id}\t${episode.audioUrl}`);
+// Odcinek bez utworów to jeszcze zaślepka, a bez transkryptu nie ma z czego
+// zrobić etykiet — taki odcinek poczeka na kolejny przebieg.
+const ready = (episode) => {
+  if (!episode.audioUrl) return false;
+  const episodePath = `data/episodes/${episode.id}.json`;
+  if (!existsSync(episodePath)) return false;
+  try {
+    const data = JSON.parse(readFileSync(episodePath, 'utf8'));
+    if ((data.tracks ?? []).length === 0) return false;
+  } catch {
+    return false;
+  }
+  return existsSync(`data/transcripts/${episode.id}.json`);
+};
+
+const waiting = episodes.filter((episode) => !ready(episode));
+if (waiting.length > 0) console.log(`pominięto ${waiting.length} odcinków bez transkryptu albo jeszcze bez utworów`);
+episodes = episodes.filter(ready);
+
+const rows = episodes.map((episode) => `${episode.id}\t${episode.audioUrl}`);
 writeFileSync('ids.txt', rows.join('\n') + (rows.length ? '\n' : ''));
 
 const output = process.env.GITHUB_OUTPUT;
