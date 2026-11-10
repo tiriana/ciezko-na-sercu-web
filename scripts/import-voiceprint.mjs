@@ -8,6 +8,8 @@
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
+import { recordEpisode } from './voiceprint-ledger.mjs';
+
 const CLUSTER_GAP_SEC = 6;
 const MIN_CLUSTER_SEC = 2;
 const COVER_TOLERANCE_SEC = 1;
@@ -204,6 +206,10 @@ for (const file of files) {
   for (const { topic, start } of moved.slice(0, 8)) console.log(`  → ${topic.start} cofam do ${round(start)} (${Math.round(topic.start - start)} s) ${(topic.label ?? '').slice(0, 50)}`);
   for (const { cluster, hit } of talkOver.slice(0, 5)) {
     console.log(`  ! ${cluster.start}–${cluster.end} mówienie w utworze: ${hit.name}`);
+  }
+
+  if (write) {
+    recordEpisode(id, { added: fresh.length, extended: moved.length, talkOver: talkOver.length });
   }
 
   if (write && (fresh.length > 0 || moved.length > 0)) {
