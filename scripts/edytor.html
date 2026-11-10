@@ -540,6 +540,17 @@
       .wave-edit-hint { color: var(--muted); font-size: 10.5px; }
       .wave-count { font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
       .wave-count[hidden] { display: none; }
+      .wave-filter {
+        width: 170px;
+        padding: 3px 8px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fffdfb;
+        font: inherit;
+        font-size: 12px;
+      }
+      /* Znaczniki spoza filtra gasną; najechanie i zaznaczenie przywracają im pełną barwę. */
+      .wave-marker.is-dimmed { opacity: 0.16; }
       .wave-label {
         position: fixed;
         z-index: 31;
@@ -816,6 +827,15 @@
               <span class="wave-name" id="wave-title">Głośność</span>
               <span class="wave-window" id="wave-window">—</span>
               <span class="wave-count" id="wave-count" hidden></span>
+              <input
+                id="wave-filter"
+                class="wave-filter"
+                type="search"
+                placeholder="Szukaj znacznika…"
+                aria-label="Szukaj znacznika na osi"
+                autocomplete="off"
+                spellcheck="false"
+              />
               <span class="wave-legend" aria-hidden="true">
                 <span><i class="dot-start"></i>start utworu</span>
                 <span><i class="dot-topic"></i>wejście</span>
@@ -3508,6 +3528,27 @@
         });
       };
 
+      // Filtr znaczników: pasujące zostają w pełnej barwie, reszta gaśnie.
+      const searchableText = (value) =>
+        String(value ?? '')
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+          .replace(/ł/g, 'l');
+
+      const markerSearchText = (marker) => {
+        const object = marker.object;
+        return searchableText([object.artist, object.title, object.album, object.label].filter(Boolean).join(' '));
+      };
+
+      const applyMarkerFilter = () => {
+        const needle = searchableText($('wave-filter').value).trim();
+        for (const entry of markerNodes.values()) {
+          const matches = needle === '' || markerSearchText(entry.marker).includes(needle);
+          entry.node.classList.toggle('is-dimmed', !matches);
+        }
+      };
+
       const positionMarkers = () => {
         const width = stageEl().clientWidth;
         if (!wave.peaks || !wave.span || !width) {
@@ -3578,6 +3619,7 @@
         else syncMarkerSelection();
         updateNav();
         updateCounts();
+        applyMarkerFilter();
         if (focusedKey) {
           container.querySelector(`[data-marker-key="${focusedKey}"]`)?.focus({ preventScroll: true });
         }
@@ -3937,6 +3979,14 @@
       });
 
       $('filter').addEventListener('input', renderList);
+
+      $('wave-filter').addEventListener('input', applyMarkerFilter);
+      $('wave-filter').addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape' || !$('wave-filter').value) return;
+        event.preventDefault();
+        $('wave-filter').value = '';
+        applyMarkerFilter();
+      });
 
       $('add-track').addEventListener('click', () => {
         pushUndo();
