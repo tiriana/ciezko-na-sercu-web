@@ -1,13 +1,66 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 836.98,
+      "label": "Powrót Neurosis i nowa płyta An Undying Love for a Burning World",
+      "start": 719.76
+    },
+    {
+      "time": 1359.21,
+      "label": "Powrót Celtic Frost oraz album Monotheist",
+      "start": 1307.79
+    },
+    {
+      "time": 1947,
+      "label": "Powrót Exodus i album Tempo of the Damned",
+      "start": 1947
+    },
+    {
+      "time": 2751.13,
+      "label": "Powrót Death Angel po latach nieaktywności",
+      "start": 2701.07
+    },
+    {
+      "time": 6429.19,
+      "label": "Analiza powrotu Black Sabbath i znaczenie albumu 13",
+      "start": 6376.75
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.34,
       "durationSec": 8.06
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Padła tu już dzisiaj nazwa Possessed i oczywiście nie może ich zabraknąć. Już sam fakt,…",
+      "start": 3480.75,
+      "end": 3554.19
+    },
+    {
+      "label": "Opowiadam wam dzisiaj o triumfalnych powrotach, ale teraz czas na wspomnienie niestety…",
+      "start": 4533.01,
+      "end": 4643.12
+    },
+    {
+      "label": "Polska też jest w Europie, oczywiście, zatem teraz Polska. I znowu, sporo znalazłoby się…",
+      "start": 4848.24,
+      "end": 4921.9
+    },
+    {
+      "label": "O powrocie Crystagon już tu mówiłem piosenki, puszczałem, ale i przy tej okazji warto…",
+      "start": 5252.02,
+      "end": 5302.1
+    },
+    {
+      "label": "Skłamałbym albo wykazałbym się daleko posuniętym myśleniem życzeniowym, gdybym…",
+      "start": 5684.85,
+      "end": 5772.3
     }
   ]
 }

@@ -1,13 +1,46 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 3365.98,
+      "label": "Nowa płyta The Materia – We Against Us Prologue – i trasa z Demetet oraz islandzkim Mur",
+      "start": 3298.42
+    },
+    {
+      "time": 4534.12,
+      "label": "Jubileusz 40-lecia The Final Countdown, nowa płyta Europe – Come This Madness – i koncert w Torwarze",
+      "start": 4500.18
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 5.11,
       "durationSec": 8.06
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Black Breir, grupa z Holandii, to propozycja dla tych, co lubią metal niezbyt ciężki, z…",
+      "start": 746,
+      "end": 842.16
+    },
+    {
+      "label": "Death metalowy, czy może bardziej deathcore'owy deadline rusza w trasę o nazwie The Dine…",
+      "start": 1568.46,
+      "end": 1664.94
+    },
+    {
+      "label": "Pamiętam początki Belfegor i muszę przyznać, że nie doceniłem przeciwnika. Nigdy nie…",
+      "start": 2037.26,
+      "end": 2097.42
+    },
+    {
+      "label": "Zupełnie innych wrażeń dostarczy przybyłym na swoje dwa polskie koncerty niemiecka…",
+      "start": 2433.33,
+      "end": 2539.06
     }
   ]
 }

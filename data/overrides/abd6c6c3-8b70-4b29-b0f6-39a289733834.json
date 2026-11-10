@@ -1,13 +1,46 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2849.84,
+      "label": "Prezentacja zespołu Chat Pile i ich nowej płyty",
+      "start": 2800
+    },
+    {
+      "time": 3188.3,
+      "label": "Gradients – połączenie metalu z rapem i trapem",
+      "start": 3170
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.4,
       "durationSec": 8.06
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "W kształtach północy mgła zwodzi wasze oczy. Gdy będziemy czekać na świt, umrze w nas…",
+      "start": 325.65,
+      "end": 422
+    },
+    {
+      "label": "Wracamy na chwilę do Australii, tym razem by posłuchać czegoś mocniejszego od Airborne.…",
+      "start": 2545.49,
+      "end": 2580.62
+    },
+    {
+      "label": "Globalizacja płata różne figle, umożliwia na przykład istnienie zespołów…",
+      "start": 4341.62,
+      "end": 4382.35
+    },
+    {
+      "label": "To było ładne, ale nie dla mnie. Za to teraz będzie nieładne, ale zdecydowanie dla mnie.…",
+      "start": 4685.9,
+      "end": 4752.82
     }
   ]
 }

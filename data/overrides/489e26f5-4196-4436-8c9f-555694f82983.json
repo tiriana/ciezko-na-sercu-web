@@ -1,13 +1,31 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 4287.73,
+      "label": "Zapowiedź i odtworzenie suity z albumu At War With Satan",
+      "start": 4240.21
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 5.24,
       "durationSec": 8.06
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Poza tymi dwiema płytami, które były w Polsce oficjalnie dostępne, na przegrywkach i…",
+      "start": 1416.66,
+      "end": 1475.86
+    },
+    {
+      "label": "Jak już wspominałem, w drugiej połowie lat osiemdziesiątych zaczęły się dla Venom…",
+      "start": 2025.55,
+      "end": 2097.87
     }
   ]
 }

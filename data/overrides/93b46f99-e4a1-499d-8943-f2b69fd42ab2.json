@@ -1,13 +1,71 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2290.19,
+      "label": "Omówienie zespołu The Elysian Fields i ich drugiej płyty \"My, Oświeceni\"",
+      "start": 2261.07
+    },
+    {
+      "time": 3334.4,
+      "label": "Wprowadzenie zespołu Hexbane i ich debiutanckiej EP \"From Hell\"",
+      "start": 3329
+    },
+    {
+      "time": 5521.45,
+      "label": "Grecka mitologia w metalowej twórczości – omówienie albumu Triumph of Steel grupy Manwar",
+      "start": 5479.28
+    },
+    {
+      "time": 6533.94,
+      "label": "Niemiecka grupa Imperius – dwie albumy o Odyseuszu od Hadesu do Itaki",
+      "start": 6469.2
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.53,
       "durationSec": 8.06
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "To była nekromantia ze swojej pierwszej dużej płyty Crossing the Fiery Path z 1993 roku.…",
+      "start": 757.71,
+      "end": 854.8
+    },
+    {
+      "label": "To był Varatron z mini-albumu The Lament of Gods, wydanego przez naszą polską firmę Pagan…",
+      "start": 1124.24,
+      "end": 1255.63
+    },
+    {
+      "label": "On Torns I Lay, to również zespół, którego karierę liczymy już w dekadach, zasłużony i…",
+      "start": 2980.18,
+      "end": 3017.46
+    },
+    {
+      "label": "Septic Flesh to zespół ambitny, tworzący metal symfoniczny bez popadania w śmieszność,…",
+      "start": 3679.79,
+      "end": 3761.1
+    },
+    {
+      "label": "Był już black metal, były klimaty, czas na grecki gruz. Death metal nie jest może muzyką…",
+      "start": 4113.17,
+      "end": 4174.61
+    },
+    {
+      "label": "Żeby nie było, że dzisiaj znowu same starocie, czas na garść nowej muzyki ze starożytnej…",
+      "start": 4446.16,
+      "end": 4518.61
+    },
+    {
+      "label": "Abyssus i ich album The Rain, zapowiadany na koniec października, to też będzie…",
+      "start": 4827.5,
+      "end": 4861.36
     }
   ]
 }
