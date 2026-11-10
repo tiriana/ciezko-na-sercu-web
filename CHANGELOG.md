@@ -1,3 +1,9 @@
+## [1.37.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.37.0...v1.37.1) (2026-11-10)
+
+### Bug Fixes
+
+* push danych działa także przy odłączonym HEAD ([d1bc4f6](https://github.com/tiriana/ciezko-na-sercu-web/commit/d1bc4f6e7d003466c103b4a92398e5e0c684374c))
+
 ## [1.37.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.36.0...v1.37.0) (2026-11-10)
 
 ### Features
