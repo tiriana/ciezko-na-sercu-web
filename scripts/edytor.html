@@ -2588,9 +2588,8 @@
         selectedObjectKey = objectKey(marker.object);
         setWindow(marker.time - wave.span / 2, wave.span);
         syncMarkerSelection();
-        document
-          .querySelector(`tr[data-marker-object-key="${selectedObjectKey}"]`)
-          ?.scrollIntoView({ block: 'nearest', behavior: 'instant' });
+        // Wiersz tabeli zostaje podświetlony, ale strona się nie przewija: przy pracy
+        // na osi waveform musi zostać w miejscu, a tabela bywa daleko poniżej.
       };
 
       const selectFirstUnreviewed = () => {
