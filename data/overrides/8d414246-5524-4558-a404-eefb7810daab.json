@@ -1,20 +1,105 @@
 {
   "version": 1,
-  "tracks": [],
-  "topics": [],
+  "tracks": [
+    {
+      "artist": "Tharaphita",
+      "title": "Öise taevaga üheks",
+      "album": "Öise taevaga üheks",
+      "newArtist": "Tharaphita",
+      "newTitle": "Öise taevaga üheks",
+      "newAlbum": "Öise taevaga üheks",
+      "start": 12.77,
+      "durationSec": 355,
+      "end": 366.14
+    },
+    {
+      "artist": "Tharaphita",
+      "title": "Tõde ja vale",
+      "album": "Öise taevaga üheks",
+      "newArtist": "Tharaphita",
+      "newTitle": "Tõde ja vale",
+      "newAlbum": "Öise taevaga üheks",
+      "start": 428.02,
+      "durationSec": 285,
+      "end": 713.05
+    },
+    {
+      "artist": "Sunkiller",
+      "title": "Totality",
+      "album": "Totality - EP",
+      "newArtist": "Sunkiller",
+      "newTitle": "Totality",
+      "newAlbum": "Totality - EP",
+      "start": 889.02,
+      "durationSec": 258,
+      "end": 1148.24
+    },
+    {
+      "artist": "Sunkiller",
+      "title": "Too Late",
+      "album": "Totality - EP",
+      "newArtist": "Sunkiller",
+      "newTitle": "Too Late",
+      "newAlbum": "Totality - EP",
+      "start": 1194.94,
+      "durationSec": 189,
+      "end": 1383.63
+    },
+    {
+      "artist": "Diversion Ends",
+      "title": "Righteous",
+      "album": "Divided - EP",
+      "newArtist": "Diversion Ends",
+      "newTitle": "Righteous",
+      "newAlbum": "Divided - EP",
+      "start": 1432.32,
+      "durationSec": 202,
+      "end": 1632.98
+    }
+  ],
+  "topics": [
+    {
+      "time": 365.73,
+      "label": "Wprowadzenie zespołu Tarapita i ich nowej płyty Oise Te Vaga Uhex",
+      "start": 366.14,
+      "newLabel": "Wprowadzenie zespołu Tarapita i ich nowej płyty Oise Te Vaga Uhex",
+      "end": 428.02
+    },
+    {
+      "time": 713.44,
+      "label": "Organizacja Heavy Music Estonia – działalność i cele",
+      "start": 713.05,
+      "newLabel": "Organizacja Heavy Music Estonia – działalność i cele",
+      "end": 889.02
+    },
+    {
+      "time": 1150,
+      "label": "Relacja z koncertu Sun Killer i ich mini‑albumu Totality",
+      "start": 1148.24,
+      "newLabel": "Relacja z koncertu Sun Killer i ich mini‑albumu Totality",
+      "end": 1194.94
+    },
+    {
+      "time": 1636.45,
+      "label": "Fragment albumu Secretly Dangerous zespołu Mobisa Mobisa",
+      "start": 1632.98,
+      "newLabel": "Fragment albumu Secretly Dangerous zespołu Mobisa Mobisa"
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 5.12,
-      "durationSec": 8.06
+      "durationSec": 8.06,
+      "end": 12.77
     }
   ],
   "addTopics": [
     {
       "label": "Po Sun Killer scenę przejęła grupa Diversion Ends, wykonująca trochę bardziej…",
-      "start": 1387.06,
-      "end": 1436.34
+      "start": 1383.63,
+      "end": 1432.32
     },
     {
       "label": "Kuri Waim to zupełnie nowy zespół. Wypuścił dopiero jeden singiel zawierający dość…",
@@ -61,5 +146,8 @@
       "start": 6432.59,
       "end": 6492.75
     }
-  ]
+  ],
+  "credits": {
+    "rename": {}
+  }
 }
