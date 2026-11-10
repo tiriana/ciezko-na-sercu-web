@@ -20,7 +20,8 @@
     "edytor:bez-nadzorcy": "node --watch scripts/edytor.mjs",
     "voiceprint:apply": "node scripts/import-voiceprint.mjs",
     "voiceprint": "node scripts/run-voiceprint.mjs",
-    "voiceprint:status": "node scripts/voiceprint-status.mjs"
+    "voiceprint:status": "node scripts/voiceprint-status.mjs",
+    "status": "node scripts/status-all.mjs"
   },
   "dependencies": {
     "astro": "^7.4.7",

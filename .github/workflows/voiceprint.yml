@@ -121,7 +121,9 @@ jobs:
 
       - name: Postęp po przebiegu
         if: always()
-        run: node scripts/voiceprint-status.mjs
+        run: |
+          node scripts/voiceprint-status.mjs
+          node scripts/status-all.mjs
 
       - name: Commit i deploy
         if: always() && inputs.apply
