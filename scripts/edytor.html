@@ -3144,6 +3144,8 @@
         const opener = editOpener;
         editOpener = null;
         if (!keepFocus) opener?.focus?.({ preventScroll: true });
+        // Nowy kod czekał na to zamknięcie; chwila zwłoki pozwala dojść zapisowi.
+        if (staleCode) setTimeout(reloadWithFreshCode, 600);
       };
 
       const snapSeconds = (value) => Math.round(Number(value) * 100) / 100;
@@ -4214,6 +4216,17 @@
 
       const reloadPrompt = $('reload-prompt');
       let serverMtime = null;
+      let staleCode = false;
+
+      // `?v=` unieważnia cache przeglądarki i bfcache: bez tego zdarzało się, że karta
+      // po przeładowaniu dalej miała stary plik i nowe zachowanie „nie działało”.
+      const reloadWithFreshCode = () => {
+        writeDraft();
+        stashSession();
+        const url = new URL(location.href);
+        url.searchParams.set('v', String(Date.now()));
+        location.replace(url.toString());
+      };
 
       const onServerFile = (mtime) => {
         if (!Number.isFinite(mtime)) return;
@@ -4224,13 +4237,12 @@
         // znaczy, że karta jest starsza niż kod (np. po restarcie serwera).
         const stale = first ? mtime > pageLoadedAt : changed;
         if (!stale) return;
-        if (dirty) {
-          // Niezapisane zmiany nie mogą zniknąć pod ręką — o odświeżeniu decyduje człowiek.
-          reloadPrompt.hidden = false;
-          return;
-        }
-        stashSession();
-        location.reload();
+        staleCode = true;
+        reloadPrompt.hidden = false;
+        // Kopia robocza i sesja wracają po przeładowaniu same, więc podmieniamy stronę
+        // bez pytania. Czekamy tylko na zamknięcie okna edycji, bo w nim jest wpisany
+        // tekst, którego nie ma jeszcze w żadnym stanie.
+        if (editForm.hidden) reloadWithFreshCode();
       };
 
       const eventsSource = new EventSource('/api/events');
@@ -4249,9 +4261,7 @@
       reloadPrompt.addEventListener('click', () => {
         // Świadoma zgoda: porzucamy niezapisane zmiany, ale zostaje odcinek, czas i zoom.
         // Kopia robocza i tak powstaje, więc po przeładowaniu jest co przywrócić.
-        writeDraft();
-        stashSession();
-        location.reload();
+        reloadWithFreshCode();
       });
       window.addEventListener('pagehide', () => eventsSource.close());
 
