@@ -1,3 +1,19 @@
+## [1.30.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.29.0...v1.30.0) (2026-11-10)
+
+### Features
+
+* dodaje skoki do znaczników i audycji ([5d98dae](https://github.com/tiriana/ciezko-na-sercu-web/commit/5d98dae95f98dc4288cb51c33b5dafc374e5599d))
+* profil głosu prowadzącego (VAD + embeddingi) ([c06589a](https://github.com/tiriana/ciezko-na-sercu-web/commit/c06589ac31a4679177113f9cdd6a98beb47cc0eb))
+
+### Bug Fixes
+
+* poprzedni znacznik pomija bieżący fragment ([9fc3c49](https://github.com/tiriana/ciezko-na-sercu-web/commit/9fc3c4957e0b89b9c92244d2cb0e2e6f40f13d9c))
+* poprzedni znacznik zawsze cofa o widoczny kawałek ([d92f2ad](https://github.com/tiriana/ciezko-na-sercu-web/commit/d92f2ade9d9fa577a30ccd44979490af548e3740))
+
+### Performance Improvements
+
+* odchudza fonty, wkleja CSS i cache'uje statyczne zasoby ([636f2f1](https://github.com/tiriana/ciezko-na-sercu-web/commit/636f2f15232a6283649d1f2ec39b8295f4fd39dc))
+
 ## [1.29.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.28.0...v1.29.0) (2026-11-09)
 
 ### Features
