@@ -29,6 +29,12 @@ fi
 git commit -m "$message"
 echo "changed=true" >>"$output"
 
+# checkout@v7 na zdarzeniu z gałęzi ustawia lokalne main, ale przy odłączonym HEAD
+# (np. dispatch z SHA) pull --rebase odmówiłby pracy — przepinamy commit na gałąź.
+if [ "$(git rev-parse --abbrev-ref HEAD)" = "HEAD" ]; then
+  git switch -C main
+fi
+
 attempt=1
 while [ "$attempt" -le 5 ]; do
   # Autostash, bo po nieudanym pushu zdalny bywa nowszy; konflikt przerywamy,
