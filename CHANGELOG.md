@@ -1,3 +1,11 @@
+## [1.31.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.30.1...v1.31.0) (2026-11-10)
+
+### Features
+
+* brakujące wejścia z profilu głosu ([607faf3](https://github.com/tiriana/ciezko-na-sercu-web/commit/607faf3d3fe5c829b7d0795b5f52ab5a47c9ef9e))
+* profil głosu w całości na GitHubie z rejestrem postępu ([b3a7d9f](https://github.com/tiriana/ciezko-na-sercu-web/commit/b3a7d9ff2d9b402d80c008c3d15649f813a5f3a9))
+* wejścia z profilu głosu wydłużają istniejące i nie wchodzą w utwory ([bf691b2](https://github.com/tiriana/ciezko-na-sercu-web/commit/bf691b2c336b7321dcbf2b1198e26a0bf8d2eec9))
+
 ## [1.30.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.30.0...v1.30.1) (2026-11-10)
 
 ### Bug Fixes
