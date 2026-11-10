@@ -1,3 +1,13 @@
+## [1.33.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.32.0...v1.33.0) (2026-11-10)
+
+### Features
+
+* przełącznik „nierozpoznana” przy dodanych utworach ([5446f1e](https://github.com/tiriana/ciezko-na-sercu-web/commit/5446f1e660d74ea17bb3d7b456e5b926d5677a01))
+
+### Bug Fixes
+
+* wybór znacznika nie przewija strony do tabeli ([c6865ae](https://github.com/tiriana/ciezko-na-sercu-web/commit/c6865aee7289786527ffc8ae65bc3f2ff45ef7ea))
+
 ## [1.32.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.31.2...v1.32.0) (2026-11-10)
 
 ### Features
