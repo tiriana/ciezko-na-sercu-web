@@ -81,9 +81,9 @@
       "newArtist": "Tony Iommi & Jorn",
       "newTitle": "Stormwatcher",
       "newAlbum": "From the Dark",
-      "start": 2574.54,
+      "start": 2574.51,
       "durationSec": 303,
-      "end": 2883.27
+      "end": 2878.06
     }
   ],
   "topics": [
@@ -131,6 +131,19 @@
       "start": 606.11,
       "newLabel": "Prezentacja brytyjskiego zespołu Gnode i ich nowej części trylogii Chronicles of Gnode",
       "end": 682.16
+    },
+    {
+      "time": 2883.27,
+      "label": "Historia i premiera siódmej płyty Sirith Angle – All the Shadows",
+      "start": 2878.06,
+      "newLabel": "Historia i premiera siódmej płyty Sirith Angle – All the Shadows",
+      "end": 3327.47
+    },
+    {
+      "time": 3330,
+      "label": "Nowa płyta Forbidden – Forbidden (23 października)",
+      "start": 3327.47,
+      "newLabel": "Nowa płyta Forbidden – Forbidden (23 października)"
     }
   ],
   "addTracks": [
@@ -140,6 +153,13 @@
       "start": 6,
       "durationSec": 8.06,
       "end": 14.93
+    },
+    {
+      "artist": "",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
+      "start": 2990.43,
+      "durationSec": 337.03999999999996
     }
   ],
   "addTopics": [
@@ -151,7 +171,7 @@
     {
       "label": "Nie byłoby graveyard albo byłby i grałby panka lub synthpop, gdyby 60 lat temu maszyna…",
       "start": 2479.73,
-      "end": 2579.92
+      "end": 2574.51
     },
     {
       "label": "Finski zespół Insomnium to przedstawiciel metalu, który nigdy nie robił na mnie wielkiego…",
@@ -182,6 +202,10 @@
       "label": "Niedawno Enslaved nagrywali jakieś szanty i już zacząłem się o nich martwić. Zupełnie…",
       "start": 5707.25,
       "end": 5752.21
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 3204.08
     }
   ],
   "credits": {
