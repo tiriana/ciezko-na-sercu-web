@@ -1,3 +1,9 @@
+## [1.30.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.30.0...v1.30.1) (2026-11-10)
+
+### Bug Fixes
+
+* wynik voiceprint poza katalogiem ukrytym ([c992161](https://github.com/tiriana/ciezko-na-sercu-web/commit/c992161480209637ab4256a839ade16c5d80384f))
+
 ## [1.30.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.29.0...v1.30.0) (2026-11-10)
 
 ### Features
