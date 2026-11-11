@@ -1,11 +1,12 @@
-# Skala czasu nagrań (nagłówek Xing)
+# Skala czasu nagrań (ramki bez paddingu)
 
 ## Co to jest
 
-Pliki mp3 Polskiego Radia mają nagłówek Xing/Info z długością nagrania. Długość bywa
-**krótsza niż realne audio**: nagłówek podaje ~6893,21 s, a zdekodowane próbki dają
-6909,05 s. Przeglądarka wierzy nagłówkowi — `audio.duration` wynosi tyle, ile w nagłówku,
-i w tej skali odmierzają pozycję `currentTime`, pasek postępu i seek.
+Pliki mp3 Polskiego Radia **nie mają** znacznika Xing/Info, więc odtwarzacz liczy długość
+z rozmiaru pliku i nominalnego bitrate: `size × 8 / 128000` = 6893,21 s. Realne audio ma
+6909,05 s, bo w strumieniu nie ma bitów paddingu (patrz niżej). Przeglądarka przyjmuje
+wyliczoną długość jako `audio.duration` i w tej skali odmierzają pozycję `currentTime`,
+pasek postępu i seek.
 
 Skutek: znaczniki liczone z dźwięku (ffmpeg, Shazam, VAD) są w czasie rzeczywistym,
 a odtwarzacz mierzy w skróconej skali, więc im dalej w audycję, tym większe rozjechanie —
@@ -14,20 +15,25 @@ nieosiągalne, bo player kończy odtwarzanie na wartości z nagłówka.
 
 ## Skąd bierze się błąd
 
-- Nagłówek Xing jest policzony z rozmiaru pliku przy nominalnym bitrate (128 kb/s):
-  `size × 8 / 128000` = 6893,21 s.
-- Realna długość to liczba ramek × 1152 próbki / 44100 Hz: 264 487 × 1152 / 44100 = 6909,05 s.
-- Ramki są CBR (417/418 B), więc różnica nie jest „rozjechaniem" bitrate, tylko tym, że
-  rozmiar pliku odpowiada średnio 127,7 kb/s — nagłówek liczy z nominalnej wartości.
+- Nagłówek ramki mówi „MPEG1 Layer III, 128 kb/s, 44,1 kHz", więc rozmiar ramki powinien
+  wynosić 417 lub 418 B — 418 wtedy, gdy ustawiony jest bit paddingu.
+- W plikach Polskiego Radia bit paddingu **nigdy nie jest ustawiony**: wszystkie 264 487
+  ramek ma 417 B, czyli strumień niesie realnie 127,7 kb/s, a nie 128 kb/s.
+- Realna długość to liczba ramek × 1152 / 44100 = 6909,05 s, a wyliczenie z rozmiaru
+  daje 6893,21 s. Różnica 15,84 s to dokładnie te 0,229%.
+- To błąd encodera po stronie Polskiego Radia (plik z `static.prsa.pl`), nie nasz i nie
+  do naprawienia lokalnie — plik jest zdalny. Zwykłemu słuchaczowi przesuwa tylko koniec
+  paska; nam rozjeżdża znaczniki liczone z dźwięku.
 
 ## Czy skala jest stała
 
-Nie. Z 13 zmierzonych plików 10 miało skalę `0,997707`, a 3 miały `1,000000` (nagłówek
-poprawny, błąd 0 s). Błąd bezwzględny w grupie z wadą to 15,5–16,6 s, czyli 0,23%.
+Nie. Z 23 zmierzonych plików 19 miało skalę `0,997707`, a 4 miały `1,000000` (ramki
+z paddingiem, długość policzona poprawnie). Błąd bezwzględny w grupie z wadą to
+15,5–16,6 s, czyli 0,23%. Skala `0,997707` jest tylko wynikiem tego, że większość nagrań
+przeszła ten sam pipeline encodera.
 
 Wniosek: **skali nie wolno wpisywać na sztywno** — trzeba ją zmierzyć dla każdego pliku.
-Stała wartość `0,997707` jest tylko wynikiem tego, że większość nagrań przeszła ten sam
-pipeline encodera.
+
 
 ## Zasada
 
@@ -37,7 +43,7 @@ bez żadnej arytmetyki.
 
 Pola w obiekcie odcinka:
 
-- `durationSec` — długość w skali odtwarzacza (to pokazuje player),
+- `durationSec` — długość w skali odtwarzacza (to pokazuje player; tu: wyliczenie z rozmiaru pliku),
 - `audioDurationSec` — realna długość z dekodera, potrzebna do przeliczeń.
 
 ## Jak mierzymy
