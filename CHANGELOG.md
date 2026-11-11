@@ -1,3 +1,9 @@
+## [1.40.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.40.0...v1.40.1) (2026-11-11)
+
+### Bug Fixes
+
+* streszczenia na darmowych tierach OpenAI-compatible z map-reduce ([427f72c](https://github.com/tiriana/ciezko-na-sercu-web/commit/427f72c62d32dcab36901c6a3c76a6d402ee2ff8))
+
 ## [1.40.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.39.1...v1.40.0) (2026-11-11)
 
 ### Features
