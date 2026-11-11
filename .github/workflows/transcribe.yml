@@ -151,6 +151,9 @@ jobs:
         with:
           name: transcript-${{ matrix.id }}-${{ matrix.part }}
           path: .incoming/${{ matrix.id }}.part*.json
+          # v7 domyślnie pomija pliki z katalogów zaczynających się kropką,
+          # a `.incoming` jest właśnie takim katalogiem — bez tego nic się nie wysyła.
+          include-hidden-files: true
           if-no-files-found: error
           retention-days: 7
 
