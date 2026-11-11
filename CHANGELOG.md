@@ -1,3 +1,9 @@
+## [1.41.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.41.2...v1.41.3) (2026-11-11)
+
+### Bug Fixes
+
+* konwersja czasu do skali odtwarzacza przy produkcji danych, player bez przeliczania ([d9b1eb6](https://github.com/tiriana/ciezko-na-sercu-web/commit/d9b1eb6ecfebd599ba24debb19d548b0aa13b6e6))
+
 ## [1.41.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.41.1...v1.41.2) (2026-11-11)
 
 ### Bug Fixes
