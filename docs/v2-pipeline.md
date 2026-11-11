@@ -53,7 +53,7 @@ Ustalenia szczegółowe:
    `npm run spans -- --id <uuid> --url <mp3> --out <artefakt>`. Zmierzone na tym sprzęcie:
    **21 s na 2-godzinny odcinek**, mowa 16–30% audycji w 181–336 blokach, bloki do ASR
    to 20–31% odcinka. Koszt whispera licząc okna 30 s: 6930 s → 1410 s, czyli **80% mniej pracy**.
-   Recall sprawdzony na pięciu odcinkach z gotowym transkryptem: tekst pokryty przez `spans`
+   Recall sprawdzony na trzech odcinkach z gotowym transkryptem: tekst pokryty przez `spans`
    w 81–89%, przez `chunks` w 89–98%; braki to głównie granice segmentów whispera (segment
    zaczyna się w ciszy) oraz halucynacje na muzyce („Muzyka", „Dziękuje za oglądanie."), które
    właśnie chcemy odsiać. Fragmenty z prawdopodobieństwem mowy < 0,2 to halucynacje, nie mowa,
