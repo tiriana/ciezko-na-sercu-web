@@ -5,7 +5,7 @@ import Base from '../layouts/Base.astro';
 import PersonName from '../components/PersonName.astro';
 import EpisodePlay from '../components/EpisodePlay.astro';
 import { getCatalog, getEntries, getEpisodeFiles } from '../lib/data';
-import { formatDay, formatEpisodeTitle, monthKey, monthLabel, resolveDisplayTitle } from '../lib/format';
+import { episodePath, formatDay, formatEpisodeTitle, monthKey, monthLabel, resolveDisplayTitle } from '../lib/format';
 
 const [catalog, entries, files] = await Promise.all([getCatalog(), getEntries(), getEpisodeFiles()]);
 
@@ -117,7 +117,7 @@ for (const entry of entries) {
                 <div class="episode-row__date">{formatDay(entry.date)}</div>
                 <div class="episode-row__main">
                   <h3 class="episode-row__title">
-                    <a href={`/odcinki/${entry.slug}/`}>{resolveDisplayTitle(entry)}</a>
+                    <a href={episodePath(entry)}>{resolveDisplayTitle(entry)}</a>
                     {entry.titleKind !== 'official' && (
                       <span class="title-flag" title={`W katalogu: ${formatEpisodeTitle(entry.title)}`}>
                         {entry.titleKind === 'unofficial' ? 'tytuł nieoficjalny' : 'tytuł techniczny'}
@@ -126,7 +126,7 @@ for (const entry of entries) {
                   </h3>
                 </div>
                 <div class="episode-row__actions">
-                  <a class="btn btn--solid" href={`/odcinki/${entry.slug}/`}>Strona odcinka</a>
+                  <a class="btn btn--solid" href={episodePath(entry)}>Strona odcinka</a>
                   {!entry.enriched && entry.sourceUrl && (
                     <a class="btn" href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">Polskie Radio ↗</a>
                   )}

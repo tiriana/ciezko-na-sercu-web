@@ -1,27 +1,28 @@
 ---
-import SiteFooter from '../../components/SiteFooter.astro';
-import SiteHeader from '../../components/SiteHeader.astro';
-import Base from '../../layouts/Base.astro';
-import PersonName from '../../components/PersonName.astro';
-import ReportLink from '../../components/ReportLink.astro';
-import FragmentProgress from '../../components/FragmentProgress.astro';
-import TrackPlayIcon from '../../components/TrackPlayIcon.astro';
-import EpisodePlay from '../../components/EpisodePlay.astro';
-import { getCatalog, getDuplicates, getEntries, getEpisodeFiles, getTranscripts } from '../../lib/data';
-import { transcriptParagraphs } from '../../lib/transcript';
-import { tagId } from '../../lib/tags';
+import SiteFooter from '../../../components/SiteFooter.astro';
+import SiteHeader from '../../../components/SiteHeader.astro';
+import Base from '../../../layouts/Base.astro';
+import PersonName from '../../../components/PersonName.astro';
+import ReportLink from '../../../components/ReportLink.astro';
+import FragmentProgress from '../../../components/FragmentProgress.astro';
+import TrackPlayIcon from '../../../components/TrackPlayIcon.astro';
+import EpisodePlay from '../../../components/EpisodePlay.astro';
+import { getCatalog, getDuplicates, getEntries, getEpisodeFiles, getTranscripts } from '../../../lib/data';
+import { transcriptParagraphs } from '../../../lib/transcript';
+import { tagId } from '../../../lib/tags';
 import {
   formatClock,
   formatDate,
   formatDateTime,
   resolveDisplayTitle,
+  episodePath,
   formatRole,
   formatWeekday,
   fragmentSlug,
   pluralEntries,
   pluralThreads,
   pluralTracks,
-} from '../../lib/format';
+} from '../../../lib/format';
 
 export async function getStaticPaths() {
   const [all, visible, duplicates] = await Promise.all([
@@ -31,7 +32,7 @@ export async function getStaticPaths() {
   ]);
   const audioEpisodes = visible
     .filter((item) => item.audioUrl)
-    .map((item) => ({ src: item.audioUrl!, slug: item.slug, title: resolveDisplayTitle(item) }));
+    .map((item) => ({ src: item.audioUrl!, slug: item.slug, path: episodePath(item), title: resolveDisplayTitle(item) }));
   // Katalog jest posortowany od najnowszych, więc „poprzednia" to starsza audycja,
   // a „następna" — nowsza; na krańcach zakresu odpowiedniego linku po prostu nie ma.
   // Sąsiedzi liczą się po widocznych odcinkach, żeby ukryty duplikat nie trafiał do nawigacji.
@@ -41,16 +42,19 @@ export async function getStaticPaths() {
     const newer = index >= 0 ? visible[index - 1] : undefined;
     const duplicate = duplicates[entry.id];
     return {
-      params: { slug: entry.slug },
+      params: { id: entry.id.slice(0, 8), slug: entry.slug },
       props: {
         entry,
         audioEpisodes,
-        older: older ? { slug: older.slug, title: resolveDisplayTitle(older) } : null,
-        newer: newer ? { slug: newer.slug, title: resolveDisplayTitle(newer) } : null,
+        older: older ? { path: episodePath(older), title: resolveDisplayTitle(older) } : null,
+        newer: newer ? { path: episodePath(newer), title: resolveDisplayTitle(newer) } : null,
         duplicate: duplicate
           ? {
               reason: duplicate.reason,
-              slug: all.find((item) => item.id === duplicate.of)?.slug ?? null,
+              path: (() => {
+                const target = all.find((item) => item.id === duplicate.of);
+                return target ? episodePath(target) : null;
+              })(),
               title: all.find((item) => item.id === duplicate.of)?.displayTitle ?? null,
             }
           : null,
@@ -253,7 +257,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         <p class="duplicate-note">
           Ten odcinek dubluje{' '}
           {duplicate.slug ? (
-            <a href={`/odcinki/${duplicate.slug}/`}>{duplicate.title}</a>
+            <a href={duplicate.path}>{duplicate.title}</a>
           ) : (
             <span>{duplicate.title}</span>
           )}
@@ -315,7 +319,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <script
                 type="application/json"
                 id="audio-data"
-                set:html={JSON.stringify({ src: entry.audioUrl, title: episodeTitle, slug: entry.slug })}
+                set:html={JSON.stringify({ src: entry.audioUrl, title: episodeTitle, slug: entry.slug, path: episodePath(entry) })}
               />
             )}
             {entry.audioUrl && (
@@ -627,7 +631,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
     )}
     <nav class="ep-nav" aria-label="Sąsiednie audycje">
       {newer ? (
-        <a class="ep-nav__link" href={`/odcinki/${newer.slug}/`}>
+        <a class="ep-nav__link" href={newer.path}>
           <span class="ep-nav__label">← Nowsza audycja</span>
           <span class="ep-nav__title">{newer.title}</span>
         </a>
@@ -635,7 +639,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         <span />
       )}
       {older ? (
-        <a class="ep-nav__link ep-nav__link--next" href={`/odcinki/${older.slug}/`}>
+        <a class="ep-nav__link ep-nav__link--next" href={older.path}>
           <span class="ep-nav__label">Starsza audycja →</span>
           <span class="ep-nav__title">{older.title}</span>
         </a>
@@ -647,6 +651,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
 
   <SiteFooter />
   <script>
-    import '../../scripts/report.js';
+    import '../../../scripts/report.js';
   </script>
 </Base>

@@ -4,9 +4,10 @@
  * Wyszukiwarka buduje identyczny markup po stronie klienta (src/pages/szukaj),
  * więc klasy i style są jedne.
  */
-import { formatDate } from '../lib/format';
+import { episodePath, formatDate } from '../lib/format';
 
 interface Item {
+  id: string;
   slug: string;
   date: string;
   title: string;
@@ -26,7 +27,7 @@ const suffix = tagId ? `?tag=${tagId}` : '';
 <ul class="episode-list">
   {items.map((item) => (
     <li>
-      <a href={`/odcinki/${item.slug}/${suffix}`}>
+      <a href={`${episodePath(item)}${suffix}`}>
         <time datetime={item.date}>{formatDate(item.date)}</time>
         <span class="episode-list__main">
           <span>{item.title}</span>
