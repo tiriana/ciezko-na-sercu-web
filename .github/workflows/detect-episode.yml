@@ -1,31 +1,26 @@
 name: wykrycie odcinka
 
-# Środa, 00:05–03:00 czasu polskiego: sondowanie, czy nowy odcinek jest już
-# opublikowany. Gdy wpis pojawi się na stronie, a plik audio odpowie, `check-audio.mjs`
-# potwierdza publikację i dopiero wtedy leci `refresh-catalog.yml` — ten commituje
-# katalog oraz zaślepkę opracowania, publikuje wpis i zamawia transkrypcję.
-# Po transkrypcji `transcribe.yml` przelicza czasy i publikuje ponownie.
+# Środa, 02:00–03:00 czasu polskiego: wpis odcinka i plik audio pojawiają się po
+# emisji, ostatnie odcinki miały `Last-Modified` mp3 o 02:24. Wcześniej nie ma
+# czego szukać, dlatego okno zaczyna się o 02:00.
 #
-# Wpis i plik pojawiają się dopiero po audycji: ostatnie odcinki miały `Last-Modified`
-# mp3 o 02:24 czasu lokalnego, czyli 24 minuty po końcu emisji — dlatego okno sięga
-# 03:00, a o 04:17 UTC leci dosyłka, która nie podlega strażnikowi i łapie odcinek,
-# jeśli środowe sondowanie go minie. GitHub gubi też część odpaleń crona, więc samo
-# okno nie wystarcza.
-#
-# GitHub liczy crony w UTC, a Warszawa zmienia czas. Okno w UTC to wtorek
-# 22:05 – środa 01:00 (CEST) albo wtorek 23:05 – środa 02:00 (CET), więc crony
-# obejmują oba wieczory, a strażnik przepuszcza tylko przebieg w środowym oknie
-# 00:05–03:00 czasu lokalnego. Przed 00:05 UTC jest jeszcze wtorek na zegarze,
+# Okno w UTC obejmuje oba czasy: latem 02:00–03:00 CEST to 00:00–01:00 UTC, zimą
+# 02:00–03:00 CET to 01:00–02:00 UTC, więc crony chodzą 00:00–02:00 UTC w środę,
+# a strażnik w środku przebiegu sprawdza lokalną godzinę i kończy z adnotacją
+# „za wcześnie" albo „za późno". Przed 00:05 UTC jest jeszcze wtorek na zegarze,
 # ale w Warszawie to już środa — dlatego dzień też liczymy lokalnie.
 #
-# Gdy pliku jeszcze nie ma, przebieg kończy się sukcesem: następne sondowanie
-# za 10 minut ponowi próbę.
+# Gdy odcinek jest już w katalogu, przebieg kończy się adnotacją „odcinek został
+# już wykryty" i nie sięga do sieci po audio. O 04:17 UTC w środę leci dosyłka,
+# która nie podlega oknu i łapie odcinek, jeśli publikacja się nie zmieściła.
+#
+# Gdy wpis jest, a pliku jeszcze nie ma, przebieg kończy się sukcesem: następne
+# sondowanie za 10 minut ponowi próbę.
 
 on:
   schedule:
-    - cron: '*/10 22-23 * * 2' # początek okna: 00:05 CEST i 00:05 CET
-    - cron: '*/10 0-2 * * 3' # koniec okna: 03:00 CEST (01:00 UTC) i 03:00 CET (02:00 UTC)
-    - cron: '17 4 * * *' # dosyłka: łapie odcinek, gdy środowe sondowanie go minie
+    - cron: '*/10 0-1 * * 3' # 02:00–03:00 czasu polskiego w obu czasach
+    - cron: '17 4 * * 3' # dosyłka, gdy publikacja nie zmieściła się w oknie
   workflow_dispatch:
     inputs:
       simulate:
@@ -60,15 +55,26 @@ jobs:
             echo "Symulacja: strażnik pominięty."
             exit 0
           fi
-          if [ "$SCHEDULE" = "17 4 * * *" ]; then
-            echo "Dosyłka dzienna: strażnik pominięty."
+          if [ "$SCHEDULE" = "17 4 * * 3" ]; then
+            echo "::notice::Dosyłka — sprawdzam poza oknem."
             exit 0
           fi
           day=$(TZ=Europe/Warsaw date +%u)
           time=$(TZ=Europe/Warsaw date +%H%M)
-          if [ "$day" != "3" ] || [[ "$time" < "0005" ]] || [[ "$time" > "0300" ]]; then
-            echo "Europe/Warsaw: dzień ${day}, ${time} — poza środowym oknem 00:05–03:00. Kończę."
+          if [ "$day" != "3" ]; then
+            echo "::notice::Dziś nie środa (dzień ${day}) — kończę."
             echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [[ "$time" < "0200" ]]; then
+            echo "::notice::Za wcześnie (${time}) — okno zaczyna się o 02:00."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [[ "$time" > "0300" ]]; then
+            echo "::notice::Za późno (${time}) — okno kończy się o 03:00."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
 
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -98,7 +104,7 @@ jobs:
 
       - name: Sprawdź, czy plik audio jest już udostępniony
         id: audio
-        if: steps.check.outputs.new == 'true'
+        if: steps.check.outputs.state == 'new'
         env:
           IDS: ${{ steps.check.outputs.ids }}
         run: |
@@ -126,7 +132,7 @@ jobs:
       - name: Podsumowanie
         if: steps.guard.outputs.skip != 'true'
         env:
-          IS_NEW: ${{ steps.check.outputs.new }}
+          STATE: ${{ steps.check.outputs.state }}
           COUNT: ${{ steps.check.outputs.count }}
           TITLES: ${{ steps.check.outputs.titles }}
           READY: ${{ steps.audio.outputs.ready }}
@@ -134,25 +140,36 @@ jobs:
           {
             echo "### Wykrycie odcinka"
             echo ""
-            if [ "$IS_NEW" = "true" ]; then
-              echo "Nowe odcinki: $COUNT"
-              echo ""
-              echo '```'
-              printf '%s\n' "$TITLES"
-              echo '```'
-              echo ""
-              if [ "$READY" = "true" ]; then
-                echo "Plik audio jest dostępny — odświeżam katalog."
-              else
-                echo "Plik audio jeszcze nie jest udostępniony — czekam na kolejne sondowanie."
-              fi
-            else
-              echo "Katalog aktualny — nic do zrobienia."
-            fi
+            case "$STATE" in
+              new)
+                echo "Nowe odcinki: $COUNT"
+                echo ""
+                echo '```'
+                printf '%s\n' "$TITLES"
+                echo '```'
+                echo ""
+                if [ "$READY" = "true" ]; then
+                  echo "Plik audio jest dostępny — odświeżam katalog."
+                else
+                  echo "Plik audio jeszcze nie jest udostępniony — czekam na kolejne sondowanie."
+                fi
+                ;;
+              known)
+                echo "Odcinek jest już wykryty — nic do zrobienia."
+                ;;
+              *)
+                echo "Nowego wpisu na stronie jeszcze nie ma — czekam na kolejne sondowanie."
+                ;;
+            esac
           } >> "$GITHUB_STEP_SUMMARY"
+          case "$STATE" in
+            known) echo "::notice::Odcinek został już wykryty — nic do zrobienia." ;;
+            new) : ;;
+            *) echo "::notice::Nowego wpisu na stronie jeszcze nie ma." ;;
+          esac
 
       - name: Odśwież katalog, opublikuj wpis i zamów transkrypcję
-        if: steps.check.outputs.new == 'true' && steps.audio.outputs.ready == 'true'
+        if: steps.check.outputs.state == 'new' && steps.audio.outputs.ready == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SIMULATE: ${{ inputs.simulate }}

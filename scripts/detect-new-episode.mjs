@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 /**
  * Porównuje listę odcinków ze strony audycji z katalogiem: nowe to te, których
- * w `data/catalog.json` jeszcze nie ma. Wynik trafia do `GITHUB_OUTPUT`.
+ * w `data/catalog.json` jeszcze nie ma. Wynik trafia do `GITHUB_OUTPUT` jako
+ * `state`: `new` (jest nowy odcinek), `known` (najnowszy wpis ze strony już jest
+ * w katalogu) albo `waiting` (na stronie nic się nie zmieniło).
  *
  * Symulacja (`SIMULATE=true`) zgłasza nowy odcinek także wtedy, gdy katalog jest
  * aktualny — pozwala przejść całą ścieżkę bez czekania na publikację.
@@ -30,17 +32,22 @@ const titles = simulated
   ? ['(symulacja)']
   : fresh.map((episode) => `${episode.date} — ${episode.title}`);
 
+const newestDate = (list) => list.reduce((newest, episode) => (episode.date > newest ? episode.date : newest), '');
+const siteNewest = newestDate(fetched);
+const catalogNewest = newestDate(catalog.episodes);
+const state = count > 0 ? 'new' : siteNewest > catalogNewest ? 'waiting' : 'known';
+
 const output = (key, value) => appendFileSync(process.env.GITHUB_OUTPUT ?? '/dev/null', `${key}<<DETECT\n${value}\nDETECT\n`);
 
-output('new', count > 0 ? 'true' : 'false');
+output('state', state);
 output('count', String(count));
 output('ids', simulated ? '' : fresh.map((episode) => episode.id).join(','));
 output('titles', titles.join('\n'));
 
-if (count === 0) {
-  console.log(`Brak nowych odcinków (${fetched.length} na stronie, ${known.size} w katalogu).`);
-} else if (simulated) {
-  console.log('Symulacja: udaję nowy odcinek.');
+if (state === 'new') {
+  console.log(simulated ? 'Symulacja: udaję nowy odcinek.' : `Nowe odcinki: ${titles.join('; ')}`);
+} else if (state === 'known') {
+  console.log(`Najnowszy odcinek (${catalogNewest}) jest już w katalogu.`);
 } else {
-  console.log(`Nowe odcinki: ${titles.join('; ')}`);
+  console.log(`Strona ma wpis z ${siteNewest}, ale jego identyfikator jest już znany — czekam.`);
 }
