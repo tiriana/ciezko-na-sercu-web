@@ -88,12 +88,20 @@ a `catalog.slugs[]` nie jest w ogóle emitowane jako trasy (`getStaticPaths` bie
 ## 6. Migracja 109 odcinków
 
 1. Stary `data/episodes/<id>.json` jest rozkładany na artefakty: `tracks` → `audio-id.json`
-   (z `sources: shazam|zapowiedź`), `summary` → `text.json`, `intro` → `intro.json`,
-   `topics` → pochodne ze `speech.json`, `tags`/`quotes`/`credits` → `manual.json`;
-   `overrides` i `titles.json` → `manual.json`.
+   (z `sources: shazam|zapowiedź`), `summary` → `text.json`, `tags`/`quotes`/`credits` →
+   `manual.json`; `overrides` i `titles.json` → `manual.json`.
 2. `legacy.json` nie powstaje — nie ma czego kasować.
 3. Test akceptacyjny: dla wszystkich 109 odcinków skompilowany `episode.json` musi być
    identyczny z dzisiejszym renderem (`apply(episode, overrides, titles, aliases)`), diff zero.
+   Harness: `npm run verify:migration` — obecnie 109/109, różnic 0.
+4. Ustalenie z harnessu: `topics` **nie** da się odtworzyć ze `speech.json`, bo granice
+   pochodzą z taggera i wcześniejszych przebiegów snap, a stare odcinki mają je już
+   poprawione; zostają więc w osobnym artefakcie `topics.json` (producent: tagger/snap),
+   do którego `voice.json` i `text.json` mogą dopisywać. Dopiero nowe odcinki pójdą
+   torem „granice ze speech, etykiety z text".
+5. Intro w starych danych nie występuje w `episode.json` — trafiało wyłącznie do
+   `overrides.addTracks` przez `tools/apply-intro.py`, więc w migracji 0 odcinków ma
+   własny `intro.json`; producent intro zadziała od pierwszego nowego odcinka.
 4. Migracja jest mechaniczna i jednorazowa, ale opracowywanie nowych odcinków idzie po kolei.
 
 ## 7. CI, branch, deploy

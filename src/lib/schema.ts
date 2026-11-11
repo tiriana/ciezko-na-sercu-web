@@ -173,6 +173,7 @@ export const overrideSchema = z.object({
     .default({ rename: {} }),
 });
 
+export type Override = z.infer<typeof overrideSchema>;
 export type TrackOverride = z.infer<typeof overrideSchema>['tracks'][number];
 
 export type Catalog = z.infer<typeof catalogSchema>;

@@ -26,7 +26,8 @@
     "identify:apply": "node scripts/identify-tracks.mjs --write",
     "pipeline": "dot -Tsvg docs/pipeline.dot -o docs/pipeline.svg && dot -Tpng -Gdpi=200 docs/pipeline.dot -o docs/pipeline.png && dot -Tpdf docs/pipeline.dot -o docs/pipeline.pdf",
     "enrich": "node scripts/enrich-episode.mjs",
-    "enrich:apply": "node scripts/enrich-episode.mjs --write"
+    "enrich:apply": "node scripts/enrich-episode.mjs --write",
+    "verify:migration": "node scripts/verify-migration.mjs"
   },
   "dependencies": {
     "astro": "^7.4.7",
