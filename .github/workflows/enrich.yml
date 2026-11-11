@@ -1,0 +1,93 @@
+name: enrich
+
+# Streszczenie odcinka i nazwy wejść z modelu językowego (GitHub Models).
+# Wejścia powstają w voiceprincie, a utwory w identify, więc etap idzie po nich:
+# voiceprint zamawia go dispatchem, a codzienny cron łapie to, co zostało pominięte
+# (np. po nieudanym przebiegu). Przebieg jest idempotentny — bierze odcinki bez
+# streszczenia i wejścia z surową etykietą, więc powtórka niczego nie psuje.
+#
+# Token jest wbudowany: `models: read` wystarcza, żeby GITHUB_TOKEN wołał
+# models.github.ai bez dodatkowych sekretów.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      episodes:
+        description: 'UUID lub slugi oddzielone przecinkami; puste = odcinki bez streszczenia'
+        required: false
+        type: string
+      limit:
+        description: 'Ile odcinków najwyżej (0 = bez limitu)'
+        required: false
+        default: '0'
+        type: string
+      model:
+        description: 'Model GitHub Models'
+        required: false
+        default: 'openai/gpt-4.1-mini'
+        type: string
+      force:
+        description: 'Przepisz też istniejące streszczenia'
+        required: false
+        default: false
+        type: boolean
+
+run-name: "streszczenia: ${{ inputs.episodes || 'braki' }}"
+
+permissions:
+  contents: write
+  actions: write
+  models: read
+
+concurrency:
+  group: enrich
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - run: npm ci
+
+      - name: Streszczenia i nazwy wejść
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EPISODES: ${{ inputs.episodes }}
+          LIMIT: ${{ inputs.limit }}
+          MODEL: ${{ inputs.model }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          extra=()
+          if [ -n "$EPISODES" ]; then extra+=(--episodes "$EPISODES"); fi
+          if [ "$LIMIT" != "0" ] && [ -n "$LIMIT" ]; then extra+=(--limit "$LIMIT"); fi
+          if [ -n "$MODEL" ]; then extra+=(--model "$MODEL"); fi
+          if [ "$FORCE" = "true" ]; then extra+=(--force); fi
+          node scripts/enrich-episode.mjs "${extra[@]}" --write | tee enrich.log
+          {
+            echo "### Streszczenia i nazwy wejść"
+            echo ""
+            echo '```'
+            tail -60 enrich.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - run: npm run check
+
+      - name: Commit
+        run: |
+          bash scripts/push-data.sh "fix: streszczenia i nazwy wejść (${GITHUB_RUN_ID})" data/episodes
+
+      - name: Stan etapów
+        if: always()
+        run: node scripts/status-all.mjs
+
+      # Push z GITHUB_TOKEN nie uruchamia workflow, więc deploy zamawiamy ręcznie.
+      - name: Deploy po aktualizacji danych
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main

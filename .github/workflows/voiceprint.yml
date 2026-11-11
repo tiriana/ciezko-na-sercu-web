@@ -132,6 +132,12 @@ jobs:
         run: |
           bash scripts/push-data.sh "fix: wejścia z profilu głosu (${GITHUB_RUN_ID})" data/overrides data/voiceprint.json
           gh workflow run deploy.yml --ref main
+          # Wejścia są już w danych, więc model może je nazwać i streścić odcinek.
+          if [ -n "$EPISODES" ]; then
+            gh workflow run enrich.yml --ref main -f episodes="$EPISODES"
+          else
+            gh workflow run enrich.yml --ref main
+          fi
 
       # Push mógł się nie udać mimo ponowień; wtedy praca i tak nie przepada —
       # poprawki da się pobrać z artefaktu i nałożyć ręcznie.
