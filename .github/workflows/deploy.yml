@@ -80,7 +80,8 @@ jobs:
         env:
           BASE_URL: https://ciezko-na-sercu.pages.dev
           # Najstarszy odcinek w katalogu — stabilny adres, nie zniknie przy edycji listy.
-          EPISODE_PATH: /odcinki/2024-05-01-ciezko-na-sercu-1-maja-godz-0005/
+          # Adres ma uuid, bo routing nie zależy od tytułu.
+          EPISODE_PATH: /odcinki/4d8fa861/2024-05-01-ciezko-na-sercu-1-maja-godz-0005/
         run: |
           set -uo pipefail
           expected=$(node -p "require('./package.json').version")
@@ -105,7 +106,7 @@ jobs:
               fi
             fi
 
-            episode_code=$(curl -sS --max-time 20 -o /dev/null -w '%{http_code}' "$BASE_URL$EPISODE_PATH" || echo 000)
+            episode_code=$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$BASE_URL$EPISODE_PATH" || echo 000)
             [ "$episode_code" = 200 ] || problems="$problems $EPISODE_PATH: HTTP $episode_code."
 
             if [ -z "$problems" ]; then

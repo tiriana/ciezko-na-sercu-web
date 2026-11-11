@@ -54,10 +54,10 @@ const syncProgress = () => {
   const progress = bar?.querySelector('[data-progress]');
   const fill = bar?.querySelector('[data-progress-fill]');
   const toggle = bar?.querySelector('[data-play-toggle]');
-  const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
-  const ratio = duration > 0 ? Math.min(1, audio.currentTime / duration) : 0;
+  const duration = realDuration();
+  const ratio = duration > 0 ? Math.min(1, now() / duration) : 0;
 
-  if (current) current.textContent = formatTime(audio.currentTime);
+  if (current) current.textContent = formatTime(now());
   if (total) total.textContent = formatTime(duration);
   if (fill) fill.style.width = `${(ratio * 100).toFixed(2)}%`;
   if (progress) progress.setAttribute('aria-valuenow', String(Math.round(ratio * 100)));
@@ -82,13 +82,13 @@ const currentFragment = (time) => {
  * przez `.is-active`, więc tutaj wystarczy wypełnienie jednego paska. */
 const syncFragment = () => {
   if (!audio || !pageMatchesAudio()) return;
-  const fragment = currentFragment(audio.currentTime);
+  const fragment = currentFragment(now());
   writeFragmentToUrl(fragment);
   if (!fragment) return;
   const barElement = spans.find((span) => span.element === fragment.element)?.progress;
   if (!barElement) return;
   const total = fragment.end - fragment.start;
-  const elapsed = Math.min(total, Math.max(0, audio.currentTime - fragment.start));
+  const elapsed = Math.min(total, Math.max(0, now() - fragment.start));
   const ratio = total > 0 ? elapsed / total : 0;
   const fill = barElement.querySelector('[data-fragment-fill]');
   if (fill) fill.style.width = `${(ratio * 100).toFixed(2)}%`;
@@ -118,8 +118,8 @@ const writeFragmentToUrl = (fragment) => {
 const seekWhenReady = (seconds) => {
   if (!audio) return;
   const seek = () => {
-    if (!Number.isFinite(audio.duration) || audio.duration <= 0) return;
-    audio.currentTime = Math.min(seconds, audio.duration);
+    if (!(realDuration() > 0)) return;
+    seekTo(seconds);
     syncProgress();
     syncSpans();
   };
@@ -164,8 +164,8 @@ const applyTimeLink = () => {
 };
 
 const seekToRatio = (ratio) => {
-  if (!audio || !Number.isFinite(audio.duration) || audio.duration <= 0) return;
-  audio.currentTime = Math.min(Math.max(0, ratio), 1) * audio.duration;
+  if (!audio || !(realDuration() > 0)) return;
+  seekTo(Math.min(Math.max(0, ratio), 1) * realDuration());
   syncProgress();
 };
 
@@ -244,13 +244,13 @@ const setupBar = () => {
       dragging = false;
     });
     progress.addEventListener('keydown', (event) => {
-      if (!audio || !Number.isFinite(audio.duration)) return;
+      if (!audio || !(realDuration() > 0)) return;
       if (event.key === 'ArrowRight') {
         event.preventDefault();
-        audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
+        seekTo(now() + 10);
       } else if (event.key === 'ArrowLeft') {
         event.preventDefault();
-        audio.currentTime = Math.max(0, audio.currentTime - 10);
+        seekTo(now() - 10);
       }
     });
   }
@@ -308,7 +308,7 @@ const readMarkers = () => {
 const renderMarkers = () => {
   if (!markersHost) return;
   markersHost.textContent = '';
-  const duration = Number.isFinite(audio?.duration) ? audio.duration : 0;
+  const duration = realDuration();
   if (markerSpecs.length === 0 || duration <= 0) return;
   const fragment = document.createDocumentFragment();
   for (const spec of markerSpecs) {
@@ -327,8 +327,7 @@ const seekToMarker = (node) => {
   if (!audio) return;
   const start = Number(node.dataset.start);
   if (!Number.isFinite(start)) return;
-  const limit = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : start;
-  audio.currentTime = Math.max(0, Math.min(start, limit));
+  seekTo(start);
   syncProgress();
   syncSpans();
 };
@@ -374,7 +373,7 @@ const syncSpans = () => {
   }
   // Pozycję pokazujemy także po pauzie i po wejściu z `?t=`, ale nie na starcie od zera:
   // wtedy nie wybrano jeszcze żadnego miejsca.
-  const active = audio.currentTime > 0 ? activeSpans(audio.currentTime) : [];
+  const active = now() > 0 ? activeSpans(now()) : [];
   const playing = !audio.paused;
   const playingTrack = playing ? active.find((span) => span.kind === 'track') : null;
   if (playingTrack) {
@@ -413,6 +412,7 @@ const switchToPageEpisode = () => {
   delete audio.dataset.closed;
   audio.dataset.src = payload.src;
   audio.dataset.slug = payload.slug ?? '';
+  audio.dataset.realDuration = payload.duration ? String(payload.duration) : '';
   audio.src = payload.src;
   audio.load();
   setNowPlaying('');
@@ -424,11 +424,32 @@ const switchToPageEpisode = () => {
   if (link && payload.path) link.href = payload.path;
 };
 
+// Nagłówek Xing w plikach Polskiego Radia podaje czas krótszy niż realna liczba ramek
+// (np. 6893 s vs 6909 s), a przeglądarka wierzy nagłówkowi. Czasy w danych liczymy
+// z zdekodowanego audio, więc pozycję trzeba przeliczyć na skalę odtwarzacza — inaczej
+// im dalej w audycję, tym mocniej znaczniki wyprzedzają dźwięk.
+const realDuration = () => {
+  const known = Number(audio?.dataset.realDuration);
+  if (Number.isFinite(known) && known > 0) return known;
+  return Number.isFinite(audio?.duration) ? audio.duration : 0;
+};
+const mediaScale = () => {
+  const media = audio?.duration;
+  const real = realDuration();
+  return real > 0 && Number.isFinite(media) && media > 0 ? real / media : 1;
+};
+const now = () => (audio ? audio.currentTime * mediaScale() : 0);
+const seekTo = (seconds) => {
+  if (!audio || !Number.isFinite(seconds)) return;
+  const limit = realDuration() || seconds;
+  audio.currentTime = Math.max(0, Math.min(seconds, limit)) / mediaScale();
+};
+
 const playFrom = (start) => {
   if (!audio) return;
   switchToPageEpisode();
   const seek = () => {
-    audio.currentTime = start;
+    seekTo(start);
     audio.play();
   };
   if (audio.readyState >= 1) {
@@ -464,7 +485,7 @@ const playEpisode = (payload, start = 0) => {
   if (!audio || !payload.src) return;
   const changed = loadEpisode(payload);
   const seek = () => {
-    audio.currentTime = start;
+    seekTo(start);
     audio.play().catch(() => {});
   };
   if (changed || audio.readyState < 1) audio.addEventListener('loadedmetadata', seek, { once: true });
@@ -540,7 +561,7 @@ const setJumpState = (button, enabled, label, reason = label) => {
 
 const syncJumpControls = () => {
   if (!bar) return;
-  const current = pageMatchesAudio() && Number.isFinite(audio?.currentTime) ? audio.currentTime : 0;
+  const current = pageMatchesAudio() && Number.isFinite(audio?.currentTime) ? now() : 0;
   const starts = pageMarkerStarts();
   const previousMarker = previousMarkerStart(starts, current);
   const nextMarker = nextMarkerStart(starts, current);
@@ -592,7 +613,7 @@ const closeJumpMenu = (restoreFocus = false) => {
 const jumpToMarker = (direction) => {
   if (!audio) return;
   const starts = pageMarkerStarts();
-  const current = pageMatchesAudio() && Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+  const current = pageMatchesAudio() && Number.isFinite(audio.currentTime) ? now() : 0;
   const target = direction < 0 ? previousMarkerStart(starts, current) : nextMarkerStart(starts, current);
   if (target === null) return;
 
@@ -609,7 +630,7 @@ const jumpToMarker = (direction) => {
   if (!pageMatchesAudio()) {
     const changed = loadEpisode({ src: page.src, slug: page.slug, title: page.title ?? '' });
     const seek = () => {
-      audio.currentTime = Math.min(target, Number.isFinite(audio.duration) ? audio.duration : target);
+      seekTo(Math.min(target, realDuration() || target));
       if (resume) audio.play().catch(() => {});
       syncProgress();
       syncSpans();
@@ -617,7 +638,7 @@ const jumpToMarker = (direction) => {
     if (changed || audio.readyState < 1) audio.addEventListener('loadedmetadata', seek, { once: true });
     else seek();
   } else {
-    audio.currentTime = Math.min(target, Number.isFinite(audio.duration) ? audio.duration : target);
+    seekTo(Math.min(target, realDuration() || target));
     syncProgress();
     syncSpans();
   }
@@ -656,8 +677,7 @@ document.addEventListener('keydown', (event) => {
   } else if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
     event.preventDefault();
     const delta = event.key === 'ArrowLeft' ? -10 : 10;
-    const limit = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : audio.currentTime + delta;
-    audio.currentTime = Math.min(Math.max(0, audio.currentTime + delta), limit);
+    seekTo(now() + delta);
     syncProgress();
     syncSpans();
     syncJumpControls();
@@ -908,8 +928,7 @@ const initPage = () => {
     const delta = Number(button.dataset.skip);
     button.addEventListener('click', () => {
       if (!audio) return;
-      const limit = Number.isFinite(audio.duration) ? audio.duration : audio.currentTime + delta;
-      audio.currentTime = Math.min(Math.max(0, audio.currentTime + delta), limit);
+      seekTo(now() + delta);
       syncSpans();
     });
   }
@@ -924,7 +943,7 @@ const initPage = () => {
       // Czas z innej audycji nie mówi nic o tym, co gra — wtedy zawsze przełączamy i gramy.
       const isCurrent =
         row && pageMatchesAudio()
-          ? audio.currentTime >= Number(row.dataset.spanStart) && audio.currentTime < Number(row.dataset.spanEnd)
+          ? now() >= Number(row.dataset.spanStart) && now() < Number(row.dataset.spanEnd)
           : false;
       if (isCurrent && !audio.paused) {
         audio.pause();
@@ -949,7 +968,7 @@ const initPage = () => {
       if (!audio) return;
       const target = start + Math.min(1, Math.max(0, ratio)) * (end - start);
       const limit = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : target;
-      audio.currentTime = Math.max(0, Math.min(target, limit));
+      seekTo(Math.max(0, Math.min(target, limit)));
       syncProgress();
       syncSpans();
     };
@@ -974,7 +993,7 @@ const initPage = () => {
       if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
         event.preventDefault();
         const step = event.key === 'ArrowRight' ? 5 : -5;
-        seekInside((audio.currentTime - start + step) / (end - start));
+        seekInside((now() - start + step) / (end - start));
       }
     });
   }
