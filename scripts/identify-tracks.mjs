@@ -6,7 +6,7 @@
  * próbek wyciętych z mp3 po HTTP (range requests), a pierwszy trafiony utwór
  * zostaje wpisany do `data/episodes/<id>.json`.
  *
- *   node scripts/identify-tracks.mjs [--episodes <id|slug,...>] [--limit N] [--force] [--write]
+ *   node scripts/identify-tracks.mjs [--episodes <id|slug,...>] [--limit N] [--force] [--write] [--spans speech-spans.json]
  */
 import { execFile } from 'node:child_process';
 import { mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
@@ -19,6 +19,23 @@ import { Shazam } from 'node-shazam';
 const run = promisify(execFile);
 
 const MIN_MUSIC_SEC = 45;
+// Siatka zamiast trzech punktów: blok 7-minutowy mieści dwie–trzy piosenki,
+// a trzy sondy trafiały w jedną i gubiły resztę.
+const gridProbes = (block, step) => {
+  const length = block.end - block.start;
+  if (length <= PROBE.probeSec) return [{ start: block.start, end: block.end }];
+  const leadIn = Math.min(PROBE.leadInSec, length * 0.1);
+  const tail = Math.min(PROBE.tailSec, length * 0.1);
+  const first = block.start + leadIn;
+  const last = block.end - tail - PROBE.probeSec;
+  const probes = [];
+  for (let start = first; start <= last; start += step) {
+    probes.push({ start: round(start), end: round(start + PROBE.probeSec) });
+  }
+  if (probes.length === 0) probes.push({ start: round(first), end: round(first + PROBE.probeSec) });
+  return probes;
+};
+
 const PROBE = { probeSec: 12, leadInSec: 12, tailSec: 10, maxProbes: 3 };
 const POSITIONS = [0.15, 0.5, 0.85];
 const SHAZAM_DELAY_MS = 1200;
@@ -38,6 +55,9 @@ for (let index = 2; index < process.argv.length; index += 1) {
 
 const write = args.has('write');
 const force = args.has('force');
+// `--grid 60` sonduje muzykę co minutę i składa utwory z trafień (offset Shazama daje
+// początek piosenki). Bez tej flagi zostaje stare zachowanie: jedna piosenka na blok.
+const grid = Number.parseFloat(args.get('grid') ?? '0') || 0;
 const limit = Number.parseInt(args.get('limit') ?? '0', 10) || 0;
 const wanted = String(args.get('episodes') ?? '')
   .split(/[\s,]+/)
@@ -171,13 +191,17 @@ try {
       continue;
     }
 
-    const transcript = await readJson(`data/transcripts/${entry.id}.json`).catch(() => null);
-    if (!transcript) {
-      console.log(`— ${entry.slug}: brak transkryptu`);
+    // Bloki mowy można wziąć z transkryptu albo z VAD-u (`speech-spans.json`), który
+    // liczy się w 20 s i nie wymaga whispera. Dopełnienie jednego i drugiego to muzyka.
+    const spansPath = args.get('spans');
+    const spans = spansPath ? await readJson(spansPath).catch(() => null) : null;
+    const transcript = spans ? null : await readJson(`data/transcripts/${entry.id}.json`).catch(() => null);
+    if (!spans && !transcript) {
+      console.log(`— ${entry.slug}: brak transkryptu i bloków mowy`);
       continue;
     }
 
-    const windows = transcript.windows ?? [];
+    const windows = spans ? spans.spans ?? [] : transcript.windows ?? [];
     const duration = entry.durationSec ?? (await probeDuration(entry.audioUrl)) ?? windows.at(-1)?.end ?? 0;
     if (duration <= 0) {
       console.log(`— ${entry.slug}: nieznana długość nagrania`);
@@ -188,44 +212,107 @@ try {
     const tracks = [];
     let probes = 0;
 
-    for (const block of blocks) {
-      let found = null;
-      for (const probe of planProbes(block)) {
-        const clip = join(work, `${entry.id}-${Math.round(probe.start)}.wav`);
-        try {
-          await extractClip(entry.audioUrl, probe.start, probe.end - probe.start, clip);
-          const response = await recognize(clip);
-          probes += 1;
-          const track = response?.track;
-          if (track?.title) {
-            found = track;
-            break;
+    if (grid > 0) {
+      // Zbieramy trafienia z każdej sondy i dopiero z nich składamy utwory: offset
+      // mówi, gdzie w piosence jesteśmy, więc start = czas sondy − offset.
+      const hits = [];
+      for (const block of blocks) {
+        for (const probe of gridProbes(block, grid)) {
+          const clip = join(work, `${entry.id}-${Math.round(probe.start)}.wav`);
+          try {
+            await extractClip(entry.audioUrl, probe.start, probe.end - probe.start, clip);
+            const response = await recognize(clip);
+            probes += 1;
+            const found = response?.track;
+            if (found?.title) {
+              hits.push({
+                artist: found.subtitle?.trim() || null,
+                title: found.title.trim(),
+                album: metadata(found.sections, 'Album'),
+                probeStart: probe.start,
+                blockEnd: block.end,
+                offset: response?.matches?.[0]?.offset ?? null,
+              });
+            }
+          } catch (error) {
+            probes += 1;
+            console.error(`   ${entry.slug}@${Math.round(probe.start)}: ${error.message}`);
+          } finally {
+            await rm(clip, { force: true });
           }
-        } catch (error) {
-          probes += 1;
-          console.error(`   ${entry.slug}@${Math.round(probe.start)}: ${error.message}`);
-        } finally {
-          await rm(clip, { force: true });
+          await sleep(SHAZAM_DELAY_MS);
         }
-        await sleep(SHAZAM_DELAY_MS);
       }
 
-      if (!found) {
-        if (block.end - block.start > 0) console.log(`   bez trafienia: ${block.start}–${block.end}`);
-        continue;
+      const grouped = new Map();
+      for (const hit of hits) {
+        const key = `${hit.artist ?? ''}\u0000${hit.title}`;
+        const starts = grouped.get(key)?.starts ?? [];
+        const start = Math.max(0, hit.probeStart - (hit.offset ?? 0));
+        starts.push(start);
+        grouped.set(key, { ...hit, starts, blockEnd: Math.max(hit.blockEnd, grouped.get(key)?.blockEnd ?? 0) });
       }
 
-      tracks.push({
-        start: block.start,
-        end: block.end,
-        durationSec: round(block.end - block.start),
-        artist: found.subtitle?.trim() || null,
-        title: found.title.trim(),
-        album: metadata(found.sections, 'Album'),
-        confidence: CONFIDENCE,
-        sources: ['shazam'],
-        links: [],
-      });
+      const songs = [...grouped.values()]
+        .map((item) => ({ ...item, start: round(Math.min(...item.starts)) }))
+        .sort((left, right) => left.start - right.start);
+
+      for (const [index, song] of songs.entries()) {
+        const next = songs[index + 1];
+        const end = next ? round(Math.min(next.start, song.blockEnd)) : round(song.blockEnd);
+        if (end - song.start < MIN_MUSIC_SEC / 3) continue;
+        tracks.push({
+          start: song.start,
+          end,
+          durationSec: round(end - song.start),
+          artist: song.artist,
+          title: song.title,
+          album: song.album,
+          confidence: CONFIDENCE,
+          sources: ['shazam'],
+          links: [],
+        });
+      }
+    } else {
+      for (const block of blocks) {
+        let found = null;
+        for (const probe of planProbes(block)) {
+          const clip = join(work, `${entry.id}-${Math.round(probe.start)}.wav`);
+          try {
+            await extractClip(entry.audioUrl, probe.start, probe.end - probe.start, clip);
+            const response = await recognize(clip);
+            probes += 1;
+            const track = response?.track;
+            if (track?.title) {
+              found = track;
+              break;
+            }
+          } catch (error) {
+            probes += 1;
+            console.error(`   ${entry.slug}@${Math.round(probe.start)}: ${error.message}`);
+          } finally {
+            await rm(clip, { force: true });
+          }
+          await sleep(SHAZAM_DELAY_MS);
+        }
+
+        if (!found) {
+          if (block.end - block.start > 0) console.log(`   bez trafienia: ${block.start}–${block.end}`);
+          continue;
+        }
+
+        tracks.push({
+          start: block.start,
+          end: block.end,
+          durationSec: round(block.end - block.start),
+          artist: found.subtitle?.trim() || null,
+          title: found.title.trim(),
+          album: metadata(found.sections, 'Album'),
+          confidence: CONFIDENCE,
+          sources: ['shazam'],
+          links: [],
+        });
+      }
     }
 
     console.log(`${write ? '+' : '·'} ${entry.slug}: ${tracks.length}/${blocks.length} bloków, ${probes} próbek`);

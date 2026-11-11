@@ -421,7 +421,7 @@ const switchToPageEpisode = () => {
   const title = bar?.querySelector('[data-audio-title]');
   if (title) title.textContent = payload.title ?? '';
   const link = bar?.querySelector('[data-audio-link]');
-  if (link && payload.slug) link.href = `/odcinki/${payload.slug}/`;
+  if (link && payload.path) link.href = payload.path;
 };
 
 const playFrom = (start) => {
@@ -455,7 +455,7 @@ const loadEpisode = (payload) => {
   const title = bar.querySelector('[data-audio-title]');
   if (title) title.textContent = payload.title ?? '';
   const link = bar.querySelector('[data-audio-link]');
-  if (link && payload.slug) link.href = `/odcinki/${payload.slug}/`;
+  if (link && payload.path) link.href = payload.path;
   syncJumpControls();
   return changed;
 };
@@ -708,7 +708,7 @@ const applyEpisodeAudio = () => {
   const title = bar.querySelector('[data-audio-title]');
   if (title) title.textContent = payload.title ?? '';
   const link = bar.querySelector('[data-audio-link]');
-  if (link && payload.slug) link.href = `/odcinki/${payload.slug}/`;
+  if (link && payload.path) link.href = payload.path;
 
   if (audio.dataset.src !== payload.src) {
     audio.dataset.src = payload.src;

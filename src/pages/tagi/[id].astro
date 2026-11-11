@@ -27,7 +27,7 @@ const typeLabel = TAG_TYPE_LABELS[tag.type];
 
     <EpisodeList
       tagId={tag.id}
-      items={tag.episodes.map((episode) => ({ slug: episode.slug, date: episode.date, title: resolveDisplayTitle(episode) }))}
+      items={tag.episodes.map((episode) => ({ id: episode.id, slug: episode.slug, date: episode.date, title: resolveDisplayTitle(episode) }))}
     />
   </main>
 

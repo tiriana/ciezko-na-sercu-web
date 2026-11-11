@@ -64,9 +64,15 @@ const TAG_TYPE_OF = new Map();
 
 const ids = new Set();
 const slugs = new Map();
+// Adres odcinka niesie 8 pierwszych znaków uuid, więc kolizja przedrostka byłaby
+// cichym nadpisaniem strony albo przekierowaniem w złe miejsce.
+const prefixes = new Map();
 for (const episode of catalog.episodes) {
   if (ids.has(episode.id)) problems.push(`duplikat id: ${episode.id}`);
   ids.add(episode.id);
+  const prefix = episode.id.slice(0, 8);
+  if (prefixes.has(prefix)) problems.push(`przedrostek uuid ${prefix} należy do ${prefixes.get(prefix)} i ${episode.id}`);
+  prefixes.set(prefix, episode.id);
   if (!episode.slugs.includes(episode.slug)) {
     problems.push(`${episode.id}: slug ${episode.slug} nie występuje w slugs[]`);
   }

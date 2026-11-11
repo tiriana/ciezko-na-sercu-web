@@ -134,3 +134,10 @@ export const formatDateTime = (iso: string) => {
     timeZone: 'Europe/Warsaw',
   }).format(date);
 };
+
+/**
+ * Adres odcinka: krótki identyfikator i slug. Routing zależy tylko od identyfikatora,
+ * bo tytuł bywa poprawiany po publikacji, a wtedy każdy stary link przestawałby działać.
+ */
+export const episodePath = (episode: { id: string; slug: string }) =>
+  `/odcinki/${episode.id.slice(0, 8)}/${episode.slug}/`;

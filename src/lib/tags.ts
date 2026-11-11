@@ -1,4 +1,4 @@
-import type { Tag } from './schema';
+import type { Tag } from './schema.ts';
 
 /** Musi odpowiadać tagId w taggerze (src/tag/tags.ts), inaczej deep link nie trafi. */
 export function tagId(label: string): string {

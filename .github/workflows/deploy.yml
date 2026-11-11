@@ -2,7 +2,7 @@ name: deploy
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main, develop, v2]
   workflow_dispatch:
     inputs:
       version:
@@ -68,7 +68,8 @@ jobs:
           npx --yes wrangler@$WRANGLER_VERSION pages project create "$CF_PROJECT" \
             --production-branch=main || true
           # Nazwa gałęzi wybiera adres: main to produkcja, develop — staging
-          # na https://develop.<projekt>.pages.dev, feat/** — podglądy.
+          # na https://develop.<projekt>.pages.dev, v2 — nowy pipeline,
+          # feat/** — podglądy.
           npx --yes wrangler@$WRANGLER_VERSION pages deploy dist \
             --project-name "$CF_PROJECT" --branch="$GITHUB_REF_NAME" --commit-dirty=true
 
