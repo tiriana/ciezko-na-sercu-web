@@ -13,10 +13,9 @@ function legacyRedirects(catalog) {
   const redirects = {};
   for (const episode of catalog.episodes) {
     const target = `/odcinki/${shortId(episode.id)}/${episode.slug}/`;
-    for (const slug of episode.slugs ?? []) {
-      if (slug === episode.slug) continue;
-      redirects[`/odcinki/${slug}`] = target;
-    }
+    // Także bieżący slug: płaski adres `/odcinki/<slug>/` nie jest już trasą,
+    // więc każdy wpis z `slugs[]` prowadzi na wersję z uuid.
+    for (const slug of episode.slugs ?? []) redirects[`/odcinki/${slug}`] = target;
   }
   return redirects;
 }
