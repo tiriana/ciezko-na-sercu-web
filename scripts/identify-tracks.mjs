@@ -16,6 +16,8 @@ import { promisify } from 'node:util';
 
 import { Shazam } from 'node-shazam';
 
+import { timelineFor, toPlayer } from './lib/timeline.mjs';
+
 const run = promisify(execFile);
 
 const MIN_MUSIC_SEC = 45;
@@ -125,16 +127,6 @@ const planProbes = (block) => {
   });
 };
 
-// Katalog nie zna długości nowych odcinków, a bez niej ostatni blok muzyki po
-// pożegnaniu wypadałby z zasięgu. ffprobe czyta nagłówek mp3 po HTTP i odpowiada
-// w ułamek sekundy, więc nie ściąga całego nagrania.
-const probeDuration = async (url) => {
-  const { stdout } = await run('ffprobe', [
-    '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', url,
-  ]);
-  return Number.parseFloat(stdout.trim()) || 0;
-};
-
 const extractClip = async (url, start, seconds, file) => {
   await run('ffmpeg', [
     '-hide_banner', '-loglevel', 'error', '-y',
@@ -202,7 +194,10 @@ try {
     }
 
     const windows = spans ? spans.spans ?? [] : transcript.windows ?? [];
-    const duration = entry.durationSec ?? (await probeDuration(entry.audioUrl)) ?? windows.at(-1)?.end ?? 0;
+    // Bloki i sondy liczymy w czasie dekodowanego audio (tak tnie ffmpeg), a dopiero
+    // wynik przeliczamy na skalę odtwarzacza.
+    const timeline = await timelineFor(entry.audioUrl, entry.id);
+    const duration = timeline.realDuration || entry.durationSec || windows.at(-1)?.end || 0;
     if (duration <= 0) {
       console.log(`— ${entry.slug}: nieznana długość nagrania`);
       continue;
@@ -261,10 +256,12 @@ try {
         const next = songs[index + 1];
         const end = next ? round(Math.min(next.start, song.blockEnd)) : round(song.blockEnd);
         if (end - song.start < MIN_MUSIC_SEC / 3) continue;
+        const startPlayer = toPlayer(song.start, timeline.scale);
+        const endPlayer = toPlayer(end, timeline.scale);
         tracks.push({
-          start: song.start,
-          end,
-          durationSec: round(end - song.start),
+          start: startPlayer,
+          end: endPlayer,
+          durationSec: round(endPlayer - startPlayer),
           artist: song.artist,
           title: song.title,
           album: song.album,
@@ -301,10 +298,12 @@ try {
           continue;
         }
 
+        const startPlayer = toPlayer(block.start, timeline.scale);
+        const endPlayer = toPlayer(block.end, timeline.scale);
         tracks.push({
-          start: block.start,
-          end: block.end,
-          durationSec: round(block.end - block.start),
+          start: startPlayer,
+          end: endPlayer,
+          durationSec: round(endPlayer - startPlayer),
           artist: found.subtitle?.trim() || null,
           title: found.title.trim(),
           album: metadata(found.sections, 'Album'),

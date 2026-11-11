@@ -1166,7 +1166,7 @@
 
       const usePlayerTime = (input) => {
         // Ta sama dokładność co przy znacznikach: 10 ms, nie cała sekunda.
-        input.value = String(Math.round(realTime() * 100) / 100);
+        input.value = String(Math.round($('audio').currentTime * 100) / 100);
         // Programowe ustawienie value nie odpala „input”, więc stan trzeba zaktualizować ręcznie.
         input.dispatchEvent(new Event('input'));
       };
@@ -2145,34 +2145,11 @@
 
       let pendingAutoSelection = null;
 
-      // Nagłówek Xing w plikach Polskiego Radia podaje czas krótszy niż realna liczba
-      // ramek (np. 6893 s vs 6909 s), a przeglądarka wierzy nagłówkowi. Znaczniki liczymy
-      // z zdekodowanego audio, więc każdy skok i każdy odczyt pozycji trzeba przeliczyć
-      // na skalę odtwarzacza — inaczej im dalej w audycję, tym bardziej znaczniki
-      // wyprzedzają dźwięk.
-      const mediaScale = () => {
-        const audio = $('audio');
-        const real = wave.duration;
-        const media = audio.duration;
-        if (!(real > 0) || !Number.isFinite(media) || media <= 0) return 1;
-        return real / media;
-      };
-      const realTime = () => {
-        const audio = $('audio');
-        const time = audio.currentTime;
-        return Number.isFinite(time) ? time * mediaScale() : time;
-      };
-      const setRealTime = (seconds) => {
-        const audio = $('audio');
-        if (!Number.isFinite(seconds)) return;
-        audio.currentTime = seconds / mediaScale();
-      };
-
       const seek = (seconds) => {
         const audio = $('audio');
         if (!Number.isFinite(seconds)) return;
         resetJumpChain();
-        setRealTime(seconds);
+        audio.currentTime = seconds;
         audio.play();
       };
 
@@ -2312,7 +2289,7 @@
         const perPixel = (wave.span * PEAKS_PER_SECOND) / width;
         const middle = height / 2;
         const amplitude = Math.max(1, middle - 3);
-        const currentTime = realTime();
+        const currentTime = $('audio').currentTime;
         const playheadX = Number.isFinite(currentTime) ? ((currentTime - wave.start) / wave.span) * width : -1;
 
         ctx.fillStyle = 'rgba(120, 110, 100, 0.14)';
@@ -2699,7 +2676,7 @@
 
       const updateNav = () => {
         const times = markerTimes();
-        const time = realTime();
+        const time = $('audio').currentTime;
         const ready = Boolean(wave.peaks) && times.length > 0 && Number.isFinite(time);
         $('wave-prev').disabled = !ready || !times.some((value) => value < time - 0.001);
         $('wave-next').disabled = !ready || !times.some((value) => value > time + 0.001);
@@ -2737,7 +2714,7 @@
           // Kolejne naciśnięcie poza końcem nic nie robi — tak samo, jak wyłączony przycisk.
           if (index < 0 || index >= times.length) return;
         } else {
-          const time = realTime();
+          const time = audio.currentTime;
           if (!Number.isFinite(time)) return;
           index =
             direction < 0
@@ -2747,14 +2724,14 @@
         }
         const target = times[index];
         jumpInFlight = true;
-        setRealTime(target);
+        audio.currentTime = target;
         setTimeout(() => {
           jumpInFlight = false;
         }, 120);
         jumpMemory.index = index;
         jumpMemory.direction = direction;
         jumpMemory.at = performance.now();
-        $('clock').textContent = fmt(realTime());
+        $('clock').textContent = fmt(audio.currentTime);
         // Okno przesuwa się tylko wtedy, gdy cel wypada poza widokiem.
         if (target < wave.start || target > wave.start + wave.span) {
           setWindow(target - wave.span / 2, wave.span);
@@ -3671,7 +3648,7 @@
         const node = $('wave-playhead');
         const width = stageEl().clientWidth;
         updateNav();
-        const time = realTime();
+        const time = $('audio').currentTime;
         if (!wave.peaks || !wave.span || !width || !Number.isFinite(time)) {
           node.hidden = true;
           return;
@@ -3710,7 +3687,7 @@
 
       const zoomWave = (factor) => {
         if (!wave.peaks) return;
-        const time = realTime();
+        const time = $('audio').currentTime;
         const inside = Number.isFinite(time) && time > wave.start && time < wave.start + wave.span;
         const ratio = inside ? (time - wave.start) / wave.span : 0.5;
         const anchor = wave.start + wave.span * ratio;
@@ -3722,8 +3699,8 @@
         const audio = $('audio');
         if (!Number.isFinite(time) || !wave.duration) return;
         resetJumpChain();
-        setRealTime(clampNumber(time, 0, wave.duration));
-        $('clock').textContent = fmt(realTime());
+        audio.currentTime = clampNumber(time, 0, wave.duration);
+        $('clock').textContent = fmt(audio.currentTime);
         syncPlayhead();
         drawWave();
       };
@@ -3947,15 +3924,15 @@
           jumpToMarker(event.key === ',' ? -1 : 1);
         } else if (event.shiftKey && event.code === 'KeyN') {
           event.preventDefault();
-          addTopicAt(realTime());
+          addTopicAt($('audio').currentTime);
         } else if (event.shiftKey && event.code === 'KeyT') {
           event.preventDefault();
-          addTrackAt(realTime());
+          addTrackAt($('audio').currentTime);
         }
       });
 
-      $('wave-add').addEventListener('click', () => addTopicAt(realTime()));
-      $('wave-add-track').addEventListener('click', () => addTrackAt(realTime()));
+      $('wave-add').addEventListener('click', () => addTopicAt($('audio').currentTime));
+      $('wave-add-track').addEventListener('click', () => addTrackAt($('audio').currentTime));
 
       stageEl().addEventListener('contextmenu', (event) => {
         if (!wave.peaks) return;
@@ -3972,7 +3949,7 @@
         event.preventDefault();
         const rect = stageEl().getBoundingClientRect();
         const inside = event.clientX >= rect.left && event.clientX <= rect.right;
-        const time = inside ? timeAt(event.clientX) : realTime();
+        const time = inside ? timeAt(event.clientX) : $('audio').currentTime;
         openMenuAt(
           inside ? event.clientX : rect.left + rect.width / 2,
           inside ? event.clientY : rect.bottom,
@@ -4003,14 +3980,14 @@
         button.addEventListener('click', () => {
           const audio = $('audio');
           const delta = Number(button.dataset.skip);
-          const limit = wave.duration || realTime() + delta;
+          const limit = Number.isFinite(audio.duration) ? audio.duration : audio.currentTime + delta;
           resetJumpChain();
-          setRealTime(clampNumber(realTime() + delta, 0, limit));
+          audio.currentTime = Math.min(Math.max(0, audio.currentTime + delta), limit);
         });
       }
 
       $('audio').addEventListener('timeupdate', () => {
-        $('clock').textContent = fmt(realTime());
+        $('clock').textContent = fmt($('audio').currentTime);
       });
 
       $('filter').addEventListener('input', renderList);
@@ -4239,7 +4216,7 @@
             SESSION_KEY,
             JSON.stringify({
               id: state.episode?.id ?? null,
-              time: realTime(),
+              time: $('audio').currentTime,
               paused: $('audio').paused,
               scrollY: window.scrollY,
               start: wave.start,
@@ -4274,16 +4251,16 @@
         await openEpisode(saved.id, { deferAutoSelection: true });
         const audio = $('audio');
         if (Number.isFinite(saved.time) && saved.time > 0) {
-          setRealTime(saved.time);
+          audio.currentTime = saved.time;
           // Metadane potrafią wczytać się po ustawieniu czasu i cofnąć seek.
           audio.addEventListener(
             'loadedmetadata',
             () => {
-              if (Math.abs(realTime() - saved.time) > 0.5) setRealTime(saved.time);
+              if (Math.abs(audio.currentTime - saved.time) > 0.5) audio.currentTime = saved.time;
             },
             { once: true }
           );
-          $('clock').textContent = fmt(realTime());
+          $('clock').textContent = fmt(audio.currentTime);
         }
         if (saved.paused === false) audio.play().catch(() => {});
         if (saved.filter) {

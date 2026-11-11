@@ -13,6 +13,8 @@ import { watch } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { mediaDurationOf } from './lib/timeline.mjs';
+
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = resolve(process.env.EDITOR_DATA_DIR ?? join(ROOT, 'data'));
 const PORT = Number(process.env.PORT ?? 4330);
@@ -449,8 +451,21 @@ const computePeaks = (audioUrl) =>
     });
   });
 
+// Waveform musi być w skali odtwarzacza (nagłówek mp3 bywa krótszy niż realne audio),
+// inaczej kreska i znaczniki rozjeżdżają się ku końcowi audycji. `v2` unieważnia cache
+// policzony w starej skali.
+const resample = (peaks, scale) => {
+  if (!(scale > 0) || Math.abs(scale - 1) < 1e-6) return peaks;
+  const length = Math.max(1, Math.round(peaks.length * scale));
+  const out = new Uint8Array(length);
+  for (let index = 0; index < length; index += 1) {
+    out[index] = peaks[Math.min(peaks.length - 1, Math.round(index / scale))] ?? 0;
+  }
+  return out;
+};
+
 // Adres nagrania w nazwie pliku: podmiana audioUrl w katalogu unieważnia cache.
-const peaksFile = (id, audioUrl) => join(PEAKS, `${id}-${createHash('sha1').update(audioUrl).digest('hex').slice(0, 8)}.bin`);
+const peaksFile = (id, audioUrl) => join(PEAKS, `${id}-${createHash('sha1').update(audioUrl).digest('hex').slice(0, 8)}-v2.bin`);
 
 const loadPeaks = async (id, audioUrl) => {
   try {
@@ -461,9 +476,12 @@ const loadPeaks = async (id, audioUrl) => {
   if (running) return running;
   const job = (async () => {
     const data = await computePeaks(audioUrl);
+    const mediaDuration = await mediaDurationOf(audioUrl);
+    const realDuration = data.length / PEAKS_PER_SEC;
+    const data2 = resample(data, mediaDuration > 0 && realDuration > 0 ? mediaDuration / realDuration : 1);
     await mkdir(PEAKS, { recursive: true });
-    await writeFile(peaksFile(id, audioUrl), data);
-    return data;
+    await writeFile(peaksFile(id, audioUrl), data2);
+    return data2;
   })().finally(() => peaksInFlight.delete(id));
   peaksInFlight.set(id, job);
   return job;

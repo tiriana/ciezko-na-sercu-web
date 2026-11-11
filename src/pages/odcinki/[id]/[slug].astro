@@ -30,18 +30,9 @@ export async function getStaticPaths() {
     getEntries(),
     getDuplicates(),
   ]);
-  // `duration` to długość zdekodowanego audio — odtwarzacz wierzy nagłówkowi Xing,
-  // który bywa krótszy o kilkanaście sekund, więc skrypty potrzebują obu wartości.
-  const files = await getEpisodeFiles();
   const audioEpisodes = visible
     .filter((item) => item.audioUrl)
-    .map((item) => ({
-      src: item.audioUrl!,
-      slug: item.slug,
-      path: episodePath(item),
-      title: resolveDisplayTitle(item),
-      duration: item.durationSec ?? files.get(item.id)?.durationSec ?? null,
-    }));
+    .map((item) => ({ src: item.audioUrl!, slug: item.slug, path: episodePath(item), title: resolveDisplayTitle(item) }));
   // Katalog jest posortowany od najnowszych, więc „poprzednia" to starsza audycja,
   // a „następna" — nowsza; na krańcach zakresu odpowiedniego linku po prostu nie ma.
   // Sąsiedzi liczą się po widocznych odcinkach, żeby ukryty duplikat nie trafiał do nawigacji.
@@ -328,7 +319,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <script
                 type="application/json"
                 id="audio-data"
-                set:html={JSON.stringify({ src: entry.audioUrl, title: episodeTitle, slug: entry.slug, path: episodePath(entry), duration: episode?.durationSec ?? entry.durationSec ?? null })}
+                set:html={JSON.stringify({ src: entry.audioUrl, title: episodeTitle, slug: entry.slug, path: episodePath(entry) })}
               />
             )}
             {entry.audioUrl && (

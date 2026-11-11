@@ -38,7 +38,14 @@ const episodePath = `data/episodes/${id}.json`;
 const episode = JSON.parse(await readFile(episodePath, 'utf8'));
 const spans = JSON.parse(await readFile(spansPath, 'utf8'));
 
-const duration = episode.durationSec ?? spans.durationSec;
+// Wejścia i utwory muszą być w jednej skali: dane trzymamy w czasie odtwarzacza,
+// a VAD liczy czas dekodowanego audio.
+const scale =
+  Number(args.get('scale')) ||
+  (episode.audioDurationSec > 0 && episode.durationSec > 0
+    ? episode.durationSec / episode.audioDurationSec
+    : 1);
+const duration = episode.durationSec ?? (spans.durationSec ? spans.durationSec * scale : 0);
 if (!duration) {
   console.error('Nieznana długość nagrania.');
   process.exit(1);
@@ -58,7 +65,9 @@ for (const track of music) {
 }
 if (duration - cursor > 0) gaps.push({ start: cursor, end: duration });
 
-const spoken = (spans.spans ?? []).filter((span) => span.end > span.start);
+const spoken = (spans.spans ?? [])
+  .filter((span) => span.end > span.start)
+  .map((span) => ({ start: span.start * scale, end: span.end * scale }));
 
 const topics = [];
 for (const gap of gaps) {
