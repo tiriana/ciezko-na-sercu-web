@@ -192,11 +192,19 @@ const finalPrompt = (episode, notes, topics) => {
     })
     .join('\n');
 
+  const tracks = (episode.tracks ?? [])
+    .filter((track) => track.title)
+    .map((track) => `- ${track.artist ?? '?'} — ${track.title}${track.album ? ` (${track.album})` : ''}`)
+    .join('\n');
+
   return [
     `Odcinek audycji „Ciężko na sercu" (Trójka) z ${episode.date}, tytuł: ${episode.title}.`,
     '',
     'WEJŚCIA (start–koniec w sekundach):',
     entries || '(brak)',
+    '',
+    'UTWORY W ODCINKU (wykonawca — tytuł — album):',
+    tracks || '(brak)',
     '',
     'NOTATKI Z KOLEJNYCH FRAGMENTÓW:',
     notes.map((note) => `[${stamp(note.start)}–${stamp(note.end)}] ${note.text}`).join('\n') || '(brak)',
@@ -205,8 +213,27 @@ const finalPrompt = (episode, notes, topics) => {
     '1. "summary": 3–5 zdań streszczenia odcinka po polsku — o czym była audycja, jakie płyty i zespoły, co je łączy. Bez wstępów typu „w tym odcinku".',
     '2. "labels": dla każdego wejścia krótka nazwa redakcyjna (4–10 słów), która mówi, czego dotyczy dana wypowiedź — np. „Mantar i płyta Post-Apokaliptic Depression z lutego". Oddaj numer startu wejścia w polu "start".',
     '',
+    'Zasady:',
+    '- Wykonawców, tytuły i albumy bierz wyłącznie z listy utworów i notatek; nie zgaduj ani nie poprawiaj pisowni nazw własnych.',
+    '- Jeśli czegoś nie ma w materiale, pomiń to zamiast domyślać się.',
+    '',
     'Odpowiedz wyłącznie JSON-em: {"summary": "...", "labels": [{"start": 223, "label": "..."}]}',
   ].join('\n');
+};
+
+// Modele oddają czasem płotki z markdownem albo przecinek przed klamrą —
+// taniej to naprawić niż tracić całe wywołanie.
+const parseLooseJson = (raw) => {
+  const start = raw.indexOf('{');
+  const end = raw.lastIndexOf('}');
+  if (start < 0 || end <= start) throw new Error('brak JSON-a w odpowiedzi');
+  const slice = raw.slice(start, end + 1);
+  try {
+    return JSON.parse(slice);
+  } catch {
+    const repaired = slice.replace(/,\s*([}\]])/g, '$1').replace(/\n/g, ' ');
+    return JSON.parse(repaired);
+  }
 };
 
 const askTarget = async (target, prompt) => {
@@ -243,7 +270,7 @@ const askTarget = async (target, prompt) => {
     throw new Error(`${target.provider.id} odpowiedział nie-JSON-em: ${body.slice(0, 120)}`);
   }
   const raw = payload?.choices?.[0]?.message?.content ?? '';
-  return JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
+  return parseLooseJson(raw);
 };
 
 // Limit na minutę mija po kilkunastu sekundach, więc jedno ponowienie zwykle
