@@ -1,15 +1,21 @@
 name: wykrycie odcinka
 
-# Środa, 00:05–02:00 czasu polskiego: sondowanie, czy nowy odcinek jest już
+# Środa, 00:05–03:00 czasu polskiego: sondowanie, czy nowy odcinek jest już
 # opublikowany. Gdy wpis pojawi się na stronie, a plik audio odpowie, `check-audio.mjs`
 # potwierdza publikację i dopiero wtedy leci `refresh-catalog.yml` — ten commituje
 # katalog oraz zaślepkę opracowania, publikuje wpis i zamawia transkrypcję.
 # Po transkrypcji `transcribe.yml` przelicza czasy i publikuje ponownie.
 #
+# Wpis i plik pojawiają się dopiero po audycji: ostatnie odcinki miały `Last-Modified`
+# mp3 o 02:24 czasu lokalnego, czyli 24 minuty po końcu emisji — dlatego okno sięga
+# 03:00, a o 04:17 UTC leci dosyłka, która nie podlega strażnikowi i łapie odcinek,
+# jeśli środowe sondowanie go minie. GitHub gubi też część odpaleń crona, więc samo
+# okno nie wystarcza.
+#
 # GitHub liczy crony w UTC, a Warszawa zmienia czas. Okno w UTC to wtorek
-# 22:05 – środa 00:00 (CEST) albo wtorek 23:05 – środa 01:00 (CET), więc crony
+# 22:05 – środa 01:00 (CEST) albo wtorek 23:05 – środa 02:00 (CET), więc crony
 # obejmują oba wieczory, a strażnik przepuszcza tylko przebieg w środowym oknie
-# 00:05–02:00 czasu lokalnego. Przed 00:05 UTC jest jeszcze wtorek na zegarze,
+# 00:05–03:00 czasu lokalnego. Przed 00:05 UTC jest jeszcze wtorek na zegarze,
 # ale w Warszawie to już środa — dlatego dzień też liczymy lokalnie.
 #
 # Gdy pliku jeszcze nie ma, przebieg kończy się sukcesem: następne sondowanie
@@ -18,7 +24,8 @@ name: wykrycie odcinka
 on:
   schedule:
     - cron: '*/10 22-23 * * 2' # początek okna: 00:05 CEST i 00:05 CET
-    - cron: '*/10 0-1 * * 3' # koniec okna: 02:00 CEST (00:00 UTC) i 02:00 CET (01:00 UTC)
+    - cron: '*/10 0-2 * * 3' # koniec okna: 03:00 CEST (01:00 UTC) i 03:00 CET (02:00 UTC)
+    - cron: '17 4 * * *' # dosyłka: łapie odcinek, gdy środowe sondowanie go minie
   workflow_dispatch:
     inputs:
       simulate:
@@ -47,15 +54,20 @@ jobs:
         id: guard
         env:
           SIMULATE: ${{ inputs.simulate }}
+          SCHEDULE: ${{ github.event.schedule }}
         run: |
           if [ "$SIMULATE" = "true" ]; then
             echo "Symulacja: strażnik pominięty."
             exit 0
           fi
+          if [ "$SCHEDULE" = "17 4 * * *" ]; then
+            echo "Dosyłka dzienna: strażnik pominięty."
+            exit 0
+          fi
           day=$(TZ=Europe/Warsaw date +%u)
           time=$(TZ=Europe/Warsaw date +%H%M)
-          if [ "$day" != "3" ] || [[ "$time" < "0005" ]] || [[ "$time" > "0200" ]]; then
-            echo "Europe/Warsaw: dzień ${day}, ${time} — poza środowym oknem 00:05–02:00. Kończę."
+          if [ "$day" != "3" ] || [[ "$time" < "0005" ]] || [[ "$time" > "0300" ]]; then
+            echo "Europe/Warsaw: dzień ${day}, ${time} — poza środowym oknem 00:05–03:00. Kończę."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           fi
 
