@@ -29,7 +29,8 @@
     "enrich:apply": "node scripts/enrich-episode.mjs --write",
     "verify:migration": "node scripts/build-episode.mjs --from-legacy --check",
     "metadata": "node scripts/fetch-episode-metadata.mjs",
-    "episode": "node scripts/build-episode.mjs"
+    "episode": "node scripts/build-episode.mjs",
+    "spans": "${SPANS_PYTHON:-python3} scripts/speech_spans.py"
   },
   "dependencies": {
     "astro": "^7.4.7",

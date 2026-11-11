@@ -23,7 +23,8 @@ wersja wzorca intro), żeby nieaktualność wykrywać z danych, a nie z kolejno�
 | etap | artefakt | zawartość | wejście |
 | --- | --- | --- | --- |
 | `fetch-episode-metadata` | `metadata.json` | uuid, data, tytuł, articleId, sourceUrl, audioUrl, durationSec, program, autor, obraz | strona odcinka |
-| `transcribe` | `speech.json` | segmenty whispera, okna mowy | mp3 |
+| `speech-spans` | `speech-spans.json` | `spans[]` (gdzie jest mowa) i `chunks[]` (bloki do ASR) | mp3 |
+| `transcribe` | `speech.json` | segmenty whispera, okna mowy | mp3 + `speech-spans.json` |
 | `identify` | `audio-id.json` | bloki muzyki, kandydaci per próbka | mp3 + `speech.json` |
 | `voiceprint` | `voice.json` | bloki mówienia, wejścia w lukach | mp3 + `speech.json` |
 | `enrich` | `text.json` | streszczenie, etykiety wejść | `speech.json` + `audio-id.json` |
@@ -47,7 +48,17 @@ Ustalenia szczegółowe:
    który wpisuje wykryte intro do `data/overrides`. W v2 wykrywanie staje się producentem
    `intro.json` (`start`, `score`, `duration`, `template`), a `apply-intro.py` znika.
    Plik wzorcowy `intro.mp3` zostaje poza repo.
-6. `enrich` nie rusza etykiet redakcyjnych: pisze wyłącznie tam, gdzie etykieta jest pusta
+6. `speech-spans`: Silero VAD w wersji ONNX (`onnxruntime`, model 2 MB, bez torch) — ten sam
+   model co w voiceprincie, więc progi (400 ms mowy, 350 ms ciszy, 80 ms dopełnienia) są wspólne.
+   `npm run spans -- --id <uuid> --url <mp3> --out <artefakt>`. Zmierzone na tym sprzęcie:
+   **21 s na 2-godzinny odcinek**, mowa 16–30% audycji w 181–336 blokach, bloki do ASR
+   to 20–31% odcinka. Koszt whispera licząc okna 30 s: 6930 s → 1410 s, czyli **80% mniej pracy**.
+   Recall sprawdzony na pięciu odcinkach z gotowym transkryptem: tekst pokryty przez `spans`
+   w 81–89%, przez `chunks` w 89–98%; braki to głównie granice segmentów whispera (segment
+   zaczyna się w ciszy) oraz halucynacje na muzyce („Muzyka", „Dziękuje za oglądanie."), które
+   właśnie chcemy odsiać. Fragmenty z prawdopodobieństwem mowy < 0,2 to halucynacje, nie mowa,
+   więc progów nie obniżamy.
+7. `enrich` nie rusza etykiet redakcyjnych: pisze wyłącznie tam, gdzie etykieta jest pusta
    albo `#TODO`, i odrzuca odpowiedzi typu „brak tytułu".
 
 ## 3. Warstwa ręczna
