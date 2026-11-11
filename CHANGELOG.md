@@ -1,3 +1,10 @@
+## [1.37.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.37.1...v1.37.2) (2026-11-11)
+
+### Bug Fixes
+
+* okno wykrywania odcinka do 03:00 i dzienna dosyłka — wpis pojawia się 02:24 ([559c833](https://github.com/tiriana/ciezko-na-sercu-web/commit/559c833c020deb492111b088a7340fcae17edd91))
+* wejścia z profilu głosu (42925798020) ([6a679f6](https://github.com/tiriana/ciezko-na-sercu-web/commit/6a679f6102d3343ba1d41d378390ddf1a7bb4d60))
+
 ## [1.37.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.37.0...v1.37.1) (2026-11-10)
 
 ### Bug Fixes
