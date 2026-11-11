@@ -1,3 +1,9 @@
+## [1.39.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.39.0...v1.39.1) (2026-11-11)
+
+### Bug Fixes
+
+* kontrola kompletu części transkryptu i artefakt rozpoznań ([1c524e3](https://github.com/tiriana/ciezko-na-sercu-web/commit/1c524e37727fab8d232ddf88336f5db5149048e1))
+
 ## [1.39.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.38.1...v1.39.0) (2026-11-11)
 
 ### Features
