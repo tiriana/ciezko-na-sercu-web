@@ -159,6 +159,7 @@ jobs:
 
   commit:
     needs: transcribe
+    if: always()
     runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -168,6 +169,25 @@ jobs:
           pattern: transcript-*
           path: .incoming
           merge-multiple: true
+
+      # Wszystkie części muszą być na miejscu: scalona transkrypcja z dziurą
+      # wygląda jak gotowa i nigdy nie wróci do kolejki.
+      - name: Sprawdź komplet części
+        env:
+          MATRIX: ${{ needs.plan.outputs.matrix }}
+        run: |
+          node -e '
+            const fs = require("node:fs");
+            const matrix = JSON.parse(process.env.MATRIX || "{\"include\":[]}");
+            const expected = [...new Set(matrix.include.map((job) => `${job.id}.part${String(job.part).padStart(3, "0")}.json`))];
+            const present = new Set(fs.readdirSync(".incoming"));
+            const missing = expected.filter((name) => !present.has(name));
+            if (missing.length > 0) {
+              console.log(`::error::Brakuje części transkryptu: ${missing.join(", ")} — uruchom ponownie nieudane zadania.`);
+              process.exit(1);
+            }
+            console.log(`Komplet ${expected.length} części na miejscu.`);
+          '
 
       - name: Złóż części
         run: node scripts/merge-transcripts.mjs .incoming data/transcripts

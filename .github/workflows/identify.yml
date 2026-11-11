@@ -71,6 +71,17 @@ jobs:
 
       - run: npm run check
 
+      # Shazam kosztuje kilka minut próbek, więc wynik jedzie do artefaktu —
+      # po nieudanym commicie nie trzeba rozpoznawać od nowa.
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        if: always()
+        with:
+          name: identify-data
+          path: data/episodes/*.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 14
+
       - name: Commit
         run: |
           bash scripts/push-data.sh "fix: rozpoznane utwory Shazamem (${GITHUB_RUN_ID})" data/episodes
