@@ -1,13 +1,31 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 3300.82,
+      "label": "Omówienie nowojorskiej grupy Winter i jej jedynej płyty \"Into Darkness\"",
+      "start": 3239.34
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.59,
       "durationSec": 8.06
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Jestem oddanym fanem większości prezentowanych dzisiaj zespołów, ale właśnie większości,…",
+      "start": 4224.85,
+      "end": 4339.09
+    },
+    {
+      "label": "Z jednej strony z radością powitałbym powrót grupy ISIS, a z drugiej strony zupełnie go…",
+      "start": 4700.27,
+      "end": 4789.74
     }
   ]
 }

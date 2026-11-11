@@ -1,13 +1,51 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 3328.26,
+      "label": "Omówienie albumu Kat „Mind Cannibals” po odejściu Romana Kostrzewskiego",
+      "start": 3325
+    },
+    {
+      "time": 3750.86,
+      "label": "Historia i ocena albumu Crystagon „Dark Side” z 1997 roku",
+      "start": 3688.18
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
-      "start": 5.0,
+      "start": 5,
       "durationSec": 8.06
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "W latach osiemdziesiątych kreator nazywany był europejskim Slayerem i oczywiście nie było…",
+      "start": 4011.89,
+      "end": 4130.67
+    },
+    {
+      "label": "Na płycie Transgression, szóstej w dorobku amerykańskiej grupy Fear Factory, też czegoś…",
+      "start": 4947.86,
+      "end": 4993.49
+    },
+    {
+      "label": "Przed tygodniem mówiłem o tym, że z radością przyjąłbym wieść o powrocie na scenę…",
+      "start": 5316.3,
+      "end": 5356.5
+    },
+    {
+      "label": "Kiedy byłem młodym metalowcem, szybko nauczyłem się wielbić klasyków gatunku, od Black…",
+      "start": 6426.7,
+      "end": 6510.58
+    },
+    {
+      "label": "Na koniec oczywiście Iron Maiden. Nie mogło ich zabraknąć. Podobnie jak z Metallicą,…",
+      "start": 6778.9,
+      "end": 6861.01
     }
   ]
 }
