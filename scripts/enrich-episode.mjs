@@ -73,6 +73,7 @@ for (let index = 2; index < process.argv.length; index += 1) {
 
 const write = args.has('write');
 const force = args.has('force');
+const relabelRaw = args.has('relabel-raw');
 const limit = Number.parseInt(args.get('limit') ?? '0', 10) || 0;
 const model = args.get('model') ?? process.env.ENRICH_MODELS ?? '';
 const wanted = String(args.get('episodes') ?? '')
@@ -125,14 +126,26 @@ const stamp = (seconds) => {
   return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
 };
 
-// Etykieta z transkryptu to surowy tekst (voiceprint bierze pierwsze 90 znaków),
-// więc nadaje się do zastąpienia; nazwa redakcyjna bywa dłuższa niż jedno zdanie
-// i wtedy zostaje bez zmian.
-const isRawLabel = (label) => {
+// Bezpieczny sygnał to brak etykiety albo znacznik `#TODO`. Nazwy redakcyjne
+// w danych bywają pełnymi zdaniami, więc zgadywanie po interpunkcji nadpisywało
+// dobre opisy — surowy tekst z transkryptu ruszamy tylko z `--relabel-raw`.
+const needsLabel = (label) => {
   const text = String(label ?? '').trim();
-  if (!text) return true;
-  if (/^#TODO/i.test(text)) return true;
-  return /[.!?…]$/.test(text) && text.split(/\s+/).length > 12;
+  return !text || /^#TODO/i.test(text);
+};
+
+const looksRaw = (label) => {
+  const text = String(label ?? '').trim();
+  return /[.!?…]$/.test(text) && text.split(/\s+/).length > 14;
+};
+
+// Model potrafi oddać ogólnik albo powtórzyć własne placeholdery — takie nazwy
+// są gorsze niż surowy tekst, więc ich nie przyjmujemy.
+const usableLabel = (label) => {
+  const text = String(label ?? '').trim();
+  if (!text || text.length > LABEL_MAX) return false;
+  if (/brak tytułu|\(brak|#TODO/i.test(text)) return false;
+  return text.split(/\s+/).length >= 3;
 };
 
 // Darmowe tiery liczą tokeny na minutę, a pełny transkrypt bywa większy niż cały
@@ -173,7 +186,10 @@ const notesPrompt = (episode, chunk) =>
 
 const finalPrompt = (episode, notes, topics) => {
   const entries = topics
-    .map((topic) => `${topic.start}–${topic.end ?? topic.start}: ${isRawLabel(topic.label) ? '(bez nazwy)' : topic.label}`)
+    .map((topic) => {
+      const label = needsLabel(topic.label) || relabelRaw ? '' : String(topic.label).trim();
+      return `${topic.start}–${topic.end ?? topic.start}${label ? `: ${label}` : ''}`;
+    })
     .join('\n');
 
   return [
@@ -283,7 +299,7 @@ for (const entry of selected) {
 
   const topics = episode.topics ?? [];
   const needsSummary = force || !episode.summary;
-  const relabel = topics.filter((topic) => isRawLabel(topic.label));
+  const relabel = topics.filter((topic) => needsLabel(topic.label) || (relabelRaw && looksRaw(topic.label)));
   if (!needsSummary && relabel.length === 0) continue;
 
   const transcript = await readJson(`data/transcripts/${entry.id}.json`).catch(() => null);
@@ -322,13 +338,12 @@ for (const entry of selected) {
   for (const item of answer.labels ?? []) {
     const start = Number(item.start);
     const label = String(item.label ?? '').trim();
-    if (!Number.isFinite(start) || !label || label.length > LABEL_MAX) continue;
+    if (!Number.isFinite(start) || !usableLabel(label)) continue;
     labels.set(round(start), label);
   }
 
   const changed = [];
-  for (const topic of topics) {
-    if (!isRawLabel(topic.label)) continue;
+  for (const topic of relabel) {
     const label = labels.get(round(topic.start));
     if (!label) continue;
     changed.push(`${topic.start}: ${label}`);
