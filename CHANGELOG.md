@@ -1,3 +1,10 @@
+## [1.40.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.40.1...v1.40.2) (2026-11-11)
+
+### Bug Fixes
+
+* streszczenia i nazwy wejść (42950436010) ([850c363](https://github.com/tiriana/ciezko-na-sercu-web/commit/850c3634da86c89ad167a04426cd025c40044747))
+* streszczenia nie ruszają redakcyjnych nazw wejść; przywrócone streszczenie 11 IX ([6024e21](https://github.com/tiriana/ciezko-na-sercu-web/commit/6024e21678b1f4e8330933d5f663d8bb839fc790))
+
 ## [1.40.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.40.0...v1.40.1) (2026-11-11)
 
 ### Bug Fixes
