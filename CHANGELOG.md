@@ -1,3 +1,9 @@
+## [1.37.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.37.2...v1.37.3) (2026-11-11)
+
+### Bug Fixes
+
+* audio nowego odcinka sprawdzane z pobranej listy, nie z katalogu ([0bccb96](https://github.com/tiriana/ciezko-na-sercu-web/commit/0bccb965bdd922cf89a06bbb8e1af9da105e60f4))
+
 ## [1.37.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.37.1...v1.37.2) (2026-11-11)
 
 ### Bug Fixes
