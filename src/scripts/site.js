@@ -733,6 +733,7 @@ const applyEpisodeAudio = () => {
   if (audio.dataset.src !== payload.src) {
     audio.dataset.src = payload.src;
     audio.dataset.slug = payload.slug ?? '';
+    audio.dataset.realDuration = payload.duration ? String(payload.duration) : '';
     audio.src = payload.src;
     audio.load();
     audio.currentTime = 0;
