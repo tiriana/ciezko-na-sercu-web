@@ -1,3 +1,9 @@
+## [1.40.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.39.1...v1.40.0) (2026-11-11)
+
+### Features
+
+* streszczenia i nazwy wejść z GitHub Models ([de31892](https://github.com/tiriana/ciezko-na-sercu-web/commit/de3189251ea56c526defc12a364a30a298acbc34))
+
 ## [1.39.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.39.0...v1.39.1) (2026-11-11)
 
 ### Bug Fixes
