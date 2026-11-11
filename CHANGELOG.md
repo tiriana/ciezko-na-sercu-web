@@ -1,3 +1,21 @@
+## [1.41.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.40.3...v1.41.0) (2026-11-11)
+
+### Features
+
+* adresy odcinków z uuid (routing), 301 dla starych slugów ([d4e92c9](https://github.com/tiriana/ciezko-na-sercu-web/commit/d4e92c9351e8eb12eed2db38f65096857c21b039))
+* kompilator odcinka z artefaktów (priorytety, --preview/--check, harness 109/109) ([599873f](https://github.com/tiriana/ciezko-na-sercu-web/commit/599873ffc38d7c155a1fe857e388354771ce37ae))
+* opracowanie odcinka 2026-11-11 — transkrypcja blokami, utwory z siatki Shazama, wejścia z VAD ([f54a672](https://github.com/tiriana/ciezko-na-sercu-web/commit/f54a67215ca9efbd18bd6891c8519ecd65094e95))
+* producent metadata.json ze strony odcinka (109/109 zgodne z katalogiem) ([3e42f53](https://github.com/tiriana/ciezko-na-sercu-web/commit/3e42f53158d3b7dd5ca544d9a6e34575fcd6b40b))
+* producent speech-spans (Silero VAD ONNX) z blokami do ASR ([c52b322](https://github.com/tiriana/ciezko-na-sercu-web/commit/c52b3223414f669aed4669315857e0700e4af42b))
+* transkrypcja blokami mowy (--chunks) i pobranie audio raz ([3d4670f](https://github.com/tiriana/ciezko-na-sercu-web/commit/3d4670f208f1bbf406a269f50b4e775976d138f9))
+
+### Bug Fixes
+
+* bez zaślepek meta refresh — Cloudflare ma zwracać prawdziwy 301 ([38ee35b](https://github.com/tiriana/ciezko-na-sercu-web/commit/38ee35b4d042abeed39e8b5f78323dde588372fe))
+* każdy płaski adres odcinka przekierowuje 301 na wersję z uuid ([bf8265e](https://github.com/tiriana/ciezko-na-sercu-web/commit/bf8265ea4615da229ebf7b542314ad7dc4ad87b2))
+* reguła 301 także dla adresu z ukośnikiem na końcu ([3b1a5f2](https://github.com/tiriana/ciezko-na-sercu-web/commit/3b1a5f2179c2d8c3a94ccf4bc6ccf6d876bcd966))
+* transkrypcja i przeliczone czasy tematów (43017173582) ([fdfc027](https://github.com/tiriana/ciezko-na-sercu-web/commit/fdfc027051ce488de30093d719c49b5f72d49d8a))
+
 ## [1.40.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.40.2...v1.40.3) (2026-11-11)
 
 ### Bug Fixes
