@@ -1,0 +1,5099 @@
+{
+  "version": 1,
+  "episodeId": "216a8fd5-1292-4951-bbea-8ebbbebbb063",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
+  "windows": [
+    {
+      "index": 0,
+      "start": 2700,
+      "end": 2726.92
+    },
+    {
+      "index": 1,
+      "start": 2730,
+      "end": 2896
+    },
+    {
+      "index": 2,
+      "start": 2904,
+      "end": 2942
+    },
+    {
+      "index": 3,
+      "start": 2950,
+      "end": 2970
+    },
+    {
+      "index": 4,
+      "start": 2980,
+      "end": 3018
+    },
+    {
+      "index": 5,
+      "start": 3026,
+      "end": 3070
+    },
+    {
+      "index": 6,
+      "start": 3078,
+      "end": 3112
+    },
+    {
+      "index": 7,
+      "start": 3120,
+      "end": 3142
+    },
+    {
+      "index": 8,
+      "start": 3150,
+      "end": 3478
+    },
+    {
+      "index": 9,
+      "start": 3486,
+      "end": 3508
+    },
+    {
+      "index": 10,
+      "start": 3516,
+      "end": 3979
+    },
+    {
+      "index": 11,
+      "start": 4007,
+      "end": 4009
+    },
+    {
+      "index": 12,
+      "start": 4037,
+      "end": 4039
+    },
+    {
+      "index": 13,
+      "start": 4067,
+      "end": 4069
+    },
+    {
+      "index": 14,
+      "start": 4097,
+      "end": 4099
+    },
+    {
+      "index": 15,
+      "start": 4127,
+      "end": 4135
+    },
+    {
+      "index": 16,
+      "start": 4148,
+      "end": 4239
+    },
+    {
+      "index": 17,
+      "start": 4259,
+      "end": 4421.18
+    },
+    {
+      "index": 18,
+      "start": 4435,
+      "end": 5400
+    }
+  ],
+  "segments": [
+    {
+      "start": 2700,
+      "end": 2702.4,
+      "text": "kiedy muzyka ich zaskakuje,"
+    },
+    {
+      "start": 2702.4,
+      "end": 2703.58,
+      "text": "no bo jak tu nie"
+    },
+    {
+      "start": 2703.58,
+      "end": 2705.02,
+      "text": "być zaskoczonym,"
+    },
+    {
+      "start": 2705.02,
+      "end": 2707.01,
+      "text": "kiedy słyszy się cytat"
+    },
+    {
+      "start": 2707.01,
+      "end": 2708.72,
+      "text": "z Funky Filona, ale"
+    },
+    {
+      "start": 2708.72,
+      "end": 2710.02,
+      "text": "tak przekręcony,"
+    },
+    {
+      "start": 2710.74,
+      "end": 2711.94,
+      "text": "tak wymyślony, że"
+    },
+    {
+      "start": 2711.94,
+      "end": 2713.86,
+      "text": "trudno nie pokiwać"
+    },
+    {
+      "start": 2713.86,
+      "end": 2716.02,
+      "text": "głową z uznaniem."
+    },
+    {
+      "start": 2716.2,
+      "end": 2717.56,
+      "text": "A zatem jeszcze raz"
+    },
+    {
+      "start": 2717.56,
+      "end": 2719.16,
+      "text": "Waves z płyty Total"
+    },
+    {
+      "start": 2719.16,
+      "end": 2721.74,
+      "text": "z zamykającym ją utworem"
+    },
+    {
+      "start": 2721.74,
+      "end": 2723.39,
+      "text": "Życiowe Przesilenie"
+    },
+    {
+      "start": 2723.39,
+      "end": 2725.09,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2725.09,
+      "end": 2726.92,
+      "text": "muzyków domu złego."
+    },
+    {
+      "start": 2730,
+      "end": 2731.33,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2731.33,
+      "end": 2732.71,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2732.71,
+      "end": 2734,
+      "text": "muzyków domu złego."
+    },
+    {
+      "start": 2734,
+      "end": 2735.33,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2735.33,
+      "end": 2736.71,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2736.71,
+      "end": 2738,
+      "text": "muzyków domu złego."
+    },
+    {
+      "start": 2738,
+      "end": 2739.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2739.03,
+      "end": 2739.91,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2739.91,
+      "end": 2741,
+      "text": "muzyków domu złego."
+    },
+    {
+      "start": 2741,
+      "end": 2741.64,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2741.64,
+      "end": 2742.24,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2742.24,
+      "end": 2743,
+      "text": "muzyków domu złego."
+    },
+    {
+      "start": 2743,
+      "end": 2744.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2744.03,
+      "end": 2744.91,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2744.91,
+      "end": 2746,
+      "text": "muzyków domu złego."
+    },
+    {
+      "start": 2746,
+      "end": 2747.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2747.03,
+      "end": 2747.91,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2747.91,
+      "end": 2749,
+      "text": "muzyków domu złego."
+    },
+    {
+      "start": 2749,
+      "end": 2749.64,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2749.64,
+      "end": 2750.24,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2750.24,
+      "end": 2751,
+      "text": "muzyków domu złego."
+    },
+    {
+      "start": 2751,
+      "end": 2751.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2751.67,
+      "end": 2752.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2752.31,
+      "end": 2753,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2753,
+      "end": 2754.23,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2754.23,
+      "end": 2755.42,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2755.42,
+      "end": 2757,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2757,
+      "end": 2758.6,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2758.6,
+      "end": 2758.81,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2758.81,
+      "end": 2759,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2759,
+      "end": 2760.23,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2760.23,
+      "end": 2761.42,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2761.42,
+      "end": 2762,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2762,
+      "end": 2762.39,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2762.39,
+      "end": 2762.74,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2762.74,
+      "end": 2763,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2763,
+      "end": 2763.39,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2763.39,
+      "end": 2763.74,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2763.74,
+      "end": 2764,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2764,
+      "end": 2764.39,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2764.39,
+      "end": 2764.74,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2764.74,
+      "end": 2765,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2765,
+      "end": 2765.39,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2765.39,
+      "end": 2765.74,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2765.74,
+      "end": 2766,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2766,
+      "end": 2766.39,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2766.39,
+      "end": 2766.74,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2766.74,
+      "end": 2767,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2767,
+      "end": 2767.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2767.67,
+      "end": 2768.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2768.31,
+      "end": 2769,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2769,
+      "end": 2771,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2771,
+      "end": 2772.6,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2772.6,
+      "end": 2772.81,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2772.81,
+      "end": 2773,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2773,
+      "end": 2773.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2773.67,
+      "end": 2774.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2774.31,
+      "end": 2775,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2775,
+      "end": 2775.3,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2775.3,
+      "end": 2775.57,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2775.57,
+      "end": 2776,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2776,
+      "end": 2776.39,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2776.39,
+      "end": 2776.74,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2776.74,
+      "end": 2777,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2777,
+      "end": 2777.39,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2777.39,
+      "end": 2777.74,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2777.74,
+      "end": 2778,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2778,
+      "end": 2778.39,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2778.39,
+      "end": 2778.74,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2778.74,
+      "end": 2779,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2779,
+      "end": 2779.39,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2779.39,
+      "end": 2779.74,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2779.74,
+      "end": 2780,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2780,
+      "end": 2783.68,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2783.68,
+      "end": 2787.16,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2787.16,
+      "end": 2790,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2790,
+      "end": 2790.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2790.67,
+      "end": 2791.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2791.31,
+      "end": 2792,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2792,
+      "end": 2792.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2792.67,
+      "end": 2793.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2793.31,
+      "end": 2794,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2794,
+      "end": 2794.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2794.67,
+      "end": 2795.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2795.31,
+      "end": 2796,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2796,
+      "end": 2796.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2796.67,
+      "end": 2797.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2797.31,
+      "end": 2798,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2798,
+      "end": 2798.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2798.67,
+      "end": 2799.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2799.31,
+      "end": 2800,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2800,
+      "end": 2800.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2800.67,
+      "end": 2801.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2801.31,
+      "end": 2802,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2802,
+      "end": 2802.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2802.67,
+      "end": 2803.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2803.31,
+      "end": 2804,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2804,
+      "end": 2804.67,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2804.67,
+      "end": 2805.31,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2805.31,
+      "end": 2806,
+      "text": "muzyków domu."
+    },
+    {
+      "start": 2806,
+      "end": 2828.07,
+      "text": "Tak wiele rzeczy przerabiałem"
+    },
+    {
+      "start": 2828.07,
+      "end": 2834,
+      "text": "w życiu swojej całym."
+    },
+    {
+      "start": 2834,
+      "end": 2834.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2834.9,
+      "end": 2836,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2836,
+      "end": 2838,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2838,
+      "end": 2839.6,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2839.6,
+      "end": 2840,
+      "text": "z gościnnym udziałem"
+    },
+    {
+      "start": 2840,
+      "end": 2844.06,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2844.06,
+      "end": 2846,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2846,
+      "end": 2852,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2852,
+      "end": 2854,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2854,
+      "end": 2856,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2856,
+      "end": 2858,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2858,
+      "end": 2860,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2860,
+      "end": 2862,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2862,
+      "end": 2864,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2864,
+      "end": 2868,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2868,
+      "end": 2868.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2868.9,
+      "end": 2870,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2870,
+      "end": 2872,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2872,
+      "end": 2874,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2874,
+      "end": 2874.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2874.9,
+      "end": 2876,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2876,
+      "end": 2876.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2876.9,
+      "end": 2878,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2878,
+      "end": 2878.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2878.9,
+      "end": 2880,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2880,
+      "end": 2880.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2880.9,
+      "end": 2882,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2882,
+      "end": 2882.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2882.9,
+      "end": 2884,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2884,
+      "end": 2884.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2884.9,
+      "end": 2886,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2886,
+      "end": 2886.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2886.9,
+      "end": 2888,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2888,
+      "end": 2888.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2888.9,
+      "end": 2890,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2890,
+      "end": 2890.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2890.9,
+      "end": 2892,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2892,
+      "end": 2892.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2892.9,
+      "end": 2894,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2894,
+      "end": 2895.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2895.03,
+      "end": 2896,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2904,
+      "end": 2904.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2904.9,
+      "end": 2906,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2906,
+      "end": 2906.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2906.9,
+      "end": 2908,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2908,
+      "end": 2908.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2908.9,
+      "end": 2910,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2910,
+      "end": 2910.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2910.9,
+      "end": 2912,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2912,
+      "end": 2912.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2912.9,
+      "end": 2914,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2914,
+      "end": 2914.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2914.9,
+      "end": 2916,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2916,
+      "end": 2916.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2916.9,
+      "end": 2918,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2918,
+      "end": 2918.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2918.9,
+      "end": 2920,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2920,
+      "end": 2922,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2922,
+      "end": 2924,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2924,
+      "end": 2926,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2926,
+      "end": 2928,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2928,
+      "end": 2928.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2928.9,
+      "end": 2930,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2930,
+      "end": 2930.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2930.9,
+      "end": 2932,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2932,
+      "end": 2932.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2932.9,
+      "end": 2934,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2934,
+      "end": 2934.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2934.9,
+      "end": 2936,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2936,
+      "end": 2938,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2938,
+      "end": 2940,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2940,
+      "end": 2941.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2941.03,
+      "end": 2942,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2950,
+      "end": 2952,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2952,
+      "end": 2954,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2954,
+      "end": 2955.6,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2955.6,
+      "end": 2956,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2956,
+      "end": 2956.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2956.9,
+      "end": 2958,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2958,
+      "end": 2958.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2958.9,
+      "end": 2960,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2960,
+      "end": 2960.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2960.9,
+      "end": 2962,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2962,
+      "end": 2962.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2962.9,
+      "end": 2964,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2964,
+      "end": 2964.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2964.9,
+      "end": 2966,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2966,
+      "end": 2966.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2966.9,
+      "end": 2968,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2968,
+      "end": 2968.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2968.9,
+      "end": 2970,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2980,
+      "end": 2982,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2982,
+      "end": 2984,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2984,
+      "end": 2986,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2986,
+      "end": 2986.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2986.9,
+      "end": 2988,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2988,
+      "end": 2990,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2990,
+      "end": 2990.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2990.9,
+      "end": 2992,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2992,
+      "end": 2992.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2992.9,
+      "end": 2994,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2994,
+      "end": 2994.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2994.9,
+      "end": 2996,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 2996,
+      "end": 2998,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 2998,
+      "end": 3000,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3000,
+      "end": 3002,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3002,
+      "end": 3003.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3003.03,
+      "end": 3004,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3004,
+      "end": 3006,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3006,
+      "end": 3006.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3006.9,
+      "end": 3008,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3008,
+      "end": 3008.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3008.9,
+      "end": 3010,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3010,
+      "end": 3010.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3010.9,
+      "end": 3012,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3012,
+      "end": 3012.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3012.9,
+      "end": 3014,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3014,
+      "end": 3015.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3015.03,
+      "end": 3016,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3016,
+      "end": 3017.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3017.03,
+      "end": 3018,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3026,
+      "end": 3028,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3028,
+      "end": 3030,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3030,
+      "end": 3032,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3032,
+      "end": 3032.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3032.9,
+      "end": 3034,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3034,
+      "end": 3034.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3034.9,
+      "end": 3036,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3036,
+      "end": 3036.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3036.9,
+      "end": 3038,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3038,
+      "end": 3038.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3038.9,
+      "end": 3040,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3040,
+      "end": 3040.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3040.9,
+      "end": 3042,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3042,
+      "end": 3042.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3042.9,
+      "end": 3044,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3044,
+      "end": 3044.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3044.9,
+      "end": 3046,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3046,
+      "end": 3047.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3047.03,
+      "end": 3048,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3048,
+      "end": 3050,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3050,
+      "end": 3052,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3052,
+      "end": 3054,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3054,
+      "end": 3054.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3054.9,
+      "end": 3056,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3056,
+      "end": 3056.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3056.9,
+      "end": 3058,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3058,
+      "end": 3058.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3058.9,
+      "end": 3060,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3060,
+      "end": 3060.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3060.9,
+      "end": 3062,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3062,
+      "end": 3062.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3062.9,
+      "end": 3064,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3064,
+      "end": 3064.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3064.9,
+      "end": 3066,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3066,
+      "end": 3066.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3066.9,
+      "end": 3068,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3068,
+      "end": 3069.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3069.03,
+      "end": 3070,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3078,
+      "end": 3080,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3080,
+      "end": 3082,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3082,
+      "end": 3084,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3084,
+      "end": 3086,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3086,
+      "end": 3088,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3088,
+      "end": 3088.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3088.9,
+      "end": 3090,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3090,
+      "end": 3092,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3092,
+      "end": 3094,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3094,
+      "end": 3096,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3096,
+      "end": 3097.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3097.03,
+      "end": 3098,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3098,
+      "end": 3099.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3099.03,
+      "end": 3100,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3100,
+      "end": 3101.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3101.03,
+      "end": 3102,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3102,
+      "end": 3103.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3103.03,
+      "end": 3104,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3104,
+      "end": 3105.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3105.03,
+      "end": 3106,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3106,
+      "end": 3107.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3107.03,
+      "end": 3108,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3108,
+      "end": 3109.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3109.03,
+      "end": 3110,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3110,
+      "end": 3111.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3111.03,
+      "end": 3112,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3120,
+      "end": 3121.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3121.03,
+      "end": 3122,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3122,
+      "end": 3124,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3124,
+      "end": 3126,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3126,
+      "end": 3127.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3127.03,
+      "end": 3128,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3128,
+      "end": 3129.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3129.03,
+      "end": 3130,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3130,
+      "end": 3131.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3131.03,
+      "end": 3132,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3132,
+      "end": 3133.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3133.03,
+      "end": 3134,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3134,
+      "end": 3135.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3135.03,
+      "end": 3136,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3136,
+      "end": 3137.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3137.03,
+      "end": 3138,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3138,
+      "end": 3139.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3139.03,
+      "end": 3140,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3140,
+      "end": 3141.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3141.03,
+      "end": 3142,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3150,
+      "end": 3151.44,
+      "text": "I chwycił mikrofon"
+    },
+    {
+      "start": 3151.44,
+      "end": 3152,
+      "text": "w garść."
+    },
+    {
+      "start": 3152,
+      "end": 3153.28,
+      "text": "By stanąć na froncie"
+    },
+    {
+      "start": 3153.28,
+      "end": 3154,
+      "text": "nowego."
+    },
+    {
+      "start": 3154,
+      "end": 3156.34,
+      "text": "Zespołu, który zwie"
+    },
+    {
+      "start": 3156.34,
+      "end": 3158,
+      "text": "się Oath of Nothing."
+    },
+    {
+      "start": 3158,
+      "end": 3160,
+      "text": "Zadebiutowali niedawno"
+    },
+    {
+      "start": 3160,
+      "end": 3161.69,
+      "text": "utworem kult dawnych"
+    },
+    {
+      "start": 3161.69,
+      "end": 3162,
+      "text": "win."
+    },
+    {
+      "start": 3162,
+      "end": 3163.44,
+      "text": "I na pewno kult"
+    },
+    {
+      "start": 3163.44,
+      "end": 3166,
+      "text": "dawnych się tu zgadza."
+    },
+    {
+      "start": 3166,
+      "end": 3168,
+      "text": "Kult dawnych brzmień."
+    },
+    {
+      "start": 3168,
+      "end": 3169.09,
+      "text": "A więc przede"
+    },
+    {
+      "start": 3169.09,
+      "end": 3171,
+      "text": "wszystkim nowojorskiego"
+    },
+    {
+      "start": 3171,
+      "end": 3172.65,
+      "text": "metalowego hardcora"
+    },
+    {
+      "start": 3172.65,
+      "end": 3174,
+      "text": "z lat dziewięćdziesiątych."
+    },
+    {
+      "start": 3174,
+      "end": 3175.06,
+      "text": "Od Sick of It All"
+    },
+    {
+      "start": 3175.06,
+      "end": 3176,
+      "text": "po Biohazard."
+    },
+    {
+      "start": 3176,
+      "end": 3177.39,
+      "text": "Ale jest i trash i"
+    },
+    {
+      "start": 3177.39,
+      "end": 3179.15,
+      "text": "groove metal z tamtej"
+    },
+    {
+      "start": 3179.15,
+      "end": 3180,
+      "text": "epoki."
+    },
+    {
+      "start": 3180,
+      "end": 3182.08,
+      "text": "Głośno, konkretnie"
+    },
+    {
+      "start": 3182.08,
+      "end": 3183,
+      "text": "i do tańca."
+    },
+    {
+      "start": 3183,
+      "end": 3184.25,
+      "text": "Czekamy na duży"
+    },
+    {
+      "start": 3184.25,
+      "end": 3185,
+      "text": "materiał."
+    },
+    {
+      "start": 3185,
+      "end": 3187.02,
+      "text": "Pewnie jeszcze tu Oath"
+    },
+    {
+      "start": 3187.02,
+      "end": 3189,
+      "text": "of Nothing usłyszymy."
+    },
+    {
+      "start": 3189,
+      "end": 3189.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3189.9,
+      "end": 3191,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3191,
+      "end": 3191.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3191.9,
+      "end": 3193,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3193,
+      "end": 3193.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3193.9,
+      "end": 3195,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3195,
+      "end": 3197,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3197,
+      "end": 3199,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3199,
+      "end": 3201,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3201,
+      "end": 3202.21,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3202.21,
+      "end": 3203,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3203,
+      "end": 3205,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3205,
+      "end": 3206.21,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3206.21,
+      "end": 3207,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3207,
+      "end": 3209,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3209,
+      "end": 3211,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3211,
+      "end": 3213,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3213,
+      "end": 3215,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3215,
+      "end": 3215.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3215.9,
+      "end": 3217,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3217,
+      "end": 3217.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3217.9,
+      "end": 3219,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3219,
+      "end": 3221,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3221,
+      "end": 3223,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3223,
+      "end": 3225,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3225,
+      "end": 3225.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3225.9,
+      "end": 3227,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3227,
+      "end": 3229,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3229,
+      "end": 3229.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3229.9,
+      "end": 3231,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3231,
+      "end": 3231.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3231.9,
+      "end": 3233,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3233,
+      "end": 3233.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3233.9,
+      "end": 3235,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3235,
+      "end": 3235.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3235.9,
+      "end": 3237,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3237,
+      "end": 3239,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3239,
+      "end": 3241,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3241,
+      "end": 3243,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3243,
+      "end": 3243.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3243.9,
+      "end": 3245,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3245,
+      "end": 3245.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3245.9,
+      "end": 3247,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3247,
+      "end": 3247.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3247.9,
+      "end": 3249,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3249,
+      "end": 3249.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3249.9,
+      "end": 3251,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3251,
+      "end": 3251.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3251.9,
+      "end": 3253,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3253,
+      "end": 3255,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3255,
+      "end": 3257,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3257,
+      "end": 3259,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3259,
+      "end": 3261,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3261,
+      "end": 3262.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3262.03,
+      "end": 3263,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3263,
+      "end": 3263.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3263.9,
+      "end": 3265,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3265,
+      "end": 3265.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3265.9,
+      "end": 3267,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3267,
+      "end": 3267.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3267.9,
+      "end": 3269,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3269,
+      "end": 3271,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3271,
+      "end": 3273,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3273,
+      "end": 3275,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3275,
+      "end": 3275.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3275.9,
+      "end": 3277,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3277,
+      "end": 3279,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3279,
+      "end": 3279.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3279.9,
+      "end": 3281,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3281,
+      "end": 3283,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3283,
+      "end": 3285,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3285,
+      "end": 3287,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3287,
+      "end": 3287.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3287.9,
+      "end": 3289,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3289,
+      "end": 3289.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3289.9,
+      "end": 3291,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3291,
+      "end": 3291.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3291.9,
+      "end": 3293,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3293,
+      "end": 3295,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3295,
+      "end": 3297,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3297,
+      "end": 3299,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3299,
+      "end": 3301,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3301,
+      "end": 3303,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3303,
+      "end": 3303.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3303.9,
+      "end": 3305,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3305,
+      "end": 3305.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3305.9,
+      "end": 3307,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3307,
+      "end": 3307.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3307.9,
+      "end": 3309,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3309,
+      "end": 3311,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3311,
+      "end": 3325,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3325,
+      "end": 3329,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3329,
+      "end": 3331.8,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3331.8,
+      "end": 3335,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3335,
+      "end": 3339.56,
+      "text": "Krakowski Drown My"
+    },
+    {
+      "start": 3339.56,
+      "end": 3340.34,
+      "text": "Day to jedna z"
+    },
+    {
+      "start": 3340.34,
+      "end": 3341.55,
+      "text": "najlepszych ekip w"
+    },
+    {
+      "start": 3341.55,
+      "end": 3342,
+      "text": "kraju."
+    },
+    {
+      "start": 3342,
+      "end": 3343.17,
+      "text": "Parających się"
+    },
+    {
+      "start": 3343.17,
+      "end": 3345,
+      "text": "deathcorem i okolicami."
+    },
+    {
+      "start": 3345,
+      "end": 3347,
+      "text": "I muszę przyznać,"
+    },
+    {
+      "start": 3347,
+      "end": 3347.71,
+      "text": "że ich najnowszy"
+    },
+    {
+      "start": 3347.71,
+      "end": 3349,
+      "text": "singiel zatytułowany"
+    },
+    {
+      "start": 3349,
+      "end": 3350.35,
+      "text": "All Your Prophets"
+    },
+    {
+      "start": 3350.35,
+      "end": 3351.88,
+      "text": "Are Dead zrobił na"
+    },
+    {
+      "start": 3351.88,
+      "end": 3354,
+      "text": "mnie duże wrażenie."
+    },
+    {
+      "start": 3354,
+      "end": 3354.72,
+      "text": "Tytuł jest"
+    },
+    {
+      "start": 3354.72,
+      "end": 3357,
+      "text": "oczywiście wolnym tłumaczeniem"
+    },
+    {
+      "start": 3357,
+      "end": 3358.69,
+      "text": "Hej prorocy, moi z"
+    },
+    {
+      "start": 3358.69,
+      "end": 3360.55,
+      "text": "gniewnych lat obrastacie"
+    },
+    {
+      "start": 3360.55,
+      "end": 3362,
+      "text": "w tłuszcz z piosenki"
+    },
+    {
+      "start": 3362,
+      "end": 3363.64,
+      "text": "Nie płacz FK"
+    },
+    {
+      "start": 3363.64,
+      "end": 3366.06,
+      "text": "perfectu, ale muzyka"
+    },
+    {
+      "start": 3366.06,
+      "end": 3368,
+      "text": "o dziwo niepodobna."
+    },
+    {
+      "start": 3368,
+      "end": 3369.49,
+      "text": "Przed Państwem Drown"
+    },
+    {
+      "start": 3369.49,
+      "end": 3370,
+      "text": "My Day."
+    },
+    {
+      "start": 3370,
+      "end": 3372,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3372,
+      "end": 3376,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3376,
+      "end": 3378,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3378,
+      "end": 3380,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3380,
+      "end": 3382,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3382,
+      "end": 3383.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3383.03,
+      "end": 3384,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3384,
+      "end": 3386,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3386,
+      "end": 3388,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3388,
+      "end": 3390,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3390,
+      "end": 3392,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3392,
+      "end": 3394.02,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3394.02,
+      "end": 3402,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3402,
+      "end": 3404,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3404,
+      "end": 3406,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3406,
+      "end": 3408,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3408,
+      "end": 3410,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3410,
+      "end": 3410.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3410.9,
+      "end": 3412,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3412,
+      "end": 3412.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3412.9,
+      "end": 3414,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3414,
+      "end": 3414.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3414.9,
+      "end": 3416,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3416,
+      "end": 3416.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3416.9,
+      "end": 3418,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3418,
+      "end": 3420,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3420,
+      "end": 3422,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3422,
+      "end": 3424,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3424,
+      "end": 3424.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3424.9,
+      "end": 3426,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3426,
+      "end": 3426.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3426.9,
+      "end": 3428,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3428,
+      "end": 3428.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3428.9,
+      "end": 3430,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3430,
+      "end": 3430.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3430.9,
+      "end": 3432,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3432,
+      "end": 3432.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3432.9,
+      "end": 3434,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3434,
+      "end": 3436,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3436,
+      "end": 3438,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3438,
+      "end": 3440,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3440,
+      "end": 3442,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3442,
+      "end": 3442.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3442.9,
+      "end": 3444,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3444,
+      "end": 3444.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3444.9,
+      "end": 3446,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3446,
+      "end": 3446.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3446.9,
+      "end": 3448,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3448,
+      "end": 3448.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3448.9,
+      "end": 3450,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3450,
+      "end": 3450.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3450.9,
+      "end": 3452,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3452,
+      "end": 3452.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3452.9,
+      "end": 3454,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3454,
+      "end": 3454.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3454.9,
+      "end": 3456,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3456,
+      "end": 3458,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3458,
+      "end": 3460,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3460,
+      "end": 3462,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3462,
+      "end": 3462.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3462.9,
+      "end": 3464,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3464,
+      "end": 3464.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3464.9,
+      "end": 3466,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3466,
+      "end": 3466.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3466.9,
+      "end": 3468,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3468,
+      "end": 3468.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3468.9,
+      "end": 3470,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3470,
+      "end": 3470.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3470.9,
+      "end": 3472,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3472,
+      "end": 3472.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3472.9,
+      "end": 3474,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3474,
+      "end": 3475.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3475.03,
+      "end": 3476,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3476,
+      "end": 3477.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3477.03,
+      "end": 3478,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3486,
+      "end": 3488,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3488,
+      "end": 3490,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3490,
+      "end": 3492,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3492,
+      "end": 3492.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3492.9,
+      "end": 3494,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3494,
+      "end": 3494.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3494.9,
+      "end": 3496,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3496,
+      "end": 3496.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3496.9,
+      "end": 3498,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3498,
+      "end": 3498.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3498.9,
+      "end": 3500,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3500,
+      "end": 3500.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3500.9,
+      "end": 3502,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3502,
+      "end": 3502.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3502.9,
+      "end": 3504,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3504,
+      "end": 3504.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3504.9,
+      "end": 3506,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3506,
+      "end": 3507.03,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3507.03,
+      "end": 3508,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3516,
+      "end": 3518,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3518,
+      "end": 3520,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3520,
+      "end": 3522,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3522,
+      "end": 3522.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3522.9,
+      "end": 3524,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3524,
+      "end": 3524.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3524.9,
+      "end": 3526,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3526,
+      "end": 3526.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3526.9,
+      "end": 3528,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3528,
+      "end": 3528.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3528.9,
+      "end": 3530,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3530,
+      "end": 3532,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3532,
+      "end": 3534,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3534,
+      "end": 3536,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3536,
+      "end": 3538,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3538,
+      "end": 3540,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3540,
+      "end": 3540.9,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3540.9,
+      "end": 3542,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3542,
+      "end": 3559.98,
+      "text": "Zdjęcia i montaż Waves"
+    },
+    {
+      "start": 3559.98,
+      "end": 3560,
+      "text": "z gościnnym udziałem."
+    },
+    {
+      "start": 3560,
+      "end": 3562.63,
+      "text": "Zespół Dark Side pochodzi"
+    },
+    {
+      "start": 3562.63,
+      "end": 3564.11,
+      "text": "z miasta Gniew na"
+    },
+    {
+      "start": 3564.11,
+      "end": 3565,
+      "text": "Pomorzu."
+    },
+    {
+      "start": 3565,
+      "end": 3566.89,
+      "text": "I totalnie to słychać"
+    },
+    {
+      "start": 3566.89,
+      "end": 3568,
+      "text": "w ich muzyce."
+    },
+    {
+      "start": 3568,
+      "end": 3570.21,
+      "text": "Wiem, straszny suchar,"
+    },
+    {
+      "start": 3570.21,
+      "end": 3572,
+      "text": "pójście na łatwiznę."
+    },
+    {
+      "start": 3572,
+      "end": 3573.04,
+      "text": "Ale co ja poradzę,"
+    },
+    {
+      "start": 3573.04,
+      "end": 3575,
+      "text": "bo zarazem to najprawdziwsza"
+    },
+    {
+      "start": 3575,
+      "end": 3576,
+      "text": "prawda."
+    },
+    {
+      "start": 3576,
+      "end": 3578.08,
+      "text": "Dark Side grają wkurzony"
+    },
+    {
+      "start": 3578.08,
+      "end": 3579.75,
+      "text": "metalcore zbliżający"
+    },
+    {
+      "start": 3579.75,
+      "end": 3582,
+      "text": "się raz po raz do"
+    },
+    {
+      "start": 3582,
+      "end": 3584.01,
+      "text": "A więc gniew jak ta"
+    },
+    {
+      "start": 3584.01,
+      "end": 3585,
+      "text": "lala."
+    },
+    {
+      "start": 3585,
+      "end": 3587.09,
+      "text": "Na okładce nowej płyty"
+    },
+    {
+      "start": 3587.09,
+      "end": 3588.45,
+      "text": "Dark Side mamy pana,"
+    },
+    {
+      "start": 3588.45,
+      "end": 3589.28,
+      "text": "który trzyma się za"
+    },
+    {
+      "start": 3589.28,
+      "end": 3590.99,
+      "text": "głowę i za klatkę"
+    },
+    {
+      "start": 3590.99,
+      "end": 3592,
+      "text": "piersiową."
+    },
+    {
+      "start": 3592,
+      "end": 3593.62,
+      "text": "I można założyć, że"
+    },
+    {
+      "start": 3593.62,
+      "end": 3595.14,
+      "text": "zawartość albumu w"
+    },
+    {
+      "start": 3595.14,
+      "end": 3596,
+      "text": "matni."
+    },
+    {
+      "start": 3596,
+      "end": 3598,
+      "text": "Tak go poturbowała."
+    },
+    {
+      "start": 3598,
+      "end": 3600,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3600,
+      "end": 3602,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3602,
+      "end": 3604,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3604,
+      "end": 3606,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3606,
+      "end": 3608,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3608,
+      "end": 3610,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3610,
+      "end": 3612,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3612,
+      "end": 3614,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3614,
+      "end": 3616,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3616,
+      "end": 3618,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3618,
+      "end": 3620,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3620,
+      "end": 3622,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3622,
+      "end": 3624,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3624,
+      "end": 3626,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3626,
+      "end": 3628,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3628,
+      "end": 3630,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3630,
+      "end": 3632,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3632,
+      "end": 3634,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3634,
+      "end": 3636,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3636,
+      "end": 3638,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3638,
+      "end": 3640,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3640,
+      "end": 3642,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3642,
+      "end": 3644,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3644,
+      "end": 3646,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3646,
+      "end": 3648,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3648,
+      "end": 3650,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3650,
+      "end": 3652,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3652,
+      "end": 3654,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3654,
+      "end": 3656,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3656,
+      "end": 3658,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3658,
+      "end": 3660,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3660,
+      "end": 3662,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3662,
+      "end": 3664,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3664,
+      "end": 3666,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3666,
+      "end": 3668,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3668,
+      "end": 3670,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3670,
+      "end": 3672,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3672,
+      "end": 3674,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3674,
+      "end": 3676,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3676,
+      "end": 3678,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3678,
+      "end": 3680,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3680,
+      "end": 3682,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3682,
+      "end": 3684,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3684,
+      "end": 3686,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3686,
+      "end": 3688,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3688,
+      "end": 3690,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3690,
+      "end": 3692,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3692,
+      "end": 3694,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3694,
+      "end": 3696,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3696,
+      "end": 3698,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3698,
+      "end": 3700,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3700,
+      "end": 3702,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3702,
+      "end": 3704,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3704,
+      "end": 3706,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3706,
+      "end": 3708,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3708,
+      "end": 3710,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3710,
+      "end": 3712,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3712,
+      "end": 3714,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3714,
+      "end": 3716,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3716,
+      "end": 3718,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3718,
+      "end": 3720,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3720,
+      "end": 3722,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3722,
+      "end": 3724,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3724,
+      "end": 3726,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3726,
+      "end": 3728,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3728,
+      "end": 3730,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3730,
+      "end": 3732,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3732,
+      "end": 3734,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3734,
+      "end": 3736,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3736,
+      "end": 3738,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3738,
+      "end": 3740,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3740,
+      "end": 3742,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3742,
+      "end": 3744,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3744,
+      "end": 3746,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3746,
+      "end": 3748,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3748,
+      "end": 3750,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3750,
+      "end": 3752,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3752,
+      "end": 3754,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3754,
+      "end": 3756,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3756,
+      "end": 3758,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3758,
+      "end": 3760,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3760,
+      "end": 3762,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3762,
+      "end": 3764,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3764,
+      "end": 3766,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3766,
+      "end": 3768,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3768,
+      "end": 3770,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3770,
+      "end": 3772,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3774,
+      "end": 3776,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3776,
+      "end": 3778,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3778,
+      "end": 3780,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3780,
+      "end": 3782,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3782,
+      "end": 3784,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3784,
+      "end": 3786,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3786,
+      "end": 3788,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3788,
+      "end": 3790,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3790,
+      "end": 3792,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3792,
+      "end": 3794,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3794,
+      "end": 3796,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3796,
+      "end": 3798,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3798,
+      "end": 3800,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3800,
+      "end": 3802,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3802,
+      "end": 3804,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3804,
+      "end": 3806,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3806,
+      "end": 3808,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3808,
+      "end": 3810,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3810,
+      "end": 3812,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3812,
+      "end": 3814,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3814,
+      "end": 3816,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3816,
+      "end": 3818,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3818,
+      "end": 3820,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3820,
+      "end": 3822,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3822,
+      "end": 3824,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3824,
+      "end": 3826,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3826,
+      "end": 3828,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3828,
+      "end": 3830,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3830,
+      "end": 3832,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3832,
+      "end": 3834,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3834,
+      "end": 3836,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3836,
+      "end": 3838,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3838,
+      "end": 3840,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3840,
+      "end": 3842,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3842,
+      "end": 3844,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3844,
+      "end": 3846,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3846,
+      "end": 3848,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3848,
+      "end": 3850,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3850,
+      "end": 3852,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3852,
+      "end": 3854,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3854,
+      "end": 3856,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3856,
+      "end": 3858,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3858,
+      "end": 3860,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3860,
+      "end": 3862,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3862,
+      "end": 3864,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3864,
+      "end": 3866,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3866,
+      "end": 3868,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3868,
+      "end": 3870,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3870,
+      "end": 3872,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3872,
+      "end": 3874,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3874,
+      "end": 3876,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3876,
+      "end": 3878,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3878,
+      "end": 3880,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3880,
+      "end": 3882,
+      "text": "Zdjęcia i montaż Waves!"
+    },
+    {
+      "start": 3882,
+      "end": 3884.71,
+      "text": "Czas na krakowski"
+    },
+    {
+      "start": 3884.71,
+      "end": 3886,
+      "text": "Wingless."
+    },
+    {
+      "start": 3886,
+      "end": 3888,
+      "text": "Tu też mamy do czynienia"
+    },
+    {
+      "start": 3888,
+      "end": 3890,
+      "text": "z recyklingiem wokalisty,"
+    },
+    {
+      "start": 3890,
+      "end": 3891.84,
+      "text": "jak w przypadku Oath"
+    },
+    {
+      "start": 3891.84,
+      "end": 3893,
+      "text": "of Nothing,"
+    },
+    {
+      "start": 3893,
+      "end": 3895,
+      "text": "ale nie, żebym narzekał,"
+    },
+    {
+      "start": 3895,
+      "end": 3897.02,
+      "text": "po prostu zazdroszczę"
+    },
+    {
+      "start": 3897.02,
+      "end": 3899.06,
+      "text": "panom i motywacji i"
+    },
+    {
+      "start": 3899.06,
+      "end": 3900,
+      "text": "formy."
+    },
+    {
+      "start": 3900,
+      "end": 3902,
+      "text": "A zatem Wingless."
+    },
+    {
+      "start": 3902,
+      "end": 3903.21,
+      "text": "Od ponad dekady gra"
+    },
+    {
+      "start": 3903.21,
+      "end": 3904,
+      "text": "death metal,"
+    },
+    {
+      "start": 3904,
+      "end": 3906,
+      "text": "starannie spełniający"
+    },
+    {
+      "start": 3906,
+      "end": 3907.45,
+      "text": "wszystkie gatunkowe"
+    },
+    {
+      "start": 3907.45,
+      "end": 3908,
+      "text": "kryteria"
+    },
+    {
+      "start": 3908,
+      "end": 3909.88,
+      "text": "i jest zespołem nader"
+    },
+    {
+      "start": 3909.88,
+      "end": 3911,
+      "text": "pracowitym,"
+    },
+    {
+      "start": 3911,
+      "end": 3914.73,
+      "text": "bo od 2014 roku wydał"
+    },
+    {
+      "start": 3914.73,
+      "end": 3917,
+      "text": "już sześć płyt."
+    },
+    {
+      "start": 3917,
+      "end": 3919.02,
+      "text": "Najnowsza, zatytułowana"
+    },
+    {
+      "start": 3919.02,
+      "end": 3920,
+      "text": "Vision Beyond Form"
+    },
+    {
+      "start": 3920,
+      "end": 3921.25,
+      "text": "jest debiutem w"
+    },
+    {
+      "start": 3921.25,
+      "end": 3923,
+      "text": "Wingless śpiewaka"
+    },
+    {
+      "start": 3923,
+      "end": 3925,
+      "text": "Marcina Urbasia,"
+    },
+    {
+      "start": 3925,
+      "end": 3926.32,
+      "text": "którego znamy"
+    },
+    {
+      "start": 3926.32,
+      "end": 3927.52,
+      "text": "dobrze, chociażby"
+    },
+    {
+      "start": 3927.52,
+      "end": 3928,
+      "text": "ze Skeptic."
+    },
+    {
+      "start": 3928,
+      "end": 3930,
+      "text": "I trzeba przyznać,"
+    },
+    {
+      "start": 3930,
+      "end": 3932.06,
+      "text": "że ten debiut w nowych"
+    },
+    {
+      "start": 3932.06,
+      "end": 3934,
+      "text": "barwach bardzo udany."
+    },
+    {
+      "start": 3934,
+      "end": 3937.44,
+      "text": "zespół zespół zespół"
+    },
+    {
+      "start": 3937.44,
+      "end": 3938.52,
+      "text": "zespół zespół zespół"
+    },
+    {
+      "start": 3938.52,
+      "end": 3939,
+      "text": "zespół"
+    },
+    {
+      "start": 3939,
+      "end": 3941.94,
+      "text": "zespół zespół zespół"
+    },
+    {
+      "start": 3941.94,
+      "end": 3945,
+      "text": "zespół zespół zespół"
+    },
+    {
+      "start": 3945,
+      "end": 3951,
+      "text": "zespół zespół zespół"
+    },
+    {
+      "start": 3951,
+      "end": 3954.54,
+      "text": "Zespół zespół zespół"
+    },
+    {
+      "start": 3954.54,
+      "end": 3957,
+      "text": "zespół zespół zespół"
+    },
+    {
+      "start": 3957,
+      "end": 3961.5,
+      "text": "zespół zespół zespół"
+    },
+    {
+      "start": 3961.5,
+      "end": 3963,
+      "text": "zespół zespół"
+    },
+    {
+      "start": 3963,
+      "end": 3969,
+      "text": "zespół zespół zespół"
+    },
+    {
+      "start": 3969,
+      "end": 3976.48,
+      "text": "Zespół zespół zespół"
+    },
+    {
+      "start": 3976.48,
+      "end": 3977,
+      "text": "zespół"
+    },
+    {
+      "start": 3977,
+      "end": 3979,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 4007,
+      "end": 4009,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 4037,
+      "end": 4039,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 4067,
+      "end": 4069,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 4097,
+      "end": 4099,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 4127,
+      "end": 4129,
+      "text": "DISCRUST!"
+    },
+    {
+      "start": 4131,
+      "end": 4133,
+      "text": "FINAL END!"
+    },
+    {
+      "start": 4133,
+      "end": 4135,
+      "text": "KONIEC!"
+    },
+    {
+      "start": 4148,
+      "end": 4151,
+      "text": "I AM THE ONE!"
+    },
+    {
+      "start": 4153,
+      "end": 4155,
+      "text": "I COMPLETE MY SAFE!"
+    },
+    {
+      "start": 4155,
+      "end": 4157,
+      "text": "THERE IS"
+    },
+    {
+      "start": 4157,
+      "end": 4159,
+      "text": "NO POWER BETWEEN!"
+    },
+    {
+      "start": 4161,
+      "end": 4161.93,
+      "text": "THE BEAST AND THE"
+    },
+    {
+      "start": 4161.93,
+      "end": 4163,
+      "text": "STAIR"
+    },
+    {
+      "start": 4163,
+      "end": 4165,
+      "text": "THERE IS"
+    },
+    {
+      "start": 4165,
+      "end": 4167,
+      "text": "NO NAME!"
+    },
+    {
+      "start": 4169,
+      "end": 4171,
+      "text": "FOR WHAT I EARNED"
+    },
+    {
+      "start": 4171,
+      "end": 4173,
+      "text": "I EARNED"
+    },
+    {
+      "start": 4173,
+      "end": 4175,
+      "text": "A STAR"
+    },
+    {
+      "start": 4175,
+      "end": 4179,
+      "text": "A SOURCE OF THE THREE"
+    },
+    {
+      "start": 4179,
+      "end": 4183,
+      "text": "THE SPHERE OF RISING"
+    },
+    {
+      "start": 4183,
+      "end": 4185,
+      "text": "COLLAPSES"
+    },
+    {
+      "start": 4185,
+      "end": 4187,
+      "text": "LIKE A DEAD STAR"
+    },
+    {
+      "start": 4187,
+      "end": 4189,
+      "text": "REAVING"
+    },
+    {
+      "start": 4189,
+      "end": 4191,
+      "text": "AND FINNESS"
+    },
+    {
+      "start": 4191,
+      "end": 4193,
+      "text": "WITHOUT BEEN"
+    },
+    {
+      "start": 4193,
+      "end": 4197,
+      "text": "THE VOICE OF DISPERSION"
+    },
+    {
+      "start": 4197,
+      "end": 4199,
+      "text": "CRYS OUT FOR SURVIVAL"
+    },
+    {
+      "start": 4199,
+      "end": 4201,
+      "text": "CRYS OUT FOR SURVIVAL"
+    },
+    {
+      "start": 4201,
+      "end": 4203,
+      "text": "RULING"
+    },
+    {
+      "start": 4203,
+      "end": 4205,
+      "text": "OF SHIRD"
+    },
+    {
+      "start": 4205,
+      "end": 4209,
+      "text": "CONSCIOUSNESS"
+    },
+    {
+      "start": 4209,
+      "end": 4211,
+      "text": "DENIMES"
+    },
+    {
+      "start": 4211,
+      "end": 4213,
+      "text": "VERY END"
+    },
+    {
+      "start": 4213,
+      "end": 4215,
+      "text": "OF THANCE"
+    },
+    {
+      "start": 4215,
+      "end": 4217,
+      "text": "DENIMES"
+    },
+    {
+      "start": 4217,
+      "end": 4219,
+      "text": "AND DEFINITIONS"
+    },
+    {
+      "start": 4219,
+      "end": 4221,
+      "text": "THE NAMES"
+    },
+    {
+      "start": 4221,
+      "end": 4223,
+      "text": "AND DEFINITIONS"
+    },
+    {
+      "start": 4223,
+      "end": 4225,
+      "text": "PERRIES"
+    },
+    {
+      "start": 4225,
+      "end": 4227,
+      "text": "THE END"
+    },
+    {
+      "start": 4227,
+      "end": 4229,
+      "text": "VERY HARD"
+    },
+    {
+      "start": 4229,
+      "end": 4231,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4231,
+      "end": 4233,
+      "text": "VERY HARD"
+    },
+    {
+      "start": 4233,
+      "end": 4235,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4235,
+      "end": 4239,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4259,
+      "end": 4261,
+      "text": "THE END"
+    },
+    {
+      "start": 4261,
+      "end": 4263,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4263,
+      "end": 4265,
+      "text": "THE END"
+    },
+    {
+      "start": 4265,
+      "end": 4267,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4267,
+      "end": 4269,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4269,
+      "end": 4271,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4271,
+      "end": 4273,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4273,
+      "end": 4275,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4275,
+      "end": 4277,
+      "text": "THE END"
+    },
+    {
+      "start": 4277,
+      "end": 4278,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4278,
+      "end": 4279,
+      "text": "THE END"
+    },
+    {
+      "start": 4279,
+      "end": 4280,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4280,
+      "end": 4281,
+      "text": "THE END"
+    },
+    {
+      "start": 4281,
+      "end": 4282,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4282,
+      "end": 4283,
+      "text": "THE END"
+    },
+    {
+      "start": 4283,
+      "end": 4284,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4284,
+      "end": 4285,
+      "text": "THE END"
+    },
+    {
+      "start": 4285,
+      "end": 4286,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4286,
+      "end": 4287,
+      "text": "THE END"
+    },
+    {
+      "start": 4287,
+      "end": 4289,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4289,
+      "end": 4291,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4291,
+      "end": 4293,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4293,
+      "end": 4295,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4295,
+      "end": 4297,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4297,
+      "end": 4299,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4299,
+      "end": 4301,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4301,
+      "end": 4302,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4302,
+      "end": 4303,
+      "text": "THE END"
+    },
+    {
+      "start": 4303,
+      "end": 4304,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4304,
+      "end": 4305,
+      "text": "THE END"
+    },
+    {
+      "start": 4305,
+      "end": 4306,
+      "text": "THE END"
+    },
+    {
+      "start": 4306,
+      "end": 4307,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4307,
+      "end": 4308,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4308,
+      "end": 4309,
+      "text": "THE END"
+    },
+    {
+      "start": 4309,
+      "end": 4310,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4310,
+      "end": 4311,
+      "text": "THE END"
+    },
+    {
+      "start": 4311,
+      "end": 4312,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4312,
+      "end": 4313,
+      "text": "THE END"
+    },
+    {
+      "start": 4313,
+      "end": 4314,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4314,
+      "end": 4315,
+      "text": "THE END"
+    },
+    {
+      "start": 4315,
+      "end": 4316,
+      "text": "THE END"
+    },
+    {
+      "start": 4316,
+      "end": 4317,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4317,
+      "end": 4318,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4318,
+      "end": 4319,
+      "text": "THE END"
+    },
+    {
+      "start": 4319,
+      "end": 4320,
+      "text": "THE END"
+    },
+    {
+      "start": 4320,
+      "end": 4321,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4321,
+      "end": 4322,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4322,
+      "end": 4323,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4323,
+      "end": 4324,
+      "text": "THE END"
+    },
+    {
+      "start": 4324,
+      "end": 4325,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4325,
+      "end": 4326,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4326,
+      "end": 4327,
+      "text": "THE END"
+    },
+    {
+      "start": 4327,
+      "end": 4328,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4328,
+      "end": 4329,
+      "text": "THE END"
+    },
+    {
+      "start": 4329,
+      "end": 4330,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4330,
+      "end": 4331,
+      "text": "THE END"
+    },
+    {
+      "start": 4331,
+      "end": 4332,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4332,
+      "end": 4333,
+      "text": "THE END"
+    },
+    {
+      "start": 4333,
+      "end": 4334,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4334,
+      "end": 4335,
+      "text": "THE END"
+    },
+    {
+      "start": 4335,
+      "end": 4336,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4336,
+      "end": 4337,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4337,
+      "end": 4338,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4338,
+      "end": 4339,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4339,
+      "end": 4340,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4340,
+      "end": 4341,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4341,
+      "end": 4342,
+      "text": "THE END"
+    },
+    {
+      "start": 4342,
+      "end": 4343,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4343,
+      "end": 4344,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4344,
+      "end": 4345,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4345,
+      "end": 4346,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4346,
+      "end": 4347,
+      "text": "THE END"
+    },
+    {
+      "start": 4347,
+      "end": 4348,
+      "text": "THE END"
+    },
+    {
+      "start": 4348,
+      "end": 4349,
+      "text": "THE END"
+    },
+    {
+      "start": 4349,
+      "end": 4350,
+      "text": "THE END"
+    },
+    {
+      "start": 4350,
+      "end": 4351,
+      "text": "THE END"
+    },
+    {
+      "start": 4351,
+      "end": 4352,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4352,
+      "end": 4353,
+      "text": "THE END"
+    },
+    {
+      "start": 4353,
+      "end": 4354,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4354,
+      "end": 4355,
+      "text": "THE END"
+    },
+    {
+      "start": 4355,
+      "end": 4356,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4356,
+      "end": 4357,
+      "text": "THE END"
+    },
+    {
+      "start": 4357,
+      "end": 4358,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4358,
+      "end": 4359,
+      "text": "THE END"
+    },
+    {
+      "start": 4359,
+      "end": 4360,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4360,
+      "end": 4361,
+      "text": "THE END"
+    },
+    {
+      "start": 4361,
+      "end": 4362,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4362,
+      "end": 4363,
+      "text": "THE END"
+    },
+    {
+      "start": 4363,
+      "end": 4364,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4364,
+      "end": 4365,
+      "text": "THE END"
+    },
+    {
+      "start": 4365,
+      "end": 4366,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4366,
+      "end": 4367,
+      "text": "THE END"
+    },
+    {
+      "start": 4367,
+      "end": 4368,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4368,
+      "end": 4369,
+      "text": "THE END"
+    },
+    {
+      "start": 4369,
+      "end": 4370,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4370,
+      "end": 4371,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4371,
+      "end": 4372,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4372,
+      "end": 4373,
+      "text": "THE END"
+    },
+    {
+      "start": 4373,
+      "end": 4374,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4374,
+      "end": 4375,
+      "text": "THE END"
+    },
+    {
+      "start": 4375,
+      "end": 4376,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4376,
+      "end": 4377,
+      "text": "THE END"
+    },
+    {
+      "start": 4377,
+      "end": 4378,
+      "text": "THE END"
+    },
+    {
+      "start": 4378,
+      "end": 4379,
+      "text": "OF FIGHT"
+    },
+    {
+      "start": 4379,
+      "end": 4380,
+      "text": "THE END"
+    },
+    {
+      "start": 4380,
+      "end": 4381.6,
+      "text": "Słuchacie ciężko na"
+    },
+    {
+      "start": 4381.6,
+      "end": 4383.64,
+      "text": "sercu w trójce. Podkręcamy"
+    },
+    {
+      "start": 4383.64,
+      "end": 4385,
+      "text": "tempo, przyciemniamy"
+    },
+    {
+      "start": 4385,
+      "end": 4386.99,
+      "text": "światło, walimy głową"
+    },
+    {
+      "start": 4386.99,
+      "end": 4388.73,
+      "text": "w ścianę. Albo puszczamy"
+    },
+    {
+      "start": 4388.73,
+      "end": 4390.2,
+      "text": "sobie głośno Azarat,"
+    },
+    {
+      "start": 4390.2,
+      "end": 4392,
+      "text": "efekt będzie podobny."
+    },
+    {
+      "start": 4392,
+      "end": 4394.05,
+      "text": "Nowy album Azarat,"
+    },
+    {
+      "start": 4394.05,
+      "end": 4396.2,
+      "text": "zatytułowany Scorn"
+    },
+    {
+      "start": 4396.2,
+      "end": 4397.84,
+      "text": "Eternal, ukaże się"
+    },
+    {
+      "start": 4397.84,
+      "end": 4400,
+      "text": "za chwilę, 20 listopada"
+    },
+    {
+      "start": 4400,
+      "end": 4401.21,
+      "text": "i wierzę, że"
+    },
+    {
+      "start": 4401.21,
+      "end": 4403.95,
+      "text": "jeszcze do niego wrócimy,"
+    },
+    {
+      "start": 4403.95,
+      "end": 4405,
+      "text": "bo żre aż miło."
+    },
+    {
+      "start": 4405,
+      "end": 4406.54,
+      "text": "No ale co ma nie żreć,"
+    },
+    {
+      "start": 4406.54,
+      "end": 4407.75,
+      "text": "skoro w składzie"
+    },
+    {
+      "start": 4407.75,
+      "end": 4409.31,
+      "text": "mamy muzyków znanych"
+    },
+    {
+      "start": 4409.31,
+      "end": 4410.87,
+      "text": "m.in. z Behemoth"
+    },
+    {
+      "start": 4410.87,
+      "end": 4412.94,
+      "text": "Armageddon, Damnation,"
+    },
+    {
+      "start": 4412.94,
+      "end": 4415,
+      "text": "Lost Soul i Embryonal."
+    },
+    {
+      "start": 4415,
+      "end": 4416.23,
+      "text": "Panowie doskonale"
+    },
+    {
+      "start": 4416.23,
+      "end": 4417.61,
+      "text": "wiedzą, jakie nutki"
+    },
+    {
+      "start": 4417.61,
+      "end": 4419.14,
+      "text": "zagrać, żeby słuchacz"
+    },
+    {
+      "start": 4419.14,
+      "end": 4421.18,
+      "text": "poczuł motylki w brzuszku."
+    },
+    {
+      "start": 4435,
+      "end": 4464.98,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4465,
+      "end": 4494.98,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4495,
+      "end": 4524.98,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4524.98,
+      "end": 4554.96,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4554.98,
+      "end": 4584.96,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4584.96,
+      "end": 4614.94,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4614.96,
+      "end": 4644.94,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4644.94,
+      "end": 4674.92,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4674.92,
+      "end": 4704.9,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4704.9,
+      "end": 4734.88,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4734.88,
+      "end": 4764.86,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4764.88,
+      "end": 4794.86,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4794.86,
+      "end": 4824.84,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4824.86,
+      "end": 4854.84,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4854.84,
+      "end": 4884.82,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4884.82,
+      "end": 4914.8,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4914.8,
+      "end": 4944.78,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4944.8,
+      "end": 4974.78,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 4974.8,
+      "end": 5004.78,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5004.8,
+      "end": 5034.78,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5034.8,
+      "end": 5064.78,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5064.78,
+      "end": 5094.76,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5094.76,
+      "end": 5124.74,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5124.74,
+      "end": 5154.72,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5154.72,
+      "end": 5184.7,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5184.7,
+      "end": 5214.68,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5214.68,
+      "end": 5244.66,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5244.66,
+      "end": 5274.64,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5274.64,
+      "end": 5304.62,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5304.62,
+      "end": 5334.6,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5334.6,
+      "end": 5364.58,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5364.58,
+      "end": 5394.56,
+      "text": "Dziękuje za oglądanie."
+    },
+    {
+      "start": 5394.56,
+      "end": 5400,
+      "text": "Dziękuje za oglądanie."
+    }
+  ],
+  "stats": {
+    "windowCount": 19,
+    "transcribedAudioSec": 2436.1,
+    "segmentCount": 996,
+    "characterCount": 18888
+  }
+}
