@@ -22,7 +22,7 @@ wersja wzorca intro), żeby nieaktualność wykrywać z danych, a nie z kolejno�
 
 | etap | artefakt | zawartość | wejście |
 | --- | --- | --- | --- |
-| `fetch-episode-metadata` | `metadata.json` | uuid, data, tytuł, articleId, sourceUrl, audioUrl, program, autor, obraz | strona odcinka |
+| `fetch-episode-metadata` | `metadata.json` | uuid, data, tytuł, articleId, sourceUrl, audioUrl, durationSec, program, autor, obraz | strona odcinka |
 | `transcribe` | `speech.json` | segmenty whispera, okna mowy | mp3 |
 | `identify` | `audio-id.json` | bloki muzyki, kandydaci per próbka | mp3 + `speech.json` |
 | `voiceprint` | `voice.json` | bloki mówienia, wejścia w lukach | mp3 + `speech.json` |
@@ -34,15 +34,20 @@ Ustalenia szczegółowe:
 1. `metadata.json`: data z JSON-LD `datePublished`, ale **bez konwersji strefy** — strona
    podaje czas lokalny z doklejonym `Z`. Tytuł z `headline` po odcięciu `"Ciężko na Sercu - "`;
    fallback `<title>` (rozbić po ` - `), ostateczny fallback `span.truncate`.
-2. `speech.json` zastępuje dzisiejsze `data/transcripts/<id>.json`; transkrypcja przestaje
+2. `npm run metadata <uuid…>` czyta stronę i wypisuje artefakt; `--write` tworzy
+   `data/episodes/<iso>_<uuid>/metadata.json`, `--verify` porównuje odczyt z `catalog.json`
+   bez zapisu. Stan na dziś: `--verify` przechodzi na **109/109** odcinkach (data, audioUrl,
+   articleId zgodne z katalogiem). Katalog nadal jest źródłem tytułu wyświetlanego —
+   `titles.json` i tak wygrywa — więc migracja nie zmieni podpisów odcinków.
+3. `speech.json` zastępuje dzisiejsze `data/transcripts/<id>.json`; transkrypcja przestaje
    działać w CI (drugi przebieg pod rząd przerwany — zbyt wymagające i niestabilne).
-3. `identify` zwraca kandydatów per próbka, nie per blok — to rozwiązuje dzisiejsze
+4. `identify` zwraca kandydatów per próbka, nie per blok — to rozwiązuje dzisiejsze
    sklejanie dwóch piosenek bez zapowiedzi w jeden utwór.
-4. `intro`: dziś `tools/find-intro.py` (NCC 8 kHz w oknie pierwszych minut) + `tools/apply-intro.py`,
+5. `intro`: dziś `tools/find-intro.py` (NCC 8 kHz w oknie pierwszych minut) + `tools/apply-intro.py`,
    który wpisuje wykryte intro do `data/overrides`. W v2 wykrywanie staje się producentem
    `intro.json` (`start`, `score`, `duration`, `template`), a `apply-intro.py` znika.
    Plik wzorcowy `intro.mp3` zostaje poza repo.
-5. `enrich` nie rusza etykiet redakcyjnych: pisze wyłącznie tam, gdzie etykieta jest pusta
+6. `enrich` nie rusza etykiet redakcyjnych: pisze wyłącznie tam, gdzie etykieta jest pusta
    albo `#TODO`, i odrzuca odpowiedzi typu „brak tytułu".
 
 ## 3. Warstwa ręczna
