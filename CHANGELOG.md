@@ -1,3 +1,9 @@
+## [1.38.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.37.3...v1.38.0) (2026-11-11)
+
+### Features
+
+* okno wykrywania 02:00–03:00 czasu polskiego i adnotacje o stanie odcinka ([a90de55](https://github.com/tiriana/ciezko-na-sercu-web/commit/a90de55c9ed047aaabd71309f4ad92778fb054ec))
+
 ## [1.37.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.37.2...v1.37.3) (2026-11-11)
 
 ### Bug Fixes
