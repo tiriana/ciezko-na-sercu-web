@@ -1,3 +1,9 @@
+## [1.41.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.41.0...v1.41.1) (2026-11-11)
+
+### Bug Fixes
+
+* znaczniki i skoki w czasie odtwarzacza — korekta skali nagłówka Xing; test dymny na adresie z uuid ([4d66c8f](https://github.com/tiriana/ciezko-na-sercu-web/commit/4d66c8faa639f20f64d02b95d7b6dd658c831171))
+
 ## [1.41.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.40.3...v1.41.0) (2026-11-11)
 
 ### Features
