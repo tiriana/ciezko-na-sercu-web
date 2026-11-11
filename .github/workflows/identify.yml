@@ -1,0 +1,86 @@
+name: identify
+
+# Rozpoznawanie utworów Shazamem. Blok muzyki to dopełnienie okien mowy
+# z transkryptu, więc etap idzie po transkrypcji — bez niej nie ma czego odjąć.
+# Dla nowego odcinka zamawia go `transcribe.yml` po commicie danych; ręcznie można
+# wskazać odcinki albo puścić zaległość (`force` nadpisuje istniejące utwory).
+#
+# Shazam chodzi po nieoficjalnym endpoincie i przy zbyt wielu zapytaniach odpowiada
+# stroną HTML zamiast JSON-em. Skrypt ponawia z rosnącym oddechem, a blok, który
+# mimo to nie zostanie rozpoznany, po prostu nie dostaje utworu.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episodes:
+        description: 'UUID lub slugi oddzielone przecinkami; puste = odcinki bez utworów'
+        required: false
+        type: string
+      limit:
+        description: 'Ile odcinków najwyżej (0 = bez limitu)'
+        required: false
+        default: '0'
+        type: string
+      force:
+        description: 'Licz też odcinki, które już mają utwory'
+        required: false
+        default: false
+        type: boolean
+
+run-name: "rozpoznawanie utworów: ${{ inputs.episodes || 'odcinki bez utworów' }}"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: identify
+  cancel-in-progress: false
+
+jobs:
+  identify:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      # ffmpeg wycina próbki po HTTP (range requests), ffprobe mierzy długość nagrania.
+      - name: Zainstaluj ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - run: npm ci
+
+      - name: Rozpoznaj utwory
+        env:
+          EPISODES: ${{ inputs.episodes }}
+          LIMIT: ${{ inputs.limit }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          extra=()
+          if [ -n "$EPISODES" ]; then extra+=(--episodes "$EPISODES"); fi
+          if [ "$LIMIT" != "0" ]; then extra+=(--limit "$LIMIT"); fi
+          if [ "$FORCE" = "true" ]; then extra+=(--force); fi
+          node scripts/identify-tracks.mjs "${extra[@]}" --write | tee identify.log
+          {
+            echo "### Rozpoznawanie utworów"
+            echo ""
+            echo '```'
+            tail -40 identify.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - run: npm run check
+
+      - name: Commit
+        run: |
+          bash scripts/push-data.sh "fix: rozpoznane utwory Shazamem (${GITHUB_RUN_ID})" data/episodes
+
+      - name: Stan etapów
+        if: always()
+        run: node scripts/status-all.mjs
+
+      # Push z GITHUB_TOKEN nie uruchamia workflow, więc deploy zamawiamy ręcznie.
+      - name: Deploy po aktualizacji danych
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main

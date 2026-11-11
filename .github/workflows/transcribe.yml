@@ -211,3 +211,18 @@ jobs:
           fi
           echo "Profil głosu dla: $ids"
           gh workflow run voiceprint.yml --ref main -f episodes="$ids" -f limit=0 -f apply=true
+
+      # Shazam potrzebuje tylko audio i bloków mowy, więc idzie zaraz po transkrypcie;
+      # bez tego nowy odcinek zostaje bez ani jednego utworu.
+      - name: Rozpoznaj utwory Shazamem
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MATRIX: ${{ needs.plan.outputs.matrix }}
+        run: |
+          ids=$(node -e 'const m=JSON.parse(process.env.MATRIX||"{\"include\":[]}");console.log([...new Set(m.include.map((j)=>j.id))].join(","))')
+          if [ -z "$ids" ]; then
+            echo "Brak odcinków do rozpoznania."
+            exit 0
+          fi
+          echo "Shazam dla: $ids"
+          gh workflow run identify.yml --ref main -f episodes="$ids" -f limit=0

@@ -21,7 +21,9 @@
     "voiceprint:apply": "node scripts/import-voiceprint.mjs",
     "voiceprint": "node scripts/run-voiceprint.mjs",
     "voiceprint:status": "node scripts/voiceprint-status.mjs",
-    "status": "node scripts/status-all.mjs"
+    "status": "node scripts/status-all.mjs",
+    "identify": "node scripts/identify-tracks.mjs",
+    "identify:apply": "node scripts/identify-tracks.mjs --write"
   },
   "dependencies": {
     "astro": "^7.4.7",
@@ -35,6 +37,7 @@
     "@semantic-release/npm": "^13.2.0",
     "@semantic-release/release-notes-generator": "^14.1.1",
     "conventional-changelog-conventionalcommits": "^8.0.0",
+    "node-shazam": "^1.2.7",
     "playwright": "^1.65.0",
     "semantic-release": "^25.0.9"
   }
