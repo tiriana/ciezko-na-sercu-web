@@ -1,3 +1,9 @@
+## [1.40.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.40.2...v1.40.3) (2026-11-11)
+
+### Bug Fixes
+
+* lista utworów w promptcie streszczenia i tolerancyjny JSON ([bb10cdc](https://github.com/tiriana/ciezko-na-sercu-web/commit/bb10cdcb09f68b806a67c89a5fd570b52ca5c0a0))
+
 ## [1.40.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.40.1...v1.40.2) (2026-11-11)
 
 ### Bug Fixes
