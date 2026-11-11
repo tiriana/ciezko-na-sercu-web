@@ -1,3 +1,9 @@
+## [1.38.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.38.0...v1.38.1) (2026-11-11)
+
+### Bug Fixes
+
+* artefakty transkryptu w katalogu ukrytym (v7 pomija pliki z kropką) ([ec9460a](https://github.com/tiriana/ciezko-na-sercu-web/commit/ec9460a51c9b0ecf1f40e1a20e98b30b5bd93e68))
+
 ## [1.38.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.37.3...v1.38.0) (2026-11-11)
 
 ### Features
