@@ -1,13 +1,15 @@
 name: enrich
 
-# Streszczenie odcinka i nazwy wejść z modelu językowego (GitHub Models).
+# Streszczenie odcinka i nazwy wejść z modelu językowego.
 # Wejścia powstają w voiceprincie, a utwory w identify, więc etap idzie po nich:
 # voiceprint zamawia go dispatchem, a codzienny cron łapie to, co zostało pominięte
 # (np. po nieudanym przebiegu). Przebieg jest idempotentny — bierze odcinki bez
 # streszczenia i wejścia z surową etykietą, więc powtórka niczego nie psuje.
 #
-# Token jest wbudowany: `models: read` wystarcza, żeby GITHUB_TOKEN wołał
-# models.github.ai bez dodatkowych sekretów.
+# GitHub Models zostało wyłączone 30 VII 2026, więc korzystamy z darmowych tierów
+# zgodnych z API OpenAI. Wystarczy jeden sekret: GROQ_API_KEY (największy darmowy
+# limit) — reszta (OPENROUTER_API_KEY, CEREBRAS_API_KEY, GEMINI_API_KEY,
+# MISTRAL_API_KEY) jest opcjonalna i tworzy łańcuch zapasowy.
 
 on:
   schedule:
@@ -24,9 +26,9 @@ on:
         default: '0'
         type: string
       model:
-        description: 'Model GitHub Models'
+        description: 'Łańcuch dostawców, np. groq:openai/gpt-oss-120b,openrouter (puste = wszyscy z kluczem)'
         required: false
-        default: 'openai/gpt-4.1-mini'
+        default: ''
         type: string
       force:
         description: 'Przepisz też istniejące streszczenia'
@@ -39,7 +41,6 @@ run-name: "streszczenia: ${{ inputs.episodes || 'braki' }}"
 permissions:
   contents: write
   actions: write
-  models: read
 
 concurrency:
   group: enrich
@@ -56,16 +57,19 @@ jobs:
 
       - name: Streszczenia i nazwy wejść
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           EPISODES: ${{ inputs.episodes }}
           LIMIT: ${{ inputs.limit }}
-          MODEL: ${{ inputs.model }}
+          ENRICH_MODELS: ${{ inputs.model }}
           FORCE: ${{ inputs.force }}
         run: |
           extra=()
           if [ -n "$EPISODES" ]; then extra+=(--episodes "$EPISODES"); fi
           if [ "$LIMIT" != "0" ] && [ -n "$LIMIT" ]; then extra+=(--limit "$LIMIT"); fi
-          if [ -n "$MODEL" ]; then extra+=(--model "$MODEL"); fi
           if [ "$FORCE" = "true" ]; then extra+=(--force); fi
           node scripts/enrich-episode.mjs "${extra[@]}" --write | tee enrich.log
           {
