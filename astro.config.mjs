@@ -47,6 +47,7 @@ const redirectsFile = {
 export default defineConfig({
   site: 'https://ciezko-na-sercu.pages.dev',
   build: { format: 'directory', inlineStylesheets: 'always' },
-  redirects: legacyRedirects(catalog),
+  // Stron-zaślepek celowo nie generujemy: Cloudflare Pages podaje gotowy plik przed
+  // regułą z `_redirects`, więc zaślepka zamieniłaby 301 na 200 z meta refresh.
   integrations: [redirectsFile],
 });
