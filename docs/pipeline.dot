@@ -1,0 +1,49 @@
+// Przepływ workflowów — źródło diagramu (render: npm run pipeline).
+digraph pipeline {
+  graph [fontname="DejaVu Sans", fontsize=11, rankdir=LR, nodesep=0.35, ranksep=0.75, pad=0.25, bgcolor="white"];
+  node [fontname="DejaVu Sans", fontsize=9.5, shape=box, style="rounded,filled", color="#8a8a8a", fillcolor="#ffffff", penwidth=1.1];
+  edge [fontname="DejaVu Sans", fontsize=7.5, color="#666666", arrowsize=0.65];
+
+  cron_detect [label="cron środa\n*/10 00–01 UTC\ni 04:17 UTC", shape=note, fillcolor="#eef4fb"];
+  cron_daily  [label="cron codziennie\n12:00 UTC", shape=note, fillcolor="#eef4fb"];
+  cron_vp     [label="cron codziennie\n04:30 UTC", shape=note, fillcolor="#eef4fb"];
+  push_main   [label="push na main", shape=note, fillcolor="#fdeeee"];
+  push_feat   [label="push na feat/**", shape=note, fillcolor="#fdeeee"];
+
+  detect     [label="detect-episode\nnowy wpis na stronie", fillcolor="#e6efff"];
+  refresh    [label="refresh-catalog\nlista + zaślepka", fillcolor="#e6efff"];
+  trans_d    [label="transcribe-daily\nwybiera odcinek", fillcolor="#e6efff"];
+  transcribe [label="transcribe\nwhisper.cpp (~2 h)", fillcolor="#e6efff"];
+  identify   [label="identify\nShazam: utwory", fillcolor="#e6efff"];
+  voiceprint [label="voiceprint\nprofil głosu", fillcolor="#e6efff"];
+
+  commit    [label="commit danych\npush-data.sh", fillcolor="#f0f0f0"];
+  release   [label="release\nsemantic-release", fillcolor="#eaf5ec"];
+  deploy    [label="deploy\nbuild + Cloudflare Pages", fillcolor="#eaf5ec"];
+  preview   [label="preview", fillcolor="#eaf5ec"];
+  pages     [label="ciezko-na-sercu.pages.dev", shape=component, fillcolor="#fdf3e3"];
+
+  cron_detect -> detect [label="sondowanie"];
+  cron_daily  -> trans_d [label="wybór"];
+  cron_vp     -> voiceprint [label="kolejka"];
+
+  detect  -> refresh    [label="audio 200"];
+  refresh -> trans_d    [label="dispatch"];
+  trans_d -> transcribe [label="dispatch"];
+  transcribe -> identify   [label="dispatch"];
+  transcribe -> voiceprint [label="dispatch"];
+
+  refresh -> commit; transcribe -> commit; identify -> commit; voiceprint -> commit;
+
+  push_main -> release [label="commit z prefiksem"];
+  release   -> deploy  [label="tag + wersja"];
+  push_main -> deploy  [label="push człowieka"];
+
+  commit  -> deploy  [label="dispatch (GITHUB_TOKEN\nnie wyzwala workflow)"];
+  deploy  -> pages;
+  push_feat -> preview [label="push gałęzi"];
+  preview -> pages [label="adres podglądu"];
+
+  manual [label="workflow_dispatch — każdy workflow da się uruchomić ręcznie", shape=note, fillcolor="#f7f7f7"];
+  { rank=same; manual; push_feat; }
+}
