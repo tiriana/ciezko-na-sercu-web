@@ -37,6 +37,9 @@ const redirectsFile = {
       if (!catalog) return;
       const lines = ['# wygenerowane przy buildzie: stary slug odcinka → adres kanoniczny'];
       for (const [source, target] of Object.entries(legacyRedirects(catalog))) {
+        // Oba warianty, bo strony są budowane z ukośnikiem na końcu i to ta wersja
+        // trafia do `_redirects` z linków oraz z wyszukiwarek.
+        lines.push(`${source}/ ${target} 301`);
         lines.push(`${source} ${target} 301`);
       }
       writeFileSync(join(dir.pathname, '_redirects'), `${lines.join('\n')}\n`);
