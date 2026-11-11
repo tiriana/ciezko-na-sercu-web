@@ -27,8 +27,9 @@
     "pipeline": "dot -Tsvg docs/pipeline.dot -o docs/pipeline.svg && dot -Tpng -Gdpi=200 docs/pipeline.dot -o docs/pipeline.png && dot -Tpdf docs/pipeline.dot -o docs/pipeline.pdf",
     "enrich": "node scripts/enrich-episode.mjs",
     "enrich:apply": "node scripts/enrich-episode.mjs --write",
-    "verify:migration": "node scripts/verify-migration.mjs",
-    "metadata": "node scripts/fetch-episode-metadata.mjs"
+    "verify:migration": "node scripts/build-episode.mjs --from-legacy --check",
+    "metadata": "node scripts/fetch-episode-metadata.mjs",
+    "episode": "node scripts/build-episode.mjs"
   },
   "dependencies": {
     "astro": "^7.4.7",

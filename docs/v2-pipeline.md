@@ -64,16 +64,30 @@ Ustalenia szczegółowe:
 
 ## 4. Kompilator
 
-`scripts/build-episode.mjs` — czysta funkcja: `metadata` + artefakty + `manual` → `episode.json`.
+`scripts/build-episode.mjs` — czyta artefakty z katalogu i pisze `episode.json`:
+
+```
+npm run episode <uuid>       # kompiluje jeden odcinek
+npm run episode --all        # wszystkie katalogi z metadata.json
+npm run episode <uuid> --preview   # pokazuje różnice, nic nie zapisuje
+npm run episode <uuid> --check     # kod 2, gdy wynik różni się od zapisanego
+npm run verify:migration     # harness: stare dane → artefakty → kompilat, diff z dzisiejszym renderem
+```
+
+Stan: `verify:migration` daje 109/109 zgodnych, a dla odcinka z poprawkami ręcznymi
+(`82d57411…`, addTracks + zmiana tytułu) kompilat z katalogu artefaktów jest bajt w bajt
+równy temu, co dziś renderuje strona (stare dane + overrides + warianty nazw).
 
 1. Pierwszeństwo: `manual` > `text` > `audio-id`/`voice`/`intro` > reguły ze `speech`.
 2. Reguły granic żyją tylko tutaj: snap do pierwszej wypowiedzi po `start + durationSec - 5 s`,
    brak nakładek, margines 1 s w edytorze.
-3. To jedyne miejsce scalania — dziś ta sama logika istnieje w dwóch kopiach
-   (`src/lib/data.ts:59–131` i `applyOverrides` w `scripts/edytor.mjs`). Strona przestaje
-   aplikować overrides.
-4. `episode.json` jest wynikiem i kontraktem: czyta go strona i edytor, kształt bez zmian.
-5. Tryby: `--episode <uuid>`, `--preview` (diff bez zapisu), `--check` (zgodność z zapisanym).
+3. `manual.patches` ma dzisiejszy format `data/overrides/<id>.json`, więc migracja przenosi
+   poprawki bez tłumaczenia; `manual.title` wygrywa z tytułem z katalogu.
+4. To jedyne miejsce scalania — dziś ta sama logika istnieje w dwóch kopiach
+   (`src/lib/data.ts` i `applyOverrides` w `scripts/edytor.mjs`). Strona przestaje aplikować
+   overrides, bo robi to kompilator.
+5. `episode.json` jest wynikiem i kontraktem: czyta go strona i edytor, kształt bez zmian.
+6. Katalog odcinka jest źródłem prawdy: brak artefaktu znaczy „nie policzone", nie „puste".
 
 ## 5. Adresy strony
 
@@ -98,7 +112,7 @@ a `catalog.slugs[]` nie jest w ogóle emitowane jako trasy (`getStaticPaths` bie
 2. `legacy.json` nie powstaje — nie ma czego kasować.
 3. Test akceptacyjny: dla wszystkich 109 odcinków skompilowany `episode.json` musi być
    identyczny z dzisiejszym renderem (`apply(episode, overrides, titles, aliases)`), diff zero.
-   Harness: `npm run verify:migration` — obecnie 109/109, różnic 0.
+   Harness: `npm run verify:migration` (czyli `episode --from-legacy --check`) — 109/109, różnic 0.
 4. Ustalenie z harnessu: `topics` **nie** da się odtworzyć ze `speech.json`, bo granice
    pochodzą z taggera i wcześniejszych przebiegów snap, a stare odcinki mają je już
    poprawione; zostają więc w osobnym artefakcie `topics.json` (producent: tagger/snap),
