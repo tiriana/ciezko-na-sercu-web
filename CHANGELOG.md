@@ -1,3 +1,9 @@
+## [1.41.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.41.1...v1.41.2) (2026-11-11)
+
+### Bug Fixes
+
+* realna długość nagrania trafia do odtwarzacza przy starcie strony (korekta Xing) ([80e9155](https://github.com/tiriana/ciezko-na-sercu-web/commit/80e91551da6e0b0c4500860cf7e252e94e1ae4a1))
+
 ## [1.41.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.41.0...v1.41.1) (2026-11-11)
 
 ### Bug Fixes
