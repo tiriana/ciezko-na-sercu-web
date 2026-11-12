@@ -300,7 +300,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
         {entry.sourceUrl && (
           <a class="btn" href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">Odcinek w Polskim Radiu ↗</a>
         )}
-        <ReportLink element={`${entry.slug}|odcinek`} label="Zgłoś błąd" class="report-link--head" />
       </div>
     </header>
 
@@ -504,7 +503,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
               <details class="transcript">
                 <summary class="transcript__summary">
                   Cały tekst · {paragraphs.length} {paragraphs.length === 1 ? 'akapit' : paragraphs.length < 5 ? 'akapity' : 'akapitów'}
-                  <ReportLink element={`${entry.slug}|transkrypt`} class="report-link--summary" />
                 </summary>
                 <div class="transcript__body">
                   {paragraphs.map((paragraph) => (
@@ -518,11 +516,6 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                       )}
                       <span>
                         {paragraph.text}
-                        <ReportLink
-                          element={`${entry.slug}|transkrypt:${Math.floor(paragraph.start)}`}
-                          target={`Transkrypt od ${formatClock(paragraph.start)}`}
-                          class="report-link--para"
-                        />
                       </span>
                     </p>
                   ))}

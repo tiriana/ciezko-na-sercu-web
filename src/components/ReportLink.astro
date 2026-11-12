@@ -27,7 +27,7 @@ interface Props {
   target?: string;
 }
 
-const { element, label = 'Zgłoś', class: className, target: explicitTarget } = Astro.props;
+const { element, label = '!', class: className, target: explicitTarget } = Astro.props;
 const [, kindWithId = '', description] = element.split('|');
 const kind = kindWithId.split(':')[0];
 const target = explicitTarget || description || KIND_LABELS[kind] || 'Ten fragment';
@@ -43,6 +43,7 @@ const href = `${REPORT_FORM}?usp=pp_url&${ENTRY_ELEMENT}=${encodeURIComponent(el
   data-report-element={element}
   data-report-target={target}
   title={`Zgłoś błąd: ${element}`}
+  aria-label={`Zgłoś błąd: ${target}`}
 >
-  {label}
+  <span aria-hidden="true">{label}</span>
 </a>
