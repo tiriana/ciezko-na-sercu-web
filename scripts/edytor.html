@@ -1472,6 +1472,7 @@
       const queueDraft = () => {
         clearTimeout(draftTimer);
         draftTimer = setTimeout(writeDraft, 500);
+        queueServerDraft();
       };
 
       const dropDraft = (id = state.episode?.id) => {
@@ -1684,6 +1685,64 @@
         hiddenTracks: state.hiddenTracks,
         hiddenTopics: state.hiddenTopics,
       });
+
+      // Ten sam kształt, który leci do /api/save — szkic serwerowy ma być gotową
+      // kopią zapisu, a nie osobnym formatem do tłumaczenia.
+      const savePayload = () => ({
+        id: state.episode.id,
+        title: $('title').value,
+        tracks: state.tracks,
+        topics: state.topics,
+        addTracks: state.addTracks,
+        addTopics: state.addTopics,
+        snapshot: editorSnapshot(),
+      });
+
+      // Autozapis szkicu na serwer: przeglądarka może się zawiesić, kartę można
+      // zamknąć, a ciasteczka wyczyścić — plik w `.cache/drafts` to przeżyje.
+      let serverDraftTimer = 0;
+      const queueServerDraft = () => {
+        clearTimeout(serverDraftTimer);
+        serverDraftTimer = setTimeout(async () => {
+          if (!state.episode || !dirty) return;
+          try {
+            await fetch(`/api/draft?id=${encodeURIComponent(state.episode.id)}`, {
+              method: 'POST',
+              headers: { 'content-type': 'application/json' },
+              body: JSON.stringify(savePayload()),
+            });
+          } catch {}
+        }, 1500);
+      };
+
+      const readServerDraft = async (id) => {
+        try {
+          const response = await fetch(`/api/draft?id=${encodeURIComponent(id)}`);
+          return response.ok ? await response.json() : null;
+        } catch {
+          return null;
+        }
+      };
+
+      const dropServerDraft = () => {
+        if (!state.episode) return;
+        void fetch(`/api/draft?id=${encodeURIComponent(state.episode.id)}`, { method: 'DELETE' }).catch(() => {});
+      };
+
+      const offerServerDraft = async (id) => {
+        const node = $('draft-offer');
+        if (!pendingDraft || node.hidden) {
+          const record = await readServerDraft(id);
+          if (!record?.payload || state.episode?.id !== id) return;
+          if (currentOutbox?.id === id) return;
+          const draft = { ...record.payload, at: record.at };
+          if (timelineFingerprint(draft) === timelineFingerprint(currentTimeline())) return;
+          pendingDraft = draft;
+          const at = new Date(record.at);
+          $('draft-when').textContent = `szkic serwera z ${String(at.getHours()).padStart(2, '0')}:${String(at.getMinutes()).padStart(2, '0')} —`;
+          node.hidden = false;
+        }
+      };
 
       const offerDraft = (id) => {
         const draft = readDraft(id);
@@ -2288,6 +2347,7 @@
         renderAdded();
         renderRestore();
         await loadOutboxForEpisode(data);
+        void offerServerDraft(data.id);
         renderList();
         const reviewedReady = loadReviewed(data.id);
         const waveReady = openWave(data.id);
@@ -4210,6 +4270,7 @@
           if (cleared && revision === editRevision) {
             setDirty(false);
             dropDraft(episode.id);
+            dropServerDraft();
             setStatus('saved', label, note);
             statusTimer = setTimeout(() => setStatus('clean', label, note), 4000);
           } else {

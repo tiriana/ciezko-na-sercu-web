@@ -287,6 +287,18 @@
       "start": 6452.35,
       "newLabel": "Podsumowanie – przegląd polskich projektów metalowych",
       "end": 6486.56
+    },
+    {
+      "time": 3329.75,
+      "label": "Dark Side – nowa płyta",
+      "start": 3329.75,
+      "newLabel": "Dark Side – nowa płyta / Drown My Day – singiel „All Your Prophets Are Dead”",
+      "end": 3362.45
+    },
+    {
+      "time": 3349.04,
+      "label": "Drown My Day – singiel „All Your Prophets Are Dead”",
+      "hide": true
     }
   ],
   "addTracks": [
@@ -346,7 +358,16 @@
       "durationSec": 241.08
     }
   ],
-  "addTopics": [],
+  "addTopics": [
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 3551.9
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 3131.44
+    }
+  ],
   "credits": {
     "rename": {}
   }

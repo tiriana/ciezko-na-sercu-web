@@ -21,6 +21,10 @@ const PORT = Number(process.env.PORT ?? 4330);
 const CACHE = resolve(process.env.EDITOR_CACHE_DIR ?? join(ROOT, '.cache'));
 const LOG = join(CACHE, 'edytor.log');
 const PEAKS = join(CACHE, 'peaks');
+// Szkice i dziennik zapisów trzymamy poza `data/`, bo to nie jest treść strony:
+// mają ratować pracę, a nie trafiać do repozytorium.
+const DRAFTS = join(CACHE, 'drafts');
+const JOURNAL = join(CACHE, 'journal');
 const PEAKS_PER_SEC = 100; // 1 słupek = 10 ms
 const SAMPLE_RATE = 2000; // z tego redukujemy do PEAKS_PER_SEC (max z 20 próbek)
 
@@ -684,6 +688,35 @@ const handleRequest = async (req, res) => {
       return;
     }
 
+    if (url.pathname === '/api/draft') {
+      const id = url.searchParams.get('id');
+      if (!id || !/^[0-9a-f-]{36}$/.test(id)) return json(res, 400, { error: 'nieprawidłowy id' });
+      const draftPath = join(DRAFTS, `${id}.json`);
+      if (req.method === 'GET') {
+        try {
+          return json(res, 200, JSON.parse(await readFile(draftPath, 'utf8')));
+        } catch {
+          return json(res, 404, { error: 'brak szkicu' });
+        }
+      }
+      if (req.method === 'POST') {
+        let payload;
+        try {
+          payload = JSON.parse(await readBody(req));
+        } catch (error) {
+          return json(res, 400, { error: `nieprawidłowy JSON: ${error.message}` });
+        }
+        await mkdir(DRAFTS, { recursive: true });
+        await writeJson(draftPath, { at: new Date().toISOString(), payload });
+        return json(res, 200, { ok: true });
+      }
+      if (req.method === 'DELETE') {
+        await rm(draftPath, { force: true });
+        return json(res, 200, { ok: true });
+      }
+      return json(res, 405, { error: 'metoda nieobsługiwana' });
+    }
+
     if (req.method === 'POST' && url.pathname === '/api/save') {
       let payload;
       try {
@@ -744,6 +777,17 @@ const handleRequest = async (req, res) => {
         next.topics.length === 0 &&
         next.addTracks.length === 0 &&
         next.addTopics.length === 0;
+      // Dziennik: każdy zapis zostawia pełną kopię, więc wersję sprzed złej zmiany
+      // można przywrócić bez sięgania do gita. Trzymamy ostatnie 20.
+      await mkdir(JOURNAL, { recursive: true });
+      const journalPath = join(JOURNAL, `${id}.jsonl`);
+      const journalEntry = JSON.stringify({ at: new Date().toISOString(), payload });
+      await appendFile(journalPath, `${journalEntry}\n`).catch(() => {});
+      try {
+        const lines = (await readFile(journalPath, 'utf8')).split('\n').filter(Boolean);
+        if (lines.length > 20) await writeFile(journalPath, `${lines.slice(-20).join('\n')}\n`);
+      } catch {}
+
       const overridePath = join(DATA, 'overrides', `${id}.json`);
       if (empty) {
         await rm(overridePath, { force: true });
