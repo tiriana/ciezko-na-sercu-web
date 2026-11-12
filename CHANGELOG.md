@@ -1,3 +1,14 @@
+## [1.62.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.61.2...v1.62.0) (2026-11-12)
+
+### Features
+
+* centralny wybór modeli LLM z losowaniem i karencją ([e0d2676](https://github.com/tiriana/ciezko-na-sercu-web/commit/e0d26767f59eb16a7eb190228b66e62ab612066b))
+
+### Bug Fixes
+
+* naprawa utworów i wejść bez opisu (2b122f0a-8d64-4be5-8810-c648bd2744b0, 43167737185) ([9bbf1ef](https://github.com/tiriana/ciezko-na-sercu-web/commit/9bbf1ef61d8fffcba396f7d71e0de18f74596fc4))
+* opis wejścia Troneum/Azarath bez znacznika TODO (216a8fd5) ([78e7bb6](https://github.com/tiriana/ciezko-na-sercu-web/commit/78e7bb67ab451f413bcb1c9b055e6f61ba7a58dc))
+
 ## [1.61.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.61.1...v1.61.2) (2026-11-12)
 
 ### Bug Fixes
