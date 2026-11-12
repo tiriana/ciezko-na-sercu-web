@@ -1,3 +1,13 @@
+## [1.77.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.76.0...v1.77.0) (2026-11-12)
+
+### Features
+
+* bloki mowy (VAD) dla nowych odcinków (43214563510) ([e7383ed](https://github.com/tiriana/ciezko-na-sercu-web/commit/e7383edd815f4a43bea8b8ce867b75ca4be4c5a3))
+
+### Bug Fixes
+
+* transkrypcja i przeliczone czasy tematów (43215198653) ([7016750](https://github.com/tiriana/ciezko-na-sercu-web/commit/70167507788523c7aff936e1eab5795a21203435))
+
 ## [1.76.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.75.0...v1.76.0) (2026-11-12)
 
 ### Features
