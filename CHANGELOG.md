@@ -1,3 +1,9 @@
+## [1.52.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.51.0...v1.52.0) (2026-11-12)
+
+### Features
+
+* zgłoszenie jako wykrzyknik w kółku, widoczne nad wierszem; podświetlenie wiersza ([1a01fb8](https://github.com/tiriana/ciezko-na-sercu-web/commit/1a01fb877ef01b84e82d209f689783bbd2eb9180))
+
 ## [1.51.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.50.0...v1.51.0) (2026-11-12)
 
 ### Features
