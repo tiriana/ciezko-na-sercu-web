@@ -1,3 +1,9 @@
+## [1.43.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.43.0...v1.43.1) (2026-11-12)
+
+### Bug Fixes
+
+* spans szuka artefaktów po nazwie, nie po układzie katalogów ([b604b0b](https://github.com/tiriana/ciezko-na-sercu-web/commit/b604b0b5c7855cf2177f7fe66914468b4f257004))
+
 ## [1.43.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.42.1...v1.43.0) (2026-11-12)
 
 ### Features
