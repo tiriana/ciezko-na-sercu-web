@@ -35,6 +35,21 @@
       header h1 { margin: 0; font-size: 15px; }
       header .hint { color: var(--muted); font-size: 12px; }
       .layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: calc(100vh - 45px); }
+      /* Lista odcinków do schowania: przy pracy z waveformem liczy się każdy piksel. */
+      .layout.is-collapsed { grid-template-columns: 0 minmax(0, 1fr); }
+      .layout.is-collapsed .sidebar { display: none; }
+      header .sidebar-toggle {
+        border: 1px solid var(--line);
+        background: var(--surface);
+        color: var(--muted);
+        border-radius: 6px;
+        padding: 4px 8px;
+        font: inherit;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      header .sidebar-toggle:hover { border-color: var(--accent); color: var(--accent); }
+      header .sidebar-toggle[aria-expanded="true"] { color: var(--text); }
       /* Lista zajmuje całą wysokość ekranu minus chrome, a własny scrollbar
          trzyma ją w miejscu podczas pracy przy waveformie. 100dvh, bo na
          telefonie pasek adresu zmienia 100vh w trakcie przewijania. */
@@ -762,6 +777,7 @@
   <body>
     <header>
       <h1>Edytor</h1>
+      <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-expanded="true" aria-controls="episode-sidebar">☰ Odcinki</button>
       <nav class="tabs" aria-label="Sekcje">
         <a href="#/odcinki" data-tab="odcinki">Odcinki</a>
         <a href="#/tagi" data-tab="tagi">Tagi</a>
@@ -814,7 +830,7 @@
     </div>
 
     <div class="layout" id="view-odcinki">
-      <aside class="sidebar" aria-label="Odcinki">
+      <aside class="sidebar" id="episode-sidebar" aria-label="Odcinki">
         <input id="filter" type="search" placeholder="Filtruj odcinki…" aria-label="Filtruj odcinki" />
         <span class="list-count" id="episodes-count"></span>
         <ul class="list" id="list"></ul>
@@ -1177,6 +1193,7 @@
 
       const AUTO_SAVE_DELAY = 1200;
       const AUTO_SAVE_KEY = 'edytor.autoSave';
+      const SIDEBAR_KEY = 'edytor.sidebarHidden';
       const autoSave = { on: false, timer: 0, running: false, queued: false, paused: false };
 
       const readAutoSave = () => {
@@ -4004,6 +4021,22 @@
 
       $('audio').addEventListener('timeupdate', () => {
         $('clock').textContent = fmt($('audio').currentTime);
+      });
+
+      // Lista odcinków daje się schować, żeby waveform miał całą szerokość;
+      // wybór pamiętamy, bo to ustawienie na całą sesję pracy.
+      const layout = $('view-odcinki');
+      const sidebarToggle = $('sidebar-toggle');
+      const applySidebar = (hidden) => {
+        layout.classList.toggle('is-collapsed', hidden);
+        sidebarToggle.setAttribute('aria-expanded', String(!hidden));
+        sidebarToggle.textContent = hidden ? '☰ Odcinki' : '◀ Schowaj listę';
+      };
+      applySidebar(localStorage.getItem(SIDEBAR_KEY) === '1');
+      sidebarToggle.addEventListener('click', () => {
+        const hidden = !layout.classList.contains('is-collapsed');
+        applySidebar(hidden);
+        localStorage.setItem(SIDEBAR_KEY, hidden ? '1' : '0');
       });
 
       $('filter').addEventListener('input', renderList);
