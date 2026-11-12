@@ -1,3 +1,15 @@
+## [1.73.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.72.0...v1.73.0) (2026-11-12)
+
+### Features
+
+* job tidy porządkuje tagi i czasy wejść po każdym pushu ([6ebad2f](https://github.com/tiriana/ciezko-na-sercu-web/commit/6ebad2f9f69013500eb10b643e7ca5c4ea9fcb24))
+* transkrypcja zaległości po kilka odcinków dziennie ([0cce4c0](https://github.com/tiriana/ciezko-na-sercu-web/commit/0cce4c05fc7c5e63844c731d5266f78093a2ac64))
+
+### Bug Fixes
+
+* automat tylko sortuje wejścia (dopasowanie po słowach zostaje w transkrypcji) ([762cfe9](https://github.com/tiriana/ciezko-na-sercu-web/commit/762cfe9e028adf7a5a5ca2f16f0e6ec87404c79a))
+* wejścia na właściwych blokach mowy (sortowanie, align-topics, przycinanie utworów) ([d94a458](https://github.com/tiriana/ciezko-na-sercu-web/commit/d94a45848c394564a55de5093be4460ad7a9ce6b))
+
 ## [1.72.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.71.0...v1.72.0) (2026-11-12)
 
 ### Features
