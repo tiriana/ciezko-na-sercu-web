@@ -134,8 +134,11 @@ const needsLabel = (label) => {
   return !text || /^#TODO/i.test(text);
 };
 
+// Surowy tekst z transkryptu poznajemy po długości: nazwa redakcyjna ma 4–10 słów,
+// a zdanie z audycji potrafi mieć 80–90 znaków i ucięte zakończenie.
 const looksRaw = (label) => {
   const text = String(label ?? '').trim();
+  if (text.length > 70) return true;
   return /[.!?…]$/.test(text) && text.split(/\s+/).length > 14;
 };
 
