@@ -1,3 +1,10 @@
+## [1.61.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.61.1...v1.61.2) (2026-11-12)
+
+### Bug Fixes
+
+* naprawa utworów i wejść bez opisu (cb083283-015c-48a5-a169-5a29240f3784, 43149315260) ([edf0e99](https://github.com/tiriana/ciezko-na-sercu-web/commit/edf0e99e1f0a80685ce3999d84f63da4fa7768b6))
+* naprawa utworów i wejść bez opisu (cbc6c91f-fe30-47b4-82ec-e440e0a449aa, 43149315260) ([f7b0f9a](https://github.com/tiriana/ciezko-na-sercu-web/commit/f7b0f9a3456906faf64682bdd6fb54d7b81a9d7a))
+
 ## [1.61.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.61.0...v1.61.1) (2026-11-12)
 
 ### Bug Fixes
