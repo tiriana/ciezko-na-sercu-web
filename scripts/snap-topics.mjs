@@ -126,7 +126,8 @@ for (const episode of catalog.episodes) {
   for (const slug of episode.slugs ?? [episode.slug]) byKey.set(slug, episode);
 }
 
-const wanted = process.argv.slice(2);
+const sortOnly = process.argv.includes('--sort-only');
+const wanted = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
 const targets = wanted.length > 0 ? wanted.map((key) => byKey.get(key)).filter(Boolean) : catalog.episodes;
 if (wanted.length > 0 && targets.length !== wanted.length) {
   console.error('Nieznany odcinek w argumentach.');
@@ -230,7 +231,11 @@ for (const entry of targets.filter((item) => !frozen.has(item.id))) {
   const segments = (transcript.segments ?? []).filter((segment) => !insideTrack(segment.start));
 
   const input = episode.topics.map((topic) => ({ time: topic.start, topic: topic.label }));
-  const { topics: snapped, moved } = snapTopics(input, segments, durationSec);
+  // `--sort-only` zostawia etykiety tam, gdzie stoją: sortowanie i przycinanie
+  // utworów są deterministyczne, a dopasowanie po rdzeniach wyrazów bywa mylne.
+  const { topics: snapped, moved } = sortOnly
+    ? { topics: input, moved: [] }
+    : snapTopics(input, segments, durationSec);
   const before = JSON.stringify(episode.topics);
   if (moved.length === 0) {
     // Same przesunięcia nie zmieniają kolejności w pliku — sortowanie zostaje.

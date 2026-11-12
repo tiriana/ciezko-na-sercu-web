@@ -151,7 +151,7 @@ jobs:
         run: node scripts/fix-tags.mjs --write
 
       - name: Ustaw wejścia w kolejności i na blokach mowy
-        run: node scripts/snap-topics.mjs
+        run: node scripts/snap-topics.mjs --sort-only
 
       - run: npm run check
 
