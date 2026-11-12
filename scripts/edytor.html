@@ -1516,6 +1516,16 @@
         });
       };
 
+      const readSequence = async (id) => {
+        const db = await openOutboxDb();
+        return new Promise((resolve) => {
+          const transaction = db.transaction(OUTBOX_SEQUENCE_STORE, 'readonly');
+          const request = transaction.objectStore(OUTBOX_SEQUENCE_STORE).get(id);
+          request.onsuccess = () => resolve(request.result ?? null);
+          request.onerror = () => resolve(null);
+        });
+      };
+
       const writeOutbox = async (id, payload) => {
         const db = await openOutboxDb();
         return new Promise((resolve, reject) => {
@@ -1534,11 +1544,11 @@
             const nextRevision = Number(payload?.snapshot?.revision ?? 0);
             const previousStateAt = Math.max(Number(previousSnapshot?.stateAt ?? -1), Number(previousSequence?.stateAt ?? -1));
             const nextStateAt = Number(payload?.snapshot?.stateAt ?? 0);
-            if (previousRevision > nextRevision || (previousRevision === nextRevision && previousStateAt > nextStateAt)) {
-              if (!previousRecord) {
-                record = { seq: previousSequence.seq, id, stale: true, absent: true };
-                return;
-              }
+            // Bez oczekującej kopii nie ma czego chronić: sama zapamiętana sekwencja
+            // (po wyczyszczeniu skrzynki) nie może blokować zapisu, bo po przeładowaniu
+            // licznik zmian startuje od zera i każdy zapis wyglądałby na starszy.
+            const hasPending = Boolean(previousRecord);
+            if (hasPending && (previousRevision > nextRevision || (previousRevision === nextRevision && previousStateAt > nextStateAt))) {
               record = { ...previousRecord, id, stale: true };
               return;
             }
@@ -2167,6 +2177,12 @@
         currentOutbox = null;
         outboxMessage = '';
         renderOutbox();
+        // Licznik zmian musi być wyższy niż zapamiętany przy ostatnim zapisie, inaczej
+        // po przeładowaniu strony każdy zapis wygląda na starszy niż poprzedni.
+        try {
+          const sequence = await readSequence(data.id);
+          editRevision = Math.max(editRevision, Number(sequence?.revision) || 0);
+        } catch {}
         let record;
         try {
           record = await readOutbox(data.id);
