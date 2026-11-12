@@ -1,3 +1,17 @@
+## [1.59.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.58.0...v1.59.0) (2026-11-12)
+
+### Features
+
+* **enrich-episode:** support newLabel overrides for topic relabeling (wip) ([2cda6cd](https://github.com/tiriana/ciezko-na-sercu-web/commit/2cda6cda64fdca9e2c8e46bb1063133e8b559f36))
+
+### Bug Fixes
+
+* **enrich-episode:** handle newLabel and added kinds in relabel loop ([d70a0e3](https://github.com/tiriana/ciezko-na-sercu-web/commit/d70a0e373dc63b7aef9b8f98a3630d5587c2a810))
+* naprawa utworów i wejść bez opisu (4d8fa861-ceb5-4144-a023-5cf69a9cb951, 43148647619) ([97bb001](https://github.com/tiriana/ciezko-na-sercu-web/commit/97bb001144dc4b9ded52972899ee3534effcd926))
+* naprawa utworów i wejść bez opisu (9cc0c1fd-f5e2-476b-bef6-03aff5865243, 43148647619) ([f98e08d](https://github.com/tiriana/ciezko-na-sercu-web/commit/f98e08da6d20a663414322f16c92338059f83b51))
+* naprawa utworów i wejść bez opisu (a6ea5c6a-e759-4cc8-8733-a697b0b1bbc5, 43148647619) ([e6be76c](https://github.com/tiriana/ciezko-na-sercu-web/commit/e6be76c29e33edc3fe7e401c8043748352b4b4b0))
+* **overrides:** apply topic label fixes in needs-repair check ([cc691ae](https://github.com/tiriana/ciezko-na-sercu-web/commit/cc691ae01ce1c04ebe3d436582a5f5c1d7991352))
+
 ## [1.58.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.57.1...v1.58.0) (2026-11-12)
 
 ### Features
