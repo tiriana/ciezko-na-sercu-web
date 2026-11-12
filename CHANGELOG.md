@@ -1,3 +1,14 @@
+## [1.76.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.75.0...v1.76.0) (2026-11-12)
+
+### Features
+
+* bloki mowy (VAD) dla nowych odcinków (43204345647) ([5aa28f4](https://github.com/tiriana/ciezko-na-sercu-web/commit/5aa28f42d4808493e65681750cfd96b0331ee369))
+* transkrypcja z bloków mowy dla dwóch odcinków (43204798786) ([d28c86f](https://github.com/tiriana/ciezko-na-sercu-web/commit/d28c86f7a9a9721fe1185eb2ce177b27db02aea9))
+
+### Bug Fixes
+
+* komplet części liczony z tablicy macierzy (plan zwraca listę jobów) ([4447999](https://github.com/tiriana/ciezko-na-sercu-web/commit/44479996e7be1b305f3f832df13b2e19496c2f09))
+
 ## [1.75.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.74.0...v1.75.0) (2026-11-12)
 
 ### Features
