@@ -1819,14 +1819,6 @@ a {
   margin-top: 34px;
 }
 
-.tracks__kind {
-  color: var(--accent);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
 .tracks__row--entry .tracks__time {
   color: var(--muted);
 }
@@ -1836,19 +1828,17 @@ a {
 .tracks__row--entry td {
   padding-top: 7px;
   padding-bottom: 7px;
+  vertical-align: middle;
 }
 
-.tracks__row--entry .tracks__kind {
+/* Ten sam trójkąt co znacznik wejścia na osi odtwarzacza — typ wiersza bez słowa. */
+.tracks__entry-kind {
   flex: none;
-  align-self: center;
-  padding: 1px 6px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--muted);
-  font-size: 9.5px;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  white-space: nowrap;
+  width: 0;
+  height: 0;
+  border-top: 5px solid var(--line-strong);
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
 
 .tracks__row--entry .tracks__entry-line {

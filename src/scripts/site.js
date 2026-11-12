@@ -292,10 +292,10 @@ const readMarkers = () => {
     const time = Number(row.dataset.spanStart);
     if (!Number.isFinite(time)) continue;
     const cell = row.children[1];
-    // Etykieta wejścia siedzi w drugiej komórce razem z nagłówkiem „Wejście” i linkiem
+    // Etykieta wejścia siedzi w drugiej komórce razem z trójkątem i linkiem
     // „Zgłoś”, więc bierzemy z klonu tylko tekst bez tych dwóch rzeczy.
     const clone = cell?.cloneNode(true);
-    clone?.querySelectorAll('.tracks__kind, [data-report-link]').forEach((node) => node.remove());
+    clone?.querySelectorAll('.tracks__entry-kind, [data-report-link]').forEach((node) => node.remove());
     const label =
       row.dataset.trackLabel?.trim() ||
       clone?.querySelector('.tracks__entry-label')?.textContent?.trim() ||

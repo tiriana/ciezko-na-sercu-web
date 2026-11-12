@@ -440,8 +440,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                               pełna lista zajmowała więcej miejsca niż wnosiła. Pełny tytuł
                               zostaje w `title`, więc nadal jest dostępny z klawiatury i myszą. */}
                           <div class="tracks__entry-line">
-                            <span class="tracks__kind">Wejście · {pluralThreads(block.topics.length)}</span>
                             <div class="tracks__entry-label" title={block.topics[0].label}>{block.topics[0].label}</div>
+                            <span
+                              class="tracks__entry-kind"
+                              role="img"
+                              aria-label={`Wejście · ${pluralThreads(block.topics.length)}`}
+                              title={`Wejście · ${pluralThreads(block.topics.length)}`}
+                            />
                             <ReportLink
                               element={`${entry.slug}|wejście:${block.topics[0].start}|${block.topics[0].label}`}
                               class="report-link--row"
@@ -476,8 +481,8 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         </td>
                         <td>
                           <div class="tracks__entry-line">
-                            <span class="tracks__kind">Wejście</span>
                             <div class="tracks__entry-label" title={block.label}>{block.label}</div>
+                            <span class="tracks__entry-kind" role="img" aria-label="Wejście" title="Wejście" />
                             <ReportLink element={`${entry.slug}|wejście:${block.start}|${block.label}`} class="report-link--row" />
                           </div>
                           {block.end > block.start && <FragmentProgress />}
