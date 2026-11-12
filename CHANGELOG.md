@@ -1,3 +1,11 @@
+## [1.62.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.62.0...v1.62.1) (2026-11-12)
+
+### Bug Fixes
+
+* etykiety wejść zwięzłe, 1–2 tematy zamiast wyliczanki ([14ca852](https://github.com/tiriana/ciezko-na-sercu-web/commit/14ca852817b52f5b08f7211200fbd1664f218d25))
+* **labels:** simplify troneum label, wip ([a2d64b6](https://github.com/tiriana/ciezko-na-sercu-web/commit/a2d64b6534a36599d632c9d117796e5412e2334e))
+* naprawa utworów i wejść bez opisu (4d8fa861-ceb5-4144-a023-5cf69a9cb951, 43179582433) ([6b27d0a](https://github.com/tiriana/ciezko-na-sercu-web/commit/6b27d0a9d87aacac2f624546562bed32fc05d3aa))
+
 ## [1.62.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.61.2...v1.62.0) (2026-11-12)
 
 ### Features
