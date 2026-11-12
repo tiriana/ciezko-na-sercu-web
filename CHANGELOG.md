@@ -1,3 +1,9 @@
+## [1.70.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.69.0...v1.70.0) (2026-11-12)
+
+### Features
+
+* **ui:** trójkąt zamiast słowa WEJŚCIE i wyśrodkowany wiersz wejścia ([a770052](https://github.com/tiriana/ciezko-na-sercu-web/commit/a77005200b100a66bc1999aa4deac2a22ba79b04))
+
 ## [1.69.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.68.0...v1.69.0) (2026-11-12)
 
 ### Features
