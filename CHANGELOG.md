@@ -1,3 +1,13 @@
+## [1.45.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.44.0...v1.45.0) (2026-11-12)
+
+### Features
+
+* rozpoznawanie #TODO z kontekstu i chromy (Deezer); intro i utwory odcinka 11 XI ([ca003de](https://github.com/tiriana/ciezko-na-sercu-web/commit/ca003de3539759610be889f3d09f572db0208e2d)), closes [#TODO](https://github.com/tiriana/ciezko-na-sercu-web/issues/TODO)
+
+### Bug Fixes
+
+* transkrypcja i przeliczone czasy tematów (43129103312) ([a441562](https://github.com/tiriana/ciezko-na-sercu-web/commit/a441562b933f61e4d7af8b961daa3f82f1fcdbd1))
+
 ## [1.44.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.43.1...v1.44.0) (2026-11-12)
 
 ### Features
