@@ -5,8 +5,8 @@ name: watchdog
 # wdrożenie, gdy odpowiedzi nie wracają do normy — bez czekania na zgłoszenie.
 
 on:
-  schedule:
-    - cron: '*/10 * * * *'
+  # schedule:
+  #   - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:
