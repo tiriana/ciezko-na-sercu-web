@@ -933,7 +933,7 @@
               </div>
             </div>
             <p class="wave-hint">
-              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; Shift+N = wejście, Shift+T = utwór; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń, Shift+Enter = ok; początek tnie poprzedni fragment
+              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; Shift+N = wejście, Shift+T = utwór; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń, Shift+Enter = ok, N/P = następny/poprzedni bez ok; początek tnie poprzedni fragment
             </p>
           </section>
 
@@ -2882,6 +2882,49 @@
         updateNav();
       };
 
+      // Skok do następnego/poprzedniego znacznika bez „ok”: wybiera go (podświetlenie
+      // i panel edycji), a kursor ustawia na jego czasie. Pamięć jak w `jumpToMarker`,
+      // bo po ustawieniu kursora kolejne naciśnięcie liczy się od wybranego znacznika.
+      const reviewJump = { time: null, direction: 0, at: 0 };
+
+      const jumpToUnreviewed = (direction) => {
+        const pending = collectMarkers()
+          .filter((marker) => !marker.reviewed)
+          .sort((left, right) => left.time - right.time);
+        if (pending.length === 0) return;
+
+        const chained =
+          reviewJump.time !== null &&
+          reviewJump.direction === direction &&
+          performance.now() - reviewJump.at < JUMP_CHAIN_MS;
+        const anchor = chained ? reviewJump.time : $('audio').currentTime;
+        if (!Number.isFinite(anchor)) return;
+
+        const target =
+          direction < 0
+            ? pending.findLast((marker) => marker.time < anchor - 0.01)
+            : pending.find((marker) => marker.time > anchor + 0.01);
+        if (!target) {
+          reviewJump.time = null;
+          return;
+        }
+
+        reviewJump.time = target.time;
+        reviewJump.direction = direction;
+        reviewJump.at = performance.now();
+        selectMarker(target);
+        const audio = $('audio');
+        jumpInFlight = true;
+        audio.currentTime = target.time;
+        setTimeout(() => {
+          jumpInFlight = false;
+        }, 120);
+        $('clock').textContent = fmt(audio.currentTime);
+        syncPlayhead();
+        drawWave();
+        updateNav();
+      };
+
       // ——— Wtapianie znacznika w poprzedni ———
 
       // Dwie etykiety sklejamy tylko wtedy, gdy naprawdę się różnią — powtórzone
@@ -4065,6 +4108,12 @@
         } else if (event.key === ',' || event.key === '.') {
           event.preventDefault();
           jumpToMarker(event.key === ',' ? -1 : 1);
+        } else if (!event.shiftKey && !event.ctrlKey && !event.metaKey && !event.altKey && event.code === 'KeyN') {
+          event.preventDefault();
+          jumpToUnreviewed(1);
+        } else if (!event.shiftKey && !event.ctrlKey && !event.metaKey && !event.altKey && event.code === 'KeyP') {
+          event.preventDefault();
+          jumpToUnreviewed(-1);
         } else if (event.shiftKey && event.code === 'KeyN') {
           event.preventDefault();
           addTopicAt($('audio').currentTime);
