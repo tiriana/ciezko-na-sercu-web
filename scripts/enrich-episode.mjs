@@ -417,11 +417,19 @@ for (const entry of selected) {
   const overridePath = `data/overrides/${entry.id}.json`;
   const override = await readJson(overridePath).catch(() => null);
   const addedTopics = override?.addTopics ?? [];
+  // Edytor zapisuje poprawki jako `newLabel` w `override.topics` — tam `#TODO`
+  // dopisuje się na końcu gotowego opisu („… #TODO popraw ten opis”).
+  const labelFixes = (override?.topics ?? []).filter((fix) => fix.newLabel !== undefined);
+  const currentLabel = (topic, kind) => (kind === 'newLabel' ? topic.newLabel : topic.label);
   const needsSummary = force || !episode.summary;
   const relabel = [
-    ...topics.map((topic) => ({ topic, source: 'episode' })),
-    ...addedTopics.map((topic) => ({ topic, source: 'override' })),
-  ].filter(({ topic }) => needsLabel(topic.label) || (relabelRaw && looksRaw(topic.label)));
+    ...topics.map((topic) => ({ topic, kind: 'episode' })),
+    ...addedTopics.map((topic) => ({ topic, kind: 'added' })),
+    ...labelFixes.map((topic) => ({ topic, kind: 'newLabel' })),
+  ].filter(({ topic, kind }) => {
+    const text = currentLabel(topic, kind);
+    return needsLabel(text) || (relabelRaw && looksRaw(text));
+  });
   const promptTopics = [...topics, ...addedTopics].filter(
     (topic, index, all) => all.findIndex((other) => other.start === topic.start) === index
   );
