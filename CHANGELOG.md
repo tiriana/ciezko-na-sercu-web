@@ -1,3 +1,9 @@
+## [1.44.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.43.1...v1.44.0) (2026-11-12)
+
+### Features
+
+* bloki mowy (VAD) dla nowych odcinków (43128700963) ([469fa29](https://github.com/tiriana/ciezko-na-sercu-web/commit/469fa2990f0ee7c9f8ebd3eef9516839ce4d75aa))
+
 ## [1.43.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.43.0...v1.43.1) (2026-11-12)
 
 ### Bug Fixes
