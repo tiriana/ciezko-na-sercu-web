@@ -1,3 +1,9 @@
+## [1.69.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.68.0...v1.69.0) (2026-11-12)
+
+### Features
+
+* **ui:** plakietka wejścia zamiast zlewającego się napisu ([6b0b0f8](https://github.com/tiriana/ciezko-na-sercu-web/commit/6b0b0f85c12e1344dc5fb8b218e77fbef5ab9b52))
+
 ## [1.68.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.67.0...v1.68.0) (2026-11-12)
 
 ### Features
