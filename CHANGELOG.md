@@ -1,3 +1,9 @@
+## [1.48.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.47.2...v1.48.0) (2026-11-12)
+
+### Features
+
+* **edytor:** szkic autozapisywany na serwerze i dziennik ostatnich 20 zapisów ([50a6d41](https://github.com/tiriana/ciezko-na-sercu-web/commit/50a6d41cccda1ddc9e36d06894be5f2950b1e684))
+
 ## [1.47.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.47.1...v1.47.2) (2026-11-12)
 
 ### Bug Fixes
