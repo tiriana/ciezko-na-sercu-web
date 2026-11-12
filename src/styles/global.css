@@ -1831,22 +1831,35 @@ a {
   vertical-align: middle;
 }
 
-/* Ten sam trójkąt co znacznik wejścia na osi odtwarzacza — typ wiersza bez słowa. */
+/* Dymek mowy: wejście to zapowiedź, a nie rozwijana sekcja — trójkąt czytał się jak chevron. */
 .tracks__entry-kind {
   flex: none;
-  width: 0;
-  height: 0;
-  border-top: 5px solid var(--line-strong);
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+  display: inline-flex;
+  color: var(--muted);
+  opacity: 0.85;
+}
+
+.tracks__entry-kind svg {
+  width: 13px;
+  height: 13px;
+}
+
+.tracks__entry-kind path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
 }
 
 .tracks__row--entry .tracks__entry-line {
-  gap: 10px;
+  width: fit-content;
+  max-width: 100%;
+  gap: 8px;
   align-items: center;
 }
 
 .tracks__row--entry .tracks__entry-label {
+  flex: 0 1 auto;
   color: var(--text);
   font-size: 13.5px;
 }

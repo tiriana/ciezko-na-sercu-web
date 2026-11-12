@@ -446,7 +446,11 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                               role="img"
                               aria-label={`Wejście · ${pluralThreads(block.topics.length)}`}
                               title={`Wejście · ${pluralThreads(block.topics.length)}`}
-                            />
+                            >
+                              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                <path d="M4 3.5h8A1.5 1.5 0 0 1 13.5 5v5A1.5 1.5 0 0 1 12 11.5H8l-3 2.5v-2.5H4A1.5 1.5 0 0 1 2.5 10V5A1.5 1.5 0 0 1 4 3.5Z" />
+                              </svg>
+                            </span>
                             <ReportLink
                               element={`${entry.slug}|wejście:${block.topics[0].start}|${block.topics[0].label}`}
                               class="report-link--row"
@@ -482,7 +486,11 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         <td>
                           <div class="tracks__entry-line">
                             <div class="tracks__entry-label" title={block.label}>{block.label}</div>
-                            <span class="tracks__entry-kind" role="img" aria-label="Wejście" title="Wejście" />
+                            <span class="tracks__entry-kind" role="img" aria-label="Wejście" title="Wejście">
+                              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                <path d="M4 3.5h8A1.5 1.5 0 0 1 13.5 5v5A1.5 1.5 0 0 1 12 11.5H8l-3 2.5v-2.5H4A1.5 1.5 0 0 1 2.5 10V5A1.5 1.5 0 0 1 4 3.5Z" />
+                              </svg>
+                            </span>
                             <ReportLink element={`${entry.slug}|wejście:${block.start}|${block.label}`} class="report-link--row" />
                           </div>
                           {block.end > block.start && <FragmentProgress />}
