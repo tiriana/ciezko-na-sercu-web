@@ -1,3 +1,9 @@
+## [1.46.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.46.0...v1.46.1) (2026-11-12)
+
+### Bug Fixes
+
+* **edytor:** nadzorca zwalnia port i przejmuje pałeczkę po poprzednim procesie ([7c71342](https://github.com/tiriana/ciezko-na-sercu-web/commit/7c71342579a4acac0cf67279ca1faa9fd62826fd))
+
 ## [1.46.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.45.1...v1.46.0) (2026-11-12)
 
 ### Features
