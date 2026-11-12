@@ -5,46 +5,47 @@ digraph pipeline {
   edge [fontname="DejaVu Sans", fontsize=7.5, color="#666666", arrowsize=0.65];
 
   cron_detect [label="cron środa\n*/10 00–01 UTC\ni 04:17 UTC", shape=note, fillcolor="#eef4fb"];
-  cron_daily  [label="cron codziennie\n12:00 UTC", shape=note, fillcolor="#eef4fb"];
-  cron_vp     [label="cron codziennie\n04:30 UTC", shape=note, fillcolor="#eef4fb"];
+  cron_night  [label="cron: 04:30 / 05:10 (pon)\n06:00 / 12:00 UTC", shape=note, fillcolor="#eef4fb"];
   push_main   [label="push na main", shape=note, fillcolor="#fdeeee"];
   push_feat   [label="push na feat/**", shape=note, fillcolor="#fdeeee"];
 
   detect     [label="detect-episode\nnowy wpis na stronie", fillcolor="#e6efff"];
   refresh    [label="refresh-catalog\nlista + zaślepka", fillcolor="#e6efff"];
   spans      [label="spans\nVAD: bloki mowy (~2 min)", fillcolor="#e6efff"];
-  trans_d    [label="transcribe-daily\nzaległości", fillcolor="#e6efff"];
   transcribe [label="transcribe\nmacierz: 4–6 jobów\npo ~6 bloków mowy", fillcolor="#e6efff"];
   identify   [label="identify\nShazam: siatka 60 s", fillcolor="#e6efff"];
-  voiceprint [label="voiceprint\nprofil głosu", fillcolor="#e6efff"];
+  nightly    [label="nightly\n4 joby: transkrypcja,\nprofil głosu, streszczenia,\ntytuły", fillcolor="#e6efff"];
+  voiceprint [label="voiceprint (job)\nprofil głosu", fillcolor="#e6efff"];
+  enrich     [label="enrich (job)\nstreszczenie + wejścia", fillcolor="#e6efff"];
 
   commit    [label="commit danych\npush-data.sh", fillcolor="#f0f0f0"];
   release   [label="release\nsemantic-release", fillcolor="#eaf5ec"];
   deploy    [label="deploy\nbuild + Cloudflare Pages", fillcolor="#eaf5ec"];
-  preview   [label="preview", fillcolor="#eaf5ec"];
   pages     [label="ciezko-na-sercu.pages.dev", shape=component, fillcolor="#fdf3e3"];
 
   cron_detect -> detect [label="sondowanie"];
-  cron_daily  -> trans_d [label="wybór"];
-  cron_vp     -> voiceprint [label="kolejka"];
+  cron_night  -> nightly [label="pory"];
 
   detect  -> refresh    [label="audio 200"];
-  refresh -> spans     [label="dispatch"];
+  refresh -> spans      [label="dispatch"];
   spans   -> transcribe [label="dispatch"];
-  trans_d -> transcribe [label="dispatch (zaległości)"];
-  transcribe -> identify   [label="dispatch"];
-  transcribe -> voiceprint [label="dispatch"];
 
-  refresh -> commit; spans -> commit; transcribe -> commit; identify -> commit; voiceprint -> commit;
+  nightly -> transcribe [label="job: zaległości\n(dispatch spans)"];
+  nightly -> voiceprint [label="job"];
+  nightly -> enrich     [label="job"];
+
+  transcribe -> identify   [label="dispatch"];
+  transcribe -> voiceprint [label="dispatch (stage=voiceprint)"];
+  identify   -> enrich     [label="dispatch (stage=enrich)"];
+
+  refresh -> commit; spans -> commit; transcribe -> commit; identify -> commit;
+  voiceprint -> commit; enrich -> commit;
 
   push_main -> release [label="commit z prefiksem"];
-  release   -> deploy  [label="tag + wersja"];
-  push_main -> deploy  [label="push człowieka"];
-
+  release   -> deploy  [label="tylko nowe wydanie"];
+  push_feat -> deploy [label="push gałęzi (podgląd)"];
   commit  -> deploy  [label="dispatch (GITHUB_TOKEN\nnie wyzwala workflow)"];
   deploy  -> pages;
-  push_feat -> preview [label="push gałęzi"];
-  preview -> pages [label="adres podglądu"];
 
   manual [label="workflow_dispatch — każdy workflow da się uruchomić ręcznie", shape=note, fillcolor="#f7f7f7"];
   { rank=same; manual; push_feat; }

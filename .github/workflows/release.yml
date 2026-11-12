@@ -27,15 +27,25 @@ jobs:
         with:
           cache: true
       - run: npm ci
-      - run: npx semantic-release
+      - name: Wersja z typów commitów
+        id: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          before=$(git rev-parse HEAD)
+          npx semantic-release
+          if [ "$(git rev-parse HEAD)" != "$before" ]; then
+            echo "released=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "released=false" >> "$GITHUB_OUTPUT"
+          fi
       # Commit z podbitą wersją powstał z tokena Actions, więc sam nie uruchomi deployu.
       # Dispatch przechodzi przez tę blokadę i publikuje stronę już z nowym numerem.
-      # `always()`: awaria wersjonowania nie może zatrzymać publikacji kodu — deploy
-      # pójdzie z numerem, jaki akurat leży w `package.json`.
+      # Deploy idzie tylko wtedy, gdy wydanie faktycznie powstało — push bez releasu
+      # nie zmienia strony. Po awarii wersjonowania publikujemy mimo to, żeby kod
+      # wyszedł z numerem, jaki akurat leży w `package.json`.
       - name: Deploy po wydaniu
-        if: always()
+        if: always() && (steps.release.outcome == 'failure' || steps.release.outputs.released == 'true')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run deploy.yml --ref main -f version="$(node -p "require('./package.json').version")"

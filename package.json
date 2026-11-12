@@ -32,6 +32,7 @@
     "test:llm": "node --test scripts/lib/llm.test.mjs",
     "tags": "node scripts/fix-tags.mjs",
     "test:tags": "node --test src/lib/tags.test.mjs",
+    "test:matrix": "node --test scripts/matrix-ids.test.mjs",
     "verify:migration": "node scripts/build-episode.mjs --from-legacy --check",
     "metadata": "node scripts/fetch-episode-metadata.mjs",
     "episode": "node scripts/build-episode.mjs",

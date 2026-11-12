@@ -117,6 +117,7 @@ jobs:
           retention-days: 14
 
       - name: Commit
+        id: commit
         run: |
           bash scripts/push-data.sh "fix: rozpoznane utwory Shazamem (${GITHUB_RUN_ID})" data/episodes data/overrides
 
@@ -125,7 +126,20 @@ jobs:
         run: node scripts/status-all.mjs
 
       # Push z GITHUB_TOKEN nie uruchamia workflow, więc deploy zamawiamy ręcznie.
+      - name: Zamów streszczenie i nazwy wejść
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EPISODES: ${{ inputs.episodes }}
+        run: |
+          if [ -n "$EPISODES" ]; then
+            gh workflow run nightly.yml --ref main -f stage=enrich -f episodes="$EPISODES"
+          else
+            gh workflow run nightly.yml --ref main -f stage=enrich
+          fi
+
       - name: Deploy po aktualizacji danych
+        if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
