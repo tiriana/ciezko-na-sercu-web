@@ -237,18 +237,39 @@ const finalPrompt = (episode, notes, topics, needsTitle = false) => {
 
 // Etykieta dla jednego wejścia: model zbiorczy odpowiada tylko za te, które
 // dostał z opisem, więc miejsca z `#TODO` pytamy osobno, z transkryptem wokół.
-const labelPrompt = (episode, topic, context) =>
-  [
+// `#TODO` z edytora dopisuje się do gotowego opisu, gdy redakcja chce go poprawić —
+// w takim wypadku model dostaje szkic, a nie puste miejsce.
+const draftLabel = (label) =>
+  String(label ?? '')
+    .replace(/#TODO[^\n]*/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+const labelPrompt = (episode, topic, context) => {
+  const draft = needsLabel(topic.label) ? draftLabel(topic.label) : '';
+  return [
     `Audycja „Ciężko na sercu" (Trójka) z ${episode.date}.`,
     '',
     `FRAGMENT TRANSKRYPTU WOKÓŁ WEJŚCIA ZACZYNAJĄCEGO SIĘ O ${stamp(topic.start)}:`,
     context,
-    '',
-    'Zadanie: nazwij to wejście krótko po polsku (4–10 słów) — czego dotyczy wypowiedź prowadzącego.',
+    ...(draft
+      ? [
+          '',
+          'OBECNY OPIS (szkic do poprawy):',
+          draft,
+          '',
+          'Zadanie: popraw ten opis — zachowaj nazwy wykonawców, tytuły i albumy, usuń znacznik #TODO,',
+          'zejdź do 4–12 słów i nie dodawaj faktów, których nie ma w szkicu ani w transkrypcie.',
+        ]
+      : [
+          '',
+          'Zadanie: nazwij to wejście krótko po polsku (4–10 słów) — czego dotyczy wypowiedź prowadzącego.',
+        ]),
     'Bez wstępów, bez cudzysłowów, bez powtarzania numeru czasu.',
     '',
     'Odpowiedz wyłącznie JSON-em: {"label": "..."}',
   ].join('\n');
+};
 
 const topicContext = (transcript, start, end) =>
   (transcript.segments ?? [])
