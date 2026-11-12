@@ -130,7 +130,7 @@ jobs:
               fi
             fi
 
-            episode_code=$(curl -sS --max-time 20 -o /dev/null -w '%{http_code}' "$BASE_URL$EPISODE_PATH" || echo 000)
+            episode_code=$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$BASE_URL$EPISODE_PATH" || echo 000)
             [ "$episode_code" = 200 ] || problems="$problems $EPISODE_PATH: HTTP $episode_code."
 
             if [ -z "$problems" ]; then

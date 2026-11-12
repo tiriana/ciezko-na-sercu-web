@@ -22,6 +22,7 @@ const TYPES = {
   'zly-start': 'Zły start',
   'zle-nazwisko': 'Złe nazwisko',
   'znieksztalcony-tekst': 'Zniekształcony tekst',
+  nierozpoznany: 'Nierozpoznany utwór',
   inne: 'Inne',
 };
 
@@ -42,10 +43,10 @@ const chipKind = (element) => {
 
 const chipsFor = (element) => CHIP_SETS[chipKind(element)] ?? [];
 
-const renderChips = (bubble, element) => {
+const renderChips = (bubble, element, mode) => {
   const container = bubble.querySelector('.report-bubble__chips');
   container.dataset.kind = chipKind(element);
-  container.hidden = chipKind(element) === 'odcinek';
+  container.hidden = mode === 'unknown-track' || chipKind(element) === 'odcinek';
   container.replaceChildren(
     ...chipsFor(element).map((type) => {
       const chip = document.createElement('button');
@@ -229,8 +230,8 @@ const ensureBubble = () => {
     clearTimeout(session.timer);
 
     // Cała audycja: tekst to całe zgłoszenie, więc idzie dopiero po „Wyślij”.
-    if (session.mode === 'episode') {
-      saveDraft(session.element, text.value);
+    if (session.mode === 'episode' || session.mode === 'unknown-track') {
+      if (session.mode === 'episode') saveDraft(session.element, text.value);
       updateSendState(session);
       return;
     }
@@ -245,14 +246,19 @@ const ensureBubble = () => {
     }, DRAFT_DELAY);
   });
 
-  bubble.querySelector('.report-send').addEventListener('click', () => sendEpisode(state.session));
+  bubble.querySelector('.report-send').addEventListener('click', () => {
+    const session = state.session;
+    if (session?.mode === 'unknown-track') submit(session, 'nierozpoznany');
+    else sendEpisode(session);
+  });
 
   text.addEventListener('keydown', (event) => {
     if (event.key !== 'Enter' || !(event.metaKey || event.ctrlKey)) return;
     const session = state.session;
-    if (!session || session.mode !== 'episode') return;
+    if (!session || !['episode', 'unknown-track'].includes(session.mode)) return;
     event.preventDefault();
-    sendEpisode(session);
+    if (session.mode === 'unknown-track') submit(session, 'nierozpoznany');
+    else sendEpisode(session);
   });
 
   document.body.append(bubble);
@@ -271,7 +277,7 @@ const bubbleText = () => state.bubble.querySelector('.report-bubble__text');
 
 const updateSendState = (session) => {
   if (state.session !== session) return;
-  state.bubble.querySelector('.report-send').disabled = bubbleText().value.trim() === '';
+  state.bubble.querySelector('.report-send').disabled = bubbleText().value.trim() === '' || session.sending;
 };
 
 const setStatus = (session, message) => {
@@ -316,20 +322,38 @@ const openBubble = (link) => {
     link,
     element: link.dataset.reportElement ?? '',
     target: link.dataset.reportTarget ?? '',
-    mode: chipKind(link.dataset.reportElement ?? '') === 'odcinek' ? 'episode' : 'chips',
+    mode: link.dataset.reportVariant === 'unknown-track'
+      ? 'unknown-track'
+      : chipKind(link.dataset.reportElement ?? '') === 'odcinek' ? 'episode' : 'chips',
     id: uuid(),
     type: null,
     seq: 0,
     saved: false,
     attempted: false,
     signalled: false,
+    sending: false,
     timer: 0,
   };
   state.session = session;
 
-  bubble.querySelector('#report-bubble-target').textContent = session.target;
-  renderChips(bubble, session.element);
-  bubble.querySelector('.report-bubble__actions').hidden = session.mode !== 'episode';
+  const title = bubble.querySelector('.report-bubble__eyebrow');
+  const target = bubble.querySelector('#report-bubble-target');
+  const textLabel = bubble.querySelector('label[for="report-bubble-text"]');
+  title.textContent = session.mode === 'unknown-track' ? 'Wiesz co to za utwór?' : 'Co jest nie tak?';
+  target.textContent = session.target;
+  target.hidden = session.mode === 'unknown-track';
+  bubble.setAttribute(
+    'aria-labelledby',
+    session.mode === 'unknown-track' ? 'report-bubble-title' : 'report-bubble-title report-bubble-target'
+  );
+  textLabel.textContent = session.mode === 'unknown-track'
+    ? 'Wykonawca, tytuł lub album'
+    : 'Co jeszcze warto wiedzieć?';
+  bubbleText().placeholder = session.mode === 'unknown-track'
+    ? 'Podaj wykonawcę, tytuł lub album…'
+    : 'Możesz dopisać szczegóły…';
+  renderChips(bubble, session.element, session.mode);
+  bubble.querySelector('.report-bubble__actions').hidden = !['episode', 'unknown-track'].includes(session.mode);
   bubbleText().value = session.mode === 'episode' ? readDraft(session.element) : '';
   updateSendState(session);
   bubble.querySelector('.report-bubble__status').textContent = '';
@@ -338,7 +362,7 @@ const openBubble = (link) => {
   bubble.hidden = false;
   placeBubble();
   // W trybie audycji nie ma chipa, który mógłby dostać focus — wchodzimy w pole tekstu.
-  if (session.mode === 'episode') bubbleText().focus({ preventScroll: true });
+  if (['episode', 'unknown-track'].includes(session.mode)) bubbleText().focus({ preventScroll: true });
   else bubble.querySelector('[data-report-type]')?.focus({ preventScroll: true });
 };
 
@@ -379,6 +403,7 @@ const closeBubble = ({ focus = true, signal = true } = {}) => {
 };
 
 const submit = (session, type) => {
+  if (session.mode === 'unknown-track' && !bubbleText().value.trim()) return;
   const report = {
     element: session.element,
     type,
@@ -388,6 +413,10 @@ const submit = (session, type) => {
   };
   const seq = ++session.seq;
   session.attempted = true;
+  if (session.mode === 'unknown-track') {
+    session.sending = true;
+    updateSendState(session);
+  }
   setStatus(session, 'zapisywanie…');
 
   attempt(report)
@@ -397,12 +426,17 @@ const submit = (session, type) => {
       if (session.saved) return;
       session.saved = true;
       showToast();
+      if (session.mode === 'unknown-track') closeBubble({ signal: false });
     })
     .catch((error) => {
       if (seq !== session.seq) return;
       // Limit na jeden element nie mija po odświeżeniu — kolejka tylko by go powtarzała.
       if (isRejected(error)) {
         setStatus(session, REJECTED);
+        if (session.mode === 'unknown-track') {
+          session.sending = false;
+          updateSendState(session);
+        }
         return;
       }
       enqueue(report);
@@ -410,6 +444,10 @@ const submit = (session, type) => {
         session,
         navigator.onLine ? 'spróbujemy później' : 'zapisane lokalnie, wyślemy później'
       );
+      if (session.mode === 'unknown-track') {
+        session.sending = false;
+        updateSendState(session);
+      }
     });
 };
 

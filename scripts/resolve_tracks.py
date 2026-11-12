@@ -206,22 +206,59 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
 
     override_path = ROOT / "data" / "overrides" / f"{episode_id}.json"
     override = read_json(override_path) or {"version": 1}
-    tracks = (override.get("addTracks") or []) + (override.get("tracks") or [])
-    # Ręcznie dodany utwór ma flagę `unrecognized`; starsze wpisy mają jeszcze tytuł #TODO.
-    todo = [t for t in tracks if t.get("unrecognized") or re.search(r"#TODO", t.get("title") or "")]
-    if not todo:
-        return
-
-    episode = read_json(ROOT / "data" / "episodes" / f"{episode_id}.json") or {}
+    episode_path = ROOT / "data" / "episodes" / f"{episode_id}.json"
+    episode = read_json(episode_path) or {}
     transcript = read_json(ROOT / "data" / "transcripts" / f"{episode_id}.json") or {}
     scale = 1.0
     if episode.get("audioDurationSec") and episode.get("durationSec"):
         scale = episode["durationSec"] / episode["audioDurationSec"]
 
-    print(f"{entry['slug']}: {len(todo)} utworów bez rozpoznania")
+    # Ręcznie dodany utwór ma flagę `unrecognized`; starsze wpisy mają jeszcze tytuł #TODO.
+    override_gaps = [
+        track
+        for track in (override.get("addTracks") or []) + (override.get("tracks") or [])
+        if track.get("unrecognized") or re.search(r"#TODO", track.get("title") or "")
+    ]
+    # Shazam czasem rozpoznaje tylko wykonawcę — taki utwór z epizodu też jest do naprawy.
+    fixed_starts = {
+        round(float(fix["start"]), 2)
+        for fix in override.get("tracks", [])
+        if fix.get("newTitle") and fix.get("start") is not None
+    }
+    episode_gaps = [
+        track
+        for track in episode.get("tracks", [])
+        if not (track.get("title") or "").strip()
+        or track.get("unrecognized")
+        or re.search(r"#TODO", track.get("title") or "")
+    ]
+    episode_gaps = [track for track in episode_gaps if round(float(track["start"]), 2) not in fixed_starts]
+
+    # Zbiór tego, co w tym odcinku jest już rozpoznane — chroma czasem wskazuje
+    # ten sam utwór drugi raz, a wtedy wolałaby go dopisać obok istniejącego.
+    known = set()
+
+    def key(artist, title):
+        return ((artist or "").strip().lower(), (title or "").strip().lower())
+
+    for track in episode.get("tracks", []):
+        title = (track.get("title") or "").strip()
+        if title and not re.search(r"#TODO", title):
+            known.add(key(track.get("artist"), title))
+    for track in (override.get("addTracks") or []) + (override.get("tracks") or []):
+        title = (track.get("newTitle") or track.get("title") or "").strip()
+        artist = track.get("newArtist") or track.get("artist")
+        if title and not re.search(r"#TODO", title):
+            known.add(key(artist, title))
+
+    if not override_gaps and not episode_gaps:
+        return
+
+    print(f"{entry['slug']}: {len(override_gaps) + len(episode_gaps)} utworów bez rozpoznania")
     audio = None
-    changed = False
-    for gap in sorted(todo, key=lambda t: t["start"]):
+
+    def resolve(gap: dict):
+        nonlocal audio
         start_player = float(gap["start"])
         length = float(gap.get("durationSec") or 0)
         start_real = start_player / scale if scale else start_player
@@ -231,44 +268,62 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
         candidate = candidate_from_context(text)
         if not candidate:
             print("    brak kontekstu / modelu — zostawiam")
-            continue
+            return None
         print(f"    kontekst: {candidate['artist']} | {candidate['album']} | {candidate['title']}")
 
         query = " ".join(part for part in (candidate["artist"], candidate["album"]) if part)
         found = deezer_tracks(query)
         if not found:
             print("    brak albumu w Deezerze — zostawiam")
-            continue
+            return None
 
         if audio is None:
             if not entry.get("audioUrl"):
                 print("    brak adresu audio — zostawiam")
-                continue
+                return None
             audio = ffmpeg_pcm(entry["audioUrl"])
         from_sample = int(start_real * RATE)
         gap_audio = audio[from_sample:from_sample + int(length * RATE)]
         ranked = match_gap(gap_audio, found)
+        repeated = [item for item in ranked if key(item["artist"], item["title"]) in known]
+        if repeated:
+            print("    odrzucam kandydatów, którzy już są w tym odcinku")
+        ranked = [item for item in ranked if key(item["artist"], item["title"]) not in known]
         if not ranked:
             print("    brak podglądów do porównania — zostawiam")
-            continue
+            return None
 
         best = ranked[0]
         second = ranked[1]["score"] if len(ranked) > 1 else 0.0
         print(f"    chroma: {best['score']:+.3f} (drugi {second:+.3f}) → {best['artist']} — {best['title']} [{best['album']}]")
         if best["score"] < min_score or best["score"] - second < 0.05:
             print("    za słabe dopasowanie — zostawiam do ręcznej decyzji")
+            return None
+
+        return best, ranked, candidate, start_player, length
+
+    override_changed = False
+    for gap in sorted(override_gaps, key=lambda t: t["start"]):
+        result = resolve(gap)
+        if not result:
             continue
+        best, ranked, candidate, start_player, length = result
 
         gap["artist"] = best["artist"]
         gap["title"] = best["title"]
         gap["album"] = best["album"]
         gap.pop("unrecognized", None)
+        known.add(key(best["artist"], best["title"]))
         if candidate["title"] and candidate["title"].lower() == str(best["title"]).lower():
             print("    tytuł zgodny z zapowiedzią")
-        changed = True
+        override_changed = True
 
         # Dwie piosenki w jednym bloku: drugie mocne trafienie z innym przesunięciem.
-        strong = [item for item in ranked[1:] if item["score"] >= 0.9 and item["at"] > best["at"] + 30]
+        strong = [
+            item
+            for item in ranked[1:]
+            if item["score"] >= 0.9 and item["at"] > best["at"] + 30 and key(item["artist"], item["title"]) not in known
+        ]
         if strong:
             extra = strong[0]
             print(f"    drugi utwór w bloku: {extra['artist']} — {extra['title']}")
@@ -279,12 +334,29 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
                 "start": round(start_player + float(best.get("duration") or 0), 2),
                 "durationSec": round(length - float(best.get("duration") or 0), 2),
             })
+            known.add(key(extra["artist"], extra["title"]))
             gap["durationSec"] = round(float(best.get("duration") or length), 2)
 
-    if changed and write:
+    episode_changed = False
+    for gap in sorted(episode_gaps, key=lambda t: t["start"]):
+        result = resolve(gap)
+        if not result:
+            continue
+        best = result[0]
+        gap["artist"] = best["artist"]
+        gap["title"] = best["title"]
+        gap["album"] = best["album"]
+        gap.pop("unrecognized", None)
+        known.add(key(best["artist"], best["title"]))
+        episode_changed = True
+
+    if override_changed and write:
         write_json(override_path, override)
         print(f"  zapisane: {override_path}")
-    elif changed:
+    if episode_changed and write:
+        write_json(episode_path, episode)
+        print(f"  zapisane: {episode_path}")
+    if (override_changed or episode_changed) and not write:
         print("  bez --write nic nie zapisałem")
 
 

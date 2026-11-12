@@ -1,0 +1,122 @@
+name: watchdog
+
+# Strona potrafi zniknąć na chwilę w trakcie wdrożenia albo tuż po nim.
+# Ten przebieg sprawdza produkcję co 10 minut i sam zamawia ponowne
+# wdrożenie, gdy odpowiedzi nie wracają do normy — bez czekania na zgłoszenie.
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+  issues: write
+
+concurrency:
+  group: watchdog
+  cancel-in-progress: false
+
+env:
+  BASE_URL: https://ciezko-na-sercu.pages.dev
+  # Najstarszy odcinek w katalogu — stabilny adres, nie zniknie przy edycji listy.
+  EPISODE_PATH: /odcinki/4d8fa861/2024-05-01-ciezko-na-sercu-1-maja-godz-0005/
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Sonda produkcji
+        id: probe
+        # Nie kończymy tu błędem: o tym, czy ponowić wdrożenie, decyduje
+        # osobny krok — inaczej watchdog alarmowałby też w trakcie publikacji.
+        run: |
+          set -uo pipefail
+          expected=$(node -p "require('./package.json').version")
+          body=$(mktemp)
+          problems=""
+
+          for attempt in 1 2 3 4; do
+            problems=""
+
+            home_code=$(curl -sS --max-time 20 -o "$body" -w '%{http_code}' "$BASE_URL/" || echo 000)
+            if [ "$home_code" != 200 ]; then
+              problems="$problems strona główna: HTTP $home_code."
+            else
+              grep -qF ">$expected</a>" "$body" \
+                || problems="$problems w stopce brak wersji $expected."
+              asset=$(grep -o '/_astro/[^"]*' "$body" | head -1)
+              if [ -z "$asset" ]; then
+                problems="$problems strona główna nie wskazuje pliku /_astro/."
+              else
+                asset_code=$(curl -sS --max-time 20 -o /dev/null -w '%{http_code}' "$BASE_URL$asset" || echo 000)
+                [ "$asset_code" = 200 ] || problems="$problems $asset: HTTP $asset_code."
+              fi
+            fi
+
+            episode_code=$(curl -sSL --max-time 20 -o /dev/null -w '%{http_code}' "$BASE_URL$EPISODE_PATH" || echo 000)
+            [ "$episode_code" = 200 ] || problems="$problems $EPISODE_PATH: HTTP $episode_code."
+
+            if [ -z "$problems" ]; then
+              echo "Produkcja odpowiada (próba $attempt)."
+              rm -f "$body"
+              echo "ok=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+
+            echo "Próba $attempt/4 — $problems"
+            sleep 15
+          done
+
+          rm -f "$body"
+          echo "::error::Produkcja nie odpowiada: $problems"
+          {
+            echo "ok=false"
+            echo "problems=$problems"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Przywróć produkcję
+        id: recover
+        if: steps.probe.outputs.ok == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          busy=$(gh run list --workflow=deploy.yml --branch main --limit 10 \
+            --json status --jq '[.[] | select(.status == "in_progress" or .status == "queued")] | length')
+          if [ "$busy" != "0" ]; then
+            # Wdrożenie jest w toku i ma własny test dymny z ponowieniami.
+            echo "Trwa wdrożenie — czekam na jego test dymny."
+            exit 0
+          fi
+          echo "alert=1" >> "$GITHUB_OUTPUT"
+
+          last=$(gh run list --workflow=deploy.yml --branch main --limit 1 --json conclusion --jq '.[0].conclusion')
+          if [ "$last" != "success" ]; then
+            echo "Ostatnie wdrożenie zakończyło się: $last — ponowienie nie pomoże."
+            exit 0
+          fi
+
+          version=$(node -p "require('./package.json').version")
+          gh workflow run deploy.yml --ref main -f version="$version"
+          echo "Zamówiono ponowne wdrożenie v$version."
+
+      - name: Zgłoś awarię
+        if: steps.recover.outputs.alert == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROBLEMS: ${{ steps.probe.outputs.problems }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title='Produkcja nie odpowiada'
+          body="Sonda z $(date -u +%Y-%m-%dT%H:%MZ) nie przeszła:$PROBLEMS Przebieg: $RUN_URL"
+          number=$(gh issue list --state open --limit 100 --json number,title \
+            --jq ".[] | select(.title == \"$title\") | .number" | head -1)
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi

@@ -25,9 +25,10 @@ interface Props {
   label?: string;
   class?: string;
   target?: string;
+  variant?: 'unknown-track';
 }
 
-const { element, label = '!', class: className, target: explicitTarget } = Astro.props;
+const { element, label = '!', class: className, target: explicitTarget, variant } = Astro.props;
 const [, kindWithId = '', description] = element.split('|');
 const kind = kindWithId.split(':')[0];
 const target = explicitTarget || description || KIND_LABELS[kind] || 'Ten fragment';
@@ -42,6 +43,7 @@ const href = `${REPORT_FORM}?usp=pp_url&${ENTRY_ELEMENT}=${encodeURIComponent(el
   data-report-link
   data-report-element={element}
   data-report-target={target}
+  data-report-variant={variant}
   title={`Zgłoś błąd: ${element}`}
   aria-label={`Zgłoś błąd: ${target}`}
 >

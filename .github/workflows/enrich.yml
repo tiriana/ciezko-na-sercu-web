@@ -84,7 +84,7 @@ jobs:
 
       - name: Commit
         run: |
-          bash scripts/push-data.sh "fix: streszczenia i nazwy wejść (${GITHUB_RUN_ID})" data/episodes
+          bash scripts/push-data.sh "fix: streszczenia i nazwy wejść (${GITHUB_RUN_ID})" data/episodes data/overrides data/reviewed.json data/titles.json
 
       - name: Stan etapów
         if: always()

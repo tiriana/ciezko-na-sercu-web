@@ -5,7 +5,9 @@
  * Wysyła transkrypt z osią czasu i listę wejść, a w zamian dostaje streszczenie
  * oraz krótkie nazwy wejść. Wpisuje tylko to, czego brakuje: streszczenie, gdy
  * jest puste, i etykiety wejść, które są surowym tekstem z transkryptu albo
- * znacznikiem `#TODO`. Ręcznie napisane etykiety zostają nietknięte.
+ * znacznikiem `#TODO`. Ręcznie napisane etykiety zostają nietknięte. Wejścia
+ * dodane w edytorze leżą w `data/overrides` — ich `#TODO` naprawiamy w miejscu,
+ * a nie przez usunięcie wpisu.
  *
  * Dostawcy to darmowe tiery zgodne z API OpenAI (Groq, OpenRouter, Cerebras,
  * Google AI Studio, Mistral); klucz z ich zmiennej środowiskowej włącza dostawcę,
@@ -85,6 +87,8 @@ const wanted = String(args.get('episodes') ?? '')
 
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));
 const round = (value) => Math.round(value * 100) / 100;
+// Ten sam klucz znacznika „ok”, którego używa edytor: NFC, bez spacji na brzegach, małe litery.
+const normalizeLabel = (value) => String(value ?? '').normalize('NFC').trim().toLowerCase();
 
 // Łańcuch: `--model groq:openai/gpt-oss-120b,openrouter` albo same id dostawców.
 // Bez wskazania bierzemy wszystkich, którzy mają klucz, w kolejności z listy.
@@ -231,6 +235,35 @@ const finalPrompt = (episode, notes, topics, needsTitle = false) => {
   ].join('\n');
 };
 
+// Etykieta dla jednego wejścia: model zbiorczy odpowiada tylko za te, które
+// dostał z opisem, więc miejsca z `#TODO` pytamy osobno, z transkryptem wokół.
+const labelPrompt = (episode, topic, context) =>
+  [
+    `Audycja „Ciężko na sercu" (Trójka) z ${episode.date}.`,
+    '',
+    `FRAGMENT TRANSKRYPTU WOKÓŁ WEJŚCIA ZACZYNAJĄCEGO SIĘ O ${stamp(topic.start)}:`,
+    context,
+    '',
+    'Zadanie: nazwij to wejście krótko po polsku (4–10 słów) — czego dotyczy wypowiedź prowadzącego.',
+    'Bez wstępów, bez cudzysłowów, bez powtarzania numeru czasu.',
+    '',
+    'Odpowiedz wyłącznie JSON-em: {"label": "..."}',
+  ].join('\n');
+
+const topicContext = (transcript, start, end) =>
+  (transcript.segments ?? [])
+    .filter((segment) => segment.end >= start - 30 && segment.start <= end + 30)
+    .map((segment) => `[${stamp(segment.start)}] ${String(segment.text ?? '').trim()}`)
+    .join('\n');
+
+const askLabel = async (episode, transcript, topic) => {
+  const context = topicContext(transcript, topic.start, topic.end ?? topic.start + 120);
+  if (!context) return null;
+  const answer = await ask(labelPrompt(episode, topic, context));
+  const label = String(answer?.label ?? '').trim();
+  return usableLabel(label) ? label : null;
+};
+
 // Kredyty bierzemy z tych fragmentów, w których pada przedstawienie się, wydawca,
 // gość albo realizacja — reszta transkryptu to muzyka i tematy.
 const CREDITS_ROLES = new Set(['prowadzący', 'wydawca', 'producent', 'gość', 'realizacja', 'autor']);
@@ -360,8 +393,17 @@ for (const entry of selected) {
   }
 
   const topics = episode.topics ?? [];
+  const overridePath = `data/overrides/${entry.id}.json`;
+  const override = await readJson(overridePath).catch(() => null);
+  const addedTopics = override?.addTopics ?? [];
   const needsSummary = force || !episode.summary;
-  const relabel = topics.filter((topic) => needsLabel(topic.label) || (relabelRaw && looksRaw(topic.label)));
+  const relabel = [
+    ...topics.map((topic) => ({ topic, source: 'episode' })),
+    ...addedTopics.map((topic) => ({ topic, source: 'override' })),
+  ].filter(({ topic }) => needsLabel(topic.label) || (relabelRaw && looksRaw(topic.label)));
+  const promptTopics = [...topics, ...addedTopics].filter(
+    (topic, index, all) => all.findIndex((other) => other.start === topic.start) === index
+  );
   const needsCredits = (episode.credits ?? []).length === 0;
   // Tytuł techniczny bez nieoficjalnego to znak, że redakcja go jeszcze nie nadała —
   // wtedy proponujemy własny, żeby odcinek nie nazywał się „godz. 00:06”.
@@ -393,7 +435,7 @@ for (const entry of selected) {
 
   let answer;
   try {
-    answer = await ask(finalPrompt(entry, notes, topics, needsTitle));
+    answer = await ask(finalPrompt(entry, notes, promptTopics, needsTitle));
   } catch (error) {
     console.error(`— ${entry.slug}: ${error.message}`);
     continue;
@@ -414,11 +456,29 @@ for (const entry of selected) {
   }
 
   const changed = [];
-  for (const topic of relabel) {
-    const label = labels.get(round(topic.start));
-    if (!label) continue;
+  const reviewedMoves = [];
+  let episodeLabelChanged = false;
+  let overrideLabelChanged = false;
+  for (const { topic, source } of relabel) {
+    let label = labels.get(round(topic.start));
+    if (!label) {
+      try {
+        label = await askLabel(entry, transcript, topic);
+      } catch (error) {
+        console.error(`   etykieta ${topic.start}: ${error.message}`);
+      }
+    }
+    if (!label || label === topic.label) continue;
     changed.push(`${topic.start}: ${label}`);
-    if (write) topic.label = label;
+    // Wspólny placeholder bywa kluczem wielu wejść naraz — przeniesienie go
+    // przypisałoby „ok” do pierwszego z brzegu, więc zostawiamy taki wpis w spokoju.
+    if (!/^#TODO - wygeneruj opis znacznika$/i.test(String(topic.label).trim())) {
+      reviewedMoves.push({ from: `p:${normalizeLabel(topic.label)}`, to: `p:${normalizeLabel(label)}` });
+    }
+    if (!write) continue;
+    topic.label = label;
+    if (source === 'override') overrideLabelChanged = true;
+    else episodeLabelChanged = true;
   }
   for (const line of changed) console.log(`   ${line}`);
 
@@ -512,7 +572,27 @@ for (const entry of selected) {
     }
   }
 
-  if (write && (changed.length > 0 || (usableSummary && needsSummary) || credits)) {
+  if (write && overrideLabelChanged && override) {
+    await writeFile(overridePath, `${JSON.stringify(override, null, 2)}\n`);
+    updated += 1;
+  }
+
+  // Zmiana etykiety zmienia klucz znacznika „ok” — przenosimy go, żeby po
+  // naprawie #TODO odcinek nie wyglądał na pozbawiony recenzji.
+  if (write && reviewedMoves.length > 0) {
+    const reviewed = await readJson('data/reviewed.json').catch(() => ({ version: 1, episodes: {} }));
+    const marks = reviewed.episodes?.[entry.id];
+    let touched = false;
+    for (const move of reviewedMoves) {
+      if (!marks || move.from === move.to || !(move.from in marks)) continue;
+      marks[move.to] = true;
+      delete marks[move.from];
+      touched = true;
+    }
+    if (touched) await writeFile('data/reviewed.json', `${JSON.stringify(reviewed, null, 2)}\n`);
+  }
+
+  if (write && (episodeLabelChanged || (usableSummary && needsSummary) || credits)) {
     if (usableSummary && needsSummary) episode.summary = summary;
     if (credits) episode.credits = credits;
     await writeFile(episodePath, `${JSON.stringify(episode, null, 2)}\n`);
