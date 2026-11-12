@@ -137,7 +137,7 @@ const stamp = (seconds) => {
 // dobre opisy — surowy tekst z transkryptu ruszamy tylko z `--relabel-raw`.
 const needsLabel = (label) => {
   const text = String(label ?? '').trim();
-  return !text || /^#TODO/i.test(text);
+  return !text || /#TODO/i.test(text);
 };
 
 // Surowy tekst z transkryptu poznajemy po długości: nazwa redakcyjna ma 4–10 słów,

@@ -10,7 +10,9 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 
 const isBlank = (value) => !String(value ?? '').trim();
-const isTodo = (value) => /^\s*#TODO/i.test(String(value ?? '')) || isBlank(value);
+// `#TODO` bywa dopisane na końcu gotowego opisu („… / Azarath – album … #TODO popraw ten opis”),
+// więc szukamy znacznika w całym tekście, nie tylko na początku.
+const isTodo = (value) => /#TODO/i.test(String(value ?? '')) || isBlank(value);
 
 const args = new Set(process.argv.slice(2));
 const countOnly = args.has('--count');
