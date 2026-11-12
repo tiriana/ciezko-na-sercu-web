@@ -20,19 +20,22 @@ Strona nie publikuje dźwięku ani treści audycji. Indeksuje odcinki i linkuje 
 2. `refresh-catalog.yml` — gdy wykrycie znajdzie odcinek spoza katalogu (albo ręcznie):
    `scripts/fetch-episodes.mjs` czyta paginację serwisu, `scripts/build-catalog.mjs` liczy
    katalog, `scripts/stub-episodes.mjs` zakłada puste opracowanie, commit trafia do `main`,
-   deploy publikuje wpis bez tracklisty, a `transcribe-daily.yml` zamawia transkrypcję.
-3. `transcribe.yml` — whisper.cpp czyta audio prosto z adresu w Polskim Radiu
-   (`ffmpeg -i <url>`, kawałki 45-minutowe), składa części, przelicza czasy tematów
-   i publikuje stronę ponownie. Plik audio nie trafia na dysk runnera ani do artefaktów.
-   Pomija odcinki z choć jednym znacznikiem „ok” przy wyborze z kolejki (ręczne
-   wskazanie odcinka albo `force` to obchodzi).
-4. Opracowanie odcinka leży w `data/episodes/<uuid>.json`; build czyta wyłącznie `data/`.
-5. Zmiana formatu strony audycji nie wyłącza wykrywania po cichu: przebieg kończy się
+   deploy publikuje wpis bez tracklisty, a `spans.yml` liczy dla niego bloki mowy.
+3. `spans.yml` — VAD (Silero ONNX, model 2 MB) wyznacza bloki mowy i zapisuje
+   `data/artifacts/<uuid>/speech-spans.json`. Trwa ~2 minuty na odcinek; wynik jest
+   wejściem dla transkrypcji (whisper dostaje ~20% nagrania) i dla Shazama.
+4. `transcribe.yml` — macierz 4–6 jobów, każdy transkrybuje po ~6 bloków mowy; części
+   jadą do artefaktów, `commit` sprawdza komplet i składa transkrypt. Plik audio nie
+   trafia na dysk runnera ani do artefaktów. Pomija odcinki z choć jednym znacznikiem
+   „ok” przy wyborze z kolejki (ręczne wskazanie odcinka albo `force` to obchodzi).
+5. Opracowanie odcinka leży w `data/episodes/<uuid>.json`; build czyta wyłącznie `data/`.
+6. Zmiana formatu strony audycji nie wyłącza wykrywania po cichu: przebieg kończy się
    błędem i otwiera (albo komentuje) issue „Środowe wykrycie odcinka nie działa”.
 
 Środowa ścieżka jest w pełni automatyczna: sondowanie co 10 minut → katalog, zaślepka
-opracowania i deploy wpisu → transkrypcja i rozpoznanie utworów → drugi deploy
-z uzupełnionym programem. Streszczenie AI doda się osobno, gdy pipeline dostanie model.
+opracowania i deploy wpisu → bloki mowy → transkrypcja → rozpoznanie utworów i profil
+głosu → streszczenie AI i etykiety wejść → deploy z uzupełnionym programem.
+Ręcznie zostaje tylko redakcja znaczników w edytorze (`npm run edytor`).
 
 ## Uruchomienie
 
@@ -118,8 +121,8 @@ Workflow:
    z „Symuluj nowy odcinek” przechodzi całą ścieżkę bez czekania na publikację
    (transkrypcji wtedy nie zamawia).
 3. `refresh-catalog.yml` — odświeżenie katalogu ze strony audycji.
-4. `transcribe.yml` / `transcribe-daily.yml` — transkrypcja wskazanych odcinków i wybór
-   jednej zaległości dziennie.
+4. `spans.yml` / `transcribe.yml` / `transcribe-daily.yml` — bloki mowy, transkrypcja
+   wskazanych odcinków i wybór jednej zaległości dziennie.
 5. `release.yml` — wersja i changelog z typów commitów.
 6. `screenshots.yml` — zrzuty strony odcinka na trzech systemach i trzech silnikach.
 7. `rollback.yml` — cofnięcie produkcji do wskazanego wdrożenia Cloudflare

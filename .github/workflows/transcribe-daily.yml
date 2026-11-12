@@ -35,7 +35,9 @@ jobs:
           PRINT_NEXT: 'true'
         run: node scripts/plan-transcribe.mjs
 
-      - name: Uruchom transkrypcję
+      # Transkrypcja bierze podział z bloków mowy, więc najpierw VAD — on zamawia
+      # transkrypcję sam, po commicie artefaktu.
+      - name: Uruchom bloki mowy dla odcinka
         if: steps.next.outputs.next != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -44,4 +46,4 @@ jobs:
           REMAINING: ${{ steps.next.outputs.count }}
         run: |
           echo "Zostało $REMAINING odcinków, dziś: $TITLE ($NEXT)"
-          gh workflow run transcribe.yml --ref main -f episodes="$NEXT" -f label="$TITLE"
+          gh workflow run spans.yml --ref main -f episodes="$NEXT"
