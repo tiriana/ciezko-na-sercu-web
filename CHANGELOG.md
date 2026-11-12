@@ -1,3 +1,9 @@
+## [1.64.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.63.0...v1.64.0) (2026-11-12)
+
+### Features
+
+* przyciski skoku do znaczników bez ok na waveformie ([e469f63](https://github.com/tiriana/ciezko-na-sercu-web/commit/e469f6342ed4ce8bfcf6d67816846dabd5d19e05))
+
 ## [1.63.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.62.1...v1.63.0) (2026-11-12)
 
 ### Features
