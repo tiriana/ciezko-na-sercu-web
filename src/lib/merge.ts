@@ -156,6 +156,32 @@ function applyOverride(episode: Episode, override: Override): void {
 }
 
 /** Ręczne poprawki, warianty nazw i czyszczenie danych — kolejność ma znaczenie. */
+/**
+ * Znaczniki `#TODO` to placeholdery z edytora — czasem zostają obok wpisu, który
+ * powstał później w tym samym miejscu. Taki duplikat nie wnosi nic i tylko straszy
+ * na stronie, więc go usuwamy: utwór wypada, gdy nachodzi na nazwany utwór,
+ * wejście — gdy dzieli czas z opisanym wejściem.
+ */
+function dropTodoDuplicates(episode: Episode): void {
+  const isTodo = (text: string | undefined) => /^#TODO/i.test((text ?? '').trim());
+  const named = episode.tracks.filter((track) => !isTodo(track.title));
+  episode.tracks = episode.tracks.filter((track) => {
+    if (!isTodo(track.title)) return true;
+    const end = track.end ?? track.start + (track.durationSec ?? 0);
+    return !named.some((other) => {
+      const otherEnd = other.end ?? other.start + (other.durationSec ?? 0);
+      const overlap = Math.min(end, otherEnd) - Math.max(track.start, other.start);
+      return overlap >= (end - track.start) * 0.5;
+    });
+  });
+
+  const labelled = episode.topics.filter((topic) => !isTodo(topic.label));
+  episode.topics = episode.topics.filter((topic) => {
+    if (!isTodo(topic.label)) return true;
+    return !labelled.some((other) => Math.abs(other.start - topic.start) <= 2);
+  });
+}
+
 export function mergeEpisode(episode: Episode, options: { override?: Override; aliases?: Aliases; types?: TagTypes }): Episode {
   const { override, aliases = {}, types = {} } = options;
   if (override) applyOverride(episode, override);
@@ -163,6 +189,7 @@ export function mergeEpisode(episode: Episode, options: { override?: Override; a
     episode.tags = mergeAliases(episode.tags, aliases, types);
     episode.credits = episode.credits.map((credit) => ({ ...credit, name: resolveAlias(credit.name, aliases) }));
   }
+  dropTodoDuplicates(episode);
   sanitizeEpisode(episode);
   return episode;
 }
