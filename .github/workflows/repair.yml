@@ -132,9 +132,10 @@ jobs:
           bash scripts/push-data.sh "fix: naprawa utworów i wejść bez opisu ($ID, ${GITHUB_RUN_ID})" \
             data/episodes data/overrides data/reviewed.json data/titles.json
 
-  # Tagi z importu bywają zlepione („A & B”, skład koncertu). Job chodzi niezależnie
-  # od macierzy odcinków; bez zmian push-data.sh nie robi commita, więc nie ma pętli.
-  tags:
+  # Tagi i kolejność wejść: import z taggera bywa zlepiony („A & B”, skład koncertu),
+  # a stare odcinki mają wejścia w złej kolejności. Oba kroki są idempotentne;
+  # bez zmian push-data.sh nie robi commita, więc nie ma pętli.
+  tidy:
     runs-on: ubuntu-26.04
     timeout-minutes: 10
     steps:
@@ -149,15 +150,18 @@ jobs:
       - name: Rozbij zlepione tagi
         run: node scripts/fix-tags.mjs --write
 
+      - name: Ustaw wejścia w kolejności i na blokach mowy
+        run: node scripts/snap-topics.mjs
+
       - run: npm run check
 
       - name: Commit
         id: commit
         run: |
-          bash scripts/push-data.sh "fix: tagi bez zlepionych zespołów (${GITHUB_RUN_ID})" data/episodes
+          bash scripts/push-data.sh "fix: tagi i czasy wejść (${GITHUB_RUN_ID})" data/episodes
 
       # Push z GITHUB_TOKEN nie uruchamia workflow, więc deploy zamawiamy ręcznie.
-      - name: Deploy po zmianie tagów
+      - name: Deploy po uporządkowaniu danych
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
