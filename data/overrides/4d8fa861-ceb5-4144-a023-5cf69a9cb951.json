@@ -106,6 +106,61 @@
       "start": 3703.83,
       "durationSec": 323,
       "end": 4260.02
+    },
+    {
+      "artist": "Inter Arma",
+      "title": "Desolation's Harp",
+      "album": "New Heaven",
+      "newArtist": "Inter Arma",
+      "newTitle": "Desolation's Harp",
+      "newAlbum": "New Heaven",
+      "start": 4369.53,
+      "durationSec": 267,
+      "end": 4637.22
+    },
+    {
+      "artist": "Blood Incantation",
+      "title": "Slave Species of the Gods",
+      "album": "Hidden History of the Human Race",
+      "newArtist": "Blood Incantation",
+      "newTitle": "Slave Species of the Gods",
+      "newAlbum": "Hidden History of the Human Race",
+      "start": 4726.8,
+      "durationSec": 327,
+      "end": 5053.02
+    },
+    {
+      "artist": "Doom",
+      "title": "Police Bastard",
+      "album": "Total Doom",
+      "newArtist": "Doom",
+      "newTitle": "Police Bastard",
+      "newAlbum": "Total Doom",
+      "start": 5108.04,
+      "durationSec": 84,
+      "end": 5194.86
+    },
+    {
+      "artist": "Doom",
+      "title": "Agree To Differ",
+      "album": "25 Years of Crust",
+      "newArtist": "Doom",
+      "newTitle": "Agree To Differ",
+      "newAlbum": "25 Years of Crust",
+      "start": 5296.03,
+      "durationSec": 313,
+      "end": 5608.16
+    },
+    {
+      "artist": "Khanate",
+      "title": "It Wants to Fly",
+      "album": "To Be Cruel",
+      "newArtist": "Khanate",
+      "newTitle": "It Wants to Fly",
+      "newAlbum": "To Be Cruel",
+      "start": 5658.88,
+      "durationSec": 1158,
+      "end": 6818.03
     }
   ],
   "topics": [
@@ -182,6 +237,48 @@
       "start": 3541.14,
       "newLabel": "Podsumowanie i analiza bieżącej edycji Roadburn oraz jego ewolucji od festiwalu stonerowego do platformy eksperymentalnej",
       "end": 3703.83
+    },
+    {
+      "time": 4279.14,
+      "label": "Problemy organizacyjne po pandemii: inflacja, dostępność zespołów i konieczność redefinicji tożsamości festiwalu",
+      "hide": true
+    },
+    {
+      "time": 4637.02,
+      "label": "Opis festiwalu Roadburn – jego progresywny charakter, dominacja black i death metalu oraz atmosfera w Tilburgu",
+      "start": 4637.22,
+      "newLabel": "Opis festiwalu Roadburn – jego progresywny charakter, dominacja black i death metalu oraz atmosfera w Tilburgu",
+      "end": 4726.8
+    },
+    {
+      "time": 5193.02,
+      "label": "Prezentacja brytyjskiego zespołu Doom i ich albumu Total Doom z 1989 roku",
+      "start": 5194.86,
+      "newLabel": "Prezentacja brytyjskiego zespołu Doom i ich albumu Total Doom z 1989 roku",
+      "end": 5296.03
+    },
+    {
+      "time": 5609.02,
+      "label": "Wzmianka o grupie Kanata, ich utworze It Wants To Fly oraz płycie To Be Crew",
+      "start": 5608.16,
+      "newLabel": "Wzmianka o grupie Kanata, ich utworze It Wants To Fly oraz płycie To Be Crew",
+      "end": 5658.88
+    },
+    {
+      "time": 6540.03,
+      "label": "Reakcje publiczności i podziały między tradycyjnymi fanami metalu a nowymi słuchaczami",
+      "hide": true
+    },
+    {
+      "time": 6818.03,
+      "label": "Przykłady artystów i zespołów (Backwash, Clipping, Jesus and Mary Chain, Lancum) ilustrujących nowy, szeroki zakres muzyczny Roadburn",
+      "start": 6580.82,
+      "newLabel": "Przykłady artystów i zespołów (Backwash, Clipping, Jesus and Mary Chain, Lancum) ilustrujących nowy, szeroki zakres muzyczny Roadburn"
+    },
+    {
+      "time": 6580.82,
+      "label": "Przykłady artystów i zespołów (Backwash, Clipping, Jesus and Mary Chain, Lancum) ilustrujących nowy, szeroki zakres muzyczny Roadburn",
+      "hide": true
     }
   ],
   "addTracks": [
@@ -213,6 +310,16 @@
       "label": "#TODO - wygeneruj opis znacznika / Refleksja nad wizerunkiem i zmianą percepcji metalu w środowisku fanów",
       "start": 2859.21,
       "end": 3055.54
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika / Problemy organizacyjne po pandemii: inflacja, dostępność zespołów i konieczność redefinicji tożsamości festiwalu",
+      "start": 4026.54,
+      "end": 4369.53
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika\nKANONADA",
+      "start": 5052.59,
+      "end": 5108.04
     }
   ],
   "credits": {

@@ -113,14 +113,19 @@ jobs:
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
         with:
           path: .cache/whisper
-          key: whisper-${{ env.WHISPER_VERSION }}-${{ runner.arch }}
+          # Bez `-generic` w kluczu cache trzymał binarkę zbudowaną pod AVX-512
+          # i wywalał się z SIGILL na runnerze bez tych instrukcji.
+          key: whisper-${{ env.WHISPER_VERSION }}-${{ runner.arch }}-generic
 
       - name: Build whisper.cpp
         if: steps.whisper-cache.outputs.cache-hit != 'true'
         run: |
           git clone --depth 1 --branch "$WHISPER_VERSION" https://github.com/ggml-org/whisper.cpp.git .cache/whisper/src
+          # `GGML_NATIVE=OFF` daje kod pod baseline x86-64 zamiast pod CPU, który akurat
+          # zbudował cache — inaczej binarka z młodszego runnera pada z SIGILL na starszym.
           cmake -S .cache/whisper/src -B .cache/whisper/src/build \
-            -DWHISPER_BUILD_TESTS=OFF -DWHISPER_BUILD_SERVER=OFF -DCMAKE_BUILD_TYPE=Release
+            -DWHISPER_BUILD_TESTS=OFF -DWHISPER_BUILD_SERVER=OFF -DCMAKE_BUILD_TYPE=Release \
+            -DGGML_NATIVE=OFF
           cmake --build .cache/whisper/src/build -j 4 --target whisper-cli
           mkdir -p .cache/whisper/bin
           cp -a .cache/whisper/src/build/bin/. .cache/whisper/bin/
