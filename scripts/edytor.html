@@ -36,8 +36,10 @@
       header .hint { color: var(--muted); font-size: 12px; }
       .layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: calc(100vh - 45px); }
       /* Lista odcinków do schowania: przy pracy z waveformem liczy się każdy piksel. */
-      .layout.is-collapsed { grid-template-columns: 0 minmax(0, 1fr); }
+      .layout.is-collapsed { grid-template-columns: minmax(0, 1fr); }
       .layout.is-collapsed .sidebar { display: none; }
+      /* Po schowaniu listy treść jest jedynym elementem siatki, więc zajmuje całą szerokość. */
+      .layout.is-collapsed .main { grid-column: 1 / -1; }
       header .sidebar-toggle {
         border: 1px solid var(--line);
         background: var(--surface);
@@ -466,7 +468,9 @@
         box-shadow: 0 10px 24px rgba(28, 26, 24, 0.18);
       }
       .wave-menu button {
-        display: block;
+        display: flex;
+        align-items: stretch;
+        gap: 8px;
         width: 100%;
         padding: 6px 10px;
         border: 0;
@@ -478,6 +482,34 @@
         font-size: 12.5px;
         cursor: pointer;
       }
+      /* Znacznik w menu wygląda jak na waveformie: utwór to czerwona kropka u góry
+         z kreską w dół, wejście — zielona kropka u dołu z kreską w górę. */
+      .menu-mark { position: relative; flex: 0 0 11px; width: 11px; }
+      .menu-mark::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        margin-left: -0.5px;
+        background: currentColor;
+      }
+      .menu-mark::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        margin-left: -5px;
+        border-radius: 50%;
+        background: currentColor;
+      }
+      .menu-mark--track { color: var(--accent); }
+      .menu-mark--track::after { top: 2px; }
+      .menu-mark--topic { color: #1f6f6b; }
+      .menu-mark--topic::after { bottom: 2px; }
+      .wave-menu .menu-text { flex: 1 1 auto; min-width: 0; }
       .wave-menu[hidden] { display: none; }
       .wave-menu button[hidden] { display: none; }
       .wave-menu button.is-destructive { color: #b3102c; }
@@ -998,12 +1030,12 @@
 
     <div class="wave-menu" id="wave-menu" role="menu" aria-label="Akcje waveformu" hidden>
       <button type="button" role="menuitem" id="wave-menu-add">
-        <span>Dodaj wejście tutaj</span>
-        <small id="wave-menu-time"></small>
+        <span class="menu-mark menu-mark--topic" aria-hidden="true"></span>
+        <span class="menu-text"><span>Dodaj wejście tutaj</span><small id="wave-menu-time"></small></span>
       </button>
       <button type="button" role="menuitem" id="wave-menu-add-track">
-        <span>Dodaj utwór tutaj</span>
-        <small id="wave-menu-track-time"></small>
+        <span class="menu-mark menu-mark--track" aria-hidden="true"></span>
+        <span class="menu-text"><span>Dodaj utwór tutaj</span><small id="wave-menu-track-time"></small></span>
       </button>
       <button type="button" role="menuitem" id="wave-menu-ok" hidden>
         <span id="wave-menu-ok-text">Oznacz jako ok</span>
