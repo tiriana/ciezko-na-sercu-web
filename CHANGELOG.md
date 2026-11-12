@@ -1,3 +1,9 @@
+## [1.71.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.70.0...v1.71.0) (2026-11-12)
+
+### Features
+
+* **ui:** dymek mowy obok tytułu wejścia zamiast trójkąta ([2feeea8](https://github.com/tiriana/ciezko-na-sercu-web/commit/2feeea8d6267d056b3b7f0734fd74fe19ab8f0ac))
+
 ## [1.70.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.69.0...v1.70.0) (2026-11-12)
 
 ### Features
