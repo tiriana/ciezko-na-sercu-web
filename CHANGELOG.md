@@ -1,3 +1,9 @@
+## [1.54.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.53.0...v1.54.0) (2026-11-12)
+
+### Features
+
+* wykrywanie technicznych tytułów, tygodniowe odświeżanie z radia, tytuły od AI ([2d85483](https://github.com/tiriana/ciezko-na-sercu-web/commit/2d854832be814490674c432721afed4a7273b4a1))
+
 ## [1.53.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.52.0...v1.53.0) (2026-11-12)
 
 ### Features
