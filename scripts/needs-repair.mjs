@@ -45,7 +45,11 @@ const ids = [...readdirSync('data/episodes').filter((name) => name.endsWith('.js
       return isTodo(fixed ?? track.title) || isTodo(track.artist);
     });
 
-    const topics = [...(episode.topics ?? []), ...(override?.addTopics ?? [])];
+    const topics = [
+      ...(episode.topics ?? []),
+      ...(override?.addTopics ?? []),
+      ...(override?.topics ?? []).filter((fix) => fix.newLabel !== undefined).map((fix) => ({ label: fix.newLabel })),
+    ];
     const brokenTopic = topics.some((topic) => isTodo(topic.label));
 
     return brokenTrack || brokenTopic;
