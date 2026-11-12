@@ -21,7 +21,6 @@ import { isTechnicalTitle } from '../src/lib/titles.ts';
 
 const ENDPOINT_TIMEOUT_MS = 90000;
 const CHUNK_CHARS = 9000;
-const RATE_LIMIT_PAUSE_MS = 25000;
 const SUMMARY_MIN = 120;
 const SUMMARY_MAX = 1200;
 const LABEL_MAX = 90;
