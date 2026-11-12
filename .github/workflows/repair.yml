@@ -4,8 +4,9 @@ name: repair
 # ustaliły: utwory bez tytułu albo z samym wykonawcą oraz wejścia z `#TODO`.
 # Kolejność ma znaczenie — najpierw utwory, bo enrich bierze ich nazwy do opisu.
 #
-# Lista odcinków powstaje w osobnym, lekkim jobie: gdy nie ma czego naprawiać,
-# ciężki job nie startuje w ogóle (bez ffmpeg, Pythona i `npm ci`).
+# `plan` liczy listę odcinków (gdy pusta, `repair` w ogóle nie startuje),
+# a `repair` idzie macierzą — jeden node na odcinek, bo odcinki są od siebie
+# niezależne: każdy pisze tylko swoje pliki i tylko one trafiają do commita.
 
 on:
   push:
@@ -33,8 +34,8 @@ jobs:
     runs-on: ubuntu-26.04
     timeout-minutes: 10
     outputs:
-      ids: ${{ steps.find.outputs.ids }}
       count: ${{ steps.find.outputs.count }}
+      matrix: ${{ steps.find.outputs.matrix }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # v5
@@ -51,18 +52,31 @@ jobs:
           else
             node scripts/needs-repair.mjs > ids.txt
           fi
-          echo "ids=$(paste -sd, ids.txt)" >> "$GITHUB_OUTPUT"
-          echo "count=$(grep -c . ids.txt || true)" >> "$GITHUB_OUTPUT"
-          echo "Odcinków do naprawy: $(grep -c . ids.txt || true)"
+          count=$(grep -c . ids.txt || true)
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          # Pusta macierz wywala job, więc przy braku odcinków zostaje jedna pusta
+          # kombinacja, którą odsiewa warunek na poziomie joba.
+          if [ "$count" = "0" ]; then
+            echo 'matrix={"episode":[{"id":""}]}' >> "$GITHUB_OUTPUT"
+          else
+            echo "matrix=$(jq -R -s -c 'split("\n") | map(select(length > 0)) | map({id: .}) | {episode: .}' ids.txt)" >> "$GITHUB_OUTPUT"
+          fi
+          echo "Odcinków do naprawy: $count"
           sed 's/^/  /' ids.txt
 
   repair:
     needs: plan
-    if: needs.plan.outputs.ids != ''
+    if: needs.plan.outputs.count != '0'
     runs-on: ubuntu-26.04
     timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      # Każdy odcinek to własna rozmowa z modelem; za dużo naraz bije w limity
+      # darmowych tierów, a `push-data.sh` i tak serializuje commity.
+      max-parallel: 3
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
     env:
-      IDS: ${{ needs.plan.outputs.ids }}
+      ID: ${{ matrix.episode.id }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
@@ -81,25 +95,17 @@ jobs:
       - run: pip install --quiet numpy
       - run: npm ci
 
-      - name: Zapisz listę odcinków
-        run: printf '%s' "$IDS" | tr ',' '\n' > ids.txt
-
+      # `--retry-misses` tu nie chcemy: przebieg ma pomijać to, co już raz się nie udało.
       - name: Rozpoznaj utwory z kontekstu
-        # Jedna pozycja to jeden LLM plus Deezer; `--retry-misses` tu nie chcemy,
-        # bo przebieg ma pomijać to, co już raz się nie udało.
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: |
-          args=()
-          while read -r id; do
-            [ -n "$id" ] && args+=(--episode "$id")
-          done < ids.txt
-          python3 scripts/resolve_tracks.py "${args[@]}" --write 2>&1 | tee resolve.log
+          python3 scripts/resolve_tracks.py --episode "$ID" --write 2>&1 | tee resolve.log
           {
-            echo "### Rozpoznane utwory"
+            echo "### Rozpoznane utwory: $ID"
             echo ""
             echo '```'
             tail -60 resolve.log
@@ -113,19 +119,33 @@ jobs:
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-        run: node scripts/enrich-episode.mjs --episodes "$IDS" --write
+        run: node scripts/enrich-episode.mjs --episodes "$ID" --write
 
       - run: npm run check
 
       - name: Commit
-        id: commit
         run: |
-          bash scripts/push-data.sh "fix: naprawa utworów i wejść bez opisu (${GITHUB_RUN_ID})" \
+          bash scripts/push-data.sh "fix: naprawa utworów i wejść bez opisu ($ID, ${GITHUB_RUN_ID})" \
             data/episodes data/overrides data/reviewed.json data/titles.json
 
-      # Push z GITHUB_TOKEN nie uruchamia workflow, więc publikację zamawiamy jawnie.
+  # Macierz commituje kilka razy w jednym przebiegu; publikacja idzie raz, na końcu.
+  deploy:
+    needs: [plan, repair]
+    if: always() && needs.plan.outputs.count != '0'
+    runs-on: ubuntu-26.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+
       - name: Deploy po naprawie
-        if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
+        run: |
+          git fetch --quiet origin main
+          if ! git log --oneline -30 --grep "(${GITHUB_RUN_ID})" origin/main | grep -q .; then
+            echo "Brak commitów z tego przebiegu — nic do wdrożenia."
+            exit 0
+          fi
+          gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
