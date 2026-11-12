@@ -1,3 +1,13 @@
+## [1.72.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.71.0...v1.72.0) (2026-11-12)
+
+### Features
+
+* tagi rozbijane na pojedyncze zespoły ([c02b5aa](https://github.com/tiriana/ciezko-na-sercu-web/commit/c02b5aab6089d67988b15d468c393d4bd90a6c4a))
+
+### Bug Fixes
+
+* tagi bez zlepionych zespołów ([c88c560](https://github.com/tiriana/ciezko-na-sercu-web/commit/c88c56067c6338ab8d75c7065fa9468e8ac96890))
+
 ## [1.71.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.70.0...v1.71.0) (2026-11-12)
 
 ### Features
