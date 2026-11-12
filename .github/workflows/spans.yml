@@ -115,10 +115,18 @@ jobs:
 
       - run: npm ci
 
+      # Układ katalogów w artefakcie zależy od tego, co było wspólnym korzeniem ścieżek,
+      # więc szukamy plików po nazwie i bierzemy identyfikator odcinka z katalogu obok.
       - name: Włóż artefakty do repozytorium
         run: |
-          mkdir -p data/artifacts
-          cp -r .spans/data/artifacts/. data/artifacts/
+          count=0
+          while IFS= read -r file; do
+            id=$(basename "$(dirname "$file")")
+            mkdir -p "data/artifacts/$id"
+            cp "$file" "data/artifacts/$id/speech-spans.json"
+            count=$((count + 1))
+          done < <(find .spans -name 'speech-spans.json')
+          echo "włożonych artefaktów: $count"
           find data/artifacts -name 'speech-spans.json' | sort
 
       - name: Commit
