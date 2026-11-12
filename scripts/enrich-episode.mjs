@@ -29,38 +29,47 @@ const LABEL_MAX = 140;
 // Dostawcy zgodni z API OpenAI (chat/completions). Każdy ma darmowy tier, a klucz
 // czytamy z osobnej zmiennej: brak klucza po prostu wyłącza dostawcę z łańcucha,
 // więc ten sam kod działa z jednym i z pięcioma.
+//
+// Modeli jest kilka na dostawcę, bo darmowe limity liczą się per model — po 429
+// na jednym modelu Groqa ten sam klucz obsłuży zapytanie na innym.
 const PROVIDERS = [
   {
     id: 'groq',
     endpoint: 'https://api.groq.com/openai/v1/chat/completions',
     apiKeyEnv: 'GROQ_API_KEY',
-    defaultModel: 'openai/gpt-oss-120b',
-    extraBody: { reasoning_effort: 'low' },
+    models: ['openai/gpt-oss-120b', 'llama-3.3-70b-versatile', 'llama-3.1-8b-instant'],
+  },
+  {
+    id: 'google',
+    endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions',
+    apiKeyEnv: 'GEMINI_API_KEY',
+    models: ['gemini-2.5-flash', 'gemini-2.5-flash-lite'],
   },
   {
     id: 'openrouter',
     endpoint: 'https://openrouter.ai/api/v1/chat/completions',
     apiKeyEnv: 'OPENROUTER_API_KEY',
-    defaultModel: 'openrouter/free',
+    models: ['openrouter/free'],
     headers: { 'HTTP-Referer': 'https://ciezko-na-sercu.pages.dev', 'X-Title': 'ciezko-na-sercu-web' },
   },
   {
     id: 'cerebras',
     endpoint: 'https://api.cerebras.ai/v1/chat/completions',
     apiKeyEnv: 'CEREBRAS_API_KEY',
-    defaultModel: 'gpt-oss-120b',
-  },
-  {
-    id: 'google',
-    endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions',
-    apiKeyEnv: 'GEMINI_API_KEY',
-    defaultModel: 'gemini-2.5-flash',
+    models: ['gpt-oss-120b'],
   },
   {
     id: 'mistral',
     endpoint: 'https://api.mistral.ai/v1/chat/completions',
     apiKeyEnv: 'MISTRAL_API_KEY',
-    defaultModel: 'mistral-small-latest',
+    models: ['mistral-small-latest'],
+  },
+  {
+    id: 'cloudflare',
+    endpoint: 'https://api.cloudflare.com/client/v4/accounts/{account}/ai/v1/chat/completions',
+    apiKeyEnv: 'CLOUDFLARE_API_KEY',
+    accountEnv: 'CLOUDFLARE_ACCOUNT_ID',
+    models: ['@cf/meta/llama-3.3-70b-instruct-fp8-fast', '@cf/meta/llama-3.1-8b-instruct'],
   },
 ];
 
@@ -91,15 +100,20 @@ const round = (value) => Math.round(value * 100) / 100;
 const normalizeLabel = (value) => String(value ?? '').normalize('NFC').trim().toLowerCase();
 
 // Łańcuch: `--model groq:openai/gpt-oss-120b,openrouter` albo same id dostawców.
-// Bez wskazania bierzemy wszystkich, którzy mają klucz, w kolejności z listy.
+// Bez wskazania bierzemy wszystkich, którzy mają klucz, w kolejności z listy,
+// i wszystkie ich modele — po limicie jednego modelu idzie następny.
+const endpointOf = (provider) =>
+  provider.accountEnv
+    ? provider.endpoint.replace('{account}', encodeURIComponent(process.env[provider.accountEnv] ?? ''))
+    : provider.endpoint;
+
 const targets = () => {
   const entries = model
     .split(',')
     .map((value) => value.trim())
     .filter(Boolean);
-  const resolved = entries.length > 0 ? entries : PROVIDERS.map((provider) => provider.id);
   const list = [];
-  for (const entry of resolved) {
+  for (const entry of entries.length > 0 ? entries : PROVIDERS.map((provider) => provider.id)) {
     const [id, ...rest] = entry.split(':');
     const provider = PROVIDERS.find((candidate) => candidate.id === id);
     if (!provider) {
@@ -108,7 +122,12 @@ const targets = () => {
     }
     const apiKey = process.env[provider.apiKeyEnv];
     if (!apiKey) continue;
-    list.push({ provider, apiKey, model: rest.join(':') || provider.defaultModel });
+    if (provider.accountEnv && !process.env[provider.accountEnv]) {
+      console.error(`${provider.id}: brak ${provider.accountEnv} — pomijam`);
+      continue;
+    }
+    const models = rest.length > 0 ? [rest.join(':')] : provider.models;
+    for (const candidate of models) list.push({ provider, apiKey, model: candidate });
   }
   return list;
 };
@@ -362,26 +381,26 @@ const askTarget = async (target, prompt) => {
   return parseLooseJson(raw);
 };
 
-// Limit na minutę mija po kilkudziesięciu sekundach, a przy jednym kluczu
-// (Groq: 8000 TPM) map-reduce i tak wyczerpuje okno — dlatego czekamy coraz dłużej,
-// zamiast po jednej próbie rezygnować z całego odcinka.
-const retryable = (message) => /\b(429|500|502|503|504)\b|fetch failed|timeout|aborted/i.test(message);
-const RETRY_PAUSES_MS = [15_000, 45_000, 90_000];
+// Limit na minutę mija po kilkudziesięciu sekundach, ale jeden przebieg po całym
+// łańcuchu zwykle wystarcza: 429 na jednym modelu obsłuży sąsiedni. Dopiero gdy
+// padną wszystkie, czekamy i zaczynamy od nowa.
+const RETRY_PAUSES_MS = [20_000, 60_000];
 
 const ask = async (prompt) => {
   const errors = [];
-  for (const target of chain) {
-    for (let attempt = 0; attempt <= RETRY_PAUSES_MS.length; attempt += 1) {
+  for (let pass = 0; pass <= RETRY_PAUSES_MS.length; pass += 1) {
+    for (const target of chain) {
       try {
         return await askTarget(target, prompt);
       } catch (error) {
-        errors.push(`${target.provider.id}: ${error.message}`);
-        if (!retryable(error.message) || attempt === RETRY_PAUSES_MS.length) break;
-        await new Promise((resolve) => setTimeout(resolve, RETRY_PAUSES_MS[attempt]));
+        errors.push(`${target.provider.id}/${target.model}: ${error.message}`);
       }
     }
+    if (pass < RETRY_PAUSES_MS.length) {
+      await new Promise((resolve) => setTimeout(resolve, RETRY_PAUSES_MS[pass]));
+    }
   }
-  throw new Error(errors.join(' | '));
+  throw new Error(errors.slice(-6).join(' | '));
 };
 
 const selected = [];

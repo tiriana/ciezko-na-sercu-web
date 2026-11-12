@@ -41,11 +41,19 @@ PLAYER_SCALE_DEFAULT = 1.0
 # znacznik `contextMiss`, żeby kolejne przebiegi nie traciły na niej czasu.
 MISS = object()
 
+# (nazwa, zmienna z kluczem, endpoint, modele) — darmowe limity liczą się per model,
+# więc po 429 na jednym modelu ten sam klucz obsłuży zapytanie na następnym.
 PROVIDERS = [
-    ("groq", "GROQ_API_KEY", "https://api.groq.com/openai/v1/chat/completions", "openai/gpt-oss-120b"),
-    ("openrouter", "OPENROUTER_API_KEY", "https://openrouter.ai/api/v1/chat/completions", "openrouter/free"),
-    ("cerebras", "CEREBRAS_API_KEY", "https://api.cerebras.ai/v1/chat/completions", "gpt-oss-120b"),
-    ("mistral", "MISTRAL_API_KEY", "https://api.mistral.ai/v1/chat/completions", "mistral-small-latest"),
+    ("groq", "GROQ_API_KEY", "https://api.groq.com/openai/v1/chat/completions",
+     ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "llama-3.1-8b-instant"]),
+    ("google", "GEMINI_API_KEY", "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+     ["gemini-2.5-flash", "gemini-2.5-flash-lite"]),
+    ("openrouter", "OPENROUTER_API_KEY", "https://openrouter.ai/api/v1/chat/completions",
+     ["openrouter/free"]),
+    ("cerebras", "CEREBRAS_API_KEY", "https://api.cerebras.ai/v1/chat/completions",
+     ["gpt-oss-120b"]),
+    ("mistral", "MISTRAL_API_KEY", "https://api.mistral.ai/v1/chat/completions",
+     ["mistral-small-latest"]),
 ]
 
 
@@ -148,30 +156,31 @@ def preview_pcm(url: str) -> np.ndarray:
 
 
 def ask_model(prompt: str) -> tuple[str | None, list[str]]:
-    errors = []
+    errors: list[str] = []
     tried = 0
-    for name, key_env, url, model in PROVIDERS:
+    for name, key_env, url, models in PROVIDERS:
         key = os.environ.get(key_env)
         if not key:
             continue
         tried += 1
-        body = json.dumps({
-            "model": model,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.1,
-        }).encode()
-        request = urllib.request.Request(url, data=body, headers={
-            "content-type": "application/json",
-            "authorization": f"Bearer {key}",
-            "user-agent": "ciezko-na-sercu/1.0",
-        })
-        try:
-            with urllib.request.urlopen(request, timeout=90) as response:
-                payload = json.load(response)
-            return payload["choices"][0]["message"]["content"], errors
-        except Exception as error:
-            print(f"  {name}: {error}", file=sys.stderr)
-            errors.append(f"{name}: {error}")
+        for model in models:
+            body = json.dumps({
+                "model": model,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.1,
+            }).encode()
+            request = urllib.request.Request(url, data=body, headers={
+                "content-type": "application/json",
+                "authorization": f"Bearer {key}",
+                "user-agent": "ciezko-na-sercu/1.0",
+            })
+            try:
+                with urllib.request.urlopen(request, timeout=90) as response:
+                    payload = json.load(response)
+                return payload["choices"][0]["message"]["content"], errors
+            except Exception as error:
+                print(f"  {name}/{model}: {error}", file=sys.stderr)
+                errors.append(f"{name}/{model}: {error}")
     if tried == 0:
         errors.append("brak klucza dostawcy w środowisku")
     return None, errors
