@@ -2124,6 +2124,7 @@ a {
 }
 
 .report-link {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2156,9 +2157,18 @@ a {
   outline: none;
 }
 
-/* Na klawiaturze i na dotyku nie ma hovera, więc symbol jest widoczny od razu. */
+/* Na dotyku nie ma hovera, więc symbol jest widoczny od razu — tapnięcie wiersza
+   uruchamia odtwarzanie, więc nie ma jak „odkryć” go pierwszym dotknięciem.
+   Sam krążek ma 15 px, ale obszar dotyku rozszerzamy pseudo-elementem. */
+.report-link::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+}
+
 @media (hover: none) {
-  .report-link { opacity: 0.55; }
+  .report-link { opacity: 0.7; }
 }
 
 /* Dymek zgłoszenia i podziękowanie leżą poza dokumentem, więc nic się nie przesuwa. */
