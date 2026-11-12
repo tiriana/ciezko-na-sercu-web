@@ -1,5 +1,6 @@
 [tools]
 node = "24.22.3"
+python = "3.12.16"
 
 [tasks.dev]
 run = "npm run dev"

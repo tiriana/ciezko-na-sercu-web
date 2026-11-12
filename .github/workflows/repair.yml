@@ -91,9 +91,6 @@ jobs:
         with:
           cache: true
 
-      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
-        with:
-          python-version: '3.12'
 
       - run: pip install --quiet numpy
       - run: npm ci

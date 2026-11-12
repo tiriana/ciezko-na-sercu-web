@@ -78,9 +78,9 @@ jobs:
       # Shazam nie zna całego polskiego undergroundu, więc bloki bez trafienia dostają
       # `#TODO`. Ten krok czyta zapowiedź z transkryptu, bierze kandydatów z Deezera
       # i potwierdza ich chromą — zapisuje tylko to, co zgadza się z dźwiękiem.
-      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+      - uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5
         with:
-          python-version: '3.12'
+          cache: true
 
       - name: Zainstaluj numpy
         run: pip install --quiet numpy
