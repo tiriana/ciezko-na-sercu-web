@@ -36,6 +36,8 @@ const ids = [...readdirSync('data/episodes').filter((name) => name.endsWith('.js
       ...(override?.addTracks ?? []),
     ];
     const brokenTrack = tracks.some((track) => {
+      // Kontekst już pytany i nic nie dał — nie licz tego odcinka ponownie.
+      if (track.contextMiss) return false;
       if (track.unrecognized) return true;
       const fixed = fixes.get(Math.round(Number(track.start) * 100));
       return isTodo(fixed ?? track.title) || isTodo(track.artist);

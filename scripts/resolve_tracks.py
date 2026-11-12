@@ -9,7 +9,10 @@ co potwierdziło się dźwiękiem; resztę wypisujemy jako kandydatów do ręczn
 
 Użycie:
   scripts/resolve_tracks.py --episode <uuid> [--write] [--min-score 0.55]
-  scripts/resolve_tracks.py --all [--write]
+  scripts/resolve_tracks.py --all [--write] [--retry-misses]
+
+Po nieudanym rozpoznaniu pozycja dostaje `contextMiss` i kolejne przebiegi ją
+pomijają; `--retry-misses` każe spróbować jeszcze raz (np. po lepszym transkrypcie).
 """
 from __future__ import annotations
 
@@ -34,6 +37,9 @@ HOP = 256
 BANDS = 12
 MIN_SCORE = 0.55
 PLAYER_SCALE_DEFAULT = 1.0
+# Rozpoznanie nie wyszło i kontekst tego nie zmieni — taka pozycja dostaje
+# znacznik `contextMiss`, żeby kolejne przebiegi nie traciły na niej czasu.
+MISS = object()
 
 PROVIDERS = [
     ("groq", "GROQ_API_KEY", "https://api.groq.com/openai/v1/chat/completions", "openai/gpt-oss-120b"),
@@ -106,6 +112,29 @@ def deezer_tracks(query: str) -> list[dict]:
             "title": full.get("title") or track.get("title"),
             "duration": full.get("duration") or track.get("duration") or 0,
             "preview": full.get("preview"),
+        })
+    return tracks
+
+
+def deezer_track_search(artist: str, title: str = "", limit: int = 25) -> list[dict]:
+    """Szuka pojedynczych utworów, gdy nie znamy albumu — wykonawca plus tytuł, jeśli jest."""
+    query = " ".join(part for part in (artist, title) if part)
+    if not query:
+        return []
+    try:
+        payload = fetch_json(
+            f"https://api.deezer.com/search/track?q={urllib.parse.quote(query)}&limit={limit}"
+        )
+    except Exception:
+        return []
+    tracks = []
+    for item in payload.get("data", [])[:limit]:
+        tracks.append({
+            "artist": (item.get("artist") or {}).get("name"),
+            "album": (item.get("album") or {}).get("title"),
+            "title": item.get("title"),
+            "duration": item.get("duration") or 0,
+            "preview": item.get("preview"),
         })
     return tracks
 
@@ -197,7 +226,7 @@ def match_gap(gap: np.ndarray, tracks: list[dict]) -> list[dict]:
     return scores
 
 
-def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
+def resolve_episode(episode_id: str, write: bool, min_score: float, retry_misses: bool = False) -> None:
     catalog = read_json(ROOT / "data" / "catalog.json")
     entry = next((e for e in catalog["episodes"] if e["id"] == episode_id), None)
     if not entry:
@@ -214,10 +243,16 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
         scale = episode["durationSec"] / episode["audioDurationSec"]
 
     # Ręcznie dodany utwór ma flagę `unrecognized`; starsze wpisy mają jeszcze tytuł #TODO.
+    # `contextMiss` znaczy „kontekst już pytany i nic z tego” — nie pytamy drugi raz.
+    def unresolved(track: dict) -> bool:
+        if track.get("contextMiss") and not retry_misses:
+            return False
+        return bool(track.get("unrecognized") or re.search(r"#TODO", track.get("title") or ""))
+
     override_gaps = [
         track
         for track in (override.get("addTracks") or []) + (override.get("tracks") or [])
-        if track.get("unrecognized") or re.search(r"#TODO", track.get("title") or "")
+        if unresolved(track)
     ]
     # Shazam czasem rozpoznaje tylko wykonawcę — taki utwór z epizodu też jest do naprawy.
     fixed_starts = {
@@ -228,9 +263,15 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
     episode_gaps = [
         track
         for track in episode.get("tracks", [])
-        if not (track.get("title") or "").strip()
-        or track.get("unrecognized")
-        or re.search(r"#TODO", track.get("title") or "")
+        if (track.get("contextMiss") and retry_misses)
+        or (
+            not track.get("contextMiss")
+            and (
+                not (track.get("title") or "").strip()
+                or track.get("unrecognized")
+                or re.search(r"#TODO", track.get("title") or "")
+            )
+        )
     ]
     episode_gaps = [track for track in episode_gaps if round(float(track["start"]), 2) not in fixed_starts]
 
@@ -274,8 +315,12 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
         query = " ".join(part for part in (candidate["artist"], candidate["album"]) if part)
         found = deezer_tracks(query)
         if not found:
-            print("    brak albumu w Deezerze — zostawiam")
-            return None
+            found = deezer_track_search(candidate["artist"], candidate["title"])
+            if found:
+                print(f"    bez albumu — szukam po utworach ({len(found)})")
+        if not found:
+            print("    brak albumu i utworów w Deezerze — zapamiętuję")
+            return MISS
 
         if audio is None:
             if not entry.get("audioUrl"):
@@ -290,21 +335,25 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
             print("    odrzucam kandydatów, którzy już są w tym odcinku")
         ranked = [item for item in ranked if key(item["artist"], item["title"]) not in known]
         if not ranked:
-            print("    brak podglądów do porównania — zostawiam")
-            return None
+            print("    brak podglądów do porównania — zapamiętuję")
+            return MISS
 
         best = ranked[0]
         second = ranked[1]["score"] if len(ranked) > 1 else 0.0
         print(f"    chroma: {best['score']:+.3f} (drugi {second:+.3f}) → {best['artist']} — {best['title']} [{best['album']}]")
         if best["score"] < min_score or best["score"] - second < 0.05:
-            print("    za słabe dopasowanie — zostawiam do ręcznej decyzji")
-            return None
+            print("    za słabe dopasowanie — zapamiętuję do ręcznej decyzji")
+            return MISS
 
         return best, ranked, candidate, start_player, length
 
     override_changed = False
     for gap in sorted(override_gaps, key=lambda t: t["start"]):
         result = resolve(gap)
+        if result is MISS:
+            gap["contextMiss"] = True
+            override_changed = True
+            continue
         if not result:
             continue
         best, ranked, candidate, start_player, length = result
@@ -313,6 +362,7 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
         gap["title"] = best["title"]
         gap["album"] = best["album"]
         gap.pop("unrecognized", None)
+        gap.pop("contextMiss", None)
         known.add(key(best["artist"], best["title"]))
         if candidate["title"] and candidate["title"].lower() == str(best["title"]).lower():
             print("    tytuł zgodny z zapowiedzią")
@@ -340,6 +390,10 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
     episode_changed = False
     for gap in sorted(episode_gaps, key=lambda t: t["start"]):
         result = resolve(gap)
+        if result is MISS:
+            gap["contextMiss"] = True
+            episode_changed = True
+            continue
         if not result:
             continue
         best = result[0]
@@ -347,6 +401,7 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
         gap["title"] = best["title"]
         gap["album"] = best["album"]
         gap.pop("unrecognized", None)
+        gap.pop("contextMiss", None)
         known.add(key(best["artist"], best["title"]))
         episode_changed = True
 
@@ -366,6 +421,7 @@ def main() -> int:
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--write", action="store_true")
     parser.add_argument("--min-score", type=float, default=MIN_SCORE)
+    parser.add_argument("--retry-misses", action="store_true")
     args = parser.parse_args()
 
     catalog = read_json(ROOT / "data" / "catalog.json")
@@ -381,7 +437,7 @@ def main() -> int:
         parser.error("podaj --episode albo --all")
 
     for episode_id in ids:
-        resolve_episode(episode_id, args.write, args.min_score)
+        resolve_episode(episode_id, args.write, args.min_score, args.retry_misses)
     return 0
 
 
