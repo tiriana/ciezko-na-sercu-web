@@ -323,6 +323,30 @@
       "time": 4973.97,
       "label": "Abuser – album „Bloodmarks”",
       "hide": true
+    },
+    {
+      "time": 5815.55,
+      "label": "Totenmesse – płyta „Married the Thrill and Rape the Compromise”",
+      "start": 5802.73,
+      "newLabel": "Totenmesse – płyta „Married the Thrill and Rape the Compromise” / Garota – mini‑album „Strąceni w Ciemność”",
+      "end": 6091.04
+    },
+    {
+      "time": 5834.43,
+      "label": "Garota – mini‑album „Strąceni w Ciemność”",
+      "hide": true
+    },
+    {
+      "time": 6091.04,
+      "label": "Terrestrial Hospice – wydawnictwo „Omnicide Chapter One”",
+      "start": 6077.24,
+      "newLabel": "Terrestrial Hospice – wydawnictwo „Omnicide Chapter One” / Podsumowanie – przegląd polskich projektów metalowych",
+      "end": 6111.44
+    },
+    {
+      "time": 6099,
+      "label": "Podsumowanie – przegląd polskich projektów metalowych",
+      "hide": true
     }
   ],
   "addTracks": [
@@ -370,18 +394,27 @@
       "durationSec": 194.52
     },
     {
+      "artist": "",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
+      "start": 5318.98,
+      "durationSec": 139.34000000000015
+    },
+    {
       "artist": "Profeci",
       "title": "Niepokoje",
       "album": "Troska",
       "start": 5458.59,
-      "durationSec": 344.13
+      "durationSec": 344.13,
+      "end": 5802.73
     },
     {
       "artist": "Garota",
       "title": "Strąceni w Ciemność",
       "album": "Strąceni w Ciemność",
       "start": 5836.14,
-      "durationSec": 241.08
+      "durationSec": 241.08,
+      "end": 6077.24
     }
   ],
   "addTopics": [
@@ -404,6 +437,14 @@
     {
       "label": "#TODO - wygeneruj opis znacznika",
       "start": 5148.05
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 5399.43
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 6452.38
     }
   ],
   "credits": {
