@@ -106,26 +106,26 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
-      # Artefakt zachowuje ścieżkę pliku, więc po rozpakowaniu leży w `.spans/data/artifacts/…`.
+      # Każdy artefakt rozpakowujemy do własnego katalogu: archiwa mają w środku
+      # samo `speech-spans.json`, więc `merge-multiple` nadpisywałby jeden drugim.
       - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
         with:
           pattern: spans-*
           path: .spans
-          merge-multiple: true
 
       - run: npm ci
 
-      # Układ katalogów w artefakcie zależy od tego, co było wspólnym korzeniem ścieżek,
-      # więc szukamy plików po nazwie i bierzemy identyfikator odcinka z katalogu obok.
       - name: Włóż artefakty do repozytorium
         run: |
           count=0
-          while IFS= read -r file; do
+          for file in .spans/spans-*/speech-spans.json; do
+            [ -e "$file" ] || continue
             id=$(basename "$(dirname "$file")")
+            id=${id#spans-}
             mkdir -p "data/artifacts/$id"
             cp "$file" "data/artifacts/$id/speech-spans.json"
             count=$((count + 1))
-          done < <(find .spans -name 'speech-spans.json')
+          done
           echo "włożonych artefaktów: $count"
           find data/artifacts -name 'speech-spans.json' | sort
 
