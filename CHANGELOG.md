@@ -1,3 +1,9 @@
+## [1.47.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.47.0...v1.47.1) (2026-11-12)
+
+### Bug Fixes
+
+* **edytor:** schowana lista oddaje całą szerokość; znaczniki typu w menu jak na waveformie ([994b1a9](https://github.com/tiriana/ciezko-na-sercu-web/commit/994b1a915360eba4ff5af2ee67353e14edc27ac5))
+
 ## [1.47.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.46.1...v1.47.0) (2026-11-12)
 
 ### Features
