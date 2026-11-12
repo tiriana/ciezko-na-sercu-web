@@ -1,3 +1,9 @@
+## [1.56.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.55.0...v1.56.0) (2026-11-12)
+
+### Features
+
+* **track:** skip tracks marked as contextMiss ([8a28f1e](https://github.com/tiriana/ciezko-na-sercu-web/commit/8a28f1e143b6e2ae9574db7abd5061bbcdc43907))
+
 ## [1.55.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.54.0...v1.55.0) (2026-11-12)
 
 ### Features
