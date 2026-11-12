@@ -126,6 +126,13 @@ for (const name of await readdir(EPISODES)) {
   const reconciled = episode.topics.length === 0 || episode.topics.every((topic) => topic.end !== undefined);
   if (!reconciled) staleTimeline.push(name);
 
+  // Kolejność w pliku to kolejność na stronie; `snap-topics` sortuje po każdym
+  // pushu, więc rozjazd oznacza ręczną edycję bez przeliczenia.
+  const topicStarts = episode.topics.map((topic) => topic.start);
+  if (!topicStarts.every((start, index) => index === 0 || start >= topicStarts[index - 1])) {
+    problems.push(`${name}: wejścia nie są w kolejności czasu`);
+  }
+
   const positions = reconciled
     ? [
         ...episode.tracks.map((track) => ({ start: track.start, end: track.end ?? track.start + track.durationSec })),
