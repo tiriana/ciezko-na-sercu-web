@@ -1,3 +1,9 @@
+## [1.49.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.48.0...v1.49.0) (2026-11-12)
+
+### Features
+
+* **overrides:** add new timeline entries and topics ([1979501](https://github.com/tiriana/ciezko-na-sercu-web/commit/1979501b6b921cf3ecbafc4d2e677ab8eee4ff0a))
+
 ## [1.48.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.47.2...v1.48.0) (2026-11-12)
 
 ### Features
