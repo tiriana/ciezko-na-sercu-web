@@ -69,9 +69,9 @@ jobs:
       - name: Zainstaluj ffmpeg
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
-      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+      - uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5
         with:
-          python-version: '3.12'
+          cache: true
 
       - name: Zainstaluj onnxruntime
         run: pip install --quiet numpy onnxruntime
