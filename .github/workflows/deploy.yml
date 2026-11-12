@@ -1,8 +1,11 @@
 name: deploy
 
 on:
+  # Produkcja (`main`) idzie wyłącznie dispatchem z wersją — jeden push to jeden
+  # `deploy v1.48.x` zamówiony przez `release.yml`. Gałęzie robocze publikują się
+  # same, bo tam numer wersji nic nie mówi.
   push:
-    branches: [main, develop, v2]
+    branches: [develop, v2]
   workflow_dispatch:
     inputs:
       version:

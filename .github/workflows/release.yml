@@ -32,8 +32,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Commit z podbitą wersją powstał z tokena Actions, więc sam nie uruchomi deployu.
       # Dispatch przechodzi przez tę blokadę i publikuje stronę już z nowym numerem.
+      # `always()`: awaria wersjonowania nie może zatrzymać publikacji kodu — deploy
+      # pójdzie z numerem, jaki akurat leży w `package.json`.
       - name: Deploy po wydaniu
-        if: success()
+        if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run deploy.yml --ref main -f version="$(node -p "require('./package.json').version")"

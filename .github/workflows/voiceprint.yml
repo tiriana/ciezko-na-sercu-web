@@ -131,7 +131,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           bash scripts/push-data.sh "fix: wejścia z profilu głosu (${GITHUB_RUN_ID})" data/overrides data/voiceprint.json
-          gh workflow run deploy.yml --ref main
+          gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
           # Wejścia są już w danych, więc model może je nazwać i streścić odcinek.
           if [ -n "$EPISODES" ]; then
             gh workflow run enrich.yml --ref main -f episodes="$EPISODES"
