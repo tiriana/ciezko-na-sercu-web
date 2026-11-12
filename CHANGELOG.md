@@ -1,3 +1,13 @@
+## [1.42.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.41.3...v1.42.0) (2026-11-12)
+
+### Features
+
+* jednorazowe przeliczenie czasów odcinków na skalę odtwarzacza ([94aed14](https://github.com/tiriana/ciezko-na-sercu-web/commit/94aed14e32b6d9db5272bd434f89379999bbb4b5))
+
+### Bug Fixes
+
+* przeliczenie czasów 105 odcinków na skalę odtwarzacza; plakietka skali w edytorze ([ec8b14f](https://github.com/tiriana/ciezko-na-sercu-web/commit/ec8b14f75e47838c0b87220b278084f336c24ae8))
+
 ## [1.41.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.41.2...v1.41.3) (2026-11-11)
 
 ### Bug Fixes
