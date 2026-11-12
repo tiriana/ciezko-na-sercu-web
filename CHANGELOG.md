@@ -1,3 +1,13 @@
+## [1.65.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.64.0...v1.65.0) (2026-11-12)
+
+### Features
+
+* skracanie etykiet wejść do jednego tematu ([7cf1754](https://github.com/tiriana/ciezko-na-sercu-web/commit/7cf17542059bc9f074e08547f2889db47459b66d))
+
+### Bug Fixes
+
+* krótsze opisy wejść w odcinku 11 listopada (216a8fd5) ([fef887b](https://github.com/tiriana/ciezko-na-sercu-web/commit/fef887baff85bd2e529bb0120052d441ff11e206))
+
 ## [1.64.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.63.0...v1.64.0) (2026-11-12)
 
 ### Features
