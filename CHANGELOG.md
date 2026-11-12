@@ -1,3 +1,9 @@
+## [1.61.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.60.0...v1.61.0) (2026-11-12)
+
+### Features
+
+* **enrich-episode:** wip add progressive retry backoff ([8fed78a](https://github.com/tiriana/ciezko-na-sercu-web/commit/8fed78a9a96e27b3ed872cb1885976f4a979bd51))
+
 ## [1.60.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.59.0...v1.60.0) (2026-11-12)
 
 ### Features
