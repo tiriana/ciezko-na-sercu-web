@@ -362,20 +362,22 @@ const askTarget = async (target, prompt) => {
   return parseLooseJson(raw);
 };
 
-// Limit na minutę mija po kilkunastu sekundach, więc jedno ponowienie zwykle
-// wystarcza; dopiero potem łańcuch przeskakuje do następnego dostawcy.
+// Limit na minutę mija po kilkudziesięciu sekundach, a przy jednym kluczu
+// (Groq: 8000 TPM) map-reduce i tak wyczerpuje okno — dlatego czekamy coraz dłużej,
+// zamiast po jednej próbie rezygnować z całego odcinka.
 const retryable = (message) => /\b(429|500|502|503|504)\b|fetch failed|timeout|aborted/i.test(message);
+const RETRY_PAUSES_MS = [15_000, 45_000, 90_000];
 
 const ask = async (prompt) => {
   const errors = [];
   for (const target of chain) {
-    for (let attempt = 1; attempt <= 2; attempt += 1) {
+    for (let attempt = 0; attempt <= RETRY_PAUSES_MS.length; attempt += 1) {
       try {
         return await askTarget(target, prompt);
       } catch (error) {
         errors.push(`${target.provider.id}: ${error.message}`);
-        if (!retryable(error.message) || attempt === 2) break;
-        await new Promise((resolve) => setTimeout(resolve, RATE_LIMIT_PAUSE_MS));
+        if (!retryable(error.message) || attempt === RETRY_PAUSES_MS.length) break;
+        await new Promise((resolve) => setTimeout(resolve, RETRY_PAUSES_MS[attempt]));
       }
     }
   }
