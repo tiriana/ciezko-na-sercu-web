@@ -1,3 +1,9 @@
+## [1.53.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.52.0...v1.53.0) (2026-11-12)
+
+### Features
+
+* na dotyku zgłoszenie widoczne od razu i z większym obszarem dotyku ([7084348](https://github.com/tiriana/ciezko-na-sercu-web/commit/7084348be1ad99850e8295ef79f1ab8b4c120369))
+
 ## [1.52.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.51.0...v1.52.0) (2026-11-12)
 
 ### Features
