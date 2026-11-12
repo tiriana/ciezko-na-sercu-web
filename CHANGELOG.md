@@ -1,3 +1,13 @@
+## [1.58.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.57.1...v1.58.0) (2026-11-12)
+
+### Features
+
+* **enrich-episode:** wip support draft labels in prompt generation ([ed30bf9](https://github.com/tiriana/ciezko-na-sercu-web/commit/ed30bf93a13d971b0a85d1763ac19b5c9dc643c9))
+
+### Bug Fixes
+
+* naprawa utworów i wejść bez opisu (a4672fcc-020a-433e-8d92-8d9da183de31, 43148647619) ([3558990](https://github.com/tiriana/ciezko-na-sercu-web/commit/3558990d27c813a1c6977236d3faf87d2907af13))
+
 ## [1.57.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.57.0...v1.57.1) (2026-11-12)
 
 ### Bug Fixes
