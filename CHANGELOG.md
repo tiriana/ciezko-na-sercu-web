@@ -1,3 +1,9 @@
+## [1.74.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.73.0...v1.74.0) (2026-11-12)
+
+### Features
+
+* check-data pilnuje kolejności wejść w odcinku ([a6a9c27](https://github.com/tiriana/ciezko-na-sercu-web/commit/a6a9c27928407edce3c0568fb2af42a439db6480))
+
 ## [1.73.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.72.0...v1.73.0) (2026-11-12)
 
 ### Features
