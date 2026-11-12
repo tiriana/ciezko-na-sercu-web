@@ -182,7 +182,8 @@ def context_text(transcript: dict, start_real: float, seconds: float = 150) -> s
     return " ".join(str(s.get("text", "")).strip() for s in window)[-1500:]
 
 
-def candidate_from_context(text: str) -> dict | None:
+def candidate_from_context(text: str) -> tuple[dict | None, str, bool]:
+    """Kandydat z zapowiedzi: (utwór, powód niepowodzenia, czy to już pewne)."""
     if not text.strip():
         return None
     prompt = (
@@ -193,20 +194,20 @@ def candidate_from_context(text: str) -> dict | None:
     )
     answer, errors = ask_model(prompt)
     if not answer:
-        return None, "model nie odpowiedział: " + "; ".join(errors[:2])
+        return None, "model nie odpowiedział: " + "; ".join(errors[:2]), False
     match = re.search(r"\{.*\}", answer, re.S)
     if not match:
-        return None, f"model oddał nie-JSON: {answer[:80]}"
+        return None, f"model oddał nie-JSON: {answer[:80]}", False
     try:
         data = json.loads(match.group(0))
     except json.JSONDecodeError:
-        return None, f"model oddał niepoprawny JSON: {answer[:80]}"
+        return None, f"model oddał niepoprawny JSON: {answer[:80]}", False
     artist = str(data.get("artist") or "").strip()
     album = str(data.get("album") or "").strip()
     title = str(data.get("title") or "").strip()
     if not artist:
-        return None, f"w kontekście nie ma wykonawcy (model: {answer.strip()[:80]})"
-    return {"artist": artist, "album": album, "title": title}, ""
+        return None, f"w kontekście nie ma wykonawcy (model: {answer.strip()[:80]})", True
+    return {"artist": artist, "album": album, "title": title}, "", True
 
 
 def match_gap(gap: np.ndarray, tracks: list[dict]) -> list[dict]:
@@ -315,10 +316,10 @@ def resolve_episode(episode_id: str, write: bool, min_score: float, retry_misses
         if not text.strip():
             print("    brak tekstu w transkrypcie wokół tego czasu — zostawiam")
             return MISS
-        candidate, why = candidate_from_context(text)
+        candidate, why, definitive = candidate_from_context(text)
         if not candidate:
             print(f"    {why} — zostawiam")
-            return None
+            return MISS if definitive else None
         print(f"    kontekst: {candidate['artist']} | {candidate['album']} | {candidate['title']}")
 
         query = " ".join(part for part in (candidate["artist"], candidate["album"]) if part)
