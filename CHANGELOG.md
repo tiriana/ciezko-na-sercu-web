@@ -1,3 +1,9 @@
+## [1.67.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.66.1...v1.67.0) (2026-11-12)
+
+### Features
+
+* **ui:** wejścia subtelniejsze niż utwory ([0d3a40f](https://github.com/tiriana/ciezko-na-sercu-web/commit/0d3a40fb83072ef196ea277fd9a307865a08f100))
+
 ## [1.66.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.66.0...v1.66.1) (2026-11-12)
 
 ### Bug Fixes
