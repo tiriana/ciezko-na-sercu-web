@@ -22,8 +22,8 @@ import { askJson, describeCandidates } from './lib/llm.mjs';
 const CHUNK_CHARS = 9000;
 const SUMMARY_MIN = 120;
 const SUMMARY_MAX = 1200;
-// Etykieta ma być zwięzła; 90 znaków to górna granica z zapasem na nazwy własne.
-const LABEL_MAX = 90;
+// Etykieta ma być zwięzła; 70 znaków to górna granica z zapasem na nazwy własne.
+const LABEL_MAX = 70;
 
 const args = new Map();
 for (let index = 2; index < process.argv.length; index += 1) {
@@ -96,7 +96,7 @@ const usableLabel = (label) => {
   if (!text || text.length > LABEL_MAX) return false;
   if (/brak tytułu|\(brak|#TODO/i.test(text)) return false;
   const words = text.split(/\s+/).length;
-  return words >= 3 && words <= 10;
+  return words >= 2 && words <= 8;
 };
 
 // Darmowe tiery liczą tokeny na minutę, a pełny transkrypt bywa większy niż cały
@@ -162,7 +162,7 @@ const finalPrompt = (episode, notes, topics, needsTitle = false) => {
     '',
     'Zadania:',
     '1. "summary": 3–5 zdań streszczenia odcinka po polsku — o czym była audycja, jakie płyty i zespoły, co je łączy. Bez wstępów typu „w tym odcinku".',
-    '2. "labels": dla każdego wejścia zwięzła nazwa redakcyjna (3–7 słów, maks. 70 znaków): wskaż 1–2 główne tematy i krótko je opisz. Gdy wejście wymienia kilka płyt czy zespołów, wybierz główny wątek zamiast wyliczać. Oddaj numer startu wejścia w polu "start".',
+    '2. "labels": dla każdego wejścia zwięzła nazwa redakcyjna (2–6 słów, maks. 60 znaków): wskaż jeden najważniejszy temat i krótko go opisz. Nie wyliczaj płyt, zespołów ani dodatków — szczegóły są w streszczeniu. Oddaj numer startu wejścia w polu "start".',
     ...(needsTitle
       ? ['3. "title": tytuł odcinka na stronę (4–8 słów), oddający główny temat — bez cudzysłowów, bez daty i godziny, bez „Ciężko na sercu”.']
       : []),
@@ -201,14 +201,14 @@ const labelPrompt = (episode, topic, context) => {
           'OBECNY OPIS (szkic do poprawy):',
           draft,
           '',
-          'Zadanie: skróć i uporządkuj ten opis — usuń znacznik #TODO, zostaw 1–2 główne tematy',
-          'w 3–7 słowach (maks. 70 znaków) i nie dodawaj faktów, których nie ma w szkicu.',
+          'Zadanie: skróć i uporządkuj ten opis — usuń znacznik #TODO, zostaw jeden najważniejszy temat',
+          'w 2–6 słowach (maks. 60 znaków) i nie dodawaj faktów, których nie ma w szkicu.',
           'Nazwy własne zostaw dokładnie tak, jak są zapisane; nie wyliczaj wszystkiego, co wymienia szkic.',
         ]
       : [
           '',
-          'Zadanie: nazwij to wejście po polsku (3–7 słów, maks. 70 znaków) — opisz 1–2 główne',
-          'tematy wypowiedzi prowadzącego. Nie wyliczaj wszystkich wymienionych płyt i zespołów.',
+          'Zadanie: nazwij to wejście po polsku (2–6 słów, maks. 60 znaków) — wskaż jeden najważniejszy',
+          'temat wypowiedzi prowadzącego. Nie wyliczaj wymienionych płyt i zespołów.',
         ]),
     'Bez wstępów, bez cudzysłowów, bez powtarzania numeru czasu.',
     '',
