@@ -135,7 +135,9 @@ Workflow:
 1. [docs/plan.md](docs/plan.md) — zakres, model danych, harmonogram, ryzyka.
 2. [docs/design.md](docs/design.md) — co przenosimy z wyglądu Trójki, a czego nie.
 3. [docs/stack.md](docs/stack.md) — wybór generatora i odrzucone alternatywy.
-4. `mockup/` — statyczny mockup, z którego powstał layout (nie jest deployowany).
+4. [docs/llm.md](docs/llm.md) — wybór modelu językowego: darmowe limity dostawców,
+   losowanie, karencje i diagnoza.
+5. `mockup/` — statyczny mockup, z którego powstał layout (nie jest deployowany).
 
 Odcinki, w których choć jeden znacznik oznaczono w edytorze jako „ok”, są nietykalne
 dla automatów: `snap-boundaries`, `snap-topics` i `import-tagger` pomijają je i mówią

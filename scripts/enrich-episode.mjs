@@ -9,69 +9,21 @@
  * dodane w edytorze leżą w `data/overrides` — ich `#TODO` naprawiamy w miejscu,
  * a nie przez usunięcie wpisu.
  *
- * Dostawcy to darmowe tiery zgodne z API OpenAI (Groq, OpenRouter, Cerebras,
- * Google AI Studio, Mistral); klucz z ich zmiennej środowiskowej włącza dostawcę,
- * a łańcuch przeskakuje do następnego, gdy limit albo błąd zatrzyma poprzedniego.
+ * Modele wybiera `scripts/lib/llm.mjs`: katalog z API dostawcy, losowa kolejność
+ * i karencja po 429 — ten skrypt nie zna nazw dostawców.
  *
  *   node scripts/enrich-episode.mjs [--episodes <id|slug,...>] [--limit N] [--model groq:model,...] [--force] [--write]
  */
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 
 import { isTechnicalTitle } from '../src/lib/titles.ts';
+import { askJson, describeCandidates } from './lib/llm.mjs';
 
-const ENDPOINT_TIMEOUT_MS = 90000;
 const CHUNK_CHARS = 9000;
 const SUMMARY_MIN = 120;
 const SUMMARY_MAX = 1200;
 // Dwa wydawnictwa w jednej etykiecie to nie błąd — poprawiony opis bywa długi.
 const LABEL_MAX = 140;
-
-// Dostawcy zgodni z API OpenAI (chat/completions). Każdy ma darmowy tier, a klucz
-// czytamy z osobnej zmiennej: brak klucza po prostu wyłącza dostawcę z łańcucha,
-// więc ten sam kod działa z jednym i z pięcioma.
-//
-// Modeli jest kilka na dostawcę, bo darmowe limity liczą się per model — po 429
-// na jednym modelu Groqa ten sam klucz obsłuży zapytanie na innym.
-const PROVIDERS = [
-  {
-    id: 'groq',
-    endpoint: 'https://api.groq.com/openai/v1/chat/completions',
-    apiKeyEnv: 'GROQ_API_KEY',
-    models: ['openai/gpt-oss-120b', 'llama-3.3-70b-versatile', 'llama-3.1-8b-instant'],
-  },
-  {
-    id: 'google',
-    endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions',
-    apiKeyEnv: 'GEMINI_API_KEY',
-    models: ['gemini-2.5-flash', 'gemini-2.5-flash-lite'],
-  },
-  {
-    id: 'openrouter',
-    endpoint: 'https://openrouter.ai/api/v1/chat/completions',
-    apiKeyEnv: 'OPENROUTER_API_KEY',
-    models: ['openrouter/free'],
-    headers: { 'HTTP-Referer': 'https://ciezko-na-sercu.pages.dev', 'X-Title': 'ciezko-na-sercu-web' },
-  },
-  {
-    id: 'cerebras',
-    endpoint: 'https://api.cerebras.ai/v1/chat/completions',
-    apiKeyEnv: 'CEREBRAS_API_KEY',
-    models: ['gpt-oss-120b'],
-  },
-  {
-    id: 'mistral',
-    endpoint: 'https://api.mistral.ai/v1/chat/completions',
-    apiKeyEnv: 'MISTRAL_API_KEY',
-    models: ['mistral-small-latest'],
-  },
-  {
-    id: 'cloudflare',
-    endpoint: 'https://api.cloudflare.com/client/v4/accounts/{account}/ai/v1/chat/completions',
-    apiKeyEnv: 'CLOUDFLARE_API_KEY',
-    accountEnv: 'CLOUDFLARE_ACCOUNT_ID',
-    models: ['@cf/meta/llama-3.3-70b-instruct-fp8-fast', '@cf/meta/llama-3.1-8b-instruct'],
-  },
-];
 
 const args = new Map();
 for (let index = 2; index < process.argv.length; index += 1) {
@@ -99,43 +51,13 @@ const round = (value) => Math.round(value * 100) / 100;
 // Ten sam klucz znacznika „ok”, którego używa edytor: NFC, bez spacji na brzegach, małe litery.
 const normalizeLabel = (value) => String(value ?? '').normalize('NFC').trim().toLowerCase();
 
-// Łańcuch: `--model groq:openai/gpt-oss-120b,openrouter` albo same id dostawców.
-// Bez wskazania bierzemy wszystkich, którzy mają klucz, w kolejności z listy,
-// i wszystkie ich modele — po limicie jednego modelu idzie następny.
-const endpointOf = (provider) =>
-  provider.accountEnv
-    ? provider.endpoint.replace('{account}', encodeURIComponent(process.env[provider.accountEnv] ?? ''))
-    : provider.endpoint;
-
-const targets = () => {
-  const entries = model
-    .split(',')
-    .map((value) => value.trim())
-    .filter(Boolean);
-  const list = [];
-  for (const entry of entries.length > 0 ? entries : PROVIDERS.map((provider) => provider.id)) {
-    const [id, ...rest] = entry.split(':');
-    const provider = PROVIDERS.find((candidate) => candidate.id === id);
-    if (!provider) {
-      console.error(`Nieznany dostawca: ${id}`);
-      continue;
-    }
-    const apiKey = process.env[provider.apiKeyEnv];
-    if (!apiKey) continue;
-    if (provider.accountEnv && !process.env[provider.accountEnv]) {
-      console.error(`${provider.id}: brak ${provider.accountEnv} — pomijam`);
-      continue;
-    }
-    const models = rest.length > 0 ? [rest.join(':')] : provider.models;
-    for (const candidate of models) list.push({ provider, apiKey, model: candidate });
-  }
-  return list;
-};
-
-const chain = targets();
-if (chain.length === 0) {
-  const names = PROVIDERS.map((provider) => provider.apiKeyEnv).join(', ');
-  console.error(`Brak klucza dostawcy modeli. Ustaw jeden z: ${names}.`);
+// `--model groq:openai/gpt-oss-120b,openrouter` tylko zawęża losowanie z modułu
+// (przydatne przy diagnozie); bez tego flagi wchodzą wszyscy dostawcy z kluczem.
+const available = await describeCandidates({ models: model });
+if (available.length === 0) {
+  console.error(
+    'Brak modeli do użycia. Ustaw GROQ_API_KEY, GEMINI_API_KEY, OPENROUTER_API_KEY albo CLOUDFLARE_API_KEY (+ CLOUDFLARE_ACCOUNT_ID).'
+  );
   process.exit(1);
 }
 
@@ -299,8 +221,8 @@ const topicContext = (transcript, start, end) =>
 const askLabel = async (episode, transcript, topic) => {
   const context = topicContext(transcript, topic.start, topic.end ?? topic.start + 120);
   if (!context) return null;
-  const answer = await ask(labelPrompt(episode, topic, context));
-  const label = String(answer?.label ?? '').trim();
+  const answer = await askLabelText(labelPrompt(episode, topic, context));
+  const label = String(answer.data?.label ?? '').trim();
   return usableLabel(label) ? label : null;
 };
 
@@ -329,79 +251,12 @@ const creditsPrompt = (episode, transcript) => {
   ].join('\n');
 };
 
-// Modele oddają czasem płotki z markdownem albo przecinek przed klamrą —
-// taniej to naprawić niż tracić całe wywołanie.
-const parseLooseJson = (raw) => {
-  const start = raw.indexOf('{');
-  const end = raw.lastIndexOf('}');
-  if (start < 0 || end <= start) throw new Error('brak JSON-a w odpowiedzi');
-  const slice = raw.slice(start, end + 1);
-  try {
-    return JSON.parse(slice);
-  } catch {
-    const repaired = slice.replace(/,\s*([}\]])/g, '$1').replace(/\n/g, ' ');
-    return JSON.parse(repaired);
-  }
-};
-
-const askTarget = async (target, prompt) => {
-  const response = await fetch(target.provider.endpoint, {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${target.apiKey}`,
-      'Content-Type': 'application/json',
-      ...(target.provider.headers ?? {}),
-    },
-    signal: AbortSignal.timeout(ENDPOINT_TIMEOUT_MS),
-    body: JSON.stringify({
-      model: target.model,
-      temperature: 0.2,
-      ...(target.provider.extraBody ?? {}),
-      messages: [
-        {
-          role: 'system',
-          content:
-            'Jesteś redaktorem serwisu o muzyce metalowej i rockowej. Piszesz po polsku, rzeczowo i konkretnie, bez patosu i bez powtarzania pytania. Zwracasz wyłącznie poprawny JSON.',
-        },
-        { role: 'user', content: prompt },
-      ],
-    }),
-  });
-
-  const body = await response.text();
-  if (!response.ok) throw new Error(`${target.provider.id} ${response.status}: ${body.slice(0, 200)}`);
-
-  let payload;
-  try {
-    payload = JSON.parse(body);
-  } catch {
-    throw new Error(`${target.provider.id} odpowiedział nie-JSON-em: ${body.slice(0, 120)}`);
-  }
-  const raw = payload?.choices?.[0]?.message?.content ?? '';
-  return parseLooseJson(raw);
-};
-
-// Limit na minutę mija po kilkudziesięciu sekundach, ale jeden przebieg po całym
-// łańcuchu zwykle wystarcza: 429 na jednym modelu obsłuży sąsiedni. Dopiero gdy
-// padną wszystkie, czekamy i zaczynamy od nowa.
-const RETRY_PAUSES_MS = [20_000, 60_000];
-
-const ask = async (prompt) => {
-  const errors = [];
-  for (let pass = 0; pass <= RETRY_PAUSES_MS.length; pass += 1) {
-    for (const target of chain) {
-      try {
-        return await askTarget(target, prompt);
-      } catch (error) {
-        errors.push(`${target.provider.id}/${target.model}: ${error.message}`);
-      }
-    }
-    if (pass < RETRY_PAUSES_MS.length) {
-      await new Promise((resolve) => setTimeout(resolve, RETRY_PAUSES_MS[pass]));
-    }
-  }
-  throw new Error(errors.slice(-6).join(' | '));
-};
+// Model pytamy przez moduł: on wybiera kandydata, mierzy czas i zapisuje karencję
+// po 429. Tutaj zostaje tylko limit tokenów właściwy dla zadania.
+const askNotes = (prompt) => askJson(prompt, { models: model, maxTokens: 300, temperature: 0.2 });
+const askLabels = (prompt) => askJson(prompt, { models: model, maxTokens: 2000, temperature: 0.2 });
+const askLabelText = (prompt) => askJson(prompt, { models: model, maxTokens: 200, temperature: 0.2 });
+const askCredits = (prompt) => askJson(prompt, { models: model, maxTokens: 800, temperature: 0.2 });
 
 const selected = [];
 if (wanted.length > 0) {
@@ -479,14 +334,16 @@ for (const entry of selected) {
     continue;
   }
 
-  // Notatki z całego transkryptu są potrzebne tylko do streszczenia i etykiet —
-  // gdy brakuje wyłącznie kredytów, nie palimy limitu na map-reduce.
+  // Notatki z całego transkryptu i odpowiedź zbiorcza służą streszczeniu i tytułowi.
+  // Etykiety wejść pytamy punktowo (własnym kontekstem), więc naprawa samych `#TODO`
+  // nie płaci za map-reduce całej audycji.
+  const needsWholePicture = needsSummary || needsTitle;
   const notes = [];
-  if (needsSummary || relabel.length > 0 || needsTitle) {
+  if (needsWholePicture) {
     try {
       for (const chunk of splitChunks(transcript)) {
-        const note = await ask(notesPrompt(entry, chunk));
-        const text = String(note.note ?? '').trim();
+        const note = await askNotes(notesPrompt(entry, chunk));
+        const text = String(note.data?.note ?? '').trim();
         if (text) notes.push({ start: chunk.start, end: chunk.end, text });
       }
     } catch (error) {
@@ -495,12 +352,14 @@ for (const entry of selected) {
     }
   }
 
-  let answer;
-  try {
-    answer = await ask(finalPrompt(entry, notes, promptTopics, needsTitle));
-  } catch (error) {
-    console.error(`— ${entry.slug}: ${error.message}`);
-    continue;
+  let answer = {};
+  if (needsWholePicture) {
+    try {
+      answer = (await askLabels(finalPrompt(entry, notes, promptTopics, needsTitle))).data ?? {};
+    } catch (error) {
+      console.error(`— ${entry.slug}: ${error.message}`);
+      continue;
+    }
   }
 
   const summary = String(answer.summary ?? '').trim();
@@ -560,7 +419,7 @@ for (const entry of selected) {
     try {
       const transcript = await readJson(`data/transcripts/${entry.id}.json`).catch(() => null);
       if (transcript?.segments?.length) {
-        const response = await ask(creditsPrompt(episode, transcript));
+        const response = (await askCredits(creditsPrompt(episode, transcript))).data ?? {};
         const seen = new Set();
         credits = (response.credits ?? [])
           .map((item) => ({

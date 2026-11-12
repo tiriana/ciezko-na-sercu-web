@@ -7,9 +7,9 @@ name: enrich
 # streszczenia i wejścia z surową etykietą, więc powtórka niczego nie psuje.
 #
 # GitHub Models zostało wyłączone 30 VII 2026, więc korzystamy z darmowych tierów
-# zgodnych z API OpenAI. Wystarczy jeden sekret: GROQ_API_KEY (największy darmowy
-# limit) — reszta (OPENROUTER_API_KEY, CEREBRAS_API_KEY, GEMINI_API_KEY,
-# MISTRAL_API_KEY) jest opcjonalna i tworzy łańcuch zapasowy.
+# zgodnych z API OpenAI. Wybór modelu należy do scripts/lib/llm.mjs: katalog jest
+# odkrywany z API każdego dostawcy, kolejność losowana, a modele po 429 dostają
+# karencję. Wystarczy jeden klucz; kolejne zwiększają pulę i limity.
 
 on:
   schedule:
@@ -26,7 +26,7 @@ on:
         default: '0'
         type: string
       model:
-        description: 'Łańcuch dostawców, np. groq:openai/gpt-oss-120b,openrouter (puste = wszyscy z kluczem)'
+        description: 'Zawęź losowanie, np. groq:openai/gpt-oss-120b,openrouter (puste = wszyscy z kluczem)'
         required: false
         default: ''
         type: string
@@ -59,9 +59,9 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           EPISODES: ${{ inputs.episodes }}
           LIMIT: ${{ inputs.limit }}
           ENRICH_MODELS: ${{ inputs.model }}
