@@ -1,3 +1,9 @@
+## [1.55.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.54.0...v1.55.0) (2026-11-12)
+
+### Features
+
+* **wip:** add Profeci track and update reviewed markers ([3acb589](https://github.com/tiriana/ciezko-na-sercu-web/commit/3acb589f8d48fcda51db57a6b90bfb5392cc34d6))
+
 ## [1.54.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.53.0...v1.54.0) (2026-11-12)
 
 ### Features
