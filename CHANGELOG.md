@@ -1,3 +1,9 @@
+## [1.66.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.66.0...v1.66.1) (2026-11-12)
+
+### Bug Fixes
+
+* czasy wejść w skali odtwarzacza (216a8fd5) ([d96c97a](https://github.com/tiriana/ciezko-na-sercu-web/commit/d96c97a0d294138d28917c2cb3d71b9e199ead73))
+
 ## [1.66.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.65.0...v1.66.0) (2026-11-12)
 
 ### Features
