@@ -1,0 +1,115 @@
+name: repair
+
+# Po każdym pushu do maina (i na żądanie) dokańcza to, czego automaty nie
+# ustaliły: utwory bez tytułu albo z samym wykonawcą oraz wejścia z `#TODO`.
+# Kolejność ma znaczenie — najpierw utwory, bo enrich bierze ich nazwy do opisu.
+#
+# Naprawa nie usuwa wpisów: utwór zostaje na swoim czasie i dostaje uzupełnione
+# pola, a wejście — etykietę. Ten sam utwór nie jest dopisywany drugi raz.
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/**']
+  workflow_dispatch:
+    inputs:
+      episodes:
+        description: 'UUID lub slugi oddzielone przecinkami; puste = odcinki z brakami'
+        required: false
+        type: string
+
+run-name: "naprawa braków: ${{ inputs.episodes || 'po pushu' }}"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: repair
+  cancel-in-progress: true
+
+jobs:
+  repair:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 120
+    env:
+      EPISODES: ${{ inputs.episodes }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      # ffmpeg czyta nagranie po HTTP i wycina fragment do porównania chromą.
+      - name: Zainstaluj ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # v5
+        with:
+          cache: true
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v6
+        with:
+          python-version: '3.12'
+
+      - run: pip install --quiet numpy
+      - run: npm ci
+
+      - name: Wybierz odcinki
+        id: plan
+        run: |
+          if [ -n "$EPISODES" ]; then
+            printf '%s' "$EPISODES" | tr ',' '\n' | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' | sed '/^$/d' > ids.txt
+          else
+            node scripts/needs-repair.mjs > ids.txt
+          fi
+          ids=$(paste -sd, ids.txt)
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+          echo "Odcinków do naprawy: $(grep -c . ids.txt || true)"
+          sed 's/^/  /' ids.txt
+
+      - name: Rozpoznaj utwory z kontekstu
+        if: steps.plan.outputs.ids != ''
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          args=()
+          while read -r id; do
+            [ -n "$id" ] && args+=(--episode "$id")
+          done < ids.txt
+          python3 scripts/resolve_tracks.py "${args[@]}" --write 2>&1 | tee resolve.log
+          {
+            echo "### Rozpoznane utwory"
+            echo ""
+            echo '```'
+            tail -60 resolve.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Opisz wejścia
+        if: steps.plan.outputs.ids != ''
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: node scripts/enrich-episode.mjs --episodes "${{ steps.plan.outputs.ids }}" --write
+
+      - run: npm run check
+
+      - name: Commit i deploy
+        id: commit
+        if: steps.plan.outputs.ids != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          bash scripts/push-data.sh "fix: naprawa utworów i wejść bez opisu (${GITHUB_RUN_ID})" \
+            data/episodes data/overrides data/reviewed.json data/titles.json
+
+      # Push z GITHUB_TOKEN nie uruchamia workflow, więc publikację zamawiamy jawnie.
+      - name: Deploy po naprawie
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"

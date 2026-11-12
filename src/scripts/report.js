@@ -229,9 +229,10 @@ const ensureBubble = () => {
     if (!session) return;
     clearTimeout(session.timer);
 
-    // Cała audycja: tekst to całe zgłoszenie, więc idzie dopiero po „Wyślij”.
     if (session.mode === 'episode' || session.mode === 'unknown-track') {
-      if (session.mode === 'episode') saveDraft(session.element, text.value);
+      if (session.mode === 'episode') {
+        saveDraft(session.element, text.value);
+      }
       updateSendState(session);
       return;
     }
@@ -335,6 +336,7 @@ const openBubble = (link) => {
     timer: 0,
   };
   state.session = session;
+  bubble.dataset.reportMode = session.mode;
 
   const title = bubble.querySelector('.report-bubble__eyebrow');
   const target = bubble.querySelector('#report-bubble-target');

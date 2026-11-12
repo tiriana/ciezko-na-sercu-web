@@ -2207,6 +2207,11 @@ a {
   color: var(--ink);
 }
 
+.report-bubble[data-report-mode='unknown-track'] .report-bubble__eyebrow {
+  letter-spacing: normal;
+  text-transform: none;
+}
+
 .report-bubble__target {
   margin: 2px 0 10px;
   font-size: 12px;
