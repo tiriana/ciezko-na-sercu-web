@@ -12,6 +12,12 @@ on:
   schedule:
     - cron: '0 12 * * *'
   workflow_dispatch:
+    inputs:
+      batch:
+        description: 'Ile odcinków zaległości naraz (1–4)'
+        required: false
+        default: '2'
+        type: string
 
 run-name: "wybór odcinka do transkrypcji"
 
@@ -33,11 +39,12 @@ jobs:
         id: next
         env:
           PRINT_NEXT: 'true'
+          BATCH: ${{ inputs.batch || '2' }}
         run: node scripts/plan-transcribe.mjs
 
       # Transkrypcja bierze podział z bloków mowy, więc najpierw VAD — on zamawia
       # transkrypcję sam, po commicie artefaktu.
-      - name: Uruchom bloki mowy dla odcinka
+      - name: Uruchom bloki mowy dla odcinków
         if: steps.next.outputs.next != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

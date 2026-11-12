@@ -116,12 +116,13 @@ const emit = (key, value) => {
   console.log(`${key}=${value}`);
 };
 
-// Tryb dla harmonogramu: nie liczymy macierzy, tylko wskazujemy następny odcinek.
+// Tryb dla harmonogramu: nie liczymy macierzy, tylko wskazujemy następne odcinki.
 if (process.env.PRINT_NEXT === 'true') {
-  const next = episodes[0];
+  const batch = Math.min(4, Math.max(1, Number.parseInt(process.env.BATCH ?? '1', 10) || 1));
+  const chosen = episodes.slice(0, batch);
   emit('count', String(episodes.length));
-  emit('next', next?.slug ?? '');
-  emit('title', (next?.title ?? '').replace(/[\r\n]+/g, ' '));
+  emit('next', chosen.map((episode) => episode.slug).join(','));
+  emit('title', chosen.map((episode) => episode.title ?? '').join('; ').replace(/[\r\n]+/g, ' '));
   process.exit(0);
 }
 
