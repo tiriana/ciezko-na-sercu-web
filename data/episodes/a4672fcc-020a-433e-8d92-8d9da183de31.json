@@ -76,8 +76,15 @@
       "at": 693.41
     },
     {
-      "id": "boris-sunn-o",
-      "label": "Boris & sunn O)))",
+      "id": "boris",
+      "label": "Boris",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2756.66
+    },
+    {
+      "id": "sunn-o",
+      "label": "sunn O)))",
       "type": "artist",
       "source": "tracks",
       "at": 2756.66
@@ -221,8 +228,8 @@
       "at": 2363.57
     },
     {
-      "id": "koncert-hubert-zemler-i-the-roadhouse-band",
-      "label": "Hubert Zemler i The Roadhouse Band",
+      "id": "koncert-hubert-zemler",
+      "label": "Hubert Zemler",
       "type": "concert",
       "source": "transcript",
       "at": 6662.69

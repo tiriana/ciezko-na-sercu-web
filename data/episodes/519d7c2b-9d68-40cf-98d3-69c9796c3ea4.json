@@ -90,8 +90,15 @@
       "at": 3921.03
     },
     {
-      "id": "chat-pile-hayden-pedigo",
-      "label": "Chat Pile & Hayden Pedigo",
+      "id": "chat-pile",
+      "label": "Chat Pile",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3616.03
+    },
+    {
+      "id": "hayden-pedigo",
+      "label": "Hayden Pedigo",
       "type": "artist",
       "source": "tracks",
       "at": 3616.03
@@ -167,8 +174,15 @@
       "at": 1389.01
     },
     {
-      "id": "unprocessed-paleface-swiss",
-      "label": "Unprocessed & Paleface Swiss",
+      "id": "unprocessed",
+      "label": "Unprocessed",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2469.02
+    },
+    {
+      "id": "paleface-swiss",
+      "label": "Paleface Swiss",
       "type": "artist",
       "source": "tracks",
       "at": 2469.02

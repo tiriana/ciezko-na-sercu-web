@@ -83,8 +83,15 @@
       "at": 5045.4
     },
     {
-      "id": "babymetal-spiritbox",
-      "label": "BABYMETAL & Spiritbox",
+      "id": "babymetal",
+      "label": "BABYMETAL",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4835.89
+    },
+    {
+      "id": "spiritbox",
+      "label": "Spiritbox",
       "type": "artist",
       "source": "tracks",
       "at": 4835.89
@@ -149,13 +156,6 @@
       "label": "Michał Kowarski",
       "type": "person",
       "source": "credits"
-    },
-    {
-      "id": "spiritbox",
-      "label": "Spiritbox",
-      "type": "artist",
-      "source": "tracks",
-      "at": 4658.29
     },
     {
       "id": "thornhill",

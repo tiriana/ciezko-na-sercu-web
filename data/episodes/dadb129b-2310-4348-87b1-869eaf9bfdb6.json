@@ -146,8 +146,15 @@
       "at": 4822.92
     },
     {
-      "id": "scott-walker-sunn-o",
-      "label": "Scott Walker & sunn O)))",
+      "id": "scott-walker",
+      "label": "Scott Walker",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4179.39
+    },
+    {
+      "id": "sunn-o",
+      "label": "sunn O)))",
       "type": "artist",
       "source": "tracks",
       "at": 4179.39
@@ -223,8 +230,8 @@
       "at": 788.19
     },
     {
-      "id": "koncert-vader-litany-i-wystawa-o-historii-zespolu",
-      "label": "Vader – Litany i wystawa o historii zespołu",
+      "id": "koncert-vader-litany",
+      "label": "Vader – Litany",
       "type": "concert",
       "source": "transcript",
       "at": 1897.64
@@ -251,22 +258,22 @@
       "at": 2574.08
     },
     {
-      "id": "koncert-airbourne-z-creeper-i-house-of-protection",
-      "label": "Airbourne z Creeper i House of Protection",
+      "id": "koncert-airbourne-z-creeper",
+      "label": "Airbourne z Creeper",
       "type": "concert",
       "source": "transcript",
       "at": 3326.36
     },
     {
-      "id": "koncert-lorna-shore-z-fit-for-an-autopsy-i-signs-of-the-storm",
-      "label": "Lorna Shore z Fit for an Autopsy i Signs of the Storm",
+      "id": "koncert-lorna-shore-z-fit-for-an-autopsy",
+      "label": "Lorna Shore z Fit for an Autopsy",
       "type": "concert",
       "source": "transcript",
       "at": 3348.3
     },
     {
-      "id": "koncert-fit-for-an-autopsy-i-signs-of-the-storm",
-      "label": "Fit for an Autopsy i Signs of the Storm",
+      "id": "koncert-fit-for-an-autopsy",
+      "label": "Fit for an Autopsy",
       "type": "concert",
       "source": "transcript",
       "at": 3884.07
@@ -307,8 +314,8 @@
       "at": 5437.5
     },
     {
-      "id": "koncert-black-magic-tour-hydra-i-sautrus",
-      "label": "Black Magic Tour – Hydra i Sautrus",
+      "id": "koncert-black-magic-tour-hydra",
+      "label": "Black Magic Tour – Hydra",
       "type": "concert",
       "source": "transcript",
       "at": 5682.94
@@ -363,8 +370,8 @@
       "at": 6519.02
     },
     {
-      "id": "koncert-powerwolf-epica-i-dragonforce",
-      "label": "Powerwolf, Epica i DragonForce",
+      "id": "koncert-powerwolf",
+      "label": "Powerwolf",
       "type": "concert",
       "source": "transcript",
       "at": 6553.94

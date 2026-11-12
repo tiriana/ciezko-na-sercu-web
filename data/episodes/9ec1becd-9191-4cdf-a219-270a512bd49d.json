@@ -83,8 +83,15 @@
       "at": 2908.32
     },
     {
-      "id": "babymetal-poppy",
-      "label": "BABYMETAL & Poppy",
+      "id": "babymetal",
+      "label": "BABYMETAL",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5596.14
+    },
+    {
+      "id": "poppy",
+      "label": "Poppy",
       "type": "artist",
       "source": "tracks",
       "at": 5596.14

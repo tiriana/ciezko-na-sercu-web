@@ -141,8 +141,15 @@
       "at": 3440.09
     },
     {
-      "id": "lou-reed-metallica",
-      "label": "Lou Reed & Metallica",
+      "id": "lou-reed",
+      "label": "Lou Reed",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1602.32
+    },
+    {
+      "id": "metallica",
+      "label": "Metallica",
       "type": "artist",
       "source": "tracks",
       "at": 1602.32

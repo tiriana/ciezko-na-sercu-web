@@ -83,25 +83,25 @@
       "at": 5973
     },
     {
-      "id": "miss-piggy-ozzy-osbourne",
-      "label": "Miss Piggy & Ozzy Osbourne",
+      "id": "miss-piggy",
+      "label": "Miss Piggy",
       "type": "artist",
       "source": "tracks",
       "at": 1585
-    },
-    {
-      "id": "motorhead-ozzy-osbourne",
-      "label": "Motörhead & Ozzy Osbourne",
-      "type": "artist",
-      "source": "tracks",
-      "at": 6639
     },
     {
       "id": "ozzy-osbourne",
       "label": "Ozzy Osbourne",
       "type": "artist",
       "source": "tracks",
-      "at": 241
+      "at": 1585
+    },
+    {
+      "id": "motorhead",
+      "label": "Motörhead",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6639
     },
     {
       "id": "wu-tang-clan",
@@ -188,8 +188,8 @@
       "at": 3230
     },
     {
-      "id": "koncert-pozegnalny-koncert-black-sabbath-villa-park-birmingham",
-      "label": "pożegnalny koncert Black Sabbath, Villa Park, Birmingham",
+      "id": "koncert-pozegnalny-koncert-black-sabbath",
+      "label": "pożegnalny koncert Black Sabbath",
       "type": "concert",
       "source": "transcript",
       "at": 4640

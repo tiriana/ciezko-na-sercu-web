@@ -132,8 +132,15 @@
       "at": 5324.76
     },
     {
-      "id": "romantyczny-wieczor-spowiedz-chama",
-      "label": "Romantyczny Wieczór & Spowiedź Chama",
+      "id": "romantyczny-wieczor",
+      "label": "Romantyczny Wieczór",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2740.7
+    },
+    {
+      "id": "spowiedz-chama",
+      "label": "Spowiedź Chama",
       "type": "artist",
       "source": "tracks",
       "at": 2740.7

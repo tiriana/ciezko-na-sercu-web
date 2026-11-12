@@ -76,8 +76,15 @@
       "at": 5235.97
     },
     {
-      "id": "accvsed-the-narrator",
-      "label": "ACCVSED & The Narrator",
+      "id": "accvsed",
+      "label": "ACCVSED",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3698.5
+    },
+    {
+      "id": "the-narrator",
+      "label": "The Narrator",
       "type": "artist",
       "source": "tracks",
       "at": 3698.5
@@ -209,8 +216,8 @@
       "at": 525.79
     },
     {
-      "id": "koncert-iron-maiden-i-avatar-stadion-narodowy-w-warszawie",
-      "label": "Iron Maiden i Avatar — Stadion Narodowy w Warszawie",
+      "id": "koncert-iron-maiden",
+      "label": "Iron Maiden",
       "type": "concert",
       "source": "transcript",
       "at": 704.38
@@ -223,8 +230,8 @@
       "at": 731.32
     },
     {
-      "id": "koncert-machine-head-fear-factory-i-frail-mck-katowice",
-      "label": "Machine Head, Fear Factory i Frail — MCK Katowice",
+      "id": "koncert-machine-head",
+      "label": "Machine Head",
       "type": "concert",
       "source": "transcript",
       "at": 771.23
@@ -237,15 +244,15 @@
       "at": 817.12
     },
     {
-      "id": "koncert-inter-arma-i-wayfarer-krakow-i-wroclaw",
-      "label": "Inter Arma i Wayfarer — Kraków i Wrocław",
+      "id": "koncert-inter-arma",
+      "label": "Inter Arma",
       "type": "concert",
       "source": "transcript",
       "at": 1662.18
     },
     {
-      "id": "koncert-dark-angel-wroclaw-i-warszawa",
-      "label": "Dark Angel — Wrocław i Warszawa",
+      "id": "koncert-dark-angel-wroclaw",
+      "label": "Dark Angel — Wrocław",
       "type": "concert",
       "source": "transcript",
       "at": 1685.13
@@ -272,8 +279,8 @@
       "at": 1725.04
     },
     {
-      "id": "koncert-suffocation-angel-maker-i-skeletal-remains-krakowski-hype-park",
-      "label": "Suffocation, Angel Maker i Skeletal Remains — krakowski Hype Park",
+      "id": "koncert-suffocation",
+      "label": "Suffocation",
       "type": "concert",
       "source": "transcript",
       "at": 1746.98
@@ -286,8 +293,8 @@
       "at": 1958.5
     },
     {
-      "id": "koncert-panzerfaust-i-awski-trzy-koncerty",
-      "label": "Panzerfaust i Awski — trzy koncerty",
+      "id": "koncert-panzerfaust",
+      "label": "Panzerfaust",
       "type": "concert",
       "source": "transcript",
       "at": 2200.94

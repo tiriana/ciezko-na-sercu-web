@@ -111,8 +111,15 @@
       "at": 4879.78
     },
     {
-      "id": "dalek-charles-hayward",
-      "label": "Dälek & Charles Hayward",
+      "id": "dalek",
+      "label": "Dälek",
+      "type": "artist",
+      "source": "tracks",
+      "at": 729.32
+    },
+    {
+      "id": "charles-hayward",
+      "label": "Charles Hayward",
       "type": "artist",
       "source": "tracks",
       "at": 729.32

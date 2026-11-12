@@ -76,8 +76,15 @@
       "at": 4294.13
     },
     {
-      "id": "bell-witch-aerial-ruin",
-      "label": "Bell Witch & Aerial Ruin",
+      "id": "bell-witch",
+      "label": "Bell Witch",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5989.24
+    },
+    {
+      "id": "aerial-ruin",
+      "label": "Aerial Ruin",
       "type": "artist",
       "source": "tracks",
       "at": 5989.24
@@ -179,8 +186,8 @@
       "at": 1524.5
     },
     {
-      "id": "koncert-terrestrial-hospice-pralaja-upon-the-altar-trasa",
-      "label": "Terrestrial Hospice / Pralaja / Upon the Altar – trasa",
+      "id": "koncert-terrestrial-hospice",
+      "label": "Terrestrial Hospice",
       "type": "concert",
       "source": "transcript",
       "at": 347.2
@@ -207,15 +214,15 @@
       "at": 1806.85
     },
     {
-      "id": "koncert-elende-skaalg-firtan",
-      "label": "Elende / Skaalg / Firtan",
+      "id": "koncert-elende",
+      "label": "Elende",
       "type": "concert",
       "source": "transcript",
       "at": 2116.14
     },
     {
-      "id": "koncert-titanic-sea-moon-elektrytual-trasa",
-      "label": "Titanic Sea Moon / Elektrytuał – trasa",
+      "id": "koncert-titanic-sea-moon",
+      "label": "Titanic Sea Moon",
       "type": "concert",
       "source": "transcript",
       "at": 2588.05
@@ -228,22 +235,22 @@
       "at": 3508.94
     },
     {
-      "id": "koncert-mad-men-s-sprite-shattered-innocence",
-      "label": "Mad Men's Sprite / Shattered Innocence",
+      "id": "koncert-mad-men-s-sprite",
+      "label": "Mad Men's Sprite",
       "type": "concert",
       "source": "transcript",
       "at": 3872.1
     },
     {
-      "id": "koncert-ensiferum-freedom-call-dragony",
-      "label": "Ensiferum / Freedom Call / Dragony",
+      "id": "koncert-ensiferum",
+      "label": "Ensiferum",
       "type": "concert",
       "source": "transcript",
       "at": 4154.45
     },
     {
-      "id": "koncert-architects-landmvrks-president",
-      "label": "Architects / Landmvrks / President",
+      "id": "koncert-architects",
+      "label": "Architects",
       "type": "concert",
       "source": "transcript",
       "at": 4188.37
@@ -263,29 +270,29 @@
       "at": 5023.45
     },
     {
-      "id": "koncert-counterpulse-tsunami-one-step-closer-gut-complex",
-      "label": "Counterpulse / Tsunami / One Step Closer / Gut Complex",
+      "id": "koncert-counterpulse",
+      "label": "Counterpulse",
       "type": "concert",
       "source": "transcript",
       "at": 5106.26
     },
     {
-      "id": "koncert-earth-z-udzialem-nataszy-grujowicz-i-steve-a-moore-a",
-      "label": "Earth, z udziałem Nataszy Grujowicz i Steve'a Moore'a",
+      "id": "koncert-earth",
+      "label": "Earth",
       "type": "concert",
       "source": "transcript",
       "at": 5164.13
     },
     {
-      "id": "koncert-bell-witch-aerial-ruin-40-watt-sun-trasa",
-      "label": "Bell Witch & Aerial Ruin / 40 Watt Sun – trasa",
+      "id": "koncert-bell-witch",
+      "label": "Bell Witch",
       "type": "concert",
       "source": "transcript",
       "at": 5911.41
     },
     {
-      "id": "koncert-lorna-shore-whitechapel-shadow-of-intent-humanity-s-last-breath",
-      "label": "Lorna Shore / Whitechapel / Shadow of Intent / Humanity's Last Breath",
+      "id": "koncert-lorna-shore",
+      "label": "Lorna Shore",
       "type": "concert",
       "source": "transcript",
       "at": 6479.11

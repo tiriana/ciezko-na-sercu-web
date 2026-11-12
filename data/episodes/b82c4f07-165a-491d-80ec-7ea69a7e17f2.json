@@ -161,8 +161,15 @@
       "at": 3172.71
     },
     {
-      "id": "voivod-orchestre-symphonique-de-quebec",
-      "label": "Voivod & Orchestre symphonique de Québec",
+      "id": "voivod",
+      "label": "Voivod",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5482.4
+    },
+    {
+      "id": "orchestre-symphonique-de-quebec",
+      "label": "Orchestre symphonique de Québec",
       "type": "artist",
       "source": "tracks",
       "at": 5482.4
@@ -175,8 +182,15 @@
       "at": 1899.63
     },
     {
-      "id": "rokowizna-metalowizna",
-      "label": "Rokowizna / Metalowizna",
+      "id": "rokowizna",
+      "label": "Rokowizna",
+      "type": "event",
+      "source": "transcript",
+      "at": 274.37
+    },
+    {
+      "id": "metalowizna",
+      "label": "Metalowizna",
       "type": "event",
       "source": "transcript",
       "at": 274.37
@@ -203,8 +217,8 @@
       "at": 772.23
     },
     {
-      "id": "koncert-macabre-schiering-place-pungent-stench-las-trumien",
-      "label": "Macabre / Schiering Place Pungent Stench / Las Trumien",
+      "id": "koncert-macabre",
+      "label": "Macabre",
       "type": "concert",
       "source": "transcript",
       "at": 1104.46
@@ -238,8 +252,8 @@
       "at": 2318.67
     },
     {
-      "id": "koncert-in-flames-bleed-from-within",
-      "label": "In Flames / Bleed From Within",
+      "id": "koncert-in-flames",
+      "label": "In Flames",
       "type": "concert",
       "source": "transcript",
       "at": 2596.03
@@ -252,15 +266,15 @@
       "at": 2936.25
     },
     {
-      "id": "koncert-system-of-a-down-queens-of-the-stone-age-acid-bath",
-      "label": "System of a Down / Queens of the Stone Age / Acid Bath",
+      "id": "koncert-system-of-a-down",
+      "label": "System of a Down",
       "type": "concert",
       "source": "transcript",
       "at": 2955.21
     },
     {
-      "id": "koncert-biohazard-chrome-violence-lub-death-angel-we-wroclawiu-sworn-enemy",
-      "label": "Biohazard / Chrome / Violence (lub Death Angel we Wrocławiu) / Sworn Enemy",
+      "id": "koncert-biohazard",
+      "label": "Biohazard",
       "type": "concert",
       "source": "transcript",
       "at": 3835.19
@@ -301,25 +315,18 @@
       "at": 5843.57
     },
     {
-      "id": "koncert-phil-campbell-s-bastard-sons-judas-priest",
-      "label": "Phil Campbell's Bastard Sons / Judas Priest",
+      "id": "koncert-phil-campbell-s-bastard-sons",
+      "label": "Phil Campbell's Bastard Sons",
       "type": "concert",
       "source": "transcript",
       "at": 6119.93
     },
     {
-      "id": "koncert-terror-stick-to-your-guns",
-      "label": "Terror / Stick to Your Guns",
+      "id": "koncert-terror",
+      "label": "Terror",
       "type": "concert",
       "source": "transcript",
       "at": 6579.88
-    },
-    {
-      "id": "koncert-terror-walwodynia-cryptopsy",
-      "label": "Terror / Walwodynia / Cryptopsy",
-      "type": "concert",
-      "source": "transcript",
-      "at": 6595.84
     },
     {
       "id": "koncert-crowbar",

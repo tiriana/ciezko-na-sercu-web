@@ -172,8 +172,15 @@
       "at": 549.74
     },
     {
-      "id": "rockowisko-niezly-zwierzyniec",
-      "label": "Rockowisko / Niezły Zwierzyniec",
+      "id": "rockowisko",
+      "label": "Rockowisko",
+      "type": "event",
+      "source": "transcript",
+      "at": 1352.89
+    },
+    {
+      "id": "niezly-zwierzyniec",
+      "label": "Niezły Zwierzyniec",
       "type": "event",
       "source": "transcript",
       "at": 1352.89
@@ -207,8 +214,8 @@
       "at": 2304.7
     },
     {
-      "id": "koncert-heilung-the-hu",
-      "label": "Heilung, The HU",
+      "id": "koncert-heilung",
+      "label": "Heilung",
       "type": "concert",
       "source": "transcript",
       "at": 2334.63
@@ -263,8 +270,8 @@
       "at": 5161.14
     },
     {
-      "id": "koncert-yoth-iria-sarcator",
-      "label": "Yoth Iria, Sarcator",
+      "id": "koncert-yoth-iria",
+      "label": "Yoth Iria",
       "type": "concert",
       "source": "transcript",
       "at": 5216.01

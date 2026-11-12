@@ -83,8 +83,15 @@
       "at": 467.92
     },
     {
-      "id": "babymetal-polyphia",
-      "label": "BABYMETAL & Polyphia",
+      "id": "babymetal",
+      "label": "BABYMETAL",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3234.57
+    },
+    {
+      "id": "polyphia",
+      "label": "Polyphia",
       "type": "artist",
       "source": "tracks",
       "at": 3234.57
@@ -195,8 +202,8 @@
       "at": 1208.22
     },
     {
-      "id": "koncert-in-human-condition-ashen-tomb-epitome",
-      "label": "In Human Condition, Ashen Tomb, Epitome",
+      "id": "koncert-in-human-condition",
+      "label": "In Human Condition",
       "type": "concert",
       "source": "transcript",
       "at": 1555.43
@@ -209,8 +216,8 @@
       "at": 1577.37
     },
     {
-      "id": "koncert-bring-me-the-horizon-knocked-loose",
-      "label": "Bring Me The Horizon, Knocked Loose",
+      "id": "koncert-bring-me-the-horizon",
+      "label": "Bring Me The Horizon",
       "type": "concert",
       "source": "transcript",
       "at": 1830.79
@@ -237,8 +244,8 @@
       "at": 2128.11
     },
     {
-      "id": "koncert-malevolence-boundaries-grideron-heavy-runner",
-      "label": "Malevolence, Boundaries, Grideron, Heavy Runner",
+      "id": "koncert-malevolence",
+      "label": "Malevolence",
       "type": "concert",
       "source": "transcript",
       "at": 2214.91
@@ -251,8 +258,15 @@
       "at": 2479.3
     },
     {
-      "id": "dni-zdunskiej-woli-alternatywna-zdunska-wola",
-      "label": "Dni Zduńskiej Woli / Alternatywna Zduńska Wola",
+      "id": "dni-zdunskiej-woli",
+      "label": "Dni Zduńskiej Woli",
+      "type": "event",
+      "source": "transcript",
+      "at": 2506.24
+    },
+    {
+      "id": "alternatywna-zdunska-wola",
+      "label": "Alternatywna Zduńska Wola",
       "type": "event",
       "source": "transcript",
       "at": 2506.24
@@ -286,15 +300,15 @@
       "at": 3074.93
     },
     {
-      "id": "koncert-trivium-heriot-frontside",
-      "label": "Trivium, Heriot, Frontside",
+      "id": "koncert-trivium",
+      "label": "Trivium",
       "type": "concert",
       "source": "transcript",
       "at": 3844.17
     },
     {
-      "id": "koncert-a-day-to-remember-madball-dying-wish",
-      "label": "A Day to Remember, Madball, Dying Wish",
+      "id": "koncert-a-day-to-remember",
+      "label": "A Day to Remember",
       "type": "concert",
       "source": "transcript",
       "at": 4588.45
@@ -307,8 +321,8 @@
       "at": 4604.42
     },
     {
-      "id": "koncert-nothing-heywire",
-      "label": "Nothing, Heywire",
+      "id": "koncert-nothing",
+      "label": "Nothing",
       "type": "concert",
       "source": "transcript",
       "at": 4625.37

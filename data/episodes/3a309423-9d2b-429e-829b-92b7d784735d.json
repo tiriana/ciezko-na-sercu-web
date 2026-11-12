@@ -125,8 +125,8 @@
       "at": 3773.02
     },
     {
-      "id": "full-of-hell-andrew-nolan",
-      "label": "Full of Hell & Andrew Nolan",
+      "id": "andrew-nolan",
+      "label": "Andrew Nolan",
       "type": "artist",
       "source": "tracks",
       "at": 3904.02
@@ -181,8 +181,15 @@
       "at": 6214.02
     },
     {
-      "id": "the-body-dis-fig",
-      "label": "The Body & Dis Fig",
+      "id": "the-body",
+      "label": "The Body",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4765.02
+    },
+    {
+      "id": "dis-fig",
+      "label": "Dis Fig",
       "type": "artist",
       "source": "tracks",
       "at": 4765.02
@@ -223,8 +230,8 @@
       "at": 3761.02
     },
     {
-      "id": "koncert-ostatni-koncert-na-ktorym-prowadzacy-byl-w-2024-roku",
-      "label": "ostatni koncert, na którym prowadzący był w 2024 roku",
+      "id": "koncert-ostatni-koncert",
+      "label": "ostatni koncert",
       "type": "concert",
       "source": "transcript",
       "at": 5416.02

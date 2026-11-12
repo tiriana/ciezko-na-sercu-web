@@ -90,8 +90,15 @@
       "at": 4011
     },
     {
-      "id": "frente-abierto-ines-bacan",
-      "label": "Frente Abierto & Inés Bacán",
+      "id": "frente-abierto",
+      "label": "Frente Abierto",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3394
+    },
+    {
+      "id": "ines-bacan",
+      "label": "Inés Bacán",
       "type": "artist",
       "source": "tracks",
       "at": 3394
@@ -111,25 +118,25 @@
       "at": 5944
     },
     {
-      "id": "the-body-dis-fig",
-      "label": "The Body & Dis Fig",
+      "id": "the-body",
+      "label": "The Body",
       "type": "artist",
       "source": "tracks",
       "at": 513
     },
     {
-      "id": "the-body-thou",
-      "label": "The Body & Thou",
+      "id": "dis-fig",
+      "label": "Dis Fig",
       "type": "artist",
       "source": "tracks",
-      "at": 12
+      "at": 513
     },
     {
       "id": "thou",
       "label": "Thou",
       "type": "artist",
       "source": "tracks",
-      "at": 3057
+      "at": 12
     },
     {
       "id": "witch-club-satan",
