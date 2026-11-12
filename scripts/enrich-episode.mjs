@@ -488,26 +488,36 @@ for (const entry of selected) {
   const reviewedMoves = [];
   let episodeLabelChanged = false;
   let overrideLabelChanged = false;
-  for (const { topic, source } of relabel) {
-    let label = labels.get(round(topic.start));
+  for (const { topic, kind } of relabel) {
+    const current = currentLabel(topic, kind);
+    // Poprawka z `newLabel` ma szkic w treści, więc pytamy celowo — model zbiorczy
+    // dostałby tylko czystą wersję z odcinka i zwróciłby ją bez zmian.
+    let label = kind === 'newLabel' ? null : labels.get(round(topic.start));
     if (!label) {
       try {
-        label = await askLabel(entry, transcript, topic);
+        label = await askLabel(entry, transcript, { ...topic, label: current });
       } catch (error) {
         console.error(`   etykieta ${topic.start}: ${error.message}`);
       }
     }
-    if (!label || label === topic.label) continue;
+    if (!label || label === current) continue;
     changed.push(`${topic.start}: ${label}`);
     // Wspólny placeholder bywa kluczem wielu wejść naraz — przeniesienie go
     // przypisałoby „ok” do pierwszego z brzegu, więc zostawiamy taki wpis w spokoju.
-    if (!/^#TODO - wygeneruj opis znacznika$/i.test(String(topic.label).trim())) {
-      reviewedMoves.push({ from: `p:${normalizeLabel(topic.label)}`, to: `p:${normalizeLabel(label)}` });
+    if (!/^#TODO - wygeneruj opis znacznika$/i.test(String(current).trim())) {
+      reviewedMoves.push({ from: `p:${normalizeLabel(current)}`, to: `p:${normalizeLabel(label)}` });
     }
     if (!write) continue;
-    topic.label = label;
-    if (source === 'override') overrideLabelChanged = true;
-    else episodeLabelChanged = true;
+    if (kind === 'newLabel') {
+      topic.newLabel = label;
+      overrideLabelChanged = true;
+    } else if (kind === 'added') {
+      topic.label = label;
+      overrideLabelChanged = true;
+    } else {
+      topic.label = label;
+      episodeLabelChanged = true;
+    }
   }
   for (const line of changed) console.log(`   ${line}`);
 
