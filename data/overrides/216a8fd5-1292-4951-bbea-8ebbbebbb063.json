@@ -299,6 +299,18 @@
       "time": 3349.04,
       "label": "Drown My Day – singiel „All Your Prophets Are Dead”",
       "hide": true
+    },
+    {
+      "time": 4379.71,
+      "label": "Troneum – wydawnictwo „Love is the Law, but Death is the Frame”",
+      "start": 4369.74,
+      "newLabel": "Troneum – wydawnictwo „Love is the Law, but Death is the Frame” / Azarath – album „Scorn Eternal”",
+      "end": 4411.36
+    },
+    {
+      "time": 4392.63,
+      "label": "Azarath – album „Scorn Eternal”",
+      "hide": true
     }
   ],
   "addTracks": [
@@ -320,14 +332,16 @@
       "title": "Crossing The Abyss",
       "album": "Vision Beyond Form",
       "start": 3924.95,
-      "durationSec": 311
+      "durationSec": 311,
+      "end": 4234.63
     },
     {
       "artist": "Wingless",
       "title": "The Gnosis Of Decay",
       "album": "Vision Beyond Form",
-      "start": 4235.95,
-      "durationSec": 133.85
+      "start": 4234.63,
+      "durationSec": 133.85,
+      "end": 4369.74
     },
     {
       "artist": "Throneum",
