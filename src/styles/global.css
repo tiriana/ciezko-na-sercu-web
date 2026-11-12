@@ -1839,10 +1839,13 @@ a {
 }
 
 .tracks__row--entry .tracks__kind {
+  flex: none;
+  padding-top: 1px;
   color: var(--muted);
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.08em;
+  white-space: nowrap;
 }
 
 .tracks__row--entry .tracks__entry-label {
