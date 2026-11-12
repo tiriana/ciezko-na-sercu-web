@@ -1,3 +1,13 @@
+## [1.47.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.46.1...v1.47.0) (2026-11-12)
+
+### Features
+
+* **data:** add new tag for lord spikeheart ([4c8b5ec](https://github.com/tiriana/ciezko-na-sercu-web/commit/4c8b5ecc84c48d507908af8ca0ca2829dafeb3da))
+
+### Bug Fixes
+
+* krótsze etykiety wejść audycji roadburn; enrich rozpoznaje surowe opisy po długości ([9087e5f](https://github.com/tiriana/ciezko-na-sercu-web/commit/9087e5f4c170292c070bbea3a5976eb31d069b80))
+
 ## [1.46.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.46.0...v1.46.1) (2026-11-12)
 
 ### Bug Fixes
