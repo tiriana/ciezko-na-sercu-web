@@ -123,8 +123,10 @@ Workflow:
 3. `refresh-catalog.yml` — odświeżenie katalogu ze strony audycji.
 4. `spans.yml` / `transcribe.yml` / `transcribe-daily.yml` — bloki mowy, transkrypcja
    wskazanych odcinków i wybór jednej zaległości dziennie.
-5. `release.yml` — wersja i changelog z typów commitów.
-6. `rollback.yml` — cofnięcie produkcji do wskazanego wdrożenia Cloudflare
+5. `refresh-titles.yml` — raz w tygodniu sprawdza odcinki z ostatniego miesiąca, czy
+   radio nadało im tytuł redakcyjny, i przenosi go do katalogu.
+6. `release.yml` — wersja i changelog z typów commitów.
+7. `rollback.yml` — cofnięcie produkcji do wskazanego wdrożenia Cloudflare
    (`workflow_dispatch` z id wdrożenia); po cofnięciu ten sam test dymny i wersja
    odczytana ze stopki w podsumowaniu.
 

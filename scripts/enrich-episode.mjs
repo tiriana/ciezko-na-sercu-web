@@ -15,6 +15,8 @@
  */
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 
+import { isTechnicalTitle } from '../src/lib/titles.ts';
+
 const ENDPOINT_TIMEOUT_MS = 90000;
 const CHUNK_CHARS = 9000;
 const RATE_LIMIT_PAUSE_MS = 25000;
@@ -187,7 +189,7 @@ const notesPrompt = (episode, chunk) =>
     'Odpowiedz wyłącznie JSON-em: {"note": "..."}',
   ].join('\n');
 
-const finalPrompt = (episode, notes, topics) => {
+const finalPrompt = (episode, notes, topics, needsTitle = false) => {
   const entries = topics
     .map((topic) => {
       const label = needsLabel(topic.label) || relabelRaw ? '' : String(topic.label).trim();
@@ -215,12 +217,17 @@ const finalPrompt = (episode, notes, topics) => {
     'Zadania:',
     '1. "summary": 3–5 zdań streszczenia odcinka po polsku — o czym była audycja, jakie płyty i zespoły, co je łączy. Bez wstępów typu „w tym odcinku".',
     '2. "labels": dla każdego wejścia krótka nazwa redakcyjna (4–10 słów), która mówi, czego dotyczy dana wypowiedź — np. „Mantar i płyta Post-Apokaliptic Depression z lutego". Oddaj numer startu wejścia w polu "start".',
+    ...(needsTitle
+      ? ['3. "title": tytuł odcinka na stronę (4–8 słów), oddający główny temat — bez cudzysłowów, bez daty i godziny, bez „Ciężko na sercu”.']
+      : []),
     '',
     'Zasady:',
     '- Wykonawców, tytuły i albumy bierz wyłącznie z listy utworów i notatek; nie zgaduj ani nie poprawiaj pisowni nazw własnych.',
     '- Jeśli czegoś nie ma w materiale, pomiń to zamiast domyślać się.',
     '',
-    'Odpowiedz wyłącznie JSON-em: {"summary": "...", "labels": [{"start": 223, "label": "..."}]}',
+    needsTitle
+      ? 'Odpowiedz wyłącznie JSON-em: {"summary": "...", "labels": [{"start": 223, "label": "..."}], "title": "..."}'
+      : 'Odpowiedz wyłącznie JSON-em: {"summary": "...", "labels": [{"start": 223, "label": "..."}]}',
   ].join('\n');
 };
 
@@ -356,7 +363,11 @@ for (const entry of selected) {
   const needsSummary = force || !episode.summary;
   const relabel = topics.filter((topic) => needsLabel(topic.label) || (relabelRaw && looksRaw(topic.label)));
   const needsCredits = (episode.credits ?? []).length === 0;
-  if (!needsSummary && relabel.length === 0 && !needsCredits) continue;
+  // Tytuł techniczny bez nieoficjalnego to znak, że redakcja go jeszcze nie nadała —
+  // wtedy proponujemy własny, żeby odcinek nie nazywał się „godz. 00:06”.
+  const unofficial = (await readJson('data/titles.json').catch(() => ({ titles: {} }))).titles?.[entry.id];
+  const needsTitle = !unofficial && isTechnicalTitle(entry.title);
+  if (!needsSummary && relabel.length === 0 && !needsCredits && !needsTitle) continue;
 
   const transcript = await readJson(`data/transcripts/${entry.id}.json`).catch(() => null);
   if (!transcript) {
@@ -367,7 +378,7 @@ for (const entry of selected) {
   // Notatki z całego transkryptu są potrzebne tylko do streszczenia i etykiet —
   // gdy brakuje wyłącznie kredytów, nie palimy limitu na map-reduce.
   const notes = [];
-  if (needsSummary || relabel.length > 0) {
+  if (needsSummary || relabel.length > 0 || needsTitle) {
     try {
       for (const chunk of splitChunks(transcript)) {
         const note = await ask(notesPrompt(entry, chunk));
@@ -382,7 +393,7 @@ for (const entry of selected) {
 
   let answer;
   try {
-    answer = await ask(finalPrompt(entry, notes, topics));
+    answer = await ask(finalPrompt(entry, notes, topics, needsTitle));
   } catch (error) {
     console.error(`— ${entry.slug}: ${error.message}`);
     continue;
@@ -470,6 +481,34 @@ for (const entry of selected) {
     } catch (error) {
       console.error(`   kredyty: ${error.message}`);
       credits = null;
+    }
+  }
+
+  // Tytuł nieoficjalny zapisujemy obok odcinka, w `titles.json` — tam trzyma je edytor.
+  let proposedTitle = null;
+  if (needsTitle) {
+    const candidate = String(answer.title ?? '').trim().replace(/^["„”]+|["„”]+$/g, '');
+    const words = candidate.split(/\s+/).filter(Boolean).length;
+    if (candidate.length >= 12 && words >= 3 && words <= 10 && !isTechnicalTitle(candidate)) {
+      proposedTitle = candidate;
+      console.log(`   tytuł: ${candidate}`);
+    } else {
+      console.log(`   tytuł odrzucony: „${candidate.slice(0, 60)}”`);
+    }
+  }
+
+  if (write && proposedTitle) {
+    const titles = await readJson('data/titles.json').catch(() => ({ version: 1, titles: {} }));
+    titles.titles = titles.titles ?? {};
+    if (!titles.titles[entry.id]) {
+      titles.titles[entry.id] = {
+        title: proposedTitle,
+        kind: 'unofficial',
+        originalTitle: entry.title,
+        note: 'Tytuł nieoficjalny wygenerowany z transkryptu (AI).',
+      };
+      await writeFile('data/titles.json', `${JSON.stringify(titles, null, 2)}\n`);
+      updated += 1;
     }
   }
 

@@ -5,6 +5,7 @@
 
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 const UA =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36';
@@ -99,6 +100,11 @@ export const readMetadata = async (uuid) => {
 
 const dirName = (metadata) => `${metadata.date}_${metadata.uuid}`;
 
+// Reszta pliku to CLI: import samego `readMetadata` nie może niczego pobierać ani pisać.
+const isCli = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (!isCli) {
+  // eksport dla innych skryptów kończy pracę tutaj
+} else {
 const catalog = JSON.parse(await readFile(join(ROOT, 'data', 'catalog.json'), 'utf8'));
 const byId = new Map(catalog.episodes.map((entry) => [entry.id, entry]));
 
@@ -143,3 +149,4 @@ for (const uuid of targets) {
 }
 
 if (problems > 0) process.exitCode = 1;
+}
