@@ -23,7 +23,8 @@ const ENDPOINT_TIMEOUT_MS = 90000;
 const CHUNK_CHARS = 9000;
 const SUMMARY_MIN = 120;
 const SUMMARY_MAX = 1200;
-const LABEL_MAX = 90;
+// Dwa wydawnictwa w jednej etykiecie to nie błąd — poprawiony opis bywa długi.
+const LABEL_MAX = 140;
 
 // Dostawcy zgodni z API OpenAI (chat/completions). Każdy ma darmowy tier, a klucz
 // czytamy z osobnej zmiennej: brak klucza po prostu wyłącza dostawcę z łańcucha,
@@ -257,8 +258,8 @@ const labelPrompt = (episode, topic, context) => {
           'OBECNY OPIS (szkic do poprawy):',
           draft,
           '',
-          'Zadanie: popraw ten opis — zachowaj nazwy wykonawców, tytuły i albumy, usuń znacznik #TODO,',
-          'zejdź do 4–12 słów i nie dodawaj faktów, których nie ma w szkicu ani w transkrypcie.',
+          'Zadanie: popraw ten opis — usuń znacznik #TODO, uporządkuj składnię i nie dodawaj faktów,',
+          'których nie ma w szkicu. Tytułów ani nazw nie skracaj: zostaw je dokładnie tak, jak są zapisane.',
         ]
       : [
           '',
