@@ -1,3 +1,9 @@
+## [1.57.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.57.0...v1.57.1) (2026-11-12)
+
+### Bug Fixes
+
+* **scripts:** wip: detect #TODO anywhere in label text ([1a36912](https://github.com/tiriana/ciezko-na-sercu-web/commit/1a3691204d139aa0dd21178086d3280da08300bf)), closes [#TODO](https://github.com/tiriana/ciezko-na-sercu-web/issues/TODO)
+
 ## [1.57.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.56.0...v1.57.0) (2026-11-12)
 
 ### Features
