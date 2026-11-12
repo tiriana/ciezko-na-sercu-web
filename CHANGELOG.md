@@ -1,3 +1,13 @@
+## [1.63.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.62.1...v1.63.0) (2026-11-12)
+
+### Features
+
+* skok do następnego/poprzedniego znacznika bez ok (N/P) ([606be72](https://github.com/tiriana/ciezko-na-sercu-web/commit/606be729a106ad525e332d8c0bf99eca844fd9cb))
+
+### Bug Fixes
+
+* naprawa utworów i wejść bez opisu (4d8fa861-ceb5-4144-a023-5cf69a9cb951, 43180133538) ([34d75d5](https://github.com/tiriana/ciezko-na-sercu-web/commit/34d75d51b1fec960dbdba2f1236f73895a2b8351))
+
 ## [1.62.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.62.0...v1.62.1) (2026-11-12)
 
 ### Bug Fixes
