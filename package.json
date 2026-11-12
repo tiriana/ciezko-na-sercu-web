@@ -27,6 +27,7 @@
     "pipeline": "dot -Tsvg docs/pipeline.dot -o docs/pipeline.svg && dot -Tpng -Gdpi=200 docs/pipeline.dot -o docs/pipeline.png && dot -Tpdf docs/pipeline.dot -o docs/pipeline.pdf",
     "enrich": "node scripts/enrich-episode.mjs",
     "enrich:apply": "node scripts/enrich-episode.mjs --write",
+    "align": "node scripts/align-topics.mjs",
     "llm:models": "node scripts/llm.mjs --models --all",
     "test:llm": "node --test scripts/lib/llm.test.mjs",
     "tags": "node scripts/fix-tags.mjs",

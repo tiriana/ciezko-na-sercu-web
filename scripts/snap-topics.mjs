@@ -139,6 +139,70 @@ const skippedFrozen = targets.filter((entry) => frozen.has(entry.id)).length;
 
 let changedFiles = 0;
 let changedTopics = 0;
+
+// Mówienie nie może zaczynać się w środku utworu: jeśli wejście stoi w bloku
+// muzycznym, to blok kończy się tam, gdzie wchodzi głos. Bez tego `npm run check`
+// zgłasza nachodzące na siebie pozycje programu. Wejście stojące dokładnie na
+// starcie utworu przenosimy za jego koniec — głos nie zaczyna się razem z muzyką.
+const trimTracksToTopics = (episode) => {
+  let trimmed = 0;
+  let moved = 0;
+  for (const track of episode.tracks ?? []) {
+    const end = track.end ?? track.start + (track.durationSec ?? 0);
+    const cut = (episode.topics ?? [])
+      .map((topic) => topic.start)
+      .filter((start) => start > track.start + 5 && start < end - 1)
+      .sort((left, right) => left - right)[0];
+    if (cut !== undefined) {
+      track.end = cut;
+      track.durationSec = Math.max(0, cut - track.start);
+      trimmed += 1;
+      continue;
+    }
+    for (const topic of episode.topics ?? []) {
+      if (topic.start >= track.start - 0.01 && topic.start < track.start + 5 && end > topic.start + 1) {
+        topic.start = end;
+        moved += 1;
+      }
+    }
+  }
+  if (trimmed === 0 && moved === 0) return 0;
+
+  const starts = [
+    ...(episode.tracks ?? []).map((track) => track.start),
+    ...(episode.topics ?? []).map((topic) => topic.start),
+  ].sort((left, right) => left - right);
+  const endAfter = (start) => starts.find((value) => value > start) ?? episode.durationSec ?? start;
+  episode.topics = (episode.topics ?? []).map((topic) => ({ ...topic, end: endAfter(topic.start) }));
+  return trimmed + moved;
+};
+
+// Dwa wejścia nie mogą stać w tej samej sekundzie — model czasem przypisze oba do
+// jednego fragmentu. Dzielimy wspólny przedział równo, żeby oba były widoczne.
+const spreadDuplicates = (episode) => {
+  const topics = [...(episode.topics ?? [])].sort((left, right) => left.start - right.start);
+  let spread = 0;
+  let index = 0;
+  while (index < topics.length) {
+    const same = [];
+    while (index + same.length < topics.length && Math.abs(topics[index + same.length].start - topics[index].start) < 0.5) {
+      same.push(index + same.length);
+    }
+    const group = same.map((position) => topics[position]);
+    const end = Math.max(...group.map((topic) => topic.end ?? topic.start));
+    if (group.length > 1 && end > group[0].start + group.length) {
+      const step = (end - group[0].start) / group.length;
+      group.forEach((topic, offset) => {
+        topic.start = group[0].start + offset * step;
+        topic.end = group[0].start + (offset + 1) * step;
+      });
+      spread += group.length;
+    }
+    index += Math.max(1, group.length);
+  }
+  return spread;
+};
+
 for (const entry of targets.filter((item) => !frozen.has(item.id))) {
   const episodeFile = path.join(root, 'data/episodes', `${entry.id}.json`);
   const transcriptFile = path.join(root, 'data/transcripts', `${entry.id}.json`);
@@ -167,7 +231,19 @@ for (const entry of targets.filter((item) => !frozen.has(item.id))) {
 
   const input = episode.topics.map((topic) => ({ time: topic.start, topic: topic.label }));
   const { topics: snapped, moved } = snapTopics(input, segments, durationSec);
-  if (moved.length === 0) continue;
+  const before = JSON.stringify(episode.topics);
+  if (moved.length === 0) {
+    // Same przesunięcia nie zmieniają kolejności w pliku — sortowanie zostaje.
+    episode.topics = [...episode.topics].sort((left, right) => left.start - right.start);
+    const trimmed = trimTracksToTopics(episode);
+    spreadDuplicates(episode);
+    if (JSON.stringify(episode.topics) === before && trimmed === 0) continue;
+    writeFileSync(episodeFile, `${JSON.stringify(episode, null, 2)}\n`);
+    changedFiles += 1;
+    if (trimmed > 0) console.log(`${entry.slug}: skrócono ${trimmed} utworów do początku mowy`);
+    else console.log(`${entry.slug}: posortowano wejścia`);
+    continue;
+  }
 
   // Koniec tematu to najbliższy późniejszy start jakiejkolwiek pozycji programu
   // (utworu albo tematu), dokładnie jak w `reconcileTimeline` taggera. Inaczej po
@@ -177,10 +253,14 @@ for (const entry of targets.filter((item) => !frozen.has(item.id))) {
   );
   const nextStartAfter = (start) => starts.find((value) => value > start) ?? durationSec;
 
-  episode.topics = episode.topics.map((topic, index) => {
-    const start = snapped[index].time;
-    return { ...topic, start, end: nextStartAfter(start) };
-  });
+  episode.topics = episode.topics
+    .map((topic, index) => {
+      const start = snapped[index].time;
+      return { ...topic, start, end: nextStartAfter(start) };
+    })
+    .sort((left, right) => left.start - right.start);
+  trimTracksToTopics(episode);
+  spreadDuplicates(episode);
   writeFileSync(episodeFile, `${JSON.stringify(episode, null, 2)}\n`);
   changedFiles += 1;
   changedTopics += moved.length;

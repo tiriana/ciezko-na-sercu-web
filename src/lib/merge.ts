@@ -82,7 +82,14 @@ export function sanitizeEpisode(episode: Episode): void {
 }
 
 function applyOverride(episode: Episode, override: Override): void {
-  for (const fix of override.tracks) {
+  // Pliki poprawek z ręki bywają bez pustych sekcji — brak = brak zmian.
+  const tracks = override.tracks ?? [];
+  const addTracks = override.addTracks ?? [];
+  const topics = override.topics ?? [];
+  const addTopics = override.addTopics ?? [];
+  const credits = override.credits ?? {};
+
+  for (const fix of tracks) {
     const track = episode.tracks.find(
       (candidate) => sameText(candidate.artist, fix.artist) && sameText(candidate.title, fix.title) && sameText(candidate.album, fix.album)
     );
@@ -95,10 +102,10 @@ function applyOverride(episode: Episode, override: Override): void {
     if (fix.newAlbum !== undefined) track.album = fix.newAlbum;
   }
 
-  if (override.tracks.some((fix) => fix.hide)) {
+  if (tracks.some((fix) => fix.hide)) {
     episode.tracks = episode.tracks.filter(
       (track) =>
-        !override.tracks.some(
+        !tracks.some(
           (fix) =>
             fix.hide &&
             sameText(track.artist, fix.artist) &&
@@ -111,14 +118,14 @@ function applyOverride(episode: Episode, override: Override): void {
     );
   }
 
-  if (override.addTopics.length > 0) {
+  if (addTopics.length > 0) {
     episode.topics.push(
-      ...override.addTopics.map((topic) => ({ start: topic.start, label: topic.label, ...(topic.end !== undefined ? { end: topic.end } : {}) }))
+      ...addTopics.map((topic) => ({ start: topic.start, label: topic.label, ...(topic.end !== undefined ? { end: topic.end } : {}) }))
     );
     episode.topics.sort((left, right) => left.start - right.start);
   }
 
-  for (const fix of override.topics) {
+  for (const fix of topics) {
     const topic = episode.topics.find((candidate) => candidate.start === fix.time && sameText(candidate.label, fix.label));
     if (!topic) continue;
     if (fix.start !== undefined) topic.start = fix.start;
@@ -126,9 +133,9 @@ function applyOverride(episode: Episode, override: Override): void {
     if (fix.newLabel) topic.label = fix.newLabel;
   }
 
-  if (override.addTracks.length > 0) {
+  if (addTracks.length > 0) {
     episode.tracks.push(
-      ...override.addTracks.map((track) => ({
+      ...addTracks.map((track) => ({
         // Puste pola znaczą „nie wiem”, a nie „pusty tekst” — strona pokazuje wtedy
         // „wykonawca nierozpoznany” / „tytuł nierozpoznany”.
         artist: track.artist || null,
@@ -143,15 +150,15 @@ function applyOverride(episode: Episode, override: Override): void {
     episode.tracks.sort((left, right) => left.start - right.start);
   }
 
-  if (override.topics.some((fix) => fix.hide)) {
+  if (topics.some((fix) => fix.hide)) {
     episode.topics = episode.topics.filter(
-      (topic) => !override.topics.some((fix) => fix.hide && fix.time === topic.start && sameText(topic.label, fix.label))
+      (topic) => !topics.some((fix) => fix.hide && fix.time === topic.start && sameText(topic.label, fix.label))
     );
   }
 
-  const rename = override.credits.rename;
-  if (override.credits.replace) {
-    episode.credits = override.credits.replace.map((credit) => ({ ...credit }));
+  const rename = credits.rename ?? {};
+  if (credits.replace) {
+    episode.credits = credits.replace.map((credit) => ({ ...credit }));
   } else if (Object.keys(rename).length > 0) {
     episode.credits = episode.credits.map((credit) => ({ ...credit, name: rename[credit.name] ?? credit.name }));
   }
