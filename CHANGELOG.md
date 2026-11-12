@@ -1,3 +1,9 @@
+## [1.51.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.50.0...v1.51.0) (2026-11-12)
+
+### Features
+
+* **enrich:** kredyty z transkryptu (LLM + znane osoby); Mowa liczona z wejść ([1b8d4df](https://github.com/tiriana/ciezko-na-sercu-web/commit/1b8d4dff23f5759206ec825dcd0b308663cdaef9))
+
 ## [1.50.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.49.0...v1.50.0) (2026-11-12)
 
 ### Features
