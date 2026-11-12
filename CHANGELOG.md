@@ -1,3 +1,9 @@
+## [1.50.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.49.0...v1.50.0) (2026-11-12)
+
+### Features
+
+* **edytor:** ręcznie dodany utwór od razu jest oznaczony jako nierozpoznany ([b0d7178](https://github.com/tiriana/ciezko-na-sercu-web/commit/b0d717838c40067ce1aa4bdf7f5a8be5322ae9c4))
+
 ## [1.49.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.48.0...v1.49.0) (2026-11-12)
 
 ### Features
