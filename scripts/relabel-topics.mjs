@@ -11,7 +11,7 @@
  * Etykietę skracamy z jej własnej treści, a nie z transkryptu: w starych odcinkach
  * czasy wejść bywają przesunięte i kontekst wokół znacznika mówi o poprzedniej płycie.
  *
- *   node scripts/relabel-topics.mjs --episodes <id|slug,...> [--limit N] [--model ...] [--write]
+ *   node scripts/relabel-topics.mjs --episodes <id|slug,...> [--retime] [--limit N] [--model ...] [--pause ms] [--write]
  */
 import { readFile, writeFile } from 'node:fs/promises';
 
@@ -36,6 +36,9 @@ const write = args.has('write');
 const limit = Number.parseInt(args.get('limit') ?? '0', 10) || 0;
 // Darmowe tiery liczą tokeny na minutę; przy kilkudziesięciu wejściach warto zwolnić.
 const pause = Number.parseInt(args.get('pause') ?? '0', 10) || 0;
+// `--retime` liczy wejścia od nowa z bloków mowy transkryptu — dla odcinków,
+// w których stare czasy rozjechały się z nagraniem, a etykiety mówią o czym innym.
+const retime = args.has('retime');
 const model = args.get('model') ?? process.env.ENRICH_MODELS ?? '';
 const wanted = String(args.get('episodes') ?? '')
   .split(/[\s,]+/)
@@ -57,11 +60,12 @@ const usable = (label) => {
   return words >= 1 && words <= LABEL_WORDS;
 };
 
-const labelPrompt = (label) =>
+const labelPrompt = (label, context = '') =>
   [
-    `Obecna etykieta wejścia audycji: „${label}”.`,
+    label ? `Obecna etykieta wejścia audycji: „${label}”.` : 'Fragment audycji bez etykiety.',
     '',
-    'Zadanie: napisz krótszą etykietę o tym samym głównym temacie: 2–6 słów, maks. 60 znaków.',
+    ...(context ? ['TRANSKRYPT FRAGMENTU:', context, ''] : []),
+    'Zadanie: napisz krótką etykietę o jednym głównym temacie: 2–6 słów, maks. 60 znaków.',
     'Zostaw nazwę wykonawcy lub zespołu i dopisz, czego dotyczy (nowa płyta, singiel, debiut, koncert) — nie kończ na samym gatunku.',
     'Usuń tytuły albumów i utworów, daty, liczby i wyliczenia; jeśli etykieta wymienia kilka tematów rozdzielonych „ / ”, zostaw tylko pierwszy.',
     'Nie zmieniaj znaczenia nazw gatunków: „grind/death metal” zostaje bez zmian.',
@@ -69,6 +73,28 @@ const labelPrompt = (label) =>
     '',
     'Odpowiedz wyłącznie JSON-em: {"label": "..."}',
   ].join('\n');
+
+// Blok mowy to ciąg segmentów bez pauzy dłuższej niż kilka sekund — w audycji
+// jeden blok to zwykle zapowiedź jednej płyty (czasem z dokończeniem po utworze).
+const speechBlocks = (transcript) => {
+  const blocks = [];
+  let current = null;
+  for (const segment of transcript?.segments ?? []) {
+    if (!current || segment.start - current.end > 6) {
+      if (current) blocks.push(current);
+      current = { start: segment.start, end: segment.end, text: String(segment.text ?? '').trim() };
+    } else {
+      current.end = segment.end;
+      current.text = `${current.text} ${String(segment.text ?? '').trim()}`;
+    }
+  }
+  if (current) blocks.push(current);
+  return blocks.map((block) => ({
+    start: Math.round(block.start * 100) / 100,
+    end: Math.round(block.end * 100) / 100,
+    text: block.text,
+  }));
+};
 
 const episodeId = async (key, catalog) => {
   const byId = new Map(catalog.episodes.map((entry) => [entry.id, entry]));
@@ -80,6 +106,16 @@ const episodeId = async (key, catalog) => {
       ? `Niejednoznaczny prefiks ${key}: ${matches.map((entry) => entry.id.slice(0, 8)).join(', ')}`
       : `Nieznany odcinek: ${key}`
   );
+};
+
+// Wejście nie może nachodzić na utwór: mówienie kończy się tam, gdzie startuje muzyka.
+const clampEnds = (topics, tracks) => {
+  const starts = (tracks ?? []).map((track) => Number(track.start)).filter(Number.isFinite).sort((left, right) => left - right);
+  return topics.map((topic) => {
+    const next = starts.find((start) => start > topic.start + 0.01);
+    const end = next !== undefined && topic.end !== undefined && next < topic.end ? next : topic.end;
+    return { ...topic, ...(end !== undefined ? { end } : {}) };
+  });
 };
 
 const catalog = await readJson('data/catalog.json');
@@ -104,7 +140,12 @@ for (const key of wanted) {
   const episode = await readJson(episodePath);
   const override = await readJson(overridePath).catch(() => null);
   const merged = mergeEpisode(structuredClone(episode), { override, aliases, types });
-  const topics = merged.topics ?? [];
+  const transcript = retime ? await readJson(`data/transcripts/${id}.json`).catch(() => null) : null;
+  if (retime && !transcript) {
+    console.error(`— ${id.slice(0, 8)}: brak transkryptu`);
+    continue;
+  }
+  const topics = retime ? speechBlocks(transcript) : (merged.topics ?? []);
   if (topics.length === 0) {
     console.log(`— ${id.slice(0, 8)}: brak wejść`);
     continue;
@@ -112,10 +153,12 @@ for (const key of wanted) {
 
   processed += 1;
   console.log(`${write ? '+' : '·'} ${id.slice(0, 8)} — ${topics.length} wejść`);
-  const renamed = [];
+  const labelled = [];
+  let failed = 0;
   for (const topic of topics) {
     try {
-      const answer = await askJson(labelPrompt(topic.label), {
+      const context = retime ? topic.text.slice(0, 900) : '';
+      const answer = await askJson(labelPrompt(topic.label ?? '', context), {
         models: model,
         maxTokens: 60,
         temperature: 0.1,
@@ -123,26 +166,40 @@ for (const key of wanted) {
       const label = String(answer.data?.label ?? '').trim();
       if (!usable(label)) {
         console.log(`   ${topic.start}: odrzucone „${label.slice(0, 70)}”`);
+        failed += 1;
         continue;
       }
       if (label === topic.label) continue;
-      console.log(`   ${topic.start}: ${topic.label}\n      → ${label}`);
-      renamed.push({ topic, label });
+      if (retime) {
+        console.log(`   ${topic.start}: «${topic.text.slice(0, 60)}…»\n      → ${label}`);
+      } else {
+        console.log(`   ${topic.start}: ${topic.label}\n      → ${label}`);
+      }
+      labelled.push({ topic, label });
     } catch (error) {
       console.error(`   ${topic.start}: ${error.message}`);
+      failed += 1;
     }
     if (pause > 0) await new Promise((resolve) => setTimeout(resolve, pause));
   }
 
-  if (!write || renamed.length === 0) continue;
-  const byTopic = new Map(renamed.map(({ topic, label }) => [topic, label]));
-  episode.topics = topics
-    .map((topic) => ({
-      start: topic.start,
-      ...(topic.end !== undefined ? { end: topic.end } : {}),
-      label: byTopic.get(topic) ?? topic.label,
-    }))
-    .sort((left, right) => left.start - right.start);
+  // Nowa siatka wejść musi być kompletna: brak etykiety zostawiłby puste wejście.
+  if (retime && failed > 0) {
+    console.error(`— ${id.slice(0, 8)}: ${failed} wejść bez etykiety, nic nie zapisuję`);
+    continue;
+  }
+  if (!write || labelled.length === 0) continue;
+  const byTopic = new Map(labelled.map(({ topic, label }) => [topic, label]));
+  episode.topics = clampEnds(
+    topics
+      .map((topic) => ({
+        start: topic.start,
+        ...(topic.end !== undefined ? { end: topic.end } : {}),
+        label: byTopic.get(topic) ?? topic.label,
+      }))
+      .sort((left, right) => left.start - right.start),
+    merged.tracks
+  );
   // Wszystko, co robiły poprawki etykiet i dodane wejścia, jest już w odcinku.
   if (override) {
     override.topics = [];
@@ -154,7 +211,7 @@ for (const key of wanted) {
   const reviewed = await readJson('data/reviewed.json').catch(() => ({ version: 1, episodes: {} }));
   const marks = reviewed.episodes?.[id];
   let moved = 0;
-  for (const { topic, label } of renamed) {
+  for (const { topic, label } of labelled) {
     if (!marks) break;
     const from = reviewKey(topic.label);
     const to = reviewKey(label);
@@ -162,6 +219,21 @@ for (const key of wanted) {
     marks[to] = true;
     delete marks[from];
     moved += 1;
+  }
+  // Przy nowej siatce etykiety nie mają odpowiedników 1:1 — znacznik „ok” przenosimy
+  // po nazwie zespołu (część przed „ – ”), żeby nie zgubić przejrzanych wejść.
+  if (retime && marks) {
+    for (const mark of Object.keys(marks)) {
+      if (!mark.startsWith('p:')) continue;
+      const prefix = mark.slice(2).split(' – ')[0].trim();
+      const target = episode.topics.find((topic) => topic.label.split(' – ')[0].trim().toLowerCase() === prefix);
+      if (!target) continue;
+      const to = reviewKey(target.label);
+      if (mark === to || !marks[mark]) continue;
+      marks[to] = true;
+      delete marks[mark];
+      moved += 1;
+    }
   }
   if (moved > 0) await writeFile('data/reviewed.json', `${JSON.stringify(reviewed, null, 2)}\n`);
   updated += 1;
