@@ -1,3 +1,9 @@
+## [1.57.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.56.0...v1.57.0) (2026-11-12)
+
+### Features
+
+* Update workflow to use $IDS instead of $steps.plan.outputs.ids ([5394590](https://github.com/tiriana/ciezko-na-sercu-web/commit/53945908a03e59109a391db7b95c0be39924260e))
+
 ## [1.56.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.55.0...v1.56.0) (2026-11-12)
 
 ### Features
