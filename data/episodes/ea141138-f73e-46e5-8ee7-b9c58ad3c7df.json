@@ -2,63 +2,63 @@
   "version": 1,
   "id": "ea141138-f73e-46e5-8ee7-b9c58ad3c7df",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.852Z",
-  "durationSec": 7067,
+  "updatedAt": "2026-11-11T23:56:03.232Z",
+  "durationSec": 7050.861,
   "summary": "Tematem odcinka są wokaliści, których odejście wydawało się końcem zespołu. Punktem wyjścia jest rozstanie Aarona Stainthorpe'a z My Dying Bride i spór fanów o to, czy grupa przetrwa bez jego charakterystycznego, czystego lamentu. Jako kontrprzykłady przywołane zostają Morbid Angel ze Stevem Tuckerem na Formulas Fatal to the Flesh, Entombed z Nickiem Anderssonem na Clandestine, Cannibal Corpse z George'em \"Corpsegrinderem\" Fisherem, Decapitated z Sauronem i Cowanem, Napalm Death z Lee Dorrianem i Barneyem Greenwayem, The Dillinger Escape Plan z Gregiem Puciato, Candlemass z Björnem Flodkvistem oraz Exodus z kolejnymi frontmanami. Osobno omówione są Iron Maiden i Van Halen, gdzie zmiana wokalisty nie przesądziła o wartości muzyki, a na końcu Black Sabbath z Ozzym i Ronniem Jamesem Dio, którego prowadzący uznaje za swojego pierwszego wokalistę zespołu. Wniosek jest taki, że niepowtarzalnego głosu nie da się podrobić, ale można zrobić coś innego i wcale nie gorzej.",
   "topics": [
     {
-      "start": 373,
-      "end": 486,
+      "start": 372.14,
+      "end": 484.89,
       "label": "Rozstanie Aarona Stainthorpe'a z My Dying Bride i losy zespołu"
     },
     {
-      "start": 486,
-      "end": 487,
+      "start": 484.89,
+      "end": 485.88,
       "label": "Morbid Angel po Davie Vincentcie i album z Stevem Tuckerem"
     },
     {
-      "start": 1182.92,
-      "end": 1326,
+      "start": 1180.21,
+      "end": 1322.96,
       "label": "Entombed: Petrov, Orvar Säfström i Nicke Andersson na Clandestine"
     },
     {
-      "start": 1919,
-      "end": 1971,
+      "start": 1914.6,
+      "end": 1966.48,
       "label": "Cannibal Corpse: Chris Barnes zastąpiony przez Corpsegrindera"
     },
     {
-      "start": 2492,
-      "end": 2622,
+      "start": 2486.29,
+      "end": 2615.99,
       "label": "Decapitated: Sauron, Covan i nowy wokalista z Finlandii"
     },
     {
-      "start": 3111,
-      "end": 3196,
+      "start": 3103.87,
+      "end": 3188.67,
       "label": "Iron Maiden i Van Halen jako klasyczne przykłady zmiany frontmana"
     },
     {
-      "start": 3196,
-      "end": 3295,
+      "start": 3188.67,
+      "end": 3287.44,
       "label": "Napalm Death: Nick Bullen, Lee Dorrian i Barney Greenway"
     },
     {
-      "start": 3800,
-      "end": 3957,
+      "start": 3791.29,
+      "end": 3947.93,
       "label": "The Dillinger Escape Plan: Minakakis, Patton i Greg Puciato"
     },
     {
-      "start": 4376,
-      "end": 4492,
+      "start": 4365.97,
+      "end": 4481.7,
       "label": "Candlemass: Messiah Marcolin i Björn Flodqvist"
     },
     {
-      "start": 5247,
-      "end": 5322,
+      "start": 5234.97,
+      "end": 5309.8,
       "label": "Exodus poza Wielką Czwórką thrashu i jego trzej wokaliści"
     },
     {
-      "start": 6347,
-      "end": 6436,
+      "start": 6332.45,
+      "end": 6421.24,
       "label": "Black Sabbath: epoka Ozzy'ego Osbourne'a i Ronniego Jamesa Dio"
     }
   ],
@@ -68,77 +68,77 @@
       "label": "Black Sabbath",
       "type": "artist",
       "source": "tracks",
-      "at": 6436
+      "at": 6421.24
     },
     {
       "id": "candlemass",
       "label": "Candlemass",
       "type": "artist",
       "source": "tracks",
-      "at": 4492
+      "at": 4481.7
     },
     {
       "id": "cannibal-corpse",
       "label": "Cannibal Corpse",
       "type": "artist",
       "source": "tracks",
-      "at": 1971
+      "at": 1966.48
     },
     {
       "id": "decapitated",
       "label": "Decapitated",
       "type": "artist",
       "source": "tracks",
-      "at": 2622
+      "at": 2615.99
     },
     {
       "id": "entombed",
       "label": "Entombed",
       "type": "artist",
       "source": "tracks",
-      "at": 1326
+      "at": 1322.96
     },
     {
       "id": "exodus",
       "label": "Exodus",
       "type": "artist",
       "source": "tracks",
-      "at": 5322
+      "at": 5309.8
     },
     {
       "id": "morbid-angel",
       "label": "Morbid Angel",
       "type": "artist",
       "source": "tracks",
-      "at": 487
+      "at": 485.88
     },
     {
       "id": "my-dying-bride",
       "label": "My Dying Bride",
       "type": "artist",
       "source": "tracks",
-      "at": 36
+      "at": 35.92
     },
     {
       "id": "napalm-death",
       "label": "Napalm Death",
       "type": "artist",
       "source": "tracks",
-      "at": 3295
+      "at": 3287.44
     },
     {
       "id": "the-dillinger-escape-plan",
       "label": "The Dillinger Escape Plan",
       "type": "artist",
       "source": "tracks",
-      "at": 3957
+      "at": 3947.93
     },
     {
       "id": "koncert-rocznictwa-trasa-the-dillinger-escape-plan-z-dimitrim-minakakisem",
       "label": "Rocznictwa trasa The Dillinger Escape Plan z Dimitrim Minakakìsem",
       "type": "concert",
       "source": "transcript",
-      "at": 3934
+      "at": 3924.98
     },
     {
       "id": "jarek-szubrycht",
@@ -155,9 +155,9 @@
   ],
   "tracks": [
     {
-      "start": 36,
-      "end": 373,
-      "durationSec": 339,
+      "start": 35.92,
+      "end": 372.14,
+      "durationSec": 338.22,
       "artist": "My Dying Bride",
       "title": "My Wine In Silence",
       "album": "Songs Of Darkness, Words Of Light",
@@ -168,9 +168,9 @@
       "links": []
     },
     {
-      "start": 487,
-      "end": 807.33,
-      "durationSec": 322,
+      "start": 485.88,
+      "end": 805.48,
+      "durationSec": 321.26,
       "artist": "Morbid Angel",
       "title": "God of Emptiness",
       "album": "Laibach Remixes - EP",
@@ -181,9 +181,9 @@
       "links": []
     },
     {
-      "start": 905,
-      "end": 1182.92,
-      "durationSec": 279,
+      "start": 902.92,
+      "end": 1180.21,
+      "durationSec": 278.36,
       "artist": "Morbid Angel",
       "title": "Nothing Is Not",
       "album": "Formulas Fatal to the Flesh",
@@ -194,9 +194,9 @@
       "links": []
     },
     {
-      "start": 1326,
-      "end": 1919,
-      "durationSec": 593,
+      "start": 1322.96,
+      "end": 1914.6,
+      "durationSec": 591.64,
       "artist": "Entombed",
       "title": "Left Hand Path",
       "album": "Left Hand Path",
@@ -207,9 +207,9 @@
       "links": []
     },
     {
-      "start": 1971,
-      "end": 2492,
-      "durationSec": 522,
+      "start": 1966.48,
+      "end": 2486.29,
+      "durationSec": 520.8,
       "artist": "Cannibal Corpse",
       "title": "Hammer Smashed Face",
       "album": "Tomb of the Mutilated",
@@ -220,9 +220,9 @@
       "links": []
     },
     {
-      "start": 2622,
-      "end": 3111,
-      "durationSec": 491,
+      "start": 2615.99,
+      "end": 3103.87,
+      "durationSec": 489.87,
       "artist": "Decapitated",
       "title": "Spheres of Madness",
       "album": "Nihility",
@@ -233,9 +233,9 @@
       "links": []
     },
     {
-      "start": 3295,
-      "end": 3800,
-      "durationSec": 506,
+      "start": 3287.44,
+      "end": 3791.29,
+      "durationSec": 504.84,
       "artist": "Napalm Death",
       "title": "Scum",
       "album": "Scum",
@@ -246,9 +246,9 @@
       "links": []
     },
     {
-      "start": 3957,
-      "end": 4376,
-      "durationSec": 420,
+      "start": 3947.93,
+      "end": 4365.97,
+      "durationSec": 419.04,
       "artist": "The Dillinger Escape Plan",
       "title": "4th Grade Dropout",
       "album": "Calculating Infinity",
@@ -259,9 +259,9 @@
       "links": []
     },
     {
-      "start": 4492,
-      "end": 5247,
-      "durationSec": 755,
+      "start": 4481.7,
+      "end": 5234.97,
+      "durationSec": 753.27,
       "artist": "Candlemass",
       "title": "Bewitched",
       "album": "Nightfall",
@@ -272,9 +272,9 @@
       "links": []
     },
     {
-      "start": 5322,
-      "end": 6347,
-      "durationSec": 1026,
+      "start": 5309.8,
+      "end": 6332.45,
+      "durationSec": 1023.65,
       "artist": "Exodus",
       "title": "Piranha",
       "album": "Bonded by Blood",
@@ -285,9 +285,9 @@
       "links": []
     },
     {
-      "start": 6436,
-      "end": 7067,
-      "durationSec": 631,
+      "start": 6421.24,
+      "end": 7050.8,
+      "durationSec": 629.55,
       "artist": "Black Sabbath",
       "title": "Children of the Grave",
       "album": "Master of Reality",
@@ -312,5 +312,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 7067.063
 }

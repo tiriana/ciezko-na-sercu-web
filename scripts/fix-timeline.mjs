@@ -102,8 +102,9 @@ const processEpisode = async (entry) => {
 
   const timeline = await timelineFor(entry.audioUrl, entry.id);
   if (!(timeline.scale > 0)) return `${entry.id.slice(0, 8)}: nie udało się zmierzyć czasu — pominięty`;
-  if (Math.abs(timeline.scale - 1) < 1e-6) return `${entry.id.slice(0, 8)}: skala 1 — bez zmian`;
 
+  // Plik bez wady (skala 1) też zapisujemy: pomiar ma zostać w danych, żeby było widać,
+  // że odcinek jest sprawdzony, a nie że nikt go nie mierzył.
   convert(episode, timeline.scale, timeline);
 
   let overrideNote = '';

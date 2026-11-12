@@ -2,8 +2,8 @@
   "version": 1,
   "id": "799726ce-dd56-49eb-bda3-752bdef669cd",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.906Z",
-  "durationSec": 6869,
+  "updatedAt": "2026-11-12T00:00:40.220Z",
+  "durationSec": 6868.824,
   "summary": "Walentynkowe wydanie poświęcone miłości w metalu — od Judas Priest i Motörhead, przez Panterę, Carcass i Strapping Young Lad, po Type O Negative. Przewodnim wątkiem jest zestawienie Erosa z Tanatosem: miłość aż po grób i jej mroczne odmiany, od Alice Cooper i Slayera po Misfits i Pig Destroyer. Przywołano sprawę z 1996 roku, w której Slayera oskarżono o zainspirowanie trzech nastolatków z Kalifornii do zabójstwa koleżanki; sąd odrzucił pozew. Prowadzący opowiedział o swoim pierwszym tekście — protest songu „Jestem przeciw” dla Desperatora, pierwszego metalowego zespołu z Dukli — zapowiedzianym przez kolegę Gileka jako ballada dla zakochanych metali. Omówiono też romantyczne oblicza doom i black metalu: My Dying Bride, Cradle of Filth, Darkthrone oraz żeński Derketa, u którego miłość przezwycięża śmierć.",
   "topics": [
     {
@@ -17,53 +17,53 @@
       "label": "Judas Priest, album Turbo i lament tradycyjnych fanów"
     },
     {
-      "start": 1090,
-      "end": 1109,
+      "start": 1090.01,
+      "end": 1109.01,
       "label": "Pantera i This Love: miłość przeradzająca się w nienawiść"
     },
     {
-      "start": 2456,
-      "end": 2495,
+      "start": 2456.01,
+      "end": 2495.01,
       "label": "Misfits i Die, Die My Darling Glenna Danziga"
     },
     {
-      "start": 2679,
-      "end": 2764,
+      "start": 2679.01,
+      "end": 2764.01,
       "label": "Eros i Thanatos, Alice Cooper i motyw nekrofilii"
     },
     {
-      "start": 2961,
-      "end": 2987,
+      "start": 2961.01,
+      "end": 2987.01,
       "label": "Slayer, utwór Necrophiliac i oswajanie tabu"
     },
     {
-      "start": 3829,
-      "end": 3875,
+      "start": 3829.02,
+      "end": 3875.02,
       "label": "Cannibal Corpse i okładka albumu Tomb of the Mutilated"
     },
     {
-      "start": 4094,
-      "end": 4133,
+      "start": 4094.02,
+      "end": 4133.02,
       "label": "Black metal i Darkthrone: romantyzm przebrany za demony"
     },
     {
-      "start": 4335,
-      "end": 4352,
+      "start": 4335.02,
+      "end": 4352.02,
       "label": "My Dying Bride i teksty pisane krwawiącym sercem"
     },
     {
-      "start": 5155,
-      "end": 5231,
+      "start": 5155.03,
+      "end": 5231.03,
       "label": "Cradle of Filth i Gothic Romance z Dusk and Her Embrace"
     },
     {
-      "start": 5721,
-      "end": 5821,
+      "start": 5721.03,
+      "end": 5821.03,
       "label": "Derketa: kobiece spojrzenie na miłość w doom metalu"
     },
     {
-      "start": 6092,
-      "end": 6134,
+      "start": 6092.03,
+      "end": 6134.03,
       "label": "Powrót do Type O Negative i temat niewierności"
     }
   ],
@@ -73,14 +73,14 @@
       "label": "Cannibal Corpse",
       "type": "artist",
       "source": "tracks",
-      "at": 3875
+      "at": 3875.02
     },
     {
       "id": "carcass",
       "label": "Carcass",
       "type": "artist",
       "source": "tracks",
-      "at": 1524
+      "at": 1524.01
     },
     {
       "id": "coil",
@@ -94,28 +94,28 @@
       "label": "Cradle of Filth",
       "type": "artist",
       "source": "tracks",
-      "at": 5231
+      "at": 5231.03
     },
     {
       "id": "darkthrone",
       "label": "Darkthrone",
       "type": "artist",
       "source": "tracks",
-      "at": 4133
+      "at": 4133.02
     },
     {
       "id": "derketa",
       "label": "Derketa",
       "type": "artist",
       "source": "tracks",
-      "at": 5821
+      "at": 5821.03
     },
     {
       "id": "grave",
       "label": "Grave",
       "type": "artist",
       "source": "tracks",
-      "at": 3623
+      "at": 3623.02
     },
     {
       "id": "judas-priest",
@@ -136,63 +136,63 @@
       "label": "My Dying Bride",
       "type": "artist",
       "source": "tracks",
-      "at": 4352
+      "at": 4352.02
     },
     {
       "id": "pantera",
       "label": "Pantera",
       "type": "artist",
       "source": "tracks",
-      "at": 1109
+      "at": 1109.01
     },
     {
       "id": "pig-destroyer",
       "label": "Pig Destroyer",
       "type": "artist",
       "source": "tracks",
-      "at": 3309
+      "at": 3309.02
     },
     {
       "id": "samael",
       "label": "Samael",
       "type": "artist",
       "source": "tracks",
-      "at": 2764
+      "at": 2764.01
     },
     {
       "id": "slayer",
       "label": "Slayer",
       "type": "artist",
       "source": "tracks",
-      "at": 2987
+      "at": 2987.01
     },
     {
       "id": "strapping-young-lad",
       "label": "Strapping Young Lad",
       "type": "artist",
       "source": "tracks",
-      "at": 1755
+      "at": 1755.01
     },
     {
       "id": "the-misfits",
       "label": "The Misfits",
       "type": "artist",
       "source": "tracks",
-      "at": 2495
+      "at": 2495.01
     },
     {
       "id": "type-o-negative",
       "label": "Type O Negative",
       "type": "artist",
       "source": "tracks",
-      "at": 2094
+      "at": 2094.01
     },
     {
       "id": "koncert-desperator",
       "label": "Desperator",
       "type": "concert",
       "source": "transcript",
-      "at": 3559
+      "at": 3559.02
     },
     {
       "id": "jarek-szubrycht",
@@ -236,7 +236,7 @@
     },
     {
       "start": 770,
-      "end": 1090,
+      "end": 1090.01,
       "durationSec": 321,
       "artist": "Motörhead",
       "title": "Love Me Forever",
@@ -248,8 +248,8 @@
       "links": []
     },
     {
-      "start": 1109,
-      "end": 1493.13,
+      "start": 1109.01,
+      "end": 1493.14,
       "durationSec": 385,
       "artist": "Pantera",
       "title": "This Love",
@@ -261,8 +261,8 @@
       "links": []
     },
     {
-      "start": 1524,
-      "end": 1724.45,
+      "start": 1524.01,
+      "end": 1724.46,
       "durationSec": 202,
       "artist": "Carcass",
       "title": "No Love Lost",
@@ -274,8 +274,8 @@
       "links": []
     },
     {
-      "start": 1755,
-      "end": 2046.23,
+      "start": 1755.01,
+      "end": 2046.24,
       "durationSec": 292,
       "artist": "Strapping Young Lad",
       "title": "Love",
@@ -287,8 +287,8 @@
       "links": []
     },
     {
-      "start": 2094,
-      "end": 2456,
+      "start": 2094.01,
+      "end": 2456.01,
       "durationSec": 364,
       "artist": "Type O Negative",
       "title": "Everyone I Love Is Dead",
@@ -300,8 +300,8 @@
       "links": []
     },
     {
-      "start": 2495,
-      "end": 2679,
+      "start": 2495.01,
+      "end": 2679.01,
       "durationSec": 184,
       "artist": "The Misfits",
       "title": "Die, Die My Darling (Fox Studio 1983)",
@@ -313,8 +313,8 @@
       "links": []
     },
     {
-      "start": 2764,
-      "end": 2961,
+      "start": 2764.01,
+      "end": 2961.01,
       "durationSec": 198,
       "artist": "Samael",
       "title": "I Love the Dead (666)",
@@ -326,8 +326,8 @@
       "links": []
     },
     {
-      "start": 2987,
-      "end": 3205.58,
+      "start": 2987.01,
+      "end": 3205.6,
       "durationSec": 219,
       "artist": "Slayer",
       "title": "Necrophiliac",
@@ -339,8 +339,8 @@
       "links": []
     },
     {
-      "start": 3309,
-      "end": 3514.15,
+      "start": 3309.02,
+      "end": 3514.17,
       "durationSec": 206,
       "artist": "Pig Destroyer",
       "title": "Girl In the Slayer Jacket",
@@ -352,8 +352,8 @@
       "links": []
     },
     {
-      "start": 3623,
-      "end": 3829,
+      "start": 3623.02,
+      "end": 3829.02,
       "durationSec": 208,
       "artist": "Grave",
       "title": "In Love",
@@ -365,8 +365,8 @@
       "links": []
     },
     {
-      "start": 3875,
-      "end": 4094,
+      "start": 3875.02,
+      "end": 4094.02,
       "durationSec": 220,
       "artist": "Cannibal Corpse",
       "title": "I Cum Blood",
@@ -378,8 +378,8 @@
       "links": []
     },
     {
-      "start": 4133,
-      "end": 4335,
+      "start": 4133.02,
+      "end": 4335.02,
       "durationSec": 203,
       "artist": "Darkthrone",
       "title": "Natassja In Eternal Sleep",
@@ -391,8 +391,8 @@
       "links": []
     },
     {
-      "start": 4352,
-      "end": 4662.25,
+      "start": 4352.02,
+      "end": 4662.27,
       "durationSec": 311,
       "artist": "My Dying Bride",
       "title": "Erotic Literature",
@@ -404,8 +404,8 @@
       "links": []
     },
     {
-      "start": 4764,
-      "end": 5155,
+      "start": 4764.02,
+      "end": 5155.03,
       "durationSec": 391,
       "artist": "My Dying Bride",
       "title": "For You",
@@ -417,8 +417,8 @@
       "links": []
     },
     {
-      "start": 5231,
-      "end": 5721,
+      "start": 5231.03,
+      "end": 5721.03,
       "durationSec": 492,
       "artist": "Cradle of Filth",
       "title": "A Gothic Romance (Red Roses for the Devil's Whore)",
@@ -430,8 +430,8 @@
       "links": []
     },
     {
-      "start": 5821,
-      "end": 6092,
+      "start": 5821.03,
+      "end": 6092.03,
       "durationSec": 273,
       "artist": "Derketa",
       "title": "Until Our Death",
@@ -443,8 +443,8 @@
       "links": []
     },
     {
-      "start": 6134,
-      "end": 6869,
+      "start": 6134.03,
+      "end": 6869.03,
       "durationSec": 735,
       "artist": "Type O Negative",
       "title": "Unsuccessfully Coping With the Natural Beauty of Infidelity",
@@ -470,5 +470,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6868.79
 }

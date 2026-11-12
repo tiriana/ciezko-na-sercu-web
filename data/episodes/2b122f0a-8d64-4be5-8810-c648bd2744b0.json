@@ -2,53 +2,53 @@
   "version": 1,
   "id": "2b122f0a-8d64-4be5-8810-c648bd2744b0",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.861Z",
-  "durationSec": 6961,
+  "updatedAt": "2026-11-11T23:56:30.064Z",
+  "durationSec": 6945.099,
   "summary": "Odcinek poświęcony wyłącznie zagranicznym wykonawcom z pogranicza metalu, doomu, sludge'u i eksperymentu. Przypomniano fiński zespół F (wcześniej Funkant), którego jedyny album „1-3” nie odniósł sukcesu, oraz angielski Thine, nieskutecznie promowany przez wytwórnię Peaceville. Omówiono grecki Swan Christie, który zaczynał w progresywnym death doomie (m.in. „Today Died Yesterday”, „Julian”), a potem porzucił metal i zmienił nazwę na A Band Apart, oraz zespół Dine z jego trzema płytami, w tym „In Therapy”. Przybliżono południowokoreański Jambinai, łączący post-rock z koreańską tradycją muzyczną i instrumentami takimi jak geomungo, a także zakończony w 2024 roku Oxbow z Eugene'em Robinsonem i albumem „Thin Black Duke”. Pokazano OM, projekt wywodzący się z Sleep, który rozciąga sludge i doom na rytuały Wschodu, industrialny Red Harvest zmieniający styl z płyty na płytę oraz nowoorleański Soylent Green z bagiennym sludge'em i grindem. Na koniec sięgnięto po Sum of R, chwalony za koncert na Roadburn, i po Khanate Stephena O'Malley'a, którego twórczość określono jako celowo odpychającą i brzydką.",
   "topics": [
     {
-      "start": 806.67,
-      "end": 876,
+      "start": 804.82,
+      "end": 873.99,
       "label": "Prezentacja fińskiego zespołu F i ich jedynej płyty 1-3"
     },
     {
-      "start": 876,
-      "end": 924,
+      "start": 873.99,
+      "end": 921.88,
       "label": "Omówienie brytyjskiego zespołu Thine i ich powiązań z wytwórnią Peaceville"
     },
     {
-      "start": 1722.27,
-      "end": 1761,
+      "start": 1718.32,
+      "end": 1756.96,
       "label": "Historia greckiego zespołu Swan Christie i przemiana w A Band Apart"
     },
     {
-      "start": 2567,
-      "end": 2677,
+      "start": 2561.11,
+      "end": 2670.86,
       "label": "Przedstawienie południowokoreańskiego zespołu Jambinai oraz ich unikalnych instrumentów"
     },
     {
-      "start": 4352,
-      "end": 4420,
+      "start": 4342.02,
+      "end": 4409.86,
       "label": "Recenzja norweskiego zespołu Red Harvest i ich przemian stylistycznych"
     },
     {
-      "start": 4420,
-      "end": 4452,
+      "start": 4409.86,
+      "end": 4441.79,
       "label": "Red Harvest – zmiany brzmieniowe i brutalny styl"
     },
     {
-      "start": 4887,
-      "end": 4936,
+      "start": 4875.79,
+      "end": 4924.68,
       "label": "Soylent Green – historia i aktualny katalog"
     },
     {
-      "start": 5810.92,
-      "end": 5921,
+      "start": 5797.6,
+      "end": 5907.42,
       "label": "Festiwal Roadburn i występ Sam of R"
     },
     {
-      "start": 6272,
-      "end": 6397,
+      "start": 6257.62,
+      "end": 6382.33,
       "label": "Canate – kontrowersyjny projekt i utwór „Dead”"
     }
   ],
@@ -58,21 +58,21 @@
       "label": "Canate",
       "type": "artist",
       "source": "tracks",
-      "at": 5921
+      "at": 5907.42
     },
     {
       "id": "f",
       "label": "F",
       "type": "artist",
       "source": "tracks",
-      "at": 38
+      "at": 37.91
     },
     {
       "id": "jambinai",
       "label": "Jambinai",
       "type": "artist",
       "source": "tracks",
-      "at": 2677
+      "at": 2670.86
     },
     {
       "id": "jarek-szubrycht",
@@ -85,7 +85,7 @@
       "label": "Khanate",
       "type": "artist",
       "source": "tracks",
-      "at": 6397
+      "at": 6382.33
     },
     {
       "id": "mariusz-owczarek",
@@ -98,77 +98,77 @@
       "label": "OM",
       "type": "artist",
       "source": "tracks",
-      "at": 3685
+      "at": 3676.55
     },
     {
       "id": "oxbow",
       "label": "Oxbow",
       "type": "artist",
       "source": "tracks",
-      "at": 2966
+      "at": 2959.2
     },
     {
       "id": "red-harvest",
       "label": "Red Harvest",
       "type": "artist",
       "source": "tracks",
-      "at": 4094
+      "at": 4084.61
     },
     {
       "id": "soilent-green",
       "label": "Soilent Green",
       "type": "artist",
       "source": "tracks",
-      "at": 4936
+      "at": 4924.68
     },
     {
       "id": "swan-christy",
       "label": "Swan Christy",
       "type": "artist",
       "source": "tracks",
-      "at": 1761
+      "at": 1756.96
     },
     {
       "id": "thine",
       "label": "Thine",
       "type": "artist",
       "source": "tracks",
-      "at": 924
+      "at": 921.88
     },
     {
       "id": "koncert-wystep-jambinai-na-ceremonii-zamkniecia-zimowych-igrzysk-olimpijskich-w-pjongczangu",
       "label": "Występ Jambinai na ceremonii zamknięcia zimowych igrzysk olimpijskich w Pjongczangu",
       "type": "concert",
       "source": "transcript",
-      "at": 2567
+      "at": 2561.11
     },
     {
       "id": "koncert-koncert-jambinai-na-off-festivalu-w-katowicach",
       "label": "Koncert Jambinai na OFF Festivalu w Katowicach",
       "type": "concert",
       "source": "transcript",
-      "at": 2646
+      "at": 2639.93
     },
     {
       "id": "roadburn",
       "label": "Roadburn",
       "type": "event",
       "source": "transcript",
-      "at": 5797
+      "at": 5783.71
     },
     {
       "id": "koncert-wystep-sum-of-r-na-roadburn-w-2022-roku",
       "label": "Występ Sum of R na Roadburn w 2022 roku",
       "type": "concert",
       "source": "transcript",
-      "at": 5845
+      "at": 5831.6
     }
   ],
   "tracks": [
     {
-      "start": 38,
-      "end": 806.67,
-      "durationSec": 769,
+      "start": 37.91,
+      "end": 804.82,
+      "durationSec": 767.24,
       "artist": "F",
       "title": null,
       "album": "1-3",
@@ -179,9 +179,9 @@
       "links": []
     },
     {
-      "start": 924,
-      "end": 1453.1,
-      "durationSec": 529,
+      "start": 921.88,
+      "end": 1449.77,
+      "durationSec": 527.79,
       "artist": "Thine",
       "title": "Feathers & Roses",
       "album": "A Town Like This",
@@ -193,9 +193,9 @@
       "links": []
     },
     {
-      "start": 1486,
-      "end": 1678.05,
-      "durationSec": 194,
+      "start": 1482.59,
+      "end": 1674.2,
+      "durationSec": 193.56,
       "artist": "Thine",
       "title": "Homewrecker Extraordinaire",
       "album": "In Therapy",
@@ -206,9 +206,9 @@
       "links": []
     },
     {
-      "start": 1761,
-      "end": 2279.17,
-      "durationSec": 519,
+      "start": 1756.96,
+      "end": 2273.94,
+      "durationSec": 517.81,
       "artist": "Swan Christy",
       "title": "Ressurection If Possible (NORMAL)",
       "album": "Today Died Yesterday",
@@ -220,9 +220,9 @@
       "links": []
     },
     {
-      "start": 2312,
-      "end": 2567,
-      "durationSec": 257,
+      "start": 2306.7,
+      "end": 2561.11,
+      "durationSec": 256.41,
       "artist": "Swan Christy",
       "title": "Pure Inspiration (NORMAL)",
       "album": "Julian",
@@ -234,9 +234,9 @@
       "links": []
     },
     {
-      "start": 2677,
-      "end": 2944.55,
-      "durationSec": 269,
+      "start": 2670.86,
+      "end": 2937.8,
+      "durationSec": 268.38,
       "artist": "Jambinai",
       "title": "Deus Benedicat Tibi",
       "album": "A Hermitage",
@@ -248,9 +248,9 @@
       "links": []
     },
     {
-      "start": 2966,
-      "end": 3225.8,
-      "durationSec": 261,
+      "start": 2959.2,
+      "end": 3218.4,
+      "durationSec": 260.4,
       "artist": "Oxbow",
       "title": "Cold & Well-Lit Place",
       "album": "Thin Black Duke",
@@ -262,9 +262,9 @@
       "links": []
     },
     {
-      "start": 3318,
-      "end": 3685,
-      "durationSec": 232,
+      "start": 3310.39,
+      "end": 3676.55,
+      "durationSec": 231.47,
       "artist": "Oxbow",
       "title": "Dead Ahead",
       "album": "Love's Holiday",
@@ -275,9 +275,9 @@
       "links": []
     },
     {
-      "start": 3685,
-      "end": 4035.88,
-      "durationSec": 352,
+      "start": 3676.55,
+      "end": 4026.63,
+      "durationSec": 351.19,
       "artist": "OM",
       "title": "Meditation Is the Practice of Death",
       "album": "God Is Good",
@@ -289,9 +289,9 @@
       "links": []
     },
     {
-      "start": 4094,
-      "end": 4352,
-      "durationSec": 260,
+      "start": 4084.61,
+      "end": 4342.02,
+      "durationSec": 259.4,
       "artist": "Red Harvest",
       "title": "Synthesize My DNA",
       "album": "The Red Line Archives",
@@ -302,9 +302,9 @@
       "links": []
     },
     {
-      "start": 4452,
-      "end": 4887,
-      "durationSec": 437,
+      "start": 4441.79,
+      "end": 4875.79,
+      "durationSec": 436,
       "artist": "Red Harvest",
       "title": "Beyond the Limits of physical Xperience",
       "album": "A Greater Darkness",
@@ -316,9 +316,9 @@
       "links": []
     },
     {
-      "start": 4936,
-      "end": 5468.1,
-      "durationSec": 534,
+      "start": 4924.68,
+      "end": 5455.56,
+      "durationSec": 532.78,
       "artist": "Soilent Green",
       "title": "Walk a Year In My Mind",
       "album": "Sewn Mouth Secrets / A String of Lies",
@@ -329,9 +329,9 @@
       "links": []
     },
     {
-      "start": 5550,
-      "end": 5797.44,
-      "durationSec": 249,
+      "start": 5537.27,
+      "end": 5784.15,
+      "durationSec": 248.43,
       "artist": "Soilent Green",
       "title": "Antioxidant",
       "album": "Inevitable Collapse In the Presence of Conviction",
@@ -343,9 +343,9 @@
       "links": []
     },
     {
-      "start": 5921,
-      "end": 6272,
-      "durationSec": 352,
+      "start": 5907.42,
+      "end": 6257.62,
+      "durationSec": 351.19,
       "artist": "Canate",
       "title": "Dead",
       "album": null,
@@ -356,9 +356,9 @@
       "links": []
     },
     {
-      "start": 6397,
-      "end": 6961,
-      "durationSec": 565,
+      "start": 6382.33,
+      "end": 6945.04,
+      "durationSec": 563.7,
       "artist": "Khanate",
       "title": "Dead",
       "album": "Things Viral",
@@ -372,47 +372,47 @@
   ],
   "quotes": [
     {
-      "start": 813,
+      "start": 811.14,
       "text": "Tak jest jedna literka F jak Franciszek, a płyta, z której pochodzi to nagranie nosi tytuł 1-3"
     },
     {
-      "start": 876,
+      "start": 873.99,
       "text": "Za takowych też chyba można uznać angielski zespół Thine, który w połowie lat dziewięćdziesiątych podpisał kontrakt z wytwórnią Peaceville"
     },
     {
-      "start": 1698,
+      "start": 1694.11,
       "text": "Ale już druga płyta, zdecydowanie mniej romantyczna, za to bardziej progresywna, zatytułowana Today Died Yesterday"
     },
     {
-      "start": 2262,
+      "start": 2256.81,
       "text": "Posłuchajcie tylko piosenki zatytułowanej Pure Inspiration"
     },
     {
-      "start": 2604,
+      "start": 2598.03,
       "text": "geomungo, które ma struny, więc w sumie nadaje się do ciężkiej muzyki"
     },
     {
-      "start": 2955,
+      "start": 2948.22,
       "text": "zostawili nam album Love's Holiday, który brzmi mniej więcej tak"
     },
     {
-      "start": 3600,
+      "start": 3591.75,
       "text": "Meditation is the Practice of Death, czyli Medytacja jest ćwiczeniem śmierci"
     },
     {
-      "start": 4406,
+      "start": 4395.9,
       "text": "Co udowodnie za chwilę puszczając dwa numery z albumu A Greater Darkness z 2007 roku"
     },
     {
-      "start": 5538,
+      "start": 5525.3,
       "text": "Póki co słuchamy utworu Antioxidant ze wspomnianej przed chwilą ostatniej płyty nowo-orlańskiej grupy"
     },
     {
-      "start": 6262,
+      "start": 6247.64,
       "text": "wybrzmi adekwatnie zatytułowana piosenka Dead, zespołu o egzotycznej nazwie Canate"
     },
     {
-      "start": 6390,
+      "start": 6375.35,
       "text": "Rzecz pochodzi z albumu Things Viral, wydanego w 2003 roku"
     }
   ],
@@ -420,14 +420,15 @@
     {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
-      "time": 16,
+      "time": 15.96,
       "quote": "Jestem Jarek Szubrycht i jestem prowadzącym"
     },
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 16,
+      "time": 15.96,
       "quote": "a wydawcą jest Mariusz Owczarek"
     }
-  ]
+  ],
+  "audioDurationSec": 6961.058
 }

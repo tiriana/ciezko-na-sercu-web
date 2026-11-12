@@ -2,68 +2,68 @@
   "version": 1,
   "id": "63f7e925-f481-45d9-a997-91f612793108",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.879Z",
-  "durationSec": 6861,
+  "updatedAt": "2026-11-11T23:57:36.146Z",
+  "durationSec": 6845.332,
   "summary": "Odcinek poświęcony koncertowi Back to the Beginning w Birmingham, na którym Ozzy Osbourne pożegnał się ze sceną u boku Black Sabbath. Prowadzący odbiera to wydarzenie jako celebrację amerykańskiego rockowego imperializmu, zależną od znajomości Sharon Osbourne i dyrektora muzycznego Toma Morello, i wylicza nieobecnych: z Europy załapały się właściwie tylko Gojira oraz K.K. Downing, a z Ameryki zabrakło choćby Neurosis, Pentagramu czy Corrosion of Conformity. W pierwszej części przypomina zespoły, które jego zdaniem powinny tam wystąpić: Mercyful Fate, Venom, Celtic Frost, Candlemass, My Dying Bride i Paradise Lost oraz Cathedral z Lee Dorianem i jego wytwórnią Rise Above. W drugiej części rozmawia z Marco Laiho, liderem fińskiego Beherit, o początkach zespołu w 1989 roku, inspiracjach takich jak Celtic Frost i brazylijska wytwórnia Cogumelo, nieudanym debiucie The Oath of Black Blood oraz różnorodności dyskografii łączącej metal z elektroniką i ambientem. Laiho opowiada też o powrocie na scenę po dekadach przerwy, braku strategii i planowanej trasie po Ameryce Północnej we wrześniu, a jako esencję stylu Beherit wskazuje utwór Nocturnal Evil.",
   "topics": [
     {
-      "start": 132,
-      "end": 242,
+      "start": 131.7,
+      "end": 241.45,
       "label": "Ewolucja muzyczna i eksperymenty stylistyczne zespołu Beherit"
     },
     {
-      "start": 242,
-      "end": 378,
+      "start": 241.45,
+      "end": 377.13,
       "label": "Powrót Beherit na scenę po wieloletniej przerwie"
     },
     {
-      "start": 395.93,
-      "end": 480,
+      "start": 395.02,
+      "end": 478.9,
       "label": "Wizja nowego brzmienia i podejście do koncertowania"
     },
     {
-      "start": 378,
-      "end": 395.93,
+      "start": 377.13,
+      "end": 395.02,
       "label": "Krytyka koncertu Back to the Beginning i brak europejskich zespołów"
     },
     {
-      "start": 480,
-      "end": 606,
+      "start": 478.9,
+      "end": 604.61,
       "label": "Wpływ Black Sabbath na metal i omówienie pominiętych artystów"
     },
     {
-      "start": 1555.49,
-      "end": 1608,
+      "start": 1551.92,
+      "end": 1604.31,
       "label": "Prezentacja zespołów Candlemas, My Dying Bride i Paradise Lost"
     },
     {
-      "start": 2790,
-      "end": 2931,
+      "start": 2783.6,
+      "end": 2924.28,
       "label": "Omówienie grupy Cathedral i jej roli w utrzymaniu dziedzictwa Sabbath"
     },
     {
-      "start": 3292.94,
-      "end": 3293,
+      "start": 3285.39,
+      "end": 3285.45,
       "label": "Wspomnienie o brakujących amerykańskich zespołach i ich potencjalnym udziale"
     },
     {
-      "start": 3293,
-      "end": 3327,
+      "start": 3285.45,
+      "end": 3319.37,
       "label": "Krytyka braku zespołów ekstremalnych na Back to the Beginning i propozycje alternatywnych grup"
     },
     {
-      "start": 3906,
-      "end": 3947,
+      "start": 3897.04,
+      "end": 3937.95,
       "label": "Prezentacja Autopsy i ich utworu „In the Grip of Winter”"
     },
     {
-      "start": 4656.36,
-      "end": 4850,
+      "start": 4645.68,
+      "end": 4838.88,
       "label": "Wprowadzenie do wywiadu z Marco Lajho – legendą fińskiego black metalu Beherit"
     },
     {
-      "start": 5170.15,
-      "end": 5352,
+      "start": 5158.29,
+      "end": 5339.73,
       "label": "Wpływ norweskiego black metalu lat 90. na twórczość Beherit"
     }
   ],
@@ -73,35 +73,35 @@
       "label": "Autopsy",
       "type": "artist",
       "source": "tracks",
-      "at": 3947
+      "at": 3937.95
     },
     {
       "id": "beherit",
       "label": "Beherit",
       "type": "artist",
       "source": "tracks",
-      "at": 4850
+      "at": 4838.88
     },
     {
       "id": "candlemass",
       "label": "Candlemass",
       "type": "artist",
       "source": "tracks",
-      "at": 1608
+      "at": 1604.31
     },
     {
       "id": "cathedral",
       "label": "Cathedral",
       "type": "artist",
       "source": "tracks",
-      "at": 2931
+      "at": 2924.28
     },
     {
       "id": "celtic-frost",
       "label": "Celtic Frost",
       "type": "artist",
       "source": "tracks",
-      "at": 1221
+      "at": 1218.2
     },
     {
       "id": "jarek-szubrycht",
@@ -126,77 +126,77 @@
       "label": "Mech",
       "type": "artist",
       "source": "tracks",
-      "at": 4233
+      "at": 4223.29
     },
     {
       "id": "mercyful-fate",
       "label": "Mercyful Fate",
       "type": "artist",
       "source": "tracks",
-      "at": 606
+      "at": 604.61
     },
     {
       "id": "my-dying-bride",
       "label": "My Dying Bride",
       "type": "artist",
       "source": "tracks",
-      "at": 2067
+      "at": 2062.26
     },
     {
       "id": "neurosis",
       "label": "Neurosis",
       "type": "artist",
       "source": "tracks",
-      "at": 3327
+      "at": 3319.37
     },
     {
       "id": "vader",
       "label": "Vader",
       "type": "artist",
       "source": "tracks",
-      "at": 6
+      "at": 5.99
     },
     {
       "id": "venom",
       "label": "Venom",
       "type": "artist",
       "source": "tracks",
-      "at": 935
+      "at": 932.86
     },
     {
       "id": "marco-laiho",
       "label": "Marco Laiho",
       "type": "person",
       "source": "credits",
-      "at": 4686
+      "at": 4675.26
     },
     {
       "id": "koncert-back-to-the-beginning",
       "label": "Back to the Beginning",
       "type": "concert",
       "source": "transcript",
-      "at": 389
+      "at": 388.11
     },
     {
       "id": "inne-brzmienia",
       "label": "Inne Brzmienia",
       "type": "event",
       "source": "transcript",
-      "at": 411
+      "at": 410.06
     },
     {
       "id": "mystic-festival",
       "label": "Mystic Festival",
       "type": "event",
       "source": "transcript",
-      "at": 4686
+      "at": 4675.26
     },
     {
       "id": "koncert-trasa-beherit-po-ameryce-polnocnej",
       "label": "Trasa Beherit po Ameryce Północnej",
       "type": "concert",
       "source": "transcript",
-      "at": 6360
+      "at": 6345.42
     },
     {
       "id": "black-sabbath",
@@ -213,9 +213,9 @@
   ],
   "tracks": [
     {
-      "start": 6,
-      "end": 132,
-      "durationSec": 372,
+      "start": 5.99,
+      "end": 131.7,
+      "durationSec": 371.15,
       "artist": "Vader",
       "title": "Black Sabbath",
       "album": "Sothis",
@@ -226,9 +226,9 @@
       "links": []
     },
     {
-      "start": 606,
-      "end": 915.78,
-      "durationSec": 312,
+      "start": 604.61,
+      "end": 913.68,
+      "durationSec": 311.28,
       "artist": "Mercyful Fate",
       "title": "Come to the Sabbath",
       "album": "Don't Break the Oath",
@@ -239,9 +239,9 @@
       "links": []
     },
     {
-      "start": 935,
-      "end": 1126.31,
-      "durationSec": 193,
+      "start": 932.86,
+      "end": 1123.73,
+      "durationSec": 192.56,
       "artist": "Venom",
       "title": "Don't Burn the Witch",
       "album": "Black Metal",
@@ -253,9 +253,9 @@
       "links": []
     },
     {
-      "start": 1221,
-      "end": 1555.49,
-      "durationSec": 336,
+      "start": 1218.2,
+      "end": 1551.92,
+      "durationSec": 335.23,
       "artist": "Celtic Frost",
       "title": "A Dying God Coming Into Human Flesh",
       "album": "Monotheist",
@@ -267,9 +267,9 @@
       "links": []
     },
     {
-      "start": 1608,
-      "end": 2001.67,
-      "durationSec": 395,
+      "start": 1604.31,
+      "end": 1997.08,
+      "durationSec": 394.09,
       "artist": "Candlemass",
       "title": "Bewitched",
       "album": "Nightfall",
@@ -281,9 +281,9 @@
       "links": []
     },
     {
-      "start": 2067,
-      "end": 2790,
-      "durationSec": 725,
+      "start": 2062.26,
+      "end": 2783.6,
+      "durationSec": 723.34,
       "artist": "My Dying Bride",
       "title": "She Is the Dark",
       "album": "The Light At the End of the World",
@@ -294,9 +294,9 @@
       "links": []
     },
     {
-      "start": 2931,
-      "end": 3266.1,
-      "durationSec": 335,
+      "start": 2924.28,
+      "end": 3258.61,
+      "durationSec": 334.23,
       "artist": "Cathedral",
       "title": "Utopian Blaster",
       "album": "The Carnival Bizarre",
@@ -308,9 +308,9 @@
       "links": []
     },
     {
-      "start": 3327,
-      "end": 3906,
-      "durationSec": 584,
+      "start": 3319.37,
+      "end": 3897.04,
+      "durationSec": 582.66,
       "artist": "Neurosis",
       "title": "Stones from the Sky",
       "album": "A Sun That Never Sets",
@@ -321,9 +321,9 @@
       "links": []
     },
     {
-      "start": 3947,
-      "end": 4190.41,
-      "durationSec": 244,
+      "start": 3937.95,
+      "end": 4180.8,
+      "durationSec": 243.44,
       "artist": "Autopsy",
       "title": "In the Grip of Winter",
       "album": "Mental Funeral",
@@ -335,9 +335,9 @@
       "links": []
     },
     {
-      "start": 4233,
-      "end": 4625.92,
-      "durationSec": 395,
+      "start": 4223.29,
+      "end": 4615.31,
+      "durationSec": 394.09,
       "artist": "Mech",
       "title": "Piłem Z Diabłem Bruderszaft",
       "album": "X",
@@ -348,9 +348,9 @@
       "links": []
     },
     {
-      "start": 4850,
-      "end": 5160,
-      "durationSec": 103,
+      "start": 4838.88,
+      "end": 5148.17,
+      "durationSec": 102.76,
       "artist": "Beherit",
       "title": "Hail Sathanas",
       "album": "The Oath of Black Blood",
@@ -362,9 +362,9 @@
       "links": []
     },
     {
-      "start": 5352,
-      "end": 5776,
-      "durationSec": 212,
+      "start": 5339.73,
+      "end": 5762.76,
+      "durationSec": 211.51,
       "artist": "Beherit",
       "title": "Salomon's Gate",
       "album": "Drawing Down the Moon",
@@ -375,9 +375,9 @@
       "links": []
     },
     {
-      "start": 5776,
-      "end": 6698,
-      "durationSec": 364,
+      "start": 5762.76,
+      "end": 6682.64,
+      "durationSec": 363.17,
       "artist": "Beherit",
       "title": "Dead Inside",
       "album": "H418ov21.c + Electric Doom Synthesis",
@@ -388,9 +388,9 @@
       "links": []
     },
     {
-      "start": 6698,
-      "end": 6861,
-      "durationSec": 163,
+      "start": 6682.64,
+      "end": 6845.27,
+      "durationSec": 162.63,
       "artist": "Beherit",
       "title": "Nocturnal Evil",
       "album": "Drawing Down the Moon",
@@ -404,31 +404,31 @@
   ],
   "quotes": [
     {
-      "start": 1126,
+      "start": 1123.42,
       "text": "To był Venom z płyty Black Metal. Piosenka o tym, że nie powinno się palić czarownic."
     },
     {
-      "start": 1555,
+      "start": 1551.43,
       "text": "To był Celtic Frost, utwór A Dying God Coming into Human Flesh."
     },
     {
-      "start": 1586,
+      "start": 1582.36,
       "text": "Na przykład album Nightfall, który brzmiał mniej mniej tak."
     },
     {
-      "start": 2918,
+      "start": 2911.31,
       "text": "piosenkę Cathedral zatytułowaną Utopian Blaster, pochodzącą ze znakomitej płyty The Carnival Bizarre, nagrywał z nimi sam Tony Iommi."
     },
     {
-      "start": 3906,
+      "start": 3897.04,
       "text": "prezentując nagranie grupy Autopsy... In the Grip of Winter nie brzmi jak głębokie ukłony dla sabatów"
     },
     {
-      "start": 5060,
+      "start": 5048.4,
       "text": "Wspomniany już debiut płytowy Beherit, czyli The Oath of Black Blood"
     },
     {
-      "start": 6861,
+      "start": 6845.27,
       "text": "niech będzie Nocturnal Evil"
     }
   ],
@@ -436,26 +436,27 @@
     {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
-      "time": 132,
+      "time": 131.7,
       "quote": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht, prowadzący audycję Ciężko na Sercu."
     },
     {
       "role": "gość",
       "name": "Marko",
-      "time": 132,
+      "time": 131.7,
       "quote": "już niech Marco będzie jak zwał tak zwał"
     },
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 383,
+      "time": 382.12,
       "quote": "Witam w imieniu własnym oraz Mariusza Owczarka, który jest w tej audycji wydawcą."
     },
     {
       "role": "gość",
       "name": "Marco Laiho",
-      "time": 4686,
+      "time": 4675.26,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6861.061
 }

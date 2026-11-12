@@ -2,48 +2,48 @@
   "version": 1,
   "id": "23962e70-9a64-4ca9-b498-7d856f1a8007",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.921Z",
-  "durationSec": 6800,
+  "updatedAt": "2026-11-12T00:01:03.517Z",
+  "durationSec": 6784.476,
   "summary": "Odcinek z okazji Dnia Nauczyciela, w całości poświęcony metalowym nauczycielom i metalowej edukacji. Punktem wyjścia były kasety pożyczone w dzieciństwie przez starszego sąsiada: Quiet Riot, Van Halen z albumu 5150 (z Sammym Hagarem, którego autor woli od Davida Lee Rotha), Black Sabbath (z przywiązaniem do Ozzy'ego i epoki Ronniego Jamesa Dio, zwłaszcza Heaven and Hell) oraz Manowar i Fighting the World, zawierające piosenkę o ojcowskim przekazie dla syna. Sporo miejsca zajęła refleksja o gatekeepingu w środowisku metalowym — dawnych „kartkówkach” ze składu i dyskografii, naszywkach i logotypach — ocenianym jako coś, co cementowało wspólnotę, ale często przybierało formę wymuszeń i przemocy. Autor opowiadał też, jak metal uczył go angielskiego, historii (Iron Maiden i Aces High kontra szkolny Dywizjon 303) oraz skłonił do studiowania mitologii pod teksty o Dionizosie. W audycji pojawiły się także Thy Art Is Murder, Obituary z biografią Zastygli w czasie, Exhumed, My Chemical Romance, chiński projekt Hoplites z albumem Paramanuensis, szwedzki Meshuggah jako „profesorowie” ekstremy oraz zamykający całość Ulver z utworem Silence teaches you how to sing.",
   "topics": [
     {
-      "start": 759.33,
-      "end": 893,
+      "start": 757.59,
+      "end": 890.95,
       "label": "Metalowi nauczyciele i pierwsze kroki w świecie metalu"
     },
     {
-      "start": 3108,
-      "end": 3198,
+      "start": 3100.87,
+      "end": 3190.67,
       "label": "Kanonada: utwory z kaset pożyczonych od kolegi"
     },
     {
-      "start": 3601.35,
-      "end": 3629,
+      "start": 3593.09,
+      "end": 3620.68,
       "label": "Metalowe lekcje historii i odniesienia do edukacji"
     },
     {
-      "start": 4243.62,
-      "end": 4244,
+      "start": 4233.89,
+      "end": 4234.27,
       "label": "Kartkówki i gatekeeping w środowisku metalowym"
     },
     {
-      "start": 4244,
-      "end": 4349,
+      "start": 4234.27,
+      "end": 4339.03,
       "label": "Iron Maiden jako źródło wiedzy historycznej"
     },
     {
-      "start": 4826,
-      "end": 5035,
+      "start": 4814.93,
+      "end": 5023.45,
       "label": "Lekcje bólu: Die Art is Murder, Obituary, Exhumed"
     },
     {
-      "start": 5616,
-      "end": 5829,
+      "start": 5603.12,
+      "end": 5815.63,
       "label": "Lekcje patologii i WF na basenie"
     },
     {
-      "start": 6800,
-      "end": 6800,
+      "start": 6784.41,
+      "end": 6784.41,
       "label": "Zespoły o tematyce wojennej: Sabaton, Impaled Nazarene"
     }
   ],
@@ -53,35 +53,35 @@
       "label": "Black Sabbath",
       "type": "artist",
       "source": "tracks",
-      "at": 1646
+      "at": 1642.23
     },
     {
       "id": "exhumed",
       "label": "Exhumed",
       "type": "artist",
       "source": "tracks",
-      "at": 3398
+      "at": 3390.21
     },
     {
       "id": "exodus",
       "label": "Exodus",
       "type": "artist",
       "source": "tracks",
-      "at": 2681
+      "at": 2674.85
     },
     {
       "id": "impaled-nazarene",
       "label": "Impaled Nazarene",
       "type": "artist",
       "source": "tracks",
-      "at": 4715
+      "at": 4704.19
     },
     {
       "id": "iron-maiden",
       "label": "Iron Maiden",
       "type": "artist",
       "source": "tracks",
-      "at": 4349
+      "at": 4339.03
     },
     {
       "id": "jarek-szubrycht",
@@ -94,7 +94,7 @@
       "label": "Manowar",
       "type": "artist",
       "source": "tracks",
-      "at": 1905
+      "at": 1900.63
     },
     {
       "id": "mariusz-owczarek",
@@ -107,105 +107,105 @@
       "label": "Meshuggah",
       "type": "artist",
       "source": "tracks",
-      "at": 5467
+      "at": 5454.46
     },
     {
       "id": "my-chemical-romance",
       "label": "My Chemical Romance",
       "type": "artist",
       "source": "tracks",
-      "at": 3629
+      "at": 3620.68
     },
     {
       "id": "obituary",
       "label": "Obituary",
       "type": "artist",
       "source": "tracks",
-      "at": 3198
+      "at": 3190.67
     },
     {
       "id": "quiet-riot",
       "label": "Quiet Riot",
       "type": "artist",
       "source": "tracks",
-      "at": 893
+      "at": 890.95
     },
     {
       "id": "slayer",
       "label": "Slayer",
       "type": "artist",
       "source": "tracks",
-      "at": 3949
+      "at": 3939.94
     },
     {
       "id": "thou",
       "label": "Thou",
       "type": "artist",
       "source": "tracks",
-      "at": 8
+      "at": 7.98
     },
     {
       "id": "thy-art-is-murder",
       "label": "Thy Art Is Murder",
       "type": "artist",
       "source": "tracks",
-      "at": 2927
+      "at": 2920.29
     },
     {
       "id": "ulver",
       "label": "Ulver",
       "type": "artist",
       "source": "tracks",
-      "at": 5829
+      "at": 5815.63
     },
     {
       "id": "van-halen",
       "label": "Van Halen",
       "type": "artist",
       "source": "tracks",
-      "at": 481
+      "at": 479.9
     },
     {
       "id": "venom",
       "label": "Venom",
       "type": "artist",
       "source": "tracks",
-      "at": 176
+      "at": 175.6
     },
     {
       "id": "obituary-zastygli-w-czasie",
       "label": "Obituary. Zastygli w czasie",
       "type": "work",
       "source": "transcript",
-      "at": 3178
+      "at": 3170.71
     },
     {
       "id": "dywizjon-303",
       "label": "Dywizjon 303",
       "type": "work",
       "source": "transcript",
-      "at": 4263
+      "at": 4253.22
     },
     {
       "id": "mitologia",
       "label": "Mitologia",
       "type": "work",
       "source": "transcript",
-      "at": 4937
+      "at": 4925.68
     },
     {
       "id": "conan",
       "label": "Conan",
       "type": "work",
       "source": "transcript",
-      "at": 2149
+      "at": 2144.07
     }
   ],
   "tracks": [
     {
-      "start": 8,
-      "end": 159.01,
-      "durationSec": 152,
+      "start": 7.98,
+      "end": 158.65,
+      "durationSec": 151.65,
       "artist": "Thou",
       "title": "School",
       "album": "Blessings of the Highest Order",
@@ -217,9 +217,9 @@
       "links": []
     },
     {
-      "start": 176,
-      "end": 454.24,
-      "durationSec": 279,
+      "start": 175.6,
+      "end": 453.2,
+      "durationSec": 278.36,
       "artist": "Venom",
       "title": "Teacher's Pet",
       "album": "Black Metal",
@@ -231,9 +231,9 @@
       "links": []
     },
     {
-      "start": 481,
-      "end": 759.33,
-      "durationSec": 280,
+      "start": 479.9,
+      "end": 757.59,
+      "durationSec": 279.36,
       "artist": "Van Halen",
       "title": "Hot for Teacher",
       "album": "1984",
@@ -245,9 +245,9 @@
       "links": []
     },
     {
-      "start": 893,
-      "end": 1543.52,
-      "durationSec": 651,
+      "start": 890.95,
+      "end": 1539.98,
+      "durationSec": 649.51,
       "artist": "Quiet Riot",
       "title": "Bang Your Head (Metal Health)",
       "album": "Bang Your Head (Metal Health) [Digital 45",
@@ -259,9 +259,9 @@
       "links": []
     },
     {
-      "start": 1646,
-      "end": 1867.56,
-      "durationSec": 223,
+      "start": 1642.23,
+      "end": 1863.28,
+      "durationSec": 222.49,
       "artist": "Black Sabbath",
       "title": "Neon Knights",
       "album": "Heaven and Hell",
@@ -272,9 +272,9 @@
       "links": []
     },
     {
-      "start": 1905,
-      "end": 2121.28,
-      "durationSec": 218,
+      "start": 1900.63,
+      "end": 2116.42,
+      "durationSec": 217.5,
       "artist": "Manowar",
       "title": "Carry On",
       "album": "Fighting the World",
@@ -286,9 +286,9 @@
       "links": []
     },
     {
-      "start": 2207,
-      "end": 2681,
-      "durationSec": 340,
+      "start": 2201.94,
+      "end": 2674.85,
+      "durationSec": 339.22,
       "artist": "Manowar",
       "title": "Defender",
       "album": "Fighting the World",
@@ -299,9 +299,9 @@
       "links": []
     },
     {
-      "start": 2681,
-      "end": 2749.99,
-      "durationSec": 70,
+      "start": 2674.85,
+      "end": 2743.68,
+      "durationSec": 69.84,
       "artist": "Exodus",
       "title": "A Lesson in Violence",
       "album": "Bonded by Blood",
@@ -313,9 +313,9 @@
       "links": []
     },
     {
-      "start": 2812,
-      "end": 2905.76,
-      "durationSec": 94,
+      "start": 2805.55,
+      "end": 2899.1,
+      "durationSec": 93.78,
       "artist": "Exodus",
       "title": "A Lesson in Violence",
       "album": "Bonded by Blood",
@@ -326,9 +326,9 @@
       "links": []
     },
     {
-      "start": 2927,
-      "end": 3108,
-      "durationSec": 229,
+      "start": 2920.29,
+      "end": 3100.87,
+      "durationSec": 228.47,
       "artist": "Thy Art Is Murder",
       "title": "Lesson In Pain",
       "album": "Godlike",
@@ -340,9 +340,9 @@
       "links": []
     },
     {
-      "start": 3198,
-      "end": 3376.13,
-      "durationSec": 179,
+      "start": 3190.67,
+      "end": 3368.39,
+      "durationSec": 178.59,
       "artist": "Obituary",
       "title": "A Lesson in Vengeance",
       "album": "Obituary",
@@ -354,9 +354,9 @@
       "links": []
     },
     {
-      "start": 3398,
-      "end": 3601.35,
-      "durationSec": 204,
+      "start": 3390.21,
+      "end": 3593.09,
+      "durationSec": 203.53,
       "artist": "Exhumed",
       "title": "A Lesson In Pathology",
       "album": "Slaughtercult",
@@ -368,9 +368,9 @@
       "links": []
     },
     {
-      "start": 3629,
-      "end": 3882.15,
-      "durationSec": 255,
+      "start": 3620.68,
+      "end": 3873.25,
+      "durationSec": 254.42,
       "artist": "My Chemical Romance",
       "title": "Drowning Lessons",
       "album": "I Brought You My Bullets, You Brought Me Your Love",
@@ -381,9 +381,9 @@
       "links": []
     },
     {
-      "start": 3949,
-      "end": 4226,
-      "durationSec": 295,
+      "start": 3939.94,
+      "end": 4216.31,
+      "durationSec": 294.32,
       "artist": "Slayer",
       "title": "South of Heaven",
       "album": "South of Heaven",
@@ -394,9 +394,9 @@
       "links": []
     },
     {
-      "start": 4349,
-      "end": 4626.92,
-      "durationSec": 279,
+      "start": 4339.03,
+      "end": 4616.31,
+      "durationSec": 278.36,
       "artist": "Iron Maiden",
       "title": "Aces High ((Live Long Beach Arena) [2015 Remaster])",
       "album": "Live After Death",
@@ -408,9 +408,9 @@
       "links": []
     },
     {
-      "start": 4715,
-      "end": 4826,
-      "durationSec": 223,
+      "start": 4704.19,
+      "end": 4814.93,
+      "durationSec": 222.49,
       "artist": "Impaled Nazarene",
       "title": "Total War, Winter War",
       "album": "Suomi Finland Perkele + Motorpenis",
@@ -421,9 +421,9 @@
       "links": []
     },
     {
-      "start": 5035,
-      "end": 5430.37,
-      "durationSec": 397,
+      "start": 5023.45,
+      "end": 5417.92,
+      "durationSec": 396.09,
       "artist": "Ὁπλίτης",
       "title": "Συμμιαινόμεναι Διονύσῳ Ἐλευθέριῳ",
       "album": "Π​α​ρ​α​μ​α​ι​ν​ο​μ​έ​ν​η",
@@ -434,9 +434,9 @@
       "links": []
     },
     {
-      "start": 5467,
-      "end": 5616,
-      "durationSec": 300,
+      "start": 5454.46,
+      "end": 5603.12,
+      "durationSec": 299.31,
       "artist": "Meshuggah",
       "title": "Rational Gaze",
       "album": "Nothing",
@@ -447,9 +447,9 @@
       "links": []
     },
     {
-      "start": 5829,
-      "end": 6800,
-      "durationSec": 971,
+      "start": 5815.63,
+      "end": 6784.41,
+      "durationSec": 968.77,
       "artist": "Ulver",
       "title": "Silence Teaches You How to Sing",
       "album": "Teachings In Silence",
@@ -463,47 +463,47 @@
   ],
   "quotes": [
     {
-      "start": 174,
+      "start": 173.6,
       "text": "To amerykańska grupa Thou, która pięknie zbezcześciła klasyczny numer Nirwany, czyli School."
     },
     {
-      "start": 450,
+      "start": 448.97,
       "text": "Pierwszy z życzeniami pospieszył brytyjski zespół Venom, a ja oczywiście dołączam z całych sił."
     },
     {
-      "start": 469,
+      "start": 467.92,
       "text": "W piosence Hot for Teacher zespół Van Halen wyrażał swój entuzjazm wobec nauczycielki i niekoniecznie chodziło o jej sukcesy na niwie edukacyjnej."
     },
     {
-      "start": 819,
+      "start": 817.12,
       "text": "Pierwszy z utworów wykonywała amerykańska grupa Quiet Riot, w Stanach w obym czasie wielka, u nas ledwie znana."
     },
     {
-      "start": 1838,
+      "start": 1833.79,
       "text": "Na czwartej kasecie, proszę Państwa, 100% metalu w metalu. Jeżeli Wasze metalowe serca biją po właściwej stronie, to od razu będziecie wiedzieć, o co chodzi. Bo inne zespoły grają, a ten zespół zabija."
     },
     {
-      "start": 2760,
+      "start": 2753.67,
       "text": "To była lekcja przemocy, jak w tym utworze Exodus."
     },
     {
-      "start": 2810,
+      "start": 2803.56,
       "text": "Lekcje bólu poprowadzą Die Art is Murder. Australijczycy, którzy łączą brutalność z nowocześnością. Lesson in Pain to utwór z ich ostatniej, póki co, płyty ubiegłorocznej Godlike."
     },
     {
-      "start": 3134,
+      "start": 3126.81,
       "text": "Temat zemsta. Autorem lektury nie jest jednak Aleksander Fredro, lecz amerykański zespół Obituary, który piosenkę A Lesson in Vengeance zamieścił na płycie zatytułowanej po prostu Obituary z 2017 roku."
     },
     {
-      "start": 3376,
+      "start": 3368.26,
       "text": "Na czwartej lekcji mamy patologię, więc może to jest szkoła medyczna. Wykłada profesor Exhumed, Amerykanin, ale absolwent brytyjskiego Uniwersytetu Caracas. Podręcznik nosi tytuł Slaughter Cult. Ukazał się w 2000 roku. A lesson in pathology."
     },
     {
-      "start": 4244,
+      "start": 4234.27,
       "text": "takie Aces High wydawało mi się znacznie bardziej interesujące od szkolnej lektury"
     },
     {
-      "start": 6800,
+      "start": 6784.41,
       "text": "Tytuł piosenki brzmi Silence teaches you how to sing"
     }
   ],
@@ -520,5 +520,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6800.065
 }

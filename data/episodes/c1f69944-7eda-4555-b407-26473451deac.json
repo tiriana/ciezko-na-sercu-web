@@ -2,73 +2,73 @@
   "version": 1,
   "id": "c1f69944-7eda-4555-b407-26473451deac",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.762Z",
-  "durationSec": 6862,
+  "updatedAt": "2026-11-11T23:49:57.135Z",
+  "durationSec": 6846.322,
   "summary": "Odcinek to przegląd koncertów metalowych w Polsce w październiku: od ekstremalnych pakietów (Voidhanger, Koroner, Belfegor, Xandria, Der Weg Einer Freiheit z Conjurer) po duże wydarzenia, jak wspólna trasa Behemoth, Dimmu Borgir i Dark Funeral w katowickim Spodku oraz festiwale Black Waves w Jarocinie i nowy Death Ceremony w Katowicach z Tomem Gabrielem Warriorem (Triumph of Death), Bloodbath i Asphyx. Omówiono trasę Deep Purple promującą album Splat, koncert Europe z okazji 40-lecia utworu The Final Countdown i premiery płyty Come This Madness, a także występy Haken, Mistyrmink, Orans i Pazuzu z islandzkim Mur, Amon Amarth z Orbit Culture i Soywork oraz japońskiego Boris z Planning for Burial. Przy okazji trasy mongolskiego Dehu prowadzący odniósł się do historycznych podbojów Czyngis-chana jako tła dla estetyki zespołu. Wspomniano też o problemach Blinded 23, których jesienną trasę promującą album Deuterium ograniczyło zniknięcie organizatora z pieniędzmi.",
   "topics": [
     {
-      "start": 366,
-      "end": 456,
+      "start": 365.16,
+      "end": 454.95,
       "label": "Premiera i trasa koncertowa zespołu Zorza oraz towarzyszące mu zespoły"
     },
     {
-      "start": 456,
-      "end": 505,
+      "start": 454.95,
+      "end": 503.84,
       "label": "Ekstremalne koncerty 2 października – Havok, Blood Red Throne i goście"
     },
     {
-      "start": 1210.76,
-      "end": 1211,
+      "start": 1207.98,
+      "end": 1208.22,
       "label": "Festiwal Black Waves w Jarocinie i zapowiedź zagranicznych zespołów"
     },
     {
-      "start": 1211,
-      "end": 1332,
+      "start": 1208.22,
+      "end": 1328.95,
       "label": "Koncert Haken w Warszawie oraz premiera mini‑albumu „In A Fevered Dream\""
     },
     {
-      "start": 2895.84,
-      "end": 3039,
+      "start": 2889.2,
+      "end": 3032.03,
       "label": "Trasy i koncerty Mistyrmink oraz After Glam Tour"
     },
     {
-      "start": 3365.98,
-      "end": 3429,
+      "start": 3358.26,
+      "end": 3421.14,
       "label": "Nowa płyta The Materia – We Against Us Prologue – i trasa z Demetet oraz islandzkim Mur"
     },
     {
-      "start": 3695,
-      "end": 3748,
+      "start": 3686.53,
+      "end": 3739.41,
       "label": "Mongolska tematyka w Dehu, ich trasa Solastalgia over Europe i powiązania historyczne"
     },
     {
-      "start": 4534.12,
-      "end": 4571,
+      "start": 4523.72,
+      "end": 4560.52,
       "label": "Jubileusz 40-lecia The Final Countdown, nowa płyta Europe – Come This Madness – i koncert w Torwarze"
     },
     {
-      "start": 5040,
-      "end": 5193,
+      "start": 5028.44,
+      "end": 5181.09,
       "label": "Powrót zespołu Morbid oraz plany koncertowe black metalowych grup (Gehenna, Arkona, Fortification)"
     },
     {
-      "start": 5193,
-      "end": 5283,
+      "start": 5181.09,
+      "end": 5270.89,
       "label": "Nadchodząca trasa black‑metalowych potęg Behemoth, Dimmu Borgir i Dark Funeral w październiku"
     },
     {
-      "start": 5834.69,
-      "end": 5938,
+      "start": 5821.31,
+      "end": 5924.38,
       "label": "Koncert Amon Amarth w Prezero Arenie Gliwice 29 października"
     },
     {
-      "start": 6245.92,
-      "end": 6346,
+      "start": 6231.6,
+      "end": 6331.45,
       "label": "Festiwal Death Ceremony w Katowicach z Tomem Gabriel Warriorem i zespołami death/black metalowymi"
     },
     {
-      "start": 6346,
-      "end": 6413,
+      "start": 6331.45,
+      "end": 6398.29,
       "label": "Polskie koncerty Boris i Planning for Burial 31 października – 1 listopada"
     }
   ],
@@ -78,77 +78,77 @@
       "label": "Amon Amarth",
       "type": "artist",
       "source": "tracks",
-      "at": 5938
+      "at": 5924.38
     },
     {
       "id": "belphegor",
       "label": "Belphegor",
       "type": "artist",
       "source": "tracks",
-      "at": 2097
+      "at": 2092.19
     },
     {
       "id": "blindead-23",
       "label": "Blindead 23",
       "type": "artist",
       "source": "tracks",
-      "at": 3748
+      "at": 3739.41
     },
     {
       "id": "boris",
       "label": "Boris",
       "type": "artist",
       "source": "tracks",
-      "at": 6413
+      "at": 6398.29
     },
     {
       "id": "conjurer",
       "label": "Conjurer",
       "type": "artist",
       "source": "tracks",
-      "at": 2539
+      "at": 2533.18
     },
     {
       "id": "coroner",
       "label": "Coroner",
       "type": "artist",
       "source": "tracks",
-      "at": 842
+      "at": 840.07
     },
     {
       "id": "dark-funeral",
       "label": "Dark Funeral",
       "type": "artist",
       "source": "tracks",
-      "at": 5283
+      "at": 5270.89
     },
     {
       "id": "deep-purple",
       "label": "Deep Purple",
       "type": "artist",
       "source": "tracks",
-      "at": 1332
+      "at": 1328.95
     },
     {
       "id": "europe",
       "label": "Europe",
       "type": "artist",
       "source": "tracks",
-      "at": 4571
+      "at": 4560.52
     },
     {
       "id": "gehenna",
       "label": "Gehenna",
       "type": "artist",
       "source": "tracks",
-      "at": 5032
+      "at": 5020.46
     },
     {
       "id": "havok",
       "label": "Havok",
       "type": "artist",
       "source": "tracks",
-      "at": 505
+      "at": 503.84
     },
     {
       "id": "jarek-szubrycht",
@@ -167,280 +167,280 @@
       "label": "Oranssi Pazuzu",
       "type": "artist",
       "source": "tracks",
-      "at": 3429
+      "at": 3421.14
     },
     {
       "id": "sick-saints",
       "label": "SICK SAINTS",
       "type": "artist",
       "source": "tracks",
-      "at": 3039
+      "at": 3032.03
     },
     {
       "id": "the-hu",
       "label": "The Hu",
       "type": "artist",
       "source": "tracks",
-      "at": 4232
+      "at": 4222.3
     },
     {
       "id": "the-ruins-of-beverast",
       "label": "The Ruins Of Beverast",
       "type": "artist",
       "source": "tracks",
-      "at": 1665
+      "at": 1661.18
     },
     {
       "id": "z-rza",
       "label": "ZØRZA",
       "type": "artist",
       "source": "tracks",
-      "at": 12
+      "at": 11.97
     },
     {
       "id": "koncert-trasa-koncertowa-zorzy-twilight-of-the-golden-star",
       "label": "Trasa koncertowa Zorzy (Twilight of the Golden Star)",
       "type": "concert",
       "source": "transcript",
-      "at": 385
+      "at": 384.12
     },
     {
       "id": "koncert-voidhanger-helfag-hag",
       "label": "Voidhanger, Helfag, Hag",
       "type": "concert",
       "source": "transcript",
-      "at": 456
+      "at": 454.95
     },
     {
       "id": "koncert-havok-blood-red-throne-xonor-eradicated",
       "label": "Havok, Blood Red Throne, Xonor, Eradicated",
       "type": "concert",
       "source": "transcript",
-      "at": 470
+      "at": 468.92
     },
     {
       "id": "koncert-black-breir-m-race",
       "label": "Black Breir, M-Race",
       "type": "concert",
       "source": "transcript",
-      "at": 745
+      "at": 743.29
     },
     {
       "id": "koncert-king-woman-cockstar-the-sex-messiah",
       "label": "King Woman, Cockstar the Sex Messiah",
       "type": "concert",
       "source": "transcript",
-      "at": 770
+      "at": 768.23
     },
     {
       "id": "koncert-koroner-schizofrenia-tarpont",
       "label": "Koroner, Schizofrenia, Tarpont",
       "type": "concert",
       "source": "transcript",
-      "at": 789
+      "at": 787.19
     },
     {
       "id": "koncert-haken",
       "label": "Haken",
       "type": "concert",
       "source": "transcript",
-      "at": 1230
+      "at": 1227.18
     },
     {
       "id": "koncert-deep-purple-trasa-splat",
       "label": "Deep Purple (trasa Splat)",
       "type": "concert",
       "source": "transcript",
-      "at": 1305
+      "at": 1302.01
     },
     {
       "id": "koncert-deadline-imperial-scene-black-star-mantra-the-dine-fall-tour",
       "label": "Deadline, Imperial Scene, Black Star Mantra (The Dine Fall Tour)",
       "type": "concert",
       "source": "transcript",
-      "at": 1567
+      "at": 1563.41
     },
     {
       "id": "koncert-walkenrug-hellspawn-pelgatorium",
       "label": "Walkenrug, Hellspawn, Pelgatorium",
       "type": "concert",
       "source": "transcript",
-      "at": 1596
+      "at": 1592.34
     },
     {
       "id": "black-waves-11-edycja",
       "label": "Black Waves (11. edycja)",
       "type": "event",
       "source": "transcript",
-      "at": 1606
+      "at": 1602.32
     },
     {
       "id": "koncert-belfegor-kryzion-asagraum",
       "label": "Belfegor, Kryzion, Asagraum",
       "type": "concert",
       "source": "transcript",
-      "at": 2036
+      "at": 2031.33
     },
     {
       "id": "koncert-xandria-seven-spires-secret-rule",
       "label": "Xandria, Seven Spires, Secret Rule",
       "type": "concert",
       "source": "transcript",
-      "at": 2432
+      "at": 2426.42
     },
     {
       "id": "koncert-der-weg-einer-freiheit-conjurer",
       "label": "Der Weg Einer Freiheit, Conjurer",
       "type": "concert",
       "source": "transcript",
-      "at": 2465
+      "at": 2459.35
     },
     {
       "id": "koncert-mistyrmink-necrorage-profanation-gorge",
       "label": "Mistyrmink, NecroRage, Profanation, Gorge",
       "type": "concert",
       "source": "transcript",
-      "at": 2896
+      "at": 2889.36
     },
     {
       "id": "koncert-witpecker-ampacity-snakes-snakes-snakes",
       "label": "Witpecker, Ampacity, Snakes Snakes Snakes",
       "type": "concert",
       "source": "transcript",
-      "at": 2942
+      "at": 2935.25
     },
     {
       "id": "koncert-sick-saints-hypnozaur-after-glam-tour",
       "label": "Sick Saints, Hypnozaur (After Glam Tour)",
       "type": "concert",
       "source": "transcript",
-      "at": 2966
+      "at": 2959.2
     },
     {
       "id": "koncert-the-materia-demetet-pieklo-niebo-tur-trasa-po-plycie-we-against-us-prologue",
       "label": "The Materia, Demetet (Piekło, niebo, tur — trasa po płycie We Against Us Prologue)",
       "type": "concert",
       "source": "transcript",
-      "at": 3298
+      "at": 3290.44
     },
     {
       "id": "koncert-orans-i-pazuzu-mur",
       "label": "Orans i Pazuzu, Mur",
       "type": "concert",
       "source": "transcript",
-      "at": 3355
+      "at": 3347.31
     },
     {
       "id": "koncert-blinded-23-only-sons-four-dots",
       "label": "Blinded 23, Only Sons, Four Dots",
       "type": "concert",
       "source": "transcript",
-      "at": 3695
+      "at": 3686.53
     },
     {
       "id": "koncert-onslaught",
       "label": "Onslaught",
       "type": "concert",
       "source": "transcript",
-      "at": 4098
+      "at": 4088.6
     },
     {
       "id": "koncert-heretoire-unrequited-nidare-solastalgia-over-europe",
       "label": "Heretoire, Unrequited, Nidare (Solastalgia over Europe)",
       "type": "concert",
       "source": "transcript",
-      "at": 4112
+      "at": 4102.57
     },
     {
       "id": "koncert-dehu-scald",
       "label": "Dehu, Scald",
       "type": "concert",
       "source": "transcript",
-      "at": 4219
+      "at": 4209.33
     },
     {
       "id": "koncert-europe",
       "label": "Europe",
       "type": "concert",
       "source": "transcript",
-      "at": 4500
+      "at": 4489.68
     },
     {
       "id": "koncert-the-sisters-of-mercy",
       "label": "The Sisters of Mercy",
       "type": "concert",
       "source": "transcript",
-      "at": 4857
+      "at": 4845.86
     },
     {
       "id": "koncert-christagony-tenebris-wieczny-mroz-30-lecie-albumu-moonlight",
       "label": "Christagony, Tenebris, Wieczny Mróz (30-lecie albumu Moonlight)",
       "type": "concert",
       "source": "transcript",
-      "at": 4882
+      "at": 4870.81
     },
     {
       "id": "koncert-black-ritual-over-poland-morbid-gehenna-arkona-fortification",
       "label": "Black Ritual over Poland: Morbid, Gehenna, Arkona, Fortification",
       "type": "concert",
       "source": "transcript",
-      "at": 4920
+      "at": 4908.72
     },
     {
       "id": "koncert-acres-wayside-what-lies-below-life-spark",
       "label": "Acres, Wayside, What Lies Below, Life Spark",
       "type": "concert",
       "source": "transcript",
-      "at": 5193
+      "at": 5181.09
     },
     {
       "id": "koncert-behemoth-dimmu-borgir-dark-funeral",
       "label": "Behemoth, Dimmu Borgir, Dark Funeral",
       "type": "concert",
       "source": "transcript",
-      "at": 5213
+      "at": 5201.05
     },
     {
       "id": "koncert-wolvenest-betsor-wiglios",
       "label": "Wolvenest, Betsor, Wiglios",
       "type": "concert",
       "source": "transcript",
-      "at": 5835
+      "at": 5821.62
     },
     {
       "id": "koncert-amon-amarth-orbit-culture-soywork",
       "label": "Amon Amarth, Orbit Culture, Soywork",
       "type": "concert",
       "source": "transcript",
-      "at": 5918
+      "at": 5904.43
     },
     {
       "id": "death-ceremony",
       "label": "Death Ceremony",
       "type": "event",
       "source": "transcript",
-      "at": 6246
+      "at": 6231.68
     },
     {
       "id": "koncert-dola-profeci-prochno-wormwood-s-heart",
       "label": "Dola, Profeci, Próchno, Wormwood's Heart",
       "type": "concert",
       "source": "transcript",
-      "at": 6326
+      "at": 6311.49
     },
     {
       "id": "koncert-boris-planning-for-burial",
       "label": "Boris, Planning for Burial",
       "type": "concert",
       "source": "transcript",
-      "at": 6346
+      "at": 6331.45
     }
   ],
   "tracks": [
     {
-      "start": 12,
-      "end": 366,
-      "durationSec": 355,
+      "start": 11.97,
+      "end": 365.16,
+      "durationSec": 354.19,
       "artist": "ZØRZA",
       "title": "My Wounds (feat. Harakiri for the Sky & Karg)",
       "album": "Twilight of the Golden Star",
@@ -452,9 +452,9 @@
       "links": []
     },
     {
-      "start": 505,
-      "end": 744.58,
-      "durationSec": 241,
+      "start": 503.84,
+      "end": 742.87,
+      "durationSec": 240.45,
       "artist": "Havok",
       "title": "Fifth Generation Warfare",
       "album": "Fifth Generation Warfare - Single",
@@ -466,9 +466,9 @@
       "links": []
     },
     {
-      "start": 842,
-      "end": 1205,
-      "durationSec": 370,
+      "start": 840.07,
+      "end": 1202.24,
+      "durationSec": 369.15,
       "artist": "Coroner",
       "title": "Consequence",
       "album": "Dissonance Theory",
@@ -479,9 +479,9 @@
       "links": []
     },
     {
-      "start": 1332,
-      "end": 1567.04,
-      "durationSec": 237,
+      "start": 1328.95,
+      "end": 1563.45,
+      "durationSec": 236.46,
       "artist": "Deep Purple",
       "title": "Diablo",
       "album": "SPLAT",
@@ -492,9 +492,9 @@
       "links": []
     },
     {
-      "start": 1665,
-      "end": 2035.84,
-      "durationSec": 373,
+      "start": 1661.18,
+      "end": 2031.17,
+      "durationSec": 372.14,
       "artist": "The Ruins Of Beverast",
       "title": "Mammothpolis",
       "album": "The Thule Grimoires",
@@ -506,9 +506,9 @@
       "links": []
     },
     {
-      "start": 2097,
-      "end": 2431.91,
-      "durationSec": 336,
+      "start": 2092.19,
+      "end": 2426.33,
+      "durationSec": 335.23,
       "artist": "Belphegor",
       "title": "Scarlet Beast-Leviathan",
       "album": "Scarlet Beast-Leviathan - Single",
@@ -519,9 +519,9 @@
       "links": []
     },
     {
-      "start": 2539,
-      "end": 2895.84,
-      "durationSec": 358,
+      "start": 2533.18,
+      "end": 2889.2,
+      "durationSec": 357.18,
       "artist": "Conjurer",
       "title": "Let Us Live",
       "album": "Unself",
@@ -533,9 +533,9 @@
       "links": []
     },
     {
-      "start": 3039,
-      "end": 3298,
-      "durationSec": 259,
+      "start": 3032.03,
+      "end": 3290.44,
+      "durationSec": 258.41,
       "artist": "SICK SAINTS",
       "title": "Fuse",
       "album": "Brutal Glam",
@@ -547,9 +547,9 @@
       "links": []
     },
     {
-      "start": 3429,
-      "end": 3695,
-      "durationSec": 268,
+      "start": 3421.14,
+      "end": 3686.53,
+      "durationSec": 267.39,
       "artist": "Oranssi Pazuzu",
       "title": "Muuntautuja",
       "album": "Muuntautuja",
@@ -560,9 +560,9 @@
       "links": []
     },
     {
-      "start": 3748,
-      "end": 4232,
-      "durationSec": 352,
+      "start": 3739.41,
+      "end": 4222.3,
+      "durationSec": 351.19,
       "artist": "Blindead 23",
       "title": "You Are The Universe",
       "album": "Deuterium",
@@ -573,9 +573,9 @@
       "links": []
     },
     {
-      "start": 4232,
-      "end": 4499.76,
-      "durationSec": 268,
+      "start": 4222.3,
+      "end": 4489.44,
+      "durationSec": 267.39,
       "artist": "The Hu",
       "title": "The Great Chinggis Khaan",
       "album": "The Gereg (Deluxe Edition)",
@@ -586,9 +586,9 @@
       "links": []
     },
     {
-      "start": 4571,
-      "end": 5032,
-      "durationSec": 245,
+      "start": 4560.52,
+      "end": 5020.46,
+      "durationSec": 244.44,
       "artist": "Europe",
       "title": "Scandinavian Eyes",
       "album": "Come This Madness",
@@ -600,9 +600,9 @@
       "links": []
     },
     {
-      "start": 5032,
-      "end": 5040,
-      "durationSec": 162,
+      "start": 5020.46,
+      "end": 5028.44,
+      "durationSec": 161.63,
       "artist": "Gehenna",
       "title": "Murder",
       "album": "Murder",
@@ -614,9 +614,9 @@
       "links": []
     },
     {
-      "start": 5283,
-      "end": 5834.69,
-      "durationSec": 553,
+      "start": 5270.89,
+      "end": 5821.31,
+      "durationSec": 551.73,
       "artist": "Dark Funeral",
       "title": "We Are the Apocalypse (Live in Stockholm)",
       "album": "A Beast To Praise (Live in Stockholm)",
@@ -628,9 +628,9 @@
       "links": []
     },
     {
-      "start": 5938,
-      "end": 6206,
-      "durationSec": 310,
+      "start": 5924.38,
+      "end": 6191.77,
+      "durationSec": 309.29,
       "artist": "Amon Amarth",
       "title": "The Way of Vikings",
       "album": "Jomsviking",
@@ -642,9 +642,9 @@
       "links": []
     },
     {
-      "start": 6413,
-      "end": 6862,
-      "durationSec": 449,
+      "start": 6398.29,
+      "end": 6846.27,
+      "durationSec": 447.97,
       "artist": "Boris",
       "title": "Farewell",
       "album": "Pink",
@@ -658,59 +658,59 @@
   ],
   "quotes": [
     {
-      "start": 366,
+      "start": 365.16,
       "text": "Dobry wieczór Państwu. Przywitała Was Zorza piosenką My Wounds, w której gościnnie udziela się Pan z Harakiri From the Sky."
     },
     {
-      "start": 456,
+      "start": 454.95,
       "text": "pojawi się jeden z najlepszych thrash metalowych zespołów zrodzonych w XXI wieku, czyli amerykański Havok."
     },
     {
-      "start": 1567,
+      "start": 1563.41,
       "text": "deadline rusza w trasę o nazwie The Dine Fall Tour, a jeździł będzie z zespołami Imperial Scene oraz Black Star Mantra."
     },
     {
-      "start": 1626,
+      "start": 1622.27,
       "text": "przede wszystkim The Ruins of Beverast, których specjalizacja to unurzany w blackowej siarce doom,"
     },
     {
-      "start": 2092,
+      "start": 2087.2,
       "text": "oraz holenderskie black metalowe wiedźmy z Asagraum."
     },
     {
-      "start": 2504,
+      "start": 2498.26,
       "text": "supportujący ich brytyjski Conjurer"
     },
     {
-      "start": 3002,
+      "start": 2995.12,
       "text": "Sick Saints i Hypnozaur nazwali wspólną trasę After Glam Tour"
     },
     {
-      "start": 3695,
+      "start": 3686.53,
       "text": "Dehu już na koń siedli, szabli dobyli i pędzą ku Europie przez swoje mongolskie stepy"
     },
     {
-      "start": 3695,
+      "start": 3686.53,
       "text": "przy muzyce Dehu oraz francuskiego Scald zabawimy się w stolicy, w klubie Stodoła"
     },
     {
-      "start": 4530,
+      "start": 4519.61,
       "text": "Właśnie ukazała się ich nowa płyta Come This Madness"
     },
     {
-      "start": 5040,
+      "start": 5028.44,
       "text": "Co innego norweska Gehenna, którą zobaczymy też tego wieczoru"
     },
     {
-      "start": 5273,
+      "start": 5260.91,
       "text": "Dark Funeral niedawno wydał koncertowy album A Beast to Praise Live in Stockholm"
     },
     {
-      "start": 5908,
+      "start": 5894.45,
       "text": "Amon Amarth zagrają 29 października w Prezero Arenie Gliwice"
     },
     {
-      "start": 6862,
+      "start": 6846.27,
       "text": "Ładnie się składa, że mogę dzisiaj Państwa pożegnać piosenką Boris, która, a jakże, nosi tytuł Pożegnanie i o czym fani Japończyków doskonale wiedzą, jest powitaniem na ich kultowej płycie Pink."
     }
   ],
@@ -718,14 +718,15 @@
     {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
-      "time": 433,
+      "time": 432.01,
       "quote": "Przy mikrofonie Jarek Szubrycht"
     },
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 433,
+      "time": 432.01,
       "quote": "na tronie wydawcy zasiada Mariusz Owczarek"
     }
-  ]
+  ],
+  "audioDurationSec": 6862.054
 }

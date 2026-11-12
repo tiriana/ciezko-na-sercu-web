@@ -118,6 +118,7 @@
       }
       .player > button:hover { border-color: var(--accent); color: var(--accent); }
       .player .clock { font-variant-numeric: tabular-nums; color: var(--muted); }
+      .player .clock-timeline { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; border-bottom: 1px dotted var(--line); cursor: help; }
       .field { margin: 14px 0 6px; }
       .field label { display: block; color: var(--muted); font-size: 12px; margin-bottom: 4px; }
       .field input[type="text"] { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; font: inherit; }
@@ -893,6 +894,7 @@
             <audio id="audio" controls preload="none"></audio>
             <button type="button" data-skip="5">+5 s</button>
             <span class="clock" id="clock">0:00</span>
+            <span class="clock-timeline" id="clock-timeline" hidden></span>
           </div>
 
           <div class="draft-offer" id="draft-offer" hidden>
@@ -2201,6 +2203,20 @@
         audio.src = data.audioUrl ?? '';
         audio.currentTime = 0;
         $('clock').textContent = '0:00';
+        // Nagrania Polskiego Radia bywają policzone krócej, niż trwają (ramki bez paddingu),
+        // więc dane trzymamy w skali odtwarzacza — plakietka mówi, o ile przesunięto czasy.
+        const timeline = $('clock-timeline');
+        const scale = data.audioDurationSec > 0 && data.durationSec > 0 ? data.durationSec / data.audioDurationSec : null;
+        if (scale && Math.abs(scale - 1) > 0.00005) {
+          const shift = Math.round((data.audioDurationSec - data.durationSec) * 10) / 10;
+          timeline.textContent = `×${scale.toFixed(6).replace('.', ',')} · −${String(shift).replace('.', ',')} s`;
+          timeline.title = `Plik ma ${data.audioDurationSec} s, a odtwarzacz mierzy ${data.durationSec} s — znaczniki są przeliczone na skalę odtwarzacza.`;
+          timeline.hidden = false;
+        } else {
+          timeline.hidden = true;
+          timeline.textContent = '';
+          timeline.title = '';
+        }
 
         renderTracks();
         renderTopics();

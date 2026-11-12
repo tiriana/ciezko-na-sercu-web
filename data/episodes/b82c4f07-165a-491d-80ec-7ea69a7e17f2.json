@@ -2,43 +2,43 @@
   "version": 1,
   "id": "b82c4f07-165a-491d-80ec-7ea69a7e17f2",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.792Z",
-  "durationSec": 7145,
+  "updatedAt": "2026-11-11T23:51:27.346Z",
+  "durationSec": 7128.683,
   "summary": "Audycja to przegląd koncertów i festiwali metalowych i pokrewnych zaplanowanych na lipiec. Omówiono festiwale takie jak Rokowizna/Metalowizna w Zwierzyńcu (z Carcass jako gwiazdą), Rozłupnię, Crossover Krakau, Bloody Fest, Red Smoke w Pleszewie, Bestial Invasion, Live and Burn Festival oraz konkurencyjne, jednoczesne Atak Szczurów i Czarne Rewiry we Wrocławiu. Wśród zapowiedzianych koncertów wymieniono m.in. Macabre z projektem Schiering/Pungent Stench i Lasem Trumien, In Flames z Bleed From Within, System of a Down, Queens of the Stone Age i Acid Bath na Stadionie Narodowym, Biohazard z Chrome, Violence/Death Angel i Sworn Enemy, a także Scorpions, Voivod, Arch Enemy, Phil Campbell's Bastard Sons przed Judas Priest, Terror, Cryptopsy, Crowbar, Mushroom Head i Municipal Waste. Skrytykowano symfoniczną płytę Voivod pt. Syfonik jako nieudany eksperyment. Przywołano historię zespołu Acid Bath, w tym śmierć basisty Audiego Pitre w 1997 roku, zabitego przez pijanego kierowcę razem z obojgiem rodziców.",
   "topics": [
     {
-      "start": 275.43,
-      "end": 351,
+      "start": 274.8,
+      "end": 350.2,
       "label": "Zapowiedź festiwalu Rokowizna/Metalowizna i występów brytyjskich zespołów w lipcu"
     },
     {
-      "start": 996,
-      "end": 1174,
+      "start": 993.72,
+      "end": 1171.31,
       "label": "Dyskusja o seryjnych mordercach i ich obecności w muzyce, zwłaszcza w twórczości Macabre"
     },
     {
-      "start": 1802,
-      "end": 1904,
+      "start": 1797.87,
+      "end": 1899.63,
       "label": "Kanonada – przegląd festiwali i mikrofestiwali metalowych w lipcu (Red Smoke, Bloody Fest, Bestial Invasion, itp.)"
     },
     {
-      "start": 2943,
-      "end": 3180,
+      "start": 2936.25,
+      "end": 3172.71,
       "label": "Zapowiedź koncertów zagranicznych gwiazd: In Flames, System of a Down, Queens of the Stone Age i innych"
     },
     {
-      "start": 3844,
-      "end": 3960,
+      "start": 3835.19,
+      "end": 3950.92,
       "label": "Prezentacja koncertów Biohazard, Chromax, Violence i Sworn Enemy w Gdańsku, Warszawie i Wrocławiu oraz ich znaczenie dla sceny metalowej"
     },
     {
-      "start": 4415,
-      "end": 4472,
+      "start": 4404.88,
+      "end": 4461.75,
       "label": "Festiwal Atak Szczurów – przegląd undergroundowych zespołów i porównanie z czarnymi rewiriami w tym samym terminie"
     },
     {
-      "start": 6873.57,
-      "end": 7010,
+      "start": 6857.81,
+      "end": 6993.93,
       "label": "Polskie zespoły towarzyszące koncertowi – Hamulec, Sanity Control, Diving Stołów"
     }
   ],
@@ -48,49 +48,49 @@
       "label": "Arch Enemy",
       "type": "artist",
       "source": "tracks",
-      "at": 5909
+      "at": 5895.45
     },
     {
       "id": "biohazard",
       "label": "Biohazard",
       "type": "artist",
       "source": "tracks",
-      "at": 3960
+      "at": 3950.92
     },
     {
       "id": "blindead-23",
       "label": "Blindead 23",
       "type": "artist",
       "source": "tracks",
-      "at": 351
+      "at": 350.2
     },
     {
       "id": "carcass",
       "label": "Carcass",
       "type": "artist",
       "source": "tracks",
-      "at": 12
+      "at": 11.97
     },
     {
       "id": "cryptopsy",
       "label": "Cryptopsy",
       "type": "artist",
       "source": "tracks",
-      "at": 6637
+      "at": 6621.78
     },
     {
       "id": "hate",
       "label": "Hate",
       "type": "artist",
       "source": "tracks",
-      "at": 4877
+      "at": 4865.82
     },
     {
       "id": "in-flames",
       "label": "In Flames",
       "type": "artist",
       "source": "tracks",
-      "at": 2666
+      "at": 2659.89
     },
     {
       "id": "jarek-szubrycht",
@@ -103,14 +103,14 @@
       "label": "Judas Priest",
       "type": "artist",
       "source": "tracks",
-      "at": 6219
+      "at": 6204.74
     },
     {
       "id": "macabre",
       "label": "Macabre",
       "type": "artist",
       "source": "tracks",
-      "at": 1174
+      "at": 1171.31
     },
     {
       "id": "mariusz-owczarek",
@@ -123,231 +123,231 @@
       "label": "Municipal Waste",
       "type": "artist",
       "source": "tracks",
-      "at": 7010
+      "at": 6993.93
     },
     {
       "id": "odium-humani-generis",
       "label": "Odium Humani Generis",
       "type": "artist",
       "source": "tracks",
-      "at": 4472
+      "at": 4461.75
     },
     {
       "id": "poison-ruin",
       "label": "Poison Ruïn",
       "type": "artist",
       "source": "tracks",
-      "at": 2379
+      "at": 2373.54
     },
     {
       "id": "queens-of-the-stone-age",
       "label": "Queens of the Stone Age",
       "type": "artist",
       "source": "tracks",
-      "at": 3285
+      "at": 3277.47
     },
     {
       "id": "species",
       "label": "Species",
       "type": "artist",
       "source": "tracks",
-      "at": 795
+      "at": 793.18
     },
     {
       "id": "system-of-a-down",
       "label": "System Of A Down",
       "type": "artist",
       "source": "tracks",
-      "at": 3180
+      "at": 3172.71
     },
     {
       "id": "voivod-orchestre-symphonique-de-quebec",
       "label": "Voivod & Orchestre symphonique de Québec",
       "type": "artist",
       "source": "tracks",
-      "at": 5495
+      "at": 5482.4
     },
     {
       "id": "warning",
       "label": "Warning",
       "type": "artist",
       "source": "tracks",
-      "at": 1904
+      "at": 1899.63
     },
     {
       "id": "rokowizna-metalowizna",
       "label": "Rokowizna / Metalowizna",
       "type": "event",
       "source": "transcript",
-      "at": 275
+      "at": 274.37
     },
     {
       "id": "koncert-last-lightning-trasa-polska",
       "label": "Last Lightning - trasa polska",
       "type": "concert",
       "source": "transcript",
-      "at": 700
+      "at": 698.39
     },
     {
       "id": "rozlupnia",
       "label": "Rozłupnia",
       "type": "event",
       "source": "transcript",
-      "at": 740
+      "at": 738.3
     },
     {
       "id": "crossover-krakau",
       "label": "Crossover Krakau",
       "type": "event",
       "source": "transcript",
-      "at": 774
+      "at": 772.23
     },
     {
       "id": "koncert-macabre-schiering-place-pungent-stench-las-trumien",
       "label": "Macabre / Schiering Place Pungent Stench / Las Trumien",
       "type": "concert",
       "source": "transcript",
-      "at": 1107
+      "at": 1104.46
     },
     {
       "id": "bloody-fest",
       "label": "Bloody Fest",
       "type": "event",
       "source": "transcript",
-      "at": 1802
+      "at": 1797.87
     },
     {
       "id": "red-smoke",
       "label": "Red Smoke",
       "type": "event",
       "source": "transcript",
-      "at": 1832
+      "at": 1827.8
     },
     {
       "id": "bestial-invasion",
       "label": "Bestial Invasion",
       "type": "event",
       "source": "transcript",
-      "at": 2287
+      "at": 2281.76
     },
     {
       "id": "koncert-poison-ruin",
       "label": "Poison Ruin",
       "type": "concert",
       "source": "transcript",
-      "at": 2324
+      "at": 2318.67
     },
     {
       "id": "koncert-in-flames-bleed-from-within",
       "label": "In Flames / Bleed From Within",
       "type": "concert",
       "source": "transcript",
-      "at": 2602
+      "at": 2596.03
     },
     {
       "id": "live-and-burn-festival",
       "label": "Live and Burn Festival",
       "type": "event",
       "source": "transcript",
-      "at": 2943
+      "at": 2936.25
     },
     {
       "id": "koncert-system-of-a-down-queens-of-the-stone-age-acid-bath",
       "label": "System of a Down / Queens of the Stone Age / Acid Bath",
       "type": "concert",
       "source": "transcript",
-      "at": 2962
+      "at": 2955.21
     },
     {
       "id": "koncert-biohazard-chrome-violence-lub-death-angel-we-wroclawiu-sworn-enemy",
       "label": "Biohazard / Chrome / Violence (lub Death Angel we Wrocławiu) / Sworn Enemy",
       "type": "concert",
       "source": "transcript",
-      "at": 3844
+      "at": 3835.19
     },
     {
       "id": "koncert-scorpions",
       "label": "Scorpions",
       "type": "concert",
       "source": "transcript",
-      "at": 4415
+      "at": 4404.88
     },
     {
       "id": "atak-szczurow",
       "label": "Atak Szczurów",
       "type": "event",
       "source": "transcript",
-      "at": 4434
+      "at": 4423.83
     },
     {
       "id": "czarne-rewiry",
       "label": "Czarne Rewiry",
       "type": "event",
       "source": "transcript",
-      "at": 4821
+      "at": 4809.95
     },
     {
       "id": "koncert-voivod",
       "label": "Voivod",
       "type": "concert",
       "source": "transcript",
-      "at": 5404
+      "at": 5391.61
     },
     {
       "id": "koncert-arch-enemy",
       "label": "Arch Enemy",
       "type": "concert",
       "source": "transcript",
-      "at": 5857
+      "at": 5843.57
     },
     {
       "id": "koncert-phil-campbell-s-bastard-sons-judas-priest",
       "label": "Phil Campbell's Bastard Sons / Judas Priest",
       "type": "concert",
       "source": "transcript",
-      "at": 6134
+      "at": 6119.93
     },
     {
       "id": "koncert-terror-stick-to-your-guns",
       "label": "Terror / Stick to Your Guns",
       "type": "concert",
       "source": "transcript",
-      "at": 6595
+      "at": 6579.88
     },
     {
       "id": "koncert-terror-walwodynia-cryptopsy",
       "label": "Terror / Walwodynia / Cryptopsy",
       "type": "concert",
       "source": "transcript",
-      "at": 6611
+      "at": 6595.84
     },
     {
       "id": "koncert-crowbar",
       "label": "Crowbar",
       "type": "concert",
       "source": "transcript",
-      "at": 6874
+      "at": 6858.24
     },
     {
       "id": "koncert-mushroom-head",
       "label": "Mushroom Head",
       "type": "concert",
       "source": "transcript",
-      "at": 6894
+      "at": 6878.19
     },
     {
       "id": "koncert-municipal-waste",
       "label": "Municipal Waste",
       "type": "concert",
       "source": "transcript",
-      "at": 6935
+      "at": 6919.1
     }
   ],
   "tracks": [
     {
-      "start": 12,
-      "end": 249.25,
-      "durationSec": 239,
+      "start": 11.97,
+      "end": 248.68,
+      "durationSec": 238.45,
       "artist": "Carcass",
       "title": "Reek of Putrefaction",
       "album": "Symphonies of Sickness",
@@ -359,9 +359,9 @@
       "links": []
     },
     {
-      "start": 351,
-      "end": 700.05,
-      "durationSec": 350,
+      "start": 350.2,
+      "end": 698.44,
+      "durationSec": 349.2,
       "artist": "Blindead 23",
       "title": "You Are The Universe",
       "album": "Deuterium",
@@ -373,9 +373,9 @@
       "links": []
     },
     {
-      "start": 795,
-      "end": 996,
-      "durationSec": 203,
+      "start": 793.18,
+      "end": 993.72,
+      "durationSec": 202.53,
       "artist": "Species",
       "title": "The Essence",
       "album": "Changelings",
@@ -386,9 +386,9 @@
       "links": []
     },
     {
-      "start": 1174,
-      "end": 1802,
-      "durationSec": 630,
+      "start": 1171.31,
+      "end": 1797.87,
+      "durationSec": 628.56,
       "artist": "Macabre",
       "title": "Hitchhiker",
       "album": "Dahmer (Remastered)",
@@ -400,9 +400,9 @@
       "links": []
     },
     {
-      "start": 1904,
-      "end": 2287.17,
-      "durationSec": 384,
+      "start": 1899.63,
+      "end": 2281.93,
+      "durationSec": 383.12,
       "artist": "Warning",
       "title": "Landing Lights",
       "album": "Rituals of Shame",
@@ -414,9 +414,9 @@
       "links": []
     },
     {
-      "start": 2379,
-      "end": 2601.8,
-      "durationSec": 224,
+      "start": 2373.54,
+      "end": 2595.83,
+      "durationSec": 223.49,
       "artist": "Poison Ruïn",
       "title": "Eidolon",
       "album": "Hymns From The Hills",
@@ -427,9 +427,9 @@
       "links": []
     },
     {
-      "start": 2666,
-      "end": 2943,
-      "durationSec": 279,
+      "start": 2659.89,
+      "end": 2936.25,
+      "durationSec": 278.36,
       "artist": "In Flames",
       "title": "Trigger",
       "album": "Reroute To Remain",
@@ -440,9 +440,9 @@
       "links": []
     },
     {
-      "start": 3180,
-      "end": 3237.7,
-      "durationSec": 59,
+      "start": 3172.71,
+      "end": 3230.28,
+      "durationSec": 58.86,
       "artist": "System Of A Down",
       "title": "War",
       "album": "System Of A Down",
@@ -454,9 +454,9 @@
       "links": []
     },
     {
-      "start": 3285,
-      "end": 3844,
-      "durationSec": 560,
+      "start": 3277.47,
+      "end": 3835.19,
+      "durationSec": 558.72,
       "artist": "Queens of the Stone Age",
       "title": "Feel Good Hit of the Summer",
       "album": "Rated R",
@@ -467,9 +467,9 @@
       "links": []
     },
     {
-      "start": 3960,
-      "end": 4415,
-      "durationSec": 457,
+      "start": 3950.92,
+      "end": 4404.88,
+      "durationSec": 455.95,
       "artist": "Biohazard",
       "title": "Domination",
       "album": null,
@@ -481,9 +481,9 @@
       "links": []
     },
     {
-      "start": 4472,
-      "end": 4807.11,
-      "durationSec": 336,
+      "start": 4461.75,
+      "end": 4796.09,
+      "durationSec": 335.23,
       "artist": "Odium Humani Generis",
       "title": "Drogowskaz",
       "album": "Międzyczas",
@@ -495,9 +495,9 @@
       "links": []
     },
     {
-      "start": 4877,
-      "end": 5403.88,
-      "durationSec": 527,
+      "start": 4865.82,
+      "end": 5391.49,
+      "durationSec": 525.79,
       "artist": "Hate",
       "title": "Iphigenia",
       "album": "Bellum Regiis",
@@ -508,9 +508,9 @@
       "links": []
     },
     {
-      "start": 5495,
-      "end": 5857,
-      "durationSec": 364,
+      "start": 5482.4,
+      "end": 5843.57,
+      "durationSec": 363.17,
       "artist": "Voivod & Orchestre symphonique de Québec",
       "title": "Forgotten In Space (Symphonique Live)",
       "album": "Symphonique (Live)",
@@ -521,9 +521,9 @@
       "links": []
     },
     {
-      "start": 5909,
-      "end": 6134.08,
-      "durationSec": 226,
+      "start": 5895.45,
+      "end": 6120.01,
+      "durationSec": 225.48,
       "artist": "Arch Enemy",
       "title": "Blood Dynasty",
       "album": "Blood Dynasty",
@@ -534,9 +534,9 @@
       "links": []
     },
     {
-      "start": 6219,
-      "end": 6594.6,
-      "durationSec": 377,
+      "start": 6204.74,
+      "end": 6579.48,
+      "durationSec": 376.14,
       "artist": "Judas Priest",
       "title": "Invincible Shield",
       "album": "Invincible Shield (Deluxe Edition)",
@@ -547,9 +547,9 @@
       "links": []
     },
     {
-      "start": 6637,
-      "end": 6873.57,
-      "durationSec": 238,
+      "start": 6621.78,
+      "end": 6857.81,
+      "durationSec": 237.45,
       "artist": "Cryptopsy",
       "title": "Until There's Nothing Left",
       "album": "An Insatiable Violence",
@@ -560,9 +560,9 @@
       "links": []
     },
     {
-      "start": 7010,
-      "end": 7145,
-      "durationSec": 135,
+      "start": 6993.93,
+      "end": 7128.62,
+      "durationSec": 134.69,
       "artist": "Municipal Waste",
       "title": "Mind Eraser",
       "album": "Hazardous Mutation",
@@ -576,47 +576,47 @@
   ],
   "quotes": [
     {
-      "start": 259,
+      "start": 258.41,
       "text": "Czego więcej można chcieć od życia? Sięgnąłem po Rick of Patrifaction, klasyk grindu z repertuaru Carcass"
     },
     {
-      "start": 319,
+      "start": 318.27,
       "text": "Blinded za chwilę posłuchamy, bo ich płyta Deuterium"
     },
     {
-      "start": 780,
+      "start": 778.21,
       "text": "Terror Dome"
     },
     {
-      "start": 1080,
+      "start": 1077.52,
       "text": "For God Your Soul"
     },
     {
-      "start": 1870,
+      "start": 1865.71,
       "text": "Warning"
     },
     {
-      "start": 3015,
+      "start": 3008.09,
       "text": "Obok Slipknot, oczywiście fani Deftons nawet nie dzwonią ze skargami"
     },
     {
-      "start": 3015,
+      "start": 3008.09,
       "text": "System of a Down powracają do Polski jako megagwiazdy"
     },
     {
-      "start": 3844,
+      "start": 3835.19,
       "text": "Nie byłoby Biohazard, niczego by nie było, gdyby nie Chromax"
     },
     {
-      "start": 3844,
+      "start": 3835.19,
       "text": "Biohazard, główne gwiazdy wieczorów, trzech, to mistrzowie Muscle Cora, Rap Cora, Metal Cora z Nowego Jorku"
     },
     {
-      "start": 4415,
+      "start": 4404.88,
       "text": "Generis"
     },
     {
-      "start": 7145,
+      "start": 7128.62,
       "text": "Ja jednak tego samego dnia, ostatniego dnia lipca zostęp w Krakowie, bo w Hype Parku do tańca zmuszą mnie Amerykanie z Municipal Waste."
     }
   ],
@@ -624,14 +624,15 @@
     {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
-      "time": 322,
+      "time": 321.26,
       "quote": "Audycja nazywa się Ciężko na sercu, ja nazywam się Jarek Szubrycht"
     },
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 322,
+      "time": 321.26,
       "quote": "wydawcą jest Mariusz Owczarek"
     }
-  ]
+  ],
+  "audioDurationSec": 7145.065
 }

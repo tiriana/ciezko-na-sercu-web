@@ -2,53 +2,53 @@
   "version": 1,
   "id": "045c81c6-38e7-432e-85eb-a2c7afb64133",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.855Z",
-  "durationSec": 6895,
+  "updatedAt": "2026-11-11T23:56:24.370Z",
+  "durationSec": 6879.239,
   "summary": "Odcinek poświęcony polskim zespołom grającym wymagającą, pokręconą muzykę na granicy gatunków i środowisk, które z tego powodu nie przebijają się do szerszej publiczności. Przypomniano olsztyński Atrocious Filth (EP „Mons” z 2016, album „OVV” z 2021) oraz zmarłego perkusistę Gerarda Niemczyka, który partie do płyty Lux Occulta „The Mother and the Enemy” nagrał w jednym podejściu, bez poprawek. Krakowska Atrofia Red Sun przeszła od metalu atmosferycznego do progresywnego, futurystycznego death metalu („Twisted Logic”, 2003); jej działalność przerwał wypadek na trasie Decapitated w Rosji jesienią 2007 roku, po którym wokalista Adrian Kowanek do dziś nie wrócił do zdrowia. Omówiono efemeryczny Blast Muzungu i album „Gaijin Gabba” (2006) z muzykami z kręgu Lado ABC, inspirowany m.in. Johnem Zornem i japońską sceną, oraz BNNT z Konradem Smoleńskim i Danielem Szwedem, którego „Multiverse” doczekał się pięciu autorskich wariacji wydanych przez Instant Classic. Przedstawiono też ARRM Artura Rumińskiego, łączący postmetal i ambient z krautrockiem i psychodelią, a także jednorazowy projekt Nihila i Havoka – Seagulls Insane and Swans Deceased Mining Out the Void (2011).",
   "topics": [
     {
       "start": 0,
-      "end": 7,
+      "end": 6.98,
       "label": "Prezentacja wymagającej i niszowej muzyki"
     },
     {
-      "start": 7,
-      "end": 9.1,
+      "start": 6.98,
+      "end": 9.08,
       "label": "Zespół Atrocious Filth i postać Gerarda Niemczyka"
     },
     {
-      "start": 9.1,
-      "end": 12,
+      "start": 9.08,
+      "end": 11.97,
       "label": "Historia i ewolucja zespołu Atrofia Red Sun"
     },
     {
-      "start": 30,
-      "end": 37,
+      "start": 29.93,
+      "end": 36.92,
       "label": "Projekt Blast Muzungu i polska scena eksperymentalna"
     },
     {
-      "start": 37,
-      "end": 58,
+      "start": 36.92,
+      "end": 57.87,
       "label": "Zespół BNNT i ich nietypowe podejście do brzmienia"
     },
     {
-      "start": 58,
-      "end": 124,
+      "start": 57.87,
+      "end": 123.72,
       "label": "Projekt BNNT i wariacje albumu Multiverse"
     },
     {
-      "start": 450.76,
-      "end": 505,
+      "start": 449.73,
+      "end": 503.84,
       "label": "Wpływ zespołu Kobong na współczesną scenę"
     },
     {
-      "start": 124,
-      "end": 136,
+      "start": 123.72,
+      "end": 135.69,
       "label": "Zespół ARRM i postmetalowe brzmienia"
     },
     {
-      "start": 136,
-      "end": 450.76,
+      "start": 135.69,
+      "end": 449.73,
       "label": "Projekt Seagulls Insane and Swans Deceased Mining Out the Void"
     }
   ],
@@ -58,21 +58,21 @@
       "label": "ARRM",
       "type": "artist",
       "source": "tracks",
-      "at": 5084
+      "at": 5072.34
     },
     {
       "id": "atrocious-filth",
       "label": "Atrocious Filth",
       "type": "artist",
       "source": "tracks",
-      "at": 12
+      "at": 11.97
     },
     {
       "id": "bnnt",
       "label": "BNNT",
       "type": "artist",
       "source": "tracks",
-      "at": 2444
+      "at": 2438.4
     },
     {
       "id": "jarek-szubrycht",
@@ -91,28 +91,28 @@
       "label": "Seagulls Insane and Swans Deceased Mining out the Void",
       "type": "artist",
       "source": "tracks",
-      "at": 5861
+      "at": 5847.56
     },
     {
       "id": "koncert-trasa-koncertowa-arrm",
       "label": "Trasa koncertowa ARRM",
       "type": "concert",
       "source": "transcript",
-      "at": 5049
+      "at": 5037.42
     },
     {
       "id": "unsound",
       "label": "Unsound",
       "type": "event",
       "source": "transcript",
-      "at": 5071
+      "at": 5059.37
     }
   ],
   "tracks": [
     {
-      "start": 12,
-      "end": 20,
-      "durationSec": 303,
+      "start": 11.97,
+      "end": 19.95,
+      "durationSec": 302.31,
       "artist": "Atrocious Filth",
       "title": "Moans",
       "album": "Moans - EP",
@@ -124,9 +124,9 @@
       "links": []
     },
     {
-      "start": 505,
-      "end": 2444,
-      "durationSec": 260,
+      "start": 503.84,
+      "end": 2438.4,
+      "durationSec": 259.4,
       "artist": "Atrocious Filth",
       "title": "T",
       "album": "Ovv",
@@ -137,9 +137,9 @@
       "links": []
     },
     {
-      "start": 2444,
-      "end": 5084,
-      "durationSec": 1057,
+      "start": 2438.4,
+      "end": 5072.34,
+      "durationSec": 1054.58,
       "artist": "BNNT",
       "title": "Sickness Begins When One Starts to Think",
       "album": null,
@@ -150,9 +150,9 @@
       "links": []
     },
     {
-      "start": 5084,
-      "end": 5766.47,
-      "durationSec": 684,
+      "start": 5072.34,
+      "end": 5753.25,
+      "durationSec": 682.43,
       "artist": "ARRM",
       "title": "Birth (feat. Wacław Zimpel)",
       "album": "II",
@@ -163,9 +163,9 @@
       "links": []
     },
     {
-      "start": 5861,
-      "end": 6895,
-      "durationSec": 1034,
+      "start": 5847.56,
+      "end": 6879.19,
+      "durationSec": 1031.63,
       "artist": "Seagulls Insane and Swans Deceased Mining out the Void",
       "title": "V",
       "album": "Seagulls Insane and Swans Deceased Mining out the Void",
@@ -178,7 +178,7 @@
   ],
   "quotes": [
     {
-      "start": 7,
+      "start": 6.98,
       "text": "Powitała nas olsztyńska grupa Atrocious Filth, utworem zatytułowanym Mons, pochodzącym z Epki, o tym samym tytule z 2016 roku."
     }
   ],
@@ -186,14 +186,15 @@
     {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
-      "time": 5,
+      "time": 4.99,
       "quote": "Dobry wieczór Państwu, kłania się Jarek Szubrycht."
     },
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 5,
+      "time": 4.99,
       "quote": "Jej wydawcą jest Mariusz Owczarek"
     }
-  ]
+  ],
+  "audioDurationSec": 6895.047
 }

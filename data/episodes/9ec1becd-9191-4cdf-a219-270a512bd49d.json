@@ -2,68 +2,68 @@
   "version": 1,
   "id": "9ec1becd-9191-4cdf-a219-270a512bd49d",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.893Z",
-  "durationSec": 6921,
+  "updatedAt": "2026-11-11T23:58:36.980Z",
+  "durationSec": 6905.197,
   "summary": "Odcinek poświęcony jest zapowiedziom majowych koncertów i festiwali w Polsce, a zapowiedź relacji z festiwalu Roadburn, z którego prowadzący właśnie wrócił, zostaje odłożona do następnego tygodnia z powodu potrzeby opracowania wywiadów. Wśród zapowiedzi są m.in. amerykański Horse, grający 2 maja w Poznaniu, oraz duńska scena deathmetalowa: Neckbreaker, który podpisał kontrakt z Nuclear Blast i w grudniu wydał debiutancki album Within the Viscera, oraz Gouge. Prowadzący odradza koncerty obecnego wcielenia Venom Incorporated, zarzucając Tony'emu Dolanowi prowadzenie działalności bez zgody Mantasa, a poleca trasę z brazylijskim Crisix i Hate, który na początku maja wydaje album Bellum Regis nakładem Metal Blade. Sporo miejsca zajmują Ghost z albumem Skeleta i praktyką odbierania fanom telefonów na koncertach oraz Aborted, który po wyrzuceniu perkusisty Kena Bedene za zachowanie w sieci zaangażował Kevina Paradisa. Prowadzący komentuje też obecność kobiet na metalowej scenie przy okazji brazylijskiej grupy Crypta i zastanawia się nad fenomenem Baby Metal oraz Poppy, której album Negative Spaces robi furorę.",
   "topics": [
     {
-      "start": 200.59,
-      "end": 284,
+      "start": 200.13,
+      "end": 283.35,
       "label": "Powrót z festiwalu Roadburn, relacja i wywiady za tydzień"
     },
     {
-      "start": 284,
-      "end": 361,
+      "start": 283.35,
+      "end": 360.17,
       "label": "Duńska scena: Neckbreaker i Gouge, death metal"
     },
     {
-      "start": 677.03,
-      "end": 837,
+      "start": 675.48,
+      "end": 835.08,
       "label": "Venom Incorporated, Krisiun i Hate z albumem Bellum Regis"
     },
     {
-      "start": 1599,
-      "end": 1632,
+      "start": 1595.33,
+      "end": 1628.26,
       "label": "1349 oraz The Ruins of Beverast w Krakowie 8 maja"
     },
     {
-      "start": 2371,
-      "end": 2403,
+      "start": 2365.56,
+      "end": 2397.49,
       "label": "Born of Osiris, Ingested, Entheos i The Voynich Code w trasie"
     },
     {
-      "start": 2403,
-      "end": 2469,
+      "start": 2397.49,
+      "end": 2463.34,
       "label": "Ghost, album Skeleta i koncert w Atlas Arenie"
     },
     {
-      "start": 2738.26,
-      "end": 2915,
+      "start": 2731.98,
+      "end": 2908.32,
       "label": "Aborted, Krypta, The Zenith Passage i Organectomy"
     },
     {
-      "start": 4487,
-      "end": 4610,
+      "start": 4476.71,
+      "end": 4599.43,
       "label": "Godflesh w Progresji, supporty Thaw i Larmo"
     },
     {
-      "start": 5432.84,
-      "end": 5609,
+      "start": 5420.38,
+      "end": 5596.14,
       "label": "Babymetal z Poppy i Bambie Thug w Tauron Arenie"
     },
     {
-      "start": 5808.52,
-      "end": 5908,
+      "start": 5795.2,
+      "end": 5894.45,
       "label": "Decapitated z nowym wokalistą, Cryptopsy i Warbringer"
     },
     {
-      "start": 6421,
-      "end": 6494,
+      "start": 6406.28,
+      "end": 6479.11,
       "label": "Pallbearer w Hydrozagadce i Metal Commando Fest"
     },
     {
-      "start": 6494,
-      "end": 6573,
+      "start": 6479.11,
+      "end": 6557.93,
       "label": "Inquisition i Demonical, dwa koncerty w Polsce"
     }
   ],
@@ -73,63 +73,63 @@
       "label": "1349",
       "type": "artist",
       "source": "tracks",
-      "at": 1632
+      "at": 1628.26
     },
     {
       "id": "aborted",
       "label": "Aborted",
       "type": "artist",
       "source": "tracks",
-      "at": 2915
+      "at": 2908.32
     },
     {
       "id": "babymetal-poppy",
       "label": "BABYMETAL & Poppy",
       "type": "artist",
       "source": "tracks",
-      "at": 5609
+      "at": 5596.14
     },
     {
       "id": "baxaxaxa",
       "label": "Baxaxaxa",
       "type": "artist",
       "source": "tracks",
-      "at": 3249
+      "at": 3241.55
     },
     {
       "id": "caliban",
       "label": "Caliban",
       "type": "artist",
       "source": "tracks",
-      "at": 4183
+      "at": 4173.41
     },
     {
       "id": "decapitated",
       "label": "Decapitated",
       "type": "artist",
       "source": "tracks",
-      "at": 5908
+      "at": 5894.45
     },
     {
       "id": "demonical",
       "label": "Demonical",
       "type": "artist",
       "source": "tracks",
-      "at": 6573
+      "at": 6557.93
     },
     {
       "id": "ghost",
       "label": "Ghost",
       "type": "artist",
       "source": "tracks",
-      "at": 2469
+      "at": 2463.34
     },
     {
       "id": "godflesh",
       "label": "Godflesh",
       "type": "artist",
       "source": "tracks",
-      "at": 4610
+      "at": 4599.43
     },
     {
       "id": "jarek-szubrycht",
@@ -142,7 +142,7 @@
       "label": "Krisiun",
       "type": "artist",
       "source": "tracks",
-      "at": 837
+      "at": 835.08
     },
     {
       "id": "mariusz-owczarek",
@@ -155,84 +155,84 @@
       "label": "NECKBREAKKER",
       "type": "artist",
       "source": "tracks",
-      "at": 361
+      "at": 360.17
     },
     {
       "id": "whores",
       "label": "Whores",
       "type": "artist",
       "source": "tracks",
-      "at": 8
+      "at": 7.98
     },
     {
       "id": "roadburn",
       "label": "Roadburn",
       "type": "event",
       "source": "transcript",
-      "at": 224
+      "at": 223.49
     },
     {
       "id": "mystic-festival",
       "label": "Mystic Festival",
       "type": "event",
       "source": "transcript",
-      "at": 325
+      "at": 324.25
     },
     {
       "id": "liturgia-zniszczenia",
       "label": "Liturgia Zniszczenia",
       "type": "event",
       "source": "transcript",
-      "at": 2740
+      "at": 2733.72
     },
     {
       "id": "metal-vulture",
       "label": "Metal Vulture",
       "type": "event",
       "source": "transcript",
-      "at": 2777
+      "at": 2770.63
     },
     {
       "id": "koncert-skeletur-tour-ghost",
       "label": "Skeletur Tour (Ghost)",
       "type": "concert",
       "source": "transcript",
-      "at": 2421
+      "at": 2415.45
     },
     {
       "id": "hell-and-fire",
       "label": "Hell and Fire",
       "type": "event",
       "source": "transcript",
-      "at": 4113
+      "at": 4103.57
     },
     {
       "id": "666-united-metal-fest",
       "label": "666 United Metal Fest",
       "type": "event",
       "source": "transcript",
-      "at": 5463
+      "at": 5450.47
     },
     {
       "id": "koncert-infernal-bloodshed-tour-decapitated",
       "label": "Infernal Bloodshed Tour (Decapitated)",
       "type": "concert",
       "source": "transcript",
-      "at": 5831
+      "at": 5817.63
     },
     {
       "id": "metal-commando-fest",
       "label": "Metal Commando Fest",
       "type": "event",
       "source": "transcript",
-      "at": 6433
+      "at": 6418.25
     }
   ],
   "tracks": [
     {
-      "start": 8,
-      "end": 200.59,
-      "durationSec": 194,
+      "start": 7.98,
+      "end": 200.13,
+      "durationSec": 193.56,
       "artist": "Whores",
       "title": "Hieronymus Bosch Was Right",
       "album": "War",
@@ -244,9 +244,9 @@
       "links": []
     },
     {
-      "start": 361,
-      "end": 677.03,
-      "durationSec": 318,
+      "start": 360.17,
+      "end": 675.48,
+      "durationSec": 317.27,
       "artist": "NECKBREAKKER",
       "title": "Absorption",
       "album": "Within The Viscera",
@@ -257,9 +257,9 @@
       "links": []
     },
     {
-      "start": 837,
-      "end": 1599,
-      "durationSec": 764,
+      "start": 835.08,
+      "end": 1595.33,
+      "durationSec": 762.25,
       "artist": "Krisiun",
       "title": "Conquerors of Armagedon",
       "album": "Conquerors of Armagedon",
@@ -270,9 +270,9 @@
       "links": []
     },
     {
-      "start": 1632,
-      "end": 2371,
-      "durationSec": 741,
+      "start": 1628.26,
+      "end": 2365.56,
+      "durationSec": 739.3,
       "artist": "1349",
       "title": "The God Devourer",
       "album": "The Wolf and the King",
@@ -283,9 +283,9 @@
       "links": []
     },
     {
-      "start": 2469,
-      "end": 2738.26,
-      "durationSec": 270,
+      "start": 2463.34,
+      "end": 2731.98,
+      "durationSec": 269.38,
       "artist": "Ghost",
       "title": "Lachryma",
       "album": "Skeletá",
@@ -296,9 +296,9 @@
       "links": []
     },
     {
-      "start": 2915,
-      "end": 3163.36,
-      "durationSec": 250,
+      "start": 2908.32,
+      "end": 3156.11,
+      "durationSec": 249.43,
       "artist": "Aborted",
       "title": "The Pain, will be Exquisite",
       "album": "The Pain, will be Exquisite - Single",
@@ -309,9 +309,9 @@
       "links": []
     },
     {
-      "start": 3249,
-      "end": 4113.16,
-      "durationSec": 866,
+      "start": 3241.55,
+      "end": 4103.73,
+      "durationSec": 864.01,
       "artist": "Baxaxaxa",
       "title": "Above the Stellar Gateway",
       "album": "De Vermis Mysteriis",
@@ -322,9 +322,9 @@
       "links": []
     },
     {
-      "start": 4183,
-      "end": 4487,
-      "durationSec": 305,
+      "start": 4173.41,
+      "end": 4476.71,
+      "durationSec": 304.3,
       "artist": "Caliban",
       "title": "Dear Suffering (feat. Joe Bad & Fit for An Autopsy)",
       "album": "Back From Hell",
@@ -335,9 +335,9 @@
       "links": []
     },
     {
-      "start": 4610,
-      "end": 5432.84,
-      "durationSec": 825,
+      "start": 4599.43,
+      "end": 5420.38,
+      "durationSec": 823.11,
       "artist": "Godflesh",
       "title": "Streetcleaner",
       "album": "Streetcleaner",
@@ -348,9 +348,9 @@
       "links": []
     },
     {
-      "start": 5609,
-      "end": 5808.52,
-      "durationSec": 201,
+      "start": 5596.14,
+      "end": 5795.2,
+      "durationSec": 200.54,
       "artist": "BABYMETAL & Poppy",
       "title": "from me to u",
       "album": "METAL FORTH",
@@ -361,9 +361,9 @@
       "links": []
     },
     {
-      "start": 5908,
-      "end": 6421,
-      "durationSec": 515,
+      "start": 5894.45,
+      "end": 6406.28,
+      "durationSec": 513.82,
       "artist": "Decapitated",
       "title": "Kill the Cult",
       "album": "Anticult",
@@ -374,9 +374,9 @@
       "links": []
     },
     {
-      "start": 6573,
-      "end": 6921,
-      "durationSec": 348,
+      "start": 6557.93,
+      "end": 6905.13,
+      "durationSec": 347.2,
       "artist": "Demonical",
       "title": "Välkommen Undergång (Live in Brazil)",
       "album": "Välkommen Undergång (Live in Brazil) - Single",
@@ -389,7 +389,7 @@
   ],
   "quotes": [
     {
-      "start": 139,
+      "start": 138.68,
       "text": "szczególnie Thao polecam w waszej pamięci, bo to autorzy mojej ulubionej ciężkiej polskiej płyty z ubiegłego roku, czyli Fading Backwards."
     }
   ],
@@ -397,14 +397,15 @@
     {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
-      "time": 3,
+      "time": 2.99,
       "quote": "kłania się Jarek Szubrycht, prowadzący dla Was audycję Ciężko na sercu."
     },
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 3,
+      "time": 2.99,
       "quote": "Wydaje ją Mariusz Owczarek"
     }
-  ]
+  ],
+  "audioDurationSec": 6921.065
 }

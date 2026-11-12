@@ -2,73 +2,73 @@
   "version": 1,
   "id": "112c188d-1818-4215-bba3-9348f032ccba",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.880Z",
-  "durationSec": 6851,
+  "updatedAt": "2026-11-11T23:57:45.162Z",
+  "durationSec": 6835.35,
   "summary": "Odcinek to lipcowy kalendarz koncertowy — prowadzący omawia festiwale i trasy, które odbędą się w Polsce w ciągu miesiąca. Wśród festiwali wymieniono darmowe Inne Brzmienia w Lublinie (3–6 lipca, m.in. Voivod, A Place to Bury Strangers, Petbrick, Lee Ranaldo, Yonatan Gat i The Ex), Rockowisko w Zwierzyńcu z Soufly i Samael, Castle Party w Bolkowie z Carpenter Brut, Red Smoke w Pleszewie (Kadavar, Monolord, Sunnata) oraz Pol'and'Rock w Czaplinku-Broczynie (Zeal & Ardor, Paradise Lost, Fear Factory). Z koncertów zapowiedziano m.in. Body Void w Warszawie, węgierski Sear Bliss (wyróżniany puzonem, rzadkim w black metalu), Impiety z Singapuru, Judas Priest w Łodzi z Glory Hammer, Massacre w Krakowie, wspólny występ Heilung i The HU we Wrocławiu, Antichrist Siege Machine, amerykański Ossuary, D.R.I., Yoth Iria z Sarcatorem, Gaerę i Queens of the Stone Age. Zestawienie Heilung z The HU oceniono jako znakomity pomysł, choć wobec zwrotu The HU w stronę generycznego amerykańskiego new metalu wyrażono wątpliwości. Przy okazji Fear Factory mówiono o zmianie wokalisty — Burton C. Bell wypadał na żywo różnie, a Milo Silvestro radzi sobie świetnie — oraz o nowym singlu Paradise Lost o ciszy jak grób, zwiastującym album Ascension z premierą we wrześniu.",
   "topics": [
     {
-      "start": 492,
-      "end": 551,
+      "start": 490.87,
+      "end": 549.74,
       "label": "Body Void, Larmo i Gash Faith w Warszawie"
     },
     {
-      "start": 551,
-      "end": 671,
+      "start": 549.74,
+      "end": 669.46,
       "label": "Festiwal Inne Brzmienia w Lublinie"
     },
     {
-      "start": 1356,
-      "end": 1437,
+      "start": 1352.89,
+      "end": 1433.7,
       "label": "Rockowisko w Zwierzyńcu, Soulfly i Samael"
     },
     {
-      "start": 2179,
-      "end": 2253,
+      "start": 2174,
+      "end": 2247.83,
       "label": "Impiety w Katowicach, jedyny koncert w Polsce"
     },
     {
-      "start": 2253,
-      "end": 2340,
+      "start": 2247.83,
+      "end": 2334.63,
       "label": "Judas Priest i Glory Hammer w Łodzi"
     },
     {
-      "start": 2340,
-      "end": 2557,
+      "start": 2334.63,
+      "end": 2551.14,
       "label": "Heilung i The Hu we wrocławskiej Hali Stulecia"
     },
     {
-      "start": 3326,
-      "end": 3408,
+      "start": 3318.37,
+      "end": 3400.19,
       "label": "Castle Party w Bolkowie, mniej metalu"
     },
     {
-      "start": 3408,
-      "end": 3468,
+      "start": 3400.19,
+      "end": 3460.05,
       "label": "Red Smoke w Pleszewie, stoner i psychodelia"
     },
     {
-      "start": 3855,
-      "end": 3916,
+      "start": 3846.16,
+      "end": 3907.02,
       "label": "Antichrist Siege Machine i Spite, dwa koncerty"
     },
     {
-      "start": 4466,
-      "end": 4593,
+      "start": 4455.76,
+      "end": 4582.47,
       "label": "Endure Grind Attack w Morsku, death metal"
     },
     {
-      "start": 5032,
-      "end": 5067,
+      "start": 5020.46,
+      "end": 5055.38,
       "label": "D.R.I. w Warszawie i Zabrzu"
     },
     {
-      "start": 5173,
-      "end": 5329,
+      "start": 5161.14,
+      "end": 5316.78,
       "label": "Ostrów Rock Festival z Katatonią i Soen"
     },
     {
-      "start": 5923.08,
-      "end": 6181,
+      "start": 5909.5,
+      "end": 6166.83,
       "label": "Poland Rock, Zeal and Ardor i Paradise Lost"
     }
   ],
@@ -78,217 +78,217 @@
       "label": "A Place to Bury Strangers",
       "type": "artist",
       "source": "tracks",
-      "at": 671
+      "at": 669.46
     },
     {
       "id": "antichrist-siege-machine",
       "label": "Antichrist Siege Machine",
       "type": "artist",
       "source": "tracks",
-      "at": 3916
+      "at": 3907.02
     },
     {
       "id": "body-void",
       "label": "Body Void",
       "type": "artist",
       "source": "tracks",
-      "at": 7
+      "at": 6.98
     },
     {
       "id": "d-r-i",
       "label": "D.R.I",
       "type": "artist",
       "source": "tracks",
-      "at": 5067
+      "at": 5055.38
     },
     {
       "id": "fear-factory",
       "label": "Fear Factory",
       "type": "artist",
       "source": "tracks",
-      "at": 6181
+      "at": 6166.83
     },
     {
       "id": "heilung",
       "label": "Heilung",
       "type": "artist",
       "source": "tracks",
-      "at": 2557
+      "at": 2551.14
     },
     {
       "id": "katatonia",
       "label": "Katatonia",
       "type": "artist",
       "source": "tracks",
-      "at": 5329
+      "at": 5316.78
     },
     {
       "id": "ossuary",
       "label": "Ossuary",
       "type": "artist",
       "source": "tracks",
-      "at": 4151
+      "at": 4141.48
     },
     {
       "id": "sear-bliss",
       "label": "Sear Bliss",
       "type": "artist",
       "source": "tracks",
-      "at": 1826
+      "at": 1821.81
     },
     {
       "id": "sinister",
       "label": "Sinister",
       "type": "artist",
       "source": "tracks",
-      "at": 4593
+      "at": 4582.47
     },
     {
       "id": "soulfly",
       "label": "Soulfly",
       "type": "artist",
       "source": "tracks",
-      "at": 1437
+      "at": 1433.7
     },
     {
       "id": "sunnata",
       "label": "sunnata",
       "type": "artist",
       "source": "tracks",
-      "at": 3468
+      "at": 3460.05
     },
     {
       "id": "koncert-body-void",
       "label": "Body Void",
       "type": "concert",
       "source": "transcript",
-      "at": 492
+      "at": 490.87
     },
     {
       "id": "inne-brzmienia",
       "label": "Inne Brzmienia",
       "type": "event",
       "source": "transcript",
-      "at": 551
+      "at": 549.74
     },
     {
       "id": "rockowisko-niezly-zwierzyniec",
       "label": "Rockowisko / Niezły Zwierzyniec",
       "type": "event",
       "source": "transcript",
-      "at": 1356
+      "at": 1352.89
     },
     {
       "id": "koncert-sear-bliss",
       "label": "Sear Bliss",
       "type": "concert",
       "source": "transcript",
-      "at": 1786
+      "at": 1781.9
     },
     {
       "id": "koncert-impiety",
       "label": "Impiety",
       "type": "concert",
       "source": "transcript",
-      "at": 2179
+      "at": 2174
     },
     {
       "id": "koncert-judas-priest",
       "label": "Judas Priest",
       "type": "concert",
       "source": "transcript",
-      "at": 2246
+      "at": 2240.85
     },
     {
       "id": "koncert-massacre",
       "label": "Massacre",
       "type": "concert",
       "source": "transcript",
-      "at": 2310
+      "at": 2304.7
     },
     {
       "id": "koncert-heilung-the-hu",
       "label": "Heilung, The HU",
       "type": "concert",
       "source": "transcript",
-      "at": 2340
+      "at": 2334.63
     },
     {
       "id": "castle-party",
       "label": "Castle Party",
       "type": "event",
       "source": "transcript",
-      "at": 3326
+      "at": 3318.37
     },
     {
       "id": "red-smoke",
       "label": "Red Smoke",
       "type": "event",
       "source": "transcript",
-      "at": 3399
+      "at": 3391.21
     },
     {
       "id": "koncert-antichrist-siege-machine",
       "label": "Antichrist Siege Machine",
       "type": "concert",
       "source": "transcript",
-      "at": 3905
+      "at": 3896.05
     },
     {
       "id": "koncert-ossuary",
       "label": "Ossuary",
       "type": "concert",
       "source": "transcript",
-      "at": 4086
+      "at": 4076.63
     },
     {
       "id": "endure-grind-attack",
       "label": "Endure Grind Attack",
       "type": "event",
       "source": "transcript",
-      "at": 4466
+      "at": 4455.76
     },
     {
       "id": "koncert-d-r-i",
       "label": "D.R.I.",
       "type": "concert",
       "source": "transcript",
-      "at": 5032
+      "at": 5020.46
     },
     {
       "id": "ostrow-rock-festival",
       "label": "Ostrów Rock Festival",
       "type": "event",
       "source": "transcript",
-      "at": 5173
+      "at": 5161.14
     },
     {
       "id": "koncert-yoth-iria-sarcator",
       "label": "Yoth Iria, Sarcator",
       "type": "concert",
       "source": "transcript",
-      "at": 5228
+      "at": 5216.01
     },
     {
       "id": "koncert-gaerea",
       "label": "Gaerea",
       "type": "concert",
       "source": "transcript",
-      "at": 5929
+      "at": 5915.4
     },
     {
       "id": "koncert-queens-of-the-stone-age",
       "label": "Queens of the Stone Age",
       "type": "concert",
       "source": "transcript",
-      "at": 5945
+      "at": 5931.37
     },
     {
       "id": "pol-and-rock",
       "label": "Pol'and'Rock",
       "type": "event",
       "source": "transcript",
-      "at": 5985
+      "at": 5971.28
     },
     {
       "id": "jarek-szubrycht",
@@ -305,9 +305,9 @@
   ],
   "tracks": [
     {
-      "start": 7,
-      "end": 492,
-      "durationSec": 487,
+      "start": 6.98,
+      "end": 490.87,
+      "durationSec": 485.88,
       "artist": "Body Void",
       "title": "Burn",
       "album": "Burn the Homes of Those Who Seek To Control Our Bodies - Single",
@@ -318,9 +318,9 @@
       "links": []
     },
     {
-      "start": 671,
-      "end": 1356,
-      "durationSec": 686,
+      "start": 669.46,
+      "end": 1352.89,
+      "durationSec": 684.43,
       "artist": "A Place to Bury Strangers",
       "title": "Everything Always Goes Wrong",
       "album": "Exploding Head",
@@ -331,9 +331,9 @@
       "links": []
     },
     {
-      "start": 1437,
-      "end": 1706.32,
-      "durationSec": 270,
+      "start": 1433.7,
+      "end": 1702.41,
+      "durationSec": 269.38,
       "artist": "Soulfly",
       "title": "No Hope = No Fear",
       "album": "Soulfly",
@@ -344,9 +344,9 @@
       "links": []
     },
     {
-      "start": 1826,
-      "end": 2179,
-      "durationSec": 354,
+      "start": 1821.81,
+      "end": 2174,
+      "durationSec": 353.19,
       "artist": "Sear Bliss",
       "title": "The Upper World",
       "album": "Heavenly Down",
@@ -357,9 +357,9 @@
       "links": []
     },
     {
-      "start": 2557,
-      "end": 3326,
-      "durationSec": 770,
+      "start": 2551.14,
+      "end": 3318.37,
+      "durationSec": 768.23,
       "artist": "Heilung",
       "title": "Elivagar",
       "album": "Futha",
@@ -370,9 +370,9 @@
       "links": []
     },
     {
-      "start": 3468,
-      "end": 3855,
-      "durationSec": 388,
+      "start": 3460.05,
+      "end": 3846.16,
+      "durationSec": 387.11,
       "artist": "sunnata",
       "title": "The Sleeper",
       "album": "Chasing Shadows",
@@ -383,9 +383,9 @@
       "links": []
     },
     {
-      "start": 3916,
-      "end": 4049.64,
-      "durationSec": 135,
+      "start": 3907.02,
+      "end": 4040.35,
+      "durationSec": 134.69,
       "artist": "Antichrist Siege Machine",
       "title": "Abyssal Hate",
       "album": "Vengeance of Eternal Fire",
@@ -396,9 +396,9 @@
       "links": []
     },
     {
-      "start": 4151,
-      "end": 4466,
-      "durationSec": 316,
+      "start": 4141.48,
+      "end": 4455.76,
+      "durationSec": 315.28,
       "artist": "Ossuary",
       "title": "Inborn Scourge Unbound",
       "album": "Abhorrent Worship",
@@ -409,9 +409,9 @@
       "links": []
     },
     {
-      "start": 4593,
-      "end": 5032,
-      "durationSec": 441,
+      "start": 4582.47,
+      "end": 5020.46,
+      "durationSec": 439.99,
       "artist": "Sinister",
       "title": "Sacramental Carnage",
       "album": "Cross the Styx",
@@ -422,9 +422,9 @@
       "links": []
     },
     {
-      "start": 5067,
-      "end": 5173,
-      "durationSec": 107,
+      "start": 5055.38,
+      "end": 5161.14,
+      "durationSec": 106.75,
       "artist": "D.R.I",
       "title": "You Say I'm Scum",
       "album": "Live",
@@ -435,9 +435,9 @@
       "links": []
     },
     {
-      "start": 5329,
-      "end": 5923.08,
-      "durationSec": 595,
+      "start": 5316.78,
+      "end": 5909.5,
+      "durationSec": 593.64,
       "artist": "Katatonia",
       "title": "Temporal",
       "album": "Nightmares as Extensions of the Waking State",
@@ -448,9 +448,9 @@
       "links": []
     },
     {
-      "start": 6181,
-      "end": 6851,
-      "durationSec": 670,
+      "start": 6166.83,
+      "end": 6835.29,
+      "durationSec": 668.46,
       "artist": "Fear Factory",
       "title": "Scapegoat",
       "album": "Soul of a New Machine",
@@ -475,5 +475,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6851.056
 }

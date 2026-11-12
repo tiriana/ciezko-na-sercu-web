@@ -2,63 +2,63 @@
   "version": 1,
   "id": "8fe73396-bfe9-4342-a9ab-5566196ac131",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.821Z",
-  "durationSec": 6851,
+  "updatedAt": "2026-11-11T23:54:10.289Z",
+  "durationSec": 6835.35,
   "summary": "Audycja w całości poświęcona jest zapowiedziom festiwali metalowych i pokrewnych na nadchodzący sezon. Omówiono m.in. norweski Inferno Festival (2-5 kwietnia) z Mayhem, Enslaved i Old Man's Child, holenderski Roadburn (16-19 kwietnia) z Cult of Luna, Boris i Today Is the Day oraz gdański Mystic Festival (początek czerwca) z Megadeth, Behemoth, Mastodon i mocną reprezentacją amerykańskiej sceny sludge. Przedstawiono też nowy warszawski Summer Punch (18-19 czerwca) z Babymetal i Bad Omens, duński Copenhell (24-27 czerwca) z Iron Maiden i hołdem dla Bathory oraz pierwszą edycję szczecińskiego Hell's Bells (26-27 czerwca), łączącego metal z punkiem (Possessed, U.D.O., Vader, Dis-chord, Cockney Rejects). Omówiono czeski Obscene Extreme w Trutnovie (1-5 lipca) z Converge i Macabre (w tym akustyczny projekt Macabre Minstrels), kolidujące terminy OFF Festivalu w Katowicach i Brutal Assault w Józefowie (5-8 sierpnia, z Body Count, Primus, Vardruna), norweski Midgardsblot (połowa sierpnia) celebrujący kulturę wikingów oraz kończący sezon Summer Dying Loud w Aleksandrowie Łódzkim (3-5 września) z Satyricon i Behemotem. Prowadzący wspomina też o swojej wcześniejszej pracy przy OFF Festivalu oraz dzieli się osobistymi rekomendacjami co do konkretnych koncertów i odkryć.",
   "topics": [
     {
-      "start": 76,
-      "end": 189,
+      "start": 75.83,
+      "end": 188.57,
       "label": "Inferno Festival w Oslo i norweska scena"
     },
     {
-      "start": 572,
-      "end": 740,
+      "start": 570.69,
+      "end": 738.3,
       "label": "Roadburn w Tilburgu i odkrywanie nowych terytoriów"
     },
     {
-      "start": 1898,
-      "end": 2092,
+      "start": 1893.65,
+      "end": 2087.2,
       "label": "Mystic Festival w Gdańsku i scena nowoorleańska"
     },
     {
-      "start": 2658,
-      "end": 2790,
+      "start": 2651.91,
+      "end": 2783.6,
       "label": "Nowy festiwal Summer Punch w Warszawie"
     },
     {
-      "start": 2934,
-      "end": 3062,
+      "start": 2927.27,
+      "end": 3054.98,
       "label": "Copenhell w Kopenhadze i młode zespoły skandynawskie"
     },
     {
-      "start": 3306,
-      "end": 3403,
+      "start": 3298.42,
+      "end": 3395.2,
       "label": "Hell's Bells w Szczecinie: metal i punk"
     },
     {
-      "start": 3650,
-      "end": 3733,
+      "start": 3641.63,
+      "end": 3724.44,
       "label": "Obscene Extreme w Trutnowie i klimat DIY"
     },
     {
-      "start": 4100,
-      "end": 4200,
+      "start": 4090.6,
+      "end": 4190.37,
       "label": "Poland Rock, Castle Party i OFF Festival"
     },
     {
-      "start": 4445,
-      "end": 4634,
+      "start": 4434.81,
+      "end": 4623.37,
       "label": "Brutal Assault w twierdzy Josefov"
     },
     {
-      "start": 5305,
-      "end": 5388,
+      "start": 5292.84,
+      "end": 5375.65,
       "label": "Midgardsblot i kultura wikingów"
     },
     {
-      "start": 5631,
-      "end": 5841,
+      "start": 5618.09,
+      "end": 5827.61,
       "label": "Summer Dying Loud w Aleksandrowie Łódzkim"
     }
   ],
@@ -68,168 +68,168 @@
       "label": "Body Count",
       "type": "artist",
       "source": "tracks",
-      "at": 4634
+      "at": 4623.37
     },
     {
       "id": "boris",
       "label": "Boris",
       "type": "artist",
       "source": "tracks",
-      "at": 740
+      "at": 738.3
     },
     {
       "id": "chat-pile",
       "label": "Chat Pile",
       "type": "artist",
       "source": "tracks",
-      "at": 4200
+      "at": 4190.37
     },
     {
       "id": "corrosion-of-conformity",
       "label": "Corrosion of Conformity",
       "type": "artist",
       "source": "tracks",
-      "at": 2092
+      "at": 2087.2
     },
     {
       "id": "discharge",
       "label": "Discharge",
       "type": "artist",
       "source": "tracks",
-      "at": 3403
+      "at": 3395.2
     },
     {
       "id": "handgemeng",
       "label": "Håndgemeng",
       "type": "artist",
       "source": "tracks",
-      "at": 3062
+      "at": 3054.98
     },
     {
       "id": "imha-tarikat",
       "label": "Imha Tarikat",
       "type": "artist",
       "source": "tracks",
-      "at": 5841
+      "at": 5827.61
     },
     {
       "id": "macabre",
       "label": "Macabre",
       "type": "artist",
       "source": "tracks",
-      "at": 3733
+      "at": 3724.44
     },
     {
       "id": "mawiza",
       "label": "Mawiza",
       "type": "artist",
       "source": "tracks",
-      "at": 5388
+      "at": 5375.65
     },
     {
       "id": "paleface-swiss-stick-to-your-guns",
       "label": "Paleface Swiss & Stick to Your Guns",
       "type": "artist",
       "source": "tracks",
-      "at": 2790
+      "at": 2783.6
     },
     {
       "id": "zatokrev",
       "label": "Zatokrev",
       "type": "artist",
       "source": "tracks",
-      "at": 189
+      "at": 188.57
     },
     {
       "id": "inferno-festival",
       "label": "Inferno Festival",
       "type": "event",
       "source": "transcript",
-      "at": 76
+      "at": 75.83
     },
     {
       "id": "roadburn",
       "label": "Roadburn",
       "type": "event",
       "source": "transcript",
-      "at": 572
+      "at": 570.69
     },
     {
       "id": "mystic-festival",
       "label": "Mystic Festival",
       "type": "event",
       "source": "transcript",
-      "at": 1898
+      "at": 1893.65
     },
     {
       "id": "summer-punch",
       "label": "Summer Punch",
       "type": "event",
       "source": "transcript",
-      "at": 2658
+      "at": 2651.91
     },
     {
       "id": "copenhell",
       "label": "Copenhell",
       "type": "event",
       "source": "transcript",
-      "at": 2934
+      "at": 2927.27
     },
     {
       "id": "hell-s-bells-festival",
       "label": "Hell's Bells Festival",
       "type": "event",
       "source": "transcript",
-      "at": 3306
+      "at": 3298.42
     },
     {
       "id": "obscene-extreme",
       "label": "Obscene Extreme",
       "type": "event",
       "source": "transcript",
-      "at": 3650
+      "at": 3641.63
     },
     {
       "id": "poland-rock",
       "label": "Poland Rock",
       "type": "event",
       "source": "transcript",
-      "at": 4110
+      "at": 4100.58
     },
     {
       "id": "castle-party",
       "label": "Castle Party",
       "type": "event",
       "source": "transcript",
-      "at": 4115
+      "at": 4105.56
     },
     {
       "id": "off-festival",
       "label": "OFF Festival",
       "type": "event",
       "source": "transcript",
-      "at": 4122
+      "at": 4112.55
     },
     {
       "id": "brutal-assault",
       "label": "Brutal Assault",
       "type": "event",
       "source": "transcript",
-      "at": 4445
+      "at": 4434.81
     },
     {
       "id": "midgardsblot",
       "label": "Midgardsblot",
       "type": "event",
       "source": "transcript",
-      "at": 5305
+      "at": 5292.84
     },
     {
       "id": "summer-dying-loud",
       "label": "Summer Dying Loud",
       "type": "event",
       "source": "transcript",
-      "at": 5631
+      "at": 5618.09
     },
     {
       "id": "jarek-szubrycht",
@@ -246,9 +246,9 @@
   ],
   "tracks": [
     {
-      "start": 189,
-      "end": 572,
-      "durationSec": 384,
+      "start": 188.57,
+      "end": 570.69,
+      "durationSec": 383.12,
       "artist": "Zatokrev",
       "title": "Pearl Eyes",
       "album": "Bring Mirrors to the Surface",
@@ -259,9 +259,9 @@
       "links": []
     },
     {
-      "start": 740,
-      "end": 1898,
-      "durationSec": 1159,
+      "start": 738.3,
+      "end": 1893.65,
+      "durationSec": 1156.34,
       "artist": "Boris",
       "title": "Absolutego",
       "album": "Absolutego",
@@ -272,9 +272,9 @@
       "links": []
     },
     {
-      "start": 2092,
-      "end": 2658,
-      "durationSec": 567,
+      "start": 2087.2,
+      "end": 2651.91,
+      "durationSec": 565.7,
       "artist": "Corrosion of Conformity",
       "title": "Vote With a Bullet",
       "album": "Blind",
@@ -285,9 +285,9 @@
       "links": []
     },
     {
-      "start": 2790,
-      "end": 2934,
-      "durationSec": 146,
+      "start": 2783.6,
+      "end": 2927.27,
+      "durationSec": 145.67,
       "artist": "Paleface Swiss & Stick to Your Guns",
       "title": "Instrument Of War",
       "album": "The wilted - EP",
@@ -298,9 +298,9 @@
       "links": []
     },
     {
-      "start": 3062,
-      "end": 3306,
-      "durationSec": 246,
+      "start": 3054.98,
+      "end": 3298.42,
+      "durationSec": 245.44,
       "artist": "Håndgemeng",
       "title": "Satanic Panic Attack",
       "album": "Satanic Panic Attack",
@@ -311,9 +311,9 @@
       "links": []
     },
     {
-      "start": 3403,
-      "end": 3650,
-      "durationSec": 249,
+      "start": 3395.2,
+      "end": 3641.63,
+      "durationSec": 248.43,
       "artist": "Discharge",
       "title": "Protest And Survive",
       "album": "In The Cold Night - Toronto 1983",
@@ -324,9 +324,9 @@
       "links": []
     },
     {
-      "start": 3733,
-      "end": 4100,
-      "durationSec": 368,
+      "start": 3724.44,
+      "end": 4090.6,
+      "durationSec": 367.16,
       "artist": "Macabre",
       "title": "Jeffrey Dahmer Blues",
       "album": "Dahmer (Remastered)",
@@ -337,9 +337,9 @@
       "links": []
     },
     {
-      "start": 4200,
-      "end": 4445,
-      "durationSec": 246,
+      "start": 4190.37,
+      "end": 4434.81,
+      "durationSec": 245.44,
       "artist": "Chat Pile",
       "title": "The New World",
       "album": "Cool World",
@@ -350,9 +350,9 @@
       "links": []
     },
     {
-      "start": 4634,
-      "end": 5305,
-      "durationSec": 673,
+      "start": 4623.37,
+      "end": 5292.84,
+      "durationSec": 671.46,
       "artist": "Body Count",
       "title": "World War",
       "album": "Merciless",
@@ -363,9 +363,9 @@
       "links": []
     },
     {
-      "start": 5388,
-      "end": 5631,
-      "durationSec": 244,
+      "start": 5375.65,
+      "end": 5618.09,
+      "durationSec": 243.44,
       "artist": "Mawiza",
       "title": "Lhan Antü",
       "album": "Ül",
@@ -376,9 +376,9 @@
       "links": []
     },
     {
-      "start": 5841,
-      "end": 6851,
-      "durationSec": 1010,
+      "start": 5827.61,
+      "end": 6835.29,
+      "durationSec": 1007.68,
       "artist": "Imha Tarikat",
       "title": "Wicked Shrine",
       "album": "Confessing Darkness",
@@ -403,5 +403,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6851.056
 }

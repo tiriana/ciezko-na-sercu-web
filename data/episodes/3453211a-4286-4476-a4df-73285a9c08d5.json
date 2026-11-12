@@ -2,33 +2,33 @@
   "version": 1,
   "id": "3453211a-4286-4476-a4df-73285a9c08d5",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.790Z",
-  "durationSec": 7167,
+  "updatedAt": "2026-11-11T23:51:18.276Z",
+  "durationSec": 7150.628,
   "summary": "Odcinek poświęcony jest utworom uznawanym za zbyt długie lub zbyt wymagające na antenę: ambientowi, doom metalowi i dronowi. Otwiera go 24-minutowa wersja radiowa utworu z debiutanckiego albumu \"Tryton\" tria Pop Art Secessionists (Tomasz \"Lipa\" Lipnicki, Mauro Sambo, Tomasz Mądry), opisywanego jako odpowiedź na przyspieszone tempo współczesności i ćwiczenie w uważności. Dalej pojawia się utwór \"Circle\" otwierający \"The Maniacal Veil\" (2008), piątą, bardziej ucywilizowaną płytę zespołu Esoteric, który w ubiegłym roku wystąpił na festiwalu Summer Dying Loud. Z debiutanckiej płyty fińskiego zespołu doomowego Reverend Bizarre, działającego już nieistniejącego od prawie dwóch dekad, puszczony zostaje zamykający ją utwór o tematyce post-tolkienowskiej. W całości odtworzony zostaje też 21-minutowy mini-album \"I\" (2004) Meshuggah, nagrany między płytami \"Nothing\" i \"Catch 33\" — perkusista Thomas Haake opowiadał, że kompozycja powstała przypadkiem podczas wspólnego grania z gitarzystą Fredrikiem Thordendalem. Audycję zamyka utwór \"Novae\", kończący wyprodukowaną przez Steve'a Albiniego płytę \"Life Metal\" (2019) duetu Sunn O))) (Greg Anderson i Stephen O'Malley), przy okazji wspomniano też o nagranej z nimi płycie Scotta Walkera oraz o niezagranym dziś 50-minutowym utworze \"Jerusalem\" grupy Sleep.",
   "topics": [
     {
-      "start": 31,
-      "end": 152,
+      "start": 30.93,
+      "end": 151.65,
       "label": "Problemy z emisją bardzo długich, eksperymentalnych utworów w radiu"
     },
     {
-      "start": 152,
-      "end": 275,
+      "start": 151.65,
+      "end": 274.37,
       "label": "Prezentacja Pop Art Secessionists i ich debiutanckiego albumu Tryton"
     },
     {
-      "start": 1689.12,
-      "end": 1778,
+      "start": 1685.25,
+      "end": 1773.92,
       "label": "Metalowy utwór Circle zespołu The Manical Veil"
     },
     {
-      "start": 3019,
-      "end": 3099,
+      "start": 3012.08,
+      "end": 3091.89,
       "label": "Rewerent Bizarre – utwór Sirith Angle z albumu Indirectory of the Bizarre Reverent"
     },
     {
-      "start": 4468.21,
-      "end": 4530,
+      "start": 4457.96,
+      "end": 4519.61,
       "label": "Meshuga – mini‑album I oraz San – utwór Nowe z albumu Life Metal"
     }
   ],
@@ -38,14 +38,14 @@
       "label": "Esoteric",
       "type": "artist",
       "source": "tracks",
-      "at": 1778
+      "at": 1773.92
     },
     {
       "id": "i-feel-like-a-bombed-cathedral",
       "label": "I Feel Like a Bombed Cathedral",
       "type": "artist",
       "source": "tracks",
-      "at": 5911
+      "at": 5897.45
     },
     {
       "id": "jarek-szubrycht",
@@ -64,35 +64,35 @@
       "label": "Meshuggah",
       "type": "artist",
       "source": "tracks",
-      "at": 4530
+      "at": 4519.61
     },
     {
       "id": "reverend-bizarre",
       "label": "Reverend Bizarre",
       "type": "artist",
       "source": "tracks",
-      "at": 3099
+      "at": 3091.89
     },
     {
       "id": "the-manical-veil",
       "label": "The Manical Veil",
       "type": "artist",
       "source": "tracks",
-      "at": 275
+      "at": 274.37
     },
     {
       "id": "summer-dying-loud",
       "label": "Summer Dying Loud",
       "type": "event",
       "source": "transcript",
-      "at": 1746
+      "at": 1742
     }
   ],
   "tracks": [
     {
-      "start": 275,
-      "end": 1689.12,
-      "durationSec": 1416,
+      "start": 274.37,
+      "end": 1685.25,
+      "durationSec": 1412.75,
       "artist": "The Manical Veil",
       "title": "Circle",
       "album": null,
@@ -103,9 +103,9 @@
       "links": []
     },
     {
-      "start": 1778,
-      "end": 3019,
-      "durationSec": 1241,
+      "start": 1773.92,
+      "end": 3012.08,
+      "durationSec": 1238.15,
       "artist": "Esoteric",
       "title": "Circle",
       "album": "The Maniacal Vale",
@@ -116,9 +116,9 @@
       "links": []
     },
     {
-      "start": 3099,
-      "end": 4363.75,
-      "durationSec": 1266,
+      "start": 3091.89,
+      "end": 4353.74,
+      "durationSec": 1263.1,
       "artist": "Reverend Bizarre",
       "title": "Cirith Ungol (German Version)",
       "album": "In the Rectory of (German Version)",
@@ -130,9 +130,9 @@
       "links": []
     },
     {
-      "start": 4530,
-      "end": 5911,
-      "durationSec": 1257,
+      "start": 4519.61,
+      "end": 5897.45,
+      "durationSec": 1254.12,
       "artist": "Meshuggah",
       "title": "I (Remastered 2014)",
       "album": "I (Special Edition)",
@@ -143,9 +143,9 @@
       "links": []
     },
     {
-      "start": 5911,
-      "end": 7167,
-      "durationSec": 1256,
+      "start": 5897.45,
+      "end": 7150.57,
+      "durationSec": 1253.12,
       "artist": "I Feel Like a Bombed Cathedral",
       "title": "AmOrtH",
       "album": null,
@@ -158,11 +158,11 @@
   ],
   "quotes": [
     {
-      "start": 1701,
+      "start": 1697.1,
       "text": "Kolos, którego za chwilę wysłuchacie nosi tytuł Circle i otwiera The Manical Veil"
     },
     {
-      "start": 4400,
+      "start": 4389.91,
       "text": "Zagram za to w całości mini album szwedzkiej grupy Meshuga, zatytułowany I"
     }
   ],
@@ -170,14 +170,15 @@
     {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
-      "time": 14,
+      "time": 13.97,
       "quote": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht w imieniu własnym i Mariusza Owczarka, wydawcy audycji."
     },
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 14,
+      "time": 13.97,
       "quote": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht w imieniu własnym i Mariusza Owczarka, wydawcy audycji."
     }
-  ]
+  ],
+  "audioDurationSec": 7167.06
 }

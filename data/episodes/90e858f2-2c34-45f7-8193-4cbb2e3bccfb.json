@@ -2,8 +2,8 @@
   "version": 1,
   "id": "90e858f2-2c34-45f7-8193-4cbb2e3bccfb",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.810Z",
-  "durationSec": 7053,
+  "updatedAt": "2026-11-11T23:53:50.145Z",
+  "durationSec": 7053.528,
   "summary": "Jarek Szubrycht relacjonuje holenderski festiwal Roadburn 2026 w Tilburgu (16–19 kwietnia), opisując swoją subiektywną podróż przez liczne koncerty festiwalu bez tradycyjnych gwiazd. Omawia występy m.in. Crippling Alkoholizm, Acid Mother's Temple, Pain Magazine (debiut \"Violent God\", łączący Birds in Row z duetem Maelstrom and the Lewisach), Marudża (album \"Pain to Power\", wokalista Harry Wilkinson apelujący ze sceny o wolność dla Palestyny, Sudanu, Jemenu, Iranu i Ukrainy), Pix Pix Pix Pix Pix Pix Pix (cały album \"Death Hilarious\") oraz Unsane (cały album \"Occupational Hazard\" z 1998 roku), zestawiając ich losy z karierą Helmet. Chwali koncert Yellow Eyes, chłodniej ocenia część występów Krellis i Agriculture, a entuzjastyczny multimedialny spektakl Teardrinker (w obronie kobiet i społeczności LGBTQ+) przeciwstawia surowszemu Kowloon Walled City. Opisuje szwedzką supergrupę Buck and Grillen (Refused + Mats Gustafsson), jazzowy koncert 777 z Adrianem Utleyem i Sebastianem Rochfordem, shoegaze'owy set Nothing z wizualizacjami z ukraińskiego frontu oraz awangardowy spektakl Otajoni z trapezem i odniesieniami do wojny chińsko-japońskiej. Na koniec relacjonuje koncerty Primitive Man, Prostitute (debiut \"Attempted Martyr\" wznowiony przez wytwórnię Mute, wokalista Mo Kazra z Libanu), Portrayal of Guilt (tydzień później wydano album \"Beginning of the End\"), Inter Arma (cały mini-album \"The Cavern\") oraz finałowy koncert Boris, który zagrał w całości album \"Pink\".",
   "topics": [
     {
@@ -48,7 +48,7 @@
     },
     {
       "start": 685.39,
-      "end": 824,
+      "end": 824.01,
       "label": "Relacja z koncertów na Roadburn Festival"
     },
     {
@@ -78,28 +78,28 @@
       "label": "137",
       "type": "artist",
       "source": "tracks",
-      "at": 4548
+      "at": 4548.03
     },
     {
       "id": "acid-mothers-temple",
       "label": "Acid Mothers Temple",
       "type": "artist",
       "source": "tracks",
-      "at": 1248
+      "at": 1248.01
     },
     {
       "id": "boris",
       "label": "Boris",
       "type": "artist",
       "source": "tracks",
-      "at": 6888
+      "at": 6888.05
     },
     {
       "id": "crippling-alcoholism",
       "label": "Crippling Alcoholism",
       "type": "artist",
       "source": "tracks",
-      "at": 824
+      "at": 824.01
     },
     {
       "id": "cult-of-luna",
@@ -119,14 +119,14 @@
       "label": "Kiss the Anus of a Black Cat",
       "type": "artist",
       "source": "tracks",
-      "at": 6651
+      "at": 6651.05
     },
     {
       "id": "kowloon-walled-city",
       "label": "Kowloon Walled City",
       "type": "artist",
       "source": "tracks",
-      "at": 3689
+      "at": 3689.03
     },
     {
       "id": "mariusz-owczarek",
@@ -139,63 +139,63 @@
       "label": "Maruja",
       "type": "artist",
       "source": "tracks",
-      "at": 2049
+      "at": 2049.01
     },
     {
       "id": "nothing",
       "label": "Nothing",
       "type": "artist",
       "source": "tracks",
-      "at": 4856
+      "at": 4856.03
     },
     {
       "id": "otay-onii",
       "label": "Otay:onii",
       "type": "artist",
       "source": "tracks",
-      "at": 5399
+      "at": 5399.04
     },
     {
       "id": "pain-magazine-louisahhh-maelstrom",
       "label": "Pain Magazine, Louisahhh & Maelstrom",
       "type": "artist",
       "source": "tracks",
-      "at": 1674
+      "at": 1674.01
     },
     {
       "id": "pigs-pigs-pigs-pigs-pigs-pigs-pigs",
       "label": "Pigs Pigs Pigs Pigs Pigs Pigs Pigs",
       "type": "artist",
       "source": "tracks",
-      "at": 2368
+      "at": 2368.02
     },
     {
       "id": "primitive-man",
       "label": "Primitive Man",
       "type": "artist",
       "source": "tracks",
-      "at": 5700
+      "at": 5700.04
     },
     {
       "id": "prostitute",
       "label": "Prostitute",
       "type": "artist",
       "source": "tracks",
-      "at": 6119
+      "at": 6119.04
     },
     {
       "id": "unsane",
       "label": "Unsane",
       "type": "artist",
       "source": "tracks",
-      "at": 2807
+      "at": 2807.02
     },
     {
       "id": "yellow-eyes",
       "label": "Yellow Eyes",
       "type": "artist",
       "source": "tracks",
-      "at": 3169
+      "at": 3169.02
     },
     {
       "id": "roadburn-festival",
@@ -221,8 +221,8 @@
       "links": []
     },
     {
-      "start": 824,
-      "end": 1248,
+      "start": 824.01,
+      "end": 1248.01,
       "durationSec": 232,
       "artist": "Crippling Alcoholism",
       "title": "bedrot",
@@ -234,8 +234,8 @@
       "links": []
     },
     {
-      "start": 1248,
-      "end": 1674,
+      "start": 1248.01,
+      "end": 1674.01,
       "durationSec": 299,
       "artist": "Acid Mothers Temple",
       "title": "Iyomange Of The Rising Sun",
@@ -247,8 +247,8 @@
       "links": []
     },
     {
-      "start": 1674,
-      "end": 2049,
+      "start": 1674.01,
+      "end": 2049.01,
       "durationSec": 193,
       "artist": "Pain Magazine, Louisahhh & Maelstrom",
       "title": "Violent God (feat. Birds In Row & Quentin Sauvé)",
@@ -260,8 +260,8 @@
       "links": []
     },
     {
-      "start": 2049,
-      "end": 2344.71,
+      "start": 2049.01,
+      "end": 2344.73,
       "durationSec": 297,
       "artist": "Maruja",
       "title": "The Invisible Man",
@@ -273,8 +273,8 @@
       "links": []
     },
     {
-      "start": 2368,
-      "end": 2692.8,
+      "start": 2368.02,
+      "end": 2692.82,
       "durationSec": 326,
       "artist": "Pigs Pigs Pigs Pigs Pigs Pigs Pigs",
       "title": "Stitches",
@@ -286,8 +286,8 @@
       "links": []
     },
     {
-      "start": 2807,
-      "end": 3169,
+      "start": 2807.02,
+      "end": 3169.02,
       "durationSec": 160,
       "artist": "Unsane",
       "title": "Committed",
@@ -299,8 +299,8 @@
       "links": []
     },
     {
-      "start": 3169,
-      "end": 3596.26,
+      "start": 3169.02,
+      "end": 3596.29,
       "durationSec": 428,
       "artist": "Yellow Eyes",
       "title": "The Scent of Black Mud",
@@ -312,8 +312,8 @@
       "links": []
     },
     {
-      "start": 3689,
-      "end": 4548,
+      "start": 3689.03,
+      "end": 4548.03,
       "durationSec": 397,
       "artist": "Kowloon Walled City",
       "title": "Grievances",
@@ -325,8 +325,8 @@
       "links": []
     },
     {
-      "start": 4548,
-      "end": 4778.92,
+      "start": 4548.03,
+      "end": 4778.95,
       "durationSec": 233,
       "artist": "137",
       "title": "Drum and Sax",
@@ -338,8 +338,8 @@
       "links": []
     },
     {
-      "start": 4856,
-      "end": 5399,
+      "start": 4856.03,
+      "end": 5399.04,
       "durationSec": 318,
       "artist": "Nothing",
       "title": "Blue Mecca",
@@ -351,8 +351,8 @@
       "links": []
     },
     {
-      "start": 5399,
-      "end": 5654.56,
+      "start": 5399.04,
+      "end": 5654.6,
       "durationSec": 257,
       "artist": "Otay:onii",
       "title": "Love From Survivors",
@@ -364,8 +364,8 @@
       "links": []
     },
     {
-      "start": 5700,
-      "end": 6119,
+      "start": 5700.04,
+      "end": 6119.04,
       "durationSec": 295,
       "artist": "Primitive Man",
       "title": "My Will",
@@ -377,8 +377,8 @@
       "links": []
     },
     {
-      "start": 6119,
-      "end": 6651,
+      "start": 6119.04,
+      "end": 6651.05,
       "durationSec": 271,
       "artist": "Prostitute",
       "title": "All Hail",
@@ -390,8 +390,8 @@
       "links": []
     },
     {
-      "start": 6651,
-      "end": 6888,
+      "start": 6651.05,
+      "end": 6888.05,
       "durationSec": 115,
       "artist": "Kiss the Anus of a Black Cat",
       "title": "All Your Ghosts Are Worried",
@@ -403,8 +403,8 @@
       "links": []
     },
     {
-      "start": 6888,
-      "end": 7053,
+      "start": 6888.05,
+      "end": 7053.05,
       "durationSec": 166,
       "artist": "Boris",
       "title": "Afterburner",
@@ -435,5 +435,6 @@
       "time": 15,
       "quote": "oraz Mariusz Owczarek, który jest tej audycji wydawcą."
     }
-  ]
+  ],
+  "audioDurationSec": 7053.481
 }

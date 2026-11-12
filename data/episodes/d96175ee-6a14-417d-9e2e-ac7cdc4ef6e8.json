@@ -2,68 +2,68 @@
   "version": 1,
   "id": "d96175ee-6a14-417d-9e2e-ac7cdc4ef6e8",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.841Z",
-  "durationSec": 6902,
+  "updatedAt": "2026-11-11T23:55:38.477Z",
+  "durationSec": 6886.224,
   "summary": "Gościem odcinka jest Artur Rumiński, muzyk związany z zespołami ARM, Furia, Gruzja, TOW, Mentors i Griving oraz działalnością solową, który opowiada o charakterze i stanie prac nad każdym z tych projektów, w tym o nowej płycie ARM i planowanej płycie solowej. Wspomina swoją drogę muzyczną od punka i hardcore'u w Sosnowcu, przez grę w hardcore'owym zespole w Nowym Jorku, po dołączenie do Furii i rozwój jej brzmienia w stronę mniej konwencjonalnego black metalu. Szeroko omówiona jest teatralna przygoda Furii — udział w spektaklu „Wesele” w reżyserii Jana Klaty, zagranym po raz setny w Teatrze Narodowym w Warszawie — oraz udział zespołu Gruzja w spektaklu „Termopile polskie” Mieczyńskiego, również w reżyserii Klaty. Rumiński i prowadzący rozmawiają o najciekawszych płytach mijającego roku, wymieniając m.in. „In the Earth Again” Chat Pile i Haydena Pedigo, nowe albumy Rotten Sound i Coroner oraz odkrycia z katalogu wytwórni ECM Records, a także o koncertach zespołu Swans. Na koniec Rumiński wskazuje Black Sabbath, a konkretnie album „Paranoid”, jako najważniejszy punkt odniesienia w swojej muzycznej edukacji.",
   "topics": [
     {
-      "start": 610,
-      "end": 731,
+      "start": 608.6,
+      "end": 729.32,
       "label": "Project Mishram i metal łączony z muzyką karnatacką"
     },
     {
-      "start": 1269,
-      "end": 1406,
+      "start": 1266.09,
+      "end": 1402.78,
       "label": "Projekty: ARM, TOW, Furia, Mentors, Grieving, Gruzja, solo"
     },
     {
-      "start": 2084.74,
-      "end": 2346,
+      "start": 2079.96,
+      "end": 2340.62,
       "label": "Punkowo-hardcorowe początki, scena sosnowiecka, wyjazd do Nowego Jorku"
     },
     {
-      "start": 2346,
-      "end": 2505,
+      "start": 2340.62,
+      "end": 2499.26,
       "label": "Dołączenie do Furii i poszerzanie granic black metalu"
     },
     {
-      "start": 2505,
-      "end": 2544,
+      "start": 2499.26,
+      "end": 2538.17,
       "label": "Płyty Nocel i Księżyc milczy luty, otwarcie na eksperymenty"
     },
     {
-      "start": 3391.28,
-      "end": 3649,
+      "start": 3383.5,
+      "end": 3640.63,
       "label": "Wesele w Teatrze Starym i współpraca z Janem Klatą"
     },
     {
-      "start": 3649,
-      "end": 3782,
+      "start": 3640.63,
+      "end": 3773.33,
       "label": "Setny spektakl Wesela i nowa teatralna publiczność"
     },
     {
-      "start": 4005,
-      "end": 4288,
+      "start": 3995.82,
+      "end": 4278.17,
       "label": "Gruzja i Termopile Polskie w Teatrze Narodowym"
     },
     {
-      "start": 4753,
-      "end": 4934,
+      "start": 4742.1,
+      "end": 4922.69,
       "label": "Chat Pile i Hayden Pedigo, album In the Earth Again"
     },
     {
-      "start": 4934,
-      "end": 5157,
+      "start": 4922.69,
+      "end": 5145.17,
       "label": "Podsumowania roku, płyty Koronera i Swans"
     },
     {
-      "start": 5513,
-      "end": 5862,
+      "start": 5500.36,
+      "end": 5848.56,
       "label": "Nadmiar współczesnej muzyki i poszukiwanie nowych dźwięków"
     },
     {
-      "start": 5862,
-      "end": 5946,
+      "start": 5848.56,
+      "end": 5932.37,
       "label": "Black Sabbath i Paranoid jako najważniejsze źródło"
     }
   ],
@@ -73,70 +73,70 @@
       "label": "ARRM",
       "type": "artist",
       "source": "tracks",
-      "at": 1406
+      "at": 1402.78
     },
     {
       "id": "black-sabbath",
       "label": "Black Sabbath",
       "type": "artist",
       "source": "tracks",
-      "at": 5946
+      "at": 5932.37
     },
     {
       "id": "coroner",
       "label": "Coroner",
       "type": "artist",
       "source": "tracks",
-      "at": 5157
+      "at": 5145.17
     },
     {
       "id": "danger-mouse-sparklehorse",
       "label": "Danger Mouse & Sparklehorse",
       "type": "artist",
       "source": "tracks",
-      "at": 6339
+      "at": 6324.46
     },
     {
       "id": "furia",
       "label": "Furia",
       "type": "artist",
       "source": "tracks",
-      "at": 2544
+      "at": 2538.17
     },
     {
       "id": "gruzja",
       "label": "Gruzja",
       "type": "artist",
       "source": "tracks",
-      "at": 3782
+      "at": 3773.33
     },
     {
       "id": "project-mishram",
       "label": "Project Mishram",
       "type": "artist",
       "source": "tracks",
-      "at": 91
+      "at": 90.79
     },
     {
       "id": "thaw",
       "label": "Thaw",
       "type": "artist",
       "source": "tracks",
-      "at": 4288
+      "at": 4278.17
     },
     {
       "id": "artur-ruminski",
       "label": "Artur Rumiński",
       "type": "person",
       "source": "credits",
-      "at": 1159
+      "at": 1156.34
     },
     {
       "id": "koncert-swans",
       "label": "Swans",
       "type": "concert",
       "source": "transcript",
-      "at": 5056
+      "at": 5044.41
     },
     {
       "id": "jarek-szubrycht",
@@ -153,9 +153,9 @@
   ],
   "tracks": [
     {
-      "start": 91,
-      "end": 500.74,
-      "durationSec": 411,
+      "start": 90.79,
+      "end": 499.59,
+      "durationSec": 410.06,
       "artist": "Project Mishram",
       "title": "Tamasat",
       "album": "Tamasat - Single",
@@ -166,9 +166,9 @@
       "links": []
     },
     {
-      "start": 548,
-      "end": 610,
-      "durationSec": 63,
+      "start": 546.74,
+      "end": 608.6,
+      "durationSec": 62.86,
       "artist": "Project Mishram",
       "title": "Tamasat",
       "album": "Tamasat - Single",
@@ -179,9 +179,9 @@
       "links": []
     },
     {
-      "start": 731,
-      "end": 1269,
-      "durationSec": 386,
+      "start": 729.32,
+      "end": 1266.09,
+      "durationSec": 385.11,
       "artist": "Project Mishram",
       "title": "LIBERATE",
       "album": "LIBERATE - Single",
@@ -192,9 +192,9 @@
       "links": []
     },
     {
-      "start": 1406,
-      "end": 2084.74,
-      "durationSec": 680,
+      "start": 1402.78,
+      "end": 2079.96,
+      "durationSec": 678.44,
       "artist": "ARRM",
       "title": "Birth (feat. Wacław Zimpel)",
       "album": "II",
@@ -205,9 +205,9 @@
       "links": []
     },
     {
-      "start": 2544,
-      "end": 3391.28,
-      "durationSec": 847,
+      "start": 2538.17,
+      "end": 3383.5,
+      "durationSec": 845.06,
       "artist": "Furia",
       "title": "Tam Jest Tu",
       "album": "Księżyc Milczy Luty",
@@ -218,9 +218,9 @@
       "links": []
     },
     {
-      "start": 3782,
-      "end": 4005,
-      "durationSec": 225,
+      "start": 3773.33,
+      "end": 3995.82,
+      "durationSec": 224.48,
       "artist": "Gruzja",
       "title": "Aleksandria",
       "album": "Koniec Wakacji",
@@ -231,9 +231,9 @@
       "links": []
     },
     {
-      "start": 4288,
-      "end": 4753,
-      "durationSec": 466,
+      "start": 4278.17,
+      "end": 4742.1,
+      "durationSec": 464.93,
       "artist": "Thaw",
       "title": "In the Laughter and the Stride",
       "album": "Fading Backwards",
@@ -244,9 +244,9 @@
       "links": []
     },
     {
-      "start": 5157,
-      "end": 5513,
-      "durationSec": 357,
+      "start": 5145.17,
+      "end": 5500.36,
+      "durationSec": 356.18,
       "artist": "Coroner",
       "title": "Sacrificial Lamb",
       "album": "Dissonance Theory",
@@ -257,9 +257,9 @@
       "links": []
     },
     {
-      "start": 5946,
-      "end": 6224.13,
-      "durationSec": 279,
+      "start": 5932.37,
+      "end": 6209.86,
+      "durationSec": 278.36,
       "artist": "Black Sabbath",
       "title": "Electric Funeral",
       "album": "Paranoid",
@@ -270,9 +270,9 @@
       "links": []
     },
     {
-      "start": 6339,
-      "end": 6902,
-      "durationSec": 563,
+      "start": 6324.46,
+      "end": 6886.17,
+      "durationSec": 561.71,
       "artist": "Danger Mouse & Sparklehorse",
       "title": "Revenge (feat. The Flaming Lips)",
       "album": "Dark Night of the Soul",
@@ -300,8 +300,9 @@
     {
       "role": "gość",
       "name": "Artur Rumiński",
-      "time": 1159,
+      "time": 1156.34,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6902.047
 }

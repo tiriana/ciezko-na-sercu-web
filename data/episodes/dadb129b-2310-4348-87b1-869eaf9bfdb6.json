@@ -2,68 +2,68 @@
   "version": 1,
   "id": "dadb129b-2310-4348-87b1-869eaf9bfdb6",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.886Z",
-  "durationSec": 6860,
+  "updatedAt": "2026-11-11T23:58:14.058Z",
+  "durationSec": 6844.315,
   "summary": "Odcinek zapowiada Mystic Festival 2025 w gdańskiej stoczni (start 5 czerwca) i skupia się na mniej oczywistych punktach jego programu. Wśród nich wymieniono Turbonegro i Eagles of Death Metal, Arthura Browna — występującego tuż przed 83. urodzinami prekursora scenicznego makijażu i płonącego hełmu — Suicidal Tendencies oraz hołd dla Bathory pod szyldem Blood Fire Death, zagrany przez supergrupę z muzykami Mayhem, Emperor, Enslaved i Aura Noir. Przypomniano historię fińskiego Beherit, które po dekadach poza głównym obiegiem wróciło do rzadkich koncertów, i zapowiedziano jego występ w Gdańsku; z polskich artystów wyróżniono Vader (pełne Litany oraz wystawa o historii zespołu) i wywodzący się ze sceny trójmiejskiej Here. Druga część to przegląd czerwcowych koncertów w Polsce: The Cult, Soulfly i Sacred Reich w Poznaniu, Airbourne w Warszawie oraz Lorna Shore we Wrocławiu. Omówiono też festiwale Ephemera i Black Silesia, trasy Coilguns i Black Magic Tour, Church of Doom oraz koncerty Incantation, Avenged Sevenfold, Dream Theater, Sólstafir, Steve'a von Tilla i zestaw Powerwolf–Epica–DragonForce.",
   "topics": [
     {
-      "start": 161,
-      "end": 277,
+      "start": 160.63,
+      "end": 276.36,
       "label": "Mystic Festival 2025, Turbonegro i Eagles of Death Metal"
     },
     {
-      "start": 442.8,
-      "end": 599,
+      "start": 441.78,
+      "end": 597.63,
       "label": "Arthur Brown i jego festiwalowy rekord"
     },
     {
-      "start": 744,
-      "end": 888,
+      "start": 742.29,
+      "end": 885.96,
       "label": "Blood Fire Death: hołd dla Bathory i Quorthona"
     },
     {
-      "start": 1162,
-      "end": 1324,
+      "start": 1159.34,
+      "end": 1320.96,
       "label": "Beherit i powrót fińskiej legendy black metalu"
     },
     {
-      "start": 1586,
-      "end": 1704,
+      "start": 1582.36,
+      "end": 1700.09,
       "label": "Suicidal Tendencies i 'Send Me Your Money'"
     },
     {
-      "start": 1902,
-      "end": 2030,
+      "start": 1897.64,
+      "end": 2025.35,
       "label": "Vader, Here, Prydian i Intrepid na Mysticu"
     },
     {
-      "start": 2526,
-      "end": 2619,
+      "start": 2520.21,
+      "end": 2612.99,
       "label": "Poznań 9 czerwca: The Cult, Sacred Reich i Soulfly"
     },
     {
-      "start": 3334,
-      "end": 3410,
+      "start": 3326.36,
+      "end": 3402.18,
       "label": "Airbourne w Warszawie i Lorna Shore we Wrocławiu"
     },
     {
-      "start": 4106,
-      "end": 4189,
+      "start": 4096.58,
+      "end": 4179.39,
       "label": "Ephemera w Warszawie i dronmetalowy SUN"
     },
     {
-      "start": 4745.12,
-      "end": 4834,
+      "start": 4734.24,
+      "end": 4822.92,
       "label": "Black Silesia w Byczynie i 40-lecie Onslaughta"
     },
     {
-      "start": 5450,
-      "end": 5495,
+      "start": 5437.5,
+      "end": 5482.4,
       "label": "Trasy Coilguns oraz Hydry i Sautrusa po Polsce"
     },
     {
-      "start": 6224,
-      "end": 6303,
+      "start": 6209.73,
+      "end": 6288.55,
       "label": "Incantation, Steve von Till, Sólstafir i Powerwolf"
     }
   ],
@@ -73,301 +73,301 @@
       "label": "Bathory",
       "type": "artist",
       "source": "tracks",
-      "at": 888
+      "at": 885.96
     },
     {
       "id": "beherit",
       "label": "Beherit",
       "type": "artist",
       "source": "tracks",
-      "at": 1324
+      "at": 1320.96
     },
     {
       "id": "eagles-of-death-metal",
       "label": "Eagles of Death Metal",
       "type": "artist",
       "source": "tracks",
-      "at": 277
+      "at": 276.36
     },
     {
       "id": "fit-for-an-autopsy",
       "label": "Fit for An Autopsy",
       "type": "artist",
       "source": "tracks",
-      "at": 3919
+      "at": 3910.01
     },
     {
       "id": "her",
       "label": "Hér",
       "type": "artist",
       "source": "tracks",
-      "at": 2030
+      "at": 2025.35
     },
     {
       "id": "hydra",
       "label": "Hydra",
       "type": "artist",
       "source": "tracks",
-      "at": 5773
+      "at": 5759.76
     },
     {
       "id": "incantation",
       "label": "Incantation",
       "type": "artist",
       "source": "tracks",
-      "at": 6303
+      "at": 6288.55
     },
     {
       "id": "lorna-shore",
       "label": "Lorna Shore",
       "type": "artist",
       "source": "tracks",
-      "at": 3410
+      "at": 3402.18
     },
     {
       "id": "onslaught",
       "label": "Onslaught",
       "type": "artist",
       "source": "tracks",
-      "at": 5049
+      "at": 5037.42
     },
     {
       "id": "pridian",
       "label": "Pridian",
       "type": "artist",
       "source": "tracks",
-      "at": 2207
+      "at": 2201.94
     },
     {
       "id": "sabbat",
       "label": "Sabbat",
       "type": "artist",
       "source": "tracks",
-      "at": 4834
+      "at": 4822.92
     },
     {
       "id": "scott-walker-sunn-o",
       "label": "Scott Walker & sunn O)))",
       "type": "artist",
       "source": "tracks",
-      "at": 4189
+      "at": 4179.39
     },
     {
       "id": "steve-von-till",
       "label": "Steve Von Till",
       "type": "artist",
       "source": "tracks",
-      "at": 6615
+      "at": 6599.83
     },
     {
       "id": "suicidal-tendencies",
       "label": "Suicidal Tendencies",
       "type": "artist",
       "source": "tracks",
-      "at": 1704
+      "at": 1700.09
     },
     {
       "id": "the-crazy-world-of-arthur-brown",
       "label": "The Crazy World of Arthur Brown",
       "type": "artist",
       "source": "tracks",
-      "at": 599
+      "at": 597.63
     },
     {
       "id": "the-cult",
       "label": "The Cult",
       "type": "artist",
       "source": "tracks",
-      "at": 2619
+      "at": 2612.99
     },
     {
       "id": "turbonegro",
       "label": "Turbonegro",
       "type": "artist",
       "source": "tracks",
-      "at": 38
+      "at": 37.91
     },
     {
       "id": "why-bother",
       "label": "Why Bother",
       "type": "artist",
       "source": "tracks",
-      "at": 5495
+      "at": 5482.4
     },
     {
       "id": "mystic-festival-2025",
       "label": "Mystic Festival 2025",
       "type": "event",
       "source": "transcript",
-      "at": 161
+      "at": 160.63
     },
     {
       "id": "koncert-koncert-vadera-ktory-zainspirowal-nazwe-eagles-of-death-metal",
       "label": "Koncert Vadera, który zainspirował nazwę Eagles of Death Metal",
       "type": "concert",
       "source": "transcript",
-      "at": 251
+      "at": 250.42
     },
     {
       "id": "beyond-the-gates",
       "label": "Beyond the Gates",
       "type": "event",
       "source": "transcript",
-      "at": 765
+      "at": 763.25
     },
     {
       "id": "koncert-blood-fire-death-a-tribute-to-quorthon-and-the-music-of-bathory",
       "label": "Blood Fire Death – A Tribute to Quorthon and the Music of Bathory",
       "type": "concert",
       "source": "transcript",
-      "at": 790
+      "at": 788.19
     },
     {
       "id": "koncert-vader-litany-i-wystawa-o-historii-zespolu",
       "label": "Vader – Litany i wystawa o historii zespołu",
       "type": "concert",
       "source": "transcript",
-      "at": 1902
+      "at": 1897.64
     },
     {
       "id": "koncert-the-cult",
       "label": "The Cult",
       "type": "concert",
       "source": "transcript",
-      "at": 2526
+      "at": 2520.21
     },
     {
       "id": "koncert-sacred-reich",
       "label": "Sacred Reich",
       "type": "concert",
       "source": "transcript",
-      "at": 2565
+      "at": 2559.12
     },
     {
       "id": "koncert-soulfly",
       "label": "Soulfly",
       "type": "concert",
       "source": "transcript",
-      "at": 2580
+      "at": 2574.08
     },
     {
       "id": "koncert-airbourne-z-creeper-i-house-of-protection",
       "label": "Airbourne z Creeper i House of Protection",
       "type": "concert",
       "source": "transcript",
-      "at": 3334
+      "at": 3326.36
     },
     {
       "id": "koncert-lorna-shore-z-fit-for-an-autopsy-i-signs-of-the-storm",
       "label": "Lorna Shore z Fit for an Autopsy i Signs of the Storm",
       "type": "concert",
       "source": "transcript",
-      "at": 3356
+      "at": 3348.3
     },
     {
       "id": "koncert-fit-for-an-autopsy-i-signs-of-the-storm",
       "label": "Fit for an Autopsy i Signs of the Storm",
       "type": "concert",
       "source": "transcript",
-      "at": 3893
+      "at": 3884.07
     },
     {
       "id": "ephemera",
       "label": "Ephemera",
       "type": "event",
       "source": "transcript",
-      "at": 4106
+      "at": 4096.58
     },
     {
       "id": "unsound",
       "label": "Unsound",
       "type": "event",
       "source": "transcript",
-      "at": 4106
+      "at": 4096.58
     },
     {
       "id": "black-silesia",
       "label": "Black Silesia",
       "type": "event",
       "source": "transcript",
-      "at": 4759
+      "at": 4748.09
     },
     {
       "id": "koncert-onslaught-40-lecie-power-from-hell",
       "label": "Onslaught – 40-lecie Power From Hell",
       "type": "concert",
       "source": "transcript",
-      "at": 5014
+      "at": 5002.5
     },
     {
       "id": "koncert-trasa-coilguns",
       "label": "Trasa Coilguns",
       "type": "concert",
       "source": "transcript",
-      "at": 5450
+      "at": 5437.5
     },
     {
       "id": "koncert-black-magic-tour-hydra-i-sautrus",
       "label": "Black Magic Tour – Hydra i Sautrus",
       "type": "concert",
       "source": "transcript",
-      "at": 5696
+      "at": 5682.94
     },
     {
       "id": "church-of-doom-4",
       "label": "Church of Doom #4",
       "type": "event",
       "source": "transcript",
-      "at": 5739
+      "at": 5725.84
     },
     {
       "id": "koncert-incantation-z-morat",
       "label": "Incantation z Morat",
       "type": "concert",
       "source": "transcript",
-      "at": 6224
+      "at": 6209.73
     },
     {
       "id": "koncert-poison-ruin",
       "label": "Poison Ruin",
       "type": "concert",
       "source": "transcript",
-      "at": 6243
+      "at": 6228.68
     },
     {
       "id": "koncert-avenged-sevenfold-z-palais-royal",
       "label": "Avenged Sevenfold z Palais Royal",
       "type": "concert",
       "source": "transcript",
-      "at": 6252
+      "at": 6237.66
     },
     {
       "id": "koncert-dream-theater",
       "label": "Dream Theater",
       "type": "concert",
       "source": "transcript",
-      "at": 6282
+      "at": 6267.6
     },
     {
       "id": "koncert-steve-von-till",
       "label": "Steve von Till",
       "type": "concert",
       "source": "transcript",
-      "at": 6509
+      "at": 6494.07
     },
     {
       "id": "koncert-solstafir",
       "label": "Sólstafir",
       "type": "concert",
       "source": "transcript",
-      "at": 6534
+      "at": 6519.02
     },
     {
       "id": "koncert-powerwolf-epica-i-dragonforce",
       "label": "Powerwolf, Epica i DragonForce",
       "type": "concert",
       "source": "transcript",
-      "at": 6569
+      "at": 6553.94
     },
     {
       "id": "jarek-szubrycht",
@@ -384,9 +384,9 @@
   ],
   "tracks": [
     {
-      "start": 38,
-      "end": 161,
-      "durationSec": 125,
+      "start": 37.91,
+      "end": 160.63,
+      "durationSec": 124.71,
       "artist": "Turbonegro",
       "title": "All My Friends Are Dead",
       "album": "Party Animals",
@@ -397,9 +397,9 @@
       "links": []
     },
     {
-      "start": 277,
-      "end": 442.8,
-      "durationSec": 167,
+      "start": 276.36,
+      "end": 441.78,
+      "durationSec": 166.62,
       "artist": "Eagles of Death Metal",
       "title": "Don't Speak (I Came To Make a Bang!)",
       "album": "Death By Sexy",
@@ -410,9 +410,9 @@
       "links": []
     },
     {
-      "start": 599,
-      "end": 744,
-      "durationSec": 146,
+      "start": 597.63,
+      "end": 742.29,
+      "durationSec": 145.67,
       "artist": "The Crazy World of Arthur Brown",
       "title": "Fire",
       "album": "The Crazy World of Arthur Brown",
@@ -423,9 +423,9 @@
       "links": []
     },
     {
-      "start": 888,
-      "end": 1162,
-      "durationSec": 276,
+      "start": 885.96,
+      "end": 1159.34,
+      "durationSec": 275.37,
       "artist": "Bathory",
       "title": "Call from the Grave",
       "album": "Under the Sign of the Black Mark",
@@ -436,9 +436,9 @@
       "links": []
     },
     {
-      "start": 1324,
-      "end": 1586,
-      "durationSec": 263,
+      "start": 1320.96,
+      "end": 1582.36,
+      "durationSec": 262.4,
       "artist": "Beherit",
       "title": "The Gate of Inanna",
       "album": "H418ov21.c + Electric Doom Synthesis",
@@ -449,9 +449,9 @@
       "links": []
     },
     {
-      "start": 1704,
-      "end": 1902,
-      "durationSec": 200,
+      "start": 1700.09,
+      "end": 1897.64,
+      "durationSec": 199.54,
       "artist": "Suicidal Tendencies",
       "title": "Send Me Your Money",
       "album": "Lights... Camera... Revolution",
@@ -462,9 +462,9 @@
       "links": []
     },
     {
-      "start": 2030,
-      "end": 2154.21,
-      "durationSec": 125,
+      "start": 2025.35,
+      "end": 2149.27,
+      "durationSec": 124.71,
       "artist": "Hér",
       "title": "Patience in Observation",
       "album": "Monochrome",
@@ -475,9 +475,9 @@
       "links": []
     },
     {
-      "start": 2207,
-      "end": 2526,
-      "durationSec": 320,
+      "start": 2201.94,
+      "end": 2520.21,
+      "durationSec": 319.27,
       "artist": "Pridian",
       "title": "Out for Blood",
       "album": "Venetian Dark",
@@ -488,9 +488,9 @@
       "links": []
     },
     {
-      "start": 2619,
-      "end": 3334,
-      "durationSec": 717,
+      "start": 2612.99,
+      "end": 3326.36,
+      "durationSec": 715.36,
       "artist": "The Cult",
       "title": "Rise",
       "album": "Beyond Good and Evil",
@@ -501,9 +501,9 @@
       "links": []
     },
     {
-      "start": 3410,
-      "end": 3892.64,
-      "durationSec": 484,
+      "start": 3402.18,
+      "end": 3883.71,
+      "durationSec": 482.89,
       "artist": "Lorna Shore",
       "title": "Oblivion",
       "album": "I Feel The Everblack Festering Within Me",
@@ -514,9 +514,9 @@
       "links": []
     },
     {
-      "start": 3919,
-      "end": 4106,
-      "durationSec": 189,
+      "start": 3910.01,
+      "end": 4096.58,
+      "durationSec": 188.57,
       "artist": "Fit for An Autopsy",
       "title": "Lower Purpose",
       "album": "The Nothing That Is",
@@ -527,9 +527,9 @@
       "links": []
     },
     {
-      "start": 4189,
-      "end": 4285.54,
-      "durationSec": 98,
+      "start": 4179.39,
+      "end": 4275.71,
+      "durationSec": 97.78,
       "artist": "Scott Walker & sunn O)))",
       "title": "Lullaby",
       "album": "Soused",
@@ -540,9 +540,9 @@
       "links": []
     },
     {
-      "start": 4349,
-      "end": 4500.9,
-      "durationSec": 153,
+      "start": 4339.03,
+      "end": 4490.58,
+      "durationSec": 152.65,
       "artist": "Scott Walker & sunn O)))",
       "title": "Lullaby",
       "album": "Soused",
@@ -553,9 +553,9 @@
       "links": []
     },
     {
-      "start": 4568,
-      "end": 4745.12,
-      "durationSec": 179,
+      "start": 4557.53,
+      "end": 4734.24,
+      "durationSec": 178.59,
       "artist": "Scott Walker & sunn O)))",
       "title": "Lullaby",
       "album": "Soused",
@@ -566,9 +566,9 @@
       "links": []
     },
     {
-      "start": 4834,
-      "end": 5013.54,
-      "durationSec": 181,
+      "start": 4822.92,
+      "end": 5002.04,
+      "durationSec": 180.58,
       "artist": "Sabbat",
       "title": "Satan Bless You",
       "album": "Envenom",
@@ -579,9 +579,9 @@
       "links": []
     },
     {
-      "start": 5049,
-      "end": 5450,
-      "durationSec": 401,
+      "start": 5037.42,
+      "end": 5437.5,
+      "durationSec": 400.08,
       "artist": "Onslaught",
       "title": "Power from Hell (2025 Re-Recording)",
       "album": "Origins Of Aggression",
@@ -592,9 +592,9 @@
       "links": []
     },
     {
-      "start": 5495,
-      "end": 5696.04,
-      "durationSec": 203,
+      "start": 5482.4,
+      "end": 5682.98,
+      "durationSec": 202.53,
       "artist": "Why Bother",
       "title": "Smycz",
       "album": "II",
@@ -605,9 +605,9 @@
       "links": []
     },
     {
-      "start": 5773,
-      "end": 6224,
-      "durationSec": 453,
+      "start": 5759.76,
+      "end": 6209.73,
+      "durationSec": 451.96,
       "artist": "Hydra",
       "title": "When The Devil's Coming Down",
       "album": "From Light To The Abyss",
@@ -618,9 +618,9 @@
       "links": []
     },
     {
-      "start": 6303,
-      "end": 6508.87,
-      "durationSec": 208,
+      "start": 6288.55,
+      "end": 6493.95,
+      "durationSec": 207.52,
       "artist": "Incantation",
       "title": "Golgotha",
       "album": "Onward to Golgotha",
@@ -631,9 +631,9 @@
       "links": []
     },
     {
-      "start": 6615,
-      "end": 6860,
-      "durationSec": 245,
+      "start": 6599.83,
+      "end": 6844.27,
+      "durationSec": 244.44,
       "artist": "Steve Von Till",
       "title": "Calling Down the Darkness",
       "album": "Alone in a World of Wounds",
@@ -658,5 +658,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6860.043
 }

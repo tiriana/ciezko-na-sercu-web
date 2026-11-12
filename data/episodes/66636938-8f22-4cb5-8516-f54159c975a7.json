@@ -2,68 +2,68 @@
   "version": 1,
   "id": "66636938-8f22-4cb5-8516-f54159c975a7",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.785Z",
-  "durationSec": 7216,
+  "updatedAt": "2026-11-11T23:50:52.839Z",
+  "durationSec": 7199.521,
   "summary": "Audycja w całości poświęcona była amerykańskiej scenie black metalowej, oprowadzanej wokół książki Daniela Lake'a \"USBM. Amerykański black metal. Rewolucja tożsamości\" (wyd. Inrock). Omówiono m.in. Acheron, Von, Apsu, Grand Belial's Key i Profanaticę (Paul Ledney) jako pionierów gatunku, a także Leviathana (Jef Whitehead) jako czołową postać sceny. Przedstawiono Xasthura (Scott Conner), który po latach black metalu przeszedł w stronę mrocznego folku i zapowiada na październik album \"Open to Misinterpretation\", oraz Usurper z Chicago grający klasyczny, surowy metal. Osobno omówiono Cobalt (zmarły rok wcześniej lider Erik Wunder), Wolves in the Throne Room (bracia Weaver i ich związek z naturą), Panopticon (Austin Lunn, albumy Kentucky i Laurentian Blue łączące black metal z folkiem i tematyką robotniczą), Liturgy oraz Deafheaven i ich album Sunbather, który wywołał spór o przynależność gatunkową. Na koniec wymieniono zespoły pominięte w książce lub debiutujące później: Yellow Eyes, Nechochwen i Black Braid.",
   "topics": [
     {
       "start": 0,
-      "end": 141,
+      "end": 140.68,
       "label": "Książka Daniela Lake'a o amerykańskim black metalu i teza o braku jednego brzmienia"
     },
     {
-      "start": 141,
-      "end": 173,
+      "start": 140.68,
+      "end": 172.6,
       "label": "Absu — mitologia, okultyzm i formuła Proscriptora"
     },
     {
-      "start": 840,
-      "end": 1016,
+      "start": 838.07,
+      "end": 1013.67,
       "label": "Profanatica Paula Ledneya jako sprzeciw wobec norweskiego wzorca"
     },
     {
-      "start": 1117,
-      "end": 1356,
+      "start": 1114.44,
+      "end": 1352.89,
       "label": "Leviathan i muzyka nagrywana w pojedynkę, metodą prób i błędów"
     },
     {
-      "start": 1819,
-      "end": 1981,
+      "start": 1814.83,
+      "end": 1976.46,
       "label": "Xasthur, czyli Scott Conner, i odejście od black metalu"
     },
     {
-      "start": 2231,
-      "end": 2343,
+      "start": 2225.88,
+      "end": 2337.63,
       "label": "Usurper i powrót do estetyki wczesnych lat 80."
     },
     {
-      "start": 2672,
-      "end": 2798,
+      "start": 2665.87,
+      "end": 2791.58,
       "label": "Cobalt i album „Gin” jako opus magnum"
     },
     {
-      "start": 3233,
-      "end": 3433,
+      "start": 3225.59,
+      "end": 3425.13,
       "label": "Wolves in the Throne Room — zwrot ku naturze i życiu z dala od miasta"
     },
     {
-      "start": 4046,
-      "end": 4262,
+      "start": 4036.72,
+      "end": 4252.23,
       "label": "Panopticon, „Kentucky” i „Laurentian Blue”: black metal o klasie robotniczej"
     },
     {
-      "start": 4451,
-      "end": 4605,
+      "start": 4440.79,
+      "end": 4594.44,
       "label": "Liturgy i spór o granice gatunku"
     },
     {
-      "start": 4962,
-      "end": 5082,
+      "start": 4950.62,
+      "end": 5070.35,
       "label": "Deafheaven i „Sunbather” — akceptacja poza metalem, wrogość w środku"
     },
     {
-      "start": 5758,
-      "end": 5836,
+      "start": 5744.8,
+      "end": 5822.62,
       "label": "Zespoły pominięte w książce: Yellow Eyes, Nechochwen, Black Braid"
     }
   ],
@@ -73,98 +73,98 @@
       "label": "Absu",
       "type": "artist",
       "source": "tracks",
-      "at": 511
+      "at": 509.83
     },
     {
       "id": "acheron",
       "label": "Acheron",
       "type": "artist",
       "source": "tracks",
-      "at": 173
+      "at": 172.6
     },
     {
       "id": "cobalt",
       "label": "Cobalt",
       "type": "artist",
       "source": "tracks",
-      "at": 2798
+      "at": 2791.58
     },
     {
       "id": "deafheaven",
       "label": "Deafheaven",
       "type": "artist",
       "source": "tracks",
-      "at": 5082
+      "at": 5070.35
     },
     {
       "id": "leviathan",
       "label": "Leviathan",
       "type": "artist",
       "source": "tracks",
-      "at": 1356
+      "at": 1352.89
     },
     {
       "id": "liturgy",
       "label": "Liturgy",
       "type": "artist",
       "source": "tracks",
-      "at": 4605
+      "at": 4594.44
     },
     {
       "id": "panopticon",
       "label": "Panopticon",
       "type": "artist",
       "source": "tracks",
-      "at": 4262
+      "at": 4252.23
     },
     {
       "id": "profanatica",
       "label": "Profanatica",
       "type": "artist",
       "source": "tracks",
-      "at": 1016
+      "at": 1013.67
     },
     {
       "id": "usurper",
       "label": "Usurper",
       "type": "artist",
       "source": "tracks",
-      "at": 2343
+      "at": 2337.63
     },
     {
       "id": "wolves-in-the-throne-room",
       "label": "Wolves in the Throne Room",
       "type": "artist",
       "source": "tracks",
-      "at": 3433
+      "at": 3425.13
     },
     {
       "id": "xasthur",
       "label": "Xasthur",
       "type": "artist",
       "source": "tracks",
-      "at": 1981
+      "at": 1976.46
     },
     {
       "id": "yellow-eyes",
       "label": "Yellow Eyes",
       "type": "artist",
       "source": "tracks",
-      "at": 5836
+      "at": 5822.62
     },
     {
       "id": "usbm-amerykanski-black-metal-rewolucja-tozsamosci",
       "label": "USBM. Amerykański black metal. Rewolucja tożsamości",
       "type": "work",
       "source": "transcript",
-      "at": 41
+      "at": 40.91
     },
     {
       "id": "roadburn",
       "label": "Roadburn",
       "type": "event",
       "source": "transcript",
-      "at": 5804
+      "at": 5790.69
     },
     {
       "id": "jarek-szubrycht",
@@ -181,9 +181,9 @@
   ],
   "tracks": [
     {
-      "start": 173,
-      "end": 420.36,
-      "durationSec": 249,
+      "start": 172.6,
+      "end": 419.4,
+      "durationSec": 248.43,
       "artist": "Acheron",
       "title": "Thou Art Lord",
       "album": "Compendium Diablerie: The Demo Days",
@@ -194,9 +194,9 @@
       "links": []
     },
     {
-      "start": 511,
-      "end": 840,
-      "durationSec": 330,
+      "start": 509.83,
+      "end": 838.07,
+      "durationSec": 329.24,
       "artist": "Absu",
       "title": "Manannan",
       "album": "Tara",
@@ -207,9 +207,9 @@
       "links": []
     },
     {
-      "start": 1016,
-      "end": 1117,
-      "durationSec": 102,
+      "start": 1013.67,
+      "end": 1114.44,
+      "durationSec": 101.77,
       "artist": "Profanatica",
       "title": "Final Hour of Christ",
       "album": "The Enemy of Virtue",
@@ -220,9 +220,9 @@
       "links": []
     },
     {
-      "start": 1356,
-      "end": 1819,
-      "durationSec": 465,
+      "start": 1352.89,
+      "end": 1814.83,
+      "durationSec": 463.93,
       "artist": "Leviathan",
       "title": "Requiem for a Turd World",
       "album": "Tenticals of Whorror",
@@ -233,9 +233,9 @@
       "links": []
     },
     {
-      "start": 1981,
-      "end": 2231,
-      "durationSec": 251,
+      "start": 1976.46,
+      "end": 2225.88,
+      "durationSec": 250.42,
       "artist": "Xasthur",
       "title": "Holding Yourself Hostage",
       "album": "Subject to Change",
@@ -246,9 +246,9 @@
       "links": []
     },
     {
-      "start": 2343,
-      "end": 2672,
-      "durationSec": 330,
+      "start": 2337.63,
+      "end": 2665.87,
+      "durationSec": 329.24,
       "artist": "Usurper",
       "title": "Kill for Metal",
       "album": "Cryptobeast",
@@ -259,9 +259,9 @@
       "links": []
     },
     {
-      "start": 2798,
-      "end": 3233,
-      "durationSec": 437,
+      "start": 2791.58,
+      "end": 3225.59,
+      "durationSec": 436,
       "artist": "Cobalt",
       "title": "Gin",
       "album": "Gin",
@@ -272,9 +272,9 @@
       "links": []
     },
     {
-      "start": 3433,
-      "end": 4046,
-      "durationSec": 615,
+      "start": 3425.13,
+      "end": 4036.72,
+      "durationSec": 613.59,
       "artist": "Wolves in the Throne Room",
       "title": "Astral Blood",
       "album": "Celestial Lineage",
@@ -285,9 +285,9 @@
       "links": []
     },
     {
-      "start": 4262,
-      "end": 4451,
-      "durationSec": 191,
+      "start": 4252.23,
+      "end": 4440.79,
+      "durationSec": 190.56,
       "artist": "Panopticon",
       "title": "This Mortal Coil's Rusted",
       "album": "Laurentian Blue",
@@ -298,9 +298,9 @@
       "links": []
     },
     {
-      "start": 4605,
-      "end": 4962,
-      "durationSec": 358,
+      "start": 4594.44,
+      "end": 4950.62,
+      "durationSec": 357.18,
       "artist": "Liturgy",
       "title": "Sun of Light",
       "album": "Aesthethica (Bonus Track Version)",
@@ -311,9 +311,9 @@
       "links": []
     },
     {
-      "start": 5082,
-      "end": 5758,
-      "durationSec": 678,
+      "start": 5070.35,
+      "end": 5744.8,
+      "durationSec": 676.45,
       "artist": "Deafheaven",
       "title": "The Pecan Tree",
       "album": "Sunbather",
@@ -324,9 +324,9 @@
       "links": []
     },
     {
-      "start": 5836,
-      "end": 7216,
-      "durationSec": 1380,
+      "start": 5822.62,
+      "end": 7199.45,
+      "durationSec": 1376.84,
       "artist": "Yellow Eyes",
       "title": "The Thought of Death",
       "album": "Confusion Gate",
@@ -351,5 +351,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 7216.065
 }

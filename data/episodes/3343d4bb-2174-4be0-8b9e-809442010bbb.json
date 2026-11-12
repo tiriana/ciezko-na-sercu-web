@@ -2,58 +2,58 @@
   "version": 1,
   "id": "3343d4bb-2174-4be0-8b9e-809442010bbb",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.882Z",
-  "durationSec": 6882,
+  "updatedAt": "2026-11-11T23:57:49.561Z",
+  "durationSec": 6866.286,
   "summary": "Odcinek poświęcony zespołom metalowym, które zapożyczyły nazwy od tytułów utworów lub płyt innych wykonawców — autor zestawiał takie pary, sprawdzając, czy „daleko pada jabłko od jabłoni”. Machine Head wzięli nazwę od płyty Deep Purple z 1971 roku, norweski Spiral Architect — od utworu zamykającego Sabbath Bloody Sabbath, a pionierski dla doom metalu kalifornijski Saint Vitus, określony jako „skóra zdarta z Black Sabbath”, od „Saint Vitus Dance”; niemiecki Running Wild pożyczył tytuł od kompozycji Judas Priest z Killing Machine, znanej też jako Hell Bent for Leather. Motörhead zaczerpnęli nazwę z napisanego przez Lemmy’ego utworu Hawkwind, a nowojorski Overkill — z ich piosenki z płyty z 1979 roku; omówiono też miejsce Overkill w dyskusji o Wielkiej Czwórce thrashu i porównanie do Motorhead. Osobny wątek to Kreator, u zarania działający jako Tormentor, który nagrał utwór o tym tytule na Endless Pain, wyprzedzony jednak przez Slayera; przy okazji węgierskiego Tormentora, macierzystego zespołu Attili Cihara, i Mayhem, którzy nazwę wzięli od „Mayhem with Mercy” Venomu. Najcenniejszym „łupem” Venomu okazało się Bathory — nazwa od „Countess Bathory” z płyty Black Metal, wraz z opowieścią o Erzsébet Báthory, rzekomej inspiracji Draculi Brama Stokera i najnowszych badaniach podważających jej winę. Na koniec Celtic Frost i utwór „The Usurper” z To Mega Therion jako źródło nazwy chicagowskiego Usurper oraz Amebix — niegdyś The Band With No Name, których debiutancki singiel „Winter” dał nazwę nowojorskiej grupie Winter.",
   "topics": [
     {
-      "start": 367.3,
-      "end": 489,
+      "start": 366.46,
+      "end": 487.88,
       "label": "Machine Head — nazwa od płyty Deep Purple z 1971 roku"
     },
     {
-      "start": 1128.26,
-      "end": 1198,
+      "start": 1125.67,
+      "end": 1195.25,
       "label": "Spiral Architect — hołd dla utworu z Sabbath Bloody Sabbath"
     },
     {
-      "start": 1913.72,
-      "end": 1959,
+      "start": 1909.33,
+      "end": 1954.51,
       "label": "Saint Vitus — doommetalowa nazwa od utworu Black Sabbath"
     },
     {
-      "start": 2424,
-      "end": 2496,
+      "start": 2418.44,
+      "end": 2490.28,
       "label": "Running Wild — nazwa od utworu Judas Priest z Killing Machine"
     },
     {
-      "start": 2955.3,
-      "end": 3093,
+      "start": 2948.52,
+      "end": 3085.91,
       "label": "Overkill — nazwa od utworu i płyty Motörhead"
     },
     {
-      "start": 3829,
-      "end": 3963,
+      "start": 3820.22,
+      "end": 3953.91,
       "label": "Tormentor — Kreator, Slayer i węgierska legenda Atilli Cihary"
     },
     {
-      "start": 4531,
-      "end": 4567,
+      "start": 4520.61,
+      "end": 4556.53,
       "label": "Mayhem — nazwa od akustycznej miniaturki Venom"
     },
     {
-      "start": 4986,
-      "end": 5122,
+      "start": 4974.57,
+      "end": 5110.26,
       "label": "Bathory — od Countess Bathory Venom i historii Erzsébet Báthory"
     },
     {
-      "start": 5688,
-      "end": 5745,
+      "start": 5674.96,
+      "end": 5731.83,
       "label": "Usurper — od utworu Celtic Frost z To Mega Therion"
     },
     {
-      "start": 6239.62,
-      "end": 6381,
+      "start": 6225.31,
+      "end": 6366.37,
       "label": "Amebix i Winter — nazwa od debiutanckiego singla Amebix"
     }
   ],
@@ -63,91 +63,91 @@
       "label": "Amebix",
       "type": "artist",
       "source": "tracks",
-      "at": 6381
+      "at": 6366.37
     },
     {
       "id": "black-sabbath",
       "label": "Black Sabbath",
       "type": "artist",
       "source": "tracks",
-      "at": 1198
+      "at": 1195.25
     },
     {
       "id": "celtic-frost",
       "label": "Celtic Frost",
       "type": "artist",
       "source": "tracks",
-      "at": 5745
+      "at": 5731.83
     },
     {
       "id": "deep-purple",
       "label": "Deep Purple",
       "type": "artist",
       "source": "tracks",
-      "at": 489
+      "at": 487.88
     },
     {
       "id": "hawkwind",
       "label": "Hawkwind",
       "type": "artist",
       "source": "tracks",
-      "at": 3093
+      "at": 3085.91
     },
     {
       "id": "judas-priest",
       "label": "Judas Priest",
       "type": "artist",
       "source": "tracks",
-      "at": 2496
+      "at": 2490.28
     },
     {
       "id": "machine-head",
       "label": "Machine Head",
       "type": "artist",
       "source": "tracks",
-      "at": 6
+      "at": 5.99
     },
     {
       "id": "mayhem",
       "label": "Mayhem",
       "type": "artist",
       "source": "tracks",
-      "at": 4567
+      "at": 4556.53
     },
     {
       "id": "slayer",
       "label": "Slayer",
       "type": "artist",
       "source": "tracks",
-      "at": 3963
+      "at": 3953.91
     },
     {
       "id": "venom",
       "label": "Venom",
       "type": "artist",
       "source": "tracks",
-      "at": 5122
+      "at": 5110.26
     },
     {
       "id": "mystic-festival",
       "label": "Mystic Festival",
       "type": "event",
       "source": "transcript",
-      "at": 388
+      "at": 387.11
     },
     {
       "id": "wladcy-chaosu",
       "label": "Władcy Chaosu",
       "type": "work",
       "source": "transcript",
-      "at": 5045
+      "at": 5033.43
     },
     {
       "id": "dracula",
       "label": "Dracula",
       "type": "work",
       "source": "transcript",
-      "at": 5079
+      "at": 5067.35
     },
     {
       "id": "jarek-szubrycht",
@@ -164,9 +164,9 @@
   ],
   "tracks": [
     {
-      "start": 6,
-      "end": 367.3,
-      "durationSec": 363,
+      "start": 5.99,
+      "end": 366.46,
+      "durationSec": 362.17,
       "artist": "Machine Head",
       "title": "Only the Names",
       "album": "Supercharger",
@@ -177,9 +177,9 @@
       "links": []
     },
     {
-      "start": 489,
-      "end": 1128.26,
-      "durationSec": 640,
+      "start": 487.88,
+      "end": 1125.67,
+      "durationSec": 638.53,
       "artist": "Deep Purple",
       "title": "Space Truckin",
       "album": "Machine Head",
@@ -190,9 +190,9 @@
       "links": []
     },
     {
-      "start": 1198,
-      "end": 1913.72,
-      "durationSec": 716,
+      "start": 1195.25,
+      "end": 1909.33,
+      "durationSec": 714.36,
       "artist": "Black Sabbath",
       "title": "Spiral Architect",
       "album": "Sabbath Bloody Sabbath",
@@ -203,9 +203,9 @@
       "links": []
     },
     {
-      "start": 1959,
-      "end": 2424,
-      "durationSec": 467,
+      "start": 1954.51,
+      "end": 2418.44,
+      "durationSec": 465.93,
       "artist": "Black Sabbath",
       "title": "St. Vitus Dance",
       "album": "Black Sabbath, Vol. 4",
@@ -216,9 +216,9 @@
       "links": []
     },
     {
-      "start": 2496,
-      "end": 2955.3,
-      "durationSec": 461,
+      "start": 2490.28,
+      "end": 2948.52,
+      "durationSec": 459.94,
       "artist": "Judas Priest",
       "title": "Running Wild",
       "album": "Hell Bent for Leather (Bonus Track Version)",
@@ -229,9 +229,9 @@
       "links": []
     },
     {
-      "start": 3093,
-      "end": 3829,
-      "durationSec": 737,
+      "start": 3085.91,
+      "end": 3820.22,
+      "durationSec": 735.31,
       "artist": "Hawkwind",
       "title": "Motorhead",
       "album": "Warrior on the Edge of Time",
@@ -242,9 +242,9 @@
       "links": []
     },
     {
-      "start": 3963,
-      "end": 4531,
-      "durationSec": 568,
+      "start": 3953.91,
+      "end": 4520.61,
+      "durationSec": 566.7,
       "artist": "Slayer",
       "title": "Tormentor",
       "album": "Show No Mercy",
@@ -255,9 +255,9 @@
       "links": []
     },
     {
-      "start": 4567,
-      "end": 4986,
-      "durationSec": 420,
+      "start": 4556.53,
+      "end": 4974.57,
+      "durationSec": 419.04,
       "artist": "Mayhem",
       "title": "Freezing Moon",
       "album": "De Mysteriis Dom Sathanas",
@@ -268,9 +268,9 @@
       "links": []
     },
     {
-      "start": 5122,
-      "end": 5688,
-      "durationSec": 568,
+      "start": 5110.26,
+      "end": 5674.96,
+      "durationSec": 566.7,
       "artist": "Venom",
       "title": "Countess Bathory",
       "album": "Black Metal",
@@ -281,9 +281,9 @@
       "links": []
     },
     {
-      "start": 5745,
-      "end": 6239.62,
-      "durationSec": 496,
+      "start": 5731.83,
+      "end": 6225.31,
+      "durationSec": 494.86,
       "artist": "Celtic Frost",
       "title": "The Usurper",
       "album": "To Mega Therion",
@@ -294,9 +294,9 @@
       "links": []
     },
     {
-      "start": 6381,
-      "end": 6882,
-      "durationSec": 501,
+      "start": 6366.37,
+      "end": 6866.22,
+      "durationSec": 499.85,
       "artist": "Amebix",
       "title": "Winter",
       "album": "No Sanctuary - The Spiderleg Recordings",
@@ -321,5 +321,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6882.064
 }

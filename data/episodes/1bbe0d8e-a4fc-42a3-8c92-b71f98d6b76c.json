@@ -2,68 +2,68 @@
   "version": 1,
   "id": "1bbe0d8e-a4fc-42a3-8c92-b71f98d6b76c",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.864Z",
-  "durationSec": 6872,
+  "updatedAt": "2026-11-11T23:56:46.666Z",
+  "durationSec": 6856.304,
   "summary": "Odcinek krąży wokół lżejszego niż zwykle, ale wciąż ciężkiego brzmienia: punktem wyjścia jest Mike Patton, którego głos łączy Naked City i Johna Zorna z utworem do filmu Funny Games Michaela Haneke oraz koncertem Faith No More z Brixton Academy z 1990 roku. Sporo miejsca dostaje nowa płyta Deftones Private Music, której kolejne utwory zestawiono z White Pony sprzed 25 lat i zapowiedzią koncertu w łódzkiej Atlas Arenie. Pojawia się Pink Floyd — remaster koncertu Live at Pompeii z 1972 roku, polecany jako uniwersalny towarzysz drogi, wraz z The Great Gig in the Sky. Metallica daje pretekst do rozmowy o Ride the Lightning, rocznicy wydania ...And Justice for All, wyciętej partii Jasona Newsteda oraz o gitarowym kunszcie Jamesa Hetfielda i komponowaniu Larsa Ulricha. Omówione są też nowy album Coronera Dissonance Theory, pierwszy od 1993 roku, szwedzki Feared i Ola Englund z domowym brzmieniem opartym na Engl Savage i Mesie Boogie Dual Rectifier, a także Entombed i Mamaleek. Wspomniany jest zmarły 20 sierpnia w wieku 51 lat Brent Hinds z Mastodon, któremu oddano hołd, oraz zespół Pile z utworem Born at Night.",
   "topics": [
     {
-      "start": 39,
-      "end": 95,
+      "start": 38.91,
+      "end": 94.78,
       "label": "Mike Patton, Naked City i muzyka do Funny Games"
     },
     {
-      "start": 95,
-      "end": 103,
+      "start": 94.78,
+      "end": 102.76,
       "label": "Faith No More i Black Sabbath na rozgrzewkę"
     },
     {
-      "start": 495.24,
-      "end": 514,
+      "start": 494.1,
+      "end": 512.82,
       "label": "Nowa płyta Deftones Private Music"
     },
     {
-      "start": 1636,
-      "end": 1648,
+      "start": 1632.25,
+      "end": 1644.22,
       "label": "Pink Floyd, The Great Gig in the Sky i remaster z Pompejów"
     },
     {
-      "start": 2814,
-      "end": 2861,
+      "start": 2807.55,
+      "end": 2854.44,
       "label": "Metallica Ride the Lightning i gra Jamesa Hetfielda"
     },
     {
-      "start": 3626,
-      "end": 3688,
+      "start": 3617.69,
+      "end": 3679.54,
       "label": "Rocznica ...And Justice for All i partie Larsa Ulricha"
     },
     {
-      "start": 4003,
-      "end": 4020,
+      "start": 3993.82,
+      "end": 4010.78,
       "label": "Koroner i nowa płyta Dissonance Theory"
     },
     {
-      "start": 4232,
-      "end": 4269,
+      "start": 4222.3,
+      "end": 4259.21,
       "label": "Feared, Ola Englund i domowe brzmienie gitar"
     },
     {
-      "start": 4466.15,
-      "end": 4500,
+      "start": 4455.91,
+      "end": 4489.68,
       "label": "Zgadywanie motywów i utwór Entombed"
     },
     {
-      "start": 4811.4,
-      "end": 4835,
+      "start": 4800.37,
+      "end": 4823.91,
       "label": "Mama Lek i płyta roku 2024"
     },
     {
-      "start": 6236.87,
-      "end": 6254,
+      "start": 6222.57,
+      "end": 6239.66,
       "label": "Pile i Born at Night"
     },
     {
-      "start": 6254,
-      "end": 6260,
+      "start": 6239.66,
+      "end": 6245.65,
       "label": "Hołd dla Breta Hinsha z Mastodon"
     }
   ],
@@ -79,56 +79,56 @@
       "label": "Coroner",
       "type": "artist",
       "source": "tracks",
-      "at": 3688
+      "at": 3679.54
     },
     {
       "id": "deftones",
       "label": "Deftones",
       "type": "artist",
       "source": "tracks",
-      "at": 514
+      "at": 512.82
     },
     {
       "id": "entombed",
       "label": "Entombed",
       "type": "artist",
       "source": "tracks",
-      "at": 4500
+      "at": 4489.68
     },
     {
       "id": "faith-no-more",
       "label": "Faith No More",
       "type": "artist",
       "source": "tracks",
-      "at": 103
+      "at": 102.76
     },
     {
       "id": "feared",
       "label": "Feared",
       "type": "artist",
       "source": "tracks",
-      "at": 4020
+      "at": 4010.78
     },
     {
       "id": "mamaleek",
       "label": "Mamaleek",
       "type": "artist",
       "source": "tracks",
-      "at": 4835
+      "at": 4823.91
     },
     {
       "id": "mastodon",
       "label": "Mastodon",
       "type": "artist",
       "source": "tracks",
-      "at": 6608
+      "at": 6592.85
     },
     {
       "id": "metallica",
       "label": "Metallica",
       "type": "artist",
       "source": "tracks",
-      "at": 2586
+      "at": 2580.07
     },
     {
       "id": "michal-kowarski",
@@ -141,28 +141,28 @@
       "label": "Pile",
       "type": "artist",
       "source": "tracks",
-      "at": 6260
+      "at": 6245.65
     },
     {
       "id": "pink-floyd",
       "label": "Pink Floyd",
       "type": "artist",
       "source": "tracks",
-      "at": 1589
+      "at": 1585.36
     },
     {
       "id": "funny-games",
       "label": "Funny Games",
       "type": "work",
       "source": "transcript",
-      "at": 70
+      "at": 69.84
     },
     {
       "id": "koncert-deftones",
       "label": "Deftones",
       "type": "concert",
       "source": "transcript",
-      "at": 1296
+      "at": 1293.03
     },
     {
       "id": "mariusz-owczarek",
@@ -173,9 +173,9 @@
   ],
   "tracks": [
     {
-      "start": 103,
-      "end": 177.48,
-      "durationSec": 76,
+      "start": 102.76,
+      "end": 177.07,
+      "durationSec": 75.83,
       "artist": "Faith No More",
       "title": "War Pigs",
       "album": "The Real Thing",
@@ -186,9 +186,9 @@
       "links": []
     },
     {
-      "start": 201,
-      "end": 345.8,
-      "durationSec": 146,
+      "start": 200.54,
+      "end": 345.01,
+      "durationSec": 145.67,
       "artist": "Faith No More",
       "title": "War Pigs",
       "album": "The Real Thing",
@@ -199,9 +199,9 @@
       "links": []
     },
     {
-      "start": 386,
-      "end": 495.24,
-      "durationSec": 110,
+      "start": 385.11,
+      "end": 494.1,
+      "durationSec": 109.75,
       "artist": "Faith No More",
       "title": "War Pigs",
       "album": "The Real Thing",
@@ -212,9 +212,9 @@
       "links": []
     },
     {
-      "start": 514,
-      "end": 1276.58,
-      "durationSec": 764,
+      "start": 512.82,
+      "end": 1273.65,
+      "durationSec": 762.25,
       "artist": "Deftones",
       "title": "infinite source",
       "album": "private music",
@@ -225,9 +225,9 @@
       "links": []
     },
     {
-      "start": 1307,
-      "end": 1578.74,
-      "durationSec": 272,
+      "start": 1304,
+      "end": 1575.12,
+      "durationSec": 271.38,
       "artist": "Deftones",
       "title": "Knife Prty",
       "album": "White Pony",
@@ -238,9 +238,9 @@
       "links": []
     },
     {
-      "start": 1589,
-      "end": 1636,
-      "durationSec": 48,
+      "start": 1585.36,
+      "end": 1632.25,
+      "durationSec": 47.89,
       "artist": "Pink Floyd",
       "title": "The Great Gig In the Sky",
       "album": "The Dark Side of the Moon",
@@ -251,9 +251,9 @@
       "links": []
     },
     {
-      "start": 1648,
-      "end": 1836.36,
-      "durationSec": 190,
+      "start": 1644.22,
+      "end": 1832.15,
+      "durationSec": 189.56,
       "artist": "Pink Floyd",
       "title": "The Great Gig In the Sky",
       "album": "The Dark Side of the Moon",
@@ -264,9 +264,9 @@
       "links": []
     },
     {
-      "start": 1890,
-      "end": 2559.62,
-      "durationSec": 671,
+      "start": 1885.67,
+      "end": 2553.75,
+      "durationSec": 669.46,
       "artist": "Pink Floyd",
       "title": "Echoes - Part 1 (Live at Pompeii - MCMLXXII - 2025 Mix)",
       "album": "Pink Floyd at Pompeii - MCMLXXII (2025 Mix)",
@@ -277,9 +277,9 @@
       "links": []
     },
     {
-      "start": 2586,
-      "end": 2814,
-      "durationSec": 229,
+      "start": 2580.07,
+      "end": 2807.55,
+      "durationSec": 228.47,
       "artist": "Metallica",
       "title": "Fight Fire with Fire",
       "album": "Ride the Lightning (Remastered) [2016 Remastered Version",
@@ -290,9 +290,9 @@
       "links": []
     },
     {
-      "start": 2861,
-      "end": 2931.33,
-      "durationSec": 72,
+      "start": 2854.44,
+      "end": 2924.61,
+      "durationSec": 71.83,
       "artist": "Metallica",
       "title": "Nothing Else Matters",
       "album": "Metallica (Remastered)",
@@ -303,9 +303,9 @@
       "links": []
     },
     {
-      "start": 2944,
-      "end": 3336.93,
-      "durationSec": 395,
+      "start": 2937.25,
+      "end": 3329.28,
+      "durationSec": 394.09,
       "artist": "Metallica",
       "title": "My Friend of Misery",
       "album": "Metallica (Remastered)",
@@ -316,9 +316,9 @@
       "links": []
     },
     {
-      "start": 3349,
-      "end": 3626,
-      "durationSec": 277,
+      "start": 3341.32,
+      "end": 3617.69,
+      "durationSec": 276.36,
       "artist": "Metallica",
       "title": "Dyers Eve",
       "album": "And Justice for All (Remastered)",
@@ -329,9 +329,9 @@
       "links": []
     },
     {
-      "start": 3688,
-      "end": 4003,
-      "durationSec": 316,
+      "start": 3679.54,
+      "end": 3993.82,
+      "durationSec": 315.28,
       "artist": "Coroner",
       "title": "Renewal",
       "album": "Dissonance Theory",
@@ -342,9 +342,9 @@
       "links": []
     },
     {
-      "start": 4020,
-      "end": 4232,
-      "durationSec": 214,
+      "start": 4010.78,
+      "end": 4222.3,
+      "durationSec": 213.51,
       "artist": "Feared",
       "title": "My Own Redemption",
       "album": "Synder",
@@ -355,9 +355,9 @@
       "links": []
     },
     {
-      "start": 4269,
-      "end": 4466.15,
-      "durationSec": 199,
+      "start": 4259.21,
+      "end": 4455.91,
+      "durationSec": 198.54,
       "artist": "Feared",
       "title": "Devil in White",
       "album": "Furor Incarnatus",
@@ -368,9 +368,9 @@
       "links": []
     },
     {
-      "start": 4500,
-      "end": 4811.4,
-      "durationSec": 313,
+      "start": 4489.68,
+      "end": 4800.37,
+      "durationSec": 312.28,
       "artist": "Entombed",
       "title": "Damn Deal Done (2022 Remaster)",
       "album": "DCLXVI  To Ride, Shoot Straight and Speak the Truth! (2022 Remaster)",
@@ -381,9 +381,9 @@
       "links": []
     },
     {
-      "start": 4835,
-      "end": 5855.36,
-      "durationSec": 1021,
+      "start": 4823.91,
+      "end": 5841.93,
+      "durationSec": 1018.66,
       "artist": "Mamaleek",
       "title": "Ancient Souls, No Longer Sorrowful",
       "album": "Vida Blue",
@@ -394,9 +394,9 @@
       "links": []
     },
     {
-      "start": 5870,
-      "end": 6236.87,
-      "durationSec": 368,
+      "start": 5856.54,
+      "end": 6222.57,
+      "durationSec": 367.16,
       "artist": "Mamaleek",
       "title": "Boiler Room",
       "album": "Diner Coffee",
@@ -407,9 +407,9 @@
       "links": []
     },
     {
-      "start": 6260,
-      "end": 6571.84,
-      "durationSec": 313,
+      "start": 6245.65,
+      "end": 6556.77,
+      "durationSec": 312.28,
       "artist": "Pile",
       "title": "Born at Night",
       "album": "Sunshine and Balance Beams",
@@ -420,9 +420,9 @@
       "links": []
     },
     {
-      "start": 6608,
-      "end": 6872,
-      "durationSec": 264,
+      "start": 6592.85,
+      "end": 6856.24,
+      "durationSec": 263.39,
       "artist": "Mastodon",
       "title": "Oblivion",
       "album": "Crack the Skye",
@@ -438,13 +438,13 @@
     {
       "role": "prowadzący",
       "name": "Adam Hrynkiewicz",
-      "time": 6,
+      "time": 5.99,
       "quote": "Adam Hrynkiewicz, Michał Kowarski. Meldujemy się na stanowisku."
     },
     {
       "role": "prowadzący",
       "name": "Michał Kowarski",
-      "time": 6,
+      "time": 5.99,
       "quote": "Adam Hrynkiewicz, Michał Kowarski. Meldujemy się na stanowisku."
     },
     {
@@ -453,5 +453,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6872.059
 }

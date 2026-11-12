@@ -2,48 +2,48 @@
   "version": 1,
   "id": "489e26f5-4196-4436-8c9f-555694f82983",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.759Z",
-  "durationSec": 6763,
+  "updatedAt": "2026-11-11T23:49:32.687Z",
+  "durationSec": 6747.545,
   "summary": "Audycja poświęcona jest pamięci Conrada Lanta, znanego jako Cronos, wokalisty i basisty Venom, który zmarł 1 października w wieku 63 lat. Prowadzący omawia znaczenie Venom jako zespołu, który na przełomie lat 70. i 80. wyznaczył kierunki rozwoju ekstremalnego metalu i był wzorem dla Metalliki i Slayera, a dla Hellhammer, Bathory i Mayhem (których nazwy pochodzą od utworów Venom) stał się ojcem założycielem black metalu. Przywołane zostają kluczowe albumy: koncertowy Eine Kleine Nachtmusik (1986), Possessed, Come Before the Storm, Cast in Stone (1997), Resurrection (2000), Metal Black (2006) i From the Very Deaths (2015), wraz z historią rozpadów i powrotów oryginalnego składu z Mantasem i Abaddonem. Opisana jest recepcja Venom w Polsce lat 80. dzięki licencyjnym wydawnictwom Tonpressu oraz relacjom w tygodniku „Na przełaj” i magazynie „Non Stop”. Wymienione są gościnne występy Cronosa z Enthroned, Diabolos Rising, Cradle of Filth (utwór Haunted Shores) oraz z Dave'em Grohlem w projekcie Probot (utwór Centuries of Sin).",
   "topics": [
     {
-      "start": 162.6,
-      "end": 257,
+      "start": 162.23,
+      "end": 256.41,
       "label": "Śmierć Kronosa – ogłoszenie zgonu basisty Venom i wprowadzenie tematu audycji"
     },
     {
-      "start": 788,
-      "end": 930,
+      "start": 786.19,
+      "end": 927.87,
       "label": "Omówienie albumu *Eine kleine Nachtmusik* jako otwarcia podwójnego wydania Venom z 1986 roku"
     },
     {
-      "start": 1138.82,
-      "end": 1259,
+      "start": 1136.21,
+      "end": 1256.11,
       "label": "Historia albumu *Possest* i jego roli w polskim środowisku metalowym"
     },
     {
-      "start": 2322,
-      "end": 2405,
+      "start": 2316.68,
+      "end": 2399.49,
       "label": "Konflikty i zmiany w składzie Venom w drugiej połowie lat 80., powstanie *Come Before the Storm* oraz odejście Kronosa"
     },
     {
-      "start": 3056,
-      "end": 3139,
+      "start": 3048.99,
+      "end": 3131.8,
       "label": "Pożegnanie Kronosa i podsumowanie jego roli w Venom oraz wpływu na black metal"
     },
     {
-      "start": 3552,
-      "end": 3652,
+      "start": 3543.86,
+      "end": 3643.63,
       "label": "Współpraca Kronosa z Dave’em Grohlem i projekt Probot"
     },
     {
-      "start": 3840,
-      "end": 4002,
+      "start": 3831.19,
+      "end": 3992.82,
       "label": "Historia i dyskografia Venom, w tym albumy i zmiany w składzie"
     },
     {
-      "start": 4287.73,
-      "end": 4302,
+      "start": 4277.9,
+      "end": 4292.14,
       "label": "Zapowiedź i odtworzenie suity z albumu At War With Satan"
     }
   ],
@@ -53,21 +53,21 @@
       "label": "Beastie Boys",
       "type": "artist",
       "source": "tracks",
-      "at": 22
+      "at": 21.95
     },
     {
       "id": "cradle-of-filth",
       "label": "Cradle of Filth",
       "type": "artist",
       "source": "tracks",
-      "at": 3139
+      "at": 3131.8
     },
     {
       "id": "cronos",
       "label": "Cronos",
       "type": "artist",
       "source": "tracks",
-      "at": 2098
+      "at": 2093.19
     },
     {
       "id": "jarek-szubrycht",
@@ -86,28 +86,28 @@
       "label": "Probot",
       "type": "artist",
       "source": "tracks",
-      "at": 3652
+      "at": 3643.63
     },
     {
       "id": "venom",
       "label": "Venom",
       "type": "artist",
       "source": "tracks",
-      "at": 257
+      "at": 256.41
     },
     {
       "id": "koncert-koncert-venom-w-hammersmith-odeon-1984",
       "label": "Koncert Venom w Hammersmith Odeon (1984)",
       "type": "concert",
       "source": "transcript",
-      "at": 1415
+      "at": 1411.76
     }
   ],
   "tracks": [
     {
-      "start": 22,
-      "end": 162.6,
-      "durationSec": 142,
+      "start": 21.95,
+      "end": 162.23,
+      "durationSec": 141.67,
       "artist": "Beastie Boys",
       "title": "Dedication",
       "album": "Hello Nasty (Deluxe Version) [Remastered",
@@ -119,9 +119,9 @@
       "links": []
     },
     {
-      "start": 257,
-      "end": 788,
-      "durationSec": 533,
+      "start": 256.41,
+      "end": 786.19,
+      "durationSec": 531.78,
       "artist": "Venom",
       "title": "Too Loud (For the Crowd) [Live",
       "album": "Eine Kleine Nachtmusik",
@@ -133,9 +133,9 @@
       "links": []
     },
     {
-      "start": 930,
-      "end": 1138.82,
-      "durationSec": 210,
+      "start": 927.87,
+      "end": 1136.21,
+      "durationSec": 209.52,
       "artist": "Venom",
       "title": "Countess Bathory",
       "album": "Black Metal",
@@ -147,9 +147,9 @@
       "links": []
     },
     {
-      "start": 1259,
-      "end": 1415.24,
-      "durationSec": 157,
+      "start": 1256.11,
+      "end": 1411.99,
+      "durationSec": 156.64,
       "artist": "Venom",
       "title": "Satanachist",
       "album": "Possessed (Bonus Track Edition)",
@@ -160,9 +160,9 @@
       "links": []
     },
     {
-      "start": 1478,
-      "end": 1832,
-      "durationSec": 216,
+      "start": 1474.61,
+      "end": 1827.8,
+      "durationSec": 215.5,
       "artist": "Venom",
       "title": "Live Like an Angel",
       "album": "Welcome to Hell",
@@ -173,9 +173,9 @@
       "links": []
     },
     {
-      "start": 1832,
-      "end": 2024.13,
-      "durationSec": 194,
+      "start": 1827.8,
+      "end": 2019.49,
+      "durationSec": 193.56,
       "artist": "Venom",
       "title": "Black Metal",
       "album": "Black Metal",
@@ -186,9 +186,9 @@
       "links": []
     },
     {
-      "start": 2098,
-      "end": 2322,
-      "durationSec": 226,
+      "start": 2093.19,
+      "end": 2316.68,
+      "durationSec": 225.48,
       "artist": "Cronos",
       "title": "Rock 'n' Roll Disease",
       "album": "Hell to the Unknown: The Cronos Anthology",
@@ -199,9 +199,9 @@
       "links": []
     },
     {
-      "start": 2405,
-      "end": 2463.84,
-      "durationSec": 60,
+      "start": 2399.49,
+      "end": 2458.19,
+      "durationSec": 59.86,
       "artist": "Venom",
       "title": "Flight of the Hydra",
       "album": "Cast In Stone",
@@ -213,9 +213,9 @@
       "links": []
     },
     {
-      "start": 2471,
-      "end": 3056,
-      "durationSec": 586,
+      "start": 2465.33,
+      "end": 3048.99,
+      "durationSec": 584.66,
       "artist": "Venom",
       "title": "Flight of the Hydra",
       "album": "Cast In Stone",
@@ -227,9 +227,9 @@
       "links": []
     },
     {
-      "start": 3139,
-      "end": 3552,
-      "durationSec": 414,
+      "start": 3131.8,
+      "end": 3543.86,
+      "durationSec": 413.05,
       "artist": "Cradle of Filth",
       "title": "Haunted Shores",
       "album": "Dusk..... and Her Embrace",
@@ -240,9 +240,9 @@
       "links": []
     },
     {
-      "start": 3652,
-      "end": 3840,
-      "durationSec": 241,
+      "start": 3643.63,
+      "end": 3831.19,
+      "durationSec": 240.45,
       "artist": "Probot",
       "title": "Centuries of Sin (feat. Cronos)",
       "album": "Probot",
@@ -254,9 +254,9 @@
       "links": []
     },
     {
-      "start": 4002,
-      "end": 4238.79,
-      "durationSec": 239,
+      "start": 3992.82,
+      "end": 4229.07,
+      "durationSec": 238.45,
       "artist": "Venom",
       "title": "Long Haired Punks",
       "album": "From the Very Depths",
@@ -268,9 +268,9 @@
       "links": []
     },
     {
-      "start": 4302,
-      "end": 5889.54,
-      "durationSec": 1589,
+      "start": 4292.14,
+      "end": 5876.04,
+      "durationSec": 1585.36,
       "artist": "Venom",
       "title": "At War With Satan",
       "album": "In League With Satan",
@@ -281,9 +281,9 @@
       "links": []
     },
     {
-      "start": 5910,
-      "end": 6763,
-      "durationSec": 853,
+      "start": 5896.45,
+      "end": 6747.49,
+      "durationSec": 851.04,
       "artist": "Venom",
       "title": "Welcome to Hell",
       "album": "Welcome to Hell",
@@ -297,43 +297,43 @@
   ],
   "quotes": [
     {
-      "start": 180,
+      "start": 179.59,
       "text": "Zacząłem bardzo nietypowo, bo od utworu grupy Beastie Boys"
     },
     {
-      "start": 788,
+      "start": 786.19,
       "text": "wysłuchaliśmy właśnie otwarcia podwójnego albumu Eine kleine Nachtmusik, koncertowej płyty Venom z 1986 roku"
     },
     {
-      "start": 1170,
+      "start": 1167.32,
       "text": "Właśnie koncertowy album Eine Kleine Nachtmusik oraz studyjny Possest, bo ukazały się na licencji"
     },
     {
-      "start": 1728,
+      "start": 1724.04,
       "text": "Dowiedziałem się stąd na przykład, że Kronos kocha Kate Bush"
     },
     {
-      "start": 2363,
+      "start": 2357.58,
       "text": "Dopiero na Resurrection, albumie z 2000 roku, Venom pokazał się w pełnej piekielnej krasie"
     },
     {
-      "start": 3056,
+      "start": 3048.99,
       "text": "Słuchacie Ciężko na sercu w trójce, odcinka, w którym żegnam Kronosa, wokalistę, basistę i frontmana Venom."
     },
     {
-      "start": 3579,
+      "start": 3570.79,
       "text": "Współpraca Kronosa z black metalowcami to rzecz oczywista, ... bardziej zaskakujące było jego wspólne nagranie z Dave'em Grawlem."
     },
     {
-      "start": 3620,
+      "start": 3611.7,
       "text": "A zatem Probot. Probot, czyli projekt, w którym Grawl złożył hołd swoim metalowym idolom z ich czynnym udziałem."
     },
     {
-      "start": 4268,
+      "start": 4258.21,
       "text": "Myślicie, że tytułowa, dwudziestominutowa, blekowo-punkowo-progresywna suita z albumu At War With Satan jest nie do zagrania w radiu?"
     },
     {
-      "start": 6100,
+      "start": 6086.01,
       "text": "I'm going to do the slowest version of Bloodlust"
     }
   ],
@@ -341,14 +341,15 @@
     {
       "role": "prowadzący",
       "name": "Jarek Szubrycht",
-      "time": 163,
+      "time": 162.63,
       "quote": "Dobry wieczór Państwu kłania się Jarek Szubrycht, autor audycji"
     },
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 163,
+      "time": 162.63,
       "quote": "Mariusz Owczarek, jej wydawca"
     }
-  ]
+  ],
+  "audioDurationSec": 6763.05
 }

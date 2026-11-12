@@ -2,8 +2,8 @@
   "version": 1,
   "id": "31fa2fa3-05f3-41c3-99bf-18a101132e82",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.894Z",
-  "durationSec": 6899,
+  "updatedAt": "2026-11-12T00:03:37.995Z",
+  "durationSec": 6898.973,
   "summary": "Odcinek to przegląd kwietniowych nowości wydawniczych. Wśród nich szósta płyta Ghost „Skeleta\" (premiera 25 kwietnia), oceniana jako rzecz mało odkrywcza, ale dająca przednią zabawę, solowy album Wednesday 13 „Mid-Death Crisis\", „Back from Hell\" Calibana nagrany wspólnie z The Browning oraz „Zenith\" szkockiego Bleed From Within. Zaprezentowano też projekty nietypowe: Quadwium, duet basistów Steve'a DiGiorgio i Jerome'a Paula Thesselinga z perkusistą Jumą van Ekelenem i gitarzystką Eve, a także przedpremierowo „Best of Ramones Redux\" z Voivodem i Fytusem. Omówiono kolejne nowe wydawnictwa: Cytotoxin, Necrotated, Landmarks, The Lord Weird Slough Feg, Pigs Pigs Pigs Pigs Pigs Pigs Pigs, Church of the Sea, The Great Sea, Opia, Warfield, Seagin, Imperishable, Machine Head, Idle Hands, Benediction, Tar, Malfas i In the Woods... Przy Machine Head podkreślono zmianę składu — Vogga zastąpił Reese Scruggs z Hayvok.",
   "topics": [
     {
@@ -57,13 +57,13 @@
       "label": "Warfield – drugi album With the Old Breed"
     },
     {
-      "start": 5011,
-      "end": 5060,
+      "start": 5011.01,
+      "end": 5060.01,
       "label": "Machine Head – Untoned bez Wacława Kiełtyki"
     },
     {
-      "start": 5579,
-      "end": 5603,
+      "start": 5579.01,
+      "end": 5603.01,
       "label": "Benediction – Ravage of Empires i Engines of War"
     }
   ],
@@ -73,7 +73,7 @@
       "label": "Benediction",
       "type": "artist",
       "source": "tracks",
-      "at": 5603
+      "at": 5603.01
     },
     {
       "id": "bleed-from-within",
@@ -115,7 +115,7 @@
       "label": "Idle Heirs",
       "type": "artist",
       "source": "tracks",
-      "at": 5331
+      "at": 5331.01
     },
     {
       "id": "imperishable",
@@ -129,7 +129,7 @@
       "label": "In the Woods",
       "type": "artist",
       "source": "tracks",
-      "at": 6424
+      "at": 6424.01
     },
     {
       "id": "landmvrks-while-she-sleeps-mat-welsh",
@@ -143,14 +143,14 @@
       "label": "Machine Head",
       "type": "artist",
       "source": "tracks",
-      "at": 5060
+      "at": 5060.01
     },
     {
       "id": "malphas",
       "label": "Malphas",
       "type": "artist",
       "source": "tracks",
-      "at": 6097
+      "at": 6097.01
     },
     {
       "id": "necrotted-aborted-coffin-feeder",
@@ -192,7 +192,7 @@
       "label": "TAAR",
       "type": "artist",
       "source": "tracks",
-      "at": 5827
+      "at": 5827.01
     },
     {
       "id": "the-great-sea",
@@ -460,7 +460,7 @@
     },
     {
       "start": 4785,
-      "end": 5011,
+      "end": 5011.01,
       "durationSec": 227,
       "artist": "Imperishable",
       "title": "Bells",
@@ -472,8 +472,8 @@
       "links": []
     },
     {
-      "start": 5060,
-      "end": 5287.18,
+      "start": 5060.01,
+      "end": 5287.19,
       "durationSec": 228,
       "artist": "Machine Head",
       "title": "UNBØUND",
@@ -485,8 +485,8 @@
       "links": []
     },
     {
-      "start": 5331,
-      "end": 5579,
+      "start": 5331.01,
+      "end": 5579.01,
       "durationSec": 250,
       "artist": "Idle Heirs",
       "title": "Pillow Talk (Instrumental)",
@@ -498,8 +498,8 @@
       "links": []
     },
     {
-      "start": 5603,
-      "end": 5788.64,
+      "start": 5603.01,
+      "end": 5788.65,
       "durationSec": 187,
       "artist": "Benediction",
       "title": "Engines of War",
@@ -511,8 +511,8 @@
       "links": []
     },
     {
-      "start": 5827,
-      "end": 6075.59,
+      "start": 5827.01,
+      "end": 6075.6,
       "durationSec": 250,
       "artist": "TAAR",
       "title": "Where Death Stalks Its Prey",
@@ -524,8 +524,8 @@
       "links": []
     },
     {
-      "start": 6097,
-      "end": 6309,
+      "start": 6097.01,
+      "end": 6309.01,
       "durationSec": 213,
       "artist": "Malphas",
       "title": "Psychomachia",
@@ -537,8 +537,8 @@
       "links": []
     },
     {
-      "start": 6424,
-      "end": 6899,
+      "start": 6424.01,
+      "end": 6899.01,
       "durationSec": 475,
       "artist": "In the Woods",
       "title": "The Things You Shouldn't Know",
@@ -564,5 +564,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6898.965
 }

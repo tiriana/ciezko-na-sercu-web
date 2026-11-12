@@ -2,8 +2,8 @@
   "version": 1,
   "id": "947bf413-cda4-4a1a-8c15-9206b9309660",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.846Z",
-  "durationSec": 6818,
+  "updatedAt": "2026-11-11T23:55:17.923Z",
+  "durationSec": 6818.508,
   "summary": "Odcinek to grudniowy przegląd koncertów metalowych w Polsce, otwarty wątkiem 50. rocznicy Motorhead i trasy Phila Campbella z synami (Bastard Sons). Omówiono trasy JAD (promującą płytę „Odwet”), ARM Artura Rumińskiego (zapowiedź nowego materiału na przyszły rok) oraz Hejt (album „Bellum Regis w Ojczyźnie”), a także liczne koncerty ekstremalnego metalu, m.in. Morbid Fest, występ Apsu z Ancient i Trivax, oraz imprezy organizowane 13 grudnia w rocznicę stanu wojennego: Last Words of Death, Dead Winter Fest, Gryf Metal Christmas i Moleskine Fest. Szeroko omówiono koncert Acid Drinkers i Turbo w katowickim Spodku, przywołując historię zespołu — przełomowy występ na festiwalu Metalmania w 1990 roku, odejście i powrót gitarzysty Licy oraz problemy zespołu z alkoholem — w kontekście wznowienia książki Leszka Gnoińskiego „Raport o Acid Drinkers”. Zaprezentowano też nowe wydawnictwa książkowe: album-biografię „Iron Maiden. Infinite Dreams”, biografię Black Sabbath autorstwa Micka Walla „U piekielnych bram”, towarzyszącą jej książkę „Ostatnie Namaszczenie” o ostatnich miesiącach życia Ozzy’ego Osbourne’a aż po koncert Back to the Beginning, oraz „Metal na Zamku” Wojciecha Lisa o historii ciechanowskiego festiwalu Straszydło.",
   "topics": [
     {
@@ -47,13 +47,13 @@
       "label": "Książka o Ozzy'm Osbourne i jego pożegnaniu ze sceną"
     },
     {
-      "start": 1306,
-      "end": 1370,
+      "start": 1306.01,
+      "end": 1370.01,
       "label": "Festiwal Straszydło i polski metalowy underground lat 80. i 90."
     },
     {
-      "start": 1370,
-      "end": 1976,
+      "start": 1370.01,
+      "end": 1976.01,
       "label": "Prezentacja utworów zespołów z epoki festiwalu Straszydło"
     }
   ],
@@ -63,28 +63,28 @@
       "label": "Acid Drinkers",
       "type": "artist",
       "source": "tracks",
-      "at": 4262
+      "at": 4262.03
     },
     {
       "id": "arrm",
       "label": "ARRM",
       "type": "artist",
       "source": "tracks",
-      "at": 1976
+      "at": 1976.01
     },
     {
       "id": "hate",
       "label": "Hate",
       "type": "artist",
       "source": "tracks",
-      "at": 3601
+      "at": 3601.03
     },
     {
       "id": "iron-maiden",
       "label": "Iron Maiden",
       "type": "artist",
       "source": "tracks",
-      "at": 4514
+      "at": 4514.03
     },
     {
       "id": "jad",
@@ -124,42 +124,42 @@
       "label": "Ozzy Osbourne",
       "type": "artist",
       "source": "tracks",
-      "at": 5152
+      "at": 5152.04
     },
     {
       "id": "samael",
       "label": "Samael",
       "type": "artist",
       "source": "tracks",
-      "at": 6419
+      "at": 6419.04
     },
     {
       "id": "signs-of-the-swarm",
       "label": "Signs of the Swarm",
       "type": "artist",
       "source": "tracks",
-      "at": 3149
+      "at": 3149.02
     },
     {
       "id": "sinister",
       "label": "Sinister",
       "type": "artist",
       "source": "tracks",
-      "at": 2707
+      "at": 2707.02
     },
     {
       "id": "trivax",
       "label": "Trivax",
       "type": "artist",
       "source": "tracks",
-      "at": 1189
+      "at": 1189.01
     },
     {
       "id": "vader",
       "label": "Vader",
       "type": "artist",
       "source": "tracks",
-      "at": 5508
+      "at": 5508.04
     },
     {
       "id": "morbid-fest",
@@ -173,84 +173,84 @@
       "label": "The Last Words of Death",
       "type": "event",
       "source": "transcript",
-      "at": 2983
+      "at": 2983.02
     },
     {
       "id": "dead-winter-fest",
       "label": "Dead Winter Fest",
       "type": "event",
       "source": "transcript",
-      "at": 3044
+      "at": 3044.02
     },
     {
       "id": "gryf-metal-christmas",
       "label": "Gryf Metal Christmas",
       "type": "event",
       "source": "transcript",
-      "at": 3568
+      "at": 3568.02
     },
     {
       "id": "moleskine-fest",
       "label": "Moleskine Fest",
       "type": "event",
       "source": "transcript",
-      "at": 3583
+      "at": 3583.03
     },
     {
       "id": "metalmania",
       "label": "Metalmania",
       "type": "event",
       "source": "transcript",
-      "at": 4021
+      "at": 4021.03
     },
     {
       "id": "koncert-back-to-the-beginning",
       "label": "Back to the Beginning",
       "type": "concert",
       "source": "transcript",
-      "at": 5015
+      "at": 5015.04
     },
     {
       "id": "straszydlo",
       "label": "Straszydło",
       "type": "event",
       "source": "transcript",
-      "at": 5466
+      "at": 5466.04
     },
     {
       "id": "raport-o-acid-drinkers",
       "label": "Raport o Acid Drinkers",
       "type": "work",
       "source": "transcript",
-      "at": 4133
+      "at": 4133.03
     },
     {
       "id": "iron-maiden-infinite-dreams",
       "label": "Iron Maiden. Infinite Dreams",
       "type": "work",
       "source": "transcript",
-      "at": 4459
+      "at": 4459.03
     },
     {
       "id": "u-piekielnych-bram",
       "label": "U piekielnych bram",
       "type": "work",
       "source": "transcript",
-      "at": 4930
+      "at": 4930.03
     },
     {
       "id": "ostatnie-namaszczenie",
       "label": "Ostatnie Namaszczenie",
       "type": "work",
       "source": "transcript",
-      "at": 4988
+      "at": 4988.03
     },
     {
       "id": "metal-na-zamku-kronika-festiwalu-straszydlo-1988-1994",
       "label": "Metal na Zamku. Kronika festiwalu Straszydło 1988-1994",
       "type": "work",
       "source": "transcript",
-      "at": 5455
+      "at": 5455.04
     }
   ],
   "tracks": [
@@ -296,7 +296,7 @@
     },
     {
       "start": 637,
-      "end": 1189,
+      "end": 1189.01,
       "durationSec": 308,
       "artist": "Nightfall",
       "title": "I've Never Dreamt The Life We Share",
@@ -308,8 +308,8 @@
       "links": []
     },
     {
-      "start": 1189,
-      "end": 1306,
+      "start": 1189.01,
+      "end": 1306.01,
       "durationSec": 698,
       "artist": "Trivax",
       "title": "Here Comes the Flood",
@@ -321,8 +321,8 @@
       "links": []
     },
     {
-      "start": 1976,
-      "end": 2674.1,
+      "start": 1976.01,
+      "end": 2674.12,
       "durationSec": 699,
       "artist": "ARRM",
       "title": "Sinking in Depression (feat. Jacek Dzwonowski)",
@@ -334,8 +334,8 @@
       "links": []
     },
     {
-      "start": 2707,
-      "end": 3149,
+      "start": 2707.02,
+      "end": 3149.02,
       "durationSec": 234,
       "artist": "Sinister",
       "title": "Creative Killings",
@@ -347,8 +347,8 @@
       "links": []
     },
     {
-      "start": 3149,
-      "end": 3533.5,
+      "start": 3149.02,
+      "end": 3533.52,
       "durationSec": 385,
       "artist": "Signs of the Swarm",
       "title": "Iron Sacrament (feat. Phil Bozeman)",
@@ -360,8 +360,8 @@
       "links": []
     },
     {
-      "start": 3601,
-      "end": 4262,
+      "start": 3601.03,
+      "end": 4262.03,
       "durationSec": 399,
       "artist": "Hate",
       "title": "Bellum Regiis",
@@ -373,8 +373,8 @@
       "links": []
     },
     {
-      "start": 4262,
-      "end": 4321.51,
+      "start": 4262.03,
+      "end": 4321.54,
       "durationSec": 61,
       "artist": "Acid Drinkers",
       "title": "Dancing In the Slaughter-House",
@@ -386,8 +386,8 @@
       "links": []
     },
     {
-      "start": 4329,
-      "end": 4417.64,
+      "start": 4329.03,
+      "end": 4417.67,
       "durationSec": 90,
       "artist": "Acid Drinkers",
       "title": "Dancing In the Slaughter-House",
@@ -399,8 +399,8 @@
       "links": []
     },
     {
-      "start": 4514,
-      "end": 5152,
+      "start": 4514.03,
+      "end": 5152.04,
       "durationSec": 407,
       "artist": "Iron Maiden",
       "title": "Powerslave (1998 Remaster)",
@@ -412,8 +412,8 @@
       "links": []
     },
     {
-      "start": 5152,
-      "end": 5454.74,
+      "start": 5152.04,
+      "end": 5454.78,
       "durationSec": 304,
       "artist": "Ozzy Osbourne",
       "title": "Waiting for Darkness",
@@ -425,8 +425,8 @@
       "links": []
     },
     {
-      "start": 5508,
-      "end": 6419,
+      "start": 5508.04,
+      "end": 6419.04,
       "durationSec": 254,
       "artist": "Vader",
       "title": "Breath of Centuries",
@@ -438,8 +438,8 @@
       "links": []
     },
     {
-      "start": 6419,
-      "end": 6818,
+      "start": 6419.04,
+      "end": 6818.05,
       "durationSec": 400,
       "artist": "Samael",
       "title": "Into the Pentagram",
@@ -458,7 +458,7 @@
       "text": "A my jeszcze raz posłuchajmy, jak brzmiało oryginalne Motorhead na żywo, kiedy jeszcze Lemmy nie tylko żył, ale był w znakomitej formie. Podobnie jak otwierający audycję, Bomber nagranie pochodzi z koncertowego albumu Better Motorhead Than Dead"
     },
     {
-      "start": 6818,
+      "start": 6818.05,
       "text": "A na zakończenie opowieści o Straszydle i dzisiejszej audycji puszczę Państwu zespół, który właśnie dzięki temu festiwalowi trafił w Polsce do szerszych mas fanów"
     }
   ],
@@ -475,5 +475,6 @@
       "time": 3,
       "quote": "w imieniu własnym i Mariusza Owczarka, wydawcę audycji"
     }
-  ]
+  ],
+  "audioDurationSec": 6818.461
 }

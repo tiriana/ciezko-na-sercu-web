@@ -2,58 +2,58 @@
   "version": 1,
   "id": "a8dcad3c-9586-46e7-90f3-b1dbbb3bfe0b",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.854Z",
-  "durationSec": 6890,
+  "updatedAt": "2026-11-11T23:56:05.784Z",
+  "durationSec": 6874.261,
   "summary": "Odcinek jest drugą częścią subiektywnego zestawienia znakomitych, lecz niedocenianych lub zapomnianych polskich zespołów, skupioną na formacjach wyrosłych z Kobonga i szeroko pojętej polskiej ekstremie. Omówiono Nię, której debiut Head Held High ukazał się w 2004 roku nakładem brytyjskiego Candlelight, oraz Neumę — ostatni album Szkice z 2020 roku nominowano do Fryderyka w kategorii metal, ale zespół nie reaktywował się nawet po nominacji. Przypomniano Samo Roberta Gasperowicza oraz warszawską Moją Adrenalinę, która po nagraniu płyty u Rossa Robinsona zmieniła nazwę na Semantic Punk i oparła teksty na twórczości Gombrowicza i Masłowskiej. Pojawiły się też Keta Macieja Janasa, z EP-ką inspirowaną pismami Lema i albumem Wendigo, oraz Kiński z Copula Mundi z 1993 roku i powrotem Preterito Futurum. W zestawieniu znalazł się także Kostas New Program oraz krakowski Flash World, którego album ukazał się jesienią 2019 roku, kilka miesięcy przed pandemią, a którego EP-ka Like We're All Equal Again opowiada o wojnie z perspektywy ofiar i oprawców.",
   "topics": [
     {
-      "start": 3,
-      "end": 28,
+      "start": 2.99,
+      "end": 27.94,
       "label": "Subiektywne zestawienie niedocenianych polskich grup postkobągowych"
     },
     {
-      "start": 39,
-      "end": 103,
+      "start": 38.91,
+      "end": 102.76,
       "label": "Prezentacja twórczości grupy Keta"
     },
     {
-      "start": 103,
-      "end": 140,
+      "start": 102.76,
+      "end": 139.68,
       "label": "Refleksje nad polską sceną metalową i zespół Kiński"
     },
     {
-      "start": 186.63,
-      "end": 266,
+      "start": 186.2,
+      "end": 265.39,
       "label": "Projekt Kostas New Program"
     },
     {
-      "start": 140,
-      "end": 186.63,
+      "start": 139.68,
+      "end": 186.2,
       "label": "Zespół Flash World"
     },
     {
-      "start": 364.56,
-      "end": 396,
+      "start": 363.72,
+      "end": 395.09,
       "label": "Zespół Nia i jego międzynarodowe rozpoznanie"
     },
     {
-      "start": 788,
-      "end": 791,
+      "start": 786.19,
+      "end": 789.19,
       "label": "Zespół Neuma i jego eksperymentalne brzmienie"
     },
     {
-      "start": 1856,
-      "end": 1858,
+      "start": 1851.74,
+      "end": 1853.74,
       "label": "Zespół Samo i jego korzenie w ekstremalnej muzyce"
     },
     {
-      "start": 2314,
-      "end": 2388,
+      "start": 2308.69,
+      "end": 2382.52,
       "label": "Moja Adrenalina i ewolucja w Semantic Punk"
     },
     {
-      "start": 6890,
-      "end": 6890,
+      "start": 6874.2,
+      "end": 6874.2,
       "label": "Omówienie płyty wydanej przed 2020 rokiem"
     }
   ],
@@ -63,7 +63,7 @@
       "label": "Fleshworld",
       "type": "artist",
       "source": "tracks",
-      "at": 6127
+      "at": 6112.95
     },
     {
       "id": "jarek-szubrycht",
@@ -76,7 +76,7 @@
       "label": "Ketha",
       "type": "artist",
       "source": "tracks",
-      "at": 2388
+      "at": 2382.52
     },
     {
       "id": "mariusz-owczarek",
@@ -89,84 +89,84 @@
       "label": "Neuma",
       "type": "artist",
       "source": "tracks",
-      "at": 396
+      "at": 395.09
     },
     {
       "id": "nyia",
       "label": "Nyia",
       "type": "artist",
       "source": "tracks",
-      "at": 28
+      "at": 27.94
     },
     {
       "id": "samo",
       "label": "Samo",
       "type": "artist",
       "source": "tracks",
-      "at": 1858
+      "at": 1853.74
     },
     {
       "id": "semantik-punk",
       "label": "Semantik Punk",
       "type": "artist",
       "source": "tracks",
-      "at": 2185
+      "at": 2179.99
     },
     {
       "id": "tworczosc-witolda-gombrowicza",
       "label": "twórczość Witolda Gombrowicza",
       "type": "work",
       "source": "transcript",
-      "at": 2107
+      "at": 2102.17
     },
     {
       "id": "tworczosc-doroty-maslowskiej",
       "label": "twórczość Doroty Masłowskiej",
       "type": "work",
       "source": "transcript",
-      "at": 2107
+      "at": 2102.17
     },
     {
       "id": "pisma-stanislawa-lema",
       "label": "pisma Stanisława Lema",
       "type": "work",
       "source": "transcript",
-      "at": 2779
+      "at": 2772.63
     },
     {
       "id": "metalmania",
       "label": "Metalmania",
       "type": "event",
       "source": "transcript",
-      "at": 3274
+      "at": 3266.49
     },
     {
       "id": "off-festival",
       "label": "OFF Festival",
       "type": "event",
       "source": "transcript",
-      "at": 3274
+      "at": 3266.49
     },
     {
       "id": "avant-art",
       "label": "Avant Art",
       "type": "event",
       "source": "transcript",
-      "at": 5452
+      "at": 5439.5
     },
     {
       "id": "twin-peaks",
       "label": "Twin Peaks",
       "type": "work",
       "source": "transcript",
-      "at": 6047
+      "at": 6033.13
     }
   ],
   "tracks": [
     {
-      "start": 28,
-      "end": 39,
-      "durationSec": 160,
+      "start": 27.94,
+      "end": 38.91,
+      "durationSec": 159.63,
       "artist": "Nyia",
       "title": "Everything's a Dream (Album)",
       "album": null,
@@ -177,9 +177,9 @@
       "links": []
     },
     {
-      "start": 266,
-      "end": 359,
-      "durationSec": 91,
+      "start": 265.39,
+      "end": 358.18,
+      "durationSec": 90.79,
       "artist": "Nyia",
       "title": "World's Throat (Album)",
       "album": null,
@@ -190,9 +190,9 @@
       "links": []
     },
     {
-      "start": 396,
-      "end": 788,
-      "durationSec": 237,
+      "start": 395.09,
+      "end": 786.19,
+      "durationSec": 236.46,
       "artist": "Neuma",
       "title": "It's Time To Leave",
       "album": "Neuma Vol. 2 (Reedycja)",
@@ -203,9 +203,9 @@
       "links": []
     },
     {
-      "start": 791,
-      "end": 1856,
-      "durationSec": 346,
+      "start": 789.19,
+      "end": 1851.74,
+      "durationSec": 345.21,
       "artist": "Neuma",
       "title": "Vandor",
       "album": "Szkice",
@@ -217,9 +217,9 @@
       "links": []
     },
     {
-      "start": 1858,
-      "end": 2185,
-      "durationSec": 169,
+      "start": 1853.74,
+      "end": 2179.99,
+      "durationSec": 168.61,
       "artist": "Samo",
       "title": null,
       "album": null,
@@ -230,9 +230,9 @@
       "links": []
     },
     {
-      "start": 2185,
-      "end": 2314,
-      "durationSec": 130,
+      "start": 2179.99,
+      "end": 2308.69,
+      "durationSec": 129.7,
       "artist": "Semantik Punk",
       "title": "Y Dopatrzenia",
       "album": "Abcdefghijklmnoprstuwxyz",
@@ -243,9 +243,9 @@
       "links": []
     },
     {
-      "start": 2388,
-      "end": 2718.02,
-      "durationSec": 332,
+      "start": 2382.52,
+      "end": 2711.79,
+      "durationSec": 331.24,
       "artist": "Ketha",
       "title": "No Heart",
       "album": "Magnaminus - EP",
@@ -256,9 +256,9 @@
       "links": []
     },
     {
-      "start": 2811,
-      "end": 3383,
-      "durationSec": 430,
+      "start": 2804.55,
+      "end": 3375.24,
+      "durationSec": 429.01,
       "artist": "Ketha",
       "title": "Sloader",
       "album": "Nie Toleruje, Bije",
@@ -269,9 +269,9 @@
       "links": []
     },
     {
-      "start": 3383,
-      "end": 6127,
-      "durationSec": 423,
+      "start": 3375.24,
+      "end": 6112.95,
+      "durationSec": 422.03,
       "artist": "Ketha",
       "title": "Kanati",
       "album": "Wendigo",
@@ -282,9 +282,9 @@
       "links": []
     },
     {
-      "start": 6127,
-      "end": 6381.16,
-      "durationSec": 256,
+      "start": 6112.95,
+      "end": 6366.53,
+      "durationSec": 255.41,
       "artist": "Fleshworld",
       "title": "Out of Context",
       "album": "The Essence Has Changed, but the Details Remain",
@@ -295,9 +295,9 @@
       "links": []
     },
     {
-      "start": 6442,
-      "end": 6890,
-      "durationSec": 448,
+      "start": 6427.23,
+      "end": 6874.2,
+      "durationSec": 446.97,
       "artist": "Fleshworld",
       "title": "Chant of Many Voices",
       "album": "Like We're All Equal Again",
@@ -311,19 +311,19 @@
   ],
   "quotes": [
     {
-      "start": 140,
+      "start": 139.68,
       "text": "A dzisiaj jeszcze pora na zespół z Krakowa, który hałasuje w mieście od 15 lat, nazywa się Flash World"
     },
     {
-      "start": 1115,
+      "start": 1112.44,
       "text": "Ostatni album zespołu zatytułowany Szkice ukazał się całkiem niedawno, bo w 2020 roku"
     },
     {
-      "start": 2015,
+      "start": 2010.38,
       "text": "Ale dzisiaj o Samo, a Samo prosi w utworze, który za chwilę zagram, żeby go nienawidzić"
     },
     {
-      "start": 6890,
+      "start": 6874.2,
       "text": "by zaprezentować Państwu coś z ich epki Like We're All Equal Again, opowiadającej o wojnie z perspektywy zarówno ofiar, jak i oprawców."
     }
   ],
@@ -337,8 +337,9 @@
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 6890,
+      "time": 6874.2,
       "quote": "audycję wydawał Mariusz Owczarek"
     }
-  ]
+  ],
+  "audioDurationSec": 6890.057
 }

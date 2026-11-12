@@ -2,48 +2,48 @@
   "version": 1,
   "id": "9b8fb645-2639-4b75-bcfe-d903f3e6f872",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.862Z",
-  "durationSec": 6867,
+  "updatedAt": "2026-11-11T23:56:44.423Z",
+  "durationSec": 6851.3,
   "summary": "Audycja poświęcona zespołom, które grają oryginalną muzykę i robią rzeczy po swojemu, ale nie przebijają się do szerokiej publiczności — punktem wyjścia był koncert Esoteric zamykający drugi dzień festiwalu Summer Dying Loud, a prowadzący sięgnął alfabetycznie po płyty z własnej półki. Przy literze A omówiono Alchemist z Australii, których ostatnie albumy Austral Alien i Tripsis wydała Relapse, oraz Burnt by the Sun z New Jersey, którzy po trzech albumach, w tym The Perfect is the Enemy of the Good, zakończyli działalność. Równie krótko istnieli Kanadyjczycy z The End, autorzy Elementary z 2008 roku, łączącego wcześniejsze hałasy z technicznymi łamańcami z prog rocka i jazzu. Dalej pojawił się włoski Ephel Duath z Padwy, nazwany od gór oddzielających Mordor, z elektroindustrialnymi remiksami Pain Remixes The Known autorstwa Raldo Bernocciego z Sigillum S, czeska Forgotten Silence z Brna i jej Le Grand Buffet, oraz Chrome Hoof z Londynu, łączący ciężki metal z disco, funkiem, jazzem i estetyką musicalową. Omówiono też norweski Fleurety, który po blackmetalowym debiucie skręcił w eksperymenty na minialbumie Last Minute Lies, oraz Abruptum, którego pierwsze płyty ukazały się nakładem Death Like Silence, a jego współtwórca IT zmarł w 2017 roku. Na koniec Gnaw Their Tongues Holendra Maurice'a de Jongha, Blut Aus Nord z Normandii z zapowiedzią szesnastego albumu Ethereal Horizons na listopad oraz anonimowy Deathspell Omega, który nie koncertuje i w tekstach sięga od konceptów gnostyckich po reinterpretację Hegla.",
   "topics": [
     {
-      "start": 9,
-      "end": 12,
+      "start": 8.98,
+      "end": 11.97,
       "label": "Wprowadzenie i historia projektu Abruptum"
     },
     {
-      "start": 71,
-      "end": 81,
+      "start": 70.84,
+      "end": 80.81,
       "label": "Prezentacja eksperymentalnego projektu Gnorden Tongs"
     },
     {
-      "start": 81,
-      "end": 94,
+      "start": 80.81,
+      "end": 93.78,
       "label": "Omówienie francuskiego zespołu Blood House Nord i ich dyskografii"
     },
     {
-      "start": 94,
-      "end": 562,
+      "start": 93.78,
+      "end": 560.71,
       "label": "Osobista historia prowadzącego z muzyką Death Spell Omega"
     },
     {
-      "start": 562,
-      "end": 696,
+      "start": 560.71,
+      "end": 694.4,
       "label": "Wprowadzenie i opis zespołu Esoteric – funeral doom z elementami prog rocku"
     },
     {
-      "start": 938.88,
-      "end": 1101,
+      "start": 936.73,
+      "end": 1098.48,
       "label": "Alchemist, ich wydawnictwa na Relapse i powiązania z innymi zespołami"
     },
     {
-      "start": 1868.5,
-      "end": 1956,
+      "start": 1864.22,
+      "end": 1951.51,
       "label": "Historia i debiut kanadyjskiego zespołu The End oraz ich album Elementary"
     },
     {
-      "start": 2836.45,
-      "end": 2872,
+      "start": 2829.95,
+      "end": 2865.41,
       "label": "Unikalność i eklektyzm brytyjskiego projektu Chrome Hoof"
     }
   ],
@@ -53,77 +53,77 @@
       "label": "Abruptum",
       "type": "artist",
       "source": "tracks",
-      "at": 4016
+      "at": 4006.79
     },
     {
       "id": "alchemist",
       "label": "Alchemist",
       "type": "artist",
       "source": "tracks",
-      "at": 696
+      "at": 694.4
     },
     {
       "id": "blut-aus-nord",
       "label": "Blut aus Nord",
       "type": "artist",
       "source": "tracks",
-      "at": 4923
+      "at": 4911.71
     },
     {
       "id": "burnt-by-the-sun",
       "label": "Burnt By the Sun",
       "type": "artist",
       "source": "tracks",
-      "at": 1101
+      "at": 1098.48
     },
     {
       "id": "chrome-hoof",
       "label": "Chrome Hoof",
       "type": "artist",
       "source": "tracks",
-      "at": 2872
+      "at": 2865.41
     },
     {
       "id": "deathspell-omega",
       "label": "Deathspell Omega",
       "type": "artist",
       "source": "tracks",
-      "at": 5732
+      "at": 5718.86
     },
     {
       "id": "ephel-duath",
       "label": "Ephel Duath",
       "type": "artist",
       "source": "tracks",
-      "at": 1956
+      "at": 1951.51
     },
     {
       "id": "esoteric",
       "label": "Esoteric",
       "type": "artist",
       "source": "tracks",
-      "at": 12
+      "at": 11.97
     },
     {
       "id": "fleurety",
       "label": "Fleurety",
       "type": "artist",
       "source": "tracks",
-      "at": 3527
+      "at": 3518.91
     },
     {
       "id": "forgotten-silence",
       "label": "Forgotten Silence",
       "type": "artist",
       "source": "tracks",
-      "at": 2359
+      "at": 2353.59
     },
     {
       "id": "gnaw-their-tongues",
       "label": "Gnaw Their Tongues",
       "type": "artist",
       "source": "tracks",
-      "at": 4317
+      "at": 4307.1
     },
     {
       "id": "jarek-szubrycht",
@@ -142,49 +142,49 @@
       "label": "The End",
       "type": "artist",
       "source": "tracks",
-      "at": 1379
+      "at": 1375.84
     },
     {
       "id": "maurice-de-jong",
       "label": "Maurice de Jong",
       "type": "person",
       "source": "credits",
-      "at": 4279
+      "at": 4269.19
     },
     {
       "id": "summer-dying-loud",
       "label": "Summer Dying Loud",
       "type": "event",
       "source": "transcript",
-      "at": 616
+      "at": 614.59
     },
     {
       "id": "koncert-merzbow-i-igor-cavalera-we-wroclawiu",
       "label": "Merzbow i Igor Cavalera we Wrocławiu",
       "type": "concert",
       "source": "transcript",
-      "at": 1940
+      "at": 1935.55
     },
     {
       "id": "apokalipsa-sw-jana",
       "label": "Apokalipsa św. Jana",
       "type": "work",
       "source": "transcript",
-      "at": 4247
+      "at": 4237.26
     },
     {
       "id": "to",
       "label": "To",
       "type": "work",
       "source": "transcript",
-      "at": 3904
+      "at": 3895.05
     }
   ],
   "tracks": [
     {
-      "start": 12,
-      "end": 71,
-      "durationSec": 551,
+      "start": 11.97,
+      "end": 70.84,
+      "durationSec": 549.74,
       "artist": "Esoteric",
       "title": "Cipher",
       "album": "Paragon of Dissonance",
@@ -196,9 +196,9 @@
       "links": []
     },
     {
-      "start": 696,
-      "end": 938.88,
-      "durationSec": 245,
+      "start": 694.4,
+      "end": 936.73,
+      "durationSec": 244.44,
       "artist": "Alchemist",
       "title": "Great Southern Wasteland",
       "album": "Austral Alien",
@@ -209,9 +209,9 @@
       "links": []
     },
     {
-      "start": 1101,
-      "end": 1146.18,
-      "durationSec": 47,
+      "start": 1098.48,
+      "end": 1143.55,
+      "durationSec": 46.89,
       "artist": "Burnt By the Sun",
       "title": "Lizard-skin Barbie",
       "album": "Burnt By the Sun - EP",
@@ -223,9 +223,9 @@
       "links": []
     },
     {
-      "start": 1193,
-      "end": 1350.63,
-      "durationSec": 159,
+      "start": 1190.26,
+      "end": 1347.53,
+      "durationSec": 158.64,
       "artist": "Burnt By the Sun",
       "title": "Forlani",
       "album": "The Perfect Is the Enemy of the Good",
@@ -237,9 +237,9 @@
       "links": []
     },
     {
-      "start": 1379,
-      "end": 1634.18,
-      "durationSec": 256,
+      "start": 1375.84,
+      "end": 1630.43,
+      "durationSec": 255.41,
       "artist": "The End",
       "title": "The Asphyxiation of Lisa-Claire",
       "album": "Transfer Trachea Reverberations from Point: False Omniscient",
@@ -251,9 +251,9 @@
       "links": []
     },
     {
-      "start": 1662,
-      "end": 1865,
-      "durationSec": 201,
+      "start": 1658.19,
+      "end": 1860.72,
+      "durationSec": 200.54,
       "artist": "The End",
       "title": "Animals",
       "album": "Elementary",
@@ -264,9 +264,9 @@
       "links": []
     },
     {
-      "start": 1956,
-      "end": 2134.56,
-      "durationSec": 180,
+      "start": 1951.51,
+      "end": 2129.67,
+      "durationSec": 179.59,
       "artist": "Ephel Duath",
       "title": "Hole IV",
       "album": "Pain Remixes the Known",
@@ -277,9 +277,9 @@
       "links": []
     },
     {
-      "start": 2172,
-      "end": 2248.39,
-      "durationSec": 78,
+      "start": 2167.02,
+      "end": 2243.23,
+      "durationSec": 77.82,
       "artist": "Ephel Duath",
       "title": "Hole IV",
       "album": "Pain Remixes the Known",
@@ -290,9 +290,9 @@
       "links": []
     },
     {
-      "start": 2359,
-      "end": 2836.45,
-      "durationSec": 479,
+      "start": 2353.59,
+      "end": 2829.95,
+      "durationSec": 477.9,
       "artist": "Forgotten Silence",
       "title": "Translucide",
       "album": "La Grande Bouffe",
@@ -304,9 +304,9 @@
       "links": []
     },
     {
-      "start": 2872,
-      "end": 3132.33,
-      "durationSec": 260,
+      "start": 2865.41,
+      "end": 3125.15,
+      "durationSec": 259.4,
       "artist": "Chrome Hoof",
       "title": "Death Is Certain",
       "album": null,
@@ -318,9 +318,9 @@
       "links": []
     },
     {
-      "start": 3185,
-      "end": 3419.72,
-      "durationSec": 235,
+      "start": 3177.7,
+      "end": 3411.88,
+      "durationSec": 234.46,
       "artist": "Chrome Hoof",
       "title": "Third Sun Descendant",
       "album": null,
@@ -331,9 +331,9 @@
       "links": []
     },
     {
-      "start": 3527,
-      "end": 4016,
-      "durationSec": 330,
+      "start": 3518.91,
+      "end": 4006.79,
+      "durationSec": 329.24,
       "artist": "Fleurety",
       "title": "I Saw Claws",
       "album": "Last-Minute Lies / I Left The Planet",
@@ -345,9 +345,9 @@
       "links": []
     },
     {
-      "start": 4016,
-      "end": 4230.69,
-      "durationSec": 216,
+      "start": 4006.79,
+      "end": 4220.99,
+      "durationSec": 215.5,
       "artist": "Abruptum",
       "title": "Tortus Torquero Colla Tumentes",
       "album": "Evil Genius",
@@ -358,9 +358,9 @@
       "links": []
     },
     {
-      "start": 4317,
-      "end": 4872.13,
-      "durationSec": 556,
+      "start": 4307.1,
+      "end": 4860.96,
+      "durationSec": 554.73,
       "artist": "Gnaw Their Tongues",
       "title": "White Void Black Wounds",
       "album": "I Speak the Truth, Yet With Every Word Uttered, Thousands Die",
@@ -371,9 +371,9 @@
       "links": []
     },
     {
-      "start": 4923,
-      "end": 5312.32,
-      "durationSec": 391,
+      "start": 4911.71,
+      "end": 5300.14,
+      "durationSec": 390.1,
       "artist": "Blut aus Nord",
       "title": "The Choir Of The Dead",
       "album": "The Work Which Transforms God",
@@ -384,9 +384,9 @@
       "links": []
     },
     {
-      "start": 5387,
-      "end": 5637.92,
-      "durationSec": 252,
+      "start": 5374.65,
+      "end": 5624.99,
+      "durationSec": 251.42,
       "artist": "Blut aus Nord",
       "title": "Chorea Macchabeorum",
       "album": "Deus Salutis Meae",
@@ -397,9 +397,9 @@
       "links": []
     },
     {
-      "start": 5732,
-      "end": 6123.65,
-      "durationSec": 393,
+      "start": 5718.86,
+      "end": 6109.61,
+      "durationSec": 392.1,
       "artist": "Deathspell Omega",
       "title": "Si Monumentum Requires, Circumspice",
       "album": "Si Monumentum Requires, Circumspice",
@@ -410,9 +410,9 @@
       "links": []
     },
     {
-      "start": 6233,
-      "end": 6867,
-      "durationSec": 634,
+      "start": 6218.71,
+      "end": 6851.25,
+      "durationSec": 632.55,
       "artist": "Deathspell Omega",
       "title": "The Shrine of Mad Laughter",
       "album": "Fas - Ite, Maledicti, in Ignem Aeternum",
@@ -425,31 +425,31 @@
   ],
   "quotes": [
     {
-      "start": 562,
+      "start": 560.71,
       "text": "Ta piękna, niespiesznie rozwijająca się piosenka to Cypher z repertuaru angielskiej grupy Esoteric"
     },
     {
-      "start": 1154,
+      "start": 1151.35,
       "text": "Band by the Sun pochodzili z New Jersey, byli aktywni przez pierwszą dekadę XXI wieku i grali w ściekłą mieszankę death metalu"
     },
     {
-      "start": 1174,
+      "start": 1171.31,
       "text": "na drugiej płycie zatytułowanej The Perfect is the Enemy of the Good"
     },
     {
-      "start": 1644,
+      "start": 1640.23,
       "text": "Tuż przed rozpadem Kanadyjczycy wydali świetny trzeci album, Elementary"
     },
     {
-      "start": 2355,
+      "start": 2349.6,
       "text": "Posłuchamy utworu Translucide z płyty Le Grand Buffet z 2012 roku"
     },
     {
-      "start": 3132,
+      "start": 3124.82,
       "text": "Wysłuchaliśmy piosenki, tak, jednej piosenki, to nie były dwa różne utwory grupy Chromchów o tym, że śmierć jest pewniakiem"
     },
     {
-      "start": 3421,
+      "start": 3413.16,
       "text": "I bardzo dobrze zrobili, czego dowodem będzie piosenka właśnie z tamtego materiału zatytułowana I Saw Close"
     }
   ],
@@ -463,14 +463,15 @@
     {
       "role": "wydawca",
       "name": "Mariusz Owczarek",
-      "time": 675,
+      "time": 673.45,
       "quote": "Te audycje wydaje Mariusz Owczarek."
     },
     {
       "role": "gość",
       "name": "Maurice de Jong",
-      "time": 4279,
+      "time": 4269.19,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6867.043
 }

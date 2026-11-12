@@ -667,6 +667,7 @@ const handleRequest = async (req, res) => {
         slug: entry.slug,
         audioUrl: entry.audioUrl,
         durationSec: entry.durationSec ?? null,
+        audioDurationSec: episodes.get(id)?.audioDurationSec ?? null,
         originalTitle: entry.title,
         title: titles.titles?.[id]?.title ?? '',
         hasEpisode: episodes.has(id),

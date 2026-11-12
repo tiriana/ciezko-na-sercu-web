@@ -2,68 +2,68 @@
   "version": 1,
   "id": "6ad7c4bd-535e-447f-a5b6-fc0b07ee2c83",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.801Z",
-  "durationSec": 7251,
+  "updatedAt": "2026-11-11T23:51:50.674Z",
+  "durationSec": 7234.419,
   "summary": "Audycja to przegląd czerwcowych koncertów i festiwali. Prowadzący omawia m.in. Mystic Festival w Gdańsku (ostatnia edycja na terenie stoczni, występy Down, Anthrax, Today Is the Day) oraz nowy album A.A. Williams „Solstice”, a także festiwal Rykowisko w Rogoźniku, nawiązujący do historycznego Trash Campu z 1988 roku z udziałem Vadera. Wymienia koncerty klubowe (In Human Condition, Ashen Tomb, Epitome, Jungle Road, Malevolence, Venom Inc.) oraz większe wydarzenia: Bring Me The Horizon z Knocked Loose, A Perfect Circle, High Viz, trasę The Casualties i Trivium z Heriotem. Szczegółowo opisuje program Dni Zduńskiej Woli (koncert Sheltera, Ani Huwe z Xmal Deutschland i Clan of Xymox, line-up z Madball) oraz nowe festiwale: Lost Generation (The Offspring, Papa Roach, Hollywood Undead), Summer Punch (Bad Omens, Three Days Grace, Babymetal) i debiutancki Hells Bells Festival w Szczecinie, łączący scenę punkową (UK Subs, Possessed) z metalową, z dłuższą opowieścią o Charliem Harperze i Jeffie Beckericie. Wspomina też koncerty A Day to Remember, Steel Panther, Nothing z Heywire (nawiązując do występu Nothing na festiwalu Roadburn), Drowning Pool, Rivers of Nihil, Nonslaughter zapowiadającego album „Satanic Chaos Legions” oraz Cavalera Brothers prezentujących album „Chaos A.D.” Sepultury.",
   "topics": [
     {
-      "start": 317,
-      "end": 469,
+      "start": 316.27,
+      "end": 467.92,
       "label": "Mystic Festival w Gdańsku: Antrax i Today is the Day"
     },
     {
-      "start": 1178,
-      "end": 1274,
+      "start": 1175.3,
+      "end": 1271.08,
       "label": "Rykowisko w Rogoźniku z Vaderem i wspomnienie Trash Camp"
     },
     {
-      "start": 1521.12,
-      "end": 1679,
+      "start": 1517.63,
+      "end": 1675.15,
       "label": "In Human Condition, Ashen Tomb, Epitome i Jungle Rot w klubach"
     },
     {
-      "start": 1835,
-      "end": 1937,
+      "start": 1830.79,
+      "end": 1932.56,
       "label": "Bring Me The Horizon, Knocked Loose, High Viz i A Perfect Circle"
     },
     {
-      "start": 2133,
-      "end": 2246,
+      "start": 2128.11,
+      "end": 2240.85,
       "label": "The Casualties i Malevolence na polskich koncertach"
     },
     {
-      "start": 2485.38,
-      "end": 2697,
+      "start": 2479.68,
+      "end": 2690.82,
       "label": "Alternatywna Zduńska Wola: Shelter, Anja Huwe, Madball"
     },
     {
-      "start": 2992,
-      "end": 3082,
+      "start": 2985.14,
+      "end": 3074.93,
       "label": "Lost Generation Festival: The Offspring i Papa Roach"
     },
     {
-      "start": 3082,
-      "end": 3242,
+      "start": 3074.93,
+      "end": 3234.57,
       "label": "Summer Punch: Bad Omens, Three Days Grace, Baby Metal"
     },
     {
-      "start": 3832.96,
-      "end": 3909,
+      "start": 3824.17,
+      "end": 3900.04,
       "label": "Trivium, Frontside i Heriot oraz A Day to Remember"
     },
     {
-      "start": 4928,
-      "end": 5022,
+      "start": 4916.7,
+      "end": 5010.48,
       "label": "Drowning Pool w Bielsku-Białej i Rivers of Nihil w Warszawie"
     },
     {
-      "start": 5359.57,
-      "end": 5577,
+      "start": 5347.28,
+      "end": 5564.21,
       "label": "Hells Bells Festival w Szczecinie: UK Subs i Possessed"
     },
     {
-      "start": 6765,
-      "end": 6836,
+      "start": 6749.49,
+      "end": 6820.33,
       "label": "Uada w Hydrozagadce i Sepultura z programem Chaos A.D."
     }
   ],
@@ -73,294 +73,294 @@
       "label": "A.A. Williams",
       "type": "artist",
       "source": "tracks",
-      "at": 953
+      "at": 950.81
     },
     {
       "id": "anthrax",
       "label": "Anthrax",
       "type": "artist",
       "source": "tracks",
-      "at": 469
+      "at": 467.92
     },
     {
       "id": "babymetal-polyphia",
       "label": "BABYMETAL & Polyphia",
       "type": "artist",
       "source": "tracks",
-      "at": 3242
+      "at": 3234.57
     },
     {
       "id": "dola",
       "label": "Dola",
       "type": "artist",
       "source": "tracks",
-      "at": 5577
+      "at": 5564.21
     },
     {
       "id": "down",
       "label": "DOWN",
       "type": "artist",
       "source": "tracks",
-      "at": 130
+      "at": 129.7
     },
     {
       "id": "high-vis",
       "label": "High Vis",
       "type": "artist",
       "source": "tracks",
-      "at": 1937
+      "at": 1932.56
     },
     {
       "id": "jungle-rot",
       "label": "Jungle Rot",
       "type": "artist",
       "source": "tracks",
-      "at": 1679
+      "at": 1675.15
     },
     {
       "id": "madball",
       "label": "Madball",
       "type": "artist",
       "source": "tracks",
-      "at": 2697
+      "at": 2690.82
     },
     {
       "id": "malevolence",
       "label": "Malevolence",
       "type": "artist",
       "source": "tracks",
-      "at": 2246
+      "at": 2240.85
     },
     {
       "id": "nothing",
       "label": "Nothing",
       "type": "artist",
       "source": "tracks",
-      "at": 4686
+      "at": 4675.26
     },
     {
       "id": "nunslaughter",
       "label": "Nunslaughter",
       "type": "artist",
       "source": "tracks",
-      "at": 6407
+      "at": 6392.31
     },
     {
       "id": "rivers-of-nihil",
       "label": "Rivers of Nihil",
       "type": "artist",
       "source": "tracks",
-      "at": 5022
+      "at": 5010.48
     },
     {
       "id": "sepultura",
       "label": "Sepultura",
       "type": "artist",
       "source": "tracks",
-      "at": 6836
+      "at": 6820.33
     },
     {
       "id": "trivium",
       "label": "Trivium",
       "type": "artist",
       "source": "tracks",
-      "at": 3909
+      "at": 3900.04
     },
     {
       "id": "vader",
       "label": "Vader",
       "type": "artist",
       "source": "tracks",
-      "at": 1274
+      "at": 1271.08
     },
     {
       "id": "mystic-festival",
       "label": "Mystic Festival",
       "type": "event",
       "source": "transcript",
-      "at": 341
+      "at": 340.22
     },
     {
       "id": "rykowisko",
       "label": "Rykowisko",
       "type": "event",
       "source": "transcript",
-      "at": 1178
+      "at": 1175.3
     },
     {
       "id": "trash-camp",
       "label": "Trash Camp",
       "type": "event",
       "source": "transcript",
-      "at": 1211
+      "at": 1208.22
     },
     {
       "id": "koncert-in-human-condition-ashen-tomb-epitome",
       "label": "In Human Condition, Ashen Tomb, Epitome",
       "type": "concert",
       "source": "transcript",
-      "at": 1559
+      "at": 1555.43
     },
     {
       "id": "koncert-jungle-road",
       "label": "Jungle Road",
       "type": "concert",
       "source": "transcript",
-      "at": 1581
+      "at": 1577.37
     },
     {
       "id": "koncert-bring-me-the-horizon-knocked-loose",
       "label": "Bring Me The Horizon, Knocked Loose",
       "type": "concert",
       "source": "transcript",
-      "at": 1835
+      "at": 1830.79
     },
     {
       "id": "koncert-high-viz",
       "label": "High Viz",
       "type": "concert",
       "source": "transcript",
-      "at": 1882
+      "at": 1877.68
     },
     {
       "id": "koncert-a-perfect-circle",
       "label": "A Perfect Circle",
       "type": "concert",
       "source": "transcript",
-      "at": 1896
+      "at": 1891.65
     },
     {
       "id": "koncert-the-casualties",
       "label": "The Casualties",
       "type": "concert",
       "source": "transcript",
-      "at": 2133
+      "at": 2128.11
     },
     {
       "id": "koncert-malevolence-boundaries-grideron-heavy-runner",
       "label": "Malevolence, Boundaries, Grideron, Heavy Runner",
       "type": "concert",
       "source": "transcript",
-      "at": 2220
+      "at": 2214.91
     },
     {
       "id": "koncert-venom-inc",
       "label": "Venom Inc.",
       "type": "concert",
       "source": "transcript",
-      "at": 2485
+      "at": 2479.3
     },
     {
       "id": "dni-zdunskiej-woli-alternatywna-zdunska-wola",
       "label": "Dni Zduńskiej Woli / Alternatywna Zduńska Wola",
       "type": "event",
       "source": "transcript",
-      "at": 2512
+      "at": 2506.24
     },
     {
       "id": "summer-dine-loud",
       "label": "Summer Dine Loud",
       "type": "event",
       "source": "transcript",
-      "at": 2656
+      "at": 2649.91
     },
     {
       "id": "lost-generation-festival",
       "label": "Lost Generation Festival",
       "type": "event",
       "source": "transcript",
-      "at": 2992
+      "at": 2985.14
     },
     {
       "id": "koncert-alter-bridge",
       "label": "Alter Bridge",
       "type": "concert",
       "source": "transcript",
-      "at": 3069
+      "at": 3061.96
     },
     {
       "id": "summer-punch",
       "label": "Summer Punch",
       "type": "event",
       "source": "transcript",
-      "at": 3082
+      "at": 3074.93
     },
     {
       "id": "koncert-trivium-heriot-frontside",
       "label": "Trivium, Heriot, Frontside",
       "type": "concert",
       "source": "transcript",
-      "at": 3853
+      "at": 3844.17
     },
     {
       "id": "koncert-a-day-to-remember-madball-dying-wish",
       "label": "A Day to Remember, Madball, Dying Wish",
       "type": "concert",
       "source": "transcript",
-      "at": 4599
+      "at": 4588.45
     },
     {
       "id": "koncert-steel-panther",
       "label": "Steel Panther",
       "type": "concert",
       "source": "transcript",
-      "at": 4615
+      "at": 4604.42
     },
     {
       "id": "koncert-nothing-heywire",
       "label": "Nothing, Heywire",
       "type": "concert",
       "source": "transcript",
-      "at": 4636
+      "at": 4625.37
     },
     {
       "id": "roadburn",
       "label": "Roadburn",
       "type": "event",
       "source": "transcript",
-      "at": 4636
+      "at": 4625.37
     },
     {
       "id": "koncert-drowning-pool",
       "label": "Drowning Pool",
       "type": "concert",
       "source": "transcript",
-      "at": 4928
+      "at": 4916.7
     },
     {
       "id": "koncert-rivers-of-nihil",
       "label": "Rivers of Nihil",
       "type": "concert",
       "source": "transcript",
-      "at": 4963
+      "at": 4951.62
     },
     {
       "id": "hells-bells-festival",
       "label": "Hells Bells Festival",
       "type": "event",
       "source": "transcript",
-      "at": 5360
+      "at": 5347.71
     },
     {
       "id": "koncert-nonslaughter",
       "label": "Nonslaughter",
       "type": "concert",
       "source": "transcript",
-      "at": 6282
+      "at": 6267.6
     },
     {
       "id": "koncert-lada",
       "label": "Lada",
       "type": "concert",
       "source": "transcript",
-      "at": 6765
+      "at": 6749.49
     },
     {
       "id": "koncert-cavalera-brothers",
       "label": "Cavalera Brothers",
       "type": "concert",
       "source": "transcript",
-      "at": 6794
+      "at": 6778.42
     },
     {
       "id": "jarek-szubrycht",
@@ -377,9 +377,9 @@
   ],
   "tracks": [
     {
-      "start": 130,
-      "end": 317,
-      "durationSec": 188,
+      "start": 129.7,
+      "end": 316.27,
+      "durationSec": 187.57,
       "artist": "DOWN",
       "title": "Right Place, Wrong Time",
       "album": "Right Place, Wrong Time - Single",
@@ -390,9 +390,9 @@
       "links": []
     },
     {
-      "start": 469,
-      "end": 848.07,
-      "durationSec": 380,
+      "start": 467.92,
+      "end": 846.13,
+      "durationSec": 379.13,
       "artist": "Anthrax",
       "title": "It's For the Kids",
       "album": "Cursum Perficio",
@@ -403,9 +403,9 @@
       "links": []
     },
     {
-      "start": 953,
-      "end": 1178,
-      "durationSec": 226,
+      "start": 950.81,
+      "end": 1175.3,
+      "durationSec": 225.48,
       "artist": "A.A. Williams",
       "title": "Wolves",
       "album": "Solstice",
@@ -416,9 +416,9 @@
       "links": []
     },
     {
-      "start": 1274,
-      "end": 1521.12,
-      "durationSec": 248,
+      "start": 1271.08,
+      "end": 1517.63,
+      "durationSec": 247.43,
       "artist": "Vader",
       "title": "Reborn In Flames",
       "album": "Reborn In Chaos (Bonus Tracks Version)",
@@ -429,9 +429,9 @@
       "links": []
     },
     {
-      "start": 1679,
-      "end": 1835,
-      "durationSec": 158,
+      "start": 1675.15,
+      "end": 1830.79,
+      "durationSec": 157.64,
       "artist": "Jungle Rot",
       "title": "Humans Shall Pay",
       "album": null,
@@ -442,9 +442,9 @@
       "links": []
     },
     {
-      "start": 1937,
-      "end": 2133,
-      "durationSec": 197,
+      "start": 1932.56,
+      "end": 2128.11,
+      "durationSec": 196.55,
       "artist": "High Vis",
       "title": "Feeling Bless",
       "album": "Guided Tour",
@@ -455,9 +455,9 @@
       "links": []
     },
     {
-      "start": 2246,
-      "end": 2485.38,
-      "durationSec": 241,
+      "start": 2240.85,
+      "end": 2479.68,
+      "durationSec": 240.45,
       "artist": "Malevolence",
       "title": "Salt The Wound",
       "album": "Where Only The Truth Is Spoken",
@@ -468,9 +468,9 @@
       "links": []
     },
     {
-      "start": 2697,
-      "end": 2992,
-      "durationSec": 297,
+      "start": 2690.82,
+      "end": 2985.14,
+      "durationSec": 296.32,
       "artist": "Madball",
       "title": "Rebel Kids",
       "album": "Not Your Kingdom",
@@ -481,9 +481,9 @@
       "links": []
     },
     {
-      "start": 3242,
-      "end": 3832.96,
-      "durationSec": 593,
+      "start": 3234.57,
+      "end": 3824.17,
+      "durationSec": 591.64,
       "artist": "BABYMETAL & Polyphia",
       "title": "Sunset Kiss",
       "album": "METAL FORTH",
@@ -494,9 +494,9 @@
       "links": []
     },
     {
-      "start": 3909,
-      "end": 4598.85,
-      "durationSec": 691,
+      "start": 3900.04,
+      "end": 4588.3,
+      "durationSec": 689.42,
       "artist": "Trivium",
       "title": "Torn Between Scylla and Charybdis",
       "album": "Shogun",
@@ -507,9 +507,9 @@
       "links": []
     },
     {
-      "start": 4686,
-      "end": 4928,
-      "durationSec": 244,
+      "start": 4675.26,
+      "end": 4916.7,
+      "durationSec": 243.44,
       "artist": "Nothing",
       "title": "Famine Asylum",
       "album": "The Great Dismal",
@@ -520,9 +520,9 @@
       "links": []
     },
     {
-      "start": 5022,
-      "end": 5359.57,
-      "durationSec": 339,
+      "start": 5010.48,
+      "end": 5347.28,
+      "durationSec": 338.22,
       "artist": "Rivers of Nihil",
       "title": "House of Light",
       "album": "Rivers of Nihil",
@@ -533,9 +533,9 @@
       "links": []
     },
     {
-      "start": 5577,
-      "end": 6407,
-      "durationSec": 706,
+      "start": 5564.21,
+      "end": 6392.31,
+      "durationSec": 704.38,
       "artist": "Dola",
       "title": "Tabernakulum",
       "album": "Tabernakulum",
@@ -546,9 +546,9 @@
       "links": []
     },
     {
-      "start": 6407,
-      "end": 6765,
-      "durationSec": 359,
+      "start": 6392.31,
+      "end": 6749.49,
+      "durationSec": 358.18,
       "artist": "Nunslaughter",
       "title": "Satanic Chaos Legions",
       "album": "Satanic Chaos Legions",
@@ -559,9 +559,9 @@
       "links": []
     },
     {
-      "start": 6836,
-      "end": 7251,
-      "durationSec": 415,
+      "start": 6820.33,
+      "end": 7234.37,
+      "durationSec": 414.05,
       "artist": "Sepultura",
       "title": "Kaiowas",
       "album": "The Complete Max Cavalera Collection 1987-1996",
@@ -586,5 +586,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 7251.043
 }

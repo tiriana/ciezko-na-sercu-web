@@ -2,8 +2,8 @@
   "version": 1,
   "id": "3a309423-9d2b-429e-829b-92b7d784735d",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.913Z",
-  "durationSec": 6763,
+  "updatedAt": "2026-11-12T00:02:02.371Z",
+  "durationSec": 6762.528,
   "summary": "Odcinek to pierwsza część podsumowania roku 2024 — subiektywny wybór dwudziestu ulubionych zagranicznych płyt, z zapowiedzią, że część polska pojawi się tydzień później. Prowadzący omówił m.in. albumy Blood Incantation „Absolute Elsewhere”, Gigan „Anomalous Abstractigate Infinitesimus”, Leprous „Melodies of Atonement”, High on Fire „Cometh the Storm”, Big Brave „A Chaos of Flowers” i Julie Christmas „Ridiculous and Full of Blood”. Knocked Loose płytą „You Won't Go Before You're Supposed To” przebili się do nowej publiczności, czego dowodem była burza wokół występu w nocnym programie Jimmy'ego Kimmela. Full of Hell wydali w ciągu roku dwie płyty — „Coagulated Bliss” oraz „Scraping the Divine” nagraną z Andrew Nolanem — a The Body po raz kolejny połączyli siły z inną artystką, tym razem z Felicią Chen. Prowadzący wspomniał, że pracuje nad książką o metalu granym przez rdzennych Amerykanów, i opowiadał o wykorzystaniu tradycyjnych bębnów i fletów przez zespół Tom Pantley. Za swój ulubiony album roku uznał „Muuntautuja” fińskiej grupy Oranssi Pazuzu.",
   "topics": [
     {
@@ -32,38 +32,38 @@
       "label": "High on Fire i album Cometh the Storm"
     },
     {
-      "start": 1659,
-      "end": 1679,
+      "start": 1659.01,
+      "end": 1679.01,
       "label": "Big Brave i album A Chaos of Flowers"
     },
     {
-      "start": 2383,
-      "end": 2475,
+      "start": 2383.01,
+      "end": 2475.01,
       "label": "Knocked Loose i burza wokół występu telewizyjnego"
     },
     {
-      "start": 2924,
-      "end": 2946,
+      "start": 2924.01,
+      "end": 2946.01,
       "label": "Rozwiązanie Oxbow i nowa płyta Buñuel"
     },
     {
-      "start": 3158,
-      "end": 3251,
+      "start": 3158.01,
+      "end": 3251.01,
       "label": "Tzompantli i metal rdzennych Amerykanów"
     },
     {
-      "start": 3733,
-      "end": 3773,
+      "start": 3733.01,
+      "end": 3773.02,
       "label": "Dwie płyty Full of Hell z 2024 roku"
     },
     {
-      "start": 4687,
-      "end": 4765,
+      "start": 4687.02,
+      "end": 4765.02,
       "label": "The Body i Dis Fig, Orchards of Futile Heaven"
     },
     {
-      "start": 6065.51,
-      "end": 6214,
+      "start": 6065.53,
+      "end": 6214.02,
       "label": "Oranssi Pazuzu i album roku Muuntautuja"
     }
   ],
@@ -73,7 +73,7 @@
       "label": "Big Brave",
       "type": "artist",
       "source": "tracks",
-      "at": 1679
+      "at": 1679.01
     },
     {
       "id": "blood-incantation",
@@ -87,49 +87,49 @@
       "label": "Buñuel",
       "type": "artist",
       "source": "tracks",
-      "at": 2946
+      "at": 2946.01
     },
     {
       "id": "chat-pile",
       "label": "Chat Pile",
       "type": "artist",
       "source": "tracks",
-      "at": 2674
+      "at": 2674.01
     },
     {
       "id": "concrete-winds",
       "label": "Concrete Winds",
       "type": "artist",
       "source": "tracks",
-      "at": 4135
+      "at": 4135.02
     },
     {
       "id": "couch-slut",
       "label": "Couch Slut",
       "type": "artist",
       "source": "tracks",
-      "at": 5858
+      "at": 5858.02
     },
     {
       "id": "fange",
       "label": "Fange",
       "type": "artist",
       "source": "tracks",
-      "at": 5154
+      "at": 5154.02
     },
     {
       "id": "full-of-hell",
       "label": "Full of Hell",
       "type": "artist",
       "source": "tracks",
-      "at": 3773
+      "at": 3773.02
     },
     {
       "id": "full-of-hell-andrew-nolan",
       "label": "Full of Hell & Andrew Nolan",
       "type": "artist",
       "source": "tracks",
-      "at": 3904
+      "at": 3904.02
     },
     {
       "id": "gigan",
@@ -150,21 +150,21 @@
       "label": "Inter Arma",
       "type": "artist",
       "source": "tracks",
-      "at": 4373
+      "at": 4373.02
     },
     {
       "id": "julie-christmas",
       "label": "Julie Christmas",
       "type": "artist",
       "source": "tracks",
-      "at": 2069
+      "at": 2069.01
     },
     {
       "id": "knocked-loose",
       "label": "Knocked Loose",
       "type": "artist",
       "source": "tracks",
-      "at": 2475
+      "at": 2475.01
     },
     {
       "id": "leprous",
@@ -178,63 +178,63 @@
       "label": "Oranssi Pazuzu",
       "type": "artist",
       "source": "tracks",
-      "at": 6214
+      "at": 6214.02
     },
     {
       "id": "the-body-dis-fig",
       "label": "The Body & Dis Fig",
       "type": "artist",
       "source": "tracks",
-      "at": 4765
+      "at": 4765.02
     },
     {
       "id": "trelldom",
       "label": "Trelldom",
       "type": "artist",
       "source": "tracks",
-      "at": 5501
+      "at": 5501.02
     },
     {
       "id": "tzompantli",
       "label": "Tzompantli",
       "type": "artist",
       "source": "tracks",
-      "at": 3251
+      "at": 3251.01
     },
     {
       "id": "vircolac",
       "label": "Vircolac",
       "type": "artist",
       "source": "tracks",
-      "at": 1453
+      "at": 1453.01
     },
     {
       "id": "ksiazka-o-metalu-granym-przez-rdzennych-amerykanow-w-przygotowaniu",
       "label": "książka o metalu granym przez rdzennych Amerykanów (w przygotowaniu)",
       "type": "work",
       "source": "transcript",
-      "at": 3158
+      "at": 3158.01
     },
     {
       "id": "koncert-full-of-hell-w-warszawskiej-progresji-luty",
       "label": "Full of Hell w warszawskiej Progresji (luty)",
       "type": "concert",
       "source": "transcript",
-      "at": 3761
+      "at": 3761.02
     },
     {
       "id": "koncert-ostatni-koncert-na-ktorym-prowadzacy-byl-w-2024-roku",
       "label": "ostatni koncert, na którym prowadzący był w 2024 roku",
       "type": "concert",
       "source": "transcript",
-      "at": 5416
+      "at": 5416.02
     },
     {
       "id": "roadburn",
       "label": "Roadburn",
       "type": "event",
       "source": "transcript",
-      "at": 5815
+      "at": 5815.02
     },
     {
       "id": "jarek-szubrycht",
@@ -291,7 +291,7 @@
     },
     {
       "start": 1080,
-      "end": 1412.01,
+      "end": 1412.02,
       "durationSec": 333,
       "artist": "High On Fire",
       "title": "Trismegistus",
@@ -303,8 +303,8 @@
       "links": []
     },
     {
-      "start": 1453,
-      "end": 1659,
+      "start": 1453.01,
+      "end": 1659.01,
       "durationSec": 204,
       "artist": "Vircolac",
       "title": "All Comes to Pass, Nothing Shall Remain",
@@ -316,8 +316,8 @@
       "links": []
     },
     {
-      "start": 1679,
-      "end": 1987.14,
+      "start": 1679.01,
+      "end": 1987.15,
       "durationSec": 308,
       "artist": "Big Brave",
       "title": "Canon: In Canon",
@@ -329,8 +329,8 @@
       "links": []
     },
     {
-      "start": 2069,
-      "end": 2383,
+      "start": 2069.01,
+      "end": 2383.01,
       "durationSec": 314,
       "artist": "Julie Christmas",
       "title": "Seven Days",
@@ -342,8 +342,8 @@
       "links": []
     },
     {
-      "start": 2475,
-      "end": 2637.54,
+      "start": 2475.01,
+      "end": 2637.55,
       "durationSec": 164,
       "artist": "Knocked Loose",
       "title": "Suffocate (feat. Poppy)",
@@ -355,8 +355,8 @@
       "links": []
     },
     {
-      "start": 2674,
-      "end": 2924,
+      "start": 2674.01,
+      "end": 2924.01,
       "durationSec": 248,
       "artist": "Chat Pile",
       "title": "Masc",
@@ -368,8 +368,8 @@
       "links": []
     },
     {
-      "start": 2946,
-      "end": 3158,
+      "start": 2946.01,
+      "end": 3158.01,
       "durationSec": 214,
       "artist": "Buñuel",
       "title": "Drug Burn",
@@ -381,8 +381,8 @@
       "links": []
     },
     {
-      "start": 3251,
-      "end": 3733,
+      "start": 3251.01,
+      "end": 3733.01,
       "durationSec": 484,
       "artist": "Tzompantli",
       "title": "Tetzaviztli",
@@ -394,8 +394,8 @@
       "links": []
     },
     {
-      "start": 3773,
-      "end": 3871.81,
+      "start": 3773.02,
+      "end": 3871.83,
       "durationSec": 100,
       "artist": "Full of Hell",
       "title": "Vacuous Dose",
@@ -407,8 +407,8 @@
       "links": []
     },
     {
-      "start": 3904,
-      "end": 4108.46,
+      "start": 3904.02,
+      "end": 4108.48,
       "durationSec": 205,
       "artist": "Full of Hell & Andrew Nolan",
       "title": "Facing the Divide (feat. GxCx)",
@@ -420,8 +420,8 @@
       "links": []
     },
     {
-      "start": 4135,
-      "end": 4353.38,
+      "start": 4135.02,
+      "end": 4353.4,
       "durationSec": 220,
       "artist": "Concrete Winds",
       "title": "Demented Gospels",
@@ -433,8 +433,8 @@
       "links": []
     },
     {
-      "start": 4373,
-      "end": 4687,
+      "start": 4373.02,
+      "end": 4687.02,
       "durationSec": 315,
       "artist": "Inter Arma",
       "title": "Concrete Cliffs",
@@ -446,8 +446,8 @@
       "links": []
     },
     {
-      "start": 4765,
-      "end": 5116.52,
+      "start": 4765.02,
+      "end": 5116.54,
       "durationSec": 352,
       "artist": "The Body & Dis Fig",
       "title": "Orchards of a Futile Heaven",
@@ -459,8 +459,8 @@
       "links": []
     },
     {
-      "start": 5154,
-      "end": 5415.65,
+      "start": 5154.02,
+      "end": 5415.67,
       "durationSec": 264,
       "artist": "Fange",
       "title": "Lèche-Béton",
@@ -472,8 +472,8 @@
       "links": []
     },
     {
-      "start": 5501,
-      "end": 5815.26,
+      "start": 5501.02,
+      "end": 5815.28,
       "durationSec": 315,
       "artist": "Trelldom",
       "title": "Exit Existence",
@@ -485,8 +485,8 @@
       "links": []
     },
     {
-      "start": 5858,
-      "end": 6065.51,
+      "start": 5858.02,
+      "end": 6065.53,
       "durationSec": 209,
       "artist": "Couch Slut",
       "title": "Downhill Racer",
@@ -498,8 +498,8 @@
       "links": []
     },
     {
-      "start": 6214,
-      "end": 6763,
+      "start": 6214.02,
+      "end": 6763.03,
       "durationSec": 548,
       "artist": "Oranssi Pazuzu",
       "title": "Ikikäärme",
@@ -525,5 +525,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6762.5
 }

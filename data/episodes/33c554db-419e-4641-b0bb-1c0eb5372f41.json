@@ -2,68 +2,68 @@
   "version": 1,
   "id": "33c554db-419e-4641-b0bb-1c0eb5372f41",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.889Z",
-  "durationSec": 6869,
+  "updatedAt": "2026-11-11T23:58:17.697Z",
+  "durationSec": 6853.307,
   "summary": "Cały odcinek wypełniły nowe polskie wydawnictwa, w większości metalowe. Obok minialbumów Tarabanu („Oath”) i Love Worms oraz singla Oranżady „So Many Faces” towarzyszącego improwizowanej płycie „Salto”, zapowiedziano jesienny album Acid Sitter nagrywany z Maciejem Cieślakiem, a także nowy minialbum Vadera „Human Hility” — pierwszy nagrany w kwintetowym składzie, z utworem „Unbending” jako hymnem Mystic Festival. Sporo miejsca poświęcono cięższym premierom: trzynastej płycie Behemota „The Shit of God” z produkcją Jensa Bogrena, powrotowi Medico Peste po pięciu latach („Aesthetic of Hunger”), debiutowi supergrupy Stellar Blight oraz albumom „Wielkie Zanikanie” zespołu zmarłym, „Lament” Martwej Aury i „Void” Warnheim. Prowadzący omówił też „Bluzg” Vee, w którym Tuja Szmaragd zamiast śpiewać zaczęła krzyczeć po blackmetalowemu, oceniając to jako udany, ale raczej jednorazowy eksperyment. Wśród pozostałych nowości znalazły się płyty Toughness („Black Respite of Oblivion”), Frightful („What Lies Ahead”), Loth Finder („Broken Branches and Torn Roots”) łączący black ze sludge’em i doomem oraz doomowy „We’re All Doomed” tria Metallus. Wątek poboczny dotyczył słowiańskiego folku i neopogaństwa — od dawnych zasad dopuszczających Dead Can Dance po Wardrunę i projekt OLS Anny Marii Olchawy z albumem „Poświaty”.",
   "topics": [
     {
-      "start": 187,
-      "end": 265,
+      "start": 186.57,
+      "end": 264.39,
       "label": "Krakowski Taraban i mini-album Oath"
     },
     {
-      "start": 786,
-      "end": 838,
+      "start": 784.2,
+      "end": 836.08,
       "label": "Debiut gdańskiego Love Worms; post-punk"
     },
     {
-      "start": 1022,
-      "end": 1099,
+      "start": 1019.66,
+      "end": 1096.48,
       "label": "Oranżada: singiel So Many Faces i płyta Salto"
     },
     {
-      "start": 1281,
-      "end": 1335,
+      "start": 1278.06,
+      "end": 1331.94,
       "label": "Acid Sitter i Psychopomp; produkcja Macieja Cieślaka"
     },
     {
-      "start": 1635.62,
-      "end": 1788,
+      "start": 1631.87,
+      "end": 1783.9,
       "label": "OLS i album Poświaty; słowiański neofolk"
     },
     {
-      "start": 2023.52,
-      "end": 2194,
+      "start": 2018.88,
+      "end": 2188.97,
       "label": "Vee i Bluzg; blackmetalowy zwrot Tui Szmaragd"
     },
     {
-      "start": 2273.57,
-      "end": 2416,
+      "start": 2268.36,
+      "end": 2410.46,
       "label": "Behemoth: The Shit of God i produkcja Jensa Bogrena"
     },
     {
-      "start": 3118,
-      "end": 3186,
+      "start": 3110.85,
+      "end": 3178.69,
       "label": "Medico Peste wraca z Aesthetic of Hunger"
     },
     {
-      "start": 3752,
-      "end": 3826,
+      "start": 3743.4,
+      "end": 3817.23,
       "label": "Zmarłym i Wielkie Zanikanie; black metal z Końskich"
     },
     {
-      "start": 5077,
-      "end": 5168,
+      "start": 5065.36,
+      "end": 5156.15,
       "label": "Vader: Human Hility i hymn Mystic Festival"
     },
     {
-      "start": 5752,
-      "end": 5789,
+      "start": 5738.81,
+      "end": 5775.73,
       "label": "Frightful i What Lies Ahead; thrash z melodiami"
     },
     {
-      "start": 6390.26,
-      "end": 6462,
+      "start": 6375.61,
+      "end": 6447.18,
       "label": "Metallus i We're All Doomed; warszawski doom"
     }
   ],
@@ -73,21 +73,21 @@
       "label": "AcidSitter",
       "type": "artist",
       "source": "tracks",
-      "at": 1335
+      "at": 1331.94
     },
     {
       "id": "behemoth",
       "label": "Behemoth",
       "type": "artist",
       "source": "tracks",
-      "at": 2416
+      "at": 2410.46
     },
     {
       "id": "frightful",
       "label": "Frightful",
       "type": "artist",
       "source": "tracks",
-      "at": 5789
+      "at": 5775.73
     },
     {
       "id": "jarek-szubrycht",
@@ -106,14 +106,14 @@
       "label": "Loathfinder",
       "type": "artist",
       "source": "tracks",
-      "at": 6110
+      "at": 6095.99
     },
     {
       "id": "loveworms",
       "label": "Loveworms",
       "type": "artist",
       "source": "tracks",
-      "at": 629
+      "at": 627.56
     },
     {
       "id": "mariusz-owczarek",
@@ -126,91 +126,91 @@
       "label": "Medico Peste",
       "type": "artist",
       "source": "tracks",
-      "at": 3186
+      "at": 3178.69
     },
     {
       "id": "metallus",
       "label": "Metallus",
       "type": "artist",
       "source": "tracks",
-      "at": 6462
+      "at": 6447.18
     },
     {
       "id": "ols",
       "label": "Ols",
       "type": "artist",
       "source": "tracks",
-      "at": 1788
+      "at": 1783.9
     },
     {
       "id": "oranzada",
       "label": "Oranżada",
       "type": "artist",
       "source": "tracks",
-      "at": 838
+      "at": 836.08
     },
     {
       "id": "taraban",
       "label": "Taraban",
       "type": "artist",
       "source": "tracks",
-      "at": 6
+      "at": 5.99
     },
     {
       "id": "toughness",
       "label": "Toughness",
       "type": "artist",
       "source": "tracks",
-      "at": 5433
+      "at": 5420.54
     },
     {
       "id": "vader",
       "label": "Vader",
       "type": "artist",
       "source": "tracks",
-      "at": 5168
+      "at": 5156.15
     },
     {
       "id": "varnheim",
       "label": "Varnheim",
       "type": "artist",
       "source": "tracks",
-      "at": 4535
+      "at": 4524.6
     },
     {
       "id": "wij",
       "label": "Wij",
       "type": "artist",
       "source": "tracks",
-      "at": 2194
+      "at": 2188.97
     },
     {
       "id": "zmarlym",
       "label": "Zmarłym",
       "type": "artist",
       "source": "tracks",
-      "at": 3826
+      "at": 3817.23
     },
     {
       "id": "serial-o-wikingach",
       "label": "Serial o wikingach",
       "type": "work",
       "source": "transcript",
-      "at": 1718
+      "at": 1714.06
     },
     {
       "id": "mystic-festival",
       "label": "Mystic Festival",
       "type": "event",
       "source": "transcript",
-      "at": 5156
+      "at": 5144.18
     }
   ],
   "tracks": [
     {
-      "start": 6,
-      "end": 187,
-      "durationSec": 182,
+      "start": 5.99,
+      "end": 186.57,
+      "durationSec": 181.58,
       "artist": "Taraban",
       "title": "Country Song",
       "album": "OATH - EP",
@@ -222,9 +222,9 @@
       "links": []
     },
     {
-      "start": 265,
-      "end": 531.24,
-      "durationSec": 268,
+      "start": 264.39,
+      "end": 530.02,
+      "durationSec": 267.39,
       "artist": "Taraban",
       "title": "The Oath",
       "album": "OATH - EP",
@@ -235,9 +235,9 @@
       "links": []
     },
     {
-      "start": 629,
-      "end": 786,
-      "durationSec": 158,
+      "start": 627.56,
+      "end": 784.2,
+      "durationSec": 157.64,
       "artist": "Loveworms",
       "title": "The Drop",
       "album": "Loveworms",
@@ -248,9 +248,9 @@
       "links": []
     },
     {
-      "start": 838,
-      "end": 1022,
-      "durationSec": 185,
+      "start": 836.08,
+      "end": 1019.66,
+      "durationSec": 184.58,
       "artist": "Oranżada",
       "title": "So Many Faces",
       "album": "So Many Faces - Single",
@@ -261,9 +261,9 @@
       "links": []
     },
     {
-      "start": 1099,
-      "end": 1281,
-      "durationSec": 183,
+      "start": 1096.48,
+      "end": 1278.06,
+      "durationSec": 182.58,
       "artist": "Oranżada",
       "title": "Ostatnie poprawki galaktycznego krawca (feat. Maja Laura)",
       "album": "Salto (feat. Maja Laura)",
@@ -274,9 +274,9 @@
       "links": []
     },
     {
-      "start": 1335,
-      "end": 1635.62,
-      "durationSec": 302,
+      "start": 1331.94,
+      "end": 1631.87,
+      "durationSec": 301.31,
       "artist": "AcidSitter",
       "title": "PSYCHOPOMP",
       "album": "Escape from Egoland",
@@ -287,9 +287,9 @@
       "links": []
     },
     {
-      "start": 1788,
-      "end": 2023.52,
-      "durationSec": 238,
+      "start": 1783.9,
+      "end": 2018.88,
+      "durationSec": 237.45,
       "artist": "Ols",
       "title": "proch kość liść",
       "album": "Poświaty",
@@ -300,9 +300,9 @@
       "links": []
     },
     {
-      "start": 2194,
-      "end": 2273.57,
-      "durationSec": 82,
+      "start": 2188.97,
+      "end": 2268.36,
+      "durationSec": 81.81,
       "artist": "Wij",
       "title": "Kretoszczur",
       "album": "Bluzg - EP",
@@ -313,9 +313,9 @@
       "links": []
     },
     {
-      "start": 2416,
-      "end": 3118,
-      "durationSec": 347,
+      "start": 2410.46,
+      "end": 3110.85,
+      "durationSec": 346.2,
       "artist": "Behemoth",
       "title": "O Venvs, Come",
       "album": "The Shit Ov God",
@@ -326,9 +326,9 @@
       "links": []
     },
     {
-      "start": 3186,
-      "end": 3752,
-      "durationSec": 567,
+      "start": 3178.69,
+      "end": 3743.4,
+      "durationSec": 565.7,
       "artist": "Medico Peste",
       "title": "Viaticum",
       "album": "Aesthetic Of Hunger",
@@ -339,9 +339,9 @@
       "links": []
     },
     {
-      "start": 3826,
-      "end": 4535,
-      "durationSec": 282,
+      "start": 3817.23,
+      "end": 4524.6,
+      "durationSec": 281.35,
       "artist": "Zmarłym",
       "title": "Bunt Maszyn",
       "album": "Wielkie Zanikanie",
@@ -352,9 +352,9 @@
       "links": []
     },
     {
-      "start": 4535,
-      "end": 5077,
-      "durationSec": 543,
+      "start": 4524.6,
+      "end": 5065.36,
+      "durationSec": 541.75,
       "artist": "Varnheim",
       "title": "Onwards",
       "album": "VOID",
@@ -365,9 +365,9 @@
       "links": []
     },
     {
-      "start": 5168,
-      "end": 5382.24,
-      "durationSec": 216,
+      "start": 5156.15,
+      "end": 5369.9,
+      "durationSec": 215.5,
       "artist": "Vader",
       "title": "Unbending (Mystic Festival Anthem 2025)",
       "album": "Humanihility - Single",
@@ -378,9 +378,9 @@
       "links": []
     },
     {
-      "start": 5433,
-      "end": 5752,
-      "durationSec": 320,
+      "start": 5420.54,
+      "end": 5738.81,
+      "durationSec": 319.27,
       "artist": "Toughness",
       "title": "The Profanity That Creates an Expression of Pain at the Impossibility of Ascending to the Lower Realms",
       "album": "Black Respite of Oblivion",
@@ -391,9 +391,9 @@
       "links": []
     },
     {
-      "start": 5789,
-      "end": 6060.84,
-      "durationSec": 272,
+      "start": 5775.73,
+      "end": 6046.94,
+      "durationSec": 271.38,
       "artist": "Frightful",
       "title": "Cathedrals of Creation",
       "album": "What Lies Ahead",
@@ -404,9 +404,9 @@
       "links": []
     },
     {
-      "start": 6110,
-      "end": 6390.26,
-      "durationSec": 281,
+      "start": 6095.99,
+      "end": 6375.61,
+      "durationSec": 280.36,
       "artist": "Loathfinder",
       "title": "Dead dogs",
       "album": "Broken branches and torn roots",
@@ -417,9 +417,9 @@
       "links": []
     },
     {
-      "start": 6462,
-      "end": 6869,
-      "durationSec": 407,
+      "start": 6447.18,
+      "end": 6853.25,
+      "durationSec": 406.07,
       "artist": "Metallus",
       "title": "Job's Lament",
       "album": "We're All Doomed",
@@ -432,7 +432,7 @@
   ],
   "quotes": [
     {
-      "start": 4,
+      "start": 3.99,
       "text": "Posłuchajmy The Oath, a więc utworu tytułowego Zrzeczonej Epki."
     }
   ],
@@ -452,8 +452,9 @@
     {
       "role": "producent",
       "name": "Jens Bogren",
-      "time": 39,
+      "time": 38.91,
       "quote": "producenta, czyli Szweda Jensa Bogrena"
     }
-  ]
+  ],
+  "audioDurationSec": 6869.055
 }

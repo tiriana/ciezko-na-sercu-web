@@ -2,8 +2,8 @@
   "version": 1,
   "id": "e3cdffb9-d7f4-4bff-aeff-a0ee9b57f492",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.803Z",
-  "durationSec": 7192,
+  "updatedAt": "2026-11-11T23:53:25.200Z",
+  "durationSec": 7192.08,
   "summary": "Audycja to podsumowanie majowych wydawnictw metalowych. Z Norwegii omówiono trzy skrajnie różne premiery: symfoniczny black metal Dimmu Borgir na płycie Grand Serpent Rising, surowy i prymitywny Prehistoric Metal zespołu Darkthrone oraz album By The World projektu Trelldom Gaahla, uznany przez prowadzącego za najlepszy z tej trójki. Przywołano historię Venom i ich nowy album Into Oblivion z Cronosem, zestawiony z klasycznymi płytami Possessed i Resurrection. Omówiono też Cut a Silhouette Sparty Jima Warda, polski zespół Wolfpack Headin' Nowhere, metalowo-operowy The Moth Devina Townsenda oraz szereg nowości death- i doom-metalowych, w tym Monolord nagrany w USA z producentką Sylvią Massy. Opowiedziano historię Gary'ego Meskilla z Prong, który w 2017 roku omal nie zginął pobity po koncercie w Brukseli, a mimo to wrócił z zespołem i nowym albumem Stone Cold Anger. Na koniec omówiono m.in. tajemniczy polski zespół Kurnugija, wydawnictwa wytwórni Gods of War, grecki Yoth Iria z weteranem sceny Jimem Mutilatorem oraz brytyjski Forest of Stars.",
   "topics": [
     {
@@ -68,21 +68,21 @@
       "label": "A Forest of Stars",
       "type": "artist",
       "source": "tracks",
-      "at": 6645
+      "at": 6645.05
     },
     {
       "id": "bear",
       "label": "BEAR",
       "type": "artist",
       "source": "tracks",
-      "at": 2878
+      "at": 2878.02
     },
     {
       "id": "cage-fight",
       "label": "Cage Fight",
       "type": "artist",
       "source": "tracks",
-      "at": 2647
+      "at": 2647.02
     },
     {
       "id": "darkthrone",
@@ -96,7 +96,7 @@
       "label": "Devin Townsend",
       "type": "artist",
       "source": "tracks",
-      "at": 2281
+      "at": 2281.02
     },
     {
       "id": "dimmu-borgir",
@@ -110,35 +110,35 @@
       "label": "Eradikated",
       "type": "artist",
       "source": "tracks",
-      "at": 3471
+      "at": 3471.02
     },
     {
       "id": "erdve",
       "label": "Erdve",
       "type": "artist",
       "source": "tracks",
-      "at": 4189
+      "at": 4189.03
     },
     {
       "id": "frozen-soul",
       "label": "Frozen Soul",
       "type": "artist",
       "source": "tracks",
-      "at": 4868
+      "at": 4868.03
     },
     {
       "id": "gutrectomy",
       "label": "Gutrectomy",
       "type": "artist",
       "source": "tracks",
-      "at": 5096
+      "at": 5096.04
     },
     {
       "id": "ingested",
       "label": "Ingested",
       "type": "artist",
       "source": "tracks",
-      "at": 5276
+      "at": 5276.04
     },
     {
       "id": "jarek-szubrycht",
@@ -157,63 +157,63 @@
       "label": "Monolord",
       "type": "artist",
       "source": "tracks",
-      "at": 3731
+      "at": 3731.03
     },
     {
       "id": "pro-pain",
       "label": "Pro-Pain",
       "type": "artist",
       "source": "tracks",
-      "at": 3232
+      "at": 3232.02
     },
     {
       "id": "sarcasm",
       "label": "Sarcasm",
       "type": "artist",
       "source": "tracks",
-      "at": 4576
+      "at": 4576.03
     },
     {
       "id": "sparta",
       "label": "Sparta",
       "type": "artist",
       "source": "tracks",
-      "at": 1559
+      "at": 1559.01
     },
     {
       "id": "sznur",
       "label": "Sznur",
       "type": "artist",
       "source": "tracks",
-      "at": 5901
+      "at": 5901.04
     },
     {
       "id": "trelldom",
       "label": "Trelldom",
       "type": "artist",
       "source": "tracks",
-      "at": 906
+      "at": 906.01
     },
     {
       "id": "venom",
       "label": "Venom",
       "type": "artist",
       "source": "tracks",
-      "at": 1316
+      "at": 1316.01
     },
     {
       "id": "wolfpack-heading-nowhere",
       "label": "Wolfpack Heading Nowhere",
       "type": "artist",
       "source": "tracks",
-      "at": 1824
+      "at": 1824.01
     },
     {
       "id": "yoth-iria",
       "label": "Yoth Iria",
       "type": "artist",
       "source": "tracks",
-      "at": 6298
+      "at": 6298.04
     },
     {
       "id": "koncert-wspolna-trasa-dimmu-borgir-z-behemothem",
@@ -240,7 +240,7 @@
     },
     {
       "start": 577,
-      "end": 831.02,
+      "end": 831.03,
       "durationSec": 255,
       "artist": "Darkthrone",
       "title": "Pre-Historic Metal",
@@ -252,8 +252,8 @@
       "links": []
     },
     {
-      "start": 906,
-      "end": 1200.86,
+      "start": 906.01,
+      "end": 1200.87,
       "durationSec": 296,
       "artist": "Trelldom",
       "title": "Folding the Mind",
@@ -265,8 +265,8 @@
       "links": []
     },
     {
-      "start": 1316,
-      "end": 1500.18,
+      "start": 1316.01,
+      "end": 1500.19,
       "durationSec": 186,
       "artist": "Venom",
       "title": "Lay Down Your Soul",
@@ -278,8 +278,8 @@
       "links": []
     },
     {
-      "start": 1559,
-      "end": 1747.72,
+      "start": 1559.01,
+      "end": 1747.73,
       "durationSec": 190,
       "artist": "Sparta",
       "title": "Everything You Say",
@@ -291,8 +291,8 @@
       "links": []
     },
     {
-      "start": 1824,
-      "end": 2164.23,
+      "start": 1824.01,
+      "end": 2164.25,
       "durationSec": 342,
       "artist": "Wolfpack Heading Nowhere",
       "title": "Endure",
@@ -304,8 +304,8 @@
       "links": []
     },
     {
-      "start": 2281,
-      "end": 2564.29,
+      "start": 2281.02,
+      "end": 2564.31,
       "durationSec": 285,
       "artist": "Devin Townsend",
       "title": "Prepare for War",
@@ -317,8 +317,8 @@
       "links": []
     },
     {
-      "start": 2647,
-      "end": 2832.8,
+      "start": 2647.02,
+      "end": 2832.82,
       "durationSec": 188,
       "artist": "Cage Fight",
       "title": "Oxygen",
@@ -330,8 +330,8 @@
       "links": []
     },
     {
-      "start": 2878,
-      "end": 3115.88,
+      "start": 2878.02,
+      "end": 3115.9,
       "durationSec": 240,
       "artist": "BEAR",
       "title": "Metastatic",
@@ -343,8 +343,8 @@
       "links": []
     },
     {
-      "start": 3232,
-      "end": 3445.28,
+      "start": 3232.02,
+      "end": 3445.3,
       "durationSec": 215,
       "artist": "Pro-Pain",
       "title": "OCEANS OF BLOOD",
@@ -356,8 +356,8 @@
       "links": []
     },
     {
-      "start": 3471,
-      "end": 3626.63,
+      "start": 3471.02,
+      "end": 3626.66,
       "durationSec": 157,
       "artist": "Eradikated",
       "title": "British Petroleum",
@@ -369,8 +369,8 @@
       "links": []
     },
     {
-      "start": 3731,
-      "end": 4149.06,
+      "start": 3731.03,
+      "end": 4149.09,
       "durationSec": 419,
       "artist": "Monolord",
       "title": "Oozing Wound",
@@ -382,8 +382,8 @@
       "links": []
     },
     {
-      "start": 4189,
-      "end": 4515.84,
+      "start": 4189.03,
+      "end": 4515.87,
       "durationSec": 328,
       "artist": "Erdve",
       "title": "Nyra",
@@ -395,8 +395,8 @@
       "links": []
     },
     {
-      "start": 4576,
-      "end": 4808.87,
+      "start": 4576.03,
+      "end": 4808.9,
       "durationSec": 234,
       "artist": "Sarcasm",
       "title": "Essence of Existence",
@@ -408,8 +408,8 @@
       "links": []
     },
     {
-      "start": 4868,
-      "end": 5023.33,
+      "start": 4868.03,
+      "end": 5023.37,
       "durationSec": 156,
       "artist": "Frozen Soul",
       "title": "Dreadnought (feat. Sanguisugabogg)",
@@ -421,8 +421,8 @@
       "links": []
     },
     {
-      "start": 5096,
-      "end": 5184.71,
+      "start": 5096.04,
+      "end": 5184.75,
       "durationSec": 90,
       "artist": "Gutrectomy",
       "title": "Eating 6 Humans By Daylight",
@@ -434,8 +434,8 @@
       "links": []
     },
     {
-      "start": 5276,
-      "end": 5901,
+      "start": 5276.04,
+      "end": 5901.04,
       "durationSec": 213,
       "artist": "Ingested",
       "title": "Watch You Fold (feat. John Gallagher)",
@@ -447,8 +447,8 @@
       "links": []
     },
     {
-      "start": 5901,
-      "end": 6237.54,
+      "start": 5901.04,
+      "end": 6237.58,
       "durationSec": 337,
       "artist": "Sznur",
       "title": "Człowiek Wiadro",
@@ -460,8 +460,8 @@
       "links": []
     },
     {
-      "start": 6298,
-      "end": 6574.28,
+      "start": 6298.04,
+      "end": 6574.33,
       "durationSec": 278,
       "artist": "Yoth Iria",
       "title": "3am",
@@ -473,8 +473,8 @@
       "links": []
     },
     {
-      "start": 6645,
-      "end": 7192,
+      "start": 6645.05,
+      "end": 7192.05,
       "durationSec": 547,
       "artist": "A Forest of Stars",
       "title": "Ascension of the Clowns",
@@ -505,5 +505,6 @@
       "time": 8,
       "quote": "i Mariusz Owczarek, jej wydawca."
     }
-  ]
+  ],
+  "audioDurationSec": 7192.033
 }

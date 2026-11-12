@@ -2,8 +2,8 @@
   "version": 1,
   "id": "acfe74c9-df8f-45fe-b04e-d21be9c3cb6a",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.811Z",
-  "durationSec": 7174,
+  "updatedAt": "2026-11-11T23:53:44.040Z",
+  "durationSec": 7174.128,
   "summary": "Audycja to przegląd kwietniowych nowości: otwiera ją podwójny album Corrosion of Conformity „Good God, Bad Man”, nagrany częściowo w prywatnym studiu Barry'ego Giba, łączący hardcore, southern rock, stoner i doom. Omówiono też szwedzki „Master Flow” Truck Fighters (zespół zagra w czerwcu na Mystic Festiwalu), „Hymns from the Hills” Poison Ruin, „Diet of Worms” The Shits oraz wspólny album Melvins i Napalm Death „Savage Imperial Death March”, którego tytuł pochodzi od nazwy ich wspólnych tras koncertowych. Szeroko omówiono dwa pożegnalne wydawnictwa: epkę Sepultury „The Cloud of Unknowing”, o której istnieniu prowadzący dowiedział się rok wcześniej od Andreasa Kissera podczas Mystic Talks, oraz album At The Gates „The Ghost of Future Death”, nagrany przed śmiercią wokalisty Thomasa Lindberga — zdążył on zarejestrować demo wokali dzień przed operacją nowotworu ślinianek i zmarł we wrześniu 2025 roku, a zespół dokończył płytę według jego wskazówek. Dalej zaprezentowano nowości z pogranicza death i black metalu: Skindred („You Got This”, z elementami reggae i rapu), Landloss („Nowhere, in Between, Forever”), A Treju („The End is Not The End”), Nervozę („Slave Machine”), Vomitory („In Death Throws”), Xorcist („Aberrations”), Immolation („Descent”), Unearthly Rides („Total Symphony of the Flesh”), Ord („Blind in Abyssal Realms”), polski zespół Blinded 23 z debiutanckim albumem „Deuterium” (z udziałem m.in. Rogera Öjersanda z Katatonii i Pawła Jaroszewicza), Witch Rippera („Through the Hourglass”), Dötzsfängera („Within the Flesh”) oraz holenderski Dude Swens.",
   "topics": [
     {
@@ -17,53 +17,53 @@
       "label": "Truck Fighters, płyta Master Flow i występ na Mystic Festival"
     },
     {
-      "start": 1098,
-      "end": 1175,
+      "start": 1098.01,
+      "end": 1175.01,
       "label": "Poison Ruin i album Hymns from the Hills"
     },
     {
-      "start": 1322,
-      "end": 1370,
+      "start": 1322.01,
+      "end": 1370.01,
       "label": "The Shits i punkowa płyta Diet of Worms"
     },
     {
-      "start": 1626,
-      "end": 1682,
+      "start": 1626.01,
+      "end": 1682.01,
       "label": "Melvins i Napalm Death, wspólny Savage Imperial Death March"
     },
     {
-      "start": 2256,
-      "end": 2377,
+      "start": 2256.01,
+      "end": 2377.01,
       "label": "Skindred i album You Got This łączący metal z reggae"
     },
     {
-      "start": 3000,
-      "end": 3098,
+      "start": 3000.02,
+      "end": 3098.02,
       "label": "Sepultura i pożegnalna EP The Cloud of Unknowing"
     },
     {
-      "start": 3455,
-      "end": 3568,
+      "start": 3455.02,
+      "end": 3568.02,
       "label": "At the Gates, pośmiertny album The Ghost of Future Death"
     },
     {
-      "start": 4053,
-      "end": 4123,
+      "start": 4053.02,
+      "end": 4123.02,
       "label": "Vomitory i deathmetalowy album In Death Throws"
     },
     {
-      "start": 4540,
-      "end": 4615,
+      "start": 4540.02,
+      "end": 4615.02,
       "label": "Immolation i dwunasty album Descent"
     },
     {
-      "start": 5547,
-      "end": 5637,
+      "start": 5547.03,
+      "end": 5637.03,
       "label": "Blinded 23 i debiutancki album Deuterium"
     },
     {
-      "start": 6561,
-      "end": 6631,
+      "start": 6561.03,
+      "end": 6631.03,
       "label": "Dödsfänger i blackmetalowy album Within the Flesh"
     }
   ],
@@ -73,14 +73,14 @@
       "label": "At The Gates",
       "type": "artist",
       "source": "tracks",
-      "at": 3568
+      "at": 3568.02
     },
     {
       "id": "blindead-23",
       "label": "Blindead 23",
       "type": "artist",
       "source": "tracks",
-      "at": 5637
+      "at": 5637.03
     },
     {
       "id": "corrosion-of-conformity",
@@ -94,77 +94,77 @@
       "label": "Doedsvangr",
       "type": "artist",
       "source": "tracks",
-      "at": 6631
+      "at": 6631.03
     },
     {
       "id": "doodswens",
       "label": "Doodswens",
       "type": "artist",
       "source": "tracks",
-      "at": 6907
+      "at": 6907.03
     },
     {
       "id": "immolation",
       "label": "Immolation",
       "type": "artist",
       "source": "tracks",
-      "at": 4615
+      "at": 4615.02
     },
     {
       "id": "lantlos",
       "label": "Lantlôs",
       "type": "artist",
       "source": "tracks",
-      "at": 2642
+      "at": 2642.01
     },
     {
       "id": "melvins-napalm-death",
       "label": "Melvins & Napalm Death",
       "type": "artist",
       "source": "tracks",
-      "at": 1682
+      "at": 1682.01
     },
     {
       "id": "nervosa",
       "label": "Nervosa",
       "type": "artist",
       "source": "tracks",
-      "at": 3823
+      "at": 3823.02
     },
     {
       "id": "ordh",
       "label": "Ordh",
       "type": "artist",
       "source": "tracks",
-      "at": 5183
+      "at": 5183.03
     },
     {
       "id": "poison-ruin",
       "label": "Poison Ruïn",
       "type": "artist",
       "source": "tracks",
-      "at": 1175
+      "at": 1175.01
     },
     {
       "id": "sepultura",
       "label": "Sepultura",
       "type": "artist",
       "source": "tracks",
-      "at": 3098
+      "at": 3098.02
     },
     {
       "id": "skindred",
       "label": "Skindred",
       "type": "artist",
       "source": "tracks",
-      "at": 2377
+      "at": 2377.01
     },
     {
       "id": "the-s-s",
       "label": "The S***s",
       "type": "artist",
       "source": "tracks",
-      "at": 1370
+      "at": 1370.01
     },
     {
       "id": "truckfighters",
@@ -178,28 +178,28 @@
       "label": "Unearthly Rites",
       "type": "artist",
       "source": "tracks",
-      "at": 4906
+      "at": 4906.02
     },
     {
       "id": "vomitory",
       "label": "Vomitory",
       "type": "artist",
       "source": "tracks",
-      "at": 4123
+      "at": 4123.02
     },
     {
       "id": "witch-ripper",
       "label": "Witch Ripper",
       "type": "artist",
       "source": "tracks",
-      "at": 6140
+      "at": 6140.03
     },
     {
       "id": "xorsist",
       "label": "Xorsist",
       "type": "artist",
       "source": "tracks",
-      "at": 4374
+      "at": 4374.02
     },
     {
       "id": "mystic-festiwal",
@@ -213,14 +213,14 @@
       "label": "Mystic Talks",
       "type": "event",
       "source": "transcript",
-      "at": 3009
+      "at": 3009.02
     },
     {
       "id": "koncert-trasa-pozegnalna-sepultury",
       "label": "trasa pożegnalna Sepultury",
       "type": "concert",
       "source": "transcript",
-      "at": 3020
+      "at": 3020.02
     },
     {
       "id": "jarek-szubrycht",
@@ -264,7 +264,7 @@
     },
     {
       "start": 760,
-      "end": 1098,
+      "end": 1098.01,
       "durationSec": 340,
       "artist": "Truckfighters",
       "title": "The Gorgon",
@@ -276,8 +276,8 @@
       "links": []
     },
     {
-      "start": 1175,
-      "end": 1322,
+      "start": 1175.01,
+      "end": 1322.01,
       "durationSec": 148,
       "artist": "Poison Ruïn",
       "title": "Guts (Lay Your Self Aside)",
@@ -289,8 +289,8 @@
       "links": []
     },
     {
-      "start": 1370,
-      "end": 1626,
+      "start": 1370.01,
+      "end": 1626.01,
       "durationSec": 257,
       "artist": "The S***s",
       "title": "Then You're Dead",
@@ -302,8 +302,8 @@
       "links": []
     },
     {
-      "start": 1682,
-      "end": 1876.9,
+      "start": 1682.01,
+      "end": 1876.91,
       "durationSec": 196,
       "artist": "Melvins & Napalm Death",
       "title": "Tossing Coins Into The Fountain Of F**k",
@@ -315,8 +315,8 @@
       "links": []
     },
     {
-      "start": 1939,
-      "end": 2256,
+      "start": 1939.01,
+      "end": 2256.01,
       "durationSec": 318,
       "artist": "Melvins & Napalm Death",
       "title": "Rip The God",
@@ -328,8 +328,8 @@
       "links": []
     },
     {
-      "start": 2377,
-      "end": 2550.05,
+      "start": 2377.01,
+      "end": 2550.06,
       "durationSec": 175,
       "artist": "Skindred",
       "title": "This Is the Sound",
@@ -341,8 +341,8 @@
       "links": []
     },
     {
-      "start": 2642,
-      "end": 3000,
+      "start": 2642.01,
+      "end": 3000.02,
       "durationSec": 163,
       "artist": "Lantlôs",
       "title": "Daisies",
@@ -354,8 +354,8 @@
       "links": []
     },
     {
-      "start": 3098,
-      "end": 3455,
+      "start": 3098.02,
+      "end": 3455.02,
       "durationSec": 357,
       "artist": "Sepultura",
       "title": "The Place",
@@ -367,8 +367,8 @@
       "links": []
     },
     {
-      "start": 3568,
-      "end": 3753.62,
+      "start": 3568.02,
+      "end": 3753.64,
       "durationSec": 187,
       "artist": "At The Gates",
       "title": "The Fever Mask",
@@ -380,8 +380,8 @@
       "links": []
     },
     {
-      "start": 3823,
-      "end": 4053,
+      "start": 3823.02,
+      "end": 4053.02,
       "durationSec": 231,
       "artist": "Nervosa",
       "title": "Slave Machine",
@@ -393,8 +393,8 @@
       "links": []
     },
     {
-      "start": 4123,
-      "end": 4322.79,
+      "start": 4123.02,
+      "end": 4322.81,
       "durationSec": 201,
       "artist": "Vomitory",
       "title": "For Gore and Country",
@@ -406,8 +406,8 @@
       "links": []
     },
     {
-      "start": 4374,
-      "end": 4540,
+      "start": 4374.02,
+      "end": 4540.02,
       "durationSec": 167,
       "artist": "Xorsist",
       "title": "Faceless",
@@ -419,8 +419,8 @@
       "links": []
     },
     {
-      "start": 4615,
-      "end": 4847.98,
+      "start": 4615.02,
+      "end": 4848,
       "durationSec": 234,
       "artist": "Immolation",
       "title": "Bend Towards The Dark",
@@ -432,8 +432,8 @@
       "links": []
     },
     {
-      "start": 4906,
-      "end": 5113.44,
+      "start": 4906.02,
+      "end": 5113.47,
       "durationSec": 209,
       "artist": "Unearthly Rites",
       "title": "Sokli Fields Forever / A Radiative Picnic",
@@ -445,8 +445,8 @@
       "links": []
     },
     {
-      "start": 5183,
-      "end": 5547,
+      "start": 5183.03,
+      "end": 5547.03,
       "durationSec": 364,
       "artist": "Ordh",
       "title": "Apis Bull",
@@ -458,8 +458,8 @@
       "links": []
     },
     {
-      "start": 5637,
-      "end": 6092.61,
+      "start": 5637.03,
+      "end": 6092.64,
       "durationSec": 457,
       "artist": "Blindead 23",
       "title": "Deuterium",
@@ -471,8 +471,8 @@
       "links": []
     },
     {
-      "start": 6140,
-      "end": 6561,
+      "start": 6140.03,
+      "end": 6561.03,
       "durationSec": 421,
       "artist": "Witch Ripper",
       "title": "Symmetry of the Hourglass",
@@ -484,8 +484,8 @@
       "links": []
     },
     {
-      "start": 6631,
-      "end": 6853.44,
+      "start": 6631.03,
+      "end": 6853.47,
       "durationSec": 224,
       "artist": "Doedsvangr",
       "title": "Black Sun Dissolution",
@@ -497,8 +497,8 @@
       "links": []
     },
     {
-      "start": 6907,
-      "end": 7174,
+      "start": 6907.03,
+      "end": 7174.04,
       "durationSec": 268,
       "artist": "Doodswens",
       "title": "Driven by Death",
@@ -524,5 +524,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 7174.09
 }

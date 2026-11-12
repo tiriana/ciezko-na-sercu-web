@@ -2,8 +2,8 @@
   "version": 1,
   "id": "1494df45-d4ad-437e-81a9-3fd956d25071",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.789Z",
-  "durationSec": 7263,
+  "updatedAt": "2026-11-11T23:52:15.256Z",
+  "durationSec": 7262.856,
   "summary": "Odcinek poświęcony krakowskiej scenie metalowej, prowadzony z udziałem Adama Śliwakowskiego, założyciela i szefa sklepu Metal Shop. Omówiono historię sklepu działającego od początku lat 90., który stał się miejscem spotkań lokalnych muzyków i fanów, oraz jego rolę w wydawaniu kaset przez krakowską firmę Gama (m.in. Schismatic, singiel Vadera \"I Feel You\") i w powstaniu magazynu Metal Side (1994, 5-6 numerów). Przedstawiono kolejne fale rozwoju krakowskiego metalu: pionierski zespół Voodoo, Holy Death jako prekursora black metalu, nurt melancholijny (Cemetery of Scream, Cold Passion, Atrofia, Red Sun, Serpentia), falę lat 2000. (Skeptic, Die Disease, Redemptor, Antropomorf) oraz współczesny fenomen Mgły, opisanej jako najważniejszy polski eksportowy zespół black metalowy XXI wieku, wraz z pokrewnymi projektami Hauntologist i Kriegsmaschine. Poruszono też obecne trendy rynkowe: powrót mody na punk rock, boom na nowe zespoły po pandemii oraz zjawisko \"dziedziczenia\" grania w rodzinach muzyków.",
   "topics": [
     {
@@ -87,8 +87,8 @@
       "label": "Trendy w sprzedaży muzyki i odzież metalowej"
     },
     {
-      "start": 1282,
-      "end": 1874,
+      "start": 1282.01,
+      "end": 1874.01,
       "label": "Historia i działalność sklepu Metal Shop"
     }
   ],
@@ -104,14 +104,14 @@
       "label": "Cemetery of Scream",
       "type": "artist",
       "source": "tracks",
-      "at": 4864
+      "at": 4864.02
     },
     {
       "id": "hauntologist",
       "label": "Hauntologist",
       "type": "artist",
       "source": "tracks",
-      "at": 6580
+      "at": 6580.03
     },
     {
       "id": "holy-death",
@@ -137,14 +137,14 @@
       "label": "Mgła",
       "type": "artist",
       "source": "tracks",
-      "at": 6059
+      "at": 6059.02
     },
     {
       "id": "sceptic",
       "label": "Sceptic",
       "type": "artist",
       "source": "tracks",
-      "at": 1874
+      "at": 1874.01
     },
     {
       "id": "thy-disease",
@@ -158,14 +158,14 @@
       "label": "Vader",
       "type": "artist",
       "source": "tracks",
-      "at": 2681
+      "at": 2681.01
     },
     {
       "id": "virgin-snatch",
       "label": "Virgin Snatch",
       "type": "artist",
       "source": "tracks",
-      "at": 3237
+      "at": 3237.01
     },
     {
       "id": "metalmania",
@@ -179,21 +179,21 @@
       "label": "Jarocin",
       "type": "event",
       "source": "transcript",
-      "at": 4078
+      "at": 4078.02
     },
     {
       "id": "koncert-koncert-megadeth-w-krakowie",
       "label": "Koncert Megadeth w Krakowie",
       "type": "concert",
       "source": "transcript",
-      "at": 1758
+      "at": 1758.01
     },
     {
       "id": "koncert-koncert-venom-inc-w-krakowie",
       "label": "Koncert Venom Inc. w Krakowie",
       "type": "concert",
       "source": "transcript",
-      "at": 1719
+      "at": 1719.01
     }
   ],
   "tracks": [
@@ -213,7 +213,7 @@
     },
     {
       "start": 1042,
-      "end": 1282,
+      "end": 1282.01,
       "durationSec": 241,
       "artist": "Thy Disease",
       "title": "Freedom For Anshur-Za",
@@ -225,8 +225,8 @@
       "links": []
     },
     {
-      "start": 1874,
-      "end": 2681,
+      "start": 1874.01,
+      "end": 2681.01,
       "durationSec": 341,
       "artist": "Sceptic",
       "title": "Ancient Portal",
@@ -238,8 +238,8 @@
       "links": []
     },
     {
-      "start": 2681,
-      "end": 3237,
+      "start": 2681.01,
+      "end": 3237.01,
       "durationSec": 261,
       "artist": "Vader",
       "title": "I.F.Y",
@@ -251,8 +251,8 @@
       "links": []
     },
     {
-      "start": 3237,
-      "end": 4864,
+      "start": 3237.01,
+      "end": 4864.02,
       "durationSec": 637,
       "artist": "Virgin Snatch",
       "title": "Horn of Plenty",
@@ -264,8 +264,8 @@
       "links": []
     },
     {
-      "start": 4864,
-      "end": 6059,
+      "start": 4864.02,
+      "end": 6059.02,
       "durationSec": 639,
       "artist": "Cemetery of Scream",
       "title": "Prince of the City's Lights",
@@ -277,8 +277,8 @@
       "links": []
     },
     {
-      "start": 6059,
-      "end": 6484.87,
+      "start": 6059.02,
+      "end": 6484.9,
       "durationSec": 428,
       "artist": "Mgła",
       "title": "With Hearts Toward None VI",
@@ -290,8 +290,8 @@
       "links": []
     },
     {
-      "start": 6580,
-      "end": 7263,
+      "start": 6580.03,
+      "end": 7263.03,
       "durationSec": 683,
       "artist": "Hauntologist",
       "title": "Autotomy",
@@ -334,5 +334,6 @@
       "time": 723,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 7262.829
 }

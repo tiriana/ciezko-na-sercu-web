@@ -2,68 +2,68 @@
   "version": 1,
   "id": "c4501cbc-825c-441c-9fee-4ce4767ebd7a",
   "analyzedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T22:57:32.828Z",
-  "durationSec": 6860,
+  "updatedAt": "2026-11-11T23:54:35.487Z",
+  "durationSec": 6844.315,
   "summary": "Odcinek w całości poświęcony jest przeglądowi koncertów czekających w lutym w Polsce, od dużych tras (Deftones w Atlas Arenie, Napalm Death z trasą \"Campaign for Musical Destruction\", Mayhem z Marduk i Immolation w Gdańsku, Paradise Lost na trzech koncertach, Agnostic Front, Jinjer w Warszawie) po liczne podziemne pakiety koncertowe (m.in. \"Not Dying Yet\" we Wrocławiu, trasa \"Do spodu, do ziemi, w pustkę\", minitrasa Primordial Serpent Sands, wspólna podróż Death Has Spoken/Asteria/Obsidian Mantra). Omówiono też mongolski zespół Uhai i ich album \"Human Hearts\", norweski Leprous promujący płytę \"Melodies of Atonement\", nowy singiel Omnium Gatherum \"Moongold\" zapowiadający ich album \"May the Bridges We Burn Light the Way\", a także zbliżające się wydawnictwa: \"Liturgy of Death\" Mayhem, \"The Sand\" Immolation, \"Demony Wschodu\" Die Worshippera oraz \"Genotype\" holenderskiego Textures, opisanego jako powrót do niedokończonego przed laty materiału \"Phenotype\". Padają też porównania stylistyczne, np. duński Saturnus opisany jako zakonserwowana w czasie kontynuacja wczesnego stylu Paradise Lost.",
   "topics": [
     {
-      "start": 226.37,
-      "end": 318,
+      "start": 225.85,
+      "end": 317.27,
       "label": "Deftons w Atlas Arenie i zapowiedź lutowych koncertów"
     },
     {
-      "start": 318,
-      "end": 357,
+      "start": 317.27,
+      "end": 356.18,
       "label": "Hostia i Las Trumien w Świdnicy i Krośnie"
     },
     {
-      "start": 554,
-      "end": 648,
+      "start": 552.73,
+      "end": 646.51,
       "label": "Uuhai i Man War of Steel w Krakowie"
     },
     {
-      "start": 901.16,
-      "end": 1011,
+      "start": 899.09,
+      "end": 1008.68,
       "label": "Not Dying Yet we Wrocławiu: doom, stoner i black metal"
     },
     {
-      "start": 1614,
-      "end": 1717,
+      "start": 1610.3,
+      "end": 1713.06,
       "label": "Leprous promuje Melodies of Atonement w Gdańsku i Wrocławiu"
     },
     {
-      "start": 2097,
-      "end": 2206,
+      "start": 2092.19,
+      "end": 2200.94,
       "label": "Slomatics i trasa Do spodu, do ziemi, w pustkę"
     },
     {
-      "start": 2555,
-      "end": 2633,
+      "start": 2549.14,
+      "end": 2626.96,
       "label": "Walentynkowy koncert Igorrr w warszawskiej Progresji"
     },
     {
-      "start": 3594,
-      "end": 3697,
+      "start": 3585.76,
+      "end": 3688.52,
       "label": "Napalm Death i Campaign for Musical Destruction w Warszawie"
     },
     {
-      "start": 4727,
-      "end": 4772,
+      "start": 4716.16,
+      "end": 4761.06,
       "label": "Agnostic Front z albumem Echoes in Eternity w Proximie"
     },
     {
-      "start": 4879,
-      "end": 4941,
+      "start": 4867.81,
+      "end": 4929.67,
       "label": "Mayhem, Marduk i Immolation w gdańskim B90"
     },
     {
-      "start": 5533,
-      "end": 5613,
+      "start": 5520.31,
+      "end": 5600.13,
       "label": "Die Worshipper i Mary promują album Demony Wschodu"
     },
     {
-      "start": 6431,
-      "end": 6537,
+      "start": 6416.25,
+      "end": 6522.01,
       "label": "Paradise Lost, Saturnus i Shows of Null w trzech miastach"
     }
   ],
@@ -73,266 +73,266 @@
       "label": "Agnostic Front",
       "type": "artist",
       "source": "tracks",
-      "at": 4772
+      "at": 4761.06
     },
     {
       "id": "coltaine",
       "label": "Coltaine",
       "type": "artist",
       "source": "tracks",
-      "at": 6101
+      "at": 6087.01
     },
     {
       "id": "deftones",
       "label": "Deftones",
       "type": "artist",
       "source": "tracks",
-      "at": 12
+      "at": 11.97
     },
     {
       "id": "fiasko",
       "label": "FIASKO",
       "type": "artist",
       "source": "tracks",
-      "at": 2206
+      "at": 2200.94
     },
     {
       "id": "las-trumien",
       "label": "Las Trumien",
       "type": "artist",
       "source": "tracks",
-      "at": 357
+      "at": 356.18
     },
     {
       "id": "leprous",
       "label": "Leprous",
       "type": "artist",
       "source": "tracks",
-      "at": 1717
+      "at": 1713.06
     },
     {
       "id": "mayhem",
       "label": "Mayhem",
       "type": "artist",
       "source": "tracks",
-      "at": 4941
+      "at": 4929.67
     },
     {
       "id": "monkey3",
       "label": "Monkey3",
       "type": "artist",
       "source": "tracks",
-      "at": 2633
+      "at": 2626.96
     },
     {
       "id": "napalm-death",
       "label": "Napalm Death",
       "type": "artist",
       "source": "tracks",
-      "at": 3697
+      "at": 3688.52
     },
     {
       "id": "obsidian-mantra",
       "label": "Obsidian Mantra",
       "type": "artist",
       "source": "tracks",
-      "at": 1368
+      "at": 1364.86
     },
     {
       "id": "omnium-gatherum",
       "label": "Omnium Gatherum",
       "type": "artist",
       "source": "tracks",
-      "at": 3352
+      "at": 3344.31
     },
     {
       "id": "saturnus",
       "label": "Saturnus",
       "type": "artist",
       "source": "tracks",
-      "at": 6537
+      "at": 6522.01
     },
     {
       "id": "snakes-snakes-snakes",
       "label": "SNAKES SNAKES SNAKES",
       "type": "artist",
       "source": "tracks",
-      "at": 1011
+      "at": 1008.68
     },
     {
       "id": "sylosis",
       "label": "Sylosis",
       "type": "artist",
       "source": "tracks",
-      "at": 3035
+      "at": 3028.04
     },
     {
       "id": "textures",
       "label": "Textures",
       "type": "artist",
       "source": "tracks",
-      "at": 4384
+      "at": 4373.95
     },
     {
       "id": "thy-worshiper",
       "label": "Thy Worshiper",
       "type": "artist",
       "source": "tracks",
-      "at": 5613
+      "at": 5600.13
     },
     {
       "id": "uuhai",
       "label": "Uuhai",
       "type": "artist",
       "source": "tracks",
-      "at": 648
+      "at": 646.51
     },
     {
       "id": "koncert-deftones-w-atlas-arenie-w-lodzi",
       "label": "Deftones w Atlas Arenie w Łodzi",
       "type": "concert",
       "source": "transcript",
-      "at": 309
+      "at": 308.29
     },
     {
       "id": "koncert-hostia-i-las-trumien-trasa-nocni-goscie",
       "label": "Hostia i Las Trumien (trasa \"Nocni goście\")",
       "type": "concert",
       "source": "transcript",
-      "at": 318
+      "at": 317.27
     },
     {
       "id": "koncert-manowar-of-steel-wloska-parodia-manowara-i-uhai-w-klubie-studio-w-krakowie",
       "label": "Manowar of Steel (włoska parodia Manowara) i Uhai w klubie Studio w Krakowie",
       "type": "concert",
       "source": "transcript",
-      "at": 554
+      "at": 552.73
     },
     {
       "id": "not-dying-yet-we-wroclawiu",
       "label": "Not Dying Yet we Wrocławiu",
       "type": "event",
       "source": "transcript",
-      "at": 922
+      "at": 919.89
     },
     {
       "id": "trasa-death-has-spoken-asteria-i-obsidian-mantra",
       "label": "Trasa Death Has Spoken, Asteria i Obsidian Mantra",
       "type": "event",
       "source": "transcript",
-      "at": 1305
+      "at": 1302.01
     },
     {
       "id": "koncert-leprous-w-gdansku-i-wroclawiu",
       "label": "Leprous w Gdańsku i Wrocławiu",
       "type": "concert",
       "source": "transcript",
-      "at": 1647
+      "at": 1643.22
     },
     {
       "id": "koncert-slomatics-w-klubie-gwarek-w-krakowie",
       "label": "Slomatics w klubie Gwarek w Krakowie",
       "type": "concert",
       "source": "transcript",
-      "at": 2097
+      "at": 2092.19
     },
     {
       "id": "trasa-do-spodu-do-ziemi-w-pustke",
       "label": "Trasa \"Do spodu, do ziemi, w pustkę\"",
       "type": "event",
       "source": "transcript",
-      "at": 2123
+      "at": 2118.13
     },
     {
       "id": "koncert-igorrr-w-warszawie-koncert-walentynkowy",
       "label": "Igorrr w Warszawie (koncert walentynkowy)",
       "type": "concert",
       "source": "transcript",
-      "at": 2555
+      "at": 2549.14
     },
     {
       "id": "koncert-monkey3-w-krakowie-i-warszawie",
       "label": "Monkey3 w Krakowie i Warszawie",
       "type": "concert",
       "source": "transcript",
-      "at": 2617
+      "at": 2611
     },
     {
       "id": "koncert-sylosis-w-krakowskim-kwadracie",
       "label": "Sylosis w krakowskim Kwadracie",
       "type": "concert",
       "source": "transcript",
-      "at": 2985
+      "at": 2978.16
     },
     {
       "id": "koncert-omnium-gatherum-w-krakowskim-hype-parku",
       "label": "Omnium Gatherum w krakowskim Hype Parku",
       "type": "concert",
       "source": "transcript",
-      "at": 3276
+      "at": 3268.49
     },
     {
       "id": "koncert-ho99o9-w-poznaniu-i-warszawie",
       "label": "Ho99o9 w Poznaniu i Warszawie",
       "type": "concert",
       "source": "transcript",
-      "at": 3594
+      "at": 3585.76
     },
     {
       "id": "napalm-death-trasa-campaign-for-musical-destruction",
       "label": "Napalm Death, trasa \"Campaign for Musical Destruction\"",
       "type": "event",
       "source": "transcript",
-      "at": 3620
+      "at": 3611.7
     },
     {
       "id": "primordial-serpent-sands",
       "label": "Primordial Serpent Sands",
       "type": "event",
       "source": "transcript",
-      "at": 4276
+      "at": 4266.2
     },
     {
       "id": "koncert-jinjer-w-warszawskiej-progresji",
       "label": "Jinjer w warszawskiej Progresji",
       "type": "concert",
       "source": "transcript",
-      "at": 4310
+      "at": 4300.12
     },
     {
       "id": "koncert-agnostic-front-w-warszawskiej-proximie",
       "label": "Agnostic Front w warszawskiej Proximie",
       "type": "concert",
       "source": "transcript",
-      "at": 4727
+      "at": 4716.16
     },
     {
       "id": "koncert-mayhem-marduk-i-immolation-w-gdansku",
       "label": "Mayhem, Marduk i Immolation w Gdańsku",
       "type": "concert",
       "source": "transcript",
-      "at": 4879
+      "at": 4867.81
     },
     {
       "id": "die-worshipper-i-mary-trasa-lutowo-marcowa",
       "label": "Die Worshipper i Mary, trasa lutowo-marcowa",
       "type": "event",
       "source": "transcript",
-      "at": 5533
+      "at": 5520.31
     },
     {
       "id": "koncert-fetuth-colt-hain-i-ella-reeve-w-warszawie-i-wroclawiu",
       "label": "Fetuth, Colt Hain i Ella Reeve w Warszawie i Wrocławiu",
       "type": "concert",
       "source": "transcript",
-      "at": 6065
+      "at": 6051.09
     },
     {
       "id": "koncert-paradise-lost-w-gdansku-warszawie-i-wroclawiu",
       "label": "Paradise Lost w Gdańsku, Warszawie i Wrocławiu",
       "type": "concert",
       "source": "transcript",
-      "at": 6449
+      "at": 6434.21
     },
     {
       "id": "jarek-szubrycht",
@@ -349,9 +349,9 @@
   ],
   "tracks": [
     {
-      "start": 12,
-      "end": 226.37,
-      "durationSec": 216,
+      "start": 11.97,
+      "end": 225.85,
+      "durationSec": 215.5,
       "artist": "Deftones",
       "title": "My Own Summer (Shove It)",
       "album": "Around the Fur",
@@ -362,9 +362,9 @@
       "links": []
     },
     {
-      "start": 357,
-      "end": 554,
-      "durationSec": 198,
+      "start": 356.18,
+      "end": 552.73,
+      "durationSec": 197.55,
       "artist": "Las Trumien",
       "title": "Listonosz puka",
       "album": "Budowniczowie grozy",
@@ -375,9 +375,9 @@
       "links": []
     },
     {
-      "start": 648,
-      "end": 901.16,
-      "durationSec": 254,
+      "start": 646.51,
+      "end": 899.09,
+      "durationSec": 253.42,
       "artist": "Uuhai",
       "title": "SECRET HISTORY OF THE MONGOLS",
       "album": "HUMAN HERDS",
@@ -388,9 +388,9 @@
       "links": []
     },
     {
-      "start": 1011,
-      "end": 1304.68,
-      "durationSec": 295,
+      "start": 1008.68,
+      "end": 1301.69,
+      "durationSec": 294.32,
       "artist": "SNAKES SNAKES SNAKES",
       "title": "Rzeka",
       "album": "Syk",
@@ -401,9 +401,9 @@
       "links": []
     },
     {
-      "start": 1368,
-      "end": 1614,
-      "durationSec": 248,
+      "start": 1364.86,
+      "end": 1610.3,
+      "durationSec": 247.43,
       "artist": "Obsidian Mantra",
       "title": "Who Will Become a Murderer",
       "album": "As We All Will",
@@ -414,9 +414,9 @@
       "links": []
     },
     {
-      "start": 1717,
-      "end": 2097,
-      "durationSec": 382,
+      "start": 1713.06,
+      "end": 2092.19,
+      "durationSec": 381.12,
       "artist": "Leprous",
       "title": "Faceless",
       "album": "Melodies Of Atonement",
@@ -427,9 +427,9 @@
       "links": []
     },
     {
-      "start": 2206,
-      "end": 2555,
-      "durationSec": 350,
+      "start": 2200.94,
+      "end": 2549.14,
+      "durationSec": 349.2,
       "artist": "FIASKO",
       "title": "Sztuczne Kwiaty",
       "album": "Wniwecz/Sztuczne Kwiaty - Single",
@@ -440,9 +440,9 @@
       "links": []
     },
     {
-      "start": 2633,
-      "end": 2984.87,
-      "durationSec": 352,
+      "start": 2626.96,
+      "end": 2978.03,
+      "durationSec": 351.19,
       "artist": "Monkey3",
       "title": "Collision",
       "album": "Welcome To The Machine",
@@ -453,9 +453,9 @@
       "links": []
     },
     {
-      "start": 3035,
-      "end": 3276.16,
-      "durationSec": 243,
+      "start": 3028.04,
+      "end": 3268.65,
+      "durationSec": 242.44,
       "artist": "Sylosis",
       "title": "The New Flesh",
       "album": "The New Flesh",
@@ -466,9 +466,9 @@
       "links": []
     },
     {
-      "start": 3352,
-      "end": 3594,
-      "durationSec": 244,
+      "start": 3344.31,
+      "end": 3585.76,
+      "durationSec": 243.44,
       "artist": "Omnium Gatherum",
       "title": "Moongold",
       "album": "Moongold - Single",
@@ -479,9 +479,9 @@
       "links": []
     },
     {
-      "start": 3697,
-      "end": 4384,
-      "durationSec": 562,
+      "start": 3688.52,
+      "end": 4373.95,
+      "durationSec": 560.71,
       "artist": "Napalm Death",
       "title": "Metaphorically Screw You",
       "album": "Apex Predator - Easy Meat",
@@ -492,9 +492,9 @@
       "links": []
     },
     {
-      "start": 4384,
-      "end": 4727,
-      "durationSec": 344,
+      "start": 4373.95,
+      "end": 4716.16,
+      "durationSec": 343.21,
       "artist": "Textures",
       "title": "Storm Warning",
       "album": "Silhouettes",
@@ -505,9 +505,9 @@
       "links": []
     },
     {
-      "start": 4772,
-      "end": 4879,
-      "durationSec": 108,
+      "start": 4761.06,
+      "end": 4867.81,
+      "durationSec": 107.75,
       "artist": "Agnostic Front",
       "title": "Way Of War",
       "album": "Echoes In Eternity",
@@ -518,9 +518,9 @@
       "links": []
     },
     {
-      "start": 4941,
-      "end": 5533,
-      "durationSec": 593,
+      "start": 4929.67,
+      "end": 5520.31,
+      "durationSec": 591.64,
       "artist": "Mayhem",
       "title": "Despair",
       "album": "Liturgy of Death",
@@ -531,9 +531,9 @@
       "links": []
     },
     {
-      "start": 5613,
-      "end": 6065.41,
-      "durationSec": 454,
+      "start": 5600.13,
+      "end": 6051.5,
+      "durationSec": 452.96,
       "artist": "Thy Worshiper",
       "title": "Od Edenu na wschód",
       "album": "Demony Wschodu",
@@ -544,9 +544,9 @@
       "links": []
     },
     {
-      "start": 6101,
-      "end": 6431,
-      "durationSec": 331,
+      "start": 6087.01,
+      "end": 6416.25,
+      "durationSec": 330.24,
       "artist": "Coltaine",
       "title": "Keep Me Down In The Deep",
       "album": "Brandung",
@@ -557,9 +557,9 @@
       "links": []
     },
     {
-      "start": 6537,
-      "end": 6860,
-      "durationSec": 323,
+      "start": 6522.01,
+      "end": 6844.27,
+      "durationSec": 322.26,
       "artist": "Saturnus",
       "title": "The Calling",
       "album": "The Storm Within",
@@ -584,5 +584,6 @@
       "time": 0,
       "quote": ""
     }
-  ]
+  ],
+  "audioDurationSec": 6860.043
 }
