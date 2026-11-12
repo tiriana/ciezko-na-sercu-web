@@ -907,6 +907,20 @@
                 >＋ utwór</button>
                 <button type="button" id="wave-prev" title="Poprzedni znacznik" aria-label="Poprzedni znacznik" disabled>‹</button>
                 <button type="button" id="wave-next" title="Następny znacznik" aria-label="Następny znacznik" disabled>›</button>
+                <button
+                  type="button"
+                  id="wave-prev-unreviewed"
+                  title="Poprzedni znacznik bez „ok” (P)"
+                  aria-label="Poprzedni znacznik bez ok"
+                  disabled
+                >‹ bez ok</button>
+                <button
+                  type="button"
+                  id="wave-next-unreviewed"
+                  title="Następny znacznik bez „ok” (N)"
+                  aria-label="Następny znacznik bez ok"
+                  disabled
+                >bez ok ›</button>
                 <button type="button" id="wave-out" title="Oddal" aria-label="Oddal waveform" disabled>−</button>
                 <button type="button" id="wave-in" title="Przybliż" aria-label="Przybliż waveform" disabled>+</button>
                 <button type="button" id="wave-all" disabled>całość</button>
@@ -933,7 +947,7 @@
               </div>
             </div>
             <p class="wave-hint">
-              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; Shift+N = wejście, Shift+T = utwór; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń, Shift+Enter = ok, N/P = następny/poprzedni bez ok; początek tnie poprzedni fragment
+              kółko = zoom, tło = przesuń, klik = przewiń, dwuklik = graj, spacja = graj/pauza; Shift+N = wejście, Shift+T = utwór; znaczniki: przeciągnij, Tab + ←/→ (Shift = 1 s), Del usuń, Shift+Enter = ok, N/P albo przyciski „bez ok” = następny/poprzedni bez ok; początek tnie poprzedni fragment
             </p>
           </section>
 
@@ -2406,7 +2420,7 @@
       };
 
       const setWaveTools = (enabled) => {
-        for (const id of ['wave-in', 'wave-out', 'wave-all', 'wave-prev', 'wave-next', 'wave-add', 'wave-add-track']) $(id).disabled = !enabled;
+        for (const id of ['wave-in', 'wave-out', 'wave-all', 'wave-prev', 'wave-next', 'wave-prev-unreviewed', 'wave-next-unreviewed', 'wave-add', 'wave-add-track']) $(id).disabled = !enabled;
       };
 
       const drawWave = () => {
@@ -2821,6 +2835,13 @@
         const ready = Boolean(wave.peaks) && times.length > 0 && Number.isFinite(time);
         $('wave-prev').disabled = !ready || !times.some((value) => value < time - 0.001);
         $('wave-next').disabled = !ready || !times.some((value) => value > time + 0.001);
+        const pending = collectMarkers()
+          .filter((marker) => !marker.reviewed)
+          .map((marker) => marker.time)
+          .sort((left, right) => left - right);
+        const pendingReady = Boolean(wave.peaks) && pending.length > 0 && Number.isFinite(time);
+        $('wave-prev-unreviewed').disabled = !pendingReady || !pending.some((value) => value < time - 0.001);
+        $('wave-next-unreviewed').disabled = !pendingReady || !pending.some((value) => value > time + 0.001);
       };
 
       // Pamięć skoków: przy odtwarzaniu czas ucieka między kliknięciami, więc drugie
@@ -4155,6 +4176,8 @@
 
       $('wave-prev').addEventListener('click', () => jumpToMarker(-1));
       $('wave-next').addEventListener('click', () => jumpToMarker(1));
+      $('wave-prev-unreviewed').addEventListener('click', () => jumpToUnreviewed(-1));
+      $('wave-next-unreviewed').addEventListener('click', () => jumpToUnreviewed(1));
 
       $('wave-retry').addEventListener('click', () => {
         if (!wave.id) return;
