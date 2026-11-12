@@ -1,3 +1,9 @@
+## [1.61.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.61.0...v1.61.1) (2026-11-12)
+
+### Bug Fixes
+
+* **enrich-episode:** raise label limit and preserve titles in prompt wip ([c7c2132](https://github.com/tiriana/ciezko-na-sercu-web/commit/c7c2132c7383cf777ea7cfe85872f02fbfaea974))
+
 ## [1.61.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.60.0...v1.61.0) (2026-11-12)
 
 ### Features
