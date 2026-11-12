@@ -22,8 +22,8 @@ import { askJson, describeCandidates } from './lib/llm.mjs';
 const CHUNK_CHARS = 9000;
 const SUMMARY_MIN = 120;
 const SUMMARY_MAX = 1200;
-// Dwa wydawnictwa w jednej etykiecie to nie błąd — poprawiony opis bywa długi.
-const LABEL_MAX = 140;
+// Etykieta ma być zwięzła; 90 znaków to górna granica z zapasem na nazwy własne.
+const LABEL_MAX = 90;
 
 const args = new Map();
 for (let index = 2; index < process.argv.length; index += 1) {
@@ -95,7 +95,8 @@ const usableLabel = (label) => {
   const text = String(label ?? '').trim();
   if (!text || text.length > LABEL_MAX) return false;
   if (/brak tytułu|\(brak|#TODO/i.test(text)) return false;
-  return text.split(/\s+/).length >= 3;
+  const words = text.split(/\s+/).length;
+  return words >= 3 && words <= 10;
 };
 
 // Darmowe tiery liczą tokeny na minutę, a pełny transkrypt bywa większy niż cały
@@ -161,13 +162,14 @@ const finalPrompt = (episode, notes, topics, needsTitle = false) => {
     '',
     'Zadania:',
     '1. "summary": 3–5 zdań streszczenia odcinka po polsku — o czym była audycja, jakie płyty i zespoły, co je łączy. Bez wstępów typu „w tym odcinku".',
-    '2. "labels": dla każdego wejścia krótka nazwa redakcyjna (4–10 słów), która mówi, czego dotyczy dana wypowiedź — np. „Mantar i płyta Post-Apokaliptic Depression z lutego". Oddaj numer startu wejścia w polu "start".',
+    '2. "labels": dla każdego wejścia zwięzła nazwa redakcyjna (3–7 słów, maks. 70 znaków): wskaż 1–2 główne tematy i krótko je opisz. Gdy wejście wymienia kilka płyt czy zespołów, wybierz główny wątek zamiast wyliczać. Oddaj numer startu wejścia w polu "start".',
     ...(needsTitle
       ? ['3. "title": tytuł odcinka na stronę (4–8 słów), oddający główny temat — bez cudzysłowów, bez daty i godziny, bez „Ciężko na sercu”.']
       : []),
     '',
     'Zasady:',
     '- Wykonawców, tytuły i albumy bierz wyłącznie z listy utworów i notatek; nie zgaduj ani nie poprawiaj pisowni nazw własnych.',
+    '- Etykieta ma czytać się jak zapowiedź, nie jak spis treści: bez łańcuchów „X / Y / Z” i bez wyliczania wszystkich wymienionych tytułów.',
     '- Jeśli czegoś nie ma w materiale, pomiń to zamiast domyślać się.',
     '',
     needsTitle
@@ -199,12 +201,14 @@ const labelPrompt = (episode, topic, context) => {
           'OBECNY OPIS (szkic do poprawy):',
           draft,
           '',
-          'Zadanie: popraw ten opis — usuń znacznik #TODO, uporządkuj składnię i nie dodawaj faktów,',
-          'których nie ma w szkicu. Tytułów ani nazw nie skracaj: zostaw je dokładnie tak, jak są zapisane.',
+          'Zadanie: skróć i uporządkuj ten opis — usuń znacznik #TODO, zostaw 1–2 główne tematy',
+          'w 3–7 słowach (maks. 70 znaków) i nie dodawaj faktów, których nie ma w szkicu.',
+          'Nazwy własne zostaw dokładnie tak, jak są zapisane; nie wyliczaj wszystkiego, co wymienia szkic.',
         ]
       : [
           '',
-          'Zadanie: nazwij to wejście krótko po polsku (4–10 słów) — czego dotyczy wypowiedź prowadzącego.',
+          'Zadanie: nazwij to wejście po polsku (3–7 słów, maks. 70 znaków) — opisz 1–2 główne',
+          'tematy wypowiedzi prowadzącego. Nie wyliczaj wszystkich wymienionych płyt i zespołów.',
         ]),
     'Bez wstępów, bez cudzysłowów, bez powtarzania numeru czasu.',
     '',
