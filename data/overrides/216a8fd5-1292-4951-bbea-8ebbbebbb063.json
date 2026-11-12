@@ -110,6 +110,50 @@
       "start": 3589.94,
       "durationSec": 286.57,
       "end": 3875.02
+    },
+    {
+      "artist": "Azarath",
+      "title": "Pyre Dominion",
+      "album": "Pyre Dominion - Single",
+      "newArtist": "Azarath",
+      "newTitle": "Pyre Dominion",
+      "newAlbum": "Pyre Dominion - Single",
+      "start": 4411.64,
+      "durationSec": 172.78,
+      "end": 4584
+    },
+    {
+      "artist": "Abuser (pl)",
+      "title": "Painbringer",
+      "album": "Blood Marks",
+      "newArtist": "Abuser (pl)",
+      "newTitle": "Painbringer",
+      "newAlbum": "Blood Marks",
+      "start": 4982.09,
+      "durationSec": 167.46,
+      "end": 5148.05
+    },
+    {
+      "artist": "Totenmesse",
+      "title": "Concretefalls",
+      "album": "Concretefalls - Single",
+      "newArtist": "Totenmesse",
+      "newTitle": "Concretefalls",
+      "newAlbum": "Concretefalls - Single",
+      "start": 6113.95,
+      "durationSec": 340.91,
+      "end": 6452.35
+    },
+    {
+      "artist": "Terrestrial Hospice",
+      "title": "Serpents In The Grass",
+      "album": "Omnicide - Chapter I",
+      "newArtist": "Terrestrial Hospice",
+      "newTitle": "Serpents In The Grass",
+      "newAlbum": "Omnicide - Chapter I",
+      "start": 6486.56,
+      "durationSec": 391.7,
+      "end": 6877.41
     }
   ],
   "topics": [
@@ -200,10 +244,82 @@
       "time": 4370.17,
       "label": "Troneum – wydawnictwo „Love is the Law, but Death is the Frame”",
       "start": 4369.8,
-      "newLabel": "Troneum – wydawnictwo „Love is the Law, but Death is the Frame”"
+      "newLabel": "Troneum – wydawnictwo „Love is the Law, but Death is the Frame”",
+      "end": 4411.64
+    },
+    {
+      "time": 4584.14,
+      "label": "Abuser – album „Bloodmarks”",
+      "start": 4584,
+      "newLabel": "Abuser – album „Bloodmarks”",
+      "end": 4940.89
+    },
+    {
+      "time": 4941.08,
+      "label": "Słupski Odór – EP „Fetor Hepaticus Vol. 2”",
+      "start": 4940.89,
+      "newLabel": "Słupski Odór – EP „Fetor Hepaticus Vol. 2”",
+      "end": 4982.09
+    },
+    {
+      "time": 5148.7,
+      "label": "Profeci – album „Troska”",
+      "start": 5148.05,
+      "newLabel": "Profeci – album „Troska”",
+      "end": 5399.43
+    },
+    {
+      "time": 5399.83,
+      "label": "Garota – mini‑album „Strąceni w Ciemność”",
+      "start": 5399.43,
+      "newLabel": "Garota – mini‑album „Strąceni w Ciemność”"
+    },
+    {
+      "time": 6077.57,
+      "label": "Terrestrial Hospice – wydawnictwo „Omnicide Chapter One”",
+      "start": 6077.22,
+      "newLabel": "Terrestrial Hospice – wydawnictwo „Omnicide Chapter One”",
+      "end": 6113.95
+    },
+    {
+      "time": 6452.35,
+      "label": "Podsumowanie – przegląd polskich projektów metalowych",
+      "start": 6452.35,
+      "newLabel": "Podsumowanie – przegląd polskich projektów metalowych",
+      "end": 6486.56
     }
   ],
-  "addTracks": [],
+  "addTracks": [
+    {
+      "artist": "",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
+      "start": 5204.91,
+      "durationSec": 194.52000000000044
+    },
+    {
+      "artist": "",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
+      "start": 5318.87,
+      "durationSec": 80.5600000000004
+    },
+    {
+      "artist": "",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
+      "start": 5458.59,
+      "durationSec": 344.1300000000001
+    },
+    {
+      "artist": "",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
+      "start": 5836.14,
+      "durationSec": 241.42999999999938,
+      "end": 6077.22
+    }
+  ],
   "addTopics": [],
   "credits": {
     "rename": {}
