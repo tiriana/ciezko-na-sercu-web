@@ -202,7 +202,8 @@
       "sources": [
         "zapowiedź"
       ],
-      "links": []
+      "links": [],
+      "contextMiss": true
     },
     {
       "start": 1894.01,
@@ -285,15 +286,16 @@
       "sources": [
         "zapowiedź"
       ],
-      "links": []
+      "links": [],
+      "contextMiss": true
     },
     {
       "start": 4660.03,
       "end": 4903.33,
       "durationSec": 245,
-      "artist": "Egoist",
-      "title": null,
-      "album": null,
+      "artist": "Wilczyca",
+      "title": "Święty Ogień",
+      "album": "Magija",
       "confidence": "średnia",
       "sources": [
         "zapowiedź"
