@@ -1,3 +1,10 @@
+## [1.47.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.47.1...v1.47.2) (2026-11-12)
+
+### Bug Fixes
+
+* **edytor:** zapis nie jest odrzucany jako starszy, gdy nie ma oczekującej kopii ([5cc446a](https://github.com/tiriana/ciezko-na-sercu-web/commit/5cc446ae3d43217e2050656a44f79e952c3f466b))
+* transkrypcja i przeliczone czasy tematów (43131894414) ([bb257d9](https://github.com/tiriana/ciezko-na-sercu-web/commit/bb257d998fe6aa588767db7afa990263d2badc0a))
+
 ## [1.47.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.47.0...v1.47.1) (2026-11-12)
 
 ### Bug Fixes
