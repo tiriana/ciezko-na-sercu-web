@@ -1,3 +1,16 @@
+## [1.60.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.59.0...v1.60.0) (2026-11-12)
+
+### Features
+
+* **wip:** improve model error handling and reporting ([dd43b57](https://github.com/tiriana/ciezko-na-sercu-web/commit/dd43b57c47ca07303f61e6eabb211a3d2e0c9ac0))
+
+### Bug Fixes
+
+* naprawa utworów i wejść bez opisu (a8dcad3c-9586-46e7-90f3-b1dbbb3bfe0b, 43149315260) ([63d35b5](https://github.com/tiriana/ciezko-na-sercu-web/commit/63d35b5d386b30d199c9594d30f37d256f66eefd))
+* naprawa utworów i wejść bez opisu (b8e5be1b-6b99-4530-bd5d-83da623345d3, 43149315260) ([301649d](https://github.com/tiriana/ciezko-na-sercu-web/commit/301649db51e736d323a4e85b755d31e1109ab041))
+* naprawa utworów i wejść bez opisu (bb15e994-e32d-462c-b08e-abd2d5d2f0c7, 43149315260) ([a39535a](https://github.com/tiriana/ciezko-na-sercu-web/commit/a39535a8e393368657fa16fb27b4603ae336b55f))
+* **resolve_tracks:** return consistent tuple for empty context text (wip) ([3f6c555](https://github.com/tiriana/ciezko-na-sercu-web/commit/3f6c5555fd8fa2c5bc530d0b0053b7eda4ac7242))
+
 ## [1.59.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.58.0...v1.59.0) (2026-11-12)
 
 ### Features
