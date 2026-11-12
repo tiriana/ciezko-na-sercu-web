@@ -147,11 +147,14 @@ def preview_pcm(url: str) -> np.ndarray:
     return ffmpeg_pcm(str(path))
 
 
-def ask_model(prompt: str) -> str | None:
+def ask_model(prompt: str) -> tuple[str | None, list[str]]:
+    errors = []
+    tried = 0
     for name, key_env, url, model in PROVIDERS:
         key = os.environ.get(key_env)
         if not key:
             continue
+        tried += 1
         body = json.dumps({
             "model": model,
             "messages": [{"role": "user", "content": prompt}],
@@ -165,10 +168,13 @@ def ask_model(prompt: str) -> str | None:
         try:
             with urllib.request.urlopen(request, timeout=90) as response:
                 payload = json.load(response)
-            return payload["choices"][0]["message"]["content"]
+            return payload["choices"][0]["message"]["content"], errors
         except Exception as error:
             print(f"  {name}: {error}", file=sys.stderr)
-    return None
+            errors.append(f"{name}: {error}")
+    if tried == 0:
+        errors.append("brak klucza dostawcy w środowisku")
+    return None, errors
 
 
 def context_text(transcript: dict, start_real: float, seconds: float = 150) -> str:
@@ -185,22 +191,22 @@ def candidate_from_context(text: str) -> dict | None:
         'Odpowiedz wyłącznie JSON-em: {"artist": "...", "album": "...", "title": "..."}\n\n'
         f"TEKST:\n{text}"
     )
-    answer = ask_model(prompt)
+    answer, errors = ask_model(prompt)
     if not answer:
-        return None
+        return None, "model nie odpowiedział: " + "; ".join(errors[:2])
     match = re.search(r"\{.*\}", answer, re.S)
     if not match:
-        return None
+        return None, f"model oddał nie-JSON: {answer[:80]}"
     try:
         data = json.loads(match.group(0))
     except json.JSONDecodeError:
-        return None
+        return None, f"model oddał niepoprawny JSON: {answer[:80]}"
     artist = str(data.get("artist") or "").strip()
     album = str(data.get("album") or "").strip()
     title = str(data.get("title") or "").strip()
     if not artist:
-        return None
-    return {"artist": artist, "album": album, "title": title}
+        return None, f"w kontekście nie ma wykonawcy (model: {answer.strip()[:80]})"
+    return {"artist": artist, "album": album, "title": title}, ""
 
 
 def match_gap(gap: np.ndarray, tracks: list[dict]) -> list[dict]:
@@ -306,9 +312,12 @@ def resolve_episode(episode_id: str, write: bool, min_score: float, retry_misses
         print(f"  {start_player:.0f} s (+{length:.0f} s)")
 
         text = context_text(transcript, start_real)
-        candidate = candidate_from_context(text)
+        if not text.strip():
+            print("    brak tekstu w transkrypcie wokół tego czasu — zostawiam")
+            return MISS
+        candidate, why = candidate_from_context(text)
         if not candidate:
-            print("    brak kontekstu / modelu — zostawiam")
+            print(f"    {why} — zostawiam")
             return None
         print(f"    kontekst: {candidate['artist']} | {candidate['album']} | {candidate['title']}")
 
