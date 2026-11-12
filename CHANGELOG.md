@@ -1,3 +1,13 @@
+## [1.66.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.65.0...v1.66.0) (2026-11-12)
+
+### Features
+
+* --retime liczy wejścia z bloków mowy transkryptu ([e142b1e](https://github.com/tiriana/ciezko-na-sercu-web/commit/e142b1ed43e3ce748acfd343638f025e754bdda4))
+
+### Bug Fixes
+
+* wejścia 11 listopada zgodne z transkryptem (216a8fd5) ([c5de979](https://github.com/tiriana/ciezko-na-sercu-web/commit/c5de979c9ff794cae628b9342ca50b98294f2f91))
+
 ## [1.65.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.64.0...v1.65.0) (2026-11-12)
 
 ### Features
