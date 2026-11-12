@@ -41,6 +41,11 @@ on:
         description: 'Etykieta przebiegu (tytuł odcinka)'
         required: false
         type: string
+      source:
+        description: 'Skąd bierze się podział: spans (bloki mowy) albo time (równe kawałki)'
+        required: false
+        default: 'spans'
+        type: string
 
 run-name: "transkrypcja: ${{ inputs.label || inputs.episodes || 'wszystkie odcinki' }}"
 
@@ -79,13 +84,14 @@ jobs:
           MAX_LEN: ${{ inputs.max_len }}
           SPLIT_ON_WORD: ${{ inputs.split_on_word }}
           VAD: ${{ inputs.vad }}
+          SOURCE: ${{ inputs.source }}
         run: node scripts/plan-transcribe.mjs
 
   transcribe:
     needs: plan
     if: needs.plan.outputs.count != '0'
     runs-on: ubuntu-26.04
-    timeout-minutes: 90
+    timeout-minutes: 45
     env:
       MAX_LEN: ${{ inputs.max_len }}
       SPLIT_ON_WORD: ${{ inputs.split_on_word }}
@@ -140,12 +146,24 @@ jobs:
           URL: ${{ matrix.audioUrl }}
           START: ${{ matrix.start }}
           LENGTH: ${{ matrix.length }}
+          CHUNK_FROM: ${{ matrix.chunkFrom }}
+          CHUNK_TO: ${{ matrix.chunkTo }}
           PART: ${{ matrix.part }}
         run: |
-          WHISPER_BIN="$WHISPER_BIN" \
-          WHISPER_MODEL="$WHISPER_MODEL_PATH" \
-          node scripts/transcribe.mjs --id "$ID" --url "$URL" \
-            --start "$START" --length "$LENGTH" --part "$PART" --out .incoming
+          # Macierz z bloków mowy podaje zakres bloków; tryb `time` (starszy) podaje czas.
+          if [ -n "$CHUNK_FROM" ]; then
+            WHISPER_BIN="$WHISPER_BIN" \
+            WHISPER_MODEL="$WHISPER_MODEL_PATH" \
+            node scripts/transcribe.mjs --id "$ID" --url "$URL" \
+              --chunks "data/artifacts/$ID/speech-spans.json" \
+              --chunk-from "$CHUNK_FROM" --chunk-to "$CHUNK_TO" \
+              --part "$PART" --out .incoming
+          else
+            WHISPER_BIN="$WHISPER_BIN" \
+            WHISPER_MODEL="$WHISPER_MODEL_PATH" \
+            node scripts/transcribe.mjs --id "$ID" --url "$URL" \
+              --start "$START" --length "$LENGTH" --part "$PART" --out .incoming
+          fi
 
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:

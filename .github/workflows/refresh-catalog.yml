@@ -67,12 +67,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
 
-      # Nowy odcinek ma pierwszeństwo przed kolejką, więc transkrypcję zamawiamy od razu
-      # po odświeżeniu katalogu. Plan bierze najnowszy odcinek bez transkryptu.
-      # Symulacja jej nie zamawia: to godziny pracy runnerów na materiale, który i tak
-      # trafi do kolejki.
-      - name: Zamów transkrypcję nowego odcinka
+      # Nowy odcinek ma pierwszeństwo przed kolejką, więc od razu po odświeżeniu katalogu
+      # liczymy dla niego bloki mowy. To tanie i jest wejściem dla transkrypcji (cięcie na
+      # mowę) i dla Shazama (muzyka to dopełnienie mowy) — dlatego `spans` zamawia
+      # transkrypcję sam, po commicie artefaktu.
+      # Symulacja niczego nie zamawia: to praca runnerów na materiale z kolejki.
+      - name: Zamów bloki mowy dla nowego odcinka
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run transcribe-daily.yml --ref main
+        run: gh workflow run spans.yml --ref main

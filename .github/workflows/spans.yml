@@ -1,0 +1,138 @@
+name: spans
+
+# Bloki mowy (VAD) dla nowego odcinka. Tanie i lokalne: Silero ONNX, ~2 MB modelu,
+# kilkadziesiąt sekund na odcinek. Wynik jest wejściem dla transkrypcji (cięcie na
+# mowę zamiast całego nagrania) i dla rozpoznawania utworów (muzyka = dopełnienie).
+#
+# Uruchamiany dispatchem z `refresh-catalog.yml` po dopisaniu odcinka; ręcznie można
+# wskazać konkretne odcinki albo puścić zaległość (te bez artefaktu).
+
+on:
+  workflow_dispatch:
+    inputs:
+      episodes:
+        description: 'UUID lub slugi oddzielone przecinkami; puste = odcinki bez bloków mowy'
+        required: false
+        type: string
+      limit:
+        description: 'Ile odcinków najwyżej (0 = bez limitu)'
+        required: false
+        default: '0'
+        type: string
+      force:
+        description: 'Licz też odcinki, które mają już artefakt'
+        required: false
+        default: false
+        type: boolean
+
+run-name: "bloki mowy: ${{ inputs.episodes || 'odcinki bez VAD' }}"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: spans
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-26.04
+    outputs:
+      matrix: ${{ steps.build.outputs.matrix }}
+      count: ${{ steps.build.outputs.count }}
+      ids: ${{ steps.build.outputs.ids }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - id: build
+        env:
+          EPISODES: ${{ inputs.episodes }}
+          LIMIT: ${{ inputs.limit }}
+          FORCE: ${{ inputs.force }}
+        run: node scripts/plan-spans.mjs
+
+  spans:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    runs-on: ubuntu-26.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      # VAD czyta mp3 strumieniem przez ffmpeg — bez niego nie ma z czego liczyć.
+      - name: Zainstaluj ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v6
+        with:
+          python-version: '3.12'
+
+      - name: Zainstaluj onnxruntime
+        run: pip install --quiet numpy onnxruntime
+
+      # Model Silero (2 MB) leży w tym samym cache, co przy lokalnym `npm run spans`.
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        with:
+          path: .cache/models
+          key: silero-vad-onnx-v5.1.2
+
+      - name: Policz bloki mowy
+        env:
+          ID: ${{ matrix.id }}
+          URL: ${{ matrix.audioUrl }}
+          OUT: ${{ matrix.out }}
+        run: |
+          python3 scripts/speech_spans.py --id "$ID" --url "$URL" --out "$OUT"
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        if: always()
+        with:
+          name: spans-${{ matrix.id }}
+          path: ${{ matrix.out }}
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14
+
+  commit:
+    needs: [plan, spans]
+    if: always()
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      # Artefakt zachowuje ścieżkę pliku, więc po rozpakowaniu leży w `.spans/data/artifacts/…`.
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          pattern: spans-*
+          path: .spans
+          merge-multiple: true
+
+      - run: npm ci
+
+      - name: Włóż artefakty do repozytorium
+        run: |
+          mkdir -p data/artifacts
+          cp -r .spans/data/artifacts/. data/artifacts/
+          find data/artifacts -name 'speech-spans.json' | sort
+
+      - name: Commit
+        run: |
+          bash scripts/push-data.sh "feat: bloki mowy (VAD) dla nowych odcinków (${GITHUB_RUN_ID})" data/artifacts
+
+      - name: Stan etapów
+        if: always()
+        run: node scripts/status-all.mjs
+
+      # Push z GITHUB_TOKEN nie uruchamia workflowów, więc transkrypcję zamawiamy jawnie.
+      - name: Zamów transkrypcję
+        if: needs.plan.outputs.ids != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IDS: ${{ needs.plan.outputs.ids }}
+        run: gh workflow run transcribe.yml --ref main -f episodes="$IDS" -f label="bloki mowy"

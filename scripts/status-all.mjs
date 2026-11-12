@@ -48,6 +48,7 @@ const rows = catalog.episodes
     date: episode.date,
     slug: episode.slug,
     whisper: Boolean(transcript?.segments?.length),
+    spans: Boolean(readJson(join(DATA, 'artifacts', episode.id, 'speech-spans.json'))?.chunks?.length),
     tracks: enriched?.tracks?.length ?? 0,
     voiceprint: entry ? 'ok' : frozen.has(episode.id) ? 'pominięty' : '—',
     reviewedOk: Object.values(reviewed[episode.id] ?? {}).filter(Boolean).length,
@@ -57,6 +58,7 @@ const rows = catalog.episodes
 
 const summarize = (label, done, total) => `${label}: ${done}/${total}`;
 const counts = {
+  spans: rows.filter((row) => row.spans).length,
   whisper: rows.filter((row) => row.whisper).length,
   tracks: rows.filter((row) => row.tracks > 0).length,
   voiceprint: rows.filter((row) => row.voiceprint === 'ok').length,
@@ -66,7 +68,7 @@ const missing = (row) => !row.whisper || row.tracks === 0 || row.voiceprint === 
 
 const lines = [
   `Odcinków: ${rows.length}`,
-  `  ${summarize('Whisper', counts.whisper, rows.length)}, ${summarize('Shazam', counts.tracks, rows.length)}, ` +
+  `  ${summarize('VAD', counts.spans, rows.length)}, ${summarize('Whisper', counts.whisper, rows.length)}, ${summarize('Shazam', counts.tracks, rows.length)}, ` +
     `${summarize('profil głosu', counts.voiceprint, rows.length)}, ${summarize('przejrzane', counts.reviewed, rows.length)}`,
 ];
 
@@ -77,12 +79,13 @@ if (shown.length > 0) {
     align === 'right' ? String(value).padStart(width) : String(value).padEnd(width);
   lines.push(
     '',
-    [cell('odcinek', 44), cell('whisper', 7), cell('utwory', 6, 'right'), cell('profil', 9), cell('ok', 3, 'right')].join('  ')
+    [cell('odcinek', 44), cell('mowa', 5), cell('whisper', 7), cell('utwory', 6, 'right'), cell('profil', 9), cell('ok', 3, 'right')].join('  ')
   );
   for (const row of shown) {
     lines.push(
       [
         cell(`${row.date}  ${row.slug.slice(0, 30)}`, 44),
+        cell(mark(row.spans), 5),
         cell(mark(row.whisper), 7),
         cell(row.tracks, 6, 'right'),
         cell(row.voiceprint, 9),
@@ -102,6 +105,7 @@ if (summary) {
   const body = [
     '### Stan etapów',
     '',
+    `- Bloki mowy (VAD): **${counts.spans}/${rows.length}**`,
     `- Whisper: **${counts.whisper}/${rows.length}**`,
     `- Shazam (utwory): **${counts.tracks}/${rows.length}**`,
     `- Profil głosu: **${counts.voiceprint}/${rows.length}**`,

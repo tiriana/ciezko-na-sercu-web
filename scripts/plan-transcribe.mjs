@@ -57,10 +57,18 @@ const isDone = (episode) => {
   );
 };
 
+// Wskazanie odcinka: uuid, slug albo przedrostek uuid (dispatch podaje pełny, ręka skrót).
+const findEpisode = (key) => {
+  const exact = byKey.get(key);
+  if (exact) return exact;
+  const matches = catalog.episodes.filter((episode) => episode.id.startsWith(key));
+  return matches.length === 1 ? matches[0] : null;
+};
+
 let episodes = catalog.episodes;
 if (wanted.length > 0) {
   episodes = wanted.map((key) => {
-    const episode = byKey.get(key);
+    const episode = findEpisode(key);
     if (!episode) {
       console.error(`Nieznany odcinek: ${key}`);
       process.exit(1);
@@ -114,6 +122,46 @@ if (process.env.PRINT_NEXT === 'true') {
   emit('count', String(episodes.length));
   emit('next', next?.slug ?? '');
   emit('title', (next?.title ?? '').replace(/[\r\n]+/g, ' '));
+  process.exit(0);
+}
+
+// Tryb `SOURCE=spans`: macierz powstaje z bloków mowy policzonych VAD-em, a nie
+// z podziału nagrania na równe kawałki. Whisper dostaje wtedy ~20% nagrania,
+// a każdy job bierze kilka sąsiednich bloków, żeby było ich mało i były krótkie.
+if (process.env.SOURCE === 'spans') {
+  const CHUNKS_PER_JOB = Number.parseInt(process.env.CHUNKS_PER_JOB ?? '6', 10) || 6;
+  const matrix = [];
+  for (const episode of episodes) {
+    const spansPath = new URL(`../data/artifacts/${episode.id}/speech-spans.json`, import.meta.url);
+    let chunks;
+    try {
+      chunks = JSON.parse(readFileSync(spansPath, 'utf8')).chunks ?? [];
+    } catch {
+      console.log(`${episode.slug}: brak bloków mowy — pominięty`);
+      continue;
+    }
+    if (chunks.length === 0) {
+      console.log(`${episode.slug}: VAD nie znalazł mowy — pominięty`);
+      continue;
+    }
+    const jobs = Math.ceil(chunks.length / CHUNKS_PER_JOB);
+    for (let job = 0; job < jobs; job += 1) {
+      matrix.push({
+        id: episode.id,
+        slug: episode.slug,
+        audioUrl: episode.audioUrl,
+        part: job,
+        chunkFrom: job * CHUNKS_PER_JOB,
+        chunkTo: Math.min(chunks.length, (job + 1) * CHUNKS_PER_JOB),
+      });
+    }
+    console.log(`${episode.slug}: ${chunks.length} bloków mowy -> ${jobs} jobów`);
+  }
+  if (outputFile) {
+    appendFileSync(outputFile, `matrix=${JSON.stringify(matrix)}\n`);
+    appendFileSync(outputFile, `count=${matrix.length}\n`);
+  }
+  console.log(`${matrix.length} jobów transkrypcji (bloki mowy)`);
   process.exit(0);
 }
 

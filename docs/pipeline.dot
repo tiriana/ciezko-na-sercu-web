@@ -12,9 +12,10 @@ digraph pipeline {
 
   detect     [label="detect-episode\nnowy wpis na stronie", fillcolor="#e6efff"];
   refresh    [label="refresh-catalog\nlista + zaślepka", fillcolor="#e6efff"];
-  trans_d    [label="transcribe-daily\nwybiera odcinek", fillcolor="#e6efff"];
-  transcribe [label="transcribe\nwhisper.cpp (~2 h)", fillcolor="#e6efff"];
-  identify   [label="identify\nShazam: utwory", fillcolor="#e6efff"];
+  spans      [label="spans\nVAD: bloki mowy (~2 min)", fillcolor="#e6efff"];
+  trans_d    [label="transcribe-daily\nzaległości", fillcolor="#e6efff"];
+  transcribe [label="transcribe\nmacierz: 4–6 jobów\npo ~6 bloków mowy", fillcolor="#e6efff"];
+  identify   [label="identify\nShazam: siatka 60 s", fillcolor="#e6efff"];
   voiceprint [label="voiceprint\nprofil głosu", fillcolor="#e6efff"];
 
   commit    [label="commit danych\npush-data.sh", fillcolor="#f0f0f0"];
@@ -28,12 +29,13 @@ digraph pipeline {
   cron_vp     -> voiceprint [label="kolejka"];
 
   detect  -> refresh    [label="audio 200"];
-  refresh -> trans_d    [label="dispatch"];
-  trans_d -> transcribe [label="dispatch"];
+  refresh -> spans     [label="dispatch"];
+  spans   -> transcribe [label="dispatch"];
+  trans_d -> transcribe [label="dispatch (zaległości)"];
   transcribe -> identify   [label="dispatch"];
   transcribe -> voiceprint [label="dispatch"];
 
-  refresh -> commit; transcribe -> commit; identify -> commit; voiceprint -> commit;
+  refresh -> commit; spans -> commit; transcribe -> commit; identify -> commit; voiceprint -> commit;
 
   push_main -> release [label="commit z prefiksem"];
   release   -> deploy  [label="tag + wersja"];

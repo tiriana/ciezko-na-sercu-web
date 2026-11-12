@@ -26,6 +26,11 @@ on:
         required: false
         default: false
         type: boolean
+      grid:
+        description: 'Siatka sond w sekundach (0 = jedna piosenka na blok)'
+        required: false
+        default: '60'
+        type: string
 
 run-name: "rozpoznawanie utworów: ${{ inputs.episodes || 'odcinki bez utworów' }}"
 
@@ -55,8 +60,9 @@ jobs:
           EPISODES: ${{ inputs.episodes }}
           LIMIT: ${{ inputs.limit }}
           FORCE: ${{ inputs.force }}
+          GRID: ${{ inputs.grid }}
         run: |
-          extra=()
+          extra=(--spans-dir data/artifacts --grid "${GRID:-60}")
           if [ -n "$EPISODES" ]; then extra+=(--episodes "$EPISODES"); fi
           if [ "$LIMIT" != "0" ]; then extra+=(--limit "$LIMIT"); fi
           if [ "$FORCE" = "true" ]; then extra+=(--force); fi

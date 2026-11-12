@@ -122,7 +122,12 @@ if (chunksPath) {
     input = wav.replace(/audio\.wav$/, 'source.mp3');
   }
   const plan = JSON.parse(await readFile(path.resolve(chunksPath), 'utf8'));
-  const chunks = plan.chunks ?? [];
+  // Macierz dzieli bloki między joby: każdy liczy swój wycinek, a scalanie składa
+  // całość z części, więc zakres jest połową prawdy o tym, co jest policzone.
+  const allChunks = plan.chunks ?? [];
+  const from = Number.parseInt(flag('chunk-from', '0'), 10) || 0;
+  const to = Number.parseInt(flag('chunk-to', String(allChunks.length)), 10) || allChunks.length;
+  const chunks = allChunks.slice(from, to);
   if (chunks.length === 0) {
     console.error(`${chunksPath}: brak bloków do transkrypcji`);
     process.exit(1);

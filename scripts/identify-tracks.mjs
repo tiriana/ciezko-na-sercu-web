@@ -16,6 +16,7 @@ import { promisify } from 'node:util';
 
 import { Shazam } from 'node-shazam';
 
+import { frozenEpisodes } from './frozen.mjs';
 import { timelineFor, toPlayer } from './lib/timeline.mjs';
 
 const run = promisify(execFile);
@@ -60,6 +61,9 @@ const force = args.has('force');
 // `--grid 60` sonduje muzykę co minutę i składa utwory z trafień (offset Shazama daje
 // początek piosenki). Bez tej flagi zostaje stare zachowanie: jedna piosenka na blok.
 const grid = Number.parseFloat(args.get('grid') ?? '0') || 0;
+// Bloki mowy leżą w artefaktach per odcinek, więc `--spans-dir data/artifacts`
+// wystarcza, żeby każdy odcinek wziął swój plik.
+const spansDir = args.get('spans-dir') ?? null;
 const limit = Number.parseInt(args.get('limit') ?? '0', 10) || 0;
 const wanted = String(args.get('episodes') ?? '')
   .split(/[\s,]+/)
@@ -163,6 +167,7 @@ const metadata = (sections, field) => {
   return null;
 };
 
+const frozen = frozenEpisodes();
 const work = await mkdtemp(join(tmpdir(), 'cns-shazam-'));
 let processed = 0;
 
@@ -182,10 +187,14 @@ try {
       console.log(`— ${entry.slug}: ${episode.tracks.length} utworów już jest`);
       continue;
     }
+    if (frozen.has(entry.id) && !force) {
+      console.log(`— ${entry.slug}: odcinek przejrzany ręcznie — pominięty`);
+      continue;
+    }
 
     // Bloki mowy można wziąć z transkryptu albo z VAD-u (`speech-spans.json`), który
     // liczy się w 20 s i nie wymaga whispera. Dopełnienie jednego i drugiego to muzyka.
-    const spansPath = args.get('spans');
+    const spansPath = args.get('spans') ?? (spansDir ? join(spansDir, entry.id, 'speech-spans.json') : null);
     const spans = spansPath ? await readJson(spansPath).catch(() => null) : null;
     const transcript = spans ? null : await readJson(`data/transcripts/${entry.id}.json`).catch(() => null);
     if (!spans && !transcript) {
