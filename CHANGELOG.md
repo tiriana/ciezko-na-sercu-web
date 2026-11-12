@@ -1,3 +1,9 @@
+## [1.42.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.42.0...v1.42.1) (2026-11-12)
+
+### Bug Fixes
+
+* edytor bierze długość odcinka z pliku, gdy katalog jej nie zna — plakietka skali działa ([7de6aad](https://github.com/tiriana/ciezko-na-sercu-web/commit/7de6aadd993e88a99267360992829198dd06e7af))
+
 ## [1.42.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.41.3...v1.42.0) (2026-11-12)
 
 ### Features
