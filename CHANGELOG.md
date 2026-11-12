@@ -1,3 +1,9 @@
+## [1.43.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.42.1...v1.43.0) (2026-11-12)
+
+### Features
+
+* pełna automatyzacja — VAD w Actions, transkrypcja macierzą bloków mowy, Shazam z siatką ([46b3551](https://github.com/tiriana/ciezko-na-sercu-web/commit/46b3551dfd7c5ca419bb6e29e4a95d7cd4ebe4e7))
+
 ## [1.42.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.42.0...v1.42.1) (2026-11-12)
 
 ### Bug Fixes
