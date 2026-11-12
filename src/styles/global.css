@@ -1831,6 +1831,25 @@ a {
   color: var(--muted);
 }
 
+/* Wejście jest dodatkiem do tracklisty, nie drugim utworem: mniejszy wiersz,
+   przygaszona etykieta i jedna linia z wielokropkiem. */
+.tracks__row--entry td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.tracks__row--entry .tracks__kind {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.tracks__row--entry .tracks__entry-label {
+  color: var(--text);
+  font-size: 13.5px;
+}
+
 .site-nav__external {
   display: inline-flex;
   align-items: center;

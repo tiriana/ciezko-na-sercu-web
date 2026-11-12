@@ -449,7 +449,7 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                           </div>
                           {block.end > block.start && <FragmentProgress />}
                         </td>
-                        <td class="tracks__album">—</td>
+                        <td class="tracks__album"></td>
                         <td class="tracks__time">{formatClock(block.start)}</td>
                         <td class="tracks__time">{formatSpan(block.start, block.end)}</td>
                       </tr>
@@ -476,13 +476,13 @@ const description = episode?.summary ?? `Odcinek ${catalog.program.name} z ${for
                         </td>
                         <td>
                           <div class="tracks__kind">Wejście</div>
-                          <div>
-                            {block.label}
+                          <div class="tracks__entry-line">
+                            <div class="tracks__entry-label" title={block.label}>{block.label}</div>
                             <ReportLink element={`${entry.slug}|wejście:${block.start}|${block.label}`} class="report-link--row" />
                           </div>
                           {block.end > block.start && <FragmentProgress />}
                         </td>
-                        <td class="tracks__album">—</td>
+                        <td class="tracks__album"></td>
                         <td class="tracks__time">{formatClock(block.start)}</td>
                         <td class="tracks__time">{formatSpan(block.start, block.end)}</td>
                       </tr>
