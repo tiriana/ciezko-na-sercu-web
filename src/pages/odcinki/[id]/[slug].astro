@@ -208,9 +208,14 @@ const formatSpan = (start: number, end: number) => (end - start < 1 ? '—' : fo
 // Cytaty z zapowiedzi są policzone i zostają w danych, ale nie pokazujemy ich na stronie.
 const SHOW_QUOTES = false;
 
-const speechSec = episode?.durationSec
-  ? episode.durationSec - (episode.tracks.reduce((sum, track) => sum + track.durationSec, 0) || 0)
-  : null;
+// Mowa to suma długości wejść: od znacznika wejścia do najbliższego następnego
+// znacznika (utworu albo kolejnego wejścia). Odejmowanie muzyki od całości liczyło
+// też ciszę i ogon nagrania, więc zaniżało i mieszało się z resztą programu.
+const speechSec = topicSpans.length > 0
+  ? Math.round(topicSpans.reduce((sum, span) => sum + Math.max(0, span.end - span.start), 0))
+  : (episode?.durationSec
+    ? episode.durationSec - (episode.tracks.reduce((sum, track) => sum + track.durationSec, 0) || 0)
+    : null);
 
 // Produkcja i wydawca to zwykle ta sama osoba, a wydawca mówi więcej — rolę
 // „producent" pomijamy, gdy występuje razem z „wydawca" przy tym samym nazwisku.

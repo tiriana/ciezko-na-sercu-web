@@ -224,6 +224,31 @@ const finalPrompt = (episode, notes, topics) => {
   ].join('\n');
 };
 
+// Kredyty bierzemy z tych fragmentów, w których pada przedstawienie się, wydawca,
+// gość albo realizacja — reszta transkryptu to muzyka i tematy.
+const CREDITS_ROLES = new Set(['prowadzący', 'wydawca', 'producent', 'gość', 'realizacja', 'autor']);
+const creditsPrompt = (episode, transcript) => {
+  const hints = /(prowadz|wydaj|wydawc|producent|realizac|zaprosi|gości|gość|wita|kłania|montaż|reżyser)/i;
+  const excerpts = (transcript.segments ?? [])
+    .filter((segment) => hints.test(segment.text ?? ''))
+    .slice(0, 40)
+    .map((segment) => `[${Math.round(segment.start)}] ${String(segment.text).trim()}`)
+    .join('\n');
+  return [
+    `Audycja „Ciężko na sercu" (Trójka) z ${episode.date}.`,
+    '',
+    'FRAGMENTY TRANSKRYPTU, W KTÓRYCH MOWA O OSOBACH (czas w sekundach):',
+    excerpts || '(brak)',
+    '',
+    'Zadanie: wypisz osoby odpowiedzialne za audycję i gości, których prowadzący wymienia.',
+    'Rola musi być jedną z: prowadzący, wydawca, producent, gość, realizacja, autor.',
+    '"time" to sekunda, w której pada ta informacja; "quote" to krótki cytat z transkryptu (do 160 znaków).',
+    'Bierz wyłącznie osoby wprost wymienione; nie zgaduj imion ani nazwisk.',
+    '',
+    'Odpowiedz wyłącznie JSON-em: {"credits": [{"role": "prowadzący", "name": "...", "time": 0, "quote": "..."}]}',
+  ].join('\n');
+};
+
 // Modele oddają czasem płotki z markdownem albo przecinek przed klamrą —
 // taniej to naprawić niż tracić całe wywołanie.
 const parseLooseJson = (raw) => {
@@ -330,7 +355,8 @@ for (const entry of selected) {
   const topics = episode.topics ?? [];
   const needsSummary = force || !episode.summary;
   const relabel = topics.filter((topic) => needsLabel(topic.label) || (relabelRaw && looksRaw(topic.label)));
-  if (!needsSummary && relabel.length === 0) continue;
+  const needsCredits = (episode.credits ?? []).length === 0;
+  if (!needsSummary && relabel.length === 0 && !needsCredits) continue;
 
   const transcript = await readJson(`data/transcripts/${entry.id}.json`).catch(() => null);
   if (!transcript) {
@@ -338,16 +364,20 @@ for (const entry of selected) {
     continue;
   }
 
+  // Notatki z całego transkryptu są potrzebne tylko do streszczenia i etykiet —
+  // gdy brakuje wyłącznie kredytów, nie palimy limitu na map-reduce.
   const notes = [];
-  try {
-    for (const chunk of splitChunks(transcript)) {
-      const note = await ask(notesPrompt(entry, chunk));
-      const text = String(note.note ?? '').trim();
-      if (text) notes.push({ start: chunk.start, end: chunk.end, text });
+  if (needsSummary || relabel.length > 0) {
+    try {
+      for (const chunk of splitChunks(transcript)) {
+        const note = await ask(notesPrompt(entry, chunk));
+        const text = String(note.note ?? '').trim();
+        if (text) notes.push({ start: chunk.start, end: chunk.end, text });
+      }
+    } catch (error) {
+      console.error(`— ${entry.slug}: notatki — ${error.message}`);
+      continue;
     }
-  } catch (error) {
-    console.error(`— ${entry.slug}: notatki — ${error.message}`);
-    continue;
   }
 
   let answer;
@@ -381,8 +411,71 @@ for (const entry of selected) {
   }
   for (const line of changed) console.log(`   ${line}`);
 
-  if (write && (changed.length > 0 || (usableSummary && needsSummary))) {
+  // Kredyty uzupełniamy tylko w odcinku, który ich nie ma — ręcznej listy nie ruszamy.
+  let credits = null;
+  if (needsCredits) {
+    try {
+      const transcript = await readJson(`data/transcripts/${entry.id}.json`).catch(() => null);
+      if (transcript?.segments?.length) {
+        const response = await ask(creditsPrompt(episode, transcript));
+        const seen = new Set();
+        credits = (response.credits ?? [])
+          .map((item) => ({
+            role: String(item.role ?? '').trim().toLowerCase(),
+            name: String(item.name ?? '').trim(),
+            time: Number(item.time),
+            quote: String(item.quote ?? '').trim().slice(0, 200),
+          }))
+          .filter((item) => CREDITS_ROLES.has(item.role) && item.name.length >= 3 && Number.isFinite(item.time))
+          .filter((item) => {
+            const key = `${item.role}|${item.name.toLowerCase()}`;
+            if (seen.has(key)) return false;
+            seen.add(key);
+            return true;
+          });
+        // Model bywa niekonsekwentny przy stałych osobach audycji, a te są znane:
+        // jeśli w transkrypcie jest nazwisko, kredyt musi się pojawić.
+        const known = [
+          // Tylko nazwisko: transkrypt dzieli zdania w środku imienia i nazwiska.
+          { role: 'prowadzący', pattern: /Szubrych\w*/i, name: 'Jarek Szubrycht' },
+          { role: 'wydawca', pattern: /Owczar\w*/i, name: 'Mariusz Owczarek' },
+        ];
+        for (const person of known) {
+          const segment = (transcript.segments ?? []).find((item) => person.pattern.test(item.text ?? ''));
+          if (!segment) continue;
+          credits = credits ?? [];
+          const existing = credits.find((item) => item.role === person.role);
+          // Model oddaje przypadki gramatyczne („Owczarka”), więc przy znanych osobach
+          // mianownik z projektu ma pierwszeństwo przed tym, co zwróci odpowiedź.
+          if (existing) {
+            existing.name = person.name;
+            existing.time = Math.round(segment.start);
+            existing.quote = String(segment.text).trim().slice(0, 200);
+          } else {
+            credits.push({
+              role: person.role,
+              name: person.name,
+              time: Math.round(segment.start),
+              quote: String(segment.text).trim().slice(0, 200),
+            });
+          }
+        }
+
+        if (credits.length > 0) {
+          for (const item of credits) console.log(`   ${item.role}: ${item.name} (${item.time} s)`);
+        } else {
+          credits = null;
+        }
+      }
+    } catch (error) {
+      console.error(`   kredyty: ${error.message}`);
+      credits = null;
+    }
+  }
+
+  if (write && (changed.length > 0 || (usableSummary && needsSummary) || credits)) {
     if (usableSummary && needsSummary) episode.summary = summary;
+    if (credits) episode.credits = credits;
     await writeFile(episodePath, `${JSON.stringify(episode, null, 2)}\n`);
     updated += 1;
   }
