@@ -201,9 +201,9 @@ jobs:
         run: |
           node -e '
             const fs = require("node:fs");
-            const matrix = JSON.parse(process.env.MATRIX || "{\"include\":[]}");
-            const expected = [...new Set(matrix.include.map((job) => `${job.id}.part${String(job.part).padStart(3, "0")}.json`))];
-            const present = new Set(fs.readdirSync(".incoming"));
+            const matrix = JSON.parse(process.env.MATRIX || "[]");
+            const expected = [...new Set(matrix.map((job) => `${job.id}.part${String(job.part).padStart(3, "0")}.json`))];
+            const present = new Set(fs.existsSync(".incoming") ? fs.readdirSync(".incoming") : []);
             const missing = expected.filter((name) => !present.has(name));
             if (missing.length > 0) {
               console.log(`::error::Brakuje części transkryptu: ${missing.join(", ")} — uruchom ponownie nieudane zadania.`);
