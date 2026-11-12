@@ -1,3 +1,9 @@
+## [1.68.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.67.0...v1.68.0) (2026-11-12)
+
+### Features
+
+* **ui:** etykieta wejścia i opis w jednej linii ([8ce97e4](https://github.com/tiriana/ciezko-na-sercu-web/commit/8ce97e4936751cfef63a859fac8a8ff596274177))
+
 ## [1.67.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.66.1...v1.67.0) (2026-11-12)
 
 ### Features
