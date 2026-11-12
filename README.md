@@ -108,7 +108,7 @@ Gałąź wybiera środowisko:
 
 1. `main` → produkcja, wydanie z semantic-release (numer wersji w stopce).
 2. `develop` → staging na `develop.ciezko-na-sercu.pages.dev`, z `noindex`.
-3. `feat/**` → podgląd pod własnym adresem gałęzi (`preview.yml`).
+3. `feat/**` → podgląd pod własnym adresem gałęzi (`deploy.yml`, build anulowany przy kolejnym pushu).
 
 Workflow:
 
@@ -121,14 +121,14 @@ Workflow:
    z „Symuluj nowy odcinek” przechodzi całą ścieżkę bez czekania na publikację
    (transkrypcji wtedy nie zamawia).
 3. `refresh-catalog.yml` — odświeżenie katalogu ze strony audycji.
-4. `spans.yml` / `transcribe.yml` / `transcribe-daily.yml` — bloki mowy, transkrypcja
-   wskazanych odcinków i wybór jednej zaległości dziennie.
-5. `refresh-titles.yml` — raz w tygodniu sprawdza odcinki z ostatniego miesiąca, czy
-   radio nadało im tytuł redakcyjny, i przenosi go do katalogu.
-6. `release.yml` — wersja i changelog z typów commitów.
-7. `rollback.yml` — cofnięcie produkcji do wskazanego wdrożenia Cloudflare
-   (`workflow_dispatch` z id wdrożenia); po cofnięciu ten sam test dymny i wersja
-   odczytana ze stopki w podsumowaniu.
+4. `spans.yml` / `transcribe.yml` — bloki mowy (VAD) i transkrypcja wskazanych odcinków;
+   po commicie transkrypcji zamawiają profil głosu i Shazama.
+5. `nightly.yml` — cztery joby z własną porą: transkrypcja zaległości (12:00 UTC),
+   profil głosu (04:30), streszczenia i nazwy wejść (06:00), tytuły redakcyjne
+   (poniedziałek 05:10). Ręcznie wybiera się je wejściem `stage`.
+6. `identify.yml` — rozpoznawanie utworów Shazamem; po commicie zamawia streszczenie.
+7. `repair.yml` — po pushu (i na żądanie) dokańcza utwory bez tytułu i wejścia z `#TODO`.
+8. `release.yml` — wersja i changelog z typów commitów.
 
 ## Dokumentacja
 

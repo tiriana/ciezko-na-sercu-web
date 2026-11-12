@@ -225,20 +225,13 @@ jobs:
       - run: npm run check
 
       - name: Commit
+        id: commit
         run: |
           bash scripts/push-data.sh "fix: transkrypcja i przeliczone czasy tematów (${GITHUB_RUN_ID})" data/transcripts data/episodes
 
       - name: Stan etapów
         if: always()
         run: node scripts/status-all.mjs
-
-      # Push z GITHUB_TOKEN nie uruchamia workflow, więc deploy zamawiamy ręcznie.
-      # Krok commita kończy się „Brak zmian.”, gdy nic się nie zmieniło, ale deploy
-      # i tak idzie — publikacja jest idempotentna i nie może wywalić przebiegu.
-      - name: Deploy po aktualizacji danych
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
 
       # Świeży transkrypt to jedyny moment, w którym profil głosu ma z czego
       # zrobić etykiety — dlatego domykamy wejścia od razu, bez czekania na noc.
@@ -247,13 +240,13 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MATRIX: ${{ needs.plan.outputs.matrix }}
         run: |
-          ids=$(node -e 'const m=JSON.parse(process.env.MATRIX||"{\"include\":[]}");console.log([...new Set(m.include.map((j)=>j.id))].join(","))')
+          ids=$(node scripts/matrix-ids.mjs)
           if [ -z "$ids" ]; then
             echo "Brak odcinków do domknięcia."
             exit 0
           fi
           echo "Profil głosu dla: $ids"
-          gh workflow run voiceprint.yml --ref main -f episodes="$ids" -f limit=0 -f apply=true
+          gh workflow run nightly.yml --ref main -f stage=voiceprint -f episodes="$ids" -f limit=0 -f apply=true
 
       # Shazam potrzebuje tylko audio i bloków mowy, więc idzie zaraz po transkrypcie;
       # bez tego nowy odcinek zostaje bez ani jednego utworu.
@@ -262,10 +255,18 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MATRIX: ${{ needs.plan.outputs.matrix }}
         run: |
-          ids=$(node -e 'const m=JSON.parse(process.env.MATRIX||"{\"include\":[]}");console.log([...new Set(m.include.map((j)=>j.id))].join(","))')
+          ids=$(node scripts/matrix-ids.mjs)
           if [ -z "$ids" ]; then
             echo "Brak odcinków do rozpoznania."
             exit 0
           fi
           echo "Shazam dla: $ids"
           gh workflow run identify.yml --ref main -f episodes="$ids" -f limit=0
+
+      # Deploy na końcu: nieudany dispatch publikacji nie może zatrzymać etapów,
+      # które mają już dane pod ręką. Gdy commit nic nie zmienił, build zbędny.
+      - name: Deploy po aktualizacji danych
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"

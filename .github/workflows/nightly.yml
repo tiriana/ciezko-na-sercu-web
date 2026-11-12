@@ -1,0 +1,290 @@
+name: nocny bieg
+
+# Codzienne zadania, które nie reagują na nowy odcinek: transkrypcja zaległości,
+# profil głosu, streszczenia i tytuły redakcyjne. Cztery pory, jeden plik.
+#
+# Pory i czasy trwania są różne, więc transkrypcja i tytuły mają własne grupy
+# `concurrency`; wspólna grupa blokowałaby np. profil głosu (do 3 h) przez resztę.
+# Ręcznie wybieramy `stage`; `all` odpala wszystkie joby.
+# `voiceprint` i `enrich` dzielą grupę `data-writers`: oba piszą
+# `data/overrides/<id>.json` tego samego odcinka, a równoległy zapis kończy się
+# konfliktem rebase w push-data.sh. Kolejka jest tańsza niż zgubiony przebieg.
+
+on:
+  schedule:
+    - cron: '0 12 * * *' # transkrypcja zaległości, poza porą publikacji
+    - cron: '30 4 * * *' # profil głosu, po transkrypcie środowego odcinka
+    - cron: '10 5 * * 1' # tytuły redakcyjne, poniedziałek
+    - cron: '0 6 * * *' # streszczenia i nazwy wejść
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: 'Co uruchomić'
+        required: false
+        default: 'all'
+        type: choice
+        options: [all, transcribe, voiceprint, enrich, titles]
+      episodes:
+        description: 'UUID lub slugi oddzielone przecinkami; puste = kolejka'
+        required: false
+        type: string
+      limit:
+        description: 'Ile odcinków najwyżej (puste = 20 dla profilu głosu, bez limitu dla streszczeń; 0 = bez limitu)'
+        required: false
+        default: ''
+        type: string
+      force:
+        description: 'Przepisz też to, co już jest zrobione'
+        required: false
+        default: false
+        type: boolean
+      parallel:
+        description: 'Ile odcinków profilu głosu liczyć równolegle'
+        required: false
+        default: '4'
+        type: string
+      apply:
+        description: 'Profil głosu: zapisz wejścia i wdróż (bez tego tylko artefakt)'
+        required: false
+        default: true
+        type: boolean
+      batch:
+        description: 'Transkrypcja zaległości: ile odcinków naraz (1–4)'
+        required: false
+        default: '2'
+        type: string
+      model:
+        description: 'Streszczenia: zawęź losowanie modeli (puste = wszyscy z kluczem)'
+        required: false
+        default: ''
+        type: string
+
+run-name: "nocny bieg${{ inputs.stage && format(' ({0})', inputs.stage) || '' }}"
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  transcribe:
+    if: (github.event_name == 'schedule' && github.event.schedule == '0 12 * * *') || (github.event_name == 'workflow_dispatch' && (inputs.stage == 'all' || inputs.stage == 'transcribe'))
+    runs-on: ubuntu-26.04
+    concurrency:
+      group: transcribe-daily
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Wybierz następny odcinek
+        id: next
+        env:
+          PRINT_NEXT: 'true'
+          BATCH: ${{ inputs.batch || '2' }}
+        run: node scripts/plan-transcribe.mjs
+
+      # Transkrypcja bierze podział z bloków mowy, więc najpierw VAD — on zamawia
+      # transkrypcję sam, po commicie artefaktu.
+      - name: Uruchom bloki mowy dla odcinków
+        if: steps.next.outputs.next != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEXT: ${{ steps.next.outputs.next }}
+          TITLE: ${{ steps.next.outputs.title }}
+          REMAINING: ${{ steps.next.outputs.count }}
+        run: |
+          echo "Zostało $REMAINING odcinków, dziś: $TITLE ($NEXT)"
+          gh workflow run spans.yml --ref main -f episodes="$NEXT"
+
+  voiceprint:
+    if: (github.event_name == 'schedule' && github.event.schedule == '30 4 * * *') || (github.event_name == 'workflow_dispatch' && (inputs.stage == 'all' || inputs.stage == 'voiceprint'))
+    runs-on: ubuntu-26.04
+    timeout-minutes: 180
+    concurrency:
+      group: data-writers
+      cancel-in-progress: false
+    env:
+      EPISODES: ${{ inputs.episodes }}
+      LIMIT: ${{ inputs.limit || '20' }}
+      FORCE: ${{ inputs.force }}
+      PARALLEL: ${{ inputs.parallel || '4' }}
+      APPLY: ${{ github.event_name == 'schedule' || inputs.apply }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # v5
+        with:
+          cache: true
+
+      - name: Postęp przed przebiegiem
+        run: node scripts/voiceprint-status.mjs
+
+      - name: Wybierz odcinki
+        id: plan
+        run: node scripts/plan-voiceprint.mjs
+
+      - name: Zainstaluj ffmpeg
+        if: success() && steps.plan.outputs.count != '0'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v6
+        if: success() && steps.plan.outputs.count != '0'
+        with:
+          python-version: '3.12'
+
+      - name: Cache pip i modeli
+        if: success() && steps.plan.outputs.count != '0'
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        with:
+          path: |
+            ~/.cache/pip
+            .cache/voiceprint
+            ~/.cache/torch
+          key: voiceprint-${{ runner.arch }}-${{ hashFiles('scripts/voiceprint.py') }}
+
+      - name: Zainstaluj zależności
+        if: success() && steps.plan.outputs.count != '0'
+        run: |
+          python -m pip install --upgrade pip
+          pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio
+          pip install speechbrain numpy
+
+      - name: Policz profile głosu
+        if: success() && steps.plan.outputs.count != '0'
+        run: node scripts/run-voiceprint.mjs --parallel "$PARALLEL"
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        if: always() && steps.plan.outputs.count != '0'
+        with:
+          name: voiceprint
+          path: voiceprint-out/*.voiceprint.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Zapisz wejścia w danych
+        if: success() && env.APPLY == 'true' && steps.plan.outputs.count != '0'
+        run: node scripts/import-voiceprint.mjs --write voiceprint-out/*.voiceprint.json
+
+      - run: npm ci
+        if: success() && env.APPLY == 'true' && steps.plan.outputs.count != '0'
+
+      - run: npm run check
+        if: success() && env.APPLY == 'true' && steps.plan.outputs.count != '0'
+
+      - name: Postęp po przebiegu
+        if: always()
+        run: |
+          node scripts/voiceprint-status.mjs
+          node scripts/status-all.mjs
+
+      - name: Commit
+        id: commit
+        if: success() && env.APPLY == 'true' && steps.plan.outputs.count != '0'
+        run: |
+          bash scripts/push-data.sh "fix: wejścia z profilu głosu (${GITHUB_RUN_ID})" data/overrides data/voiceprint.json
+
+      - name: Deploy po aktualizacji danych
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
+
+      - name: Zachowaj poprawki, gdy push się nie udał
+        if: failure() && env.APPLY == 'true'
+        run: |
+          git format-patch origin/main --stdout > voiceprint-push.patch || true
+          test -s voiceprint-push.patch
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        if: failure() && env.APPLY == 'true'
+        with:
+          name: voiceprint-push
+          path: voiceprint-push.patch
+          if-no-files-found: ignore
+
+  enrich:
+    if: (github.event_name == 'schedule' && github.event.schedule == '0 6 * * *') || (github.event_name == 'workflow_dispatch' && (inputs.stage == 'all' || inputs.stage == 'enrich'))
+    runs-on: ubuntu-26.04
+    timeout-minutes: 60
+    concurrency:
+      group: data-writers
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - run: npm ci
+
+      - name: Streszczenia i nazwy wejść
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          EPISODES: ${{ inputs.episodes }}
+          LIMIT: ${{ inputs.limit }}
+          ENRICH_MODELS: ${{ inputs.model }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          extra=()
+          if [ -n "$EPISODES" ]; then extra+=(--episodes "$EPISODES"); fi
+          if [ "$LIMIT" != "0" ] && [ -n "$LIMIT" ]; then extra+=(--limit "$LIMIT"); fi
+          if [ "$FORCE" = "true" ]; then extra+=(--force); fi
+          node scripts/enrich-episode.mjs "${extra[@]}" --write | tee enrich.log
+          {
+            echo "### Streszczenia i nazwy wejść"
+            echo ""
+            echo '```'
+            tail -60 enrich.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - run: npm run check
+
+      - name: Commit
+        id: commit
+        run: |
+          bash scripts/push-data.sh "fix: streszczenia i nazwy wejść (${GITHUB_RUN_ID})" data/episodes data/overrides data/reviewed.json data/titles.json
+
+      - name: Stan etapów
+        if: always()
+        run: node scripts/status-all.mjs
+
+      # Bez twardego warunku: to jedyny bezwarunkowy deploy w dobie, więc łapie
+      # także publikacje zgubione przy nieudanym dispatchu innego etapu.
+      - name: Deploy po aktualizacji danych
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
+
+  titles:
+    if: (github.event_name == 'schedule' && github.event.schedule == '10 5 * * 1') || (github.event_name == 'workflow_dispatch' && (inputs.stage == 'all' || inputs.stage == 'titles'))
+    runs-on: ubuntu-26.04
+    timeout-minutes: 20
+    concurrency:
+      group: refresh-titles
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # v5
+        with:
+          cache: true
+
+      - run: npm ci
+
+      - name: Sprawdź tytuły na stronie radia
+        run: node scripts/refresh-titles.mjs
+
+      - run: npm run check
+
+      - name: Commit
+        id: commit
+        run: |
+          bash scripts/push-data.sh "chore(data): tytuły redakcyjne z radia (${GITHUB_RUN_ID})" data/catalog.json data/catalog-titles.json
+
+      - name: Deploy po aktualizacji danych
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
