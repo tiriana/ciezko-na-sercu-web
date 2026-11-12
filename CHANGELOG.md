@@ -1,3 +1,9 @@
+## [1.45.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.45.0...v1.45.1) (2026-11-12)
+
+### Bug Fixes
+
+* whisper budowany bez AVX-512 (SIGILL na starszych runnerach) ([0266e8a](https://github.com/tiriana/ciezko-na-sercu-web/commit/0266e8a192bdbc1e0e52134ad30539aaba70b9e5))
+
 ## [1.45.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.44.0...v1.45.0) (2026-11-12)
 
 ### Features
