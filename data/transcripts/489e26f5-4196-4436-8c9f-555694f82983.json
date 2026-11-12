@@ -4,697 +4,3322 @@
   "provider": "whisper-cpp",
   "model": "large-v3-turbo-q5_0",
   "language": "pl",
-  "fileSizeBytes": 107961191,
-  "fileMtimeMs": 1792262634811.2078,
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
   "windows": [
     {
       "index": 0,
-      "start": 0,
-      "end": 23.2
+      "start": 0.54,
+      "end": 5.06
     },
     {
       "index": 1,
-      "start": 162.6,
-      "end": 258.17
+      "start": 9.1,
+      "end": 11.26
     },
     {
       "index": 2,
-      "start": 788.2,
-      "end": 931.77
+      "start": 163.55,
+      "end": 255.71
     },
     {
       "index": 3,
-      "start": 1138.82,
-      "end": 1260.86
+      "start": 790.11,
+      "end": 930.63
     },
     {
       "index": 4,
-      "start": 1415.24,
-      "end": 1479.45
+      "start": 1141.12,
+      "end": 1257.22
     },
     {
       "index": 5,
-      "start": 1691.97,
-      "end": 1833.02
+      "start": 1416.38,
+      "end": 1478.2
     },
     {
       "index": 6,
-      "start": 2024.13,
-      "end": 2099.29
+      "start": 1693.24,
+      "end": 1830.8
     },
     {
       "index": 7,
-      "start": 2322.37,
-      "end": 2406.62
+      "start": 2026.68,
+      "end": 2097.3
     },
     {
       "index": 8,
-      "start": 2463.84,
-      "end": 2472.03
+      "start": 2323.48,
+      "end": 2403.78
     },
     {
       "index": 9,
-      "start": 3054.92,
-      "end": 3140.8
+      "start": 3056.03,
+      "end": 3138.41
     },
     {
       "index": 10,
-      "start": 3551.88,
-      "end": 3653.31
+      "start": 3552.83,
+      "end": 3651.67
     },
     {
       "index": 11,
-      "start": 3890.79,
-      "end": 4003.2
+      "start": 3891.93,
+      "end": 4000.43
     },
     {
       "index": 12,
-      "start": 4238.79,
-      "end": 4303.68
+      "start": 4240.09,
+      "end": 4301.63
     },
     {
       "index": 13,
-      "start": 5889.54,
-      "end": 5911.16
+      "start": 5405.6,
+      "end": 5412.16
+    },
+    {
+      "index": 14,
+      "start": 5435.68,
+      "end": 5440.68
     }
   ],
   "segments": [
     {
-      "start": 0.66,
-      "end": 5.06,
-      "text": "Trójka. Program trzeci Polskiego Radia."
+      "start": 0.54,
+      "end": 3.25,
+      "text": "Trójka. Program Trzeci"
     },
     {
-      "start": 9.22,
+      "start": 3.25,
+      "end": 5.06,
+      "text": "Polskiego Radia."
+    },
+    {
+      "start": 9.1,
       "end": 11.26,
       "text": "Ciężko na sercu."
     },
     {
-      "start": 14.42,
-      "end": 17.36,
-      "text": "I want to take this minute to introduce you to my people."
+      "start": 163.55,
+      "end": 165.03,
+      "text": "Dobry wieczór Państwu"
     },
     {
-      "start": 19.56,
-      "end": 23.2,
-      "text": "This one is for South Hollow."
+      "start": 165.03,
+      "end": 166.75,
+      "text": "kłania się Jarek Szubrycht,"
     },
     {
-      "start": 162.6,
-      "end": 170.58,
-      "text": "Dobry wieczór Państwu kłania się Jarek Szubrycht, autor audycji oraz Mariusz Owczarek, jej wydawca."
+      "start": 166.75,
+      "end": 168.15,
+      "text": "autor audycji oraz"
     },
     {
-      "start": 170.58,
-      "end": 174.88,
-      "text": "A więc tak, wszystko się zgadza, to ciężko na sercu."
+      "start": 168.15,
+      "end": 169.51,
+      "text": "Mariusz Owczarek,"
     },
     {
-      "start": 175.38,
-      "end": 179.3,
-      "text": "Zacząłem bardzo nietypowo, bo od utworu grupy Beastie Boys."
+      "start": 169.51,
+      "end": 170.57,
+      "text": "jej wydawca."
     },
     {
-      "start": 180.22,
-      "end": 182.06,
-      "text": "Zacząłem od niego nie bez powodu."
+      "start": 170.57,
+      "end": 171.5,
+      "text": "A więc tak,"
     },
     {
-      "start": 182.44,
-      "end": 187.3,
-      "text": "Piosenka składa się z pozdrowień dla mieszkańców różnych miast i krain"
+      "start": 171.5,
+      "end": 173.19,
+      "text": "wszystko się zgadza,"
     },
     {
-      "start": 187.3,
-      "end": 189.2,
+      "start": 173.19,
+      "end": 174.89,
+      "text": "to ciężko na sercu."
+    },
+    {
+      "start": 175.37,
+      "end": 176.95,
+      "text": "Zacząłem bardzo nietypowo,"
+    },
+    {
+      "start": 176.95,
+      "end": 178.1,
+      "text": "bo od utworu grupy"
+    },
+    {
+      "start": 178.1,
+      "end": 179.31,
+      "text": "Beastie Boys."
+    },
+    {
+      "start": 180.15,
+      "end": 180.67,
+      "text": "Zacząłem od niego"
+    },
+    {
+      "start": 180.67,
+      "end": 182.07,
+      "text": "nie bez powodu."
+    },
+    {
+      "start": 182.45,
+      "end": 183.51,
+      "text": "Piosenka składa się"
+    },
+    {
+      "start": 183.51,
+      "end": 184.69,
+      "text": "z pozdrowień dla"
+    },
+    {
+      "start": 184.69,
+      "end": 186.22,
+      "text": "mieszkańców różnych"
+    },
+    {
+      "start": 186.22,
+      "end": 187.27,
+      "text": "miast i krain"
+    },
+    {
+      "start": 187.27,
+      "end": 189.21,
       "text": "i padają w niej słowa"
     },
     {
-      "start": 189.2,
-      "end": 193.26,
-      "text": "This one's for Newcastle, where Venom come from."
+      "start": 189.21,
+      "end": 191.43,
+      "text": "This one's for Newcastle,"
     },
     {
-      "start": 193.8,
-      "end": 198.52,
-      "text": "Czyli salut dla Newcastle, skąd pochodzi zespół Venom."
+      "start": 191.43,
+      "end": 192.79,
+      "text": "where Venom come"
     },
     {
-      "start": 198.52,
-      "end": 203.64,
-      "text": "Tak jest, nawet Beastie Boys nie oparli się tej truciźnie,"
+      "start": 192.79,
+      "end": 193.25,
+      "text": "from."
     },
     {
-      "start": 204.22,
-      "end": 208.56,
-      "text": "która wypełzła z Newcastle pod koniec lat siedemdziesiątych,"
+      "start": 193.79,
+      "end": 195.75,
+      "text": "Czyli salut dla Newcastle,"
     },
     {
-      "start": 209,
-      "end": 212.06,
-      "text": "by w pierwszej połowie kolejnej dekady"
+      "start": 195.75,
+      "end": 197.63,
+      "text": "skąd pochodzi zespół"
     },
     {
-      "start": 212.06,
-      "end": 218.54,
-      "text": "przedefiniować ekstremalny metal, czy właściwie wyznaczyć dla niego kierunki rozwoju."
+      "start": 197.63,
+      "end": 198.51,
+      "text": "Venom."
     },
     {
-      "start": 219.12,
-      "end": 222.84,
-      "text": "Kilka dni temu, 1 października, dowiedzieliśmy się,"
+      "start": 198.51,
+      "end": 199.93,
+      "text": "Tak jest, nawet"
     },
     {
-      "start": 222.84,
-      "end": 229.34,
-      "text": "że w wieku 63 lat zmarł nagle Konrad Land, znany jako Kronos."
+      "start": 199.93,
+      "end": 201.91,
+      "text": "Beastie Boys nie oparli"
     },
     {
-      "start": 230.02,
-      "end": 232.7,
-      "text": "Grał w Venom na basie i porykiwał."
+      "start": 201.91,
+      "end": 203.65,
+      "text": "się tej truciźnie,"
     },
     {
-      "start": 233.36,
-      "end": 239.44,
-      "text": "On też wymyślił dla zespołu jego piekielny wizerunek i takową tematykę tekstów."
+      "start": 204.23,
+      "end": 204.91,
+      "text": "która wypełzła z"
     },
     {
-      "start": 239.9,
-      "end": 244.76,
-      "text": "Dzisiaj całą audycję poświęcę Kronosowi i postaram się wytłumaczyć."
+      "start": 204.91,
+      "end": 206.53,
+      "text": "Newcastle pod koniec"
     },
     {
-      "start": 244.76,
-      "end": 249.88,
-      "text": "Dlaczego? Ale myślę, że lepiej ode mnie wytłumaczy to muzyka."
+      "start": 206.53,
+      "end": 208.57,
+      "text": "lat siedemdziesiątych,"
     },
     {
-      "start": 250.84,
-      "end": 253.84,
-      "text": "A teraz zaczniemy tak, jak powinniśmy."
+      "start": 209.11,
+      "end": 210.28,
+      "text": "by w pierwszej połowie"
     },
     {
-      "start": 254.4,
-      "end": 255.7,
+      "start": 210.28,
+      "end": 211.54,
+      "text": "kolejnej dekady"
+    },
+    {
+      "start": 211.54,
+      "end": 213.79,
+      "text": "przedefiniować ekstremalny"
+    },
+    {
+      "start": 213.79,
+      "end": 214.27,
+      "text": "metal"
+    },
+    {
+      "start": 214.27,
+      "end": 216.16,
+      "text": "czy właściwie wyznaczyć"
+    },
+    {
+      "start": 216.16,
+      "end": 217.6,
+      "text": "dla niego kierunki"
+    },
+    {
+      "start": 217.6,
+      "end": 218.53,
+      "text": "rozwoju."
+    },
+    {
+      "start": 219.11,
+      "end": 219.96,
+      "text": "Kilka dni temu, 1"
+    },
+    {
+      "start": 219.96,
+      "end": 222.31,
+      "text": "października, dowiedzieliśmy"
+    },
+    {
+      "start": 222.31,
+      "end": 222.83,
+      "text": "się,"
+    },
+    {
+      "start": 223.05,
+      "end": 225.67,
+      "text": "że w wieku 63 lat zmarł"
+    },
+    {
+      "start": 225.67,
+      "end": 227.33,
+      "text": "nagle Conrad Land,"
+    },
+    {
+      "start": 227.33,
+      "end": 229.35,
+      "text": "znany jako Kronos."
+    },
+    {
+      "start": 230.01,
+      "end": 231.21,
+      "text": "Grał w Venom na basie"
+    },
+    {
+      "start": 231.21,
+      "end": 232.69,
+      "text": "i porykiwał."
+    },
+    {
+      "start": 233.35,
+      "end": 234.45,
+      "text": "On też wymyślił dla"
+    },
+    {
+      "start": 234.45,
+      "end": 236.34,
+      "text": "zespołu jego piekielny"
+    },
+    {
+      "start": 236.34,
+      "end": 237.15,
+      "text": "wizerunek"
+    },
+    {
+      "start": 237.15,
+      "end": 238.56,
+      "text": "i takową tematykę"
+    },
+    {
+      "start": 238.56,
+      "end": 239.43,
+      "text": "tekstów."
+    },
+    {
+      "start": 239.91,
+      "end": 240.94,
+      "text": "Dzisiaj całą audycję"
+    },
+    {
+      "start": 240.94,
+      "end": 242.43,
+      "text": "poświęcę Kronosowi"
+    },
+    {
+      "start": 242.43,
+      "end": 244.61,
+      "text": "i postaram się wytłumaczyć"
+    },
+    {
+      "start": 244.61,
+      "end": 245.63,
+      "text": "dlaczego,"
+    },
+    {
+      "start": 245.81,
+      "end": 247.26,
+      "text": "ale myślę, że lepiej"
+    },
+    {
+      "start": 247.26,
+      "end": 248.79,
+      "text": "ode mnie wytłumaczy"
+    },
+    {
+      "start": 248.79,
+      "end": 249.87,
+      "text": "to muzyka."
+    },
+    {
+      "start": 250.87,
+      "end": 251.52,
+      "text": "A teraz zaczniemy"
+    },
+    {
+      "start": 251.52,
+      "end": 253.85,
+      "text": "tak, jak powinniśmy."
+    },
+    {
+      "start": 254.41,
+      "end": 255.71,
       "text": "Panie i panowie."
     },
     {
-      "start": 788.2,
-      "end": 810.84,
-      "text": "Fani zespołu doskonale wiedzą, że wysłuchaliśmy właśnie otwarcia podwójnego albumu Eine kleine Nachtmusik, koncertowej płyty Venom z 1986 roku, która podsumowuje pierwszy, najważniejszy etap w historii brytyjskiego zespołu."
+      "start": 790.11,
+      "end": 790.97,
+      "text": "Zespołu doskonale"
     },
     {
-      "start": 810.84,
-      "end": 833.48,
-      "text": "Już za chwilę skłócony Venom miał się pogubić w próbie nadążania za nową, bardziej ekstremalną muzyką, czyli thrashem, a potem nękany był wiecznymi konfliktami, rozpadami, odejściami, powrotami, mutacjami w mniej lub bardziej udane wersje, zwykle niestety mniej."
+      "start": 790.97,
+      "end": 792.89,
+      "text": "wiedzą, że wysłuchaliśmy"
     },
     {
-      "start": 833.48,
-      "end": 840.5,
-      "text": "Wtedy jednak u progu drugiej połowy lat osiemdziesiątych jeszcze był na szczycie."
+      "start": 792.89,
+      "end": 794.77,
+      "text": "właśnie otwarcia"
     },
     {
-      "start": 841.38,
-      "end": 849.84,
-      "text": "Był zespołem, na którym wzorowały się największe thrashowe potęgi z Metallicą i Slayerem na czele."
+      "start": 794.77,
+      "end": 796.65,
+      "text": "podwójnego albumu"
     },
     {
-      "start": 850.52,
-      "end": 859.48,
-      "text": "Zespołem, który popchnął death metalowców na drogę ku brutalności i który jest dla black metalu ojcem założycielem."
+      "start": 796.65,
+      "end": 798.89,
+      "text": "Eine kleine Nachtmusik"
     },
     {
-      "start": 860.48,
-      "end": 868.5,
-      "text": "Hellhammer inspirował się muzyką i wizją Venom, Bathory i Mayhem oczywiście też."
+      "start": 798.89,
+      "end": 801.05,
+      "text": "w koncertowej płyty"
     },
     {
-      "start": 868.62,
-      "end": 877.66,
-      "text": "Jedni i drudzy zresztą wzięli sobie nazwy od utworów Venom odpowiednio, Countess Bathory oraz Mayhem with Mercy."
+      "start": 801.05,
+      "end": 804.19,
+      "text": "Venom z 1986 roku,"
     },
     {
-      "start": 877.66,
-      "end": 886.68,
-      "text": "Kiedy Venom wydawał swoje najważniejsze płyty, był wyśmiewany przez recenzentów jako nieudolny i niesłuchalny."
+      "start": 804.19,
+      "end": 805.58,
+      "text": "która podsumowuje"
     },
     {
-      "start": 888.08,
-      "end": 896.68,
-      "text": "Nie bił też rekordów sprzedaży, ale zainspirował legiony głodnych, mocnych wrażeń smarkaczy."
+      "start": 805.58,
+      "end": 807.59,
+      "text": "pierwszy, najważniejszy"
     },
     {
-      "start": 896.68,
-      "end": 903.94,
-      "text": "Był dla gatunku zespołem równie ważnym co Black Sabbath czy Metallica."
+      "start": 807.59,
+      "end": 809.77,
+      "text": "etap w historii brytyjskiego"
     },
     {
-      "start": 904.86,
-      "end": 912.88,
-      "text": "Dla mnie osobiście na tym pierwszym, inicjacyjnym etapie być może zespołem najważniejszym."
+      "start": 809.77,
+      "end": 810.83,
+      "text": "zespołu."
     },
     {
-      "start": 912.88,
-      "end": 924.18,
-      "text": "Dlatego choć Ozziego oczywiście uwielbiałem, śmierć Kronosa poruszyła mnie bardziej, trąciła bardziej osobistą strunę."
+      "start": 810.83,
+      "end": 812.69,
+      "text": "Już za chwilę skłócony"
     },
     {
-      "start": 924.72,
-      "end": 929.88,
-      "text": "Pewnie również dlatego, że była nagła, że była niespodziewana."
+      "start": 812.69,
+      "end": 814.39,
+      "text": "Venom miał się pogubić"
     },
     {
-      "start": 1138.82,
-      "end": 1152.42,
-      "text": "W drugiej połowie lat 80. polscy fani metalu byli tak głodni muzyki, że z wypiekami na twarzy słuchało się właściwie wszystkiego, co wpadło w ręce."
+      "start": 814.39,
+      "end": 815.89,
+      "text": "w próbie nadążania"
     },
     {
-      "start": 1152.42,
+      "start": 815.89,
+      "end": 817.4,
+      "text": "za nową, bardziej"
+    },
+    {
+      "start": 817.4,
+      "end": 819.2,
+      "text": "ekstremalną muzyką,"
+    },
+    {
+      "start": 819.2,
+      "end": 820.7,
+      "text": "czyli thrashem, a"
+    },
+    {
+      "start": 820.7,
+      "end": 822,
+      "text": "potem nękany był"
+    },
+    {
+      "start": 822,
+      "end": 824.07,
+      "text": "wiecznymi konfliktami,"
+    },
+    {
+      "start": 824.07,
+      "end": 826.22,
+      "text": "rozpadami, odejściami,"
+    },
+    {
+      "start": 826.22,
+      "end": 828.09,
+      "text": "powrotami, mutacjami"
+    },
+    {
+      "start": 828.09,
+      "end": 828.93,
+      "text": "w mniej lub"
+    },
+    {
+      "start": 828.93,
+      "end": 830.91,
+      "text": "bardziej udane wersje,"
+    },
+    {
+      "start": 830.91,
+      "end": 832.22,
+      "text": "zwykle niestety"
+    },
+    {
+      "start": 832.22,
+      "end": 833.47,
+      "text": "mniej."
+    },
+    {
+      "start": 833.47,
+      "end": 835.09,
+      "text": "Wtedy jednak u progu"
+    },
+    {
+      "start": 835.09,
+      "end": 836.63,
+      "text": "drugiej połowy lat"
+    },
+    {
+      "start": 836.63,
+      "end": 838.25,
+      "text": "osiemdziesiątych"
+    },
+    {
+      "start": 838.25,
+      "end": 840.54,
+      "text": "jeszcze był na szczycie."
+    },
+    {
+      "start": 840.54,
+      "end": 842.06,
+      "text": "Był zespołem, na"
+    },
+    {
+      "start": 842.06,
+      "end": 843.65,
+      "text": "którym wzorowały"
+    },
+    {
+      "start": 843.65,
+      "end": 846.12,
+      "text": "się największe thrashowe"
+    },
+    {
+      "start": 846.12,
+      "end": 847.7,
+      "text": "potęgi z Metallicą"
+    },
+    {
+      "start": 847.7,
+      "end": 849.83,
+      "text": "i Slayerem na czele."
+    },
+    {
+      "start": 850.23,
+      "end": 852.38,
+      "text": "Zespołem, który popchnął"
+    },
+    {
+      "start": 852.38,
+      "end": 854.21,
+      "text": "death metalowców na"
+    },
+    {
+      "start": 854.21,
+      "end": 855.66,
+      "text": "drogę ku brutalności"
+    },
+    {
+      "start": 855.66,
+      "end": 856.89,
+      "text": "i który jest dla"
+    },
+    {
+      "start": 856.89,
+      "end": 858.57,
+      "text": "black metalu ojcem,"
+    },
+    {
+      "start": 858.57,
+      "end": 860.19,
+      "text": "założycielem."
+    },
+    {
+      "start": 860.89,
+      "end": 862.49,
+      "text": "Hellhammer inspirował"
+    },
+    {
+      "start": 862.49,
+      "end": 864.2,
+      "text": "się muzyką i wizją"
+    },
+    {
+      "start": 864.2,
+      "end": 865.91,
+      "text": "Venom, Bathory i"
+    },
+    {
+      "start": 865.91,
+      "end": 867.74,
+      "text": "Mayhem oczywiście"
+    },
+    {
+      "start": 867.74,
+      "end": 868.49,
+      "text": "też."
+    },
+    {
+      "start": 868.61,
+      "end": 870.2,
+      "text": "Jedni i drudzy zresztą"
+    },
+    {
+      "start": 870.2,
+      "end": 871.65,
+      "text": "wzięli sobie nazwy"
+    },
+    {
+      "start": 871.65,
+      "end": 872.91,
+      "text": "od utworów Venom"
+    },
+    {
+      "start": 872.91,
+      "end": 874.83,
+      "text": "odpowiednio, Countess"
+    },
+    {
+      "start": 874.83,
+      "end": 876.43,
+      "text": "Bathory oraz Mayhem"
+    },
+    {
+      "start": 876.43,
+      "end": 877.67,
+      "text": "with Mercy."
+    },
+    {
+      "start": 877.67,
+      "end": 879.26,
+      "text": "Kiedy Venom wydawał"
+    },
+    {
+      "start": 879.26,
+      "end": 880.95,
+      "text": "swoje najważniejsze"
+    },
+    {
+      "start": 880.95,
+      "end": 882.82,
+      "text": "płyty, był wyśmiewany"
+    },
+    {
+      "start": 882.82,
+      "end": 884.32,
+      "text": "przez recenzentów"
+    },
+    {
+      "start": 884.32,
+      "end": 885.64,
+      "text": "jako nieudolny i"
+    },
+    {
+      "start": 885.64,
+      "end": 887.19,
+      "text": "niesłuchalny."
+    },
+    {
+      "start": 888.09,
+      "end": 889.16,
+      "text": "Nie bił też rekordów"
+    },
+    {
+      "start": 889.16,
+      "end": 892.2,
+      "text": "sprzedaży, ale zainspirował"
+    },
+    {
+      "start": 892.2,
+      "end": 894.17,
+      "text": "legiony głodnych,"
+    },
+    {
+      "start": 894.17,
+      "end": 897.33,
+      "text": "mocnych wrażeń smarkaczy."
+    },
+    {
+      "start": 897.33,
+      "end": 899.51,
+      "text": "Był dla gatunku zespołem"
+    },
+    {
+      "start": 899.51,
+      "end": 900.97,
+      "text": "równie ważnym co"
+    },
+    {
+      "start": 900.97,
+      "end": 902.55,
+      "text": "Black Sabbath czy"
+    },
+    {
+      "start": 902.55,
+      "end": 903.93,
+      "text": "Metallica."
+    },
+    {
+      "start": 904.89,
+      "end": 905.44,
+      "text": "Dla mnie osobiście"
+    },
+    {
+      "start": 905.44,
+      "end": 906.75,
+      "text": "na tym pierwszym"
+    },
+    {
+      "start": 906.75,
+      "end": 908.41,
+      "text": "inicjacyjnym etapie"
+    },
+    {
+      "start": 908.41,
+      "end": 910.11,
+      "text": "być może potrafi."
+    },
+    {
+      "start": 910.11,
+      "end": 912.11,
+      "text": "Zespołem najważniejszym."
+    },
+    {
+      "start": 913.13,
+      "end": 914.86,
+      "text": "Dlatego, choć Oziego"
+    },
+    {
+      "start": 914.86,
+      "end": 916.11,
+      "text": "oczywiście uwielbiałem,"
+    },
+    {
+      "start": 917.07,
+      "end": 918.53,
+      "text": "śmierć Kronosa poruszyła"
+    },
+    {
+      "start": 918.53,
+      "end": 920.11,
+      "text": "mnie bardziej,"
+    },
+    {
+      "start": 921.49,
+      "end": 922,
+      "text": "trąciła bardziej"
+    },
+    {
+      "start": 922,
+      "end": 924.19,
+      "text": "osobistą strunę."
+    },
+    {
+      "start": 924.73,
+      "end": 925.44,
+      "text": "Pewnie również"
+    },
+    {
+      "start": 925.44,
+      "end": 927.58,
+      "text": "dlatego, że była"
+    },
+    {
+      "start": 927.58,
+      "end": 928.15,
+      "text": "nagła,"
+    },
+    {
+      "start": 928.25,
+      "end": 929.87,
+      "text": "że była niespodziewana."
+    },
+    {
+      "start": 929.87,
+      "end": 930.63,
+      "text": "Muzyka"
+    },
+    {
+      "start": 1141.12,
+      "end": 1142.52,
+      "text": "W lat osiemdziesiątych"
+    },
+    {
+      "start": 1142.52,
+      "end": 1143.68,
+      "text": "polscy fani metalu"
+    },
+    {
+      "start": 1143.68,
+      "end": 1146.62,
+      "text": "byli tak głodni muzyki,"
+    },
+    {
+      "start": 1146.62,
+      "end": 1148.24,
+      "text": "że z wypiekami na"
+    },
+    {
+      "start": 1148.24,
+      "end": 1149.53,
+      "text": "twarzy słuchało się"
+    },
+    {
+      "start": 1149.53,
+      "end": 1151.23,
+      "text": "właściwie wszystkiego,"
+    },
+    {
+      "start": 1151.23,
+      "end": 1152.4,
+      "text": "co wpadło w ręce."
+    },
+    {
+      "start": 1152.4,
+      "end": 1154.49,
+      "text": "Ale były dwa zespoły,"
+    },
+    {
+      "start": 1154.49,
+      "end": 1156.04,
+      "text": "których nie było"
+    },
+    {
+      "start": 1156.04,
+      "end": 1157.82,
+      "text": "się fanami, tylko"
+    },
+    {
+      "start": 1157.82,
+      "end": 1159.34,
+      "text": "wyznawcami."
+    },
+    {
+      "start": 1159.86,
+      "end": 1161.34,
+      "text": "Slayer, a jeszcze"
+    },
+    {
+      "start": 1161.34,
+      "end": 1163.41,
+      "text": "wcześniej właśnie"
+    },
+    {
+      "start": 1163.41,
+      "end": 1164.38,
+      "text": "Venom."
+    },
+    {
+      "start": 1165.14,
+      "end": 1165.61,
+      "text": "Jego potęgę w"
+    },
+    {
+      "start": 1165.61,
+      "end": 1168.19,
+      "text": "Polsce pomogły zbudować"
+    },
+    {
+      "start": 1168.19,
       "end": 1170.04,
-      "text": "Ale były dwa zespoły, których nie było się fanami, tylko wyznawcami. Slayer, a jeszcze wcześniej właśnie Venom. Jego potęgę w Polsce pomogły zbudować dwa wydawnictwa."
+      "text": "dwa wydawnictwa."
     },
     {
-      "start": 1170.04,
-      "end": 1190.06,
-      "text": "Właśnie koncertowy album Eine Kleine Nachtmusik oraz studyjny Possest, bo ukazały się na licencji. Nakładem rodzimego ton presu i były dostępne za niewielkie pieniądze w punktach sprzedaży ruchu oraz w księgarniach."
+      "start": 1170.84,
+      "end": 1172.49,
+      "text": "Właśnie koncertowy"
     },
     {
-      "start": 1190.06,
-      "end": 1210.08,
-      "text": "Nie da się opisać, a właściwie opisać się da, ale kto tego nie przeżył pewnie nie zrozumie, jak bardzo działała na naszą szczenięcą wyobraźnię ta straszna, surowa muzyka, jak nam poprzestawiały w głowach te okładki."
+      "start": 1172.49,
+      "end": 1173.95,
+      "text": "album Eine Kleine"
     },
     {
-      "start": 1210.08,
-      "end": 1224.64,
-      "text": "Zarówno kolorowe zdjęcia z rozkładówki Eine Kleine Nachtmusik, jak i ten negatyw fotografii dwóch dzieciaków w koszulkach Venom, który znalazł się na okładce Possest."
+      "start": 1173.95,
+      "end": 1175.54,
+      "text": "Nachtmusik oraz"
     },
     {
-      "start": 1225.18,
-      "end": 1234.98,
-      "text": "Ta akurat okładka była daleka od konwencji obowiązującej wówczas w metalu, ale tym bardziej wspaniała, tym bardziej niepokojąca."
+      "start": 1175.54,
+      "end": 1177.09,
+      "text": "studyjny Possest,"
     },
     {
-      "start": 1234.98,
+      "start": 1177.09,
+      "end": 1178.58,
+      "text": "bo ukazały się na"
+    },
+    {
+      "start": 1178.58,
+      "end": 1179.76,
+      "text": "licencji."
+    },
+    {
+      "start": 1180.44,
+      "end": 1181.46,
+      "text": "Nakładem rodzimego"
+    },
+    {
+      "start": 1181.46,
+      "end": 1182.76,
+      "text": "ton presu i były"
+    },
+    {
+      "start": 1182.76,
+      "end": 1185.14,
+      "text": "dostępne za niewielkie"
+    },
+    {
+      "start": 1185.14,
+      "end": 1186.56,
+      "text": "pieniądze w punktach"
+    },
+    {
+      "start": 1186.56,
+      "end": 1187.96,
+      "text": "sprzedaży ruchu"
+    },
+    {
+      "start": 1187.96,
+      "end": 1190.08,
+      "text": "oraz w księgarniach."
+    },
+    {
+      "start": 1190.6,
+      "end": 1191.68,
+      "text": "Nie da się opisać,"
+    },
+    {
+      "start": 1191.68,
+      "end": 1193.59,
+      "text": "a właściwie opisać"
+    },
+    {
+      "start": 1193.59,
+      "end": 1194.59,
+      "text": "się da, ale kto"
+    },
+    {
+      "start": 1194.59,
+      "end": 1196.32,
+      "text": "tego nie przeżył,"
+    },
+    {
+      "start": 1196.32,
+      "end": 1197.4,
+      "text": "pewnie nie zrozumie"
+    },
+    {
+      "start": 1197.4,
+      "end": 1198.56,
+      "text": "jak bardzo działała"
+    },
+    {
+      "start": 1198.56,
+      "end": 1200.74,
+      "text": "na naszą szczenięcą,"
+    },
+    {
+      "start": 1200.74,
+      "end": 1203.37,
+      "text": "wyobraźnię ta straszna,"
+    },
+    {
+      "start": 1203.37,
+      "end": 1205.46,
+      "text": "surowa muzyka, jak"
+    },
+    {
+      "start": 1205.46,
+      "end": 1207.46,
+      "text": "nam poprzestawiały"
+    },
+    {
+      "start": 1207.46,
+      "end": 1210.06,
+      "text": "w głowach te okładki."
+    },
+    {
+      "start": 1210.22,
+      "end": 1211.15,
+      "text": "Zarówno kolorowe"
+    },
+    {
+      "start": 1211.15,
+      "end": 1212.58,
+      "text": "zdjęcia z rozkładówki"
+    },
+    {
+      "start": 1212.58,
+      "end": 1215.08,
+      "text": "Eine Kleine Nachtmusik,"
+    },
+    {
+      "start": 1215.08,
+      "end": 1217.8,
+      "text": "jak i ten negatyw"
+    },
+    {
+      "start": 1217.8,
+      "end": 1218.92,
+      "text": "fotografii dwóch"
+    },
+    {
+      "start": 1218.92,
+      "end": 1220.52,
+      "text": "dzieciaków w koszulkach"
+    },
+    {
+      "start": 1220.52,
+      "end": 1221.06,
+      "text": "Venom,"
+    },
+    {
+      "start": 1221.28,
+      "end": 1222.78,
+      "text": "który znalazł się"
+    },
+    {
+      "start": 1222.78,
+      "end": 1224.6,
+      "text": "na okładce posest."
+    },
+    {
+      "start": 1224.6,
+      "end": 1225.95,
+      "text": "Ta akurat okładka"
+    },
+    {
+      "start": 1225.95,
+      "end": 1227.75,
+      "text": "była daleka od konwencji"
+    },
+    {
+      "start": 1227.75,
+      "end": 1229.49,
+      "text": "obowiązującej wówczas"
+    },
+    {
+      "start": 1229.49,
+      "end": 1230.44,
+      "text": "w metalu,"
+    },
+    {
+      "start": 1230.6,
+      "end": 1231.82,
+      "text": "ale tym bardziej"
+    },
+    {
+      "start": 1231.82,
+      "end": 1233.03,
+      "text": "wspaniała, tym"
+    },
+    {
+      "start": 1233.03,
+      "end": 1235,
+      "text": "bardziej niepokojąca."
+    },
+    {
+      "start": 1235.48,
+      "end": 1236.61,
+      "text": "Album Posest, choć"
+    },
+    {
+      "start": 1236.61,
+      "end": 1237.81,
+      "text": "zaliczany jest"
+    },
+    {
+      "start": 1237.81,
+      "end": 1239.32,
+      "text": "jeszcze do złotego"
+    },
+    {
+      "start": 1239.32,
+      "end": 1240.83,
+      "text": "okresu twórczości"
+    },
+    {
+      "start": 1240.83,
+      "end": 1241.6,
+      "text": "Venom,"
+    },
+    {
+      "start": 1241.7,
+      "end": 1243.06,
+      "text": "jest z tamtych płyt"
+    },
+    {
+      "start": 1243.06,
+      "end": 1245.06,
+      "text": "pewnie najmniej udany,"
+    },
+    {
+      "start": 1245.06,
       "end": 1246.72,
-      "text": "Album Possest, choć zaliczany jest jeszcze do złotego okresu twórczości Venom, jest z tamtych płyt pewnie najmniej udany, ale ja tego nie słyszę."
+      "text": "ale ja tego nie słyszę."
     },
     {
       "start": 1246.92,
-      "end": 1257.2,
-      "text": "Kocham tę płytę, bo poznałem ją w momencie, w którym najbardziej jej potrzebowałem, w którym najbardziej byłem na nią gotowy."
+      "end": 1248.16,
+      "text": "Kocham tę płytę, bo"
     },
     {
-      "start": 1260.2,
-      "end": 1260.86,
-      "text": "Muzyka"
+      "start": 1248.16,
+      "end": 1249.08,
+      "text": "poznałem ją w"
     },
     {
-      "start": 1415.24,
-      "end": 1440.48,
-      "text": "Poza tymi dwiema płytami, które były w Polsce oficjalnie dostępne, na przegrywkach i chwilę później na pirackich kasetach krążyły oczywiście inne wcześniejsze albumy Venom, ale były też kasety VHS z koncertem z Hammersmith's Orion z 1984 roku."
+      "start": 1249.08,
+      "end": 1250.56,
+      "text": "momencie, w którym"
     },
     {
-      "start": 1440.48,
+      "start": 1250.56,
+      "end": 1251.73,
+      "text": "najbardziej jej"
+    },
+    {
+      "start": 1251.73,
+      "end": 1253,
+      "text": "potrzebowałem,"
+    },
+    {
+      "start": 1253.58,
+      "end": 1253.83,
+      "text": "w którym"
+    },
+    {
+      "start": 1253.83,
+      "end": 1255.6,
+      "text": "najbardziej byłem"
+    },
+    {
+      "start": 1255.6,
+      "end": 1257.22,
+      "text": "na nią gotowy."
+    },
+    {
+      "start": 1416.38,
+      "end": 1418.12,
+      "text": "Poza tymi dwiema płytami,"
+    },
+    {
+      "start": 1418.12,
+      "end": 1419.6,
+      "text": "które były w Polsce"
+    },
+    {
+      "start": 1419.6,
+      "end": 1421.68,
+      "text": "oficjalnie dostępne,"
+    },
+    {
+      "start": 1421.68,
+      "end": 1422.9,
+      "text": "na przegrywkach i"
+    },
+    {
+      "start": 1422.9,
+      "end": 1424.02,
+      "text": "chwilę później na"
+    },
+    {
+      "start": 1424.02,
+      "end": 1425.24,
+      "text": "pirackich kasetach"
+    },
+    {
+      "start": 1425.24,
+      "end": 1426.74,
+      "text": "krążyły oczywiście"
+    },
+    {
+      "start": 1426.74,
+      "end": 1428.68,
+      "text": "inne wcześniejsze"
+    },
+    {
+      "start": 1428.68,
+      "end": 1430.02,
+      "text": "albumy Venom, ale"
+    },
+    {
+      "start": 1430.02,
+      "end": 1432.69,
+      "text": "były też kasety VHS"
+    },
+    {
+      "start": 1432.69,
+      "end": 1436.67,
+      "text": "z koncertem z Hammersmith's"
+    },
+    {
+      "start": 1436.67,
+      "end": 1440.64,
+      "text": "Orion z 1984 roku i"
+    },
+    {
+      "start": 1440.64,
+      "end": 1441.9,
+      "text": "to już było coś"
+    },
+    {
+      "start": 1441.9,
+      "end": 1445.2,
+      "text": "niewyobrażalnie wspaniałego."
+    },
+    {
+      "start": 1445.2,
+      "end": 1447.4,
+      "text": "Zaczynało się od wybuchu,"
+    },
+    {
+      "start": 1447.4,
+      "end": 1448.67,
+      "text": "a potem totalna"
+    },
+    {
+      "start": 1448.67,
+      "end": 1450.75,
+      "text": "black and rollowa jazda,"
+    },
+    {
+      "start": 1450.75,
+      "end": 1452.54,
+      "text": "hałas i diabeł, skóra"
+    },
+    {
+      "start": 1452.54,
+      "end": 1453.96,
+      "text": "i ćwieki i ta burza"
+    },
+    {
+      "start": 1453.96,
+      "end": 1455.97,
+      "text": "rudych włosów Kronosa,"
+    },
+    {
+      "start": 1455.97,
+      "end": 1457.51,
+      "text": "który nie wydawał"
+    },
+    {
+      "start": 1457.51,
+      "end": 1458.77,
+      "text": "nam się wtedy"
+    },
+    {
+      "start": 1458.77,
+      "end": 1460.56,
+      "text": "człowiekiem, tylko"
+    },
+    {
+      "start": 1460.56,
+      "end": 1462.42,
+      "text": "naprawdę jakimś posłańcem"
+    },
+    {
+      "start": 1462.42,
+      "end": 1465.1,
+      "text": "piekieł, odsłaniającym"
+    },
+    {
+      "start": 1465.1,
       "end": 1466.56,
-      "text": "I to już było coś niewyobrażalnie wspaniałego. Zaczynało się od wybuchu, a potem totalna black and rollowa jazda, hałas i diabeł. Skóra i ćwieki i ta burza rudych włosów Kronosa, który nie wydawał nam się wtedy człowiekiem, tylko naprawdę jakimś posłańcem piekieł odsłaniającym przed nami dźwięki,"
+      "text": "przed nami dźwięki,"
     },
     {
       "start": 1466.56,
-      "end": 1478.24,
-      "text": "Ale przede wszystkim emocje, których wcześniej nie znaliśmy. Albo na których przeżywanie sobie nie pozwalaliśmy. Venom nas uwolnił."
+      "end": 1467.38,
+      "text": "ale przede"
     },
     {
-      "start": 1691.97,
-      "end": 1714.91,
-      "text": "Ledwie zaczęła się druga połowa lat osiemdziesiątych. Internetu jeszcze nie było, prasy metalowej również. Mimo to dużo o Wenom wiedzieliśmy, bo harcerski tygodnik na przełaj odpowiadając na zapotrzebowanie ze strony czytelników wyrażane w listach,"
+      "start": 1467.38,
+      "end": 1468.94,
+      "text": "wszystkim emocje,"
     },
     {
-      "start": 1714.91,
-      "end": 1723.19,
-      "text": "drukował w odcinkach szczegółową opowieść o brytyjskim zespole i jego muzykach."
+      "start": 1468.94,
+      "end": 1470.41,
+      "text": "których wcześniej"
     },
     {
-      "start": 1723.97,
-      "end": 1738.35,
-      "text": "Dowiedziałem się stąd na przykład, że Kronos kocha Kate Bush. Zatem i ja pokochałem Kate Bush, zanim jeszcze poznałem jej muzykę, a kiedy już usłyszałem ją po raz pierwszy,"
+      "start": 1470.41,
+      "end": 1471.46,
+      "text": "nie znaliśmy."
     },
     {
-      "start": 1738.35,
-      "end": 1751.59,
-      "text": "Byłem, przyznaję rozczarowany, że jej piosenki nijak nie przypominają Wenom, ale słuchałem tak długo, że w końcu zrozumiałem i zostałem fanem."
+      "start": 1471.46,
+      "end": 1472.68,
+      "text": "Albo na których"
     },
     {
-      "start": 1752.03,
-      "end": 1756.49,
-      "text": "Nie miałem wyjścia. Kronos przecież nie mógł się mylić."
+      "start": 1472.68,
+      "end": 1474.22,
+      "text": "przeżywanie sobie"
     },
     {
-      "start": 1756.49,
-      "end": 1771.75,
-      "text": "Był też pamiętny artykuł w magazynie Non Stop, reportaż z wizyty w Polsce Abadona, perkusisty Wenom, zapowiadający między wierszami ich przyjazd do naszego kraju z koncertem."
+      "start": 1474.22,
+      "end": 1475.66,
+      "text": "nie pozwalaliśmy."
     },
     {
-      "start": 1772.71,
-      "end": 1782.89,
-      "text": "Naszym marzeniem, które niestety nigdy się nie ziściło, a już na pewno nie w tym kanonicznym składzie z Kronosem, Mantasem i Abadonem."
+      "start": 1476.36,
+      "end": 1478.2,
+      "text": "Venom nas uwolnił."
     },
     {
-      "start": 1783.49,
-      "end": 1788.65,
-      "text": "Mieliśmy też oczywiście na ścianach plakaty Wenom."
+      "start": 1693.24,
+      "end": 1694.42,
+      "text": "Ledwie zaczęła się"
     },
     {
-      "start": 1789.45,
-      "end": 1794.03,
-      "text": "Przede wszystkim taki poziomy, przedstawiający trio z czasów Possest."
+      "start": 1694.42,
+      "end": 1697.07,
+      "text": "druga połowa lat osiemdziesiątych."
     },
     {
-      "start": 1794.03,
-      "end": 1804.49,
-      "text": "Z okładkami ich wydawnictw, okalającymi zdjęcie, czy właściwie kolaż, nakładkę dwóch, może nawet trzech fotografii."
+      "start": 1697.07,
+      "end": 1698.53,
+      "text": "Internetu jeszcze"
+    },
+    {
+      "start": 1698.53,
+      "end": 1699.88,
+      "text": "nie było, prasy"
+    },
+    {
+      "start": 1699.88,
+      "end": 1701.82,
+      "text": "metalowej również."
+    },
+    {
+      "start": 1701.82,
+      "end": 1703.6,
+      "text": "Mimo to dużo o Wenom"
+    },
+    {
+      "start": 1703.6,
+      "end": 1705.42,
+      "text": "wiedzieliśmy, bo"
+    },
+    {
+      "start": 1705.42,
+      "end": 1707.38,
+      "text": "Harcerski Tygodnik"
+    },
+    {
+      "start": 1707.38,
+      "end": 1709.74,
+      "text": "na przełaj, odpowiadając"
+    },
+    {
+      "start": 1709.74,
+      "end": 1711.34,
+      "text": "na zapotrzebowanie"
+    },
+    {
+      "start": 1711.34,
+      "end": 1713.13,
+      "text": "ze strony czytelników"
+    },
+    {
+      "start": 1713.13,
+      "end": 1714.9,
+      "text": "wyrażane w listach,"
+    },
+    {
+      "start": 1714.9,
+      "end": 1716.96,
+      "text": "drukował w odcinkach"
+    },
+    {
+      "start": 1716.96,
+      "end": 1719.14,
+      "text": "szczegółową opowieść"
+    },
+    {
+      "start": 1719.14,
+      "end": 1721.18,
+      "text": "o brytyjskim zespole"
+    },
+    {
+      "start": 1721.18,
+      "end": 1723.18,
+      "text": "i jego muzykach."
+    },
+    {
+      "start": 1723.54,
+      "end": 1724.98,
+      "text": "Dowiedziałem się stąd"
+    },
+    {
+      "start": 1724.98,
+      "end": 1726.88,
+      "text": "na przykład, że Kronos"
+    },
+    {
+      "start": 1726.88,
+      "end": 1729.08,
+      "text": "kocha Kate Bush. Zatem"
+    },
+    {
+      "start": 1729.08,
+      "end": 1730.64,
+      "text": "i ja pokochałem"
+    },
+    {
+      "start": 1730.64,
+      "end": 1732.44,
+      "text": "Kate Bush, zanim"
+    },
+    {
+      "start": 1732.44,
+      "end": 1734.44,
+      "text": "jeszcze poznałem"
+    },
+    {
+      "start": 1734.44,
+      "end": 1736.15,
+      "text": "jej muzykę, a kiedy"
+    },
+    {
+      "start": 1736.15,
+      "end": 1737.25,
+      "text": "już usłyszałem ją"
+    },
+    {
+      "start": 1737.25,
+      "end": 1739.45,
+      "text": "po raz pierwszy, byłem,"
+    },
+    {
+      "start": 1739.45,
+      "end": 1741.46,
+      "text": "przyznaję, rozczarowany,"
+    },
+    {
+      "start": 1741.46,
+      "end": 1743.16,
+      "text": "że jej piosenki nijak"
+    },
+    {
+      "start": 1743.16,
+      "end": 1744.6,
+      "text": "nie przypominają"
+    },
+    {
+      "start": 1744.6,
+      "end": 1746.48,
+      "text": "Wenom, ale słuchałem"
+    },
+    {
+      "start": 1746.48,
+      "end": 1748.46,
+      "text": "tak długo, że w końcu"
+    },
+    {
+      "start": 1748.46,
+      "end": 1750.66,
+      "text": "zrozumiałem i zostałem"
+    },
+    {
+      "start": 1750.66,
+      "end": 1752.36,
+      "text": "fanem. Nie miałem"
+    },
+    {
+      "start": 1752.36,
+      "end": 1753.78,
+      "text": "wyjścia. Kronos"
+    },
+    {
+      "start": 1753.78,
+      "end": 1754.99,
+      "text": "przecież nie mógł"
+    },
+    {
+      "start": 1754.99,
+      "end": 1756.5,
+      "text": "się mylić."
+    },
+    {
+      "start": 1757.34,
+      "end": 1759.38,
+      "text": "Był też pamiętny artykuł"
+    },
+    {
+      "start": 1759.38,
+      "end": 1761.26,
+      "text": "w magazynie Non-Stop,"
+    },
+    {
+      "start": 1761.26,
+      "end": 1762.8,
+      "text": "reportaż z wizyty w"
+    },
+    {
+      "start": 1762.8,
+      "end": 1765.29,
+      "text": "Polsce Abadona, perkusisty"
+    },
+    {
+      "start": 1765.29,
+      "end": 1767.02,
+      "text": "Wenom, zapowiadający"
+    },
+    {
+      "start": 1767.02,
+      "end": 1768.52,
+      "text": "między wierszami"
+    },
+    {
+      "start": 1768.52,
+      "end": 1769.95,
+      "text": "ich przyjazd do"
+    },
+    {
+      "start": 1769.95,
+      "end": 1771.72,
+      "text": "naszego kraju z koncertem."
+    },
+    {
+      "start": 1772.72,
+      "end": 1773.21,
+      "text": "Naszym marzeniem,"
+    },
+    {
+      "start": 1773.21,
+      "end": 1774.8,
+      "text": "które niestety nigdy"
+    },
+    {
+      "start": 1774.8,
+      "end": 1776.22,
+      "text": "się nie ziściło, a"
+    },
+    {
+      "start": 1776.22,
+      "end": 1777.46,
+      "text": "już na pewno nie w"
+    },
+    {
+      "start": 1777.46,
+      "end": 1779.39,
+      "text": "tym kanonicznym składzie"
+    },
+    {
+      "start": 1779.39,
+      "end": 1781.04,
+      "text": "z Kronosem, Mantasem"
+    },
+    {
+      "start": 1781.04,
+      "end": 1782.34,
+      "text": "i Abadonem."
+    },
+    {
+      "start": 1782.34,
+      "end": 1783.81,
+      "text": "Mieliśmy też"
+    },
+    {
+      "start": 1783.81,
+      "end": 1786.5,
+      "text": "oczywiście na ścianach"
+    },
+    {
+      "start": 1786.5,
+      "end": 1789.16,
+      "text": "plakaty Wenom. Przede"
+    },
+    {
+      "start": 1789.16,
+      "end": 1791.06,
+      "text": "wszystkim taki poziomy,"
+    },
+    {
+      "start": 1791.06,
+      "end": 1792.31,
+      "text": "przedstawiający"
+    },
+    {
+      "start": 1792.31,
+      "end": 1794.02,
+      "text": "trio z czasów Posest,"
+    },
+    {
+      "start": 1794.02,
+      "end": 1796.71,
+      "text": "z okładkami ich wydawnictw,"
+    },
+    {
+      "start": 1796.71,
+      "end": 1798.34,
+      "text": "okalającymi zdjęcie,"
+    },
+    {
+      "start": 1798.34,
+      "end": 1800.19,
+      "text": "czy właściwie kolaż,"
+    },
+    {
+      "start": 1800.19,
+      "end": 1801.62,
+      "text": "nakładkę dwóch,"
+    },
+    {
+      "start": 1801.62,
+      "end": 1803.28,
+      "text": "może nawet trzech"
+    },
+    {
+      "start": 1803.28,
+      "end": 1805.49,
+      "text": "fotografii. Mantas"
     },
     {
       "start": 1805.49,
-      "end": 1815.17,
-      "text": "Mantas i Abadon po bokach, Kronos w środku wygina się w jakiejś nieludzkiej pozie, jakby był opętany."
+      "end": 1808.34,
+      "text": "i Abadon po bokach,"
     },
     {
-      "start": 1816.05,
-      "end": 1823.67,
-      "text": "Wszyscy półnadzy, z pieszczochami, Abadon z mieczem, przed Mantasem sztylet wbity w ziemię."
+      "start": 1808.34,
+      "end": 1810.19,
+      "text": "Kronos w środku wygina"
     },
     {
-      "start": 1823.67,
-      "end": 1830.81,
-      "text": "To jedno zdjęcie nadało ton estetyce fotografii black metalowych na długie dekady."
+      "start": 1810.19,
+      "end": 1812.33,
+      "text": "się w jakiejś nieludzkiej"
     },
     {
-      "start": 2024.13,
-      "end": 2032.31,
-      "text": "Jak już wspominałem, w drugiej połowie lat osiemdziesiątych zaczęły się dla Venom kłopoty."
+      "start": 1812.33,
+      "end": 1813.24,
+      "text": "poziomie."
     },
     {
-      "start": 2033.25,
-      "end": 2041.49,
-      "text": "W zespole narastały konflikty, usunięty został gitarzysta Mantas, a zastąpili go dwaj inni, Jimmy i Mike."
+      "start": 1813.24,
+      "end": 1816.02,
+      "text": "Gdzie jakby był opętany,"
     },
     {
-      "start": 2041.49,
-      "end": 2068.99,
-      "text": "Powstała płyta Come Before the Storm, która definitywnie zakończyła panowanie Venom w królestwie metalowej ekstremy, bo zespół próbował nadążyć za rozwijającym się trash metalem, który zresztą przecież sam zainspirował, ale nie do końca rozumiejąc właściwie o co chodzi w tym gatunku i przede wszystkim nie rozumiejąc o dziwo, co czyniło ich samych Venom wielkim."
+      "start": 1816.02,
+      "end": 1817.54,
+      "text": "wszyscy półnadzy, z"
     },
     {
-      "start": 2068.99,
-      "end": 2088.83,
-      "text": "Później Cronos odszedł z Venom, zespół wydał parę płyt bez niego, a sam wokalista i basista nagrywał solo pod szyldem Cronos właśnie utwory w stylu Venom, może trochę bardziej rubaszne i nie było to dobre."
+      "start": 1817.54,
+      "end": 1819.07,
+      "text": "pieszczochami, abadą,"
     },
     {
-      "start": 2088.83,
-      "end": 2096.83,
-      "text": "Jakieś strasznie złe też niby nie było, ale do tych najważniejszych nagrań brytyjskiej grupy nie da się tego porównać."
+      "start": 1819.07,
+      "end": 1820.45,
+      "text": "z mieczem, przed"
     },
     {
-      "start": 2098.99,
-      "end": 2099.29,
-      "text": "Dziękuje za oglądanie!"
+      "start": 1820.45,
+      "end": 1822.67,
+      "text": "mantasem, sztylet wbity"
     },
     {
-      "start": 2322.37,
-      "end": 2339.15,
-      "text": "W końcu Kronos, Mantas i Abaddon zrozumieli, co było ich siłą. Współpraca. Postanowili zakończyć z waśniami, powrócić na scenę w sprawdzonym oryginalnym składzie i odzyskać tron."
+      "start": 1822.67,
+      "end": 1823.68,
+      "text": "w ziemię."
     },
     {
-      "start": 2339.15,
-      "end": 2363.13,
-      "text": "W 1997 roku wyszła płyta Cast in Stone z kuriozalnie brzydką okładką. Ostatnia w tym składzie. Płyta udana, na pewno lepsza niż cokolwiek innego po Possessed, ale jednak poniżej oczekiwań fanów i poniżej możliwości zespołu."
+      "start": 1824.04,
+      "end": 1825.11,
+      "text": "To jedno zdjęcie"
     },
     {
-      "start": 2363.13,
-      "end": 2382.41,
-      "text": "Dopiero na Resurrection, albumie z 2000 roku, Venom pokazał się w pełnej piekielnej krasie. Bębnił niejaki Anton, rodzony brat Kronosa. Na gitarze wciąż grał Mantas i znowu był w formie."
+      "start": 1825.11,
+      "end": 1826.82,
+      "text": "nadało ton estetyce"
     },
     {
-      "start": 2382.55,
-      "end": 2392.43,
-      "text": "Widziałem ten skład na żywo ćwierć wieku temu i powiem wam, że to było jedno z najwspanialszych koncertowych doświadczeń w moim życiu."
+      "start": 1826.82,
+      "end": 1828.1,
+      "text": "fotografii black"
     },
     {
-      "start": 2393.25,
-      "end": 2404.85,
-      "text": "Niestety po Resurrection Mantas i Kronos zamiast pójść za ciosem znowu się pożarli i Venom nigdy już nie wrócił do takiej formy."
+      "start": 1828.1,
+      "end": 1829.83,
+      "text": "metalowych na długie"
     },
     {
-      "start": 2463.84,
-      "end": 2466.32,
-      "text": "Sign of the symbol by passage with nimbo"
+      "start": 1829.83,
+      "end": 1830.8,
+      "text": "dekady."
     },
     {
-      "start": 2466.32,
-      "end": 2468.54,
-      "text": "Revealing the old satanah"
+      "start": 2026.68,
+      "end": 2027.97,
+      "text": "w drugiej połowie"
     },
     {
-      "start": 2468.54,
-      "end": 2472.02,
-      "text": "Light of the hateful"
+      "start": 2027.97,
+      "end": 2029.52,
+      "text": "lat osiemdziesiątych"
     },
     {
-      "start": 3055.84,
-      "end": 3065.28,
-      "text": "Słuchacie Ciężko na sercu w trójce, odcinka, w którym żegnam Kronosa, wokalistę, basistę i frontmana Venom."
+      "start": 2029.52,
+      "end": 2031.1,
+      "text": "zaczęły się dla Venom"
     },
     {
-      "start": 3066.14,
-      "end": 3072.14,
-      "text": "O tym, że Venom inspirował black metalowców już mówiłem, wszyscy to zresztą wiedzą."
+      "start": 2031.1,
+      "end": 2032.3,
+      "text": "kłopoty."
     },
     {
-      "start": 3072.78,
-      "end": 3078.96,
-      "text": "Jestem przekonany, że Kronos dostawał wiele propozycji do grania się do płyty temu i owemu,"
+      "start": 2033.24,
+      "end": 2034.13,
+      "text": "W zespole narastały"
     },
     {
-      "start": 3079.56,
-      "end": 3084.4,
-      "text": "ale że takich przypadków zbyt licznych nie ma, sądzę, że często odmawiał."
+      "start": 2034.13,
+      "end": 2035.16,
+      "text": "konflikty."
     },
     {
-      "start": 3084.4,
-      "end": 3093.2,
-      "text": "Może uważał, że jak się zgodzi raz, to potem będzie musiał ciągle mówić tak, a nie chciał, żeby to nam spowszedniało."
+      "start": 2035.28,
+      "end": 2037.44,
+      "text": "Usunięty został gitarzysta"
     },
     {
-      "start": 3094.14,
-      "end": 3105.32,
-      "text": "Pojawia się na przykład w ilościach homeopatycznych u Enthrowned, bo liderem tamtego zespołu jest jego kuzyn, czy inny krewniak."
+      "start": 2037.44,
+      "end": 2038.26,
+      "text": "Mantas,"
     },
     {
-      "start": 3106.26,
-      "end": 3113.4,
-      "text": "Dał się też Kronos zaprosić na chórki gagatkom z fińsko-greckiego projektu elektroblekowego."
+      "start": 2038.26,
+      "end": 2039.56,
+      "text": "a zastąpili go dwaj"
     },
     {
-      "start": 3113.88,
-      "end": 3126.46,
-      "text": "O nazwie Diabolos Rising, ale najbardziej skorzystał zespół Cradle of Filth, bo w utworze Haunted Shores z albumu Dusk and Her Embrace"
+      "start": 2039.56,
+      "end": 2041.5,
+      "text": "inni, Jimmy i Mike."
     },
     {
-      "start": 3126.46,
-      "end": 3130.64,
-      "text": "Kronos mówi długo, głośno i wyraźnie."
+      "start": 2042.08,
+      "end": 2042.87,
+      "text": "Powstała płyta Come"
     },
     {
-      "start": 3131.36,
-      "end": 3138.8,
-      "text": "Fajnie nawiązuje i do dziedzictwa Venom i przy okazji błogosławi nową falę black metalu."
+      "start": 2042.87,
+      "end": 2044.24,
+      "text": "Before the Storm,"
     },
     {
-      "start": 3138.8,
-      "end": 3140.8,
-      "text": "Muzyka"
+      "start": 2044.66,
+      "end": 2045.77,
+      "text": "która definitywnie"
     },
     {
-      "start": 3551.88,
-      "end": 3566.76,
-      "text": "Współpraca Kronosa z black metalowcami to rzecz oczywista, wręcz oczekiwana, natomiast zdecydowanie bardziej zaskakujące było jego wspólne nagranie z Dave'em Grawlem."
+      "start": 2045.77,
+      "end": 2047.38,
+      "text": "zakończyła panowanie"
     },
     {
-      "start": 3566.76,
-      "end": 3575.06,
-      "text": "Wtedy jeszcze bardziej pamiętanym z Nirwany, dzisiaj znanym chyba już głównie jako lider Foo Fighters."
+      "start": 2047.38,
+      "end": 2048.12,
+      "text": "Venom"
     },
     {
-      "start": 3576.16,
-      "end": 3584.62,
-      "text": "No ale z drugiej strony ani Dave, ani sama Nirwana nigdy nie kryli, że metal był dużą częścią ich fascynacji."
+      "start": 2048.12,
+      "end": 2049.52,
+      "text": "w Królestwie Metalowej"
     },
     {
-      "start": 3584.62,
-      "end": 3597.8,
-      "text": "Kochali też oczywiście punk rocka, a Venom to przecież zespół, który stylistycznie zawsze stał w rozkroku, trochę na metalowym, trochę na punkowym terytorium."
+      "start": 2049.52,
+      "end": 2050.26,
+      "text": "Ekstremy,"
     },
     {
-      "start": 3598.76,
-      "end": 3608.22,
-      "text": "Może i ciężar ciała przenosił częściej na stronę metalową, ale tamtej drugiej nogi przecież sobie nie odetnie, nie wyprze się jej."
+      "start": 2050.86,
+      "end": 2052.34,
+      "text": "bo zespół próbował"
     },
     {
-      "start": 3608.22,
-      "end": 3620,
-      "text": "A zatem Probot. Probot, czyli projekt, w którym Grawl złożył hołd swoim metalowym idolom z ich czynnym udziałem."
+      "start": 2052.34,
+      "end": 2053.26,
+      "text": "nadążyć"
     },
     {
-      "start": 3620.62,
-      "end": 3631.68,
-      "text": "Dave napisał piosenki w stylu swoich ulubionych kapel, sam na wszystkim zagrał, a oryginalnych wokalistów zaprosił do zaśpiewania."
+      "start": 2053.26,
+      "end": 2054.62,
+      "text": "za rozwijającym się"
     },
     {
-      "start": 3631.68,
-      "end": 3651.68,
-      "text": "Są zatem na tej płycie i Lemmy, i King Diamond, i Max Cavallera, i Tom Warrior, ale jest też oczywiście Kronos w otwierającej, nie bez powodu, album kompozycji Centuries of Sin."
+      "start": 2054.62,
+      "end": 2055.86,
+      "text": "thrash metalem,"
     },
     {
-      "start": 3890.79,
+      "start": 2055.94,
+      "end": 2056.95,
+      "text": "który zresztą przecież"
+    },
+    {
+      "start": 2056.95,
+      "end": 2058.24,
+      "text": "sam zainspirował,"
+    },
+    {
+      "start": 2058.38,
+      "end": 2059.18,
+      "text": "ale nie do końca"
+    },
+    {
+      "start": 2059.18,
+      "end": 2059.96,
+      "text": "rozumiejąc"
+    },
+    {
+      "start": 2059.96,
+      "end": 2060.53,
+      "text": "właściwie o co"
+    },
+    {
+      "start": 2060.53,
+      "end": 2060.98,
+      "text": "chodzi"
+    },
+    {
+      "start": 2060.98,
+      "end": 2062.83,
+      "text": "w tym gatunku i"
+    },
+    {
+      "start": 2062.83,
+      "end": 2063.42,
+      "text": "przede wszystkim"
+    },
+    {
+      "start": 2063.42,
+      "end": 2064.82,
+      "text": "nie rozumiejąc o"
+    },
+    {
+      "start": 2064.82,
+      "end": 2065.34,
+      "text": "dziwo,"
+    },
+    {
+      "start": 2065.34,
+      "end": 2067.32,
+      "text": "co czyniło ich samych"
+    },
+    {
+      "start": 2067.32,
+      "end": 2069,
+      "text": "Venom wielkim."
+    },
+    {
+      "start": 2069.62,
+      "end": 2071.2,
+      "text": "Później Kronos odszedł"
+    },
+    {
+      "start": 2071.2,
+      "end": 2072.1,
+      "text": "z Venom,"
+    },
+    {
+      "start": 2072.26,
+      "end": 2073.77,
+      "text": "zespół wydał parę"
+    },
+    {
+      "start": 2073.77,
+      "end": 2075.42,
+      "text": "płyt bez niego,"
+    },
+    {
+      "start": 2075.92,
+      "end": 2077.43,
+      "text": "a sam wokalista i"
+    },
+    {
+      "start": 2077.43,
+      "end": 2078.48,
+      "text": "basista"
+    },
+    {
+      "start": 2078.48,
+      "end": 2079.84,
+      "text": "nagrywał solo pod"
+    },
+    {
+      "start": 2079.84,
+      "end": 2081.08,
+      "text": "szyldem Kronos"
+    },
+    {
+      "start": 2081.08,
+      "end": 2082.66,
+      "text": "właśnie utwory w"
+    },
+    {
+      "start": 2082.66,
+      "end": 2084.34,
+      "text": "stylu Venom,"
+    },
+    {
+      "start": 2084.56,
+      "end": 2085.41,
+      "text": "może trochę"
+    },
+    {
+      "start": 2085.41,
+      "end": 2086.8,
+      "text": "bardziej rubaszne"
+    },
+    {
+      "start": 2086.8,
+      "end": 2088.84,
+      "text": "i nie było to dobre."
+    },
+    {
+      "start": 2088.98,
+      "end": 2090.27,
+      "text": "Jakieś strasznie złe"
+    },
+    {
+      "start": 2090.27,
+      "end": 2091.94,
+      "text": "też niby nie było,"
+    },
+    {
+      "start": 2092.12,
+      "end": 2093.62,
+      "text": "ale do tych najważniejszych"
+    },
+    {
+      "start": 2093.62,
+      "end": 2094.04,
+      "text": "nagrań"
+    },
+    {
+      "start": 2094.04,
+      "end": 2095.08,
+      "text": "brytyjskiej grupy"
+    },
+    {
+      "start": 2095.08,
+      "end": 2097.3,
+      "text": "nie da się tego porównać."
+    },
+    {
+      "start": 2323.48,
+      "end": 2324.89,
+      "text": "W końcu Kronos,"
+    },
+    {
+      "start": 2324.89,
+      "end": 2327.29,
+      "text": "Mantas i Abaddon zrozumieli,"
+    },
+    {
+      "start": 2327.29,
+      "end": 2329.24,
+      "text": "co było ich siłą,"
+    },
+    {
+      "start": 2329.24,
+      "end": 2329.98,
+      "text": "współpraca."
+    },
+    {
+      "start": 2330.64,
+      "end": 2331.86,
+      "text": "Postanowili zakończyć"
+    },
+    {
+      "start": 2331.86,
+      "end": 2333.93,
+      "text": "z waśniami, powrócić"
+    },
+    {
+      "start": 2333.93,
+      "end": 2336.08,
+      "text": "na scenę w sprawdzonym,"
+    },
+    {
+      "start": 2336.08,
+      "end": 2337.11,
+      "text": "oryginalnym składzie"
+    },
+    {
+      "start": 2337.11,
+      "end": 2339.16,
+      "text": "i odzyskać tron."
+    },
+    {
+      "start": 2339.16,
+      "end": 2342.3,
+      "text": "W 1997 roku wyszła"
+    },
+    {
+      "start": 2342.3,
+      "end": 2344.29,
+      "text": "płyta Cast in Stone"
+    },
+    {
+      "start": 2344.29,
+      "end": 2346.77,
+      "text": "z kuriozalnie brzydką"
+    },
+    {
+      "start": 2346.77,
+      "end": 2349.11,
+      "text": "okładką, ostatnia w"
+    },
+    {
+      "start": 2349.11,
+      "end": 2351.16,
+      "text": "tym składzie."
+    },
+    {
+      "start": 2352.28,
+      "end": 2353.46,
+      "text": "Płyta udana, na"
+    },
+    {
+      "start": 2353.46,
+      "end": 2355.42,
+      "text": "pewno lepsza niż cokolwiek"
+    },
+    {
+      "start": 2355.42,
+      "end": 2357.12,
+      "text": "innego po Possessed,"
+    },
+    {
+      "start": 2357.12,
+      "end": 2358.66,
+      "text": "ale jednak poniżej"
+    },
+    {
+      "start": 2358.66,
+      "end": 2360.15,
+      "text": "oczekiwań fanów i"
+    },
+    {
+      "start": 2360.15,
+      "end": 2361.99,
+      "text": "poniżej możliwości"
+    },
+    {
+      "start": 2361.99,
+      "end": 2363.12,
+      "text": "zespołu."
+    },
+    {
+      "start": 2363.12,
+      "end": 2365.35,
+      "text": "Dopiero na Resurrection,"
+    },
+    {
+      "start": 2365.35,
+      "end": 2367.88,
+      "text": "albumie z 2000 roku,"
+    },
+    {
+      "start": 2367.88,
+      "end": 2369.44,
+      "text": "Venom pokazał się w"
+    },
+    {
+      "start": 2369.44,
+      "end": 2372,
+      "text": "pełnej piekielnej krasie."
+    },
+    {
+      "start": 2372.54,
+      "end": 2374.02,
+      "text": "Bębnił niejaki"
+    },
+    {
+      "start": 2374.02,
+      "end": 2376.13,
+      "text": "Anton, rodzony brat"
+    },
+    {
+      "start": 2376.13,
+      "end": 2378.3,
+      "text": "Kronosa, na gitarze"
+    },
+    {
+      "start": 2378.3,
+      "end": 2380.05,
+      "text": "wciąż grał Mantas i"
+    },
+    {
+      "start": 2380.05,
+      "end": 2382.42,
+      "text": "znowu był w formie."
+    },
+    {
+      "start": 2382.98,
+      "end": 2383.88,
+      "text": "Widziałem ten skład"
+    },
+    {
+      "start": 2383.88,
+      "end": 2385.36,
+      "text": "na żywo ćwierć wieku"
+    },
+    {
+      "start": 2385.36,
+      "end": 2386.68,
+      "text": "temu i powiem wam,"
+    },
+    {
+      "start": 2386.68,
+      "end": 2387.88,
+      "text": "że to było jedno z"
+    },
+    {
+      "start": 2387.88,
+      "end": 2389.37,
+      "text": "najwspanialszych"
+    },
+    {
+      "start": 2389.37,
+      "end": 2390.38,
+      "text": "koncertowych"
+    },
+    {
+      "start": 2390.38,
+      "end": 2391.71,
+      "text": "doświadczeń w moim"
+    },
+    {
+      "start": 2391.71,
+      "end": 2392.42,
+      "text": "życiu."
+    },
+    {
+      "start": 2393.1,
+      "end": 2395.56,
+      "text": "Niestety, po Resurrection"
+    },
+    {
+      "start": 2395.56,
+      "end": 2397.6,
+      "text": "Mantas i Kronos zamiast"
+    },
+    {
+      "start": 2397.6,
+      "end": 2399.62,
+      "text": "pójść za ciosem, znowu"
+    },
+    {
+      "start": 2399.62,
+      "end": 2401.34,
+      "text": "się pożarli i Venom"
+    },
+    {
+      "start": 2401.34,
+      "end": 2402.87,
+      "text": "nigdy już nie wrócił"
+    },
+    {
+      "start": 2402.87,
+      "end": 2403.78,
+      "text": "do ciosu."
+    },
+    {
+      "start": 3056.03,
+      "end": 3057.46,
+      "text": "Słuchacie Ciężko na"
+    },
+    {
+      "start": 3057.46,
+      "end": 3059.53,
+      "text": "sercu w trójce, odcinka,"
+    },
+    {
+      "start": 3059.53,
+      "end": 3061.4,
+      "text": "w którym żegnam Kronosa,"
+    },
+    {
+      "start": 3061.4,
+      "end": 3063.31,
+      "text": "wokalistę, basistę"
+    },
+    {
+      "start": 3063.31,
+      "end": 3065.27,
+      "text": "i frontmana Venom."
+    },
+    {
+      "start": 3066.21,
+      "end": 3066.44,
+      "text": "O tym, że Venom"
+    },
+    {
+      "start": 3066.44,
+      "end": 3067.8,
+      "text": "inspirował black"
+    },
+    {
+      "start": 3067.8,
+      "end": 3069.78,
+      "text": "metalowców już mówiłem,"
+    },
+    {
+      "start": 3069.78,
+      "end": 3071.23,
+      "text": "wszyscy to zresztą"
+    },
+    {
+      "start": 3071.23,
+      "end": 3072.15,
+      "text": "wiedzą."
+    },
+    {
+      "start": 3072.77,
+      "end": 3073.68,
+      "text": "Jestem przekonany,"
+    },
+    {
+      "start": 3073.68,
+      "end": 3075.02,
+      "text": "że Kronos dostawał"
+    },
+    {
+      "start": 3075.02,
+      "end": 3076.46,
+      "text": "wiele propozycji do"
+    },
+    {
+      "start": 3076.46,
+      "end": 3077.81,
+      "text": "grania się do płyty"
+    },
+    {
+      "start": 3077.81,
+      "end": 3078.95,
+      "text": "temu i owemu,"
+    },
+    {
+      "start": 3079.55,
+      "end": 3079.84,
+      "text": "ale że takich"
+    },
+    {
+      "start": 3079.84,
+      "end": 3081.63,
+      "text": "przypadków zbyt licznych"
+    },
+    {
+      "start": 3081.63,
+      "end": 3082.95,
+      "text": "nie ma, sądzę, że"
+    },
+    {
+      "start": 3082.95,
+      "end": 3084.39,
+      "text": "często odmawiał."
+    },
+    {
+      "start": 3084.39,
+      "end": 3085.82,
+      "text": "Może uważał, że jak"
+    },
+    {
+      "start": 3085.82,
+      "end": 3087.18,
+      "text": "się zgodzi raz, to"
+    },
+    {
+      "start": 3087.18,
+      "end": 3088.6,
+      "text": "potem będzie musiał"
+    },
+    {
+      "start": 3088.6,
+      "end": 3090.11,
+      "text": "ciągle mówić tak, a"
+    },
+    {
+      "start": 3090.11,
+      "end": 3091.56,
+      "text": "nie chciał, żeby to"
+    },
+    {
+      "start": 3091.56,
+      "end": 3093.23,
+      "text": "nam spowszedniało."
+    },
+    {
+      "start": 3094.13,
+      "end": 3094.36,
+      "text": "Pojawia się na"
+    },
+    {
+      "start": 3094.36,
+      "end": 3095.88,
+      "text": "przykład w ilościach"
+    },
+    {
+      "start": 3095.88,
+      "end": 3097.28,
+      "text": "homeopatycznych u"
+    },
+    {
+      "start": 3097.28,
+      "end": 3099.37,
+      "text": "Enthrowned, bo liderem"
+    },
+    {
+      "start": 3099.37,
+      "end": 3100.78,
+      "text": "tamtego zespołu"
+    },
+    {
+      "start": 3100.78,
+      "end": 3102.39,
+      "text": "jest jego kuzyn,"
+    },
+    {
+      "start": 3102.39,
+      "end": 3105.31,
+      "text": "czy inny krewniak."
+    },
+    {
+      "start": 3105.79,
+      "end": 3107.32,
+      "text": "Dał się też Kronos"
+    },
+    {
+      "start": 3107.32,
+      "end": 3108.94,
+      "text": "zaprosić na chórki"
+    },
+    {
+      "start": 3108.94,
+      "end": 3111.51,
+      "text": "gagatkom z fińsko-greckiego"
+    },
+    {
+      "start": 3111.51,
+      "end": 3114.06,
+      "text": "projektu elektroblekowego"
+    },
+    {
+      "start": 3114.06,
+      "end": 3116.31,
+      "text": "o nazwie Diabolos"
+    },
+    {
+      "start": 3116.31,
+      "end": 3117.21,
+      "text": "Rising,"
+    },
+    {
+      "start": 3117.63,
+      "end": 3119.48,
+      "text": "Ale najbardziej skorzystał"
+    },
+    {
+      "start": 3119.48,
+      "end": 3120.59,
+      "text": "zespół Cradle of"
+    },
+    {
+      "start": 3120.59,
+      "end": 3122.27,
+      "text": "Filth, bo w utworze"
+    },
+    {
+      "start": 3122.27,
+      "end": 3123.59,
+      "text": "Haunted Shores z"
+    },
+    {
+      "start": 3123.59,
+      "end": 3125.69,
+      "text": "albumu Dusk and Her"
+    },
+    {
+      "start": 3125.69,
+      "end": 3126.47,
+      "text": "Embrace"
+    },
+    {
+      "start": 3126.47,
+      "end": 3128.68,
+      "text": "Kronos mówi długo,"
+    },
+    {
+      "start": 3128.68,
+      "end": 3130.65,
+      "text": "głośno i wyraźnie."
+    },
+    {
+      "start": 3131.35,
+      "end": 3132.15,
+      "text": "Fajnie nawiązuje i"
+    },
+    {
+      "start": 3132.15,
+      "end": 3134.13,
+      "text": "do dziedzictwa Venom,"
+    },
+    {
+      "start": 3134.13,
+      "end": 3136.15,
+      "text": "i przy okazji błogosławi"
+    },
+    {
+      "start": 3136.15,
+      "end": 3137.34,
+      "text": "nową falę black"
+    },
+    {
+      "start": 3137.34,
+      "end": 3138.41,
+      "text": "metalowców."
+    },
+    {
+      "start": 3552.83,
+      "end": 3554.2,
+      "text": "Współpraca Kronosa"
+    },
+    {
+      "start": 3554.2,
+      "end": 3555.59,
+      "text": "z black metalowcami"
+    },
+    {
+      "start": 3555.59,
+      "end": 3557.11,
+      "text": "to rzecz oczywista,"
+    },
+    {
+      "start": 3557.11,
+      "end": 3558.61,
+      "text": "wręcz oczekiwana,"
+    },
+    {
+      "start": 3558.61,
+      "end": 3560.71,
+      "text": "natomiast zdecydowanie"
+    },
+    {
+      "start": 3560.71,
+      "end": 3562.61,
+      "text": "bardziej zaskakujące"
+    },
+    {
+      "start": 3562.61,
+      "end": 3564.11,
+      "text": "było jego wspólne"
+    },
+    {
+      "start": 3564.11,
+      "end": 3565.71,
+      "text": "nagranie z Dave'em"
+    },
+    {
+      "start": 3565.71,
+      "end": 3566.77,
+      "text": "Grawlem."
+    },
+    {
+      "start": 3567.29,
+      "end": 3567.82,
+      "text": "Wtedy jeszcze"
+    },
+    {
+      "start": 3567.82,
+      "end": 3569.4,
+      "text": "bardziej pamiętanym"
+    },
+    {
+      "start": 3569.4,
+      "end": 3570.93,
+      "text": "z Nirwany, dzisiaj"
+    },
+    {
+      "start": 3570.93,
+      "end": 3572.74,
+      "text": "znanym chyba już głównie"
+    },
+    {
+      "start": 3572.74,
+      "end": 3573.9,
+      "text": "jako leader Foo"
+    },
+    {
+      "start": 3573.9,
+      "end": 3575.05,
+      "text": "Fighters."
+    },
+    {
+      "start": 3575.53,
+      "end": 3576.77,
+      "text": "No ale z drugiej"
+    },
+    {
+      "start": 3576.77,
+      "end": 3578.21,
+      "text": "strony ani Dave,"
+    },
+    {
+      "start": 3578.21,
+      "end": 3579.54,
+      "text": "ani sama Nirwana"
+    },
+    {
+      "start": 3579.54,
+      "end": 3581.17,
+      "text": "nigdy nie kryli, że"
+    },
+    {
+      "start": 3581.17,
+      "end": 3582.39,
+      "text": "metal był dużą"
+    },
+    {
+      "start": 3582.39,
+      "end": 3584.63,
+      "text": "częścią ich fascynacji."
+    },
+    {
+      "start": 3584.91,
+      "end": 3585.54,
+      "text": "Kochali też"
+    },
+    {
+      "start": 3585.54,
+      "end": 3586.83,
+      "text": "oczywiście punk"
+    },
+    {
+      "start": 3586.83,
+      "end": 3588.19,
+      "text": "rocka, a Venom to"
+    },
+    {
+      "start": 3588.19,
+      "end": 3589.71,
+      "text": "przecież zespół,"
+    },
+    {
+      "start": 3589.71,
+      "end": 3591.4,
+      "text": "który stylistycznie"
+    },
+    {
+      "start": 3591.4,
+      "end": 3593.19,
+      "text": "zawsze stał w rozkroku,"
+    },
+    {
+      "start": 3593.19,
+      "end": 3594.93,
+      "text": "trochę na metalowym,"
+    },
+    {
+      "start": 3594.93,
+      "end": 3596.4,
+      "text": "trochę na punkowym"
+    },
+    {
+      "start": 3596.4,
+      "end": 3597.79,
+      "text": "terytorium."
+    },
+    {
+      "start": 3598.23,
+      "end": 3599.6,
+      "text": "Może i ciężar ciała"
+    },
+    {
+      "start": 3599.6,
+      "end": 3601.11,
+      "text": "przenosił częściej"
+    },
+    {
+      "start": 3601.11,
+      "end": 3602.58,
+      "text": "na stronę metalową,"
+    },
+    {
+      "start": 3602.58,
+      "end": 3603.96,
+      "text": "ale tamtej drugiej"
+    },
+    {
+      "start": 3603.96,
+      "end": 3605.42,
+      "text": "nogi przecież sobie"
+    },
+    {
+      "start": 3605.42,
+      "end": 3607.22,
+      "text": "nie odetnie, nie wyprze"
+    },
+    {
+      "start": 3607.22,
+      "end": 3608.21,
+      "text": "się jej."
+    },
+    {
+      "start": 3609.17,
+      "end": 3610.19,
+      "text": "A zatem Probot."
+    },
+    {
+      "start": 3610.19,
+      "end": 3611.64,
+      "text": "Probot, czyli"
+    },
+    {
+      "start": 3611.64,
+      "end": 3614,
+      "text": "projekt, w którym Grawl"
+    },
+    {
+      "start": 3614,
+      "end": 3615.66,
+      "text": "złożył hołd swoim"
+    },
+    {
+      "start": 3615.66,
+      "end": 3617.45,
+      "text": "metalowym idolom z"
+    },
+    {
+      "start": 3617.45,
+      "end": 3619.99,
+      "text": "ich czynnym udziałem."
+    },
+    {
+      "start": 3619.99,
+      "end": 3621.96,
+      "text": "Dave napisał piosenki"
+    },
+    {
+      "start": 3621.96,
+      "end": 3624.24,
+      "text": "w stylu swoich ulubionych"
+    },
+    {
+      "start": 3624.24,
+      "end": 3625.49,
+      "text": "kapel, sam na"
+    },
+    {
+      "start": 3625.49,
+      "end": 3627.36,
+      "text": "wszystkim zagrał, a"
+    },
+    {
+      "start": 3627.36,
+      "end": 3629.66,
+      "text": "oryginalnych wokalistów"
+    },
+    {
+      "start": 3629.66,
+      "end": 3632.43,
+      "text": "zaprosił do zaśpiewania."
+    },
+    {
+      "start": 3633.31,
+      "end": 3635.2,
+      "text": "Są zatem na tej płycie"
+    },
+    {
+      "start": 3635.2,
+      "end": 3636.57,
+      "text": "i Lemmy, i King"
+    },
+    {
+      "start": 3636.57,
+      "end": 3639.12,
+      "text": "Diamond, i Max Cavallera,"
+    },
+    {
+      "start": 3639.12,
+      "end": 3641.1,
+      "text": "i Tom Warrior, ale"
+    },
+    {
+      "start": 3641.1,
+      "end": 3643.57,
+      "text": "jest też oczywiście"
+    },
+    {
+      "start": 3643.57,
+      "end": 3646.3,
+      "text": "Kronos w otwierającej,"
+    },
+    {
+      "start": 3646.3,
+      "end": 3648.02,
+      "text": "nie bez powodu,"
+    },
+    {
+      "start": 3648.02,
+      "end": 3649.86,
+      "text": "album kompozycji"
+    },
+    {
+      "start": 3649.86,
+      "end": 3651.67,
+      "text": "Centuries of Sin."
+    },
+    {
+      "start": 3891.93,
+      "end": 3894.43,
+      "text": "Od 2006 roku, czyli"
+    },
+    {
+      "start": 3894.43,
+      "end": 3896.58,
+      "text": "od Metal Black, Venom"
+    },
+    {
+      "start": 3896.58,
+      "end": 3898.41,
+      "text": "Kronosa regularnie"
+    },
+    {
+      "start": 3898.41,
+      "end": 3899.77,
+      "text": "wydawał nowe płyty"
+    },
+    {
+      "start": 3899.77,
+      "end": 3901.42,
+      "text": "i regularnie jeździł"
+    },
+    {
+      "start": 3901.42,
       "end": 3902.31,
-      "text": "Od 2006 roku, czyli od Metal Black, Wenom Kronosa regularnie wydawał nowe płyty i regularnie jeździł w trasy."
+      "text": "w trasy."
     },
     {
-      "start": 3902.73,
+      "start": 3902.69,
+      "end": 3903.94,
+      "text": "Płyty to były czasem"
+    },
+    {
+      "start": 3903.94,
+      "end": 3906.04,
+      "text": "lepsze, czasem gorsze,"
+    },
+    {
+      "start": 3906.04,
+      "end": 3907.58,
+      "text": "nigdy już niestety"
+    },
+    {
+      "start": 3907.58,
+      "end": 3909.03,
+      "text": "tak wspaniałe jak"
+    },
+    {
+      "start": 3909.03,
+      "end": 3911.06,
+      "text": "te pierwsze historyczne"
+    },
+    {
+      "start": 3911.06,
       "end": 3912.31,
-      "text": "Płyty to były czasem lepsze, czasem gorsze, nigdy już niestety tak wspaniałe jak te pierwsze historyczne materiały,"
+      "text": "materiały,"
     },
     {
       "start": 3913.29,
+      "end": 3914.96,
+      "text": "choć często do nich"
+    },
+    {
+      "start": 3914.96,
+      "end": 3917.42,
+      "text": "nawiązywały autocytatami"
+    },
+    {
+      "start": 3917.42,
+      "end": 3919.43,
+      "text": "w tytułach i tekstach,"
+    },
+    {
+      "start": 3919.43,
+      "end": 3921.5,
+      "text": "a nawet autoplagiatami"
+    },
+    {
+      "start": 3921.5,
       "end": 3922.67,
-      "text": "choć często do nich nawiązywały autocytatami w tytułach i tekstach, a nawet autoplagiatami w muzyce."
+      "text": "w muzyce."
     },
     {
-      "start": 3923.99,
+      "start": 3924.01,
+      "end": 3924.52,
+      "text": "Szkoda, że już się"
+    },
+    {
+      "start": 3924.52,
+      "end": 3926.37,
+      "text": "nie udało, no i nie"
+    },
+    {
+      "start": 3926.37,
+      "end": 3928.8,
+      "text": "uda niestety porozumieć"
+    },
+    {
+      "start": 3928.8,
+      "end": 3930.67,
+      "text": "trzem oryginalnym"
+    },
+    {
+      "start": 3930.67,
       "end": 3932.75,
-      "text": "Szkoda, że już się nie udało, no i nie uda niestety porozumieć trzem oryginalnym członkom zespołu,"
+      "text": "członkom zespołu,"
     },
     {
-      "start": 3932.81,
-      "end": 3937.77,
-      "text": "że ciągali się po sondach, a w wywiadach czasem byli dla siebie bardzo niemili."
+      "start": 3932.75,
+      "end": 3934.36,
+      "text": "że ciągali się po sondach,"
     },
     {
-      "start": 3937.77,
+      "start": 3934.36,
+      "end": 3935.58,
+      "text": "a w wywiadach czasem"
+    },
+    {
+      "start": 3935.58,
+      "end": 3936.49,
+      "text": "byli dla siebie"
+    },
+    {
+      "start": 3936.49,
+      "end": 3937.79,
+      "text": "bardzo niemili."
+    },
+    {
+      "start": 3937.97,
+      "end": 3939.88,
+      "text": "Szkoda, że ostatnio"
+    },
+    {
+      "start": 3939.88,
+      "end": 3941.67,
+      "text": "jeździły po świecie"
+    },
+    {
+      "start": 3941.67,
+      "end": 3943.47,
+      "text": "już trzy Venomy, bo"
+    },
+    {
+      "start": 3943.47,
+      "end": 3945.49,
+      "text": "to już była karykatura"
+    },
+    {
+      "start": 3945.49,
       "end": 3947.37,
-      "text": "I szkoda, że ostatnio jeździły po świecie już trzy Wenomy, bo to już była karykatura dawnej legendy."
+      "text": "dawnej legendy."
     },
     {
       "start": 3947.99,
-      "end": 3956.83,
-      "text": "Na albumie From the Very Deaths z 2015 roku znajdziecie utwór, który pięknie, bo już w tytule,"
+      "end": 3949.05,
+      "text": "Na albumie From the"
     },
     {
-      "start": 3956.83,
-      "end": 3961.91,
-      "text": "ale też w muzyce i tekście objaśnia fenomen Wenom."
+      "start": 3949.05,
+      "end": 3951.47,
+      "text": "Very Deaths z 2015"
+    },
+    {
+      "start": 3951.47,
+      "end": 3953.77,
+      "text": "roku znajdziecie utwór,"
+    },
+    {
+      "start": 3953.77,
+      "end": 3955.35,
+      "text": "który pięknie,"
+    },
+    {
+      "start": 3955.35,
+      "end": 3956.76,
+      "text": "bo już w tytule,"
+    },
+    {
+      "start": 3956.76,
+      "end": 3958.18,
+      "text": "ale też w muzyce i"
+    },
+    {
+      "start": 3958.18,
+      "end": 3959.75,
+      "text": "tekście objaśnia"
+    },
+    {
+      "start": 3959.75,
+      "end": 3961.35,
+      "text": "fenomen Venom."
     },
     {
       "start": 3962.11,
-      "end": 3963.27,
-      "text": "Long Heard Punks."
+      "end": 3964.71,
+      "text": "Long Heard Punks. Długowłose"
     },
     {
-      "start": 3964.25,
+      "start": 3964.71,
       "end": 3965.75,
-      "text": "Długowłose Punky."
+      "text": "Punky."
     },
     {
       "start": 3966.15,
+      "end": 3967.54,
+      "text": "A w dodatku z piekła"
+    },
+    {
+      "start": 3967.54,
+      "end": 3968.79,
+      "text": "rodem, bo jak już"
+    },
+    {
+      "start": 3968.79,
+      "end": 3969.97,
+      "text": "wspomniałem,"
+    },
+    {
+      "start": 3970.53,
+      "end": 3971.76,
+      "text": "Kronos nawet kiedy"
+    },
+    {
+      "start": 3971.76,
       "end": 3973.95,
-      "text": "A w dodatku z piekła rodem, bo jak już wspomniałem, Kronos nawet kiedy byliśmy nastolatkami,"
+      "text": "byliśmy nastolatkami,"
     },
     {
       "start": 3974.11,
+      "end": 3974.95,
+      "text": "jawił nam się jako"
+    },
+    {
+      "start": 3974.95,
+      "end": 3975.61,
+      "text": "taka groźna"
+    },
+    {
+      "start": 3975.61,
+      "end": 3976.45,
+      "text": "rzeczywiście"
+    },
+    {
+      "start": 3976.45,
+      "end": 3978.25,
+      "text": "persona,"
+    },
+    {
+      "start": 3979.19,
       "end": 3981.71,
-      "text": "jawił nam się jako taka groźna rzeczywiście persona, nie do końca śmiertelnik,"
+      "text": "nie do końca śmiertelnik,"
     },
     {
       "start": 3981.71,
+      "end": 3982.66,
+      "text": "ale w odróżnieniu"
+    },
+    {
+      "start": 3982.66,
+      "end": 3984.23,
+      "text": "od tych black metalowców,"
+    },
+    {
+      "start": 3984.43,
+      "end": 3985.69,
+      "text": "którzy czerpali z"
+    },
+    {
+      "start": 3985.69,
+      "end": 3987.17,
+      "text": "jego wizerunku i z"
+    },
+    {
+      "start": 3987.17,
       "end": 3988.71,
-      "text": "ale w odróżnieniu od tych black metalowców, którzy czerpali z jego wizerunku i z jego muzyki inspiracje,"
+      "text": "jego muzyki inspiracje,"
     },
     {
       "start": 3989.51,
-      "end": 3997.63,
-      "text": "tam zawsze było mrugnięcie okiem, zawsze był humor, zawsze był luz i wręcz punkowa właśnie Dezenvoltura."
+      "end": 3990.69,
+      "text": "tam zawsze było mrugnięcie"
+    },
+    {
+      "start": 3990.69,
+      "end": 3991.9,
+      "text": "okiem, zawsze był"
+    },
+    {
+      "start": 3991.9,
+      "end": 3992.37,
+      "text": "humor,"
+    },
+    {
+      "start": 3992.83,
+      "end": 3995.07,
+      "text": "zawsze był luz i wręcz"
+    },
+    {
+      "start": 3995.07,
+      "end": 3997.71,
+      "text": "punkowa właśnie dezenwoltura."
     },
     {
       "start": 3998.71,
-      "end": 4000.87,
-      "text": "Nie dało się gościa nie kochać."
+      "end": 3999.83,
+      "text": "Nie dało się gościa"
     },
     {
-      "start": 4238.79,
+      "start": 3999.83,
+      "end": 4000.43,
+      "text": "niekoń."
+    },
+    {
+      "start": 4240.09,
+      "end": 4241,
+      "text": "To mniej więcej"
+    },
+    {
+      "start": 4241,
+      "end": 4242.26,
+      "text": "wszystko, co miałem"
+    },
+    {
+      "start": 4242.26,
+      "end": 4243.69,
+      "text": "wam dziś do opowiedzenia"
+    },
+    {
+      "start": 4243.69,
+      "end": 4245.27,
+      "text": "na temat Kronosa i"
+    },
+    {
+      "start": 4245.27,
+      "end": 4246.05,
+      "text": "Venom,"
+    },
+    {
+      "start": 4246.25,
+      "end": 4246.96,
+      "text": "choć z drugiej"
+    },
+    {
+      "start": 4246.96,
+      "end": 4248.19,
+      "text": "strony tyle rzeczy"
+    },
+    {
+      "start": 4248.19,
       "end": 4250.35,
-      "text": "To mniej więcej wszystko, co miałem wam dziś do opowiedzenia na temat Kronosa i Venom, choć z drugiej strony tyle rzeczy jeszcze nie wypowiedziałem."
+      "text": "jeszcze nie wypowiedziałem."
     },
     {
-      "start": 4251.43,
+      "start": 4251.45,
+      "end": 4252.13,
+      "text": "Wiadomo, taka jest"
+    },
+    {
+      "start": 4252.13,
+      "end": 4253.6,
+      "text": "naturalna kolej"
+    },
+    {
+      "start": 4253.6,
+      "end": 4256.12,
+      "text": "rzeczy, ludzie przychodzą"
+    },
+    {
+      "start": 4256.12,
+      "end": 4257.33,
+      "text": "i odchodzą,"
+    },
+    {
+      "start": 4258.49,
+      "end": 4259.35,
+      "text": "ale cóż ciężko z"
+    },
+    {
+      "start": 4259.35,
       "end": 4261.47,
-      "text": "Wiadomo, taka jest naturalna kolej rzeczy, ludzie przychodzą i odchodzą, ale cóż ciężko z tym na sercu."
+      "text": "tym na sercu."
     },
     {
-      "start": 4261.47,
+      "start": 4262.35,
+      "end": 4262.97,
+      "text": "Na szczęście mamy"
+    },
+    {
+      "start": 4262.97,
+      "end": 4264.87,
+      "text": "muzykę, zarówno tę,"
+    },
+    {
+      "start": 4264.87,
+      "end": 4266.26,
+      "text": "którą Kronos nam"
+    },
+    {
+      "start": 4266.26,
+      "end": 4267.29,
+      "text": "zostawił,"
+    },
+    {
+      "start": 4267.29,
+      "end": 4268.53,
+      "text": "jak i tę, którą"
+    },
+    {
+      "start": 4268.53,
+      "end": 4270.14,
+      "text": "tworzą, tworzyli i"
+    },
+    {
+      "start": 4270.14,
+      "end": 4271.56,
+      "text": "tworzyć będą jego"
+    },
+    {
+      "start": 4271.56,
+      "end": 4273.53,
+      "text": "uczniowie i uczniowie"
+    },
+    {
+      "start": 4273.53,
       "end": 4275.03,
-      "text": "Na szczęście mamy muzykę, zarówno tę, którą Kronos nam zostawił, jak i tę, którą tworzyli i tworzyć będą jego uczniowie i uczniowie jego uczniów."
+      "text": "jego uczniów."
     },
     {
-      "start": 4276.05,
+      "start": 4276.03,
+      "end": 4276.29,
+      "text": "Dzisiaj do końca"
+    },
+    {
+      "start": 4276.29,
+      "end": 4277.55,
+      "text": "audycji grał nam"
+    },
+    {
+      "start": 4277.55,
+      "end": 4279.08,
+      "text": "będzie jednak tylko"
+    },
+    {
+      "start": 4279.08,
+      "end": 4279.77,
+      "text": "Venom,"
+    },
+    {
+      "start": 4280.11,
+      "end": 4281.86,
+      "text": "tylko ten oryginalny"
+    },
+    {
+      "start": 4281.86,
+      "end": 4283.86,
+      "text": "Venom w najbardziej"
+    },
+    {
+      "start": 4283.86,
+      "end": 4285.73,
+      "text": "bezkompromisowej"
+    },
+    {
+      "start": 4285.73,
       "end": 4286.91,
-      "text": "Dzisiaj do końca audycji grał nam będzie jednak tylko Venom, tylko ten oryginalny Venom w najbardziej bezkompromisowej formie."
+      "text": "formie."
     },
     {
-      "start": 4287.73,
-      "end": 4299.57,
-      "text": "Myślicie, że tytułowa, dwudziestominutowa, blekowo-punkowo-progresywna suita z albumu At War With Satan jest nie do zagrania w radiu?"
+      "start": 4288.13,
+      "end": 4289.11,
+      "text": "Myślicie, że tytułowa,"
     },
     {
-      "start": 4300.37,
-      "end": 4301.65,
+      "start": 4289.11,
+      "end": 4291.19,
+      "text": "dwudziestominutowa,"
+    },
+    {
+      "start": 4291.19,
+      "end": 4293.9,
+      "text": "blackowo-punkowo-progresywna"
+    },
+    {
+      "start": 4293.9,
+      "end": 4294.49,
+      "text": "suita"
+    },
+    {
+      "start": 4294.49,
+      "end": 4296,
+      "text": "z albumu At War"
+    },
+    {
+      "start": 4296,
+      "end": 4297.84,
+      "text": "With Satan jest nie"
+    },
+    {
+      "start": 4297.84,
+      "end": 4299.59,
+      "text": "do zagrania w radiu."
+    },
+    {
+      "start": 4300.39,
+      "end": 4301.63,
       "text": "Potrzymajcie mi miecz."
     },
     {
-      "start": 5889.54,
-      "end": 5891.54,
-      "text": "I'm going to do the slowest version"
+      "start": 5405.6,
+      "end": 5406.32,
+      "text": "\"Wile the"
     },
     {
-      "start": 5891.54,
-      "end": 5892.54,
-      "text": "of Bloodlust"
+      "start": 5406.32,
+      "end": 5407.52,
+      "text": "celebration of"
     },
     {
-      "start": 5900.54,
-      "end": 5902.54,
-      "text": "That's a nice speed"
+      "start": 5407.52,
+      "end": 5408.87,
+      "text": "Raven, the heavens"
     },
     {
-      "start": 5906.54,
-      "end": 5908.54,
-      "text": "That's a good speed, isn't it?"
+      "start": 5408.87,
+      "end": 5409.85,
+      "text": "grow strong with"
     },
     {
-      "start": 5908.54,
-      "end": 5910.54,
-      "text": "No!"
+      "start": 5409.85,
+      "end": 5411.46,
+      "text": "keys to the seven"
     },
     {
-      "start": 5910.54,
-      "end": 5911.16,
-      "text": "I'm going to do it again"
+      "start": 5411.46,
+      "end": 5412.15,
+      "text": "gates of hell, I"
+    },
+    {
+      "start": 5412.15,
+      "end": 5412.16,
+      "text": "mourn.\""
+    },
+    {
+      "start": 5435.68,
+      "end": 5436.83,
+      "text": "Kiedy więcej, a"
+    },
+    {
+      "start": 5436.83,
+      "end": 5438.63,
+      "text": "creature jest zadowolony"
+    },
+    {
+      "start": 5438.63,
+      "end": 5439.84,
+      "text": "do wyświetlenia o"
+    },
+    {
+      "start": 5439.84,
+      "end": 5440.68,
+      "text": "wojnie."
     }
   ],
   "stats": {
-    "windowCount": 14,
-    "transcribedAudioSec": 1143.47,
-    "segmentCount": 122,
-    "characterCount": 12099
-  },
-  "sourceId": "2026-10-07-witamy-w-piekle-i-zegnamy-cronosa"
+    "windowCount": 15,
+    "transcribedAudioSec": 1068.58,
+    "segmentCount": 645,
+    "characterCount": 11406
+  }
 }
