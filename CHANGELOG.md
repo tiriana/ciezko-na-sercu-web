@@ -1,3 +1,9 @@
+## [1.46.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.45.1...v1.46.0) (2026-11-12)
+
+### Features
+
+* **edytor:** schowanie listy odcinków przyciskiem w nagłówku ([d32b658](https://github.com/tiriana/ciezko-na-sercu-web/commit/d32b658759068753d7bc3bff8f94802bb8129f99))
+
 ## [1.45.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.45.0...v1.45.1) (2026-11-12)
 
 ### Bug Fixes
