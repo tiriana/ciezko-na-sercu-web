@@ -17,6 +17,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 import { mergeEpisode } from '../src/lib/merge.ts';
 import { askJson } from './lib/llm.mjs';
+import { timelineFor, toPlayer } from './lib/timeline.mjs';
 
 const LABEL_MAX = 60;
 const LABEL_WORDS = 8;
@@ -76,7 +77,8 @@ const labelPrompt = (label, context = '') =>
 
 // Blok mowy to ciąg segmentów bez pauzy dłuższej niż kilka sekund — w audycji
 // jeden blok to zwykle zapowiedź jednej płyty (czasem z dokończeniem po utworze).
-const speechBlocks = (transcript) => {
+// Transkrypt jest w czasie dekodera, więc od razu przeliczamy na skalę odtwarzacza.
+const speechBlocks = (transcript, scale = 1) => {
   const blocks = [];
   let current = null;
   for (const segment of transcript?.segments ?? []) {
@@ -90,10 +92,20 @@ const speechBlocks = (transcript) => {
   }
   if (current) blocks.push(current);
   return blocks.map((block) => ({
-    start: Math.round(block.start * 100) / 100,
-    end: Math.round(block.end * 100) / 100,
+    start: toPlayer(block.start, scale),
+    end: toPlayer(block.end, scale),
     text: block.text,
   }));
+};
+
+// Skala pliku: stosunek długości z nagłówka do realnej. Odcinki zmierzone przez
+// `fix-timeline` mają ją w danych, więc nie ciągniemy drugi raz całego mp3.
+const scaleFor = async (episode, entry) => {
+  const media = Number(episode.durationSec);
+  const real = Number(episode.audioDurationSec);
+  if (media > 0 && real > 0) return media / real;
+  if (!entry?.audioUrl) return 1;
+  return (await timelineFor(entry.audioUrl, episode.id)).scale;
 };
 
 const episodeId = async (key, catalog) => {
@@ -145,7 +157,9 @@ for (const key of wanted) {
     console.error(`— ${id.slice(0, 8)}: brak transkryptu`);
     continue;
   }
-  const topics = retime ? speechBlocks(transcript) : (merged.topics ?? []);
+  const topics = retime
+    ? speechBlocks(transcript, await scaleFor(episode, catalog.episodes.find((entry) => entry.id === id)))
+    : (merged.topics ?? []);
   if (topics.length === 0) {
     console.log(`— ${id.slice(0, 8)}: brak wejść`);
     continue;
