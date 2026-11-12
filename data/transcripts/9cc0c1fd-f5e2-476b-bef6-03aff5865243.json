@@ -4,370 +4,1316 @@
   "provider": "whisper-cpp",
   "model": "large-v3-turbo-q5_0",
   "language": "pl",
-  "fileSizeBytes": 111042048,
-  "fileMtimeMs": 1792262658775.7866,
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
   "windows": [
     {
       "index": 0,
-      "start": 2.24,
-      "end": 8.280000000000001
+      "start": 3.16,
+      "end": 6.72
     },
     {
       "index": 1,
-      "start": 254.76,
-      "end": 387.87
+      "start": 255.64,
+      "end": 385.68
     },
     {
       "index": 2,
-      "start": 718.34,
-      "end": 859.07
+      "start": 719.29,
+      "end": 857.49
     },
     {
       "index": 3,
-      "start": 1306.37,
-      "end": 1446.2
+      "start": 1308.03,
+      "end": 1428.03
     },
     {
       "index": 4,
-      "start": 1802.37,
-      "end": 2014.27
+      "start": 1428.03,
+      "end": 1444.71
     },
     {
       "index": 5,
-      "start": 2329.92,
-      "end": 2433.66
+      "start": 1804.76,
+      "end": 2013.42
     },
     {
       "index": 6,
-      "start": 2699.65,
-      "end": 2766.68
+      "start": 2331.29,
+      "end": 2431.91
     },
     {
       "index": 7,
-      "start": 2985.03,
-      "end": 3065.37
+      "start": 2700.64,
+      "end": 2762.58
     },
     {
       "index": 8,
-      "start": 3479.33,
-      "end": 3555.61
+      "start": 2986.88,
+      "end": 3062.14
     },
     {
       "index": 9,
-      "start": 3577.64,
-      "end": 3607.8
+      "start": 3480.45,
+      "end": 3554.01
     },
     {
       "index": 10,
-      "start": 3637.06,
-      "end": 3640.35
+      "start": 3840.44,
+      "end": 3897.56
     },
     {
       "index": 11,
-      "start": 3838.53,
-      "end": 3900.06
+      "start": 4206.17,
+      "end": 4288.89
     },
     {
       "index": 12,
-      "start": 4205.09,
-      "end": 4302.17
+      "start": 4533.21,
+      "end": 4643.59
     },
     {
       "index": 13,
-      "start": 4531.59,
-      "end": 4644.54
+      "start": 4848.09,
+      "end": 4921.69
     },
     {
       "index": 14,
-      "start": 4846.82,
-      "end": 4924.48
+      "start": 5252.16,
+      "end": 5301.88
     },
     {
       "index": 15,
-      "start": 5250.6,
-      "end": 5303.52
+      "start": 5684.25,
+      "end": 5771.79
     },
     {
       "index": 16,
-      "start": 5683.43,
-      "end": 5773.72
+      "start": 6062.68,
+      "end": 6137.98
     },
     {
       "index": 17,
-      "start": 6061.41,
-      "end": 6139.45
-    },
-    {
-      "index": 18,
-      "start": 6375.33,
-      "end": 6459.87
+      "start": 6376.38,
+      "end": 6455.5
     }
   ],
   "segments": [
     {
-      "start": 2.24,
-      "end": 5.94,
+      "start": 3.16,
+      "end": 6.72,
       "text": "Ciężko na sercu"
     },
     {
-      "start": 5.94,
-      "end": 8.28,
-      "text": "Ciężko na sercu"
+      "start": 255.64,
+      "end": 257.35,
+      "text": "Uwielbiam ten utwór,"
     },
     {
-      "start": 255.76,
-      "end": 266.06,
-      "text": "Uwielbiam ten utwór, te gitarowe schodki Black Moora, po których tanecznym krokiem płyną do nas wokalne melizmaty Gilana."
+      "start": 257.35,
+      "end": 258.88,
+      "text": "te gitarowe schodki"
     },
     {
-      "start": 266.6,
-      "end": 273.6,
-      "text": "Deep Purple, proszę Państwa, powitali Was tytułowym utworem z albumu Perfect Strangers."
+      "start": 258.88,
+      "end": 260.42,
+      "text": "Black Moora, po"
     },
     {
-      "start": 274.54,
-      "end": 283.64,
-      "text": "A powitali Was nie bez powodu, bo w sierpniu jedną z audycji poświęciłem potencjalnym i oczekiwanym powrotom."
+      "start": 260.42,
+      "end": 261.81,
+      "text": "których tanecznym"
     },
     {
-      "start": 283.64,
-      "end": 292.46,
-      "text": "Zatem dzisiaj parę słów o powrotach, które już się wydarzyły i udały się mniej lub bardziej."
+      "start": 261.81,
+      "end": 263.37,
+      "text": "krokiem płyną do"
     },
     {
-      "start": 292.94,
-      "end": 296.32,
-      "text": "Wybrałem takie, które moim zdaniem udały się bardziej."
+      "start": 263.37,
+      "end": 265.08,
+      "text": "nas wokalne melizmaty"
     },
     {
-      "start": 296.92,
+      "start": 265.08,
+      "end": 266.04,
+      "text": "Gilana."
+    },
+    {
+      "start": 266.62,
+      "end": 267.75,
+      "text": "Deep Purple, proszę"
+    },
+    {
+      "start": 267.75,
+      "end": 269.35,
+      "text": "Państwa, powitali"
+    },
+    {
+      "start": 269.35,
+      "end": 271.23,
+      "text": "Was tytułowym utworem"
+    },
+    {
+      "start": 271.23,
+      "end": 272.45,
+      "text": "z albumu Perfect"
+    },
+    {
+      "start": 272.45,
+      "end": 273.68,
+      "text": "Strangers."
+    },
+    {
+      "start": 273.68,
+      "end": 275.31,
+      "text": "A powitali Was nie"
+    },
+    {
+      "start": 275.31,
+      "end": 277.46,
+      "text": "bez powodu, bo w sierpniu"
+    },
+    {
+      "start": 277.46,
+      "end": 279.91,
+      "text": "jedną z audycji poświęciłem"
+    },
+    {
+      "start": 279.91,
+      "end": 282.59,
+      "text": "potencjalnym i oczekiwanym"
+    },
+    {
+      "start": 282.59,
+      "end": 283.66,
+      "text": "powrotom."
+    },
+    {
+      "start": 284.44,
+      "end": 285.94,
+      "text": "Zatem dzisiaj parę"
+    },
+    {
+      "start": 285.94,
+      "end": 287.43,
+      "text": "słów o powrotach,"
+    },
+    {
+      "start": 287.43,
+      "end": 289.34,
+      "text": "które już się wydarzyły"
+    },
+    {
+      "start": 289.34,
+      "end": 290.56,
+      "text": "i udały się."
+    },
+    {
+      "start": 291.08,
+      "end": 291.93,
+      "text": "Mniej lub bardziej"
+    },
+    {
+      "start": 291.93,
+      "end": 293.2,
+      "text": "wybrałem takie,"
+    },
+    {
+      "start": 293.2,
+      "end": 294.55,
+      "text": "które moim zdaniem"
+    },
+    {
+      "start": 294.55,
+      "end": 296.28,
+      "text": "udały się bardziej."
+    },
+    {
+      "start": 296.28,
+      "end": 298.22,
+      "text": "Deep Purple wrócili"
+    },
+    {
+      "start": 298.22,
+      "end": 301.35,
+      "text": "w 1984 roku po dziewięciu"
+    },
+    {
+      "start": 301.35,
+      "end": 303.33,
+      "text": "latach wydawniczego"
+    },
+    {
+      "start": 303.33,
+      "end": 305.2,
+      "text": "milczenia, bo tyle"
+    },
+    {
+      "start": 305.2,
+      "end": 306.66,
+      "text": "dzieli album Come"
+    },
+    {
+      "start": 306.66,
+      "end": 307.88,
+      "text": "Taste the Band od"
+    },
+    {
+      "start": 307.88,
+      "end": 309.33,
+      "text": "Perfect Strangers"
+    },
+    {
+      "start": 309.33,
       "end": 310.18,
-      "text": "Deep Purple wrócili w 1984 roku po dziewięciu latach wydawniczego milczenia, bo tyle dzieli album Come Taste the Band od Perfect Strangers właśnie."
+      "text": "właśnie."
     },
     {
-      "start": 310.18,
-      "end": 319,
-      "text": "Od płyty nagranej w kanonicznym składzie ze wspomnianymi już Black Moorem i Gilanem minęło wtedy więcej, bo 11 lat,"
+      "start": 310.52,
+      "end": 311.9,
+      "text": "Od płyty nagranej w"
     },
     {
-      "start": 320,
-      "end": 329.06,
-      "text": "ale niech będzie, że te dziewięć przyjmiemy dzisiaj za minimalną przerwę, od której zaczyna się prawdziwy powrót z niebytu,"
+      "start": 311.9,
+      "end": 313.54,
+      "text": "kanonicznym składzie"
     },
     {
-      "start": 329.28,
+      "start": 313.54,
+      "end": 315.3,
+      "text": "ze wspomnianymi już"
+    },
+    {
+      "start": 315.3,
+      "end": 316.69,
+      "text": "Black Moorem i Gilanem"
+    },
+    {
+      "start": 316.69,
+      "end": 318.3,
+      "text": "minęło wtedy więcej,"
+    },
+    {
+      "start": 318.3,
+      "end": 320.42,
+      "text": "bo 11 lat, ale niech"
+    },
+    {
+      "start": 320.42,
+      "end": 322.09,
+      "text": "będzie, że te dziewięć"
+    },
+    {
+      "start": 322.09,
+      "end": 323.45,
+      "text": "przyjmiemy dzisiaj"
+    },
+    {
+      "start": 323.45,
+      "end": 325.24,
+      "text": "za minimalną przerwę,"
+    },
+    {
+      "start": 325.24,
+      "end": 326.54,
+      "text": "od której zaczyna"
+    },
+    {
+      "start": 326.54,
+      "end": 328.1,
+      "text": "się prawdziwy powrót"
+    },
+    {
+      "start": 328.1,
+      "end": 329.59,
+      "text": "z niebytu, a nie,"
+    },
+    {
+      "start": 329.59,
+      "end": 330.8,
+      "text": "że ktoś tam sobie"
+    },
+    {
+      "start": 330.8,
+      "end": 332.49,
+      "text": "zrobił dłuższe wakacje"
+    },
+    {
+      "start": 332.49,
       "end": 334.36,
-      "text": "a nie, że ktoś tam sobie zrobił dłuższe wakacje czy zaspał do studia."
+      "text": "czy zaspał do studia."
     },
     {
       "start": 334.36,
+      "end": 336.37,
+      "text": "Pamiętam jakim świętem"
+    },
+    {
+      "start": 336.37,
+      "end": 338.02,
+      "text": "był ten powrót Deep"
+    },
+    {
+      "start": 338.02,
+      "end": 340.08,
+      "text": "Purple, z jaką radością"
+    },
+    {
+      "start": 340.08,
       "end": 341.4,
-      "text": "Pamiętam jakim świętem był ten powrót Deep Purple, z jaką radością był witany."
+      "text": "był witany."
     },
     {
       "start": 341.5,
+      "end": 342.84,
+      "text": "Pamiętam jak przez"
+    },
+    {
+      "start": 342.84,
+      "end": 344.19,
+      "text": "mgłę, bo nie był on"
+    },
+    {
+      "start": 344.19,
+      "end": 345.53,
+      "text": "oczekiwany przeze"
+    },
+    {
+      "start": 345.53,
+      "end": 347.04,
+      "text": "mnie, a wtedy ledwie"
+    },
+    {
+      "start": 347.04,
+      "end": 348.13,
+      "text": "zaczynałem się"
+    },
+    {
+      "start": 348.13,
       "end": 349.58,
-      "text": "Pamiętam jak przez mgłę, bo nie był on oczekiwany przeze mnie, a wtedy ledwie zaczynałem się interesować muzyką"
+      "text": "interesować muzyką"
     },
     {
       "start": 349.58,
+      "end": 350.92,
+      "text": "i nie wiedziałem,"
+    },
+    {
+      "start": 350.92,
+      "end": 352.42,
+      "text": "że Deep Purple nie"
+    },
+    {
+      "start": 352.42,
+      "end": 353.71,
+      "text": "było, a co dopiero,"
+    },
+    {
+      "start": 353.71,
       "end": 355.5,
-      "text": "i nie wiedziałem, że Deep Purple nie było, a co dopiero, że mogliby wrócić."
+      "text": "że mogliby wrócić."
     },
     {
-      "start": 356.16,
-      "end": 364.58,
-      "text": "Ale jak już wrócili, to od razu trafili w dziesiątkę i mnie też przekonali i dałem się temu entuzjazmowi ponieść"
+      "start": 356.18,
+      "end": 357.81,
+      "text": "Ale jak już wrócili,"
     },
     {
-      "start": 364.58,
-      "end": 366.92,
-      "text": "i do dziś bardzo lubię tę płytę."
+      "start": 357.81,
+      "end": 359.01,
+      "text": "to od razu trafili"
     },
     {
-      "start": 367.58,
+      "start": 359.01,
+      "end": 360.37,
+      "text": "w dziesiątkę i mnie"
+    },
+    {
+      "start": 360.37,
+      "end": 362,
+      "text": "też przekonali i dałem"
+    },
+    {
+      "start": 362,
+      "end": 363.9,
+      "text": "się temu entuzjazmowi"
+    },
+    {
+      "start": 363.9,
+      "end": 365.09,
+      "text": "ponieść i do dziś"
+    },
+    {
+      "start": 365.09,
+      "end": 366.9,
+      "text": "bardzo lubię tę płytę."
+    },
+    {
+      "start": 367.56,
+      "end": 368.43,
+      "text": "Słuchacie Ciężko na"
+    },
+    {
+      "start": 368.43,
       "end": 369.88,
-      "text": "Słuchacie ciężko na sercu w trójce."
+      "text": "sercu w trójce."
     },
     {
-      "start": 370.34,
-      "end": 376.78,
-      "text": "Przemawia do was i piosenki puszcza Jarek Szubrycht, audycję wydaje Mariusz Owczarek."
+      "start": 370.36,
+      "end": 371.16,
+      "text": "Przemawia do was i"
     },
     {
-      "start": 377.24,
-      "end": 385.66,
-      "text": "O tym, że po nocy przychodzi dzień, a po burzy kolejna burza, ale damy jej radę, przypomina Neurosis."
+      "start": 371.16,
+      "end": 372.87,
+      "text": "piosenki puszcza Jarek"
     },
     {
-      "start": 718.96,
-      "end": 728.4,
-      "text": "Dzisiaj wciążko na sercu przegląd moich ulubionych, moim zdaniem najbardziej udanych powrotów na metalowej scenie."
+      "start": 372.87,
+      "end": 374.4,
+      "text": "Szubrycht, audycję"
     },
     {
-      "start": 728.84,
-      "end": 734.58,
-      "text": "Temat szeroki, wybór subiektywny, wybaczcie zatem jeśli kogoś pominę."
+      "start": 374.4,
+      "end": 375.64,
+      "text": "wydaje Pani."
     },
     {
-      "start": 735.04,
-      "end": 740.02,
-      "text": "Ale oczywiście tegorocznego powrotu Neurosis pominąć nie mogłem."
+      "start": 375.64,
+      "end": 378.82,
+      "text": "O tym, że po nocy"
     },
     {
-      "start": 740.44,
-      "end": 752.12,
-      "text": "Kalifornijski zespół, ostatni jak się wydawało album, wydał w 2016 roku, bo w 2022 zamilkł na dobre."
+      "start": 378.82,
+      "end": 380.07,
+      "text": "przychodzi dzień, a"
     },
     {
-      "start": 752.36,
-      "end": 759.52,
-      "text": "Scott Kelly, jeden z jego filarów, publicznie przyznał się wtedy do maltretowania rodziny."
+      "start": 380.07,
+      "end": 381.6,
+      "text": "po burzy kolejna"
     },
     {
-      "start": 760.3,
-      "end": 766.52,
-      "text": "Nie trzeba go było wyrzucać z zespołu, bo koledzy byli koledzy, już wtedy zrobili to wcześniej."
+      "start": 381.6,
+      "end": 383.38,
+      "text": "burza, ale damy jej"
     },
     {
-      "start": 766.52,
-      "end": 775.26,
-      "text": "Ale wydawało się, że po pierwsze Kelly jest nie do zastąpienia, no a poza tym Neurosis to nie jest."
+      "start": 383.38,
+      "end": 385.1,
+      "text": "radę, przypomina"
     },
     {
-      "start": 775.78,
-      "end": 780.64,
-      "text": "I nie był zwyczajny zespół, oni zawsze robili w wartościach."
+      "start": 385.1,
+      "end": 385.68,
+      "text": "neurosis."
     },
     {
-      "start": 781.42,
-      "end": 784.84,
-      "text": "Ich się nie tylko słucha, ale też im się ufa."
+      "start": 719.29,
+      "end": 720.66,
+      "text": "Dzisiaj wciążko na"
     },
     {
-      "start": 785.6,
-      "end": 790.52,
-      "text": "Coś więc pękło i wydawało się, że nie da się tego już skleić."
+      "start": 720.66,
+      "end": 722.2,
+      "text": "sercu przegląd moich"
     },
     {
-      "start": 790.86,
-      "end": 802.08,
-      "text": "Tymczasem 20 marca tego roku, bez żadnych zapowiedzi i przecieków, jak grą z jasnego nieba spadła na nas dwunasta płyta studyjna Neurosis,"
+      "start": 722.2,
+      "end": 724.3,
+      "text": "ulubionych, moim zdaniem"
     },
     {
-      "start": 802.9,
-      "end": 807.4,
-      "text": "czyli niewyczerpana miłość do płonącego świata."
+      "start": 724.3,
+      "end": 725.88,
+      "text": "najbardziej udanych"
     },
     {
-      "start": 808.56,
-      "end": 818.08,
-      "text": "Dziurę po Kelly wypełnił Aaron Turner, trochę młodszy kolega, znany m.in. ze znakomitych grup Isis i Sumak."
+      "start": 725.88,
+      "end": 727.52,
+      "text": "powrotów na metalowej"
     },
     {
-      "start": 818.08,
-      "end": 820.46,
-      "text": "Czy ja na ten powrót czekałem?"
+      "start": 727.52,
+      "end": 728.39,
+      "text": "scenie."
     },
     {
-      "start": 821.2,
-      "end": 826.08,
-      "text": "Nie, bo straciłem już nadzieję, że się w ogóle może wydarzyć."
+      "start": 728.85,
+      "end": 730.18,
+      "text": "Temat szeroki, wybór"
     },
     {
-      "start": 827.14,
-      "end": 828.2,
+      "start": 730.18,
+      "end": 732.24,
+      "text": "subiektywny, wybaczcie"
+    },
+    {
+      "start": 732.24,
+      "end": 734.59,
+      "text": "zatem jeśli kogoś pominę."
+    },
+    {
+      "start": 735.05,
+      "end": 736.85,
+      "text": "Ale oczywiście tegorocznego"
+    },
+    {
+      "start": 736.85,
+      "end": 738.82,
+      "text": "powrotu Neurosis pominąć"
+    },
+    {
+      "start": 738.82,
+      "end": 740.01,
+      "text": "nie mogłem."
+    },
+    {
+      "start": 740.65,
+      "end": 742.12,
+      "text": "Kalifornijski zespół,"
+    },
+    {
+      "start": 742.12,
+      "end": 744.23,
+      "text": "ostatni jak się wydawało"
+    },
+    {
+      "start": 744.23,
+      "end": 746.77,
+      "text": "album, wydał w 2016"
+    },
+    {
+      "start": 746.77,
+      "end": 747.53,
+      "text": "roku,"
+    },
+    {
+      "start": 747.53,
+      "end": 750.66,
+      "text": "bo w 2022 zamilkł"
+    },
+    {
+      "start": 750.66,
+      "end": 752.13,
+      "text": "na dobre."
+    },
+    {
+      "start": 752.31,
+      "end": 753.65,
+      "text": "Scott Kelly, jeden"
+    },
+    {
+      "start": 753.65,
+      "end": 754.88,
+      "text": "z jego filarów,"
+    },
+    {
+      "start": 754.88,
+      "end": 756.46,
+      "text": "publicznie przyznał"
+    },
+    {
+      "start": 756.46,
+      "end": 758.51,
+      "text": "się wtedy do maltretowania"
+    },
+    {
+      "start": 758.51,
+      "end": 759.51,
+      "text": "rodziny."
+    },
+    {
+      "start": 760.31,
+      "end": 760.74,
+      "text": "Nie trzeba go było"
+    },
+    {
+      "start": 760.74,
+      "end": 762.18,
+      "text": "wyrzucać z zespołu,"
+    },
+    {
+      "start": 762.18,
+      "end": 763.41,
+      "text": "bo koledzy byli,"
+    },
+    {
+      "start": 763.41,
+      "end": 764.62,
+      "text": "koledzy już wtedy"
+    },
+    {
+      "start": 764.62,
+      "end": 765.35,
+      "text": "zrobili to"
+    },
+    {
+      "start": 765.35,
+      "end": 766.51,
+      "text": "wcześniej."
+    },
+    {
+      "start": 767.45,
+      "end": 768.05,
+      "text": "Ale wydawało się,"
+    },
+    {
+      "start": 768.05,
+      "end": 769.25,
+      "text": "że po pierwsze"
+    },
+    {
+      "start": 769.25,
+      "end": 770.58,
+      "text": "Kelly jest nie do"
+    },
+    {
+      "start": 770.58,
+      "end": 772.35,
+      "text": "zastąpienia, no a"
+    },
+    {
+      "start": 772.35,
+      "end": 774.15,
+      "text": "poza tym Neurosis"
+    },
+    {
+      "start": 774.15,
+      "end": 775.25,
+      "text": "to nie jest."
+    },
+    {
+      "start": 775.25,
+      "end": 776.82,
+      "text": "I nie był zwyczajny"
+    },
+    {
+      "start": 776.82,
+      "end": 778.48,
+      "text": "zespół, oni zawsze"
+    },
+    {
+      "start": 778.48,
+      "end": 780.65,
+      "text": "robili w wartościach."
+    },
+    {
+      "start": 781.41,
+      "end": 782.14,
+      "text": "Ich się nie tylko"
+    },
+    {
+      "start": 782.14,
+      "end": 783.83,
+      "text": "słucha, ale też im"
+    },
+    {
+      "start": 783.83,
+      "end": 784.85,
+      "text": "się ufa."
+    },
+    {
+      "start": 785.59,
+      "end": 786.22,
+      "text": "Coś więc pękło i"
+    },
+    {
+      "start": 786.22,
+      "end": 787.81,
+      "text": "wydawało się, że"
+    },
+    {
+      "start": 787.81,
+      "end": 789.4,
+      "text": "nie da się tego już"
+    },
+    {
+      "start": 789.4,
+      "end": 790.53,
+      "text": "skleić."
+    },
+    {
+      "start": 791.17,
+      "end": 792.86,
+      "text": "Tymczasem 20 marca"
+    },
+    {
+      "start": 792.86,
+      "end": 794.55,
+      "text": "tego roku, bez żadnych"
+    },
+    {
+      "start": 794.55,
+      "end": 796.57,
+      "text": "zapowiedzi i przecieków,"
+    },
+    {
+      "start": 796.57,
+      "end": 797.94,
+      "text": "jak grą z jasnego"
+    },
+    {
+      "start": 797.94,
+      "end": 799.57,
+      "text": "nieba spadła na nas"
+    },
+    {
+      "start": 799.57,
+      "end": 800.74,
+      "text": "dwunasta płyta"
+    },
+    {
+      "start": 800.74,
+      "end": 802.01,
+      "text": "studyjna Neurosis,"
+    },
+    {
+      "start": 802.89,
+      "end": 804.71,
+      "text": "czyli niewyczerpana"
+    },
+    {
+      "start": 804.71,
+      "end": 806.42,
+      "text": "miłość do płonącego"
+    },
+    {
+      "start": 806.42,
+      "end": 807.41,
+      "text": "świata."
+    },
+    {
+      "start": 808.41,
+      "end": 809.8,
+      "text": "Dziurę po Kelly wypełnił"
+    },
+    {
+      "start": 809.8,
+      "end": 811.35,
+      "text": "Aaron Turner,"
+    },
+    {
+      "start": 811.35,
+      "end": 812.91,
+      "text": "trochę młodszy kolega,"
+    },
+    {
+      "start": 812.91,
+      "end": 815.42,
+      "text": "znany m.in. ze znakomitych"
+    },
+    {
+      "start": 815.42,
+      "end": 818.09,
+      "text": "grup Isis i Sumak."
+    },
+    {
+      "start": 818.09,
+      "end": 819.46,
+      "text": "Czy ja na ten powrót"
+    },
+    {
+      "start": 819.46,
+      "end": 820.47,
+      "text": "czekałem?"
+    },
+    {
+      "start": 821.21,
+      "end": 822.23,
+      "text": "Nie, bo straciłem"
+    },
+    {
+      "start": 822.23,
+      "end": 823.89,
+      "text": "już nadzieję, że"
+    },
+    {
+      "start": 823.89,
+      "end": 826.63,
+      "text": "się w ogóle może wydarzyć."
+    },
+    {
+      "start": 827.15,
+      "end": 828.21,
       "text": "Czy go potrzebowałem?"
     },
     {
-      "start": 828.82,
-      "end": 831.64,
-      "text": "Najbardziej, jak żadnego innego."
+      "start": 828.81,
+      "end": 829.91,
+      "text": "Najbardziej, jak"
     },
     {
-      "start": 832.4,
-      "end": 835.98,
-      "text": "Ale teraz uwaga, zagadka bez nagród."
+      "start": 829.91,
+      "end": 831.65,
+      "text": "żadnego innego."
     },
     {
-      "start": 836.98,
-      "end": 845.64,
-      "text": "Gdyby Neurosis jeszcze nie wrócili, gdyby płyta An Undying Love for a Burning World nigdy się nie ukazała,"
+      "start": 832.39,
+      "end": 833.54,
+      "text": "Ale teraz uwaga,"
     },
     {
-      "start": 845.84,
-      "end": 855.12,
-      "text": "to o którym zespole mówiłbym, że jest autorem najbardziej spektakularnego powrotu w historii metalu?"
+      "start": 833.54,
+      "end": 835.99,
+      "text": "zagadka bez nagród."
     },
     {
-      "start": 856.02,
-      "end": 857.5,
-      "text": "Oczywiście, że o tym."
+      "start": 836.99,
+      "end": 837.35,
+      "text": "Gdyby Neurosis"
     },
     {
-      "start": 1307.07,
+      "start": 837.35,
+      "end": 839.29,
+      "text": "jeszcze nie wrócił,"
+    },
+    {
+      "start": 839.29,
+      "end": 841.22,
+      "text": "Gdyby płyta An Undying"
+    },
+    {
+      "start": 841.22,
+      "end": 842.78,
+      "text": "Love for a Burning"
+    },
+    {
+      "start": 842.78,
+      "end": 844.68,
+      "text": "World nigdy się nie"
+    },
+    {
+      "start": 844.68,
+      "end": 845.98,
+      "text": "ukazała, to o"
+    },
+    {
+      "start": 845.98,
+      "end": 848.57,
+      "text": "którym zespole mówiłbym,"
+    },
+    {
+      "start": 848.57,
+      "end": 849.87,
+      "text": "że jest autorem"
+    },
+    {
+      "start": 849.87,
+      "end": 852.79,
+      "text": "najbardziej spektakularnego"
+    },
+    {
+      "start": 852.79,
+      "end": 854.1,
+      "text": "powrotu w historii"
+    },
+    {
+      "start": 854.1,
+      "end": 855.11,
+      "text": "metalu?"
+    },
+    {
+      "start": 856.01,
+      "end": 856.79,
+      "text": "Oczywiście, że o"
+    },
+    {
+      "start": 856.79,
+      "end": 857.49,
+      "text": "tym."
+    },
+    {
+      "start": 1308.03,
+      "end": 1310.18,
+      "text": "Odrobina teorii. Otóż"
+    },
+    {
+      "start": 1310.18,
+      "end": 1311.16,
+      "text": "moim zdaniem na"
+    },
+    {
+      "start": 1311.16,
+      "end": 1313.29,
+      "text": "prawdziwie spektakularny"
+    },
+    {
+      "start": 1313.29,
+      "end": 1314.84,
+      "text": "powrót składają się"
+    },
+    {
+      "start": 1314.84,
       "end": 1316.75,
-      "text": "Teraz odrobina teorii. Otóż moim zdaniem na prawdziwie spektakularny powrót składają się zwykle cztery zmienne."
+      "text": "zwykle cztery zmienne."
     },
     {
-      "start": 1317.35,
+      "start": 1317.31,
+      "end": 1319.47,
+      "text": "Pierwsza to czas oczekiwania."
+    },
+    {
+      "start": 1319.47,
+      "end": 1320.84,
+      "text": "Umówiliśmy się, a"
+    },
+    {
+      "start": 1320.84,
+      "end": 1322.23,
+      "text": "właściwie ja się z"
+    },
+    {
+      "start": 1322.23,
+      "end": 1323.97,
+      "text": "Państwem umówiłem,"
+    },
+    {
+      "start": 1323.97,
+      "end": 1325.18,
+      "text": "że dziewięć lat to"
+    },
+    {
+      "start": 1325.18,
+      "end": 1325.85,
+      "text": "minimum,"
+    },
+    {
+      "start": 1326.11,
+      "end": 1327.1,
+      "text": "ale zdarzają się i"
+    },
+    {
+      "start": 1327.1,
+      "end": 1329.05,
+      "text": "dłuższe, znacznie dłuższe"
+    },
+    {
+      "start": 1329.05,
+      "end": 1330.62,
+      "text": "przerwy, wtedy efekt"
+    },
+    {
+      "start": 1330.62,
       "end": 1332.39,
-      "text": "Pierwsza to czas oczekiwania. Umówiliśmy się, a właściwie ja się z Państwem umówiłem, że 9 lat to minimum, ale zdarzają się i dłuższe, znacznie dłuższe przerwy, wtedy efekt oczywiście lepszy."
+      "text": "oczywiście lepszy."
     },
     {
-      "start": 1332.39,
+      "start": 1332.63,
+      "end": 1334.05,
+      "text": "Druga zmienna to,"
+    },
+    {
+      "start": 1334.05,
+      "end": 1336.14,
+      "text": "wiadomo, jakość. Żadna"
+    },
+    {
+      "start": 1336.14,
+      "end": 1337.55,
+      "text": "to sztuka wrócić z"
+    },
+    {
+      "start": 1337.55,
+      "end": 1338.75,
+      "text": "kiepską płytą,"
+    },
+    {
+      "start": 1338.75,
+      "end": 1339.97,
+      "text": "której nikt nie"
+    },
+    {
+      "start": 1339.97,
       "end": 1341.29,
-      "text": "Druga zmienna to, wiadomo, jakość. Żadna to sztuka wrócić z kiepską płytą, której nikt nie chce słuchać."
+      "text": "chce słuchać."
     },
     {
-      "start": 1342.13,
-      "end": 1349.39,
-      "text": "Trzecia zmienna to element zaskoczenia. I te właśnie pięknie wykorzystali neurosis."
+      "start": 1342.15,
+      "end": 1342.92,
+      "text": "Trzecia zmienna to"
+    },
+    {
+      "start": 1342.92,
+      "end": 1345.08,
+      "text": "element zaskoczenia."
+    },
+    {
+      "start": 1345.08,
+      "end": 1346.87,
+      "text": "I te właśnie pięknie"
+    },
+    {
+      "start": 1346.87,
+      "end": 1349.31,
+      "text": "wykorzystali neurosis."
     },
     {
       "start": 1350.21,
-      "end": 1358.55,
-      "text": "Ale jest jeszcze czwarty czynnik, bardzo ważny. Im głębszej wracasz odchłani, tym piękniej wyglądasz na szczycie."
+      "end": 1351.04,
+      "text": "Ale jest jeszcze czwarty"
     },
     {
-      "start": 1359.21,
+      "start": 1351.04,
+      "end": 1353.01,
+      "text": "czynnik, bardzo ważny."
+    },
+    {
+      "start": 1353.01,
+      "end": 1354.63,
+      "text": "Z im głębszej wracasz"
+    },
+    {
+      "start": 1354.63,
+      "end": 1356.52,
+      "text": "od chłani, tym piękniej"
+    },
+    {
+      "start": 1356.52,
+      "end": 1358.55,
+      "text": "wyglądasz na szczycie."
+    },
+    {
+      "start": 1359.15,
+      "end": 1360.41,
+      "text": "Szwajcarski zespół"
+    },
+    {
+      "start": 1360.41,
+      "end": 1361.42,
+      "text": "Celtic Frost,"
+    },
+    {
+      "start": 1361.42,
+      "end": 1362.82,
+      "text": "którego przed chwilą"
+    },
+    {
+      "start": 1362.82,
+      "end": 1364.59,
+      "text": "wysłuchaliśmy, milczał"
+    },
+    {
+      "start": 1364.59,
       "end": 1365.99,
-      "text": "Szwajcarski zespół Celtic Frost, którego przed chwilą wysłuchaliśmy, milczał przez 16 lat."
+      "text": "przez 16 lat."
     },
     {
       "start": 1366.51,
-      "end": 1372.03,
-      "text": "Wcześniej krótko był w czyśćcu. Mówię o płycie Vanity Nemesis."
+      "end": 1367.28,
+      "text": "Wcześniej krótko"
     },
     {
-      "start": 1372.87,
+      "start": 1367.28,
+      "end": 1369.17,
+      "text": "był w czyśćcu. Mówię"
+    },
+    {
+      "start": 1369.17,
+      "end": 1372.01,
+      "text": "o płycie Vanity Nemesis."
+    },
+    {
+      "start": 1372.89,
+      "end": 1373.1,
+      "text": "Ale jeszcze"
+    },
+    {
+      "start": 1373.1,
+      "end": 1375.12,
+      "text": "wcześniej, na dnie,"
+    },
+    {
+      "start": 1375.12,
+      "end": 1377.19,
+      "text": "za sprawą Cold Lake."
+    },
+    {
+      "start": 1378.05,
+      "end": 1378.56,
+      "text": "Byli tacy, co za"
+    },
+    {
+      "start": 1378.56,
+      "end": 1380.6,
+      "text": "Celtic Frost tęsknili,"
+    },
+    {
+      "start": 1380.6,
+      "end": 1382.09,
+      "text": "ja na przykład,"
+    },
+    {
+      "start": 1382.09,
+      "end": 1382.79,
+      "text": "ale nawet"
+    },
+    {
+      "start": 1382.79,
+      "end": 1384.53,
+      "text": "najbardziej zagorzali"
+    },
+    {
+      "start": 1384.53,
+      "end": 1385.73,
+      "text": "fani i nawet ci,"
+    },
+    {
+      "start": 1385.73,
+      "end": 1387.53,
+      "text": "którzy najbardziej,"
+    },
+    {
+      "start": 1387.53,
+      "end": 1390.03,
+      "text": "najmocniej w nich wierzyli,"
+    },
+    {
+      "start": 1390.27,
+      "end": 1391.83,
+      "text": "nie spodziewali się"
+    },
+    {
+      "start": 1391.83,
+      "end": 1393.88,
+      "text": "płyty tak doskonałej"
+    },
+    {
+      "start": 1393.88,
       "end": 1395.55,
-      "text": "Ale jeszcze wcześniej na dnie, za sprawą Cold Lake. Byli tacy, co za Celtic Frost tęsknili, ja na przykład, ale nawet najbardziej zagorzali fani i nawet ci, którzy najbardziej, najmocniej w nich wierzyli, nie spodziewali się płyty tak doskonałej jak Monoteist."
+      "text": "jak Monoteist."
     },
     {
-      "start": 1395.55,
+      "start": 1396.51,
+      "end": 1397.65,
+      "text": "To nie tylko perfekcyjny"
+    },
+    {
+      "start": 1397.65,
+      "end": 1399.63,
+      "text": "powrót Celtic Frost,"
+    },
+    {
+      "start": 1399.63,
+      "end": 1401,
+      "text": "ale w ogóle jedna z"
+    },
+    {
+      "start": 1401,
+      "end": 1402.96,
+      "text": "najlepszych metalowych"
+    },
+    {
+      "start": 1402.96,
       "end": 1405.59,
-      "text": "To nie tylko perfekcyjny powrót Celtic Frost, ale w ogóle jedna z najlepszych metalowych płyt XXI wieku."
+      "text": "płyt XXI wieku."
     },
     {
       "start": 1406.33,
+      "end": 1407.58,
+      "text": "Niestety, Tom"
+    },
+    {
+      "start": 1407.58,
+      "end": 1409.51,
+      "text": "Gabriel Fisher i Mardik"
+    },
+    {
+      "start": 1409.51,
+      "end": 1411.77,
+      "text": "Eric Ayn, czyli basista"
+    },
+    {
+      "start": 1411.77,
+      "end": 1413.51,
+      "text": "i prawa ręka lidera,"
+    },
+    {
+      "start": 1413.57,
+      "end": 1414.83,
+      "text": "znowu się pożarli i"
+    },
+    {
+      "start": 1414.83,
+      "end": 1416.19,
+      "text": "Celtic Frost, jak"
+    },
+    {
+      "start": 1416.19,
+      "end": 1417.71,
+      "text": "zawsze wcześniej,"
+    },
+    {
+      "start": 1417.71,
+      "end": 1419.65,
+      "text": "nie wykorzystał swojego"
+    },
+    {
+      "start": 1419.65,
       "end": 1420.65,
-      "text": "Niestety, Tom Gabriel Fisher i Martin Eric Ayn, czyli basista i prawa ręka lidera, znowu się pożarli i Celtic Frost, jak zawsze wcześniej, nie wykorzystał swojego potencjału."
+      "text": "potencjału."
     },
     {
       "start": 1421.51,
-      "end": 1425.11,
-      "text": "Zdarza się, że ludzie nie dorastają do swojego talentu."
+      "end": 1421.95,
+      "text": "Zdarza się, że"
     },
     {
-      "start": 1426.49,
+      "start": 1421.95,
+      "end": 1423.75,
+      "text": "ludzie nie dorastają"
+    },
+    {
+      "start": 1423.75,
+      "end": 1425.73,
+      "text": "do swojego talentu."
+    },
+    {
+      "start": 1426.47,
+      "end": 1427.26,
+      "text": "Szkoda, bo kolejnego"
+    },
+    {
+      "start": 1427.26,
+      "end": 1428.03,
+      "text": "powyłania,"
+    },
+    {
+      "start": 1428.03,
+      "end": 1428.93,
+      "text": "ROT-u już nie"
+    },
+    {
+      "start": 1428.93,
       "end": 1429.73,
-      "text": "Szkoda, bo kolejnego powrotu już nie będzie."
+      "text": "będzie."
     },
     {
       "start": 1429.73,
+      "end": 1432.24,
+      "text": "AIM zmarł w 2017"
+    },
+    {
+      "start": 1432.24,
+      "end": 1432.99,
+      "text": "roku,"
+    },
+    {
+      "start": 1433.79,
+      "end": 1435.47,
+      "text": "ale dobrze, że zdążyli"
+    },
+    {
+      "start": 1435.47,
       "end": 1437.03,
-      "text": "Ayn zmarł w 2017 roku, ale dobrze, że zdążyli dać nam Monoteist."
+      "text": "dać nam monoteist."
     },
     {
       "start": 1437.93,
@@ -376,428 +1322,2218 @@
     },
     {
       "start": 1439.41,
+      "end": 1440.89,
+      "text": "Pozostajemy w Szwajcarii,"
+    },
+    {
+      "start": 1440.99,
+      "end": 1442.21,
+      "text": "więc kto ma wiedzieć,"
+    },
+    {
+      "start": 1442.21,
+      "end": 1442.85,
+      "text": "ten wie,"
+    },
+    {
+      "start": 1443.23,
       "end": 1444.71,
-      "text": "Pozostajemy w Szwajcarii, więc kto ma wiedzieć, ten wie, co tu się będzie działo."
+      "text": "co tu się będzie działo."
     },
     {
-      "start": 1803.37,
-      "end": 1813.29,
-      "text": "Zespół Koroner jeszcze w głębokich latach osiemdziesiątych założyli techniczni Celtic Frost, a więc wszystko zostaje w rodzinie."
+      "start": 1804.76,
+      "end": 1805.91,
+      "text": "Jeszcze w głębokich"
     },
     {
-      "start": 1813.71,
-      "end": 1827.13,
-      "text": "Z płyty na płytę doskonalili ten swój nomen omen techniczny thrash metal, wydeptując własną ścieżkę ku chwale, za to coraz dalej od oczekiwań szerokiej publiczności."
+      "start": 1805.91,
+      "end": 1807.37,
+      "text": "latach osiemdziesiątych"
     },
     {
-      "start": 1827.47,
-      "end": 1835.03,
-      "text": "Wybitny album Green z 1993 roku, po którym Koroner dał sobie spokój."
+      "start": 1807.37,
+      "end": 1808.91,
+      "text": "założyli techniczni"
     },
     {
-      "start": 1835.95,
-      "end": 1851.69,
-      "text": "W czasie rzeczywistym doceniony był przez nielicznych słuchaczy, ale potem z roku na rok obrastał kultem, jak miś sadłem przed zimą i coraz więcej fanów czekało na powrót Szwajcarów."
+      "start": 1808.91,
+      "end": 1810.22,
+      "text": "Celtic Frost, a"
     },
     {
-      "start": 1851.69,
-      "end": 1857.77,
-      "text": "Ten nastąpił w ubiegłym roku w postaci albumu Dissonance Theory."
+      "start": 1810.22,
+      "end": 1812.08,
+      "text": "więc wszystko zostaje"
     },
     {
-      "start": 1858.31,
-      "end": 1867.25,
-      "text": "Koroner miał długie 32 lata, by przygotować swój powrót i cóż, przygotowali thrashowy majstersztyk."
+      "start": 1812.08,
+      "end": 1813.3,
+      "text": "w rodzinie."
     },
     {
-      "start": 1867.65,
-      "end": 1869.89,
-      "text": "I progresywny, i jadowity."
+      "start": 1813.72,
+      "end": 1814.5,
+      "text": "Z płyty na płytę"
     },
     {
-      "start": 1870.13,
-      "end": 1883.27,
-      "text": "Zanim Koroner nas poszatkował swoją teorią dysonansu, palmę pierwszeństwa w kategorii thrashowy powrót wszechczasów bez wątpienia dzierżył Exodus."
+      "start": 1814.5,
+      "end": 1816.11,
+      "text": "doskonalili ten swój"
     },
     {
-      "start": 1884.61,
-      "end": 1897.65,
-      "text": "Ten amerykański zespół powstał w odległym 1979 roku i wymyślał thrash metal, zanim jeszcze powstały Metallica czy Slayer."
+      "start": 1816.11,
+      "end": 1817.83,
+      "text": "nomen omen techniczny"
     },
     {
-      "start": 1897.65,
-      "end": 1913.65,
-      "text": "Ale to właśnie przejście Kirkahammeta z Exodus do Metallica zahamowało na jakiś czas rozwój grupy, więc ich debiutancki album, czyli Bonded by Blood wyszedł dopiero w 85 roku,"
+      "start": 1817.83,
+      "end": 1820.07,
+      "text": "thrash metal, wydeptując"
     },
     {
-      "start": 1914.65,
-      "end": 1920.65,
-      "text": "a więc dali się wyprzedzić nie tylko wspomnianym gigantom, ale nawet megadef."
+      "start": 1820.07,
+      "end": 1821.51,
+      "text": "własną ścieżkę ku"
     },
     {
-      "start": 1921.97,
-      "end": 1923.99,
-      "text": "O parę miesięcy, ale zawsze."
+      "start": 1821.51,
+      "end": 1823.28,
+      "text": "chwale, za to coraz"
     },
     {
-      "start": 1924.79,
-      "end": 1934.65,
-      "text": "Zespół próbował nadrabiać stracony czas serią znakomitych płyt, jednak po Force of Habit z 1992 roku"
+      "start": 1823.28,
+      "end": 1824.73,
+      "text": "dalej od oczekiwań"
     },
     {
-      "start": 1934.65,
-      "end": 1946.31,
-      "text": "para z nich uszła, zresztą thrash jako taki przeżywał wtedy kryzys, bo młodzież rzuciła się na death i black metal."
+      "start": 1824.73,
+      "end": 1827.14,
+      "text": "szerokiej publiczności."
     },
     {
-      "start": 1947.33,
-      "end": 1960.65,
-      "text": "Exodus wrócił dopiero w 2004 roku znakomitym albumem Tempo of the Damned, który, to taka ciekawostka, zawiera między innymi utwór Impaler,"
+      "start": 1827.6,
+      "end": 1829.42,
+      "text": "Wybitny album Green"
     },
     {
-      "start": 1961.45,
-      "end": 1968.31,
-      "text": "jedyny z oficjalnie wydanych przez Exodus, którego współautorem jest właśnie Kirkahammet."
+      "start": 1829.42,
+      "end": 1831.71,
+      "text": "z 1993 roku, po"
     },
     {
-      "start": 1969.35,
-      "end": 1981.29,
-      "text": "To oczywiście nowa wersja starej piosenki, a Kirk ten sam riff później, czyli wcześniej, wykorzystał w piosence Trapped on the Ice, Metallica."
+      "start": 1831.71,
+      "end": 1833.56,
+      "text": "którym koroner dał"
     },
     {
-      "start": 1982.45,
-      "end": 1987.39,
-      "text": "Wiem, skomplikowane to jak relacje rodzinne w modzie na sukces."
+      "start": 1833.56,
+      "end": 1835.02,
+      "text": "sobie spokój."
     },
     {
-      "start": 1988.05,
-      "end": 1996.63,
-      "text": "Tak czy owak, Exodus wrócili z klasą 22 lata temu i od tamtej pory mamy z nich dużo pożytku,"
+      "start": 1835.96,
+      "end": 1837,
+      "text": "W czasie rzeczywistym"
     },
     {
-      "start": 1997.55,
-      "end": 2006.53,
-      "text": "chociaż ten tegoroczny Goliad, ale nie zresztą nic, skupmy się na Tempo of the Damned."
+      "start": 1837,
+      "end": 1838.57,
+      "text": "doceniony był przez"
     },
     {
-      "start": 2012.45,
-      "end": 2014.27,
-      "text": "Dziękuje za oglądanie!"
+      "start": 1838.57,
+      "end": 1841.06,
+      "text": "nielicznych słuchaczy,"
     },
     {
-      "start": 2329.92,
-      "end": 2342.52,
-      "text": "Przed nami kolejny pionierski skład, też z Ameryki i też debiutujący w 1985 roku albumem We Have Arrived."
+      "start": 1841.06,
+      "end": 1842.63,
+      "text": "ale potem z roku na"
     },
     {
-      "start": 2342.52,
-      "end": 2355.46,
-      "text": "To oczywiście Dark Angel, ogniwo łączące Slayera z Possessed, a więc jeszcze to piekielny thrash, ale już zwiastujący narodziny death metalu."
+      "start": 1842.63,
+      "end": 1844.89,
+      "text": "rok obrastał kultem,"
     },
     {
-      "start": 2356.22,
-      "end": 2371.24,
-      "text": "Znakomity zespół, który zamilkł po wydanym w 1991 roku albumie Time Does Not Heal i wydawało się, że ten anioł już nam się nigdy nie objawi, a tu niespodzianka."
+      "start": 1844.89,
+      "end": 1845.98,
+      "text": "jak miś sadłem"
     },
     {
-      "start": 2371.24,
-      "end": 2384.62,
-      "text": "W 2025 roku, a więc po 34 latach milczenia, Dark Angel wydali album Extinction Level Event."
+      "start": 1845.98,
+      "end": 1847.73,
+      "text": "przed zimą i coraz"
     },
     {
-      "start": 2385.58,
-      "end": 2391.84,
-      "text": "Niestety Jim Darkin, oryginalny gitarzysta i twórcza siła zespołu, nie doczekał."
+      "start": 1847.73,
+      "end": 1849.41,
+      "text": "więcej fanów czekało"
     },
     {
-      "start": 2392.22,
-      "end": 2407.5,
-      "text": "Zmarł w 2023 roku, zastąpiła go w składzie Laura Christine, żona perkusisty Gina Hoglana i na koncertach to się sprawdza, a na płycie też nie jest źle."
+      "start": 1849.41,
+      "end": 1851.68,
+      "text": "na powrót Szwajcarów."
     },
     {
-      "start": 2407.5,
-      "end": 2417.48,
-      "text": "Kłopot w tym, że mało kto miał okazję się o tym przekonać, bo Dark Angel tak jakby w połowie wrócili."
+      "start": 1851.68,
+      "end": 1853.76,
+      "text": "Ten nastąpił w ubiegłym"
     },
     {
-      "start": 2417.62,
-      "end": 2425.8,
-      "text": "Tak ten album wydali, tak go dystrybuują, że trzeba być bardzo zdeterminowanym, żeby do niego dotrzeć."
+      "start": 1853.76,
+      "end": 1855.02,
+      "text": "roku w postaci"
     },
     {
-      "start": 2426.18,
-      "end": 2432.06,
-      "text": "Szkoda, bo to był bardzo wyczekiwany powrót i niestety zmarnowana okazja."
+      "start": 1855.02,
+      "end": 1856.68,
+      "text": "albumu Dissonance"
     },
     {
-      "start": 2432.06,
-      "end": 2433.66,
-      "text": "Muzyka"
+      "start": 1856.68,
+      "end": 1857.78,
+      "text": "Theory."
     },
     {
-      "start": 2699.65,
-      "end": 2706.85,
-      "text": "To może jeszcze jeden thrashowy anioł z Ameryki, czyli oczywiście Death Angel."
+      "start": 1858.3,
+      "end": 1859.54,
+      "text": "Koroner miał długie"
     },
     {
-      "start": 2707.35,
-      "end": 2714.29,
-      "text": "Ich dwie pierwsze płyty, The Ultra Violence oraz Frolic Through the Park, należą do kanonu gatunku."
+      "start": 1859.54,
+      "end": 1862.2,
+      "text": "32 lata, by przygotować"
     },
     {
-      "start": 2714.29,
-      "end": 2729.53,
-      "text": "W 1991 roku, a więc dawno, dawno temu, Death Angel dali sobie spokój z thrashem, by poszukiwać swojej nowej muzycznej tożsamości na innych terytoriach i pod inną nazwą."
+      "start": 1862.2,
+      "end": 1864.26,
+      "text": "swój powrót i cóż,"
     },
     {
-      "start": 2729.65,
-      "end": 2737.39,
-      "text": "A więc Organization. Nie było to złe, ale fani czekali na powrót Death Angela marnotrawnego i doczekali się."
+      "start": 1864.26,
+      "end": 1866.01,
+      "text": "przygotowali thrashowy"
     },
     {
-      "start": 2737.39,
-      "end": 2750.49,
-      "text": "W 2004 roku, kiedy ukazała się płyta The Art of Dying. Sztuka umierania, która paradoksalnie zwiastowała ponowne narodziny."
+      "start": 1866.01,
+      "end": 1868.55,
+      "text": "majstersztyk i progresywny"
     },
     {
-      "start": 2751.13,
-      "end": 2763.49,
-      "text": "Death Angel nagrywali, co prawda, lepsze rzeczy i wcześniej, i później, ale to taki zespół, że złych rzeczy nie nagrywał na szczęście w ogóle, zatem radość była wielka."
+      "start": 1868.55,
+      "end": 1869.9,
+      "text": "i jadowity."
     },
     {
-      "start": 2985.31,
-      "end": 2995.07,
-      "text": "X-Horder to jest ten zespół, którego fani uważają, że wymyślił styl Pantery, kiedy jeszcze Pantera grała power metal."
+      "start": 1870.28,
+      "end": 1871.78,
+      "text": "Zanim koroner nas"
     },
     {
-      "start": 2995.65,
-      "end": 2997.53,
+      "start": 1871.78,
+      "end": 1873.38,
+      "text": "poszatkował swoją"
+    },
+    {
+      "start": 1873.38,
+      "end": 1875.1,
+      "text": "teorią dysonansu,"
+    },
+    {
+      "start": 1875.1,
+      "end": 1876.89,
+      "text": "palmę pierwszeństwa"
+    },
+    {
+      "start": 1876.89,
+      "end": 1878.72,
+      "text": "w kategorii thrashowy"
+    },
+    {
+      "start": 1878.72,
+      "end": 1880.53,
+      "text": "powrót wszechczasów"
+    },
+    {
+      "start": 1880.53,
+      "end": 1882.29,
+      "text": "bez wątpienia dzierżył"
+    },
+    {
+      "start": 1882.29,
+      "end": 1883.26,
+      "text": "Exodus."
+    },
+    {
+      "start": 1884.66,
+      "end": 1886.46,
+      "text": "Ten amerykański zespół"
+    },
+    {
+      "start": 1886.46,
+      "end": 1889.02,
+      "text": "powstał w odległym"
+    },
+    {
+      "start": 1889.02,
+      "end": 1892.55,
+      "text": "1979 roku i wymyślał"
+    },
+    {
+      "start": 1892.55,
+      "end": 1894.45,
+      "text": "thrash metal, zanim"
+    },
+    {
+      "start": 1894.45,
+      "end": 1895.71,
+      "text": "jeszcze powstały"
+    },
+    {
+      "start": 1895.71,
+      "end": 1897.62,
+      "text": "Metallica czy Slayer."
+    },
+    {
+      "start": 1897.62,
+      "end": 1899.84,
+      "text": "Ale to właśnie przejście"
+    },
+    {
+      "start": 1899.84,
+      "end": 1901.2,
+      "text": "Kirkahammeta z"
+    },
+    {
+      "start": 1901.2,
+      "end": 1903.03,
+      "text": "Exodus do Metallica"
+    },
+    {
+      "start": 1903.03,
+      "end": 1904.89,
+      "text": "zahamowało na jakiś"
+    },
+    {
+      "start": 1904.89,
+      "end": 1906.74,
+      "text": "czas rozwój grupy,"
+    },
+    {
+      "start": 1906.74,
+      "end": 1908.65,
+      "text": "więc ich debiutancki"
+    },
+    {
+      "start": 1908.65,
+      "end": 1910.69,
+      "text": "album, czyli Bonded"
+    },
+    {
+      "start": 1910.69,
+      "end": 1912.39,
+      "text": "by Blood wyszedł"
+    },
+    {
+      "start": 1912.39,
+      "end": 1914.36,
+      "text": "dopiero w 85 roku,"
+    },
+    {
+      "start": 1914.36,
+      "end": 1916.62,
+      "text": "a więc dali się wyprzedzić"
+    },
+    {
+      "start": 1916.62,
+      "end": 1918.46,
+      "text": "nie tylko wspomnianym"
+    },
+    {
+      "start": 1918.46,
+      "end": 1920.21,
+      "text": "gigantom, ale nawet"
+    },
+    {
+      "start": 1920.21,
+      "end": 1921.28,
+      "text": "Megadef."
+    },
+    {
+      "start": 1921.28,
+      "end": 1922.78,
+      "text": "O parę miesięcy,"
+    },
+    {
+      "start": 1922.78,
+      "end": 1924,
+      "text": "ale zawsze."
+    },
+    {
+      "start": 1924.76,
+      "end": 1926.42,
+      "text": "Zespół próbował nadrabiać"
+    },
+    {
+      "start": 1926.42,
+      "end": 1927.9,
+      "text": "stracony czas serią"
+    },
+    {
+      "start": 1927.9,
+      "end": 1929.11,
+      "text": "znakomitych płyt,"
+    },
+    {
+      "start": 1929.11,
+      "end": 1931.63,
+      "text": "jednak po Force of"
+    },
+    {
+      "start": 1931.63,
+      "end": 1935.36,
+      "text": "Habit z 1992 roku"
+    },
+    {
+      "start": 1935.36,
+      "end": 1937.3,
+      "text": "para z nich uszła."
+    },
+    {
+      "start": 1937.3,
+      "end": 1939.06,
+      "text": "Zresztą Trash jako"
+    },
+    {
+      "start": 1939.06,
+      "end": 1940.49,
+      "text": "taki przeżywał"
+    },
+    {
+      "start": 1940.49,
+      "end": 1943.02,
+      "text": "wtedy kryzys, bo młodzież"
+    },
+    {
+      "start": 1943.02,
+      "end": 1944.69,
+      "text": "rzuciła się na Def"
+    },
+    {
+      "start": 1944.69,
+      "end": 1946.3,
+      "text": "i Black Metal."
+    },
+    {
+      "start": 1947.3,
+      "end": 1948.43,
+      "text": "Exodus wrócił dopiero"
+    },
+    {
+      "start": 1948.43,
+      "end": 1951.44,
+      "text": "w 2004 roku znakomitym"
+    },
+    {
+      "start": 1951.44,
+      "end": 1953.01,
+      "text": "albumem Tempo of"
+    },
+    {
+      "start": 1953.01,
+      "end": 1954.46,
+      "text": "the Damned."
+    },
+    {
+      "start": 1954.76,
+      "end": 1957.42,
+      "text": "Który, to taka ciekawostka,"
+    },
+    {
+      "start": 1957.42,
+      "end": 1959.83,
+      "text": "zawiera m.in. utwór"
+    },
+    {
+      "start": 1959.83,
+      "end": 1961.37,
+      "text": "Impaler, jedyny z"
+    },
+    {
+      "start": 1961.37,
+      "end": 1963.29,
+      "text": "oficjalnie wydanych"
+    },
+    {
+      "start": 1963.29,
+      "end": 1964.76,
+      "text": "przez Exodus,"
+    },
+    {
+      "start": 1964.76,
+      "end": 1966.28,
+      "text": "którego współautorem"
+    },
+    {
+      "start": 1966.28,
+      "end": 1967.48,
+      "text": "jest właśnie Kirk"
+    },
+    {
+      "start": 1967.48,
+      "end": 1968.32,
+      "text": "Hammett."
+    },
+    {
+      "start": 1969.34,
+      "end": 1969.94,
+      "text": "To oczywiście nowa"
+    },
+    {
+      "start": 1969.94,
+      "end": 1972.16,
+      "text": "wersja starej piosenki,"
+    },
+    {
+      "start": 1972.16,
+      "end": 1973.67,
+      "text": "a Kirk ten sam riff"
+    },
+    {
+      "start": 1973.67,
+      "end": 1975.09,
+      "text": "później, czyli"
+    },
+    {
+      "start": 1975.09,
+      "end": 1977.33,
+      "text": "wcześniej, wykorzystał"
+    },
+    {
+      "start": 1977.33,
+      "end": 1978.95,
+      "text": "w piosence Trapped"
+    },
+    {
+      "start": 1978.95,
+      "end": 1981.34,
+      "text": "on the Ice, Metalliki."
+    },
+    {
+      "start": 1981.9,
+      "end": 1983.76,
+      "text": "Wiem, skomplikowane"
+    },
+    {
+      "start": 1983.76,
+      "end": 1985.57,
+      "text": "to jak relacje rodzinne"
+    },
+    {
+      "start": 1985.57,
+      "end": 1987.38,
+      "text": "w modzie na sukces."
+    },
+    {
+      "start": 1988.04,
+      "end": 1988.72,
+      "text": "Tak czy owak,"
+    },
+    {
+      "start": 1988.72,
+      "end": 1990.86,
+      "text": "Exodus wrócili z klasą"
+    },
+    {
+      "start": 1990.86,
+      "end": 1993.1,
+      "text": "22 lata temu i od"
+    },
+    {
+      "start": 1993.1,
+      "end": 1994.44,
+      "text": "tamtej pory mamy z"
+    },
+    {
+      "start": 1994.44,
+      "end": 1996.64,
+      "text": "nich dużo pożytku."
+    },
+    {
+      "start": 1997.52,
+      "end": 1999.24,
+      "text": "Chociaż ten tegoroczny"
+    },
+    {
+      "start": 1999.24,
+      "end": 2002.01,
+      "text": "Goliat, ale nie zresztą"
+    },
+    {
+      "start": 2002.01,
+      "end": 2004.08,
+      "text": "nic, skupmy się na"
+    },
+    {
+      "start": 2004.08,
+      "end": 2006.54,
+      "text": "Tempo of the Damned."
+    },
+    {
+      "start": 2006.54,
+      "end": 2013.42,
+      "text": "Wiem, wiem, wiem, wiem,"
+    },
+    {
+      "start": 2331.29,
+      "end": 2332.41,
+      "text": "Przed nami kolejny"
+    },
+    {
+      "start": 2332.41,
+      "end": 2333.63,
+      "text": "pionierski skład,"
+    },
+    {
+      "start": 2333.63,
+      "end": 2336.21,
+      "text": "też z Ameryki i też"
+    },
+    {
+      "start": 2336.21,
+      "end": 2339.48,
+      "text": "debiutujący w 1985"
+    },
+    {
+      "start": 2339.48,
+      "end": 2341.31,
+      "text": "roku albumem We"
+    },
+    {
+      "start": 2341.31,
+      "end": 2342.51,
+      "text": "Have Arrived."
+    },
+    {
+      "start": 2342.51,
+      "end": 2344.2,
+      "text": "To oczywiście Dark"
+    },
+    {
+      "start": 2344.2,
+      "end": 2346.31,
+      "text": "Angel, ogniwo łączące"
+    },
+    {
+      "start": 2346.31,
+      "end": 2348.42,
+      "text": "Slayera z Possessed,"
+    },
+    {
+      "start": 2348.42,
+      "end": 2349.76,
+      "text": "a więc jeszcze to"
+    },
+    {
+      "start": 2349.76,
+      "end": 2351.35,
+      "text": "piekielny thrash,"
+    },
+    {
+      "start": 2351.35,
+      "end": 2353.1,
+      "text": "ale już zwiastujący"
+    },
+    {
+      "start": 2353.1,
+      "end": 2355.47,
+      "text": "narodziny death metalu."
+    },
+    {
+      "start": 2356.21,
+      "end": 2358,
+      "text": "Znakomity zespół,"
+    },
+    {
+      "start": 2358,
+      "end": 2359.58,
+      "text": "który zamilkł po"
+    },
+    {
+      "start": 2359.58,
+      "end": 2362.02,
+      "text": "wydanym w 1991 roku"
+    },
+    {
+      "start": 2362.02,
+      "end": 2363.62,
+      "text": "albumie Time Does"
+    },
+    {
+      "start": 2363.62,
+      "end": 2364.81,
+      "text": "Not Heal."
+    },
+    {
+      "start": 2364.81,
+      "end": 2366.28,
+      "text": "I wydawało się, że"
+    },
+    {
+      "start": 2366.28,
+      "end": 2367.57,
+      "text": "ten anioł już nam"
+    },
+    {
+      "start": 2367.57,
+      "end": 2369.32,
+      "text": "się nigdy nie objawi,"
+    },
+    {
+      "start": 2369.32,
+      "end": 2371.25,
+      "text": "a tu niespodzianka."
+    },
+    {
+      "start": 2372.19,
+      "end": 2374.71,
+      "text": "W 2025 roku, a więc"
+    },
+    {
+      "start": 2374.71,
+      "end": 2378.3,
+      "text": "po 34 latach milczenia,"
+    },
+    {
+      "start": 2378.3,
+      "end": 2380.52,
+      "text": "Dark Angel wydali"
+    },
+    {
+      "start": 2380.52,
+      "end": 2382.62,
+      "text": "album Extinction"
+    },
+    {
+      "start": 2382.62,
+      "end": 2384.61,
+      "text": "Level Event."
+    },
+    {
+      "start": 2385.61,
+      "end": 2387.17,
+      "text": "Niestety Jim Darkin,"
+    },
+    {
+      "start": 2387.17,
+      "end": 2388.83,
+      "text": "oryginalny gitarzysta"
+    },
+    {
+      "start": 2388.83,
+      "end": 2390.5,
+      "text": "i twórcza siła zespołu,"
+    },
+    {
+      "start": 2390.5,
+      "end": 2391.85,
+      "text": "nie doczekał."
+    },
+    {
+      "start": 2392.47,
+      "end": 2396.15,
+      "text": "Zmarł w 2023 roku."
+    },
+    {
+      "start": 2396.49,
+      "end": 2398.05,
+      "text": "Zastąpiła go w składzie"
+    },
+    {
+      "start": 2398.05,
+      "end": 2399.97,
+      "text": "Laura Christine, żona"
+    },
+    {
+      "start": 2399.97,
+      "end": 2402.07,
+      "text": "perkusisty Gina Hoglana."
+    },
+    {
+      "start": 2402.29,
+      "end": 2403.57,
+      "text": "I na koncertach to"
+    },
+    {
+      "start": 2403.57,
+      "end": 2405.12,
+      "text": "się sprawdza, a na"
+    },
+    {
+      "start": 2405.12,
+      "end": 2406.78,
+      "text": "płycie też nie jest"
+    },
+    {
+      "start": 2406.78,
+      "end": 2407.49,
+      "text": "źle."
+    },
+    {
+      "start": 2407.49,
+      "end": 2409.54,
+      "text": "Kłopot w tym, że mało"
+    },
+    {
+      "start": 2409.54,
+      "end": 2411.37,
+      "text": "kto miał okazję się"
+    },
+    {
+      "start": 2411.37,
+      "end": 2413.31,
+      "text": "o tym przekonać, bo"
+    },
+    {
+      "start": 2413.31,
+      "end": 2414.74,
+      "text": "Dark Angel tak"
+    },
+    {
+      "start": 2414.74,
+      "end": 2417.47,
+      "text": "jakby w połowie wrócili."
+    },
+    {
+      "start": 2417.63,
+      "end": 2419.18,
+      "text": "Tak ten album wydali,"
+    },
+    {
+      "start": 2419.18,
+      "end": 2420.98,
+      "text": "tak go dystrybuują,"
+    },
+    {
+      "start": 2420.98,
+      "end": 2421.79,
+      "text": "że trzeba być"
+    },
+    {
+      "start": 2421.79,
+      "end": 2423.98,
+      "text": "bardzo zdeterminowanym,"
+    },
+    {
+      "start": 2423.98,
+      "end": 2425.79,
+      "text": "żeby do niego dotrzeć."
+    },
+    {
+      "start": 2426.19,
+      "end": 2427.14,
+      "text": "Szkoda, bo to był"
+    },
+    {
+      "start": 2427.14,
+      "end": 2428.68,
+      "text": "bardzo wyczekiwany"
+    },
+    {
+      "start": 2428.68,
+      "end": 2430.03,
+      "text": "powrót i niestety"
+    },
+    {
+      "start": 2430.03,
+      "end": 2431.91,
+      "text": "zmarnowana okazja."
+    },
+    {
+      "start": 2700.64,
+      "end": 2701.61,
+      "text": "To może jeszcze"
+    },
+    {
+      "start": 2701.61,
+      "end": 2703.01,
+      "text": "jeden thrashowy anioł"
+    },
+    {
+      "start": 2703.01,
+      "end": 2704.26,
+      "text": "z Ameryki, czyli"
+    },
+    {
+      "start": 2704.26,
+      "end": 2705.9,
+      "text": "oczywiście Death"
+    },
+    {
+      "start": 2705.9,
+      "end": 2706.86,
+      "text": "Angel."
+    },
+    {
+      "start": 2707.36,
+      "end": 2708.63,
+      "text": "Ich dwie pierwsze płyty,"
+    },
+    {
+      "start": 2708.63,
+      "end": 2709.92,
+      "text": "The Ultra Violence"
+    },
+    {
+      "start": 2709.92,
+      "end": 2711.35,
+      "text": "oraz Frolic Through"
+    },
+    {
+      "start": 2711.35,
+      "end": 2712.81,
+      "text": "the Park, należą do"
+    },
+    {
+      "start": 2712.81,
+      "end": 2714.28,
+      "text": "kanonu gatunku."
+    },
+    {
+      "start": 2714.28,
+      "end": 2716.84,
+      "text": "W 1991 roku, a więc"
+    },
+    {
+      "start": 2716.84,
+      "end": 2718.75,
+      "text": "dawno, dawno temu,"
+    },
+    {
+      "start": 2718.75,
+      "end": 2720.23,
+      "text": "Death Angel dali"
+    },
+    {
+      "start": 2720.23,
+      "end": 2722.68,
+      "text": "sobie spokój z thrashem,"
+    },
+    {
+      "start": 2722.68,
+      "end": 2724.3,
+      "text": "by poszukiwać swojej"
+    },
+    {
+      "start": 2724.3,
+      "end": 2726.62,
+      "text": "nowej muzycznej tożsamości"
+    },
+    {
+      "start": 2726.62,
+      "end": 2728.27,
+      "text": "na innych terytoriach"
+    },
+    {
+      "start": 2728.27,
+      "end": 2729.55,
+      "text": "i pod inną nazwą, a"
+    },
+    {
+      "start": 2729.55,
+      "end": 2730.28,
+      "text": "więc organization."
+    },
+    {
+      "start": 2730.64,
+      "end": 2731.84,
+      "text": "Nie było to złe,"
+    },
+    {
+      "start": 2731.84,
+      "end": 2733.21,
+      "text": "ale fani czekali na"
+    },
+    {
+      "start": 2733.21,
+      "end": 2734.69,
+      "text": "powrót Death Angela"
+    },
+    {
+      "start": 2734.69,
+      "end": 2736.67,
+      "text": "marnotrawnego i doczekali"
+    },
+    {
+      "start": 2736.67,
+      "end": 2737.38,
+      "text": "się."
+    },
+    {
+      "start": 2737.38,
+      "end": 2740.02,
+      "text": "W 2004 roku, kiedy"
+    },
+    {
+      "start": 2740.02,
+      "end": 2741.67,
+      "text": "ukazała się płyta"
+    },
+    {
+      "start": 2741.67,
+      "end": 2744.1,
+      "text": "The Art of Dying, sztuka"
+    },
+    {
+      "start": 2744.1,
+      "end": 2745.74,
+      "text": "umierania, która"
+    },
+    {
+      "start": 2745.74,
+      "end": 2748.38,
+      "text": "paradoksalnie zwiastowała"
+    },
+    {
+      "start": 2748.38,
+      "end": 2750.5,
+      "text": "ponowne narodziny."
+    },
+    {
+      "start": 2751.14,
+      "end": 2752.82,
+      "text": "Death Angel nagrywali,"
+    },
+    {
+      "start": 2752.82,
+      "end": 2754.1,
+      "text": "co prawda, lepsze"
+    },
+    {
+      "start": 2754.1,
+      "end": 2755.38,
+      "text": "rzeczy i wcześniej"
+    },
+    {
+      "start": 2755.38,
+      "end": 2756.58,
+      "text": "i później, ale to"
+    },
+    {
+      "start": 2756.58,
+      "end": 2758.1,
+      "text": "taki zespół, że złych"
+    },
+    {
+      "start": 2758.1,
+      "end": 2759.46,
+      "text": "rzeczy nie nagrywał"
+    },
+    {
+      "start": 2759.46,
+      "end": 2760.42,
+      "text": "na szczęście w"
+    },
+    {
+      "start": 2760.42,
+      "end": 2761.86,
+      "text": "ogóle, zatem radość"
+    },
+    {
+      "start": 2761.86,
+      "end": 2762.58,
+      "text": "była."
+    },
+    {
+      "start": 2986.88,
+      "end": 2988.22,
+      "text": "To jest ten zespół,"
+    },
+    {
+      "start": 2988.22,
+      "end": 2990,
+      "text": "którego fani uważają,"
+    },
+    {
+      "start": 2990,
+      "end": 2991.42,
+      "text": "że wymyślił styl"
+    },
+    {
+      "start": 2991.42,
+      "end": 2992.68,
+      "text": "Pantery, kiedy"
+    },
+    {
+      "start": 2992.68,
+      "end": 2994.06,
+      "text": "jeszcze Pantera grała"
+    },
+    {
+      "start": 2994.06,
+      "end": 2995.04,
+      "text": "power metal."
+    },
+    {
+      "start": 2995.6,
+      "end": 2997.5,
       "text": "A ja jestem fanem X-Horder."
     },
     {
-      "start": 2998.37,
-      "end": 3006.37,
-      "text": "Wystarczy posłuchać płyty Slaughter in the Vatican z 1990 roku, żeby wiedzieć o czym mowa."
+      "start": 2998.36,
+      "end": 2999.33,
+      "text": "Wystarczy posłuchać"
     },
     {
-      "start": 3006.37,
-      "end": 3022.87,
-      "text": "Co prawda album Cowboys from Hell Pantery, już utrzymany w podobnej stylistyce, ukazał się parę miesięcy wcześniej, ale Pantera znała X-Horder już na etapie nagrań demo i tych wpływów się nie wyprze."
+      "start": 2999.33,
+      "end": 3000.76,
+      "text": "płyty Slotter in"
     },
     {
-      "start": 3023.29,
-      "end": 3033.51,
-      "text": "Inna sprawa, że takiego gitarzysty jak Dimebag i wokalisty z taką charyzmą i z taką paszczą jak Phil Anselmo w X-Horder po prostu zabrakło."
+      "start": 3000.76,
+      "end": 3003.15,
+      "text": "the Vatican z 1990"
     },
     {
-      "start": 3033.51,
-      "end": 3062.13,
-      "text": "Co nie zmienia faktu, że szkoda było zmarnowanego potencjału, to był świetny zespół, a zamilkł po drugiej płycie, czyli The Law z 1992 roku i trzeba było czekać aż do 2019, do premiery albumu Mourn the Southern Skies, na kolejną porcję tego jadowitego thrashu, który pięknie cuchnie bagnami Luizjany."
+      "start": 3003.15,
+      "end": 3005.01,
+      "text": "roku, żeby wiedzieć"
     },
     {
-      "start": 3063.51,
-      "end": 3065.35,
-      "text": "Dziękuje za oglądanie!"
+      "start": 3005.01,
+      "end": 3006.36,
+      "text": "o czym mowa."
     },
     {
-      "start": 3479.33,
+      "start": 3006.36,
+      "end": 3007.61,
+      "text": "Co prawda, album"
+    },
+    {
+      "start": 3007.61,
+      "end": 3008.85,
+      "text": "Cowboys from Hell"
+    },
+    {
+      "start": 3008.85,
+      "end": 3010.59,
+      "text": "Pantery, już utrzymany"
+    },
+    {
+      "start": 3010.59,
+      "end": 3012.45,
+      "text": "w podobnej stylistyce,"
+    },
+    {
+      "start": 3012.45,
+      "end": 3013.57,
+      "text": "ukazał się parę"
+    },
+    {
+      "start": 3013.57,
+      "end": 3015.3,
+      "text": "miesięcy wcześniej,"
+    },
+    {
+      "start": 3015.66,
+      "end": 3017.96,
+      "text": "ale Pantera znała X-Horder"
+    },
+    {
+      "start": 3017.96,
+      "end": 3019.66,
+      "text": "już na etapie nagrań"
+    },
+    {
+      "start": 3019.66,
+      "end": 3021.26,
+      "text": "demo i tych wpływów"
+    },
+    {
+      "start": 3021.26,
+      "end": 3022.88,
+      "text": "się nie wyprze."
+    },
+    {
+      "start": 3023.28,
+      "end": 3024.07,
+      "text": "Inna sprawa, że"
+    },
+    {
+      "start": 3024.07,
+      "end": 3025.51,
+      "text": "takiego gitarzysty"
+    },
+    {
+      "start": 3025.51,
+      "end": 3027.18,
+      "text": "jak Dimebag i wokalisty"
+    },
+    {
+      "start": 3027.18,
+      "end": 3028.42,
+      "text": "z taką charyzmą i z"
+    },
+    {
+      "start": 3028.42,
+      "end": 3029.67,
+      "text": "taką paszczą jak"
+    },
+    {
+      "start": 3029.67,
+      "end": 3031.46,
+      "text": "Phil Anselmo w X-Horder"
+    },
+    {
+      "start": 3031.46,
+      "end": 3033.48,
+      "text": "po prostu zabrakło."
+    },
+    {
+      "start": 3033.48,
+      "end": 3035.02,
+      "text": "Co nie zmienia faktu,"
+    },
+    {
+      "start": 3035.02,
+      "end": 3036.84,
+      "text": "że szkoda było zmarnowanego"
+    },
+    {
+      "start": 3036.84,
+      "end": 3038.04,
+      "text": "potencjału, to był"
+    },
+    {
+      "start": 3038.04,
+      "end": 3039.42,
+      "text": "świetny zespół, a"
+    },
+    {
+      "start": 3039.42,
+      "end": 3040.8,
+      "text": "zamilkł po drugiej"
+    },
+    {
+      "start": 3040.8,
+      "end": 3042.37,
+      "text": "płycie, czyli The"
+    },
+    {
+      "start": 3042.37,
+      "end": 3044.44,
+      "text": "Law z 1992 roku"
+    },
+    {
+      "start": 3044.44,
+      "end": 3046.94,
+      "text": "i trzeba było czekać"
+    },
+    {
+      "start": 3046.94,
+      "end": 3050,
+      "text": "aż do 2019, do"
+    },
+    {
+      "start": 3050,
+      "end": 3052.57,
+      "text": "premiery albumu Mourn"
+    },
+    {
+      "start": 3052.57,
+      "end": 3054.51,
+      "text": "the Southern Skies,"
+    },
+    {
+      "start": 3054.51,
+      "end": 3056.02,
+      "text": "na kolejną porcję"
+    },
+    {
+      "start": 3056.02,
+      "end": 3057.53,
+      "text": "tego jadowitego"
+    },
+    {
+      "start": 3057.53,
+      "end": 3059.59,
+      "text": "traszu, który pięknie"
+    },
+    {
+      "start": 3059.59,
+      "end": 3062.14,
+      "text": "cuchnie bagnami Luizjany."
+    },
+    {
+      "start": 3480.45,
+      "end": 3481.05,
+      "text": "Padła tu już"
+    },
+    {
+      "start": 3481.05,
+      "end": 3482.03,
+      "text": "dzisiaj nazwa"
+    },
+    {
+      "start": 3482.03,
+      "end": 3482.85,
+      "text": "possessed i"
+    },
+    {
+      "start": 3482.85,
+      "end": 3484.25,
+      "text": "oczywiście nie może"
+    },
+    {
+      "start": 3484.25,
       "end": 3485.57,
-      "text": "Padła tu już dzisiaj nazwa Possessed i oczywiście nie może ich zabraknąć."
+      "text": "ich zabraknąć."
     },
     {
-      "start": 3485.57,
+      "start": 3486.01,
+      "end": 3486.69,
+      "text": "Już sam fakt, że"
+    },
+    {
+      "start": 3486.69,
+      "end": 3488.45,
+      "text": "Jeff Beckera, wokalista"
+    },
+    {
+      "start": 3488.45,
+      "end": 3489.73,
+      "text": "zespołu, wrócił na"
+    },
+    {
+      "start": 3489.73,
+      "end": 3490.76,
+      "text": "scenę po tym, jak"
+    },
+    {
+      "start": 3490.76,
+      "end": 3491.81,
+      "text": "prawie zginął od"
+    },
+    {
+      "start": 3491.81,
+      "end": 3493.29,
+      "text": "kul, zasługuje na"
+    },
+    {
+      "start": 3493.29,
       "end": 3494.99,
-      "text": "Już sam fakt, że Jeff Beckera, wokalista zespołu, wrócił na scenę po tym, jak prawie zginął od kul, zasługuje na wielki szacunek."
+      "text": "wielki szacunek."
     },
     {
       "start": 3495.29,
-      "end": 3503.59,
-      "text": "Choć Jeff nie może wstać z wózka, dzielnie ryczy ten swój pionierski death metal i jeździ z koncertami po całym świecie."
+      "end": 3496.29,
+      "text": "Choć Jeff nie może"
     },
     {
-      "start": 3504.19,
-      "end": 3515.53,
-      "text": "Długo opierał się wyłącznie na kultowym materiale z lat osiemdziesiątych, czyli z płyt Seven Churches i Beyond the Gates oraz z mini albumu The Eyes of Horror."
+      "start": 3496.29,
+      "end": 3497.91,
+      "text": "wstać z wózka, dzielnie"
+    },
+    {
+      "start": 3497.91,
+      "end": 3499.72,
+      "text": "ryczy ten swój pionierski"
+    },
+    {
+      "start": 3499.72,
+      "end": 3501.07,
+      "text": "death metal i jeździ"
+    },
+    {
+      "start": 3501.07,
+      "end": 3502.54,
+      "text": "z koncertami po całym"
+    },
+    {
+      "start": 3502.54,
+      "end": 3503.59,
+      "text": "świecie."
+    },
+    {
+      "start": 3503.59,
+      "end": 3504.87,
+      "text": "Długo opierał się"
+    },
+    {
+      "start": 3504.87,
+      "end": 3506.59,
+      "text": "wyłącznie na kultowym"
+    },
+    {
+      "start": 3506.59,
+      "end": 3509.32,
+      "text": "materiale z lat osiemdziesiątych,"
+    },
+    {
+      "start": 3509.32,
+      "end": 3510.44,
+      "text": "czyli z płyt Seven"
+    },
+    {
+      "start": 3510.44,
+      "end": 3511.73,
+      "text": "Churches i Beyond"
+    },
+    {
+      "start": 3511.73,
+      "end": 3512.9,
+      "text": "the Gates oraz z"
+    },
+    {
+      "start": 3512.9,
+      "end": 3513.97,
+      "text": "mini albumu The"
+    },
+    {
+      "start": 3513.97,
+      "end": 3515.55,
+      "text": "Eyes of Horror."
     },
     {
       "start": 3516.35,
-      "end": 3529.37,
-      "text": "Ale w końcu dał się namówić i w 2019 roku, po ponad trzydziestu latach, Possessed wydało płytę z nowym materiałem zatytułowaną Revelations of Oblivion."
+      "end": 3516.98,
+      "text": "Ale w końcu dał się"
     },
     {
-      "start": 3529.37,
+      "start": 3516.98,
+      "end": 3519.01,
+      "text": "namówić i w 2019"
+    },
+    {
+      "start": 3519.01,
+      "end": 3521.32,
+      "text": "roku, po ponad trzydziestu"
+    },
+    {
+      "start": 3521.32,
+      "end": 3522.97,
+      "text": "latach, possessed"
+    },
+    {
+      "start": 3522.97,
+      "end": 3524.58,
+      "text": "wydało płytę z nowym"
+    },
+    {
+      "start": 3524.58,
+      "end": 3526.7,
+      "text": "materiałem zatytułowaną"
+    },
+    {
+      "start": 3526.7,
+      "end": 3529.39,
+      "text": "Revelations of Oblivion."
+    },
+    {
+      "start": 3529.39,
+      "end": 3530.88,
+      "text": "Tylko Beckera został"
+    },
+    {
+      "start": 3530.88,
+      "end": 3532.59,
+      "text": "z oryginalnego składu,"
+    },
+    {
+      "start": 3532.59,
+      "end": 3533.82,
+      "text": "więc nie jest to"
+    },
+    {
+      "start": 3533.82,
+      "end": 3535.12,
+      "text": "już ani tak dobre,"
+    },
+    {
+      "start": 3535.12,
+      "end": 3536.16,
+      "text": "ani tym bardziej"
+    },
+    {
+      "start": 3536.16,
+      "end": 3537.64,
+      "text": "tak przełomowe, jak"
+    },
+    {
+      "start": 3537.64,
       "end": 3539.37,
-      "text": "Tylko Beckera został z oryginalnego składu, więc nie jest to już ani tak dobre, ani tym bardziej tak przełomowe, jak te pierwsze płyty."
+      "text": "te pierwsze płyty."
     },
     {
       "start": 3539.47,
-      "end": 3553.99,
-      "text": "Nie może być, bo przez te trzy dekady inni zdolni uczniowie Possessed pisali historię gatunku, ale wstydu też nie ma i nie obraziłbym się, gdyby dopisano kolejne rozdziały tej opowieści."
+      "end": 3540.58,
+      "text": "Nie może być, bo"
     },
     {
-      "start": 3553.99,
-      "end": 3555.61,
-      "text": "DZIENNIKARZ"
+      "start": 3540.58,
+      "end": 3542.04,
+      "text": "przez te trzy dekady"
     },
     {
-      "start": 3577.64,
-      "end": 3606.64,
-      "text": "Muzyka"
+      "start": 3542.04,
+      "end": 3543.66,
+      "text": "inni zdolni uczniowie"
     },
     {
-      "start": 3607.64,
-      "end": 3607.8,
-      "text": "No!"
+      "start": 3543.66,
+      "end": 3545.2,
+      "text": "possessed pisali"
     },
     {
-      "start": 3637.06,
-      "end": 3640.36,
-      "text": "KONIEC!"
+      "start": 3545.2,
+      "end": 3546.55,
+      "text": "historię gatunku,"
     },
     {
-      "start": 3838.53,
-      "end": 3854.11,
-      "text": "Usurpers Chicago uzurpował sobie granie muzyki wymyślonej przez Venom czy Celtic Frost w czasach, kiedy oba te zespoły albo błądziły w innych gatunkach, albo w ogóle nie istniały."
+      "start": 3546.55,
+      "end": 3548.78,
+      "text": "ale wstydu też nie"
     },
     {
-      "start": 3854.49,
-      "end": 3863.49,
-      "text": "Diaboliczny, soczysty, pierwotny trash z proto-death metalowym doładowaniem. Nie dało się tego nie lubić."
+      "start": 3548.78,
+      "end": 3550.16,
+      "text": "ma i nie obraziłbym"
     },
     {
-      "start": 3864.03,
-      "end": 3886.39,
-      "text": "Wydawało się, że Crypto Beast, płyta Usurpers 2005 roku, będzie ich ostatnią, ale zespół odrodził się po 14 latach, wracając do punktu wyjścia, czyli do muzyki nieaktualnej, może nawet nie do końca swojej, ale co z tego, skoro pięknie żre."
+      "start": 3550.16,
+      "end": 3551.89,
+      "text": "się, gdyby dopisano"
     },
     {
-      "start": 3886.39,
-      "end": 3897.57,
-      "text": "Płyta nosi tytuł Lords of the Permafrost i wyszła w 2019 roku. No i już przydałaby się jakaś nowa."
+      "start": 3551.89,
+      "end": 3552.75,
+      "text": "kolejne rozdziały"
     },
     {
-      "start": 4205.77,
+      "start": 3552.75,
+      "end": 3554.01,
+      "text": "tej opowieści."
+    },
+    {
+      "start": 3840.44,
+      "end": 3842.36,
+      "text": "Perth Chicago uzurpował"
+    },
+    {
+      "start": 3842.36,
+      "end": 3843.8,
+      "text": "sobie granie muzyki"
+    },
+    {
+      "start": 3843.8,
+      "end": 3845.19,
+      "text": "wymyślonej przez"
+    },
+    {
+      "start": 3845.19,
+      "end": 3846.41,
+      "text": "Venom czy Celtic"
+    },
+    {
+      "start": 3846.41,
+      "end": 3847.58,
+      "text": "Frost w czasach,"
+    },
+    {
+      "start": 3847.58,
+      "end": 3849.08,
+      "text": "kiedy oba te zespoły"
+    },
+    {
+      "start": 3849.08,
+      "end": 3850.33,
+      "text": "albo błądziły w"
+    },
+    {
+      "start": 3850.33,
+      "end": 3852.1,
+      "text": "innych gatunkach,"
+    },
+    {
+      "start": 3852.1,
+      "end": 3853.15,
+      "text": "albo w ogóle nie"
+    },
+    {
+      "start": 3853.15,
+      "end": 3854.12,
+      "text": "istniały."
+    },
+    {
+      "start": 3854.5,
+      "end": 3856.19,
+      "text": "Diaboliczny, soczysty,"
+    },
+    {
+      "start": 3856.19,
+      "end": 3857.68,
+      "text": "pierwotny thrush z"
+    },
+    {
+      "start": 3857.68,
+      "end": 3859.43,
+      "text": "proto-death metalowym"
+    },
+    {
+      "start": 3859.43,
+      "end": 3860.82,
+      "text": "doładowaniem."
+    },
+    {
+      "start": 3860.82,
+      "end": 3862.3,
+      "text": "Nie dało się tego"
+    },
+    {
+      "start": 3862.3,
+      "end": 3863.5,
+      "text": "nie lubić."
+    },
+    {
+      "start": 3864.24,
+      "end": 3865.74,
+      "text": "Wydawało się, że"
+    },
+    {
+      "start": 3865.74,
+      "end": 3867.56,
+      "text": "Crypto Beast, płyta"
+    },
+    {
+      "start": 3867.56,
+      "end": 3870.21,
+      "text": "Usurpers 2005 roku,"
+    },
+    {
+      "start": 3870.21,
+      "end": 3872.12,
+      "text": "będzie ich ostatnią,"
+    },
+    {
+      "start": 3872.12,
+      "end": 3873.82,
+      "text": "ale zespół odrodził"
+    },
+    {
+      "start": 3873.82,
+      "end": 3875.73,
+      "text": "się po 14 latach,"
+    },
+    {
+      "start": 3875.73,
+      "end": 3877.35,
+      "text": "wracając do punktu"
+    },
+    {
+      "start": 3877.35,
+      "end": 3879.17,
+      "text": "wyjścia, czyli do"
+    },
+    {
+      "start": 3879.17,
+      "end": 3881.05,
+      "text": "muzyki nieaktualnej,"
+    },
+    {
+      "start": 3881.05,
+      "end": 3882.48,
+      "text": "może nawet nie do"
+    },
+    {
+      "start": 3882.48,
+      "end": 3884.16,
+      "text": "końca swojej, ale"
+    },
+    {
+      "start": 3884.16,
+      "end": 3885.4,
+      "text": "co z tego, skoro"
+    },
+    {
+      "start": 3885.4,
+      "end": 3886.4,
+      "text": "pięknie żre."
+    },
+    {
+      "start": 3886.4,
+      "end": 3888.36,
+      "text": "Płyta nosi tytuł"
+    },
+    {
+      "start": 3888.36,
+      "end": 3891.16,
+      "text": "Lords of the Permafrost"
+    },
+    {
+      "start": 3891.16,
+      "end": 3894.08,
+      "text": "i wyszła w 2019"
+    },
+    {
+      "start": 3894.08,
+      "end": 3895.02,
+      "text": "roku."
+    },
+    {
+      "start": 3895.58,
+      "end": 3896.3,
+      "text": "No i już przydałaby"
+    },
+    {
+      "start": 3896.3,
+      "end": 3897.56,
+      "text": "się jakaś nowa."
+    },
+    {
+      "start": 4206.17,
+      "end": 4207.87,
+      "text": "Słuchacie Ciężko na"
+    },
+    {
+      "start": 4207.87,
+      "end": 4209.77,
+      "text": "sercu w trójce odcinka"
+    },
+    {
+      "start": 4209.77,
+      "end": 4211.59,
+      "text": "poświęconego udanym"
+    },
+    {
+      "start": 4211.59,
       "end": 4212.77,
-      "text": "Słuchacie Ciężko na sercu w trójce odcinka poświęconego udanym powrotom."
+      "text": "powrotom."
     },
     {
       "start": 4212.99,
+      "end": 4214.28,
+      "text": "Przenosimy się do"
+    },
+    {
+      "start": 4214.28,
       "end": 4215.25,
-      "text": "Przenosimy się do Europy."
+      "text": "Europy."
     },
     {
       "start": 4215.89,
-      "end": 4220.41,
-      "text": "Najpierw na Wyspy Brytyjskie, gdzie gniazduje zespół Carcass."
+      "end": 4216.6,
+      "text": "Najpierw na Wyspy"
     },
     {
-      "start": 4220.85,
+      "start": 4216.6,
+      "end": 4218.97,
+      "text": "Brytyjskie, gdzie gniazduje"
+    },
+    {
+      "start": 4218.97,
+      "end": 4220.39,
+      "text": "zespół Carcass."
+    },
+    {
+      "start": 4220.83,
+      "end": 4221.88,
+      "text": "Początkowo wściekle"
+    },
+    {
+      "start": 4221.88,
+      "end": 4223.17,
+      "text": "grindowy, potem"
+    },
+    {
+      "start": 4223.17,
+      "end": 4224.28,
+      "text": "bardziej death"
+    },
+    {
+      "start": 4224.28,
       "end": 4225.21,
-      "text": "Początkowo wściekle grindowy, potem bardziej death metalowy,"
+      "text": "metalowy,"
     },
     {
       "start": 4225.35,
+      "end": 4226.92,
+      "text": "a na końcu na ostatniej"
+    },
+    {
+      "start": 4226.92,
+      "end": 4228.51,
+      "text": "płycie, która nosiła"
+    },
+    {
+      "start": 4228.51,
       "end": 4229.87,
-      "text": "a na końcu na ostatniej płycie, która nosiła adekwatny tytuł"
+      "text": "adekwatny tytuł"
     },
     {
       "start": 4229.87,
-      "end": 4236.23,
-      "text": "łabędzi śpiew, już raczej heavy metalowy albo, jak chcą niektórzy,"
+      "end": 4231.88,
+      "text": "Łabędzi śpiew, już"
     },
     {
-      "start": 4236.23,
+      "start": 4231.88,
+      "end": 4233.99,
+      "text": "raczej heavy metalowy"
+    },
+    {
+      "start": 4233.99,
+      "end": 4236.15,
+      "text": "albo, jak chcą niektórzy,"
+    },
+    {
+      "start": 4236.15,
+      "end": 4237.87,
+      "text": "death and rollowy."
+    },
+    {
+      "start": 4238.71,
+      "end": 4239.85,
+      "text": "Tak czy owak, będący"
+    },
+    {
+      "start": 4239.85,
+      "end": 4241.83,
+      "text": "tylko cieniem dawnej"
+    },
+    {
+      "start": 4241.83,
       "end": 4242.91,
-      "text": "death and rollowy, tak czy owak będący tylko cieniem dawnej potęgi."
+      "text": "potęgi."
     },
     {
-      "start": 4243.79,
-      "end": 4250.49,
-      "text": "Skończyli w 1996 roku nieszczególnie spektakularnie,"
+      "start": 4243.77,
+      "end": 4246.99,
+      "text": "Skończyli w 1996"
     },
     {
-      "start": 4251.25,
-      "end": 4255.23,
-      "text": "a więc dobrze się stało, że po latach wrócili się zrehabilitować."
+      "start": 4246.99,
+      "end": 4249.2,
+      "text": "roku, nieszczególnie"
     },
     {
-      "start": 4256.59,
-      "end": 4262.95,
-      "text": "Album Surgical Steel z 2013 roku brzmi dokładnie tak, jak się nazywa."
+      "start": 4249.2,
+      "end": 4250.47,
+      "text": "spektakularnie,"
     },
     {
-      "start": 4262.95,
-      "end": 4266.43,
-      "text": "To jest stal chirurgiczna."
+      "start": 4251.21,
+      "end": 4251.78,
+      "text": "a więc dobrze się"
     },
     {
-      "start": 4267.19,
+      "start": 4251.78,
+      "end": 4253.27,
+      "text": "stało, że po latach"
+    },
+    {
+      "start": 4253.27,
+      "end": 4255.77,
+      "text": "wrócili się zrehabilitować."
+    },
+    {
+      "start": 4255.77,
+      "end": 4257.23,
+      "text": "Album Surgical"
+    },
+    {
+      "start": 4257.23,
+      "end": 4259.77,
+      "text": "Steel z 2013 roku"
+    },
+    {
+      "start": 4259.77,
+      "end": 4262.16,
+      "text": "brzmi dokładnie tak,"
+    },
+    {
+      "start": 4262.16,
+      "end": 4263.49,
+      "text": "jak się nazywa."
+    },
+    {
+      "start": 4263.99,
+      "end": 4266.34,
+      "text": "To jest stal chirurgiczna,"
+    },
+    {
+      "start": 4266.34,
+      "end": 4268.03,
+      "text": "czyste, precyzyjne"
+    },
+    {
+      "start": 4268.03,
       "end": 4269.03,
-      "text": "Czyste, precyzyjne cięcia."
+      "text": "cięcia."
     },
     {
       "start": 4269.63,
-      "end": 4272.31,
-      "text": "Nie ma już grindowego prucia flaków tępym narzędziem."
+      "end": 4270.47,
+      "text": "Nie ma już grindowego"
+    },
+    {
+      "start": 4270.47,
+      "end": 4271.83,
+      "text": "prucia flaków tępym"
+    },
+    {
+      "start": 4271.83,
+      "end": 4272.87,
+      "text": "narzędziem,"
     },
     {
       "start": 4273.41,
-      "end": 4279.43,
-      "text": "Jest melodyjnie, kiedy trzeba, ale jest też spora dawka brutalności,"
+      "end": 4274.34,
+      "text": "jest melodyjnie,"
+    },
+    {
+      "start": 4274.34,
+      "end": 4275.85,
+      "text": "kiedy trzeba, ale"
+    },
+    {
+      "start": 4275.85,
+      "end": 4277.55,
+      "text": "jest też spora dawka"
+    },
+    {
+      "start": 4277.55,
+      "end": 4278.87,
+      "text": "brutalności,"
     },
     {
       "start": 4279.75,
+      "end": 4280.31,
+      "text": "której pod koniec"
+    },
+    {
+      "start": 4280.31,
+      "end": 4282.02,
+      "text": "pierwszego wcielenia"
+    },
+    {
+      "start": 4282.02,
       "end": 4284.03,
-      "text": "której pod koniec pierwszego wcielenia karkas już brakowało."
+      "text": "karkas już brakowało."
     },
     {
-      "start": 4285.09,
+      "start": 4284.03,
+      "end": 4286.3,
+      "text": "No i teksty niezmiennie"
+    },
+    {
+      "start": 4286.3,
       "end": 4288.89,
-      "text": "No i teksty niezmiennie to poezja romantyczna."
+      "text": "to poezja romantyczna."
     },
     {
-      "start": 4288.89,
-      "end": 4302.17,
-      "text": "DZIĘKI ZAWGĘ"
+      "start": 4533.21,
+      "end": 4534.29,
+      "text": "Witam wam dzisiaj o"
     },
     {
-      "start": 4532.55,
+      "start": 4534.29,
+      "end": 4535.84,
+      "text": "triumfalnych powrotach,"
+    },
+    {
+      "start": 4535.84,
+      "end": 4537.25,
+      "text": "ale teraz czas na"
+    },
+    {
+      "start": 4537.25,
+      "end": 4539.13,
+      "text": "wspomnienie niestety"
+    },
+    {
+      "start": 4539.13,
       "end": 4539.97,
-      "text": "Opowiadam wam dzisiaj o triumfalnych powrotach, ale teraz czas na wspomnienie niestety smutne."
+      "text": "smutne."
     },
     {
       "start": 4540.47,
-      "end": 4551.59,
-      "text": "At the Gates, bliscy krewni Karkas, pochodzący ze Szwecji, grali ten swój melodyjny i zarazem drapieżny death metal, zanim Karkas się na niego nawrócił."
+      "end": 4541.59,
+      "text": "At the Gates, bliscy"
     },
     {
-      "start": 4551.91,
-      "end": 4563.55,
-      "text": "Grali go, moim zdaniem, lepiej niż jakikolwiek inny zespół ze Szwecji, uprawiający podobno działkę z In Flames i Dark Tranquility włącznie."
+      "start": 4541.59,
+      "end": 4543.82,
+      "text": "krewni Karkas, pochodzący"
+    },
+    {
+      "start": 4543.82,
+      "end": 4544.77,
+      "text": "ze Szwecji,"
+    },
+    {
+      "start": 4544.95,
+      "end": 4545.75,
+      "text": "grali ten swój"
+    },
+    {
+      "start": 4545.75,
+      "end": 4547.14,
+      "text": "melodyjny i zarazem"
+    },
+    {
+      "start": 4547.14,
+      "end": 4548.31,
+      "text": "drapieżny death"
+    },
+    {
+      "start": 4548.31,
+      "end": 4550.02,
+      "text": "metal, zanim Karkas"
+    },
+    {
+      "start": 4550.02,
+      "end": 4552.13,
+      "text": "się na niego nawrócił."
+    },
+    {
+      "start": 4552.41,
+      "end": 4554.02,
+      "text": "Grali go, moim zdaniem,"
+    },
+    {
+      "start": 4554.02,
+      "end": 4555.76,
+      "text": "lepiej niż jakikolwiek"
+    },
+    {
+      "start": 4555.76,
+      "end": 4557.39,
+      "text": "inny zespół ze Szwecji,"
+    },
+    {
+      "start": 4557.81,
+      "end": 4559.47,
+      "text": "uprawiający podobną"
+    },
+    {
+      "start": 4559.47,
+      "end": 4560.76,
+      "text": "działkę z In Flames"
+    },
+    {
+      "start": 4560.76,
+      "end": 4562.42,
+      "text": "i Dark Tranquility"
+    },
+    {
+      "start": 4562.42,
+      "end": 4563.57,
+      "text": "włącznie."
     },
     {
       "start": 4564.23,
+      "end": 4566.36,
+      "text": "Zamilkli w 1995"
+    },
+    {
+      "start": 4566.36,
+      "end": 4569.67,
+      "text": "roku po czterech znakomitych"
+    },
+    {
+      "start": 4569.67,
+      "end": 4571.59,
+      "text": "płytach, z których"
+    },
+    {
+      "start": 4571.59,
+      "end": 4573.41,
+      "text": "ostatnią była Slaughter"
+    },
+    {
+      "start": 4573.41,
       "end": 4574.63,
-      "text": "Zamilkli w 1995 roku po czterech znakomitych płytach, z których ostatnią była Slaughter of the Soul."
+      "text": "of the Soul."
     },
     {
-      "start": 4574.63,
-      "end": 4589.31,
-      "text": "Część grupy sformowała wtedy bardziej thrashowy, ale też świetny Dehaunted, a wokalisty, czyli Tomasa Tompy Lindberga, wszędzie było pełno od The Crown po Lock Up."
+      "start": 4575.41,
+      "end": 4576.51,
+      "text": "Część grupy sformowała"
     },
     {
-      "start": 4589.31,
+      "start": 4576.51,
+      "end": 4578.8,
+      "text": "wtedy bardziej thrashowy,"
+    },
+    {
+      "start": 4578.8,
+      "end": 4580.33,
+      "text": "ale też świetny The"
+    },
+    {
+      "start": 4580.33,
+      "end": 4581.29,
+      "text": "Haunted,"
+    },
+    {
+      "start": 4581.29,
+      "end": 4583,
+      "text": "a wokalisty, czyli"
+    },
+    {
+      "start": 4583,
+      "end": 4585.21,
+      "text": "Tomasa Tompy Lindberga,"
+    },
+    {
+      "start": 4585.21,
+      "end": 4586.99,
+      "text": "wszędzie było pełno"
+    },
+    {
+      "start": 4586.99,
+      "end": 4588.55,
+      "text": "od The Crown po"
+    },
+    {
+      "start": 4588.55,
+      "end": 4589.29,
+      "text": "lock-up."
+    },
+    {
+      "start": 4589.93,
+      "end": 4591.01,
+      "text": "Fani oczywiście nie"
+    },
+    {
+      "start": 4591.01,
+      "end": 4592.48,
+      "text": "mogli się pogodzić"
+    },
+    {
+      "start": 4592.48,
+      "end": 4594.01,
+      "text": "z nieobecnością at"
+    },
+    {
+      "start": 4594.01,
+      "end": 4594.93,
+      "text": "the gates"
+    },
+    {
+      "start": 4594.93,
+      "end": 4598.28,
+      "text": "i domagali się powrotu"
+    },
+    {
+      "start": 4598.28,
+      "end": 4601.15,
+      "text": "grupy głośno i wytrwale."
+    },
+    {
+      "start": 4601.79,
+      "end": 4603.16,
+      "text": "Oraz, jak się okazało,"
+    },
+    {
+      "start": 4603.16,
       "end": 4604.47,
-      "text": "Fani oczywiście nie mogli się pogodzić z nieobecnością at the Gates i domagali się powrotu grupy głośno i wytrwale oraz, jak się okazało, skutecznie."
+      "text": "skutecznie."
     },
     {
-      "start": 4604.63,
+      "start": 4604.47,
+      "end": 4606.58,
+      "text": "At the gates wrócili"
+    },
+    {
+      "start": 4606.58,
+      "end": 4608.51,
+      "text": "z wielkim hukiem w"
+    },
+    {
+      "start": 4608.51,
+      "end": 4612.11,
+      "text": "2014 płytą zatytułowaną"
+    },
+    {
+      "start": 4612.11,
+      "end": 4614.29,
+      "text": "At War With Reality"
+    },
+    {
+      "start": 4614.29,
+      "end": 4615.9,
+      "text": "i znowu mieli to"
+    },
+    {
+      "start": 4615.9,
+      "end": 4618.37,
+      "text": "coś, znowu zdominowali"
+    },
+    {
+      "start": 4618.37,
       "end": 4619.65,
-      "text": "At the Gates wrócili z wielkim hukiem w 2014 płytą zatytułowaną At War With Reality i znowu mieli to coś, znowu zdominowali gatunek."
+      "text": "gatunek."
     },
     {
-      "start": 4620.11,
+      "start": 4620.45,
+      "end": 4621.15,
+      "text": "Niestety wiosną"
+    },
+    {
+      "start": 4621.15,
+      "end": 4622.76,
+      "text": "tego roku albumem"
+    },
+    {
+      "start": 4622.76,
+      "end": 4623.94,
+      "text": "The Ghost of a"
+    },
+    {
+      "start": 4623.94,
+      "end": 4625.11,
+      "text": "Future Dead"
+    },
+    {
+      "start": 4625.11,
+      "end": 4626.93,
+      "text": "At the gates pożegnali"
+    },
+    {
+      "start": 4626.93,
+      "end": 4628.46,
+      "text": "się z nami już na"
+    },
+    {
+      "start": 4628.46,
+      "end": 4630.14,
+      "text": "zawsze, bo płyta ukazała"
+    },
+    {
+      "start": 4630.14,
+      "end": 4632.11,
+      "text": "się po śmierci Tompy,"
+    },
+    {
+      "start": 4632.57,
+      "end": 4633.73,
+      "text": "który zdążył nagrać"
+    },
+    {
+      "start": 4633.73,
+      "end": 4635.08,
+      "text": "wokale tuż przed"
+    },
+    {
+      "start": 4635.08,
+      "end": 4636.99,
+      "text": "operacją, która miała"
+    },
+    {
+      "start": 4636.99,
       "end": 4638.57,
-      "text": "Niestety wiosną tego roku albumem The Ghost of a Future Dead at the Gates pożegnali się z nami już na zawsze, bo płyta ukazała się po śmierci Tompy, który zdążył nagrać wokale tuż przed operacją, która miała mu uratować życie."
+      "text": "mu uratować życie."
     },
     {
       "start": 4638.73,
@@ -805,241 +3541,1120 @@
       "text": "Niestety nie uratowała."
     },
     {
-      "start": 4641.21,
-      "end": 4642.95,
-      "text": "Zmarł dokładnie rok temu."
+      "start": 4641.23,
+      "end": 4642.67,
+      "text": "Zmarł dokładnie rok"
     },
     {
-      "start": 4847.68,
-      "end": 4852.66,
-      "text": "Polska też jest w Europie, oczywiście, zatem teraz Polska."
+      "start": 4642.67,
+      "end": 4643.59,
+      "text": "temu."
     },
     {
-      "start": 4853.26,
-      "end": 4861.7,
-      "text": "I znowu, sporo znalazłoby się składów, które milczały za długo, by powrócić później czymś naprawdę udanym."
+      "start": 4848.09,
+      "end": 4849.16,
+      "text": "Polska też jest w"
     },
     {
-      "start": 4862.2,
-      "end": 4864,
-      "text": "Ja dzisiaj wybrałem trzy."
+      "start": 4849.16,
+      "end": 4850.5,
+      "text": "Europie, oczywiście,"
     },
     {
-      "start": 4864.66,
-      "end": 4870.86,
-      "text": "Pierwszy z nich został zrodzony w piekle, choć niektóre źródła podają, że w Trójmieście."
+      "start": 4850.5,
+      "end": 4852.65,
+      "text": "zatem teraz Polska."
     },
     {
-      "start": 4870.86,
-      "end": 4881.94,
-      "text": "Wtedy, w połowie lat dziewięćdziesiątych, Helborn postrzegany był jako poboczny projekt muzyków Behemoth, bo karty rozdają tu bal i les."
+      "start": 4853.27,
+      "end": 4854.72,
+      "text": "I znowu, sporo znalazłoby"
     },
     {
-      "start": 4882.84,
-      "end": 4889.62,
-      "text": "I może nawet takim był, ale szybko zyskał własną tożsamość i grono wiernych fanów."
+      "start": 4854.72,
+      "end": 4856.44,
+      "text": "się składów, które"
     },
     {
-      "start": 4889.62,
-      "end": 4914.82,
-      "text": "Po Darkness, płycie wydanej w 2008 roku, Helborn zrobił sobie dłuższą przerwę, tak długą, że mogło się wydawać, że to już koniec, ale okazało się, że w tym piecu diabeł ciągle pali, bo w 2021 wyszedł album Natas Liach, którego fragmentu za chwilę posłuchamy."
+      "start": 4856.44,
+      "end": 4857.85,
+      "text": "milczały za długo,"
     },
     {
-      "start": 4914.82,
-      "end": 4921.72,
-      "text": "Ale na moment ukaże się kolejna płyta Helborn, no ale zajmiemy się nią jak już będzie."
+      "start": 4857.85,
+      "end": 4859.5,
+      "text": "by powrócić później"
     },
     {
-      "start": 4921.72,
-      "end": 4924.48,
-      "text": "Muzyka"
+      "start": 4859.5,
+      "end": 4861.71,
+      "text": "czymś naprawdę udanym."
     },
     {
-      "start": 5250.6,
+      "start": 4861.71,
+      "end": 4863.41,
+      "text": "Ja dzisiaj wybrałem"
+    },
+    {
+      "start": 4863.41,
+      "end": 4864.01,
+      "text": "trzy."
+    },
+    {
+      "start": 4864.61,
+      "end": 4865.17,
+      "text": "Pierwszy z nich"
+    },
+    {
+      "start": 4865.17,
+      "end": 4866.38,
+      "text": "został zrodzony w"
+    },
+    {
+      "start": 4866.38,
+      "end": 4868.1,
+      "text": "piekle, choć niektóre"
+    },
+    {
+      "start": 4868.1,
+      "end": 4869.72,
+      "text": "źródła podają, że w"
+    },
+    {
+      "start": 4869.72,
+      "end": 4870.87,
+      "text": "Trójmieście."
+    },
+    {
+      "start": 4871.33,
+      "end": 4872.61,
+      "text": "Wtedy, w połowie"
+    },
+    {
+      "start": 4872.61,
+      "end": 4874.5,
+      "text": "lat dziewięćdziesiątych,"
+    },
+    {
+      "start": 4874.5,
+      "end": 4875.86,
+      "text": "Helborn postrzegany"
+    },
+    {
+      "start": 4875.86,
+      "end": 4877.25,
+      "text": "był jako poboczny"
+    },
+    {
+      "start": 4877.25,
+      "end": 4879.03,
+      "text": "projekt muzyków Behemoth,"
+    },
+    {
+      "start": 4879.03,
+      "end": 4880.79,
+      "text": "bo karty rozdają tu"
+    },
+    {
+      "start": 4880.79,
+      "end": 4881.95,
+      "text": "bal i les."
+    },
+    {
+      "start": 4882.83,
+      "end": 4883.53,
+      "text": "I może nawet takim"
+    },
+    {
+      "start": 4883.53,
+      "end": 4886,
+      "text": "był, ale szybko zyskał"
+    },
+    {
+      "start": 4886,
+      "end": 4887.28,
+      "text": "własną tożsamość i"
+    },
+    {
+      "start": 4887.28,
+      "end": 4889.63,
+      "text": "grono wiernych fanów."
+    },
+    {
+      "start": 4890.35,
+      "end": 4891.38,
+      "text": "Po Darkness, płycie"
+    },
+    {
+      "start": 4891.38,
+      "end": 4893.87,
+      "text": "wydanej w 2008 roku,"
+    },
+    {
+      "start": 4893.87,
+      "end": 4895.51,
+      "text": "Helborn zrobił"
+    },
+    {
+      "start": 4895.51,
+      "end": 4897.35,
+      "text": "sobie dłuższą przerwę."
+    },
+    {
+      "start": 4897.41,
+      "end": 4898.43,
+      "text": "Tak długą, że mogło"
+    },
+    {
+      "start": 4898.43,
+      "end": 4899.41,
+      "text": "się wydawać, że to"
+    },
+    {
+      "start": 4899.41,
+      "end": 4901.15,
+      "text": "już koniec, ale okazało"
+    },
+    {
+      "start": 4901.15,
+      "end": 4902.68,
+      "text": "się, że w tym piecu"
+    },
+    {
+      "start": 4902.68,
+      "end": 4904.53,
+      "text": "diabeł ciągle pali,"
+    },
+    {
+      "start": 4904.53,
+      "end": 4907.7,
+      "text": "bo w 2021 wyszedł"
+    },
+    {
+      "start": 4907.7,
+      "end": 4909.83,
+      "text": "album Natas Lijach,"
+    },
+    {
+      "start": 4909.83,
+      "end": 4911.96,
+      "text": "którego fragmentu"
+    },
+    {
+      "start": 4911.96,
+      "end": 4914.85,
+      "text": "za chwilę posłuchamy."
+    },
+    {
+      "start": 4915.39,
+      "end": 4916.3,
+      "text": "Ale na moment ukaże"
+    },
+    {
+      "start": 4916.3,
+      "end": 4917.67,
+      "text": "się kolejna płyta"
+    },
+    {
+      "start": 4917.67,
+      "end": 4919.64,
+      "text": "Helborn, no ale zajmiemy"
+    },
+    {
+      "start": 4919.64,
+      "end": 4920.72,
+      "text": "się nią jak już"
+    },
+    {
+      "start": 4920.72,
+      "end": 4921.69,
+      "text": "będzie."
+    },
+    {
+      "start": 5252.16,
+      "end": 5253.35,
+      "text": "W dzocie Crystagon"
+    },
+    {
+      "start": 5253.35,
+      "end": 5255.06,
+      "text": "już tu mówiłem piosenki,"
+    },
+    {
+      "start": 5255.06,
+      "end": 5256.62,
+      "text": "puszczałem, ale i"
+    },
+    {
+      "start": 5256.62,
+      "end": 5257.83,
+      "text": "przy tej okazji"
+    },
+    {
+      "start": 5257.83,
+      "end": 5259.76,
+      "text": "warto wspomnieć, bo"
+    },
+    {
+      "start": 5259.76,
+      "end": 5261.24,
+      "text": "albumy Legacy i"
+    },
+    {
+      "start": 5261.24,
+      "end": 5262.79,
+      "text": "Anthems dzieli"
+    },
+    {
+      "start": 5262.79,
       "end": 5265.08,
-      "text": "O powrocie Crystagon już tu mówiłem piosenki, puszczałem, ale i przy tej okazji warto wspomnieć, bo albumy Legacy i Anthems dzieli przepisowe 9 lat."
+      "text": "przepisowe 9 lat."
     },
     {
-      "start": 5265.08,
-      "end": 5284.42,
-      "text": "Pierwszy z wspomnianych, choć nie był zły, okazał się podsumowaniem lat chudych zespołu Cezara. Przerwa dobrze mu zrobiła, bo powrót do formy na Anthems jest ewidentny, w dodatku przypieczętowany serią równie przekonujących koncertów."
+      "start": 5265.56,
+      "end": 5267.15,
+      "text": "Pierwszy z wspomnianych,"
     },
     {
-      "start": 5284.42,
-      "end": 5301.86,
-      "text": "Był czas, kiedy właśnie ten zespół był najszybciej rosnącą siłą w polskim ekstremalnym metalu. Historia co prawda potoczyła się nie po ich myśli, ale wygląda na to, że nigdy nie jest za późno, by wrócić na szlak."
+      "start": 5267.15,
+      "end": 5268.5,
+      "text": "choć nie był zły,"
     },
     {
-      "start": 5301.86,
-      "end": 5303.52,
-      "text": "Muzyka"
+      "start": 5268.5,
+      "end": 5270.49,
+      "text": "okazał się podsumowaniem"
     },
     {
-      "start": 5684.43,
+      "start": 5270.49,
+      "end": 5272.04,
+      "text": "lat chudych zespołu"
+    },
+    {
+      "start": 5272.04,
+      "end": 5273.02,
+      "text": "Cezara."
+    },
+    {
+      "start": 5273.02,
+      "end": 5274.47,
+      "text": "Przerwa dobrze mu"
+    },
+    {
+      "start": 5274.47,
+      "end": 5275.92,
+      "text": "zrobiła, bo powrót"
+    },
+    {
+      "start": 5275.92,
+      "end": 5277.36,
+      "text": "do formy na Anthems"
+    },
+    {
+      "start": 5277.36,
+      "end": 5278.8,
+      "text": "jest ewidentny, w"
+    },
+    {
+      "start": 5278.8,
+      "end": 5280.87,
+      "text": "dodatku przypieczętowany"
+    },
+    {
+      "start": 5280.87,
+      "end": 5283.15,
+      "text": "serią równie przekonujących"
+    },
+    {
+      "start": 5283.15,
+      "end": 5284.44,
+      "text": "koncertów."
+    },
+    {
+      "start": 5285.14,
+      "end": 5285.84,
+      "text": "Był czas, kiedy"
+    },
+    {
+      "start": 5285.84,
+      "end": 5287.35,
+      "text": "właśnie ten zespół"
+    },
+    {
+      "start": 5287.35,
+      "end": 5289.36,
+      "text": "był najszybciej rosnącą"
+    },
+    {
+      "start": 5289.36,
+      "end": 5291.67,
+      "text": "siłą w polskim ekstremalnym"
+    },
+    {
+      "start": 5291.67,
+      "end": 5292.78,
+      "text": "metalu."
+    },
+    {
+      "start": 5293.04,
+      "end": 5294.22,
+      "text": "Historia co prawda"
+    },
+    {
+      "start": 5294.22,
+      "end": 5295.58,
+      "text": "potoczyła się nie"
+    },
+    {
+      "start": 5295.58,
+      "end": 5296.92,
+      "text": "po ich myśli, ale"
+    },
+    {
+      "start": 5296.92,
+      "end": 5298.3,
+      "text": "wygląda na to, że"
+    },
+    {
+      "start": 5298.3,
+      "end": 5299.52,
+      "text": "nigdy nie jest za"
+    },
+    {
+      "start": 5299.52,
+      "end": 5301.06,
+      "text": "późno, by wrócić na"
+    },
+    {
+      "start": 5301.06,
+      "end": 5301.88,
+      "text": "szlak."
+    },
+    {
+      "start": 5684.25,
+      "end": 5686.42,
+      "text": "Skłamałbym albo wykazałbym"
+    },
+    {
+      "start": 5686.42,
+      "end": 5688.13,
+      "text": "się daleko posuniętym"
+    },
+    {
+      "start": 5688.13,
+      "end": 5690.13,
+      "text": "myśleniem życzeniowym,"
+    },
+    {
+      "start": 5690.13,
+      "end": 5692.05,
+      "text": "gdybym powiedział,"
+    },
+    {
+      "start": 5692.05,
+      "end": 5693.62,
+      "text": "że na powrót zespołu"
+    },
+    {
+      "start": 5693.62,
+      "end": 5695.24,
+      "text": "Kiński czekały tłumy"
+    },
+    {
+      "start": 5695.24,
       "end": 5696.83,
-      "text": "Skłamałbym albo wykazałbym się daleko posuniętym myśleniem życzeniowym, gdybym powiedział, że na powrót zespołu Kiński czekały tłumy wiernych fanów."
+      "text": "wiernych fanów."
     },
     {
       "start": 5696.83,
+      "end": 5699.08,
+      "text": "Ale ja czekałem, wytrwale,"
+    },
+    {
+      "start": 5699.08,
+      "end": 5700.43,
+      "text": "bo dla mnie Kopula"
+    },
+    {
+      "start": 5700.43,
+      "end": 5702.08,
+      "text": "Mundi, debiutancka"
+    },
+    {
+      "start": 5702.08,
+      "end": 5703.67,
+      "text": "i bardzo długo jedyna"
+    },
+    {
+      "start": 5703.67,
+      "end": 5705.03,
+      "text": "płyta Kińskiego"
+    },
+    {
+      "start": 5705.03,
+      "end": 5707.27,
+      "text": "była jednym z najważniejszych"
+    },
+    {
+      "start": 5707.27,
+      "end": 5708.91,
+      "text": "polskich materiałów"
+    },
+    {
+      "start": 5708.91,
       "end": 5711.27,
-      "text": "Ale ja czekałem, wytrwale, bo dla mnie Kopula Mundi, debiutancka i bardzo długo jedyna płyta Kińskiego była jednym z najważniejszych polskich materiałów lat dziewięćdziesiątych."
+      "text": "lat dziewięćdziesiątych."
     },
     {
       "start": 5711.27,
-      "end": 5717.53,
-      "text": "Niby to nie metal, ale grali brutalnie, intensywnie, ciężko, bezkompromisowo."
+      "end": 5712.67,
+      "text": "Niby to nie metal,"
     },
     {
-      "start": 5717.87,
+      "start": 5712.67,
+      "end": 5714.15,
+      "text": "ale grali brutalnie,"
+    },
+    {
+      "start": 5714.15,
+      "end": 5715.87,
+      "text": "intensywnie, ciężko,"
+    },
+    {
+      "start": 5715.87,
+      "end": 5717.81,
+      "text": "bezkompromisowo. Było"
+    },
+    {
+      "start": 5717.81,
+      "end": 5719.16,
+      "text": "w tym szaleństwo,"
+    },
+    {
+      "start": 5719.16,
+      "end": 5720.58,
+      "text": "nieprzewidywalność,"
+    },
+    {
+      "start": 5720.58,
+      "end": 5721.85,
+      "text": "a przy tym ewidentne"
+    },
+    {
+      "start": 5721.85,
+      "end": 5723.01,
+      "text": "wpływy noise rocka"
+    },
+    {
+      "start": 5723.01,
+      "end": 5724.48,
+      "text": "czy post-hardcora i"
+    },
+    {
+      "start": 5724.48,
+      "end": 5726.74,
+      "text": "to wszystko uformowane"
+    },
+    {
+      "start": 5726.74,
+      "end": 5728.76,
+      "text": "we własny, zupełnie"
+    },
+    {
+      "start": 5728.76,
+      "end": 5730.55,
+      "text": "oryginalny sposób"
+    },
+    {
+      "start": 5730.55,
+      "end": 5732.13,
+      "text": "trudna muzyka od"
+    },
+    {
+      "start": 5732.13,
       "end": 5734.77,
-      "text": "Było w tym szaleństwo, nieprzewidywalność, a przy tym ewidentne wpływy noise rocka czy post-hardcora i to wszystko uformowane we własny, zupełnie oryginalny sposób trudna muzyka od dziwaków dla dziwaków."
+      "text": "dziwaków dla dziwaków."
     },
     {
       "start": 5734.77,
-      "end": 5743.77,
-      "text": "W 2018 roku Kiński dokończyli i wydali swoją drugą płytę, czyli Preterito Futurum."
+      "end": 5737.53,
+      "text": "W 2018 roku Kiński"
     },
     {
-      "start": 5744.77,
+      "start": 5737.53,
+      "end": 5739.57,
+      "text": "dokończyli i wydali"
+    },
+    {
+      "start": 5739.57,
+      "end": 5741.61,
+      "text": "swoją drugą płytę,"
+    },
+    {
+      "start": 5741.61,
+      "end": 5744.55,
+      "text": "czyli Preterito Futurum."
+    },
+    {
+      "start": 5744.55,
+      "end": 5745.5,
+      "text": "I ja znowu byłem"
+    },
+    {
+      "start": 5745.5,
+      "end": 5746.64,
+      "text": "zachwycony, tym"
+    },
+    {
+      "start": 5746.64,
+      "end": 5748.01,
+      "text": "bardziej, że poszły"
+    },
+    {
+      "start": 5748.01,
+      "end": 5749.07,
+      "text": "za tym jeszcze"
+    },
+    {
+      "start": 5749.07,
+      "end": 5750.09,
+      "text": "bardziej szalone"
+    },
+    {
+      "start": 5750.09,
       "end": 5751.11,
-      "text": "I ja znowu byłem zachwycony, tym bardziej, że poszły za tym jeszcze bardziej szalone koncerty."
+      "text": "koncerty."
     },
     {
-      "start": 5751.59,
+      "start": 5751.11,
+      "end": 5752.65,
+      "text": "Sukces tylko, znowu"
+    },
+    {
+      "start": 5752.65,
+      "end": 5754.11,
+      "text": "nie przyszedł. Na"
+    },
+    {
+      "start": 5754.11,
+      "end": 5755.74,
+      "text": "szczęście warszawska"
+    },
+    {
+      "start": 5755.74,
+      "end": 5757.01,
+      "text": "ekipa nie zraziła"
+    },
+    {
+      "start": 5757.01,
+      "end": 5758.13,
+      "text": "się tym drobnym"
+    },
+    {
+      "start": 5758.13,
+      "end": 5759.5,
+      "text": "szczegółem i kiedy"
+    },
+    {
+      "start": 5759.5,
+      "end": 5760.69,
+      "text": "tu do was gawędzę"
+    },
+    {
+      "start": 5760.69,
+      "end": 5761.97,
+      "text": "nocną porą kończy"
+    },
+    {
+      "start": 5761.97,
+      "end": 5763.27,
+      "text": "właśnie nagrywać"
+    },
+    {
+      "start": 5763.27,
       "end": 5764.87,
-      "text": "Sukces tylko znowu nie przyszedł, na szczęście warszawska ekipa nie zraziła się tym drobnym szczegółem i kiedy tu do was gawędzę nocną porą kończy właśnie nagrywać trzecią płytę."
+      "text": "trzecią płytę."
     },
     {
       "start": 5765.37,
-      "end": 5772.19,
-      "text": "O czym donoszę z radością i na pewno będę tu jeszcze o niej mówił i będę puszczał piosenki."
+      "end": 5766.77,
+      "text": "O czym donoszę z radością"
     },
     {
-      "start": 5772.19,
-      "end": 5773.73,
-      "text": "*muzyka*"
+      "start": 5766.77,
+      "end": 5768.02,
+      "text": "i na pewno będę tu"
     },
     {
-      "start": 6062.15,
-      "end": 6071.83,
-      "text": "Bardzo przeżyłem śmierć Lane'a Staley'a, bo to facet, któremu wierzyłem, którego głos rozmiękczał moje betonowe serduszko."
+      "start": 5768.02,
+      "end": 5769.55,
+      "text": "jeszcze o niej mówił"
     },
     {
-      "start": 6072.41,
-      "end": 6078.75,
-      "text": "Uwielbiałem i Alison Chains, i Mad Season i niby wiedziałem, że Lane ma problemy."
+      "start": 5769.55,
+      "end": 5771.79,
+      "text": "i będę puszczał piosenkę."
     },
     {
-      "start": 6078.85,
-      "end": 6089.25,
-      "text": "Wszyscy przecież wiedzieli, że nie radzi sobie z uzależnieniem, no ale też wszyscy lub prawie wszyscy wierzyli naiwnie w tym i ja,"
+      "start": 6062.68,
+      "end": 6064.08,
+      "text": "Bardzo przeżyłem śmierć"
     },
     {
-      "start": 6089.25,
-      "end": 6094.83,
-      "text": "że może się ogarnie, że jeszcze ma czas, że w końcu odbije się od dna."
+      "start": 6064.08,
+      "end": 6065.41,
+      "text": "Lane'a Staley'a, bo"
     },
     {
-      "start": 6095.39,
-      "end": 6096.71,
-      "text": "Niestety nie udało się."
+      "start": 6065.41,
+      "end": 6067.78,
+      "text": "to facet, któremu wierzyłem,"
     },
     {
-      "start": 6097.37,
-      "end": 6105.59,
-      "text": "Jerry Cantrell, lider Alison Chains miał więc prawo i ziemskie i moralne reaktywować swój zespół,"
+      "start": 6067.78,
+      "end": 6069.67,
+      "text": "którego głos rozmiękczał"
     },
     {
-      "start": 6106.43,
-      "end": 6108.37,
-      "text": "ale ja i tak byłem najeżony."
+      "start": 6069.67,
+      "end": 6071.82,
+      "text": "moje betonowe serduszko."
     },
     {
-      "start": 6108.87,
-      "end": 6115.37,
-      "text": "Uważałem wtedy, że próba wejścia w buty Staley'a, której podjął się William Duval,"
+      "start": 6072.44,
+      "end": 6072.93,
+      "text": "Uwielbiałem i"
     },
     {
-      "start": 6115.37,
-      "end": 6125.89,
-      "text": "to świętokradztwo i że album Black Gives Way to Blue z 2009 roku, a więc wydany 14 lat po poprzednim,"
+      "start": 6072.93,
+      "end": 6074.32,
+      "text": "Alison Chains, i"
     },
     {
-      "start": 6126.43,
-      "end": 6129.67,
-      "text": "jest niepotrzebny i niedobry."
+      "start": 6074.32,
+      "end": 6075.71,
+      "text": "Matt Season i niby"
     },
     {
-      "start": 6130.45,
-      "end": 6136.43,
-      "text": "Oczywiście jak już przestałem się głupio dąsać i naprawdę posłuchałem Black Gives Way to Blue,"
+      "start": 6075.71,
+      "end": 6077.38,
+      "text": "wiedziałem, że Lane"
     },
     {
-      "start": 6136.93,
-      "end": 6137.99,
+      "start": 6077.38,
+      "end": 6078.74,
+      "text": "ma problemy."
+    },
+    {
+      "start": 6078.84,
+      "end": 6080.85,
+      "text": "Wszyscy przecież wiedzieli,"
+    },
+    {
+      "start": 6080.85,
+      "end": 6082.02,
+      "text": "że nie radzi sobie"
+    },
+    {
+      "start": 6082.02,
+      "end": 6083.58,
+      "text": "z uzależnieniem, no"
+    },
+    {
+      "start": 6083.58,
+      "end": 6085.34,
+      "text": "ale też wszyscy lub"
+    },
+    {
+      "start": 6085.34,
+      "end": 6087.58,
+      "text": "prawie wszyscy wierzyli"
+    },
+    {
+      "start": 6087.58,
+      "end": 6089.26,
+      "text": "naiwnie w tym i ja,"
+    },
+    {
+      "start": 6089.26,
+      "end": 6090.89,
+      "text": "że może się ogarnie,"
+    },
+    {
+      "start": 6090.89,
+      "end": 6092.44,
+      "text": "że jeszcze ma czas,"
+    },
+    {
+      "start": 6092.44,
+      "end": 6093.7,
+      "text": "że w końcu odbije"
+    },
+    {
+      "start": 6093.7,
+      "end": 6094.82,
+      "text": "się od dna."
+    },
+    {
+      "start": 6095.4,
+      "end": 6096.16,
+      "text": "Niestety nie udało"
+    },
+    {
+      "start": 6096.16,
+      "end": 6096.7,
+      "text": "się."
+    },
+    {
+      "start": 6097.38,
+      "end": 6098.21,
+      "text": "Jerry Cantrell,"
+    },
+    {
+      "start": 6098.21,
+      "end": 6100.16,
+      "text": "lider Alison Chains,"
+    },
+    {
+      "start": 6100.16,
+      "end": 6101.53,
+      "text": "miał więc prawo i"
+    },
+    {
+      "start": 6101.53,
+      "end": 6103.16,
+      "text": "ziemskie i moralne"
+    },
+    {
+      "start": 6103.16,
+      "end": 6105.6,
+      "text": "reaktywować swój zespół,"
+    },
+    {
+      "start": 6106.42,
+      "end": 6107.14,
+      "text": "ale ja i tak byłem"
+    },
+    {
+      "start": 6107.14,
+      "end": 6108.38,
+      "text": "najeżony."
+    },
+    {
+      "start": 6108.86,
+      "end": 6110.01,
+      "text": "Uważałem wtedy, że"
+    },
+    {
+      "start": 6110.01,
+      "end": 6111.62,
+      "text": "próba wejścia w buty"
+    },
+    {
+      "start": 6111.62,
+      "end": 6113.16,
+      "text": "Staley'a, której"
+    },
+    {
+      "start": 6113.16,
+      "end": 6114.7,
+      "text": "podjął się William"
+    },
+    {
+      "start": 6114.7,
+      "end": 6115.38,
+      "text": "Duval,"
+    },
+    {
+      "start": 6115.38,
+      "end": 6117.4,
+      "text": "to świętokradztwo i"
+    },
+    {
+      "start": 6117.4,
+      "end": 6119.51,
+      "text": "że album Black Gives"
+    },
+    {
+      "start": 6119.51,
+      "end": 6122.3,
+      "text": "Way to Blue z 2009"
+    },
+    {
+      "start": 6122.3,
+      "end": 6124.03,
+      "text": "roku, a więc wydany"
+    },
+    {
+      "start": 6124.03,
+      "end": 6125.9,
+      "text": "14 lat po poprzednim,"
+    },
+    {
+      "start": 6126.44,
+      "end": 6128.15,
+      "text": "jest niepotrzebny i"
+    },
+    {
+      "start": 6128.15,
+      "end": 6129.66,
+      "text": "niedobry."
+    },
+    {
+      "start": 6130.5,
+      "end": 6130.99,
+      "text": "Oczywiście jak już"
+    },
+    {
+      "start": 6130.99,
+      "end": 6132.55,
+      "text": "przestałem się głupio"
+    },
+    {
+      "start": 6132.55,
+      "end": 6133.69,
+      "text": "dąsać i naprawdę"
+    },
+    {
+      "start": 6133.69,
+      "end": 6135.42,
+      "text": "posłuchałem Black Gives"
+    },
+    {
+      "start": 6135.42,
+      "end": 6136.44,
+      "text": "Way to Blue,"
+    },
+    {
+      "start": 6136.94,
+      "end": 6137.98,
       "text": "to byłem zachwycony."
     },
     {
-      "start": 6137.99,
-      "end": 6139.45,
-      "text": "Muzyka"
+      "start": 6376.38,
+      "end": 6377.43,
+      "text": "Skoro już zagrali"
     },
     {
-      "start": 6375.55,
-      "end": 6384.79,
-      "text": "Skoro już zagrali nam Alison Chains, to oczywiście nie może zabraknąć zespołu, od którego wszystko się zaczęło."
+      "start": 6377.43,
+      "end": 6378.68,
+      "text": "nam Alison Chains,"
     },
     {
-      "start": 6385.39,
-      "end": 6393.89,
-      "text": "Zespołu, który otworzył puszkę Pandory okaleczonymi przez maszynę palcami gitarzysty Tonego Iomiego."
+      "start": 6378.68,
+      "end": 6379.98,
+      "text": "to oczywiście nie"
     },
     {
-      "start": 6393.89,
-      "end": 6404.85,
-      "text": "Czy wydana w 2013 roku, po 18 latach wydawniczej ciszy, płyta 13 należy do najlepszych albumów Black Sabbath?"
+      "start": 6379.98,
+      "end": 6382.1,
+      "text": "może zabraknąć zespołu,"
     },
     {
-      "start": 6405.33,
-      "end": 6413.85,
-      "text": "Ależ skąd? Czy zatem zespół mógłby się obejść bez tej pozycji w swojej dyskografii i czy obeszliby się bez niej fani?"
+      "start": 6382.1,
+      "end": 6383.56,
+      "text": "od którego wszystko"
     },
     {
-      "start": 6414.65,
-      "end": 6428.47,
-      "text": "Jasne, że tak. Ale zarazem trzynastka jest wspaniałym symbolem i pięknym domknięciem tej kariery, bo Ozzie, Tony i Gizer znowu nagrali coś razem."
+      "start": 6383.56,
+      "end": 6384.76,
+      "text": "się zaczęło."
     },
     {
-      "start": 6429.19,
-      "end": 6434.87,
-      "text": "No dobrze, doskonale byłoby, gdyby z nimi zagrał też Bill Ward."
+      "start": 6385.38,
+      "end": 6386.87,
+      "text": "Zespołu, który otworzył"
     },
     {
-      "start": 6435.61,
-      "end": 6446.15,
-      "text": "Jest zatem jakaś rysa na tym postumencie, ale tak czy owak, album i towarzysząca mu trasa były wielkim wydarzeniem."
+      "start": 6386.87,
+      "end": 6389.28,
+      "text": "puszkę Pandory okaleczonymi"
     },
     {
-      "start": 6446.53,
-      "end": 6448.31,
-      "text": "Nie zapomnę ich nigdy."
+      "start": 6389.28,
+      "end": 6391.1,
+      "text": "przez maszynę palcami"
     },
     {
-      "start": 6449.05,
-      "end": 6455.85,
-      "text": "Na koniec audycji Ozzie zaśpiewa wam zatem piosenkę o kończącym się początku."
+      "start": 6391.1,
+      "end": 6393.9,
+      "text": "gitarzysty Tonego Iomiego."
     },
     {
-      "start": 6456.79,
-      "end": 6457.39,
-      "text": "Dobranoc."
+      "start": 6393.9,
+      "end": 6396.1,
+      "text": "Czy wydana w 2013"
+    },
+    {
+      "start": 6396.1,
+      "end": 6397.92,
+      "text": "roku po 18 latach"
+    },
+    {
+      "start": 6397.92,
+      "end": 6400.02,
+      "text": "wydawniczej ciszy płyta"
+    },
+    {
+      "start": 6400.02,
+      "end": 6402.85,
+      "text": "13 należy do najlepszych"
+    },
+    {
+      "start": 6402.85,
+      "end": 6403.73,
+      "text": "albumów Black"
+    },
+    {
+      "start": 6403.73,
+      "end": 6406.14,
+      "text": "Sabbath? Ależ skąd?"
+    },
+    {
+      "start": 6406.72,
+      "end": 6407.81,
+      "text": "Czy zatem zespół mógłby"
+    },
+    {
+      "start": 6407.81,
+      "end": 6409.06,
+      "text": "się obejść bez tej"
+    },
+    {
+      "start": 6409.06,
+      "end": 6410.23,
+      "text": "pozycji w swojej"
+    },
+    {
+      "start": 6410.23,
+      "end": 6411.48,
+      "text": "dyskografii i czy"
+    },
+    {
+      "start": 6411.48,
+      "end": 6412.75,
+      "text": "obeszliby się bez"
+    },
+    {
+      "start": 6412.75,
+      "end": 6413.84,
+      "text": "niej fani?"
+    },
+    {
+      "start": 6414.26,
+      "end": 6415.75,
+      "text": "Jasne, że tak. Ale"
+    },
+    {
+      "start": 6415.75,
+      "end": 6417.55,
+      "text": "zarazem trzynastka"
+    },
+    {
+      "start": 6417.55,
+      "end": 6419.89,
+      "text": "jest wspaniałym symbolem"
+    },
+    {
+      "start": 6419.89,
+      "end": 6421.9,
+      "text": "i pięknym domknięciem"
+    },
+    {
+      "start": 6421.9,
+      "end": 6424.01,
+      "text": "tej kariery, bo Ozzy,"
+    },
+    {
+      "start": 6424.01,
+      "end": 6425.6,
+      "text": "Tony i Gizer znowu"
+    },
+    {
+      "start": 6425.6,
+      "end": 6427.84,
+      "text": "nagrali coś razem."
+    },
+    {
+      "start": 6429.84,
+      "end": 6430.15,
+      "text": "No dobrze, doskonale"
+    },
+    {
+      "start": 6430.15,
+      "end": 6432.33,
+      "text": "byłoby, gdyby z nimi"
+    },
+    {
+      "start": 6432.33,
+      "end": 6434.02,
+      "text": "zagrał też Bill"
+    },
+    {
+      "start": 6434.02,
+      "end": 6434.88,
+      "text": "Ward."
+    },
+    {
+      "start": 6435.6,
+      "end": 6437.49,
+      "text": "Jest zatem jakaś rysa"
+    },
+    {
+      "start": 6437.49,
+      "end": 6439.36,
+      "text": "na tym postumencie,"
+    },
+    {
+      "start": 6439.36,
+      "end": 6440.74,
+      "text": "ale tak czy owak"
+    },
+    {
+      "start": 6440.74,
+      "end": 6442.63,
+      "text": "album i towarzysząca"
+    },
+    {
+      "start": 6442.63,
+      "end": 6444.55,
+      "text": "mu trasa były wielkim"
+    },
+    {
+      "start": 6444.55,
+      "end": 6446.26,
+      "text": "wydarzeniem, nie"
+    },
+    {
+      "start": 6446.26,
+      "end": 6448.3,
+      "text": "zapomnę ich nigdy."
+    },
+    {
+      "start": 6448.3,
+      "end": 6449.89,
+      "text": "Na koniec audycji"
+    },
+    {
+      "start": 6449.89,
+      "end": 6451.98,
+      "text": "Ozzy zaśpiewa wam zatem"
+    },
+    {
+      "start": 6451.98,
+      "end": 6453.86,
+      "text": "piosenkę o kończącym"
+    },
+    {
+      "start": 6453.86,
+      "end": 6455.5,
+      "text": "się początku."
     }
   ],
   "stats": {
-    "windowCount": 19,
-    "transcribedAudioSec": 1647.46,
-    "segmentCount": 186,
-    "characterCount": 17339
-  },
-  "sourceId": "2026-09-16-niepotrzebne-rozstania-wielkie-powroty"
+    "windowCount": 18,
+    "transcribedAudioSec": 1544.02,
+    "segmentCount": 909,
+    "characterCount": 16440
+  }
 }
