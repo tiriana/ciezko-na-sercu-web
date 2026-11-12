@@ -1834,18 +1834,26 @@ a {
 /* Wejście jest dodatkiem do tracklisty, nie drugim utworem: mniejszy wiersz,
    przygaszona etykieta i jedna linia z wielokropkiem. */
 .tracks__row--entry td {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .tracks__row--entry .tracks__kind {
   flex: none;
-  padding-top: 1px;
+  align-self: center;
+  padding: 1px 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   white-space: nowrap;
+}
+
+.tracks__row--entry .tracks__entry-line {
+  gap: 10px;
+  align-items: center;
 }
 
 .tracks__row--entry .tracks__entry-label {
