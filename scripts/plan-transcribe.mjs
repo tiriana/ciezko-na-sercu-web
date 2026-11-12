@@ -132,6 +132,7 @@ if (process.env.PRINT_NEXT === 'true') {
 if (process.env.SOURCE === 'spans') {
   const CHUNKS_PER_JOB = Number.parseInt(process.env.CHUNKS_PER_JOB ?? '6', 10) || 6;
   const matrix = [];
+  const missingSpans = [];
   for (const episode of episodes) {
     const spansPath = new URL(`../data/artifacts/${episode.id}/speech-spans.json`, import.meta.url);
     let chunks;
@@ -139,6 +140,7 @@ if (process.env.SOURCE === 'spans') {
       chunks = JSON.parse(readFileSync(spansPath, 'utf8')).chunks ?? [];
     } catch {
       console.log(`${episode.slug}: brak bloków mowy — pominięty`);
+      missingSpans.push(episode.slug);
       continue;
     }
     if (chunks.length === 0) {
@@ -157,6 +159,13 @@ if (process.env.SOURCE === 'spans') {
       });
     }
     console.log(`${episode.slug}: ${chunks.length} bloków mowy -> ${jobs} jobów`);
+  }
+  // Jawne zamówienie bez artefaktów VAD to błąd, nie „nie ma nic do zrobienia":
+  // bez tego przebieg kończył się zielonym „0 jobów”, a odcinek nigdy nie dostawał
+  // transkryptu.
+  if (wanted.length > 0 && missingSpans.length > 0) {
+    console.log(`::error::Brak bloków mowy dla: ${missingSpans.join(', ')} — artefakt VAD nie trafił do repo.`);
+    process.exit(1);
   }
   if (outputFile) {
     appendFileSync(outputFile, `matrix=${JSON.stringify(matrix)}\n`);
