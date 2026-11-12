@@ -1,5 +1,7 @@
 import { copyFile, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
+
+import { splitTags } from '../src/lib/tags.ts';
 import { frozenEpisodes } from './frozen.mjs';
 
 const [workDir, outputDir = 'data/episodes', transcriptsDir = 'data/transcripts'] = process.argv.slice(2);
@@ -180,25 +182,27 @@ const toContract = (episode, analyzedAt, id, insights) => {
       end: topic.end == null ? undefined : Math.round(topic.end),
       label: topic.topic,
     })),
-    tags: [
-      ...(episode.tags ?? []).map((tag) => ({
-        id: tag.id,
-        label: tag.label,
-        type: tag.type ?? 'editorial',
-        source: tag.source ?? 'profile',
-        at: tag.at == null ? undefined : Math.round(tag.at),
-      })),
-      ...(insights?.guests ?? []).map((guest) => ({
-        id: tagId(guest.name),
-        label: guest.name,
-        type: 'person',
-        source: 'credits',
-        at: guest.at == null ? undefined : Math.round(guest.at),
-      })),
-      ...(insights?.mentions ?? []).filter((mention) => MENTION_KINDS[mention.type]).map(mentionTag),
-      ...creditsToTags(houseCredits),
-      ...titleTags(byId.get(id)?.title, knownLabels),
-    ].filter((tag, index, all) => all.findIndex((other) => other.id === tag.id) === index),
+    tags: splitTags(
+      [
+        ...(episode.tags ?? []).map((tag) => ({
+          id: tag.id,
+          label: tag.label,
+          type: tag.type ?? 'editorial',
+          source: tag.source ?? 'profile',
+          at: tag.at == null ? undefined : Math.round(tag.at),
+        })),
+        ...(insights?.guests ?? []).map((guest) => ({
+          id: tagId(guest.name),
+          label: guest.name,
+          type: 'person',
+          source: 'credits',
+          at: guest.at == null ? undefined : Math.round(guest.at),
+        })),
+        ...(insights?.mentions ?? []).filter((mention) => MENTION_KINDS[mention.type]).map(mentionTag),
+        ...creditsToTags(houseCredits),
+        ...titleTags(byId.get(id)?.title, knownLabels),
+      ].filter((tag, index, all) => all.findIndex((other) => other.id === tag.id) === index)
+    ),
     tracks: (episode.tracks ?? []).map((track) => ({
       start: Math.round(track.start),
       end: track.end == null ? undefined : Math.round(track.end),

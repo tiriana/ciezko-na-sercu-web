@@ -6,6 +6,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import { aliasesSchema, catalogSchema, episodeSchema, peopleSchema, titlesSchema } from '../src/lib/schema.ts';
+import { splitTag } from '../src/lib/tags.ts';
 
 const DATA = 'data';
 const EPISODES = join(DATA, 'episodes');
@@ -247,6 +248,22 @@ if (staleTimeline.length > 0) {
     `${staleTimeline.length} opracowań ma dane sprzed uzgadniania osi programu — przelicz \`rat tag\`, ` +
       'żeby czasy wejść i utworów przestały się nakładać.'
   );
+}
+
+// Zlepione etykiety z importu („A & B”, skład koncertu) nie wywalają builda, bo strona
+// i tak je rozbija przy odczycie — ale dane powinny być czyste, więc przypominamy.
+const mergedTags = [];
+for (const name of await readdir(EPISODES)) {
+  if (!name.endsWith('.json')) continue;
+  const episode = JSON.parse(await readFile(join(EPISODES, name), 'utf8'));
+  for (const tag of episode.tags ?? []) {
+    const parts = splitTag(tag);
+    if (parts.length > 1) mergedTags.push(`${name}: ${tag.label}`);
+  }
+}
+if (mergedTags.length > 0) {
+  console.log(`${mergedTags.length} tagów łączy kilka zespołów — uruchom \`npm run tags -- --write\`:`);
+  for (const item of mergedTags.slice(0, 10)) console.log(`  - ${item}`);
 }
 
 // Koniec utworu powinien wypaść tam, gdzie zaczyna się mowa (etap 1, #52). Resztki

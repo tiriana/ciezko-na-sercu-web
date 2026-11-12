@@ -1,4 +1,4 @@
-import { tagId } from './tags.ts';
+import { splitTags, tagId } from './tags.ts';
 import type { Aliases, Episode, TagTypes } from './schema.ts';
 import type { Override } from './schema.ts';
 
@@ -187,10 +187,10 @@ function dropTodoDuplicates(episode: Episode): void {
 export function mergeEpisode(episode: Episode, options: { override?: Override; aliases?: Aliases; types?: TagTypes }): Episode {
   const { override, aliases = {}, types = {} } = options;
   if (override) applyOverride(episode, override);
-  if (Object.keys(aliases).length > 0 || Object.keys(types).length > 0) {
-    episode.tags = mergeAliases(episode.tags, aliases, types);
-    episode.credits = episode.credits.map((credit) => ({ ...credit, name: resolveAlias(credit.name, aliases) }));
-  }
+  // Najpierw rozbijamy zlepione etykiety („A & B”, skład koncertu), potem dopiero
+  // podstawiamy aliasy — inaczej alias musiałby znać każdą kombinację składu.
+  episode.tags = mergeAliases(splitTags(episode.tags), aliases, types);
+  episode.credits = episode.credits.map((credit) => ({ ...credit, name: resolveAlias(credit.name, aliases) }));
   dropTodoDuplicates(episode);
   sanitizeEpisode(episode);
   return episode;
