@@ -311,6 +311,18 @@
       "time": 4392.63,
       "label": "Azarath – album „Scorn Eternal”",
       "hide": true
+    },
+    {
+      "time": 4951.93,
+      "label": "Słupski Odór – EP „Fetor Hepaticus Vol. 2”",
+      "start": 4940.86,
+      "newLabel": "Słupski Odór – EP „Fetor Hepaticus Vol. 2” / Abuser – album „Bloodmarks”",
+      "end": 4981.24
+    },
+    {
+      "time": 4973.97,
+      "label": "Abuser – album „Bloodmarks”",
+      "hide": true
     }
   ],
   "addTracks": [
@@ -333,22 +345,22 @@
       "album": "Vision Beyond Form",
       "start": 3924.95,
       "durationSec": 311,
-      "end": 4234.63
+      "end": 4369.74
     },
     {
-      "artist": "Wingless",
-      "title": "The Gnosis Of Decay",
-      "album": "Vision Beyond Form",
+      "artist": "",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
       "start": 4234.63,
-      "durationSec": 133.85,
-      "end": 4369.74
+      "durationSec": 135.10999999999967
     },
     {
       "artist": "Throneum",
       "title": "And Love Is the Law",
       "album": "Love Is the Law but Death Is the Frame",
       "start": 4630.76,
-      "durationSec": 310.13
+      "durationSec": 310.13,
+      "end": 4940.86
     },
     {
       "artist": "Odór",
@@ -384,6 +396,14 @@
     {
       "label": "#TODO - wygeneruj opis znacznika",
       "start": 3874.99
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 4584
+    },
+    {
+      "label": "#TODO - wygeneruj opis znacznika",
+      "start": 5148.05
     }
   ],
   "credits": {
