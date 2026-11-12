@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       episodes:
-        description: 'UUID lub slugi oddzielone przecinkami; puste = odcinki z brakami'
+        description: 'UUID (też skrócony), slug albo prefiks, oddzielone przecinkami; puste = odcinki z brakami'
         required: false
         type: string
 

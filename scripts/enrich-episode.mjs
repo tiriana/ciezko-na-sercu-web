@@ -386,11 +386,23 @@ const selected = [];
 if (wanted.length > 0) {
   for (const key of wanted) {
     const episode = byKey.get(key);
-    if (!episode) {
-      console.error(`Nieznany odcinek: ${key}`);
-      process.exit(1);
+    if (episode) {
+      selected.push(episode);
+      continue;
     }
-    selected.push(episode);
+    // Ręcznie wygodniej podać krótki uuid; przy niejednoznacznym prefiksie
+    // lepiej się zatrzymać niż zgadnąć odcinek.
+    const matches = catalog.episodes.filter((item) => item.id.startsWith(key));
+    if (matches.length === 1) {
+      selected.push(matches[0]);
+      continue;
+    }
+    console.error(
+      matches.length > 1
+        ? `Niejednoznaczny prefiks ${key}: ${matches.map((item) => item.id.slice(0, 8)).join(', ')}`
+        : `Nieznany odcinek: ${key}`
+    );
+    process.exit(1);
   }
 } else {
   for (const name of (await readdir('data/episodes')).filter((file) => file.endsWith('.json'))) {
