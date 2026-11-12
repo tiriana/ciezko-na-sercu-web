@@ -185,7 +185,7 @@ def context_text(transcript: dict, start_real: float, seconds: float = 150) -> s
 def candidate_from_context(text: str) -> tuple[dict | None, str, bool]:
     """Kandydat z zapowiedzi: (utwór, powód niepowodzenia, czy to już pewne)."""
     if not text.strip():
-        return None
+        return None, "brak tekstu", True
     prompt = (
         "Poniżej zapowiedź utworu z audycji radiowej o muzyce metalowej. Podaj wykonawcę i album, "
         "a jeśli w tekście wprost pada tytuł utworu — też tytuł. Nie zgaduj; jeśli czegoś nie ma, zostaw puste.\n"
