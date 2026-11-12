@@ -207,7 +207,8 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
     override_path = ROOT / "data" / "overrides" / f"{episode_id}.json"
     override = read_json(override_path) or {"version": 1}
     tracks = (override.get("addTracks") or []) + (override.get("tracks") or [])
-    todo = [t for t in tracks if re.search(r"#TODO", t.get("title", ""))]
+    # Ręcznie dodany utwór ma flagę `unrecognized`; starsze wpisy mają jeszcze tytuł #TODO.
+    todo = [t for t in tracks if t.get("unrecognized") or re.search(r"#TODO", t.get("title") or "")]
     if not todo:
         return
 
@@ -261,6 +262,7 @@ def resolve_episode(episode_id: str, write: bool, min_score: float) -> None:
         gap["artist"] = best["artist"]
         gap["title"] = best["title"]
         gap["album"] = best["album"]
+        gap.pop("unrecognized", None)
         if candidate["title"] and candidate["title"].lower() == str(best["title"]).lower():
             print("    tytuł zgodny z zapowiedzią")
         changed = True

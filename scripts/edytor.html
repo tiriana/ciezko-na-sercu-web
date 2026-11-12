@@ -2025,8 +2025,8 @@
           const tr = document.createElement('tr');
           tr.dataset.markerObjectKey = String(objectKey(track));
           const cells = [
-            ['artist', 'text', ''],
-            ['title', 'text', ''],
+            ['artist', 'text', 'wykonawca nierozpoznany'],
+            ['title', 'text', 'tytuł nierozpoznany'],
             ['album', 'text', '(brak)'],
             ['start', 'number', '0'],
             ['durationSec', 'number', '0'],
@@ -3072,7 +3072,9 @@
           .sort((left, right) => left - right)[0];
         const requestedDuration = next === undefined ? 180 : next - start;
         const durationSec = Math.max(0, Math.min(requestedDuration, wave.duration - start));
-        const track = { artist: '', title: TODO_TRACK_TITLE, album: '', start, durationSec };
+        // Ręcznie dodany utwór z definicji jest nierozpoznany: flaga mówi o tym
+        // stronie, a puste pola dają „wykonawca/tytuł nierozpoznany” zamiast #TODO.
+        const track = { artist: '', title: '', album: '', start, durationSec, unrecognized: true };
         pushUndo();
         state.addTracks.push(track);
         state.addTracks.sort((left, right) => Number(left.start) - Number(right.start));

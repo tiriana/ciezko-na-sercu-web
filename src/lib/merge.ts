@@ -129,8 +129,10 @@ function applyOverride(episode: Episode, override: Override): void {
   if (override.addTracks.length > 0) {
     episode.tracks.push(
       ...override.addTracks.map((track) => ({
-        artist: track.artist,
-        title: track.title,
+        // Puste pola znaczą „nie wiem”, a nie „pusty tekst” — strona pokazuje wtedy
+        // „wykonawca nierozpoznany” / „tytuł nierozpoznany”.
+        artist: track.artist || null,
+        title: track.title || null,
         album: track.album ?? null,
         start: track.start,
         end: track.end ?? (track.durationSec ? track.start + track.durationSec : undefined),
