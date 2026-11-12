@@ -30,7 +30,8 @@
     "verify:migration": "node scripts/build-episode.mjs --from-legacy --check",
     "metadata": "node scripts/fetch-episode-metadata.mjs",
     "episode": "node scripts/build-episode.mjs",
-    "spans": "${SPANS_PYTHON:-python3} scripts/speech_spans.py"
+    "spans": "${SPANS_PYTHON:-python3} scripts/speech_spans.py",
+    "resolve": "${SPANS_PYTHON:-python3} scripts/resolve_tracks.py"
   },
   "dependencies": {
     "astro": "^7.4.7",

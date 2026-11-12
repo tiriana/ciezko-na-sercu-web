@@ -1,13 +1,221 @@
 {
   "version": 1,
-  "tracks": [],
-  "topics": [],
+  "tracks": [
+    {
+      "artist": "White Ward",
+      "title": "Cronus",
+      "album": "False Light",
+      "newArtist": "White Ward",
+      "newTitle": "Cronus",
+      "newAlbum": "False Light",
+      "start": 8.06,
+      "durationSec": 373,
+      "end": 384.96
+    },
+    {
+      "artist": "Knoll",
+      "title": "Fettered Oath",
+      "album": "As Spoken",
+      "newArtist": "Knoll",
+      "newTitle": "Fettered Oath",
+      "newAlbum": "As Spoken",
+      "start": 457.05,
+      "durationSec": 91,
+      "end": 547.1
+    },
+    {
+      "artist": "Chelsea Wolfe",
+      "title": "Dusk",
+      "album": "She Reaches Out To She Reaches Out To She",
+      "newArtist": "Chelsea Wolfe",
+      "newTitle": "Dusk",
+      "newAlbum": "She Reaches Out To She Reaches Out To She",
+      "start": 590.69,
+      "durationSec": 259,
+      "end": 848.89
+    },
+    {
+      "artist": "Hexvessel",
+      "title": "The Tundra Is Awake",
+      "album": "Polar Veil",
+      "newArtist": "Hexvessel",
+      "newTitle": "The Tundra Is Awake",
+      "newAlbum": "Polar Veil",
+      "start": 972.23,
+      "durationSec": 277,
+      "end": 1440.01
+    },
+    {
+      "artist": "Lord Spikeheart",
+      "title": "33rd Degree Access (feat. Backxwash & SAIONJI BBBBBBB)",
+      "album": "The Adept",
+      "start": 1440.01,
+      "hide": true
+    },
+    {
+      "artist": "Lord Spikeheart",
+      "title": "Acts of God (feat. Vulture Thrust & Bidimensional Gangsta)",
+      "album": "The Adept",
+      "newArtist": "Lord Spikeheart",
+      "newTitle": "Acts of God (feat. Vulture Thrust & Bidimensional Gangsta)",
+      "newAlbum": "The Adept",
+      "start": 1800.49,
+      "durationSec": 148,
+      "end": 1948.48
+    },
+    {
+      "artist": "Couch Slut",
+      "title": "Downhill Racer",
+      "album": "You Could Do It Tonight",
+      "newArtist": "Couch Slut",
+      "newTitle": "Downhill Racer",
+      "newAlbum": "You Could Do It Tonight",
+      "start": 2053.91,
+      "durationSec": 209,
+      "end": 2262.32
+    },
+    {
+      "artist": "Body Void",
+      "title": "Flesh Market",
+      "album": "Atrocity Machine",
+      "newArtist": "Body Void",
+      "newTitle": "Flesh Market",
+      "newAlbum": "Atrocity Machine",
+      "start": 2460.97,
+      "durationSec": 391,
+      "end": 2982.01
+    },
+    {
+      "artist": "Body Void",
+      "title": "Burn",
+      "album": "Burn the Homes of Those Who Seek To Control Our Bodies - Single",
+      "newArtist": "Body Void",
+      "newTitle": "Burn",
+      "newAlbum": "Burn the Homes of Those Who Seek To Control Our Bodies - Single",
+      "start": 3055.54,
+      "durationSec": 486,
+      "end": 3541.14
+    },
+    {
+      "artist": "Neptunian Maximalism",
+      "title": "Magická Džungľa",
+      "album": "Éons",
+      "newArtist": "Neptunian Maximalism",
+      "newTitle": "Magická Džungľa",
+      "newAlbum": "Éons",
+      "start": 3703.83,
+      "durationSec": 323,
+      "end": 4260.02
+    }
+  ],
+  "topics": [
+    {
+      "time": 384.27,
+      "label": "Wprowadzenie i zapowiedź, że audycja będzie poświęcona festiwalowi Roadburn",
+      "start": 384.96,
+      "newLabel": "Wprowadzenie i zapowiedź, że audycja będzie poświęcona festiwalowi Roadburn",
+      "end": 457.05
+    },
+    {
+      "time": 547,
+      "label": "Opis koncertów i artystów występujących na Roadburn 2024, m.in. White World, Noru, Chelsea Wolfe",
+      "start": 547.1,
+      "newLabel": "Opis koncertów i artystów występujących na Roadburn 2024, m.in. White World, Noru, Chelsea Wolfe",
+      "end": 590.69
+    },
+    {
+      "time": 915.76,
+      "label": "Szczegółowa dyskusja o Hex Vessel, ich albumie \"Polar Vail\" i tradycji festiwalu",
+      "start": 848.89,
+      "newLabel": "#TODO Popraw opis\nSzczegółowa dyskusja o Hex Vessel, ich albumie \"Polar Vail\" i tradycji festiwalu",
+      "end": 972.23
+    },
+    {
+      "time": 1506.01,
+      "label": "Prezentacja solowej płyty Lorda Spikearta \"The Adept\" oraz gości i współpracowników",
+      "start": 1507.28,
+      "newLabel": "Prezentacja solowej płyty Lorda Spikearta \"The Adept\" oraz gości i współpracowników / Osobista historia prababci prowadzącej walkę o niepodległość Kenii i jej wpływ na twórczość / Martin i powstanie wytwórni Hekalu Records oraz jej znaczenie / Problemy afrykańskich artystów z infrastrukturą i dystrybucją muzyki / Plany popularyzacji afrykańskich artystów i budowanie mostu między kontynentami",
+      "end": 1800.49
+    },
+    {
+      "time": 1763.01,
+      "label": "Plany popularyzacji afrykańskich artystów i budowanie mostu między kontynentami",
+      "hide": true
+    },
+    {
+      "time": 1580.01,
+      "label": "Osobista historia prababci prowadzącej walkę o niepodległość Kenii i jej wpływ na twórczość",
+      "hide": true
+    },
+    {
+      "time": 1677.01,
+      "label": "Martin i powstanie wytwórni Hekalu Records oraz jej znaczenie",
+      "hide": true
+    },
+    {
+      "time": 1703.01,
+      "label": "Problemy afrykańskich artystów z infrastrukturą i dystrybucją muzyki",
+      "hide": true
+    },
+    {
+      "time": 1947.91,
+      "label": "Prezentacja zespołu Couch Slut i ich nowego utworu",
+      "start": 1948.48,
+      "newLabel": "Prezentacja zespołu Couch Slut i ich nowego utworu",
+      "end": 2053.91
+    },
+    {
+      "time": 2261.86,
+      "label": "Rozmowa z Janis Ironfawn o festiwalu Roadburn i nowej płycie Body Void",
+      "start": 2262.32,
+      "newLabel": "Rozmowa z Janis Ironfawn o festiwalu Roadburn i nowej płycie Body Void",
+      "end": 2460.97
+    },
+    {
+      "time": 2982.01,
+      "label": "Refleksja nad wizerunkiem i zmianą percepcji metalu w środowisku fanów",
+      "hide": true
+    },
+    {
+      "time": 3541.01,
+      "label": "Podsumowanie i analiza bieżącej edycji Roadburn oraz jego ewolucji od festiwalu stonerowego do platformy eksperymentalnej",
+      "start": 3541.14,
+      "newLabel": "Podsumowanie i analiza bieżącej edycji Roadburn oraz jego ewolucji od festiwalu stonerowego do platformy eksperymentalnej",
+      "end": 3703.83
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0,
-      "durationSec": 8.06
+      "durationSec": 8.06,
+      "end": 8.06
+    },
+    {
+      "artist": "Lord Spikeheart",
+      "title": "#TODO - rozpoznaj piosenkę",
+      "album": "",
+      "start": 1249.48,
+      "durationSec": 190.52999999999997
+    },
+    {
+      "artist": "Lord Spikeheart",
+      "title": "#TODO - rozpoznaj piosenkę / 33rd Degree Access (feat. Backxwash & SAIONJI BBBBBBB)",
+      "album": "The Adept",
+      "start": 1365.77,
+      "durationSec": 141.24,
+      "end": 1507.28
     }
-  ]
+  ],
+  "addTopics": [
+    {
+      "label": "#TODO - wygeneruj opis znacznika / Refleksja nad wizerunkiem i zmianą percepcji metalu w środowisku fanów",
+      "start": 2859.21,
+      "end": 3055.54
+    }
+  ],
+  "credits": {
+    "rename": {}
+  }
 }

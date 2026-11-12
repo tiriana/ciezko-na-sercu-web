@@ -75,6 +75,29 @@ jobs:
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
+      # Shazam nie zna całego polskiego undergroundu, więc bloki bez trafienia dostają
+      # `#TODO`. Ten krok czyta zapowiedź z transkryptu, bierze kandydatów z Deezera
+      # i potwierdza ich chromą — zapisuje tylko to, co zgadza się z dźwiękiem.
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v6
+        with:
+          python-version: '3.12'
+
+      - name: Zainstaluj numpy
+        run: pip install --quiet numpy
+
+      - name: Rozpoznaj nierozpoznane utwory
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          EPISODES: ${{ inputs.episodes }}
+        run: |
+          args=(--all)
+          if [ -n "$EPISODES" ]; then
+            args=()
+            for id in ${EPISODES//,/ }; do args+=(--episode "$id"); done
+          fi
+          python3 scripts/resolve_tracks.py "${args[@]}" --write
+
       - run: npm run check
 
       # Shazam kosztuje kilka minut próbek, więc wynik jedzie do artefaktu —
@@ -83,14 +106,16 @@ jobs:
         if: always()
         with:
           name: identify-data
-          path: data/episodes/*.json
+          path: |
+            data/episodes/*.json
+            data/overrides/*.json
           include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 14
 
       - name: Commit
         run: |
-          bash scripts/push-data.sh "fix: rozpoznane utwory Shazamem (${GITHUB_RUN_ID})" data/episodes
+          bash scripts/push-data.sh "fix: rozpoznane utwory Shazamem (${GITHUB_RUN_ID})" data/episodes data/overrides
 
       - name: Stan etapów
         if: always()
