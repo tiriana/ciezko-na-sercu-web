@@ -4,942 +4,4977 @@
   "provider": "whisper-cpp",
   "model": "large-v3-turbo-q5_0",
   "language": "pl",
-  "fileSizeBytes": 109232640,
-  "fileMtimeMs": 1789150251631.438,
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
   "windows": [
     {
       "index": 0,
-      "start": 2.44,
-      "end": 8.41
+      "start": 3.39,
+      "end": 7.05
     },
     {
       "index": 1,
-      "start": 289.99,
-      "end": 463.8
+      "start": 291.68,
+      "end": 461.24
     },
     {
       "index": 2,
-      "start": 756.29,
-      "end": 857.76
+      "start": 758.81,
+      "end": 853.27
     },
     {
       "index": 3,
-      "start": 1122.82,
-      "end": 1272.25
+      "start": 1123.87,
+      "end": 1255.45
     },
     {
       "index": 4,
-      "start": 1292.36,
-      "end": 1298.62
+      "start": 1516.89,
+      "end": 1646.25
     },
     {
       "index": 5,
-      "start": 1515.52,
-      "end": 1648.35
+      "start": 1886.78,
+      "end": 2066.34
     },
     {
       "index": 6,
-      "start": 1885.73,
-      "end": 2068.35
+      "start": 2261.08,
+      "end": 2344.2
     },
     {
       "index": 7,
-      "start": 2259.65,
-      "end": 2353.12
+      "start": 2644.83,
+      "end": 2713.89
     },
     {
       "index": 8,
-      "start": 2643.3,
-      "end": 2717.98
+      "start": 2981.21,
+      "end": 3017.31
     },
     {
       "index": 9,
-      "start": 2978.76,
-      "end": 3019.42
+      "start": 3330.04,
+      "end": 3401.22
     },
     {
       "index": 10,
-      "start": 3326.4,
-      "end": 3402.78
+      "start": 3682.81,
+      "end": 3760.85
     },
     {
       "index": 11,
-      "start": 3678.37,
-      "end": 3762.52
+      "start": 4112.89,
+      "end": 4174.39
     },
     {
       "index": 12,
-      "start": 4111.75,
-      "end": 4177.34
+      "start": 4446.11,
+      "end": 4518.41
     },
     {
       "index": 13,
-      "start": 4444.74,
-      "end": 4520.03
+      "start": 4827.1,
+      "end": 4860.86
     },
     {
       "index": 14,
-      "start": 4824.26,
-      "end": 4863.36
+      "start": 5066.52,
+      "end": 5147.16
     },
     {
       "index": 15,
-      "start": 5061.22,
-      "end": 5151.52
+      "start": 5477.34,
+      "end": 5644.6
     },
     {
       "index": 16,
-      "start": 5476.39,
-      "end": 5647.42
+      "start": 5986.01,
+      "end": 6068.57
     },
     {
       "index": 17,
-      "start": 5985.06,
-      "end": 6071.93
-    },
-    {
-      "index": 18,
-      "start": 6467.78,
-      "end": 6575.39
+      "start": 6469.15,
+      "end": 6572.83
     }
   ],
   "segments": [
     {
-      "start": 2.44,
-      "end": 8.42,
+      "start": 3.39,
+      "end": 7.05,
       "text": "Ciężko na sercu"
     },
     {
-      "start": 290.73,
-      "end": 301.93,
-      "text": "Dobry wieczór Państwu, kłania się Jarek Szubrycht, autor audycji Ciężko na sercu, która umili Wam kolejne dwie godziny ciężkiego żywota."
+      "start": 291.68,
+      "end": 292.7,
+      "text": "Dzień dobry Państwu,"
     },
     {
-      "start": 302.47,
-      "end": 308.07,
-      "text": "Jej wydawcą jest Mariusz Owczarek, zatem witam Was również w jego imieniu."
+      "start": 292.7,
+      "end": 294.12,
+      "text": "kłania się Jarek Szubrycht,"
     },
     {
-      "start": 308.57,
-      "end": 313.89,
-      "text": "Słuchacze Ciężko na sercu wiedzą doskonale, że lubię audycje tematyczne."
+      "start": 294.12,
+      "end": 296.23,
+      "text": "autor audycji Ciężko"
     },
     {
-      "start": 313.89,
-      "end": 320.91,
-      "text": "Nie mam w zwyczaju puszczać Wam tu piosenek, których nie łączy jakaś choćby mętna myśl."
+      "start": 296.23,
+      "end": 298.33,
+      "text": "na sercu, która umili"
     },
     {
-      "start": 321.39,
-      "end": 333.03,
-      "text": "Kiedy zastanawiałem się, w jaką drogę zabiorę Was tym razem, przyszedł mi do głowy pomysł oczywisty, choć przyznaję, może trochę spóźniony."
+      "start": 298.33,
+      "end": 299.6,
+      "text": "Wam kolejne dwie"
     },
     {
-      "start": 333.47,
-      "end": 336.73,
-      "text": "Dzisiaj zabiorę Was w podróż do Itaki."
+      "start": 299.6,
+      "end": 301.05,
+      "text": "godziny ciężkiego"
     },
     {
-      "start": 337.11,
-      "end": 351.83,
-      "text": "Odyseja, film Christophera Nolana to przecież nie tylko największy hit filmowy sezonu, ale też powód do długich, czasem mądrych, a czasem głupich dyskusji, sporów i karczemnych awantur."
+      "start": 301.05,
+      "end": 301.94,
+      "text": "żywota."
     },
     {
-      "start": 352.05,
-      "end": 360.21,
-      "text": "Oto jak powinno się przedstawiać i interpretować dzieło Homera, czy szerzej kulturę starożytnej Grecji."
+      "start": 302.48,
+      "end": 303.21,
+      "text": "Jej wydawcą jest"
     },
     {
-      "start": 360.21,
-      "end": 372.71,
-      "text": "A przecież współczesny grecki metal też garściami czerpie z tego dziedzictwa, nie tylko grecki zresztą i nim również, choć w mniejszym stopniu dziś się zajmiemy."
+      "start": 303.21,
+      "end": 305.2,
+      "text": "Mariusz Owczarek, zatem"
     },
     {
-      "start": 372.95,
-      "end": 380.43,
-      "text": "Powitała nas grupa Jos Iria, piosenką zatytułowaną Koniec znanej cywilizacji."
+      "start": 305.2,
+      "end": 306.72,
+      "text": "witam Was również w"
     },
     {
-      "start": 380.93,
-      "end": 386.25,
-      "text": "A więc taką, która mogłaby śmiało lecieć na napisach końcowych Odysei."
+      "start": 306.72,
+      "end": 308.08,
+      "text": "jego imieniu."
     },
     {
-      "start": 386.25,
-      "end": 402.89,
-      "text": "Jos Iria to zespół stosunkowo młody, bo pierwszą dużą płytę nagrał raptem pięć lat temu, ale kapitanem tego okrętu jest przecież niejaki Jim Mutilator, a więc weteran greckiej sceny."
+      "start": 308.56,
+      "end": 309.51,
+      "text": "Słuchacze Ciężko na"
     },
     {
-      "start": 403.31,
-      "end": 407.39,
-      "text": "Człowiek z pierwszych składów Rotting Christ i Varatron."
+      "start": 309.51,
+      "end": 311.41,
+      "text": "sercu wiedzą doskonale,"
     },
     {
-      "start": 407.39,
-      "end": 430.21,
-      "text": "Zatem nic dziwnego, że i dzisiaj na tegorocznym albumie Gone with the Devil Dimitris Patsuris, bo tak naprawdę się nazywa, potrafił połączyć to, co najlepsze w helleńskim black metalu od jego zarania z tym, co nowe, bo w końcu mamy 2026 rok."
+      "start": 311.41,
+      "end": 312.8,
+      "text": "że lubię audycje"
     },
     {
-      "start": 430.21,
-      "end": 445.43,
-      "text": "Oczywiście nie wyobrażam sobie, żeby teraz nie zaprezentować tej wyklętej trójcy greckiego black metalu, która stworzyła tę scenę, czyli grupy Varatron, Rotting Christ i Necromantia."
+      "start": 312.8,
+      "end": 313.88,
+      "text": "tematyczne."
     },
     {
-      "start": 445.43,
-      "end": 456.19,
-      "text": "Na początek niech będzie nekromantia, która wielkiej międzynarodowej kariery nie zrobiła, choć była zespołem i znakomitym i oryginalnym."
+      "start": 314.44,
+      "end": 315.23,
+      "text": "Nie mam w zwyczaju"
     },
     {
-      "start": 456.71,
-      "end": 461.23,
-      "text": "Posłuchajmy piosenki o wilku spuszczonym z łańcucha."
+      "start": 315.23,
+      "end": 317.3,
+      "text": "puszczać Wam tu piosenek,"
     },
     {
-      "start": 756.29,
+      "start": 317.3,
+      "end": 318.68,
+      "text": "których nie łączy"
+    },
+    {
+      "start": 318.68,
+      "end": 320.1,
+      "text": "jakaś choćby mętna"
+    },
+    {
+      "start": 320.1,
+      "end": 320.9,
+      "text": "myśl."
+    },
+    {
+      "start": 320.9,
+      "end": 322.73,
+      "text": "Kiedy zastanawiałem"
+    },
+    {
+      "start": 322.73,
+      "end": 324.24,
+      "text": "się, w jaką drogę"
+    },
+    {
+      "start": 324.24,
+      "end": 325.57,
+      "text": "zabiorę Was tym"
+    },
+    {
+      "start": 325.57,
+      "end": 327.51,
+      "text": "razem, przyszedł mi"
+    },
+    {
+      "start": 327.51,
+      "end": 329.9,
+      "text": "do głowy pomysł oczywisty,"
+    },
+    {
+      "start": 329.9,
+      "end": 331.11,
+      "text": "choć przyznaję,"
+    },
+    {
+      "start": 331.11,
+      "end": 333.02,
+      "text": "może trochę spóźniony."
+    },
+    {
+      "start": 333.46,
+      "end": 334.83,
+      "text": "Dzisiaj zabiorę Was"
+    },
+    {
+      "start": 334.83,
+      "end": 336.72,
+      "text": "w podróż do Itaki."
+    },
+    {
+      "start": 337.32,
+      "end": 337.97,
+      "text": "Odyseja, film"
+    },
+    {
+      "start": 337.97,
+      "end": 339.73,
+      "text": "Christophera Nolana"
+    },
+    {
+      "start": 339.73,
+      "end": 340.99,
+      "text": "to przecież nie"
+    },
+    {
+      "start": 340.99,
+      "end": 342.46,
+      "text": "tylko największy"
+    },
+    {
+      "start": 342.46,
+      "end": 344.4,
+      "text": "hit filmowy sezonu,"
+    },
+    {
+      "start": 344.4,
+      "end": 346.29,
+      "text": "ale też powód do długich,"
+    },
+    {
+      "start": 346.29,
+      "end": 347.65,
+      "text": "czasem mądrych, a"
+    },
+    {
+      "start": 347.65,
+      "end": 349.46,
+      "text": "czasem głupich dyskusji"
+    },
+    {
+      "start": 349.46,
+      "end": 351.01,
+      "text": "sporów i karczemnych"
+    },
+    {
+      "start": 351.01,
+      "end": 352.63,
+      "text": "awantur o to, jak"
+    },
+    {
+      "start": 352.63,
+      "end": 353.54,
+      "text": "powinno się"
+    },
+    {
+      "start": 353.54,
+      "end": 355.13,
+      "text": "przedstawiać i"
+    },
+    {
+      "start": 355.13,
+      "end": 356.68,
+      "text": "interpretować dzieło"
+    },
+    {
+      "start": 356.68,
+      "end": 357.3,
+      "text": "Homera,"
+    },
+    {
+      "start": 357.44,
+      "end": 358.6,
+      "text": "czy szerzej kulturę"
+    },
+    {
+      "start": 358.6,
+      "end": 360.22,
+      "text": "starożytnej Grecji."
+    },
+    {
+      "start": 360.64,
+      "end": 362.28,
+      "text": "A przecież współczesny"
+    },
+    {
+      "start": 362.28,
+      "end": 363.44,
+      "text": "grecki metal też"
+    },
+    {
+      "start": 363.44,
+      "end": 364.88,
+      "text": "garściami czerpie z"
+    },
+    {
+      "start": 364.88,
+      "end": 366.36,
+      "text": "tego dziedzictwa,"
+    },
+    {
+      "start": 366.36,
+      "end": 368.25,
+      "text": "nie tylko grecki zresztą"
+    },
+    {
+      "start": 368.25,
+      "end": 369.78,
+      "text": "i nim również, choć"
+    },
+    {
+      "start": 369.78,
+      "end": 371.37,
+      "text": "w mniejszym stopniu"
+    },
+    {
+      "start": 371.37,
+      "end": 372.7,
+      "text": "dziś się zajmiemy."
+    },
+    {
+      "start": 372.7,
+      "end": 374.46,
+      "text": "Powitała nas grupa"
+    },
+    {
+      "start": 374.46,
+      "end": 376.33,
+      "text": "Jos Iria, piosenką"
+    },
+    {
+      "start": 376.33,
+      "end": 378.31,
+      "text": "zatytułowaną Koniec"
+    },
+    {
+      "start": 378.31,
+      "end": 380.42,
+      "text": "znanej cywilizacji,"
+    },
+    {
+      "start": 380.42,
+      "end": 381.87,
+      "text": "a więc taką, która"
+    },
+    {
+      "start": 381.87,
+      "end": 383.58,
+      "text": "mogłaby śmiało lecieć"
+    },
+    {
+      "start": 383.58,
+      "end": 385.3,
+      "text": "na napisach końcowych"
+    },
+    {
+      "start": 385.3,
+      "end": 386.24,
+      "text": "Odysei."
+    },
+    {
+      "start": 386.24,
+      "end": 387.8,
+      "text": "Jos Iria to zespół"
+    },
+    {
+      "start": 387.8,
+      "end": 389.57,
+      "text": "stosunkowo młody,"
+    },
+    {
+      "start": 389.57,
+      "end": 391.57,
+      "text": "bo pierwszą dużą płytę"
+    },
+    {
+      "start": 391.57,
+      "end": 393.24,
+      "text": "nagrał raptem pięć"
+    },
+    {
+      "start": 393.24,
+      "end": 394.36,
+      "text": "lat temu,"
+    },
+    {
+      "start": 395.1,
+      "end": 396,
+      "text": "ale kapitanem tego"
+    },
+    {
+      "start": 396,
+      "end": 397.83,
+      "text": "okrętu jest przecież"
+    },
+    {
+      "start": 397.83,
+      "end": 399.98,
+      "text": "niejaki Jim Mutilator,"
+    },
+    {
+      "start": 399.98,
+      "end": 402.02,
+      "text": "a więc weteran greckiej"
+    },
+    {
+      "start": 402.02,
+      "end": 402.88,
+      "text": "sceny,"
+    },
+    {
+      "start": 403.28,
+      "end": 404.52,
+      "text": "człowiek z pierwszych"
+    },
+    {
+      "start": 404.52,
+      "end": 405.73,
+      "text": "składów Rotting"
+    },
+    {
+      "start": 405.73,
+      "end": 407.38,
+      "text": "Christ i Varatron."
+    },
+    {
+      "start": 407.38,
+      "end": 409.48,
+      "text": "Zatem nic dziwnego,"
+    },
+    {
+      "start": 409.48,
+      "end": 411.68,
+      "text": "że i dzisiaj należy,"
+    },
+    {
+      "start": 411.68,
+      "end": 412.51,
+      "text": "Na tegorocznym"
+    },
+    {
+      "start": 412.51,
+      "end": 413.49,
+      "text": "albumie Gone with"
+    },
+    {
+      "start": 413.49,
+      "end": 415,
+      "text": "the Devil, Dimitris"
+    },
+    {
+      "start": 415,
+      "end": 416.6,
+      "text": "Patsuris, bo tak"
+    },
+    {
+      "start": 416.6,
+      "end": 418.44,
+      "text": "naprawdę się nazywa,"
+    },
+    {
+      "start": 418.44,
+      "end": 419.76,
+      "text": "potrafił połączyć"
+    },
+    {
+      "start": 419.76,
+      "end": 421.08,
+      "text": "to, co najlepsze w"
+    },
+    {
+      "start": 421.08,
+      "end": 422.35,
+      "text": "helleńskim black"
+    },
+    {
+      "start": 422.35,
+      "end": 424.69,
+      "text": "metalu, od jego zarania"
+    },
+    {
+      "start": 424.69,
+      "end": 426.63,
+      "text": "z tym, co nowe, bo"
+    },
+    {
+      "start": 426.63,
+      "end": 429.33,
+      "text": "w końcu mamy 2026"
+    },
+    {
+      "start": 429.33,
+      "end": 430.18,
+      "text": "rok."
+    },
+    {
+      "start": 430.64,
+      "end": 432.64,
+      "text": "Oczywiście nie wyobrażam"
+    },
+    {
+      "start": 432.64,
+      "end": 434.07,
+      "text": "sobie, żeby teraz"
+    },
+    {
+      "start": 434.07,
+      "end": 435.54,
+      "text": "nie zaprezentować"
+    },
+    {
+      "start": 435.54,
+      "end": 437.04,
+      "text": "tej wyklętej trójcy"
+    },
+    {
+      "start": 437.04,
+      "end": 439.09,
+      "text": "greckiego black metalu,"
+    },
+    {
+      "start": 439.09,
+      "end": 440.57,
+      "text": "która stworzyła tę"
+    },
+    {
+      "start": 440.57,
+      "end": 441.9,
+      "text": "scenę, czyli grup"
+    },
+    {
+      "start": 441.9,
+      "end": 443.34,
+      "text": "Varatron, Rotten"
+    },
+    {
+      "start": 443.34,
+      "end": 445.42,
+      "text": "Christ i Necromantia."
+    },
+    {
+      "start": 445.42,
+      "end": 446.69,
+      "text": "Na początek niech"
+    },
+    {
+      "start": 446.69,
+      "end": 448.29,
+      "text": "będzie necromantia,"
+    },
+    {
+      "start": 448.29,
+      "end": 449.4,
+      "text": "która wielkiej"
+    },
+    {
+      "start": 449.4,
+      "end": 451.28,
+      "text": "międzynarodowej kariery"
+    },
+    {
+      "start": 451.28,
+      "end": 452.73,
+      "text": "nie zrobiła, choć"
+    },
+    {
+      "start": 452.73,
+      "end": 454.7,
+      "text": "była zespołem i znakomitym,"
+    },
+    {
+      "start": 454.7,
+      "end": 456.2,
+      "text": "i oryginalnym."
+    },
+    {
+      "start": 456.72,
+      "end": 458.13,
+      "text": "Posłuchajmy piosenki"
+    },
+    {
+      "start": 458.13,
+      "end": 459.97,
+      "text": "o wilku spuszczonym"
+    },
+    {
+      "start": 459.97,
+      "end": 461.24,
+      "text": "z łańcucha."
+    },
+    {
+      "start": 758.81,
+      "end": 760.36,
+      "text": "ze swojej pierwszej"
+    },
+    {
+      "start": 760.36,
+      "end": 761.31,
+      "text": "dużej płyty"
+    },
+    {
+      "start": 761.31,
+      "end": 762.85,
+      "text": "Crossing the Fiery"
+    },
+    {
+      "start": 762.85,
+      "end": 766.83,
+      "text": "Path z 1993 roku."
+    },
+    {
+      "start": 767.45,
+      "end": 768.57,
+      "text": "Rzecz kultowa, ale"
+    },
+    {
+      "start": 768.57,
+      "end": 769.83,
+      "text": "w tamtym czasie"
+    },
+    {
+      "start": 769.83,
+      "end": 771.72,
+      "text": "uwagę świata ściągała"
+    },
+    {
+      "start": 771.72,
+      "end": 773.27,
+      "text": "już łuna na niebie"
+    },
+    {
+      "start": 773.27,
       "end": 774.29,
-      "text": "To była nekromantia ze swojej pierwszej dużej płyty Crossing the Fiery Path z 1993 roku. Rzecz kultowa, ale w tamtym czasie uwagę świata ściągała już łuna na niebie północy."
+      "text": "północy."
     },
     {
-      "start": 774.29,
-      "end": 795.29,
-      "text": "I chociaż Grecy wymyślili swój zupełnie osobny black metal wcześniej, a już na pewno niezależnie od Norwegów i choć było to dobre, nie byli w stanie konkurować z tamtejszą sceną, choćby ze względu na to, że nie działy się u nich te wszystkie pozamuzyczne ekscesy,"
+      "start": 774.63,
+      "end": 776.09,
+      "text": "I chociaż Grecy wymyślili"
     },
     {
-      "start": 795.29,
+      "start": 776.09,
+      "end": 777.56,
+      "text": "swój zupełnie osobny"
+    },
+    {
+      "start": 777.56,
+      "end": 778.38,
+      "text": "black metal"
+    },
+    {
+      "start": 778.38,
+      "end": 779.39,
+      "text": "wcześniej,"
+    },
+    {
+      "start": 779.93,
+      "end": 781.74,
+      "text": "a już na pewno niezależnie"
+    },
+    {
+      "start": 781.74,
+      "end": 782.87,
+      "text": "od Norwegów,"
+    },
+    {
+      "start": 782.87,
+      "end": 783.99,
+      "text": "i choć było to"
+    },
+    {
+      "start": 783.99,
+      "end": 785.62,
+      "text": "dobre, nie byli w"
+    },
+    {
+      "start": 785.62,
+      "end": 787.21,
+      "text": "stanie konkurować z"
+    },
+    {
+      "start": 787.21,
+      "end": 788.73,
+      "text": "tamtejszą sceną,"
+    },
+    {
+      "start": 788.81,
+      "end": 790.24,
+      "text": "choćby ze względu"
+    },
+    {
+      "start": 790.24,
+      "end": 791.86,
+      "text": "na to, że nie działy"
+    },
+    {
+      "start": 791.86,
+      "end": 792.85,
+      "text": "się u nich te"
+    },
+    {
+      "start": 792.85,
+      "end": 794.85,
+      "text": "wszystkie pozamuzyczne"
+    },
+    {
+      "start": 794.85,
+      "end": 795.93,
+      "text": "ekscesy,"
+    },
+    {
+      "start": 796.31,
+      "end": 797.55,
+      "text": "które co prawda kilku"
+    },
+    {
+      "start": 797.55,
+      "end": 799.06,
+      "text": "Norwegom skróciły"
+    },
+    {
+      "start": 799.06,
+      "end": 800.43,
+      "text": "życiorys o parę lat"
+    },
+    {
+      "start": 800.43,
+      "end": 801.41,
+      "text": "od siatki,"
+    },
+    {
+      "start": 801.55,
+      "end": 803.5,
+      "text": "kilku zresztą skróciły"
+    },
+    {
+      "start": 803.5,
+      "end": 804.61,
+      "text": "na zawsze,"
+    },
+    {
+      "start": 804.89,
+      "end": 806.07,
+      "text": "ale za to zrobiły"
+    },
+    {
+      "start": 806.07,
+      "end": 807.89,
+      "text": "tej scenie taki PR,"
+    },
+    {
+      "start": 807.89,
+      "end": 810.29,
+      "text": "taką obrosły legendą,"
+    },
+    {
+      "start": 810.29,
+      "end": 812.13,
+      "text": "że już drugie pokolenie"
+    },
+    {
+      "start": 812.13,
+      "end": 813.4,
+      "text": "fanów ciągnie do"
+    },
+    {
+      "start": 813.4,
+      "end": 815.16,
+      "text": "tego jak niedźwiedzia"
+    },
+    {
+      "start": 815.16,
       "end": 816.35,
-      "text": "które co prawda kilku Norwegom skróciły życiorys o parę lat odsiadki, kilku zresztą skróciły na zawsze, ale za to zrobiły tej scenie taki PR, taką obrosły legendą, że już drugie pokolenie fanów ciągnie do tego jak niedźwiedzia do pasieki."
+      "text": "do pasieki."
     },
     {
-      "start": 816.35,
+      "start": 816.77,
+      "end": 818.33,
+      "text": "A co Grekom pozostało?"
+    },
+    {
+      "start": 818.67,
+      "end": 819.91,
+      "text": "Cóż, po prostu"
+    },
+    {
+      "start": 819.91,
+      "end": 821.42,
+      "text": "robić swoje, jak"
+    },
+    {
+      "start": 821.42,
+      "end": 822.47,
+      "text": "Varatron."
+    },
+    {
+      "start": 822.97,
+      "end": 824.09,
+      "text": "Zespół świetny,"
+    },
+    {
+      "start": 824.09,
+      "end": 826.12,
+      "text": "konsekwentnie grający"
+    },
+    {
+      "start": 826.12,
+      "end": 828.17,
+      "text": "własną muzykę na małą"
+    },
+    {
+      "start": 828.17,
+      "end": 829.03,
+      "text": "skalę,"
+    },
+    {
+      "start": 829.21,
+      "end": 830.78,
+      "text": "ale za to z wielkim"
+    },
+    {
+      "start": 830.78,
       "end": 832.01,
-      "text": "A co Grekom pozostało? Cóż, po prostu robić swoje, jak Varatron. Zespół świetny, konsekwentnie grający własną muzykę na małą skalę, ale za to z wielkim zapałem."
+      "text": "zapałem."
     },
     {
-      "start": 832.35,
-      "end": 854.63,
-      "text": "Nazwa zespołu oznacza podobno po grecku bardzo głęboki wąwóz, no więc Varatron człapie tym wąwózem metalowego undergroundu już od 1988 roku, rzadko wystawiając głowy na powierzchnię, ale do nich tam warto czasem zajrzeć."
+      "start": 832.69,
+      "end": 834,
+      "text": "Nazwa zespołu oznacza"
     },
     {
-      "start": 1123.52,
-      "end": 1134.16,
-      "text": "To był Varatron z mini-albumu The Lament of Gods, wydanego przez naszą polską firmę Pagan Records w 1999 roku."
+      "start": 834,
+      "end": 835.69,
+      "text": "podobno po grecku"
     },
     {
-      "start": 1134.68,
-      "end": 1142.22,
-      "text": "Nie zawsze Varatron brzmi aż tak romantycznie, chociaż to jest w sumie jedna z ważnych cech greckiego black metalu,"
+      "start": 835.69,
+      "end": 837.87,
+      "text": "bardzo głęboki wąwóz,"
     },
     {
-      "start": 1142.42,
-      "end": 1151.56,
-      "text": "że nie jest, nigdy nie był on aż tak radykalnie wściekły, szybki i brutalny jak wiele rzeczy ze Skandynawii."
+      "start": 837.87,
+      "end": 839.18,
+      "text": "No więc Varatron"
     },
     {
-      "start": 1151.56,
-      "end": 1160.76,
-      "text": "To pewnie kwestia innego temperamentu, innych też tradycji muzycznych i innej kultury w szerokim tego słowa znaczeniu."
+      "start": 839.18,
+      "end": 840.74,
+      "text": "człapie tym wąwozem"
     },
     {
-      "start": 1161.32,
-      "end": 1170.12,
-      "text": "Weźmy taki Rotten Christ, najbardziej chyba popularny na świecie grecki zespół metalowy, wielbiony również w Polsce."
+      "start": 840.74,
+      "end": 841.68,
+      "text": "metalowego"
     },
     {
-      "start": 1171.12,
-      "end": 1179.4,
-      "text": "Założył go w odległym 1984 roku, wspomniany już dziś Jim Mutilator."
+      "start": 841.68,
+      "end": 843.79,
+      "text": "undergroundu już od"
     },
     {
-      "start": 1179.4,
-      "end": 1188.04,
-      "text": "A chwilę później dołączyli bracia Tollis, którzy od tamtej pory do dziś w Rotten Christ rządzą i dzielą."
+      "start": 843.79,
+      "end": 847.03,
+      "text": "1988 roku,"
     },
     {
-      "start": 1188.28,
-      "end": 1191.44,
-      "text": "Bo Jim odszedł jakieś 30 lat temu."
+      "start": 847.53,
+      "end": 848.73,
+      "text": "rzadko wystawiając"
     },
     {
-      "start": 1192,
-      "end": 1205.2,
-      "text": "Początkowo Rotten Christ grali grind, nie black metal, ale już na demówce z 1989 roku Satana Stedeum obrali kierunek na piekło."
+      "start": 848.73,
+      "end": 850.97,
+      "text": "głowy na powierzchnię."
     },
     {
-      "start": 1205.78,
-      "end": 1209.46,
-      "text": "Nazwy nie zmienili, na dobre i złe."
+      "start": 851.33,
+      "end": 852.34,
+      "text": "Ale do nich tam"
     },
     {
-      "start": 1209.62,
-      "end": 1217.82,
-      "text": "Z jednej strony trudno jej od razu nie zapamiętać, a z drugiej, gdyby mieli inną, pewnie zrobiliby jeszcze większą karierę,"
+      "start": 852.34,
+      "end": 853.27,
+      "text": "warto."
     },
     {
-      "start": 1217.98,
-      "end": 1223.32,
-      "text": "bo Szyld Rotten Christ niezmiennie budzi kontrowersje i zamyka pewne drzwi."
+      "start": 1123.87,
+      "end": 1125.13,
+      "text": "To był Varatron z"
     },
     {
-      "start": 1223.52,
-      "end": 1229.86,
-      "text": "Skutkował wieloma protestami w różnych zakątkach globu, odwoływaniem koncertów ITP i TD."
+      "start": 1125.13,
+      "end": 1126.84,
+      "text": "mini albumu The Lament"
     },
     {
-      "start": 1230.74,
-      "end": 1236.42,
-      "text": "A przecież Rotten Christ od dawna nie jest groźnym, bluźnierczym zespołem."
+      "start": 1126.84,
+      "end": 1128.49,
+      "text": "of Gods, wydanego"
     },
     {
-      "start": 1236.52,
-      "end": 1243.16,
-      "text": "Jeżeli to w ogóle jeszcze jest black metal, to przystępny, familijny i bezpieczny."
+      "start": 1128.49,
+      "end": 1130.18,
+      "text": "przez naszą polską"
     },
     {
-      "start": 1243.72,
-      "end": 1244.58,
-      "text": "Nie żeby zły."
+      "start": 1130.18,
+      "end": 1131.96,
+      "text": "firmę Pagan Records"
     },
     {
-      "start": 1244.58,
-      "end": 1255.46,
-      "text": "Jest w tym jakość, jest oryginalna myśl, ale cóż, wolę nekromantię i Varatron, jeśli ktoś pyta."
+      "start": 1131.96,
+      "end": 1134.17,
+      "text": "w 1999 roku."
     },
     {
-      "start": 1269.38,
-      "end": 1272.26,
-      "text": "Początkowo Rotten Christ"
+      "start": 1134.69,
+      "end": 1135.56,
+      "text": "Nie zawsze Varatron"
     },
     {
-      "start": 1292.36,
-      "end": 1298.62,
-      "text": "Dziękuje za oglądanie!"
+      "start": 1135.56,
+      "end": 1137.47,
+      "text": "brzmi aż tak romantycznie,"
     },
     {
-      "start": 1516.32,
-      "end": 1524.04,
-      "text": "Za nami Rotting Christ z albumu Sleep of the Angels, ostatniego wydanego w ubiegłym stuleciu."
+      "start": 1137.47,
+      "end": 1138.6,
+      "text": "chociaż to jest w"
     },
     {
-      "start": 1524.18,
-      "end": 1530.14,
-      "text": "Piosenka o tyle ciekawa, że zwykle w tekstach ten zespół używa angielskiego albo greckiego,"
+      "start": 1138.6,
+      "end": 1140.08,
+      "text": "sumie jedna z ważnych"
     },
     {
-      "start": 1530.28,
-      "end": 1536.46,
-      "text": "a tu proszę było trochę po niemiecku i muszę powiedzieć, że fajnie to brzmiało."
+      "start": 1140.08,
+      "end": 1141.08,
+      "text": "cech greckiego"
     },
     {
-      "start": 1536.82,
-      "end": 1543.3,
-      "text": "Powiedziałem wcześniej, że na greckiej scenie black metalowej nie dochodziło do poza muzycznych ekscesów,"
+      "start": 1141.08,
+      "end": 1142.23,
+      "text": "black metalu,"
     },
     {
-      "start": 1543.3,
-      "end": 1547.04,
-      "text": "jak chociażby w Norwegii. Cóż, do czasu."
+      "start": 1142.43,
+      "end": 1143.86,
+      "text": "że nie jest, nigdy"
     },
     {
-      "start": 1547.48,
-      "end": 1556.92,
-      "text": "W 1997 roku pojawił się tam zespół Nair Mataron, który grał black metal bardziej agresywny,"
+      "start": 1143.86,
+      "end": 1146.29,
+      "text": "nie był on aż tak radykalnie"
     },
     {
-      "start": 1557.06,
-      "end": 1562.24,
-      "text": "szybszy od tego, co zwykle proponowali ojcowie założyciele heleńskiej sceny,"
+      "start": 1146.29,
+      "end": 1147.94,
+      "text": "wściekły, szybki i"
     },
     {
-      "start": 1562.52,
-      "end": 1568.84,
-      "text": "ale z elementami nawiązującymi do lokalnego dziedzictwa i dźwiękiem i słowem."
+      "start": 1147.94,
+      "end": 1149.57,
+      "text": "brutalny jak wiele"
     },
     {
-      "start": 1568.84,
-      "end": 1575.92,
-      "text": "Szło im całkiem nieźle. Coraz lepiej mieli nawet kontrakt z francuską wytwórnią Season of Mist,"
+      "start": 1149.57,
+      "end": 1151.97,
+      "text": "rzeczy ze Skandynawii."
     },
     {
-      "start": 1576.3,
-      "end": 1579.12,
-      "text": "ale lider zespołu wybrał inną karierę."
+      "start": 1151.97,
+      "end": 1153.22,
+      "text": "To pewnie kwestia"
     },
     {
-      "start": 1579.42,
-      "end": 1587.52,
-      "text": "Polityczną. Nie tylko polityczną zresztą, bo wraz z innymi prominentnymi członkami skrajnie prawicowej,"
+      "start": 1153.22,
+      "end": 1154.83,
+      "text": "innego temperamentu,"
     },
     {
-      "start": 1587.62,
-      "end": 1593.68,
-      "text": "zdelegalizowanej już zresztą partii Złoty Świt, trafił najpierw do parlamentu,"
+      "start": 1154.83,
+      "end": 1156.24,
+      "text": "innych też tradycji"
     },
     {
-      "start": 1594.16,
-      "end": 1599.54,
-      "text": "a potem do więzienia za kierowanie organizacją przestępczą."
+      "start": 1156.24,
+      "end": 1157.54,
+      "text": "muzycznych i innej"
     },
     {
-      "start": 1600.1,
-      "end": 1604.58,
-      "text": "Wyszedł dwa lata temu i nie jest już aktywny publicznie,"
+      "start": 1157.54,
+      "end": 1158.85,
+      "text": "kultury w szerokim"
     },
     {
-      "start": 1605,
-      "end": 1610.86,
-      "text": "no a jego działalność raczej zaszkodziła zespołowi, niż jak w przypadku Norwegów pomogła."
+      "start": 1158.85,
+      "end": 1160.77,
+      "text": "tego słowa znaczeniu."
     },
     {
-      "start": 1611.36,
-      "end": 1620.88,
-      "text": "Być może, a nawet na pewno, dlatego, że smarkaci Norwedzy siali chaos bez politycznej agendy,"
+      "start": 1161.33,
+      "end": 1162.03,
+      "text": "Weźmy taki Rotten"
     },
     {
-      "start": 1621.46,
-      "end": 1624.22,
-      "text": "po prostu dlatego, że bolał ich świat."
+      "start": 1162.03,
+      "end": 1163.65,
+      "text": "Christ, najbardziej"
     },
     {
-      "start": 1625.08,
-      "end": 1630.6,
-      "text": "Natomiast Złoty Świt przemocą walczył o Białą Grecję,"
+      "start": 1163.65,
+      "end": 1165.19,
+      "text": "chyba popularny na"
     },
     {
-      "start": 1630.74,
-      "end": 1636.3,
-      "text": "organizując pogromy i nawet dopuszczając się politycznego zabójstwa."
+      "start": 1165.19,
+      "end": 1166.6,
+      "text": "świecie grecki zespół"
     },
     {
-      "start": 1636.3,
-      "end": 1642.8,
-      "text": "Ale to wszystko pewnie Państwo, przynajmniej ci, którzy interesują się sprawami międzynarodowymi,"
+      "start": 1166.6,
+      "end": 1168.42,
+      "text": "metalowy, wielbiony"
     },
     {
-      "start": 1643.14,
-      "end": 1646.26,
-      "text": "doskonale pamiętacie z wiadomości."
+      "start": 1168.42,
+      "end": 1170.11,
+      "text": "również w Polsce."
     },
     {
-      "start": 1886.33,
-      "end": 1899.43,
-      "text": "Swoją drogą, cień złotego świtu pada nie tylko na Naer Mataron, nie tylko na tych, co należeli do partii czy do organizowanych przez te partie bojówek."
+      "start": 1171.11,
+      "end": 1172.51,
+      "text": "Założył go w odległym"
     },
     {
-      "start": 1899.75,
-      "end": 1907.57,
-      "text": "Ciekawy jest przypadek ojca Dionizosa Tabakisa, nie mojego ojca, ani nawet nie wujka."
+      "start": 1172.51,
+      "end": 1176.3,
+      "text": "1984 roku, wspomniany"
     },
     {
-      "start": 1907.95,
-      "end": 1914.45,
-      "text": "Tak się każe tytułować, bo jest duchownym, kapłanem greckiego kościoła prawosławnego."
+      "start": 1176.3,
+      "end": 1179.41,
+      "text": "już dziś Jim Mutilator."
     },
     {
-      "start": 1914.45,
-      "end": 1925.51,
-      "text": "Kiedy nie odprawia nabożeństw i nie pochłaniają go obowiązki rodzinne, bo w tym obrządku kapłani mogą zakładać rodziny i Tabakis jest mężem i ojcem."
+      "start": 1179.41,
+      "end": 1181.6,
+      "text": "A chwilę później dołączyli"
     },
     {
-      "start": 1926.35,
-      "end": 1939.09,
-      "text": "Otóż w wolnym czasie ten bogobojny człowiek bierze do ręki ośmiostrunową, bezprogową gitarę i gra na niej swoją własną, ale naprawdę własną muzykę."
+      "start": 1181.6,
+      "end": 1182.93,
+      "text": "bracia Tollis,"
     },
     {
-      "start": 1939.81,
-      "end": 1957.37,
-      "text": "Debiutancki album Tabakisa, wydany wiosną tego roku, nosi tytuł Paradise Metal, a więc rajski metal i rzeczywiście są w tym metalowe wibracje, choć za grosz brutalności nie ma mroku i ciężaru."
+      "start": 1182.93,
+      "end": 1184.65,
+      "text": "którzy od tamtej pory"
     },
     {
-      "start": 1958.27,
-      "end": 1965.49,
-      "text": "Wydawać by się mogło, że Dionysos Tabakis to postać skrajnie odległa od black metalowych radykałów."
+      "start": 1184.65,
+      "end": 1185.94,
+      "text": "do dziś w Rotten"
     },
     {
-      "start": 1965.49,
-      "end": 1979.97,
-      "text": "A jednak niedawno, kiedy zaczął robić międzynarodową karierę, ktoś wyciągnął Tabakisowi, że w 2013 roku poświęcił lokalne biuro właśnie złotego świtu."
+      "start": 1185.94,
+      "end": 1188.05,
+      "text": "Christ rządzą i dzielą,"
     },
     {
-      "start": 1980.63,
-      "end": 1992.53,
-      "text": "Tabakis tłumaczył się, że jest przeciwnikiem nacjonalizmu, tym bardziej, że jego dziadkowie należeli do walczącej z nazistami greckiej partyzantki."
+      "start": 1188.27,
+      "end": 1189.22,
+      "text": "bo Jim odszedł"
     },
     {
-      "start": 1993.43,
-      "end": 2011.31,
-      "text": "A w tym biurze spełniał po prostu swój obowiązek, wysłał go tam biskup czy inny przełożony, więc poświęcił tak jak to robi i robił w przypadku innych budynków publicznych czy firm, które proszą o taką przysługę."
+      "start": 1189.22,
+      "end": 1191.45,
+      "text": "jakieś 30 lat temu."
     },
     {
-      "start": 2011.31,
-      "end": 2030.39,
-      "text": "Nie wszyscy chyba jednak chcą mu wierzyć, a życzliwi znaleźli też wpisy z bloga Tabakisa sprzed kilku lat, w których duchowny wścieka się, że w Grecji zalegalizowano małżeństwa jednopłciowe."
+      "start": 1191.99,
+      "end": 1193.05,
+      "text": "Początkowo Rotten"
     },
     {
-      "start": 2030.39,
-      "end": 2040.19,
-      "text": "Tu z kolei wyjaśniał, że przecież to oficjalne stanowisko jego kościoła niezmienne od dwóch tysięcy lat i on nie może mieć innego."
+      "start": 1193.05,
+      "end": 1194.85,
+      "text": "Christ grali grind,"
     },
     {
-      "start": 2041.31,
-      "end": 2057.05,
-      "text": "Tak czy owak Tabakis, który jeszcze przed chwilą był pupilem progresywnych mediów i festiwali, zaczął znikać z programów tychże, został strącony z raju przynajmniej do czyśćca,"
+      "start": 1194.85,
+      "end": 1196.37,
+      "text": "nie black metal,"
     },
     {
-      "start": 2057.05,
-      "end": 2065.73,
-      "text": "no i nie wiadomo jak dalej potoczy się jego kariera, co nie zmienia faktu, że Paradise Metal poznać warto."
+      "start": 1196.37,
+      "end": 1198.51,
+      "text": "ale już na demówce"
     },
     {
-      "start": 2067.53,
-      "end": 2068.35,
-      "text": "Muzyka"
+      "start": 1198.51,
+      "end": 1200.93,
+      "text": "z 1989 roku,"
     },
     {
-      "start": 2259.65,
-      "end": 2281.03,
-      "text": "No ale dość tej polityki, choć warto pamiętać, że jeżeli wydaje nam się, że Polska jest krajem politycznie podzielonym, właściwie nie wydaje się, ona oczywiście taka jest, to w Grecji te podziały są o wiele bardziej dramatyczne i ich przełożenie na codzienność brutalniejsze."
+      "start": 1201.09,
+      "end": 1203.19,
+      "text": "satana stedeum, obrali"
     },
     {
-      "start": 2281.03,
-      "end": 2290.19,
-      "text": "Zatem nic dziwnego, że znajduje to też odbicie w muzyce oraz w postawach i losach samych muzyków."
+      "start": 1203.19,
+      "end": 1205.21,
+      "text": "kierunek na piekło."
     },
     {
-      "start": 2290.19,
-      "end": 2311.67,
-      "text": "Idźmy dalej. Na pola elizejskie. Świetnie zapowiadał się zespół The Elysian Fields. I nie, nie chodzi tu o te pola elizejskie w Paryżu, ale o oryginalne, jedynie słuszne, czyli tę część Hadesu, którą zamieszkują po śmierci dusze dobrych ludzi."
+      "start": 1205.85,
+      "end": 1207.55,
+      "text": "Nazwy nie zmienili,"
     },
     {
-      "start": 2311.67,
-      "end": 2335.17,
-      "text": "Niby mało. Black metalowa nazwa, ale The Elysian Fields, właśnie black metal, trochę wymieszany z death metalem, grali od swoich chlubnych początków w połowie lat dziewięćdziesiątych i ponoć do dziś grają, choć w ostatnich latach niewiele o nich słychać, a przynajmniej do mnie niewiele dociera."
+      "start": 1207.55,
+      "end": 1209.45,
+      "text": "na dobre i złe."
     },
     {
-      "start": 2335.17,
-      "end": 2343.65,
-      "text": "Tymczasem proponuje powrót do drugiej płyty grupy, czyli My, Oświeceni z dziewięćdziesiątego ósmego roku."
+      "start": 1209.63,
+      "end": 1210.49,
+      "text": "Z jednej strony"
     },
     {
-      "start": 2644.04,
-      "end": 2659.18,
-      "text": "Nightfall to bez wątpienia jeden z najciekawszych i najbardziej oryginalnych greckich zespołów i jak to z wiecznie poszukującymi oryginałami bywa, niekoniecznie służy to ich karierze."
+      "start": 1210.49,
+      "end": 1211.7,
+      "text": "trudno jej od razu"
     },
     {
-      "start": 2659.18,
-      "end": 2680.58,
-      "text": "Zespół prowadzony przez niestrudzonego Eftimisa Karadimasa. Meandrował już od black metalu po death metal z gotykiem po drodze, ale nigdy nie wykonywał muzyki czystej gatunkowo. Zawsze była to ich własna wizja i zawsze była w tym jakość."
+      "start": 1211.7,
+      "end": 1212.99,
+      "text": "nie zapamiętać,"
     },
     {
-      "start": 2680.58,
-      "end": 2704.98,
-      "text": "Od płyty Parade into Centuries z 92 roku po najnowszą sprzed roku, czyli Children of Eve. A przed nami utwór ciekawostka. Nie tylko dlatego, że jest hołdem dla Diamandy Gala z wspaniałej wokalistki greckiego pochodzenia, ale dlatego, że jest hołdem o bardzo erotycznym charakterze."
+      "start": 1213.43,
+      "end": 1214.2,
+      "text": "a z drugiej, gdyby"
     },
     {
-      "start": 2704.98,
-      "end": 2713.9,
-      "text": "No ale ta cielesność, ta zmysłowość to też przecież część heleńskiego, antycznego dziedzictwa."
+      "start": 1214.2,
+      "end": 1215.51,
+      "text": "mieli inną, pewnie"
     },
     {
-      "start": 2713.9,
-      "end": 2717.98,
-      "text": "Muzyka"
+      "start": 1215.51,
+      "end": 1216.63,
+      "text": "zrobiliby jeszcze"
     },
     {
-      "start": 2979.08,
-      "end": 2988.68,
-      "text": "On Torns I Lay, to również zespół, którego karierę liczymy już w dekadach, zasłużony i godny szacunku."
+      "start": 1216.63,
+      "end": 1217.83,
+      "text": "większą karierę,"
     },
     {
-      "start": 2989.66,
-      "end": 2996.44,
-      "text": "Do mnie nie trafia już tak jak choćby Nightfall, bo jednak zbyt miękko i łagodnie."
+      "start": 1217.99,
+      "end": 1218.96,
+      "text": "bo Szyld Rotten"
     },
     {
-      "start": 2997.22,
-      "end": 3005.9,
-      "text": "Ale jeśli ktoś lubi smak tego gęstego, cierpkiego wywaru z death i doom metalu oraz rocka gotyckiego,"
+      "start": 1218.96,
+      "end": 1220.22,
+      "text": "Christ niezmiennie"
     },
     {
-      "start": 3005.9,
-      "end": 3017.3,
-      "text": "to znajdzie tu coś dla siebie. Zdjąłem z półki płytę EgoCentric sprzed ponad dwóch dekad, żeby ją dzisiaj puścić i tak to brzmi."
+      "start": 1220.22,
+      "end": 1221.59,
+      "text": "budzi kontrowersje"
     },
     {
-      "start": 3017.3,
-      "end": 3019.42,
-      "text": "Muzyka"
+      "start": 1221.59,
+      "end": 1223.31,
+      "text": "i zamyka pewne drzwi."
     },
     {
-      "start": 3327.06,
-      "end": 3333.64,
-      "text": "Jeżeli chodzi o klimaty z Grecji, znacznie bardziej przekonuje mnie sceptic flash."
+      "start": 1223.51,
+      "end": 1224.51,
+      "text": "Skutkował wieloma"
     },
     {
-      "start": 3334.4,
+      "start": 1224.51,
+      "end": 1225.34,
+      "text": "protestami w"
+    },
+    {
+      "start": 1225.34,
+      "end": 1226.55,
+      "text": "różnych zakątkach"
+    },
+    {
+      "start": 1226.55,
+      "end": 1227.15,
+      "text": "globu,"
+    },
+    {
+      "start": 1227.25,
+      "end": 1228.92,
+      "text": "odwoływaniem koncertów"
+    },
+    {
+      "start": 1228.92,
+      "end": 1229.99,
+      "text": "itp. itd."
+    },
+    {
+      "start": 1230.71,
+      "end": 1231.49,
+      "text": "A przecież Rotten"
+    },
+    {
+      "start": 1231.49,
+      "end": 1233.09,
+      "text": "Christ od dawna nie"
+    },
+    {
+      "start": 1233.09,
+      "end": 1235.44,
+      "text": "jest groźnym, bluźnierczym"
+    },
+    {
+      "start": 1235.44,
+      "end": 1236.43,
+      "text": "zespołem."
+    },
+    {
+      "start": 1236.53,
+      "end": 1237.49,
+      "text": "Jeżeli to w ogóle"
+    },
+    {
+      "start": 1237.49,
+      "end": 1238.72,
+      "text": "jeszcze jest black"
+    },
+    {
+      "start": 1238.72,
+      "end": 1240.57,
+      "text": "metal, to przystępny,"
+    },
+    {
+      "start": 1240.57,
+      "end": 1243.15,
+      "text": "familijny i bezpieczny."
+    },
+    {
+      "start": 1243.15,
+      "end": 1243.87,
+      "text": "Nie."
+    },
+    {
+      "start": 1243.87,
+      "end": 1245.19,
+      "text": "Nie, żeby zły. Jest"
+    },
+    {
+      "start": 1245.19,
+      "end": 1247.69,
+      "text": "w tym jakość, jest"
+    },
+    {
+      "start": 1247.69,
+      "end": 1250.19,
+      "text": "oryginalna myśl,"
+    },
+    {
+      "start": 1250.19,
+      "end": 1252.88,
+      "text": "ale cóż, wolę nekromantię"
+    },
+    {
+      "start": 1252.88,
+      "end": 1254.36,
+      "text": "i waratron, jeśli"
+    },
+    {
+      "start": 1254.36,
+      "end": 1255.45,
+      "text": "ktoś pyta."
+    },
+    {
+      "start": 1516.89,
+      "end": 1517.88,
+      "text": "Za nami Rotting"
+    },
+    {
+      "start": 1517.88,
+      "end": 1519.07,
+      "text": "Christ z albumu"
+    },
+    {
+      "start": 1519.07,
+      "end": 1520.77,
+      "text": "Sleep of the Angels,"
+    },
+    {
+      "start": 1520.77,
+      "end": 1522.28,
+      "text": "ostatniego wydanego"
+    },
+    {
+      "start": 1522.28,
+      "end": 1524.03,
+      "text": "w ubiegłym stuleciu."
+    },
+    {
+      "start": 1524.03,
+      "end": 1525,
+      "text": "Piosenka o tyle"
+    },
+    {
+      "start": 1525,
+      "end": 1526.25,
+      "text": "ciekawa, że zwykle"
+    },
+    {
+      "start": 1526.25,
+      "end": 1527.57,
+      "text": "w tekstach ten zespół"
+    },
+    {
+      "start": 1527.57,
+      "end": 1528.83,
+      "text": "używa angielskiego"
+    },
+    {
+      "start": 1528.83,
+      "end": 1530.15,
+      "text": "albo greckiego,"
+    },
+    {
+      "start": 1530.29,
+      "end": 1531.45,
+      "text": "a tu proszę, było"
+    },
+    {
+      "start": 1531.45,
+      "end": 1532.92,
+      "text": "trochę po niemiecku"
+    },
+    {
+      "start": 1532.92,
+      "end": 1534.56,
+      "text": "i muszę powiedzieć,"
+    },
+    {
+      "start": 1534.56,
+      "end": 1536.45,
+      "text": "że fajnie to brzmiało."
+    },
+    {
+      "start": 1536.77,
+      "end": 1537.34,
+      "text": "Powiedziałem"
+    },
+    {
+      "start": 1537.34,
+      "end": 1538.47,
+      "text": "wcześniej, że na"
+    },
+    {
+      "start": 1538.47,
+      "end": 1539.51,
+      "text": "greckiej scenie"
+    },
+    {
+      "start": 1539.51,
+      "end": 1540.83,
+      "text": "black metalowej nie"
+    },
+    {
+      "start": 1540.83,
+      "end": 1541.89,
+      "text": "dochodziło do poza"
+    },
+    {
+      "start": 1541.89,
+      "end": 1543.31,
+      "text": "muzycznych ekscesów,"
+    },
+    {
+      "start": 1543.39,
+      "end": 1544.24,
+      "text": "jak chociażby w"
+    },
+    {
+      "start": 1544.24,
+      "end": 1545.93,
+      "text": "Norwegii. Cóż, do"
+    },
+    {
+      "start": 1545.93,
+      "end": 1547.03,
+      "text": "czasu."
+    },
+    {
+      "start": 1547.03,
+      "end": 1549.99,
+      "text": "W 1997 roku pojawił"
+    },
+    {
+      "start": 1549.99,
+      "end": 1551.98,
+      "text": "się tam zespół Nair"
+    },
+    {
+      "start": 1551.98,
+      "end": 1554.1,
+      "text": "Mataron, który grał"
+    },
+    {
+      "start": 1554.1,
+      "end": 1555.22,
+      "text": "black metal"
+    },
+    {
+      "start": 1555.22,
+      "end": 1556.93,
+      "text": "bardziej agresywny,"
+    },
+    {
+      "start": 1557.05,
+      "end": 1558.21,
+      "text": "szybszy od tego, co"
+    },
+    {
+      "start": 1558.21,
+      "end": 1559.5,
+      "text": "zwykle proponowali"
+    },
+    {
+      "start": 1559.5,
+      "end": 1560.84,
+      "text": "ojcowie założyciele"
+    },
+    {
+      "start": 1560.84,
+      "end": 1562.23,
+      "text": "heleńskiej sceny,"
+    },
+    {
+      "start": 1562.53,
+      "end": 1563.54,
+      "text": "ale z elementami"
+    },
+    {
+      "start": 1563.54,
+      "end": 1565.8,
+      "text": "nawiązującymi do lokalnego"
+    },
+    {
+      "start": 1565.8,
+      "end": 1567.77,
+      "text": "dziedzictwa i dźwiękiem"
+    },
+    {
+      "start": 1567.77,
+      "end": 1568.81,
+      "text": "i słowem."
+    },
+    {
+      "start": 1569.39,
+      "end": 1571.02,
+      "text": "Szło im całkiem nieźle."
+    },
+    {
+      "start": 1571.02,
+      "end": 1572.21,
+      "text": "Coraz lepiej mieli"
+    },
+    {
+      "start": 1572.21,
+      "end": 1574.04,
+      "text": "nawet kontrakt z francuską"
+    },
+    {
+      "start": 1574.04,
+      "end": 1575.74,
+      "text": "wytwórnią Season of"
+    },
+    {
+      "start": 1575.74,
+      "end": 1575.91,
+      "text": "Mist,"
+    },
+    {
+      "start": 1575.91,
+      "end": 1577.27,
+      "text": "ale lider zespołu"
+    },
+    {
+      "start": 1577.27,
+      "end": 1579.13,
+      "text": "wybrał inną karierę."
+    },
+    {
+      "start": 1579.39,
+      "end": 1580.45,
+      "text": "Polityczną. Nie"
+    },
+    {
+      "start": 1580.45,
+      "end": 1582.81,
+      "text": "tylko polityczną zresztą,"
+    },
+    {
+      "start": 1582.81,
+      "end": 1583.87,
+      "text": "bo wraz z innymi"
+    },
+    {
+      "start": 1583.87,
+      "end": 1585.79,
+      "text": "prominentnymi członkami"
+    },
+    {
+      "start": 1585.79,
+      "end": 1586.91,
+      "text": "skrajnie prawicowej,"
+    },
+    {
+      "start": 1587.61,
+      "end": 1588.44,
+      "text": "zdelegalizowanej"
+    },
+    {
+      "start": 1588.44,
+      "end": 1589.98,
+      "text": "już zresztą partii"
+    },
+    {
+      "start": 1589.98,
+      "end": 1591.67,
+      "text": "Złoty Świt, trafił"
+    },
+    {
+      "start": 1591.67,
+      "end": 1592.57,
+      "text": "najpierw do"
+    },
+    {
+      "start": 1592.57,
+      "end": 1594.45,
+      "text": "parlamentu, a potem"
+    },
+    {
+      "start": 1594.45,
+      "end": 1595.89,
+      "text": "do więzienia"
+    },
+    {
+      "start": 1595.89,
+      "end": 1597.05,
+      "text": "za kierowanie"
+    },
+    {
+      "start": 1597.05,
+      "end": 1599.53,
+      "text": "organizacją przestępczą."
+    },
+    {
+      "start": 1600.07,
+      "end": 1600.97,
+      "text": "Wyszedł dwa lata"
+    },
+    {
+      "start": 1600.97,
+      "end": 1602.53,
+      "text": "temu i nie jest już"
+    },
+    {
+      "start": 1602.53,
+      "end": 1604.57,
+      "text": "aktywny publicznie,"
+    },
+    {
+      "start": 1604.99,
+      "end": 1605.98,
+      "text": "no a jego działalność"
+    },
+    {
+      "start": 1605.98,
+      "end": 1607.33,
+      "text": "raczej zaszkodziła"
+    },
+    {
+      "start": 1607.33,
+      "end": 1608.61,
+      "text": "zespołowi niż jak w"
+    },
+    {
+      "start": 1608.61,
+      "end": 1610.04,
+      "text": "przypadku Norwegów"
+    },
+    {
+      "start": 1610.04,
+      "end": 1610.87,
+      "text": "pomogła."
+    },
+    {
+      "start": 1611.85,
+      "end": 1613.06,
+      "text": "Być może, a nawet"
+    },
+    {
+      "start": 1613.06,
+      "end": 1614.59,
+      "text": "na pewno."
+    },
+    {
+      "start": 1614.81,
+      "end": 1616.54,
+      "text": "Dlatego, że smarkaci"
+    },
+    {
+      "start": 1616.54,
+      "end": 1618.4,
+      "text": "Norwedzy siali"
+    },
+    {
+      "start": 1618.4,
+      "end": 1620.26,
+      "text": "chaos bez politycznej"
+    },
+    {
+      "start": 1620.26,
+      "end": 1620.89,
+      "text": "agendy,"
+    },
+    {
+      "start": 1621.45,
+      "end": 1622.77,
+      "text": "po prostu dlatego,"
+    },
+    {
+      "start": 1622.77,
+      "end": 1624.21,
+      "text": "że bolał ich świat."
+    },
+    {
+      "start": 1625.09,
+      "end": 1627.27,
+      "text": "Natomiast Złoty Świt"
+    },
+    {
+      "start": 1627.27,
+      "end": 1629.23,
+      "text": "przemocą walczył o"
+    },
+    {
+      "start": 1629.23,
+      "end": 1630.61,
+      "text": "Białą Grecję,"
+    },
+    {
+      "start": 1630.75,
+      "end": 1632.29,
+      "text": "organizując pogromy"
+    },
+    {
+      "start": 1632.29,
+      "end": 1633.96,
+      "text": "i nawet dopuszczając"
+    },
+    {
+      "start": 1633.96,
+      "end": 1635.35,
+      "text": "się politycznego"
+    },
+    {
+      "start": 1635.35,
+      "end": 1636.31,
+      "text": "zabójstwa."
+    },
+    {
+      "start": 1636.89,
+      "end": 1637.84,
+      "text": "Ale to wszystko pewnie"
+    },
+    {
+      "start": 1637.84,
+      "end": 1638.83,
+      "text": "Państwo, przynajmniej"
+    },
+    {
+      "start": 1638.83,
+      "end": 1640.44,
+      "text": "ci, którzy interesują"
+    },
+    {
+      "start": 1640.44,
+      "end": 1643.03,
+      "text": "się sprawami międzynarodowymi,"
+    },
+    {
+      "start": 1643.03,
+      "end": 1644.8,
+      "text": "doskonale pamiętacie"
+    },
+    {
+      "start": 1644.8,
+      "end": 1646.25,
+      "text": "z wiadomości."
+    },
+    {
+      "start": 1886.78,
+      "end": 1888.84,
+      "text": "Swoją drogą cień złotego"
+    },
+    {
+      "start": 1888.84,
+      "end": 1890.1,
+      "text": "świtu pada nie"
+    },
+    {
+      "start": 1890.1,
+      "end": 1891.76,
+      "text": "tylko na Naer Mataron,"
+    },
+    {
+      "start": 1891.76,
+      "end": 1892.74,
+      "text": "nie tylko na tych,"
+    },
+    {
+      "start": 1892.74,
+      "end": 1895.46,
+      "text": "co należeli do partii"
+    },
+    {
+      "start": 1895.46,
+      "end": 1897.22,
+      "text": "czy do organizowanych"
+    },
+    {
+      "start": 1897.22,
+      "end": 1899.42,
+      "text": "przez te partie bojówek."
+    },
+    {
+      "start": 1899.42,
+      "end": 1901.58,
+      "text": "Ciekawy jest przypadek"
+    },
+    {
+      "start": 1901.58,
+      "end": 1904.26,
+      "text": "ojca Dionizosa Tabakisa."
+    },
+    {
+      "start": 1904.26,
+      "end": 1905.89,
+      "text": "Nie mojego ojca,"
+    },
+    {
+      "start": 1905.89,
+      "end": 1907.61,
+      "text": "ani nawet nie wujka."
+    },
+    {
+      "start": 1907.61,
+      "end": 1909.35,
+      "text": "Tak się każe tytułować,"
+    },
+    {
+      "start": 1909.35,
+      "end": 1910.8,
+      "text": "bo jest duchownym,"
+    },
+    {
+      "start": 1910.8,
+      "end": 1912.36,
+      "text": "kapłanem greckiego"
+    },
+    {
+      "start": 1912.36,
+      "end": 1914.46,
+      "text": "kościoła prawosławnego."
+    },
+    {
+      "start": 1914.46,
+      "end": 1915.8,
+      "text": "Kiedy nie odprawia"
+    },
+    {
+      "start": 1915.8,
+      "end": 1917.93,
+      "text": "nabożeństw i nie pochłaniają"
+    },
+    {
+      "start": 1917.93,
+      "end": 1919.66,
+      "text": "go obowiązki rodzinne,"
+    },
+    {
+      "start": 1919.66,
+      "end": 1920.93,
+      "text": "bo w tym obrządku"
+    },
+    {
+      "start": 1920.93,
+      "end": 1922.65,
+      "text": "kapłani mogą zakładać"
+    },
+    {
+      "start": 1922.65,
+      "end": 1923.69,
+      "text": "rodziny i Tabakis"
+    },
+    {
+      "start": 1923.69,
+      "end": 1925.52,
+      "text": "jest mężem i ojcem."
+    },
+    {
+      "start": 1926.34,
+      "end": 1926.65,
+      "text": "Otóż w wolnym"
+    },
+    {
+      "start": 1926.65,
+      "end": 1928.53,
+      "text": "czasie ten bogobojny"
+    },
+    {
+      "start": 1928.53,
+      "end": 1930.19,
+      "text": "człowiek bierze do"
+    },
+    {
+      "start": 1930.19,
+      "end": 1932.17,
+      "text": "ręki ośmiostrunową,"
+    },
+    {
+      "start": 1932.17,
+      "end": 1933.91,
+      "text": "bezprogową gitarę i"
+    },
+    {
+      "start": 1933.91,
+      "end": 1935.36,
+      "text": "gra na niej swoją"
+    },
+    {
+      "start": 1935.36,
+      "end": 1936.51,
+      "text": "własną, ale"
+    },
+    {
+      "start": 1936.51,
+      "end": 1939.1,
+      "text": "naprawdę własną muzykę."
+    },
+    {
+      "start": 1939.74,
+      "end": 1941.36,
+      "text": "Debiutancki album"
+    },
+    {
+      "start": 1941.36,
+      "end": 1943.61,
+      "text": "Tabakisa, wydany wiosną"
+    },
+    {
+      "start": 1943.61,
+      "end": 1945.57,
+      "text": "tego roku, nosi tytuł"
+    },
+    {
+      "start": 1945.57,
+      "end": 1947.18,
+      "text": "Paradise Metal, a"
+    },
+    {
+      "start": 1947.18,
+      "end": 1948.82,
+      "text": "więc rajski metal i"
+    },
+    {
+      "start": 1948.82,
+      "end": 1950.36,
+      "text": "rzeczywiście są w"
+    },
+    {
+      "start": 1950.36,
+      "end": 1952.28,
+      "text": "tym metalowe wibracje,"
+    },
+    {
+      "start": 1952.28,
+      "end": 1953.67,
+      "text": "choć za grosz"
+    },
+    {
+      "start": 1953.67,
+      "end": 1955.43,
+      "text": "brutalności nie ma"
+    },
+    {
+      "start": 1955.43,
+      "end": 1957.38,
+      "text": "mroku i ciężaru."
+    },
+    {
+      "start": 1958.28,
+      "end": 1959.8,
+      "text": "Wydawać by się mogło,"
+    },
+    {
+      "start": 1959.8,
+      "end": 1961.16,
+      "text": "że Dionysos Tabakis"
+    },
+    {
+      "start": 1961.16,
+      "end": 1962.44,
+      "text": "to postać skrajnie"
+    },
+    {
+      "start": 1962.44,
+      "end": 1963.62,
+      "text": "odległa od black"
+    },
+    {
+      "start": 1963.62,
+      "end": 1965.48,
+      "text": "metalowych radykałów."
+    },
+    {
+      "start": 1965.98,
+      "end": 1966.91,
+      "text": "A jednak niedawno,"
+    },
+    {
+      "start": 1966.91,
+      "end": 1968.3,
+      "text": "kiedy zaczął robić"
+    },
+    {
+      "start": 1968.3,
+      "end": 1970.18,
+      "text": "międzynarodową karierę,"
+    },
+    {
+      "start": 1970.18,
+      "end": 1972.45,
+      "text": "ktoś wyciągnął Tabakisowi,"
+    },
+    {
+      "start": 1972.45,
+      "end": 1976.28,
+      "text": "że w 2013 roku poświęcił"
+    },
+    {
+      "start": 1976.28,
+      "end": 1977.12,
+      "text": "lokalne biuro"
+    },
+    {
+      "start": 1977.12,
+      "end": 1979.28,
+      "text": "właśnie złotego świtu."
+    },
+    {
+      "start": 1980.28,
+      "end": 1981.72,
+      "text": "Tabakis tłumaczył"
+    },
+    {
+      "start": 1981.72,
+      "end": 1983.88,
+      "text": "się, że jest przeciwnikiem"
+    },
+    {
+      "start": 1983.88,
+      "end": 1985.41,
+      "text": "nacjonalizmu, tym"
+    },
+    {
+      "start": 1985.41,
+      "end": 1986.86,
+      "text": "bardziej, że jego"
+    },
+    {
+      "start": 1986.86,
+      "end": 1988.48,
+      "text": "dziadkowie należeli"
+    },
+    {
+      "start": 1988.48,
+      "end": 1990.37,
+      "text": "do walczącej z nazistami"
+    },
+    {
+      "start": 1990.37,
+      "end": 1992.52,
+      "text": "greckiej partyzantki."
+    },
+    {
+      "start": 1993.42,
+      "end": 1994.42,
+      "text": "A w tym biurze spełniał"
+    },
+    {
+      "start": 1994.42,
+      "end": 1996.73,
+      "text": "po prostu swój obowiązek,"
+    },
+    {
+      "start": 1996.73,
+      "end": 1998.43,
+      "text": "wysłał go tam biskup"
+    },
+    {
+      "start": 1998.43,
+      "end": 2000.49,
+      "text": "czy inny przełożony,"
+    },
+    {
+      "start": 2000.49,
+      "end": 2002.19,
+      "text": "więc poświęcił tak"
+    },
+    {
+      "start": 2002.19,
+      "end": 2003.78,
+      "text": "jak to robi i robił"
+    },
+    {
+      "start": 2003.78,
+      "end": 2005.49,
+      "text": "w przypadku innych"
+    },
+    {
+      "start": 2005.49,
+      "end": 2006.78,
+      "text": "budynków."
+    },
+    {
+      "start": 2006.78,
+      "end": 2008.25,
+      "text": "publicznych czy"
+    },
+    {
+      "start": 2008.25,
+      "end": 2009.42,
+      "text": "firm, które proszą"
+    },
+    {
+      "start": 2009.42,
+      "end": 2011.29,
+      "text": "o taką przysługę."
+    },
+    {
+      "start": 2011.29,
+      "end": 2012.51,
+      "text": "Nie wszyscy chyba"
+    },
+    {
+      "start": 2012.51,
+      "end": 2015.46,
+      "text": "jednak chcą mu wierzyć,"
+    },
+    {
+      "start": 2015.46,
+      "end": 2016.93,
+      "text": "a życzliwi znaleźli"
+    },
+    {
+      "start": 2016.93,
+      "end": 2018.7,
+      "text": "też wpisy z bloga"
+    },
+    {
+      "start": 2018.7,
+      "end": 2021.93,
+      "text": "Tabakisa sprzed kilku"
+    },
+    {
+      "start": 2021.93,
+      "end": 2023.8,
+      "text": "lat, w których duchowny"
+    },
+    {
+      "start": 2023.8,
+      "end": 2025.82,
+      "text": "wścieka się, że w Grecji"
+    },
+    {
+      "start": 2025.82,
+      "end": 2028.56,
+      "text": "zalegalizowano małżeństwa"
+    },
+    {
+      "start": 2028.56,
+      "end": 2030.38,
+      "text": "jednopłciowe."
+    },
+    {
+      "start": 2030.38,
+      "end": 2031.99,
+      "text": "Tu z kolei wyjaśniał,"
+    },
+    {
+      "start": 2031.99,
+      "end": 2033.87,
+      "text": "że przecież to oficjalne"
+    },
+    {
+      "start": 2033.87,
+      "end": 2035.68,
+      "text": "stanowisko jego kościoła"
+    },
+    {
+      "start": 2035.68,
+      "end": 2037.14,
+      "text": "niezmienne od dwóch"
+    },
+    {
+      "start": 2037.14,
+      "end": 2038.24,
+      "text": "tysięcy lat i on"
+    },
+    {
+      "start": 2038.24,
+      "end": 2040.18,
+      "text": "nie może mieć innego."
+    },
+    {
+      "start": 2040.18,
+      "end": 2042.08,
+      "text": "Tak czy owak Tabakis,"
+    },
+    {
+      "start": 2042.08,
+      "end": 2043.78,
+      "text": "który jeszcze przed"
+    },
+    {
+      "start": 2043.78,
+      "end": 2045.53,
+      "text": "chwilą był pupilem"
+    },
+    {
+      "start": 2045.53,
+      "end": 2047.28,
+      "text": "progresywnych mediów"
+    },
+    {
+      "start": 2047.28,
+      "end": 2049.29,
+      "text": "i festiwali, zaczął"
+    },
+    {
+      "start": 2049.29,
+      "end": 2051.24,
+      "text": "znikać z programów"
+    },
+    {
+      "start": 2051.24,
+      "end": 2053.96,
+      "text": "tychże, został strącony"
+    },
+    {
+      "start": 2053.96,
+      "end": 2056.28,
+      "text": "z raju przynajmniej"
+    },
+    {
+      "start": 2056.28,
+      "end": 2057.06,
+      "text": "do czyśćca,"
+    },
+    {
+      "start": 2057.06,
+      "end": 2058.54,
+      "text": "No i nie wiadomo,"
+    },
+    {
+      "start": 2058.54,
+      "end": 2059.93,
+      "text": "jak dalej potoczy"
+    },
+    {
+      "start": 2059.93,
+      "end": 2061.57,
+      "text": "się jego kariera,"
+    },
+    {
+      "start": 2061.57,
+      "end": 2063.55,
+      "text": "co nie zmienia faktu,"
+    },
+    {
+      "start": 2063.55,
+      "end": 2065.12,
+      "text": "że Paradise Metal"
+    },
+    {
+      "start": 2065.12,
+      "end": 2066.34,
+      "text": "poznać warto."
+    },
+    {
+      "start": 2261.08,
+      "end": 2262.85,
+      "text": "Dość tej polityki,"
+    },
+    {
+      "start": 2262.85,
+      "end": 2264.9,
+      "text": "choć warto pamiętać,"
+    },
+    {
+      "start": 2264.9,
+      "end": 2266.18,
+      "text": "że jeżeli wydaje"
+    },
+    {
+      "start": 2266.18,
+      "end": 2267.48,
+      "text": "nam się, że Polska"
+    },
+    {
+      "start": 2267.48,
+      "end": 2268.95,
+      "text": "jest krajem politycznie"
+    },
+    {
+      "start": 2268.95,
+      "end": 2269.9,
+      "text": "podzielonym,"
+    },
+    {
+      "start": 2269.9,
+      "end": 2270.75,
+      "text": "właściwie nie"
+    },
+    {
+      "start": 2270.75,
+      "end": 2271.66,
+      "text": "wydaje się, ona"
+    },
+    {
+      "start": 2271.66,
+      "end": 2272.6,
+      "text": "oczywiście taka"
+    },
+    {
+      "start": 2272.6,
+      "end": 2273.97,
+      "text": "jest, to w Grecji"
+    },
+    {
+      "start": 2273.97,
+      "end": 2275.29,
+      "text": "te podziały są o"
+    },
+    {
+      "start": 2275.29,
+      "end": 2276.63,
+      "text": "wiele bardziej"
+    },
+    {
+      "start": 2276.63,
+      "end": 2278.16,
+      "text": "dramatyczne i ich"
+    },
+    {
+      "start": 2278.16,
+      "end": 2279.83,
+      "text": "przełożenie na codzienność"
+    },
+    {
+      "start": 2279.83,
+      "end": 2281.04,
+      "text": "brutalniejsze."
+    },
+    {
+      "start": 2281.48,
+      "end": 2282.94,
+      "text": "Zatem nic dziwnego,"
+    },
+    {
+      "start": 2282.94,
+      "end": 2284.55,
+      "text": "że znajduje to też"
+    },
+    {
+      "start": 2284.55,
+      "end": 2286.02,
+      "text": "odbicie w muzyce"
+    },
+    {
+      "start": 2286.02,
+      "end": 2287.61,
+      "text": "oraz w postawach i"
+    },
+    {
+      "start": 2287.61,
+      "end": 2290.18,
+      "text": "losach samych muzyków."
+    },
+    {
+      "start": 2290.9,
+      "end": 2292.56,
+      "text": "Idźmy dalej, na pola"
+    },
+    {
+      "start": 2292.56,
+      "end": 2293.84,
+      "text": "elizejskie."
+    },
+    {
+      "start": 2294.14,
+      "end": 2295.39,
+      "text": "Świetnie zapowiadał"
+    },
+    {
+      "start": 2295.39,
+      "end": 2297.02,
+      "text": "się zespół The Elysian"
+    },
+    {
+      "start": 2297.02,
+      "end": 2297.9,
+      "text": "Fields."
+    },
+    {
+      "start": 2298.2,
+      "end": 2299.2,
+      "text": "I nie, nie chodzi"
+    },
+    {
+      "start": 2299.2,
+      "end": 2300.87,
+      "text": "tu o te pola elizejskie"
+    },
+    {
+      "start": 2300.87,
+      "end": 2303.09,
+      "text": "w Paryżu, ale o oryginalne,"
+    },
+    {
+      "start": 2303.09,
+      "end": 2304.54,
+      "text": "jedynie słuszne,"
+    },
+    {
+      "start": 2304.54,
+      "end": 2307.62,
+      "text": "czyli tę część Hadesu,"
+    },
+    {
+      "start": 2307.62,
+      "end": 2309.01,
+      "text": "którą zamieszkują"
+    },
+    {
+      "start": 2309.01,
+      "end": 2310.23,
+      "text": "po śmierci dusze"
+    },
+    {
+      "start": 2310.23,
+      "end": 2311.66,
+      "text": "dobrych ludzi."
+    },
+    {
+      "start": 2312.28,
+      "end": 2312.94,
+      "text": "Niby mało, black"
+    },
+    {
+      "start": 2312.94,
+      "end": 2314.49,
+      "text": "metalowa nazwa, ale"
+    },
+    {
+      "start": 2314.49,
+      "end": 2316.1,
+      "text": "The Elysian Fields,"
+    },
+    {
+      "start": 2316.1,
+      "end": 2317.72,
+      "text": "właśnie black metal,"
+    },
+    {
+      "start": 2317.72,
+      "end": 2319.2,
+      "text": "trochę wymieszany z"
+    },
+    {
+      "start": 2319.2,
+      "end": 2320.6,
+      "text": "death metalem,"
+    },
+    {
+      "start": 2320.72,
+      "end": 2322.47,
+      "text": "grali od swoich chlubnych"
+    },
+    {
+      "start": 2322.47,
+      "end": 2324.23,
+      "text": "początków w połowie"
+    },
+    {
+      "start": 2324.23,
+      "end": 2326.28,
+      "text": "lat dziewięćdziesiątych"
+    },
+    {
+      "start": 2326.28,
+      "end": 2328.88,
+      "text": "i ponoć do dziś grają,"
+    },
+    {
+      "start": 2328.88,
+      "end": 2330.14,
+      "text": "choć w ostatnich"
+    },
+    {
+      "start": 2330.14,
+      "end": 2331.5,
+      "text": "latach niewiele o"
+    },
+    {
+      "start": 2331.5,
+      "end": 2332.72,
+      "text": "nich słychać,"
+    },
+    {
+      "start": 2332.74,
+      "end": 2333.68,
+      "text": "a przynajmniej do"
+    },
+    {
+      "start": 2333.68,
+      "end": 2335.16,
+      "text": "mnie niewiele dociera."
+    },
+    {
+      "start": 2335.32,
+      "end": 2336.69,
+      "text": "Tymczasem proponuję"
+    },
+    {
+      "start": 2336.69,
+      "end": 2338.39,
+      "text": "powrót do drugiej płyty"
+    },
+    {
+      "start": 2338.39,
+      "end": 2340.62,
+      "text": "grupy, czyli my, oświeceni"
+    },
+    {
+      "start": 2340.62,
+      "end": 2342.38,
+      "text": "z dziewięćdziesiątego"
+    },
+    {
+      "start": 2342.38,
+      "end": 2343.6,
+      "text": "ósmego roku."
+    },
+    {
+      "start": 2343.6,
+      "end": 2344.2,
+      "text": "Dzięki za oglądanie!"
+    },
+    {
+      "start": 2644.83,
+      "end": 2645.95,
+      "text": "To bez wątpienia"
+    },
+    {
+      "start": 2645.95,
+      "end": 2647.58,
+      "text": "jeden z najciekawszych"
+    },
+    {
+      "start": 2647.58,
+      "end": 2649.43,
+      "text": "i najbardziej oryginalnych"
+    },
+    {
+      "start": 2649.43,
+      "end": 2651.09,
+      "text": "greckich zespołów i"
+    },
+    {
+      "start": 2651.09,
+      "end": 2652.52,
+      "text": "jak to z wiecznie"
+    },
+    {
+      "start": 2652.52,
+      "end": 2654.97,
+      "text": "poszukującymi oryginałami"
+    },
+    {
+      "start": 2654.97,
+      "end": 2657,
+      "text": "bywa, niekoniecznie"
+    },
+    {
+      "start": 2657,
+      "end": 2659.19,
+      "text": "służy to ich karierze."
+    },
+    {
+      "start": 2659.19,
+      "end": 2660.63,
+      "text": "Zespół prowadzony"
+    },
+    {
+      "start": 2660.63,
+      "end": 2662.34,
+      "text": "przez niestrudzonego"
+    },
+    {
+      "start": 2662.34,
+      "end": 2664.23,
+      "text": "Eftimisa Karadimasa."
+    },
+    {
+      "start": 2664.23,
+      "end": 2666.02,
+      "text": "Meandrował już od"
+    },
+    {
+      "start": 2666.02,
+      "end": 2666.78,
+      "text": "black metalu po"
+    },
+    {
+      "start": 2666.78,
+      "end": 2668.46,
+      "text": "death metal z gotykiem"
+    },
+    {
+      "start": 2668.46,
+      "end": 2670.08,
+      "text": "po drodze, ale nigdy"
+    },
+    {
+      "start": 2670.08,
+      "end": 2671.72,
+      "text": "nie wykonywał muzyki"
+    },
+    {
+      "start": 2671.72,
+      "end": 2673.62,
+      "text": "czystej gatunkowo."
+    },
+    {
+      "start": 2673.62,
+      "end": 2675.71,
+      "text": "Zawsze była to ich"
+    },
+    {
+      "start": 2675.71,
+      "end": 2677.32,
+      "text": "własna wizja i"
+    },
+    {
+      "start": 2677.32,
+      "end": 2679.23,
+      "text": "zawsze była w tym"
+    },
+    {
+      "start": 2679.23,
+      "end": 2680.57,
+      "text": "jakość."
+    },
+    {
+      "start": 2680.57,
+      "end": 2681.89,
+      "text": "Od płyty Parade"
+    },
+    {
+      "start": 2681.89,
+      "end": 2683.94,
+      "text": "into Centuries z 92"
+    },
+    {
+      "start": 2683.94,
+      "end": 2685.47,
+      "text": "roku po najnowszą"
+    },
+    {
+      "start": 2685.47,
+      "end": 2687.42,
+      "text": "sprzed roku, czyli"
+    },
+    {
+      "start": 2687.42,
+      "end": 2689.09,
+      "text": "Children of Eve. A"
+    },
+    {
+      "start": 2689.09,
+      "end": 2690.49,
+      "text": "przed nami utwór"
+    },
+    {
+      "start": 2690.49,
+      "end": 2692.18,
+      "text": "ciekawostka. Nie"
+    },
+    {
+      "start": 2692.18,
+      "end": 2693.49,
+      "text": "tylko dlatego, że"
+    },
+    {
+      "start": 2693.49,
+      "end": 2694.56,
+      "text": "jest hołdem dla"
+    },
+    {
+      "start": 2694.56,
+      "end": 2696.45,
+      "text": "Diamandy Gala z wspaniałej"
+    },
+    {
+      "start": 2696.45,
+      "end": 2698.01,
+      "text": "wokalistki greckiego"
+    },
+    {
+      "start": 2698.01,
+      "end": 2699.52,
+      "text": "pochodzenia, ale"
+    },
+    {
+      "start": 2699.52,
+      "end": 2701.7,
+      "text": "dlatego, że jest hołdem"
+    },
+    {
+      "start": 2701.7,
+      "end": 2703.46,
+      "text": "o bardzo erotycznym"
+    },
+    {
+      "start": 2703.46,
+      "end": 2704.99,
+      "text": "charakterze."
+    },
+    {
+      "start": 2704.99,
+      "end": 2706.92,
+      "text": "No ale ta cielesność,"
+    },
+    {
+      "start": 2706.92,
+      "end": 2708.32,
+      "text": "ta zmysłowość to"
+    },
+    {
+      "start": 2708.32,
+      "end": 2709.98,
+      "text": "też przecież część"
+    },
+    {
+      "start": 2709.98,
+      "end": 2712.29,
+      "text": "heleńskiego, antycznego"
+    },
+    {
+      "start": 2712.29,
+      "end": 2713.89,
+      "text": "dziedzictwa."
+    },
+    {
+      "start": 2981.21,
+      "end": 2982.57,
+      "text": "Również zespół,"
+    },
+    {
+      "start": 2982.57,
+      "end": 2984.5,
+      "text": "którego karierę liczymy"
+    },
+    {
+      "start": 2984.5,
+      "end": 2986.82,
+      "text": "już w dekadach, zasłużony"
+    },
+    {
+      "start": 2986.82,
+      "end": 2988.69,
+      "text": "i godny szacunku."
+    },
+    {
+      "start": 2989.65,
+      "end": 2990.29,
+      "text": "Do mnie nie trafia"
+    },
+    {
+      "start": 2990.29,
+      "end": 2991.88,
+      "text": "już tak jak choćby"
+    },
+    {
+      "start": 2991.88,
+      "end": 2993.29,
+      "text": "Nightfall, bo"
+    },
+    {
+      "start": 2993.29,
+      "end": 2994.96,
+      "text": "jednak zbyt miękko"
+    },
+    {
+      "start": 2994.96,
+      "end": 2996.45,
+      "text": "i łagodnie."
+    },
+    {
+      "start": 2997.21,
+      "end": 2998.39,
+      "text": "Ale jeśli ktoś lubi"
+    },
+    {
+      "start": 2998.39,
+      "end": 3000.41,
+      "text": "smak tego gęstego,"
+    },
+    {
+      "start": 3000.41,
+      "end": 3002.45,
+      "text": "cierpkiego wywaru z"
+    },
+    {
+      "start": 3002.45,
+      "end": 3004.21,
+      "text": "def i doom metalu"
+    },
+    {
+      "start": 3004.21,
+      "end": 3005.89,
+      "text": "oraz rocka gotyckiego,"
+    },
+    {
+      "start": 3005.89,
+      "end": 3007.39,
+      "text": "to znajdzie tu coś"
+    },
+    {
+      "start": 3007.39,
+      "end": 3008.47,
+      "text": "dla siebie."
+    },
+    {
+      "start": 3009.09,
+      "end": 3010.71,
+      "text": "Zdjąłem z półki płytę"
+    },
+    {
+      "start": 3010.71,
+      "end": 3012.15,
+      "text": "Egocentric sprzed"
+    },
+    {
+      "start": 3012.15,
+      "end": 3013.77,
+      "text": "ponad dwóch dekad,"
+    },
+    {
+      "start": 3013.77,
+      "end": 3015.78,
+      "text": "żeby ją dzisiaj puścić"
+    },
+    {
+      "start": 3015.78,
+      "end": 3017.31,
+      "text": "i tak to brzmi."
+    },
+    {
+      "start": 3330.04,
+      "end": 3331.36,
+      "text": "Znacznie bardziej"
+    },
+    {
+      "start": 3331.36,
+      "end": 3332.51,
+      "text": "przekonuje mnie"
+    },
+    {
+      "start": 3332.51,
+      "end": 3334.45,
+      "text": "Septic Flesh, choćby"
+    },
+    {
+      "start": 3334.45,
+      "end": 3336.12,
+      "text": "dlatego, że bardzo"
+    },
+    {
+      "start": 3336.12,
+      "end": 3337.4,
+      "text": "trudno tę muzykę"
+    },
+    {
+      "start": 3337.4,
       "end": 3340.52,
-      "text": "Choćby dlatego, że bardzo trudno tę muzykę jednoznacznie sklasyfikować."
+      "text": "jednoznacznie sklasyfikować."
     },
     {
       "start": 3340.68,
+      "end": 3342.14,
+      "text": "Powiedziałbym, że"
+    },
+    {
+      "start": 3342.14,
+      "end": 3343.95,
+      "text": "to grecki odpowiednik"
+    },
+    {
+      "start": 3343.95,
+      "end": 3345.81,
+      "text": "Therion, który zresztą"
+    },
+    {
+      "start": 3345.81,
+      "end": 3347.59,
+      "text": "również ma skłonności"
+    },
+    {
+      "start": 3347.59,
+      "end": 3349.89,
+      "text": "do patosu, do rozmachu,"
+    },
+    {
+      "start": 3349.89,
+      "end": 3351.9,
+      "text": "do angażowania wielkich"
+    },
+    {
+      "start": 3351.9,
+      "end": 3354.44,
+      "text": "orkiestr i wieloosobowych"
+    },
+    {
+      "start": 3354.44,
       "end": 3355.32,
-      "text": "Powiedziałbym, że to grecki odpowiednik Therion, który zresztą również ma skłonności do patosu, do rozmachu, do angażowania wielkich orkiestr i wieloosobowych chórów,"
+      "text": "chórów,"
     },
     {
       "start": 3355.32,
+      "end": 3356.58,
+      "text": "ale Septic Flesh"
+    },
+    {
+      "start": 3356.58,
+      "end": 3358.02,
+      "text": "nigdy nie wkroczył"
+    },
+    {
+      "start": 3358.02,
+      "end": 3359.91,
+      "text": "na tę ścieżkę przaśności"
+    },
+    {
+      "start": 3359.91,
+      "end": 3361.44,
+      "text": "czy biesiadności,"
+    },
+    {
+      "start": 3361.44,
+      "end": 3363.24,
+      "text": "którą niestety Therion"
+    },
+    {
+      "start": 3363.24,
+      "end": 3364.53,
+      "text": "przez jakiś czas"
+    },
+    {
+      "start": 3364.53,
       "end": 3365.74,
-      "text": "ale septic flash nigdy nie wkroczył na tę ścieżkę przaśności czy biesiadności, którą niestety Therion przez jakiś czas podróżował."
+      "text": "podróżował."
     },
     {
-      "start": 3366.52,
+      "start": 3366.5,
+      "end": 3367.36,
+      "text": "Poza tym Septic Flesh"
+    },
+    {
+      "start": 3367.36,
+      "end": 3368.8,
+      "text": "czasem oddalał się"
+    },
+    {
+      "start": 3368.8,
+      "end": 3369.96,
+      "text": "od swojej death"
+    },
+    {
+      "start": 3369.96,
+      "end": 3371.5,
+      "text": "metalowej bazy, to"
+    },
+    {
+      "start": 3371.5,
+      "end": 3373.48,
+      "text": "znów się do niej zbliżał,"
+    },
+    {
+      "start": 3373.48,
+      "end": 3375.1,
+      "text": "ale nigdy nie stracił"
+    },
+    {
+      "start": 3375.1,
       "end": 3376.68,
-      "text": "Poza tym septic flash czasem oddalał się od swojej death metalowej bazy, to znów się do niej zbliżał, ale nigdy nie stracił z nią łączności."
+      "text": "z nią łączności."
     },
     {
-      "start": 3377.24,
-      "end": 3390.6,
-      "text": "Fani zespołu to wiedzą, ale kto nie wie temu, powiem, że od ponad dekady w septic flash bębni jedyny w tym zespole nie grek, tylko austriak, niejaki Krym."
+      "start": 3377.1,
+      "end": 3378.4,
+      "text": "Fani zespołu to"
+    },
+    {
+      "start": 3378.4,
+      "end": 3380.16,
+      "text": "wiedzą, ale kto nie"
+    },
+    {
+      "start": 3380.16,
+      "end": 3381.8,
+      "text": "wie temu, powiem,"
+    },
+    {
+      "start": 3381.8,
+      "end": 3383.3,
+      "text": "że od ponad dekady"
+    },
+    {
+      "start": 3383.3,
+      "end": 3385,
+      "text": "w Septic Flesh bębni"
+    },
+    {
+      "start": 3385,
+      "end": 3386.7,
+      "text": "jedyny w tym zespole"
+    },
+    {
+      "start": 3386.7,
+      "end": 3388.23,
+      "text": "nie grek, tylko"
+    },
+    {
+      "start": 3388.23,
+      "end": 3389.84,
+      "text": "austriak, niejaki"
+    },
+    {
+      "start": 3389.84,
+      "end": 3390.62,
+      "text": "Krym."
     },
     {
       "start": 3391,
-      "end": 3401.24,
-      "text": "Ten sam, który grał w naszym Decapitated na płycie Carnival is Forever, a przez chwilę nawet zastępował Inferno w Behemucie."
+      "end": 3392.25,
+      "text": "Ten sam, który grał"
     },
     {
-      "start": 3401.24,
-      "end": 3402.78,
-      "text": "Muzyka"
+      "start": 3392.25,
+      "end": 3394.04,
+      "text": "w naszym Decapitated"
     },
     {
-      "start": 3679.37,
+      "start": 3394.04,
+      "end": 3395.58,
+      "text": "na płycie Carnival"
+    },
+    {
+      "start": 3395.58,
+      "end": 3397.13,
+      "text": "is Forever, a przez"
+    },
+    {
+      "start": 3397.13,
+      "end": 3399.13,
+      "text": "chwilę nawet zastępował"
+    },
+    {
+      "start": 3399.13,
+      "end": 3401.22,
+      "text": "Inferno w Behemucie."
+    },
+    {
+      "start": 3682.81,
+      "end": 3685.17,
+      "text": "Tworzący metal symfoniczny"
+    },
+    {
+      "start": 3685.17,
+      "end": 3687.81,
+      "text": "bez popadania w śmieszność,"
+    },
+    {
+      "start": 3687.81,
+      "end": 3689.13,
+      "text": "pewnie dlatego, że"
+    },
+    {
+      "start": 3689.13,
+      "end": 3690.17,
+      "text": "w odróżnieniu od"
+    },
+    {
+      "start": 3690.17,
+      "end": 3691.95,
+      "text": "wielu innych metalowców"
+    },
+    {
+      "start": 3691.95,
+      "end": 3693.57,
+      "text": "próbujących tej drogi,"
+    },
+    {
+      "start": 3693.57,
+      "end": 3694.51,
+      "text": "może nawet od"
+    },
+    {
+      "start": 3694.51,
+      "end": 3695.81,
+      "text": "wszystkich innych,"
+    },
+    {
+      "start": 3695.81,
+      "end": 3697.75,
+      "text": "septic flesz wiedzą"
+    },
+    {
+      "start": 3697.75,
       "end": 3698.95,
-      "text": "Septic Flesh to zespół ambitny, tworzący metal symfoniczny bez popadania w śmieszność, pewnie dlatego, że w odróżnieniu od wielu innych metalowców próbujących tej drogi, może nawet od wszystkich innych, Septic Flesh wiedzą co robią."
+      "text": "co robią."
     },
     {
       "start": 3698.95,
+      "end": 3700.15,
+      "text": "A to za sprawą"
+    },
+    {
+      "start": 3700.15,
+      "end": 3701.94,
+      "text": "Christosa Antoniu,"
+    },
+    {
+      "start": 3701.94,
+      "end": 3703.68,
+      "text": "który w septic flesz"
+    },
+    {
+      "start": 3703.68,
+      "end": 3705.01,
+      "text": "gra na gitarze i"
+    },
+    {
+      "start": 3705.01,
+      "end": 3707.68,
+      "text": "zajmuje się orkiestracjami,"
+    },
+    {
+      "start": 3707.68,
+      "end": 3709.21,
+      "text": "a nauczył się tego"
+    },
+    {
+      "start": 3709.21,
+      "end": 3710.65,
+      "text": "i jeszcze wielu"
+    },
+    {
+      "start": 3710.65,
+      "end": 3711.89,
+      "text": "innych rzeczy w"
+    },
+    {
+      "start": 3711.89,
+      "end": 3713.46,
+      "text": "London College of"
+    },
+    {
+      "start": 3713.46,
+      "end": 3715.62,
+      "text": "Music, gdzie studiował"
+    },
+    {
+      "start": 3715.62,
       "end": 3717.29,
-      "text": "A to za sprawą Christosa Antonio, który w Septic Flesh gra na gitarze i zajmuje się orkiestracjami, a nauczył się tego i jeszcze wielu innych rzeczy w London College of Music, gdzie studiował kompozycję."
+      "text": "kompozycję."
     },
     {
       "start": 3717.29,
-      "end": 3726.61,
-      "text": "No ale jak już wspomniałem, Septic Flesh pozostaje konsekwentnie metalowy, a Christos ma większe ambicje."
+      "end": 3719.6,
+      "text": "No ale jak już wspomniałem,"
     },
     {
-      "start": 3727.17,
+      "start": 3719.6,
+      "end": 3721.52,
+      "text": "septic flesz pozostaje"
+    },
+    {
+      "start": 3721.52,
+      "end": 3723.75,
+      "text": "konsekwentnie metalowy,"
+    },
+    {
+      "start": 3723.75,
+      "end": 3725.48,
+      "text": "a Christos ma większe"
+    },
+    {
+      "start": 3725.48,
+      "end": 3728.06,
+      "text": "ambicje. Powołał zatem"
+    },
+    {
+      "start": 3728.06,
+      "end": 3729.63,
+      "text": "do życia zespół"
+    },
+    {
+      "start": 3729.63,
+      "end": 3731.58,
+      "text": "Chaos Star, który"
+    },
+    {
+      "start": 3731.58,
+      "end": 3734.01,
+      "text": "jest metalowy z ducha,"
+    },
+    {
+      "start": 3734.01,
       "end": 3736.09,
-      "text": "Powołał zatem do życia zespół Chaos Star, który jest metalowy z ducha, ale nie z brzmienia."
+      "text": "ale nie z brzmienia."
     },
     {
       "start": 3736.09,
+      "end": 3737.9,
+      "text": "I muzykę gra, trudno"
+    },
+    {
+      "start": 3737.9,
+      "end": 3738.82,
+      "text": "właściwie"
+    },
+    {
+      "start": 3738.82,
+      "end": 3740.65,
+      "text": "powiedzieć jaką, bo"
+    },
+    {
+      "start": 3740.65,
+      "end": 3742.56,
+      "text": "spotykają się tu wątki"
+    },
+    {
+      "start": 3742.56,
+      "end": 3744.77,
+      "text": "neoklasyczne i operowe,"
+    },
+    {
+      "start": 3744.77,
+      "end": 3746.58,
+      "text": "z mrocznym ambientem"
+    },
+    {
+      "start": 3746.58,
+      "end": 3747.99,
+      "text": "i elektroniką,"
+    },
+    {
+      "start": 3747.99,
       "end": 3750.03,
-      "text": "I muzykę gra trudno właściwie powiedzieć jaką, bo spotykają się tu wątki neoklasyczne i operowe, z mrocznym ambientem i elektroniką, nawet trip-hopem."
+      "text": "nawet trip-hopem."
     },
     {
       "start": 3750.69,
-      "end": 3760.85,
-      "text": "Jakby Chaos Star nie byli z Grecji i gdyby nie urodzili się trochę za późno, to by pewnie byli gwiazdami wytwórni 4AD."
+      "end": 3751.5,
+      "text": "Jakby Chaos Star"
     },
     {
-      "start": 4112.33,
+      "start": 3751.5,
+      "end": 3753.05,
+      "text": "nie byli z Grecji i"
+    },
+    {
+      "start": 3753.05,
+      "end": 3754.7,
+      "text": "gdyby nie urodzili"
+    },
+    {
+      "start": 3754.7,
+      "end": 3756.58,
+      "text": "się trochę za późno,"
+    },
+    {
+      "start": 3756.58,
+      "end": 3758.05,
+      "text": "to by pewnie byli"
+    },
+    {
+      "start": 3758.05,
+      "end": 3759.82,
+      "text": "gwiazdami wytwórni"
+    },
+    {
+      "start": 3759.82,
+      "end": 3760.85,
+      "text": "4AD."
+    },
+    {
+      "start": 4112.89,
+      "end": 4114.33,
+      "text": "Był już black metal,"
+    },
+    {
+      "start": 4114.33,
+      "end": 4115.85,
+      "text": "były klimaty, czas"
+    },
+    {
+      "start": 4115.85,
       "end": 4117.61,
-      "text": "Był już black metal, były klimaty, czas na grecki gruz."
+      "text": "na grecki gruz."
     },
     {
       "start": 4118.15,
+      "end": 4118.7,
+      "text": "Death metal nie"
+    },
+    {
+      "start": 4118.7,
+      "end": 4119.91,
+      "text": "jest może muzyką"
+    },
+    {
+      "start": 4119.91,
+      "end": 4121.39,
+      "text": "najbardziej w heladzie"
+    },
+    {
+      "start": 4121.39,
       "end": 4123.21,
-      "text": "Death metal nie jest może muzyką najbardziej w heladzie rozpowszechnioną,"
+      "text": "rozpowszechnioną,"
     },
     {
-      "start": 4123.83,
+      "start": 4123.87,
+      "end": 4125.62,
+      "text": "ale bywa tak, że ilość"
+    },
+    {
+      "start": 4125.62,
       "end": 4128.27,
-      "text": "ale bywa tak, że ilość przechodzi w jakość."
+      "text": "przechodzi w jakość."
     },
     {
-      "start": 4129.03,
+      "start": 4129.05,
+      "end": 4129.5,
+      "text": "Kto ma wiedzieć,"
+    },
+    {
+      "start": 4129.5,
+      "end": 4130.81,
+      "text": "ten już wie, że w"
+    },
+    {
+      "start": 4130.81,
+      "end": 4132.69,
+      "text": "ten sposób przymierzam"
+    },
+    {
+      "start": 4132.69,
       "end": 4132.95,
-      "text": "Kto ma wiedzieć, ten już wie, że w ten sposób przymierzam się"
+      "text": "się"
     },
     {
       "start": 4132.95,
-      "end": 4136.85,
-      "text": "do przedstawienia zespołu Dead Congregations z Aten,"
+      "end": 4134.85,
+      "text": "do przedstawienia zespołu"
     },
     {
-      "start": 4136.85,
+      "start": 4134.85,
+      "end": 4136.21,
+      "text": "Dead Congregations"
+    },
+    {
+      "start": 4136.21,
+      "end": 4136.83,
+      "text": "z Aten,"
+    },
+    {
+      "start": 4136.83,
+      "end": 4138.23,
+      "text": "który dwiema dużymi"
+    },
+    {
+      "start": 4138.23,
+      "end": 4139.63,
+      "text": "płytami, kilkoma"
+    },
+    {
+      "start": 4139.63,
       "end": 4141.75,
-      "text": "który dwiema dużymi płytami, kilkoma pomniejszymi wydawnictwami"
+      "text": "pomniejszymi wydawnictwami"
     },
     {
       "start": 4141.75,
-      "end": 4148.87,
-      "text": "zasłużył na miano jednego z najlepszych europejskich zespołów death metalowych"
+      "end": 4143.57,
+      "text": "zasłużył na miano"
     },
     {
-      "start": 4148.87,
+      "start": 4143.57,
+      "end": 4145.95,
+      "text": "jednego z najlepszych"
+    },
+    {
+      "start": 4145.95,
+      "end": 4147.57,
+      "text": "europejskich zespołów"
+    },
+    {
+      "start": 4147.57,
+      "end": 4150.85,
+      "text": "death metalowych zrodzonych"
+    },
+    {
+      "start": 4150.85,
       "end": 4152.47,
-      "text": "zrodzonych w XXI wieku."
+      "text": "w XXI wieku."
     },
     {
       "start": 4152.99,
+      "end": 4153.68,
+      "text": "Ostatnio znowu"
+    },
+    {
+      "start": 4153.68,
+      "end": 4155.86,
+      "text": "intensywnie koncertują,"
+    },
+    {
+      "start": 4155.86,
+      "end": 4158.2,
+      "text": "więc może i zapisanie"
+    },
+    {
+      "start": 4158.2,
       "end": 4159.51,
-      "text": "Ostatnio znowu intensywnie koncertują, więc może i zapisanie nowych piosenek"
+      "text": "nowych piosenek"
     },
     {
       "start": 4159.51,
+      "end": 4161.13,
+      "text": "się w końcu wezmą,"
+    },
+    {
+      "start": 4161.13,
+      "end": 4162.75,
+      "text": "bo od wydania epki"
+    },
+    {
+      "start": 4162.75,
+      "end": 4164.85,
+      "text": "Somber Doom minęła"
+    },
+    {
+      "start": 4164.85,
       "end": 4166.55,
-      "text": "się w końcu wezmą, bo od wydania epki Somber Doom minęła długa dekada."
+      "text": "długa dekada."
     },
     {
-      "start": 4166.85,
-      "end": 4171.19,
-      "text": "Ale wiecie, to Grecy. Tradycja zobowiązuje."
+      "start": 4167.43,
+      "end": 4169.05,
+      "text": "Ale wiecie, to Grecy."
     },
     {
-      "start": 4171.67,
+      "start": 4169.05,
+      "end": 4170.61,
+      "text": "Tradycja zobowiązuje."
+    },
+    {
+      "start": 4170.61,
+      "end": 4172.54,
+      "text": "Odyseusz wracał do"
+    },
+    {
+      "start": 4172.54,
       "end": 4174.39,
-      "text": "Odyseusz wracał do Itaki 40 lat."
+      "text": "Itaki. 40 lat."
     },
     {
-      "start": 4445.56,
-      "end": 4455.52,
-      "text": "Żeby nie było, że dzisiaj znowu same starocie, czas na garść nowej muzyki ze starożytnej Grecji, z nowożytnej właściwie."
+      "start": 4446.11,
+      "end": 4447,
+      "text": "Żeby nie było, że"
     },
     {
-      "start": 4455.98,
-      "end": 4465.8,
-      "text": "Chociaż akurat Hexbane, czyli zespół, który 15 września zadebiutuje epką From Hell, tworzą starzy wyjadacze."
+      "start": 4447,
+      "end": 4448.28,
+      "text": "dzisiaj znowu same"
     },
     {
-      "start": 4465.8,
-      "end": 4475.72,
-      "text": "Nie tacy aż starzy, żeby chodzić po ziemi w czasach Homera, ale tacy, którzy pamiętają początki tej sceny."
+      "start": 4448.28,
+      "end": 4450.04,
+      "text": "starocie, czas na"
     },
     {
-      "start": 4476.06,
-      "end": 4479.66,
-      "text": "Odgłosy paszczą, wydaje Magus z Necromantii."
+      "start": 4450.04,
+      "end": 4452.13,
+      "text": "garść nowej muzyki"
     },
     {
-      "start": 4480.22,
-      "end": 4492.34,
-      "text": "Na gitarze gra George Emanuel, kiedyś w składzie Rotten Christ, a na basie Tass Danas Glow, też weteran greckiej sceny,"
+      "start": 4452.13,
+      "end": 4453.47,
+      "text": "ze starożytnej Grecji,"
     },
     {
-      "start": 4492.34,
-      "end": 4495.88,
-      "text": "który przez jakiś czas grał w Electric Wizard."
+      "start": 4453.47,
+      "end": 4454.4,
+      "text": "z nowożytnej"
     },
     {
-      "start": 4496.68,
-      "end": 4506.08,
-      "text": "Na perkusji natomiast Hexbane gra, uwaga, Faust, czyli Norweg, z pierwszego składu Emperora, obecnie Dievel."
+      "start": 4454.4,
+      "end": 4455.51,
+      "text": "właściwie."
     },
     {
-      "start": 4506.58,
-      "end": 4514.38,
-      "text": "Dlatego, kiedy Hexbane mówią, że powstali z nostalgii i spodziwu dla pierwszych dni Black Metalu, to ja im wierzę."
+      "start": 4455.99,
+      "end": 4457.41,
+      "text": "Chociaż akurat Hexbane,"
     },
     {
-      "start": 4514.92,
-      "end": 4518.4,
-      "text": "Kiedy słucham tego, co nagrali, wierzę im jeszcze bardziej."
+      "start": 4457.41,
+      "end": 4459.22,
+      "text": "czyli zespół, który"
     },
     {
-      "start": 4824.26,
+      "start": 4459.22,
+      "end": 4461.15,
+      "text": "15 września zadebiutuje"
+    },
+    {
+      "start": 4461.15,
+      "end": 4462.59,
+      "text": "epką From Hell,"
+    },
+    {
+      "start": 4462.59,
+      "end": 4465.79,
+      "text": "tworzą starzy wyjadacze."
+    },
+    {
+      "start": 4465.79,
+      "end": 4467.56,
+      "text": "Nie tacy aż starzy,"
+    },
+    {
+      "start": 4467.56,
+      "end": 4469.44,
+      "text": "żeby chodzić po ziemi"
+    },
+    {
+      "start": 4469.44,
+      "end": 4471.1,
+      "text": "w czasach Homera,"
+    },
+    {
+      "start": 4471.1,
+      "end": 4472.66,
+      "text": "ale tacy, którzy"
+    },
+    {
+      "start": 4472.66,
+      "end": 4474.44,
+      "text": "pamiętają początki"
+    },
+    {
+      "start": 4474.44,
+      "end": 4475.73,
+      "text": "tej sceny."
+    },
+    {
+      "start": 4476.05,
+      "end": 4477.38,
+      "text": "Odgłosy paszczą,"
+    },
+    {
+      "start": 4477.38,
+      "end": 4479.65,
+      "text": "wydaje Magus z Necromantii."
+    },
+    {
+      "start": 4480.23,
+      "end": 4480.9,
+      "text": "Na gitarze gra"
+    },
+    {
+      "start": 4480.9,
+      "end": 4482.47,
+      "text": "George Emanuel,"
+    },
+    {
+      "start": 4482.47,
+      "end": 4484.04,
+      "text": "kiedyś w składzie"
+    },
+    {
+      "start": 4484.04,
+      "end": 4486.09,
+      "text": "Rotten Christ, a na"
+    },
+    {
+      "start": 4486.09,
+      "end": 4489.31,
+      "text": "basie Tass Danas Glow,"
+    },
+    {
+      "start": 4489.31,
+      "end": 4491.55,
+      "text": "też weteran greckiej"
+    },
+    {
+      "start": 4491.55,
+      "end": 4493.19,
+      "text": "sceny, który przez"
+    },
+    {
+      "start": 4493.19,
+      "end": 4494.37,
+      "text": "jakiś czas grał w"
+    },
+    {
+      "start": 4494.37,
+      "end": 4495.87,
+      "text": "Electric Wizard."
+    },
+    {
+      "start": 4495.87,
+      "end": 4496.9,
+      "text": "Na perkusji"
+    },
+    {
+      "start": 4496.9,
+      "end": 4498.62,
+      "text": "natomiast w Hexbane"
+    },
+    {
+      "start": 4498.62,
+      "end": 4500.57,
+      "text": "gra, uwaga, Faust,"
+    },
+    {
+      "start": 4500.57,
+      "end": 4501.8,
+      "text": "czyli Norweg z"
+    },
+    {
+      "start": 4501.8,
+      "end": 4503.52,
+      "text": "pierwszego składu"
+    },
+    {
+      "start": 4503.52,
+      "end": 4505.18,
+      "text": "Emperora, obecnie"
+    },
+    {
+      "start": 4505.18,
+      "end": 4506.03,
+      "text": "Dievel."
+    },
+    {
+      "start": 4506.05,
+      "end": 4507.75,
+      "text": "Dlatego, kiedy Hexbane"
+    },
+    {
+      "start": 4507.75,
+      "end": 4509.12,
+      "text": "mówią, że powstali"
+    },
+    {
+      "start": 4509.12,
+      "end": 4510.65,
+      "text": "z nostalgii i z podziwu"
+    },
+    {
+      "start": 4510.65,
+      "end": 4511.98,
+      "text": "dla pierwszych dni"
+    },
+    {
+      "start": 4511.98,
+      "end": 4513.32,
+      "text": "Black Metalu, to ja"
+    },
+    {
+      "start": 4513.32,
+      "end": 4514.39,
+      "text": "im wierzę."
+    },
+    {
+      "start": 4514.93,
+      "end": 4515.67,
+      "text": "Kiedy słucham tego,"
+    },
+    {
+      "start": 4515.67,
+      "end": 4516.86,
+      "text": "co nagrali, wierzę"
+    },
+    {
+      "start": 4516.86,
+      "end": 4518.41,
+      "text": "im jeszcze bardziej."
+    },
+    {
+      "start": 4827.1,
+      "end": 4828.81,
+      "text": "Zapowiadany na koniec"
+    },
+    {
+      "start": 4828.81,
+      "end": 4830.2,
+      "text": "października, to"
+    },
+    {
+      "start": 4830.2,
+      "end": 4831.56,
+      "text": "też będzie propozycja"
+    },
+    {
+      "start": 4831.56,
+      "end": 4833.1,
+      "text": "dla fanów starej szkoły,"
+    },
+    {
+      "start": 4833.1,
+      "end": 4834.84,
+      "text": "choć nie black, ale"
+    },
+    {
+      "start": 4834.84,
       "end": 4836.32,
-      "text": "Abyssus i ich album The Rain, zapowiadany na koniec października, to też będzie propozycja dla fanów starej szkoły, choć nie black, ale death metalowej."
+      "text": "death metalowej."
     },
     {
-      "start": 4836.32,
-      "end": 4843.04,
-      "text": "Gdyby na przykład pojechali w trasę z Vaderem, na pewno czuliby się jak u siebie w domu."
+      "start": 4836.74,
+      "end": 4837.63,
+      "text": "Gdyby na przykład"
     },
     {
-      "start": 4843.24,
-      "end": 4850.54,
-      "text": "Jest bowiem szybko, brutalnie, ale i melodia czy trashowa motoryka przewiną się tam, gdzie trzeba."
+      "start": 4837.63,
+      "end": 4839.01,
+      "text": "pojechali w trasę z"
+    },
+    {
+      "start": 4839.01,
+      "end": 4840.4,
+      "text": "Vaderem, na pewno"
+    },
+    {
+      "start": 4840.4,
+      "end": 4841.6,
+      "text": "czuliby się jak u"
+    },
+    {
+      "start": 4841.6,
+      "end": 4843.02,
+      "text": "siebie w domu."
+    },
+    {
+      "start": 4843.02,
+      "end": 4844.5,
+      "text": "Jest bowiem szybko,"
+    },
+    {
+      "start": 4844.5,
+      "end": 4845.74,
+      "text": "brutalnie, ale i"
+    },
+    {
+      "start": 4845.74,
+      "end": 4847.24,
+      "text": "melodia czy trashowa"
+    },
+    {
+      "start": 4847.24,
+      "end": 4848.56,
+      "text": "motoryka przewiną"
+    },
+    {
+      "start": 4848.56,
+      "end": 4849.64,
+      "text": "się tam, gdzie"
+    },
+    {
+      "start": 4849.64,
+      "end": 4850.56,
+      "text": "trzeba."
     },
     {
       "start": 4851.44,
-      "end": 4861.22,
-      "text": "The Rain będzie trzecią płytą zespołu i może jeszcze do niej wrócimy, a póki co Abyssus opowie nam o znaczeniu bólu."
+      "end": 4852.65,
+      "text": "The Rain będzie"
     },
     {
-      "start": 5061.22,
-      "end": 5081.54,
-      "text": "Unverkalt rezyduje w Niemczech. W skład zespołu wchodzi dwóch Niemców i jeden Rosjanin, ale ton grupie nadaje para Greków. Gitarzysta i autor muzyki Temis Joanno oraz wokalistka Dimitra Kalawrezo."
+      "start": 4852.65,
+      "end": 4854.47,
+      "text": "trzecią płytą zespołu"
     },
     {
-      "start": 5081.54,
+      "start": 4854.47,
+      "end": 4855.67,
+      "text": "i może jeszcze do"
+    },
+    {
+      "start": 4855.67,
+      "end": 4857.31,
+      "text": "niej wrócimy, a póki"
+    },
+    {
+      "start": 4857.31,
+      "end": 4858.71,
+      "text": "co Abyssus opowie"
+    },
+    {
+      "start": 4858.71,
+      "end": 4860.86,
+      "text": "nam o znaczeniu błogu."
+    },
+    {
+      "start": 5066.52,
+      "end": 5067.76,
+      "text": "Dwóch Niemców i"
+    },
+    {
+      "start": 5067.76,
+      "end": 5069.84,
+      "text": "jeden Rosjanin, ale"
+    },
+    {
+      "start": 5069.84,
+      "end": 5071.62,
+      "text": "ton grupie nadaje"
+    },
+    {
+      "start": 5071.62,
+      "end": 5074.21,
+      "text": "para Greków, gitarzysta"
+    },
+    {
+      "start": 5074.21,
+      "end": 5076.29,
+      "text": "i autor muzyki Temis"
+    },
+    {
+      "start": 5076.29,
+      "end": 5079.12,
+      "text": "Joanno oraz wokalistka"
+    },
+    {
+      "start": 5079.12,
+      "end": 5081.56,
+      "text": "Dimitra Kalawrezo."
+    },
+    {
+      "start": 5081.88,
+      "end": 5083.84,
+      "text": "Oni zresztą Unverkalt"
+    },
+    {
+      "start": 5083.84,
+      "end": 5085.64,
+      "text": "zakładali dekadę"
+    },
+    {
+      "start": 5085.64,
+      "end": 5087.48,
+      "text": "temu w Atenach."
+    },
+    {
+      "start": 5087.48,
+      "end": 5088.99,
+      "text": "Na początku tego"
+    },
+    {
+      "start": 5088.99,
+      "end": 5090.49,
+      "text": "roku ukazała się"
+    },
+    {
+      "start": 5090.49,
+      "end": 5092.29,
+      "text": "trzecia płyta grupy"
+    },
+    {
+      "start": 5092.29,
+      "end": 5094.73,
+      "text": "zatytułowana Herediter,"
+    },
+    {
+      "start": 5094.73,
+      "end": 5096.34,
+      "text": "z której wybrałem"
+    },
+    {
+      "start": 5096.34,
+      "end": 5098.26,
+      "text": "dla Państwa piosenkę"
+    },
+    {
+      "start": 5098.26,
       "end": 5099.6,
-      "text": "Oni zresztą Unverkalt zakładali dekadę temu w Atenach. Na początku tego roku ukazała się trzecia płyta grupy zatytułowana Herediter, z której wybrałem dla Państwa piosenkę Eneliti."
+      "text": "Eneliti."
     },
     {
       "start": 5099.6,
+      "end": 5101.46,
+      "text": "To lament za Grekami"
+    },
+    {
+      "start": 5101.46,
+      "end": 5103.72,
+      "text": "z Pontu, Joni i Tracji,"
+    },
+    {
+      "start": 5103.72,
+      "end": 5105.65,
+      "text": "ofiarami wydarzeń,"
+    },
+    {
+      "start": 5105.65,
+      "end": 5107.17,
+      "text": "które w greckiej"
+    },
+    {
+      "start": 5107.17,
+      "end": 5109.32,
+      "text": "historiografii nazywa"
+    },
+    {
+      "start": 5109.32,
+      "end": 5111.25,
+      "text": "się katastrofą w Azji"
+    },
+    {
+      "start": 5111.25,
+      "end": 5113.72,
+      "text": "Mniejszej lub katastrofą"
+    },
+    {
+      "start": 5113.72,
       "end": 5114.8,
-      "text": "To lament za Grekami z Pontu, Joni i Tracji, ofiarami wydarzeń, które w greckiej historiografii nazywa się katastrofą w Azji Mniejszej lub katastrofą Smyrny,"
+      "text": "Smyrny,"
     },
     {
       "start": 5114.8,
+      "end": 5116.5,
+      "text": "a więc przegranej"
+    },
+    {
+      "start": 5116.5,
+      "end": 5118.87,
+      "text": "wojny grecko-tureckiej"
+    },
+    {
+      "start": 5118.87,
+      "end": 5120.89,
+      "text": "toczącej się w latach"
+    },
+    {
+      "start": 5120.89,
+      "end": 5125.07,
+      "text": "1919-1922 i zakończonej"
+    },
+    {
+      "start": 5125.07,
       "end": 5128.14,
-      "text": "a więc przegranej wojny grecko-tureckiej toczącej się w latach 1919-1922 i zakończonej spaleniem właśnie Smyrny."
+      "text": "spaleniem właśnie Smyrny."
     },
     {
       "start": 5128.14,
+      "end": 5129.7,
+      "text": "To nie jest wbrew"
+    },
+    {
+      "start": 5129.7,
+      "end": 5131.47,
+      "text": "pozorom odległa"
+    },
+    {
+      "start": 5131.47,
+      "end": 5133.15,
+      "text": "historia, to coś co"
+    },
+    {
+      "start": 5133.15,
+      "end": 5135.26,
+      "text": "rzutuje na dzisiejsze"
+    },
+    {
+      "start": 5135.26,
+      "end": 5137.04,
+      "text": "relacje obu państw"
+    },
+    {
+      "start": 5137.04,
+      "end": 5138.89,
+      "text": "i nastroje, a co za"
+    },
+    {
+      "start": 5138.89,
+      "end": 5140.2,
+      "text": "tym idzie również"
+    },
+    {
+      "start": 5140.2,
+      "end": 5141.67,
+      "text": "decyzje polityczne"
+    },
+    {
+      "start": 5141.67,
       "end": 5142.58,
-      "text": "To nie jest wbrew pozorom odległa historia. To coś, co rzutuje na dzisiejsze relacje obu państw i nastroje, a co za tym idzie również decyzje polityczne Greków."
+      "text": "Greków."
     },
     {
       "start": 5143.14,
-      "end": 5147.5,
-      "text": "Krótko mówiąc, znowu nas ta polityka dopadła."
+      "end": 5144.86,
+      "text": "Krótko mówiąc, znowu"
     },
     {
-      "start": 5477.39,
-      "end": 5497.63,
-      "text": "Słuchacie ciężko na sercu z muzyką płynącą z Grecji i muzyką opowiadającą o Grecji, bo obiecywałem na początku audycji, pamiętam, że nie skupię się dziś wyłącznie na tym, co grają Grecy, ale też na tym, co jest grane o nich."
+      "start": 5144.86,
+      "end": 5147.16,
+      "text": "nas ta polityka dopadła."
     },
     {
-      "start": 5497.63,
-      "end": 5521.45,
-      "text": "A więc o metalu, co powstał zasilany wspaniałą grecką mitologią, literaturą i historią. Dałoby się z tego zrobić całą audycję, albo i trzy, więc dzisiaj tylko liźniemy temat, odpuszczając sobie agonię Achillesa z płyty Triumph of Steel, amerykańskiej grupy Manwar,"
+      "start": 5477.34,
+      "end": 5479.46,
+      "text": "Słuchacie ciężko na"
     },
     {
-      "start": 5521.45,
-      "end": 5530.23,
-      "text": "Bo choć to czasy, kiedy Manwar był w swojej najlepszej formie, rzecz trwa ponad 28 minut."
+      "start": 5479.46,
+      "end": 5482.05,
+      "text": "sercu z muzyką płynącą"
     },
     {
-      "start": 5530.85,
-      "end": 5544.07,
-      "text": "Nie zagram też dziś niczego z Odysei, innego amerykańskiego zespołu Symphony X, bo choć większość tej płyty oparta jest na eposie Homera,"
+      "start": 5482.05,
+      "end": 5484.09,
+      "text": "z Grecji i muzyką"
     },
     {
-      "start": 5544.07,
-      "end": 5552.85,
-      "text": "To znowu utwór tytułowy składa się z siedmiu części i trwa 24 minuty."
+      "start": 5484.09,
+      "end": 5487.22,
+      "text": "opowiadającą o Grecji,"
     },
     {
-      "start": 5552.97,
-      "end": 5555.27,
-      "text": "Nie mogę wam tego zrobić."
+      "start": 5487.22,
+      "end": 5488.34,
+      "text": "bo obiecywałem na"
     },
     {
-      "start": 5555.79,
-      "end": 5564.85,
-      "text": "Sięgnę za to po płytę innej amerykańskiej grupy heavy metalowej, która upodobała sobie antyk, czyli Virgin Steel."
+      "start": 5488.34,
+      "end": 5489.66,
+      "text": "początku audycji,"
     },
     {
-      "start": 5566.43,
-      "end": 5577.27,
-      "text": "Muszę powiedzieć, że choć rzadko słucham takich odmian metalu, Virgin Steel jest zespołem, który niezmiennie cenię za muzykę,"
+      "start": 5489.66,
+      "end": 5491.35,
+      "text": "pamiętam, że nie skupię"
     },
     {
-      "start": 5577.27,
-      "end": 5593.95,
-      "text": "Ale też za erudycję i fantastycznie nerdowskie opracowywanie tematów, za które się biorą, czerpiąc garściami z literatury, Biblii i mitologii, przede wszystkim greckiej."
+      "start": 5491.35,
+      "end": 5492.72,
+      "text": "się dziś wyłącznie"
     },
     {
-      "start": 5593.95,
-      "end": 5608.85,
-      "text": "Pod koniec ubiegłego stulecia Virgin Steel stworzyli na przykład blisko trzygodzinną, rozłożoną na dwa albumy, interpretacje Orestei, Ice Hillosa,"
+      "start": 5492.72,
+      "end": 5493.76,
+      "text": "na tym, co grają"
     },
     {
-      "start": 5609.95,
-      "end": 5618.51,
-      "text": "A więc pięknej, strasznej i pouczającej opowieści o klątwie ciążącej nad rodem atrydów."
+      "start": 5493.76,
+      "end": 5495.26,
+      "text": "Grecy, ale też na"
     },
     {
-      "start": 5618.77,
-      "end": 5630.51,
-      "text": "Też przecież opowieści ocierającej się o Iliadę i Odyseję, bo pierwsza część Orestei opowiada o marnym końcu króla Agamemnona,"
+      "start": 5495.26,
+      "end": 5496.86,
+      "text": "tym, co jest grane"
     },
     {
-      "start": 5630.71,
-      "end": 5645.87,
-      "text": "Który co prawda zwyciężył pod troją, ale po powrocie do domu został zabity przez swoją żonę Klitajmestrę za to, że złożył bogom w ofierze ich córkę."
+      "start": 5496.86,
+      "end": 5498.24,
+      "text": "o nich, a więc o"
     },
     {
-      "start": 5985.76,
-      "end": 5997.2,
-      "text": "Czas na projekt absolutnie wyjątkowy, przedziwny produkt globalizacji, która przecież odcisnęła swoje piętno też na świecie kultury."
+      "start": 5498.24,
+      "end": 5500,
+      "text": "metalu, co powstał"
     },
     {
-      "start": 5998.3,
-      "end": 6007.18,
-      "text": "Otóż zespół w studiu jednoosobowy na scenie Trio pochodzi z Chin, obecnie rezyduje we Francji."
+      "start": 5500,
+      "end": 5501.77,
+      "text": "zasilany wspaniałą"
     },
     {
-      "start": 6007.18,
-      "end": 6018.48,
-      "text": "Gra black metal o skandynawskiej proweniencji z naleciałościami amerykańskiego death metalu i jeszcze progresywnym zacięciem."
+      "start": 5501.77,
+      "end": 5503.54,
+      "text": "grecką mitologią,"
     },
     {
-      "start": 6019.04,
-      "end": 6028.94,
-      "text": "Ale nazwę ma grecką teksty po grecku i oprawę wszystkich płyt nawiązującą do chleńskiego antyku."
+      "start": 5503.54,
+      "end": 5505.98,
+      "text": "literaturą i historią."
     },
     {
-      "start": 6028.94,
-      "end": 6045.24,
-      "text": "W dodatku stosuje konsekwentnie i wyłącznie alfabet grecki, a więc znalezienie ich w sieci wymaga pewnego wysiłku dla osobników nawykłych, jak ja, do liternictwa łacińskiego."
+      "start": 5506.5,
+      "end": 5507.88,
+      "text": "Dałoby się z tego"
     },
     {
-      "start": 6045.8,
-      "end": 6068.6,
-      "text": "Warto jednak się postarać, bo hoplitz, tak, hoplici, czyli żołnierze w tej dawnej Grecji, to nie tylko egzotyczne dziwadło, to naprawdę świetna muzyka, czego za chwilę dowiodę prezentując fragment albumu Paramainomeni."
+      "start": 5507.88,
+      "end": 5509.88,
+      "text": "zrobić całą audycję,"
     },
     {
-      "start": 6468.28,
-      "end": 6485.82,
-      "text": "Za nami greccy hoplici z Chin, ale z Berlina, a pożegnają nas dzisiaj Niemcy z Bawarii, którzy myślą, że żeglują po Morzu Egejskim, dzielnie walcząc z żywiołem i kaprysami bogów."
+      "start": 5509.88,
+      "end": 5511.23,
+      "text": "albo i trzy, więc"
     },
     {
-      "start": 6485.82,
-      "end": 6498.18,
-      "text": "Zresztą chyba na jedno wychodzi. Dekadę temu Imperius nagrał aż dwie płyty zatytułowane Opowieści o nieszczęściu. Podróż Odyseusza."
+      "start": 5511.23,
+      "end": 5513.2,
+      "text": "dzisiaj tylko liźniemy"
     },
     {
-      "start": 6498.18,
-      "end": 6516.24,
-      "text": "Pierwsza z tych płyt opowiada o odcinku spod Troj do Hadesu, druga podąża za Odyseuszem od Hadesu do Itaki. Hades zatem pojawia się na obu. No cóż, obowiązki black metalowe trzeba wypełniać."
+      "start": 5513.2,
+      "end": 5515.05,
+      "text": "temat, odpuszczając"
     },
     {
-      "start": 6516.24,
-      "end": 6533.94,
-      "text": "Obie płyty zawierają bowiem epicki black metal, ambitny, pomysłowy, czasem trochę nadęty. No ale Nolanowi też się to zarzuca, że taki pompatyczny. Nie wiem, czy da się opowiedzieć tę historię bez uniesienia i powagi."
+      "start": 5515.05,
+      "end": 5517.01,
+      "text": "sobie agonię Achillesa"
     },
     {
-      "start": 6533.94,
-      "end": 6542.98,
-      "text": "I w końcu to epos, w którym Homer zawarł albo skompilował opis większości tego wszystkiego, co w życiu ważne."
+      "start": 5517.01,
+      "end": 5518.48,
+      "text": "z płyty Triumph of"
     },
     {
-      "start": 6543.72,
-      "end": 6557.14,
-      "text": "Imperius pożegna was utworem Skorn, który jest o upokorzeniu, które musiał przełknąć Odyseusz wyrzucony z własnego domu, do którego wrócił jako nędzarz."
+      "start": 5518.48,
+      "end": 5520.42,
+      "text": "Steel, amerykańskiej"
     },
     {
-      "start": 6557.4,
-      "end": 6561.8,
-      "text": "Ale jak pewnie wiecie, to go nie zniechęciło."
+      "start": 5520.42,
+      "end": 5521.67,
+      "text": "grupy Manwar, bo"
     },
     {
-      "start": 6562.62,
-      "end": 6571.38,
-      "text": "I wam też wszystkim życzę, żeby zawsze udawało wam się wracać do swojej Itaki, gdziekolwiek was rzuci los."
+      "start": 5521.67,
+      "end": 5523.03,
+      "text": "choć to czasy,"
     },
     {
-      "start": 6572.14,
-      "end": 6572.84,
+      "start": 5523.03,
+      "end": 5524.63,
+      "text": "kiedy Manwar był w"
+    },
+    {
+      "start": 5524.63,
+      "end": 5526.32,
+      "text": "swojej najlepszej"
+    },
+    {
+      "start": 5526.32,
+      "end": 5528.11,
+      "text": "formie, rzecz trwa"
+    },
+    {
+      "start": 5528.11,
+      "end": 5530.24,
+      "text": "ponad 28 minut."
+    },
+    {
+      "start": 5530.24,
+      "end": 5532.18,
+      "text": "Nie zagram też dziś"
+    },
+    {
+      "start": 5532.18,
+      "end": 5534.42,
+      "text": "niczego z Odysei innego"
+    },
+    {
+      "start": 5534.42,
+      "end": 5536.85,
+      "text": "amerykańskiego zespołu"
+    },
+    {
+      "start": 5536.85,
+      "end": 5538.82,
+      "text": "Symphony X, bo choć"
+    },
+    {
+      "start": 5538.82,
+      "end": 5540.79,
+      "text": "większość tej płyty"
+    },
+    {
+      "start": 5540.79,
+      "end": 5542.88,
+      "text": "oparta jest na eposie"
+    },
+    {
+      "start": 5542.88,
+      "end": 5544.08,
+      "text": "Homera,"
+    },
+    {
+      "start": 5544.24,
+      "end": 5546.73,
+      "text": "To znowu utwór tytułowy"
+    },
+    {
+      "start": 5546.73,
+      "end": 5548.85,
+      "text": "składa się z siedmiu"
+    },
+    {
+      "start": 5548.85,
+      "end": 5550.99,
+      "text": "części i trwa 24"
+    },
+    {
+      "start": 5550.99,
+      "end": 5553.14,
+      "text": "minuty. Nie mogę"
+    },
+    {
+      "start": 5553.14,
+      "end": 5555.28,
+      "text": "wam tego zrobić."
+    },
+    {
+      "start": 5555.8,
+      "end": 5557.39,
+      "text": "Sięgnę za to po płytę"
+    },
+    {
+      "start": 5557.39,
+      "end": 5559.18,
+      "text": "innej amerykańskiej"
+    },
+    {
+      "start": 5559.18,
+      "end": 5561.14,
+      "text": "grupy heavy metalowej,"
+    },
+    {
+      "start": 5561.14,
+      "end": 5562.48,
+      "text": "która upodobała"
+    },
+    {
+      "start": 5562.48,
+      "end": 5564.11,
+      "text": "sobie Antic, czyli"
+    },
+    {
+      "start": 5564.11,
+      "end": 5565.66,
+      "text": "Virgin Steel."
+    },
+    {
+      "start": 5566.3,
+      "end": 5567.81,
+      "text": "Muszę powiedzieć,"
+    },
+    {
+      "start": 5567.81,
+      "end": 5569.74,
+      "text": "że choć rzadko słucham"
+    },
+    {
+      "start": 5569.74,
+      "end": 5571.66,
+      "text": "takich odmian metalu,"
+    },
+    {
+      "start": 5571.66,
+      "end": 5574.25,
+      "text": "Virgin Steel jest zespołem,"
+    },
+    {
+      "start": 5574.25,
+      "end": 5575.62,
+      "text": "który niezmiennie"
+    },
+    {
+      "start": 5575.62,
+      "end": 5577.28,
+      "text": "cenię za muzykę,"
+    },
+    {
+      "start": 5577.28,
+      "end": 5579.62,
+      "text": "ale też za erudycję"
+    },
+    {
+      "start": 5579.62,
+      "end": 5581.31,
+      "text": "i fantastycznie"
+    },
+    {
+      "start": 5581.31,
+      "end": 5583.83,
+      "text": "nerdowskie opracowywanie"
+    },
+    {
+      "start": 5583.83,
+      "end": 5584.52,
+      "text": "tematów,"
+    },
+    {
+      "start": 5585.18,
+      "end": 5587.18,
+      "text": "Za które się biorą,"
+    },
+    {
+      "start": 5587.18,
+      "end": 5588.38,
+      "text": "czerpiąc garściami"
+    },
+    {
+      "start": 5588.38,
+      "end": 5590.08,
+      "text": "z literatury, Biblii"
+    },
+    {
+      "start": 5590.08,
+      "end": 5592.06,
+      "text": "i mitologii, przede"
+    },
+    {
+      "start": 5592.06,
+      "end": 5594.18,
+      "text": "wszystkim greckiej,"
+    },
+    {
+      "start": 5594.18,
+      "end": 5596.34,
+      "text": "pod koniec ubiegłego"
+    },
+    {
+      "start": 5596.34,
+      "end": 5597.34,
+      "text": "stulecia"
+    },
+    {
+      "start": 5597.34,
+      "end": 5599.19,
+      "text": "Virgin Steel stworzyli"
+    },
+    {
+      "start": 5599.19,
+      "end": 5600.82,
+      "text": "na przykład blisko"
+    },
+    {
+      "start": 5600.82,
+      "end": 5603.26,
+      "text": "trzygodzinną rozłożoną"
+    },
+    {
+      "start": 5603.26,
+      "end": 5605.18,
+      "text": "na dwa albumy"
+    },
+    {
+      "start": 5605.18,
+      "end": 5607.65,
+      "text": "interpretację Orestei,"
+    },
+    {
+      "start": 5607.65,
+      "end": 5609.94,
+      "text": "Aeschylosa, a więc"
+    },
+    {
+      "start": 5609.94,
+      "end": 5611.66,
+      "text": "pięknej, strasznej"
+    },
+    {
+      "start": 5611.66,
+      "end": 5614.31,
+      "text": "i pouczającej opowieści"
+    },
+    {
+      "start": 5614.31,
+      "end": 5616.5,
+      "text": "o klątwie ciążącej"
+    },
+    {
+      "start": 5616.5,
+      "end": 5618.52,
+      "text": "nad rodem atrydów."
+    },
+    {
+      "start": 5618.66,
+      "end": 5620.77,
+      "text": "Też przecież opowieści"
+    },
+    {
+      "start": 5620.77,
+      "end": 5622.97,
+      "text": "ocierającej się o Iliadę"
+    },
+    {
+      "start": 5622.97,
+      "end": 5624.22,
+      "text": "i Odyseję, bo"
+    },
+    {
+      "start": 5624.22,
+      "end": 5626.34,
+      "text": "pierwsza część Orestei"
+    },
+    {
+      "start": 5626.34,
+      "end": 5628.22,
+      "text": "opowiada o marnym"
+    },
+    {
+      "start": 5628.22,
+      "end": 5630.27,
+      "text": "końcu króla Agamemnona,"
+    },
+    {
+      "start": 5630.27,
+      "end": 5633.16,
+      "text": "który co prawda zwyciężył"
+    },
+    {
+      "start": 5633.16,
+      "end": 5634.96,
+      "text": "pod troją, ale po"
+    },
+    {
+      "start": 5634.96,
+      "end": 5636.52,
+      "text": "powrocie do domu"
+    },
+    {
+      "start": 5636.52,
+      "end": 5638.42,
+      "text": "został zabity przez"
+    },
+    {
+      "start": 5638.42,
+      "end": 5640.82,
+      "text": "swoją żonę Clitajmestrę"
+    },
+    {
+      "start": 5640.82,
+      "end": 5642.28,
+      "text": "za to, że złożył"
+    },
+    {
+      "start": 5642.28,
+      "end": 5644.6,
+      "text": "bogom w ofierze ich."
+    },
+    {
+      "start": 5986.01,
+      "end": 5987.15,
+      "text": "Czas na projekt"
+    },
+    {
+      "start": 5987.15,
+      "end": 5989.05,
+      "text": "absolutnie wyjątkowy,"
+    },
+    {
+      "start": 5989.05,
+      "end": 5990.82,
+      "text": "przedziwny produkt"
+    },
+    {
+      "start": 5990.82,
+      "end": 5992.29,
+      "text": "globalizacji, która"
+    },
+    {
+      "start": 5992.29,
+      "end": 5993.92,
+      "text": "przecież odcisnęła"
+    },
+    {
+      "start": 5993.92,
+      "end": 5995.45,
+      "text": "swoje piętno też na"
+    },
+    {
+      "start": 5995.45,
+      "end": 5997.19,
+      "text": "świecie kultury."
+    },
+    {
+      "start": 5998.31,
+      "end": 5999.34,
+      "text": "Otóż zespół w studiu"
+    },
+    {
+      "start": 5999.34,
+      "end": 6001.07,
+      "text": "jednoosobowy na"
+    },
+    {
+      "start": 6001.07,
+      "end": 6003.35,
+      "text": "scenie Trio pochodzi"
+    },
+    {
+      "start": 6003.35,
+      "end": 6005.94,
+      "text": "z Chin, obecnie rezyduje"
+    },
+    {
+      "start": 6005.94,
+      "end": 6007.19,
+      "text": "we Francji."
+    },
+    {
+      "start": 6007.19,
+      "end": 6008.61,
+      "text": "Gra black metal o"
+    },
+    {
+      "start": 6008.61,
+      "end": 6011.08,
+      "text": "skandynawskiej proweniencji"
+    },
+    {
+      "start": 6011.08,
+      "end": 6012.64,
+      "text": "z naleciałościami"
+    },
+    {
+      "start": 6012.64,
+      "end": 6014.44,
+      "text": "amerykańskiego"
+    },
+    {
+      "start": 6014.44,
+      "end": 6015.17,
+      "text": "death metalu i"
+    },
+    {
+      "start": 6015.17,
+      "end": 6017.03,
+      "text": "jeszcze progresywnym"
+    },
+    {
+      "start": 6017.03,
+      "end": 6018.47,
+      "text": "zacięciem."
+    },
+    {
+      "start": 6019.03,
+      "end": 6020.45,
+      "text": "Ale nazwę ma grecką"
+    },
+    {
+      "start": 6020.45,
+      "end": 6022.29,
+      "text": "teksty po grecku i"
+    },
+    {
+      "start": 6022.29,
+      "end": 6024.25,
+      "text": "oprawę wszystkich"
+    },
+    {
+      "start": 6024.25,
+      "end": 6026.33,
+      "text": "płyt nawiązującą do"
+    },
+    {
+      "start": 6026.33,
+      "end": 6028.95,
+      "text": "chleńskiego antyku."
+    },
+    {
+      "start": 6028.95,
+      "end": 6030.51,
+      "text": "W dodatku stosuje"
+    },
+    {
+      "start": 6030.51,
+      "end": 6032.84,
+      "text": "konsekwentnie i wyłącznie"
+    },
+    {
+      "start": 6032.84,
+      "end": 6034.46,
+      "text": "alfabet grecki, a"
+    },
+    {
+      "start": 6034.46,
+      "end": 6036.22,
+      "text": "więc znalezienie"
+    },
+    {
+      "start": 6036.22,
+      "end": 6037.54,
+      "text": "ich w sieci wymaga"
+    },
+    {
+      "start": 6037.54,
+      "end": 6039.53,
+      "text": "pewnego wysiłku dla"
+    },
+    {
+      "start": 6039.53,
+      "end": 6041.54,
+      "text": "osobników nawykłych"
+    },
+    {
+      "start": 6041.54,
+      "end": 6043.58,
+      "text": "jak ja do liternictwa"
+    },
+    {
+      "start": 6043.58,
+      "end": 6045.25,
+      "text": "łacińskiego."
+    },
+    {
+      "start": 6045.61,
+      "end": 6047.35,
+      "text": "Warto jednak się"
+    },
+    {
+      "start": 6047.35,
+      "end": 6049.95,
+      "text": "postarać, bo hoplits,"
+    },
+    {
+      "start": 6049.95,
+      "end": 6052.06,
+      "text": "tak hoplici, czyli"
+    },
+    {
+      "start": 6052.06,
+      "end": 6054.39,
+      "text": "żołnierze w tej dawnej"
+    },
+    {
+      "start": 6054.39,
+      "end": 6056.13,
+      "text": "Grecji, to nie"
+    },
+    {
+      "start": 6056.13,
+      "end": 6057.78,
+      "text": "tylko egzotyczne"
+    },
+    {
+      "start": 6057.78,
+      "end": 6059.28,
+      "text": "dziwadło, to"
+    },
+    {
+      "start": 6059.28,
+      "end": 6062.11,
+      "text": "naprawdę świetna muzyka,"
+    },
+    {
+      "start": 6062.11,
+      "end": 6064.33,
+      "text": "czego za chwilę dowiodę"
+    },
+    {
+      "start": 6064.33,
+      "end": 6065.4,
+      "text": "prezentując"
+    },
+    {
+      "start": 6065.4,
+      "end": 6066.79,
+      "text": "fragment albumu"
+    },
+    {
+      "start": 6066.79,
+      "end": 6068.57,
+      "text": "Paramainomeni."
+    },
+    {
+      "start": 6469.15,
+      "end": 6470.92,
+      "text": "Za nami greccy hoplici"
+    },
+    {
+      "start": 6470.92,
+      "end": 6472.89,
+      "text": "z Chin, ale z Berlina,"
+    },
+    {
+      "start": 6472.89,
+      "end": 6474.21,
+      "text": "a pożegnają nas"
+    },
+    {
+      "start": 6474.21,
+      "end": 6476.67,
+      "text": "dzisiaj Niemcy z Bawarii,"
+    },
+    {
+      "start": 6476.77,
+      "end": 6479.1,
+      "text": "którzy myślą, że żeglują"
+    },
+    {
+      "start": 6479.1,
+      "end": 6481.15,
+      "text": "po Morzu Egejskim,"
+    },
+    {
+      "start": 6481.15,
+      "end": 6482.73,
+      "text": "dzielnie walcząc z"
+    },
+    {
+      "start": 6482.73,
+      "end": 6484.71,
+      "text": "żywiołem i kaprysami"
+    },
+    {
+      "start": 6484.71,
+      "end": 6485.81,
+      "text": "bogów."
+    },
+    {
+      "start": 6485.81,
+      "end": 6486.98,
+      "text": "Zresztą chyba na"
+    },
+    {
+      "start": 6486.98,
+      "end": 6488.33,
+      "text": "jedno wychodzi."
+    },
+    {
+      "start": 6488.97,
+      "end": 6490.39,
+      "text": "Dekadę temu Imperius"
+    },
+    {
+      "start": 6490.39,
+      "end": 6492.33,
+      "text": "nagrał aż dwie płyty"
+    },
+    {
+      "start": 6492.33,
+      "end": 6493.81,
+      "text": "zatytułowane"
+    },
+    {
+      "start": 6493.81,
+      "end": 6496.46,
+      "text": "Opowieści o nieszczęściu."
+    },
+    {
+      "start": 6496.46,
+      "end": 6498.19,
+      "text": "Podróż Odyseusza."
+    },
+    {
+      "start": 6498.61,
+      "end": 6500.48,
+      "text": "Pierwsza z tych płyt"
+    },
+    {
+      "start": 6500.48,
+      "end": 6502.24,
+      "text": "opowiada o odcinku"
+    },
+    {
+      "start": 6502.24,
+      "end": 6504.25,
+      "text": "spod Troj do Hadesu,"
+    },
+    {
+      "start": 6504.37,
+      "end": 6507.02,
+      "text": "druga podąża za Odyseuszem"
+    },
+    {
+      "start": 6507.02,
+      "end": 6509.27,
+      "text": "od Hadesu do Itaki."
+    },
+    {
+      "start": 6509.27,
+      "end": 6510.69,
+      "text": "Hades zatem pojawia"
+    },
+    {
+      "start": 6510.69,
+      "end": 6512.31,
+      "text": "się na obu. No cóż,"
+    },
+    {
+      "start": 6512.31,
+      "end": 6513.65,
+      "text": "obowiązki black"
+    },
+    {
+      "start": 6513.65,
+      "end": 6516.25,
+      "text": "metalowe trzeba wypełniać."
+    },
+    {
+      "start": 6516.79,
+      "end": 6518.3,
+      "text": "Obie płyty zawierają"
+    },
+    {
+      "start": 6518.3,
+      "end": 6520.25,
+      "text": "bowiem epicki black"
+    },
+    {
+      "start": 6520.25,
+      "end": 6522.71,
+      "text": "metal, ambitny, pomysłowy,"
+    },
+    {
+      "start": 6522.71,
+      "end": 6524.79,
+      "text": "czasem trochę nadęty."
+    },
+    {
+      "start": 6525.41,
+      "end": 6526.54,
+      "text": "No ale Nolanowi też"
+    },
+    {
+      "start": 6526.54,
+      "end": 6527.7,
+      "text": "się to zarzuca, że"
+    },
+    {
+      "start": 6527.7,
+      "end": 6529.05,
+      "text": "taki pompatyczny."
+    },
+    {
+      "start": 6529.05,
+      "end": 6529.76,
+      "text": "Nie wiem, czy da"
+    },
+    {
+      "start": 6529.76,
+      "end": 6530.57,
+      "text": "się opowiedzieć tę"
+    },
+    {
+      "start": 6530.57,
+      "end": 6532.66,
+      "text": "historię bez uniesienia"
+    },
+    {
+      "start": 6532.66,
+      "end": 6533.95,
+      "text": "i powagi."
+    },
+    {
+      "start": 6534.11,
+      "end": 6535.61,
+      "text": "W końcu to epos, w"
+    },
+    {
+      "start": 6535.61,
+      "end": 6537.31,
+      "text": "którym Homer zawarł"
+    },
+    {
+      "start": 6537.31,
+      "end": 6538.87,
+      "text": "albo skompilował"
+    },
+    {
+      "start": 6538.87,
+      "end": 6540.28,
+      "text": "opis większości"
+    },
+    {
+      "start": 6540.28,
+      "end": 6541.21,
+      "text": "tego wszystkiego,"
+    },
+    {
+      "start": 6541.21,
+      "end": 6542.97,
+      "text": "co w życiu ważne."
+    },
+    {
+      "start": 6543.71,
+      "end": 6544.78,
+      "text": "Imperius pożegna"
+    },
+    {
+      "start": 6544.78,
+      "end": 6546.91,
+      "text": "was utworem Skorn,"
+    },
+    {
+      "start": 6546.91,
+      "end": 6549.67,
+      "text": "który jest o upokorzeniu,"
+    },
+    {
+      "start": 6549.67,
+      "end": 6550.78,
+      "text": "które musiał przełknąć"
+    },
+    {
+      "start": 6550.78,
+      "end": 6552.71,
+      "text": "Odyseusz wyrzucony"
+    },
+    {
+      "start": 6552.71,
+      "end": 6554.39,
+      "text": "z własnego domu,"
+    },
+    {
+      "start": 6554.51,
+      "end": 6555.93,
+      "text": "do którego wrócił"
+    },
+    {
+      "start": 6555.93,
+      "end": 6557.17,
+      "text": "jako nędzarz."
+    },
+    {
+      "start": 6557.97,
+      "end": 6559.39,
+      "text": "Ale jak pewnie wiecie,"
+    },
+    {
+      "start": 6559.39,
+      "end": 6561.79,
+      "text": "to go nie zniechęciło."
+    },
+    {
+      "start": 6562.63,
+      "end": 6563.49,
+      "text": "I wam też wszystkim"
+    },
+    {
+      "start": 6563.49,
+      "end": 6565.32,
+      "text": "życzę, żeby zawsze"
+    },
+    {
+      "start": 6565.32,
+      "end": 6567.43,
+      "text": "udawało wam się wracać"
+    },
+    {
+      "start": 6567.43,
+      "end": 6568.77,
+      "text": "do swojej Itaki,"
+    },
+    {
+      "start": 6568.77,
+      "end": 6570.72,
+      "text": "gdziekolwiek was rzuci"
+    },
+    {
+      "start": 6570.72,
+      "end": 6571.37,
+      "text": "los."
+    },
+    {
+      "start": 6572.15,
+      "end": 6572.83,
       "text": "Dobranoc."
     }
   ],
   "stats": {
-    "windowCount": 19,
-    "transcribedAudioSec": 1757.52,
-    "segmentCount": 166,
-    "characterCount": 18667
-  },
-  "sourceId": "2026-09-09-od-hadesu-do-itaki-metal-grecki-i-o-grecji"
+    "windowCount": 18,
+    "transcribedAudioSec": 1647.38,
+    "segmentCount": 973,
+    "characterCount": 17586
+  }
 }

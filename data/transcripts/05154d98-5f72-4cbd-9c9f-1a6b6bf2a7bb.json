@@ -4,1042 +4,4837 @@
   "provider": "whisper-cpp",
   "model": "large-v3-turbo-q5_0",
   "language": "pl",
-  "fileSizeBytes": 114075245,
-  "fileMtimeMs": 1789150243155.2668,
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
   "windows": [
     {
       "index": 0,
-      "start": 0,
-      "end": 14.36
+      "start": 0.48,
+      "end": 11.64
     },
     {
       "index": 1,
-      "start": 352.29,
-      "end": 448.96
+      "start": 353.4,
+      "end": 447.46
     },
     {
       "index": 2,
-      "start": 576.04,
-      "end": 712.19
+      "start": 577.08,
+      "end": 710.98
     },
     {
       "index": 3,
-      "start": 1078.79,
-      "end": 1136.99
+      "start": 1079.71,
+      "end": 1135.29
     },
     {
       "index": 4,
-      "start": 1612.45,
-      "end": 1721.08
+      "start": 1613.4,
+      "end": 1718.84
     },
     {
       "index": 5,
-      "start": 2518.44,
-      "end": 2719.2
+      "start": 2519.48,
+      "end": 2717.6
     },
     {
       "index": 6,
-      "start": 2836.77,
-      "end": 2911.93
+      "start": 2837.85,
+      "end": 2910.25
     },
     {
       "index": 7,
-      "start": 3245.89,
-      "end": 3349.53
+      "start": 3247.58,
+      "end": 3347.86
     },
     {
       "index": 8,
-      "start": 3849.64,
-      "end": 3973.12
+      "start": 3850.97,
+      "end": 3971.85
     },
     {
       "index": 9,
-      "start": 4537.48,
-      "end": 4628.38
+      "start": 4538.79,
+      "end": 4626.95
     },
     {
       "index": 10,
-      "start": 4902.05,
-      "end": 5121.56
+      "start": 4903.04,
+      "end": 5119.7
     },
     {
       "index": 11,
-      "start": 5659.94,
-      "end": 5800.35
+      "start": 5661.05,
+      "end": 5798.45
     },
     {
       "index": 12,
-      "start": 6124.29,
-      "end": 6220.86
+      "start": 6125.24,
+      "end": 6217.48
     },
     {
       "index": 13,
-      "start": 6477.64,
-      "end": 6529.4
+      "start": 6478.65,
+      "end": 6526.83
     },
     {
       "index": 14,
-      "start": 6588.16,
-      "end": 6591.45
-    },
-    {
-      "index": 15,
-      "start": 6644.93,
-      "end": 6648.51
-    },
-    {
-      "index": 16,
-      "start": 6731.52,
-      "end": 6885.95
-    },
-    {
-      "index": 17,
-      "start": 7048.52,
-      "end": 7051.77
+      "start": 6732.6,
+      "end": 6879.66
     }
   ],
   "segments": [
     {
-      "start": 0,
-      "end": 1.52,
-      "text": "Trójka"
+      "start": 0.48,
+      "end": 11.64,
+      "text": "Ciężko na sercu."
     },
     {
-      "start": 1.52,
-      "end": 5.58,
-      "text": "Program Trzeci Polskiego Radia"
+      "start": 353.4,
+      "end": 355.43,
+      "text": "Konnichiwa. Chociaż"
     },
     {
-      "start": 5.58,
-      "end": 11.76,
-      "text": "Ciężko na sercu"
+      "start": 355.43,
+      "end": 357.5,
+      "text": "nie, już jest noc,"
     },
     {
-      "start": 11.76,
-      "end": 14.36,
-      "text": "Ciężko na sercu"
+      "start": 357.5,
+      "end": 358.54,
+      "text": "zatem to będzie"
     },
     {
-      "start": 352.29,
-      "end": 363.11,
-      "text": "Konnichiwa, chociaż nie, już jest noc, zatem to będzie jakieś inne słowo, ale niestety nie wiem, jak jest po japońsku."
+      "start": 358.54,
+      "end": 359.94,
+      "text": "jakieś inne słowo,"
     },
     {
-      "start": 363.55,
-      "end": 367.93,
-      "text": "Dobry wieczór. Powiem zatem po polsku. Dobry wieczór."
+      "start": 359.94,
+      "end": 361.06,
+      "text": "ale niestety nie"
     },
     {
-      "start": 368.03,
-      "end": 378.09,
-      "text": "Wita Was Jarek Szubrycht w kolejnej odsłonie Ciężko na sercu w imieniu własnym i Mariusza Owczarka, który te audycje wydaje."
+      "start": 361.06,
+      "end": 363.09,
+      "text": "wiem jak jest po japońsku."
     },
     {
-      "start": 378.09,
-      "end": 385.59,
-      "text": "A także w imieniu japońskiej grupy Psyche, która zagrała nam skocznię na powitanie."
+      "start": 363.09,
+      "end": 364.48,
+      "text": "Dobry wieczór."
     },
     {
-      "start": 386.05,
-      "end": 393.97,
-      "text": "Psyche to bardzo oryginalny zespół, zawsze swoimi ścieżkami przemierzający różne metalowe krainy."
+      "start": 364.48,
+      "end": 365.64,
+      "text": "Powiem zatem po"
     },
     {
-      "start": 394.17,
-      "end": 400.81,
-      "text": "Od oldschoolowego łojenia przez black metal po prog metal i eksperymenty."
+      "start": 365.64,
+      "end": 367.76,
+      "text": "polsku. Dobry wieczór."
     },
     {
-      "start": 400.81,
-      "end": 410.31,
-      "text": "Zawsze miałem poczucie, że Psyche jest u nas niedoceniany, nawet nieznany albo źle znany, ale może coś się zmienia."
+      "start": 367.76,
+      "end": 369.65,
+      "text": "Wita Was Jarek Szubrycht"
     },
     {
-      "start": 410.93,
-      "end": 422.31,
-      "text": "W ramach promocji swojej nowej płyty Goh K, której premiera już za chwilę, Psyche zagrają 4 września w Krakowie w klubie Zaścianek."
+      "start": 369.65,
+      "end": 371.2,
+      "text": "w kolejnej odsłonie"
     },
     {
-      "start": 422.77,
-      "end": 435.03,
-      "text": "Towarzyszyć im będzie amerykańska grupa Devil Master, bardzo metalowa, ale też dziwna, zapraszająca do swojego świata i elementy psychodeli i folku."
+      "start": 371.2,
+      "end": 372.88,
+      "text": "Ciężko na sercu. W"
     },
     {
-      "start": 435.03,
-      "end": 443.05,
-      "text": "Przez następne dwie minuty właśnie Devil Master przestrzegał Was, będzie przed seksem z sukubem."
+      "start": 372.88,
+      "end": 374.17,
+      "text": "imieniu własnym i"
     },
     {
-      "start": 443.57,
-      "end": 447.13,
-      "text": "Przestrzegał czy zachęcał jeden diabeł."
+      "start": 374.17,
+      "end": 376.09,
+      "text": "Mariusza Owczarka,"
     },
     {
-      "start": 576.04,
+      "start": 376.09,
+      "end": 377.14,
+      "text": "który te audycje"
+    },
+    {
+      "start": 377.14,
+      "end": 378.1,
+      "text": "wydaje."
+    },
+    {
+      "start": 378.1,
+      "end": 380.5,
+      "text": "A także w imieniu japońskiej"
+    },
+    {
+      "start": 380.5,
+      "end": 382.3,
+      "text": "grupy Psyche, która"
+    },
+    {
+      "start": 382.3,
+      "end": 384.12,
+      "text": "zagrała nam skocznie"
+    },
+    {
+      "start": 384.12,
+      "end": 386.15,
+      "text": "na powitanie. Psyche"
+    },
+    {
+      "start": 386.15,
+      "end": 387.8,
+      "text": "to bardzo oryginalny"
+    },
+    {
+      "start": 387.8,
+      "end": 389.71,
+      "text": "zespół, zawsze swoimi"
+    },
+    {
+      "start": 389.71,
+      "end": 391.77,
+      "text": "ścieżkami przemierzający"
+    },
+    {
+      "start": 391.77,
+      "end": 393.98,
+      "text": "różne metalowe krainy."
+    },
+    {
+      "start": 393.98,
+      "end": 396.38,
+      "text": "Od oldschoolowego łojenia"
+    },
+    {
+      "start": 396.38,
+      "end": 397.98,
+      "text": "przez black metal"
+    },
+    {
+      "start": 397.98,
+      "end": 400.82,
+      "text": "po prog metal i eksperymenty."
+    },
+    {
+      "start": 400.82,
+      "end": 402.69,
+      "text": "Zawsze miałem poczucie,"
+    },
+    {
+      "start": 402.69,
+      "end": 404.05,
+      "text": "że Psyche jest u"
+    },
+    {
+      "start": 404.05,
+      "end": 405.59,
+      "text": "nas niedoceniany,"
+    },
+    {
+      "start": 405.59,
+      "end": 406.69,
+      "text": "nawet nieznany albo"
+    },
+    {
+      "start": 406.69,
+      "end": 408.56,
+      "text": "źle znany, ale może"
+    },
+    {
+      "start": 408.56,
+      "end": 410.28,
+      "text": "coś się zmienia."
+    },
+    {
+      "start": 410.28,
+      "end": 412.24,
+      "text": "W ramach promocji"
+    },
+    {
+      "start": 412.24,
+      "end": 413.43,
+      "text": "swojej nowej płyty"
+    },
+    {
+      "start": 413.43,
+      "end": 415.47,
+      "text": "Goh K, której premiera"
+    },
+    {
+      "start": 415.47,
+      "end": 417.4,
+      "text": "już za chwilę, Psyche"
+    },
+    {
+      "start": 417.4,
+      "end": 419.23,
+      "text": "zagrają 4 września"
+    },
+    {
+      "start": 419.23,
+      "end": 420.85,
+      "text": "w Krakowie w klubie"
+    },
+    {
+      "start": 420.85,
+      "end": 422.3,
+      "text": "Zaścianek."
+    },
+    {
+      "start": 422.96,
+      "end": 423.51,
+      "text": "Towarzyszyć im"
+    },
+    {
+      "start": 423.51,
+      "end": 425.09,
+      "text": "będzie amerykańska"
+    },
+    {
+      "start": 425.09,
+      "end": 426.96,
+      "text": "grupa Devil Master."
+    },
+    {
+      "start": 426.96,
+      "end": 428.36,
+      "text": "Bardzo metalowa,"
+    },
+    {
+      "start": 428.36,
+      "end": 430.76,
+      "text": "ale też dziwna, zapraszająca"
+    },
+    {
+      "start": 430.76,
+      "end": 432.25,
+      "text": "do swojego świata i"
+    },
+    {
+      "start": 432.25,
+      "end": 433.89,
+      "text": "elementy psychodeli"
+    },
+    {
+      "start": 433.89,
+      "end": 435.02,
+      "text": "i folku."
+    },
+    {
+      "start": 435.02,
+      "end": 436.56,
+      "text": "Przez następne dwie"
+    },
+    {
+      "start": 436.56,
+      "end": 437.89,
+      "text": "minuty właśnie"
+    },
+    {
+      "start": 437.89,
+      "end": 439.86,
+      "text": "Devil Master przestrzegał"
+    },
+    {
+      "start": 439.86,
+      "end": 441.33,
+      "text": "was, będzie przed"
+    },
+    {
+      "start": 441.33,
+      "end": 443.04,
+      "text": "seksem z sukubem."
+    },
+    {
+      "start": 443.58,
+      "end": 444.86,
+      "text": "Przestrzegał, czy"
+    },
+    {
+      "start": 444.86,
+      "end": 447.16,
+      "text": "zachęcał jeden diabeł."
+    },
+    {
+      "start": 447.16,
+      "end": 447.46,
+      "text": "Muzyka"
+    },
+    {
+      "start": 577.08,
+      "end": 578.93,
+      "text": "To był Devil Master"
+    },
+    {
+      "start": 578.93,
+      "end": 581.16,
+      "text": "i Sex with Sukubus."
+    },
+    {
+      "start": 581.16,
+      "end": 582.79,
+      "text": "Sukub to demon udający"
+    },
+    {
+      "start": 582.79,
+      "end": 584.64,
+      "text": "atrakcyjną kobietę,"
+    },
+    {
+      "start": 584.64,
+      "end": 585.91,
+      "text": "ale proszę się nie"
+    },
+    {
+      "start": 585.91,
+      "end": 587.49,
+      "text": "bać, Sukuby przychodzą"
+    },
+    {
+      "start": 587.49,
+      "end": 588.95,
+      "text": "tylko do niegrzecznych"
+    },
+    {
+      "start": 588.95,
+      "end": 590.32,
+      "text": "chłopców, tylko w"
+    },
+    {
+      "start": 590.32,
+      "end": 591.74,
+      "text": "snach, a przecież"
+    },
+    {
+      "start": 591.74,
+      "end": 593.1,
+      "text": "nie będziecie teraz"
+    },
+    {
+      "start": 593.1,
+      "end": 594.47,
+      "text": "spać, bo będziecie"
+    },
+    {
+      "start": 594.47,
+      "end": 595.67,
+      "text": "słuchać ciężko na"
+    },
+    {
+      "start": 595.67,
       "end": 596.44,
-      "text": "To był Devil Master i Sex with Sukubus. Sukub to demon udający atrakcyjną kobietę, ale proszę się nie bać, sukuby przychodzą tylko do niegrzecznych chłopców, tylko w snach, a przecież nie będziecie teraz spać, bo będziecie słuchać ciężko na sercu."
+      "text": "sercu."
     },
     {
       "start": 596.44,
-      "end": 608.52,
-      "text": "Pierwszego wrześniowego wydania, w którym jak zawsze na początku miesiąca opowiem wam o koncertach i festiwalach, na które moim zdaniem warto zwrócić uwagę."
+      "end": 598.33,
+      "text": "Pierwszego wrześniowego"
     },
     {
-      "start": 609.18,
+      "start": 598.33,
+      "end": 599.71,
+      "text": "wydania, w którym"
+    },
+    {
+      "start": 599.71,
+      "end": 600.66,
+      "text": "jak zawsze na"
+    },
+    {
+      "start": 600.66,
+      "end": 602.05,
+      "text": "początku miesiąca"
+    },
+    {
+      "start": 602.05,
+      "end": 603.86,
+      "text": "opowiem wam o koncertach"
+    },
+    {
+      "start": 603.86,
+      "end": 605.23,
+      "text": "i festiwalach, na"
+    },
+    {
+      "start": 605.23,
+      "end": 606.66,
+      "text": "które moim zdaniem"
+    },
+    {
+      "start": 606.66,
+      "end": 608.54,
+      "text": "warto zwrócić uwagę."
+    },
+    {
+      "start": 609,
+      "end": 610.57,
+      "text": "Zaczynamy od Summer"
+    },
+    {
+      "start": 610.57,
+      "end": 612.54,
+      "text": "Dying Loud, festiwalu,"
+    },
+    {
+      "start": 612.54,
+      "end": 613.91,
+      "text": "który ma już swoją"
+    },
+    {
+      "start": 613.91,
+      "end": 614.9,
+      "text": "renomę, jak"
+    },
+    {
+      "start": 614.9,
       "end": 617.14,
-      "text": "Zaczynamy od Summer Dying Loud, festiwalu, który ma już swoją renomę, jak najbardziej zasłużoną."
+      "text": "najbardziej zasłużoną."
     },
     {
-      "start": 617.14,
+      "start": 617.52,
+      "end": 618.87,
+      "text": "Jego atuty to położenie"
+    },
+    {
+      "start": 618.87,
+      "end": 620.27,
+      "text": "w środku Polski, w"
+    },
+    {
+      "start": 620.27,
+      "end": 622.16,
+      "text": "Aleksandrowie Łódzkim,"
+    },
+    {
+      "start": 622.16,
+      "end": 623.12,
+      "text": "dzięki czemu"
+    },
+    {
+      "start": 623.12,
+      "end": 624.78,
+      "text": "wszyscy mają blisko,"
+    },
+    {
+      "start": 624.78,
+      "end": 626.59,
+      "text": "a do tego miła, rodzinna"
+    },
+    {
+      "start": 626.59,
+      "end": 627.82,
+      "text": "atmosfera oraz i"
+    },
+    {
+      "start": 627.82,
+      "end": 629.24,
+      "text": "oczywiście przede"
+    },
+    {
+      "start": 629.24,
+      "end": 630.9,
+      "text": "wszystkim atrakcyjny"
+    },
+    {
+      "start": 630.9,
       "end": 632.2,
-      "text": "Jego atuty to położenie w środku Polski, w Aleksandrowie Łódzkim, dzięki czemu wszyscy mają blisko, a do tego miła, rodzinna atmosfera oraz i oczywiście przede wszystkim atrakcyjny program."
+      "text": "program."
     },
     {
-      "start": 632.6,
+      "start": 632.2,
+      "end": 633.78,
+      "text": "Tomek, organizator"
+    },
+    {
+      "start": 633.78,
+      "end": 635.27,
+      "text": "Summer Dying Loud,"
+    },
+    {
+      "start": 635.27,
+      "end": 636.77,
+      "text": "którego niniejszym"
+    },
+    {
+      "start": 636.77,
+      "end": 638.56,
+      "text": "serdecznie pozdrawiam,"
+    },
+    {
+      "start": 638.56,
+      "end": 640.22,
+      "text": "dba nie tylko o to,"
+    },
+    {
+      "start": 640.22,
+      "end": 641.4,
+      "text": "żeby na dużej scenie"
+    },
+    {
+      "start": 641.4,
+      "end": 642.84,
+      "text": "pojawiały się nazwy"
+    },
+    {
+      "start": 642.84,
       "end": 644.36,
-      "text": "Tomek, organizator Summer Dying Loud, którego niniejszym serdecznie pozdrawiam, dba nie tylko o to, żeby na dużej scenie pojawiały się nazwy znane i lubiane,"
+      "text": "znane i lubiane,"
     },
     {
       "start": 644.36,
+      "end": 645.78,
+      "text": "ale również o to,"
+    },
+    {
+      "start": 645.78,
+      "end": 647.43,
+      "text": "żeby w ciasnej, ale"
+    },
+    {
+      "start": 647.43,
+      "end": 649.19,
+      "text": "klimatycznej krypcie"
+    },
+    {
+      "start": 649.19,
+      "end": 651.12,
+      "text": "grały dla fanów zjawiska"
+    },
+    {
+      "start": 651.12,
+      "end": 653.48,
+      "text": "nowe, ale warte grzechu,"
+    },
+    {
+      "start": 653.48,
+      "end": 656.42,
+      "text": "albo nie nowe i niepopularne,"
+    },
+    {
+      "start": 656.42,
+      "end": 658.21,
+      "text": "za to fascynujące i"
+    },
+    {
+      "start": 658.21,
       "end": 659.46,
-      "text": "ale również o to, żeby w ciasnej, ale klimatycznej krypcie grały dla fanów zjawiska nowe, ale warte grzechu, albo nie nowe i niepopularne, za to fascynujące i kultowe."
+      "text": "kultowe."
     },
     {
       "start": 660.08,
-      "end": 668.36,
-      "text": "Jeśli chodzi o tych dużych w składzie tegorocznego Summer Dying Loud, który odbywa się od 3 do 5 września,"
+      "end": 661.46,
+      "text": "Jeśli chodzi o tych"
     },
     {
-      "start": 668.8,
-      "end": 676.4,
-      "text": "to przede wszystkim trzeba wspomnieć o Tryptikon, a więc dowodzonym przez Toma Gabriela Warrior'a składzie,"
+      "start": 661.46,
+      "end": 662.75,
+      "text": "dużych w składzie"
     },
     {
-      "start": 676.4,
-      "end": 681.4,
-      "text": "który pielęgnuje dziedzictwo Hellhammer i Celtic Frost."
+      "start": 662.75,
+      "end": 664.3,
+      "text": "tegorocznego Summer"
     },
     {
-      "start": 682.08,
-      "end": 683.18,
-      "text": "Robi to dobrze."
+      "start": 664.3,
+      "end": 665.69,
+      "text": "Dying Loud, który"
     },
     {
-      "start": 684,
+      "start": 665.69,
+      "end": 667.06,
+      "text": "odbywa się od 3 do"
+    },
+    {
+      "start": 667.06,
+      "end": 668.49,
+      "text": "5 września, to"
+    },
+    {
+      "start": 668.49,
+      "end": 669.49,
+      "text": "przede wszystkim"
+    },
+    {
+      "start": 669.49,
+      "end": 670.49,
+      "text": "trzeba wspomnieć o"
+    },
+    {
+      "start": 670.49,
+      "end": 671.24,
+      "text": "Tryptikon,"
+    },
+    {
+      "start": 671.24,
+      "end": 672.74,
+      "text": "a więc dowodzonym"
+    },
+    {
+      "start": 672.74,
+      "end": 674.44,
+      "text": "przez Toma Gabriela"
+    },
+    {
+      "start": 674.44,
+      "end": 676.34,
+      "text": "Warrior'a składzie,"
+    },
+    {
+      "start": 676.34,
+      "end": 679.27,
+      "text": "który pielęgnuje dziedzictwo"
+    },
+    {
+      "start": 679.27,
+      "end": 680.65,
+      "text": "Hellhammer i Celtic"
+    },
+    {
+      "start": 680.65,
+      "end": 681.46,
+      "text": "Frost."
+    },
+    {
+      "start": 682.44,
+      "end": 683.75,
+      "text": "Robi to dobrze. Nigdy"
+    },
+    {
+      "start": 683.75,
+      "end": 685.36,
+      "text": "nie będę miał dość"
+    },
+    {
+      "start": 685.36,
+      "end": 687.42,
+      "text": "Circle of the Tyrants"
+    },
+    {
+      "start": 687.42,
+      "end": 689.47,
+      "text": "na żywo wyśpiewanego"
+    },
+    {
+      "start": 689.47,
       "end": 690.9,
-      "text": "Nigdy nie będę miał dość Circle of the Tyrants na żywo wyśpiewanego tym głosem."
+      "text": "tym głosem."
     },
     {
-      "start": 691.28,
+      "start": 690.9,
+      "end": 692.37,
+      "text": "Ale mam wrażenie,"
+    },
+    {
+      "start": 692.37,
+      "end": 694.4,
+      "text": "że przez ciągłe patrzenie"
+    },
+    {
+      "start": 694.4,
+      "end": 696.06,
+      "text": "w przeszłość fanom,"
+    },
+    {
+      "start": 696.06,
+      "end": 697.08,
+      "text": "a może nawet..."
+    },
+    {
+      "start": 697.08,
       "end": 698.46,
-      "text": "Ale mam wrażenie, że przez ciągłe patrzenie w przeszłość fanom, a może nawet samemu Tomowi,"
+      "text": "Samemu Tomowi"
     },
     {
-      "start": 699.1,
+      "start": 698.46,
+      "end": 700.43,
+      "text": "trochę umyka fakt,"
+    },
+    {
+      "start": 700.43,
+      "end": 702.66,
+      "text": "że Tryptikon to zespół"
+    },
+    {
+      "start": 702.66,
+      "end": 704.45,
+      "text": "ze znakomitym własnym"
+    },
+    {
+      "start": 704.45,
       "end": 705.84,
-      "text": "trochę umyka fakt, że Tryptikon to zespół ze znakomitym własnym repertuarem."
+      "text": "repertuarem."
     },
     {
-      "start": 705.84,
-      "end": 710.28,
-      "text": "W sumie wolałbym, żeby już skupił się na tym, co tu i teraz."
+      "start": 706.36,
+      "end": 707.26,
+      "text": "W sumie wolałbym,"
     },
     {
-      "start": 1078.79,
+      "start": 707.26,
+      "end": 708.66,
+      "text": "żeby już skupił się"
+    },
+    {
+      "start": 708.66,
+      "end": 709.61,
+      "text": "na tym, co tu i"
+    },
+    {
+      "start": 709.61,
+      "end": 710.98,
+      "text": "teraz..."
+    },
+    {
+      "start": 1079.71,
+      "end": 1081.13,
+      "text": "Kto jeszcze zagra"
+    },
+    {
+      "start": 1081.13,
+      "end": 1082.64,
+      "text": "nam na Summer Dying"
+    },
+    {
+      "start": 1082.64,
+      "end": 1084.42,
+      "text": "Loud? Na przykład"
+    },
+    {
+      "start": 1084.42,
+      "end": 1085.87,
+      "text": "prezentowani już"
+    },
+    {
+      "start": 1085.87,
+      "end": 1087.17,
+      "text": "dziś Saj i Devil"
+    },
+    {
+      "start": 1087.17,
+      "end": 1089.41,
+      "text": "Master, a także wskrzeszony"
+    },
+    {
+      "start": 1089.41,
       "end": 1091.15,
-      "text": "Kto jeszcze zagra nam na Summer Dying Loud? Na przykład prezentowani już dziś Psy i Devil Master, a także wskrzeszony z martwych Nevermore."
+      "text": "z martwych Nevermore,"
     },
     {
       "start": 1091.15,
+      "end": 1093.05,
+      "text": "zespół, którego nowy"
+    },
+    {
+      "start": 1093.05,
+      "end": 1095.14,
+      "text": "wokalista ponoć wzorowo"
+    },
+    {
+      "start": 1095.14,
+      "end": 1096.69,
+      "text": "wypełnia misję,"
+    },
+    {
+      "start": 1096.69,
+      "end": 1098.02,
+      "text": "która wydawała się"
+    },
+    {
+      "start": 1098.02,
+      "end": 1099.31,
+      "text": "zbyt karkołomna,"
+    },
+    {
+      "start": 1099.31,
       "end": 1101.07,
-      "text": "Zespół, którego nowy wokalista ponoć wzorowo wypełnia misję, która wydawała się zbyt karkołomna, żeby nawet próbować."
+      "text": "żeby nawet próbować."
     },
     {
-      "start": 1101.35,
-      "end": 1108.15,
-      "text": "Nie moi to bohaterowie, ale Nevermore to zacna, oryginalna grupa, zatem rozumiem ekscytację fanów."
+      "start": 1101.07,
+      "end": 1102.84,
+      "text": "Nie moj to bohaterowie,"
     },
     {
-      "start": 1108.79,
+      "start": 1102.84,
+      "end": 1104.01,
+      "text": "ale Nevermore to"
+    },
+    {
+      "start": 1104.01,
+      "end": 1105.46,
+      "text": "zacna, oryginalna"
+    },
+    {
+      "start": 1105.46,
+      "end": 1107.13,
+      "text": "grupa, zatem rozumiem"
+    },
+    {
+      "start": 1107.13,
+      "end": 1108.86,
+      "text": "ekscytację fanów. Z"
+    },
+    {
+      "start": 1108.86,
+      "end": 1110.42,
+      "text": "gwiazd jeszcze będą"
+    },
+    {
+      "start": 1110.42,
+      "end": 1112.3,
+      "text": "w Aleksandrowie Łódzkim"
+    },
+    {
+      "start": 1112.3,
+      "end": 1114.32,
+      "text": "m.in. Destruction,"
+    },
+    {
+      "start": 1114.32,
+      "end": 1115.78,
+      "text": "Sventevid, czyli"
+    },
+    {
+      "start": 1115.78,
+      "end": 1117.44,
+      "text": "Nergal z kolegami z"
+    },
+    {
+      "start": 1117.44,
+      "end": 1118.78,
+      "text": "islandzkiego Mr."
+    },
+    {
+      "start": 1118.78,
+      "end": 1120.5,
+      "text": "Ming, grający debiut"
+    },
+    {
+      "start": 1120.5,
       "end": 1121.81,
-      "text": "Z gwiazd jeszcze będą w Aleksandrowie Łódzkim m.in. Destruction, Sventevit, czyli Nergal z kolegami z islandzkiego Mystyrming, grający debiut Behemota."
+      "text": "Behemota."
     },
     {
-      "start": 1122.39,
-      "end": 1130.99,
-      "text": "Do tego Satyricon, Lucifer i Gesu, czyli nieco łagodniejsze wcielenie Justina Brodericka z Godflesh."
+      "start": 1121.81,
+      "end": 1123.51,
+      "text": "Do tego Satyricon,"
     },
     {
-      "start": 1131.25,
+      "start": 1123.51,
+      "end": 1124.91,
+      "text": "Lucifer i Jesu,"
+    },
+    {
+      "start": 1124.91,
+      "end": 1127.14,
+      "text": "czyli nieco łagodniejsze"
+    },
+    {
+      "start": 1127.14,
+      "end": 1128.71,
+      "text": "wcielenie Justina"
+    },
+    {
+      "start": 1128.71,
+      "end": 1131.01,
+      "text": "Brodericka z Godflesh."
+    },
+    {
+      "start": 1131.01,
+      "end": 1132.9,
+      "text": "I właśnie Jesu posłuchamy"
+    },
+    {
+      "start": 1132.9,
+      "end": 1134.38,
+      "text": "teraz, bo to piękne"
+    },
+    {
+      "start": 1134.38,
       "end": 1135.29,
-      "text": "I właśnie Gesu posłuchamy teraz, bo to piękne i dobre."
+      "text": "i dobre."
     },
     {
-      "start": 1135.29,
-      "end": 1136.99,
-      "text": "Muzyka"
+      "start": 1613.4,
+      "end": 1614.56,
+      "text": "Na chwilę jeszcze"
     },
     {
-      "start": 1612.45,
-      "end": 1632.23,
-      "text": "Na chwilę jeszcze pozostaniemy przy Summer Dying Loud, zaglądając na mniejszą scenę albo sprawdzając, kto gra na dłużej w porze, kiedy wielu festiwalowiczów jeszcze dosypia po wrażeniach dnia poprzedniego albo biesiaduje."
+      "start": 1614.56,
+      "end": 1615.84,
+      "text": "pozostaniemy przy"
     },
     {
-      "start": 1632.23,
-      "end": 1652.69,
-      "text": "Tymczasem będą to koncerty, których przespać i przebalować nie warto. Przede wszystkim dla fanów pięknego gruzu, grupa Off-Feather and Bone, czyli doskonały drapieżny death metal, ciałem ze Stanów Zjednoczonych, duchem z Królestwa Azteków."
+      "start": 1615.84,
+      "end": 1617.63,
+      "text": "Summer Dying Loud"
     },
     {
-      "start": 1652.69,
-      "end": 1674.07,
-      "text": "Oraz równie brutalne Siverus, też ze Stanów oraz Krypt z prosto z fińskiej ziemianki. Imha Tarikat, czyli black metal z Niemiec, ale też trochę z Turcji za sprawą lidera Kerema Ilmaza, który dba o to, żeby to dziedzictwo pięknie wybrzmiewało."
+      "start": 1617.63,
+      "end": 1619.64,
+      "text": "zaglądając na mniejszą"
     },
     {
-      "start": 1674.69,
-      "end": 1683.57,
-      "text": "Będzie Arabrot, czyli norweski zespół rockowy, jedyny w swoim rodzaju, a przecież o niewielu współczesnych kapelach da się to powiedzieć."
+      "start": 1619.64,
+      "end": 1621.73,
+      "text": "scenę albo sprawdzając"
     },
     {
-      "start": 1684.25,
-      "end": 1691.81,
-      "text": "Arabrot to postpunk, sludge, noise rock, unurzany w szarym, gotyckim sosie."
+      "start": 1621.73,
+      "end": 1623.18,
+      "text": "kto gra na dłużej w"
     },
     {
-      "start": 1691.81,
-      "end": 1701.79,
-      "text": "Będzie też Cryptic Shift, czyli sensacja sezonu, techniczny, futurystyczny i progresywny metal od nerdów dla nerdów."
+      "start": 1623.18,
+      "end": 1624.93,
+      "text": "porze kiedy wielu"
     },
     {
-      "start": 1702.21,
-      "end": 1709.47,
-      "text": "No i nasi rodacy ze Stellar Blight, czyli cudowne dziecko, karkas i dissection."
+      "start": 1624.93,
+      "end": 1626.18,
+      "text": "festiwalowiczów"
     },
     {
-      "start": 1710.17,
-      "end": 1712.07,
-      "text": "Powinni być na głównej swoją drogą."
+      "start": 1626.18,
+      "end": 1627.86,
+      "text": "jeszcze dosypia po"
     },
     {
-      "start": 1712.47,
-      "end": 1718.85,
-      "text": "Arabrot, Imha Tarikat i Stellar Blight to te grupy, których teraz posłuchamy."
+      "start": 1627.86,
+      "end": 1630.38,
+      "text": "wrażeniach dnia poprzedniego"
     },
     {
-      "start": 1718.85,
-      "end": 1720.87,
-      "text": "Escort for the color!"
+      "start": 1630.38,
+      "end": 1632.24,
+      "text": "albo biesiaduje."
     },
     {
-      "start": 2519.14,
+      "start": 1632.24,
+      "end": 1633.59,
+      "text": "Tymczasem będą to"
+    },
+    {
+      "start": 1633.59,
+      "end": 1635.25,
+      "text": "koncerty, których"
+    },
+    {
+      "start": 1635.25,
+      "end": 1636.98,
+      "text": "przespać i przebalować"
+    },
+    {
+      "start": 1636.98,
+      "end": 1638.59,
+      "text": "nie warto. Przede"
+    },
+    {
+      "start": 1638.59,
+      "end": 1640.17,
+      "text": "wszystkim dla fanów"
+    },
+    {
+      "start": 1640.17,
+      "end": 1641.59,
+      "text": "pięknego gruzu,"
+    },
+    {
+      "start": 1641.59,
+      "end": 1643.11,
+      "text": "grupa Off-Feather"
+    },
+    {
+      "start": 1643.11,
+      "end": 1645.26,
+      "text": "and Bone, czyli doskonały"
+    },
+    {
+      "start": 1645.26,
+      "end": 1646.89,
+      "text": "drapieżny death"
+    },
+    {
+      "start": 1646.89,
+      "end": 1648,
+      "text": "metal, ciałem ze"
+    },
+    {
+      "start": 1648,
+      "end": 1650.03,
+      "text": "Stanów Zjednoczonych,"
+    },
+    {
+      "start": 1650.03,
+      "end": 1651.48,
+      "text": "duchem z Królestwa"
+    },
+    {
+      "start": 1651.48,
+      "end": 1652.7,
+      "text": "Azteków."
+    },
+    {
+      "start": 1652.7,
+      "end": 1654.52,
+      "text": "Oraz równie brutalne"
+    },
+    {
+      "start": 1654.52,
+      "end": 1655.93,
+      "text": "Siverus, też ze"
+    },
+    {
+      "start": 1655.93,
+      "end": 1657.55,
+      "text": "Stanów oraz Krypt z"
+    },
+    {
+      "start": 1657.55,
+      "end": 1659.07,
+      "text": "prosto z fińskiej"
+    },
+    {
+      "start": 1659.07,
+      "end": 1661.68,
+      "text": "ziemianki. Imha Tarikat,"
+    },
+    {
+      "start": 1661.68,
+      "end": 1663.25,
+      "text": "czyli black metal z"
+    },
+    {
+      "start": 1663.25,
+      "end": 1664.7,
+      "text": "Niemiec, ale też"
+    },
+    {
+      "start": 1664.7,
+      "end": 1666.17,
+      "text": "trochę z Turcji za"
+    },
+    {
+      "start": 1666.17,
+      "end": 1667.91,
+      "text": "sprawą lidera Kerema"
+    },
+    {
+      "start": 1667.91,
+      "end": 1669.66,
+      "text": "Ilmaza, który dba o"
+    },
+    {
+      "start": 1669.66,
+      "end": 1671.86,
+      "text": "to, żeby to dziedzictwo"
+    },
+    {
+      "start": 1671.86,
+      "end": 1674.08,
+      "text": "pięknie wybrzmiewało."
+    },
+    {
+      "start": 1674.76,
+      "end": 1675.81,
+      "text": "Będzie Arabrot,"
+    },
+    {
+      "start": 1675.81,
+      "end": 1677.14,
+      "text": "czyli norweski zespół"
+    },
+    {
+      "start": 1677.14,
+      "end": 1678.26,
+      "text": "rockowy, jedyny w"
+    },
+    {
+      "start": 1678.26,
+      "end": 1679.5,
+      "text": "swoim rodzaju, a"
+    },
+    {
+      "start": 1679.5,
+      "end": 1680.5,
+      "text": "przecież o niewielu"
+    },
+    {
+      "start": 1680.5,
+      "end": 1681.98,
+      "text": "współczesnych kapelach"
+    },
+    {
+      "start": 1681.98,
+      "end": 1682.55,
+      "text": "da się to"
+    },
+    {
+      "start": 1682.55,
+      "end": 1683.52,
+      "text": "powiedzieć."
+    },
+    {
+      "start": 1684.24,
+      "end": 1685.71,
+      "text": "Arabrot to postpunk,"
+    },
+    {
+      "start": 1685.71,
+      "end": 1687.9,
+      "text": "sludge, noise rock,"
+    },
+    {
+      "start": 1687.9,
+      "end": 1689.83,
+      "text": "unurzany w szarym,"
+    },
+    {
+      "start": 1689.83,
+      "end": 1691.8,
+      "text": "gotyckim sosie."
+    },
+    {
+      "start": 1691.8,
+      "end": 1693.29,
+      "text": "Będzie też Cryptic"
+    },
+    {
+      "start": 1693.29,
+      "end": 1695.15,
+      "text": "Shift, czyli sensacja"
+    },
+    {
+      "start": 1695.15,
+      "end": 1696.99,
+      "text": "sezonu, techniczny,"
+    },
+    {
+      "start": 1696.99,
+      "end": 1699.3,
+      "text": "futurystyczny i progresywny"
+    },
+    {
+      "start": 1699.3,
+      "end": 1700.81,
+      "text": "metal od nerdów dla"
+    },
+    {
+      "start": 1700.81,
+      "end": 1701.8,
+      "text": "nerdów."
+    },
+    {
+      "start": 1702.2,
+      "end": 1703.7,
+      "text": "No i nasi rodacy ze"
+    },
+    {
+      "start": 1703.7,
+      "end": 1705.24,
+      "text": "Stellar Blight,"
+    },
+    {
+      "start": 1705.24,
+      "end": 1707.32,
+      "text": "czyli cudowne dziecko,"
+    },
+    {
+      "start": 1707.32,
+      "end": 1709.46,
+      "text": "karkas i dissection."
+    },
+    {
+      "start": 1710.16,
+      "end": 1710.98,
+      "text": "Powinni być na głównej"
+    },
+    {
+      "start": 1710.98,
+      "end": 1712.06,
+      "text": "swoją drogą."
+    },
+    {
+      "start": 1712.48,
+      "end": 1713.97,
+      "text": "Arabrot, Imha Tarikat"
+    },
+    {
+      "start": 1713.97,
+      "end": 1715.51,
+      "text": "i Stellar Blight to"
+    },
+    {
+      "start": 1715.51,
+      "end": 1717.22,
+      "text": "te grupy, których"
+    },
+    {
+      "start": 1717.22,
+      "end": 1718.84,
+      "text": "teraz posłuchamy."
+    },
+    {
+      "start": 2519.48,
+      "end": 2520.53,
+      "text": "Kto nie dotrze na"
+    },
+    {
+      "start": 2520.53,
+      "end": 2521.86,
+      "text": "Summer Dying Loud,"
+    },
+    {
+      "start": 2521.86,
+      "end": 2523.58,
+      "text": "bo obowiązki rodzinne,"
+    },
+    {
+      "start": 2523.58,
+      "end": 2525.3,
+      "text": "służbowe albo inne"
+    },
+    {
+      "start": 2525.3,
+      "end": 2526.76,
+      "text": "przyczyny zatrzymają"
+    },
+    {
+      "start": 2526.76,
+      "end": 2527.86,
+      "text": "go na północnym"
+    },
+    {
+      "start": 2527.86,
       "end": 2529.16,
-      "text": "Kto nie dotrze na Summer Dying Loud, bo obowiązki rodzinne, służbowe albo inne przyczyny zatrzymają go na północnym zachodzie Polski,"
+      "text": "zachodzie Polski,"
     },
     {
-      "start": 2529.96,
+      "start": 2529.98,
+      "end": 2530.53,
+      "text": "będzie mógł sobie"
+    },
+    {
+      "start": 2530.53,
+      "end": 2532.25,
+      "text": "powetować tę stratę,"
+    },
+    {
+      "start": 2532.25,
+      "end": 2533.96,
+      "text": "biorąc udział w jednym"
+    },
+    {
+      "start": 2533.96,
+      "end": 2535.32,
+      "text": "z dwóch wspólnych"
+    },
+    {
+      "start": 2535.32,
+      "end": 2536.77,
+      "text": "koncertów naszych"
+    },
+    {
+      "start": 2536.77,
       "end": 2538.1,
-      "text": "będzie mógł sobie powetować tę stratę, biorąc udział w jednym z dwóch wspólnych koncertów naszych rodzimych grup"
+      "text": "rodzimych grup."
     },
     {
       "start": 2538.1,
-      "end": 2541.56,
-      "text": "Faust Sacrifice Chainsaw i Xificurg."
+      "end": 2540.38,
+      "text": "Ten krwiożerczy skład"
     },
     {
-      "start": 2541.56,
-      "end": 2550.52,
-      "text": "Ten krwiożerczy skład zaprezentuje się w Słupsku, w Motor Rock Pubie 4 września i w Szczecinie w Krzywym Gryfie 5."
+      "start": 2540.38,
+      "end": 2542.32,
+      "text": "zaprezentuje się w"
     },
     {
-      "start": 2551.26,
+      "start": 2542.32,
+      "end": 2544.09,
+      "text": "Słupsku, w Motor"
+    },
+    {
+      "start": 2544.09,
+      "end": 2546.55,
+      "text": "Rock Pubie 4 września"
+    },
+    {
+      "start": 2546.55,
+      "end": 2548.9,
+      "text": "i w Szczecinie w Krzywym"
+    },
+    {
+      "start": 2548.9,
+      "end": 2550.5,
+      "text": "Gryfie 5."
+    },
+    {
+      "start": 2551.16,
+      "end": 2552.03,
+      "text": "Od 10 września"
+    },
+    {
+      "start": 2552.03,
+      "end": 2553.27,
+      "text": "można, a nawet"
+    },
+    {
+      "start": 2553.27,
+      "end": 2555.38,
+      "text": "trzeba, próbować złapać"
+    },
+    {
+      "start": 2555.38,
+      "end": 2556.9,
+      "text": "Puławski Dom Zły na"
+    },
+    {
+      "start": 2556.9,
       "end": 2558.92,
-      "text": "Od 10 września można, a nawet trzeba, próbować złapać Puławski Dom Zły na trasie koncertowej,"
+      "text": "trasie koncertowej,"
     },
     {
-      "start": 2559.42,
-      "end": 2562.3,
-      "text": "która zajrzy w niemal każdy zakątek Polski."
+      "start": 2558.92,
+      "end": 2560.47,
+      "text": "która zajrzy w niemal"
     },
     {
-      "start": 2562.3,
-      "end": 2575.2,
-      "text": "Nie będzie, więc wymówek, tym bardziej, że Dom Zły z tą ich wypadkową hardcora z black metalem na koncertach wypadają bardziej niż przekonująco."
+      "start": 2560.47,
+      "end": 2561.54,
+      "text": "każdy zakątek"
     },
     {
-      "start": 2576.16,
+      "start": 2561.54,
+      "end": 2562.32,
+      "text": "Polski."
+    },
+    {
+      "start": 2562.32,
+      "end": 2563.83,
+      "text": "Nie będzie, więc"
+    },
+    {
+      "start": 2563.83,
+      "end": 2565.03,
+      "text": "wymówek, tym"
+    },
+    {
+      "start": 2565.03,
+      "end": 2566.89,
+      "text": "bardziej, że Dom Zły"
+    },
+    {
+      "start": 2566.89,
+      "end": 2568.34,
+      "text": "z tą ich wypadkową"
+    },
+    {
+      "start": 2568.34,
+      "end": 2569.74,
+      "text": "hardcora z black"
+    },
+    {
+      "start": 2569.74,
+      "end": 2571.64,
+      "text": "metalem na koncertach"
+    },
+    {
+      "start": 2571.64,
+      "end": 2573.25,
+      "text": "wypadają bardziej"
+    },
+    {
+      "start": 2573.25,
+      "end": 2575.24,
+      "text": "niż przekonująco."
+    },
+    {
+      "start": 2576.08,
+      "end": 2576.86,
+      "text": "Ich trasa podzielona"
+    },
+    {
+      "start": 2576.86,
       "end": 2578.58,
-      "text": "Ich trasa podzielona jest na trzy części."
+      "text": "jest na trzy części."
     },
     {
-      "start": 2578.58,
+      "start": 2578.78,
+      "end": 2580.9,
+      "text": "Pierwsza to 10-13"
+    },
+    {
+      "start": 2580.9,
+      "end": 2582.7,
+      "text": "września, Poznań,"
+    },
+    {
+      "start": 2582.7,
+      "end": 2584.4,
+      "text": "Szczecin, Słupsk i"
+    },
+    {
+      "start": 2584.4,
       "end": 2585.1,
-      "text": "Pierwsza to 10, 13 września, Poznań, Szczecin, Słupsk i Gdańsk."
+      "text": "Gdańsk."
     },
     {
-      "start": 2585.28,
+      "start": 2585.1,
+      "end": 2586.6,
+      "text": "I tutaj twórcom ku"
+    },
+    {
+      "start": 2586.6,
+      "end": 2589.2,
+      "text": "pogrzebaniu serc towarzyszyć"
+    },
+    {
+      "start": 2589.2,
+      "end": 2591.1,
+      "text": "będą Asterie i Seventy"
+    },
+    {
+      "start": 2591.1,
       "end": 2592.38,
-      "text": "I tutaj twórcom ku pogrzebaniu serc towarzyszyć będą Asterie i 71 Tone Men."
+      "text": "One Ton Men."
     },
     {
-      "start": 2593.02,
+      "start": 2593.08,
+      "end": 2594.59,
+      "text": "Druga odsłona trasy"
+    },
+    {
+      "start": 2594.59,
+      "end": 2597.06,
+      "text": "z zespołami Love Worms"
+    },
+    {
+      "start": 2597.06,
+      "end": 2598.49,
+      "text": "oraz View of a"
+    },
+    {
+      "start": 2598.49,
+      "end": 2601.92,
+      "text": "Burning City to 17-20"
+    },
+    {
+      "start": 2601.92,
+      "end": 2604.4,
+      "text": "września i Białystok"
+    },
+    {
+      "start": 2604.4,
+      "end": 2606.78,
+      "text": "Olsztyn, Toruń oraz"
+    },
+    {
+      "start": 2606.78,
       "end": 2607.7,
-      "text": "Druga odsłona trasy z zespołami Love Worms oraz View of a Burning City to 17, 20 września i Białystok Olsztyn, Toruń oraz Łódź."
+      "text": "Łódź."
     },
     {
       "start": 2607.7,
+      "end": 2609.7,
+      "text": "A trzecia część to"
+    },
+    {
+      "start": 2609.7,
+      "end": 2612.27,
+      "text": "Dom Zły w Krakowie,"
+    },
+    {
+      "start": 2612.27,
+      "end": 2614.45,
+      "text": "Katowicach i Puławach"
+    },
+    {
+      "start": 2614.45,
+      "end": 2616.7,
+      "text": "wraz z Saw the Seed,"
+    },
+    {
+      "start": 2616.7,
       "end": 2619.82,
-      "text": "A trzecia część to Dom Zły w Krakowie, Katowicach i Puławach wraz z Saw the Seed, Rip the Fur oraz Trenami,"
+      "text": "Rip the Fur oraz Trenami,"
     },
     {
       "start": 2619.82,
+      "end": 2622.46,
+      "text": "a na finał 27 września"
+    },
+    {
+      "start": 2622.46,
+      "end": 2624.47,
+      "text": "i Warszawa, gdzie"
+    },
+    {
+      "start": 2624.47,
+      "end": 2626.83,
+      "text": "Dom Zły otworzy koncert"
+    },
+    {
+      "start": 2626.83,
       "end": 2628.48,
-      "text": "a na finał 27 września i Warszawa, gdzie Dom Zły otworzy koncert Birds in Row."
+      "text": "Birds in Row."
     },
     {
-      "start": 2629.04,
-      "end": 2635.06,
-      "text": "Niedawno zachęcałem Was tu do pójścia na koncert kultowego amerykańskiego Nonslaughter,"
+      "start": 2628.48,
+      "end": 2629.96,
+      "text": "Niedawno zachęcałem"
     },
     {
-      "start": 2635.66,
-      "end": 2644.78,
-      "text": "ale przyznaję, że sam szedłem z duszą na ramieniu, no bo co jeśli się rozczaruję i wszystkie moje smarkate emocje"
+      "start": 2629.96,
+      "end": 2631.1,
+      "text": "Was tu do pójścia"
     },
     {
-      "start": 2644.78,
+      "start": 2631.1,
+      "end": 2632.58,
+      "text": "na koncert kultowego"
+    },
+    {
+      "start": 2632.58,
+      "end": 2635.11,
+      "text": "amerykańskiego nonslaughter,"
+    },
+    {
+      "start": 2635.11,
+      "end": 2636.73,
+      "text": "ale przyznaję, że"
+    },
+    {
+      "start": 2636.73,
+      "end": 2638.35,
+      "text": "sam szedłem z duszą"
+    },
+    {
+      "start": 2638.35,
+      "end": 2639.48,
+      "text": "na ramieniu,"
+    },
+    {
+      "start": 2639.48,
+      "end": 2640.97,
+      "text": "No bo co jeśli się"
+    },
+    {
+      "start": 2640.97,
+      "end": 2642.19,
+      "text": "rozczaruję i"
+    },
+    {
+      "start": 2642.19,
+      "end": 2644.18,
+      "text": "wszystkie moje smarkate"
+    },
+    {
+      "start": 2644.18,
+      "end": 2645.29,
+      "text": "emocje związane z"
+    },
+    {
+      "start": 2645.29,
+      "end": 2646.43,
+      "text": "tym zespołem, które"
+    },
+    {
+      "start": 2646.43,
+      "end": 2647.32,
+      "text": "przechowywałem"
+    },
+    {
+      "start": 2647.32,
+      "end": 2648.67,
+      "text": "gdzieś na dnie czarnego"
+    },
+    {
+      "start": 2648.67,
+      "end": 2649.74,
+      "text": "serduszka, diabli"
+    },
+    {
+      "start": 2649.74,
       "end": 2650.38,
-      "text": "związane z tym zespołem, które przechowywałem gdzieś na dnie czarnego serduszka, Diabli wezmą."
+      "text": "wezmą."
     },
     {
       "start": 2650.72,
-      "end": 2656.06,
-      "text": "No i byli Diabli, ale na scenie fantastyczny zagrali koncert."
+      "end": 2651.92,
+      "text": "No i byli diabli,"
+    },
+    {
+      "start": 2651.92,
+      "end": 2654.22,
+      "text": "ale na scenie fantastyczny"
+    },
+    {
+      "start": 2654.22,
+      "end": 2656.04,
+      "text": "zagrali koncert."
     },
     {
       "start": 2656.8,
-      "end": 2664.14,
-      "text": "Równie niespokojny będę szedł jednak 10 września w Krakowie na występ zespołu The Laws,"
+      "end": 2657.74,
+      "text": "Równie niespokojny"
     },
     {
-      "start": 2664.36,
-      "end": 2668.62,
-      "text": "grającego repertuar starego sarkofago."
+      "start": 2657.74,
+      "end": 2659.24,
+      "text": "będę szedł jednak"
     },
     {
-      "start": 2668.96,
-      "end": 2677.7,
-      "text": "Ten legendarny brazylijski zespół nie istnieje, bo jego lider Wagner Antichrist już dawno nie jest antychrystem,"
+      "start": 2659.24,
+      "end": 2661.54,
+      "text": "10 września w Krakowie"
     },
     {
-      "start": 2678.08,
-      "end": 2686.42,
-      "text": "tylko profesorem Lamunierem i wykłada ekonomię na szacownym brazylijskim uniwersytecie."
+      "start": 2661.54,
+      "end": 2663.04,
+      "text": "na występ zespołu"
     },
     {
-      "start": 2686.42,
-      "end": 2694.28,
-      "text": "W The Laws natomiast gra jego prawa ręka z sarkofago, czyli basista Gerald Incubus."
+      "start": 2663.04,
+      "end": 2665.11,
+      "text": "The Lost, grającego"
     },
     {
-      "start": 2694.66,
-      "end": 2701.16,
-      "text": "Jest też perkusista Leprus, który przewinął się przez skład grupy na wczesnym etapie,"
+      "start": 2665.11,
+      "end": 2668.58,
+      "text": "repertuar starego Sarkofago."
     },
     {
-      "start": 2701.54,
+      "start": 2668.58,
+      "end": 2670.76,
+      "text": "Ten legendarny brazylijski"
+    },
+    {
+      "start": 2670.76,
+      "end": 2672.5,
+      "text": "zespół nie istnieje,"
+    },
+    {
+      "start": 2672.5,
+      "end": 2673.46,
+      "text": "bo jego lider"
+    },
+    {
+      "start": 2673.46,
+      "end": 2674.94,
+      "text": "Wagner Antichrist"
+    },
+    {
+      "start": 2674.94,
+      "end": 2676.26,
+      "text": "już dawno nie jest"
+    },
+    {
+      "start": 2676.26,
+      "end": 2678.3,
+      "text": "antychrystem, tylko"
+    },
+    {
+      "start": 2678.3,
+      "end": 2680.66,
+      "text": "profesorem Lamunierem"
+    },
+    {
+      "start": 2680.66,
+      "end": 2682.3,
+      "text": "i wykłada ekonomię"
+    },
+    {
+      "start": 2682.3,
+      "end": 2684.64,
+      "text": "na szacownym brazylijskim"
+    },
+    {
+      "start": 2684.64,
+      "end": 2686.44,
+      "text": "uniwersytecie."
+    },
+    {
+      "start": 2686.78,
+      "end": 2687.28,
+      "text": "W The Lost"
+    },
+    {
+      "start": 2687.28,
+      "end": 2688.98,
+      "text": "natomiast gra jego"
+    },
+    {
+      "start": 2688.98,
+      "end": 2691.19,
+      "text": "prawa ręka z Sarkofago,"
+    },
+    {
+      "start": 2691.19,
+      "end": 2692.46,
+      "text": "czyli basista"
+    },
+    {
+      "start": 2692.46,
+      "end": 2694.26,
+      "text": "Gerald Incubus."
+    },
+    {
+      "start": 2694.26,
+      "end": 2695.86,
+      "text": "Jest też perkusista"
+    },
+    {
+      "start": 2695.86,
+      "end": 2698.15,
+      "text": "Leprus, który przewinął"
+    },
+    {
+      "start": 2698.15,
+      "end": 2699.14,
+      "text": "się przez skład"
+    },
+    {
+      "start": 2699.14,
+      "end": 2700.62,
+      "text": "grupy na wczesnym"
+    },
+    {
+      "start": 2700.62,
+      "end": 2702.43,
+      "text": "etapie, a zatem bliżej"
+    },
+    {
+      "start": 2702.43,
+      "end": 2703.85,
+      "text": "Sarkofago pewnie"
+    },
+    {
+      "start": 2703.85,
+      "end": 2704.87,
+      "text": "już nigdy nie"
+    },
+    {
+      "start": 2704.87,
       "end": 2706.12,
-      "text": "a zatem bliżej sarkofago pewnie już nigdy nie będziemy."
+      "text": "będziemy."
     },
     {
-      "start": 2706.12,
-      "end": 2712.14,
-      "text": "I fakt, że występują jako The Laws uważam za uczciwsze postawienie sprawy"
+      "start": 2706.62,
+      "end": 2707.74,
+      "text": "I fakt, że występują"
     },
     {
-      "start": 2712.14,
-      "end": 2716.88,
-      "text": "niż te cyrki, które uprawiają od jakiegoś czasu różne wenomy."
+      "start": 2707.74,
+      "end": 2709.27,
+      "text": "jako The Lost uważam"
     },
     {
-      "start": 2716.88,
-      "end": 2719.2,
-      "text": "Muzyka"
+      "start": 2709.27,
+      "end": 2711.25,
+      "text": "za uczciwsze postawienie"
     },
     {
-      "start": 2837.77,
+      "start": 2711.25,
+      "end": 2712.87,
+      "text": "sprawy niż te cyrki,"
+    },
+    {
+      "start": 2712.87,
+      "end": 2714.31,
+      "text": "które uprawiają od"
+    },
+    {
+      "start": 2714.31,
+      "end": 2715.48,
+      "text": "jakiegoś czasu"
+    },
+    {
+      "start": 2715.48,
+      "end": 2716.86,
+      "text": "różne wenomy."
+    },
+    {
+      "start": 2716.86,
+      "end": 2717.6,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 2837.85,
+      "end": 2839.32,
+      "text": "Pozostajemy w Krakowie"
+    },
+    {
+      "start": 2839.32,
+      "end": 2841.05,
+      "text": "na dwudniowej imprezie,"
+    },
+    {
+      "start": 2841.05,
+      "end": 2842.6,
+      "text": "która nosi nietypową"
+    },
+    {
+      "start": 2842.6,
+      "end": 2844.25,
+      "text": "dla metalowego spędu"
+    },
+    {
+      "start": 2844.25,
       "end": 2844.93,
-      "text": "Pozostajemy w Krakowie na dwudniowej imprezie, która nosi nietypową dla metalowego spędu nazwę"
+      "text": "nazwę"
     },
     {
       "start": 2844.93,
+      "end": 2847.51,
+      "text": "30. Urodziny Założyciela"
+    },
+    {
+      "start": 2847.51,
+      "end": 2849.31,
+      "text": "Metal Music Attack."
+    },
+    {
+      "start": 2849.31,
       "end": 2851.21,
-      "text": "30. urodziny założyciela Metal Music Attack. Wszystkiego najlepszego."
+      "text": "Wszystkiego najlepszego."
     },
     {
-      "start": 2851.61,
-      "end": 2860.03,
-      "text": "Skład w garaż pubie 11 i 12 września udało mu się zebrać zacny, bo to m.in. Squash Bowels FAM,"
+      "start": 2851.49,
+      "end": 2852.68,
+      "text": "Skład w garaż pubie"
     },
     {
-      "start": 2860.43,
+      "start": 2852.68,
+      "end": 2854.62,
+      "text": "11 i 12 września"
+    },
+    {
+      "start": 2854.62,
+      "end": 2856.09,
+      "text": "udało mu się zebrać"
+    },
+    {
+      "start": 2856.09,
+      "end": 2858.49,
+      "text": "zacny, bo to m.in."
+    },
+    {
+      "start": 2858.49,
+      "end": 2860.01,
+      "text": "Squash Bowels, Fam,"
+    },
+    {
+      "start": 2860.01,
+      "end": 2861.73,
+      "text": "Incarnated Undead,"
+    },
+    {
+      "start": 2861.73,
+      "end": 2863.3,
+      "text": "Phoenix oraz"
+    },
+    {
+      "start": 2863.3,
       "end": 2865.31,
-      "text": "Incarnated Undead Phoenix oraz Quantum Void."
+      "text": "Quantum Void."
     },
     {
       "start": 2865.31,
-      "end": 2872.43,
-      "text": "12 września można też zajrzeć do Bielska Białej, do klubu Root Boy, oczywiście,"
+      "end": 2867.15,
+      "text": "12 września można"
     },
     {
-      "start": 2873.01,
+      "start": 2867.15,
+      "end": 2868.97,
+      "text": "też zajrzeć do Bielska"
+    },
+    {
+      "start": 2868.97,
+      "end": 2870.77,
+      "text": "Białej, do klubu Root"
+    },
+    {
+      "start": 2870.77,
+      "end": 2872.7,
+      "text": "Boy oczywiście,"
+    },
+    {
+      "start": 2872.7,
+      "end": 2873.74,
+      "text": "gdzie zbierze się"
+    },
+    {
+      "start": 2873.74,
+      "end": 2876.55,
+      "text": "bardzo mocny polsko-czesko-słowacki"
+    },
+    {
+      "start": 2876.55,
+      "end": 2878.61,
+      "text": "skład grający death"
+    },
+    {
+      "start": 2878.61,
       "end": 2880.55,
-      "text": "gdzie zbierze się bardzo mocny polsko-czesko-słowacki skład grający death metal i okolice."
+      "text": "metal i okolice."
     },
     {
       "start": 2881.03,
-      "end": 2885.07,
-      "text": "Ze Słowacji przybywają Dehydrated i Bloody Redemption."
+      "end": 2882.36,
+      "text": "Ze Słowacji przybywają"
     },
     {
-      "start": 2885.49,
-      "end": 2892.93,
-      "text": "Czeską scenę reprezentować będą FOB oraz Bloody Obsession i Extreme."
+      "start": 2882.36,
+      "end": 2883.88,
+      "text": "Dehydrated i Bloody"
     },
     {
-      "start": 2892.93,
+      "start": 2883.88,
+      "end": 2885.81,
+      "text": "Redemption. Czeską"
+    },
+    {
+      "start": 2885.81,
+      "end": 2888.05,
+      "text": "scenę reprezentować"
+    },
+    {
+      "start": 2888.05,
+      "end": 2889.43,
+      "text": "będą FOB oraz"
+    },
+    {
+      "start": 2889.43,
+      "end": 2891.41,
+      "text": "Bloody Obsession i"
+    },
+    {
+      "start": 2891.41,
+      "end": 2892.77,
+      "text": "Extreme."
+    },
+    {
+      "start": 2892.77,
+      "end": 2894.27,
+      "text": "Natomiast honoru"
+    },
+    {
+      "start": 2894.27,
+      "end": 2895.67,
+      "text": "Polski i kosmosu"
+    },
+    {
+      "start": 2895.67,
+      "end": 2898.07,
+      "text": "bronić będzie fantastyczny"
+    },
+    {
+      "start": 2898.07,
+      "end": 2899.57,
+      "text": "i niestety ciągle"
+    },
+    {
+      "start": 2899.57,
+      "end": 2901.37,
+      "text": "niedoceniany zespół"
+    },
+    {
+      "start": 2901.37,
       "end": 2902.69,
-      "text": "Natomiast honoru Polski i Kosmosu bronić będzie fantastyczny i niestety ciągle niedoceniany zespół Planet Hell."
+      "text": "Planet Hell."
     },
     {
-      "start": 2903.09,
-      "end": 2910.27,
-      "text": "Żeby nie być gołosłownym, zapraszam na podróż ku odległym galaktykom w towarzystwie Planet Hell właśnie."
+      "start": 2903.17,
+      "end": 2904.53,
+      "text": "Żeby nie być gołosłownym,"
     },
     {
-      "start": 2910.27,
-      "end": 2911.93,
-      "text": "Muzyka"
+      "start": 2904.53,
+      "end": 2905.89,
+      "text": "zapraszam na podróż"
     },
     {
-      "start": 3246.85,
-      "end": 3258.29,
-      "text": "Lato umrze tydzień wcześniej w Aleksandrowie Łódzkim, ale to przecież nie znaczy, że do przyszłego roku pożegnamy się już na dobre z festiwalami."
+      "start": 2905.89,
+      "end": 2907.5,
+      "text": "ku odległym galaktykom"
     },
     {
-      "start": 3258.29,
-      "end": 3272.83,
-      "text": "W Bytowie, jak co roku na dziedzińcu Zamku Krzyżackiego, a więc w scenografii dla metalu idealnej, odbędzie się kolejna edycja Thunderfest już 12 września."
+      "start": 2907.5,
+      "end": 2908.58,
+      "text": "w towarzystwie"
     },
     {
-      "start": 3273.37,
-      "end": 3281.93,
-      "text": "Impreza to niewielka, ale widać, że robiona z miłości do muzyki i że organizatorzy wiedzą co dobre."
+      "start": 2908.58,
+      "end": 2910.25,
+      "text": "Planet Hell właśnie."
     },
     {
-      "start": 3281.93,
-      "end": 3296.73,
-      "text": "W tym roku na scenie Thunderfest znajdzie się miejsce dla Samaela, The Crown, Christ's Agony, The Black Thunder, Eiffel, 1710, Toughness, Clairvoyance i Wielkiego Mroku."
+      "start": 3247.58,
+      "end": 3248.54,
+      "text": "Kto umrze tydzień"
     },
     {
-      "start": 3297.29,
-      "end": 3307.79,
-      "text": "Mam nadzieję, że Samael już się odkleił od tych niekończących się jubileuszy swoich najbardziej popularnych płyt i zajął dniem dzisiejszym."
+      "start": 3248.54,
+      "end": 3250.02,
+      "text": "wcześniej w Aleksandrowie"
     },
     {
-      "start": 3307.85,
-      "end": 3314.73,
-      "text": "Tym bardziej, że te ich ostatnie single świadczą o powrocie do sił twórczych, o czym za chwilę się przekonacie."
+      "start": 3250.02,
+      "end": 3251.04,
+      "text": "Łódzkim, ale to"
     },
     {
-      "start": 3315.53,
-      "end": 3324.09,
-      "text": "Trzeba też zwrócić uwagę na fakt, że właśnie na Kaszubach, na Thunderfescie, będzie miał miejsce ostatni w naszym kraju koncert"
+      "start": 3251.04,
+      "end": 3253.22,
+      "text": "przecież nie znaczy,"
     },
     {
-      "start": 3324.09,
-      "end": 3328.09,
-      "text": "The Crown, żegnających się już ze sceną."
+      "start": 3253.22,
+      "end": 3254.49,
+      "text": "że do przyszłego"
     },
     {
-      "start": 3329.29,
-      "end": 3345.81,
-      "text": "Skłamałbym, gdybym powiedział, że często słucham w domu płyt tych Szwedów, ale na koncertach są perfekcyjną, deftraszową maszyną do mielenia metalowców razem z katanami i pieszczochami."
+      "start": 3254.49,
+      "end": 3255.92,
+      "text": "roku pożegnamy się"
     },
     {
-      "start": 3346.65,
-      "end": 3347.87,
+      "start": 3255.92,
+      "end": 3258.28,
+      "text": "już na dobre z festiwalami."
+    },
+    {
+      "start": 3258.28,
+      "end": 3259.72,
+      "text": "W Bytowie, jak co"
+    },
+    {
+      "start": 3259.72,
+      "end": 3261.44,
+      "text": "roku, na dziedzińcu"
+    },
+    {
+      "start": 3261.44,
+      "end": 3263.26,
+      "text": "Zamku Krzyżackiego,"
+    },
+    {
+      "start": 3263.26,
+      "end": 3265.05,
+      "text": "a więc w scenografii"
+    },
+    {
+      "start": 3265.05,
+      "end": 3267.04,
+      "text": "dla metalu idealnej,"
+    },
+    {
+      "start": 3267.04,
+      "end": 3268.84,
+      "text": "odbędzie się kolejna"
+    },
+    {
+      "start": 3268.84,
+      "end": 3270.83,
+      "text": "edycja Thunderfest,"
+    },
+    {
+      "start": 3270.83,
+      "end": 3272.82,
+      "text": "już 12 września."
+    },
+    {
+      "start": 3273.36,
+      "end": 3275.28,
+      "text": "Impreza to niewielka,"
+    },
+    {
+      "start": 3275.28,
+      "end": 3277.11,
+      "text": "ale widać, że robiona"
+    },
+    {
+      "start": 3277.11,
+      "end": 3278.64,
+      "text": "z miłości do muzyki"
+    },
+    {
+      "start": 3278.64,
+      "end": 3280.18,
+      "text": "i że organizatorzy"
+    },
+    {
+      "start": 3280.18,
+      "end": 3281.92,
+      "text": "wiedzą co dobre."
+    },
+    {
+      "start": 3281.92,
+      "end": 3283.36,
+      "text": "W tym roku na scenie"
+    },
+    {
+      "start": 3283.36,
+      "end": 3285.08,
+      "text": "Thunderfest znajdzie"
+    },
+    {
+      "start": 3285.08,
+      "end": 3287.12,
+      "text": "się miejsce dla Samaela,"
+    },
+    {
+      "start": 3287.12,
+      "end": 3288.69,
+      "text": "The Crown, Christ's"
+    },
+    {
+      "start": 3288.69,
+      "end": 3290.04,
+      "text": "Agony, The Black"
+    },
+    {
+      "start": 3290.04,
+      "end": 3292.84,
+      "text": "Thunder, Eiffel, 1710,"
+    },
+    {
+      "start": 3292.84,
+      "end": 3294.92,
+      "text": "Toughness, Clairvoyance"
+    },
+    {
+      "start": 3294.92,
+      "end": 3296.74,
+      "text": "i Wielkiego Mroku."
+    },
+    {
+      "start": 3297.28,
+      "end": 3299.08,
+      "text": "Mam nadzieję, że Samael"
+    },
+    {
+      "start": 3299.08,
+      "end": 3300.37,
+      "text": "już się odkleił od"
+    },
+    {
+      "start": 3300.37,
+      "end": 3301.97,
+      "text": "tych niekończących"
+    },
+    {
+      "start": 3301.97,
+      "end": 3303.44,
+      "text": "się jubileuszy swoich"
+    },
+    {
+      "start": 3303.44,
+      "end": 3305.35,
+      "text": "najbardziej popularnych"
+    },
+    {
+      "start": 3305.35,
+      "end": 3306.65,
+      "text": "płyt i zajął dniem"
+    },
+    {
+      "start": 3306.65,
+      "end": 3307.8,
+      "text": "dzisiejszym."
+    },
+    {
+      "start": 3307.84,
+      "end": 3309,
+      "text": "Tym bardziej, że te"
+    },
+    {
+      "start": 3309,
+      "end": 3310.19,
+      "text": "ich ostatnie single"
+    },
+    {
+      "start": 3310.19,
+      "end": 3311.41,
+      "text": "świadczą o powrocie"
+    },
+    {
+      "start": 3311.41,
+      "end": 3312.57,
+      "text": "do sił twórczych, o"
+    },
+    {
+      "start": 3312.57,
+      "end": 3313.62,
+      "text": "czym za chwilę się"
+    },
+    {
+      "start": 3313.62,
+      "end": 3314.72,
+      "text": "przekonacie."
+    },
+    {
+      "start": 3315.52,
+      "end": 3316.73,
+      "text": "Trzeba też zwrócić"
+    },
+    {
+      "start": 3316.73,
+      "end": 3317.86,
+      "text": "uwagę na fakt, że"
+    },
+    {
+      "start": 3317.86,
+      "end": 3319.4,
+      "text": "właśnie na Kaszubach,"
+    },
+    {
+      "start": 3319.4,
+      "end": 3320.65,
+      "text": "na Thunderfescie,"
+    },
+    {
+      "start": 3320.65,
+      "end": 3322.28,
+      "text": "będzie miał miejsce"
+    },
+    {
+      "start": 3322.28,
+      "end": 3323,
+      "text": "ostatni w naszym"
+    },
+    {
+      "start": 3323,
+      "end": 3324.5,
+      "text": "kraju koncert The"
+    },
+    {
+      "start": 3324.5,
+      "end": 3325.5,
+      "text": "Crown,"
+    },
+    {
+      "start": 3325.96,
+      "end": 3327.11,
+      "text": "żegnających się już"
+    },
+    {
+      "start": 3327.11,
+      "end": 3328.08,
+      "text": "ze sceną."
+    },
+    {
+      "start": 3329.28,
+      "end": 3330.9,
+      "text": "Skłamałbym, gdybym"
+    },
+    {
+      "start": 3330.9,
+      "end": 3332.18,
+      "text": "powiedział, że"
+    },
+    {
+      "start": 3332.18,
+      "end": 3333.46,
+      "text": "często słucham w"
+    },
+    {
+      "start": 3333.46,
+      "end": 3335.46,
+      "text": "domu płyt tych Szwedów,"
+    },
+    {
+      "start": 3335.92,
+      "end": 3337.07,
+      "text": "ale na koncertach"
+    },
+    {
+      "start": 3337.07,
+      "end": 3339.79,
+      "text": "są perfekcyjną, deftraszową"
+    },
+    {
+      "start": 3339.79,
+      "end": 3341.59,
+      "text": "maszyną do mielenia"
+    },
+    {
+      "start": 3341.59,
+      "end": 3343.35,
+      "text": "metalowców razem z"
+    },
+    {
+      "start": 3343.35,
+      "end": 3345.8,
+      "text": "katanami i pieszczochami."
+    },
+    {
+      "start": 3346.62,
+      "end": 3347.86,
       "text": "Warto tego doświadczyć."
     },
     {
-      "start": 3850.48,
-      "end": 3859.46,
-      "text": "12 września mamy klęskę metalowego urodzaju, bo sporo ciekawych imprez odbywa się w różnych zakątkach kraju."
+      "start": 3850.97,
+      "end": 3852.89,
+      "text": "12 września mamy klęskę"
     },
     {
-      "start": 3860.02,
-      "end": 3869.34,
-      "text": "Kraków, Bielsko-Białą i Bytów mamy już za sobą, to teraz sprawdźmy co będzie się działo na Warmii w Dobrym Mieście."
+      "start": 3852.89,
+      "end": 3854.52,
+      "text": "metalowego urodzaju,"
     },
     {
-      "start": 3869.34,
-      "end": 3881.92,
-      "text": "A będzie się działo nowy festiwal z księżycem w nazwie. Tak, w tym samym Dobrym Mieście, które nieopatrznie pozbyło się niedawno festiwalu ze słońcem w nazwie."
+      "start": 3854.52,
+      "end": 3856.07,
+      "text": "bo sporo ciekawych"
     },
     {
-      "start": 3882.6,
-      "end": 3896.5,
-      "text": "Natura jednak nie znosi próżni, a po nocy przychodzi dzień, a po jednym festiwalu drugi festiwal i wygląda na to, że dobre miasto próbuje ratować swoje dobre imię"
+      "start": 3856.07,
+      "end": 3857.45,
+      "text": "imprez odbywa się w"
     },
     {
-      "start": 3896.5,
-      "end": 3907.4,
-      "text": "wśród fanów ciężkich brzmień, bo zaprasza na pierwszą darmową edycję imprezy Moonrise Festival."
+      "start": 3857.45,
+      "end": 3858.75,
+      "text": "różnych zakątkach"
     },
     {
-      "start": 3908.24,
-      "end": 3914.06,
-      "text": "Wystąpią Trauma, Corruption, Skeptic, Traces to Nowhere i Odezyl."
+      "start": 3858.75,
+      "end": 3859.43,
+      "text": "kraju."
     },
     {
-      "start": 3914.06,
-      "end": 3920.82,
-      "text": "W tym samym dniu, oczywiście, no bo kiedy, w Warszawie też mają festiwal."
+      "start": 3860.03,
+      "end": 3861.66,
+      "text": "Kraków, Bielsko-Białą"
     },
     {
-      "start": 3921.22,
-      "end": 3928.46,
-      "text": "Konkretnie dziesiątą już edycję Metal Commando Fest, która odbędzie się w klubie Voodoo."
+      "start": 3861.66,
+      "end": 3863.19,
+      "text": "i Bytów mamy już za"
     },
     {
-      "start": 3929.12,
-      "end": 3936.32,
-      "text": "Zagrają dla Was Die Disease, Neolit, Pleń, Balzagot oraz Azels Mountain."
+      "start": 3863.19,
+      "end": 3864.03,
+      "text": "sobą."
     },
     {
-      "start": 3936.32,
-      "end": 3945.32,
-      "text": "Die Disease na swojej ubiegłorocznej płycie United with Fall przeżywali drugą nieoczekiwanie brutalną młodość,"
+      "start": 3864.15,
+      "end": 3865.58,
+      "text": "To teraz sprawdźmy,"
     },
     {
-      "start": 3946.18,
-      "end": 3950.06,
-      "text": "co zaświadczy za chwilę piosenka Hollow Future."
+      "start": 3865.58,
+      "end": 3867.09,
+      "text": "co będzie się działo"
     },
     {
-      "start": 3950.6,
-      "end": 3954.32,
-      "text": "Z kolei Neolit, który, jak Herod, nigdy nie był młody,"
+      "start": 3867.09,
+      "end": 3868.31,
+      "text": "na Warmii w Dobrym"
     },
     {
-      "start": 3954.94,
-      "end": 3961.1,
-      "text": "będzie tego dnia świętował premierę swojej nowej płyty zatytułowanej Inbir,"
+      "start": 3868.31,
+      "end": 3869.33,
+      "text": "Mieście."
     },
     {
-      "start": 3961.1,
-      "end": 3969.1,
-      "text": "na której znalazł się pierwszy w liczącej 35 lat historii zespołu utwór w języku polskim."
+      "start": 3869.33,
+      "end": 3870.72,
+      "text": "A będzie się działo"
     },
     {
-      "start": 3969.8,
-      "end": 3971.28,
-      "text": "Tego też posłuchamy."
+      "start": 3870.72,
+      "end": 3872.61,
+      "text": "nowy festiwal z księżycem"
     },
     {
-      "start": 3972.28,
-      "end": 3973.12,
-      "text": "DZIENNIKARZ"
+      "start": 3872.61,
+      "end": 3873.63,
+      "text": "w nazwie."
     },
     {
-      "start": 4537.48,
-      "end": 4547.88,
-      "text": "– Legendarny meksykański Cenotaph. I ani trochę nielegendarny, za to brutalny i ciężki jak trzeba brytyjski Cryptworm."
+      "start": 3874.01,
+      "end": 3874.69,
+      "text": "Tak, w tym samym"
     },
     {
-      "start": 4548.1,
-      "end": 4555.56,
-      "text": "Siać będą death metalowe zniszczenie w Warszawie 15 września i Wrocławiu już dzień później."
+      "start": 3874.69,
+      "end": 3875.82,
+      "text": "Dobrym Mieście,"
     },
     {
-      "start": 4555.56,
-      "end": 4565.98,
-      "text": "16 września w Poznaniu w dwóch progach wystąpi amerykańska grupa Drug Church, która niedawno była u nas przed skoczkiem Deftons."
+      "start": 3875.82,
+      "end": 3877.12,
+      "text": "które nieopatrznie"
     },
     {
-      "start": 4566.5,
-      "end": 4578.6,
-      "text": "Jeśli komuś było mało i chce zobaczyć oraz usłyszeć post-hardcore w wykonaniu Drug Church w pełnej okazałości i z bliska, to będzie bardzo dobra okazja."
+      "start": 3877.12,
+      "end": 3878.49,
+      "text": "pozbyło się niedawno"
     },
     {
-      "start": 4578.6,
-      "end": 4588,
-      "text": "Tego samego dnia, przypominam, że to 16 września, w warszawskiej stodole zagra i zaśpiewa Devin Townsend."
+      "start": 3878.49,
+      "end": 3880.33,
+      "text": "festiwalu ze słońcem."
     },
     {
-      "start": 4589,
-      "end": 4604.74,
-      "text": "Kiedyś, zanim przepadałem, potem trochę mi się znudziło, ale trzeba temu szalonemu Kanadyjczykowi przyznać, że jest postacią absolutnie wyjątkową i artystą, który konsekwentnie robi swoje."
+      "start": 3880.97,
+      "end": 3881.93,
+      "text": "W nazwie."
     },
     {
-      "start": 4604.86,
-      "end": 4615.62,
-      "text": "Niezależnie od tego, w którą stronę wieje akurat wiatr scenowych trendów oraz jak zmienia się osobisty gust redaktora Szubrychta."
+      "start": 3882.61,
+      "end": 3883.68,
+      "text": "Natura jednak nie"
     },
     {
-      "start": 4615.62,
-      "end": 4626.26,
-      "text": "A że Devin jest nie tylko sprawnym muzykiem, ale również charyzmatycznym wykonawcą na koncertach to żre aż miło."
+      "start": 3883.68,
+      "end": 3885.33,
+      "text": "znosi próżni."
     },
     {
-      "start": 4626.26,
-      "end": 4628.38,
+      "start": 3885.59,
+      "end": 3886.67,
+      "text": "A po nocy przychodzi"
+    },
+    {
+      "start": 3886.67,
+      "end": 3887.98,
+      "text": "dzień, a po jednym"
+    },
+    {
+      "start": 3887.98,
+      "end": 3889.01,
+      "text": "festiwalu drugi"
+    },
+    {
+      "start": 3889.01,
+      "end": 3889.97,
+      "text": "festiwal."
+    },
+    {
+      "start": 3889.97,
+      "end": 3891.95,
+      "text": "I wygląda na to, że"
+    },
+    {
+      "start": 3891.95,
+      "end": 3894.15,
+      "text": "Dobre Miasto próbuje"
+    },
+    {
+      "start": 3894.15,
+      "end": 3896.25,
+      "text": "ratować swoje dobre"
+    },
+    {
+      "start": 3896.25,
+      "end": 3897.99,
+      "text": "imię wśród fanów"
+    },
+    {
+      "start": 3897.99,
+      "end": 3900.21,
+      "text": "ciężkich brzmień,"
+    },
+    {
+      "start": 3900.37,
+      "end": 3901.65,
+      "text": "bo zaprasza na"
+    },
+    {
+      "start": 3901.65,
+      "end": 3904.2,
+      "text": "pierwszą darmową edycję"
+    },
+    {
+      "start": 3904.2,
+      "end": 3905.98,
+      "text": "imprezy Moonrise"
+    },
+    {
+      "start": 3905.98,
+      "end": 3907.39,
+      "text": "Festival."
+    },
+    {
+      "start": 3908.23,
+      "end": 3909.69,
+      "text": "Wystąpią Trauma,"
+    },
+    {
+      "start": 3909.69,
+      "end": 3911.63,
+      "text": "Corruption, Skeptic,"
+    },
+    {
+      "start": 3911.63,
+      "end": 3913.1,
+      "text": "Traces to Nowhere i"
+    },
+    {
+      "start": 3913.1,
+      "end": 3914.05,
+      "text": "Odezyl."
+    },
+    {
+      "start": 3914.73,
+      "end": 3915.33,
+      "text": "W tym samym dniu,"
+    },
+    {
+      "start": 3915.33,
+      "end": 3916.71,
+      "text": "oczywiście, no bo"
+    },
+    {
+      "start": 3916.71,
+      "end": 3918.58,
+      "text": "kiedy, w Warszawie"
+    },
+    {
+      "start": 3918.58,
+      "end": 3920.81,
+      "text": "też mają festiwal."
+    },
+    {
+      "start": 3921.23,
+      "end": 3922.62,
+      "text": "Konkretnie dziesiątą"
+    },
+    {
+      "start": 3922.62,
+      "end": 3923.97,
+      "text": "już edycję Metal"
+    },
+    {
+      "start": 3923.97,
+      "end": 3925.63,
+      "text": "Commando Fest,"
+    },
+    {
+      "start": 3925.63,
+      "end": 3926.95,
+      "text": "która odbędzie się"
+    },
+    {
+      "start": 3926.95,
+      "end": 3928.47,
+      "text": "w klubie voodoo."
+    },
+    {
+      "start": 3929.15,
+      "end": 3930.85,
+      "text": "Zagrają dla Was Die"
+    },
+    {
+      "start": 3930.85,
+      "end": 3932.62,
+      "text": "Disease, Neolit,"
+    },
+    {
+      "start": 3932.62,
+      "end": 3934.52,
+      "text": "Pleń, Balzagot oraz"
+    },
+    {
+      "start": 3934.52,
+      "end": 3936.33,
+      "text": "Azels Mountain."
+    },
+    {
+      "start": 3937.01,
+      "end": 3937.46,
+      "text": "Die Disease na"
+    },
+    {
+      "start": 3937.46,
+      "end": 3939.22,
+      "text": "swojej ubiegłorocznej"
+    },
+    {
+      "start": 3939.22,
+      "end": 3940.48,
+      "text": "płycie United We"
+    },
+    {
+      "start": 3940.48,
+      "end": 3941.75,
+      "text": "Fall przeżywali"
+    },
+    {
+      "start": 3941.75,
+      "end": 3943.59,
+      "text": "drugą nieoczekiwanie"
+    },
+    {
+      "start": 3943.59,
+      "end": 3946.03,
+      "text": "brutalną młodość,"
+    },
+    {
+      "start": 3946.19,
+      "end": 3947.31,
+      "text": "co zaświadczy za"
+    },
+    {
+      "start": 3947.31,
+      "end": 3948.59,
+      "text": "chwilę piosenka"
+    },
+    {
+      "start": 3948.59,
+      "end": 3950.05,
+      "text": "Hollow Future."
+    },
+    {
+      "start": 3950.61,
+      "end": 3951.65,
+      "text": "Z kolei Neolit,"
+    },
+    {
+      "start": 3951.65,
+      "end": 3952.91,
+      "text": "który, jak Herod,"
+    },
+    {
+      "start": 3952.91,
+      "end": 3954.44,
+      "text": "nigdy nie był młody,"
+    },
+    {
+      "start": 3954.44,
+      "end": 3956.43,
+      "text": "będzie tego dnia świętował"
+    },
+    {
+      "start": 3956.43,
+      "end": 3958.16,
+      "text": "premierę swojej nowej"
+    },
+    {
+      "start": 3958.16,
+      "end": 3960.21,
+      "text": "płyty zatytułowanej"
+    },
+    {
+      "start": 3960.21,
+      "end": 3961.11,
+      "text": "Inbir,"
+    },
+    {
+      "start": 3961.49,
+      "end": 3962.65,
+      "text": "na której znalazł"
+    },
+    {
+      "start": 3962.65,
+      "end": 3964.69,
+      "text": "się pierwszy w liczącej"
+    },
+    {
+      "start": 3964.69,
+      "end": 3967.16,
+      "text": "35 lat historii zespołu"
+    },
+    {
+      "start": 3967.16,
+      "end": 3968.39,
+      "text": "utwór w języku"
+    },
+    {
+      "start": 3968.39,
+      "end": 3969.61,
+      "text": "polskim."
+    },
+    {
+      "start": 3969.79,
+      "end": 3970.97,
+      "text": "Tego też posłuchałem."
+    },
+    {
+      "start": 3970.97,
+      "end": 3971.85,
+      "text": "Chórzamy."
+    },
+    {
+      "start": 4538.79,
+      "end": 4540.39,
+      "text": "Legendarny meksykański"
+    },
+    {
+      "start": 4540.39,
+      "end": 4541.43,
+      "text": "Cenotaph."
+    },
+    {
+      "start": 4542.29,
+      "end": 4543.71,
+      "text": "I ani trochę nielegendarny,"
+    },
+    {
+      "start": 4543.71,
+      "end": 4544.68,
+      "text": "za to brutalny i"
+    },
+    {
+      "start": 4544.68,
+      "end": 4546.64,
+      "text": "ciężki jak trzeba brytyjski"
+    },
+    {
+      "start": 4546.64,
+      "end": 4547.87,
+      "text": "Cryptworm."
+    },
+    {
+      "start": 4548.09,
+      "end": 4549.21,
+      "text": "Siadź będą death"
+    },
+    {
+      "start": 4549.21,
+      "end": 4550.85,
+      "text": "metalowe zniszczenie"
+    },
+    {
+      "start": 4550.85,
+      "end": 4553.43,
+      "text": "w Warszawie 15 września"
+    },
+    {
+      "start": 4553.43,
+      "end": 4554.43,
+      "text": "i w Wrocławiu już"
+    },
+    {
+      "start": 4554.43,
+      "end": 4555.57,
+      "text": "dzień później."
+    },
+    {
+      "start": 4556.19,
+      "end": 4557.59,
+      "text": "16 września w Poznaniu"
+    },
+    {
+      "start": 4557.59,
+      "end": 4558.71,
+      "text": "w dwóch progach"
+    },
+    {
+      "start": 4558.71,
+      "end": 4560.26,
+      "text": "wystąpi amerykańska"
+    },
+    {
+      "start": 4560.26,
+      "end": 4561.95,
+      "text": "grupa Drug Church,"
+    },
+    {
+      "start": 4562.59,
+      "end": 4563.43,
+      "text": "która niedawno była"
+    },
+    {
+      "start": 4563.43,
+      "end": 4564.99,
+      "text": "u nas przed skoczkiem"
+    },
+    {
+      "start": 4564.99,
+      "end": 4565.97,
+      "text": "Deftons."
+    },
+    {
+      "start": 4565.97,
+      "end": 4567.42,
+      "text": "I jeśli komuś było"
+    },
+    {
+      "start": 4567.42,
+      "end": 4569.07,
+      "text": "mało i chce zobaczyć"
+    },
+    {
+      "start": 4569.07,
+      "end": 4571.49,
+      "text": "oraz usłyszeć post-hardcore"
+    },
+    {
+      "start": 4571.49,
+      "end": 4572.43,
+      "text": "w wykonaniu Drug"
+    },
+    {
+      "start": 4572.43,
+      "end": 4574.73,
+      "text": "Church w pełnej okazałości"
+    },
+    {
+      "start": 4574.73,
+      "end": 4575.69,
+      "text": "i z bliska,"
+    },
+    {
+      "start": 4575.93,
+      "end": 4577.64,
+      "text": "to będzie bardzo dobra"
+    },
+    {
+      "start": 4577.64,
+      "end": 4578.59,
+      "text": "okazja."
+    },
+    {
+      "start": 4579.05,
+      "end": 4580.07,
+      "text": "Tego samego dnia,"
+    },
+    {
+      "start": 4580.07,
+      "end": 4581.67,
+      "text": "przypominam, że to"
+    },
+    {
+      "start": 4581.67,
+      "end": 4584.35,
+      "text": "16 września, w warszawskiej"
+    },
+    {
+      "start": 4584.35,
+      "end": 4586.27,
+      "text": "stodole zagra i zaśpiewa"
+    },
+    {
+      "start": 4586.27,
+      "end": 4587.99,
+      "text": "Devin Townsend."
+    },
+    {
+      "start": 4588.73,
+      "end": 4591.14,
+      "text": "Kiedyś zanim przepadałem,"
+    },
+    {
+      "start": 4591.14,
+      "end": 4592.76,
+      "text": "potem trochę mi się"
+    },
+    {
+      "start": 4592.76,
+      "end": 4594.05,
+      "text": "znudziło, ale"
+    },
+    {
+      "start": 4594.05,
+      "end": 4595.44,
+      "text": "trzeba temu szalonemu"
+    },
+    {
+      "start": 4595.44,
+      "end": 4597.27,
+      "text": "Kanadyjczykowi przyznać,"
+    },
+    {
+      "start": 4597.45,
+      "end": 4598.69,
+      "text": "że jest postacią"
+    },
+    {
+      "start": 4598.69,
+      "end": 4600.63,
+      "text": "absolutnie wyjątkową"
+    },
+    {
+      "start": 4600.63,
+      "end": 4602.14,
+      "text": "i artystą, który"
+    },
+    {
+      "start": 4602.14,
+      "end": 4603.88,
+      "text": "konsekwentnie robi"
+    },
+    {
+      "start": 4603.88,
+      "end": 4604.73,
+      "text": "swoje,"
+    },
+    {
+      "start": 4604.85,
+      "end": 4606.6,
+      "text": "niezależnie od tego,"
+    },
+    {
+      "start": 4606.6,
+      "end": 4608.28,
+      "text": "w którą stronę wieje"
+    },
+    {
+      "start": 4608.28,
+      "end": 4610.23,
+      "text": "akurat wiatr scenowych"
+    },
+    {
+      "start": 4610.23,
+      "end": 4612.14,
+      "text": "trendów oraz jak zmienia"
+    },
+    {
+      "start": 4612.14,
+      "end": 4613.49,
+      "text": "się osobisty gust"
+    },
+    {
+      "start": 4613.49,
+      "end": 4615.61,
+      "text": "redaktora Szubrychta."
+    },
+    {
+      "start": 4615.87,
+      "end": 4617.04,
+      "text": "A że Devin jest nie"
+    },
+    {
+      "start": 4617.04,
+      "end": 4619.63,
+      "text": "tylko sprawnym muzykiem,"
+    },
+    {
+      "start": 4619.63,
+      "end": 4621.98,
+      "text": "ale również charyzmatycznym"
+    },
+    {
+      "start": 4621.98,
+      "end": 4624.13,
+      "text": "wykonawcą na koncertach,"
+    },
+    {
+      "start": 4624.51,
+      "end": 4626.23,
+      "text": "to żre aż miło."
+    },
+    {
+      "start": 4626.23,
+      "end": 4626.95,
       "text": "Muzyka"
     },
     {
-      "start": 4902.05,
-      "end": 4903.09,
-      "text": "Muzyka"
+      "start": 4903.04,
+      "end": 4904.91,
+      "text": "Dwudniowa impreza o"
     },
     {
-      "start": 4903.09,
-      "end": 4914.57,
-      "text": "Dwudniowa impreza o nazwie Underground Descents zawita 18 i 19 września do Katowic, do klubu Faust."
+      "start": 4904.91,
+      "end": 4906.62,
+      "text": "nazwie Underground"
     },
     {
-      "start": 4914.57,
-      "end": 4927.83,
-      "text": "Szyld odpowiedni do zawartości. Mam na myśli nazwę festiwalu Underground Descents, chociaż klubu też niczego sobie, bo to będzie święto metalowego undergroundu."
+      "start": 4906.62,
+      "end": 4909.33,
+      "text": "Descends zawita 18"
     },
     {
-      "start": 4928.09,
-      "end": 4939.73,
-      "text": "Z Wielkiej Brytanii przybędzie trashowy zespół Ominus Moon, z Norwegii heavy metalowa Piromania, a black trashowy Diavol przyjedzie z Rumunii."
+      "start": 4909.33,
+      "end": 4912.11,
+      "text": "i 19 września do"
     },
     {
-      "start": 4939.73,
-      "end": 4948.45,
-      "text": "Bliżej będą mieli m.in. Frightful Toughness, Chain Gun, Fortification, Instant Death itd., itd."
+      "start": 4912.11,
+      "end": 4913.77,
+      "text": "Katowic, do klubu"
     },
     {
-      "start": 4949.09,
-      "end": 4957.05,
-      "text": "Zapowiada się prawdziwy maraton z podziemnym hałasem, a ja bardzo kibicuję takim imprezom."
+      "start": 4913.77,
+      "end": 4914.56,
+      "text": "Faust."
     },
     {
-      "start": 4957.05,
-      "end": 4972.39,
-      "text": "Jest zresztą tego więcej, chociażby Night Slasher, Hexen Altar, Murder in the Halls of Heaven i inni w Olsztynie, w Carpenter Inn 18 września oraz"
+      "start": 4915.04,
+      "end": 4916.36,
+      "text": "Szyld odpowiedni do"
     },
     {
-      "start": 4972.39,
-      "end": 4997.03,
-      "text": "Wielkiej Brytanii jest też lubelski Blastfest, impreza, która stawia, w zgodzie z nazwą, na różnego rodzaju brutali."
+      "start": 4916.36,
+      "end": 4918.11,
+      "text": "zawartości. Mam na"
     },
     {
-      "start": 4997.03,
-      "end": 5014.03,
-      "text": "Gwiazdą jesiennej edycji Blastfestu, która odbędzie się 19 dnia tego miesiąca w Fabryce Kultury zgrzyt jest kultowy zespół Kadaver, który miał pecha narodzić się w złym miejscu i złym czasie."
+      "start": 4918.11,
+      "end": 4919.29,
+      "text": "myśli nazwę festiwalu"
     },
     {
-      "start": 5014.79,
-      "end": 5026.05,
-      "text": "Otóż Kadaver jest z Norwegii i kiedy był w szczycie swoich twórczych mocy, właśnie w Norwegii rozpętała się black metalowa rewolucja."
+      "start": 4919.29,
+      "end": 4920.66,
+      "text": "Underground Descends,"
     },
     {
-      "start": 5026.63,
-      "end": 5030.45,
-      "text": "A pech chciał, że Kadaver nie grał black metalu ani trochę."
+      "start": 4920.66,
+      "end": 4922.19,
+      "text": "chociaż klubu też"
     },
     {
-      "start": 5031.33,
-      "end": 5038.07,
-      "text": "Ich bronią był bezkompromisowy death metal, choć i z grindu zaczerpnęli to i owo."
+      "start": 4922.19,
+      "end": 4923.57,
+      "text": "niczego sobie, bo"
     },
     {
-      "start": 5039.15,
-      "end": 5043.75,
-      "text": "No ale nie death metalu, ludzie domagali się wtedy od Norwegów."
+      "start": 4923.57,
+      "end": 4925.09,
+      "text": "to będzie święto"
     },
     {
-      "start": 5044.09,
-      "end": 5058.05,
-      "text": "O ile więc debiut grupy Hallucinating Anxiety wydany w 1990 roku miał jeszcze szansę wyrobić im markę, o tyle później już było coraz trudniej."
+      "start": 4925.09,
+      "end": 4926.14,
+      "text": "metalowego"
     },
     {
-      "start": 5058.05,
-      "end": 5075.75,
-      "text": "Co ciekawe Anders Oden, lider grupy, grał potem przez jakiś czas w Satyricon oraz od lat oprowadza wycieczki po Oslo śladem black metalowej rewolucji, bo oczywiście dobrze tych wszystkich gości znał."
+      "start": 4926.14,
+      "end": 4927.82,
+      "text": "undergroundu."
     },
     {
-      "start": 5075.75,
-      "end": 5083.73,
-      "text": "No ale Kadaver wrócił na scenę, nie po raz pierwszy, mam nadzieję, że tym razem na dobre i wybiera się do Lublina."
+      "start": 4927.82,
+      "end": 4929.34,
+      "text": "Z Wielkiej Brytanii"
     },
     {
-      "start": 5084.81,
-      "end": 5097.15,
-      "text": "Obok nich wystąpią Finowie z Patnance, też kultowy temat dla fanatyków death metalu z północy i nasi rodacy z Indignity oraz Toughness."
+      "start": 4929.34,
+      "end": 4931.07,
+      "text": "przybędzie thrashowy"
     },
     {
-      "start": 5097.15,
-      "end": 5099.95,
-      "text": "Zapowiada się zatem Czarowny Wieczór."
+      "start": 4931.07,
+      "end": 4932.78,
+      "text": "zespół Ominus Moon,"
     },
     {
-      "start": 5100.83,
-      "end": 5103.91,
-      "text": "I co by tu wybrać z tego zacnego zestawu?"
+      "start": 4932.78,
+      "end": 4933.97,
+      "text": "z Norwegii heavy"
     },
     {
-      "start": 5104.31,
-      "end": 5119.71,
-      "text": "Może zapowiedź nowej płyty Kalt Windur, która ukaże się w listopadzie i do której pewnie wtedy wrócimy oraz oczywiście wspomnienie bardzo starej płyty Kadaver, do której warto wracać regularnie."
+      "start": 4933.97,
+      "end": 4935.69,
+      "text": "metalowa Piromania,"
     },
     {
-      "start": 5659.94,
-      "end": 5672.26,
-      "text": "Była kiedyś w internecie taka memiczna, wirusowa zabawa, która polegała na zgadywaniu, czy dane słowo jest nazwą black metalowego zespołu,"
+      "start": 4935.69,
+      "end": 4937.05,
+      "text": "a black thrashowy"
     },
     {
-      "start": 5672.26,
-      "end": 5685.46,
-      "text": "czy też nazwą produktu, który w ofercie ma pewna popularna skandynawska sieć sprzedająca meble i akcesoria domowe."
+      "start": 4937.05,
+      "end": 4938.57,
+      "text": "Diavol przyjedzie z"
     },
     {
-      "start": 5686.18,
-      "end": 5695.08,
-      "text": "Gdyby w wariancie takiej zabawy ktoś kazał mi zgadywać, jaką muzykę gra zespół Allegeon, obstawiałbym power metal."
+      "start": 4938.57,
+      "end": 4939.74,
+      "text": "Rumunii."
     },
     {
-      "start": 5695.08,
-      "end": 5706.28,
-      "text": "No ale nie. Grają melodyjny, techniczny, progresywny death metal. Grają go w Colorado, ale we wrześniu pojawią się na trasie w Europie."
+      "start": 4940.16,
+      "end": 4941.89,
+      "text": "Bliżej będą mieli m.in."
     },
     {
-      "start": 5706.82,
-      "end": 5714.9,
-      "text": "Zaprosili sobie do towarzystwa dwie inne grupy, które przy pomocy bardzo wielu precyzyjnie odegranych nutek"
+      "start": 4941.89,
+      "end": 4943.7,
+      "text": "Frightful Toughness,"
     },
     {
-      "start": 5714.9,
-      "end": 5723.86,
-      "text": "również próbują łączyć brutalność z Finezją, a są to francuski Gorod oraz fiński Halizis."
+      "start": 4943.7,
+      "end": 4945.96,
+      "text": "Chain Gun, Fortification,"
     },
     {
-      "start": 5724.66,
-      "end": 5737.8,
-      "text": "21 września ta progresywno death metalowa trójca zagra w Krakowie, a dzień wcześniej 20 września w Warszawie w Voodoo."
+      "start": 4945.96,
+      "end": 4947.78,
+      "text": "Instant Death itd.,"
     },
     {
-      "start": 5737.8,
-      "end": 5748.04,
-      "text": "Co ciekawe, w tym samym Voodoo, tego samego dnia, tylko za ścianą, zupełnie inną wizję death metalu,"
+      "start": 4947.78,
+      "end": 4948.44,
+      "text": "itd."
     },
     {
-      "start": 5748.56,
-      "end": 5754.76,
-      "text": "roztoczy skład, któremu dowodzi też amerykański zespół Funebrarum."
+      "start": 4949.1,
+      "end": 4950.62,
+      "text": "Zapowiada się prawdziwy"
     },
     {
-      "start": 5754.76,
-      "end": 5767.86,
-      "text": "To z kolei czołówka death metalowego renesansu XXI wieku i tu już nie ma miejsca na żadne, ale żadne dodatki, żadne półśrodki."
+      "start": 4950.62,
+      "end": 4952.49,
+      "text": "maraton z podziemnym"
     },
     {
-      "start": 5768.52,
-      "end": 5777.46,
-      "text": "Na ich trzecią płytę, Beckoning the Void of Eternal Silence, trzeba było poczekać długie, 17 lat,"
+      "start": 4952.49,
+      "end": 4954.12,
+      "text": "hałasem, a ja"
     },
     {
-      "start": 5777.98,
-      "end": 5784.4,
-      "text": "ale już się ukazała i zgodnie z przewidywaniami mieli kości na puder."
+      "start": 4954.12,
+      "end": 4955.2,
+      "text": "bardzo kibicuję"
     },
     {
-      "start": 5784.4,
-      "end": 5794.28,
-      "text": "Na koncercie w Warszawie Funebrarum towarzyszyć będą Finowie z Morbific oraz Brutale naszego rodzimego HOW-u,"
+      "start": 4955.2,
+      "end": 4957.04,
+      "text": "takim imprezom."
     },
     {
-      "start": 5794.68,
-      "end": 5798.44,
-      "text": "czyli Burning Sky i Manglet Recreement."
+      "start": 4957.04,
+      "end": 4958.6,
+      "text": "Jest zresztą tego"
     },
     {
-      "start": 6125.29,
-      "end": 6152.65,
-      "text": "Słuchacie ciężko na sercu. Dzisiaj opowiadam o ciekawych koncertach czekających nas już lada moment we wrześniu. Ukraińska grupa rekonstrukcyjna, a przy okazji świetna grupa Black Death Doom metalowa, czyli 1914, przypomnij echa wojny, która miała zakończyć wszystkie wojny w Lublinie w graffiti 21 września."
+      "start": 4958.6,
+      "end": 4960.38,
+      "text": "więcej, chociażby"
     },
     {
-      "start": 6153.65,
-      "end": 6177.93,
-      "text": "23 września w Prezero Arenie Gliwice czeka nas polska odsłona trasy, która nosi nazwę Tsunami Sea i jest falą, która niesie nam metal nowy, a nawet nowoczesny, w dodatku wyemancypowany, bo z dominującymi rolami bardzo utalentowanych kobiet."
+      "start": 4960.38,
+      "end": 4962.36,
+      "text": "Night Slasher, Hexen"
     },
     {
-      "start": 6177.93,
-      "end": 6187.13,
-      "text": "Gwiazdą wieczoru będzie Spirit Box, którego progresywna wizja metalcora zaprowadziła ich już nawet na galę nagród Grammy."
+      "start": 4962.36,
+      "end": 4964.18,
+      "text": "Altar, Murder in"
     },
     {
-      "start": 6187.93,
-      "end": 6207.07,
-      "text": "I kto nie widział, polecam odnaleźć w internecie zapis wideo z tego ich występu przed wyfraczonym, dostojnym Towarzystwem Akademii Fonograficznej z Ameryki, żeby przyjrzeć się nie tylko świetnemu zespołowi, ale też minom tamtych państwa."
+      "start": 4964.18,
+      "end": 4965.6,
+      "text": "the Halls of Heaven"
     },
     {
-      "start": 6207.07,
-      "end": 6217.93,
-      "text": "Spirit Box w trasę zaprosili ukraińską grupę Ginger oraz amerykański zespół Dying Wish, a więc bardzo mocny to zestaw."
+      "start": 4965.6,
+      "end": 4967.16,
+      "text": "i inni w Olsztynie"
     },
     {
-      "start": 6478.48,
-      "end": 6486.06,
-      "text": "24 września Warszawa, Hydrozagadka, 25 września Kraków, Hype Park."
+      "start": 4967.16,
+      "end": 4969.82,
+      "text": "w Carpenter Inn 18"
     },
     {
-      "start": 6486.5,
-      "end": 6495.18,
-      "text": "W tych dwóch miejscach i datach metalkorowcy z Niemiec, czyli Tenside oraz z Australii, a więc Sugar Spine,"
+      "start": 4969.82,
+      "end": 4972.38,
+      "text": "września oraz"
     },
     {
-      "start": 6495.6,
-      "end": 6504.34,
-      "text": "zagrają w towarzystwie grupy Aurora Wave, która twierdzi, że gra najcięższe reggae na świecie."
+      "start": 4972.38,
+      "end": 4976.4,
+      "text": "w Krakowie w Krakowie"
     },
     {
-      "start": 6504.34,
-      "end": 6510.78,
-      "text": "I to może być prawda. W dodatku gra to karkołomne połączenie nadzwyczaj dobrze."
+      "start": 4976.4,
+      "end": 4982.78,
+      "text": "w garaż pubie 19 września."
     },
     {
-      "start": 6511.24,
-      "end": 6516.18,
-      "text": "Zatem kto wie, może się skuszę. To może być ciekawe doświadczenie."
+      "start": 4983.44,
+      "end": 4984.94,
+      "text": "Bez wątpienia podziemny,"
     },
     {
-      "start": 6516.44,
-      "end": 6522.54,
-      "text": "Już chyba Aurora Wave wam tutaj puszczałem ciężko na sercu, ale puszczę jeszcze raz,"
+      "start": 4984.94,
+      "end": 4986.73,
+      "text": "choć trochę wystający"
     },
     {
-      "start": 6522.94,
-      "end": 6527.34,
-      "text": "bo to rzadka okazja, żeby taką hybrydę prezentować."
+      "start": 4986.73,
+      "end": 4988.43,
+      "text": "na powierzchnię"
     },
     {
-      "start": 6527.34,
-      "end": 6529.4,
-      "text": "Muzyka"
+      "start": 4988.43,
+      "end": 4989.47,
+      "text": "jest też lubelski"
     },
     {
-      "start": 6588.16,
-      "end": 6591.46,
-      "text": "Dziękuje za oglądanie!"
+      "start": 4989.47,
+      "end": 4990.76,
+      "text": "Blastfest."
     },
     {
-      "start": 6644.93,
-      "end": 6648.51,
-      "text": "Dziękuje za oglądanie!"
+      "start": 4991.38,
+      "end": 4993.28,
+      "text": "Impreza, która stawia,"
     },
     {
-      "start": 6732.04,
-      "end": 6736.04,
-      "text": "Co my tam jeszcze mamy pod koniec miesiąca?"
+      "start": 4993.28,
+      "end": 4994.63,
+      "text": "w zgodzie z nazwą,"
     },
     {
-      "start": 6737.18,
+      "start": 4994.63,
+      "end": 4996.37,
+      "text": "na różnego rodzaju"
+    },
+    {
+      "start": 4996.37,
+      "end": 4997.04,
+      "text": "brutali."
+    },
+    {
+      "start": 4997.38,
+      "end": 4998.39,
+      "text": "Gwiazdą jesiennej"
+    },
+    {
+      "start": 4998.39,
+      "end": 5000.29,
+      "text": "edycji Blastfestu,"
+    },
+    {
+      "start": 5000.29,
+      "end": 5001.3,
+      "text": "która odbędzie się"
+    },
+    {
+      "start": 5001.3,
+      "end": 5002.22,
+      "text": "19."
+    },
+    {
+      "start": 5002.76,
+      "end": 5004.43,
+      "text": "Dnia tego miesiąca"
+    },
+    {
+      "start": 5004.43,
+      "end": 5006.6,
+      "text": "w Fabryce Kultury Zgrzyt"
+    },
+    {
+      "start": 5006.6,
+      "end": 5008.36,
+      "text": "jest kultowy zespół"
+    },
+    {
+      "start": 5008.36,
+      "end": 5010.38,
+      "text": "Kadaver, który miał"
+    },
+    {
+      "start": 5010.38,
+      "end": 5011.83,
+      "text": "pecha narodzić się"
+    },
+    {
+      "start": 5011.83,
+      "end": 5013.24,
+      "text": "w złym miejscu i złym"
+    },
+    {
+      "start": 5013.24,
+      "end": 5014.04,
+      "text": "czasie."
+    },
+    {
+      "start": 5014.78,
+      "end": 5015.56,
+      "text": "Otóż Kadaver jest z"
+    },
+    {
+      "start": 5015.56,
+      "end": 5016.9,
+      "text": "Norwegii i kiedy"
+    },
+    {
+      "start": 5016.9,
+      "end": 5018.63,
+      "text": "był w szczycie swoich"
+    },
+    {
+      "start": 5018.63,
+      "end": 5020.06,
+      "text": "twórczych mocy,"
+    },
+    {
+      "start": 5020.06,
+      "end": 5021.92,
+      "text": "właśnie w Norwegii"
+    },
+    {
+      "start": 5021.92,
+      "end": 5023.04,
+      "text": "rozpędzającym."
+    },
+    {
+      "start": 5023.04,
+      "end": 5023.99,
+      "text": "dała się black"
+    },
+    {
+      "start": 5023.99,
+      "end": 5026.06,
+      "text": "metalowa rewolucja."
+    },
+    {
+      "start": 5026.62,
+      "end": 5027.78,
+      "text": "A pech chciał, że"
+    },
+    {
+      "start": 5027.78,
+      "end": 5029.02,
+      "text": "cadaver nie grał"
+    },
+    {
+      "start": 5029.02,
+      "end": 5030.2,
+      "text": "black metalu, ani"
+    },
+    {
+      "start": 5030.2,
+      "end": 5030.44,
+      "text": "trochę."
+    },
+    {
+      "start": 5031.32,
+      "end": 5033.38,
+      "text": "Ich bronią był bezkompromisowy"
+    },
+    {
+      "start": 5033.38,
+      "end": 5034.6,
+      "text": "death metal,"
+    },
+    {
+      "start": 5034.78,
+      "end": 5037.01,
+      "text": "choć i z grindu zaczerpnęli"
+    },
+    {
+      "start": 5037.01,
+      "end": 5038.06,
+      "text": "to i owo."
+    },
+    {
+      "start": 5039.1,
+      "end": 5039.36,
+      "text": "No ale nie death"
+    },
+    {
+      "start": 5039.36,
+      "end": 5041.36,
+      "text": "metalu ludzie domagali"
+    },
+    {
+      "start": 5041.36,
+      "end": 5043.74,
+      "text": "się wtedy od Norwegów."
+    },
+    {
+      "start": 5043.74,
+      "end": 5045.28,
+      "text": "O ile więc debiut"
+    },
+    {
+      "start": 5045.28,
+      "end": 5047.32,
+      "text": "grupy Hallucinating"
+    },
+    {
+      "start": 5047.32,
+      "end": 5048.99,
+      "text": "Anxiety wydany w"
+    },
+    {
+      "start": 5048.99,
+      "end": 5052.02,
+      "text": "1990 roku"
+    },
+    {
+      "start": 5052.02,
+      "end": 5053.38,
+      "text": "miał jeszcze szansę"
+    },
+    {
+      "start": 5053.38,
+      "end": 5054.52,
+      "text": "wyrobić im markę,"
+    },
+    {
+      "start": 5055.24,
+      "end": 5056.02,
+      "text": "o tyle później już"
+    },
+    {
+      "start": 5056.02,
+      "end": 5058.06,
+      "text": "było coraz trudniej."
+    },
+    {
+      "start": 5058.86,
+      "end": 5060.92,
+      "text": "Co ciekawe Anders Oden,"
+    },
+    {
+      "start": 5060.92,
+      "end": 5062.52,
+      "text": "lider grupy,"
+    },
+    {
+      "start": 5062.98,
+      "end": 5063.72,
+      "text": "grał potem przez"
+    },
+    {
+      "start": 5063.72,
+      "end": 5065.42,
+      "text": "jakiś czas w Satyricon"
+    },
+    {
+      "start": 5065.42,
+      "end": 5067.23,
+      "text": "oraz od lat oprowadza"
+    },
+    {
+      "start": 5067.23,
+      "end": 5068.78,
+      "text": "wycieczki po Oslo"
+    },
+    {
+      "start": 5068.78,
+      "end": 5070.84,
+      "text": "śladem black metalowej"
+    },
+    {
+      "start": 5070.84,
+      "end": 5071.8,
+      "text": "rewolucji,"
+    },
+    {
+      "start": 5071.8,
+      "end": 5072.87,
+      "text": "bo oczywiście"
+    },
+    {
+      "start": 5072.87,
+      "end": 5073.86,
+      "text": "dobrze tych"
+    },
+    {
+      "start": 5073.86,
+      "end": 5075.76,
+      "text": "wszystkich gości znał."
+    },
+    {
+      "start": 5076.12,
+      "end": 5077.07,
+      "text": "No ale cadaver wrócił"
+    },
+    {
+      "start": 5077.07,
+      "end": 5078.18,
+      "text": "na scenę nie po raz"
+    },
+    {
+      "start": 5078.18,
+      "end": 5078.9,
+      "text": "pierwszy,"
+    },
+    {
+      "start": 5079.26,
+      "end": 5079.89,
+      "text": "mam nadzieję, że"
+    },
+    {
+      "start": 5079.89,
+      "end": 5080.9,
+      "text": "tym razem na dobre,"
+    },
+    {
+      "start": 5081,
+      "end": 5083.74,
+      "text": "i wybiera się do Lublina."
+    },
+    {
+      "start": 5084.76,
+      "end": 5085.55,
+      "text": "Obok nich wystąpią"
+    },
+    {
+      "start": 5085.55,
+      "end": 5087.66,
+      "text": "Finnowie z Patnance,"
+    },
+    {
+      "start": 5087.84,
+      "end": 5089.14,
+      "text": "też kultowy temat"
+    },
+    {
+      "start": 5089.14,
+      "end": 5090.7,
+      "text": "dla fanatyków death"
+    },
+    {
+      "start": 5090.7,
+      "end": 5092.3,
+      "text": "metalu z północy"
+    },
+    {
+      "start": 5092.3,
+      "end": 5095.2,
+      "text": "i nasi rodacy z Indignity"
+    },
+    {
+      "start": 5095.2,
+      "end": 5097.16,
+      "text": "oraz Toughness."
+    },
+    {
+      "start": 5097.34,
+      "end": 5098.52,
+      "text": "Zapowiada się zatem"
+    },
+    {
+      "start": 5098.52,
+      "end": 5099.92,
+      "text": "Czarowny Wieczór."
+    },
+    {
+      "start": 5099.92,
+      "end": 5101.47,
+      "text": "I co by tu wybrać z"
+    },
+    {
+      "start": 5101.47,
+      "end": 5103.92,
+      "text": "tego zacnego zestawu?"
+    },
+    {
+      "start": 5104.28,
+      "end": 5106.12,
+      "text": "Może zapowiedź nowej"
+    },
+    {
+      "start": 5106.12,
+      "end": 5107.82,
+      "text": "płyty Kalt Windur,"
+    },
+    {
+      "start": 5107.96,
+      "end": 5108.81,
+      "text": "która ukaże się w"
+    },
+    {
+      "start": 5108.81,
+      "end": 5109.64,
+      "text": "listopadzie"
+    },
+    {
+      "start": 5109.64,
+      "end": 5111.1,
+      "text": "i do której pewnie"
+    },
+    {
+      "start": 5111.1,
+      "end": 5112.36,
+      "text": "wtedy wrócimy,"
+    },
+    {
+      "start": 5112.78,
+      "end": 5114.84,
+      "text": "oraz oczywiście wspomnienie"
+    },
+    {
+      "start": 5114.84,
+      "end": 5115.87,
+      "text": "bardzo starej płyty"
+    },
+    {
+      "start": 5115.87,
+      "end": 5116.38,
+      "text": "Kadajwer,"
+    },
+    {
+      "start": 5116.78,
+      "end": 5118.32,
+      "text": "do której warto wracać"
+    },
+    {
+      "start": 5118.32,
+      "end": 5119.7,
+      "text": "regularnie."
+    },
+    {
+      "start": 5661.05,
+      "end": 5663.2,
+      "text": "Była kiedyś w internecie"
+    },
+    {
+      "start": 5663.2,
+      "end": 5666.06,
+      "text": "taka memiczna, wirusowa"
+    },
+    {
+      "start": 5666.06,
+      "end": 5668.02,
+      "text": "zabawa, która polegała"
+    },
+    {
+      "start": 5668.02,
+      "end": 5669.25,
+      "text": "na zgadywaniu, czy"
+    },
+    {
+      "start": 5669.25,
+      "end": 5670.79,
+      "text": "dane słowo jest nazwą"
+    },
+    {
+      "start": 5670.79,
+      "end": 5672.27,
+      "text": "black metalowego zespołu,"
+    },
+    {
+      "start": 5672.27,
+      "end": 5673.84,
+      "text": "czy też nazwą"
+    },
+    {
+      "start": 5673.84,
+      "end": 5676.04,
+      "text": "produktu, który w"
+    },
+    {
+      "start": 5676.04,
+      "end": 5677.8,
+      "text": "ofercie ma pewna"
+    },
+    {
+      "start": 5677.8,
+      "end": 5680.43,
+      "text": "popularna skandynawska"
+    },
+    {
+      "start": 5680.43,
+      "end": 5682.95,
+      "text": "sieć sprzedająca meble"
+    },
+    {
+      "start": 5682.95,
+      "end": 5685.45,
+      "text": "i akcesoria domowe."
+    },
+    {
+      "start": 5685.75,
+      "end": 5687.36,
+      "text": "Gdyby w wariancie"
+    },
+    {
+      "start": 5687.36,
+      "end": 5688.47,
+      "text": "takiej zabawy ktoś"
+    },
+    {
+      "start": 5688.47,
+      "end": 5690.03,
+      "text": "kazał mi zgadywać"
+    },
+    {
+      "start": 5690.03,
+      "end": 5691.79,
+      "text": "jaką muzykę gra zespół"
+    },
+    {
+      "start": 5691.79,
+      "end": 5693.82,
+      "text": "Allegeon, obstawiałbym"
+    },
+    {
+      "start": 5693.82,
+      "end": 5695.21,
+      "text": "power metal, ale"
+    },
+    {
+      "start": 5695.21,
+      "end": 5696.01,
+      "text": "nie."
+    },
+    {
+      "start": 5696.71,
+      "end": 5697.39,
+      "text": "Grają melodyjny,"
+    },
+    {
+      "start": 5697.39,
+      "end": 5699.82,
+      "text": "techniczny, progresywny"
+    },
+    {
+      "start": 5699.82,
+      "end": 5701.13,
+      "text": "death metal. Grają"
+    },
+    {
+      "start": 5701.13,
+      "end": 5702.6,
+      "text": "go w Colorado, ale"
+    },
+    {
+      "start": 5702.6,
+      "end": 5704.14,
+      "text": "we wrześniu pojawią"
+    },
+    {
+      "start": 5704.14,
+      "end": 5705.24,
+      "text": "się na trasie w"
+    },
+    {
+      "start": 5705.24,
+      "end": 5706.29,
+      "text": "Europie."
+    },
+    {
+      "start": 5706.53,
+      "end": 5707.98,
+      "text": "Zaprosili sobie do"
+    },
+    {
+      "start": 5707.98,
+      "end": 5709.28,
+      "text": "towarzystwa dwie"
+    },
+    {
+      "start": 5709.28,
+      "end": 5710.81,
+      "text": "inne grupy, które"
+    },
+    {
+      "start": 5710.81,
+      "end": 5712.27,
+      "text": "przy pomocy bardzo"
+    },
+    {
+      "start": 5712.27,
+      "end": 5713.72,
+      "text": "wielu precyzyjnie"
+    },
+    {
+      "start": 5713.72,
+      "end": 5715.08,
+      "text": "odegranych nutek"
+    },
+    {
+      "start": 5715.08,
+      "end": 5716.91,
+      "text": "również próbują łączyć"
+    },
+    {
+      "start": 5716.91,
+      "end": 5719.65,
+      "text": "brutalność z Finezją,"
+    },
+    {
+      "start": 5719.65,
+      "end": 5721.31,
+      "text": "a są to francuski"
+    },
+    {
+      "start": 5721.31,
+      "end": 5722.75,
+      "text": "Gorod oraz fiński"
+    },
+    {
+      "start": 5722.75,
+      "end": 5723.87,
+      "text": "Halizis."
+    },
+    {
+      "start": 5723.87,
+      "end": 5727.4,
+      "text": "21 września ta progresywno"
+    },
+    {
+      "start": 5727.4,
+      "end": 5729.89,
+      "text": "death metalowa trójca"
+    },
+    {
+      "start": 5729.89,
+      "end": 5732.11,
+      "text": "zagra w Krakowie, a"
+    },
+    {
+      "start": 5732.11,
+      "end": 5734.86,
+      "text": "dzień wcześniej 20"
+    },
+    {
+      "start": 5734.86,
+      "end": 5737.1,
+      "text": "września w Warszawie"
+    },
+    {
+      "start": 5737.1,
+      "end": 5738.49,
+      "text": "voodoo."
+    },
+    {
+      "start": 5738.49,
+      "end": 5740.12,
+      "text": "Co ciekawe, w tym"
+    },
+    {
+      "start": 5740.12,
+      "end": 5741.8,
+      "text": "samym voodoo tego"
+    },
+    {
+      "start": 5741.8,
+      "end": 5743.54,
+      "text": "samego dnia, tylko"
+    },
+    {
+      "start": 5743.54,
+      "end": 5745.47,
+      "text": "za ścianą, zupełnie"
+    },
+    {
+      "start": 5745.47,
+      "end": 5747.01,
+      "text": "inną wizję death"
+    },
+    {
+      "start": 5747.01,
+      "end": 5749.78,
+      "text": "metalu, roztoczy skład,"
+    },
+    {
+      "start": 5749.78,
+      "end": 5751.9,
+      "text": "któremu dowodzi też"
+    },
+    {
+      "start": 5751.9,
+      "end": 5753.77,
+      "text": "amerykański zespół"
+    },
+    {
+      "start": 5753.77,
+      "end": 5755.45,
+      "text": "Funebrarum."
+    },
+    {
+      "start": 5755.45,
+      "end": 5757.24,
+      "text": "To z kolei czołówka"
+    },
+    {
+      "start": 5757.24,
+      "end": 5759.91,
+      "text": "death metalowego renesansu"
+    },
+    {
+      "start": 5759.91,
+      "end": 5761.47,
+      "text": "XXI wieku i tu już"
+    },
+    {
+      "start": 5761.47,
+      "end": 5763.04,
+      "text": "nie ma miejsca na"
+    },
+    {
+      "start": 5763.04,
+      "end": 5764.72,
+      "text": "żadne, ale żadne"
+    },
+    {
+      "start": 5764.72,
+      "end": 5767.85,
+      "text": "dodatki, żadne półśrodki."
+    },
+    {
+      "start": 5767.85,
+      "end": 5769.75,
+      "text": "Na ich trzecią płytę,"
+    },
+    {
+      "start": 5769.75,
+      "end": 5771.16,
+      "text": "Becon in the Void"
+    },
+    {
+      "start": 5771.16,
+      "end": 5772.97,
+      "text": "of Eternal Silence,"
+    },
+    {
+      "start": 5772.97,
+      "end": 5774.77,
+      "text": "trzeba było poczekać"
+    },
+    {
+      "start": 5774.77,
+      "end": 5777,
+      "text": "długie, 17 lat, ale"
+    },
+    {
+      "start": 5777,
+      "end": 5779.07,
+      "text": "już się ukazała i zgodnie"
+    },
+    {
+      "start": 5779.07,
+      "end": 5781.05,
+      "text": "z przewidywalnością,"
+    },
+    {
+      "start": 5781.05,
+      "end": 5784.43,
+      "text": "mieli kości na puder."
+    },
+    {
+      "start": 5785.25,
+      "end": 5786.05,
+      "text": "Na koncercie w"
+    },
+    {
+      "start": 5786.05,
+      "end": 5788.1,
+      "text": "Warszawie funebrarum"
+    },
+    {
+      "start": 5788.1,
+      "end": 5789.37,
+      "text": "towarzyszyć będą"
+    },
+    {
+      "start": 5789.37,
+      "end": 5790.67,
+      "text": "Finowie z Morbific"
+    },
+    {
+      "start": 5790.67,
+      "end": 5791.88,
+      "text": "oraz Brutale"
+    },
+    {
+      "start": 5791.88,
+      "end": 5794.79,
+      "text": "naszego rodzimego HOW-u,"
+    },
+    {
+      "start": 5794.79,
+      "end": 5796.2,
+      "text": "czyli Burning Sky i"
+    },
+    {
+      "start": 5796.2,
+      "end": 5798.45,
+      "text": "Manglet Recreement."
+    },
+    {
+      "start": 6125.24,
+      "end": 6126.63,
+      "text": "Słuchacie ciężko na"
+    },
+    {
+      "start": 6126.63,
+      "end": 6128.62,
+      "text": "sercu. Dzisiaj opowiadam"
+    },
+    {
+      "start": 6128.62,
+      "end": 6130.3,
+      "text": "o ciekawych koncertach"
+    },
+    {
+      "start": 6130.3,
+      "end": 6131.69,
+      "text": "czekających nas już"
+    },
+    {
+      "start": 6131.69,
+      "end": 6133.89,
+      "text": "lada moment we wrześniu."
+    },
+    {
+      "start": 6133.89,
+      "end": 6136.32,
+      "text": "Ukraińska grupa rekonstrukcyjna,"
+    },
+    {
+      "start": 6136.32,
+      "end": 6137.84,
+      "text": "a przy okazji świetna"
+    },
+    {
+      "start": 6137.84,
+      "end": 6139.1,
+      "text": "grupa Black Death"
+    },
+    {
+      "start": 6139.1,
+      "end": 6140.28,
+      "text": "Doom metalowa,"
+    },
+    {
+      "start": 6140.28,
+      "end": 6143.22,
+      "text": "czyli 1914, przypomni"
+    },
+    {
+      "start": 6143.22,
+      "end": 6145.13,
+      "text": "echa wojny, która"
+    },
+    {
+      "start": 6145.13,
+      "end": 6146.86,
+      "text": "miała zakończyć"
+    },
+    {
+      "start": 6146.86,
+      "end": 6148.5,
+      "text": "wszystkie wojny w"
+    },
+    {
+      "start": 6148.5,
+      "end": 6150.54,
+      "text": "Lublinie w graffiti"
+    },
+    {
+      "start": 6150.54,
+      "end": 6152.66,
+      "text": "21 września."
+    },
+    {
+      "start": 6152.66,
+      "end": 6155.2,
+      "text": "23 września w Prezero"
+    },
+    {
+      "start": 6155.2,
+      "end": 6157.28,
+      "text": "Arenie Gliwice czeka"
+    },
+    {
+      "start": 6157.28,
+      "end": 6159.14,
+      "text": "nas polska odsłona"
+    },
+    {
+      "start": 6159.14,
+      "end": 6160.98,
+      "text": "trasy, która nosi"
+    },
+    {
+      "start": 6160.98,
+      "end": 6162.81,
+      "text": "nazwę Tsunami Sea i"
+    },
+    {
+      "start": 6162.81,
+      "end": 6164.56,
+      "text": "jest falą, która"
+    },
+    {
+      "start": 6164.56,
+      "end": 6166.19,
+      "text": "niesie nam metal"
+    },
+    {
+      "start": 6166.19,
+      "end": 6168.96,
+      "text": "nowy, a nawet nowoczesny,"
+    },
+    {
+      "start": 6168.96,
+      "end": 6171.73,
+      "text": "w dodatku wyemancypowany,"
+    },
+    {
+      "start": 6171.73,
+      "end": 6173.48,
+      "text": "bo z dominującymi"
+    },
+    {
+      "start": 6173.48,
+      "end": 6176.47,
+      "text": "rolami bardzo utalentowanych"
+    },
+    {
+      "start": 6176.47,
+      "end": 6177.94,
+      "text": "kobiet."
+    },
+    {
+      "start": 6177.94,
+      "end": 6179.19,
+      "text": "Gwiazdą wieczoru"
+    },
+    {
+      "start": 6179.19,
+      "end": 6180.63,
+      "text": "będzie Spirit Box,"
+    },
+    {
+      "start": 6180.63,
+      "end": 6182.15,
+      "text": "którego progresywna"
+    },
+    {
+      "start": 6182.15,
+      "end": 6184.33,
+      "text": "wizja metalcora zaprowadziła"
+    },
+    {
+      "start": 6184.33,
+      "end": 6185.42,
+      "text": "ich już nawet na"
+    },
+    {
+      "start": 6185.42,
+      "end": 6187.14,
+      "text": "galę nagród Grammy."
+    },
+    {
+      "start": 6187.94,
+      "end": 6188.64,
+      "text": "I kto nie widział,"
+    },
+    {
+      "start": 6188.64,
+      "end": 6190.13,
+      "text": "polecam odnaleźć w"
+    },
+    {
+      "start": 6190.13,
+      "end": 6191.54,
+      "text": "internecie zapis"
+    },
+    {
+      "start": 6191.54,
+      "end": 6192.76,
+      "text": "wideo z tego ich"
+    },
+    {
+      "start": 6192.76,
+      "end": 6195.18,
+      "text": "występu przed wyfraczonym,"
+    },
+    {
+      "start": 6195.18,
+      "end": 6197.1,
+      "text": "dostojnym Towarzystwem"
+    },
+    {
+      "start": 6197.1,
+      "end": 6199.42,
+      "text": "Akademii Fonograficznej"
+    },
+    {
+      "start": 6199.42,
+      "end": 6201.02,
+      "text": "z Ameryki,"
+    },
+    {
+      "start": 6201.02,
+      "end": 6202.36,
+      "text": "żeby przyjrzeć się"
+    },
+    {
+      "start": 6202.36,
+      "end": 6203.75,
+      "text": "nie tylko świetnemu"
+    },
+    {
+      "start": 6203.75,
+      "end": 6205.14,
+      "text": "zespołowi, ale też"
+    },
+    {
+      "start": 6205.14,
+      "end": 6206.12,
+      "text": "minom tamtych"
+    },
+    {
+      "start": 6206.12,
+      "end": 6207.08,
+      "text": "państwa."
+    },
+    {
+      "start": 6207.38,
+      "end": 6208.53,
+      "text": "Spirit Box w trasę"
+    },
+    {
+      "start": 6208.53,
+      "end": 6210.3,
+      "text": "zaprosili ukraińską"
+    },
+    {
+      "start": 6210.3,
+      "end": 6211.72,
+      "text": "grupę Ginger oraz"
+    },
+    {
+      "start": 6211.72,
+      "end": 6213.34,
+      "text": "amerykański zespół"
+    },
+    {
+      "start": 6213.34,
+      "end": 6215.2,
+      "text": "Dying Wish, a więc"
+    },
+    {
+      "start": 6215.2,
+      "end": 6217.48,
+      "text": "bardzo mocny to zespół."
+    },
+    {
+      "start": 6478.65,
+      "end": 6480.95,
+      "text": "24 września Warszawa,"
+    },
+    {
+      "start": 6480.95,
+      "end": 6483.94,
+      "text": "Hydrozagadka. 25 września"
+    },
+    {
+      "start": 6483.94,
+      "end": 6486.05,
+      "text": "Kraków, Hype Park."
+    },
+    {
+      "start": 6486.05,
+      "end": 6487.8,
+      "text": "W tych dwóch miejscach"
+    },
+    {
+      "start": 6487.8,
+      "end": 6489.64,
+      "text": "i datach metal-korowcy"
+    },
+    {
+      "start": 6489.64,
+      "end": 6491.02,
+      "text": "z Niemiec, czyli"
+    },
+    {
+      "start": 6491.02,
+      "end": 6492.13,
+      "text": "Tenside oraz z"
+    },
+    {
+      "start": 6492.13,
+      "end": 6493.81,
+      "text": "Australii, a więc"
+    },
+    {
+      "start": 6493.81,
+      "end": 6495.93,
+      "text": "Sugar Spine, zagrają"
+    },
+    {
+      "start": 6495.93,
+      "end": 6497.92,
+      "text": "w towarzystwie grupy"
+    },
+    {
+      "start": 6497.92,
+      "end": 6499.8,
+      "text": "Aurora Wave, która"
+    },
+    {
+      "start": 6499.8,
+      "end": 6501.3,
+      "text": "twierdzi, że gra"
+    },
+    {
+      "start": 6501.3,
+      "end": 6502.98,
+      "text": "najcięższe reggae"
+    },
+    {
+      "start": 6502.98,
+      "end": 6504.35,
+      "text": "na świecie."
+    },
+    {
+      "start": 6504.35,
+      "end": 6505.25,
+      "text": "I to może być"
+    },
+    {
+      "start": 6505.25,
+      "end": 6506.78,
+      "text": "prawda. W dodatku"
+    },
+    {
+      "start": 6506.78,
+      "end": 6508.13,
+      "text": "gra to karkołomne"
+    },
+    {
+      "start": 6508.13,
+      "end": 6509.96,
+      "text": "połączenie nadzwyczaj"
+    },
+    {
+      "start": 6509.96,
+      "end": 6511.48,
+      "text": "dobrze. Zatem kto"
+    },
+    {
+      "start": 6511.48,
+      "end": 6512.97,
+      "text": "wie, może się skuszę."
+    },
+    {
+      "start": 6512.97,
+      "end": 6514.61,
+      "text": "To może być ciekawe"
+    },
+    {
+      "start": 6514.61,
+      "end": 6516.45,
+      "text": "doświadczenie. Już"
+    },
+    {
+      "start": 6516.45,
+      "end": 6517.74,
+      "text": "chyba Aurora Wave"
+    },
+    {
+      "start": 6517.74,
+      "end": 6519.3,
+      "text": "wam tutaj puszczałem"
+    },
+    {
+      "start": 6519.3,
+      "end": 6520.58,
+      "text": "ciężko na sercu,"
+    },
+    {
+      "start": 6520.58,
+      "end": 6522.13,
+      "text": "ale puszczę jeszcze"
+    },
+    {
+      "start": 6522.13,
+      "end": 6523.33,
+      "text": "raz, bo to rzadka"
+    },
+    {
+      "start": 6523.33,
+      "end": 6524.71,
+      "text": "okazja, żeby taką"
+    },
+    {
+      "start": 6524.71,
+      "end": 6526.83,
+      "text": "hybrydę prezentować."
+    },
+    {
+      "start": 6732.6,
+      "end": 6733.73,
+      "text": "Co my tam jeszcze"
+    },
+    {
+      "start": 6733.73,
+      "end": 6734.95,
+      "text": "mamy pod koniec"
+    },
+    {
+      "start": 6734.95,
+      "end": 6736.02,
+      "text": "miesiąca?"
+    },
+    {
+      "start": 6737.16,
+      "end": 6738.58,
+      "text": "Demonolit, Eteritus,"
+    },
+    {
+      "start": 6738.58,
+      "end": 6740.64,
+      "text": "Kalt Windur, Devil"
+    },
+    {
+      "start": 6740.64,
+      "end": 6742.66,
+      "text": "Snack i Scarificator"
+    },
+    {
+      "start": 6742.66,
       "end": 6746.34,
-      "text": "Demonolit, Eteritus, Kalt Windur, Devil Snack i Scarificator w Gdyni, 26 września."
+      "text": "w Gdyni 26 września."
     },
     {
-      "start": 6746.68,
-      "end": 6753.54,
-      "text": "Świetna grupa Birds in Row w Warszawie, 27 września i w Poznaniu, 28."
+      "start": 6746.34,
+      "end": 6748.26,
+      "text": "Świetna grupa Birds"
     },
     {
-      "start": 6754.54,
+      "start": 6748.26,
+      "end": 6749.9,
+      "text": "in Row w Warszawie"
+    },
+    {
+      "start": 6749.9,
+      "end": 6752.59,
+      "text": "27 września i w Poznaniu"
+    },
+    {
+      "start": 6752.59,
+      "end": 6753.74,
+      "text": "28."
+    },
+    {
+      "start": 6754.58,
+      "end": 6757.55,
+      "text": "29 września w Warszawskiej"
+    },
+    {
+      "start": 6757.55,
+      "end": 6758.98,
+      "text": "progresji The"
+    },
+    {
+      "start": 6758.98,
+      "end": 6761.19,
+      "text": "Almighty Affliction,"
+    },
+    {
+      "start": 6761.19,
+      "end": 6763.38,
+      "text": "Silent Planet, Varials"
+    },
+    {
+      "start": 6763.38,
       "end": 6764.7,
-      "text": "29 września w Warszawskiej progresji The Almighty Affliction, Silent Planet, Varials i Ortodox."
+      "text": "i Ortodox."
     },
     {
-      "start": 6765.62,
+      "start": 6765.52,
+      "end": 6767.92,
+      "text": "Natomiast 30 września"
+    },
+    {
+      "start": 6767.92,
+      "end": 6770.72,
+      "text": "Kraków palił i niszczył"
+    },
+    {
+      "start": 6770.72,
+      "end": 6773.82,
+      "text": "będzie szwedzki Marduk,"
+    },
+    {
+      "start": 6773.82,
       "end": 6776.46,
-      "text": "Natomiast 30 września Kraków palił i niszczył będzie szwedzki Marduk, który wystąpi w kwadracie."
+      "text": "który wystąpi w kwadracie."
     },
     {
       "start": 6776.46,
+      "end": 6777.58,
+      "text": "Ale powiem Wam"
+    },
+    {
+      "start": 6777.58,
+      "end": 6779.18,
+      "text": "jeszcze o festiwalu"
+    },
+    {
+      "start": 6779.18,
+      "end": 6780.86,
+      "text": "Avant Art, który"
+    },
+    {
+      "start": 6780.86,
+      "end": 6782.03,
+      "text": "właściwie na cały"
+    },
+    {
+      "start": 6782.03,
+      "end": 6783.72,
+      "text": "wrzesień rozpełznie"
+    },
+    {
+      "start": 6783.72,
       "end": 6785.6,
-      "text": "Ale powiem Wam jeszcze o festiwalu Avant Art, który właściwie na cały wrzesień rozpełznie się po całym kraju."
+      "text": "się po całym kraju."
     },
     {
       "start": 6786.16,
+      "end": 6787.18,
+      "text": "Będą tam, jak to na"
+    },
+    {
+      "start": 6787.18,
+      "end": 6788.88,
+      "text": "Avant Arcie, rzeczy"
+    },
+    {
+      "start": 6788.88,
+      "end": 6791.17,
+      "text": "przedziwne, oryginalne,"
+    },
+    {
+      "start": 6791.17,
+      "end": 6792.77,
+      "text": "zupełnie nowe albo"
+    },
+    {
+      "start": 6792.77,
       "end": 6794.24,
-      "text": "Będą tam, jak to na Avant Arcie, rzeczy przedziwne, oryginalne, zupełnie nowe albo legendarne."
+      "text": "legendarne."
     },
     {
       "start": 6795.12,
+      "end": 6796.42,
+      "text": "Będą filmy i spotkania,"
+    },
+    {
+      "start": 6796.42,
+      "end": 6798.53,
+      "text": "ale będą też koncerty,"
+    },
+    {
+      "start": 6798.53,
+      "end": 6800.22,
+      "text": "które mogą Państwa"
+    },
+    {
+      "start": 6800.22,
       "end": 6802.02,
-      "text": "Będą filmy i spotkania, ale będą też koncerty, które mogą Państwa zainteresować."
+      "text": "zainteresować."
     },
     {
       "start": 6802.02,
-      "end": 6810.84,
-      "text": "Choć oczywiście nie wszystkie będą ciężkie, na pewno nie w tradycyjnym tego słowa rozumieniu."
+      "end": 6803.79,
+      "text": "Choć oczywiście nie"
     },
     {
-      "start": 6811.14,
-      "end": 6819.86,
-      "text": "Na przykład we Wrocławiu, 11 września, polecam koncert, na którym wystąpi indonezyjska grupa Senyawa."
+      "start": 6803.79,
+      "end": 6806.09,
+      "text": "wszystkie będą ciężkie,"
+    },
+    {
+      "start": 6806.09,
+      "end": 6808.38,
+      "text": "na pewno nie w tradycyjnym"
+    },
+    {
+      "start": 6808.38,
+      "end": 6810.8,
+      "text": "tego słowa rozumieniu."
+    },
+    {
+      "start": 6810.8,
+      "end": 6812.9,
+      "text": "Na przykład we Wrocławiu"
+    },
+    {
+      "start": 6812.9,
+      "end": 6815.18,
+      "text": "11 września polecam"
+    },
+    {
+      "start": 6815.18,
+      "end": 6816.77,
+      "text": "koncert, na którym"
+    },
+    {
+      "start": 6816.77,
+      "end": 6818.76,
+      "text": "wystąpi indonezyjska"
+    },
+    {
+      "start": 6818.76,
+      "end": 6819.88,
+      "text": "grupa Senjawa."
     },
     {
       "start": 6820.52,
+      "end": 6822.23,
+      "text": "Łącząca muzyczne tradycje"
+    },
+    {
+      "start": 6822.23,
+      "end": 6825.16,
+      "text": "swojego kraju z eksperymentami,"
+    },
+    {
+      "start": 6825.16,
+      "end": 6827.02,
+      "text": "ale czasem też ze srogą"
+    },
+    {
+      "start": 6827.02,
       "end": 6829.14,
-      "text": "Łącząca muzyczne tradycje swojego kraju z eksperymentami, ale czasem też ze srogą dźwiękową chłostą."
+      "text": "dźwiękową chłostą."
     },
     {
-      "start": 6829.62,
+      "start": 6830.28,
+      "end": 6831.33,
+      "text": "Dzień później też"
+    },
+    {
+      "start": 6831.33,
+      "end": 6832.66,
+      "text": "we Wrocławiu wystąpią"
+    },
+    {
+      "start": 6832.66,
+      "end": 6835.07,
+      "text": "m.in. ekstensa z gościnnym"
+    },
+    {
+      "start": 6835.07,
+      "end": 6836.64,
+      "text": "udziałem Mikołaja"
+    },
+    {
+      "start": 6836.64,
       "end": 6837.72,
-      "text": "Dzień później też we Wrocławiu wystąpią m.in. ekstensa z gościnnym udziałem Mikołaja Trzaski."
+      "text": "Trzaski."
     },
     {
-      "start": 6837.88,
-      "end": 6846.84,
-      "text": "Tego samego wieczoru, przypominam, że mówię o Wrocławiu, o Avant Arcie, zagra Earth Ball."
+      "start": 6837.72,
+      "end": 6839.73,
+      "text": "Tego samego wieczoru,"
     },
     {
-      "start": 6847.56,
-      "end": 6852.04,
-      "text": "Zagra włoski zespół Zoo oraz Igor Kawalera."
+      "start": 6839.73,
+      "end": 6841.74,
+      "text": "przypominam, że mówię"
     },
     {
-      "start": 6852.4,
+      "start": 6841.74,
+      "end": 6843.05,
+      "text": "o Wrocławiu, o"
+    },
+    {
+      "start": 6843.05,
+      "end": 6845.15,
+      "text": "Avant Arcie, zagra"
+    },
+    {
+      "start": 6845.15,
+      "end": 6848.28,
+      "text": "Earthball, zagra włoski"
+    },
+    {
+      "start": 6848.28,
+      "end": 6850,
+      "text": "zespół Zoo oraz"
+    },
+    {
+      "start": 6850,
+      "end": 6852.06,
+      "text": "Igor Kawalera."
+    },
+    {
+      "start": 6852.6,
+      "end": 6854.04,
+      "text": "Wspomniana już Seniawa"
+    },
+    {
+      "start": 6854.04,
+      "end": 6855.44,
+      "text": "pojawi się też na"
+    },
+    {
+      "start": 6855.44,
+      "end": 6857.25,
+      "text": "warszawskiej odsłonie"
+    },
+    {
+      "start": 6857.25,
+      "end": 6860.7,
+      "text": "Avant Art 18 września"
+    },
+    {
+      "start": 6860.7,
       "end": 6861.66,
-      "text": "Wspomniana już Senyawa pojawi się też na warszawskiej odsłonie Avant Art, 18 września i ponownie."
+      "text": "i ponownie."
     },
     {
       "start": 6862.08,
-      "end": 6872,
-      "text": "Proszę tego nie zlekceważyć, to fantastyczny zespół i na co dzień do takiej muzyki dostępu nie mamy."
+      "end": 6864.72,
+      "text": "Proszę tego nie zlekceważyć,"
     },
     {
-      "start": 6872.4,
-      "end": 6877.66,
-      "text": "Co zamierzam udowodnić, grając Wam na dobranoc właśnie Senyawę."
+      "start": 6864.72,
+      "end": 6867.18,
+      "text": "to fantastyczny zespół"
     },
     {
-      "start": 6877.66,
+      "start": 6867.18,
+      "end": 6868.56,
+      "text": "i na co dzień do"
+    },
+    {
+      "start": 6868.56,
+      "end": 6869.95,
+      "text": "takiej muzyki"
+    },
+    {
+      "start": 6869.95,
+      "end": 6871.98,
+      "text": "dostępu nie mamy."
+    },
+    {
+      "start": 6871.98,
+      "end": 6874.3,
+      "text": "Co zamierzam udowodnić,"
+    },
+    {
+      "start": 6874.3,
+      "end": 6876.31,
+      "text": "grając Wam na dobranoc"
+    },
+    {
+      "start": 6876.31,
+      "end": 6878.48,
+      "text": "właśnie Seniawe. Do"
+    },
+    {
+      "start": 6878.48,
       "end": 6879.66,
-      "text": "Do usłyszenia."
-    },
-    {
-      "start": 7048.52,
-      "end": 7051.78,
-      "text": "Ba doj, ba te raka!"
+      "text": "usłyszenia."
     }
   ],
   "stats": {
-    "windowCount": 18,
-    "transcribedAudioSec": 1680.75,
-    "segmentCount": 187,
-    "characterCount": 18002
-  },
-  "sourceId": "2026-09-02-lato-minelo-metal-zostaje"
+    "windowCount": 15,
+    "transcribedAudioSec": 1621.52,
+    "segmentCount": 948,
+    "characterCount": 17157
+  }
 }
