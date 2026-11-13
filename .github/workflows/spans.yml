@@ -115,19 +115,12 @@ jobs:
 
       - run: npm ci
 
+      # `download-artifact` rozpakowuje jeden artefakt płasko, a kilka do podkatalogów,
+      # więc id bierzemy z `episodeId` w pliku, nie z nazwy katalogu.
       - name: Włóż artefakty do repozytorium
-        run: |
-          count=0
-          for file in .spans/spans-*/speech-spans.json; do
-            [ -e "$file" ] || continue
-            id=$(basename "$(dirname "$file")")
-            id=${id#spans-}
-            mkdir -p "data/artifacts/$id"
-            cp "$file" "data/artifacts/$id/speech-spans.json"
-            count=$((count + 1))
-          done
-          echo "włożonych artefaktów: $count"
-          find data/artifacts -name 'speech-spans.json' | sort
+        env:
+          EXPECTED: ${{ needs.plan.outputs.count }}
+        run: node scripts/collect-spans.mjs .spans data/artifacts
 
       - name: Commit
         run: |
