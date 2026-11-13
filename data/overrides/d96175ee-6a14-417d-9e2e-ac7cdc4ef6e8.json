@@ -1,13 +1,66 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1266.09,
+      "label": "Projekty: ARM, TOW, Furia, Mentors, Grieving, Gruzja, solo",
+      "start": 1266.09
+    },
+    {
+      "time": 2273.76,
+      "label": "Punkowo-hardcorowe początki, scena sosnowiecka, wyjazd do Nowego Jorku",
+      "start": 2225.78
+    },
+    {
+      "time": 3397.42,
+      "label": "Wesele w Teatrze Starym i współpraca z Janem Klatą",
+      "start": 3391.7
+    },
+    {
+      "time": 5605.15,
+      "label": "Nadmiar współczesnej muzyki i poszukiwanie nowych dźwięków",
+      "start": 5548.21
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 5.56,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Dobry wieczór. W tę posępną grudniową noc wita Was Jarek Szubrycht, gospodarz audycji…",
+      "start": 14.51,
+      "end": 86.19
+    },
+    {
+      "label": "Coś jak piano, fortissimo, tylko kiedy Włosi wymyślali te wskazówki dynamiczne, nie było…",
+      "start": 1197.78,
+      "end": 1216.82
+    },
+    {
+      "label": "To był Arm, a ze mną w studiu jest Artur Rumiński i ja wiem, że ciągle odpowiadasz na to…",
+      "start": 2086.16,
+      "end": 2121.39
+    },
+    {
+      "label": "No tak, w sumie, jak go pamiętam, zawsze grałem w kilku zespołach, jakoś nigdy nie mogłem…",
+      "start": 2128.27,
+      "end": 2214.54
+    },
+    {
+      "label": "Szybko nam ta noc zleciała, prawda? Cóż, dobrze się hałasuje w miłym towarzystwie.…",
+      "start": 6228.18,
+      "end": 6314.42
+    },
+    {
+      "label": "Posłuchajmy więc na pożegnanie fragmentu Dark Night of the Soul z tą właśnie myślą, że…",
+      "start": 6333.74,
+      "end": 6336.5
     }
   ]
 }

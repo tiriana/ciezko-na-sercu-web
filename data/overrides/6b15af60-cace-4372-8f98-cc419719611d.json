@@ -1,7 +1,38 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 43.9,
+      "label": "Idea rankingu: 10 polskich i 10 zagranicznych płyt stulecia",
+      "start": 11.89
+    },
+    {
+      "time": 2008.66,
+      "label": "Morowe — Piekło, Labirynty, Diabły i postać Nihila",
+      "start": 1980.08
+    },
+    {
+      "time": 3182.28,
+      "label": "Imperial Triumphant — Vile Luxury, jazz spotyka metal",
+      "start": 3121.74
+    },
+    {
+      "time": 5641.16,
+      "label": "Scott Walker i Sunn O))) — wspólny album Soused",
+      "start": 5612.14
+    },
+    {
+      "time": 6248.45,
+      "label": "The Body — No One Deserves Happiness i płodność zespołu",
+      "start": 6228.37
+    },
+    {
+      "time": 6593.67,
+      "label": "Neurosis — A Sun That Never Sets zwycięzcą rankingu",
+      "start": 6561.71
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +40,6 @@
       "start": 4.33,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

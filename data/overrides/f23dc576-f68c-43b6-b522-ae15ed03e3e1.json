@@ -1,13 +1,61 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 64,
+      "label": "Prezentacja półfinałowej pięćdziesiątki zespołów Road to Mystic",
+      "start": 14.35
+    },
+    {
+      "time": 3941.52,
+      "label": "Półfinałowe wybory Mystic Festivalu — prezentacja szerokiego spektrum gatunkowego",
+      "start": 3936
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 6.64,
       "durationSec": 8.06
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Road to Mystic nie jest miejscem, konkursem wyłącznie dla zespołów metalowych, podobnie…",
+      "start": 2377.01,
+      "end": 2474
+    },
+    {
+      "label": "Kolejny zespół uważni słuchacze trójki już na pewno znają z innych audycji, bo to też nie…",
+      "start": 2715.63,
+      "end": 2827.02
+    },
+    {
+      "label": "Zespół Give Up To Failure pochodzi z Wrocławia i gra dla nas od 2019 roku. Do tej pory…",
+      "start": 3220.56,
+      "end": 3287.92
+    },
+    {
+      "label": "Dzisiaj wciężko na sercu przegląd tego, co w polskim ciężkim i mrocznym undergroundzie…",
+      "start": 3565.46,
+      "end": 3619.63
+    },
+    {
+      "label": "To był Orphanage Named Earth z utworem Fire in My Heart, a my dorzucamy do pieca. Pora na…",
+      "start": 4944.75,
+      "end": 5022.26
+    },
+    {
+      "label": "Rzeszowski SARS gra już od dobrych paru lat, konkretnie od 2018 roku i wykształcił w tym…",
+      "start": 5204.4,
+      "end": 5240.78
+    },
+    {
+      "label": "Zanim zaprezentuję kompozycję kończącą dzisiejsze wydanie Ciężko na sercu, chciałbym…",
+      "start": 6739.73,
+      "end": 6829.55
     }
   ]
 }

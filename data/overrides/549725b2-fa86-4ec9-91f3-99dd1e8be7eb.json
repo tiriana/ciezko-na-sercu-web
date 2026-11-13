@@ -1,13 +1,56 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1026.31,
+      "label": "Relacja między muzyką klasyczną a ekstremalnym metalem",
+      "start": 1017.66
+    },
+    {
+      "time": 4475.88,
+      "label": "Pierwszy kontakt z metalem u kuzyna Sławomira",
+      "start": 4475.88
+    },
+    {
+      "time": 4596.36,
+      "label": "Historia gry na gitarze i pisania własnych utworów",
+      "start": 4596.36
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 5.14,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Jak wyobrażasz sobie tą liczbę, 30 lat, to jest to faktycznie niewerygodne, że to już…",
+      "start": 3608.24,
+      "end": 3616.78
+    },
+    {
+      "label": "Na pewno mój kolega z zespołu, Wojtek Wąsowicz, to na 100%. Pozdrawiamy serdecznie…",
+      "start": 3650.9,
+      "end": 3693.68
+    },
+    {
+      "label": "Ja właśnie dlatego, że, znaczy trochę bardziej dorastałem właśnie z Judasami, bo…",
+      "start": 3725.23,
+      "end": 3765.17
+    },
+    {
+      "label": "Załamka. Obcięli włosy, przestali być metalowcami. Numery były fajne. Te płyty, zwłaszcza…",
+      "start": 6036.24,
+      "end": 6056.69
+    },
+    {
+      "label": "Ja miałem kontakt z black metalem taki sporadyczny, bo właśnie Wojtek, Wojtek słuchał…",
+      "start": 6076.91,
+      "end": 6111.6
     }
   ]
 }

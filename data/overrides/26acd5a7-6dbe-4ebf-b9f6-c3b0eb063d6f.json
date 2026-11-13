@@ -1,13 +1,46 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1800.23,
+      "label": "Weterani Converge z płytą Love Is Not Enough",
+      "start": 1768.91
+    },
+    {
+      "time": 3024.17,
+      "label": "Powrót In Aeternum z albumem Of Death and Fire",
+      "start": 2941.87
+    },
+    {
+      "time": 3319.08,
+      "label": "Worm i nekromantyczny black doom z Florydy",
+      "start": 3309.84
+    },
+    {
+      "time": 4650.41,
+      "label": "Slagmaur, Hulder's Ritual i inscenizowana akcja poszukiwawcza",
+      "start": 4578.32
+    },
+    {
+      "time": 5268.61,
+      "label": "Grecki The Magus i album Demonosofia",
+      "start": 5189.55
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 5.1,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Można jeszcze bardziej oldschoolowo? Oczywiście, że można, czasem nawet trzeba. Kiedy…",
+      "start": 2585.04,
+      "end": 2675.18
     }
   ]
 }

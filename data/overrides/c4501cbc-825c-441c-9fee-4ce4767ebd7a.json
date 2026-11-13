@@ -1,7 +1,23 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2122.71,
+      "label": "Slomatics i trasa Do spodu, do ziemi, w pustkę",
+      "start": 2098.13
+    },
+    {
+      "time": 2576.28,
+      "label": "Walentynkowy koncert Igorrr w warszawskiej Progresji",
+      "start": 2556.27
+    },
+    {
+      "time": 6449.09,
+      "label": "Paradise Lost, Saturnus i Shows of Null w trzech miastach",
+      "start": 6431.73
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +25,6 @@
       "start": 5.29,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

@@ -1,13 +1,41 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2444.75,
+      "label": "Prostitute i Attempted Martyr w Mute",
+      "start": 2410.29
+    },
+    {
+      "time": 3652.52,
+      "label": "Hell Ripper i album Kornak",
+      "start": 3625.46
+    },
+    {
+      "time": 4783.72,
+      "label": "Portugalska Guiria i album Los",
+      "start": 4768.24
+    },
+    {
+      "time": 6819.29,
+      "label": "Hanging Garden i Isle of Bliss",
+      "start": 6811.73
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 5.85,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Powiedziałem przed chwilą, że Threat Signal to granie progresywne, oczywiście w ramach…",
+      "start": 2065.87,
+      "end": 2134.45
     }
   ]
 }

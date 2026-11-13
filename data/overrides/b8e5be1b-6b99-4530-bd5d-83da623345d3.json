@@ -1,13 +1,36 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2548.94,
+      "label": "Prezentacja albumu Belzebong „The End Is High” i jego wydawnictwa Heavy Psych Sounds Records",
+      "start": 2500.3
+    },
+    {
+      "time": 3920.04,
+      "label": "Projekt Budda – debut „Amiotrophy” i jego stylistyka",
+      "start": 3881.14
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.93,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Do świtu jeszcze daleko, a już za chwileczkę, już za momencik, waszej krwi pragnął będzie…",
+      "start": 5350.67,
+      "end": 5402.96
+    },
+    {
+      "label": "Na koniec dzisiejszej audycji zespół z Norwegii, ale skoro utwór nosi tytuł Nie módl się…",
+      "start": 6338.74,
+      "end": 6424.78
     }
   ]
 }

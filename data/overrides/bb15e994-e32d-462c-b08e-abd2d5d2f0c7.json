@@ -1,7 +1,33 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 601.68,
+      "label": "Zapowiedź festiwalu \"Niech cisza milczy nawet zimą\" w Bielsku-Białej i planowane koncerty 9‑10 stycznia",
+      "start": 593.04
+    },
+    {
+      "time": 1408.5,
+      "label": "Polish Metal Alliance – opis projektu, skład, trasa koncertowa po Polsce w styczniu",
+      "start": 1337.78
+    },
+    {
+      "time": 2137.51,
+      "label": "Premiera nowego albumu Elende \"Zerfol\" i zapowiedź utworu tytułowego",
+      "start": 2122.61
+    },
+    {
+      "time": 4253.34,
+      "label": "Koncerty i premiery zespołów Architects oraz Pure Bedlam w styczniu",
+      "start": 4165.52
+    },
+    {
+      "time": 5957.64,
+      "label": "Koncerty Bellwidge i Aerial Ruin w Warszawie i Wrocławiu",
+      "start": 5925.97
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +35,6 @@
       "start": 6.05,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

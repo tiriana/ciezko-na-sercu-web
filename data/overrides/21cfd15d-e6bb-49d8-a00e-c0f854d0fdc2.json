@@ -1,13 +1,41 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1365.39,
+      "label": "Defaced i Icon o autorytaryzmie oraz manipulacji",
+      "start": 1329.81
+    },
+    {
+      "time": 4459.94,
+      "label": "Ulver i współczesny, miejski album Neverland",
+      "start": 4447.5
+    },
+    {
+      "time": 5775.31,
+      "label": "Czu i epicki jazz na Ferum Sidereum",
+      "start": 5757.65
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.72,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Polacy nie gęsi i swój death metal mają, Excavated Graves, to nowa nazwa, ale kryją się…",
+      "start": 2544.18,
+      "end": 2592.91
+    },
+    {
+      "label": "Zespół nazywa się Lwie Serce, co sugeruje epicki power metal. Zresztą był taki…",
+      "start": 4262.26,
+      "end": 4300.66
     }
   ]
 }

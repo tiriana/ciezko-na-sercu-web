@@ -1,13 +1,61 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2130.99,
+      "label": "Accept i Russian Roulette",
+      "start": 2111.57
+    },
+    {
+      "time": 3719.83,
+      "label": "Kat i Metal and Hell",
+      "start": 3699.15
+    },
+    {
+      "time": 4098.14,
+      "label": "Turbo i Kawaleria szatana",
+      "start": 4077.84
+    },
+    {
+      "time": 4405.12,
+      "label": "Niemiecki thrash: Sodom i Kreator",
+      "start": 4396.56
+    },
+    {
+      "time": 5041.2,
+      "label": "Slayer i Reign in Blood",
+      "start": 5027.6
+    },
+    {
+      "time": 6176.11,
+      "label": "Sepultura i Morbid Visions",
+      "start": 6143.09
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.97,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht, prowadzący dla Was audycję Ciężko na…",
+      "start": 12.53,
+      "end": 95.18
+    },
+    {
+      "label": "Już miałem mówić, że przed nami kawał historii, no ale właściwie każda z prezentowanych…",
+      "start": 5658.7,
+      "end": 5765.62
+    },
+    {
+      "label": "Jeszcze tego nie wiedziałem, ale w 1986 roku jeden z moich ulubionych zespołów metalowych…",
+      "start": 5922.83,
+      "end": 5955.12
     }
   ]
 }

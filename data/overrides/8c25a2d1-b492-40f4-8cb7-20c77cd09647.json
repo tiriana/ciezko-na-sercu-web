@@ -1,13 +1,31 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 5517.83,
+      "label": "Muzyka zespołu Mokadelik stworzoną na zamówienie",
+      "start": 5417.01
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 5.05,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Szoker, u nas funkcjonujący pod tytułem Zbrodnia ze snu, tak jakby tłumacz nawiązywał do…",
+      "start": 1059.63,
+      "end": 1102.38
+    },
+    {
+      "label": "Skoro już o Davidzie Lynchu mowa, nie mogę nie wrócić do jego wcześniejszego filmu, do…",
+      "start": 2688.91,
+      "end": 2745.36
     }
   ]
 }

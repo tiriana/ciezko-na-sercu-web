@@ -1,13 +1,41 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 381.12,
+      "label": "Rap-metal Anthraxu, nu metal i horrorcore Ho99o9",
+      "start": 381.12
+    },
+    {
+      "time": 2153.04,
+      "label": "Fear Factory i remiksy „Fear Is the Mind Killer”",
+      "start": 2127.86
+    },
+    {
+      "time": 3426.94,
+      "label": "Babymetal — metal połączony z J-popem",
+      "start": 3408.5
+    },
+    {
+      "time": 3957.6,
+      "label": "Deafheaven i blackgaze na „Lonely People With Power”",
+      "start": 3928.02
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.95,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Black metal i gospel to jedno. Dla mnie natomiast najbardziej niemożliwym połączeniem,…",
+      "start": 5331.28,
+      "end": 5355.5
     }
   ]
 }
