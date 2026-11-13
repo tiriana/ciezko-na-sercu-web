@@ -1,3 +1,9 @@
+## [1.77.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.77.2...v1.77.3) (2026-11-13)
+
+### Bug Fixes
+
+* **ci:** VAD z jednym artefaktem trafia do repo ([#77](https://github.com/tiriana/ciezko-na-sercu-web/issues/77)) ([776ff27](https://github.com/tiriana/ciezko-na-sercu-web/commit/776ff27678db3fa3f8e946bfeaf04e57a9526ec7))
+
 ## [1.77.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.77.1...v1.77.2) (2026-11-12)
 
 ## [1.77.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.77.0...v1.77.1) (2026-11-12)
