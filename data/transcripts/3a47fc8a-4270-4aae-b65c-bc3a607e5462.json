@@ -4,190 +4,466 @@
   "provider": "whisper-cpp",
   "model": "large-v3-turbo-q5_0",
   "language": "pl",
-  "fileSizeBytes": 115511810,
-  "fileMtimeMs": 1789150259364.1748,
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
   "windows": [
     {
       "index": 0,
-      "start": 0,
-      "end": 3.74
+      "start": 0.32,
+      "end": 2.92
     },
     {
       "index": 1,
-      "start": 184.9,
-      "end": 381.44
+      "start": 185.82,
+      "end": 379.76
     },
     {
       "index": 2,
-      "start": 756.04,
-      "end": 879.29
+      "start": 759,
+      "end": 876.9
     },
     {
       "index": 3,
-      "start": 1115.91,
-      "end": 1314.17
+      "start": 1117.95,
+      "end": 1312.55
     },
     {
       "index": 4,
-      "start": 1332.8,
-      "end": 1607.2
+      "start": 1333.24,
+      "end": 1348.52
     },
     {
       "index": 5,
-      "start": 1976.07,
-      "end": 2152.16
+      "start": 1355.39,
+      "end": 1394.95
     },
     {
       "index": 6,
-      "start": 2205.76,
-      "end": 2220
+      "start": 1402.94,
+      "end": 1411.46
     },
     {
       "index": 7,
-      "start": 2396.64,
-      "end": 2620.12
+      "start": 1426.72,
+      "end": 1453.04
     },
     {
       "index": 8,
-      "start": 2871.24,
-      "end": 2956.83
+      "start": 1457.21,
+      "end": 1459.59
     },
     {
       "index": 9,
-      "start": 3203.4,
-      "end": 3449.28
+      "start": 1466.33,
+      "end": 1479.43
     },
     {
       "index": 10,
-      "start": 3686.76,
-      "end": 3821.24
+      "start": 1483.64,
+      "end": 1485.84
     },
     {
       "index": 11,
-      "start": 4010.47,
-      "end": 4219.39
+      "start": 1557.82,
+      "end": 1559.62
     },
     {
       "index": 12,
-      "start": 4240.16,
-      "end": 4243.42
+      "start": 1977.05,
+      "end": 2150.47
     },
     {
       "index": 13,
-      "start": 4267.59,
-      "end": 4303
+      "start": 2398.17,
+      "end": 2618.55
     },
     {
       "index": 14,
-      "start": 4327.65,
-      "end": 4389.76
+      "start": 2872.64,
+      "end": 2954
     },
     {
       "index": 15,
-      "start": 4621.28,
-      "end": 4722.49
+      "start": 3206.49,
+      "end": 3408.63
     },
     {
       "index": 16,
-      "start": 4946.44,
-      "end": 4994.91
+      "start": 3687.8,
+      "end": 3818.94
     },
     {
       "index": 17,
-      "start": 5314.88,
-      "end": 5357.92
+      "start": 4011.26,
+      "end": 4129.68
     },
     {
       "index": 18,
-      "start": 5643.27,
-      "end": 5791.04
+      "start": 4152.54,
+      "end": 4154.38
     },
     {
       "index": 19,
-      "start": 6077.48,
-      "end": 6178.78
+      "start": 4328.86,
+      "end": 4387.3
     },
     {
       "index": 20,
-      "start": 6425.28,
-      "end": 6514.68
+      "start": 4622.17,
+      "end": 4719.75
     },
     {
       "index": 21,
-      "start": 6777.48,
-      "end": 6865.08
+      "start": 4947.39,
+      "end": 4992.77
     },
     {
       "index": 22,
-      "start": 6968.58,
-      "end": 6975.64
+      "start": 5315.84,
+      "end": 5356.84
+    },
+    {
+      "index": 23,
+      "start": 5644.48,
+      "end": 5764.48
+    },
+    {
+      "index": 24,
+      "start": 5764.48,
+      "end": 5789.96
+    },
+    {
+      "index": 25,
+      "start": 6078.36,
+      "end": 6175.04
+    },
+    {
+      "index": 26,
+      "start": 6426.3,
+      "end": 6513.12
+    },
+    {
+      "index": 27,
+      "start": 6778.43,
+      "end": 6862.01
     }
   ],
   "segments": [
     {
-      "start": 0,
-      "end": 1.54,
-      "text": "Wszystko na sercu."
+      "start": 0.32,
+      "end": 2.92,
+      "text": "Na sercu..."
     },
     {
-      "start": 185.68,
+      "start": 185.82,
+      "end": 187.44,
+      "text": "Dobry wieczór Państwu."
+    },
+    {
+      "start": 187.44,
+      "end": 189.93,
+      "text": "Zagrał dla nas Slayer,"
+    },
+    {
+      "start": 189.93,
+      "end": 192.44,
+      "text": "co jest znakiem niechybnym,"
+    },
+    {
+      "start": 192.44,
+      "end": 193.59,
+      "text": "że czekają Was dwie"
+    },
+    {
+      "start": 193.59,
       "end": 195.6,
-      "text": "Dobry wieczór Państwu. Zagrał dla nas Slayer, co jest znakiem niechybnym, że czekają Was dwie godziny w moim towarzystwie."
+      "text": "godziny w moim towarzystwie."
     },
     {
       "start": 196.36,
+      "end": 196.8,
+      "text": "Nazywam się Jarek"
+    },
+    {
+      "start": 196.8,
+      "end": 198.25,
+      "text": "Szubrycht i prowadzę"
+    },
+    {
+      "start": 198.25,
+      "end": 199.76,
+      "text": "dla Was audycję Ciężko"
+    },
+    {
+      "start": 199.76,
+      "end": 201.26,
+      "text": "na sercu, którą"
+    },
+    {
+      "start": 201.26,
       "end": 203.08,
-      "text": "Nazywam się Jarek Szubrycht i prowadzę dla Was audycję Ciężko na sercu, którą wydaje Mariusz Owczarek."
+      "text": "wydaje Mariusz Owczarek."
     },
     {
       "start": 204.2,
+      "end": 204.97,
+      "text": "Dzisiaj będą zespoły"
+    },
+    {
+      "start": 204.97,
+      "end": 206.76,
+      "text": "znane i lubiane, za"
+    },
+    {
+      "start": 206.76,
+      "end": 208.22,
+      "text": "to z płyt, które"
+    },
+    {
+      "start": 208.22,
+      "end": 209.81,
+      "text": "lubiane nie są, a"
+    },
+    {
+      "start": 209.81,
+      "end": 211.18,
+      "text": "już na pewno nie"
+    },
+    {
+      "start": 211.18,
       "end": 213.26,
-      "text": "Dzisiaj będą zespoły znane i lubiane, za to spłyt, które lubiane nie są, a już na pewno nie przez wszystkich."
+      "text": "przez wszystkich."
     },
     {
       "start": 213.26,
+      "end": 214.83,
+      "text": "Z płyt, które w chwili"
+    },
+    {
+      "start": 214.83,
+      "end": 216.5,
+      "text": "premiery często bywały"
+    },
+    {
+      "start": 216.5,
+      "end": 218.28,
+      "text": "witane jękiem zawodu,"
+    },
+    {
+      "start": 218.28,
+      "end": 219.63,
+      "text": "które określane"
+    },
+    {
+      "start": 219.63,
+      "end": 221.76,
+      "text": "były mianem największego"
+    },
+    {
+      "start": 221.76,
+      "end": 223.88,
+      "text": "rozczarowania w karierze"
+    },
+    {
+      "start": 223.88,
       "end": 225.1,
-      "text": "Z płyt, które w chwili premiery często bywały witane jękiem zawodu, które określane były mianem największego rozczarowania w karierze tych grup."
+      "text": "tych grup."
     },
     {
       "start": 225.68,
+      "end": 226.74,
+      "text": "Od miłości do nienawiści"
+    },
+    {
+      "start": 226.74,
       "end": 228.78,
-      "text": "Od miłości do nienawiści droga przecież niedaleka."
+      "text": "droga przecież niedaleka."
     },
     {
       "start": 229.7,
+      "end": 230.84,
+      "text": "Love to Hate Slayera"
+    },
+    {
+      "start": 230.84,
+      "end": 233.5,
+      "text": "pochodzi z płyty Diabolus"
+    },
+    {
+      "start": 233.5,
       "end": 234.82,
-      "text": "Love to Hate Slayera pochodzi z płyty Diabolus in Musica,"
+      "text": "in Musica,"
     },
     {
       "start": 234.82,
+      "end": 237.49,
+      "text": "która przez ortodoksyjnych"
+    },
+    {
+      "start": 237.49,
+      "end": 239.48,
+      "text": "fanów grupy i thrashu"
+    },
+    {
+      "start": 239.48,
+      "end": 241.14,
+      "text": "w ogóle określana"
+    },
+    {
+      "start": 241.14,
+      "end": 242.57,
+      "text": "bywa mianem new"
+    },
+    {
+      "start": 242.57,
+      "end": 244.75,
+      "text": "metalowej, a nawet,"
+    },
+    {
+      "start": 244.75,
+      "end": 246.54,
+      "text": "co bardzo zabawne,"
+    },
+    {
+      "start": 246.54,
       "end": 247.64,
-      "text": "która przez ortodoksyjnych fanów grupy i thrashu w ogóle określana bywa mianem new metalowej, a nawet, co bardzo zabawne, rapowej."
+      "text": "rapowej."
     },
     {
       "start": 248.5,
-      "end": 258.34,
-      "text": "Jasne, słychać w tym brzmieniu, że to 1998 rok, że coś się w metalu, w jego głównym nurcie zmieniło."
+      "end": 250.09,
+      "text": "Jasne, słychać w"
+    },
+    {
+      "start": 250.09,
+      "end": 251.78,
+      "text": "tym brzmieniu, że"
+    },
+    {
+      "start": 251.78,
+      "end": 254.39,
+      "text": "to 1998 rok, że coś"
+    },
+    {
+      "start": 254.39,
+      "end": 255.78,
+      "text": "się w metalu, w"
+    },
+    {
+      "start": 255.78,
+      "end": 257.61,
+      "text": "jego głównym nurcie"
+    },
+    {
+      "start": 257.61,
+      "end": 259.04,
+      "text": "zmieniło."
     },
     {
       "start": 259.64,
-      "end": 267.34,
-      "text": "Ale po pierwsze, to świetny album, a po drugie, co ja bym dał, żeby ten Slayer z tym Jeffem wrócił."
+      "end": 260.51,
+      "text": "Ale po pierwsze, to"
     },
     {
-      "start": 267.34,
-      "end": 270.34,
+      "start": 260.51,
+      "end": 262.11,
+      "text": "świetny album, a po"
+    },
+    {
+      "start": 262.11,
+      "end": 263.75,
+      "text": "drugie, co ja bym"
+    },
+    {
+      "start": 263.75,
+      "end": 265.74,
+      "text": "dał, żeby ten Slayer"
+    },
+    {
+      "start": 265.74,
+      "end": 267.92,
+      "text": "z tym Jeffem wrócił."
+    },
+    {
+      "start": 268.46,
+      "end": 270.3,
       "text": "No, ale nie wróci."
     },
     {
-      "start": 270.9,
-      "end": 281.04,
-      "text": "A skoro już zacząłem od Slayera, to pójdę za ciosem i opowiem wam o najbardziej kontrowersyjnych płytach z dorobku całej wielkiej thrashowej czwórki."
+      "start": 270.3,
+      "end": 271.78,
+      "text": "A skoro już zacząłem"
     },
     {
-      "start": 281.04,
-      "end": 292.32,
-      "text": "I jako drugi przed Wysoki Sąd zapraszam zespół Megadev i oczywiście ich album Rysk z 1999 roku."
+      "start": 271.78,
+      "end": 273.1,
+      "text": "od Slayera, to pójdę"
+    },
+    {
+      "start": 273.1,
+      "end": 274.36,
+      "text": "za ciosem i opowiem"
+    },
+    {
+      "start": 274.36,
+      "end": 275.7,
+      "text": "Wam o najbardziej"
+    },
+    {
+      "start": 275.7,
+      "end": 277.62,
+      "text": "kontrowersyjnych płytach"
+    },
+    {
+      "start": 277.62,
+      "end": 278.76,
+      "text": "z dorobku całej"
+    },
+    {
+      "start": 278.76,
+      "end": 280.23,
+      "text": "wielkiej thrashowej"
+    },
+    {
+      "start": 280.23,
+      "end": 281.06,
+      "text": "czwórki."
+    },
+    {
+      "start": 281.86,
+      "end": 283.34,
+      "text": "I jako drugi przed"
+    },
+    {
+      "start": 283.34,
+      "end": 284.97,
+      "text": "Wysoki Sąd zapraszam"
+    },
+    {
+      "start": 284.97,
+      "end": 286.78,
+      "text": "zespół Megadev i"
+    },
+    {
+      "start": 286.78,
+      "end": 288.24,
+      "text": "oczywiście ich"
+    },
+    {
+      "start": 288.24,
+      "end": 291.28,
+      "text": "album Risk z 1999"
+    },
+    {
+      "start": 291.28,
+      "end": 292.3,
+      "text": "roku."
     },
     {
       "start": 293.06,
@@ -196,2190 +472,6199 @@
     },
     {
       "start": 294.48,
+      "end": 295.72,
+      "text": "Teorie są różne,"
+    },
+    {
+      "start": 295.72,
+      "end": 297.61,
+      "text": "ale chyba prawdziwa"
+    },
+    {
+      "start": 297.61,
       "end": 299.9,
-      "text": "Teorie są różne, ale chyba prawdziwa jest ta najprostsza."
+      "text": "jest ta najprostsza."
     },
     {
       "start": 299.9,
+      "end": 302.14,
+      "text": "Megadev prawdopodobnie"
+    },
+    {
+      "start": 302.14,
+      "end": 303.68,
+      "text": "chcieli powtórzyć"
+    },
+    {
+      "start": 303.68,
+      "end": 305.82,
+      "text": "sukces Load Metallic'i,"
+    },
+    {
+      "start": 305.82,
+      "end": 308.25,
+      "text": "wyrywając się z kurczącego"
+    },
+    {
+      "start": 308.25,
+      "end": 309.96,
+      "text": "się traszowego królestwa"
+    },
+    {
+      "start": 309.96,
+      "end": 313.19,
+      "text": "ku fanom szeroko pojmowanego"
+    },
+    {
+      "start": 313.19,
       "end": 315.18,
-      "text": "Megadev prawdopodobnie chcieli powtórzyć sukces load Metallica, wyrywając się z kurczącego się thrashowego królestwa ku fanom szeroko pojmowanego alternatywnego rocka."
+      "text": "alternatywnego rocka."
     },
     {
       "start": 315.84,
-      "end": 324.62,
-      "text": "Miały to grać te same stacje radiowe, które tłukły grunge, Metallica właśnie, czy inne Red Hot Chili Peppers."
+      "end": 316.48,
+      "text": "Miały to grać te"
     },
     {
-      "start": 324.62,
+      "start": 316.48,
+      "end": 318.38,
+      "text": "same stacje radiowe,"
+    },
+    {
+      "start": 318.38,
+      "end": 320.56,
+      "text": "które tłukły grunge,"
+    },
+    {
+      "start": 320.56,
+      "end": 321.78,
+      "text": "metalikę właśnie"
+    },
+    {
+      "start": 321.78,
+      "end": 323.21,
+      "text": "czy inne red hot"
+    },
+    {
+      "start": 323.21,
+      "end": 324.6,
+      "text": "chili peppers."
+    },
+    {
+      "start": 324.6,
+      "end": 326.58,
+      "text": "Nie wyszło, nie wyszło,"
+    },
+    {
+      "start": 326.58,
+      "end": 328.53,
+      "text": "bo zabrakło prawdziwych"
+    },
+    {
+      "start": 328.53,
+      "end": 330.34,
+      "text": "stadionowych hitów,"
+    },
+    {
+      "start": 330.34,
+      "end": 331.97,
+      "text": "a zatem nowa publiczność"
+    },
+    {
+      "start": 331.97,
+      "end": 333.33,
+      "text": "się nie pojawiła, a"
+    },
+    {
+      "start": 333.33,
+      "end": 334.6,
+      "text": "starzy fani się"
+    },
+    {
+      "start": 334.6,
       "end": 335.74,
-      "text": "Nie wyszło, nie wyszło, bo zabrakło prawdziwych stadionowych hitów, a zatem nowa publiczność się nie pojawiła, a starzy fani się obrazili."
+      "text": "obrazili."
     },
     {
-      "start": 336.48,
+      "start": 336.5,
+      "end": 337.46,
+      "text": "Ryzyko zawarte w tytule"
+    },
+    {
+      "start": 337.46,
+      "end": 338.83,
+      "text": "płyty nie opłaciło"
+    },
+    {
+      "start": 338.83,
+      "end": 340.29,
+      "text": "się zespołowi, tym"
+    },
+    {
+      "start": 340.29,
+      "end": 342.11,
+      "text": "bardziej, że z tonącego"
+    },
+    {
+      "start": 342.11,
+      "end": 343.39,
+      "text": "statku czmychnął"
+    },
+    {
+      "start": 343.39,
+      "end": 345.31,
+      "text": "fantastyczny gitarzysta"
+    },
+    {
+      "start": 345.31,
       "end": 347.12,
-      "text": "Ryzyko zawarte w tytule płyty nie opłaciło się zespołowi, tym bardziej, że z tonącego statku czmychnął fantastyczny gitarzysta Marty Friedman."
+      "text": "Marty Friedman."
     },
     {
       "start": 347.12,
+      "end": 348.93,
+      "text": "Na kolejnej płycie,"
+    },
+    {
+      "start": 348.93,
+      "end": 350.2,
+      "text": "The World Needs a"
+    },
+    {
+      "start": 350.2,
+      "end": 351.93,
+      "text": "Hero, Megadev grali"
+    },
+    {
+      "start": 351.93,
+      "end": 353.57,
+      "text": "już taki trasz, jak"
+    },
+    {
+      "start": 353.57,
+      "end": 355.78,
+      "text": "jego fani sobie życzyli,"
+    },
+    {
+      "start": 355.78,
+      "end": 357.48,
+      "text": "a Dave Mustaine tkają"
+    },
+    {
+      "start": 357.48,
+      "end": 359.15,
+      "text": "się w wywiadach za"
+    },
+    {
+      "start": 359.15,
+      "end": 360.22,
+      "text": "ten wypadek przy"
+    },
+    {
+      "start": 360.22,
       "end": 361.26,
-      "text": "Na kolejnej płycie, The World Needs a Hero, Megadev grali już taki thrash, jak jego fani sobie życzyli, a Dave Mustaine tkają się w wywiadach za ten wypadek przy pracy."
+      "text": "pracy."
     },
     {
       "start": 361.76,
-      "end": 364.18,
-      "text": "Ale czy Risk to zła płyta?"
+      "end": 363.39,
+      "text": "Ale czy RISK to zła"
     },
     {
-      "start": 364.82,
+      "start": 363.39,
+      "end": 364.18,
+      "text": "płyta?"
+    },
+    {
+      "start": 364.84,
       "end": 365.66,
       "text": "Otóż wcale nie."
     },
     {
-      "start": 366.4,
+      "start": 366.44,
+      "end": 367.19,
+      "text": "Megadev ma w dorobku"
+    },
+    {
+      "start": 367.19,
+      "end": 368.63,
+      "text": "takie, które niby"
+    },
+    {
+      "start": 368.63,
+      "end": 369.89,
+      "text": "mają wszystko co"
+    },
+    {
+      "start": 369.89,
+      "end": 371.82,
+      "text": "trzeba, ale których"
+    },
+    {
+      "start": 371.82,
+      "end": 373.86,
+      "text": "się nie pamięta, bo"
+    },
+    {
+      "start": 373.86,
       "end": 375.34,
-      "text": "Megadev ma w dorobku takie, które niby mają wszystko co trzeba, ale których się nie pamięta, bo nie ma za co."
+      "text": "nie ma za co."
     },
     {
-      "start": 375.34,
-      "end": 379.78,
-      "text": "Risk przynajmniej się wyróżnia i naprawdę da się tego słuchać."
+      "start": 375.9,
+      "end": 376.62,
+      "text": "RISK przynajmniej"
     },
     {
-      "start": 379.78,
-      "end": 381.44,
-      "text": "DZIENNIKARZ"
+      "start": 376.62,
+      "end": 377.71,
+      "text": "się wyróżnia i"
     },
     {
-      "start": 756.04,
+      "start": 377.71,
+      "end": 378.62,
+      "text": "naprawdę da się"
+    },
+    {
+      "start": 378.62,
+      "end": 379.76,
+      "text": "tego słuchać."
+    },
+    {
+      "start": 759,
+      "end": 760.57,
+      "text": "Oni akurat przyzwyczaili"
+    },
+    {
+      "start": 760.57,
+      "end": 761.82,
+      "text": "swoją publiczność"
+    },
+    {
+      "start": 761.82,
+      "end": 762.92,
+      "text": "do różnych zwrotów"
+    },
+    {
+      "start": 762.92,
+      "end": 764.67,
+      "text": "akcji, by wspomnieć"
+    },
+    {
+      "start": 764.67,
+      "end": 766.52,
+      "text": "choćby ich próby,"
+    },
+    {
+      "start": 766.52,
+      "end": 768.51,
+      "text": "bardzo udane zresztą"
+    },
+    {
+      "start": 768.51,
+      "end": 770.17,
+      "text": "łączenia metalu z"
+    },
+    {
+      "start": 770.17,
+      "end": 770.78,
+      "text": "rapem,"
+    },
+    {
+      "start": 770.9,
+      "end": 772.64,
+      "text": "na długo przed powstaniem"
+    },
+    {
+      "start": 772.64,
+      "end": 774.79,
+      "text": "osobnego gatunku muzycznego"
+    },
+    {
+      "start": 774.79,
       "end": 776.56,
-      "text": "Teraz Antrax. Oni akurat przyzwyczaili swoją publiczność do różnych zwrotów akcji, by wspomnieć choćby ich próby, bardzo udane zresztą łączenia metalu z rapem, na długo przed powstaniem osobnego gatunku muzycznego zwanego rap metalem."
+      "text": "zwanego rap metalem."
     },
     {
       "start": 776.56,
-      "end": 800.22,
-      "text": "A jednak Stomp 442 uważa się powszechnie za najmniej udaną płytę Antrax, za niepotrzebną i nieudaną próbę podążania za alternatywnym metalem z tamtej epoki, od Helmeta po Pantere i zresztą Dimebag Darrell Gratu w dwóch piosenkach."
+      "end": 779.01,
+      "text": "A jednak Stomp 442"
     },
     {
-      "start": 800.62,
-      "end": 815.38,
-      "text": "Uważam, że podobnie jak w przypadku Diabolus in Musica Slayera, choć znak czasów jest tu wyraźnie odciśnięty, Antrax zbierał baty niezasłużenie."
+      "start": 779.01,
+      "end": 781.15,
+      "text": "uważa się powszechnie"
     },
     {
-      "start": 815.38,
-      "end": 834.38,
-      "text": "To nie jest zła płyta. No ale tak, wciąż nie ma Belladonny, ukochanego przez większość fanów wokalisty grupy, chociaż ja akurat Johna Busha przy mikrofonie Antraxu kupowałem bez zastrzeżeń."
+      "start": 781.15,
+      "end": 782.95,
+      "text": "za najmniej udaną"
     },
     {
-      "start": 834.38,
-      "end": 855.86,
-      "text": "Tutaj też po raz pierwszy nie ma Dana Spica, wieloletniego gitarowego partnera Jana Scotta w tym zespole i zanim Antrax znalazł za niego godne zastępstwo w postaci Roba Cagiano, a później Jonathana Donaise'a, ratował się jak umiał."
+      "start": 782.95,
+      "end": 784.67,
+      "text": "płytę Antrax, za"
     },
     {
-      "start": 855.86,
-      "end": 867.32,
-      "text": "I na Stomp 442 na gitarze sporo gra, a w dodatku skomponował wszystkie piosenki perkusista grupy Charlie Benante."
+      "start": 784.67,
+      "end": 787.09,
+      "text": "niepotrzebną i nieudaną"
+    },
+    {
+      "start": 787.09,
+      "end": 789.22,
+      "text": "próbę podążania za"
+    },
+    {
+      "start": 789.22,
+      "end": 791.01,
+      "text": "alternatywnym metalem"
+    },
+    {
+      "start": 791.01,
+      "end": 792.34,
+      "text": "z tamtej epoki,"
+    },
+    {
+      "start": 792.34,
+      "end": 793.66,
+      "text": "od Helmeta po"
+    },
+    {
+      "start": 793.66,
+      "end": 795.59,
+      "text": "Pantherę i zresztą"
+    },
+    {
+      "start": 795.59,
+      "end": 797.5,
+      "text": "Dimebag Darrell"
+    },
+    {
+      "start": 797.5,
+      "end": 800.24,
+      "text": "gratu w dwóch piosenkach."
+    },
+    {
+      "start": 800.72,
+      "end": 802.27,
+      "text": "Uważam, że podobnie"
+    },
+    {
+      "start": 802.27,
+      "end": 804.08,
+      "text": "jak w przypadku Diabolus"
+    },
+    {
+      "start": 804.08,
+      "end": 805.88,
+      "text": "in Musica Slayera,"
+    },
+    {
+      "start": 805.88,
+      "end": 807.83,
+      "text": "choć znak czasów"
+    },
+    {
+      "start": 807.83,
+      "end": 811.28,
+      "text": "jest tu wyraźnie odciśnięty,"
+    },
+    {
+      "start": 811.82,
+      "end": 813.39,
+      "text": "Antrax zbierał baty"
+    },
+    {
+      "start": 813.39,
+      "end": 815.53,
+      "text": "niezasłużenie, to"
+    },
+    {
+      "start": 815.53,
+      "end": 817.9,
+      "text": "nie jest zła płyta."
+    },
+    {
+      "start": 818.18,
+      "end": 819.65,
+      "text": "No ale tak, wciąż"
+    },
+    {
+      "start": 819.65,
+      "end": 821.6,
+      "text": "nie ma Belladonny,"
+    },
+    {
+      "start": 821.6,
+      "end": 823.35,
+      "text": "ukochanego przez"
+    },
+    {
+      "start": 823.35,
+      "end": 825.99,
+      "text": "większość fanów wokalisty"
+    },
+    {
+      "start": 825.99,
+      "end": 826.96,
+      "text": "grupy,"
+    },
+    {
+      "start": 827.06,
+      "end": 828.72,
+      "text": "chociaż ja akurat"
+    },
+    {
+      "start": 828.72,
+      "end": 830.26,
+      "text": "Johna Busha przy"
+    },
+    {
+      "start": 830.26,
+      "end": 832.22,
+      "text": "mikrofonie Antraxu"
+    },
+    {
+      "start": 832.22,
+      "end": 834.98,
+      "text": "kupowałem bez zastrzeżeń."
+    },
+    {
+      "start": 835.66,
+      "end": 836.2,
+      "text": "Tutaj też po raz"
+    },
+    {
+      "start": 836.2,
+      "end": 837.43,
+      "text": "pierwszy nie ma"
+    },
+    {
+      "start": 837.43,
+      "end": 839.49,
+      "text": "Dana Spica, wieloletniego"
+    },
+    {
+      "start": 839.49,
+      "end": 840.9,
+      "text": "gitarowego partnera"
+    },
+    {
+      "start": 840.9,
+      "end": 843.72,
+      "text": "Jana Scotta w tym zespole"
+    },
+    {
+      "start": 843.72,
+      "end": 845.81,
+      "text": "i zanim Antrax znalazł"
+    },
+    {
+      "start": 845.81,
+      "end": 848.34,
+      "text": "za niego godne zastępstwo"
+    },
+    {
+      "start": 848.34,
+      "end": 850.56,
+      "text": "w postaci Roba Cagiano,"
+    },
+    {
+      "start": 850.56,
+      "end": 852.6,
+      "text": "a później Jonathana"
+    },
+    {
+      "start": 852.6,
+      "end": 854.59,
+      "text": "Donaise'a ratował"
+    },
+    {
+      "start": 854.59,
+      "end": 856.24,
+      "text": "się jak umiał i na"
+    },
+    {
+      "start": 856.24,
+      "end": 859.19,
+      "text": "Stomp 442 na gitarze"
+    },
+    {
+      "start": 859.19,
+      "end": 860.46,
+      "text": "sporo gra,"
+    },
+    {
+      "start": 860.62,
+      "end": 862.17,
+      "text": "a w dodatku skomponował"
+    },
+    {
+      "start": 862.17,
+      "end": 863.64,
+      "text": "wszystkie piosenki"
+    },
+    {
+      "start": 863.64,
+      "end": 864.94,
+      "text": "perkusista grupy"
+    },
+    {
+      "start": 864.94,
+      "end": 866.56,
+      "text": "Charlie Benante."
     },
     {
       "start": 867.82,
+      "end": 869.3,
+      "text": "Pamiętajcie zatem,"
+    },
+    {
+      "start": 869.3,
+      "end": 870.88,
+      "text": "że narzekając na Stomp"
+    },
+    {
+      "start": 870.88,
+      "end": 872.98,
+      "text": "robicie przykrość"
+    },
+    {
+      "start": 872.98,
+      "end": 873.7,
+      "text": "Charlie'emu,"
+    },
+    {
+      "start": 874.42,
+      "end": 875.38,
+      "text": "a to przecież taki"
+    },
+    {
+      "start": 875.38,
       "end": 876.9,
-      "text": "Pamiętajcie zatem, że narzekając na Stomp robicie przykrość Charlie'emu, a to przecież taki fajny facet."
+      "text": "fajny facet."
     },
     {
-      "start": 1115.91,
+      "start": 1117.95,
+      "end": 1119.47,
+      "text": "to największy zespół"
+    },
+    {
+      "start": 1119.47,
+      "end": 1121.43,
+      "text": "straż metalowej Wielkiej"
+    },
+    {
+      "start": 1121.43,
+      "end": 1124.02,
+      "text": "Czwórki, a zatem i"
+    },
+    {
+      "start": 1124.02,
+      "end": 1125.03,
+      "text": "rozczarowanie"
+    },
+    {
+      "start": 1125.03,
       "end": 1126.25,
-      "text": "Metallica to największy zespół Straż Metalowej Wielkiej Czwórki, a zatem i Rozczarowanie największe."
+      "text": "największe."
     },
     {
-      "start": 1126.53,
+      "start": 1127.13,
+      "end": 1127.52,
+      "text": "Prawdę mówiąc, z"
+    },
+    {
+      "start": 1127.52,
+      "end": 1129.2,
+      "text": "ich dyskografii dałoby"
+    },
+    {
+      "start": 1129.2,
+      "end": 1130.8,
+      "text": "się wybrać co najmniej"
+    },
+    {
+      "start": 1130.8,
+      "end": 1131.87,
+      "text": "kilka płyt,"
+    },
+    {
+      "start": 1131.87,
+      "end": 1132.99,
+      "text": "które w chwili"
+    },
+    {
+      "start": 1132.99,
+      "end": 1134.47,
+      "text": "premiery spotkały"
+    },
+    {
+      "start": 1134.47,
+      "end": 1137.23,
+      "text": "się z przyjęciem umiarkowanie"
+    },
+    {
+      "start": 1137.23,
+      "end": 1137.93,
+      "text": "pozytywnym"
+    },
+    {
+      "start": 1137.93,
+      "end": 1140.28,
+      "text": "albo wręcz zdecydowanie"
+    },
+    {
+      "start": 1140.28,
       "end": 1141.71,
-      "text": "Prawdę mówiąc, z ich dyskografii dałoby się wybrać co najmniej kilka płyt, które w chwili premiery spotkały się z przyjęciem umiarkowanie pozytywnym albo wręcz zdecydowanie negatywnym,"
+      "text": "negatywnym,"
     },
     {
-      "start": 1142.27,
+      "start": 1141.71,
+      "end": 1143.29,
+      "text": "szczególnie jeśli"
+    },
+    {
+      "start": 1143.29,
+      "end": 1144.11,
+      "text": "brać pod uwagę"
+    },
+    {
+      "start": 1144.11,
+      "end": 1147.36,
+      "text": "opinie tych najwierniejszych,"
+    },
+    {
+      "start": 1147.36,
+      "end": 1149.07,
+      "text": "fanów tych, co to"
+    },
+    {
+      "start": 1149.07,
+      "end": 1150.78,
+      "text": "byli z zespołem od"
+    },
+    {
+      "start": 1150.78,
       "end": 1152.17,
-      "text": "szczególnie jeśli brać pod uwagę opinie tych najwierniejszych fanów tych, co to byli z zespołem od Kile Moll."
+      "text": "Kile Moll."
     },
     {
-      "start": 1153.05,
-      "end": 1160.77,
-      "text": "Ale co by nie mówić o czarnej płycie, bo tak, na nią też narzekano i zatwardziali metalowcy narzekają do dziś."
+      "start": 1153.03,
+      "end": 1153.67,
+      "text": "Ale co by nie mówić"
     },
     {
-      "start": 1161.25,
+      "start": 1153.67,
+      "end": 1155.3,
+      "text": "o czarnej płycie,"
+    },
+    {
+      "start": 1155.3,
+      "end": 1156.77,
+      "text": "bo tak, na nią też"
+    },
+    {
+      "start": 1156.77,
+      "end": 1157.83,
+      "text": "narzekano"
+    },
+    {
+      "start": 1157.83,
+      "end": 1158.79,
+      "text": "i zatwardziali"
+    },
+    {
+      "start": 1158.79,
+      "end": 1160.12,
+      "text": "metalowcy narzekają"
+    },
+    {
+      "start": 1160.12,
+      "end": 1161.81,
+      "text": "do dziś, co by nie"
+    },
+    {
+      "start": 1161.81,
+      "end": 1163.55,
+      "text": "mówić o Lode,"
+    },
+    {
+      "start": 1164.19,
+      "end": 1165.38,
+      "text": "a nawet o przedziwnie"
+    },
+    {
+      "start": 1165.38,
+      "end": 1166.99,
+      "text": "i, nazwijmy rzecz"
+    },
+    {
+      "start": 1166.99,
+      "end": 1169.28,
+      "text": "po imieniu, źle brzmiącej"
+    },
+    {
+      "start": 1169.28,
+      "end": 1170.35,
+      "text": "Suntanger,"
+    },
+    {
+      "start": 1171.09,
+      "end": 1171.34,
+      "text": "da się ich"
+    },
+    {
+      "start": 1171.34,
       "end": 1173.87,
-      "text": "Co by nie mówić o load, a nawet o przedziwnie i, nazwijmy rzecz po imieniu, źle brzmiącej Santanger, da się ich wszystkich słuchać."
+      "text": "wszystkich słuchać."
     },
     {
-      "start": 1174.77,
-      "end": 1178.77,
-      "text": "Natomiast Lulu słuchać się nie da."
+      "start": 1174.11,
+      "end": 1177.36,
+      "text": "Natomiast Lulu słuchać"
     },
     {
-      "start": 1179.67,
+      "start": 1177.36,
+      "end": 1178.75,
+      "text": "się nie da."
+    },
+    {
+      "start": 1179.61,
+      "end": 1180.97,
+      "text": "Przysięgam, próbowałem"
+    },
+    {
+      "start": 1180.97,
+      "end": 1184.07,
+      "text": "wielokrotnie i w całości"
+    },
+    {
+      "start": 1184.07,
       "end": 1186.67,
-      "text": "Przysięgam, próbowałem wielokrotnie i w całości nie da rady."
+      "text": "nie da rady."
     },
     {
-      "start": 1187.37,
-      "end": 1196.57,
-      "text": "Tym bardziej jest to trudne i rozczarowujące, że przecież jestem fanem metaliki, ja przynajmniej byłem do pewnego czasu."
+      "start": 1187.41,
+      "end": 1188.5,
+      "text": "Tym bardziej jest"
     },
     {
-      "start": 1197.23,
-      "end": 1203.37,
-      "text": "Jestem też i byłem wówczas fanem Lurida, we wszystkich właściwie jego wcieleniach."
+      "start": 1188.5,
+      "end": 1191.63,
+      "text": "to trudne i rozczarowujące,"
     },
     {
-      "start": 1204.69,
+      "start": 1191.63,
+      "end": 1192.82,
+      "text": "że przecież jestem"
+    },
+    {
+      "start": 1192.82,
+      "end": 1194.25,
+      "text": "fanem Metalliki,"
+    },
+    {
+      "start": 1194.37,
+      "end": 1195.43,
+      "text": "ja przynajmniej byłem"
+    },
+    {
+      "start": 1195.43,
+      "end": 1196.55,
+      "text": "do pewnego czasu."
+    },
+    {
+      "start": 1196.67,
+      "end": 1198.04,
+      "text": "Jestem też i byłem"
+    },
+    {
+      "start": 1198.04,
+      "end": 1199.54,
+      "text": "wówczas fanem Lurida"
+    },
+    {
+      "start": 1199.54,
+      "end": 1200.74,
+      "text": "we wszystkich"
+    },
+    {
+      "start": 1200.74,
+      "end": 1203.31,
+      "text": "właściwie jego wcieleniach."
+    },
+    {
+      "start": 1204.77,
+      "end": 1205.36,
+      "text": "Zatem kiedy usłyszałem"
+    },
+    {
+      "start": 1205.36,
+      "end": 1207.55,
+      "text": "o tym przedziwnym pomyśle"
+    },
+    {
+      "start": 1207.55,
+      "end": 1209.71,
+      "text": "na ich wspólną płytę,"
+    },
+    {
+      "start": 1209.81,
       "end": 1212.43,
-      "text": "Zatem, kiedy usłyszałem o tym przedziwnym pomyśle na ich wspólną płytę, byłem bardzo podekscytowany."
+      "text": "byłem bardzo podekscytowany."
     },
     {
-      "start": 1212.59,
-      "end": 1220.29,
-      "text": "Spodziewałem się, owszem, że będzie dziwna, ale nie spodziewałem się, że będzie taka żadna."
+      "start": 1212.57,
+      "end": 1213.54,
+      "text": "Spodziewałem się,"
     },
     {
-      "start": 1220.29,
-      "end": 1228.39,
-      "text": "Taka rozpadająca się pod ciężarem tych swoich ambicji na każdym właściwie kroku."
+      "start": 1213.54,
+      "end": 1214.59,
+      "text": "owszem, że będzie"
+    },
+    {
+      "start": 1214.59,
+      "end": 1215.17,
+      "text": "dziwna,"
+    },
+    {
+      "start": 1215.73,
+      "end": 1217.25,
+      "text": "ale nie spodziewałem"
+    },
+    {
+      "start": 1217.25,
+      "end": 1219.24,
+      "text": "się, że będzie taka"
+    },
+    {
+      "start": 1219.24,
+      "end": 1220.31,
+      "text": "żadna."
+    },
+    {
+      "start": 1220.73,
+      "end": 1221.9,
+      "text": "Taka rozpadająca"
+    },
+    {
+      "start": 1221.9,
+      "end": 1223.45,
+      "text": "się pod ciężarem"
+    },
+    {
+      "start": 1223.45,
+      "end": 1225.33,
+      "text": "tych swoich ambicji"
+    },
+    {
+      "start": 1225.33,
+      "end": 1227.38,
+      "text": "na każdym właściwie"
+    },
+    {
+      "start": 1227.38,
+      "end": 1228.37,
+      "text": "kroku."
     },
     {
       "start": 1228.95,
-      "end": 1238.23,
-      "text": "Kłopot z Lulu polega moim zdaniem na tym, że nie słychać w tym materiale ich wspólnej pracy."
+      "end": 1230.99,
+      "text": "Kłopot z Lulu polega"
     },
     {
-      "start": 1238.39,
-      "end": 1247.49,
-      "text": "Tylko Metallikę grającą cokolwiek i Lurida, który próbuje to czymkolwiek zagadać."
+      "start": 1230.99,
+      "end": 1233.85,
+      "text": "moim zdaniem na tym,"
     },
     {
-      "start": 1247.49,
-      "end": 1255.79,
-      "text": "I nawet kiedy pojawiają się fajne pomysły, bo pojawiają się, owszem, to trudno oprzeć się wrażeniu,"
+      "start": 1233.85,
+      "end": 1235.21,
+      "text": "że nie słychać w"
     },
     {
-      "start": 1256.43,
+      "start": 1235.21,
+      "end": 1237.09,
+      "text": "tym materiale ich"
+    },
+    {
+      "start": 1237.09,
+      "end": 1237.95,
+      "text": "wspólnej prawa."
+    },
+    {
+      "start": 1237.95,
+      "end": 1240.84,
+      "text": "Tylko Metallicę grającą"
+    },
+    {
+      "start": 1240.84,
+      "end": 1242.96,
+      "text": "cokolwiek i Lou"
+    },
+    {
+      "start": 1242.96,
+      "end": 1244.89,
+      "text": "Reed'a, który próbuje"
+    },
+    {
+      "start": 1244.89,
+      "end": 1246.95,
+      "text": "to czymkolwiek zagadać."
+    },
+    {
+      "start": 1248.33,
+      "end": 1249.06,
+      "text": "I nawet kiedy pojawiają"
+    },
+    {
+      "start": 1249.06,
+      "end": 1250.86,
+      "text": "się fajne pomysły,"
+    },
+    {
+      "start": 1250.86,
+      "end": 1253.34,
+      "text": "bo pojawiają się owszem,"
+    },
+    {
+      "start": 1253.34,
+      "end": 1254.55,
+      "text": "to trudno oprzeć"
+    },
+    {
+      "start": 1254.55,
+      "end": 1256.05,
+      "text": "się wrażeniu, że"
+    },
+    {
+      "start": 1256.05,
+      "end": 1258.77,
+      "text": "Metallica i Lou nie"
+    },
+    {
+      "start": 1258.77,
+      "end": 1260.78,
+      "text": "widzieli się ani razu,"
+    },
+    {
+      "start": 1260.78,
+      "end": 1261.65,
+      "text": "nie tylko na próbie,"
+    },
+    {
+      "start": 1261.65,
+      "end": 1263.6,
+      "text": "ale nawet w studiu"
+    },
+    {
+      "start": 1263.6,
       "end": 1265.41,
-      "text": "że Metallica i Lou nie widzieli się ani razu, nie tylko na próbie, ale nawet w studiu nagraniowym,"
+      "text": "nagraniowym,"
     },
     {
-      "start": 1265.51,
-      "end": 1271.39,
-      "text": "że właściwie nie uzgodnili tego, co zamierzają razem zrobić."
+      "start": 1265.41,
+      "end": 1267.79,
+      "text": "że właściwie nie uzgodnili"
     },
     {
-      "start": 1271.39,
+      "start": 1267.79,
+      "end": 1269.7,
+      "text": "tego, co zamierzają"
+    },
+    {
+      "start": 1269.7,
+      "end": 1271.18,
+      "text": "razem zrobić, a"
+    },
+    {
+      "start": 1271.18,
+      "end": 1273.06,
+      "text": "może uzgodnili, ale"
+    },
+    {
+      "start": 1273.06,
+      "end": 1274.95,
+      "text": "się nie zrozumieli,"
+    },
+    {
+      "start": 1274.95,
+      "end": 1276.42,
+      "text": "bo brzmi to tak,"
+    },
+    {
+      "start": 1276.42,
+      "end": 1277.69,
+      "text": "jakby każdy tu"
+    },
+    {
+      "start": 1277.69,
       "end": 1280.11,
-      "text": "A może uzgodnili, ale się nie zrozumieli, bo brzmi to tak, jakby każdy tu sobie rzepkę skrobał."
+      "text": "sobie rzepkę skrobał."
     },
     {
       "start": 1280.83,
-      "end": 1287.43,
-      "text": "Zmarnowany potencjał, ale uwaga na swój sposób cenie Lulu."
+      "end": 1282.96,
+      "text": "Zmarnowany potencjał,"
     },
     {
-      "start": 1288.47,
+      "start": 1282.96,
+      "end": 1284.86,
+      "text": "ale uwaga na swój"
+    },
+    {
+      "start": 1284.86,
+      "end": 1287.45,
+      "text": "sposób cenie Lulu."
+    },
+    {
+      "start": 1288.23,
+      "end": 1289.49,
+      "text": "Uważam, że tego"
+    },
+    {
+      "start": 1289.49,
+      "end": 1290.75,
+      "text": "rodzaju próby,"
+    },
+    {
+      "start": 1290.75,
+      "end": 1292.28,
+      "text": "nawet jeśli okazują"
+    },
+    {
+      "start": 1292.28,
+      "end": 1293.63,
+      "text": "się nieudane, są"
+    },
+    {
+      "start": 1293.63,
+      "end": 1295.16,
+      "text": "świadectwem tego,"
+    },
+    {
+      "start": 1295.16,
       "end": 1296.93,
-      "text": "Uważam, że tego rodzaju próby, nawet jeśli okazują się nieudane, są świadectwem tego, że artystom zależy,"
+      "text": "że artystom zależy,"
     },
     {
       "start": 1296.93,
+      "end": 1300.26,
+      "text": "że napędza ich ciekawość"
+    },
+    {
+      "start": 1300.26,
+      "end": 1302.11,
+      "text": "głód nowego,"
+    },
+    {
+      "start": 1302.83,
+      "end": 1304.39,
+      "text": "a nie tylko zobowiązania"
+    },
+    {
+      "start": 1304.39,
+      "end": 1306.29,
+      "text": "kontraktowe i monity"
+    },
+    {
+      "start": 1306.29,
       "end": 1308.03,
-      "text": "że napędza ich ciekawość głód nowego, a nie tylko zobowiązania kontraktowe i monity z księgowości."
+      "text": "z księgowości."
     },
     {
-      "start": 1308.65,
+      "start": 1308.69,
+      "end": 1310.85,
+      "text": "Podsumowując, katastrofa."
+    },
+    {
+      "start": 1311.59,
       "end": 1312.55,
-      "text": "Podsumowując, katastrofa. Ale jaka piękna!"
+      "text": "Ale jaka piękna!"
     },
     {
-      "start": 1332.8,
-      "end": 1335.2,
-      "text": "Właśnie nie interesujesz."
+      "start": 1333.24,
+      "end": 1334.7,
+      "text": "Właśnie nie wytrzymaj"
     },
     {
-      "start": 1338.6,
-      "end": 1340.68,
-      "text": "Właśnie nie interesujesz."
+      "start": 1334.7,
+      "end": 1346.84,
+      "text": "się. Właśnie nie wytrzymaj"
     },
     {
-      "start": 1344.02,
-      "end": 1345.92,
-      "text": "Właśnie nie interesujesz."
+      "start": 1346.84,
+      "end": 1348.52,
+      "text": "się."
     },
     {
-      "start": 1346.08,
-      "end": 1347.74,
-      "text": "Właśnie nie interesujesz."
+      "start": 1355.39,
+      "end": 1356.74,
+      "text": "You're not really"
     },
     {
-      "start": 1355.26,
-      "end": 1356.96,
-      "text": "Właśnie nie interesujesz."
+      "start": 1356.74,
+      "end": 1359.47,
+      "text": "there, hallucination"
     },
     {
-      "start": 1356.96,
-      "end": 1358.96,
-      "text": "Właśnie nie interesujesz."
+      "start": 1359.47,
+      "end": 1363.41,
+      "text": "I thought you were"
     },
     {
-      "start": 1362.8,
-      "end": 1365.02,
-      "text": "Właśnie nie interesujesz."
+      "start": 1363.41,
+      "end": 1370.67,
+      "text": "listening, hallucination"
     },
     {
-      "start": 1365.02,
-      "end": 1365.6,
-      "text": "Właśnie nie interesujesz."
+      "start": 1370.67,
+      "end": 1374.04,
+      "text": "I thought you were"
     },
     {
-      "start": 1365.6,
-      "end": 1366.1,
-      "text": "Właśnie nie interesujesz."
+      "start": 1374.04,
+      "end": 1379.49,
+      "text": "listening, hallucination"
     },
     {
-      "start": 1366.1,
-      "end": 1367.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1381.49,
+      "end": 1381.59,
+      "text": "I understand you"
     },
     {
-      "start": 1367.8,
-      "end": 1369.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1381.59,
+      "end": 1383.99,
+      "text": "think you're above"
     },
     {
-      "start": 1369.8,
-      "end": 1370.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1383.99,
+      "end": 1384.31,
+      "text": "it"
     },
     {
-      "start": 1370.8,
-      "end": 1372.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1384.31,
+      "end": 1387.19,
+      "text": "The adolescent"
     },
     {
-      "start": 1372.8,
-      "end": 1373.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1387.19,
+      "end": 1390.09,
+      "text": "sense of the sky"
     },
     {
-      "start": 1373.8,
-      "end": 1375.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1390.09,
+      "end": 1391.56,
+      "text": "The feeling of billowing"
     },
     {
-      "start": 1375.8,
-      "end": 1376.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1391.56,
+      "end": 1392.29,
+      "text": "heartbeats"
     },
     {
-      "start": 1376.8,
-      "end": 1377.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1392.29,
+      "end": 1393.64,
+      "text": "The fingertips run"
     },
     {
-      "start": 1377.8,
-      "end": 1378.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1393.64,
+      "end": 1394.95,
+      "text": "through your hair"
     },
     {
-      "start": 1378.8,
-      "end": 1379.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1402.94,
+      "end": 1403.94,
+      "text": "# They run through"
     },
     {
-      "start": 1379.8,
-      "end": 1380.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1403.94,
+      "end": 1406.78,
+      "text": "your hair # Hallucination"
     },
     {
-      "start": 1380.8,
-      "end": 1381.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1408.58,
+      "end": 1411.46,
+      "text": "# Hallucination"
     },
     {
-      "start": 1381.8,
-      "end": 1382.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1426.72,
+      "end": 1453.04,
+      "text": "Muzyka"
     },
     {
-      "start": 1382.8,
-      "end": 1383.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1457.21,
+      "end": 1459.59,
+      "text": "Meant to be peons"
     },
     {
-      "start": 1383.8,
-      "end": 1384.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1466.33,
+      "end": 1479.43,
+      "text": "Dziękuje za oglądanie."
     },
     {
-      "start": 1384.8,
-      "end": 1385.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1483.64,
+      "end": 1485.03,
+      "text": "You are a pitiful"
     },
     {
-      "start": 1385.8,
-      "end": 1386.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1485.03,
+      "end": 1485.84,
+      "text": "creature."
     },
     {
-      "start": 1386.8,
-      "end": 1387.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1557.82,
+      "end": 1558.75,
+      "text": "Look upon your"
     },
     {
-      "start": 1387.8,
-      "end": 1388.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1558.75,
+      "end": 1559.62,
+      "text": "perfect body."
     },
     {
-      "start": 1392.8,
-      "end": 1393.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1977.05,
+      "end": 1978.82,
+      "text": "Jeszcze tylko słowo"
     },
     {
-      "start": 1393.8,
-      "end": 1394.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1978.82,
+      "end": 1980.99,
+      "text": "o metalice i luridzie,"
     },
     {
-      "start": 1394.8,
-      "end": 1395.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1980.99,
+      "end": 1982.12,
+      "text": "bo są tacy, co na"
     },
     {
-      "start": 1395.8,
-      "end": 1396.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1982.12,
+      "end": 1983.38,
+      "text": "ich usprawiedliwienie"
     },
     {
-      "start": 1396.8,
-      "end": 1397.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1983.38,
+      "end": 1984.52,
+      "text": "mówią, że to się po"
     },
     {
-      "start": 1397.8,
-      "end": 1398.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1984.52,
+      "end": 1985.41,
+      "text": "prostu nie mogło"
     },
     {
-      "start": 1398.8,
-      "end": 1399.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1985.41,
+      "end": 1986.84,
+      "text": "udać, że artyści z"
     },
     {
-      "start": 1399.8,
-      "end": 1400.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1986.84,
+      "end": 1988.49,
+      "text": "tak bardzo różnych"
     },
     {
-      "start": 1400.8,
-      "end": 1401.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1988.49,
+      "end": 1990.24,
+      "text": "muzycznych światów"
     },
     {
-      "start": 1401.8,
-      "end": 1402.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1990.24,
+      "end": 1991.99,
+      "text": "i pokoleń nie byli"
     },
     {
-      "start": 1402.8,
-      "end": 1403.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1991.99,
+      "end": 1994.28,
+      "text": "w stanie się dogadać,"
     },
     {
-      "start": 1403.8,
-      "end": 1404.8,
-      "text": "Właśnie nie interesujesz."
+      "start": 1994.28,
+      "end": 1996.57,
+      "text": "że ten projekt skazany"
     },
     {
-      "start": 1404.8,
-      "end": 1405.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1405.8,
-      "end": 1406.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1406.8,
-      "end": 1407.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1407.8,
-      "end": 1408.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1408.8,
-      "end": 1409.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1409.8,
-      "end": 1410.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1410.8,
-      "end": 1411.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1411.8,
-      "end": 1412.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1412.8,
-      "end": 1413.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1413.8,
-      "end": 1414.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1414.8,
-      "end": 1416.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1416.8,
-      "end": 1417.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1417.8,
-      "end": 1418.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1418.8,
-      "end": 1419.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1419.8,
-      "end": 1420.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1420.8,
-      "end": 1421.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1421.8,
-      "end": 1422.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1422.8,
-      "end": 1423.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1423.8,
-      "end": 1424.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1424.8,
-      "end": 1425.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1425.8,
-      "end": 1426.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1426.8,
-      "end": 1427.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1427.8,
-      "end": 1428.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1428.8,
-      "end": 1429.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1429.8,
-      "end": 1431.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1431.8,
-      "end": 1433.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1433.8,
-      "end": 1435.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1435.8,
-      "end": 1437.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1437.8,
-      "end": 1439.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1439.8,
-      "end": 1441.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1441.8,
-      "end": 1443.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1443.8,
-      "end": 1445.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1445.8,
-      "end": 1447.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1447.8,
-      "end": 1449.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1449.8,
-      "end": 1451.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1451.8,
-      "end": 1453.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1453.8,
-      "end": 1455.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1455.8,
-      "end": 1457.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1457.8,
-      "end": 1459.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1459.8,
-      "end": 1461.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1461.8,
-      "end": 1463.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1463.8,
-      "end": 1465.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1465.8,
-      "end": 1467.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1467.8,
-      "end": 1469.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1469.8,
-      "end": 1471.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1471.8,
-      "end": 1473.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1473.8,
-      "end": 1475.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1475.8,
-      "end": 1477.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1477.8,
-      "end": 1479.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1479.8,
-      "end": 1481.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1481.8,
-      "end": 1483.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1483.8,
-      "end": 1485.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1485.8,
-      "end": 1487.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1487.8,
-      "end": 1489.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1489.8,
-      "end": 1491.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1491.8,
-      "end": 1493.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1493.8,
-      "end": 1495.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1495.8,
-      "end": 1497.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1497.8,
-      "end": 1499.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1499.8,
-      "end": 1501.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1501.8,
-      "end": 1503.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1503.8,
-      "end": 1505.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1505.8,
-      "end": 1507.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1507.8,
-      "end": 1509.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1509.8,
-      "end": 1511.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1511.8,
-      "end": 1513.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1513.8,
-      "end": 1515.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1515.8,
-      "end": 1517.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1517.8,
-      "end": 1519.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1519.8,
-      "end": 1521.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1521.8,
-      "end": 1523.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1523.8,
-      "end": 1525.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1525.8,
-      "end": 1527.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1527.8,
-      "end": 1529.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1529.8,
-      "end": 1531.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1531.8,
-      "end": 1533.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1533.8,
-      "end": 1535.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1535.8,
-      "end": 1537.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1537.8,
-      "end": 1539.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1539.8,
-      "end": 1541.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1541.8,
-      "end": 1543.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1543.8,
-      "end": 1545.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1545.8,
-      "end": 1547.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1547.8,
-      "end": 1549.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1549.8,
-      "end": 1551.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1551.8,
-      "end": 1553.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1553.8,
-      "end": 1555.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1555.8,
-      "end": 1557.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1557.8,
-      "end": 1559.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1559.8,
-      "end": 1561.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1561.8,
-      "end": 1563.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1563.8,
-      "end": 1565.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1565.8,
-      "end": 1567.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1567.8,
-      "end": 1569.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1569.8,
-      "end": 1571.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1571.8,
-      "end": 1573.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1573.8,
-      "end": 1575.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1575.8,
-      "end": 1577.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1577.8,
-      "end": 1579.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1579.8,
-      "end": 1581.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1581.8,
-      "end": 1583.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1583.8,
-      "end": 1585.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1585.8,
-      "end": 1587.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1587.8,
-      "end": 1589.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1589.8,
-      "end": 1591.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1591.8,
-      "end": 1593.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1593.8,
-      "end": 1595.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1595.8,
-      "end": 1597.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1597.8,
-      "end": 1599.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1599.8,
-      "end": 1601.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1601.8,
-      "end": 1603.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1603.8,
-      "end": 1605.8,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1605.8,
-      "end": 1607.2,
-      "text": "Właśnie nie interesujesz."
-    },
-    {
-      "start": 1976.07,
+      "start": 1996.57,
       "end": 1998.47,
-      "text": "Jeszcze tylko słowo o metalice i luridzie, bo są tacy, co na ich usprawiedliwienie mówią, że to się po prostu nie mogło udać, że artyści z tak bardzo różnych muzycznych światów, no i pokoleń, nie byli w stanie się dogadać, że ten projekt skazany był na porażkę."
+      "text": "był na porażkę."
     },
     {
-      "start": 1999.13,
-      "end": 2009.79,
-      "text": "Każdemu, kto tak uważa, proponuje ważne przesłuchanie płyty Soust, czyli połączenia sił Scotta Walkera i zespołu Sun."
+      "start": 1999.15,
+      "end": 2000.53,
+      "text": "Każdemu, kto tak"
     },
     {
-      "start": 2010.01,
+      "start": 2000.53,
+      "end": 2002.23,
+      "text": "uważa, proponuje"
+    },
+    {
+      "start": 2002.23,
+      "end": 2003.75,
+      "text": "uważne przesłuchanie"
+    },
+    {
+      "start": 2003.75,
+      "end": 2005.3,
+      "text": "płyty SAUST, czyli"
+    },
+    {
+      "start": 2005.3,
+      "end": 2007.04,
+      "text": "połączenia sił Scotta"
+    },
+    {
+      "start": 2007.04,
+      "end": 2009.83,
+      "text": "Walkera i zespołu S.A.N."
+    },
+    {
+      "start": 2009.97,
+      "end": 2011.36,
+      "text": "Tam teoretycznie te"
+    },
+    {
+      "start": 2011.36,
+      "end": 2013.05,
+      "text": "światy i te pokolenia"
+    },
+    {
+      "start": 2013.05,
+      "end": 2014.52,
+      "text": "są jeszcze bardziej"
+    },
+    {
+      "start": 2014.52,
+      "end": 2016.13,
+      "text": "odległe, a materiał"
+    },
+    {
+      "start": 2016.13,
       "end": 2017.05,
-      "text": "Tam teoretycznie te światy i te pokolenia są jeszcze bardziej odległe, a materiał wybitny."
+      "text": "wybitny."
     },
     {
-      "start": 2017.05,
-      "end": 2021.89,
-      "text": "No ale idźmy dalej, idźmy dalej przez rozczarowania."
+      "start": 2017.71,
+      "end": 2018.75,
+      "text": "No ale idźmy dalej,"
     },
     {
-      "start": 2022.53,
-      "end": 2026.49,
-      "text": "Pamiętam buńczuczne zapowiedzi płyty Come Before the Storm."
+      "start": 2018.75,
+      "end": 2020.36,
+      "text": "idźmy dalej przez"
     },
     {
-      "start": 2027.27,
+      "start": 2020.36,
+      "end": 2021.87,
+      "text": "rozczarowania."
+    },
+    {
+      "start": 2022.27,
+      "end": 2023.63,
+      "text": "Pamiętam buńczuczne"
+    },
+    {
+      "start": 2023.63,
+      "end": 2024.76,
+      "text": "zapowiedzi płyty"
+    },
+    {
+      "start": 2024.76,
+      "end": 2025.76,
+      "text": "Come Before the"
+    },
+    {
+      "start": 2025.76,
+      "end": 2026.47,
+      "text": "Storm."
+    },
+    {
+      "start": 2027.25,
+      "end": 2028.48,
+      "text": "Byłem wtedy aktywnym"
+    },
+    {
+      "start": 2028.48,
+      "end": 2030.33,
+      "text": "szalikowcem Venom"
+    },
+    {
+      "start": 2030.33,
+      "end": 2032.47,
+      "text": "metalowym, neofitą,"
+    },
+    {
+      "start": 2032.47,
+      "end": 2034.4,
+      "text": "który wierzył w to,"
+    },
+    {
+      "start": 2034.4,
+      "end": 2036.95,
+      "text": "że bogowie z Newcastle,"
+    },
+    {
+      "start": 2036.95,
+      "end": 2038.19,
+      "text": "tak jak zapowiadali,"
+    },
+    {
+      "start": 2038.19,
+      "end": 2039.81,
+      "text": "wypuszczą album,"
+    },
+    {
+      "start": 2039.81,
+      "end": 2040.98,
+      "text": "który nie tylko"
+    },
+    {
+      "start": 2040.98,
+      "end": 2043.13,
+      "text": "przebije ich dotychczasowe"
+    },
+    {
+      "start": 2043.13,
       "end": 2044.19,
-      "text": "Byłem wtedy aktywnym szalikowcem Venom metalowym, neofitą, który wierzył w to, że bogowie z Newcastle, tak jak zapowiadali, wypuszczą album, który nie tylko przebije ich dotychczasowe dokonania,"
+      "text": "dokonania,"
     },
     {
       "start": 2044.19,
-      "end": 2054.81,
-      "text": "ale też zmiecie ze sceny całą trash metalową konkurencję, którą Venom przecież wykarmił własną piersią."
+      "end": 2045.9,
+      "text": "ale też zmiecie ze"
     },
     {
-      "start": 2055.83,
+      "start": 2045.9,
+      "end": 2047.52,
+      "text": "sceny całą trash"
+    },
+    {
+      "start": 2047.52,
+      "end": 2049.92,
+      "text": "metalową konkurencję,"
+    },
+    {
+      "start": 2049.92,
+      "end": 2051.98,
+      "text": "którą Venom przecież"
+    },
+    {
+      "start": 2051.98,
+      "end": 2054.81,
+      "text": "wykarmił własną piersią."
+    },
+    {
+      "start": 2055.79,
+      "end": 2056.45,
+      "text": "Bo właśnie, ten"
+    },
+    {
+      "start": 2056.45,
+      "end": 2058.02,
+      "text": "kontekst jest tu"
+    },
+    {
+      "start": 2058.02,
       "end": 2059.73,
-      "text": "Bo właśnie, ten kontekst jest tu bardzo ważny."
+      "text": "bardzo ważny."
     },
     {
       "start": 2059.73,
+      "end": 2061.25,
+      "text": "Z tego plugowego,"
+    },
+    {
+      "start": 2061.25,
+      "end": 2063.35,
+      "text": "brutalnego, metalowego"
+    },
+    {
+      "start": 2063.35,
+      "end": 2065.03,
+      "text": "rock'n'rolla Venom"
+    },
+    {
+      "start": 2065.03,
+      "end": 2066.37,
+      "text": "paliwo do swoich"
+    },
+    {
+      "start": 2066.37,
+      "end": 2068.57,
+      "text": "machin wojennych czerpali"
+    },
+    {
+      "start": 2068.57,
+      "end": 2069.83,
+      "text": "nie tylko black"
+    },
+    {
+      "start": 2069.83,
+      "end": 2071.55,
+      "text": "metalowcy, to było"
+    },
+    {
+      "start": 2071.55,
+      "end": 2072.92,
+      "text": "dobrych parę lat"
+    },
+    {
+      "start": 2072.92,
       "end": 2073.79,
-      "text": "Z tego plugowego, brutalnego, metalowego rock'n'rolla Venom, paliwo do swoich machin wojennych czerpali nie tylko black metalowcy, to było dobrych parę lat później,"
+      "text": "później,"
     },
     {
-      "start": 2074.61,
-      "end": 2080.99,
-      "text": "ale przede wszystkim traszerzy od Slayera, powczesną oczywiście metalikę."
+      "start": 2074.63,
+      "end": 2075.07,
+      "text": "ale przede"
     },
     {
-      "start": 2081.37,
+      "start": 2075.07,
+      "end": 2076.62,
+      "text": "wszystkim traszerzy"
+    },
+    {
+      "start": 2076.62,
+      "end": 2078.71,
+      "text": "od Slayera, powczesną"
+    },
+    {
+      "start": 2078.71,
+      "end": 2081.01,
+      "text": "oczywiście metalikę."
+    },
+    {
+      "start": 2081.27,
+      "end": 2083.39,
+      "text": "Kronos, lider Venom,"
+    },
+    {
+      "start": 2083.39,
+      "end": 2085.43,
+      "text": "widział oczywiście,"
+    },
+    {
+      "start": 2085.43,
+      "end": 2086.93,
+      "text": "że ich uczniowie"
+    },
+    {
+      "start": 2086.93,
+      "end": 2088.92,
+      "text": "podkradają zespołowi"
+    },
+    {
+      "start": 2088.92,
+      "end": 2091.2,
+      "text": "fanów, więc postanowił"
+    },
+    {
+      "start": 2091.2,
+      "end": 2092.75,
+      "text": "rozgromić wroga na"
+    },
+    {
+      "start": 2092.75,
       "end": 2095.23,
-      "text": "Kronos, lider Venom, widział oczywiście, że ich uczniowie podkradają zespołowi fanów, więc postanowił rozgromić wroga na jego własnym terytorium."
+      "text": "jego własnym terytorium."
     },
     {
       "start": 2095.91,
-      "end": 2103.01,
-      "text": "Błąd strategiczny, który pociągnął za sobą nie tylko przegraną bitwę, ale właściwie całą wojnę."
+      "end": 2097.05,
+      "text": "Błąd strategiczny."
     },
     {
-      "start": 2103.01,
+      "start": 2097.05,
+      "end": 2098.49,
+      "text": "który pociągnął za"
+    },
+    {
+      "start": 2098.49,
+      "end": 2100.29,
+      "text": "sobą nie tylko przegraną"
+    },
+    {
+      "start": 2100.29,
+      "end": 2101.15,
+      "text": "bitwę, ale"
+    },
+    {
+      "start": 2101.15,
+      "end": 2103.05,
+      "text": "właściwie całą wojnę."
+    },
+    {
+      "start": 2103.77,
+      "end": 2104.62,
+      "text": "Po Come Before the"
+    },
+    {
+      "start": 2104.62,
+      "end": 2106.18,
+      "text": "Storm, Venom już"
+    },
+    {
+      "start": 2106.18,
+      "end": 2107.85,
+      "text": "nigdy nie wrócił na"
+    },
+    {
+      "start": 2107.85,
+      "end": 2108.59,
+      "text": "tron,"
+    },
+    {
+      "start": 2108.71,
+      "end": 2110.15,
+      "text": "który tak pochopnie"
+    },
+    {
+      "start": 2110.15,
+      "end": 2112.19,
+      "text": "opuściłby podjąć wyzwanie"
+    },
+    {
+      "start": 2112.19,
       "end": 2114.43,
-      "text": "Po Come Before the Storm, Venom już nigdy nie wrócił na tron, który tak pochopnie opuściłby podjąć wyzwanie rzucone przez małolatów."
+      "text": "rzucone przez małolatów."
     },
     {
       "start": 2115.45,
-      "end": 2116.59,
-      "text": "Co my tutaj mamy?"
+      "end": 2117.17,
+      "text": "Co my tutaj mamy? Mniej"
     },
     {
-      "start": 2117.01,
-      "end": 2124.99,
-      "text": "Mniej szatana, mniej chaosu i brudu w brzmieniu i przede wszystkim mniej mantasa."
+      "start": 2117.17,
+      "end": 2118.8,
+      "text": "szatana, mniej"
     },
     {
-      "start": 2125.83,
+      "start": 2118.8,
+      "end": 2121.45,
+      "text": "chaosu i brudu w brzmieniu"
+    },
+    {
+      "start": 2121.45,
+      "end": 2123.36,
+      "text": "i przede wszystkim"
+    },
+    {
+      "start": 2123.36,
+      "end": 2125.01,
+      "text": "mniej mantasa."
+    },
+    {
+      "start": 2125.89,
+      "end": 2127.09,
+      "text": "Radykalnie mniej,"
+    },
+    {
+      "start": 2127.09,
+      "end": 2128.38,
+      "text": "bo gitarzyście Venom"
+    },
+    {
+      "start": 2128.38,
+      "end": 2129.85,
+      "text": "koledzy podziękowali,"
+    },
+    {
+      "start": 2130.39,
+      "end": 2131.34,
+      "text": "zastępując go na"
+    },
+    {
+      "start": 2131.34,
+      "end": 2132.73,
+      "text": "Come Before the"
+    },
+    {
+      "start": 2132.73,
       "end": 2135.81,
-      "text": "Radykalnie mniej, bo gitarzyście Venom koledzy podziękowali, zastępując go na Come Before the Storm dwoma młodzieńcami,"
+      "text": "Storm dwoma młodzieńcami,"
     },
     {
       "start": 2135.99,
-      "end": 2145.07,
-      "text": "którzy może i technicznie byli biegli, ale za to nijak nie umieli grać muzyki, za którą kochaliśmy Venom."
+      "end": 2137.9,
+      "text": "którzy może i technicznie"
     },
     {
-      "start": 2145.73,
+      "start": 2137.9,
+      "end": 2139.55,
+      "text": "byli biegli, ale za"
+    },
+    {
+      "start": 2139.55,
+      "end": 2141.26,
+      "text": "to nijak nie umieli"
+    },
+    {
+      "start": 2141.26,
+      "end": 2142.27,
+      "text": "grać muzyki,"
+    },
+    {
+      "start": 2142.35,
+      "end": 2144.26,
+      "text": "za którą kochaliśmy"
+    },
+    {
+      "start": 2144.26,
+      "end": 2145.07,
+      "text": "Venom."
+    },
+    {
+      "start": 2145.75,
+      "end": 2147.42,
+      "text": "No i jeszcze te wokale"
+    },
+    {
+      "start": 2147.42,
       "end": 2148.77,
-      "text": "No i jeszcze te wokale okropne."
+      "text": "okropne."
     },
     {
       "start": 2149.23,
-      "end": 2149.91,
+      "end": 2150.47,
       "text": "Czar prysłu."
     },
     {
-      "start": 2205.76,
-      "end": 2220,
-      "text": "Dziękuje za oglądanie!"
+      "start": 2398.17,
+      "end": 2399.24,
+      "text": "Czas na płytę,"
     },
     {
-      "start": 2396.64,
-      "end": 2416.48,
-      "text": "Czas na płytę, której w oficjalnej dyskografii zespołu próżno szukać, która nie była wznawiana, nie ma jej w serwisach streamingowych, a która funkcjonuje jako symbol całej kategorii metalowych płyt, co rozczarowały."
+      "start": 2399.24,
+      "end": 2400.63,
+      "text": "której w oficjalnej"
     },
     {
-      "start": 2416.84,
-      "end": 2429.36,
-      "text": "Czas zatem na Cold Lake, Celtic Frost. Gdyby Tom Warrior wiedział, że coś z tego dzisiaj puszczę w audycji, pewnie powiedziałby u, z wyraźną dezaprobatą."
+      "start": 2400.63,
+      "end": 2401.99,
+      "text": "dyskografii zespołu"
     },
     {
-      "start": 2430.58,
-      "end": 2440.54,
-      "text": "Ale po kolei, Celtic Frost to wielki zespół. W dodatku taki, który od początku lubił wyzwania i robił rzeczy po swojemu."
+      "start": 2401.99,
+      "end": 2403,
+      "text": "próżno szukać,"
     },
     {
-      "start": 2440.7,
-      "end": 2448.22,
-      "text": "Jeszcze jako Hellhammer kładł podwaliny pod black metal wspólnie z Venom i Bathory."
+      "start": 2403,
+      "end": 2405.57,
+      "text": "która nie była wznawiana,"
     },
     {
-      "start": 2449.04,
-      "end": 2464.88,
-      "text": "Później, już jako Celtic Frost właśnie, grał rzeczy, którymi inspirują się do dziś i black metalowcy, i death metalowcy, i te wszystkie nurty metalu pompatycznego i ambitnego od Therion po Opet."
+      "start": 2405.57,
+      "end": 2407.37,
+      "text": "nie ma jej w serwisach"
     },
     {
-      "start": 2464.88,
-      "end": 2481.08,
-      "text": "Ale już na wysokości czwartej płyty, w 1988 roku, Celtic Frost zamiast zaostrzać brzmienie, postanowił je złagodzić i skomercjalizować."
+      "start": 2407.37,
+      "end": 2409.21,
+      "text": "streamingowych, a"
     },
     {
-      "start": 2481.68,
-      "end": 2490.5,
-      "text": "I to był manewr wykonany pod wiatr historii, zatem trudno się dziwić, że niemal zatopił ten okręt."
+      "start": 2409.21,
+      "end": 2410.69,
+      "text": "która funkcjonuje"
     },
     {
-      "start": 2490.5,
-      "end": 2508.48,
-      "text": "Inna sprawa, że tej płyty, że Cold Lake właściwie miało nie być, bo zespół został rozwiązany po Into the Pandemonium, albumie wspaniałym, choć nie przyjętym tak gorąco jak Szwajcarzy by sobie wtedy tego życzyli."
+      "start": 2410.69,
+      "end": 2413.09,
+      "text": "jako symbol całej kategorii"
     },
     {
-      "start": 2508.48,
-      "end": 2522.92,
-      "text": "Tom jednak uległ pod szeptom, podobno ze strony producenta i wytwórni reaktywował Celtic Frost bez Martina i Rida, bez swojej oryginalnej sekcji rytmicznej."
+      "start": 2413.09,
+      "end": 2415,
+      "text": "metalowych płyt, co"
     },
     {
-      "start": 2523.04,
-      "end": 2535.96,
-      "text": "Ale Martin to też przecież gigantyczny wkład twórczy w brzmienie Celtic Frost zastąpił ich amerykańskimi muzykami do wynajęcia."
+      "start": 2415,
+      "end": 2416.49,
+      "text": "rozczarowały."
     },
     {
-      "start": 2536.44,
-      "end": 2557.72,
-      "text": "I co ważne pojawił się też szwajcarski gitarzysta Oliver Amberg, który wziął na siebie główny ciężar twórczy, a zatem Cold Lake jest płytą napisaną w przeważającej części przez gościa niedoświadczonego, którego w dodatku przed chwilą w zespole jeszcze nie było."
+      "start": 2416.81,
+      "end": 2418.16,
+      "text": "Czas zatem na Cold"
     },
     {
-      "start": 2558.44,
-      "end": 2569.6,
-      "text": "Zajrzałem przed audycją na oficjalną stronę Amberga i w jego oficjalnej biografii znajdujemy taką oto informację."
+      "start": 2418.16,
+      "end": 2419.96,
+      "text": "Lake, Celtic Frost."
     },
     {
-      "start": 2570.32,
-      "end": 2577.86,
-      "text": "Jestem wdzięczny Tomowi za to, że dał mi szansę. Wierzę i wiem, że ją spieprzyłem."
+      "start": 2419.96,
+      "end": 2422.35,
+      "text": "Gdyby Tom Warrior wiedział,"
     },
     {
-      "start": 2579.98,
-      "end": 2598.1,
-      "text": "Bardzo to smutne, bo trudno przecież winić Amberga, bo jednak za całość odpowiada kierownik zespołu i nie musiał tych utworów, nie musiał tych propozycji Olivera przyjmować i wydawać na płycie pod szyldem Celtic Frost."
+      "start": 2422.35,
+      "end": 2423.33,
+      "text": "że coś z tego"
     },
     {
-      "start": 2598.6,
-      "end": 2611.88,
-      "text": "Ale znowu, uwaga, nie jest to płyta aż tak okropna jak opinia o niej i przede wszystkim nie jest aż tak glam metalowa jak zdjęcia zespołu z tamtego czasu."
+      "start": 2423.33,
+      "end": 2424.55,
+      "text": "dzisiaj puszczę w"
     },
     {
-      "start": 2612.38,
-      "end": 2618.56,
-      "text": "No ale cóż, na tle innych materiałów Celtic Frost rzeczywiście chwały im nie przynosi."
+      "start": 2424.55,
+      "end": 2425.81,
+      "text": "audycji, pewnie"
     },
     {
-      "start": 2618.56,
-      "end": 2620.12,
-      "text": "Mówi."
+      "start": 2425.81,
+      "end": 2427.42,
+      "text": "powiedziałby, u, z"
     },
     {
-      "start": 2872.24,
+      "start": 2427.42,
+      "end": 2429.35,
+      "text": "wyraźną dezaprobatą."
+    },
+    {
+      "start": 2430.57,
+      "end": 2431.23,
+      "text": "Ale po kolei, Celtic"
+    },
+    {
+      "start": 2431.23,
+      "end": 2433.52,
+      "text": "Frost to wielki zespół."
+    },
+    {
+      "start": 2433.52,
+      "end": 2434.96,
+      "text": "W dodatku taki,"
+    },
+    {
+      "start": 2434.96,
+      "end": 2436.55,
+      "text": "który od początku"
+    },
+    {
+      "start": 2436.55,
+      "end": 2438.01,
+      "text": "lubił wyzwania i"
+    },
+    {
+      "start": 2438.01,
+      "end": 2440.55,
+      "text": "robił rzeczy po swojemu."
+    },
+    {
+      "start": 2440.73,
+      "end": 2442.86,
+      "text": "Jeszcze jako Hellhammer"
+    },
+    {
+      "start": 2442.86,
+      "end": 2444.65,
+      "text": "kładł podwaliny pod"
+    },
+    {
+      "start": 2444.65,
+      "end": 2446.39,
+      "text": "black metal wspólnie"
+    },
+    {
+      "start": 2446.39,
+      "end": 2448.21,
+      "text": "z Venom i Bathory."
+    },
+    {
+      "start": 2449.05,
+      "end": 2449.56,
+      "text": "Później, już jako"
+    },
+    {
+      "start": 2449.56,
+      "end": 2450.5,
+      "text": "Celtic Frost"
+    },
+    {
+      "start": 2450.5,
+      "end": 2451.6,
+      "text": "właśnie, grał"
+    },
+    {
+      "start": 2451.6,
+      "end": 2452.97,
+      "text": "rzeczy, którymi"
+    },
+    {
+      "start": 2452.97,
+      "end": 2454.05,
+      "text": "inspirują się do"
+    },
+    {
+      "start": 2454.05,
+      "end": 2455.84,
+      "text": "dziś i black metalowcy,"
+    },
+    {
+      "start": 2455.84,
+      "end": 2457.43,
+      "text": "i death metalowcy,"
+    },
+    {
+      "start": 2457.43,
+      "end": 2459.39,
+      "text": "i te wszystkie nurty"
+    },
+    {
+      "start": 2459.39,
+      "end": 2461.57,
+      "text": "metalu pompatycznego"
+    },
+    {
+      "start": 2461.57,
+      "end": 2463.75,
+      "text": "i ambitnego od Therion"
+    },
+    {
+      "start": 2463.75,
+      "end": 2464.89,
+      "text": "po Opet."
+    },
+    {
+      "start": 2464.89,
+      "end": 2467.04,
+      "text": "Ale już na wysokości"
+    },
+    {
+      "start": 2467.04,
+      "end": 2469.04,
+      "text": "czwartej płyty, w"
+    },
+    {
+      "start": 2469.04,
+      "end": 2472.12,
+      "text": "1988 roku, Celtic"
+    },
+    {
+      "start": 2472.12,
+      "end": 2474.78,
+      "text": "Frost zamiast zaostrzać"
+    },
+    {
+      "start": 2474.78,
+      "end": 2477.55,
+      "text": "brzmienie, postanowił"
+    },
+    {
+      "start": 2477.55,
+      "end": 2481.09,
+      "text": "je złagodzić i skomercjalizować."
+    },
+    {
+      "start": 2481.67,
+      "end": 2482.35,
+      "text": "I to był manewr"
+    },
+    {
+      "start": 2482.35,
+      "end": 2484.07,
+      "text": "wykonany pod wiatr"
+    },
+    {
+      "start": 2484.07,
+      "end": 2485.68,
+      "text": "historii, zatem"
+    },
+    {
+      "start": 2485.68,
+      "end": 2487.48,
+      "text": "trudno się dziwić,"
+    },
+    {
+      "start": 2487.48,
+      "end": 2489.07,
+      "text": "że niemal zatopił"
+    },
+    {
+      "start": 2489.07,
+      "end": 2490.51,
+      "text": "ten okręt."
+    },
+    {
+      "start": 2490.71,
+      "end": 2492.24,
+      "text": "Inna sprawa, że tej"
+    },
+    {
+      "start": 2492.24,
+      "end": 2493.81,
+      "text": "płyty, że Cold Lake"
+    },
+    {
+      "start": 2493.81,
+      "end": 2495.33,
+      "text": "właściwie miało nie"
+    },
+    {
+      "start": 2495.33,
+      "end": 2496.51,
+      "text": "być, bo zespół"
+    },
+    {
+      "start": 2496.51,
+      "end": 2497.96,
+      "text": "został rozwiązany"
+    },
+    {
+      "start": 2497.96,
+      "end": 2500.15,
+      "text": "po Into the Pandemonium,"
+    },
+    {
+      "start": 2500.15,
+      "end": 2502.11,
+      "text": "albumie wspaniałym,"
+    },
+    {
+      "start": 2502.11,
+      "end": 2503.61,
+      "text": "choć nie przyjętym"
+    },
+    {
+      "start": 2503.61,
+      "end": 2506.01,
+      "text": "tak gorąco, jak Szwajcarzy"
+    },
+    {
+      "start": 2506.01,
+      "end": 2507.54,
+      "text": "by sobie wtedy tego"
+    },
+    {
+      "start": 2507.54,
+      "end": 2508.47,
+      "text": "życzyli."
+    },
+    {
+      "start": 2509.31,
+      "end": 2509.88,
+      "text": "Tom jednak uległ"
+    },
+    {
+      "start": 2509.88,
+      "end": 2511.78,
+      "text": "podszeptom, podobno"
+    },
+    {
+      "start": 2511.78,
+      "end": 2513.61,
+      "text": "ze strony producenta"
+    },
+    {
+      "start": 2513.61,
+      "end": 2515.61,
+      "text": "i wytwórni reaktywował"
+    },
+    {
+      "start": 2515.61,
+      "end": 2517.05,
+      "text": "Celtic Frost bez"
+    },
+    {
+      "start": 2517.05,
+      "end": 2518.17,
+      "text": "Martina."
+    },
+    {
+      "start": 2518.17,
+      "end": 2521.27,
+      "text": "i Reeda bez swojej"
+    },
+    {
+      "start": 2521.27,
+      "end": 2522.39,
+      "text": "oryginalnej sekcji"
+    },
+    {
+      "start": 2522.39,
+      "end": 2523.21,
+      "text": "rytmicznej, no ale"
+    },
+    {
+      "start": 2523.21,
+      "end": 2524.77,
+      "text": "Martin to też przecież"
+    },
+    {
+      "start": 2524.77,
+      "end": 2526.3,
+      "text": "gigantyczny wkład"
+    },
+    {
+      "start": 2526.3,
+      "end": 2527.91,
+      "text": "twórczy w brzmienie"
+    },
+    {
+      "start": 2527.91,
+      "end": 2530.98,
+      "text": "Celtic Frost, zastąpił"
+    },
+    {
+      "start": 2530.98,
+      "end": 2532.85,
+      "text": "ich amerykańskimi"
+    },
+    {
+      "start": 2532.85,
+      "end": 2534.84,
+      "text": "muzykami do wynajęcia"
+    },
+    {
+      "start": 2534.84,
+      "end": 2536.42,
+      "text": "i co ważne pojawił"
+    },
+    {
+      "start": 2536.42,
+      "end": 2538.2,
+      "text": "się też szwajcarski"
+    },
+    {
+      "start": 2538.2,
+      "end": 2539.35,
+      "text": "gitarzysta"
+    },
+    {
+      "start": 2539.35,
+      "end": 2540.64,
+      "text": "Oliver Amberg,"
+    },
+    {
+      "start": 2540.64,
+      "end": 2541.74,
+      "text": "który wziął na"
+    },
+    {
+      "start": 2541.74,
+      "end": 2543.41,
+      "text": "siebie główny ciężar"
+    },
+    {
+      "start": 2543.41,
+      "end": 2545.73,
+      "text": "twórczy, a zatem"
+    },
+    {
+      "start": 2545.73,
+      "end": 2546.49,
+      "text": "Cold Lake"
+    },
+    {
+      "start": 2546.49,
+      "end": 2548.19,
+      "text": "jest płytą napisaną"
+    },
+    {
+      "start": 2548.19,
+      "end": 2549.62,
+      "text": "w przeważającej"
+    },
+    {
+      "start": 2549.62,
+      "end": 2551.35,
+      "text": "części przez gościa"
+    },
+    {
+      "start": 2551.35,
+      "end": 2552.77,
+      "text": "niedoświadczonego,"
+    },
+    {
+      "start": 2552.93,
+      "end": 2554.21,
+      "text": "którego w dodatku"
+    },
+    {
+      "start": 2554.21,
+      "end": 2556.06,
+      "text": "przed chwilą w zespole"
+    },
+    {
+      "start": 2556.06,
+      "end": 2557.73,
+      "text": "jeszcze nie było."
+    },
+    {
+      "start": 2558.73,
+      "end": 2559.73,
+      "text": "Zajrzałem przed audycją"
+    },
+    {
+      "start": 2559.73,
+      "end": 2561.36,
+      "text": "na oficjalną stronę"
+    },
+    {
+      "start": 2561.36,
+      "end": 2564.93,
+      "text": "Amberga i w jego oficjalnej"
+    },
+    {
+      "start": 2564.93,
+      "end": 2566.19,
+      "text": "biografii"
+    },
+    {
+      "start": 2566.19,
+      "end": 2568.09,
+      "text": "znajdujemy taką oto"
+    },
+    {
+      "start": 2568.09,
+      "end": 2569.59,
+      "text": "informację."
+    },
+    {
+      "start": 2570.33,
+      "end": 2571.04,
+      "text": "Jestem wdzięczny"
+    },
+    {
+      "start": 2571.04,
+      "end": 2572.32,
+      "text": "Tomowi za to, że dał"
+    },
+    {
+      "start": 2572.32,
+      "end": 2573.37,
+      "text": "mi szansę."
+    },
+    {
+      "start": 2573.87,
+      "end": 2575.77,
+      "text": "Wierzę i wiem, że"
+    },
+    {
+      "start": 2575.77,
+      "end": 2577.87,
+      "text": "ją spieprzyłem."
+    },
+    {
+      "start": 2580.15,
+      "end": 2580.16,
+      "text": "Bardzo to smutne,"
+    },
+    {
+      "start": 2580.16,
+      "end": 2582.46,
+      "text": "bo trudno przecież"
+    },
+    {
+      "start": 2582.46,
+      "end": 2584.72,
+      "text": "winić Amberga, bo"
+    },
+    {
+      "start": 2584.72,
+      "end": 2586.39,
+      "text": "jednak za całość"
+    },
+    {
+      "start": 2586.39,
+      "end": 2587.97,
+      "text": "odpowiada kierownik"
+    },
+    {
+      "start": 2587.97,
+      "end": 2589.52,
+      "text": "zespołu i nie musiał"
+    },
+    {
+      "start": 2589.52,
+      "end": 2590.87,
+      "text": "tych utworów, nie"
+    },
+    {
+      "start": 2590.87,
+      "end": 2591.51,
+      "text": "musiał tych"
+    },
+    {
+      "start": 2591.51,
+      "end": 2593.08,
+      "text": "propozycji Olivera"
+    },
+    {
+      "start": 2593.08,
+      "end": 2594.74,
+      "text": "przyjmować i wydawać"
+    },
+    {
+      "start": 2594.74,
+      "end": 2596.51,
+      "text": "na płycie pod szyldem"
+    },
+    {
+      "start": 2596.51,
+      "end": 2598.09,
+      "text": "Celtic Frost."
+    },
+    {
+      "start": 2598.47,
+      "end": 2600.34,
+      "text": "Ale znowu, uwaga,"
+    },
+    {
+      "start": 2600.34,
+      "end": 2601.88,
+      "text": "nie jest to płyta"
+    },
+    {
+      "start": 2601.88,
+      "end": 2603.63,
+      "text": "aż tak okropna jak"
+    },
+    {
+      "start": 2603.63,
+      "end": 2605.13,
+      "text": "opinia o niej"
+    },
+    {
+      "start": 2605.13,
+      "end": 2606.78,
+      "text": "i przede wszystkim"
+    },
+    {
+      "start": 2606.78,
+      "end": 2608.25,
+      "text": "nie jest aż tak"
+    },
+    {
+      "start": 2608.25,
+      "end": 2609.55,
+      "text": "glam metalowa jak"
+    },
+    {
+      "start": 2609.55,
+      "end": 2611.08,
+      "text": "zdjęcia zespołu z"
+    },
+    {
+      "start": 2611.08,
+      "end": 2611.89,
+      "text": "tamtego czasu."
+    },
+    {
+      "start": 2612.35,
+      "end": 2613.06,
+      "text": "No ale cóż, na tle"
+    },
+    {
+      "start": 2613.06,
+      "end": 2613.92,
+      "text": "innych materiałów"
+    },
+    {
+      "start": 2613.92,
+      "end": 2614.73,
+      "text": "Celtic Frost"
+    },
+    {
+      "start": 2614.73,
+      "end": 2616.61,
+      "text": "rzeczywiście chwały"
+    },
+    {
+      "start": 2616.61,
+      "end": 2618.55,
+      "text": "im nie przynosi."
+    },
+    {
+      "start": 2872.64,
+      "end": 2874.48,
+      "text": "Padła już nazwa Batory,"
+    },
+    {
+      "start": 2874.48,
       "end": 2876.44,
-      "text": "Padła już nazwa Batory, a zatem czas na Batory."
+      "text": "a zatem czas na Batory."
     },
     {
       "start": 2877.16,
-      "end": 2879.22,
-      "text": "Quarton to jeden z wielkich."
+      "end": 2878.01,
+      "text": "Quarton to jeden z"
+    },
+    {
+      "start": 2878.01,
+      "end": 2879.2,
+      "text": "wielkich."
     },
     {
       "start": 2880,
+      "end": 2881.37,
+      "text": "I jego wkładu w ekstremalny"
+    },
+    {
+      "start": 2881.37,
       "end": 2883.32,
-      "text": "I jego wkładu w ekstremalny metal nikt nie podważy,"
+      "text": "metal nikt nie podważy,"
     },
     {
       "start": 2883.78,
-      "end": 2886.8,
-      "text": "co jednak nie znaczy, że był nieomylny."
+      "end": 2884.36,
+      "text": "co jednak nie"
+    },
+    {
+      "start": 2884.36,
+      "end": 2886.78,
+      "text": "znaczy, że był nieomylny."
     },
     {
       "start": 2887.44,
-      "end": 2891.18,
-      "text": "A właściwie był, do Twilight of the Gods włącznie."
+      "end": 2888.41,
+      "text": "A właściwie był, do"
     },
     {
-      "start": 2891.44,
-      "end": 2893.7,
-      "text": "A później już bywało różnie."
+      "start": 2888.41,
+      "end": 2889.67,
+      "text": "Twilight of the"
+    },
+    {
+      "start": 2889.67,
+      "end": 2891.18,
+      "text": "Gods włącznie."
+    },
+    {
+      "start": 2891.18,
+      "end": 2892.46,
+      "text": "A później już bywało"
+    },
+    {
+      "start": 2892.46,
+      "end": 2893.18,
+      "text": "różnie."
     },
     {
       "start": 2893.9,
-      "end": 2896.76,
-      "text": "Niektóre płyty wychodziły całkiem nieźle,"
+      "end": 2894.93,
+      "text": "Niektóre płyty wychodziły"
     },
     {
-      "start": 2896.76,
+      "start": 2894.93,
+      "end": 2896.18,
+      "text": "całkiem nieźle,"
+    },
+    {
+      "start": 2896.92,
+      "end": 2898.66,
+      "text": "inne trochę gorzej,"
+    },
+    {
+      "start": 2898.66,
+      "end": 2899.86,
+      "text": "ale na poziom tych"
+    },
+    {
+      "start": 2899.86,
+      "end": 2901.56,
+      "text": "pierwszych sześciu"
+    },
+    {
+      "start": 2901.56,
       "end": 2902.56,
-      "text": "inne trochę gorzej, ale na poziom tych pierwszych sześciu materiałów"
+      "text": "materiałów"
     },
     {
       "start": 2902.56,
-      "end": 2906.7,
-      "text": "nigdy nie był już w stanie się wznieść."
+      "end": 2904.36,
+      "text": "nigdy nie był już w"
     },
     {
-      "start": 2907.48,
+      "start": 2904.36,
+      "end": 2906.68,
+      "text": "stanie się wznieść."
+    },
+    {
+      "start": 2907.5,
+      "end": 2909.44,
+      "text": "Można zatem dyskutować,"
+    },
+    {
+      "start": 2909.44,
       "end": 2911.36,
-      "text": "Można zatem dyskutować, czy największym rozczarowaniem"
+      "text": "czy największym rozczarowaniem"
     },
     {
       "start": 2911.36,
+      "end": 2913.18,
+      "text": "w dyskografii Batory"
+    },
+    {
+      "start": 2913.18,
       "end": 2914.54,
-      "text": "w dyskografii Batory był oktagon."
+      "text": "był oktagon."
     },
     {
       "start": 2914.68,
-      "end": 2917.52,
-      "text": "To jest dość znana opinia."
+      "end": 2916.41,
+      "text": "To jest dość znana"
     },
     {
-      "start": 2918.22,
-      "end": 2919.88,
+      "start": 2916.41,
+      "end": 2917.54,
+      "text": "opinia."
+    },
+    {
+      "start": 2917.74,
+      "end": 2919.9,
       "text": "Czy może już Requiem?"
     },
     {
-      "start": 2920.58,
-      "end": 2925.28,
-      "text": "Ja stawiam na Requiem nie dlatego, że to jednoznacznie zła płyta,"
+      "start": 2920.56,
+      "end": 2921.44,
+      "text": "Ja stawiam na Requiem"
     },
     {
-      "start": 2925.28,
+      "start": 2921.44,
+      "end": 2922.86,
+      "text": "nie dlatego, że to"
+    },
+    {
+      "start": 2922.86,
+      "end": 2925.3,
+      "text": "jednoznacznie zła płyta,"
+    },
+    {
+      "start": 2925.82,
+      "end": 2927.05,
+      "text": "że zupełnie nie da"
+    },
+    {
+      "start": 2927.05,
       "end": 2928.86,
-      "text": "że zupełnie nie da się tego znieść,"
+      "text": "się tego znieść,"
     },
     {
-      "start": 2929.08,
+      "start": 2929.04,
+      "end": 2930.92,
+      "text": "ale właśnie dlatego,"
+    },
+    {
+      "start": 2930.92,
+      "end": 2931.95,
+      "text": "że na niej kończy"
+    },
+    {
+      "start": 2931.95,
       "end": 2934.58,
-      "text": "ale właśnie dlatego, że na niej kończy się era Batory kanonicznego,"
+      "text": "się era Batory kanonicznego,"
     },
     {
-      "start": 2934.72,
+      "start": 2934.7,
+      "end": 2936.15,
+      "text": "a zaczyna się epoka,"
+    },
+    {
+      "start": 2936.15,
       "end": 2937.8,
-      "text": "a zaczyna się epoka, można posłuchać."
+      "text": "można posłuchać."
     },
     {
       "start": 2939.1,
+      "end": 2939.67,
+      "text": "No i szkoda, wielka"
+    },
+    {
+      "start": 2939.67,
+      "end": 2941.37,
+      "text": "szkoda, że Quarton"
+    },
+    {
+      "start": 2941.37,
+      "end": 2942.66,
+      "text": "tak szybko od nas"
+    },
+    {
+      "start": 2942.66,
       "end": 2943.58,
-      "text": "No i szkoda, wielka szkoda, że Quarton tak szybko od nas odszedł."
+      "text": "odszedł."
     },
     {
       "start": 2943.68,
-      "end": 2946.98,
-      "text": "Jestem przekonany, że jak wielu jego rówieśników"
+      "end": 2944.96,
+      "text": "Jestem przekonany,"
     },
     {
-      "start": 2946.98,
+      "start": 2944.96,
+      "end": 2946.98,
+      "text": "że jak wielu jego rówieśników,"
+    },
+    {
+      "start": 2947.64,
+      "end": 2948.67,
+      "text": "złapałby w końcu"
+    },
+    {
+      "start": 2948.67,
       "end": 2950.06,
-      "text": "złapałby w końcu drugi oddech"
+      "text": "drugi oddech"
     },
     {
       "start": 2950.06,
-      "end": 2953.98,
-      "text": "i miałby dla nas jeszcze wiele wspaniałej muzyki."
+      "end": 2951.32,
+      "text": "i miałby dla nas"
     },
     {
-      "start": 2955.28,
-      "end": 2956.8,
-      "text": "Dziękuje za oglądanie."
+      "start": 2951.32,
+      "end": 2953.22,
+      "text": "jeszcze wiele wspaniałej"
     },
     {
-      "start": 3203.4,
-      "end": 3216.1,
-      "text": "Teraz Polska. A jak Polska, to oczywiście musi być kat. Do płyty Róże Miłości najchętniej przyjmują się na grobach zespół wybitny."
+      "start": 2953.22,
+      "end": 2954,
+      "text": "muzyki."
     },
     {
-      "start": 3216.1,
-      "end": 3224.12,
-      "text": "Jeden z najważniejszych w historii polskiego metalu. Być może najważniejszy. Dla mnie najważniejszy."
+      "start": 3206.49,
+      "end": 3207.21,
+      "text": "Jak Polska, to"
     },
     {
-      "start": 3224.48,
-      "end": 3234.58,
-      "text": "Niestety szydercze zwierciadło, płyta z 1997 roku, już szyderczo odbijało konflikt w zespole,"
+      "start": 3207.21,
+      "end": 3208.41,
+      "text": "oczywiście musi być"
     },
     {
-      "start": 3234.58,
-      "end": 3240.42,
-      "text": "którego dwoma biegunami byli przede wszystkim Roman Kostrzewski i Piotr Luczyk,"
+      "start": 3208.41,
+      "end": 3208.99,
+      "text": "kat."
     },
     {
-      "start": 3240.76,
-      "end": 3245.1,
-      "text": "którzy w różnych okresach przyciągali do siebie różnych innych członków grupy."
+      "start": 3209.61,
+      "end": 3211.29,
+      "text": "Do płyty Róże Miłości"
     },
     {
-      "start": 3245.54,
-      "end": 3253.18,
-      "text": "Ale nie, nie o szyderczym zwierciadle dzisiaj. Po krótkiej przerwie, podczas której panowie mieli szansę"
+      "start": 3211.29,
+      "end": 3212.78,
+      "text": "najchętniej przyjmują"
     },
     {
-      "start": 3253.18,
-      "end": 3259.72,
-      "text": "pójść po rozum do głowy, zespół powrócił na koncerty. Pamiątką z nich jest płyta DVD"
+      "start": 3212.78,
+      "end": 3214.57,
+      "text": "się na grobach zespół"
     },
     {
-      "start": 3259.72,
-      "end": 3267.5,
-      "text": "Somewhere in Poland, po czym zespół rozpadł się na dwie części, z których żadna nie zbliżyła się"
+      "start": 3214.57,
+      "end": 3216.09,
+      "text": "wybitny."
     },
     {
-      "start": 3267.5,
-      "end": 3275.26,
-      "text": "do tego, co osiągali jako całość. I tu już mamy bohaterkę tej opowieści."
+      "start": 3216.19,
+      "end": 3217.64,
+      "text": "Jeden z najważniejszych"
     },
     {
-      "start": 3275.46,
-      "end": 3282.78,
-      "text": "Pierwszą płytę kata bez Romana, czyli Mind Cannibals. To album przygotowywany"
+      "start": 3217.64,
+      "end": 3218.98,
+      "text": "w historii polskiego"
     },
     {
-      "start": 3282.78,
-      "end": 3289.32,
-      "text": "jeszcze przez kata jako całość. Zresztą z Kostrzewskim w składzie, bo odszedł od kata"
+      "start": 3218.98,
+      "end": 3219.73,
+      "text": "metalu."
     },
     {
-      "start": 3289.32,
-      "end": 3297.98,
-      "text": "tuż przed nagraniami, gdyby się jednak nie pożarli, gdyby ją nagrał,"
+      "start": 3220.29,
+      "end": 3221.55,
+      "text": "Być może najważniejszy."
     },
     {
-      "start": 3298.68,
-      "end": 3303.86,
-      "text": "śmiem twierdzić, że mielibyśmy materiał zaliczany dziś do katowskiego kanonu,"
+      "start": 3222.31,
+      "end": 3224.11,
+      "text": "Dla mnie najważniejszy."
     },
     {
-      "start": 3303.86,
-      "end": 3312.72,
-      "text": "bo to po prostu jest dobra, momentami bardzo dobra płyta. Niestety bez głosu Romana,"
+      "start": 3224.49,
+      "end": 3225.65,
+      "text": "Niestety szydercze"
     },
     {
-      "start": 3312.84,
-      "end": 3321.64,
-      "text": "bez jego tekstów i charyzmy to już jest po prostu inny zespół i nie dziwię się, że fani tego nie kupili,"
+      "start": 3225.65,
+      "end": 3227.71,
+      "text": "zwierciadło, płyta"
     },
     {
-      "start": 3321.72,
-      "end": 3328.26,
-      "text": "no bo sam jestem fanem, który nie kupił. Próbowałem, ale jakoś nie miałem ochoty tego słuchać."
+      "start": 3227.71,
+      "end": 3230.57,
+      "text": "z 1997 roku,"
     },
     {
-      "start": 3328.26,
-      "end": 3335.64,
-      "text": "Teraz na potrzebę tej audycji przypomniałem sobie, no i już bez emocji jestem w stanie przyznać,"
+      "start": 3230.57,
+      "end": 3232.64,
+      "text": "już szyderczo odbijało"
     },
     {
-      "start": 3335.72,
-      "end": 3342.02,
-      "text": "że to kat muzycznie wciąż zdrowy, zdecydowanie katowski i na pewno mamy do czynienia"
+      "start": 3232.64,
+      "end": 3234.57,
+      "text": "konflikt w zespole,"
     },
     {
-      "start": 3342.02,
-      "end": 3348.56,
-      "text": "z najlepszym z albumów wydanych po odejściu pierwszego wokalisty."
+      "start": 3234.75,
+      "end": 3236.06,
+      "text": "którego dwoma biegunami"
     },
     {
-      "start": 3348.8,
-      "end": 3355.32,
-      "text": "Wybrałem dla was utwór Religious Clash. Nie tylko dlatego, że taki jest fajny,"
+      "start": 3236.06,
+      "end": 3236.61,
+      "text": "byli przede"
     },
     {
-      "start": 3355.36,
-      "end": 3362.1,
-      "text": "chociaż fajny, ale również dlatego, że to co nastąpiło później było jak wojna religijna."
+      "start": 3236.61,
+      "end": 3238.93,
+      "text": "wszystkim Roman Kostrzewski"
     },
     {
-      "start": 3362.1,
-      "end": 3371.32,
-      "text": "Wyznawcy katowskiej religii z prorokiem Romanem starli się ze zwolennikami Starego Ładu,"
+      "start": 3238.93,
+      "end": 3240.41,
+      "text": "i Piotr Luczyk,"
     },
     {
-      "start": 3371.68,
-      "end": 3377.08,
-      "text": "pilnie strzeżonego przez najwyższego hierarchę papieża Piotra I."
+      "start": 3240.77,
+      "end": 3241.86,
+      "text": "którzy w różnych okresach"
     },
     {
-      "start": 3377.96,
-      "end": 3384.52,
-      "text": "Skomplikowane dzieje tej schizmy są wszystkim zainteresowanym, doskonale znane."
+      "start": 3241.86,
+      "end": 3242.71,
+      "text": "przyciągali do"
     },
     {
-      "start": 3384.74,
-      "end": 3393.06,
-      "text": "Piotr Luczyk zachował nazwę i tron, ale rząd dusz stracił i nie da się już tego odrobić."
+      "start": 3242.71,
+      "end": 3243.93,
+      "text": "siebie różnych"
     },
     {
-      "start": 3393.06,
-      "end": 3402,
-      "text": "Chyba w dodatku nie próbuje, a już na pewno nie próbuje tak jak fani uważaliby, że powinien,"
+      "start": 3243.93,
+      "end": 3244.5,
+      "text": "innych członków"
     },
     {
-      "start": 3402.14,
-      "end": 3408.64,
-      "text": "bo zdaje się, że nie do końca rozumie w czym problem, ale to już zupełnie inna historia."
+      "start": 3244.5,
+      "end": 3245.09,
+      "text": "grupy."
     },
     {
-      "start": 3413.86,
-      "end": 3420.42,
-      "text": "Structuren of existence, a rise to pure humor in sin, o endless lustful conflict."
+      "start": 3245.53,
+      "end": 3247.13,
+      "text": "Ale nie, nie o szyderczym"
     },
     {
-      "start": 3430.42,
-      "end": 3437.42,
-      "text": "Structuren of existence, a rise to pure humor in my life."
+      "start": 3247.13,
+      "end": 3249.11,
+      "text": "zwierciadle dzisiaj."
     },
     {
-      "start": 3437.42,
-      "end": 3440.16,
-      "text": "Structuren of existence, a rise to pure humor in my life."
+      "start": 3249.71,
+      "end": 3250.63,
+      "text": "Po krótkiej przerwie,"
     },
     {
-      "start": 3440.16,
-      "end": 3445.32,
-      "text": "Structuren of existence, a rise to pure humor in my life."
+      "start": 3250.63,
+      "end": 3252.19,
+      "text": "podczas której panowie"
     },
     {
-      "start": 3445.32,
-      "end": 3449.28,
-      "text": "Structuren of existence, a rise to pure humor in my life."
+      "start": 3252.19,
+      "end": 3253.72,
+      "text": "mieli szansę pójść"
     },
     {
-      "start": 3686.76,
-      "end": 3703.22,
-      "text": "Pozostaniemy jeszcze na chwilę w kraju. Był taki czas, kiedy zespół Crystagon postrzegany był jako jeden z głównych pretendentów do tronu ekstremalnego metalu, na którym zasiadał wówczas Vader."
+      "start": 3253.72,
+      "end": 3255.59,
+      "text": "po rozum do głowy,"
+    },
+    {
+      "start": 3255.83,
+      "end": 3256.93,
+      "text": "zespół powrócił na"
+    },
+    {
+      "start": 3256.93,
+      "end": 3257.89,
+      "text": "koncerty."
+    },
+    {
+      "start": 3257.89,
+      "end": 3258.74,
+      "text": "Pamiątką z nich"
+    },
+    {
+      "start": 3258.74,
+      "end": 3259.52,
+      "text": "jest płyta DVD"
+    },
+    {
+      "start": 3259.52,
+      "end": 3260.87,
+      "text": "Somewhere in Poland,"
+    },
+    {
+      "start": 3261.21,
+      "end": 3262.58,
+      "text": "po czym zespół rozpadł"
+    },
+    {
+      "start": 3262.58,
+      "end": 3264.29,
+      "text": "się na dwie części."
+    },
+    {
+      "start": 3264.75,
+      "end": 3266.36,
+      "text": "Z których żadna nie"
+    },
+    {
+      "start": 3266.36,
+      "end": 3267.91,
+      "text": "zbliżyła się do"
+    },
+    {
+      "start": 3267.91,
+      "end": 3269.56,
+      "text": "tego, co osiągali"
+    },
+    {
+      "start": 3269.56,
+      "end": 3271.27,
+      "text": "jako całość."
+    },
+    {
+      "start": 3271.61,
+      "end": 3273.46,
+      "text": "I tu już mamy bohaterkę"
+    },
+    {
+      "start": 3273.46,
+      "end": 3275.27,
+      "text": "tej opowieści."
+    },
+    {
+      "start": 3275.45,
+      "end": 3276.99,
+      "text": "Pierwszą płytę Kata"
+    },
+    {
+      "start": 3276.99,
+      "end": 3278.75,
+      "text": "bez Romana, czyli"
+    },
+    {
+      "start": 3278.75,
+      "end": 3280.69,
+      "text": "Mind Cannibals."
+    },
+    {
+      "start": 3281.47,
+      "end": 3282.39,
+      "text": "To album przygotowywany"
+    },
+    {
+      "start": 3282.39,
+      "end": 3283.65,
+      "text": "jeszcze przez Kata"
+    },
+    {
+      "start": 3283.65,
+      "end": 3284.75,
+      "text": "jako całość."
+    },
+    {
+      "start": 3284.75,
+      "end": 3286.35,
+      "text": "Zresztą z Kostrzewskim"
+    },
+    {
+      "start": 3286.35,
+      "end": 3288.26,
+      "text": "w składzie, bo odszedł"
+    },
+    {
+      "start": 3288.26,
+      "end": 3289.81,
+      "text": "od Kata tuż przed"
+    },
+    {
+      "start": 3289.81,
+      "end": 3291.19,
+      "text": "nagraniami,"
+    },
+    {
+      "start": 3292.11,
+      "end": 3293.73,
+      "text": "czy właściwie w trakcie."
+    },
+    {
+      "start": 3294.35,
+      "end": 3295.07,
+      "text": "Gdyby się jednak"
+    },
+    {
+      "start": 3295.07,
+      "end": 3296.83,
+      "text": "nie pożarli, gdyby"
+    },
+    {
+      "start": 3296.83,
+      "end": 3297.99,
+      "text": "ją nagrał,"
+    },
+    {
+      "start": 3298.67,
+      "end": 3299.71,
+      "text": "śmiem twierdzić, że"
+    },
+    {
+      "start": 3299.71,
+      "end": 3301.42,
+      "text": "mielibyśmy materiał"
+    },
+    {
+      "start": 3301.42,
+      "end": 3302.87,
+      "text": "zaliczany dziś do"
+    },
+    {
+      "start": 3302.87,
+      "end": 3304.77,
+      "text": "katowskiego kanonu,"
+    },
+    {
+      "start": 3304.77,
+      "end": 3306.09,
+      "text": "bo to po prostu"
+    },
+    {
+      "start": 3306.09,
+      "end": 3307.93,
+      "text": "jest dobra, a"
+    },
+    {
+      "start": 3307.93,
+      "end": 3309.65,
+      "text": "momentami bardzo dobra"
+    },
+    {
+      "start": 3309.65,
+      "end": 3310.61,
+      "text": "płyta."
+    },
+    {
+      "start": 3310.71,
+      "end": 3312.07,
+      "text": "Niestety bez głosu"
+    },
+    {
+      "start": 3312.07,
+      "end": 3313.39,
+      "text": "Romana, bez jego"
+    },
+    {
+      "start": 3313.39,
+      "end": 3314.99,
+      "text": "tekstów i charyzmy"
+    },
+    {
+      "start": 3314.99,
+      "end": 3316.15,
+      "text": "to już jest po"
+    },
+    {
+      "start": 3316.15,
+      "end": 3317.89,
+      "text": "prostu inny zespół"
+    },
+    {
+      "start": 3317.89,
+      "end": 3319.43,
+      "text": "i nie dziwię się,"
+    },
+    {
+      "start": 3319.43,
+      "end": 3321.05,
+      "text": "że fani tego nie"
+    },
+    {
+      "start": 3321.05,
+      "end": 3321.63,
+      "text": "kupili,"
+    },
+    {
+      "start": 3321.75,
+      "end": 3322.86,
+      "text": "no bo sam jestem"
+    },
+    {
+      "start": 3322.86,
+      "end": 3324.28,
+      "text": "fanem, który nie"
+    },
+    {
+      "start": 3324.28,
+      "end": 3325.09,
+      "text": "kupił."
+    },
+    {
+      "start": 3325.25,
+      "end": 3325.87,
+      "text": "Próbowałem, ale"
+    },
+    {
+      "start": 3325.87,
+      "end": 3326.49,
+      "text": "jakoś nie."
+    },
+    {
+      "start": 3326.49,
+      "end": 3327.78,
+      "text": "Miałem ochoty tego"
+    },
+    {
+      "start": 3327.78,
+      "end": 3328.63,
+      "text": "słuchać."
+    },
+    {
+      "start": 3328.79,
+      "end": 3330.15,
+      "text": "Teraz na potrzeby"
+    },
+    {
+      "start": 3330.15,
+      "end": 3331.93,
+      "text": "tej audycji przypomniałem"
+    },
+    {
+      "start": 3331.93,
+      "end": 3333.5,
+      "text": "sobie, no i już bez"
+    },
+    {
+      "start": 3333.5,
+      "end": 3334.75,
+      "text": "emocji jestem w"
+    },
+    {
+      "start": 3334.75,
+      "end": 3335.63,
+      "text": "stanie przyznać,"
+    },
+    {
+      "start": 3335.63,
+      "end": 3337.16,
+      "text": "że to kat muzycznie"
+    },
+    {
+      "start": 3337.16,
+      "end": 3339.38,
+      "text": "wciąż zdrowy, zdecydowanie"
+    },
+    {
+      "start": 3339.38,
+      "end": 3340.83,
+      "text": "katowski i na pewno"
+    },
+    {
+      "start": 3340.83,
+      "end": 3342.12,
+      "text": "mamy do czynienia z"
+    },
+    {
+      "start": 3342.12,
+      "end": 3344.41,
+      "text": "najlepszym z albumów"
+    },
+    {
+      "start": 3344.41,
+      "end": 3346.2,
+      "text": "wydanych po odejściu"
+    },
+    {
+      "start": 3346.2,
+      "end": 3348.57,
+      "text": "pierwszego wokalisty."
+    },
+    {
+      "start": 3348.99,
+      "end": 3350.52,
+      "text": "Wybrałem dla was utwór"
+    },
+    {
+      "start": 3350.52,
+      "end": 3352.31,
+      "text": "Religious Clash."
+    },
+    {
+      "start": 3352.99,
+      "end": 3354.35,
+      "text": "Nie tylko dlatego,"
+    },
+    {
+      "start": 3354.35,
+      "end": 3355.69,
+      "text": "że taki jest fajny,"
+    },
+    {
+      "start": 3355.69,
+      "end": 3357.1,
+      "text": "chociaż fajny, ale"
+    },
+    {
+      "start": 3357.1,
+      "end": 3358.51,
+      "text": "również dlatego, że"
+    },
+    {
+      "start": 3358.51,
+      "end": 3359.62,
+      "text": "to co nastąpiło"
+    },
+    {
+      "start": 3359.62,
+      "end": 3360.71,
+      "text": "później było jak"
+    },
+    {
+      "start": 3360.71,
+      "end": 3362.09,
+      "text": "wojna religijna."
+    },
+    {
+      "start": 3362.09,
+      "end": 3364.18,
+      "text": "Wyznawcy katowskiej"
+    },
+    {
+      "start": 3364.18,
+      "end": 3366.14,
+      "text": "religii z prorokiem"
+    },
+    {
+      "start": 3366.14,
+      "end": 3368.03,
+      "text": "Romanem starli się"
+    },
+    {
+      "start": 3368.03,
+      "end": 3370.44,
+      "text": "ze zwolennikami Starego"
+    },
+    {
+      "start": 3370.44,
+      "end": 3372.9,
+      "text": "Ładu, pilnie strzeżonego"
+    },
+    {
+      "start": 3372.9,
+      "end": 3374.44,
+      "text": "przez najwyższego"
+    },
+    {
+      "start": 3374.44,
+      "end": 3376.57,
+      "text": "hierarchę papieża Piotra"
+    },
+    {
+      "start": 3376.57,
+      "end": 3377.13,
+      "text": "I."
+    },
+    {
+      "start": 3377.97,
+      "end": 3379.61,
+      "text": "Skomplikowane dzieje"
+    },
+    {
+      "start": 3379.61,
+      "end": 3380.63,
+      "text": "tej schizmy są"
+    },
+    {
+      "start": 3380.63,
+      "end": 3382.89,
+      "text": "wszystkim zainteresowanym,"
+    },
+    {
+      "start": 3382.89,
+      "end": 3384.53,
+      "text": "doskonale znane."
+    },
+    {
+      "start": 3384.75,
+      "end": 3386.05,
+      "text": "Piotr Luczyk zachował"
+    },
+    {
+      "start": 3386.05,
+      "end": 3388,
+      "text": "nazwę i tron, ale rząd"
+    },
+    {
+      "start": 3388,
+      "end": 3389.99,
+      "text": "dusz stracił i nie"
+    },
+    {
+      "start": 3389.99,
+      "end": 3393.07,
+      "text": "da się już tego odrobić."
+    },
+    {
+      "start": 3393.07,
+      "end": 3394.83,
+      "text": "Chyba w dodatku nie"
+    },
+    {
+      "start": 3394.83,
+      "end": 3396.51,
+      "text": "próbuje, a już na"
+    },
+    {
+      "start": 3396.51,
+      "end": 3398.14,
+      "text": "pewno nie próbuje"
+    },
+    {
+      "start": 3398.14,
+      "end": 3400.46,
+      "text": "tak jak fani uważaliby,"
+    },
+    {
+      "start": 3400.46,
+      "end": 3402.68,
+      "text": "że powinien, bo zdaje"
+    },
+    {
+      "start": 3402.68,
+      "end": 3404.31,
+      "text": "się, że nie do końca"
+    },
+    {
+      "start": 3404.31,
+      "end": 3405.46,
+      "text": "rozumie w czym"
+    },
+    {
+      "start": 3405.46,
+      "end": 3406.97,
+      "text": "problem, ale to już"
+    },
+    {
+      "start": 3406.97,
+      "end": 3407.82,
+      "text": "zupełnie inna"
+    },
+    {
+      "start": 3407.82,
+      "end": 3408.63,
+      "text": "historia."
+    },
+    {
+      "start": 3687.8,
+      "end": 3688.59,
+      "text": "Pozostaniemy"
+    },
+    {
+      "start": 3688.59,
+      "end": 3689.66,
+      "text": "jeszcze na chwilę w"
+    },
+    {
+      "start": 3689.66,
+      "end": 3690.91,
+      "text": "kraju. Był taki"
+    },
+    {
+      "start": 3690.91,
+      "end": 3692.47,
+      "text": "czas, kiedy zespół"
+    },
+    {
+      "start": 3692.47,
+      "end": 3694.25,
+      "text": "Crystagon postrzegany"
+    },
+    {
+      "start": 3694.25,
+      "end": 3696.15,
+      "text": "był jako jeden z głównych"
+    },
+    {
+      "start": 3696.15,
+      "end": 3697.87,
+      "text": "pretendentów do tronu"
+    },
+    {
+      "start": 3697.87,
+      "end": 3699.94,
+      "text": "ekstremalnego metalu,"
+    },
+    {
+      "start": 3699.94,
+      "end": 3701.6,
+      "text": "na którym zasiadał"
+    },
+    {
+      "start": 3701.6,
+      "end": 3703.24,
+      "text": "wówczas Vader."
     },
     {
       "start": 3703.7,
-      "end": 3721.38,
-      "text": "Epoka Behemota miała dopiero nadejść, kiedy Crystagon serią trzech znakomitych albumów pokazał, że nie dość, że gra znakomity black metal, a wtedy to był gatunek na topie, to jeszcze robi to absolutnie po swojemu."
+      "end": 3705.39,
+      "text": "Epoka Behemota miała"
     },
     {
-      "start": 3721.92,
+      "start": 3705.39,
+      "end": 3706.84,
+      "text": "dopiero nadejść,"
+    },
+    {
+      "start": 3706.84,
+      "end": 3708.6,
+      "text": "kiedy Crystagon serią"
+    },
+    {
+      "start": 3708.6,
+      "end": 3710.45,
+      "text": "trzech znakomitych"
+    },
+    {
+      "start": 3710.45,
+      "end": 3711.81,
+      "text": "albumów pokazał, że"
+    },
+    {
+      "start": 3711.81,
+      "end": 3714.22,
+      "text": "nie dość, że gra znakomity"
+    },
+    {
+      "start": 3714.22,
+      "end": 3715.13,
+      "text": "black metal, a"
+    },
+    {
+      "start": 3715.13,
+      "end": 3716.78,
+      "text": "wtedy to był gatunek"
+    },
+    {
+      "start": 3716.78,
+      "end": 3717.7,
+      "text": "na topie, to"
+    },
+    {
+      "start": 3717.7,
+      "end": 3718.91,
+      "text": "jeszcze robi to"
+    },
+    {
+      "start": 3718.91,
+      "end": 3721.38,
+      "text": "absolutnie po swojemu."
+    },
+    {
+      "start": 3721.9,
+      "end": 3723.36,
+      "text": "Świat patrzył, wykazywał"
+    },
+    {
+      "start": 3723.36,
+      "end": 3724.98,
+      "text": "zainteresowanie,"
+    },
+    {
+      "start": 3724.98,
+      "end": 3725.9,
+      "text": "ale zespół nie"
+    },
+    {
+      "start": 3725.9,
       "end": 3728.1,
-      "text": "Świat patrzył, wykazywał zainteresowanie, ale zespół nie wykorzystał tej szansy."
+      "text": "wykorzystał tej szansy."
     },
     {
       "start": 3728.1,
-      "end": 3736.1,
-      "text": "Z różnych względów, o których tu dziś nie chcę mówić, ogólnie rzecz ujmując, sam talent muzyczny nie wystarczy."
+      "end": 3729.54,
+      "text": "Z różnych względów,"
     },
     {
-      "start": 3736.24,
+      "start": 3729.54,
+      "end": 3730.71,
+      "text": "o których tu dziś"
+    },
+    {
+      "start": 3730.71,
+      "end": 3732.34,
+      "text": "nie chcę mówić, ogólnie"
+    },
+    {
+      "start": 3732.34,
+      "end": 3733.7,
+      "text": "rzecz ujmując, sam"
+    },
+    {
+      "start": 3733.7,
+      "end": 3735.06,
+      "text": "talent muzyczny nie"
+    },
+    {
+      "start": 3735.06,
+      "end": 3736.1,
+      "text": "wystarczy."
+    },
+    {
+      "start": 3736.26,
+      "end": 3737.64,
+      "text": "Trzeba mieć jeszcze"
+    },
+    {
+      "start": 3737.64,
+      "end": 3738.72,
+      "text": "inne talenty i"
+    },
+    {
+      "start": 3738.72,
+      "end": 3740.26,
+      "text": "odpowiednich ludzi"
+    },
+    {
+      "start": 3740.26,
+      "end": 3741.71,
+      "text": "wokół i trzeba mieć"
+    },
+    {
+      "start": 3741.71,
+      "end": 3743.02,
+      "text": "szczęście i tak"
+    },
+    {
+      "start": 3743.02,
       "end": 3744.56,
-      "text": "Trzeba mieć jeszcze inne talenty i odpowiednich ludzi wokół i trzeba mieć szczęście i tak dalej i tak dalej."
+      "text": "dalej i tak dalej."
     },
     {
       "start": 3744.82,
+      "end": 3746.01,
+      "text": "Teraz zespół przeżywa"
+    },
+    {
+      "start": 3746.01,
+      "end": 3747.61,
+      "text": "drugą młodość, trzymam"
+    },
+    {
+      "start": 3747.61,
+      "end": 3748.79,
+      "text": "kciuki, niech im"
+    },
+    {
+      "start": 3748.79,
+      "end": 3749.84,
+      "text": "się wiedzie jak"
+    },
+    {
+      "start": 3749.84,
       "end": 3750.86,
-      "text": "Teraz zespół przeżywa drugą młodość, trzymam kciuki, niech im się wiedzie jak najlepiej."
+      "text": "najlepiej."
     },
     {
       "start": 3750.86,
-      "end": 3761.26,
-      "text": "Ale wtedy symbolem upadku Crystagony, jedną z przyczyn kryzysu, a może jego pierwszym skutkiem, najpewniej jedno i drugie, była czwarta."
+      "end": 3752.2,
+      "text": "Ale wtedy symbolem"
     },
     {
-      "start": 3761.62,
+      "start": 3752.2,
+      "end": 3753.65,
+      "text": "upadku Crystagony,"
+    },
+    {
+      "start": 3753.65,
+      "end": 3754.83,
+      "text": "jedną z przyczyn"
+    },
+    {
+      "start": 3754.83,
+      "end": 3755.94,
+      "text": "kryzysu, a może"
+    },
+    {
+      "start": 3755.94,
+      "end": 3757.83,
+      "text": "jego pierwszym skutkiem,"
+    },
+    {
+      "start": 3757.83,
+      "end": 3759.14,
+      "text": "najpewniej jedno i"
+    },
+    {
+      "start": 3759.14,
+      "end": 3761.26,
+      "text": "drugie, była czwarta."
+    },
+    {
+      "start": 3761.66,
+      "end": 3763.37,
+      "text": "Płyta grupy, czyli"
+    },
+    {
+      "start": 3763.37,
+      "end": 3765.48,
+      "text": "Dark Side, wydana w"
+    },
+    {
+      "start": 3765.48,
       "end": 3767.92,
-      "text": "Płyta grupy, czyli Dark Side, wydana w 1997 roku."
+      "text": "1997 roku."
     },
     {
       "start": 3768.74,
+      "end": 3769.18,
+      "text": "Płyta odważna,"
+    },
+    {
+      "start": 3769.18,
+      "end": 3771.08,
+      "text": "chwilami dziwna, wręcz"
+    },
+    {
+      "start": 3771.08,
       "end": 3772.84,
-      "text": "Płyta odważna, chwilami dziwna, wręcz eksperymentalna."
+      "text": "eksperymentalna."
     },
     {
       "start": 3772.84,
+      "end": 3774.06,
+      "text": "Kiedy słucham jej"
+    },
+    {
+      "start": 3774.06,
+      "end": 3775.61,
+      "text": "dzisiaj, uważam, że"
+    },
+    {
+      "start": 3775.61,
+      "end": 3776.84,
+      "text": "jest świetna, a w"
+    },
+    {
+      "start": 3776.84,
+      "end": 3778.3,
+      "text": "chwilach, w których"
+    },
+    {
+      "start": 3778.3,
+      "end": 3779.77,
+      "text": "jest mniej świetna,"
+    },
+    {
+      "start": 3779.77,
+      "end": 3781.08,
+      "text": "jest przynajmniej"
+    },
+    {
+      "start": 3781.08,
+      "end": 3782.93,
+      "text": "ciekawa i absolutnie"
+    },
+    {
+      "start": 3782.93,
+      "end": 3784.28,
+      "text": "nie zasłużyła na te"
+    },
+    {
+      "start": 3784.28,
+      "end": 3785.9,
+      "text": "cięgi, które wtedy"
+    },
+    {
+      "start": 3785.9,
       "end": 3786.84,
-      "text": "Kiedy słucham jej dzisiaj, uważam, że jest świetna, a w chwilach, w których jest mniej świetna, jest przynajmniej ciekawa i absolutnie nie zasłużyła na te cięgi, które wtedy zebrała."
+      "text": "zebrała."
     },
     {
       "start": 3787.84,
+      "end": 3789.64,
+      "text": "Ale cóż, nie trafiła"
+    },
+    {
+      "start": 3789.64,
+      "end": 3791.54,
+      "text": "w emocje i oczekiwania"
+    },
+    {
+      "start": 3791.54,
+      "end": 3793.59,
+      "text": "fanów, w moje ówczesne"
+    },
+    {
+      "start": 3793.59,
       "end": 3795.28,
-      "text": "Ale cóż, nie trafiła w emocje i oczekiwania fanów, w moje ówczesne zresztą również."
+      "text": "zresztą również."
     },
     {
       "start": 3795.94,
+      "end": 3796.81,
+      "text": "Najgorsze było to,"
+    },
+    {
+      "start": 3796.81,
+      "end": 3799.06,
+      "text": "że Cezar, lider Crystagon,"
+    },
+    {
+      "start": 3799.06,
+      "end": 3800.77,
+      "text": "nie potrafił tej płyty"
+    },
+    {
+      "start": 3800.77,
       "end": 3801.64,
-      "text": "Najgorsze było to, że Cezar, lider Crystagon, nie potrafił tej płyty bronić."
+      "text": "bronić."
     },
     {
       "start": 3801.76,
+      "end": 3802.88,
+      "text": "Nie przekonał nas,"
+    },
+    {
+      "start": 3802.88,
+      "end": 3804.41,
+      "text": "że powinniśmy to czcić,"
+    },
+    {
+      "start": 3804.41,
       "end": 3805.46,
-      "text": "Nie przekonał nas, że powinniśmy to czcić, bo to dzieło."
+      "text": "bo to dzieło."
     },
     {
       "start": 3806.28,
+      "end": 3806.7,
+      "text": "Tylko raczej się z"
+    },
+    {
+      "start": 3806.7,
+      "end": 3807.8,
+      "text": "niej trwało."
+    },
+    {
+      "start": 3808.54,
+      "end": 3809.52,
+      "text": "przyjął postawę"
+    },
+    {
+      "start": 3809.52,
       "end": 3810.74,
-      "text": "Tylko raczej się z niej tłumaczył, przyjął postawę defensywną."
+      "text": "defensywną."
     },
     {
-      "start": 3810.74,
+      "start": 3811.04,
+      "end": 3811.84,
+      "text": "Wyszło jak wyszło,"
+    },
+    {
+      "start": 3811.84,
+      "end": 3813.5,
+      "text": "ale powtarzam,"
+    },
+    {
+      "start": 3813.98,
+      "end": 3815.34,
+      "text": "Dark Side po latach"
+    },
+    {
+      "start": 3815.34,
+      "end": 3816.5,
+      "text": "należy się."
+    },
+    {
+      "start": 3816.78,
+      "end": 3817.76,
+      "text": "Rehabilitacja i"
+    },
+    {
+      "start": 3817.76,
       "end": 3818.94,
-      "text": "Wyszło jak wyszło, ale powtarzam, Dark Side po latach należy się, rehabilitacja i dobre słowo."
+      "text": "dobre słowo."
     },
     {
-      "start": 3818.94,
-      "end": 3821.24,
-      "text": "Muzyka"
+      "start": 4011.26,
+      "end": 4013.1,
+      "text": "W latach osiemdziesiątych"
     },
     {
-      "start": 4010.47,
-      "end": 4031.29,
-      "text": "W latach osiemdziesiątych kreator nazywany był europejskim Slayerem i oczywiście nie było większego komplementu. Nazywany był tak zasłużenie, bo wszystko co robił do Comma of Souls było znakomite, choć ja akurat jestem szalikowcem przede wszystkim Pleasure to Kill i już inaczej nie będzie."
+      "start": 4013.1,
+      "end": 4014.3,
+      "text": "kreator nazywany"
     },
     {
-      "start": 4031.29,
-      "end": 4049.11,
-      "text": "No ale w latach dziewięćdziesiątych i sama scena trashowa łapała zadyszkę podgryzana z ekstremalnej flanki przez Def i Black, a z drugiej kuszona pieniędzmi przez duże wytwórnie, którym marzyło się powtórzenie sukcesu Metalliki."
+      "start": 4014.3,
+      "end": 4016.46,
+      "text": "był europejskim Slayerem."
     },
     {
-      "start": 4049.11,
-      "end": 4066.03,
-      "text": "No ale żeby taki sukces odnieść trzeba by było złagodzić brzmienie i kreator złagodził, szukając swojej nowej tożsamości w połączeniu to z industrialnym metalem, to z rokiem gotyckim."
+      "start": 4017.26,
+      "end": 4017.71,
+      "text": "I oczywiście nie"
     },
     {
-      "start": 4066.03,
-      "end": 4076.49,
-      "text": "Najbardziej gotycka i najodleglejsza od trashowych korzeni była Endorama z 1999 roku."
+      "start": 4017.71,
+      "end": 4019.54,
+      "text": "było większego komplementu."
     },
     {
-      "start": 4077.17,
-      "end": 4087.31,
-      "text": "W utworze tytułowym, którego za chwilę wysłuchamy, podkreślają to gościnne partie wokalne wyśpiewane przez Tilo Wolfa z Lacrimozy,"
+      "start": 4020.34,
+      "end": 4020.94,
+      "text": "Nazywany był tak"
     },
     {
-      "start": 4087.31,
-      "end": 4099.39,
-      "text": "ale i sama muzyka brzmi jak podkręcone, umetalowione Sisters of Mercy, ten numer z Ofron Hazel i nie mówcie, że tego nie słyszycie."
+      "start": 4020.94,
+      "end": 4022.34,
+      "text": "zasłużenie, bo"
     },
     {
-      "start": 4100.09,
-      "end": 4103.37,
-      "text": "Czy narzekałem na Endoramę kiedy wyszła?"
+      "start": 4022.34,
+      "end": 4023.73,
+      "text": "wszystko co robił"
     },
     {
-      "start": 4103.37,
-      "end": 4118.71,
-      "text": "Jeszcze jak, ale mądry Polak po szkodzie dzisiaj marzyłbym o takim kreatorze szukającym nowych wyzwań w dodatku z kompozycjami grą Tomiego Wetterliego z Koronera."
+      "start": 4023.73,
+      "end": 4025.08,
+      "text": "do Comma of Souls"
     },
     {
-      "start": 4119.27,
-      "end": 4129.63,
-      "text": "Niestety wygląda na to, że Mile znalazł już złotą formułę, która cieszy największe grono fanów i na nowe otwarcie nie ma co liczyć."
+      "start": 4025.08,
+      "end": 4026.38,
+      "text": "było znakomite."
     },
     {
-      "start": 4133.37,
-      "end": 4152.51,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4026.78,
+      "end": 4027.23,
+      "text": "No choć ja akurat"
     },
     {
-      "start": 4152.51,
-      "end": 4156.15,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4027.23,
+      "end": 4028.24,
+      "text": "jestem szalikowcem"
     },
     {
-      "start": 4156.15,
-      "end": 4160.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4028.24,
+      "end": 4029.14,
+      "text": "przede wszystkim"
     },
     {
-      "start": 4160.07,
-      "end": 4161.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4029.14,
+      "end": 4030.07,
+      "text": "Pleasure to Kill i"
     },
     {
-      "start": 4161.07,
-      "end": 4163.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4030.07,
+      "end": 4030.76,
+      "text": "już inaczej nie"
     },
     {
-      "start": 4163.07,
-      "end": 4164.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4030.76,
+      "end": 4031.28,
+      "text": "będzie."
     },
     {
-      "start": 4164.07,
-      "end": 4165.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4031.82,
+      "end": 4033.97,
+      "text": "No ale w latach dziewięćdziesiątych"
     },
     {
-      "start": 4165.07,
-      "end": 4166.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4033.97,
+      "end": 4035.49,
+      "text": "i sama scena trashowa"
     },
     {
-      "start": 4166.07,
-      "end": 4167.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4035.49,
+      "end": 4037.74,
+      "text": "łapała zadyszkę podgryzana"
     },
     {
-      "start": 4167.07,
-      "end": 4168.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4037.74,
+      "end": 4040.02,
+      "text": "z ekstremalnej flanki"
     },
     {
-      "start": 4168.07,
-      "end": 4169.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4040.02,
+      "end": 4041.89,
+      "text": "przez Def i Black,"
     },
     {
-      "start": 4169.07,
-      "end": 4170.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4041.89,
+      "end": 4043.27,
+      "text": "a z drugiej kuszona"
     },
     {
-      "start": 4170.07,
-      "end": 4171.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4043.27,
+      "end": 4044.54,
+      "text": "pieniędzmi przez duże"
     },
     {
-      "start": 4171.07,
-      "end": 4172.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4044.54,
+      "end": 4045,
+      "text": "wytwórnie,"
     },
     {
-      "start": 4172.07,
-      "end": 4173.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4045.12,
+      "end": 4046.39,
+      "text": "którym marzyło się"
     },
     {
-      "start": 4173.07,
-      "end": 4174.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4046.39,
+      "end": 4047.94,
+      "text": "powtórzenie sukcesu"
     },
     {
-      "start": 4174.07,
-      "end": 4175.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4047.94,
+      "end": 4049.1,
+      "text": "Metalliki."
     },
     {
-      "start": 4175.07,
-      "end": 4176.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4049.4,
+      "end": 4050.36,
+      "text": "No ale żeby taki"
     },
     {
-      "start": 4176.07,
-      "end": 4177.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4050.36,
+      "end": 4051.61,
+      "text": "sukces odnieść"
     },
     {
-      "start": 4177.07,
-      "end": 4178.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4051.61,
+      "end": 4053.7,
+      "text": "trzeba by było złagodzić"
     },
     {
-      "start": 4178.07,
-      "end": 4180.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4053.7,
+      "end": 4054.98,
+      "text": "brzmienie."
     },
     {
-      "start": 4180.07,
-      "end": 4181.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4055.24,
+      "end": 4056.91,
+      "text": "I kreator złagodził,"
     },
     {
-      "start": 4181.07,
-      "end": 4182.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4056.91,
+      "end": 4058.86,
+      "text": "szukając swojej nowej"
     },
     {
-      "start": 4182.07,
-      "end": 4183.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4058.86,
+      "end": 4061.55,
+      "text": "tożsamości w połączeniu"
     },
     {
-      "start": 4183.07,
-      "end": 4184.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4061.55,
+      "end": 4062.85,
+      "text": "to z industrialnym"
     },
     {
-      "start": 4184.07,
-      "end": 4185.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4062.85,
+      "end": 4063.46,
+      "text": "metalem,"
     },
     {
-      "start": 4185.07,
-      "end": 4186.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4063.46,
+      "end": 4066.04,
+      "text": "to z rokiem gotyckim."
     },
     {
-      "start": 4186.07,
-      "end": 4187.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4066.04,
+      "end": 4067.94,
+      "text": "Najbardziej gotycka"
     },
     {
-      "start": 4187.07,
-      "end": 4188.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4067.94,
+      "end": 4069.7,
+      "text": "i najodleglejsza od"
     },
     {
-      "start": 4188.07,
-      "end": 4189.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4069.7,
+      "end": 4070.96,
+      "text": "trashowych korzeni"
     },
     {
-      "start": 4189.07,
-      "end": 4190.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4070.96,
+      "end": 4073.17,
+      "text": "była Endorama z"
     },
     {
-      "start": 4190.07,
-      "end": 4191.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4073.17,
+      "end": 4077.05,
+      "text": "1999 roku. W utworze"
     },
     {
-      "start": 4191.07,
-      "end": 4192.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4077.05,
+      "end": 4078.4,
+      "text": "tytułowym, którego"
     },
     {
-      "start": 4192.07,
-      "end": 4193.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4078.4,
+      "end": 4079.84,
+      "text": "za chwilę wysłuchamy,"
     },
     {
-      "start": 4193.07,
-      "end": 4195.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4080.34,
+      "end": 4081.95,
+      "text": "podkreślają to gościnne"
     },
     {
-      "start": 4195.07,
-      "end": 4196.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4081.95,
+      "end": 4084.28,
+      "text": "partie wokalne wyśpiewane"
     },
     {
-      "start": 4196.07,
-      "end": 4197.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4084.28,
+      "end": 4085.95,
+      "text": "przez Tilo Wolfa z"
     },
     {
-      "start": 4197.07,
-      "end": 4198.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4085.95,
+      "end": 4087.3,
+      "text": "Lakrimozy."
     },
     {
-      "start": 4198.07,
-      "end": 4199.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4087.3,
+      "end": 4088.89,
+      "text": "Ale i sama muzyka"
     },
     {
-      "start": 4199.07,
-      "end": 4200.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4088.89,
+      "end": 4091.12,
+      "text": "brzmi jak podkręcone,"
     },
     {
-      "start": 4200.07,
-      "end": 4201.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4091.12,
+      "end": 4092.38,
+      "text": "umetalowione"
     },
     {
-      "start": 4201.07,
-      "end": 4202.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4092.38,
+      "end": 4094.2,
+      "text": "Sisters of Mercy."
     },
     {
-      "start": 4202.07,
-      "end": 4203.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4095,
+      "end": 4095.52,
+      "text": "Ten numer z Ofrą"
     },
     {
-      "start": 4203.07,
-      "end": 4204.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4095.52,
+      "end": 4097.17,
+      "text": "Hazą i nie mówcie,"
     },
     {
-      "start": 4204.07,
-      "end": 4205.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4097.17,
+      "end": 4099.38,
+      "text": "że tego nie słyszycie."
     },
     {
-      "start": 4205.07,
-      "end": 4206.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4100.1,
+      "end": 4100.88,
+      "text": "Czy narzekałem na"
     },
     {
-      "start": 4206.07,
-      "end": 4207.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4100.88,
+      "end": 4103.36,
+      "text": "Endoramę, kiedy wyszła?"
     },
     {
-      "start": 4207.07,
-      "end": 4208.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4103.62,
+      "end": 4104.4,
+      "text": "Jeszcze jak."
     },
     {
-      "start": 4208.07,
-      "end": 4210.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4105.12,
+      "end": 4106.27,
+      "text": "Ale mądry Polak po"
     },
     {
-      "start": 4210.07,
-      "end": 4212.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4106.27,
+      "end": 4107.39,
+      "text": "szkodzie dzisiaj"
     },
     {
-      "start": 4212.07,
-      "end": 4214.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4107.39,
+      "end": 4109.42,
+      "text": "marzyłbym o takim kreatorze"
     },
     {
-      "start": 4214.07,
-      "end": 4216.07,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 4109.42,
+      "end": 4111.21,
+      "text": "szukającym nowych"
     },
     {
-      "start": 4216.07,
-      "end": 4219.39,
-      "text": "Muzyka"
+      "start": 4111.21,
+      "end": 4112.04,
+      "text": "wyzwań"
     },
     {
-      "start": 4240.16,
-      "end": 4243.42,
-      "text": "Don't look back, just let it all go"
+      "start": 4112.04,
+      "end": 4114.59,
+      "text": "w dodatku z kompozycjami"
     },
     {
-      "start": 4267.59,
-      "end": 4297.57,
-      "text": "Dziękuje za oglądanie."
+      "start": 4114.59,
+      "end": 4117.12,
+      "text": "grą Tomiego Wetterliego"
     },
     {
-      "start": 4297.59,
-      "end": 4302.99,
-      "text": "Dziękuje za oglądanie."
+      "start": 4117.12,
+      "end": 4118.72,
+      "text": "z Koronera."
     },
     {
-      "start": 4327.65,
-      "end": 4338.01,
-      "text": "Przynajmniej na Angel Rat nie narzekałem, bo już wtedy wiedziałem, że nie wolno mówić źle o Wojvod, bo oni zawsze mają rację."
+      "start": 4119.26,
+      "end": 4120.43,
+      "text": "Niestety wygląda na"
     },
     {
-      "start": 4338.53,
-      "end": 4341.59,
-      "text": "No chyba, że nagrywają płytę z orkiestrą symfoniczną."
+      "start": 4120.43,
+      "end": 4122.12,
+      "text": "to, że Mile znalazł"
     },
     {
-      "start": 4341.59,
-      "end": 4360.99,
-      "text": "Wojvod na Angel Rat, płycie z 1991 roku to jednak Wojvod zdecydowanie rockowy i właśnie to było problemem dla wielu dawnych fanów, że już zupełnie rockowy, a nie metalowy, a na pewno ani trochę nie był thrashowy."
+      "start": 4122.12,
+      "end": 4123.84,
+      "text": "już złotą formułę,"
     },
     {
-      "start": 4360.99,
-      "end": 4370.99,
-      "text": "Płytę wydała duża wytwórnia licząc na komercyjny sukces, co oczywiście nie nastąpiło, bo Wojvod nie przestał być zespołem dziwnym."
+      "start": 4123.84,
+      "end": 4125.75,
+      "text": "która cieszy największe"
     },
     {
-      "start": 4371.25,
-      "end": 4385.63,
-      "text": "Dalsze losy zespołu były burzliwe i pełne kolejnych zwrotów akcji, ale po Angel Rat bez wątpienia część wiernych fanów od nich odpłynęła przynajmniej na jakiś czas."
+      "start": 4125.75,
+      "end": 4127,
+      "text": "grono fanów i na"
     },
     {
-      "start": 4386.17,
-      "end": 4387.31,
-      "text": "Nie wiedzieli co czynią."
+      "start": 4127,
+      "end": 4128.4,
+      "text": "nowe otwarcie nie"
     },
     {
-      "start": 4622.02,
-      "end": 4635.18,
-      "text": "Debut Machine Head, czyli album Burn My Eyes z 1994 roku, był nokautującym ciosem i od razu dał zespołowi gwiazdorską pozycję."
+      "start": 4128.4,
+      "end": 4129.68,
+      "text": "ma co liczyć."
     },
     {
-      "start": 4635.68,
-      "end": 4641.14,
-      "text": "Odnaleźli się w tym fani Slayera, Pantery, Sepultury, wszystko się zgadzało."
+      "start": 4152.54,
+      "end": 4153.43,
+      "text": "Wszystkie prawa"
     },
     {
-      "start": 4641.14,
-      "end": 4655.04,
-      "text": "Druga płyta, The More Things Change, była potwierdzeniem ich pozycji, za to trzecia, czyli The Burning Red z 1999 roku, niemal wszystko zrujnowała."
+      "start": 4153.43,
+      "end": 4154.38,
+      "text": "zastrzeżone."
     },
     {
-      "start": 4655.16,
-      "end": 4671.94,
-      "text": "Nie dość, że płyta produkowana przez Rosa Robinsona, a więc specjalistę od New Metalu, pozostawała bardzo mocno pod wpływem tego właśnie gatunku, to jeszcze zespół zmienił wizerunek na zupełnie niemetalowy."
+      "start": 4328.86,
+      "end": 4329.77,
+      "text": "Przynajmniej na"
     },
     {
-      "start": 4672.54,
-      "end": 4681.52,
-      "text": "Rob tu i ówdzie rapował, a w dodatku, a to już był prawdziwy gwuźdź do trumny, nagrali cover The Police."
+      "start": 4329.77,
+      "end": 4331.32,
+      "text": "Angel Rat nie narzekałem,"
     },
     {
-      "start": 4682.22,
-      "end": 4689.2,
-      "text": "Piosenki napisanej przez Stinga, zespół, którego uważaliśmy za następcę Slayera."
+      "start": 4331.32,
+      "end": 4332.82,
+      "text": "bo już wtedy wiedziałem,"
     },
     {
-      "start": 4689.52,
-      "end": 4690.06,
-      "text": "Czujecie to?"
+      "start": 4332.82,
+      "end": 4334.56,
+      "text": "że nie wolno mówić"
     },
     {
-      "start": 4691.38,
-      "end": 4699.8,
-      "text": "Nie wiem, jakim cudem The Burning Red zostało Machine Head wybaczone, zresztą wiem, że nie wszyscy wybaczyli."
+      "start": 4334.56,
+      "end": 4336.21,
+      "text": "źle o Wojwot, bo"
     },
     {
-      "start": 4700.54,
-      "end": 4710.34,
-      "text": "Inna sprawa, że to nie jest zła płyta, właściwie jest to płyta dobra, no ale wiadomo jak to jest z tą muzyką, nie o samą muzykę w niej."
+      "start": 4336.21,
+      "end": 4338,
+      "text": "oni zawsze mają rację."
     },
     {
-      "start": 4710.34,
-      "end": 4717.88,
-      "text": "I przecież chodzi, ale też na przykład o konsekwencje i wynikającą z niej wiarygodność."
+      "start": 4338.52,
+      "end": 4339.41,
+      "text": "No chyba, że nagrywają"
     },
     {
-      "start": 4718.56,
-      "end": 4719.5,
+      "start": 4339.41,
+      "end": 4340.46,
+      "text": "płytę z orkiestrą"
+    },
+    {
+      "start": 4340.46,
+      "end": 4341.58,
+      "text": "symfoniczną."
+    },
+    {
+      "start": 4342.04,
+      "end": 4343.65,
+      "text": "Wojwot na Angel Rat,"
+    },
+    {
+      "start": 4343.65,
+      "end": 4346.75,
+      "text": "płycie z 1991 roku,"
+    },
+    {
+      "start": 4346.75,
+      "end": 4348.12,
+      "text": "to jednak Wojwot"
+    },
+    {
+      "start": 4348.12,
+      "end": 4350.44,
+      "text": "zdecydowanie rockowy."
+    },
+    {
+      "start": 4350.44,
+      "end": 4351.7,
+      "text": "I właśnie to było"
+    },
+    {
+      "start": 4351.7,
+      "end": 4353.23,
+      "text": "problemem dla wielu"
+    },
+    {
+      "start": 4353.23,
+      "end": 4354.67,
+      "text": "dawnych fanów, że"
+    },
+    {
+      "start": 4354.67,
+      "end": 4356.47,
+      "text": "już zupełnie rockowy,"
+    },
+    {
+      "start": 4356.47,
+      "end": 4357.82,
+      "text": "a nie metalowy, a"
+    },
+    {
+      "start": 4357.82,
+      "end": 4359.26,
+      "text": "na pewno ani trochę"
+    },
+    {
+      "start": 4359.26,
+      "end": 4361,
+      "text": "nie był thrashowy."
+    },
+    {
+      "start": 4361.32,
+      "end": 4363,
+      "text": "Płytę wydała duża wytwórnia"
+    },
+    {
+      "start": 4363,
+      "end": 4364.51,
+      "text": "licząc na komercyjny"
+    },
+    {
+      "start": 4364.51,
+      "end": 4365.34,
+      "text": "sukces, co"
+    },
+    {
+      "start": 4365.34,
+      "end": 4367.38,
+      "text": "oczywiście nie nastąpiło,"
+    },
+    {
+      "start": 4367.38,
+      "end": 4368.97,
+      "text": "bo Wojwot nie przestał"
+    },
+    {
+      "start": 4368.97,
+      "end": 4370.96,
+      "text": "być zespołem dziwnym."
+    },
+    {
+      "start": 4370.96,
+      "end": 4372.67,
+      "text": "Dalsze losy zespołu"
+    },
+    {
+      "start": 4372.67,
+      "end": 4374.5,
+      "text": "były burzliwe i pełne"
+    },
+    {
+      "start": 4374.5,
+      "end": 4376.13,
+      "text": "kolejnych zwrotów"
+    },
+    {
+      "start": 4376.13,
+      "end": 4377.85,
+      "text": "akcji, ale po Angel"
+    },
+    {
+      "start": 4377.85,
+      "end": 4379.38,
+      "text": "Rat bez wątpienia"
+    },
+    {
+      "start": 4379.38,
+      "end": 4381.21,
+      "text": "część wiernych fanów"
+    },
+    {
+      "start": 4381.21,
+      "end": 4382.75,
+      "text": "od nich odpłynęła"
+    },
+    {
+      "start": 4382.75,
+      "end": 4384.17,
+      "text": "przynajmniej na"
+    },
+    {
+      "start": 4384.17,
+      "end": 4385.62,
+      "text": "jakiś czas."
+    },
+    {
+      "start": 4386.16,
+      "end": 4386.62,
+      "text": "Nie wiedzieli co"
+    },
+    {
+      "start": 4386.62,
+      "end": 4387.3,
+      "text": "czynią."
+    },
+    {
+      "start": 4622.17,
+      "end": 4624.09,
+      "text": "Debiut Machine Head,"
+    },
+    {
+      "start": 4624.09,
+      "end": 4625.73,
+      "text": "czyli album Burn My"
+    },
+    {
+      "start": 4625.73,
+      "end": 4629.08,
+      "text": "Eyes z 1994 roku,"
+    },
+    {
+      "start": 4629.08,
+      "end": 4631.65,
+      "text": "był nokautującym ciosem"
+    },
+    {
+      "start": 4631.65,
+      "end": 4633.25,
+      "text": "i od razu dał zespołowi"
+    },
+    {
+      "start": 4633.25,
+      "end": 4635.19,
+      "text": "gwiazdorską pozycję."
+    },
+    {
+      "start": 4635.69,
+      "end": 4636.51,
+      "text": "Odnaleźli się w tym"
+    },
+    {
+      "start": 4636.51,
+      "end": 4638.55,
+      "text": "fani Slayera, Pantery,"
+    },
+    {
+      "start": 4638.55,
+      "end": 4639.88,
+      "text": "Sepultury, wszystko"
+    },
+    {
+      "start": 4639.88,
+      "end": 4641.15,
+      "text": "się zgadzało."
+    },
+    {
+      "start": 4641.15,
+      "end": 4642.62,
+      "text": "Druga płyta, The"
+    },
+    {
+      "start": 4642.62,
+      "end": 4644.34,
+      "text": "More Things Change,"
+    },
+    {
+      "start": 4644.34,
+      "end": 4646.08,
+      "text": "była potwierdzeniem"
+    },
+    {
+      "start": 4646.08,
+      "end": 4647.62,
+      "text": "ich pozycji, za to"
+    },
+    {
+      "start": 4647.62,
+      "end": 4649.27,
+      "text": "trzecia, czyli The"
+    },
+    {
+      "start": 4649.27,
+      "end": 4651.52,
+      "text": "Burning Red z 1999"
+    },
+    {
+      "start": 4651.52,
+      "end": 4652.68,
+      "text": "roku, niemal"
+    },
+    {
+      "start": 4652.68,
+      "end": 4655.03,
+      "text": "wszystko zrujnowała."
+    },
+    {
+      "start": 4655.03,
+      "end": 4656.51,
+      "text": "Nie dość, że płyta"
+    },
+    {
+      "start": 4656.51,
+      "end": 4657.92,
+      "text": "produkowana przez"
+    },
+    {
+      "start": 4657.92,
+      "end": 4659.41,
+      "text": "Rosa Robinsona, a"
+    },
+    {
+      "start": 4659.41,
+      "end": 4660.89,
+      "text": "więc specjalistę od"
+    },
+    {
+      "start": 4660.89,
+      "end": 4662.87,
+      "text": "New Metalu, pozostawała"
+    },
+    {
+      "start": 4662.87,
+      "end": 4664.98,
+      "text": "bardzo mocno pod wpływem"
+    },
+    {
+      "start": 4664.98,
+      "end": 4666.75,
+      "text": "tego właśnie gatunku,"
+    },
+    {
+      "start": 4666.75,
+      "end": 4668.23,
+      "text": "to jeszcze zespół"
+    },
+    {
+      "start": 4668.23,
+      "end": 4669.68,
+      "text": "zmienił wizerunek"
+    },
+    {
+      "start": 4669.68,
+      "end": 4671.93,
+      "text": "na zupełnie niemetalowy."
+    },
+    {
+      "start": 4671.93,
+      "end": 4674.13,
+      "text": "Rob tu i ówdzie rapował,"
+    },
+    {
+      "start": 4674.13,
+      "end": 4675.59,
+      "text": "a w dodatku, a to"
+    },
+    {
+      "start": 4675.59,
+      "end": 4677.18,
+      "text": "już był prawdziwy"
+    },
+    {
+      "start": 4677.18,
+      "end": 4678.86,
+      "text": "gwuźdź do trumny,"
+    },
+    {
+      "start": 4678.86,
+      "end": 4680.43,
+      "text": "nagrali cover The"
+    },
+    {
+      "start": 4680.43,
+      "end": 4682.12,
+      "text": "Police, piosenki"
+    },
+    {
+      "start": 4682.12,
+      "end": 4684.77,
+      "text": "napisanej przez Stinga."
+    },
+    {
+      "start": 4685.03,
+      "end": 4686.4,
+      "text": "Zespół, którego"
+    },
+    {
+      "start": 4686.4,
+      "end": 4687.89,
+      "text": "uważaliśmy za"
+    },
+    {
+      "start": 4687.89,
+      "end": 4689.72,
+      "text": "następcę Slayera. Czujecie"
+    },
+    {
+      "start": 4689.72,
+      "end": 4690.07,
+      "text": "to?"
+    },
+    {
+      "start": 4691.39,
+      "end": 4691.97,
+      "text": "Nie wiem, jakim cudem"
+    },
+    {
+      "start": 4691.97,
+      "end": 4693.27,
+      "text": "The Burning Red"
+    },
+    {
+      "start": 4693.27,
+      "end": 4694.67,
+      "text": "zostało Machine"
+    },
+    {
+      "start": 4694.67,
+      "end": 4696.95,
+      "text": "Head wybaczone. Zresztą"
+    },
+    {
+      "start": 4696.95,
+      "end": 4698,
+      "text": "wiem, że nie"
+    },
+    {
+      "start": 4698,
+      "end": 4699.79,
+      "text": "wszyscy wybaczyli."
+    },
+    {
+      "start": 4700.21,
+      "end": 4701.47,
+      "text": "Inna sprawa, że to"
+    },
+    {
+      "start": 4701.47,
+      "end": 4703.49,
+      "text": "nie jest zła płyta."
+    },
+    {
+      "start": 4703.49,
+      "end": 4705.32,
+      "text": "Właściwie jest to płyta"
+    },
+    {
+      "start": 4705.32,
+      "end": 4706.11,
+      "text": "dobra."
+    },
+    {
+      "start": 4706.45,
+      "end": 4707.41,
+      "text": "No ale wiadomo, jak"
+    },
+    {
+      "start": 4707.41,
+      "end": 4709.1,
+      "text": "to jest z tą muzyką."
+    },
+    {
+      "start": 4709.1,
+      "end": 4710.01,
+      "text": "Nie o samą muzykę w"
+    },
+    {
+      "start": 4710.01,
+      "end": 4710.91,
+      "text": "niej przecież"
+    },
+    {
+      "start": 4710.91,
+      "end": 4712.39,
+      "text": "chodzi, ale też na"
+    },
+    {
+      "start": 4712.39,
+      "end": 4714.41,
+      "text": "przykład o konsekwencje"
+    },
+    {
+      "start": 4714.41,
+      "end": 4714.79,
+      "text": "i wyniki."
+    },
+    {
+      "start": 4715.81,
+      "end": 4717.03,
+      "text": "z niej wiarygodność."
+    },
+    {
+      "start": 4718.55,
+      "end": 4719.75,
       "text": "Tu tego zabrakło."
     },
     {
-      "start": 4946.44,
-      "end": 4954.28,
-      "text": "Na płycie Transgression, szóstej w dorobku amerykańskiej grupy Fear Factory, też czegoś zabrakło."
+      "start": 4947.39,
+      "end": 4948.98,
+      "text": "Na płycie Transgression,"
     },
     {
-      "start": 4955.02,
-      "end": 4961.24,
-      "text": "Przede wszystkim tej nieludzkiej, zimnej, industrialnej atmosfery, która ich wyróżniała."
+      "start": 4948.98,
+      "end": 4950.06,
+      "text": "szóstej w dorobku"
     },
     {
-      "start": 4961.24,
-      "end": 4972.1,
-      "text": "Nie było też Dino Cezaresa, choć on odszedł już wcześniej, ale tu wyraźniej chyba słychać, że był niezbędnym elementem tej układanki."
+      "start": 4950.06,
+      "end": 4951.39,
+      "text": "amerykańskiej grupy"
     },
     {
-      "start": 4972.66,
-      "end": 4986.68,
-      "text": "Na Transgression z Fear Factory kompletnie uszła energia i zespół, który na trzech pierwszych płytach otarł się o wielkość, tu już jest tylko cieniem własnej niedawnej przecież potęgi."
+      "start": 4951.39,
+      "end": 4952.48,
+      "text": "Fear Factory, też"
     },
     {
-      "start": 4986.68,
-      "end": 4992.78,
-      "text": "Później bywało lepiej, ale do dawnej świetności póki co niestety nie wrócili."
+      "start": 4952.48,
+      "end": 4954.27,
+      "text": "czegoś zabrakło."
     },
     {
-      "start": 5314.88,
+      "start": 4955.03,
+      "end": 4955.56,
+      "text": "Przede wszystkim"
+    },
+    {
+      "start": 4955.56,
+      "end": 4957.41,
+      "text": "tej nieludzkiej, zimnej,"
+    },
+    {
+      "start": 4957.41,
+      "end": 4959.37,
+      "text": "industrialnej atmosfery,"
+    },
+    {
+      "start": 4959.37,
+      "end": 4961.25,
+      "text": "która ich wyróżniała."
+    },
+    {
+      "start": 4961.25,
+      "end": 4963.5,
+      "text": "Nie było też Dino Cezaresa,"
+    },
+    {
+      "start": 4963.5,
+      "end": 4964.98,
+      "text": "choć on odszedł już"
+    },
+    {
+      "start": 4964.98,
+      "end": 4966.63,
+      "text": "wcześniej, ale tu"
+    },
+    {
+      "start": 4966.63,
+      "end": 4968.89,
+      "text": "wyraźniej chyba słychać,"
+    },
+    {
+      "start": 4968.89,
+      "end": 4970.04,
+      "text": "że był niezbędnym"
+    },
+    {
+      "start": 4970.04,
+      "end": 4972.11,
+      "text": "elementem tej układanki."
+    },
+    {
+      "start": 4972.65,
+      "end": 4973.88,
+      "text": "Na Transgression z"
+    },
+    {
+      "start": 4973.88,
+      "end": 4975.56,
+      "text": "Fear Factory kompletnie"
+    },
+    {
+      "start": 4975.56,
+      "end": 4977.15,
+      "text": "uszła energia i zespół,"
+    },
+    {
+      "start": 4977.15,
+      "end": 4978.44,
+      "text": "który na trzech"
+    },
+    {
+      "start": 4978.44,
+      "end": 4979.38,
+      "text": "pierwszych płytach"
+    },
+    {
+      "start": 4979.38,
+      "end": 4981.1,
+      "text": "otarł się o wielkość,"
+    },
+    {
+      "start": 4981.1,
+      "end": 4983.3,
+      "text": "tu już jest tylko cieniem"
+    },
+    {
+      "start": 4983.3,
+      "end": 4984.87,
+      "text": "własnej niedawnej"
+    },
+    {
+      "start": 4984.87,
+      "end": 4986.67,
+      "text": "przecież potęgi."
+    },
+    {
+      "start": 4986.67,
+      "end": 4988.47,
+      "text": "Później bywało lepiej,"
+    },
+    {
+      "start": 4988.47,
+      "end": 4990.29,
+      "text": "ale do dawnej świetności"
+    },
+    {
+      "start": 4990.29,
+      "end": 4991.49,
+      "text": "póki co niestety"
+    },
+    {
+      "start": 4991.49,
+      "end": 4992.77,
+      "text": "nie wrócili."
+    },
+    {
+      "start": 5315.84,
+      "end": 5316.96,
+      "text": "Przed tygodniem"
+    },
+    {
+      "start": 5316.96,
+      "end": 5318.24,
+      "text": "mówiłem o tym, że z"
+    },
+    {
+      "start": 5318.24,
+      "end": 5319.68,
+      "text": "radością przyjąłbym"
+    },
+    {
+      "start": 5319.68,
+      "end": 5320.98,
+      "text": "wieść o powrocie na"
+    },
+    {
+      "start": 5320.98,
+      "end": 5322.34,
+      "text": "scenę niemieckiego"
+    },
+    {
+      "start": 5322.34,
+      "end": 5323.79,
+      "text": "zespołu Morgoth i"
+    },
+    {
+      "start": 5323.79,
+      "end": 5325.29,
+      "text": "puściłem piosenkę,"
+    },
+    {
+      "start": 5325.29,
+      "end": 5327.03,
+      "text": "oczywiście z ich epoki"
+    },
+    {
+      "start": 5327.03,
       "end": 5328.7,
-      "text": "Przed tygodniem mówiłem o tym, że z radością przyjąłbym wieść o powrocie na scenę niemieckiego zespołu Morgoth i puściłem piosenkę, oczywiście z ich epoki death metalowej."
+      "text": "death metalowej."
     },
     {
       "start": 5328.7,
+      "end": 5330.8,
+      "text": "Bo swoją trzecią płytą,"
+    },
+    {
+      "start": 5330.8,
+      "end": 5332.3,
+      "text": "Feel Sorry for the"
+    },
+    {
+      "start": 5332.3,
+      "end": 5334.4,
+      "text": "Fanatics z 96 roku,"
+    },
+    {
+      "start": 5334.4,
+      "end": 5336.09,
+      "text": "Morgoth skutecznie"
+    },
+    {
+      "start": 5336.09,
+      "end": 5337.6,
+      "text": "sabotował własną"
+    },
+    {
+      "start": 5337.6,
       "end": 5338.62,
-      "text": "Bo swoją trzecią płytą, Feel Sorry for the Fanatics z 96 roku, Morgoth skutecznie sabotował własną karierę."
+      "text": "karierę."
     },
     {
-      "start": 5339.3,
+      "start": 5339.32,
+      "end": 5340.09,
+      "text": "Metal alternatywny"
+    },
+    {
+      "start": 5340.09,
+      "end": 5341.51,
+      "text": "z posmakiem modnego"
+    },
+    {
+      "start": 5341.51,
+      "end": 5342.88,
+      "text": "wtedy industrialu"
+    },
+    {
+      "start": 5342.88,
+      "end": 5344.07,
+      "text": "zupełnie wyparł"
+    },
+    {
+      "start": 5344.07,
+      "end": 5345.68,
+      "text": "death metalowe mięcho"
+    },
+    {
+      "start": 5345.68,
+      "end": 5347.46,
+      "text": "i fani tego nie chcieli,"
+    },
+    {
+      "start": 5347.46,
+      "end": 5349.32,
+      "text": "nie rozumieli i zrozumieć"
+    },
+    {
+      "start": 5349.32,
       "end": 5350.68,
-      "text": "Metal alternatywny z posmakiem modnego wtedy industrialu zupełnie wyparł death metalowe mięcho i fani tego nie chcieli, nie rozumieli i zrozumieć nie chcieli."
+      "text": "nie chcieli."
     },
     {
-      "start": 5351.04,
-      "end": 5356.3,
-      "text": "Ale prawda jest taka, że to była świetna płyta i inaczej być nie chce."
+      "start": 5350.68,
+      "end": 5352,
+      "text": "Ale prawda jest"
     },
     {
-      "start": 5356.3,
-      "end": 5357.92,
-      "text": "Muzyka"
+      "start": 5352,
+      "end": 5354.13,
+      "text": "taka, że to była świetna"
     },
     {
-      "start": 5643.27,
-      "end": 5657.49,
-      "text": "Słuchacie ciężko na sercu audycji, w której puszczam piosenki z płyt powszechnie uważanych za najbardziej nieudane w karierach skądinąd wielkich zespołów."
+      "start": 5354.13,
+      "end": 5355.73,
+      "text": "płyta i inaczej być"
     },
     {
-      "start": 5657.49,
-      "end": 5682.37,
-      "text": "Nie może zatem zabraknąć bogów amerykańskiego death metalu, czyli grupy Morbid Angel. Kocham ich z Davem Vincentem, ale kocham też późniejsze płyty ze Stevem Tackerem z wyłączeniem Heretic, bo to akurat płyta nieudana przede wszystkim ze względu na produkcję niegodną gigantów gatunku."
+      "start": 5355.73,
+      "end": 5356.84,
+      "text": "nie chce."
     },
     {
-      "start": 5682.37,
-      "end": 5699.75,
-      "text": "Ale o dziwo, choć Heretic wielbiona przez fanów nie jest, dopiero kolejna płyta Morbid Angel, czyli Illud Divinum Insanus z 2011 roku uważana jest za prawdziwą porażkę."
+      "start": 5644.48,
+      "end": 5645.83,
+      "text": "Słuchacie ciężko na"
     },
     {
-      "start": 5699.75,
-      "end": 5718.51,
-      "text": "Uważam, że przede wszystkim dlatego, że rozminęła się z oczekiwaniami fanów, którzy ówczesny powrót do zespołu Davea Vincenta uznali za znak niechybny, że nastąpi też powrót do stylus przed jego odejścia."
+      "start": 5645.83,
+      "end": 5647,
+      "text": "sercu audycji, w"
     },
     {
-      "start": 5718.51,
-      "end": 5728.15,
-      "text": "Czyli, że Morbid Angel najpewniej wrócą ze swoją muzyką do czasów Domination, a może nawet Altars of Madness."
+      "start": 5647,
+      "end": 5648.46,
+      "text": "której puszczam piosenki"
     },
     {
-      "start": 5729.03,
-      "end": 5729.47,
-      "text": "Ale nie."
+      "start": 5648.46,
+      "end": 5649.9,
+      "text": "z płyt powszechnie"
     },
     {
-      "start": 5730.15,
-      "end": 5739.79,
-      "text": "Zespół zaproponował nowy styl łączący ekstremalny death metal z, znowu, industrialem, z elektroniką."
+      "start": 5649.9,
+      "end": 5651.12,
+      "text": "uważanych za"
     },
     {
-      "start": 5739.79,
-      "end": 5748.99,
-      "text": "W sposób w dodatku, to trzeba oczywiście poczytać za zaletę tego materiału, jaki inni tego nie robili."
+      "start": 5651.12,
+      "end": 5653.14,
+      "text": "najbardziej nieudane"
     },
     {
-      "start": 5749.63,
-      "end": 5755.11,
-      "text": "Zaletę, no ale zarazem nie byliśmy przyzwyczajeni do tego rodzaju rozwiązań."
+      "start": 5653.14,
+      "end": 5655.2,
+      "text": "w karierach skądinąd"
     },
     {
-      "start": 5755.31,
-      "end": 5761.11,
-      "text": "Bo i ja na ten materiał narzekałem, kiedy się ukazał, a dzisiaj bije się w piersi."
+      "start": 5655.2,
+      "end": 5657.48,
+      "text": "wielkich zespołów."
     },
     {
-      "start": 5761.79,
-      "end": 5777.01,
-      "text": "Nie jest to, co prawda, Morbid Angel taki, jakim go pokochałem, ale to bez wątpienia wciąż, czy może znowu, Morbid Angel wielki, wizjonerski, zabójczo sprawny."
+      "start": 5657.48,
+      "end": 5659.27,
+      "text": "Nie może zatem zabraknąć"
     },
     {
-      "start": 5777.01,
-      "end": 5789.47,
-      "text": "Ile bym dał, żeby ten zespół dzisiaj był w formie silut divinum insanus i obiecuję, że już ani trochę bym nie narzekał, gdyby grali taką muzykę."
+      "start": 5659.27,
+      "end": 5660.9,
+      "text": "bogów amerykańskiego"
     },
     {
-      "start": 6078.48,
+      "start": 5660.9,
+      "end": 5662.45,
+      "text": "death metalu, czyli"
+    },
+    {
+      "start": 5662.45,
+      "end": 5664.2,
+      "text": "grupy Morbid Angel."
+    },
+    {
+      "start": 5665.08,
+      "end": 5666.42,
+      "text": "Kocham ich z Davem"
+    },
+    {
+      "start": 5666.42,
+      "end": 5668.23,
+      "text": "Vincentem, ale kocham"
+    },
+    {
+      "start": 5668.23,
+      "end": 5670.01,
+      "text": "też późniejsze płyty"
+    },
+    {
+      "start": 5670.01,
+      "end": 5671.28,
+      "text": "ze Stevem Tackerem"
+    },
+    {
+      "start": 5671.28,
+      "end": 5673.26,
+      "text": "z wyłączeniem Heretic,"
+    },
+    {
+      "start": 5673.26,
+      "end": 5674.84,
+      "text": "bo to akurat płyta"
+    },
+    {
+      "start": 5674.84,
+      "end": 5676.34,
+      "text": "nieudana przede"
+    },
+    {
+      "start": 5676.34,
+      "end": 5678.25,
+      "text": "wszystkim ze względu"
+    },
+    {
+      "start": 5678.25,
+      "end": 5680.29,
+      "text": "na produkcję niegodną"
+    },
+    {
+      "start": 5680.29,
+      "end": 5682.38,
+      "text": "gigantów gatunku."
+    },
+    {
+      "start": 5682.38,
+      "end": 5684.03,
+      "text": "Ale o dziwo, choć"
+    },
+    {
+      "start": 5684.03,
+      "end": 5685.79,
+      "text": "Heretic wielbiona"
+    },
+    {
+      "start": 5685.79,
+      "end": 5687.31,
+      "text": "przez fanów nie"
+    },
+    {
+      "start": 5687.31,
+      "end": 5689.44,
+      "text": "jest, dopiero kolejna"
+    },
+    {
+      "start": 5689.44,
+      "end": 5691.71,
+      "text": "płyta Morbid Angel,"
+    },
+    {
+      "start": 5691.71,
+      "end": 5693.36,
+      "text": "czyli Illud Divinum"
+    },
+    {
+      "start": 5693.36,
+      "end": 5696.16,
+      "text": "Insanus z 2011 roku"
+    },
+    {
+      "start": 5696.16,
+      "end": 5697.41,
+      "text": "uważana jest za"
+    },
+    {
+      "start": 5697.41,
+      "end": 5699.76,
+      "text": "prawdziwą porażkę."
+    },
+    {
+      "start": 5699.76,
+      "end": 5701.4,
+      "text": "Uważam, że przede"
+    },
+    {
+      "start": 5701.4,
+      "end": 5703.16,
+      "text": "wszystkim dlatego,"
+    },
+    {
+      "start": 5703.16,
+      "end": 5704.69,
+      "text": "że rozminęła się z"
+    },
+    {
+      "start": 5704.69,
+      "end": 5706.66,
+      "text": "oczekiwaniami fanów,"
+    },
+    {
+      "start": 5706.66,
+      "end": 5708.66,
+      "text": "którzy ówczesny powrót"
+    },
+    {
+      "start": 5708.66,
+      "end": 5710.06,
+      "text": "do zespołu Davea"
+    },
+    {
+      "start": 5710.06,
+      "end": 5711.86,
+      "text": "Vincenta uznali za"
+    },
+    {
+      "start": 5711.86,
+      "end": 5713.54,
+      "text": "znak niechybny, że"
+    },
+    {
+      "start": 5713.54,
+      "end": 5715.25,
+      "text": "nastąpi też powrót"
+    },
+    {
+      "start": 5715.25,
+      "end": 5716.78,
+      "text": "do stylu sprzed"
+    },
+    {
+      "start": 5716.78,
+      "end": 5718.5,
+      "text": "jego odejścia."
+    },
+    {
+      "start": 5718.5,
+      "end": 5720,
+      "text": "Czyli, że Morbid"
+    },
+    {
+      "start": 5720,
+      "end": 5722,
+      "text": "Angel najpewniej wrócą"
+    },
+    {
+      "start": 5722,
+      "end": 5723.5,
+      "text": "ze swoją muzyką do"
+    },
+    {
+      "start": 5723.5,
+      "end": 5725.3,
+      "text": "czasów Domination,"
+    },
+    {
+      "start": 5725.3,
+      "end": 5726.9,
+      "text": "a może nawet Altars"
+    },
+    {
+      "start": 5726.9,
+      "end": 5728.16,
+      "text": "of Madness."
+    },
+    {
+      "start": 5729.02,
+      "end": 5731.78,
+      "text": "Ale nie, zespół zaproponował"
+    },
+    {
+      "start": 5731.78,
+      "end": 5733.37,
+      "text": "nowy styl łączący"
+    },
+    {
+      "start": 5733.37,
+      "end": 5735.07,
+      "text": "ekstremalny death"
+    },
+    {
+      "start": 5735.07,
+      "end": 5736.65,
+      "text": "metal z, znowu,"
+    },
+    {
+      "start": 5736.65,
+      "end": 5738.35,
+      "text": "industrialem z"
+    },
+    {
+      "start": 5738.35,
+      "end": 5739.8,
+      "text": "elektroniką."
+    },
+    {
+      "start": 5739.8,
+      "end": 5741.5,
+      "text": "W sposób w dodatku,"
+    },
+    {
+      "start": 5741.5,
+      "end": 5742.32,
+      "text": "to trzeba"
+    },
+    {
+      "start": 5742.32,
+      "end": 5744.13,
+      "text": "oczywiście poczytać"
+    },
+    {
+      "start": 5744.13,
+      "end": 5745.33,
+      "text": "za zaletę tego"
+    },
+    {
+      "start": 5745.33,
+      "end": 5747.24,
+      "text": "materiału, jak i inni"
+    },
+    {
+      "start": 5747.24,
+      "end": 5748.98,
+      "text": "tego nie robili."
+    },
+    {
+      "start": 5749.64,
+      "end": 5750.79,
+      "text": "Zaletę, no ale zarazem"
+    },
+    {
+      "start": 5750.79,
+      "end": 5752.97,
+      "text": "nie byliśmy przyzwyczajeni"
+    },
+    {
+      "start": 5752.97,
+      "end": 5755.15,
+      "text": "do tego rodzaju rozwiązań,"
+    },
+    {
+      "start": 5755.15,
+      "end": 5756.28,
+      "text": "bo i ja na ten"
+    },
+    {
+      "start": 5756.28,
+      "end": 5758.1,
+      "text": "materiał narzekałem,"
+    },
+    {
+      "start": 5758.22,
+      "end": 5759.41,
+      "text": "kiedy się ukazał, a"
+    },
+    {
+      "start": 5759.41,
+      "end": 5760.46,
+      "text": "dzisiaj bije się w"
+    },
+    {
+      "start": 5760.46,
+      "end": 5761.14,
+      "text": "piersi."
+    },
+    {
+      "start": 5761.8,
+      "end": 5762.57,
+      "text": "Nie jest to, co"
+    },
+    {
+      "start": 5762.57,
+      "end": 5764.48,
+      "text": "prawda Morbid Angel"
+    },
+    {
+      "start": 5764.48,
+      "end": 5766.06,
+      "text": "taki, jakim go"
+    },
+    {
+      "start": 5766.06,
+      "end": 5768.32,
+      "text": "pokochałem, ale to"
+    },
+    {
+      "start": 5768.32,
+      "end": 5770.12,
+      "text": "bez wątpienia wciąż,"
+    },
+    {
+      "start": 5770.12,
+      "end": 5770.26,
+      "text": "czy"
+    },
+    {
+      "start": 5770.26,
+      "end": 5772.34,
+      "text": "może znowu, morbid"
+    },
+    {
+      "start": 5772.34,
+      "end": 5773.98,
+      "text": "angel wielki,"
+    },
+    {
+      "start": 5774.26,
+      "end": 5776.42,
+      "text": "wizjonerski, zabójczo"
+    },
+    {
+      "start": 5776.42,
+      "end": 5778.38,
+      "text": "sprawny. Ile bym dał,"
+    },
+    {
+      "start": 5778.46,
+      "end": 5779.4,
+      "text": "żeby ten zespół"
+    },
+    {
+      "start": 5779.4,
+      "end": 5779.92,
+      "text": "dzisiaj był"
+    },
+    {
+      "start": 5779.92,
+      "end": 5782.18,
+      "text": "w formie silu divinum"
+    },
+    {
+      "start": 5782.18,
+      "end": 5783.7,
+      "text": "insanus i"
+    },
+    {
+      "start": 5783.7,
+      "end": 5785.08,
+      "text": "obiecuję, że już"
+    },
+    {
+      "start": 5785.08,
+      "end": 5786.58,
+      "text": "ani trochę bym"
+    },
+    {
+      "start": 5786.58,
+      "end": 5787.76,
+      "text": "nie narzekał, gdyby"
+    },
+    {
+      "start": 5787.76,
+      "end": 5788.1,
+      "text": "grali"
+    },
+    {
+      "start": 5788.1,
+      "end": 5789.96,
+      "text": "taką muzykę."
+    },
+    {
+      "start": 6078.36,
+      "end": 6079.71,
+      "text": "Paradise Lost w tym"
+    },
+    {
+      "start": 6079.71,
+      "end": 6080.89,
+      "text": "zestawieniu nie"
+    },
+    {
+      "start": 6080.89,
+      "end": 6082.4,
+      "text": "może zabraknąć, ale"
+    },
+    {
+      "start": 6082.4,
+      "end": 6084.36,
+      "text": "od razu ostrzegam,"
+    },
+    {
+      "start": 6084.36,
+      "end": 6085.7,
+      "text": "że w przypadku tego"
+    },
+    {
+      "start": 6085.7,
+      "end": 6086.76,
+      "text": "zespołu zawsze"
+    },
+    {
+      "start": 6086.76,
       "end": 6088.6,
-      "text": "Paradise Lost w tym zestawieniu nie może zabraknąć, ale od razu ostrzegam, że w przypadku tego zespołu zawsze jestem w mniejszości."
+      "text": "jestem w mniejszości."
     },
     {
       "start": 6088.6,
-      "end": 6099.64,
-      "text": "Bardzo lubię ciężkie i ponure początki tej brytyjskiej grupy. Podoba mi się zatem ich powrót do metalowego mroku na ostatnich płytach,"
+      "end": 6090.11,
+      "text": "Bardzo lubię ciężkie"
     },
     {
-      "start": 6099.86,
+      "start": 6090.11,
+      "end": 6091.36,
+      "text": "i ponure początki"
+    },
+    {
+      "start": 6091.36,
+      "end": 6092.56,
+      "text": "tej brytyjskiej"
+    },
+    {
+      "start": 6092.56,
+      "end": 6093.32,
+      "text": "grupy."
+    },
+    {
+      "start": 6093.32,
+      "end": 6094.81,
+      "text": "Podoba mi się zatem"
+    },
+    {
+      "start": 6094.81,
+      "end": 6096.8,
+      "text": "ich powrót do metalowego"
+    },
+    {
+      "start": 6096.8,
+      "end": 6098.26,
+      "text": "mroku na ostatnich"
+    },
+    {
+      "start": 6098.26,
+      "end": 6100.19,
+      "text": "płytach, ale najmniej"
+    },
+    {
+      "start": 6100.19,
+      "end": 6101.61,
+      "text": "interesują mnie te"
+    },
+    {
+      "start": 6101.61,
+      "end": 6103.3,
+      "text": "materiały, które są"
+    },
+    {
+      "start": 6103.3,
+      "end": 6104.61,
+      "text": "wielbione przez"
+    },
+    {
+      "start": 6104.61,
+      "end": 6106.08,
+      "text": "większość fanów,"
+    },
+    {
+      "start": 6106.08,
+      "end": 6107.67,
+      "text": "takie chociażby jak"
+    },
+    {
+      "start": 6107.67,
+      "end": 6109.15,
+      "text": "Icon czy Draconian"
+    },
+    {
+      "start": 6109.15,
       "end": 6110.22,
-      "text": "ale najmniej interesują mnie te materiały, które są wielbione przez większość fanów, takie chociażby jak Icon czy Draconian Times."
+      "text": "Times."
     },
     {
       "start": 6110.22,
-      "end": 6125.06,
-      "text": "A to oznacza, że bardziej od tychże płyt uważanych za wybitne, kultowe, bardziej lubię ten czas, w którym Paradise Lost zostali zainfekowani nie tylko gotyckim grzybem,"
+      "end": 6111.71,
+      "text": "A to oznacza, że"
     },
     {
-      "start": 6125.14,
-      "end": 6137.84,
-      "text": "ale i wirusem Depeche Mode. Nawet Host. Płytę z 99 roku, na której Paradise Lost jest bardziej dark wave'owy, czy wręcz synth popowy,"
+      "start": 6111.71,
+      "end": 6113.12,
+      "text": "bardziej od tychże"
     },
     {
-      "start": 6137.84,
-      "end": 6151.84,
-      "text": "no może synth rockowy niż metalowy. Nawet Host trochę lubię. Nie najbardziej ze wszystkich płyt tego zespołu, ale na tyle, że nie przyłączałem się do chóru"
+      "start": 6113.12,
+      "end": 6114.57,
+      "text": "płyt uważanych za"
     },
     {
-      "start": 6151.84,
-      "end": 6162.9,
-      "text": "lamentującego po premierze albumu. Inna sprawa, że narzekających rozumiem, bo problemem tej płyty nie jest to, że jest mało metalowa,"
+      "start": 6114.57,
+      "end": 6116.29,
+      "text": "wybitne, kultowe,"
     },
     {
-      "start": 6162.9,
+      "start": 6116.29,
+      "end": 6117.95,
+      "text": "bardziej lubię ten"
+    },
+    {
+      "start": 6117.95,
+      "end": 6119.37,
+      "text": "czas, w którym"
+    },
+    {
+      "start": 6119.37,
+      "end": 6121.09,
+      "text": "Paradise Lost zostali"
+    },
+    {
+      "start": 6121.09,
+      "end": 6122.43,
+      "text": "zainfekowani nie"
+    },
+    {
+      "start": 6122.43,
+      "end": 6124.53,
+      "text": "tylko gotyckim grzybem,"
+    },
+    {
+      "start": 6124.53,
+      "end": 6126.26,
+      "text": "ale i wirusem Depeche"
+    },
+    {
+      "start": 6126.26,
+      "end": 6127.46,
+      "text": "Mode."
+    },
+    {
+      "start": 6127.46,
+      "end": 6129.34,
+      "text": "Nawet Host, płytę z"
+    },
+    {
+      "start": 6129.34,
+      "end": 6131.55,
+      "text": "99 roku, na której"
+    },
+    {
+      "start": 6131.55,
+      "end": 6133.32,
+      "text": "Paradise Lost jest"
+    },
+    {
+      "start": 6133.32,
+      "end": 6135.75,
+      "text": "bardziej dark wave'owy,"
+    },
+    {
+      "start": 6135.75,
+      "end": 6138.06,
+      "text": "czy wręcz synth popowy,"
+    },
+    {
+      "start": 6138.06,
+      "end": 6140.03,
+      "text": "no może synth rockowy"
+    },
+    {
+      "start": 6140.03,
+      "end": 6142.02,
+      "text": "niż metalowy, nawet"
+    },
+    {
+      "start": 6142.02,
+      "end": 6144.24,
+      "text": "Host trochę lubię."
+    },
+    {
+      "start": 6144.24,
+      "end": 6145.73,
+      "text": "Nie najbardziej ze"
+    },
+    {
+      "start": 6145.73,
+      "end": 6146.99,
+      "text": "wszystkich płyt"
+    },
+    {
+      "start": 6146.99,
+      "end": 6148.44,
+      "text": "tego zespołu, ale"
+    },
+    {
+      "start": 6148.44,
+      "end": 6149.62,
+      "text": "na tyle, że nie"
+    },
+    {
+      "start": 6149.62,
+      "end": 6151.16,
+      "text": "przyłączałem się do"
+    },
+    {
+      "start": 6151.16,
+      "end": 6152.79,
+      "text": "chóru lamentującego"
+    },
+    {
+      "start": 6152.79,
+      "end": 6154.84,
+      "text": "po premierze albumu."
+    },
+    {
+      "start": 6155.66,
+      "end": 6157.28,
+      "text": "Inna sprawa, że narzekających"
+    },
+    {
+      "start": 6157.28,
+      "end": 6158.37,
+      "text": "rozumiem, bo"
+    },
+    {
+      "start": 6158.37,
+      "end": 6159.91,
+      "text": "problemem tej płyty"
+    },
+    {
+      "start": 6159.91,
+      "end": 6161.13,
+      "text": "nie jest to, że"
+    },
+    {
+      "start": 6161.13,
+      "end": 6162.92,
+      "text": "jest mało metalowa,"
+    },
+    {
+      "start": 6162.92,
+      "end": 6164.23,
+      "text": "ale że Paradise"
+    },
+    {
+      "start": 6164.23,
+      "end": 6166.53,
+      "text": "Lost przeżywali wówczas"
+    },
+    {
+      "start": 6166.53,
+      "end": 6168.14,
+      "text": "kryzys tożsamości i"
+    },
+    {
+      "start": 6168.14,
+      "end": 6169.71,
+      "text": "po prostu udawali"
+    },
+    {
+      "start": 6169.71,
+      "end": 6171.2,
+      "text": "Depeche Mode."
+    },
+    {
+      "start": 6171.36,
+      "end": 6173.2,
+      "text": "a może nawet myśleli,"
+    },
+    {
+      "start": 6173.28,
       "end": 6174.14,
-      "text": "ale że Paradise Lost przeżywali wówczas kryzys tożsamości i po prostu udawali Depeche Mode, a może nawet myśleli, że są Depeche Mode."
+      "text": "że są Depeche Mode."
     },
     {
-      "start": 6178.08,
-      "end": 6178.78,
-      "text": "DEPESCH MODE"
+      "start": 6174.14,
+      "end": 6175.04,
+      "text": "Dzień dobry."
     },
     {
-      "start": 6425.28,
-      "end": 6444.66,
-      "text": "Kiedy byłem młodym metalowcem, szybko nauczyłem się wielbić klasyków gatunku, od Black Sabbath po Iron Maiden. Tylko jakoś do Judas Priest przekonać się długo nie mogłem, a to dlatego, że zacząłem od płyty Turbo, bo właśnie mniej więcej wtedy się ukazała."
+      "start": 6426.3,
+      "end": 6427.5,
+      "text": "Kiedy byłem młodym"
     },
     {
-      "start": 6444.66,
-      "end": 6471.14,
-      "text": "I nie potrafiłem zrozumieć, dlaczego niby to mają być głównie rywalem Maiden. Przecież to takie komercyjne, ładne, amerykańskie brzmienie Turbo, co dzisiaj słyszę znacznie wyraźnie niż wtedy, było próbą pogoni za sprzedającymi góry płyt na amerykańskim rynku grupami Van Halen czy Kiss, tym Kiss oczywiście z lat 80-tych."
+      "start": 6427.5,
+      "end": 6428.86,
+      "text": "metalowcem, szybko"
     },
     {
-      "start": 6471.14,
+      "start": 6428.86,
+      "end": 6430.41,
+      "text": "nauczyłem się wielbić"
+    },
+    {
+      "start": 6430.41,
+      "end": 6432.23,
+      "text": "klasyków gatunku,"
+    },
+    {
+      "start": 6432.23,
+      "end": 6433.4,
+      "text": "od Black Sabbath po"
+    },
+    {
+      "start": 6433.4,
+      "end": 6434.5,
+      "text": "Iron Maiden, tylko"
+    },
+    {
+      "start": 6434.5,
+      "end": 6435.86,
+      "text": "jakoś do Judas"
+    },
+    {
+      "start": 6435.86,
+      "end": 6437.17,
+      "text": "Priest przekonać"
+    },
+    {
+      "start": 6437.17,
+      "end": 6438.9,
+      "text": "się długo nie mogłem,"
+    },
+    {
+      "start": 6438.9,
+      "end": 6439.96,
+      "text": "a to dlatego, że"
+    },
+    {
+      "start": 6439.96,
+      "end": 6441.09,
+      "text": "zacząłem od płyty"
+    },
+    {
+      "start": 6441.09,
+      "end": 6442.32,
+      "text": "Turbo, bo właśnie"
+    },
+    {
+      "start": 6442.32,
+      "end": 6443.56,
+      "text": "mniej więcej wtedy"
+    },
+    {
+      "start": 6443.56,
+      "end": 6444.68,
+      "text": "się ukazała."
+    },
+    {
+      "start": 6444.68,
+      "end": 6446.93,
+      "text": "I nie potrafiłem zrozumieć,"
+    },
+    {
+      "start": 6446.93,
+      "end": 6448.19,
+      "text": "dlaczego niby to"
+    },
+    {
+      "start": 6448.19,
+      "end": 6450.11,
+      "text": "mają być głównie rywalem"
+    },
+    {
+      "start": 6450.11,
+      "end": 6451.93,
+      "text": "Maiden. Przecież to"
+    },
+    {
+      "start": 6451.93,
+      "end": 6453.38,
+      "text": "takie komercyjne,"
+    },
+    {
+      "start": 6453.38,
+      "end": 6455.09,
+      "text": "ładne, amerykańskie"
+    },
+    {
+      "start": 6455.09,
+      "end": 6456.73,
+      "text": "brzmienie Turbo, co"
+    },
+    {
+      "start": 6456.73,
+      "end": 6458.63,
+      "text": "dzisiaj słyszę znacznie"
+    },
+    {
+      "start": 6458.63,
+      "end": 6460.62,
+      "text": "wyraźnie niż wtedy,"
+    },
+    {
+      "start": 6460.62,
+      "end": 6462.32,
+      "text": "było próbą pogoni"
+    },
+    {
+      "start": 6462.32,
+      "end": 6464.09,
+      "text": "za sprzedającymi góry"
+    },
+    {
+      "start": 6464.09,
+      "end": 6465.93,
+      "text": "płyt na amerykańskim"
+    },
+    {
+      "start": 6465.93,
+      "end": 6467.44,
+      "text": "rynku grupami Van"
+    },
+    {
+      "start": 6467.44,
+      "end": 6469.23,
+      "text": "Halen czy Kiss, tym"
+    },
+    {
+      "start": 6469.23,
+      "end": 6470.18,
+      "text": "Kiss oczywiście z"
+    },
+    {
+      "start": 6470.18,
+      "end": 6471.1,
+      "text": "lat 80.,"
+    },
+    {
+      "start": 6471.1,
+      "end": 6471.86,
+      "text": "Ale przede"
+    },
+    {
+      "start": 6471.86,
+      "end": 6473.31,
+      "text": "wszystkim wydaje mi"
+    },
+    {
+      "start": 6473.31,
+      "end": 6474.32,
+      "text": "się, że Judas"
+    },
+    {
+      "start": 6474.32,
+      "end": 6475.76,
+      "text": "Priest próbowali na"
+    },
+    {
+      "start": 6475.76,
+      "end": 6476.95,
+      "text": "tym albumie zrobić"
+    },
+    {
+      "start": 6476.95,
+      "end": 6478.4,
+      "text": "to, co wcześniej"
+    },
+    {
+      "start": 6478.4,
+      "end": 6480.18,
+      "text": "udało się Deflepart,"
+    },
+    {
+      "start": 6480.18,
+      "end": 6481.71,
+      "text": "czyli zrzucić skórę"
+    },
+    {
+      "start": 6481.71,
+      "end": 6483.42,
+      "text": "brytyjskiego zespołu"
+    },
+    {
+      "start": 6483.42,
+      "end": 6484.86,
+      "text": "heavy metalowego i"
+    },
+    {
+      "start": 6484.86,
+      "end": 6487.32,
+      "text": "zostać gwiazdą amerykańskiego"
+    },
+    {
+      "start": 6487.32,
       "end": 6488.46,
-      "text": "Ale przede wszystkim wydaje mi się, że Judas Priest próbowali na tym albumie zrobić to, co wcześniej udało się Deflepart, czyli zrzucić skórę brytyjskiego zespołu heavy metalowego i zostać gwiazdą amerykańskiego hard rocka."
+      "text": "hard rocka."
     },
     {
       "start": 6488.46,
-      "end": 6501.06,
-      "text": "Nie wyszło. Legion fanów zamruczał gniewnie, więc Judasi grzecznie wrócili do swojego stylu, ale jak w przypadku wielu innych prezentowanych dzisiaj płyt, nie mam wątpliwości."
+      "end": 6490.17,
+      "text": "Nie wyszło. Legion"
+    },
+    {
+      "start": 6490.17,
+      "end": 6491.85,
+      "text": "fanów zamruczał gniewnie,"
+    },
+    {
+      "start": 6491.85,
+      "end": 6493.18,
+      "text": "więc Judasi grzecznie"
+    },
+    {
+      "start": 6493.18,
+      "end": 6494.35,
+      "text": "wrócili do swojego"
+    },
+    {
+      "start": 6494.35,
+      "end": 6495.48,
+      "text": "stylu, ale jak w"
+    },
+    {
+      "start": 6495.48,
+      "end": 6496.63,
+      "text": "przypadku wielu"
+    },
+    {
+      "start": 6496.63,
+      "end": 6498.26,
+      "text": "innych prezentowanych"
+    },
+    {
+      "start": 6498.26,
+      "end": 6499.55,
+      "text": "dzisiaj płyt, nie"
+    },
+    {
+      "start": 6499.55,
+      "end": 6501.04,
+      "text": "mam wątpliwości."
     },
     {
       "start": 6501.24,
+      "end": 6502.73,
+      "text": "Turbo to świetny"
+    },
+    {
+      "start": 6502.73,
+      "end": 6504.86,
+      "text": "materiał. Owszem,"
+    },
+    {
+      "start": 6504.86,
+      "end": 6506.39,
+      "text": "inny od Judasowego"
+    },
+    {
+      "start": 6506.39,
+      "end": 6508.68,
+      "text": "kanonu. Jasne, wyraźny"
+    },
+    {
+      "start": 6508.68,
+      "end": 6510.32,
+      "text": "skok na kasę, ale w"
+    },
+    {
+      "start": 6510.32,
       "end": 6512.42,
-      "text": "Turbo to świetny materiał. Owszem, inny od Judasowego kanonu. Jasne, wyraźny skok na kasę, ale w jakim pięknym stylu."
+      "text": "jakim pięknym stylu."
     },
     {
-      "start": 6513.94,
-      "end": 6514.68,
-      "text": "Muzyka"
+      "start": 6512.42,
+      "end": 6513.12,
+      "text": "No."
     },
     {
-      "start": 6778.28,
-      "end": 6783.06,
-      "text": "Na koniec oczywiście Iron Maiden. Nie mogło ich zabraknąć."
+      "start": 6778.43,
+      "end": 6779.1,
+      "text": "Na koniec"
     },
     {
-      "start": 6783.8,
-      "end": 6791.32,
-      "text": "Podobnie jak z Metallicą, można by wskazać w ich karierze niejedną płytę, która dla fanów była rozczarowaniem."
+      "start": 6779.1,
+      "end": 6780.94,
+      "text": "oczywiście Iron Maiden."
     },
     {
-      "start": 6791.72,
-      "end": 6795.04,
-      "text": "Wszystko zależy od tego, których fanów zapytacie."
+      "start": 6780.94,
+      "end": 6783.07,
+      "text": "Nie mogło ich zabraknąć."
     },
     {
-      "start": 6795.42,
-      "end": 6799.22,
-      "text": "Są przecież tacy, co uznają Maiden tylko z polem Diano."
+      "start": 6783.81,
+      "end": 6784.24,
+      "text": "Podobnie jak z"
     },
     {
-      "start": 6799.46,
-      "end": 6806.56,
-      "text": "Z nami takich, co twierdzą, że Maiden skończył się na Seventh Son of a Seventh Son, bo pojawiły się klawisze,"
+      "start": 6784.24,
+      "end": 6785.59,
+      "text": "Metallica, można by"
     },
     {
-      "start": 6806.76,
-      "end": 6808.92,
-      "text": "a ja na przykład tę płytę uwielbiam."
+      "start": 6785.59,
+      "end": 6787.27,
+      "text": "wskazać w ich karierze"
     },
     {
-      "start": 6809.66,
-      "end": 6815.12,
-      "text": "Za to słuchanie wszystkiego, co wydali pod Dance of Death, to dla mnie droga przez mękę."
+      "start": 6787.27,
+      "end": 6788.34,
+      "text": "niejedną płytę,"
     },
     {
-      "start": 6815.12,
-      "end": 6826.86,
-      "text": "Mam jednak wrażenie, że większość fanów zespołu pogodzi w sensie negatywnym płyta Virtual Eleven z 1998 roku."
+      "start": 6788.34,
+      "end": 6789.47,
+      "text": "która dla fanów"
     },
     {
-      "start": 6827.46,
-      "end": 6835.28,
-      "text": "O ile na pierwszej z Blazem, czyli The X Factor, zależało im jeszcze na tym, żeby coś udowodnić i sobie, i Bruce'owi Dickinsonowi,"
+      "start": 6789.47,
+      "end": 6791.33,
+      "text": "była rozczarowaniem."
     },
     {
-      "start": 6835.38,
-      "end": 6844.26,
-      "text": "czyli wielkiemu nieobecnemu i oczywiście fanom, o tyle Virtual Eleven brzmi jak wypełnienie zobowiązania wobec wytwórni,"
+      "start": 6791.73,
+      "end": 6792.61,
+      "text": "Wszystko zależy od"
     },
     {
-      "start": 6844.32,
-      "end": 6850.44,
-      "text": "jak materiał, który powstał, choć nie było na niego pomysłu i wiary we własne siły."
+      "start": 6792.61,
+      "end": 6794.05,
+      "text": "tego, których fanów"
     },
     {
-      "start": 6851.08,
-      "end": 6854.16,
-      "text": "Ja natomiast wierzę, że spotkamy się za tydzień."
+      "start": 6794.05,
+      "end": 6795.03,
+      "text": "zapytacie."
     },
     {
-      "start": 6854.3,
-      "end": 6860.8,
-      "text": "Tym bardziej, że dla odmiany zamiast wspominek szykuje dla Was sporo znakomitych nowości."
+      "start": 6795.41,
+      "end": 6796.37,
+      "text": "Są przecież tacy,"
     },
     {
-      "start": 6861.44,
-      "end": 6862.04,
+      "start": 6796.37,
+      "end": 6797.56,
+      "text": "co uznają Maiden"
+    },
+    {
+      "start": 6797.56,
+      "end": 6799.23,
+      "text": "tylko z polem Diano."
+    },
+    {
+      "start": 6799.47,
+      "end": 6800.31,
+      "text": "Z nami takich, co"
+    },
+    {
+      "start": 6800.31,
+      "end": 6801.59,
+      "text": "twierdzą, że Maiden"
+    },
+    {
+      "start": 6801.59,
+      "end": 6803.02,
+      "text": "skończył się na Seventh"
+    },
+    {
+      "start": 6803.02,
+      "end": 6803.95,
+      "text": "Son of a Seventh"
+    },
+    {
+      "start": 6803.95,
+      "end": 6804.47,
+      "text": "Son,"
+    },
+    {
+      "start": 6804.57,
+      "end": 6806.31,
+      "text": "bo pojawiły się klawisze,"
+    },
+    {
+      "start": 6806.31,
+      "end": 6807.46,
+      "text": "a ja na przykład tę"
+    },
+    {
+      "start": 6807.46,
+      "end": 6808.93,
+      "text": "płytę uwielbiam."
+    },
+    {
+      "start": 6809.65,
+      "end": 6810.08,
+      "text": "Za to słuchanie"
+    },
+    {
+      "start": 6810.08,
+      "end": 6811.53,
+      "text": "wszystkiego, co wydali"
+    },
+    {
+      "start": 6811.53,
+      "end": 6813.01,
+      "text": "pod Dance of Death,"
+    },
+    {
+      "start": 6813.01,
+      "end": 6814.08,
+      "text": "to dla mnie droga"
+    },
+    {
+      "start": 6814.08,
+      "end": 6815.13,
+      "text": "przez mękę."
+    },
+    {
+      "start": 6815.63,
+      "end": 6817.03,
+      "text": "Mam jednak wrażenie,"
+    },
+    {
+      "start": 6817.03,
+      "end": 6818.63,
+      "text": "że większość fanów"
+    },
+    {
+      "start": 6818.63,
+      "end": 6820.34,
+      "text": "zespołu pogodzi, w"
+    },
+    {
+      "start": 6820.34,
+      "end": 6821.97,
+      "text": "sensie negatywnym,"
+    },
+    {
+      "start": 6821.97,
+      "end": 6823.55,
+      "text": "płyta Virtual"
+    },
+    {
+      "start": 6823.55,
+      "end": 6826.87,
+      "text": "Eleven z 1998 roku."
+    },
+    {
+      "start": 6827.45,
+      "end": 6828.32,
+      "text": "O ile na pierwszej"
+    },
+    {
+      "start": 6828.32,
+      "end": 6829.85,
+      "text": "z Blazem, czyli DX"
+    },
+    {
+      "start": 6829.85,
+      "end": 6831.36,
+      "text": "Factor, zależało im"
+    },
+    {
+      "start": 6831.36,
+      "end": 6832.35,
+      "text": "jeszcze na tym,"
+    },
+    {
+      "start": 6832.45,
+      "end": 6833.34,
+      "text": "żeby coś udowodnić"
+    },
+    {
+      "start": 6833.34,
+      "end": 6834.35,
+      "text": "i sobie, i Bruce'owi"
+    },
+    {
+      "start": 6834.35,
+      "end": 6835.8,
+      "text": "Dickinsonowi, czyli"
+    },
+    {
+      "start": 6835.8,
+      "end": 6836.77,
+      "text": "wielkiemu nieobecnemu"
+    },
+    {
+      "start": 6836.77,
+      "end": 6837.93,
+      "text": "i oczywiście fanom,"
+    },
+    {
+      "start": 6837.93,
+      "end": 6839.2,
+      "text": "o tyle Virtual"
+    },
+    {
+      "start": 6839.2,
+      "end": 6842.53,
+      "text": "Eleven brzmi jak wypełnienie"
+    },
+    {
+      "start": 6842.53,
+      "end": 6843.75,
+      "text": "zobowiązania wobec"
+    },
+    {
+      "start": 6843.75,
+      "end": 6844.27,
+      "text": "wytwórni,"
+    },
+    {
+      "start": 6844.33,
+      "end": 6845.73,
+      "text": "jak materiał, który"
+    },
+    {
+      "start": 6845.73,
+      "end": 6846.99,
+      "text": "powstał, choć nie"
+    },
+    {
+      "start": 6846.99,
+      "end": 6848.47,
+      "text": "było na niego pomysłu"
+    },
+    {
+      "start": 6848.47,
+      "end": 6849.78,
+      "text": "i wiary we własne"
+    },
+    {
+      "start": 6849.78,
+      "end": 6850.43,
+      "text": "siły."
+    },
+    {
+      "start": 6850.43,
+      "end": 6852.01,
+      "text": "Ja natomiast wierzę,"
+    },
+    {
+      "start": 6852.01,
+      "end": 6853.27,
+      "text": "że spotkamy się za"
+    },
+    {
+      "start": 6853.27,
+      "end": 6854.17,
+      "text": "tydzień."
+    },
+    {
+      "start": 6854.29,
+      "end": 6855.23,
+      "text": "Tym bardziej, że"
+    },
+    {
+      "start": 6855.23,
+      "end": 6856.58,
+      "text": "dla odmiany zamiast"
+    },
+    {
+      "start": 6856.58,
+      "end": 6857.9,
+      "text": "wspominek szykuje"
+    },
+    {
+      "start": 6857.9,
+      "end": 6859.81,
+      "text": "dla Was sporo znakomitych"
+    },
+    {
+      "start": 6859.81,
+      "end": 6860.79,
+      "text": "nowości."
+    },
+    {
+      "start": 6861.45,
+      "end": 6862.01,
       "text": "Dobranoc."
-    },
-    {
-      "start": 6864.04,
-      "end": 6865.08,
-      "text": "Muzyka"
-    },
-    {
-      "start": 6968.58,
-      "end": 6971.48,
-      "text": "There's no place to hide"
-    },
-    {
-      "start": 6971.48,
-      "end": 6975.64,
-      "text": "When two worlds collide"
     }
   ],
   "stats": {
-    "windowCount": 23,
-    "transcribedAudioSec": 2611.5,
-    "segmentCount": 450,
-    "characterCount": 29605
-  },
-  "sourceId": "2026-08-19-wielkie-oczekiwania-gorzkie-rozczarowania"
+    "windowCount": 28,
+    "transcribedAudioSec": 2201.86,
+    "segmentCount": 1301,
+    "characterCount": 23224
+  }
 }
