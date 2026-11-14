@@ -1,13 +1,46 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2116.42,
+      "label": "Pierwszy dzień festiwalu: Karkas, Terrorizer, Cave In",
+      "start": 2104.37
+    },
+    {
+      "time": 2668.22,
+      "label": "Samael, Grave i pożegnanie Orange Goblin",
+      "start": 2661.52
+    },
+    {
+      "time": 3453.4,
+      "label": "Portal, Venom i Cult of Luna na zamknięcie",
+      "start": 3410.51
+    },
+    {
+      "time": 3779.1,
+      "label": "Avant Art Festival: Merzbow, Cavalera, Bernocchi",
+      "start": 3733.04
+    },
+    {
+      "time": 4906.11,
+      "label": "Archangel, Mogwai i Caustic Wound",
+      "start": 4851.09
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.64,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Koniec września to propozycje, może niekoniecznie dla fanów metalów czystej postaci, ale…",
+      "start": 6004.43,
+      "end": 6205.55
     }
   ]
 }

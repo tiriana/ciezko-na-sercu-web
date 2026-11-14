@@ -2,6 +2,12 @@
   "version": 1,
   "model": "silero-vad+ecapa",
   "episodes": {
+    "045c81c6-38e7-432e-85eb-a2c7afb64133": {
+      "analyzedAt": "2026-11-14",
+      "added": 7,
+      "extended": 0,
+      "talkOver": 9
+    },
     "05154d98-5f72-4cbd-9c9f-1a6b6bf2a7bb": {
       "analyzedAt": "2026-11-10",
       "added": 6,
@@ -14,17 +20,53 @@
       "extended": 0,
       "talkOver": 2
     },
+    "0e85679d-b341-4aab-b026-4625b2747b74": {
+      "analyzedAt": "2026-11-14",
+      "added": 6,
+      "extended": 1,
+      "talkOver": 13
+    },
+    "12d3f6f2-47fa-4d9c-af68-60fe93a531ec": {
+      "analyzedAt": "2026-11-14",
+      "added": 0,
+      "extended": 4,
+      "talkOver": 15
+    },
+    "14461177-6e2d-435d-b8da-c940df82eaa4": {
+      "analyzedAt": "2026-11-14",
+      "added": 2,
+      "extended": 5,
+      "talkOver": 12
+    },
     "1494df45-d4ad-437e-81a9-3fd956d25071": {
       "analyzedAt": "2026-11-11",
       "added": 18,
       "extended": 0,
       "talkOver": 20
     },
+    "1b99c4d9-d154-4557-8c70-5a28c29b6334": {
+      "analyzedAt": "2026-11-14",
+      "added": 1,
+      "extended": 3,
+      "talkOver": 17
+    },
+    "1bbe0d8e-a4fc-42a3-8c92-b71f98d6b76c": {
+      "analyzedAt": "2026-11-14",
+      "added": 3,
+      "extended": 1,
+      "talkOver": 14
+    },
     "21cfd15d-e6bb-49d8-a00e-c0f854d0fdc2": {
       "analyzedAt": "2026-11-13",
       "added": 2,
       "extended": 3,
       "talkOver": 15
+    },
+    "22997189-a7c5-4550-ba27-5f1ec2d28f77": {
+      "analyzedAt": "2026-11-14",
+      "added": 3,
+      "extended": 4,
+      "talkOver": 13
     },
     "23b37fe0-3219-48b1-b79d-2d0bde9cd9fa": {
       "analyzedAt": "2026-11-13",
@@ -37,6 +79,24 @@
       "added": 1,
       "extended": 5,
       "talkOver": 13
+    },
+    "2ad042a6-1bdb-4e5f-b5ac-dae1e401276f": {
+      "analyzedAt": "2026-11-14",
+      "added": 1,
+      "extended": 3,
+      "talkOver": 15
+    },
+    "2b122f0a-8d64-4be5-8810-c648bd2744b0": {
+      "analyzedAt": "2026-11-14",
+      "added": 2,
+      "extended": 1,
+      "talkOver": 12
+    },
+    "2b9b3177-c9fd-488e-b2ad-6e736fc52b27": {
+      "analyzedAt": "2026-11-14",
+      "added": 1,
+      "extended": 0,
+      "talkOver": 1
     },
     "306f9236-f409-44ab-944f-3137436eed08": {
       "analyzedAt": "2026-11-11",
@@ -74,6 +134,12 @@
       "extended": 1,
       "talkOver": 0
     },
+    "4fa907fc-23a8-4bce-8011-fce60c435445": {
+      "analyzedAt": "2026-11-14",
+      "added": 1,
+      "extended": 5,
+      "talkOver": 9
+    },
     "4ff7b8da-d2ef-413f-ae65-fdc37f092192": {
       "analyzedAt": "2026-11-11",
       "added": 2,
@@ -91,6 +157,24 @@
       "added": 5,
       "extended": 3,
       "talkOver": 7
+    },
+    "5961aa85-06f1-4b46-9920-4b727ceda947": {
+      "analyzedAt": "2026-11-14",
+      "added": 6,
+      "extended": 0,
+      "talkOver": 7
+    },
+    "5aeb0e24-aece-4c32-9e35-b79e34daac65": {
+      "analyzedAt": "2026-11-14",
+      "added": 0,
+      "extended": 1,
+      "talkOver": 7
+    },
+    "63f7e925-f481-45d9-a997-91f612793108": {
+      "analyzedAt": "2026-11-14",
+      "added": 11,
+      "extended": 5,
+      "talkOver": 21
     },
     "6654e58c-3e67-4e65-bf3d-3c0269bda620": {
       "analyzedAt": "2026-11-13",
@@ -164,6 +248,12 @@
       "extended": 0,
       "talkOver": 8
     },
+    "98fdf291-a637-4c35-ad7c-cd8b38dc92ec": {
+      "analyzedAt": "2026-11-14",
+      "added": 7,
+      "extended": 0,
+      "talkOver": 0
+    },
     "993657ef-48f8-43cc-b079-e954ac576347": {
       "analyzedAt": "2026-11-10",
       "added": 8,
@@ -175,6 +265,12 @@
       "added": 10,
       "extended": 1,
       "talkOver": 2
+    },
+    "9b8fb645-2639-4b75-bcfe-d903f3e6f872": {
+      "analyzedAt": "2026-11-14",
+      "added": 2,
+      "extended": 0,
+      "talkOver": 12
     },
     "9cc0c1fd-f5e2-476b-bef6-03aff5865243": {
       "analyzedAt": "2026-11-10",
@@ -188,6 +284,12 @@
       "extended": 6,
       "talkOver": 18
     },
+    "a8dcad3c-9586-46e7-90f3-b1dbbb3bfe0b": {
+      "analyzedAt": "2026-11-14",
+      "added": 6,
+      "extended": 3,
+      "talkOver": 12
+    },
     "abd6c6c3-8b70-4b29-b0f6-39a289733834": {
       "analyzedAt": "2026-11-10",
       "added": 4,
@@ -199,6 +301,12 @@
       "added": 9,
       "extended": 0,
       "talkOver": 1
+    },
+    "b27a7c0f-4ac8-4e09-a557-9c9fa5a9f988": {
+      "analyzedAt": "2026-11-14",
+      "added": 10,
+      "extended": 1,
+      "talkOver": 8
     },
     "b82c4f07-165a-491d-80ec-7ea69a7e17f2": {
       "analyzedAt": "2026-11-11",
@@ -254,6 +362,12 @@
       "extended": 0,
       "talkOver": 6
     },
+    "df5e28d0-103e-4f36-a6f8-459220d2a529": {
+      "analyzedAt": "2026-11-14",
+      "added": 3,
+      "extended": 4,
+      "talkOver": 13
+    },
     "e0d5f01f-798d-4b94-9893-2423ee15272c": {
       "analyzedAt": "2026-11-11",
       "added": 7,
@@ -265,6 +379,12 @@
       "added": 19,
       "extended": 0,
       "talkOver": 2
+    },
+    "ea141138-f73e-46e5-8ee7-b9c58ad3c7df": {
+      "analyzedAt": "2026-11-14",
+      "added": 1,
+      "extended": 2,
+      "talkOver": 9
     },
     "ea2fda3a-43df-41d5-9006-5bca93fce00e": {
       "analyzedAt": "2026-11-13",

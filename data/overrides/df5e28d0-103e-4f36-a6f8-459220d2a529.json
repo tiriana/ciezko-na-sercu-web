@@ -1,13 +1,51 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2351.08,
+      "label": "Permanoia: młody posthardcore'owy zespół z dobrze napisanymi piosenkami",
+      "start": 2317.52
+    },
+    {
+      "time": 3249.85,
+      "label": "802: melodyjne przeboje o miłości z thrashowym riffowaniem",
+      "start": 3210.99
+    },
+    {
+      "time": 4304.24,
+      "label": "Schwarzheim, wypadek na koncercie i model Monoramy",
+      "start": 4180.98
+    },
+    {
+      "time": 4839.58,
+      "label": "Best: współczesny death metal i czwarta płyta Kolossal",
+      "start": 4820.82
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.23,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Ambicją Light Chapter jest łączeniem melodyjnego death metalu z syntezatorami rodem z lat…",
+      "start": 719.66,
+      "end": 766.48
+    },
+    {
+      "label": "Jeśli zespół nazywa się \"Blue Manny\", co oznacza \"Krwawy Księżyc\", to co taki zespół może…",
+      "start": 989.04,
+      "end": 999.57
+    },
+    {
+      "label": "Liss Berrer już znacie. To ten zespół, od którego zaczęliśmy. Opowiadali w kuluarach, że…",
+      "start": 1635.15,
+      "end": 1700.78
     }
   ]
 }

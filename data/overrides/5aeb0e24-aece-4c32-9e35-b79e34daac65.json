@@ -1,7 +1,13 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 5836.18,
+      "label": "Fields of the Nephilim i Metal Commando Fest",
+      "start": 5741.58
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +15,6 @@
       "start": 5.08,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

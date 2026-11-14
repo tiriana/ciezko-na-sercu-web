@@ -1,13 +1,31 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1718.32,
+      "label": "Historia greckiego zespołu Swan Christie i przemiana w A Band Apart",
+      "start": 1679.47
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.48,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Dobry wieczór Państwu. Słuchacie Ciężko na sercu. Jestem Jarek Szubrycht i jestem…",
+      "start": 12.05,
+      "end": 30.38
+    },
+    {
+      "label": "Po tych neurotycznych, nieprzyjemnych dźwiękach, którymi Oxbow osacza i dręczy swoich…",
+      "start": 3550.54,
+      "end": 3630.03
     }
   ]
 }

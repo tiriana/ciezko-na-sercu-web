@@ -1,13 +1,36 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 3558.04,
+      "label": "November's Doom i tarotowa płyta Major Arcana",
+      "start": 3529.26
+    },
+    {
+      "time": 3984.33,
+      "label": "Species, kontrakt z 20 Buck Spin i album Changelings",
+      "start": 3948.37
+    },
+    {
+      "time": 4300.02,
+      "label": "Warszawska Meluzyna i debiutancka epka To Hell",
+      "start": 4272.34
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.87,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Intercourse uważają się za głos dziwaków i freaków, a lider grupy opowiada, że tę nową…",
+      "start": 483.47,
+      "end": 512.59
     }
   ]
 }

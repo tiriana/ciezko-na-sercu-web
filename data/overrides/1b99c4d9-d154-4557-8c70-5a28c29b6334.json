@@ -1,13 +1,36 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1891.5,
+      "label": "Conjurer Unself — postmetalowa opowieść o tożsamości",
+      "start": 1838.1
+    },
+    {
+      "time": 3945.01,
+      "label": "Hellthrone The Will to Die — oficjalny debiut zespołu",
+      "start": 3884.69
+    },
+    {
+      "time": 4206.04,
+      "label": "Sanguisuga Bog Heidi Hughes Aftermath — brutalny death metal",
+      "start": 4199.76
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.72,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Jak Eric Zahn, ten z Lovecrafta, to zupełnie nowy twór na rodzimej scenie, debiutujący w…",
+      "start": 1233.46,
+      "end": 1261.04
     }
   ]
 }

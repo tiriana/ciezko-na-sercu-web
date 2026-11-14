@@ -1,13 +1,31 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1935.66,
+      "label": "Cannibal Corpse: Chris Barnes zastąpiony przez Corpsegrindera",
+      "start": 1919.28
+    },
+    {
+      "time": 6363.68,
+      "label": "Black Sabbath: epoka Ozzy'ego Osbourne'a i Ronniego Jamesa Dio",
+      "start": 6348.08
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.66,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht i zaprasza na dwie godziny z metalem.…",
+      "start": 12.24,
+      "end": 36.14
     }
   ]
 }

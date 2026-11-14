@@ -1,7 +1,28 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1666.46,
+      "label": "Inter Arma, Wayfarer oraz Dark Angel z albumem Darkness Descends",
+      "start": 1659.44
+    },
+    {
+      "time": 2753.19,
+      "label": "Płyta Ul grupy Mauiza o kulturze Mapucze",
+      "start": 2721.49
+    },
+    {
+      "time": 3960.64,
+      "label": "Blessings i album Blood Strangen z Pelagic Records",
+      "start": 3929.84
+    },
+    {
+      "time": 6599.58,
+      "label": "Malthusian The Summoning Bell i Unleashed Fire Upon Your Lands",
+      "start": 6579.76
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +30,6 @@
       "start": 0.47,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

@@ -1,13 +1,36 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1848.04,
+      "label": "Pink Floyd, The Great Gig in the Sky i remaster z Pompejów",
+      "start": 1837.78
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 10.05,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Adam Hrynkiewicz, Michał Kowarski. Meldujemy się na stanowisku.",
+      "start": 6.26,
+      "end": 10.32
+    },
+    {
+      "label": "Przyznam, dzisiejsze Ciężko na sercu będzie mniej ciężki niż przez ostatnie trzy…",
+      "start": 17.71,
+      "end": 31.7
+    },
+    {
+      "label": "I my z Adamem tutaj nawet palca nie przyłożyliśmy. Sami tak ładnie panowie z Deptons…",
+      "start": 1278,
+      "end": 1304.91
     }
   ]
 }

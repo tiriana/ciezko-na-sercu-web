@@ -1,13 +1,61 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 363.72,
+      "label": "Zespół Nia i jego międzynarodowe rozpoznanie",
+      "start": 358.18
+    },
+    {
+      "time": 786.19,
+      "label": "Zespół Neuma i jego eksperymentalne brzmienie",
+      "start": 786.19
+    },
+    {
+      "time": 1851.74,
+      "label": "Zespół Samo i jego korzenie w ekstremalnej muzyce",
+      "start": 1851.74
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 5.21,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Brnąc głębiej w te postkobągowe chaszcze, docieramy do zespołu o nazwie Samo. Zespołu…",
+      "start": 1136.37,
+      "end": 1226.13
+    },
+    {
+      "label": "Samo długo zespołem nie pobyło. Być może klątwa tu była w nazwie, więc na płycie An…",
+      "start": 1532.34,
+      "end": 1577.14
+    },
+    {
+      "label": "Niestety doskonale zapowiadająca się moja adrenalina włożyła sobie kij w szprychy, niczym…",
+      "start": 2028.02,
+      "end": 2166.38
+    },
+    {
+      "label": "Gdyby ktoś mnie zapytał o mój ulubiony polski zespół metalowy, a czasem zresztą pyta, to…",
+      "start": 3806.22,
+      "end": 3973.87
+    },
+    {
+      "label": "Tony von Kiński, gitarzysta zespołu. To postać bardzo zasłużona dla polskiej sceny…",
+      "start": 4762.9,
+      "end": 4882.22
+    },
+    {
+      "label": "Skoro przetrwaliście Kińskiego, jesteście już gotowi na Kostas New Program. To jedna z…",
+      "start": 5424.82,
+      "end": 5506.64
     }
   ]
 }

@@ -1,13 +1,51 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2331.26,
+      "label": "Zapowiedź koncertów i nowej płyty Asterie „Miejsce\" oraz utworu „148\"",
+      "start": 2307.54
+    },
+    {
+      "time": 3140.95,
+      "label": "Prezentacja zespołu Dead You i utworu Vile z gościnnym wokalistą Saltwound",
+      "start": 3119.09
+    },
+    {
+      "time": 3377.05,
+      "label": "Omówienie Ferocity i ich piątego albumu The Evolution",
+      "start": 3352.59
+    },
+    {
+      "time": 3950.85,
+      "label": "Repulsive – album Fury Unleashed oraz jego miejsce w polskim death metalu",
+      "start": 3926.03
+    },
+    {
+      "time": 5977.14,
+      "label": "Inspiracje muzyczne – wymienione zespoły Dead Can Dance i Vardruna",
+      "start": 5943.6
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 4.47,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Przed nami zespół Cało. Też jest z Polski, też black metalowy i też wykorzystujący w…",
+      "start": 5078.16,
+      "end": 5204.59
+    },
+    {
+      "label": "Sempra pochodzi z Bielska Białej, harcuje na toksycznym pograniczu Def i Black Metalu i…",
+      "start": 5461.52,
+      "end": 5511.57
     }
   ]
 }

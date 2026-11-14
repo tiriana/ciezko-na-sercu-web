@@ -1,13 +1,51 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2093.92,
+      "label": "Discharge i polityczne przesłania z koncertu",
+      "start": 2025.52
+    },
+    {
+      "time": 2297.57,
+      "label": "Godflesh: dystans, izolacja i dźwiękowa przemoc",
+      "start": 2258.61
+    },
+    {
+      "time": 3938.93,
+      "label": "Raised by Owls i konkurs tańca à la Barney",
+      "start": 3915.95
+    },
+    {
+      "time": 6096.19,
+      "label": "Cephalic Carnage, maski kozłów i ukulele",
+      "start": 6051.89
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.35,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Nie będę wam wmawiał, że wszystko co można zobaczyć i usłyszeć na Obscene Extreme jest…",
+      "start": 811.34,
+      "end": 882.67
+    },
+    {
+      "label": "Na Obstynic Stream sporo jest panka i hardcora. To nie jest festiwal metalowy, ale…",
+      "start": 1815.34,
+      "end": 1885.46
+    },
+    {
+      "label": "Dzień drugi zacząłem od Perpetual, bo rzadko mam okazję zobaczyć grind z Malezji. W ogóle…",
+      "start": 2584.62,
+      "end": 2624.37
     }
   ]
 }
