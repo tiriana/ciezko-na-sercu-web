@@ -1,4 +1,4 @@
-import { mergeOverrides, normalize, validateSavePayload } from './lib/overrides.mjs';
+import { mergeOverrides, normalize, validateOverride, validateSavePayload } from './lib/overrides.mjs';
 import {
   currentSession,
   pollDeviceToken,
@@ -282,6 +282,9 @@ const publish = async () => {
   if (invalid) return notify(invalid, 'error');
 
   const next = mergeOverrides(state.override, payload);
+  // Strażnik przed produkcją: plik, którego nie przyjmie schemat strony, wywaliłby build.
+  const problems = validateOverride(next, { durationSec: state.episode.durationSec ?? 0 });
+  if (problems.length) return notify(`nie publikuję — ${problems.slice(0, 3).join('; ')}`, 'error');
   const files = {};
   files[`data/overrides/${state.episode.id}.json`] = `${JSON.stringify(next, null, 2)}\n`;
 

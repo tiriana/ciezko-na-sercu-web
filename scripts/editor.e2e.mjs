@@ -165,6 +165,17 @@ try {
   );
   if (titlesBlob) ok('tytuł odcinka trafia do data/titles.json');
   else fail('zmiana tytułu nie trafiła do data/titles.json');
+
+  // Strażnik przed zepsutym plikiem: koniec przed początkiem nie może dojść do GitHuba.
+  const beforeGuard = publishes.length;
+  const endInput = page.locator('#tracks tr:first-child td:nth-child(2) input');
+  await endInput.fill('0:01');
+  await endInput.press('Tab');
+  await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
+  await page.locator('#publish').click();
+  await page.waitForFunction(() => document.querySelector('#hint')?.textContent.startsWith('nie publikuję'), null, { timeout: 5000 });
+  if (publishes.length === beforeGuard) ok('niepoprawny czas zablokował publikację');
+  else fail('niepoprawny czas trafił do commita');
 } catch (error) {
   fail(error.message);
 } finally {

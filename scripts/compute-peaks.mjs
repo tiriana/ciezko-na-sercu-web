@@ -73,6 +73,9 @@ for (const episode of episodes) {
   };
   done += 1;
   console.log(`${episode.id}: ${resampled.length} słupków (${(resampled.length / 1024).toFixed(1)} kB)`);
+  // Spis po każdym odcinku: przerwany przebieg (limit czasu runnera, zamknięcie laptopa)
+  // nie zostawia plików bez wpisu, więc kolejne uruchomienie nie liczy ich od nowa.
+  await writeFile(INDEX, `${JSON.stringify(index, null, 2)}\n`);
 }
 
 await writeFile(INDEX, `${JSON.stringify(index, null, 2)}\n`);
