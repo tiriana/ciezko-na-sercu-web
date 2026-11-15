@@ -10,7 +10,7 @@
 
 import { readFile, writeFile } from 'node:fs/promises';
 
-import { isTechnicalTitle } from '../src/lib/titles.ts';
+import { isTechnicalTitle } from '../site/src/lib/titles.ts';
 import { readMetadata } from './fetch-episode-metadata.mjs';
 
 const args = new Map();

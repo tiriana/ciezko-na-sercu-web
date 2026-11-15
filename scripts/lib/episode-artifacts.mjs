@@ -2,7 +2,7 @@
 // z warstwą ręczną. Kompilator nie zna kolejności uruchomień producentów — czyta tylko to,
 // co leży w katalogu odcinka, więc każdy etap można powtórzyć w dowolnym momencie.
 
-import { mergeEpisode } from '../../src/lib/merge.ts';
+import { mergeEpisode } from '../../site/src/lib/merge.ts';
 
 const META_KEYS = new Set(['version', 'id', 'analyzedAt', 'updatedAt', 'durationSec']);
 const PRODUCED_KEYS = new Set(['summary', 'topics', 'tracks']);

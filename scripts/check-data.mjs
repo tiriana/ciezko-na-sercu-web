@@ -1,12 +1,12 @@
-// Musi odpowiadać TAG_TYPES/TAG_SOURCES w src/lib/schema.ts.
+// Musi odpowiadać TAG_TYPES/TAG_SOURCES w site/src/lib/schema.ts.
 const TAG_TYPES = ['artist', 'person', 'work', 'event', 'concert', 'place', 'theme', 'editorial'];
 const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile', 'title'];
 
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { aliasesSchema, catalogSchema, episodeSchema, peopleSchema, titlesSchema } from '../src/lib/schema.ts';
-import { splitTag } from '../src/lib/tags.ts';
+import { aliasesSchema, catalogSchema, episodeSchema, peopleSchema, titlesSchema } from '../site/src/lib/schema.ts';
+import { splitTag } from '../site/src/lib/tags.ts';
 
 const DATA = 'data';
 const EPISODES = join(DATA, 'episodes');

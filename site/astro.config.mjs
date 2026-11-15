@@ -22,7 +22,7 @@ function legacyRedirects(catalog) {
 
 function readCatalog() {
   try {
-    return JSON.parse(readFileSync(new URL('./data/catalog.json', import.meta.url), 'utf8'));
+    return JSON.parse(readFileSync(new URL('../data/catalog.json', import.meta.url), 'utf8'));
   } catch {
     return null;
   }

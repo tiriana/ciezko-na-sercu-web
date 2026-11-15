@@ -6,7 +6,7 @@ import { stat } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
 import { chromium } from 'playwright';
 
-const ROOT = new URL('../dist/', import.meta.url).pathname;
+const ROOT = new URL('../site/dist/', import.meta.url).pathname;
 const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.json': 'application/json' };
 
 const server = createServer(async (request, response) => {

@@ -13,8 +13,8 @@ import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import { compileEpisode, decomposeEpisode } from './lib/episode-artifacts.mjs';
-import { mergeEpisode } from '../src/lib/merge.ts';
-import { overrideSchema } from '../src/lib/schema.ts';
+import { mergeEpisode } from '../site/src/lib/merge.ts';
+import { overrideSchema } from '../site/src/lib/schema.ts';
 
 const ROOT = new URL('..', import.meta.url).pathname.replace(/\/$/, '');
 const DATA = join(ROOT, 'data');

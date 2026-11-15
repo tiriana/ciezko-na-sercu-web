@@ -16,7 +16,7 @@
  */
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 
-import { isTechnicalTitle } from '../src/lib/titles.ts';
+import { isTechnicalTitle } from '../site/src/lib/titles.ts';
 import { askJson, describeCandidates } from './lib/llm.mjs';
 
 const CHUNK_CHARS = 9000;
