@@ -15,7 +15,7 @@
  */
 import { readFile, writeFile } from 'node:fs/promises';
 
-import { mergeEpisode } from '../src/lib/merge.ts';
+import { mergeEpisode } from '../site/src/lib/merge.ts';
 import { askJson } from './lib/llm.mjs';
 import { timelineFor, toPlayer } from './lib/timeline.mjs';
 

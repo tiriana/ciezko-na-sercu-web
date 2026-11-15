@@ -41,12 +41,16 @@ Ręcznie zostaje tylko redakcja znaczników w edytorze (`npm run edytor`).
 
 ```
 mise install       # Node w wersji z mise.toml
-mise run build     # waliduje data/ i buduje dist/
+mise run build     # waliduje data/ i buduje site/dist/
 mise run dev       # podgląd na http://localhost:4321
 ```
 
-1. `mise run build` — `scripts/check-data.mjs` i `astro build`.
-2. `mise run e2e` — testy Playwright na zbudowanym `dist/` (build musi być aktualny).
+Układ repo: `site/` (Astro: `src/`, `public/`, konfiguracja), `editor/` (edytor online),
+`scripts/` (pipeline danych), `data/` (treść odcinków), `lib/` (logika wspólna dla strony,
+skryptów i edytora).
+
+1. `mise run build` — `scripts/check-data.mjs` i `astro build --root site`.
+2. `mise run e2e` — testy Playwright na zbudowanym `site/dist/` (build musi być aktualny).
 3. `npm run check` — sama walidacja `data/`, bez budowania.
 4. `npm run edytor` — lokalny edytor osi czasu na http://localhost:4330.
 5. `npm run queue` — przelicza `data/queue.json` (tempo i plan opracowań).
@@ -56,8 +60,8 @@ mise run dev       # podgląd na http://localhost:4321
 
 ## Fonty
 
-`scripts/subset-fonts.sh` odtwarza `public/fonts/*.woff2` przez `pyftsubset` (fontTools +
-brotli) do zakresu znaków używanego na stronie i sprawdza, że każdy znak z `dist/**/*.html`
+`scripts/subset-fonts.sh` odtwarza `site/public/fonts/*.woff2` przez `pyftsubset` (fontTools +
+brotli) do zakresu znaków używanego na stronie i sprawdza, że każdy znak z `site/dist/**/*.html`
 obecny w źródle trafił do podzbioru:
 
 ```
@@ -84,6 +88,18 @@ ramka MP3. Pasek zapisu przykleja się do dołu: kropka oznacza niezapisane zmia
 `Ctrl+S` zapisuje, a przełącznik `auto-zapis` robi to 1,2 s po ostatniej zmianie.
 Bez `ffmpeg` albo bez sieci w miejscu waveformu jest komunikat z powodem i przycisk
 ponowienia, a reszta edytora działa normalnie.
+
+## Edytor online
+
+`https://ciezko-edytor.pages.dev` — edycja utworów i tytułów oraz tagi i aliasy
+z przeglądarki, bez uruchamiania repo lokalnie: dane czyta z `raw.githubusercontent.com`,
+a zapisuje jednym commitem `fix(dane): …` na `main` przez GitHub API (token trzymany tylko
+w pamięci karty).
+Szczegóły, bezpieczeństwo i ograniczenia: [docs/edytor-online.md](docs/edytor-online.md).
+
+Lokalnie: `npm run editor:build && npm run editor:serve` (http://localhost:4331),
+test: `npm run test:editor` (atrapy GitHuba i raw — zero sieci). Waveform dla edytora liczy `ffmpeg` w `peaks.yml` i commituje
+`data/peaks/` jako `chore:` — bez tego wersja online nie ma podglądu głośności.
 
 ## Dane
 
@@ -129,6 +145,10 @@ Workflow:
 6. `identify.yml` — rozpoznawanie utworów Shazamem; po commicie zamawia streszczenie.
 7. `repair.yml` — po pushu (i na żądanie) dokańcza utwory bez tytułu i wejścia z `#TODO`.
 8. `release.yml` — wersja i changelog z typów commitów.
+9. `editor.yml` — testy wspólnych modułów i e2e edytora, potem build i publikacja na
+   osobny projekt Pages `ciezko-edytor`; test dymny sprawdza, że strona odpowiada
+   i serwuje aplikację.
+10. `peaks.yml` — waveform dla edytora online po zmianie `data/catalog.json`.
 
 ## Dokumentacja
 
@@ -137,7 +157,9 @@ Workflow:
 3. [docs/stack.md](docs/stack.md) — wybór generatora i odrzucone alternatywy.
 4. [docs/llm.md](docs/llm.md) — wybór modelu językowego: darmowe limity dostawców,
    losowanie, karencje i diagnoza.
-5. `mockup/` — statyczny mockup, z którego powstał layout (nie jest deployowany).
+5. [docs/edytor-online.md](docs/edytor-online.md) — edytor zdalny: logowanie, publikacja,
+   waveform, bezpieczeństwo.
+6. `mockup/` — statyczny mockup, z którego powstał layout (nie jest deployowany).
 
 Odcinki, w których choć jeden znacznik oznaczono w edytorze jako „ok”, są nietykalne
 dla automatów: `snap-boundaries`, `snap-topics` i `import-tagger` pomijają je i mówią

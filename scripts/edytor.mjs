@@ -13,6 +13,22 @@ import { watch } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import {
+  aliasCandidates,
+  aliasProblems,
+  collectLabels,
+  normalizeAliasFile,
+  tagRows,
+} from '../lib/aliases.mjs';
+import {
+  applyOverrides,
+  isEmptyOverrides,
+  mergeOverrides,
+  normalize,
+  same,
+  validateSavePayload,
+} from '../lib/overrides.mjs';
+import { peaksFromAudio, resample } from './lib/peaks.mjs';
 import { mediaDurationOf } from './lib/timeline.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -26,7 +42,6 @@ const PEAKS = join(CACHE, 'peaks');
 const DRAFTS = join(CACHE, 'drafts');
 const JOURNAL = join(CACHE, 'journal');
 const PEAKS_PER_SEC = 100; // 1 słupek = 10 ms
-const SAMPLE_RATE = 2000; // z tego redukujemy do PEAKS_PER_SEC (max z 20 próbek)
 
 const log = async (message, error) => {
   const detail = error instanceof Error ? error.stack ?? error.message : String(error ?? '');
@@ -66,8 +81,6 @@ const writeJson = async (path, value) => {
   }
 };
 
-const normalize = (value) => (value ?? '').normalize('NFC').trim().toLowerCase();
-const same = (left, right) => right === undefined || normalize(left) === normalize(right);
 const reviewKeyOf = (kind, object) => {
   if (kind === 'topic') {
     const label = normalize(object.label);
@@ -79,75 +92,13 @@ const reviewKeyOf = (kind, object) => {
 
 const loadCatalog = () => readJson(join(DATA, 'catalog.json'), { episodes: [] });
 const ALIASES_PATH = join(DATA, 'aliases.json');
-const TAG_TYPES = ['artist', 'person', 'work', 'event', 'concert', 'place', 'theme', 'editorial'];
 const loadAliasFile = async () => {
   const file = await readJson(ALIASES_PATH, { version: 1, aliases: {}, types: {}, dismissed: [] });
   return { aliases: file.aliases ?? {}, types: file.types ?? {}, dismissed: file.dismissed ?? [] };
 };
-const loadAliases = async () => (await loadAliasFile()).aliases;
+// Etykiety z odcinków plus nazwy z creditsów — wspólne z edytorem online.
+const labelsOfData = async () => collectLabels([...(await loadEpisodes()).values()]);
 
-const resolveAlias = (label, aliases) => {
-  let current = label;
-  for (let step = 0; step < 5; step++) {
-    const next = aliases[current];
-    if (!next || next === current) break;
-    current = next;
-  }
-  return current;
-};
-
-const foldWords = (value) =>
-  value
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/ł/gi, 'l')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
-
-// Etykiety z odcinków plus nazwy z creditsów: alias może celować w każdą z nich.
-const collectLabels = async () => {
-  const episodes = await loadEpisodes();
-  const labels = new Map();
-  for (const episode of episodes.values()) {
-    if (!episode) continue;
-    for (const tag of episode.tags ?? []) {
-      const current = labels.get(tag.label) ?? { label: tag.label, type: tag.type, episodes: new Set() };
-      current.episodes.add(episode.id);
-      labels.set(tag.label, current);
-    }
-    for (const credit of episode.credits ?? []) {
-      const current = labels.get(credit.name) ?? { label: credit.name, type: 'person', episodes: new Set() };
-      current.episodes.add(episode.id);
-      labels.set(credit.name, current);
-    }
-  }
-  return labels;
-};
-
-const aliasCandidates = (labels, aliases, dismissed) => {
-  const people = [...labels.values()].filter((item) => item.type === 'person' && resolveAlias(item.label, aliases) === item.label);
-  const out = [];
-  for (const shorter of people) {
-    for (const longer of people) {
-      if (longer.label.length <= shorter.label.length + 3) continue;
-      if (!` ${foldWords(longer.label)} `.includes(` ${foldWords(shorter.label)} `)) continue;
-      if (dismissed.some((pair) => pair.from === shorter.label && pair.to === longer.label)) continue;
-      out.push({ from: shorter.label, to: longer.label });
-    }
-  }
-  return out;
-};
-
-const aliasProblems = (aliases, labels) => {
-  const problems = [];
-  for (const [alias, target] of Object.entries(aliases)) {
-    if (alias === target) problems.push(`${alias}: alias wskazuje sam na siebie`);
-    if (resolveAlias(target, aliases) !== target) problems.push(`${target}: łańcuch aliasów tworzy pętlę`);
-    if (!labels.has(target)) problems.push(`${alias}: nie ma takiej etykiety jak ${target}`);
-  }
-  return problems;
-};
 const loadTitles = () => readJson(join(DATA, 'titles.json'), { version: 1, titles: {} });
 const loadOverrides = async () => {
   const map = new Map();
@@ -187,51 +138,6 @@ const loadEpisodes = async () => {
     map.set(name.replace(/\.json$/, ''), await readJson(join(DATA, 'episodes', name), null));
   }
   return map;
-};
-
-/** Wartości efektywne: to samo, co widzi strona po nałożeniu poprawek. */
-const applyOverrides = (episode, override) => {
-  if (!episode) return null;
-  const result = structuredClone(episode);
-  // Indeks w pliku odcinka: jedyny stabilny identyfikator, bo ten sam utwór bywa
-  // rozpoznany dwa razy (te same artist/title/album).
-  result.tracks = result.tracks.map((track, index) => ({ ...track, _index: index }));
-  for (const fix of override?.tracks ?? []) {
-    const track = result.tracks.find(
-      (candidate) => same(candidate.artist, fix.artist) && same(candidate.title, fix.title) && same(candidate.album, fix.album)
-    );
-    if (!track) continue;
-    if (fix.start !== undefined) track.start = fix.start;
-    if (fix.durationSec !== undefined) track.durationSec = fix.durationSec;
-    // `end` podmienia granicę utworu, gdy redakcja przecięła go ręcznie (to samo pole
-    // czyta src/lib/data.ts); bez tego edytor po przeładowaniu liczyłby koniec z durationSec.
-    if (fix.end !== undefined) track.end = fix.end;
-    if (fix.newArtist !== undefined) track.artist = fix.newArtist;
-    if (fix.newTitle !== undefined) track.title = fix.newTitle;
-    if (fix.newAlbum !== undefined) track.album = fix.newAlbum;
-  }
-  result.tracks = result.tracks.filter(
-    (track) =>
-      !(override?.tracks ?? []).some(
-        (fix) =>
-          fix.hide &&
-          same(track.artist, fix.artist) &&
-          same(track.title, fix.title) &&
-          same(track.album, fix.album) &&
-          (fix.start === undefined || Math.abs(track.start - fix.start) < 0.01)
-      )
-  );
-  for (const fix of override?.topics ?? []) {
-    const topic = result.topics.find((candidate) => candidate.start === fix.time && same(candidate.label, fix.label));
-    if (!topic) continue;
-    if (fix.start !== undefined) topic.start = fix.start;
-    if (fix.end !== undefined) topic.end = fix.end;
-    if (fix.newLabel) topic.label = fix.newLabel;
-  }
-  result.topics = result.topics.filter(
-    (topic) => !(override?.topics ?? []).some((fix) => fix.hide && fix.time === topic.start && same(topic.label, fix.label))
-  );
-  return result;
 };
 
 // Podgląd pliku edytora: przeglądarka dostaje zdarzenie SSE i odświeża się sama,
@@ -343,131 +249,13 @@ const readBody = (req) =>
     req.on('error', reject);
   });
 
-const validateSavePayload = (payload) => {
-  const record = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
-  const string = (value) => typeof value === 'string';
-  const optionalString = (value) => value === undefined || value === null || string(value);
-  const optionalNumber = (value) => value === undefined || value === null || (typeof value === 'number' && Number.isFinite(value));
-  const optionalBoolean = (value) => value === undefined || typeof value === 'boolean';
-  const array = (value) => value === undefined || Array.isArray(value);
-  const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-
-  if (!record(payload)) return 'treść musi być obiektem JSON';
-  if (typeof payload.id !== 'string' || !uuid.test(payload.id)) return 'id odcinka ma nieprawidłowy format';
-  if (!optionalString(payload.title)) return 'title musi być tekstem';
-  for (const key of ['tracks', 'topics', 'addTracks', 'addTopics']) {
-    if (!array(payload[key])) return `${key} musi być tablicą`;
-  }
-  for (const [index, track] of (payload.tracks ?? []).entries()) {
-    if (!record(track)) return `tracks[${index}] musi być obiektem`;
-    for (const field of ['artist', 'title', 'newArtist', 'newTitle', 'album', 'newAlbum']) {
-      if (!optionalString(track[field])) return `tracks[${index}].${field} musi być tekstem`;
-    }
-    for (const field of ['start', 'durationSec', 'end']) {
-      if (!optionalNumber(track[field])) return `tracks[${index}].${field} musi być liczbą`;
-    }
-    if (!optionalBoolean(track.hide)) return `tracks[${index}].hide musi być wartością logiczną`;
-  }
-  for (const [index, topic] of (payload.topics ?? []).entries()) {
-    if (!record(topic)) return `topics[${index}] musi być obiektem`;
-    if (typeof topic.label !== 'string') return `topics[${index}].label musi być tekstem`;
-    if (typeof topic.time !== 'number' || !Number.isFinite(topic.time)) return `topics[${index}].time musi być liczbą`;
-    for (const field of ['time', 'start', 'end']) {
-      if (!optionalNumber(topic[field])) return `topics[${index}].${field} musi być liczbą`;
-    }
-    if (!optionalString(topic.newLabel)) return `topics[${index}].newLabel musi być tekstem`;
-    if (!optionalBoolean(topic.hide)) return `topics[${index}].hide musi być wartością logiczną`;
-  }
-  for (const [index, track] of (payload.addTracks ?? []).entries()) {
-    if (!record(track)) return `addTracks[${index}] musi być obiektem`;
-    if (!string(track.artist) || !string(track.title)) return `addTracks[${index}] wymaga tekstowych pól artist i title`;
-    if (!optionalString(track.album)) return `addTracks[${index}].album musi być tekstem`;
-    if (typeof track.start !== 'number' || !Number.isFinite(track.start)) return `addTracks[${index}].start musi być liczbą`;
-    if (!optionalNumber(track.durationSec)) return `addTracks[${index}].durationSec musi być liczbą`;
-    if (!optionalBoolean(track.unrecognized)) return `addTracks[${index}].unrecognized musi być wartością logiczną`;
-  }
-  for (const [index, topic] of (payload.addTopics ?? []).entries()) {
-    if (!record(topic)) return `addTopics[${index}] musi być obiektem`;
-    if (typeof topic.label !== 'string') return `addTopics[${index}].label musi być tekstem`;
-    if (typeof topic.start !== 'number' || !Number.isFinite(topic.start)) return `addTopics[${index}].start musi być liczbą`;
-    if (!optionalNumber(topic.end)) return `addTopics[${index}].end musi być liczbą`;
-  }
-  return null;
-};
-
-/** Szczyty głośności do waveformu: ffmpeg czyta nagranie strumieniem z URL (range
- * requests), więc plik na dysku nie jest potrzebny. Wynik leży w `.cache/peaks`. */
 const peaksInFlight = new Map();
 
-const computePeaks = (audioUrl) =>
-  new Promise((resolve, reject) => {
-    const ffmpeg = spawn('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-i', audioUrl, '-ac', '1', '-ar', String(SAMPLE_RATE), '-f', 's16le', '-']);
-    const peaks = [];
-    const perBucket = SAMPLE_RATE / PEAKS_PER_SEC; // 20 próbek = 10 ms
-    let peak = 0;
-    let samples = 0;
-    let leftover = Buffer.alloc(0);
-    let errorText = '';
-
-    // Bierzemy maksimum z próbek, bo przeliczanie ich na jeden słupek uśrednianiem
-    // zgubiłoby transjenty i waveform kłamałby o cichych fragmentach.
-    const take = (buffer) => {
-      for (let offset = 0; offset + 2 <= buffer.length; offset += 2) {
-        const value = Math.abs(buffer.readInt16LE(offset)) / 32768;
-        if (value > peak) peak = value;
-        samples += 1;
-        if (samples === perBucket) {
-          peaks.push(Math.min(255, Math.round(peak * 255)));
-          peak = 0;
-          samples = 0;
-        }
-      }
-    };
-
-    const onData = (chunk) => {
-      const buffer = leftover.length > 0 ? Buffer.concat([leftover, chunk]) : chunk;
-      const usable = buffer.length - (buffer.length % 2);
-      leftover = buffer.subarray(usable);
-      take(buffer.subarray(0, usable));
-    };
-
-    // Zerwany strumień (ubity ffmpeg, przerwane połączenie) inaczej kończył się
-    // nieobsłużonym zdarzeniem 'error' i wywalał serwer.
-    ffmpeg.stdout.on('error', (error) => reject(error));
-    ffmpeg.stderr.on('error', () => {});
-    ffmpeg.on('exit', (code, signal) => {
-      if (signal) reject(new Error(`ffmpeg przerwany (${signal})`));
-    });
-    ffmpeg.stdout.on('data', onData);
-    ffmpeg.stderr.on('data', (chunk) => {
-      errorText += chunk.toString();
-      if (errorText.length > 4000) errorText = errorText.slice(-4000);
-    });
-    ffmpeg.on('error', (error) => reject(error.code === 'ENOENT' ? new Error('brak ffmpeg w PATH') : error));
-    ffmpeg.on('close', (code) => {
-      if (code !== 0) return reject(new Error(errorText.trim() || `ffmpeg zakończył się kodem ${code}`));
-      if (peaks.length === 0) return reject(new Error('ffmpeg nie zwrócił dźwięku'));
-      // Audycja jest zmiksowana cicho (szczyty ~-8 dBFS), więc bez normalizacji waveform
-      // byłby płaski. Skalujemy do najgłośniejszego miejsca i podnosimy wykładnikiem,
-      // bo słupek ma pokazywać głośność czytelnie, nie wiernie w skali liniowej.
-      const loudest = peaks.reduce((max, value) => (value > max ? value : max), 1);
-      resolve(Uint8Array.from(peaks, (value) => Math.round(255 * (value / loudest) ** 0.6)));
-    });
-  });
+const computePeaks = (audioUrl) => peaksFromAudio(audioUrl, { perSec: PEAKS_PER_SEC });
 
 // Waveform musi być w skali odtwarzacza (nagłówek mp3 bywa krótszy niż realne audio),
 // inaczej kreska i znaczniki rozjeżdżają się ku końcowi audycji. `v2` unieważnia cache
 // policzony w starej skali.
-const resample = (peaks, scale) => {
-  if (!(scale > 0) || Math.abs(scale - 1) < 1e-6) return peaks;
-  const length = Math.max(1, Math.round(peaks.length * scale));
-  const out = new Uint8Array(length);
-  for (let index = 0; index < length; index += 1) {
-    out[index] = peaks[Math.min(peaks.length - 1, Math.round(index / scale))] ?? 0;
-  }
-  return out;
-};
-
 // Adres nagrania w nazwie pliku: podmiana audioUrl w katalogu unieważnia cache.
 const peaksFile = (id, audioUrl) => join(PEAKS, `${id}-${createHash('sha1').update(audioUrl).digest('hex').slice(0, 8)}-v2.bin`);
 
@@ -573,43 +361,22 @@ const handleRequest = async (req, res) => {
     }
 
     if (url.pathname === '/api/tags') {
-      const [labels, file] = await Promise.all([collectLabels(), loadAliasFile()]);
+      const [labels, file] = await Promise.all([labelsOfData(), loadAliasFile()]);
       json(res, 200, {
         aliases: file.aliases,
         types: file.types,
         dismissed: file.dismissed,
         candidates: aliasCandidates(labels, file.aliases, file.dismissed),
-        tags: [...labels.values()]
-          .map((item) => ({
-            label: item.label,
-            type: file.types[resolveAlias(item.label, file.aliases)] ?? item.type,
-            originalType: item.type,
-            count: item.episodes.size,
-            canonical: resolveAlias(item.label, file.aliases),
-          }))
-          .sort((left, right) => left.label.localeCompare(right.label, 'pl')),
+        tags: tagRows(labels, file),
       });
       return;
     }
 
     if (req.method === 'POST' && url.pathname === '/api/aliases') {
-      const payload = JSON.parse(await readBody(req));
-      const aliases = {};
-      for (const [from, to] of Object.entries(payload.aliases ?? {})) {
-        const key = String(from).trim();
-        const value = String(to).trim();
-        if (key && value && key !== value) aliases[key] = value;
-      }
-      const types = {};
-      for (const [label, type] of Object.entries(payload.types ?? {})) {
-        const key = String(label).trim();
-        if (key && TAG_TYPES.includes(type)) types[key] = type;
-      }
-      const dismissed = (payload.dismissed ?? []).filter((pair) => pair?.from && pair?.to);
-      const labels = await collectLabels();
-      const problems = aliasProblems(aliases, labels);
+      const file = normalizeAliasFile(JSON.parse(await readBody(req)));
+      const problems = aliasProblems(file.aliases);
       if (problems.length > 0) return json(res, 400, { error: problems.join('; ') });
-      await writeJson(ALIASES_PATH, { version: 1, aliases, types, dismissed });
+      await writeJson(ALIASES_PATH, file);
       json(res, 200, { ok: true });
       return;
     }
@@ -739,44 +506,8 @@ const handleRequest = async (req, res) => {
 
       const overrides = await loadOverrides();
       const previous = overrides.get(id) ?? { version: 1, tracks: [], topics: [], credits: { rename: {} } };
-      // Nowe wpisy zastępują pasujące, reszta poprzednich poprawek zostaje — inaczej
-      // zapis jednego wiersza kasowałby wcześniejsze korekty.
-      const sameTrack = (left, right) =>
-        normalize(left.artist) === normalize(right.artist) &&
-        normalize(left.title) === normalize(right.title) &&
-        normalize(left.album ?? '') === normalize(right.album ?? '');
-      // Edytor wysyła `null`, gdy pole zostanie wyczyszczone (album bywa `null` już
-      // w danych odcinka), a schemat strony przyjmuje tylko tekst albo brak pola —
-      // bez tego zapis wywalał build.
-      const compact = (fix) => Object.fromEntries(Object.entries(fix).filter(([, value]) => value !== null && value !== undefined));
-      const tracks = [...previous.tracks];
-      for (const incoming of payload.tracks ?? []) {
-        const fix = compact(incoming);
-        const index = tracks.findIndex((existing) => sameTrack(existing, fix));
-        if (index >= 0) tracks[index] = fix;
-        else tracks.push(fix);
-      }
-      const sameTopic = (left, right) => left.time === right.time && normalize(left.label) === normalize(right.label);
-      const topics = [...(previous.topics ?? [])];
-      for (const incoming of payload.topics ?? []) {
-        const fix = compact(incoming);
-        const index = topics.findIndex((existing) => sameTopic(existing, fix));
-        if (index >= 0) topics[index] = fix;
-        else topics.push(fix);
-      }
-      const next = {
-        version: 1,
-        tracks,
-        topics,
-        addTracks: (payload.addTracks ?? previous.addTracks ?? []).map(compact),
-        addTopics: (payload.addTopics ?? previous.addTopics ?? []).map(compact),
-        credits: previous.credits ?? { rename: {} },
-      };
-      const empty =
-        next.tracks.length === 0 &&
-        next.topics.length === 0 &&
-        next.addTracks.length === 0 &&
-        next.addTopics.length === 0;
+      const next = mergeOverrides(previous, payload);
+      const empty = isEmptyOverrides(next);
       // Dziennik: każdy zapis zostawia pełną kopię, więc wersję sprzed złej zmiany
       // można przywrócić bez sięgania do gita. Trzymamy ostatnie 20.
       await mkdir(JOURNAL, { recursive: true });

@@ -11,7 +11,7 @@
  */
 import { readFile, writeFile } from 'node:fs/promises';
 
-import { splitTags } from '../src/lib/tags.ts';
+import { splitTags } from '../site/src/lib/tags.ts';
 
 const args = new Map();
 for (let index = 2; index < process.argv.length; index += 1) {

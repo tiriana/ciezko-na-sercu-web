@@ -1,12 +1,13 @@
-// Musi odpowiadać TAG_TYPES/TAG_SOURCES w src/lib/schema.ts.
+// Musi odpowiadać TAG_TYPES/TAG_SOURCES w site/src/lib/schema.ts.
 const TAG_TYPES = ['artist', 'person', 'work', 'event', 'concert', 'place', 'theme', 'editorial'];
 const TAG_SOURCES = ['tracks', 'credits', 'transcript', 'profile', 'title'];
 
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { aliasesSchema, catalogSchema, episodeSchema, peopleSchema, titlesSchema } from '../src/lib/schema.ts';
-import { splitTag } from '../src/lib/tags.ts';
+import { resolveAlias as resolveAliasShared } from '../lib/aliases.mjs';
+import { aliasesSchema, catalogSchema, episodeSchema, peopleSchema, titlesSchema } from '../site/src/lib/schema.ts';
+import { splitTag } from '../site/src/lib/tags.ts';
 
 const DATA = 'data';
 const EPISODES = join(DATA, 'episodes');
@@ -48,15 +49,7 @@ const catalog = catalogSchema.parse(JSON.parse(await readFile(join(DATA, 'catalo
 const titles = titlesSchema.parse(JSON.parse(await readFile(join(DATA, 'titles.json'), 'utf8')));
 const { aliases, types: tagTypes, dismissed } = aliasesSchema.parse(JSON.parse(await readFile(join(DATA, 'aliases.json'), 'utf8')));
 
-const resolveAlias = (label) => {
-  let current = label;
-  for (let step = 0; step < 5; step++) {
-    const next = aliases[current];
-    if (!next || next === current) break;
-    current = next;
-  }
-  return current;
-};
+const resolveAlias = (label) => resolveAliasShared(label, aliases);
 
 // Etykiety spotkane w danych: tagi i nazwy w creditsach. Alias musi wskazywać na jedną z nich,
 // inaczej literówka w aliasie cicho rozjedzie tag na dwa.
@@ -235,8 +228,11 @@ for (const [alias, target] of Object.entries(aliases)) {
   if (alias === target) problems.push(`alias ${alias} wskazuje sam na siebie`);
   if (!knownLabels.has(target)) unknownTargets.push(`${alias} -> ${target}`);
 }
+// Typy kluczuje etykieta kanoniczna, czyli także cel aliasu — taka etykieta może nie
+// występować w żadnym odcinku, dopóki alias jej nie podstawi.
+const typeLabels = new Set([...knownLabels, ...Object.values(aliases)]);
 for (const label of Object.keys(tagTypes)) {
-  if (!knownLabels.has(label)) problems.push(`types: nie ma etykiety ${label}`);
+  if (!typeLabels.has(label)) problems.push(`types: nie ma etykiety ${label}`);
 }
 
 if (unknownTargets.length > 0) {

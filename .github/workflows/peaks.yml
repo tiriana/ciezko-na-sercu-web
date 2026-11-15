@@ -1,0 +1,57 @@
+name: peaks
+
+# Waveform dla edytora online. Przeglądarka nie policzy go sama (static.prsa.pl nie
+# daje CORS, a AnalyserNode wymaga odtwarzania w czasie rzeczywistym), więc pliki
+# powstają tutaj i leżą w `data/peaks`, skąd edytor czyta je przez raw.githubusercontent.
+# Commit idzie z `chore:`, bo to nie zmienia strony — bez typu wydania nie ma deployu.
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/catalog.json']
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: 'UUID odcinków oddzielone przecinkami; puste = wszystkie bez pliku'
+        required: false
+        type: string
+
+run-name: "waveform: ${{ inputs.ids || 'brakujące odcinki' }}"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: peaks
+  cancel-in-progress: false
+
+jobs:
+  peaks:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5
+        with:
+          cache: true
+
+      - name: Upewnij się, że jest ffmpeg
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg
+          fi
+
+      - name: Policz waveform
+        env:
+          IDS: ${{ inputs.ids }}
+        run: |
+          if [ -n "$IDS" ]; then
+            node scripts/compute-peaks.mjs $(printf '%s' "$IDS" | tr ',' ' ')
+          else
+            node scripts/compute-peaks.mjs --all
+          fi
+
+      - name: Zapisz w repozytorium
+        run: scripts/push-data.sh "chore(dane): waveform dla edytora online" data/peaks

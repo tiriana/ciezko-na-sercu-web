@@ -1,0 +1,36 @@
+---
+import { getCatalog } from '../lib/data';
+import { version } from '../../../package.json';
+
+const catalog = await getCatalog();
+---
+
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div>
+      <p class="footer-mark">{catalog.program.name}</p>
+      <p>
+        Nieoficjalny indeks audycji. Nie kopiujemy ani nie hostujemy nagrań — odsyłamy wyłącznie do
+        publicznie dostępnych plików Polskiego Radia, które pobiera bezpośrednio przeglądarka.
+      </p>
+    </div>
+    <div>
+      <h3>Nawigacja</h3>
+      <ul>
+        <li><a href="/">Lista odcinków</a></li>
+        <li><a href={catalog.program.pageUrl} target="_blank" rel="noopener noreferrer">Audycja w Trójce</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Kontakt</h3>
+      <ul>
+        <li><a href="mailto:ciezko@polskieradio.pl">ciezko@polskieradio.pl</a> — redakcja audycji</li>
+        <li><a href="mailto:tiriana@wp.pl">tiriana@wp.pl</a> — autor katalogu</li>
+        <li><a href="/o-projekcie/">O projekcie</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="site-footer__version" aria-label={`Wersja ${version}`}>
+    <a href={`https://github.com/tiriana/ciezko-na-sercu-web/releases/tag/v${version}`} rel="noopener noreferrer">{version}</a>
+  </p>
+</footer>

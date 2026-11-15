@@ -1,7 +1,7 @@
 import { copyFile, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 
-import { splitTags } from '../src/lib/tags.ts';
+import { splitTags } from '../site/src/lib/tags.ts';
 import { frozenEpisodes } from './frozen.mjs';
 
 const [workDir, outputDir = 'data/episodes', transcriptsDir = 'data/transcripts'] = process.argv.slice(2);
@@ -84,7 +84,7 @@ const parseSources = (source) =>
 
 const isoDate = (date) => date.toISOString().slice(0, 10);
 
-// Ta sama reguła co tagId w src/lib/tags.ts: id tagu musi być identyczny po obu stronach.
+// Ta sama reguła co tagId w site/src/lib/tags.ts: id tagu musi być identyczny po obu stronach.
 const tagId = (label) =>
   label
     .normalize('NFD')

@@ -1,7 +1,7 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { estimateSchedule, planQueue, MINUTES_PER_EPISODE, NIGHT_MINUTES } from '../src/lib/schedule.ts';
+import { estimateSchedule, planQueue, MINUTES_PER_EPISODE, NIGHT_MINUTES } from '../site/src/lib/schedule.ts';
 
 /**
  * Stan kolejki opracowań: dla redakcji, nie dla widzów. Zapisuje data/queue.json,

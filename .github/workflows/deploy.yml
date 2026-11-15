@@ -74,7 +74,7 @@ jobs:
           # Nazwa gałęzi wybiera adres: main to produkcja, develop — staging
           # na https://develop.<projekt>.pages.dev, v2 — nowy pipeline,
           # feat/** — podglądy.
-          npx --yes wrangler@$WRANGLER_VERSION pages deploy dist \
+          npx --yes wrangler@$WRANGLER_VERSION pages deploy site/dist \
             --project-name "$CF_PROJECT" --branch="$GITHUB_REF_NAME" --commit-dirty=true
 
       - name: Test dymny po publikacji
