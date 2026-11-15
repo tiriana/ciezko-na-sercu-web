@@ -72,11 +72,11 @@ krótszy niż realne audio — bez tego kreska rozjeżdża się ku końcowi audy
 
 ## Ograniczenia
 
-1. Szkice, „przejrzane” i postęp żyją w pamięci karty — odświeżenie strony je gubi.
-   Źródłem prawdy jest repozytorium, więc nic nie przepada trwale, ale telefon i komputer
-   nie widzą tych samych szkiców.
-2. Edytor obsługuje utwory i tytuł odcinka; wejścia, streszczenie, tagi i creditsy zostają
-   w edytorze lokalnym (`npm run edytor`).
+1. Szkice, „przejrzane” i postęp żyją w IndexedDB — per urządzenie. Źródłem prawdy jest
+   repozytorium, więc nic nie przepada trwale, ale telefon i komputer nie widzą tych samych
+   szkiców; wyczyszczenie danych przeglądarki też je kasuje.
+2. Edytor obsługuje utwory i tytuł odcinka; wejścia, streszczenie, tagi, aliasy i creditsy
+   zostają w edytorze lokalnym (`npm run edytor`).
 3. Edytor publikuje prosto do `main` — bez PR. Cudza osoba z prawem zapisu mogłaby to
    zrobić tak samo; to świadoma decyzja z epica #80 (wersja jednoosobowa).
 
