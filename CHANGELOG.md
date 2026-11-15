@@ -1,3 +1,9 @@
+## [1.80.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.79.0...v1.80.0) (2026-11-15)
+
+### Features
+
+* **edytor:** edytor online bez backendu ([#93](https://github.com/tiriana/ciezko-na-sercu-web/issues/93)) ([438b0e8](https://github.com/tiriana/ciezko-na-sercu-web/commit/438b0e842eb8a347b8d8c1d372ca72ff4796199b))
+
 ## [1.79.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.78.0...v1.79.0) (2026-11-15)
 
 ### Features
