@@ -22,7 +22,12 @@
       </div>
     </header>
 
-    <main class="layout">
+    <nav class="tabs" role="tablist" aria-label="Widoki">
+      <button id="tab-episodes" class="tab" role="tab" aria-selected="true" type="button">Odcinki</button>
+      <button id="tab-tags" class="tab" role="tab" aria-selected="false" type="button">Tagi i aliasy</button>
+    </nav>
+
+    <main class="layout" id="view-episodes">
       <aside class="list" aria-label="Odcinki">
         <input id="filter" type="search" placeholder="filtruj po dacie lub tytule" />
         <ul id="episodes"></ul>
@@ -63,6 +68,63 @@
         <p class="hint" id="hint">Zmiany zbierają się w szkicu na tej karcie — publikacja wysyła jeden commit na main.</p>
         <button id="discard" type="button" class="ghost small">odrzuć szkic</button>
       </section>
+    </main>
+
+    <main class="tags" id="view-tags" hidden>
+      <p class="hint" id="tags-status">wczytuję etykiety…</p>
+
+      <section aria-labelledby="aliases-title">
+        <h2 id="aliases-title">Warianty tej samej nazwy</h2>
+        <p class="muted">
+          Wariant po lewej pokazuje się na stronie jako etykieta po prawej. Zapis idzie do
+          <code>data/aliases.json</code> jednym commitem, więc strona przebuduje się sama.
+        </p>
+        <table class="alias-table">
+          <thead>
+            <tr>
+              <th>wariant</th>
+              <th>etykieta kanoniczna</th>
+              <th class="num"></th>
+            </tr>
+          </thead>
+          <tbody id="alias-rows"></tbody>
+        </table>
+        <div class="alias-add">
+          <input id="alias-from" type="text" list="tag-labels" placeholder="wariant, np. Vogg" />
+          <input id="alias-to" type="text" list="tag-labels" placeholder="kanoniczna, np. Wacław &quot;Vogg&quot; Kiełtyka" />
+          <button id="alias-add" class="ghost small" type="button">dodaj</button>
+        </div>
+        <datalist id="tag-labels"></datalist>
+      </section>
+
+      <section aria-labelledby="candidates-title">
+        <h2 id="candidates-title">Kandydaci</h2>
+        <p class="muted">Osoby, których krótsza etykieta jest całym słowem w dłuższej. Sprawdź, czy to naprawdę ta sama osoba.</p>
+        <ul class="candidates" id="alias-candidates"></ul>
+        <p class="muted" id="alias-dismissed"></p>
+      </section>
+
+      <section aria-labelledby="labels-title">
+        <h2 id="labels-title">Etykiety w danych</h2>
+        <input id="tag-search" type="search" placeholder="filtruj etykiety…" />
+        <p class="muted" id="tag-count"></p>
+        <table class="tag-table">
+          <thead>
+            <tr>
+              <th>etykieta</th>
+              <th>typ</th>
+              <th class="num">odcinki</th>
+            </tr>
+          </thead>
+          <tbody id="tag-rows"></tbody>
+        </table>
+      </section>
+
+      <div class="tags-actions">
+        <button id="aliases-save" type="button" disabled>Zapisz data/aliases.json</button>
+        <button id="aliases-reset" class="ghost small" type="button">cofnij zmiany</button>
+        <span class="hint" id="aliases-hint"></span>
+      </div>
     </main>
 
     <dialog id="login">

@@ -31,7 +31,7 @@ export const loadText = async (path) => {
           if (fresh.notModified) return;
           if (fresh.missing) return;
           await putFile(path, fresh.text, fresh.etag);
-          window.dispatchEvent(new CustomEvent('edytor:plik-odswiezony', { detail: { path } }));
+          window.dispatchEvent(new CustomEvent('edytor:plik-odswiezony', { detail: { path, text: fresh.text } }));
         } catch {}
       })();
       return cached.body;

@@ -11,6 +11,7 @@ import { deleteDraft, getDraft, getMeta, putDraft, putMeta } from './store.js';
 import { loadJson, loadJsonFresh } from './source.js';
 import { config } from './config.js';
 import { drawWaveform, loadPeaks } from './peaks.js';
+import { aliasCandidates, aliasProblems, collectLabels, emptyAliasFile, normalizeAliasFile, resolveAlias, TAG_TYPES, tagRows } from './lib/aliases.mjs';
 
 const $ = (selector) => document.querySelector(selector);
 
@@ -31,6 +32,12 @@ const state = {
   // treść odcinka: `data/reviewed.json` zostaje dla automatywów i edytora lokalnego.
   reviewed: {},
   draftTimer: null,
+  // Etykiety liczone z odcinków pobranych przez klienta odczytu; `aliasBase` to
+  // znormalizowany stan z repozytorium, więc porównanie wykrywa cudzą zmianę.
+  labels: null,
+  aliasDraft: null,
+  aliasBase: null,
+  tagsBusy: false,
 };
 
 const setStatus = (text, kind = '') => {
@@ -317,9 +324,11 @@ const openEpisode = async (episode) => {
     notify(`przywrócony szkic z ${new Date(draft.at).toLocaleString('pl-PL')} — publikacja albo „odrzuć szkic”`);
   }
 
+  // Adres tylko w `data-src`: 110-minutowy plik zaczyna się pobierać dopiero, gdy
+  // użytkownik naprawdę kliknie play albo waveform.
   const audio = $('#audio');
-  audio.src = episode.audioUrl ?? '';
-  audio.load();
+  audio.removeAttribute('src');
+  audio.dataset.src = episode.audioUrl ?? '';
   renderTracks();
   renderWave();
   notify(peaks ? 'waveform z repozytorium' : 'brak pliku waveformu — czasy wpisujemy ręcznie');
@@ -389,8 +398,273 @@ const publish = async () => {
     notify(`zapisane: ${result.url}`);
     setStatus(`zalogowany jako ${currentSession().login}`, 'ok');
   } catch (error) {
+    if (!currentSession().canPush) bootAuth();
     notify(error.message, 'error');
     refreshPublish();
+  }
+};
+
+const fetchEpisodes = async (entries, onProgress) => {
+  const out = [];
+  let next = 0;
+  const worker = async () => {
+    while (next < entries.length) {
+      const entry = entries[next++];
+      const episode = await loadJson(`data/episodes/${entry.id}.json`).catch(() => null);
+      if (episode) out.push(episode);
+      onProgress(out.length);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(8, entries.length) }, () => worker()));
+  return out;
+};
+
+const aliasDirty = () =>
+  state.aliasDraft !== null && JSON.stringify(normalizeAliasFile(state.aliasDraft)) !== state.aliasBase;
+
+const notifyAliases = (text, kind = '') => {
+  const hint = $('#aliases-hint');
+  hint.textContent = text;
+  hint.className = `hint ${kind}`;
+};
+
+const refreshAliasSave = () => {
+  $('#aliases-save').disabled = !currentSession().canPush || !aliasDirty();
+};
+
+const openTags = async () => {
+  if (state.labels) return renderTags();
+  if (state.tagsBusy) return;
+  state.tagsBusy = true;
+  const status = $('#tags-status');
+  const entries = state.catalog?.episodes ?? [];
+  try {
+    const file = await loadJson('data/aliases.json').catch(() => null);
+    const episodes = await fetchEpisodes(entries, (done) => {
+      status.textContent = `pobieram odcinki… ${done}/${entries.length}`;
+    });
+    state.labels = collectLabels(episodes);
+    state.aliasDraft = normalizeAliasFile(file ?? emptyAliasFile());
+    state.aliasBase = JSON.stringify(state.aliasDraft);
+    status.textContent = `${episodes.length} odcinków, ${state.labels.size} etykiet — dane z pamięci tej karty`;
+    renderTags();
+  } catch (error) {
+    status.textContent = `nie udało się wczytać etykiet: ${error.message}`;
+  } finally {
+    state.tagsBusy = false;
+  }
+};
+
+const showView = (view) => {
+  const tags = view === 'tags';
+  $('#view-episodes').hidden = tags;
+  $('#view-tags').hidden = !tags;
+  $('#tab-episodes').setAttribute('aria-selected', String(!tags));
+  $('#tab-tags').setAttribute('aria-selected', String(tags));
+  if (tags) void openTags();
+};
+
+const setAlias = (from, to) => {
+  const draft = state.aliasDraft;
+  draft.aliases[from] = to;
+  renderTags();
+};
+
+const removeAlias = (from) => {
+  delete state.aliasDraft.aliases[from];
+  renderTags();
+};
+
+const dismissCandidate = (pair) => {
+  const draft = state.aliasDraft;
+  if (!draft.dismissed.some((item) => item.from === pair.from && item.to === pair.to)) draft.dismissed.push({ ...pair });
+  renderTags();
+};
+
+const restoreCandidate = (pair) => {
+  state.aliasDraft.dismissed = state.aliasDraft.dismissed.filter((item) => item.from !== pair.from || item.to !== pair.to);
+  renderTags();
+};
+
+const setType = (label, type) => {
+  const draft = state.aliasDraft;
+  const canonical = resolveAlias(label, draft.aliases);
+  if ((state.labels.get(canonical)?.type ?? '') === type) delete draft.types[canonical];
+  else draft.types[canonical] = type;
+  renderTags();
+};
+
+const renderAliases = () => {
+  const draft = state.aliasDraft;
+  const body = $('#alias-rows');
+  body.innerHTML = '';
+  for (const [from, to] of Object.entries(draft.aliases).sort(([left], [right]) => left.localeCompare(right, 'pl'))) {
+    const tr = document.createElement('tr');
+    const fromCell = document.createElement('td');
+    fromCell.textContent = from;
+    const toInput = document.createElement('input');
+    toInput.type = 'text';
+    toInput.value = to;
+    toInput.setAttribute('list', 'tag-labels');
+    toInput.addEventListener('change', () => {
+      const value = toInput.value.trim();
+      if (value) setAlias(from, value);
+      else removeAlias(from);
+    });
+    const toCell = document.createElement('td');
+    toCell.append(toInput);
+    const remove = document.createElement('button');
+    remove.type = 'button';
+    remove.className = 'ghost small';
+    remove.textContent = 'usuń';
+    remove.addEventListener('click', () => removeAlias(from));
+    const actionCell = document.createElement('td');
+    actionCell.className = 'num';
+    actionCell.append(remove);
+    tr.append(fromCell, toCell, actionCell);
+    body.append(tr);
+  }
+  if (!body.children.length) {
+    const tr = document.createElement('tr');
+    const td = document.createElement('td');
+    td.colSpan = 3;
+    td.className = 'muted';
+    td.textContent = 'brak aliasów';
+    tr.append(td);
+    body.append(tr);
+  }
+};
+
+const renderCandidates = () => {
+  const draft = state.aliasDraft;
+  const list = $('#alias-candidates');
+  list.innerHTML = '';
+  const candidates = aliasCandidates(state.labels, draft.aliases, draft.dismissed);
+  for (const pair of candidates) {
+    const li = document.createElement('li');
+    const from = document.createElement('span');
+    from.textContent = pair.from;
+    const arrow = document.createElement('span');
+    arrow.className = 'arrow';
+    arrow.textContent = '→';
+    const to = document.createElement('span');
+    to.textContent = pair.to;
+    const add = document.createElement('button');
+    add.type = 'button';
+    add.className = 'ghost small';
+    add.textContent = 'dodaj alias';
+    add.addEventListener('click', () => setAlias(pair.from, pair.to));
+    const dismiss = document.createElement('button');
+    dismiss.type = 'button';
+    dismiss.className = 'ghost small';
+    dismiss.textContent = 'pomiń';
+    dismiss.addEventListener('click', () => dismissCandidate(pair));
+    li.append(from, arrow, to, add, dismiss);
+    list.append(li);
+  }
+  if (!candidates.length) {
+    const li = document.createElement('li');
+    li.className = 'muted';
+    li.textContent = 'brak kandydatów';
+    list.append(li);
+  }
+  const dismissed = $('#alias-dismissed');
+  dismissed.textContent = '';
+  for (const pair of draft.dismissed) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'ghost small';
+    button.textContent = `${pair.from} → ${pair.to}: przywróć`;
+    button.addEventListener('click', () => restoreCandidate(pair));
+    dismissed.append(button, document.createTextNode(' '));
+  }
+};
+
+const renderTagRows = () => {
+  const draft = state.aliasDraft;
+  const rows = tagRows(state.labels, draft);
+  const filter = searchKey($('#tag-search').value);
+  const matched = rows.filter((row) => !filter || searchKey(row.label).includes(filter));
+  // 1750 etykiet to za dużo węzłów na telefonie; filtr zawęża listę, więc pokazujemy
+  // pierwsze dwieście i mówimy, ile zostało poza widokiem.
+  const shown = matched.slice(0, 200);
+  const body = $('#tag-rows');
+  body.innerHTML = '';
+  for (const row of shown) {
+    const tr = document.createElement('tr');
+    const labelCell = document.createElement('td');
+    labelCell.textContent = row.label;
+    if (row.canonical !== row.label) {
+      const note = document.createElement('span');
+      note.className = 'alias-of';
+      note.textContent = ` → ${row.canonical}`;
+      labelCell.append(note);
+    }
+    const typeCell = document.createElement('td');
+    const select = document.createElement('select');
+    for (const type of TAG_TYPES) {
+      const option = document.createElement('option');
+      option.value = type;
+      option.textContent = type;
+      option.selected = type === row.type;
+      select.append(option);
+    }
+    select.addEventListener('change', () => setType(row.label, select.value));
+    typeCell.append(select);
+    const countCell = document.createElement('td');
+    countCell.className = 'num';
+    countCell.textContent = String(row.count);
+    tr.append(labelCell, typeCell, countCell);
+    body.append(tr);
+  }
+  $('#tag-count').textContent =
+    matched.length > shown.length
+      ? `${shown.length} z ${matched.length} pasujących (${rows.length} łącznie) — zawęź filtrem`
+      : `${matched.length} z ${rows.length} etykiet`;
+};
+
+const renderTags = () => {
+  if (!state.aliasDraft) return;
+  renderAliases();
+  renderCandidates();
+  renderTagRows();
+  const options = $('#tag-labels');
+  options.innerHTML = '';
+  for (const label of [...state.labels.keys()].sort((left, right) => left.localeCompare(right, 'pl'))) {
+    const option = document.createElement('option');
+    option.value = label;
+    options.append(option);
+  }
+  refreshAliasSave();
+};
+
+const publishAliases = async () => {
+  if (!state.aliasDraft || !currentSession().canPush) return notifyAliases('zaloguj się, żeby zapisać aliasy', 'error');
+  const next = normalizeAliasFile(state.aliasDraft);
+  const problems = aliasProblems(next.aliases);
+  if (problems.length) return notifyAliases(`nie publikuję — ${problems.slice(0, 3).join('; ')}`, 'error');
+
+  // Plik aliasów to całe listy, więc scalanie po polach nie ma sensu: jeśli ktoś zmienił
+  // go w międzyczasie, nadpisanie skasowałoby jego pracę.
+  const fresh = await loadJsonFresh('data/aliases.json').catch(() => null);
+  if (JSON.stringify(normalizeAliasFile(fresh ?? {})) !== state.aliasBase) {
+    return notifyAliases('ktoś zmienił aliasy w repozytorium — odśwież widok i spróbuj ponownie', 'error');
+  }
+
+  $('#aliases-save').disabled = true;
+  notifyAliases('publikuję…');
+  try {
+    const result = await publishChanges('fix(dane): aliasy z edytora online', {
+      'data/aliases.json': `${JSON.stringify(next, null, 2)}\n`,
+    });
+    state.aliasDraft = next;
+    state.aliasBase = JSON.stringify(next);
+    notifyAliases(`zapisane: ${result.url}`, 'ok');
+    renderTags();
+  } catch (error) {
+    if (!currentSession().canPush) bootAuth();
+    notifyAliases(error.message, 'error');
+    refreshAliasSave();
   }
 };
 
@@ -401,6 +675,7 @@ const bootAuth = () => {
   $('#sign-in').hidden = signedIn;
   $('#sign-out').hidden = !signedIn;
   refreshPublish();
+  refreshAliasSave();
 };
 
 const openLogin = () => {
@@ -445,7 +720,26 @@ const waitForDevice = async (device) => {
 };
 
 const bind = () => {
+  $('#tab-episodes').addEventListener('click', () => showView('episodes'));
+  $('#tab-tags').addEventListener('click', () => showView('tags'));
   $('#filter').addEventListener('input', renderList);
+  $('#tag-search').addEventListener('input', renderTagRows);
+  $('#alias-add').addEventListener('click', () => {
+    const from = $('#alias-from').value.trim();
+    const to = $('#alias-to').value.trim();
+    if (!from || !to || from === to) return notifyAliases('wariant i etykieta kanoniczna muszą być różne', 'error');
+    setAlias(from, to);
+    $('#alias-from').value = '';
+    $('#alias-to').value = '';
+    notifyAliases('dodane — zapis wyśle jeden commit');
+  });
+  $('#aliases-save').addEventListener('click', () => void publishAliases());
+  $('#aliases-reset').addEventListener('click', () => {
+    if (!state.aliasBase) return;
+    state.aliasDraft = normalizeAliasFile(JSON.parse(state.aliasBase));
+    renderTags();
+    notifyAliases('cofnięte do stanu z repozytorium');
+  });
   $('#sign-in').addEventListener('click', openLogin);
   $('#sign-out').addEventListener('click', () => {
     signOut();
@@ -477,10 +771,18 @@ const bind = () => {
   });
 
   const audio = $('#audio');
+  const ensureAudio = () => {
+    if (!audio.getAttribute('src') && audio.dataset.src) {
+      audio.src = audio.dataset.src;
+      audio.load();
+    }
+  };
+  audio.addEventListener('play', ensureAudio);
   audio.addEventListener('timeupdate', renderWave);
   audio.addEventListener('seeked', renderWave);
   audio.addEventListener('loadedmetadata', renderWave);
   $('#wave').addEventListener('click', (event) => {
+    ensureAudio();
     const rect = event.currentTarget.getBoundingClientRect();
     const ratio = (event.clientX - rect.left) / rect.width;
     const duration = audio.duration || state.episode?.durationSec || 0;
@@ -496,16 +798,15 @@ const bind = () => {
     notify('szkic odrzucony');
   });
 
+  // Treść przychodzi w zdarzeniu: ponowne `loadJson` uruchomiłoby kolejne odświeżenie
+  // w tle i tak w kółko, bo każda zmiana pliku ogłasza się tym samym zdarzeniem.
   window.addEventListener('edytor:plik-odswiezony', (event) => {
-    const path = event.detail?.path;
-    if (path === 'data/catalog.json') {
-      void loadJson(path).then((catalog) => {
-        if (!catalog) return;
-        state.catalog = catalog;
-        renderList();
-        notify('katalog odświeżony w tle');
-      });
-    }
+    if (event.detail?.path !== 'data/catalog.json' || !event.detail.text) return;
+    try {
+      state.catalog = JSON.parse(event.detail.text);
+      renderList();
+      notify('katalog odświeżony w tle');
+    } catch {}
   });
 
   window.addEventListener('resize', renderWave);

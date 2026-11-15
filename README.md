@@ -91,13 +91,14 @@ ponowienia, a reszta edytora działa normalnie.
 
 ## Edytor online
 
-`https://ciezko-edytor.pages.dev` — ta sama edycja utworów, ale z przeglądarki i bez
-uruchamiania repo lokalnie: dane czyta z `raw.githubusercontent.com`, a zapisuje jednym
-commitem `fix(dane): …` na `main` przez GitHub API (token trzymany tylko w pamięci karty).
+`https://ciezko-edytor.pages.dev` — edycja utworów i tytułów oraz tagi i aliasy
+z przeglądarki, bez uruchamiania repo lokalnie: dane czyta z `raw.githubusercontent.com`,
+a zapisuje jednym commitem `fix(dane): …` na `main` przez GitHub API (token trzymany tylko
+w pamięci karty).
 Szczegóły, bezpieczeństwo i ograniczenia: [docs/edytor-online.md](docs/edytor-online.md).
 
 Lokalnie: `npm run editor:build && npm run editor:serve` (http://localhost:4331),
-test: `npm run test:editor`. Waveform dla edytora liczy `ffmpeg` w `peaks.yml` i commituje
+test: `npm run test:editor` (atrapy GitHuba i raw — zero sieci). Waveform dla edytora liczy `ffmpeg` w `peaks.yml` i commituje
 `data/peaks/` jako `chore:` — bez tego wersja online nie ma podglądu głośności.
 
 ## Dane
@@ -144,8 +145,9 @@ Workflow:
 6. `identify.yml` — rozpoznawanie utworów Shazamem; po commicie zamawia streszczenie.
 7. `repair.yml` — po pushu (i na żądanie) dokańcza utwory bez tytułu i wejścia z `#TODO`.
 8. `release.yml` — wersja i changelog z typów commitów.
-9. `editor.yml` — build i publikacja edytora online na osobny projekt Pages `ciezko-edytor`;
-   test dymny sprawdza, że strona odpowiada i serwuje aplikację.
+9. `editor.yml` — testy wspólnych modułów i e2e edytora, potem build i publikacja na
+   osobny projekt Pages `ciezko-edytor`; test dymny sprawdza, że strona odpowiada
+   i serwuje aplikację.
 10. `peaks.yml` — waveform dla edytora online po zmianie `data/catalog.json`.
 
 ## Dokumentacja

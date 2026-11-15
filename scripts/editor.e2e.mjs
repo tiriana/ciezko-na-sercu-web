@@ -1,19 +1,25 @@
 #!/usr/bin/env node
 /**
  * Test edytora online bez sieci i bez prawdziwego GitHuba: serwujemy zbudowany
- * `.cache/editor-dist`, podmieniamy API GitHuba na atrapę i sprawdzamy, że publikacja
- * faktycznie wysyła jeden commit z poprawnymi plikami.
+ * `.cache/editor-dist`, podmieniamy GitHub API i `raw.githubusercontent.com` na atrapę,
+ * a dane czytamy z lokalnego repozytorium. Żadne żądanie nie wychodzi poza localhost.
  *
  * Użycie: npm run test:editor (najpierw `npm run editor:build`)
  */
-import { createServer } from 'node:http';
+import { createHash } from 'node:crypto';
 import { readFile, stat } from 'node:fs/promises';
-import { extname, join, normalize } from 'node:path';
+import { createServer } from 'node:http';
+import { extname, join, normalize, resolve } from 'node:path';
 
 import { chromium } from 'playwright';
 
 const ROOT = '.cache/editor-dist';
+const REPO = resolve('.');
 const PORT = Number(process.env.EDITOR_TEST_PORT ?? 4391);
+const RAW_PREFIX = '/tiriana/ciezko-na-sercu-web/main/';
+// Bez tego przeglądarka nie pokaże JS nagłówka ETag (nie jest na liście CORS),
+// a wtedy każdy odczyt z pamięci pobierałby plik od nowa.
+const CORS = { 'access-control-allow-origin': '*', 'access-control-expose-headers': 'etag' };
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
@@ -21,6 +27,7 @@ const TYPES = {
   '.css': 'text/css; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.svg': 'image/svg+xml',
+  '.bin': 'application/octet-stream',
 };
 
 const server = createServer(async (req, res) => {
@@ -43,22 +50,59 @@ const fail = (message) => {
 
 const ok = (message) => console.log(`✓ ${message}`);
 
-await new Promise((resolve) => server.listen(PORT, resolve));
+await new Promise((resolveListen) => server.listen(PORT, resolveListen));
 
 const browser = await chromium.launch();
 const page = await browser.newPage();
-const steps = [];
-const publishes = [];
-let current = null;
+page.on('pageerror', (error) => console.error('[pageerror]', String(error).slice(0, 400)));
 
-await page.route('https://api.github.com/**', async (route) => {
+const blobs = [];
+const publishes = [];
+const external = [];
+const validTokens = new Set();
+let current = null;
+let conflicts = 0;
+let conflictPending = false;
+let notModified = 0;
+
+const serveRepoFile = async (route, request) => {
+  const url = new URL(request.url());
+  if (!url.pathname.startsWith(RAW_PREFIX)) return route.fulfill({ status: 404, body: '404' });
+  const path = decodeURIComponent(url.pathname.slice(RAW_PREFIX.length));
+  if (path.includes('..') || !/^(data\/|package\.json$)/.test(path)) return route.fulfill({ status: 404, body: '404' });
+  try {
+    const body = await readFile(join(REPO, path));
+    const etag = `"${createHash('sha1').update(body).digest('hex')}"`;
+    if (request.headers()['if-none-match'] === etag) {
+      notModified += 1;
+      return route.fulfill({ status: 304, headers: { etag, ...CORS } });
+    }
+    return route.fulfill({
+      status: 200,
+      contentType: TYPES[extname(path)] ?? 'application/octet-stream',
+      headers: { etag, ...CORS },
+      body,
+    });
+  } catch {
+    return route.fulfill({ status: 404, body: '404' });
+  }
+};
+
+const handleApi = async (route) => {
   const request = route.request();
   const url = new URL(request.url());
   const path = url.pathname;
   const method = request.method();
   const json = (body, status = 200) => route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(body) });
+  const token = (request.headers()['authorization'] ?? '').replace(/^Bearer /, '');
 
-  if (path === '/user') return json({ login: 'radomir' });
+  if (path === '/user') {
+    if (!token) return json({ message: 'wymagany token' }, 401);
+    validTokens.add(token);
+    return json({ login: 'radomir' });
+  }
+  // Wygaszony token: każde kolejne żądanie dostaje 401, tak jak od GitHuba.
+  if (!validTokens.has(token)) return json({ message: 'Bad credentials' }, 401);
   if (path === '/repos/tiriana/ciezko-na-sercu-web' && method === 'GET') {
     return json({ permissions: { push: true, admin: false } });
   }
@@ -66,12 +110,12 @@ await page.route('https://api.github.com/**', async (route) => {
   if (path.endsWith('/git/commits/parent1')) return json({ tree: { sha: 'tree0' } });
   if (path.endsWith('/git/blobs')) {
     const body = JSON.parse(request.postData() ?? '{}');
-    steps.push({ kind: 'blob', content: body.content });
-    return json({ sha: `blob${steps.length}` });
+    blobs.push({ kind: 'blob', content: body.content });
+    return json({ sha: `blob${blobs.length}` });
   }
   if (path.endsWith('/git/trees')) {
     const body = JSON.parse(request.postData() ?? '{}');
-    current = { tree: body.tree, base: body.base_tree, blobs: [...steps] };
+    current = { tree: body.tree, base: body.base_tree, blobs: [...blobs] };
     publishes.push(current);
     return json({ sha: `tree${publishes.length}` });
   }
@@ -84,11 +128,25 @@ await page.route('https://api.github.com/**', async (route) => {
     return json({ sha: 'commit1' });
   }
   if (path.endsWith('/git/refs/heads/main') && method === 'PATCH') {
+    if (conflictPending) {
+      conflictPending = false;
+      conflicts += 1;
+      return json({ message: 'branch changed' }, 409);
+    }
     const body = JSON.parse(request.postData() ?? '{}');
     if (current) current.refSha = body.sha;
     return json({ object: { sha: 'commit1' } });
   }
   return json({ message: 'nieznany endpoint w atrapie' }, 404);
+};
+
+await page.route('**/*', async (route) => {
+  const url = new URL(route.request().url());
+  if (url.hostname === 'localhost') return route.continue();
+  if (url.hostname === 'raw.githubusercontent.com') return serveRepoFile(route, route.request());
+  if (url.hostname === 'api.github.com') return handleApi(route);
+  external.push(url.href);
+  return route.abort();
 });
 
 try {
@@ -116,9 +174,9 @@ try {
   await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, { timeout: 10000 });
   ok('logowanie przyjęte');
 
-  const artistInput = page.locator('#tracks tr:first-child td:nth-child(4) input');
-  await artistInput.fill('Poprawiony Wykonawca');
-  await artistInput.press('Tab');
+  const artistCell = () => page.locator('#tracks tr:first-child td:nth-child(4) input');
+  await artistCell().fill('Poprawiony Wykonawca');
+  await artistCell().press('Tab');
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
   ok('szkic odblokował publikację');
 
@@ -184,7 +242,6 @@ try {
 
   // Szkic: zmiana ma przetrwać przeładowanie karty (IndexedDB). Zapis jest odroczony
   // o 0,5 s, więc dajemy mu dojść do skutku przed przeładowaniem.
-  const artistCell = () => page.locator('#tracks tr:first-child td:nth-child(4) input');
   await artistCell().fill('Szkic po przeładowaniu');
   await artistCell().press('Tab');
   await page.waitForTimeout(900);
@@ -201,7 +258,92 @@ try {
     { timeout: 10000 }
   );
   ok('szkic przeżył przeładowanie karty');
+  if (notModified > 0) ok(`drugi odczyt poszedł po ETagu (304 × ${notModified})`);
+  else fail('odczyt z pamięci nie użył warunkowego żądania');
 
+  // Przeładowanie karty zgubiło token (żyje tylko w pamięci), więc logujemy się znowu.
+  await page.locator('#sign-in').click();
+  await page.locator('#token').fill('testowy-token');
+  await page.locator('#login-token').click();
+  await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, { timeout: 10000 });
+  ok('szkic i ponowne logowanie po przeładowaniu');
+
+  // Konflikt: gałąź zmieniła się w trakcie publikacji — edytor pobiera ref ponownie.
+  conflictPending = true;
+  const beforeConflict = publishes.length;
+  await artistCell().fill('Po konflikcie');
+  await artistCell().press('Tab');
+  await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
+  await publishAndWait();
+  if (conflicts === 1) ok('konflikt 409 kończy się ponowną próbą');
+  else fail(`oczekiwano jednego konfliktu, było ${conflicts}`);
+  if (publishes.length === beforeConflict + 2) ok('druga próba po konflikcie tworzy commit');
+  else fail(`po konflikcie oczekiwano dwóch prób, było ${publishes.length - beforeConflict}`);
+
+  // 401: wygaszony token nie może zapisać nic po cichu — UI wraca do logowania.
+  await artistCell().fill('Po wygaśnięciu');
+  await artistCell().press('Tab');
+  await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
+  validTokens.clear();
+  const beforeExpiry = publishes.length;
+  await page.locator('#publish').click();
+  await page.waitForFunction(() => document.querySelector('#hint')?.textContent.includes('sesja wygasła'), null, {
+    timeout: 10000,
+  });
+  if (publishes.length === beforeExpiry) ok('wygaszony token nie tworzy commita');
+  else fail('wygaszony token zapisał commit');
+  if (await page.locator('#sign-in').isVisible()) ok('po 401 edytor prosi o logowanie');
+  else fail('po 401 brak przycisku logowania');
+  if (await page.locator('#publish').isDisabled()) ok('po 401 publikacja zablokowana');
+  else fail('po 401 publikacja dalej aktywna');
+
+  await page.locator('#sign-in').click();
+  await page.locator('#token').fill('nowy-token');
+  await page.locator('#login-token').click();
+  await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, { timeout: 10000 });
+  const afterRelogin = await publishAndWait();
+  if (afterRelogin.refSha === 'commit1') ok('po ponownym logowaniu szkic da się opublikować');
+  else fail('po ponownym logowaniu publikacja nie przeszła');
+
+  // Tagi i aliasy: lista etykiet liczona z odcinków pobranych przez klienta odczytu.
+  await page.locator('#tab-tags').click();
+  await page.waitForFunction(() => document.querySelectorAll('#tag-rows tr').length > 0, null, { timeout: 60000 });
+  const tagRows = await page.locator('#tag-rows tr').count();
+  if (tagRows > 0) ok(`etykiety policzone w przeglądarce: ${tagRows} wierszy`);
+  else fail('brak etykiet w widoku tagów');
+  const candidates = await page.locator('#alias-candidates li').count();
+  if (candidates > 0) ok(`kandydaci na alias: ${candidates}`);
+  else fail('brak kandydatów na alias');
+
+  await page.locator('#tag-search').fill('Szubrycht');
+  const filtered = await page.locator('#tag-rows tr').count();
+  if (filtered > 0 && filtered < tagRows) ok(`filtr etykiet zawęża listę (${filtered})`);
+  else fail('filtr etykiet nie działa');
+  await page.locator('#tag-search').fill('');
+
+  const beforeAliases = publishes.length;
+  await page.locator('#alias-from').fill('Testowy Wariant');
+  await page.locator('#alias-to').fill('Jarek Szubrycht');
+  await page.locator('#alias-add').click();
+  await page.waitForFunction(() => !document.querySelector('#aliases-save').disabled, null, { timeout: 5000 });
+  await page.locator('#aliases-save').click();
+  await page.waitForFunction(() => document.querySelector('#aliases-hint')?.textContent.startsWith('zapisane'), null, {
+    timeout: 10000,
+  });
+  const aliasPublish = publishes.at(-1);
+  const aliasPaths = aliasPublish.tree.map((entry) => entry.path);
+  if (aliasPaths.includes('data/aliases.json')) ok('alias zapisany jednym commitem do data/aliases.json');
+  else fail(`commit bez data/aliases.json (jest: ${aliasPaths.join(', ')})`);
+  const aliasBlob = aliasPublish.blobs.find(
+    (step) => step.kind === 'blob' && step.content.includes('Testowy Wariant') && step.content.includes('Jarek Szubrycht')
+  );
+  if (aliasBlob) ok('alias trafił do treści pliku');
+  else fail('w pliku aliasów brak nowej pary');
+  if (publishes.length === beforeAliases + 1) ok('zapis aliasów to jeden commit');
+  else fail(`zapis aliasów zrobił ${publishes.length - beforeAliases} commitów`);
+
+  if (external.length === 0) ok('żadne żądanie nie wyszło poza mock');
+  else fail(`ruch poza mockiem: ${external.join(', ')}`);
 } catch (error) {
   fail(error.message);
 } finally {

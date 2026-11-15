@@ -19,10 +19,24 @@ uruchamiania czegokolwiek lokalnie. Nie ma backendu: przeglądarka czyta dane pr
    commit** na `main` przez Git Data API: blob → tree (`base_tree`) → commit → `PATCH` ref.
    Commit ma typ `fix`, więc semantic-release zrobi patch i `deploy.yml` opublikuje stronę.
 4. Commit dotyka `data/overrides/<uuid>.json` i, przy zmianie tytułu, `data/titles.json`.
+   Zapis aliasów to osobny commit na `data/aliases.json` (widok „Tagi i aliasy”).
 
 Jeden commit zamiast pliku po pliku jest istotny: każdy push do `main` zmieniający
 `data/**` odpala `repair.yml`, a `release.yml` robi wydanie, więc trzy pliki zapisane
 osobno to trzy wydania i trzy deploye.
+
+## Tagi i aliasy
+
+1. Lista etykiet powstaje w przeglądarce: edytor pobiera pliki wszystkich odcinków przez
+   klienta odczytu (cache w IndexedDB), składa z nich tagi i nazwy z creditsów i dzieli
+   zlepione etykiety tym samym `lib/tags.mjs`, którego używa strona — bez kopii reguł.
+2. Widok pokazuje warianty (`aliases`), kandydatów na scalenie, pominięte pary
+   (`dismissed`) i typy etykiet (`types`). Kandydat = osoba, której krótsza etykieta jest
+   całym słowem w dłuższej.
+3. Zapis waliduje tylko alias na samego siebie i pętlę łańcucha. Cel aliasu nie musi
+   istnieć w danych — kanoniczna nazwa bywa ustalona, zanim pojawi się w odcinku.
+4. Przed commitem edytor pobiera świeży `data/aliases.json`. Jeśli różni się od wczytanego,
+   publikacja jest wstrzymana: plik to całe listy, więc nadpisanie skasowałoby cudzą pracę.
 
 ## Logowanie
 
@@ -52,6 +66,9 @@ dozwolonych osób do utrzymywania.
 2. Strona jest osobnym originem od produkcji i ma `X-Robots-Tag: noindex`.
 3. Znika po zamknięciu karty; wylogowanie czyści go natychmiast. Unieważnienie tokenu
    w GitHubie odcina dostęp bez zmian w kodzie.
+4. Odpowiedź 401 czyści sesję i pokazuje przycisk logowania; szkic zostaje w IndexedDB,
+   więc po ponownym zalogowaniu publikacja wysyła te same zmiany. Nic nie zapisuje się
+   po cichu.
 4. Historia i cofanie są po stronie Gita: każda publikacja to commit `fix(dane): …`,
    więc `git revert` wystarcza.
 
@@ -70,13 +87,25 @@ rzeczywistym — przeglądarka nie policzy więc waveformu sama. Liczy go `ffmpe
 Skala waveformu jest skalą odtwarzacza (`scripts/lib/timeline.mjs`), bo nagłówek mp3 bywa
 krótszy niż realne audio — bez tego kreska rozjeżdża się ku końcowi audycji.
 
+## Testy
+
+`npm run test:editor` (Playwright) nie dotyka sieci: `api.github.com` i
+`raw.githubusercontent.com` są podmienione atrapami, a pliki danych czyta z lokalnego
+repozytorium. Scenariusze: brak tokenu blokuje publikację, edycja wysyła jeden commit
+z oczekiwaną treścią, strażnik czasu nie wpuszcza złego pliku, szkic przeżywa przeładowanie
+karty, drugi odczyt idzie po `ETag` (304), konflikt `409` kończy się ponowną próbą,
+`401` wraca do logowania bez commita, alias zapisuje się jednym commitem, a żadne żądanie
+nie wychodzi poza atrapę. Job `test` w `editor.yml` uruchamia te testy przed deployem.
+
 ## Ograniczenia
 
 1. Szkice, „przejrzane” i postęp żyją w IndexedDB — per urządzenie. Źródłem prawdy jest
    repozytorium, więc nic nie przepada trwale, ale telefon i komputer nie widzą tych samych
    szkiców; wyczyszczenie danych przeglądarki też je kasuje.
-2. Edytor obsługuje utwory i tytuł odcinka; wejścia, streszczenie, tagi, aliasy i creditsy
-   zostają w edytorze lokalnym (`npm run edytor`).
+2. Edytor obsługuje utwory, tytuł odcinka oraz tagi i aliasy; wejścia, streszczenie
+   i creditsy zostają w edytorze lokalnym (`npm run edytor`).
+3. Audio pobiera się dopiero po kliknięciu play albo waveformu — 110-minutowy plik nie
+   schodzi przy samym otwarciu odcinka.
 3. Edytor publikuje prosto do `main` — bez PR. Cudza osoba z prawem zapisu mogłaby to
    zrobić tak samo; to świadoma decyzja z epica #80 (wersja jednoosobowa).
 

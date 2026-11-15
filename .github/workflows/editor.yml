@@ -31,7 +31,35 @@ env:
   EDITOR_URL: ${{ github.ref_name == 'main' && 'https://ciezko-edytor.pages.dev' || format('https://{0}.ciezko-edytor.pages.dev', github.ref_name) }}
 
 jobs:
+  test:
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5
+        with:
+          cache: true
+
+      - name: Zainstaluj zależności
+        run: npm ci
+
+      - name: Zainstaluj przeglądarkę do testów
+        run: npx playwright install --with-deps chromium
+
+      - name: Testy wspólnych modułów
+        run: |
+          npm run test:overrides
+          npm run test:aliases
+          npm run test:tags
+
+      - name: Zbuduj edytor
+        run: npm run editor:build
+
+      - name: Test edytora (atrapa GitHuba i raw)
+        run: npm run test:editor
+
   deploy:
+    needs: test
     runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7

@@ -15,7 +15,9 @@ const OUT = process.argv[2] ?? '.cache/editor-dist';
 await rm(OUT, { recursive: true, force: true });
 await mkdir(join(OUT, 'lib'), { recursive: true });
 await cp('editor', OUT, { recursive: true });
-await cp('lib/overrides.mjs', join(OUT, 'lib/overrides.mjs'));
+for (const name of ['overrides.mjs', 'tags.mjs', 'aliases.mjs']) {
+  await cp(`lib/${name}`, join(OUT, 'lib', name));
+}
 
 const pkg = JSON.parse(await readFile('package.json', 'utf8'));
 await writeFile(

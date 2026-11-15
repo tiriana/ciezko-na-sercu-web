@@ -28,6 +28,15 @@ creditsy i strony `/tagi/<id>/` widzą jedną osobę. Klucz to dosłowna etykiet
 łączenie robimy tutaj, nie przez podmianę w `data/episodes`. `npm run check` wypisuje
 kandydatów: osoby, których krótsza etykieta jest całym słowem w dłuższej.
 
+## Edytor online
+
+Edytor w `editor/` to osobny projekt Pages (`ciezko-edytor`) bez backendu: czyta
+`raw.githubusercontent.com`, a pisze do `main` jednym commitem `fix(dane): …` przez Git Data
+API. Token żyje tylko w pamięci karty. Reguły współdzielone ze stroną i skryptami leżą
+w `lib/*.mjs` (`overrides`, `tags`, `aliases`) i nie wolno ich kopiować do `editor/` —
+`scripts/build-editor.mjs` dokłada je do katalogu publikacji. Zmiana w `editor/`, `lib/`
+albo `scripts/build-editor.mjs` uruchamia `editor.yml` (testy, build, deploy).
+
 ## Osoby w creditsach
 
 Nową osobę dodajemy do `data/people.json` z polem `url` tylko po sprawdzeniu wyszukiwaniem

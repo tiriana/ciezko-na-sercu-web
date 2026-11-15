@@ -385,3 +385,162 @@ dialog::backdrop {
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  padding: 8px 16px 0;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.tab {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  padding: 7px 14px;
+}
+
+.tab[aria-selected='true'] {
+  background: var(--bg);
+  color: var(--text);
+  border-color: var(--line);
+}
+
+.tags {
+  padding: 14px 18px 60px;
+  max-width: 900px;
+  overflow-y: auto;
+}
+
+.tags h2 {
+  font-size: 14px;
+  margin: 22px 0 6px;
+}
+
+.tags h2:first-of-type {
+  margin-top: 0;
+}
+
+.tags p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 4px 0 10px;
+}
+
+.tags code {
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.alias-table,
+.tag-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.alias-table th,
+.tag-table th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.alias-table td,
+.tag-table td {
+  padding: 3px 4px;
+  border-bottom: 1px solid rgba(42, 48, 56, 0.5);
+}
+
+.alias-table td:first-child {
+  width: 42%;
+}
+
+.alias-table input,
+.tags input[type='search'],
+.tags select,
+.alias-add input {
+  font: inherit;
+  font-size: 13px;
+  padding: 5px 7px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  background: var(--panel-2);
+  color: var(--text);
+}
+
+.alias-table input {
+  width: 100%;
+}
+
+.alias-add {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.alias-add input {
+  flex: 1 1 220px;
+}
+
+.tags input[type='search'] {
+  width: 100%;
+  max-width: 320px;
+}
+
+.tags select {
+  font-size: 12px;
+  padding: 2px 4px;
+}
+
+.tag-table td.num,
+.alias-table td.num {
+  width: 84px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.tag-table td.alias-of {
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.candidates {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.candidates li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(42, 48, 56, 0.5);
+  flex-wrap: wrap;
+}
+
+.candidates .arrow {
+  color: var(--muted);
+}
+
+.tags-actions {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  padding: 10px 0;
+  background: linear-gradient(transparent, var(--bg) 40%);
+}
