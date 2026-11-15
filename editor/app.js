@@ -7,10 +7,10 @@ import {
   validateTrackTimes,
 } from './lib/overrides.mjs';
 import { currentSession, pollDeviceToken, publishChanges, signInWithToken, signOut, startDeviceFlow } from './github.js';
-import { deleteDraft, getDraft, getMeta, putDraft, putMeta } from './store.js';
+import { deleteDraft, getDraft, putDraft } from './store.js';
 import { loadJson, loadJsonFresh } from './source.js';
 import { config } from './config.js';
-import { drawWaveform, loadPeaks } from './peaks.js';
+import { clampView, drawWaveform, loadPeaks } from './peaks.js';
 import {
   aliasCandidates,
   aliasFileKey,
@@ -38,9 +38,13 @@ const state = {
   peaks: null,
   titleDirty: false,
   dirty: false,
-  // Znaczniki „przejrzane" żyją per urządzenie (IndexedDB), bo to stan pracy, a nie
-  // treść odcinka: `data/reviewed.json` zostaje dla automatywów i edytora lokalnego.
-  reviewed: {},
+  // Znaczniki „przejrzane” kluczowane etykietą utworu (t:wykonawca|tytuł), tak jak
+  // w `data/reviewed.json`: klucz przeżywa zmianę kolejności i indeksów w pliku odcinka.
+  // Repo jest źródłem prawdy, a `reviewTouched` trzyma tylko niezapisane zmiany.
+  repoReviewed: new Set(),
+  reviewTouched: new Map(),
+  reviewedFile: null,
+  wave: { start: 0, span: 0 },
   draftTimer: null,
   // Etykiety liczone z odcinków pobranych przez klienta odczytu; `aliasBase` to
   // znormalizowany stan z repozytorium, więc porównanie wykrywa cudzą zmianę.
@@ -113,19 +117,20 @@ const prune = (fix) => {
   return fix;
 };
 
-const hasChanges = () => state.edits.size > 0 || state.titleDirty;
+const hasChanges = () => state.edits.size > 0 || state.titleDirty || state.reviewTouched.size > 0;
 
-const reviewedCount = () => Object.keys(state.reviewed ?? {}).length;
+const reviewKey = (track) => `t:${normalize(track.artist)}|${normalize(track.title)}`;
 
-const toggleReviewed = async (index) => {
-  const id = state.episode.id;
-  state.reviewed = { ...state.reviewed };
-  if (state.reviewed[index]) delete state.reviewed[index];
-  else state.reviewed[index] = new Date().toISOString();
-  const all = { ...(state.reviewedAll ?? {}), [id]: state.reviewed };
-  state.reviewedAll = all;
-  await putMeta('reviewed', all);
+const isReviewed = (track) => {
+  const key = reviewKey(track);
+  return state.reviewTouched.has(key) ? state.reviewTouched.get(key) : state.repoReviewed.has(key);
+};
+
+const toggleReviewed = (track) => {
+  state.reviewTouched.set(reviewKey(track), !isReviewed(track));
+  markDirty();
   renderTracks();
+  renderWave();
 };
 
 const refreshPublish = () => {
@@ -138,6 +143,7 @@ const saveDraft = async () => {
     edits: [...state.edits.entries()],
     title: $('#episode-title').value,
     titleDirty: state.titleDirty,
+    reviewed: [...state.reviewTouched.entries()],
     at: new Date().toISOString(),
   };
   await putDraft(state.episode.id, payload);
@@ -153,11 +159,9 @@ const markDirty = () => {
   scheduleDraftSave();
   refreshPublish();
   const count = state.edits.size;
-  notify(
-    count > 0
-      ? `szkic: ${count} zmienionych wierszy — publikacja wyśle jeden commit na main`
-      : 'zmiana tytułu — publikacja zapisze ją w data/titles.json'
-  );
+  if (count > 0) notify(`szkic: ${count} zmienionych wierszy — publikacja wyśle jeden commit na main`);
+  else if (state.titleDirty) notify('zmiana tytułu — publikacja zapisze ją w data/titles.json');
+  else if (state.reviewTouched.size > 0) notify('zmiana znaczników „przejrzane” — publikacja zapisze ją w data/reviewed.json');
 };
 
 // Slug ma myślniki, więc „11 listopada” musi trafić w „11-listopada” — sprowadzamy oba
@@ -259,9 +263,9 @@ const renderTracks = () => {
     const done = document.createElement('input');
     done.type = 'checkbox';
     done.className = 'done';
-    done.checked = Boolean(state.reviewed?.[index]);
-    done.title = 'przejrzane na tym urządzeniu';
-    done.addEventListener('change', () => void toggleReviewed(index));
+    done.checked = isReviewed(track);
+    done.title = 'przejrzane';
+    done.addEventListener('change', () => toggleReviewed(track));
     const doneCell = document.createElement('td');
     doneCell.className = 'done-cell';
     doneCell.append(done);
@@ -291,14 +295,36 @@ const renderTracks = () => {
     body.append(tr);
   });
 
-  const total = (state.episode?.tracks ?? []).length;
-  $('#progress').textContent = total > 0 ? `przejrzane ${reviewedCount()}/${total}` : '';
+  const tracks = state.episode?.tracks ?? [];
+  const done = tracks.filter(isReviewed).length;
+  $('#progress').textContent = tracks.length > 0 ? `przejrzane ${done}/${tracks.length}` : '';
   refreshPublish();
 };
 
+const markersOf = () =>
+  (state.episode?.tracks ?? []).flatMap((track) => {
+    const reviewed = isReviewed(track);
+    const start = Number(track.start ?? 0);
+    const end = Number(track.end ?? start + Number(track.durationSec ?? 0));
+    return [
+      { time: start, kind: 'start', reviewed },
+      ...(end > start ? [{ time: end, kind: 'end', reviewed }] : []),
+    ];
+  });
+
 const renderWave = () => {
   const audio = $('#audio');
-  drawWaveform($('#wave'), state.peaks, PER_SEC, state.episode?.durationSec ?? 0, audio.currentTime ?? 0);
+  const duration = state.episode?.durationSec ?? 0;
+  state.wave = clampView(state.wave, duration);
+  drawWaveform($('#wave'), {
+    peaks: state.peaks,
+    perSec: PER_SEC,
+    durationSec: duration,
+    view: state.wave,
+    positionSec: audio.currentTime ?? 0,
+    markers: markersOf(),
+  });
+  $('#wave-window').textContent = state.peaks ? `${fmtTime(state.wave.start)} – ${fmtTime(state.wave.start + state.wave.span)}` : '';
 };
 
 const openEpisode = async (episode) => {
@@ -314,24 +340,31 @@ const openEpisode = async (episode) => {
   $('#episode-meta').textContent = `${slugOf(episode)} · ${fmtTime(episode.durationSec)} · ${episode.audioUrl ? 'audio gotowe' : 'brak audio'}`;
   notify('wczytuję odcinek…');
 
-  const [file, override, peaks, draft] = await Promise.all([
+  const [file, override, peaks, reviewedFile, draft] = await Promise.all([
     loadJson(`data/episodes/${episode.id}.json`),
     loadJson(`data/overrides/${episode.id}.json`).catch(() => null),
     loadPeaks(episode.id).catch(() => null),
+    loadJson('data/reviewed.json').catch(() => null),
     getDraft(episode.id),
   ]);
   if (!file) throw new Error('nie ma pliku odcinka');
 
-  state.episode = { ...file, ...episode };
+  // Plik opracowania jest źródłem prawdy (ma czasy i utwory), a katalog dokłada to,
+  // czego w nim nie ma: slug, tytuł, `audioUrl`. Odwrotna kolejność kasowała długość
+  // nagrania, bo katalog trzyma tam `null`, i waveform nie miał czego skalować.
+  state.episode = { ...episode, ...file };
   state.override = override;
   state.peaks = peaks;
-  state.reviewedAll = (await getMeta('reviewed'))?.value ?? {};
-  state.reviewed = state.reviewedAll[episode.id] ?? {};
+  state.reviewedFile = reviewedFile;
+  state.repoReviewed = new Set(Object.keys(reviewedFile?.episodes?.[episode.id] ?? {}));
+  state.reviewTouched = new Map();
+  state.wave = { start: 0, span: file.durationSec ?? episode.durationSec ?? 0 };
 
-  if (draft?.payload?.edits?.length) {
-    state.edits = new Map(draft.payload.edits);
+  if (draft?.payload?.edits?.length || draft?.payload?.reviewed?.length) {
+    state.edits = new Map(draft.payload.edits ?? []);
     if (draft.payload.title) $('#episode-title').value = draft.payload.title;
     state.titleDirty = Boolean(draft.payload.titleDirty);
+    state.reviewTouched = new Map(draft.payload.reviewed ?? []);
     notify(`przywrócony szkic z ${new Date(draft.at).toLocaleString('pl-PL')} — publikacja albo „odrzuć szkic”`);
   }
 
@@ -393,6 +426,24 @@ const publish = async () => {
   }
   files['data/titles.json'] = `${JSON.stringify(titles, null, 2)}\n`;
 
+  // Znaczniki „przejrzane” jadą tym samym commitem: repo jest źródłem prawdy także dla
+  // nich, więc strona i lokalny edytor widzą postęp zrobiony w przeglądarce.
+  if (state.reviewTouched.size > 0) {
+    const freshReviewed = await loadJsonFresh('data/reviewed.json').catch(() => state.reviewedFile);
+    const reviewed = structuredClone(freshReviewed ?? { version: 1, episodes: {} });
+    reviewed.version = 1;
+    reviewed.episodes = reviewed.episodes ?? {};
+    const marks = { ...(reviewed.episodes[state.episode.id] ?? {}) };
+    for (const [key, on] of state.reviewTouched) {
+      if (on) marks[key] = true;
+      else delete marks[key];
+    }
+    if (Object.keys(marks).length > 0) reviewed.episodes[state.episode.id] = marks;
+    else delete reviewed.episodes[state.episode.id];
+    files['data/reviewed.json'] = `${JSON.stringify(reviewed, null, 2)}\n`;
+    state.reviewedFile = reviewed;
+  }
+
   $('#publish').disabled = true;
   notify('publikuję…');
   try {
@@ -401,6 +452,8 @@ const publish = async () => {
     state.titles = titles;
     state.edits = new Map();
     state.titleDirty = false;
+    state.repoReviewed = new Set(Object.keys(state.reviewedFile?.episodes?.[state.episode.id] ?? {}));
+    state.reviewTouched = new Map();
     state.dirty = false;
     clearTimeout(state.draftTimer); // odroczony zapis nie może wskrzesić usuniętego szkicu
     await deleteDraft(state.episode.id);
@@ -820,12 +873,72 @@ const bind = () => {
   audio.addEventListener('timeupdate', renderWave);
   audio.addEventListener('seeked', renderWave);
   audio.addEventListener('loadedmetadata', renderWave);
-  $('#wave').addEventListener('click', (event) => {
+
+  const wave = $('#wave');
+  const durationOf = () => audio.duration || state.episode?.durationSec || 0;
+  const seek = (seconds) => {
     ensureAudio();
-    const rect = event.currentTarget.getBoundingClientRect();
-    const ratio = (event.clientX - rect.left) / rect.width;
-    const duration = audio.duration || state.episode?.durationSec || 0;
-    if (duration > 0) audio.currentTime = Math.max(0, Math.min(duration, ratio * duration));
+    const duration = durationOf();
+    if (duration > 0) audio.currentTime = Math.max(0, Math.min(duration, seconds));
+    renderWave();
+  };
+  const zoomWave = (factor, anchor = 0.5) => {
+    const duration = durationOf();
+    if (duration <= 0) return;
+    const at = state.wave.start + state.wave.span * anchor;
+    const span = Math.min(duration, Math.max(2, state.wave.span * factor));
+    state.wave = clampView({ start: at - span * anchor, span }, duration);
+    renderWave();
+  };
+  const timeAt = (clientX) => {
+    const rect = wave.getBoundingClientRect();
+    return state.wave.start + ((clientX - rect.left) / rect.width) * state.wave.span;
+  };
+
+  wave.addEventListener(
+    'wheel',
+    (event) => {
+      if (!state.peaks) return;
+      event.preventDefault();
+      const rect = wave.getBoundingClientRect();
+      zoomWave(event.deltaY > 0 ? 1.25 : 0.8, (event.clientX - rect.left) / rect.width);
+    },
+    { passive: false }
+  );
+
+  let drag = null;
+  wave.addEventListener('pointerdown', (event) => {
+    if (!state.peaks) return;
+    drag = { x: event.clientX, start: state.wave.start, moved: false };
+    wave.setPointerCapture(event.pointerId);
+  });
+  wave.addEventListener('pointermove', (event) => {
+    if (!drag) return;
+    const dx = event.clientX - drag.x;
+    if (Math.abs(dx) > 2) drag.moved = true;
+    const seconds = (dx / wave.clientWidth) * state.wave.span;
+    state.wave = clampView({ start: drag.start - seconds, span: state.wave.span }, durationOf());
+    renderWave();
+  });
+  wave.addEventListener('pointerup', (event) => {
+    const wasDrag = drag?.moved;
+    drag = null;
+    if (!wasDrag) seek(timeAt(event.clientX));
+  });
+  wave.addEventListener('pointercancel', () => {
+    drag = null;
+  });
+
+  $('#wave-all').addEventListener('click', () => {
+    state.wave = { start: 0, span: durationOf() };
+    renderWave();
+  });
+  $('#wave-in').addEventListener('click', () => zoomWave(0.6));
+  $('#wave-out').addEventListener('click', () => zoomWave(1.7));
+  $('#wave-next-unreviewed').addEventListener('click', () => {
+    const next = (state.episode?.tracks ?? []).find((track) => !isReviewed(track) && Number(track.start) > (audio.currentTime ?? 0));
+    if (!next) return notify('wszystkie utwory po tym miejscu są przejrzane');
+    seek(Number(next.start));
   });
 
   $('#discard').addEventListener('click', async () => {

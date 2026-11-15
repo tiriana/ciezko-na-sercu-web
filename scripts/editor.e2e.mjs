@@ -183,6 +183,13 @@ try {
   const episodeSlug = await page.evaluate(() => document.querySelector('#episode-meta').textContent.split(' · ')[0]);
   if (episodeSlug) ok(`wczytany odcinek: ${episodeSlug}`);
 
+  const windowBefore = await page.locator('#wave-window').textContent();
+  await page.locator('#wave-in').click();
+  const windowAfter = await page.locator('#wave-window').textContent();
+  if (/\d+:\d+/.test(windowBefore ?? '') && windowBefore !== windowAfter) ok('waveform ma okno czasu i zoom');
+  else fail(`waveform bez okna albo zoom nie działa (${windowBefore} → ${windowAfter})`);
+  await page.locator('#wave-all').click();
+
   if (await page.locator('#publish').isDisabled()) ok('publikacja zablokowana bez logowania');
   else fail('publikacja dostępna bez logowania');
 
@@ -242,6 +249,24 @@ try {
   if (titlesBlob) ok('tytuł odcinka trafia do data/titles.json');
   else fail('zmiana tytułu nie trafiła do data/titles.json');
 
+  // Znaczniki „przejrzane” jadą do repo tym samym commitem, więc wracają po przeładowaniu
+  // karty i widzi je także lokalny edytor.
+  const beforeReview = await page.locator('#progress').textContent();
+  await page.locator('#tracks tr:first-child td.done-cell input').click();
+  await page.waitForFunction(
+    (before) => document.querySelector('#progress')?.textContent !== before,
+    beforeReview,
+    { timeout: 5000 }
+  );
+  ok('znacznik „przejrzane” zmienia licznik');
+  const reviewedPublish = await publishAndWait();
+  const reviewedPaths = reviewedPublish.tree.map((entry) => entry.path);
+  if (reviewedPaths.includes('data/reviewed.json')) ok('commit zawiera data/reviewed.json');
+  else fail(`commit bez data/reviewed.json (jest: ${reviewedPaths.join(', ')})`);
+  const reviewedBlob = reviewedPublish.blobs.find((step) => step.kind === 'blob' && step.content.includes('"episodes"'));
+  if (reviewedBlob) ok('znaczniki „przejrzane” trafiają do treści pliku');
+  else fail('w plikach commita brak znaczników „przejrzane”');
+
   // Strażnik przed zepsutym plikiem: koniec przed początkiem nie może dojść do GitHuba.
   const beforeGuard = publishes.length;
   const endInput = page.locator('#tracks tr:first-child td:nth-child(3) input');
@@ -276,6 +301,11 @@ try {
     { timeout: 10000 }
   );
   ok('szkic przeżył przeładowanie karty');
+  if (await page.locator('#tracks tr:first-child td.done-cell input').isChecked()) {
+    ok('znacznik „przejrzane” wraca z repozytorium po przeładowaniu');
+  } else {
+    fail('znacznik „przejrzane” nie wrócił z repozytorium');
+  }
 
   // Offline po wcześniejszym odczycie: dane z pamięci, nie biała strona.
   offline = true;

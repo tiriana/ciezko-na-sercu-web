@@ -52,7 +52,14 @@
 
         <div class="player">
           <audio id="audio" controls preload="none"></audio>
-          <canvas id="wave" height="64" title="kliknij, żeby przeskoczyć"></canvas>
+          <div class="wave-tools">
+            <span id="wave-window" class="wave-window"></span>
+            <button id="wave-all" class="ghost small" type="button">cała audycja</button>
+            <button id="wave-in" class="ghost small" type="button" title="przybliż">−</button>
+            <button id="wave-out" class="ghost small" type="button" title="oddal">+</button>
+            <button id="wave-next-unreviewed" class="ghost small" type="button">następny nieprzejrzany</button>
+          </div>
+          <canvas id="wave" height="96" title="kółko = zoom, przeciąganie = przesuwanie, klik = skok"></canvas>
         </div>
 
         <table class="tracks">

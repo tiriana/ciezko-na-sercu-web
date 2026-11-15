@@ -17,6 +17,7 @@
     "test:editor": "node scripts/editor.e2e.mjs",
     "peaks": "node scripts/compute-peaks.mjs",
     "test:e2e": "node scripts/e2e-tagi.mjs",
+    "smoke:release": "node scripts/smoke-release.mjs",
     "release": "semantic-release",
     "transcribe": "node scripts/transcribe.mjs",
     "episodes": "node scripts/fetch-episodes.mjs",
