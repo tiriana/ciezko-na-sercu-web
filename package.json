@@ -12,6 +12,7 @@
     "check": "node scripts/check-data.mjs",
     "queue": "node scripts/queue.mjs",
     "edytor": "node scripts/edytor-run.mjs",
+    "peaks": "node scripts/compute-peaks.mjs",
     "test:e2e": "node scripts/e2e-tagi.mjs",
     "release": "semantic-release",
     "transcribe": "node scripts/transcribe.mjs",

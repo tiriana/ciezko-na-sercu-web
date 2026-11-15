@@ -21,6 +21,7 @@ import {
   same,
   validateSavePayload,
 } from '../lib/overrides.mjs';
+import { peaksFromAudio, resample } from './lib/peaks.mjs';
 import { mediaDurationOf } from './lib/timeline.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -34,7 +35,6 @@ const PEAKS = join(CACHE, 'peaks');
 const DRAFTS = join(CACHE, 'drafts');
 const JOURNAL = join(CACHE, 'journal');
 const PEAKS_PER_SEC = 100; // 1 słupek = 10 ms
-const SAMPLE_RATE = 2000; // z tego redukujemy do PEAKS_PER_SEC (max z 20 próbek)
 
 const log = async (message, error) => {
   const detail = error instanceof Error ? error.stack ?? error.message : String(error ?? '');
@@ -304,79 +304,13 @@ const readBody = (req) =>
     req.on('error', reject);
   });
 
-/** Szczyty głośności do waveformu: ffmpeg czyta nagranie strumieniem z URL (range
- * requests), więc plik na dysku nie jest potrzebny. Wynik leży w `.cache/peaks`. */
 const peaksInFlight = new Map();
 
-const computePeaks = (audioUrl) =>
-  new Promise((resolve, reject) => {
-    const ffmpeg = spawn('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-i', audioUrl, '-ac', '1', '-ar', String(SAMPLE_RATE), '-f', 's16le', '-']);
-    const peaks = [];
-    const perBucket = SAMPLE_RATE / PEAKS_PER_SEC; // 20 próbek = 10 ms
-    let peak = 0;
-    let samples = 0;
-    let leftover = Buffer.alloc(0);
-    let errorText = '';
-
-    // Bierzemy maksimum z próbek, bo przeliczanie ich na jeden słupek uśrednianiem
-    // zgubiłoby transjenty i waveform kłamałby o cichych fragmentach.
-    const take = (buffer) => {
-      for (let offset = 0; offset + 2 <= buffer.length; offset += 2) {
-        const value = Math.abs(buffer.readInt16LE(offset)) / 32768;
-        if (value > peak) peak = value;
-        samples += 1;
-        if (samples === perBucket) {
-          peaks.push(Math.min(255, Math.round(peak * 255)));
-          peak = 0;
-          samples = 0;
-        }
-      }
-    };
-
-    const onData = (chunk) => {
-      const buffer = leftover.length > 0 ? Buffer.concat([leftover, chunk]) : chunk;
-      const usable = buffer.length - (buffer.length % 2);
-      leftover = buffer.subarray(usable);
-      take(buffer.subarray(0, usable));
-    };
-
-    // Zerwany strumień (ubity ffmpeg, przerwane połączenie) inaczej kończył się
-    // nieobsłużonym zdarzeniem 'error' i wywalał serwer.
-    ffmpeg.stdout.on('error', (error) => reject(error));
-    ffmpeg.stderr.on('error', () => {});
-    ffmpeg.on('exit', (code, signal) => {
-      if (signal) reject(new Error(`ffmpeg przerwany (${signal})`));
-    });
-    ffmpeg.stdout.on('data', onData);
-    ffmpeg.stderr.on('data', (chunk) => {
-      errorText += chunk.toString();
-      if (errorText.length > 4000) errorText = errorText.slice(-4000);
-    });
-    ffmpeg.on('error', (error) => reject(error.code === 'ENOENT' ? new Error('brak ffmpeg w PATH') : error));
-    ffmpeg.on('close', (code) => {
-      if (code !== 0) return reject(new Error(errorText.trim() || `ffmpeg zakończył się kodem ${code}`));
-      if (peaks.length === 0) return reject(new Error('ffmpeg nie zwrócił dźwięku'));
-      // Audycja jest zmiksowana cicho (szczyty ~-8 dBFS), więc bez normalizacji waveform
-      // byłby płaski. Skalujemy do najgłośniejszego miejsca i podnosimy wykładnikiem,
-      // bo słupek ma pokazywać głośność czytelnie, nie wiernie w skali liniowej.
-      const loudest = peaks.reduce((max, value) => (value > max ? value : max), 1);
-      resolve(Uint8Array.from(peaks, (value) => Math.round(255 * (value / loudest) ** 0.6)));
-    });
-  });
+const computePeaks = (audioUrl) => peaksFromAudio(audioUrl, { perSec: PEAKS_PER_SEC });
 
 // Waveform musi być w skali odtwarzacza (nagłówek mp3 bywa krótszy niż realne audio),
 // inaczej kreska i znaczniki rozjeżdżają się ku końcowi audycji. `v2` unieważnia cache
 // policzony w starej skali.
-const resample = (peaks, scale) => {
-  if (!(scale > 0) || Math.abs(scale - 1) < 1e-6) return peaks;
-  const length = Math.max(1, Math.round(peaks.length * scale));
-  const out = new Uint8Array(length);
-  for (let index = 0; index < length; index += 1) {
-    out[index] = peaks[Math.min(peaks.length - 1, Math.round(index / scale))] ?? 0;
-  }
-  return out;
-};
-
 // Adres nagrania w nazwie pliku: podmiana audioUrl w katalogu unieważnia cache.
 const peaksFile = (id, audioUrl) => join(PEAKS, `${id}-${createHash('sha1').update(audioUrl).digest('hex').slice(0, 8)}-v2.bin`);
 
