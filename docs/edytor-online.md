@@ -13,8 +13,8 @@ uruchamiania czegokolwiek lokalnie. Nie ma backendu: przeglądarka czyta dane pr
 
 1. Edytor pobiera `data/catalog.json`, `data/titles.json` i plik odcinka
    (`data/episodes/<uuid>.json`) oraz jego poprawki (`data/overrides/<uuid>.json`).
-2. Zmiany w tabeli utworów trafiają do szkicu w pamięci karty. Nic nie idzie do sieci,
-   dopóki nie klikniesz „Publikuj”.
+2. Zmiany w tabeli utworów trafiają do szkicu w IndexedDB (per urządzenie). Nic nie idzie
+   do sieci, dopóki nie klikniesz „Publikuj”.
 3. Publikacja scala szkic z istniejącymi poprawkami (`mergeOverrides`) i wysyła **jeden
    commit** na `main` przez Git Data API: blob → tree (`base_tree`) → commit → `PATCH` ref.
    Commit ma typ `fix`, więc semantic-release zrobi patch i `deploy.yml` opublikuje stronę.
