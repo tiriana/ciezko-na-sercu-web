@@ -77,6 +77,16 @@ jobs:
           npx --yes wrangler@$WRANGLER_VERSION pages deploy site/dist \
             --project-name "$CF_PROJECT" --branch="$GITHUB_REF_NAME" --commit-dirty=true
 
+      - name: Test pełny po publikacji
+        # Każda zbudowana strona (odcinki, tagi, o projekcie) musi odpowiadać 200 z tytułem
+        # z `site/dist`, a stopka i meta muszą pokazywać wersję z `package.json`. Test dymny
+        # niżej sprawdza trzy adresy; ten przechodzi przez cały build i powtarza nieudane
+        # sprawdzenia, bo świeży deployment chwilę się propaguje.
+        if: github.ref == 'refs/heads/main'
+        env:
+          BASE_URL: https://ciezko-na-sercu.pages.dev
+        run: node scripts/smoke-release.mjs
+
       - name: Test dymny po publikacji
         # Tylko produkcja: develop ma własny adres (develop.<projekt>.pages.dev) i własną
         # wersję, więc porównywanie stopki z package.json na tej gałęzi nie ma sensu.
