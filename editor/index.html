@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
+    <!-- Ta sama polityka co w `_headers`; meta działa też na podglądzie spoza Cloudflare. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://github.com https://static.prsa.pl; media-src https://static.prsa.pl; img-src 'self' data:; base-uri 'none'; form-action 'none'"
+    />
     <title>Edytor osi czasu — Ciężko na sercu</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./app.css" />
@@ -11,7 +16,7 @@
   <body>
     <header class="bar">
       <div class="brand">
-        <strong>Część na sercu — edytor</strong>
+        <strong>Ciężko na sercu — edytor</strong>
         <span id="status" class="status" role="status">niezalogowany</span>
       </div>
       <div class="actions">

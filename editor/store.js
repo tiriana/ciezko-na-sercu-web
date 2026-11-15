@@ -35,8 +35,8 @@ const run = async (store, mode, action) => {
 
 export const getFile = (path) => run('files', 'readonly', (store) => store.get(path)).catch(() => null);
 
-export const putFile = (path, body, etag) =>
-  run('files', 'readwrite', (store) => store.put({ path, body, etag: etag ?? null, at: Date.now() })).catch(() => null);
+export const putFile = (path, body) =>
+  run('files', 'readwrite', (store) => store.put({ path, body, at: Date.now() })).catch(() => null);
 
 export const getDraft = (id) => run('drafts', 'readonly', (store) => store.get(id)).catch(() => null);
 

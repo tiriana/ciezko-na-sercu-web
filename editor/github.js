@@ -93,10 +93,13 @@ const blobOf = async (content) =>
 
 /** Jeden commit na całą publikację: Contents API zapisuje plik po pliku, a my chcemy
  * jedno zdarzenie w historii i jedno uruchomienie workflowów. */
-export const publishChanges = async (message, files) => {
+export const publishChanges = async (message, files, { beforeRetry } = {}) => {
   if (!session.canPush) throw new Error('brak uprawnień do zapisu');
 
   for (let attempt = 1; attempt <= 3; attempt += 1) {
+    // Ponowna próba rebazuje commit na nowy koniec gałęzi, więc wołający może sprawdzić,
+    // czy plik, który nadpisuje w całości, nie zmienił się w międzyczasie.
+    if (attempt > 1 && beforeRetry) await beforeRetry();
     const ref = await apiJson(`/repos/${config.owner}/${config.repo}/git/ref/heads/${config.branch}`);
     const parent = ref.object.sha;
     const base = await apiJson(`/repos/${config.owner}/${config.repo}/git/commits/${parent}`);

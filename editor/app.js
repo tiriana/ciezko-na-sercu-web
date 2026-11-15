@@ -11,7 +11,17 @@ import { deleteDraft, getDraft, getMeta, putDraft, putMeta } from './store.js';
 import { loadJson, loadJsonFresh } from './source.js';
 import { config } from './config.js';
 import { drawWaveform, loadPeaks } from './peaks.js';
-import { aliasCandidates, aliasProblems, collectLabels, emptyAliasFile, normalizeAliasFile, resolveAlias, TAG_TYPES, tagRows } from './lib/aliases.mjs';
+import {
+  aliasCandidates,
+  aliasFileKey,
+  aliasProblems,
+  collectLabels,
+  emptyAliasFile,
+  normalizeAliasFile,
+  resolveAlias,
+  TAG_TYPES,
+  tagRows,
+} from './lib/aliases.mjs';
 
 const $ = (selector) => document.querySelector(selector);
 
@@ -36,6 +46,7 @@ const state = {
   // znormalizowany stan z repozytorium, więc porównanie wykrywa cudzą zmianę.
   labels: null,
   aliasDraft: null,
+  aliasBaseFile: null,
   aliasBase: null,
   tagsBusy: false,
 };
@@ -419,8 +430,7 @@ const fetchEpisodes = async (entries, onProgress) => {
   return out;
 };
 
-const aliasDirty = () =>
-  state.aliasDraft !== null && JSON.stringify(normalizeAliasFile(state.aliasDraft)) !== state.aliasBase;
+const aliasDirty = () => state.aliasDraft !== null && aliasFileKey(state.aliasDraft) !== state.aliasBase;
 
 const notifyAliases = (text, kind = '') => {
   const hint = $('#aliases-hint');
@@ -439,14 +449,19 @@ const openTags = async () => {
   const status = $('#tags-status');
   const entries = state.catalog?.episodes ?? [];
   try {
-    const file = await loadJson('data/aliases.json').catch(() => null);
+    // Aliasy czytamy bez pamięci: plik jest mały, a szkic oparty na nieaktualnej kopii
+    // blokowałby zapis zaraz po własnej publikacji (i po przeładowaniu karty).
+    const file = await loadJsonFresh('data/aliases.json').catch(() => loadJson('data/aliases.json').catch(() => null));
     const episodes = await fetchEpisodes(entries, (done) => {
       status.textContent = `pobieram odcinki… ${done}/${entries.length}`;
     });
     state.labels = collectLabels(episodes);
-    state.aliasDraft = normalizeAliasFile(file ?? emptyAliasFile());
-    state.aliasBase = JSON.stringify(state.aliasDraft);
-    status.textContent = `${episodes.length} odcinków, ${state.labels.size} etykiet — dane z pamięci tej karty`;
+    state.aliasBaseFile = normalizeAliasFile(file ?? emptyAliasFile());
+    state.aliasDraft = structuredClone(state.aliasBaseFile);
+    state.aliasBase = aliasFileKey(state.aliasBaseFile);
+    const missing = entries.length - episodes.length;
+    status.textContent = `${episodes.length}/${entries.length} odcinków, ${state.labels.size} etykiet — dane z pamięci tej karty`;
+    if (missing > 0) status.textContent += `; ${missing} plików się nie pobrało — odśwież stronę`;
     renderTags();
   } catch (error) {
     status.textContent = `nie udało się wczytać etykiet: ${error.message}`;
@@ -645,20 +660,43 @@ const publishAliases = async () => {
   if (problems.length) return notifyAliases(`nie publikuję — ${problems.slice(0, 3).join('; ')}`, 'error');
 
   // Plik aliasów to całe listy, więc scalanie po polach nie ma sensu: jeśli ktoś zmienił
-  // go w międzyczasie, nadpisanie skasowałoby jego pracę.
-  const fresh = await loadJsonFresh('data/aliases.json').catch(() => null);
-  if (JSON.stringify(normalizeAliasFile(fresh ?? {})) !== state.aliasBase) {
-    return notifyAliases('ktoś zmienił aliasy w repozytorium — odśwież widok i spróbuj ponownie', 'error');
+  // go w międzyczasie, nadpisanie skasowałoby jego pracę. Błąd sieci też zatrzymuje
+  // publikację — brak odpowiedzi nie może znaczyć „wolno nadpisać”.
+  let fresh;
+  try {
+    fresh = await loadJsonFresh('data/aliases.json');
+  } catch (error) {
+    return notifyAliases(`nie mogę sprawdzić pliku aliasów w repozytorium: ${error.message}`, 'error');
+  }
+  const freshKey = aliasFileKey(fresh ?? {});
+  if (freshKey !== state.aliasBase) {
+    state.aliasBaseFile = normalizeAliasFile(fresh ?? {});
+    state.aliasDraft = structuredClone(state.aliasBaseFile);
+    state.aliasBase = freshKey;
+    renderTags();
+    return notifyAliases('ktoś zmienił aliasy w repozytorium — wczytałem świeży plik, popraw zmiany i zapisz ponownie', 'error');
   }
 
   $('#aliases-save').disabled = true;
   notifyAliases('publikuję…');
   try {
-    const result = await publishChanges('fix(dane): aliasy z edytora online', {
-      'data/aliases.json': `${JSON.stringify(next, null, 2)}\n`,
-    });
+    const result = await publishChanges(
+      'fix(dane): aliasy z edytora online',
+      { 'data/aliases.json': `${JSON.stringify(next, null, 2)}\n` },
+      {
+        // Ponowna próba po konflikcie rebazuje commit na nowy koniec gałęzi; przy
+        // całym pliku to znaczyłoby nadpisanie cudzej zmiany, więc sprawdzamy ją jeszcze raz.
+        beforeRetry: async () => {
+          const again = await loadJsonFresh('data/aliases.json');
+          if (aliasFileKey(again ?? {}) !== state.aliasBase) {
+            throw new Error('ktoś zmienił aliasy w trakcie publikacji — spróbuj ponownie');
+          }
+        },
+      }
+    );
     state.aliasDraft = next;
-    state.aliasBase = JSON.stringify(next);
+    state.aliasBaseFile = structuredClone(next);
+    state.aliasBase = aliasFileKey(next);
     notifyAliases(`zapisane: ${result.url}`, 'ok');
     renderTags();
   } catch (error) {
@@ -735,8 +773,8 @@ const bind = () => {
   });
   $('#aliases-save').addEventListener('click', () => void publishAliases());
   $('#aliases-reset').addEventListener('click', () => {
-    if (!state.aliasBase) return;
-    state.aliasDraft = normalizeAliasFile(JSON.parse(state.aliasBase));
+    if (!state.aliasBaseFile) return;
+    state.aliasDraft = structuredClone(state.aliasBaseFile);
     renderTags();
     notifyAliases('cofnięte do stanu z repozytorium');
   });
@@ -749,6 +787,7 @@ const bind = () => {
   $('#login-token').addEventListener('click', async () => {
     try {
       await signInWithToken($('#token').value);
+      $('#token').value = '';
       $('#login').close();
       bootAuth();
       if (hasChanges()) notify('zalogowany — szkic czeka na publikację');

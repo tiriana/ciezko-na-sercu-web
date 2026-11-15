@@ -6,7 +6,6 @@
  *
  * Użycie: npm run test:editor (najpierw `npm run editor:build`)
  */
-import { createHash } from 'node:crypto';
 import { readFile, stat } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { extname, join, normalize, resolve } from 'node:path';
@@ -17,9 +16,6 @@ const ROOT = '.cache/editor-dist';
 const REPO = resolve('.');
 const PORT = Number(process.env.EDITOR_TEST_PORT ?? 4391);
 const RAW_PREFIX = '/tiriana/ciezko-na-sercu-web/main/';
-// Bez tego przeglądarka nie pokaże JS nagłówka ETag (nie jest na liście CORS),
-// a wtedy każdy odczyt z pamięci pobierałby plik od nowa.
-const CORS = { 'access-control-allow-origin': '*', 'access-control-expose-headers': 'etag' };
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
@@ -56,33 +52,39 @@ const browser = await chromium.launch();
 const page = await browser.newPage();
 page.on('pageerror', (error) => console.error('[pageerror]', String(error).slice(0, 400)));
 
+
 const blobs = [];
 const publishes = [];
 const external = [];
 const validTokens = new Set();
+// Atrapa czyta pliki z repo, ale publikacje nakładają się na to jak na prawdziwą gałąź:
+// bez tego drugi odczyt po własnym commicie widziałby stary plik.
+const overlay = new Map();
+const blobContent = new Map();
 let current = null;
 let conflicts = 0;
 let conflictPending = false;
-let notModified = 0;
+let offline = false;
+let headSha = 'parent1';
+let headTree = 'tree0';
+let commitCount = 0;
+
+const fulfillFile = (route, path, body) =>
+  route.fulfill({
+    status: 200,
+    contentType: TYPES[extname(path)] ?? 'application/octet-stream',
+    body,
+  });
 
 const serveRepoFile = async (route, request) => {
+  if (offline) return route.fulfill({ status: 503, body: 'offline' });
   const url = new URL(request.url());
   if (!url.pathname.startsWith(RAW_PREFIX)) return route.fulfill({ status: 404, body: '404' });
   const path = decodeURIComponent(url.pathname.slice(RAW_PREFIX.length));
   if (path.includes('..') || !/^(data\/|package\.json$)/.test(path)) return route.fulfill({ status: 404, body: '404' });
+  if (overlay.has(path)) return fulfillFile(route, path, overlay.get(path));
   try {
-    const body = await readFile(join(REPO, path));
-    const etag = `"${createHash('sha1').update(body).digest('hex')}"`;
-    if (request.headers()['if-none-match'] === etag) {
-      notModified += 1;
-      return route.fulfill({ status: 304, headers: { etag, ...CORS } });
-    }
-    return route.fulfill({
-      status: 200,
-      contentType: TYPES[extname(path)] ?? 'application/octet-stream',
-      headers: { etag, ...CORS },
-      body,
-    });
+    return fulfillFile(route, path, await readFile(join(REPO, path)));
   } catch {
     return route.fulfill({ status: 404, body: '404' });
   }
@@ -106,12 +108,14 @@ const handleApi = async (route) => {
   if (path === '/repos/tiriana/ciezko-na-sercu-web' && method === 'GET') {
     return json({ permissions: { push: true, admin: false } });
   }
-  if (path.endsWith('/git/ref/heads/main')) return json({ object: { sha: 'parent1' } });
-  if (path.endsWith('/git/commits/parent1')) return json({ tree: { sha: 'tree0' } });
+  if (path.endsWith('/git/ref/heads/main')) return json({ object: { sha: headSha } });
+  if (path.includes('/git/commits/')) return json({ tree: { sha: headTree } });
   if (path.endsWith('/git/blobs')) {
     const body = JSON.parse(request.postData() ?? '{}');
+    const sha = `blob${blobs.length + 1}`;
     blobs.push({ kind: 'blob', content: body.content });
-    return json({ sha: `blob${blobs.length}` });
+    blobContent.set(sha, body.content);
+    return json({ sha });
   }
   if (path.endsWith('/git/trees')) {
     const body = JSON.parse(request.postData() ?? '{}');
@@ -121,21 +125,35 @@ const handleApi = async (route) => {
   }
   if (path.endsWith('/git/commits')) {
     const body = JSON.parse(request.postData() ?? '{}');
+    commitCount += 1;
     if (current) {
       current.message = body.message;
       current.parents = body.parents;
+      current.commitSha = `commit${commitCount}`;
     }
-    return json({ sha: 'commit1' });
+    return json({ sha: `commit${commitCount}` });
   }
   if (path.endsWith('/git/refs/heads/main') && method === 'PATCH') {
     if (conflictPending) {
+      // Ktoś inny wypchnął commit w trakcie publikacji: gałąź przesuwa się na nowy
+      // koniec, więc ponowna próba musi rebazować na niego, a nie na stary `parent1`.
       conflictPending = false;
       conflicts += 1;
+      headSha = 'parent-external';
+      headTree = 'tree-external';
       return json({ message: 'branch changed' }, 409);
     }
     const body = JSON.parse(request.postData() ?? '{}');
-    if (current) current.refSha = body.sha;
-    return json({ object: { sha: 'commit1' } });
+    if (current) {
+      current.refSha = body.sha;
+      for (const entry of current.tree) {
+        if (entry.sha === null) overlay.delete(entry.path);
+        else if (blobContent.has(entry.sha)) overlay.set(entry.path, blobContent.get(entry.sha));
+      }
+      headSha = current.commitSha;
+      headTree = `tree${publishes.length}`;
+    }
+    return json({ object: { sha: headSha } });
   }
   return json({ message: 'nieznany endpoint w atrapie' }, 404);
 };
@@ -258,8 +276,20 @@ try {
     { timeout: 10000 }
   );
   ok('szkic przeżył przeładowanie karty');
-  if (notModified > 0) ok(`drugi odczyt poszedł po ETagu (304 × ${notModified})`);
-  else fail('odczyt z pamięci nie użył warunkowego żądania');
+
+  // Offline po wcześniejszym odczycie: dane z pamięci, nie biała strona.
+  offline = true;
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  await page.waitForSelector('#episodes li button', { timeout: 15000 });
+  const cachedEpisodes = await page.locator('#episodes li button').count();
+  if (cachedEpisodes > 0) ok(`bez sieci lista odcinków wraca z pamięci (${cachedEpisodes})`);
+  else fail('bez sieci edytor nie pokazał listy');
+  offline = false;
+
+  await page.locator('#filter').fill(episodeSlug);
+  await page.waitForTimeout(300);
+  await page.locator('#episodes li button').first().click();
+  await page.waitForSelector('#tracks tr');
 
   // Przeładowanie karty zgubiło token (żyje tylko w pamięci), więc logujemy się znowu.
   await page.locator('#sign-in').click();
@@ -279,6 +309,12 @@ try {
   else fail(`oczekiwano jednego konfliktu, było ${conflicts}`);
   if (publishes.length === beforeConflict + 2) ok('druga próba po konflikcie tworzy commit');
   else fail(`po konflikcie oczekiwano dwóch prób, było ${publishes.length - beforeConflict}`);
+  const retried = publishes.at(-1);
+  if (retried.parents?.[0] === 'parent-external' && retried.base === 'tree-external') {
+    ok('ponowna próba rebazuje na nowy koniec gałęzi');
+  } else {
+    fail(`ponowna próba użyła starego końca gałęzi (${retried.parents?.[0]}, ${retried.base})`);
+  }
 
   // 401: wygaszony token nie może zapisać nic po cichu — UI wraca do logowania.
   await artistCell().fill('Po wygaśnięciu');
@@ -302,8 +338,8 @@ try {
   await page.locator('#login-token').click();
   await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, { timeout: 10000 });
   const afterRelogin = await publishAndWait();
-  if (afterRelogin.refSha === 'commit1') ok('po ponownym logowaniu szkic da się opublikować');
-  else fail('po ponownym logowaniu publikacja nie przeszła');
+  if (/^commit\d+$/.test(afterRelogin.refSha ?? '')) ok('po ponownym logowaniu szkic da się opublikować');
+  else fail(`po ponownym logowaniu publikacja nie przeszła (${afterRelogin.refSha})`);
 
   // Tagi i aliasy: lista etykiet liczona z odcinków pobranych przez klienta odczytu.
   await page.locator('#tab-tags').click();
@@ -341,6 +377,42 @@ try {
   else fail('w pliku aliasów brak nowej pary');
   if (publishes.length === beforeAliases + 1) ok('zapis aliasów to jeden commit');
   else fail(`zapis aliasów zrobił ${publishes.length - beforeAliases} commitów`);
+
+  // Druga publikacja po przeładowaniu: atrapa oddaje już zapisany plik, więc edytor
+  // nie może zablokować zapisu komunikatem o cudzej zmianie.
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  await page.waitForSelector('#episodes li button');
+  await page.locator('#sign-in').click();
+  await page.locator('#token').fill('trzeci-token');
+  await page.locator('#login-token').click();
+  await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, { timeout: 10000 });
+  await page.locator('#tab-tags').click();
+  await page.waitForFunction(() => document.querySelectorAll('#tag-rows tr').length > 0, null, { timeout: 60000 });
+  await page.locator('#alias-from').fill('Drugi Wariant');
+  await page.locator('#alias-to').fill('Jarek Szubrycht');
+  await page.locator('#alias-add').click();
+
+  // Brak sieci przy sprawdzaniu pliku nie może znaczyć „wolno nadpisać”.
+  offline = true;
+  const beforeOffline = publishes.length;
+  await page.locator('#aliases-save').click();
+  await page.waitForFunction(() => document.querySelector('#aliases-hint')?.textContent.includes('nie mogę sprawdzić'), null, {
+    timeout: 10000,
+  });
+  if (publishes.length === beforeOffline) ok('brak sieci wstrzymuje zapis aliasów');
+  else fail('brak sieci nie zatrzymał zapisu aliasów');
+  offline = false;
+
+  await page.locator('#aliases-save').click();
+  await page.waitForFunction(() => document.querySelector('#aliases-hint')?.textContent.startsWith('zapisane'), null, {
+    timeout: 10000,
+  });
+  const mergedAliases = overlay.get('data/aliases.json') ?? '';
+  if (mergedAliases.includes('Testowy Wariant') && mergedAliases.includes('Drugi Wariant')) {
+    ok('druga publikacja aliasów nie gubi pierwszej');
+  } else {
+    fail('druga publikacja aliasów nadpisała pierwszą');
+  }
 
   if (external.length === 0) ok('żadne żądanie nie wyszło poza mock');
   else fail(`ruch poza mockiem: ${external.join(', ')}`);

@@ -1,3 +1,4 @@
+import { resolveAlias } from '../../../lib/aliases.mjs';
 import { splitTags, tagId } from './tags.ts';
 import type { Aliases, Episode, TagTypes } from './schema.ts';
 import type { Override } from './schema.ts';
@@ -11,17 +12,9 @@ const normalizeText = (value: string) => value.normalize('NFC').trim().toLowerCa
 const sameText = (left: string | null, right: string | undefined) =>
   right === undefined || normalizeText(left ?? '') === normalizeText(right);
 
-// Warianty mogą wskazywać jeden na drugi („Vogg” -> „Vogg (Wojciech Kiełtyka)” -> pełne
-// imię), więc idziemy łańcuchem. Limit chroni przed pętlą w danych.
-export const resolveAlias = (label: string, aliases: Aliases) => {
-  let current = label;
-  for (let step = 0; step < 5; step++) {
-    const next = aliases[current];
-    if (!next || next === current) break;
-    current = next;
-  }
-  return current;
-};
+// Warianty mogą wskazywać jeden na drugi, więc idziemy łańcuchem. Reguła żyje
+// w `lib/aliases.mjs`, bo ten sam łańcuch rozwiązuje edytor online i `npm run check`.
+export { resolveAlias };
 
 // Po podstawieniu kanonicznej etykiety dwa tagi mogą się zlać w jeden: zostaje pierwszy,
 // a czas wejścia z drugiego wypełnia lukę, jeśli pierwszy go nie miał.

@@ -93,7 +93,8 @@ krótszy niż realne audio — bez tego kreska rozjeżdża się ku końcowi audy
 `raw.githubusercontent.com` są podmienione atrapami, a pliki danych czyta z lokalnego
 repozytorium. Scenariusze: brak tokenu blokuje publikację, edycja wysyła jeden commit
 z oczekiwaną treścią, strażnik czasu nie wpuszcza złego pliku, szkic przeżywa przeładowanie
-karty, drugi odczyt idzie po `ETag` (304), konflikt `409` kończy się ponowną próbą,
+karty, po utracie sieci lista wraca z pamięci, konflikt `409` kończy się ponowną próbą
+rebazującą na nowy koniec gałęzi,
 `401` wraca do logowania bez commita, alias zapisuje się jednym commitem, a żadne żądanie
 nie wychodzi poza atrapę. Job `test` w `editor.yml` uruchamia te testy przed deployem.
 

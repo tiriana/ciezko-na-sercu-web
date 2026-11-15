@@ -1,21 +1,18 @@
-// Odczyt danych: najpierw pamięć przeglądarki, potem sieć z rewalidacją po ETagu.
-// `raw.githubusercontent.com` odpowiada 304, gdy plik się nie zmienił, więc odświeżenie
-// katalogu kosztuje kilkaset bajtów, a bez sieci edytor dalej pokazuje ostatni stan.
+// Odczyt danych: najpierw pamięć przeglądarki, potem sieć z rewalidacją. `cache:
+// 'no-cache'` każe przeglądarce odpytać serwer własnym `ETag`iem, a `raw.githubusercontent.com`
+// nie udostępnia tego nagłówka skryptom (brak `access-control-expose-headers`), więc
+// warunkowe żądanie robi przeglądarka — my dostajemy świeżą treść albo nic do roboty.
 
 import { config, rawUrl } from './config.js';
 import { getFile, putFile } from './store.js';
 
 const inflight = new Map();
 
-const fetchText = async (path, etag) => {
-  const response = await fetch(rawUrl(path), {
-    cache: 'no-cache',
-    headers: etag ? { 'if-none-match': etag } : {},
-  });
-  if (response.status === 304) return { text: null, etag, notModified: true };
-  if (response.status === 404) return { text: null, etag: null, missing: true };
+const fetchText = async (path) => {
+  const response = await fetch(rawUrl(path), { cache: 'no-cache' });
+  if (response.status === 404) return { text: null, missing: true };
   if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
-  return { text: await response.text(), etag: response.headers.get('etag') };
+  return { text: await response.text() };
 };
 
 /** Zwraca tekst pliku: z pamięci, jeśli jest, i odświeża go w tle; bez pamięci — z sieci. */
@@ -27,18 +24,17 @@ export const loadText = async (path) => {
       // Odświeżenie nie może blokować pracy: pokazujemy cache, a sieć dogaduje się w tle.
       void (async () => {
         try {
-          const fresh = await fetchText(path, cached.etag);
-          if (fresh.notModified) return;
-          if (fresh.missing) return;
-          await putFile(path, fresh.text, fresh.etag);
+          const fresh = await fetchText(path);
+          if (fresh.text === null || fresh.text === cached.body) return;
+          await putFile(path, fresh.text);
           window.dispatchEvent(new CustomEvent('edytor:plik-odswiezony', { detail: { path, text: fresh.text } }));
         } catch {}
       })();
       return cached.body;
     }
-    const fresh = await fetchText(path, null);
+    const fresh = await fetchText(path);
     if (fresh.missing) return null;
-    await putFile(path, fresh.text, fresh.etag);
+    await putFile(path, fresh.text);
     return fresh.text;
   })().finally(() => inflight.delete(path));
   inflight.set(path, task);
@@ -56,11 +52,11 @@ export const loadJson = async (path) => {
 };
 
 /** Bez pamięci: dla plików, które muszą być świeże w chwili publikacji (poprawki,
- * tytuły), bo scalanie ze starym stanem cofałoby zmiany zrobione gdzie indziej. */
+ * tytuły, aliasy), bo scalanie ze starym stanem cofałoby zmiany zrobione gdzie indziej. */
 export const loadJsonFresh = async (path) => {
-  const fresh = await fetchText(path, null);
+  const fresh = await fetchText(path);
   if (fresh.text === null) return null;
-  await putFile(path, fresh.text, fresh.etag);
+  await putFile(path, fresh.text);
   return JSON.parse(fresh.text);
 };
 
@@ -72,6 +68,6 @@ export const loadBinary = async (path) => {
   const response = await fetch(rawUrl(path), { cache: 'no-cache' });
   if (!response.ok) return null;
   const body = new Uint8Array(await response.arrayBuffer());
-  await putFile(path, body, response.headers.get('etag'));
+  await putFile(path, body);
   return body;
 };
