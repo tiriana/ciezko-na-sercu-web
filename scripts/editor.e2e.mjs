@@ -48,7 +48,8 @@ await new Promise((resolve) => server.listen(PORT, resolve));
 const browser = await chromium.launch();
 const page = await browser.newPage();
 const steps = [];
-let published = null;
+const publishes = [];
+let current = null;
 
 await page.route('https://api.github.com/**', async (route) => {
   const request = route.request();
@@ -70,17 +71,21 @@ await page.route('https://api.github.com/**', async (route) => {
   }
   if (path.endsWith('/git/trees')) {
     const body = JSON.parse(request.postData() ?? '{}');
-    published = { tree: body.tree, base: body.base_tree };
-    return json({ sha: 'tree1' });
+    current = { tree: body.tree, base: body.base_tree, blobs: [...steps] };
+    publishes.push(current);
+    return json({ sha: `tree${publishes.length}` });
   }
   if (path.endsWith('/git/commits')) {
     const body = JSON.parse(request.postData() ?? '{}');
-    published.message = body.message;
-    published.parents = body.parents;
+    if (current) {
+      current.message = body.message;
+      current.parents = body.parents;
+    }
     return json({ sha: 'commit1' });
   }
   if (path.endsWith('/git/refs/heads/main') && method === 'PATCH') {
-    published.refSha = JSON.parse(request.postData() ?? '{}').sha;
+    const body = JSON.parse(request.postData() ?? '{}');
+    if (current) current.refSha = body.sha;
     return json({ object: { sha: 'commit1' } });
   }
   return json({ message: 'nieznany endpoint w atrapie' }, 404);
@@ -117,10 +122,15 @@ try {
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
   ok('szkic odblokował publikację');
 
-  await page.locator('#publish').click();
-  await page.waitForFunction(() => document.querySelector('#hint')?.textContent.startsWith('zapisane'), null, { timeout: 10000 });
+  const publishAndWait = async () => {
+    const before = publishes.length;
+    await page.locator('#publish').click();
+    await page.waitForFunction(() => document.querySelector('#hint')?.textContent.startsWith('zapisane'), null, { timeout: 10000 });
+    if (publishes.length === before) throw new Error('nie doszło do commita');
+    return publishes.at(-1);
+  };
 
-  if (!published) throw new Error('nie doszło do commita');
+  const published = await publishAndWait();
   const paths = published.tree.map((entry) => entry.path).sort();
   const overridePath = paths.find((path) => /^data\/overrides\/[0-9a-f-]{36}\.json$/.test(path));
   if (overridePath) ok(`commit zawiera plik poprawek odcinka (${overridePath})`);
@@ -131,12 +141,30 @@ try {
   if (/^fix\(dane\): /.test(published.message ?? '')) ok(`komunikat commita: ${published.message}`);
   else fail(`komunikat bez prefiksu wydania: ${published.message}`);
 
-  const overrideBlob = steps.find((step) => step.kind === 'blob' && step.content.includes('Poprawiony Wykonawca'));
+  const overrideBlob = published.blobs.find((step) => step.kind === 'blob' && step.content.includes('Poprawiony Wykonawca'));
   if (overrideBlob) ok('poprawka trafiła do treści pliku');
   else fail('w plikach commita brak zmienionego wykonawcy');
 
   if (published.refSha === 'commit1') ok('gałąź main przesunięta na nowy commit');
   else fail('gałąź nie została przesunięta');
+
+  // Ukrycie utworu: osobna poprawka, ten sam jeden commit.
+  await page.locator('#tracks tr:first-child td:last-child button').click();
+  const hidden = await publishAndWait();
+  const hiddenBlob = hidden.blobs.find((step) => step.kind === 'blob' && step.content.includes('"hide": true'));
+  if (hiddenBlob) ok('ukrycie utworu trafia do poprawek');
+  else fail('ukrycie nie trafiło do poprawek');
+
+  // Tytuł redakcyjny: zmiana tytułu musi wylądować w data/titles.json.
+  await page.locator('#episode-title').fill('Tytuł z edytora online');
+  await page.locator('#episode-title').press('Tab');
+  await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
+  const retitled = await publishAndWait();
+  const titlesBlob = retitled.blobs.find(
+    (step) => step.kind === 'blob' && step.content.includes('Tytuł z edytora online') && step.content.includes('"titles"')
+  );
+  if (titlesBlob) ok('tytuł odcinka trafia do data/titles.json');
+  else fail('zmiana tytułu nie trafiła do data/titles.json');
 } catch (error) {
   fail(error.message);
 } finally {
