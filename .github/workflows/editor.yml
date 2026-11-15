@@ -26,7 +26,9 @@ concurrency:
 env:
   CF_PROJECT: ciezko-edytor
   WRANGLER_VERSION: 4.157.0
-  EDITOR_URL: https://ciezko-edytor.pages.dev
+  # main to produkcja, gałęzie robocze mają własny podgląd — test dymny musi pytać
+  # ten adres, który właśnie powstał, a nie produkcję.
+  EDITOR_URL: ${{ github.ref_name == 'main' && 'https://ciezko-edytor.pages.dev' || format('https://{0}.ciezko-edytor.pages.dev', github.ref_name) }}
 
 jobs:
   deploy:
