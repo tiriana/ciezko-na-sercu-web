@@ -1,7 +1,23 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2538.88,
+      "label": "Rola dziennikarza jako przewodnika i selekcjonera",
+      "start": 2441.9
+    },
+    {
+      "time": 4024.47,
+      "label": "Predyspozycje charakterologiczne: upór i odporność na rozczarowania",
+      "start": 4012.05
+    },
+    {
+      "time": 5912.81,
+      "label": "Podcast Czarne Owce: metalowcy w życiu publicznym",
+      "start": 5901.17
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +25,6 @@
       "start": 0.04,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

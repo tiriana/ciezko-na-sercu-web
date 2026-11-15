@@ -1,13 +1,41 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 3464.2,
+      "label": "KIR i blackmetalowy album Lapelle du vide",
+      "start": 3433.52
+    },
+    {
+      "time": 4368.57,
+      "label": "Czernina i płyta Na pograniczu usidlenia",
+      "start": 4319.02
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 1.54,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Nazwa zespołu Viria, i tu czytam z przesłanego przez nich biogramu, oznacza nie tylko…",
+      "start": 1805.01,
+      "end": 1839.6
+    },
+    {
+      "label": "Bardzo mi się to podoba, że te nowe zespoły prezentują tak bardzo szerokie spektrum…",
+      "start": 2050.99,
+      "end": 2122.8
+    },
+    {
+      "label": "Kolejny zespół, któremu wróżę dużą karierę, jeżeli tylko nie odciągną ich odgrania inne…",
+      "start": 5749.58,
+      "end": 5784.5
     }
   ]
 }

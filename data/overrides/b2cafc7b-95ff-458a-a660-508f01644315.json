@@ -1,13 +1,46 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1678.62,
+      "label": "And Oceans, album The Regeneration Interary",
+      "start": 1645.07
+    },
+    {
+      "time": 3158.92,
+      "label": "Death SS i koncepcyjny album The Entity",
+      "start": 3090.22
+    },
+    {
+      "time": 5276.53,
+      "label": "Vildhjarta i nowy album",
+      "start": 5224.59
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.49,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Powitała nas piosenka Bitter Life zespołu Hostia, Gorzkie Życie. Jeden z czeskich…",
+      "start": 51.86,
+      "end": 129.3
+    },
+    {
+      "label": "Kiedy ostatnio oglądałem koncert Steve'a von Chilla na festiwalu Roadburn, nie mogłem się…",
+      "start": 5915.31,
+      "end": 5976.94
+    },
+    {
+      "label": "Apokaliptyczna Amerykana. Tak ktoś nazwał tę muzykę i od razu miał moją uwagę. Amerykana…",
+      "start": 6218.93,
+      "end": 6263.57
     }
   ]
 }

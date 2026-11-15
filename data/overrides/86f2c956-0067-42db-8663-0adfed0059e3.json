@@ -1,13 +1,66 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2190.22,
+      "label": "Arch Enemy i dwunasty album Blood Dynasty",
+      "start": 2140.3
+    },
+    {
+      "time": 2691.06,
+      "label": "Impurity i debiut z studia Sunlight",
+      "start": 2663.5
+    },
+    {
+      "time": 3740.22,
+      "label": "Cabal i album Everything Rots",
+      "start": 3700.3
+    },
+    {
+      "time": 3973.16,
+      "label": "Francuski zespół i płyta Pure Lenses",
+      "start": 3968.14
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 1.31,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Danny zgodził się nam opowiedzieć o nowym albumie Cradle of Filth to i owo, więc zacząłem…",
+      "start": 5439.44,
+      "end": 5561.87
+    },
+    {
+      "label": "Richard chciał się poświęcić życiu rodzinnemu, a na klawiszach grała dziewczyna, która…",
+      "start": 5572.5,
+      "end": 5711.92
+    },
+    {
+      "label": "Po naszemu to będzie kuj żelazo póki gorące. Nasze przysłowia są, jak widać, bardziej…",
+      "start": 5720.34,
+      "end": 5885.62
+    },
+    {
+      "label": "Pytałem o Czechów, Daniel opowiedział mi o Amerykanach. Coś kręci.",
+      "start": 5923.12,
+      "end": 5927.31
+    },
+    {
+      "label": "Częścią tożsamości Cradle of Filth, ich unikalnego stylu jest połączenie makabry z…",
+      "start": 6252.24,
+      "end": 6385.84
+    },
+    {
+      "label": "Myślę, że tak. Na pewno. Już teraz słuchają tej muzyki dwa pokolenia. Nie zawsze gramy…",
+      "start": 6392.14,
+      "end": 6422.48
     }
   ]
 }

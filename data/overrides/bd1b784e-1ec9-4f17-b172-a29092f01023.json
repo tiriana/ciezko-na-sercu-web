@@ -1,13 +1,46 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1350.37,
+      "label": "Hangman's Chair, album \"Sediction\"",
+      "start": 1321.81
+    },
+    {
+      "time": 3044.88,
+      "label": "Jinjer, album \"Duel\"",
+      "start": 3017.26
+    },
+    {
+      "time": 3941.54,
+      "label": "16, album \"Guides for the Misguided\"",
+      "start": 3926.96
+    },
+    {
+      "time": 5518.55,
+      "label": "Grab, album \"Kremes\"",
+      "start": 5489.97
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.57,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "muzyka",
+      "start": 8.34,
+      "end": 34.22
+    },
+    {
+      "label": "Polacy nie gęsi, czy tam nie kruki i nie wrony i też black metal znakomity grają, o czym…",
+      "start": 6406.32,
+      "end": 6464.34
     }
   ]
 }

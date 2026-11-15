@@ -1,7 +1,28 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1717.36,
+      "label": "Udo Dirkschneider z Crown Shift i All for Metal",
+      "start": 1642.48
+    },
+    {
+      "time": 2064.08,
+      "label": "Dom Zły w trasie po Polsce i Europie z Zill & Ardor",
+      "start": 2055.92
+    },
+    {
+      "time": 3749.12,
+      "label": "Suffocation z Angel Maker, Fuming Mouth i Carcosa",
+      "start": 3675.82
+    },
+    {
+      "time": 6418.59,
+      "label": "Cult of Fire z The Great Old Ones i Caronte w Polsce",
+      "start": 6300.43
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +30,6 @@
       "start": 1.67,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

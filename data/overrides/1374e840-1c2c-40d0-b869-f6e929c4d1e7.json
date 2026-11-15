@@ -1,13 +1,41 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1967.1,
+      "label": "Omówienie zespołu Strict 9 oraz fragment albumu „Parasit”",
+      "start": 1910.29
+    },
+    {
+      "time": 3026.87,
+      "label": "Prezentacja zespołu Soul i odtworzenie utworu „Vanishing Threshold”",
+      "start": 3003.89
+    },
+    {
+      "time": 3271.08,
+      "label": "Współpraca z Heavy Music Estonia i przygotowania do Mystic Festival",
+      "start": 3258.48
+    },
+    {
+      "time": 4559.2,
+      "label": "Prezentacja Ico Love i dyskusja o ich stylu muzycznym",
+      "start": 4556.14
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 1.02,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Sergent to kwartet z Talina, wykonujący progresywny death metal. Słuchać w tym było i…",
+      "start": 3668.08,
+      "end": 3708.98
     }
   ]
 }

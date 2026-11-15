@@ -1,7 +1,18 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 5046.53,
+      "label": "D.R.I. w Warszawie i Zabrzu",
+      "start": 5033.49
+    },
+    {
+      "time": 6063.82,
+      "label": "Poland Rock, Zeal and Ardor i Paradise Lost",
+      "start": 5923.6
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +20,6 @@
       "start": 0.48,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

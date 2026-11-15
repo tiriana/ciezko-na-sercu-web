@@ -1,13 +1,51 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1413.87,
+      "label": "Gruesome \"Silent Echos\" — hołd dla wczesnego Death",
+      "start": 1362.45
+    },
+    {
+      "time": 2094.29,
+      "label": "Mordbear — trzyutworowa EPka, stoner i psychodelia",
+      "start": 2086.77
+    },
+    {
+      "time": 3275.63,
+      "label": "Dead Guy \"Near Death Travel Services\" — powrót po 30 latach",
+      "start": 3239.25
+    },
+    {
+      "time": 3788.34,
+      "label": "Melville Lens \"Where Only the Truth is Spoken\" z Joshem Wilburem",
+      "start": 3761.84
+    },
+    {
+      "time": 4385.75,
+      "label": "Hex Vessel \"Nocturn\" — materiał z koncertu dla Roadburn",
+      "start": 4358.67
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.55,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Przez pierwszą dekadę istnienia Sodom, a więc w latach 1982-92, zespół napędzał…",
+      "start": 638.7,
+      "end": 727.12
+    },
+    {
+      "label": "My to polski black metal z Norwegii. To może teraz posłuchajmy zespołu Wekeras, czyli…",
+      "start": 5387.47,
+      "end": 5456.43
     }
   ]
 }

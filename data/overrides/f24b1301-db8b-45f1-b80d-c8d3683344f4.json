@@ -1,13 +1,31 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2910.43,
+      "label": "Testament „World War III” z „Titans of Creation”",
+      "start": 2899.15
+    },
+    {
+      "time": 3230.74,
+      "label": "Manowar „Święta Wojna” z „Fighting the World”",
+      "start": 3220.4
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 1.78,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Niemiecka Wielka Traszowa Czwórka mniej ochoczo zajmowała się wojną niż ich amerykańscy…",
+      "start": 1559.41,
+      "end": 1598.77
     }
   ]
 }

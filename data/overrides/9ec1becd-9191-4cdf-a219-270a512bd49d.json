@@ -1,7 +1,28 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2890.72,
+      "label": "Aborted, Krypta, The Zenith Passage i Organectomy",
+      "start": 2738.9
+    },
+    {
+      "time": 4557.85,
+      "label": "Godflesh w Progresji, supporty Thaw i Larmo",
+      "start": 4488.85
+    },
+    {
+      "time": 5589.02,
+      "label": "Babymetal z Poppy i Bambie Thug w Tauron Arenie",
+      "start": 5434.26
+    },
+    {
+      "time": 5836.76,
+      "label": "Decapitated z nowym wokalistą, Cryptopsy i Warbringer",
+      "start": 5809.1
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +30,6 @@
       "start": 0.74,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

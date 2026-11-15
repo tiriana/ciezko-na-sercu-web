@@ -1,13 +1,36 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1945.48,
+      "label": "Coroner i I Want You (She's So Heavy) Beatlesów",
+      "start": 1910.8
+    },
+    {
+      "time": 2769.28,
+      "label": "Type O Negative przerabia Summer Breeze Seals and Crofts",
+      "start": 2731.18
+    },
+    {
+      "time": 3777.2,
+      "label": "Vader, I Feel You Depeche Mode i koniec wojny depeszów z metalowcami",
+      "start": 3768.5
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.17,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Uwaga, teraz będę wyznawał miłość. Otóż kocham dwa pierwsze albumy Life of Agony. Również…",
+      "start": 3107.5,
+      "end": 3166.42
     }
   ]
 }

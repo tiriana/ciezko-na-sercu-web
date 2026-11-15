@@ -1,13 +1,51 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1770.8,
+      "label": "OLS i album Poświaty; słowiański neofolk",
+      "start": 1636.14
+    },
+    {
+      "time": 2059.54,
+      "label": "Vee i Bluzg; blackmetalowy zwrot Tui Szmaragd",
+      "start": 2027.98
+    },
+    {
+      "time": 2347.35,
+      "label": "Behemoth: The Shit of God i produkcja Jensa Bogrena",
+      "start": 2301.78
+    },
+    {
+      "time": 6420.8,
+      "label": "Metallus i We're All Doomed; warszawski doom",
+      "start": 6390.9
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.57,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Jesteśmy w środku czasu wyborczego. Mam nadzieję, że wybieracie mądrze i mam nadzieję, że…",
+      "start": 532.66,
+      "end": 578.77
+    },
+    {
+      "label": "Oczywiście nie trzeba się spinać z tego powodu, że Behemoth ma niezmiennie dobrą passę.…",
+      "start": 2763.47,
+      "end": 2832.4
+    },
+    {
+      "label": "Bunt Maszyn, czyli black metal o tym, co tu i teraz i być może już za chwilę. Programowo…",
+      "start": 4107.31,
+      "end": 4157.04
     }
   ]
 }

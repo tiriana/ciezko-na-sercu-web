@@ -1,13 +1,31 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 3363.2,
+      "label": "Airbourne w Warszawie i Lorna Shore we Wrocławiu",
+      "start": 3335.86
+    },
+    {
+      "time": 4759.12,
+      "label": "Black Silesia w Byczynie i 40-lecie Onslaughta",
+      "start": 4748.34
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.55,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "A co z polskimi artystami? Tych też wystąpi na Mystiku niemało. W dodatku jak co roku…",
+      "start": 1903.86,
+      "end": 1982.13
     }
   ]
 }
