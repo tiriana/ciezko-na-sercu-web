@@ -12,7 +12,7 @@ work="$(mktemp -d)"
 trap 'rm -rf "$work"' EXIT
 
 for font in inter anton; do
-  target="public/fonts/${font}-pl.woff2"
+  target="site/public/fonts/${font}-pl.woff2"
   cp "$target" "$work/${font}-source.woff2"
   "$PYFTSUBSET" "$work/${font}-source.woff2" \
     --output-file="$work/${font}-subset.woff2" \
@@ -31,7 +31,7 @@ from fontTools.ttLib import TTFont
 
 work = sys.argv[1]
 used = set()
-for path in glob.glob('dist/**/*.html', recursive=True):
+for path in glob.glob("site/dist/**/*.html", recursive=True):
     with open(path, encoding='utf-8') as file:
         used |= set(file.read())
 used = {ord(char) for char in used if ord(char) not in (9, 10, 13)}
@@ -46,7 +46,7 @@ def cmap(path):
 failed = False
 for name in ('inter', 'anton'):
     source = cmap(f'{work}/{name}-source.woff2')
-    subset = cmap(f'public/fonts/{name}-pl.woff2')
+    subset = cmap(f'site/public/fonts/{name}-pl.woff2')
     regressions = sorted(used & source - subset)
     already = sorted(used - source)
     print(f'{name}: {len(subset)} glifów, brakujące już w źródle: {len(already)}, regresje: {len(regressions)}')
@@ -57,5 +57,5 @@ if failed:
     sys.exit(1)
 PY
 else
-  echo 'Brak dist/ — pomijam weryfikację pokrycia znaków (zrób build i uruchom ponownie).'
+  echo 'Brak site/dist/ — pomijam weryfikację pokrycia znaków (zrób build i uruchom ponownie).'
 fi
