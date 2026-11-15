@@ -206,11 +206,30 @@ button.small {
 
 #wave {
   width: 100%;
-  height: 64px;
+  height: 96px;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 6px;
-  cursor: crosshair;
+  cursor: grab;
+  touch-action: none;
+}
+
+#wave:active {
+  cursor: grabbing;
+}
+
+.wave-tools {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.wave-window {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--muted);
+  min-width: 110px;
 }
 
 .tracks {

@@ -18,8 +18,12 @@ uruchamiania czegokolwiek lokalnie. Nie ma backendu: przeglądarka czyta dane pr
 3. Publikacja scala szkic z istniejącymi poprawkami (`mergeOverrides`) i wysyła **jeden
    commit** na `main` przez Git Data API: blob → tree (`base_tree`) → commit → `PATCH` ref.
    Commit ma typ `fix`, więc semantic-release zrobi patch i `deploy.yml` opublikuje stronę.
-4. Commit dotyka `data/overrides/<uuid>.json` i, przy zmianie tytułu, `data/titles.json`.
-   Zapis aliasów to osobny commit na `data/aliases.json` (widok „Tagi i aliasy”).
+4. Commit dotyka `data/overrides/<uuid>.json`, a przy zmianie tytułu `data/titles.json`
+   i przy zmianie znaczników `data/reviewed.json`. Zapis aliasów to osobny commit na
+   `data/aliases.json` (widok „Tagi i aliasy”).
+5. Znaczniki „przejrzane” czytamy z `data/reviewed.json` i tam wracają, kluczowane
+   etykietą utworu (`t:wykonawca|tytuł`), więc postęp widać też w lokalnym edytorze
+   i na stronie.
 
 Jeden commit zamiast pliku po pliku jest istotny: każdy push do `main` zmieniający
 `data/**` odpala `repair.yml`, a `release.yml` robi wydanie, więc trzy pliki zapisane
@@ -69,7 +73,7 @@ dozwolonych osób do utrzymywania.
 4. Odpowiedź 401 czyści sesję i pokazuje przycisk logowania; szkic zostaje w IndexedDB,
    więc po ponownym zalogowaniu publikacja wysyła te same zmiany. Nic nie zapisuje się
    po cichu.
-4. Historia i cofanie są po stronie Gita: każda publikacja to commit `fix(dane): …`,
+5. Historia i cofanie są po stronie Gita: każda publikacja to commit `fix(dane): …`,
    więc `git revert` wystarcza.
 
 ## Waveform
@@ -79,10 +83,15 @@ rzeczywistym — przeglądarka nie policzy więc waveformu sama. Liczy go `ffmpe
 
 1. `scripts/compute-peaks.mjs` pisze `data/peaks/<uuid>.bin` (1 bajt na słupek, 20
    słupków/s, ~135 kB na odcinek) i `data/peaks/index.json`.
-2. `.github/workflows/peaks.yml` uruchamia się po zmianie `data/catalog.json` (czyli po
-   nowym odcinku) i commituje wynik jako `chore:` — bez typu wydania nie ma deployu.
+2. `.github/workflows/peaks.yml` liczy brakujące pliki i commituje wynik jako `chore:` —
+   bez typu wydania nie ma deployu. Zamawia go `refresh-catalog.yml` po commicie katalogu,
+   bo push z `GITHUB_TOKEN`-em nie uruchamia workflowów z `on: push`.
 3. Edytor czyta `index.json`, żeby nie pytać o nieistniejące pliki, a potem pobiera
    pojedynczy `.bin`.
+
+W oknie waveformu kółko myszy przybliża i oddala wokół kursora, przeciąganie przesuwa
+okno, klik przeskakuje w nagraniu. Niebieskie znaczniki to granice utworów, zielone —
+utwory oznaczone jako przejrzane; czerwona kreska pokazuje miejsce odtwarzania.
 
 Skala waveformu jest skalą odtwarzacza (`scripts/lib/timeline.mjs`), bo nagłówek mp3 bywa
 krótszy niż realne audio — bez tego kreska rozjeżdża się ku końcowi audycji.
@@ -98,16 +107,21 @@ rebazującą na nowy koniec gałęzi,
 `401` wraca do logowania bez commita, alias zapisuje się jednym commitem, a żadne żądanie
 nie wychodzi poza atrapę. Job `test` w `editor.yml` uruchamia te testy przed deployem.
 
+Po publikacji `deploy.yml` uruchamia `npm run smoke:release`: sprawdza `<meta name="version">`
+i stopkę na stronie głównej, a potem przechodzi przez **wszystkie** zbudowane strony
+(odcinki, tagi, o projekcie) i porównuje tytuł z `site/dist`. Nieudane adresy powtarza,
+bo świeży deployment potrzebuje chwili, zanim zacznie być serwowany — stary test dymny
+przechodził mimo 404 na większości stron, bo pytał trzy adresy i trafiał w cache.
+
 ## Ograniczenia
 
-1. Szkice, „przejrzane” i postęp żyją w IndexedDB — per urządzenie. Źródłem prawdy jest
-   repozytorium, więc nic nie przepada trwale, ale telefon i komputer nie widzą tych samych
-   szkiców; wyczyszczenie danych przeglądarki też je kasuje.
+1. Szkice (niezapisane poprawki) żyją w IndexedDB — per urządzenie, dopóki ich nie
+   opublikujesz. Znaczniki „przejrzane” są w repozytorium, więc widać je wszędzie.
 2. Edytor obsługuje utwory, tytuł odcinka oraz tagi i aliasy; wejścia, streszczenie
    i creditsy zostają w edytorze lokalnym (`npm run edytor`).
 3. Audio pobiera się dopiero po kliknięciu play albo waveformu — 110-minutowy plik nie
    schodzi przy samym otwarciu odcinka.
-3. Edytor publikuje prosto do `main` — bez PR. Cudza osoba z prawem zapisu mogłaby to
+4. Edytor publikuje prosto do `main` — bez PR. Cudza osoba z prawem zapisu mogłaby to
    zrobić tak samo; to świadoma decyzja z epica #80 (wersja jednoosobowa).
 
 ## Uruchomienie lokalne
