@@ -54,4 +54,7 @@ jobs:
           fi
 
       - name: Zapisz w repozytorium
-        run: scripts/push-data.sh "chore(dane): waveform dla edytora online" data/peaks
+        # Blok zamiast zwykłej wartości, bo w komunikacie jest „: ”, a tego YAML nie
+        # przyjmuje w niecytowanej wartości — cały plik był przez to niepoprawny.
+        run: >-
+          bash scripts/push-data.sh "chore(dane): waveform dla edytora online" data/peaks
