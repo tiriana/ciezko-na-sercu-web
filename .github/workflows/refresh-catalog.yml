@@ -67,6 +67,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
 
+      # Waveform do edytora online: ten sam powód co wyżej — push z GITHUB_TOKEN-em nie
+      # uruchamia `on: push` w peaks.yml, więc liczenie trzeba zamówić jawnie.
+      - name: Policz waveform dla nowego odcinka
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run peaks.yml --ref main
+
       # Nowy odcinek ma pierwszeństwo przed kolejką, więc od razu po odświeżeniu katalogu
       # liczymy dla niego bloki mowy. To tanie i jest wejściem dla transkrypcji (cięcie na
       # mowę) i dla Shazama (muzyka to dopełnienie mowy) — dlatego `spans` zamawia
