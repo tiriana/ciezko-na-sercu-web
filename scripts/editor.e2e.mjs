@@ -116,7 +116,7 @@ try {
   await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, { timeout: 10000 });
   ok('logowanie przyjęte');
 
-  const artistInput = page.locator('#tracks tr:first-child td:nth-child(3) input');
+  const artistInput = page.locator('#tracks tr:first-child td:nth-child(4) input');
   await artistInput.fill('Poprawiony Wykonawca');
   await artistInput.press('Tab');
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
@@ -168,7 +168,7 @@ try {
 
   // Strażnik przed zepsutym plikiem: koniec przed początkiem nie może dojść do GitHuba.
   const beforeGuard = publishes.length;
-  const endInput = page.locator('#tracks tr:first-child td:nth-child(2) input');
+  const endInput = page.locator('#tracks tr:first-child td:nth-child(3) input');
   await endInput.fill('0:01');
   await endInput.press('Tab');
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
