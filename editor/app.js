@@ -1,13 +1,8 @@
 import { mergeOverrides, normalize, validateOverride, validateSavePayload } from './lib/overrides.mjs';
-import {
-  currentSession,
-  pollDeviceToken,
-  publishChanges,
-  readRawJson,
-  signInWithToken,
-  signOut,
-  startDeviceFlow,
-} from './github.js';
+import { currentSession, pollDeviceToken, publishChanges, signInWithToken, signOut, startDeviceFlow } from './github.js';
+import { deleteDraft, getDraft, getMeta, putDraft, putMeta } from './store.js';
+import { loadJson, loadJsonFresh } from './source.js';
+import { validateTrackTimes } from './lib/overrides.mjs';
 import { config } from './config.js';
 import { drawWaveform, loadPeaks } from './peaks.js';
 
@@ -26,6 +21,10 @@ const state = {
   peaks: null,
   titleDirty: false,
   dirty: false,
+  // Znaczniki „przejrzane" żyją per urządzenie (IndexedDB), bo to stan pracy, a nie
+  // treść odcinka: `data/reviewed.json` zostaje dla automatywów i edytora lokalnego.
+  reviewed: {},
+  draftTimer: null,
 };
 
 const setStatus = (text, kind = '') => {
@@ -92,12 +91,42 @@ const prune = (fix) => {
 
 const hasChanges = () => state.edits.size > 0 || state.titleDirty;
 
+const reviewedCount = () => Object.keys(state.reviewed ?? {}).length;
+
+const toggleReviewed = async (index) => {
+  const id = state.episode.id;
+  state.reviewed = { ...state.reviewed };
+  if (state.reviewed[index]) delete state.reviewed[index];
+  else state.reviewed[index] = new Date().toISOString();
+  const all = { ...(state.reviewedAll ?? {}), [id]: state.reviewed };
+  state.reviewedAll = all;
+  await putMeta('reviewed', all);
+  renderTracks();
+};
+
 const refreshPublish = () => {
   $('#publish').disabled = !currentSession().canPush || !hasChanges();
 };
 
+const saveDraft = () => {
+  if (!state.episode) return;
+  const payload = {
+    edits: [...state.edits.entries()],
+    title: $('#episode-title').value,
+    titleDirty: state.titleDirty,
+    at: new Date().toISOString(),
+  };
+  void putDraft(state.episode.id, payload);
+};
+
+const scheduleDraftSave = () => {
+  clearTimeout(state.draftTimer);
+  state.draftTimer = setTimeout(saveDraft, 500);
+};
+
 const markDirty = () => {
   state.dirty = true;
+  scheduleDraftSave();
   refreshPublish();
   const count = state.edits.size;
   notify(
@@ -203,7 +232,18 @@ const renderTracks = () => {
     const tr = document.createElement('tr');
     if (fix.hide) tr.className = 'hidden-track';
 
+    const done = document.createElement('input');
+    done.type = 'checkbox';
+    done.className = 'done';
+    done.checked = Boolean(state.reviewed?.[index]);
+    done.title = 'przejrzane na tym urządzeniu';
+    done.addEventListener('change', () => void toggleReviewed(index));
+    const doneCell = document.createElement('td');
+    doneCell.className = 'done-cell';
+    doneCell.append(done);
+
     tr.append(
+      doneCell,
       cell(timeInput(track, 'start', fix), 'num'),
       cell(timeInput(track, 'end', fix), 'num'),
       cell(textInput(track, fix.newArtist ?? track.artist, 'newArtist', 'artist')),
@@ -227,6 +267,8 @@ const renderTracks = () => {
     body.append(tr);
   });
 
+  const total = (state.episode?.tracks ?? []).length;
+  $('#progress').textContent = total > 0 ? `przejrzane ${reviewedCount()}/${total}` : '';
   refreshPublish();
 };
 
@@ -248,16 +290,26 @@ const openEpisode = async (episode) => {
   $('#episode-meta').textContent = `${slugOf(episode)} · ${fmtTime(episode.durationSec)} · ${episode.audioUrl ? 'audio gotowe' : 'brak audio'}`;
   notify('wczytuję odcinek…');
 
-  const [file, override, peaks] = await Promise.all([
-    readRawJson(`data/episodes/${episode.id}.json`),
-    readRawJson(`data/overrides/${episode.id}.json`).catch(() => null),
+  const [file, override, peaks, draft] = await Promise.all([
+    loadJson(`data/episodes/${episode.id}.json`),
+    loadJson(`data/overrides/${episode.id}.json`).catch(() => null),
     loadPeaks(episode.id).catch(() => null),
+    getDraft(episode.id),
   ]);
   if (!file) throw new Error('nie ma pliku odcinka');
 
   state.episode = { ...file, ...episode };
   state.override = override;
   state.peaks = peaks;
+  state.reviewedAll = (await getMeta('reviewed'))?.value ?? {};
+  state.reviewed = state.reviewedAll[episode.id] ?? {};
+
+  if (draft?.payload?.edits?.length) {
+    state.edits = new Map(draft.payload.edits);
+    if (draft.payload.title) $('#episode-title').value = draft.payload.title;
+    state.titleDirty = Boolean(draft.payload.titleDirty);
+    notify(`przywrócony szkic z ${new Date(draft.at).toLocaleString('pl-PL')} — publikacja albo „odrzuć szkic”`);
+  }
 
   const audio = $('#audio');
   audio.src = episode.audioUrl ?? '';
@@ -281,10 +333,23 @@ const publish = async () => {
   const invalid = validateSavePayload(payload);
   if (invalid) return notify(invalid, 'error');
 
+  // Poprawki czytamy fresh: scalanie ze stanem z otwarcia odcinka cofałoby zmiany
+  // zrobione w międzyczasie gdzie indziej.
+  const [freshOverride, freshTitles] = await Promise.all([
+    loadJsonFresh(`data/overrides/${state.episode.id}.json`).catch(() => state.override),
+    loadJsonFresh('data/titles.json').catch(() => state.titles),
+  ]);
+  state.override = freshOverride ?? null;
+  state.titles = freshTitles ?? state.titles;
+
   const next = mergeOverrides(state.override, payload);
   // Strażnik przed produkcją: plik, którego nie przyjmie schemat strony, wywaliłby build.
   const problems = validateOverride(next, { durationSec: state.episode.durationSec ?? 0 });
   if (problems.length) return notify(`nie publikuję — ${problems.slice(0, 3).join('; ')}`, 'error');
+
+  const effective = state.episode && applyOverrides(state.episode, next);
+  const timeProblems = effective ? validateTrackTimes(effective.tracks, { durationSec: state.episode.durationSec ?? 0 }) : [];
+  if (timeProblems.length) return notify(`nie publikuję — ${timeProblems.slice(0, 3).join('; ')}`, 'error');
   const files = {};
   files[`data/overrides/${state.episode.id}.json`] = `${JSON.stringify(next, null, 2)}\n`;
 
@@ -311,6 +376,8 @@ const publish = async () => {
     state.edits = new Map();
     state.titleDirty = false;
     state.dirty = false;
+    clearTimeout(state.draftTimer); // odroczony zapis nie może wskrzesić usuniętego szkicu
+    await deleteDraft(state.episode.id);
     renderList();
     renderTracks();
     notify(`zapisane: ${result.url}`);
@@ -414,6 +481,27 @@ const bind = () => {
     if (duration > 0) audio.currentTime = Math.max(0, Math.min(duration, ratio * duration));
   });
 
+  $('#discard').addEventListener('click', async () => {
+    if (!state.episode) return;
+    clearTimeout(state.draftTimer);
+    await deleteDraft(state.episode.id);
+    const episode = state.episode;
+    await openEpisode(episode);
+    notify('szkic odrzucony');
+  });
+
+  window.addEventListener('edytor:plik-odswiezony', (event) => {
+    const path = event.detail?.path;
+    if (path === 'data/catalog.json') {
+      void loadJson(path).then((catalog) => {
+        if (!catalog) return;
+        state.catalog = catalog;
+        renderList();
+        notify('katalog odświeżony w tle');
+      });
+    }
+  });
+
   window.addEventListener('resize', renderWave);
   window.addEventListener('beforeunload', (event) => {
     if (state.dirty) event.preventDefault();
@@ -424,9 +512,9 @@ const load = async () => {
   bind();
   bootAuth();
   const [catalog, titles, pkg] = await Promise.all([
-    readRawJson('data/catalog.json'),
-    readRawJson('data/titles.json').catch(() => null),
-    readRawJson('package.json').catch(() => null),
+    loadJson('data/catalog.json'),
+    loadJson('data/titles.json').catch(() => null),
+    loadJsonFresh('package.json').catch(() => null),
   ]);
   if (!catalog) throw new Error('nie mogę wczytać katalogu odcinków');
   state.catalog = catalog;

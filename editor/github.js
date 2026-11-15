@@ -2,7 +2,7 @@
 // odczyt surowych plików i publikacja jednym commitem. Token żyje wyłącznie w pamięci
 // karty — nigdy w localStorage, sessionStorage ani cookie.
 
-import { config, rawUrl } from './config.js';
+import { config } from './config.js';
 
 let token = '';
 let session = { login: '', canPush: false };
@@ -83,24 +83,6 @@ export const pollDeviceToken = async (deviceCode) => {
   if (data.access_token) return signInWithToken(data.access_token);
   if (data.error === 'authorization_pending' || data.error === 'slow_down') return null;
   throw new Error(data.error_description || data.error || 'nie udało się zalogować');
-};
-
-export const readRaw = async (path) => {
-  const response = await fetch(rawUrl(path), { cache: 'no-cache' });
-  if (response.status === 404) return null;
-  if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
-  return response.text();
-};
-
-export const readRawJson = async (path) => {
-  const text = await readRaw(path);
-  return text === null ? null : JSON.parse(text);
-};
-
-export const readRawBinary = async (path) => {
-  const response = await fetch(rawUrl(path), { cache: 'no-cache' });
-  if (!response.ok) return null;
-  return new Uint8Array(await response.arrayBuffer());
 };
 
 const blobOf = async (content) =>

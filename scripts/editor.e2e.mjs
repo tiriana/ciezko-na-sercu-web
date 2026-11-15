@@ -176,6 +176,25 @@ try {
   await page.waitForFunction(() => document.querySelector('#hint')?.textContent.startsWith('nie publikuję'), null, { timeout: 5000 });
   if (publishes.length === beforeGuard) ok('niepoprawny czas zablokował publikację');
   else fail('niepoprawny czas trafił do commita');
+
+  // Szkic: zmiana ma przetrwać przeładowanie karty (IndexedDB). Zapis jest odroczony
+  // o 0,5 s, więc najpierw dajemy mu dojść do skutku.
+  const artistCell = () => page.locator('#tracks tr:first-child td:nth-child(4) input');
+  await artistCell().fill('Szkic po przeładowaniu');
+  await artistCell().press('Tab');
+  await page.waitForTimeout(900);
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  await page.waitForSelector('#episodes li button');
+  await page.locator('#filter').fill(episodeSlug);
+  await page.waitForTimeout(300);
+  await page.locator('#episodes li button').first().click();
+  await page.waitForFunction(
+    () => document.querySelector('#tracks tr:first-child td:nth-child(4) input')?.value === 'Szkic po przeładowaniu',
+    null,
+    { timeout: 10000 }
+  );
+  ok('szkic przeżył przeładowanie karty');
+
 } catch (error) {
   fail(error.message);
 } finally {

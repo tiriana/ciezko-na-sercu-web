@@ -34,7 +34,10 @@
             <span>tytuł odcinka</span>
             <input id="episode-title" type="text" />
           </label>
-          <div class="meta" id="episode-meta"></div>
+          <div class="meta">
+            <span id="episode-meta"></span>
+            <span id="progress" class="progress"></span>
+          </div>
         </div>
 
         <div class="player">
@@ -45,6 +48,7 @@
         <table class="tracks">
           <thead>
             <tr>
+              <th class="tick" title="przejrzane">✓</th>
               <th class="num">start</th>
               <th class="num">koniec</th>
               <th>wykonawca</th>
@@ -57,6 +61,7 @@
         </table>
 
         <p class="hint" id="hint">Zmiany zbierają się w szkicu na tej karcie — publikacja wysyła jeden commit na main.</p>
+        <button id="discard" type="button" class="ghost small">odrzuć szkic</button>
       </section>
     </main>
 

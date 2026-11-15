@@ -366,3 +366,22 @@ dialog::backdrop {
     width: 62px;
   }
 }
+
+.tracks th.tick,
+.tracks td.done-cell {
+  width: 30px;
+  text-align: center;
+}
+
+.tracks td.done-cell input {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--ok);
+  cursor: pointer;
+}
+
+.progress {
+  margin-left: 10px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}

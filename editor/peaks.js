@@ -1,4 +1,4 @@
-import { readRawBinary, readRawJson } from './github.js';
+import { loadBinary, loadJson } from './source.js';
 
 const bins = new Map();
 let index = null;
@@ -6,7 +6,7 @@ let index = null;
 /** Spis plików waveformu pozwala nie pytać o nieistniejące pliki — 404 na każde
  * kliknięcie odcinka byłoby tylko szumem w konsoli. */
 const loadIndex = async () => {
-  if (index === null) index = (await readRawJson('data/peaks/index.json').catch(() => null)) ?? { episodes: {} };
+  if (index === null) index = (await loadJson('data/peaks/index.json').catch(() => null)) ?? { episodes: {} };
   return index;
 };
 
@@ -18,7 +18,7 @@ export const peaksMeta = async (id) => {
 export const loadPeaks = async (id) => {
   if (bins.has(id)) return bins.get(id);
   if (!(await peaksMeta(id))) return null;
-  const data = await readRawBinary(`data/peaks/${id}.bin`);
+  const data = await loadBinary(`data/peaks/${id}.bin`);
   bins.set(id, data);
   return data;
 };
