@@ -4,108 +4,119 @@
   "provider": "whisper-cpp",
   "model": "large-v3-turbo-q5_0",
   "language": "pl",
-  "fileSizeBytes": 115528073,
-  "fileMtimeMs": 1789150304084.931,
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
   "windows": [
     {
       "index": 0,
       "start": 0,
-      "end": 67.55
+      "end": 65.66
     },
     {
       "index": 1,
-      "start": 299.94,
-      "end": 450.17
+      "start": 300.86,
+      "end": 446.98
     },
     {
       "index": 2,
-      "start": 705.25,
-      "end": 806.84
+      "start": 706.27,
+      "end": 805.83
     },
     {
       "index": 3,
-      "start": 839.36,
-      "end": 863.32
+      "start": 843.23,
+      "end": 862.31
     },
     {
       "index": 4,
-      "start": 916.74,
-      "end": 936.99
+      "start": 917.37,
+      "end": 934.73
     },
     {
       "index": 5,
-      "start": 1064.13,
-      "end": 1296.51
+      "start": 1065.37,
+      "end": 1177.35
     },
     {
       "index": 6,
-      "start": 1671.97,
-      "end": 1838.56
+      "start": 1184.51,
+      "end": 1188.23
     },
     {
       "index": 7,
-      "start": 2400.87,
-      "end": 2448.83
+      "start": 1195.58,
+      "end": 1197.7
     },
     {
       "index": 8,
-      "start": 2763.75,
-      "end": 2823.87
+      "start": 1673.24,
+      "end": 1835.52
     },
     {
       "index": 9,
-      "start": 2966.37,
-      "end": 3096.28
+      "start": 2403,
+      "end": 2445
     },
     {
       "index": 10,
-      "start": 3375.72,
-      "end": 3504.54
+      "start": 2765.69,
+      "end": 2822.25
     },
     {
       "index": 11,
-      "start": 3738.12,
-      "end": 3891.45
+      "start": 2967.13,
+      "end": 3094.59
     },
     {
       "index": 12,
-      "start": 3936.48,
-      "end": 3954.49
+      "start": 3376.8,
+      "end": 3501.76
     },
     {
       "index": 13,
-      "start": 4094.34,
-      "end": 4381.76
+      "start": 3739.04,
+      "end": 3826.08
     },
     {
       "index": 14,
-      "start": 4787.08,
-      "end": 4863.9
+      "start": 4095.42,
+      "end": 4380.1
     },
     {
       "index": 15,
-      "start": 5578.56,
-      "end": 5622.56
+      "start": 4788.09,
+      "end": 4861.99
     },
     {
       "index": 16,
-      "start": 5639.81,
-      "end": 5667.13
+      "start": 5579.48,
+      "end": 5613.48
     },
     {
       "index": 17,
-      "start": 5969,
-      "end": 6093.53
+      "start": 5969.95,
+      "end": 6089.95
     },
     {
       "index": 18,
-      "start": 6302.88,
-      "end": 6354.43
+      "start": 6089.95,
+      "end": 6091.05
     },
     {
       "index": 19,
-      "start": 6636.55,
-      "end": 6731.42
+      "start": 6304.22,
+      "end": 6352
+    },
+    {
+      "index": 20,
+      "start": 6638.14,
+      "end": 6729.32
     }
   ],
   "segments": [
@@ -116,298 +127,1278 @@
     },
     {
       "start": 3,
+      "end": 3.96,
+      "text": "Dobry wieczór Państwu,"
+    },
+    {
+      "start": 3.96,
+      "end": 5.56,
+      "text": "serdecznie witam w"
+    },
+    {
+      "start": 5.56,
       "end": 6.7,
-      "text": "Dobry wieczór Państwu, serdecznie witam w sierpniu."
+      "text": "sierpniu."
     },
     {
       "start": 7.6,
+      "end": 7.62,
+      "text": "Moja żona od"
+    },
+    {
+      "start": 7.62,
+      "end": 9.49,
+      "text": "pierwszych dni sierpnia"
+    },
+    {
+      "start": 9.49,
+      "end": 11.12,
+      "text": "mawia, że czuje już"
+    },
+    {
+      "start": 11.12,
       "end": 12.84,
-      "text": "Moja żona od pierwszych dni sierpnia mawia, że czuje już podmuch zimy,"
+      "text": "podmuch zimy,"
     },
     {
       "start": 13.2,
+      "end": 14.13,
+      "text": "ale mam nadzieję,"
+    },
+    {
+      "start": 14.13,
+      "end": 15.33,
+      "text": "że to jest ta jedna"
+    },
+    {
+      "start": 15.33,
+      "end": 16.86,
+      "text": "jedyna rzecz, co do"
+    },
+    {
+      "start": 16.86,
+      "end": 18.95,
+      "text": "której żona się mraczy"
+    },
+    {
+      "start": 18.95,
       "end": 19.86,
-      "text": "ale mam nadzieję, że to jest ta jedna jedyna rzecz, co do której żona się mraczy mylić."
+      "text": "mylić."
     },
     {
       "start": 20.58,
+      "end": 21.53,
+      "text": "Ja natomiast czuję"
+    },
+    {
+      "start": 21.53,
       "end": 24.28,
-      "text": "Ja natomiast czuję podmuch płynący z głośników,"
+      "text": "podmuch płynący z głośników,"
     },
     {
       "start": 24.28,
+      "end": 25.8,
+      "text": "w których membrany"
+    },
+    {
+      "start": 25.8,
+      "end": 27.77,
+      "text": "drżą od przesterowanych"
+    },
+    {
+      "start": 27.77,
+      "end": 29.74,
+      "text": "gitar oraz ciosów bębnów"
+    },
+    {
+      "start": 29.74,
       "end": 31,
-      "text": "w których membrany drżą od przesterowanych gitar oraz ciosów bębnów taktowych."
+      "text": "taktowych."
     },
     {
       "start": 31.8,
+      "end": 32.43,
+      "text": "Dzisiaj opowiem Wam"
+    },
+    {
+      "start": 32.43,
+      "end": 34.27,
+      "text": "bowiem o kilku koncertach"
+    },
+    {
+      "start": 34.27,
       "end": 35.56,
-      "text": "Dzisiaj opowiem Wam bowiem o kilku koncertach i festiwalach,"
+      "text": "i festiwalach,"
     },
     {
       "start": 35.64,
+      "end": 37.58,
+      "text": "na które w tym miesiącu"
+    },
+    {
+      "start": 37.58,
+      "end": 39.3,
+      "text": "koniecznie trzeba"
+    },
+    {
+      "start": 39.3,
       "end": 40.34,
-      "text": "na które w tym miesiącu koniecznie trzeba się wybrać"
+      "text": "się wybrać"
     },
     {
       "start": 40.34,
+      "end": 42.25,
+      "text": "oraz o kilku takich,"
+    },
+    {
+      "start": 42.25,
+      "end": 43.82,
+      "text": "na które można,"
+    },
+    {
+      "start": 43.82,
       "end": 46.08,
-      "text": "oraz o kilku takich, na które można, jeśli komuś po drodze."
+      "text": "jeśli komuś po drodze."
     },
     {
       "start": 46.72,
+      "end": 47.63,
+      "text": "Słuchacie Ciężko na"
+    },
+    {
+      "start": 47.63,
       "end": 49.1,
-      "text": "Słuchacie Ciężko na sercu w trójce."
+      "text": "sercu w trójce."
     },
     {
       "start": 49.1,
+      "end": 50.57,
+      "text": "Do zaznaczania dat"
+    },
+    {
+      "start": 50.57,
+      "end": 52.66,
+      "text": "koncertów w kalendarzach"
+    },
+    {
+      "start": 52.66,
+      "end": 54.02,
+      "text": "namawiał Was będzie"
+    },
+    {
+      "start": 54.02,
       "end": 55.32,
-      "text": "Do zaznaczania dat koncertów w kalendarzach namawiał Was będzie Jarek Szubrycht."
+      "text": "Jarek Szubrycht."
     },
     {
       "start": 55.84,
+      "end": 56.7,
+      "text": "Audycję wydaje"
+    },
+    {
+      "start": 56.7,
       "end": 58.54,
-      "text": "Audycję wydaje Michał Kowarski."
+      "text": "Michał Kowarski."
     },
     {
       "start": 59.28,
-      "end": 65.5,
-      "text": "Zabawę zaczną z przytupem, a jakże Australijczycy z Die Alt is Murder."
+      "end": 59.76,
+      "text": "Zabawę zaczną z"
     },
     {
-      "start": 300.78,
+      "start": 59.76,
+      "end": 61.5,
+      "text": "przytupem, a jakże"
+    },
+    {
+      "start": 61.5,
+      "end": 63.12,
+      "text": "Australijczycy z"
+    },
+    {
+      "start": 63.12,
+      "end": 65.66,
+      "text": "Die Alt i Smulder."
+    },
+    {
+      "start": 300.86,
+      "end": 302.63,
+      "text": "Thy art is murder."
+    },
+    {
+      "start": 302.63,
+      "end": 304.73,
+      "text": "Jak już wspominałem,"
+    },
+    {
+      "start": 304.73,
+      "end": 306.48,
+      "text": "przybywają do nas z"
+    },
+    {
+      "start": 306.48,
+      "end": 309,
+      "text": "antypodów, by zaprezentować"
+    },
+    {
+      "start": 309,
+      "end": 310.19,
+      "text": "swój techniczny"
+    },
+    {
+      "start": 310.19,
+      "end": 311.64,
+      "text": "death groove, czy"
+    },
+    {
+      "start": 311.64,
+      "end": 313.88,
+      "text": "może deathcore ciężkiego"
+    },
+    {
+      "start": 313.88,
       "end": 314.94,
-      "text": "Thy art is murder. Jak już wspominałem, przybywają do nas z antypodów, by zaprezentować swój techniczny death groove, czy może deathcore ciężkiego kalibru."
+      "text": "kalibru."
     },
     {
-      "start": 315.08,
-      "end": 323.64,
-      "text": "Tak czy owak, zabawa będzie przednia. Świetny to zespół, który wykazuje pewne pokrewieństwo z naszym Decapitated,"
+      "start": 314.94,
+      "end": 316.52,
+      "text": "Tak czy owak zabawa"
     },
     {
-      "start": 323.64,
+      "start": 316.52,
+      "end": 318.78,
+      "text": "będzie przednia, świetny"
+    },
+    {
+      "start": 318.78,
+      "end": 320.25,
+      "text": "to zespół, który"
+    },
+    {
+      "start": 320.25,
+      "end": 322.79,
+      "text": "wykazuje pewne pokrewieństwo"
+    },
+    {
+      "start": 322.79,
+      "end": 324.77,
+      "text": "z naszym Decapitated,"
+    },
+    {
+      "start": 324.77,
+      "end": 326.27,
+      "text": "a zagra już za"
+    },
+    {
+      "start": 326.27,
+      "end": 327.73,
+      "text": "chwilę, 5 sierpnia"
+    },
+    {
+      "start": 327.73,
+      "end": 329.84,
+      "text": "w warszawskiej progresji"
+    },
+    {
+      "start": 329.84,
+      "end": 332.18,
+      "text": "w towarzystwie niemieckiej"
+    },
+    {
+      "start": 332.18,
+      "end": 334.72,
+      "text": "grupy Sun Eater amerykańskiej"
+    },
+    {
+      "start": 334.72,
+      "end": 336.1,
+      "text": "formacji Filth i"
+    },
+    {
+      "start": 336.1,
+      "end": 337.58,
+      "text": "naszych rodaków z"
+    },
+    {
+      "start": 337.58,
       "end": 339.28,
-      "text": "a zagra już za chwilę, 5 sierpnia w warszawskiej progresji w towarzystwie niemieckiej grupy Sun Eater amerykańskiej formacji Filth i naszych rodaków z Awakeness."
+      "text": "Awakeness."
     },
     {
-      "start": 339.92,
-      "end": 347.06,
-      "text": "Każdy zespół inny, ale wszystkie łączą ciepłe uczucia do nowoczesnych form brutalności."
+      "start": 339.28,
+      "end": 340.89,
+      "text": "Każdy zespół inny,"
     },
     {
-      "start": 347.06,
-      "end": 353.06,
-      "text": "To będzie koncert, na którym trudno się będzie nie spocić."
+      "start": 340.89,
+      "end": 342.54,
+      "text": "ale wszystkie łączą"
     },
     {
-      "start": 353.64,
-      "end": 363.38,
-      "text": "Za to dzień później, w legendarnej mleśniczówce, wśród chorzowskich drzew, królować będą brzmienia znacznie bardziej staroszkolne."
+      "start": 342.54,
+      "end": 343.97,
+      "text": "ciepłe uczucia do"
     },
     {
-      "start": 364.1,
-      "end": 367.4,
-      "text": "Przede wszystkim za sprawą grupy Mortal Scene."
+      "start": 343.97,
+      "end": 345.54,
+      "text": "nowoczesnych form"
     },
     {
-      "start": 367.4,
+      "start": 345.54,
+      "end": 347.34,
+      "text": "brutalności. To"
+    },
+    {
+      "start": 347.34,
+      "end": 349.26,
+      "text": "będzie koncert, na"
+    },
+    {
+      "start": 349.26,
+      "end": 350.98,
+      "text": "którym trudno się"
+    },
+    {
+      "start": 350.98,
+      "end": 353.08,
+      "text": "będzie nie spocić."
+    },
+    {
+      "start": 353.92,
+      "end": 354.53,
+      "text": "Za to dzień później"
+    },
+    {
+      "start": 354.53,
+      "end": 356.61,
+      "text": "w legendarnej leśniczówce"
+    },
+    {
+      "start": 356.61,
+      "end": 358.29,
+      "text": "wśród chorzowskich"
+    },
+    {
+      "start": 358.29,
+      "end": 359.67,
+      "text": "drzew królować będą"
+    },
+    {
+      "start": 359.67,
+      "end": 361.27,
+      "text": "brzmienia znacznie"
+    },
+    {
+      "start": 361.27,
+      "end": 363.36,
+      "text": "bardziej staroszkolne,"
+    },
+    {
+      "start": 363.36,
+      "end": 365.25,
+      "text": "przede wszystkim za"
+    },
+    {
+      "start": 365.25,
+      "end": 367.42,
+      "text": "sprawą grupy Motosin."
+    },
+    {
+      "start": 367.42,
+      "end": 368.98,
+      "text": "Co ciekawe to też"
+    },
+    {
+      "start": 368.98,
+      "end": 371.11,
+      "text": "Australijczycy, ale"
+    },
+    {
+      "start": 371.11,
+      "end": 373.23,
+      "text": "z innej gliny ulepieni"
+    },
+    {
+      "start": 373.23,
+      "end": 375.04,
+      "text": "i przede wszystkim"
+    },
+    {
+      "start": 375.04,
+      "end": 376.83,
+      "text": "o pokolenie starsi"
+    },
+    {
+      "start": 376.83,
+      "end": 378.75,
+      "text": "od The Artist, The"
+    },
+    {
+      "start": 378.75,
       "end": 379.66,
-      "text": "Co ciekawe, to też Australijczycy, ale z innej gliny ulepieni i przede wszystkim o pokolenie starsi od Thy Art is the Murder."
+      "text": "Murder."
     },
     {
-      "start": 380.56,
-      "end": 383.22,
-      "text": "Mortal Scene to pionierzy thrashu."
+      "start": 380.54,
+      "end": 381.99,
+      "text": "Mortal Sin to pionierzy"
     },
     {
-      "start": 383.42,
-      "end": 390.3,
-      "text": "Tam na dole globusa debiutowali równe 40 lat temu i cieszą się statusem zespołu kultowego."
+      "start": 381.99,
+      "end": 383.99,
+      "text": "thrashu. Tam na dole"
     },
     {
-      "start": 392.04,
-      "end": 403.3,
-      "text": "Niekoniecznie popularnego, bo z Australii wszędzie mieli daleko, kiedy thrash rozkwitał, a konkurencja w Europie, nie mówiąc już o Stanach, była raczej silna."
+      "start": 383.99,
+      "end": 385.54,
+      "text": "globusa debiutowali"
     },
     {
-      "start": 403.3,
-      "end": 414.26,
-      "text": "Po kilkunastu latach przerwy Mortal Scene właśnie się reaktywowali i koncertują i kto wie, może będą też coś nagrywać."
+      "start": 385.54,
+      "end": 387.52,
+      "text": "równe 40 lat temu."
     },
     {
-      "start": 414.86,
-      "end": 421.76,
-      "text": "A w Chorzowie 6 sierpnia towarzyszyć im będą m.in. Galwer i Morgarat."
+      "start": 387.52,
+      "end": 388.63,
+      "text": "No i cieszą się"
     },
     {
-      "start": 422.7,
+      "start": 388.63,
+      "end": 391.1,
+      "text": "statusem zespołu kultowego."
+    },
+    {
+      "start": 391.1,
+      "end": 392.28,
+      "text": "Niekoniecznie"
+    },
+    {
+      "start": 392.28,
+      "end": 393.78,
+      "text": "popularnego, bo z"
+    },
+    {
+      "start": 393.78,
+      "end": 395.34,
+      "text": "Australii wszędzie"
+    },
+    {
+      "start": 395.34,
+      "end": 396.92,
+      "text": "mieli daleko, kiedy"
+    },
+    {
+      "start": 396.92,
+      "end": 398.85,
+      "text": "thrash rozkwitał, a"
+    },
+    {
+      "start": 398.85,
+      "end": 400.31,
+      "text": "konkurencja w Europie,"
+    },
+    {
+      "start": 400.31,
+      "end": 401.28,
+      "text": "nie mówiąc już o"
+    },
+    {
+      "start": 401.28,
+      "end": 402.74,
+      "text": "Stanach, była raczej"
+    },
+    {
+      "start": 402.74,
+      "end": 403.52,
+      "text": "silna."
+    },
+    {
+      "start": 403.52,
+      "end": 405.43,
+      "text": "Po kilkunastu latach"
+    },
+    {
+      "start": 405.43,
+      "end": 407.13,
+      "text": "przerwy Mortal Sin"
+    },
+    {
+      "start": 407.13,
+      "end": 409.53,
+      "text": "właśnie się reaktywowali"
+    },
+    {
+      "start": 409.53,
+      "end": 411.05,
+      "text": "i koncertują i kto"
+    },
+    {
+      "start": 411.05,
+      "end": 412.76,
+      "text": "wie, może będą też"
+    },
+    {
+      "start": 412.76,
+      "end": 414.34,
+      "text": "coś nagrywać, a w"
+    },
+    {
+      "start": 414.34,
+      "end": 416.44,
+      "text": "Chorzowie 6 sierpnia"
+    },
+    {
+      "start": 416.44,
+      "end": 418.24,
+      "text": "towarzyszyć im będą"
+    },
+    {
+      "start": 418.24,
+      "end": 419.93,
+      "text": "m.in. Galwer i"
+    },
+    {
+      "start": 419.93,
+      "end": 420.86,
+      "text": "Mortal."
+    },
+    {
+      "start": 420.86,
+      "end": 423.35,
+      "text": "Garat. Nie będę wam"
+    },
+    {
+      "start": 423.35,
+      "end": 425.5,
+      "text": "miał jednak za złe,"
+    },
+    {
+      "start": 425.5,
+      "end": 427.54,
+      "text": "jeśli zamiast jechać"
+    },
+    {
+      "start": 427.54,
+      "end": 429.34,
+      "text": "na Śląsk po koncercie"
+    },
+    {
+      "start": 429.34,
+      "end": 430.66,
+      "text": "Die Art is Murder"
+    },
+    {
+      "start": 430.66,
       "end": 433.6,
-      "text": "Nie będę wam miał jednak za złe, jeśli zamiast jechać na Śląsk po koncercie Thy Art is Murder zostaniecie w stolicy."
+      "text": "zostaniecie w stolicy."
     },
     {
-      "start": 434.52,
-      "end": 441.16,
-      "text": "Primus pojawi się na letniej scenie progresji, by zabrać was w rejs po Morzu Sera."
+      "start": 434.5,
+      "end": 435.15,
+      "text": "Primus pojawi się"
+    },
+    {
+      "start": 435.15,
+      "end": 436.74,
+      "text": "na letniej scenie"
+    },
+    {
+      "start": 436.74,
+      "end": 438.72,
+      "text": "progresji, by zabrać"
+    },
+    {
+      "start": 438.72,
+      "end": 440.28,
+      "text": "was w rejs po Morzu"
+    },
+    {
+      "start": 440.28,
+      "end": 441.14,
+      "text": "Sera."
     },
     {
       "start": 442.32,
-      "end": 446.32,
-      "text": "Kto wie, może dopłyniecie do miejsca, w którym żerują bobry."
+      "end": 443.53,
+      "text": "Kto wie, może dopłyniecie"
     },
     {
-      "start": 705.25,
+      "start": 443.53,
+      "end": 444.77,
+      "text": "do miejsca, w"
+    },
+    {
+      "start": 444.77,
+      "end": 446.98,
+      "text": "którym żerują bobry."
+    },
+    {
+      "start": 706.27,
+      "end": 707.69,
+      "text": "Rośnie w siłę festiwal"
+    },
+    {
+      "start": 707.69,
+      "end": 709.45,
+      "text": "Rockowizna, którego"
+    },
+    {
+      "start": 709.45,
+      "end": 711.23,
+      "text": "nazwa dobrze oddaje"
+    },
+    {
+      "start": 711.23,
+      "end": 712.45,
+      "text": "charakter programu."
+    },
+    {
+      "start": 713.21,
+      "end": 714.34,
+      "text": "Jest zatem rockowo,"
+    },
+    {
+      "start": 714.34,
+      "end": 715.7,
+      "text": "ciężko rockowo i"
+    },
+    {
+      "start": 715.7,
+      "end": 717.78,
+      "text": "metalowo, ale chwilami"
+    },
+    {
+      "start": 717.78,
+      "end": 719.31,
+      "text": "tak swojsko, że aż"
+    },
+    {
+      "start": 719.31,
       "end": 720.53,
-      "text": "Rośnie w siłę festiwal Rockowizna, którego nazwa dobrze oddaje charakter programu. Jest zatem rockowo, ciężko rockowo i metalowo, ale chwilami tak swojsko, że aż przaśnie."
+      "text": "przaśnie."
     },
     {
-      "start": 720.53,
+      "start": 721.05,
+      "end": 722.18,
+      "text": "Każdy jednak powinien"
+    },
+    {
+      "start": 722.18,
+      "end": 723.22,
+      "text": "znaleźć coś dla"
+    },
+    {
+      "start": 723.22,
+      "end": 724.7,
+      "text": "siebie. Jak nie w"
+    },
+    {
+      "start": 724.7,
+      "end": 726.2,
+      "text": "jednym mieście, to"
+    },
+    {
+      "start": 726.2,
+      "end": 727.13,
+      "text": "w drugim."
+    },
+    {
+      "start": 727.13,
+      "end": 728.96,
+      "text": "Na początek Rockowizna"
+    },
+    {
+      "start": 728.96,
+      "end": 730.63,
+      "text": "pohałasuje w Gdańsku"
+    },
+    {
+      "start": 730.63,
+      "end": 732.22,
+      "text": "7 i 8 sierpnia, a"
+    },
+    {
+      "start": 732.22,
+      "end": 735.64,
+      "text": "wystąpią m.in. Perturbator,"
+    },
+    {
+      "start": 735.64,
+      "end": 738.64,
+      "text": "Royal Republic, Poldewire,"
+    },
+    {
+      "start": 738.64,
+      "end": 740.76,
+      "text": "Illusion, Airborne,"
+    },
+    {
+      "start": 740.76,
+      "end": 742.66,
+      "text": "Avatar, Acid Drinkers,"
+    },
+    {
+      "start": 742.66,
+      "end": 744.19,
+      "text": "Nocny Kochanek i"
+    },
+    {
+      "start": 744.19,
       "end": 745.35,
-      "text": "Każdy jednak powinien znaleźć coś dla siebie. Jak nie w jednym mieście, to w drugim. Na początek Rockowizna pohałasuje w Gdańsku 7 i 8 sierpnia, a wystąpią m.in. Perturbator, Royal Republic, Poldewire, Illusion, Airborne, Avatar, Acid Drinkers, Nocny Kochanek i The Analogs."
+      "text": "The Analogs."
     },
     {
       "start": 745.35,
+      "end": 747.77,
+      "text": "W Poznaniu Rockowizna"
+    },
+    {
+      "start": 747.77,
+      "end": 749.85,
+      "text": "zabawi aż trzy dni,"
+    },
+    {
+      "start": 749.85,
+      "end": 753.33,
+      "text": "od 20 do 22 sierpnia."
+    },
+    {
+      "start": 754.65,
+      "end": 754.93,
+      "text": "Zaprezentują się"
+    },
+    {
+      "start": 754.93,
+      "end": 757.26,
+      "text": "tam m.in. Sex Pistols"
+    },
+    {
+      "start": 757.26,
+      "end": 759.29,
+      "text": "z Frankiem Carterem,"
+    },
+    {
+      "start": 759.29,
+      "end": 761.46,
+      "text": "Within Temptation i"
+    },
+    {
+      "start": 761.46,
       "end": 762.53,
-      "text": "W Poznaniu Rockowizna zabawi aż trzy dni, od 20 do 22 sierpnia. Zaprezentują się tam m.in. Sex Pistols z Frankiem Carterem, Within Temptation i Wolf Alice."
+      "text": "Wolf Alice."
     },
     {
-      "start": 763.11,
+      "start": 763.61,
+      "end": 764.77,
+      "text": "Ostatni przystanek"
+    },
+    {
+      "start": 764.77,
+      "end": 769.35,
+      "text": "to Kraków, 28-29 sierpnia."
+    },
+    {
+      "start": 769.35,
+      "end": 771.68,
+      "text": "Tu na Rockowiznie"
+    },
+    {
+      "start": 771.68,
+      "end": 774.23,
+      "text": "zagrają np. Lacuna"
+    },
+    {
+      "start": 774.23,
+      "end": 776.16,
+      "text": "Coil, Lord of the"
+    },
+    {
+      "start": 776.16,
+      "end": 777.73,
+      "text": "Lost, Acid Drinkers"
+    },
+    {
+      "start": 777.73,
       "end": 778.55,
-      "text": "Ostatni przystanek to Kraków, 28-29 sierpnia. Tu na Rockowiznie zagrają np. Lacuna Coil, Lord of the Lost, Acid Drinkers i Jam."
+      "text": "i Jam."
     },
     {
-      "start": 778.55,
-      "end": 791.37,
-      "text": "Co by tu z tej Rockowizny dla Was wybrać? Niech będzie Lord of the Lost z piosenką zamykającą ich ostatni album, Opus Noir, Volume 3."
+      "start": 779.15,
+      "end": 780.8,
+      "text": "Co by tu z tej Rockowizny"
     },
     {
-      "start": 792.41,
-      "end": 805.15,
-      "text": "Rzadko takie rzeczy słyszycie wciężko na sercu, no ale czasem można sobie pozwolić na jakąś grzeszną przyjemność, bo mam nadzieję, że będzie to przyjemność."
+      "start": 780.8,
+      "end": 782.57,
+      "text": "dla Was wybrać?"
     },
     {
-      "start": 839.36,
-      "end": 863.32,
-      "text": "\"Goodbye to the world, the promises forgotten and regrets denied. Leave me a light on, cause I won't sleep. I want to watch the flames wipe out our lives we can't keep."
+      "start": 782.65,
+      "end": 784.16,
+      "text": "Niech będzie Lord"
     },
     {
-      "start": 916.74,
-      "end": 923.02,
-      "text": "To face the darkest hour, nothing to repair."
+      "start": 784.16,
+      "end": 786.14,
+      "text": "of the Lost z piosenką"
     },
     {
-      "start": 923.02,
-      "end": 929.5,
-      "text": "I want you to shine on, there's nothing to fear."
+      "start": 786.14,
+      "end": 787.38,
+      "text": "zamykającą ich"
     },
     {
-      "start": 929.5,
-      "end": 937,
-      "text": "Tomorrow we'll be gone, so don't shed no tea."
+      "start": 787.38,
+      "end": 789.46,
+      "text": "ostatni album, Opus"
     },
     {
-      "start": 1065.09,
+      "start": 789.46,
+      "end": 791.33,
+      "text": "Noir, vol. 3."
+    },
+    {
+      "start": 792.33,
+      "end": 793.35,
+      "text": "Rzadko takie rzeczy"
+    },
+    {
+      "start": 793.35,
+      "end": 794.31,
+      "text": "słyszycie wciężko"
+    },
+    {
+      "start": 794.31,
+      "end": 795.83,
+      "text": "na sercu, no ale"
+    },
+    {
+      "start": 795.83,
+      "end": 797.3,
+      "text": "czasem można sobie"
+    },
+    {
+      "start": 797.3,
+      "end": 799.14,
+      "text": "pozwolić na jakąś"
+    },
+    {
+      "start": 799.14,
+      "end": 801.11,
+      "text": "grzeszną przyjemność,"
+    },
+    {
+      "start": 801.11,
+      "end": 802.83,
+      "text": "bo mam nadzieję, że"
+    },
+    {
+      "start": 802.83,
+      "end": 805.13,
+      "text": "będzie to przyjemność."
+    },
+    {
+      "start": 805.13,
+      "end": 805.83,
+      "text": "Muzyka"
+    },
+    {
+      "start": 843.23,
+      "end": 846.23,
+      "text": "\"Promises forgotten"
+    },
+    {
+      "start": 846.23,
+      "end": 849.23,
+      "text": "and regrets denied\""
+    },
+    {
+      "start": 849.23,
+      "end": 851.73,
+      "text": "\"Leave me a light"
+    },
+    {
+      "start": 851.73,
+      "end": 854.09,
+      "text": "on cause I won't"
+    },
+    {
+      "start": 854.09,
+      "end": 855.23,
+      "text": "sleep\""
+    },
+    {
+      "start": 855.23,
+      "end": 857.08,
+      "text": "\"I want to watch"
+    },
+    {
+      "start": 857.08,
+      "end": 859.36,
+      "text": "the flames wipe out"
+    },
+    {
+      "start": 859.36,
+      "end": 861.51,
+      "text": "our lives we can't"
+    },
+    {
+      "start": 861.51,
+      "end": 862.31,
+      "text": "keep\""
+    },
+    {
+      "start": 917.37,
+      "end": 918.93,
+      "text": "\"It's the darkest"
+    },
+    {
+      "start": 918.93,
+      "end": 921.3,
+      "text": "hour, nothing to"
+    },
+    {
+      "start": 921.3,
+      "end": 922.67,
+      "text": "repair\""
+    },
+    {
+      "start": 922.67,
+      "end": 924.38,
+      "text": "\"I want you to"
+    },
+    {
+      "start": 924.38,
+      "end": 926.89,
+      "text": "shine on, there's"
+    },
+    {
+      "start": 926.89,
+      "end": 929.17,
+      "text": "nothing to fear\""
+    },
+    {
+      "start": 929.17,
+      "end": 931.53,
+      "text": "\"Tomorrow will be"
+    },
+    {
+      "start": 931.53,
+      "end": 934.19,
+      "text": "gone, so don't shed"
+    },
+    {
+      "start": 934.19,
+      "end": 934.73,
+      "text": "no\""
+    },
+    {
+      "start": 1065.37,
+      "end": 1066.81,
+      "text": "Teraz zupełnie inne"
+    },
+    {
+      "start": 1066.81,
       "end": 1067.67,
-      "text": "Teraz zupełnie inne klimaty."
+      "text": "klimaty."
     },
     {
-      "start": 1068.81,
+      "start": 1068.83,
+      "end": 1069.68,
+      "text": "Przez to, że bardzo"
+    },
+    {
+      "start": 1069.68,
+      "end": 1070.87,
+      "text": "lubię off-festival,"
+    },
+    {
+      "start": 1070.87,
+      "end": 1072.6,
+      "text": "nie opuściłem żadnej"
+    },
+    {
+      "start": 1072.6,
       "end": 1074.23,
-      "text": "Przez to, że bardzo lubię Off Festival, nie opuściłem żadnej edycji, nie zamierzam,"
+      "text": "edycji, nie zamierzam,"
     },
     {
       "start": 1074.89,
-      "end": 1077.87,
-      "text": "nie pojadę w tym roku do Czech na Brutal Assault."
+      "end": 1075.31,
+      "text": "nie pojadę w tym"
+    },
+    {
+      "start": 1075.31,
+      "end": 1076.93,
+      "text": "roku do Czech na Brutal"
+    },
+    {
+      "start": 1076.93,
+      "end": 1077.85,
+      "text": "Assault."
     },
     {
       "start": 1078.59,
+      "end": 1079.45,
+      "text": "Trochę żałuję, bo"
+    },
+    {
+      "start": 1079.45,
+      "end": 1080.74,
+      "text": "dużo tam dobra i"
+    },
+    {
+      "start": 1080.74,
+      "end": 1082.65,
+      "text": "klimat fajny i znajomi"
+    },
+    {
+      "start": 1082.65,
       "end": 1084.27,
-      "text": "Trochę żałuję, bo dużo tam dobra i klimat fajny i znajomi na każdym kroku,"
+      "text": "na każdym kroku,"
     },
     {
-      "start": 1085.17,
-      "end": 1088.43,
-      "text": "ale trochę niech żałują też ci, co pojadą,"
+      "start": 1084.69,
+      "end": 1086.49,
+      "text": "ale trochę niech żałują"
     },
     {
-      "start": 1088.43,
-      "end": 1093.15,
-      "text": "bo ominą ich fantastyczne koncerty katowickiego Off Festivalu."
+      "start": 1086.49,
+      "end": 1088.46,
+      "text": "też ci, co pojadą,"
     },
     {
-      "start": 1093.69,
+      "start": 1088.46,
+      "end": 1090.82,
+      "text": "bo ominą ich fantastyczne"
+    },
+    {
+      "start": 1090.82,
+      "end": 1092.09,
+      "text": "koncerty katowickiego"
+    },
+    {
+      "start": 1092.09,
+      "end": 1093.09,
+      "text": "off-festiwalu."
+    },
+    {
+      "start": 1093.81,
+      "end": 1095.66,
+      "text": "Wymienię tu tylko zespoły,"
+    },
+    {
+      "start": 1095.66,
+      "end": 1096.69,
+      "text": "które pasują do"
+    },
+    {
+      "start": 1096.69,
       "end": 1098.45,
-      "text": "Wymienię tu tylko zespoły, które pasują do profilu mojej audycji,"
+      "text": "profilu mojej audycji,"
     },
     {
       "start": 1099.07,
-      "end": 1103.57,
-      "text": "bo dobra z innych muzycznych krain jest znacznie, znacznie więcej."
+      "end": 1099.91,
+      "text": "bo dobra z innych"
     },
     {
-      "start": 1104.23,
-      "end": 1108.73,
-      "text": "A zatem na Offa powraca prezentowany niedawno w Ciężko na Sercu"
+      "start": 1099.91,
+      "end": 1101.35,
+      "text": "muzycznych krain"
     },
     {
-      "start": 1108.73,
+      "start": 1101.35,
+      "end": 1102.55,
+      "text": "jest znacznie"
+    },
+    {
+      "start": 1102.55,
+      "end": 1103.47,
+      "text": "więcej."
+    },
+    {
+      "start": 1103.47,
+      "end": 1105.27,
+      "text": "A zatem na OFA powraca"
+    },
+    {
+      "start": 1105.27,
+      "end": 1107.27,
+      "text": "prezentowany niedawno"
+    },
+    {
+      "start": 1107.27,
+      "end": 1108.75,
+      "text": "w Ciężko na Sercu"
+    },
+    {
+      "start": 1108.75,
+      "end": 1110.34,
+      "text": "w odcinku o amerykańskim"
+    },
+    {
+      "start": 1110.34,
+      "end": 1111.64,
+      "text": "Black Metalu zespół"
+    },
+    {
+      "start": 1111.64,
       "end": 1112.83,
-      "text": "w odcinku o amerykańskim Black Metalu zespół Death Heaven."
+      "text": "Death Heaven."
     },
     {
-      "start": 1113.35,
+      "start": 1113.89,
+      "end": 1114.83,
+      "text": "Będą też Chat Pile,"
+    },
+    {
+      "start": 1114.83,
+      "end": 1116.71,
+      "text": "których uwielbiam"
+    },
+    {
+      "start": 1116.71,
       "end": 1119.43,
-      "text": "Będą też Chat Pile, których uwielbiam za oryginalne połączenie"
+      "text": "za oryginalne połączenie"
     },
     {
       "start": 1119.43,
-      "end": 1124.11,
-      "text": "noise rocka New Metalu i brzmienia amerykańskiej prowincji."
+      "end": 1121.16,
+      "text": "noise-roka New Metalu"
     },
     {
-      "start": 1124.31,
+      "start": 1121.16,
+      "end": 1123.21,
+      "text": "i brzmienia amerykańskiej"
+    },
+    {
+      "start": 1123.21,
+      "end": 1124.09,
+      "text": "prowincji."
+    },
+    {
+      "start": 1124.29,
+      "end": 1125.53,
+      "text": "Koncertowo Chat Pile"
+    },
+    {
+      "start": 1125.53,
       "end": 1127.35,
-      "text": "Koncertowo Chat Pile to mistrzostwo świata."
+      "text": "to mistrzostwo świata."
     },
     {
-      "start": 1128.19,
+      "start": 1128.17,
+      "end": 1129.01,
+      "text": "Będą dwie świetne"
+    },
+    {
+      "start": 1129.01,
       "end": 1131.07,
-      "text": "Będą dwie świetne kapele z kobietami."
+      "text": "kapele z kobietami."
     },
     {
       "start": 1131.49,
+      "end": 1132.34,
+      "text": "Na froncie nasz"
+    },
+    {
+      "start": 1132.34,
+      "end": 1133.67,
+      "text": "rodzimy dom zły i"
+    },
+    {
+      "start": 1133.67,
+      "end": 1135.99,
+      "text": "punkowa petarda"
+    },
+    {
+      "start": 1135.99,
       "end": 1137.69,
-      "text": "Na froncie nasz rodzimy dom zły i punkowa petarda Emil and the Sniffers."
+      "text": "Emil and the Sniffers."
     },
     {
-      "start": 1138.19,
+      "start": 1138.69,
+      "end": 1140.07,
+      "text": "I przede wszystkim"
+    },
+    {
+      "start": 1140.07,
+      "end": 1142.14,
+      "text": "będzie legenda niemieckiej"
+    },
+    {
+      "start": 1142.14,
       "end": 1143.47,
-      "text": "I przede wszystkim będzie legenda niemieckiej hałaśliwej sceny,"
+      "text": "hałaśliwej sceny,"
     },
     {
-      "start": 1143.57,
+      "start": 1143.55,
+      "end": 1144.77,
+      "text": "czyli Einsturzenten"
+    },
+    {
+      "start": 1144.77,
       "end": 1145.71,
-      "text": "czyli Einsturzenten Neubauten."
+      "text": "Neubauten."
     },
     {
-      "start": 1146.49,
-      "end": 1150.01,
-      "text": "Swoją drogą ukazała się niedawno po polsku książka"
+      "start": 1146.53,
+      "end": 1147.43,
+      "text": "Swoją drogą ukazała"
     },
     {
-      "start": 1150.01,
+      "start": 1147.43,
+      "end": 1148.73,
+      "text": "się niedawno po"
+    },
+    {
+      "start": 1148.73,
+      "end": 1150.03,
+      "text": "polsku książka"
+    },
+    {
+      "start": 1150.03,
+      "end": 1151.91,
+      "text": "Hałas Aleksandra Hacke"
+    },
+    {
+      "start": 1151.91,
+      "end": 1154.03,
+      "text": "do niedawna drugiego"
+    },
+    {
+      "start": 1154.03,
       "end": 1154.99,
-      "text": "Hałas Aleksandra Hacke do niedawna drugiego po Bogów"
+      "text": "po Bogów"
     },
     {
       "start": 1154.99,
-      "end": 1156.45,
-      "text": "Einsturzenten Neubauten."
+      "end": 1156.66,
+      "text": "Einsturzenten Neubauten"
     },
     {
-      "start": 1156.83,
+      "start": 1156.66,
+      "end": 1157.88,
+      "text": "i to jest wspaniała"
+    },
+    {
+      "start": 1157.88,
+      "end": 1158.77,
+      "text": "lektura."
+    },
+    {
+      "start": 1159.01,
+      "end": 1160.87,
+      "text": "Polecam z całego"
+    },
+    {
+      "start": 1160.87,
       "end": 1162.11,
-      "text": "I to jest wspaniała lektura, polecam z całego serca."
+      "text": "serca."
     },
     {
       "start": 1163.15,
@@ -416,1300 +1407,3739 @@
     },
     {
       "start": 1165.63,
+      "end": 1167.57,
+      "text": "OFFESTIWAL 7-9 sierpnia"
+    },
+    {
+      "start": 1167.57,
+      "end": 1169.17,
+      "text": "Katowice Dolina Trzech"
+    },
+    {
+      "start": 1169.17,
       "end": 1169.71,
-      "text": "Off Festival 7-9 sierpnia, Katowice, Dolina Trzech Stawów,"
+      "text": "Stawów"
     },
     {
-      "start": 1169.89,
+      "start": 1169.71,
+      "end": 1171.62,
+      "text": "słuchamy Einsturzenten"
+    },
+    {
+      "start": 1171.62,
       "end": 1173.35,
-      "text": "słuchamy Einsturzenten Neubauten i Chat Pile."
+      "text": "Neubauten i Chat Pile."
     },
     {
-      "start": 1173.75,
-      "end": 1176.71,
-      "text": "Co za wspaniałe połączenie się wylosowało."
-    },
-    {
-      "start": 1176.71,
-      "end": 1192.11,
+      "start": 1173.35,
+      "end": 1175.64,
       "text": "Co za wspaniałe połączenie"
     },
     {
-      "start": 1192.11,
-      "end": 1193.47,
-      "text": "Wollowajmy w górku"
+      "start": 1175.64,
+      "end": 1177.35,
+      "text": "się wylosowało."
     },
     {
-      "start": 1193.47,
-      "end": 1195.55,
-      "text": "Sprawlwajmy w górku"
+      "start": 1184.51,
+      "end": 1188.22,
+      "text": "BOOBI PEMEDIA, BOOBI"
     },
     {
-      "start": 1195.55,
-      "end": 1196.63,
-      "text": "Wollowajmy w górku"
+      "start": 1188.22,
+      "end": 1188.23,
+      "text": "DEMON DEMON"
     },
     {
-      "start": 1196.63,
-      "end": 1197.57,
-      "text": "Wollowajmy w górku"
+      "start": 1195.58,
+      "end": 1197.31,
+      "text": "Ubi per me, ja ubi"
     },
     {
-      "start": 1197.57,
-      "end": 1198.63,
-      "text": "Wollowajmy w górku"
+      "start": 1197.31,
+      "end": 1197.7,
+      "text": "per me"
     },
     {
-      "start": 1198.63,
-      "end": 1200.03,
-      "text": "Wollowajmy w górku"
+      "start": 1673.24,
+      "end": 1675.26,
+      "text": "9 sierpnia w Poznaniu"
     },
     {
-      "start": 1200.03,
-      "end": 1201.59,
-      "text": "Wollowajmy w górku"
+      "start": 1675.26,
+      "end": 1677.24,
+      "text": "zagra amerykański zespół"
     },
     {
-      "start": 1201.59,
-      "end": 1203.65,
-      "text": "Wollowajmy w górku"
+      "start": 1677.24,
+      "end": 1678.94,
+      "text": "This Will Destroy"
     },
     {
-      "start": 1203.65,
-      "end": 1205.69,
-      "text": "Wollowajmy w górku"
+      "start": 1678.94,
+      "end": 1680.9,
+      "text": "You, wykonując w całości"
     },
     {
-      "start": 1205.69,
-      "end": 1206.71,
-      "text": "Wollowajmy w górku"
+      "start": 1680.9,
+      "end": 1682.3,
+      "text": "dwie swoje płyty,"
     },
     {
-      "start": 1206.71,
-      "end": 1207.35,
-      "text": "Wollowajmy w górku"
+      "start": 1682.3,
+      "end": 1683.8,
+      "text": "Young Mountain i"
     },
     {
-      "start": 1207.35,
-      "end": 1207.69,
-      "text": "Wollowajmy w górku"
+      "start": 1683.8,
+      "end": 1685.78,
+      "text": "Another Language."
     },
     {
-      "start": 1207.69,
-      "end": 1208.37,
-      "text": "Wollowajmy w górku"
+      "start": 1686.5,
+      "end": 1688.4,
+      "text": "Cierpliwi fani postroka,"
     },
     {
-      "start": 1208.37,
-      "end": 1208.69,
-      "text": "Wollowajmy w górku"
+      "start": 1688.4,
+      "end": 1690.45,
+      "text": "a innych w tym gatunku"
     },
     {
-      "start": 1208.69,
-      "end": 1209.69,
-      "text": "Wollowajmy w górku"
+      "start": 1690.45,
+      "end": 1693.42,
+      "text": "nie ma, będą zahipnotyzowani"
     },
     {
-      "start": 1209.69,
-      "end": 1210.69,
-      "text": "Wollowajmy w górku"
+      "start": 1693.42,
+      "end": 1695.42,
+      "text": "i wniebowzięci."
     },
     {
-      "start": 1210.69,
-      "end": 1211.69,
-      "text": "Wollowajmy w górku"
+      "start": 1695.42,
+      "end": 1697.06,
+      "text": "W aż trzech polskich"
     },
     {
-      "start": 1211.69,
-      "end": 1212.69,
-      "text": "Wollowajmy w górku"
+      "start": 1697.06,
+      "end": 1698.32,
+      "text": "miastach swoje"
     },
     {
-      "start": 1212.69,
-      "end": 1212.69,
-      "text": "Wollowajmy w górku"
+      "start": 1698.32,
+      "end": 1700.32,
+      "text": "metalowe szanty śpiewał"
     },
     {
-      "start": 1212.69,
-      "end": 1213.69,
-      "text": "Wollowajmy w górku"
+      "start": 1700.32,
+      "end": 1702.14,
+      "text": "będzie szkocki zespół"
     },
     {
-      "start": 1213.69,
-      "end": 1214.69,
-      "text": "Wollowajmy w górku"
+      "start": 1702.14,
+      "end": 1703.42,
+      "text": "Ailstorm."
     },
     {
-      "start": 1214.69,
-      "end": 1214.69,
-      "text": "Wollowajmy w górku"
+      "start": 1704.48,
+      "end": 1705.41,
+      "text": "9 sierpnia w Poznaniu,"
     },
     {
-      "start": 1214.69,
-      "end": 1215.69,
-      "text": "Wollowajmy w górku"
+      "start": 1705.41,
+      "end": 1707.23,
+      "text": "przyznaję, wybrałbym"
     },
     {
-      "start": 1215.69,
-      "end": 1216.69,
-      "text": "Wollowajmy w górku"
+      "start": 1707.23,
+      "end": 1708.43,
+      "text": "wtedy This Will"
     },
     {
-      "start": 1216.69,
-      "end": 1217.69,
-      "text": "Wollowajmy w górku"
+      "start": 1708.43,
+      "end": 1709.8,
+      "text": "Destroy You, bez"
     },
     {
-      "start": 1217.69,
-      "end": 1218.69,
-      "text": "Wollowajmy w górku"
+      "start": 1709.8,
+      "end": 1711.42,
+      "text": "chwili wahania."
     },
     {
-      "start": 1218.69,
-      "end": 1219.69,
-      "text": "Wollowajmy w górku"
+      "start": 1711.98,
+      "end": 1713.92,
+      "text": "10 sierpnia w Szczecinie,"
     },
     {
-      "start": 1219.69,
-      "end": 1220.69,
-      "text": "Wollowajmy w górku"
+      "start": 1713.92,
+      "end": 1715.4,
+      "text": "wybrałbym kąpiel w"
     },
     {
-      "start": 1220.69,
-      "end": 1221.69,
-      "text": "Wollowajmy w górku"
+      "start": 1715.4,
+      "end": 1717.86,
+      "text": "paprykarzu szczecińskim."
     },
     {
-      "start": 1235.69,
-      "end": 1237.69,
-      "text": "Wollowajmy w górku"
+      "start": 1717.86,
+      "end": 1720.75,
+      "text": "A 11 sierpnia w Lublinie"
     },
     {
-      "start": 1237.69,
-      "end": 1238.69,
-      "text": "Wollowajmy w górku"
+      "start": 1720.75,
+      "end": 1722.43,
+      "text": "i nie będę się już"
     },
     {
-      "start": 1238.69,
-      "end": 1239.69,
-      "text": "Wollowajmy w górku"
+      "start": 1722.43,
+      "end": 1725.1,
+      "text": "wyzłośliwiał, Ailstorm"
     },
     {
-      "start": 1239.69,
-      "end": 1240.69,
-      "text": "Wollowajmy w górku"
+      "start": 1725.1,
+      "end": 1727.35,
+      "text": "nie jest dla mnie,"
     },
     {
-      "start": 1240.69,
-      "end": 1241.69,
-      "text": "Wollowajmy w górku"
+      "start": 1727.35,
+      "end": 1728.79,
+      "text": "ale każdy bawi się"
     },
     {
-      "start": 1241.69,
-      "end": 1242.69,
-      "text": "Wollowajmy w górku"
+      "start": 1728.79,
+      "end": 1730.16,
+      "text": "jak lubi."
     },
     {
-      "start": 1242.69,
-      "end": 1243.69,
-      "text": "Wollowajmy w górku"
+      "start": 1730.9,
+      "end": 1732.01,
+      "text": "Więc jeśli ktoś kocha"
     },
     {
-      "start": 1243.69,
-      "end": 1244.69,
-      "text": "Wollowajmy w górku"
+      "start": 1732.01,
+      "end": 1734.35,
+      "text": "te ich morskie opowieści,"
     },
     {
-      "start": 1244.69,
-      "end": 1245.69,
-      "text": "Wollowajmy w górku"
+      "start": 1734.35,
+      "end": 1736.19,
+      "text": "niech już się szykuje"
     },
     {
-      "start": 1245.69,
-      "end": 1246.69,
-      "text": "Wollowajmy w górku"
+      "start": 1736.19,
+      "end": 1737.62,
+      "text": "do abordażu."
     },
     {
-      "start": 1246.69,
-      "end": 1247.69,
-      "text": "Wollowajmy w górku"
+      "start": 1737.62,
+      "end": 1739.12,
+      "text": "A, już wiem, co bym"
     },
     {
-      "start": 1247.69,
-      "end": 1248.69,
-      "text": "Wollowajmy w górku"
+      "start": 1739.12,
+      "end": 1740,
+      "text": "wybrał i co na"
     },
     {
-      "start": 1248.69,
-      "end": 1249.69,
-      "text": "Wollowajmy w górku"
+      "start": 1740,
+      "end": 1742.23,
+      "text": "pewno wybiorę 11 sierpnia"
     },
     {
-      "start": 1249.69,
-      "end": 1250.69,
-      "text": "Wollowajmy w górku"
+      "start": 1742.23,
+      "end": 1743.5,
+      "text": "zamiast piratów w"
     },
     {
-      "start": 1250.69,
-      "end": 1251.69,
-      "text": "Wollowajmy w górku"
+      "start": 1743.5,
+      "end": 1744.62,
+      "text": "Lublinie."
     },
     {
-      "start": 1251.69,
-      "end": 1252.69,
-      "text": "Wollowajmy w górku"
+      "start": 1745.92,
+      "end": 1746.26,
+      "text": "Otóż tego samego dnia"
     },
     {
-      "start": 1252.69,
-      "end": 1253.69,
-      "text": "Wollowajmy w górku"
+      "start": 1746.26,
+      "end": 1748.25,
+      "text": "w warszawskiej progresji"
     },
     {
-      "start": 1253.69,
-      "end": 1254.69,
-      "text": "Wollowajmy w górku"
+      "start": 1748.25,
+      "end": 1749.74,
+      "text": "odbywa się wspólny"
     },
     {
-      "start": 1254.69,
-      "end": 1255.69,
-      "text": "Wollowajmy w górku"
+      "start": 1749.74,
+      "end": 1751.92,
+      "text": "koncert grup Savatash,"
     },
     {
-      "start": 1255.69,
-      "end": 1256.69,
-      "text": "Wollowajmy w górku"
+      "start": 1751.92,
+      "end": 1753.68,
+      "text": "Nevermore i Elmord"
     },
     {
-      "start": 1256.69,
-      "end": 1257.69,
-      "text": "Wollowajmy w górku"
+      "start": 1753.68,
+      "end": 1754.62,
+      "text": "Saint."
     },
     {
-      "start": 1257.69,
-      "end": 1258.69,
-      "text": "Wollowajmy w górku"
+      "start": 1756.62,
+      "end": 1757.37,
+      "text": "Savatash byliby gigantami,"
     },
     {
-      "start": 1258.69,
-      "end": 1259.69,
-      "text": "Wollowajmy w górku"
+      "start": 1757.37,
+      "end": 1759.13,
+      "text": "gdyby nie fakt, że"
     },
     {
-      "start": 1259.69,
-      "end": 1260.69,
-      "text": "Wollowajmy w górku"
+      "start": 1759.13,
+      "end": 1761.16,
+      "text": "kiedy nagrywali"
     },
     {
-      "start": 1260.69,
-      "end": 1261.69,
-      "text": "Wollowajmy w górku"
+      "start": 1761.16,
+      "end": 1763.22,
+      "text": "najlepsze rzeczy, w"
     },
     {
-      "start": 1261.69,
-      "end": 1262.69,
-      "text": "Wollowajmy w górku"
+      "start": 1763.22,
+      "end": 1764.63,
+      "text": "Stanach dominowały"
     },
     {
-      "start": 1262.69,
-      "end": 1263.69,
-      "text": "Wollowajmy w górku"
+      "start": 1764.63,
+      "end": 1766.1,
+      "text": "dwa żywioły."
     },
     {
-      "start": 1263.69,
-      "end": 1264.69,
-      "text": "Wollowajmy w górku"
+      "start": 1766.1,
+      "end": 1768.86,
+      "text": "Z jednej strony komercyjny,"
     },
     {
-      "start": 1264.69,
-      "end": 1265.69,
-      "text": "Wollowajmy w górku"
+      "start": 1768.86,
+      "end": 1770.99,
+      "text": "głupawy pudel metal,"
     },
     {
-      "start": 1265.69,
-      "end": 1266.69,
-      "text": "Wollowajmy w górku"
+      "start": 1770.99,
+      "end": 1772.72,
+      "text": "a z drugiej rosnący"
     },
     {
-      "start": 1266.69,
-      "end": 1267.69,
-      "text": "Wollowajmy w górku"
+      "start": 1772.72,
+      "end": 1774.15,
+      "text": "w siłę jadowity"
     },
     {
-      "start": 1267.69,
-      "end": 1268.69,
-      "text": "Wollowajmy w górku"
+      "start": 1774.15,
+      "end": 1775.16,
+      "text": "trash."
     },
     {
-      "start": 1268.69,
-      "end": 1269.69,
-      "text": "Wollowajmy w górku"
+      "start": 1776.3,
+      "end": 1776.76,
+      "text": "Savatash byli zbyt"
     },
     {
-      "start": 1269.69,
-      "end": 1270.69,
-      "text": "Wollowajmy w górku"
+      "start": 1776.76,
+      "end": 1778.16,
+      "text": "ciężcy i ambitni"
     },
     {
-      "start": 1280.69,
-      "end": 1282.69,
-      "text": "Wollowajmy w górku"
+      "start": 1778.16,
+      "end": 1779.67,
+      "text": "dla publiczności"
     },
     {
-      "start": 1282.69,
-      "end": 1283.69,
-      "text": "Wollowajmy w górku"
+      "start": 1779.67,
+      "end": 1781.26,
+      "text": "Motley Crue czy Bon"
     },
     {
-      "start": 1283.69,
-      "end": 1285.69,
-      "text": "Wollowajmy w górku"
+      "start": 1781.26,
+      "end": 1783.32,
+      "text": "Jovi, a zbyt łagodni"
     },
     {
-      "start": 1285.69,
-      "end": 1286.69,
-      "text": "Wollowajmy w górku"
+      "start": 1783.32,
+      "end": 1785.06,
+      "text": "dla fanów Slayera"
     },
     {
-      "start": 1286.69,
-      "end": 1287.69,
-      "text": "Wollowajmy w górku"
+      "start": 1785.06,
+      "end": 1787.86,
+      "text": "czy wczesnej Metalliki."
     },
     {
-      "start": 1287.69,
-      "end": 1288.69,
-      "text": "Wollowajmy w górku"
+      "start": 1788.9,
+      "end": 1790.19,
+      "text": "Ale to znakomity zespół,"
     },
     {
-      "start": 1288.69,
-      "end": 1289.69,
-      "text": "Wollowajmy w górku"
+      "start": 1790.19,
+      "end": 1791.32,
+      "text": "legenda."
     },
     {
-      "start": 1289.69,
-      "end": 1290.69,
-      "text": "Wollowajmy w górku"
+      "start": 1792.32,
+      "end": 1793.24,
+      "text": "Nevermore."
     },
     {
-      "start": 1290.69,
-      "end": 1291.69,
-      "text": "Wollowajmy w górku"
+      "start": 1793.24,
+      "end": 1794.68,
+      "text": "Też legenda,"
     },
     {
-      "start": 1291.69,
-      "end": 1292.69,
-      "text": "Wollowajmy w górku"
+      "start": 1794.68,
+      "end": 1795.44,
+      "text": "oczywiście z trochę"
     },
     {
-      "start": 1292.69,
-      "end": 1293.69,
-      "text": "Wollowajmy w górku"
+      "start": 1795.44,
+      "end": 1797.38,
+      "text": "innego czasu i miejsca."
     },
     {
-      "start": 1293.69,
-      "end": 1294.69,
-      "text": "Wollowajmy w górku"
+      "start": 1798.04,
+      "end": 1798.56,
+      "text": "No i mamy przed sobą"
     },
     {
-      "start": 1294.69,
-      "end": 1295.69,
-      "text": "Wollowajmy w górku"
+      "start": 1798.56,
+      "end": 1799.94,
+      "text": "wielki sprawdzian,"
     },
     {
-      "start": 1295.69,
-      "end": 1296.69,
-      "text": "Wollowajmy w górku"
+      "start": 1799.94,
+      "end": 1801.58,
+      "text": "czy bez charyzmatycznego"
     },
     {
-      "start": 1671.97,
-      "end": 1685.77,
-      "text": "9 sierpnia w Poznaniu zagra amerykański zespół This Will Destroy You, wykonując w całości dwie swoje płyty, Young Mountain i Another Language."
+      "start": 1801.58,
+      "end": 1803.96,
+      "text": "Orla Deyna, nieodżałowanego,"
     },
     {
-      "start": 1686.49,
-      "end": 1695.43,
-      "text": "Cierpliwi fani post-roka, a innych w tym gatunku nie ma, będą zahipnotyzowani i wniebowzięci."
+      "start": 1804.74,
+      "end": 1805.77,
+      "text": "przy mikrofonie ten"
     },
     {
-      "start": 1695.43,
-      "end": 1703.93,
-      "text": "W aż trzech polskich miastach swoje metalowe szanty śpiewał będzie szkocki zespół Ailstorm."
+      "start": 1805.77,
+      "end": 1807.27,
+      "text": "zespół w ogóle ma"
     },
     {
-      "start": 1704.47,
-      "end": 1711.43,
-      "text": "9 sierpnia w Poznaniu, przyznaję, wybrałbym wtedy This Will Destroy You, bez chwili wahania."
+      "start": 1807.27,
+      "end": 1808.12,
+      "text": "sens."
     },
     {
-      "start": 1711.99,
-      "end": 1717.85,
-      "text": "10 sierpnia w Szczecinie, wybrałbym kąpiel w paprykarzu szczecińskim."
+      "start": 1809.14,
+      "end": 1810.58,
+      "text": "Zastępuje go turecki"
     },
     {
-      "start": 1717.85,
-      "end": 1730.13,
-      "text": "A 11 sierpnia w Lublinie i nie będę się już wyzłośliwiał, Ailstorm nie jest dla mnie, ale każdy bawi się jak lubi."
+      "start": 1810.58,
+      "end": 1813.16,
+      "text": "wokalista Berzan Onen"
     },
     {
-      "start": 1730.91,
-      "end": 1737.63,
-      "text": "Więc jeśli ktoś kocha te ich morskie opowieści, niech już się szykuje do abordażu."
+      "start": 1813.16,
+      "end": 1814.23,
+      "text": "i podobno radzi"
     },
     {
-      "start": 1737.63,
-      "end": 1745.11,
-      "text": "A, już wiem, co bym wybrał i co na pewno wybiorę 11 sierpnia zamiast piratów w Lublinie."
+      "start": 1814.23,
+      "end": 1814.98,
+      "text": "sobie."
     },
     {
-      "start": 1745.91,
-      "end": 1755.31,
-      "text": "Otóż tego samego dnia w warszawskiej progresji odbywa się wspólny koncert grup Savatash, Nevermore i Elmort Saint."
+      "start": 1815.38,
+      "end": 1817.28,
+      "text": "Świetnie, pożyjemy,"
     },
     {
-      "start": 1756.61,
-      "end": 1766.11,
-      "text": "Savatash byliby gigantami, gdyby nie fakt, że kiedy nagrywali najlepsze rzeczy, w Stanach dominowały dwa żywioły."
+      "start": 1817.28,
+      "end": 1818.72,
+      "text": "zobaczymy."
     },
     {
-      "start": 1766.23,
-      "end": 1775.15,
-      "text": "Z jednej strony komercyjny, głupawy pudel metal, a z drugiej rosnący w siłę jadowity trash."
+      "start": 1818.96,
+      "end": 1820.03,
+      "text": "Jeszcze Armored"
     },
     {
-      "start": 1775.89,
-      "end": 1787.87,
-      "text": "Savatash byli zbyt ciężcy i ambitni dla publiczności Motley Crue czy Bon Jovi, a zbyt łagodni dla fanów Slayera czy wczesnej Metalliki."
+      "start": 1820.03,
+      "end": 1821.64,
+      "text": "Saint, niedoceniana,"
     },
     {
-      "start": 1788.89,
-      "end": 1791.31,
-      "text": "Ale to znakomity zespół, legenda."
+      "start": 1821.64,
+      "end": 1822.98,
+      "text": "ale znakomita grupa"
     },
     {
-      "start": 1792.27,
-      "end": 1797.37,
-      "text": "Nevermore też legenda, oczywiście z trochę innego czasu i miejsca."
+      "start": 1822.98,
+      "end": 1824.1,
+      "text": "z Johnem Bushem na"
     },
     {
-      "start": 1797.37,
-      "end": 1808.11,
-      "text": "No i mamy przed sobą wielki sprawdzian, czy bez charyzmatycznego Orla Deyna, nieodżałowanego, przy mikrofonie ten zespół w ogóle ma sens."
+      "start": 1824.1,
+      "end": 1824.94,
+      "text": "wokalu,"
     },
     {
-      "start": 1809.17,
-      "end": 1814.99,
-      "text": "Zastępuje go turecki wokalista Berzan Onen i podobno radzi sobie."
+      "start": 1825.04,
+      "end": 1826.09,
+      "text": "tym samym, który"
     },
     {
-      "start": 1815.39,
-      "end": 1818.71,
-      "text": "Świetnie, pożyjemy, zobaczymy."
+      "start": 1826.09,
+      "end": 1827.69,
+      "text": "przez jakiś czas śpiewał"
     },
     {
-      "start": 1819.15,
-      "end": 1824.93,
-      "text": "Jeszcze Elmort Saint, niedoceniana, ale znakomita grupa z Johnem Bushem na wokalu."
+      "start": 1827.69,
+      "end": 1828.8,
+      "text": "w Antraksie."
     },
     {
-      "start": 1825.05,
-      "end": 1828.79,
-      "text": "Tym samym, który przez jakiś czas śpiewał w Antraksie."
+      "start": 1830.02,
+      "end": 1830.64,
+      "text": "Posłuchajmy zatem"
     },
     {
-      "start": 1830.03,
-      "end": 1834.99,
-      "text": "Posłuchajmy zatem Starego Savatash i Nowego Armored Saint."
+      "start": 1830.64,
+      "end": 1832.49,
+      "text": "Starego Savatash i"
     },
     {
-      "start": 2400.87,
-      "end": 2417.27,
-      "text": "Ten sam Ermord Saint zagra dwa dni później, czyli 13 sierpnia w Krakowie w klubie studio, a to oznacza, że wszystko będzie doskonale słychać, bo to chyba najlepszy akustycznie klub w Polsce."
+      "start": 1832.49,
+      "end": 1834,
+      "text": "Nowego Armored"
     },
     {
-      "start": 2417.63,
-      "end": 2437.05,
-      "text": "Ermord Saint nie pojawią się tam sami, bo w towarzystwie Metal Church, zespołu, który zawsze próbował zrównoważyć klasyczny heavy metal w amerykańskim wydaniu z Trashem, oraz i przede wszystkim, bo to będzie gwiazda wieczoru z grupą Testament."
+      "start": 1834,
+      "end": 1835,
+      "text": "Saint."
     },
     {
-      "start": 2437.99,
-      "end": 2444.97,
-      "text": "A Testament na żywo wiadomo, siecze na plasterki, więc i tym razem słabo nie będzie."
-    },
-    {
-      "start": 2447.63,
-      "end": 2448.83,
-      "text": "Dziękuje za oglądanie!"
-    },
-    {
-      "start": 2763.75,
-      "end": 2773.97,
-      "text": "Agnostik Front już w tym roku występowali w Polsce, ale wracają na jeden koncert i bardzo dobrze, że wracają."
-    },
-    {
-      "start": 2774.53,
-      "end": 2782.95,
-      "text": "Szkoda, że nakłada się to w Krakowie z testamentem. Ciężko będzie wybrać. Osiołkowi wrzłoby dano."
-    },
-    {
-      "start": 2783.65,
-      "end": 2795.63,
-      "text": "Kiedyś takie sztuki zdarzały się w naszym kraju raz w roku, a teraz proszę, jednego dnia w jednym mieście dzieją się dwa świetne koncerty."
-    },
-    {
-      "start": 2796.43,
-      "end": 2800.95,
-      "text": "Nic tylko się cieszyć, choć nie da się być na obu."
-    },
-    {
-      "start": 2801.19,
-      "end": 2810.43,
-      "text": "Agnostik Front to legenda siłowego nowojorskiego hardcora, która zagra 13 sierpnia w Hype Parku."
-    },
-    {
-      "start": 2810.77,
-      "end": 2822.23,
-      "text": "A przed nimi wystąpią Slawn Kust oraz Minor God, czyli nasi rodacy, którzy też potrafią stosować dźwiękową przemoc."
-    },
-    {
-      "start": 2822.23,
-      "end": 2823.87,
+      "start": 1835,
+      "end": 1835.52,
       "text": "Muzyka"
     },
     {
-      "start": 2966.37,
+      "start": 2403,
+      "end": 2404.04,
+      "text": "Armourts Saint zagra"
+    },
+    {
+      "start": 2404.04,
+      "end": 2405.28,
+      "text": "dwa dni później,"
+    },
+    {
+      "start": 2405.28,
+      "end": 2407.7,
+      "text": "czyli 13 sierpnia w"
+    },
+    {
+      "start": 2407.7,
+      "end": 2409.04,
+      "text": "Krakowie w klubie"
+    },
+    {
+      "start": 2409.04,
+      "end": 2409.6,
+      "text": "Studio."
+    },
+    {
+      "start": 2409.6,
+      "end": 2410.58,
+      "text": "A to oznacza, że"
+    },
+    {
+      "start": 2410.58,
+      "end": 2412.26,
+      "text": "wszystko będzie doskonale"
+    },
+    {
+      "start": 2412.26,
+      "end": 2413.38,
+      "text": "słychać, bo to"
+    },
+    {
+      "start": 2413.38,
+      "end": 2415.8,
+      "text": "chyba najlepszy akustycznie"
+    },
+    {
+      "start": 2415.8,
+      "end": 2417.28,
+      "text": "klub w Polsce."
+    },
+    {
+      "start": 2418.22,
+      "end": 2418.75,
+      "text": "Armourts Saint nie"
+    },
+    {
+      "start": 2418.75,
+      "end": 2420.5,
+      "text": "pojawią się tam sami,"
+    },
+    {
+      "start": 2420.5,
+      "end": 2421.99,
+      "text": "bo w towarzystwie"
+    },
+    {
+      "start": 2421.99,
+      "end": 2424.3,
+      "text": "Metal Church, zespołu,"
+    },
+    {
+      "start": 2424.3,
+      "end": 2425.46,
+      "text": "który zawsze próbował"
+    },
+    {
+      "start": 2425.46,
+      "end": 2426.84,
+      "text": "zrównoważyć klasyczny"
+    },
+    {
+      "start": 2426.84,
+      "end": 2427.5,
+      "text": "heavy metal"
+    },
+    {
+      "start": 2427.5,
+      "end": 2429.5,
+      "text": "w amerykańskim wydaniu"
+    },
+    {
+      "start": 2429.5,
+      "end": 2430.81,
+      "text": "z Trashem oraz i"
+    },
+    {
+      "start": 2430.81,
+      "end": 2432.54,
+      "text": "przede wszystkim,"
+    },
+    {
+      "start": 2432.54,
+      "end": 2434.55,
+      "text": "bo to będzie gwiazda"
+    },
+    {
+      "start": 2434.55,
+      "end": 2435.66,
+      "text": "wieczoru z grupą"
+    },
+    {
+      "start": 2435.66,
+      "end": 2437.04,
+      "text": "Testament."
+    },
+    {
+      "start": 2438.04,
+      "end": 2438.77,
+      "text": "A Testament na żywo"
+    },
+    {
+      "start": 2438.77,
+      "end": 2440.53,
+      "text": "wiadomo, siecze na"
+    },
+    {
+      "start": 2440.53,
+      "end": 2442.29,
+      "text": "plasterki, więc i"
+    },
+    {
+      "start": 2442.29,
+      "end": 2443.93,
+      "text": "tym razem słabo nie"
+    },
+    {
+      "start": 2443.93,
+      "end": 2445,
+      "text": "będzie."
+    },
+    {
+      "start": 2765.69,
+      "end": 2767.67,
+      "text": "Już w tym roku występowali"
+    },
+    {
+      "start": 2767.67,
+      "end": 2769.69,
+      "text": "w Polsce, ale wracają"
+    },
+    {
+      "start": 2769.69,
+      "end": 2771.5,
+      "text": "na jeden koncert i"
+    },
+    {
+      "start": 2771.5,
+      "end": 2773.09,
+      "text": "bardzo dobrze, że"
+    },
+    {
+      "start": 2773.09,
+      "end": 2773.95,
+      "text": "wracają."
+    },
+    {
+      "start": 2774.89,
+      "end": 2775.58,
+      "text": "Szkoda, że nakłada"
+    },
+    {
+      "start": 2775.58,
+      "end": 2777.01,
+      "text": "się to w Krakowie z"
+    },
+    {
+      "start": 2777.01,
+      "end": 2778.49,
+      "text": "testamentem."
+    },
+    {
+      "start": 2778.65,
+      "end": 2780.47,
+      "text": "Ciężko będzie wybrać"
+    },
+    {
+      "start": 2780.47,
+      "end": 2782.11,
+      "text": "osiołkowi w żłoby"
+    },
+    {
+      "start": 2782.11,
+      "end": 2782.93,
+      "text": "Dano."
+    },
+    {
+      "start": 2783.67,
+      "end": 2784.49,
+      "text": "Kiedyś takie sztuki"
+    },
+    {
+      "start": 2784.49,
+      "end": 2785.58,
+      "text": "zdarzały się w"
+    },
+    {
+      "start": 2785.58,
+      "end": 2786.97,
+      "text": "naszym kraju raz w"
+    },
+    {
+      "start": 2786.97,
+      "end": 2787.63,
+      "text": "roku,"
+    },
+    {
+      "start": 2787.63,
+      "end": 2790.11,
+      "text": "a teraz proszę, jednego"
+    },
+    {
+      "start": 2790.11,
+      "end": 2792.07,
+      "text": "dnia w jednym mieście"
+    },
+    {
+      "start": 2792.07,
+      "end": 2794.24,
+      "text": "dzieją się dwa świetne"
+    },
+    {
+      "start": 2794.24,
+      "end": 2795.63,
+      "text": "koncerty."
+    },
+    {
+      "start": 2796.41,
+      "end": 2798.09,
+      "text": "Nic tylko się cieszyć,"
+    },
+    {
+      "start": 2798.09,
+      "end": 2799.93,
+      "text": "choć nie da się być"
+    },
+    {
+      "start": 2799.93,
+      "end": 2800.97,
+      "text": "na obu."
+    },
+    {
+      "start": 2801.73,
+      "end": 2802.52,
+      "text": "Agnostik Front to"
+    },
+    {
+      "start": 2802.52,
+      "end": 2804.07,
+      "text": "legenda siłowego"
+    },
+    {
+      "start": 2804.07,
+      "end": 2806.53,
+      "text": "nowojorskiego hardcora,"
+    },
+    {
+      "start": 2807.23,
+      "end": 2809.08,
+      "text": "która zagra 13 sierpnia"
+    },
+    {
+      "start": 2809.08,
+      "end": 2810.43,
+      "text": "w Hype Parku,"
+    },
+    {
+      "start": 2810.75,
+      "end": 2812.61,
+      "text": "a przed nimi wystąpią"
+    },
+    {
+      "start": 2812.61,
+      "end": 2814.56,
+      "text": "Slavenkust oraz"
+    },
+    {
+      "start": 2814.56,
+      "end": 2815.61,
+      "text": "Minor God,"
+    },
+    {
+      "start": 2815.61,
+      "end": 2817.42,
+      "text": "czyli nasi rodacy,"
+    },
+    {
+      "start": 2817.42,
+      "end": 2819.42,
+      "text": "którzy też potrafią"
+    },
+    {
+      "start": 2819.42,
+      "end": 2821.04,
+      "text": "stosować dźwiękową"
+    },
+    {
+      "start": 2821.04,
+      "end": 2822.25,
+      "text": "przemoc."
+    },
+    {
+      "start": 2967.13,
+      "end": 2968.43,
+      "text": "Niech cisza milczy"
+    },
+    {
+      "start": 2968.43,
+      "end": 2969.95,
+      "text": "z wykrzyknikiem. A"
+    },
+    {
+      "start": 2969.95,
+      "end": 2970.35,
+      "text": "jak?"
+    },
+    {
+      "start": 2971.05,
+      "end": 2972.87,
+      "text": "To impreza cykliczna"
+    },
+    {
+      "start": 2972.87,
+      "end": 2975.79,
+      "text": "i 14 oraz 15 sierpnia"
+    },
+    {
+      "start": 2975.79,
+      "end": 2977.46,
+      "text": "odbędzie się jej 12"
+    },
+    {
+      "start": 2977.46,
+      "end": 2978.25,
+      "text": "edycja."
+    },
+    {
+      "start": 2979.17,
+      "end": 2980.15,
+      "text": "Rzecz się dzieje obok"
+    },
+    {
+      "start": 2980.15,
+      "end": 2982.43,
+      "text": "Gliwic, w Pyskowicach,"
+    },
+    {
+      "start": 2982.43,
+      "end": 2984.48,
+      "text": "nad jeziorem Dzierżno"
+    },
+    {
+      "start": 2984.48,
       "end": 2985.27,
-      "text": "Niech cisza milczy z wykrzyknikiem. A jak? To impreza cykliczna i 14 oraz 15 sierpnia odbędzie się jej 12 edycja. Rzecz się dzieje obok Gliwic w Pyskowicach nad jeziorem Dzierżno Małe."
+      "text": "Małe."
     },
     {
-      "start": 2985.73,
+      "start": 2985.97,
+      "end": 2986.74,
+      "text": "Sprawdziłem na mapie"
+    },
+    {
+      "start": 2986.74,
+      "end": 2987.96,
+      "text": "i odkryłem, że na"
+    },
+    {
+      "start": 2987.96,
+      "end": 2989.89,
+      "text": "tymże jeziorze jest"
+    },
+    {
+      "start": 2989.89,
+      "end": 2990.85,
+      "text": "wyspa,"
+    },
+    {
+      "start": 2990.85,
+      "end": 2993.67,
+      "text": "która nazywa się Tumidaj."
+    },
+    {
+      "start": 2994.09,
+      "end": 2995.89,
+      "text": "Serio, nie mam pojęcia"
+    },
+    {
+      "start": 2995.89,
+      "end": 2997.31,
+      "text": "skąd ta egzotyczna"
+    },
+    {
+      "start": 2997.31,
+      "end": 2998.01,
+      "text": "nazwa,"
+    },
+    {
+      "start": 2998.69,
+      "end": 2999.65,
+      "text": "ale nie będziemy"
+    },
+    {
+      "start": 2999.65,
+      "end": 3001.81,
+      "text": "teraz tego ustalać,"
+    },
+    {
+      "start": 3002.39,
+      "end": 3003.26,
+      "text": "bo pora wymienić"
+    },
+    {
+      "start": 3003.26,
+      "end": 3004.82,
+      "text": "nazwy zespołów,"
+    },
+    {
+      "start": 3004.82,
       "end": 3006.47,
-      "text": "Sprawdziłem na mapie i odkryłem, że na tymże jeziorze jest wyspa, która nazywa się Tumidai. Serio, nie mam pojęcia skąd ta egzotyczna nazwa, ale nie będziemy teraz tego ustalać, bo pora wymienić nazwy zespołów, które wystąpią."
+      "text": "które wystąpią,"
     },
     {
-      "start": 3006.47,
-      "end": 3022.67,
-      "text": "A przynajmniej kilka z nich. Trauma, Dye Disease, Dymna Lotwa, Sunday at 9, La Crema. Całkiem miłe towarzystwo. W dodatku niech cisza milczy jest festiwalem zupełnie darmowym."
+      "start": 3007.15,
+      "end": 3007.85,
+      "text": "a przynajmniej"
     },
     {
-      "start": 3022.67,
+      "start": 3007.85,
+      "end": 3009.27,
+      "text": "kilka z nich."
+    },
+    {
+      "start": 3009.67,
+      "end": 3011.26,
+      "text": "Trauma, Dye Disease,"
+    },
+    {
+      "start": 3011.26,
+      "end": 3012.95,
+      "text": "Dymna Lotwa, Sunday"
+    },
+    {
+      "start": 3012.95,
+      "end": 3015.15,
+      "text": "at 9, La Crema."
+    },
+    {
+      "start": 3015.91,
+      "end": 3017.63,
+      "text": "Całkiem miłe towarzystwo."
+    },
+    {
+      "start": 3017.63,
+      "end": 3019.22,
+      "text": "W dodatku niech cisza"
+    },
+    {
+      "start": 3019.22,
+      "end": 3020.9,
+      "text": "milczy jest festiwalem"
+    },
+    {
+      "start": 3020.9,
+      "end": 3022.69,
+      "text": "zupełnie darmowym."
+    },
+    {
+      "start": 3023.13,
+      "end": 3025.84,
+      "text": "15 sierpnia w warszawskim"
+    },
+    {
+      "start": 3025.84,
+      "end": 3027.41,
+      "text": "klubie Potok zagrają"
+    },
+    {
+      "start": 3027.41,
+      "end": 3028.81,
+      "text": "ksifi-curg pomiot"
+    },
+    {
+      "start": 3028.81,
+      "end": 3030.46,
+      "text": "Despised Cruelty"
+    },
+    {
+      "start": 3030.46,
+      "end": 3032.15,
+      "text": "oraz Hekation."
+    },
+    {
+      "start": 3032.99,
+      "end": 3033.34,
+      "text": "Warto, jeśli ktoś"
+    },
+    {
+      "start": 3033.34,
+      "end": 3034.79,
+      "text": "chce się dowiedzieć,"
+    },
+    {
+      "start": 3034.79,
+      "end": 3036.41,
+      "text": "co w polskim podziemiu"
+    },
+    {
+      "start": 3036.41,
       "end": 3037.31,
-      "text": "15 sierpnia w warszawskim klubie Potok zagrają Xifi-Curk, Pomiot, Despised Cruelty oraz Hekation. Warto jeśli ktoś chce się dowiedzieć co w polskim podziemiu piszczy."
+      "text": "piszczy."
     },
     {
-      "start": 3037.31,
-      "end": 3065.83,
-      "text": "Tych, co preferują nadziemię, a nawet nad wodzie, zapraszam tego samego dnia, 15 sierpnia nad Zalew Wiślany na plażę Kadyny, gdzie odbędzie się Kurde Fest, czyli festiwal, a może bardziej piknik przy odpowiednio dobranej muzyce, a więc stonerze i psychodelicznym roku."
+      "start": 3038.21,
+      "end": 3039.46,
+      "text": "Tych, co preferują"
     },
     {
-      "start": 3066.63,
-      "end": 3072.03,
-      "text": "Wystąpią Hermapolis, Pimape i Atom Juice."
+      "start": 3039.46,
+      "end": 3041.49,
+      "text": "nadziemię, a nawet"
     },
     {
-      "start": 3072.47,
+      "start": 3041.49,
+      "end": 3042.85,
+      "text": "nad wodzie,"
+    },
+    {
+      "start": 3043.61,
+      "end": 3044.69,
+      "text": "zapraszam tego samego"
+    },
+    {
+      "start": 3044.69,
+      "end": 3046.48,
+      "text": "dnia, 15 sierpnia"
+    },
+    {
+      "start": 3046.48,
+      "end": 3048.25,
+      "text": "nad Zalew Wiślany,"
+    },
+    {
+      "start": 3048.41,
+      "end": 3050.52,
+      "text": "na plażę Kadyny,"
+    },
+    {
+      "start": 3050.52,
+      "end": 3052.35,
+      "text": "gdzie odbędzie się"
+    },
+    {
+      "start": 3052.35,
+      "end": 3054.11,
+      "text": "Kurde Fest,"
+    },
+    {
+      "start": 3055.03,
+      "end": 3056.29,
+      "text": "czyli festiwal, a"
+    },
+    {
+      "start": 3056.29,
+      "end": 3058.61,
+      "text": "może bardziej piknik,"
+    },
+    {
+      "start": 3059.29,
+      "end": 3060,
+      "text": "przy odpowiednio"
+    },
+    {
+      "start": 3060,
+      "end": 3061.51,
+      "text": "dobranej muzyce,"
+    },
+    {
+      "start": 3062.03,
+      "end": 3062.95,
+      "text": "a więc stonerze i"
+    },
+    {
+      "start": 3062.95,
+      "end": 3064.5,
+      "text": "psychodelicznym"
+    },
+    {
+      "start": 3064.5,
+      "end": 3065.29,
+      "text": "roku."
+    },
+    {
+      "start": 3067.29,
+      "end": 3073.85,
+      "text": "organizatorzy zachęcają"
+    },
+    {
+      "start": 3073.85,
+      "end": 3074.87,
+      "text": "do przybycia takimi"
+    },
+    {
+      "start": 3074.87,
       "end": 3075.27,
-      "text": "Organizatorzy zachęcają do przybycia takimi słowy."
+      "text": "słowy."
     },
     {
       "start": 3075.27,
+      "end": 3076.55,
+      "text": "Piach w gaciach,"
+    },
+    {
+      "start": 3076.55,
+      "end": 3079.18,
+      "text": "komary, mocarny wiatr,"
+    },
+    {
+      "start": 3079.18,
+      "end": 3080.17,
+      "text": "palące słońce,"
+    },
+    {
+      "start": 3080.91,
+      "end": 3082.07,
+      "text": "wygazowane piwko, dym"
+    },
+    {
+      "start": 3082.07,
+      "end": 3083.13,
+      "text": "z ogniska,"
+    },
+    {
+      "start": 3083.75,
+      "end": 3084.27,
+      "text": "a do tego kawał"
+    },
+    {
+      "start": 3084.27,
+      "end": 3086.17,
+      "text": "dobrej muzy na paletach"
+    },
+    {
+      "start": 3086.17,
+      "end": 3087.13,
+      "text": "i dywanach,"
+    },
+    {
+      "start": 3087.13,
+      "end": 3088.73,
+      "text": "w przepięknym, kurde,"
+    },
+    {
+      "start": 3088.73,
       "end": 3089.45,
-      "text": "Piach w gaciach, komary, mocarny wiatr, palące słońce, wygazowane piwko, dym z ogniska, a do tego kawał dobrej muzy na paletach i dywanach w przepięknym Kurde otoczeniu."
+      "text": "otoczeniu."
     },
     {
       "start": 3089.77,
-      "end": 3094.61,
-      "text": "Czy czegoś potrzeba więcej? Odpowiadam. Nie trzeba. Mnie przekonaliście."
+      "end": 3090.48,
+      "text": "Czy czegoś potrzeba"
     },
     {
-      "start": 3375.72,
+      "start": 3090.48,
+      "end": 3091.07,
+      "text": "więcej?"
+    },
+    {
+      "start": 3091.55,
+      "end": 3092.48,
+      "text": "Odpowiadam. Nie"
+    },
+    {
+      "start": 3092.48,
+      "end": 3093.19,
+      "text": "trzeba."
+    },
+    {
+      "start": 3093.67,
+      "end": 3094.59,
+      "text": "Mnie przekonaliście."
+    },
+    {
+      "start": 3376.8,
+      "end": 3378.71,
+      "text": "Kultowy, legendarny,"
+    },
+    {
+      "start": 3378.71,
+      "end": 3380.88,
+      "text": "klasyczny, to przymiotniki"
+    },
+    {
+      "start": 3380.88,
+      "end": 3382.5,
+      "text": "często nadużywane w"
+    },
+    {
+      "start": 3382.5,
+      "end": 3384.14,
+      "text": "odniesieniu do zespołów,"
+    },
+    {
+      "start": 3384.14,
+      "end": 3386.21,
+      "text": "które istnieją raptem"
+    },
+    {
+      "start": 3386.21,
       "end": 3388.94,
-      "text": "Kultowy, legendarny, klasyczny. To przymiotniki często nadużywane w odniesieniu do zespołów, które istnieją raptem po 20 czy 30 lat."
+      "text": "po 20 czy 30 lat."
     },
     {
       "start": 3389.5,
+      "end": 3390.31,
+      "text": "Australijski zespół"
+    },
+    {
+      "start": 3390.31,
+      "end": 3391.68,
+      "text": "Rose Tattoo świętuje"
+    },
+    {
+      "start": 3391.68,
+      "end": 3393.72,
+      "text": "właśnie pięćdziesięciolecie"
+    },
+    {
+      "start": 3393.72,
+      "end": 3395.87,
+      "text": "działalności i zarazem"
+    },
+    {
+      "start": 3395.87,
       "end": 3398.36,
-      "text": "Australijski zespół Rose Tattoo świętuje właśnie pięćdziesięciolecie działalności i zarazem żegna się ze sceną,"
+      "text": "żegna się ze sceną,"
     },
     {
       "start": 3398.36,
+      "end": 3400.27,
+      "text": "trasą zatytułowaną"
+    },
+    {
+      "start": 3400.27,
+      "end": 3402.11,
+      "text": "Rock'n'Roll Outlaws'"
+    },
+    {
+      "start": 3402.11,
+      "end": 3403.87,
+      "text": "One Last Ride. Co"
+    },
+    {
+      "start": 3403.87,
+      "end": 3405.31,
+      "text": "ciekawe, jeździłem"
+    },
+    {
+      "start": 3405.31,
+      "end": 3406.29,
+      "text": "na koncerty Rose"
+    },
+    {
+      "start": 3406.29,
+      "end": 3408.07,
+      "text": "Tattoo jakieś 20"
+    },
+    {
+      "start": 3408.07,
       "end": 3410.4,
-      "text": "trasą zatytułowaną Rock'n'Roll Outlaws One Last Ride. Co ciekawe, jeździłem na koncerty Rose Tattoo jakieś 20 lat temu do Niemiec,"
+      "text": "lat temu do Niemiec,"
     },
     {
       "start": 3410.5,
+      "end": 3411.58,
+      "text": "kiedy jeszcze do"
+    },
+    {
+      "start": 3411.58,
+      "end": 3412.97,
+      "text": "nas nie docierali,"
+    },
+    {
+      "start": 3412.97,
+      "end": 3414.32,
+      "text": "bo bałem się, że to"
+    },
+    {
+      "start": 3414.32,
+      "end": 3415.97,
+      "text": "ostatnie ich podrygi,"
+    },
+    {
+      "start": 3415.97,
+      "end": 3417.56,
+      "text": "że nie będę miał okazji"
+    },
+    {
+      "start": 3417.56,
       "end": 3418.56,
-      "text": "kiedy jeszcze do nas nie docierali, bo bałem się, że to ostatnie ich podrygi, że nie będę miał okazji zobaczyć,"
+      "text": "zobaczyć,"
     },
     {
       "start": 3418.56,
+      "end": 3419.93,
+      "text": "Ale nie żałuję tych"
+    },
+    {
+      "start": 3419.93,
+      "end": 3421.48,
+      "text": "wypraw. Dzięki nim"
+    },
+    {
+      "start": 3421.48,
+      "end": 3423.23,
+      "text": "widziałem Rose Tattoo"
+    },
+    {
+      "start": 3423.23,
+      "end": 3424.51,
+      "text": "jeszcze w składzie"
+    },
+    {
+      "start": 3424.51,
+      "end": 3425.96,
+      "text": "z nieodżałowanym"
+    },
+    {
+      "start": 3425.96,
       "end": 3427.68,
-      "text": "ale nie żałuję tych wypraw. Dzięki nim widziałem Rose Tattoo jeszcze w składzie z nieodżałowanym Peterem Wellsem,"
+      "text": "Peterem Wellsem,"
     },
     {
       "start": 3427.8,
-      "end": 3437,
-      "text": "gitarzystą, który stworzył brzmienie grupy. Najważniejszą postacią Rose Tattoo pozostaje jednak wokalista Angry Anderson."
+      "end": 3429.07,
+      "text": "gitarzystą, który"
     },
     {
-      "start": 3437.66,
-      "end": 3445,
-      "text": "Niewielkiego wzrostu, ale kawał charaktyrnego łobuza z niego, z głosem jak papier ścierny."
+      "start": 3429.07,
+      "end": 3430.36,
+      "text": "stworzył brzmienie"
+    },
+    {
+      "start": 3430.36,
+      "end": 3432.2,
+      "text": "grupy. Najważniejszą"
+    },
+    {
+      "start": 3432.2,
+      "end": 3433.64,
+      "text": "postacią Rose Tattoo"
+    },
+    {
+      "start": 3433.64,
+      "end": 3434.85,
+      "text": "pozostaje jednak"
+    },
+    {
+      "start": 3434.85,
+      "end": 3435.99,
+      "text": "wokalista Angry"
+    },
+    {
+      "start": 3435.99,
+      "end": 3436.98,
+      "text": "Anderson."
+    },
+    {
+      "start": 3437.7,
+      "end": 3438.96,
+      "text": "Niewielkiego wzrostu,"
+    },
+    {
+      "start": 3438.96,
+      "end": 3441.03,
+      "text": "ale kawał charakterynego"
+    },
+    {
+      "start": 3441.03,
+      "end": 3442.44,
+      "text": "łobuza z niego, z"
+    },
+    {
+      "start": 3442.44,
+      "end": 3444.98,
+      "text": "głosem jak papier ścierny."
     },
     {
       "start": 3446.38,
+      "end": 3448.29,
+      "text": "Właściwie to nie wiadomo,"
+    },
+    {
+      "start": 3448.29,
+      "end": 3449.9,
+      "text": "dlaczego Angry nie"
+    },
+    {
+      "start": 3449.9,
+      "end": 3451.28,
+      "text": "został wokalistą ACDC,"
+    },
+    {
+      "start": 3451.28,
+      "end": 3452.76,
+      "text": "kiedy zmarł Bon"
+    },
+    {
+      "start": 3452.76,
       "end": 3453.72,
-      "text": "Właściwie to nie wiadomo, dlaczego Angry nie został wokalistą ACDC, kiedy zmarł Bon Scott."
+      "text": "Scott."
     },
     {
       "start": 3453.9,
-      "end": 3461.12,
-      "text": "Wydawał się najlepszym i najbardziej naturalnym wyborem, no ale nie ma co gdybać."
+      "end": 3455.83,
+      "text": "Wydawał się najlepszym"
     },
     {
-      "start": 3461.62,
+      "start": 3455.83,
+      "end": 3457.49,
+      "text": "i najbardziej"
+    },
+    {
+      "start": 3457.49,
+      "end": 3459.2,
+      "text": "naturalnym wyborem,"
+    },
+    {
+      "start": 3459.2,
+      "end": 3460.28,
+      "text": "no ale nie ma co"
+    },
+    {
+      "start": 3460.28,
+      "end": 3461.14,
+      "text": "gdybać."
+    },
+    {
+      "start": 3461.6,
+      "end": 3462.85,
+      "text": "Pozostał śpiewakiem"
+    },
+    {
+      "start": 3462.85,
+      "end": 3464.01,
+      "text": "Rose Tattoo na"
+    },
+    {
+      "start": 3464.01,
+      "end": 3466.31,
+      "text": "zawsze, wokalistą zespołu"
+    },
+    {
+      "start": 3466.31,
       "end": 3468.46,
-      "text": "Pozostał śpiewakiem Rose Tattoo na zawsze, wokalistą zespołu niezbyt popularnego,"
+      "text": "niezbyt popularnego,"
     },
     {
       "start": 3468.46,
+      "end": 3470.37,
+      "text": "Za to znakomitego i"
+    },
+    {
+      "start": 3470.37,
+      "end": 3472.05,
+      "text": "inspirującego"
+    },
+    {
+      "start": 3472.05,
+      "end": 3472.74,
+      "text": "innych. Dość"
+    },
+    {
+      "start": 3472.74,
+      "end": 3473.86,
+      "text": "powiedzieć, że Guns"
+    },
+    {
+      "start": 3473.86,
+      "end": 3475.44,
+      "text": "N' Roses podkreślali"
+    },
+    {
+      "start": 3475.44,
       "end": 3476.9,
-      "text": "za to znakomitego i inspirującego innych. Dość powiedzieć, że Guns N' Roses podkreślali wielokrotnie,"
+      "text": "wielokrotnie,"
     },
     {
       "start": 3477.06,
+      "end": 3477.91,
+      "text": "że w początkowej"
+    },
+    {
+      "start": 3477.91,
+      "end": 3479.15,
+      "text": "fazie działalności"
+    },
+    {
+      "start": 3479.15,
+      "end": 3480.08,
+      "text": "grupy, a więc w"
+    },
+    {
+      "start": 3480.08,
+      "end": 3481.32,
+      "text": "najlepszym dla nich"
+    },
+    {
+      "start": 3481.32,
       "end": 3481.9,
-      "text": "że w początkowej fazie działalności grupy, a więc w najlepszym dla nich czasie,"
+      "text": "czasie,"
     },
     {
-      "start": 3482.68,
+      "start": 3482.66,
+      "end": 3483.72,
+      "text": "właśnie Rose Tattoo"
+    },
+    {
+      "start": 3483.72,
+      "end": 3485.63,
+      "text": "byli najważniejszym"
+    },
+    {
+      "start": 3485.63,
       "end": 3487.94,
-      "text": "właśnie Rose Tattoo byli najważniejszym punktem odniesienia."
+      "text": "punktem odniesienia."
     },
     {
-      "start": 3487.98,
-      "end": 3496.08,
-      "text": "Czy to naprawdę takie dobre, przekonacie się już 16 sierpnia w krakowskim klubie Kwadrat."
+      "start": 3488.32,
+      "end": 3489.68,
+      "text": "Czy to naprawdę"
     },
     {
-      "start": 3496.86,
+      "start": 3489.68,
+      "end": 3492.54,
+      "text": "takie dobre? Przekonacie"
+    },
+    {
+      "start": 3492.54,
+      "end": 3494.41,
+      "text": "się już 16 sierpnia"
+    },
+    {
+      "start": 3494.41,
+      "end": 3496.03,
+      "text": "w krakowskim klubie"
+    },
+    {
+      "start": 3496.03,
+      "end": 3496.8,
+      "text": "Kwadrat."
+    },
+    {
+      "start": 3496.8,
+      "end": 3497.9,
+      "text": "ale niecierpliwych"
+    },
+    {
+      "start": 3497.9,
+      "end": 3500.36,
+      "text": "już teraz mogę zapewnić."
+    },
+    {
+      "start": 3501.08,
       "end": 3501.76,
-      "text": "Ale niecierpliwych już teraz mogę zapewnić. Bardzo dobre."
+      "text": "Bardzo dobre."
     },
     {
-      "start": 3501.76,
-      "end": 3504.54,
-      "text": "Muzyka"
+      "start": 3739.04,
+      "end": 3740.5,
+      "text": "Angelusa Patrida,"
     },
     {
-      "start": 3738.12,
+      "start": 3740.5,
+      "end": 3742.18,
+      "text": "czyli hiszpański zespół"
+    },
+    {
+      "start": 3742.18,
+      "end": 3743.77,
+      "text": "od ćwierćwiecza,"
+    },
+    {
+      "start": 3743.77,
+      "end": 3745.34,
+      "text": "grający dla nas straszna,"
+    },
+    {
+      "start": 3745.34,
+      "end": 3746.32,
+      "text": "naprawdę niezłym"
+    },
+    {
+      "start": 3746.32,
+      "end": 3748.06,
+      "text": "poziomie, zaprasza"
+    },
+    {
+      "start": 3748.06,
+      "end": 3751.05,
+      "text": "16 sierpnia w Krakowie"
+    },
+    {
+      "start": 3751.05,
+      "end": 3753.19,
+      "text": "do Zaścianka i 18"
+    },
+    {
+      "start": 3753.19,
       "end": 3755.94,
-      "text": "Angelus Apatrida, czyli hiszpański zespół od ćwierćwiecza, grający dla nas straszna, naprawdę niezłym poziomie, zaprasza 16 sierpnia w Krakowie do Zaścianka i 18 do Wudu w Warszawie."
+      "text": "do Wudu w Warszawie."
     },
     {
       "start": 3755.94,
+      "end": 3757.14,
+      "text": "Zupełnie innych"
+    },
+    {
+      "start": 3757.14,
+      "end": 3758.66,
+      "text": "emocji spodziewacie"
+    },
+    {
+      "start": 3758.66,
+      "end": 3760.51,
+      "text": "się i słusznie po czterech"
+    },
+    {
+      "start": 3760.51,
+      "end": 3761.87,
+      "text": "koncertach Soen,"
+    },
+    {
+      "start": 3761.87,
+      "end": 3763.91,
+      "text": "międzynarodowego składu,"
+    },
+    {
+      "start": 3763.91,
+      "end": 3765.36,
+      "text": "który uformował się"
+    },
+    {
+      "start": 3765.36,
+      "end": 3766.54,
+      "text": "w orbicie opet i w"
+    },
+    {
+      "start": 3766.54,
+      "end": 3767.82,
+      "text": "związku z tym jest"
+    },
+    {
+      "start": 3767.82,
+      "end": 3769.19,
+      "text": "trochę metalowy,"
+    },
+    {
+      "start": 3769.19,
+      "end": 3770.65,
+      "text": "trochę progresywny"
+    },
+    {
+      "start": 3770.65,
       "end": 3772.84,
-      "text": "Zupełnie innych emocji spodziewacie się i słusznie po czterech koncertach Soen, międzynarodowego składu, który uformował się w orbicie opet i w związku z tym jest trochę metalowy, trochę progresywny i trochę alternatywny."
+      "text": "i trochę alternatywny."
     },
     {
       "start": 3772.84,
+      "end": 3775.15,
+      "text": "Nie jest to moja muzyka,"
+    },
+    {
+      "start": 3775.15,
+      "end": 3777.25,
+      "text": "ale nie sposób odmówić"
+    },
+    {
+      "start": 3777.25,
+      "end": 3778.9,
+      "text": "Soen ich własnego"
+    },
+    {
+      "start": 3778.9,
+      "end": 3781.46,
+      "text": "charakteru, ani tym"
+    },
+    {
+      "start": 3781.46,
+      "end": 3782.76,
+      "text": "bardziej wysokiego"
+    },
+    {
+      "start": 3782.76,
+      "end": 3785.46,
+      "text": "poziomu. Profesorskie"
+    },
+    {
+      "start": 3785.46,
       "end": 3786.8,
-      "text": "Nie jest to moja muzyka, ale nie sposób odmówić Soen ich własnego charakteru, ani tym bardziej wysokiego poziomu. Profesorskie to granie."
+      "text": "to granie."
     },
     {
       "start": 3786.8,
+      "end": 3788.73,
+      "text": "W Gdańsku, Poznaniu,"
+    },
+    {
+      "start": 3788.73,
+      "end": 3790.37,
+      "text": "Lublinie i Bielsku"
+    },
+    {
+      "start": 3790.37,
+      "end": 3791.92,
+      "text": "Białej towarzyszyć"
+    },
+    {
+      "start": 3791.92,
+      "end": 3793.48,
+      "text": "im będą Only Sons,"
+    },
+    {
+      "start": 3793.48,
+      "end": 3795.23,
+      "text": "czyli ciekawy polski"
+    },
+    {
+      "start": 3795.23,
+      "end": 3796.7,
+      "text": "zespół z zupełnie"
+    },
+    {
+      "start": 3796.7,
+      "end": 3798.33,
+      "text": "niepolską muzyką,"
+    },
+    {
+      "start": 3798.33,
+      "end": 3799.51,
+      "text": "bo trochę w tym"
+    },
+    {
+      "start": 3799.51,
+      "end": 3801.55,
+      "text": "Southern Metalu, a"
+    },
+    {
+      "start": 3801.55,
+      "end": 3802.82,
+      "text": "trochę ponurego"
+    },
+    {
+      "start": 3802.82,
+      "end": 3804.9,
+      "text": "Gothic Dumu o zdecydowanie"
+    },
+    {
+      "start": 3804.9,
       "end": 3807.24,
-      "text": "W Gdańsku, Poznaniu, Lublinie i Bielsku Białej towarzyszyć im będą Only Sons, czyli ciekawy polski zespół z zupełnie niepolską muzyką, bo trochę w tym Southern Metalu, a trochę ponurego Gothic Dumu o zdecydowanie europejskim pochodzeniu."
+      "text": "europejskim pochodzeniu."
     },
     {
       "start": 3807.24,
-      "end": 3825.78,
-      "text": "Start wspólnej trasy Soen i Only Sons to 21 sierpnia, koniec 25 sierpnia, 24 zespoły robią sobie dzień wolny, a gdzie i kiedy dokładnie wystąpią poszukacie sobie w internetach."
+      "end": 3809.29,
+      "text": "Start wspólnej trasy"
     },
     {
-      "start": 3837.24,
-      "end": 3867.22,
-      "text": "Dziękuje za oglądanie."
+      "start": 3809.29,
+      "end": 3810.95,
+      "text": "Soen i Only Sons to"
     },
     {
-      "start": 3867.24,
-      "end": 3891.24,
-      "text": "Dziękuje za oglądanie."
+      "start": 3810.95,
+      "end": 3813.45,
+      "text": "21 sierpnia, koniec"
     },
     {
-      "start": 3936.48,
-      "end": 3939.46,
-      "text": "Day, I will do as you say"
+      "start": 3813.45,
+      "end": 3816.68,
+      "text": "25 sierpnia, 24 zespoły"
     },
     {
-      "start": 3939.46,
-      "end": 3943.96,
-      "text": "Cracking my armor to break away"
+      "start": 3816.68,
+      "end": 3818.38,
+      "text": "robią sobie dzień"
     },
     {
-      "start": 3943.96,
-      "end": 3948.66,
-      "text": "All blame, I assign to myself"
+      "start": 3818.38,
+      "end": 3819.95,
+      "text": "wolny, a gdzie i"
     },
     {
-      "start": 3948.66,
-      "end": 3954.5,
-      "text": "Carrying the guilt of a tomb we share"
+      "start": 3819.95,
+      "end": 3821.54,
+      "text": "kiedy dokładnie"
     },
     {
-      "start": 4094.34,
-      "end": 4099.16,
-      "text": "Bogusławice zapraszają na szóstą edycję True Metal Camp."
+      "start": 3821.54,
+      "end": 3823.56,
+      "text": "wystąpią poszukacie"
     },
     {
-      "start": 4099.72,
+      "start": 3823.56,
+      "end": 3826.08,
+      "text": "sobie w internetach."
+    },
+    {
+      "start": 4095.42,
+      "end": 4096.94,
+      "text": "Bogusławice zapraszają"
+    },
+    {
+      "start": 4096.94,
+      "end": 4098.04,
+      "text": "na szóstą edycję"
+    },
+    {
+      "start": 4098.04,
+      "end": 4099.77,
+      "text": "True Metal Camp tymi"
+    },
+    {
+      "start": 4099.77,
       "end": 4100.8,
-      "text": "Tymi oto słowy."
+      "text": "oto słowy."
     },
     {
-      "start": 4101.56,
-      "end": 4103.2,
-      "text": "Czysty, nieokiełznany metal."
+      "start": 4101.2,
+      "end": 4102.48,
+      "text": "Czysty, nieokiełznany"
     },
     {
-      "start": 4103.46,
-      "end": 4105.48,
-      "text": "Zero barier, zero kompromisów."
+      "start": 4102.48,
+      "end": 4103.82,
+      "text": "metal. Zero barier,"
+    },
+    {
+      "start": 4103.82,
+      "end": 4104.8,
+      "text": "zero kompromisów."
     },
     {
       "start": 4105.68,
-      "end": 4108.66,
-      "text": "Łomot, który rozsadza uszy i dusze."
+      "end": 4107.11,
+      "text": "Łomot, który rozsadza"
     },
     {
-      "start": 4109.66,
-      "end": 4112.14,
-      "text": "Kameralnie, ale na pewno niespokojnie."
+      "start": 4107.11,
+      "end": 4109.97,
+      "text": "uszy i dusze. Kameralnie,"
     },
     {
-      "start": 4113.02,
-      "end": 4114.9,
-      "text": "Szukasz food trucków z bubble tea?"
+      "start": 4109.97,
+      "end": 4112.12,
+      "text": "ale na pewno niespokojnie."
     },
     {
-      "start": 4115.8,
+      "start": 4113,
+      "end": 4113.68,
+      "text": "Szukasz food trucków"
+    },
+    {
+      "start": 4113.68,
+      "end": 4115.33,
+      "text": "z bubble tea? Nie"
+    },
+    {
+      "start": 4115.33,
       "end": 4116.48,
-      "text": "Nie tutaj."
+      "text": "tutaj."
     },
     {
-      "start": 4117.48,
+      "start": 4117.46,
+      "end": 4118.69,
+      "text": "Surowość i obozowość"
+    },
+    {
+      "start": 4118.69,
       "end": 4120.48,
-      "text": "Surowość i obozowość to nasz klimat."
+      "text": "to nasz klimat."
     },
     {
       "start": 4121.52,
-      "end": 4125.02,
-      "text": "A do tego po koncertach obiecują ognisko i jam session."
+      "end": 4122.26,
+      "text": "A do tego po koncertach"
     },
     {
-      "start": 4125.52,
-      "end": 4132.52,
-      "text": "Fajnie, bardzo lubię takie festiwaliki, które są właściwie rozszerzonymi spotkaniami przyjaciół."
+      "start": 4122.26,
+      "end": 4123.74,
+      "text": "obiecują ognisko i"
     },
     {
-      "start": 4133.24,
+      "start": 4123.74,
+      "end": 4125.04,
+      "text": "jam session."
+    },
+    {
+      "start": 4125.42,
+      "end": 4126.79,
+      "text": "Fajnie, bardzo lubię"
+    },
+    {
+      "start": 4126.79,
+      "end": 4128.18,
+      "text": "takie festiwaliki,"
+    },
+    {
+      "start": 4128.18,
+      "end": 4129.75,
+      "text": "które są właściwie"
+    },
+    {
+      "start": 4129.75,
+      "end": 4131.58,
+      "text": "rozszerzonymi spotkaniami"
+    },
+    {
+      "start": 4131.58,
+      "end": 4132.54,
+      "text": "przyjaciół."
+    },
+    {
+      "start": 4133.26,
+      "end": 4135.44,
+      "text": "Zagrają m.in. Okrutnik,"
+    },
+    {
+      "start": 4135.44,
       "end": 4137.66,
-      "text": "Zagrają m.in. Okrutnik, Prosecutor i Witur."
+      "text": "Prosecutor i Witur."
     },
     {
       "start": 4138.34,
-      "end": 4140.52,
-      "text": "True Metal Camp odbędzie się w Bogusłowicach."
+      "end": 4139.57,
+      "text": "True Metal Camp odbędzie"
     },
     {
-      "start": 4141.36,
+      "start": 4139.57,
+      "end": 4141.26,
+      "text": "się w Bogusłowicach,"
+    },
+    {
+      "start": 4141.26,
+      "end": 4142.36,
+      "text": "to niedaleko Piotrkowa"
+    },
+    {
+      "start": 4142.36,
       "end": 4143.36,
-      "text": "To niedaleko Piotrkowa Trybunalskiego."
+      "text": "Trybunalskiego."
     },
     {
-      "start": 4143.54,
-      "end": 4145.76,
-      "text": "22 sierpnia."
+      "start": 4143.36,
+      "end": 4146.78,
+      "text": "22 sierpnia. I uwaga,"
     },
     {
-      "start": 4145.76,
-      "end": 4150.76,
-      "text": "I uwaga, 22 sierpnia dzieje się coś dziwnego."
+      "start": 4146.78,
+      "end": 4149.51,
+      "text": "22 sierpnia dzieje"
     },
     {
-      "start": 4151.52,
-      "end": 4155.28,
-      "text": "Nie wiem, może to retrogradacja Merkurego."
+      "start": 4149.51,
+      "end": 4151.56,
+      "text": "się coś dziwnego."
     },
     {
-      "start": 4155.4,
-      "end": 4158.34,
-      "text": "Może kometa zbliża się do Ziemi."
+      "start": 4151.72,
+      "end": 4153.17,
+      "text": "Nie wiem, może to"
     },
     {
-      "start": 4159.12,
-      "end": 4164.32,
-      "text": "Ale właśnie tego dnia odbywa się w Polsce tyle imprez metalowych,"
+      "start": 4153.17,
+      "end": 4155.45,
+      "text": "retrogradacja Merkurego,"
     },
     {
-      "start": 4164.48,
+      "start": 4155.45,
+      "end": 4156.97,
+      "text": "może kometa zbliża"
+    },
+    {
+      "start": 4156.97,
+      "end": 4158.36,
+      "text": "się do Ziemi."
+    },
+    {
+      "start": 4159.1,
+      "end": 4160.24,
+      "text": "Ale właśnie tego dnia"
+    },
+    {
+      "start": 4160.24,
+      "end": 4161.91,
+      "text": "odbywa się w Polsce"
+    },
+    {
+      "start": 4161.91,
+      "end": 4164.31,
+      "text": "tyle imprez metalowych,"
+    },
+    {
+      "start": 4164.31,
+      "end": 4165.84,
+      "text": "że prawdopodobnie"
+    },
+    {
+      "start": 4165.84,
       "end": 4167.6,
-      "text": "że prawdopodobnie idziemy na rekord."
+      "text": "idziemy na rekord."
     },
     {
-      "start": 4168.2,
+      "start": 4168.24,
+      "end": 4169.61,
+      "text": "Wszystkich zapewne"
+    },
+    {
+      "start": 4169.61,
+      "end": 4170.81,
+      "text": "nie wymienię, no"
+    },
+    {
+      "start": 4170.81,
       "end": 4172.44,
-      "text": "Wszystkich zapewne nie wymienię, ale jedziemy dalej."
+      "text": "ale jedziemy dalej."
     },
     {
-      "start": 4172.84,
-      "end": 4179.52,
-      "text": "A zatem 22 sierpnia właśnie pod Pałacem w Łęce Wielkiej,"
+      "start": 4173.6,
+      "end": 4175.11,
+      "text": "A zatem 22 sierpnia"
     },
     {
-      "start": 4180.22,
-      "end": 4182.5,
-      "text": "to na zachodzie Polski, blisko Leszna,"
+      "start": 4175.11,
+      "end": 4177.4,
+      "text": "właśnie pod pałacem"
+    },
+    {
+      "start": 4177.4,
+      "end": 4179.75,
+      "text": "w Łęce Wielkiej, to"
+    },
+    {
+      "start": 4179.75,
+      "end": 4181.4,
+      "text": "na zachodzie Polski,"
+    },
+    {
+      "start": 4181.4,
+      "end": 4182.48,
+      "text": "blisko Leszna,"
     },
     {
       "start": 4183.18,
-      "end": 4189.24,
-      "text": "odbędzie się impreza o zagranicznej nazwie 666 United Metal Fest."
+      "end": 4184.35,
+      "text": "odbędzie się impreza"
     },
     {
-      "start": 4190.36,
-      "end": 4196.24,
-      "text": "Nazwa taka sobie, ale lokalizacja kusi, a skład całkiem, całkiem."
+      "start": 4184.35,
+      "end": 4186.32,
+      "text": "o zagranicznej nazwie"
+    },
+    {
+      "start": 4186.32,
+      "end": 4188.39,
+      "text": "666 United Metal"
+    },
+    {
+      "start": 4188.39,
+      "end": 4189.24,
+      "text": "Fest."
+    },
+    {
+      "start": 4190.24,
+      "end": 4191.79,
+      "text": "Nazwa taka sobie,"
+    },
+    {
+      "start": 4191.79,
+      "end": 4193.71,
+      "text": "ale lokalizacja kusi,"
+    },
+    {
+      "start": 4193.71,
+      "end": 4195.15,
+      "text": "a skład całkiem,"
+    },
+    {
+      "start": 4195.15,
+      "end": 4196.22,
+      "text": "całkiem."
     },
     {
       "start": 4196.58,
-      "end": 4199.96,
-      "text": "W tym legenda polskiego black metalu zespół Arkona,"
+      "end": 4197.93,
+      "text": "W tym legenda polskiego"
     },
     {
-      "start": 4200.3,
-      "end": 4205.34,
-      "text": "który od zawsze robi swoje i po swojemu od zawsze dobrze."
+      "start": 4197.93,
+      "end": 4199.39,
+      "text": "black metalu zespół"
     },
     {
-      "start": 4206.24,
-      "end": 4209.74,
-      "text": "Mniej jest ceniony od wielu słabszych,"
+      "start": 4199.39,
+      "end": 4200.95,
+      "text": "Arcona, który od"
     },
     {
-      "start": 4209.9,
-      "end": 4212.86,
-      "text": "ale za to rozpychających się łokciami kapel."
+      "start": 4200.95,
+      "end": 4202.77,
+      "text": "zawsze robi swoje i"
+    },
+    {
+      "start": 4202.77,
+      "end": 4203.82,
+      "text": "po swojemu od"
+    },
+    {
+      "start": 4203.82,
+      "end": 4205.32,
+      "text": "zawsze dobrze."
+    },
+    {
+      "start": 4206.32,
+      "end": 4206.92,
+      "text": "Mniej jest ceniony"
+    },
+    {
+      "start": 4206.92,
+      "end": 4208.72,
+      "text": "od wielu słabszych,"
+    },
+    {
+      "start": 4208.72,
+      "end": 4210.82,
+      "text": "ale za to rozpychających"
+    },
+    {
+      "start": 4210.82,
+      "end": 4212.84,
+      "text": "się łokciami kapel."
     },
     {
       "start": 4214.24,
-      "end": 4216.24,
-      "text": "I ja to rozumiem i nie rozumiem zarazem."
+      "end": 4214.36,
+      "text": "I ja to rozumiem i"
     },
     {
-      "start": 4217.04,
-      "end": 4219.24,
-      "text": "Tak czy owak Arkonę polecam."
+      "start": 4214.36,
+      "end": 4215.42,
+      "text": "nie rozumiem."
     },
     {
-      "start": 4220.24,
-      "end": 4223.3,
-      "text": "Do tego m.in. Dumas ze Słowacji,"
+      "start": 4215.42,
+      "end": 4217.19,
+      "text": "Rozumiem zarazem,"
     },
     {
-      "start": 4224.28,
-      "end": 4228.24,
-      "text": "Odium Humanii, Generis Dymna Lotwa i parę innych."
+      "start": 4217.19,
+      "end": 4218.85,
+      "text": "tak czy owak Arkonę"
     },
     {
-      "start": 4230.04,
-      "end": 4233.98,
-      "text": "A jeżeli pałac to dla Was propozycja zbyt skromna,"
+      "start": 4218.85,
+      "end": 4219.96,
+      "text": "polecam."
     },
     {
-      "start": 4234.14,
+      "start": 4220.22,
+      "end": 4222,
+      "text": "Do tego m.in. Dumas"
+    },
+    {
+      "start": 4222,
+      "end": 4224.07,
+      "text": "ze Słowacji, Odium"
+    },
+    {
+      "start": 4224.07,
+      "end": 4226.92,
+      "text": "Humani, Generis, Dymna"
+    },
+    {
+      "start": 4226.92,
+      "end": 4228.98,
+      "text": "Lotwa i parę innych."
+    },
+    {
+      "start": 4229.98,
+      "end": 4230.58,
+      "text": "A jeżeli pałac to"
+    },
+    {
+      "start": 4230.58,
+      "end": 4232.4,
+      "text": "dla Was propozycja"
+    },
+    {
+      "start": 4232.4,
+      "end": 4234.26,
+      "text": "zbyt skromna, może"
+    },
+    {
+      "start": 4234.26,
+      "end": 4235.22,
+      "text": "skusicie się na"
+    },
+    {
+      "start": 4235.22,
+      "end": 4237.08,
+      "text": "festiwal, który odbędzie"
+    },
+    {
+      "start": 4237.08,
       "end": 4238.2,
-      "text": "może skusicie się na festiwal, który odbędzie się na zamku."
+      "text": "się na zamku."
     },
     {
-      "start": 4239.04,
+      "start": 4239.02,
+      "end": 4239.94,
+      "text": "Konkretnie na zamku"
+    },
+    {
+      "start": 4239.94,
       "end": 4241.44,
-      "text": "Konkretnie na zamku w Ćmielowie."
+      "text": "w Ćmielowie."
     },
     {
       "start": 4241.88,
-      "end": 4244.6,
-      "text": "Impreza nazywa się Sound of the Ages"
+      "end": 4243.16,
+      "text": "Impreza nazywa się"
     },
     {
-      "start": 4244.6,
-      "end": 4248.1,
-      "text": "i ma formułę, która każe nam patrzeć i wsłuchiwać się"
+      "start": 4243.16,
+      "end": 4244.38,
+      "text": "Sound of the Ages i"
     },
     {
-      "start": 4248.1,
+      "start": 4244.38,
+      "end": 4245.66,
+      "text": "ma formułę, która"
+    },
+    {
+      "start": 4245.66,
+      "end": 4246.89,
+      "text": "każe nam patrzeć i"
+    },
+    {
+      "start": 4246.89,
+      "end": 4247.98,
+      "text": "wsłuchiwać się w"
+    },
+    {
+      "start": 4247.98,
+      "end": 4249.62,
+      "text": "przeszłość ciężkiego"
+    },
+    {
+      "start": 4249.62,
       "end": 4250.44,
-      "text": "w przeszłość ciężkiego grania."
+      "text": "grania."
     },
     {
       "start": 4251.2,
-      "end": 4253.74,
-      "text": "Nie wiem, czy taki pomysł ma przyszłość,"
+      "end": 4251.99,
+      "text": "Nie wiem, czy taki"
     },
     {
-      "start": 4253.86,
+      "start": 4251.99,
+      "end": 4253.92,
+      "text": "pomysł ma przyszłość,"
+    },
+    {
+      "start": 4253.92,
+      "end": 4255.56,
+      "text": "chociaż skład zacny"
+    },
+    {
+      "start": 4255.56,
+      "end": 4257,
+      "text": "trzeba przyznać i"
+    },
+    {
+      "start": 4257,
       "end": 4258.78,
-      "text": "chociaż skład zacny trzeba przyznać i międzynarodowy."
+      "text": "międzynarodowy."
     },
     {
-      "start": 4259.48,
+      "start": 4259.52,
+      "end": 4260.05,
+      "text": "A więc m.in."
+    },
+    {
+      "start": 4260.05,
       "end": 4261.66,
-      "text": "A więc m.in. Michael Schenker."
+      "text": "Michael Schenker."
     },
     {
-      "start": 4262.32,
-      "end": 4265.16,
-      "text": "Fantastyczny gitarzysta z pierwszego składu Scorpions,"
+      "start": 4262.3,
+      "end": 4263.2,
+      "text": "Fantastyczny gitarzysta"
     },
     {
-      "start": 4265.28,
+      "start": 4263.2,
+      "end": 4264.39,
+      "text": "z pierwszego składu"
+    },
+    {
+      "start": 4264.39,
+      "end": 4265.23,
+      "text": "Scorpions, a"
+    },
+    {
+      "start": 4265.23,
+      "end": 4266.42,
+      "text": "później oczywiście"
+    },
+    {
+      "start": 4266.42,
       "end": 4266.86,
-      "text": "a później oczywiście UFO."
+      "text": "UFO."
     },
     {
-      "start": 4267.76,
-      "end": 4271,
-      "text": "Do tego zespół Nazaret oraz Masterplan,"
+      "start": 4266.86,
+      "end": 4269.05,
+      "text": "Do tego zespół Nazaret"
     },
     {
-      "start": 4271.2,
-      "end": 4276.26,
-      "text": "który na początku XXI wieku wypączkował z Halloween."
+      "start": 4269.05,
+      "end": 4270.82,
+      "text": "oraz Masterplan,"
     },
     {
-      "start": 4277.22,
-      "end": 4281.32,
-      "text": "Dla fanów tradycji ten festiwal,"
+      "start": 4270.82,
+      "end": 4272.55,
+      "text": "który na początku"
     },
     {
-      "start": 4281.48,
-      "end": 4284.48,
-      "text": "Sound of the Ages, to na pewno kusząca propozycja."
+      "start": 4272.55,
+      "end": 4274.68,
+      "text": "XXI wieku wypączkował"
     },
     {
-      "start": 4286.48,
-      "end": 4289.2,
-      "text": "Jak już wspominałem, odbędzie się na zamku w Ćmielowie"
+      "start": 4274.68,
+      "end": 4276.3,
+      "text": "z Halloween."
     },
     {
-      "start": 4289.2,
-      "end": 4296.96,
-      "text": "22 sierpnia i tego samego dnia w Sosnowcu będzie miała miejsce impreza"
+      "start": 4277.3,
+      "end": 4278.26,
+      "text": "Dla fanów tradycji"
     },
     {
-      "start": 4296.96,
-      "end": 4301.68,
-      "text": "Hell in the Shell, co jest bardzo dobrą nazwą,"
+      "start": 4278.26,
+      "end": 4280.23,
+      "text": "ten festiwal Sound"
     },
     {
-      "start": 4302.1,
+      "start": 4280.23,
+      "end": 4281.84,
+      "text": "of the Ages to na"
+    },
+    {
+      "start": 4281.84,
+      "end": 4285.04,
+      "text": "pewno kusząca propozycja."
+    },
+    {
+      "start": 4286.18,
+      "end": 4287.96,
+      "text": "Jak już wspominałem,"
+    },
+    {
+      "start": 4287.96,
+      "end": 4289.65,
+      "text": "odbędzie się na zamku"
+    },
+    {
+      "start": 4289.65,
+      "end": 4291.98,
+      "text": "w Ćmielowie 22 sierpnia"
+    },
+    {
+      "start": 4291.98,
+      "end": 4293.46,
+      "text": "i tego samego dnia"
+    },
+    {
+      "start": 4293.46,
+      "end": 4295.05,
+      "text": "w Sosnowcu będzie"
+    },
+    {
+      "start": 4295.05,
+      "end": 4296.94,
+      "text": "miała miejsce impreza"
+    },
+    {
+      "start": 4296.94,
+      "end": 4299.36,
+      "text": "Hell in the Shell."
+    },
+    {
+      "start": 4299.92,
+      "end": 4301.69,
+      "text": "Co jest bardzo dobrą"
+    },
+    {
+      "start": 4301.69,
+      "end": 4303.35,
+      "text": "nazwą, bo zespoły"
+    },
+    {
+      "start": 4303.35,
+      "end": 4305.13,
+      "text": "zagrają w amfiteatrze"
+    },
+    {
+      "start": 4305.13,
       "end": 4306.34,
-      "text": "bo zespoły zagrają w amfiteatrze Muszelka."
+      "text": "Muszelka."
     },
     {
       "start": 4307.36,
-      "end": 4310.3,
-      "text": "Chociaż jakby to nazwać po naszemu, piekło w muszelce,"
+      "end": 4307.68,
+      "text": "Chociaż jakby to"
     },
     {
-      "start": 4310.3,
-      "end": 4316.22,
-      "text": "to też byłoby ładnie, bo już np. piekło w muszli"
+      "start": 4307.68,
+      "end": 4309.29,
+      "text": "nazwać po naszemu,"
     },
     {
-      "start": 4316.22,
-      "end": 4320.3,
-      "text": "mogłoby się nie za dobrze kojarzyć,"
+      "start": 4309.29,
+      "end": 4310.9,
+      "text": "piekło w muszelce,"
     },
     {
-      "start": 4320.98,
-      "end": 4325.08,
-      "text": "a zatem Sosnowiec zaprasza na Hell in the Shell,"
+      "start": 4310.9,
+      "end": 4312.82,
+      "text": "to też byłoby ładnie,"
     },
     {
-      "start": 4325.76,
+      "start": 4312.82,
+      "end": 4315.26,
+      "text": "bo już np. piekło w"
+    },
+    {
+      "start": 4315.26,
+      "end": 4317.69,
+      "text": "muszli mogłoby się"
+    },
+    {
+      "start": 4317.69,
+      "end": 4320.86,
+      "text": "nie za dobrze kojarzyć."
+    },
+    {
+      "start": 4320.86,
+      "end": 4322.45,
+      "text": "A zatem Sosnowiec"
+    },
+    {
+      "start": 4322.45,
+      "end": 4324.29,
+      "text": "zaprasza na Hell in"
+    },
+    {
+      "start": 4324.29,
+      "end": 4325.61,
+      "text": "the Shell, na"
+    },
+    {
+      "start": 4325.61,
+      "end": 4327.02,
+      "text": "którym spotkają się"
+    },
+    {
+      "start": 4327.02,
+      "end": 4328.97,
+      "text": "nie lada marki rodzimej"
+    },
+    {
+      "start": 4328.97,
       "end": 4329.44,
-      "text": "na którym spotkają się nie lada marki rodzimej sceny."
+      "text": "sceny."
     },
     {
       "start": 4330.08,
+      "end": 4331.9,
+      "text": "Vader, Hate, Frontside"
+    },
+    {
+      "start": 4331.9,
       "end": 4333.54,
-      "text": "Vader, Hate, Frontside i Die Disease."
+      "text": "i Die Disease."
     },
     {
-      "start": 4334.16,
-      "end": 4337.76,
-      "text": "Swoją drogą Vader trochę jeździ po Polsce w tym sezonie"
+      "start": 4333.54,
+      "end": 4335.42,
+      "text": "Swoją drogą w Vader..."
     },
     {
-      "start": 4337.76,
+      "start": 4335.42,
+      "end": 4336.45,
+      "text": "Trochę jeździ po"
+    },
+    {
+      "start": 4336.45,
+      "end": 4337.78,
+      "text": "Polsce w tym sezonie"
+    },
+    {
+      "start": 4337.78,
+      "end": 4339.67,
+      "text": "i pod szyldem piekielne"
+    },
+    {
+      "start": 4339.67,
       "end": 4340.2,
-      "text": "i pod szyldem piekielne lato."
+      "text": "lato."
     },
     {
-      "start": 4340.92,
+      "start": 4340.84,
+      "end": 4342.4,
+      "text": "Pojawi się też w sierpniu"
+    },
+    {
+      "start": 4342.4,
       "end": 4344.88,
-      "text": "Pojawi się też w sierpniu w paru innych miastach."
+      "text": "w paru innych miastach."
     },
     {
       "start": 4345.06,
-      "end": 4349.94,
-      "text": "21 zielonej górze, 23 w Skarżysku Kamiennej,"
+      "end": 4347.08,
+      "text": "21. w Zielonej Górze,"
     },
     {
-      "start": 4350.22,
+      "start": 4347.08,
+      "end": 4350.5,
+      "text": "23. w Skarżysku Kamiennej,"
+    },
+    {
+      "start": 4350.5,
+      "end": 4352.58,
+      "text": "28. sierpnia w Gdyni"
+    },
+    {
+      "start": 4352.58,
+      "end": 4355.53,
+      "text": "i 29. w Szczecinku"
+    },
+    {
+      "start": 4355.53,
       "end": 4357.84,
-      "text": "28 sierpnia w Gdyni i 29 w Szczecinku na Materia Fest,"
+      "text": "na Materia Fest."
     },
     {
       "start": 4357.96,
+      "end": 4359.06,
+      "text": "Ale nie uprzedzajmy"
+    },
+    {
+      "start": 4359.06,
+      "end": 4360.12,
+      "text": "faktów, bo wciąż"
+    },
+    {
+      "start": 4360.12,
       "end": 4361.72,
-      "text": "ale nie uprzedzajmy faktów, bo wciąż jeszcze nie skończyłem"
+      "text": "jeszcze nie skończyłem"
     },
     {
       "start": 4361.72,
-      "end": 4364.34,
-      "text": "opowiadać o wszystkim, co będzie się działo"
+      "end": 4362.3,
+      "text": "opowiadać"
     },
     {
-      "start": 4364.34,
+      "start": 4362.3,
+      "end": 4363.5,
+      "text": "o wszystkim, co"
+    },
+    {
+      "start": 4363.5,
+      "end": 4364.76,
+      "text": "będzie się działo w"
+    },
+    {
+      "start": 4364.76,
+      "end": 4366.73,
+      "text": "tę jedną sobotę, 22."
+    },
+    {
+      "start": 4366.73,
       "end": 4367.78,
-      "text": "w tę jedną sobotę, 22 sierpnia."
+      "text": "sierpnia."
     },
     {
       "start": 4368.36,
-      "end": 4371.06,
-      "text": "Muszę jednak na chwilę odetchnąć,"
+      "end": 4369.16,
+      "text": "Muszę jednak na"
     },
     {
-      "start": 4371.94,
+      "start": 4369.16,
+      "end": 4371.18,
+      "text": "chwilę odetchnąć, a"
+    },
+    {
+      "start": 4371.18,
       "end": 4374.22,
-      "text": "a zatem przerwa na piosenki."
+      "text": "zatem przerwa na piosenki."
     },
     {
-      "start": 4374.58,
-      "end": 4376.86,
-      "text": "Przed Wami bardzo stara Arkona"
+      "start": 4374.6,
+      "end": 4375.63,
+      "text": "Przed Wami bardzo"
     },
     {
-      "start": 4376.86,
-      "end": 4379.32,
-      "text": "i całkiem nowy jeszcze Vader."
+      "start": 4375.63,
+      "end": 4377.41,
+      "text": "stara Arkona i całkiem"
     },
     {
-      "start": 4379.32,
-      "end": 4381.76,
-      "text": "Zdjęcia i montaż"
+      "start": 4377.41,
+      "end": 4379.3,
+      "text": "nowy jeszcze Vader."
     },
     {
-      "start": 4787.08,
-      "end": 4795.3,
-      "text": "Wracamy do ciężko na sercu i do tej magicznej daty, 22 sierpnia."
+      "start": 4379.3,
+      "end": 4380.1,
+      "text": "Dzień dobry."
     },
     {
-      "start": 4795.3,
-      "end": 4805.52,
-      "text": "Nie wiem, czy uda mi się wtedy dotrzeć na drugi koniec Polski, ale bardzo chciałbym zobaczyć pierwszą edycję Sundice Festival w nowej lokalizacji."
+      "start": 4788.09,
+      "end": 4789.51,
+      "text": "Wracamy do Ciężko"
     },
     {
-      "start": 4806.44,
-      "end": 4814.3,
-      "text": "Tak, to jest właśnie ta impreza, z której zrezygnowało dobre miasto w przypływie politycznie napędzanej paniki moralnej."
+      "start": 4789.51,
+      "end": 4790.75,
+      "text": "na sercu i do tej"
     },
     {
-      "start": 4815.68,
-      "end": 4820.32,
-      "text": "Współczuje mieszkańcom dobrego miasta z traty fajnego festiwalu."
+      "start": 4790.75,
+      "end": 4793.44,
+      "text": "magicznej daty, 22"
     },
     {
-      "start": 4820.32,
-      "end": 4827.6,
-      "text": "Gratuluję Olsztynowi, który z racji swojej historii aż prosił się o jakiś metalowy festiwal."
+      "start": 4793.44,
+      "end": 4795.29,
+      "text": "sierpnia."
     },
     {
-      "start": 4828.2,
-      "end": 4831.48,
-      "text": "Budowanie czegoś od zera to wiadomo, krew pod i łzy."
+      "start": 4795.99,
+      "end": 4796.34,
+      "text": "Nie wiem, czy uda"
     },
     {
-      "start": 4832.44,
-      "end": 4842.02,
-      "text": "A tu proszę, ktoś im wręczył gotowy Sundice na tacy w dodatku z darmową promocją na ogólnopolską skalę."
+      "start": 4796.34,
+      "end": 4797.53,
+      "text": "mi się wtedy dotrzeć"
     },
     {
-      "start": 4842.02,
-      "end": 4855.64,
-      "text": "A zatem 22 sierpnia w Olsztyńskim Amfiteatrze, pięknym miejscu, zagrają Gorycz, Damnation, Blinded 23, Crystagon i Furia."
+      "start": 4797.53,
+      "end": 4798.45,
+      "text": "na drugi koniec"
     },
     {
-      "start": 4856.2,
-      "end": 4861.5,
-      "text": "Świetny skład i oby był początkiem nowego rozdziału i dla festiwalu i dla miasta."
+      "start": 4798.45,
+      "end": 4799.68,
+      "text": "Polski, ale bardzo"
     },
     {
-      "start": 4861.5,
-      "end": 4863.9,
-      "text": "Muzyka"
+      "start": 4799.68,
+      "end": 4801.53,
+      "text": "chciałbym zobaczyć"
     },
     {
-      "start": 5579.4,
+      "start": 4801.53,
+      "end": 4802.65,
+      "text": "pierwszą edycję"
+    },
+    {
+      "start": 4802.65,
+      "end": 4803.93,
+      "text": "Sundice Festival w"
+    },
+    {
+      "start": 4803.93,
+      "end": 4805.51,
+      "text": "nowej lokalizacji."
+    },
+    {
+      "start": 4806.43,
+      "end": 4806.73,
+      "text": "Tak, to jest"
+    },
+    {
+      "start": 4806.73,
+      "end": 4808.04,
+      "text": "właśnie ta impreza,"
+    },
+    {
+      "start": 4808.04,
+      "end": 4809.69,
+      "text": "z której zrezygnowało"
+    },
+    {
+      "start": 4809.69,
+      "end": 4810.93,
+      "text": "Dobre Miasto w"
+    },
+    {
+      "start": 4810.93,
+      "end": 4812.74,
+      "text": "przypływie politycznie"
+    },
+    {
+      "start": 4812.74,
+      "end": 4814.32,
+      "text": "napędzanej paniki"
+    },
+    {
+      "start": 4814.32,
+      "end": 4814.93,
+      "text": "moralnej."
+    },
+    {
+      "start": 4814.93,
+      "end": 4816.84,
+      "text": "Współczuje mieszkańcom"
+    },
+    {
+      "start": 4816.84,
+      "end": 4818.53,
+      "text": "Dobrego Miasta z traty"
+    },
+    {
+      "start": 4818.53,
+      "end": 4820.33,
+      "text": "fajnego festiwalu."
+    },
+    {
+      "start": 4820.47,
+      "end": 4822.12,
+      "text": "Gratuluję Olsztynowi,"
+    },
+    {
+      "start": 4822.12,
+      "end": 4823.64,
+      "text": "który z racji swojej"
+    },
+    {
+      "start": 4823.64,
+      "end": 4824.98,
+      "text": "historii aż prosił"
+    },
+    {
+      "start": 4824.98,
+      "end": 4826.47,
+      "text": "się o jakiś metalowy"
+    },
+    {
+      "start": 4826.47,
+      "end": 4827.59,
+      "text": "festiwal."
+    },
+    {
+      "start": 4828.21,
+      "end": 4828.95,
+      "text": "Budowanie czegoś od"
+    },
+    {
+      "start": 4828.95,
+      "end": 4830.65,
+      "text": "zera to wiadomo, krew,"
+    },
+    {
+      "start": 4830.65,
+      "end": 4831.47,
+      "text": "pot i łzy."
+    },
+    {
+      "start": 4832.43,
+      "end": 4833.22,
+      "text": "A tu proszę, ktoś"
+    },
+    {
+      "start": 4833.22,
+      "end": 4834.95,
+      "text": "im wręczył gotowy"
+    },
+    {
+      "start": 4834.95,
+      "end": 4836.57,
+      "text": "Sundice na tacy w"
+    },
+    {
+      "start": 4836.57,
+      "end": 4838.34,
+      "text": "dodatku z darmową"
+    },
+    {
+      "start": 4838.34,
+      "end": 4840.84,
+      "text": "promocją na ogólnopolską"
+    },
+    {
+      "start": 4840.84,
+      "end": 4842.01,
+      "text": "skalę."
+    },
+    {
+      "start": 4842.01,
+      "end": 4844.27,
+      "text": "A zatem 22 sierpnia"
+    },
+    {
+      "start": 4844.27,
+      "end": 4847.07,
+      "text": "w Olsztyńskim Amfiteatrze,"
+    },
+    {
+      "start": 4847.07,
+      "end": 4849.02,
+      "text": "pięknym miejscu,"
+    },
+    {
+      "start": 4849.02,
+      "end": 4850.61,
+      "text": "zagrają Gorycz,"
+    },
+    {
+      "start": 4850.61,
+      "end": 4852.59,
+      "text": "Damnation, Blinded"
+    },
+    {
+      "start": 4852.59,
+      "end": 4854.76,
+      "text": "23, Crystagony i"
+    },
+    {
+      "start": 4854.76,
+      "end": 4855.63,
+      "text": "Furia."
+    },
+    {
+      "start": 4856.19,
+      "end": 4856.93,
+      "text": "Świetny skład i oby"
+    },
+    {
+      "start": 4856.93,
+      "end": 4858.51,
+      "text": "był początkiem nowego"
+    },
+    {
+      "start": 4858.51,
+      "end": 4859.58,
+      "text": "rozdziału i dla"
+    },
+    {
+      "start": 4859.58,
+      "end": 4861.51,
+      "text": "festiwalu i dla miasta."
+    },
+    {
+      "start": 4861.51,
+      "end": 4861.99,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 5579.48,
+      "end": 5580.85,
+      "text": "Max Kawalera niebawem"
+    },
+    {
+      "start": 5580.85,
+      "end": 5581.8,
+      "text": "chyba dostanie"
+    },
+    {
+      "start": 5581.8,
+      "end": 5583.38,
+      "text": "polskie obywatelstwo,"
+    },
+    {
+      "start": 5583.38,
+      "end": 5586.02,
+      "text": "ale nie, nie narzekam,"
+    },
+    {
+      "start": 5586.02,
+      "end": 5588.24,
+      "text": "niech wraca jak najczęściej,"
+    },
+    {
+      "start": 5588.24,
+      "end": 5589.78,
+      "text": "niech gra ze swoimi"
+    },
+    {
+      "start": 5589.78,
+      "end": 5591.5,
+      "text": "różnymi składami,"
+    },
+    {
+      "start": 5591.5,
+      "end": 5593.5,
+      "text": "tym bardziej, że znów"
+    },
+    {
+      "start": 5593.5,
+      "end": 5595.3,
+      "text": "jest w formie, więc"
+    },
+    {
+      "start": 5595.3,
+      "end": 5596.93,
+      "text": "nic tylko śpiewać z"
+    },
+    {
+      "start": 5596.93,
       "end": 5598.5,
-      "text": "Max Kawalera niebawem chyba dostanie polskie obywatelstwo, ale nie, nie narzekam, niech wraca jak najczęściej, niech gra ze swoimi różnymi składami, tym bardziej, że znów jest w formie, więc nic tylko śpiewać z nim i tańczyć."
+      "text": "nim i tańczyć."
     },
     {
       "start": 5598.5,
+      "end": 5600.58,
+      "text": "Pod koniec sierpnia"
+    },
+    {
+      "start": 5600.58,
+      "end": 5603.24,
+      "text": "Max przyjedzie na czele"
+    },
+    {
+      "start": 5603.24,
+      "end": 5605.12,
+      "text": "Soulfly, by zagrać"
+    },
+    {
+      "start": 5605.12,
+      "end": 5608.92,
+      "text": "24 w Poznaniu, 25 sierpnia"
+    },
+    {
+      "start": 5608.92,
+      "end": 5610.88,
+      "text": "w Warszawie i dzień"
+    },
+    {
+      "start": 5610.88,
       "end": 5613.48,
-      "text": "Pod koniec sierpnia Max przyjedzie na czele Soulfly, by zagrać 24 w Poznaniu, 25 sierpnia w Warszawie i dzień później w Krakowie."
+      "text": "później w Krakowie."
     },
     {
-      "start": 5613.48,
-      "end": 5622.56,
-      "text": "Muzyka"
+      "start": 5969.95,
+      "end": 5971.13,
+      "text": "Co my tam jeszcze w"
     },
     {
-      "start": 5639.81,
-      "end": 5667.13,
-      "text": "Dziękuje za oglądanie!"
+      "start": 5971.13,
+      "end": 5972.07,
+      "text": "sierpniu mamy?"
     },
     {
-      "start": 5969,
-      "end": 5990.86,
-      "text": "Co my tam jeszcze w sierpniu mamy? Na przykład polski przystanek trasy Demonizing Europe, w ramach której po starym kontynencie podróżują razem amerykański Condemned, turecki Molested Divinity oraz kolumbijski Imperial Execration."
+      "start": 5972.07,
+      "end": 5973.87,
+      "text": "Na przykład polski"
     },
     {
-      "start": 5990.86,
-      "end": 6002.42,
-      "text": "Wszystko to brutalny death metal, który testował będzie ściany i strop poczciwej chorzowskiej leśniczówki 26 sierpnia."
+      "start": 5973.87,
+      "end": 5974.97,
+      "text": "przystanek trasy"
     },
     {
-      "start": 6003.16,
-      "end": 6012.92,
-      "text": "Włoski Violentor po Polsce jeździł będzie z brazylijskim Hereticiem oraz z Kolosem i Paterna Spiritum."
+      "start": 5974.97,
+      "end": 5976.07,
+      "text": "Demonizing Europe,"
     },
     {
-      "start": 6012.92,
-      "end": 6022.72,
-      "text": "I będą to robić też pod koniec sierpnia, a to już rzecz dla tych, co lubią nurkować w najgłębsze czeluście podziemia."
+      "start": 5977.17,
+      "end": 5977.73,
+      "text": "w ramach której po"
     },
     {
-      "start": 6023.48,
-      "end": 6029.66,
-      "text": "Muzycznie różnie od thrash death metalu przez bardziej klasyczne granie po black."
+      "start": 5977.73,
+      "end": 5979.69,
+      "text": "starym kontynencie"
     },
     {
-      "start": 6030.26,
-      "end": 6039.36,
-      "text": "Zaczynają 28 sierpnia w Krakowie, potem w planach jest Bielsko-Biała, Gdańsk i Warszawa."
+      "start": 5979.69,
+      "end": 5982.13,
+      "text": "podróżują razem amerykański"
     },
     {
-      "start": 6039.36,
-      "end": 6049.2,
-      "text": "I jak co roku, pod koniec sierpnia zaprasza do siebie zespół de Materia, zaprasza do Szczecinka pod wieżę Bismarcka."
+      "start": 5982.13,
+      "end": 5983.07,
+      "text": "Condemned,"
     },
     {
-      "start": 6049.9,
-      "end": 6054.54,
-      "text": "Dwa dni, 28 i 29 dzień sierpnia."
+      "start": 5984.15,
+      "end": 5984.81,
+      "text": "turecki Molested"
     },
     {
-      "start": 6055.54,
-      "end": 6060.12,
-      "text": "Trochę gwiazd rodzimych ciężarów, m.in. Vader i Lipa Lee."
+      "start": 5984.81,
+      "end": 5987.53,
+      "text": "Divinity oraz kolumbijski"
     },
     {
-      "start": 6060.88,
-      "end": 6066.48,
-      "text": "Trochę gwiazd wschodzących, jak Aul's Woods Graves i Odium Humani Generis."
+      "start": 5987.53,
+      "end": 5990.07,
+      "text": "Imperial Execration."
     },
     {
-      "start": 6067.24,
-      "end": 6071.12,
-      "text": "Ale będzie też świeża krew z konkursu."
+      "start": 5991.17,
+      "end": 5991.61,
+      "text": "Wszystko to brutalny"
     },
     {
-      "start": 6071.86,
-      "end": 6076.98,
-      "text": "Będą też spotkania, a na jednym z nich ja będę opowiadał o tym i owym."
+      "start": 5991.61,
+      "end": 5993.23,
+      "text": "death metal, który"
     },
     {
-      "start": 6077.26,
-      "end": 6081.28,
-      "text": "Zatem zapraszam serdecznie do zadawania trudnych pytań."
+      "start": 5993.23,
+      "end": 5995.47,
+      "text": "testował będzie ściany"
     },
     {
-      "start": 6081.9,
-      "end": 6091.04,
-      "text": "No i będą oczywiście też gospodarze, czyli grupa de Materia, których właśnie teraz posłuchamy."
+      "start": 5995.47,
+      "end": 5996.75,
+      "text": "i strop poczciwej"
     },
     {
-      "start": 6303.34,
+      "start": 5996.75,
+      "end": 5998.91,
+      "text": "chorzowskiej leśniczówki"
+    },
+    {
+      "start": 5998.91,
+      "end": 6002.41,
+      "text": "26 sierpnia."
+    },
+    {
+      "start": 6003.17,
+      "end": 6004.21,
+      "text": "Włoski Violentor po"
+    },
+    {
+      "start": 6004.21,
+      "end": 6005.6,
+      "text": "Polsce jeździł"
+    },
+    {
+      "start": 6005.6,
+      "end": 6007.59,
+      "text": "będzie z brazylijskim"
+    },
+    {
+      "start": 6007.59,
+      "end": 6009.39,
+      "text": "Heretikiem oraz z"
+    },
+    {
+      "start": 6009.39,
+      "end": 6011.63,
+      "text": "Kolosem i Paterna"
+    },
+    {
+      "start": 6011.63,
+      "end": 6012.91,
+      "text": "Spiritum."
+    },
+    {
+      "start": 6013.75,
+      "end": 6014.43,
+      "text": "I będą to robić też"
+    },
+    {
+      "start": 6014.43,
+      "end": 6016.41,
+      "text": "pod koniec sierpnia,"
+    },
+    {
+      "start": 6016.41,
+      "end": 6017.86,
+      "text": "a to już rzecz dla"
+    },
+    {
+      "start": 6017.86,
+      "end": 6018.51,
+      "text": "tych,"
+    },
+    {
+      "start": 6018.69,
+      "end": 6019.89,
+      "text": "co lubią nurkować w"
+    },
+    {
+      "start": 6019.89,
+      "end": 6021.54,
+      "text": "najgłębsze czeluście"
+    },
+    {
+      "start": 6021.54,
+      "end": 6022.71,
+      "text": "podziemia."
+    },
+    {
+      "start": 6023.47,
+      "end": 6024.24,
+      "text": "Muzycznie różnie od"
+    },
+    {
+      "start": 6024.24,
+      "end": 6025.66,
+      "text": "trash death metalu"
+    },
+    {
+      "start": 6025.66,
+      "end": 6027.77,
+      "text": "przez bardziej klasyczne"
+    },
+    {
+      "start": 6027.77,
+      "end": 6028.13,
+      "text": "granie,"
+    },
+    {
+      "start": 6028.13,
+      "end": 6029.13,
+      "text": "po Black."
+    },
+    {
+      "start": 6030.13,
+      "end": 6032.31,
+      "text": "Zaczynają 28 sierpnia"
+    },
+    {
+      "start": 6032.31,
+      "end": 6034.03,
+      "text": "w Krakowie, potem w"
+    },
+    {
+      "start": 6034.03,
+      "end": 6036.76,
+      "text": "planach jest Bielsko-Biała,"
+    },
+    {
+      "start": 6036.76,
+      "end": 6039.37,
+      "text": "Gdańsk i Warszawa."
+    },
+    {
+      "start": 6040.51,
+      "end": 6040.79,
+      "text": "I jak co roku pod"
+    },
+    {
+      "start": 6040.79,
+      "end": 6042.86,
+      "text": "koniec sierpnia zaprasza"
+    },
+    {
+      "start": 6042.86,
+      "end": 6044.41,
+      "text": "do siebie zespół De"
+    },
+    {
+      "start": 6044.41,
+      "end": 6045.11,
+      "text": "Materia."
+    },
+    {
+      "start": 6045.57,
+      "end": 6047.25,
+      "text": "Zaprasza do Szczecinka"
+    },
+    {
+      "start": 6047.25,
+      "end": 6049.21,
+      "text": "pod wieżę Bismarcka."
+    },
+    {
+      "start": 6049.89,
+      "end": 6052.74,
+      "text": "Dwa dni, 28 i 29,"
+    },
+    {
+      "start": 6052.74,
+      "end": 6054.55,
+      "text": "dzień sierpnia."
+    },
+    {
+      "start": 6055.51,
+      "end": 6056.75,
+      "text": "Trochę gwiazd rodzimych"
+    },
+    {
+      "start": 6056.75,
+      "end": 6058.85,
+      "text": "ciężarów, m.in."
+    },
+    {
+      "start": 6058.85,
+      "end": 6060.11,
+      "text": "Vader i Lipa Lee."
+    },
+    {
+      "start": 6060.89,
+      "end": 6062.19,
+      "text": "Trochę gwiazd wschodzących,"
+    },
+    {
+      "start": 6062.19,
+      "end": 6063.47,
+      "text": "jak Owls, Woods,"
+    },
+    {
+      "start": 6063.47,
+      "end": 6064.99,
+      "text": "Graves i Odium Humanii"
+    },
+    {
+      "start": 6064.99,
+      "end": 6065.89,
+      "text": "Generis."
+    },
+    {
+      "start": 6065.89,
+      "end": 6068.74,
+      "text": "Ale będzie też świeża"
+    },
+    {
+      "start": 6068.74,
+      "end": 6071.13,
+      "text": "krew z konkursu."
+    },
+    {
+      "start": 6071.85,
+      "end": 6072.86,
+      "text": "Będą też spotkania,"
+    },
+    {
+      "start": 6072.86,
+      "end": 6074.22,
+      "text": "a na jednym z nich"
+    },
+    {
+      "start": 6074.22,
+      "end": 6075.76,
+      "text": "ja będę opowiadał o"
+    },
+    {
+      "start": 6075.76,
+      "end": 6076.99,
+      "text": "tym i owym."
+    },
+    {
+      "start": 6077.27,
+      "end": 6078.97,
+      "text": "Zatem zapraszam serdecznie"
+    },
+    {
+      "start": 6078.97,
+      "end": 6080.53,
+      "text": "do zadawania trudnych"
+    },
+    {
+      "start": 6080.53,
+      "end": 6081.27,
+      "text": "pytań."
+    },
+    {
+      "start": 6081.89,
+      "end": 6082.17,
+      "text": "No i będą"
+    },
+    {
+      "start": 6082.17,
+      "end": 6085.07,
+      "text": "oczywiście też gospodarze,"
+    },
+    {
+      "start": 6085.07,
+      "end": 6086.35,
+      "text": "czyli grupa De"
+    },
+    {
+      "start": 6086.35,
+      "end": 6087.37,
+      "text": "Materia,"
+    },
+    {
+      "start": 6088.37,
+      "end": 6089.29,
+      "text": "których właśnie"
+    },
+    {
+      "start": 6089.29,
+      "end": 6089.95,
+      "text": "teraz..."
+    },
+    {
+      "start": 6089.95,
+      "end": 6091.05,
+      "text": "Posłuchamy"
+    },
+    {
+      "start": 6304.22,
+      "end": 6305.06,
+      "text": "Bardzo szanuję"
+    },
+    {
+      "start": 6305.06,
+      "end": 6306.68,
+      "text": "konsekwencje i upór"
+    },
+    {
+      "start": 6306.68,
+      "end": 6308.59,
+      "text": "organizatorów bydgoskiego"
+    },
+    {
+      "start": 6308.59,
+      "end": 6310.52,
+      "text": "cyklu o nazwie The"
+    },
+    {
+      "start": 6310.52,
       "end": 6312.38,
-      "text": "Bardzo szanuję konsekwencje i upór organizatorów bydgoskiego cyklu o nazwie The Last Words of Death."
+      "text": "Last Words of Death."
     },
     {
-      "start": 6313.2,
+      "start": 6313.22,
+      "end": 6315.51,
+      "text": "29 sierpnia odbędzie"
+    },
+    {
+      "start": 6315.51,
+      "end": 6319.01,
+      "text": "się jego, uwaga, 38."
+    },
+    {
+      "start": 6319.01,
       "end": 6320.4,
-      "text": "29 sierpnia odbędzie się jego, uwaga, 38 edycja."
+      "text": "edycja."
     },
     {
-      "start": 6321.1,
-      "end": 6327.32,
-      "text": "Co Wy na to, bez sponsorów, bez dotacji, z czystej miłości do muzyki."
+      "start": 6320.4,
+      "end": 6321.88,
+      "text": "Co Wy na to, bez"
     },
     {
-      "start": 6327.32,
-      "end": 6344.04,
-      "text": "Tym razem wystąpią Frightful, Xificurk, Damnatorum oraz, to ciekawostka, meksykańsko-niemiecki Xulub Mitnal, grający black metal odwołujący się do kultury Majów."
+      "start": 6321.88,
+      "end": 6324.36,
+      "text": "sponsorów, bez dotacji,"
     },
     {
-      "start": 6344.6,
-      "end": 6352.24,
-      "text": "Ale posłuchamy trójmiejskiego Frightful z bardzo dobrej ubiegłorocznej płyty What Lies Ahead."
+      "start": 6324.36,
+      "end": 6326.03,
+      "text": "z czystej miłości"
     },
     {
-      "start": 6636.55,
-      "end": 6656.45,
-      "text": "Amerykanie z Fear Factory wracają do Polski z trzema koncertami. Złośliwi twierdzą, że najlepsze lata ten zespół, kiedyś wielki, ma już za sobą, a mniej złośliwi za to dobrze poinformowani zauważą, że najgorsze na szczęście też."
+      "start": 6326.03,
+      "end": 6327.34,
+      "text": "do muzyki."
     },
     {
-      "start": 6656.45,
-      "end": 6677.23,
-      "text": "Fear Factory to dziś nowy zespół, nowy skład i pisze zupełnie nowy rozdział swojej kariery i chyba wychodzi im to coraz lepiej. 29 sierpnia zagrają w Poznaniu, 30 w Krakowie i 31 sierpnia w Warszawie."
+      "start": 6327.86,
+      "end": 6329.38,
+      "text": "Tym razem wystąpią"
     },
     {
-      "start": 6677.23,
-      "end": 6692.07,
-      "text": "Zatowarzyszyć im będą grupy Hate oraz The Nocturnal Affair. I jeszcze Nothing wraca do nas na kolejny w tym roku koncert i nie mogę tego nie odnotować, bo to super zespół."
+      "start": 6329.38,
+      "end": 6331.38,
+      "text": "Frightful, Xifizurk,"
     },
     {
-      "start": 6692.47,
-      "end": 6706.65,
-      "text": "Zagrają nie w sierpniu, ale 1 września w warszawskiej Hydrozagadce, a przed nimi Norwedzy z Hammock. Mówię o tym już dzisiaj, bo kolejna pogawędka o koncertach wciężko na sercu."
+      "start": 6331.38,
+      "end": 6333.12,
+      "text": "Damnatorum oraz, to"
     },
     {
-      "start": 6707.23,
-      "end": 6724.13,
-      "text": "Będzie miała miejsce, kiedy Nothing będą zwijać swój sprzęt ze sceny, dokładnie tej samej nocy. Nie chciałem więc, żeby mieszkańcy stolicy przegapili wizytę tak zacnej grupy."
+      "start": 6333.12,
+      "end": 6336.23,
+      "text": "ciekawostka, meksykańsko-niemiecki"
     },
     {
-      "start": 6724.13,
-      "end": 6729.35,
-      "text": "A póki co żegnam się z wami. Do usłyszenia za tydzień."
+      "start": 6336.23,
+      "end": 6339.46,
+      "text": "Xulub Mitnal, grający"
+    },
+    {
+      "start": 6339.46,
+      "end": 6341.8,
+      "text": "black metal, odwołujący"
+    },
+    {
+      "start": 6341.8,
+      "end": 6344.02,
+      "text": "się do kultury Majów."
+    },
+    {
+      "start": 6344.02,
+      "end": 6346.6,
+      "text": "Ale posłuchamy trójmiejskiego"
+    },
+    {
+      "start": 6346.6,
+      "end": 6348.02,
+      "text": "Frightful z bardzo"
+    },
+    {
+      "start": 6348.02,
+      "end": 6349.86,
+      "text": "dobrej ubiegłorocznej"
+    },
+    {
+      "start": 6349.86,
+      "end": 6352,
+      "text": "płyty What Lies Ahead."
+    },
+    {
+      "start": 6638.14,
+      "end": 6640.02,
+      "text": "z Fear Factory wracają"
+    },
+    {
+      "start": 6640.02,
+      "end": 6641.2,
+      "text": "do Polski z trzema"
+    },
+    {
+      "start": 6641.2,
+      "end": 6642.74,
+      "text": "koncertami. Złośliwi"
+    },
+    {
+      "start": 6642.74,
+      "end": 6644.56,
+      "text": "twierdzą, że najlepsze"
+    },
+    {
+      "start": 6644.56,
+      "end": 6645.48,
+      "text": "lata ten zespół"
+    },
+    {
+      "start": 6645.48,
+      "end": 6646.97,
+      "text": "kiedyś wielki ma"
+    },
+    {
+      "start": 6646.97,
+      "end": 6648.27,
+      "text": "już za sobą, a"
+    },
+    {
+      "start": 6648.27,
+      "end": 6650.03,
+      "text": "mniej złośliwi za"
+    },
+    {
+      "start": 6650.03,
+      "end": 6652.26,
+      "text": "to dobrze poinformowani"
+    },
+    {
+      "start": 6652.26,
+      "end": 6653.42,
+      "text": "zauważą, że"
+    },
+    {
+      "start": 6653.42,
+      "end": 6655.34,
+      "text": "najgorsze na szczęście"
+    },
+    {
+      "start": 6655.34,
+      "end": 6656.99,
+      "text": "też. Fear Factory"
+    },
+    {
+      "start": 6656.99,
+      "end": 6658.7,
+      "text": "to dziś nowy zespół,"
+    },
+    {
+      "start": 6658.7,
+      "end": 6660.72,
+      "text": "nowy skład i pisze"
+    },
+    {
+      "start": 6660.72,
+      "end": 6661.4,
+      "text": "zupełnie nowy"
+    },
+    {
+      "start": 6661.4,
+      "end": 6663.42,
+      "text": "rozdział swojej kariery"
+    },
+    {
+      "start": 6663.42,
+      "end": 6664.97,
+      "text": "i chyba wychodzi im"
+    },
+    {
+      "start": 6664.97,
+      "end": 6667.56,
+      "text": "to coraz lepiej. 29"
+    },
+    {
+      "start": 6667.56,
+      "end": 6669.7,
+      "text": "sierpnia zagrają"
+    },
+    {
+      "start": 6669.7,
+      "end": 6672.89,
+      "text": "w Poznaniu, 30 w Krakowie"
+    },
+    {
+      "start": 6672.89,
+      "end": 6674.83,
+      "text": "i 31 sierpnia w"
+    },
+    {
+      "start": 6674.83,
+      "end": 6677.65,
+      "text": "Warszawie, a towarzyszyć"
+    },
+    {
+      "start": 6677.65,
+      "end": 6679.32,
+      "text": "im będą grupy"
+    },
+    {
+      "start": 6679.32,
+      "end": 6681.56,
+      "text": "Hate oraz The Nocturnal"
+    },
+    {
+      "start": 6681.56,
+      "end": 6683.88,
+      "text": "Affair. I jeszcze"
+    },
+    {
+      "start": 6683.88,
+      "end": 6685.07,
+      "text": "Nothing wraca do"
+    },
+    {
+      "start": 6685.07,
+      "end": 6686.59,
+      "text": "nas na kolejny w"
+    },
+    {
+      "start": 6686.59,
+      "end": 6687.04,
+      "text": "tym roku"
+    },
+    {
+      "start": 6687.04,
+      "end": 6688.49,
+      "text": "koncert i nie mogę"
+    },
+    {
+      "start": 6688.49,
+      "end": 6690.23,
+      "text": "tego nie odnotować,"
+    },
+    {
+      "start": 6690.23,
+      "end": 6692.08,
+      "text": "bo to super zespół."
+    },
+    {
+      "start": 6692.08,
+      "end": 6693.88,
+      "text": "Zagrają nie w sierpniu,"
+    },
+    {
+      "start": 6694.08,
+      "end": 6695.27,
+      "text": "ale 1 września w"
+    },
+    {
+      "start": 6695.27,
+      "end": 6697.65,
+      "text": "warszawskiej Hydrozagadce,"
+    },
+    {
+      "start": 6697.65,
+      "end": 6699.34,
+      "text": "a przed nimi Norwedzy"
+    },
+    {
+      "start": 6699.34,
+      "end": 6700.32,
+      "text": "z Hamok."
+    },
+    {
+      "start": 6701.08,
+      "end": 6701.52,
+      "text": "Mówię o tym już"
+    },
+    {
+      "start": 6701.52,
+      "end": 6703.33,
+      "text": "dzisiaj, bo kolejna"
+    },
+    {
+      "start": 6703.33,
+      "end": 6705.4,
+      "text": "pogawędka o koncertach"
+    },
+    {
+      "start": 6705.4,
+      "end": 6706.64,
+      "text": "wciężko na sercu"
+    },
+    {
+      "start": 6706.64,
+      "end": 6707.93,
+      "text": "będzie miała"
+    },
+    {
+      "start": 6707.93,
+      "end": 6709.58,
+      "text": "miejsce, kiedy"
+    },
+    {
+      "start": 6709.58,
+      "end": 6711.58,
+      "text": "Nothing będą zwijać"
+    },
+    {
+      "start": 6711.58,
+      "end": 6713.64,
+      "text": "swój sprzęt ze sceny,"
+    },
+    {
+      "start": 6713.64,
+      "end": 6715.36,
+      "text": "dokładnie tej samej"
+    },
+    {
+      "start": 6715.36,
+      "end": 6717.21,
+      "text": "nocy. Nie chciałem"
+    },
+    {
+      "start": 6717.21,
+      "end": 6719.3,
+      "text": "więc, żeby mieszkańcy"
+    },
+    {
+      "start": 6719.3,
+      "end": 6719.88,
+      "text": "stolicy"
+    },
+    {
+      "start": 6719.88,
+      "end": 6722,
+      "text": "przegapili wizytę"
+    },
+    {
+      "start": 6722,
+      "end": 6724.44,
+      "text": "tak zacnej grupy. A"
+    },
+    {
+      "start": 6724.44,
+      "end": 6726.4,
+      "text": "póki co żegnam się"
+    },
+    {
+      "start": 6726.4,
+      "end": 6727.38,
+      "text": "z Wami."
+    },
+    {
+      "start": 6727.5,
+      "end": 6729.32,
+      "text": "Do usłyszenia za tydzień."
     }
   ],
   "stats": {
-    "windowCount": 20,
-    "transcribedAudioSec": 2007.21,
-    "segmentCount": 319,
-    "characterCount": 20198
-  },
-  "sourceId": "2026-08-05-najgoretsze-sierpniowe-festiwale-ktore-rozgrzeja-serca-fanow"
+    "windowCount": 21,
+    "transcribedAudioSec": 1718.54,
+    "segmentCount": 1003,
+    "characterCount": 17766
+  }
 }
