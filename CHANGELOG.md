@@ -1,3 +1,9 @@
+## [1.81.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.80.0...v1.81.0) (2026-11-15)
+
+### Features
+
+* **edytor:** waveform z zoomem i test po publikacji ([#95](https://github.com/tiriana/ciezko-na-sercu-web/issues/95)) ([af73c49](https://github.com/tiriana/ciezko-na-sercu-web/commit/af73c4951afcb877e13a4a380381ac684dfec95f))
+
 ## [1.80.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.79.0...v1.80.0) (2026-11-15)
 
 ### Features
