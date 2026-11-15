@@ -14,6 +14,13 @@ import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import {
+  aliasCandidates,
+  aliasProblems,
+  collectLabels,
+  normalizeAliasFile,
+  tagRows,
+} from '../lib/aliases.mjs';
+import {
   applyOverrides,
   isEmptyOverrides,
   mergeOverrides,
@@ -85,75 +92,13 @@ const reviewKeyOf = (kind, object) => {
 
 const loadCatalog = () => readJson(join(DATA, 'catalog.json'), { episodes: [] });
 const ALIASES_PATH = join(DATA, 'aliases.json');
-const TAG_TYPES = ['artist', 'person', 'work', 'event', 'concert', 'place', 'theme', 'editorial'];
 const loadAliasFile = async () => {
   const file = await readJson(ALIASES_PATH, { version: 1, aliases: {}, types: {}, dismissed: [] });
   return { aliases: file.aliases ?? {}, types: file.types ?? {}, dismissed: file.dismissed ?? [] };
 };
-const loadAliases = async () => (await loadAliasFile()).aliases;
+// Etykiety z odcinków plus nazwy z creditsów — wspólne z edytorem online.
+const labelsOfData = async () => collectLabels([...(await loadEpisodes()).values()]);
 
-const resolveAlias = (label, aliases) => {
-  let current = label;
-  for (let step = 0; step < 5; step++) {
-    const next = aliases[current];
-    if (!next || next === current) break;
-    current = next;
-  }
-  return current;
-};
-
-const foldWords = (value) =>
-  value
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/ł/gi, 'l')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
-
-// Etykiety z odcinków plus nazwy z creditsów: alias może celować w każdą z nich.
-const collectLabels = async () => {
-  const episodes = await loadEpisodes();
-  const labels = new Map();
-  for (const episode of episodes.values()) {
-    if (!episode) continue;
-    for (const tag of episode.tags ?? []) {
-      const current = labels.get(tag.label) ?? { label: tag.label, type: tag.type, episodes: new Set() };
-      current.episodes.add(episode.id);
-      labels.set(tag.label, current);
-    }
-    for (const credit of episode.credits ?? []) {
-      const current = labels.get(credit.name) ?? { label: credit.name, type: 'person', episodes: new Set() };
-      current.episodes.add(episode.id);
-      labels.set(credit.name, current);
-    }
-  }
-  return labels;
-};
-
-const aliasCandidates = (labels, aliases, dismissed) => {
-  const people = [...labels.values()].filter((item) => item.type === 'person' && resolveAlias(item.label, aliases) === item.label);
-  const out = [];
-  for (const shorter of people) {
-    for (const longer of people) {
-      if (longer.label.length <= shorter.label.length + 3) continue;
-      if (!` ${foldWords(longer.label)} `.includes(` ${foldWords(shorter.label)} `)) continue;
-      if (dismissed.some((pair) => pair.from === shorter.label && pair.to === longer.label)) continue;
-      out.push({ from: shorter.label, to: longer.label });
-    }
-  }
-  return out;
-};
-
-const aliasProblems = (aliases, labels) => {
-  const problems = [];
-  for (const [alias, target] of Object.entries(aliases)) {
-    if (alias === target) problems.push(`${alias}: alias wskazuje sam na siebie`);
-    if (resolveAlias(target, aliases) !== target) problems.push(`${target}: łańcuch aliasów tworzy pętlę`);
-    if (!labels.has(target)) problems.push(`${alias}: nie ma takiej etykiety jak ${target}`);
-  }
-  return problems;
-};
 const loadTitles = () => readJson(join(DATA, 'titles.json'), { version: 1, titles: {} });
 const loadOverrides = async () => {
   const map = new Map();
@@ -416,43 +361,22 @@ const handleRequest = async (req, res) => {
     }
 
     if (url.pathname === '/api/tags') {
-      const [labels, file] = await Promise.all([collectLabels(), loadAliasFile()]);
+      const [labels, file] = await Promise.all([labelsOfData(), loadAliasFile()]);
       json(res, 200, {
         aliases: file.aliases,
         types: file.types,
         dismissed: file.dismissed,
         candidates: aliasCandidates(labels, file.aliases, file.dismissed),
-        tags: [...labels.values()]
-          .map((item) => ({
-            label: item.label,
-            type: file.types[resolveAlias(item.label, file.aliases)] ?? item.type,
-            originalType: item.type,
-            count: item.episodes.size,
-            canonical: resolveAlias(item.label, file.aliases),
-          }))
-          .sort((left, right) => left.label.localeCompare(right.label, 'pl')),
+        tags: tagRows(labels, file),
       });
       return;
     }
 
     if (req.method === 'POST' && url.pathname === '/api/aliases') {
-      const payload = JSON.parse(await readBody(req));
-      const aliases = {};
-      for (const [from, to] of Object.entries(payload.aliases ?? {})) {
-        const key = String(from).trim();
-        const value = String(to).trim();
-        if (key && value && key !== value) aliases[key] = value;
-      }
-      const types = {};
-      for (const [label, type] of Object.entries(payload.types ?? {})) {
-        const key = String(label).trim();
-        if (key && TAG_TYPES.includes(type)) types[key] = type;
-      }
-      const dismissed = (payload.dismissed ?? []).filter((pair) => pair?.from && pair?.to);
-      const labels = await collectLabels();
-      const problems = aliasProblems(aliases, labels);
+      const file = normalizeAliasFile(JSON.parse(await readBody(req)));
+      const problems = aliasProblems(file.aliases);
       if (problems.length > 0) return json(res, 400, { error: problems.join('; ') });
-      await writeJson(ALIASES_PATH, { version: 1, aliases, types, dismissed });
+      await writeJson(ALIASES_PATH, file);
       json(res, 200, { ok: true });
       return;
     }
