@@ -1,8 +1,14 @@
-import { mergeOverrides, normalize, validateOverride, validateSavePayload } from './lib/overrides.mjs';
+import {
+  applyOverrides,
+  mergeOverrides,
+  normalize,
+  validateOverride,
+  validateSavePayload,
+  validateTrackTimes,
+} from './lib/overrides.mjs';
 import { currentSession, pollDeviceToken, publishChanges, signInWithToken, signOut, startDeviceFlow } from './github.js';
 import { deleteDraft, getDraft, getMeta, putDraft, putMeta } from './store.js';
 import { loadJson, loadJsonFresh } from './source.js';
-import { validateTrackTimes } from './lib/overrides.mjs';
 import { config } from './config.js';
 import { drawWaveform, loadPeaks } from './peaks.js';
 
@@ -108,7 +114,7 @@ const refreshPublish = () => {
   $('#publish').disabled = !currentSession().canPush || !hasChanges();
 };
 
-const saveDraft = () => {
+const saveDraft = async () => {
   if (!state.episode) return;
   const payload = {
     edits: [...state.edits.entries()],
@@ -116,7 +122,7 @@ const saveDraft = () => {
     titleDirty: state.titleDirty,
     at: new Date().toISOString(),
   };
-  void putDraft(state.episode.id, payload);
+  await putDraft(state.episode.id, payload);
 };
 
 const scheduleDraftSave = () => {

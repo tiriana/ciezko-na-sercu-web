@@ -169,25 +169,32 @@ try {
   // Strażnik przed zepsutym plikiem: koniec przed początkiem nie może dojść do GitHuba.
   const beforeGuard = publishes.length;
   const endInput = page.locator('#tracks tr:first-child td:nth-child(3) input');
+  const originalEnd = await endInput.inputValue();
   await endInput.fill('0:01');
   await endInput.press('Tab');
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
   await page.locator('#publish').click();
-  await page.waitForFunction(() => document.querySelector('#hint')?.textContent.startsWith('nie publikuję'), null, { timeout: 5000 });
+  await page.waitForFunction(() => document.querySelector('#hint')?.textContent.startsWith('nie publikuję'), null, {
+    timeout: 5000,
+  });
   if (publishes.length === beforeGuard) ok('niepoprawny czas zablokował publikację');
   else fail('niepoprawny czas trafił do commita');
+  await endInput.fill(originalEnd);
+  await endInput.press('Tab');
 
   // Szkic: zmiana ma przetrwać przeładowanie karty (IndexedDB). Zapis jest odroczony
-  // o 0,5 s, więc najpierw dajemy mu dojść do skutku.
+  // o 0,5 s, więc dajemy mu dojść do skutku przed przeładowaniem.
   const artistCell = () => page.locator('#tracks tr:first-child td:nth-child(4) input');
   await artistCell().fill('Szkic po przeładowaniu');
   await artistCell().press('Tab');
   await page.waitForTimeout(900);
+
   await page.reload({ waitUntil: 'domcontentloaded' });
   await page.waitForSelector('#episodes li button');
   await page.locator('#filter').fill(episodeSlug);
   await page.waitForTimeout(300);
   await page.locator('#episodes li button').first().click();
+  await page.waitForSelector('#tracks tr');
   await page.waitForFunction(
     () => document.querySelector('#tracks tr:first-child td:nth-child(4) input')?.value === 'Szkic po przeładowaniu',
     null,
