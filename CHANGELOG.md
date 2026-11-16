@@ -1,3 +1,13 @@
+## [1.84.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.83.0...v1.84.0) (2026-11-16)
+
+### Features
+
+* **edytor:** waveform jak w lokalnym — panel znacznika, menu, skróty ([#101](https://github.com/tiriana/ciezko-na-sercu-web/issues/101)) ([0a1f954](https://github.com/tiriana/ciezko-na-sercu-web/commit/0a1f954549414011dbebcde8e6feb5fead8b5ba9))
+
+### Bug Fixes
+
+* wejścia z profilu głosu (43805364455) ([0666bbf](https://github.com/tiriana/ciezko-na-sercu-web/commit/0666bbf61a5dfca9f362910b3c3cbd4babfaddd3))
+
 ## [1.83.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.82.1...v1.83.0) (2026-11-16)
 
 ### Features
