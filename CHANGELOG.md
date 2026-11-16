@@ -1,3 +1,9 @@
+## [1.84.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.84.1...v1.84.2) (2026-11-16)
+
+### Bug Fixes
+
+* **dane:** 2026-11-11-tak-halasuja-polacy — edycja z edytora online ([96b1714](https://github.com/tiriana/ciezko-na-sercu-web/commit/96b17143f1c4c58c3f94006063f12bc8993f93d4))
+
 ## [1.84.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.84.0...v1.84.1) (2026-11-16)
 
 ### Bug Fixes
