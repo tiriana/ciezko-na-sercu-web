@@ -1,3 +1,9 @@
+## [1.82.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.82.0...v1.82.1) (2026-11-16)
+
+### Bug Fixes
+
+* oficjalny tytuł wygrywa z nieoficjalnym, gdy radio go doda ([#98](https://github.com/tiriana/ciezko-na-sercu-web/issues/98)) ([ec02e27](https://github.com/tiriana/ciezko-na-sercu-web/commit/ec02e2795bb77e0dd298e834e0a0ed0020df58f2))
+
 ## [1.82.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.81.0...v1.82.0) (2026-11-16)
 
 ### Features
