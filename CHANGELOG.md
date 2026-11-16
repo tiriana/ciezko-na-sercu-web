@@ -1,3 +1,9 @@
+## [1.83.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.82.1...v1.83.0) (2026-11-16)
+
+### Features
+
+* **edytor:** sesja przeżywa odświeżenie karty ([#100](https://github.com/tiriana/ciezko-na-sercu-web/issues/100)) ([b4d75a3](https://github.com/tiriana/ciezko-na-sercu-web/commit/b4d75a34200f4ef738ec0055a780c34fcb5cb932))
+
 ## [1.82.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.82.0...v1.82.1) (2026-11-16)
 
 ### Bug Fixes
