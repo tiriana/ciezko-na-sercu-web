@@ -1,4 +1,5 @@
 import { duplicatesSchema } from './schema';
+import { isTechnicalTitle } from './titles.ts';
 import { mergeEpisode } from './merge';
 import { readFile, readdir } from 'node:fs/promises';
 import type { z } from 'zod';
@@ -34,7 +35,7 @@ type Entry = CatalogEpisode & {
   titleNote?: string;
 };
 
-const TECHNICAL_TITLE = /^Ciężko na sercu .*godz\.? \d{4}$/;
+
 
 let catalogCache: Catalog | undefined;
 
@@ -144,13 +145,16 @@ export async function getEntries(options: { includeHidden?: boolean } = {}): Pro
     : catalog.episodes.filter((episode) => !duplicates[episode.id]);
   return visible.map((episode) => {
     const override = titles[episode.id];
-    const technical = TECHNICAL_TITLE.test(episode.title);
+    const technical = isTechnicalTitle(episode.title);
+    // Tytuł oficjalny z katalogu ma pierwszeństwo, gdy przestał być techniczny: radio
+    // nadaje własny tytuł z opóźnieniem, a nasz nieoficjalny był tylko zastępstwem.
+    const useUnofficial = Boolean(override?.title) && (technical || !episode.title);
     return {
       ...episode,
       enriched: files.has(episode.id),
-      displayTitle: override?.title ?? episode.title,
-      titleKind: override ? 'unofficial' : technical ? 'technical' : 'official',
-      titleNote: override?.note,
+      displayTitle: useUnofficial ? override.title : episode.title,
+      titleKind: useUnofficial ? 'unofficial' : technical ? 'technical' : 'official',
+      titleNote: useUnofficial ? override?.note : undefined,
     };
   });
 }
