@@ -13,9 +13,10 @@ uruchamiania czegokolwiek lokalnie. Nie ma backendu: przeglądarka czyta dane pr
 
 1. Edytor pobiera `data/catalog.json`, `data/titles.json` i plik odcinka
    (`data/episodes/<uuid>.json`) oraz jego poprawki (`data/overrides/<uuid>.json`).
-2. Edytor pokazuje utwory i wejścia (także dodane) oraz znaczniki na waveformie; zmiany
-   trafiają do szkicu w IndexedDB (per urządzenie). Nic nie idzie do sieci, dopóki nie
-   klikniesz „Publikuj”.
+2. Praca idzie na waveformie: klik w znacznik otwiera pod spodem panel z wszystkimi
+   polami fragmentu (start, koniec, wykonawca, tytuł, album, etykieta, ok, nierozpoznany).
+   Zmiany trafiają do szkicu w IndexedDB (per urządzenie). Nic nie idzie do sieci, dopóki
+   nie klikniesz „Publikuj”.
 3. Publikacja scala szkic z istniejącymi poprawkami (`mergeOverrides`) i wysyła **jeden
    commit** na `main` przez Git Data API: blob → tree (`base_tree`) → commit → `PATCH` ref.
    Commit ma typ `fix`, więc semantic-release zrobi patch i `deploy.yml` opublikuje stronę.
@@ -104,7 +105,16 @@ klik przeskakuje, dwuklik gra. Znaczniki to granice utworów (niebieskie) i wej�
 (turkusowe); zielone z ✓ są oznaczone jako przejrzane, wybrany ma zieloną obwódkę.
 Znacznik przeciąga się myszką albo strzałkami po wybraniu; `Shift+Enter` oznacza ok,
 `Del` usuwa dodany fragment albo ukrywa bazowy, `N`/`P` skacze po nieprzejrzanych.
-`Shift+N` dodaje wejście, `Shift+T` utwór w miejscu odtwarzania.
+`Shift+N` dodaje wejście, `Shift+T` utwór w miejscu odtwarzania, spacja gra/pauzuje,
+`,` i `.` skaczą po znacznikach, `+`/`-` zmieniają zoom, strzałki przesuwają okno.
+
+Prawy przycisk na waveformie otwiera menu: na tle dodaje wejście albo utwór w miejscu
+kliknięcia, na znaczniku pozwala oznaczyć ok, edytować wszystkie pola, scalić z poprzednim
+znacznikiem tego samego rodzaju albo usunąć. Panel pod waveformem ma te same akcje.
+
+Utwór z bazy nie ma w poprawkach pola `unrecognized`, więc „oznacz jako nierozpoznany”
+ukrywa rozpoznany wiersz i dodaje w tym miejscu nierozpoznany — na osi zostaje jeden
+fragment, a strona pokazuje, że to zgadywanka.
 
 Skala waveformu jest skalą odtwarzacza (`scripts/lib/timeline.mjs`), bo nagłówek mp3 bywa
 krótszy niż realne audio — bez tego kreska rozjeżdża się ku końcowi audycji.

@@ -52,9 +52,16 @@
         <p class="hint" id="title-hint"></p>
 
         <div class="player">
-          <audio id="audio" controls preload="none"></audio>
+          <div class="transport">
+            <button type="button" class="ghost small" data-skip="-5">−5 s</button>
+            <audio id="audio" controls preload="none"></audio>
+            <button type="button" class="ghost small" data-skip="5">+5 s</button>
+            <span class="clock" id="clock">0:00</span>
+          </div>
           <div class="wave-tools">
             <span id="wave-window" class="wave-window"></span>
+            <button id="wave-prev" class="ghost small" type="button" title="poprzedni znacznik (,)">‹</button>
+            <button id="wave-next" class="ghost small" type="button" title="następny znacznik (.)">›</button>
             <button id="wave-add-topic" class="ghost small" type="button" title="dodaj wejście (Shift+N)">＋ wejście</button>
             <button id="wave-add-track" class="ghost small" type="button" title="dodaj utwór (Shift+T)">＋ utwór</button>
             <button id="wave-prev-unreviewed" class="ghost small" type="button" title="poprzedni bez ok (P)">‹ bez ok</button>
@@ -70,63 +77,32 @@
           </div>
         </div>
 
-        <h3>Utwory</h3>
-        <table class="tracks">
-          <thead>
-            <tr>
-              <th class="tick" title="przejrzane">ok</th>
-              <th class="num">start</th>
-              <th class="num">koniec</th>
-              <th>wykonawca</th>
-              <th>tytuł</th>
-              <th>album</th>
-              <th class="num">akcje</th>
-            </tr>
-          </thead>
-          <tbody id="tracks"></tbody>
-        </table>
-
-        <h3>Dodane utwory</h3>
-        <table class="tracks">
-          <thead>
-            <tr>
-              <th class="tick">ok</th>
-              <th class="num">start</th>
-              <th class="num">koniec</th>
-              <th>wykonawca</th>
-              <th>tytuł</th>
-              <th>album</th>
-              <th class="num">akcje</th>
-            </tr>
-          </thead>
-          <tbody id="add-tracks"></tbody>
-        </table>
-
-        <h3>Wejścia</h3>
-        <table class="tracks">
-          <thead>
-            <tr>
-              <th class="tick">ok</th>
-              <th class="num">start</th>
-              <th>etykieta</th>
-              <th class="num">akcje</th>
-            </tr>
-          </thead>
-          <tbody id="topics"></tbody>
-        </table>
-
-        <h3>Dodane wejścia</h3>
-        <table class="tracks">
-          <thead>
-            <tr>
-              <th class="tick">ok</th>
-              <th class="num">start</th>
-              <th>etykieta</th>
-              <th class="num">akcje</th>
-            </tr>
-          </thead>
-          <tbody id="add-topics"></tbody>
-        </table>
+        <section class="inspector" id="inspector" hidden>
+          <div class="inspector-head">
+            <span id="inspect-kind" class="badge">utwór</span>
+            <strong id="inspect-name"></strong>
+            <span id="inspect-time" class="muted"></span>
+            <label class="check"><input type="checkbox" id="inspect-ok" /> ok</label>
+          </div>
+          <div class="inspector-fields">
+            <label>start<input id="inspect-start" type="text" inputmode="decimal" /></label>
+            <label id="inspect-end-row">koniec<input id="inspect-end" type="text" inputmode="decimal" /></label>
+            <label id="inspect-label-row">etykieta<input id="inspect-label" type="text" /></label>
+            <label id="inspect-artist-row">wykonawca<input id="inspect-artist" type="text" /></label>
+            <label id="inspect-title-row">tytuł<input id="inspect-title" type="text" /></label>
+            <label id="inspect-album-row">album<input id="inspect-album" type="text" /></label>
+            <label class="check" id="inspect-unrecognized-row"><input type="checkbox" id="inspect-unrecognized" /> nierozpoznany</label>
+          </div>
+          <div class="inspector-actions">
+            <button id="inspect-play" class="ghost small" type="button">▶ od początku</button>
+            <button id="inspect-take" class="ghost small" type="button">weź czas odtwarzania</button>
+            <button id="inspect-merge" class="ghost small" type="button">scal z poprzednim</button>
+            <button id="inspect-hide" class="ghost small" type="button">ukryj</button>
+            <button id="inspect-unrecognized-base" class="ghost small" type="button" hidden>oznacz jako nierozpoznany</button>
+          </div>
+          <p class="hint" id="inspect-hint"></p>
+        </section>
+        <p class="hint" id="no-selection">kliknij znacznik na waveformie, żeby zobaczyć i edytować jego dane</p>
 
         <p class="hint" id="hint">Zmiany zbierają się w szkicu na tej karcie — publikacja wysyła jeden commit na main.</p>
         <p class="hint">
@@ -212,6 +188,44 @@
           <button id="login-device" type="button">Zaloguj przez GitHub</button>
           <button id="login-token" type="button">Zaloguj tokenem</button>
           <button value="close" class="ghost">Zamknij</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="wave-menu" id="wave-menu" role="menu" aria-label="Akcje waveformu" hidden>
+      <button type="button" role="menuitem" id="wave-menu-add">
+        <span class="menu-text">Dodaj wejście tutaj <small id="wave-menu-time"></small></span>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-add-track">
+        <span class="menu-text">Dodaj utwór tutaj <small id="wave-menu-track-time"></small></span>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-ok" hidden>
+        <span class="menu-text"><span id="wave-menu-ok-text">Oznacz jako ok</span> <small id="wave-menu-mark"></small></span>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-edit" hidden>
+        <span class="menu-text">Edytuj… <small id="wave-menu-edit-mark"></small></span>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-merge" hidden>
+        <span class="menu-text">Scal z poprzednim <small id="wave-menu-merge-mark"></small></span>
+      </button>
+      <button type="button" role="menuitem" id="wave-menu-remove" class="is-destructive" hidden>
+        <span class="menu-text">Usuń <small id="wave-menu-remove-mark"></small></span>
+      </button>
+    </div>
+
+    <dialog id="marker-edit">
+      <form method="dialog" class="login-form" id="marker-form">
+        <h2 id="marker-edit-title">Edytuj znacznik</h2>
+        <label class="token-field"><span>start (mm:ss albo sekundy)</span><input id="edit-start" type="text" /></label>
+        <label class="token-field" id="edit-end-row"><span>koniec</span><input id="edit-end" type="text" /></label>
+        <label class="token-field" id="edit-label-row"><span>etykieta wejścia</span><input id="edit-label" type="text" /></label>
+        <label class="token-field" id="edit-artist-row"><span>wykonawca</span><input id="edit-artist" type="text" /></label>
+        <label class="token-field" id="edit-title-row"><span>tytuł</span><input id="edit-title" type="text" /></label>
+        <label class="token-field" id="edit-album-row"><span>album</span><input id="edit-album" type="text" /></label>
+        <p class="error" id="edit-error" role="alert"></p>
+        <div class="login-actions">
+          <button type="submit" id="edit-save">Zapisz</button>
+          <button value="close" class="ghost">Anuluj</button>
         </div>
       </form>
     </dialog>

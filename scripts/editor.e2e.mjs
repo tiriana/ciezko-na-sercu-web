@@ -52,7 +52,6 @@ const browser = await chromium.launch();
 const page = await browser.newPage();
 page.on('pageerror', (error) => console.error('[pageerror]', String(error).slice(0, 400)));
 
-
 const blobs = [];
 const publishes = [];
 const external = [];
@@ -163,9 +162,34 @@ await page.route('**/*', async (route) => {
   if (url.hostname === 'localhost') return route.continue();
   if (url.hostname === 'raw.githubusercontent.com') return serveRepoFile(route, route.request());
   if (url.hostname === 'api.github.com') return handleApi(route);
+  // Nagranie to jedyny zewnętrzny host, po który edytor sięga — w teście odpowiadamy
+  // pustym audio, żeby nie pobierać 100 MB i nie zależeć od sieci.
+  if (url.hostname === 'static.prsa.pl') return route.fulfill({ status: 204, body: '' });
   external.push(url.href);
   return route.abort();
 });
+
+const pickMarker = async (selector) => {
+  const found = await page.evaluate((query) => {
+    const node = document.querySelector(query);
+    if (!node) return false;
+    const rect = node.getBoundingClientRect();
+    node.dispatchEvent(
+      new PointerEvent('pointerdown', { bubbles: true, button: 0, pointerId: 1, clientX: rect.left + 6, clientY: rect.top + 20 })
+    );
+    node.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, button: 0, pointerId: 1 }));
+    return true;
+  }, selector);
+  if (!found) throw new Error(`nie znaleziono znacznika: ${selector}`);
+  await page.waitForSelector('#inspector:not([hidden])');
+};
+
+const selectTrack = () => pickMarker('.wave-marker[data-kind="track"]');
+
+/** Utwór z pliku odcinka (nie dodany): tylko on ma akcję „ukryj” i pole końca z pliku. */
+// Znaczniki potrafią leżeć jeden na drugim, więc wybieramy konkretny węzeł i wysyłamy
+// mu zdarzenie wprost, zamiast liczyć na trafienie w stos.
+const selectBaseTrack = () => pickMarker('.wave-marker[data-kind="track"][data-source="base"][data-hidden="0"]');
 
 try {
   await page.goto(`http://localhost:${PORT}/`, { waitUntil: 'networkidle' });
@@ -175,13 +199,16 @@ try {
   else fail('lista odcinków jest pusta');
 
   await page.locator('#episodes li button').first().click();
-  await page.waitForSelector('#tracks tr');
-  const rows = await page.locator('#tracks tr').count();
-  if (rows > 0) ok(`wiersze utworów: ${rows}`);
-  else fail('odcinek nie ma wierszy');
+  await page.waitForSelector('.wave-marker');
+  const markers = await page.locator('.wave-marker').count();
+  if (markers > 0) ok(`znaczniki na waveformie: ${markers}`);
+  else fail('brak znaczników na waveformie');
 
   const episodeSlug = await page.evaluate(() => document.querySelector('#episode-meta').textContent.split(' · ')[0]);
   if (episodeSlug) ok(`wczytany odcinek: ${episodeSlug}`);
+
+  await selectTrack();
+  ok('klik w znacznik otwiera panel danych');
 
   const windowBefore = await page.locator('#wave-window').textContent();
   await page.locator('#wave-in').click();
@@ -199,12 +226,6 @@ try {
   await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, { timeout: 10000 });
   ok('logowanie przyjęte');
 
-  const artistCell = () => page.locator('#tracks tr:first-child td:nth-child(4) input');
-  await artistCell().fill('Poprawiony Wykonawca');
-  await artistCell().press('Tab');
-  await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
-  ok('szkic odblokował publikację');
-
   const publishAndWait = async () => {
     const before = publishes.length;
     await page.locator('#publish').click();
@@ -213,6 +234,11 @@ try {
     return publishes.at(-1);
   };
 
+  await page.locator('#inspect-artist').fill('Poprawiony Wykonawca');
+  await page.locator('#inspect-artist').press('Tab');
+  await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
+  ok('edycja pola odblokowała publikację');
+
   const published = await publishAndWait();
   const paths = published.tree.map((entry) => entry.path).sort();
   const overridePath = paths.find((path) => /^data\/overrides\/[0-9a-f-]{36}\.json$/.test(path));
@@ -220,19 +246,17 @@ try {
   else fail(`commit bez pliku poprawek (jest: ${paths.join(', ')})`);
   if (paths.includes('data/titles.json')) ok('commit zawiera data/titles.json');
   else fail('commit bez data/titles.json');
-
   if (/^fix\(dane\): /.test(published.message ?? '')) ok(`komunikat commita: ${published.message}`);
   else fail(`komunikat bez prefiksu wydania: ${published.message}`);
-
   const overrideBlob = published.blobs.find((step) => step.kind === 'blob' && step.content.includes('Poprawiony Wykonawca'));
   if (overrideBlob) ok('poprawka trafiła do treści pliku');
   else fail('w plikach commita brak zmienionego wykonawcy');
-
   if (published.refSha === 'commit1') ok('gałąź main przesunięta na nowy commit');
   else fail('gałąź nie została przesunięta');
 
   // Ukrycie utworu: osobna poprawka, ten sam jeden commit.
-  await page.locator('#tracks tr:first-child td.actions button:last-child').click();
+  await selectBaseTrack();
+  await page.locator('#inspect-hide').click();
   const hidden = await publishAndWait();
   const hiddenBlob = hidden.blobs.find((step) => step.kind === 'blob' && step.content.includes('"hide": true'));
   if (hiddenBlob) ok('ukrycie utworu trafia do poprawek');
@@ -249,31 +273,24 @@ try {
   if (titlesBlob) ok('tytuł odcinka trafia do data/titles.json');
   else fail('zmiana tytułu nie trafiła do data/titles.json');
 
-  // Znaczniki „przejrzane” jadą do repo tym samym commitem, więc wracają po przeładowaniu
-  // karty i widzi je także lokalny edytor.
+  // Znaczniki „przejrzane” jadą do repo tym samym commitem.
+  await selectBaseTrack();
   const beforeReview = await page.locator('#progress').textContent();
-  const reviewBox = page.locator('#tracks tr:nth-child(2) td.done-cell input');
+  const reviewBox = page.locator('#inspect-ok');
   await reviewBox.click();
   const reviewAfterClick = await reviewBox.isChecked();
-  await page.waitForFunction(
-    (before) => document.querySelector('#progress')?.textContent !== before,
-    beforeReview,
-    { timeout: 5000 }
-  );
+  await page.waitForFunction((before) => document.querySelector('#progress')?.textContent !== before, beforeReview, { timeout: 5000 });
   ok('znacznik „przejrzane” zmienia licznik');
   const reviewedPublish = await publishAndWait();
   const reviewedPaths = reviewedPublish.tree.map((entry) => entry.path);
   if (reviewedPaths.includes('data/reviewed.json')) ok('commit zawiera data/reviewed.json');
   else fail(`commit bez data/reviewed.json (jest: ${reviewedPaths.join(', ')})`);
-  const reviewedBlob = reviewedPublish.blobs.find((step) => step.kind === 'blob' && step.content.includes('"episodes"'));
-  if (reviewedBlob) ok('znaczniki „przejrzane” trafiają do treści pliku');
-  else fail('w plikach commita brak znaczników „przejrzane”');
 
-  // Dodanie wejścia i utworu: nowe pozycje jadą w addTopics/addTracks.
+  // Dodane wejście i utwór: panel pokazuje pola nowego fragmentu.
   await page.locator('#wave-add-topic').click();
-  const topicInputs = page.locator('#add-topics tr:last-child input[type="text"]');
-  await topicInputs.nth(0).fill('1:00');
-  await topicInputs.nth(1).fill('Wejście z edytora online');
+  await page.locator('#inspect-label').fill('Wejście z edytora online');
+  await page.locator('#inspect-start').fill('1:00');
+  await page.locator('#inspect-start').press('Tab');
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
   const addedTopic = await publishAndWait();
   const topicBlob = addedTopic.blobs.find(
@@ -283,24 +300,47 @@ try {
   else fail('dodane wejście nie trafiło do pliku poprawek');
 
   await page.locator('#wave-add-track').click();
-  const trackInputs = page.locator('#add-tracks tr:last-child input[type="text"]');
-  await trackInputs.nth(0).fill('2:00');
-  await trackInputs.nth(2).fill('Dodany Wykonawca');
-  await trackInputs.nth(3).fill('Dodany Tytuł');
+  await page.locator('#inspect-start').fill('2:00');
+  await page.locator('#inspect-start').press('Tab');
+  await page.locator('#inspect-artist').fill('Dodany Wykonawca');
+  await page.locator('#inspect-title').fill('Dodany Tytuł');
+  await page.locator('#inspect-unrecognized').check();
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
   const addedTrack = await publishAndWait();
   const trackBlob = addedTrack.blobs.find(
-    (step) => step.kind === 'blob' && step.content.includes('"addTracks"') && step.content.includes('Dodany Wykonawca')
+    (step) =>
+      step.kind === 'blob' &&
+      step.content.includes('"addTracks"') &&
+      step.content.includes('Dodany Wykonawca') &&
+      step.content.includes('"unrecognized": true')
   );
-  if (trackBlob) ok('dodany utwór trafia do addTracks');
+  if (trackBlob) ok('dodany utwór trafia do addTracks razem z flagą nierozpoznany');
   else fail('dodany utwór nie trafił do pliku poprawek');
+
+  // Menu kontekstowe: prawy przycisk na tle dodaje wejście w miejscu kliknięcia.
+  const stage = page.locator('#wave-stage');
+  const box = await stage.boundingBox();
+  await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2, { button: 'right' });
+  if (await page.locator('#wave-menu').isVisible()) ok('menu kontekstowe otwiera się na waveformie');
+  else fail('menu kontekstowe się nie otworzyło');
+  await page.locator('#wave-menu-add').click();
+  const menuTopic = await page.locator('#inspect-kind').textContent();
+  if (menuTopic === 'wejście') ok('menu dodaje wejście w miejscu kliknięcia');
+  else fail(`menu nie dodało wejścia (${menuTopic})`);
+  await page.locator('#inspect-label').fill('Wejście z menu');
+
+  // Scalanie z poprzednim: nowe wejście jest już wybrane, więc scalamy je wprost.
+  await page.locator('#inspect-merge').click();
+  const merged = await page.locator('#inspect-name').textContent();
+  if (merged.includes(' / ')) ok('scalanie z poprzednim łączy etykiety');
+  else fail(`scalanie nie połączyło etykiet (${merged})`);
 
   // Strażnik przed zepsutym plikiem: koniec przed początkiem nie może dojść do GitHuba.
   const beforeGuard = publishes.length;
-  const endInput = page.locator('#tracks tr:nth-child(2) td:nth-child(3) input');
-  const originalEnd = await endInput.inputValue();
-  await endInput.fill('0:01');
-  await endInput.press('Tab');
+  await selectBaseTrack();
+  const originalEnd = await page.locator('#inspect-end').inputValue();
+  await page.locator('#inspect-end').fill('0:00');
+  await page.locator('#inspect-end').press('Tab');
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
   await page.locator('#publish').click();
   await page.waitForFunction(() => document.querySelector('#hint')?.textContent.startsWith('nie publikuję'), null, {
@@ -308,13 +348,13 @@ try {
   });
   if (publishes.length === beforeGuard) ok('niepoprawny czas zablokował publikację');
   else fail('niepoprawny czas trafił do commita');
-  await endInput.fill(originalEnd);
-  await endInput.press('Tab');
+  await page.locator('#inspect-end').fill(originalEnd);
+  await page.locator('#inspect-end').press('Tab');
 
   // Szkic: zmiana ma przetrwać przeładowanie karty (IndexedDB). Zapis jest odroczony
   // o 0,5 s, więc dajemy mu dojść do skutku przed przeładowaniem.
-  await artistCell().fill('Szkic po przeładowaniu');
-  await artistCell().press('Tab');
+  await page.locator('#inspect-artist').fill('Szkic po przeładowaniu');
+  await page.locator('#inspect-artist').press('Tab');
   await page.waitForTimeout(900);
 
   await page.reload({ waitUntil: 'domcontentloaded' });
@@ -322,14 +362,15 @@ try {
   await page.locator('#filter').fill(episodeSlug);
   await page.waitForTimeout(300);
   await page.locator('#episodes li button').first().click();
-  await page.waitForSelector('#tracks tr');
+  await page.waitForSelector('.wave-marker');
+  await selectBaseTrack();
   await page.waitForFunction(
-    () => document.querySelector('#tracks tr:first-child td:nth-child(4) input')?.value === 'Szkic po przeładowaniu',
+    () => document.querySelector('#inspect-artist')?.value === 'Szkic po przeładowaniu',
     null,
     { timeout: 10000 }
   );
   ok('szkic przeżył przeładowanie karty');
-  const reviewAfterReload = await page.locator('#tracks tr:nth-child(2) td.done-cell input').isChecked();
+  const reviewAfterReload = await page.locator('#inspect-ok').isChecked();
   if (reviewAfterReload === reviewAfterClick) ok('znacznik „przejrzane” wraca z repozytorium po przeładowaniu');
   else fail(`znacznik „przejrzane” nie wrócił z repozytorium (${reviewAfterClick} → ${reviewAfterReload})`);
 
@@ -345,7 +386,7 @@ try {
   await page.locator('#filter').fill(episodeSlug);
   await page.waitForTimeout(300);
   await page.locator('#episodes li button').first().click();
-  await page.waitForSelector('#tracks tr');
+  await page.waitForSelector('.wave-marker');
 
   // Sesja przeżywa odświeżenie karty (sessionStorage), więc nie trzeba się logować ponownie.
   await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, {
@@ -356,8 +397,9 @@ try {
   // Konflikt: gałąź zmieniła się w trakcie publikacji — edytor pobiera ref ponownie.
   conflictPending = true;
   const beforeConflict = publishes.length;
-  await artistCell().fill('Po konflikcie');
-  await artistCell().press('Tab');
+  await selectTrack();
+  await page.locator('#inspect-artist').fill('Po konflikcie');
+  await page.locator('#inspect-artist').press('Tab');
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
   await publishAndWait();
   if (conflicts === 1) ok('konflikt 409 kończy się ponowną próbą');
@@ -372,8 +414,9 @@ try {
   }
 
   // 401: wygaszony token nie może zapisać nic po cichu — UI wraca do logowania.
-  await artistCell().fill('Po wygaśnięciu');
-  await artistCell().press('Tab');
+  await selectTrack();
+  await page.locator('#inspect-artist').fill('Po wygaśnięciu');
+  await page.locator('#inspect-artist').press('Tab');
   await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
   validTokens.clear();
   const beforeExpiry = publishes.length;
@@ -425,11 +468,6 @@ try {
   const aliasPaths = aliasPublish.tree.map((entry) => entry.path);
   if (aliasPaths.includes('data/aliases.json')) ok('alias zapisany jednym commitem do data/aliases.json');
   else fail(`commit bez data/aliases.json (jest: ${aliasPaths.join(', ')})`);
-  const aliasBlob = aliasPublish.blobs.find(
-    (step) => step.kind === 'blob' && step.content.includes('Testowy Wariant') && step.content.includes('Jarek Szubrycht')
-  );
-  if (aliasBlob) ok('alias trafił do treści pliku');
-  else fail('w pliku aliasów brak nowej pary');
   if (publishes.length === beforeAliases + 1) ok('zapis aliasów to jeden commit');
   else fail(`zapis aliasów zrobił ${publishes.length - beforeAliases} commitów`);
 

@@ -292,194 +292,50 @@ const renderTitle = () => {
 
 // ——— Rysowanie tabel ———
 
-const fieldInput = (object, field, { placeholder = '', numeric = false } = {}) => {
-  const input = document.createElement('input');
-  input.type = 'text';
-  if (numeric) input.inputMode = 'decimal';
-  input.value = numeric ? fmtTime(object[field]) : (object[field] ?? '');
-  input.placeholder = placeholder;
-  input.addEventListener('input', () => {
-    if (numeric) {
-      const seconds = parseTime(input.value);
-      if (!Number.isFinite(seconds)) return;
-      if (object[field] === seconds) return;
-      // Jak w lokalnym edytorze: „ok” dotyczy początku fragmentu, więc tylko zmiana
-      // `start` je zdejmuje; poprawa końca nie unieważnia sprawdzenia.
-      const key = field === 'start' ? reviewKeyOf({ object, kind: 'label' in object ? 'topic' : 'track' }) : null;
-      object[field] = Math.round(seconds * 100) / 100;
-      clearReviewedOnMove(key);
-    } else {
-      object[field] = input.value;
-    }
-    markDirty();
-    renderWave();
-  });
-  return input;
+const updateInspectorName = () => {
+  if (!state.selected) return;
+  $('#inspect-name').textContent = fragmentName(state.selected);
+  $('#inspect-time').textContent = fmtPrecise(state.selected.object.start);
 };
 
-const takeTimeButton = (object) => {
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'ghost small';
-  button.textContent = 'weź';
-  button.title = 'wpisz czas odtwarzania';
-  button.addEventListener('click', () => {
-    const key = reviewKeyOf({ object, kind: 'label' in object ? 'topic' : 'track' });
-    object.start = Math.round(($('#audio').currentTime ?? 0) * 100) / 100;
-    clearReviewedOnMove(key);
-    markDirty();
-    renderEpisode();
-  });
-  return button;
-};
-
-const playButton = (object) => {
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'ghost small';
-  button.textContent = '▶';
-  button.title = 'przewiń do początku';
-  button.addEventListener('click', () => seek(Number(object.start)));
-  return button;
-};
-
-const hideButton = (object, rerender) => {
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'ghost small';
-  button.textContent = object._hidden ? 'przywróć' : 'ukryj';
-  button.addEventListener('click', () => {
-    object._hidden = !object._hidden;
-    markDirty();
-    rerender();
-    renderWave();
-  });
-  return button;
-};
-
-const deleteButton = (list, object, rerender) => {
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'ghost small';
-  button.textContent = 'usuń';
-  button.addEventListener('click', () => {
-    const index = list.indexOf(object);
-    if (index >= 0) list.splice(index, 1);
-    markDirty();
-    rerender();
-    renderWave();
-  });
-  return button;
-};
-
-const reviewCell = (fragment, rerender) => {
-  const td = document.createElement('td');
-  td.className = 'done-cell';
-  const box = document.createElement('input');
-  box.type = 'checkbox';
-  box.className = 'done';
-  box.checked = isReviewed(fragment);
-  box.title = 'oznacz jako sprawdzone (ok)';
-  box.addEventListener('change', () => {
-    toggleReviewed(fragment);
-    rerender();
-  });
-  td.append(box);
-  return td;
-};
-
-const row = (cells) => {
-  const tr = document.createElement('tr');
-  tr.append(...cells);
-  return tr;
-};
-
-const cellOf = (content, className = '') => {
-  const td = document.createElement('td');
-  if (className) td.className = className;
-  if (Array.isArray(content)) td.append(...content);
-  else td.append(content);
-  return td;
-};
-
-const renderTracks = () => {
-  const body = $('#tracks');
-  body.innerHTML = '';
-  state.tracks.forEach((track) => {
-    const fragment = { object: track, kind: 'track', source: 'base' };
-    const end = fragmentEnd(fragment);
-    const tr = row([
-      reviewCell(fragment, renderTracks),
-      cellOf(fieldInput(track, 'start', { numeric: true }), 'num'),
-      cellOf(fieldInput(track, 'end', { numeric: true }), 'num'),
-      cellOf(fieldInput(track, 'artist', { placeholder: 'wykonawca' })),
-      cellOf(fieldInput(track, 'title', { placeholder: 'tytuł' })),
-      cellOf(fieldInput(track, 'album', { placeholder: '(brak)' })),
-      cellOf([takeTimeButton(track), playButton(track), hideButton(track, renderTracks)], 'actions'),
-    ]);
-    if (track._hidden) tr.className = 'hidden-track';
-    if (end !== null && Number.isFinite(end) && Number.isFinite(Number(track.start))) {
-      tr.dataset.end = String(end);
-    }
-    body.append(tr);
-  });
-  if (!state.tracks.length) body.append(row([cellOf('brak utworów w opracowaniu')]));
-};
-
-const renderTopics = () => {
-  const body = $('#topics');
-  body.innerHTML = '';
-  state.topics.forEach((topic) => {
-    const fragment = { object: topic, kind: 'topic', source: 'base' };
-    const tr = row([
-      reviewCell(fragment, renderTopics),
-      cellOf(fieldInput(topic, 'start', { numeric: true }), 'num'),
-      cellOf(fieldInput(topic, 'label', { placeholder: 'etykieta wejścia' })),
-      cellOf([takeTimeButton(topic), playButton(topic), hideButton(topic, renderTopics)], 'actions'),
-    ]);
-    if (topic._hidden) tr.className = 'hidden-track';
-    body.append(tr);
-  });
-  if (!state.topics.length) body.append(row([cellOf('brak wejść w opracowaniu')]));
-};
-
-const renderAdded = () => {
-  const trackBody = $('#add-tracks');
-  trackBody.innerHTML = '';
-  state.addTracks.forEach((track) => {
-    const fragment = { object: track, kind: 'track', source: 'added' };
-    trackBody.append(
-      row([
-        reviewCell(fragment, renderAdded),
-        cellOf(fieldInput(track, 'start', { numeric: true }), 'num'),
-        cellOf(fieldInput(track, 'end', { numeric: true }), 'num'),
-        cellOf(fieldInput(track, 'artist', { placeholder: 'wykonawca' })),
-        cellOf(fieldInput(track, 'title', { placeholder: 'tytuł' })),
-        cellOf(fieldInput(track, 'album', { placeholder: '(brak)' })),
-        cellOf([takeTimeButton(track), playButton(track), deleteButton(state.addTracks, track, renderAdded)], 'actions'),
-      ])
-    );
-  });
-  if (!state.addTracks.length) {
-    trackBody.append(row([cellOf('brak dodanych utworów', 'muted')]));
+const renderInspector = () => {
+  const fragment = state.selected;
+  $('#inspector').hidden = !fragment;
+  $('#no-selection').hidden = Boolean(fragment);
+  if (!fragment) return;
+  const topic = fragment.kind === 'topic';
+  const object = fragment.object;
+  $('#inspect-kind').textContent = topic ? 'wejście' : 'utwór';
+  $('#inspect-kind').className = `badge ${topic ? 'topic' : ''}`;
+  $('#inspect-name').textContent = fragmentName(fragment);
+  $('#inspect-time').textContent = fmtPrecise(object.start);
+  $('#inspect-ok').checked = isReviewed(fragment);
+  $('#inspect-start').value = fmtTime(object.start);
+  $('#inspect-end-row').hidden = topic;
+  $('#inspect-label-row').hidden = !topic;
+  $('#inspect-artist-row').hidden = topic;
+  $('#inspect-title-row').hidden = topic;
+  $('#inspect-album-row').hidden = topic;
+  if (topic) {
+    $('#inspect-label').value = object.label ?? '';
+  } else {
+    // Wpisany koniec pokazujemy nawet wtedy, gdy jest błędny (przed początkiem):
+    // inaczej pole wracałoby do długości i nie dałoby się zobaczyć, co się poprawia.
+    $('#inspect-end').value = fmtTime(Number.isFinite(object.end) ? object.end : (fragmentEnd(fragment) ?? ''));
+    $('#inspect-artist').value = object.artist ?? '';
+    $('#inspect-title').value = object.title ?? '';
+    $('#inspect-album').value = object.album ?? '';
   }
-
-  const topicBody = $('#add-topics');
-  topicBody.innerHTML = '';
-  state.addTopics.forEach((topic) => {
-    const fragment = { object: topic, kind: 'topic', source: 'added' };
-    topicBody.append(
-      row([
-        reviewCell(fragment, renderAdded),
-        cellOf(fieldInput(topic, 'start', { numeric: true }), 'num'),
-        cellOf(fieldInput(topic, 'label', { placeholder: 'etykieta wejścia' })),
-        cellOf([takeTimeButton(topic), playButton(topic), deleteButton(state.addTopics, topic, renderAdded)], 'actions'),
-      ])
-    );
-  });
-  if (!state.addTopics.length) {
-    topicBody.append(row([cellOf('brak dodanych wejść', 'muted')]));
-  }
+  const added = fragment.source === 'added';
+  $('#inspect-unrecognized-row').hidden = !(added && !topic);
+  $('#inspect-unrecognized').checked = Boolean(object.unrecognized);
+  $('#inspect-unrecognized-base').hidden = !(!added && !topic);
+  $('#inspect-hide').hidden = added;
+  $('#inspect-hide').textContent = object._hidden ? 'przywróć' : 'ukryj';
+  $('#inspect-merge').disabled = !previousSameKind(fragment);
+  $('#inspect-hint').textContent = topic
+    ? 'wejście: zmiana startu zdejmuje ok; Shift+Enter = ok, Del = usuń'
+    : 'utwór: zmiana startu zdejmuje ok; Shift+Enter = ok, Del = usuń/ukryj';
 };
 
 const renderProgress = () => {
@@ -516,6 +372,9 @@ const renderMarkers = () => {
     const node = document.createElement('button');
     node.type = 'button';
     node.className = 'wave-marker';
+    node.dataset.kind = fragment.kind;
+    node.dataset.source = fragment.source;
+    node.dataset.hidden = fragment.object._hidden ? '1' : '0';
     const line = document.createElement('span');
     line.className = 'wave-marker-line';
     const dot = document.createElement('span');
@@ -538,7 +397,9 @@ const startMarkerDrag = (event, fragment, node) => {
   const startX = event.clientX;
   const startValue = Number(fragment.object.start);
   let moved = false;
-  node.setPointerCapture(event.pointerId);
+  try {
+    node.setPointerCapture(event.pointerId);
+  } catch {}
   node.classList.add('is-dragging');
   const onMove = (moveEvent) => {
     const dx = moveEvent.clientX - startX;
@@ -575,11 +436,9 @@ const renderWave = () => {
 };
 
 const renderEpisode = () => {
-  renderTracks();
-  renderTopics();
-  renderAdded();
   renderMarkers();
   renderWave();
+  renderInspector();
   refreshPublish();
 };
 
@@ -595,6 +454,7 @@ const selectFragment = (fragment) => {
     notify(`wybrany: ${fragmentName(fragment)} — Shift+Enter = ok, Del = usuń, ←/→ = przesuń`);
   }
   renderWave();
+  renderInspector();
 };
 
 const moveFragmentStart = (fragment, requested) => {
@@ -648,8 +508,7 @@ const addTrackAt = (time) => {
   state.selected = { object: track, kind: 'track', source: 'added' };
   markDirty();
   renderEpisode();
-  const inputs = document.querySelectorAll('#add-tracks tr:last-child input');
-  inputs[3]?.focus();
+  $('#inspect-artist').focus();
 };
 
 const addTopicAt = (time) => {
@@ -658,23 +517,209 @@ const addTopicAt = (time) => {
   state.selected = { object: topic, kind: 'topic', source: 'added' };
   markDirty();
   renderEpisode();
-  const inputs = document.querySelectorAll('#add-topics tr:last-child input');
-  inputs[2]?.focus();
+  $('#inspect-label').focus();
 };
 
 const playheadTime = () => $('#audio').currentTime ?? 0;
 
+const mediaDuration = () => $('#audio').duration || state.episode?.durationSec || 0;
+
+const JUMP_CHAIN_MS = 1200;
+const markerJump = { index: -1, direction: 0, at: 0 };
+const reviewJump = { time: null, direction: 0, at: 0 };
+
+/** ‹/›: kolejne znaczniki w oknie; seria naciśnięć liczy się od poprzedniego celu,
+ * bo w trakcie odtwarzania czas ucieka między kliknięciami. */
+const jumpToMarker = (direction) => {
+  const times = fragments()
+    .map((fragment) => Number(fragment.object.start))
+    .filter((time) => Number.isFinite(time))
+    .sort((left, right) => left - right);
+  if (!times.length) return;
+  const now = playheadTime();
+  const chained = markerJump.index >= 0 && markerJump.direction === direction && performance.now() - markerJump.at < JUMP_CHAIN_MS;
+  let index;
+  if (chained) {
+    index = markerJump.index + (direction < 0 ? -1 : 1);
+    if (index < 0 || index >= times.length) return;
+  } else {
+    index = direction < 0 ? times.findLastIndex((time) => time < now - 0.001) : times.findIndex((time) => time > now + 0.001);
+    if (index < 0) return;
+  }
+  const target = times[index];
+  markerJump.index = index;
+  markerJump.direction = direction;
+  markerJump.at = performance.now();
+  seek(target);
+  if (target < state.wave.start || target > state.wave.start + state.wave.span) {
+    state.wave = clampView({ start: target - state.wave.span / 2, span: state.wave.span }, mediaDuration());
+    renderWave();
+  }
+};
+
 const nextUnreviewed = (direction) => {
-  const list = fragments()
+  const pending = fragments()
     .filter((fragment) => !isReviewed(fragment))
     .sort((left, right) => Number(left.object.start) - Number(right.object.start));
-  if (!list.length) return notify('wszystkie znaczniki mają ok');
-  const now = Number(state.selected?.object.start ?? playheadTime());
-  const next =
+  if (!pending.length) return notify('wszystkie znaczniki mają ok');
+  const chained = reviewJump.time !== null && reviewJump.direction === direction && performance.now() - reviewJump.at < JUMP_CHAIN_MS;
+  const anchor = chained ? reviewJump.time : Number(state.selected?.object.start ?? playheadTime());
+  const target =
     direction > 0
-      ? list.find((fragment) => Number(fragment.object.start) > now + 0.01) ?? list[0]
-      : [...list].reverse().find((fragment) => Number(fragment.object.start) < now - 0.01) ?? list.at(-1);
-  selectFragment(next);
+      ? pending.find((fragment) => Number(fragment.object.start) > anchor + 0.01)
+      : [...pending].reverse().find((fragment) => Number(fragment.object.start) < anchor - 0.01);
+  if (!target) {
+    reviewJump.time = null;
+    return;
+  }
+  reviewJump.time = Number(target.object.start);
+  reviewJump.direction = direction;
+  reviewJump.at = performance.now();
+  selectFragment(target);
+  seek(Number(target.object.start));
+};
+
+// ——— Scalanie z poprzednim i menu kontekstowe ———
+
+const previousSameKind = (fragment) =>
+  fragments()
+    .filter((candidate) => candidate.object !== fragment.object && candidate.kind === fragment.kind)
+    .filter((candidate) => Number(candidate.object.start) < Number(fragment.object.start))
+    .sort((left, right) => Number(right.object.start) - Number(left.object.start))[0] ?? null;
+
+const joinLabels = (left, right) => {
+  const first = String(left ?? '').trim();
+  const second = String(right ?? '').trim();
+  if (!first) return second;
+  if (!second || first === second) return first;
+  return `${first} / ${second}`;
+};
+
+const mergeIntoPrevious = (fragment) => {
+  const previous = previousSameKind(fragment);
+  if (!previous) return notify('brak poprzedniego znacznika tego samego rodzaju');
+  const early = previous.object;
+  const late = fragment.object;
+  const lateEnd = fragment.kind === 'track' ? trackEnd(late) : Number.isFinite(Number(late.end)) ? Number(late.end) : null;
+  const following = fragments()
+    .filter((candidate) => candidate.object !== late && Number(candidate.object.start) > Number(late.start) + 0.001)
+    .sort((left, right) => Number(left.object.start) - Number(right.object.start))[0];
+  const mergedEnd = lateEnd ?? (following ? Number(following.object.start) : null);
+
+  if (fragment.kind === 'track') {
+    early.artist = joinLabels(early.artist, late.artist);
+    early.title = joinLabels(early.title, late.title);
+    if (!String(early.album ?? '').trim()) early.album = late.album;
+    if (Number.isFinite(mergedEnd)) early.end = mergedEnd;
+  } else {
+    early.label = joinLabels(early.label, late.label);
+    if (Number.isFinite(mergedEnd)) early.end = mergedEnd;
+  }
+
+  // „ok” przechodzi na wcześniejszy fragment; klucz późniejszego znika.
+  const earlyKey = reviewKeyOf(previous);
+  const lateKey = reviewKeyOf(fragment);
+  if (isReviewed(fragment) || isReviewed(previous)) state.reviewTouched.set(earlyKey, true);
+  if (state.repoReviewed.has(lateKey) || state.reviewTouched.get(lateKey) === true) state.reviewTouched.set(lateKey, false);
+
+  if (fragment.source === 'added') {
+    const list = fragment.kind === 'track' ? state.addTracks : state.addTopics;
+    const index = list.indexOf(late);
+    if (index >= 0) list.splice(index, 1);
+  } else {
+    late._hidden = true;
+  }
+  state.selected = previous;
+  markDirty();
+  renderEpisode();
+  notify(`scalone w: ${fragmentName(previous)}`);
+};
+
+const waveMenu = $('#wave-menu');
+let menuTime = null;
+let menuFragment = null;
+
+const closeMenu = () => {
+  waveMenu.hidden = true;
+  menuTime = null;
+  menuFragment = null;
+};
+
+const openMenuAt = (clientX, clientY, time, fragment = null) => {
+  menuTime = time;
+  menuFragment = fragment;
+  const previous = fragment ? previousSameKind(fragment) : null;
+  $('#wave-menu-add').hidden = Boolean(fragment);
+  $('#wave-menu-add-track').hidden = Boolean(fragment);
+  $('#wave-menu-ok').hidden = !fragment;
+  $('#wave-menu-edit').hidden = !fragment;
+  $('#wave-menu-merge').hidden = !previous;
+  $('#wave-menu-remove').hidden = !fragment;
+  if (fragment) {
+    $('#wave-menu-edit-mark').textContent = fragmentName(fragment);
+    $('#wave-menu-remove-mark').textContent = fragmentName(fragment);
+    $('#wave-menu-merge-mark').textContent = previous ? `${fragmentName(previous)}, ${fmtPrecise(previous.object.start)}` : '';
+    $('#wave-menu-ok-text').textContent = isReviewed(fragment) ? 'Odznacz ok' : 'Oznacz jako ok';
+    $('#wave-menu-mark').textContent = `${fragmentName(fragment)}, ${fmtPrecise(fragment.object.start)}`;
+  } else {
+    $('#wave-menu-time').textContent = fmtPrecise(time);
+    $('#wave-menu-track-time').textContent = fmtPrecise(time);
+  }
+  waveMenu.hidden = false;
+  const rect = waveMenu.getBoundingClientRect();
+  waveMenu.style.left = `${Math.min(Math.max(8, clientX), window.innerWidth - rect.width - 8)}px`;
+  waveMenu.style.top = `${Math.min(Math.max(8, clientY), window.innerHeight - rect.height - 8)}px`;
+  waveMenu.querySelector('[role="menuitem"]:not([hidden])')?.focus({ preventScroll: true });
+};
+
+// ——— Edycja znacznika w oknie ———
+
+let editFragment = null;
+
+const openEdit = (fragment) => {
+  editFragment = fragment;
+  const topic = fragment.kind === 'topic';
+  $('#marker-edit-title').textContent = topic ? 'Edytuj wejście' : 'Edytuj utwór';
+  $('#edit-end-row').hidden = topic;
+  $('#edit-label-row').hidden = !topic;
+  $('#edit-artist-row').hidden = topic;
+  $('#edit-title-row').hidden = topic;
+  $('#edit-album-row').hidden = topic;
+  $('#edit-start').value = fmtTime(fragment.object.start);
+  $('#edit-end').value = topic ? '' : fmtTime(fragmentEnd(fragment) ?? '');
+  $('#edit-label').value = fragment.object.label ?? '';
+  $('#edit-artist').value = fragment.object.artist ?? '';
+  $('#edit-title').value = fragment.object.title ?? '';
+  $('#edit-album').value = fragment.object.album ?? '';
+  $('#edit-error').textContent = '';
+  $('#marker-edit').showModal();
+};
+
+const saveEdit = () => {
+  if (!editFragment) return;
+  const start = parseTime($('#edit-start').value);
+  if (!Number.isFinite(start)) return ($('#edit-error').textContent = 'start musi być liczbą sekund albo mm:ss');
+  const topic = editFragment.kind === 'topic';
+  let end = null;
+  if (!topic) {
+    end = parseTime($('#edit-end').value);
+    if (!Number.isFinite(end)) return ($('#edit-error').textContent = 'koniec musi być liczbą sekund albo mm:ss');
+    if (end <= start) return ($('#edit-error').textContent = 'koniec musi być po początku');
+  }
+  const key = reviewKeyOf(editFragment);
+  if (start !== Number(editFragment.object.start)) clearReviewedOnMove(key);
+  editFragment.object.start = Math.round(start * 100) / 100;
+  if (topic) editFragment.object.label = $('#edit-label').value;
+  else {
+    editFragment.object.end = Math.round(end * 100) / 100;
+    editFragment.object.artist = $('#edit-artist').value;
+    editFragment.object.title = $('#edit-title').value;
+    editFragment.object.album = $('#edit-album').value.trim() || null;
+  }
+  $('#marker-edit').close();
+  editFragment = null;
+  markDirty();
+  renderEpisode();
 };
 
 // ——— Publikacja ———
@@ -757,6 +802,7 @@ const buildPayload = () => {
         album: track.album?.trim() || undefined,
         start: Number(track.start),
         durationSec: Math.round(durationSec * 100) / 100,
+        unrecognized: track.unrecognized ? true : undefined,
       });
     }),
     addTopics: state.addTopics.map((topic) =>
@@ -1359,12 +1405,15 @@ const bind = () => {
     }
   };
   audio.addEventListener('play', ensureAudio);
-  audio.addEventListener('timeupdate', renderWave);
+  audio.addEventListener('timeupdate', () => {
+    $('#clock').textContent = fmtTime(audio.currentTime ?? 0);
+    renderWave();
+  });
   audio.addEventListener('seeked', renderWave);
   audio.addEventListener('loadedmetadata', renderWave);
 
   const stage = $('#wave-stage');
-  const durationOf = () => audio.duration || state.episode?.durationSec || 0;
+  const durationOf = mediaDuration;
   // Zoom jak w lokalnym edytorze: kółko trzyma punkt pod kursorem, przyciski —
   // miejsce odtwarzania, a gdy jest poza oknem, środek.
   const zoomWave = (factor) => {
@@ -1425,9 +1474,11 @@ const bind = () => {
     pan = null;
     stage.classList.remove('is-panning');
   });
-  stage.addEventListener('dblclick', () => {
+  stage.addEventListener('dblclick', (event) => {
+    if (event.target.closest('.wave-marker')) return;
     ensureAudio();
-    void audio.play();
+    if (audio.paused) void audio.play().catch(() => {});
+    else audio.pause();
   });
 
   $('#wave-all').addEventListener('click', () => {
@@ -1441,15 +1492,214 @@ const bind = () => {
   $('#wave-add-topic').addEventListener('click', () => addTopicAt(playheadTime()));
   $('#wave-add-track').addEventListener('click', () => addTrackAt(playheadTime()));
 
+  const selected = () => state.selected;
+  $('#inspect-ok').addEventListener('change', () => {
+    const fragment = selected();
+    if (!fragment) return;
+    toggleReviewed(fragment);
+    renderInspector();
+  });
+  $('#inspect-start').addEventListener('change', () => {
+    const fragment = selected();
+    if (!fragment) return;
+    const seconds = parseTime($('#inspect-start').value);
+    if (!Number.isFinite(seconds)) return ($('#inspect-hint').textContent = 'start musi być liczbą albo mm:ss');
+    clearReviewedOnMove(reviewKeyOf(fragment));
+    fragment.object.start = Math.round(seconds * 100) / 100;
+    markDirty();
+    renderEpisode();
+  });
+  $('#inspect-end').addEventListener('change', () => {
+    const fragment = selected();
+    if (!fragment) return;
+    const seconds = parseTime($('#inspect-end').value);
+    if (!Number.isFinite(seconds)) return ($('#inspect-hint').textContent = 'koniec musi być liczbą albo mm:ss');
+    fragment.object.end = Math.round(seconds * 100) / 100;
+    markDirty();
+    renderEpisode();
+  });
+  for (const [id, field] of [
+    ['inspect-label', 'label'],
+    ['inspect-artist', 'artist'],
+    ['inspect-title', 'title'],
+    ['inspect-album', 'album'],
+  ]) {
+    $(`#${id}`).addEventListener('input', () => {
+      const fragment = selected();
+      if (!fragment) return;
+      const value = $(`#${id}`).value;
+      fragment.object[field] = field === 'album' ? value.trim() || null : value;
+      markDirty();
+      updateInspectorName();
+      renderWave();
+    });
+  }
+  $('#inspect-unrecognized').addEventListener('change', () => {
+    const fragment = selected();
+    if (!fragment) return;
+    fragment.object.unrecognized = $('#inspect-unrecognized').checked;
+    markDirty();
+  });
+  $('#inspect-play').addEventListener('click', () => {
+    if (selected()) seek(Number(selected().object.start));
+  });
+  $('#inspect-take').addEventListener('click', () => {
+    const fragment = selected();
+    if (!fragment) return;
+    clearReviewedOnMove(reviewKeyOf(fragment));
+    fragment.object.start = Math.round(playheadTime() * 100) / 100;
+    markDirty();
+    renderEpisode();
+  });
+  $('#inspect-merge').addEventListener('click', () => {
+    if (selected()) mergeIntoPrevious(selected());
+  });
+  $('#inspect-hide').addEventListener('click', () => {
+    const fragment = selected();
+    if (!fragment) return;
+    fragment.object._hidden = !fragment.object._hidden;
+    markDirty();
+    renderEpisode();
+  });
+  // Utwór z bazy nie ma pola `unrecognized` w poprawkach: strona pokazuje tę flagę
+  // tylko dla dodanych. Dlatego ukrywamy rozpoznany wiersz i dodajemy nierozpoznany
+  // w tym samym miejscu — na osi zostaje jeden fragment, a strona wie, że to zgadywanka.
+  $('#inspect-unrecognized-base').addEventListener('click', () => {
+    const fragment = selected();
+    if (!fragment || fragment.kind !== 'track' || fragment.source !== 'base') return;
+    const base = fragment.object;
+    const start = Number(base.start);
+    const end = trackEnd(base) ?? start + Number(base.durationSec ?? 0);
+    base._hidden = true;
+    const added = {
+      artist: base.artist ?? '',
+      title: '',
+      album: base.album ?? null,
+      start,
+      end,
+      unrecognized: true,
+    };
+    state.addTracks.push(added);
+    state.selected = { object: added, kind: 'track', source: 'added' };
+    markDirty();
+    renderEpisode();
+    notify('ukryto rozpoznany utwór i dodano nierozpoznany w tym miejscu');
+  });
+
+  $('#wave-prev').addEventListener('click', () => jumpToMarker(-1));
+  $('#wave-next').addEventListener('click', () => jumpToMarker(1));
+  for (const button of document.querySelectorAll('[data-skip]')) {
+    button.addEventListener('click', () => seek((audio.currentTime ?? 0) + Number(button.dataset.skip)));
+  }
+
+  $('#wave-menu-add').addEventListener('click', () => {
+    const time = menuTime;
+    closeMenu();
+    if (time !== null) addTopicAt(time);
+  });
+  $('#wave-menu-add-track').addEventListener('click', () => {
+    const time = menuTime;
+    closeMenu();
+    if (time !== null) addTrackAt(time);
+  });
+  $('#wave-menu-ok').addEventListener('click', () => {
+    const fragment = menuFragment;
+    closeMenu();
+    if (!fragment) return;
+    toggleReviewed(fragment);
+    renderEpisode();
+  });
+  $('#wave-menu-edit').addEventListener('click', () => {
+    const fragment = menuFragment;
+    closeMenu();
+    if (fragment) openEdit(fragment);
+  });
+  $('#wave-menu-merge').addEventListener('click', () => {
+    const fragment = menuFragment;
+    closeMenu();
+    if (fragment) mergeIntoPrevious(fragment);
+  });
+  $('#wave-menu-remove').addEventListener('click', () => {
+    const fragment = menuFragment;
+    closeMenu();
+    if (!fragment) return;
+    state.selected = fragment;
+    removeSelected();
+  });
+  $('#marker-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    saveEdit();
+  });
+
+  stage.addEventListener('contextmenu', (event) => {
+    if (!state.peaks) return;
+    const markerNode = event.target.closest('.wave-marker');
+    if (markerNode) {
+      const entry = markerNodes.find((item) => item.node === markerNode);
+      if (!entry) return;
+      event.preventDefault();
+      openMenuAt(event.clientX, event.clientY, Number(entry.fragment.object.start), entry.fragment);
+      return;
+    }
+    event.preventDefault();
+    const rect = stage.getBoundingClientRect();
+    const inside = event.clientX >= rect.left && event.clientX <= rect.right;
+    const time = inside ? timeAt(event.clientX) : audio.currentTime ?? 0;
+    openMenuAt(inside ? event.clientX : rect.left + rect.width / 2, inside ? event.clientY : rect.bottom, time);
+  });
+
+  document.addEventListener(
+    'pointerdown',
+    (event) => {
+      if (!waveMenu.hidden && !event.target.closest?.('.wave-menu')) closeMenu();
+    },
+    true
+  );
+  document.addEventListener(
+    'keydown',
+    (event) => {
+      if (event.key === 'Escape' && !waveMenu.hidden) {
+        event.preventDefault();
+        closeMenu();
+      }
+    },
+    true
+  );
+  window.addEventListener('scroll', closeMenu, { passive: true });
+  window.addEventListener('resize', closeMenu);
+
   document.addEventListener('keydown', (event) => {
     const target = event.target;
     const typing = target instanceof HTMLElement && ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName);
     if (event.key === 'Escape' && state.selected) {
       state.selected = null;
       renderWave();
+      renderInspector();
       return;
     }
     if (typing) return;
+    if (event.code === 'Space' || event.key === ' ') {
+      event.preventDefault();
+      ensureAudio();
+      if (audio.paused) void audio.play().catch(() => {});
+      else audio.pause();
+      return;
+    }
+    if (event.key === '+' || event.key === '=') {
+      event.preventDefault();
+      zoomWave(0.6);
+      return;
+    }
+    if (event.key === '-') {
+      event.preventDefault();
+      zoomWave(1.7);
+      return;
+    }
+    if (event.key === ',' || event.key === '.') {
+      event.preventDefault();
+      jumpToMarker(event.key === ',' ? -1 : 1);
+      return;
+    }
     if (event.shiftKey && event.key.toLowerCase() === 'n') {
       event.preventDefault();
       addTopicAt(playheadTime());
@@ -1481,11 +1731,19 @@ const bind = () => {
       nextUnreviewed(-1);
       return;
     }
-    if (state.selected && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
       event.preventDefault();
-      const step = event.shiftKey ? 1 : 0.1;
-      const delta = event.key === 'ArrowRight' ? step : -step;
-      moveFragmentStart(state.selected, Number(state.selected.object.start) + delta);
+      const direction = event.key === 'ArrowRight' ? 1 : -1;
+      if (state.selected) {
+        const step = event.shiftKey ? 1 : 0.1;
+        moveFragmentStart(state.selected, Number(state.selected.object.start) + direction * step);
+      } else {
+        state.wave = clampView(
+          { start: state.wave.start + direction * state.wave.span * 0.1, span: state.wave.span },
+          durationOf()
+        );
+        renderWave();
+      }
     }
   });
 
