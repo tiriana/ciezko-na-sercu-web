@@ -50,8 +50,10 @@ osobno to trzy wydania i trzy deploye.
 
 ## Logowanie
 
-Token jest jedynym kluczem i żyje wyłącznie w pamięci karty (nie w `localStorage`,
-`sessionStorage` ani cookie). Dwie drogi:
+Token jest jedynym kluczem: żyje w pamięci karty i w `sessionStorage` tej karty, więc
+przeżywa odświeżenie strony, ale ginie z zamknięciem karty i nie jest widoczny w innych
+kartach. Nigdy nie trafia do `localStorage` ani do cookie. Wpis wygasa po 8 godzinach,
+a 401 czyści go i pokazuje logowanie. Dwie drogi:
 
 1. **Aplikacja GitHub (device flow)** — wymaga `clientId` w `editor/config.js`. Rejestracja:
    GitHub → Settings → Developer settings → GitHub Apps → New GitHub App; „Device flow”
@@ -75,7 +77,8 @@ dozwolonych osób do utrzymywania.
    `github.com` i `static.prsa.pl`).
 2. Strona jest osobnym originem od produkcji i ma `X-Robots-Tag: noindex`.
 3. Znika po zamknięciu karty; wylogowanie czyści go natychmiast. Unieważnienie tokenu
-   w GitHubie odcina dostęp bez zmian w kodzie.
+   w GitHubie odcina dostęp bez zmian w kodzie. `sessionStorage` jest dostępny tylko
+   skryptom z tego samego originu, a CSP dopuszcza wyłącznie `script-src 'self'`.
 4. Odpowiedź 401 czyści sesję i pokazuje przycisk logowania; szkic zostaje w IndexedDB,
    więc po ponownym zalogowaniu publikacja wysyła te same zmiany. Nic nie zapisuje się
    po cichu.

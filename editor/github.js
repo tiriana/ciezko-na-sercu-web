@@ -1,13 +1,66 @@
 // Cała komunikacja z GitHubem: logowanie (device flow aplikacji albo wklejony token),
-// odczyt surowych plików i publikacja jednym commitem. Token żyje wyłącznie w pamięci
-// karty — nigdy w localStorage, sessionStorage ani cookie.
+// odczyt surowych plików i publikacja jednym commitem. Token żyje w pamięci karty
+// i w `sessionStorage` tej karty (przeżywa odświeżenie, ginie z zamknięciem) — nigdy
+// w `localStorage` ani w cookie.
 
 import { config } from './config.js';
+
+// Sesja przeżywa odświeżenie karty (sessionStorage), ale nie zamknięcie karty i nie
+// inne karty. Token nadal nie trafia do `localStorage` ani do cookie.
+const STORAGE_KEY = 'ciezko-edytor-session';
+const SESSION_MS = 8 * 60 * 60 * 1000;
 
 let token = '';
 let session = { login: '', canPush: false };
 
+const clearStored = () => {
+  try {
+    sessionStorage.removeItem(STORAGE_KEY);
+  } catch {}
+};
+
+const storeSession = () => {
+  try {
+    sessionStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({ token, session, expiresAt: Date.now() + SESSION_MS })
+    );
+  } catch {}
+};
+
+const restoreSession = () => {
+  try {
+    const raw = sessionStorage.getItem(STORAGE_KEY);
+    if (!raw) return;
+    const stored = JSON.parse(raw);
+    if (!stored?.token || !stored?.expiresAt || Date.now() > stored.expiresAt) {
+      clearStored();
+      return;
+    }
+    token = stored.token;
+    session = stored.session ?? { login: '', canPush: false };
+  } catch {
+    clearStored();
+  }
+};
+
+restoreSession();
+
 export const currentSession = () => session;
+
+/** Sprawdzenie zapisanej sesji po odświeżeniu: 401 czyści token i wraca do logowania. */
+export const verifySession = async () => {
+  if (!token) return false;
+  try {
+    const user = await apiJson('/user');
+    const repo = await apiJson(`/repos/${config.owner}/${config.repo}`);
+    session = { login: user.login, canPush: Boolean(repo.permissions?.push || repo.permissions?.admin) };
+    storeSession();
+    return session.canPush;
+  } catch {
+    return false;
+  }
+};
 
 const api = async (path, options = {}) => {
   const response = await fetch(`${config.api}${path}`, {
@@ -23,6 +76,7 @@ const api = async (path, options = {}) => {
   if (response.status === 401) {
     token = '';
     session = { login: '', canPush: false };
+    clearStored();
     throw new Error('sesja wygasła — zaloguj się ponownie');
   }
   return response;
@@ -44,6 +98,7 @@ export const signInWithToken = async (value) => {
     const repo = await apiJson(`/repos/${config.owner}/${config.repo}`);
     session = { login: user.login, canPush: Boolean(repo.permissions?.push || repo.permissions?.admin) };
     if (!session.canPush) throw new Error(`konto ${user.login} nie ma prawa zapisu w ${config.owner}/${config.repo}`);
+    storeSession();
     return session;
   } catch (error) {
     token = '';
@@ -55,6 +110,7 @@ export const signInWithToken = async (value) => {
 export const signOut = () => {
   token = '';
   session = { login: '', canPush: false };
+  clearStored();
 };
 
 /** Device flow aplikacji GitHub: użytkownik wpisuje kod na github.com, my czekamy
