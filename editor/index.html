@@ -41,7 +41,7 @@
       <section class="editor" id="editor" hidden>
         <div class="headline">
           <label class="title-field">
-            <span>tytuł odcinka</span>
+            <span>tytuł odcinka <em id="title-kind" class="badge">oficjalny</em></span>
             <input id="episode-title" type="text" />
           </label>
           <div class="meta">
@@ -49,23 +49,32 @@
             <span id="progress" class="progress"></span>
           </div>
         </div>
+        <p class="hint" id="title-hint"></p>
 
         <div class="player">
           <audio id="audio" controls preload="none"></audio>
           <div class="wave-tools">
             <span id="wave-window" class="wave-window"></span>
-            <button id="wave-all" class="ghost small" type="button">cała audycja</button>
-            <button id="wave-in" class="ghost small" type="button" title="przybliż">−</button>
-            <button id="wave-out" class="ghost small" type="button" title="oddal">+</button>
-            <button id="wave-next-unreviewed" class="ghost small" type="button">następny nieprzejrzany</button>
+            <button id="wave-add-topic" class="ghost small" type="button" title="dodaj wejście (Shift+N)">＋ wejście</button>
+            <button id="wave-add-track" class="ghost small" type="button" title="dodaj utwór (Shift+T)">＋ utwór</button>
+            <button id="wave-prev-unreviewed" class="ghost small" type="button" title="poprzedni bez ok (P)">‹ bez ok</button>
+            <button id="wave-next-unreviewed" class="ghost small" type="button" title="następny bez ok (N)">bez ok ›</button>
+            <button id="wave-out" class="ghost small" type="button" title="oddal">−</button>
+            <button id="wave-in" class="ghost small" type="button" title="przybliż">+</button>
+            <button id="wave-all" class="ghost small" type="button">całość</button>
+            <span id="wave-count" class="wave-count"></span>
           </div>
-          <canvas id="wave" height="96" title="kółko = zoom, przeciąganie = przesuwanie, klik = skok"></canvas>
+          <div class="wave-stage" id="wave-stage">
+            <canvas id="wave" height="120"></canvas>
+            <div class="wave-markers" id="wave-markers"></div>
+          </div>
         </div>
 
+        <h3>Utwory</h3>
         <table class="tracks">
           <thead>
             <tr>
-              <th class="tick" title="przejrzane">✓</th>
+              <th class="tick" title="przejrzane">ok</th>
               <th class="num">start</th>
               <th class="num">koniec</th>
               <th>wykonawca</th>
@@ -77,7 +86,54 @@
           <tbody id="tracks"></tbody>
         </table>
 
+        <h3>Dodane utwory</h3>
+        <table class="tracks">
+          <thead>
+            <tr>
+              <th class="tick">ok</th>
+              <th class="num">start</th>
+              <th class="num">koniec</th>
+              <th>wykonawca</th>
+              <th>tytuł</th>
+              <th>album</th>
+              <th class="num">akcje</th>
+            </tr>
+          </thead>
+          <tbody id="add-tracks"></tbody>
+        </table>
+
+        <h3>Wejścia</h3>
+        <table class="tracks">
+          <thead>
+            <tr>
+              <th class="tick">ok</th>
+              <th class="num">start</th>
+              <th>etykieta</th>
+              <th class="num">akcje</th>
+            </tr>
+          </thead>
+          <tbody id="topics"></tbody>
+        </table>
+
+        <h3>Dodane wejścia</h3>
+        <table class="tracks">
+          <thead>
+            <tr>
+              <th class="tick">ok</th>
+              <th class="num">start</th>
+              <th>etykieta</th>
+              <th class="num">akcje</th>
+            </tr>
+          </thead>
+          <tbody id="add-topics"></tbody>
+        </table>
+
         <p class="hint" id="hint">Zmiany zbierają się w szkicu na tej karcie — publikacja wysyła jeden commit na main.</p>
+        <p class="hint">
+          kółko = zoom w miejscu kursora, tło = przesuń, klik = przewiń, dwuklik = graj;
+          Shift+N = wejście, Shift+T = utwór; znaczniki: przeciągnij, klik = wybierz,
+          Shift+Enter = ok, Del = usuń/ukryj, N/P = następny/poprzedni bez ok
+        </p>
         <button id="discard" type="button" class="ghost small">odrzuć szkic</button>
       </section>
     </main>

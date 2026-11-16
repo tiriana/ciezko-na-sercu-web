@@ -232,7 +232,7 @@ try {
   else fail('gałąź nie została przesunięta');
 
   // Ukrycie utworu: osobna poprawka, ten sam jeden commit.
-  await page.locator('#tracks tr:first-child td:last-child button').click();
+  await page.locator('#tracks tr:first-child td.actions button:last-child').click();
   const hidden = await publishAndWait();
   const hiddenBlob = hidden.blobs.find((step) => step.kind === 'blob' && step.content.includes('"hide": true'));
   if (hiddenBlob) ok('ukrycie utworu trafia do poprawek');
@@ -252,7 +252,9 @@ try {
   // Znaczniki „przejrzane” jadą do repo tym samym commitem, więc wracają po przeładowaniu
   // karty i widzi je także lokalny edytor.
   const beforeReview = await page.locator('#progress').textContent();
-  await page.locator('#tracks tr:first-child td.done-cell input').click();
+  const reviewBox = page.locator('#tracks tr:nth-child(2) td.done-cell input');
+  await reviewBox.click();
+  const reviewAfterClick = await reviewBox.isChecked();
   await page.waitForFunction(
     (before) => document.querySelector('#progress')?.textContent !== before,
     beforeReview,
@@ -267,9 +269,35 @@ try {
   if (reviewedBlob) ok('znaczniki „przejrzane” trafiają do treści pliku');
   else fail('w plikach commita brak znaczników „przejrzane”');
 
+  // Dodanie wejścia i utworu: nowe pozycje jadą w addTopics/addTracks.
+  await page.locator('#wave-add-topic').click();
+  const topicInputs = page.locator('#add-topics tr:last-child input[type="text"]');
+  await topicInputs.nth(0).fill('1:00');
+  await topicInputs.nth(1).fill('Wejście z edytora online');
+  await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
+  const addedTopic = await publishAndWait();
+  const topicBlob = addedTopic.blobs.find(
+    (step) => step.kind === 'blob' && step.content.includes('"addTopics"') && step.content.includes('Wejście z edytora online')
+  );
+  if (topicBlob) ok('dodane wejście trafia do addTopics');
+  else fail('dodane wejście nie trafiło do pliku poprawek');
+
+  await page.locator('#wave-add-track').click();
+  const trackInputs = page.locator('#add-tracks tr:last-child input[type="text"]');
+  await trackInputs.nth(0).fill('2:00');
+  await trackInputs.nth(2).fill('Dodany Wykonawca');
+  await trackInputs.nth(3).fill('Dodany Tytuł');
+  await page.waitForFunction(() => !document.querySelector('#publish').disabled, null, { timeout: 5000 });
+  const addedTrack = await publishAndWait();
+  const trackBlob = addedTrack.blobs.find(
+    (step) => step.kind === 'blob' && step.content.includes('"addTracks"') && step.content.includes('Dodany Wykonawca')
+  );
+  if (trackBlob) ok('dodany utwór trafia do addTracks');
+  else fail('dodany utwór nie trafił do pliku poprawek');
+
   // Strażnik przed zepsutym plikiem: koniec przed początkiem nie może dojść do GitHuba.
   const beforeGuard = publishes.length;
-  const endInput = page.locator('#tracks tr:first-child td:nth-child(3) input');
+  const endInput = page.locator('#tracks tr:nth-child(2) td:nth-child(3) input');
   const originalEnd = await endInput.inputValue();
   await endInput.fill('0:01');
   await endInput.press('Tab');
@@ -301,11 +329,9 @@ try {
     { timeout: 10000 }
   );
   ok('szkic przeżył przeładowanie karty');
-  if (await page.locator('#tracks tr:first-child td.done-cell input').isChecked()) {
-    ok('znacznik „przejrzane” wraca z repozytorium po przeładowaniu');
-  } else {
-    fail('znacznik „przejrzane” nie wrócił z repozytorium');
-  }
+  const reviewAfterReload = await page.locator('#tracks tr:nth-child(2) td.done-cell input').isChecked();
+  if (reviewAfterReload === reviewAfterClick) ok('znacznik „przejrzane” wraca z repozytorium po przeładowaniu');
+  else fail(`znacznik „przejrzane” nie wrócił z repozytorium (${reviewAfterClick} → ${reviewAfterReload})`);
 
   // Offline po wcześniejszym odczycie: dane z pamięci, nie biała strona.
   offline = true;
