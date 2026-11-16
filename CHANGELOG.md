@@ -1,3 +1,9 @@
+## [1.84.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.84.2...v1.84.3) (2026-11-16)
+
+### Bug Fixes
+
+* **edytor:** oś w skali odtwarzacza i ✓ dla całej audycji ([#103](https://github.com/tiriana/ciezko-na-sercu-web/issues/103)) ([d586c6b](https://github.com/tiriana/ciezko-na-sercu-web/commit/d586c6b64051642183ade32b593848e44e3b9196))
+
 ## [1.84.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.84.1...v1.84.2) (2026-11-16)
 
 ### Bug Fixes
