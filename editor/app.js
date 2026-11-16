@@ -7,7 +7,15 @@ import {
   validateSavePayload,
   validateTrackTimes,
 } from './lib/overrides.mjs';
-import { currentSession, pollDeviceToken, publishChanges, signInWithToken, signOut, startDeviceFlow } from './github.js';
+import {
+  currentSession,
+  pollDeviceToken,
+  publishChanges,
+  signInWithToken,
+  signOut,
+  startDeviceFlow,
+  verifySession,
+} from './github.js';
 import { deleteDraft, getDraft, putDraft } from './store.js';
 import { loadJson, loadJsonFresh } from './source.js';
 import { config } from './config.js';
@@ -1510,6 +1518,8 @@ const bind = () => {
 const load = async () => {
   bind();
   bootAuth();
+  // Zapisana sesja jest od razu widoczna; w tle sprawdzamy, czy GitHub jej nie unieważnił.
+  void verifySession().then(() => bootAuth());
   const [catalog, titles, pkg] = await Promise.all([
     loadJson('data/catalog.json'),
     loadJson('data/titles.json').catch(() => null),

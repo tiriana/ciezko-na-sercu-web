@@ -347,12 +347,11 @@ try {
   await page.locator('#episodes li button').first().click();
   await page.waitForSelector('#tracks tr');
 
-  // Przeładowanie karty zgubiło token (żyje tylko w pamięci), więc logujemy się znowu.
-  await page.locator('#sign-in').click();
-  await page.locator('#token').fill('testowy-token');
-  await page.locator('#login-token').click();
-  await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, { timeout: 10000 });
-  ok('szkic i ponowne logowanie po przeładowaniu');
+  // Sesja przeżywa odświeżenie karty (sessionStorage), więc nie trzeba się logować ponownie.
+  await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, {
+    timeout: 10000,
+  });
+  ok('sesja przeżyła przeładowanie karty');
 
   // Konflikt: gałąź zmieniła się w trakcie publikacji — edytor pobiera ref ponownie.
   conflictPending = true;
@@ -438,10 +437,9 @@ try {
   // nie może zablokować zapisu komunikatem o cudzej zmianie.
   await page.reload({ waitUntil: 'domcontentloaded' });
   await page.waitForSelector('#episodes li button');
-  await page.locator('#sign-in').click();
-  await page.locator('#token').fill('trzeci-token');
-  await page.locator('#login-token').click();
-  await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, { timeout: 10000 });
+  await page.waitForFunction(() => document.querySelector('#status')?.textContent.includes('radomir'), null, {
+    timeout: 10000,
+  });
   await page.locator('#tab-tags').click();
   await page.waitForFunction(() => document.querySelectorAll('#tag-rows tr').length > 0, null, { timeout: 60000 });
   await page.locator('#alias-from').fill('Drugi Wariant');
