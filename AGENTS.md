@@ -37,6 +37,14 @@ w `lib/*.mjs` (`overrides`, `tags`, `aliases`) i nie wolno ich kopiować do `edi
 `scripts/build-editor.mjs` dokłada je do katalogu publikacji. Zmiana w `editor/`, `lib/`
 albo `scripts/build-editor.mjs` uruchamia `editor.yml` (testy, build, deploy).
 
+## Tytuły odcinków
+
+Tytuł w katalogu jest oficjalny (z serwisu); gdy redakcja go jeszcze nie ustawiła, jest
+techniczny („Ciężko na sercu 11 listopada godz. 00:06”). Nasz tytuł nieoficjalny
+(`data/titles.json`) pokazujemy tylko wtedy, gdy oficjalny jest techniczny — po zmianie
+tytułu w serwisie wygrywa oficjalny. `scripts/refresh-titles.mjs` aktualizuje katalog
+także wtedy, gdy mamy już tytuł nieoficjalny.
+
 ## Osoby w creditsach
 
 Nową osobę dodajemy do `data/people.json` z polem `url` tylko po sprawdzeniu wyszukiwaniem

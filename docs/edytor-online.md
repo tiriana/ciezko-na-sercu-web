@@ -13,8 +13,9 @@ uruchamiania czegokolwiek lokalnie. Nie ma backendu: przeglądarka czyta dane pr
 
 1. Edytor pobiera `data/catalog.json`, `data/titles.json` i plik odcinka
    (`data/episodes/<uuid>.json`) oraz jego poprawki (`data/overrides/<uuid>.json`).
-2. Zmiany w tabeli utworów trafiają do szkicu w IndexedDB (per urządzenie). Nic nie idzie
-   do sieci, dopóki nie klikniesz „Publikuj”.
+2. Edytor pokazuje utwory i wejścia (także dodane) oraz znaczniki na waveformie; zmiany
+   trafiają do szkicu w IndexedDB (per urządzenie). Nic nie idzie do sieci, dopóki nie
+   klikniesz „Publikuj”.
 3. Publikacja scala szkic z istniejącymi poprawkami (`mergeOverrides`) i wysyła **jeden
    commit** na `main` przez Git Data API: blob → tree (`base_tree`) → commit → `PATCH` ref.
    Commit ma typ `fix`, więc semantic-release zrobi patch i `deploy.yml` opublikuje stronę.
@@ -22,8 +23,13 @@ uruchamiania czegokolwiek lokalnie. Nie ma backendu: przeglądarka czyta dane pr
    i przy zmianie znaczników `data/reviewed.json`. Zapis aliasów to osobny commit na
    `data/aliases.json` (widok „Tagi i aliasy”).
 5. Znaczniki „przejrzane” czytamy z `data/reviewed.json` i tam wracają, kluczowane
-   etykietą utworu (`t:wykonawca|tytuł`), więc postęp widać też w lokalnym edytorze
-   i na stronie.
+   etykietą fragmentu (`t:wykonawca|tytuł` dla utworu, `p:etykieta` dla wejścia), więc
+   postęp widać też w lokalnym edytorze i na stronie.
+6. Tytuł: oficjalny pochodzi z katalogu, nasz nieoficjalny z `data/titles.json`.
+   Nieoficjalny pokazujemy **tylko wtedy**, gdy oficjalny jest techniczny
+   („Ciężko na sercu 11 listopada godz. 00:06”). Gdy radio doda własny tytuł, wygrywa
+   oficjalny, a nasz zostaje w pliku bez wpływu na stronę. W edytorze widać plakietkę
+   „oficjalny/nieoficjalny”; wyczyszczenie pola wraca do oficjalnego.
 
 Jeden commit zamiast pliku po pliku jest istotny: każdy push do `main` zmieniający
 `data/**` odpala `repair.yml`, a `release.yml` robi wydanie, więc trzy pliki zapisane
@@ -89,9 +95,13 @@ rzeczywistym — przeglądarka nie policzy więc waveformu sama. Liczy go `ffmpe
 3. Edytor czyta `index.json`, żeby nie pytać o nieistniejące pliki, a potem pobiera
    pojedynczy `.bin`.
 
-W oknie waveformu kółko myszy przybliża i oddala wokół kursora, przeciąganie przesuwa
-okno, klik przeskakuje w nagraniu. Niebieskie znaczniki to granice utworów, zielone —
-utwory oznaczone jako przejrzane; czerwona kreska pokazuje miejsce odtwarzania.
+W oknie waveformu kółko myszy przybliża i oddala wokół kursora (jak w lokalnym
+edytorze), przyciski −/+ wokół miejsca odtwarzania, przeciąganie tła przesuwa okno,
+klik przeskakuje, dwuklik gra. Znaczniki to granice utworów (niebieskie) i wejść
+(turkusowe); zielone z ✓ są oznaczone jako przejrzane, wybrany ma zieloną obwódkę.
+Znacznik przeciąga się myszką albo strzałkami po wybraniu; `Shift+Enter` oznacza ok,
+`Del` usuwa dodany fragment albo ukrywa bazowy, `N`/`P` skacze po nieprzejrzanych.
+`Shift+N` dodaje wejście, `Shift+T` utwór w miejscu odtwarzania.
 
 Skala waveformu jest skalą odtwarzacza (`scripts/lib/timeline.mjs`), bo nagłówek mp3 bywa
 krótszy niż realne audio — bez tego kreska rozjeżdża się ku końcowi audycji.
@@ -117,7 +127,7 @@ przechodził mimo 404 na większości stron, bo pytał trzy adresy i trafiał w 
 
 1. Szkice (niezapisane poprawki) żyją w IndexedDB — per urządzenie, dopóki ich nie
    opublikujesz. Znaczniki „przejrzane” są w repozytorium, więc widać je wszędzie.
-2. Edytor obsługuje utwory, tytuł odcinka oraz tagi i aliasy; wejścia, streszczenie
+2. Edytor obsługuje utwory, wejścia, tytuł odcinka oraz tagi i aliasy; streszczenie
    i creditsy zostają w edytorze lokalnym (`npm run edytor`).
 3. Audio pobiera się dopiero po kliknięciu play albo waveformu — 110-minutowy plik nie
    schodzi przy samym otwarciu odcinka.
