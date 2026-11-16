@@ -223,6 +223,15 @@ try {
   const episodeSlug = await page.evaluate(() => document.querySelector('#episode-meta').textContent.split(' · ')[0]);
   if (episodeSlug) ok(`wczytany odcinek: ${episodeSlug}`);
 
+  // Lista pokazuje ✓ przy audycji, w której wszystkie znaczniki mają ok.
+  await page.waitForSelector('.episode-ok', { timeout: 60000 });
+  const completeEpisode = await page.evaluate(() => {
+    const button = [...document.querySelectorAll('#episodes li button')].find((node) => node.querySelector('.episode-ok'));
+    return button ? button.textContent.trim() : null;
+  });
+  if (completeEpisode) ok(`audycja w całości ok na liście: ${completeEpisode}`);
+  else fail('brak oznaczenia całej audycji jako ok na liście');
+
   await selectTrack();
   ok('klik w znacznik otwiera panel danych');
 
@@ -534,6 +543,31 @@ try {
     ok('druga publikacja aliasów nie gubi pierwszej');
   } else {
     fail('druga publikacja aliasów nadpisała pierwszą');
+  }
+
+  // Skala odtwarzacza: dla odcinka, którego plik deklaruje dłuższy czas (skala dekodera),
+  // oś musi iść za peaks, inaczej waveform i czasy rozjeżdżają się ku końcowi.
+  await page.locator('#tab-episodes').click();
+  await page.locator('#filter').fill('');
+  await page.locator('#episodes li button').nth(1).click();
+  await page.waitForSelector('.wave-marker');
+  const windowText = await page.locator('#wave-window').textContent();
+  const peaksIndex = JSON.parse(await readFile(join(REPO, 'data/peaks/index.json'), 'utf8'));
+  const secondSlug = await page.evaluate(() => document.querySelector('#episode-meta').textContent.split(' · ')[0]);
+  const catalog = JSON.parse(await readFile(join(REPO, 'data/catalog.json'), 'utf8'));
+  const episodeEntry = catalog.episodes.find((entry) => entry.slug === secondSlug);
+  const peaks = peaksIndex.episodes[episodeEntry?.id];
+  const expectedEnd = peaks ? Math.round(peaks.slots / peaks.perSec) : null;
+  const shownEnd = (() => {
+    const [, end] = (windowText ?? '').split(' – ');
+    if (!end) return null;
+    const [minutes, seconds] = end.split(':').map(Number);
+    return minutes * 60 + seconds;
+  })();
+  if (expectedEnd !== null && shownEnd !== null && Math.abs(shownEnd - expectedEnd) <= 1) {
+    ok(`oś idzie za skalą odtwarzacza (${windowText})`);
+  } else {
+    fail(`oś nie zgadza się z peaks: okno ${windowText}, peaks ${expectedEnd}`);
   }
 
   if (external.length === 0) ok('żadne żądanie nie wyszło poza mock');

@@ -19,7 +19,7 @@ import {
 import { deleteDraft, getDraft, putDraft } from './store.js';
 import { loadJson, loadJsonFresh } from './source.js';
 import { config } from './config.js';
-import { clampView, drawWaveform, loadPeaks } from './peaks.js';
+import { clampView, drawWaveform, loadPeaks, peaksMeta } from './peaks.js';
 import {
   aliasCandidates,
   aliasFileKey,
@@ -40,7 +40,14 @@ const MIN_FRAGMENT = 1;
 const state = {
   catalog: null,
   titles: null,
+  // Stan „cała audycja ok” liczony z plików odcinków i `data/reviewed.json`.
+  episodeStatus: new Map(),
+  statusTimer: null,
   episode: null,
+  // Długość w skali odtwarzacza. Plik odcinka bywa w skali dekodera (dłuższej
+  // o ~0,23%), a waveform i czasy znaczników są w skali nagłówka mp3, więc oś liczymy
+  // z peaks, nie z `episode.durationSec`.
+  playerDuration: 0,
   override: null,
   // Model jak w lokalnym edytorze: efektywne listy utworów i wejść (baza + poprawki),
   // osobno dodane pozycje i znaczniki ukrycia. Publikacja liczy różnice względem pliku
@@ -121,6 +128,60 @@ const searchKey = (value) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+const reviewKeyOfTrack = (track) => {
+  const name = [normalize(track.artist), normalize(track.title)].filter(Boolean).join('|');
+  return name ? `t:${name}` : `t:${Number(track.start).toFixed(2)}`;
+};
+
+const reviewKeyOfTopic = (topic) => {
+  const label = normalize(topic.label);
+  return label ? `p:${label}` : `p:${Number(topic.start).toFixed(2)}`;
+};
+
+const scheduleListRender = () => {
+  clearTimeout(state.statusTimer);
+  state.statusTimer = setTimeout(renderList, 150);
+};
+
+/** „Cała audycja ok” = każdy znacznik (utwory, wejścia, dodane) ma wpis w reviewed.json.
+ * Liczymy w tle po kawałku, bo to 109 plików odcinków — z cache to kilka kilobajtów. */
+const loadEpisodeStatus = async () => {
+  const reviewed = await loadJson('data/reviewed.json').catch(() => null);
+  const queue = [...(state.catalog?.episodes ?? [])];
+  const worker = async () => {
+    for (;;) {
+      const entry = queue.shift();
+      if (!entry) return;
+      const [file, override] = await Promise.all([
+        loadJson(`data/episodes/${entry.id}.json`).catch(() => null),
+        loadJson(`data/overrides/${entry.id}.json`).catch(() => null),
+      ]);
+      if (!file) continue;
+      const effective = buildEffective(file, override);
+      const keys = [
+        ...effective.tracks.filter((track) => !track._hidden).map(reviewKeyOfTrack),
+        ...(override?.addTracks ?? []).map(reviewKeyOfTrack),
+        ...effective.topics.filter((topic) => !topic._hidden).map(reviewKeyOfTopic),
+        ...(override?.addTopics ?? []).map(reviewKeyOfTopic),
+      ];
+      const marks = new Set(Object.keys(reviewed?.episodes?.[entry.id] ?? {}));
+      const done = keys.filter((key) => marks.has(key)).length;
+      state.episodeStatus.set(entry.id, { total: keys.length, done, ok: keys.length > 0 && done === keys.length });
+      scheduleListRender();
+    }
+  };
+  await Promise.all(Array.from({ length: 6 }, () => worker()));
+  renderList();
+};
+
+const refreshEpisodeStatus = () => {
+  if (!state.episode) return;
+  const keys = fragments().map(reviewKeyOf);
+  const done = fragments().filter(isReviewed).length;
+  state.episodeStatus.set(state.episode.id, { total: keys.length, done, ok: keys.length > 0 && done === keys.length });
+  renderList();
+};
+
 const renderList = () => {
   const filter = searchKey($('#filter').value);
   const items = (state.catalog?.episodes ?? []).filter(
@@ -138,6 +199,14 @@ const renderList = () => {
     const label = document.createElement('span');
     label.textContent = shownTitle(episode);
     button.append(time, label);
+    const status = state.episodeStatus.get(episode.id);
+    if (status?.ok) {
+      const badge = document.createElement('span');
+      badge.className = 'episode-ok';
+      badge.textContent = '✓';
+      badge.title = 'wszystkie znaczniki oznaczone jako ok';
+      button.append(badge);
+    }
     button.addEventListener('click', () => void openEpisode(episode).catch((error) => setStatus(error.message, 'error')));
     li.append(button);
     list.append(li);
@@ -419,7 +488,7 @@ const startMarkerDrag = (event, fragment, node) => {
 
 const renderWave = () => {
   const audio = $('#audio');
-  const duration = state.episode?.durationSec ?? 0;
+  const duration = mediaDuration();
   state.wave = clampView(state.wave, duration);
   drawWaveform($('#wave'), {
     peaks: state.peaks,
@@ -452,7 +521,7 @@ const selectFragment = (fragment, { center = true } = {}) => {
     if (center) {
       state.wave = clampView(
         { start: Number(fragment.object.start) - state.wave.span / 2, span: state.wave.span },
-        state.episode?.durationSec ?? 0
+        mediaDuration()
       );
     }
     notify(`wybrany: ${fragmentName(fragment)} — Shift+Enter = ok, Del = usuń, ←/→ = przesuń`);
@@ -526,7 +595,7 @@ const addTopicAt = (time) => {
 
 const playheadTime = () => $('#audio').currentTime ?? 0;
 
-const mediaDuration = () => $('#audio').duration || state.episode?.durationSec || 0;
+const mediaDuration = () => $('#audio').duration || state.playerDuration || state.episode?.durationSec || 0;
 
 const JUMP_CHAIN_MS = 1200;
 const markerJump = { index: -1, direction: 0, at: 0 };
@@ -842,7 +911,7 @@ const validateModel = (payload) => {
       })),
     ...payload.addTracks.map((track) => ({ start: track.start, end: track.durationSec ? track.start + track.durationSec : undefined })),
   ];
-  return validateTrackTimes(effective, { durationSec: state.episode.durationSec ?? 0 }).slice(0, 3).join('; ') || null;
+  return validateTrackTimes(effective, { durationSec: mediaDuration() }).slice(0, 3).join('; ') || null;
 };
 
 const publish = async () => {
@@ -863,7 +932,7 @@ const publish = async () => {
 
   const next = mergeOverrides(state.override, payload);
   // Strażnik przed produkcją: plik, którego nie przyjmie schemat strony, wywaliłby build.
-  const problems = validateOverride(next, { durationSec: state.episode.durationSec ?? 0 });
+  const problems = validateOverride(next, { durationSec: mediaDuration() });
   if (problems.length) return notify(`nie publikuję — ${problems.slice(0, 3).join('; ')}`, 'error');
 
   const files = {};
@@ -913,7 +982,7 @@ const publish = async () => {
     clearTimeout(state.draftTimer); // odroczony zapis nie może wskrzesić usuniętego szkicu
     await deleteDraft(state.episode.id);
     renderTitle();
-    renderList();
+    refreshEpisodeStatus();
     renderEpisode();
     notify(`zapisane: ${result.url}`);
     setStatus(`zalogowany jako ${currentSession().login}`, 'ok');
@@ -938,10 +1007,11 @@ const openEpisode = async (episode) => {
 
   // Pliki odcinka czytamy bez pamięci: po własnej publikacji karta musi pokazać nowy
   // stan, a nie kopię sprzed commita. Cache zostaje jako ratunek bez sieci.
-  const [file, override, peaks, reviewedFile, titles, draft] = await Promise.all([
+  const [file, override, peaks, peaksInfo, reviewedFile, titles, draft] = await Promise.all([
     loadJsonFresh(`data/episodes/${episode.id}.json`).catch(() => loadJson(`data/episodes/${episode.id}.json`)),
     loadJsonFresh(`data/overrides/${episode.id}.json`).catch(() => loadJson(`data/overrides/${episode.id}.json`).catch(() => null)),
     loadPeaks(episode.id).catch(() => null),
+    peaksMeta(episode.id).catch(() => null),
     loadJsonFresh('data/reviewed.json').catch(() => loadJson('data/reviewed.json').catch(() => null)),
     loadJsonFresh('data/titles.json').catch(() => state.titles),
     getDraft(episode.id),
@@ -953,6 +1023,15 @@ const openEpisode = async (episode) => {
   state.episode = { ...episode, ...file };
   state.override = override;
   state.peaks = peaks;
+  // Skala odtwarzacza: długość z peaks (policzona z nagłówka mp3), a nie z pliku
+  // odcinka, który dla części audycji jest w skali dekodera.
+  state.playerDuration = peaksInfo?.durationSec ?? (peaksInfo ? peaksInfo.slots / peaksInfo.perSec : null) ?? file.durationSec ?? episode.durationSec ?? 0;
+  const declared = Number(file.durationSec ?? episode.durationSec);
+  const scaleNote =
+    Number.isFinite(declared) && declared > 0 && Math.abs(declared - state.playerDuration) > 1
+      ? ` · plik deklaruje ${fmtTime(declared)} (skala dekodera)`
+      : '';
+  $('#episode-meta').textContent = `${slugOf(episode)} · ${fmtTime(state.playerDuration)}${scaleNote} · ${episode.audioUrl ? 'audio gotowe' : 'brak audio'}`;
   state.reviewedFile = reviewedFile;
   state.titles = titles ?? state.titles;
   state.repoReviewed = new Set(Object.keys(reviewedFile?.episodes?.[episode.id] ?? {}));
@@ -964,7 +1043,7 @@ const openEpisode = async (episode) => {
   state.addTracks = (override?.addTracks ?? []).map((track) => ({ ...track }));
   state.addTopics = (override?.addTopics ?? []).map((topic) => ({ ...topic }));
   state.baseline = snapshot();
-  state.wave = { start: 0, span: file.durationSec ?? episode.durationSec ?? 0 };
+  state.wave = { start: 0, span: state.playerDuration };
 
   renderTitle();
   if (draft?.payload) {
@@ -1792,6 +1871,7 @@ const load = async () => {
   state.titles = titles;
   if (pkg?.version) $('#version').textContent = `v${pkg.version}`;
   renderList();
+  void loadEpisodeStatus();
 };
 
 void load().catch((error) => setStatus(`błąd: ${error.message}`, 'error'));
