@@ -1,13 +1,36 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1548.96,
+      "label": "Norweski black‑metalowy zespół 1349 – koncerty i nowy album",
+      "start": 1539.34
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.43,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht, gospodarz audycji Ciężko na sercu.…",
+      "start": 8.27,
+      "end": 47.15
+    },
+    {
+      "label": "Immolation, czyli nowojorscy pionierzy death metalu, zawsze chętnie posieką Was na…",
+      "start": 778.9,
+      "end": 855.82
+    },
+    {
+      "label": "Na koncert grupy A Place to Barry Strangers wybierzcie się koniecznie, a będzie okazja i…",
+      "start": 1278,
+      "end": 1317.14
     }
   ]
 }

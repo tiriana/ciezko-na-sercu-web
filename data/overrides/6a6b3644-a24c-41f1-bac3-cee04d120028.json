@@ -1,7 +1,43 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 45.89,
+      "label": "Soen, Odland i TROP — listopadowa trasa progresywna",
+      "start": 8.56
+    },
+    {
+      "time": 439.99,
+      "label": "Piąta edycja Black Metal Night Festival w Szczecinie",
+      "start": 439.99
+    },
+    {
+      "time": 2031.17,
+      "label": "Geoff Tate na dwóch koncertach w Polsce",
+      "start": 1937.87
+    },
+    {
+      "time": 2441.24,
+      "label": "Planet Hell i premiera albumu Mission 3",
+      "start": 2433.04
+    },
+    {
+      "time": 3104.62,
+      "label": "Lucifer i cover Poszłabym za Tobą Breakoutu",
+      "start": 3085.68
+    },
+    {
+      "time": 3692.13,
+      "label": "Ulcerate i album Cutting the Throat of God",
+      "start": 3669.23
+    },
+    {
+      "time": 5758.11,
+      "label": "Sepultura w pożegnalnej trasie w katowickim Spodku",
+      "start": 5713.01
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +45,6 @@
       "start": 0.68,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

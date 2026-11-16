@@ -1,13 +1,56 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1545.64,
+      "label": "802: syntezatory i thrash w duchu lat 80.",
+      "start": 1514.74
+    },
+    {
+      "time": 3094.34,
+      "label": "Tesseract 5 lutego w gdańskim klubie B90",
+      "start": 3064.21
+    },
+    {
+      "time": 4339.66,
+      "label": "Napalm Death, Crowbar i Full of Hell w Progresji",
+      "start": 4322.86
+    },
+    {
+      "time": 4709.72,
+      "label": "Saxon i Girlschool w Krakowie i Warszawie",
+      "start": 4694.74
+    },
+    {
+      "time": 5456.12,
+      "label": "Jubileusze płyt Bullet For My Valentine i Trivium",
+      "start": 5416.02
+    },
+    {
+      "time": 6168.79,
+      "label": "1914 wraca do koncertowania mimo wojny",
+      "start": 6140.21
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.58,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Od kilku minut mamy środę, a więc czas na Ciężko na sercu. Audycję poświęconą dźwiękom,…",
+      "start": 8.46,
+      "end": 54.42
+    },
+    {
+      "label": "Impreza, na której byłem w Kopenhadze nazywa się When Copenhagen Freezes Over i jest…",
+      "start": 351.12,
+      "end": 442.9
     }
   ]
 }

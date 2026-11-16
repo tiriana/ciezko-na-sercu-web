@@ -1,13 +1,41 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 29.93,
+      "label": "Wstęp i zapowiedź festiwalu Summer Dying Loud oraz pierwsze wrażenia z przyjazdu na teren",
+      "start": 8.18
+    },
+    {
+      "time": 3132.82,
+      "label": "Problemy techniczne i niepowodzenie powrotu zespołu Immemorial",
+      "start": 3091.86
+    },
+    {
+      "time": 3965.45,
+      "label": "Porównanie albumu Overkill \"Scorched\" z Metalliką i dyskusja o scenie metalowej",
+      "start": 3935.15
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.58,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Ci, co byli w Aleksandrowie Łódzkim doskonale wiedzą, co się udało, ale na pewno chętnie…",
+      "start": 5839.44,
+      "end": 5871.73
+    },
+    {
+      "label": "na baczność, żeby rzeczywiście udało się taki koncert dowieźć i nam się udało. Koncerty…",
+      "start": 5940.91,
+      "end": 6009.26
     }
   ]
 }

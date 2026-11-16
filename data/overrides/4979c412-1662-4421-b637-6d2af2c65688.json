@@ -1,13 +1,46 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 30,
+      "label": "Wprowadzenie i opis festiwalu Obscenic Stream oraz jego charakterystyka jako wydarzenia ekstremalnego metalowego",
+      "start": 15.28
+    },
+    {
+      "time": 2196.82,
+      "label": "Anegdoty o Danie Lilkerze i jego dalszej aktywności na scenie metalowej",
+      "start": 2128.18
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 7.65,
       "durationSec": 8.06
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Obstynik Stream to festiwal czterodniowy, albo i pięciodniowy, jeżeli liczyć niedzielne…",
+      "start": 254.7,
+      "end": 359.31
+    },
+    {
+      "label": "Mamy na Obstynic Stream przedstawicieli wszystkich ras. Na żadnym innym festiwalu w…",
+      "start": 3809.52,
+      "end": 3966
+    },
+    {
+      "label": "Utwór tytułowy ze Scam usłyszeliśmy na Obscene Extreme, chociaż nikogo ze składu…",
+      "start": 5339.34,
+      "end": 5423.63
+    },
+    {
+      "label": "Mniej więcej rówieśnikiem Suffer the Children jest numer The world keeps turning, który…",
+      "start": 5681.94,
+      "end": 5700.21
     }
   ]
 }

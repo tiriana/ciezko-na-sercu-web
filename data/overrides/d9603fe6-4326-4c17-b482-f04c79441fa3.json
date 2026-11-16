@@ -1,13 +1,36 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 822.16,
+      "label": "Współczesna scena black metalowa i thrashowa",
+      "start": 806.99
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.76,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Dobry wieczór Państwu, mam nadzieję, że nie śpicie jak kamień, bo ja tu audycję zaczynam.…",
+      "start": 367.82,
+      "end": 524.82
+    },
+    {
+      "label": "Hesperia może i przybywa ze słonecznej Italii, czy raczej się w niej okopała, ale…",
+      "start": 2364.18,
+      "end": 2385.26
+    },
+    {
+      "label": "Niektórzy z was pewnie rozpoznali w wysłuchanym właśnie utworze Cover Talkę, ale…",
+      "start": 2712.08,
+      "end": 2789.78
     }
   ]
 }

@@ -1,13 +1,41 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 350.02,
+      "label": "Relacja z festiwalu Bilarm w Oslo i dyskusja o przyszłości sceny metalowo‑punkowej",
+      "start": 230.42
+    },
+    {
+      "time": 1147.36,
+      "label": "Omówienie konkursu Road to Mystic i prognozy dotyczące przyszłości metalu",
+      "start": 1147.36
+    },
+    {
+      "time": 5605.43,
+      "label": "Prezentacja zespołu Sewer Dwellers oraz ich twórczości",
+      "start": 5590.51
+    },
+    {
+      "time": 6403.7,
+      "label": "Zespół Axe Crazy, ich album „Creatures of the Hunt” i podsumowanie audycji",
+      "start": 6370.74
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.7,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Na drugim biegunie tego, co pojawiło się w konkursie Road to Mystic w stosunku do tego…",
+      "start": 4928.85,
+      "end": 5016.94
     }
   ]
 }

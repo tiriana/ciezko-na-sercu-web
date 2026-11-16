@@ -1,13 +1,31 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1642.71,
+      "label": "Terror w Hydrozagadce, support Nasty i Kombast",
+      "start": 1623.09
+    },
+    {
+      "time": 5815.55,
+      "label": "Life of Agony akustycznie we wrocławskim Starym Klasztorze",
+      "start": 5770.03
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.35,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Za nami Chelsea Green Vitriol, Dine Phytos też już był. To jeszcze czwarty z zespołów,…",
+      "start": 5301.2,
+      "end": 5340.08
     }
   ]
 }

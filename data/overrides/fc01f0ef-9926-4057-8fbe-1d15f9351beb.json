@@ -1,7 +1,23 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2941.17,
+      "label": "Planet Hell i Lemowska Mission 3",
+      "start": 2904.91
+    },
+    {
+      "time": 3601.12,
+      "label": "Asur i album Asurbanipal",
+      "start": 3531.6
+    },
+    {
+      "time": 6619.1,
+      "label": "Thao i Fading Backwards jako album roku",
+      "start": 6580.4
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +25,6 @@
       "start": 0.62,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }

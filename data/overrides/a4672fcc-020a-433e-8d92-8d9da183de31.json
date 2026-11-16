@@ -1,13 +1,36 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 2720.3,
+      "label": "Dark ambient i płyta Altar SUN z Boris",
+      "start": 2680.98
+    },
+    {
+      "time": 4400.68,
+      "label": "Fińskie zespoły: Mors Subita i Swallow the Sun",
+      "start": 4347.41
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
       "title": "Intro",
       "start": 0.96,
       "durationSec": 8.04
+    }
+  ],
+  "addTopics": [
+    {
+      "label": "Podróżowaliśmy po świecie czas na twimpiksowe dźwięki z Polski. W 1994 roku basiści kilku…",
+      "start": 5536.56,
+      "end": 5570.8
+    },
+    {
+      "label": "Alberta Rosenfilda w swoim czasie znali wszyscy polscy fani rocka, a Zuit głównie bywalcy…",
+      "start": 5943.02,
+      "end": 6018.22
     }
   ]
 }

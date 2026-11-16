@@ -1,7 +1,23 @@
 {
   "version": 1,
   "tracks": [],
-  "topics": [],
+  "topics": [
+    {
+      "time": 1364.41,
+      "label": "Polskie trio Ante Void – album „Parasite\" i utwór „Abyss Gaze is Back\"",
+      "start": 1351.95
+    },
+    {
+      "time": 3664.36,
+      "label": "Prezentacja projektu Kanonen Fieber, jego tematyka historyczna i nowy album Die Urkatastrophe",
+      "start": 3626.38
+    },
+    {
+      "time": 4419.95,
+      "label": "Omówienie zespołu APEP, ich debiutu i drugiego albumu Before Whom Evil Trumbles",
+      "start": 4397.07
+    }
+  ],
   "addTracks": [
     {
       "artist": "Ciężko na sercu",
@@ -9,5 +25,6 @@
       "start": 0.91,
       "durationSec": 8.04
     }
-  ]
+  ],
+  "addTopics": []
 }
