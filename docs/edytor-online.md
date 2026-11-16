@@ -117,7 +117,14 @@ ukrywa rozpoznany wiersz i dodaje w tym miejscu nierozpoznany — na osi zostaje
 fragment, a strona pokazuje, że to zgadywanka.
 
 Skala waveformu jest skalą odtwarzacza (`scripts/lib/timeline.mjs`), bo nagłówek mp3 bywa
-krótszy niż realne audio — bez tego kreska rozjeżdża się ku końcowi audycji.
+krótszy niż realne audio — bez tego kreska rozjeżdża się ku końcowi audycji. Oś liczymy
+z `data/peaks/index.json` (`durationSec`), nie z `durationSec` pliku odcinka: część
+opracowań ma tam długość z dekodera (o ~0,23% dłuższą, do ~16 s na audycji). Gdy wartości
+się różnią, nagłówek odcinka pokazuje obie.
+
+Lista odcinków dostaje ✓, gdy każdy znacznik audycji (utwory, wejścia, dodane) ma wpis
+w `data/reviewed.json`. Liczy się to w tle z plików odcinków i poprawek; po publikacji
+bieżący odcinek przelicza się od razu.
 
 ## Testy
 
