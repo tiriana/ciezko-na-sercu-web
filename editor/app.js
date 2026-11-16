@@ -391,7 +391,7 @@ const startMarkerDrag = (event, fragment, node) => {
   if (event.button !== 0) return;
   event.stopPropagation();
   event.preventDefault();
-  selectFragment(fragment);
+  selectFragment(fragment, { center: false });
   const stage = $('#wave-stage');
   const rect = stage.getBoundingClientRect();
   const startX = event.clientX;
@@ -444,13 +444,17 @@ const renderEpisode = () => {
 
 // ——— Zaznaczanie i przesuwanie znaczników ———
 
-const selectFragment = (fragment) => {
+/** `center` wyłączamy przy chwytaniu znacznika: przesunięcie okna w trakcie
+ * przeciągania odrywałoby znacznik od kursora. */
+const selectFragment = (fragment, { center = true } = {}) => {
   state.selected = fragment;
   if (fragment) {
-    state.wave = clampView(
-      { start: Number(fragment.object.start) - state.wave.span / 2, span: state.wave.span },
-      state.episode?.durationSec ?? 0
-    );
+    if (center) {
+      state.wave = clampView(
+        { start: Number(fragment.object.start) - state.wave.span / 2, span: state.wave.span },
+        state.episode?.durationSec ?? 0
+      );
+    }
     notify(`wybrany: ${fragmentName(fragment)} — Shift+Enter = ok, Del = usuń, ←/→ = przesuń`);
   }
   renderWave();
