@@ -1,3 +1,9 @@
+## [1.84.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.84.0...v1.84.1) (2026-11-16)
+
+### Bug Fixes
+
+* **edytor:** przeciąganie znacznika nie przesuwa okna ([#102](https://github.com/tiriana/ciezko-na-sercu-web/issues/102)) ([cdb7809](https://github.com/tiriana/ciezko-na-sercu-web/commit/cdb7809728de7f8c9d136e5a608c3d1b9a22250c))
+
 ## [1.84.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.83.0...v1.84.0) (2026-11-16)
 
 ### Features
