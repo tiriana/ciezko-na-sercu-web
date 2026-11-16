@@ -65,10 +65,6 @@ for (const entry of targets) {
     console.log(`· ${entry.slug}: radio nadal bez tytułu redakcyjnego`);
     continue;
   }
-  if (unofficial.titles?.[entry.id]) {
-    console.log(`· ${entry.slug}: mamy już tytuł nieoficjalny — katalog zostaje`);
-    continue;
-  }
 
   const slug = `${entry.date}-${slugify(metadata.title)}`;
   entry.title = metadata.title;
