@@ -186,6 +186,22 @@ const pickMarker = async (selector) => {
 
 const selectTrack = () => pickMarker('.wave-marker[data-kind="track"]');
 
+const dragMarker = async (selector, dx) => {
+  await page.evaluate(
+    ({ selector, dx }) => {
+      const node = document.querySelector(selector);
+      if (!node) throw new Error('brak znacznika do przeciągnięcia');
+      const rect = node.getBoundingClientRect();
+      const x = rect.left + 6;
+      const y = rect.top + 20;
+      node.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, button: 0, pointerId: 2, clientX: x, clientY: y }));
+      node.dispatchEvent(new PointerEvent('pointermove', { bubbles: true, pointerId: 2, clientX: x + dx, clientY: y }));
+      node.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, pointerId: 2, clientX: x + dx, clientY: y }));
+    },
+    { selector, dx }
+  );
+};
+
 /** Utwór z pliku odcinka (nie dodany): tylko on ma akcję „ukryj” i pole końca z pliku. */
 // Znaczniki potrafią leżeć jeden na drugim, więc wybieramy konkretny węzeł i wysyłamy
 // mu zdarzenie wprost, zamiast liczyć na trafienie w stos.
@@ -209,6 +225,20 @@ try {
 
   await selectTrack();
   ok('klik w znacznik otwiera panel danych');
+
+  // Przeciąganie nie może przesuwać okna: inaczej znacznik odrywa się od kursora.
+  const dragSelector = '.wave-marker[data-kind="track"][data-source="base"][data-hidden="0"]';
+  const windowBeforeDrag = await page.locator('#wave-window').textContent();
+  const startBeforeDrag = await page.locator('#inspect-start').inputValue();
+  await dragMarker(dragSelector, 40);
+  const windowAfterDrag = await page.locator('#wave-window').textContent();
+  const startAfterDrag = await page.locator('#inspect-start').inputValue();
+  if (windowBeforeDrag === windowAfterDrag && startBeforeDrag !== startAfterDrag) {
+    ok('przeciąganie znacznika nie przesuwa okna');
+  } else {
+    fail(`przeciąganie przesunęło okno (${windowBeforeDrag} → ${windowAfterDrag})`);
+  }
+  await dragMarker(dragSelector, -40);
 
   const windowBefore = await page.locator('#wave-window').textContent();
   await page.locator('#wave-in').click();
