@@ -1,3 +1,9 @@
+## [1.82.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.81.0...v1.82.0) (2026-11-16)
+
+### Features
+
+* **edytor:** timeline z wejściami i znacznikami ok jak w lokalnym edytorze ([#97](https://github.com/tiriana/ciezko-na-sercu-web/issues/97)) ([7aef103](https://github.com/tiriana/ciezko-na-sercu-web/commit/7aef1031b8e87468846eef55182b0018c8267eb5))
+
 ## [1.81.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.80.0...v1.81.0) (2026-11-15)
 
 ### Features
