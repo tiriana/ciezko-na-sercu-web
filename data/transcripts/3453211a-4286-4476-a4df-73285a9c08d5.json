@@ -4,305 +4,1041 @@
   "provider": "whisper-cpp",
   "model": "large-v3-turbo-q5_0",
   "language": "pl",
-  "fileSizeBytes": 114410513,
-  "fileMtimeMs": 1789150360146.1677,
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
   "windows": [
     {
       "index": 0,
-      "start": 0,
-      "end": 276.06
+      "start": 0.48,
+      "end": 4.94
     },
     {
       "index": 1,
-      "start": 1689.12,
-      "end": 1779.16
+      "start": 10.08,
+      "end": 275.14
     },
     {
       "index": 2,
-      "start": 3017.54,
-      "end": 3100.83
+      "start": 1690.08,
+      "end": 1776.56
     },
     {
       "index": 3,
-      "start": 4363.75,
-      "end": 4531.61
+      "start": 3018.49,
+      "end": 3097.45
     },
     {
       "index": 4,
-      "start": 5785.92,
-      "end": 5912.54
+      "start": 4364.7,
+      "end": 4383.02
+    },
+    {
+      "index": 5,
+      "start": 4387.23,
+      "end": 4529.27
+    },
+    {
+      "index": 6,
+      "start": 5786.88,
+      "end": 5910.12
     }
   ],
   "segments": [
     {
       "start": 0.48,
-      "end": 5,
-      "text": "Trójka. Program Trzeci Polskiego Radia."
+      "end": 3.15,
+      "text": "Trójka. Program Trzeci"
     },
     {
-      "start": 10.16,
+      "start": 3.15,
+      "end": 4.94,
+      "text": "Polskiego Radia."
+    },
+    {
+      "start": 10.08,
       "end": 12.32,
-      "text": "Ciężko na sercu."
+      "text": "Ciężko na sercu"
     },
     {
-      "start": 13.6,
+      "start": 12.32,
+      "end": 15.77,
+      "text": "Dobry wieczór Państwu."
+    },
+    {
+      "start": 15.77,
+      "end": 17.65,
+      "text": "Kłania się Jarek Szubrycht"
+    },
+    {
+      "start": 17.65,
+      "end": 19.05,
+      "text": "w imieniu własnym i"
+    },
+    {
+      "start": 19.05,
+      "end": 20.84,
+      "text": "Mariusza Owczarka,"
+    },
+    {
+      "start": 20.84,
       "end": 22.04,
-      "text": "Dobry wieczór Państwu. Kłania się Jarek Szubrycht w imieniu własnym i Mariusza Owczarka, wydawcy audycji."
+      "text": "wydawcy audycji."
     },
     {
-      "start": 22.64,
+      "start": 22.92,
+      "end": 23.84,
+      "text": "Witamy w Ciężko na"
+    },
+    {
+      "start": 23.84,
+      "end": 25.81,
+      "text": "sercu. Audycji,"
+    },
+    {
+      "start": 25.81,
+      "end": 27.68,
+      "text": "która jak sama nazwa"
+    },
+    {
+      "start": 27.68,
+      "end": 29.65,
+      "text": "wskazuje, ciężarami"
+    },
+    {
+      "start": 29.65,
       "end": 30.56,
-      "text": "Witamy w Ciężko na sercu. Audycji, która jak sama nazwa wskazuje, ciężarami stoi."
+      "text": "stoi."
     },
     {
-      "start": 31.4,
-      "end": 46.38,
-      "text": "Napisał do mnie jakiś czas temu pewien artysta, parający się muzyką ciężką oczywiście, ale raczej eksperymentalną, że ma nowy projekt, z którym wydał płytę."
+      "start": 31.08,
+      "end": 32.32,
+      "text": "Napisał do mnie"
     },
     {
-      "start": 47.06,
+      "start": 32.32,
+      "end": 34.18,
+      "text": "jakiś czas temu pewien"
+    },
+    {
+      "start": 34.18,
+      "end": 35.84,
+      "text": "artysta, parający"
+    },
+    {
+      "start": 35.84,
+      "end": 37.24,
+      "text": "się muzyką ciężką"
+    },
+    {
+      "start": 37.24,
+      "end": 39.61,
+      "text": "oczywiście, ale raczej"
+    },
+    {
+      "start": 39.61,
+      "end": 41.78,
+      "text": "eksperymentalną, że"
+    },
+    {
+      "start": 41.78,
+      "end": 43.99,
+      "text": "ma nowy projekt, z"
+    },
+    {
+      "start": 43.99,
+      "end": 46.36,
+      "text": "którym wydał płytę."
+    },
+    {
+      "start": 47.12,
+      "end": 48.63,
+      "text": "Posłuchałem, fajne,"
+    },
+    {
+      "start": 48.63,
+      "end": 50.46,
+      "text": "chciałbym puścić w"
+    },
+    {
+      "start": 50.46,
+      "end": 52.5,
+      "text": "audycji, ale kłopot"
+    },
+    {
+      "start": 52.5,
+      "end": 54.32,
+      "text": "w tym, że płyta owa"
+    },
+    {
+      "start": 54.32,
+      "end": 56.64,
+      "text": "zawiera dwa utwory."
+    },
+    {
+      "start": 56.64,
+      "end": 58.46,
+      "text": "A właściwie jeden w"
+    },
+    {
+      "start": 58.46,
+      "end": 60.03,
+      "text": "dwóch wersjach i"
+    },
+    {
+      "start": 60.03,
+      "end": 61.62,
+      "text": "każda z nich ma po"
+    },
+    {
+      "start": 61.62,
       "end": 63.2,
-      "text": "Posłuchałem, fajne, chciałbym puścić w audycji, ale kłopot w tym, że płyta owa zawiera dwa utwory, a właściwie jeden w dwóch wersjach i każda z nich ma po pół godziny."
+      "text": "pół godziny."
     },
     {
-      "start": 63.98,
+      "start": 64,
+      "end": 65.84,
+      "text": "Jak to zmieścić? Przecież"
+    },
+    {
+      "start": 65.84,
+      "end": 68.22,
+      "text": "to radio. Nie powinno"
+    },
+    {
+      "start": 68.22,
+      "end": 70.1,
+      "text": "się puszczać tak długich"
+    },
+    {
+      "start": 70.1,
       "end": 71.28,
-      "text": "Jak to zmieścić? Przecież to radio, nie powinno się puszczać tak długich numerów."
+      "text": "numerów."
     },
     {
-      "start": 71.88,
+      "start": 72.32,
+      "end": 73.52,
+      "text": "Artysta przygotował"
+    },
+    {
+      "start": 73.52,
+      "end": 75.13,
+      "text": "mi zatem wersję"
+    },
+    {
+      "start": 75.13,
+      "end": 77.55,
+      "text": "radiową tej piosenki,"
+    },
+    {
+      "start": 77.55,
+      "end": 79.47,
+      "text": "która ma już tylko"
+    },
+    {
+      "start": 79.47,
       "end": 81.44,
-      "text": "Artysta przygotował mi zatem wersję radiową tej piosenki, która ma już tylko 24 minuty."
+      "text": "24 minuty."
     },
     {
-      "start": 82.44,
-      "end": 87.1,
-      "text": "I najpierw pomyślałem, że nic z tego nie będzie."
+      "start": 81.44,
+      "end": 84.17,
+      "text": "I najpierw pomyślałem,"
     },
     {
-      "start": 87.1,
-      "end": 92.6,
-      "text": "Nie zmieściłem tego utworu w podsumowaniu miesiąca."
+      "start": 84.17,
+      "end": 85.86,
+      "text": "że nic z tego nie"
     },
     {
-      "start": 92.74,
+      "start": 85.86,
+      "end": 87.12,
+      "text": "będzie."
+    },
+    {
+      "start": 87.26,
+      "end": 88.86,
+      "text": "Nie zmieściłem tego"
+    },
+    {
+      "start": 88.86,
+      "end": 90.79,
+      "text": "utworu w podsumowaniu"
+    },
+    {
+      "start": 90.79,
+      "end": 92,
+      "text": "miesiąca."
+    },
+    {
+      "start": 92.72,
+      "end": 93.69,
+      "text": "Musiałbym poświęcić"
+    },
+    {
+      "start": 93.69,
+      "end": 95.68,
+      "text": "kilka innych kawałków,"
+    },
+    {
+      "start": 95.68,
+      "end": 97.5,
+      "text": "które bardzo chciałem"
+    },
+    {
+      "start": 97.5,
       "end": 99.16,
-      "text": "Musiałbym poświęcić kilka innych kawałków, które bardzo chciałem zaprezentować,"
+      "text": "zaprezentować."
     },
     {
-      "start": 99.94,
+      "start": 100.24,
       "end": 102.2,
-      "text": "ale zmieniłem zdanie."
+      "text": "Ale zmieniłem zdanie."
     },
     {
       "start": 102.62,
+      "end": 103.84,
+      "text": "Bo czemu właściwie"
+    },
+    {
+      "start": 103.84,
       "end": 106.26,
-      "text": "Bo czemu właściwie miałbym tego nie puścić?"
+      "text": "miałbym tego nie puścić?"
     },
     {
-      "start": 106.96,
-      "end": 118.7,
-      "text": "W końcu to audycja o ciężarach, które przecież mają różne wymiary i jest to muzyka wymagająca od słuchacza,"
+      "start": 106.26,
+      "end": 107.84,
+      "text": "W końcu to audycja"
     },
     {
-      "start": 119.08,
-      "end": 123.84,
-      "text": "poświęcenia, cierpliwości, a więc i czasu."
+      "start": 107.84,
+      "end": 109.63,
+      "text": "o ciężarach, które"
     },
     {
-      "start": 124.84,
-      "end": 129.2,
-      "text": "To też jakiś ciężar, który trzeba dźwignąć."
+      "start": 109.63,
+      "end": 111.59,
+      "text": "przecież mają różne"
     },
     {
-      "start": 129.92,
+      "start": 111.59,
+      "end": 112.3,
+      "text": "wymiary."
+    },
+    {
+      "start": 113.3,
+      "end": 114.31,
+      "text": "I jest to muzyka"
+    },
+    {
+      "start": 114.31,
+      "end": 117.56,
+      "text": "wymagająca od słuchacza"
+    },
+    {
+      "start": 117.56,
+      "end": 121.54,
+      "text": "poświęcenia cierpliwości,"
+    },
+    {
+      "start": 121.54,
+      "end": 123.86,
+      "text": "a więc i czasu."
+    },
+    {
+      "start": 124.82,
+      "end": 126.21,
+      "text": "To też jakiś ciężar,"
+    },
+    {
+      "start": 126.21,
+      "end": 129.18,
+      "text": "który trzeba dźwignąć."
+    },
+    {
+      "start": 129.18,
+      "end": 130.08,
+      "text": "I tak..."
+    },
+    {
+      "start": 130.08,
+      "end": 130.81,
+      "text": "Taka muzyka też"
+    },
+    {
+      "start": 130.81,
+      "end": 131.81,
+      "text": "powinna mieć w tej"
+    },
+    {
+      "start": 131.81,
+      "end": 133.32,
+      "text": "audycji miejsce, bo"
+    },
+    {
+      "start": 133.32,
+      "end": 134.46,
+      "text": "jeśli nie tutaj, to"
+    },
+    {
+      "start": 134.46,
       "end": 135.2,
-      "text": "I taka muzyka też powinna mieć w tej audycji miejsce, bo jeśli nie tutaj, to gdzie?"
+      "text": "gdzie?"
     },
     {
       "start": 136.18,
+      "end": 137.38,
+      "text": "Dzisiaj zatem wciężko"
+    },
+    {
+      "start": 137.38,
+      "end": 139.34,
+      "text": "na sercu usłyszycie"
+    },
+    {
+      "start": 139.34,
       "end": 141.68,
-      "text": "Dzisiaj zatem wciężko na sercu usłyszycie tylko pięć piosenek,"
+      "text": "tylko pięć piosenek,"
     },
     {
-      "start": 141.76,
-      "end": 146.86,
-      "text": "a i tak nie mam pewności, czy ostatnia z nich nie zostanie przycięta."
+      "start": 141.68,
+      "end": 142.63,
+      "text": "a i tak nie mam"
     },
     {
-      "start": 147.86,
+      "start": 142.63,
+      "end": 144.43,
+      "text": "pewności, czy ostatnia"
+    },
+    {
+      "start": 144.43,
+      "end": 145.79,
+      "text": "z nich nie zostanie"
+    },
+    {
+      "start": 145.79,
+      "end": 146.9,
+      "text": "przycięta."
+    },
+    {
+      "start": 147.8,
+      "end": 148.27,
+      "text": "Będzie zatem"
+    },
+    {
+      "start": 148.27,
+      "end": 151.46,
+      "text": "naprawdę bezkompromisowo,"
+    },
+    {
+      "start": 151.46,
+      "end": 153.38,
+      "text": "będzie Mroczny Ambient,"
+    },
+    {
+      "start": 153.38,
+      "end": 155.89,
+      "text": "Doom, Dron Metal i"
+    },
+    {
+      "start": 155.89,
       "end": 157.1,
-      "text": "Będzie zatem naprawdę bezkompromisowo, będzie Mroczny Ambient, Doom, Dron Metal i Okolice,"
+      "text": "Okolice,"
     },
     {
       "start": 157.3,
+      "end": 158.51,
+      "text": "ale nie tylko,"
+    },
+    {
+      "start": 158.51,
+      "end": 160.27,
+      "text": "będzie też jeden utwór"
+    },
+    {
+      "start": 160.27,
       "end": 161.64,
-      "text": "ale nie tylko, będzie też jeden utwór bardzo żwawy."
+      "text": "bardzo żwawy."
     },
     {
-      "start": 162.48,
-      "end": 167.5,
-      "text": "Zacznę od projektu, który to wszystko zainicjował, który był iskrą"
+      "start": 162.66,
+      "end": 163.5,
+      "text": "Zacznę od projektu,"
     },
     {
-      "start": 167.5,
+      "start": 163.5,
+      "end": 166.55,
+      "text": "który to wszystko zainicjował,"
+    },
+    {
+      "start": 166.55,
+      "end": 167.52,
+      "text": "który był iskrą"
+    },
+    {
+      "start": 167.52,
+      "end": 168.85,
+      "text": "i z niej powstała"
+    },
+    {
+      "start": 168.85,
+      "end": 170.48,
+      "text": "właśnie dzisiejsza"
+    },
+    {
+      "start": 170.48,
       "end": 171.52,
-      "text": "i z niej powstała właśnie dzisiejsza audycja."
+      "text": "audycja."
     },
     {
-      "start": 172.18,
+      "start": 172.16,
+      "end": 173.15,
+      "text": "Nazywają się Pop"
+    },
+    {
+      "start": 173.15,
+      "end": 175.3,
+      "text": "Art Secessionists,"
+    },
+    {
+      "start": 175.3,
+      "end": 177.26,
+      "text": "a ich debiutancki"
+    },
+    {
+      "start": 177.26,
       "end": 179.42,
-      "text": "Nazywają się Pop Art Secessionists, a ich debiutancki album to Tryton."
+      "text": "album to Tryton."
     },
     {
-      "start": 180.1,
+      "start": 180.12,
+      "end": 181.29,
+      "text": "Jak sami twierdzą,"
+    },
+    {
+      "start": 181.29,
+      "end": 182.94,
+      "text": "materiał powstał"
+    },
+    {
+      "start": 182.94,
+      "end": 184.56,
+      "text": "jako odpowiedź na"
+    },
+    {
+      "start": 184.56,
       "end": 185.88,
-      "text": "Jak sami twierdzą, materiał powstał jako odpowiedź na przyspieszone tempo"
+      "text": "przyspieszone tempo"
     },
     {
       "start": 185.88,
-      "end": 192.18,
-      "text": "współczesnego świata i jest wyrazem świadomej decyzji o zwolnieniu"
+      "end": 187.88,
+      "text": "współczesnego świata"
     },
     {
-      "start": 192.18,
-      "end": 199.12,
-      "text": "oraz skupieniu się na uważności, byciu tu i teraz, zarówno w samotności,"
+      "start": 187.88,
+      "end": 190.11,
+      "text": "i jest wyrazem świadomej"
     },
     {
-      "start": 199.32,
+      "start": 190.11,
+      "end": 192.16,
+      "text": "decyzji o zwolnieniu"
+    },
+    {
+      "start": 192.16,
+      "end": 193.78,
+      "text": "oraz skupieniu się"
+    },
+    {
+      "start": 193.78,
+      "end": 196.05,
+      "text": "na uważności, byciu"
+    },
+    {
+      "start": 196.05,
+      "end": 197.22,
+      "text": "tu i teraz,"
+    },
+    {
+      "start": 197.72,
+      "end": 199.26,
+      "text": "zarówno w samotności,"
+    },
+    {
+      "start": 199.26,
+      "end": 200.59,
+      "text": "jak i w relacji z"
+    },
+    {
+      "start": 200.59,
       "end": 201.58,
-      "text": "jak i w relacji z innymi."
+      "text": "innymi."
     },
     {
-      "start": 202.64,
+      "start": 202.66,
+      "end": 203.62,
+      "text": "O właśnie, właśnie"
+    },
+    {
+      "start": 203.62,
       "end": 205.58,
-      "text": "O właśnie, właśnie o to mi chodziło."
+      "text": "o to mi chodziło."
     },
     {
-      "start": 205.68,
-      "end": 211.54,
-      "text": "Dzisiaj, proszę Państwa, wciężko na sercu ćwiczenia w zwalnianiu tempa i w uważności."
+      "start": 205.7,
+      "end": 206.67,
+      "text": "Dzisiaj, proszę"
     },
     {
-      "start": 212.3,
-      "end": 217.92,
-      "text": "Pop Art Secessionists to trio łączące artystów doświadczonych,"
+      "start": 206.67,
+      "end": 207.82,
+      "text": "Państwa, wciężko na"
     },
     {
-      "start": 218.32,
-      "end": 221.32,
-      "text": "ale są to doświadczenia bardzo różne."
+      "start": 207.82,
+      "end": 208.8,
+      "text": "sercu ćwiczenia w"
     },
     {
-      "start": 221.94,
-      "end": 226,
-      "text": "Najbardziej znaną postacią jest tutaj Tomasz Lipa Lipnicki,"
+      "start": 208.8,
+      "end": 209.94,
+      "text": "zwalnianiu tempa i"
     },
     {
-      "start": 226,
+      "start": 209.94,
+      "end": 210.98,
+      "text": "w uważności."
+    },
+    {
+      "start": 211.98,
+      "end": 214.08,
+      "text": "Pop Art Secessionists"
+    },
+    {
+      "start": 214.08,
+      "end": 216.39,
+      "text": "to trio łączące artystów"
+    },
+    {
+      "start": 216.39,
+      "end": 218.26,
+      "text": "doświadczonych,"
+    },
+    {
+      "start": 218.26,
+      "end": 220.05,
+      "text": "ale są to doświadczenia"
+    },
+    {
+      "start": 220.05,
+      "end": 221.34,
+      "text": "bardzo różne."
+    },
+    {
+      "start": 221.92,
+      "end": 222.57,
+      "text": "Najbardziej znaną"
+    },
+    {
+      "start": 222.57,
+      "end": 223.88,
+      "text": "postacią jest tutaj"
+    },
+    {
+      "start": 223.88,
+      "end": 225.54,
+      "text": "Tomasz Lipa Lipnicki,"
+    },
+    {
+      "start": 226.54,
+      "end": 228.1,
+      "text": "a więc wokalista, gitarzysta,"
+    },
+    {
+      "start": 228.1,
+      "end": 230.78,
+      "text": "autor muzyki i tekstów,"
+    },
+    {
+      "start": 230.88,
+      "end": 232.62,
+      "text": "znany z grup Illusion"
+    },
+    {
+      "start": 232.62,
       "end": 233.8,
-      "text": "a więc wokalista, gitarzysta, autor muzyki i tekstów znany z grup Illusion i Lipa Lee."
+      "text": "i Lipa Lee."
     },
     {
-      "start": 234.48,
-      "end": 237.52,
-      "text": "W takim wcieleniu na pewno się go nie spodziewaliście."
+      "start": 234.46,
+      "end": 234.92,
+      "text": "W takim wcieleniu"
     },
     {
-      "start": 238.26,
+      "start": 234.92,
+      "end": 236.06,
+      "text": "na pewno się go nie"
+    },
+    {
+      "start": 236.06,
+      "end": 237.5,
+      "text": "spodziewaliście."
+    },
+    {
+      "start": 237.54,
+      "end": 239.16,
+      "text": "Towarzyszą mu Mauro"
+    },
+    {
+      "start": 239.16,
       "end": 241.2,
-      "text": "Towarzyszą mu Mauro Sambo, multiinstrumentalista,"
+      "text": "Sambo, multiinstrumentalista,"
     },
     {
       "start": 241.66,
-      "end": 246.74,
-      "text": "artysta multimedialny, działający na pograniczu rzeźby i performansu,"
+      "end": 243.19,
+      "text": "artysta multimedialny,"
     },
     {
-      "start": 246.82,
-      "end": 253.94,
-      "text": "wideo i malarstwa, fotografii oraz dźwięku i tu jego dźwiękowe zainteresowania usłyszymy."
+      "start": 243.19,
+      "end": 245.36,
+      "text": "działający na pograniczu"
     },
     {
-      "start": 253.94,
+      "start": 245.36,
+      "end": 245.82,
+      "text": "rzeźby"
+    },
+    {
+      "start": 245.82,
+      "end": 247.01,
+      "text": "i performansu wideo"
+    },
+    {
+      "start": 247.01,
+      "end": 247.88,
+      "text": "i malarstwa,"
+    },
+    {
+      "start": 247.88,
+      "end": 249.48,
+      "text": "fotografii oraz dźwięku"
+    },
+    {
+      "start": 249.48,
+      "end": 250.08,
+      "text": "i tu jego..."
+    },
+    {
+      "start": 250.08,
+      "end": 253.32,
+      "text": "dźwiękowe zainteresowanie"
+    },
+    {
+      "start": 253.32,
+      "end": 253.96,
+      "text": "usłyszymy."
+    },
+    {
+      "start": 254.5,
+      "end": 255.64,
+      "text": "I jeszcze Tomasz Mądry,"
+    },
+    {
+      "start": 255.64,
       "end": 257.64,
-      "text": "I jeszcze Tomasz Mądry, kompozytor i eksperymentator,"
+      "text": "kompozytor i eksperymentator,"
     },
     {
-      "start": 257.76,
+      "start": 257.78,
+      "end": 259.51,
+      "text": "którego ludzie nurkujący"
+    },
+    {
+      "start": 259.51,
+      "end": 260.9,
+      "text": "w undergroundzie"
+    },
+    {
+      "start": 260.9,
+      "end": 262.24,
+      "text": "mogą kojarzyć z takimi"
+    },
+    {
+      "start": 262.24,
       "end": 263.32,
-      "text": "którego ludzie nurkujący w undergroundzie mogą kojarzyć z takimi projektami jak"
+      "text": "projektami jak"
     },
     {
       "start": 263.32,
+      "end": 264.77,
+      "text": "Stars, Plains and"
+    },
+    {
+      "start": 264.77,
+      "end": 266.41,
+      "text": "Circles czy A Sea"
+    },
+    {
+      "start": 266.41,
       "end": 267.8,
-      "text": "The Stars, Plains and Circles czy A Sea of Smoke."
+      "text": "of Smoke."
     },
     {
-      "start": 268.56,
-      "end": 274.5,
-      "text": "Posłuchajmy zatem Trytona w wersji radiowej, żeby nie powiedzieć singlowej."
+      "start": 268.54,
+      "end": 269.73,
+      "text": "Posłuchajmy zatem"
     },
     {
-      "start": 274.5,
-      "end": 276.06,
-      "text": "Dzień dobry."
+      "start": 269.73,
+      "end": 271.45,
+      "text": "Trytona w wersji"
     },
     {
-      "start": 1689.12,
-      "end": 1700.5,
-      "text": "Wynurzamy się z trytonowych odmętów, by przejść do kolejnej kompozycji, tym razem już zdecydowanie metalowej."
+      "start": 271.45,
+      "end": 272.5,
+      "text": "radiowej,"
+    },
+    {
+      "start": 272.5,
+      "end": 274.03,
+      "text": "żeby nie powiedzieć"
+    },
+    {
+      "start": 274.03,
+      "end": 275.14,
+      "text": "singlowej."
+    },
+    {
+      "start": 1690.08,
+      "end": 1692.72,
+      "text": "Wynurzamy się z trytonowych"
+    },
+    {
+      "start": 1692.72,
+      "end": 1694.58,
+      "text": "odmętów, by przejść"
+    },
+    {
+      "start": 1694.58,
+      "end": 1696.68,
+      "text": "do kolejnej kompozycji,"
+    },
+    {
+      "start": 1696.68,
+      "end": 1699.14,
+      "text": "tym razem już zdecydowanie"
+    },
+    {
+      "start": 1699.14,
+      "end": 1700.48,
+      "text": "metalowej."
     },
     {
       "start": 1701.12,
-      "end": 1708.3,
-      "text": "Kolos, którego za chwilę wysłuchacie nosi tytuł Circle i otwiera The Manical Veil."
+      "end": 1702.17,
+      "text": "Kolos, którego za"
+    },
+    {
+      "start": 1702.17,
+      "end": 1703.95,
+      "text": "chwilę wysłuchacie"
+    },
+    {
+      "start": 1703.95,
+      "end": 1705.63,
+      "text": "nosi tytuł Circle i"
+    },
+    {
+      "start": 1705.63,
+      "end": 1707.42,
+      "text": "otwiera The Manical"
+    },
+    {
+      "start": 1707.42,
+      "end": 1708.28,
+      "text": "Veil."
     },
     {
       "start": 1708.86,
+      "end": 1709.4,
+      "text": "Swoją drogą to"
+    },
+    {
+      "start": 1709.4,
+      "end": 1710.82,
+      "text": "dobry sprawdzian"
+    },
+    {
+      "start": 1710.82,
+      "end": 1712.32,
+      "text": "dla potencjalnych"
+    },
+    {
+      "start": 1712.32,
       "end": 1714.72,
-      "text": "Swoją drogą to dobry sprawdzian dla potencjalnych odbiorców takiej muzyki."
+      "text": "odbiorców takiej muzyki."
     },
     {
       "start": 1714.86,
+      "end": 1716.21,
+      "text": "Jeśli wytrzymasz"
+    },
+    {
+      "start": 1716.21,
+      "end": 1717.92,
+      "text": "taki początek płyty,"
+    },
+    {
+      "start": 1717.92,
       "end": 1720.34,
-      "text": "Jeśli wytrzymasz taki początek płyty, to już wszystko wytrzymasz."
+      "text": "to już wszystko wytrzymasz."
     },
     {
       "start": 1720.96,
+      "end": 1721.94,
+      "text": "The Manical Veil to"
+    },
+    {
+      "start": 1721.94,
+      "end": 1724.41,
+      "text": "zespół esoteric, esoteric"
+    },
+    {
+      "start": 1724.41,
+      "end": 1725.75,
+      "text": "dojrzały i można"
+    },
+    {
+      "start": 1725.75,
+      "end": 1727.47,
+      "text": "nawet powiedzieć,"
+    },
+    {
+      "start": 1727.47,
       "end": 1729.96,
-      "text": "The Manical Veil to zespół esoteric, esoteric dojrzały i można nawet powiedzieć, że nieco ucywilizowany."
+      "text": "że nieco ucywilizowany."
     },
     {
       "start": 1729.96,
+      "end": 1731.41,
+      "text": "Ich piąta płyta z"
+    },
+    {
+      "start": 1731.41,
+      "end": 1734.56,
+      "text": "2008 roku, prezentująca"
+    },
+    {
+      "start": 1734.56,
+      "end": 1736.44,
+      "text": "oblicze mniej surowe"
+    },
+    {
+      "start": 1736.44,
+      "end": 1738.09,
+      "text": "niż wcześniejsze"
+    },
+    {
+      "start": 1738.09,
       "end": 1739.32,
-      "text": "Ich piąta płyta z 2008 roku, prezentująca oblicze mniej surowe niż wcześniejsze materiały,"
+      "text": "materiały,"
     },
     {
       "start": 1740.06,
+      "end": 1741.16,
+      "text": "ale to wciąż"
+    },
+    {
+      "start": 1741.16,
+      "end": 1743.04,
+      "text": "oczywiście nie jest"
+    },
+    {
+      "start": 1743.04,
       "end": 1745.2,
-      "text": "ale to wciąż oczywiście nie jest muzyka dla każdego."
+      "text": "muzyka dla każdego."
     },
     {
       "start": 1745.74,
+      "end": 1746.83,
+      "text": "Przekonaliśmy się o"
+    },
+    {
+      "start": 1746.83,
+      "end": 1748.91,
+      "text": "tym niedawno, w ubiegłym"
+    },
+    {
+      "start": 1748.91,
+      "end": 1750.33,
+      "text": "roku na festiwalu"
+    },
+    {
+      "start": 1750.33,
       "end": 1752.1,
-      "text": "Przekonaliśmy się o tym niedawno, w ubiegłym roku na festiwalu Summer Dying Loud,"
+      "text": "Summer Dying Loud,"
     },
     {
       "start": 1752.32,
+      "end": 1754.52,
+      "text": "gdzie esoteric wystąpili"
+    },
+    {
+      "start": 1754.52,
+      "end": 1756.61,
+      "text": "i skłamałbym, gdybym"
+    },
+    {
+      "start": 1756.61,
+      "end": 1758.49,
+      "text": "powiedział, że pod"
+    },
+    {
+      "start": 1758.49,
       "end": 1759.9,
-      "text": "gdzie esoteric wystąpili i skłamałbym, gdybym powiedział, że pod sceną był tłum."
+      "text": "sceną był tłum."
     },
     {
       "start": 1759.9,
-      "end": 1769.24,
-      "text": "Za to ci, co zostali byli zachwyceni, bo to muzyka, która jest brutalna, wręcz barbarzyńska,"
+      "end": 1761.77,
+      "text": "Za to ci, co zostali"
+    },
+    {
+      "start": 1761.77,
+      "end": 1763.78,
+      "text": "byli zachwyceni, bo"
+    },
+    {
+      "start": 1763.78,
+      "end": 1765.41,
+      "text": "to muzyka, która"
+    },
+    {
+      "start": 1765.41,
+      "end": 1767.51,
+      "text": "jest brutalna, wręcz"
+    },
+    {
+      "start": 1767.51,
+      "end": 1769.22,
+      "text": "barbarzyńska,"
     },
     {
       "start": 1769.78,
+      "end": 1772.26,
+      "text": "ale zarazem hipnotyzująca"
+    },
+    {
+      "start": 1772.26,
       "end": 1775.24,
-      "text": "ale zarazem hipnotyzująca i na swój sposób ulotna."
+      "text": "i na swój sposób ulotna."
     },
     {
       "start": 1775.84,
@@ -310,321 +1046,1060 @@
       "text": "Ezoteric."
     },
     {
-      "start": 1776.56,
-      "end": 1779.16,
-      "text": "Muzyka"
+      "start": 3018.49,
+      "end": 3020.2,
+      "text": "Rewerent Bizar to"
     },
     {
-      "start": 3018.54,
-      "end": 3023.42,
-      "text": "Rewerent Bizarre to mistrzowie dumu z Finlandii."
+      "start": 3020.2,
+      "end": 3022,
+      "text": "mistrzowie dumu z"
     },
     {
-      "start": 3023.94,
-      "end": 3030.76,
-      "text": "Trzymali się prawideł gatunku, choć interpretowali je i kształtowali po swojemu."
+      "start": 3022,
+      "end": 3024.19,
+      "text": "Finlandii. Trzymali"
     },
     {
-      "start": 3031.44,
-      "end": 3041.98,
-      "text": "Bo jeśli ktoś gdzieś wymyślił jakąś ponurą muzykę, a dum to dzieło Brytyjczyków, tu raczej nie ma sporu,"
+      "start": 3024.19,
+      "end": 3026.21,
+      "text": "się prawideł gatunku,"
     },
     {
-      "start": 3041.98,
-      "end": 3049.52,
-      "text": "to śmiało można założyć, że jeśli Finowie wezmą taki materiał w swoje łapy,"
+      "start": 3026.21,
+      "end": 3028.01,
+      "text": "choć interpretowali"
     },
     {
-      "start": 3049.96,
-      "end": 3059.44,
-      "text": "najpewniej coś zepsują, coś dodadzą, przyciemnią i wzbogacą o ten element leśnej psychodelii."
+      "start": 3028.01,
+      "end": 3029.5,
+      "text": "je i kształtowali"
     },
     {
-      "start": 3060.08,
-      "end": 3065.38,
-      "text": "Niestety Rewerent Bizarre już nie istnieje od prawie dwóch dekad,"
+      "start": 3029.5,
+      "end": 3031.48,
+      "text": "po swojemu, bo"
     },
     {
-      "start": 3065.38,
-      "end": 3072.4,
-      "text": "a członkowie grupy rozeszli się po innych projektach, niektórych bardzo ciekawych,"
+      "start": 3031.48,
+      "end": 3032.68,
+      "text": "jeśli ktoś gdzieś"
     },
     {
-      "start": 3072.56,
-      "end": 3074.9,
-      "text": "ale nie aż tak przekonujących."
+      "start": 3032.68,
+      "end": 3034.8,
+      "text": "wymyślił jakąś ponurą"
     },
     {
-      "start": 3075.48,
-      "end": 3080.8,
-      "text": "Wysłuchamy utworu, który zamyka debiutancką płytę Rewerent Bizarre,"
+      "start": 3034.8,
+      "end": 3036.61,
+      "text": "muzykę, a dum to"
     },
     {
-      "start": 3080.88,
-      "end": 3085.52,
-      "text": "czyli Indirectory of the Bizarre Reverent."
+      "start": 3036.61,
+      "end": 3039.23,
+      "text": "dzieło Brytyjczyków,"
     },
     {
-      "start": 3085.52,
-      "end": 3089.34,
-      "text": "A tytuł utworu brzmi Sirith Angle."
+      "start": 3039.23,
+      "end": 3041.99,
+      "text": "tu raczej nie ma sporu,"
     },
     {
-      "start": 3089.5,
-      "end": 3094.5,
-      "text": "Tak jest, mamy do czynienia ze światem post-tolkienowskim,"
+      "start": 3041.99,
+      "end": 3044.74,
+      "text": "to śmiało można założyć,"
     },
     {
-      "start": 3094.66,
-      "end": 3097.46,
+      "start": 3044.74,
+      "end": 3046.67,
+      "text": "że jeśli Finowie wezmą"
+    },
+    {
+      "start": 3046.67,
+      "end": 3048.17,
+      "text": "taki materiał w"
+    },
+    {
+      "start": 3048.17,
+      "end": 3050.57,
+      "text": "swoje łapy, najpewniej"
+    },
+    {
+      "start": 3050.57,
+      "end": 3052.27,
+      "text": "coś zepsują, coś"
+    },
+    {
+      "start": 3052.27,
+      "end": 3054.55,
+      "text": "dodadzą, przyciemnią"
+    },
+    {
+      "start": 3054.55,
+      "end": 3056.02,
+      "text": "i wzbogacą o ten"
+    },
+    {
+      "start": 3056.02,
+      "end": 3057.51,
+      "text": "element leśnej"
+    },
+    {
+      "start": 3057.51,
+      "end": 3059.45,
+      "text": "psychodelii."
+    },
+    {
+      "start": 3059.63,
+      "end": 3061.64,
+      "text": "Niestety Rewerent Bizar"
+    },
+    {
+      "start": 3061.64,
+      "end": 3063.18,
+      "text": "już nie istnieje od"
+    },
+    {
+      "start": 3063.18,
+      "end": 3064.9,
+      "text": "prawie dwóch dekad,"
+    },
+    {
+      "start": 3064.9,
+      "end": 3066.43,
+      "text": "a członkowie grupy"
+    },
+    {
+      "start": 3066.43,
+      "end": 3067.94,
+      "text": "rozeszli się po"
+    },
+    {
+      "start": 3067.94,
+      "end": 3069.44,
+      "text": "innych projektach,"
+    },
+    {
+      "start": 3069.44,
+      "end": 3070.99,
+      "text": "niektórych bardzo"
+    },
+    {
+      "start": 3070.99,
+      "end": 3072.91,
+      "text": "ciekawych, ale nie"
+    },
+    {
+      "start": 3072.91,
+      "end": 3074.89,
+      "text": "aż tak przekonujących."
+    },
+    {
+      "start": 3075.15,
+      "end": 3077,
+      "text": "Wysłuchamy utworu,"
+    },
+    {
+      "start": 3077,
+      "end": 3079.24,
+      "text": "który zamyka debiutancką"
+    },
+    {
+      "start": 3079.24,
+      "end": 3081.26,
+      "text": "płytę Rewerent Bizar,"
+    },
+    {
+      "start": 3081.26,
+      "end": 3083.07,
+      "text": "czyli In the Rectory"
+    },
+    {
+      "start": 3083.07,
+      "end": 3084.23,
+      "text": "of the Bizarre"
+    },
+    {
+      "start": 3084.23,
+      "end": 3086.45,
+      "text": "Reverend, a tytuł"
+    },
+    {
+      "start": 3086.45,
+      "end": 3088.57,
+      "text": "utworu brzmi Sirith"
+    },
+    {
+      "start": 3088.57,
+      "end": 3089.35,
+      "text": "Ungol."
+    },
+    {
+      "start": 3089.49,
+      "end": 3090.95,
+      "text": "Tak jest, mamy do"
+    },
+    {
+      "start": 3090.95,
+      "end": 3092.87,
+      "text": "czynienia ze światem"
+    },
+    {
+      "start": 3092.87,
+      "end": 3095,
+      "text": "post-tolkienowskim"
+    },
+    {
+      "start": 3095,
+      "end": 3097.45,
       "text": "pełnym magii i tajemnic."
     },
     {
-      "start": 4363.75,
-      "end": 4366.05,
+      "start": 4364.7,
+      "end": 4366.34,
       "text": "Autopromocja"
     },
     {
-      "start": 4366.05,
-      "end": 4370.97,
-      "text": "20 lat temu ukazała się ostatnia wielka płyta muzyki popularnej."
+      "start": 4366.34,
+      "end": 4368.02,
+      "text": "20 lat temu ukazała"
     },
     {
-      "start": 4371.25,
-      "end": 4375.43,
-      "text": "Album złamanego serca, który zdobył serca milionów słuchaczy."
+      "start": 4368.02,
+      "end": 4369.2,
+      "text": "się ostatnia wielka"
     },
     {
-      "start": 4375.67,
-      "end": 4382.15,
-      "text": "Z ciemności przeklętego uczucia wprost na szczyty list przebojów i do popkulturowej nieśmiertelności."
+      "start": 4369.2,
+      "end": 4370.15,
+      "text": "płyta muzyki"
     },
     {
-      "start": 4386.73,
+      "start": 4370.15,
+      "end": 4371.1,
+      "text": "popularnej."
+    },
+    {
+      "start": 4371.1,
+      "end": 4372.69,
+      "text": "Album złamanego serca,"
+    },
+    {
+      "start": 4372.69,
+      "end": 4374.13,
+      "text": "który zdobył serca"
+    },
+    {
+      "start": 4374.13,
+      "end": 4375.7,
+      "text": "milionów słuchaczy."
+    },
+    {
+      "start": 4375.7,
+      "end": 4377.29,
+      "text": "Z ciemności przeklętego"
+    },
+    {
+      "start": 4377.29,
+      "end": 4378.45,
+      "text": "uczucia wprost na"
+    },
+    {
+      "start": 4378.45,
+      "end": 4379.7,
+      "text": "szczyty list przebojów"
+    },
+    {
+      "start": 4379.7,
+      "end": 4381.33,
+      "text": "i do popkulturowej"
+    },
+    {
+      "start": 4381.33,
+      "end": 4383.02,
+      "text": "nieśmiertelności."
+    },
+    {
+      "start": 4387.23,
+      "end": 4388.53,
+      "text": "To jest dorobek"
+    },
+    {
+      "start": 4388.53,
+      "end": 4390.49,
+      "text": "Back to Black, niezapomnianej"
+    },
+    {
+      "start": 4390.49,
       "end": 4392.11,
-      "text": "To jest dorobek Back to Black, niezapomnianej płyty Amy Winehouse."
+      "text": "płyty Amy Winehouse."
     },
     {
-      "start": 4392.11,
-      "end": 4395.37,
-      "text": "W najbliższą środę o 19 posłuchamy jej wspólnie."
+      "start": 4392.39,
+      "end": 4393.15,
+      "text": "W najbliższą środę"
     },
     {
-      "start": 4397.25,
-      "end": 4401.55,
-      "text": "Zapraszam na pół niezaprzeczalnie perfekcyjnej płyty."
+      "start": 4393.15,
+      "end": 4394.48,
+      "text": "o 19 posłuchamy jej"
     },
     {
-      "start": 4403.29,
+      "start": 4394.48,
+      "end": 4395.35,
+      "text": "wspólnie."
+    },
+    {
+      "start": 4397.59,
+      "end": 4399.02,
+      "text": "niezaprzeczalnie"
+    },
+    {
+      "start": 4399.02,
+      "end": 4401.53,
+      "text": "perfekcyjnej płyty."
+    },
+    {
+      "start": 4403.37,
+      "end": 4404.51,
+      "text": "Do usłyszenia, Anna"
+    },
+    {
+      "start": 4404.51,
       "end": 4405.89,
-      "text": "Do usłyszenia. Anna Gacek."
+      "text": "Gacek."
     },
     {
-      "start": 4406.45,
-      "end": 4407.29,
-      "text": "Autopromocja."
+      "start": 4407.27,
+      "end": 4408.22,
+      "text": "Słuchacie ciężko na"
     },
     {
-      "start": 4407.51,
+      "start": 4408.22,
       "end": 4409.39,
-      "text": "Słuchacie ciężko na sercu."
+      "text": "sercu."
     },
     {
       "start": 4409.57,
-      "end": 4415.87,
-      "text": "Odcinka, w którym prezentuję utwory, których wcześniej nie miałem śmiałości puścić,"
+      "end": 4410.76,
+      "text": "Odcinka, w którym"
     },
     {
-      "start": 4416.41,
+      "start": 4410.76,
+      "end": 4412.37,
+      "text": "prezentuję utwory,"
+    },
+    {
+      "start": 4412.37,
+      "end": 4413.66,
+      "text": "których wcześniej"
+    },
+    {
+      "start": 4413.66,
+      "end": 4415.21,
+      "text": "nie miałem śmiałości"
+    },
+    {
+      "start": 4415.21,
+      "end": 4415.85,
+      "text": "puścić,"
+    },
+    {
+      "start": 4415.85,
+      "end": 4417.32,
+      "text": "bo za długie, bo"
+    },
+    {
+      "start": 4417.32,
+      "end": 4418.8,
+      "text": "nie nadają się do"
+    },
+    {
+      "start": 4418.8,
       "end": 4421.11,
-      "text": "bo za długie, bo nie nadają się do prezentacji radiowej,"
+      "text": "prezentacji radiowej,"
     },
     {
-      "start": 4421.11,
-      "end": 4423.47,
-      "text": "ale proszę Państwa, jak w Matrixie."
+      "start": 4421.25,
+      "end": 4422.39,
+      "text": "ale proszę Państwa,"
     },
     {
-      "start": 4423.53,
-      "end": 4427.75,
-      "text": "Te ograniczenia są tylko w naszych głowach, a zatem przemogłem się."
+      "start": 4422.39,
+      "end": 4423.57,
+      "text": "jak w Matrixie, te"
+    },
+    {
+      "start": 4423.57,
+      "end": 4424.43,
+      "text": "ograniczenia są"
+    },
+    {
+      "start": 4424.43,
+      "end": 4425.85,
+      "text": "tylko w naszych głowach,"
+    },
+    {
+      "start": 4426.49,
+      "end": 4427.19,
+      "text": "a zatem przemogłem"
+    },
+    {
+      "start": 4427.19,
+      "end": 4427.73,
+      "text": "się."
     },
     {
       "start": 4428.75,
-      "end": 4434.43,
-      "text": "Obiecałem na początku audycji, że będzie miejsce na piosenkę żwawą."
+      "end": 4428.83,
+      "text": "Obiecałem na"
     },
     {
-      "start": 4435.09,
+      "start": 4428.83,
+      "end": 4430.53,
+      "text": "początku audycji,"
+    },
+    {
+      "start": 4430.53,
+      "end": 4432.03,
+      "text": "że będzie miejsce"
+    },
+    {
+      "start": 4432.03,
+      "end": 4433.85,
+      "text": "na piosenkę Żwawą."
+    },
+    {
+      "start": 4435.07,
       "end": 4435.77,
       "text": "To może teraz."
     },
     {
-      "start": 4436.55,
-      "end": 4441.15,
-      "text": "Nie chciałem przy tym prezentować materiałów, które są długie,"
+      "start": 4436.51,
+      "end": 4437.23,
+      "text": "Nie chciałem przy"
     },
     {
-      "start": 4441.31,
+      "start": 4437.23,
+      "end": 4438.59,
+      "text": "tym prezentować"
+    },
+    {
+      "start": 4438.59,
+      "end": 4440.24,
+      "text": "materiałów, które"
+    },
+    {
+      "start": 4440.24,
+      "end": 4441.15,
+      "text": "są długie,"
+    },
+    {
+      "start": 4441.15,
+      "end": 4442.51,
+      "text": "dlatego, że pochodzą"
+    },
+    {
+      "start": 4442.51,
+      "end": 4444.45,
+      "text": "z płyt bez podziału"
+    },
+    {
+      "start": 4444.45,
       "end": 4446.03,
-      "text": "dlatego, że pochodzą z płyt bez podziału na utwory."
+      "text": "na utwory."
     },
     {
       "start": 4446.15,
+      "end": 4446.8,
+      "text": "Jest takich trochę"
+    },
+    {
+      "start": 4446.8,
       "end": 4447.45,
-      "text": "Jest takich trochę oczywiście."
+      "text": "oczywiście."
     },
     {
       "start": 4448.17,
+      "end": 4448.74,
+      "text": "Moja ulubiona, tak"
+    },
+    {
+      "start": 4448.74,
+      "end": 4450.01,
+      "text": "na marginesie, to"
+    },
+    {
+      "start": 4450.01,
+      "end": 4452.05,
+      "text": "Jerusalem amerykańskiej"
+    },
+    {
+      "start": 4452.05,
       "end": 4453.49,
-      "text": "Moja ulubiona, tak na marginesie, to Jerusalem amerykańskiej grupy Sleep."
+      "text": "grupy Sleep."
     },
     {
       "start": 4454.01,
+      "end": 4454.91,
+      "text": "Absolutne mistrzostwo"
+    },
+    {
+      "start": 4454.91,
       "end": 4455.61,
-      "text": "Absolutne mistrzostwo świata."
+      "text": "świata."
     },
     {
-      "start": 4455.61,
-      "end": 4460.05,
-      "text": "Ponad 50 minut stoner dumowej lawy."
+      "start": 4455.79,
+      "end": 4457.91,
+      "text": "Ponad 50 minut stoner"
     },
     {
-      "start": 4460.65,
+      "start": 4457.91,
+      "end": 4459.41,
+      "text": "dumowej lawy."
+    },
+    {
+      "start": 4460.67,
+      "end": 4462.14,
+      "text": "Dziś Jerusalem nie"
+    },
+    {
+      "start": 4462.14,
+      "end": 4463.89,
+      "text": "zagram, ale kto wie,"
+    },
+    {
+      "start": 4463.89,
+      "end": 4465.79,
+      "text": "może kiedyś i na to"
+    },
+    {
+      "start": 4465.79,
       "end": 4467.65,
-      "text": "Dziś Jerusalem nie zagram, ale kto wie, może kiedyś i na to się odważę."
+      "text": "się odważę."
     },
     {
-      "start": 4468.21,
-      "end": 4474.95,
-      "text": "Zagram za to w całości mini album szwedzkiej grupy Meshuga, zatytułowany I."
+      "start": 4468.27,
+      "end": 4469.54,
+      "text": "Zagram za to w całości"
     },
     {
-      "start": 4475.57,
-      "end": 4479.11,
-      "text": "Trwający tylko 21 minut."
+      "start": 4469.54,
+      "end": 4471.66,
+      "text": "mini-album szwedzkiej"
     },
     {
-      "start": 4479.11,
-      "end": 4484.19,
-      "text": "Ale ile tu się w tych 20 minutach z okładem dzieje."
+      "start": 4471.66,
+      "end": 4473.03,
+      "text": "grupy Meshuga,"
     },
     {
-      "start": 4484.73,
+      "start": 4473.53,
+      "end": 4476.14,
+      "text": "zatytułowany I, trwający"
+    },
+    {
+      "start": 4476.14,
+      "end": 4479.09,
+      "text": "tylko 21 minut."
+    },
+    {
+      "start": 4479.65,
+      "end": 4480.77,
+      "text": "Ale ile tu się w"
+    },
+    {
+      "start": 4480.77,
+      "end": 4482.57,
+      "text": "tych 20 minutach z"
+    },
+    {
+      "start": 4482.57,
+      "end": 4484.17,
+      "text": "okładem dzieje."
+    },
+    {
+      "start": 4484.79,
+      "end": 4485.94,
+      "text": "Meshuga nagrali ten"
+    },
+    {
+      "start": 4485.94,
+      "end": 4488.16,
+      "text": "materiał w 2004"
+    },
+    {
+      "start": 4488.16,
+      "end": 4488.87,
+      "text": "roku,"
+    },
+    {
+      "start": 4490.15,
+      "end": 4491.58,
+      "text": "a więc pomiędzy wybitnymi"
+    },
+    {
+      "start": 4491.58,
+      "end": 4493.69,
+      "text": "płytami Nothing i"
+    },
+    {
+      "start": 4493.69,
       "end": 4495.81,
-      "text": "Meshuga nagrali ten materiał w 2004 roku, a więc pomiędzy wybitnymi płytami Nothing i Catch 33."
+      "text": "Catch 33."
     },
     {
-      "start": 4496.53,
-      "end": 4502.43,
-      "text": "Zatem nic dziwnego, że i w tym przypadku mamy do czynienia z arcydziełem."
+      "start": 4496.51,
+      "end": 4497.85,
+      "text": "Zatem nic dziwnego,"
     },
     {
-      "start": 4503.05,
-      "end": 4510.25,
-      "text": "Thomas Hecke, perkusista z zespołu, opowiadał potem, że kompozycja powstała właściwie przypadkiem,"
+      "start": 4497.85,
+      "end": 4498.65,
+      "text": "że i w tym"
     },
     {
-      "start": 4510.35,
-      "end": 4517.21,
-      "text": "wyłoniła się z pitolenia na próbie, które uskuteczniał sobie z Fredrikiem Tordendallem,"
+      "start": 4498.65,
+      "end": 4500.25,
+      "text": "przypadku mamy do"
     },
     {
-      "start": 4517.31,
+      "start": 4500.25,
+      "end": 4502.41,
+      "text": "czynienia z arcydziełem."
+    },
+    {
+      "start": 4503.13,
+      "end": 4504.82,
+      "text": "Thomas Hecke, perkusista"
+    },
+    {
+      "start": 4504.82,
+      "end": 4506.48,
+      "text": "z zespołu, opowiadał"
+    },
+    {
+      "start": 4506.48,
+      "end": 4507.23,
+      "text": "potem, że"
+    },
+    {
+      "start": 4507.23,
+      "end": 4509.05,
+      "text": "że kompozycja powstała"
+    },
+    {
+      "start": 4509.05,
+      "end": 4510.38,
+      "text": "właściwie przypadkiem,"
+    },
+    {
+      "start": 4510.38,
+      "end": 4512.53,
+      "text": "wyłoniła się z pitolenia"
+    },
+    {
+      "start": 4512.53,
+      "end": 4513.05,
+      "text": "na próbie,"
+    },
+    {
+      "start": 4513.17,
+      "end": 4514.57,
+      "text": "które uskuteczniał"
+    },
+    {
+      "start": 4514.57,
+      "end": 4515.9,
+      "text": "sobie z Fredrikiem"
+    },
+    {
+      "start": 4515.9,
+      "end": 4517.68,
+      "text": "Tordendallem, czyli"
+    },
+    {
+      "start": 4517.68,
       "end": 4519.49,
-      "text": "czyli gitarzystą Meshuga."
+      "text": "gitarzystą Meshuga."
     },
     {
-      "start": 4519.97,
-      "end": 4526.85,
-      "text": "Co to są za ludzie, którzy takie rzeczy robią przypadkiem, którym to samo wychodzi?"
+      "start": 4520.49,
+      "end": 4521.08,
+      "text": "Co to są za ludzie,"
     },
     {
-      "start": 4527.81,
-      "end": 4529.29,
-      "text": "A może to nie ludzie?"
+      "start": 4521.08,
+      "end": 4522.54,
+      "text": "którzy takie rzeczy"
     },
     {
-      "start": 5785.92,
-      "end": 5799.7,
-      "text": "Nie myśleliście chyba, że to dziwne, wyjątkowe wydanie Ciężko na sercu z pokręconymi, arcymrocznymi, długasami obejdzie się bez san."
+      "start": 4522.54,
+      "end": 4524.29,
+      "text": "robią przypadkiem,"
     },
     {
-      "start": 5799.7,
+      "start": 4524.29,
+      "end": 4526.83,
+      "text": "którym to samo wychodzi?"
+    },
+    {
+      "start": 4527.75,
+      "end": 4528.34,
+      "text": "A może to nie"
+    },
+    {
+      "start": 4528.34,
+      "end": 4529.27,
+      "text": "ludzie?"
+    },
+    {
+      "start": 5786.88,
+      "end": 5788.17,
+      "text": "Nie myśleliście"
+    },
+    {
+      "start": 5788.17,
+      "end": 5789.93,
+      "text": "chyba, że to dziwne,"
+    },
+    {
+      "start": 5789.93,
+      "end": 5791.54,
+      "text": "wyjątkowe wydanie"
+    },
+    {
+      "start": 5791.54,
+      "end": 5793.38,
+      "text": "Ciężko na sercu, z"
+    },
+    {
+      "start": 5793.38,
+      "end": 5795.96,
+      "text": "pokręconymi, arcymrocznymi,"
+    },
+    {
+      "start": 5795.96,
+      "end": 5796.82,
+      "text": "długasami"
+    },
+    {
+      "start": 5796.82,
+      "end": 5798.79,
+      "text": "obejdzie się bez"
+    },
+    {
+      "start": 5798.79,
+      "end": 5799.68,
+      "text": "san."
+    },
+    {
+      "start": 5800.38,
+      "end": 5801.39,
+      "text": "Przy okazji proszę"
+    },
+    {
+      "start": 5801.39,
+      "end": 5803.2,
+      "text": "pamiętać, że to nie"
+    },
+    {
+      "start": 5803.2,
+      "end": 5804.4,
+      "text": "żadne san oł,"
+    },
+    {
+      "start": 5805.06,
+      "end": 5806.19,
+      "text": "bo to kółko i trzy"
+    },
+    {
+      "start": 5806.19,
+      "end": 5807.71,
+      "text": "nawiasy to nie"
+    },
+    {
+      "start": 5807.71,
+      "end": 5808.94,
+      "text": "literki,"
+    },
+    {
+      "start": 5809.46,
+      "end": 5810.36,
+      "text": "tylko obrazek"
+    },
+    {
+      "start": 5810.36,
+      "end": 5813.22,
+      "text": "przedstawiający rozedrganą"
+    },
+    {
+      "start": 5813.22,
       "end": 5815.14,
-      "text": "Przy okazji proszę pamiętać, że to nie żadne san oł, bo to kółko i trzy nawiasy to nie literki, tylko obrazek przedstawiający rozedrganą membranę głośnika."
+      "text": "membranę głośnika."
     },
     {
       "start": 5815.14,
+      "end": 5816.8,
+      "text": "Nazwy i logo zespół"
+    },
+    {
+      "start": 5816.8,
+      "end": 5818.55,
+      "text": "zresztą zapożyczył"
+    },
+    {
+      "start": 5818.55,
+      "end": 5820.34,
+      "text": "sobie od producenta"
+    },
+    {
+      "start": 5820.34,
       "end": 5821.62,
-      "text": "Nazwy i logo zespół zresztą zapożyczył sobie od producenta takowych."
+      "text": "takowych."
     },
     {
-      "start": 5821.62,
+      "start": 5822.28,
+      "end": 5823.24,
+      "text": "Nikt ich za to nie"
+    },
+    {
+      "start": 5823.24,
+      "end": 5825.53,
+      "text": "ścigał, bo Amerykanie"
+    },
+    {
+      "start": 5825.53,
+      "end": 5827.34,
+      "text": "san potrafią"
+    },
+    {
+      "start": 5827.34,
+      "end": 5829.96,
+      "text": "wprawiać głośniki w"
+    },
+    {
+      "start": 5829.96,
       "end": 5833.96,
-      "text": "Nikt ich za to nie ścigał, bo Amerykanie san potrafią wprawiać głośniki w groźnie brzmiące drgania."
+      "text": "groźnie brzmiące drgania."
     },
     {
-      "start": 5834.06,
+      "start": 5834.1,
+      "end": 5835.59,
+      "text": "Potrafią to jak mało"
+    },
+    {
+      "start": 5835.59,
+      "end": 5836.24,
+      "text": "kto."
+    },
+    {
+      "start": 5836.46,
+      "end": 5837.84,
+      "text": "Oni wręcz je palą"
+    },
+    {
+      "start": 5837.84,
+      "end": 5839.23,
+      "text": "tym swoim dron"
+    },
+    {
+      "start": 5839.23,
+      "end": 5840.32,
+      "text": "metalem,"
+    },
+    {
+      "start": 5840.32,
+      "end": 5842.27,
+      "text": "zjadają te głośniki"
+    },
+    {
+      "start": 5842.27,
       "end": 5843.76,
-      "text": "Potrafią to jak mało kto. Oni wręcz je palą tym swoim dron metalem, zjadają te głośniki na śniadanie,"
+      "text": "na śniadanie,"
     },
     {
-      "start": 5844.36,
-      "end": 5855.84,
-      "text": "a na koncertach potrafią rozedrgać publiczności wszystkie organy wewnętrzne, co potwierdzam, testowałem na własnym organizmie."
+      "start": 5844.1,
+      "end": 5845.81,
+      "text": "a na koncertach potrafią"
     },
     {
-      "start": 5856.84,
+      "start": 5845.81,
+      "end": 5848.24,
+      "text": "rozedrgać publiczności,"
+    },
+    {
+      "start": 5849.12,
+      "end": 5851.22,
+      "text": "wszystkie organy wewnętrzne,"
+    },
+    {
+      "start": 5852.1,
+      "end": 5853.85,
+      "text": "co potwierdzam,"
+    },
+    {
+      "start": 5853.85,
+      "end": 5855.36,
+      "text": "testowałem na własnym"
+    },
+    {
+      "start": 5855.36,
+      "end": 5856.42,
+      "text": "organizmie."
+    },
+    {
+      "start": 5857.2,
+      "end": 5859.19,
+      "text": "San to zasadniczo"
+    },
+    {
+      "start": 5859.19,
+      "end": 5860.6,
+      "text": "duet stworzony"
+    },
+    {
+      "start": 5860.6,
+      "end": 5861.26,
+      "text": "przez Grega"
+    },
+    {
+      "start": 5861.26,
+      "end": 5861.8,
+      "text": "Andersona"
+    },
+    {
+      "start": 5861.8,
+      "end": 5863.8,
+      "text": "i Stefana O'Malleya,"
+    },
+    {
+      "start": 5863.8,
       "end": 5866.6,
-      "text": "San to zasadniczo duet stworzony przez Grega Andersona i Stephena O'Malleya, choć czasem się rozrasta."
+      "text": "choć czasem się rozrasta."
     },
     {
-      "start": 5867.24,
+      "start": 5867.26,
+      "end": 5867.81,
+      "text": "Bywa, że śpiewał"
+    },
+    {
+      "start": 5867.81,
+      "end": 5869.36,
+      "text": "nich Attila Cichar,"
+    },
+    {
+      "start": 5869.88,
+      "end": 5871.46,
+      "text": "ten szalony Węgier"
+    },
+    {
+      "start": 5871.46,
       "end": 5873.38,
-      "text": "Bywa, że śpiewał nich Attila Cichar, ten szalony Węgier z Tormentora i Mayhem."
+      "text": "z Tormentora i Mayhem."
     },
     {
-      "start": 5874.32,
+      "start": 5874.04,
+      "end": 5874.52,
+      "text": "Nagrali też płytę"
+    },
+    {
+      "start": 5874.52,
+      "end": 5875.54,
+      "text": "niesamowitą ze"
+    },
+    {
+      "start": 5875.54,
       "end": 5877.96,
-      "text": "Zagrali też płytę niesamowitą ze Scottem Walkerem."
+      "text": "Scottem Walkerem."
     },
     {
-      "start": 5878.6,
+      "start": 5878.68,
+      "end": 5879.33,
+      "text": "A utwór, którym się"
+    },
+    {
+      "start": 5879.33,
+      "end": 5880.28,
+      "text": "pożegnamy,"
+    },
+    {
+      "start": 5880.28,
+      "end": 5884.16,
+      "text": "nosi tytuł Nowe i zamyka"
+    },
+    {
+      "start": 5884.16,
       "end": 5886.56,
-      "text": "A utwór, którym się pożegnamy nosi tytuł Nowe i zamyka płytę Life Metal,"
+      "text": "płytę Life Metal,"
     },
     {
       "start": 5887.18,
-      "end": 5892.42,
-      "text": "ósmą w dorobku zespołu wydaną w 2019 roku."
+      "end": 5889.24,
+      "text": "ósmą w dorobku zespołu"
+    },
+    {
+      "start": 5889.24,
+      "end": 5892.44,
+      "text": "wydaną w 2019 roku."
     },
     {
       "start": 5893.42,
+      "end": 5894.69,
+      "text": "Produkował ją nieodżałowany"
+    },
+    {
+      "start": 5894.69,
+      "end": 5895.9,
+      "text": "Steve Albini,"
+    },
+    {
+      "start": 5896.06,
+      "end": 5898.46,
+      "text": "który kochał głośne"
+    },
+    {
+      "start": 5898.46,
       "end": 5901.1,
-      "text": "Produkował ją nieodżałowany Steve Albini, który kochał głośne i rzężące gitary."
+      "text": "i rzężące gitary."
     },
     {
       "start": 5902.04,
-      "end": 5907.84,
-      "text": "My też kochamy, zatem niech przemówią i niech utulą was do snu."
+      "end": 5903.43,
+      "text": "My też kochamy, zatem"
     },
     {
-      "start": 5908.38,
+      "start": 5903.43,
+      "end": 5905.06,
+      "text": "niech przemówią"
+    },
+    {
+      "start": 5905.06,
+      "end": 5906.44,
+      "text": "i niech utulą Was"
+    },
+    {
+      "start": 5906.44,
+      "end": 5906.88,
+      "text": "dobra."
+    },
+    {
+      "start": 5906.88,
+      "end": 5909.02,
+      "text": "Do snu. Dobranoc."
+    },
+    {
+      "start": 5909.02,
       "end": 5910.12,
-      "text": "Dobranoc. Do usłyszenia."
-    },
-    {
-      "start": 5911.42,
-      "end": 5912.54,
-      "text": "Dziękuje za oglądanie."
+      "text": "Do usłyszenia."
     }
   ],
   "stats": {
-    "windowCount": 5,
-    "transcribedAudioSec": 743.87,
-    "segmentCount": 117,
-    "characterCount": 7516
-  },
-  "sourceId": "2026-07-08-tego-na-pewno-nie-puszcza-w-radiu"
+    "windowCount": 7,
+    "transcribedAudioSec": 718.56,
+    "segmentCount": 409,
+    "characterCount": 7162
+  }
 }
