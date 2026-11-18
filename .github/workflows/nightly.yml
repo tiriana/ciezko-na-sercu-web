@@ -15,7 +15,7 @@ on:
   schedule:
     - cron: '0 12 * * *' # transkrypcja zaległości, poza porą publikacji
     - cron: '30 4 * * *' # profil głosu, po transkrypcie środowego odcinka
-    - cron: '10 5 * * *' # tytuły redakcyjne — redakcja nadaje je w dowolnym momencie
+    - cron: '10 */2 * * *' # tytuły redakcyjne — redakcja nadaje je w dowolnym momencie
     - cron: '0 6 * * *' # streszczenia i nazwy wejść
     - cron: '30 7 * * *' # braki, których nie domknęły wcześniejsze etapy
   workflow_dispatch:
@@ -255,7 +255,7 @@ jobs:
         run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
 
   titles:
-    if: (github.event_name == 'schedule' && github.event.schedule == '10 5 * * 1') || (github.event_name == 'workflow_dispatch' && (inputs.stage == 'all' || inputs.stage == 'titles'))
+    if: (github.event_name == 'schedule' && github.event.schedule == '10 */2 * * *') || (github.event_name == 'workflow_dispatch' && (inputs.stage == 'all' || inputs.stage == 'titles'))
     runs-on: ubuntu-26.04
     timeout-minutes: 20
     concurrency:
