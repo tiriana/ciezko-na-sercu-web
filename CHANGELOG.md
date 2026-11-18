@@ -1,3 +1,9 @@
+## [1.86.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.0...v1.86.1) (2026-11-18)
+
+### Bug Fixes
+
+* timeout na wycinanie próbek z mp3 ([#106](https://github.com/tiriana/ciezko-na-sercu-web/issues/106)) ([9f960a2](https://github.com/tiriana/ciezko-na-sercu-web/commit/9f960a2c03609465b7ef40e25fe7853c3dab9307))
+
 ## [1.86.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.85.0...v1.86.0) (2026-11-18)
 
 ### Features
