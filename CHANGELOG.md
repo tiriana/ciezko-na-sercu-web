@@ -1,3 +1,9 @@
+## [1.86.4](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.3...v1.86.4) (2026-11-18)
+
+### Bug Fixes
+
+* identify pobiera nagranie raz zamiast ciąć z URL-a ([#109](https://github.com/tiriana/ciezko-na-sercu-web/issues/109)) ([0df1c4c](https://github.com/tiriana/ciezko-na-sercu-web/commit/0df1c4c7258a468b0c6581a79d25f2335ff7e259))
+
 ## [1.86.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.2...v1.86.3) (2026-11-18)
 
 ### Bug Fixes
