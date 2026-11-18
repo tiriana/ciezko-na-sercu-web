@@ -45,7 +45,11 @@ jobs:
       # Wpis ma się pojawić od razu, a tracklista dojdzie po transkrypcji — dlatego
       # każdy odcinek bez pliku opracowania dostaje zaślepkę z pustym programem.
       - name: Utwórz zaślepki opracowań
-        run: node scripts/stub-episodes.mjs
+        id: stubs
+        run: |
+          node scripts/stub-episodes.mjs
+          ids=$(git ls-files --others --exclude-standard data/episodes | xargs -r -n1 basename -s .json | paste -sd, -)
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
 
       - name: Zainstaluj zależności
         run: npm ci
@@ -81,7 +85,8 @@ jobs:
       # transkrypcję sam, po commicie artefaktu.
       # Symulacja niczego nie zamawia: to praca runnerów na materiale z kolejki.
       - name: Zamów bloki mowy dla nowego odcinka
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.stubs.outputs.ids != ''
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run spans.yml --ref main
+          IDS: ${{ steps.stubs.outputs.ids }}
+        run: gh workflow run spans.yml --ref main -f episodes="$IDS"

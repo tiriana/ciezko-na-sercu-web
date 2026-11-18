@@ -17,6 +17,7 @@ const run = promisify(execFile);
 const CHUNK_SEC = 2700;
 const MIN_EPISODE_SEC = 115 * 60;
 const PROBE_TIMEOUT_MS = 30_000;
+const MATRIX_LIMIT = 256;
 
 const catalog = JSON.parse(readFileSync(new URL('../data/catalog.json', import.meta.url), 'utf8'));
 const wanted = String(process.env.EPISODES ?? '')
@@ -165,6 +166,10 @@ if (process.env.SOURCE === 'spans') {
   // transkryptu.
   if (wanted.length > 0 && missingSpans.length > 0) {
     console.log(`::error::Brak bloków mowy dla: ${missingSpans.join(', ')} — artefakt VAD nie trafił do repo.`);
+    process.exit(1);
+  }
+  if (matrix.length > MATRIX_LIMIT) {
+    console.log(`::error::${matrix.length} jobów przekracza limit macierzy GitHuba (${MATRIX_LIMIT}) — zamów mniej odcinków naraz.`);
     process.exit(1);
   }
   if (outputFile) {
