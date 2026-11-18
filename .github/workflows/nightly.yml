@@ -15,7 +15,7 @@ on:
   schedule:
     - cron: '0 12 * * *' # transkrypcja zaległości, poza porą publikacji
     - cron: '30 4 * * *' # profil głosu, po transkrypcie środowego odcinka
-    - cron: '10 5 * * 1' # tytuły redakcyjne, poniedziałek
+    - cron: '10 5 * * *' # tytuły redakcyjne — redakcja nadaje je w dowolnym momencie
     - cron: '0 6 * * *' # streszczenia i nazwy wejść
     - cron: '30 7 * * *' # braki, których nie domknęły wcześniejsze etapy
   workflow_dispatch:
