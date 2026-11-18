@@ -43,6 +43,8 @@ const PROBE = { probeSec: 12, leadInSec: 12, tailSec: 10, maxProbes: 3 };
 const POSITIONS = [0.15, 0.5, 0.85];
 const SHAZAM_DELAY_MS = 1200;
 const RETRY = { attempts: 4, baseDelayMs: 5000 };
+// `node-shazam` woła `fetch` bez timeoutu, więc zawieszona odpowiedź trzyma job do limitu.
+const RECOGNIZE_TIMEOUT_MS = 30_000;
 const CONFIDENCE = 'średnia';
 
 const args = new Map();
@@ -149,7 +151,12 @@ const recognize = async (file) => {
   let lastError = null;
   for (let attempt = 1; attempt <= RETRY.attempts; attempt += 1) {
     try {
-      return await shazam.recognise(file, 'en-US');
+      return await Promise.race([
+        shazam.recognise(file, 'en-US'),
+        sleep(RECOGNIZE_TIMEOUT_MS).then(() => {
+          throw new Error(`Shazam nie odpowiedział w ${RECOGNIZE_TIMEOUT_MS / 1000} s`);
+        }),
+      ]);
     } catch (error) {
       lastError = error;
       if (attempt < RETRY.attempts) await sleep(RETRY.baseDelayMs * 2 ** (attempt - 1));

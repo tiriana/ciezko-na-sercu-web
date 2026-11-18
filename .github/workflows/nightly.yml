@@ -1,7 +1,8 @@
 name: nocny bieg
 
 # Codzienne zadania, które nie reagują na nowy odcinek: transkrypcja zaległości,
-# profil głosu, streszczenia i tytuły redakcyjne. Cztery pory, jeden plik.
+# profil głosu, streszczenia, tytuły redakcyjne i domknięcie braków. Pięć pór,
+# jeden plik.
 #
 # Pory i czasy trwania są różne, więc transkrypcja i tytuły mają własne grupy
 # `concurrency`; wspólna grupa blokowałaby np. profil głosu (do 3 h) przez resztę.
@@ -16,6 +17,7 @@ on:
     - cron: '30 4 * * *' # profil głosu, po transkrypcie środowego odcinka
     - cron: '10 5 * * 1' # tytuły redakcyjne, poniedziałek
     - cron: '0 6 * * *' # streszczenia i nazwy wejść
+    - cron: '30 7 * * *' # braki, których nie domknęły wcześniejsze etapy
   workflow_dispatch:
     inputs:
       stage:
@@ -23,7 +25,7 @@ on:
         required: false
         default: 'all'
         type: choice
-        options: [all, transcribe, voiceprint, enrich, titles]
+        options: [all, transcribe, voiceprint, enrich, titles, health]
       episodes:
         description: 'UUID lub slugi oddzielone przecinkami; puste = kolejka'
         required: false
@@ -283,3 +285,19 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
+
+  health:
+    if: (github.event_name == 'schedule' && github.event.schedule == '30 7 * * *') || (github.event_name == 'workflow_dispatch' && (inputs.stage == 'all' || inputs.stage == 'health'))
+    runs-on: ubuntu-26.04
+    timeout-minutes: 15
+    concurrency:
+      group: health
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      # Skrypt czyta pliki z repo i gada tylko z API GitHuba, więc `npm ci` nie jest potrzebne.
+      - name: Domknij braki
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/health.mjs --dispatch
