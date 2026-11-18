@@ -4,842 +4,4392 @@
   "provider": "whisper-cpp",
   "model": "large-v3-turbo-q5_0",
   "language": "pl",
-  "fileSizeBytes": 114059399,
-  "fileMtimeMs": 1789150378048.2585,
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
   "windows": [
     {
       "index": 0,
-      "start": 0,
-      "end": 13.69
+      "start": 0.54,
+      "end": 11.22
     },
     {
       "index": 1,
-      "start": 249.25,
-      "end": 352.25
+      "start": 251.39,
+      "end": 350.23
     },
     {
       "index": 2,
-      "start": 699.11,
-      "end": 796
+      "start": 700,
+      "end": 794.72
     },
     {
       "index": 3,
-      "start": 995.88,
-      "end": 1175.2
+      "start": 996.92,
+      "end": 1173.16
     },
     {
       "index": 4,
-      "start": 1801.89,
-      "end": 1905.92
+      "start": 1803,
+      "end": 1903.8
     },
     {
       "index": 5,
-      "start": 2287.17,
-      "end": 2380.44
+      "start": 2288.96,
+      "end": 2378.88
     },
     {
       "index": 6,
-      "start": 2601.8,
-      "end": 2667.52
+      "start": 2602.72,
+      "end": 2665.24
     },
     {
       "index": 7,
-      "start": 2943.04,
-      "end": 3156.67
+      "start": 2943.96,
+      "end": 3150.9
     },
     {
       "index": 8,
-      "start": 3178.08,
-      "end": 3181.4
+      "start": 3844.8,
+      "end": 3958.86
     },
     {
       "index": 9,
-      "start": 3237.7,
-      "end": 3286.4
+      "start": 4416.7,
+      "end": 4472.58
     },
     {
       "index": 10,
-      "start": 3843.78,
-      "end": 3961.12
+      "start": 4808.57,
+      "end": 4876.27
     },
     {
       "index": 11,
-      "start": 4415.11,
-      "end": 4473.98
+      "start": 5404,
+      "end": 5492.74
     },
     {
       "index": 12,
-      "start": 4807.11,
-      "end": 4878.62
+      "start": 5858.24,
+      "end": 5908.58
     },
     {
       "index": 13,
-      "start": 5402.88,
-      "end": 5496.06
+      "start": 6135,
+      "end": 6217.92
     },
     {
       "index": 14,
-      "start": 5857,
-      "end": 5910.97
+      "start": 6595.58,
+      "end": 6636.84
     },
     {
       "index": 15,
-      "start": 6134.08,
-      "end": 6220.16
+      "start": 6874.78,
+      "end": 6994.78
     },
     {
       "index": 16,
-      "start": 6594.6,
-      "end": 6638.33
-    },
-    {
-      "index": 17,
-      "start": 6873.57,
-      "end": 7011.52
+      "start": 6994.78,
+      "end": 7009.06
     }
   ],
   "segments": [
     {
-      "start": 0,
-      "end": 5.04,
-      "text": "Trójka. Program Trzeci Polskiego Radia."
+      "start": 0.54,
+      "end": 1.58,
+      "text": "Trójka"
     },
     {
-      "start": 8.46,
-      "end": 11.18,
-      "text": "Ciężko na sercu."
+      "start": 1.58,
+      "end": 4.5,
+      "text": "Program Trzeci Polskiego"
     },
     {
-      "start": 249.25,
+      "start": 4.5,
+      "end": 5.22,
+      "text": "Radia"
+    },
+    {
+      "start": 5.22,
+      "end": 11.22,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 251.39,
+      "end": 252.75,
+      "text": "Kłania się Państwu"
+    },
+    {
+      "start": 252.75,
+      "end": 254.5,
+      "text": "człowiek spełniony."
+    },
+    {
+      "start": 254.5,
+      "end": 255.97,
+      "text": "Prowadzę co tydzień"
+    },
+    {
+      "start": 255.97,
+      "end": 257.43,
+      "text": "audycję o ciężarach"
+    },
+    {
+      "start": 257.43,
+      "end": 258.52,
+      "text": "w Trójce i jej"
+    },
+    {
+      "start": 258.52,
+      "end": 260.33,
+      "text": "kolejny odcinek mogłem"
+    },
+    {
+      "start": 260.33,
+      "end": 262.12,
+      "text": "rozpocząć tą piękną"
+    },
+    {
+      "start": 262.12,
       "end": 263.35,
-      "text": "Dobry wieczór. Kłania się Państwu Człowiek Spełniony. Prowadzę co tydzień audycję o ciężarach w Trójce i jej kolejny odcinek mogłem rozpocząć tą piękną piosenką."
+      "text": "piosenką."
     },
     {
-      "start": 263.57,
+      "start": 264.21,
+      "end": 264.74,
+      "text": "Czego więcej można"
+    },
+    {
+      "start": 264.74,
+      "end": 266.15,
+      "text": "chcieć od życia?"
+    },
+    {
+      "start": 267.05,
+      "end": 267.58,
+      "text": "Sięgnąłem po Rick"
+    },
+    {
+      "start": 267.58,
+      "end": 269.63,
+      "text": "of Patrifaction, klasyk"
+    },
+    {
+      "start": 269.63,
+      "end": 271.31,
+      "text": "grindu z repertuaru"
+    },
+    {
+      "start": 271.31,
+      "end": 272.82,
+      "text": "Carcass, bo jest ku"
+    },
+    {
+      "start": 272.82,
       "end": 274.57,
-      "text": "Czego więcej można chcieć od życia? Sięgnąłem po Rick of Patrifaction, klasyk grindu z repertuaru Carcass, bo jest ku temu dobry powód."
+      "text": "temu dobry powód."
     },
     {
-      "start": 275.43,
-      "end": 292.17,
-      "text": "Już za chwilę w weekend Brytyjczycy ponownie wystąpią w Polsce, tym razem jako gwiazda festiwalu Rokowizna, który odbywa się w Zwierzyńcu w Parku Środowiskowym 3 i 4 lipca."
+      "start": 274.85,
+      "end": 275.99,
+      "text": "Już za chwilę w"
+    },
+    {
+      "start": 275.99,
+      "end": 277.7,
+      "text": "weekend Brytyjczycy"
+    },
+    {
+      "start": 277.7,
+      "end": 279.35,
+      "text": "ponownie wystąpią w"
+    },
+    {
+      "start": 279.35,
+      "end": 280.9,
+      "text": "Polsce, tym razem"
+    },
+    {
+      "start": 280.9,
+      "end": 282.82,
+      "text": "jako gwiazda festiwalu"
+    },
+    {
+      "start": 282.82,
+      "end": 285.66,
+      "text": "Rokowizna, który odbywa"
+    },
+    {
+      "start": 285.66,
+      "end": 287.69,
+      "text": "się w Zwierzyńcu w"
+    },
+    {
+      "start": 287.69,
+      "end": 290.05,
+      "text": "Parku Środowiskowym"
+    },
+    {
+      "start": 290.05,
+      "end": 292.19,
+      "text": "3 i 4 lipca."
     },
     {
       "start": 292.81,
-      "end": 305.41,
-      "text": "Ładnie ten festiwal rośnie i nabiera mocy, bo to już nie tyle Rokowizna, co Metalowizna, a ja oczywiście nie mam nic przeciwko takiej ścieżce rozwoju."
+      "end": 294.41,
+      "text": "Ładnie ten festiwal"
     },
     {
-      "start": 306.29,
-      "end": 319.13,
-      "text": "Oprócz Carcass zwierzyniec odwiedzą w najbliższy weekend inne dzikie bestie, w tym Furia, I Am Morbid, Get The Shot, Dope Lord oraz Blinded 23."
+      "start": 294.41,
+      "end": 296.44,
+      "text": "rośnie i nabiera mocy,"
     },
     {
-      "start": 319.13,
+      "start": 296.44,
+      "end": 297.64,
+      "text": "bo to już nie tyle"
+    },
+    {
+      "start": 297.64,
+      "end": 300.13,
+      "text": "Rokowizna, co Metalowizna,"
+    },
+    {
+      "start": 300.13,
+      "end": 301.7,
+      "text": "a ja oczywiście nie"
+    },
+    {
+      "start": 301.7,
+      "end": 303.4,
+      "text": "mam nic przeciwko"
+    },
+    {
+      "start": 303.4,
+      "end": 305.49,
+      "text": "takiej ścieżce rozwoju."
+    },
+    {
+      "start": 306.33,
+      "end": 308.03,
+      "text": "Oprócz Carcass zwierzyniec"
+    },
+    {
+      "start": 308.03,
+      "end": 309.97,
+      "text": "odwiedzą w najbliższy"
+    },
+    {
+      "start": 309.97,
+      "end": 311.71,
+      "text": "weekend inne dzikie"
+    },
+    {
+      "start": 311.71,
+      "end": 313.81,
+      "text": "bestie, w tym Furia,"
+    },
+    {
+      "start": 313.81,
+      "end": 315.24,
+      "text": "I Am Morbid, Get"
+    },
+    {
+      "start": 315.24,
+      "end": 316.98,
+      "text": "The Shot, Dope Lord"
+    },
+    {
+      "start": 316.98,
+      "end": 319.15,
+      "text": "oraz Blinded 23."
+    },
+    {
+      "start": 319.15,
+      "end": 320.64,
+      "text": "I Blinded za chwilę"
+    },
+    {
+      "start": 320.64,
+      "end": 322.16,
+      "text": "posłuchamy, bo ich"
+    },
+    {
+      "start": 322.16,
+      "end": 323.86,
+      "text": "płyta Deuterium wciąż"
+    },
+    {
+      "start": 323.86,
+      "end": 325.61,
+      "text": "jeszcze jest świeża,"
+    },
+    {
+      "start": 325.61,
+      "end": 327.14,
+      "text": "wciąż nie ograna, a"
+    },
+    {
+      "start": 327.14,
+      "end": 328.04,
+      "text": "mówię o tym"
+    },
+    {
+      "start": 328.04,
+      "end": 329.74,
+      "text": "wszystkim, bo dziś"
+    },
+    {
+      "start": 329.74,
+      "end": 330.94,
+      "text": "przez dwie godziny"
+    },
+    {
+      "start": 330.94,
+      "end": 332.49,
+      "text": "opowiadał będę, na"
+    },
+    {
+      "start": 332.49,
+      "end": 333.76,
+      "text": "jakie koncerty w"
+    },
+    {
+      "start": 333.76,
+      "end": 335.31,
+      "text": "lipcu warto zwrócić"
+    },
+    {
+      "start": 335.31,
       "end": 336.45,
-      "text": "I Blinded za chwilę posłuchamy, bo ich płyta Deuterium wciąż jeszcze jest świeża, wciąż nie ograna, a mówię o tym wszystkim, bo dziś przez dwie godziny opowiadał będę, na jakie koncerty w lipcu warto zwrócić uwagę."
+      "text": "uwagę."
     },
     {
       "start": 337.31,
-      "end": 341.23,
-      "text": "Dużo tego będzie, w tym niemało dobrego."
+      "end": 338.59,
+      "text": "Dużo tego będzie, w"
     },
     {
-      "start": 341.83,
-      "end": 349.05,
-      "text": "Audycja nazywa się Ciężko na sercu, ja nazywam się Jarek Szubrycht, wydawcą jest Mariusz Owczarek."
+      "start": 338.59,
+      "end": 341.21,
+      "text": "tym niemało dobrego."
     },
     {
-      "start": 349.57,
-      "end": 350.25,
-      "text": "Zaczynamy."
+      "start": 341.51,
+      "end": 342.58,
+      "text": "Audycja nazywa się"
     },
     {
-      "start": 350.25,
-      "end": 352.25,
-      "text": "Muzyka"
+      "start": 342.58,
+      "end": 344.03,
+      "text": "Ciężko na sercu, ja"
     },
     {
-      "start": 700.05,
-      "end": 710.21,
-      "text": "Last Lightning to black metal z Norwegii, raczej daleki od czołówki tamtejszej sceny, ale jak ktoś słucha to wstydu nie ma."
+      "start": 344.03,
+      "end": 345.32,
+      "text": "nazywam się Jarek"
     },
     {
-      "start": 710.87,
-      "end": 719.91,
-      "text": "Zespół wybiera się na aż pięć koncertów do Polski, pewnie po to, by Kacper Śliwa, perkusista grupy, mógł odwiedzić swoje rodzinne strony."
+      "start": 345.32,
+      "end": 346.86,
+      "text": "Szubrycht, wydawcą"
     },
     {
-      "start": 720.27,
-      "end": 739.71,
-      "text": "Pomiędzy 3 a 11 lipca Last Lightning zagrają w Gdańsku, Poznaniu, Warszawie, Katowicach i Krakowie za każdym razem z innym zestawem supportów, wśród których znajdą się m.in. Death Reapers, Pale Death i Waśń."
+      "start": 346.86,
+      "end": 349.09,
+      "text": "jest Mariusz Owczarek."
     },
     {
-      "start": 740.49,
-      "end": 752.23,
-      "text": "4 lipca, o to jest wspaniałe, w Cycynie, konkretnie w Zagrodzie na Zadupiu, odbędzie się festiwal Rozłupnia."
+      "start": 349.15,
+      "end": 350.23,
+      "text": "Zaczynamy!"
     },
     {
-      "start": 753.47,
-      "end": 756.21,
-      "text": "Nie zmyślam, to wszystko nazwy własne."
+      "start": 700,
+      "end": 701.38,
+      "text": "Last Lightning to"
     },
     {
-      "start": 756.21,
-      "end": 772.33,
-      "text": "Na drugiej edycji tej imprezy zaprezentują się m.in. Damnatorum, Supreme Void i Mortemorium i życzę zarówno zespołom, jak i publiczności miłego rozłupywania."
+      "start": 701.38,
+      "end": 702.4,
+      "text": "black metal z"
     },
     {
-      "start": 773.53,
-      "end": 780.85,
-      "text": "Crossover Krakau to cykliczna impreza, która odbywa się, jak sama nazwa wskazuje, w Krakowie."
+      "start": 702.4,
+      "end": 703.74,
+      "text": "Norwegii, raczej"
     },
     {
-      "start": 780.85,
-      "end": 787.67,
-      "text": "I jej dziesiąta już edycja będzie miała miejsce 4 lipca w klubie Gwarek."
+      "start": 703.74,
+      "end": 704.82,
+      "text": "daleki od czołówki"
     },
     {
-      "start": 788.35,
-      "end": 791.79,
-      "text": "Na scenie m.in. Terror Dome i Spices."
+      "start": 704.82,
+      "end": 706.32,
+      "text": "tamtejszej sceny,"
     },
     {
-      "start": 792.99,
-      "end": 794.03,
-      "text": "No i czego chcieć więcej?"
+      "start": 706.32,
+      "end": 708.04,
+      "text": "ale jak ktoś słucha"
     },
     {
-      "start": 995.88,
-      "end": 1008.46,
-      "text": "Kiedy byłem ciekawym świata brzdącem, takim nastoletnim brzdącem, żeby nie było, zainteresowałem się seryjnymi mordercami."
+      "start": 708.04,
+      "end": 710.2,
+      "text": "to wstydu nie ma."
     },
     {
-      "start": 1008.98,
-      "end": 1019.78,
-      "text": "Kto nigdy nie interesował się ludźmi tak złymi, że aż fascynującymi, niech pierwszy rzuci kamieniem, tylko proszę nie celować w głowę."
+      "start": 710.88,
+      "end": 711.43,
+      "text": "Zespół wybiera się"
     },
     {
-      "start": 1020.44,
+      "start": 711.43,
+      "end": 712.72,
+      "text": "na aż pięć koncertów"
+    },
+    {
+      "start": 712.72,
+      "end": 713.95,
+      "text": "do Polski, pewnie"
+    },
+    {
+      "start": 713.95,
+      "end": 715.62,
+      "text": "po to, by Kacper Śliwa,"
+    },
+    {
+      "start": 715.62,
+      "end": 717.14,
+      "text": "perkusista grupy, mógł"
+    },
+    {
+      "start": 717.14,
+      "end": 718.82,
+      "text": "odwiedzić swoje rodzinne"
+    },
+    {
+      "start": 718.82,
+      "end": 719.9,
+      "text": "strony."
+    },
+    {
+      "start": 720.3,
+      "end": 721.66,
+      "text": "Pomiędzy trzecim a"
+    },
+    {
+      "start": 721.66,
+      "end": 722.94,
+      "text": "jedenastym lipca"
+    },
+    {
+      "start": 722.94,
+      "end": 724.7,
+      "text": "Last Lightning zagrają"
+    },
+    {
+      "start": 724.7,
+      "end": 726.21,
+      "text": "w Gdańsku, Poznaniu,"
+    },
+    {
+      "start": 726.21,
+      "end": 728.12,
+      "text": "Warszawie, Katowicach"
+    },
+    {
+      "start": 728.12,
+      "end": 730.13,
+      "text": "i Krakowie za każdym"
+    },
+    {
+      "start": 730.13,
+      "end": 732.73,
+      "text": "razem z innym zestawem"
+    },
+    {
+      "start": 732.73,
+      "end": 734.62,
+      "text": "supportów, wśród"
+    },
+    {
+      "start": 734.62,
+      "end": 735.62,
+      "text": "których znajdą się"
+    },
+    {
+      "start": 735.62,
+      "end": 737.78,
+      "text": "m.in. Death Reapers,"
+    },
+    {
+      "start": 737.78,
+      "end": 739.72,
+      "text": "Pale Death i Waśń."
+    },
+    {
+      "start": 740.38,
+      "end": 742.35,
+      "text": "4 lipca, o to jest"
+    },
+    {
+      "start": 742.35,
+      "end": 744.78,
+      "text": "wspaniałe, w Cycynie,"
+    },
+    {
+      "start": 744.78,
+      "end": 747.23,
+      "text": "konkretnie w Zagrodzie"
+    },
+    {
+      "start": 747.23,
+      "end": 749.31,
+      "text": "na Zadupiu, odbędzie"
+    },
+    {
+      "start": 749.31,
+      "end": 752.24,
+      "text": "się festiwal Rozłupnia."
+    },
+    {
+      "start": 753.4,
+      "end": 753.9,
+      "text": "Nie zmyślam, to"
+    },
+    {
+      "start": 753.9,
+      "end": 756.22,
+      "text": "wszystko nazwy własne."
+    },
+    {
+      "start": 756.22,
+      "end": 757.63,
+      "text": "Na drugiej edycji"
+    },
+    {
+      "start": 757.63,
+      "end": 759.66,
+      "text": "tej imprezy zaprezentują"
+    },
+    {
+      "start": 759.66,
+      "end": 763.07,
+      "text": "się m.in. Damnatorum,"
+    },
+    {
+      "start": 763.07,
+      "end": 766.24,
+      "text": "Supreme Void i Mortemorium"
+    },
+    {
+      "start": 766.24,
+      "end": 768.54,
+      "text": "i życzę zarówno zespołom,"
+    },
+    {
+      "start": 768.54,
+      "end": 770.19,
+      "text": "jak i publiczności"
+    },
+    {
+      "start": 770.19,
+      "end": 772.34,
+      "text": "miłego rozłupywania."
+    },
+    {
+      "start": 773.54,
+      "end": 774.75,
+      "text": "Crossover Krakau to"
+    },
+    {
+      "start": 774.75,
+      "end": 776.33,
+      "text": "cykliczna impreza,"
+    },
+    {
+      "start": 776.33,
+      "end": 777.94,
+      "text": "która odbywa się,"
+    },
+    {
+      "start": 777.94,
+      "end": 779.83,
+      "text": "jak sama nazwa wskazuje,"
+    },
+    {
+      "start": 779.83,
+      "end": 780.84,
+      "text": "w Krakowie."
+    },
+    {
+      "start": 780.84,
+      "end": 782.52,
+      "text": "I jej dziesiąta już"
+    },
+    {
+      "start": 782.52,
+      "end": 784.3,
+      "text": "edycja będzie miała"
+    },
+    {
+      "start": 784.3,
+      "end": 785.99,
+      "text": "miejsce 4 lipca w"
+    },
+    {
+      "start": 785.99,
+      "end": 787.66,
+      "text": "klubie Gwarek."
+    },
+    {
+      "start": 788.34,
+      "end": 789.46,
+      "text": "Na scenie m.in."
+    },
+    {
+      "start": 789.46,
+      "end": 791.78,
+      "text": "Terror Dome i Species."
+    },
+    {
+      "start": 793,
+      "end": 793.13,
+      "text": "No i czego chcieć"
+    },
+    {
+      "start": 793.13,
+      "end": 794.02,
+      "text": "więcej?"
+    },
+    {
+      "start": 794.02,
+      "end": 794.72,
+      "text": "No i czego chcieć"
+    },
+    {
+      "start": 996.92,
+      "end": 998.62,
+      "text": "Kiedy byłem ciekawym"
+    },
+    {
+      "start": 998.62,
+      "end": 1000.16,
+      "text": "świata brzdącem,"
+    },
+    {
+      "start": 1000.16,
+      "end": 1002.09,
+      "text": "takim nastoletnim"
+    },
+    {
+      "start": 1002.09,
+      "end": 1003.81,
+      "text": "brzdącem, żeby nie"
+    },
+    {
+      "start": 1003.81,
+      "end": 1005.77,
+      "text": "było, zainteresowałem"
+    },
+    {
+      "start": 1005.77,
+      "end": 1008.48,
+      "text": "się seryjnymi mordercami."
+    },
+    {
+      "start": 1009.6,
+      "end": 1011.35,
+      "text": "interesował się ludźmi"
+    },
+    {
+      "start": 1011.35,
+      "end": 1012.64,
+      "text": "tak złymi, że aż"
+    },
+    {
+      "start": 1012.64,
+      "end": 1014.47,
+      "text": "fascynującymi, niech"
+    },
+    {
+      "start": 1014.47,
+      "end": 1016.69,
+      "text": "pierwszy rzuci kamieniem,"
+    },
+    {
+      "start": 1016.69,
+      "end": 1018,
+      "text": "tylko proszę nie"
+    },
+    {
+      "start": 1018,
+      "end": 1019.76,
+      "text": "celować w głowę."
+    },
+    {
+      "start": 1019.76,
+      "end": 1021.8,
+      "text": "A zatem seryjni mordercy,"
+    },
+    {
+      "start": 1021.8,
+      "end": 1022.63,
+      "text": "każdy z nich"
+    },
+    {
+      "start": 1022.63,
+      "end": 1024.28,
+      "text": "dzisiaj dorobił się"
+    },
+    {
+      "start": 1024.28,
+      "end": 1025.4,
+      "text": "co najmniej dwóch"
+    },
+    {
+      "start": 1025.4,
+      "end": 1027.73,
+      "text": "seriali telewizyjnych,"
+    },
+    {
+      "start": 1027.73,
+      "end": 1029.15,
+      "text": "dokumentu i fabuły,"
+    },
+    {
+      "start": 1029.15,
       "end": 1031.86,
-      "text": "A zatem seryjni mordercy, każdy z nich dzisiaj dorobił się co najmniej dwóch seriali telewizyjnych, dokumentu i fabuły, pękatych biografii,"
+      "text": "pękatych biografii,"
     },
     {
       "start": 1031.86,
-      "end": 1045.08,
-      "text": "tysiąca podcastów i milionów postów w mediach społecznościowych, niektórych interesujących i całkiem mądrych, w większości niestety dość płytkich i głupich,"
+      "end": 1033.15,
+      "text": "tysiąca podcastów i"
     },
     {
-      "start": 1045.18,
-      "end": 1054.76,
-      "text": "ale jeśli tylko ktoś gustuje w takim crime porn, może się napawać nim na każdym kroku i za darmo."
+      "start": 1033.15,
+      "end": 1034.29,
+      "text": "milionów postów w"
     },
     {
-      "start": 1055.46,
-      "end": 1061.6,
-      "text": "Dawniej tego nie było, zatem wiedzę o potworach w ludzkiej skórze czerpaliśmy z piosenek."
+      "start": 1034.29,
+      "end": 1036.44,
+      "text": "mediach społecznościowych."
     },
     {
-      "start": 1062.6,
-      "end": 1074.18,
-      "text": "Przede wszystkim z piosenek amerykańskiego zespołu Macabre, który od ponad 40 lat w niezmienionym składzie sieje zgorszenie pod postacią muzyki,"
+      "start": 1037.84,
+      "end": 1039.99,
+      "text": "Których interesujących"
     },
     {
-      "start": 1074.92,
-      "end": 1078.18,
-      "text": "którą sam nazywa murder metalem."
+      "start": 1039.99,
+      "end": 1041.81,
+      "text": "i całkiem mądrych,"
     },
     {
-      "start": 1078.18,
+      "start": 1041.81,
+      "end": 1043.69,
+      "text": "w większości niestety"
+    },
+    {
+      "start": 1043.69,
+      "end": 1045.93,
+      "text": "dość płytkich i głupich,"
+    },
+    {
+      "start": 1045.93,
+      "end": 1047.28,
+      "text": "ale jeśli tylko"
+    },
+    {
+      "start": 1047.28,
+      "end": 1048.53,
+      "text": "ktoś gustuje w"
+    },
+    {
+      "start": 1048.53,
+      "end": 1050.57,
+      "text": "takim crime porn,"
+    },
+    {
+      "start": 1050.57,
+      "end": 1051.64,
+      "text": "może się napawać"
+    },
+    {
+      "start": 1051.64,
+      "end": 1053.29,
+      "text": "nim na każdym kroku"
+    },
+    {
+      "start": 1053.29,
+      "end": 1054.74,
+      "text": "i za darmo."
+    },
+    {
+      "start": 1055.5,
+      "end": 1056.06,
+      "text": "Dawniej tego nie"
+    },
+    {
+      "start": 1056.06,
+      "end": 1057.64,
+      "text": "było, zatem wiedzę"
+    },
+    {
+      "start": 1057.64,
+      "end": 1059.59,
+      "text": "o potworach w ludzkiej"
+    },
+    {
+      "start": 1059.59,
+      "end": 1060.98,
+      "text": "skórze czerpaliśmy"
+    },
+    {
+      "start": 1060.98,
+      "end": 1062.24,
+      "text": "z piosenek."
+    },
+    {
+      "start": 1062.24,
+      "end": 1063.86,
+      "text": "Przede wszystkim z"
+    },
+    {
+      "start": 1063.86,
+      "end": 1066.06,
+      "text": "piosenek amerykańskiego"
+    },
+    {
+      "start": 1066.06,
+      "end": 1067.66,
+      "text": "zespołu Macabre,"
+    },
+    {
+      "start": 1067.66,
+      "end": 1069.48,
+      "text": "który od ponad 40"
+    },
+    {
+      "start": 1069.48,
+      "end": 1071.19,
+      "text": "lat w niezmienionym"
+    },
+    {
+      "start": 1071.19,
+      "end": 1073.5,
+      "text": "składzie sieje zgorszenie"
+    },
+    {
+      "start": 1073.5,
+      "end": 1075.41,
+      "text": "pod postacią muzyki,"
+    },
+    {
+      "start": 1075.41,
+      "end": 1076.82,
+      "text": "którą sam nazywa"
+    },
+    {
+      "start": 1076.82,
+      "end": 1078.74,
+      "text": "Murder Metalem."
+    },
+    {
+      "start": 1078.74,
+      "end": 1080.02,
+      "text": "To jedyne w swoim"
+    },
+    {
+      "start": 1080.02,
+      "end": 1081.57,
+      "text": "rodzaju połączenie"
+    },
+    {
+      "start": 1081.57,
+      "end": 1083.66,
+      "text": "pierwocin deathmetallu,"
+    },
+    {
+      "start": 1083.66,
+      "end": 1085.39,
+      "text": "straszem, punkiem,"
+    },
+    {
+      "start": 1085.39,
+      "end": 1087.31,
+      "text": "grindem i przyśpiewkami"
+    },
+    {
+      "start": 1087.31,
       "end": 1088.54,
-      "text": "To jedyne w swoim rodzaju połączenie pierwocin death metalu, straszem, punkiem, grindem i przyśpiewkami ludowymi."
+      "text": "ludowymi."
     },
     {
-      "start": 1089.2,
-      "end": 1101.18,
-      "text": "Bo w Macabre to właśnie jest fascynujące, że to zespół w jakimś sensie ludowy, prowincjonalny, małomiasteczkowy, żeby nie powiedzieć wieśniacki."
+      "start": 1089.22,
+      "end": 1089.74,
+      "text": "Bo w Macabre to"
     },
     {
-      "start": 1101.18,
-      "end": 1106.12,
-      "text": "I właśnie za to ich kochamy."
+      "start": 1089.74,
+      "end": 1092.18,
+      "text": "właśnie jest fascynujące,"
+    },
+    {
+      "start": 1092.18,
+      "end": 1093.27,
+      "text": "że to zespół w"
+    },
+    {
+      "start": 1093.27,
+      "end": 1095.33,
+      "text": "jakimś sensie ludowy,"
+    },
+    {
+      "start": 1095.33,
+      "end": 1098.7,
+      "text": "prowincjonalny, małomiasteczkowy,"
+    },
+    {
+      "start": 1098.7,
+      "end": 1100.43,
+      "text": "żeby nie powiedzieć"
+    },
+    {
+      "start": 1100.43,
+      "end": 1102.02,
+      "text": "wieśniacki."
+    },
+    {
+      "start": 1102.02,
+      "end": 1104.45,
+      "text": "I właśnie za to ich"
+    },
+    {
+      "start": 1104.45,
+      "end": 1106.1,
+      "text": "kochamy."
     },
     {
       "start": 1106.82,
+      "end": 1107.43,
+      "text": "Na początku lipca"
+    },
+    {
+      "start": 1107.43,
+      "end": 1109.07,
+      "text": "Macabre przyjeżdżają"
+    },
+    {
+      "start": 1109.07,
+      "end": 1111.01,
+      "text": "do Polski, a towarzyszyć"
+    },
+    {
+      "start": 1111.01,
+      "end": 1112.26,
+      "text": "im będzie Martin"
+    },
+    {
+      "start": 1112.26,
+      "end": 1113.58,
+      "text": "Schiering znowu z"
+    },
+    {
+      "start": 1113.58,
       "end": 1115.46,
-      "text": "Na początku lipca Macabre przyjeżdżają do Polski, a towarzyszyć im będzie Martin Schiering znowu z Jackiem Perkowskim,"
+      "text": "Jackiem Perkowskim,"
     },
     {
-      "start": 1115.6,
+      "start": 1115.46,
+      "end": 1116.2,
+      "text": "a więc dwie trzecie"
+    },
+    {
+      "start": 1116.2,
+      "end": 1116.92,
+      "text": "legendarnie."
+    },
+    {
+      "start": 1116.92,
+      "end": 1118.44,
+      "text": "starnego austriackiego"
+    },
+    {
+      "start": 1118.44,
       "end": 1120.06,
-      "text": "a więc dwie trzecie legendarnego austriackiego zespołu Pungent Stench,"
+      "text": "zespołu Pungent Stench,"
     },
     {
-      "start": 1120.92,
+      "start": 1120.94,
+      "end": 1121.62,
+      "text": "czyli projekt,"
+    },
+    {
+      "start": 1121.62,
+      "end": 1123.78,
+      "text": "który obecnie jeździ"
+    },
+    {
+      "start": 1123.78,
+      "end": 1124.56,
+      "text": "pod szyldem"
+    },
+    {
+      "start": 1124.56,
+      "end": 1126.23,
+      "text": "Schering Place Pungent"
+    },
+    {
+      "start": 1126.23,
       "end": 1126.78,
-      "text": "czyli projekt, który obecnie jeździ pod szyldem Schiering Place Pungent Stench"
+      "text": "Stench"
     },
     {
       "start": 1126.78,
-      "end": 1135.54,
-      "text": "i to jest pożegnalna trasa tej formacji, uczta z gore death metalem jako daniem głównym."
+      "end": 1128.44,
+      "text": "i to jest pożegnalna"
     },
     {
-      "start": 1136.46,
-      "end": 1144.58,
-      "text": "Usłyszymy piosenki z kultowych albumów, takich jak For God Your Soul, For Me Your Flesh czy Been Caught Battering,"
+      "start": 1128.44,
+      "end": 1130.08,
+      "text": "trasa tej formacji,"
+    },
+    {
+      "start": 1131.14,
+      "end": 1132.47,
+      "text": "uczta z Gore Death"
+    },
+    {
+      "start": 1132.47,
+      "end": 1134.43,
+      "text": "Metalem jako daniem"
+    },
+    {
+      "start": 1134.43,
+      "end": 1135.52,
+      "text": "głównym."
+    },
+    {
+      "start": 1136.5,
+      "end": 1137.15,
+      "text": "Usłyszymy piosenki"
+    },
+    {
+      "start": 1137.15,
+      "end": 1138.72,
+      "text": "z kultowych albumów,"
+    },
+    {
+      "start": 1138.72,
+      "end": 1139.88,
+      "text": "takich jak For God"
+    },
+    {
+      "start": 1139.88,
+      "end": 1141.29,
+      "text": "Your Soul, For Me"
+    },
+    {
+      "start": 1141.29,
+      "end": 1142.44,
+      "text": "Your Flesh"
+    },
+    {
+      "start": 1142.44,
+      "end": 1144.6,
+      "text": "czy Been Caught Battering,"
     },
     {
       "start": 1146.3,
+      "end": 1147.44,
+      "text": "a więc podobnie jak"
+    },
+    {
+      "start": 1147.44,
+      "end": 1148.64,
+      "text": "w przypadku Makabr,"
+    },
+    {
+      "start": 1149.38,
+      "end": 1150.13,
+      "text": "same plugastwa w"
+    },
+    {
+      "start": 1150.13,
+      "end": 1151.24,
+      "text": "tekstach,"
+    },
+    {
+      "start": 1151.54,
       "end": 1154.54,
-      "text": "a więc podobnie jak w przypadku Macabre, same plugastwa w tekstach, sama rozkosz w dźwiękach"
+      "text": "sama rozkosz w dźwiękach"
     },
     {
       "start": 1154.54,
+      "end": 1155.54,
+      "text": "i jeszcze występował"
+    },
+    {
+      "start": 1155.54,
+      "end": 1156.3,
+      "text": "z nimi będzie"
+    },
+    {
+      "start": 1156.3,
       "end": 1158.82,
-      "text": "i jeszcze występował z nimi będzie nasz rodzimy Las Trumien,"
+      "text": "nasz rodzimy Las Trumien,"
     },
     {
       "start": 1158.96,
+      "end": 1159.8,
+      "text": "bardzo pokrewny"
+    },
+    {
+      "start": 1159.8,
+      "end": 1161.76,
+      "text": "mentalnie i muzycznie"
+    },
+    {
+      "start": 1161.76,
       "end": 1163.68,
-      "text": "bardzo pokrewny mentalnie i muzycznie obu składom."
+      "text": "obu składom."
     },
     {
       "start": 1164.52,
+      "end": 1166.08,
+      "text": "Szykują się niezapomniane"
+    },
+    {
+      "start": 1166.08,
+      "end": 1167,
+      "text": "wieczory,"
+    },
+    {
+      "start": 1167,
+      "end": 1168.53,
+      "text": "5 lipca w Krakowie"
+    },
+    {
+      "start": 1168.53,
       "end": 1169.44,
-      "text": "Szykują się niezapomniane wieczory 5 lipca w Krakowie w Hype Parku"
+      "text": "w Hype Parku"
     },
     {
       "start": 1169.44,
+      "end": 1171.27,
+      "text": "i 6 w Warszawie w"
+    },
+    {
+      "start": 1171.27,
       "end": 1173.16,
-      "text": "i 6 w Warszawie w Hydrozagadce."
+      "text": "Hydrozagadce."
     },
     {
-      "start": 1801.89,
-      "end": 1814.27,
-      "text": "Bloody Fest odbędzie się 9 lipca. Impreza mała, bo zmieści się w krakowskim klubie Buda, ale podobno rozmiar nie ma znaczenia."
+      "start": 1803,
+      "end": 1804.94,
+      "text": "Bloody Fest odbędzie"
     },
     {
-      "start": 1814.93,
-      "end": 1830.83,
-      "text": "Wystąpią grupy Wieczny Mróz, Injected, Fear of Mirror oraz Betrayer. Czeski Betrayer, nie ten polski, co w sumie uważam za gruby nietakt, bo na przykład polski krabator z koncertami do Czech nie jeździ."
+      "start": 1804.94,
+      "end": 1806.36,
+      "text": "się 9 lipca."
     },
     {
-      "start": 1831.79,
-      "end": 1845.79,
-      "text": "Festiwal trochę większy, ale też żadna masówka, tylko hałaśliwy piknik dla rodziny i przyjaciół będzie miał miejsce 10 i 11 lipca w Pleszewie."
+      "start": 1807.14,
+      "end": 1808.87,
+      "text": "Impreza mała, bo zmieści"
     },
     {
-      "start": 1846.47,
-      "end": 1855.83,
-      "text": "To kolejna odsłona dobrze już fanom muzyki znanego, jedynego takiego w Polsce festiwalu, który nazywa się Red Smoke."
+      "start": 1808.87,
+      "end": 1810.71,
+      "text": "się w krakowskim klubie"
     },
     {
-      "start": 1855.83,
-      "end": 1864.99,
-      "text": "A więc Stoner, Doom, Stoner, Psychodelia, kwaśny rock'n'roll i jeszcze trochę Stonera."
+      "start": 1810.71,
+      "end": 1811.16,
+      "text": "Buda,"
     },
     {
-      "start": 1865.73,
-      "end": 1881.11,
-      "text": "Skład jak zawsze na Red Smoke międzynarodowy, trochę gwiazd gatunku czy gatunków i więcej wynalazków, których nawet nie kojarzę, a które tym chętniej bym sprawdził,"
+      "start": 1811.46,
+      "end": 1812.77,
+      "text": "ale podobno rozmiar"
     },
     {
-      "start": 1881.17,
-      "end": 1887.33,
-      "text": "bo Red Smoke wie, co dobre w tych klimatach, można im zaufać."
+      "start": 1812.77,
+      "end": 1814.28,
+      "text": "nie ma znaczenia."
     },
     {
-      "start": 1887.49,
-      "end": 1894.23,
-      "text": "Kto więc może niech spieszy do Pleszewa, gdzie czekać na niego będą ze swoją muzyką,"
+      "start": 1815.1,
+      "end": 1816.56,
+      "text": "Wystąpią grupy Wieczny"
     },
     {
-      "start": 1894.23,
-      "end": 1903.81,
-      "text": "między innymi Elder Slomosa, Warning, Poison Ruin, Entropia, Hollow Ship oraz Doom Gang."
+      "start": 1816.56,
+      "end": 1818.13,
+      "text": "Mróz, Injected,"
     },
     {
-      "start": 2287.17,
-      "end": 2304.67,
-      "text": "Kolejny nowy mikrofestiwal, i nie mówię tego z przekąsem, bardzo kibicuję takim inicjatywom, nazywa się Bestial Invasion i odbędzie się też w krakowskiej Budzie, podobnie jak wspomniany wcześniej Bloody Fest."
+      "start": 1818.13,
+      "end": 1820.12,
+      "text": "Fear of Mirror oraz"
     },
     {
-      "start": 2305.61,
-      "end": 2323.69,
-      "text": "Bestialską Inwazję na okolice Wawelu, bo Buda rzeczywiście jest parę kroków od tego świętego dla Polaków miejsca, przeprowadzą zespoły Lucille, Leprozorium, Rapid Fire i Szafot i zrobią to 11 lipca."
+      "start": 1820.12,
+      "end": 1821.34,
+      "text": "Betrayer."
     },
     {
-      "start": 2323.89,
-      "end": 2341.83,
-      "text": "Dzień później, a więc 12 lipca w warszawskim klubie voodoo pojawi się amerykański Poison Ruin, by wystąpić dla tych, którym w Pleszewie było mało, a może bardziej dla tych, co nie mogli dojechać na Red Smoke."
+      "start": 1821.92,
+      "end": 1822.55,
+      "text": "Czeski Betrayer,"
     },
     {
-      "start": 2342.57,
-      "end": 2358.91,
-      "text": "Poison Ruin to bardzo ciekawy zespół, w którym punk spotyka się z rycerskim metalem i jeszcze jest w tym Black Metal i Dark Ambient i oczywiście głęboki ukłon w stronę Killing Joke."
+      "start": 1822.55,
+      "end": 1823.82,
+      "text": "nie ten polski, co"
     },
     {
-      "start": 2359.75,
-      "end": 2373.03,
-      "text": "Amerykanie długo dobrze się zapowiadali, ale wydana w tym roku ich nowa płyta, czyli Hems from the Hills to już obietnica spełniona, fantastyczny materiał."
+      "start": 1823.82,
+      "end": 1824.94,
+      "text": "w sumie uważam za"
     },
     {
-      "start": 2373.17,
-      "end": 2378.87,
-      "text": "A że Poison Ruin wkładają w koncerty dużo serca, tym bardziej polecam."
+      "start": 1824.94,
+      "end": 1826.14,
+      "text": "gruby nietakt,"
     },
     {
-      "start": 2601.8,
+      "start": 1826.14,
+      "end": 1827.63,
+      "text": "bo na przykład polski"
+    },
+    {
+      "start": 1827.63,
+      "end": 1829.23,
+      "text": "krabator z koncertami"
+    },
+    {
+      "start": 1829.23,
+      "end": 1830.86,
+      "text": "do Czech nie jeździ."
+    },
+    {
+      "start": 1831.9,
+      "end": 1833.21,
+      "text": "Festiwal trochę"
+    },
+    {
+      "start": 1833.21,
+      "end": 1834.51,
+      "text": "większy, ale też"
+    },
+    {
+      "start": 1834.51,
+      "end": 1835.84,
+      "text": "żadna masówka,"
+    },
+    {
+      "start": 1836.1,
+      "end": 1837.84,
+      "text": "tylko hałaśliwy piknik"
+    },
+    {
+      "start": 1837.84,
+      "end": 1839.98,
+      "text": "dla rodziny i przyjaciół"
+    },
+    {
+      "start": 1839.98,
+      "end": 1842.02,
+      "text": "będzie miał miejsce"
+    },
+    {
+      "start": 1842.02,
+      "end": 1845.78,
+      "text": "10 i 11 lipca w Pleszewie."
+    },
+    {
+      "start": 1846.54,
+      "end": 1847.4,
+      "text": "To kolejna odsłona"
+    },
+    {
+      "start": 1847.4,
+      "end": 1849.52,
+      "text": "dobrze już fanom muzyki"
+    },
+    {
+      "start": 1849.52,
+      "end": 1850.08,
+      "text": "znanego,"
+    },
+    {
+      "start": 1850.24,
+      "end": 1851.11,
+      "text": "jedynego takiego w"
+    },
+    {
+      "start": 1851.11,
+      "end": 1852.26,
+      "text": "Polsce festiwalu,"
+    },
+    {
+      "start": 1852.26,
+      "end": 1854.38,
+      "text": "który nazywa się"
+    },
+    {
+      "start": 1854.38,
+      "end": 1855.8,
+      "text": "Red Smoke."
+    },
+    {
+      "start": 1855.8,
+      "end": 1858.27,
+      "text": "A więc Stoner, Doom,"
+    },
+    {
+      "start": 1858.27,
+      "end": 1860.8,
+      "text": "Stoner, Psychodelia"
+    },
+    {
+      "start": 1860.8,
+      "end": 1862.67,
+      "text": "Kwaśny Rock'n'Roll"
+    },
+    {
+      "start": 1862.67,
+      "end": 1865,
+      "text": "i jeszcze trochę Stonera."
+    },
+    {
+      "start": 1865.74,
+      "end": 1866.5,
+      "text": "Skład jak zawsze na"
+    },
+    {
+      "start": 1866.5,
+      "end": 1868.8,
+      "text": "Red Smoke międzynarodowy,"
+    },
+    {
+      "start": 1869.58,
+      "end": 1871.31,
+      "text": "trochę gwiazd gatunku"
+    },
+    {
+      "start": 1871.31,
+      "end": 1872.8,
+      "text": "czy gatunków"
+    },
+    {
+      "start": 1873.48,
+      "end": 1876.7,
+      "text": "i więcej wynalazków,"
+    },
+    {
+      "start": 1876.7,
+      "end": 1878.01,
+      "text": "których nawet nie"
+    },
+    {
+      "start": 1878.01,
+      "end": 1878.82,
+      "text": "kojarzę,"
+    },
+    {
+      "start": 1878.94,
+      "end": 1880.09,
+      "text": "a które tym chętniej"
+    },
+    {
+      "start": 1880.09,
+      "end": 1881.1,
+      "text": "bym sprawdził,"
+    },
+    {
+      "start": 1881.16,
+      "end": 1882.47,
+      "text": "bo Red Smoke wie,"
+    },
+    {
+      "start": 1882.47,
+      "end": 1883.43,
+      "text": "co dobre w tych"
+    },
+    {
+      "start": 1883.43,
+      "end": 1884.24,
+      "text": "klimatach,"
+    },
+    {
+      "start": 1884.8,
+      "end": 1887.34,
+      "text": "można im zaufać."
+    },
+    {
+      "start": 1887.5,
+      "end": 1888.97,
+      "text": "Kto więc może niech"
+    },
+    {
+      "start": 1888.97,
+      "end": 1890.96,
+      "text": "spieszy do Pleszewa,"
+    },
+    {
+      "start": 1891.66,
+      "end": 1892.21,
+      "text": "gdzie czekać na"
+    },
+    {
+      "start": 1892.21,
+      "end": 1893.72,
+      "text": "niego będą ze swoją"
+    },
+    {
+      "start": 1893.72,
+      "end": 1894.24,
+      "text": "muzyką"
+    },
+    {
+      "start": 1894.24,
+      "end": 1897.14,
+      "text": "m.in. Elder Slomosa,"
+    },
+    {
+      "start": 1897.14,
+      "end": 1899.38,
+      "text": "Warning, Poison Ruin,"
+    },
+    {
+      "start": 1899.94,
+      "end": 1901.37,
+      "text": "Entropia, Hollow"
+    },
+    {
+      "start": 1901.37,
+      "end": 1903.8,
+      "text": "Ship oraz Doom Gang."
+    },
+    {
+      "start": 2288.96,
+      "end": 2290.56,
+      "text": "Nowy mikrofestival"
+    },
+    {
+      "start": 2290.56,
+      "end": 2291.62,
+      "text": "i nie mówię tego z"
+    },
+    {
+      "start": 2291.62,
+      "end": 2293.61,
+      "text": "przekąsem, bardzo kibicuję"
+    },
+    {
+      "start": 2293.61,
+      "end": 2296.04,
+      "text": "takim inicjatywom,"
+    },
+    {
+      "start": 2296.04,
+      "end": 2297.66,
+      "text": "nazywa się Bestial"
+    },
+    {
+      "start": 2297.66,
+      "end": 2299.55,
+      "text": "Invasion i odbędzie"
+    },
+    {
+      "start": 2299.55,
+      "end": 2301.27,
+      "text": "się też w krakowskiej"
+    },
+    {
+      "start": 2301.27,
+      "end": 2302.57,
+      "text": "budzie, podobnie"
+    },
+    {
+      "start": 2302.57,
+      "end": 2303.36,
+      "text": "jak wspomniany"
+    },
+    {
+      "start": 2303.36,
+      "end": 2304.24,
+      "text": "wcześniej Bloody"
+    },
+    {
+      "start": 2304.24,
+      "end": 2304.68,
+      "text": "Fest."
+    },
+    {
+      "start": 2305.6,
+      "end": 2307.3,
+      "text": "Bestialską Inwazję"
+    },
+    {
+      "start": 2307.3,
+      "end": 2309,
+      "text": "na okolice Wawelu,"
+    },
+    {
+      "start": 2309,
+      "end": 2309.6,
+      "text": "bo Buda"
+    },
+    {
+      "start": 2309.6,
+      "end": 2311.21,
+      "text": "rzeczywiście jest"
+    },
+    {
+      "start": 2311.21,
+      "end": 2312.81,
+      "text": "parę kroków od tego"
+    },
+    {
+      "start": 2312.81,
+      "end": 2314.68,
+      "text": "świętego dla Polaków"
+    },
+    {
+      "start": 2314.68,
+      "end": 2316.71,
+      "text": "miejsca, przeprowadzą"
+    },
+    {
+      "start": 2316.71,
+      "end": 2319.61,
+      "text": "zespoły Lucille, Leprozorium,"
+    },
+    {
+      "start": 2319.61,
+      "end": 2321.21,
+      "text": "Rapid Fire i Szafot"
+    },
+    {
+      "start": 2321.21,
+      "end": 2323.68,
+      "text": "i zrobią to 11 lipca."
+    },
+    {
+      "start": 2323.92,
+      "end": 2325.35,
+      "text": "Dzień później, a"
+    },
+    {
+      "start": 2325.35,
+      "end": 2326.88,
+      "text": "więc 12 lipca w"
+    },
+    {
+      "start": 2326.88,
+      "end": 2328.49,
+      "text": "warszawskim klubie"
+    },
+    {
+      "start": 2328.49,
+      "end": 2329.96,
+      "text": "Voodoo pojawi się"
+    },
+    {
+      "start": 2329.96,
+      "end": 2331.54,
+      "text": "amerykański Poison"
+    },
+    {
+      "start": 2331.54,
+      "end": 2333.05,
+      "text": "Ruin, by wystąpić"
+    },
+    {
+      "start": 2333.05,
+      "end": 2334.58,
+      "text": "dla tych, którym w"
+    },
+    {
+      "start": 2334.58,
+      "end": 2336.39,
+      "text": "Pleszewie było mało,"
+    },
+    {
+      "start": 2336.39,
+      "end": 2337.92,
+      "text": "a może bardziej dla"
+    },
+    {
+      "start": 2337.92,
+      "end": 2339.45,
+      "text": "tych, co nie mogli"
+    },
+    {
+      "start": 2339.45,
+      "end": 2340.69,
+      "text": "dojechać na Red"
+    },
+    {
+      "start": 2340.69,
+      "end": 2341.84,
+      "text": "Smoke."
+    },
+    {
+      "start": 2342.64,
+      "end": 2343.96,
+      "text": "Poison Ruin to"
+    },
+    {
+      "start": 2343.96,
+      "end": 2346.1,
+      "text": "bardzo ciekawy zespół,"
+    },
+    {
+      "start": 2346.1,
+      "end": 2347.97,
+      "text": "w którym punk spotyka"
+    },
+    {
+      "start": 2347.97,
+      "end": 2349.31,
+      "text": "się z rycerskim"
+    },
+    {
+      "start": 2349.31,
+      "end": 2350.88,
+      "text": "metalem i jeszcze"
+    },
+    {
+      "start": 2350.88,
+      "end": 2352.24,
+      "text": "jest w tym Black"
+    },
+    {
+      "start": 2352.24,
+      "end": 2353.79,
+      "text": "Metal i Dark Ambient"
+    },
+    {
+      "start": 2353.79,
+      "end": 2355.91,
+      "text": "i oczywiście głęboki"
+    },
+    {
+      "start": 2355.91,
+      "end": 2357.92,
+      "text": "ukłon w stronę Killing"
+    },
+    {
+      "start": 2357.92,
+      "end": 2358.92,
+      "text": "Joke."
+    },
+    {
+      "start": 2359.76,
+      "end": 2361.17,
+      "text": "Amerykanie długo"
+    },
+    {
+      "start": 2361.17,
+      "end": 2363.24,
+      "text": "dobrze się zapowiadali,"
+    },
+    {
+      "start": 2363.24,
+      "end": 2364.44,
+      "text": "ale wydana w tym"
+    },
+    {
+      "start": 2364.44,
+      "end": 2366.14,
+      "text": "roku ich nowa płyta,"
+    },
+    {
+      "start": 2366.14,
+      "end": 2367.47,
+      "text": "czyli Hymns from"
+    },
+    {
+      "start": 2367.47,
+      "end": 2369.55,
+      "text": "the Hills to już obietnica"
+    },
+    {
+      "start": 2369.55,
+      "end": 2371.72,
+      "text": "spełniona, fantastyczny"
+    },
+    {
+      "start": 2371.72,
+      "end": 2373.02,
+      "text": "materiał."
+    },
+    {
+      "start": 2373.18,
+      "end": 2374.94,
+      "text": "A że Poison Ruin wkładają"
+    },
+    {
+      "start": 2374.94,
+      "end": 2376.78,
+      "text": "w koncerty dużo serca,"
+    },
+    {
+      "start": 2376.78,
+      "end": 2378.88,
+      "text": "tym bardziej polecam."
+    },
+    {
+      "start": 2602.72,
+      "end": 2604.88,
+      "text": "Zawsze była i pozostanie"
+    },
+    {
+      "start": 2604.88,
+      "end": 2606.6,
+      "text": "dla mnie tajemnicą"
+    },
+    {
+      "start": 2606.6,
+      "end": 2608.53,
+      "text": "oszałamiająca kariera"
+    },
+    {
+      "start": 2608.53,
       "end": 2610.36,
-      "text": "Zawsze była i pozostanie dla mnie tajemnicą oszałamiająca kariera zespołu In Flames."
+      "text": "zespołu Inflames."
     },
     {
-      "start": 2610.74,
+      "start": 2610.72,
+      "end": 2611.52,
+      "text": "Nie, żebym ich nie"
+    },
+    {
+      "start": 2611.52,
+      "end": 2612.74,
+      "text": "lubił, bo podobało"
+    },
+    {
+      "start": 2612.74,
+      "end": 2614.03,
+      "text": "mi się i to, co robili"
+    },
+    {
+      "start": 2614.03,
+      "end": 2615.2,
+      "text": "na początku swojej"
+    },
+    {
+      "start": 2615.2,
+      "end": 2617.28,
+      "text": "kariery, kiedy żenili"
+    },
+    {
+      "start": 2617.28,
+      "end": 2619.21,
+      "text": "Maiden z death"
+    },
+    {
+      "start": 2619.21,
       "end": 2619.48,
-      "text": "Nie, żebym ich nie lubił, bo podobało mi się i to, co robili na początku swojej kariery, kiedy żenili Maiden z death metalem."
+      "text": "metalem."
     },
     {
       "start": 2620.48,
-      "end": 2627.7,
-      "text": "I te późniejsze, bardziej nowoczesne rzeczy też lubię, ale żeby aż tak to urosło."
+      "end": 2621.15,
+      "text": "I te późniejsze,"
     },
     {
-      "start": 2627.7,
+      "start": 2621.15,
+      "end": 2623.18,
+      "text": "bardziej nowoczesne"
+    },
+    {
+      "start": 2623.18,
+      "end": 2625,
+      "text": "rzeczy też lubię,"
+    },
+    {
+      "start": 2625,
+      "end": 2626.55,
+      "text": "ale żeby aż tak to"
+    },
+    {
+      "start": 2626.55,
+      "end": 2627.7,
+      "text": "urosło."
+    },
+    {
+      "start": 2628.36,
+      "end": 2629.86,
+      "text": "Cóż, może odpowiedzią"
+    },
+    {
+      "start": 2629.86,
+      "end": 2631.14,
+      "text": "są koncerty, które"
+    },
+    {
+      "start": 2631.14,
+      "end": 2632.68,
+      "text": "Inflames zawsze grali"
+    },
+    {
+      "start": 2632.68,
       "end": 2633.58,
-      "text": "Cóż, może odpowiedzią są koncerty, które In Flames zawsze grali znakomite."
+      "text": "znakomite."
     },
     {
       "start": 2634.42,
-      "end": 2643.86,
-      "text": "A że po dekadach niestrudzonej działalności Szwedzi dorobili się wielu hitów, będzie śpiewanie refrenów od początku do końca."
+      "end": 2635.6,
+      "text": "A że po dekadach niestrudzonej"
     },
     {
-      "start": 2644.48,
-      "end": 2650.68,
-      "text": "Na polskich koncertach In Flames towarzyszyć w lipcu będą Szkoci z Bleed From Within."
+      "start": 2635.6,
+      "end": 2637.07,
+      "text": "działalności Szwedzi"
     },
     {
-      "start": 2651.54,
-      "end": 2655.16,
-      "text": "Dobry to zespół, ambitne i ciężkie rejony Metal Chora."
+      "start": 2637.07,
+      "end": 2638.32,
+      "text": "dorobili się wielu"
     },
     {
-      "start": 2655.88,
-      "end": 2665.48,
-      "text": "Możecie ten skład zobaczyć 15 lipca w Gdańsku w B90 i dzień później we Wrocławiu w A2."
+      "start": 2638.32,
+      "end": 2640.76,
+      "text": "hitów, będzie śpiewanie"
     },
     {
-      "start": 2943.04,
-      "end": 2961.08,
-      "text": "Legendarna chorzowska leśniczówka gościć będzie 18 lipca Live and Burn Festival, na którym wystąpią m.in. Rascal, Rat King, Devil in the Name i Nuclear Venom."
+      "start": 2640.76,
+      "end": 2641.78,
+      "text": "refrenów od"
     },
     {
-      "start": 2961.74,
+      "start": 2641.78,
+      "end": 2643.84,
+      "text": "początku do końca."
+    },
+    {
+      "start": 2643.84,
+      "end": 2645.66,
+      "text": "Na polskich koncertach"
+    },
+    {
+      "start": 2645.66,
+      "end": 2647.42,
+      "text": "Inflames towarzyszyć"
+    },
+    {
+      "start": 2647.42,
+      "end": 2648.84,
+      "text": "w lipcu będą Szkoci"
+    },
+    {
+      "start": 2648.84,
+      "end": 2650.7,
+      "text": "z Bleed From Within."
+    },
+    {
+      "start": 2651.52,
+      "end": 2652.05,
+      "text": "Dobry to zespół,"
+    },
+    {
+      "start": 2652.05,
+      "end": 2653.4,
+      "text": "ambitne i ciężkie"
+    },
+    {
+      "start": 2653.4,
+      "end": 2655.18,
+      "text": "rejony Metal Chora."
+    },
+    {
+      "start": 2656.2,
+      "end": 2657.65,
+      "text": "Możecie ten skład"
+    },
+    {
+      "start": 2657.65,
+      "end": 2659.47,
+      "text": "zobaczyć piętnastego"
+    },
+    {
+      "start": 2659.47,
+      "end": 2661.68,
+      "text": "lipca w Gdańsku w B-90"
+    },
+    {
+      "start": 2661.68,
+      "end": 2663.19,
+      "text": "i dzień później we"
+    },
+    {
+      "start": 2663.19,
+      "end": 2665.24,
+      "text": "Wrocławiu w Aszynie."
+    },
+    {
+      "start": 2943.96,
+      "end": 2945.94,
+      "text": "Legendarna chorzowska"
+    },
+    {
+      "start": 2945.94,
+      "end": 2947.1,
+      "text": "leśniczówka gościć"
+    },
+    {
+      "start": 2947.1,
+      "end": 2949.2,
+      "text": "będzie 18 lipca"
+    },
+    {
+      "start": 2949.2,
+      "end": 2950.62,
+      "text": "Live & Burn"
+    },
+    {
+      "start": 2950.62,
+      "end": 2953.08,
+      "text": "Festival, na którym"
+    },
+    {
+      "start": 2953.08,
+      "end": 2956.16,
+      "text": "wystąpią m.in. Raskal,"
+    },
+    {
+      "start": 2956.16,
+      "end": 2958.08,
+      "text": "Rat King, Devil in"
+    },
+    {
+      "start": 2958.08,
+      "end": 2960.24,
+      "text": "the Name i Nuclear"
+    },
+    {
+      "start": 2960.24,
+      "end": 2961.06,
+      "text": "Venom."
+    },
+    {
+      "start": 2961.68,
+      "end": 2962.43,
+      "text": "Tego samego dnia,"
+    },
+    {
+      "start": 2962.43,
+      "end": 2964.72,
+      "text": "przypominam, 18 lipca,"
+    },
+    {
+      "start": 2964.72,
+      "end": 2966.08,
+      "text": "sobota, odbędzie"
+    },
+    {
+      "start": 2966.08,
+      "end": 2967.73,
+      "text": "się pierwszy z dwóch"
+    },
+    {
+      "start": 2967.73,
+      "end": 2969.01,
+      "text": "polskich koncertów"
+    },
+    {
+      "start": 2969.01,
+      "end": 2970.68,
+      "text": "System of a Down,"
+    },
+    {
+      "start": 2970.68,
+      "end": 2971.74,
+      "text": "Queens of the Stone"
+    },
+    {
+      "start": 2971.74,
       "end": 2973.3,
-      "text": "Tego samego dnia, przypominam, 18 lipca, sobota, odbędzie się pierwszy z dwóch polskich koncertów System of a Down, Queens of the Stone Age i Acid Bath."
+      "text": "Age i Acid Bath."
     },
     {
-      "start": 2974.1,
-      "end": 2983.18,
-      "text": "Mocny to zestaw, nie powiem, choć szkoda, że na Stadionie Narodowym, gdzie wiadomo jak jest z dźwiękiem."
+      "start": 2973.96,
+      "end": 2975.41,
+      "text": "Mocny to zestaw,"
     },
     {
-      "start": 2983.44,
+      "start": 2975.41,
+      "end": 2977.58,
+      "text": "nie powiem, choć szkoda,"
+    },
+    {
+      "start": 2977.58,
+      "end": 2980.01,
+      "text": "że na Stadionie Narodowym,"
+    },
+    {
+      "start": 2980.01,
+      "end": 2981.35,
+      "text": "gdzie wiadomo jak"
+    },
+    {
+      "start": 2981.35,
+      "end": 2983.2,
+      "text": "jest z dźwiękiem."
+    },
+    {
+      "start": 2984.06,
+      "end": 2984.82,
+      "text": "Na szczęście w trójce"
+    },
+    {
+      "start": 2984.82,
+      "end": 2986.08,
+      "text": "z dźwiękiem jest"
+    },
+    {
+      "start": 2986.08,
+      "end": 2987.79,
+      "text": "wszystko w porządku,"
+    },
+    {
+      "start": 2987.79,
+      "end": 2989.15,
+      "text": "zatem puszczę Wam"
+    },
+    {
+      "start": 2989.15,
+      "end": 2990.72,
+      "text": "po piosence każdego"
+    },
+    {
+      "start": 2990.72,
       "end": 2992.34,
-      "text": "Na szczęście w trójce z dźwiękiem jest wszystko w porządku, zatem puszczę Wam po piosence każdego z tych zespołów."
+      "text": "z tych zespołów."
     },
     {
-      "start": 2993.26,
-      "end": 3003.92,
-      "text": "Mam w swoim życiu okres fascynacji grupą System of a Down, przeszło mi już co prawda, ale wszystkie płyty są na półce i niezmiennie uważam,"
+      "start": 2992.86,
+      "end": 2994.12,
+      "text": "Mam w swoim życiu"
     },
     {
-      "start": 3003.92,
-      "end": 3014.28,
-      "text": "że to jeden z najciekawszych, przynajmniej z tych dużych zespołów, które zostały spłodzone przez szeroko pojmowany New Metal."
+      "start": 2994.12,
+      "end": 2995.5,
+      "text": "okres fascynacji"
     },
     {
-      "start": 3015.04,
+      "start": 2995.5,
+      "end": 2996.8,
+      "text": "grupą System of a"
+    },
+    {
+      "start": 2996.8,
+      "end": 2998.44,
+      "text": "Down. Przeszło mi"
+    },
+    {
+      "start": 2998.44,
+      "end": 3000.09,
+      "text": "już co prawda, ale"
+    },
+    {
+      "start": 3000.09,
+      "end": 3001.87,
+      "text": "wszystkie płyty są"
+    },
+    {
+      "start": 3001.87,
+      "end": 3003.35,
+      "text": "na półce i niezmiennie"
+    },
+    {
+      "start": 3003.35,
+      "end": 3004.47,
+      "text": "uważam, że to jeden"
+    },
+    {
+      "start": 3004.47,
+      "end": 3005.57,
+      "text": "z najciekawszych,"
+    },
+    {
+      "start": 3005.57,
+      "end": 3007.11,
+      "text": "przynajmniej z tych"
+    },
+    {
+      "start": 3007.11,
+      "end": 3008.58,
+      "text": "dużych zespołów,"
+    },
+    {
+      "start": 3008.72,
+      "end": 3010.7,
+      "text": "które zostały spłodzone"
+    },
+    {
+      "start": 3010.7,
+      "end": 3012.94,
+      "text": "przez szeroko pojmowany"
+    },
+    {
+      "start": 3012.94,
+      "end": 3014.3,
+      "text": "New Metal."
+    },
+    {
+      "start": 3015.06,
+      "end": 3016.54,
+      "text": "Obok Slipknot."
+    },
+    {
+      "start": 3016.9,
+      "end": 3018.1,
+      "text": "Oczywiście fani Deftons"
+    },
+    {
+      "start": 3018.1,
+      "end": 3019.57,
+      "text": "nawet niech nie dzwonią"
+    },
+    {
+      "start": 3019.57,
+      "end": 3020.69,
+      "text": "ze skargami, bo i"
+    },
+    {
+      "start": 3020.69,
       "end": 3022.94,
-      "text": "Obok Slipknot, oczywiście fani Deftons nawet niech nie dzwonią ze skargami, bo i tak nie odbiorę."
+      "text": "tak nie odbiorę."
     },
     {
       "start": 3023.66,
-      "end": 3032.92,
-      "text": "Fajnie, że System of a Down powracają do Polski jako megagwiazdy, tym bardziej, że ich przygoda z polską publicznością,"
+      "end": 3024.48,
+      "text": "Fajnie, że System"
     },
     {
-      "start": 3032.92,
-      "end": 3045.42,
-      "text": "co powszechnie wiadomo, nie zaczęła się najlepiej, no ale wtedy podczas swojej pierwszej wizyty nad Wisłą w 1998 roku"
+      "start": 3024.48,
+      "end": 3026.04,
+      "text": "of a Down powracają"
     },
     {
-      "start": 3045.42,
-      "end": 3050.92,
-      "text": "supportowali Slayera, a to była misja samobójcza."
+      "start": 3026.04,
+      "end": 3028.58,
+      "text": "do Polski jako megagwiazdy,"
     },
     {
-      "start": 3052.48,
-      "end": 3062.32,
-      "text": "Queens of the Stone Age puszczę z mojej ulubionej płyty, czyli Rated R, w dodatku numer z gościnnym udziałem Roba Halforda."
+      "start": 3028.58,
+      "end": 3030.17,
+      "text": "tym bardziej, że"
     },
     {
-      "start": 3062.32,
+      "start": 3030.17,
+      "end": 3031.43,
+      "text": "ich przygoda z"
+    },
+    {
+      "start": 3031.43,
+      "end": 3033.64,
+      "text": "polską publicznością,"
+    },
+    {
+      "start": 3033.64,
+      "end": 3035.96,
+      "text": "co powszechnie wiadomo,"
+    },
+    {
+      "start": 3035.96,
+      "end": 3037.59,
+      "text": "nie zaczęła się"
+    },
+    {
+      "start": 3037.59,
+      "end": 3038.76,
+      "text": "najlepiej."
+    },
+    {
+      "start": 3038.92,
+      "end": 3040.83,
+      "text": "No ale wtedy, podczas"
+    },
+    {
+      "start": 3040.83,
+      "end": 3042.3,
+      "text": "swojej pierwszej"
+    },
+    {
+      "start": 3042.3,
+      "end": 3044.06,
+      "text": "wizyty nad Wisłą, w"
+    },
+    {
+      "start": 3044.06,
+      "end": 3046.99,
+      "text": "1998 roku supportowali"
+    },
+    {
+      "start": 3046.99,
+      "end": 3049,
+      "text": "Slayera, a to była"
+    },
+    {
+      "start": 3049,
+      "end": 3051.52,
+      "text": "misja samobójcza."
+    },
+    {
+      "start": 3052.26,
+      "end": 3053.64,
+      "text": "Queens of Destination"
+    },
+    {
+      "start": 3053.64,
+      "end": 3055.24,
+      "text": "puszczę z mojej ulubionej"
+    },
+    {
+      "start": 3055.24,
+      "end": 3057.08,
+      "text": "płyty, czyli Rated"
+    },
+    {
+      "start": 3057.08,
+      "end": 3057.16,
+      "text": "R,"
+    },
+    {
+      "start": 3057.84,
+      "end": 3058.72,
+      "text": "w dodatku numer z"
+    },
+    {
+      "start": 3058.72,
+      "end": 3060.66,
+      "text": "gościnnym udziałem"
+    },
+    {
+      "start": 3060.66,
+      "end": 3062.5,
+      "text": "Roba Halforda, a"
+    },
+    {
+      "start": 3062.5,
+      "end": 3063.96,
+      "text": "więc kto ma..."
+    },
+    {
+      "start": 3063.96,
+      "end": 3065.67,
+      "text": "A wiedzieć ten już"
+    },
+    {
+      "start": 3065.67,
       "end": 3066.34,
-      "text": "A więc kto ma wiedzieć, ten już wie."
+      "text": "wie."
     },
     {
-      "start": 3067.16,
-      "end": 3068.04,
+      "start": 3067.14,
+      "end": 3068.06,
       "text": "As it Beth."
     },
     {
-      "start": 3068.62,
-      "end": 3071.78,
-      "text": "Natomiast to dopiero jest niespodzianka."
+      "start": 3068.6,
+      "end": 3070.54,
+      "text": "Natomiast to dopiero"
+    },
+    {
+      "start": 3070.54,
+      "end": 3071.76,
+      "text": "jest niespodzianka."
     },
     {
       "start": 3072.42,
+      "end": 3073.05,
+      "text": "Niespodzianką jest"
+    },
+    {
+      "start": 3073.05,
+      "end": 3074.62,
+      "text": "samoistnienie tego"
+    },
+    {
+      "start": 3074.62,
       "end": 3075.54,
-      "text": "Niespodzianką jest samoistnienie tego zespołu."
+      "text": "zespołu."
     },
     {
       "start": 3076.4,
-      "end": 3083.24,
-      "text": "I szkoda, że grają na stadionie, w dodatku jako otwieracz, ale mam nadzieję, że jeszcze wrócą."
+      "end": 3076.9,
+      "text": "I szkoda, że grają"
     },
     {
-      "start": 3083.74,
-      "end": 3090.56,
-      "text": "To zespół zasłużenie kultowy i wpływowy, który wydał tylko dwie płyty w latach dziewięćdziesiątych,"
+      "start": 3076.9,
+      "end": 3078.53,
+      "text": "na stadionie w dodatku"
     },
     {
-      "start": 3091.36,
-      "end": 3094.82,
-      "text": "ale za to inspirował wiele późniejszych gwiazd."
+      "start": 3078.53,
+      "end": 3080.02,
+      "text": "jako otwieracz."
     },
     {
-      "start": 3094.82,
-      "end": 3108.9,
-      "text": "Ze wspomnianym już slipknotem na czele, nie mówiąc o całej czeredzie ich sludge'owych dzieci z Luizjany i nie tylko z całego świata właściwie."
+      "start": 3080.74,
+      "end": 3081.56,
+      "text": "Ale mam nadzieję,"
     },
     {
-      "start": 3110.04,
-      "end": 3120.38,
-      "text": "As it Beth przestał istnieć w 1997 roku, kiedy basista Odi Petra zginął w wypadku samochodowym,"
+      "start": 3081.56,
+      "end": 3083.22,
+      "text": "że jeszcze wrócą."
     },
     {
-      "start": 3121.1,
+      "start": 3083.22,
+      "end": 3084.94,
+      "text": "To zespół zasłużenie"
+    },
+    {
+      "start": 3084.94,
+      "end": 3086.71,
+      "text": "kultowy i wpływowy,"
+    },
+    {
+      "start": 3086.71,
+      "end": 3088.1,
+      "text": "który wydał tylko dwie"
+    },
+    {
+      "start": 3088.1,
+      "end": 3090.58,
+      "text": "płyty w latach dziewięćdziesiątych."
+    },
+    {
+      "start": 3091.38,
+      "end": 3093,
+      "text": "Ale za to inspirował"
+    },
+    {
+      "start": 3093,
+      "end": 3093.97,
+      "text": "wiele późniejszych"
+    },
+    {
+      "start": 3093.97,
+      "end": 3094.84,
+      "text": "gwiazd."
+    },
+    {
+      "start": 3094.98,
+      "end": 3096.61,
+      "text": "Ze wspomnianym już"
+    },
+    {
+      "start": 3096.61,
+      "end": 3098.94,
+      "text": "sleepnote'em na czele."
+    },
+    {
+      "start": 3099.28,
+      "end": 3100.62,
+      "text": "Nie mówiąc o całej"
+    },
+    {
+      "start": 3100.62,
+      "end": 3103.36,
+      "text": "czeredzie ich sludge'owych"
+    },
+    {
+      "start": 3103.36,
+      "end": 3105.4,
+      "text": "dzieci z Luizjany."
+    },
+    {
+      "start": 3106.34,
+      "end": 3107.01,
+      "text": "I nie tylko z całego"
+    },
+    {
+      "start": 3107.01,
+      "end": 3108.88,
+      "text": "świata właściwie."
+    },
+    {
+      "start": 3109.34,
+      "end": 3111.05,
+      "text": "As it Beth przestał"
+    },
+    {
+      "start": 3111.05,
+      "end": 3114.72,
+      "text": "istnieć w 1997 roku."
+    },
+    {
+      "start": 3114.9,
+      "end": 3116.53,
+      "text": "Kiedy basista Oddy"
+    },
+    {
+      "start": 3116.53,
+      "end": 3118.59,
+      "text": "Petra zginął w wypadku"
+    },
+    {
+      "start": 3118.59,
+      "end": 3120.36,
+      "text": "samochodowym."
+    },
+    {
+      "start": 3120.8,
+      "end": 3122.8,
+      "text": "Zabitym przez pijanego"
+    },
+    {
+      "start": 3122.8,
+      "end": 3123.92,
+      "text": "kierowcę."
+    },
+    {
+      "start": 3123.92,
+      "end": 3125.11,
+      "text": "Zginął razem z obojkiem"
+    },
+    {
+      "start": 3125.11,
       "end": 3126.18,
-      "text": "zabitym przez pijanego kierowcę, zginął razem z obojkiem swoich rodziców."
+      "text": "swoich rodziców."
     },
     {
-      "start": 3126.18,
-      "end": 3128.62,
-      "text": "To jest już straszna historia."
+      "start": 3126.32,
+      "end": 3127.92,
+      "text": "Straszna historia."
     },
     {
-      "start": 3129.38,
+      "start": 3129.64,
+      "end": 3132.1,
+      "text": "już nigdy nie powrócić."
+    },
+    {
+      "start": 3133.04,
+      "end": 3133.41,
+      "text": "Ale nigdy nie mów"
+    },
+    {
+      "start": 3133.41,
       "end": 3134.22,
-      "text": "As it Beth mieli już nigdy nie powrócić, ale nigdy nie mów nigdy."
+      "text": "nigdy."
     },
     {
       "start": 3134.84,
+      "end": 3135.12,
+      "text": "Bardzo, bardzo"
+    },
+    {
+      "start": 3135.12,
+      "end": 3136.16,
+      "text": "jestem ciekaw tego"
+    },
+    {
+      "start": 3136.16,
+      "end": 3136.92,
+      "text": "koncertu."
+    },
+    {
+      "start": 3137.84,
+      "end": 3138.6,
+      "text": "Bo nigdy tej grupy"
+    },
+    {
+      "start": 3138.6,
       "end": 3141,
-      "text": "Bardzo, bardzo jestem ciekaw tego koncertu, bo nigdy tej grupy na żywo nie widziałem."
+      "text": "na żywo nie widziałem."
     },
     {
-      "start": 3141,
-      "end": 3150.92,
-      "text": "A więc raz jeszcze System of a Down, Queens of the Stone Age i As it Beth w Warszawie 18 i 19 lipca."
+      "start": 3141.1,
+      "end": 3142.04,
+      "text": "A więc raz jeszcze"
     },
     {
-      "start": 3156.18,
-      "end": 3156.64,
-      "text": "Dziękuje za oglądanie!"
+      "start": 3142.04,
+      "end": 3143.02,
+      "text": "System of a Down,"
     },
     {
-      "start": 3178.08,
-      "end": 3181.4,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 3143.02,
+      "end": 3144.56,
+      "text": "Queens of the Stone"
     },
     {
-      "start": 3237.7,
-      "end": 3267.68,
-      "text": "Dziękuje za oglądanie!"
+      "start": 3144.56,
+      "end": 3146.33,
+      "text": "Age i As it Beth w"
     },
     {
-      "start": 3267.72,
-      "end": 3286.4,
-      "text": "Dziękuje za oglądanie!"
+      "start": 3146.33,
+      "end": 3149.69,
+      "text": "Warszawie 18 i 19"
     },
     {
-      "start": 3843.78,
-      "end": 3864.56,
-      "text": "20 lipca w Gdańsku w B90, 21 lipca w Warszawie w progresji i 22 we Wrocławiu w Zaklętych Rewirach wystąpi fantastyczna paka Biohazard, Chromax, Violence i Sworn Enemy."
+      "start": 3149.69,
+      "end": 3150.9,
+      "text": "lipca."
     },
     {
-      "start": 3864.56,
+      "start": 3844.8,
+      "end": 3846.74,
+      "text": "20 lipca w Gdańsku"
+    },
+    {
+      "start": 3846.74,
+      "end": 3849.31,
+      "text": "w B90, 21 lipca w"
+    },
+    {
+      "start": 3849.31,
+      "end": 3852.22,
+      "text": "Warszawie w Progresji"
+    },
+    {
+      "start": 3852.22,
+      "end": 3855.06,
+      "text": "i 22 we Wrocławiu w"
+    },
+    {
+      "start": 3855.06,
+      "end": 3857.21,
+      "text": "Zaklętych Rewirach"
+    },
+    {
+      "start": 3857.21,
+      "end": 3859.5,
+      "text": "wystąpi fantastyczna"
+    },
+    {
+      "start": 3859.5,
+      "end": 3862.78,
+      "text": "paka Biohazard, Chromax,"
+    },
+    {
+      "start": 3862.78,
+      "end": 3863.93,
+      "text": "Violence i Sworn"
+    },
+    {
+      "start": 3863.93,
+      "end": 3864.58,
+      "text": "Enemy."
+    },
+    {
+      "start": 3864.58,
+      "end": 3866.28,
+      "text": "Z tą tylko różnicą,"
+    },
+    {
+      "start": 3866.28,
+      "end": 3868.28,
+      "text": "że we Wrocławiu zamiast"
+    },
+    {
+      "start": 3868.28,
+      "end": 3869.83,
+      "text": "Violence zagra"
+    },
+    {
+      "start": 3869.83,
+      "end": 3870.99,
+      "text": "Death Angel i nie"
+    },
+    {
+      "start": 3870.99,
+      "end": 3872.69,
+      "text": "wiadomo co lepsze,"
+    },
+    {
+      "start": 3872.69,
+      "end": 3874.29,
+      "text": "ja chyba wybrałbym"
+    },
+    {
+      "start": 3874.29,
+      "end": 3875.84,
+      "text": "wariant z Death"
+    },
+    {
+      "start": 3875.84,
       "end": 3876.58,
-      "text": "Z tą tylko różnicą, że we Wrocławiu zamiast Violence zagra Death Angel i nie wiadomo co lepsze, ja chyba wybrałbym wariant z Death Angel."
+      "text": "Angel."
     },
     {
-      "start": 3877.96,
-      "end": 3886.94,
-      "text": "Biohazard, główne gwiazdy wieczorów, trzech, to mistrzowie Muscle Cora, Rap Cora, Metal Cora z Nowego Jorku."
+      "start": 3878.04,
+      "end": 3879.57,
+      "text": "Biohazard, główne"
     },
     {
-      "start": 3887,
+      "start": 3879.57,
+      "end": 3881.04,
+      "text": "gwiazdy wieczorów"
+    },
+    {
+      "start": 3881.04,
+      "end": 3882.8,
+      "text": "trzech, to mistrzowie"
+    },
+    {
+      "start": 3882.8,
+      "end": 3884.83,
+      "text": "Muscle Cora, Rap Cora,"
+    },
+    {
+      "start": 3884.83,
+      "end": 3886.14,
+      "text": "Metal Cora z Nowego"
+    },
+    {
+      "start": 3886.14,
+      "end": 3887.4,
+      "text": "Jorku, jak zwał tak"
+    },
+    {
+      "start": 3887.4,
+      "end": 3888.27,
+      "text": "zwał, to jeden z"
+    },
+    {
+      "start": 3888.27,
+      "end": 3890.04,
+      "text": "najciekawszych zespołów,"
+    },
+    {
+      "start": 3890.04,
+      "end": 3893.25,
+      "text": "które w latach dziewięćdziesiątych"
+    },
+    {
+      "start": 3893.25,
+      "end": 3895.29,
+      "text": "próbowały przerzucać"
+    },
+    {
+      "start": 3895.29,
+      "end": 3896.88,
+      "text": "mosty pomiędzy sceną"
+    },
+    {
+      "start": 3896.88,
       "end": 3899.2,
-      "text": "Jak zwał, tak zwał, to jeden z najciekawszych zespołów, które w latach 90. próbowały przerzucać mosty pomiędzy sceną metalową a hardcore'ową."
+      "text": "metalową a hardkorową,"
     },
     {
-      "start": 3899.6,
-      "end": 3908.22,
-      "text": "Znowu razem, znowu w formie i znowu snują opowieści z niebezpiecznego miasta."
+      "start": 3899.2,
+      "end": 3901.18,
+      "text": "znowu razem, znowu"
+    },
+    {
+      "start": 3901.18,
+      "end": 3903.54,
+      "text": "w formie i znowu snują"
+    },
+    {
+      "start": 3903.54,
+      "end": 3906.89,
+      "text": "opowieści z niebezpiecznego"
+    },
+    {
+      "start": 3906.89,
+      "end": 3908.2,
+      "text": "miasta."
     },
     {
       "start": 3909.4,
-      "end": 3927.5,
-      "text": "Chociaż akurat te okolice Nowego Jorku, przed którymi Biohazard przestrzega nas w swoich piosenkach, w ciągu ostatnich 30 lat uległy gwałtownej gentryfikacji i dzisiaj tam jest modnie, wygodnie i bezpiecznie."
+      "end": 3909.48,
+      "text": "Chociaż akurat te"
     },
     {
-      "start": 3928.12,
+      "start": 3909.48,
+      "end": 3911.22,
+      "text": "okolice Nowego Jorku,"
+    },
+    {
+      "start": 3911.22,
+      "end": 3912.95,
+      "text": "przed którymi Biohazard"
+    },
+    {
+      "start": 3912.95,
+      "end": 3914.22,
+      "text": "przestrzega nas w"
+    },
+    {
+      "start": 3914.22,
+      "end": 3915.92,
+      "text": "swoich piosenkach,"
+    },
+    {
+      "start": 3915.92,
+      "end": 3917.57,
+      "text": "w ciągu ostatnich"
+    },
+    {
+      "start": 3917.57,
+      "end": 3919.77,
+      "text": "trzydziestu lat uległy"
+    },
+    {
+      "start": 3919.77,
+      "end": 3922.3,
+      "text": "gwałtownej gentryfikacji"
+    },
+    {
+      "start": 3922.3,
+      "end": 3923.96,
+      "text": "i dzisiaj tam jest"
+    },
+    {
+      "start": 3923.96,
+      "end": 3925.83,
+      "text": "modnie, wygodnie i"
+    },
+    {
+      "start": 3925.83,
+      "end": 3927.54,
+      "text": "bezpiecznie."
+    },
+    {
+      "start": 3928.42,
+      "end": 3929.17,
+      "text": "Nie byłoby Biohazard,"
+    },
+    {
+      "start": 3929.17,
+      "end": 3930.65,
+      "text": "niczego by nie było,"
+    },
+    {
+      "start": 3930.65,
       "end": 3932.2,
-      "text": "Nie byłoby Biohazard, niczego by nie było, gdyby nie Chromax."
+      "text": "gdyby nie Chromax."
     },
     {
-      "start": 3932.86,
-      "end": 3936.18,
-      "text": "Oni pierwsi łączyli Hardcora z Trashem w taki sposób."
+      "start": 3932.92,
+      "end": 3933.58,
+      "text": "Oni pierwsi łączyli"
+    },
+    {
+      "start": 3933.58,
+      "end": 3934.89,
+      "text": "Hardcora z Trashem"
+    },
+    {
+      "start": 3934.89,
+      "end": 3936.16,
+      "text": "w taki sposób."
     },
     {
       "start": 3937.02,
-      "end": 3942.94,
-      "text": "Na swoim debiutanckim albumie The Age of Quarrel robili to w sposób wręcz mistrzowski."
+      "end": 3937.82,
+      "text": "Na swoim debiutanckim"
     },
     {
-      "start": 3943.86,
-      "end": 3952.36,
-      "text": "A do tego metal korowcy ze Swan Enemy, no i jeszcze wspomniani Trashowi weterani z Violence i Death Angel."
+      "start": 3937.82,
+      "end": 3939.16,
+      "text": "albumie The Age of"
     },
     {
-      "start": 3952.36,
-      "end": 3958.88,
-      "text": "To w lipcu absolutnie lektura obowiązkowa, któryś z tych trzech koncertów."
+      "start": 3939.16,
+      "end": 3940.57,
+      "text": "Quarrel robili to w"
     },
     {
-      "start": 3960.26,
-      "end": 3961.12,
-      "text": "DZIENNIKARZ"
+      "start": 3940.57,
+      "end": 3942.92,
+      "text": "sposób wręcz mistrzowski."
     },
     {
-      "start": 4415.11,
-      "end": 4433.99,
-      "text": "Skorpions wystąpi w Gliwicach w Prezero Arenie 23 lipca, ale spodziewam się, że bardziej zainteresuje Was fakt, że 24 i 25 lipca Wrocław będzie szturmowany przez szczury."
+      "start": 3943.28,
+      "end": 3945.14,
+      "text": "A do tego metalkorowcy"
     },
     {
-      "start": 4434.41,
-      "end": 4451.27,
-      "text": "Atak Szczurów. Tak nazywa się przegląd rodzimego undergroundu i muszę przyznać, że bardzo piękne okazy tych dumnych gryzoni udało się zaprosić organizatorom imprezy do Łącznika na jej czwartą edycję."
+      "start": 3945.14,
+      "end": 3946.78,
+      "text": "ze Swan Enemy, no i"
     },
     {
-      "start": 4451.71,
-      "end": 4468.09,
-      "text": "Auls Woods Graves, Odium Humanii, Generis, Wielki Mrok, Leprozorium, R.I.P., Species, Frightful. To tylko część nazw i bardzo ciekawa reprezentacja rodzimego undergroundu."
+      "start": 3946.78,
+      "end": 3948.53,
+      "text": "jeszcze wspomniani"
     },
     {
-      "start": 4468.87,
-      "end": 4471.97,
-      "text": "Nie musicie wierzyć mi na słowo, warto sprawdzić."
+      "start": 3948.53,
+      "end": 3950.23,
+      "text": "Trashowi weterani z"
     },
     {
-      "start": 4807.11,
+      "start": 3950.23,
+      "end": 3951.66,
+      "text": "Violence i Death"
+    },
+    {
+      "start": 3951.66,
+      "end": 3952.42,
+      "text": "Angel."
+    },
+    {
+      "start": 3953,
+      "end": 3954.16,
+      "text": "To w lipcu absolutnie"
+    },
+    {
+      "start": 3954.16,
+      "end": 3956,
+      "text": "lektura obowiązkowa"
+    },
+    {
+      "start": 3956,
+      "end": 3957.53,
+      "text": "któryś z tych trzech"
+    },
+    {
+      "start": 3957.53,
+      "end": 3958.86,
+      "text": "koncertów."
+    },
+    {
+      "start": 4416.7,
+      "end": 4417.9,
+      "text": "Korpions wystąpi w"
+    },
+    {
+      "start": 4417.9,
+      "end": 4419.28,
+      "text": "Gliwicach w Prezero"
+    },
+    {
+      "start": 4419.28,
+      "end": 4421.28,
+      "text": "Arenie 23 lipca,"
+    },
+    {
+      "start": 4421.28,
+      "end": 4423.84,
+      "text": "ale spodziewam się,"
+    },
+    {
+      "start": 4423.84,
+      "end": 4425.46,
+      "text": "że bardziej zainteresuje"
+    },
+    {
+      "start": 4425.46,
+      "end": 4427.37,
+      "text": "Was fakt, że 24 i"
+    },
+    {
+      "start": 4427.37,
+      "end": 4430,
+      "text": "25 lipca Wrocław"
+    },
+    {
+      "start": 4430,
+      "end": 4431.9,
+      "text": "będzie sturmowany"
+    },
+    {
+      "start": 4431.9,
+      "end": 4434,
+      "text": "przez szczury."
+    },
+    {
+      "start": 4434.42,
+      "end": 4436.12,
+      "text": "Atak Szczurów. Tak"
+    },
+    {
+      "start": 4436.12,
+      "end": 4437.71,
+      "text": "nazywa się przegląd"
+    },
+    {
+      "start": 4437.71,
+      "end": 4438.56,
+      "text": "rodzimego"
+    },
+    {
+      "start": 4438.56,
+      "end": 4440.33,
+      "text": "undergroundu i muszę"
+    },
+    {
+      "start": 4440.33,
+      "end": 4441.96,
+      "text": "przyznać, że bardzo"
+    },
+    {
+      "start": 4441.96,
+      "end": 4443.38,
+      "text": "piękne okazy tych"
+    },
+    {
+      "start": 4443.38,
+      "end": 4445.16,
+      "text": "dumnych gryzoni udało"
+    },
+    {
+      "start": 4445.16,
+      "end": 4446.19,
+      "text": "się zaprosić"
+    },
+    {
+      "start": 4446.19,
+      "end": 4448.13,
+      "text": "organizatorom imprezy"
+    },
+    {
+      "start": 4448.13,
+      "end": 4449.62,
+      "text": "do Łącznika na jej"
+    },
+    {
+      "start": 4449.62,
+      "end": 4451.28,
+      "text": "czwartą edycję."
+    },
+    {
+      "start": 4451.7,
+      "end": 4453.73,
+      "text": "Owls, Woods, Graves,"
+    },
+    {
+      "start": 4453.73,
+      "end": 4455.82,
+      "text": "Odium Humani, Generis,"
+    },
+    {
+      "start": 4455.82,
+      "end": 4458.23,
+      "text": "Wielki Mrok, Leprozorium,"
+    },
+    {
+      "start": 4458.23,
+      "end": 4461.44,
+      "text": "R.I.P., Species, Frightful,"
+    },
+    {
+      "start": 4461.44,
+      "end": 4462.97,
+      "text": "to tylko część nazw"
+    },
+    {
+      "start": 4462.97,
+      "end": 4464.33,
+      "text": "i bardzo ciekawa"
+    },
+    {
+      "start": 4464.33,
+      "end": 4466.62,
+      "text": "reprezentacja rodzimego"
+    },
+    {
+      "start": 4466.62,
+      "end": 4468.1,
+      "text": "undergroundu."
+    },
+    {
+      "start": 4468.88,
+      "end": 4469.53,
+      "text": "Nie musicie wierzyć"
+    },
+    {
+      "start": 4469.53,
+      "end": 4471.06,
+      "text": "mi na słowo, warto"
+    },
+    {
+      "start": 4471.06,
+      "end": 4471.98,
+      "text": "sprawdzić."
+    },
+    {
+      "start": 4471.98,
+      "end": 4472.58,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4808.57,
+      "end": 4809.61,
+      "text": "Atak szczurów, jak"
+    },
+    {
+      "start": 4809.61,
+      "end": 4810.83,
+      "text": "sami słyszeliście,"
+    },
+    {
+      "start": 4810.83,
+      "end": 4811.55,
+      "text": "zapowiada się"
+    },
+    {
+      "start": 4811.55,
+      "end": 4812.61,
+      "text": "bardzo ciekawie."
+    },
+    {
+      "start": 4812.61,
+      "end": 4814.04,
+      "text": "Kłopot w tym, że"
+    },
+    {
+      "start": 4814.04,
+      "end": 4816.1,
+      "text": "impreza ma po sąsiedzku"
+    },
+    {
+      "start": 4816.1,
+      "end": 4818.51,
+      "text": "konkurencję w postaci"
+    },
+    {
+      "start": 4818.51,
       "end": 4821.01,
-      "text": "A tak szczurów, jak sami słyszeliście, zapowiada się bardzo ciekawie. Kłopot w tym, że impreza ma po sąsiedzku konkurencję w postaci czarnych rewirów."
+      "text": "czarnych rewirów."
     },
     {
-      "start": 4821.01,
-      "end": 4842.41,
-      "text": "To zupełnie nowa inicjatywa, godna wsparcia, tylko nie rozumiem, dlaczego tak fajne dwa festiwale bazujące na sile polskiego undergroundu odbywają się w tym samym mieście, w ten sam dzień, w dystansie dłuższego spaceru."
+      "start": 4821.75,
+      "end": 4822.22,
+      "text": "To zupełnie nowa"
     },
     {
-      "start": 4842.41,
-      "end": 4853.49,
-      "text": "Dzielą je dosłownie trzy kilometry, bo czarne rewiry będą miały miejsce oczywiście w klubie Zaklęte Rewiry."
+      "start": 4822.22,
+      "end": 4823.68,
+      "text": "inicjatywa, godna"
     },
     {
-      "start": 4853.49,
-      "end": 4876.83,
-      "text": "24 i 25 lipca wystąpią tam m.in. Christ Agony, Hate, Damnation, Sznur, Terror Dome, Lila Weneda, Garota, Okrutnik, Atonement, Mansvara, Synapsa, Backhand Slap, Elektrytuał. Dużo, dużo wrażeń."
+      "start": 4823.68,
+      "end": 4825.55,
+      "text": "wsparcia, tylko nie"
     },
     {
-      "start": 5403.88,
+      "start": 4825.55,
+      "end": 4826.51,
+      "text": "rozumiem,"
+    },
+    {
+      "start": 4826.63,
+      "end": 4828.5,
+      "text": "dlaczego tak fajne"
+    },
+    {
+      "start": 4828.5,
+      "end": 4830.97,
+      "text": "dwa festiwale bazujące"
+    },
+    {
+      "start": 4830.97,
+      "end": 4832.84,
+      "text": "na sile polskiego"
+    },
+    {
+      "start": 4832.84,
+      "end": 4834.47,
+      "text": "undergroundu"
+    },
+    {
+      "start": 4834.47,
+      "end": 4835.9,
+      "text": "odbywają się w tym"
+    },
+    {
+      "start": 4835.9,
+      "end": 4837.33,
+      "text": "samym mieście, w"
+    },
+    {
+      "start": 4837.33,
+      "end": 4840.15,
+      "text": "ten sam dzień, w dystansie"
+    },
+    {
+      "start": 4840.15,
+      "end": 4842.43,
+      "text": "dłuższego spaceru."
+    },
+    {
+      "start": 4842.53,
+      "end": 4844.53,
+      "text": "Dzielą je dosłownie"
+    },
+    {
+      "start": 4844.53,
+      "end": 4846.81,
+      "text": "trzy kilometry, bo"
+    },
+    {
+      "start": 4846.81,
+      "end": 4848.65,
+      "text": "czarne rewiry będą"
+    },
+    {
+      "start": 4848.65,
+      "end": 4850.27,
+      "text": "miały miejsce,"
+    },
+    {
+      "start": 4850.41,
+      "end": 4851.89,
+      "text": "oczywiście w klubie"
+    },
+    {
+      "start": 4851.89,
+      "end": 4853.47,
+      "text": "Zaklęte Rewiry."
+    },
+    {
+      "start": 4854.03,
+      "end": 4857.52,
+      "text": "24 i 25 lipca wystąpią"
+    },
+    {
+      "start": 4857.52,
+      "end": 4860.97,
+      "text": "tam m.in. Christagony,"
+    },
+    {
+      "start": 4860.97,
+      "end": 4863.65,
+      "text": "Hate, Damnation, Sznur,"
+    },
+    {
+      "start": 4863.65,
+      "end": 4865.53,
+      "text": "Terror Dome, Lila"
+    },
+    {
+      "start": 4865.53,
+      "end": 4868.64,
+      "text": "Weneda, Garota, Okrutnik,"
+    },
+    {
+      "start": 4868.64,
+      "end": 4870.77,
+      "text": "Atonement, Mansvara,"
+    },
+    {
+      "start": 4870.99,
+      "end": 4872.17,
+      "text": "Synapsa, Backhand"
+    },
+    {
+      "start": 4872.17,
+      "end": 4873.87,
+      "text": "Slap, Elektrytuał."
+    },
+    {
+      "start": 4873.87,
+      "end": 4876.27,
+      "text": "Dużo, dużo węgów."
+    },
+    {
+      "start": 5404,
+      "end": 5405.71,
+      "text": "Kanadyjski Wojvod,"
+    },
+    {
+      "start": 5405.71,
+      "end": 5407.58,
+      "text": "który kocham, wydał"
+    },
+    {
+      "start": 5407.58,
+      "end": 5409.37,
+      "text": "w czerwcu płytę ze"
+    },
+    {
+      "start": 5409.37,
+      "end": 5410.67,
+      "text": "swoimi klasycznymi"
+    },
+    {
+      "start": 5410.67,
+      "end": 5413.06,
+      "text": "piosenkami, ale w wersjach"
+    },
+    {
+      "start": 5413.06,
       "end": 5415,
-      "text": "Kanadyjski Wojvod, który kocham, wydał w czerwcu płytę ze swoimi klasycznymi piosenkami, ale w wersjach symfonicznych."
+      "text": "symfonicznych."
     },
     {
-      "start": 5415.98,
+      "start": 5416,
+      "end": 5417.71,
+      "text": "Abominacja to obrzydlistwo"
+    },
+    {
+      "start": 5417.71,
+      "end": 5419.77,
+      "text": "i hańba, spróbowałem"
+    },
+    {
+      "start": 5419.77,
       "end": 5421.24,
-      "text": "Abominacja to obrzydlistwo i hańba, spróbowałem i wyplułem."
+      "text": "i wyplułem."
     },
     {
-      "start": 5422.18,
+      "start": 5422.2,
+      "end": 5422.65,
+      "text": "Oczywiście Wojvod"
+    },
+    {
+      "start": 5422.65,
+      "end": 5423.99,
+      "text": "mieli pełne prawo"
+    },
+    {
+      "start": 5423.99,
+      "end": 5425.38,
+      "text": "nagrać taką płytę i"
+    },
+    {
+      "start": 5425.38,
+      "end": 5426.55,
+      "text": "to na pewno była"
+    },
+    {
+      "start": 5426.55,
+      "end": 5427.8,
+      "text": "dla nich ciekawa"
+    },
+    {
+      "start": 5427.8,
       "end": 5428.9,
-      "text": "Oczywiście Wojvod mieli pełne prawo nagrać taką płytę i to na pewno była dla nich ciekawa przygoda."
+      "text": "przygoda."
     },
     {
       "start": 5428.9,
+      "end": 5430.69,
+      "text": "A Symfonik, taki"
+    },
+    {
+      "start": 5430.69,
+      "end": 5432.1,
+      "text": "nosi tytuł, nie"
+    },
+    {
+      "start": 5432.1,
+      "end": 5434.4,
+      "text": "jest zresztą najgorszym"
+    },
+    {
+      "start": 5434.4,
+      "end": 5436.34,
+      "text": "albumem tego typu,"
+    },
+    {
+      "start": 5436.34,
+      "end": 5437.6,
+      "text": "ale moim zdaniem"
+    },
+    {
+      "start": 5437.6,
+      "end": 5439.55,
+      "text": "wszystkie te metalowe,"
+    },
+    {
+      "start": 5439.55,
+      "end": 5440.88,
+      "text": "symfoniczne płyty"
+    },
+    {
+      "start": 5440.88,
+      "end": 5442.34,
+      "text": "powinny być zakazane,"
+    },
+    {
+      "start": 5442.34,
+      "end": 5443.63,
+      "text": "tak jak zakazana"
+    },
+    {
+      "start": 5443.63,
       "end": 5445.7,
-      "text": "A Symfonik, taki nosi tytuł, nie jest zresztą najgorszym albumem tego typu, ale moim zdaniem wszystkie te metalowe, symfoniczne płyty powinny być zakazane, tak jak zakazana jest broń biologiczna."
+      "text": "jest broń biologiczna."
     },
     {
-      "start": 5446.48,
-      "end": 5456.8,
-      "text": "Na szczęście Wojvod wraca do Polski nie w towarzystwie fagotów, altówek i obojów, tylko jak Pan Bóg przykazał z elektrycznymi gitarami."
+      "start": 5445.7,
+      "end": 5447.25,
+      "text": "Na szczęście Wojvod"
     },
     {
-      "start": 5457.48,
+      "start": 5447.25,
+      "end": 5448.79,
+      "text": "wraca do Polski nie"
+    },
+    {
+      "start": 5448.79,
+      "end": 5450.74,
+      "text": "w towarzystwie fagotów,"
+    },
+    {
+      "start": 5450.74,
+      "end": 5452.19,
+      "text": "altówek i obojów,"
+    },
+    {
+      "start": 5452.19,
+      "end": 5453.5,
+      "text": "tylko jak Pan Bóg"
+    },
+    {
+      "start": 5453.5,
+      "end": 5455.59,
+      "text": "przykazał z elektrycznymi"
+    },
+    {
+      "start": 5455.59,
+      "end": 5456.84,
+      "text": "gitarami."
+    },
+    {
+      "start": 5458.06,
+      "end": 5459.57,
+      "text": "Inna sprawa, że skandalem"
+    },
+    {
+      "start": 5459.57,
+      "end": 5460.76,
+      "text": "jest, że tak wybitny"
+    },
+    {
+      "start": 5460.76,
+      "end": 5462.01,
+      "text": "zespół gra w tak małych"
+    },
+    {
+      "start": 5462.01,
+      "end": 5463.12,
+      "text": "klubach jak gdański"
+    },
+    {
+      "start": 5463.12,
+      "end": 5465.44,
+      "text": "Drizzly Grizzly, 27"
+    },
+    {
+      "start": 5465.44,
+      "end": 5468.12,
+      "text": "lipca, czy warszawska"
+    },
+    {
+      "start": 5468.12,
       "end": 5471.72,
-      "text": "Inna sprawa, że skandalem jest, że tak wybitny zespół gra w tak małych klubach jak gdański Drizzly Grizzly, 27 lipca, czy warszawska Hydrozagadka 28 lipca."
+      "text": "hydrozagadka 28 lipca."
     },
     {
-      "start": 5472.76,
-      "end": 5484.52,
-      "text": "No bo skoro takie zespoły jak chociażby Blood Incantation cieszą się dziś zasłużoną oczywiście popularnością, to gdzie szacunek dla pionierów ja się pytam."
+      "start": 5472.24,
+      "end": 5473.61,
+      "text": "No bo skoro takie zespoły"
     },
     {
-      "start": 5485.56,
-      "end": 5493.34,
-      "text": "No ale cóż, ja sam też im szacunku dzisiaj nie okażę, puszczając Wam próbkę tego symfonicznego kloca."
+      "start": 5473.61,
+      "end": 5475.18,
+      "text": "jak chociażby Blood"
     },
     {
-      "start": 5857,
+      "start": 5475.18,
+      "end": 5476.79,
+      "text": "Incantation cieszą"
+    },
+    {
+      "start": 5476.79,
+      "end": 5478.16,
+      "text": "się dziś zasłużoną"
+    },
+    {
+      "start": 5478.16,
+      "end": 5480.46,
+      "text": "oczywiście popularnością,"
+    },
+    {
+      "start": 5480.46,
+      "end": 5481.97,
+      "text": "to gdzie szacunek"
+    },
+    {
+      "start": 5481.97,
+      "end": 5483.27,
+      "text": "dla pionierów, ja"
+    },
+    {
+      "start": 5483.27,
+      "end": 5484.54,
+      "text": "się pytam."
+    },
+    {
+      "start": 5486.14,
+      "end": 5487.21,
+      "text": "No ale cóż, ja sam"
+    },
+    {
+      "start": 5487.21,
+      "end": 5488.14,
+      "text": "też im szacunku"
+    },
+    {
+      "start": 5488.14,
+      "end": 5489.36,
+      "text": "dzisiaj nie okażę,"
+    },
+    {
+      "start": 5489.36,
+      "end": 5490.73,
+      "text": "puszczając wam próbkę"
+    },
+    {
+      "start": 5490.73,
+      "end": 5491.96,
+      "text": "tego symfonicznego"
+    },
+    {
+      "start": 5491.96,
+      "end": 5492.74,
+      "text": "klubu."
+    },
+    {
+      "start": 5858.24,
+      "end": 5859.48,
+      "text": "Tak jak nie rozumiem,"
+    },
+    {
+      "start": 5859.48,
+      "end": 5860.91,
+      "text": "dlaczego Vojvod gra"
+    },
+    {
+      "start": 5860.91,
+      "end": 5862.32,
+      "text": "w małych klubach,"
+    },
+    {
+      "start": 5862.32,
+      "end": 5864.09,
+      "text": "tak samo zakryte są"
+    },
+    {
+      "start": 5864.09,
+      "end": 5865.82,
+      "text": "dla mnie powody,"
+    },
+    {
+      "start": 5865.82,
+      "end": 5867.5,
+      "text": "dla których szwedzka"
+    },
+    {
+      "start": 5867.5,
+      "end": 5869.57,
+      "text": "grupa Arch Enemy osiągnęła"
+    },
+    {
+      "start": 5869.57,
+      "end": 5871.43,
+      "text": "popularność, która"
+    },
+    {
+      "start": 5871.43,
+      "end": 5873.53,
+      "text": "przez chwilę przekładała"
+    },
+    {
+      "start": 5873.53,
       "end": 5875.46,
-      "text": "Tak jak nie rozumiem, dlaczego Vojvod gra w małych klubach, tak samo zakryte są dla mnie powody, dla których szwedzka grupa Arch Enemy osiągnęła popularność, która przez chwilę przekładała się na wielkie hale."
+      "text": "się na wielkie hale."
     },
     {
       "start": 5875.46,
+      "end": 5876.98,
+      "text": "Teraz Arch Enemy"
+    },
+    {
+      "start": 5876.98,
+      "end": 5879.4,
+      "text": "przeżywa chwilę kryzysu,"
+    },
+    {
+      "start": 5879.4,
+      "end": 5881.11,
+      "text": "być może związane z"
+    },
+    {
+      "start": 5881.11,
+      "end": 5883.82,
+      "text": "kolejną zmianą wokalistki,"
+    },
+    {
+      "start": 5883.82,
+      "end": 5885.48,
+      "text": "Alisa White Gloose"
+    },
+    {
+      "start": 5885.48,
+      "end": 5887.27,
+      "text": "zastąpiła Laurent"
+    },
+    {
+      "start": 5887.27,
+      "end": 5889.52,
+      "text": "Hart, ale jeśli się"
+    },
+    {
+      "start": 5889.52,
+      "end": 5891.55,
+      "text": "sprawdzi, to Arch"
+    },
+    {
+      "start": 5891.55,
+      "end": 5893.76,
+      "text": "Enemy pewnie szybko"
+    },
+    {
+      "start": 5893.76,
+      "end": 5895.94,
+      "text": "wrócą na duże sceny"
+    },
+    {
+      "start": 5895.94,
+      "end": 5896.94,
+      "text": "i teraz właśnie"
+    },
+    {
+      "start": 5896.94,
+      "end": 5897.83,
+      "text": "jest ten krótki"
+    },
+    {
+      "start": 5897.83,
+      "end": 5899.3,
+      "text": "moment, kiedy można"
+    },
+    {
+      "start": 5899.3,
+      "end": 5900.71,
+      "text": "ich zobaczyć w nieco"
+    },
+    {
+      "start": 5900.71,
+      "end": 5902.31,
+      "text": "mniejszych miejscach"
+    },
+    {
+      "start": 5902.31,
       "end": 5904.14,
-      "text": "Teraz Arch Enemy przeżywa chwilę kryzysu, być może związane z kolejną zmianą wokalistki, Alisa White Gloose zastąpiła Laurent Hart, ale jeśli się sprawdzi, to Arch Enemy pewnie szybko wrócą na duże sceny i teraz właśnie jest ten krótki moment, kiedy można ich zobaczyć w nieco mniejszych miejscach na wyciągnięcie ręki."
+      "text": "na wyciągnięcie ręki."
     },
     {
-      "start": 5904.14,
-      "end": 5909.22,
-      "text": "Na przykład 27 lipca w krakowskim Hype Parku."
+      "start": 5904.26,
+      "end": 5906.09,
+      "text": "na przykład 27 lipca"
     },
     {
-      "start": 6134.08,
+      "start": 5906.09,
+      "end": 5908.58,
+      "text": "w krakowskim High Plymouth."
+    },
+    {
+      "start": 6135,
+      "end": 6137,
+      "text": "27 lipca w klubie"
+    },
+    {
+      "start": 6137,
+      "end": 6138.96,
+      "text": "Scenografia w Łodzi"
+    },
+    {
+      "start": 6138.96,
+      "end": 6141.34,
+      "text": "i 30 lipca w lubelskim"
+    },
+    {
+      "start": 6141.34,
+      "end": 6143.07,
+      "text": "Zgrzycie wystąpi"
+    },
+    {
+      "start": 6143.07,
+      "end": 6145.6,
+      "text": "grupa Phil Campbell's"
+    },
+    {
+      "start": 6145.6,
+      "end": 6147.45,
+      "text": "Bastard Sons, czyli"
+    },
+    {
+      "start": 6147.45,
+      "end": 6149.2,
+      "text": "Benkarcie syny Phila"
+    },
+    {
+      "start": 6149.2,
       "end": 6150.48,
-      "text": "27 lipca w klubie Scenografia w Łodzi i 30 lipca w Lubelskim Zgrzycie wystąpi grupa Phil Campbell's Bastard Sons, czyli bękarcie syny Phila Campbella."
+      "text": "Campbella."
     },
     {
-      "start": 6150.48,
-      "end": 6160.74,
-      "text": "Do niedawna nazywali się Phil Campbell i bękarcie syny, ale Phila, jak wiadomo, już zabrakło."
+      "start": 6151.42,
+      "end": 6152.64,
+      "text": "Do niedawna nazywali"
     },
     {
-      "start": 6161.58,
-      "end": 6175.58,
-      "text": "Jego potomkowie nie przestali grać, więc usłyszymy w ich wykonaniu klasyki Motorhead i każdy będzie musiał to sobie rozważyć we własnym czarnym serduszku, czy to w ogóle ma jeszcze sens."
+      "start": 6152.64,
+      "end": 6154.56,
+      "text": "się Phil Campbell i"
     },
     {
-      "start": 6175.66,
-      "end": 6186.64,
-      "text": "Trudne pytanie, nie umiem na nie odpowiedzieć, no bo z drugiej strony w imię czego miałoby się odmawiać synom dbania o dziedzictwo ojca."
+      "start": 6154.56,
+      "end": 6156.73,
+      "text": "Benkarcie syny, ale"
     },
     {
-      "start": 6187.96,
-      "end": 6205.96,
-      "text": "Proszę sobie samemu zdecydować, na przykład oglądając Phil Campbell and the Bastard Sons, przepraszam, Phil Campbell's Bastard Sons przed koncertem Judas Priest, który będzie miał miejsce 28 lipca na Torwarze."
+      "start": 6156.73,
+      "end": 6158.78,
+      "text": "Phila, jak wiadomo"
     },
     {
-      "start": 6206.96,
+      "start": 6158.78,
+      "end": 6160.7,
+      "text": "już, zabrakło."
+    },
+    {
+      "start": 6160.7,
+      "end": 6162.34,
+      "text": "Jego potomkowie nie"
+    },
+    {
+      "start": 6162.34,
+      "end": 6163.78,
+      "text": "przestali grać,"
+    },
+    {
+      "start": 6163.78,
+      "end": 6165.13,
+      "text": "więc usłyszymy w"
+    },
+    {
+      "start": 6165.13,
+      "end": 6166.97,
+      "text": "ich wykonaniu klasyki"
+    },
+    {
+      "start": 6166.97,
+      "end": 6168.69,
+      "text": "Motorhead i każdy"
+    },
+    {
+      "start": 6168.69,
+      "end": 6169.44,
+      "text": "będzie musiał to"
+    },
+    {
+      "start": 6169.44,
+      "end": 6170.49,
+      "text": "sobie rozważyć we"
+    },
+    {
+      "start": 6170.49,
+      "end": 6172.4,
+      "text": "własnym czarnym serduszku."
+    },
+    {
+      "start": 6173.34,
+      "end": 6173.9,
+      "text": "Czy to w ogóle ma"
+    },
+    {
+      "start": 6173.9,
+      "end": 6176.14,
+      "text": "jeszcze sens? Trudne"
+    },
+    {
+      "start": 6176.14,
+      "end": 6177.69,
+      "text": "pytanie, nie umiem"
+    },
+    {
+      "start": 6177.69,
+      "end": 6179.44,
+      "text": "na nie odpowiedzieć,"
+    },
+    {
+      "start": 6179.44,
+      "end": 6180.54,
+      "text": "no bo z drugiej"
+    },
+    {
+      "start": 6180.54,
+      "end": 6182,
+      "text": "strony w imię czego"
+    },
+    {
+      "start": 6182,
+      "end": 6183.67,
+      "text": "miałoby się odmawiać"
+    },
+    {
+      "start": 6183.67,
+      "end": 6185.77,
+      "text": "synom dbania o dziedzictwo"
+    },
+    {
+      "start": 6185.77,
+      "end": 6186.62,
+      "text": "ojca."
+    },
+    {
+      "start": 6187.88,
+      "end": 6189.45,
+      "text": "Proszę sobie samemu"
+    },
+    {
+      "start": 6189.45,
+      "end": 6190.73,
+      "text": "zdecydować, na"
+    },
+    {
+      "start": 6190.73,
+      "end": 6192.3,
+      "text": "przykład oglądając"
+    },
+    {
+      "start": 6192.3,
+      "end": 6193.79,
+      "text": "Phil Campbell and"
+    },
+    {
+      "start": 6193.79,
+      "end": 6195.24,
+      "text": "the Bastard Sons,"
+    },
+    {
+      "start": 6195.24,
+      "end": 6196.49,
+      "text": "przepraszam, Phil"
+    },
+    {
+      "start": 6196.49,
+      "end": 6198.42,
+      "text": "Campbell's Bastard"
+    },
+    {
+      "start": 6198.42,
+      "end": 6198.8,
+      "text": "Sons,"
+    },
+    {
+      "start": 6199.44,
+      "end": 6200.28,
+      "text": "przed koncertem"
+    },
+    {
+      "start": 6200.28,
+      "end": 6202.24,
+      "text": "Judas Priest, który"
+    },
+    {
+      "start": 6202.24,
+      "end": 6203.98,
+      "text": "będzie miał miejsce"
+    },
+    {
+      "start": 6203.98,
+      "end": 6206.58,
+      "text": "28 lipca na Torwarze."
+    },
+    {
+      "start": 6207.52,
+      "end": 6208.96,
+      "text": "Często ostatnio od"
+    },
+    {
+      "start": 6208.96,
+      "end": 6210.4,
+      "text": "Judas Priest do nas"
+    },
+    {
+      "start": 6210.4,
+      "end": 6211.72,
+      "text": "wracają i bardzo"
+    },
+    {
+      "start": 6211.72,
+      "end": 6213.43,
+      "text": "dobrze, korzystajmy"
+    },
+    {
+      "start": 6213.43,
       "end": 6214.48,
-      "text": "Często ostatnio od Judas Priest do nas wracają i bardzo dobrze, korzystajmy póki można."
+      "text": "póki można."
     },
     {
-      "start": 6215.02,
+      "start": 6215,
+      "end": 6215.93,
+      "text": "To wielki zespół,"
+    },
+    {
+      "start": 6215.93,
       "end": 6217.92,
-      "text": "To wielki zespół, jeden z największych."
+      "text": "jeden z największych."
     },
     {
-      "start": 6594.6,
+      "start": 6595.58,
+      "end": 6598.31,
+      "text": "29 lipca, dwa progi"
+    },
+    {
+      "start": 6598.31,
+      "end": 6600.36,
+      "text": "Poznań. Wystąpią"
+    },
+    {
+      "start": 6600.36,
+      "end": 6601.78,
+      "text": "tam Terror oraz"
+    },
+    {
+      "start": 6601.78,
+      "end": 6603.76,
+      "text": "Stick to your guns."
+    },
+    {
+      "start": 6603.96,
+      "end": 6605.26,
+      "text": "Zatem szykuje się"
+    },
+    {
+      "start": 6605.26,
+      "end": 6608.16,
+      "text": "gratka dla fanów zmetalizowanego"
+    },
+    {
+      "start": 6608.16,
+      "end": 6610.16,
+      "text": "hardcora z zachodniego"
+    },
+    {
+      "start": 6610.16,
       "end": 6611.34,
-      "text": "29 lipca dwa progi Poznań. Wystąpią tam Terror oraz Stick to your guns. Zatem szykuje się gratka dla fanów zmetalizowanego hardcora z zachodniego wybrzeża."
+      "text": "wybrzeża."
     },
     {
-      "start": 6611.34,
-      "end": 6636.44,
-      "text": "To będzie gorący wieczór. Jeszcze goręcej, a na pewno brutalniej będzie 30 lipca. Dzień później w krakowskim Hype Parku, gdzie też wystąpi Terror. Obok nich Walwodynia, ale gwiazdą wieczoru będzie kanadyjska grupa Cryptopsy, czyli death metalowa maszyna do mielenia mięsa razem z kośćmi."
+      "start": 6611.48,
+      "end": 6613.41,
+      "text": "To będzie gorący"
     },
     {
-      "start": 6873.57,
-      "end": 6878.81,
-      "text": "Na koncert Crowbar was nie zapraszam, bo już nie ma biletów."
+      "start": 6613.41,
+      "end": 6615.53,
+      "text": "wieczór. Jeszcze"
     },
     {
-      "start": 6878.89,
-      "end": 6893.31,
-      "text": "Nie dziwię się, ci zawodnicy wagi ciężkiej, którzy 31 lipca wystąpią w zaklętych rewirach we Wrocławiu, na koncertach spuszczają ze smyczy rify jak mastify."
+      "start": 6615.53,
+      "end": 6617.02,
+      "text": "goręcej, a na pewno"
     },
     {
-      "start": 6894.17,
-      "end": 6905.87,
-      "text": "Jeśli zatem nie macie już biletu, jeśli nie uda wam się wbić na Crowbar, nie będziecie musieli wracać do domu, bo 31 lipca we wrocławskim klubie łącznik zagra Mushroom Head."
+      "start": 6617.02,
+      "end": 6618.29,
+      "text": "brutalniej będzie"
     },
     {
-      "start": 6905.87,
-      "end": 6920.87,
-      "text": "To jest to samo pokolenie co System of Down i obszar zainteresowań podobny, może trochę bliżej industrialu czasami, ale głównie jest to twórcze poszukiwanie na pograniczu metalu i alternatywy."
+      "start": 6618.29,
+      "end": 6619.58,
+      "text": "30 lipca."
     },
     {
-      "start": 6923.15,
-      "end": 6928.29,
-      "text": "No niestety chyba trochę mniej i talentu i szczęścia, ale Mushroom Head wciąż grają."
+      "start": 6619.58,
+      "end": 6621.55,
+      "text": "Dzień później w krakowskim"
     },
     {
-      "start": 6928.69,
-      "end": 6935.17,
-      "text": "Złe to nie jest, na koncertach robią sporo zamieszania, warto się wybrać."
+      "start": 6621.55,
+      "end": 6622.92,
+      "text": "Hype Parku, gdzie"
     },
     {
-      "start": 6935.17,
-      "end": 6948.57,
-      "text": "Ja jednak tego samego dnia, ostatniego dnia lipca zostanę w Krakowie, bo w Hype Parku do tańca zmuszą mnie Amerykanie z Municipal Waste."
+      "start": 6622.92,
+      "end": 6624.58,
+      "text": "też wystąpi Terror,"
     },
     {
-      "start": 6949.43,
-      "end": 6970.95,
-      "text": "To jeden z ciekawszych, trashowych, czy raczej crossoverowych zespołów zrodzonych w XXI wieku, który jednego dnia gra z testamentem, a drugiego z circle jerks i w obu tych kontekstach jest jak najbardziej na miejscu u siebie w domu."
+      "start": 6624.58,
+      "end": 6627.14,
+      "text": "obok nich Wałwodynia,"
     },
     {
-      "start": 6971.47,
-      "end": 6985.03,
-      "text": "Municipal Waste w Krakowie towarzyszyć będzie zacny zestaw przedstawicieli polskiej sceny w postaci grup hamulec, sanity control i diving stołów."
+      "start": 6628.08,
+      "end": 6628.6,
+      "text": "ale gwiazdą wieczoru"
     },
     {
-      "start": 6985.69,
-      "end": 6998.39,
-      "text": "Już oczyma duszy mojej widzę co tam się będzie działo pod sceną, widzę też spoglądając na zegarek, że mój czas z wami dzisiaj dobiega końca."
+      "start": 6628.6,
+      "end": 6630.02,
+      "text": "będzie kanadyjska"
     },
     {
-      "start": 6999.17,
-      "end": 7009.05,
-      "text": "Dziękuję i dobranoc. Do zobaczenia na koncertach, do zobaczenia na festiwalach, a za tydzień znowu sobie pohałasujemy."
+      "start": 6630.02,
+      "end": 6631.39,
+      "text": "grupa Cryptopsy,"
     },
     {
-      "start": 7009.69,
-      "end": 7011.49,
-      "text": "Dziękuje za oglądanie!"
+      "start": 6631.39,
+      "end": 6632.71,
+      "text": "czyli death metalowa"
+    },
+    {
+      "start": 6632.71,
+      "end": 6633.6,
+      "text": "maszyna"
+    },
+    {
+      "start": 6633.6,
+      "end": 6635.04,
+      "text": "do mielenia mięsa"
+    },
+    {
+      "start": 6635.04,
+      "end": 6636.46,
+      "text": "razem z kośćmi."
+    },
+    {
+      "start": 6636.46,
+      "end": 6636.84,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 6874.78,
+      "end": 6875.99,
+      "text": "Na koncert Crowbar"
+    },
+    {
+      "start": 6875.99,
+      "end": 6877.32,
+      "text": "was nie zapraszam,"
+    },
+    {
+      "start": 6877.32,
+      "end": 6878.82,
+      "text": "bo już nie ma biletów."
+    },
+    {
+      "start": 6879.5,
+      "end": 6880.51,
+      "text": "Nie dziwię się, ci"
+    },
+    {
+      "start": 6880.51,
+      "end": 6882.9,
+      "text": "zawodnicy wagi ciężkiej,"
+    },
+    {
+      "start": 6882.9,
+      "end": 6884.84,
+      "text": "którzy 31 lipca"
+    },
+    {
+      "start": 6884.84,
+      "end": 6886.22,
+      "text": "wystąpią w zaklętych"
+    },
+    {
+      "start": 6886.22,
+      "end": 6887.56,
+      "text": "rewirach we Wrocławiu,"
+    },
+    {
+      "start": 6888.32,
+      "end": 6890.2,
+      "text": "na koncertach spuszczają"
+    },
+    {
+      "start": 6890.2,
+      "end": 6892,
+      "text": "ze smyczy rify jak"
+    },
+    {
+      "start": 6892,
+      "end": 6893.28,
+      "text": "mastify."
+    },
+    {
+      "start": 6894.16,
+      "end": 6894.69,
+      "text": "Jeśli zatem nie macie"
+    },
+    {
+      "start": 6894.69,
+      "end": 6895.94,
+      "text": "już biletu, jeśli"
+    },
+    {
+      "start": 6895.94,
+      "end": 6897.2,
+      "text": "nie uda wam się wbić"
+    },
+    {
+      "start": 6897.2,
+      "end": 6898.16,
+      "text": "na Crowbar,"
+    },
+    {
+      "start": 6898.16,
+      "end": 6899.82,
+      "text": "nie będziecie musieli"
+    },
+    {
+      "start": 6899.82,
+      "end": 6901.23,
+      "text": "wracać do domu, bo"
+    },
+    {
+      "start": 6901.23,
+      "end": 6903.29,
+      "text": "31 lipca we Wrocławskim"
+    },
+    {
+      "start": 6903.29,
+      "end": 6904.86,
+      "text": "Klubie Łącznik zagram"
+    },
+    {
+      "start": 6904.86,
+      "end": 6905.86,
+      "text": "Mushroom Head."
+    },
+    {
+      "start": 6906.72,
+      "end": 6908,
+      "text": "To jest to samo pokolenie"
+    },
+    {
+      "start": 6908,
+      "end": 6909.53,
+      "text": "co System of Down i"
+    },
+    {
+      "start": 6909.53,
+      "end": 6911.48,
+      "text": "obszar zainteresowań"
+    },
+    {
+      "start": 6911.48,
+      "end": 6912.52,
+      "text": "podobny,"
+    },
+    {
+      "start": 6912.66,
+      "end": 6913.67,
+      "text": "może trochę bliżej"
+    },
+    {
+      "start": 6913.67,
+      "end": 6914.92,
+      "text": "industrialu czasami,"
+    },
+    {
+      "start": 6914.92,
+      "end": 6916.6,
+      "text": "ale głównie jest to"
+    },
+    {
+      "start": 6916.6,
+      "end": 6918.68,
+      "text": "twórcze poszukiwanie"
+    },
+    {
+      "start": 6918.68,
+      "end": 6920.23,
+      "text": "na pograniczu metalu"
+    },
+    {
+      "start": 6920.23,
+      "end": 6921.58,
+      "text": "i alternatywy."
+    },
+    {
+      "start": 6922.52,
+      "end": 6923.82,
+      "text": "No niestety chyba"
+    },
+    {
+      "start": 6923.82,
+      "end": 6924.86,
+      "text": "trochę mniej i"
+    },
+    {
+      "start": 6924.86,
+      "end": 6926.56,
+      "text": "talentu i szczęścia,"
+    },
+    {
+      "start": 6926.56,
+      "end": 6927.78,
+      "text": "ale Mushroom Head wciąż"
+    },
+    {
+      "start": 6927.78,
+      "end": 6928.3,
+      "text": "grają."
+    },
+    {
+      "start": 6928.72,
+      "end": 6929.92,
+      "text": "Złe to nie jest, na"
+    },
+    {
+      "start": 6929.92,
+      "end": 6931.97,
+      "text": "koncertach robią sporo"
+    },
+    {
+      "start": 6931.97,
+      "end": 6933.81,
+      "text": "zamieszania, warto"
+    },
+    {
+      "start": 6933.81,
+      "end": 6935.16,
+      "text": "się wybrać."
+    },
+    {
+      "start": 6935.96,
+      "end": 6937.14,
+      "text": "Ja jednak tego samego"
+    },
+    {
+      "start": 6937.14,
+      "end": 6939.34,
+      "text": "dnia, ostatniego dnia"
+    },
+    {
+      "start": 6939.34,
+      "end": 6942.12,
+      "text": "lipca, zostanę w Krakowie,"
+    },
+    {
+      "start": 6942.12,
+      "end": 6943.67,
+      "text": "bo w Hype Parku do"
+    },
+    {
+      "start": 6943.67,
+      "end": 6945.33,
+      "text": "tańca zmuszą mnie"
+    },
+    {
+      "start": 6945.33,
+      "end": 6946.79,
+      "text": "Amerykanie z"
+    },
+    {
+      "start": 6946.79,
+      "end": 6948.58,
+      "text": "Municipal Waste."
+    },
+    {
+      "start": 6949.36,
+      "end": 6951.01,
+      "text": "To jeden z ciekawszych,"
+    },
+    {
+      "start": 6951.01,
+      "end": 6952.66,
+      "text": "trashowych, czy raczej"
+    },
+    {
+      "start": 6952.66,
+      "end": 6954.58,
+      "text": "crossoverowych zespołów"
+    },
+    {
+      "start": 6954.58,
+      "end": 6955.84,
+      "text": "zrodzonych"
+    },
+    {
+      "start": 6955.84,
+      "end": 6958.28,
+      "text": "w XXI wieku, który"
+    },
+    {
+      "start": 6958.28,
+      "end": 6960.51,
+      "text": "jednego dnia gra z"
+    },
+    {
+      "start": 6960.51,
+      "end": 6963.39,
+      "text": "Testamentem, a drugiego"
+    },
+    {
+      "start": 6963.39,
+      "end": 6964.52,
+      "text": "z Circle Jerks"
+    },
+    {
+      "start": 6964.52,
+      "end": 6966.55,
+      "text": "i w obu tych kontekstach"
+    },
+    {
+      "start": 6966.55,
+      "end": 6967.27,
+      "text": "jest jak"
+    },
+    {
+      "start": 6967.27,
+      "end": 6969.19,
+      "text": "najbardziej na"
+    },
+    {
+      "start": 6969.19,
+      "end": 6970.23,
+      "text": "miejscu u siebie w"
+    },
+    {
+      "start": 6970.23,
+      "end": 6970.96,
+      "text": "domu."
+    },
+    {
+      "start": 6972,
+      "end": 6974.14,
+      "text": "Municipal Waste w Krakowie"
+    },
+    {
+      "start": 6974.14,
+      "end": 6975.62,
+      "text": "towarzyszyć będzie"
+    },
+    {
+      "start": 6975.62,
+      "end": 6977.4,
+      "text": "zacny zestaw"
+    },
+    {
+      "start": 6977.4,
+      "end": 6978.16,
+      "text": "przedstawicieli"
+    },
+    {
+      "start": 6978.16,
+      "end": 6979.18,
+      "text": "polskiej sceny"
+    },
+    {
+      "start": 6979.18,
+      "end": 6981.51,
+      "text": "w postaci grup Hamlet,"
+    },
+    {
+      "start": 6981.51,
+      "end": 6983.85,
+      "text": "Sanity Control i Diving"
+    },
+    {
+      "start": 6983.85,
+      "end": 6984.98,
+      "text": "Stołów."
+    },
+    {
+      "start": 6985.66,
+      "end": 6986.18,
+      "text": "Już oczyma duszy"
+    },
+    {
+      "start": 6986.18,
+      "end": 6987.46,
+      "text": "mojej widzę, co tam"
+    },
+    {
+      "start": 6987.46,
+      "end": 6988.67,
+      "text": "się będzie działo"
+    },
+    {
+      "start": 6988.67,
+      "end": 6989.66,
+      "text": "pod sceną."
+    },
+    {
+      "start": 6990.56,
+      "end": 6993.23,
+      "text": "Widzę też, spoglądając"
+    },
+    {
+      "start": 6993.23,
+      "end": 6994.78,
+      "text": "na zegarek,"
+    },
+    {
+      "start": 6994.78,
+      "end": 6996.34,
+      "text": "że mój czas z wami"
+    },
+    {
+      "start": 6996.34,
+      "end": 6998.38,
+      "text": "dzisiaj dobiega końca."
+    },
+    {
+      "start": 6999.04,
+      "end": 7001.04,
+      "text": "Dziękuję i dobranoc."
+    },
+    {
+      "start": 7001.44,
+      "end": 7002.02,
+      "text": "Do zobaczenia na"
+    },
+    {
+      "start": 7002.02,
+      "end": 7003.67,
+      "text": "koncertach, do zobaczenia"
+    },
+    {
+      "start": 7003.67,
+      "end": 7005.4,
+      "text": "na festiwalach,"
+    },
+    {
+      "start": 7005.4,
+      "end": 7006.92,
+      "text": "a za tydzień znowu"
+    },
+    {
+      "start": 7006.92,
+      "end": 7009.06,
+      "text": "sobie pohałasujemy."
     }
   ],
   "stats": {
-    "windowCount": 18,
-    "transcribedAudioSec": 1584.2,
-    "segmentCount": 147,
-    "characterCount": 16251
-  },
-  "sourceId": "2026-07-01-szczury-skorpiony-i-inne-makabry-polecamy-koncerty-i-festiwa"
+    "windowCount": 17,
+    "transcribedAudioSec": 1475.84,
+    "segmentCount": 857,
+    "characterCount": 15424
+  }
 }
