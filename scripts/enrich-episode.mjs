@@ -320,6 +320,8 @@ for (const entry of selected) {
     ...labelFixes.map((topic) => ({ topic, kind: 'newLabel' })),
   ].filter(({ topic, kind }) => {
     const text = currentLabel(topic, kind);
+    // Wejścia dopisane automatem to surowe zdania z transkryptu — zawsze dostają nazwę.
+    if (kind === 'added') return needsLabel(text) || looksRaw(text);
     return needsLabel(text) || (relabelRaw && looksRaw(text));
   });
   const promptTopics = [...topics, ...addedTopics].filter(
