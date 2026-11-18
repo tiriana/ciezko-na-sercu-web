@@ -1,0 +1,3575 @@
+{
+  "version": 1,
+  "episodeId": "a7350192-1d4e-406b-82f4-d4b811d5725e",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 4.38
+    },
+    {
+      "index": 1,
+      "start": 8.48,
+      "end": 61
+    },
+    {
+      "index": 2,
+      "start": 312.32,
+      "end": 400.32
+    },
+    {
+      "index": 3,
+      "start": 585.88,
+      "end": 628.4
+    },
+    {
+      "index": 4,
+      "start": 829.31,
+      "end": 880.59
+    },
+    {
+      "index": 5,
+      "start": 1144.28,
+      "end": 1206.02
+    },
+    {
+      "index": 6,
+      "start": 1358.81,
+      "end": 1376.61
+    },
+    {
+      "index": 7,
+      "start": 1479.68,
+      "end": 1546.68
+    },
+    {
+      "index": 8,
+      "start": 1770.56,
+      "end": 1897.38
+    },
+    {
+      "index": 9,
+      "start": 2297.76,
+      "end": 2393.7
+    },
+    {
+      "index": 10,
+      "start": 2616.44,
+      "end": 2675.24
+    },
+    {
+      "index": 11,
+      "start": 3393.72,
+      "end": 3460.04
+    },
+    {
+      "index": 12,
+      "start": 3836.92,
+      "end": 3872.32
+    },
+    {
+      "index": 13,
+      "start": 4259.23,
+      "end": 4338.15
+    },
+    {
+      "index": 14,
+      "start": 4814.97,
+      "end": 4892.07
+    },
+    {
+      "index": 15,
+      "start": 5255.13,
+      "end": 5327.19
+    },
+    {
+      "index": 16,
+      "start": 5730.14,
+      "end": 5775.14
+    },
+    {
+      "index": 17,
+      "start": 5942.27,
+      "end": 6017.65
+    },
+    {
+      "index": 18,
+      "start": 6212.28,
+      "end": 6254.88
+    },
+    {
+      "index": 19,
+      "start": 6266.91,
+      "end": 6298.95
+    },
+    {
+      "index": 20,
+      "start": 6661.76,
+      "end": 6790.18
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 2.41,
+      "text": "Trójka. Program Trzeci"
+    },
+    {
+      "start": 2.41,
+      "end": 4.38,
+      "text": "Polskiego Radia."
+    },
+    {
+      "start": 8.48,
+      "end": 10.56,
+      "text": "Ciężko na sercu."
+    },
+    {
+      "start": 11.66,
+      "end": 13.2,
+      "text": "Dobry wieczór. Minęła"
+    },
+    {
+      "start": 13.2,
+      "end": 15.11,
+      "text": "północ, zatem czas"
+    },
+    {
+      "start": 15.11,
+      "end": 16.88,
+      "text": "na Ciężko na sercu."
+    },
+    {
+      "start": 17.8,
+      "end": 18.2,
+      "text": "Audycję, w której"
+    },
+    {
+      "start": 18.2,
+      "end": 19.85,
+      "text": "skromnych progach wita"
+    },
+    {
+      "start": 19.85,
+      "end": 21.34,
+      "text": "Was Jarek Szubrycht"
+    },
+    {
+      "start": 21.34,
+      "end": 22.78,
+      "text": "w imieniu własnym i"
+    },
+    {
+      "start": 22.78,
+      "end": 24.4,
+      "text": "Mariusza Owczarka,"
+    },
+    {
+      "start": 24.4,
+      "end": 25.6,
+      "text": "jej wydawcy."
+    },
+    {
+      "start": 26.24,
+      "end": 27.69,
+      "text": "Obiecałem tydzień"
+    },
+    {
+      "start": 27.69,
+      "end": 29.05,
+      "text": "temu, że wrócimy"
+    },
+    {
+      "start": 29.05,
+      "end": 30.54,
+      "text": "dziś do przeglądu"
+    },
+    {
+      "start": 30.54,
+      "end": 32.15,
+      "text": "nowych polskich nagrań"
+    },
+    {
+      "start": 32.15,
+      "end": 33.84,
+      "text": "godnych Waszej uwagi,"
+    },
+    {
+      "start": 34.38,
+      "end": 35.55,
+      "text": "ale pozwolę sobie"
+    },
+    {
+      "start": 35.55,
+      "end": 38.34,
+      "text": "nie dotrzymać obietnicy."
+    },
+    {
+      "start": 38.94,
+      "end": 40.44,
+      "text": "Zrobimy to za tydzień."
+    },
+    {
+      "start": 41.06,
+      "end": 41.91,
+      "text": "Dzisiaj natomiast"
+    },
+    {
+      "start": 41.91,
+      "end": 43.44,
+      "text": "przeniesiemy się do"
+    },
+    {
+      "start": 43.44,
+      "end": 44.14,
+      "text": "Danii,"
+    },
+    {
+      "start": 44.96,
+      "end": 46.17,
+      "text": "gdzie spędziłem miniony"
+    },
+    {
+      "start": 46.17,
+      "end": 46.92,
+      "text": "weekend"
+    },
+    {
+      "start": 46.92,
+      "end": 49.01,
+      "text": "i skąd nawiozłem sporo"
+    },
+    {
+      "start": 49.01,
+      "end": 50.46,
+      "text": "nowej muzyki,"
+    },
+    {
+      "start": 50.92,
+      "end": 52.01,
+      "text": "którą chciałbym się"
+    },
+    {
+      "start": 52.01,
+      "end": 53.45,
+      "text": "z Wami czym prędzej"
+    },
+    {
+      "start": 53.45,
+      "end": 54.6,
+      "text": "podzielić."
+    },
+    {
+      "start": 54.6,
+      "end": 56.54,
+      "text": "Na początek jednak"
+    },
+    {
+      "start": 56.54,
+      "end": 58.85,
+      "text": "rzecz nie nowa, ale"
+    },
+    {
+      "start": 58.85,
+      "end": 60.02,
+      "text": "fajowa."
+    },
+    {
+      "start": 60.02,
+      "end": 61,
+      "text": "Muzyka"
+    },
+    {
+      "start": 312.32,
+      "end": 314.79,
+      "text": "Byłem w piątek nieproszonym,"
+    },
+    {
+      "start": 314.79,
+      "end": 316.9,
+      "text": "ale serdecznie powitanym"
+    },
+    {
+      "start": 316.9,
+      "end": 318.56,
+      "text": "gościem w sklepie"
+    },
+    {
+      "start": 318.56,
+      "end": 320.64,
+      "text": "Beatbop w Kopenhadze,"
+    },
+    {
+      "start": 320.64,
+      "end": 322.43,
+      "text": "którego właścicielem"
+    },
+    {
+      "start": 322.43,
+      "end": 324.53,
+      "text": "i jedynym pracownikiem"
+    },
+    {
+      "start": 324.53,
+      "end": 326.2,
+      "text": "jest Michael Denner,"
+    },
+    {
+      "start": 326.86,
+      "end": 327.82,
+      "text": "były gitarzysta"
+    },
+    {
+      "start": 327.82,
+      "end": 329.33,
+      "text": "Kinga Daimonda i"
+    },
+    {
+      "start": 329.33,
+      "end": 331.08,
+      "text": "Merciful Fate."
+    },
+    {
+      "start": 331.08,
+      "end": 332.62,
+      "text": "To nie jest pomysł"
+    },
+    {
+      "start": 332.62,
+      "end": 334.56,
+      "text": "na dochodowy biznes,"
+    },
+    {
+      "start": 334.56,
+      "end": 336,
+      "text": "to pomysł Michaela"
+    },
+    {
+      "start": 336,
+      "end": 337.82,
+      "text": "na spędzanie czasu"
+    },
+    {
+      "start": 337.82,
+      "end": 339.26,
+      "text": "w sposób, który"
+    },
+    {
+      "start": 339.26,
+      "end": 341.18,
+      "text": "sprawia mu największą"
+    },
+    {
+      "start": 341.18,
+      "end": 342.8,
+      "text": "przyjemność."
+    },
+    {
+      "start": 343.38,
+      "end": 344.5,
+      "text": "Otoczony stertami"
+    },
+    {
+      "start": 344.5,
+      "end": 347.06,
+      "text": "płyt, winyli i kompaktów,"
+    },
+    {
+      "start": 347.06,
+      "end": 348.94,
+      "text": "głównie z klasycznym"
+    },
+    {
+      "start": 348.94,
+      "end": 350.88,
+      "text": "rokiem, hardrokiem"
+    },
+    {
+      "start": 350.88,
+      "end": 352.22,
+      "text": "i metalem,"
+    },
+    {
+      "start": 352.22,
+      "end": 354.01,
+      "text": "słucha sobie muzyki"
+    },
+    {
+      "start": 354.01,
+      "end": 355.78,
+      "text": "i przyjmuje gości,"
+    },
+    {
+      "start": 355.78,
+      "end": 357.66,
+      "text": "z którymi gawędzi o"
+    },
+    {
+      "start": 357.66,
+      "end": 359.54,
+      "text": "muzyce oczywiście."
+    },
+    {
+      "start": 360.44,
+      "end": 362.19,
+      "text": "Bardzo serdeczny"
+    },
+    {
+      "start": 362.19,
+      "end": 364.13,
+      "text": "człowiek, więc i ja"
+    },
+    {
+      "start": 364.13,
+      "end": 365.9,
+      "text": "pogadałem sobie z"
+    },
+    {
+      "start": 365.9,
+      "end": 368.26,
+      "text": "nim jak nerd z nerdem."
+    },
+    {
+      "start": 368.86,
+      "end": 369.94,
+      "text": "Pomógł mi wyszukać"
+    },
+    {
+      "start": 369.94,
+      "end": 372.54,
+      "text": "to, czego potrzebowałem,"
+    },
+    {
+      "start": 372.54,
+      "end": 374.59,
+      "text": "a czego w każdym sklepie"
+    },
+    {
+      "start": 374.59,
+      "end": 376.38,
+      "text": "muzycznym znaleźć"
+    },
+    {
+      "start": 376.38,
+      "end": 377.74,
+      "text": "nie sposób."
+    },
+    {
+      "start": 377.74,
+      "end": 380.15,
+      "text": "A potem jeszcze wymusił"
+    },
+    {
+      "start": 380.15,
+      "end": 381.83,
+      "text": "na mnie rabat, o"
+    },
+    {
+      "start": 381.83,
+      "end": 384.18,
+      "text": "który nie prosiłem."
+    },
+    {
+      "start": 384.86,
+      "end": 386.47,
+      "text": "Super spędzony czas"
+    },
+    {
+      "start": 386.47,
+      "end": 388.08,
+      "text": "i wszystkim polecam"
+    },
+    {
+      "start": 388.08,
+      "end": 390.7,
+      "text": "sklep Michaela w Kopenhadze."
+    },
+    {
+      "start": 391.76,
+      "end": 392.26,
+      "text": "Takich rzeczy nie"
+    },
+    {
+      "start": 392.26,
+      "end": 394.36,
+      "text": "doświadczycie kupując"
+    },
+    {
+      "start": 394.36,
+      "end": 396.05,
+      "text": "płyty online, nie"
+    },
+    {
+      "start": 396.05,
+      "end": 398,
+      "text": "mówiąc już o słuchaniu"
+    },
+    {
+      "start": 398,
+      "end": 400.32,
+      "text": "muzyki w streamingach."
+    },
+    {
+      "start": 585.88,
+      "end": 587.71,
+      "text": "Z Merciful Fate i z"
+    },
+    {
+      "start": 587.71,
+      "end": 589.72,
+      "text": "Michalem Dennerem"
+    },
+    {
+      "start": 589.72,
+      "end": 591.5,
+      "text": "się żegnamy, bo nie"
+    },
+    {
+      "start": 591.5,
+      "end": 593.59,
+      "text": "wybrałem się do Danii"
+    },
+    {
+      "start": 593.59,
+      "end": 595.97,
+      "text": "na zakupy, a do sklepu"
+    },
+    {
+      "start": 595.97,
+      "end": 598.12,
+      "text": "Dennera zajrzałem w"
+    },
+    {
+      "start": 598.12,
+      "end": 600.28,
+      "text": "drodze do Orchus,"
+    },
+    {
+      "start": 600.28,
+      "end": 601.72,
+      "text": "pięknego miasta na"
+    },
+    {
+      "start": 601.72,
+      "end": 603,
+      "text": "północy kraju,"
+    },
+    {
+      "start": 603,
+      "end": 604.8,
+      "text": "gdzie po raz kolejny"
+    },
+    {
+      "start": 604.8,
+      "end": 607.02,
+      "text": "miałem zaszczyt gościć"
+    },
+    {
+      "start": 607.02,
+      "end": 608.67,
+      "text": "na mini festiwalu z"
+    },
+    {
+      "start": 608.67,
+      "end": 610.4,
+      "text": "maxi repertuarem,"
+    },
+    {
+      "start": 610.4,
+      "end": 612.11,
+      "text": "który nazywa się"
+    },
+    {
+      "start": 612.11,
+      "end": 614.02,
+      "text": "Mono Goes Metal."
+    },
+    {
+      "start": 614.02,
+      "end": 615.75,
+      "text": "To było w sobotę,"
+    },
+    {
+      "start": 615.75,
+      "end": 617.83,
+      "text": "ale póki co mamy wciąż"
+    },
+    {
+      "start": 617.83,
+      "end": 619.67,
+      "text": "piątkowy wieczór i"
+    },
+    {
+      "start": 619.67,
+      "end": 621.7,
+      "text": "okazuje się, że w"
+    },
+    {
+      "start": 621.7,
+      "end": 623.03,
+      "text": "mieście jest inny"
+    },
+    {
+      "start": 623.03,
+      "end": 625.37,
+      "text": "koncert, oczywiście"
+    },
+    {
+      "start": 625.37,
+      "end": 627.24,
+      "text": "metalowy, a na nim"
+    },
+    {
+      "start": 627.24,
+      "end": 628.4,
+      "text": "tekst."
+    },
+    {
+      "start": 829.31,
+      "end": 832.17,
+      "text": "z piosenką o kartografie"
+    },
+    {
+      "start": 832.17,
+      "end": 833.89,
+      "text": "dusz, pochodzącą z"
+    },
+    {
+      "start": 833.89,
+      "end": 835.69,
+      "text": "ich tegorocznej płyty"
+    },
+    {
+      "start": 835.69,
+      "end": 837.53,
+      "text": "Soundless Ecos."
+    },
+    {
+      "start": 838.51,
+      "end": 838.94,
+      "text": "Nulus to już"
+    },
+    {
+      "start": 838.94,
+      "end": 841.13,
+      "text": "właściwie weterani"
+    },
+    {
+      "start": 841.13,
+      "end": 843.45,
+      "text": "duńskiej sceny grają"
+    },
+    {
+      "start": 843.45,
+      "end": 845.6,
+      "text": "z przerwami od prawie"
+    },
+    {
+      "start": 845.6,
+      "end": 846.65,
+      "text": "30 lat,"
+    },
+    {
+      "start": 847.45,
+      "end": 848.63,
+      "text": "choć Soundless Ecos"
+    },
+    {
+      "start": 848.63,
+      "end": 850.32,
+      "text": "to dopiero druga"
+    },
+    {
+      "start": 850.32,
+      "end": 852.69,
+      "text": "duża płyta tej grupy."
+    },
+    {
+      "start": 852.69,
+      "end": 853.79,
+      "text": "Ich pomysł na"
+    },
+    {
+      "start": 853.79,
+      "end": 856.12,
+      "text": "siebie, jak słyszeliście"
+    },
+    {
+      "start": 856.12,
+      "end": 857.69,
+      "text": "przed chwilą, to"
+    },
+    {
+      "start": 857.69,
+      "end": 859.73,
+      "text": "black metal z solidną,"
+    },
+    {
+      "start": 859.73,
+      "end": 862.59,
+      "text": "defmetalową przybudówką."
+    },
+    {
+      "start": 863.61,
+      "end": 864.18,
+      "text": "Duże wrażenie na"
+    },
+    {
+      "start": 864.18,
+      "end": 865.8,
+      "text": "koncercie robiły"
+    },
+    {
+      "start": 865.8,
+      "end": 868.14,
+      "text": "momenty, kiedy panowie"
+    },
+    {
+      "start": 868.14,
+      "end": 870.51,
+      "text": "jechali na dwa wokale,"
+    },
+    {
+      "start": 870.51,
+      "end": 871.9,
+      "text": "ale w ogóle zrobili"
+    },
+    {
+      "start": 871.9,
+      "end": 873.71,
+      "text": "na mnie dobre wrażenie,"
+    },
+    {
+      "start": 873.71,
+      "end": 875.78,
+      "text": "chociaż ciasna scena"
+    },
+    {
+      "start": 875.78,
+      "end": 877.37,
+      "text": "nie pozwoliła im w"
+    },
+    {
+      "start": 877.37,
+      "end": 879.07,
+      "text": "pełni rozwinąć ich"
+    },
+    {
+      "start": 879.07,
+      "end": 880.59,
+      "text": "czarnych skrzydłów."
+    },
+    {
+      "start": 1144.28,
+      "end": 1145.7,
+      "text": "grał tego wieczoru"
+    },
+    {
+      "start": 1145.7,
+      "end": 1147.67,
+      "text": "w towarzystwie zespołów"
+    },
+    {
+      "start": 1147.67,
+      "end": 1148.5,
+      "text": "Life Seek."
+    },
+    {
+      "start": 1149.2,
+      "end": 1151.54,
+      "text": "To była główna gwiazda."
+    },
+    {
+      "start": 1152.26,
+      "end": 1153.65,
+      "text": "Unavailing Void i"
+    },
+    {
+      "start": 1153.65,
+      "end": 1155.38,
+      "text": "Sewer Hole."
+    },
+    {
+      "start": 1156.2,
+      "end": 1157.54,
+      "text": "Każdy z tych zespołów"
+    },
+    {
+      "start": 1157.54,
+      "end": 1159.22,
+      "text": "był inny i każdy na"
+    },
+    {
+      "start": 1159.22,
+      "end": 1161.82,
+      "text": "swój sposób interesujący."
+    },
+    {
+      "start": 1162.62,
+      "end": 1163.17,
+      "text": "Life Seek to"
+    },
+    {
+      "start": 1163.17,
+      "end": 1164.58,
+      "text": "hardcore."
+    },
+    {
+      "start": 1164.58,
+      "end": 1166.9,
+      "text": "Tak brutalny i ciężki,"
+    },
+    {
+      "start": 1166.9,
+      "end": 1168.54,
+      "text": "że często zapuszczający"
+    },
+    {
+      "start": 1168.54,
+      "end": 1170.28,
+      "text": "się w death metalowe"
+    },
+    {
+      "start": 1170.28,
+      "end": 1173.08,
+      "text": "czy deathcoreowe rewiry."
+    },
+    {
+      "start": 1173.74,
+      "end": 1175.23,
+      "text": "Duńczycy w ostatnich"
+    },
+    {
+      "start": 1175.23,
+      "end": 1176.5,
+      "text": "latach stworzyli"
+    },
+    {
+      "start": 1176.5,
+      "end": 1177.51,
+      "text": "własną szkołę"
+    },
+    {
+      "start": 1177.51,
+      "end": 1178.68,
+      "text": "takiego grania"
+    },
+    {
+      "start": 1178.68,
+      "end": 1180.47,
+      "text": "i robi to wrażenie"
+    },
+    {
+      "start": 1180.47,
+      "end": 1182.64,
+      "text": "na reszcie świata."
+    },
+    {
+      "start": 1183.66,
+      "end": 1184.21,
+      "text": "Ja też jestem"
+    },
+    {
+      "start": 1184.21,
+      "end": 1187.34,
+      "text": "absolutnie przekonany."
+    },
+    {
+      "start": 1187.96,
+      "end": 1189.18,
+      "text": "A dowodem na to, że"
+    },
+    {
+      "start": 1189.18,
+      "end": 1191.14,
+      "text": "ta muzyka działa,"
+    },
+    {
+      "start": 1191.14,
+      "end": 1192.98,
+      "text": "że cieszy się powodzeniem"
+    },
+    {
+      "start": 1192.98,
+      "end": 1194.79,
+      "text": "jest chociażby fakt,"
+    },
+    {
+      "start": 1194.79,
+      "end": 1196.32,
+      "text": "że Life Seek wydają"
+    },
+    {
+      "start": 1196.32,
+      "end": 1197.94,
+      "text": "płyty nakładem"
+    },
+    {
+      "start": 1197.94,
+      "end": 1198.88,
+      "text": "Metal Blade"
+    },
+    {
+      "start": 1198.88,
+      "end": 1200.49,
+      "text": "i kolejna ukaże się"
+    },
+    {
+      "start": 1200.49,
+      "end": 1201.69,
+      "text": "już w styczniu"
+    },
+    {
+      "start": 1201.69,
+      "end": 1203.2,
+      "text": "przyszłego roku"
+    },
+    {
+      "start": 1203.2,
+      "end": 1204.4,
+      "text": "i na pewno się nią"
+    },
+    {
+      "start": 1204.4,
+      "end": 1206.02,
+      "text": "wtedy zajmiemy."
+    },
+    {
+      "start": 1358.81,
+      "end": 1360.74,
+      "text": "Był też zespół Sewer"
+    },
+    {
+      "start": 1360.74,
+      "end": 1362.93,
+      "text": "Hall, duet, który z"
+    },
+    {
+      "start": 1362.93,
+      "end": 1364.53,
+      "text": "godnym podziwu zapałem"
+    },
+    {
+      "start": 1364.53,
+      "end": 1366.35,
+      "text": "nurkuje w deathgrindowych"
+    },
+    {
+      "start": 1366.35,
+      "end": 1367.8,
+      "text": "ściekach. Bardzo"
+    },
+    {
+      "start": 1367.8,
+      "end": 1370.12,
+      "text": "undergroundowa sytuacja,"
+    },
+    {
+      "start": 1370.12,
+      "end": 1371.46,
+      "text": "ale jak ktoś lubi"
+    },
+    {
+      "start": 1371.46,
+      "end": 1373.2,
+      "text": "taką, muzykę będzie"
+    },
+    {
+      "start": 1373.2,
+      "end": 1374.75,
+      "text": "się przy Sewer Hall"
+    },
+    {
+      "start": 1374.75,
+      "end": 1376.61,
+      "text": "doskonale badać."
+    },
+    {
+      "start": 1479.68,
+      "end": 1480.99,
+      "text": "Na mnie największe"
+    },
+    {
+      "start": 1480.99,
+      "end": 1482.86,
+      "text": "wrażenie tego wieczoru,"
+    },
+    {
+      "start": 1482.86,
+      "end": 1483.89,
+      "text": "a przypominam, że"
+    },
+    {
+      "start": 1483.89,
+      "end": 1486.07,
+      "text": "to miniony piątek w"
+    },
+    {
+      "start": 1486.07,
+      "end": 1488.04,
+      "text": "Orchus zrobiła grupa"
+    },
+    {
+      "start": 1488.04,
+      "end": 1489.65,
+      "text": "o nieszczególnie"
+    },
+    {
+      "start": 1489.65,
+      "end": 1491.46,
+      "text": "chwytliwej nazwie"
+    },
+    {
+      "start": 1491.46,
+      "end": 1493.64,
+      "text": "Unveiling Void."
+    },
+    {
+      "start": 1493.98,
+      "end": 1495.77,
+      "text": "Zupełnie nowy to twór,"
+    },
+    {
+      "start": 1495.77,
+      "end": 1497.22,
+      "text": "który narodził się"
+    },
+    {
+      "start": 1497.22,
+      "end": 1499.11,
+      "text": "w tym roku w Kopenhadze,"
+    },
+    {
+      "start": 1499.11,
+      "end": 1500.82,
+      "text": "ale który ma w składzie"
+    },
+    {
+      "start": 1500.82,
+      "end": 1502.26,
+      "text": "starych wyjadaczy"
+    },
+    {
+      "start": 1502.26,
+      "end": 1503.16,
+      "text": "związanych"
+    },
+    {
+      "start": 1503.16,
+      "end": 1504.89,
+      "text": "wcześniej m.in. z"
+    },
+    {
+      "start": 1504.89,
+      "end": 1506.41,
+      "text": "takimi składami jak"
+    },
+    {
+      "start": 1506.41,
+      "end": 1508.3,
+      "text": "Heidsphere, Undergang"
+    },
+    {
+      "start": 1508.3,
+      "end": 1510.22,
+      "text": "czy Foreshedower."
+    },
+    {
+      "start": 1510.74,
+      "end": 1512.66,
+      "text": "Doskonale słychać i"
+    },
+    {
+      "start": 1512.66,
+      "end": 1513.92,
+      "text": "widać było to"
+    },
+    {
+      "start": 1513.92,
+      "end": 1515.98,
+      "text": "doświadczenie, a ja"
+    },
+    {
+      "start": 1515.98,
+      "end": 1518,
+      "text": "nazwę Unveiling Void"
+    },
+    {
+      "start": 1518,
+      "end": 1519.97,
+      "text": "na pewno zapamiętam"
+    },
+    {
+      "start": 1519.97,
+      "end": 1521.79,
+      "text": "i Wam też radzę, bo"
+    },
+    {
+      "start": 1521.79,
+      "end": 1523.39,
+      "text": "będziemy mieli z"
+    },
+    {
+      "start": 1523.39,
+      "end": 1525.22,
+      "text": "nich sporo pożytku"
+    },
+    {
+      "start": 1525.22,
+      "end": 1527.5,
+      "text": "z tego hipnotyzującego"
+    },
+    {
+      "start": 1527.5,
+      "end": 1529.55,
+      "text": "amalgamatu, sladżu"
+    },
+    {
+      "start": 1529.55,
+      "end": 1530.9,
+      "text": "i dumu z Black i"
+    },
+    {
+      "start": 1530.9,
+      "end": 1532.06,
+      "text": "Death."
+    },
+    {
+      "start": 1532.06,
+      "end": 1533.61,
+      "text": "Metale ma wszystko"
+    },
+    {
+      "start": 1533.61,
+      "end": 1534.9,
+      "text": "to odmierzone w"
+    },
+    {
+      "start": 1534.9,
+      "end": 1537.14,
+      "text": "idealnych proporcjach."
+    },
+    {
+      "start": 1537.14,
+      "end": 1538.86,
+      "text": "Póki co Unveiling"
+    },
+    {
+      "start": 1538.86,
+      "end": 1540.69,
+      "text": "Void mają na koncie"
+    },
+    {
+      "start": 1540.69,
+      "end": 1542.54,
+      "text": "tylko epkę Opening"
+    },
+    {
+      "start": 1542.54,
+      "end": 1544.42,
+      "text": "Cut, ale tu ilość"
+    },
+    {
+      "start": 1544.42,
+      "end": 1546.68,
+      "text": "przechodzi w jakość."
+    },
+    {
+      "start": 1770.56,
+      "end": 1771.86,
+      "text": "Miły to był wieczór,"
+    },
+    {
+      "start": 1771.86,
+      "end": 1773.34,
+      "text": "nie zapomnę go nigdy,"
+    },
+    {
+      "start": 1773.34,
+      "end": 1775.38,
+      "text": "ale przyjechałem do"
+    },
+    {
+      "start": 1775.38,
+      "end": 1776.68,
+      "text": "Orchus przede"
+    },
+    {
+      "start": 1776.68,
+      "end": 1778.46,
+      "text": "wszystkim ze względu"
+    },
+    {
+      "start": 1778.46,
+      "end": 1780.08,
+      "text": "na to, co działo"
+    },
+    {
+      "start": 1780.08,
+      "end": 1781.58,
+      "text": "się w sobotę."
+    },
+    {
+      "start": 1781.58,
+      "end": 1783.45,
+      "text": "Najpierw spotkania"
+    },
+    {
+      "start": 1783.45,
+      "end": 1785.65,
+      "text": "z lokalnymi muzykami,"
+    },
+    {
+      "start": 1785.65,
+      "end": 1788.31,
+      "text": "ich agentami, menedżerami"
+    },
+    {
+      "start": 1788.31,
+      "end": 1791.2,
+      "text": "i innymi ludźmi zaangażowanymi"
+    },
+    {
+      "start": 1791.2,
+      "end": 1793.13,
+      "text": "w tamtejszą scenę,"
+    },
+    {
+      "start": 1793.13,
+      "end": 1795.16,
+      "text": "a wieczorem festiwal"
+    },
+    {
+      "start": 1795.16,
+      "end": 1796.84,
+      "text": "Mono Goes Metal,"
+    },
+    {
+      "start": 1796.84,
+      "end": 1799.8,
+      "text": "czyli coroczny listopadowy"
+    },
+    {
+      "start": 1799.8,
+      "end": 1801.35,
+      "text": "przegląd tego, co w"
+    },
+    {
+      "start": 1801.35,
+      "end": 1804.32,
+      "text": "nowych duńskich ciężarach"
+    },
+    {
+      "start": 1804.32,
+      "end": 1805.34,
+      "text": "najlepsze."
+    },
+    {
+      "start": 1805.34,
+      "end": 1806.62,
+      "text": "Jeden z licznych"
+    },
+    {
+      "start": 1806.62,
+      "end": 1808.35,
+      "text": "takich przeglądów,"
+    },
+    {
+      "start": 1808.35,
+      "end": 1808.98,
+      "text": "to trzeba"
+    },
+    {
+      "start": 1808.98,
+      "end": 1810.53,
+      "text": "powiedzieć, no ale"
+    },
+    {
+      "start": 1810.53,
+      "end": 1811.79,
+      "text": "właśnie w Orchus"
+    },
+    {
+      "start": 1811.79,
+      "end": 1813.34,
+      "text": "ten jest tym jedynym"
+    },
+    {
+      "start": 1813.34,
+      "end": 1815.18,
+      "text": "i najważniejszym."
+    },
+    {
+      "start": 1815.78,
+      "end": 1816.69,
+      "text": "Wszystko to dzieje"
+    },
+    {
+      "start": 1816.69,
+      "end": 1818.18,
+      "text": "się pod auspicjami"
+    },
+    {
+      "start": 1818.18,
+      "end": 1819.96,
+      "text": "Mono, czyli lokalnej"
+    },
+    {
+      "start": 1819.96,
+      "end": 1821.45,
+      "text": "instytucji kultury"
+    },
+    {
+      "start": 1821.45,
+      "end": 1824.16,
+      "text": "i zarazem sali koncertowej."
+    },
+    {
+      "start": 1824.7,
+      "end": 1827.43,
+      "text": "Mono zajmuje się zapewnianiem"
+    },
+    {
+      "start": 1827.43,
+      "end": 1830.19,
+      "text": "artystom jak najlepszych"
+    },
+    {
+      "start": 1830.19,
+      "end": 1832.58,
+      "text": "warunków rozwoju."
+    },
+    {
+      "start": 1832.7,
+      "end": 1833.94,
+      "text": "To wspaniałe"
+    },
+    {
+      "start": 1833.94,
+      "end": 1835.71,
+      "text": "miejsce, wiele sal"
+    },
+    {
+      "start": 1835.71,
+      "end": 1837.39,
+      "text": "na próby, z których"
+    },
+    {
+      "start": 1837.39,
+      "end": 1839.36,
+      "text": "grupy korzystają."
+    },
+    {
+      "start": 1839.94,
+      "end": 1840.55,
+      "text": "Do tego świetni"
+    },
+    {
+      "start": 1840.55,
+      "end": 1842.22,
+      "text": "ludzie tam pracują,"
+    },
+    {
+      "start": 1842.22,
+      "end": 1844.22,
+      "text": "organizują tym zespołom"
+    },
+    {
+      "start": 1844.22,
+      "end": 1845.45,
+      "text": "różnego rodzaju"
+    },
+    {
+      "start": 1845.45,
+      "end": 1847.03,
+      "text": "warsztaty, właśnie"
+    },
+    {
+      "start": 1847.03,
+      "end": 1848.31,
+      "text": "spotkania z gośćmi,"
+    },
+    {
+      "start": 1848.31,
+      "end": 1850.1,
+      "text": "których sprowadzają"
+    },
+    {
+      "start": 1850.1,
+      "end": 1851.84,
+      "text": "z całego świata."
+    },
+    {
+      "start": 1852.8,
+      "end": 1854.33,
+      "text": "Jednym słowem robią"
+    },
+    {
+      "start": 1854.33,
+      "end": 1855.95,
+      "text": "co mogą, by te kapele"
+    },
+    {
+      "start": 1855.95,
+      "end": 1858.38,
+      "text": "rozwijały się w cieplarnianych"
+    },
+    {
+      "start": 1858.38,
+      "end": 1860.49,
+      "text": "warunkach, by rozwijały"
+    },
+    {
+      "start": 1860.49,
+      "end": 1862.1,
+      "text": "się jak najlepiej,"
+    },
+    {
+      "start": 1862.1,
+      "end": 1863.8,
+      "text": "jak najszybciej."
+    },
+    {
+      "start": 1863.8,
+      "end": 1865.04,
+      "text": "Po zazdrościć,"
+    },
+    {
+      "start": 1865.04,
+      "end": 1866.62,
+      "text": "naprawdę po zazdrościć"
+    },
+    {
+      "start": 1866.62,
+      "end": 1868.82,
+      "text": "takiego przedsięwzięcia."
+    },
+    {
+      "start": 1869.38,
+      "end": 1870.62,
+      "text": "No i nic dziwnego,"
+    },
+    {
+      "start": 1870.62,
+      "end": 1872.87,
+      "text": "że mając takie miejsca"
+    },
+    {
+      "start": 1872.87,
+      "end": 1874.68,
+      "text": "jak Mono, duńska scena"
+    },
+    {
+      "start": 1874.68,
+      "end": 1876.37,
+      "text": "w ostatnich latach"
+    },
+    {
+      "start": 1876.37,
+      "end": 1878.25,
+      "text": "kwitnie, co roku"
+    },
+    {
+      "start": 1878.25,
+      "end": 1879.93,
+      "text": "dostarczając nam"
+    },
+    {
+      "start": 1879.93,
+      "end": 1882.96,
+      "text": "kolejne zastępy znakomitych"
+    },
+    {
+      "start": 1882.96,
+      "end": 1883.62,
+      "text": "grup."
+    },
+    {
+      "start": 1884.44,
+      "end": 1885.11,
+      "text": "Weźmy na przykład"
+    },
+    {
+      "start": 1885.11,
+      "end": 1887.22,
+      "text": "taki Wolfhead, któremu"
+    },
+    {
+      "start": 1887.22,
+      "end": 1889.37,
+      "text": "przypadła niewdzięczna"
+    },
+    {
+      "start": 1889.37,
+      "end": 1890.56,
+      "text": "rola grupy."
+    },
+    {
+      "start": 1890.56,
+      "end": 1892.6,
+      "text": "otwierającej festiwalowy"
+    },
+    {
+      "start": 1892.6,
+      "end": 1895.14,
+      "text": "wieczór, ale zrobili"
+    },
+    {
+      "start": 1895.14,
+      "end": 1895.4,
+      "text": "to"
+    },
+    {
+      "start": 1895.4,
+      "end": 1897.38,
+      "text": "w pięknym stylu."
+    },
+    {
+      "start": 2297.76,
+      "end": 2300.2,
+      "text": "czyli wilczy łeb."
+    },
+    {
+      "start": 2300.2,
+      "end": 2302.24,
+      "text": "Byli u siebie, zespół"
+    },
+    {
+      "start": 2302.24,
+      "end": 2303.71,
+      "text": "pochodzi z Orhus i"
+    },
+    {
+      "start": 2303.71,
+      "end": 2306.56,
+      "text": "kipi energią. Gra,"
+    },
+    {
+      "start": 2306.56,
+      "end": 2308.24,
+      "text": "jak już usłyszeliście,"
+    },
+    {
+      "start": 2308.24,
+      "end": 2310.05,
+      "text": "trash metal, ale"
+    },
+    {
+      "start": 2310.05,
+      "end": 2312.02,
+      "text": "czasem wypuszcza"
+    },
+    {
+      "start": 2312.02,
+      "end": 2314.18,
+      "text": "się na różne inne"
+    },
+    {
+      "start": 2314.18,
+      "end": 2316.16,
+      "text": "terytoria."
+    },
+    {
+      "start": 2316.16,
+      "end": 2317.84,
+      "text": "Czasem słychać w"
+    },
+    {
+      "start": 2317.84,
+      "end": 2320.6,
+      "text": "tym frywolną przebojowość"
+    },
+    {
+      "start": 2320.6,
+      "end": 2322.76,
+      "text": "glamu. To znów rify"
+    },
+    {
+      "start": 2322.76,
+      "end": 2325.22,
+      "text": "godne groove metalu."
+    },
+    {
+      "start": 2325.22,
+      "end": 2327.05,
+      "text": "Wszystko, co działa"
+    },
+    {
+      "start": 2327.05,
+      "end": 2328.42,
+      "text": "na publiczność."
+    },
+    {
+      "start": 2328.42,
+      "end": 2330.04,
+      "text": "Wolfhead scenicznie"
+    },
+    {
+      "start": 2330.04,
+      "end": 2331.57,
+      "text": "są znakomici, cały"
+    },
+    {
+      "start": 2331.57,
+      "end": 2334.37,
+      "text": "czas w ruchu. Z charyzmatycznym,"
+    },
+    {
+      "start": 2334.37,
+      "end": 2336.83,
+      "text": "a przy tym dobrze śpiewającym"
+    },
+    {
+      "start": 2336.83,
+      "end": 2338.59,
+      "text": "wokalistą i znakomitym,"
+    },
+    {
+      "start": 2338.59,
+      "end": 2340.06,
+      "text": "naprawdę świetnym"
+    },
+    {
+      "start": 2340.06,
+      "end": 2342.42,
+      "text": "technicznie gitarzystą."
+    },
+    {
+      "start": 2343.2,
+      "end": 2345.11,
+      "text": "Zresztą wszyscy w"
+    },
+    {
+      "start": 2345.11,
+      "end": 2347.14,
+      "text": "Wolfhead potrafią"
+    },
+    {
+      "start": 2347.14,
+      "end": 2348.55,
+      "text": "grać. A kiedy"
+    },
+    {
+      "start": 2348.55,
+      "end": 2349.7,
+      "text": "powiedziałem, że"
+    },
+    {
+      "start": 2349.7,
+      "end": 2350.85,
+      "text": "cały czas w ruchu,"
+    },
+    {
+      "start": 2350.85,
+      "end": 2352.84,
+      "text": "to naprawdę nie przesadzam."
+    },
+    {
+      "start": 2352.84,
+      "end": 2354.64,
+      "text": "Podczas jednego z"
+    },
+    {
+      "start": 2354.64,
+      "end": 2356.69,
+      "text": "salt czy fikołków,"
+    },
+    {
+      "start": 2356.69,
+      "end": 2358.62,
+      "text": "koziołków, które"
+    },
+    {
+      "start": 2358.62,
+      "end": 2360.9,
+      "text": "wokalista w przerwach"
+    },
+    {
+      "start": 2360.9,
+      "end": 2363.76,
+      "text": "od śpiewania, harczenia"
+    },
+    {
+      "start": 2363.76,
+      "end": 2365.97,
+      "text": "lub piania falsetem"
+    },
+    {
+      "start": 2365.97,
+      "end": 2367.48,
+      "text": "robił, wypadł mu"
+    },
+    {
+      "start": 2367.48,
+      "end": 2369.36,
+      "text": "telefon komórkowy,"
+    },
+    {
+      "start": 2370.24,
+      "end": 2371.2,
+      "text": "który myślałem, że"
+    },
+    {
+      "start": 2371.2,
+      "end": 2372.1,
+      "text": "za chwilę albo on,"
+    },
+    {
+      "start": 2372.1,
+      "end": 2373.44,
+      "text": "albo koledzy zadepczą,"
+    },
+    {
+      "start": 2373.44,
+      "end": 2374.95,
+      "text": "ale ktoś z publiczności"
+    },
+    {
+      "start": 2374.95,
+      "end": 2376.64,
+      "text": "zanurkował, przytrzymał"
+    },
+    {
+      "start": 2376.64,
+      "end": 2377.6,
+      "text": "i w przerwie między"
+    },
+    {
+      "start": 2377.6,
+      "end": 2381.88,
+      "text": "piosenkami oddał śpiewakowi."
+    },
+    {
+      "start": 2381.88,
+      "end": 2383.87,
+      "text": "Bardzo to było miłe."
+    },
+    {
+      "start": 2383.87,
+      "end": 2385.03,
+      "text": "Nie do końca może"
+    },
+    {
+      "start": 2385.03,
+      "end": 2386.42,
+      "text": "moja muzyka, ale to"
+    },
+    {
+      "start": 2386.42,
+      "end": 2388.33,
+      "text": "zupełnie bez znaczenia,"
+    },
+    {
+      "start": 2388.33,
+      "end": 2389.79,
+      "text": "bo z tak porywającymi"
+    },
+    {
+      "start": 2389.79,
+      "end": 2391.81,
+      "text": "koncertami Wolfhead"
+    },
+    {
+      "start": 2391.81,
+      "end": 2393.7,
+      "text": "zawojują świat."
+    },
+    {
+      "start": 2616.44,
+      "end": 2617.98,
+      "text": "Ktokolwiek miałby"
+    },
+    {
+      "start": 2617.98,
+      "end": 2619.36,
+      "text": "wejść na scenę po"
+    },
+    {
+      "start": 2619.36,
+      "end": 2620.94,
+      "text": "Wolfhead miałby"
+    },
+    {
+      "start": 2620.94,
+      "end": 2623.06,
+      "text": "trudne zadanie, a"
+    },
+    {
+      "start": 2623.06,
+      "end": 2625.24,
+      "text": "przypadło ono w udziale"
+    },
+    {
+      "start": 2625.24,
+      "end": 2627.11,
+      "text": "kopenhaskiej grupie"
+    },
+    {
+      "start": 2627.11,
+      "end": 2628.66,
+      "text": "Hex Proces."
+    },
+    {
+      "start": 2628.66,
+      "end": 2630.85,
+      "text": "Po bokach młodzi"
+    },
+    {
+      "start": 2630.85,
+      "end": 2633.19,
+      "text": "metalowcy o miłej"
+    },
+    {
+      "start": 2633.19,
+      "end": 2636.31,
+      "text": "aparycji, a na froncie"
+    },
+    {
+      "start": 2636.31,
+      "end": 2638.81,
+      "text": "równie młody, ale"
+    },
+    {
+      "start": 2638.81,
+      "end": 2642.05,
+      "text": "zupełnie wyglądający"
+    },
+    {
+      "start": 2642.05,
+      "end": 2644.61,
+      "text": "na przybysza z innego"
+    },
+    {
+      "start": 2644.61,
+      "end": 2647.23,
+      "text": "świata jegomość z"
+    },
+    {
+      "start": 2647.23,
+      "end": 2649.8,
+      "text": "ładnie przyciętym wąsikiem,"
+    },
+    {
+      "start": 2649.8,
+      "end": 2651.68,
+      "text": "fryzurą na wczesnego"
+    },
+    {
+      "start": 2651.68,
+      "end": 2653.64,
+      "text": "Krzysztofa Krawczyka"
+    },
+    {
+      "start": 2653.64,
+      "end": 2655.24,
+      "text": "i w marynarce."
+    },
+    {
+      "start": 2655.88,
+      "end": 2657.11,
+      "text": "Wyglądał jakby"
+    },
+    {
+      "start": 2657.11,
+      "end": 2658.63,
+      "text": "właśnie dostał się"
+    },
+    {
+      "start": 2658.63,
+      "end": 2660.52,
+      "text": "na aplikację adwokacką"
+    },
+    {
+      "start": 2660.52,
+      "end": 2662.21,
+      "text": "i pomyślałem sobie,"
+    },
+    {
+      "start": 2662.21,
+      "end": 2664.1,
+      "text": "że w najlepszym wypadku"
+    },
+    {
+      "start": 2664.1,
+      "end": 2665.81,
+      "text": "czeka nas pół godziny"
+    },
+    {
+      "start": 2665.81,
+      "end": 2667.78,
+      "text": "w krainie progroka,"
+    },
+    {
+      "start": 2667.78,
+      "end": 2669.59,
+      "text": "ale jak mówi mądre"
+    },
+    {
+      "start": 2669.59,
+      "end": 2671.98,
+      "text": "przysłowie, nie wolno"
+    },
+    {
+      "start": 2671.98,
+      "end": 2673.91,
+      "text": "oceniać książki po"
+    },
+    {
+      "start": 2673.91,
+      "end": 2675.24,
+      "text": "okładce."
+    },
+    {
+      "start": 3393.72,
+      "end": 3395.25,
+      "text": "X-Process okazał"
+    },
+    {
+      "start": 3395.25,
+      "end": 3397.44,
+      "text": "się zespołem łączącym"
+    },
+    {
+      "start": 3397.44,
+      "end": 3400.08,
+      "text": "postmetal z Blackiem"
+    },
+    {
+      "start": 3400.08,
+      "end": 3402.09,
+      "text": "i chwilami trochę z"
+    },
+    {
+      "start": 3402.09,
+      "end": 3404.08,
+      "text": "Doomem, zespołem"
+    },
+    {
+      "start": 3404.08,
+      "end": 3406.84,
+      "text": "piszącym świetne piosenki"
+    },
+    {
+      "start": 3406.84,
+      "end": 3408.64,
+      "text": "z riffami srogimi"
+    },
+    {
+      "start": 3408.64,
+      "end": 3410.56,
+      "text": "jak burza śnieżna i"
+    },
+    {
+      "start": 3410.56,
+      "end": 3413.12,
+      "text": "hipnotyzującą aurą."
+    },
+    {
+      "start": 3413.12,
+      "end": 3415.55,
+      "text": "A ten wizerunek wokalisty,"
+    },
+    {
+      "start": 3415.55,
+      "end": 3417.18,
+      "text": "który w pierwszej"
+    },
+    {
+      "start": 3417.18,
+      "end": 3418.66,
+      "text": "chwili wydawał mi"
+    },
+    {
+      "start": 3418.66,
+      "end": 3420.4,
+      "text": "się nie przystający"
+    },
+    {
+      "start": 3420.4,
+      "end": 3421.93,
+      "text": "do takiej muzyki i"
+    },
+    {
+      "start": 3421.93,
+      "end": 3423.47,
+      "text": "tej imprezy, nie"
+    },
+    {
+      "start": 3423.47,
+      "end": 3425.17,
+      "text": "tylko przestał mi"
+    },
+    {
+      "start": 3425.17,
+      "end": 3427.13,
+      "text": "przeszkadzać, ale"
+    },
+    {
+      "start": 3427.13,
+      "end": 3428.95,
+      "text": "wręcz dodał temu"
+    },
+    {
+      "start": 3428.95,
+      "end": 3431.89,
+      "text": "koncertowi dodatkowego"
+    },
+    {
+      "start": 3431.89,
+      "end": 3433.02,
+      "text": "smaczku."
+    },
+    {
+      "start": 3433.02,
+      "end": 3436.08,
+      "text": "X-Process. Zapamiętajcie"
+    },
+    {
+      "start": 3436.08,
+      "end": 3438.26,
+      "text": "proszę tę nazwę, bo"
+    },
+    {
+      "start": 3438.26,
+      "end": 3439.88,
+      "text": "jeśli gdzieś się"
+    },
+    {
+      "start": 3439.88,
+      "end": 3441.45,
+      "text": "nie pogłubią na"
+    },
+    {
+      "start": 3441.45,
+      "end": 3443.64,
+      "text": "własne życzenie, to"
+    },
+    {
+      "start": 3443.64,
+      "end": 3445.1,
+      "text": "mają szansę na"
+    },
+    {
+      "start": 3445.1,
+      "end": 3446.94,
+      "text": "naprawdę zajście"
+    },
+    {
+      "start": 3446.94,
+      "end": 3448.24,
+      "text": "wysoko."
+    },
+    {
+      "start": 3448.24,
+      "end": 3449.56,
+      "text": "I posłuchajcie"
+    },
+    {
+      "start": 3449.56,
+      "end": 3451.66,
+      "text": "jeszcze jednej piosenki"
+    },
+    {
+      "start": 3451.66,
+      "end": 3453.48,
+      "text": "z ich debiutanckiej"
+    },
+    {
+      "start": 3453.48,
+      "end": 3455.24,
+      "text": "płyty zatytułowanej"
+    },
+    {
+      "start": 3455.24,
+      "end": 3456.98,
+      "text": "A Daily Air Jordan,"
+    },
+    {
+      "start": 3456.98,
+      "end": 3458.7,
+      "text": "która wyszła w lutym"
+    },
+    {
+      "start": 3458.7,
+      "end": 3460.04,
+      "text": "tego roku."
+    },
+    {
+      "start": 3836.92,
+      "end": 3839.53,
+      "text": "Przyszedł na festiwalu"
+    },
+    {
+      "start": 3839.53,
+      "end": 3841.38,
+      "text": "Mono Ghost Metal"
+    },
+    {
+      "start": 3841.38,
+      "end": 3843.32,
+      "text": "czas na Mauna."
+    },
+    {
+      "start": 3844.48,
+      "end": 3845.14,
+      "text": "Zespół złożony ze"
+    },
+    {
+      "start": 3845.14,
+      "end": 3847.11,
+      "text": "znacznie bardziej"
+    },
+    {
+      "start": 3847.11,
+      "end": 3850.02,
+      "text": "doświadczonych muzyków,"
+    },
+    {
+      "start": 3850.16,
+      "end": 3852.28,
+      "text": "chociaż też stosunkowo"
+    },
+    {
+      "start": 3852.28,
+      "end": 3853.1,
+      "text": "nowy."
+    },
+    {
+      "start": 3853.36,
+      "end": 3855.86,
+      "text": "Ich debiut pełnowymiarowy"
+    },
+    {
+      "start": 3855.86,
+      "end": 3858.08,
+      "text": "zatytułowany Hiarta"
+    },
+    {
+      "start": 3858.08,
+      "end": 3861.26,
+      "text": "ukazał się we wrześniu"
+    },
+    {
+      "start": 3861.26,
+      "end": 3862.18,
+      "text": "bieżącego roku"
+    },
+    {
+      "start": 3862.18,
+      "end": 3863.89,
+      "text": "nakładem wytwórni"
+    },
+    {
+      "start": 3863.89,
+      "end": 3865.88,
+      "text": "Profesii z Niemiec,"
+    },
+    {
+      "start": 3865.88,
+      "end": 3867.82,
+      "text": "a skoro Profesii to"
+    },
+    {
+      "start": 3867.82,
+      "end": 3868.98,
+      "text": "oznacza,"
+    },
+    {
+      "start": 3869.18,
+      "end": 3870.93,
+      "text": "że Mauna specjalizują"
+    },
+    {
+      "start": 3870.93,
+      "end": 3872.32,
+      "text": "się w klasie."
+    },
+    {
+      "start": 4259.23,
+      "end": 4262.64,
+      "text": "Ciekawe to było. Muzycznie"
+    },
+    {
+      "start": 4262.64,
+      "end": 4264.85,
+      "text": "bardzo zaawansowane,"
+    },
+    {
+      "start": 4264.85,
+      "end": 4267.81,
+      "text": "chwilami naprawdę wciągające."
+    },
+    {
+      "start": 4267.81,
+      "end": 4269.8,
+      "text": "Mauna łączy doom"
+    },
+    {
+      "start": 4269.8,
+      "end": 4272.22,
+      "text": "metal, post metal i"
+    },
+    {
+      "start": 4272.22,
+      "end": 4275.02,
+      "text": "nordycki folk, a Soren,"
+    },
+    {
+      "start": 4275.02,
+      "end": 4277.29,
+      "text": "wokalista grupy, oprócz"
+    },
+    {
+      "start": 4277.29,
+      "end": 4278.94,
+      "text": "tego, że śpiewa i"
+    },
+    {
+      "start": 4278.94,
+      "end": 4281.12,
+      "text": "lamentuje, czasem"
+    },
+    {
+      "start": 4281.12,
+      "end": 4283.13,
+      "text": "też dmucha w taką długą"
+    },
+    {
+      "start": 4283.13,
+      "end": 4284.93,
+      "text": "drewnianą rurę,"
+    },
+    {
+      "start": 4284.93,
+      "end": 4286.3,
+      "text": "która jest chyba"
+    },
+    {
+      "start": 4286.3,
+      "end": 4287.75,
+      "text": "jakimś wariantem"
+    },
+    {
+      "start": 4287.75,
+      "end": 4289.48,
+      "text": "czy pradziadem fletu"
+    },
+    {
+      "start": 4289.48,
+      "end": 4291.12,
+      "text": "poprzecznego, ale"
+    },
+    {
+      "start": 4291.12,
+      "end": 4292.47,
+      "text": "wybaczcie, nie"
+    },
+    {
+      "start": 4292.47,
+      "end": 4294.15,
+      "text": "chciało mi się"
+    },
+    {
+      "start": 4294.15,
+      "end": 4295.42,
+      "text": "sprawdzać nazwy."
+    },
+    {
+      "start": 4295.42,
+      "end": 4297.4,
+      "text": "Tak czy owak, Mauna"
+    },
+    {
+      "start": 4297.4,
+      "end": 4300.21,
+      "text": "to bardzo dobry zespół,"
+    },
+    {
+      "start": 4300.21,
+      "end": 4301.16,
+      "text": "na który powinien"
+    },
+    {
+      "start": 4301.16,
+      "end": 4302.89,
+      "text": "zwrócić uwagę każdy,"
+    },
+    {
+      "start": 4302.89,
+      "end": 4305.21,
+      "text": "komu marzy się wikiński"
+    },
+    {
+      "start": 4305.21,
+      "end": 4307.23,
+      "text": "Majdain Bride."
+    },
+    {
+      "start": 4307.63,
+      "end": 4308.77,
+      "text": "Jedyne, co mi"
+    },
+    {
+      "start": 4308.77,
+      "end": 4310.6,
+      "text": "trochę przeszkadzało"
+    },
+    {
+      "start": 4310.6,
+      "end": 4312.22,
+      "text": "to fakt, że Soren,"
+    },
+    {
+      "start": 4312.22,
+      "end": 4313.93,
+      "text": "skądinąd właściciel"
+    },
+    {
+      "start": 4313.93,
+      "end": 4315.64,
+      "text": "wspaniałego głosu,"
+    },
+    {
+      "start": 4315.64,
+      "end": 4317.62,
+      "text": "trochę go nadużywał,"
+    },
+    {
+      "start": 4317.62,
+      "end": 4319.39,
+      "text": "że zagadywał."
+    },
+    {
+      "start": 4319.53,
+      "end": 4321.08,
+      "text": "Czasem tę muzykę"
+    },
+    {
+      "start": 4321.08,
+      "end": 4323.28,
+      "text": "nie pozwalał zatopić"
+    },
+    {
+      "start": 4323.28,
+      "end": 4325.26,
+      "text": "się w to, co robili"
+    },
+    {
+      "start": 4325.26,
+      "end": 4327.08,
+      "text": "na instrumentach"
+    },
+    {
+      "start": 4327.08,
+      "end": 4328.97,
+      "text": "jego koledzy."
+    },
+    {
+      "start": 4328.97,
+      "end": 4330.71,
+      "text": "Ale hiarta to dopiero"
+    },
+    {
+      "start": 4330.71,
+      "end": 4332.44,
+      "text": "debiut, więc jestem"
+    },
+    {
+      "start": 4332.44,
+      "end": 4334.27,
+      "text": "przekonany, że Mauna"
+    },
+    {
+      "start": 4334.27,
+      "end": 4335.62,
+      "text": "nie powiedzieli"
+    },
+    {
+      "start": 4335.62,
+      "end": 4337.32,
+      "text": "jeszcze ostatniego"
+    },
+    {
+      "start": 4337.32,
+      "end": 4338.15,
+      "text": "słowa."
+    },
+    {
+      "start": 4814.97,
+      "end": 4817.11,
+      "text": "Zupełnie inne spojrzenie"
+    },
+    {
+      "start": 4817.11,
+      "end": 4818.55,
+      "text": "na w pewnym sensie"
+    },
+    {
+      "start": 4818.55,
+      "end": 4821.11,
+      "text": "też klimatyczne granie"
+    },
+    {
+      "start": 4821.11,
+      "end": 4822.66,
+      "text": "zaproponowała grupa"
+    },
+    {
+      "start": 4822.66,
+      "end": 4824.33,
+      "text": "Feather Mountain."
+    },
+    {
+      "start": 4824.33,
+      "end": 4826.85,
+      "text": "To był szeroko pojęty"
+    },
+    {
+      "start": 4826.85,
+      "end": 4829.37,
+      "text": "metal progresywny,"
+    },
+    {
+      "start": 4829.37,
+      "end": 4831.33,
+      "text": "tak szeroko, że"
+    },
+    {
+      "start": 4831.33,
+      "end": 4833.7,
+      "text": "czasem odpływający"
+    },
+    {
+      "start": 4833.7,
+      "end": 4835.95,
+      "text": "w stronę ambitnego"
+    },
+    {
+      "start": 4835.95,
+      "end": 4838.25,
+      "text": "indie rocka, to znów"
+    },
+    {
+      "start": 4838.25,
+      "end": 4840.69,
+      "text": "imponujący drapieżnością"
+    },
+    {
+      "start": 4840.69,
+      "end": 4843.17,
+      "text": "niemal death metalową."
+    },
+    {
+      "start": 4843.17,
+      "end": 4845.29,
+      "text": "Z wokalistą, który"
+    },
+    {
+      "start": 4845.29,
+      "end": 4847.01,
+      "text": "czasem śpiewał i"
+    },
+    {
+      "start": 4847.01,
+      "end": 4849.26,
+      "text": "zawodził żewnie, by"
+    },
+    {
+      "start": 4849.26,
+      "end": 4852.17,
+      "text": "za chwilę ryknąć srogo."
+    },
+    {
+      "start": 4852.77,
+      "end": 4853.61,
+      "text": "Ja to już tak mam,"
+    },
+    {
+      "start": 4853.61,
+      "end": 4854.86,
+      "text": "że te momenty,"
+    },
+    {
+      "start": 4854.86,
+      "end": 4856.21,
+      "text": "kiedy porykiwał"
+    },
+    {
+      "start": 4856.21,
+      "end": 4857.76,
+      "text": "przekonywały mnie"
+    },
+    {
+      "start": 4857.76,
+      "end": 4859.02,
+      "text": "bardziej, ale"
+    },
+    {
+      "start": 4859.02,
+      "end": 4860.93,
+      "text": "jestem przekonany,"
+    },
+    {
+      "start": 4860.93,
+      "end": 4863.27,
+      "text": "że i te bardziej liryczne,"
+    },
+    {
+      "start": 4863.27,
+      "end": 4866.21,
+      "text": "spokojniejsze, subtelniejsze"
+    },
+    {
+      "start": 4866.21,
+      "end": 4868.56,
+      "text": "znajdą i znajdują zresztą"
+    },
+    {
+      "start": 4868.56,
+      "end": 4870.07,
+      "text": "póki co głównie w"
+    },
+    {
+      "start": 4870.07,
+      "end": 4872.17,
+      "text": "dani swoich odbiorców."
+    },
+    {
+      "start": 4872.37,
+      "end": 4874.3,
+      "text": "W Feather Mountain"
+    },
+    {
+      "start": 4874.3,
+      "end": 4876.08,
+      "text": "robią to dobrze,"
+    },
+    {
+      "start": 4876.08,
+      "end": 4878.02,
+      "text": "wizualnie też było"
+    },
+    {
+      "start": 4878.02,
+      "end": 4879.82,
+      "text": "to dopracowane na"
+    },
+    {
+      "start": 4879.82,
+      "end": 4882.04,
+      "text": "ostatni guzik z jasno"
+    },
+    {
+      "start": 4882.04,
+      "end": 4884.24,
+      "text": "i ciekawie oświetloną"
+    },
+    {
+      "start": 4884.24,
+      "end": 4886.44,
+      "text": "sceną oraz kwiatowymi"
+    },
+    {
+      "start": 4886.44,
+      "end": 4888.23,
+      "text": "dekoracjami."
+    },
+    {
+      "start": 4889.11,
+      "end": 4890.24,
+      "text": "Kwiatami przyozdobieni"
+    },
+    {
+      "start": 4890.24,
+      "end": 4892.07,
+      "text": "byli nawet muzycy."
+    },
+    {
+      "start": 5255.13,
+      "end": 5256.48,
+      "text": "Słuchamy Feather"
+    },
+    {
+      "start": 5256.48,
+      "end": 5258.56,
+      "text": "Mountain, progresywnego"
+    },
+    {
+      "start": 5258.56,
+      "end": 5260.39,
+      "text": "zespołu z Kopenhagi."
+    },
+    {
+      "start": 5260.39,
+      "end": 5263.44,
+      "text": "Piosenek z jego ubiegłorocznej"
+    },
+    {
+      "start": 5263.44,
+      "end": 5265.83,
+      "text": "płyty Eliminal Step."
+    },
+    {
+      "start": 5265.83,
+      "end": 5268.21,
+      "text": "Teksty grupy zgłębiają"
+    },
+    {
+      "start": 5268.21,
+      "end": 5270.96,
+      "text": "m.in. temat, uwaga,"
+    },
+    {
+      "start": 5270.96,
+      "end": 5274.03,
+      "text": "kobiecej strony męskości."
+    },
+    {
+      "start": 5274.03,
+      "end": 5276.17,
+      "text": "Może stąd te kwiaty"
+    },
+    {
+      "start": 5276.17,
+      "end": 5278.35,
+      "text": "na scenie, ale też"
+    },
+    {
+      "start": 5278.35,
+      "end": 5281.03,
+      "text": "jest sporo o osobistych"
+    },
+    {
+      "start": 5281.03,
+      "end": 5283.59,
+      "text": "traumach muzyków."
+    },
+    {
+      "start": 5283.59,
+      "end": 5284.79,
+      "text": "Nie chcę tu na"
+    },
+    {
+      "start": 5284.79,
+      "end": 5286.66,
+      "text": "antenie opowiadać o"
+    },
+    {
+      "start": 5286.66,
+      "end": 5289.31,
+      "text": "pewnym rodzinnym zdarzeniu"
+    },
+    {
+      "start": 5289.31,
+      "end": 5290.89,
+      "text": "z życia basisty i"
+    },
+    {
+      "start": 5290.89,
+      "end": 5292.91,
+      "text": "perkusisty, bo to"
+    },
+    {
+      "start": 5292.91,
+      "end": 5294.37,
+      "text": "bracia."
+    },
+    {
+      "start": 5294.37,
+      "end": 5295.83,
+      "text": "Choć opowiedzieli"
+    },
+    {
+      "start": 5295.83,
+      "end": 5297.83,
+      "text": "je basista, opowiedział"
+    },
+    {
+      "start": 5297.83,
+      "end": 5299.18,
+      "text": "je na koncercie,"
+    },
+    {
+      "start": 5299.18,
+      "end": 5300.63,
+      "text": "ale jakoś nie czuję"
+    },
+    {
+      "start": 5300.63,
+      "end": 5303,
+      "text": "się upoważniony. Wydało"
+    },
+    {
+      "start": 5303,
+      "end": 5305.12,
+      "text": "mi się to, przyznaję,"
+    },
+    {
+      "start": 5305.12,
+      "end": 5306.93,
+      "text": "zbyt straszne i zbyt"
+    },
+    {
+      "start": 5306.93,
+      "end": 5308.19,
+      "text": "prywatne."
+    },
+    {
+      "start": 5308.19,
+      "end": 5309.88,
+      "text": "Wstrząsnęło to mną,"
+    },
+    {
+      "start": 5309.88,
+      "end": 5312.04,
+      "text": "a przecież na niejednym"
+    },
+    {
+      "start": 5312.04,
+      "end": 5314.24,
+      "text": "koncercie metalowym"
+    },
+    {
+      "start": 5314.24,
+      "end": 5315.8,
+      "text": "już w życiu byłem i"
+    },
+    {
+      "start": 5315.8,
+      "end": 5317.84,
+      "text": "niejednej strasznej"
+    },
+    {
+      "start": 5317.84,
+      "end": 5320.19,
+      "text": "historii wysłuchałem."
+    },
+    {
+      "start": 5320.19,
+      "end": 5322.18,
+      "text": "W połączeniu z muzyką"
+    },
+    {
+      "start": 5322.18,
+      "end": 5323.86,
+      "text": "Feather Mountain"
+    },
+    {
+      "start": 5323.86,
+      "end": 5326.24,
+      "text": "zadziałało to wyjątkowo"
+    },
+    {
+      "start": 5326.24,
+      "end": 5327.19,
+      "text": "mocno."
+    },
+    {
+      "start": 5730.14,
+      "end": 5732.01,
+      "text": "Słuchacie ciężko na"
+    },
+    {
+      "start": 5732.01,
+      "end": 5735.24,
+      "text": "sercu w trójce wspomnienia"
+    },
+    {
+      "start": 5735.24,
+      "end": 5737.64,
+      "text": "weekendowego, jednodniowego,"
+    },
+    {
+      "start": 5737.64,
+      "end": 5741.42,
+      "text": "ale świetnie zaprogramowanego"
+    },
+    {
+      "start": 5741.42,
+      "end": 5743.38,
+      "text": "w festiwalu Mono"
+    },
+    {
+      "start": 5743.38,
+      "end": 5745.28,
+      "text": "Ghost Metal."
+    },
+    {
+      "start": 5745.62,
+      "end": 5748.7,
+      "text": "Jedyny nieduński zespół,"
+    },
+    {
+      "start": 5748.7,
+      "end": 5749.87,
+      "text": "który usłyszycie"
+    },
+    {
+      "start": 5749.87,
+      "end": 5751.67,
+      "text": "dziś w tej audycji,"
+    },
+    {
+      "start": 5751.67,
+      "end": 5753.87,
+      "text": "bo jedyny nieduński,"
+    },
+    {
+      "start": 5753.87,
+      "end": 5755.96,
+      "text": "który wystąpił w Orchus"
+    },
+    {
+      "start": 5755.96,
+      "end": 5757.83,
+      "text": "w miniony weekend,"
+    },
+    {
+      "start": 5757.83,
+      "end": 5760.8,
+      "text": "to norweska grupa Jörtsjuk."
+    },
+    {
+      "start": 5761.66,
+      "end": 5763.27,
+      "text": "Znakomita, jadowita,"
+    },
+    {
+      "start": 5763.27,
+      "end": 5765.42,
+      "text": "z jednej strony bliska"
+    },
+    {
+      "start": 5765.42,
+      "end": 5767.73,
+      "text": "korzeniom norweskiego"
+    },
+    {
+      "start": 5767.73,
+      "end": 5769.91,
+      "text": "black metalu, a z"
+    },
+    {
+      "start": 5769.91,
+      "end": 5771.18,
+      "text": "drugiej brzmiąca"
+    },
+    {
+      "start": 5771.18,
+      "end": 5773.66,
+      "text": "świeżo na po swojemu."
+    },
+    {
+      "start": 5773.66,
+      "end": 5775.14,
+      "text": "A na scenie?"
+    },
+    {
+      "start": 5942.27,
+      "end": 5943.88,
+      "text": "Jortsiuk to skład"
+    },
+    {
+      "start": 5943.88,
+      "end": 5946.65,
+      "text": "młody, ale już utytułowany."
+    },
+    {
+      "start": 5947.57,
+      "end": 5948.69,
+      "text": "Za swój debiutancki"
+    },
+    {
+      "start": 5948.69,
+      "end": 5951.18,
+      "text": "ubiegłoroczny album,"
+    },
+    {
+      "start": 5951.18,
+      "end": 5953.97,
+      "text": "czyli Nagled Till Lived,"
+    },
+    {
+      "start": 5953.97,
+      "end": 5956.13,
+      "text": "co po naszemu oznacza"
+    },
+    {
+      "start": 5956.13,
+      "end": 5957.93,
+      "text": "przygwożdżony do"
+    },
+    {
+      "start": 5957.93,
+      "end": 5960.92,
+      "text": "życia, dostali norweskiego"
+    },
+    {
+      "start": 5960.92,
+      "end": 5962.23,
+      "text": "Fryderyka,"
+    },
+    {
+      "start": 5963.07,
+      "end": 5963.98,
+      "text": "a na koncerty w ich"
+    },
+    {
+      "start": 5963.98,
+      "end": 5965.48,
+      "text": "ojczyźnie walą"
+    },
+    {
+      "start": 5965.48,
+      "end": 5967.97,
+      "text": "coraz większe tłumy."
+    },
+    {
+      "start": 5969.67,
+      "end": 5971.53,
+      "text": "Poza Norwegię, Jortsiuk"
+    },
+    {
+      "start": 5971.53,
+      "end": 5972.96,
+      "text": "póki co wypuszczają"
+    },
+    {
+      "start": 5972.96,
+      "end": 5973.99,
+      "text": "się rzadko,"
+    },
+    {
+      "start": 5974.77,
+      "end": 5975.84,
+      "text": "ale jeszcze sezon"
+    },
+    {
+      "start": 5975.84,
+      "end": 5977.67,
+      "text": "lub dwa, a urosną"
+    },
+    {
+      "start": 5977.67,
+      "end": 5979.16,
+      "text": "tak, że wszyscy"
+    },
+    {
+      "start": 5979.16,
+      "end": 5980.95,
+      "text": "będziecie chodzić"
+    },
+    {
+      "start": 5980.95,
+      "end": 5983.29,
+      "text": "na ich koncerty."
+    },
+    {
+      "start": 5983.85,
+      "end": 5985.25,
+      "text": "Jortsiuk to nazwa"
+    },
+    {
+      "start": 5985.25,
+      "end": 5986.93,
+      "text": "nowa, ale za tą"
+    },
+    {
+      "start": 5986.93,
+      "end": 5989.07,
+      "text": "jakością stoją"
+    },
+    {
+      "start": 5989.07,
+      "end": 5991.41,
+      "text": "doświadczeni muzycy,"
+    },
+    {
+      "start": 5991.53,
+      "end": 5994.16,
+      "text": "których fani norweskich"
+    },
+    {
+      "start": 5994.16,
+      "end": 5997.26,
+      "text": "ciemności znają m.in."
+    },
+    {
+      "start": 5997.26,
+      "end": 5999.25,
+      "text": "ze wspaniałego,"
+    },
+    {
+      "start": 5999.37,
+      "end": 6001.55,
+      "text": "Koldbran, Zdiewel,"
+    },
+    {
+      "start": 6001.55,
+      "end": 6004.17,
+      "text": "Trollfest czy Urekhal."
+    },
+    {
+      "start": 6005.13,
+      "end": 6006.12,
+      "text": "A to znaczy, że ten"
+    },
+    {
+      "start": 6006.12,
+      "end": 6008.09,
+      "text": "kwartet doskonale"
+    },
+    {
+      "start": 6008.09,
+      "end": 6010.53,
+      "text": "wie, co robi."
+    },
+    {
+      "start": 6011.33,
+      "end": 6012.72,
+      "text": "Zresztą słychać, że"
+    },
+    {
+      "start": 6012.72,
+      "end": 6014.81,
+      "text": "wie przed nami utwór"
+    },
+    {
+      "start": 6014.81,
+      "end": 6016.56,
+      "text": "tytułowy z Nagled"
+    },
+    {
+      "start": 6016.56,
+      "end": 6017.65,
+      "text": "Till Lived."
+    },
+    {
+      "start": 6212.28,
+      "end": 6214.46,
+      "text": "Po Jortsjuk wystąpił"
+    },
+    {
+      "start": 6214.46,
+      "end": 6216.83,
+      "text": "zespół Gavage,"
+    },
+    {
+      "start": 6216.83,
+      "end": 6218.3,
+      "text": "wcześniej nazywali"
+    },
+    {
+      "start": 6218.3,
+      "end": 6220.43,
+      "text": "się Slefsind i to"
+    },
+    {
+      "start": 6220.43,
+      "end": 6221.96,
+      "text": "był właściwie ich"
+    },
+    {
+      "start": 6221.96,
+      "end": 6223.21,
+      "text": "pierwszy koncert z"
+    },
+    {
+      "start": 6223.21,
+      "end": 6225.68,
+      "text": "nową nazwą, pod nowym"
+    },
+    {
+      "start": 6225.68,
+      "end": 6227.53,
+      "text": "szyldem, a muzyka"
+    },
+    {
+      "start": 6227.53,
+      "end": 6230.06,
+      "text": "to hardkoro potężnym"
+    },
+    {
+      "start": 6230.06,
+      "end": 6232.1,
+      "text": "brzmieniu, może"
+    },
+    {
+      "start": 6232.1,
+      "end": 6233.76,
+      "text": "nawet deafcore."
+    },
+    {
+      "start": 6233.76,
+      "end": 6235.52,
+      "text": "Znowu to jest ten"
+    },
+    {
+      "start": 6235.52,
+      "end": 6237.62,
+      "text": "charakterystyczny"
+    },
+    {
+      "start": 6237.62,
+      "end": 6239.93,
+      "text": "nowy duński sound."
+    },
+    {
+      "start": 6239.93,
+      "end": 6241.9,
+      "text": "Tak czy owak było"
+    },
+    {
+      "start": 6241.9,
+      "end": 6244.37,
+      "text": "ciężko i agresywnie."
+    },
+    {
+      "start": 6244.37,
+      "end": 6245.92,
+      "text": "Jak już wspomniałem"
+    },
+    {
+      "start": 6245.92,
+      "end": 6247.75,
+      "text": "to było dla tych muzyków"
+    },
+    {
+      "start": 6247.75,
+      "end": 6249.96,
+      "text": "zupełnie nowe otwarcie."
+    },
+    {
+      "start": 6249.96,
+      "end": 6251.32,
+      "text": "Gavage dzień przed"
+    },
+    {
+      "start": 6251.32,
+      "end": 6252.71,
+      "text": "festiwalem wydali"
+    },
+    {
+      "start": 6252.71,
+      "end": 6253.92,
+      "text": "swój debiutancki"
+    },
+    {
+      "start": 6253.92,
+      "end": 6254.88,
+      "text": "singiel."
+    },
+    {
+      "start": 6266.91,
+      "end": 6268.64,
+      "text": "A na finał lokalni"
+    },
+    {
+      "start": 6268.64,
+      "end": 6270.76,
+      "text": "bohaterowie, czyli"
+    },
+    {
+      "start": 6270.76,
+      "end": 6272.87,
+      "text": "zespół Das z Orchus,"
+    },
+    {
+      "start": 6272.87,
+      "end": 6274.72,
+      "text": "bardzo dobrze przyjęty"
+    },
+    {
+      "start": 6274.72,
+      "end": 6276.63,
+      "text": "przez publiczność mimo"
+    },
+    {
+      "start": 6276.63,
+      "end": 6278.81,
+      "text": "późnej pory i zmęczenia."
+    },
+    {
+      "start": 6278.81,
+      "end": 6280.56,
+      "text": "Nie dziwię się, że"
+    },
+    {
+      "start": 6280.56,
+      "end": 6282.36,
+      "text": "poderwali ludzi do"
+    },
+    {
+      "start": 6282.36,
+      "end": 6284.35,
+      "text": "boju ostatniego, bo"
+    },
+    {
+      "start": 6284.35,
+      "end": 6286.14,
+      "text": "Das to grupa bardzo"
+    },
+    {
+      "start": 6286.14,
+      "end": 6287.9,
+      "text": "pewnie czująca się"
+    },
+    {
+      "start": 6287.9,
+      "end": 6289.79,
+      "text": "na scenie i świetnie"
+    },
+    {
+      "start": 6289.79,
+      "end": 6292.44,
+      "text": "wykonująca wysokooktanową"
+    },
+    {
+      "start": 6292.44,
+      "end": 6294.67,
+      "text": "mieszankę melodyjnego"
+    },
+    {
+      "start": 6294.67,
+      "end": 6297.33,
+      "text": "death metalu z progresywnym"
+    },
+    {
+      "start": 6297.33,
+      "end": 6298.95,
+      "text": "thrashem."
+    },
+    {
+      "start": 6661.76,
+      "end": 6663.99,
+      "text": "Thas powstali w"
+    },
+    {
+      "start": 6663.99,
+      "end": 6667.45,
+      "text": "2020 roku. Mają za"
+    },
+    {
+      "start": 6667.45,
+      "end": 6669.7,
+      "text": "sobą kilka singli i"
+    },
+    {
+      "start": 6669.7,
+      "end": 6671.75,
+      "text": "epkę The Terminal"
+    },
+    {
+      "start": 6671.75,
+      "end": 6673.9,
+      "text": "Condition of Existence,"
+    },
+    {
+      "start": 6673.9,
+      "end": 6675.93,
+      "text": "której dzisiaj słuchamy,"
+    },
+    {
+      "start": 6675.93,
+      "end": 6677.2,
+      "text": "której fragmentów."
+    },
+    {
+      "start": 6677.56,
+      "end": 6680.32,
+      "text": "Słuchamy, to wydawnictwo"
+    },
+    {
+      "start": 6680.32,
+      "end": 6683.14,
+      "text": "z 2024 roku, a w"
+    },
+    {
+      "start": 6683.14,
+      "end": 6685.73,
+      "text": "drodze już jest debiutancki"
+    },
+    {
+      "start": 6685.73,
+      "end": 6687.65,
+      "text": "album Thas, który"
+    },
+    {
+      "start": 6687.65,
+      "end": 6690.16,
+      "text": "na pewno wezmę w obroty,"
+    },
+    {
+      "start": 6690.16,
+      "end": 6691.97,
+      "text": "kiedy tylko płyta"
+    },
+    {
+      "start": 6691.97,
+      "end": 6693.46,
+      "text": "się ukaże."
+    },
+    {
+      "start": 6694.38,
+      "end": 6695.55,
+      "text": "Zgaduję, że może to"
+    },
+    {
+      "start": 6695.55,
+      "end": 6697.49,
+      "text": "nastąpić tuż przed"
+    },
+    {
+      "start": 6697.49,
+      "end": 6699.29,
+      "text": "wspólną wiosenną"
+    },
+    {
+      "start": 6699.29,
+      "end": 6701.36,
+      "text": "trasą Thas z Obscura"
+    },
+    {
+      "start": 6701.36,
+      "end": 6703.12,
+      "text": "i Pestilence,"
+    },
+    {
+      "start": 6703.12,
+      "end": 6705.4,
+      "text": "która to trasa dotrze"
+    },
+    {
+      "start": 6705.4,
+      "end": 6707.55,
+      "text": "również do Polski,"
+    },
+    {
+      "start": 6707.55,
+      "end": 6709.18,
+      "text": "a więc będzie to"
+    },
+    {
+      "start": 6709.18,
+      "end": 6711.72,
+      "text": "bardzo solidna porcja"
+    },
+    {
+      "start": 6711.72,
+      "end": 6713.3,
+      "text": "technicznego, ale"
+    },
+    {
+      "start": 6713.3,
+      "end": 6715.48,
+      "text": "drapieżnego, brutalnego"
+    },
+    {
+      "start": 6715.48,
+      "end": 6716.34,
+      "text": "grania."
+    },
+    {
+      "start": 6716.98,
+      "end": 6717.41,
+      "text": "Ja też już do"
+    },
+    {
+      "start": 6717.41,
+      "end": 6719.81,
+      "text": "Polski dotarłem, wróciłem"
+    },
+    {
+      "start": 6719.81,
+      "end": 6721.23,
+      "text": "na ojczyzny łono"
+    },
+    {
+      "start": 6721.23,
+      "end": 6723.16,
+      "text": "zachwycony niezwykłą"
+    },
+    {
+      "start": 6723.16,
+      "end": 6725.2,
+      "text": "aktywnością i jakością"
+    },
+    {
+      "start": 6725.2,
+      "end": 6727.04,
+      "text": "duńskiej sceny."
+    },
+    {
+      "start": 6727.04,
+      "end": 6728.54,
+      "text": "To mały kraj, ale"
+    },
+    {
+      "start": 6728.54,
+      "end": 6730.04,
+      "text": "co roku pojawiają"
+    },
+    {
+      "start": 6730.04,
+      "end": 6732.54,
+      "text": "się tam nowe, fantastyczne"
+    },
+    {
+      "start": 6732.54,
+      "end": 6734.34,
+      "text": "zespoły prezentujące"
+    },
+    {
+      "start": 6734.34,
+      "end": 6736.44,
+      "text": "pełne spektrum ciężkich"
+    },
+    {
+      "start": 6736.44,
+      "end": 6737.64,
+      "text": "brzmień."
+    },
+    {
+      "start": 6738.76,
+      "end": 6739.59,
+      "text": "Nie żeby u nas było"
+    },
+    {
+      "start": 6739.59,
+      "end": 6741.68,
+      "text": "takich grup mało,"
+    },
+    {
+      "start": 6741.68,
+      "end": 6743.89,
+      "text": "nie żeby poziom był"
+    },
+    {
+      "start": 6743.89,
+      "end": 6745.79,
+      "text": "kiepski, ale mam"
+    },
+    {
+      "start": 6745.79,
+      "end": 6748.15,
+      "text": "wrażenie, że takie"
+    },
+    {
+      "start": 6748.15,
+      "end": 6749.9,
+      "text": "miejsca jak Mono w"
+    },
+    {
+      "start": 6749.9,
+      "end": 6751.04,
+      "text": "Orchus."
+    },
+    {
+      "start": 6751.04,
+      "end": 6752.27,
+      "text": "I chodzi mi nie o"
+    },
+    {
+      "start": 6752.27,
+      "end": 6753.98,
+      "text": "ten jeden festiwal,"
+    },
+    {
+      "start": 6753.98,
+      "end": 6756.45,
+      "text": "tylko o właśnie codzienną"
+    },
+    {
+      "start": 6756.45,
+      "end": 6757.9,
+      "text": "pracę z zespołami."
+    },
+    {
+      "start": 6758.66,
+      "end": 6760.55,
+      "text": "Takie miejsca sprzyjają"
+    },
+    {
+      "start": 6760.55,
+      "end": 6762.68,
+      "text": "rozwojowi artystów"
+    },
+    {
+      "start": 6762.68,
+      "end": 6764.66,
+      "text": "i sceny w ogóle."
+    },
+    {
+      "start": 6765.28,
+      "end": 6767.66,
+      "text": "Raz jeszcze pozazdrościć"
+    },
+    {
+      "start": 6767.66,
+      "end": 6769.64,
+      "text": "i naśladować."
+    },
+    {
+      "start": 6770.04,
+      "end": 6772.63,
+      "text": "No i z tą zazdrością,"
+    },
+    {
+      "start": 6772.63,
+      "end": 6774.79,
+      "text": "zatruwającą moje"
+    },
+    {
+      "start": 6774.79,
+      "end": 6776.84,
+      "text": "serce, na którym"
+    },
+    {
+      "start": 6776.84,
+      "end": 6778.78,
+      "text": "oczywiście ciężko"
+    },
+    {
+      "start": 6778.78,
+      "end": 6781.28,
+      "text": "położę się dziś spać."
+    },
+    {
+      "start": 6781.76,
+      "end": 6783.76,
+      "text": "niech utuli jeszcze"
+    },
+    {
+      "start": 6783.76,
+      "end": 6785.41,
+      "text": "jedna piosenka z"
+    },
+    {
+      "start": 6785.41,
+      "end": 6787.24,
+      "text": "repertuaru Das."
+    },
+    {
+      "start": 6788.12,
+      "end": 6790.18,
+      "text": "Dobranoc. Do usłyszenia."
+    }
+  ],
+  "stats": {
+    "windowCount": 21,
+    "transcribedAudioSec": 1320.04,
+    "segmentCount": 689,
+    "characterCount": 12717
+  }
+}
