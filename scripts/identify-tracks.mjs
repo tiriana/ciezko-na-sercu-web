@@ -45,8 +45,11 @@ const SHAZAM_DELAY_MS = 1200;
 const RETRY = { attempts: 4, baseDelayMs: 5000 };
 // `node-shazam` woła `fetch` bez timeoutu, więc zawieszona odpowiedź trzyma job do limitu.
 const RECOGNIZE_TIMEOUT_MS = 30_000;
-// ffmpeg tnie próbkę z mp3 po HTTP; serwowany plik potrafi nie odpowiedzieć wcale.
-const CLIP_TIMEOUT_MS = 120_000;
+// ffmpeg tnie próbkę z lokalnego pliku; 30 s to i tak zapas na 12-sekundowy wycinek.
+const CLIP_TIMEOUT_MS = 30_000;
+const DOWNLOAD_TIMEOUT_MS = 900_000;
+// Shazam przy blokadzie odrzuca każde zapytanie; po pięciu pod rząd nie ma czego szukać.
+const MAX_CONSECUTIVE_ERRORS = 5;
 const CONFIDENCE = 'średnia';
 
 const args = new Map();
@@ -144,6 +147,12 @@ const extractClip = async (url, start, seconds, file) => {
   ], { timeout: CLIP_TIMEOUT_MS });
 };
 
+// Cięcie prosto z URL-a pobiera plik od początku za każdym razem, więc odcinek
+// z sondą w 90. minucie ciągnie ~90 MB na jedną próbkę. Pobieramy raz, tniemy lokalnie.
+const downloadAudio = async (url, file) => {
+  await run('curl', ['-sSL', '--fail', '--max-time', '900', '-o', file, url], { timeout: DOWNLOAD_TIMEOUT_MS });
+};
+
 const shazam = new Shazam();
 
 // Shazam odpowiada stroną HTML zamiast JSON-em, gdy uzna, że zapytań jest za dużo;
@@ -225,17 +234,27 @@ try {
     const tracks = [];
     let probes = 0;
 
+    const audioFile = join(work, `${entry.id}.mp3`);
+    try {
+      await downloadAudio(entry.audioUrl, audioFile);
+    } catch (error) {
+      console.log(`— ${entry.slug}: nie pobrałem nagrania (${error.message})`);
+      continue;
+    }
+
     if (grid > 0) {
       // Zbieramy trafienia z każdej sondy i dopiero z nich składamy utwory: offset
       // mówi, gdzie w piosence jesteśmy, więc start = czas sondy − offset.
       const hits = [];
-      for (const block of blocks) {
+      let failures = 0;
+      grid: for (const block of blocks) {
         for (const probe of gridProbes(block, grid)) {
           const clip = join(work, `${entry.id}-${Math.round(probe.start)}.wav`);
           try {
-            await extractClip(entry.audioUrl, probe.start, probe.end - probe.start, clip);
+            await extractClip(audioFile, probe.start, probe.end - probe.start, clip);
             const response = await recognize(clip);
             probes += 1;
+            failures = 0;
             const found = response?.track;
             if (found?.title) {
               hits.push({
@@ -249,7 +268,12 @@ try {
             }
           } catch (error) {
             probes += 1;
+            failures += 1;
             console.error(`   ${entry.slug}@${Math.round(probe.start)}: ${error.message}`);
+            if (failures >= MAX_CONSECUTIVE_ERRORS) {
+              console.log(`— ${entry.slug}: ${failures} próbek pod rząd bez odpowiedzi, zostawiam resztę`);
+              break grid;
+            }
           } finally {
             await rm(clip, { force: true });
           }
@@ -289,14 +313,16 @@ try {
         });
       }
     } else {
-      for (const block of blocks) {
+      let failures = 0;
+      blocks: for (const block of blocks) {
         let found = null;
         for (const probe of planProbes(block)) {
           const clip = join(work, `${entry.id}-${Math.round(probe.start)}.wav`);
           try {
-            await extractClip(entry.audioUrl, probe.start, probe.end - probe.start, clip);
+            await extractClip(audioFile, probe.start, probe.end - probe.start, clip);
             const response = await recognize(clip);
             probes += 1;
+            failures = 0;
             const track = response?.track;
             if (track?.title) {
               found = track;
@@ -304,7 +330,12 @@ try {
             }
           } catch (error) {
             probes += 1;
+            failures += 1;
             console.error(`   ${entry.slug}@${Math.round(probe.start)}: ${error.message}`);
+            if (failures >= MAX_CONSECUTIVE_ERRORS) {
+              console.log(`— ${entry.slug}: ${failures} próbek pod rząd bez odpowiedzi, zostawiam resztę`);
+              break blocks;
+            }
           } finally {
             await rm(clip, { force: true });
           }
