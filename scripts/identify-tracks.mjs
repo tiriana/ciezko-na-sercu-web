@@ -45,6 +45,8 @@ const SHAZAM_DELAY_MS = 1200;
 const RETRY = { attempts: 4, baseDelayMs: 5000 };
 // `node-shazam` woła `fetch` bez timeoutu, więc zawieszona odpowiedź trzyma job do limitu.
 const RECOGNIZE_TIMEOUT_MS = 30_000;
+// ffmpeg tnie próbkę z mp3 po HTTP; serwowany plik potrafi nie odpowiedzieć wcale.
+const CLIP_TIMEOUT_MS = 120_000;
 const CONFIDENCE = 'średnia';
 
 const args = new Map();
@@ -139,7 +141,7 @@ const extractClip = async (url, start, seconds, file) => {
     '-ss', String(start), '-t', String(seconds),
     '-i', url,
     '-ar', '44100', '-ac', '1', '-c:a', 'pcm_s16le', file,
-  ]);
+  ], { timeout: CLIP_TIMEOUT_MS });
 };
 
 const shazam = new Shazam();
