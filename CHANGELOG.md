@@ -1,3 +1,9 @@
+## [1.86.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.1...v1.86.2) (2026-11-18)
+
+### Bug Fixes
+
+* tytuły redakcyjne sprawdzane codziennie ([#107](https://github.com/tiriana/ciezko-na-sercu-web/issues/107)) ([192acc1](https://github.com/tiriana/ciezko-na-sercu-web/commit/192acc15d5bbd5f2fcb3e82148d9dc89fafed90d))
+
 ## [1.86.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.0...v1.86.1) (2026-11-18)
 
 ### Bug Fixes
