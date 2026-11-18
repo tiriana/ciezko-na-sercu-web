@@ -1,3 +1,14 @@
+## [1.86.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.85.0...v1.86.0) (2026-11-18)
+
+### Features
+
+* domykanie braków po etapach ([#105](https://github.com/tiriana/ciezko-na-sercu-web/issues/105)) ([3937b6a](https://github.com/tiriana/ciezko-na-sercu-web/commit/3937b6a5e3789bc1d5475f0b2fffd3d55155320f))
+
+### Bug Fixes
+
+* transkrypcja i przeliczone czasy tematów (44286662290) ([69ab291](https://github.com/tiriana/ciezko-na-sercu-web/commit/69ab2917a4d6bbd36826fa63292ffb145fc7ccb6))
+* transkrypcja i przeliczone czasy tematów (44302823877) ([e79af25](https://github.com/tiriana/ciezko-na-sercu-web/commit/e79af255de265ff8a904dd963ccfa34d49579b37))
+
 ## [1.85.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.84.4...v1.85.0) (2026-11-18)
 
 ### Features
