@@ -1,3 +1,12 @@
+## [1.86.5](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.4...v1.86.5) (2026-11-18)
+
+### Bug Fixes
+
+* rozpoznane utwory Shazamem (44377027208) ([6b4f6f1](https://github.com/tiriana/ciezko-na-sercu-web/commit/6b4f6f150a92fa1d311d4965c0a13c52abf5376d))
+* streszczenia i nazwy wejść (44381847263) ([d88b2e3](https://github.com/tiriana/ciezko-na-sercu-web/commit/d88b2e324c67abd1c85fae19baf4ab89b39575c2))
+* wejścia dopisane przez profil głosu dostają nazwę ([#110](https://github.com/tiriana/ciezko-na-sercu-web/issues/110)) ([ea6d647](https://github.com/tiriana/ciezko-na-sercu-web/commit/ea6d647a38e7cdf34dcfd1588da0c4dd276e5d2f))
+* wejścia z profilu głosu (44382250419) ([7d74d2b](https://github.com/tiriana/ciezko-na-sercu-web/commit/7d74d2b915980df9aa5e753b2ccc59929300c525))
+
 ## [1.86.4](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.3...v1.86.4) (2026-11-18)
 
 ### Bug Fixes
