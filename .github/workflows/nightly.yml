@@ -18,6 +18,7 @@ on:
     - cron: '10 */2 * * *' # tytuły redakcyjne — redakcja nadaje je w dowolnym momencie
     - cron: '0 6 * * *' # streszczenia i nazwy wejść
     - cron: '30 7 * * *' # braki, których nie domknęły wcześniejsze etapy
+    - cron: '20 5 * * *' # intro audycji w nowych odcinkach
   workflow_dispatch:
     inputs:
       stage:
@@ -25,7 +26,7 @@ on:
         required: false
         default: 'all'
         type: choice
-        options: [all, transcribe, voiceprint, enrich, titles, health]
+        options: [all, transcribe, voiceprint, enrich, titles, health, intro]
       episodes:
         description: 'UUID lub slugi oddzielone przecinkami; puste = kolejka'
         required: false
@@ -285,6 +286,37 @@ jobs:
         id: commit
         run: |
           bash scripts/push-data.sh "chore(data): tytuły redakcyjne z radia (${GITHUB_RUN_ID})" data/catalog.json data/catalog-titles.json
+
+      - name: Deploy po aktualizacji danych
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main -f version="$(node -p 'require("./package.json").version')"
+
+  intro:
+    if: (github.event_name == 'schedule' && github.event.schedule == '20 5 * * *') || (github.event_name == 'workflow_dispatch' && (inputs.stage == 'all' || inputs.stage == 'intro'))
+    runs-on: ubuntu-26.04
+    timeout-minutes: 30
+    concurrency:
+      group: data-writers
+      cancel-in-progress: false
+    env:
+      EPISODES: ${{ inputs.episodes }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5
+        with:
+          cache: true
+
+      - run: pip install --quiet numpy scipy
+
+      - name: Znajdź intro w nowych odcinkach
+        run: node scripts/detect-intro.mjs
+
+      - name: Commit
+        id: commit
+        run: bash scripts/push-data.sh "fix: intro audycji (${GITHUB_RUN_ID})" data/overrides
 
       - name: Deploy po aktualizacji danych
         if: steps.commit.outputs.changed == 'true'
