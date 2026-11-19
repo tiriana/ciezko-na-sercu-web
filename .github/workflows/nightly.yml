@@ -211,6 +211,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Wyprowadź wejścia i tagi
+        run: node scripts/derive-gaps.mjs --write
+
       - name: Streszczenia i nazwy wejść
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -235,6 +238,9 @@ jobs:
             tail -60 enrich.log
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Tagi z creditsów po enrich
+        run: node scripts/derive-gaps.mjs --write
 
       - run: npm run check
 

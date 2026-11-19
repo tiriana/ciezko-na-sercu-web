@@ -43,6 +43,8 @@ const rows = catalog.episodes
       whisper: Boolean(transcript?.segments?.length),
       tracks: episode?.tracks?.length ?? 0,
       summary: Boolean(episode?.summary),
+      topics: episode?.topics?.length ?? 0,
+      tags: episode?.tags?.length ?? 0,
       voiceprint: Boolean(ledger.episodes?.[entry.id]),
     };
   })
@@ -53,7 +55,7 @@ const gaps = {
   spans: open.filter((row) => !row.spans),
   transcribe: open.filter((row) => row.spans && !row.whisper),
   identify: open.filter((row) => row.whisper && row.tracks === 0),
-  enrich: open.filter((row) => row.whisper && row.tracks > 0 && !row.summary),
+  enrich: open.filter((row) => row.whisper && row.tracks > 0 && (!row.summary || row.topics === 0 || row.tags === 0)),
   voiceprint: open.filter((row) => !row.voiceprint),
 };
 
