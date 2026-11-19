@@ -4,7 +4,10 @@
  * (`topics-from-speech.mjs`) i tagi `artist` oraz `person`. Idempotentny: rusza tylko
  * odcinki bez wejść albo bez tagów, a odcinków z oznaczeniem „ok” nie dotyka.
  *
- *   node scripts/derive-gaps.mjs [--write]
+ *   node scripts/derive-gaps.mjs [--write] [--fallback]
+ *
+ * `--fallback` (po enrich) nadaje wejściom bez nazwy „Wejście N”; enrich i repair
+ * traktują taką nazwę jak brak i próbują ją zastąpić opisem z kontekstu.
  */
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
@@ -13,6 +16,7 @@ import { tagId } from '../lib/tags.mjs';
 import { frozenEpisodes } from './frozen.mjs';
 
 const write = process.argv.includes('--write');
+const fallback = process.argv.includes('--fallback');
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
 const writeJson = (path, value) => writeFileSync(path, `${JSON.stringify(value, null, 2)}\n`);
 
@@ -62,6 +66,20 @@ for (const entry of catalog.episodes) {
       }
     }
     changed += 1;
+  }
+
+  if (fallback) {
+    const blank = (episode.topics ?? []).filter((topic) => !String(topic.label ?? '').trim());
+    if (blank.length > 0) {
+      console.log(`+ ${entry.slug}: ${blank.length} wejść z nazwą zastępczą`);
+      if (write) {
+        episode.topics.forEach((topic, index) => {
+          if (blank.includes(topic)) topic.label = `Wejście ${index + 1}`;
+        });
+        writeJson(path, episode);
+      }
+      changed += 1;
+    }
   }
 
   const tags = tagsOf(episode);
