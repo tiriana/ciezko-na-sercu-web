@@ -44,6 +44,7 @@ const rows = catalog.episodes
       tracks: episode?.tracks?.length ?? 0,
       summary: Boolean(episode?.summary),
       topics: episode?.topics?.length ?? 0,
+      unnamed: (episode?.topics ?? []).filter((topic) => !String(topic.label ?? '').trim() || /^Wejście \d+$/.test(topic.label)).length,
       tags: episode?.tags?.length ?? 0,
       voiceprint: Boolean(ledger.episodes?.[entry.id]),
     };
@@ -55,7 +56,7 @@ const gaps = {
   spans: open.filter((row) => !row.spans),
   transcribe: open.filter((row) => row.spans && !row.whisper),
   identify: open.filter((row) => row.whisper && row.tracks === 0),
-  enrich: open.filter((row) => row.whisper && row.tracks > 0 && (!row.summary || row.topics === 0 || row.tags === 0)),
+  enrich: open.filter((row) => row.whisper && row.tracks > 0 && (!row.summary || row.topics === 0 || row.unnamed > 0 || row.tags === 0)),
   voiceprint: open.filter((row) => !row.voiceprint),
 };
 
