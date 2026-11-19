@@ -1,3 +1,9 @@
+## [1.87.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.87.1...v1.87.2) (2026-11-19)
+
+### Bug Fixes
+
+* podtytuł w nagłówku — indeks i nieoficjalny player audycji ([#115](https://github.com/tiriana/ciezko-na-sercu-web/issues/115)) ([3d4f6b1](https://github.com/tiriana/ciezko-na-sercu-web/commit/3d4f6b1bcbf30f22f84b2bf29c6673f36698cf79))
+
 ## [1.87.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.87.0...v1.87.1) (2026-11-19)
 
 ### Bug Fixes
