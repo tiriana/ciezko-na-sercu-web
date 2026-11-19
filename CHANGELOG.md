@@ -1,3 +1,10 @@
+## [1.87.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.87.2...v1.87.3) (2026-11-19)
+
+### Bug Fixes
+
+* podtytuł w nagłówku — katalog audycji · nieoficjalny player ([#117](https://github.com/tiriana/ciezko-na-sercu-web/issues/117)) ([df4e005](https://github.com/tiriana/ciezko-na-sercu-web/commit/df4e0058a79eea9506432eb01387389f1ee372aa))
+* podtytuł w nagłówku — nieoficjalny player ([#116](https://github.com/tiriana/ciezko-na-sercu-web/issues/116)) ([bc0a64e](https://github.com/tiriana/ciezko-na-sercu-web/commit/bc0a64e8254128af765d88954ff660d8979d69d1))
+
 ## [1.87.2](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.87.1...v1.87.2) (2026-11-19)
 
 ### Bug Fixes
