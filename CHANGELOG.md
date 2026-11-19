@@ -1,3 +1,15 @@
+## [1.87.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.6...v1.87.0) (2026-11-19)
+
+### Features
+
+* intro audycji wykrywane automatycznie ([#113](https://github.com/tiriana/ciezko-na-sercu-web/issues/113)) ([0af966d](https://github.com/tiriana/ciezko-na-sercu-web/commit/0af966dd4286c60374252978ec8eec9c6a6f8cb8))
+
+### Bug Fixes
+
+* streszczenia i nazwy wejść (44486212909) ([24f18cb](https://github.com/tiriana/ciezko-na-sercu-web/commit/24f18cbc142c96b7fc3c50572f8096d336aa8bd0))
+* streszczenia i nazwy wejść (44487558823) ([74af7e5](https://github.com/tiriana/ciezko-na-sercu-web/commit/74af7e5d534ea1d2669a595bd9466e1ac557ada5))
+* wejścia bez nazwy dostają „Wejście N” i wracają do ponownego opisania ([#112](https://github.com/tiriana/ciezko-na-sercu-web/issues/112)) ([98b6767](https://github.com/tiriana/ciezko-na-sercu-web/commit/98b6767eec6ba994c8cd41ddfb145cb36bcd078b))
+
 ## [1.86.6](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.5...v1.86.6) (2026-11-19)
 
 ### Bug Fixes
