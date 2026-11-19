@@ -14,6 +14,7 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 
 import { tagId } from '../lib/tags.mjs';
 import { frozenEpisodes } from './frozen.mjs';
+import { introWindowStart, isIntro } from './lib/intro.mjs';
 
 const write = process.argv.includes('--write');
 const fallback = process.argv.includes('--fallback');
@@ -66,6 +67,27 @@ for (const entry of catalog.episodes) {
       }
     }
     changed += 1;
+  }
+
+  // Wejście zaczyna się po intrze, nie na nim; ręcznie przesunięte wejścia (poprawka po `start`) zostają.
+  const overridePath = `data/overrides/${entry.id}.json`;
+  const override = existsSync(overridePath) ? readJson(overridePath) : {};
+  const intro = (override.addTracks ?? []).find(isIntro);
+  // Tylko świeże odcinki: starsze mają ręcznie ułożone wejścia, także krótkie fragmenty przy intrze.
+  if (intro && entry.date >= introWindowStart()) {
+    const introEnd = Math.round((intro.start + intro.durationSec) * 100) / 100;
+    const edited = (topic) => (override.topics ?? []).some((fix) => Math.abs(Number(fix.start) - topic.start) < 0.5);
+    const moved = (episode.topics ?? []).filter((topic) => topic.start < introEnd && !edited(topic));
+    if (moved.length > 0) {
+      console.log(`+ ${entry.slug}: ${moved.length} wejść przesuniętych za intro`);
+      if (write) {
+        episode.topics = episode.topics
+          .map((topic) => (moved.includes(topic) ? { ...topic, start: introEnd } : topic))
+          .filter((topic) => !(topic.end <= topic.start));
+        writeJson(path, episode);
+      }
+      changed += 1;
+    }
   }
 
   if (fallback) {
