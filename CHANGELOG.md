@@ -1,3 +1,11 @@
+## [1.87.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.87.0...v1.87.1) (2026-11-19)
+
+### Bug Fixes
+
+* naprawa utworów i wejść bez opisu (8d414246-5524-4558-a404-eefb7810daab, 44488225930) ([b943f44](https://github.com/tiriana/ciezko-na-sercu-web/commit/b943f44de0667bc3394f00916a7aa4c77bdb8af5))
+* tagi i czasy wejść (44488225930) ([bf021f4](https://github.com/tiriana/ciezko-na-sercu-web/commit/bf021f47f9b3534542975f1dfa04b730efe3cc75))
+* wejście zaczyna się po intrze, nie na nim ([#114](https://github.com/tiriana/ciezko-na-sercu-web/issues/114)) ([d6bebc9](https://github.com/tiriana/ciezko-na-sercu-web/commit/d6bebc90f191f9bbf01f73b1e06e36a23c72c7a7))
+
 ## [1.87.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.6...v1.87.0) (2026-11-19)
 
 ### Features
