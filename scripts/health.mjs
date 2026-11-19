@@ -13,6 +13,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 import { frozenEpisodes } from './frozen.mjs';
+import { hasIntro, introWindowStart } from './lib/intro.mjs';
 import { readLedger } from './voiceprint-ledger.mjs';
 
 const dispatch = process.argv.includes('--dispatch');
@@ -43,6 +44,8 @@ const rows = catalog.episodes
       whisper: Boolean(transcript?.segments?.length),
       tracks: episode?.tracks?.length ?? 0,
       summary: Boolean(episode?.summary),
+      intro: hasIntro(entry.id),
+      hasEpisode: Boolean(episode),
       topics: episode?.topics?.length ?? 0,
       unnamed: (episode?.topics ?? []).filter((topic) => !String(topic.label ?? '').trim() || /^Wejście \d+$/.test(topic.label)).length,
       tags: episode?.tags?.length ?? 0,
@@ -58,6 +61,7 @@ const gaps = {
   identify: open.filter((row) => row.whisper && row.tracks === 0),
   enrich: open.filter((row) => row.whisper && row.tracks > 0 && (!row.summary || row.topics === 0 || row.unnamed > 0 || row.tags === 0)),
   voiceprint: open.filter((row) => !row.voiceprint),
+  intro: open.filter((row) => row.hasEpisode && !row.intro && row.date >= introWindowStart()),
 };
 
 const ids = (list) => list.map((row) => row.id).join(',');
@@ -69,6 +73,7 @@ const jobs = [
   ['transcribe.yml', (list) => ['-f', `episodes=${ids(list)}`, '-f', 'label=uzupełnienie'], gaps.transcribe],
   ['identify.yml', (list) => ['-f', `episodes=${ids(list)}`, '-f', 'limit=0'], gaps.identify],
   ['nightly.yml', (list) => ['-f', 'stage=enrich', '-f', `episodes=${ids(list)}`], gaps.enrich],
+  ['nightly.yml', () => ['-f', 'stage=intro'], gaps.intro],
   ['nightly.yml', (list) => ['-f', 'stage=voiceprint', '-f', `episodes=${ids(list)}`, '-f', 'apply=true'], gaps.voiceprint],
 ];
 
