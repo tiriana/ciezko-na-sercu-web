@@ -1,3 +1,11 @@
+## [1.86.6](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.5...v1.86.6) (2026-11-19)
+
+### Bug Fixes
+
+* streszczenia i nazwy wejść (44384686887) ([2246cff](https://github.com/tiriana/ciezko-na-sercu-web/commit/2246cff834f468a48a88fe92851732afced95516))
+* streszczenia i nazwy wejść (44471549405) ([861e08a](https://github.com/tiriana/ciezko-na-sercu-web/commit/861e08ad969a755688a444d40563f6cf2097d4c8))
+* wejścia i tagi wyliczane automatycznie, health liczy ich brak ([#111](https://github.com/tiriana/ciezko-na-sercu-web/issues/111)) ([4ae8714](https://github.com/tiriana/ciezko-na-sercu-web/commit/4ae87142fa7ff1f2ce2cea04f530c6efeac850e6))
+
 ## [1.86.5](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.86.4...v1.86.5) (2026-11-18)
 
 ### Bug Fixes
