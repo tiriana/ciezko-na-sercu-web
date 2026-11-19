@@ -4,8 +4,181 @@
   "analyzedAt": "2026-11-18",
   "durationSec": null,
   "summary": "Audycja poświęcona jest duńskiej scenie metalowej, zainicjowana wizytą w kopenhaskim sklepie muzycznym Beatbop prowadzonym przez Michaela Dennera. Głównym wątkiem jest relacja z festiwalu Mono Goes Metal w Aarhus, gdzie wystąpiły m.in. Wolfhead, X-Process oraz Jörtsjuk. Prowadzący omawia również materiały zespołów Feather Mountain, Mauna i polskiego Das, podkreślając wysoką jakość lokalnej produkcji muzycznej. Całość zamyka refleksja nad rolą klubów, takich jak Mono, w rozwoju artystów oraz zapowiedź utworu zespołu Das.",
-  "topics": [],
-  "tags": [],
+  "topics": [
+    {
+      "start": 0.37,
+      "end": 59.84,
+      "label": "Nowa muzyka z Danii"
+    },
+    {
+      "start": 312.82,
+      "end": 399.06,
+      "label": "Wizyta w sklepie płytowym Michaela Dennera"
+    },
+    {
+      "start": 586.38,
+      "end": 624.38,
+      "label": "Festiwal Mono Goes Metal w Orchus"
+    },
+    {
+      "start": 829.81,
+      "end": 877.87,
+      "label": "Recenzja koncertu duńskiego zespołu"
+    },
+    {
+      "start": 1144.78,
+      "end": 1203.08,
+      "label": "Life Seek – duńska hardcore"
+    },
+    {
+      "start": 1480.18,
+      "end": 1543.18,
+      "label": "Debiut Unveiling Void"
+    },
+    {
+      "start": 1771.06,
+      "end": 1893.6,
+      "label": "Festiwal Mono Goes Metal w Orchus"
+    },
+    {
+      "start": 2298.26,
+      "end": 2393.2,
+      "label": "Koncert zespołu Wolfhead"
+    },
+    {
+      "start": 2616.94,
+      "end": 2671.2,
+      "label": "Wyjście wokalisty Hex Proces"
+    },
+    {
+      "start": 3394.22,
+      "end": 3452.42,
+      "label": "Recenzja koncertu zespołu X-Process"
+    },
+    {
+      "start": 4259.73,
+      "end": 4327.57,
+      "label": "Recenzja debiutanckiego albumu zespołu Mauna"
+    },
+    {
+      "start": 4815.47,
+      "end": 4881.55,
+      "label": "Feather Mountain i ich progresywny metal"
+    },
+    {
+      "start": 5255.63,
+      "end": 5315.31,
+      "label": "Osobiste traumy muzyków"
+    },
+    {
+      "start": 5942.77,
+      "end": 6003.02,
+      "label": ""
+    },
+    {
+      "start": 6212.78,
+      "end": 6282.2,
+      "label": ""
+    },
+    {
+      "start": 6662.26,
+      "end": 6775.54,
+      "label": ""
+    }
+  ],
+  "tags": [
+    {
+      "id": "mercyful-fate",
+      "label": "Mercyful Fate",
+      "type": "artist",
+      "source": "tracks",
+      "at": 59.84
+    },
+    {
+      "id": "nvlvs",
+      "label": "NVLVS",
+      "type": "artist",
+      "source": "tracks",
+      "at": 624.38
+    },
+    {
+      "id": "lifesick",
+      "label": "Lifesick",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1203.08
+    },
+    {
+      "id": "sewer-haul",
+      "label": "SEWER HAUL",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1374.34
+    },
+    {
+      "id": "unavailing-void",
+      "label": "Unavailing Void",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1543.28
+    },
+    {
+      "id": "wolfhead",
+      "label": "WOLFHEAD",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1893.6
+    },
+    {
+      "id": "heksproces",
+      "label": "Heksproces",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2671.2
+    },
+    {
+      "id": "maunah",
+      "label": "Maunah",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3863.22
+    },
+    {
+      "id": "feather-mountain",
+      "label": "Feather Mountain",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4881.74
+    },
+    {
+      "id": "jordsjuk",
+      "label": "Jordsjuk",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5763.41
+    },
+    {
+      "id": "thus",
+      "label": "Thus",
+      "type": "artist",
+      "source": "tracks",
+      "at": 6282.2
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits",
+      "at": 20
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits",
+      "at": 23
+    }
+  ],
   "tracks": [
     {
       "start": 59.84,
