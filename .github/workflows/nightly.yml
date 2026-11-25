@@ -316,7 +316,8 @@ jobs:
 
       - name: Commit
         id: commit
-        run: bash scripts/push-data.sh "fix: intro audycji (${GITHUB_RUN_ID})" data/overrides
+        run: |
+          bash scripts/push-data.sh "fix: intro audycji (${GITHUB_RUN_ID})" data/overrides
 
       - name: Deploy po aktualizacji danych
         if: steps.commit.outputs.changed == 'true'
