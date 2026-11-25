@@ -42,8 +42,10 @@ albo `scripts/build-editor.mjs` uruchamia `editor.yml` (testy, build, deploy).
 Tytuł w katalogu jest oficjalny (z serwisu); gdy redakcja go jeszcze nie ustawiła, jest
 techniczny („Ciężko na sercu 11 listopada godz. 00:06”). Nasz tytuł nieoficjalny
 (`data/titles.json`) pokazujemy tylko wtedy, gdy oficjalny jest techniczny — po zmianie
-tytułu w serwisie wygrywa oficjalny. `scripts/refresh-titles.mjs` aktualizuje katalog
-także wtedy, gdy mamy już tytuł nieoficjalny.
+tytułu w serwisie wygrywa oficjalny. `scripts/refresh-titles.mjs` co 2 h porównuje tytuły
+z radia z katalogiem dla odcinków z ostatnich 31 dni, także gdy redakcja zmienia tytuł
+redakcyjny po raz drugi. Każdy zastąpiony tytuł (też techniczny) trafia do
+`previousTitles` odcinka w `data/catalog.json`; stary slug zostaje w `slugs`.
 
 ## Osoby w creditsach
 
