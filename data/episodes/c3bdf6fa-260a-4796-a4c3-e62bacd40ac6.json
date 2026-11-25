@@ -3,9 +3,248 @@
   "id": "c3bdf6fa-260a-4796-a4c3-e62bacd40ac6",
   "analyzedAt": "2026-11-25",
   "durationSec": null,
-  "summary": null,
-  "topics": [],
-  "tags": [],
+  "summary": "Audycja poświęcona była wyłącznie polskiej scenie metalowej, prezentując szerokie spektrum gatunków od heavymetalu po ekstremalne odmiany. W programie omówiono nowe wydawnictwa zespołów takich jak Mentor, Lancet, Acid Sitter, Lishaj, Hydra, Head of Cassandra oraz Grób. Prowadzący zwrócił uwagę na ewolucję stylistyczną wykonawców, w tym The Dog i Throat Cutter, a także na projekty progresywne i blackmetalowe, takie jak Jasmeno, Kalt Windur czy Totenmesse. Całość zakończono prezentacją najnowszego materiału grupy Ashes.",
+  "topics": [
+    {
+      "start": 278.35,
+      "end": 337.11,
+      "label": "Początek prezentacji rodzimego metalu"
+    },
+    {
+      "start": 551.28,
+      "end": 629.77,
+      "label": "Nowe single polskich zespołów"
+    },
+    {
+      "start": 967.38,
+      "end": 1002.03,
+      "label": "Debiuty i EP-ki na scenie"
+    },
+    {
+      "start": 1220.94,
+      "end": 1267.33,
+      "label": "Ewolucja stylistyczna wrocławskich kapel"
+    },
+    {
+      "start": 1618.8,
+      "end": 1659.92,
+      "label": "Progresywny metal i projekty solowe"
+    },
+    {
+      "start": 1955.76,
+      "end": 2032.84,
+      "label": "Pozycja heavymetalu w Polsce"
+    },
+    {
+      "start": 2183.5,
+      "end": 2235.58,
+      "label": "Death metal i ekstremalne brzmienia"
+    },
+    {
+      "start": 2449.49,
+      "end": 2501.04,
+      "label": "Black metal z różnych ośrodków"
+    },
+    {
+      "start": 2672.59,
+      "end": 2751.51,
+      "label": "Nowe projekty i ekstremalny metal"
+    },
+    {
+      "start": 3225.14,
+      "end": 3281.62,
+      "label": "Zamknięcie audycji utworem Ashes"
+    },
+    {
+      "start": 3879.34,
+      "end": 3931.79,
+      "label": "Powtórka fragmentu o heavymetalu"
+    },
+    {
+      "start": 4146.58,
+      "end": 4216.02,
+      "label": "Powtórka fragmentu o death metalu"
+    },
+    {
+      "start": 4688.34,
+      "end": 4742.48,
+      "label": "Powtórka fragmentu o black metalu"
+    },
+    {
+      "start": 4960.4,
+      "end": 4987.25,
+      "label": "Powtórka fragmentu o ekstremalnym metalu"
+    },
+    {
+      "start": 5207.02,
+      "end": 5247.1,
+      "label": "Powtórka fragmentu o zamykającym utworze"
+    },
+    {
+      "start": 5455.12,
+      "end": 5492.05,
+      "label": "Powtórka fragmentu o heavymetalu"
+    },
+    {
+      "start": 5720.85,
+      "end": 5754.74,
+      "label": "Powtórka fragmentu o death metalu"
+    },
+    {
+      "start": 6232.08,
+      "end": 6282.96,
+      "label": "Powtórka fragmentu o black metalu"
+    }
+  ],
+  "tags": [
+    {
+      "id": "mentor",
+      "label": "Mentor",
+      "type": "artist",
+      "source": "tracks",
+      "at": 12.21
+    },
+    {
+      "id": "lan-cet",
+      "label": "Lan cet",
+      "type": "artist",
+      "source": "tracks",
+      "at": 337.11
+    },
+    {
+      "id": "acidsitter",
+      "label": "AcidSitter",
+      "type": "artist",
+      "source": "tracks",
+      "at": 629.77
+    },
+    {
+      "id": "israel-toledo",
+      "label": "Israel Toledo",
+      "type": "artist",
+      "source": "tracks",
+      "at": 700.66
+    },
+    {
+      "id": "leash-eye",
+      "label": "Leash Eye",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1002.23
+    },
+    {
+      "id": "hydra",
+      "label": "Hydra",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1267.33
+    },
+    {
+      "id": "head-of-cassandra",
+      "label": "Head of Cassandra",
+      "type": "artist",
+      "source": "tracks",
+      "at": 1661.37
+    },
+    {
+      "id": "grob",
+      "label": "Grób",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2032.84
+    },
+    {
+      "id": "throat-cutter",
+      "label": "Throät Cütter",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2235.58
+    },
+    {
+      "id": "the-dog",
+      "label": "The Dog",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2501.08
+    },
+    {
+      "id": "jasmeno",
+      "label": "JASMENO",
+      "type": "artist",
+      "source": "tracks",
+      "at": 2751.51
+    },
+    {
+      "id": "the-black-thunder",
+      "label": "The Black Thunder",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3281.62
+    },
+    {
+      "id": "baalzagoth",
+      "label": "Baalzagoth",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3647.51
+    },
+    {
+      "id": "kalt-vindur",
+      "label": "Kalt Vindur",
+      "type": "artist",
+      "source": "tracks",
+      "at": 3931.79
+    },
+    {
+      "id": "rtec",
+      "label": "Rtęć",
+      "type": "artist",
+      "source": "tracks",
+      "at": 4987.25
+    },
+    {
+      "id": "totenmesse",
+      "label": "Totenmesse",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5247.1
+    },
+    {
+      "id": "stygian-prism",
+      "label": "Stygian Prism",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5492.05
+    },
+    {
+      "id": "pralaya",
+      "label": "प्रलय Pralaya",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5755.93
+    },
+    {
+      "id": "the-trakwerx-collectiv",
+      "label": "The Trakwerx Collectiv",
+      "type": "artist",
+      "source": "tracks",
+      "at": 5923.85
+    },
+    {
+      "id": "jarek-szubrycht",
+      "label": "Jarek Szubrycht",
+      "type": "person",
+      "source": "credits",
+      "at": 305
+    },
+    {
+      "id": "mariusz-owczarek",
+      "label": "Mariusz Owczarek",
+      "type": "person",
+      "source": "credits",
+      "at": 311
+    }
+  ],
   "tracks": [
     {
       "start": 12.21,
@@ -256,5 +495,18 @@
     }
   ],
   "quotes": [],
-  "credits": []
+  "credits": [
+    {
+      "role": "prowadzący",
+      "name": "Jarek Szubrycht",
+      "time": 305,
+      "quote": "Szubrycht i będę"
+    },
+    {
+      "role": "wydawca",
+      "name": "Mariusz Owczarek",
+      "time": 311,
+      "quote": "jest Mariusz Owczarek."
+    }
+  ]
 }
