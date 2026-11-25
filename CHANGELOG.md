@@ -1,3 +1,9 @@
+## [1.89.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.88.0...v1.89.0) (2026-11-25)
+
+### Features
+
+* zmiany tytułu redakcyjnego i historia poprzednich tytułów ([#122](https://github.com/tiriana/ciezko-na-sercu-web/issues/122)) ([48b6d3b](https://github.com/tiriana/ciezko-na-sercu-web/commit/48b6d3b694cc78beec53bbd192a7628d243e1716))
+
 ## [1.88.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.87.3...v1.88.0) (2026-11-25)
 
 ### Features
