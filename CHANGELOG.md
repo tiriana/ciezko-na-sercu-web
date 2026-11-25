@@ -1,3 +1,14 @@
+## [1.88.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.87.3...v1.88.0) (2026-11-25)
+
+### Features
+
+* bloki mowy (VAD) dla nowych odcinków (45527040924) ([4351182](https://github.com/tiriana/ciezko-na-sercu-web/commit/4351182a3370a72cc27d251f95e129da8f4f2022))
+
+### Bug Fixes
+
+* nightly.yml — niecytowany dwukropek w kroku intro psuł cały workflow ([#121](https://github.com/tiriana/ciezko-na-sercu-web/issues/121)) ([c212d3c](https://github.com/tiriana/ciezko-na-sercu-web/commit/c212d3cdda51e178d3ddcceccc8791cdf78e4436))
+* transkrypcja i przeliczone czasy tematów (45527518694) ([9f6c0b2](https://github.com/tiriana/ciezko-na-sercu-web/commit/9f6c0b2d4ac25f0598004d7bdbf95c5f9a77e895))
+
 ## [1.87.3](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.87.2...v1.87.3) (2026-11-19)
 
 ### Bug Fixes
