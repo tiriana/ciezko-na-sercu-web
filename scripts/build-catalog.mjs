@@ -55,6 +55,12 @@ function slugsFrom(catalog) {
   return map;
 }
 
+function previousTitlesFrom(catalog) {
+  const map = new Map();
+  for (const episode of catalog?.episodes ?? []) map.set(episode.id, episode.previousTitles ?? []);
+  return map;
+}
+
 const [input, output = 'data/catalog.json'] = process.argv.slice(2);
 if (!input) {
   console.error('usage: node scripts/build-catalog.mjs <episodes.json> [out]');
@@ -64,6 +70,7 @@ if (!input) {
 const downloaded = JSON.parse(await readFile(input, 'utf8'));
 const previous = await previousCatalog(output);
 const known = slugsFrom(previous);
+const knownTitles = previousTitlesFrom(previous);
 
 // Serwis podaje tytuł techniczny („... godz. 0005”). Tytuł redakcyjny trzymamy osobno,
 // żeby odświeżenie katalogu go nie nadpisywało.
@@ -91,6 +98,7 @@ const episodes = downloaded
       slugs: history.includes(slug) ? history : [slug, ...history],
       date: episode.date,
       title,
+      previousTitles: knownTitles.get(id) ?? [],
       articleId: episode.articleId ?? null,
       durationSec: null,
       sourceUrl: sourceUrlFor({ ...episode, title }),

@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 // Radio publikuje odcinek z tytułem technicznym, a redakcja podmienia go na własny
-// kilka dni albo tygodni później. Ten krok sprawdza świeże odcinki i przenosi tytuł
-// redakcyjny do katalogu, żeby dało się go pokazać na stronie.
+// kilka dni albo tygodni później — i potrafi go zmienić jeszcze raz. Ten krok sprawdza
+// świeże odcinki i przenosi aktualny tytuł z radia do katalogu; każdy wcześniejszy
+// tytuł (też techniczny) ląduje w `previousTitles`.
 //
 //   node scripts/refresh-titles.mjs [--days 31] [--dry-run]
 //
 // Starych odcinków nie ruszamy: ich tytuły się nie zmieniają, a każda zmiana
-// przestawiłaby slug.
+// przestawiłaby slug (stary zostaje w `slugs`, więc linki działają).
 
 import { readFile, writeFile } from 'node:fs/promises';
 
@@ -46,9 +47,7 @@ const slugify = (text) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 
-const targets = catalog.episodes.filter(
-  (entry) => entry.date >= threshold && isTechnicalTitle(entry.title) && !editorial.titles[entry.id]
-);
+const targets = catalog.episodes.filter((entry) => entry.date >= threshold);
 
 console.log(`Odcinków do sprawdzenia: ${targets.length} (od ${threshold})`);
 let changed = 0;
@@ -62,18 +61,21 @@ for (const entry of targets) {
     continue;
   }
   if (!metadata.title || isTechnicalTitle(metadata.title) || metadata.title === entry.title) {
-    console.log(`· ${entry.slug}: radio nadal bez tytułu redakcyjnego`);
+    console.log(`· ${entry.slug}: tytuł bez zmian`);
     continue;
   }
 
   const slug = `${entry.date}-${slugify(metadata.title)}`;
+  const previousTitles = entry.previousTitles ?? [];
+  if (!previousTitles.includes(entry.title)) previousTitles.unshift(entry.title);
+  entry.previousTitles = previousTitles.filter((title) => title !== metadata.title);
   entry.title = metadata.title;
   entry.slug = slug;
   entry.slugs = entry.slugs.includes(slug) ? entry.slugs : [slug, ...entry.slugs];
   entry.sourceUrl = metadata.sourceUrl ?? entry.sourceUrl;
   editorial.titles[entry.id] = metadata.title;
   changed += 1;
-  console.log(`+ ${entry.date}: „${metadata.title}”`);
+  console.log(`+ ${entry.date}: „${metadata.title}” (było: „${previousTitles[0]}”)`);
 }
 
 if (changed === 0) {
