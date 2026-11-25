@@ -48,7 +48,7 @@
     "resolve": "${SPANS_PYTHON:-python3} scripts/resolve_tracks.py"
   },
   "dependencies": {
-    "astro": "^7.4.11",
+    "astro": "^7.4.13",
     "zod": "^4.6.7"
   },
   "devDependencies": {
@@ -60,7 +60,7 @@
     "@semantic-release/release-notes-generator": "^14.1.1",
     "conventional-changelog-conventionalcommits": "^8.0.0",
     "node-shazam": "^1.2.7",
-    "playwright": "^1.65.0",
+    "playwright": "^1.65.1",
     "semantic-release": "^25.0.9"
   }
 }
