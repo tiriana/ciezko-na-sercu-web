@@ -1,3 +1,11 @@
+## [1.89.1](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.89.0...v1.89.1) (2026-11-25)
+
+### Bug Fixes
+
+* intro w nightly instaluje ffmpeg ([#123](https://github.com/tiriana/ciezko-na-sercu-web/issues/123)) ([9b29881](https://github.com/tiriana/ciezko-na-sercu-web/commit/9b29881994fa69a34cefbdbafcde3ea6648adf64))
+* rozpoznane utwory Shazamem (45691981528) ([f3e10bb](https://github.com/tiriana/ciezko-na-sercu-web/commit/f3e10bb4855a87ce12848e92caac158f593246a9))
+* streszczenia i nazwy wejść (45694012147) ([d7627b5](https://github.com/tiriana/ciezko-na-sercu-web/commit/d7627b50d43baea4e013b84923147eb4f5d0957a))
+
 ## [1.89.0](https://github.com/tiriana/ciezko-na-sercu-web/compare/v1.88.0...v1.89.0) (2026-11-25)
 
 ### Features
