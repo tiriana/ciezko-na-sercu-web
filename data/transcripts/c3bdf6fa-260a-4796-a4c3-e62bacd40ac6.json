@@ -1,0 +1,3345 @@
+{
+  "version": 1,
+  "episodeId": "c3bdf6fa-260a-4796-a4c3-e62bacd40ac6",
+  "provider": "whisper-cpp",
+  "model": "large-v3-turbo-q5_0",
+  "language": "pl",
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
+  "windows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 12.04
+    },
+    {
+      "index": 1,
+      "start": 277.85,
+      "end": 338.53
+    },
+    {
+      "index": 2,
+      "start": 550.78,
+      "end": 631.08
+    },
+    {
+      "index": 3,
+      "start": 966.88,
+      "end": 1018.2
+    },
+    {
+      "index": 4,
+      "start": 1220.44,
+      "end": 1270.12
+    },
+    {
+      "index": 5,
+      "start": 1618.3,
+      "end": 1665.32
+    },
+    {
+      "index": 6,
+      "start": 1955.26,
+      "end": 2036.74
+    },
+    {
+      "index": 7,
+      "start": 2183,
+      "end": 2241.06
+    },
+    {
+      "index": 8,
+      "start": 2448.99,
+      "end": 2509.67
+    },
+    {
+      "index": 9,
+      "start": 2672.09,
+      "end": 2760.39
+    },
+    {
+      "index": 10,
+      "start": 3224.64,
+      "end": 3289.9
+    },
+    {
+      "index": 11,
+      "start": 3620.03,
+      "end": 3654.41
+    },
+    {
+      "index": 12,
+      "start": 3878.84,
+      "end": 3941.34
+    },
+    {
+      "index": 13,
+      "start": 4146.08,
+      "end": 4216.52
+    },
+    {
+      "index": 14,
+      "start": 4687.84,
+      "end": 4742.98
+    },
+    {
+      "index": 15,
+      "start": 4959.9,
+      "end": 4998.98
+    },
+    {
+      "index": 16,
+      "start": 5206.52,
+      "end": 5259.28
+    },
+    {
+      "index": 17,
+      "start": 5454.62,
+      "end": 5506.48
+    },
+    {
+      "index": 18,
+      "start": 5720.35,
+      "end": 5769.41
+    },
+    {
+      "index": 19,
+      "start": 6231.58,
+      "end": 6282.86
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 0.8,
+      "text": "Trójka"
+    },
+    {
+      "start": 0.8,
+      "end": 4.03,
+      "text": "Program Trzeci Polskiego"
+    },
+    {
+      "start": 4.03,
+      "end": 4.82,
+      "text": "Radia"
+    },
+    {
+      "start": 4.82,
+      "end": 12.04,
+      "text": "Ciężko na sercu"
+    },
+    {
+      "start": 277.85,
+      "end": 279.11,
+      "text": "Półmłodzieżowy"
+    },
+    {
+      "start": 279.11,
+      "end": 280.64,
+      "text": "mentor zachęcał nas"
+    },
+    {
+      "start": 280.64,
+      "end": 282.38,
+      "text": "swoim nowym singlem,"
+    },
+    {
+      "start": 282.38,
+      "end": 283.97,
+      "text": "żeby robić to po"
+    },
+    {
+      "start": 283.97,
+      "end": 285.09,
+      "text": "diabelsku."
+    },
+    {
+      "start": 285.37,
+      "end": 286.65,
+      "text": "Do it like devil."
+    },
+    {
+      "start": 286.99,
+      "end": 288.48,
+      "text": "Cenną radę przyjmujemy"
+    },
+    {
+      "start": 288.48,
+      "end": 289.93,
+      "text": "i zapewniamy panie"
+    },
+    {
+      "start": 289.93,
+      "end": 292.05,
+      "text": "mentor, że my tu wciężko"
+    },
+    {
+      "start": 292.05,
+      "end": 293.56,
+      "text": "na sercu dokładamy"
+    },
+    {
+      "start": 293.56,
+      "end": 294.93,
+      "text": "wszelkich starań."
+    },
+    {
+      "start": 295.69,
+      "end": 296.5,
+      "text": "Dzisiaj na przykład"
+    },
+    {
+      "start": 296.5,
+      "end": 298.26,
+      "text": "przygotowaliśmy dwie"
+    },
+    {
+      "start": 298.26,
+      "end": 299.64,
+      "text": "godziny hałasu ze"
+    },
+    {
+      "start": 299.64,
+      "end": 301.85,
+      "text": "znakiem jakości wyłącznie"
+    },
+    {
+      "start": 301.85,
+      "end": 303.75,
+      "text": "krajowej produkcji."
+    },
+    {
+      "start": 303.75,
+      "end": 305.02,
+      "text": "Nazywam się Jarek"
+    },
+    {
+      "start": 305.02,
+      "end": 306.2,
+      "text": "Szubrycht i będę"
+    },
+    {
+      "start": 306.2,
+      "end": 307.96,
+      "text": "wam te piosenki puszczał"
+    },
+    {
+      "start": 307.96,
+      "end": 310.07,
+      "text": "i trochę o nich opowiadał,"
+    },
+    {
+      "start": 310.07,
+      "end": 311.45,
+      "text": "a wydawcą audycji"
+    },
+    {
+      "start": 311.45,
+      "end": 313.57,
+      "text": "jest Mariusz Owczarek."
+    },
+    {
+      "start": 314.33,
+      "end": 315.59,
+      "text": "Mentor zapowiadający"
+    },
+    {
+      "start": 315.59,
+      "end": 317.59,
+      "text": "skocznym singlem swój"
+    },
+    {
+      "start": 317.59,
+      "end": 319.81,
+      "text": "nowy album zatytułowany"
+    },
+    {
+      "start": 319.81,
+      "end": 321.51,
+      "text": "Horns, Hooves and"
+    },
+    {
+      "start": 321.51,
+      "end": 323.51,
+      "text": "Horrors pięknie nam"
+    },
+    {
+      "start": 323.51,
+      "end": 325.77,
+      "text": "ten wieczór otworzył."
+    },
+    {
+      "start": 325.77,
+      "end": 326.9,
+      "text": "A teraz coś z"
+    },
+    {
+      "start": 326.9,
+      "end": 329.05,
+      "text": "zupełnie innej beczki"
+    },
+    {
+      "start": 329.05,
+      "end": 330.51,
+      "text": "było o diable,"
+    },
+    {
+      "start": 330.51,
+      "end": 332.77,
+      "text": "będzie o Lucyferze."
+    },
+    {
+      "start": 333.75,
+      "end": 335.93,
+      "text": "Lucifer Effect to"
+    },
+    {
+      "start": 335.93,
+      "end": 338.53,
+      "text": "utwór zespołu Lancet."
+    },
+    {
+      "start": 550.78,
+      "end": 551.93,
+      "text": "Kompozycja była"
+    },
+    {
+      "start": 551.93,
+      "end": 553.32,
+      "text": "instrumentalna,"
+    },
+    {
+      "start": 553.32,
+      "end": 554.71,
+      "text": "więc nie wiem tego"
+    },
+    {
+      "start": 554.71,
+      "end": 556.84,
+      "text": "na pewno, ale zgaduję,"
+    },
+    {
+      "start": 556.84,
+      "end": 558.8,
+      "text": "że Lancet nie myślał"
+    },
+    {
+      "start": 558.8,
+      "end": 560.4,
+      "text": "o żadnych piekielnych,"
+    },
+    {
+      "start": 560.4,
+      "end": 561.57,
+      "text": "nadnaturalnych"
+    },
+    {
+      "start": 561.57,
+      "end": 563.05,
+      "text": "sprawkach, tworząc"
+    },
+    {
+      "start": 563.05,
+      "end": 563.94,
+      "text": "ten utwór."
+    },
+    {
+      "start": 564.14,
+      "end": 566.16,
+      "text": "Tytułowy efekt Lucyfera"
+    },
+    {
+      "start": 566.16,
+      "end": 567.97,
+      "text": "to koncepcja i zarazem"
+    },
+    {
+      "start": 567.97,
+      "end": 569.77,
+      "text": "tytuł głośnej książki"
+    },
+    {
+      "start": 569.77,
+      "end": 571.5,
+      "text": "słynnego psychologa"
+    },
+    {
+      "start": 571.5,
+      "end": 573.03,
+      "text": "Filipa Zimbardo,"
+    },
+    {
+      "start": 573.03,
+      "end": 574.36,
+      "text": "który wyjaśnia w"
+    },
+    {
+      "start": 574.36,
+      "end": 576.17,
+      "text": "niej, jak pod wpływem"
+    },
+    {
+      "start": 576.17,
+      "end": 578.09,
+      "text": "różnych czynników,"
+    },
+    {
+      "start": 578.09,
+      "end": 579.63,
+      "text": "na przykład nacisków"
+    },
+    {
+      "start": 579.63,
+      "end": 581.87,
+      "text": "społecznych, ludzie"
+    },
+    {
+      "start": 581.87,
+      "end": 583.37,
+      "text": "z gruntu dobrzy o"
+    },
+    {
+      "start": 583.37,
+      "end": 585.38,
+      "text": "prostych i twardych,"
+    },
+    {
+      "start": 585.38,
+      "end": 587.89,
+      "text": "zdawałoby się kręgosłupach"
+    },
+    {
+      "start": 587.89,
+      "end": 589.96,
+      "text": "moralnych, czynią zło."
+    },
+    {
+      "start": 589.96,
+      "end": 592.08,
+      "text": "Lucifer Effect zapowiada"
+    },
+    {
+      "start": 592.08,
+      "end": 593.71,
+      "text": "trzecią płytę grupy"
+    },
+    {
+      "start": 593.71,
+      "end": 595.61,
+      "text": "Lancet, zatytułowaną"
+    },
+    {
+      "start": 595.61,
+      "end": 597.24,
+      "text": "Don't Trust, na"
+    },
+    {
+      "start": 597.24,
+      "end": 598.39,
+      "text": "którą będę czekał"
+    },
+    {
+      "start": 598.39,
+      "end": 599.92,
+      "text": "niecierpliwie, a"
+    },
+    {
+      "start": 599.92,
+      "end": 601.83,
+      "text": "teraz proponuję powrót"
+    },
+    {
+      "start": 601.83,
+      "end": 603.45,
+      "text": "do bardziej żwawego"
+    },
+    {
+      "start": 603.45,
+      "end": 604.6,
+      "text": "grania, choć"
+    },
+    {
+      "start": 604.6,
+      "end": 606.72,
+      "text": "jeszcze nie będzie."
+    },
+    {
+      "start": 607.22,
+      "end": 608.02,
+      "text": "Brutalnie jeszcze"
+    },
+    {
+      "start": 608.02,
+      "end": 609.72,
+      "text": "przez chwilę posłuchamy"
+    },
+    {
+      "start": 609.72,
+      "end": 611.84,
+      "text": "rzeczy na tyle przystępnych,"
+    },
+    {
+      "start": 611.84,
+      "end": 613.22,
+      "text": "żeby nie wystraszyć"
+    },
+    {
+      "start": 613.22,
+      "end": 614.53,
+      "text": "od razu wszystkich"
+    },
+    {
+      "start": 614.53,
+      "end": 616.33,
+      "text": "przypadkowych słuchaczy"
+    },
+    {
+      "start": 616.33,
+      "end": 617.86,
+      "text": "ciężko na sercu."
+    },
+    {
+      "start": 617.86,
+      "end": 619.39,
+      "text": "Krakowska grupa Acid"
+    },
+    {
+      "start": 619.39,
+      "end": 620.93,
+      "text": "Sitter przypomniała"
+    },
+    {
+      "start": 620.93,
+      "end": 622.12,
+      "text": "o sobie z singlem"
+    },
+    {
+      "start": 622.12,
+      "end": 623.31,
+      "text": "Hall of Mirrors i"
+    },
+    {
+      "start": 623.31,
+      "end": 624.51,
+      "text": "bardzo miło z ich"
+    },
+    {
+      "start": 624.51,
+      "end": 625.97,
+      "text": "strony, bo jest jak"
+    },
+    {
+      "start": 625.97,
+      "end": 627.95,
+      "text": "zwykle psychodelicznie,"
+    },
+    {
+      "start": 627.95,
+      "end": 629.5,
+      "text": "kolorowo, transowo"
+    },
+    {
+      "start": 629.5,
+      "end": 631.08,
+      "text": "i kwasyczalnie."
+    },
+    {
+      "start": 966.88,
+      "end": 968.86,
+      "text": "Warszawski zespół Lishaj"
+    },
+    {
+      "start": 968.86,
+      "end": 970.75,
+      "text": "obchodził w listopadzie"
+    },
+    {
+      "start": 970.75,
+      "end": 972.52,
+      "text": "trzydzieste urodziny"
+    },
+    {
+      "start": 972.52,
+      "end": 974.82,
+      "text": "wszystkiego najlepszego."
+    },
+    {
+      "start": 975.2,
+      "end": 976.32,
+      "text": "Z tej okazji grupa"
+    },
+    {
+      "start": 976.32,
+      "end": 978.14,
+      "text": "zrobiła sobie i fanom"
+    },
+    {
+      "start": 978.14,
+      "end": 979.64,
+      "text": "prezent w postaci"
+    },
+    {
+      "start": 979.64,
+      "end": 981.56,
+      "text": "podwójnego singla,"
+    },
+    {
+      "start": 981.72,
+      "end": 982.74,
+      "text": "którego bardziej"
+    },
+    {
+      "start": 982.74,
+      "end": 984.41,
+      "text": "dziarską rock'n'rollową"
+    },
+    {
+      "start": 984.41,
+      "end": 985.49,
+      "text": "stronę za chwilę"
+    },
+    {
+      "start": 985.49,
+      "end": 986.94,
+      "text": "Wam przedstawię."
+    },
+    {
+      "start": 986.94,
+      "end": 988.35,
+      "text": "Rzecz jest o tym,"
+    },
+    {
+      "start": 988.35,
+      "end": 990.04,
+      "text": "że święci nie pracują"
+    },
+    {
+      "start": 990.04,
+      "end": 991.61,
+      "text": "w piątki i zawiera"
+    },
+    {
+      "start": 991.61,
+      "end": 993.98,
+      "text": "bardzo rzadkie zjawisko"
+    },
+    {
+      "start": 993.98,
+      "end": 995.44,
+      "text": "w polskim metalu"
+    },
+    {
+      "start": 995.44,
+      "end": 996.82,
+      "text": "i okolicach, może"
+    },
+    {
+      "start": 996.82,
+      "end": 998.02,
+      "text": "nawet nie tylko w"
+    },
+    {
+      "start": 998.02,
+      "end": 999.3,
+      "text": "polskim, tylko w"
+    },
+    {
+      "start": 999.3,
+      "end": 1000.62,
+      "text": "metalu w ogóle,"
+    },
+    {
+      "start": 1000.62,
+      "end": 1018.2,
+      "text": "czyli solo na"
+    },
+    {
+      "start": 1220.44,
+      "end": 1221.79,
+      "text": "Oczywiście nie było"
+    },
+    {
+      "start": 1221.79,
+      "end": 1223.07,
+      "text": "to solo na organach"
+    },
+    {
+      "start": 1223.07,
+      "end": 1224.39,
+      "text": "wewnętrznych, to"
+    },
+    {
+      "start": 1224.39,
+      "end": 1225.71,
+      "text": "nie gore death"
+    },
+    {
+      "start": 1225.71,
+      "end": 1226.62,
+      "text": "metal."
+    },
+    {
+      "start": 1226.62,
+      "end": 1228.38,
+      "text": "Leash Eye śpiewali"
+    },
+    {
+      "start": 1228.38,
+      "end": 1230.51,
+      "text": "nam i grali o świętych,"
+    },
+    {
+      "start": 1230.51,
+      "end": 1232.67,
+      "text": "to teraz dla równowagi"
+    },
+    {
+      "start": 1232.67,
+      "end": 1234.72,
+      "text": "będzie o Wiedźmie."
+    },
+    {
+      "start": 1235.06,
+      "end": 1236.59,
+      "text": "A konkretnie o znaku"
+    },
+    {
+      "start": 1236.59,
+      "end": 1237.72,
+      "text": "Wiedźmy."
+    },
+    {
+      "start": 1238.36,
+      "end": 1239.29,
+      "text": "Sign of the Witch"
+    },
+    {
+      "start": 1239.29,
+      "end": 1241.06,
+      "text": "to tytułowy utwór z"
+    },
+    {
+      "start": 1241.06,
+      "end": 1243.51,
+      "text": "nowej płyty pleszewskiej"
+    },
+    {
+      "start": 1243.51,
+      "end": 1245,
+      "text": "grupy Hydra,"
+    },
+    {
+      "start": 1245.2,
+      "end": 1247.41,
+      "text": "która z gracją pełznie"
+    },
+    {
+      "start": 1247.41,
+      "end": 1249.09,
+      "text": "od protometalu do"
+    },
+    {
+      "start": 1249.09,
+      "end": 1250.8,
+      "text": "dumu i z powrotem,"
+    },
+    {
+      "start": 1250.8,
+      "end": 1252.83,
+      "text": "a wszystko to unurzane"
+    },
+    {
+      "start": 1252.83,
+      "end": 1255.91,
+      "text": "jest, utytłane w okultystycznej"
+    },
+    {
+      "start": 1255.91,
+      "end": 1256.8,
+      "text": "otoczce"
+    },
+    {
+      "start": 1256.8,
+      "end": 1258.65,
+      "text": "przypominającej wczesną"
+    },
+    {
+      "start": 1258.65,
+      "end": 1259.83,
+      "text": "twórczość Black"
+    },
+    {
+      "start": 1259.83,
+      "end": 1260.72,
+      "text": "Sabbath."
+    },
+    {
+      "start": 1261.26,
+      "end": 1262.07,
+      "text": "Niby nic nowego,"
+    },
+    {
+      "start": 1262.07,
+      "end": 1263.35,
+      "text": "ale wszystko tak"
+    },
+    {
+      "start": 1263.35,
+      "end": 1265.28,
+      "text": "pięknie się tu zgadza,"
+    },
+    {
+      "start": 1265.4,
+      "end": 1266.56,
+      "text": "że jak już się puści"
+    },
+    {
+      "start": 1266.56,
+      "end": 1268,
+      "text": "tę nową płytę Hydry,"
+    },
+    {
+      "start": 1268,
+      "end": 1269.16,
+      "text": "to trudno się z nią"
+    },
+    {
+      "start": 1269.16,
+      "end": 1270.12,
+      "text": "rozwołać."
+    },
+    {
+      "start": 1618.3,
+      "end": 1619.58,
+      "text": "której wysłuchaliśmy"
+    },
+    {
+      "start": 1619.58,
+      "end": 1621.21,
+      "text": "przed chwilą, brzmiała"
+    },
+    {
+      "start": 1621.21,
+      "end": 1622.44,
+      "text": "bardzo rasowo,"
+    },
+    {
+      "start": 1623.08,
+      "end": 1624.85,
+      "text": "ale zarazem retro,"
+    },
+    {
+      "start": 1624.85,
+      "end": 1626.62,
+      "text": "natomiast warszawska"
+    },
+    {
+      "start": 1626.62,
+      "end": 1629.14,
+      "text": "grupa Head of Cassandra,"
+    },
+    {
+      "start": 1629.48,
+      "end": 1630.75,
+      "text": "choć czerpie soki z"
+    },
+    {
+      "start": 1630.75,
+      "end": 1632.66,
+      "text": "tych samych źródeł,"
+    },
+    {
+      "start": 1632.66,
+      "end": 1634.35,
+      "text": "brzmi zupełnie"
+    },
+    {
+      "start": 1634.35,
+      "end": 1635.62,
+      "text": "współcześnie,"
+    },
+    {
+      "start": 1635.62,
+      "end": 1638.04,
+      "text": "bo częścią ich tożsamości"
+    },
+    {
+      "start": 1638.04,
+      "end": 1639.8,
+      "text": "są również okolice"
+    },
+    {
+      "start": 1639.8,
+      "end": 1641.22,
+      "text": "sludge metalu i"
+    },
+    {
+      "start": 1641.22,
+      "end": 1642.64,
+      "text": "hardcore punk'a,"
+    },
+    {
+      "start": 1643.24,
+      "end": 1644.49,
+      "text": "jest tak brzydko,"
+    },
+    {
+      "start": 1644.49,
+      "end": 1646.46,
+      "text": "że aż pięknie, jest"
+    },
+    {
+      "start": 1646.46,
+      "end": 1648.08,
+      "text": "surowo i ciężko,"
+    },
+    {
+      "start": 1648.42,
+      "end": 1650.19,
+      "text": "ale Head of Cassandra"
+    },
+    {
+      "start": 1650.19,
+      "end": 1651.78,
+      "text": "potrafi też zerwać"
+    },
+    {
+      "start": 1651.78,
+      "end": 1653.48,
+      "text": "się do sprintu."
+    },
+    {
+      "start": 1653.7,
+      "end": 1655.47,
+      "text": "Ich nowa druga epka"
+    },
+    {
+      "start": 1655.47,
+      "end": 1657.05,
+      "text": "nosi tytuł Trup, a"
+    },
+    {
+      "start": 1657.05,
+      "end": 1658.85,
+      "text": "ja wybrałem dla was"
+    },
+    {
+      "start": 1658.85,
+      "end": 1660.68,
+      "text": "piosenkę Brud."
+    },
+    {
+      "start": 1660.92,
+      "end": 1662.33,
+      "text": "Jest to zatem Brud"
+    },
+    {
+      "start": 1662.33,
+      "end": 1664.31,
+      "text": "z trupa. Bawcie się"
+    },
+    {
+      "start": 1664.31,
+      "end": 1665.32,
+      "text": "dobrze."
+    },
+    {
+      "start": 1955.26,
+      "end": 1957.05,
+      "text": "Słuchaliśmy utworu"
+    },
+    {
+      "start": 1957.05,
+      "end": 1959.05,
+      "text": "z płyty Trup, to"
+    },
+    {
+      "start": 1959.05,
+      "end": 1960.36,
+      "text": "teraz zagra dla was"
+    },
+    {
+      "start": 1960.36,
+      "end": 1962.04,
+      "text": "grób. Nie żartuję."
+    },
+    {
+      "start": 1962.62,
+      "end": 1963.36,
+      "text": "Te same słowa po"
+    },
+    {
+      "start": 1963.36,
+      "end": 1965.5,
+      "text": "angielsku często brzmią"
+    },
+    {
+      "start": 1965.5,
+      "end": 1967.44,
+      "text": "dostojnie, poważnie"
+    },
+    {
+      "start": 1967.44,
+      "end": 1969.17,
+      "text": "i światowo, a po"
+    },
+    {
+      "start": 1969.17,
+      "end": 1971.42,
+      "text": "polsku po prostu"
+    },
+    {
+      "start": 1971.42,
+      "end": 1973.08,
+      "text": "swojsko."
+    },
+    {
+      "start": 1973.08,
+      "end": 1974.51,
+      "text": "Co może mieć swoje"
+    },
+    {
+      "start": 1974.51,
+      "end": 1975.65,
+      "text": "dobre albo złe"
+    },
+    {
+      "start": 1975.65,
+      "end": 1977.17,
+      "text": "strony, czasem ta"
+    },
+    {
+      "start": 1977.17,
+      "end": 1978.96,
+      "text": "swojskość sprawia,"
+    },
+    {
+      "start": 1978.96,
+      "end": 1980.78,
+      "text": "że jest jeszcze mocniej"
+    },
+    {
+      "start": 1980.78,
+      "end": 1982.94,
+      "text": "i bardziej przerażająco,"
+    },
+    {
+      "start": 1982.94,
+      "end": 1984.07,
+      "text": "a czasem wręcz"
+    },
+    {
+      "start": 1984.07,
+      "end": 1985.48,
+      "text": "przeciwnie."
+    },
+    {
+      "start": 1986.28,
+      "end": 1987.07,
+      "text": "Grób chyba należy"
+    },
+    {
+      "start": 1987.07,
+      "end": 1989.81,
+      "text": "do tej pierwszej kategorii,"
+    },
+    {
+      "start": 1989.81,
+      "end": 1991.19,
+      "text": "krótko, mocno i"
+    },
+    {
+      "start": 1991.19,
+      "end": 1992.72,
+      "text": "konkretnie."
+    },
+    {
+      "start": 1992.72,
+      "end": 1994.44,
+      "text": "Ich muzyka też jest"
+    },
+    {
+      "start": 1994.44,
+      "end": 1996.51,
+      "text": "taka, o czym możecie"
+    },
+    {
+      "start": 1996.51,
+      "end": 1998.82,
+      "text": "się przekonać słuchając"
+    },
+    {
+      "start": 1998.82,
+      "end": 2000.64,
+      "text": "albumu Ikonoklasta,"
+    },
+    {
+      "start": 2000.64,
+      "end": 2002.68,
+      "text": "pierwszej dużej płyty"
+    },
+    {
+      "start": 2002.68,
+      "end": 2005,
+      "text": "w dorobku wrocławskiego"
+    },
+    {
+      "start": 2005,
+      "end": 2006.1,
+      "text": "grobu."
+    },
+    {
+      "start": 2006.88,
+      "end": 2007.95,
+      "text": "Fundamentem jest tu"
+    },
+    {
+      "start": 2007.95,
+      "end": 2010.06,
+      "text": "traż ze starej szkoły,"
+    },
+    {
+      "start": 2010.06,
+      "end": 2011.73,
+      "text": "raczej ten surowy"
+    },
+    {
+      "start": 2011.73,
+      "end": 2013.58,
+      "text": "niż techniczny."
+    },
+    {
+      "start": 2013.58,
+      "end": 2015.36,
+      "text": "Czasem zespół wypuści"
+    },
+    {
+      "start": 2015.36,
+      "end": 2016.75,
+      "text": "się w stronę Death"
+    },
+    {
+      "start": 2016.75,
+      "end": 2018.5,
+      "text": "Metalu, innym razem"
+    },
+    {
+      "start": 2018.5,
+      "end": 2019.68,
+      "text": "pokaże swoje"
+    },
+    {
+      "start": 2019.68,
+      "end": 2022.1,
+      "text": "bardziej punkowe oblicze."
+    },
+    {
+      "start": 2022.7,
+      "end": 2023.7,
+      "text": "Ciekawostką jest"
+    },
+    {
+      "start": 2023.7,
+      "end": 2025.51,
+      "text": "nawiązywanie przez"
+    },
+    {
+      "start": 2025.51,
+      "end": 2027.01,
+      "text": "grup w tekstach i"
+    },
+    {
+      "start": 2027.01,
+      "end": 2028.8,
+      "text": "oprawie wizualnej"
+    },
+    {
+      "start": 2028.8,
+      "end": 2030.44,
+      "text": "do mrocznych stron"
+    },
+    {
+      "start": 2030.44,
+      "end": 2031.54,
+      "text": "PRL-u."
+    },
+    {
+      "start": 2032.26,
+      "end": 2032.9,
+      "text": "Kto by pomyślał, że"
+    },
+    {
+      "start": 2032.9,
+      "end": 2034.66,
+      "text": "to może być interesująca"
+    },
+    {
+      "start": 2034.66,
+      "end": 2036.74,
+      "text": "pożywka dla wściekłowców."
+    },
+    {
+      "start": 2183,
+      "end": 2184.53,
+      "text": "Jeśli ten grób wydał"
+    },
+    {
+      "start": 2184.53,
+      "end": 2186.52,
+      "text": "wam się zbyt nowoczesny,"
+    },
+    {
+      "start": 2186.52,
+      "end": 2188.65,
+      "text": "melodyjny i dobrze"
+    },
+    {
+      "start": 2188.65,
+      "end": 2191.44,
+      "text": "ułożony, to prawdopodobnie"
+    },
+    {
+      "start": 2191.44,
+      "end": 2192.77,
+      "text": "jesteście gotowi na"
+    },
+    {
+      "start": 2192.77,
+      "end": 2194.18,
+      "text": "Throat Cutter."
+    },
+    {
+      "start": 2194.18,
+      "end": 2195.68,
+      "text": "Tak nazywa się trio"
+    },
+    {
+      "start": 2195.68,
+      "end": 2197.08,
+      "text": "ze Śląska, które"
+    },
+    {
+      "start": 2197.08,
+      "end": 2198.59,
+      "text": "parę miesięcy temu"
+    },
+    {
+      "start": 2198.59,
+      "end": 2200.1,
+      "text": "wydało epkę Killed"
+    },
+    {
+      "start": 2200.1,
+      "end": 2201.18,
+      "text": "by Speed."
+    },
+    {
+      "start": 2202.1,
+      "end": 2203.7,
+      "text": "Ale brzmi to, jakby"
+    },
+    {
+      "start": 2203.7,
+      "end": 2205.19,
+      "text": "materiał powstał w"
+    },
+    {
+      "start": 2205.19,
+      "end": 2206.68,
+      "text": "jakiejś zatęchłej"
+    },
+    {
+      "start": 2206.68,
+      "end": 2208.57,
+      "text": "piwnicy 40 lat temu"
+    },
+    {
+      "start": 2208.57,
+      "end": 2211.1,
+      "text": "i tak, to jest komplement."
+    },
+    {
+      "start": 2211.68,
+      "end": 2213.21,
+      "text": "Prymitywny, wulgarny"
+    },
+    {
+      "start": 2213.21,
+      "end": 2215.06,
+      "text": "black speed metal,"
+    },
+    {
+      "start": 2215.06,
+      "end": 2216.62,
+      "text": "który jak bimber"
+    },
+    {
+      "start": 2216.62,
+      "end": 2218.39,
+      "text": "nie ma smakować, ma"
+    },
+    {
+      "start": 2218.39,
+      "end": 2220.22,
+      "text": "sponiewierać."
+    },
+    {
+      "start": 2220.98,
+      "end": 2221.39,
+      "text": "Nie dla każdego"
+    },
+    {
+      "start": 2221.39,
+      "end": 2223.46,
+      "text": "jest to zatem propozycja,"
+    },
+    {
+      "start": 2223.46,
+      "end": 2224.9,
+      "text": "ale ja czasem lubię"
+    },
+    {
+      "start": 2224.9,
+      "end": 2227,
+      "text": "takie proste przyjemności"
+    },
+    {
+      "start": 2227,
+      "end": 2228.76,
+      "text": "i mam tu na myśli"
+    },
+    {
+      "start": 2228.76,
+      "end": 2230.25,
+      "text": "muzykę absolutnie"
+    },
+    {
+      "start": 2230.25,
+      "end": 2231.12,
+      "text": "niewspomniany."
+    },
+    {
+      "start": 2231.12,
+      "end": 2232.44,
+      "text": "Wcześniej trunek."
+    },
+    {
+      "start": 2232.44,
+      "end": 2234.45,
+      "text": "W dzisiejszym koncercie"
+    },
+    {
+      "start": 2234.45,
+      "end": 2236.25,
+      "text": "życzeń zaśpiewa zatem"
+    },
+    {
+      "start": 2236.25,
+      "end": 2237.99,
+      "text": "dla was Throat Cutter"
+    },
+    {
+      "start": 2237.99,
+      "end": 2240.56,
+      "text": "piosenkę o kamieniowaniu."
+    },
+    {
+      "start": 2240.56,
+      "end": 2241.06,
+      "text": "Muzyka"
+    },
+    {
+      "start": 2448.99,
+      "end": 2450.51,
+      "text": "Wrocławski The Dog"
+    },
+    {
+      "start": 2450.51,
+      "end": 2451.92,
+      "text": "przeszedł ciekawą"
+    },
+    {
+      "start": 2451.92,
+      "end": 2453.79,
+      "text": "ewolucję od wściekłego"
+    },
+    {
+      "start": 2453.79,
+      "end": 2454.9,
+      "text": "na półdzikiego"
+    },
+    {
+      "start": 2454.9,
+      "end": 2456.49,
+      "text": "grindowego kundla,"
+    },
+    {
+      "start": 2456.49,
+      "end": 2457.31,
+      "text": "który gryzł"
+    },
+    {
+      "start": 2457.31,
+      "end": 2459.04,
+      "text": "wszystkich, których"
+    },
+    {
+      "start": 2459.04,
+      "end": 2460.5,
+      "text": "dopadł, a jak kogoś"
+    },
+    {
+      "start": 2460.5,
+      "end": 2462.23,
+      "text": "nie dopadł, to przynajmniej"
+    },
+    {
+      "start": 2462.23,
+      "end": 2462.93,
+      "text": "obszczekał,"
+    },
+    {
+      "start": 2462.93,
+      "end": 2464.7,
+      "text": "do dobrze ułożonego"
+    },
+    {
+      "start": 2464.7,
+      "end": 2466.86,
+      "text": "rasowego medalisty,"
+    },
+    {
+      "start": 2466.86,
+      "end": 2468.55,
+      "text": "który owszem potrafi"
+    },
+    {
+      "start": 2468.55,
+      "end": 2470.03,
+      "text": "dziabnąć kiedy"
+    },
+    {
+      "start": 2470.03,
+      "end": 2471.47,
+      "text": "trzeba, ale umie"
+    },
+    {
+      "start": 2471.47,
+      "end": 2472.93,
+      "text": "też spacerować z"
+    },
+    {
+      "start": 2472.93,
+      "end": 2474.7,
+      "text": "gracją, podać łapę"
+    },
+    {
+      "start": 2474.7,
+      "end": 2476.16,
+      "text": "i zna parę innych"
+    },
+    {
+      "start": 2476.16,
+      "end": 2478.63,
+      "text": "efektownych sztuczek."
+    },
+    {
+      "start": 2478.63,
+      "end": 2480.66,
+      "text": "W takim post-hardcore"
+    },
+    {
+      "start": 2480.66,
+      "end": 2482.56,
+      "text": "ze spawanym z metalem"
+    },
+    {
+      "start": 2482.56,
+      "end": 2484.05,
+      "text": "The Dog nie mają w"
+    },
+    {
+      "start": 2484.05,
+      "end": 2485.54,
+      "text": "Polsce licznej i"
+    },
+    {
+      "start": 2485.54,
+      "end": 2487.8,
+      "text": "mocnej konkurencji,"
+    },
+    {
+      "start": 2487.8,
+      "end": 2489.05,
+      "text": "ale nie tylko."
+    },
+    {
+      "start": 2489.57,
+      "end": 2491.52,
+      "text": "Dlatego warto się nimi"
+    },
+    {
+      "start": 2491.52,
+      "end": 2493.73,
+      "text": "interesować, że na"
+    },
+    {
+      "start": 2493.73,
+      "end": 2496.27,
+      "text": "bezrybiu i dog ryba."
+    },
+    {
+      "start": 2497.11,
+      "end": 2498.48,
+      "text": "Teraz na przykład świetnym"
+    },
+    {
+      "start": 2498.48,
+      "end": 2500.07,
+      "text": "singlem, w którego"
+    },
+    {
+      "start": 2500.07,
+      "end": 2502.12,
+      "text": "tytule The Dog twierdzą,"
+    },
+    {
+      "start": 2502.12,
+      "end": 2504.43,
+      "text": "że każdy jest skinheadem,"
+    },
+    {
+      "start": 2504.43,
+      "end": 2505.85,
+      "text": "zapowiadają nowy"
+    },
+    {
+      "start": 2505.85,
+      "end": 2506.65,
+      "text": "album."
+    },
+    {
+      "start": 2506.65,
+      "end": 2507.82,
+      "text": "Ale ta duża płyta"
+    },
+    {
+      "start": 2507.82,
+      "end": 2509.24,
+      "text": "dopiero w przyszłym"
+    },
+    {
+      "start": 2509.24,
+      "end": 2509.67,
+      "text": "roku."
+    },
+    {
+      "start": 2672.09,
+      "end": 2673.65,
+      "text": "Słuchacie ciężko na"
+    },
+    {
+      "start": 2673.65,
+      "end": 2675.8,
+      "text": "sercu w trójce? Dzisiaj"
+    },
+    {
+      "start": 2675.8,
+      "end": 2677.42,
+      "text": "tylko nowe polskie"
+    },
+    {
+      "start": 2677.42,
+      "end": 2679.13,
+      "text": "hałasy. Zmieniamy"
+    },
+    {
+      "start": 2679.13,
+      "end": 2680.87,
+      "text": "nastrój na zdecydowanie"
+    },
+    {
+      "start": 2680.87,
+      "end": 2682.46,
+      "text": "bardziej podniosły,"
+    },
+    {
+      "start": 2682.46,
+      "end": 2684.09,
+      "text": "wręcz patetyczny."
+    },
+    {
+      "start": 2684.09,
+      "end": 2685.8,
+      "text": "Grupa Jasmeno albo"
+    },
+    {
+      "start": 2685.8,
+      "end": 2687.51,
+      "text": "Jasmeno to obecnie"
+    },
+    {
+      "start": 2687.51,
+      "end": 2689.21,
+      "text": "zespół metalowy,"
+    },
+    {
+      "start": 2689.21,
+      "end": 2690.79,
+      "text": "ale wywodzi się z"
+    },
+    {
+      "start": 2690.79,
+      "end": 2692.51,
+      "text": "elektronicznego,"
+    },
+    {
+      "start": 2692.51,
+      "end": 2695.26,
+      "text": "solowego projektu Sławomira"
+    },
+    {
+      "start": 2695.26,
+      "end": 2697.4,
+      "text": "Nietupskiego, znanego"
+    },
+    {
+      "start": 2697.4,
+      "end": 2699.46,
+      "text": "m.in. z Northland"
+    },
+    {
+      "start": 2699.46,
+      "end": 2702.29,
+      "text": "czy Hesperus Dimension."
+    },
+    {
+      "start": 2702.65,
+      "end": 2704.38,
+      "text": "Człowiek to ambitny,"
+    },
+    {
+      "start": 2704.38,
+      "end": 2706.28,
+      "text": "zafascynowany różnymi"
+    },
+    {
+      "start": 2706.28,
+      "end": 2708.57,
+      "text": "obliczami sceny norweskiej,"
+    },
+    {
+      "start": 2708.57,
+      "end": 2709.86,
+      "text": "pewnie nie tylko"
+    },
+    {
+      "start": 2709.86,
+      "end": 2711.51,
+      "text": "tej, ale zdaje się,"
+    },
+    {
+      "start": 2711.51,
+      "end": 2712.53,
+      "text": "że tam przede"
+    },
+    {
+      "start": 2712.53,
+      "end": 2713.91,
+      "text": "wszystkim szuka i"
+    },
+    {
+      "start": 2713.91,
+      "end": 2717.13,
+      "text": "inspiracji, i współpracowników."
+    },
+    {
+      "start": 2717.13,
+      "end": 2718.9,
+      "text": "Dość powiedzieć, że"
+    },
+    {
+      "start": 2718.9,
+      "end": 2720.86,
+      "text": "na nowej płycie Jasmeno"
+    },
+    {
+      "start": 2720.86,
+      "end": 2723.09,
+      "text": "zatytułowanej Assemblage"
+    },
+    {
+      "start": 2723.09,
+      "end": 2724.77,
+      "text": "of Cinematic Idioms"
+    },
+    {
+      "start": 2724.77,
+      "end": 2727.54,
+      "text": "usłyszycie m.in. miłych"
+    },
+    {
+      "start": 2727.54,
+      "end": 2729.89,
+      "text": "panów z Dot Heimsgaard"
+    },
+    {
+      "start": 2729.89,
+      "end": 2731.03,
+      "text": "i Thorns."
+    },
+    {
+      "start": 2731.03,
+      "end": 2732.24,
+      "text": "Jest też sporo"
+    },
+    {
+      "start": 2732.24,
+      "end": 2734.97,
+      "text": "interesujących, zasłużonych"
+    },
+    {
+      "start": 2734.97,
+      "end": 2736.39,
+      "text": "postaci z naszej"
+    },
+    {
+      "start": 2736.39,
+      "end": 2737.99,
+      "text": "rodzimej sceny i"
+    },
+    {
+      "start": 2737.99,
+      "end": 2741.03,
+      "text": "cały ten tłum muzyków"
+    },
+    {
+      "start": 2741.03,
+      "end": 2742.89,
+      "text": "stworzył płytę,"
+    },
+    {
+      "start": 2742.89,
+      "end": 2744.65,
+      "text": "która jakimś dalekim"
+    },
+    {
+      "start": 2744.65,
+      "end": 2746.43,
+      "text": "echem przypomina,"
+    },
+    {
+      "start": 2746.43,
+      "end": 2749.16,
+      "text": "że u jej podstaw leży,"
+    },
+    {
+      "start": 2749.16,
+      "end": 2751.85,
+      "text": "leżał mroczny, agresywny"
+    },
+    {
+      "start": 2751.85,
+      "end": 2753.29,
+      "text": "metal, ale dziś"
+    },
+    {
+      "start": 2753.29,
+      "end": 2754.25,
+      "text": "jest to raczej"
+    },
+    {
+      "start": 2754.25,
+      "end": 2755.78,
+      "text": "metal progresywny,"
+    },
+    {
+      "start": 2755.78,
+      "end": 2757.77,
+      "text": "przeładowany nutami,"
+    },
+    {
+      "start": 2757.77,
+      "end": 2760.01,
+      "text": "pomysłami i smaczkami."
+    },
+    {
+      "start": 2760.01,
+      "end": 2760.39,
+      "text": "Dziś jest to raczej"
+    },
+    {
+      "start": 3224.64,
+      "end": 3226.51,
+      "text": "Czarny piorun walnął"
+    },
+    {
+      "start": 3226.51,
+      "end": 3227.97,
+      "text": "z jasnego nieba w"
+    },
+    {
+      "start": 3227.97,
+      "end": 3229.96,
+      "text": "Bytowie i pozostawił"
+    },
+    {
+      "start": 3229.96,
+      "end": 3231.28,
+      "text": "po sobie ślad w"
+    },
+    {
+      "start": 3231.28,
+      "end": 3233.07,
+      "text": "postaci płyty Time"
+    },
+    {
+      "start": 3233.07,
+      "end": 3234.62,
+      "text": "Obliteration."
+    },
+    {
+      "start": 3235.18,
+      "end": 3236.05,
+      "text": "Wysłuchałem jej z"
+    },
+    {
+      "start": 3236.05,
+      "end": 3237.09,
+      "text": "uwagą i muszę"
+    },
+    {
+      "start": 3237.09,
+      "end": 3238.78,
+      "text": "powiedzieć, że The"
+    },
+    {
+      "start": 3238.78,
+      "end": 3240.86,
+      "text": "Black Thunder, zespół"
+    },
+    {
+      "start": 3240.86,
+      "end": 3243.03,
+      "text": "zrzeczonego Bytowa,"
+    },
+    {
+      "start": 3243.03,
+      "end": 3245.04,
+      "text": "powinien tym materiałem"
+    },
+    {
+      "start": 3245.04,
+      "end": 3246.85,
+      "text": "awansować do czołówki"
+    },
+    {
+      "start": 3246.85,
+      "end": 3248.76,
+      "text": "polskich ciężarów."
+    },
+    {
+      "start": 3248.76,
+      "end": 3250.29,
+      "text": "Nie tylko dlatego,"
+    },
+    {
+      "start": 3250.29,
+      "end": 3251.64,
+      "text": "że to ma jakość, a"
+    },
+    {
+      "start": 3251.64,
+      "end": 3253.35,
+      "text": "ma, ale też dlatego,"
+    },
+    {
+      "start": 3253.35,
+      "end": 3254.25,
+      "text": "że The Black"
+    },
+    {
+      "start": 3254.25,
+      "end": 3255.69,
+      "text": "Thunder wydeptuje"
+    },
+    {
+      "start": 3255.69,
+      "end": 3257.19,
+      "text": "sobie przez metal"
+    },
+    {
+      "start": 3257.19,
+      "end": 3258.62,
+      "text": "własną ścieżkę."
+    },
+    {
+      "start": 3258.98,
+      "end": 3259.85,
+      "text": "Słychać w tym i"
+    },
+    {
+      "start": 3259.85,
+      "end": 3261.62,
+      "text": "Doom i może Sludge,"
+    },
+    {
+      "start": 3261.62,
+      "end": 3263.81,
+      "text": "ale czasem też klasyczny"
+    },
+    {
+      "start": 3263.81,
+      "end": 3265.16,
+      "text": "Heavy Metal, a"
+    },
+    {
+      "start": 3265.16,
+      "end": 3266.99,
+      "text": "nawet grecką szkołę"
+    },
+    {
+      "start": 3266.99,
+      "end": 3268.52,
+      "text": "Black Metalu."
+    },
+    {
+      "start": 3268.52,
+      "end": 3270.35,
+      "text": "Różne rzeczy słychać"
+    },
+    {
+      "start": 3270.35,
+      "end": 3272.31,
+      "text": "i pięknie się to składa"
+    },
+    {
+      "start": 3272.31,
+      "end": 3273.81,
+      "text": "w oryginalny styl"
+    },
+    {
+      "start": 3273.81,
+      "end": 3275.74,
+      "text": "grupy, ambitny, ale"
+    },
+    {
+      "start": 3275.74,
+      "end": 3279.02,
+      "text": "nieprzegadany, nieprzeładowany"
+    },
+    {
+      "start": 3279.02,
+      "end": 3280.3,
+      "text": "pomysłami."
+    },
+    {
+      "start": 3280.66,
+      "end": 3282.35,
+      "text": "Widziałbym i słyszałbym"
+    },
+    {
+      "start": 3282.35,
+      "end": 3283.83,
+      "text": "The Black Thunder"
+    },
+    {
+      "start": 3283.83,
+      "end": 3285.49,
+      "text": "na trasie z Mastodon"
+    },
+    {
+      "start": 3285.49,
+      "end": 3286.86,
+      "text": "czy Enslaved, a"
+    },
+    {
+      "start": 3286.86,
+      "end": 3288.8,
+      "text": "najlepiej z Oboma."
+    },
+    {
+      "start": 3289.12,
+      "end": 3289.9,
+      "text": "Trzymam kciuki."
+    },
+    {
+      "start": 3620.03,
+      "end": 3621.06,
+      "text": "Teraz będzie death"
+    },
+    {
+      "start": 3621.06,
+      "end": 3623.58,
+      "text": "metal. Brutalny, gwałtowny,"
+    },
+    {
+      "start": 3623.58,
+      "end": 3625.44,
+      "text": "ale też trochę cuchnący"
+    },
+    {
+      "start": 3625.44,
+      "end": 3627.94,
+      "text": "siarką, mocno przesiąknięty"
+    },
+    {
+      "start": 3627.94,
+      "end": 3630.61,
+      "text": "black metalowymi wpływami."
+    },
+    {
+      "start": 3630.61,
+      "end": 3631.99,
+      "text": "U nas taką hybrydę"
+    },
+    {
+      "start": 3631.99,
+      "end": 3633.71,
+      "text": "z powodzeniem tresują"
+    },
+    {
+      "start": 3633.71,
+      "end": 3635.12,
+      "text": "chociażby behemot"
+    },
+    {
+      "start": 3635.12,
+      "end": 3636.61,
+      "text": "czy hejt, więc nie"
+    },
+    {
+      "start": 3636.61,
+      "end": 3637.91,
+      "text": "widzę powodu, by"
+    },
+    {
+      "start": 3637.91,
+      "end": 3639.17,
+      "text": "nie znalazło się"
+    },
+    {
+      "start": 3639.17,
+      "end": 3640.54,
+      "text": "miejsce na scenie"
+    },
+    {
+      "start": 3640.54,
+      "end": 3642.67,
+      "text": "również dla Balzagot."
+    },
+    {
+      "start": 3643.03,
+      "end": 3645.14,
+      "text": "Tegoroczny drugi"
+    },
+    {
+      "start": 3645.14,
+      "end": 3647.57,
+      "text": "album z zespołu Skostrzynia"
+    },
+    {
+      "start": 3647.57,
+      "end": 3649.43,
+      "text": "nad Odro nosi tytuł"
+    },
+    {
+      "start": 3649.43,
+      "end": 3651.22,
+      "text": "No God No Savior i"
+    },
+    {
+      "start": 3651.22,
+      "end": 3652.99,
+      "text": "posłuchamy utworu"
+    },
+    {
+      "start": 3652.99,
+      "end": 3654.41,
+      "text": "tytułowego."
+    },
+    {
+      "start": 3878.84,
+      "end": 3880.26,
+      "text": "Słuchacie, ciężko"
+    },
+    {
+      "start": 3880.26,
+      "end": 3881.98,
+      "text": "na sercu w trójce,"
+    },
+    {
+      "start": 3881.98,
+      "end": 3884.04,
+      "text": "było to, było owo,"
+    },
+    {
+      "start": 3884.04,
+      "end": 3885.77,
+      "text": "było to i owo, ale"
+    },
+    {
+      "start": 3885.77,
+      "end": 3887.74,
+      "text": "skoro dzisiaj audycja"
+    },
+    {
+      "start": 3887.74,
+      "end": 3889.56,
+      "text": "z polskim metalem,"
+    },
+    {
+      "start": 3889.56,
+      "end": 3892.01,
+      "text": "to oczywiście dominować"
+    },
+    {
+      "start": 3892.01,
+      "end": 3893.92,
+      "text": "musi black metal,"
+    },
+    {
+      "start": 3893.92,
+      "end": 3895.72,
+      "text": "bo taki mamy klimat,"
+    },
+    {
+      "start": 3895.72,
+      "end": 3897.43,
+      "text": "w tym jesteśmy mocni"
+    },
+    {
+      "start": 3897.43,
+      "end": 3898.84,
+      "text": "i inaczej być nie"
+    },
+    {
+      "start": 3898.84,
+      "end": 3899.62,
+      "text": "chcę."
+    },
+    {
+      "start": 3899.62,
+      "end": 3901.3,
+      "text": "A zatem już do końca"
+    },
+    {
+      "start": 3901.3,
+      "end": 3903.07,
+      "text": "audycji usłyszycie"
+    },
+    {
+      "start": 3903.07,
+      "end": 3904.54,
+      "text": "różne ujęcia tej"
+    },
+    {
+      "start": 3904.54,
+      "end": 3906.23,
+      "text": "estetyki, czy tej"
+    },
+    {
+      "start": 3906.23,
+      "end": 3907.61,
+      "text": "misji, jak tam"
+    },
+    {
+      "start": 3907.61,
+      "end": 3909.08,
+      "text": "sobie chcecie to"
+    },
+    {
+      "start": 3909.08,
+      "end": 3910.3,
+      "text": "nazywać."
+    },
+    {
+      "start": 3910.46,
+      "end": 3912.18,
+      "text": "Od całkiem przystępnych,"
+    },
+    {
+      "start": 3912.18,
+      "end": 3914.32,
+      "text": "melodyjnych, klimatycznych"
+    },
+    {
+      "start": 3914.32,
+      "end": 3915.93,
+      "text": "numerów, po dymiący,"
+    },
+    {
+      "start": 3915.93,
+      "end": 3917.42,
+      "text": "toksyczny gruz."
+    },
+    {
+      "start": 3918.1,
+      "end": 3920.52,
+      "text": "Dla każdego coś miłego."
+    },
+    {
+      "start": 3920.52,
+      "end": 3922.51,
+      "text": "Kącik black metalowca,"
+    },
+    {
+      "start": 3922.51,
+      "end": 3923.93,
+      "text": "zacznijmy od Kalt"
+    },
+    {
+      "start": 3923.93,
+      "end": 3925.74,
+      "text": "Windur, bo ten zespół"
+    },
+    {
+      "start": 3925.74,
+      "end": 3927.44,
+      "text": "z moich rodzinnych"
+    },
+    {
+      "start": 3927.44,
+      "end": 3928.9,
+      "text": "stron, pozdrawiam"
+    },
+    {
+      "start": 3928.9,
+      "end": 3930.49,
+      "text": "serdecznie, za"
+    },
+    {
+      "start": 3930.49,
+      "end": 3932,
+      "text": "kilka dni wyda"
+    },
+    {
+      "start": 3932,
+      "end": 3934.45,
+      "text": "swoją nową, czwartą"
+    },
+    {
+      "start": 3934.45,
+      "end": 3936.74,
+      "text": "już płytę zatytułowaną"
+    },
+    {
+      "start": 3936.74,
+      "end": 3938.82,
+      "text": "The Void of Time,"
+    },
+    {
+      "start": 3938.82,
+      "end": 3940.36,
+      "text": "która brzmi mniej"
+    },
+    {
+      "start": 3940.36,
+      "end": 3941.34,
+      "text": "więcej tak."
+    },
+    {
+      "start": 4146.08,
+      "end": 4148,
+      "text": "Kalt Windur to zespół"
+    },
+    {
+      "start": 4148,
+      "end": 4148.76,
+      "text": "trochę z Dukli,"
+    },
+    {
+      "start": 4148.76,
+      "end": 4150.14,
+      "text": "trochę z Krosna,"
+    },
+    {
+      "start": 4150.14,
+      "end": 4151.71,
+      "text": "więc najbliżsi moi"
+    },
+    {
+      "start": 4151.71,
+      "end": 4153.94,
+      "text": "sąsiedzi, ale pozostaniemy"
+    },
+    {
+      "start": 4153.94,
+      "end": 4155.14,
+      "text": "jeszcze chwilę na"
+    },
+    {
+      "start": 4155.14,
+      "end": 4156.73,
+      "text": "Podkarpaciu, choć w"
+    },
+    {
+      "start": 4156.73,
+      "end": 4158.19,
+      "text": "innej okolicy,"
+    },
+    {
+      "start": 4158.19,
+      "end": 4160.76,
+      "text": "konkretnie w Jarosławiu."
+    },
+    {
+      "start": 4160.76,
+      "end": 4162.41,
+      "text": "Pięknie nazywa się"
+    },
+    {
+      "start": 4162.41,
+      "end": 4164.05,
+      "text": "to miasto, muszę"
+    },
+    {
+      "start": 4164.05,
+      "end": 4166.05,
+      "text": "przyznać i z Jarosławia"
+    },
+    {
+      "start": 4166.05,
+      "end": 4168.03,
+      "text": "wywodzi się projekt"
+    },
+    {
+      "start": 4168.03,
+      "end": 4170.11,
+      "text": "Lamasztu, jednoosobowa"
+    },
+    {
+      "start": 4170.11,
+      "end": 4172.18,
+      "text": "horda, w której rządzi"
+    },
+    {
+      "start": 4172.18,
+      "end": 4174.68,
+      "text": "i dzieli osobnik ukrywający"
+    },
+    {
+      "start": 4174.68,
+      "end": 4176.45,
+      "text": "się pod pseudonimem"
+    },
+    {
+      "start": 4176.45,
+      "end": 4178.06,
+      "text": "Sen Wieczny."
+    },
+    {
+      "start": 4178.06,
+      "end": 4179.52,
+      "text": "To wszystko, co o"
+    },
+    {
+      "start": 4179.52,
+      "end": 4181.61,
+      "text": "nim wiem i nie próbowałem"
+    },
+    {
+      "start": 4181.61,
+      "end": 4183.68,
+      "text": "robić żadnego śledztwa,"
+    },
+    {
+      "start": 4183.68,
+      "end": 4185.31,
+      "text": "bo uważam, że jak"
+    },
+    {
+      "start": 4185.31,
+      "end": 4186.95,
+      "text": "artysta chce pozostać"
+    },
+    {
+      "start": 4186.95,
+      "end": 4188.49,
+      "text": "anonimowy albo nie"
+    },
+    {
+      "start": 4188.49,
+      "end": 4190.86,
+      "text": "chce pokazywać twarzy,"
+    },
+    {
+      "start": 4190.86,
+      "end": 4192.66,
+      "text": "to ma do tego prawo"
+    },
+    {
+      "start": 4192.66,
+      "end": 4193.99,
+      "text": "i takie autowanie"
+    },
+    {
+      "start": 4193.99,
+      "end": 4195.93,
+      "text": "zamaskowanych twórców,"
+    },
+    {
+      "start": 4195.93,
+      "end": 4197.42,
+      "text": "wbrew ich woli,"
+    },
+    {
+      "start": 4197.42,
+      "end": 4199.14,
+      "text": "całe to tropienie"
+    },
+    {
+      "start": 4199.14,
+      "end": 4201.24,
+      "text": "banksich tego świata"
+    },
+    {
+      "start": 4201.24,
+      "end": 4203.08,
+      "text": "uważam za praktykę"
+    },
+    {
+      "start": 4203.08,
+      "end": 4205.27,
+      "text": "niepotrzebną, wręcz"
+    },
+    {
+      "start": 4205.27,
+      "end": 4206.66,
+      "text": "żenującą."
+    },
+    {
+      "start": 4206.66,
+      "end": 4208.09,
+      "text": "A zatem niewiele"
+    },
+    {
+      "start": 4208.09,
+      "end": 4210.02,
+      "text": "wiem o Lamasztu, poza"
+    },
+    {
+      "start": 4210.02,
+      "end": 4211.46,
+      "text": "tym, że Widun to"
+    },
+    {
+      "start": 4211.46,
+      "end": 4213.3,
+      "text": "druga płyta projektu"
+    },
+    {
+      "start": 4213.3,
+      "end": 4214.73,
+      "text": "i że jest to płyta"
+    },
+    {
+      "start": 4214.73,
+      "end": 4215.98,
+      "text": "świetna."
+    },
+    {
+      "start": 4215.98,
+      "end": 4216.52,
+      "text": "Dzień dobry."
+    },
+    {
+      "start": 4687.84,
+      "end": 4689.27,
+      "text": "Przyszedł czas na"
+    },
+    {
+      "start": 4689.27,
+      "end": 4691.46,
+      "text": "primitie dormientium."
+    },
+    {
+      "start": 4691.46,
+      "end": 4692.64,
+      "text": "Skłamałbym, gdybym"
+    },
+    {
+      "start": 4692.64,
+      "end": 4694.32,
+      "text": "powiedział, że lubię,"
+    },
+    {
+      "start": 4694.32,
+      "end": 4695.8,
+      "text": "kiedy zespoły mają"
+    },
+    {
+      "start": 4695.8,
+      "end": 4697.39,
+      "text": "skomplikowane nazwy"
+    },
+    {
+      "start": 4697.39,
+      "end": 4698.97,
+      "text": "w słabo znanych mi"
+    },
+    {
+      "start": 4698.97,
+      "end": 4700.2,
+      "text": "językach."
+    },
+    {
+      "start": 4701.12,
+      "end": 4702.73,
+      "text": "Niby łaciny się uczyłem,"
+    },
+    {
+      "start": 4702.73,
+      "end": 4704.7,
+      "text": "egzamin na studiach"
+    },
+    {
+      "start": 4704.7,
+      "end": 4706.65,
+      "text": "zdałem na czwórkę,"
+    },
+    {
+      "start": 4706.65,
+      "end": 4708.29,
+      "text": "ale już niewiele"
+    },
+    {
+      "start": 4708.29,
+      "end": 4709.76,
+      "text": "pamiętam."
+    },
+    {
+      "start": 4709.76,
+      "end": 4710.72,
+      "text": "Musiałem więc"
+    },
+    {
+      "start": 4710.72,
+      "end": 4712.16,
+      "text": "sprawdzić, skąd się"
+    },
+    {
+      "start": 4712.16,
+      "end": 4713.92,
+      "text": "wzięła nazwa poznańskiej"
+    },
+    {
+      "start": 4713.92,
+      "end": 4715.12,
+      "text": "grupy, no i jak to"
+    },
+    {
+      "start": 4715.12,
+      "end": 4716.4,
+      "text": "skąd z Biblii, jak"
+    },
+    {
+      "start": 4716.4,
+      "end": 4717.44,
+      "text": "na prawdziwych"
+    },
+    {
+      "start": 4717.44,
+      "end": 4718.64,
+      "text": "black metalowców"
+    },
+    {
+      "start": 4718.64,
+      "end": 4719.76,
+      "text": "przystało."
+    },
+    {
+      "start": 4720.58,
+      "end": 4721.79,
+      "text": "Primitie dormientium"
+    },
+    {
+      "start": 4721.79,
+      "end": 4723.8,
+      "text": "oznacza pierwszych,"
+    },
+    {
+      "start": 4723.8,
+      "end": 4725.59,
+      "text": "którzy zasnęli, a w"
+    },
+    {
+      "start": 4725.59,
+      "end": 4727.2,
+      "text": "jakim kontekście"
+    },
+    {
+      "start": 4727.2,
+      "end": 4729.01,
+      "text": "się to tam pojawia,"
+    },
+    {
+      "start": 4729.01,
+      "end": 4730.77,
+      "text": "to już sobie proszę"
+    },
+    {
+      "start": 4730.77,
+      "end": 4732.92,
+      "text": "samemu sprawdzić."
+    },
+    {
+      "start": 4732.92,
+      "end": 4734.92,
+      "text": "Ja natomiast zapewniam,"
+    },
+    {
+      "start": 4734.92,
+      "end": 4736.37,
+      "text": "że słuchając Spear"
+    },
+    {
+      "start": 4736.37,
+      "end": 4738.28,
+      "text": "of Destiny, nowej płyty"
+    },
+    {
+      "start": 4738.28,
+      "end": 4740.2,
+      "text": "Primitie dormientium,"
+    },
+    {
+      "start": 4740.2,
+      "end": 4742.42,
+      "text": "na pewno nie zaśniecie."
+    },
+    {
+      "start": 4742.42,
+      "end": 4742.98,
+      "text": "Muzyka"
+    },
+    {
+      "start": 4959.9,
+      "end": 4961.48,
+      "text": "Z nami kolejny zespół"
+    },
+    {
+      "start": 4961.48,
+      "end": 4963.98,
+      "text": "z Wrocławia, Rtęć."
+    },
+    {
+      "start": 4963.98,
+      "end": 4966.26,
+      "text": "Bardzo piękna nazwa,"
+    },
+    {
+      "start": 4966.26,
+      "end": 4967.55,
+      "text": "ślicznie to brzmi w"
+    },
+    {
+      "start": 4967.55,
+      "end": 4969.22,
+      "text": "języku polskim."
+    },
+    {
+      "start": 4969.72,
+      "end": 4970.73,
+      "text": "Rtęć też gra black"
+    },
+    {
+      "start": 4970.73,
+      "end": 4972.34,
+      "text": "metal, ale robi to"
+    },
+    {
+      "start": 4972.34,
+      "end": 4974.24,
+      "text": "zupełnie inaczej."
+    },
+    {
+      "start": 4974.24,
+      "end": 4975.98,
+      "text": "Prosto, monotonnie,"
+    },
+    {
+      "start": 4975.98,
+      "end": 4977.54,
+      "text": "ale jest w tym aura"
+    },
+    {
+      "start": 4977.54,
+      "end": 4978.72,
+      "text": "niesamowitości,"
+    },
+    {
+      "start": 4978.72,
+      "end": 4979.97,
+      "text": "jest żarliwość,"
+    },
+    {
+      "start": 4979.97,
+      "end": 4981.28,
+      "text": "której trudno się"
+    },
+    {
+      "start": 4981.28,
+      "end": 4982.32,
+      "text": "oprzeć."
+    },
+    {
+      "start": 4982.86,
+      "end": 4984.32,
+      "text": "Rtęć ma póki co na"
+    },
+    {
+      "start": 4984.32,
+      "end": 4986.15,
+      "text": "koncie tylko jedną"
+    },
+    {
+      "start": 4986.15,
+      "end": 4987.56,
+      "text": "dużą płytę, wydaną"
+    },
+    {
+      "start": 4987.56,
+      "end": 4989.28,
+      "text": "trzy lata temu, ale"
+    },
+    {
+      "start": 4989.28,
+      "end": 4990.79,
+      "text": "w tym roku raczyli"
+    },
+    {
+      "start": 4990.79,
+      "end": 4992.66,
+      "text": "przypomnieć o sobie"
+    },
+    {
+      "start": 4992.66,
+      "end": 4994.35,
+      "text": "bardzo udaną epką,"
+    },
+    {
+      "start": 4994.35,
+      "end": 4996.66,
+      "text": "zatytułowaną Martwimy,"
+    },
+    {
+      "start": 4996.66,
+      "end": 4998.35,
+      "text": "z której zagram wam"
+    },
+    {
+      "start": 4998.35,
+      "end": 4998.98,
+      "text": "utwór."
+    },
+    {
+      "start": 5206.52,
+      "end": 5208.8,
+      "text": "Coś, coś się w tobie"
+    },
+    {
+      "start": 5208.8,
+      "end": 5210.02,
+      "text": "obudziło."
+    },
+    {
+      "start": 5210.38,
+      "end": 5212.32,
+      "text": "Nowa płyta krakowskiego"
+    },
+    {
+      "start": 5212.32,
+      "end": 5214.5,
+      "text": "Totenmesse, zatytułowana"
+    },
+    {
+      "start": 5214.5,
+      "end": 5215.81,
+      "text": "Married the Triumph"
+    },
+    {
+      "start": 5215.81,
+      "end": 5217.64,
+      "text": "and Rape the Compromise."
+    },
+    {
+      "start": 5218.32,
+      "end": 5219.45,
+      "text": "Siecze na plasterki"
+    },
+    {
+      "start": 5219.45,
+      "end": 5221.46,
+      "text": "i co ciekawe wypuszcza"
+    },
+    {
+      "start": 5221.46,
+      "end": 5223.16,
+      "text": "się czasami na nowe"
+    },
+    {
+      "start": 5223.16,
+      "end": 5225.3,
+      "text": "dla zespołu terytoria,"
+    },
+    {
+      "start": 5225.72,
+      "end": 5226.38,
+      "text": "a ja jestem tym"
+    },
+    {
+      "start": 5226.38,
+      "end": 5227.54,
+      "text": "zachwycony i tą"
+    },
+    {
+      "start": 5227.54,
+      "end": 5229.08,
+      "text": "brutalnością i tymi"
+    },
+    {
+      "start": 5229.08,
+      "end": 5230.62,
+      "text": "poszukiwaniami."
+    },
+    {
+      "start": 5230.62,
+      "end": 5232.05,
+      "text": "To na pewno jedna z"
+    },
+    {
+      "start": 5232.05,
+      "end": 5233.48,
+      "text": "najlepszych płyt"
+    },
+    {
+      "start": 5233.48,
+      "end": 5234.82,
+      "text": "metalowych roku"
+    },
+    {
+      "start": 5234.82,
+      "end": 5235.96,
+      "text": "moim zdaniem."
+    },
+    {
+      "start": 5236.52,
+      "end": 5237.76,
+      "text": "Już prezentowałem z"
+    },
+    {
+      "start": 5237.76,
+      "end": 5239.26,
+      "text": "niej jedną piosenkę,"
+    },
+    {
+      "start": 5239.26,
+      "end": 5240.5,
+      "text": "ale człowiek nie"
+    },
+    {
+      "start": 5240.5,
+      "end": 5241.96,
+      "text": "jest taki, żeby nie"
+    },
+    {
+      "start": 5241.96,
+      "end": 5243.78,
+      "text": "zaprezentował kolejnej,"
+    },
+    {
+      "start": 5243.94,
+      "end": 5244.77,
+      "text": "tym bardziej, że"
+    },
+    {
+      "start": 5244.77,
+      "end": 5246.4,
+      "text": "wszystkie fantastyczne."
+    },
+    {
+      "start": 5246.66,
+      "end": 5248.17,
+      "text": "Na okładce albumu"
+    },
+    {
+      "start": 5248.17,
+      "end": 5250.6,
+      "text": "Totenmesse zamieścili"
+    },
+    {
+      "start": 5250.6,
+      "end": 5252.94,
+      "text": "gustowny złoty bicz,"
+    },
+    {
+      "start": 5253.26,
+      "end": 5254.68,
+      "text": "a słuchając ich muzyki"
+    },
+    {
+      "start": 5254.68,
+      "end": 5255.99,
+      "text": "będziecie mieli"
+    },
+    {
+      "start": 5255.99,
+      "end": 5257.37,
+      "text": "poczucie, jakby"
+    },
+    {
+      "start": 5257.37,
+      "end": 5259.28,
+      "text": "ktoś was nim smagał."
+    },
+    {
+      "start": 5454.62,
+      "end": 5456.58,
+      "text": "Stygian Prism. To zespół"
+    },
+    {
+      "start": 5456.58,
+      "end": 5457.88,
+      "text": "zupełnie nowy. W"
+    },
+    {
+      "start": 5457.88,
+      "end": 5459.15,
+      "text": "tym roku wypuścili"
+    },
+    {
+      "start": 5459.15,
+      "end": 5460.61,
+      "text": "dwa single, za"
+    },
+    {
+      "start": 5460.61,
+      "end": 5462.24,
+      "text": "którymi przyszedł"
+    },
+    {
+      "start": 5462.24,
+      "end": 5463.96,
+      "text": "album Sins Beyond"
+    },
+    {
+      "start": 5463.96,
+      "end": 5465.69,
+      "text": "Redemption, który"
+    },
+    {
+      "start": 5465.69,
+      "end": 5467.2,
+      "text": "za chwilę wyjdzie"
+    },
+    {
+      "start": 5467.2,
+      "end": 5468.84,
+      "text": "nakładem Malignant"
+    },
+    {
+      "start": 5468.84,
+      "end": 5469.78,
+      "text": "Voices."
+    },
+    {
+      "start": 5469.78,
+      "end": 5471.9,
+      "text": "W ogóle oficyna Malignant"
+    },
+    {
+      "start": 5471.9,
+      "end": 5473.02,
+      "text": "Voices ma teraz"
+    },
+    {
+      "start": 5473.02,
+      "end": 5474.67,
+      "text": "piękne rozdanie, bo"
+    },
+    {
+      "start": 5474.67,
+      "end": 5476.15,
+      "text": "Tottenham, Seila"
+    },
+    {
+      "start": 5476.15,
+      "end": 5477.71,
+      "text": "masz tu też od nich,"
+    },
+    {
+      "start": 5477.71,
+      "end": 5479,
+      "text": "ale ja nie o tym,"
+    },
+    {
+      "start": 5479,
+      "end": 5480.54,
+      "text": "ja o tym, że Stygian"
+    },
+    {
+      "start": 5480.54,
+      "end": 5482.19,
+      "text": "Prism to nowa nazwa,"
+    },
+    {
+      "start": 5482.19,
+      "end": 5484.82,
+      "text": "ale muzycy doświadczeni."
+    },
+    {
+      "start": 5485.58,
+      "end": 5486.46,
+      "text": "Lider grupy znany"
+    },
+    {
+      "start": 5486.46,
+      "end": 5488.45,
+      "text": "jest nam z Mambrynę,"
+    },
+    {
+      "start": 5488.45,
+      "end": 5490.1,
+      "text": "a jego towarzysze"
+    },
+    {
+      "start": 5490.1,
+      "end": 5491.98,
+      "text": "chociażby z Jarun,"
+    },
+    {
+      "start": 5491.98,
+      "end": 5494.6,
+      "text": "Medikopestę czy Barra."
+    },
+    {
+      "start": 5494.6,
+      "end": 5496.03,
+      "text": "Trudno nadążyć za"
+    },
+    {
+      "start": 5496.03,
+      "end": 5497.96,
+      "text": "tymi wszystkimi nowymi"
+    },
+    {
+      "start": 5497.96,
+      "end": 5499.97,
+      "text": "projektami, ale dopóki"
+    },
+    {
+      "start": 5499.97,
+      "end": 5501.69,
+      "text": "idzie za tym jakość,"
+    },
+    {
+      "start": 5501.69,
+      "end": 5503.31,
+      "text": "taka jak na debiucie"
+    },
+    {
+      "start": 5503.31,
+      "end": 5504.84,
+      "text": "Stygian Prism, to"
+    },
+    {
+      "start": 5504.84,
+      "end": 5506.48,
+      "text": "nadążać warto."
+    },
+    {
+      "start": 5720.35,
+      "end": 5721.8,
+      "text": "Już głęboka, więc"
+    },
+    {
+      "start": 5721.8,
+      "end": 5722.99,
+      "text": "coś mi mówi, że"
+    },
+    {
+      "start": 5722.99,
+      "end": 5724.91,
+      "text": "potrzebujecie coraz"
+    },
+    {
+      "start": 5724.91,
+      "end": 5727.25,
+      "text": "mocniejszych wrażeń"
+    },
+    {
+      "start": 5727.25,
+      "end": 5730.15,
+      "text": "i pralaja to bez wątpienia"
+    },
+    {
+      "start": 5730.15,
+      "end": 5731.83,
+      "text": "najbardziej ekstremalny"
+    },
+    {
+      "start": 5731.83,
+      "end": 5733.56,
+      "text": "z zespołów prezentowanych"
+    },
+    {
+      "start": 5733.56,
+      "end": 5735.18,
+      "text": "dziś przeze mnie wciężko"
+    },
+    {
+      "start": 5735.18,
+      "end": 5736.07,
+      "text": "na sercu."
+    },
+    {
+      "start": 5736.07,
+      "end": 5737.89,
+      "text": "Black metal i death"
+    },
+    {
+      "start": 5737.89,
+      "end": 5739.69,
+      "text": "metal nie układają"
+    },
+    {
+      "start": 5739.69,
+      "end": 5741.58,
+      "text": "się tu w harmonijnie"
+    },
+    {
+      "start": 5741.58,
+      "end": 5743.61,
+      "text": "zespoloną jedność,"
+    },
+    {
+      "start": 5743.61,
+      "end": 5745.97,
+      "text": "tylko zderzają z głośnym"
+    },
+    {
+      "start": 5745.97,
+      "end": 5748.1,
+      "text": "zgrzytem, generując"
+    },
+    {
+      "start": 5748.1,
+      "end": 5750.59,
+      "text": "fale chaosu i hałasu."
+    },
+    {
+      "start": 5751.25,
+      "end": 5753.03,
+      "text": "Może ta muzyka odrzucać,"
+    },
+    {
+      "start": 5753.03,
+      "end": 5755.55,
+      "text": "ale na pewno oczyszcza."
+    },
+    {
+      "start": 5755.55,
+      "end": 5757.49,
+      "text": "We wrześniu pralaja"
+    },
+    {
+      "start": 5757.49,
+      "end": 5759.54,
+      "text": "była uprzejma ukarać"
+    },
+    {
+      "start": 5759.54,
+      "end": 5761.59,
+      "text": "nas nowym materiałem"
+    },
+    {
+      "start": 5761.59,
+      "end": 5763.46,
+      "text": "epką zatytułowaną"
+    },
+    {
+      "start": 5763.46,
+      "end": 5764.65,
+      "text": "Inferno."
+    },
+    {
+      "start": 5765.07,
+      "end": 5766.23,
+      "text": "I nic nie nakłamali."
+    },
+    {
+      "start": 5766.23,
+      "end": 5767.75,
+      "text": "W tytule to brzmi"
+    },
+    {
+      "start": 5767.75,
+      "end": 5769.11,
+      "text": "jak piekło."
+    },
+    {
+      "start": 5769.11,
+      "end": 5769.41,
+      "text": "Muzika"
+    },
+    {
+      "start": 6231.58,
+      "end": 6233.22,
+      "text": "Na dobranoc Ashes,"
+    },
+    {
+      "start": 6233.22,
+      "end": 6234.66,
+      "text": "czyli popioły."
+    },
+    {
+      "start": 6234.66,
+      "end": 6236.53,
+      "text": "Puszczam na koniec,"
+    },
+    {
+      "start": 6236.53,
+      "end": 6238.16,
+      "text": "bo Dust of Life,"
+    },
+    {
+      "start": 6238.16,
+      "end": 6239.67,
+      "text": "Time and Death to"
+    },
+    {
+      "start": 6239.67,
+      "end": 6242.2,
+      "text": "utwór długi, zajmujący"
+    },
+    {
+      "start": 6242.2,
+      "end": 6244.17,
+      "text": "połowę ich tegorocznego"
+    },
+    {
+      "start": 6244.17,
+      "end": 6246.24,
+      "text": "mini-albumu, a zatem"
+    },
+    {
+      "start": 6246.24,
+      "end": 6248.46,
+      "text": "całego grać nie muszę"
+    },
+    {
+      "start": 6248.46,
+      "end": 6250.8,
+      "text": "odsyłam do źródła."
+    },
+    {
+      "start": 6251.46,
+      "end": 6253.08,
+      "text": "Piosenka pochodzi z"
+    },
+    {
+      "start": 6253.08,
+      "end": 6254.96,
+      "text": "materiału Into the"
+    },
+    {
+      "start": 6254.96,
+      "end": 6256.14,
+      "text": "Woodlands, który"
+    },
+    {
+      "start": 6256.14,
+      "end": 6258.53,
+      "text": "przy pomocy melancholijnego"
+    },
+    {
+      "start": 6258.53,
+      "end": 6260.36,
+      "text": "blackmetalu opowiada"
+    },
+    {
+      "start": 6260.36,
+      "end": 6262.52,
+      "text": "o stanach emocjonalnych"
+    },
+    {
+      "start": 6262.52,
+      "end": 6264.62,
+      "text": "towarzyszących podmiotowi"
+    },
+    {
+      "start": 6264.62,
+      "end": 6266.08,
+      "text": "lirycznemu podczas"
+    },
+    {
+      "start": 6266.08,
+      "end": 6267.6,
+      "text": "spaceru po lesie."
+    },
+    {
+      "start": 6268.08,
+      "end": 6269.13,
+      "text": "Brzmi to tak, jakby"
+    },
+    {
+      "start": 6269.13,
+      "end": 6270.5,
+      "text": "łaził po tym lesie"
+    },
+    {
+      "start": 6270.5,
+      "end": 6272.01,
+      "text": "listopadową nocą,"
+    },
+    {
+      "start": 6272.01,
+      "end": 6273.8,
+      "text": "do czego nie zachęcam,"
+    },
+    {
+      "start": 6273.8,
+      "end": 6275.62,
+      "text": "po prostu przedstawiam"
+    },
+    {
+      "start": 6275.62,
+      "end": 6276.94,
+      "text": "możliwości."
+    },
+    {
+      "start": 6276.94,
+      "end": 6278.69,
+      "text": "Na dziś to wszystko."
+    },
+    {
+      "start": 6278.69,
+      "end": 6279.97,
+      "text": "Kolejne Ciężko na"
+    },
+    {
+      "start": 6279.97,
+      "end": 6281.62,
+      "text": "sercu za tydzień."
+    },
+    {
+      "start": 6281.62,
+      "end": 6282.86,
+      "text": "Do usłyszenia."
+    }
+  ],
+  "stats": {
+    "windowCount": 20,
+    "transcribedAudioSec": 1121.32,
+    "segmentCount": 644,
+    "characterCount": 11781
+  }
+}
