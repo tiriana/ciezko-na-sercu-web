@@ -4,100 +4,146 @@
   "provider": "whisper-cpp",
   "model": "large-v3-turbo-q5_0",
   "language": "pl",
-  "fileSizeBytes": 115942988,
-  "fileMtimeMs": 1789150426661.7139,
+  "params": {
+    "maxLen": 20,
+    "splitOnWord": true,
+    "vad": false,
+    "chunks": "speech-spans.json"
+  },
+  "fileSizeBytes": null,
+  "fileMtimeMs": null,
   "windows": [
     {
       "index": 0,
       "start": 0,
-      "end": 41.44
+      "end": 4.24
     },
     {
       "index": 1,
-      "start": 219.72,
-      "end": 518.14
+      "start": 8.2,
+      "end": 39.52
     },
     {
       "index": 2,
-      "start": 832.77,
-      "end": 1124.96
+      "start": 220.76,
+      "end": 436.5
     },
     {
       "index": 3,
-      "start": 1458.85,
-      "end": 1695.39
+      "start": 440.7,
+      "end": 487.12
     },
     {
       "index": 4,
-      "start": 2104.42,
-      "end": 2253.88
+      "start": 490.76,
+      "end": 497.02
     },
     {
       "index": 5,
-      "start": 2617.09,
-      "end": 2734.94
+      "start": 500.3,
+      "end": 508.52
     },
     {
       "index": 6,
-      "start": 3000.13,
-      "end": 3077.66
+      "start": 516.52,
+      "end": 517.6
     },
     {
       "index": 7,
-      "start": 3860.55,
-      "end": 3947.9
+      "start": 833.92,
+      "end": 1073.92
     },
     {
       "index": 8,
-      "start": 4330.44,
-      "end": 4418.75
+      "start": 1073.92,
+      "end": 1119.58
     },
     {
       "index": 9,
-      "start": 4759.75,
-      "end": 4804.86
+      "start": 1123.16,
+      "end": 1123.84
     },
     {
       "index": 10,
-      "start": 5060.23,
-      "end": 5142.24
+      "start": 1459.87,
+      "end": 1693.57
     },
     {
       "index": 11,
-      "start": 5398.56,
-      "end": 5490.04
+      "start": 2105.53,
+      "end": 2252.37
     },
     {
       "index": 12,
-      "start": 5681.51,
-      "end": 5741.05
+      "start": 2618.3,
+      "end": 2732.66
     },
     {
       "index": 13,
-      "start": 6021.51,
-      "end": 6067.71
+      "start": 3000.99,
+      "end": 3075.15
     },
     {
       "index": 14,
-      "start": 6239.11,
-      "end": 6277.53
+      "start": 3861.47,
+      "end": 3945.55
     },
     {
       "index": 15,
-      "start": 6576.74,
-      "end": 6630.78
+      "start": 4331.71,
+      "end": 4416.55
     },
     {
       "index": 16,
-      "start": 6792.9,
-      "end": 6856.38
+      "start": 4761.24,
+      "end": 4802.48
+    },
+    {
+      "index": 17,
+      "start": 5061.05,
+      "end": 5139.55
+    },
+    {
+      "index": 18,
+      "start": 5399.52,
+      "end": 5488.36
+    },
+    {
+      "index": 19,
+      "start": 5682.65,
+      "end": 5739.49
+    },
+    {
+      "index": 20,
+      "start": 6022.36,
+      "end": 6064.5
+    },
+    {
+      "index": 21,
+      "start": 6241.02,
+      "end": 6275.78
+    },
+    {
+      "index": 22,
+      "start": 6577.66,
+      "end": 6628.56
+    },
+    {
+      "index": 23,
+      "start": 6793.82,
+      "end": 6854.88
     }
   ],
   "segments": [
     {
       "start": 0,
+      "end": 2.43,
+      "text": "Trójka. Program Trzeci"
+    },
+    {
+      "start": 2.43,
       "end": 4.24,
-      "text": "Trójka. Program Trzeci Polskiego Radia."
+      "text": "Polskiego Radia."
     },
     {
       "start": 8.2,
@@ -106,1010 +152,5109 @@
     },
     {
       "start": 11.58,
+      "end": 13.24,
+      "text": "Dobry wieczór Państwu."
+    },
+    {
+      "start": 13.24,
+      "end": 15.01,
+      "text": "Zaczynamy Ciężko na"
+    },
+    {
+      "start": 15.01,
       "end": 15.92,
-      "text": "Dobry wieczór Państwu. Zaczynamy Ciężko na sercu."
+      "text": "sercu."
     },
     {
       "start": 16.54,
+      "end": 17.68,
+      "text": "Czyli dwie godziny"
+    },
+    {
+      "start": 17.68,
+      "end": 19.88,
+      "text": "muzyki gęstej i czarnej"
+    },
+    {
+      "start": 19.88,
       "end": 21.14,
-      "text": "Czyli dwie godziny muzyki gęstej i czarnej jak smoła."
+      "text": "jak smoła."
     },
     {
       "start": 21.84,
+      "end": 22.68,
+      "text": "Szczególnie dzisiaj,"
+    },
+    {
+      "start": 22.68,
+      "end": 24.46,
+      "text": "bo tak się jakoś złożyło,"
+    },
+    {
+      "start": 24.46,
+      "end": 26.6,
+      "text": "że będzie to 120"
+    },
+    {
+      "start": 26.6,
+      "end": 28.11,
+      "text": "minut z norweskim"
+    },
+    {
+      "start": 28.11,
       "end": 29.78,
-      "text": "Szczególnie dzisiaj, bo tak się jakoś złożyło, że będzie to 120 minut z norweskim black metalem."
+      "text": "black metalem."
     },
     {
       "start": 30,
+      "end": 31.96,
+      "text": "Wita Was Jarek Szubrycht,"
+    },
+    {
+      "start": 31.96,
+      "end": 33.42,
+      "text": "prowadzący audycję"
+    },
+    {
+      "start": 33.42,
+      "end": 35.22,
+      "text": "oraz Mariusz Owczarek,"
+    },
+    {
+      "start": 35.22,
       "end": 36.5,
-      "text": "Wita Was Jarek Szubrycht, prowadzący audycję oraz Mariusz Owczarek, jej wydawca."
+      "text": "jej wydawca."
     },
     {
       "start": 37.24,
-      "end": 39.52,
-      "text": "A gra dla Was Dymu Borgir."
+      "end": 38.32,
+      "text": "A gra dla Was Dymu"
     },
     {
-      "start": 220.64,
+      "start": 38.32,
+      "end": 39.52,
+      "text": "Borgir."
+    },
+    {
+      "start": 220.76,
+      "end": 222.16,
+      "text": "Tenże właśnie Dimmu"
+    },
+    {
+      "start": 222.16,
+      "end": 223.31,
+      "text": "Borgir, którego"
+    },
+    {
+      "start": 223.31,
+      "end": 224.88,
+      "text": "przed chwilą wysłuchaliśmy,"
+    },
+    {
+      "start": 224.88,
+      "end": 226.08,
+      "text": "przyniósł mi temat"
+    },
+    {
+      "start": 226.08,
       "end": 227.72,
-      "text": "Tenże właśnie Dimmu Borgir, którego przed chwilą wysłuchaliśmy, przyniósł mi temat dzisiejszej audycji."
+      "text": "dzisiejszej audycji."
     },
     {
       "start": 228.66,
+      "end": 229.03,
+      "text": "Jeszcze w sobotę"
+    },
+    {
+      "start": 229.03,
+      "end": 230.5,
+      "text": "nie wiedziałem, co"
+    },
+    {
+      "start": 230.5,
+      "end": 231.95,
+      "text": "wam dzisiaj zagram"
+    },
+    {
+      "start": 231.95,
+      "end": 233.34,
+      "text": "i o czym opowiem,"
+    },
+    {
+      "start": 233.34,
+      "end": 235.06,
+      "text": "bo byłem w Gdańsku"
+    },
+    {
+      "start": 235.06,
+      "end": 237.34,
+      "text": "na Mystic Festiwalu,"
+    },
+    {
+      "start": 237.34,
       "end": 240.1,
-      "text": "Jeszcze w sobotę nie wiedziałem, co Wam dzisiaj zagram i o czym opowiem, bo byłem w Gdańsku na Mystic Festiwalu, zajęty swoimi sprawami."
+      "text": "zajęty swoimi sprawami."
     },
     {
       "start": 240.1,
+      "end": 241.68,
+      "text": "I właśnie w sobotę"
+    },
+    {
+      "start": 241.68,
+      "end": 243.6,
+      "text": "gościliśmy tam dwóch"
+    },
+    {
+      "start": 243.6,
+      "end": 245.88,
+      "text": "muzyków, Dimmu Borgir,"
+    },
+    {
+      "start": 245.88,
+      "end": 247.99,
+      "text": "obu liderów norweskiej"
+    },
+    {
+      "start": 247.99,
+      "end": 250.52,
+      "text": "grupy, wokalistę Szagrata"
+    },
+    {
+      "start": 250.52,
       "end": 253.16,
-      "text": "I właśnie w sobotę gościliśmy tam dwóch muzyków. Dimmu Borgir, obu liderów norweskiej grupy, wokalistę Szagrata i gitarzystę Silenoza."
+      "text": "i gitarzystę Silenoza."
     },
     {
       "start": 253.84,
+      "end": 255.23,
+      "text": "Przyjechali pooglądać,"
+    },
+    {
+      "start": 255.23,
+      "end": 256.55,
+      "text": "ale też udzielić"
+    },
+    {
+      "start": 256.55,
+      "end": 258.95,
+      "text": "dosłownie trzech wywiadów,"
+    },
+    {
+      "start": 258.95,
+      "end": 260.55,
+      "text": "w tym tego, którego"
+    },
+    {
+      "start": 260.55,
       "end": 262.76,
-      "text": "Przyjechali pooglądać, ale też udzielić dosłownie trzech wywiadów, w tym tego, którego za chwilę wysłuchacie."
+      "text": "za chwilę wysłuchacie."
     },
     {
       "start": 262.76,
+      "end": 263.69,
+      "text": "A zacząłem"
+    },
+    {
+      "start": 263.69,
+      "end": 265.89,
+      "text": "oczywiście od pytania,"
+    },
+    {
+      "start": 265.89,
+      "end": 267.88,
+      "text": "czemu na Grand Serpent"
+    },
+    {
+      "start": 267.88,
+      "end": 269.95,
+      "text": "Rising, ich najnowszą"
+    },
+    {
+      "start": 269.95,
+      "end": 271.73,
+      "text": "płytę, trzeba było"
+    },
+    {
+      "start": 271.73,
+      "end": 273.5,
+      "text": "czekać długie osiem"
+    },
+    {
+      "start": 273.5,
       "end": 274.32,
-      "text": "A zacząłem oczywiście od pytania, czemu na Grand Serpent Rising, ich najnowszą płytę, trzeba było czekać długie osiem lat."
+      "text": "lat."
     },
     {
       "start": 275.06,
-      "end": 276.98,
-      "text": "Pierwszy odpowiedział Szagrat."
+      "end": 276.27,
+      "text": "Pierwszy odpowiedział"
     },
     {
-      "start": 279.62,
+      "start": 276.27,
+      "end": 276.98,
+      "text": "Szagrad."
+    },
+    {
+      "start": 279.58,
+      "end": 281.53,
+      "text": "Byliśmy bardzo zajęci."
+    },
+    {
+      "start": 281.53,
+      "end": 283.23,
+      "text": "Od wydania poprzedniej"
+    },
+    {
+      "start": 283.23,
+      "end": 284.69,
+      "text": "płyty minęło osiem"
+    },
+    {
+      "start": 284.69,
+      "end": 286.11,
+      "text": "lat, ale przez ten"
+    },
+    {
+      "start": 286.11,
+      "end": 287.76,
+      "text": "czas graliśmy trasy,"
+    },
+    {
+      "start": 287.76,
       "end": 289.88,
-      "text": "Byliśmy bardzo zajęci. Od wydania poprzedniej płyty minęło osiem lat, ale przez ten czas graliśmy trasy, mamy też życie prywatne."
+      "text": "mamy też życie prywatne."
     },
     {
       "start": 290.58,
+      "end": 291.78,
+      "text": "Tworzymy muzykę w"
+    },
+    {
+      "start": 291.78,
+      "end": 293.38,
+      "text": "swoim własnym tempie,"
+    },
+    {
+      "start": 293.38,
+      "end": 294.61,
+      "text": "nie pozwalamy się"
+    },
+    {
+      "start": 294.61,
       "end": 295.54,
-      "text": "Tworzymy muzykę w swoim własnym tempie, nie pozwalamy się popędzać."
+      "text": "popędzać."
     },
     {
       "start": 296.42,
+      "end": 297.3,
+      "text": "Wszystko musi przyjść"
+    },
+    {
+      "start": 297.3,
       "end": 299.14,
-      "text": "Wszystko musi przyjść w naturalny sposób."
+      "text": "w naturalny sposób."
     },
     {
       "start": 300.2,
+      "end": 300.95,
+      "text": "Muzyka tylko zyskuje,"
+    },
+    {
+      "start": 300.95,
       "end": 303.1,
-      "text": "Muzyka tylko zyskuje, kiedy się nie śpieszysz."
+      "text": "kiedy się nie śpieszysz."
     },
     {
       "start": 303.1,
+      "end": 304.77,
+      "text": "Nie czujemy potrzeby"
+    },
+    {
+      "start": 304.77,
+      "end": 306.51,
+      "text": "wydawania nowej płyty"
+    },
+    {
+      "start": 306.51,
+      "end": 307.89,
+      "text": "co rok, czy co dwa"
+    },
+    {
+      "start": 307.89,
       "end": 308.66,
-      "text": "Nie czujemy potrzeby wydawania nowej płyty co rok, czy co dwa lata."
+      "text": "lata."
     },
     {
       "start": 309.5,
+      "end": 310.02,
+      "text": "Wiele zespołów tak"
+    },
+    {
+      "start": 310.02,
+      "end": 311.46,
+      "text": "robi, ale gdybyśmy"
+    },
+    {
+      "start": 311.46,
+      "end": 313.26,
+      "text": "się na to zdecydowali,"
+    },
+    {
+      "start": 313.26,
+      "end": 314.96,
+      "text": "rezultat nie byłby"
+    },
+    {
+      "start": 314.96,
       "end": 316.82,
-      "text": "Wiele zespołów tak robi, ale gdybyśmy się na to zdecydowali, rezultat nie byłby chyba aż tak dobry."
+      "text": "chyba aż tak dobry."
     },
     {
       "start": 319.26,
+      "end": 321.01,
+      "text": "Co na to Silenos, gitarzysta"
+    },
+    {
+      "start": 321.01,
+      "end": 322.48,
+      "text": "i kompozytor większości"
+    },
+    {
+      "start": 322.48,
       "end": 324.16,
-      "text": "Co na to Silenos, gitarzysta i kompozytor większości materiału Dimu Borgir?"
+      "text": "materiału Dimmu Borgir?"
     },
     {
       "start": 324.4,
+      "end": 326.08,
+      "text": "Mamy własne tempo,"
+    },
+    {
+      "start": 326.08,
       "end": 327.5,
-      "text": "Mamy własne tempo, to na pewno."
+      "text": "to na pewno."
     },
     {
       "start": 328.62,
+      "end": 328.99,
+      "text": "Uważam za bardzo"
+    },
+    {
+      "start": 328.99,
+      "end": 330.58,
+      "text": "ważne poznanie utworów,"
+    },
+    {
+      "start": 330.58,
       "end": 332.56,
-      "text": "Uważam za bardzo ważne poznanie utworów, nad którymi pracujesz."
+      "text": "nad którymi pracujesz."
     },
     {
       "start": 333.36,
+      "end": 334.19,
+      "text": "Powinieneś się z nimi"
+    },
+    {
+      "start": 334.19,
       "end": 334.88,
-      "text": "Powinieneś się z nimi zżyć."
+      "text": "zżyć."
     },
     {
-      "start": 336.14,
-      "end": 340.42,
-      "text": "Warto żyć muzyką, którą zamierzasz unieśmiertelnić w studiu."
+      "start": 336.1,
+      "end": 336.51,
+      "text": "Warto żyć muzyką,"
     },
     {
-      "start": 341.6,
-      "end": 344.92,
-      "text": "Dzięki temu do ostatniej minuty możesz coś zmienić."
+      "start": 336.51,
+      "end": 339.6,
+      "text": "którą zamierzasz unieśmiertelnić"
+    },
+    {
+      "start": 339.6,
+      "end": 340.76,
+      "text": "w studiu."
+    },
+    {
+      "start": 340.76,
+      "end": 341.86,
+      "text": "Dzięki temu do"
+    },
+    {
+      "start": 341.86,
+      "end": 343.16,
+      "text": "ostatniej minuty"
+    },
+    {
+      "start": 343.16,
+      "end": 344.9,
+      "text": "możesz coś zmienić."
     },
     {
       "start": 345.86,
-      "end": 349.92,
-      "text": "Muzyka powinna płynąć sama, nie możemy się do tego zmuszać."
+      "end": 346.96,
+      "text": "Muzyka powinna płynąć"
     },
     {
-      "start": 349.92,
+      "start": 346.96,
+      "end": 348.36,
+      "text": "sama, nie możemy"
+    },
+    {
+      "start": 348.36,
+      "end": 349.92,
+      "text": "się do tego zmuszać."
+    },
+    {
+      "start": 350.5,
       "end": 351.2,
       "text": "To nie zadziała."
     },
     {
-      "start": 352.16,
-      "end": 361.12,
-      "text": "Kiedy słyszymy, że powinniśmy zmieścić się w jakimś terminie, nie spełniamy oczekiwań, tylko robimy coś dokładnie przeciwnego."
+      "start": 352.24,
+      "end": 352.66,
+      "text": "Kiedy słyszymy, że"
     },
     {
-      "start": 361.12,
+      "start": 352.66,
+      "end": 354.15,
+      "text": "powinniśmy zmieścić"
+    },
+    {
+      "start": 354.15,
+      "end": 355.74,
+      "text": "się w jakimś terminie,"
+    },
+    {
+      "start": 355.74,
+      "end": 357.81,
+      "text": "nie spełniamy oczekiwań,"
+    },
+    {
+      "start": 357.81,
+      "end": 359.07,
+      "text": "tylko robimy coś"
+    },
+    {
+      "start": 359.07,
+      "end": 361.22,
+      "text": "dokładnie przeciwnego."
+    },
+    {
+      "start": 361.74,
       "end": 362.96,
       "text": "Wrzucamy na luz."
     },
     {
-      "start": 364.02,
-      "end": 375.36,
-      "text": "Pomyślałem, że te coraz dłuższe interwały pomiędzy kolejnymi albumami zespołu mogą też mieć coś wspólnego z wiekiem muzyków."
+      "start": 364.22,
+      "end": 364.84,
+      "text": "Pomyślałem, że te"
+    },
+    {
+      "start": 364.84,
+      "end": 367.15,
+      "text": "coraz dłuższe interwały"
+    },
+    {
+      "start": 367.15,
+      "end": 369.04,
+      "text": "pomiędzy kolejnymi"
+    },
+    {
+      "start": 369.04,
+      "end": 370.32,
+      "text": "albumami zespołu"
+    },
+    {
+      "start": 370.32,
+      "end": 372.04,
+      "text": "mogą też mieć coś"
+    },
+    {
+      "start": 372.04,
+      "end": 374.12,
+      "text": "wspólnego z wiekiem"
+    },
+    {
+      "start": 374.12,
+      "end": 375.38,
+      "text": "muzyków."
     },
     {
       "start": 376.08,
-      "end": 383.54,
-      "text": "Nie sugeruję, że pokłady inspiracji całkiem się wyczerpują, ale chyba trzeba kopać głębiej."
+      "end": 376.7,
+      "text": "Nie sugeruję, że"
     },
     {
-      "start": 383.64,
-      "end": 387.48,
-      "text": "A to proces długotrwały i bardziej kosztowny."
+      "start": 376.7,
+      "end": 378.08,
+      "text": "pokłady inspiracji"
     },
     {
-      "start": 387.68,
+      "start": 378.08,
+      "end": 379.96,
+      "text": "całkiem się wyczerpują,"
+    },
+    {
+      "start": 380.36,
+      "end": 381.73,
+      "text": "ale chyba trzeba"
+    },
+    {
+      "start": 381.73,
+      "end": 383.78,
+      "text": "kopać głębiej, a to"
+    },
+    {
+      "start": 383.78,
+      "end": 385.18,
+      "text": "proces długotrwały"
+    },
+    {
+      "start": 385.18,
+      "end": 386.96,
+      "text": "i bardziej kosztowny."
+    },
+    {
+      "start": 388.02,
+      "end": 388.34,
+      "text": "Poza tym doskonale"
+    },
+    {
+      "start": 388.34,
+      "end": 389.79,
+      "text": "wiem, skąd czerpie"
+    },
+    {
+      "start": 389.79,
+      "end": 391.22,
+      "text": "się inspiracje,"
+    },
+    {
+      "start": 391.22,
+      "end": 392.78,
+      "text": "kiedy człowiek ma"
+    },
+    {
+      "start": 392.78,
+      "end": 393.64,
+      "text": "te naście lat"
+    },
+    {
+      "start": 393.64,
+      "end": 396.7,
+      "text": "albo jest tuż po dwudziestce"
+    },
+    {
+      "start": 396.7,
+      "end": 398.4,
+      "text": "i gra ekstremalną"
+    },
+    {
+      "start": 398.4,
+      "end": 399.71,
+      "text": "muzykę, która ma"
+    },
+    {
+      "start": 399.71,
       "end": 401.24,
-      "text": "Poza tym doskonale wiem, skąd czerpie się inspiracje, kiedy człowiek ma te naście lat, albo jest tuż po dwudziestce i gra ekstremalną muzykę, która ma podpalić świat."
+      "text": "podpalić świat."
     },
     {
-      "start": 402.12,
-      "end": 405.92,
-      "text": "Tylko skąd podobne emocje ma brać dojrzały mężczyzna?"
+      "start": 401.6,
+      "end": 403.04,
+      "text": "Tylko skąd podobne"
+    },
+    {
+      "start": 403.04,
+      "end": 404.9,
+      "text": "emocje ma brać dojrzały"
+    },
+    {
+      "start": 404.9,
+      "end": 405.94,
+      "text": "mężczyzna?"
     },
     {
       "start": 406.44,
-      "end": 408.54,
-      "text": "Czy ten ogień wciąż płonie?"
+      "end": 407.57,
+      "text": "Czy ten ogień wciąż"
+    },
+    {
+      "start": 407.57,
+      "end": 408.56,
+      "text": "płonie?"
     },
     {
       "start": 409.38,
+      "end": 409.8,
+      "text": "A może wręcz jest"
+    },
+    {
+      "start": 409.8,
+      "end": 411.75,
+      "text": "łatwiej, bo doświadczony"
+    },
+    {
+      "start": 411.75,
+      "end": 413.05,
+      "text": "artysta po prostu"
+    },
+    {
+      "start": 413.05,
       "end": 414.44,
-      "text": "A może wręcz jest łatwiej, bo doświadczony artysta po prostu wie, co robi."
+      "text": "wie, co robi."
     },
     {
-      "start": 415.48,
+      "start": 415,
+      "end": 417.21,
+      "text": "Coraz trudniej podtrzymać"
+    },
+    {
+      "start": 417.21,
+      "end": 418.87,
+      "text": "ten płomień, bo zbyt"
+    },
+    {
+      "start": 418.87,
+      "end": 420.07,
+      "text": "wiele rzeczy dzieje"
+    },
+    {
+      "start": 420.07,
+      "end": 421.06,
+      "text": "się w tym samym"
+    },
+    {
+      "start": 421.06,
       "end": 421.76,
-      "text": "Coraz trudniej podtrzymać ten płomień, bo zbyt wiele rzeczy dzieje się w tym samym czasie."
+      "text": "czasie."
     },
     {
-      "start": 422.16,
+      "start": 422.14,
+      "end": 423.55,
+      "text": "Wciąż jesteśmy zmotywowani,"
+    },
+    {
+      "start": 423.55,
+      "end": 424.48,
+      "text": "może nawet bardziej"
+    },
+    {
+      "start": 424.48,
+      "end": 425.29,
+      "text": "niż kiedykolwiek"
+    },
+    {
+      "start": 425.29,
       "end": 426,
-      "text": "Wciąż jesteśmy zmotywowani, może nawet bardziej niż kiedykolwiek wcześniej."
+      "text": "wcześniej."
     },
     {
-      "start": 427,
+      "start": 426.98,
+      "end": 427.6,
+      "text": "Nigdy nie mieliśmy"
+    },
+    {
+      "start": 427.6,
       "end": 428.42,
-      "text": "Nigdy nie mieliśmy planu B."
+      "text": "planu B."
     },
     {
       "start": 428.7,
-      "end": 431.3,
-      "text": "Żyjemy tym zespołem, oddychamy nim."
+      "end": 429.92,
+      "text": "Żyjemy tym zespołem,"
     },
     {
-      "start": 431.7,
-      "end": 433.76,
-      "text": "Dwadzieścia cztery godziny na dobę."
+      "start": 429.92,
+      "end": 431.36,
+      "text": "oddychamy nim."
+    },
+    {
+      "start": 431.72,
+      "end": 432.38,
+      "text": "Dwadzieścia cztery"
+    },
+    {
+      "start": 432.38,
+      "end": 433.42,
+      "text": "godziny na dobę."
     },
     {
       "start": 434.3,
+      "end": 435.7,
+      "text": "Innego życia nie znamy"
+    },
+    {
+      "start": 435.7,
       "end": 436.5,
-      "text": "Innego życia nie znamy i dobrze."
+      "text": "i dobrze."
     },
     {
-      "start": 440.74,
+      "start": 440.7,
+      "end": 441.75,
+      "text": "możesz mieć trochę"
+    },
+    {
+      "start": 441.75,
       "end": 444.14,
-      "text": "Kiedy jesteś młodszy, możesz mieć trochę więcej energii."
+      "text": "więcej energii."
     },
     {
-      "start": 446.02,
-      "end": 451.42,
-      "text": "W przeszłości przecież wydawaliśmy płyty co dwa, trzy lata i w międzyczasie koncertowaliśmy."
+      "start": 446.04,
+      "end": 447.53,
+      "text": "wydawaliśmy płyty"
     },
     {
-      "start": 453.92,
+      "start": 447.53,
+      "end": 449.11,
+      "text": "co dwa, trzy lata i"
+    },
+    {
+      "start": 449.11,
+      "end": 451.44,
+      "text": "w międzyczasie koncertowaliśmy."
+    },
+    {
+      "start": 453.9,
+      "end": 454.75,
+      "text": "Kiedy dobiegasz pięćdziesiątki,"
+    },
+    {
+      "start": 454.75,
       "end": 456.86,
-      "text": "Kiedy dobiegasz pięćdziesiątki, życie się zmienia."
+      "text": "życie się zmienia."
     },
     {
       "start": 457.7,
-      "end": 460.82,
-      "text": "Mamy rodziny, dzieci, inne życiowe priorytety."
+      "end": 457.95,
+      "text": "Mamy rodziny,"
     },
     {
-      "start": 462.46,
-      "end": 472.34,
-      "text": "Od trzydziestu trzech lat żyjemy na walizkach i widzieliśmy więcej pokoi hotelowych niż ludzie mogą sobie wyobrazić."
+      "start": 457.95,
+      "end": 459.57,
+      "text": "dzieci, inne życiowe"
     },
     {
-      "start": 474.9,
+      "start": 459.57,
+      "end": 460.76,
+      "text": "priorytety."
+    },
+    {
+      "start": 460.76,
+      "end": 464.25,
+      "text": "Od 33 lat żyjemy na"
+    },
+    {
+      "start": 464.25,
+      "end": 467.43,
+      "text": "walizkach i widzieliśmy"
+    },
+    {
+      "start": 467.43,
+      "end": 470.17,
+      "text": "więcej pokoi hotelowych"
+    },
+    {
+      "start": 470.17,
+      "end": 470.81,
+      "text": "niż ludzie mogą"
+    },
+    {
+      "start": 470.81,
+      "end": 471.76,
+      "text": "sobie wyobrazić."
+    },
+    {
+      "start": 474.24,
+      "end": 474.5,
+      "text": "Dzisiaj staramy się"
+    },
+    {
+      "start": 474.5,
       "end": 477.62,
-      "text": "Dzisiaj staramy się znaleźć równowagę."
+      "text": "znaleźć równowagę."
     },
     {
       "start": 479.9,
-      "end": 481.74,
-      "text": "Nie chcemy z czymkolwiek przesadzić."
+      "end": 480.08,
+      "text": "Nie chcemy z czymkolwiek"
     },
     {
-      "start": 483.9,
-      "end": 487.18,
-      "text": "Służy nam tempo, w którym teraz pracujemy."
+      "start": 480.08,
+      "end": 481.68,
+      "text": "przesadzić."
     },
     {
-      "start": 491.56,
+      "start": 483.86,
+      "end": 483.87,
+      "text": "Służy nam tempo, w"
+    },
+    {
+      "start": 483.87,
+      "end": 487.12,
+      "text": "którym teraz pracujemy."
+    },
+    {
+      "start": 490.76,
+      "end": 491.91,
+      "text": "Koncerty, które"
+    },
+    {
+      "start": 491.91,
+      "end": 493.14,
+      "text": "teraz zapowiadamy"
+    },
+    {
+      "start": 493.14,
+      "end": 494.19,
+      "text": "będą dla zespołu"
+    },
+    {
+      "start": 494.19,
       "end": 495.86,
-      "text": "Koncerty, które teraz zapowiadamy będą dla zespołu prawdziwym świętem."
+      "text": "prawdziwym świętem."
     },
     {
       "start": 496.34,
-      "end": 497.06,
+      "end": 497.02,
       "text": "Każdy z nich."
     },
     {
-      "start": 500.96,
+      "start": 500.3,
       "end": 503.04,
-      "text": "Ale rozumiemy też perspektywę fanów."
+      "text": "perspektywę fanów."
     },
     {
-      "start": 504.42,
+      "start": 504.96,
+      "end": 505.15,
+      "text": "Osiem lat czekania"
+    },
+    {
+      "start": 505.15,
+      "end": 506.36,
+      "text": "na płytę to"
+    },
+    {
+      "start": 506.36,
       "end": 508.52,
-      "text": "Osiem lat czekania na płytę to naprawdę długo."
+      "text": "naprawdę długo."
     },
     {
-      "start": 517.52,
-      "end": 518.14,
+      "start": 516.52,
+      "end": 517.6,
       "text": "DZIENNIKARZ"
     },
     {
-      "start": 832.77,
-      "end": 839.61,
-      "text": "Wysłuchaliśmy Ascent, utworu z najnowszej płyty Dimmu Borgir."
+      "start": 833.92,
+      "end": 835.96,
+      "text": "Wysłuchaliśmy Ascend,"
     },
     {
-      "start": 839.77,
-      "end": 852.89,
-      "text": "Ci, co śledzą karierę zespołu, bez trudu zauważyli, że ten nowy album Norwegów, czyli Grand Serpent Rising, to płyta ponura i drapieżna."
+      "start": 835.96,
+      "end": 837.7,
+      "text": "utworu z najnowszej"
     },
     {
-      "start": 853.49,
-      "end": 872.49,
-      "text": "Dimmu Borgir dawno nie brzmiał tak groźnie, zapytałem zatem obu muzyków, czy taki był plan, czy podjęli świadomą decyzję o powrocie do estetyki, z którą mieli więcej wspólnego w przeszłości, a może nie kalkulowali."
+      "start": 837.7,
+      "end": 839.62,
+      "text": "płyty Dimmu Borgir."
     },
     {
-      "start": 873.31,
-      "end": 880.69,
-      "text": "Tak się po prostu stało. Wielki wąż wpełzł im na partyturę i napsocił."
+      "start": 840.22,
+      "end": 841.52,
+      "text": "Ci, co śledzą karierę"
     },
     {
-      "start": 880.69,
-      "end": 889.89,
-      "text": "Raczej dajemy się ponieść muzyce. Kiedy zaczynasz pracę nad nową płytą, nie możesz mieć na nią z góry założonego pomysłu."
+      "start": 841.52,
+      "end": 843.25,
+      "text": "zespołu, bez trudu"
     },
     {
-      "start": 890.15,
-      "end": 899.19,
-      "text": "Tworzymy po swojemu, a po zrobieniu trzeciej, czwartej, może piątej piosenki, zaczynamy rozumieć, dokąd to wszystko zmierza."
+      "start": 843.25,
+      "end": 844.97,
+      "text": "zauważyli, że ten"
     },
     {
-      "start": 900.15,
-      "end": 902.49,
-      "text": "Wcześniej po prostu płyniemy z murka."
+      "start": 844.97,
+      "end": 847.36,
+      "text": "nowy album Norwegów,"
     },
     {
-      "start": 904.77,
-      "end": 911.97,
-      "text": "Początkowo pracujemy osobno, po jakimś czasie zaczynamy się spotykać i łączyć już wypracowane elementy."
+      "start": 847.46,
+      "end": 849.18,
+      "text": "czyli Grand Serpent"
     },
     {
-      "start": 913.09,
-      "end": 914.97,
-      "text": "Ale muzyka i tak sama wytycza kierunek."
+      "start": 849.18,
+      "end": 850.77,
+      "text": "Rising, to płyta"
     },
     {
-      "start": 916.65,
-      "end": 926.91,
-      "text": "Gdybyśmy nawet usiedli i umówili się, że kolejna piosenka powinna być w określonym stylu, prawdopodobnie i tak zabrzmiałaby zupełnie inaczej."
+      "start": 850.77,
+      "end": 852.88,
+      "text": "ponura i drapieżna."
     },
     {
-      "start": 928.23,
-      "end": 930.43,
-      "text": "Wszystko musi przychodzić naturalnie."
+      "start": 853.48,
+      "end": 854.51,
+      "text": "Dimmu Borgir dawno"
     },
     {
-      "start": 931.45,
-      "end": 940.27,
-      "text": "Łącząc pomysły wszystkich członków zespołu, patrząc na muzykę z różnych perspektyw, sprawiamy, że brzmi interesująco."
+      "start": 854.51,
+      "end": 856.92,
+      "text": "nie brzmiał tak groźnie."
     },
     {
-      "start": 941.41,
-      "end": 948.93,
-      "text": "Lubię, kiedy w powstawanie utworów zaangażowanych jest więcej osób, bo kreatywność każdego człowieka jest inna."
+      "start": 856.92,
+      "end": 858.55,
+      "text": "Nie zapytałem zatem"
     },
     {
-      "start": 950.59,
-      "end": 960.29,
-      "text": "Twórczość jednej osoby może być jednowymiarowa, a ja najbardziej lubię słuchać utworów, w których za rogiem czai się jakaś niespodzianka."
+      "start": 858.55,
+      "end": 859.98,
+      "text": "obu muzyków, czy"
     },
     {
-      "start": 961.09,
-      "end": 969.73,
-      "text": "Myślę, że obecnie jesteśmy bardziej świadomi tego, co już zrobiliśmy i tego, czego już robić nie chcemy."
+      "start": 859.98,
+      "end": 861.63,
+      "text": "taki był plan, czy"
     },
     {
-      "start": 970.87,
-      "end": 977.13,
-      "text": "Przed nagraniem Grand Serpent Rising była jedna rzecz, o której rzeczywiście rozmawialiśmy."
+      "start": 861.63,
+      "end": 863.27,
+      "text": "podjęli świadomą"
     },
     {
-      "start": 977.93,
-      "end": 986.51,
-      "text": "Powiedzieliśmy sobie, tak, nasza muzyka to symfoniczny black metal, ale nie powinien być non-stop symfoniczny."
+      "start": 863.27,
+      "end": 863.92,
+      "text": "decyzję,"
     },
     {
-      "start": 987.19,
-      "end": 997.69,
-      "text": "Takie płyty też już nagrywaliśmy, teraz warto było odnaleźć równowagę pomiędzy metalowymi gitarami, a partiami symfonicznymi."
+      "start": 863.92,
+      "end": 866.02,
+      "text": "o powrocie do estetyki,"
     },
     {
-      "start": 1001.53,
-      "end": 1007.47,
-      "text": "Rzeczywiście, jak już Szagrad o tym powiedział, to i ja zauważyłem."
+      "start": 866.02,
+      "end": 867.14,
+      "text": "z którą mieli"
     },
     {
-      "start": 1007.93,
-      "end": 1022.31,
-      "text": "Podoba mi się Grand Serpent Rising, bo to znowu black metal i słychać, że gra zespół, a nie, że trzeba przepalić budżet na olbrzymi orkiestry i inne efekty specjalne."
+      "start": 867.14,
+      "end": 868.77,
+      "text": "więcej wspólnego w"
     },
     {
-      "start": 1022.97,
-      "end": 1032.51,
-      "text": "Pytałem też obu panów, jakie to uczucie, kiedy państwo dostrzega i docenia zasługi black metalowców."
+      "start": 868.77,
+      "end": 870.2,
+      "text": "przeszłości,"
     },
     {
-      "start": 1033.27,
-      "end": 1047.59,
-      "text": "Norwegia jest przecież bardzo dumna ze swoich black metalowych synów, chwalą się tą muzyką dyplomaci, państwowe instytucje organizują wystawy i konferencje."
+      "start": 870.46,
+      "end": 872.93,
+      "text": "a może nie kalkulowali,"
     },
     {
-      "start": 1048.31,
-      "end": 1052.01,
-      "text": "On hucha się na tych black metalowców i dmucha."
+      "start": 872.93,
+      "end": 874.39,
+      "text": "tak się po prostu"
     },
     {
-      "start": 1052.91,
-      "end": 1056.47,
-      "text": "To coś, co was zaskoczyło, czy wręcz przeciwnie?"
+      "start": 874.39,
+      "end": 875.42,
+      "text": "stało."
     },
     {
-      "start": 1057.31,
-      "end": 1062.51,
-      "text": "Spodziewaliście się tych honorów, bo wam się po prostu należały."
+      "start": 875.54,
+      "end": 877.39,
+      "text": "Wielki wąż wpełzł"
     },
     {
-      "start": 1063.07,
-      "end": 1067.55,
-      "text": "Można nas było ignorować tylko do pewnego czasu, mówi Silenos."
+      "start": 877.39,
+      "end": 879.19,
+      "text": "im na partyturę i"
     },
     {
-      "start": 1067.75,
-      "end": 1070.23,
-      "text": "W końcu musieli przyznać, że istniejemy."
+      "start": 879.19,
+      "end": 880.68,
+      "text": "napsocił."
     },
     {
-      "start": 1070.55,
-      "end": 1076.59,
-      "text": "Myślę jednak, że mogę wypowiedzieć się w imieniu większości norweskich zespołów metalowych."
+      "start": 881.2,
+      "end": 881.97,
+      "text": "Raczej dajemy się"
     },
     {
-      "start": 1077.31,
-      "end": 1078.55,
+      "start": 881.97,
+      "end": 883.46,
+      "text": "ponieść muzyce."
+    },
+    {
+      "start": 883.46,
+      "end": 884.65,
+      "text": "Kiedy zaczynasz"
+    },
+    {
+      "start": 884.65,
+      "end": 886.34,
+      "text": "pracę nad nową płytą,"
+    },
+    {
+      "start": 886.34,
+      "end": 887.84,
+      "text": "nie możesz mieć na"
+    },
+    {
+      "start": 887.84,
+      "end": 889.31,
+      "text": "nią z góry założonego"
+    },
+    {
+      "start": 889.31,
+      "end": 889.88,
+      "text": "pomysłu."
+    },
+    {
+      "start": 890.12,
+      "end": 891.58,
+      "text": "Tworzymy po swojemu,"
+    },
+    {
+      "start": 891.58,
+      "end": 893.22,
+      "text": "a po zrobieniu trzeciej,"
+    },
+    {
+      "start": 893.22,
+      "end": 894.72,
+      "text": "czwartej, może piątej"
+    },
+    {
+      "start": 894.72,
+      "end": 895.58,
+      "text": "piosenki"
+    },
+    {
+      "start": 895.58,
+      "end": 897.12,
+      "text": "zaczynamy rozumieć,"
+    },
+    {
+      "start": 897.12,
+      "end": 898.33,
+      "text": "dokąd to wszystko"
+    },
+    {
+      "start": 898.33,
+      "end": 899.2,
+      "text": "zmierza."
+    },
+    {
+      "start": 900.16,
+      "end": 900.77,
+      "text": "Wcześniej po prostu"
+    },
+    {
+      "start": 900.77,
+      "end": 902.48,
+      "text": "płyniemy z murtem."
+    },
+    {
+      "start": 904.98,
+      "end": 905.17,
+      "text": "Początkowo pracujemy"
+    },
+    {
+      "start": 905.17,
+      "end": 906.5,
+      "text": "osobno."
+    },
+    {
+      "start": 906.5,
+      "end": 907.68,
+      "text": "Po jakimś czasie"
+    },
+    {
+      "start": 907.68,
+      "end": 909.4,
+      "text": "zaczynamy się spotykać"
+    },
+    {
+      "start": 909.4,
+      "end": 911.63,
+      "text": "i łączyć już wypracowane"
+    },
+    {
+      "start": 911.63,
+      "end": 912.88,
+      "text": "elementy."
+    },
+    {
+      "start": 912.88,
+      "end": 913.84,
+      "text": "Ale muzyka i tak"
+    },
+    {
+      "start": 913.84,
+      "end": 915.52,
+      "text": "sama wytycza kierunek."
+    },
+    {
+      "start": 916.64,
+      "end": 917.63,
+      "text": "Gdybyśmy nawet usiedli"
+    },
+    {
+      "start": 917.63,
+      "end": 919.24,
+      "text": "i umówili się, że"
+    },
+    {
+      "start": 919.24,
+      "end": 920.6,
+      "text": "kolejna piosenka"
+    },
+    {
+      "start": 920.6,
+      "end": 922.49,
+      "text": "powinna być w określonym"
+    },
+    {
+      "start": 922.49,
+      "end": 922.94,
+      "text": "stylu,"
+    },
+    {
+      "start": 923.58,
+      "end": 924.15,
+      "text": "prawdopodobnie i"
+    },
+    {
+      "start": 924.15,
+      "end": 925.34,
+      "text": "tak zabrzmiałaby"
+    },
+    {
+      "start": 925.34,
+      "end": 926.9,
+      "text": "zupełnie inaczej."
+    },
+    {
+      "start": 928.26,
+      "end": 929.07,
+      "text": "Wszystko musi przychodzić"
+    },
+    {
+      "start": 929.07,
+      "end": 930.34,
+      "text": "naturalnie."
+    },
+    {
+      "start": 931.46,
+      "end": 931.6,
+      "text": "Łącząc pomysły"
+    },
+    {
+      "start": 931.6,
+      "end": 932.98,
+      "text": "wszystkich członków"
+    },
+    {
+      "start": 932.98,
+      "end": 934.58,
+      "text": "zespołu, patrząc na"
+    },
+    {
+      "start": 934.58,
+      "end": 936.02,
+      "text": "muzykę z różnych"
+    },
+    {
+      "start": 936.02,
+      "end": 936.94,
+      "text": "perspektyw,"
+    },
+    {
+      "start": 937.8,
+      "end": 939.25,
+      "text": "i sprawiamy, że brzmi"
+    },
+    {
+      "start": 939.25,
+      "end": 940.3,
+      "text": "interesująco."
+    },
+    {
+      "start": 941.4,
+      "end": 943.03,
+      "text": "Lubię, kiedy w powstawaniu"
+    },
+    {
+      "start": 943.03,
+      "end": 944.52,
+      "text": "utworów zaangażowanych"
+    },
+    {
+      "start": 944.52,
+      "end": 945.54,
+      "text": "jest więcej osób,"
+    },
+    {
+      "start": 946.26,
+      "end": 947.18,
+      "text": "bo kreatywność każdego"
+    },
+    {
+      "start": 947.18,
+      "end": 948.92,
+      "text": "człowieka jest inna."
+    },
+    {
+      "start": 950.68,
+      "end": 950.82,
+      "text": "Twórczość jednej"
+    },
+    {
+      "start": 950.82,
+      "end": 953.92,
+      "text": "osoby może być jednowymiarowa."
+    },
+    {
+      "start": 953.92,
+      "end": 954.96,
+      "text": "A ja najbardziej"
+    },
+    {
+      "start": 954.96,
+      "end": 956.58,
+      "text": "lubię słuchać utworów,"
+    },
+    {
+      "start": 956.58,
+      "end": 957.72,
+      "text": "w których za rogiem"
+    },
+    {
+      "start": 957.72,
+      "end": 958.69,
+      "text": "czaje się jakaś"
+    },
+    {
+      "start": 958.69,
+      "end": 960.69,
+      "text": "niespodzianka. Myślę,"
+    },
+    {
+      "start": 960.69,
+      "end": 962.6,
+      "text": "że obecnie jesteśmy"
+    },
+    {
+      "start": 962.6,
+      "end": 964.38,
+      "text": "bardziej świadomi"
+    },
+    {
+      "start": 964.38,
+      "end": 966.67,
+      "text": "tego, co już zrobiliśmy"
+    },
+    {
+      "start": 966.67,
+      "end": 968.29,
+      "text": "i tego, czego już"
+    },
+    {
+      "start": 968.29,
+      "end": 970.3,
+      "text": "robić nie chcemy."
+    },
+    {
+      "start": 970.3,
+      "end": 971.51,
+      "text": "Przed nagraniem"
+    },
+    {
+      "start": 971.51,
+      "end": 972.61,
+      "text": "Grand Serpent"
+    },
+    {
+      "start": 972.61,
+      "end": 973.86,
+      "text": "Rising była jedna"
+    },
+    {
+      "start": 973.86,
+      "end": 975.09,
+      "text": "rzecz, o której"
+    },
+    {
+      "start": 975.09,
+      "end": 977.5,
+      "text": "rzeczywiście rozmawialiśmy."
+    },
+    {
+      "start": 977.5,
+      "end": 978.72,
+      "text": "Powiedzieliśmy"
+    },
+    {
+      "start": 978.72,
+      "end": 980.19,
+      "text": "sobie, tak, nasza"
+    },
+    {
+      "start": 980.19,
+      "end": 981.82,
+      "text": "muzyka to symfoniczny"
+    },
+    {
+      "start": 981.82,
+      "end": 983.13,
+      "text": "black metal, ale"
+    },
+    {
+      "start": 983.13,
+      "end": 984.35,
+      "text": "nie powinien być"
+    },
+    {
+      "start": 984.35,
+      "end": 986.54,
+      "text": "non-stop symfoniczny."
+    },
+    {
+      "start": 986.86,
+      "end": 988.08,
+      "text": "Takie płyty też już"
+    },
+    {
+      "start": 988.08,
+      "end": 990.04,
+      "text": "nagrywaliśmy, teraz"
+    },
+    {
+      "start": 990.04,
+      "end": 991.56,
+      "text": "warto było odnaleźć"
+    },
+    {
+      "start": 991.56,
+      "end": 993.2,
+      "text": "równowagę pomiędzy"
+    },
+    {
+      "start": 993.2,
+      "end": 994.95,
+      "text": "metalowymi gitarami"
+    },
+    {
+      "start": 994.95,
+      "end": 997.7,
+      "text": "a partiami symfonicznymi."
+    },
+    {
+      "start": 1000.3,
+      "end": 1002.27,
+      "text": "Rzeczywiście, jak"
+    },
+    {
+      "start": 1002.27,
+      "end": 1003.89,
+      "text": "już Szagrad o tym"
+    },
+    {
+      "start": 1003.89,
+      "end": 1005.86,
+      "text": "powiedział, to i ja"
+    },
+    {
+      "start": 1005.86,
+      "end": 1008.08,
+      "text": "zauważyłem. Podoba"
+    },
+    {
+      "start": 1008.08,
+      "end": 1009.78,
+      "text": "mi się Grand Serpent"
+    },
+    {
+      "start": 1009.78,
+      "end": 1011.48,
+      "text": "Rising, bo to znowu"
+    },
+    {
+      "start": 1011.48,
+      "end": 1013.48,
+      "text": "black metal i słychać,"
+    },
+    {
+      "start": 1013.48,
+      "end": 1014.92,
+      "text": "że gra zespół, a"
+    },
+    {
+      "start": 1014.92,
+      "end": 1016.26,
+      "text": "nie, że trzeba"
+    },
+    {
+      "start": 1016.26,
+      "end": 1018.04,
+      "text": "przepalić budżet na"
+    },
+    {
+      "start": 1018.04,
+      "end": 1019.82,
+      "text": "olbrzymi orkiestry"
+    },
+    {
+      "start": 1019.82,
+      "end": 1020.97,
+      "text": "i inne efekty"
+    },
+    {
+      "start": 1020.97,
+      "end": 1022.3,
+      "text": "specjalne."
+    },
+    {
+      "start": 1022.84,
+      "end": 1024.95,
+      "text": "Pytałem też obu panów,"
+    },
+    {
+      "start": 1024.95,
+      "end": 1026.64,
+      "text": "jakie to uczucie,"
+    },
+    {
+      "start": 1026.64,
+      "end": 1028.88,
+      "text": "kiedy państwo dostrzega"
+    },
+    {
+      "start": 1028.88,
+      "end": 1030.46,
+      "text": "i docenia zasługi"
+    },
+    {
+      "start": 1030.46,
+      "end": 1032.52,
+      "text": "black metalowców."
+    },
+    {
+      "start": 1033.18,
+      "end": 1034.42,
+      "text": "Norwegia jest przecież"
+    },
+    {
+      "start": 1034.42,
+      "end": 1036.36,
+      "text": "bardzo dumna ze swoich"
+    },
+    {
+      "start": 1036.36,
+      "end": 1037.65,
+      "text": "black metalowych"
+    },
+    {
+      "start": 1037.65,
+      "end": 1038.5,
+      "text": "synów."
+    },
+    {
+      "start": 1038.66,
+      "end": 1040.44,
+      "text": "Chwalą się tą muzyką"
+    },
+    {
+      "start": 1040.44,
+      "end": 1041.78,
+      "text": "dyplomaci."
+    },
+    {
+      "start": 1042.5,
+      "end": 1043.9,
+      "text": "Państwowe instytucje"
+    },
+    {
+      "start": 1043.9,
+      "end": 1045.81,
+      "text": "organizują wystawy"
+    },
+    {
+      "start": 1045.81,
+      "end": 1047.58,
+      "text": "i konferencje."
+    },
+    {
+      "start": 1048.3,
+      "end": 1049.08,
+      "text": "Hucha się na tych"
+    },
+    {
+      "start": 1049.08,
+      "end": 1050.87,
+      "text": "black metalowców i"
+    },
+    {
+      "start": 1050.87,
+      "end": 1051.98,
+      "text": "dmucha."
+    },
+    {
+      "start": 1052.88,
+      "end": 1054.32,
+      "text": "To coś, co was zaskoczyło,"
+    },
+    {
+      "start": 1054.32,
+      "end": 1056.48,
+      "text": "czy wręcz przeciwnie?"
+    },
+    {
+      "start": 1057.16,
+      "end": 1058.32,
+      "text": "Spodziewaliście się"
+    },
+    {
+      "start": 1058.32,
+      "end": 1059.85,
+      "text": "tych honorów, bo"
+    },
+    {
+      "start": 1059.85,
+      "end": 1062.52,
+      "text": "wam się po prostu należały."
+    },
+    {
+      "start": 1062.94,
+      "end": 1063.91,
+      "text": "Można nas było"
+    },
+    {
+      "start": 1063.91,
+      "end": 1065.25,
+      "text": "ignorować tylko do"
+    },
+    {
+      "start": 1065.25,
+      "end": 1066.69,
+      "text": "pewnego czasu, mówi"
+    },
+    {
+      "start": 1066.69,
+      "end": 1067.58,
+      "text": "Silenos."
+    },
+    {
+      "start": 1067.74,
+      "end": 1068.49,
+      "text": "W końcu musieli"
+    },
+    {
+      "start": 1068.49,
+      "end": 1070.22,
+      "text": "przyznać, że istniejemy."
+    },
+    {
+      "start": 1070.54,
+      "end": 1071.51,
+      "text": "Myślę jednak, że"
+    },
+    {
+      "start": 1071.51,
+      "end": 1072.9,
+      "text": "mogę wypowiedzieć"
+    },
+    {
+      "start": 1072.9,
+      "end": 1073.92,
+      "text": "się w imieniu wypowiedzi."
+    },
+    {
+      "start": 1073.92,
+      "end": 1075.26,
+      "text": "większości norweskich"
+    },
+    {
+      "start": 1075.26,
+      "end": 1076.6,
+      "text": "zespołów metalowych."
+    },
+    {
+      "start": 1077.32,
+      "end": 1078.56,
       "text": "Nie to nas napędza."
     },
     {
-      "start": 1079.25,
-      "end": 1087.99,
-      "text": "Fajnie i miło być docenianym, poklepanym po plecach, ale nie ma to żadnego wpływu na naszą działalność."
+      "start": 1079.14,
+      "end": 1080.03,
+      "text": "Fajnie i miło być"
     },
     {
-      "start": 1087.99,
-      "end": 1092.71,
-      "text": "Nie można udawać, że ta wspaniała muzyka nie istnieje."
+      "start": 1080.03,
+      "end": 1082.17,
+      "text": "docenianym, poklepanym"
     },
     {
-      "start": 1093.37,
-      "end": 1094.71,
+      "start": 1082.17,
+      "end": 1083.14,
+      "text": "po plecach,"
+    },
+    {
+      "start": 1083.84,
+      "end": 1085.46,
+      "text": "ale nie ma to żadnego"
+    },
+    {
+      "start": 1085.46,
+      "end": 1087.17,
+      "text": "wpływu na naszą"
+    },
+    {
+      "start": 1087.17,
+      "end": 1088.02,
+      "text": "działalność."
+    },
+    {
+      "start": 1089.02,
+      "end": 1089.54,
+      "text": "Nie można udawać,"
+    },
+    {
+      "start": 1089.54,
+      "end": 1091.32,
+      "text": "że ta wspaniała muzyka"
+    },
+    {
+      "start": 1091.32,
+      "end": 1092.7,
+      "text": "nie istnieje."
+    },
+    {
+      "start": 1093.36,
+      "end": 1094.7,
       "text": "Zgadza się z nim Szagrat."
     },
     {
-      "start": 1095.81,
-      "end": 1099.97,
-      "text": "Przypomnij sobie płyty, które powstawały w Norwegii na początku lat 90."
+      "start": 1095.82,
+      "end": 1096.98,
+      "text": "Przypomnij sobie płyty,"
     },
     {
-      "start": 1100.81,
-      "end": 1102.29,
+      "start": 1096.98,
+      "end": 1098,
+      "text": "które powstawały w"
+    },
+    {
+      "start": 1098,
+      "end": 1098.68,
+      "text": "Norwegii na"
+    },
+    {
+      "start": 1098.68,
+      "end": 1099.98,
+      "text": "początku lat 90."
+    },
+    {
+      "start": 1100.82,
+      "end": 1103.02,
       "text": "Wsłuchaj się w szczegóły."
     },
     {
-      "start": 1103.17,
-      "end": 1104.55,
-      "text": "Tego nie da się ignorować."
+      "start": 1103.18,
+      "end": 1103.85,
+      "text": "Tego nie da się"
     },
     {
-      "start": 1105.67,
-      "end": 1110.21,
-      "text": "Na początku oczywiście nie mieliśmy lekko, ale teraz jesteśmy akceptowani."
+      "start": 1103.85,
+      "end": 1104.56,
+      "text": "ignorować."
     },
     {
-      "start": 1110.85,
-      "end": 1116.27,
-      "text": "Metal jako taki stał się bardziej akceptowalny, czego dowodem są choćby liczne festiwale."
+      "start": 1105.7,
+      "end": 1105.71,
+      "text": "Na początku"
     },
     {
-      "start": 1117.05,
-      "end": 1119.55,
-      "text": "Dziś wszystko jest bardziej cywilizowane."
+      "start": 1105.71,
+      "end": 1106.55,
+      "text": "oczywiście nie"
     },
     {
-      "start": 1459.85,
+      "start": 1106.55,
+      "end": 1107.88,
+      "text": "mieliśmy lekko,"
+    },
+    {
+      "start": 1108.32,
+      "end": 1109.1,
+      "text": "ale teraz jesteśmy"
+    },
+    {
+      "start": 1109.1,
+      "end": 1110.2,
+      "text": "akceptowani."
+    },
+    {
+      "start": 1111.28,
+      "end": 1111.63,
+      "text": "Metal jako taki stał"
+    },
+    {
+      "start": 1111.63,
+      "end": 1113.78,
+      "text": "się bardziej akceptowalny,"
+    },
+    {
+      "start": 1113.92,
+      "end": 1114.68,
+      "text": "czego dowodem są"
+    },
+    {
+      "start": 1114.68,
+      "end": 1116.28,
+      "text": "choćby liczne festiwale."
+    },
+    {
+      "start": 1117.08,
+      "end": 1117.59,
+      "text": "Dziś wszystko jest"
+    },
+    {
+      "start": 1117.59,
+      "end": 1119.58,
+      "text": "bardziej cywilizowane."
+    },
+    {
+      "start": 1123.16,
+      "end": 1123.84,
+      "text": "bardziej cywilizowane."
+    },
+    {
+      "start": 1459.87,
+      "end": 1461.37,
+      "text": "Silenos i Szagrat"
+    },
+    {
+      "start": 1461.37,
+      "end": 1463.75,
+      "text": "to filary, Dimmu Borgir,"
+    },
+    {
+      "start": 1463.75,
+      "end": 1466.11,
+      "text": "dwa silniki napędzające"
+    },
+    {
+      "start": 1466.11,
+      "end": 1468.31,
+      "text": "tę machinę, serce i"
+    },
+    {
+      "start": 1468.31,
       "end": 1469.57,
-      "text": "Silenos i Szagrat to filary Dimuborgir, dwa silniki napędzające tę machinę, serce i rozum."
+      "text": "rozum."
     },
     {
       "start": 1470.17,
-      "end": 1479.25,
-      "text": "Ale tym trzecim muzykiem, który w obecnym składzie grupy ma oprócz nich najdłuższy staż, jest Daraj,"
+      "end": 1472.01,
+      "text": "Ale tym trzecim muzykiem,"
     },
     {
-      "start": 1479.25,
-      "end": 1492.81,
-      "text": "czyli Darek Brzozowski, znakomity perkusista, którego znacie m.in. z Wejdera, Huntera, Vesanii, Neolitik i paru innych składów."
+      "start": 1472.01,
+      "end": 1474.46,
+      "text": "który w obecnym składzie"
     },
     {
-      "start": 1493.73,
+      "start": 1474.46,
+      "end": 1475.63,
+      "text": "grupy ma oprócz"
+    },
+    {
+      "start": 1475.63,
+      "end": 1478.16,
+      "text": "nich najdłuższy staż,"
+    },
+    {
+      "start": 1478.16,
+      "end": 1479.75,
+      "text": "jest Daraj, czyli"
+    },
+    {
+      "start": 1479.75,
+      "end": 1481.53,
+      "text": "Darek Brzozowski,"
+    },
+    {
+      "start": 1481.53,
+      "end": 1483.85,
+      "text": "znakomity perkusista,"
+    },
+    {
+      "start": 1483.85,
+      "end": 1486.3,
+      "text": "którego znacie m.in."
+    },
+    {
+      "start": 1486.3,
+      "end": 1488.4,
+      "text": "Svejdera, Huntera,"
+    },
+    {
+      "start": 1488.4,
+      "end": 1490.54,
+      "text": "Vesanii, Neolitik i"
+    },
+    {
+      "start": 1490.54,
+      "end": 1492.83,
+      "text": "paru innych składów."
+    },
+    {
+      "start": 1493.71,
+      "end": 1494.38,
+      "text": "Niby ja wiem, że"
+    },
+    {
+      "start": 1494.38,
+      "end": 1495.81,
+      "text": "Polak potrafi i"
+    },
+    {
+      "start": 1495.81,
+      "end": 1498.02,
+      "text": "Państwo też to wiecie,"
+    },
+    {
+      "start": 1498.02,
+      "end": 1500.51,
+      "text": "ale miło było usłyszeć,"
+    },
+    {
+      "start": 1500.51,
+      "end": 1502.72,
+      "text": "jak Szagrat i Silenos"
+    },
+    {
+      "start": 1502.72,
       "end": 1505.89,
-      "text": "Niby ja wiem, że Polak potrafi i Państwo też to wiecie, ale miło było usłyszeć, jak Szagrat i Silenos skwapliwie to potwierdzali."
+      "text": "skwapliwie to potwierdzali."
     },
     {
-      "start": 1506.53,
+      "start": 1505.89,
+      "end": 1507.69,
+      "text": "Daraj wnosi do zespołu"
+    },
+    {
+      "start": 1507.69,
+      "end": 1509.73,
+      "text": "poczucie stabilności,"
+    },
+    {
+      "start": 1509.73,
       "end": 1511.69,
-      "text": "Daraj wnosi do zespołu poczucie stabilności, odpowiada Silenos."
+      "text": "odpowiada Silenos."
     },
     {
       "start": 1512.85,
-      "end": 1517.63,
-      "text": "Do tego gra niesamowicie dobrze. W każdej sytuacji możemy na nim polegać."
+      "end": 1513.69,
+      "text": "Do tego gra niesamowicie"
     },
     {
-      "start": 1518.77,
-      "end": 1524.33,
-      "text": "Zna swoje rzemiosło, traktuje instrument bardzo poważnie. Oddycha bębdami."
+      "start": 1513.69,
+      "end": 1515.18,
+      "text": "dobrze. W każdej"
+    },
+    {
+      "start": 1515.18,
+      "end": 1516.5,
+      "text": "sytuacji możemy na"
+    },
+    {
+      "start": 1516.5,
+      "end": 1517.63,
+      "text": "nim polegać."
+    },
+    {
+      "start": 1518.75,
+      "end": 1519.37,
+      "text": "Zna swoje rzemiosło,"
+    },
+    {
+      "start": 1519.37,
+      "end": 1521.04,
+      "text": "traktuje instrument"
+    },
+    {
+      "start": 1521.04,
+      "end": 1523.35,
+      "text": "bardzo poważnie. Oddycha"
+    },
+    {
+      "start": 1523.35,
+      "end": 1524.31,
+      "text": "bębdami."
     },
     {
       "start": 1525.45,
-      "end": 1531.65,
-      "text": "Mówimy przecież o gościu, który zastąpił w Wejderze docenta. Nie każdy potrafiłby to zrobić."
+      "end": 1525.76,
+      "text": "Mówimy przecież o"
     },
     {
-      "start": 1532.45,
-      "end": 1546.45,
-      "text": "Kiedy nasz wspólny znajomy dał nam znać, że Daraj jest do wzięcia, a my akurat byliśmy pomiędzy trasami, zaprosiliśmy go na próbę i od razu wiedzieliśmy, że to człowiek, którego potrzebujemy."
+      "start": 1525.76,
+      "end": 1527.69,
+      "text": "gościu, który zastąpił"
     },
     {
-      "start": 1549.33,
+      "start": 1527.69,
+      "end": 1529.74,
+      "text": "w wejderze docenta."
+    },
+    {
+      "start": 1529.74,
+      "end": 1530.85,
+      "text": "Nie każdy potrafiłby"
+    },
+    {
+      "start": 1530.85,
+      "end": 1531.67,
+      "text": "to zrobić."
+    },
+    {
+      "start": 1532.53,
+      "end": 1533.75,
+      "text": "Kiedy nasz wspólny"
+    },
+    {
+      "start": 1533.75,
+      "end": 1535.18,
+      "text": "znajomy dał nam znać,"
+    },
+    {
+      "start": 1535.18,
+      "end": 1536.99,
+      "text": "że Daraj jest do wzięcia,"
+    },
+    {
+      "start": 1536.99,
+      "end": 1538.28,
+      "text": "a my akurat byliśmy"
+    },
+    {
+      "start": 1538.28,
+      "end": 1539.71,
+      "text": "pomiędzy trasami,"
+    },
+    {
+      "start": 1539.71,
+      "end": 1541.54,
+      "text": "zaprosiliśmy go na"
+    },
+    {
+      "start": 1541.54,
+      "end": 1543.56,
+      "text": "próbę i od razu wiedzieliśmy,"
+    },
+    {
+      "start": 1543.56,
+      "end": 1544.61,
+      "text": "że to człowiek,"
+    },
+    {
+      "start": 1544.61,
+      "end": 1546.43,
+      "text": "którego potrzebujemy."
+    },
+    {
+      "start": 1549.39,
+      "end": 1550.3,
+      "text": "Ważna jest nie"
+    },
+    {
+      "start": 1550.3,
+      "end": 1551.61,
+      "text": "tylko sama gra, ale"
+    },
+    {
+      "start": 1551.61,
+      "end": 1553.18,
+      "text": "i to, kto za tymi bębnami"
+    },
+    {
+      "start": 1553.18,
+      "end": 1554.47,
+      "text": "siedzi, dopowiada"
+    },
+    {
+      "start": 1554.47,
       "end": 1555.45,
-      "text": "Ważna jest nie tylko sama gra, ale i to, kto za tymi bębnami siedzi, dopowiada Szagrat."
+      "text": "Szagrat."
     },
     {
       "start": 1556.41,
+      "end": 1556.72,
+      "text": "Daraj jest nie"
+    },
+    {
+      "start": 1556.72,
+      "end": 1558.6,
+      "text": "tylko dobrym perkusistą,"
+    },
+    {
+      "start": 1558.6,
+      "end": 1559.68,
+      "text": "ale też dobrym"
+    },
+    {
+      "start": 1559.68,
+      "end": 1561.3,
+      "text": "człowiekiem, który"
+    },
+    {
+      "start": 1561.3,
+      "end": 1562.56,
+      "text": "umie się z innymi"
+    },
+    {
+      "start": 1562.56,
       "end": 1563.59,
-      "text": "Daraj jest nie tylko dobrym perkusistą, ale też dobrym człowiekiem, który umie się z innymi dogadać."
+      "text": "dogadać."
     },
     {
-      "start": 1563.75,
+      "start": 1564.33,
+      "end": 1565.61,
+      "text": "Jest spokojny, uprzejmy,"
+    },
+    {
+      "start": 1565.61,
+      "end": 1566.71,
+      "text": "zawsze można na"
+    },
+    {
+      "start": 1566.71,
       "end": 1567.97,
-      "text": "Jest spokojny, uprzejmy, zawsze można na niego liczyć."
+      "text": "niego liczyć."
     },
     {
-      "start": 1568.85,
+      "start": 1568.83,
+      "end": 1569.65,
+      "text": "Jeśli popełnia"
+    },
+    {
+      "start": 1569.65,
+      "end": 1570.93,
+      "text": "jakieś błędy, może"
+    },
+    {
+      "start": 1570.93,
+      "end": 1572.17,
+      "text": "zdarza mu się opuścić"
+    },
+    {
+      "start": 1572.17,
+      "end": 1573.31,
+      "text": "jedno uderzenie w"
+    },
+    {
+      "start": 1573.31,
+      "end": 1574.76,
+      "text": "blachę podczas całego"
+    },
+    {
+      "start": 1574.76,
       "end": 1575.75,
-      "text": "Jeśli popełnia jakieś błędy, może zdarza mu się opuścić jedno uderzenie w blachę podczas całego koncertu."
+      "text": "koncertu."
     },
     {
-      "start": 1576.99,
-      "end": 1580.31,
-      "text": "Jesteśmy bardzo dumni z tego, że gra w naszym zespole."
+      "start": 1576.75,
+      "end": 1577.21,
+      "text": "Jesteśmy bardzo dumni"
     },
     {
-      "start": 1580.95,
-      "end": 1582.35,
-      "text": "Już od 18 lat."
+      "start": 1577.21,
+      "end": 1578.18,
+      "text": "z tego, że gra w"
     },
     {
-      "start": 1584.31,
-      "end": 1595.31,
-      "text": "Fanów Black Metalu i okolic zelektryzowała niedawno wiadomość, że Dimmu Borgir jadą na wspólną trasę z Behemothem."
+      "start": 1578.18,
+      "end": 1579.87,
+      "text": "naszym zainteresie."
     },
     {
-      "start": 1596.77,
-      "end": 1602.29,
-      "text": "W Polsce też zagrają razem 25 października w Katowicach."
+      "start": 1579.87,
+      "end": 1581.7,
+      "text": "Zespole już od 18"
     },
     {
-      "start": 1603.25,
-      "end": 1610.73,
-      "text": "Rzadko się zdarza, by zespoły uważane za konkurencję, a tak Behemoth i Dimmu Borgir są postrzegane."
+      "start": 1581.7,
+      "end": 1584.61,
+      "text": "lat. Fanów black"
     },
     {
-      "start": 1611.97,
+      "start": 1584.61,
+      "end": 1588.13,
+      "text": "metalu i okolic zelektryzowała"
+    },
+    {
+      "start": 1588.13,
+      "end": 1588.87,
+      "text": "niedawno wiadomość,"
+    },
+    {
+      "start": 1588.87,
+      "end": 1591.35,
+      "text": "że Dimu Borgir jadą"
+    },
+    {
+      "start": 1591.35,
+      "end": 1593.86,
+      "text": "na wspólną trasę z"
+    },
+    {
+      "start": 1593.86,
+      "end": 1596.05,
+      "text": "Behemothem."
+    },
+    {
+      "start": 1596.05,
+      "end": 1597.99,
+      "text": "W Polsce też zagrają"
+    },
+    {
+      "start": 1597.99,
+      "end": 1600.67,
+      "text": "razem 25 października"
+    },
+    {
+      "start": 1600.67,
+      "end": 1602.89,
+      "text": "w Katowicach. Rzadko"
+    },
+    {
+      "start": 1602.89,
+      "end": 1604.92,
+      "text": "się zdarza, by zespoły"
+    },
+    {
+      "start": 1604.92,
+      "end": 1607.43,
+      "text": "uważane za konkurencję."
+    },
+    {
+      "start": 1607.57,
+      "end": 1608.93,
+      "text": "Tak, Behemoth i Dimu"
+    },
+    {
+      "start": 1608.93,
+      "end": 1610.72,
+      "text": "Borgir są postrzegane."
+    },
+    {
+      "start": 1610.72,
+      "end": 1612.49,
+      "text": "Zespoły w dodatku o"
+    },
+    {
+      "start": 1612.49,
+      "end": 1614.14,
+      "text": "podobnie wysokim"
+    },
+    {
+      "start": 1614.14,
+      "end": 1616.41,
+      "text": "poziomie popularności"
+    },
+    {
+      "start": 1616.41,
+      "end": 1618.04,
+      "text": "decydowały się na"
+    },
+    {
+      "start": 1618.04,
       "end": 1619.85,
-      "text": "Zespoły w dodatku o podobnie wysokim poziomie popularności decydowały się na wspólne koncerty,"
+      "text": "wspólne koncerty,"
     },
     {
       "start": 1619.85,
-      "end": 1626.91,
-      "text": "bo po prostu mało kto lubi dzielić się splendorem i pewnie pieniędzmi."
+      "end": 1621.46,
+      "text": "bo po prostu mało"
     },
     {
-      "start": 1627.29,
-      "end": 1632.85,
-      "text": "Nie po raz pierwszy jedziemy w trasę z Behemothem, zauważa Silenus."
+      "start": 1621.46,
+      "end": 1623.05,
+      "text": "kto lubi dzielić"
+    },
+    {
+      "start": 1623.05,
+      "end": 1625.34,
+      "text": "się splendorem i pewnie"
+    },
+    {
+      "start": 1625.34,
+      "end": 1626.89,
+      "text": "pieniędzmi."
+    },
+    {
+      "start": 1627.25,
+      "end": 1628.33,
+      "text": "Nie po raz pierwszy"
+    },
+    {
+      "start": 1628.33,
+      "end": 1629.78,
+      "text": "jedziemy w trasę z"
+    },
+    {
+      "start": 1629.78,
+      "end": 1631.39,
+      "text": "Behemothem, zauważa"
+    },
+    {
+      "start": 1631.39,
+      "end": 1632.35,
+      "text": "Silenus."
     },
     {
       "start": 1633.13,
-      "end": 1639.07,
-      "text": "Graliśmy już razem w Stanach w 2007 roku i od tamtej pory ciągle gadaliśmy o tym,"
+      "end": 1634.36,
+      "text": "Graliśmy już razem"
     },
     {
-      "start": 1639.57,
+      "start": 1634.36,
+      "end": 1636,
+      "text": "w Stanach w 2007"
+    },
+    {
+      "start": 1636,
+      "end": 1637.33,
+      "text": "roku i od tamtej pory"
+    },
+    {
+      "start": 1637.33,
+      "end": 1638.56,
+      "text": "ciągle gadaliśmy o"
+    },
+    {
+      "start": 1638.56,
+      "end": 1639.65,
+      "text": "tym, że trzeba w"
+    },
+    {
+      "start": 1639.65,
+      "end": 1641.1,
+      "text": "końcu porządnie wziąć"
+    },
+    {
+      "start": 1641.1,
       "end": 1642.47,
-      "text": "że trzeba w końcu porządnie wziąć się za Europę."
+      "text": "się za Europę."
     },
     {
       "start": 1642.97,
-      "end": 1647.15,
-      "text": "Wiele nasze zespoły różni, ale mamy też ze sobą wiele wspólnego."
+      "end": 1644.05,
+      "text": "Wiele nasze zespoły"
     },
     {
-      "start": 1647.15,
-      "end": 1651.15,
-      "text": "Łączą nas kwestie estetyczne oraz podobny poziom zaangażowania."
+      "start": 1644.05,
+      "end": 1645.19,
+      "text": "różni, ale mamy też"
     },
     {
-      "start": 1652.23,
-      "end": 1653.31,
-      "text": "Nie mieliśmy planu B."
+      "start": 1645.19,
+      "end": 1647.13,
+      "text": "ze sobą wiele wspólnego."
     },
     {
-      "start": 1653.83,
-      "end": 1658.43,
-      "text": "Skoczyliśmy w to wszystko bez spadochronu i robimy to od ponad trzech dekad."
+      "start": 1647.49,
+      "end": 1648.06,
+      "text": "Łączą nas kwestie"
     },
     {
-      "start": 1658.85,
-      "end": 1661.15,
-      "text": "Zaprosiliśmy na tę trasę również Dark Funeral."
+      "start": 1648.06,
+      "end": 1649.06,
+      "text": "estetyczne oraz"
     },
     {
-      "start": 1661.95,
-      "end": 1662.83,
-      "text": "To też weterani."
+      "start": 1649.06,
+      "end": 1651.13,
+      "text": "podobny poziom zaangażowania."
     },
     {
-      "start": 1663.01,
+      "start": 1652.25,
+      "end": 1652.83,
+      "text": "Nie mieliśmy planu"
+    },
+    {
+      "start": 1652.83,
+      "end": 1654.36,
+      "text": "B. Skoczyliśmy w to"
+    },
+    {
+      "start": 1654.36,
+      "end": 1656.03,
+      "text": "wszystko bez spadochronu"
+    },
+    {
+      "start": 1656.03,
+      "end": 1657.24,
+      "text": "i robimy to od ponad"
+    },
+    {
+      "start": 1657.24,
+      "end": 1658.41,
+      "text": "trzech dekad."
+    },
+    {
+      "start": 1658.81,
+      "end": 1659.89,
+      "text": "Zaprosiliśmy na tę"
+    },
+    {
+      "start": 1659.89,
+      "end": 1660.89,
+      "text": "trasę również Dark"
+    },
+    {
+      "start": 1660.89,
+      "end": 1662.85,
+      "text": "Funeral. To też weterani."
+    },
+    {
+      "start": 1663.79,
+      "end": 1664.25,
+      "text": "Myślę, że większej"
+    },
+    {
+      "start": 1664.25,
+      "end": 1665.83,
+      "text": "black metalowej trasy"
+    },
+    {
+      "start": 1665.83,
+      "end": 1667.19,
+      "text": "dotąd w Europie nie"
+    },
+    {
+      "start": 1667.19,
+      "end": 1668.06,
+      "text": "było i bardzo"
+    },
+    {
+      "start": 1668.06,
       "end": 1669.95,
-      "text": "Myślę, że większej black metalowej trasy dotąd w Europie nie było i bardzo jesteśmy z tego dumni."
+      "text": "jesteśmy z tego dumni."
     },
     {
-      "start": 1670.73,
-      "end": 1672.35,
+      "start": 1670.75,
+      "end": 1672.57,
       "text": "Nie możemy się doczekać."
     },
     {
-      "start": 1674.35,
-      "end": 1684.19,
-      "text": "Wspólna trasa dwóch popularnych zespołów może być wyzwaniem, choćby ze względu na produkcję sceniczną i czas, który trzeba poświęcić na jej przygotowanie."
+      "start": 1674.37,
+      "end": 1676.37,
+      "text": "popularnych zespołów"
     },
     {
-      "start": 1684.53,
+      "start": 1676.37,
+      "end": 1678.45,
+      "text": "może być wyzwaniem,"
+    },
+    {
+      "start": 1678.45,
+      "end": 1679.61,
+      "text": "choćby ze względu"
+    },
+    {
+      "start": 1679.61,
+      "end": 1681.15,
+      "text": "na produkcję sceniczną"
+    },
+    {
+      "start": 1681.15,
+      "end": 1681.89,
+      "text": "i czas, który"
+    },
+    {
+      "start": 1681.89,
+      "end": 1682.93,
+      "text": "trzeba poświęcić na"
+    },
+    {
+      "start": 1682.93,
+      "end": 1684.19,
+      "text": "jej przygotowanie."
+    },
+    {
+      "start": 1684.19,
+      "end": 1685.41,
+      "text": "Cieszę się, że nam"
+    },
+    {
+      "start": 1685.41,
+      "end": 1686.72,
+      "text": "to się udało, że to"
+    },
+    {
+      "start": 1686.72,
       "end": 1687.69,
-      "text": "Cieszę się, że nam to się udało, że to się dzieje."
+      "text": "się dzieje."
     },
     {
       "start": 1688.35,
-      "end": 1691.69,
-      "text": "To największa black metalowa trasa w historii."
+      "end": 1689.68,
+      "text": "To największa black"
     },
     {
-      "start": 1691.69,
-      "end": 1695.39,
-      "text": "Wszystkie prawa zastrzeżone."
+      "start": 1689.68,
+      "end": 1691.32,
+      "text": "metalowa trasa w"
     },
     {
-      "start": 2104.42,
-      "end": 2119.14,
-      "text": "Wróćmy jeszcze na chwilę do tego fragmentu wywiadu, w którym Szagrat mówił, że nie dało się zignorować tych płyt, które powstawały w Norwegii na początku lat 90-tych."
+      "start": 1691.32,
+      "end": 1692.71,
+      "text": "historii."
     },
     {
-      "start": 2119.14,
-      "end": 2136.98,
-      "text": "Ma facet rację, chociaż nie dopytałem, które konkretnie zespoły i które płyty miał na myśli."
+      "start": 1692.71,
+      "end": 1693.57,
+      "text": "Muzyka"
     },
     {
-      "start": 2136.98,
-      "end": 2155.06,
-      "text": "Na 100% chodziło mu o mayhem ojców tej sceny, na pewno Darktron i Emperor i nie fałszujmy historii, niezależnie od poglądów i dalszych losów tego człowieka musiał też mieć na myśli Burzum."
+      "start": 2105.53,
+      "end": 2106.63,
+      "text": "Wróćmy jeszcze na"
     },
     {
-      "start": 2155.06,
-      "end": 2170.68,
-      "text": "Jestem też przekonany, że Szagrat oczywiście zaliczyłby do tego grona i Dimu Borgir, zapewne Satyricon, Immortal, Enslaved, być może też Gorgorod."
+      "start": 2106.63,
+      "end": 2107.52,
+      "text": "chwilę do tego"
     },
     {
-      "start": 2170.92,
-      "end": 2179.04,
-      "text": "Kogo jeszcze? Dot Heimsgaard? Toke? Arcturus? 1349? Ulwer?"
+      "start": 2107.52,
+      "end": 2108.99,
+      "text": "fragmentu wywiadu,"
     },
     {
-      "start": 2180.04,
-      "end": 2193,
-      "text": "Kto dobrze zna norweską scenę, ten wie doskonale jaki tłok tam jest na szczycie wśród tych, co odnosili lub wciąż odnoszą międzynarodowe sukcesy."
+      "start": 2108.99,
+      "end": 2110.05,
+      "text": "w którym Szagrat"
     },
     {
-      "start": 2193,
-      "end": 2211.94,
-      "text": "Ale to przecież nie koniec. Norwegia wydała bowiem i wciąż wydaje dziesiątki, jeśli nie setki znakomitych grup, które może pozostają w cieniu gigantów, ale niekoniecznie dlatego, że są od nich artystycznie gorsze."
+      "start": 2110.05,
+      "end": 2111.64,
+      "text": "mówił, że nie dało"
     },
     {
-      "start": 2212.46,
-      "end": 2225.98,
-      "text": "Może czasem zabrakło szczęścia, może konsekwencji, może ktoś popełniał błędy biznesowe czy wizerunkowe, a innym po prostu na karierze nie zależało."
+      "start": 2111.64,
+      "end": 2113.51,
+      "text": "się zignorować tych"
     },
     {
-      "start": 2226.76,
-      "end": 2237.68,
-      "text": "Tak czy owak, do końca dzisiejszego wydania ciężko na sercu słuchać będziemy tych Norwegów, którzy są lub byli moim zdaniem znakomici,"
+      "start": 2113.51,
+      "end": 2115.45,
+      "text": "płyt, które powstawały"
     },
     {
-      "start": 2237.88,
-      "end": 2252.36,
-      "text": "ale których nie zawsze się wymienia jednym tchem z największymi, a powinno, oj powinno szczególnie w przypadku tego fantastycznego zespołu."
+      "start": 2115.45,
+      "end": 2116.38,
+      "text": "w Norwegii na"
     },
     {
-      "start": 2617.09,
-      "end": 2638.41,
-      "text": "Wciągnął Was ten wir. To był oczywiście zespół, a może projekt Thorns z utworem Vortex z jedynej jak dotąd pełnej płyty zespołu wydanej w 2001 roku i zatytułowanej po prostu Thorns."
+      "start": 2116.38,
+      "end": 2119.23,
+      "text": "początku lat dziewięćdziesiątych."
     },
     {
-      "start": 2638.77,
-      "end": 2652.47,
-      "text": "Liderem cierni jest niejaki snore ruch, znany też jako Blackthorn. Przewinął się przez skład Mayhem, dorzucił swoje trzy grosze do albumu The Mysteries Dom Satanas,"
+      "start": 2119.23,
+      "end": 2122.22,
+      "text": "Ma facet rację,"
     },
     {
-      "start": 2652.47,
-      "end": 2673.47,
-      "text": "ale przede wszystkim wymyślił te wściekle niepokojące gitarowe dysonanse, które jeszcze za sprawą demówek Thorns zainspirowały kolegów z Oslo i Bergen i stały się znakiem rozpoznawczym drugiej fali Blackmetalu."
+      "start": 2122.22,
+      "end": 2126.74,
+      "text": "chociaż nie dopytałem,"
     },
     {
-      "start": 2673.47,
-      "end": 2695.83,
-      "text": "Można zaryzykować stwierdzenie, że gdyby nie snore, norweski Black Metal byłby kompilacją tego, co wymyślili Szwedzi, czyli oczywiście Batory, Anglicy, a więc przede wszystkim Wenom, Szwajcarzy, a zatem Hellhammer i Niemcy."
+      "start": 2126.74,
+      "end": 2131.64,
+      "text": "które konkretnie zespoły"
     },
     {
-      "start": 2695.83,
-      "end": 2709.45,
-      "text": "Tu mam na myśli przede wszystkim wczesne nagrania Sodom, Destruction i Kreatora. No i niech będzie, że Amerykanie też trzeba oddać Bogu, czyli Slayerowi, co boskie."
+      "start": 2131.64,
+      "end": 2134.69,
+      "text": "i które płyty miał"
     },
     {
-      "start": 2710.89,
-      "end": 2722.15,
-      "text": "Co jakiś czas mówi się o tym, że Thorns działa, że nowy materiał jest już właściwie gotowy, ale póki co tylko na zapowiedziach się kończy."
+      "start": 2134.69,
+      "end": 2136.97,
+      "text": "na myśli."
     },
     {
-      "start": 2722.81,
-      "end": 2732.65,
-      "text": "Ja jednak wytrwale na tę płytę czekam, bo Thorns to wielki zespół i powinien w końcu upomnieć się o swoje."
+      "start": 2137.15,
+      "end": 2138.43,
+      "text": "Na sto procent"
     },
     {
-      "start": 3000.13,
-      "end": 3012.35,
-      "text": "Jedną z nazw już chyba zapomnianych poza wąskim kręgiem maniaków jest nomen omen Forgotten Woods, zapomniany las."
+      "start": 2138.43,
+      "end": 2140.23,
+      "text": "chodziło mu o mayhem"
     },
     {
-      "start": 3013.11,
+      "start": 2140.23,
+      "end": 2142.01,
+      "text": "ojców tej sceny, na"
+    },
+    {
+      "start": 2142.01,
+      "end": 2143.48,
+      "text": "pewno Darktron i"
+    },
+    {
+      "start": 2143.48,
+      "end": 2145.59,
+      "text": "Emperor i nie fałszujmy"
+    },
+    {
+      "start": 2145.59,
+      "end": 2147.81,
+      "text": "historii, niezależnie"
+    },
+    {
+      "start": 2147.81,
+      "end": 2149.8,
+      "text": "od poglądów i dalszych"
+    },
+    {
+      "start": 2149.8,
+      "end": 2151.71,
+      "text": "losów tego człowieka"
+    },
+    {
+      "start": 2151.71,
+      "end": 2153.3,
+      "text": "musiał też mieć na"
+    },
+    {
+      "start": 2153.3,
+      "end": 2155.07,
+      "text": "myśli Burzum."
+    },
+    {
+      "start": 2155.07,
+      "end": 2157.51,
+      "text": "Jestem też przekonany,"
+    },
+    {
+      "start": 2157.51,
+      "end": 2158.56,
+      "text": "że Szagrat"
+    },
+    {
+      "start": 2158.56,
+      "end": 2160.88,
+      "text": "oczywiście zaliczyłby"
+    },
+    {
+      "start": 2160.88,
+      "end": 2162.72,
+      "text": "do tego grona i Dymu"
+    },
+    {
+      "start": 2162.72,
+      "end": 2165.71,
+      "text": "Borgir, zapewne Satyricon,"
+    },
+    {
+      "start": 2165.71,
+      "end": 2168.02,
+      "text": "Immortal, Enslaved,"
+    },
+    {
+      "start": 2168.02,
+      "end": 2170.69,
+      "text": "być może też Gorgorod."
+    },
+    {
+      "start": 2170.93,
+      "end": 2172.53,
+      "text": "Kogo jeszcze? Dot"
+    },
+    {
+      "start": 2172.53,
+      "end": 2174.54,
+      "text": "Heimsgaard? Toke?"
+    },
+    {
+      "start": 2174.54,
+      "end": 2179.05,
+      "text": "Arcturus? 1349? Ulver?"
+    },
+    {
+      "start": 2180.03,
+      "end": 2181.19,
+      "text": "Kto dobrze zna norweską"
+    },
+    {
+      "start": 2181.19,
+      "end": 2183.64,
+      "text": "scenę, ten wie doskonale"
+    },
+    {
+      "start": 2183.64,
+      "end": 2185.25,
+      "text": "jaki tłok tam jest"
+    },
+    {
+      "start": 2185.25,
+      "end": 2186.73,
+      "text": "na szczycie wśród"
+    },
+    {
+      "start": 2186.73,
+      "end": 2188.5,
+      "text": "tych, co odnosili"
+    },
+    {
+      "start": 2188.5,
+      "end": 2190.11,
+      "text": "lub wciąż odnoszą"
+    },
+    {
+      "start": 2190.11,
+      "end": 2193.01,
+      "text": "międzynarodowe sukcesy."
+    },
+    {
+      "start": 2193.01,
+      "end": 2194.48,
+      "text": "Ale to przecież nie"
+    },
+    {
+      "start": 2194.48,
+      "end": 2196.74,
+      "text": "koniec. Norwegia wydała"
+    },
+    {
+      "start": 2196.74,
+      "end": 2198.02,
+      "text": "bowiem i wciąż"
+    },
+    {
+      "start": 2198.02,
+      "end": 2199.93,
+      "text": "wydaje dziesiątki,"
+    },
+    {
+      "start": 2199.93,
+      "end": 2202.48,
+      "text": "jeśli nie setki znakomitych"
+    },
+    {
+      "start": 2202.48,
+      "end": 2204.23,
+      "text": "grup, które może"
+    },
+    {
+      "start": 2204.23,
+      "end": 2205.83,
+      "text": "pozostają w cieniu"
+    },
+    {
+      "start": 2205.83,
+      "end": 2208.29,
+      "text": "gigantów, ale niekoniecznie"
+    },
+    {
+      "start": 2208.29,
+      "end": 2209.64,
+      "text": "dlatego, że są od"
+    },
+    {
+      "start": 2209.64,
+      "end": 2211.95,
+      "text": "nich artystycznie gorsze."
+    },
+    {
+      "start": 2212.43,
+      "end": 2214.15,
+      "text": "Może czasem zabrakło"
+    },
+    {
+      "start": 2214.15,
+      "end": 2215.57,
+      "text": "szczęścia, może"
+    },
+    {
+      "start": 2215.57,
+      "end": 2217.29,
+      "text": "konsekwencji, może"
+    },
+    {
+      "start": 2217.29,
+      "end": 2218.99,
+      "text": "ktoś popełniał błędy"
+    },
+    {
+      "start": 2218.99,
+      "end": 2221.39,
+      "text": "biznesowe czy wizerunkowe,"
+    },
+    {
+      "start": 2221.39,
+      "end": 2222.73,
+      "text": "a innym po prostu"
+    },
+    {
+      "start": 2222.73,
+      "end": 2225.53,
+      "text": "na karierze niezależnością."
+    },
+    {
+      "start": 2225.53,
+      "end": 2228.76,
+      "text": "Tak czy owak do końca"
+    },
+    {
+      "start": 2228.76,
+      "end": 2229.75,
+      "text": "dzisiejszego wydania"
+    },
+    {
+      "start": 2229.75,
+      "end": 2231.59,
+      "text": "ciężko na sercu słuchać"
+    },
+    {
+      "start": 2231.59,
+      "end": 2232.77,
+      "text": "będziemy tych"
+    },
+    {
+      "start": 2232.77,
+      "end": 2234.39,
+      "text": "Norwegów, którzy są"
+    },
+    {
+      "start": 2234.39,
+      "end": 2236.39,
+      "text": "lub byli moim zdaniem"
+    },
+    {
+      "start": 2236.39,
+      "end": 2238.62,
+      "text": "znakomici, ale"
+    },
+    {
+      "start": 2238.62,
+      "end": 2239.84,
+      "text": "których nie zawsze"
+    },
+    {
+      "start": 2239.84,
+      "end": 2241.76,
+      "text": "się wymienia jednym"
+    },
+    {
+      "start": 2241.76,
+      "end": 2243.94,
+      "text": "tchem z największymi,"
+    },
+    {
+      "start": 2243.94,
+      "end": 2246.35,
+      "text": "a powinno, oj powinno"
+    },
+    {
+      "start": 2246.35,
+      "end": 2247.8,
+      "text": "szczególnie w"
+    },
+    {
+      "start": 2247.8,
+      "end": 2251.06,
+      "text": "przypadku tego fantastycznego"
+    },
+    {
+      "start": 2251.06,
+      "end": 2252.37,
+      "text": "zespołu."
+    },
+    {
+      "start": 2618.3,
+      "end": 2619.35,
+      "text": "Wciągnął Was ten"
+    },
+    {
+      "start": 2619.35,
+      "end": 2620.45,
+      "text": "wir. To był"
+    },
+    {
+      "start": 2620.45,
+      "end": 2622.41,
+      "text": "oczywiście zespół,"
+    },
+    {
+      "start": 2622.41,
+      "end": 2624.38,
+      "text": "a może projekt Thorns"
+    },
+    {
+      "start": 2624.38,
+      "end": 2626.79,
+      "text": "z utworem Vortex, z"
+    },
+    {
+      "start": 2626.79,
+      "end": 2628.83,
+      "text": "jedynej jak dotąd"
+    },
+    {
+      "start": 2628.83,
+      "end": 2631.26,
+      "text": "pełnej płyty zespołu"
+    },
+    {
+      "start": 2631.26,
+      "end": 2634.7,
+      "text": "wydanej w 2001 roku"
+    },
+    {
+      "start": 2634.7,
+      "end": 2636.57,
+      "text": "i zatytułowanej po"
+    },
+    {
+      "start": 2636.57,
+      "end": 2638.42,
+      "text": "prostu Thorns."
+    },
+    {
+      "start": 2638.92,
+      "end": 2640.48,
+      "text": "Liderem cierni jest"
+    },
+    {
+      "start": 2640.48,
+      "end": 2642.14,
+      "text": "niejaki snore ruch,"
+    },
+    {
+      "start": 2642.14,
+      "end": 2643.25,
+      "text": "znany też jako"
+    },
+    {
+      "start": 2643.25,
+      "end": 2645.27,
+      "text": "Blackthorn. Przewinął"
+    },
+    {
+      "start": 2645.27,
+      "end": 2647.21,
+      "text": "się przez skład Mayhem,"
+    },
+    {
+      "start": 2647.21,
+      "end": 2649.1,
+      "text": "dorzucił swoje trzy"
+    },
+    {
+      "start": 2649.1,
+      "end": 2650.05,
+      "text": "grosze do albumu"
+    },
+    {
+      "start": 2650.05,
+      "end": 2651.44,
+      "text": "The Mysteries Dom"
+    },
+    {
+      "start": 2651.44,
+      "end": 2653.71,
+      "text": "Satanas, ale przede"
+    },
+    {
+      "start": 2653.71,
+      "end": 2655.64,
+      "text": "wszystkim wymyślił"
+    },
+    {
+      "start": 2655.64,
+      "end": 2658.2,
+      "text": "te wściekle niepokojące"
+    },
+    {
+      "start": 2658.2,
+      "end": 2660.48,
+      "text": "gitarowe dysonanse,"
+    },
+    {
+      "start": 2660.48,
+      "end": 2661.99,
+      "text": "które jeszcze za"
+    },
+    {
+      "start": 2661.99,
+      "end": 2664,
+      "text": "sprawą demówek Thorns"
+    },
+    {
+      "start": 2664,
+      "end": 2666.13,
+      "text": "zainspirowały kolegów"
+    },
+    {
+      "start": 2666.13,
+      "end": 2667.52,
+      "text": "z Oslo i Bergen i"
+    },
+    {
+      "start": 2667.52,
+      "end": 2669.11,
+      "text": "stały się znakiem"
+    },
+    {
+      "start": 2669.11,
+      "end": 2670.66,
+      "text": "rozpoznawczym"
+    },
+    {
+      "start": 2670.66,
+      "end": 2673.48,
+      "text": "drugiej fali Blackmetalu."
+    },
+    {
+      "start": 2674.48,
+      "end": 2676.24,
+      "text": "Można zaryzykować"
+    },
+    {
+      "start": 2676.24,
+      "end": 2677.68,
+      "text": "stwierdzenie, że"
+    },
+    {
+      "start": 2677.68,
+      "end": 2679.18,
+      "text": "gdyby nie snore,"
+    },
+    {
+      "start": 2679.18,
+      "end": 2680.46,
+      "text": "norweski Black"
+    },
+    {
+      "start": 2680.46,
+      "end": 2682.55,
+      "text": "Metal byłby kompilacją"
+    },
+    {
+      "start": 2682.55,
+      "end": 2684.18,
+      "text": "tego, co wymyślili"
+    },
+    {
+      "start": 2684.18,
+      "end": 2685.58,
+      "text": "Szwedzi, czyli"
+    },
+    {
+      "start": 2685.58,
+      "end": 2687.43,
+      "text": "oczywiście Batory,"
+    },
+    {
+      "start": 2687.43,
+      "end": 2689.07,
+      "text": "Anglicy, a więc"
+    },
+    {
+      "start": 2689.07,
+      "end": 2690.04,
+      "text": "przede wszystkim"
+    },
+    {
+      "start": 2690.04,
+      "end": 2692.18,
+      "text": "Wenom, Szwajcarzy,"
+    },
+    {
+      "start": 2692.18,
+      "end": 2694.42,
+      "text": "a zatem Hellhammer"
+    },
+    {
+      "start": 2694.42,
+      "end": 2695.84,
+      "text": "i Niemcy."
+    },
+    {
+      "start": 2695.84,
+      "end": 2696.75,
+      "text": "Tu mam na myśli"
+    },
+    {
+      "start": 2696.75,
+      "end": 2698.42,
+      "text": "przede wszystkim wczesne"
+    },
+    {
+      "start": 2698.42,
+      "end": 2699.56,
+      "text": "nagrania Sodom,"
+    },
+    {
+      "start": 2699.56,
+      "end": 2701.44,
+      "text": "Destruction i Kreatora."
+    },
+    {
+      "start": 2701.44,
+      "end": 2703.12,
+      "text": "No i niech będzie,"
+    },
+    {
+      "start": 2703.12,
+      "end": 2704.71,
+      "text": "że Amerykanie też"
+    },
+    {
+      "start": 2704.71,
+      "end": 2706.51,
+      "text": "trzeba oddać Bogu,"
+    },
+    {
+      "start": 2706.51,
+      "end": 2708.27,
+      "text": "czyli Slayerowi, co"
+    },
+    {
+      "start": 2708.27,
+      "end": 2709.44,
+      "text": "boskie."
+    },
+    {
+      "start": 2710.88,
+      "end": 2711.07,
+      "text": "Co jakiś czas mówi"
+    },
+    {
+      "start": 2711.07,
+      "end": 2713.03,
+      "text": "się o tym, że Thorns"
+    },
+    {
+      "start": 2713.03,
+      "end": 2714.29,
+      "text": "działa, że nowy"
+    },
+    {
+      "start": 2714.29,
+      "end": 2715.87,
+      "text": "materiał jest już"
+    },
+    {
+      "start": 2715.87,
+      "end": 2717.66,
+      "text": "właściwie gotowy,"
+    },
+    {
+      "start": 2717.66,
+      "end": 2719.14,
+      "text": "ale póki co tylko"
+    },
+    {
+      "start": 2719.14,
+      "end": 2721.03,
+      "text": "na zapowiedziach"
+    },
+    {
+      "start": 2721.03,
+      "end": 2722.14,
+      "text": "się kończy."
+    },
+    {
+      "start": 2722.5,
+      "end": 2724.15,
+      "text": "Ja jednak wytrwale"
+    },
+    {
+      "start": 2724.15,
+      "end": 2726.14,
+      "text": "na tę płytę czekam,"
+    },
+    {
+      "start": 2726.14,
+      "end": 2727.96,
+      "text": "bo Thorns to wielki"
+    },
+    {
+      "start": 2727.96,
+      "end": 2729.69,
+      "text": "zespół i powinien w"
+    },
+    {
+      "start": 2729.69,
+      "end": 2731.45,
+      "text": "końcu upomnieć się"
+    },
+    {
+      "start": 2731.45,
+      "end": 2732.66,
+      "text": "o swoje."
+    },
+    {
+      "start": 3000.99,
+      "end": 3002.36,
+      "text": "Jedną z nazw już"
+    },
+    {
+      "start": 3002.36,
+      "end": 3004.26,
+      "text": "chyba zapomnianych"
+    },
+    {
+      "start": 3004.26,
+      "end": 3005.95,
+      "text": "poza wąskim kręgiem"
+    },
+    {
+      "start": 3005.95,
+      "end": 3007.91,
+      "text": "maniaków jest nomen"
+    },
+    {
+      "start": 3007.91,
+      "end": 3009.32,
+      "text": "omen Forgotten"
+    },
+    {
+      "start": 3009.32,
+      "end": 3011.47,
+      "text": "Woods, zapomniany"
+    },
+    {
+      "start": 3011.47,
+      "end": 3012.33,
+      "text": "las."
+    },
+    {
+      "start": 3013.35,
+      "end": 3014.03,
+      "text": "Zaliczyć ich należy"
+    },
+    {
+      "start": 3014.03,
+      "end": 3015.47,
+      "text": "do pionierów."
+    },
+    {
+      "start": 3015.73,
+      "end": 3017.47,
+      "text": "Gatunku zaczynali"
+    },
+    {
+      "start": 3017.47,
+      "end": 3020.62,
+      "text": "bowiem w 1991 roku,"
+    },
+    {
+      "start": 3020.62,
+      "end": 3022.39,
+      "text": "ale trzymali się"
+    },
+    {
+      "start": 3022.39,
       "end": 3024.61,
-      "text": "Zaliczyć ich należy do pionierów. Gatunku zaczynali bowiem w 1991 roku, ale trzymali się zawsze na uboczu."
+      "text": "zawsze na uboczu."
     },
     {
-      "start": 3025.55,
-      "end": 3036.69,
-      "text": "Być może dlatego, że byli z małego miasta pomiędzy Bergen a Stavanger, zatem do żadnego z dużych, znaczących black metalowych ośrodków nie przynależeli,"
+      "start": 3024.95,
+      "end": 3026.17,
+      "text": "Być może dlatego,"
     },
     {
-      "start": 3036.69,
+      "start": 3026.17,
+      "end": 3027.6,
+      "text": "że byli z małego miasta"
+    },
+    {
+      "start": 3027.6,
+      "end": 3028.74,
+      "text": "pomiędzy Bergen a"
+    },
+    {
+      "start": 3028.74,
+      "end": 3030.35,
+      "text": "Stavanger, zatem do"
+    },
+    {
+      "start": 3030.35,
+      "end": 3031.86,
+      "text": "żadnego z dużych,"
+    },
+    {
+      "start": 3031.86,
+      "end": 3033.28,
+      "text": "znaczących black"
+    },
+    {
+      "start": 3033.28,
+      "end": 3034.96,
+      "text": "metalowych ośrodków"
+    },
+    {
+      "start": 3034.96,
+      "end": 3036.75,
+      "text": "nie przynależeli."
+    },
+    {
+      "start": 3037.81,
+      "end": 3037.94,
+      "text": "A może po prostu"
+    },
+    {
+      "start": 3037.94,
+      "end": 3039.43,
+      "text": "nie chcieli dać się"
+    },
+    {
+      "start": 3039.43,
+      "end": 3040.91,
+      "text": "zauważyć, bo nawet"
+    },
+    {
+      "start": 3040.91,
+      "end": 3042.66,
+      "text": "w czasie największego"
+    },
+    {
+      "start": 3042.66,
+      "end": 3044.39,
+      "text": "boomu na Norwegię,"
+    },
+    {
+      "start": 3044.39,
+      "end": 3046.11,
+      "text": "kiedy znacznie gorsze"
+    },
+    {
+      "start": 3046.11,
+      "end": 3048.28,
+      "text": "zespoły stamtąd podpisywały"
+    },
+    {
+      "start": 3048.28,
+      "end": 3050.7,
+      "text": "intratne umowy z wytwórniami"
+    },
+    {
+      "start": 3050.7,
       "end": 3051.75,
-      "text": "a może po prostu nie chcieli dać się zauważyć, bo nawet w czasie największego boomu na Norwegię, kiedy znacznie gorsze zespoły stamtąd podpisywały intratne umowy z wytwórniami płytowymi,"
+      "text": "płytowymi,"
     },
     {
-      "start": 3052.23,
-      "end": 3056.35,
-      "text": "Forgotten Woods pozostali w Undergroundzie."
+      "start": 3051.75,
+      "end": 3054.32,
+      "text": "Forgotten Woods pozostali"
     },
     {
-      "start": 3057.15,
+      "start": 3054.32,
+      "end": 3056.37,
+      "text": "w Undergroundzie."
+    },
+    {
+      "start": 3057.13,
+      "end": 3057.9,
+      "text": "Nie wiadomo nawet,"
+    },
+    {
+      "start": 3057.9,
+      "end": 3059.52,
+      "text": "czy wciąż istnieją,"
+    },
+    {
+      "start": 3059.52,
+      "end": 3060.96,
+      "text": "chyba nie, z tym,"
+    },
+    {
+      "start": 3060.96,
       "end": 3062.35,
-      "text": "Nie wiadomo nawet, czy wciąż istnieją. Chyba nie, z tym, że nie na pewno."
+      "text": "że nie na pewno."
     },
     {
-      "start": 3062.35,
+      "start": 3062.97,
+      "end": 3063.85,
+      "text": "Ja w każdym razie o"
+    },
+    {
+      "start": 3063.85,
+      "end": 3065.75,
+      "text": "nich pamiętam i cieszę"
+    },
+    {
+      "start": 3065.75,
+      "end": 3067.61,
+      "text": "się, że znalazłem"
+    },
+    {
+      "start": 3067.61,
+      "end": 3069.85,
+      "text": "pretekst, by zaprezentować"
+    },
+    {
+      "start": 3069.85,
+      "end": 3071.26,
+      "text": "Wam fragment ich"
+    },
+    {
+      "start": 3071.26,
+      "end": 3073.79,
+      "text": "drugiego albumu Curse"
+    },
+    {
+      "start": 3073.79,
       "end": 3075.15,
-      "text": "Ja w każdym razie o nich pamiętam i cieszę się, że znalazłem pretekst, by zaprezentować Wam fragment ich drugiego albumu Curse of Mankind."
+      "text": "of Mankind."
     },
     {
-      "start": 3861.45,
+      "start": 3861.47,
+      "end": 3863.08,
+      "text": "Kiedyś już wspominałem"
+    },
+    {
+      "start": 3863.08,
+      "end": 3864.38,
+      "text": "o tym, że świat nie"
+    },
+    {
+      "start": 3864.38,
+      "end": 3865.93,
+      "text": "jest sprawiedliwy,"
+    },
+    {
+      "start": 3865.93,
+      "end": 3867.43,
+      "text": "skoro nie docenia"
+    },
+    {
+      "start": 3867.43,
+      "end": 3869.37,
+      "text": "tak znakomitego zespołu"
+    },
+    {
+      "start": 3869.37,
       "end": 3870.73,
-      "text": "Kiedyś już wspominałem o tym, że świat nie jest sprawiedliwy, skoro nie docenia tak znakomitego zespołu jak Helheim."
+      "text": "jak Helheim."
     },
     {
-      "start": 3871.79,
-      "end": 3884.61,
-      "text": "Zespół z Bergen istnieje nieprzerwanie od 1992 roku, a więc również zalicza się do tego pierwszego pionierskiego pokolenia norweskiej sceny."
+      "start": 3871.81,
+      "end": 3872.97,
+      "text": "Zespół z Bergen istnieje"
+    },
+    {
+      "start": 3872.97,
+      "end": 3874.57,
+      "text": "nieprzerwanie od"
+    },
+    {
+      "start": 3874.57,
+      "end": 3877.24,
+      "text": "1992 roku, a więc"
+    },
+    {
+      "start": 3877.24,
+      "end": 3878.9,
+      "text": "również zalicza się"
+    },
+    {
+      "start": 3878.9,
+      "end": 3880.48,
+      "text": "do tego pierwszego"
+    },
+    {
+      "start": 3880.48,
+      "end": 3882.67,
+      "text": "pionierskiego pokolenia"
+    },
+    {
+      "start": 3882.67,
+      "end": 3884.59,
+      "text": "norweskiej sceny."
     },
     {
       "start": 3885.11,
+      "end": 3886.98,
+      "text": "Regularnie wydaje"
+    },
+    {
+      "start": 3886.98,
+      "end": 3889.07,
+      "text": "materiały, które są"
+    },
+    {
+      "start": 3889.07,
+      "end": 3891.05,
+      "text": "albo bardzo dobre,"
+    },
+    {
+      "start": 3891.05,
+      "end": 3893.36,
+      "text": "albo wręcz znakomite,"
+    },
+    {
+      "start": 3893.36,
+      "end": 3895.29,
+      "text": "wplatając w czystą"
+    },
+    {
+      "start": 3895.29,
+      "end": 3897.64,
+      "text": "czerń folkowe wikińskie"
+    },
+    {
+      "start": 3897.64,
       "end": 3898.77,
-      "text": "Regularnie wydaje materiały, które są albo bardzo dobre, albo wręcz znakomite, wplatając w czystą czerń folkowe wikińskie wątki."
+      "text": "wątki."
     },
     {
       "start": 3898.77,
-      "end": 3915.31,
-      "text": "Moim zdaniem Helheim powinni być równie popularni jak Enslaved czy Borknagar, ale z jakiegoś powodu nie przebili się do świadomości szerokiej publiczności i już pewnie tego nie zrobią."
+      "end": 3900.59,
+      "text": "Moim zdaniem Helheim"
     },
     {
-      "start": 3915.67,
+      "start": 3900.59,
+      "end": 3902.24,
+      "text": "powinni być równie"
+    },
+    {
+      "start": 3902.24,
+      "end": 3904.26,
+      "text": "popularni jak Enslaved"
+    },
+    {
+      "start": 3904.26,
+      "end": 3905.99,
+      "text": "czy Borknagar, ale"
+    },
+    {
+      "start": 3905.99,
+      "end": 3907.52,
+      "text": "z jakiegoś powodu"
+    },
+    {
+      "start": 3907.52,
+      "end": 3909.15,
+      "text": "nie przebili się do"
+    },
+    {
+      "start": 3909.15,
+      "end": 3911.2,
+      "text": "świadomości szerokiej"
+    },
+    {
+      "start": 3911.2,
+      "end": 3912.84,
+      "text": "publiczności i już"
+    },
+    {
+      "start": 3912.84,
+      "end": 3914.15,
+      "text": "pewnie tego nie"
+    },
+    {
+      "start": 3914.15,
+      "end": 3915.31,
+      "text": "zrobią."
+    },
+    {
+      "start": 3915.65,
+      "end": 3917.25,
+      "text": "Trudno, ja jednak"
+    },
+    {
+      "start": 3917.25,
+      "end": 3919.17,
+      "text": "zdania nie zmienię."
+    },
+    {
+      "start": 3919.17,
+      "end": 3920.52,
+      "text": "Helheim to jeden z"
+    },
+    {
+      "start": 3920.52,
+      "end": 3922.41,
+      "text": "najlepszych norweskich"
+    },
+    {
+      "start": 3922.41,
+      "end": 3924.78,
+      "text": "zespołów w swojej kategorii,"
+    },
+    {
+      "start": 3924.78,
+      "end": 3926.21,
+      "text": "w dodatku taki,"
+    },
+    {
+      "start": 3926.21,
+      "end": 3928.25,
+      "text": "który nigdy nie splamił"
+    },
+    {
+      "start": 3928.25,
+      "end": 3930.47,
+      "text": "się słabym materiałem,"
+    },
+    {
+      "start": 3930.47,
+      "end": 3931.2,
+      "text": "czego o tej"
+    },
+    {
+      "start": 3931.2,
+      "end": 3932.41,
+      "text": "bardziej sławnej"
+    },
+    {
+      "start": 3932.41,
+      "end": 3933.88,
+      "text": "konkurencji już bym"
+    },
+    {
+      "start": 3933.88,
       "end": 3935.15,
-      "text": "Trudno, ja jednak zdania nie zmienię. Helheim to jeden z najlepszych norweskich zespołów w swojej kategorii, w dodatku taki, który nigdy nie splamił się słabym materiałem, czego o tej bardziej sławnej konkurencji już bym nie powiedział."
+      "text": "nie powiedział."
     },
     {
       "start": 3935.15,
+      "end": 3937.44,
+      "text": "Nie musicie mi wierzyć"
+    },
+    {
+      "start": 3937.44,
+      "end": 3939.24,
+      "text": "na słowo o to, jak"
+    },
+    {
+      "start": 3939.24,
+      "end": 3941.15,
+      "text": "brzmiał Helheim na"
+    },
+    {
+      "start": 3941.15,
+      "end": 3943.22,
+      "text": "Voduridar, płycie"
+    },
+    {
+      "start": 3943.22,
       "end": 3945.55,
-      "text": "Nie musicie mi wierzyć na słowo o to, jak brzmiał Helheim na Woduridar, płycie sprzed pięciu lat."
+      "text": "sprzed pięciu lat."
     },
     {
-      "start": 4330.44,
-      "end": 4354.24,
-      "text": "Skoro już jesteśmy przy tym ludowym nurcie norweskiego black metalu, który czerpie garściami z folkloru, przedchrześcijańskich wierzeń, który próbuje dźwiękiem i słowem opowiedzieć oszałamiającą naturę północy, to nie można nie wspomnieć o grupie Windir."
+      "start": 4331.71,
+      "end": 4332.95,
+      "text": "Skoro już jesteśmy"
     },
     {
-      "start": 4354.24,
-      "end": 4375.28,
-      "text": "Nie był to dla mnie nigdy zespół pierwszego wyboru, bo od melodii wygrywanych na akordeonie wolę chore, zimne dysonanse thorns, ale tak, to było dobre i coraz lepsze i na pewno jedyne w swoim rodzaju."
+      "start": 4332.95,
+      "end": 4334.03,
+      "text": "przy tym ludowym"
     },
     {
-      "start": 4375.74,
-      "end": 4383.68,
-      "text": "Niestety, ukochana przez niego natura zabiła Walfara, lidera Windir."
+      "start": 4334.03,
+      "end": 4335.21,
+      "text": "nurcie norweskiego"
     },
     {
-      "start": 4384.36,
-      "end": 4395.54,
-      "text": "W styczniu 2004 roku w zamieci śnieżnej zgubił drogę z własnego domu do domu rodziców, czy do domku letniskowego."
+      "start": 4335.21,
+      "end": 4336.76,
+      "text": "black metalu, który"
     },
     {
-      "start": 4395.54,
-      "end": 4410.08,
-      "text": "W lesie różne źródła różnie podają, tak czy owak szedł ścieżką, którą znał doskonale, którą chodził przez całe życie i niestety na niej pozostał zmarł w wyniku wychłodzenia."
+      "start": 4336.76,
+      "end": 4338.98,
+      "text": "czerpie garściami z"
     },
     {
-      "start": 4410.84,
-      "end": 4416.56,
-      "text": "Po Windir zostały cztery duże płyty i więcej nie będzie."
+      "start": 4338.98,
+      "end": 4342.33,
+      "text": "folkloru, przedchrześcijańskich"
     },
     {
-      "start": 4760.63,
-      "end": 4776.67,
-      "text": "Koledzy Valfara z Windir zachowali się więcej niż przyzwoicie, bo z jednej strony nawet nie próbowali ciągnąć zespołu bez lidera, ale z drugiej postanowili kontynuować jego dzieło."
+      "start": 4342.33,
+      "end": 4344.24,
+      "text": "wierzeń, który próbuje"
     },
     {
-      "start": 4776.67,
-      "end": 4802.49,
-      "text": "Tak powstał zespół Vraid, co oznacza gniew i rzeczywiście jest to muzyka mniej rozmarzona od Windir, nie folkowa, ten zespół jest po prostu zły na świat i ludzi, chociaż dbałość o melodię pozostała, tyle że w tym przypadku jest realizowana nieco inaczej."
+      "start": 4344.24,
+      "end": 4345.7,
+      "text": "dźwiękiem i słowem"
     },
     {
-      "start": 5061.03,
-      "end": 5087.09,
-      "text": "Wspomnienie o walfarze, który zamarzł w norweskim lesie odżyło nie tak dawno, w listopadzie ubiegłego roku, kiedy media i przede wszystkim media społecznościowe obiegła wiadomość, że Snorre, tak, ten Storns oraz jego kolega, General Grips Fisser, lider zespołu Slagmaur,"
+      "start": 4345.7,
+      "end": 4347.9,
+      "text": "opowiedzieć oszałamiającą"
     },
     {
-      "start": 5087.95,
-      "end": 5115.25,
-      "text": "zaginęli gdzieś w górach. Ludzie się przejęli, rozpoczęto poszukiwania, ale po kilku dniach okazało się, że panowie siedzą przy kominku, popijają kakao i piszą manifest, z którego wynika, że to ich niby zaginięcie jest wyrafinowanym nawiązaniem do jakiegoś pradawnego miejscowego rytuału."
+      "start": 4347.9,
+      "end": 4349.5,
+      "text": "naturę północy, to"
     },
     {
-      "start": 5115.67,
+      "start": 4349.5,
+      "end": 4352.16,
+      "text": "nie można nie wspomnieć"
+    },
+    {
+      "start": 4352.16,
+      "end": 4354.23,
+      "text": "o grupie Windir."
+    },
+    {
+      "start": 4354.23,
+      "end": 4356.03,
+      "text": "Nie był to dla mnie"
+    },
+    {
+      "start": 4356.03,
+      "end": 4358.56,
+      "text": "nigdy zespół pierwszego"
+    },
+    {
+      "start": 4358.56,
+      "end": 4360.85,
+      "text": "wyboru, bo od melodii"
+    },
+    {
+      "start": 4360.85,
+      "end": 4363.62,
+      "text": "wygrywanych na akordeonie"
+    },
+    {
+      "start": 4363.62,
+      "end": 4365.55,
+      "text": "wolę chore, zimne"
+    },
+    {
+      "start": 4365.55,
+      "end": 4367.59,
+      "text": "dysonanse thorns,"
+    },
+    {
+      "start": 4367.59,
+      "end": 4369.8,
+      "text": "ale tak, to było"
+    },
+    {
+      "start": 4369.8,
+      "end": 4371.33,
+      "text": "dobre i coraz lepsze"
+    },
+    {
+      "start": 4371.33,
+      "end": 4373.14,
+      "text": "i na pewno jedyne w"
+    },
+    {
+      "start": 4373.14,
+      "end": 4375.29,
+      "text": "swoim rodzaju."
+    },
+    {
+      "start": 4375.75,
+      "end": 4377.94,
+      "text": "Niestety, ukochana"
+    },
+    {
+      "start": 4377.94,
+      "end": 4379.9,
+      "text": "przez niego natura"
+    },
+    {
+      "start": 4379.9,
+      "end": 4381.73,
+      "text": "zabiła Walfara,"
+    },
+    {
+      "start": 4381.73,
+      "end": 4383.67,
+      "text": "lidera Windir."
+    },
+    {
+      "start": 4384.37,
+      "end": 4386.03,
+      "text": "W styczniu 2004"
+    },
+    {
+      "start": 4386.03,
+      "end": 4388.27,
+      "text": "roku w zamieci śnieżnej"
+    },
+    {
+      "start": 4388.27,
+      "end": 4390.51,
+      "text": "zgubił drogę z własnego"
+    },
+    {
+      "start": 4390.51,
+      "end": 4392.53,
+      "text": "domu do domu rodziców"
+    },
+    {
+      "start": 4392.53,
+      "end": 4395.53,
+      "text": "czy do domku letniskowego."
+    },
+    {
+      "start": 4395.53,
+      "end": 4396.99,
+      "text": "W lesie różne źródła"
+    },
+    {
+      "start": 4396.99,
+      "end": 4398.46,
+      "text": "różnie podają, tak"
+    },
+    {
+      "start": 4398.46,
+      "end": 4400.58,
+      "text": "czy owak szedł ścieżką,"
+    },
+    {
+      "start": 4400.58,
+      "end": 4401.98,
+      "text": "którą znał doskonale,"
+    },
+    {
+      "start": 4401.98,
+      "end": 4403.5,
+      "text": "którą chodził przez"
+    },
+    {
+      "start": 4403.5,
+      "end": 4405.52,
+      "text": "całe życie i niestety"
+    },
+    {
+      "start": 4405.52,
+      "end": 4407.61,
+      "text": "na niej pozostał zmarł"
+    },
+    {
+      "start": 4407.61,
+      "end": 4410.09,
+      "text": "w wyniku wychłodzenia."
+    },
+    {
+      "start": 4410.85,
+      "end": 4412.04,
+      "text": "Po Windir zostały"
+    },
+    {
+      "start": 4412.04,
+      "end": 4414.12,
+      "text": "cztery duże płyty i"
+    },
+    {
+      "start": 4414.12,
+      "end": 4416.55,
+      "text": "więcej nie będzie."
+    },
+    {
+      "start": 4761.24,
+      "end": 4762.35,
+      "text": "Ledzy w Alfara z"
+    },
+    {
+      "start": 4762.35,
+      "end": 4763.82,
+      "text": "Windir zachowali"
+    },
+    {
+      "start": 4763.82,
+      "end": 4766.35,
+      "text": "się więcej niż przyzwoicie,"
+    },
+    {
+      "start": 4766.35,
+      "end": 4768.72,
+      "text": "bo z jednej strony"
+    },
+    {
+      "start": 4768.72,
+      "end": 4769.92,
+      "text": "nawet nie próbowali"
+    },
+    {
+      "start": 4769.92,
+      "end": 4771.13,
+      "text": "ciągnąć zespołu bez"
+    },
+    {
+      "start": 4771.13,
+      "end": 4772.48,
+      "text": "lidera, ale z"
+    },
+    {
+      "start": 4772.48,
+      "end": 4774.07,
+      "text": "drugiej postanowili"
+    },
+    {
+      "start": 4774.07,
+      "end": 4775.96,
+      "text": "kontynuować jego"
+    },
+    {
+      "start": 4775.96,
+      "end": 4776.66,
+      "text": "dzieło."
+    },
+    {
+      "start": 4776.66,
+      "end": 4778.42,
+      "text": "Tak powstał zespół"
+    },
+    {
+      "start": 4778.42,
+      "end": 4780.36,
+      "text": "Wraid, co oznacza"
+    },
+    {
+      "start": 4780.36,
+      "end": 4781.04,
+      "text": "gniew i"
+    },
+    {
+      "start": 4781.04,
+      "end": 4782.92,
+      "text": "rzeczywiście jest"
+    },
+    {
+      "start": 4782.92,
+      "end": 4785.6,
+      "text": "to muzyka mniej rozmarzona"
+    },
+    {
+      "start": 4785.6,
+      "end": 4788.16,
+      "text": "od Windir, nie folkowa,"
+    },
+    {
+      "start": 4788.16,
+      "end": 4789.9,
+      "text": "ten zespół jest po"
+    },
+    {
+      "start": 4789.9,
+      "end": 4791.75,
+      "text": "prostu zły na świat"
+    },
+    {
+      "start": 4791.75,
+      "end": 4794.64,
+      "text": "i ludzi, chociaż dbałość"
+    },
+    {
+      "start": 4794.64,
+      "end": 4797.05,
+      "text": "o melodię pozostała,"
+    },
+    {
+      "start": 4797.05,
+      "end": 4797.91,
+      "text": "tyle że w tym"
+    },
+    {
+      "start": 4797.91,
+      "end": 4799.37,
+      "text": "przypadku jest"
+    },
+    {
+      "start": 4799.37,
+      "end": 4801.21,
+      "text": "realizowana nieco"
+    },
+    {
+      "start": 4801.21,
+      "end": 4802.48,
+      "text": "inaczej."
+    },
+    {
+      "start": 5061.05,
+      "end": 5063.47,
+      "text": "Wspomnienie o walfarze,"
+    },
+    {
+      "start": 5063.47,
+      "end": 5065.89,
+      "text": "który zamarzł w norweskim"
+    },
+    {
+      "start": 5065.89,
+      "end": 5067.43,
+      "text": "lesie odżyło nie"
+    },
+    {
+      "start": 5067.43,
+      "end": 5069.2,
+      "text": "tak dawno, w listopadzie"
+    },
+    {
+      "start": 5069.2,
+      "end": 5070.13,
+      "text": "ubiegłego roku,"
+    },
+    {
+      "start": 5070.13,
+      "end": 5071.16,
+      "text": "kiedy media i"
+    },
+    {
+      "start": 5071.16,
+      "end": 5072.57,
+      "text": "przede wszystkim"
+    },
+    {
+      "start": 5072.57,
+      "end": 5074.49,
+      "text": "media społecznościowe"
+    },
+    {
+      "start": 5074.49,
+      "end": 5075.97,
+      "text": "obiegła wiadomość,"
+    },
+    {
+      "start": 5075.97,
+      "end": 5078.02,
+      "text": "że Snorre, tak, ten"
+    },
+    {
+      "start": 5078.02,
+      "end": 5079.94,
+      "text": "Storns oraz jego"
+    },
+    {
+      "start": 5079.94,
+      "end": 5082.81,
+      "text": "kolega, General Grips"
+    },
+    {
+      "start": 5082.81,
+      "end": 5085.62,
+      "text": "Fisser, lider zespołu"
+    },
+    {
+      "start": 5085.62,
+      "end": 5088.27,
+      "text": "Slagmour, zaginęli"
+    },
+    {
+      "start": 5088.27,
+      "end": 5090.69,
+      "text": "gdzieś w górach."
+    },
+    {
+      "start": 5091.05,
+      "end": 5092.98,
+      "text": "Ludzie się przejęli,"
+    },
+    {
+      "start": 5092.98,
+      "end": 5095.42,
+      "text": "rozpoczęto poszukiwania,"
+    },
+    {
+      "start": 5095.42,
+      "end": 5097.07,
+      "text": "ale po kilku dniach"
+    },
+    {
+      "start": 5097.07,
+      "end": 5099.21,
+      "text": "okazało się, że panowie"
+    },
+    {
+      "start": 5099.21,
+      "end": 5101.15,
+      "text": "siedzą przy kominku,"
+    },
+    {
+      "start": 5101.15,
+      "end": 5102.58,
+      "text": "popijają kakao i"
+    },
+    {
+      "start": 5102.58,
+      "end": 5104.21,
+      "text": "piszą manifest, z"
+    },
+    {
+      "start": 5104.21,
+      "end": 5105.95,
+      "text": "którego wynika, że"
+    },
+    {
+      "start": 5105.95,
+      "end": 5107.97,
+      "text": "to ich niby zaginięcie"
+    },
+    {
+      "start": 5107.97,
+      "end": 5109.63,
+      "text": "jest wyrafinowanym"
+    },
+    {
+      "start": 5109.63,
+      "end": 5111.78,
+      "text": "nawiązaniem do jakiegoś"
+    },
+    {
+      "start": 5111.78,
+      "end": 5113.93,
+      "text": "pradawnego miejscowego"
+    },
+    {
+      "start": 5113.93,
+      "end": 5115.27,
+      "text": "rytuału."
+    },
+    {
+      "start": 5115.27,
+      "end": 5116.86,
+      "text": "A, że przy okazji"
+    },
+    {
+      "start": 5116.86,
+      "end": 5118.57,
+      "text": "udało im się trochę"
+    },
+    {
+      "start": 5118.57,
+      "end": 5120.69,
+      "text": "podpromować nową płytę"
+    },
+    {
+      "start": 5120.69,
+      "end": 5122.6,
+      "text": "Slagmour, na której"
+    },
+    {
+      "start": 5122.6,
+      "end": 5124.18,
+      "text": "Snorre gościnnie"
+    },
+    {
+      "start": 5124.18,
+      "end": 5125.24,
+      "text": "gra, to już"
+    },
+    {
+      "start": 5125.24,
+      "end": 5126.53,
+      "text": "zupełnie inna"
+    },
+    {
+      "start": 5126.53,
       "end": 5128.09,
-      "text": "A, że przy okazji udało im się trochę podpromować nową płytę Slagmaur, na której Snorre gościnnie gra, to już zupełnie inna historia."
+      "text": "historia."
     },
     {
       "start": 5128.83,
-      "end": 5139.83,
-      "text": "Słaba akcja, ale całe szczęście, że płyta naprawdę dobra. O czym zaświadczę piosenką o rytualnych psach."
+      "end": 5129.93,
+      "text": "Słaba akcja, ale"
     },
     {
-      "start": 5141.67,
-      "end": 5142.25,
-      "text": "Muzyka"
+      "start": 5129.93,
+      "end": 5131.99,
+      "text": "całe szczęście, że"
     },
     {
-      "start": 5398.56,
+      "start": 5131.99,
+      "end": 5134.41,
+      "text": "płyta naprawdę dobra,"
+    },
+    {
+      "start": 5134.41,
+      "end": 5137.24,
+      "text": "o czym zaświadczę piosenką"
+    },
+    {
+      "start": 5137.24,
+      "end": 5139.55,
+      "text": "o rytualnych psa."
+    },
+    {
+      "start": 5399.52,
+      "end": 5400.88,
+      "text": "Fani norweskiego"
+    },
+    {
+      "start": 5400.88,
+      "end": 5402.69,
+      "text": "black metalu doskonale"
+    },
+    {
+      "start": 5402.69,
+      "end": 5404.76,
+      "text": "wiedzą, że w szeroko"
+    },
+    {
+      "start": 5404.76,
+      "end": 5406.56,
+      "text": "pojmowanych granicach"
+    },
+    {
+      "start": 5406.56,
+      "end": 5408.32,
+      "text": "gatunku, może nie"
+    },
+    {
+      "start": 5408.32,
+      "end": 5410.22,
+      "text": "gatunku nawet, ale"
+    },
+    {
+      "start": 5410.22,
+      "end": 5411.28,
+      "text": "zjawiska,"
+    },
+    {
+      "start": 5412.24,
+      "end": 5412.82,
+      "text": "mieszczą się też"
+    },
+    {
+      "start": 5412.82,
+      "end": 5414.36,
+      "text": "rzeczy, które z"
+    },
+    {
+      "start": 5414.36,
+      "end": 5415.9,
+      "text": "metalem nie mają"
+    },
+    {
+      "start": 5415.9,
+      "end": 5417.48,
+      "text": "wiele wspólnego"
+    },
+    {
+      "start": 5417.48,
+      "end": 5418.98,
+      "text": "albo i w ogóle nic"
+    },
+    {
+      "start": 5418.98,
+      "end": 5421.84,
+      "text": "poza radykalnym przesłaniem"
+    },
+    {
+      "start": 5421.84,
       "end": 5424.32,
-      "text": "Fani norweskiego black metalu doskonale wiedzą, że w szeroko pojmowanych granicach gatunku, może nie gatunku nawet, ale zjawiska, mieszczą się też rzeczy, które z metalem nie mają wiele wspólnego albo i w ogóle nic poza radykalnym przesłaniem i wisielczym nastrojem."
+      "text": "i wisielczym nastrojem."
     },
     {
-      "start": 5424.32,
-      "end": 5441.94,
-      "text": "Skoro taki ulwer na początku black metalowy do szpiku kości, później grał i wciąż gra co chce i nie został przez tę publiczność odrzucony, to znaczy, że właściwie wszystko jest dozwolone."
+      "start": 5424.72,
+      "end": 5426.42,
+      "text": "Skoro taki ulwer na"
     },
     {
-      "start": 5442.18,
+      "start": 5426.42,
+      "end": 5427.82,
+      "text": "początku black"
+    },
+    {
+      "start": 5427.82,
+      "end": 5429.52,
+      "text": "metalowy do szpiku"
+    },
+    {
+      "start": 5429.52,
+      "end": 5431.43,
+      "text": "kości, później grał"
+    },
+    {
+      "start": 5431.43,
+      "end": 5432.96,
+      "text": "i wciąż gra co chce"
+    },
+    {
+      "start": 5432.96,
+      "end": 5434.62,
+      "text": "i nie został przez"
+    },
+    {
+      "start": 5434.62,
+      "end": 5437.42,
+      "text": "tę publiczność odrzucony,"
+    },
+    {
+      "start": 5438.04,
+      "end": 5438.62,
+      "text": "to znaczy, że"
+    },
+    {
+      "start": 5438.62,
+      "end": 5440.32,
+      "text": "właściwie wszystko"
+    },
+    {
+      "start": 5440.32,
+      "end": 5442.51,
+      "text": "jest dozwolone. Nie"
+    },
+    {
+      "start": 5442.51,
+      "end": 5444.25,
+      "text": "znaczy to natomiast,"
+    },
+    {
+      "start": 5444.25,
+      "end": 5446.84,
+      "text": "że wszystkie eksperymenty"
+    },
+    {
+      "start": 5446.84,
       "end": 5447.86,
-      "text": "Nie znaczy to natomiast, że wszystkie eksperymenty się udają."
+      "text": "się udają."
     },
     {
-      "start": 5448.64,
-      "end": 5450.34,
-      "text": "Weźmy taki manes."
+      "start": 5448.2,
+      "end": 5450.77,
+      "text": "Weźmy taki manes. Zaczynali"
     },
     {
-      "start": 5450.98,
-      "end": 5463.1,
-      "text": "Zaczynali od black metalu, którym szybko się znudzili, więc zaczęli szukać przygód w jakiejś postcoilowej elektronice w industrialu i elektro wszędzie."
+      "start": 5450.77,
+      "end": 5451.97,
+      "text": "od black metalu,"
     },
     {
-      "start": 5463.64,
-      "end": 5479.32,
-      "text": "Właściwie, w sumie to nie wiem, dlaczego taki album jak How the World Came to an End z 2007 roku nie zrobił większego zamieszania, ale może po prostu przyszedł za późno."
+      "start": 5451.97,
+      "end": 5453.43,
+      "text": "którym szybko się"
     },
     {
-      "start": 5479.46,
+      "start": 5453.43,
+      "end": 5455.29,
+      "text": "znudzili, więc zaczęli"
+    },
+    {
+      "start": 5455.29,
+      "end": 5457,
+      "text": "szukać przygód w"
+    },
+    {
+      "start": 5457,
+      "end": 5458.96,
+      "text": "jakiejś postcoilowej"
+    },
+    {
+      "start": 5458.96,
+      "end": 5460.06,
+      "text": "elektronice,"
+    },
+    {
+      "start": 5460.16,
+      "end": 5461.36,
+      "text": "w industrialu i"
+    },
+    {
+      "start": 5461.36,
+      "end": 5463.06,
+      "text": "elektro, wszędzie"
+    },
+    {
+      "start": 5463.06,
+      "end": 5464.28,
+      "text": "właściwie."
+    },
+    {
+      "start": 5465.86,
+      "end": 5466.86,
+      "text": "W sumie to nie wiem,"
+    },
+    {
+      "start": 5466.86,
+      "end": 5467.87,
+      "text": "dlaczego taki album"
+    },
+    {
+      "start": 5467.87,
+      "end": 5469.5,
+      "text": "jak How the World"
+    },
+    {
+      "start": 5469.5,
+      "end": 5471.1,
+      "text": "Came to an End z"
+    },
+    {
+      "start": 5471.1,
+      "end": 5473.45,
+      "text": "2007 roku nie zrobił"
+    },
+    {
+      "start": 5473.45,
+      "end": 5475.64,
+      "text": "większego zamieszania,"
+    },
+    {
+      "start": 5476.82,
+      "end": 5477.28,
+      "text": "ale może po prostu"
+    },
+    {
+      "start": 5477.28,
+      "end": 5479.21,
+      "text": "przyszedł za późno."
+    },
+    {
+      "start": 5479.21,
+      "end": 5480.33,
+      "text": "Gdyby ukazał się te"
+    },
+    {
+      "start": 5480.33,
+      "end": 5481.29,
+      "text": "siedem lat"
+    },
+    {
+      "start": 5481.29,
+      "end": 5482.78,
+      "text": "wcześniej, jak Perdition"
+    },
+    {
+      "start": 5482.78,
+      "end": 5484.22,
+      "text": "City wspomnianego"
+    },
+    {
+      "start": 5484.22,
+      "end": 5484.86,
+      "text": "Ulwer,"
+    },
+    {
+      "start": 5485.68,
+      "end": 5486.14,
+      "text": "pewnie byłby"
+    },
+    {
+      "start": 5486.14,
       "end": 5487.84,
-      "text": "Gdyby ukazał się te siedem lat wcześniej, jak Perdition City wspomnianego Ulwer, pewnie byłby dzisiaj kultowy."
+      "text": "dzisiaj kultowy."
     },
     {
-      "start": 5489.34,
-      "end": 5490.04,
+      "start": 5487.84,
+      "end": 5488.36,
       "text": "Muzyka"
     },
     {
-      "start": 5681.51,
+      "start": 5682.65,
+      "end": 5684.18,
+      "text": "Innym awangardowym"
+    },
+    {
+      "start": 5684.18,
+      "end": 5685.27,
+      "text": "zespołem black"
+    },
+    {
+      "start": 5685.27,
+      "end": 5686.57,
+      "text": "metalowym z Norwegii"
+    },
+    {
+      "start": 5686.57,
+      "end": 5688.83,
+      "text": "jest Rosa Fenskep,"
+    },
+    {
+      "start": 5688.83,
+      "end": 5690.95,
+      "text": "ale tu do interesującej"
+    },
+    {
+      "start": 5690.95,
+      "end": 5692.63,
+      "text": "formy to post black"
+    },
+    {
+      "start": 5692.63,
+      "end": 5694.22,
+      "text": "metal przełamany"
+    },
+    {
+      "start": 5694.22,
       "end": 5696.01,
-      "text": "Innym awangardowym zespołem black metalowym z Norwegii jest Rosa Fenskep, ale tu do interesującej formy to post black metal przełamany post hardcorem."
+      "text": "post hardcorem."
     },
     {
-      "start": 5696.31,
+      "start": 5696.27,
+      "end": 5697.36,
+      "text": "Euronymus się pewnie"
+    },
+    {
+      "start": 5697.36,
+      "end": 5698.85,
+      "text": "w grobie przewraca."
+    },
+    {
+      "start": 5698.85,
+      "end": 5700.59,
+      "text": "Dochodzą wciąż nowe"
+    },
+    {
+      "start": 5700.59,
+      "end": 5702.43,
+      "text": "w black metalu treści"
+    },
+    {
+      "start": 5702.43,
+      "end": 5704.34,
+      "text": "dla niektórych fanów"
+    },
+    {
+      "start": 5704.34,
+      "end": 5706.22,
+      "text": "gatunku tak szokujące"
+    },
+    {
+      "start": 5706.22,
+      "end": 5707.96,
+      "text": "jak dla ich rodziców"
+    },
+    {
+      "start": 5707.96,
+      "end": 5710.51,
+      "text": "szokujące były bluźnierstwa"
+    },
+    {
+      "start": 5710.51,
       "end": 5711.73,
-      "text": "Euronymus się pewnie w grobie przewraca. Dochodzą wciąż nowe w black metalu treści dla niektórych fanów gatunku tak szokujące jak dla ich rodziców szokujące były bluźnierstwa mayhem."
+      "text": "mayhem."
     },
     {
-      "start": 5711.73,
+      "start": 5712.65,
+      "end": 5713.57,
+      "text": "Otóż Rosa Fenskep"
+    },
+    {
+      "start": 5713.57,
+      "end": 5715.47,
+      "text": "jest black metalem"
+    },
+    {
+      "start": 5715.47,
+      "end": 5717.64,
+      "text": "queerowym. Zespół"
+    },
+    {
+      "start": 5717.64,
+      "end": 5719.66,
+      "text": "upomina się między"
+    },
+    {
+      "start": 5719.66,
+      "end": 5721.5,
+      "text": "innymi o prawa osób"
+    },
+    {
+      "start": 5721.5,
+      "end": 5723.55,
+      "text": "trans, walczy też z"
+    },
+    {
+      "start": 5723.55,
+      "end": 5725.23,
+      "text": "nierównościami"
+    },
+    {
+      "start": 5725.23,
       "end": 5727.13,
-      "text": "Otóż Rosa Fenskep jest black metalem queerowym. Zespół upomina się m.in. o prawa osób trans, walczy też z nierównościami społecznymi."
+      "text": "społecznymi."
     },
     {
-      "start": 5727.13,
-      "end": 5738.95,
-      "text": "A robi to w coraz lepszym stylu, o czym można się przekonać słuchając ich drugiej tegorocznej znakomitej płyty Ingeting Forblier."
+      "start": 5728.17,
+      "end": 5728.48,
+      "text": "A robi to w coraz"
     },
     {
-      "start": 5738.95,
-      "end": 5741.05,
-      "text": "muzyka"
+      "start": 5728.48,
+      "end": 5729.93,
+      "text": "lepszym stylu, o"
     },
     {
-      "start": 6021.51,
-      "end": 6028.89,
-      "text": "Jeszcze inne oblicze norweskiego black metalu reprezentuje grupa Slegest."
+      "start": 5729.93,
+      "end": 5731.13,
+      "text": "czym można się"
     },
     {
-      "start": 6029.13,
-      "end": 6042.89,
-      "text": "Black jest tu właściwie tylko jedną z części składowych, bo Slegest to też trochę hołd dla starej szkoły heavy metalu, ale jeszcze bardziej dla motorhead i streetpunka."
+      "start": 5731.13,
+      "end": 5733.03,
+      "text": "przekonać słuchając"
     },
     {
-      "start": 6044.25,
-      "end": 6057.69,
-      "text": "W nagraniach można to wyczuć, ale na koncertach to już w ogóle bierze górę chuligański sznyt i bardzo to przekonujące, bardzo porywające."
+      "start": 5733.03,
+      "end": 5735.43,
+      "text": "ich drugiej, tegorocznej,"
     },
     {
-      "start": 6058.51,
-      "end": 6064.51,
-      "text": "Gdybym ja był kierownikiem, Slegest byłby zespołem powszechnie znanym i lubianym."
+      "start": 5735.43,
+      "end": 5737.73,
+      "text": "znakomitej płyty Ingeting"
     },
     {
-      "start": 6239.11,
-      "end": 6248.49,
-      "text": "Kolt Brand to zespół, który w porównaniu z innymi do tej pory prezentowanymi może uchodzić za młodzieżowy."
+      "start": 5737.73,
+      "end": 5738.93,
+      "text": "Forblier."
     },
     {
-      "start": 6249.13,
-      "end": 6263.09,
-      "text": "Powstali ćwierć wieku temu i gdyby istniał tam na północy ruch o nazwie Make Norwegian Black Metal Black Again, Kolt Brand byliby jego liderami."
+      "start": 5738.93,
+      "end": 5739.49,
+      "text": "Muzik"
     },
     {
-      "start": 6263.09,
-      "end": 6275.11,
-      "text": "Tu nie ma żadnego łączenia gatunków poszerzanych, a granic nie ma eksperymentów i poszukiwań. Jest zima, pustka i cierpienie."
+      "start": 6022.36,
+      "end": 6023.98,
+      "text": "Jeszcze inne oblicze"
     },
     {
-      "start": 6275.11,
-      "end": 6277.53,
+      "start": 6023.98,
+      "end": 6025.42,
+      "text": "norweskiego black"
+    },
+    {
+      "start": 6025.42,
+      "end": 6027.18,
+      "text": "metalu reprezentuje"
+    },
+    {
+      "start": 6027.18,
+      "end": 6028.74,
+      "text": "grupa Slegest."
+    },
+    {
+      "start": 6028.74,
+      "end": 6029.84,
+      "text": "Black jest tu"
+    },
+    {
+      "start": 6029.84,
+      "end": 6031.77,
+      "text": "właściwie tylko jedną"
+    },
+    {
+      "start": 6031.77,
+      "end": 6033.64,
+      "text": "z części składowych,"
+    },
+    {
+      "start": 6033.64,
+      "end": 6035.04,
+      "text": "bo Slegest to też"
+    },
+    {
+      "start": 6035.04,
+      "end": 6036.34,
+      "text": "trochę hołd dla"
+    },
+    {
+      "start": 6036.34,
+      "end": 6038.07,
+      "text": "starej szkoły heavy"
+    },
+    {
+      "start": 6038.07,
+      "end": 6039.84,
+      "text": "metalu, ale jeszcze"
+    },
+    {
+      "start": 6039.84,
+      "end": 6041.84,
+      "text": "bardziej dla motorhead"
+    },
+    {
+      "start": 6041.84,
+      "end": 6043.5,
+      "text": "i streetpunka."
+    },
+    {
+      "start": 6043.5,
+      "end": 6045.36,
+      "text": "W nagraniach można"
+    },
+    {
+      "start": 6045.36,
+      "end": 6047.08,
+      "text": "to wyczuć, ale na"
+    },
+    {
+      "start": 6047.08,
+      "end": 6049.19,
+      "text": "koncertach to już w"
+    },
+    {
+      "start": 6049.19,
+      "end": 6050.87,
+      "text": "ogóle bierze górę"
+    },
+    {
+      "start": 6050.87,
+      "end": 6052.76,
+      "text": "chuligański sznyt i"
+    },
+    {
+      "start": 6052.76,
+      "end": 6055.19,
+      "text": "bardzo to przekonujące,"
+    },
+    {
+      "start": 6055.19,
+      "end": 6057.64,
+      "text": "bardzo porywające."
+    },
+    {
+      "start": 6057.64,
+      "end": 6059.95,
+      "text": "Gdybym ja był kierownikiem,"
+    },
+    {
+      "start": 6059.95,
+      "end": 6061.83,
+      "text": "Slegest byłby zespołem"
+    },
+    {
+      "start": 6061.83,
+      "end": 6063.3,
+      "text": "powszechnie znanym"
+    },
+    {
+      "start": 6063.3,
+      "end": 6064.5,
+      "text": "i lubianym."
+    },
+    {
+      "start": 6241.02,
+      "end": 6242.39,
+      "text": "To zespół, który w"
+    },
+    {
+      "start": 6242.39,
+      "end": 6243.85,
+      "text": "porównaniu z innymi"
+    },
+    {
+      "start": 6243.85,
+      "end": 6245.96,
+      "text": "do tej pory prezentowanymi"
+    },
+    {
+      "start": 6245.96,
+      "end": 6248.48,
+      "text": "może uchodzić za młodzieżowy."
+    },
+    {
+      "start": 6249.1,
+      "end": 6251.09,
+      "text": "Powstali ćwierć wieku"
+    },
+    {
+      "start": 6251.09,
+      "end": 6252.8,
+      "text": "temu i gdyby istniał"
+    },
+    {
+      "start": 6252.8,
+      "end": 6254.88,
+      "text": "tam na północy ruch"
+    },
+    {
+      "start": 6254.88,
+      "end": 6255.86,
+      "text": "o nazwie"
+    },
+    {
+      "start": 6255.86,
+      "end": 6257.16,
+      "text": "Make Norwegian"
+    },
+    {
+      "start": 6257.16,
+      "end": 6258.66,
+      "text": "Black Metal Black"
+    },
+    {
+      "start": 6258.66,
+      "end": 6260.49,
+      "text": "Again, Cold Brand"
+    },
+    {
+      "start": 6260.49,
+      "end": 6263.1,
+      "text": "byliby jego liderami."
+    },
+    {
+      "start": 6263.72,
+      "end": 6265.21,
+      "text": "Tu nie ma żadnego łączenia"
+    },
+    {
+      "start": 6265.21,
+      "end": 6267.22,
+      "text": "gatunków, poszerzania"
+    },
+    {
+      "start": 6267.22,
+      "end": 6269.02,
+      "text": "granic, nie ma eksperymentów"
+    },
+    {
+      "start": 6269.02,
+      "end": 6270.98,
+      "text": "i poszukiwań."
+    },
+    {
+      "start": 6271.02,
+      "end": 6273.85,
+      "text": "jest zima, pustka i"
+    },
+    {
+      "start": 6273.85,
+      "end": 6275.08,
+      "text": "cierpienie."
+    },
+    {
+      "start": 6275.08,
+      "end": 6275.78,
       "text": "Muzyka"
     },
     {
-      "start": 6577.48,
-      "end": 6586.6,
-      "text": "Odkryciem poprzedniego sezonu w kategorii norweski black metal, niby nowy, ale jednak stary, był zespół Jörtsjuk."
+      "start": 6577.66,
+      "end": 6579.27,
+      "text": "Odkryciem poprzedniego"
     },
     {
-      "start": 6587.42,
+      "start": 6579.27,
+      "end": 6580.53,
+      "text": "sezonu w kategorii"
+    },
+    {
+      "start": 6580.53,
+      "end": 6581.52,
+      "text": "norweski black"
+    },
+    {
+      "start": 6581.52,
+      "end": 6582.72,
+      "text": "metal, niby nowy,"
+    },
+    {
+      "start": 6582.72,
+      "end": 6583.92,
+      "text": "ale jednak stary,"
+    },
+    {
+      "start": 6583.92,
+      "end": 6586.6,
+      "text": "był zespół Jortsjuk."
+    },
+    {
+      "start": 6587.34,
+      "end": 6588.5,
+      "text": "Wokalista ten sam,"
+    },
+    {
+      "start": 6588.5,
+      "end": 6590.51,
+      "text": "co w Cold Run, reszta"
+    },
+    {
+      "start": 6590.51,
+      "end": 6592.08,
+      "text": "ekipy też bardzo"
+    },
+    {
+      "start": 6592.08,
+      "end": 6594.21,
+      "text": "doświadczona, ale w"
+    },
+    {
+      "start": 6594.21,
+      "end": 6595.42,
+      "text": "nowej konfiguracji,"
+    },
+    {
+      "start": 6595.42,
+      "end": 6597.32,
+      "text": "pod nowym szyldem,"
+    },
+    {
+      "start": 6597.32,
+      "end": 6599.6,
+      "text": "udało im się wykrzesać"
+    },
+    {
+      "start": 6599.6,
+      "end": 6601.88,
+      "text": "z siebie sporo świeżej"
+    },
+    {
+      "start": 6601.88,
       "end": 6603.16,
-      "text": "Wokalista ten sam, co w Cold Run, reszta ekipy też bardzo doświadczona, ale w nowej konfiguracji, pod nowym szyldem, udało im się wykrzesać z siebie sporo świeżej energii."
+      "text": "energii."
     },
     {
       "start": 6603.16,
+      "end": 6605.08,
+      "text": "We wrześniu ubiegłego"
+    },
+    {
+      "start": 6605.08,
+      "end": 6606.93,
+      "text": "roku Jortsjuk wydali"
+    },
+    {
+      "start": 6606.93,
+      "end": 6608.78,
+      "text": "debiutancki album,"
+    },
+    {
+      "start": 6608.78,
+      "end": 6610.51,
+      "text": "Nagled Till Lived,"
+    },
+    {
+      "start": 6610.51,
+      "end": 6612.08,
+      "text": "a w marcu tego roku"
+    },
+    {
+      "start": 6612.08,
+      "end": 6613.57,
+      "text": "zgarnęli za niego"
+    },
+    {
+      "start": 6613.57,
+      "end": 6615.31,
+      "text": "nagrodę Speleman,"
+    },
+    {
+      "start": 6615.31,
+      "end": 6617.18,
+      "text": "czyli norweskiego"
+    },
+    {
+      "start": 6617.18,
       "end": 6618.54,
-      "text": "We wrześniu ubiegłego roku Jörtsjuk wydali debiutancki album, Nagled Till Lievet, a w marcu tego roku zgarnęli za niego nagrodę Speleman, czyli norweskiego Fryderyka."
+      "text": "Fryderyka."
     },
     {
-      "start": 6619.36,
-      "end": 6628.9,
-      "text": "A u nas, wicie rozumicie, najlepszym metalem 2025 roku była podobno koncertówka Komy."
+      "start": 6619.38,
+      "end": 6620.32,
+      "text": "A u nas, widzicie,"
     },
     {
-      "start": 6628.9,
-      "end": 6630.78,
-      "text": "KOMY"
+      "start": 6620.32,
+      "end": 6622.53,
+      "text": "rozumicie, najlepszym"
     },
     {
-      "start": 6793.72,
-      "end": 6806.76,
-      "text": "Kończymy noc z norweskim black metalem i po tym Dimmu Borgir na wstępie miało już być bez gwiazd, ale jednak muszę, bo inaczej się uduszę."
+      "start": 6622.53,
+      "end": 6624.97,
+      "text": "metalem 2025 roku"
     },
     {
-      "start": 6807.84,
-      "end": 6822.76,
-      "text": "Nieodżałowany immortal to oczywiście giganci gatunku, rozumiem to i doceniam, ale tak naprawdę kocham tylko jedną ich płytę, tę pierwszą, Diabolical Full Moon Mysticism."
+      "start": 6624.97,
+      "end": 6627.46,
+      "text": "była podobno koncertówka"
     },
     {
-      "start": 6823.68,
+      "start": 6627.46,
+      "end": 6628.56,
+      "text": "kościoła."
+    },
+    {
+      "start": 6793.82,
+      "end": 6795.71,
+      "text": "Kończymy noc z norweskim"
+    },
+    {
+      "start": 6795.71,
+      "end": 6797.22,
+      "text": "black metalem i po"
+    },
+    {
+      "start": 6797.22,
+      "end": 6799.88,
+      "text": "tym Dimmu Borgir na"
+    },
+    {
+      "start": 6799.88,
+      "end": 6801.2,
+      "text": "wstępie miało już"
+    },
+    {
+      "start": 6801.2,
+      "end": 6802.99,
+      "text": "być bez gwiazd, ale"
+    },
+    {
+      "start": 6802.99,
+      "end": 6804.62,
+      "text": "jednak muszę, bo"
+    },
+    {
+      "start": 6804.62,
+      "end": 6806.75,
+      "text": "inaczej się uduszę."
+    },
+    {
+      "start": 6806.75,
+      "end": 6809.21,
+      "text": "Nieodżałowany Immortal"
+    },
+    {
+      "start": 6809.21,
+      "end": 6811.44,
+      "text": "to oczywiście giganci"
+    },
+    {
+      "start": 6811.44,
+      "end": 6813.43,
+      "text": "gatunku, rozumiem"
+    },
+    {
+      "start": 6813.43,
+      "end": 6815.11,
+      "text": "to i doceniam, ale"
+    },
+    {
+      "start": 6815.11,
+      "end": 6816.85,
+      "text": "tak naprawdę kocham"
+    },
+    {
+      "start": 6816.85,
+      "end": 6818.66,
+      "text": "tylko jedną ich płytę,"
+    },
+    {
+      "start": 6818.66,
+      "end": 6819.92,
+      "text": "tę pierwszą."
+    },
+    {
+      "start": 6819.92,
+      "end": 6821.25,
+      "text": "Diabolical Full"
+    },
+    {
+      "start": 6821.25,
+      "end": 6823.33,
+      "text": "Moon Mysticism. Jeszcze"
+    },
+    {
+      "start": 6823.33,
+      "end": 6825.13,
+      "text": "na niej nie znaleźli"
+    },
+    {
+      "start": 6825.13,
+      "end": 6826.74,
+      "text": "swojego stylu, nie"
+    },
+    {
+      "start": 6826.74,
+      "end": 6828.54,
+      "text": "znaleźli brzmienia,"
+    },
+    {
+      "start": 6828.54,
+      "end": 6830.29,
+      "text": "nie pędzą tak na oślep"
+    },
+    {
+      "start": 6830.29,
+      "end": 6831.71,
+      "text": "jak później, ale"
+    },
+    {
+      "start": 6831.71,
+      "end": 6833.12,
+      "text": "wszystko mi się tu"
+    },
+    {
+      "start": 6833.12,
+      "end": 6834.66,
+      "text": "podoba, wszystko"
+    },
+    {
+      "start": 6834.66,
       "end": 6836.2,
-      "text": "Jeszcze na niej nie znaleźli swojego stylu, nie znaleźli brzmienia, nie pędzą tak na oślep jak później, ale wszystko mi się tu podoba, wszystko się nazgadza."
+      "text": "się nazgadza."
     },
     {
-      "start": 6836.76,
-      "end": 6847.9,
-      "text": "Debiut immortal zamyka utwór zatytułowany Perfekcyjna wizja powstającej północy, pewnie powstającej z kolan."
+      "start": 6836.86,
+      "end": 6838.97,
+      "text": "Debiut Immortal zamyka"
     },
     {
-      "start": 6848.78,
+      "start": 6838.97,
+      "end": 6841.02,
+      "text": "utwór zatytułowany"
+    },
+    {
+      "start": 6841.02,
+      "end": 6842.65,
+      "text": "Perfekcyjna wizja"
+    },
+    {
+      "start": 6842.65,
+      "end": 6844.9,
+      "text": "powstającej północy,"
+    },
+    {
+      "start": 6844.9,
+      "end": 6846.81,
+      "text": "pewnie powstającej"
+    },
+    {
+      "start": 6846.81,
+      "end": 6848.81,
+      "text": "z kolan. I jako, że"
+    },
+    {
+      "start": 6848.81,
+      "end": 6850.74,
+      "text": "ta wizja się ziściła,"
+    },
+    {
+      "start": 6850.74,
+      "end": 6852.38,
+      "text": "dzisiaj właśnie tą"
+    },
+    {
+      "start": 6852.38,
       "end": 6854.88,
-      "text": "I jako, że ta wizja się ziściła, dzisiaj właśnie tą piosenką się pożegnamy."
+      "text": "piosenką się pożegnamy."
     }
   ],
   "stats": {
-    "windowCount": 17,
-    "transcribedAudioSec": 1869.37,
-    "segmentCount": 202,
-    "characterCount": 19423
-  },
-  "sourceId": "2026-06-10-dimmu-borgir-i-muzyka-ktorej-nie-dalo-sie-zignorowac"
+    "windowCount": 24,
+    "transcribedAudioSec": 1791.88,
+    "segmentCount": 1023,
+    "characterCount": 18540
+  }
 }
